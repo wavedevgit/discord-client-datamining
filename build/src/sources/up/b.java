@@ -7,10 +7,10 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f52084a;
+    private final a f52132a;
 
     public b(a aVar) {
-        this.f52084a = aVar;
+        this.f52132a = aVar;
     }
 
     public static b a(a aVar) {
@@ -24,6 +24,6 @@ public final class b implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public CoroutineDispatcher get() {
-        return c(this.f52084a);
+        return c(this.f52132a);
     }
 }

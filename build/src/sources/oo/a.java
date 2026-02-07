@@ -12,16 +12,16 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0568a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f43282d;
+    private final String f43330d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f43283e;
+    private final String f43331e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f43284i;
+    private final String f43332i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f43285o;
+    private final List f43333o;
 
     /* renamed from: oo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -53,10 +53,10 @@ public final class a implements Parcelable {
         Intrinsics.checkNotNullParameter(nonce, "nonce");
         Intrinsics.checkNotNullParameter(fieldKeyMobileDriversLicense, "fieldKeyMobileDriversLicense");
         Intrinsics.checkNotNullParameter(digitalIdRequests, "digitalIdRequests");
-        this.f43282d = merchantId;
-        this.f43283e = nonce;
-        this.f43284i = fieldKeyMobileDriversLicense;
-        this.f43285o = digitalIdRequests;
+        this.f43330d = merchantId;
+        this.f43331e = nonce;
+        this.f43332i = fieldKeyMobileDriversLicense;
+        this.f43333o = digitalIdRequests;
     }
 
     @Override // android.os.Parcelable
@@ -67,10 +67,10 @@ public final class a implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43282d);
-        dest.writeString(this.f43283e);
-        dest.writeString(this.f43284i);
-        List<b> list = this.f43285o;
+        dest.writeString(this.f43330d);
+        dest.writeString(this.f43331e);
+        dest.writeString(this.f43332i);
+        List<b> list = this.f43333o;
         dest.writeInt(list.size());
         for (b bVar : list) {
             bVar.writeToParcel(dest, i10);

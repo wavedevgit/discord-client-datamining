@@ -3,16 +3,16 @@ package gk;
 public abstract class j1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final int f25277a = c(1, 3);
+    static final int f25325a = c(1, 3);
 
     /* renamed from: b  reason: collision with root package name */
-    static final int f25278b = c(1, 4);
+    static final int f25326b = c(1, 4);
 
     /* renamed from: c  reason: collision with root package name */
-    static final int f25279c = c(2, 0);
+    static final int f25327c = c(2, 0);
 
     /* renamed from: d  reason: collision with root package name */
-    static final int f25280d = c(3, 2);
+    static final int f25328d = c(3, 2);
 
     /* JADX WARN: Enum visitor error
     jadx.core.utils.exceptions.JadxRuntimeException: Init of enum p uses external variables
@@ -34,49 +34,49 @@ public abstract class j1 {
         private static final /* synthetic */ b[] F;
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f25281i;
+        public static final b f25329i;
 
         /* renamed from: o  reason: collision with root package name */
-        public static final b f25282o;
+        public static final b f25330o;
 
         /* renamed from: p  reason: collision with root package name */
-        public static final b f25283p;
+        public static final b f25331p;
 
         /* renamed from: q  reason: collision with root package name */
-        public static final b f25284q;
+        public static final b f25332q;
 
         /* renamed from: r  reason: collision with root package name */
-        public static final b f25285r;
+        public static final b f25333r;
 
         /* renamed from: s  reason: collision with root package name */
-        public static final b f25286s;
+        public static final b f25334s;
 
         /* renamed from: t  reason: collision with root package name */
-        public static final b f25287t;
+        public static final b f25335t;
 
         /* renamed from: u  reason: collision with root package name */
-        public static final b f25288u;
+        public static final b f25336u;
 
         /* renamed from: v  reason: collision with root package name */
-        public static final b f25289v;
+        public static final b f25337v;
 
         /* renamed from: w  reason: collision with root package name */
-        public static final b f25290w;
+        public static final b f25338w;
 
         /* renamed from: x  reason: collision with root package name */
-        public static final b f25291x;
+        public static final b f25339x;
 
         /* renamed from: y  reason: collision with root package name */
-        public static final b f25292y;
+        public static final b f25340y;
 
         /* renamed from: z  reason: collision with root package name */
-        public static final b f25293z;
+        public static final b f25341z;
 
         /* renamed from: d  reason: collision with root package name */
-        private final c f25294d;
+        private final c f25342d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f25295e;
+        private final int f25343e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         enum a extends b {
@@ -109,34 +109,34 @@ public abstract class j1 {
 
         static {
             b bVar = new b("DOUBLE", 0, c.DOUBLE, 1);
-            f25281i = bVar;
+            f25329i = bVar;
             b bVar2 = new b("FLOAT", 1, c.FLOAT, 5);
-            f25282o = bVar2;
+            f25330o = bVar2;
             c cVar = c.LONG;
             b bVar3 = new b("INT64", 2, cVar, 0);
-            f25283p = bVar3;
+            f25331p = bVar3;
             b bVar4 = new b("UINT64", 3, cVar, 0);
-            f25284q = bVar4;
+            f25332q = bVar4;
             c cVar2 = c.INT;
             b bVar5 = new b("INT32", 4, cVar2, 0);
-            f25285r = bVar5;
+            f25333r = bVar5;
             b bVar6 = new b("FIXED64", 5, cVar, 1);
-            f25286s = bVar6;
+            f25334s = bVar6;
             b bVar7 = new b("FIXED32", 6, cVar2, 5);
-            f25287t = bVar7;
+            f25335t = bVar7;
             b bVar8 = new b("BOOL", 7, c.BOOLEAN, 0);
-            f25288u = bVar8;
+            f25336u = bVar8;
             a aVar = new a("STRING", 8, c.STRING, 2);
-            f25289v = aVar;
+            f25337v = aVar;
             c cVar3 = c.MESSAGE;
             C0341b c0341b = new C0341b("GROUP", 9, cVar3, 3);
-            f25290w = c0341b;
+            f25338w = c0341b;
             c cVar4 = new c("MESSAGE", 10, cVar3, 2);
-            f25291x = cVar4;
+            f25339x = cVar4;
             d dVar = new d("BYTES", 11, c.BYTE_STRING, 2);
-            f25292y = dVar;
+            f25340y = dVar;
             b bVar9 = new b("UINT32", 12, cVar2, 0);
-            f25293z = bVar9;
+            f25341z = bVar9;
             b bVar10 = new b("ENUM", 13, c.ENUM, 0);
             A = bVar10;
             b bVar11 = new b("SFIXED32", 14, cVar2, 5);
@@ -159,12 +159,12 @@ public abstract class j1 {
         }
 
         public c a() {
-            return this.f25294d;
+            return this.f25342d;
         }
 
         private b(String str, int i10, c cVar, int i11) {
-            this.f25294d = cVar;
-            this.f25295e = i11;
+            this.f25342d = cVar;
+            this.f25343e = i11;
         }
     }
 
@@ -176,16 +176,16 @@ public abstract class j1 {
         DOUBLE(Double.valueOf(0.0d)),
         BOOLEAN(Boolean.FALSE),
         STRING(""),
-        BYTE_STRING(f.f25206e),
+        BYTE_STRING(f.f25254e),
         ENUM(null),
         MESSAGE(null);
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f25306d;
+        private final Object f25354d;
 
         c(Object obj) {
-            this.f25306d = obj;
+            this.f25354d = obj;
         }
     }
 

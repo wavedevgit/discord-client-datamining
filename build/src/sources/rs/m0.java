@@ -10,17 +10,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m0 extends ss.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicReference f49309a = new AtomicReference(null);
+    private final AtomicReference f49357a = new AtomicReference(null);
 
     @Override // ss.d
     /* renamed from: d */
     public boolean a(k0 k0Var) {
         ts.e0 e0Var;
-        if (ts.d.a(this.f49309a) != null) {
+        if (ts.d.a(this.f49357a) != null) {
             return false;
         }
-        AtomicReference atomicReference = this.f49309a;
-        e0Var = l0.f49306a;
+        AtomicReference atomicReference = this.f49357a;
+        e0Var = l0.f49354a;
         ts.d.b(atomicReference, e0Var);
         return true;
     }
@@ -29,11 +29,11 @@ public final class m0 extends ss.d {
         ts.e0 e0Var;
         kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
         eVar.H();
-        AtomicReference atomicReference = this.f49309a;
-        e0Var = l0.f49306a;
+        AtomicReference atomicReference = this.f49357a;
+        e0Var = l0.f49354a;
         if (!p0.d.a(atomicReference, e0Var, eVar)) {
-            Result.a aVar = Result.f32005e;
-            eVar.resumeWith(Result.b(Unit.f32008a));
+            Result.a aVar = Result.f32053e;
+            eVar.resumeWith(Result.b(Unit.f32056a));
         }
         Object B = eVar.B();
         if (B == wr.b.f()) {
@@ -42,14 +42,14 @@ public final class m0 extends ss.d {
         if (B == wr.b.f()) {
             return B;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // ss.d
     /* renamed from: f */
     public Continuation[] b(k0 k0Var) {
-        ts.d.b(this.f49309a, null);
-        return ss.c.f50025a;
+        ts.d.b(this.f49357a, null);
+        return ss.c.f50073a;
     }
 
     public final void g() {
@@ -57,25 +57,25 @@ public final class m0 extends ss.d {
         ts.e0 e0Var2;
         ts.e0 e0Var3;
         ts.e0 e0Var4;
-        AtomicReference atomicReference = this.f49309a;
+        AtomicReference atomicReference = this.f49357a;
         while (true) {
             Object a10 = ts.d.a(atomicReference);
             if (a10 != null) {
-                e0Var = l0.f49307b;
+                e0Var = l0.f49355b;
                 if (a10 != e0Var) {
-                    e0Var2 = l0.f49306a;
+                    e0Var2 = l0.f49354a;
                     if (a10 == e0Var2) {
-                        AtomicReference atomicReference2 = this.f49309a;
-                        e0Var3 = l0.f49307b;
+                        AtomicReference atomicReference2 = this.f49357a;
+                        e0Var3 = l0.f49355b;
                         if (p0.d.a(atomicReference2, a10, e0Var3)) {
                             return;
                         }
                     } else {
-                        AtomicReference atomicReference3 = this.f49309a;
-                        e0Var4 = l0.f49306a;
+                        AtomicReference atomicReference3 = this.f49357a;
+                        e0Var4 = l0.f49354a;
                         if (p0.d.a(atomicReference3, a10, e0Var4)) {
-                            Result.a aVar = Result.f32005e;
-                            ((kotlinx.coroutines.e) a10).resumeWith(Result.b(Unit.f32008a));
+                            Result.a aVar = Result.f32053e;
+                            ((kotlinx.coroutines.e) a10).resumeWith(Result.b(Unit.f32056a));
                             return;
                         }
                     }
@@ -91,11 +91,11 @@ public final class m0 extends ss.d {
     public final boolean h() {
         ts.e0 e0Var;
         ts.e0 e0Var2;
-        AtomicReference atomicReference = this.f49309a;
-        e0Var = l0.f49306a;
+        AtomicReference atomicReference = this.f49357a;
+        e0Var = l0.f49354a;
         Object andSet = atomicReference.getAndSet(e0Var);
         Intrinsics.checkNotNull(andSet);
-        e0Var2 = l0.f49307b;
+        e0Var2 = l0.f49355b;
         if (andSet == e0Var2) {
             return true;
         }

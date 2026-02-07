@@ -21,7 +21,7 @@ public final class a extends jt.b {
     public static final a f22107a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f22108b = l.b(o.f48044e, C0310a.f22109d);
+    private static final Lazy f22108b = l.b(o.f48092e, C0310a.f22109d);
 
     /* renamed from: et.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

@@ -30,33 +30,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.isProtectedWeekYearToken = var0;
     var0 = function arg0, arg1, arg2() {
-        _fun22944: for (var _fun22944_ip = 0;;) switch (_fun22944_ip) {
+        _fun22953: for (var _fun22953_ip = 0;;) switch (_fun22953_ip) {
             case 0:
                 var1 = arg0;
                 var5 = arg1;
                 var4 = arg2;
                 var0 = 'YYYY';
                 if (!(var0 !== var1)) {
-                    _fun22944_ip = 267;
-                    continue _fun22944
+                    _fun22953_ip = 267;
+                    continue _fun22953
                 }
             case 22:
                 var0 = 'YY';
                 if (!(var0 !== var1)) {
-                    _fun22944_ip = 197;
-                    continue _fun22944
+                    _fun22953_ip = 197;
+                    continue _fun22953
                 }
             case 35:
                 var0 = 'D';
                 if (!(var0 !== var1)) {
-                    _fun22944_ip = 127;
-                    continue _fun22944
+                    _fun22953_ip = 127;
+                    continue _fun22953
                 }
             case 43:
                 var0 = 'DD';
                 if (!(var0 !== var1)) {
-                    _fun22944_ip = 57;
-                    continue _fun22944
+                    _fun22953_ip = 57;
+                    continue _fun22953
                 }
             case 53:
                 var0 = undefined;

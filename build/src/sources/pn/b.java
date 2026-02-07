@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends Animation {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w f45068d;
+    private final w f45116d;
 
     public b(w mFragment) {
         Intrinsics.checkNotNullParameter(mFragment, "mFragment");
-        this.f45068d = mFragment;
+        this.f45116d = mFragment;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void b(b bVar, float f10) {
-        w wVar = bVar.f45068d;
+        w wVar = bVar.f45116d;
         wVar.F(f10, !wVar.isResumed());
     }
 
@@ -26,7 +26,7 @@ public final class b extends Animation {
     protected void applyTransformation(final float f10, Transformation t10) {
         Intrinsics.checkNotNullParameter(t10, "t");
         super.applyTransformation(f10, t10);
-        View view = this.f45068d.getView();
+        View view = this.f45116d.getView();
         if (view != null) {
             view.post(new Runnable() { // from class: pn.a
                 @Override // java.lang.Runnable

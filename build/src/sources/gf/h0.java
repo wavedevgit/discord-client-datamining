@@ -7,18 +7,18 @@ import ef.a;
 public final class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseIntArray f25078a = new SparseIntArray();
+    private final SparseIntArray f25126a = new SparseIntArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private com.google.android.gms.common.g f25079b;
+    private com.google.android.gms.common.g f25127b;
 
     public h0(com.google.android.gms.common.g gVar) {
         q.l(gVar);
-        this.f25079b = gVar;
+        this.f25127b = gVar;
     }
 
     public final int a(Context context, int i10) {
-        return this.f25078a.get(i10, -1);
+        return this.f25126a.get(i10, -1);
     }
 
     public final int b(Context context, a.f fVar) {
@@ -35,9 +35,9 @@ public final class h0 {
         }
         int i11 = 0;
         while (true) {
-            if (i11 < this.f25078a.size()) {
-                int keyAt = this.f25078a.keyAt(i11);
-                if (keyAt > n10 && this.f25078a.get(keyAt) == 0) {
+            if (i11 < this.f25126a.size()) {
+                int keyAt = this.f25126a.keyAt(i11);
+                if (keyAt > n10 && this.f25126a.get(keyAt) == 0) {
                     break;
                 }
                 i11++;
@@ -47,13 +47,13 @@ public final class h0 {
             }
         }
         if (i10 == -1) {
-            i10 = this.f25079b.h(context, n10);
+            i10 = this.f25127b.h(context, n10);
         }
-        this.f25078a.put(n10, i10);
+        this.f25126a.put(n10, i10);
         return i10;
     }
 
     public final void c() {
-        this.f25078a.clear();
+        this.f25126a.clear();
     }
 }

@@ -11,44 +11,44 @@ import okhttp3.OkHttpClient;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f25574a;
+    private final g f25622a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final okhttp3.a f25575b;
+    private final okhttp3.a f25623b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f25576c;
+    private final e f25624c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final okhttp3.e f25577d;
+    private final okhttp3.e f25625d;
 
     /* renamed from: e  reason: collision with root package name */
-    private j.b f25578e;
+    private j.b f25626e;
 
     /* renamed from: f  reason: collision with root package name */
-    private j f25579f;
+    private j f25627f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f25580g;
+    private int f25628g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f25581h;
+    private int f25629h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f25582i;
+    private int f25630i;
 
     /* renamed from: j  reason: collision with root package name */
-    private k f25583j;
+    private k f25631j;
 
     public d(g connectionPool, okhttp3.a address, e call, okhttp3.e eventListener) {
         Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
         Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(call, "call");
         Intrinsics.checkNotNullParameter(eventListener, "eventListener");
-        this.f25574a = connectionPool;
-        this.f25575b = address;
-        this.f25576c = call;
-        this.f25577d = eventListener;
+        this.f25622a = connectionPool;
+        this.f25623b = address;
+        this.f25624c = call;
+        this.f25625d = eventListener;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:56:0x012c  */
@@ -78,8 +78,8 @@ public final class d {
                 return b10;
             }
             b10.z();
-            if (this.f25583j == null) {
-                j.b bVar = this.f25578e;
+            if (this.f25631j == null) {
+                j.b bVar = this.f25626e;
                 boolean z14 = true;
                 if (bVar != null) {
                     z12 = bVar.b();
@@ -89,7 +89,7 @@ public final class d {
                 if (z12) {
                     continue;
                 } else {
-                    j jVar = this.f25579f;
+                    j jVar = this.f25627f;
                     if (jVar != null) {
                         z14 = jVar.a();
                     }
@@ -108,14 +108,14 @@ public final class d {
 
     private final k f() {
         f l10;
-        if (this.f25580g > 1 || this.f25581h > 1 || this.f25582i > 0 || (l10 = this.f25576c.l()) == null) {
+        if (this.f25628g > 1 || this.f25629h > 1 || this.f25630i > 0 || (l10 = this.f25624c.l()) == null) {
             return null;
         }
         synchronized (l10) {
             if (l10.q() != 0) {
                 return null;
             }
-            if (!cu.e.j(l10.A().a().l(), this.f25575b.l())) {
+            if (!cu.e.j(l10.A().a().l(), this.f25623b.l())) {
                 return null;
             }
             return l10.A();
@@ -147,24 +147,24 @@ public final class d {
     }
 
     public final okhttp3.a d() {
-        return this.f25575b;
+        return this.f25623b;
     }
 
     public final boolean e() {
         j jVar;
-        if (this.f25580g == 0 && this.f25581h == 0 && this.f25582i == 0) {
+        if (this.f25628g == 0 && this.f25629h == 0 && this.f25630i == 0) {
             return false;
         }
-        if (this.f25583j != null) {
+        if (this.f25631j != null) {
             return true;
         }
         k f10 = f();
         if (f10 != null) {
-            this.f25583j = f10;
+            this.f25631j = f10;
             return true;
         }
-        j.b bVar = this.f25578e;
-        if ((bVar != null && bVar.b()) || (jVar = this.f25579f) == null) {
+        j.b bVar = this.f25626e;
+        if ((bVar != null && bVar.b()) || (jVar = this.f25627f) == null) {
             return true;
         }
         return jVar.a();
@@ -172,7 +172,7 @@ public final class d {
 
     public final boolean g(HttpUrl url) {
         Intrinsics.checkNotNullParameter(url, "url");
-        HttpUrl l10 = this.f25575b.l();
+        HttpUrl l10 = this.f25623b.l();
         if (url.o() == l10.o() && Intrinsics.areEqual(url.i(), l10.i())) {
             return true;
         }
@@ -181,13 +181,13 @@ public final class d {
 
     public final void h(IOException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
-        this.f25583j = null;
-        if ((e10 instanceof n) && ((n) e10).f31303d == ju.b.REFUSED_STREAM) {
-            this.f25580g++;
+        this.f25631j = null;
+        if ((e10 instanceof n) && ((n) e10).f31351d == ju.b.REFUSED_STREAM) {
+            this.f25628g++;
         } else if (e10 instanceof ju.a) {
-            this.f25581h++;
+            this.f25629h++;
         } else {
-            this.f25582i++;
+            this.f25630i++;
         }
     }
 }

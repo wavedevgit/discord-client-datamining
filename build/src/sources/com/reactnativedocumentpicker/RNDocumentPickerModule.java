@@ -184,12 +184,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 }
             }
             this.f17554p.resolve((ReadableArray) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -246,12 +246,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             } catch (Exception e10) {
                 RNDocumentPickerModule.this.promiseWrapper.b(e10);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -311,14 +311,14 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 } catch (Exception e10) {
                     this.f17561o.reject(e10);
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -440,7 +440,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             f a10 = g.a(opts);
             this.currentPickOptions = a10;
             try {
-                currentActivity.startActivityForResult(im.d.f26815a.a(a10), 41);
+                currentActivity.startActivityForResult(im.d.f26863a.a(a10), 41);
             } catch (ActivityNotFoundException e10) {
                 promise.reject(UNABLE_TO_OPEN_FILE_TYPE, e10);
             } catch (Exception e11) {

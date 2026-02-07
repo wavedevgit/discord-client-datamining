@@ -34,7 +34,7 @@ public final class ReactSurfaceView extends com.facebook.react.runtime.ReactSurf
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit dispatchDraw$lambda$0(ReactSurfaceView reactSurfaceView, Canvas canvas) {
         super.dispatchDraw(canvas);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

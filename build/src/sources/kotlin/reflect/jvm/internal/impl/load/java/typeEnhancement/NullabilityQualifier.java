@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class NullabilityQualifier {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ NullabilityQualifier[] f33068d;
+    private static final /* synthetic */ NullabilityQualifier[] f33116d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33069e;
+    private static final /* synthetic */ EnumEntries f33117e;
     public static final NullabilityQualifier FORCE_FLEXIBILITY = new NullabilityQualifier("FORCE_FLEXIBILITY", 0);
     public static final NullabilityQualifier NULLABLE = new NullabilityQualifier("NULLABLE", 1);
     public static final NullabilityQualifier NOT_NULL = new NullabilityQualifier("NOT_NULL", 2);
 
     static {
         NullabilityQualifier[] a10 = a();
-        f33068d = a10;
-        f33069e = xr.a.a(a10);
+        f33116d = a10;
+        f33117e = xr.a.a(a10);
     }
 
     private NullabilityQualifier(String str, int i10) {
@@ -33,6 +33,6 @@ public final class NullabilityQualifier {
     }
 
     public static NullabilityQualifier[] values() {
-        return (NullabilityQualifier[]) f33068d.clone();
+        return (NullabilityQualifier[]) f33116d.clone();
     }
 }

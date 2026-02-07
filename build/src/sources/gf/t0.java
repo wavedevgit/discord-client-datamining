@@ -9,30 +9,30 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public abstract class t0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f25148a = new Object();
+    private static final Object f25196a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f25149b;
+    private static boolean f25197b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static String f25150c;
+    private static String f25198c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static int f25151d;
+    private static int f25199d;
 
     public static int a(Context context) {
         b(context);
-        return f25151d;
+        return f25199d;
     }
 
     private static void b(Context context) {
         Bundle bundle;
-        synchronized (f25148a) {
+        synchronized (f25196a) {
             try {
-                if (f25149b) {
+                if (f25197b) {
                     return;
                 }
-                f25149b = true;
+                f25197b = true;
                 try {
                     bundle = pf.c.a(context).c(context.getPackageName(), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT).metaData;
                 } catch (PackageManager.NameNotFoundException e10) {
@@ -41,8 +41,8 @@ public abstract class t0 {
                 if (bundle == null) {
                     return;
                 }
-                f25150c = bundle.getString("com.google.app.id");
-                f25151d = bundle.getInt("com.google.android.gms.version");
+                f25198c = bundle.getString("com.google.app.id");
+                f25199d = bundle.getInt("com.google.android.gms.version");
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -12,7 +12,7 @@ final class g extends e.a {
     private static final class a implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Type f53031a;
+        private final Type f53079a;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: vv.g$a$a  reason: collision with other inner class name */
@@ -20,34 +20,34 @@ final class g extends e.a {
         public class C0706a implements f {
 
             /* renamed from: a  reason: collision with root package name */
-            private final CompletableFuture f53032a;
+            private final CompletableFuture f53080a;
 
             public C0706a(CompletableFuture completableFuture) {
-                this.f53032a = completableFuture;
+                this.f53080a = completableFuture;
             }
 
             @Override // vv.f
             public void a(d dVar, z zVar) {
                 if (zVar.g()) {
-                    this.f53032a.complete(zVar.a());
+                    this.f53080a.complete(zVar.a());
                 } else {
-                    this.f53032a.completeExceptionally(new o(zVar));
+                    this.f53080a.completeExceptionally(new o(zVar));
                 }
             }
 
             @Override // vv.f
             public void b(d dVar, Throwable th2) {
-                this.f53032a.completeExceptionally(th2);
+                this.f53080a.completeExceptionally(th2);
             }
         }
 
         a(Type type) {
-            this.f53031a = type;
+            this.f53079a = type;
         }
 
         @Override // vv.e
         public Type a() {
-            return this.f53031a;
+            return this.f53079a;
         }
 
         @Override // vv.e
@@ -64,16 +64,16 @@ final class g extends e.a {
     public static final class b extends CompletableFuture {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f53034d;
+        private final d f53082d;
 
         b(d dVar) {
-            this.f53034d = dVar;
+            this.f53082d = dVar;
         }
 
         @Override // java.util.concurrent.CompletableFuture, java.util.concurrent.Future
         public boolean cancel(boolean z10) {
             if (z10) {
-                this.f53034d.cancel();
+                this.f53082d.cancel();
             }
             return super.cancel(z10);
         }
@@ -83,37 +83,37 @@ final class g extends e.a {
     private static final class c implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Type f53035a;
+        private final Type f53083a;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class a implements f {
 
             /* renamed from: a  reason: collision with root package name */
-            private final CompletableFuture f53036a;
+            private final CompletableFuture f53084a;
 
             public a(CompletableFuture completableFuture) {
-                this.f53036a = completableFuture;
+                this.f53084a = completableFuture;
             }
 
             @Override // vv.f
             public void a(d dVar, z zVar) {
-                this.f53036a.complete(zVar);
+                this.f53084a.complete(zVar);
             }
 
             @Override // vv.f
             public void b(d dVar, Throwable th2) {
-                this.f53036a.completeExceptionally(th2);
+                this.f53084a.completeExceptionally(th2);
             }
         }
 
         c(Type type) {
-            this.f53035a = type;
+            this.f53083a = type;
         }
 
         @Override // vv.e
         public Type a() {
-            return this.f53035a;
+            return this.f53083a;
         }
 
         @Override // vv.e

@@ -53,4 +53,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsSpamMessageRequest = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3969, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3968, 566, 2]);

@@ -60,7 +60,7 @@ public final class PollActionPresentation {
         $VALUES = $values;
         $ENTRIES = a.a($values);
         Companion = new Companion(null);
-        $cachedSerializer$delegate = l.b(o.f48044e, new Function0() { // from class: n6.b
+        $cachedSerializer$delegate = l.b(o.f48092e, new Function0() { // from class: n6.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;

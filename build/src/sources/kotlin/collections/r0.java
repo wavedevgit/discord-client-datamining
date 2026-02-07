@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class r0 extends q0 {
     public static Map i() {
-        g0 g0Var = g0.f32051d;
+        g0 g0Var = g0.f32099d;
         Intrinsics.checkNotNull(g0Var, "null cannot be cast to non-null type kotlin.collections.Map<K of kotlin.collections.MapsKt__MapsKt.emptyMap, V of kotlin.collections.MapsKt__MapsKt.emptyMap>");
         return g0Var;
     }

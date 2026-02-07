@@ -46,7 +46,7 @@ public /* synthetic */ class MediaGalleryDisplayComponent$$serializer implements
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MediaGalleryDisplayComponent.$childSerializers;
-        return new KSerializer[]{p0.f31057a, n2.f31041a, lazyArr[2].getValue()};
+        return new KSerializer[]{p0.f31105a, n2.f31089a, lazyArr[2].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

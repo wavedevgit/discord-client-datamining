@@ -7,7 +7,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public abstract class n {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void c(CancellableContinuation cancellableContinuation, Object obj) {
-        CoroutineDispatcher coroutineDispatcher = (CoroutineDispatcher) cancellableContinuation.getContext().m(CoroutineDispatcher.f35016e);
+        CoroutineDispatcher coroutineDispatcher = (CoroutineDispatcher) cancellableContinuation.getContext().m(CoroutineDispatcher.f35064e);
         if (coroutineDispatcher != null) {
             cancellableContinuation.t(coroutineDispatcher, obj);
         } else {
@@ -17,12 +17,12 @@ public abstract class n {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void d(CancellableContinuation cancellableContinuation, Throwable th2) {
-        CoroutineDispatcher coroutineDispatcher = (CoroutineDispatcher) cancellableContinuation.getContext().m(CoroutineDispatcher.f35016e);
+        CoroutineDispatcher coroutineDispatcher = (CoroutineDispatcher) cancellableContinuation.getContext().m(CoroutineDispatcher.f35064e);
         if (coroutineDispatcher != null) {
             cancellableContinuation.f(coroutineDispatcher, th2);
             return;
         }
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         cancellableContinuation.resumeWith(Result.b(kotlin.c.a(th2)));
     }
 }

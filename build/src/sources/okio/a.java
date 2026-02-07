@@ -8,15 +8,15 @@ import qu.m0;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte[] f43176a;
+    private static final byte[] f43224a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f43177b;
+    private static final byte[] f43225b;
 
     static {
-        ByteString.a aVar = ByteString.f43166o;
-        f43176a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").k();
-        f43177b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").k();
+        ByteString.a aVar = ByteString.f43214o;
+        f43224a = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").k();
+        f43225b = aVar.g("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").k();
     }
 
     public static final byte[] a(String str) {
@@ -128,7 +128,7 @@ public abstract class a {
 
     public static /* synthetic */ String c(byte[] bArr, byte[] bArr2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            bArr2 = f43176a;
+            bArr2 = f43224a;
         }
         return b(bArr, bArr2);
     }

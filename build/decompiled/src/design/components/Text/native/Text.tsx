@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var11.TextVariantsFlat;
     var12 = var13.map;
     var11 = function(arg0) { // Environment: var1
-        _fun35592: for (var _fun35592_ip = 0;;) switch (_fun35592_ip) {
+        _fun35601: for (var _fun35601_ip = 0;;) switch (_fun35601_ip) {
             case 0:
                 var4 = arg0;
                 var2 = var4.name;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'code';
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun35592_ip = 206;
-                    continue _fun35592
+                    _fun35601_ip = 206;
+                    continue _fun35601
                 }
             case 23:
                 var2 = var4.name;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.uppercase;
                 var3 = 'none';
                 if (!var5) {
-                    _fun35592_ip = 76;
-                    continue _fun35592
+                    _fun35601_ip = 76;
+                    continue _fun35601
                 }
             case 72:
                 var3 = 'uppercase';
@@ -155,16 +155,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 in var4;
                 var3 = undefined;
                 if (!var5) {
-                    _fun35592_ip = 194;
-                    continue _fun35592
+                    _fun35601_ip = 194;
+                    continue _fun35601
                 }
             case 166:
                 var5 = var4.letterSpacing;
                 var5 = var7 != var5;
                 var3 = undefined;
                 if (!var5) {
-                    _fun35592_ip = 194;
-                    continue _fun35592
+                    _fun35601_ip = 194;
+                    continue _fun35601
                 }
             case 181:
                 var5 = var4.letterSpacing;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var5.bind(var0)(var4);
     var8 = var9.createStyles;
     var4 = function(arg0, arg1) { // Environment: var1
-        _fun35593: for (var _fun35593_ip = 0;;) switch (_fun35593_ip) {
+        _fun35602: for (var _fun35602_ip = 0;;) switch (_fun35602_ip) {
             case 0:
                 var6 = arg0;
                 var0 = {};
@@ -199,14 +199,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'none';
                 var3 = undefined;
                 if (!(var4 !== var6)) {
-                    _fun35593_ip = 108;
-                    continue _fun35593
+                    _fun35602_ip = 108;
+                    continue _fun35602
                 }
             case 19:
                 var4 = 'always-white';
                 if (!(var4 !== var6)) {
-                    _fun35593_ip = 71;
-                    continue _fun35593
+                    _fun35602_ip = 71;
+                    continue _fun35602
                 }
             case 29:
                 var7 = _closure1_slot1;
@@ -218,8 +218,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot6;
                 var4 = var4[var6];
                 var4 = var5[var4];
-                _fun35593_ip = 105;
-                continue _fun35593;
+                _fun35602_ip = 105;
+                continue _fun35602;
             case 71:
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = arg1;
                 var2 = undefined;
                 if (!var3) {
-                    _fun35593_ip = 130;
-                    continue _fun35593
+                    _fun35602_ip = 130;
+                    continue _fun35602
                 }
             case 120:
                 var2 = ['tabular-nums'];
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var4;
     var4 = var7.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun35594: for (var _fun35594_ip = 0;;) switch (_fun35594_ip) {
+        _fun35603: for (var _fun35603_ip = 0;;) switch (_fun35603_ip) {
             case 0:
                 var8 = arg0;
                 var11 = var8.variant;
@@ -261,24 +261,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var8.tabularNumbers;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun35594_ip = 44;
-                    continue _fun35594
+                    _fun35603_ip = 44;
+                    continue _fun35603
                 }
             case 42:
                 var12 = false;
             case 44:
                 var0 = var8.animated;
                 if (!(var0 === var3)) {
-                    _fun35594_ip = 56;
-                    continue _fun35594
+                    _fun35603_ip = 56;
+                    continue _fun35603
                 }
             case 54:
                 var0 = false;
             case 56:
                 var1 = var8.experimental_useNativeText;
                 if (!(var1 === var3)) {
-                    _fun35594_ip = 68;
-                    continue _fun35594
+                    _fun35603_ip = 68;
+                    continue _fun35603
                 }
             case 66:
                 var1 = false;
@@ -305,31 +305,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var5 != var13;
                 var2 = 'text-default';
                 if (!var14) {
-                    _fun35594_ip = 128;
-                    continue _fun35594
+                    _fun35603_ip = 128;
+                    continue _fun35603
                 }
             case 125:
                 var2 = var13;
             case 128:
                 var10 = var10.bind(var3)(var2, var12);
                 if (var1) {
-                    _fun35594_ip = 152;
-                    continue _fun35594
+                    _fun35603_ip = 152;
+                    continue _fun35603
                 }
             case 137:
                 if (var0) {
-                    _fun35594_ip = 146;
-                    continue _fun35594
+                    _fun35603_ip = 146;
+                    continue _fun35603
                 }
             case 140:
                 var2 = _closure1_slot3;
-                _fun35594_ip = 150;
-                continue _fun35594;
+                _fun35603_ip = 150;
+                continue _fun35603;
             case 146:
                 var2 = _closure1_slot5;
             case 150:
-                _fun35594_ip = 178;
-                continue _fun35594;
+                _fun35603_ip = 178;
+                continue _fun35603;
             case 152:
                 var1 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -352,8 +352,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 != var6;
                 var5 = 'tail';
                 if (!var7) {
-                    _fun35594_ip = 236;
-                    continue _fun35594
+                    _fun35603_ip = 236;
+                    continue _fun35603
                 }
             case 233:
                 var5 = var6;
@@ -380,4 +380,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TextStyleSheet = var3;
     var2.Text = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 483, 33, 3722, 671, 22, 3944, 1297, 290, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 483, 33, 3721, 671, 22, 3943, 1297, 290, 2]);

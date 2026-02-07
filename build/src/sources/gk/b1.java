@@ -8,20 +8,20 @@ public abstract class b1 {
     public class a implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ f f25192a;
+        final /* synthetic */ f f25240a;
 
         a(f fVar) {
-            this.f25192a = fVar;
+            this.f25240a = fVar;
         }
 
         @Override // gk.b1.b
         public byte a(int i10) {
-            return this.f25192a.c(i10);
+            return this.f25240a.c(i10);
         }
 
         @Override // gk.b1.b
         public int size() {
-            return this.f25192a.size();
+            return this.f25240a.size();
         }
     }
 

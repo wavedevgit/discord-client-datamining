@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationSettingsMuteBanner = var3;
     var1 = function arg0() {
-        _fun70142: for (var _fun70142_ip = 0;;) switch (_fun70142_ip) {
+        _fun70587: for (var _fun70587_ip = 0;;) switch (_fun70587_ip) {
             case 0:
                 var7 = arg0;
                 var1 = null;
@@ -152,15 +152,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var0 = undefined;
                 if (var2) {
-                    _fun70142_ip = 22;
-                    continue _fun70142
+                    _fun70587_ip = 22;
+                    continue _fun70587
                 }
             case 16:
                 var0 = var7.end_time;
             case 22:
                 if (!(var1 != var0)) {
-                    _fun70142_ip = 179;
-                    continue _fun70142
+                    _fun70587_ip = 179;
+                    continue _fun70587
                 }
             case 29:
                 var6 = _closure1_slot0;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var8)(var6, var4);
                 var0.endTime = var4;
                 var0 = var2.bind(var3)(var1, var0);
-                _fun70142_ip = 239;
-                continue _fun70142;
+                _fun70587_ip = 239;
+                continue _fun70587;
             case 179:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -222,4 +222,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMuteBannerSubtitleFromConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3943, 4085, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3942, 4084, 1234, 2]);

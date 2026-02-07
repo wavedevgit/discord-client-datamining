@@ -12,25 +12,25 @@ import org.jetbrains.annotations.NotNull;
 public final class p extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36211d;
+    private final int f36259d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f36212e;
+    private final String f36260e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f36213i;
+    private final String f36261i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f36214o;
+    private final String f36262o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f36215p;
+    private final List f36263p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final p f36216q;
+    private final p f36264q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final k f36210r = new k(null);
+    public static final k f36258r = new k(null);
     @NotNull
     public static final Parcelable.Creator<p> CREATOR = new c0();
 
@@ -44,19 +44,19 @@ public final class p extends hf.a {
         if (pVar != null && pVar.b()) {
             throw new IllegalArgumentException("Failed requirement.");
         }
-        this.f36211d = i10;
-        this.f36212e = packageName;
-        this.f36213i = str;
+        this.f36259d = i10;
+        this.f36260e = packageName;
+        this.f36261i = str;
         if (str2 == null) {
             if (pVar != null) {
-                str2 = pVar.f36214o;
+                str2 = pVar.f36262o;
             } else {
                 str2 = null;
             }
         }
-        this.f36214o = str2;
+        this.f36262o = str2;
         if (list == null) {
-            list = pVar != null ? pVar.f36215p : null;
+            list = pVar != null ? pVar.f36263p : null;
             if (list == null) {
                 list = z.i();
                 Intrinsics.checkNotNullExpressionValue(list, "of(...)");
@@ -65,12 +65,12 @@ public final class p extends hf.a {
         Intrinsics.checkNotNullParameter(list, "<this>");
         z j10 = z.j(list);
         Intrinsics.checkNotNullExpressionValue(j10, "copyOf(...)");
-        this.f36215p = j10;
-        this.f36216q = pVar;
+        this.f36263p = j10;
+        this.f36264q = pVar;
     }
 
     public final boolean b() {
-        if (this.f36216q != null) {
+        if (this.f36264q != null) {
             return true;
         }
         return false;
@@ -79,7 +79,7 @@ public final class p extends hf.a {
     public final boolean equals(Object obj) {
         if (obj instanceof p) {
             p pVar = (p) obj;
-            if (this.f36211d == pVar.f36211d && Intrinsics.areEqual(this.f36212e, pVar.f36212e) && Intrinsics.areEqual(this.f36213i, pVar.f36213i) && Intrinsics.areEqual(this.f36214o, pVar.f36214o) && Intrinsics.areEqual(this.f36216q, pVar.f36216q) && Intrinsics.areEqual(this.f36215p, pVar.f36215p)) {
+            if (this.f36259d == pVar.f36259d && Intrinsics.areEqual(this.f36260e, pVar.f36260e) && Intrinsics.areEqual(this.f36261i, pVar.f36261i) && Intrinsics.areEqual(this.f36262o, pVar.f36262o) && Intrinsics.areEqual(this.f36264q, pVar.f36264q) && Intrinsics.areEqual(this.f36263p, pVar.f36263p)) {
                 return true;
             }
         }
@@ -87,13 +87,13 @@ public final class p extends hf.a {
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f36211d), this.f36212e, this.f36213i, this.f36214o, this.f36216q});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f36259d), this.f36260e, this.f36261i, this.f36262o, this.f36264q});
     }
 
     public final String toString() {
         int i10;
-        int length = this.f36212e.length() + 18;
-        String str = this.f36213i;
+        int length = this.f36260e.length() + 18;
+        String str = this.f36261i;
         int i11 = 0;
         if (str != null) {
             i10 = str.length();
@@ -101,22 +101,22 @@ public final class p extends hf.a {
             i10 = 0;
         }
         StringBuilder sb2 = new StringBuilder(length + i10);
-        sb2.append(this.f36211d);
+        sb2.append(this.f36259d);
         sb2.append("/");
-        sb2.append(this.f36212e);
-        String str2 = this.f36213i;
+        sb2.append(this.f36260e);
+        String str2 = this.f36261i;
         if (str2 != null) {
             sb2.append("[");
-            if (StringsKt.P(str2, this.f36212e, false, 2, null)) {
-                sb2.append((CharSequence) str2, this.f36212e.length(), str2.length());
+            if (StringsKt.P(str2, this.f36260e, false, 2, null)) {
+                sb2.append((CharSequence) str2, this.f36260e.length(), str2.length());
             } else {
                 sb2.append(str2);
             }
             sb2.append("]");
         }
-        if (this.f36214o != null) {
+        if (this.f36262o != null) {
             sb2.append("/");
-            String str3 = this.f36214o;
+            String str3 = this.f36262o;
             if (str3 != null) {
                 i11 = str3.hashCode();
             }
@@ -130,14 +130,14 @@ public final class p extends hf.a {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        int i11 = this.f36211d;
+        int i11 = this.f36259d;
         int a10 = hf.c.a(dest);
         hf.c.l(dest, 1, i11);
-        hf.c.s(dest, 3, this.f36212e, false);
-        hf.c.s(dest, 4, this.f36213i, false);
-        hf.c.s(dest, 6, this.f36214o, false);
-        hf.c.q(dest, 7, this.f36216q, i10, false);
-        hf.c.w(dest, 8, this.f36215p, false);
+        hf.c.s(dest, 3, this.f36260e, false);
+        hf.c.s(dest, 4, this.f36261i, false);
+        hf.c.s(dest, 6, this.f36262o, false);
+        hf.c.q(dest, 7, this.f36264q, i10, false);
+        hf.c.w(dest, 8, this.f36263p, false);
         hf.c.b(dest, a10);
     }
 }

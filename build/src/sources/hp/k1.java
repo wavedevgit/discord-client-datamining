@@ -8,51 +8,51 @@ public abstract class k1 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f26335a;
+        public static final /* synthetic */ int[] f26383a;
 
         static {
             int[] iArr = new int[d0.values().length];
             try {
-                iArr[d0.f26280d.ordinal()] = 1;
+                iArr[d0.f26328d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[d0.f26281e.ordinal()] = 2;
+                iArr[d0.f26329e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[d0.f26282i.ordinal()] = 3;
+                iArr[d0.f26330i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[d0.f26283o.ordinal()] = 4;
+                iArr[d0.f26331o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f26335a = iArr;
+            f26383a = iArr;
         }
     }
 
     public static final b0 a(d0 d0Var) {
         Intrinsics.checkNotNullParameter(d0Var, "<this>");
-        int i10 = a.f26335a[d0Var.ordinal()];
+        int i10 = a.f26383a[d0Var.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        return b0.f26235o;
+                        return b0.f26283o;
                     }
                     throw new qr.p();
                 }
-                return b0.f26234i;
+                return b0.f26282i;
             }
-            return b0.f26233e;
+            return b0.f26281e;
         }
-        return b0.f26232d;
+        return b0.f26280d;
     }
 
     public static final String b(d0 d0Var) {
         Intrinsics.checkNotNullParameter(d0Var, "<this>");
-        int i10 = a.f26335a[d0Var.ordinal()];
+        int i10 = a.f26383a[d0Var.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {

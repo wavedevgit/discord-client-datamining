@@ -8,22 +8,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c0 implements Executor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f48462d;
+    private final Executor f48510d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ArrayDeque f48463e;
+    private final ArrayDeque f48511e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Runnable f48464i;
+    private Runnable f48512i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Object f48465o;
+    private final Object f48513o;
 
     public c0(Executor executor) {
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f48462d = executor;
-        this.f48463e = new ArrayDeque();
-        this.f48465o = new Object();
+        this.f48510d = executor;
+        this.f48511e = new ArrayDeque();
+        this.f48513o = new Object();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -38,15 +38,15 @@ public final class c0 implements Executor {
     }
 
     public final void c() {
-        synchronized (this.f48465o) {
+        synchronized (this.f48513o) {
             try {
-                Object poll = this.f48463e.poll();
+                Object poll = this.f48511e.poll();
                 Runnable runnable = (Runnable) poll;
-                this.f48464i = runnable;
+                this.f48512i = runnable;
                 if (poll != null) {
-                    this.f48462d.execute(runnable);
+                    this.f48510d.execute(runnable);
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -56,18 +56,18 @@ public final class c0 implements Executor {
     @Override // java.util.concurrent.Executor
     public void execute(final Runnable command) {
         Intrinsics.checkNotNullParameter(command, "command");
-        synchronized (this.f48465o) {
+        synchronized (this.f48513o) {
             try {
-                this.f48463e.offer(new Runnable() { // from class: r3.b0
+                this.f48511e.offer(new Runnable() { // from class: r3.b0
                     @Override // java.lang.Runnable
                     public final void run() {
                         c0.b(command, this);
                     }
                 });
-                if (this.f48464i == null) {
+                if (this.f48512i == null) {
                     c();
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

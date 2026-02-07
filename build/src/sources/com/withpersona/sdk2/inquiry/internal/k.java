@@ -84,27 +84,27 @@ public final class k implements dn.k {
 
         private a() {
             k.a aVar = dn.k.f20913a;
-            this.f18945a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f51952f, C0240a.f18946d);
+            this.f18945a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f52000f, C0240a.f18946d);
         }
     }
 
     public k(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         this.f18941b = view;
-        View findViewById = view.findViewById(f2.f51912a);
+        View findViewById = view.findViewById(f2.f51960a);
         Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
         LottieAnimationView lottieAnimationView = (LottieAnimationView) findViewById;
         this.f18942c = lottieAnimationView;
         Context context = view.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = rp.s.f(context, jp.a.f30774n, null, false, 6, null);
+        Integer f10 = rp.s.f(context, jp.a.f30822n, null, false, 6, null);
         this.f18943d = f10;
         if (f10 != null) {
             k(f10.intValue());
             lottieAnimationView.v();
             return;
         }
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f35766b, new y5.e() { // from class: uo.x
+        lottieAnimationView.l(new q5.e("**"), l5.a0.f35814b, new y5.e() { // from class: uo.x
             @Override // y5.e
             public final Object a(y5.b bVar) {
                 Integer g10;
@@ -112,7 +112,7 @@ public final class k implements dn.k {
                 return g10;
             }
         });
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f35765a, new y5.e() { // from class: uo.y
+        lottieAnimationView.l(new q5.e("**"), l5.a0.f35813a, new y5.e() { // from class: uo.y
             @Override // y5.e
             public final Object a(y5.b bVar) {
                 Integer h10;
@@ -166,7 +166,7 @@ public final class k implements dn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(n.d.b bVar) {
         bVar.a().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -188,14 +188,14 @@ public final class k implements dn.k {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
         if (rendering.c() && this.f18943d == null) {
-            k(h2.f51960a);
+            k(h2.f52008a);
             this.f18942c.setScaleX(0.5f);
             this.f18942c.setScaleY(0.5f);
         }
         if (rendering.c()) {
             Context context = this.f18941b.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            Integer f10 = rp.s.f(context, jp.a.f30773m, null, false, 6, null);
+            Integer f10 = rp.s.f(context, jp.a.f30821m, null, false, 6, null);
             if (f10 != null) {
                 this.f18941b.setBackground(androidx.core.content.a.e(this.f18941b.getContext(), f10.intValue()));
             }
@@ -227,7 +227,7 @@ public final class k implements dn.k {
                 Integer fillColorValue = b11.getFillColorValue();
                 if (fillColorValue != null) {
                     final int intValue = fillColorValue.intValue();
-                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35765a, new y5.e() { // from class: uo.u
+                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35813a, new y5.e() { // from class: uo.u
                         @Override // y5.e
                         public final Object a(y5.b bVar) {
                             Integer n10;
@@ -239,7 +239,7 @@ public final class k implements dn.k {
                 Integer strokeColorValue = b11.getStrokeColorValue();
                 if (strokeColorValue != null) {
                     final int intValue2 = strokeColorValue.intValue();
-                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35766b, new y5.e() { // from class: uo.v
+                    kVar.f18942c.l(new q5.e("**"), l5.a0.f35814b, new y5.e() { // from class: uo.v
                         @Override // y5.e
                         public final Object a(y5.b bVar) {
                             Integer o10;

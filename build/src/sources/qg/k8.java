@@ -5,7 +5,7 @@ import yi.c;
 final class k8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k8 f47313a = new k8();
+    static final k8 f47361a = new k8();
 
     static {
         c.b a10 = yi.c.a("status");

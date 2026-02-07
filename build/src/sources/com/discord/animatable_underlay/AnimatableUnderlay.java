@@ -340,7 +340,7 @@ public final class AnimatableUnderlay extends ReactViewGroup {
                 }
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

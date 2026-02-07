@@ -137,7 +137,7 @@ public final class InquiryActivity extends AppCompatActivity {
             str = null;
         }
         intent.putExtra("SESSION_TOKEN_KEY", str);
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         setResult(0, intent);
         Integer w10 = D().w();
         if (w10 != null) {
@@ -150,7 +150,7 @@ public final class InquiryActivity extends AppCompatActivity {
             FragmentManager supportFragmentManager = getSupportFragmentManager();
             Intrinsics.checkNotNullExpressionValue(supportFragmentManager, "getSupportFragmentManager(...)");
             FragmentTransaction r10 = supportFragmentManager.r();
-            int i10 = f2.f51915d;
+            int i10 = f2.f51963d;
             j jVar = new j();
             jVar.setArguments(getIntent().getExtras());
             r10.n(i10, jVar);
@@ -170,7 +170,7 @@ public final class InquiryActivity extends AppCompatActivity {
         Intrinsics.checkNotNullParameter(bundle, "bundle");
         Intent intent = new Intent();
         intent.putExtras(bundle);
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         inquiryActivity.setResult(-1, intent);
         inquiryActivity.finish();
     }
@@ -181,10 +181,10 @@ public final class InquiryActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
             intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "Invalid session token.");
-            oq.d dVar = oq.d.f43336q;
+            oq.d dVar = oq.d.f43384q;
             Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
             intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             setResult(0, intent);
             finish();
             return false;
@@ -215,10 +215,10 @@ public final class InquiryActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                 intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "A fatal exception occurred.");
-                oq.d dVar = oq.d.f43342w;
+                oq.d dVar = oq.d.f43390w;
                 Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
                 intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 setResult(0, intent);
                 finish();
                 return;

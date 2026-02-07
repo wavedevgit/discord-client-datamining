@@ -5,19 +5,19 @@ import java.util.Objects;
 final class l extends e {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ m f48913e;
+    final /* synthetic */ m f48961e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(m mVar) {
         Objects.requireNonNull(mVar);
-        this.f48913e = mVar;
+        this.f48961e = mVar;
     }
 
     @Override // rg.e
     public final void b() {
-        o oVar = this.f48913e.f48914d;
+        o oVar = this.f48961e.f48962d;
         o.s(oVar);
-        oVar.f48928m = null;
-        oVar.f48922g = false;
+        oVar.f48976m = null;
+        oVar.f48970g = false;
     }
 }

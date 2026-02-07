@@ -148,7 +148,7 @@ public final class RiveFile implements AutoCloseable {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m32invoke();
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */

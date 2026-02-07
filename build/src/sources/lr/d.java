@@ -6,20 +6,20 @@ import android.text.style.MetricAffectingSpan;
 public class d extends MetricAffectingSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final jr.c f36554d;
+    private final jr.c f36602d;
 
     public d(jr.c cVar) {
-        this.f36554d = cVar;
+        this.f36602d = cVar;
     }
 
     private void a(TextPaint textPaint) {
-        this.f36554d.c(textPaint);
+        this.f36602d.c(textPaint);
     }
 
     @Override // android.text.style.CharacterStyle
     public void updateDrawState(TextPaint textPaint) {
         a(textPaint);
-        textPaint.bgColor = this.f36554d.m(textPaint);
+        textPaint.bgColor = this.f36602d.m(textPaint);
     }
 
     @Override // android.text.style.MetricAffectingSpan

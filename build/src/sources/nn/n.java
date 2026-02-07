@@ -8,10 +8,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class n extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f40937b = new a(null);
+    public static final a f40985b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40938a;
+    private final String f40986a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -25,7 +25,7 @@ public final class n extends Event {
 
     public n(int i10, int i11, String str) {
         super(i10, i11);
-        this.f40938a = str;
+        this.f40986a = str;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -36,7 +36,7 @@ public final class n extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putString("text", this.f40938a);
+        createMap.putString("text", this.f40986a);
         return createMap;
     }
 

@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor;
 public class j implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeConstructor.a f34735d;
+    private final AbstractTypeConstructor.a f34783d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AbstractTypeConstructor f34736e;
+    private final AbstractTypeConstructor f34784e;
 
     public j(AbstractTypeConstructor.a aVar, AbstractTypeConstructor abstractTypeConstructor) {
-        this.f34735d = aVar;
-        this.f34736e = abstractTypeConstructor;
+        this.f34783d = aVar;
+        this.f34784e = abstractTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List d10;
-        d10 = AbstractTypeConstructor.a.d(this.f34735d, this.f34736e);
+        d10 = AbstractTypeConstructor.a.d(this.f34783d, this.f34784e);
         return d10;
     }
 }

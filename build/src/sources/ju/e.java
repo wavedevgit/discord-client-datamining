@@ -8,19 +8,19 @@ import okio.ByteString;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f31166a = new e();
+    public static final e f31214a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final ByteString f31167b = ByteString.f43166o.g("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
+    public static final ByteString f31215b = ByteString.f43214o.g("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f31168c = {"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};
+    private static final String[] f31216c = {"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String[] f31169d = new String[64];
+    private static final String[] f31217d = new String[64];
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f31170e;
+    private static final String[] f31218e;
 
     static {
         int i10;
@@ -30,8 +30,8 @@ public final class e {
             Intrinsics.checkNotNullExpressionValue(binaryString, "toBinaryString(it)");
             strArr[i11] = StringsKt.I(cu.e.t("%8s", binaryString), ' ', '0', false, 4, null);
         }
-        f31170e = strArr;
-        String[] strArr2 = f31169d;
+        f31218e = strArr;
+        String[] strArr2 = f31217d;
         strArr2[0] = "";
         strArr2[1] = "END_STREAM";
         int[] iArr = {1};
@@ -44,16 +44,16 @@ public final class e {
         for (int i12 = 0; i12 < 3; i12++) {
             int i13 = iArr2[i12];
             int i14 = iArr[0];
-            String[] strArr3 = f31169d;
+            String[] strArr3 = f31217d;
             int i15 = i14 | i13;
             strArr3[i15] = strArr3[i14] + '|' + strArr3[i13];
             strArr3[i15 | 8] = strArr3[i14] + '|' + strArr3[i13] + "|PADDED";
         }
-        int length = f31169d.length;
+        int length = f31217d.length;
         for (int i16 = 0; i16 < length; i16++) {
-            String[] strArr4 = f31169d;
+            String[] strArr4 = f31217d;
             if (strArr4[i16] == null) {
-                strArr4[i16] = f31170e[i16];
+                strArr4[i16] = f31218e[i16];
             }
         }
     }
@@ -69,12 +69,12 @@ public final class e {
         if (i10 != 2 && i10 != 3) {
             if (i10 != 4 && i10 != 6) {
                 if (i10 != 7 && i10 != 8) {
-                    String[] strArr = f31169d;
+                    String[] strArr = f31217d;
                     if (i11 < strArr.length) {
                         str = strArr[i11];
                         Intrinsics.checkNotNull(str);
                     } else {
-                        str = f31170e[i11];
+                        str = f31218e[i11];
                     }
                     String str2 = str;
                     if (i10 == 5 && (i11 & 4) != 0) {
@@ -88,14 +88,14 @@ public final class e {
             } else if (i11 == 1) {
                 return "ACK";
             } else {
-                return f31170e[i11];
+                return f31218e[i11];
             }
         }
-        return f31170e[i11];
+        return f31218e[i11];
     }
 
     public final String b(int i10) {
-        String[] strArr = f31168c;
+        String[] strArr = f31216c;
         if (i10 < strArr.length) {
             return strArr[i10];
         }

@@ -1,53 +1,84 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
     var1 = function arg0() {
-        _fun29183: for (var _fun29183_ip = 0;;) switch (_fun29183_ip) {
+        _fun29194: for (var _fun29194_ip = 0;;) switch (_fun29194_ip) {
             case 0:
-                var2 = arg0;
+                var0 = arg0;
                 var1 = undefined;
-                if (!(var1 !== var2)) {
-                    _fun29183_ip = 87;
-                    continue _fun29183
+                if (!(var1 !== var0)) {
+                    _fun29194_ip = 172;
+                    continue _fun29194
                 }
-            case 9:
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var3 = 0;
-                var3 = var5[var3];
-                var3 = var4.bind(var1)(var3);
-                var3 = var3.bind(var1)(var2);
-                if (var3) {
-                    _fun29183_ip = 87;
-                    continue _fun29183
+            case 12:
+                var1 = {};
+                var2 = '[[Value]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 37;
+                    continue _fun29194
                 }
-            case 39:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 1;
-                var0 = var4[var0];
-                var4 = var3.bind(var1)(var0);
-                var0 = var4.prototype;
-                var3 = Object.create(var0, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var6 = 'Assertion failed: `Desc` must be a Property Descriptor';
-                var7 = var3;
-                var0 = new var7[var4](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var3;
-                throw var0;
-            case 87:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 2;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
+            case 25:
+                var2 = var0["[[Value]]"];
+                var1.value = var2;
+            case 37:
+                var2 = '[[Writable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 66;
+                    continue _fun29194
+                }
+            case 48:
+                var2 = var0["[[Writable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.writable = var2;
+            case 66:
+                var2 = '[[Get]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 89;
+                    continue _fun29194
+                }
+            case 77:
+                var2 = var0["[[Get]]"];
+                var1.get = var2;
+            case 89:
+                var2 = '[[Set]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 112;
+                    continue _fun29194
+                }
+            case 100:
+                var2 = var0["[[Set]]"];
+                var1.set = var2;
+            case 112:
+                var2 = '[[Enumerable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 141;
+                    continue _fun29194
+                }
+            case 123:
+                var2 = var0["[[Enumerable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.enumerable = var2;
+            case 141:
+                var2 = '[[Configurable]]';
+                var2 = var2 in var0;
+                if (!var2) {
+                    _fun29194_ip = 170;
+                    continue _fun29194
+                }
+            case 152:
+                var2 = var0["[[Configurable]]"];
+                var2 = !var2;
+                var2 = !var2;
+                var1.configurable = var2;
+            case 170:
+                return var1;
+            case 172:
                 return var0;
         }
     };
@@ -55,4 +86,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3421, 518, 3428]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

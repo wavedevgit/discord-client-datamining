@@ -45,7 +45,7 @@ public /* synthetic */ class MetricEvent$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MetricEvent.$childSerializers;
-        return new KSerializer[]{n2.f31041a, a.u((KSerializer) lazyArr[1].getValue())};
+        return new KSerializer[]{n2.f31089a, a.u((KSerializer) lazyArr[1].getValue())};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

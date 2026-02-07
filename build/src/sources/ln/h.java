@@ -8,34 +8,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f36404e;
+    private final double f36452e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f36405f;
+    private final float f36453f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f36406g;
+    private final float f36454g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final double f36407h;
+    private final double f36455h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h(u handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f36404e = handler.b1();
-        this.f36405f = handler.Z0();
-        this.f36406g = handler.a1();
-        this.f36407h = handler.c1();
+        this.f36452e = handler.b1();
+        this.f36453f = handler.Z0();
+        this.f36454g = handler.a1();
+        this.f36455h = handler.c1();
     }
 
     @Override // ln.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putDouble("scale", this.f36404e);
-        eventData.putDouble("focalX", PixelUtil.toDIPFromPixel(this.f36405f));
-        eventData.putDouble("focalY", PixelUtil.toDIPFromPixel(this.f36406g));
-        eventData.putDouble("velocity", this.f36407h);
+        eventData.putDouble("scale", this.f36452e);
+        eventData.putDouble("focalX", PixelUtil.toDIPFromPixel(this.f36453f));
+        eventData.putDouble("focalY", PixelUtil.toDIPFromPixel(this.f36454g));
+        eventData.putDouble("velocity", this.f36455h);
     }
 }

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun113394: for (var _fun113394_ip = 0;;) switch (_fun113394_ip) {
+        _fun113886: for (var _fun113886_ip = 0;;) switch (_fun113886_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun113394_ip = 76;
-                continue _fun113394;
+                _fun113886_ip = 76;
+                continue _fun113886;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -111,12 +111,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.FAVORITES_RAW_GUILD_ID;
     var _closure1_slot15 = var3;
-    var3 = 21;
+    var3 = 22;
     var3 = var5[var3];
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function arg0() {
-            _fun113398: for (var _fun113398_ip = 0;;) switch (_fun113398_ip) {
+            _fun113890: for (var _fun113890_ip = 0;;) switch (_fun113890_ip) {
                 case 0:
                     var4 = this;
                     var12 = 0;
@@ -136,14 +136,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot16;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun113398_ip = 84;
-                        continue _fun113398
+                        _fun113890_ip = 84;
+                        continue _fun113890
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun113398_ip = 118;
-                    continue _fun113398;
+                    _fun113890_ip = 118;
+                    continue _fun113890;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -197,35 +197,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'handleSelectedGuildChange';
         var4.key = var0;
         var0 = function() {
-            _fun113399: for (var _fun113399_ip = 0;;) switch (_fun113399_ip) {
+            _fun113891: for (var _fun113891_ip = 0;;) switch (_fun113891_ip) {
                 case 0:
                     var2 = _closure1_slot11;
                     var1 = var2.getGuildId;
                     var2 = var1.bind(var2)();
                     var5 = null;
                     if (!(var5 != var2)) {
-                        _fun113399_ip = 471;
-                        continue _fun113399
+                        _fun113891_ip = 515;
+                        continue _fun113891
                     }
                 case 26:
                     var1 = _closure1_slot15;
                     if (!(var2 !== var1)) {
-                        _fun113399_ip = 471;
-                        continue _fun113399
+                        _fun113891_ip = 515;
+                        continue _fun113891
                     }
                 case 37:
                     var1 = _closure1_slot14;
                     if (!(var2 !== var1)) {
-                        _fun113399_ip = 471;
-                        continue _fun113399
+                        _fun113891_ip = 515;
+                        continue _fun113891
                     }
                 case 48:
                     var3 = _closure1_slot9;
                     var1 = var3.getGuild;
                     var8 = var1.bind(var3)(var2);
                     if (!(var5 != var8)) {
-                        _fun113399_ip = 471;
-                        continue _fun113399
+                        _fun113891_ip = 515;
+                        continue _fun113891
                     }
                 case 69:
                     var6 = _closure1_slot0;
@@ -252,8 +252,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.guildId = var11;
                     var1.location = var10;
                     var1 = var4.bind(var9)(var1);
-                    var4 = _closure1_slot1;
                     var1 = 15;
+                    var1 = var7[var1];
+                    var1 = var6.bind(var3)(var1);
+                    var9 = var1.GuildTagBadgePacksWaveTwoExperiment;
+                    var4 = var9.trackExposure;
+                    var1 = {};
+                    var11 = var8.id;
+                    var1.guildId = var11;
+                    var1.location = var10;
+                    var1 = var4.bind(var9)(var1);
+                    var4 = _closure1_slot1;
+                    var1 = 16;
                     var1 = var7[var1];
                     var9 = var4.bind(var3)(var1);
                     var4 = var9.getConfig;
@@ -261,104 +271,104 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.location = var10;
                     var1 = var4.bind(var9)(var1);
                     var1 = var1.enabled;
-                    var4 = 16;
+                    var4 = 17;
                     var4 = var7[var4];
                     var7 = var6.bind(var3)(var4);
                     var6 = var7.getHasAllocateBoostPermission;
                     var4 = _closure1_slot10;
                     var4 = var6.bind(var7)(var4, var8);
                     if (var4) {
-                        _fun113399_ip = 371;
-                        continue _fun113399
+                        _fun113891_ip = 415;
+                        continue _fun113891
                     }
-                case 245:
+                case 289:
                     var6 = _closure1_slot12;
                     var4 = var6.getCurrentUser;
                     var7 = var4.bind(var6)();
                     var6 = var5 == var7;
                     var4 = undefined;
                     if (var6) {
-                        _fun113399_ip = 272;
-                        continue _fun113399
+                        _fun113891_ip = 316;
+                        continue _fun113891
                     }
-                case 267:
+                case 311:
                     var4 = var7.id;
-                case 272:
+                case 316:
                     var4 = var5 != var4;
                     var6 = undefined;
                     if (!var4) {
-                        _fun113399_ip = 302;
-                        continue _fun113399
+                        _fun113891_ip = 346;
+                        continue _fun113891
                     }
-                case 281:
+                case 325:
                     var8 = _closure1_slot8;
                     var5 = var8.getMember;
                     var4 = var7.id;
                     var6 = var5.bind(var8)(var2, var4);
-                case 302:
+                case 346:
                     if (!var1) {
-                        _fun113399_ip = 337;
-                        continue _fun113399
+                        _fun113891_ip = 381;
+                        continue _fun113891
                     }
-                case 305:
+                case 349:
                     var5 = _closure1_slot0;
                     var8 = _closure1_slot2;
-                    var4 = 17;
+                    var4 = 18;
                     var4 = var8[var4];
                     var5 = var5.bind(var3)(var4);
                     var4 = var5.getIsEligibleForPowerupUpsells;
                     var1 = var4.bind(var5)(var7, var6);
-                case 337:
+                case 381:
                     var5 = _closure1_slot0;
                     var6 = _closure1_slot2;
-                    var4 = 18;
+                    var4 = 19;
                     var4 = var6[var4];
                     var4 = var5.bind(var3)(var4);
                     var4 = var4.isMobile;
                     if (var4) {
-                        _fun113399_ip = 369;
-                        continue _fun113399
+                        _fun113891_ip = 413;
+                        continue _fun113891
                     }
-                case 366:
+                case 410:
                     if (var1) {
-                        _fun113399_ip = 371;
-                        continue _fun113399
+                        _fun113891_ip = 415;
+                        continue _fun113891
                     }
-                case 369:
+                case 413:
                     return var3;
-                case 371:
+                case 415:
                     var4 = _closure1_slot13;
                     var1 = var4.shouldFetchCatalogForGuild;
                     var1 = var1.bind(var4)(var2);
                     if (!var1) {
-                        _fun113399_ip = 420;
-                        continue _fun113399
+                        _fun113891_ip = 464;
+                        continue _fun113891
                     }
-                case 389:
+                case 433:
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
-                    var1 = 19;
+                    var1 = 20;
                     var1 = var5[var1];
                     var4 = var4.bind(var3)(var1);
                     var1 = var4.fetchPowerupCatalogForGuild;
                     var1 = var1.bind(var4)(var2);
-                case 420:
+                case 464:
                     var4 = _closure1_slot13;
                     var1 = var4.shouldFetchPowerupsForGuild;
                     var1 = var1.bind(var4)(var2);
                     if (!var1) {
-                        _fun113399_ip = 471;
-                        continue _fun113399
+                        _fun113891_ip = 515;
+                        continue _fun113891
                     }
-                case 440:
+                case 484:
                     var1 = _closure1_slot0;
                     var4 = _closure1_slot2;
-                    var0 = 19;
+                    var0 = 20;
                     var0 = var4[var0];
                     var1 = var1.bind(var3)(var0);
                     var0 = var1.fetchGuildBoostEntitlements;
                     var0 = var0.bind(var1)(var2);
-                case 471:
+                case 515:
                     var0 = undefined;
                     return var0;
             }
@@ -398,12 +408,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'refreshGuildPowerups';
         var4.key = var6;
         var5 = function arg0() {
-            _fun113402: for (var _fun113402_ip = 0;;) switch (_fun113402_ip) {
+            _fun113894: for (var _fun113894_ip = 0;;) switch (_fun113894_ip) {
                 case 0:
                     var3 = arg0;
                     var4 = _closure1_slot0;
                     var2 = _closure1_slot2;
-                    var0 = 16;
+                    var0 = 17;
                     var2 = var2[var0];
                     var0 = undefined;
                     var6 = var4.bind(var0)(var2);
@@ -415,18 +425,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var5.bind(var6)(var4, var2);
                     var2 = true;
                     if (!(var2 === var4)) {
-                        _fun113402_ip = 118;
-                        continue _fun113402
+                        _fun113894_ip = 118;
+                        continue _fun113894
                     }
                 case 64:
                     var2 = _closure1_slot0;
                     var4 = _closure1_slot2;
-                    var1 = 19;
+                    var1 = 20;
                     var1 = var4[var1];
                     var5 = var2.bind(var0)(var1);
                     var1 = var5.fetchGuildBoostEntitlements;
                     var1 = var1.bind(var5)(var3);
-                    var1 = 20;
+                    var1 = 21;
                     var1 = var4[var1];
                     var2 = var2.bind(var0)(var1);
                     var1 = var2.fetchAppliedGuildBoostsForGuild;
@@ -450,7 +460,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var3;
     var1 = new var12[var1](var11);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 22;
+    var3 = 23;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -458,4 +468,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1681, 1410, 3093, 3215, 1621, 6740, 660, 1612, 13358, 5646, 14557, 10005, 14558, 3362, 10002, 6734, 4300, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1683, 1410, 3093, 3214, 1621, 6783, 660, 1612, 13401, 5693, 6785, 14600, 10050, 14601, 3361, 10047, 6777, 4299, 2]);

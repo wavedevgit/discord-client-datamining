@@ -12,11 +12,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o implements TypeVariable, Type {
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f34856d;
+    private final l f34904d;
 
     public o(l typeParameter) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
-        this.f34856d = typeParameter;
+        this.f34904d = typeParameter;
     }
 
     public boolean equals(Object obj) {
@@ -33,7 +33,7 @@ public final class o implements TypeVariable, Type {
     @Override // java.lang.reflect.TypeVariable
     public Type[] getBounds() {
         Type c10;
-        List<KType> upperBounds = this.f34856d.getUpperBounds();
+        List<KType> upperBounds = this.f34904d.getUpperBounds();
         ArrayList arrayList = new ArrayList(CollectionsKt.w(upperBounds, 10));
         for (KType kType : upperBounds) {
             c10 = p.c(kType, true);
@@ -44,12 +44,12 @@ public final class o implements TypeVariable, Type {
 
     @Override // java.lang.reflect.TypeVariable
     public GenericDeclaration getGenericDeclaration() {
-        throw new qr.q("An operation is not implemented: " + ("getGenericDeclaration() is not yet supported for type variables created from KType: " + this.f34856d));
+        throw new qr.q("An operation is not implemented: " + ("getGenericDeclaration() is not yet supported for type variables created from KType: " + this.f34904d));
     }
 
     @Override // java.lang.reflect.TypeVariable
     public String getName() {
-        return this.f34856d.getName();
+        return this.f34904d.getName();
     }
 
     @Override // java.lang.reflect.Type

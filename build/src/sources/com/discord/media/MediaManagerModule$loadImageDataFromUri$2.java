@@ -77,6 +77,6 @@ public final class MediaManagerModule$loadImageDataFromUri$2 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-        return ((MediaManagerModule$loadImageDataFromUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaManagerModule$loadImageDataFromUri$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

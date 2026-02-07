@@ -15,22 +15,22 @@ import mp.a1;
 public final class b1 implements bn.o<c> {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f37309g = new a(null);
+    public static final a f37357g = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final un.w0 f37310b;
+    private final un.w0 f37358b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a1.b f37311c;
+    private final a1.b f37359c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f37312d;
+    private final boolean f37360d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wp.c f37313e;
+    private final wp.c f37361e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f37314f;
+    private int f37362f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -54,31 +54,31 @@ public final class b1 implements bn.o<c> {
         public static final class a extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final a1 f37315a;
+            private final a1 f37363a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final float f37316b;
+            private final float f37364b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final yn.a f37317c;
+            private final yn.a f37365c;
 
             public a(a1 a1Var, float f10, yn.a aVar) {
                 super(null);
-                this.f37315a = a1Var;
-                this.f37316b = f10;
-                this.f37317c = aVar;
+                this.f37363a = a1Var;
+                this.f37364b = f10;
+                this.f37365c = aVar;
             }
 
             public final yn.a a() {
-                return this.f37317c;
+                return this.f37365c;
             }
 
             public final float b() {
-                return this.f37316b;
+                return this.f37364b;
             }
 
             public final a1 c() {
-                return this.f37315a;
+                return this.f37363a;
             }
         }
 
@@ -86,17 +86,17 @@ public final class b1 implements bn.o<c> {
         public static final class b extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Throwable f37318a;
+            private final Throwable f37366a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(Throwable error) {
                 super(null);
                 Intrinsics.checkNotNullParameter(error, "error");
-                this.f37318a = error;
+                this.f37366a = error;
             }
 
             public final Throwable a() {
-                return this.f37318a;
+                return this.f37366a;
             }
         }
 
@@ -105,33 +105,33 @@ public final class b1 implements bn.o<c> {
         public static final class C0506c extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final yn.b f37319a;
+            private final yn.b f37367a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final float f37320b;
+            private final float f37368b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final yn.a f37321c;
+            private final yn.a f37369c;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0506c(yn.b error, float f10, yn.a aVar) {
                 super(null);
                 Intrinsics.checkNotNullParameter(error, "error");
-                this.f37319a = error;
-                this.f37320b = f10;
-                this.f37321c = aVar;
+                this.f37367a = error;
+                this.f37368b = f10;
+                this.f37369c = aVar;
             }
 
             public final yn.a a() {
-                return this.f37321c;
+                return this.f37369c;
             }
 
             public final yn.b b() {
-                return this.f37319a;
+                return this.f37367a;
             }
 
             public final float c() {
-                return this.f37320b;
+                return this.f37368b;
             }
         }
 
@@ -147,23 +147,23 @@ public final class b1 implements bn.o<c> {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f37322a;
+        public static final /* synthetic */ int[] f37370a;
 
         static {
             int[] iArr = new int[a1.b.values().length];
             try {
-                iArr[a1.b.f37287d.ordinal()] = 1;
+                iArr[a1.b.f37335d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[a1.b.f37288e.ordinal()] = 2;
+                iArr[a1.b.f37336e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[a1.b.f37289i.ordinal()] = 3;
+                iArr[a1.b.f37337i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f37322a = iArr;
+            f37370a = iArr;
         }
     }
 
@@ -171,32 +171,32 @@ public final class b1 implements bn.o<c> {
     public static final class e implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f37323d;
+        final /* synthetic */ Flow f37371d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ b1 f37324e;
+        final /* synthetic */ b1 f37372e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f37325d;
+            final /* synthetic */ FlowCollector f37373d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ b1 f37326e;
+            final /* synthetic */ b1 f37374e;
 
             /* renamed from: mp.b1$e$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0507a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f37327d;
+                /* synthetic */ Object f37375d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f37328e;
+                int f37376e;
 
                 /* renamed from: i  reason: collision with root package name */
-                Object f37329i;
+                Object f37377i;
 
                 public C0507a(Continuation continuation) {
                     super(continuation);
@@ -204,15 +204,15 @@ public final class b1 implements bn.o<c> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f37327d = obj;
-                    this.f37328e |= Integer.MIN_VALUE;
+                    this.f37375d = obj;
+                    this.f37376e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, b1 b1Var) {
-                this.f37325d = flowCollector;
-                this.f37326e = b1Var;
+                this.f37373d = flowCollector;
+                this.f37374e = b1Var;
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:45:0x0106, code lost:
@@ -236,17 +236,17 @@ public final class b1 implements bn.o<c> {
         }
 
         public e(Flow flow, b1 b1Var) {
-            this.f37323d = flow;
-            this.f37324e = b1Var;
+            this.f37371d = flow;
+            this.f37372e = b1Var;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f37323d.collect(new a(flowCollector, this.f37324e), continuation);
+            Object collect = this.f37371d.collect(new a(flowCollector, this.f37372e), continuation);
             if (collect == wr.b.f()) {
                 return collect;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -254,10 +254,10 @@ public final class b1 implements bn.o<c> {
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
         Intrinsics.checkNotNullParameter(pose, "pose");
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f37310b = selfieDirectionFeed;
-        this.f37311c = pose;
-        this.f37312d = z10;
-        this.f37313e = sdkFilesManager;
+        this.f37358b = selfieDirectionFeed;
+        this.f37359c = pose;
+        this.f37360d = z10;
+        this.f37361e = sdkFilesManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -267,7 +267,7 @@ public final class b1 implements bn.o<c> {
         if (cVar.d() != 1) {
             return 0.0f;
         }
-        int i10 = d.f37322a[bVar.ordinal()];
+        int i10 = d.f37370a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -305,7 +305,7 @@ public final class b1 implements bn.o<c> {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof b1) {
             b1 b1Var = (b1) otherWorker;
-            if (b1Var.f37311c == this.f37311c && b1Var.f37312d == this.f37312d) {
+            if (b1Var.f37359c == this.f37359c && b1Var.f37360d == this.f37360d) {
                 return true;
             }
             return false;
@@ -315,6 +315,6 @@ public final class b1 implements bn.o<c> {
 
     @Override // bn.o
     public Flow run() {
-        return rs.g.x(new e(rs.g.m(this.f37310b, 1), this), os.m0.a());
+        return rs.g.x(new e(rs.g.m(this.f37358b, 1), this), os.m0.a());
     }
 }

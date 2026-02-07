@@ -191,4 +191,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.INVALID_NAMEPLATE_PALETTE = var3;
     var2.PaletteMetadata = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1641, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1643, 2]);

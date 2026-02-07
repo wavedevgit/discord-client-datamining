@@ -72,7 +72,7 @@ public abstract class q0 {
             Intrinsics.checkNotNullExpressionValue(applicationContext, "context.applicationContext");
             r4.a c10 = bVar2.c();
             Intrinsics.checkNotNullExpressionValue(c10, "workTaskExecutor.serialTaskExecutor");
-            workDatabase = aVar3.b(applicationContext, c10, aVar.a(), context.getResources().getBoolean(k4.t.f31458a));
+            workDatabase = aVar3.b(applicationContext, c10, aVar.a(), context.getResources().getBoolean(k4.t.f31506a));
         }
         if ((i10 & 16) != 0) {
             Context applicationContext2 = context.getApplicationContext();

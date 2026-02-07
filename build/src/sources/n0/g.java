@@ -11,7 +11,7 @@ import java.util.UUID;
 public class g implements x2.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r1 f38357a;
+    private final r1 f38405a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g() {
@@ -20,13 +20,13 @@ public class g implements x2.a {
 
     @Override // x.a0
     public q1 a() {
-        return this.f38357a;
+        return this.f38405a;
     }
 
     @Override // a0.x2.a
     /* renamed from: c */
     public h b() {
-        return new h(w1.Y(this.f38357a));
+        return new h(w1.Y(this.f38405a));
     }
 
     public g d(y2.b bVar) {
@@ -49,7 +49,7 @@ public class g implements x2.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(r1 r1Var) {
-        this.f38357a = r1Var;
+        this.f38405a = r1Var;
         Class cls = (Class) r1Var.e(e0.m.G, null);
         if (cls != null && !cls.equals(f.class)) {
             throw new IllegalArgumentException("Invalid target class configuration for " + this + ": " + cls);

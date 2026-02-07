@@ -5,13 +5,13 @@ import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 public final class q extends p {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final int[] f50734j = {1, 1, 1, 1, 1, 1};
+    private static final int[] f50782j = {1, 1, 1, 1, 1, 1};
 
     /* renamed from: k  reason: collision with root package name */
-    static final int[][] f50735k = {new int[]{56, 52, 50, 49, 44, 38, 35, 42, 41, 37}, new int[]{7, 11, 13, 14, 19, 25, 28, 21, 22, 26}};
+    static final int[][] f50783k = {new int[]{56, 52, 50, 49, 44, 38, 35, 42, 41, 37}, new int[]{7, 11, 13, 14, 19, 25, 28, 21, 22, 26}};
 
     /* renamed from: i  reason: collision with root package name */
-    private final int[] f50736i = new int[4];
+    private final int[] f50784i = new int[4];
 
     public static String r(String str) {
         char[] cArr = new char[6];
@@ -53,7 +53,7 @@ public final class q extends p {
     private static void s(StringBuilder sb2, int i10) {
         for (int i11 = 0; i11 <= 1; i11++) {
             for (int i12 = 0; i12 < 10; i12++) {
-                if (i10 == f50735k[i11][i12]) {
+                if (i10 == f50783k[i11][i12]) {
                     sb2.insert(0, (char) (i11 + 48));
                     sb2.append((char) (i12 + 48));
                     return;
@@ -71,13 +71,13 @@ public final class q extends p {
 
     @Override // tk.p
     protected int[] j(lk.a aVar, int i10) {
-        return p.m(aVar, i10, true, f50734j);
+        return p.m(aVar, i10, true, f50782j);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // tk.p
     public int k(lk.a aVar, int[] iArr, StringBuilder sb2) {
-        int[] iArr2 = this.f50736i;
+        int[] iArr2 = this.f50784i;
         iArr2[0] = 0;
         iArr2[1] = 0;
         iArr2[2] = 0;
@@ -86,7 +86,7 @@ public final class q extends p {
         int i10 = iArr[1];
         int i11 = 0;
         for (int i12 = 0; i12 < 6 && i10 < l10; i12++) {
-            int i13 = p.i(aVar, iArr2, i10, p.f50730h);
+            int i13 = p.i(aVar, iArr2, i10, p.f50778h);
             sb2.append((char) ((i13 % 10) + 48));
             for (int i14 : iArr2) {
                 i10 += i14;

@@ -10,7 +10,7 @@ import java.util.List;
 public class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExtraCroppingQuirk f51140a;
+    private final ExtraCroppingQuirk f51188a;
 
     public u() {
         this((ExtraCroppingQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraCroppingQuirk.class));
@@ -18,7 +18,7 @@ public class u {
 
     public List a(o2.b bVar, List list) {
         Size c10;
-        ExtraCroppingQuirk extraCroppingQuirk = this.f51140a;
+        ExtraCroppingQuirk extraCroppingQuirk = this.f51188a;
         if (extraCroppingQuirk == null || (c10 = extraCroppingQuirk.c(bVar)) == null) {
             return list;
         }
@@ -35,6 +35,6 @@ public class u {
     }
 
     u(ExtraCroppingQuirk extraCroppingQuirk) {
-        this.f51140a = extraCroppingQuirk;
+        this.f51188a = extraCroppingQuirk;
     }
 }

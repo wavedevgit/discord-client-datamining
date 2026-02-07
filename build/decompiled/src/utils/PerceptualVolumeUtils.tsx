@@ -29,4 +29,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.amplitudeToPerceptual;
     var2.amplitudeToPerceptual = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3960]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3959]);

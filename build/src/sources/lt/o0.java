@@ -10,28 +10,28 @@ import kotlinx.serialization.json.JsonElement;
 public final class o0 extends c {
 
     /* renamed from: g  reason: collision with root package name */
-    private final JsonArray f36692g;
+    private final JsonArray f36740g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f36693h;
+    private final int f36741h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f36694i;
+    private int f36742i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public o0(Json json, JsonArray value) {
         super(json, value, null, 4, null);
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f36692g = value;
-        this.f36693h = D0().size();
-        this.f36694i = -1;
+        this.f36740g = value;
+        this.f36741h = D0().size();
+        this.f36742i = -1;
     }
 
     @Override // lt.c
     /* renamed from: G0 */
     public JsonArray D0() {
-        return this.f36692g;
+        return this.f36740g;
     }
 
     @Override // jt.g1
@@ -43,10 +43,10 @@ public final class o0 extends c {
     @Override // kotlinx.serialization.encoding.c
     public int o(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i10 = this.f36694i;
-        if (i10 < this.f36693h - 1) {
+        int i10 = this.f36742i;
+        if (i10 < this.f36741h - 1) {
             int i11 = i10 + 1;
-            this.f36694i = i11;
+            this.f36742i = i11;
             return i11;
         }
         return -1;

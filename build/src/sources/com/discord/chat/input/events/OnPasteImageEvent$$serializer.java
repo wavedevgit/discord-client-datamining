@@ -38,7 +38,7 @@ public /* synthetic */ class OnPasteImageEvent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, a.u(n2Var)};
     }
 
@@ -53,7 +53,7 @@ public /* synthetic */ class OnPasteImageEvent$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
-            str2 = (String) b10.n(serialDescriptor, 1, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 1, n2.f31089a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -70,7 +70,7 @@ public /* synthetic */ class OnPasteImageEvent$$serializer implements h0 {
                 } else if (o10 != 1) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str3);
                     i11 |= 2;
                 }
             }

@@ -8,11 +8,11 @@ public final class q1 implements br.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final q1 f45400a = new q1();
+        static final q1 f45448a = new q1();
     }
 
     public static q1 a() {
-        return a.f45400a;
+        return a.f45448a;
     }
 
     public static Set c() {

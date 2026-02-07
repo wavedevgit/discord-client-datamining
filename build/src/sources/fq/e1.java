@@ -34,7 +34,7 @@ public abstract class e1 {
         final InputDate.InputDateComponentStyle styles = config.getStyles();
         InputDate.Attributes attributes = config.getAttributes();
         if (attributes != null) {
-            c10.f29219b.setText(attributes.getLabel());
+            c10.f29267b.setText(attributes.getLabel());
             List<String> textMonths = attributes.getTextMonths();
             if (textMonths == null) {
                 textMonths = CollectionsKt.l();
@@ -48,21 +48,21 @@ public abstract class e1 {
             }
             eq.a aVar = new eq.a(a10, i10, textMonths, textBasedComponentStyle);
             dn.t d10 = dateController.d();
-            AutoCompleteTextView monthEditText = c10.f29224g;
+            AutoCompleteTextView monthEditText = c10.f29272g;
             Intrinsics.checkNotNullExpressionValue(monthEditText, "monthEditText");
             dn.u.b(d10, monthEditText);
-            c10.f29224g.setAdapter(aVar);
+            c10.f29272g.setAdapter(aVar);
             if (styles != null && (backgroundColor = styles.getBackgroundColor()) != null && (inputSelectBackgroundColor = backgroundColor.getInputSelectBackgroundColor()) != null) {
-                c10.f29224g.setDropDownBackgroundDrawable(new ColorDrawable(inputSelectBackgroundColor.intValue()));
+                c10.f29272g.setDropDownBackgroundDrawable(new ColorDrawable(inputSelectBackgroundColor.intValue()));
             }
-            c10.f29220c.setHint(attributes.getPlaceholderDay());
+            c10.f29268c.setHint(attributes.getPlaceholderDay());
             dn.t c11 = dateController.c();
-            TextInputEditText dayEditText = c10.f29221d;
+            TextInputEditText dayEditText = c10.f29269d;
             Intrinsics.checkNotNullExpressionValue(dayEditText, "dayEditText");
             dn.u.b(c11, dayEditText);
-            c10.f29225h.setHint(attributes.getPlaceholderYear());
+            c10.f29273h.setHint(attributes.getPlaceholderYear());
             dn.t g10 = dateController.g();
-            TextInputEditText yearEditText = c10.f29226i;
+            TextInputEditText yearEditText = c10.f29274i;
             Intrinsics.checkNotNullExpressionValue(yearEditText, "yearEditText");
             dn.u.b(g10, yearEditText);
         }
@@ -104,30 +104,30 @@ public abstract class e1 {
             nq.d.c(root, base2);
         }
         if (inputDateComponentStyle != null && (inputSelectStyle3 = inputDateComponentStyle.getInputSelectStyle()) != null && (labelStyle = inputSelectStyle3.getLabelStyle()) != null) {
-            TextView dateLabel = fVar.f29219b;
+            TextView dateLabel = fVar.f29267b;
             Intrinsics.checkNotNullExpressionValue(dateLabel, "dateLabel");
             kq.f0.n(dateLabel, labelStyle, null, 2, null);
         }
         if (inputDateComponentStyle != null && (inputSelectStyle2 = inputDateComponentStyle.getInputSelectStyle()) != null && (errorTextStyle = inputSelectStyle2.getErrorTextStyle()) != null) {
-            TextView errorLabel = fVar.f29222e;
+            TextView errorLabel = fVar.f29270e;
             Intrinsics.checkNotNullExpressionValue(errorLabel, "errorLabel");
             kq.f0.n(errorLabel, errorTextStyle, null, 2, null);
         }
         if (inputDateComponentStyle != null && (inputSelectStyle = inputDateComponentStyle.getInputSelectStyle()) != null) {
-            TextInputLayout month = fVar.f29223f;
+            TextInputLayout month = fVar.f29271f;
             Intrinsics.checkNotNullExpressionValue(month, "month");
             kq.o.i(month, inputSelectStyle);
         }
         if (inputDateComponentStyle != null && (inputTextStyle2 = inputDateComponentStyle.getInputTextStyle()) != null) {
-            TextInputLayout day = fVar.f29220c;
+            TextInputLayout day = fVar.f29268c;
             Intrinsics.checkNotNullExpressionValue(day, "day");
             kq.a0.k(day, inputTextStyle2);
         }
         if (inputDateComponentStyle != null && (inputTextStyle = inputDateComponentStyle.getInputTextStyle()) != null) {
-            TextInputLayout year = fVar.f29225h;
+            TextInputLayout year = fVar.f29273h;
             Intrinsics.checkNotNullExpressionValue(year, "year");
             kq.a0.k(year, inputTextStyle);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

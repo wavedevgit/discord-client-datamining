@@ -15,10 +15,10 @@ import java.util.Map;
 public final class i extends c4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f27479a;
+    private final k7 f27527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.ndk.a f27480b;
+    private final io.sentry.ndk.a f27528b;
 
     public i(k7 k7Var) {
         this(k7Var, new NativeScope());
@@ -26,9 +26,9 @@ public final class i extends c4 {
 
     public static /* synthetic */ void n(i iVar, h0 h0Var) {
         if (h0Var == null) {
-            iVar.f27480b.e();
+            iVar.f27528b.e();
         } else {
-            iVar.f27480b.g(h0Var.i(), h0Var.h(), h0Var.j(), h0Var.k());
+            iVar.f27528b.g(h0Var.i(), h0Var.h(), h0Var.j(), h0Var.k());
         }
     }
 
@@ -45,81 +45,81 @@ public final class i extends c4 {
         try {
             Map o10 = breadcrumb.o();
             if (!o10.isEmpty()) {
-                str2 = iVar.f27479a.getSerializer().f(o10);
+                str2 = iVar.f27527a.getSerializer().f(o10);
             }
         } catch (Throwable th2) {
-            iVar.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Breadcrumb data is not serializable.", new Object[0]);
+            iVar.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Breadcrumb data is not serializable.", new Object[0]);
         }
-        iVar.f27480b.c(str, breadcrumb.r(), breadcrumb.m(), breadcrumb.u(), h10, str2);
+        iVar.f27528b.c(str, breadcrumb.r(), breadcrumb.m(), breadcrumb.u(), h10, str2);
     }
 
     @Override // io.sentry.c4, io.sentry.v0
     public void a(final String str, final String str2) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.e
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.e
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.this.f27480b.a(str, str2);
+                    i.this.f27528b.a(str, str2);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setTag(%s) has an error.", str);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setTag(%s) has an error.", str);
         }
     }
 
     @Override // io.sentry.c4, io.sentry.v0
     public void b(final String str) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.f
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.f
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.this.f27480b.b(str);
+                    i.this.f27528b.b(str);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync removeExtra(%s) has an error.", str);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync removeExtra(%s) has an error.", str);
         }
     }
 
     @Override // io.sentry.c4, io.sentry.v0
     public void d(final String str) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.d
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.d
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.this.f27480b.d(str);
+                    i.this.f27528b.d(str);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync removeTag(%s) has an error.", str);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync removeTag(%s) has an error.", str);
         }
     }
 
     @Override // io.sentry.v0
     public void e(final Breadcrumb breadcrumb) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.b
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.b
                 @Override // java.lang.Runnable
                 public final void run() {
                     i.r(i.this, breadcrumb);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync addBreadcrumb has an error.", new Object[0]);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync addBreadcrumb has an error.", new Object[0]);
         }
     }
 
     @Override // io.sentry.c4, io.sentry.v0
     public void f(final String str, final String str2) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.c
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.c
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.this.f27480b.f(str, str2);
+                    i.this.f27528b.f(str, str2);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setExtra(%s) has an error.", str);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setExtra(%s) has an error.", str);
         }
     }
 
@@ -129,33 +129,33 @@ public final class i extends c4 {
             return;
         }
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.h
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.h
                 @Override // java.lang.Runnable
                 public final void run() {
-                    i.this.f27480b.h(r1.p().toString(), e8Var.m().toString());
+                    i.this.f27528b.h(r1.p().toString(), e8Var.m().toString());
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setTrace failed.", new Object[0]);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setTrace failed.", new Object[0]);
         }
     }
 
     @Override // io.sentry.v0
     public void k(final h0 h0Var) {
         try {
-            this.f27479a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.g
+            this.f27527a.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.ndk.g
                 @Override // java.lang.Runnable
                 public final void run() {
                     i.n(i.this, h0Var);
                 }
             });
         } catch (Throwable th2) {
-            this.f27479a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setUser has an error.", new Object[0]);
+            this.f27527a.getLogger().a(SentryLevel.ERROR, th2, "Scope sync setUser has an error.", new Object[0]);
         }
     }
 
     i(k7 k7Var, io.sentry.ndk.a aVar) {
-        this.f27479a = (k7) y.c(k7Var, "The SentryOptions object is required.");
-        this.f27480b = (io.sentry.ndk.a) y.c(aVar, "The NativeScope object is required.");
+        this.f27527a = (k7) y.c(k7Var, "The SentryOptions object is required.");
+        this.f27528b = (io.sentry.ndk.a) y.c(aVar, "The NativeScope object is required.");
     }
 }

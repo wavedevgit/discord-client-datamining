@@ -7,30 +7,30 @@ import kotlin.jvm.internal.Intrinsics;
 public final class IndexedValue<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f32020a;
+    private final int f32068a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f32021b;
+    private final Object f32069b;
 
     public IndexedValue(int i10, Object obj) {
-        this.f32020a = i10;
-        this.f32021b = obj;
+        this.f32068a = i10;
+        this.f32069b = obj;
     }
 
     public final int a() {
-        return this.f32020a;
+        return this.f32068a;
     }
 
     public final Object b() {
-        return this.f32021b;
+        return this.f32069b;
     }
 
     public final int c() {
-        return this.f32020a;
+        return this.f32068a;
     }
 
     public final Object d() {
-        return this.f32021b;
+        return this.f32069b;
     }
 
     public boolean equals(Object obj) {
@@ -39,18 +39,18 @@ public final class IndexedValue<T> {
         }
         if (obj instanceof IndexedValue) {
             IndexedValue indexedValue = (IndexedValue) obj;
-            return this.f32020a == indexedValue.f32020a && Intrinsics.areEqual(this.f32021b, indexedValue.f32021b);
+            return this.f32068a == indexedValue.f32068a && Intrinsics.areEqual(this.f32069b, indexedValue.f32069b);
         }
         return false;
     }
 
     public int hashCode() {
-        int hashCode = Integer.hashCode(this.f32020a) * 31;
-        Object obj = this.f32021b;
+        int hashCode = Integer.hashCode(this.f32068a) * 31;
+        Object obj = this.f32069b;
         return hashCode + (obj == null ? 0 : obj.hashCode());
     }
 
     public String toString() {
-        return "IndexedValue(index=" + this.f32020a + ", value=" + this.f32021b + ')';
+        return "IndexedValue(index=" + this.f32068a + ", value=" + this.f32069b + ')';
     }
 }

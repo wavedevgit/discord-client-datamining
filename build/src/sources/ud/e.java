@@ -5,18 +5,18 @@ import ne.w0;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f51344a;
+    public final String f51392a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f51345b;
+    public final String f51393b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f51346c;
+    public final String f51394c;
 
     public e(String str, String str2, String str3) {
-        this.f51344a = str;
-        this.f51345b = str2;
-        this.f51346c = str3;
+        this.f51392a = str;
+        this.f51393b = str2;
+        this.f51394c = str3;
     }
 
     public boolean equals(Object obj) {
@@ -25,7 +25,7 @@ public final class e {
         }
         if (obj != null && e.class == obj.getClass()) {
             e eVar = (e) obj;
-            if (w0.c(this.f51344a, eVar.f51344a) && w0.c(this.f51345b, eVar.f51345b) && w0.c(this.f51346c, eVar.f51346c)) {
+            if (w0.c(this.f51392a, eVar.f51392a) && w0.c(this.f51393b, eVar.f51393b) && w0.c(this.f51394c, eVar.f51394c)) {
                 return true;
             }
         }
@@ -34,8 +34,8 @@ public final class e {
 
     public int hashCode() {
         int i10;
-        int hashCode = this.f51344a.hashCode() * 31;
-        String str = this.f51345b;
+        int hashCode = this.f51392a.hashCode() * 31;
+        String str = this.f51393b;
         int i11 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -43,7 +43,7 @@ public final class e {
             i10 = 0;
         }
         int i12 = (hashCode + i10) * 31;
-        String str2 = this.f51346c;
+        String str2 = this.f51394c;
         if (str2 != null) {
             i11 = str2.hashCode();
         }

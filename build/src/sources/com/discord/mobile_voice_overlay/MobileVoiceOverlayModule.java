@@ -66,7 +66,7 @@ public final class MobileVoiceOverlayModule extends NativeMobileVoiceOverlayModu
         Log.INSTANCE.e("MobileVoiceOverlayModule", "There was an error starting the activity:", th2);
         mobileVoiceOverlayModule.getReactApplicationContext().removeActivityEventListener(mobileVoiceOverlayModule$enableOverlay$listener$1);
         promise.resolve(Boolean.FALSE);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -98,14 +98,14 @@ public final class MobileVoiceOverlayModule extends NativeMobileVoiceOverlayModu
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit mobileVoiceOverlay_delegate$lambda$2$lambda$0(MobileVoiceOverlayModule mobileVoiceOverlayModule) {
         mobileVoiceOverlayModule.emitOnLayoutTrashed();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit mobileVoiceOverlay_delegate$lambda$2$lambda$1(MobileVoiceOverlayModule mobileVoiceOverlayModule, String query) {
         Intrinsics.checkNotNullParameter(query, "query");
         mobileVoiceOverlayModule.emitOnChannelQueryUpdate(query);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX WARN: Type inference failed for: r0v3, types: [com.discord.mobile_voice_overlay.MobileVoiceOverlayModule$enableOverlay$listener$1, com.facebook.react.bridge.ActivityEventListener] */

@@ -10,10 +10,10 @@ import ne.w0;
 public class e implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f31560a;
+    private final Resources f31608a;
 
     public e(Resources resources) {
-        this.f31560a = (Resources) ne.a.e(resources);
+        this.f31608a = (Resources) ne.a.e(resources);
     }
 
     private String b(Format format) {
@@ -23,15 +23,15 @@ public class e implements o {
                 if (i10 != 2) {
                     if (i10 != 6 && i10 != 7) {
                         if (i10 != 8) {
-                            return this.f31560a.getString(m.f31616s);
+                            return this.f31608a.getString(m.f31664s);
                         }
-                        return this.f31560a.getString(m.f31618u);
+                        return this.f31608a.getString(m.f31666u);
                     }
-                    return this.f31560a.getString(m.f31617t);
+                    return this.f31608a.getString(m.f31665t);
                 }
-                return this.f31560a.getString(m.f31615r);
+                return this.f31608a.getString(m.f31663r);
             }
-            return this.f31560a.getString(m.f31607j);
+            return this.f31608a.getString(m.f31655j);
         }
         return "";
     }
@@ -41,7 +41,7 @@ public class e implements o {
         if (i10 == -1) {
             return "";
         }
-        return this.f31560a.getString(m.f31606i, Float.valueOf(i10 / 1000000.0f));
+        return this.f31608a.getString(m.f31654i, Float.valueOf(i10 / 1000000.0f));
     }
 
     private String d(Format format) {
@@ -65,7 +65,7 @@ public class e implements o {
         if (TextUtils.isEmpty(str) || "und".equals(str)) {
             return "";
         }
-        if (w0.f39012a >= 21) {
+        if (w0.f39060a >= 21) {
             locale = Locale.forLanguageTag(str);
         } else {
             locale = new Locale(str);
@@ -87,7 +87,7 @@ public class e implements o {
         int i10 = format.B;
         int i11 = format.C;
         if (i10 != -1 && i11 != -1) {
-            return this.f31560a.getString(m.f31608k, Integer.valueOf(i10), Integer.valueOf(i11));
+            return this.f31608a.getString(m.f31656k, Integer.valueOf(i10), Integer.valueOf(i11));
         }
         return "";
     }
@@ -95,18 +95,18 @@ public class e implements o {
     private String h(Format format) {
         String str;
         if ((format.f11580p & 2) != 0) {
-            str = this.f31560a.getString(m.f31609l);
+            str = this.f31608a.getString(m.f31657l);
         } else {
             str = "";
         }
         if ((format.f11580p & 4) != 0) {
-            str = j(str, this.f31560a.getString(m.f31612o));
+            str = j(str, this.f31608a.getString(m.f31660o));
         }
         if ((format.f11580p & 8) != 0) {
-            str = j(str, this.f31560a.getString(m.f31611n));
+            str = j(str, this.f31608a.getString(m.f31659n));
         }
         if ((format.f11580p & 1088) != 0) {
-            return j(str, this.f31560a.getString(m.f31610m));
+            return j(str, this.f31608a.getString(m.f31658m));
         }
         return str;
     }
@@ -138,7 +138,7 @@ public class e implements o {
                 if (TextUtils.isEmpty(str)) {
                     str = str2;
                 } else {
-                    str = this.f31560a.getString(m.f31605h, str, str2);
+                    str = this.f31608a.getString(m.f31653h, str, str2);
                 }
             }
         }
@@ -157,7 +157,7 @@ public class e implements o {
             e10 = e(format);
         }
         if (e10.length() == 0) {
-            return this.f31560a.getString(m.f31619v);
+            return this.f31608a.getString(m.f31667v);
         }
         return e10;
     }

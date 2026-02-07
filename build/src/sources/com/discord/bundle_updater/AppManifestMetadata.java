@@ -85,7 +85,7 @@ public final class AppManifestMetadata {
     public static final /* synthetic */ void write$Self$bundle_updater_release(AppManifestMetadata appManifestMetadata, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, appManifestMetadata.build);
         if (compositeEncoder.A(serialDescriptor, 1) || appManifestMetadata.releaseName != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, appManifestMetadata.releaseName);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, appManifestMetadata.releaseName);
         }
         compositeEncoder.z(serialDescriptor, 2, appManifestMetadata.commit);
         if (compositeEncoder.A(serialDescriptor, 3) || appManifestMetadata.confirmUpdate) {

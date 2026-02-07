@@ -18,16 +18,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f49989d = new a(null);
+    public static final a f50037d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f49990a;
+    private final ReactApplicationContext f50038a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final mm.f f49991b;
+    private final mm.f f50039b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f49992c;
+    private final int f50040c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -41,16 +41,16 @@ public final class f {
 
     public f(ReactApplicationContext mReactContext) {
         Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-        this.f49990a = mReactContext;
-        this.f49991b = new mm.f();
-        this.f49992c = k();
+        this.f50038a = mReactContext;
+        this.f50039b = new mm.f();
+        this.f50040c = k();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void g(boolean z10, f fVar, final View view, Activity activity, final boolean z11) {
         Object obj;
         if (Build.VERSION.SDK_INT >= 30 && !z10) {
-            fVar.f49991b.x(view, new Function1() { // from class: sm.d
+            fVar.f50039b.x(view, new Function1() { // from class: sm.d
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
                     Unit h10;
@@ -85,7 +85,7 @@ public final class f {
                 f.i(z10, view);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -102,7 +102,7 @@ public final class f {
     private final int k() {
         Window window;
         WindowManager.LayoutParams attributes;
-        Activity currentActivity = this.f49990a.getCurrentActivity();
+        Activity currentActivity = this.f50038a.getCurrentActivity();
         if (currentActivity != null && (window = currentActivity.getWindow()) != null && (attributes = window.getAttributes()) != null) {
             return attributes.softInputMode;
         }
@@ -111,7 +111,7 @@ public final class f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o() {
-        um.a.f51628a.a();
+        um.a.f51676a.a();
     }
 
     private final void q(final int i10) {
@@ -127,14 +127,14 @@ public final class f {
     public static final void r(f fVar, int i10) {
         Activity currentActivity;
         Window window;
-        if (fVar.k() != i10 && (currentActivity = fVar.f49990a.getCurrentActivity()) != null && (window = currentActivity.getWindow()) != null) {
+        if (fVar.k() != i10 && (currentActivity = fVar.f50038a.getCurrentActivity()) != null && (window = currentActivity.getWindow()) != null) {
             window.setSoftInputMode(i10);
         }
     }
 
     public final void f(final boolean z10, final boolean z11) {
-        final Activity currentActivity = this.f49990a.getCurrentActivity();
-        final EditText b10 = um.a.f51628a.b();
+        final Activity currentActivity = this.f50038a.getCurrentActivity();
+        final EditText b10 = um.a.f51676a.b();
         if (b10 != null) {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: sm.a
                 @Override // java.lang.Runnable
@@ -146,7 +146,7 @@ public final class f {
     }
 
     public final void m() {
-        q(this.f49992c);
+        q(this.f50040c);
     }
 
     public final void n(String direction) {
@@ -160,9 +160,9 @@ public final class f {
             });
             return;
         }
-        EditText b10 = um.a.f51628a.b();
+        EditText b10 = um.a.f51676a.b();
         if (b10 != null) {
-            um.c.f51631a.j(direction, b10);
+            um.c.f51679a.j(direction, b10);
         }
     }
 

@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesColorSwatch.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80432: for (var _fun80432_ip = 0;;) switch (_fun80432_ip) {
+        _fun80883: for (var _fun80883_ip = 0;;) switch (_fun80883_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.colors;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.length;
                 var1 = 2;
                 if (!(!(var2 >= var1))) {
-                    _fun80432_ip = 132;
-                    continue _fun80432
+                    _fun80883_ip = 132;
+                    continue _fun80883
                 }
             case 33:
                 var2 = var8.length;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 > var1;
                 var9 = '#000000';
                 if (!var2) {
-                    _fun80432_ip = 86;
-                    continue _fun80432
+                    _fun80883_ip = 86;
+                    continue _fun80883
                 }
             case 51:
                 var5 = _closure1_slot0;
@@ -140,4 +140,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 668, 4099, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 668, 4098, 2]);

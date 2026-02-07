@@ -20,19 +20,19 @@ import st.y;
 public class i implements y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f54819a;
+    private final String f54867a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f54820b;
+    private final Set f54868b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f54821c;
+    private final Map f54869c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f54822d;
+    private final Map f54870d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f54823e;
+    private final Map f54871e;
 
     public i() {
         String substring;
@@ -47,7 +47,7 @@ public class i implements y {
             }
         }
         if (e10 != null) {
-            this.f54819a = "@" + f10;
+            this.f54867a = "@" + f10;
             HashSet hashSet = new HashSet();
             HashMap hashMap2 = new HashMap();
             HashMap hashMap3 = new HashMap();
@@ -87,7 +87,7 @@ public class i implements y {
                                             y0Var = y0.MONDAY;
                                             hashMap = hashMap2;
                                         } else {
-                                            throw new IllegalStateException("Unexpected format: " + this.f54819a);
+                                            throw new IllegalStateException("Unexpected format: " + this.f54867a);
                                         }
                                         if (substring.equals("sun")) {
                                             y0Var = y0.SUNDAY;
@@ -115,10 +115,10 @@ public class i implements y {
                                     }
                                 }
                             } else {
-                                this.f54820b = Collections.unmodifiableSet(hashSet);
-                                this.f54821c = Collections.unmodifiableMap(hashMap2);
-                                this.f54822d = Collections.unmodifiableMap(hashMap3);
-                                this.f54823e = Collections.unmodifiableMap(hashMap4);
+                                this.f54868b = Collections.unmodifiableSet(hashSet);
+                                this.f54869c = Collections.unmodifiableMap(hashMap2);
+                                this.f54870d = Collections.unmodifiableMap(hashMap3);
+                                this.f54871e = Collections.unmodifiableMap(hashMap4);
                                 try {
                                     e10.close();
                                     return;
@@ -129,7 +129,7 @@ public class i implements y {
                             }
                         }
                     } catch (Exception e12) {
-                        throw new IllegalStateException("Unexpected format: " + this.f54819a, e12);
+                        throw new IllegalStateException("Unexpected format: " + this.f54867a, e12);
                     }
                 } catch (UnsupportedEncodingException e13) {
                     throw new AssertionError(e13);
@@ -143,12 +143,12 @@ public class i implements y {
                 throw th2;
             }
         } else {
-            this.f54819a = "@STATIC";
-            this.f54820b = Collections.EMPTY_SET;
+            this.f54867a = "@STATIC";
+            this.f54868b = Collections.EMPTY_SET;
             Map map = Collections.EMPTY_MAP;
-            this.f54821c = map;
-            this.f54822d = map;
-            this.f54823e = map;
+            this.f54869c = map;
+            this.f54870d = map;
+            this.f54871e = map;
             PrintStream printStream = System.err;
             printStream.println("Warning: File \"data/week.data\" not found.");
         }
@@ -158,19 +158,19 @@ public class i implements y {
     public int a(Locale locale) {
         String country = locale.getCountry();
         y0 y0Var = y0.SUNDAY;
-        if (this.f54823e.containsKey(country)) {
-            y0Var = (y0) this.f54823e.get(country);
+        if (this.f54871e.containsKey(country)) {
+            y0Var = (y0) this.f54871e.get(country);
         }
         return y0Var.d();
     }
 
     @Override // st.y
     public int b(Locale locale) {
-        if (this.f54820b.isEmpty()) {
+        if (this.f54868b.isEmpty()) {
             return new GregorianCalendar(locale).getMinimalDaysInFirstWeek();
         }
         String country = locale.getCountry();
-        if ((country.isEmpty() && locale.getLanguage().isEmpty()) || this.f54820b.contains(country)) {
+        if ((country.isEmpty() && locale.getLanguage().isEmpty()) || this.f54868b.contains(country)) {
             return 4;
         }
         return 1;
@@ -180,15 +180,15 @@ public class i implements y {
     public int c(Locale locale) {
         String country = locale.getCountry();
         y0 y0Var = y0.SATURDAY;
-        if (this.f54822d.containsKey(country)) {
-            y0Var = (y0) this.f54822d.get(country);
+        if (this.f54870d.containsKey(country)) {
+            y0Var = (y0) this.f54870d.get(country);
         }
         return y0Var.d();
     }
 
     @Override // st.y
     public int d(Locale locale) {
-        if (this.f54821c.isEmpty()) {
+        if (this.f54869c.isEmpty()) {
             int firstDayOfWeek = new GregorianCalendar(locale).getFirstDayOfWeek();
             if (firstDayOfWeek == 1) {
                 return 7;
@@ -197,13 +197,13 @@ public class i implements y {
         }
         String country = locale.getCountry();
         y0 y0Var = y0.MONDAY;
-        if (this.f54821c.containsKey(country)) {
-            y0Var = (y0) this.f54821c.get(country);
+        if (this.f54869c.containsKey(country)) {
+            y0Var = (y0) this.f54869c.get(country);
         }
         return y0Var.d();
     }
 
     public String toString() {
-        return getClass().getName() + this.f54819a;
+        return getClass().getName() + this.f54867a;
     }
 }

@@ -74,7 +74,7 @@ public abstract class s {
         Intrinsics.checkNotNullParameter(resourceName, "resourceName");
         Intrinsics.checkNotNullParameter(resourceType, "resourceType");
         String b10 = h.b(resourceName);
-        String resourcePackageName = context.getResources().getResourcePackageName(m.f49096j);
+        String resourcePackageName = context.getResources().getResourcePackageName(m.f49144j);
         int identifier = context.getResources().getIdentifier(b10, resourceType.name(), resourcePackageName);
         if (identifier <= 0) {
             Resources resources = context.getResources();

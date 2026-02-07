@@ -7,14 +7,14 @@ import java.util.UUID;
 public abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f28955a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    private static final char[] f29003a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long[] f28956b;
+    private static final long[] f29004b;
 
     static {
         long[] jArr = new long[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
-        f28956b = jArr;
+        f29004b = jArr;
         Arrays.fill(jArr, -1L);
         jArr[48] = 0;
         jArr[49] = 1;
@@ -41,7 +41,7 @@ public abstract class l0 {
     }
 
     private static void a(char[] cArr, long j10) {
-        char[] cArr2 = f28955a;
+        char[] cArr2 = f29003a;
         cArr[0] = cArr2[(int) (((-1152921504606846976L) & j10) >>> 60)];
         cArr[1] = cArr2[(int) ((1080863910568919040L & j10) >>> 56)];
         cArr[2] = cArr2[(int) ((67553994410557440L & j10) >>> 52)];
@@ -62,7 +62,7 @@ public abstract class l0 {
 
     public static String b(long j10, long j11) {
         a(r1, j10);
-        char[] cArr = f28955a;
+        char[] cArr = f29003a;
         char[] cArr2 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, cArr[(int) (((-1152921504606846976L) & j11) >>> 60)], cArr[(int) ((1080863910568919040L & j11) >>> 56)], cArr[(int) ((67553994410557440L & j11) >>> 52)], cArr[(int) ((4222124650659840L & j11) >>> 48)], cArr[(int) ((263882790666240L & j11) >>> 44)], cArr[(int) ((16492674416640L & j11) >>> 40)], cArr[(int) ((1030792151040L & j11) >>> 36)], cArr[(int) ((64424509440L & j11) >>> 32)], cArr[(int) ((4026531840L & j11) >>> 28)], cArr[(int) ((251658240 & j11) >>> 24)], cArr[(int) ((15728640 & j11) >>> 20)], cArr[(int) ((983040 & j11) >>> 16)], cArr[(int) ((61440 & j11) >>> 12)], cArr[(int) ((3840 & j11) >>> 8)], cArr[(int) ((240 & j11) >>> 4)], cArr[(int) (j11 & 15)]};
         return new String(cArr2);
     }

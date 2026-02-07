@@ -7,9 +7,9 @@ import jr.b;
 public class g implements s {
     @Override // ir.s
     public Object a(ir.g gVar, q qVar) {
-        if (b.a.BULLET == jr.b.f30891a.c(qVar)) {
-            return new lr.b(gVar.e(), ((Integer) jr.b.f30892b.c(qVar)).intValue());
+        if (b.a.BULLET == jr.b.f30939a.c(qVar)) {
+            return new lr.b(gVar.e(), ((Integer) jr.b.f30940b.c(qVar)).intValue());
         }
-        return new lr.i(gVar.e(), String.valueOf(jr.b.f30893c.c(qVar)) + ". ");
+        return new lr.i(gVar.e(), String.valueOf(jr.b.f30941c.c(qVar)) + ". ");
     }
 }

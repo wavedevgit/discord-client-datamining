@@ -234,7 +234,7 @@ public class CronetDataSource extends f implements h {
             com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) ne.a.e(CronetDataSource.this.f12406w);
             int httpStatusCode = urlResponseInfo.getHttpStatusCode();
             if (aVar.f13267c == 2 && (httpStatusCode == 307 || httpStatusCode == 308)) {
-                CronetDataSource.this.f12409z = new h.f(httpStatusCode, urlResponseInfo.getHttpStatusText(), null, urlResponseInfo.getAllHeaders(), aVar, w0.f39017f);
+                CronetDataSource.this.f12409z = new h.f(httpStatusCode, urlResponseInfo.getHttpStatusText(), null, urlResponseInfo.getAllHeaders(), aVar, w0.f39065f);
                 CronetDataSource.this.f12399p.f();
                 return;
             }
@@ -310,7 +310,7 @@ public class CronetDataSource extends f implements h {
         this.f12397n = gVar;
         this.f12401r = nVar;
         this.f12402s = z12;
-        this.f12400q = e.f38905a;
+        this.f12400q = e.f38953a;
         this.f12388e = new c(this, null);
         this.f12398o = new h.g();
         this.f12399p = new ne.h();
@@ -404,7 +404,7 @@ public class CronetDataSource extends f implements h {
     }
 
     private byte[] O() {
-        byte[] bArr = w0.f39017f;
+        byte[] bArr = w0.f39065f;
         ByteBuffer J = J();
         while (!this.A) {
             this.f12399p.d();
@@ -567,7 +567,7 @@ public class CronetDataSource extends f implements h {
                     try {
                         bArr = O();
                     } catch (IOException unused) {
-                        bArr = w0.f39017f;
+                        bArr = w0.f39065f;
                     }
                     byte[] bArr2 = bArr;
                     if (httpStatusCode == 416) {

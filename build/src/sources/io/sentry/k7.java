@@ -243,58 +243,58 @@ public class k7 {
     public static final class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private Long f28248a;
+        private Long f28296a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Long f28249b;
+        private Long f28297b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f28250c;
+        private String f28298c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Long f28251d;
+        private Long f28299d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Long f28252e;
+        private Long f28300e;
 
         public Long a() {
-            return this.f28248a;
+            return this.f28296a;
         }
 
         public Long b() {
-            return this.f28251d;
+            return this.f28299d;
         }
 
         public Long c() {
-            return this.f28249b;
+            return this.f28297b;
         }
 
         public Long d() {
-            return this.f28252e;
+            return this.f28300e;
         }
 
         public String e() {
-            return this.f28250c;
+            return this.f28298c;
         }
 
         public void f(Long l10) {
-            this.f28248a = l10;
+            this.f28296a = l10;
         }
 
         public void g(Long l10) {
-            this.f28251d = l10;
+            this.f28299d = l10;
         }
 
         public void h(Long l10) {
-            this.f28249b = l10;
+            this.f28297b = l10;
         }
 
         public void i(Long l10) {
-            this.f28252e = l10;
+            this.f28300e = l10;
         }
 
         public void j(String str) {
-            this.f28250c = str;
+            this.f28298c = str;
         }
     }
 
@@ -302,33 +302,33 @@ public class k7 {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        public String f28253a = "";
+        public String f28301a = "";
 
         /* renamed from: b  reason: collision with root package name */
-        public String f28254b = "";
+        public String f28302b = "";
 
         /* renamed from: c  reason: collision with root package name */
-        public String f28255c = "";
+        public String f28303c = "";
 
         /* renamed from: d  reason: collision with root package name */
-        public String f28256d = "https://sentry.io";
+        public String f28304d = "https://sentry.io";
 
         /* renamed from: e  reason: collision with root package name */
-        public String f28257e = null;
+        public String f28305e = null;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class h {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f28258a = false;
+        private boolean f28306a = false;
 
         public boolean a() {
-            return this.f28258a;
+            return this.f28306a;
         }
 
         public void b(boolean z10) {
-            this.f28258a = z10;
+            this.f28306a = z10;
         }
     }
 
@@ -349,50 +349,50 @@ public class k7 {
     public static final class l {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f28259a;
+        private String f28307a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f28260b;
+        private String f28308b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f28261c;
+        private String f28309c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f28262d;
+        private String f28310d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Proxy.Type f28263e;
+        private Proxy.Type f28311e;
 
         public l(String str, String str2, String str3, String str4) {
             this(str, str2, null, str3, str4);
         }
 
         public String a() {
-            return this.f28259a;
+            return this.f28307a;
         }
 
         public String b() {
-            return this.f28262d;
+            return this.f28310d;
         }
 
         public String c() {
-            return this.f28260b;
+            return this.f28308b;
         }
 
         public Proxy.Type d() {
-            return this.f28263e;
+            return this.f28311e;
         }
 
         public String e() {
-            return this.f28261c;
+            return this.f28309c;
         }
 
         public l(String str, String str2, Proxy.Type type, String str3, String str4) {
-            this.f28259a = str;
-            this.f28260b = str2;
-            this.f28263e = type;
-            this.f28261c = str3;
-            this.f28262d = str4;
+            this.f28307a = str;
+            this.f28308b = str2;
+            this.f28311e = type;
+            this.f28309c = str3;
+            this.f28310d = str4;
         }
     }
 

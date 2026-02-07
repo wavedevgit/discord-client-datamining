@@ -10,43 +10,43 @@ import android.view.ContextThemeWrapper;
 public class k {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final qh.c f47826m = new i(0.5f);
+    public static final qh.c f47874m = new i(0.5f);
 
     /* renamed from: a  reason: collision with root package name */
-    d f47827a;
+    d f47875a;
 
     /* renamed from: b  reason: collision with root package name */
-    d f47828b;
+    d f47876b;
 
     /* renamed from: c  reason: collision with root package name */
-    d f47829c;
+    d f47877c;
 
     /* renamed from: d  reason: collision with root package name */
-    d f47830d;
+    d f47878d;
 
     /* renamed from: e  reason: collision with root package name */
-    qh.c f47831e;
+    qh.c f47879e;
 
     /* renamed from: f  reason: collision with root package name */
-    qh.c f47832f;
+    qh.c f47880f;
 
     /* renamed from: g  reason: collision with root package name */
-    qh.c f47833g;
+    qh.c f47881g;
 
     /* renamed from: h  reason: collision with root package name */
-    qh.c f47834h;
+    qh.c f47882h;
 
     /* renamed from: i  reason: collision with root package name */
-    f f47835i;
+    f f47883i;
 
     /* renamed from: j  reason: collision with root package name */
-    f f47836j;
+    f f47884j;
 
     /* renamed from: k  reason: collision with root package name */
-    f f47837k;
+    f f47885k;
 
     /* renamed from: l  reason: collision with root package name */
-    f f47838l;
+    f f47886l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface c {
@@ -118,69 +118,69 @@ public class k {
     }
 
     public f h() {
-        return this.f47837k;
+        return this.f47885k;
     }
 
     public d i() {
-        return this.f47830d;
+        return this.f47878d;
     }
 
     public qh.c j() {
-        return this.f47834h;
+        return this.f47882h;
     }
 
     public d k() {
-        return this.f47829c;
+        return this.f47877c;
     }
 
     public qh.c l() {
-        return this.f47833g;
+        return this.f47881g;
     }
 
     public f n() {
-        return this.f47838l;
+        return this.f47886l;
     }
 
     public f o() {
-        return this.f47836j;
+        return this.f47884j;
     }
 
     public f p() {
-        return this.f47835i;
+        return this.f47883i;
     }
 
     public d q() {
-        return this.f47827a;
+        return this.f47875a;
     }
 
     public qh.c r() {
-        return this.f47831e;
+        return this.f47879e;
     }
 
     public d s() {
-        return this.f47828b;
+        return this.f47876b;
     }
 
     public qh.c t() {
-        return this.f47832f;
+        return this.f47880f;
     }
 
     public boolean u(RectF rectF) {
         boolean z10;
         boolean z11;
         boolean z12;
-        if (this.f47838l.getClass().equals(f.class) && this.f47836j.getClass().equals(f.class) && this.f47835i.getClass().equals(f.class) && this.f47837k.getClass().equals(f.class)) {
+        if (this.f47886l.getClass().equals(f.class) && this.f47884j.getClass().equals(f.class) && this.f47883i.getClass().equals(f.class) && this.f47885k.getClass().equals(f.class)) {
             z10 = true;
         } else {
             z10 = false;
         }
-        float a10 = this.f47831e.a(rectF);
-        if (this.f47832f.a(rectF) == a10 && this.f47834h.a(rectF) == a10 && this.f47833g.a(rectF) == a10) {
+        float a10 = this.f47879e.a(rectF);
+        if (this.f47880f.a(rectF) == a10 && this.f47882h.a(rectF) == a10 && this.f47881g.a(rectF) == a10) {
             z11 = true;
         } else {
             z11 = false;
         }
-        if ((this.f47828b instanceof j) && (this.f47827a instanceof j) && (this.f47829c instanceof j) && (this.f47830d instanceof j)) {
+        if ((this.f47876b instanceof j) && (this.f47875a instanceof j) && (this.f47877c instanceof j) && (this.f47878d instanceof j)) {
             z12 = true;
         } else {
             z12 = false;
@@ -208,86 +208,86 @@ public class k {
     }
 
     private k(b bVar) {
-        this.f47827a = bVar.f47839a;
-        this.f47828b = bVar.f47840b;
-        this.f47829c = bVar.f47841c;
-        this.f47830d = bVar.f47842d;
-        this.f47831e = bVar.f47843e;
-        this.f47832f = bVar.f47844f;
-        this.f47833g = bVar.f47845g;
-        this.f47834h = bVar.f47846h;
-        this.f47835i = bVar.f47847i;
-        this.f47836j = bVar.f47848j;
-        this.f47837k = bVar.f47849k;
-        this.f47838l = bVar.f47850l;
+        this.f47875a = bVar.f47887a;
+        this.f47876b = bVar.f47888b;
+        this.f47877c = bVar.f47889c;
+        this.f47878d = bVar.f47890d;
+        this.f47879e = bVar.f47891e;
+        this.f47880f = bVar.f47892f;
+        this.f47881g = bVar.f47893g;
+        this.f47882h = bVar.f47894h;
+        this.f47883i = bVar.f47895i;
+        this.f47884j = bVar.f47896j;
+        this.f47885k = bVar.f47897k;
+        this.f47886l = bVar.f47898l;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private d f47839a;
+        private d f47887a;
 
         /* renamed from: b  reason: collision with root package name */
-        private d f47840b;
+        private d f47888b;
 
         /* renamed from: c  reason: collision with root package name */
-        private d f47841c;
+        private d f47889c;
 
         /* renamed from: d  reason: collision with root package name */
-        private d f47842d;
+        private d f47890d;
 
         /* renamed from: e  reason: collision with root package name */
-        private qh.c f47843e;
+        private qh.c f47891e;
 
         /* renamed from: f  reason: collision with root package name */
-        private qh.c f47844f;
+        private qh.c f47892f;
 
         /* renamed from: g  reason: collision with root package name */
-        private qh.c f47845g;
+        private qh.c f47893g;
 
         /* renamed from: h  reason: collision with root package name */
-        private qh.c f47846h;
+        private qh.c f47894h;
 
         /* renamed from: i  reason: collision with root package name */
-        private f f47847i;
+        private f f47895i;
 
         /* renamed from: j  reason: collision with root package name */
-        private f f47848j;
+        private f f47896j;
 
         /* renamed from: k  reason: collision with root package name */
-        private f f47849k;
+        private f f47897k;
 
         /* renamed from: l  reason: collision with root package name */
-        private f f47850l;
+        private f f47898l;
 
         public b() {
-            this.f47839a = h.b();
-            this.f47840b = h.b();
-            this.f47841c = h.b();
-            this.f47842d = h.b();
-            this.f47843e = new qh.a(0.0f);
-            this.f47844f = new qh.a(0.0f);
-            this.f47845g = new qh.a(0.0f);
-            this.f47846h = new qh.a(0.0f);
-            this.f47847i = h.c();
-            this.f47848j = h.c();
-            this.f47849k = h.c();
-            this.f47850l = h.c();
+            this.f47887a = h.b();
+            this.f47888b = h.b();
+            this.f47889c = h.b();
+            this.f47890d = h.b();
+            this.f47891e = new qh.a(0.0f);
+            this.f47892f = new qh.a(0.0f);
+            this.f47893g = new qh.a(0.0f);
+            this.f47894h = new qh.a(0.0f);
+            this.f47895i = h.c();
+            this.f47896j = h.c();
+            this.f47897k = h.c();
+            this.f47898l = h.c();
         }
 
         private static float n(d dVar) {
             if (dVar instanceof j) {
-                return ((j) dVar).f47825a;
+                return ((j) dVar).f47873a;
             }
             if (dVar instanceof e) {
-                return ((e) dVar).f47783a;
+                return ((e) dVar).f47831a;
             }
             return -1.0f;
         }
 
         public b A(d dVar) {
-            this.f47839a = dVar;
+            this.f47887a = dVar;
             float n10 = n(dVar);
             if (n10 != -1.0f) {
                 B(n10);
@@ -296,12 +296,12 @@ public class k {
         }
 
         public b B(float f10) {
-            this.f47843e = new qh.a(f10);
+            this.f47891e = new qh.a(f10);
             return this;
         }
 
         public b C(qh.c cVar) {
-            this.f47843e = cVar;
+            this.f47891e = cVar;
             return this;
         }
 
@@ -314,7 +314,7 @@ public class k {
         }
 
         public b F(d dVar) {
-            this.f47840b = dVar;
+            this.f47888b = dVar;
             float n10 = n(dVar);
             if (n10 != -1.0f) {
                 G(n10);
@@ -323,12 +323,12 @@ public class k {
         }
 
         public b G(float f10) {
-            this.f47844f = new qh.a(f10);
+            this.f47892f = new qh.a(f10);
             return this;
         }
 
         public b H(qh.c cVar) {
-            this.f47844f = cVar;
+            this.f47892f = cVar;
             return this;
         }
 
@@ -349,7 +349,7 @@ public class k {
         }
 
         public b r(d dVar) {
-            this.f47842d = dVar;
+            this.f47890d = dVar;
             float n10 = n(dVar);
             if (n10 != -1.0f) {
                 s(n10);
@@ -358,12 +358,12 @@ public class k {
         }
 
         public b s(float f10) {
-            this.f47846h = new qh.a(f10);
+            this.f47894h = new qh.a(f10);
             return this;
         }
 
         public b t(qh.c cVar) {
-            this.f47846h = cVar;
+            this.f47894h = cVar;
             return this;
         }
 
@@ -372,7 +372,7 @@ public class k {
         }
 
         public b v(d dVar) {
-            this.f47841c = dVar;
+            this.f47889c = dVar;
             float n10 = n(dVar);
             if (n10 != -1.0f) {
                 w(n10);
@@ -381,12 +381,12 @@ public class k {
         }
 
         public b w(float f10) {
-            this.f47845g = new qh.a(f10);
+            this.f47893g = new qh.a(f10);
             return this;
         }
 
         public b x(qh.c cVar) {
-            this.f47845g = cVar;
+            this.f47893g = cVar;
             return this;
         }
 
@@ -399,45 +399,45 @@ public class k {
         }
 
         public b(k kVar) {
-            this.f47839a = h.b();
-            this.f47840b = h.b();
-            this.f47841c = h.b();
-            this.f47842d = h.b();
-            this.f47843e = new qh.a(0.0f);
-            this.f47844f = new qh.a(0.0f);
-            this.f47845g = new qh.a(0.0f);
-            this.f47846h = new qh.a(0.0f);
-            this.f47847i = h.c();
-            this.f47848j = h.c();
-            this.f47849k = h.c();
-            this.f47850l = h.c();
-            this.f47839a = kVar.f47827a;
-            this.f47840b = kVar.f47828b;
-            this.f47841c = kVar.f47829c;
-            this.f47842d = kVar.f47830d;
-            this.f47843e = kVar.f47831e;
-            this.f47844f = kVar.f47832f;
-            this.f47845g = kVar.f47833g;
-            this.f47846h = kVar.f47834h;
-            this.f47847i = kVar.f47835i;
-            this.f47848j = kVar.f47836j;
-            this.f47849k = kVar.f47837k;
-            this.f47850l = kVar.f47838l;
+            this.f47887a = h.b();
+            this.f47888b = h.b();
+            this.f47889c = h.b();
+            this.f47890d = h.b();
+            this.f47891e = new qh.a(0.0f);
+            this.f47892f = new qh.a(0.0f);
+            this.f47893g = new qh.a(0.0f);
+            this.f47894h = new qh.a(0.0f);
+            this.f47895i = h.c();
+            this.f47896j = h.c();
+            this.f47897k = h.c();
+            this.f47898l = h.c();
+            this.f47887a = kVar.f47875a;
+            this.f47888b = kVar.f47876b;
+            this.f47889c = kVar.f47877c;
+            this.f47890d = kVar.f47878d;
+            this.f47891e = kVar.f47879e;
+            this.f47892f = kVar.f47880f;
+            this.f47893g = kVar.f47881g;
+            this.f47894h = kVar.f47882h;
+            this.f47895i = kVar.f47883i;
+            this.f47896j = kVar.f47884j;
+            this.f47897k = kVar.f47885k;
+            this.f47898l = kVar.f47886l;
         }
     }
 
     public k() {
-        this.f47827a = h.b();
-        this.f47828b = h.b();
-        this.f47829c = h.b();
-        this.f47830d = h.b();
-        this.f47831e = new qh.a(0.0f);
-        this.f47832f = new qh.a(0.0f);
-        this.f47833g = new qh.a(0.0f);
-        this.f47834h = new qh.a(0.0f);
-        this.f47835i = h.c();
-        this.f47836j = h.c();
-        this.f47837k = h.c();
-        this.f47838l = h.c();
+        this.f47875a = h.b();
+        this.f47876b = h.b();
+        this.f47877c = h.b();
+        this.f47878d = h.b();
+        this.f47879e = new qh.a(0.0f);
+        this.f47880f = new qh.a(0.0f);
+        this.f47881g = new qh.a(0.0f);
+        this.f47882h = new qh.a(0.0f);
+        this.f47883i = h.c();
+        this.f47884j = h.c();
+        this.f47885k = h.c();
+        this.f47886l = h.c();
     }
 }

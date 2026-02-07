@@ -13,16 +13,16 @@ import java.util.Map;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private double f28586d;
+    private double f28634d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f28587e;
+    private int f28635e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28588i;
+    private String f28636i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f28589o;
+    private Map f28637o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -58,13 +58,13 @@ public final class b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        bVar.f28588i = e3Var.q1();
+                        bVar.f28636i = e3Var.q1();
                         break;
                     case 1:
-                        bVar.f28586d = e3Var.nextDouble();
+                        bVar.f28634d = e3Var.nextDouble();
                         break;
                     case 2:
-                        bVar.f28587e = e3Var.nextInt();
+                        bVar.f28635e = e3Var.nextInt();
                         break;
                     default:
                         if (hashMap == null) {
@@ -85,21 +85,21 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f28589o = map;
+        this.f28637o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28586d)));
-        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f28587e));
-        if (this.f28588i != null) {
-            f3Var.e("thread_id").j(iLogger, this.f28588i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28634d)));
+        f3Var.e("stack_id").j(iLogger, Integer.valueOf(this.f28635e));
+        if (this.f28636i != null) {
+            f3Var.e("thread_id").j(iLogger, this.f28636i);
         }
-        Map map = this.f28589o;
+        Map map = this.f28637o;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28589o.get(str));
+                f3Var.e(str).j(iLogger, this.f28637o.get(str));
             }
         }
         f3Var.D();

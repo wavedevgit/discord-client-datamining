@@ -1,7 +1,7 @@
 // modules/messages/native/MessageGameIconActionSheet.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun79350: for (var _fun79350_ip = 0;;) switch (_fun79350_ip) {
+    _fun79801: for (var _fun79801_ip = 0;;) switch (_fun79801_ip) {
         case 0:
             var4 = require;
             var12 = metroImportDefault;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var11.bind(var13)();
             var11 = 0;
             if (!var13) {
-                _fun79350_ip = 226;
-                continue _fun79350
+                _fun79801_ip = 226;
+                continue _fun79801
             }
         case 223:
             var11 = 16;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/messages/native/MessageGameIconActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun79351: for (var _fun79351_ip = 0;;) switch (_fun79351_ip) {
+                _fun79802: for (var _fun79802_ip = 0;;) switch (_fun79802_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = var1.applicationId;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var13 == var23;
                         var0 = null;
                         if (var1) {
-                            _fun79351_ip = 622;
-                            continue _fun79351
+                            _fun79802_ip = 622;
+                            continue _fun79802
                         }
                     case 97:
                         var3 = _closure1_slot6;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var13 == var23;
                         var14 = undefined;
                         if (var15) {
-                            _fun79351_ip = 229;
-                            continue _fun79351
+                            _fun79802_ip = 229;
+                            continue _fun79802
                         }
                     case 215:
                         var18 = var23.getIconURL;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var13 != var14;
                         var13 = '';
                         if (!var15) {
-                            _fun79351_ip = 243;
-                            continue _fun79351
+                            _fun79802_ip = 243;
+                            continue _fun79802
                         }
                     case 240:
                         var13 = var14;
@@ -289,4 +289,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3456, 660, 33, 1297, 478, 671, 566, 4934, 4087, 3943, 5337, 1234, 1684, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3455, 660, 33, 1297, 478, 671, 566, 4933, 4086, 3942, 5384, 1234, 1686, 2]);

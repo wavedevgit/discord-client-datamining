@@ -1,97 +1,86 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 1;
-    var3 = var3[var0];
-    var0 = undefined;
-    var4 = var4.bind(var0)(var3);
-    var3 = var4.defineIntegration;
-    var1 = function() {
-        _fun99643: for (var _fun99643_ip = 0;;) switch (_fun99643_ip) {
+    var1 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = function arg0() {
+        _fun99657: for (var _fun99657_ip = 0;;) switch (_fun99657_ip) {
             case 0:
-                var4 = undefined;
-                var3 = undefined;
-                var0 = arguments.length;
-                var2 = 0;
-                if (!(var0 > var2)) {
-                    _fun99643_ip = 23;
-                    continue _fun99643
-                }
-            case 15:
-                var0 = arguments[var2];
-                if (!(var4 === var0)) {
-                    _fun99643_ip = 27;
-                    continue _fun99643
-                }
-            case 23:
-                var0 = {};
-                _fun99643_ip = 31;
-                continue _fun99643;
-            case 27:
-                var0 = arguments[var2];
-            case 31:
-                var2 = var0.limit;
+                var0 = arg0;
+                var2 = var0.__SENTRY__;
                 if (var2) {
-                    _fun99643_ip = 42;
-                    continue _fun99643
+                    _fun99657_ip = 14;
+                    continue _fun99657
                 }
-            case 39:
-                var2 = 5;
-            case 42:
-                var _closure2_slot0 = var2;
-                var0 = var0.key;
+            case 12:
+                var2 = {};
+            case 14:
+                var0.__SENTRY__ = var2;
+                var0 = var2.version;
                 if (var0) {
-                    _fun99643_ip = 58;
-                    continue _fun99643
+                    _fun99657_ip = 59;
+                    continue _fun99657
                 }
-            case 54:
-                var0 = 'cause';
-            case 58:
-                var _closure2_slot1 = var0;
+            case 29:
+                var4 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var1 = 0;
+                var3 = var3[var1];
+                var1 = undefined;
+                var1 = var4.bind(var1)(var3);
+                var0 = var1.SDK_VERSION;
+            case 59:
+                var2.version = var0;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 0;
+                var1 = var5[var0];
+                var3 = undefined;
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.SDK_VERSION;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.SDK_VERSION;
+                var0 = var2[var0];
+                if (var0) {
+                    _fun99657_ip = 119;
+                    continue _fun99657
+                }
+            case 117:
                 var0 = {};
-                var2 = 'LinkedErrors';
-                var0.name = var2;
-                var1 = function arg0, arg1, arg2() {
-                    var1 = arg2;
-                    var0 = var1.getOptions;
-                    var1 = var0.bind(var1)();
-                    var3 = _closure1_slot0;
-                    var4 = _closure1_slot1;
-                    var2 = 0;
-                    var5 = var4[var2];
-                    var0 = undefined;
-                    var9 = var3.bind(var0)(var5);
-                    var8 = var9.applyAggregateErrorsToEvent;
-                    var2 = var4[var2];
-                    var2 = var3.bind(var0)(var2);
-                    var16 = var2.exceptionFromError;
-                    var15 = var1.stackParser;
-                    var14 = var1.maxValueLength;
-                    var13 = _closure2_slot1;
-                    var12 = _closure2_slot0;
-                    var11 = arg0;
-                    var10 = arg1;
-                    var17 = var9;
-                    var1 = var17[var8](var16, var15, var14, var13, var12, var11, var10, var9);
-                    return var0;
-                };
-                var0.preprocessEvent = var1;
+            case 119:
+                var2[var1] = var0;
                 return var0;
         }
     };
-    var1 = var3.bind(var4)(var1);
-    var2.linkedErrorsIntegration = var1;
+    var _closure1_slot2 = var0;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var1, var3, var4);
+    var2 = function() {
+        var5 = _closure1_slot2;
+        var2 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var0 = 0;
+        var4 = var3[var0];
+        var1 = undefined;
+        var4 = var2.bind(var1)(var4);
+        var4 = var4.GLOBAL_OBJ;
+        var4 = var5.bind(var1)(var4);
+        var0 = var3[var0];
+        var0 = var2.bind(var1)(var0);
+        var0 = var0.GLOBAL_OBJ;
+        return var0;
+    };
+    var1.getMainCarrier = var2;
+    var1.getSentryCarrier = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12889, 12978]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12935]);

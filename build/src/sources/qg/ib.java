@@ -5,7 +5,7 @@ import yi.c;
 final class ib implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ib f47102a = new ib();
+    static final ib f47150a = new ib();
 
     static {
         c.b a10 = yi.c.a("appName");

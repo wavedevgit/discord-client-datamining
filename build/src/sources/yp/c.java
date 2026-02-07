@@ -7,28 +7,28 @@ import kotlin.enums.EnumEntries;
 public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f55542d = new c("ROUGH", 0);
+    public static final c f55590d = new c("ROUGH", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f55543e = new c("PRECISE", 1);
+    public static final c f55591e = new c("PRECISE", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ c[] f55544i;
+    private static final /* synthetic */ c[] f55592i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f55545o;
+    private static final /* synthetic */ EnumEntries f55593o;
 
     static {
         c[] a10 = a();
-        f55544i = a10;
-        f55545o = xr.a.a(a10);
+        f55592i = a10;
+        f55593o = xr.a.a(a10);
     }
 
     private c(String str, int i10) {
     }
 
     private static final /* synthetic */ c[] a() {
-        return new c[]{f55542d, f55543e};
+        return new c[]{f55590d, f55591e};
     }
 
     public static c valueOf(String str) {
@@ -36,6 +36,6 @@ public final class c {
     }
 
     public static c[] values() {
-        return (c[]) f55544i.clone();
+        return (c[]) f55592i.clone();
     }
 }

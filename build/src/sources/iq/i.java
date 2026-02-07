@@ -11,26 +11,26 @@ import com.google.android.material.checkbox.MaterialCheckBox;
 public final class i implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29234a;
+    private final ConstraintLayout f29282a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCheckBox f29235b;
+    public final MaterialCheckBox f29283b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f29236c;
+    public final TextView f29284c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f29237d;
+    public final TextView f29285d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f29238e;
+    public final TextView f29286e;
 
     private i(ConstraintLayout constraintLayout, MaterialCheckBox materialCheckBox, TextView textView, TextView textView2, TextView textView3) {
-        this.f29234a = constraintLayout;
-        this.f29235b = materialCheckBox;
-        this.f29236c = textView;
-        this.f29237d = textView2;
-        this.f29238e = textView3;
+        this.f29282a = constraintLayout;
+        this.f29283b = materialCheckBox;
+        this.f29284c = textView;
+        this.f29285d = textView2;
+        this.f29286e = textView3;
     }
 
     public static i a(View view) {
@@ -69,6 +69,6 @@ public final class i implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29234a;
+        return this.f29282a;
     }
 }

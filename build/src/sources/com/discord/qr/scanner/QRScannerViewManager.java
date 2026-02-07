@@ -51,13 +51,13 @@ public final class QRScannerViewManager extends ViewGroupManager<QRScanner> impl
     public static final Unit createViewInstance$lambda$2$lambda$0(QRScannerViewManager qRScannerViewManager, QRScanner qRScanner, String code) {
         Intrinsics.checkNotNullParameter(code, "code");
         qRScannerViewManager.reactEvents.emitEvent(qRScanner, new OnQRCodeFoundEvent("SUCCEEDED", code));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$2$lambda$1(QRScannerViewManager qRScannerViewManager, QRScanner qRScanner) {
         qRScannerViewManager.reactEvents.emitEvent(qRScanner, new OnQRCodeFoundEvent("FAILED", null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

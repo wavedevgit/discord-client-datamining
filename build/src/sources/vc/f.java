@@ -7,14 +7,14 @@ import ni.t0;
 final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final s f52427a;
+    public final s f52475a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52428b;
+    private final int f52476b;
 
     private f(int i10, s sVar) {
-        this.f52428b = i10;
-        this.f52427a = sVar;
+        this.f52476b = i10;
+        this.f52475a = sVar;
     }
 
     private static a a(int i10, int i11, h0 h0Var) {
@@ -59,7 +59,7 @@ final class f implements a {
     }
 
     public a b(Class cls) {
-        t0 it = this.f52427a.iterator();
+        t0 it = this.f52475a.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
             if (aVar.getClass() == cls) {
@@ -71,6 +71,6 @@ final class f implements a {
 
     @Override // vc.a
     public int getType() {
-        return this.f52428b;
+        return this.f52476b;
     }
 }

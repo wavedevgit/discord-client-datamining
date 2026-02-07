@@ -3,26 +3,26 @@ package hp;
 public abstract class m1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f26368a = 2131362024;
+    public static int f26416a = 2131362024;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f26369b = 2131362025;
+    public static int f26417b = 2131362025;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f26370c = 2131362356;
+    public static int f26418c = 2131362356;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f26371d = 2131362627;
+    public static int f26419d = 2131362627;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f26372e = 2131362693;
+    public static int f26420e = 2131362693;
 
     /* renamed from: f  reason: collision with root package name */
-    public static int f26373f = 2131362812;
+    public static int f26421f = 2131362812;
 
     /* renamed from: g  reason: collision with root package name */
-    public static int f26374g = 2131363150;
+    public static int f26422g = 2131363150;
 
     /* renamed from: h  reason: collision with root package name */
-    public static int f26375h = 2131363152;
+    public static int f26423h = 2131363152;
 }

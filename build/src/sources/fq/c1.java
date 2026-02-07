@@ -29,12 +29,12 @@ public abstract class c1 {
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f29245c.setHint(label);
+                c10.f29293c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f29245c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f29245c;
+                c10.f29293c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f29293c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 bq.o.a(inputLayout);
             }
@@ -48,7 +48,7 @@ public abstract class c1 {
         currencyInstance.setCurrency(currency);
         NumberFormat numberFormat = NumberFormat.getInstance();
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        Editable text = c10.f29244b.getText();
+        Editable text = c10.f29292b.getText();
         if (text != null) {
             t10 = text.toString();
         } else {
@@ -58,11 +58,11 @@ public abstract class c1 {
         a aVar = new a(objectRef, c10, currency, numberFormat, currencyInstance, inputCurrencyComponent);
         if (inputCurrencyComponent.h() != null) {
             try {
-                c10.f29244b.setText(currencyInstance.format(inputCurrencyComponent.h().doubleValue()));
+                c10.f29292b.setText(currencyInstance.format(inputCurrencyComponent.h().doubleValue()));
             } catch (Exception unused) {
             }
         }
-        c10.f29244b.addTextChangedListener(aVar);
+        c10.f29292b.addTextChangedListener(aVar);
         uiComponentHelper.d(new Function0() { // from class: fq.b1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -80,11 +80,11 @@ public abstract class c1 {
     public static final Unit c(InputCurrency inputCurrency, iq.k kVar) {
         InputTextBasedComponentStyle styles = inputCurrency.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = kVar.f29245c;
+            TextInputLayout inputLayout = kVar.f29293c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             kq.a0.k(inputLayout, styles);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -122,7 +122,7 @@ public abstract class c1 {
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             if (!Intrinsics.areEqual(String.valueOf(editable), this.f23419d.element) && editable != null && !StringsKt.k0(editable)) {
-                this.f23420e.f29244b.removeTextChangedListener(this);
+                this.f23420e.f29292b.removeTextChangedListener(this);
                 String quote = Pattern.quote(this.f23421i.getSymbol());
                 Intrinsics.checkNotNullExpressionValue(quote, "quote(...)");
                 String replace = new Regex(quote).replace(editable, "");
@@ -139,9 +139,9 @@ public abstract class c1 {
                     double doubleValue = parse.doubleValue() / 100.0d;
                     ?? format = this.f23423p.format(doubleValue);
                     this.f23419d.element = format;
-                    this.f23420e.f29244b.setText((CharSequence) format);
-                    this.f23420e.f29244b.setSelection(format.length());
-                    this.f23420e.f29244b.addTextChangedListener(this);
+                    this.f23420e.f29292b.setText((CharSequence) format);
+                    this.f23420e.f29292b.setSelection(format.length());
+                    this.f23420e.f29292b.addTextChangedListener(this);
                     this.f23424q.b().c(Double.valueOf(doubleValue));
                 }
             }

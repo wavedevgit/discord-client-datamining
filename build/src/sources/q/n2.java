@@ -9,50 +9,50 @@ import x.q;
 class n2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0.l0 f46048a;
+    private final a0.l0 f46096a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MutableLiveData f46049b;
+    private final MutableLiveData f46097b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f46050a;
+        static final /* synthetic */ int[] f46098a;
 
         static {
             int[] iArr = new int[e0.a.values().length];
-            f46050a = iArr;
+            f46098a = iArr;
             try {
                 iArr[e0.a.PENDING_OPEN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f46050a[e0.a.OPENING.ordinal()] = 2;
+                f46098a[e0.a.OPENING.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f46050a[e0.a.OPEN.ordinal()] = 3;
+                f46098a[e0.a.OPEN.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f46050a[e0.a.CONFIGURED.ordinal()] = 4;
+                f46098a[e0.a.CONFIGURED.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f46050a[e0.a.CLOSING.ordinal()] = 5;
+                f46098a[e0.a.CLOSING.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f46050a[e0.a.RELEASING.ordinal()] = 6;
+                f46098a[e0.a.RELEASING.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f46050a[e0.a.CLOSED.ordinal()] = 7;
+                f46098a[e0.a.CLOSED.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f46050a[e0.a.RELEASED.ordinal()] = 8;
+                f46098a[e0.a.RELEASED.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
         }
@@ -60,26 +60,26 @@ class n2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n2(a0.l0 l0Var) {
-        this.f46048a = l0Var;
+        this.f46096a = l0Var;
         MutableLiveData mutableLiveData = new MutableLiveData();
-        this.f46049b = mutableLiveData;
+        this.f46097b = mutableLiveData;
         mutableLiveData.m(x.q.a(q.b.CLOSED));
     }
 
     private x.q b() {
-        if (this.f46048a.c()) {
+        if (this.f46096a.c()) {
             return x.q.a(q.b.OPENING);
         }
         return x.q.a(q.b.PENDING_OPEN);
     }
 
     public LiveData a() {
-        return this.f46049b;
+        return this.f46097b;
     }
 
     public void c(e0.a aVar, q.a aVar2) {
         x.q b10;
-        switch (a.f46050a[aVar.ordinal()]) {
+        switch (a.f46098a[aVar.ordinal()]) {
             case 1:
                 b10 = b();
                 break;
@@ -102,9 +102,9 @@ class n2 {
                 throw new IllegalStateException("Unknown internal camera state: " + aVar);
         }
         x.y0.a("CameraStateMachine", "New public camera state " + b10 + " from " + aVar + " and " + aVar2);
-        if (!Objects.equals((x.q) this.f46049b.f(), b10)) {
+        if (!Objects.equals((x.q) this.f46097b.f(), b10)) {
             x.y0.a("CameraStateMachine", "Publishing new public camera state " + b10);
-            this.f46049b.m(b10);
+            this.f46097b.m(b10);
         }
     }
 }

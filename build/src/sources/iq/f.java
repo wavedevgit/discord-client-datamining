@@ -13,42 +13,42 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29218a;
+    private final ConstraintLayout f29266a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f29219b;
+    public final TextView f29267b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f29220c;
+    public final TextInputLayout f29268c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextInputEditText f29221d;
+    public final TextInputEditText f29269d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f29222e;
+    public final TextView f29270e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f29223f;
+    public final TextInputLayout f29271f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final AutoCompleteTextView f29224g;
+    public final AutoCompleteTextView f29272g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextInputLayout f29225h;
+    public final TextInputLayout f29273h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextInputEditText f29226i;
+    public final TextInputEditText f29274i;
 
     private f(ConstraintLayout constraintLayout, TextView textView, TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextView textView2, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView, TextInputLayout textInputLayout3, TextInputEditText textInputEditText2) {
-        this.f29218a = constraintLayout;
-        this.f29219b = textView;
-        this.f29220c = textInputLayout;
-        this.f29221d = textInputEditText;
-        this.f29222e = textView2;
-        this.f29223f = textInputLayout2;
-        this.f29224g = autoCompleteTextView;
-        this.f29225h = textInputLayout3;
-        this.f29226i = textInputEditText2;
+        this.f29266a = constraintLayout;
+        this.f29267b = textView;
+        this.f29268c = textInputLayout;
+        this.f29269d = textInputEditText;
+        this.f29270e = textView2;
+        this.f29271f = textInputLayout2;
+        this.f29272g = autoCompleteTextView;
+        this.f29273h = textInputLayout3;
+        this.f29274i = textInputEditText2;
     }
 
     public static f a(View view) {
@@ -103,6 +103,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29218a;
+        return this.f29266a;
     }
 }

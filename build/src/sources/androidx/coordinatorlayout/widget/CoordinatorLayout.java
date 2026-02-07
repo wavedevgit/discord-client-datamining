@@ -1558,7 +1558,7 @@ public class CoordinatorLayout extends ViewGroup implements t, u {
     }
 
     public CoordinatorLayout(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, n1.a.f38385a);
+        this(context, attributeSet, n1.a.f38433a);
     }
 
     @Override // androidx.core.view.t
@@ -1693,21 +1693,21 @@ public class CoordinatorLayout extends ViewGroup implements t, u {
         this.f3290q = new int[2];
         this.D = new NestedScrollingParentHelper(this);
         if (i10 == 0) {
-            obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38387a, 0, n1.b.f38386a);
+            obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38435a, 0, n1.b.f38434a);
         } else {
-            obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38387a, i10, 0);
+            obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38435a, i10, 0);
         }
         TypedArray typedArray = obtainStyledAttributes;
         if (i10 == 0) {
             coordinatorLayout = this;
             context2 = context;
-            h0.l0(coordinatorLayout, context2, n1.c.f38387a, attributeSet, typedArray, 0, n1.b.f38386a);
+            h0.l0(coordinatorLayout, context2, n1.c.f38435a, attributeSet, typedArray, 0, n1.b.f38434a);
         } else {
             context2 = context;
             coordinatorLayout = this;
-            h0.l0(coordinatorLayout, context2, n1.c.f38387a, attributeSet, typedArray, i10, 0);
+            h0.l0(coordinatorLayout, context2, n1.c.f38435a, attributeSet, typedArray, i10, 0);
         }
-        int resourceId = typedArray.getResourceId(n1.c.f38388b, 0);
+        int resourceId = typedArray.getResourceId(n1.c.f38436b, 0);
         if (resourceId != 0) {
             Resources resources = context2.getResources();
             coordinatorLayout.f3293t = resources.getIntArray(resourceId);
@@ -1718,7 +1718,7 @@ public class CoordinatorLayout extends ViewGroup implements t, u {
                 iArr[i11] = (int) (iArr[i11] * f10);
             }
         }
-        coordinatorLayout.A = typedArray.getDrawable(n1.c.f38389c);
+        coordinatorLayout.A = typedArray.getDrawable(n1.c.f38437c);
         typedArray.recycle();
         U();
         super.setOnHierarchyChangeListener(new e());
@@ -2105,17 +2105,17 @@ public class CoordinatorLayout extends ViewGroup implements t, u {
             this.f3308g = 0;
             this.f3309h = 0;
             this.f3318q = new Rect();
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38390d);
-            this.f3304c = obtainStyledAttributes.getInteger(n1.c.f38391e, 0);
-            this.f3307f = obtainStyledAttributes.getResourceId(n1.c.f38392f, -1);
-            this.f3305d = obtainStyledAttributes.getInteger(n1.c.f38393g, 0);
-            this.f3306e = obtainStyledAttributes.getInteger(n1.c.f38397k, -1);
-            this.f3308g = obtainStyledAttributes.getInt(n1.c.f38396j, 0);
-            this.f3309h = obtainStyledAttributes.getInt(n1.c.f38395i, 0);
-            boolean hasValue = obtainStyledAttributes.hasValue(n1.c.f38394h);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, n1.c.f38438d);
+            this.f3304c = obtainStyledAttributes.getInteger(n1.c.f38439e, 0);
+            this.f3307f = obtainStyledAttributes.getResourceId(n1.c.f38440f, -1);
+            this.f3305d = obtainStyledAttributes.getInteger(n1.c.f38441g, 0);
+            this.f3306e = obtainStyledAttributes.getInteger(n1.c.f38445k, -1);
+            this.f3308g = obtainStyledAttributes.getInt(n1.c.f38444j, 0);
+            this.f3309h = obtainStyledAttributes.getInt(n1.c.f38443i, 0);
+            boolean hasValue = obtainStyledAttributes.hasValue(n1.c.f38442h);
             this.f3303b = hasValue;
             if (hasValue) {
-                this.f3302a = CoordinatorLayout.G(context, attributeSet, obtainStyledAttributes.getString(n1.c.f38394h));
+                this.f3302a = CoordinatorLayout.G(context, attributeSet, obtainStyledAttributes.getString(n1.c.f38442h));
             }
             obtainStyledAttributes.recycle();
             c cVar = this.f3302a;

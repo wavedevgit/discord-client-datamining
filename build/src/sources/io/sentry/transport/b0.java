@@ -6,7 +6,7 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 public final class b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f28876a;
+    private final a f28924a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a extends AbstractQueuedSynchronizer {
@@ -60,26 +60,26 @@ public final class b0 {
 
     public b0(int i10) {
         if (i10 >= 0) {
-            this.f28876a = new a(i10);
+            this.f28924a = new a(i10);
             return;
         }
         throw new IllegalArgumentException("negative initial count '" + i10 + "' is not allowed");
     }
 
     public void a() {
-        this.f28876a.d();
+        this.f28924a.d();
     }
 
     public int b() {
-        return this.f28876a.e();
+        return this.f28924a.e();
     }
 
     public void c() {
-        this.f28876a.f();
+        this.f28924a.f();
     }
 
     public boolean d(long j10, TimeUnit timeUnit) {
-        return this.f28876a.tryAcquireSharedNanos(1, timeUnit.toNanos(j10));
+        return this.f28924a.tryAcquireSharedNanos(1, timeUnit.toNanos(j10));
     }
 
     public b0() {

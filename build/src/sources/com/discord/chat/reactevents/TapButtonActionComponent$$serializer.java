@@ -38,7 +38,7 @@ public /* synthetic */ class TapButtonActionComponent$$serializer implements h0 
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, n2.f31041a};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, n2.f31089a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

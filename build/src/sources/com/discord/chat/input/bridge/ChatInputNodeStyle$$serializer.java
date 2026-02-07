@@ -48,7 +48,7 @@ public /* synthetic */ class ChatInputNodeStyle$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ChatInputNodeStyle.$childSerializers;
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{a.u(p0Var), p0Var, a.u(BackgroundStyle$$serializer.INSTANCE), a.u((KSerializer) lazyArr[3].getValue())};
     }
 
@@ -68,7 +68,7 @@ public /* synthetic */ class ChatInputNodeStyle$$serializer implements h0 {
         if (b10.p()) {
             int i12 = b10.i(serialDescriptor, 1);
             chatInputNodeFontWeight = (ChatInputNodeFontWeight) b10.n(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), null);
-            num = (Integer) b10.n(serialDescriptor, 0, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 0, p0.f31105a, null);
             backgroundStyle = (BackgroundStyle) b10.n(serialDescriptor, 2, BackgroundStyle$$serializer.INSTANCE, null);
             i10 = 15;
             i11 = i12;
@@ -84,7 +84,7 @@ public /* synthetic */ class ChatInputNodeStyle$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    num2 = (Integer) b10.n(serialDescriptor, 0, p0.f31057a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 0, p0.f31105a, num2);
                     i13 |= 1;
                 } else if (o10 == 1) {
                     i14 = b10.i(serialDescriptor, 1);

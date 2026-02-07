@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/libdiscore/mobile/js/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun17903: for (var _fun17903_ip = 0;;) switch (_fun17903_ip) {
+    _fun17908: for (var _fun17908_ip = 0;;) switch (_fun17908_ip) {
         case 0:
             var6 = require;
             var5 = metroImportDefault;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.NativeModules;
             var5 = var3.LibDiscoreModule;
             if (var5) {
-                _fun17903_ip = 150;
-                continue _fun17903
+                _fun17908_ip = 150;
+                continue _fun17908
             }
         case 106:
             var9 = var4.Proxy;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = var8;
             var4 = new var13[var9](var12, var11, var10);
             var4 = var4 instanceof Object ? var4 : var5;
-            _fun17903_ip = 156;
-            continue _fun17903;
+            _fun17908_ip = 156;
+            continue _fun17908;
         case 150:
             var4 = var3.LibDiscoreModule;
         case 156:

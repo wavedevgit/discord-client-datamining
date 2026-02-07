@@ -5,37 +5,37 @@ import yi.c;
 final class u1 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u1 f42524a = new u1();
+    static final u1 f42572a = new u1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42525b;
+    private static final yi.c f42573b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42526c;
+    private static final yi.c f42574c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42527d;
+    private static final yi.c f42575d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42528e;
+    private static final yi.c f42576e;
 
     static {
         c.b a10 = yi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f42525b = a10.b(fVar.b()).a();
+        f42573b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f42526c = a11.b(fVar2.b()).a();
+        f42574c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f42527d = a12.b(fVar3.b()).a();
+        f42575d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("detectorOptions");
         f fVar4 = new f();
         fVar4.a(4);
-        f42528e = a13.b(fVar4.b()).a();
+        f42576e = a13.b(fVar4.b()).a();
     }
 
     private u1() {

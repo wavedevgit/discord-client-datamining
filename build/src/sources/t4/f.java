@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Lambda;
 public final class f extends Lambda implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ List f50297d;
+    final /* synthetic */ List f50345d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(List list) {
         super(0);
-        this.f50297d = list;
+        this.f50345d = list;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public final Object invoke() {
-        return CollectionsKt.U0(this.f50297d);
+        return CollectionsKt.U0(this.f50345d);
     }
 }

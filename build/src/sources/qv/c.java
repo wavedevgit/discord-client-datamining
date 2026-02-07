@@ -3,7 +3,7 @@ package qv;
 public class c extends p {
 
     /* renamed from: g  reason: collision with root package name */
-    private char f48268g;
+    private char f48316g;
 
     @Override // qv.r
     public void a(y yVar) {
@@ -11,10 +11,10 @@ public class c extends p {
     }
 
     public char p() {
-        return this.f48268g;
+        return this.f48316g;
     }
 
     public void q(char c10) {
-        this.f48268g = c10;
+        this.f48316g = c10;
     }
 }

@@ -45,8 +45,8 @@ public /* synthetic */ class MessageReaction$$serializer implements h0 {
     @NotNull
     public final KSerializer[] childSerializers() {
         KSerializer u10 = a.u(ThemedBurstReactionColorPalette$$serializer.INSTANCE);
-        p0 p0Var = p0.f31057a;
-        h hVar = h.f31005a;
+        p0 p0Var = p0.f31105a;
+        h hVar = h.f31053a;
         return new KSerializer[]{p0Var, hVar, hVar, MessageReactionEmoji$$serializer.INSTANCE, p0Var, u10, hVar};
     }
 

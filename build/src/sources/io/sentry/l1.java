@@ -3,7 +3,7 @@ package io.sentry;
 public final class l1 implements t0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Runtime f28272a = Runtime.getRuntime();
+    private final Runtime f28320a = Runtime.getRuntime();
 
     @Override // io.sentry.t0
     public void c() {
@@ -11,6 +11,6 @@ public final class l1 implements t0 {
 
     @Override // io.sentry.t0
     public void d(k3 k3Var) {
-        k3Var.f(Long.valueOf(this.f28272a.totalMemory() - this.f28272a.freeMemory()));
+        k3Var.f(Long.valueOf(this.f28320a.totalMemory() - this.f28320a.freeMemory()));
     }
 }

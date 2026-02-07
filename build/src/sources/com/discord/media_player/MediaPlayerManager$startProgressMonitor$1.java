@@ -43,7 +43,7 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
                 MediaPlayerManager.INSTANCE.getPlaybackProgressFlow$media_player_release().setValue(new MediaPlayerManager.PlaybackProgress(mediaPlayer.getMediaSource(), mediaPlayer.currentPositionMs(), mediaPlayer.durationMs()));
                 this.label = 1;
             } else {
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         } while (i0.a(100L, this) != f10);
         return f10;
@@ -51,6 +51,6 @@ public final class MediaPlayerManager$startProgressMonitor$1 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaPlayerManager$startProgressMonitor$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -19,16 +19,16 @@ import z2.d;
 public final class h implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f55886a = new h();
+    public static final h f55934a = new h();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f55887b = "preferences_pb";
+    private static final String f55935b = "preferences_pb";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f55888a;
+        public static final /* synthetic */ int[] f55936a;
 
         static {
             int[] iArr = new int[f.b.values().length];
@@ -40,7 +40,7 @@ public final class h implements k {
             iArr[f.b.STRING.ordinal()] = 6;
             iArr[f.b.STRING_SET.ordinal()] = 7;
             iArr[f.b.VALUE_NOT_SET.ordinal()] = 8;
-            f55888a = iArr;
+            f55936a = iArr;
         }
     }
 
@@ -53,7 +53,7 @@ public final class h implements k {
         if (T == null) {
             i10 = -1;
         } else {
-            i10 = a.f55888a[T.ordinal()];
+            i10 = a.f55936a[T.ordinal()];
         }
         switch (i10) {
             case -1:
@@ -129,14 +129,14 @@ public final class h implements k {
 
     @Override // w2.k
     public Object c(InputStream inputStream, Continuation continuation) {
-        y2.d a10 = y2.b.f54877a.a(inputStream);
+        y2.d a10 = y2.b.f54925a.a(inputStream);
         z2.a b10 = e.b(new d.b[0]);
         Map F = a10.F();
         Intrinsics.checkNotNullExpressionValue(F, "preferencesProto.preferencesMap");
         for (Map.Entry entry : F.entrySet()) {
             String name = (String) entry.getKey();
             y2.f value = (y2.f) entry.getValue();
-            h hVar = f55886a;
+            h hVar = f55934a;
             Intrinsics.checkNotNullExpressionValue(name, "name");
             Intrinsics.checkNotNullExpressionValue(value, "value");
             hVar.d(name, value, b10);
@@ -151,7 +151,7 @@ public final class h implements k {
     }
 
     public final String f() {
-        return f55887b;
+        return f55935b;
     }
 
     @Override // w2.k
@@ -163,6 +163,6 @@ public final class h implements k {
             I.q(((d.a) entry.getKey()).a(), g(entry.getValue()));
         }
         ((y2.d) I.h()).g(outputStream);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

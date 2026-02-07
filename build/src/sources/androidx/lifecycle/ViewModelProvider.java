@@ -48,7 +48,7 @@ public class ViewModelProvider {
 
         default n0 c(Class modelClass) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-            return m3.h.f36846a.d();
+            return m3.h.f36894a.d();
         }
     }
 
@@ -60,10 +60,10 @@ public class ViewModelProvider {
 
         public static /* synthetic */ ViewModelProvider c(b bVar, q0 q0Var, Factory factory, CreationExtras creationExtras, int i10, Object obj) {
             if ((i10 & 2) != 0) {
-                factory = m3.h.f36846a.b(q0Var);
+                factory = m3.h.f36894a.b(q0Var);
             }
             if ((i10 & 4) != 0) {
-                creationExtras = m3.h.f36846a.a(q0Var);
+                creationExtras = m3.h.f36894a.a(q0Var);
             }
             return bVar.b(q0Var, factory, creationExtras);
         }
@@ -134,7 +134,7 @@ public class ViewModelProvider {
         @Override // androidx.lifecycle.ViewModelProvider.Factory
         public n0 c(Class modelClass) {
             Intrinsics.checkNotNullParameter(modelClass, "modelClass");
-            return m3.e.f36841a.a(modelClass);
+            return m3.e.f36889a.a(modelClass);
         }
     }
 

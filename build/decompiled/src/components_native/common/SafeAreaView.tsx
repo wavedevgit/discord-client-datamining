@@ -38,38 +38,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/SafeAreaView.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun43733: for (var _fun43733_ip = 0;;) switch (_fun43733_ip) {
+        _fun43740: for (var _fun43740_ip = 0;;) switch (_fun43740_ip) {
             case 0:
                 var6 = arg0;
                 var13 = var6.top;
                 var3 = undefined;
                 if (!(var13 === var3)) {
-                    _fun43733_ip = 18;
-                    continue _fun43733
+                    _fun43740_ip = 18;
+                    continue _fun43740
                 }
             case 16:
                 var13 = false;
             case 18:
                 var11 = var6.bottom;
                 if (!(var11 === var3)) {
-                    _fun43733_ip = 29;
-                    continue _fun43733
+                    _fun43740_ip = 29;
+                    continue _fun43740
                 }
             case 27:
                 var11 = false;
             case 29:
                 var10 = var6.left;
                 if (!(var10 === var3)) {
-                    _fun43733_ip = 40;
-                    continue _fun43733
+                    _fun43740_ip = 40;
+                    continue _fun43740
                 }
             case 38:
                 var10 = false;
             case 40:
                 var7 = var6.right;
                 if (!(var7 === var3)) {
-                    _fun43733_ip = 51;
-                    continue _fun43733
+                    _fun43740_ip = 51;
+                    continue _fun43740
                 }
             case 49:
                 var7 = false;
@@ -104,68 +104,68 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var12)(var9);
                 _closure2_slot0 = var6;
                 if (!(var9 == var2)) {
-                    _fun43733_ip = 156;
-                    continue _fun43733
+                    _fun43740_ip = 156;
+                    continue _fun43740
                 }
             case 154:
                 var2 = {};
             case 156:
                 var16 = var2.paddingTop;
                 if (var16) {
-                    _fun43733_ip = 171;
-                    continue _fun43733
+                    _fun43740_ip = 171;
+                    continue _fun43740
                 }
             case 165:
                 var16 = var2.paddingVertical;
             case 171:
                 if (var16) {
-                    _fun43733_ip = 176;
-                    continue _fun43733
+                    _fun43740_ip = 176;
+                    continue _fun43740
                 }
             case 174:
                 var16 = 0;
             case 176:
                 var14 = var2.paddingBottom;
                 if (var14) {
-                    _fun43733_ip = 191;
-                    continue _fun43733
+                    _fun43740_ip = 191;
+                    continue _fun43740
                 }
             case 185:
                 var14 = var2.paddingVertical;
             case 191:
                 if (var14) {
-                    _fun43733_ip = 196;
-                    continue _fun43733
+                    _fun43740_ip = 196;
+                    continue _fun43740
                 }
             case 194:
                 var14 = 0;
             case 196:
                 var12 = var2.paddingLeft;
                 if (var12) {
-                    _fun43733_ip = 210;
-                    continue _fun43733
+                    _fun43740_ip = 210;
+                    continue _fun43740
                 }
             case 205:
                 var12 = var2.paddingHorizontal;
             case 210:
                 if (var12) {
-                    _fun43733_ip = 215;
-                    continue _fun43733
+                    _fun43740_ip = 215;
+                    continue _fun43740
                 }
             case 213:
                 var12 = 0;
             case 215:
                 var9 = var2.paddingRight;
                 if (var9) {
-                    _fun43733_ip = 229;
-                    continue _fun43733
+                    _fun43740_ip = 229;
+                    continue _fun43740
                 }
             case 224:
                 var9 = var2.paddingHorizontal;
             case 229:
                 if (var9) {
-                    _fun43733_ip = 234;
-                    continue _fun43733
+                    _fun43740_ip = 234;
+                    continue _fun43740
                 }
             case 232:
                 var9 = 0;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var2;
                 var2 = undefined;
                 if (!var13) {
-                    _fun43733_ip = 266;
-                    continue _fun43733
+                    _fun43740_ip = 266;
+                    continue _fun43740
                 }
             case 247:
                 var13 = {};
@@ -187,8 +187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var2;
                 var2 = undefined;
                 if (!var11) {
-                    _fun43733_ip = 294;
-                    continue _fun43733
+                    _fun43740_ip = 294;
+                    continue _fun43740
                 }
             case 275:
                 var11 = {};
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[2] = var2;
                 var2 = undefined;
                 if (!var10) {
-                    _fun43733_ip = 322;
-                    continue _fun43733
+                    _fun43740_ip = 322;
+                    continue _fun43740
                 }
             case 303:
                 var10 = {};
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[3] = var2;
                 var2 = undefined;
                 if (!var7) {
-                    _fun43733_ip = 350;
-                    continue _fun43733
+                    _fun43740_ip = 350;
+                    continue _fun43740
                 }
             case 331:
                 var7 = {};
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5, var2);
                 _closure2_slot2 = var6;
                 if (!var6) {
-                    _fun43733_ip = 415;
-                    continue _fun43733
+                    _fun43740_ip = 415;
+                    continue _fun43740
                 }
             case 408:
                 _closure2_slot1 = var2;
@@ -247,12 +247,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot2;
                 var2 = var6.useInsertionEffect;
                 var1 = function() { // Environment: var1
-                    _fun43734: for (var _fun43734_ip = 0;;) switch (_fun43734_ip) {
+                    _fun43741: for (var _fun43741_ip = 0;;) switch (_fun43741_ip) {
                         case 0:
                             var1 = _closure2_slot2;
                             if (var1) {
-                                _fun43734_ip = 24;
-                                continue _fun43734
+                                _fun43741_ip = 24;
+                                continue _fun43741
                             }
                         case 10:
                             var1 = _closure2_slot0;
@@ -277,4 +277,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SafeAreaPaddingView = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1568, 4738, 644, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1568, 4737, 644, 2]);

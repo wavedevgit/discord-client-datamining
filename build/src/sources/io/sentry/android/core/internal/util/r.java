@@ -12,13 +12,13 @@ import java.util.concurrent.atomic.AtomicReference;
 public class r implements ViewTreeObserver.OnDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f27207d = new Handler(Looper.getMainLooper());
+    private final Handler f27255d = new Handler(Looper.getMainLooper());
 
     /* renamed from: e  reason: collision with root package name */
-    private final AtomicReference f27208e;
+    private final AtomicReference f27256e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Runnable f27209i;
+    private final Runnable f27257i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -39,8 +39,8 @@ public class r implements ViewTreeObserver.OnDrawListener {
     }
 
     private r(View view, Runnable runnable) {
-        this.f27208e = new AtomicReference(view);
-        this.f27209i = runnable;
+        this.f27256e = new AtomicReference(view);
+        this.f27257i = runnable;
     }
 
     public static /* synthetic */ void a(r rVar, View view) {
@@ -98,7 +98,7 @@ public class r implements ViewTreeObserver.OnDrawListener {
 
     @Override // android.view.ViewTreeObserver.OnDrawListener
     public void onDraw() {
-        final View view = (View) this.f27208e.getAndSet(null);
+        final View view = (View) this.f27256e.getAndSet(null);
         if (view == null) {
             return;
         }
@@ -108,6 +108,6 @@ public class r implements ViewTreeObserver.OnDrawListener {
                 r.a(r.this, view);
             }
         });
-        this.f27207d.postAtFrontOfQueue(this.f27209i);
+        this.f27255d.postAtFrontOfQueue(this.f27257i);
     }
 }

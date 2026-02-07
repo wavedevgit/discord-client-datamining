@@ -3,8 +3,8 @@ package ub;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f51266a;
+    public long f51314a;
 
     /* renamed from: b  reason: collision with root package name */
-    public long f51267b;
+    public long f51315b;
 }

@@ -10,7 +10,7 @@ import uu.a;
 public final class g implements su.a, a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f52094a = new g();
+    public static final g f52142a = new g();
 
     private g() {
     }
@@ -20,7 +20,7 @@ public final class g implements su.a, a {
         if (b10 != null) {
             Object obj2 = obj;
             for (Object obj3 : b10) {
-                obj2 = f52094a.h(hVar, obj2, obj3, bVar.a());
+                obj2 = f52142a.h(hVar, obj2, obj3, bVar.a());
                 if (obj2 == null) {
                     return bVar.c();
                 }
@@ -34,7 +34,7 @@ public final class g implements su.a, a {
 
     private final Object h(h hVar, Object obj, Object obj2, Map map) {
         if (map != null) {
-            return hVar.a(map, f52094a.i(obj, obj2));
+            return hVar.a(map, f52142a.i(obj, obj2));
         }
         return null;
     }
@@ -57,7 +57,7 @@ public final class g implements su.a, a {
     public Object e(Object obj, Object obj2, h evaluator) {
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         List c10 = cw.a.c(obj);
-        g gVar = f52094a;
+        g gVar = f52142a;
         return gVar.g(gVar.c(c10, obj2, evaluator), cw.c.c(c10), evaluator);
     }
 

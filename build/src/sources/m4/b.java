@@ -8,7 +8,7 @@ public abstract class b {
     public static final class a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f36847a = new a();
+        public static final a f36895a = new a();
 
         private a() {
             super(null);
@@ -20,33 +20,33 @@ public abstract class b {
     public static final class C0497b extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f36848a;
+        private final int f36896a;
 
         public C0497b(int i10) {
             super(null);
-            this.f36848a = i10;
+            this.f36896a = i10;
         }
 
         public final int a() {
-            return this.f36848a;
+            return this.f36896a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0497b) && this.f36848a == ((C0497b) obj).f36848a) {
+            if ((obj instanceof C0497b) && this.f36896a == ((C0497b) obj).f36896a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f36848a);
+            return Integer.hashCode(this.f36896a);
         }
 
         public String toString() {
-            return "ConstraintsNotMet(reason=" + this.f36848a + ')';
+            return "ConstraintsNotMet(reason=" + this.f36896a + ')';
         }
     }
 

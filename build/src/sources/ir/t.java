@@ -12,31 +12,31 @@ import java.util.List;
 public class t implements Appendable, CharSequence {
 
     /* renamed from: d  reason: collision with root package name */
-    private final StringBuilder f29330d;
+    private final StringBuilder f29378d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Deque f29331e;
+    private final Deque f29379e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Object f29332a;
+        public final Object f29380a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f29333b;
+        public int f29381b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f29334c;
+        public int f29382c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f29335d;
+        public final int f29383d;
 
         a(Object obj, int i10, int i11, int i12) {
-            this.f29332a = obj;
-            this.f29333b = i10;
-            this.f29334c = i11;
-            this.f29335d = i12;
+            this.f29380a = obj;
+            this.f29381b = i10;
+            this.f29382c = i11;
+            this.f29383d = i12;
         }
     }
 
@@ -107,7 +107,7 @@ public class t implements Appendable, CharSequence {
     @Override // java.lang.Appendable
     /* renamed from: a */
     public t append(char c10) {
-        this.f29330d.append(c10);
+        this.f29378d.append(c10);
         return this;
     }
 
@@ -115,7 +115,7 @@ public class t implements Appendable, CharSequence {
     /* renamed from: b */
     public t append(CharSequence charSequence) {
         e(length(), charSequence);
-        this.f29330d.append(charSequence);
+        this.f29378d.append(charSequence);
         return this;
     }
 
@@ -124,17 +124,17 @@ public class t implements Appendable, CharSequence {
     public t append(CharSequence charSequence, int i10, int i11) {
         CharSequence subSequence = charSequence.subSequence(i10, i11);
         e(length(), subSequence);
-        this.f29330d.append(subSequence);
+        this.f29378d.append(subSequence);
         return this;
     }
 
     @Override // java.lang.CharSequence
     public char charAt(int i10) {
-        return this.f29330d.charAt(i10);
+        return this.f29378d.charAt(i10);
     }
 
     public t d(String str) {
-        this.f29330d.append(str);
+        this.f29378d.append(str);
         return this;
     }
 
@@ -145,16 +145,16 @@ public class t implements Appendable, CharSequence {
             return Collections.EMPTY_LIST;
         }
         if (i10 == 0 && length == i11) {
-            ArrayList arrayList = new ArrayList(this.f29331e);
+            ArrayList arrayList = new ArrayList(this.f29379e);
             Collections.reverse(arrayList);
             return Collections.unmodifiableList(arrayList);
         }
         ArrayList arrayList2 = new ArrayList(0);
-        Iterator descendingIterator = this.f29331e.descendingIterator();
+        Iterator descendingIterator = this.f29379e.descendingIterator();
         while (descendingIterator.hasNext()) {
             a aVar = (a) descendingIterator.next();
-            int i13 = aVar.f29333b;
-            if ((i13 >= i10 && i13 < i11) || (((i12 = aVar.f29334c) <= i11 && i12 > i10) || (i13 < i10 && i12 > i11))) {
+            int i13 = aVar.f29381b;
+            if ((i13 >= i10 && i13 < i11) || (((i12 = aVar.f29382c) <= i11 && i12 > i10) || (i13 < i10 && i12 > i11))) {
                 arrayList2.add(aVar);
             }
         }
@@ -162,50 +162,50 @@ public class t implements Appendable, CharSequence {
     }
 
     public char h() {
-        return this.f29330d.charAt(length() - 1);
+        return this.f29378d.charAt(length() - 1);
     }
 
     public t i(Object obj, int i10, int i11, int i12) {
-        this.f29331e.push(new a(obj, i10, i11, i12));
+        this.f29379e.push(new a(obj, i10, i11, i12));
         return this;
     }
 
     public SpannableStringBuilder l() {
-        b bVar = new b(this.f29330d);
-        for (a aVar : this.f29331e) {
-            bVar.setSpan(aVar.f29332a, aVar.f29333b, aVar.f29334c, aVar.f29335d);
+        b bVar = new b(this.f29378d);
+        for (a aVar : this.f29379e) {
+            bVar.setSpan(aVar.f29380a, aVar.f29381b, aVar.f29382c, aVar.f29383d);
         }
         return bVar;
     }
 
     @Override // java.lang.CharSequence
     public int length() {
-        return this.f29330d.length();
+        return this.f29378d.length();
     }
 
     @Override // java.lang.CharSequence
     public CharSequence subSequence(int i10, int i11) {
         List<a> f10 = f(i10, i11);
         if (f10.isEmpty()) {
-            return this.f29330d.subSequence(i10, i11);
+            return this.f29378d.subSequence(i10, i11);
         }
-        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f29330d.subSequence(i10, i11));
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(this.f29378d.subSequence(i10, i11));
         int length = spannableStringBuilder.length();
         for (a aVar : f10) {
-            int max = Math.max(0, aVar.f29333b - i10);
-            spannableStringBuilder.setSpan(aVar.f29332a, max, Math.min(length, (aVar.f29334c - aVar.f29333b) + max), aVar.f29335d);
+            int max = Math.max(0, aVar.f29381b - i10);
+            spannableStringBuilder.setSpan(aVar.f29380a, max, Math.min(length, (aVar.f29382c - aVar.f29381b) + max), aVar.f29383d);
         }
         return spannableStringBuilder;
     }
 
     @Override // java.lang.CharSequence
     public String toString() {
-        return this.f29330d.toString();
+        return this.f29378d.toString();
     }
 
     public t(CharSequence charSequence) {
-        this.f29331e = new ArrayDeque(8);
-        this.f29330d = new StringBuilder(charSequence);
+        this.f29379e = new ArrayDeque(8);
+        this.f29378d = new StringBuilder(charSequence);
         e(0, charSequence);
     }
 }

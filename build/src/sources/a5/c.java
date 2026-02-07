@@ -35,7 +35,7 @@ public final class c implements h {
             Buffer buffer = new Buffer();
             buffer.write(this.f388a);
             this.f388a.position(0);
-            return new l(u.e(buffer, this.f389b.g()), null, x4.h.f54472e);
+            return new l(u.e(buffer, this.f389b.g()), null, x4.h.f54520e);
         } catch (Throwable th2) {
             this.f388a.position(0);
             throw th2;

@@ -9,10 +9,10 @@ public final class b implements Metadata.b {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f41580d;
+    public final float f41628d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final float f41581e;
+    public final float f41629e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -47,7 +47,7 @@ public final class b implements Metadata.b {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f41580d == bVar.f41580d && this.f41581e == bVar.f41581e) {
+            if (this.f41628d == bVar.f41628d && this.f41629e == bVar.f41629e) {
                 return true;
             }
         }
@@ -55,27 +55,27 @@ public final class b implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((527 + c.a(this.f41580d)) * 31) + c.a(this.f41581e);
+        return ((527 + c.a(this.f41628d)) * 31) + c.a(this.f41629e);
     }
 
     public String toString() {
-        return "xyz: latitude=" + this.f41580d + ", longitude=" + this.f41581e;
+        return "xyz: latitude=" + this.f41628d + ", longitude=" + this.f41629e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeFloat(this.f41580d);
-        parcel.writeFloat(this.f41581e);
+        parcel.writeFloat(this.f41628d);
+        parcel.writeFloat(this.f41629e);
     }
 
     public b(float f10, float f11) {
         ne.a.b(f10 >= -90.0f && f10 <= 90.0f && f11 >= -180.0f && f11 <= 180.0f, "Invalid latitude or longitude");
-        this.f41580d = f10;
-        this.f41581e = f11;
+        this.f41628d = f10;
+        this.f41629e = f11;
     }
 
     private b(Parcel parcel) {
-        this.f41580d = parcel.readFloat();
-        this.f41581e = parcel.readFloat();
+        this.f41628d = parcel.readFloat();
+        this.f41629e = parcel.readFloat();
     }
 }

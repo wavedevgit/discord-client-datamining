@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52975: for (var _fun52975_ip = 0;;) switch (_fun52975_ip) {
+        _fun53420: for (var _fun53420_ip = 0;;) switch (_fun53420_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52975_ip = 35;
-                    continue _fun52975
+                    _fun53420_ip = 35;
+                    continue _fun53420
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52975_ip = 47;
-                    continue _fun52975
+                    _fun53420_ip = 47;
+                    continue _fun53420
                 }
             case 44:
                 var7 = 162;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ShareNitroSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4705, 6376, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6419, 2]);

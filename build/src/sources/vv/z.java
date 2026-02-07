@@ -10,18 +10,18 @@ import vv.s;
 public final class z<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Response f53200a;
+    private final Response f53248a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f53201b;
+    private final Object f53249b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ResponseBody f53202c;
+    private final ResponseBody f53250c;
 
     private z(Response response, Object obj, ResponseBody responseBody) {
-        this.f53200a = response;
-        this.f53201b = obj;
-        this.f53202c = responseBody;
+        this.f53248a = response;
+        this.f53249b = obj;
+        this.f53250c = responseBody;
     }
 
     public static z c(int i10, ResponseBody responseBody) {
@@ -54,30 +54,30 @@ public final class z<T> {
     }
 
     public Object a() {
-        return this.f53201b;
+        return this.f53249b;
     }
 
     public int b() {
-        return this.f53200a.z();
+        return this.f53248a.z();
     }
 
     public ResponseBody e() {
-        return this.f53202c;
+        return this.f53250c;
     }
 
     public Headers f() {
-        return this.f53200a.E0();
+        return this.f53248a.E0();
     }
 
     public boolean g() {
-        return this.f53200a.isSuccessful();
+        return this.f53248a.isSuccessful();
     }
 
     public String h() {
-        return this.f53200a.I0();
+        return this.f53248a.I0();
     }
 
     public String toString() {
-        return this.f53200a.toString();
+        return this.f53248a.toString();
     }
 }

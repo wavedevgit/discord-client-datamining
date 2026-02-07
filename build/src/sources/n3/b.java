@@ -7,28 +7,28 @@ import java.io.PrintWriter;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f38436a;
+    private int f38484a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a f38437b;
+    private a f38485b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Context f38438c;
+    private Context f38486c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f38439d = false;
+    private boolean f38487d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f38440e = false;
+    private boolean f38488e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f38441f = true;
+    private boolean f38489f = true;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f38442g = false;
+    private boolean f38490g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f38443h = false;
+    private boolean f38491h = false;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -36,11 +36,11 @@ public abstract class b {
     }
 
     public b(Context context) {
-        this.f38438c = context.getApplicationContext();
+        this.f38486c = context.getApplicationContext();
     }
 
     public void a() {
-        this.f38440e = true;
+        this.f38488e = true;
         k();
     }
 
@@ -49,7 +49,7 @@ public abstract class b {
     }
 
     public void c() {
-        this.f38443h = false;
+        this.f38491h = false;
     }
 
     public String d(Object obj) {
@@ -67,7 +67,7 @@ public abstract class b {
     }
 
     public void f(Object obj) {
-        a aVar = this.f38437b;
+        a aVar = this.f38485b;
         if (aVar != null) {
             aVar.a(this, obj);
         }
@@ -76,26 +76,26 @@ public abstract class b {
     public void g(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.print(str);
         printWriter.print("mId=");
-        printWriter.print(this.f38436a);
+        printWriter.print(this.f38484a);
         printWriter.print(" mListener=");
-        printWriter.println(this.f38437b);
-        if (this.f38439d || this.f38442g || this.f38443h) {
+        printWriter.println(this.f38485b);
+        if (this.f38487d || this.f38490g || this.f38491h) {
             printWriter.print(str);
             printWriter.print("mStarted=");
-            printWriter.print(this.f38439d);
+            printWriter.print(this.f38487d);
             printWriter.print(" mContentChanged=");
-            printWriter.print(this.f38442g);
+            printWriter.print(this.f38490g);
             printWriter.print(" mProcessingChange=");
-            printWriter.println(this.f38443h);
+            printWriter.println(this.f38491h);
         }
-        if (!this.f38440e && !this.f38441f) {
+        if (!this.f38488e && !this.f38489f) {
             return;
         }
         printWriter.print(str);
         printWriter.print("mAbandoned=");
-        printWriter.print(this.f38440e);
+        printWriter.print(this.f38488e);
         printWriter.print(" mReset=");
-        printWriter.println(this.f38441f);
+        printWriter.println(this.f38489f);
     }
 
     public void h() {
@@ -103,29 +103,29 @@ public abstract class b {
     }
 
     public boolean i() {
-        return this.f38440e;
+        return this.f38488e;
     }
 
     public boolean j() {
-        return this.f38439d;
+        return this.f38487d;
     }
 
     protected abstract boolean l();
 
     public void m() {
-        if (this.f38439d) {
+        if (this.f38487d) {
             h();
         } else {
-            this.f38442g = true;
+            this.f38490g = true;
         }
     }
 
     protected abstract void p();
 
     public void r(int i10, a aVar) {
-        if (this.f38437b == null) {
-            this.f38437b = aVar;
-            this.f38436a = i10;
+        if (this.f38485b == null) {
+            this.f38485b = aVar;
+            this.f38484a = i10;
             return;
         }
         throw new IllegalStateException("There is already a listener registered");
@@ -133,15 +133,15 @@ public abstract class b {
 
     public void s() {
         o();
-        this.f38441f = true;
-        this.f38439d = false;
-        this.f38440e = false;
-        this.f38442g = false;
-        this.f38443h = false;
+        this.f38489f = true;
+        this.f38487d = false;
+        this.f38488e = false;
+        this.f38490g = false;
+        this.f38491h = false;
     }
 
     public void t() {
-        if (this.f38443h) {
+        if (this.f38491h) {
             m();
         }
     }
@@ -153,28 +153,28 @@ public abstract class b {
         sb2.append("{");
         sb2.append(Integer.toHexString(System.identityHashCode(cls)));
         sb2.append(" id=");
-        sb2.append(this.f38436a);
+        sb2.append(this.f38484a);
         sb2.append("}");
         return sb2.toString();
     }
 
     public final void u() {
-        this.f38439d = true;
-        this.f38441f = false;
-        this.f38440e = false;
+        this.f38487d = true;
+        this.f38489f = false;
+        this.f38488e = false;
         p();
     }
 
     public void v() {
-        this.f38439d = false;
+        this.f38487d = false;
         q();
     }
 
     public void w(a aVar) {
-        a aVar2 = this.f38437b;
+        a aVar2 = this.f38485b;
         if (aVar2 != null) {
             if (aVar2 == aVar) {
-                this.f38437b = null;
+                this.f38485b = null;
                 return;
             }
             throw new IllegalArgumentException("Attempting to unregister the wrong listener");

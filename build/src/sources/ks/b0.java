@@ -7,16 +7,16 @@ import ks.w0;
 public class b0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0 f35267d;
+    private final w0 f35315d;
 
     public b0(w0 w0Var) {
-        this.f35267d = w0Var;
+        this.f35315d = w0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         w0.a H;
-        H = w0.H(this.f35267d);
+        H = w0.H(this.f35315d);
         return H;
     }
 }

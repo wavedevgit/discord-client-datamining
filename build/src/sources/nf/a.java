@@ -17,29 +17,29 @@ import pf.c;
 public class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f39673b = new Object();
+    private static final Object f39721b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile a f39674c;
+    private static volatile a f39722c;
 
     /* renamed from: a  reason: collision with root package name */
-    public final ConcurrentHashMap f39675a = new ConcurrentHashMap();
+    public final ConcurrentHashMap f39723a = new ConcurrentHashMap();
 
     private a() {
     }
 
     public static a b() {
-        if (f39674c == null) {
-            synchronized (f39673b) {
+        if (f39722c == null) {
+            synchronized (f39721b) {
                 try {
-                    if (f39674c == null) {
-                        f39674c = new a();
+                    if (f39722c == null) {
+                        f39722c = new a();
                     }
                 } finally {
                 }
             }
         }
-        a aVar = f39674c;
+        a aVar = f39722c;
         q.l(aVar);
         return aVar;
     }
@@ -58,7 +58,7 @@ public class a {
             }
         }
         if (f(serviceConnection)) {
-            ServiceConnection serviceConnection2 = (ServiceConnection) this.f39675a.putIfAbsent(serviceConnection, serviceConnection);
+            ServiceConnection serviceConnection2 = (ServiceConnection) this.f39723a.putIfAbsent(serviceConnection, serviceConnection);
             if (serviceConnection2 != null && serviceConnection != serviceConnection2) {
                 Log.w("ConnectionTracker", String.format("Duplicate binding with the same ServiceConnection: %s, %s, %s.", serviceConnection, str, intent.getAction()));
             }
@@ -69,7 +69,7 @@ public class a {
                 }
                 return h10;
             } finally {
-                this.f39675a.remove(serviceConnection, serviceConnection);
+                this.f39723a.remove(serviceConnection, serviceConnection);
             }
         }
         return h(context, intent, serviceConnection, i10, executor);
@@ -105,13 +105,13 @@ public class a {
 
     public void c(Context context, ServiceConnection serviceConnection) {
         if (f(serviceConnection)) {
-            ConcurrentHashMap concurrentHashMap = this.f39675a;
+            ConcurrentHashMap concurrentHashMap = this.f39723a;
             if (concurrentHashMap.containsKey(serviceConnection)) {
                 try {
                     g(context, (ServiceConnection) concurrentHashMap.get(serviceConnection));
                     return;
                 } finally {
-                    this.f39675a.remove(serviceConnection);
+                    this.f39723a.remove(serviceConnection);
                 }
             }
         }

@@ -3,7 +3,7 @@ package ng;
 public final class al {
 
     /* renamed from: a  reason: collision with root package name */
-    private static al f39701a;
+    private static al f39749a;
 
     private al() {
     }
@@ -12,10 +12,10 @@ public final class al {
         al alVar;
         synchronized (al.class) {
             try {
-                if (f39701a == null) {
-                    f39701a = new al();
+                if (f39749a == null) {
+                    f39749a = new al();
                 }
-                alVar = f39701a;
+                alVar = f39749a;
             } catch (Throwable th2) {
                 throw th2;
             }

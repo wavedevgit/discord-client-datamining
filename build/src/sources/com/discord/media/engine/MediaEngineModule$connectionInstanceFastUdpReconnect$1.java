@@ -47,11 +47,11 @@ final class MediaEngineModule$connectionInstanceFastUdpReconnect$1 extends kotli
             }
         }
         this.this$0.getMediaEngine().connectionInstanceFastUdpReconnect$media_engine_release((int) this.$connectionId);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceFastUdpReconnect$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$connectionInstanceFastUdpReconnect$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

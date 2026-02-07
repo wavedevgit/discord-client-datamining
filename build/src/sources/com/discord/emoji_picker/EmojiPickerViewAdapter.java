@@ -101,25 +101,25 @@ public final class EmojiPickerViewAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setCoreData$lambda$0(EmojiPickerViewAdapter emojiPickerViewAdapter) {
         emojiPickerViewAdapter.onItemsChanged.invoke(null, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setEmojis$lambda$1(EmojiPickerViewAdapter emojiPickerViewAdapter) {
         emojiPickerViewAdapter.onItemsChanged.invoke(null, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSpacerBottomHeight$lambda$3(EmojiPickerViewAdapter emojiPickerViewAdapter, int i10) {
         emojiPickerViewAdapter.onItemsChanged.invoke(Integer.valueOf(i10), null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setSpacerTopHeight$lambda$2(EmojiPickerViewAdapter emojiPickerViewAdapter, int i10) {
         emojiPickerViewAdapter.onItemsChanged.invoke(Integer.valueOf(i10), null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final int findFirstItemPositionAboveOrBelowPosition(int i10, int i11) {

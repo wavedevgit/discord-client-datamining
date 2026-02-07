@@ -40,7 +40,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$3 extends k imple
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(MediaPlayerManager.PlaybackProgress playbackProgress, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(playbackProgress, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(playbackProgress, continuation)).invokeSuspend(Unit.f32056a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -50,7 +50,7 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$3 extends k imple
                 kotlin.c.b(obj);
                 MediaPlayerManager.PlaybackProgress playbackProgress = (MediaPlayerManager.PlaybackProgress) this.L$0;
                 this.this$0.onMediaPlayerPlaybackProgress(playbackProgress.getSource(), playbackProgress.getTimeMs(), playbackProgress.getDurationMs());
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -87,11 +87,11 @@ final class MediaPlayerManagerModule$subscribeToPlaybackEvents$3 extends k imple
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaPlayerManagerModule$subscribeToPlaybackEvents$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

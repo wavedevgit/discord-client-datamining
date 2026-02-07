@@ -10,45 +10,45 @@ import kotlin.jvm.internal.TypeIntrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f50765a;
+    private Object f50813a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Method f50766b;
+    private Method f50814b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Method f50767c;
+    private Method f50815c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Method f50768d;
+    private Method f50816d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Method f50769e;
+    private Method f50817e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Method f50770f;
+    private Method f50818f;
 
     public h(ReactApplicationContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         try {
             StatusBarModule.Companion companion = StatusBarModule.Companion;
-            this.f50765a = StatusBarModule.class.getConstructor(ReactApplicationContext.class).newInstance(reactContext);
+            this.f50813a = StatusBarModule.class.getConstructor(ReactApplicationContext.class).newInstance(reactContext);
             Class cls = Boolean.TYPE;
-            this.f50766b = StatusBarModule.class.getMethod("setHidden", cls);
-            this.f50767c = StatusBarModule.class.getMethod("setColor", Double.TYPE, cls);
-            this.f50768d = StatusBarModule.class.getMethod("setTranslucent", cls);
-            this.f50769e = StatusBarModule.class.getMethod("setStyle", String.class);
-            this.f50770f = StatusBarModule.class.getMethod("getConstants", null);
+            this.f50814b = StatusBarModule.class.getMethod("setHidden", cls);
+            this.f50815c = StatusBarModule.class.getMethod("setColor", Double.TYPE, cls);
+            this.f50816d = StatusBarModule.class.getMethod("setTranslucent", cls);
+            this.f50817e = StatusBarModule.class.getMethod("setStyle", String.class);
+            this.f50818f = StatusBarModule.class.getMethod("getConstants", null);
         } catch (Exception e10) {
-            pm.a.f45061a.e(i.a(), "Failed to initialize StatusBarModule via reflection", e10);
+            pm.a.f45109a.e(i.a(), "Failed to initialize StatusBarModule via reflection", e10);
         }
     }
 
     public final Map a() {
         Object obj;
         try {
-            Method method = this.f50770f;
+            Method method = this.f50818f;
             if (method != null) {
-                obj = method.invoke(this.f50765a, null);
+                obj = method.invoke(this.f50813a, null);
             } else {
                 obj = null;
             }
@@ -57,42 +57,42 @@ public final class h {
             }
             return (Map) obj;
         } catch (Exception e10) {
-            pm.a.f45061a.e(i.a(), "Error invoking StatusBarModule.getConstants method", e10);
+            pm.a.f45109a.e(i.a(), "Error invoking StatusBarModule.getConstants method", e10);
             return null;
         }
     }
 
     public final void b(double d10, boolean z10) {
         try {
-            Method method = this.f50767c;
+            Method method = this.f50815c;
             if (method != null) {
-                method.invoke(this.f50765a, Double.valueOf(d10), Boolean.valueOf(z10));
+                method.invoke(this.f50813a, Double.valueOf(d10), Boolean.valueOf(z10));
             }
         } catch (Exception e10) {
-            pm.a.f45061a.e(i.a(), "Error invoking StatusBarModule.setColor method", e10);
+            pm.a.f45109a.e(i.a(), "Error invoking StatusBarModule.setColor method", e10);
         }
     }
 
     public final void c(String style) {
         Intrinsics.checkNotNullParameter(style, "style");
         try {
-            Method method = this.f50769e;
+            Method method = this.f50817e;
             if (method != null) {
-                method.invoke(this.f50765a, style);
+                method.invoke(this.f50813a, style);
             }
         } catch (Exception e10) {
-            pm.a.f45061a.e(i.a(), "Error invoking StatusBarModule.setStyle method", e10);
+            pm.a.f45109a.e(i.a(), "Error invoking StatusBarModule.setStyle method", e10);
         }
     }
 
     public final void d(boolean z10) {
         try {
-            Method method = this.f50768d;
+            Method method = this.f50816d;
             if (method != null) {
-                method.invoke(this.f50765a, Boolean.valueOf(z10));
+                method.invoke(this.f50813a, Boolean.valueOf(z10));
             }
         } catch (Exception e10) {
-            pm.a.f45061a.e(i.a(), "Error invoking StatusBarModule.setTranslucent method", e10);
+            pm.a.f45109a.e(i.a(), "Error invoking StatusBarModule.setTranslucent method", e10);
         }
     }
 }

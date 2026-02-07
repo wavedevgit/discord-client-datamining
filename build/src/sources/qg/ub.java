@@ -5,7 +5,7 @@ import yi.c;
 final class ub implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ub f47568a = new ub();
+    static final ub f47616a = new ub();
 
     static {
         c.b a10 = yi.c.a("detectionType");

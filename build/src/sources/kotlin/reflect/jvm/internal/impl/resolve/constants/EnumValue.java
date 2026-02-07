@@ -20,23 +20,23 @@ import qr.v;
 public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? extends Name>> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ClassId f34137b;
+    private final ClassId f34185b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Name f34138c;
+    private final Name f34186c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public EnumValue(@NotNull ClassId enumClassId, @NotNull Name enumEntryName) {
         super(v.a(enumClassId, enumEntryName));
         Intrinsics.checkNotNullParameter(enumClassId, "enumClassId");
         Intrinsics.checkNotNullParameter(enumEntryName, "enumEntryName");
-        this.f34137b = enumClassId;
-        this.f34138c = enumEntryName;
+        this.f34185b = enumClassId;
+        this.f34186c = enumEntryName;
     }
 
     @NotNull
     public final Name getEnumEntryName() {
-        return this.f34138c;
+        return this.f34186c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
@@ -44,7 +44,7 @@ public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? ext
     public KotlinType getType(@NotNull ModuleDescriptor module) {
         SimpleType defaultType;
         Intrinsics.checkNotNullParameter(module, "module");
-        ClassDescriptor findClassAcrossModuleDependencies = FindClassInModuleKt.findClassAcrossModuleDependencies(module, this.f34137b);
+        ClassDescriptor findClassAcrossModuleDependencies = FindClassInModuleKt.findClassAcrossModuleDependencies(module, this.f34185b);
         if (findClassAcrossModuleDependencies != null) {
             if (!DescriptorUtils.isEnumClass(findClassAcrossModuleDependencies)) {
                 findClassAcrossModuleDependencies = null;
@@ -53,16 +53,16 @@ public final class EnumValue extends ConstantValue<Pair<? extends ClassId, ? ext
                 return defaultType;
             }
         }
-        return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_ENUM_TYPE, this.f34137b.toString(), this.f34138c.toString());
+        return ErrorUtils.createErrorType(ErrorTypeKind.ERROR_ENUM_TYPE, this.f34185b.toString(), this.f34186c.toString());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.constants.ConstantValue
     @NotNull
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f34137b.getShortClassName());
+        sb2.append(this.f34185b.getShortClassName());
         sb2.append('.');
-        sb2.append(this.f34138c);
+        sb2.append(this.f34186c);
         return sb2.toString();
     }
 }

@@ -47,8 +47,8 @@ public /* synthetic */ class MediaAttachmentPlaybackEndedData$$serializer implem
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        g0 g0Var = g0.f31001a;
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, g0Var, g0Var, UserId$$serializer.INSTANCE, g0Var, h.f31005a, n2.f31041a};
+        g0 g0Var = g0.f31049a;
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, g0Var, g0Var, UserId$$serializer.INSTANCE, g0Var, h.f31053a, n2.f31089a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

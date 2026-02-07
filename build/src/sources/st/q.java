@@ -3,16 +3,16 @@ package st;
 final class q implements rt.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f50208a;
+    private final String f50256a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f50209b;
+    private final Class f50257b;
 
     private q(String str, Class cls) {
         if (str != null) {
             if (cls != null) {
-                this.f50208a = str;
-                this.f50209b = cls;
+                this.f50256a = str;
+                this.f50257b = cls;
                 return;
             }
             throw new NullPointerException("Missing type of attribute.");
@@ -31,7 +31,7 @@ final class q implements rt.c {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f50208a.equals(qVar.f50208a) && this.f50209b.equals(qVar.f50209b)) {
+            if (this.f50256a.equals(qVar.f50256a) && this.f50257b.equals(qVar.f50257b)) {
                 return true;
             }
         }
@@ -39,20 +39,20 @@ final class q implements rt.c {
     }
 
     public int hashCode() {
-        return this.f50208a.hashCode();
+        return this.f50256a.hashCode();
     }
 
     @Override // rt.c
     public String name() {
-        return this.f50208a;
+        return this.f50256a;
     }
 
     public String toString() {
-        return this.f50209b.getName() + "@" + this.f50208a;
+        return this.f50257b.getName() + "@" + this.f50256a;
     }
 
     @Override // rt.c
     public Class type() {
-        return this.f50209b;
+        return this.f50257b;
     }
 }

@@ -9,59 +9,59 @@ import java.util.concurrent.ConcurrentMap;
 public final class n implements h {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final net.time4j.tz.p f51033t = net.time4j.tz.p.t(64800);
+    private static final net.time4j.tz.p f51081t = net.time4j.tz.p.t(64800);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final ConcurrentMap f51034u = new ConcurrentHashMap();
+    private static final ConcurrentMap f51082u = new ConcurrentHashMap();
 
     /* renamed from: v  reason: collision with root package name */
-    private static final ConcurrentMap f51035v = new ConcurrentHashMap();
+    private static final ConcurrentMap f51083v = new ConcurrentHashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f51036d;
+    private final boolean f51084d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f51037e;
+    private final boolean f51085e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f51038i;
+    private final boolean f51086i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Locale f51039o;
+    private final Locale f51087o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f51040p;
+    private final String f51088p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f51041q;
+    private final String f51089q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final char f51042r;
+    private final char f51090r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final st.g f51043s;
+    private final st.g f51091s;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f51044a;
+        private final String f51092a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f51045b;
+        private final String f51093b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f51046c;
+        private final int f51094c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f51047d;
+        private final int f51095d;
 
         a(String str, String str2, int i10, int i11) {
-            this.f51044a = str;
-            this.f51045b = str2;
-            this.f51046c = i10;
-            this.f51047d = i11;
+            this.f51092a = str;
+            this.f51093b = str2;
+            this.f51094c = i10;
+            this.f51095d = i11;
         }
     }
 
@@ -78,10 +78,10 @@ public final class n implements h {
     }
 
     private static String c(Locale locale) {
-        ConcurrentMap concurrentMap = f51034u;
+        ConcurrentMap concurrentMap = f51082u;
         String str = (String) concurrentMap.get(locale);
         if (str == null) {
-            str = net.time4j.tz.p.f39641v.q(locale);
+            str = net.time4j.tz.p.f39689v.q(locale);
             String str2 = (String) concurrentMap.putIfAbsent(locale, str);
             if (str2 != null) {
                 return str2;
@@ -91,7 +91,7 @@ public final class n implements h {
     }
 
     private static net.time4j.tz.p h(rt.o oVar, rt.d dVar) {
-        rt.c cVar = st.a.f50113d;
+        rt.c cVar = st.a.f50161d;
         if (dVar.c(cVar)) {
             net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.a(cVar);
             if (kVar instanceof net.time4j.tz.p) {
@@ -102,16 +102,16 @@ public final class n implements h {
     }
 
     private static a i(Locale locale) {
-        a aVar = (a) f51035v.get(locale);
+        a aVar = (a) f51083v.get(locale);
         if (aVar == null) {
-            String q10 = f51033t.q(locale);
+            String q10 = f51081t.q(locale);
             int length = q10.length();
             for (int i10 = 0; i10 < length; i10++) {
                 if (q10.charAt(i10) == 177) {
                     int indexOf = q10.indexOf("hh", i10) + 2;
                     int indexOf2 = q10.indexOf("mm", indexOf);
                     a aVar2 = new a(q10, q10.substring(indexOf, indexOf2), i10, indexOf2 + 2);
-                    a aVar3 = (a) f51035v.putIfAbsent(locale, aVar2);
+                    a aVar3 = (a) f51083v.putIfAbsent(locale, aVar2);
                     if (aVar3 == null) {
                         return aVar2;
                     }
@@ -200,38 +200,38 @@ public final class n implements h {
             return;
         }
         if (z10) {
-            locale = nVar.f51039o;
+            locale = nVar.f51087o;
         } else {
-            locale = (Locale) dVar2.b(st.a.f50112c, Locale.ROOT);
+            locale = (Locale) dVar2.b(st.a.f50160c, Locale.ROOT);
         }
         boolean q10 = st.b.q(locale);
         if (z10) {
-            booleanValue = nVar.f51038i;
+            booleanValue = nVar.f51086i;
         } else {
-            booleanValue = ((Boolean) dVar2.b(st.a.f50123n, Boolean.FALSE)).booleanValue();
+            booleanValue = ((Boolean) dVar2.b(st.a.f50171n, Boolean.FALSE)).booleanValue();
         }
         if (z10) {
-            booleanValue2 = nVar.f51037e;
+            booleanValue2 = nVar.f51085e;
         } else {
-            booleanValue2 = ((Boolean) dVar2.b(st.a.f50118i, Boolean.TRUE)).booleanValue();
+            booleanValue2 = ((Boolean) dVar2.b(st.a.f50166i, Boolean.TRUE)).booleanValue();
         }
         if (z10) {
-            charValue = nVar.f51042r;
+            charValue = nVar.f51090r;
         } else {
-            charValue = ((Character) dVar2.b(st.a.f50122m, '0')).charValue();
+            charValue = ((Character) dVar2.b(st.a.f50170m, '0')).charValue();
         }
         if (z10) {
-            str = nVar.f51040p;
+            str = nVar.f51088p;
         } else {
-            str = (String) dVar2.b(b.f50880g, "+");
+            str = (String) dVar2.b(b.f50928g, "+");
         }
         if (z10) {
-            str2 = nVar.f51041q;
+            str2 = nVar.f51089q;
         } else {
-            str2 = (String) dVar2.b(b.f50881h, "-");
+            str2 = (String) dVar2.b(b.f50929h, "-");
         }
         a i13 = i(locale);
-        int length2 = i13.f51044a.length();
+        int length2 = i13.f51092a.length();
         int i14 = 0;
         boolean z11 = booleanValue;
         net.time4j.tz.p pVar = null;
@@ -239,8 +239,8 @@ public final class n implements h {
         int i16 = 0;
         while (i16 < length2) {
             int i17 = length2;
-            char charAt = i13.f51044a.charAt(i16);
-            if (i13.f51046c > i16 || i13.f51047d <= i16) {
+            char charAt = i13.f51092a.charAt(i16);
+            if (i13.f51094c > i16 || i13.f51095d <= i16) {
                 str3 = str;
                 str4 = str2;
                 if (z11) {
@@ -256,7 +256,7 @@ public final class n implements h {
                     } else {
                         int l10 = l(charSequence, length, f10, locale, booleanValue2);
                         if (l10 > 0) {
-                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39641v);
+                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39689v);
                             sVar.l(f10 + l10);
                             return;
                         }
@@ -273,7 +273,7 @@ public final class n implements h {
                             i14 = l(charSequence, length, f10, locale, booleanValue2);
                         }
                         if (i14 > 0) {
-                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39641v);
+                            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39689v);
                             sVar.l(f10 + i14);
                             return;
                         }
@@ -299,7 +299,7 @@ public final class n implements h {
                     i10 = i18 + 2;
                 }
                 if (i10 >= length) {
-                    if (nVar.f51036d) {
+                    if (nVar.f51084d) {
                         tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.r(fVar2, j10));
                         sVar.l(i10);
                         return;
@@ -308,16 +308,16 @@ public final class n implements h {
                     return;
                 }
                 if (z10) {
-                    gVar = nVar.f51043s;
+                    gVar = nVar.f51091s;
                     str4 = str2;
                 } else {
                     str4 = str2;
-                    gVar = (st.g) dVar2.b(st.a.f50115f, st.g.SMART);
+                    gVar = (st.g) dVar2.b(st.a.f50163f, st.g.SMART);
                 }
-                int m12 = m.m(charSequence, i10, i13.f51045b, booleanValue2, q10);
+                int m12 = m.m(charSequence, i10, i13.f51093b, booleanValue2, q10);
                 if (m12 != -1) {
                     i10 += m12;
-                } else if (nVar.f51036d) {
+                } else if (nVar.f51084d) {
                     tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.r(fVar2, j10));
                     sVar.l(i10);
                     return;
@@ -331,7 +331,7 @@ public final class n implements h {
                     return;
                 }
                 i15 = i10 + 2;
-                if (i15 < length && (m10 = m.m(charSequence, i15, i13.f51045b, booleanValue2, q10)) != -1) {
+                if (i15 < length && (m10 = m.m(charSequence, i15, i13.f51093b, booleanValue2, q10)) != -1) {
                     int i19 = i15 + m10;
                     i12 = k(charSequence, i19, charValue);
                     i11 = -1000;
@@ -353,7 +353,7 @@ public final class n implements h {
                 } else {
                     s10 = net.time4j.tz.p.s(fVar2, j10, k10);
                 }
-                i16 = i13.f51047d - 1;
+                i16 = i13.f51095d - 1;
                 pVar = s10;
             }
             i16++;
@@ -373,14 +373,14 @@ public final class n implements h {
 
     @Override // tt.h
     public h e(c cVar, rt.d dVar, int i10) {
-        return new n(this.f51036d, ((Boolean) dVar.b(st.a.f50118i, Boolean.TRUE)).booleanValue(), ((Boolean) dVar.b(st.a.f50123n, Boolean.FALSE)).booleanValue(), (Locale) dVar.b(st.a.f50112c, Locale.ROOT), (String) dVar.b(b.f50880g, "+"), (String) dVar.b(b.f50881h, "-"), ((Character) dVar.b(st.a.f50122m, '0')).charValue(), (st.g) dVar.b(st.a.f50115f, st.g.SMART));
+        return new n(this.f51084d, ((Boolean) dVar.b(st.a.f50166i, Boolean.TRUE)).booleanValue(), ((Boolean) dVar.b(st.a.f50171n, Boolean.FALSE)).booleanValue(), (Locale) dVar.b(st.a.f50160c, Locale.ROOT), (String) dVar.b(b.f50928g, "+"), (String) dVar.b(b.f50929h, "-"), ((Character) dVar.b(st.a.f50170m, '0')).charValue(), (st.g) dVar.b(st.a.f50163f, st.g.SMART));
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof n) && this.f51036d == ((n) obj).f51036d) {
+        if ((obj instanceof n) && this.f51084d == ((n) obj).f51084d) {
             return true;
         }
         return false;
@@ -419,30 +419,30 @@ public final class n implements h {
             throw new IllegalArgumentException("Cannot extract timezone offset from: " + oVar);
         }
         if (z10) {
-            locale = this.f51039o;
+            locale = this.f51087o;
         } else {
-            locale = (Locale) dVar.b(st.a.f50112c, Locale.ROOT);
+            locale = (Locale) dVar.b(st.a.f50160c, Locale.ROOT);
         }
         char c10 = '0';
         if (z10) {
-            charValue = this.f51042r;
+            charValue = this.f51090r;
         } else {
-            charValue = ((Character) dVar.b(st.a.f50122m, '0')).charValue();
+            charValue = ((Character) dVar.b(st.a.f50170m, '0')).charValue();
         }
         if (z10) {
-            str = this.f51040p;
+            str = this.f51088p;
         } else {
-            str = (String) dVar.b(b.f50880g, "+");
+            str = (String) dVar.b(b.f50928g, "+");
         }
         if (z10) {
-            str2 = this.f51041q;
+            str2 = this.f51089q;
         } else {
-            str2 = (String) dVar.b(b.f50881h, "-");
+            str2 = (String) dVar.b(b.f50929h, "-");
         }
         if (z10) {
-            booleanValue = this.f51038i;
+            booleanValue = this.f51086i;
         } else {
-            booleanValue = ((Boolean) dVar.b(st.a.f50123n, Boolean.FALSE)).booleanValue();
+            booleanValue = ((Boolean) dVar.b(st.a.f50171n, Boolean.FALSE)).booleanValue();
         }
         int m10 = B.m();
         int k10 = B.k();
@@ -452,13 +452,13 @@ public final class n implements h {
             i11 = c11.length();
         } else {
             a i12 = i(locale);
-            int length2 = i12.f51044a.length();
+            int length2 = i12.f51092a.length();
             int i13 = 0;
             int i14 = 0;
             while (i14 < length2) {
                 char c12 = c10;
-                char charAt = i12.f51044a.charAt(i14);
-                if (i12.f51046c > i14 || i12.f51047d <= i14) {
+                char charAt = i12.f51092a.charAt(i14);
+                if (i12.f51094c > i14 || i12.f51095d <= i14) {
                     pVar = B;
                     if (!booleanValue) {
                         appendable.append(charAt);
@@ -476,7 +476,7 @@ public final class n implements h {
                     int h10 = B.h();
                     int i15 = B.i();
                     int j10 = B.j();
-                    if (h10 < 10 && !this.f51036d) {
+                    if (h10 < 10 && !this.f51084d) {
                         appendable.append(charValue);
                         i13++;
                     }
@@ -486,9 +486,9 @@ public final class n implements h {
                         appendable.append((char) ((valueOf.charAt(i16) - '0') + charValue));
                         i13++;
                     }
-                    if (i15 != 0 || j10 != 0 || !this.f51036d) {
-                        appendable.append(i12.f51045b);
-                        i13 += i12.f51045b.length();
+                    if (i15 != 0 || j10 != 0 || !this.f51084d) {
+                        appendable.append(i12.f51093b);
+                        i13 += i12.f51093b.length();
                         if (i15 < 10) {
                             appendable.append(charValue);
                             i13++;
@@ -499,8 +499,8 @@ public final class n implements h {
                             i13++;
                         }
                         if (j10 != 0) {
-                            appendable.append(i12.f51045b);
-                            i13 += i12.f51045b.length();
+                            appendable.append(i12.f51093b);
+                            i13 += i12.f51093b.length();
                             if (j10 < 10) {
                                 appendable.append(charValue);
                                 i13++;
@@ -512,7 +512,7 @@ public final class n implements h {
                             }
                         }
                     }
-                    i14 = i12.f51047d - 1;
+                    i14 = i12.f51095d - 1;
                 }
                 i14++;
                 c10 = c12;
@@ -537,27 +537,27 @@ public final class n implements h {
     }
 
     public int hashCode() {
-        return this.f51036d ? 1 : 0;
+        return this.f51084d ? 1 : 0;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(n.class.getName());
         sb2.append("[abbreviated=");
-        sb2.append(this.f51036d);
+        sb2.append(this.f51084d);
         sb2.append(']');
         return sb2.toString();
     }
 
     private n(boolean z10, boolean z11, boolean z12, Locale locale, String str, String str2, char c10, st.g gVar) {
-        this.f51036d = z10;
-        this.f51037e = z11;
-        this.f51038i = z12;
-        this.f51039o = locale;
-        this.f51040p = str;
-        this.f51041q = str2;
-        this.f51042r = c10;
-        this.f51043s = gVar;
+        this.f51084d = z10;
+        this.f51085e = z11;
+        this.f51086i = z12;
+        this.f51087o = locale;
+        this.f51088p = str;
+        this.f51089q = str2;
+        this.f51090r = c10;
+        this.f51091s = gVar;
     }
 
     @Override // tt.h

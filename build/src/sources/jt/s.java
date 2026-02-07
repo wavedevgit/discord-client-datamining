@@ -12,7 +12,7 @@ import kotlinx.serialization.encoding.c;
 public abstract class s extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f31072a;
+    private final KSerializer f31120a;
 
     public /* synthetic */ s(KSerializer kSerializer, DefaultConstructorMarker defaultConstructorMarker) {
         this(kSerializer);
@@ -36,7 +36,7 @@ public abstract class s extends a {
     @Override // jt.a
     protected void h(kotlinx.serialization.encoding.c decoder, int i10, Object obj, boolean z10) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
-        n(obj, i10, c.a.c(decoder, getDescriptor(), i10, this.f31072a, null, 8, null));
+        n(obj, i10, c.a.c(decoder, getDescriptor(), i10, this.f31120a, null, 8, null));
     }
 
     protected abstract void n(Object obj, int i10, Object obj2);
@@ -49,13 +49,13 @@ public abstract class s extends a {
         CompositeEncoder h10 = encoder.h(descriptor, e10);
         Iterator d10 = d(obj);
         for (int i10 = 0; i10 < e10; i10++) {
-            h10.s(getDescriptor(), i10, this.f31072a, d10.next());
+            h10.s(getDescriptor(), i10, this.f31120a, d10.next());
         }
         h10.c(descriptor);
     }
 
     private s(KSerializer kSerializer) {
         super(null);
-        this.f31072a = kSerializer;
+        this.f31120a = kSerializer;
     }
 }

@@ -1,154 +1,97 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var3 = metroImportDefault;
     var2 = exports;
-    var4 = dependencyMap;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var1 = {};
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
     var0 = 0;
-    var1 = var4[var0];
+    var4 = var3[var0];
+    var3 = require;
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.FlashList = var1;
-    var1 = 1;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.FlashListProps;
-    var2.FlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ContentStyle;
-    var2.ContentStyle = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItem;
-    var2.ListRenderItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItemInfo;
-    var2.ListRenderItemInfo = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.RenderTarget;
-    var2.RenderTarget = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.RenderTargetOptions;
-    var2.RenderTargetOptions = var1;
-    var1 = 2;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useOnNativeBlankAreaEvents;
-    var2.useOnNativeBlankAreaEvents = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaEventHandler;
-    var2.BlankAreaEventHandler = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaEvent;
-    var2.BlankAreaEvent = var1;
-    var1 = 3;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBenchmark;
-    var2.useBenchmark = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BenchmarkParams;
-    var2.BenchmarkParams = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BenchmarkResult;
-    var2.BenchmarkResult = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.useDataMultiplier;
-    var2.useDataMultiplier = var1;
-    var1 = 5;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useFlatListBenchmark;
-    var2.useFlatListBenchmark = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.FlatListBenchmarkParams;
-    var2.FlatListBenchmarkParams = var1;
-    var1 = 6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBlankAreaTracker;
-    var2.useBlankAreaTracker = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaTrackerResult;
-    var2.BlankAreaTrackerResult = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaTrackerConfig;
-    var2.BlankAreaTrackerConfig = var1;
-    var1 = 7;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashList;
-    var2.MasonryFlashList = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListProps;
-    var2.MasonryFlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListScrollEvent;
-    var2.MasonryFlashListScrollEvent = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListRef;
-    var2.MasonryFlashListRef = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListItem;
-    var2.MasonryListItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListRenderItem;
-    var2.MasonryListRenderItem = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.MasonryListRenderItemInfo;
-    var2.MasonryListRenderItemInfo = var1;
-    var1 = 8;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.JSFPSMonitor;
-    var2.JSFPSMonitor = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.JSFPSResult;
-    var2.JSFPSResult = var1;
-    var1 = 9;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.autoScroll;
-    var2.autoScroll = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.Cancellable;
-    var2.Cancellable = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.ViewToken = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.CellContainer = var1;
+    var3 = var3.bind(var0)(var4);
+    var3 = var3.Platform;
+    var1 = function() {
+        _fun45600: for (var _fun45600_ip = 0;;) switch (_fun45600_ip) {
+            case 0:
+                var5 = undefined;
+                var9 = undefined;
+                var6 = undefined;
+                var4 = undefined;
+                var3 = undefined;
+                var1 = _closure1_slot1;
+                if (!(var5 === var1)) {
+                    _fun45600_ip = 128;
+                    continue _fun45600
+                }
+            case 21: // try_start_0
+                var1 = global;
+                var8 = var1.Boolean;
+                var2 = _closure1_slot0;
+                var9 = var2;
+                var7 = null;
+                var10 = var7 == var2;
+                var2 = undefined;
+                if (var10) {
+                    _fun45600_ip = 53;
+                    continue _fun45600
+                }
+            case 47:
+                var2 = var9.nativeFabricUIManager;
+            case 53:
+                var4 = var8.bind(var5)(var2);
+                var2 = var1.Boolean;
+                var1 = _closure1_slot0;
+                var6 = var1;
+                var7 = var7 == var1;
+                var1 = undefined;
+                if (var7) {
+                    _fun45600_ip = 86;
+                    continue _fun45600
+                }
+            case 80:
+                var1 = var6.__turboModuleProxy;
+            case 86:
+                var3 = var2.bind(var5)(var1);
+                var2 = var4;
+                if (var4) {
+                    _fun45600_ip = 100;
+                    continue _fun45600
+                }
+            case 97:
+                var2 = var3;
+            case 100:
+                var1 = var2;
+                if (var2) {
+                    _fun45600_ip = 108;
+                    continue _fun45600
+                }
+            case 106:
+                var1 = false;
+            case 108:
+                var _closure1_slot1 = var1;
+            case 112: // try_end0
+                _fun45600_ip = 122;
+                continue _fun45600;
+            case 114: // catch_target0
+                CatchBlockStart(arg_register = 1);
+                var1 = true;
+                _closure1_slot1 = var1;
+            case 122:
+                var1 = _closure1_slot1;
+                return var1;
+            case 128:
+                var0 = _closure1_slot1;
+                return var0;
+        }
+    };
+    var2.isNewArch = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5102, 5119, 5116, 5179, 5188, 5189, 5184, 5190, 5186, 5185, 5191, 5118]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

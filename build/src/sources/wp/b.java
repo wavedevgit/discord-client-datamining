@@ -6,10 +6,10 @@ import br.g;
 public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f54051a;
+    private final a f54099a;
 
     public b(a aVar) {
-        this.f54051a = aVar;
+        this.f54099a = aVar;
     }
 
     public static b a(a aVar) {
@@ -23,6 +23,6 @@ public final class b implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public c get() {
-        return c(this.f54051a);
+        return c(this.f54099a);
     }
 }

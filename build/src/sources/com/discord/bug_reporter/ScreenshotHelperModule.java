@@ -60,7 +60,7 @@ public final class ScreenshotHelperModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$0(ScreenshotHelperModule screenshotHelperModule) {
         screenshotHelperModule.reactEvents.emitModuleEvent(screenshotHelperModule.reactContext, new ScreenshotTakenEvent());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @ReactMethod

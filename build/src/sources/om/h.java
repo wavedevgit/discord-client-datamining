@@ -3,9 +3,9 @@ package om;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final km.b f43250a = new km.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
+    private static final km.b f43298a = new km.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
 
     public static final km.b a() {
-        return f43250a;
+        return f43298a;
     }
 }

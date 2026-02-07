@@ -86,8 +86,8 @@ public final class R {
         public static int ic_swipe_edit = 0x7f0802ad;
         public static int ic_swipe_reply = 0x7f0802ae;
         public static int ic_unknown_game_icon_16dp = 0x7f0802b0;
-        public static int premium_tier2_gradient = 0x7f08073a;
-        public static int rounded_pill_background = 0x7f080740;
+        public static int premium_tier2_gradient = 0x7f080735;
+        public static int rounded_pill_background = 0x7f08073b;
 
         private drawable() {
         }

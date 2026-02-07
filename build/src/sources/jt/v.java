@@ -14,15 +14,15 @@ import kotlinx.serialization.KSerializer;
 final class v implements s1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function2 f31085a;
+    private final Function2 f31133a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentHashMap f31086b;
+    private final ConcurrentHashMap f31134b;
 
     public v(Function2 compute) {
         Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f31085a = compute;
-        this.f31086b = new ConcurrentHashMap();
+        this.f31133a = compute;
+        this.f31134b = new ConcurrentHashMap();
     }
 
     @Override // jt.s1
@@ -32,7 +32,7 @@ final class v implements s1 {
         Object putIfAbsent;
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(types, "types");
-        ConcurrentHashMap concurrentHashMap2 = this.f31086b;
+        ConcurrentHashMap concurrentHashMap2 = this.f31134b;
         Class b11 = ds.a.b(key);
         Object obj = concurrentHashMap2.get(b11);
         if (obj == null && (putIfAbsent = concurrentHashMap2.putIfAbsent(b11, (obj = new r1()))) != null) {
@@ -44,14 +44,14 @@ final class v implements s1 {
         for (KType kType : list) {
             arrayList.add(new r0(kType));
         }
-        concurrentHashMap = r1Var.f31070a;
+        concurrentHashMap = r1Var.f31118a;
         Object obj2 = concurrentHashMap.get(arrayList);
         if (obj2 == null) {
             try {
-                Result.a aVar = Result.f32005e;
-                b10 = Result.b((KSerializer) this.f31085a.invoke(key, types));
+                Result.a aVar = Result.f32053e;
+                b10 = Result.b((KSerializer) this.f31133a.invoke(key, types));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32005e;
+                Result.a aVar2 = Result.f32053e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             Result a10 = Result.a(b10);

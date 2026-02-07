@@ -5,11 +5,11 @@ import android.graphics.Bitmap;
 public abstract /* synthetic */ class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int[] f25549a;
+    public static final /* synthetic */ int[] f25597a;
 
     static {
         int[] iArr = new int[Bitmap.CompressFormat.values().length];
-        f25549a = iArr;
+        f25597a = iArr;
         iArr[Bitmap.CompressFormat.PNG.ordinal()] = 1;
         iArr[Bitmap.CompressFormat.WEBP.ordinal()] = 2;
     }

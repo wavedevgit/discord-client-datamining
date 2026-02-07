@@ -50,7 +50,7 @@ public final class RenderableEmojiKt {
 
     public static final Unit renderEmoji$lambda$2(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final void renderEmojiInto(@NotNull DraweeSpanStringBuilder builder, @NotNull RenderableEmoji emoji, @NotNull Context context, int i10, boolean z10, int i11, @NotNull Function1<? super GenericDraweeHierarchyBuilder, Unit> additionalBuilderActions) {
@@ -62,7 +62,7 @@ public final class RenderableEmojiKt {
         RenderableEmoji.Unicode unicode = emoji instanceof RenderableEmoji.Unicode ? (RenderableEmoji.Unicode) emoji : null;
         if (unicode == null || (exception = unicode.getException()) == null || builder.append((CharSequence) exception) == null) {
             renderEmojiInto(builder, emoji.getUrl(z10, i10), emoji.getContentDescription(), context, i10, z10, i11, additionalBuilderActions);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -86,12 +86,12 @@ public final class RenderableEmojiKt {
 
     public static final Unit renderEmojiInto$lambda$0(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit renderEmojiInto$lambda$4(GenericDraweeHierarchyBuilder genericDraweeHierarchyBuilder) {
         Intrinsics.checkNotNullParameter(genericDraweeHierarchyBuilder, "<this>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final void renderEmojiInto(DraweeSpanStringBuilder draweeSpanStringBuilder, String str, String str2, Context context, int i10, boolean z10, int i11, Function1<? super GenericDraweeHierarchyBuilder, Unit> function1) {

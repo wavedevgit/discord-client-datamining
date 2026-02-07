@@ -1,756 +1,851 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var4 = metroImportDefault;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
+    var5 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
     var3 = {};
-    var1 = "function pnpm_springTs1(toValue,userConfig,callback){const{defineAnimation,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,getReduceMotionForAnimation}=this.__closure;return defineAnimation(toValue,function(){'worklet';const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!(userConfig!==null&&userConfig!==void 0&&userConfig.duration||userConfig!==null&&userConfig!==void 0&&userConfig.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(now-lastTimestamp,64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}";
-    var3.code = var1;
-    var1 = {};
-    var4 = 'function pnpm_springTs2(){const{userConfig,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig,_userConfig2;const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!((_userConfig=userConfig)!==null&&_userConfig!==void 0&&_userConfig.duration||(_userConfig2=userConfig)!==null&&_userConfig2!==void 0&&_userConfig2.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(now-lastTimestamp,64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}';
-    var1.code = var4;
-    var _closure1_slot2 = var1;
-    var1 = function arg0, arg1, arg2() {
-        var3 = arg0;
-        var11 = arg1;
-        var10 = arg2;
-        var _closure2_slot0 = var3;
-        var _closure2_slot1 = var11;
-        var _closure2_slot2 = var10;
-        var8 = _closure1_slot0;
-        var9 = _closure1_slot1;
-        var6 = 0;
-        var1 = var9[var6];
-        var7 = undefined;
-        var2 = var8.bind(var7)(var1);
-        var1 = var2.defineAnimation;
-        var0 = function() {
-            _fun33956: for (var _fun33956_ip = 0;;) switch (_fun33956_ip) {
+    var4 = 'function checkIfConfigIsValid_Pnpm_springUtilsTs1(config){const{logger}=this.__closure;var _config$clamp,_config$clamp2;let errorMessage=\'\';[\'stiffness\',\'damping\',\'dampingRatio\',\'restDisplacementThreshold\',\'restSpeedThreshold\',\'mass\'].forEach(function(prop){const value=config[prop];if(value<=0){errorMessage+=", "+prop+" must be grater than zero but got "+value;}});if(config.duration<0){errorMessage+=", duration can\'t be negative, got "+config.duration;}if((_config$clamp=config.clamp)!==null&&_config$clamp!==void 0&&_config$clamp.min&&(_config$clamp2=config.clamp)!==null&&_config$clamp2!==void 0&&_config$clamp2.max&&config.clamp.min>config.clamp.max){errorMessage+=", clamp.min should be lower than clamp.max, got clamp: {min: "+config.clamp.min+", max: "+config.clamp.max+"} ";}if(errorMessage!==\'\'){logger.warn(\'Invalid spring config\'+errorMessage);}return errorMessage===\'\';}';
+    var3.code = var4;
+    var _closure1_slot4 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0() {
+            _fun33970: for (var _fun33970_ip = 0;;) switch (_fun33970_ip) {
                 case 0:
-                    var10 = {
-                        'damping': 10,
-                        'mass': 1,
-                        'stiffness': 100,
-                        'overshootClamping': false,
-                        'restDisplacementThreshold': 0.01,
-                        'restSpeedThreshold': 2,
-                        'velocity': 0,
-                        'duration': 2000,
-                        'dampingRatio': 0.5
-                    };
-                    var8 = 1;
-                    var0 = false;
-                    var5 = 0;
-                    var4 = undefined;
-                    var10.reduceMotion = var4;
-                    var10.clamp = var4;
-                    var1 = global;
-                    var9 = var1.Object;
-                    var7 = var9.assign;
-                    var2 = _closure2_slot1;
-                    var1 = {};
-                    var13 = null;
-                    var11 = var13 != var2;
-                    if (!var11) {
-                        _fun33956_ip = 75;
-                        continue _fun33956
-                    }
-                case 66:
-                    var12 = _closure2_slot1;
-                    var11 = var12.duration;
-                case 75:
-                    if (var11) {
-                        _fun33956_ip = 102;
-                        continue _fun33956
-                    }
-                case 78:
-                    var12 = _closure2_slot1;
-                    var12 = var13 != var12;
-                    if (!var12) {
-                        _fun33956_ip = 99;
-                        continue _fun33956
-                    }
-                case 89:
-                    var13 = _closure2_slot1;
-                    var12 = var13.dampingRatio;
-                case 99:
-                    var11 = var12;
-                case 102:
-                    var11 = !var11;
-                    var11 = !var11;
-                    var1.useDuration = var11;
-                    var1.skipAnimation = var0;
-                    var17 = {};
-                    var18 = var9;
-                    var16 = var10;
-                    var15 = var2;
-                    var14 = var1;
-                    var1 = var18[var7](var17, var16, var15, var14, var13);
-                    var _closure3_slot0 = var1;
-                    var7 = _closure1_slot0;
-                    var0 = _closure1_slot1;
-                    var0 = var0[var8];
-                    var7 = var7.bind(var4)(var0);
-                    var0 = var7.checkIfConfigIsValid;
-                    var0 = var0.bind(var7)(var1);
-                    var0 = !var0;
-                    var1.skipAnimation = var0;
-                    var0 = var1.duration;
-                    if (!(var5 === var0)) {
-                        _fun33956_ip = 197;
-                        continue _fun33956
-                    }
-                case 189:
-                    var0 = true;
-                    var1.skipAnimation = var0;
-                case 197:
-                    var0 = {};
-                    var7 = function arg0, arg1() {
-                        _fun33957: for (var _fun33957_ip = 0;;) switch (_fun33957_ip) {
+                    var2 = arg0;
+                    var _closure3_slot0 = var2;
+                    var1 = '';
+                    var _closure3_slot1 = var1;
+                    var5 = ['stiffness', 'damping', 'dampingRatio', 'restDisplacementThreshold', 'restSpeedThreshold', 'mass'];
+                    var4 = var5.forEach;
+                    var3 = function(arg0) { // Environment: var0
+                        _fun33971: for (var _fun33971_ip = 0;;) switch (_fun33971_ip) {
                             case 0:
-                                var1 = arg0;
-                                var5 = arg1;
-                                var0 = var1.toValue;
-                                var2 = var1.startTimestamp;
-                                var3 = var1.current;
-                                var6 = var5 - var2;
-                                var4 = _closure3_slot0;
-                                var4 = var4.useDuration;
-                                if (!var4) {
-                                    _fun33957_ip = 59;
-                                    continue _fun33957
-                                }
-                            case 43:
-                                var4 = _closure3_slot0;
-                                var4 = var4.duration;
-                                if (!(!(var6 >= var4))) {
-                                    _fun33957_ip = 438;
-                                    continue _fun33957
-                                }
-                            case 59:
-                                var4 = _closure3_slot0;
-                                var4 = var4.skipAnimation;
-                                if (var4) {
-                                    _fun33957_ip = 420;
-                                    continue _fun33957
-                                }
-                            case 75:
-                                var6 = var1.lastTimestamp;
-                                var4 = var1.velocity;
-                                var7 = global;
-                                var9 = var7.Math;
-                                var8 = var9.min;
-                                var7 = var5 - var6;
-                                var6 = 64;
-                                var6 = var8.bind(var9)(var7, var6);
-                                var1.lastTimestamp = var5;
-                                var5 = 1000;
-                                var8 = var6 / var5;
-                                var12 = -var4;
-                                var11 = var0 - var3;
-                                var13 = var1.zeta;
-                                var10 = var1.omega0;
-                                var9 = var1.omega1;
-                                var4 = 1;
-                                if (!(!(var13 < var4))) {
-                                    _fun33957_ip = 218;
-                                    continue _fun33957
-                                }
-                            case 161:
-                                var6 = _closure1_slot0;
-                                var3 = _closure1_slot1;
-                                var5 = var3[var4];
-                                var3 = undefined;
-                                var6 = var6.bind(var3)(var5);
-                                var5 = var6.criticallyDampedSpringCalculations;
-                                var3 = {};
-                                var3.v0 = var12;
-                                var3.x0 = var11;
-                                var3.omega0 = var10;
-                                var3.t = var8;
-                                var3 = var5.bind(var6)(var1, var3);
-                                _fun33957_ip = 283;
-                                continue _fun33957;
-                            case 218:
-                                var7 = _closure1_slot0;
-                                var5 = _closure1_slot1;
-                                var6 = var5[var4];
-                                var5 = undefined;
-                                var7 = var7.bind(var5)(var6);
-                                var6 = var7.underDampedSpringCalculations;
-                                var5 = {};
-                                var5.zeta = var13;
-                                var5.v0 = var12;
-                                var5.x0 = var11;
-                                var5.omega0 = var10;
-                                var5.omega1 = var9;
-                                var5.t = var8;
-                                var3 = var6.bind(var7)(var1, var5);
-                            case 283:
-                                var5 = var3.position;
-                                var3 = var3.velocity;
-                                var1.current = var5;
-                                var1.velocity = var3;
-                                var5 = _closure1_slot0;
-                                var3 = _closure1_slot1;
-                                var4 = var3[var4];
-                                var3 = undefined;
-                                var5 = var5.bind(var3)(var4);
-                                var4 = var5.isAnimationTerminatingCalculation;
-                                var3 = _closure3_slot0;
-                                var5 = var4.bind(var5)(var1, var3);
-                                var3 = var5.isOvershooting;
-                                var4 = var5.isVelocity;
-                                var5 = var5.isDisplacement;
-                                if (var3) {
-                                    _fun33957_ip = 374;
-                                    continue _fun33957
-                                }
-                            case 365:
-                                if (!var4) {
-                                    _fun33957_ip = 371;
-                                    continue _fun33957
-                                }
-                            case 368:
-                                var4 = var5;
-                            case 371:
-                                var3 = var4;
-                            case 374:
-                                var2 = _closure3_slot0;
-                                var2 = var2.useDuration;
-                                if (var2) {
-                                    _fun33957_ip = 390;
-                                    continue _fun33957
-                                }
-                            case 387:
-                                var2 = !var3;
-                            case 390:
-                                if (var2) {
-                                    _fun33957_ip = 415;
-                                    continue _fun33957
-                                }
-                            case 393:
-                                var3 = 0;
-                                var1.velocity = var3;
-                                var1.current = var0;
-                                var1.lastTimestamp = var3;
-                                var2 = 0;
-                            case 415:
-                                var2 = !var2;
-                                return var2;
-                            case 420:
-                                var1.current = var0;
-                                var2 = 0;
-                                var1.lastTimestamp = var2;
-                                var2 = true;
-                                return var2;
-                            case 438:
-                                var1.current = var0;
-                                var0 = 0;
-                                var1.lastTimestamp = var0;
-                                var0 = true;
-                                return var0;
-                        }
-                    };
-                    var0.onFrame = var7;
-                    var6 = function arg0, arg1, arg2, arg3() {
-                        _fun33958: for (var _fun33958_ip = 0;;) switch (_fun33958_ip) {
-                            case 0:
-                                var2 = arg0;
-                                var8 = arg1;
-                                var3 = arg2;
-                                var5 = arg3;
-                                var2.current = var8;
-                                var2.startValue = var8;
+                                var6 = arg0;
                                 var0 = _closure3_slot0;
-                                var12 = var0.mass;
-                                var4 = null;
-                                var7 = var4 == var5;
+                                var5 = var0[var6];
+                                var0 = 0;
+                                if (!(var5 <= var0)) {
+                                    _fun33971_ip = 64;
+                                    continue _fun33971
+                                }
+                            case 20:
+                                var2 = _closure3_slot1;
+                                var0 = global;
+                                var0 = var0.HermesInternal;
+                                var4 = var0.concat;
+                                var3 = ', ';
+                                var0 = ' must be grater than zero but got ';
+                                var0 = var4.bind(var3)(var6, var0, var5);
+                                var0 = var2 + var0;
+                                _closure3_slot1 = var0;
+                            case 64:
                                 var0 = undefined;
-                                var1 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 56;
-                                    continue _fun33958
-                                }
-                            case 50:
-                                var1 = var5.lastTimestamp;
-                            case 56:
-                                if (!var1) {
-                                    _fun33958_ip = 77;
-                                    continue _fun33958
-                                }
-                            case 59:
-                                var9 = var4 == var5;
-                                var7 = undefined;
-                                if (var9) {
-                                    _fun33958_ip = 74;
-                                    continue _fun33958
-                                }
-                            case 68:
-                                var7 = var5.startTimestamp;
-                            case 74:
-                                var1 = var7;
-                            case 77:
-                                if (!var1) {
-                                    _fun33958_ip = 105;
-                                    continue _fun33958
-                                }
-                            case 80:
-                                var7 = var4 == var5;
-                                var9 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 95;
-                                    continue _fun33958
-                                }
-                            case 89:
-                                var9 = var5.toValue;
-                            case 95:
-                                var7 = var2.toValue;
-                                var1 = var9 === var7;
-                            case 105:
-                                if (!var1) {
-                                    _fun33958_ip = 131;
-                                    continue _fun33958
-                                }
-                            case 108:
-                                var7 = var4 == var5;
-                                var9 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 122;
-                                    continue _fun33958
-                                }
-                            case 117:
-                                var9 = var5.duration;
-                            case 122:
-                                var7 = var2.duration;
-                                var1 = var9 === var7;
-                            case 131:
-                                if (!var1) {
-                                    _fun33958_ip = 159;
-                                    continue _fun33958
-                                }
-                            case 134:
-                                var7 = var4 == var5;
-                                var9 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 149;
-                                    continue _fun33958
-                                }
-                            case 143:
-                                var9 = var5.dampingRatio;
-                            case 149:
-                                var7 = var2.dampingRatio;
-                                var1 = var9 === var7;
-                            case 159:
-                                var7 = _closure3_slot0;
-                                var9 = var7.duration;
-                                if (var1) {
-                                    _fun33958_ip = 196;
-                                    continue _fun33958
-                                }
-                            case 171:
-                                var7 = global;
-                                var10 = var7.Number;
-                                var7 = var2.toValue;
-                                var7 = var10.bind(var0)(var7);
-                                var11 = var7 - var8;
-                                _fun33958_ip = 214;
-                                continue _fun33958;
-                            case 196:
-                                var8 = var4 == var5;
-                                var7 = undefined;
-                                if (var8) {
-                                    _fun33958_ip = 211;
-                                    continue _fun33958
-                                }
-                            case 205:
-                                var7 = var5.startValue;
-                            case 211:
-                                var11 = var7;
-                            case 214:
-                                if (var5) {
-                                    _fun33958_ip = 234;
-                                    continue _fun33958
-                                }
-                            case 217:
-                                var7 = _closure3_slot0;
-                                var7 = var7.velocity;
-                                if (var7) {
-                                    _fun33958_ip = 232;
-                                    continue _fun33958
-                                }
-                            case 230:
-                                var7 = 0;
-                            case 232:
-                                _fun33958_ip = 290;
-                                continue _fun33958;
-                            case 234:
-                                var13 = var4 == var5;
-                                if (var1) {
-                                    _fun33958_ip = 268;
-                                    continue _fun33958
-                                }
-                            case 241:
-                                var10 = undefined;
-                                if (var13) {
-                                    _fun33958_ip = 252;
-                                    continue _fun33958
-                                }
-                            case 246:
-                                var10 = var5.velocity;
-                            case 252:
-                                var8 = _closure3_slot0;
-                                var8 = var8.velocity;
-                                var8 = var10 + var8;
-                                _fun33958_ip = 282;
-                                continue _fun33958;
-                            case 268:
-                                var10 = undefined;
-                                if (var13) {
-                                    _fun33958_ip = 279;
-                                    continue _fun33958
-                                }
-                            case 273:
-                                var10 = var5.velocity;
-                            case 279:
-                                var8 = var10;
-                            case 282:
-                                if (var8) {
-                                    _fun33958_ip = 287;
-                                    continue _fun33958
-                                }
-                            case 285:
-                                var8 = 0;
-                            case 287:
-                                var7 = var8;
-                            case 290:
-                                var2.velocity = var7;
-                                if (var1) {
-                                    _fun33958_ip = 564;
-                                    continue _fun33958
-                                }
-                            case 302:
-                                var7 = _closure3_slot0;
-                                var7 = var7.useDuration;
-                                if (!var7) {
-                                    _fun33958_ip = 425;
-                                    continue _fun33958
-                                }
-                            case 315:
-                                var8 = var9;
-                                if (!var1) {
-                                    _fun33958_ip = 369;
-                                    continue _fun33958
-                                }
-                            case 321:
-                                var7 = var4 == var5;
-                                var10 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 336;
-                                    continue _fun33958
-                                }
-                            case 330:
-                                var10 = var5.lastTimestamp;
-                            case 336:
-                                if (var10) {
-                                    _fun33958_ip = 341;
-                                    continue _fun33958
-                                }
-                            case 339:
-                                var10 = 0;
-                            case 341:
-                                var13 = var4 == var5;
-                                var7 = undefined;
-                                if (var13) {
-                                    _fun33958_ip = 356;
-                                    continue _fun33958
-                                }
-                            case 350:
-                                var7 = var5.startTimestamp;
-                            case 356:
-                                if (var7) {
-                                    _fun33958_ip = 361;
-                                    continue _fun33958
-                                }
-                            case 359:
-                                var7 = 0;
-                            case 361:
-                                var7 = var10 - var7;
-                                var8 = var9 - var7;
-                            case 369:
-                                var7 = _closure3_slot0;
-                                var7.duration = var8;
-                                var8 = _closure1_slot0;
-                                var9 = _closure1_slot1;
-                                var7 = 1;
-                                var7 = var9[var7];
-                                var10 = var8.bind(var0)(var7);
-                                var9 = var10.calculateNewMassToMatchDuration;
-                                var8 = _closure3_slot0;
-                                var7 = var2.velocity;
-                                var12 = var9.bind(var10)(var11, var8, var7);
-                            case 425:
-                                var10 = _closure1_slot0;
-                                var8 = _closure1_slot1;
-                                var9 = 1;
-                                var8 = var8[var9];
-                                var11 = var10.bind(var0)(var8);
-                                var10 = var11.initialCalculations;
-                                var8 = _closure3_slot0;
-                                var8 = var10.bind(var11)(var12, var8);
-                                var11 = var8.zeta;
-                                var10 = var8.omega0;
-                                var8 = var8.omega1;
-                                var2.zeta = var11;
-                                var2.omega0 = var10;
-                                var2.omega1 = var8;
-                                var8 = _closure3_slot0;
-                                var8 = var8.clamp;
-                                if (!(var0 !== var8)) {
-                                    _fun33958_ip = 642;
-                                    continue _fun33958
-                                }
-                            case 517:
-                                var8 = _closure1_slot0;
-                                var7 = _closure1_slot1;
-                                var7 = var7[var9];
-                                var8 = var8.bind(var0)(var7);
-                                var7 = var8.scaleZetaToMatchClamps;
-                                var6 = _closure3_slot0;
-                                var6 = var6.clamp;
-                                var6 = var7.bind(var8)(var2, var6);
-                                var2.zeta = var6;
-                                _fun33958_ip = 642;
-                                continue _fun33958;
-                            case 564:
-                                var7 = var4 == var5;
-                                var6 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 579;
-                                    continue _fun33958
-                                }
-                            case 573:
-                                var6 = var5.zeta;
-                            case 579:
-                                if (var6) {
-                                    _fun33958_ip = 584;
-                                    continue _fun33958
-                                }
-                            case 582:
-                                var6 = 0;
-                            case 584:
-                                var2.zeta = var6;
-                                var7 = var4 == var5;
-                                var6 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 605;
-                                    continue _fun33958
-                                }
-                            case 599:
-                                var6 = var5.omega0;
-                            case 605:
-                                if (var6) {
-                                    _fun33958_ip = 610;
-                                    continue _fun33958
-                                }
-                            case 608:
-                                var6 = 0;
-                            case 610:
-                                var2.omega0 = var6;
-                                var7 = var4 == var5;
-                                var6 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 631;
-                                    continue _fun33958
-                                }
-                            case 625:
-                                var6 = var5.omega1;
-                            case 631:
-                                if (var6) {
-                                    _fun33958_ip = 636;
-                                    continue _fun33958
-                                }
-                            case 634:
-                                var6 = 0;
-                            case 636:
-                                var2.omega1 = var6;
-                            case 642:
-                                var7 = var4 == var5;
-                                var6 = undefined;
-                                if (var7) {
-                                    _fun33958_ip = 657;
-                                    continue _fun33958
-                                }
-                            case 651:
-                                var6 = var5.lastTimestamp;
-                            case 657:
-                                if (var6) {
-                                    _fun33958_ip = 663;
-                                    continue _fun33958
-                                }
-                            case 660:
-                                var6 = var3;
-                            case 663:
-                                var2.lastTimestamp = var6;
-                                if (!var1) {
-                                    _fun33958_ip = 690;
-                                    continue _fun33958
-                                }
-                            case 672:
-                                var6 = var4 == var5;
-                                var4 = undefined;
-                                if (var6) {
-                                    _fun33958_ip = 687;
-                                    continue _fun33958
-                                }
-                            case 681:
-                                var4 = var5.startTimestamp;
-                            case 687:
-                                var1 = var4;
-                            case 690:
-                                if (var1) {
-                                    _fun33958_ip = 696;
-                                    continue _fun33958
-                                }
-                            case 693:
-                                var1 = var3;
-                            case 696:
-                                var2.startTimestamp = var1;
                                 return var0;
                         }
                     };
-                    var0.onStart = var6;
-                    var6 = _closure2_slot0;
-                    var0.toValue = var6;
-                    var6 = var1.velocity;
-                    if (var6) {
-                        _fun33956_ip = 239;
-                        continue _fun33956
+                    var3 = var4.bind(var5)(var3);
+                    var4 = var2.duration;
+                    var3 = 0;
+                    if (!(var4 < var3)) {
+                        _fun33970_ip = 94;
+                        continue _fun33970
                     }
-                case 237:
-                    var6 = 0;
-                case 239:
-                    var0.velocity = var6;
-                    var6 = _closure2_slot0;
-                    var0.current = var6;
-                    var0.startValue = var5;
-                    var3 = _closure2_slot2;
-                    var0.callback = var3;
-                    var0.lastTimestamp = var5;
-                    var0.startTimestamp = var5;
-                    var0.zeta = var5;
-                    var0.omega0 = var5;
-                    var0.omega1 = var5;
+                case 53:
+                    var4 = _closure3_slot1;
+                    var6 = var2.duration;
+                    var3 = global;
+                    var3 = var3.HermesInternal;
+                    var5 = var3.concat;
+                    var3 = ", duration can't be negative, got ";
+                    var3 = var5.bind(var3)(var6);
+                    var3 = var4 + var3;
+                    _closure3_slot1 = var3;
+                case 94:
+                    var4 = var2.clamp;
+                    var7 = null;
+                    var3 = var7 != var4;
+                    if (!var3) {
+                        _fun33970_ip = 114;
+                        continue _fun33970
+                    }
+                case 109:
+                    var3 = var4.min;
+                case 114:
+                    var4 = undefined;
+                    var5 = undefined;
+                    if (!var3) {
+                        _fun33970_ip = 134;
+                        continue _fun33970
+                    }
+                case 121:
+                    var6 = var2.clamp;
+                    var3 = var7 != var6;
+                    var5 = var6;
+                case 134:
+                    if (!var3) {
+                        _fun33970_ip = 142;
+                        continue _fun33970
+                    }
+                case 137:
+                    var3 = var5.max;
+                case 142:
+                    if (!var3) {
+                        _fun33970_ip = 171;
+                        continue _fun33970
+                    }
+                case 145:
+                    var5 = var2.clamp;
+                    var6 = var5.min;
+                    var5 = var2.clamp;
+                    var5 = var5.max;
+                    var3 = var6 > var5;
+                case 171:
+                    if (!var3) {
+                        _fun33970_ip = 243;
+                        continue _fun33970
+                    }
+                case 174:
+                    var3 = _closure3_slot1;
+                    var5 = var2.clamp;
+                    var13 = var5.min;
+                    var2 = var2.clamp;
+                    var11 = var2.max;
+                    var2 = global;
+                    var2 = var2.HermesInternal;
+                    var7 = var2.concat;
+                    var14 = ', clamp.min should be lower than clamp.max, got clamp: {min: ';
+                    var12 = ', max: ';
+                    var10 = '} ';
+                    var2 = var14[var7](var13, var12, var11, var10, var9);
+                    var2 = var3 + var2;
+                    _closure3_slot1 = var2;
+                case 243:
+                    var2 = _closure3_slot1;
+                    if (!(var1 !== var2)) {
+                        _fun33970_ip = 304;
+                        continue _fun33970
+                    }
+                case 251:
                     var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var2 = var2[var5];
-                    var3 = var3.bind(var4)(var2);
-                    var2 = var3.getReduceMotionForAnimation;
-                    var1 = var1.reduceMotion;
-                    var1 = var2.bind(var3)(var1);
-                    var0.reduceMotion = var1;
+                    var5 = _closure1_slot1;
+                    var2 = 2;
+                    var2 = var5[var2];
+                    var2 = var3.bind(var4)(var2);
+                    var4 = var2.logger;
+                    var3 = var4.warn;
+                    var5 = _closure3_slot1;
+                    var2 = 'Invalid spring config';
+                    var2 = var2 + var5;
+                    var2 = var3.bind(var4)(var2);
+                case 304:
+                    var0 = _closure3_slot1;
+                    var0 = var1 === var0;
                     return var0;
             }
         };
-        var5 = {};
-        var5.userConfig = var11;
-        var11 = 1;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.checkIfConfigIsValid;
-        var5.checkIfConfigIsValid = var12;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.underDampedSpringCalculations;
-        var5.underDampedSpringCalculations = var12;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.criticallyDampedSpringCalculations;
-        var5.criticallyDampedSpringCalculations = var12;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.isAnimationTerminatingCalculation;
-        var5.isAnimationTerminatingCalculation = var12;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.calculateNewMassToMatchDuration;
-        var5.calculateNewMassToMatchDuration = var12;
-        var12 = var9[var11];
-        var12 = var8.bind(var7)(var12);
-        var12 = var12.initialCalculations;
-        var5.initialCalculations = var12;
-        var11 = var9[var11];
-        var11 = var8.bind(var7)(var11);
-        var11 = var11.scaleZetaToMatchClamps;
-        var5.scaleZetaToMatchClamps = var11;
-        var5.toValue = var3;
-        var5.callback = var10;
-        var6 = var9[var6];
-        var6 = var8.bind(var7)(var6);
-        var6 = var6.getReduceMotionForAnimation;
-        var5.getReduceMotionForAnimation = var6;
-        var0.__closure = var5;
-        var5 = 892655332136.0;
-        var0.__workletHash = var5;
-        var4 = _closure1_slot2;
-        var0.__initData = var4;
-        var0 = var1.bind(var2)(var3, var0);
+        var2 = {};
+        var5 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var3 = 2;
+        var4 = var4[var3];
+        var3 = undefined;
+        var3 = var5.bind(var3)(var4);
+        var3 = var3.logger;
+        var2.logger = var3;
+        var0.__closure = var2;
+        var2 = 16835320063819.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot4;
+        var0.__initData = var1;
         return var0;
     };
-    var4 = {};
-    var5 = 0;
-    var8 = var7[var5];
-    var0 = undefined;
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.defineAnimation;
-    var4.defineAnimation = var8;
-    var8 = 1;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.checkIfConfigIsValid;
-    var4.checkIfConfigIsValid = var9;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.underDampedSpringCalculations;
-    var4.underDampedSpringCalculations = var9;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.criticallyDampedSpringCalculations;
-    var4.criticallyDampedSpringCalculations = var9;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.isAnimationTerminatingCalculation;
-    var4.isAnimationTerminatingCalculation = var9;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.calculateNewMassToMatchDuration;
-    var4.calculateNewMassToMatchDuration = var9;
-    var9 = var7[var8];
-    var9 = var6.bind(var0)(var9);
-    var9 = var9.initialCalculations;
-    var4.initialCalculations = var9;
-    var8 = var7[var8];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.scaleZetaToMatchClamps;
-    var4.scaleZetaToMatchClamps = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.getReduceMotionForAnimation;
-    var4.getReduceMotionForAnimation = var5;
-    var1.__closure = var4;
-    var4 = 16128171855735.0;
-    var1.__workletHash = var4;
-    var1.__initData = var3;
-    var2.withSpring = var1;
+    var9 = var3.bind(var0)();
+    var3 = {};
+    var4 = 'function bisectRoot_Pnpm_springUtilsTs2({min:min,max:max,func:func,maxIterations=20}){const ACCURACY=0.00005;let idx=maxIterations;let current=(max+min)/2;while(Math.abs(func(current))>ACCURACY&&idx>0){idx-=1;if(func(current)<0){min=current;}else{max=current;}current=(min+max)/2;}return current;}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0() {
+            _fun33973: for (var _fun33973_ip = 0;;) switch (_fun33973_ip) {
+                case 0:
+                    var0 = arg0;
+                    var11 = var0.min;
+                    var10 = var0.max;
+                    var9 = var0.func;
+                    var0 = var0.maxIterations;
+                    var8 = 20;
+                    var7 = undefined;
+                    if (!(var7 !== var0)) {
+                        _fun33973_ip = 39;
+                        continue _fun33973
+                    }
+                case 36:
+                    var8 = var0;
+                case 39:
+                    var0 = var10 + var11;
+                    var6 = 2;
+                    var12 = var0 / var6;
+                    var5 = global;
+                    var2 = var5.Math;
+                    var1 = var2.abs;
+                    var0 = var9.bind(var7)(var12);
+                    var1 = var1.bind(var2)(var0);
+                    var4 = 5e-05;
+                    var0 = var12;
+                    if (!(var1 > var4)) {
+                        _fun33973_ip = 181;
+                        continue _fun33973
+                    }
+                case 91:
+                    var3 = 0;
+                    var2 = 1;
+                    var1 = var12;
+                    var0 = var1;
+                    if (!(var8 > var3)) {
+                        _fun33973_ip = 181;
+                        continue _fun33973
+                    }
+                case 106:
+                    var8 = var8 - var2;
+                    var14 = var9.bind(var7)(var1);
+                    var12 = var1;
+                    var13 = var12;
+                    if (!(var14 < var3)) {
+                        _fun33973_ip = 131;
+                        continue _fun33973
+                    }
+                case 125:
+                    var11 = var12;
+                    var13 = var10;
+                case 131:
+                    var12 = var11 + var13;
+                    var12 = var12 / var6;
+                    var16 = var5.Math;
+                    var15 = var16.abs;
+                    var14 = var9.bind(var7)(var12);
+                    var14 = var15.bind(var16)(var14);
+                    var0 = var12;
+                    if (!(var14 > var4)) {
+                        _fun33973_ip = 181;
+                        continue _fun33973
+                    }
+                case 168:
+                    var10 = var13;
+                    var1 = var12;
+                    var0 = var1;
+                    if (var8 > var3) {
+                        _fun33973_ip = 106;
+                        continue _fun33973
+                    }
+                case 181:
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 3467677822604.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot5;
+        var0.__initData = var1;
+        return var0;
+    };
+    var8 = var3.bind(var0)();
+    var _closure1_slot6 = var8;
+    var3 = {};
+    var4 = 'function initialCalculations_Pnpm_springUtilsTs3(mass=0,config){if(config.skipAnimation){return{zeta:0,omega0:0,omega1:0};}if(config.useDuration){const{stiffness:k,dampingRatio:zeta}=config;const omega0=Math.sqrt(k/mass);const omega1=omega0*Math.sqrt(1-zeta**2);return{zeta:zeta,omega0:omega0,omega1:omega1};}else{const{damping:c,mass:m,stiffness:k}=config;const zeta=c/(2*Math.sqrt(k*m));const omega0=Math.sqrt(k/m);const omega1=omega0*Math.sqrt(1-zeta**2);return{zeta:zeta,omega0:omega0,omega1:omega1};}}';
+    var3.code = var4;
+    var _closure1_slot7 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function() {
+            _fun33975: for (var _fun33975_ip = 0;;) switch (_fun33975_ip) {
+                case 0:
+                    var1 = undefined;
+                    var0 = undefined;
+                    var3 = arguments.length;
+                    var2 = 0;
+                    var3 = var3 > var2;
+                    var4 = 0;
+                    if (!var3) {
+                        _fun33975_ip = 32;
+                        continue _fun33975
+                    }
+                case 18:
+                    var3 = arguments[var2];
+                    var4 = 0;
+                    if (!(var1 !== var3)) {
+                        _fun33975_ip = 32;
+                        continue _fun33975
+                    }
+                case 28:
+                    var4 = arguments[var2];
+                case 32:
+                    var2 = arguments.length;
+                    var5 = 1;
+                    var2 = var2 > var5;
+                    var1 = undefined;
+                    if (!var2) {
+                        _fun33975_ip = 51;
+                        continue _fun33975
+                    }
+                case 47:
+                    var1 = arguments[var5];
+                case 51:
+                    var0 = var1.skipAnimation;
+                    if (var0) {
+                        _fun33975_ip = 291;
+                        continue _fun33975
+                    }
+                case 63:
+                    var0 = var1.useDuration;
+                    if (var0) {
+                        _fun33975_ip = 202;
+                        continue _fun33975
+                    }
+                case 75:
+                    var3 = var1.damping;
+                    var9 = var1.mass;
+                    var0 = var1.stiffness;
+                    var6 = global;
+                    var8 = var6.Math;
+                    var7 = var8.sqrt;
+                    var2 = var0 * var9;
+                    var2 = var7.bind(var8)(var2);
+                    var8 = 2;
+                    var2 = var8 * var2;
+                    var2 = var3 / var2;
+                    var7 = var6.Math;
+                    var3 = var7.sqrt;
+                    var0 = var0 / var9;
+                    var3 = var3.bind(var7)(var0);
+                    var0 = {};
+                    var0.zeta = var2;
+                    var0.omega0 = var3;
+                    var7 = var6.Math;
+                    var6 = var7.sqrt;
+                    var11 = var2;
+                    var10 = var8;
+                    var2 = exponentiationOperator(var11, var10);
+                    var2 = var5 - var2;
+                    var2 = var6.bind(var7)(var2);
+                    var2 = var3 * var2;
+                    var0.omega1 = var2;
+                    return var0;
+                case 202:
+                    var0 = var1.stiffness;
+                    var6 = var1.dampingRatio;
+                    var1 = global;
+                    var3 = var1.Math;
+                    var2 = var3.sqrt;
+                    var0 = var0 / var4;
+                    var2 = var2.bind(var3)(var0);
+                    var0 = {};
+                    var0.zeta = var6;
+                    var0.omega0 = var2;
+                    var4 = var1.Math;
+                    var3 = var4.sqrt;
+                    var10 = 2;
+                    var11 = var6;
+                    var1 = exponentiationOperator(var11, var10);
+                    var1 = var5 - var1;
+                    var1 = var3.bind(var4)(var1);
+                    var1 = var2 * var1;
+                    var0.omega1 = var1;
+                    return var0;
+                case 291:
+                    var0 = {
+                        'zeta': 0,
+                        'omega0': 0,
+                        'omega1': 0
+                    };
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 2372224089792.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot7;
+        var0.__initData = var1;
+        return var0;
+    };
+    var7 = var3.bind(var0)();
+    var3 = {};
+    var4 = 'function scaleZetaToMatchClamps_Pnpm_springUtilsTs4(animation,clamp){const{zeta:zeta,toValue:toValue,startValue:startValue}=animation;const toValueNum=Number(toValue);if(toValueNum===startValue){return zeta;}const[firstBound,secondBound]=toValueNum-startValue>0?[clamp.min,clamp.max]:[clamp.max,clamp.min];const relativeExtremum1=secondBound!==undefined?Math.abs((secondBound-toValueNum)/(toValueNum-startValue)):undefined;const relativeExtremum2=firstBound!==undefined?Math.abs((firstBound-toValueNum)/(toValueNum-startValue)):undefined;const newZeta1=relativeExtremum1!==undefined?Math.abs(Math.log(relativeExtremum1)/Math.PI):undefined;const newZeta2=relativeExtremum2!==undefined?Math.abs(Math.log(relativeExtremum2)/(2*Math.PI)):undefined;const zetaSatisfyingClamp=[newZeta1,newZeta2].filter(function(x){return x!==undefined;});return Math.max(...zetaSatisfyingClamp,zeta);}';
+    var3.code = var4;
+    var _closure1_slot8 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0, arg1() {
+            _fun33977: for (var _fun33977_ip = 0;;) switch (_fun33977_ip) {
+                case 0:
+                    var1 = arg0;
+                    var5 = arg1;
+                    var0 = var1.zeta;
+                    var3 = var1.toValue;
+                    var8 = var1.startValue;
+                    var2 = global;
+                    var1 = var2.Number;
+                    var6 = undefined;
+                    var3 = var1.bind(var6)(var3);
+                    if (!(var3 !== var8)) {
+                        _fun33977_ip = 402;
+                        continue _fun33977
+                    }
+                case 46:
+                    var1 = var3 - var8;
+                    var4 = 0;
+                    if (!(!(var1 > var4))) {
+                        _fun33977_ip = 80;
+                        continue _fun33977
+                    }
+                case 56:
+                    var1 = var5.max;
+                    var7 = new Array(2);
+                    var7[0] = var1;
+                    var1 = var5.min;
+                    var7[1] = var1;
+                    _fun33977_ip = 105;
+                    continue _fun33977;
+                case 80:
+                    var9 = var5.min;
+                    var1 = new Array(2);
+                    var1[0] = var9;
+                    var5 = var5.max;
+                    var1[1] = var5;
+                    var7 = var1;
+                case 105:
+                    var5 = _closure1_slot3;
+                    var10 = 2;
+                    var5 = var5.bind(var6)(var7, var10);
+                    var7 = var5[var4];
+                    var4 = 1;
+                    var4 = var5[var4];
+                    var9 = undefined;
+                    if (!(var6 !== var4)) {
+                        _fun33977_ip = 167;
+                        continue _fun33977
+                    }
+                case 138:
+                    var11 = var2.Math;
+                    var5 = var11.abs;
+                    var12 = var4 - var3;
+                    var4 = var3 - var8;
+                    var4 = var12 / var4;
+                    var9 = var5.bind(var11)(var4);
+                case 167:
+                    var11 = undefined;
+                    if (!(var6 !== var7)) {
+                        _fun33977_ip = 202;
+                        continue _fun33977
+                    }
+                case 173:
+                    var5 = var2.Math;
+                    var4 = var5.abs;
+                    var7 = var7 - var3;
+                    var3 = var3 - var8;
+                    var3 = var7 / var3;
+                    var11 = var4.bind(var5)(var3);
+                case 202:
+                    var3 = undefined;
+                    if (!(var6 !== var9)) {
+                        _fun33977_ip = 257;
+                        continue _fun33977
+                    }
+                case 208:
+                    var7 = var2.Math;
+                    var5 = var7.abs;
+                    var8 = var2.Math;
+                    var4 = var8.log;
+                    var8 = var4.bind(var8)(var9);
+                    var4 = var2.Math;
+                    var4 = var4.PI;
+                    var4 = var8 / var4;
+                    var3 = var5.bind(var7)(var4);
+                case 257:
+                    var5 = new Array(2);
+                    var5[0] = var3;
+                    var3 = undefined;
+                    if (!(var3 !== var11)) {
+                        _fun33977_ip = 324;
+                        continue _fun33977
+                    }
+                case 271:
+                    var8 = var2.Math;
+                    var7 = var8.abs;
+                    var9 = var2.Math;
+                    var4 = var9.log;
+                    var9 = var4.bind(var9)(var11);
+                    var4 = var2.Math;
+                    var4 = var4.PI;
+                    var4 = var10 * var4;
+                    var4 = var9 / var4;
+                    var3 = var7.bind(var8)(var4);
+                case 324:
+                    var5[1] = var3;
+                    var4 = var5.filter;
+                    var3 = function(arg0) { // Environment: var3
+                        var1 = undefined;
+                        var0 = arg0;
+                        var0 = var1 !== var0;
+                        return var0;
+                    };
+                    var5 = var4.bind(var5)(var3);
+                    var3 = var2.Math;
+                    var4 = var3.max;
+                    var3 = var4.apply;
+                    var2 = var2.Math;
+                    var1 = _closure1_slot2;
+                    var6 = var1.bind(var6)(var5);
+                    var5 = var6.concat;
+                    var1 = new Array(1);
+                    var1[0] = var0;
+                    var1 = var5.bind(var6)(var1);
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var1;
+                case 402:
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 5791837772627.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot8;
+        var0.__initData = var1;
+        return var0;
+    };
+    var6 = var3.bind(var0)();
+    var3 = {};
+    var4 = "function calculateNewMassToMatchDuration_Pnpm_springUtilsTs5(x0,config,v0){const{bisectRoot}=this.__closure;if(config.skipAnimation){return 0;}const{stiffness:k,dampingRatio:zeta,restSpeedThreshold:threshold,duration:duration}=config;const durationForMass=function(mass){'worklet';const amplitude=(mass*v0*v0+k*x0*x0)/(Math.exp(1-0.5*zeta)*k);const c=zeta*2*Math.sqrt(k*mass);return 1000*(-2*mass/c)*Math.log(threshold*0.01/amplitude)-duration;};return bisectRoot({min:0,max:100,func:durationForMass});}";
+    var3.code = var4;
+    var _closure1_slot9 = var3;
+    var3 = {};
+    var4 = 'function pnpm_springUtilsTs6(mass){const{v0,k,x0,zeta,threshold,duration}=this.__closure;const amplitude=(mass*v0*v0+k*x0*x0)/(Math.exp(1-0.5*zeta)*k);const c=zeta*2*Math.sqrt(k*mass);return 1000*(-2*mass/c)*Math.log(threshold*0.01/amplitude)-duration;}';
+    var3.code = var4;
+    var _closure1_slot10 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0, arg1, arg2() {
+            _fun33980: for (var _fun33980_ip = 0;;) switch (_fun33980_ip) {
+                case 0:
+                    var5 = arg0;
+                    var1 = arg1;
+                    var7 = arg2;
+                    var _closure3_slot0 = var5;
+                    var _closure3_slot1 = var7;
+                    var2 = var1.skipAnimation;
+                    if (var2) {
+                        _fun33980_ip = 172;
+                        continue _fun33980
+                    }
+                case 31:
+                    var6 = var1.stiffness;
+                    var _closure3_slot2 = var6;
+                    var4 = var1.dampingRatio;
+                    var _closure3_slot3 = var4;
+                    var3 = var1.restSpeedThreshold;
+                    var _closure3_slot4 = var3;
+                    var2 = var1.duration;
+                    var _closure3_slot5 = var2;
+                    var0 = function arg0() {
+                        var8 = arg0;
+                        var2 = _closure3_slot1;
+                        var1 = var8 * var2;
+                        var2 = var1 * var2;
+                        var1 = _closure3_slot2;
+                        var3 = _closure3_slot0;
+                        var1 = var1 * var3;
+                        var1 = var1 * var3;
+                        var3 = var2 + var1;
+                        var2 = global;
+                        var5 = var2.Math;
+                        var4 = var5.exp;
+                        var6 = _closure3_slot3;
+                        var1 = 0.5;
+                        var6 = var1 * var6;
+                        var1 = 1;
+                        var1 = var1 - var6;
+                        var4 = var4.bind(var5)(var1);
+                        var1 = _closure3_slot2;
+                        var1 = var4 * var1;
+                        var6 = var3 / var1;
+                        var1 = -2;
+                        var3 = var1 * var8;
+                        var4 = _closure3_slot3;
+                        var1 = 2;
+                        var4 = var1 * var4;
+                        var7 = var2.Math;
+                        var5 = var7.sqrt;
+                        var1 = _closure3_slot2;
+                        var1 = var1 * var8;
+                        var1 = var5.bind(var7)(var1);
+                        var1 = var4 * var1;
+                        var5 = var2.Math;
+                        var4 = var5.log;
+                        var7 = _closure3_slot4;
+                        var2 = 0.01;
+                        var2 = var2 * var7;
+                        var2 = var2 / var6;
+                        var2 = var4.bind(var5)(var2);
+                        var3 = var3 / var1;
+                        var1 = 1000;
+                        var1 = var3 * var1;
+                        var1 = var1 * var2;
+                        var0 = _closure3_slot5;
+                        var0 = var1 - var0;
+                        return var0;
+                    };
+                    var1 = {};
+                    var1.v0 = var7;
+                    var1.k = var6;
+                    var1.x0 = var5;
+                    var1.zeta = var4;
+                    var1.threshold = var3;
+                    var1.duration = var2;
+                    var0.__closure = var1;
+                    var1 = 9188609427640.0;
+                    var0.__workletHash = var1;
+                    var2 = _closure1_slot10;
+                    var0.__initData = var2;
+                    var2 = _closure1_slot6;
+                    var1 = {
+                        'min': 0,
+                        'max': 100
+                    };
+                    var1.func = var0;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    return var0;
+                case 172:
+                    var0 = 0;
+                    return var0;
+            }
+        };
+        var2 = {};
+        var3 = _closure1_slot6;
+        var2.bisectRoot = var3;
+        var0.__closure = var2;
+        var2 = 4742488441783.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot9;
+        var0.__initData = var1;
+        return var0;
+    };
+    var5 = var3.bind(var0)();
+    var3 = {};
+    var4 = 'function criticallyDampedSpringCalculations_Pnpm_springUtilsTs7(animation,precalculatedValues){const{toValue:toValue}=animation;const{v0:v0,x0:x0,omega0:omega0,t:t}=precalculatedValues;const criticallyDampedEnvelope=Math.exp(-omega0*t);const criticallyDampedPosition=toValue-criticallyDampedEnvelope*(x0+(v0+omega0*x0)*t);const criticallyDampedVelocity=criticallyDampedEnvelope*(v0*(t*omega0-1)+t*x0*omega0*omega0);return{position:criticallyDampedPosition,velocity:criticallyDampedVelocity};}';
+    var3.code = var4;
+    var _closure1_slot11 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0, arg1() {
+            var0 = arg1;
+            var1 = arg0;
+            var7 = var1.toValue;
+            var6 = var0.v0;
+            var5 = var0.x0;
+            var4 = var0.omega0;
+            var1 = var0.t;
+            var0 = global;
+            var3 = var0.Math;
+            var2 = var3.exp;
+            var0 = -var4;
+            var0 = var0 * var1;
+            var2 = var2.bind(var3)(var0);
+            var0 = {};
+            var3 = var4 * var5;
+            var3 = var6 + var3;
+            var3 = var3 * var1;
+            var3 = var5 + var3;
+            var3 = var2 * var3;
+            var3 = var7 - var3;
+            var0.position = var3;
+            var7 = var1 * var4;
+            var3 = 1;
+            var3 = var7 - var3;
+            var3 = var6 * var3;
+            var1 = var1 * var5;
+            var1 = var1 * var4;
+            var1 = var1 * var4;
+            var1 = var3 + var1;
+            var1 = var2 * var1;
+            var0.velocity = var1;
+            return var0;
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 57813752690.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot11;
+        var0.__initData = var1;
+        return var0;
+    };
+    var4 = var3.bind(var0)();
+    var3 = {};
+    var10 = 'function underDampedSpringCalculations_Pnpm_springUtilsTs8(animation,precalculatedValues){const{toValue:toValue,current:current,velocity:velocity}=animation;const{zeta:zeta,t:t,omega0:omega0,omega1:omega1}=precalculatedValues;const v0=-velocity;const x0=toValue-current;const sin1=Math.sin(omega1*t);const cos1=Math.cos(omega1*t);const underDampedEnvelope=Math.exp(-zeta*omega0*t);const underDampedFrag1=underDampedEnvelope*(sin1*((v0+zeta*omega0*x0)/omega1)+x0*cos1);const underDampedPosition=toValue-underDampedFrag1;const underDampedVelocity=zeta*omega0*underDampedFrag1-underDampedEnvelope*(cos1*(v0+zeta*omega0*x0)-omega1*x0*sin1);return{position:underDampedPosition,velocity:underDampedVelocity};}';
+    var3.code = var10;
+    var _closure1_slot12 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function arg0, arg1() {
+            var1 = arg0;
+            var3 = arg1;
+            var2 = var1.toValue;
+            var0 = var1.current;
+            var1 = var1.velocity;
+            var9 = var3.zeta;
+            var11 = var3.t;
+            var4 = var3.omega0;
+            var6 = var3.omega1;
+            var8 = -var1;
+            var1 = var2 - var0;
+            var0 = global;
+            var7 = var0.Math;
+            var5 = var7.sin;
+            var3 = var6 * var11;
+            var5 = var5.bind(var7)(var3);
+            var10 = var0.Math;
+            var7 = var10.cos;
+            var3 = var6 * var11;
+            var7 = var7.bind(var10)(var3);
+            var10 = var0.Math;
+            var3 = var10.exp;
+            var0 = -var9;
+            var0 = var0 * var4;
+            var0 = var0 * var11;
+            var3 = var3.bind(var10)(var0);
+            var0 = var9 * var4;
+            var0 = var0 * var1;
+            var0 = var8 + var0;
+            var0 = var0 / var6;
+            var10 = var5 * var0;
+            var0 = var1 * var7;
+            var0 = var10 + var0;
+            var10 = var3 * var0;
+            var0 = {};
+            var2 = var2 - var10;
+            var0.position = var2;
+            var2 = var9 * var4;
+            var2 = var2 * var10;
+            var4 = var9 * var4;
+            var4 = var4 * var1;
+            var4 = var8 + var4;
+            var4 = var7 * var4;
+            var1 = var6 * var1;
+            var1 = var1 * var5;
+            var1 = var4 - var1;
+            var1 = var3 * var1;
+            var1 = var2 - var1;
+            var0.velocity = var1;
+            return var0;
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 16542539931641.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot12;
+        var0.__initData = var1;
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var10 = {};
+    var11 = 'function isAnimationTerminatingCalculation_Pnpm_springUtilsTs9(animation,config){const{toValue:toValue,velocity:velocity,startValue:startValue,current:current}=animation;const isOvershooting=config.overshootClamping?current>toValue&&startValue<toValue||current<toValue&&startValue>toValue:false;const isVelocity=Math.abs(velocity)<config.restSpeedThreshold;const isDisplacement=Math.abs(toValue-current)<config.restDisplacementThreshold;return{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement};}';
+    var10.code = var11;
+    var _closure1_slot13 = var10;
+    var1 = function() { // Environment: var1
+        var0 = function arg0, arg1() {
+            _fun33987: for (var _fun33987_ip = 0;;) switch (_fun33987_ip) {
+                case 0:
+                    var0 = arg0;
+                    var1 = arg1;
+                    var5 = var0.toValue;
+                    var7 = var0.velocity;
+                    var8 = var0.startValue;
+                    var2 = var0.current;
+                    var0 = {};
+                    var3 = var1.overshootClamping;
+                    var4 = !var3;
+                    var3 = !var4;
+                    if (var4) {
+                        _fun33987_ip = 77;
+                        continue _fun33987
+                    }
+                case 46:
+                    var4 = var2 > var5;
+                    if (!var4) {
+                        _fun33987_ip = 57;
+                        continue _fun33987
+                    }
+                case 53:
+                    var4 = var8 < var5;
+                case 57:
+                    if (var4) {
+                        _fun33987_ip = 74;
+                        continue _fun33987
+                    }
+                case 60:
+                    var6 = var2 < var5;
+                    if (!var6) {
+                        _fun33987_ip = 71;
+                        continue _fun33987
+                    }
+                case 67:
+                    var6 = var8 > var5;
+                case 71:
+                    var4 = var6;
+                case 74:
+                    var3 = var4;
+                case 77:
+                    var0.isOvershooting = var3;
+                    var3 = global;
+                    var6 = var3.Math;
+                    var4 = var6.abs;
+                    var6 = var4.bind(var6)(var7);
+                    var4 = var1.restSpeedThreshold;
+                    var4 = var6 < var4;
+                    var0.isVelocity = var4;
+                    var4 = var3.Math;
+                    var3 = var4.abs;
+                    var2 = var5 - var2;
+                    var2 = var3.bind(var4)(var2);
+                    var1 = var1.restDisplacementThreshold;
+                    var1 = var2 < var1;
+                    var0.isDisplacement = var1;
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 3775628746247.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot13;
+        var0.__initData = var1;
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.checkIfConfigIsValid = var9;
+    var2.bisectRoot = var8;
+    var2.initialCalculations = var7;
+    var2.scaleZetaToMatchClamps = var6;
+    var2.calculateNewMassToMatchDuration = var5;
+    var2.criticallyDampedSpringCalculations = var4;
+    var2.underDampedSpringCalculations = var3;
+    var2.isAnimationTerminatingCalculation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3763, 3806]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 57, 3726]);

@@ -5,14 +5,14 @@ import okhttp3.Interceptor;
 public final class g implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f35163a;
+    private final f f35211a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f35164b;
+    private final br.h f35212b;
 
     public g(f fVar, br.h hVar) {
-        this.f35163a = fVar;
-        this.f35164b = hVar;
+        this.f35211a = fVar;
+        this.f35212b = hVar;
     }
 
     public static g a(f fVar, br.h hVar) {
@@ -26,6 +26,6 @@ public final class g implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Interceptor get() {
-        return c(this.f35163a, (c) this.f35164b.get());
+        return c(this.f35211a, (c) this.f35212b.get());
     }
 }

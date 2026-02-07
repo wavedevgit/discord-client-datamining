@@ -82,7 +82,7 @@ public final class i implements CookieJar {
             }
             return CollectionsKt.l();
         } catch (IOException e10) {
-            lu.h g10 = lu.h.f36777a.g();
+            lu.h g10 = lu.h.f36825a.g();
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Loading cookies failed for ");
             HttpUrl r10 = url.r("/...");
@@ -105,7 +105,7 @@ public final class i implements CookieJar {
         try {
             this.f7119c.put(url.t(), o0.f(v.a("Set-Cookie", arrayList)));
         } catch (IOException e10) {
-            lu.h g10 = lu.h.f36777a.g();
+            lu.h g10 = lu.h.f36825a.g();
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Saving cookies failed for ");
             HttpUrl r10 = url.r("/...");

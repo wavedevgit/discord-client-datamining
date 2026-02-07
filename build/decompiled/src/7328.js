@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/native/images/perks',
-        'width': 300.5,
-        'height': 175,
+        'httpServerLocation': '/assets/images/native/premium/illustrations',
+        'width': 180.5,
+        'height': 88,
         'scales': null,
-        'hash': '034593f3dac51b7d85899e7191ac5a9f',
-        'name': 'client_theme',
+        'hash': '170926482058c89c2a2a9d537ff237a4',
+        'name': 'img_what_you_lose_emojis',
         'type': 'png'
     };
     var4 = [2, 3];

@@ -21,11 +21,11 @@ public abstract class k {
     }
 
     public static Date d() {
-        return Calendar.getInstance(io.sentry.vendor.gson.internal.bind.util.a.f29012a).getTime();
+        return Calendar.getInstance(io.sentry.vendor.gson.internal.bind.util.a.f29060a).getTime();
     }
 
     public static Date e(long j10) {
-        Calendar calendar = Calendar.getInstance(io.sentry.vendor.gson.internal.bind.util.a.f29012a);
+        Calendar calendar = Calendar.getInstance(io.sentry.vendor.gson.internal.bind.util.a.f29060a);
         calendar.setTimeInMillis(j10);
         return calendar.getTime();
     }

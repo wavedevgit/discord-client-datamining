@@ -45,7 +45,7 @@ public /* synthetic */ class PollResources$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = PollResources.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, n2Var, lazyArr[2].getValue()};
     }
 

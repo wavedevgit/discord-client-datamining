@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/clips/isClientClipsCapable.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun31017: for (var _fun31017_ip = 0;;) switch (_fun31017_ip) {
+        _fun31026: for (var _fun31026_ip = 0;;) switch (_fun31026_ip) {
             case 0:
                 var4 = arg0;
                 var1 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var6)(var1, var0);
                 var0 = var0.ignorePlatformRestriction;
                 if (var0) {
-                    _fun31017_ip = 143;
-                    continue _fun31017
+                    _fun31026_ip = 143;
+                    continue _fun31026
                 }
             case 76:
                 var3 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isDesktop;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun31017_ip = 140;
-                    continue _fun31017
+                    _fun31026_ip = 140;
+                    continue _fun31026
                 }
             case 109:
                 var3 = var4.getMediaEngine;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3512, 3510, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3511, 3509, 478, 2]);

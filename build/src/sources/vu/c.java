@@ -7,32 +7,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f52992a;
+    private final List f53040a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f52993b;
+    private final Map f53041b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f52994c;
+    private final Object f53042c;
 
     public c(List operationData, Map mappingOperation, Object obj) {
         Intrinsics.checkNotNullParameter(operationData, "operationData");
         Intrinsics.checkNotNullParameter(mappingOperation, "mappingOperation");
-        this.f52992a = operationData;
-        this.f52993b = mappingOperation;
-        this.f52994c = obj;
+        this.f53040a = operationData;
+        this.f53041b = mappingOperation;
+        this.f53042c = obj;
     }
 
     public final Map a() {
-        return this.f52993b;
+        return this.f53041b;
     }
 
     public final List b() {
-        return this.f52992a;
+        return this.f53040a;
     }
 
     public final Object c() {
-        return this.f52994c;
+        return this.f53042c;
     }
 
     public boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f52992a, cVar.f52992a) && Intrinsics.areEqual(this.f52993b, cVar.f52993b) && Intrinsics.areEqual(this.f52994c, cVar.f52994c)) {
+        if (Intrinsics.areEqual(this.f53040a, cVar.f53040a) && Intrinsics.areEqual(this.f53041b, cVar.f53041b) && Intrinsics.areEqual(this.f53042c, cVar.f53042c)) {
             return true;
         }
         return false;
@@ -51,8 +51,8 @@ public final class c {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((this.f52992a.hashCode() * 31) + this.f52993b.hashCode()) * 31;
-        Object obj = this.f52994c;
+        int hashCode2 = ((this.f53040a.hashCode() * 31) + this.f53041b.hashCode()) * 31;
+        Object obj = this.f53042c;
         if (obj == null) {
             hashCode = 0;
         } else {
@@ -62,9 +62,9 @@ public final class c {
     }
 
     public String toString() {
-        List list = this.f52992a;
-        Map map = this.f52993b;
-        Object obj = this.f52994c;
+        List list = this.f53040a;
+        Map map = this.f53041b;
+        Object obj = this.f53042c;
         return "OccurrenceCheckInputData(operationData=" + list + ", mappingOperation=" + map + ", operationDefault=" + obj + ")";
     }
 }

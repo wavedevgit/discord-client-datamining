@@ -940,11 +940,11 @@ public class RecyclerView extends ViewGroup implements ScrollingView, s {
 
         public static Properties getProperties(@NonNull Context context, AttributeSet attributeSet, int i10, int i11) {
             Properties properties = new Properties();
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, q3.d.f46429a, i10, i11);
-            properties.f5256a = obtainStyledAttributes.getInt(q3.d.f46430b, 1);
-            properties.f5257b = obtainStyledAttributes.getInt(q3.d.f46440l, 1);
-            properties.f5258c = obtainStyledAttributes.getBoolean(q3.d.f46439k, false);
-            properties.f5259d = obtainStyledAttributes.getBoolean(q3.d.f46441m, false);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, q3.d.f46477a, i10, i11);
+            properties.f5256a = obtainStyledAttributes.getInt(q3.d.f46478b, 1);
+            properties.f5257b = obtainStyledAttributes.getInt(q3.d.f46488l, 1);
+            properties.f5258c = obtainStyledAttributes.getBoolean(q3.d.f46487k, false);
+            properties.f5259d = obtainStyledAttributes.getBoolean(q3.d.f46489m, false);
             obtainStyledAttributes.recycle();
             return properties;
         }
@@ -6587,7 +6587,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, s {
     void initFastScroller(StateListDrawable stateListDrawable, Drawable drawable, StateListDrawable stateListDrawable2, Drawable drawable2) {
         if (stateListDrawable != null && drawable != null && stateListDrawable2 != null && drawable2 != null) {
             Resources resources = getContext().getResources();
-            new androidx.recyclerview.widget.g(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(q3.b.f46422a), resources.getDimensionPixelSize(q3.b.f46424c), resources.getDimensionPixelOffset(q3.b.f46423b));
+            new androidx.recyclerview.widget.g(this, stateListDrawable, drawable, stateListDrawable2, drawable2, resources.getDimensionPixelSize(q3.b.f46470a), resources.getDimensionPixelSize(q3.b.f46472c), resources.getDimensionPixelOffset(q3.b.f46471b));
             return;
         }
         throw new IllegalArgumentException("Trying to set fast scroller without both required drawables." + exceptionLabel());
@@ -7832,7 +7832,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, s {
     }
 
     public RecyclerView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, q3.a.f46421a);
+        this(context, attributeSet, q3.a.f46469a);
     }
 
     public boolean dispatchNestedPreScroll(int i10, int i11, int[] iArr, int[] iArr2, int i12) {
@@ -8035,17 +8035,17 @@ public class RecyclerView extends ViewGroup implements ScrollingView, s {
         }
         this.mAccessibilityManager = (AccessibilityManager) getContext().getSystemService("accessibility");
         setAccessibilityDelegateCompat(new RecyclerViewAccessibilityDelegate(this));
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, q3.d.f46429a, i10, 0);
-        h0.l0(this, context, q3.d.f46429a, attributeSet, obtainStyledAttributes, i10, 0);
-        String string = obtainStyledAttributes.getString(q3.d.f46438j);
-        if (obtainStyledAttributes.getInt(q3.d.f46432d, -1) == -1) {
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, q3.d.f46477a, i10, 0);
+        h0.l0(this, context, q3.d.f46477a, attributeSet, obtainStyledAttributes, i10, 0);
+        String string = obtainStyledAttributes.getString(q3.d.f46486j);
+        if (obtainStyledAttributes.getInt(q3.d.f46480d, -1) == -1) {
             setDescendantFocusability(262144);
         }
-        this.mClipToPadding = obtainStyledAttributes.getBoolean(q3.d.f46431c, true);
-        boolean z10 = obtainStyledAttributes.getBoolean(q3.d.f46433e, false);
+        this.mClipToPadding = obtainStyledAttributes.getBoolean(q3.d.f46479c, true);
+        boolean z10 = obtainStyledAttributes.getBoolean(q3.d.f46481e, false);
         this.mEnableFastScroller = z10;
         if (z10) {
-            initFastScroller((StateListDrawable) obtainStyledAttributes.getDrawable(q3.d.f46436h), obtainStyledAttributes.getDrawable(q3.d.f46437i), (StateListDrawable) obtainStyledAttributes.getDrawable(q3.d.f46434f), obtainStyledAttributes.getDrawable(q3.d.f46435g));
+            initFastScroller((StateListDrawable) obtainStyledAttributes.getDrawable(q3.d.f46484h), obtainStyledAttributes.getDrawable(q3.d.f46485i), (StateListDrawable) obtainStyledAttributes.getDrawable(q3.d.f46482f), obtainStyledAttributes.getDrawable(q3.d.f46483g));
         }
         obtainStyledAttributes.recycle();
         this.mLowResRotaryEncoderFeature = context.getPackageManager().hasSystemFeature(LOW_RES_ROTARY_ENCODER_FEATURE);

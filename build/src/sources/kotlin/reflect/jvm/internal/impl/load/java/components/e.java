@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JavaTargetAnnotationDescriptor f32826d;
+    private final JavaTargetAnnotationDescriptor f32874d;
 
     public e(JavaTargetAnnotationDescriptor javaTargetAnnotationDescriptor) {
-        this.f32826d = javaTargetAnnotationDescriptor;
+        this.f32874d = javaTargetAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Map e10;
-        e10 = JavaTargetAnnotationDescriptor.e(this.f32826d);
+        e10 = JavaTargetAnnotationDescriptor.e(this.f32874d);
         return e10;
     }
 }

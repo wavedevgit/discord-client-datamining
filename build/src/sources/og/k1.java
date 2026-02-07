@@ -5,30 +5,30 @@ import yi.c;
 final class k1 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k1 f42185a = new k1();
+    static final k1 f42233a = new k1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42186b;
+    private static final yi.c f42234b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42187c;
+    private static final yi.c f42235c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42188d;
+    private static final yi.c f42236d;
 
     static {
         c.b a10 = yi.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f42186b = a10.b(fVar.b()).a();
+        f42234b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f42187c = a11.b(fVar2.b()).a();
+        f42235c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f42188d = a12.b(fVar3.b()).a();
+        f42236d = a12.b(fVar3.b()).a();
     }
 
     private k1() {

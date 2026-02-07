@@ -13,7 +13,7 @@ public final class t implements rs.a0 {
     public static final a f20001e = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final MutableSharedFlow f20002i = rs.c0.b(0, 1, qs.a.f48067e, 1, null);
+    private static final MutableSharedFlow f20002i = rs.c0.b(0, 1, qs.a.f48115e, 1, null);
 
     /* renamed from: d  reason: collision with root package name */
     private final /* synthetic */ MutableSharedFlow f20003d = f20002i;

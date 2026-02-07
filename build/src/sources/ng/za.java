@@ -5,7 +5,7 @@ import yi.c;
 final class za implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f40651a = new za();
+    static final za f40699a = new za();
 
     static {
         c.b a10 = yi.c.a("detectorMode");

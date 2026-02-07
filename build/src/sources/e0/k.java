@@ -131,7 +131,7 @@ public class k {
     private static void g(List list, m0.d dVar) {
         if (!list.isEmpty()) {
             int b10 = dVar.b();
-            if (!dVar.equals(m0.d.f36820c)) {
+            if (!dVar.equals(m0.d.f36868c)) {
                 Size a10 = dVar.a();
                 if (b10 != 0) {
                     if (b10 != 1) {

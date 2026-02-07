@@ -1,63 +1,58 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun94430: for (var _fun94430_ip = 0;;) switch (_fun94430_ip) {
-        case 0:
-            var3 = module;
-            var0 = {
-                8: 'backspace',
-                9: 'tab',
-                13: 'enter',
-                16: 'shift',
-                17: 'ctrl',
-                18: 'alt',
-                20: 'capslock',
-                27: 'esc',
-                32: 'space',
-                33: 'pageup',
-                34: 'pagedown',
-                35: 'end',
-                36: 'home',
-                37: 'left',
-                38: 'up',
-                39: 'right',
-                40: 'down',
-                45: 'ins',
-                46: 'del',
-                91: 'meta',
-                93: 'meta',
-                187: 'plus',
-                189: 'minus',
-                224: 'meta'
-            };
-            var3.exports = var0;
-            var8 = 1;
-            var7 = 111;
-            var6 = 'f';
-            var2 = 96;
-            var1 = 9;
-            var4 = 20;
-        case 42:
-            var10 = var3.exports;
-            var9 = var7 + var8;
-            var0 = var6 + var8;
-            var10[var9] = var0;
-            var8 = var8 + 1;
-            var0 = 0;
-            if (var8 < var4) {
-                _fun94430_ip = 42;
-                continue _fun94430
-            }
-        case 68:
-            var5 = var3.exports;
-            var4 = var0 + var2;
-            var5[var4] = var0;
-            var0 = var0 + 1;
-            if (var0 <= var1) {
-                _fun94430_ip = 68;
-                continue _fun94430
-            }
-        case 88:
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        _fun94630: for (var _fun94630_ip = 0;;) switch (_fun94630_ip) {
+            case 0:
+                var4 = arg2;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 0;
+                var3 = var5[var0];
+                var1 = undefined;
+                var7 = var2.bind(var1)(var3);
+                var3 = var7.prototype;
+                var6 = Object.create(var3, {
+                    constructor: {
+                        value: var7
+                    }
+                });
+                var9 = arg0;
+                var10 = var6;
+                var8 = var4;
+                var3 = new var10[var7](var9, var8, var7);
+                var3 = var3 instanceof Object ? var3 : var6;
+                var0 = var5[var0];
+                var2 = var2.bind(var1)(var0);
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var9 = arg1;
+                var10 = var1;
+                var8 = var4;
+                var0 = new var10[var2](var9, var8, var7);
+                var2 = var0 instanceof Object ? var0 : var1;
+                var0 = var3.compare;
+                var0 = var0.bind(var3)(var2);
+                if (var0) {
+                    _fun94630_ip = 113;
+                    continue _fun94630
+                }
+            case 102:
+                var1 = var3.compareBuild;
+                var0 = var1.bind(var3)(var2);
+            case 113:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12370]);

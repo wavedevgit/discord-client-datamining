@@ -65,7 +65,7 @@ public final class StallReport implements ReactEvent {
     public static final /* synthetic */ void write$Self$js_watchdog_release(StallReport stallReport, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.x(serialDescriptor, 0, stallReport.stallTime);
         compositeEncoder.z(serialDescriptor, 1, stallReport.sessionId);
-        compositeEncoder.l(serialDescriptor, 2, n2.f31041a, stallReport.trace);
+        compositeEncoder.l(serialDescriptor, 2, n2.f31089a, stallReport.trace);
     }
 
     public final int component1() {

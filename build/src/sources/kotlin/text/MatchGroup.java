@@ -8,20 +8,20 @@ import kotlin.ranges.IntRange;
 public final class MatchGroup {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f34928a;
+    private final String f34976a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IntRange f34929b;
+    private final IntRange f34977b;
 
     public MatchGroup(String value, IntRange range) {
         Intrinsics.checkNotNullParameter(value, "value");
         Intrinsics.checkNotNullParameter(range, "range");
-        this.f34928a = value;
-        this.f34929b = range;
+        this.f34976a = value;
+        this.f34977b = range;
     }
 
     public final String a() {
-        return this.f34928a;
+        return this.f34976a;
     }
 
     public boolean equals(Object obj) {
@@ -30,16 +30,16 @@ public final class MatchGroup {
         }
         if (obj instanceof MatchGroup) {
             MatchGroup matchGroup = (MatchGroup) obj;
-            return Intrinsics.areEqual(this.f34928a, matchGroup.f34928a) && Intrinsics.areEqual(this.f34929b, matchGroup.f34929b);
+            return Intrinsics.areEqual(this.f34976a, matchGroup.f34976a) && Intrinsics.areEqual(this.f34977b, matchGroup.f34977b);
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f34928a.hashCode() * 31) + this.f34929b.hashCode();
+        return (this.f34976a.hashCode() * 31) + this.f34977b.hashCode();
     }
 
     public String toString() {
-        return "MatchGroup(value=" + this.f34928a + ", range=" + this.f34929b + ')';
+        return "MatchGroup(value=" + this.f34976a + ", range=" + this.f34977b + ')';
     }
 }

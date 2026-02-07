@@ -7,14 +7,14 @@ import okhttp3.OkHttpClient;
 public final class f implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f36537a;
+    private final h f36585a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f36538b;
+    private final h f36586b;
 
     public f(h hVar, h hVar2) {
-        this.f36537a = hVar;
-        this.f36538b = hVar2;
+        this.f36585a = hVar;
+        this.f36586b = hVar2;
     }
 
     public static f a(h hVar, h hVar2) {
@@ -28,6 +28,6 @@ public final class f implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public c get() {
-        return c((OkHttpClient) this.f36537a.get(), (Application) this.f36538b.get());
+        return c((OkHttpClient) this.f36585a.get(), (Application) this.f36586b.get());
     }
 }

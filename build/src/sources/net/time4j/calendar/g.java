@@ -9,7 +9,7 @@ import st.v;
 class g implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final g f39187d = new g();
+    static final g f39235d = new g();
     private static final long serialVersionUID = -5874268477318061153L;
 
     g() {
@@ -80,20 +80,20 @@ class g implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f39187d;
+        return f39235d;
     }
 
     @Override // st.t
     public void v(rt.o oVar, Appendable appendable, rt.d dVar) {
         st.s l10;
-        Locale locale = (Locale) dVar.b(st.a.f50112c, Locale.ROOT);
+        Locale locale = (Locale) dVar.b(st.a.f50160c, Locale.ROOT);
         h hVar = (h) oVar.s(this);
-        if (dVar.c(ut.a.f52087m)) {
-            appendable.append(hVar.d(locale, (st.j) dVar.b(st.a.f50121l, st.j.f50170d), dVar));
+        if (dVar.c(ut.a.f52135m)) {
+            appendable.append(hVar.d(locale, (st.j) dVar.b(st.a.f50169l, st.j.f50218d), dVar));
             return;
         }
-        v vVar = (v) dVar.b(st.a.f50116g, v.WIDE);
-        st.m mVar = (st.m) dVar.b(st.a.f50117h, st.m.FORMAT);
+        v vVar = (v) dVar.b(st.a.f50164g, v.WIDE);
+        st.m mVar = (st.m) dVar.b(st.a.f50165h, st.m.FORMAT);
         if (hVar.e()) {
             l10 = st.b.c("chinese", locale).g(vVar, mVar);
         } else {

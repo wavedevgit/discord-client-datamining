@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function arg0() {
-        _fun10805: for (var _fun10805_ip = 0;;) switch (_fun10805_ip) {
+        _fun10807: for (var _fun10807_ip = 0;;) switch (_fun10807_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.WINDOW;
                 var6 = var3.requestIdleCallback;
                 if (var6) {
-                    _fun10805_ip = 76;
-                    continue _fun10805
+                    _fun10807_ip = 76;
+                    continue _fun10807
                 }
             case 48:
                 var5 = _closure1_slot0;
@@ -49,16 +49,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5 == var3;
                 var5 = undefined;
                 if (var7) {
-                    _fun10805_ip = 122;
-                    continue _fun10805
+                    _fun10807_ip = 122;
+                    continue _fun10807
                 }
             case 116:
                 var5 = var3.visibilityState;
             case 122:
                 var3 = 'hidden';
                 if (!(var3 !== var5)) {
-                    _fun10805_ip = 241;
-                    continue _fun10805
+                    _fun10807_ip = 241;
+                    continue _fun10807
                 }
             case 130:
                 var3 = _closure1_slot0;
@@ -103,8 +103,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var0)(var2);
                 var2 = var3.onHidden;
                 var2 = var2.bind(var3)(var4);
-                _fun10805_ip = 245;
-                continue _fun10805;
+                _fun10807_ip = 245;
+                continue _fun10807;
             case 241:
                 var1 = var1.bind(var0)();
             case 245:

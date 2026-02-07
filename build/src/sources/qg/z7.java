@@ -5,7 +5,7 @@ import yi.c;
 final class z7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z7 f47763a = new z7();
+    static final z7 f47811a = new z7();
 
     static {
         c.b a10 = yi.c.a("modelInfo");

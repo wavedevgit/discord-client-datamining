@@ -12,29 +12,29 @@ public enum j implements rt.i {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39414a;
+        static final /* synthetic */ int[] f39462a;
 
         static {
             int[] iArr = new int[j.values().length];
-            f39414a = iArr;
+            f39462a = iArr;
             try {
                 iArr[j.BC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39414a[j.AD.ordinal()] = 2;
+                f39462a[j.AD.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39414a[j.HISPANIC.ordinal()] = 3;
+                f39462a[j.HISPANIC.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39414a[j.BYZANTINE.ordinal()] = 4;
+                f39462a[j.BYZANTINE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f39414a[j.AB_URBE_CONDITA.ordinal()] = 5;
+                f39462a[j.AB_URBE_CONDITA.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -42,7 +42,7 @@ public enum j implements rt.i {
 
     public int a(int i10) {
         try {
-            int i11 = a.f39414a[ordinal()];
+            int i11 = a.f39462a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
@@ -68,7 +68,7 @@ public enum j implements rt.i {
     public int d(j jVar, int i10) {
         int a10 = jVar.a(i10);
         try {
-            int i11 = a.f39414a[ordinal()];
+            int i11 = a.f39462a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {

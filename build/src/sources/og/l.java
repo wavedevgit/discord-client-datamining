@@ -12,42 +12,42 @@ import yi.c;
 final class l implements yi.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Charset f42213f = Charset.forName("UTF-8");
+    private static final Charset f42261f = Charset.forName("UTF-8");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f42214g;
+    private static final yi.c f42262g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final yi.c f42215h;
+    private static final yi.c f42263h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final yi.d f42216i;
+    private static final yi.d f42264i;
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f42217a;
+    private OutputStream f42265a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f42218b;
+    private final Map f42266b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f42219c;
+    private final Map f42267c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final yi.d f42220d;
+    private final yi.d f42268d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p f42221e = new p(this);
+    private final p f42269e = new p(this);
 
     static {
         c.b a10 = yi.c.a("key");
         f fVar = new f();
         fVar.a(1);
-        f42214g = a10.b(fVar.b()).a();
+        f42262g = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("value");
         f fVar2 = new f();
         fVar2.a(2);
-        f42215h = a11.b(fVar2.b()).a();
-        f42216i = new yi.d() { // from class: og.k
+        f42263h = a11.b(fVar2.b()).a();
+        f42264i = new yi.d() { // from class: og.k
             @Override // yi.d
             public final void a(Object obj, Object obj2) {
                 l.j((Map.Entry) obj, (yi.e) obj2);
@@ -57,16 +57,16 @@ final class l implements yi.e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(OutputStream outputStream, Map map, Map map2, yi.d dVar) {
-        this.f42217a = outputStream;
-        this.f42218b = map;
-        this.f42219c = map2;
-        this.f42220d = dVar;
+        this.f42265a = outputStream;
+        this.f42266b = map;
+        this.f42267c = map2;
+        this.f42268d = dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* synthetic */ void j(Map.Entry entry, yi.e eVar) {
-        eVar.a(f42214g, entry.getKey());
-        eVar.a(f42215h, entry.getValue());
+        eVar.a(f42262g, entry.getKey());
+        eVar.a(f42263h, entry.getValue());
     }
 
     private static int k(yi.c cVar) {
@@ -80,10 +80,10 @@ final class l implements yi.e {
     private final long l(yi.d dVar, Object obj) {
         g gVar = new g();
         try {
-            OutputStream outputStream = this.f42217a;
-            this.f42217a = gVar;
+            OutputStream outputStream = this.f42265a;
+            this.f42265a = gVar;
             dVar.a(obj, this);
-            this.f42217a = outputStream;
+            this.f42265a = outputStream;
             long a10 = gVar.a();
             gVar.close();
             return a10;
@@ -120,8 +120,8 @@ final class l implements yi.e {
     }
 
     private final l o(yi.f fVar, yi.c cVar, Object obj, boolean z10) {
-        this.f42221e.a(cVar, z10);
-        fVar.a(obj, this.f42221e);
+        this.f42269e.a(cVar, z10);
+        fVar.a(obj, this.f42269e);
         return this;
     }
 
@@ -131,18 +131,18 @@ final class l implements yi.e {
 
     private final void q(int i10) {
         while ((i10 & (-128)) != 0) {
-            this.f42217a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f42265a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             i10 >>>= 7;
         }
-        this.f42217a.write(i10 & 127);
+        this.f42265a.write(i10 & 127);
     }
 
     private final void r(long j10) {
         while (((-128) & j10) != 0) {
-            this.f42217a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f42265a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             j10 >>>= 7;
         }
-        this.f42217a.write(((int) j10) & 127);
+        this.f42265a.write(((int) j10) & 127);
     }
 
     @Override // yi.e
@@ -168,7 +168,7 @@ final class l implements yi.e {
             return this;
         }
         q((k(cVar) << 3) | 1);
-        this.f42217a.write(p(8).putDouble(d10).array());
+        this.f42265a.write(p(8).putDouble(d10).array());
         return this;
     }
 
@@ -177,7 +177,7 @@ final class l implements yi.e {
             return this;
         }
         q((k(cVar) << 3) | 5);
-        this.f42217a.write(p(4).putFloat(f10).array());
+        this.f42265a.write(p(4).putFloat(f10).array());
         return this;
     }
 
@@ -188,9 +188,9 @@ final class l implements yi.e {
                 CharSequence charSequence = (CharSequence) obj;
                 if (!z10 || charSequence.length() != 0) {
                     q((k(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f42213f);
+                    byte[] bytes = charSequence.toString().getBytes(f42261f);
                     q(bytes.length);
-                    this.f42217a.write(bytes);
+                    this.f42265a.write(bytes);
                     return this;
                 }
             } else if (obj instanceof Collection) {
@@ -199,7 +199,7 @@ final class l implements yi.e {
                 }
             } else if (obj instanceof Map) {
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    n(f42216i, cVar, entry, false);
+                    n(f42264i, cVar, entry, false);
                 }
             } else if (obj instanceof Double) {
                 d(cVar, ((Double) obj).doubleValue(), z10);
@@ -218,16 +218,16 @@ final class l implements yi.e {
                 if (!z10 || bArr.length != 0) {
                     q((k(cVar) << 3) | 2);
                     q(bArr.length);
-                    this.f42217a.write(bArr);
+                    this.f42265a.write(bArr);
                     return this;
                 }
             } else {
-                yi.d dVar = (yi.d) this.f42218b.get(obj.getClass());
+                yi.d dVar = (yi.d) this.f42266b.get(obj.getClass());
                 if (dVar != null) {
                     n(dVar, cVar, obj, z10);
                     return this;
                 }
-                yi.f fVar = (yi.f) this.f42219c.get(obj.getClass());
+                yi.f fVar = (yi.f) this.f42267c.get(obj.getClass());
                 if (fVar != null) {
                     o(fVar, cVar, obj, z10);
                     return this;
@@ -238,7 +238,7 @@ final class l implements yi.e {
                     g(cVar, ((Enum) obj).ordinal(), true);
                     return this;
                 } else {
-                    n(this.f42220d, cVar, obj, z10);
+                    n(this.f42268d, cVar, obj, z10);
                     return this;
                 }
             }
@@ -256,7 +256,7 @@ final class l implements yi.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 5);
-                        this.f42217a.write(p(4).putInt(i10).array());
+                        this.f42265a.write(p(4).putInt(i10).array());
                         return this;
                     }
                 } else {
@@ -282,7 +282,7 @@ final class l implements yi.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 1);
-                        this.f42217a.write(p(8).putLong(j10).array());
+                        this.f42265a.write(p(8).putLong(j10).array());
                         return this;
                     }
                 } else {
@@ -304,7 +304,7 @@ final class l implements yi.e {
         if (obj == null) {
             return this;
         }
-        yi.d dVar = (yi.d) this.f42218b.get(obj.getClass());
+        yi.d dVar = (yi.d) this.f42266b.get(obj.getClass());
         if (dVar != null) {
             dVar.a(obj, this);
             return this;

@@ -61,17 +61,17 @@ public final class OboeAudioProcessor implements ul.a {
     public void a(c sourceFrame, c targetFrame) {
         Intrinsics.checkNotNullParameter(sourceFrame, "sourceFrame");
         Intrinsics.checkNotNullParameter(targetFrame, "targetFrame");
-        ByteBuffer byteBuffer = sourceFrame.f40894b;
-        if (byteBuffer != null && targetFrame.f40894b != null) {
-            int i10 = sourceFrame.f40895c.size / (this.f17226a * 2);
+        ByteBuffer byteBuffer = sourceFrame.f40942b;
+        if (byteBuffer != null && targetFrame.f40942b != null) {
+            int i10 = sourceFrame.f40943c.size / (this.f17226a * 2);
             Intrinsics.checkNotNullExpressionValue(byteBuffer, "sourceFrame.buffer");
-            ByteBuffer byteBuffer2 = targetFrame.f40894b;
+            ByteBuffer byteBuffer2 = targetFrame.f40942b;
             Intrinsics.checkNotNullExpressionValue(byteBuffer2, "targetFrame.buffer");
-            int processAudioFrame = processAudioFrame(byteBuffer, i10, byteBuffer2, targetFrame.f40894b.capacity());
+            int processAudioFrame = processAudioFrame(byteBuffer, i10, byteBuffer2, targetFrame.f40942b.capacity());
             int i11 = processAudioFrame * 2 * this.f17227b;
-            targetFrame.f40894b.rewind();
-            targetFrame.f40894b.limit(Math.min(i11, targetFrame.f40894b.capacity()));
-            targetFrame.f40895c.set(0, i11, this.f17230e, sourceFrame.f40895c.flags);
+            targetFrame.f40942b.rewind();
+            targetFrame.f40942b.limit(Math.min(i11, targetFrame.f40942b.capacity()));
+            targetFrame.f40943c.set(0, i11, this.f17230e, sourceFrame.f40943c.flags);
             this.f17230e += (long) (processAudioFrame * this.f17229d);
             return;
         }

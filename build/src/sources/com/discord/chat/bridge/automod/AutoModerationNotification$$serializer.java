@@ -54,9 +54,9 @@ public /* synthetic */ class AutoModerationNotification$$serializer implements h
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{n2Var, p0Var, n2Var, p0Var, a.u(n2Var), a.u(n2Var), a.u(n2Var), h.f31005a, a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(n2Var)};
+        n2 n2Var = n2.f31089a;
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{n2Var, p0Var, n2Var, p0Var, a.u(n2Var), a.u(n2Var), a.u(n2Var), h.f31053a, a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(n2Var), a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -87,11 +87,11 @@ public /* synthetic */ class AutoModerationNotification$$serializer implements h
             int i14 = b10.i(serialDescriptor, 1);
             String m11 = b10.m(serialDescriptor, 2);
             int i15 = b10.i(serialDescriptor, 3);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             boolean C = b10.C(serialDescriptor, 7);
             i10 = 8191;
             str3 = (String) b10.n(serialDescriptor, 12, n2Var, null);
-            num = (Integer) b10.n(serialDescriptor, 10, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 10, p0.f31105a, null);
             str4 = (String) b10.n(serialDescriptor, 11, n2Var, null);
             str6 = (String) b10.n(serialDescriptor, 9, n2Var, null);
             z10 = C;
@@ -145,17 +145,17 @@ public /* synthetic */ class AutoModerationNotification$$serializer implements h
                         i13 = 10;
                         c11 = '\t';
                     case 4:
-                        str18 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str18);
+                        str18 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str18);
                         i10 |= 16;
                         i13 = 10;
                         c11 = '\t';
                     case 5:
-                        str17 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str17);
                         i10 |= 32;
                         i13 = 10;
                         c11 = '\t';
                     case 6:
-                        str16 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str16);
                         i10 |= 64;
                         i13 = 10;
                         c11 = '\t';
@@ -167,25 +167,25 @@ public /* synthetic */ class AutoModerationNotification$$serializer implements h
                         c11 = '\t';
                     case 8:
                         c10 = '\b';
-                        str14 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str14);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         i13 = 10;
                         c11 = '\t';
                     case 9:
-                        str15 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str15);
+                        str15 = (String) b10.n(serialDescriptor, 9, n2.f31089a, str15);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         c11 = '\t';
                         i13 = 10;
                     case 10:
-                        num2 = (Integer) b10.n(serialDescriptor, i13, p0.f31057a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, i13, p0.f31105a, num2);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         c11 = '\t';
                     case 11:
-                        str13 = (String) b10.n(serialDescriptor, 11, n2.f31041a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 11, n2.f31089a, str13);
                         i10 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         c11 = '\t';
                     case 12:
-                        str12 = (String) b10.n(serialDescriptor, 12, n2.f31041a, str12);
+                        str12 = (String) b10.n(serialDescriptor, 12, n2.f31089a, str12);
                         i10 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         c11 = '\t';
                     default:

@@ -5,7 +5,7 @@ import yi.c;
 final class k6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f47311a = new k6();
+    static final k6 f47359a = new k6();
 
     static {
         c.b a10 = yi.c.a("supportedFormats");

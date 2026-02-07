@@ -5,23 +5,23 @@ import java.util.NoSuchElementException;
 abstract class v0 extends t {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f37151d;
+    private final int f37199d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f37152e;
+    private int f37200e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public v0(int i10, int i11) {
         t0.b(i11, i10, "index");
-        this.f37151d = i10;
-        this.f37152e = i11;
+        this.f37199d = i10;
+        this.f37200e = i11;
     }
 
     protected abstract Object a(int i10);
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final boolean hasNext() {
-        if (this.f37152e < this.f37151d) {
+        if (this.f37200e < this.f37199d) {
             return true;
         }
         return false;
@@ -29,7 +29,7 @@ abstract class v0 extends t {
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        if (this.f37152e > 0) {
+        if (this.f37200e > 0) {
             return true;
         }
         return false;
@@ -38,8 +38,8 @@ abstract class v0 extends t {
     @Override // java.util.Iterator, java.util.ListIterator
     public final Object next() {
         if (hasNext()) {
-            int i10 = this.f37152e;
-            this.f37152e = i10 + 1;
+            int i10 = this.f37200e;
+            this.f37200e = i10 + 1;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -47,14 +47,14 @@ abstract class v0 extends t {
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return this.f37152e;
+        return this.f37200e;
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
         if (hasPrevious()) {
-            int i10 = this.f37152e - 1;
-            this.f37152e = i10;
+            int i10 = this.f37200e - 1;
+            this.f37200e = i10;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -62,6 +62,6 @@ abstract class v0 extends t {
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return this.f37152e - 1;
+        return this.f37200e - 1;
     }
 }

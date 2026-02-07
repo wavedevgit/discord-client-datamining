@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 class j implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f32292d;
+    private final Name f32340d;
 
     public j(Name name) {
-        this.f32292d = name;
+        this.f32340d = name;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection s10;
-        s10 = JvmBuiltInsCustomizer.s(this.f32292d, (MemberScope) obj);
+        s10 = JvmBuiltInsCustomizer.s(this.f32340d, (MemberScope) obj);
         return s10;
     }
 }

@@ -9,23 +9,23 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface PackageViewDescriptorFactory {
     @NotNull
-    public static final Companion Companion = Companion.f32535a;
+    public static final Companion Companion = Companion.f32583a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32535a = new Companion();
+        static final /* synthetic */ Companion f32583a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ModuleCapability f32536b = new ModuleCapability("PackageViewDescriptorFactory");
+        private static final ModuleCapability f32584b = new ModuleCapability("PackageViewDescriptorFactory");
 
         private Companion() {
         }
 
         @NotNull
         public final ModuleCapability<PackageViewDescriptorFactory> getCAPABILITY() {
-            return f32536b;
+            return f32584b;
         }
     }
 

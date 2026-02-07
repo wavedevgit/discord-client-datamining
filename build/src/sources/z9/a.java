@@ -7,10 +7,10 @@ import z9.b;
 public class a implements b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0765a f55913d = new C0765a(null);
+    public static final C0765a f55961d = new C0765a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final b f55914e = new a();
+    private static final b f55962e = new a();
 
     /* renamed from: z9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

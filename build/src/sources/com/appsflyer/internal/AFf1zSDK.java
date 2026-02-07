@@ -113,17 +113,17 @@ public final class AFf1zSDK extends AFe1gSDK {
         if (responseNetwork != null) {
             if (responseNetwork.getStatusCode() == 200) {
                 try {
-                    Result.a aVar = Result.f32005e;
+                    Result.a aVar = Result.f32053e;
                     AppsFlyerInAppPurchaseValidationCallback appsFlyerInAppPurchaseValidationCallback = this.copy;
                     if (appsFlyerInAppPurchaseValidationCallback != null) {
                         appsFlyerInAppPurchaseValidationCallback.onInAppPurchaseValidationFinished(AFj1cSDK.getRevenue(new JSONObject((String) responseNetwork.getBody())));
-                        unit = Unit.f32008a;
+                        unit = Unit.f32056a;
                     } else {
                         unit = null;
                     }
                     b10 = Result.b(unit);
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f32005e;
+                    Result.a aVar2 = Result.f32053e;
                     b10 = Result.b(kotlin.c.a(th2));
                 }
                 if (Result.e(b10) != null) {

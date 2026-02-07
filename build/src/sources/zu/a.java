@@ -8,7 +8,7 @@ import zu.b;
 public final class a implements su.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56635a = new a();
+    public static final a f56683a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: zu.a$a  reason: collision with other inner class name */
@@ -16,7 +16,7 @@ public final class a implements su.b, b {
     public static final class C0807a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0807a f56636d = new C0807a();
+        public static final C0807a f56684d = new C0807a();
 
         C0807a() {
             super(2);
@@ -78,6 +78,6 @@ public final class a implements su.b, b {
     @Override // su.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0807a.f56636d));
+        return Boolean.valueOf(h(obj, C0807a.f56684d));
     }
 }

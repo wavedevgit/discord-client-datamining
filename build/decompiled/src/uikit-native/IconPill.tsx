@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/IconPill.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun66276: for (var _fun66276_ip = 0;;) switch (_fun66276_ip) {
+        _fun66726: for (var _fun66726_ip = 0;;) switch (_fun66726_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.text;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var4 = null;
                 if (!(var4 == var12)) {
-                    _fun66276_ip = 158;
-                    continue _fun66276
+                    _fun66726_ip = 158;
+                    continue _fun66726
                 }
             case 85:
                 var7 = _closure1_slot4;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var10.pillIcon;
                 var4.style = var13;
                 var6 = var7.bind(var3)(var6, var4);
-                _fun66276_ip = 188;
-                continue _fun66276;
+                _fun66726_ip = 188;
+                continue _fun66726;
             case 158:
                 var7 = _closure1_slot4;
                 var4 = {};
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 483, 33, 1297, 671, 4087, 4879, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 483, 33, 1297, 671, 4086, 4878, 2]);

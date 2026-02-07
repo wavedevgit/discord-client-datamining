@@ -40,8 +40,8 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, gt.a.u(jt.h.f31005a), LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, gt.a.u(n2Var)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, gt.a.u(jt.h.f31053a), LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,9 +58,9 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$$serializer implemen
         String str3 = null;
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
-            str2 = (String) b10.n(serialDescriptor, 3, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 3, n2.f31089a, null);
             surveyMessage = (LinkContextData.BindUserSurvey.SurveyMessage) b10.y(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -76,7 +76,7 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$$serializer implemen
                     str3 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool2);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     surveyMessage2 = (LinkContextData.BindUserSurvey.SurveyMessage) b10.y(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, surveyMessage2);
@@ -84,7 +84,7 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$$serializer implemen
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str4);
                     i11 |= 8;
                 }
             }

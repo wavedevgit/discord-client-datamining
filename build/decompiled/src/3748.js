@@ -1,153 +1,744 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
     var2 = exports;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
+    var5 = dependencyMap;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = require;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var9 = {};
-    var13 = 1;
-    var9.ENTERING = var13;
-    var1 = 'ENTERING';
-    var9[var13] = var1;
-    var12 = 2;
-    var9.EXITING = var12;
-    var1 = 'EXITING';
-    var9[var12] = var1;
-    var11 = 3;
-    var9.LAYOUT = var11;
-    var1 = 'LAYOUT';
-    var9[var11] = var1;
-    var10 = 4;
-    var9.SHARED_ELEMENT_TRANSITION = var10;
-    var1 = 'SHARED_ELEMENT_TRANSITION';
-    var9[var10] = var1;
-    var3 = 5;
-    var9.SHARED_ELEMENT_TRANSITION_PROGRESS = var3;
-    var1 = 'SHARED_ELEMENT_TRANSITION_PROGRESS';
-    var9[var3] = var1;
-    var8 = {};
-    var1 = 'animation';
-    var8.ANIMATION = var1;
-    var1 = 'progressAnimation';
-    var8.PROGRESS_ANIMATION = var1;
-    var1 = {};
-    var4 = "function isWorkletFunction_Pnpm_commonTypesTs1(value){return(typeof value==='function'&&!!value.__workletHash);}";
-    var1.code = var4;
-    var _closure1_slot0 = var1;
-    var1 = function() { // Environment: var0
-        var0 = function arg0() {
-            _fun33342: for (var _fun33342_ip = 0;;) switch (_fun33342_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var4 = var4.bind(var0)(var3);
+    var3 = 'workletsModule';
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 'reanimatedModuleProxy';
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot4;
+        var2 = function() {
+            _fun33354: for (var _fun33354_ip = 0;;) switch (_fun33354_ip) {
                 case 0:
-                    var1 = arg0;
-                    var2 = 'function';
-                    var0 = typeof var1;
-                    var0 = var2 === var0;
-                    if (!var0) {
-                        _fun33342_ip = 28;
-                        continue _fun33342
+                    var3 = this;
+                    var4 = _closure1_slot3;
+                    var1 = _closure2_slot0;
+                    var2 = undefined;
+                    var1 = var4.bind(var2)(var3, var1);
+                    var1 = global;
+                    var6 = var1.Object;
+                    var5 = var6.defineProperty;
+                    var7 = _closure1_slot6;
+                    var4 = {};
+                    var8 = true;
+                    var4.writable = var8;
+                    var4.value = var2;
+                    var4 = var5.bind(var6)(var3, var7, var4);
+                    var6 = var1.Object;
+                    var5 = var6.defineProperty;
+                    var4 = _closure1_slot7;
+                    var1 = {};
+                    var1.writable = var8;
+                    var1.value = var2;
+                    var1 = var5.bind(var6)(var3, var4, var1);
+                    var1 = _closure1_slot5;
+                    var4 = var1.bind(var2)(var3, var7);
+                    var5 = _closure1_slot1;
+                    var6 = _closure1_slot2;
+                    var1 = 4;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var2)(var1);
+                    var1 = var1.WorkletsModule;
+                    var4[var7] = var1;
+                    var1 = _closure1_slot0;
+                    var4 = 5;
+                    var4 = var6[var4];
+                    var4 = var5.bind(var2)(var4);
+                    var4 = var4.jsVersion;
+                    var1._REANIMATED_VERSION_JS = var4;
+                    var1 = var1.__reanimatedModuleProxy;
+                    if (!(var2 === var1)) {
+                        _fun33354_ip = 284;
+                        continue _fun33354
                     }
-                case 17:
-                    var1 = var1.__workletHash;
-                    var1 = !var1;
-                    var0 = !var1;
-                case 28:
+                case 175:
+                    var4 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var5 = 6;
+                    var1 = var1[var5];
+                    var1 = var4.bind(var2)(var1);
+                    var1 = var1.ReanimatedTurboModule;
+                    if (!var1) {
+                        _fun33354_ip = 284;
+                        continue _fun33354
+                    }
+                case 204:
+                    var4 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var1 = var1[var5];
+                    var1 = var4.bind(var2)(var1);
+                    var4 = var1.ReanimatedTurboModule;
+                    var1 = var4.installTurboModule;
+                    var1 = var1.bind(var4)();
+                    if (var1) {
+                        _fun33354_ip = 284;
+                        continue _fun33354
+                    }
+                case 240:
+                    var1 = _closure1_slot5;
+                    var5 = _closure1_slot7;
+                    var4 = var1.bind(var2)(var3, var5);
+                    var1 = _closure1_slot9;
+                    var6 = var1.prototype;
+                    var6 = Object.create(var6, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var13 = var6;
+                    var1 = new var13[var1](var12);
+                    var1 = var1 instanceof Object ? var1 : var6;
+                    var4[var5] = var1;
+                    _fun33354_ip = 326;
+                    continue _fun33354;
+                case 284:
+                    var1 = _closure1_slot0;
+                    var1 = var1.__reanimatedModuleProxy;
+                    if (!(var2 !== var1)) {
+                        _fun33354_ip = 328;
+                        continue _fun33354
+                    }
+                case 298:
+                    var1 = _closure1_slot5;
+                    var4 = _closure1_slot7;
+                    var3 = var1.bind(var2)(var3, var4);
+                    var1 = _closure1_slot0;
+                    var1 = var1.__reanimatedModuleProxy;
+                    var3[var4] = var1;
+                case 326:
+                    return var2;
+                case 328:
+                    var1 = _closure1_slot1;
+                    var3 = _closure1_slot2;
+                    var0 = 7;
+                    var0 = var3[var0];
+                    var0 = var1.bind(var2)(var0);
+                    var2 = var0.ReanimatedError;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var12 = "Native part of Reanimated doesn't seem to be initialized.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.";
+                    var13 = var1;
+                    var0 = new var13[var2](var12, var11);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+            }
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'scheduleOnUI';
+        var0.key = var1;
+        var1 = function arg0() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var2 = var0[var1];
+            var1 = var2.scheduleOnUI;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(19);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'executeOnUIRuntimeSync';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var2 = var0[var1];
+            var1 = var2.executeOnUIRuntimeSync;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'createWorkletRuntime';
+        var0.key = var5;
+        var5 = function arg0, arg1() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var3 = var0[var1];
+            var2 = var3.createWorkletRuntime;
+            var1 = arg0;
+            var0 = arg1;
+            var0 = var2.bind(var3)(var1, var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'scheduleOnRuntime';
+        var0.key = var5;
+        var5 = function arg0, arg1() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var3 = var0[var1];
+            var2 = var3.scheduleOnRuntime;
+            var1 = arg0;
+            var0 = arg1;
+            var0 = var2.bind(var3)(var1, var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'registerSensor';
+        var0.key = var5;
+        var5 = function arg0, arg1, arg2, arg3() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var5 = var0[var1];
+            var4 = var5.registerSensor;
+            var9 = arg0;
+            var8 = arg1;
+            var7 = arg2;
+            var6 = arg3;
+            var10 = var5;
+            var0 = var10[var4](var9, var8, var7, var6, var5);
+            return var0;
+        };
+        var0.value = var5;
+        var1[4] = var0;
+        var0 = {};
+        var5 = 'unregisterSensor';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var2 = var0[var1];
+            var1 = var2.unregisterSensor;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[5] = var0;
+        var0 = {};
+        var5 = 'registerEventHandler';
+        var0.key = var5;
+        var5 = function arg0, arg1, arg2() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var4 = var0[var1];
+            var3 = var4.registerEventHandler;
+            var2 = arg0;
+            var1 = arg1;
+            var0 = arg2;
+            var0 = var3.bind(var4)(var2, var1, var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[6] = var0;
+        var0 = {};
+        var5 = 'unregisterEventHandler';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var2 = var0[var1];
+            var1 = var2.unregisterEventHandler;
+            var0 = arg0;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[7] = var0;
+        var0 = {};
+        var5 = 'getViewProp';
+        var0.key = var5;
+        var5 = function arg0, arg1, arg2, arg3() {
+            _fun33363: for (var _fun33363_ip = 0;;) switch (_fun33363_ip) {
+                case 0:
+                    var5 = arg1;
+                    var4 = arg3;
+                    var7 = this;
+                    var1 = _closure1_slot1;
+                    var3 = _closure1_slot2;
+                    var0 = 8;
+                    var0 = var3[var0];
+                    var6 = undefined;
+                    var1 = var1.bind(var6)(var0);
+                    var0 = var1.isFabric;
+                    var0 = var0.bind(var1)();
+                    if (var0) {
+                        _fun33363_ip = 83;
+                        continue _fun33363
+                    }
+                case 47:
+                    var0 = _closure1_slot5;
+                    var1 = _closure1_slot7;
+                    var0 = var0.bind(var6)(var7, var1);
+                    var3 = var0[var1];
+                    var1 = var3.getViewProp;
+                    var0 = arg0;
+                    var0 = var1.bind(var3)(var0, var5, var4);
+                    _fun33363_ip = 148;
+                    continue _fun33363;
+                case 83:
+                    var3 = _closure1_slot1;
+                    var8 = _closure1_slot2;
+                    var1 = 9;
+                    var1 = var8[var1];
+                    var8 = var3.bind(var6)(var1);
+                    var3 = var8.getShadowNodeWrapperFromRef;
+                    var1 = arg2;
+                    var3 = var3.bind(var8)(var1);
+                    var1 = _closure1_slot5;
+                    var2 = _closure1_slot7;
+                    var1 = var1.bind(var6)(var7, var2);
+                    var2 = var1[var2];
+                    var1 = var2.getViewProp;
+                    var0 = var1.bind(var2)(var3, var5, var4);
+                case 148:
                     return var0;
             }
         };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 327007448384.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot0;
-        var0.__initData = var1;
+        var0.value = var5;
+        var1[8] = var0;
+        var0 = {};
+        var5 = 'configureLayoutAnimationBatch';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.configureLayoutAnimationBatch;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[9] = var0;
+        var0 = {};
+        var5 = 'setShouldAnimateExitingForTag';
+        var0.key = var5;
+        var5 = function arg0, arg1() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var4 = var1[var2];
+            var3 = var4.setShouldAnimateExitingForTag;
+            var2 = arg0;
+            var1 = arg1;
+            var1 = var3.bind(var4)(var2, var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[10] = var0;
+        var0 = {};
+        var5 = 'enableLayoutAnimations';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.enableLayoutAnimations;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[11] = var0;
+        var0 = {};
+        var5 = 'configureProps';
+        var0.key = var5;
+        var5 = function arg0, arg1() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var4 = var1[var2];
+            var3 = var4.configureProps;
+            var2 = arg0;
+            var1 = arg1;
+            var1 = var3.bind(var4)(var2, var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[12] = var0;
+        var0 = {};
+        var5 = 'subscribeForKeyboardEvents';
+        var0.key = var5;
+        var5 = function arg0, arg1, arg2() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var4 = var0[var1];
+            var3 = var4.subscribeForKeyboardEvents;
+            var2 = arg0;
+            var1 = arg1;
+            var0 = arg2;
+            var0 = var3.bind(var4)(var2, var1, var0);
+            return var0;
+        };
+        var0.value = var5;
+        var1[13] = var0;
+        var0 = {};
+        var5 = 'unsubscribeFromKeyboardEvents';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.unsubscribeFromKeyboardEvents;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[14] = var0;
+        var0 = {};
+        var5 = 'markNodeAsRemovable';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.markNodeAsRemovable;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[15] = var0;
+        var0 = {};
+        var5 = 'unmarkNodeAsRemovable';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.unmarkNodeAsRemovable;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[16] = var0;
+        var0 = {};
+        var5 = 'setNodeRemovalCallback';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = _closure1_slot5;
+            var2 = _closure1_slot7;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            var3 = var1[var2];
+            var2 = var3.setNodeRemovalCallback;
+            var1 = arg0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var5;
+        var1[17] = var0;
+        var0 = {};
+        var5 = 'getSettledUpdates';
+        var0.key = var5;
+        var4 = function() {
+            var3 = _closure1_slot5;
+            var1 = _closure1_slot7;
+            var2 = undefined;
+            var0 = this;
+            var0 = var3.bind(var2)(var0, var1);
+            var1 = var0[var1];
+            var0 = var1.getSettledUpdates;
+            var0 = var0.bind(var1)();
+            return var0;
+        };
+        var0.value = var4;
+        var1[18] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
         return var0;
     };
-    var0 = undefined;
-    var7 = var1.bind(var0)();
-    var6 = {};
-    var6.ACCELEROMETER = var13;
-    var1 = 'ACCELEROMETER';
-    var6[var13] = var1;
-    var6.GYROSCOPE = var12;
-    var1 = 'GYROSCOPE';
-    var6[var12] = var1;
-    var6.GRAVITY = var11;
-    var1 = 'GRAVITY';
-    var6[var11] = var1;
-    var6.MAGNETIC_FIELD = var10;
-    var1 = 'MAGNETIC_FIELD';
-    var6[var10] = var1;
-    var6.ROTATION = var3;
-    var1 = 'ROTATION';
-    var6[var3] = var1;
-    var5 = {};
-    var14 = 0;
-    var5.XArbitraryZVertical = var14;
-    var1 = 'XArbitraryZVertical';
-    var5[var14] = var1;
-    var5.XArbitraryCorrectedZVertical = var13;
-    var1 = 'XArbitraryCorrectedZVertical';
-    var5[var13] = var1;
-    var5.XMagneticNorthZVertical = var12;
-    var1 = 'XMagneticNorthZVertical';
-    var5[var12] = var1;
-    var5.XTrueNorthZVertical = var11;
-    var1 = 'XTrueNorthZVertical';
-    var5[var11] = var1;
-    var5.Auto = var10;
-    var1 = 'Auto';
-    var5[var10] = var1;
-    var4 = {};
-    var4.ROTATION_0 = var14;
-    var1 = 'ROTATION_0';
-    var4[var14] = var1;
-    var3 = 90;
-    var4.ROTATION_90 = var3;
-    var1 = 'ROTATION_90';
-    var4[var3] = var1;
-    var3 = 180;
-    var4.ROTATION_180 = var3;
-    var1 = 'ROTATION_180';
-    var4[var3] = var1;
-    var3 = 270;
-    var4.ROTATION_270 = var3;
-    var1 = 'ROTATION_270';
-    var4[var3] = var1;
-    var3 = {};
-    var3.UNKNOWN = var14;
-    var1 = 'UNKNOWN';
-    var3[var14] = var1;
-    var3.OPENING = var13;
-    var1 = 'OPENING';
-    var3[var13] = var1;
-    var3.OPEN = var12;
-    var1 = 'OPEN';
-    var3[var12] = var1;
-    var3.CLOSING = var11;
-    var1 = 'CLOSING';
-    var3[var11] = var1;
-    var3.CLOSED = var10;
-    var1 = 'CLOSED';
-    var3[var10] = var1;
-    var1 = {};
-    var10 = 'system';
-    var1.System = var10;
-    var10 = 'always';
-    var1.Always = var10;
-    var10 = 'never';
-    var1.Never = var10;
-    var2.LayoutAnimationType = var9;
-    var2.SharedTransitionType = var8;
-    var2.isWorkletFunction = var7;
-    var2.SensorType = var6;
-    var2.IOSReferenceFrame = var5;
-    var2.InterfaceOrientation = var4;
-    var2.KeyboardState = var3;
-    var2.ReduceMotion = var1;
+    var3 = var3.bind(var0)();
+    var _closure1_slot8 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot4;
+        var2 = function() {
+            var3 = _closure1_slot3;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            return var0;
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'scheduleOnUI';
+        var0.key = var1;
+        var1 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(19);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'executeOnUIRuntimeSync';
+        var0.key = var5;
+        var5 = function() {
+            var0 = null;
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'createWorkletRuntime';
+        var0.key = var5;
+        var5 = function() {
+            var0 = null;
+            return var0;
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'scheduleOnRuntime';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'configureLayoutAnimationBatch';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[4] = var0;
+        var0 = {};
+        var5 = 'setShouldAnimateExitingForTag';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[5] = var0;
+        var0 = {};
+        var5 = 'enableLayoutAnimations';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[6] = var0;
+        var0 = {};
+        var5 = 'configureProps';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[7] = var0;
+        var0 = {};
+        var5 = 'subscribeForKeyboardEvents';
+        var0.key = var5;
+        var5 = function() {
+            var0 = -1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[8] = var0;
+        var0 = {};
+        var5 = 'unsubscribeFromKeyboardEvents';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[9] = var0;
+        var0 = {};
+        var5 = 'markNodeAsRemovable';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[10] = var0;
+        var0 = {};
+        var5 = 'unmarkNodeAsRemovable';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[11] = var0;
+        var0 = {};
+        var5 = 'setNodeRemovalCallback';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[12] = var0;
+        var0 = {};
+        var5 = 'registerSensor';
+        var0.key = var5;
+        var5 = function() {
+            var0 = -1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[13] = var0;
+        var0 = {};
+        var5 = 'unregisterSensor';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[14] = var0;
+        var0 = {};
+        var5 = 'registerEventHandler';
+        var0.key = var5;
+        var5 = function() {
+            var0 = -1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[15] = var0;
+        var0 = {};
+        var5 = 'unregisterEventHandler';
+        var0.key = var5;
+        var5 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var1[16] = var0;
+        var0 = {};
+        var5 = 'getViewProp';
+        var0.key = var5;
+        var5 = function() {
+            var0 = null;
+            return var0;
+        };
+        var0.value = var5;
+        var1[17] = var0;
+        var0 = {};
+        var5 = 'getSettledUpdates';
+        var0.key = var5;
+        var4 = function() {
+            var0 = new Array(0);
+            return var0;
+        };
+        var0.value = var4;
+        var1[18] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot9 = var3;
+    var1 = function() {
+        var0 = _closure1_slot8;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var2 = var1;
+        var0 = new var2[var0](var1);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var2.createNativeReanimatedModule = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 99, 100, 3738, 3749, 3744, 3733, 3725, 3750]);

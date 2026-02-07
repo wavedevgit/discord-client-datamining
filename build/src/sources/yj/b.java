@@ -25,23 +25,23 @@ import ng.ze;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SparseArray f55381a;
+    private static final SparseArray f55429a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SparseArray f55382b;
+    private static final SparseArray f55430b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final AtomicReference f55383c;
+    static final AtomicReference f55431c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f55384d;
+    private static final Map f55432d;
 
     static {
         SparseArray sparseArray = new SparseArray();
-        f55381a = sparseArray;
+        f55429a = sparseArray;
         SparseArray sparseArray2 = new SparseArray();
-        f55382b = sparseArray2;
-        f55383c = new AtomicReference();
+        f55430b = sparseArray2;
+        f55431c = new AtomicReference();
         sparseArray.put(-1, kf.FORMAT_UNKNOWN);
         sparseArray.put(1, kf.FORMAT_CODE_128);
         sparseArray.put(2, kf.FORMAT_CODE_39);
@@ -70,7 +70,7 @@ public abstract class b {
         sparseArray2.put(11, lf.TYPE_CALENDAR_EVENT);
         sparseArray2.put(12, lf.TYPE_DRIVER_LICENSE);
         HashMap hashMap = new HashMap();
-        f55384d = hashMap;
+        f55432d = hashMap;
         hashMap.put(1, tj.CODE_128);
         hashMap.put(2, tj.CODE_39);
         hashMap.put(4, tj.CODE_93);
@@ -87,7 +87,7 @@ public abstract class b {
     }
 
     public static kf a(int i10) {
-        kf kfVar = (kf) f55381a.get(i10);
+        kf kfVar = (kf) f55429a.get(i10);
         if (kfVar == null) {
             return kf.FORMAT_UNKNOWN;
         }
@@ -95,7 +95,7 @@ public abstract class b {
     }
 
     public static lf b(int i10) {
-        lf lfVar = (lf) f55382b.get(i10);
+        lf lfVar = (lf) f55430b.get(i10);
         if (lfVar == null) {
             return lf.TYPE_UNKNOWN;
         }
@@ -106,9 +106,9 @@ public abstract class b {
         int a10 = bVar.a();
         f1 f1Var = new f1();
         if (a10 == 0) {
-            f1Var.f(f55384d.values());
+            f1Var.f(f55432d.values());
         } else {
-            for (Map.Entry entry : f55384d.entrySet()) {
+            for (Map.Entry entry : f55432d.entrySet()) {
                 if ((((Integer) entry.getKey()).intValue() & a10) != 0) {
                     f1Var.e((tj) entry.getValue());
                 }
@@ -150,7 +150,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean f() {
-        AtomicReference atomicReference = f55383c;
+        AtomicReference atomicReference = f55431c;
         if (atomicReference.get() != null) {
             return ((Boolean) atomicReference.get()).booleanValue();
         }

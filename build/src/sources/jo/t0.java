@@ -26,51 +26,51 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t0 extends RecyclerView.Adapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f30662a;
+    private final List f30710a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final StepStyles.GovernmentIdStepStyle f30663b;
+    private final StepStyles.GovernmentIdStepStyle f30711b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NextStep.GovernmentId.AssetConfig.SelectPage f30664c;
+    private final NextStep.GovernmentId.AssetConfig.SelectPage f30712c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f30665d;
+    private final Function1 f30713d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final HashMap f30666e;
+    private final HashMap f30714e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f30667f;
+    private final boolean f30715f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f30668g;
+    private boolean f30716g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30669a;
+        public static final /* synthetic */ int[] f30717a;
 
         static {
             int[] iArr = new int[g4.values().length];
             try {
-                iArr[g4.f30305d.ordinal()] = 1;
+                iArr[g4.f30353d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[g4.f30306e.ordinal()] = 2;
+                iArr[g4.f30354e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[g4.f30307i.ordinal()] = 3;
+                iArr[g4.f30355i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[g4.f30308o.ordinal()] = 4;
+                iArr[g4.f30356o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f30669a = iArr;
+            f30717a = iArr;
         }
     }
 
@@ -78,13 +78,13 @@ public final class t0 extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(onClick, "onClick");
-        this.f30662a = data;
-        this.f30663b = governmentIdStepStyle;
-        this.f30664c = selectPage;
-        this.f30665d = onClick;
-        this.f30666e = new HashMap();
-        this.f30667f = !rp.s.b(context, jp.a.f30764d, null, false, false, 14, null);
-        this.f30668g = true;
+        this.f30710a = data;
+        this.f30711b = governmentIdStepStyle;
+        this.f30712c = selectPage;
+        this.f30713d = onClick;
+        this.f30714e = new HashMap();
+        this.f30715f = !rp.s.b(context, jp.a.f30812d, null, false, false, 14, null);
+        this.f30716g = true;
     }
 
     private final void b(no.e eVar) {
@@ -92,27 +92,27 @@ public final class t0 extends RecyclerView.Adapter {
         Integer backgroundColorValue;
         Integer chevronColor;
         TextBasedComponentStyle governmentIdVerticalOptionTextStyle;
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f30711b;
         if (governmentIdStepStyle != null && (governmentIdVerticalOptionTextStyle = governmentIdStepStyle.getGovernmentIdVerticalOptionTextStyle()) != null) {
-            TextView label = eVar.f41006e;
+            TextView label = eVar.f41054e;
             Intrinsics.checkNotNullExpressionValue(label, "label");
             kq.f0.n(label, governmentIdVerticalOptionTextStyle, null, 2, null);
         }
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = this.f30711b;
         if (governmentIdStepStyle2 != null && (chevronColor = governmentIdStepStyle2.getChevronColor()) != null) {
-            eVar.f41003b.setColorFilter(chevronColor.intValue());
+            eVar.f41051b.setColorFilter(chevronColor.intValue());
         }
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle3 = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle3 = this.f30711b;
         if (governmentIdStepStyle3 != null && (backgroundColorValue = governmentIdStepStyle3.getBackgroundColorValue()) != null) {
             int intValue = backgroundColorValue.intValue();
-            Integer activeOptionBackgroundColorValue = this.f30663b.getActiveOptionBackgroundColorValue();
+            Integer activeOptionBackgroundColorValue = this.f30711b.getActiveOptionBackgroundColorValue();
             if (activeOptionBackgroundColorValue != null) {
                 eVar.getRoot().setBackground(new RippleDrawable(c(activeOptionBackgroundColorValue.intValue()), new ColorDrawable(intValue), null));
             }
         }
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle4 = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle4 = this.f30711b;
         if (governmentIdStepStyle4 != null && (governmentIdSelectOptionMinRowHeight = governmentIdStepStyle4.getGovernmentIdSelectOptionMinRowHeight()) != null) {
-            eVar.f41007f.setMinHeight((int) rp.h.a(governmentIdSelectOptionMinRowHeight.doubleValue()));
+            eVar.f41055f.setMinHeight((int) rp.h.a(governmentIdSelectOptionMinRowHeight.doubleValue()));
         }
     }
 
@@ -126,7 +126,7 @@ public final class t0 extends RecyclerView.Adapter {
         if (num != null) {
             drawable.mutate().setTint(num.intValue());
         }
-        Drawable b10 = g.a.b(context, l4.f30359e);
+        Drawable b10 = g.a.b(context, l4.f30407e);
         if (num2 != null && b10 != null && (mutate = b10.mutate()) != null) {
             mutate.setTint(num2.intValue());
         }
@@ -139,21 +139,21 @@ public final class t0 extends RecyclerView.Adapter {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void e(t0 t0Var, b0 b0Var, View view) {
-        t0Var.f30665d.invoke(b0Var.b());
+        t0Var.f30713d.invoke(b0Var.b());
     }
 
     private final void h(no.e eVar, Drawable drawable) {
         Integer num;
         Integer governmentIdIconFillColor;
         Integer governmentIdIconStrokeColor;
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f30711b;
         Integer num2 = null;
         if (governmentIdStepStyle != null && (governmentIdIconStrokeColor = governmentIdStepStyle.getGovernmentIdIconStrokeColor()) != null) {
             num = Integer.valueOf(governmentIdIconStrokeColor.intValue());
         } else {
             num = null;
         }
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = this.f30663b;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle2 = this.f30711b;
         if (governmentIdStepStyle2 != null && (governmentIdIconFillColor = governmentIdStepStyle2.getGovernmentIdIconFillColor()) != null) {
             num2 = Integer.valueOf(governmentIdIconFillColor.intValue());
         }
@@ -161,7 +161,7 @@ public final class t0 extends RecyclerView.Adapter {
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         Drawable mutate = d(context, num, num2, drawable).mutate();
         Intrinsics.checkNotNullExpressionValue(mutate, "mutate(...)");
-        eVar.f41004c.setImageDrawable(mutate);
+        eVar.f41052c.setImageDrawable(mutate);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -178,16 +178,16 @@ public final class t0 extends RecyclerView.Adapter {
     }
 
     public final void g(boolean z10) {
-        if (this.f30668g == z10) {
+        if (this.f30716g == z10) {
             return;
         }
-        this.f30668g = z10;
+        this.f30716g = z10;
         notifyDataSetChanged();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemCount() {
-        return this.f30662a.size();
+        return this.f30710a.size();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
@@ -195,20 +195,20 @@ public final class t0 extends RecyclerView.Adapter {
         RemoteImage iconPassport;
         int i11;
         Intrinsics.checkNotNullParameter(holder, "holder");
-        final b0 b0Var = (b0) this.f30662a.get(i10);
+        final b0 b0Var = (b0) this.f30710a.get(i10);
         no.e eVar = (no.e) rp.c0.a(holder);
-        eVar.f41006e.setText(b0Var.getName());
+        eVar.f41054e.setText(b0Var.getName());
         g4 a10 = b0Var.a();
-        int[] iArr = a.f30669a;
+        int[] iArr = a.f30717a;
         int i12 = iArr[a10.ordinal()];
         View view = null;
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 != 3) {
                     if (i12 == 4) {
-                        NextStep.GovernmentId.AssetConfig.SelectPage selectPage = this.f30664c;
+                        NextStep.GovernmentId.AssetConfig.SelectPage selectPage = this.f30712c;
                         if (selectPage == null || (iconPassport = selectPage.getIconNationalId()) == null) {
-                            NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = this.f30664c;
+                            NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = this.f30712c;
                             if (selectPage2 != null) {
                                 iconPassport = selectPage2.getIconGovernmentId();
                             }
@@ -218,76 +218,76 @@ public final class t0 extends RecyclerView.Adapter {
                         throw new qr.p();
                     }
                 } else {
-                    NextStep.GovernmentId.AssetConfig.SelectPage selectPage3 = this.f30664c;
+                    NextStep.GovernmentId.AssetConfig.SelectPage selectPage3 = this.f30712c;
                     if (selectPage3 != null) {
                         iconPassport = selectPage3.getIconDriversLicense();
                     }
                     iconPassport = null;
                 }
             } else {
-                NextStep.GovernmentId.AssetConfig.SelectPage selectPage4 = this.f30664c;
+                NextStep.GovernmentId.AssetConfig.SelectPage selectPage4 = this.f30712c;
                 if (selectPage4 != null) {
                     iconPassport = selectPage4.getIconGovernmentId();
                 }
                 iconPassport = null;
             }
         } else {
-            NextStep.GovernmentId.AssetConfig.SelectPage selectPage5 = this.f30664c;
+            NextStep.GovernmentId.AssetConfig.SelectPage selectPage5 = this.f30712c;
             if (selectPage5 != null) {
                 iconPassport = selectPage5.getIconPassport();
             }
             iconPassport = null;
         }
-        Object tag = eVar.f41005d.getTag(m4.f30390h0);
+        Object tag = eVar.f41053d.getTag(m4.f30438h0);
         if (tag instanceof View) {
             view = (View) tag;
         }
         if (view != null) {
-            eVar.f41005d.removeView(view);
+            eVar.f41053d.removeView(view);
         }
-        if (!this.f30667f) {
-            eVar.f41005d.setVisibility(8);
-            TextView label = eVar.f41006e;
+        if (!this.f30715f) {
+            eVar.f41053d.setVisibility(8);
+            TextView label = eVar.f41054e;
             Intrinsics.checkNotNullExpressionValue(label, "label");
             label.setPaddingRelative(0, label.getPaddingTop(), label.getPaddingEnd(), label.getPaddingBottom());
         } else if (iconPassport != null) {
-            ConstraintLayout iconContainer = eVar.f41005d;
+            ConstraintLayout iconContainer = eVar.f41053d;
             Intrinsics.checkNotNullExpressionValue(iconContainer, "iconContainer");
-            eVar.f41005d.setTag(m4.f30390h0, mq.b.b(iconPassport, iconContainer, true));
-            eVar.f41004c.setVisibility(8);
-            TextView label2 = eVar.f41006e;
+            eVar.f41053d.setTag(m4.f30438h0, mq.b.b(iconPassport, iconContainer, true));
+            eVar.f41052c.setVisibility(8);
+            TextView label2 = eVar.f41054e;
             Intrinsics.checkNotNullExpressionValue(label2, "label");
             label2.setPaddingRelative((int) rp.h.a(8.0d), label2.getPaddingTop(), label2.getPaddingEnd(), label2.getPaddingBottom());
         } else {
-            eVar.f41004c.setVisibility(0);
-            if (this.f30666e.get(Integer.valueOf(i10)) != null) {
-                eVar.f41004c.setImageDrawable((Drawable) this.f30666e.get(Integer.valueOf(i10)));
+            eVar.f41052c.setVisibility(0);
+            if (this.f30714e.get(Integer.valueOf(i10)) != null) {
+                eVar.f41052c.setImageDrawable((Drawable) this.f30714e.get(Integer.valueOf(i10)));
             } else {
                 int i13 = iArr[b0Var.a().ordinal()];
                 if (i13 != 1) {
                     if (i13 != 2) {
                         if (i13 != 3) {
                             if (i13 == 4) {
-                                i11 = l4.f30363i;
+                                i11 = l4.f30411i;
                             } else {
                                 throw new qr.p();
                             }
                         } else {
-                            i11 = l4.f30362h;
+                            i11 = l4.f30410h;
                         }
                     } else {
-                        i11 = l4.f30358d;
+                        i11 = l4.f30406d;
                     }
                 } else {
-                    i11 = l4.f30365k;
+                    i11 = l4.f30413k;
                 }
                 Drawable b10 = g.a.b(eVar.getRoot().getContext(), i11);
                 if (b10 != null) {
                     h(eVar, b10);
-                    this.f30666e.put(Integer.valueOf(i10), eVar.f41004c.getDrawable());
+                    this.f30714e.put(Integer.valueOf(i10), eVar.f41052c.getDrawable());
                 }
             }
-            TextView label3 = eVar.f41006e;
+            TextView label3 = eVar.f41054e;
             Intrinsics.checkNotNullExpressionValue(label3, "label");
             label3.setPaddingRelative((int) rp.h.a(8.0d), label3.getPaddingTop(), label3.getPaddingEnd(), label3.getPaddingBottom());
         }
@@ -297,6 +297,6 @@ public final class t0 extends RecyclerView.Adapter {
                 t0.e(t0.this, b0Var, view2);
             }
         });
-        eVar.getRoot().setEnabled(this.f30668g);
+        eVar.getRoot().setEnabled(this.f30716g);
     }
 }

@@ -7,32 +7,32 @@ import kotlinx.serialization.json.Json;
 public final class u extends m {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Json f36721c;
+    private final Json f36769c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f36722d;
+    private int f36770d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public u(z writer, Json json) {
         super(writer);
         Intrinsics.checkNotNullParameter(writer, "writer");
         Intrinsics.checkNotNullParameter(json, "json");
-        this.f36721c = json;
+        this.f36769c = json;
     }
 
     @Override // lt.m
     public void b() {
         o(true);
-        this.f36722d++;
+        this.f36770d++;
     }
 
     @Override // lt.m
     public void c() {
         o(false);
         k(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
-        int i10 = this.f36722d;
+        int i10 = this.f36770d;
         for (int i11 = 0; i11 < i10; i11++) {
-            k(this.f36721c.e().n());
+            k(this.f36769c.e().n());
         }
     }
 
@@ -52,6 +52,6 @@ public final class u extends m {
 
     @Override // lt.m
     public void q() {
-        this.f36722d--;
+        this.f36770d--;
     }
 }

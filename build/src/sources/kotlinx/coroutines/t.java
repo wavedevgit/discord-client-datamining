@@ -14,10 +14,10 @@ import os.s0;
 public final class t extends s implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Executor f35083o;
+    private final Executor f35131o;
 
     public t(Executor executor) {
-        this.f35083o = executor;
+        this.f35131o = executor;
         ts.a.a(f2());
     }
 
@@ -73,7 +73,7 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             return new n(scheduledFuture);
         }
-        return j.f35066t.Y(j11, runnable2, coroutineContext2);
+        return j.f35114t.Y(j11, runnable2, coroutineContext2);
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -99,7 +99,7 @@ public final class t extends s implements k {
 
     @Override // kotlinx.coroutines.s
     public Executor f2() {
-        return this.f35083o;
+        return this.f35131o;
     }
 
     public int hashCode() {
@@ -131,7 +131,7 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             os.l.c(cancellableContinuation, new c(scheduledFuture));
         } else {
-            j.f35066t.y(j11, cancellableContinuation);
+            j.f35114t.y(j11, cancellableContinuation);
         }
     }
 }

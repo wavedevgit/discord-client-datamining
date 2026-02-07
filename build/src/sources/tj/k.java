@@ -9,23 +9,23 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final n f50629a;
+    protected final n f50677a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicInteger f50630b;
+    private final AtomicInteger f50678b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final AtomicBoolean f50631c;
+    private final AtomicBoolean f50679c;
 
     public k() {
-        this.f50630b = new AtomicInteger(0);
-        this.f50631c = new AtomicBoolean(false);
-        this.f50629a = new n();
+        this.f50678b = new AtomicInteger(0);
+        this.f50679c = new AtomicBoolean(false);
+        this.f50677a = new n();
     }
 
     public Task a(final Executor executor, final Callable callable, final yg.a aVar) {
         boolean z10;
-        if (this.f50630b.get() > 0) {
+        if (this.f50678b.get() > 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -36,7 +36,7 @@ public abstract class k {
         }
         final yg.b bVar = new yg.b();
         final yg.k kVar = new yg.k(bVar.b());
-        this.f50629a.a(new Executor() { // from class: tj.y
+        this.f50677a.a(new Executor() { // from class: tj.y
             @Override // java.util.concurrent.Executor
             public final void execute(Runnable runnable) {
                 try {
@@ -62,7 +62,7 @@ public abstract class k {
     public abstract void b();
 
     public void c() {
-        this.f50630b.incrementAndGet();
+        this.f50678b.incrementAndGet();
     }
 
     protected abstract void d();
@@ -73,14 +73,14 @@ public abstract class k {
 
     public Task f(Executor executor) {
         boolean z10;
-        if (this.f50630b.get() > 0) {
+        if (this.f50678b.get() > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         gf.q.n(z10);
         final yg.k kVar = new yg.k();
-        this.f50629a.a(executor, new Runnable() { // from class: tj.x
+        this.f50677a.a(executor, new Runnable() { // from class: tj.x
             @Override // java.lang.Runnable
             public final void run() {
                 k.this.h(kVar);
@@ -97,9 +97,9 @@ public abstract class k {
                 return;
             }
             try {
-                if (!this.f50631c.get()) {
+                if (!this.f50679c.get()) {
                     b();
-                    this.f50631c.set(true);
+                    this.f50679c.set(true);
                 }
                 if (aVar.a()) {
                     bVar.a();
@@ -126,7 +126,7 @@ public abstract class k {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void h(yg.k kVar) {
         boolean z10;
-        int decrementAndGet = this.f50630b.decrementAndGet();
+        int decrementAndGet = this.f50678b.decrementAndGet();
         if (decrementAndGet >= 0) {
             z10 = true;
         } else {
@@ -135,7 +135,7 @@ public abstract class k {
         gf.q.n(z10);
         if (decrementAndGet == 0) {
             d();
-            this.f50631c.set(false);
+            this.f50679c.set(false);
         }
         mg.x.a();
         kVar.c(null);
@@ -143,8 +143,8 @@ public abstract class k {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public k(n nVar) {
-        this.f50630b = new AtomicInteger(0);
-        this.f50631c = new AtomicBoolean(false);
-        this.f50629a = nVar;
+        this.f50678b = new AtomicInteger(0);
+        this.f50679c = new AtomicBoolean(false);
+        this.f50677a = nVar;
     }
 }

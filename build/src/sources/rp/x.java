@@ -3,14 +3,14 @@ package rp;
 public final class x implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v f49150a;
+    private final v f49198a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f49151b;
+    private final br.h f49199b;
 
     public x(v vVar, br.h hVar) {
-        this.f49150a = vVar;
-        this.f49151b = hVar;
+        this.f49198a = vVar;
+        this.f49199b = hVar;
     }
 
     public static x a(v vVar, br.h hVar) {
@@ -24,6 +24,6 @@ public final class x implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public xp.a get() {
-        return c(this.f49150a, (xp.b) this.f49151b.get());
+        return c(this.f49198a, (xp.b) this.f49199b.get());
     }
 }

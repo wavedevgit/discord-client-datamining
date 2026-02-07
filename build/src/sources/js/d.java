@@ -25,7 +25,7 @@ public abstract class d {
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f30948d = new a();
+        public static final a f30996d = new a();
 
         a() {
             super(2, MemberDeserializer.class, "loadFunction", "loadFunction(Lorg/jetbrains/kotlin/metadata/ProtoBuf$Function;)Lorg/jetbrains/kotlin/descriptors/SimpleFunctionDescriptor;", 0);
@@ -67,6 +67,6 @@ public abstract class d {
         Class<?> cls = function.getClass();
         ProtoBuf.TypeTable typeTable = function2.getTypeTable();
         Intrinsics.checkNotNullExpressionValue(typeTable, "getTypeTable(...)");
-        return new h1(k.f35350o, (SimpleFunctionDescriptor) j3.h(cls, function2, jvmNameResolver, new TypeTable(typeTable), metadataVersion, a.f30948d));
+        return new h1(k.f35398o, (SimpleFunctionDescriptor) j3.h(cls, function2, jvmNameResolver, new TypeTable(typeTable), metadataVersion, a.f30996d));
     }
 }

@@ -8,13 +8,13 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class j1 implements SerialDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j1 f31017a = new j1();
+    public static final j1 f31065a = new j1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ht.k f31018b = l.d.f26492a;
+    private static final ht.k f31066b = l.d.f26540a;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f31019c = "kotlin.Nothing";
+    private static final String f31067c = "kotlin.Nothing";
 
     private j1() {
     }
@@ -72,12 +72,12 @@ public final class j1 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public ht.k getKind() {
-        return f31018b;
+        return f31066b;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return f31019c;
+        return f31067c;
     }
 
     public int hashCode() {

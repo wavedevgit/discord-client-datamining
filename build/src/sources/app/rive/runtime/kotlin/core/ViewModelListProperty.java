@@ -216,7 +216,7 @@ public final class ViewModelListProperty extends ViewModelProperty<Unit> {
     @Override // app.rive.runtime.kotlin.core.ViewModelProperty
     public /* bridge */ /* synthetic */ Unit nativeGetValue() {
         nativeGetValue2();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void add(int i10, @NotNull ViewModelInstance item) {

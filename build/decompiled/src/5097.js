@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = 1;
     var1 = var8[var1];
     var1 = var7.bind(var0)(var1);
-    var5 = var1.FlatList;
+    var5 = var1.ScrollView;
     var1 = 2;
     var4 = var8[var1];
     var1 = metroImportDefault;
@@ -34,11 +34,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var8[var1];
     var1 = var7.bind(var0)(var1);
     var1 = var1.SCROLLABLE_TYPE;
-    var1 = var1.FLATLIST;
+    var1 = var1.SCROLLVIEW;
     var1 = var4.bind(var5)(var1, var6);
     var1 = var3.bind(var0)(var1);
-    var3 = 'BottomSheetFlatList';
+    var3 = 'BottomSheetScrollView';
     var1.displayName = var3;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3723, 5089, 4937]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3722, 5088, 4936]);

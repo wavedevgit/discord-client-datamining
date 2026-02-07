@@ -29,7 +29,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.a
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.botuikit.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -97,7 +97,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         compositeEncoder.x(serialDescriptor, 0, actionRowComponent.getType());
         compositeEncoder.z(serialDescriptor, 1, actionRowComponent.getId());
         if (compositeEncoder.A(serialDescriptor, 2) || actionRowComponent.getErrorText() != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, actionRowComponent.getErrorText());
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, actionRowComponent.getErrorText());
         }
         compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), actionRowComponent.components);
     }

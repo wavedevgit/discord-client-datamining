@@ -1,26 +1,40 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
-    var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/illustrations',
-        'width': 134.5,
-        'height': 82,
-        'scales': null,
-        'hash': 'db25e5ae76d4f6a3f9af5fda0e269762',
-        'name': 'img_what_you_lose_uploads',
-        'type': 'png'
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function() {
+        var0 = {};
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var1 = 0;
+        var5 = var4[var1];
+        var2 = undefined;
+        var6 = var3.bind(var2)(var5);
+        var5 = var6.uuid4;
+        var5 = var5.bind(var6)();
+        var0.traceId = var5;
+        var1 = var4[var1];
+        var2 = var3.bind(var2)(var1);
+        var1 = var2.uuid4;
+        var3 = var1.bind(var2)();
+        var2 = var3.substring;
+        var1 = 16;
+        var1 = var2.bind(var3)(var1);
+        var0.spanId = var1;
+        return var0;
     };
-    var4 = [2, 3];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
+    var1.generatePropagationContext = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7260]);

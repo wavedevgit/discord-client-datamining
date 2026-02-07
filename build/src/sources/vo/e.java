@@ -35,10 +35,10 @@ import rp.s;
 public final class e extends com.google.android.material.bottomsheet.b {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f52810i = new a(null);
+    public static final a f52858i = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public wo.a f52811e;
+    public wo.a f52859e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -67,22 +67,22 @@ public final class e extends com.google.android.material.bottomsheet.b {
         TextBasedComponentStyle textStyleValue;
         TextBasedComponentStyle titleStyleValue;
         if (stepStyle != null && (titleStyleValue = stepStyle.getTitleStyleValue()) != null) {
-            TextView hintTitle = aVar.f54042f;
+            TextView hintTitle = aVar.f54090f;
             Intrinsics.checkNotNullExpressionValue(hintTitle, "hintTitle");
             f0.n(hintTitle, titleStyleValue, null, 2, null);
         }
         if (stepStyle != null && (textStyleValue = stepStyle.getTextStyleValue()) != null) {
-            TextView hintMessage = aVar.f54041e;
+            TextView hintMessage = aVar.f54089e;
             Intrinsics.checkNotNullExpressionValue(hintMessage, "hintMessage");
             f0.n(hintMessage, textStyleValue, null, 2, null);
         }
         if (stepStyle != null && (cancelDialogCloseStyleValue = stepStyle.getCancelDialogCloseStyleValue()) != null) {
-            Button closeButton = aVar.f54039c;
+            Button closeButton = aVar.f54087c;
             Intrinsics.checkNotNullExpressionValue(closeButton, "closeButton");
             kq.e.f(closeButton, cancelDialogCloseStyleValue, false, !z10, 2, null);
         }
         if (stepStyle != null && (cancelDialogResumeStyleValue = stepStyle.getCancelDialogResumeStyleValue()) != null) {
-            Button retryButton = aVar.f54043g;
+            Button retryButton = aVar.f54091g;
             Intrinsics.checkNotNullExpressionValue(retryButton, "retryButton");
             kq.e.f(retryButton, cancelDialogResumeStyleValue, false, !z10, 2, null);
         }
@@ -117,7 +117,7 @@ public final class e extends com.google.android.material.bottomsheet.b {
             stepStyle = null;
         }
         StepStyle stepStyle2 = stepStyle;
-        ConstraintLayout bottomSheetContent = eVar.J().f54038b;
+        ConstraintLayout bottomSheetContent = eVar.J().f54086b;
         Intrinsics.checkNotNullExpressionValue(bottomSheetContent, "bottomSheetContent");
         kq.c.c(viewGroup, stepStyle2, bottomSheetContent, null, 4, null);
     }
@@ -125,22 +125,22 @@ public final class e extends com.google.android.material.bottomsheet.b {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit M(wo.a aVar, e eVar, n.b.a aVar2) {
         boolean z10 = true;
-        if (aVar.f54039c.getLineCount() <= 1 && aVar.f54043g.getLineCount() <= 1) {
+        if (aVar.f54087c.getLineCount() <= 1 && aVar.f54091g.getLineCount() <= 1) {
             z10 = false;
         } else {
-            Button closeButton = aVar.f54039c;
+            Button closeButton = aVar.f54087c;
             Intrinsics.checkNotNullExpressionValue(closeButton, "closeButton");
             ViewGroup.LayoutParams layoutParams = closeButton.getLayoutParams();
             if (layoutParams != null) {
-                layoutParams.width = aVar.f54040d.getWidth();
+                layoutParams.width = aVar.f54088d.getWidth();
                 closeButton.setLayoutParams(layoutParams);
-                Button retryButton = aVar.f54043g;
+                Button retryButton = aVar.f54091g;
                 Intrinsics.checkNotNullExpressionValue(retryButton, "retryButton");
                 ViewGroup.LayoutParams layoutParams2 = retryButton.getLayoutParams();
                 if (layoutParams2 != null) {
-                    layoutParams2.width = aVar.f54040d.getWidth();
+                    layoutParams2.width = aVar.f54088d.getWidth();
                     retryButton.setLayoutParams(layoutParams2);
-                    aVar.f54040d.setReferencedIds(new int[]{aVar.f54039c.getId(), aVar.f54043g.getId()});
+                    aVar.f54088d.setReferencedIds(new int[]{aVar.f54087c.getId(), aVar.f54091g.getId()});
                 } else {
                     throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
                 }
@@ -149,7 +149,7 @@ public final class e extends com.google.android.material.bottomsheet.b {
             }
         }
         eVar.H(aVar2.f(), aVar, z10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -167,7 +167,7 @@ public final class e extends com.google.android.material.bottomsheet.b {
     }
 
     public final wo.a J() {
-        wo.a aVar = this.f52811e;
+        wo.a aVar = this.f52859e;
         if (aVar != null) {
             return aVar;
         }
@@ -177,7 +177,7 @@ public final class e extends com.google.android.material.bottomsheet.b {
 
     public final void P(wo.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<set-?>");
-        this.f52811e = aVar;
+        this.f52859e = aVar;
     }
 
     @Override // com.google.android.material.bottomsheet.b, androidx.appcompat.app.m, androidx.fragment.app.DialogFragment
@@ -230,33 +230,33 @@ public final class e extends com.google.android.material.bottomsheet.b {
             final wo.a J = J();
             String h10 = I.h();
             if (h10 != null) {
-                J.f54042f.setText(h10);
+                J.f54090f.setText(h10);
             }
             String d11 = I.d();
             if (d11 != null) {
-                J.f54041e.setText(d11);
+                J.f54089e.setText(d11);
             }
             String a10 = I.a();
             if (a10 != null) {
-                J.f54039c.setText(a10);
+                J.f54087c.setText(a10);
             }
             String e10 = I.e();
             if (e10 != null) {
-                J.f54043g.setText(e10);
+                J.f54091g.setText(e10);
             }
-            J.f54043g.setOnClickListener(new View.OnClickListener() { // from class: vo.a
+            J.f54091g.setOnClickListener(new View.OnClickListener() { // from class: vo.a
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     e.N(e.this, view2);
                 }
             });
-            J.f54039c.setOnClickListener(new View.OnClickListener() { // from class: vo.b
+            J.f54087c.setOnClickListener(new View.OnClickListener() { // from class: vo.b
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     e.O(e.this, I, view2);
                 }
             });
-            Button closeButton = J.f54039c;
+            Button closeButton = J.f54087c;
             Intrinsics.checkNotNullExpressionValue(closeButton, "closeButton");
             bq.s.b(closeButton, new Function0() { // from class: vo.c
                 @Override // kotlin.jvm.functions.Function0

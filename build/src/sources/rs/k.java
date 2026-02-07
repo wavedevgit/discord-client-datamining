@@ -16,13 +16,13 @@ public abstract /* synthetic */ class k {
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f49292d;
+        Object f49340d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f49293e;
+        /* synthetic */ Object f49341e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f49294i;
+        int f49342i;
 
         a(Continuation continuation) {
             super(continuation);
@@ -30,8 +30,8 @@ public abstract /* synthetic */ class k {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f49293e = obj;
-            this.f49294i |= Integer.MIN_VALUE;
+            this.f49341e = obj;
+            this.f49342i |= Integer.MIN_VALUE;
             return g.J(null, null, this);
         }
     }
@@ -41,16 +41,16 @@ public abstract /* synthetic */ class k {
     public static final class b implements FlowCollector {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Collection f49295d;
+        final /* synthetic */ Collection f49343d;
 
         b(Collection collection) {
-            this.f49295d = collection;
+            this.f49343d = collection;
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
         public final Object emit(Object obj, Continuation continuation) {
-            this.f49295d.add(obj);
-            return Unit.f32008a;
+            this.f49343d.add(obj);
+            return Unit.f32056a;
         }
     }
 
@@ -66,24 +66,24 @@ public abstract /* synthetic */ class k {
             if (r0 == 0) goto L13
             r0 = r6
             rs.k$a r0 = (rs.k.a) r0
-            int r1 = r0.f49294i
+            int r1 = r0.f49342i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f49294i = r1
+            r0.f49342i = r1
             goto L18
         L13:
             rs.k$a r0 = new rs.k$a
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f49293e
+            java.lang.Object r6 = r0.f49341e
             java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f49294i
+            int r2 = r0.f49342i
             r3 = 1
             if (r2 == 0) goto L35
             if (r2 != r3) goto L2d
-            java.lang.Object r4 = r0.f49292d
+            java.lang.Object r4 = r0.f49340d
             java.util.Collection r4 = (java.util.Collection) r4
             kotlin.c.b(r6)
             return r4
@@ -96,8 +96,8 @@ public abstract /* synthetic */ class k {
             kotlin.c.b(r6)
             rs.k$b r6 = new rs.k$b
             r6.<init>(r5)
-            r0.f49292d = r5
-            r0.f49294i = r3
+            r0.f49340d = r5
+            r0.f49342i = r3
             java.lang.Object r4 = r4.collect(r6, r0)
             if (r4 != r1) goto L48
             return r1

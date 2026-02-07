@@ -60,6 +60,6 @@ public final class ImageQualityCalculator$calculateQualityMetrics$2 extends k im
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super ImageQualityCalculator.ImageQualityMetrics> continuation) {
-        return ((ImageQualityCalculator$calculateQualityMetrics$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ImageQualityCalculator$calculateQualityMetrics$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

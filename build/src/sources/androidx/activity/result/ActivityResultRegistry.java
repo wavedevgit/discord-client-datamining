@@ -126,7 +126,7 @@ public abstract class ActivityResultRegistry {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Integer invoke() {
-            return Integer.valueOf(kotlin.random.c.f32098d.e(2147418112) + 65536);
+            return Integer.valueOf(kotlin.random.c.f32146d.e(2147418112) + 65536);
         }
     }
 

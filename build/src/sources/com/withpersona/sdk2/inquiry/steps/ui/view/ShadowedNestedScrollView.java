@@ -22,8 +22,8 @@ public final class ShadowedNestedScrollView extends NestedScrollView {
     public int getSolidColor() {
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        int[] Theme = g.f30827h;
+        int[] Theme = g.f30875h;
         Intrinsics.checkNotNullExpressionValue(Theme, "Theme");
-        return context.obtainStyledAttributes(null, Theme, 0, 0).getColor(g.f30828i, -3355444);
+        return context.obtainStyledAttributes(null, Theme, 0, 0).getColor(g.f30876i, -3355444);
     }
 }

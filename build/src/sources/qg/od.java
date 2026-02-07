@@ -3,18 +3,18 @@ package qg;
 public final class od {
 
     /* renamed from: a  reason: collision with root package name */
-    private pd f47426a;
+    private pd f47474a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f47427b;
+    private Integer f47475b;
 
     public final od a(pd pdVar) {
-        this.f47426a = pdVar;
+        this.f47474a = pdVar;
         return this;
     }
 
     public final od b(Integer num) {
-        this.f47427b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f47475b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

@@ -11,70 +11,70 @@ import kotlin.jvm.internal.ByteCompanionObject;
 public abstract class g {
 
     /* renamed from: f  reason: collision with root package name */
-    private static volatile int f25218f = 100;
+    private static volatile int f25266f = 100;
 
     /* renamed from: a  reason: collision with root package name */
-    int f25219a;
+    int f25267a;
 
     /* renamed from: b  reason: collision with root package name */
-    int f25220b;
+    int f25268b;
 
     /* renamed from: c  reason: collision with root package name */
-    int f25221c;
+    int f25269c;
 
     /* renamed from: d  reason: collision with root package name */
-    h f25222d;
+    h f25270d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f25223e;
+    private boolean f25271e;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends g {
 
         /* renamed from: g  reason: collision with root package name */
-        private final byte[] f25224g;
+        private final byte[] f25272g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f25225h;
+        private final boolean f25273h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f25226i;
+        private int f25274i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f25227j;
+        private int f25275j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f25228k;
+        private int f25276k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f25229l;
+        private int f25277l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f25230m;
+        private int f25278m;
 
         /* renamed from: n  reason: collision with root package name */
-        private boolean f25231n;
+        private boolean f25279n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f25232o;
+        private int f25280o;
 
         private void N() {
-            int i10 = this.f25226i + this.f25227j;
-            this.f25226i = i10;
-            int i11 = i10 - this.f25229l;
-            int i12 = this.f25232o;
+            int i10 = this.f25274i + this.f25275j;
+            this.f25274i = i10;
+            int i11 = i10 - this.f25277l;
+            int i12 = this.f25280o;
             if (i11 > i12) {
                 int i13 = i11 - i12;
-                this.f25227j = i13;
-                this.f25226i = i10 - i13;
+                this.f25275j = i13;
+                this.f25274i = i10 - i13;
                 return;
             }
-            this.f25227j = 0;
+            this.f25275j = 0;
         }
 
         private void Q() {
-            if (this.f25226i - this.f25228k >= 10) {
+            if (this.f25274i - this.f25276k >= 10) {
                 R();
             } else {
                 S();
@@ -83,9 +83,9 @@ public abstract class g {
 
         private void R() {
             for (int i10 = 0; i10 < 10; i10++) {
-                byte[] bArr = this.f25224g;
-                int i11 = this.f25228k;
-                this.f25228k = i11 + 1;
+                byte[] bArr = this.f25272g;
+                int i11 = this.f25276k;
+                this.f25276k = i11 + 1;
                 if (bArr[i11] >= 0) {
                     return;
                 }
@@ -106,11 +106,11 @@ public abstract class g {
         public String A() {
             int K = K();
             if (K > 0) {
-                int i10 = this.f25226i;
-                int i11 = this.f25228k;
+                int i10 = this.f25274i;
+                int i11 = this.f25276k;
                 if (K <= i10 - i11) {
-                    String str = new String(this.f25224g, i11, K, u.f25364b);
-                    this.f25228k += K;
+                    String str = new String(this.f25272g, i11, K, u.f25412b);
+                    this.f25276k += K;
                     return str;
                 }
             }
@@ -127,11 +127,11 @@ public abstract class g {
         public String B() {
             int K = K();
             if (K > 0) {
-                int i10 = this.f25226i;
-                int i11 = this.f25228k;
+                int i10 = this.f25274i;
+                int i11 = this.f25276k;
                 if (K <= i10 - i11) {
-                    String e10 = i1.e(this.f25224g, i11, K);
-                    this.f25228k += K;
+                    String e10 = i1.e(this.f25272g, i11, K);
+                    this.f25276k += K;
                     return e10;
                 }
             }
@@ -147,13 +147,13 @@ public abstract class g {
         @Override // gk.g
         public int C() {
             if (e()) {
-                this.f25230m = 0;
+                this.f25278m = 0;
                 return 0;
             }
             int K = K();
-            this.f25230m = K;
+            this.f25278m = K;
             if (j1.a(K) != 0) {
-                return this.f25230m;
+                return this.f25278m;
             }
             throw v.c();
         }
@@ -199,10 +199,10 @@ public abstract class g {
         }
 
         public byte G() {
-            int i10 = this.f25228k;
-            if (i10 != this.f25226i) {
-                byte[] bArr = this.f25224g;
-                this.f25228k = i10 + 1;
+            int i10 = this.f25276k;
+            if (i10 != this.f25274i) {
+                byte[] bArr = this.f25272g;
+                this.f25276k = i10 + 1;
                 return bArr[i10];
             }
             throw v.m();
@@ -210,17 +210,17 @@ public abstract class g {
 
         public byte[] H(int i10) {
             if (i10 > 0) {
-                int i11 = this.f25226i;
-                int i12 = this.f25228k;
+                int i11 = this.f25274i;
+                int i12 = this.f25276k;
                 if (i10 <= i11 - i12) {
                     int i13 = i10 + i12;
-                    this.f25228k = i13;
-                    return Arrays.copyOfRange(this.f25224g, i12, i13);
+                    this.f25276k = i13;
+                    return Arrays.copyOfRange(this.f25272g, i12, i13);
                 }
             }
             if (i10 <= 0) {
                 if (i10 == 0) {
-                    return u.f25366d;
+                    return u.f25414d;
                 }
                 throw v.g();
             }
@@ -228,20 +228,20 @@ public abstract class g {
         }
 
         public int I() {
-            int i10 = this.f25228k;
-            if (this.f25226i - i10 >= 4) {
-                byte[] bArr = this.f25224g;
-                this.f25228k = i10 + 4;
+            int i10 = this.f25276k;
+            if (this.f25274i - i10 >= 4) {
+                byte[] bArr = this.f25272g;
+                this.f25276k = i10 + 4;
                 return ((bArr[i10 + 3] & 255) << 24) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16);
             }
             throw v.m();
         }
 
         public long J() {
-            int i10 = this.f25228k;
-            if (this.f25226i - i10 >= 8) {
-                byte[] bArr = this.f25224g;
-                this.f25228k = i10 + 8;
+            int i10 = this.f25276k;
+            if (this.f25274i - i10 >= 8) {
+                byte[] bArr = this.f25272g;
+                this.f25276k = i10 + 8;
                 return ((bArr[i10 + 7] & 255) << 56) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16) | ((bArr[i10 + 3] & 255) << 24) | ((bArr[i10 + 4] & 255) << 32) | ((bArr[i10 + 5] & 255) << 40) | ((bArr[i10 + 6] & 255) << 48);
             }
             throw v.m();
@@ -249,14 +249,14 @@ public abstract class g {
 
         public int K() {
             int i10;
-            int i11 = this.f25228k;
-            int i12 = this.f25226i;
+            int i11 = this.f25276k;
+            int i12 = this.f25274i;
             if (i12 != i11) {
-                byte[] bArr = this.f25224g;
+                byte[] bArr = this.f25272g;
                 int i13 = i11 + 1;
                 byte b10 = bArr[i11];
                 if (b10 >= 0) {
-                    this.f25228k = i13;
+                    this.f25276k = i13;
                     return b10;
                 } else if (i12 - i13 >= 9) {
                     int i14 = i11 + 2;
@@ -303,7 +303,7 @@ public abstract class g {
                         }
                         i14 = i16;
                     }
-                    this.f25228k = i14;
+                    this.f25276k = i14;
                     return i10;
                 }
             }
@@ -314,14 +314,14 @@ public abstract class g {
             long j10;
             long j11;
             long j12;
-            int i10 = this.f25228k;
-            int i11 = this.f25226i;
+            int i10 = this.f25276k;
+            int i11 = this.f25274i;
             if (i11 != i10) {
-                byte[] bArr = this.f25224g;
+                byte[] bArr = this.f25272g;
                 int i12 = i10 + 1;
                 byte b10 = bArr[i10];
                 if (b10 >= 0) {
-                    this.f25228k = i12;
+                    this.f25276k = i12;
                     return b10;
                 } else if (i11 - i12 >= 9) {
                     int i13 = i10 + 2;
@@ -381,7 +381,7 @@ public abstract class g {
                             }
                         }
                     }
-                    this.f25228k = i13;
+                    this.f25276k = i13;
                     return j10;
                 }
             }
@@ -412,10 +412,10 @@ public abstract class g {
 
         public void P(int i10) {
             if (i10 >= 0) {
-                int i11 = this.f25226i;
-                int i12 = this.f25228k;
+                int i11 = this.f25274i;
+                int i12 = this.f25276k;
                 if (i10 <= i11 - i12) {
-                    this.f25228k = i12 + i10;
+                    this.f25276k = i12 + i10;
                     return;
                 }
             }
@@ -427,7 +427,7 @@ public abstract class g {
 
         @Override // gk.g
         public void a(int i10) {
-            if (this.f25230m == i10) {
+            if (this.f25278m == i10) {
                 return;
             }
             throw v.b();
@@ -435,12 +435,12 @@ public abstract class g {
 
         @Override // gk.g
         public int d() {
-            return this.f25228k - this.f25229l;
+            return this.f25276k - this.f25277l;
         }
 
         @Override // gk.g
         public boolean e() {
-            if (this.f25228k == this.f25226i) {
+            if (this.f25276k == this.f25274i) {
                 return true;
             }
             return false;
@@ -448,7 +448,7 @@ public abstract class g {
 
         @Override // gk.g
         public void k(int i10) {
-            this.f25232o = i10;
+            this.f25280o = i10;
             N();
         }
 
@@ -457,9 +457,9 @@ public abstract class g {
             if (i10 >= 0) {
                 int d10 = i10 + d();
                 if (d10 >= 0) {
-                    int i11 = this.f25232o;
+                    int i11 = this.f25280o;
                     if (d10 <= i11) {
-                        this.f25232o = d10;
+                        this.f25280o = d10;
                         N();
                         return i11;
                     }
@@ -483,20 +483,20 @@ public abstract class g {
             f g10;
             int K = K();
             if (K > 0) {
-                int i10 = this.f25226i;
-                int i11 = this.f25228k;
+                int i10 = this.f25274i;
+                int i11 = this.f25276k;
                 if (K <= i10 - i11) {
-                    if (this.f25225h && this.f25231n) {
-                        g10 = f.x(this.f25224g, i11, K);
+                    if (this.f25273h && this.f25279n) {
+                        g10 = f.x(this.f25272g, i11, K);
                     } else {
-                        g10 = f.g(this.f25224g, i11, K);
+                        g10 = f.g(this.f25272g, i11, K);
                     }
-                    this.f25228k += K;
+                    this.f25276k += K;
                     return g10;
                 }
             }
             if (K == 0) {
-                return f.f25206e;
+                return f.f25254e;
             }
             return f.w(H(K));
         }
@@ -558,12 +558,12 @@ public abstract class g {
 
         private b(byte[] bArr, int i10, int i11, boolean z10) {
             super();
-            this.f25232o = Integer.MAX_VALUE;
-            this.f25224g = bArr;
-            this.f25226i = i11 + i10;
-            this.f25228k = i10;
-            this.f25229l = i10;
-            this.f25225h = z10;
+            this.f25280o = Integer.MAX_VALUE;
+            this.f25272g = bArr;
+            this.f25274i = i11 + i10;
+            this.f25276k = i10;
+            this.f25277l = i10;
+            this.f25273h = z10;
         }
     }
 
@@ -572,28 +572,28 @@ public abstract class g {
     public static final class c extends g {
 
         /* renamed from: g  reason: collision with root package name */
-        private final InputStream f25233g;
+        private final InputStream f25281g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final byte[] f25234h;
+        private final byte[] f25282h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f25235i;
+        private int f25283i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f25236j;
+        private int f25284j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f25237k;
+        private int f25285k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f25238l;
+        private int f25286l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f25239m;
+        private int f25287m;
 
         /* renamed from: n  reason: collision with root package name */
-        private int f25240n;
+        private int f25288n;
 
         private static int G(InputStream inputStream) {
             try {
@@ -618,15 +618,15 @@ public abstract class g {
             if (L != null) {
                 return f.f(L);
             }
-            int i11 = this.f25237k;
-            int i12 = this.f25235i;
+            int i11 = this.f25285k;
+            int i12 = this.f25283i;
             int i13 = i12 - i11;
-            this.f25239m += i12;
-            this.f25237k = 0;
-            this.f25235i = 0;
+            this.f25287m += i12;
+            this.f25285k = 0;
+            this.f25283i = 0;
             List<byte[]> M = M(i10 - i13);
             byte[] bArr = new byte[i10];
-            System.arraycopy(this.f25234h, i11, bArr, 0, i13);
+            System.arraycopy(this.f25282h, i11, bArr, 0, i13);
             for (byte[] bArr2 : M) {
                 System.arraycopy(bArr2, 0, bArr, i13, bArr2.length);
                 i13 += bArr2.length;
@@ -642,15 +642,15 @@ public abstract class g {
                 }
                 return L;
             }
-            int i11 = this.f25237k;
-            int i12 = this.f25235i;
+            int i11 = this.f25285k;
+            int i12 = this.f25283i;
             int i13 = i12 - i11;
-            this.f25239m += i12;
-            this.f25237k = 0;
-            this.f25235i = 0;
+            this.f25287m += i12;
+            this.f25285k = 0;
+            this.f25283i = 0;
             List<byte[]> M = M(i10 - i13);
             byte[] bArr = new byte[i10];
-            System.arraycopy(this.f25234h, i11, bArr, 0, i13);
+            System.arraycopy(this.f25282h, i11, bArr, 0, i13);
             for (byte[] bArr2 : M) {
                 System.arraycopy(bArr2, 0, bArr, i13, bArr2.length);
                 i13 += bArr2.length;
@@ -660,29 +660,29 @@ public abstract class g {
 
         private byte[] L(int i10) {
             if (i10 == 0) {
-                return u.f25366d;
+                return u.f25414d;
             }
             if (i10 >= 0) {
-                int i11 = this.f25239m;
-                int i12 = this.f25237k;
+                int i11 = this.f25287m;
+                int i12 = this.f25285k;
                 int i13 = i11 + i12 + i10;
-                if (i13 - this.f25221c <= 0) {
-                    int i14 = this.f25240n;
+                if (i13 - this.f25269c <= 0) {
+                    int i14 = this.f25288n;
                     if (i13 <= i14) {
-                        int i15 = this.f25235i - i12;
+                        int i15 = this.f25283i - i12;
                         int i16 = i10 - i15;
-                        if (i16 >= 4096 && i16 > G(this.f25233g)) {
+                        if (i16 >= 4096 && i16 > G(this.f25281g)) {
                             return null;
                         }
                         byte[] bArr = new byte[i10];
-                        System.arraycopy(this.f25234h, this.f25237k, bArr, 0, i15);
-                        this.f25239m += this.f25235i;
-                        this.f25237k = 0;
-                        this.f25235i = 0;
+                        System.arraycopy(this.f25282h, this.f25285k, bArr, 0, i15);
+                        this.f25287m += this.f25283i;
+                        this.f25285k = 0;
+                        this.f25283i = 0;
                         while (i15 < i10) {
-                            int H = H(this.f25233g, bArr, i15, i10 - i15);
+                            int H = H(this.f25281g, bArr, i15, i10 - i15);
                             if (H != -1) {
-                                this.f25239m += H;
+                                this.f25287m += H;
                                 i15 += H;
                             } else {
                                 throw v.m();
@@ -705,9 +705,9 @@ public abstract class g {
                 byte[] bArr = new byte[min];
                 int i11 = 0;
                 while (i11 < min) {
-                    int read = this.f25233g.read(bArr, i11, min - i11);
+                    int read = this.f25281g.read(bArr, i11, min - i11);
                     if (read != -1) {
-                        this.f25239m += read;
+                        this.f25287m += read;
                         i11 += read;
                     } else {
                         throw v.m();
@@ -720,22 +720,22 @@ public abstract class g {
         }
 
         private void S() {
-            int i10 = this.f25235i + this.f25236j;
-            this.f25235i = i10;
-            int i11 = this.f25239m + i10;
-            int i12 = this.f25240n;
+            int i10 = this.f25283i + this.f25284j;
+            this.f25283i = i10;
+            int i11 = this.f25287m + i10;
+            int i12 = this.f25288n;
             if (i11 > i12) {
                 int i13 = i11 - i12;
-                this.f25236j = i13;
-                this.f25235i = i10 - i13;
+                this.f25284j = i13;
+                this.f25283i = i10 - i13;
                 return;
             }
-            this.f25236j = 0;
+            this.f25284j = 0;
         }
 
         private void T(int i10) {
             if (!b0(i10)) {
-                if (i10 > (this.f25221c - this.f25239m) - this.f25237k) {
+                if (i10 > (this.f25269c - this.f25287m) - this.f25285k) {
                     throw v.l();
                 }
                 throw v.m();
@@ -753,19 +753,19 @@ public abstract class g {
 
         private void X(int i10) {
             if (i10 >= 0) {
-                int i11 = this.f25239m;
-                int i12 = this.f25237k;
+                int i11 = this.f25287m;
+                int i12 = this.f25285k;
                 int i13 = i11 + i12 + i10;
-                int i14 = this.f25240n;
+                int i14 = this.f25288n;
                 if (i13 <= i14) {
-                    this.f25239m = i11 + i12;
-                    int i15 = this.f25235i - i12;
-                    this.f25235i = 0;
-                    this.f25237k = 0;
+                    this.f25287m = i11 + i12;
+                    int i15 = this.f25283i - i12;
+                    this.f25283i = 0;
+                    this.f25285k = 0;
                     while (i15 < i10) {
                         try {
                             long j10 = i10 - i15;
-                            long U = U(this.f25233g, j10);
+                            long U = U(this.f25281g, j10);
                             int i16 = (U > 0L ? 1 : (U == 0L ? 0 : -1));
                             if (i16 >= 0 && U <= j10) {
                                 if (i16 == 0) {
@@ -773,27 +773,27 @@ public abstract class g {
                                 }
                                 i15 += (int) U;
                             } else {
-                                throw new IllegalStateException(this.f25233g.getClass() + "#skip returned invalid result: " + U + "\nThe InputStream implementation is buggy.");
+                                throw new IllegalStateException(this.f25281g.getClass() + "#skip returned invalid result: " + U + "\nThe InputStream implementation is buggy.");
                             }
                         } finally {
-                            this.f25239m += i15;
+                            this.f25287m += i15;
                             S();
                         }
                     }
                     if (i15 < i10) {
-                        int i17 = this.f25235i;
-                        int i18 = i17 - this.f25237k;
-                        this.f25237k = i17;
+                        int i17 = this.f25283i;
+                        int i18 = i17 - this.f25285k;
+                        this.f25285k = i17;
                         T(1);
                         while (true) {
                             int i19 = i10 - i18;
-                            int i20 = this.f25235i;
+                            int i20 = this.f25283i;
                             if (i19 > i20) {
                                 i18 += i20;
-                                this.f25237k = i20;
+                                this.f25285k = i20;
                                 T(1);
                             } else {
-                                this.f25237k = i19;
+                                this.f25285k = i19;
                                 return;
                             }
                         }
@@ -808,7 +808,7 @@ public abstract class g {
         }
 
         private void Y() {
-            if (this.f25235i - this.f25237k >= 10) {
+            if (this.f25283i - this.f25285k >= 10) {
                 Z();
             } else {
                 a0();
@@ -817,9 +817,9 @@ public abstract class g {
 
         private void Z() {
             for (int i10 = 0; i10 < 10; i10++) {
-                byte[] bArr = this.f25234h;
-                int i11 = this.f25237k;
-                this.f25237k = i11 + 1;
+                byte[] bArr = this.f25282h;
+                int i11 = this.f25285k;
+                this.f25285k = i11 + 1;
                 if (bArr[i11] >= 0) {
                     return;
                 }
@@ -837,40 +837,40 @@ public abstract class g {
         }
 
         private boolean b0(int i10) {
-            int i11 = this.f25237k;
+            int i11 = this.f25285k;
             int i12 = i11 + i10;
-            int i13 = this.f25235i;
+            int i13 = this.f25283i;
             if (i12 > i13) {
-                int i14 = this.f25221c;
-                int i15 = this.f25239m;
-                if (i10 > (i14 - i15) - i11 || i15 + i11 + i10 > this.f25240n) {
+                int i14 = this.f25269c;
+                int i15 = this.f25287m;
+                if (i10 > (i14 - i15) - i11 || i15 + i11 + i10 > this.f25288n) {
                     return false;
                 }
                 if (i11 > 0) {
                     if (i13 > i11) {
-                        byte[] bArr = this.f25234h;
+                        byte[] bArr = this.f25282h;
                         System.arraycopy(bArr, i11, bArr, 0, i13 - i11);
                     }
-                    this.f25239m += i11;
-                    this.f25235i -= i11;
-                    this.f25237k = 0;
+                    this.f25287m += i11;
+                    this.f25283i -= i11;
+                    this.f25285k = 0;
                 }
-                InputStream inputStream = this.f25233g;
-                byte[] bArr2 = this.f25234h;
-                int i16 = this.f25235i;
-                int H = H(inputStream, bArr2, i16, Math.min(bArr2.length - i16, (this.f25221c - this.f25239m) - i16));
-                if (H != 0 && H >= -1 && H <= this.f25234h.length) {
+                InputStream inputStream = this.f25281g;
+                byte[] bArr2 = this.f25282h;
+                int i16 = this.f25283i;
+                int H = H(inputStream, bArr2, i16, Math.min(bArr2.length - i16, (this.f25269c - this.f25287m) - i16));
+                if (H != 0 && H >= -1 && H <= this.f25282h.length) {
                     if (H <= 0) {
                         return false;
                     }
-                    this.f25235i += H;
+                    this.f25283i += H;
                     S();
-                    if (this.f25235i >= i10) {
+                    if (this.f25283i >= i10) {
                         return true;
                     }
                     return b0(i10);
                 }
-                throw new IllegalStateException(this.f25233g.getClass() + "#read(byte[]) returned invalid result: " + H + "\nThe InputStream implementation is buggy.");
+                throw new IllegalStateException(this.f25281g.getClass() + "#read(byte[]) returned invalid result: " + H + "\nThe InputStream implementation is buggy.");
             }
             throw new IllegalStateException("refillBuffer() called when " + i10 + " bytes were already available in buffer");
         }
@@ -879,43 +879,43 @@ public abstract class g {
         public String A() {
             int P = P();
             if (P > 0) {
-                int i10 = this.f25235i;
-                int i11 = this.f25237k;
+                int i10 = this.f25283i;
+                int i11 = this.f25285k;
                 if (P <= i10 - i11) {
-                    String str = new String(this.f25234h, i11, P, u.f25364b);
-                    this.f25237k += P;
+                    String str = new String(this.f25282h, i11, P, u.f25412b);
+                    this.f25285k += P;
                     return str;
                 }
             }
             if (P == 0) {
                 return "";
             }
-            if (P <= this.f25235i) {
+            if (P <= this.f25283i) {
                 T(P);
-                String str2 = new String(this.f25234h, this.f25237k, P, u.f25364b);
-                this.f25237k += P;
+                String str2 = new String(this.f25282h, this.f25285k, P, u.f25412b);
+                this.f25285k += P;
                 return str2;
             }
-            return new String(K(P, false), u.f25364b);
+            return new String(K(P, false), u.f25412b);
         }
 
         @Override // gk.g
         public String B() {
             byte[] K;
             int P = P();
-            int i10 = this.f25237k;
-            int i11 = this.f25235i;
+            int i10 = this.f25285k;
+            int i11 = this.f25283i;
             if (P <= i11 - i10 && P > 0) {
-                K = this.f25234h;
-                this.f25237k = i10 + P;
+                K = this.f25282h;
+                this.f25285k = i10 + P;
             } else if (P == 0) {
                 return "";
             } else {
                 i10 = 0;
                 if (P <= i11) {
                     T(P);
-                    K = this.f25234h;
-                    this.f25237k = P;
+                    K = this.f25282h;
+                    this.f25285k = P;
                 } else {
                     K = K(P, false);
                 }
@@ -926,13 +926,13 @@ public abstract class g {
         @Override // gk.g
         public int C() {
             if (e()) {
-                this.f25238l = 0;
+                this.f25286l = 0;
                 return 0;
             }
             int P = P();
-            this.f25238l = P;
+            this.f25286l = P;
             if (j1.a(P) != 0) {
-                return this.f25238l;
+                return this.f25286l;
             }
             throw v.c();
         }
@@ -978,47 +978,47 @@ public abstract class g {
         }
 
         public byte J() {
-            if (this.f25237k == this.f25235i) {
+            if (this.f25285k == this.f25283i) {
                 T(1);
             }
-            byte[] bArr = this.f25234h;
-            int i10 = this.f25237k;
-            this.f25237k = i10 + 1;
+            byte[] bArr = this.f25282h;
+            int i10 = this.f25285k;
+            this.f25285k = i10 + 1;
             return bArr[i10];
         }
 
         public int N() {
-            int i10 = this.f25237k;
-            if (this.f25235i - i10 < 4) {
+            int i10 = this.f25285k;
+            if (this.f25283i - i10 < 4) {
                 T(4);
-                i10 = this.f25237k;
+                i10 = this.f25285k;
             }
-            byte[] bArr = this.f25234h;
-            this.f25237k = i10 + 4;
+            byte[] bArr = this.f25282h;
+            this.f25285k = i10 + 4;
             return ((bArr[i10 + 3] & 255) << 24) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16);
         }
 
         public long O() {
-            int i10 = this.f25237k;
-            if (this.f25235i - i10 < 8) {
+            int i10 = this.f25285k;
+            if (this.f25283i - i10 < 8) {
                 T(8);
-                i10 = this.f25237k;
+                i10 = this.f25285k;
             }
-            byte[] bArr = this.f25234h;
-            this.f25237k = i10 + 8;
+            byte[] bArr = this.f25282h;
+            this.f25285k = i10 + 8;
             return ((bArr[i10 + 7] & 255) << 56) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16) | ((bArr[i10 + 3] & 255) << 24) | ((bArr[i10 + 4] & 255) << 32) | ((bArr[i10 + 5] & 255) << 40) | ((bArr[i10 + 6] & 255) << 48);
         }
 
         public int P() {
             int i10;
-            int i11 = this.f25237k;
-            int i12 = this.f25235i;
+            int i11 = this.f25285k;
+            int i12 = this.f25283i;
             if (i12 != i11) {
-                byte[] bArr = this.f25234h;
+                byte[] bArr = this.f25282h;
                 int i13 = i11 + 1;
                 byte b10 = bArr[i11];
                 if (b10 >= 0) {
-                    this.f25237k = i13;
+                    this.f25285k = i13;
                     return b10;
                 } else if (i12 - i13 >= 9) {
                     int i14 = i11 + 2;
@@ -1065,7 +1065,7 @@ public abstract class g {
                         }
                         i14 = i16;
                     }
-                    this.f25237k = i14;
+                    this.f25285k = i14;
                     return i10;
                 }
             }
@@ -1076,14 +1076,14 @@ public abstract class g {
             long j10;
             long j11;
             long j12;
-            int i10 = this.f25237k;
-            int i11 = this.f25235i;
+            int i10 = this.f25285k;
+            int i11 = this.f25283i;
             if (i11 != i10) {
-                byte[] bArr = this.f25234h;
+                byte[] bArr = this.f25282h;
                 int i12 = i10 + 1;
                 byte b10 = bArr[i10];
                 if (b10 >= 0) {
-                    this.f25237k = i12;
+                    this.f25285k = i12;
                     return b10;
                 } else if (i11 - i12 >= 9) {
                     int i13 = i10 + 2;
@@ -1143,7 +1143,7 @@ public abstract class g {
                             }
                         }
                     }
-                    this.f25237k = i13;
+                    this.f25285k = i13;
                     return j10;
                 }
             }
@@ -1173,10 +1173,10 @@ public abstract class g {
         }
 
         public void W(int i10) {
-            int i11 = this.f25235i;
-            int i12 = this.f25237k;
+            int i11 = this.f25283i;
+            int i12 = this.f25285k;
             if (i10 <= i11 - i12 && i10 >= 0) {
-                this.f25237k = i12 + i10;
+                this.f25285k = i12 + i10;
             } else {
                 X(i10);
             }
@@ -1184,7 +1184,7 @@ public abstract class g {
 
         @Override // gk.g
         public void a(int i10) {
-            if (this.f25238l == i10) {
+            if (this.f25286l == i10) {
                 return;
             }
             throw v.b();
@@ -1192,12 +1192,12 @@ public abstract class g {
 
         @Override // gk.g
         public int d() {
-            return this.f25239m + this.f25237k;
+            return this.f25287m + this.f25285k;
         }
 
         @Override // gk.g
         public boolean e() {
-            if (this.f25237k == this.f25235i && !b0(1)) {
+            if (this.f25285k == this.f25283i && !b0(1)) {
                 return true;
             }
             return false;
@@ -1205,17 +1205,17 @@ public abstract class g {
 
         @Override // gk.g
         public void k(int i10) {
-            this.f25240n = i10;
+            this.f25288n = i10;
             S();
         }
 
         @Override // gk.g
         public int l(int i10) {
             if (i10 >= 0) {
-                int i11 = i10 + this.f25239m + this.f25237k;
-                int i12 = this.f25240n;
+                int i11 = i10 + this.f25287m + this.f25285k;
+                int i12 = this.f25288n;
                 if (i11 <= i12) {
-                    this.f25240n = i11;
+                    this.f25288n = i11;
                     S();
                     return i12;
                 }
@@ -1235,14 +1235,14 @@ public abstract class g {
         @Override // gk.g
         public f n() {
             int P = P();
-            int i10 = this.f25235i;
-            int i11 = this.f25237k;
+            int i10 = this.f25283i;
+            int i11 = this.f25285k;
             if (P <= i10 - i11 && P > 0) {
-                f g10 = f.g(this.f25234h, i11, P);
-                this.f25237k += P;
+                f g10 = f.g(this.f25282h, i11, P);
+                this.f25285k += P;
                 return g10;
             } else if (P == 0) {
-                return f.f25206e;
+                return f.f25254e;
             } else {
                 return I(P);
             }
@@ -1305,13 +1305,13 @@ public abstract class g {
 
         private c(InputStream inputStream, int i10) {
             super();
-            this.f25240n = Integer.MAX_VALUE;
+            this.f25288n = Integer.MAX_VALUE;
             u.b(inputStream, "input");
-            this.f25233g = inputStream;
-            this.f25234h = new byte[i10];
-            this.f25235i = 0;
-            this.f25237k = 0;
-            this.f25239m = 0;
+            this.f25281g = inputStream;
+            this.f25282h = new byte[i10];
+            this.f25283i = 0;
+            this.f25285k = 0;
+            this.f25287m = 0;
         }
     }
 
@@ -1330,7 +1330,7 @@ public abstract class g {
     public static g g(InputStream inputStream, int i10) {
         if (i10 > 0) {
             if (inputStream == null) {
-                return h(u.f25366d);
+                return h(u.f25414d);
             }
             return new c(inputStream, i10);
         }
@@ -1436,8 +1436,8 @@ public abstract class g {
     public abstract long z();
 
     private g() {
-        this.f25220b = f25218f;
-        this.f25221c = Integer.MAX_VALUE;
-        this.f25223e = false;
+        this.f25268b = f25266f;
+        this.f25269c = Integer.MAX_VALUE;
+        this.f25271e = false;
     }
 }

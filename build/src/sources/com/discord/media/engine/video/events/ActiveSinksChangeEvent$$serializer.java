@@ -39,7 +39,7 @@ public /* synthetic */ class ActiveSinksChangeEvent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f31041a, h.f31005a};
+        return new KSerializer[]{n2.f31089a, h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

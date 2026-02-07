@@ -5,7 +5,7 @@ import yi.c;
 final class db implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final db f39760a = new db();
+    static final db f39808a = new db();
 
     static {
         c.b a10 = yi.c.a("shadowRemovalType");

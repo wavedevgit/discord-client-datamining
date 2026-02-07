@@ -9,16 +9,16 @@ import rt.y;
 abstract class a implements u {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f39160d;
+    private final Class f39208d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Class cls) {
-        this.f39160d = cls;
+        this.f39208d = cls;
     }
 
     @Override // rt.u
     public f0 a() {
-        return f0.f49502a;
+        return f0.f49550a;
     }
 
     @Override // rt.u

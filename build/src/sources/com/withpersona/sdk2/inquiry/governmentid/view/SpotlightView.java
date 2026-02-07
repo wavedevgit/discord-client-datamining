@@ -39,10 +39,10 @@ public final class SpotlightView extends View {
     private final void c(Context context, AttributeSet attributeSet) {
         Resources.Theme theme;
         TypedArray obtainStyledAttributes;
-        if (context != null && (theme = context.getTheme()) != null && (obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, p4.f30632a, 0, 0)) != null) {
+        if (context != null && (theme = context.getTheme()) != null && (obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, p4.f30680a, 0, 0)) != null) {
             try {
-                this.f18666d = obtainStyledAttributes.getResourceId(p4.f30634c, 0);
-                this.f18667e = obtainStyledAttributes.getDimension(p4.f30633b, 0.0f);
+                this.f18666d = obtainStyledAttributes.getResourceId(p4.f30682c, 0);
+                this.f18667e = obtainStyledAttributes.getDimension(p4.f30681b, 0.0f);
             } finally {
                 obtainStyledAttributes.recycle();
             }
@@ -62,7 +62,7 @@ public final class SpotlightView extends View {
             });
             spotlightView.f(findViewById.getLeft(), findViewById.getTop(), findViewById.getRight(), findViewById.getBottom());
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

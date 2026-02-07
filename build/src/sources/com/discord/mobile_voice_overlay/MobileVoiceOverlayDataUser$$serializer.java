@@ -41,7 +41,7 @@ public /* synthetic */ class MobileVoiceOverlayDataUser$$serializer implements h
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, gt.a.u(n2.f31041a), jt.h.f31005a, p0.f31057a};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, gt.a.u(n2.f31089a), jt.h.f31053a, p0.f31105a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,7 +60,7 @@ public /* synthetic */ class MobileVoiceOverlayDataUser$$serializer implements h
             userId = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, null);
             i10 = b10.i(serialDescriptor, 3);
             z10 = C;
-            str = (String) b10.n(serialDescriptor, 1, n2.f31041a, null);
+            str = (String) b10.n(serialDescriptor, 1, n2.f31089a, null);
             i11 = 15;
         } else {
             boolean z11 = true;
@@ -77,7 +77,7 @@ public /* synthetic */ class MobileVoiceOverlayDataUser$$serializer implements h
                     userId2 = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, userId2);
                     i13 |= 1;
                 } else if (o10 == 1) {
-                    str2 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str2);
+                    str2 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str2);
                     i13 |= 2;
                 } else if (o10 == 2) {
                     z12 = b10.C(serialDescriptor, 2);

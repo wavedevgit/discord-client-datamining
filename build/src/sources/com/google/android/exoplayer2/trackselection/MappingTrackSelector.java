@@ -52,7 +52,7 @@ public abstract class MappingTrackSelector extends q {
         }
 
         public int a(int i10, int i11, boolean z10) {
-            int i12 = this.f13016d[i10].b(i11).f46876d;
+            int i12 = this.f13016d[i10].b(i11).f46924d;
             int[] iArr = new int[i12];
             int i13 = 0;
             for (int i14 = 0; i14 < i12; i14++) {
@@ -122,7 +122,7 @@ public abstract class MappingTrackSelector extends q {
         for (int i11 = 0; i11 < w1VarArr.length; i11++) {
             w1 w1Var = w1VarArr[i11];
             int i12 = 0;
-            for (int i13 = 0; i13 < u0Var.f46876d; i13++) {
+            for (int i13 = 0; i13 < u0Var.f46924d; i13++) {
                 i12 = Math.max(i12, w1.F(w1Var.a(u0Var.c(i13))));
             }
             if (iArr[i11] == 0) {
@@ -140,8 +140,8 @@ public abstract class MappingTrackSelector extends q {
     }
 
     private static int[] n(w1 w1Var, u0 u0Var) {
-        int[] iArr = new int[u0Var.f46876d];
-        for (int i10 = 0; i10 < u0Var.f46876d; i10++) {
+        int[] iArr = new int[u0Var.f46924d];
+        for (int i10 = 0; i10 < u0Var.f46924d; i10++) {
             iArr[i10] = w1Var.a(u0Var.c(i10));
         }
         return iArr;
@@ -170,21 +170,21 @@ public abstract class MappingTrackSelector extends q {
         u0[][] u0VarArr = new u0[length];
         int[][][] iArr2 = new int[w1VarArr.length + 1][];
         for (int i10 = 0; i10 < length; i10++) {
-            int i11 = w0Var.f46892d;
+            int i11 = w0Var.f46940d;
             u0VarArr[i10] = new u0[i11];
             iArr2[i10] = new int[i11];
         }
         int[] o10 = o(w1VarArr);
-        for (int i12 = 0; i12 < w0Var.f46892d; i12++) {
+        for (int i12 = 0; i12 < w0Var.f46940d; i12++) {
             u0 b10 = w0Var.b(i12);
-            if (b10.f46878i == 5) {
+            if (b10.f46926i == 5) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             int l10 = l(w1VarArr, b10, iArr, z10);
             if (l10 == w1VarArr.length) {
-                n10 = new int[b10.f46876d];
+                n10 = new int[b10.f46924d];
             } else {
                 n10 = n(w1VarArr[l10], b10);
             }

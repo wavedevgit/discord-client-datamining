@@ -44,7 +44,7 @@ public /* synthetic */ class DirectReplyUser$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{UserId$$serializer.INSTANCE, a.u(n2Var), a.u(n2Var), a.u(n2Var)};
     }
 
@@ -61,7 +61,7 @@ public /* synthetic */ class DirectReplyUser$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         UserId userId2 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             userId = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, null);
             str3 = (String) b10.n(serialDescriptor, 3, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 2, n2Var, null);
@@ -81,15 +81,15 @@ public /* synthetic */ class DirectReplyUser$$serializer implements h0 {
                     userId2 = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, userId2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str4 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str4);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str5 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str5);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str6 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str6);
                     i11 |= 8;
                 }
             }

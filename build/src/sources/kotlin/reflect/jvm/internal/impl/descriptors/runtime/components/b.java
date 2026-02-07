@@ -11,7 +11,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectCla
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f32614a = new b();
+    public static final b f32662a = new b();
 
     private b() {
     }

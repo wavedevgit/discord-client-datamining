@@ -7,14 +7,14 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class m0 extends a2 {
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f31032m;
+    private final boolean f31080m;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public m0(String name, h0 generatedSerializer) {
         super(name, generatedSerializer, 1);
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(generatedSerializer, "generatedSerializer");
-        this.f31032m = true;
+        this.f31080m = true;
     }
 
     @Override // jt.a2
@@ -49,6 +49,6 @@ public final class m0 extends a2 {
 
     @Override // jt.a2, kotlinx.serialization.descriptors.SerialDescriptor
     public boolean isInline() {
-        return this.f31032m;
+        return this.f31080m;
     }
 }

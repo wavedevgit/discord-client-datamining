@@ -11,16 +11,16 @@ public final class g implements Parcelable {
     public static final Parcelable.Creator<g> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Uri f25526d;
+    private final Uri f25574d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Uri f25527e;
+    private final Uri f25575e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Uri f25528i;
+    private final Uri f25576i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final gp.a f25529o;
+    private final gp.a f25577o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -43,26 +43,26 @@ public final class g implements Parcelable {
         Intrinsics.checkNotNullParameter(dg2Uri, "dg2Uri");
         Intrinsics.checkNotNullParameter(sodUri, "sodUri");
         Intrinsics.checkNotNullParameter(chipAuthenticationStatus, "chipAuthenticationStatus");
-        this.f25526d = dg1Uri;
-        this.f25527e = dg2Uri;
-        this.f25528i = sodUri;
-        this.f25529o = chipAuthenticationStatus;
+        this.f25574d = dg1Uri;
+        this.f25575e = dg2Uri;
+        this.f25576i = sodUri;
+        this.f25577o = chipAuthenticationStatus;
     }
 
     public final gp.a a() {
-        return this.f25529o;
+        return this.f25577o;
     }
 
     public final Uri b() {
-        return this.f25526d;
+        return this.f25574d;
     }
 
     public final Uri c() {
-        return this.f25527e;
+        return this.f25575e;
     }
 
     public final Uri d() {
-        return this.f25528i;
+        return this.f25576i;
     }
 
     @Override // android.os.Parcelable
@@ -78,30 +78,30 @@ public final class g implements Parcelable {
             return false;
         }
         g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f25526d, gVar.f25526d) && Intrinsics.areEqual(this.f25527e, gVar.f25527e) && Intrinsics.areEqual(this.f25528i, gVar.f25528i) && this.f25529o == gVar.f25529o) {
+        if (Intrinsics.areEqual(this.f25574d, gVar.f25574d) && Intrinsics.areEqual(this.f25575e, gVar.f25575e) && Intrinsics.areEqual(this.f25576i, gVar.f25576i) && this.f25577o == gVar.f25577o) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((this.f25526d.hashCode() * 31) + this.f25527e.hashCode()) * 31) + this.f25528i.hashCode()) * 31) + this.f25529o.hashCode();
+        return (((((this.f25574d.hashCode() * 31) + this.f25575e.hashCode()) * 31) + this.f25576i.hashCode()) * 31) + this.f25577o.hashCode();
     }
 
     public String toString() {
-        Uri uri = this.f25526d;
-        Uri uri2 = this.f25527e;
-        Uri uri3 = this.f25528i;
-        gp.a aVar = this.f25529o;
+        Uri uri = this.f25574d;
+        Uri uri2 = this.f25575e;
+        Uri uri3 = this.f25576i;
+        gp.a aVar = this.f25577o;
         return "GovernmentIdNfcData(dg1Uri=" + uri + ", dg2Uri=" + uri2 + ", sodUri=" + uri3 + ", chipAuthenticationStatus=" + aVar + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeParcelable(this.f25526d, i10);
-        dest.writeParcelable(this.f25527e, i10);
-        dest.writeParcelable(this.f25528i, i10);
-        dest.writeString(this.f25529o.name());
+        dest.writeParcelable(this.f25574d, i10);
+        dest.writeParcelable(this.f25575e, i10);
+        dest.writeParcelable(this.f25576i, i10);
+        dest.writeString(this.f25577o.name());
     }
 }

@@ -14,44 +14,44 @@ import mp.x0;
 public final class h implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f41141a;
+    private final ConstraintLayout f41189a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f41142b;
+    public final ConstraintLayout f41190b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f41143c;
+    public final TextView f41191c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f41144d;
+    public final ConstraintLayout f41192d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f41145e;
+    public final Pi2NavigationBar f41193e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f41146f;
+    public final ThemeableLottieAnimationView f41194f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f41147g;
+    public final TextView f41195g;
 
     private h(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
-        this.f41141a = constraintLayout;
-        this.f41142b = constraintLayout2;
-        this.f41143c = textView;
-        this.f41144d = constraintLayout3;
-        this.f41145e = pi2NavigationBar;
-        this.f41146f = themeableLottieAnimationView;
-        this.f41147g = textView2;
+        this.f41189a = constraintLayout;
+        this.f41190b = constraintLayout2;
+        this.f41191c = textView;
+        this.f41192d = constraintLayout3;
+        this.f41193e = pi2NavigationBar;
+        this.f41194f = themeableLottieAnimationView;
+        this.f41195g = textView2;
     }
 
     public static h a(View view) {
-        int i10 = w0.f37789a;
+        int i10 = w0.f37837a;
         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
         if (constraintLayout != null) {
-            i10 = w0.f37795e;
+            i10 = w0.f37843e;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = w0.f37802l;
+                i10 = w0.f37850l;
                 ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                 if (constraintLayout2 != null) {
                     i10 = w0.E;
@@ -74,7 +74,7 @@ public final class h implements ViewBinding {
     }
 
     public static h c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f37836h, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f37884h, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -84,6 +84,6 @@ public final class h implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f41141a;
+        return this.f41189a;
     }
 }

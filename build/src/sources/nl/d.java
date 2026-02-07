@@ -8,20 +8,20 @@ import ol.e;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private MediaCodec f40896a;
+    private MediaCodec f40944a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f40897b;
+    private boolean f40945b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f40898c;
+    private boolean f40946c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final MediaCodec.BufferInfo f40899d = new MediaCodec.BufferInfo();
+    private final MediaCodec.BufferInfo f40947d = new MediaCodec.BufferInfo();
 
     private void h() {
-        this.f40896a.start();
-        this.f40897b = true;
+        this.f40944a.start();
+        this.f40945b = true;
     }
 
     @Override // nl.a
@@ -29,32 +29,32 @@ public final class d implements a {
         if (i10 < 0) {
             return null;
         }
-        return new c(i10, this.f40896a.getInputBuffer(i10), null);
+        return new c(i10, this.f40944a.getInputBuffer(i10), null);
     }
 
     @Override // nl.a
     public int b(long j10) {
-        return this.f40896a.dequeueOutputBuffer(this.f40899d, j10);
+        return this.f40944a.dequeueOutputBuffer(this.f40947d, j10);
     }
 
     @Override // nl.a
     public int c(long j10) {
-        return this.f40896a.dequeueInputBuffer(j10);
+        return this.f40944a.dequeueInputBuffer(j10);
     }
 
     @Override // nl.a
     public c d(int i10) {
         if (i10 >= 0) {
-            return new c(i10, this.f40896a.getOutputBuffer(i10), this.f40899d);
+            return new c(i10, this.f40944a.getOutputBuffer(i10), this.f40947d);
         }
         return null;
     }
 
     @Override // nl.a
     public void e(c cVar) {
-        MediaCodec mediaCodec = this.f40896a;
-        int i10 = cVar.f40893a;
-        MediaCodec.BufferInfo bufferInfo = cVar.f40895c;
+        MediaCodec mediaCodec = this.f40944a;
+        int i10 = cVar.f40941a;
+        MediaCodec.BufferInfo bufferInfo = cVar.f40943c;
         mediaCodec.queueInputBuffer(i10, bufferInfo.offset, bufferInfo.size, bufferInfo.presentationTimeUs, bufferInfo.flags);
     }
 
@@ -62,24 +62,24 @@ public final class d implements a {
     public void f(MediaFormat mediaFormat, Surface surface) {
         boolean z10;
         MediaCodec e10 = wl.c.e(mediaFormat, surface, false, e.a.DECODER_NOT_FOUND, e.a.DECODER_FORMAT_NOT_FOUND, e.a.DECODER_CONFIGURATION_ERROR);
-        this.f40896a = e10;
+        this.f40944a = e10;
         if (e10 == null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f40898c = z10;
+        this.f40946c = z10;
     }
 
     @Override // nl.a
     public void g(int i10, boolean z10) {
-        this.f40896a.releaseOutputBuffer(i10, z10);
+        this.f40944a.releaseOutputBuffer(i10, z10);
     }
 
     @Override // nl.a
     public String getName() {
         try {
-            return this.f40896a.getName();
+            return this.f40944a.getName();
         } catch (IllegalStateException e10) {
             throw new ol.e(e.a.CODEC_IN_RELEASED_STATE, e10);
         }
@@ -87,26 +87,26 @@ public final class d implements a {
 
     @Override // nl.a
     public MediaFormat getOutputFormat() {
-        return this.f40896a.getOutputFormat();
+        return this.f40944a.getOutputFormat();
     }
 
     @Override // nl.a
     public boolean isRunning() {
-        return this.f40897b;
+        return this.f40945b;
     }
 
     @Override // nl.a
     public void release() {
-        if (!this.f40898c) {
-            this.f40896a.release();
-            this.f40898c = true;
+        if (!this.f40946c) {
+            this.f40944a.release();
+            this.f40946c = true;
         }
     }
 
     @Override // nl.a
     public void start() {
-        if (this.f40896a != null) {
-            if (!this.f40897b) {
+        if (this.f40944a != null) {
+            if (!this.f40945b) {
                 try {
                     h();
                     return;
@@ -121,9 +121,9 @@ public final class d implements a {
 
     @Override // nl.a
     public void stop() {
-        if (this.f40897b) {
-            this.f40896a.stop();
-            this.f40897b = false;
+        if (this.f40945b) {
+            this.f40944a.stop();
+            this.f40945b = false;
         }
     }
 }

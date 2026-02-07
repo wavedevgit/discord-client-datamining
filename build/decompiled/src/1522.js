@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.useState;
     var _closure1_slot4 = var3;
     var1 = function() {
-        _fun17324: for (var _fun17324_ip = 0;;) switch (_fun17324_ip) {
+        _fun17329: for (var _fun17329_ip = 0;;) switch (_fun17329_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var5.isFocused;
                 var0 = var0.bind(var5)();
                 if (!(var6 !== var0)) {
-                    _fun17324_ip = 96;
-                    continue _fun17324
+                    _fun17329_ip = 96;
+                    continue _fun17329
                 }
             case 91:
                 var3 = var3.bind(var4)(var0);

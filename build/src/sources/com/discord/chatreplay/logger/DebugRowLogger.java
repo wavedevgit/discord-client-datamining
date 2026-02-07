@@ -46,7 +46,7 @@ public final class DebugRowLogger implements RowLogger {
             try {
                 outputStreamWriter.write(str + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE);
                 outputStreamWriter.flush();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 c.a(outputStreamWriter, null);
                 writeJson();
             } finally {
@@ -80,7 +80,7 @@ public final class DebugRowLogger implements RowLogger {
             });
             outputStreamWriter.write("\n]");
             outputStreamWriter.flush();
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             c.a(outputStreamWriter, null);
         } finally {
         }
@@ -94,7 +94,7 @@ public final class DebugRowLogger implements RowLogger {
         }
         outputStreamWriter.write(line);
         booleanRef.element = true;
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.discord.chatreplay.logger.RowLogger

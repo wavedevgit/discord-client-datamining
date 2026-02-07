@@ -11,25 +11,25 @@ import p9.c;
 public final class b implements c {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f51255f = new a(null);
+    public static final a f51303f = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Class f51256g = b.class;
+    private static final Class f51304g = b.class;
 
     /* renamed from: a  reason: collision with root package name */
-    private final p9.b f51257a;
+    private final p9.b f51305a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ga.a f51258b;
+    private ga.a f51306b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51259c;
+    private final boolean f51307c;
 
     /* renamed from: d  reason: collision with root package name */
-    private d f51260d;
+    private d f51308d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.b f51261e;
+    private final d.b f51309e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -54,50 +54,50 @@ public final class b implements c {
 
         @Override // ia.d.b
         public CloseableReference b(int i10) {
-            return b.this.f51257a.e(i10);
+            return b.this.f51305a.e(i10);
         }
     }
 
     public b(p9.b bitmapFrameCache, ga.a animatedDrawableBackend, boolean z10) {
         Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
         Intrinsics.checkNotNullParameter(animatedDrawableBackend, "animatedDrawableBackend");
-        this.f51257a = bitmapFrameCache;
-        this.f51258b = animatedDrawableBackend;
-        this.f51259c = z10;
+        this.f51305a = bitmapFrameCache;
+        this.f51306b = animatedDrawableBackend;
+        this.f51307c = z10;
         C0677b c0677b = new C0677b();
-        this.f51261e = c0677b;
-        this.f51260d = new d(this.f51258b, z10, c0677b);
+        this.f51309e = c0677b;
+        this.f51308d = new d(this.f51306b, z10, c0677b);
     }
 
     @Override // p9.c
     public boolean a(int i10, Bitmap targetBitmap) {
         Intrinsics.checkNotNullParameter(targetBitmap, "targetBitmap");
         try {
-            this.f51260d.h(i10, targetBitmap);
+            this.f51308d.h(i10, targetBitmap);
             return true;
         } catch (IllegalStateException e10) {
-            p8.a.l(f51256g, e10, "Rendering of frame unsuccessful. Frame number: %d", Integer.valueOf(i10));
+            p8.a.l(f51304g, e10, "Rendering of frame unsuccessful. Frame number: %d", Integer.valueOf(i10));
             return false;
         }
     }
 
     @Override // p9.c
     public int c() {
-        return this.f51258b.getHeight();
+        return this.f51306b.getHeight();
     }
 
     @Override // p9.c
     public void d(Rect rect) {
-        ga.a f10 = this.f51258b.f(rect);
+        ga.a f10 = this.f51306b.f(rect);
         Intrinsics.checkNotNullExpressionValue(f10, "forNewBounds(...)");
-        if (f10 != this.f51258b) {
-            this.f51258b = f10;
-            this.f51260d = new d(f10, this.f51259c, this.f51261e);
+        if (f10 != this.f51306b) {
+            this.f51306b = f10;
+            this.f51308d = new d(f10, this.f51307c, this.f51309e);
         }
     }
 
     @Override // p9.c
     public int e() {
-        return this.f51258b.getWidth();
+        return this.f51306b.getWidth();
     }
 }

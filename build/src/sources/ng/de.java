@@ -14,14 +14,14 @@ public enum de implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f39773d;
+    private final int f39821d;
 
     de(int i10) {
-        this.f39773d = i10;
+        this.f39821d = i10;
     }
 
     @Override // ng.n2
     public final int zza() {
-        return this.f39773d;
+        return this.f39821d;
     }
 }

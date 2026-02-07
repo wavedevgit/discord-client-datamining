@@ -5,7 +5,7 @@ import java.util.Map;
 public class RTCStats {
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f43392id;
+    private final String f43440id;
     private final Map<String, Object> members;
     private final long timestampUs;
     private final String type;
@@ -13,7 +13,7 @@ public class RTCStats {
     public RTCStats(long j10, String str, String str2, Map<String, Object> map) {
         this.timestampUs = j10;
         this.type = str;
-        this.f43392id = str2;
+        this.f43440id = str2;
         this.members = map;
     }
 
@@ -43,7 +43,7 @@ public class RTCStats {
     }
 
     public String getId() {
-        return this.f43392id;
+        return this.f43440id;
     }
 
     public Map<String, Object> getMembers() {
@@ -65,7 +65,7 @@ public class RTCStats {
         sb2.append(", type: ");
         sb2.append(this.type);
         sb2.append(", id: ");
-        sb2.append(this.f43392id);
+        sb2.append(this.f43440id);
         for (Map.Entry<String, Object> entry : this.members.entrySet()) {
             sb2.append(", ");
             sb2.append(entry.getKey());

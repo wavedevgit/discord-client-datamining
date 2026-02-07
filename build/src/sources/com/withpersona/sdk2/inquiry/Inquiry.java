@@ -66,15 +66,15 @@ public final class Inquiry {
             static {
                 int[] iArr = new int[z.values().length];
                 try {
-                    iArr[z.f52076d.ordinal()] = 1;
+                    iArr[z.f52124d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[z.f52077e.ordinal()] = 2;
+                    iArr[z.f52125e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[z.f52078i.ordinal()] = 3;
+                    iArr[z.f52126i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 $EnumSwitchMapping$0 = iArr;
@@ -98,12 +98,12 @@ public final class Inquiry {
                 return zVar;
             }
             if (context == null) {
-                return z.f52077e;
+                return z.f52125e;
             }
             if (new a(context).f()) {
-                return z.f52078i;
+                return z.f52126i;
             }
-            return z.f52077e;
+            return z.f52125e;
         }
 
         public static /* synthetic */ InquiryResponse onActivityResult$default(Companion companion, Intent intent, Context context, int i10, Object obj) {
@@ -159,7 +159,7 @@ public final class Inquiry {
                             try {
                                 dVar = (d) bundle.getParcelable("ERROR_CODE_KEY");
                             } catch (Exception unused) {
-                                dVar2 = d.f43338s;
+                                dVar2 = d.f43386s;
                             }
                         } else {
                             dVar = null;
@@ -168,7 +168,7 @@ public final class Inquiry {
                             str5 = dVar;
                         }
                         if (str5 == 0) {
-                            str5 = d.f43338s;
+                            str5 = d.f43386s;
                         }
                         dVar2 = str5;
                         if (str3 == null) {
@@ -279,7 +279,7 @@ public final class Inquiry {
         }
 
         public final void prefetchModels() {
-            e2.f51904a.a();
+            e2.f51952a.a();
         }
 
         private Companion() {

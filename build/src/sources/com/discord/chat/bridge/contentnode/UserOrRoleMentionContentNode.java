@@ -41,7 +41,7 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.x
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.x
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -127,10 +127,10 @@ public final class UserOrRoleMentionContentNode extends MentionContentNode {
             compositeEncoder.l(serialDescriptor, 1, UserId$$serializer.INSTANCE, userOrRoleMentionContentNode.userId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || userOrRoleMentionContentNode.roleName != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, userOrRoleMentionContentNode.roleName);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, userOrRoleMentionContentNode.roleName);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || userOrRoleMentionContentNode.parsedUserId != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, userOrRoleMentionContentNode.parsedUserId);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, userOrRoleMentionContentNode.parsedUserId);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || userOrRoleMentionContentNode.roleColor != 0) {
             compositeEncoder.x(serialDescriptor, 4, userOrRoleMentionContentNode.roleColor);

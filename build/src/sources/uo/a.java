@@ -25,53 +25,53 @@ public abstract class a {
     public /* synthetic */ class C0681a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51869a;
+        public static final /* synthetic */ int[] f51917a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51870b;
+        public static final /* synthetic */ int[] f51918b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51871c;
+        public static final /* synthetic */ int[] f51919c;
 
         static {
             int[] iArr = new int[d0.d.values().length];
             try {
-                iArr[d0.d.f30046d.ordinal()] = 1;
+                iArr[d0.d.f30094d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[d0.d.f30047e.ordinal()] = 2;
+                iArr[d0.d.f30095e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[d0.d.f30048i.ordinal()] = 3;
+                iArr[d0.d.f30096i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f51869a = iArr;
+            f51917a = iArr;
             int[] iArr2 = new int[d0.a.values().length];
             try {
-                iArr2[d0.a.f30031d.ordinal()] = 1;
+                iArr2[d0.a.f30079d.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[d0.a.f30032e.ordinal()] = 2;
+                iArr2[d0.a.f30080e.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr2[d0.a.f30033i.ordinal()] = 3;
+                iArr2[d0.a.f30081i.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
-            f51870b = iArr2;
+            f51918b = iArr2;
             int[] iArr3 = new int[a1.a.values().length];
             try {
-                iArr3[a1.a.f37282e.ordinal()] = 1;
+                iArr3[a1.a.f37330e.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr3[a1.a.f37283i.ordinal()] = 2;
+                iArr3[a1.a.f37331i.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
-            f51871c = iArr3;
+            f51919c = iArr3;
         }
     }
 
@@ -98,33 +98,33 @@ public abstract class a {
         e.a aVar;
         e.c cVar;
         String w12 = d0Var.w1();
-        int i10 = C0681a.f51869a[d0Var.O0().ordinal()];
+        int i10 = C0681a.f51917a[d0Var.O0().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    dVar = e.d.f43358i;
+                    dVar = e.d.f43406i;
                 } else {
                     throw new qr.p();
                 }
             } else {
-                dVar = e.d.f43357e;
+                dVar = e.d.f43405e;
             }
         } else {
-            dVar = e.d.f43356d;
+            dVar = e.d.f43404d;
         }
-        int i11 = C0681a.f51870b[d0Var.b2().ordinal()];
+        int i11 = C0681a.f51918b[d0Var.b2().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
-                    aVar = e.a.f43351i;
+                    aVar = e.a.f43399i;
                 } else {
                     throw new qr.p();
                 }
             } else {
-                aVar = e.a.f43349d;
+                aVar = e.a.f43397d;
             }
         } else {
-            aVar = e.a.f43350e;
+            aVar = e.a.f43398e;
         }
         ArrayList arrayList = new ArrayList();
         for (jo.c0 c0Var : d0Var.i2()) {
@@ -144,15 +144,15 @@ public abstract class a {
     private static final oq.f c(mp.a1 a1Var) {
         f.a aVar;
         if (new File(a1Var.a()).exists()) {
-            int i10 = C0681a.f51871c[a1Var.b().ordinal()];
+            int i10 = C0681a.f51919c[a1Var.b().ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    aVar = f.a.f43363d;
+                    aVar = f.a.f43411d;
                 } else {
                     throw new qr.p();
                 }
             } else {
-                aVar = f.a.f43364e;
+                aVar = f.a.f43412e;
             }
             return new oq.f(aVar, new File(a1Var.a()));
         }

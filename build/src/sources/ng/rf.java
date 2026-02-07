@@ -3,16 +3,16 @@ package ng;
 public final class rf {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xe f40237a;
+    private final xe f40285a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ rf(pf pfVar, qf qfVar) {
         xe xeVar;
-        xeVar = pfVar.f40184a;
-        this.f40237a = xeVar;
+        xeVar = pfVar.f40232a;
+        this.f40285a = xeVar;
     }
 
     public final xe a() {
-        return this.f40237a;
+        return this.f40285a;
     }
 }

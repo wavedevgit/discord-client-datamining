@@ -19,96 +19,96 @@ import okhttp3.internal.publicsuffix.PublicSuffixDatabase;
 public final class Cookie {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final b f42815j = new b(null);
+    public static final b f42863j = new b(null);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f42816k = Pattern.compile("(\\d{2,4})[^\\d]*");
+    private static final Pattern f42864k = Pattern.compile("(\\d{2,4})[^\\d]*");
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Pattern f42817l = Pattern.compile("(?i)(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec).*");
+    private static final Pattern f42865l = Pattern.compile("(?i)(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec).*");
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f42818m = Pattern.compile("(\\d{1,2})[^\\d]*");
+    private static final Pattern f42866m = Pattern.compile("(\\d{1,2})[^\\d]*");
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Pattern f42819n = Pattern.compile("(\\d{1,2}):(\\d{1,2}):(\\d{1,2})[^\\d]*");
+    private static final Pattern f42867n = Pattern.compile("(\\d{1,2}):(\\d{1,2}):(\\d{1,2})[^\\d]*");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f42820a;
+    private final String f42868a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f42821b;
+    private final String f42869b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f42822c;
+    private final long f42870c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42823d;
+    private final String f42871d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f42824e;
+    private final String f42872e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f42825f;
+    private final boolean f42873f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f42826g;
+    private final boolean f42874g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f42827h;
+    private final boolean f42875h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f42828i;
+    private final boolean f42876i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f42829a;
+        private String f42877a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f42830b;
+        private String f42878b;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f42832d;
+        private String f42880d;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f42834f;
+        private boolean f42882f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f42835g;
+        private boolean f42883g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f42836h;
+        private boolean f42884h;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f42837i;
+        private boolean f42885i;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f42831c = 253402300799999L;
+        private long f42879c = 253402300799999L;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f42833e = "/";
+        private String f42881e = "/";
 
         private final a c(String str, boolean z10) {
             String e10 = cu.a.e(str);
             if (e10 != null) {
-                this.f42832d = e10;
-                this.f42837i = z10;
+                this.f42880d = e10;
+                this.f42885i = z10;
                 return this;
             }
             throw new IllegalArgumentException("unexpected domain: " + str);
         }
 
         public final Cookie a() {
-            String str = this.f42829a;
+            String str = this.f42877a;
             if (str != null) {
-                String str2 = this.f42830b;
+                String str2 = this.f42878b;
                 if (str2 != null) {
-                    long j10 = this.f42831c;
-                    String str3 = this.f42832d;
+                    long j10 = this.f42879c;
+                    String str3 = this.f42880d;
                     if (str3 != null) {
-                        return new Cookie(str, str2, j10, str3, this.f42833e, this.f42834f, this.f42835g, this.f42836h, this.f42837i, null);
+                        return new Cookie(str, str2, j10, str3, this.f42881e, this.f42882f, this.f42883g, this.f42884h, this.f42885i, null);
                     }
                     throw new NullPointerException("builder.domain == null");
                 }
@@ -125,7 +125,7 @@ public final class Cookie {
         public final a d(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
             if (Intrinsics.areEqual(StringsKt.k1(name).toString(), name)) {
-                this.f42829a = name;
+                this.f42877a = name;
                 return this;
             }
             throw new IllegalArgumentException("name is not trimmed");
@@ -134,7 +134,7 @@ public final class Cookie {
         public final a e(String value) {
             Intrinsics.checkNotNullParameter(value, "value");
             if (Intrinsics.areEqual(StringsKt.k1(value).toString(), value)) {
-                this.f42830b = value;
+                this.f42878b = value;
                 return this;
             }
             throw new IllegalArgumentException("value is not trimmed");
@@ -187,7 +187,7 @@ public final class Cookie {
 
         private final long g(String str, int i10, int i11) {
             int a10 = a(str, i10, i11, false);
-            Matcher matcher = Cookie.f42819n.matcher(str);
+            Matcher matcher = Cookie.f42867n.matcher(str);
             int i12 = -1;
             int i13 = -1;
             int i14 = -1;
@@ -197,7 +197,7 @@ public final class Cookie {
             while (a10 < i11) {
                 int a11 = a(str, a10 + 1, i11, true);
                 matcher.region(a10, a11);
-                if (i13 == -1 && matcher.usePattern(Cookie.f42819n).matches()) {
+                if (i13 == -1 && matcher.usePattern(Cookie.f42867n).matches()) {
                     String group = matcher.group(1);
                     Intrinsics.checkNotNullExpressionValue(group, "matcher.group(1)");
                     i13 = Integer.parseInt(group);
@@ -207,21 +207,21 @@ public final class Cookie {
                     String group3 = matcher.group(3);
                     Intrinsics.checkNotNullExpressionValue(group3, "matcher.group(3)");
                     i17 = Integer.parseInt(group3);
-                } else if (i14 == -1 && matcher.usePattern(Cookie.f42818m).matches()) {
+                } else if (i14 == -1 && matcher.usePattern(Cookie.f42866m).matches()) {
                     String group4 = matcher.group(1);
                     Intrinsics.checkNotNullExpressionValue(group4, "matcher.group(1)");
                     i14 = Integer.parseInt(group4);
-                } else if (i15 == -1 && matcher.usePattern(Cookie.f42817l).matches()) {
+                } else if (i15 == -1 && matcher.usePattern(Cookie.f42865l).matches()) {
                     String group5 = matcher.group(1);
                     Intrinsics.checkNotNullExpressionValue(group5, "matcher.group(1)");
                     Locale US = Locale.US;
                     Intrinsics.checkNotNullExpressionValue(US, "US");
                     String lowerCase = group5.toLowerCase(US);
                     Intrinsics.checkNotNullExpressionValue(lowerCase, "this as java.lang.String).toLowerCase(locale)");
-                    String pattern = Cookie.f42817l.pattern();
+                    String pattern = Cookie.f42865l.pattern();
                     Intrinsics.checkNotNullExpressionValue(pattern, "MONTH_PATTERN.pattern()");
                     i15 = StringsKt.i0(pattern, lowerCase, 0, false, 6, null) / 4;
-                } else if (i12 == -1 && matcher.usePattern(Cookie.f42816k).matches()) {
+                } else if (i12 == -1 && matcher.usePattern(Cookie.f42864k).matches()) {
                     String group6 = matcher.group(1);
                     Intrinsics.checkNotNullExpressionValue(group6, "matcher.group(1)");
                     i12 = Integer.parseInt(group6);
@@ -377,7 +377,7 @@ public final class Cookie {
             } else if (!b(i11, str2)) {
                 return cookie3;
             }
-            if (i11.length() != str2.length() && PublicSuffixDatabase.f43147e.c().c(str2) == null) {
+            if (i11.length() != str2.length() && PublicSuffixDatabase.f43195e.c().c(str2) == null) {
                 return cookie3;
             }
             String str4 = "/";
@@ -425,17 +425,17 @@ public final class Cookie {
     }
 
     public final String a() {
-        return this.f42820a;
+        return this.f42868a;
     }
 
     public final String b() {
-        return this.f42821b;
+        return this.f42869b;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof Cookie) {
             Cookie cookie = (Cookie) obj;
-            if (Intrinsics.areEqual(cookie.f42820a, this.f42820a) && Intrinsics.areEqual(cookie.f42821b, this.f42821b) && cookie.f42822c == this.f42822c && Intrinsics.areEqual(cookie.f42823d, this.f42823d) && Intrinsics.areEqual(cookie.f42824e, this.f42824e) && cookie.f42825f == this.f42825f && cookie.f42826g == this.f42826g && cookie.f42827h == this.f42827h && cookie.f42828i == this.f42828i) {
+            if (Intrinsics.areEqual(cookie.f42868a, this.f42868a) && Intrinsics.areEqual(cookie.f42869b, this.f42869b) && cookie.f42870c == this.f42870c && Intrinsics.areEqual(cookie.f42871d, this.f42871d) && Intrinsics.areEqual(cookie.f42872e, this.f42872e) && cookie.f42873f == this.f42873f && cookie.f42874g == this.f42874g && cookie.f42875h == this.f42875h && cookie.f42876i == this.f42876i) {
                 return true;
             }
             return false;
@@ -444,35 +444,35 @@ public final class Cookie {
     }
 
     public final String g() {
-        return this.f42820a;
+        return this.f42868a;
     }
 
     public final String h(boolean z10) {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f42820a);
+        sb2.append(this.f42868a);
         sb2.append('=');
-        sb2.append(this.f42821b);
-        if (this.f42827h) {
-            if (this.f42822c == Long.MIN_VALUE) {
+        sb2.append(this.f42869b);
+        if (this.f42875h) {
+            if (this.f42870c == Long.MIN_VALUE) {
                 sb2.append("; max-age=0");
             } else {
                 sb2.append("; expires=");
-                sb2.append(hu.c.b(new Date(this.f42822c)));
+                sb2.append(hu.c.b(new Date(this.f42870c)));
             }
         }
-        if (!this.f42828i) {
+        if (!this.f42876i) {
             sb2.append("; domain=");
             if (z10) {
                 sb2.append(".");
             }
-            sb2.append(this.f42823d);
+            sb2.append(this.f42871d);
         }
         sb2.append("; path=");
-        sb2.append(this.f42824e);
-        if (this.f42825f) {
+        sb2.append(this.f42872e);
+        if (this.f42873f) {
             sb2.append("; secure");
         }
-        if (this.f42826g) {
+        if (this.f42874g) {
             sb2.append("; httponly");
         }
         String sb3 = sb2.toString();
@@ -481,11 +481,11 @@ public final class Cookie {
     }
 
     public int hashCode() {
-        return ((((((((((((((((527 + this.f42820a.hashCode()) * 31) + this.f42821b.hashCode()) * 31) + Long.hashCode(this.f42822c)) * 31) + this.f42823d.hashCode()) * 31) + this.f42824e.hashCode()) * 31) + Boolean.hashCode(this.f42825f)) * 31) + Boolean.hashCode(this.f42826g)) * 31) + Boolean.hashCode(this.f42827h)) * 31) + Boolean.hashCode(this.f42828i);
+        return ((((((((((((((((527 + this.f42868a.hashCode()) * 31) + this.f42869b.hashCode()) * 31) + Long.hashCode(this.f42870c)) * 31) + this.f42871d.hashCode()) * 31) + this.f42872e.hashCode()) * 31) + Boolean.hashCode(this.f42873f)) * 31) + Boolean.hashCode(this.f42874g)) * 31) + Boolean.hashCode(this.f42875h)) * 31) + Boolean.hashCode(this.f42876i);
     }
 
     public final String i() {
-        return this.f42821b;
+        return this.f42869b;
     }
 
     public String toString() {
@@ -493,14 +493,14 @@ public final class Cookie {
     }
 
     private Cookie(String str, String str2, long j10, String str3, String str4, boolean z10, boolean z11, boolean z12, boolean z13) {
-        this.f42820a = str;
-        this.f42821b = str2;
-        this.f42822c = j10;
-        this.f42823d = str3;
-        this.f42824e = str4;
-        this.f42825f = z10;
-        this.f42826g = z11;
-        this.f42827h = z12;
-        this.f42828i = z13;
+        this.f42868a = str;
+        this.f42869b = str2;
+        this.f42870c = j10;
+        this.f42871d = str3;
+        this.f42872e = str4;
+        this.f42873f = z10;
+        this.f42874g = z11;
+        this.f42875h = z12;
+        this.f42876i = z13;
     }
 }

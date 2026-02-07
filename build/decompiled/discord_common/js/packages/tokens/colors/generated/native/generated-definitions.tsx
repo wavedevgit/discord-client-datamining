@@ -3850,25 +3850,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
-        'raw': 'GREEN_NEW_25',
+        'raw': 'GREEN_330',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.LIGHT;
     var13 = {
-        'raw': 'GREEN_NEW_55',
+        'raw': 'GREEN_430',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.MIDNIGHT;
     var13 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.DARKER;
     var13 = {
-        'raw': 'GREEN_NEW_34',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var14] = var13;
@@ -3931,25 +3931,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.LIGHT;
     var13 = {
-        'raw': 'GREEN_NEW_45',
+        'raw': 'GREEN_400',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.MIDNIGHT;
     var13 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var14] = var13;
     var14 = var8.DARKER;
     var13 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var14] = var13;
@@ -6908,25 +6908,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var10;
     var12 = var8.DARK;
     var11 = {
-        'raw': 'GREEN_NEW_25',
+        'raw': 'GREEN_330',
         'opacity': 1
     };
     var7[var12] = var11;
     var12 = var8.LIGHT;
     var11 = {
-        'raw': 'GREEN_NEW_55',
+        'raw': 'GREEN_430',
         'opacity': 1
     };
     var7[var12] = var11;
     var12 = var8.MIDNIGHT;
     var11 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var12] = var11;
     var12 = var8.DARKER;
     var11 = {
-        'raw': 'GREEN_NEW_34',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var12] = var11;
@@ -6935,19 +6935,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var10;
     var12 = var8.DARK;
     var11 = {
-        'raw': 'RED_345',
+        'raw': 'RED_330',
         'opacity': 1
     };
     var7[var12] = var11;
     var12 = var8.LIGHT;
     var11 = {
-        'raw': 'RED_500',
+        'raw': 'RED_530',
         'opacity': 1
     };
     var7[var12] = var11;
     var12 = var8.MIDNIGHT;
     var11 = {
-        'raw': 'RED_345',
+        'raw': 'RED_360',
         'opacity': 1
     };
     var7[var12] = var11;
@@ -6962,25 +6962,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var10;
     var11 = var8.DARK;
     var10 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.LIGHT;
     var10 = {
-        'raw': 'GREEN_NEW_45',
+        'raw': 'GREEN_400',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.MIDNIGHT;
     var10 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var11] = var10;
     var11 = var8.DARKER;
     var10 = {
-        'raw': 'GREEN_NEW_40',
+        'raw': 'GREEN_345',
         'opacity': 1
     };
     var7[var11] = var10;

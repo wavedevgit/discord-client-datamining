@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/themes/native/updateSaturation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun97814: for (var _fun97814_ip = 0;;) switch (_fun97814_ip) {
+        _fun98303: for (var _fun98303_ip = 0;;) switch (_fun98303_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,16 +41,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun97814_ip = 64;
-                    continue _fun97814
+                    _fun98303_ip = 64;
+                    continue _fun98303
                 }
             case 41:
                 var0 = _closure1_slot3;
                 var2 = var0.DCDTheme;
                 var0 = var2.updateSaturation;
                 var0 = var0.bind(var2)(var3);
-                _fun97814_ip = 95;
-                continue _fun97814;
+                _fun98303_ip = 95;
+                continue _fun98303;
             case 64:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateSaturation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 12794, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 478, 12840, 2]);

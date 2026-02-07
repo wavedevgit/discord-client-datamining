@@ -13,34 +13,34 @@ import jo.n4;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f41002a;
+    private final ConstraintLayout f41050a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f41003b;
+    public final ImageView f41051b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f41004c;
+    public final ImageView f41052c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f41005d;
+    public final ConstraintLayout f41053d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f41006e;
+    public final TextView f41054e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ConstraintLayout f41007f;
+    public final ConstraintLayout f41055f;
 
     private e(ConstraintLayout constraintLayout, ImageView imageView, ImageView imageView2, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3) {
-        this.f41002a = constraintLayout;
-        this.f41003b = imageView;
-        this.f41004c = imageView2;
-        this.f41005d = constraintLayout2;
-        this.f41006e = textView;
-        this.f41007f = constraintLayout3;
+        this.f41050a = constraintLayout;
+        this.f41051b = imageView;
+        this.f41052c = imageView2;
+        this.f41053d = constraintLayout2;
+        this.f41054e = textView;
+        this.f41055f = constraintLayout3;
     }
 
     public static e a(View view) {
-        int i10 = m4.f30407q;
+        int i10 = m4.f30455q;
         ImageView imageView = (ImageView) e4.a.a(view, i10);
         if (imageView != null) {
             i10 = m4.J;
@@ -62,7 +62,7 @@ public final class e implements ViewBinding {
     }
 
     public static e c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f30549e, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f30597e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -72,6 +72,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f41002a;
+        return this.f41050a;
     }
 }

@@ -5,5 +5,5 @@ import okio.ByteString;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f45667a = ByteString.f43166o.e("000000ffff");
+    private static final ByteString f45715a = ByteString.f43214o.e("000000ffff");
 }

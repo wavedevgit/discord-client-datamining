@@ -127,14 +127,14 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             java.lang.String r3 = r8.description
             if (r3 == 0) goto L2b
         L24:
-            jt.n2 r3 = jt.n2.f31041a
+            jt.n2 r3 = jt.n2.f31089a
             java.lang.String r4 = r8.description
             r9.l(r10, r0, r3, r4)
         L2b:
             r0 = 4
             boolean r3 = r8.isSpoiler
             r9.y(r10, r0, r3)
-            jt.n2 r0 = jt.n2.f31041a
+            jt.n2 r0 = jt.n2.f31089a
             java.lang.String r3 = r8.spoilerDescription
             r4 = 5
             r9.l(r10, r4, r0, r3)
@@ -153,7 +153,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             r3 = 10
             java.lang.String r4 = r8.obscureDescription
             r9.l(r10, r3, r0, r4)
-            jt.h r3 = jt.h.f31005a
+            jt.h r3 = jt.h.f31053a
             java.lang.Boolean r4 = r8.verifyAge
             r5 = 11
             r9.l(r10, r5, r3, r4)

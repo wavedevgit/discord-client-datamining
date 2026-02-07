@@ -9,7 +9,7 @@ public class a extends n {
 
     @Override // r5.m
     public o5.a a() {
-        return new o5.b(this.f48667a);
+        return new o5.b(this.f48715a);
     }
 
     @Override // r5.n, r5.m

@@ -8,7 +8,7 @@ import l5.y;
 public class c implements y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f54524a = new HashSet();
+    private static final Set f54572a = new HashSet();
 
     @Override // l5.y
     public void a(String str) {
@@ -17,7 +17,7 @@ public class c implements y {
 
     @Override // l5.y
     public void b(String str, Throwable th2) {
-        if (l5.e.f35800a) {
+        if (l5.e.f35848a) {
             Log.d("LOTTIE", str, th2);
         }
     }
@@ -29,7 +29,7 @@ public class c implements y {
 
     @Override // l5.y
     public void d(String str, Throwable th2) {
-        Set set = f54524a;
+        Set set = f54572a;
         if (set.contains(str)) {
             return;
         }
@@ -38,7 +38,7 @@ public class c implements y {
     }
 
     public void e(String str, Throwable th2) {
-        if (l5.e.f35800a) {
+        if (l5.e.f35848a) {
             Log.d("LOTTIE", str, th2);
         }
     }

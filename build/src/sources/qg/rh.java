@@ -3,36 +3,36 @@ package qg;
 public final class rh {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xd f47499a;
+    private final xd f47547a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final rd f47500b;
+    private final rd f47548b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final wh f47501c;
+    private final wh f47549c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ rh(ph phVar, qh qhVar) {
         xd xdVar;
         rd rdVar;
         wh whVar;
-        xdVar = phVar.f47454a;
-        this.f47499a = xdVar;
-        rdVar = phVar.f47455b;
-        this.f47500b = rdVar;
-        whVar = phVar.f47456c;
-        this.f47501c = whVar;
+        xdVar = phVar.f47502a;
+        this.f47547a = xdVar;
+        rdVar = phVar.f47503b;
+        this.f47548b = rdVar;
+        whVar = phVar.f47504c;
+        this.f47549c = whVar;
     }
 
     public final rd a() {
-        return this.f47500b;
+        return this.f47548b;
     }
 
     public final xd b() {
-        return this.f47499a;
+        return this.f47547a;
     }
 
     public final wh c() {
-        return this.f47501c;
+        return this.f47549c;
     }
 }

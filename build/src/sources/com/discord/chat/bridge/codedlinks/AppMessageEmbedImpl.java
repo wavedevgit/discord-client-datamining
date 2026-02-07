@@ -94,7 +94,7 @@ public final class AppMessageEmbedImpl extends CodedLinkEmbed implements AppMess
     }
 
     static {
-        o oVar = o.f48044e;
+        o oVar = o.f48092e;
         $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.codedlinks.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -118,7 +118,7 @@ public final class AppMessageEmbedImpl extends CodedLinkEmbed implements AppMess
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(new u0(n2.f31041a, p0.f31057a));
+        return new f(new u0(n2.f31089a, p0.f31105a));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -298,76 +298,76 @@ public final class AppMessageEmbedImpl extends CodedLinkEmbed implements AppMess
             compositeEncoder.x(serialDescriptor, 2, appMessageEmbedImpl.getHeaderColor());
         }
         if (compositeEncoder.A(serialDescriptor, 3) || appMessageEmbedImpl.getHeaderText() != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, appMessageEmbedImpl.getHeaderText());
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, appMessageEmbedImpl.getHeaderText());
         }
         if (compositeEncoder.A(serialDescriptor, 4) || appMessageEmbedImpl.getType() != null) {
             compositeEncoder.l(serialDescriptor, 4, InviteType.Serializer.INSTANCE, appMessageEmbedImpl.getType());
         }
         if (compositeEncoder.A(serialDescriptor, 5) || appMessageEmbedImpl.getAcceptLabelBackgroundColor() != null) {
-            compositeEncoder.l(serialDescriptor, 5, p0.f31057a, appMessageEmbedImpl.getAcceptLabelBackgroundColor());
+            compositeEncoder.l(serialDescriptor, 5, p0.f31105a, appMessageEmbedImpl.getAcceptLabelBackgroundColor());
         }
         if (compositeEncoder.A(serialDescriptor, 6) || appMessageEmbedImpl.getAcceptLabelBorderColor() != null) {
-            compositeEncoder.l(serialDescriptor, 6, p0.f31057a, appMessageEmbedImpl.getAcceptLabelBorderColor());
+            compositeEncoder.l(serialDescriptor, 6, p0.f31105a, appMessageEmbedImpl.getAcceptLabelBorderColor());
         }
         if (compositeEncoder.A(serialDescriptor, 7) || appMessageEmbedImpl.getAcceptLabelColor() != null) {
-            compositeEncoder.l(serialDescriptor, 7, p0.f31057a, appMessageEmbedImpl.getAcceptLabelColor());
+            compositeEncoder.l(serialDescriptor, 7, p0.f31105a, appMessageEmbedImpl.getAcceptLabelColor());
         }
         if (compositeEncoder.A(serialDescriptor, 8) || appMessageEmbedImpl.getAcceptLabelText() != null) {
-            compositeEncoder.l(serialDescriptor, 8, n2.f31041a, appMessageEmbedImpl.getAcceptLabelText());
+            compositeEncoder.l(serialDescriptor, 8, n2.f31089a, appMessageEmbedImpl.getAcceptLabelText());
         }
         if (compositeEncoder.A(serialDescriptor, 9) || appMessageEmbedImpl.getBodyText() != null) {
-            compositeEncoder.l(serialDescriptor, 9, n2.f31041a, appMessageEmbedImpl.getBodyText());
+            compositeEncoder.l(serialDescriptor, 9, n2.f31089a, appMessageEmbedImpl.getBodyText());
         }
         if (compositeEncoder.A(serialDescriptor, 10) || appMessageEmbedImpl.getBodyTextColor() != null) {
-            compositeEncoder.l(serialDescriptor, 10, p0.f31057a, appMessageEmbedImpl.getBodyTextColor());
+            compositeEncoder.l(serialDescriptor, 10, p0.f31105a, appMessageEmbedImpl.getBodyTextColor());
         }
         if (compositeEncoder.A(serialDescriptor, 11) || appMessageEmbedImpl.getCanBeAccepted() != null) {
-            compositeEncoder.l(serialDescriptor, 11, h.f31005a, appMessageEmbedImpl.getCanBeAccepted());
+            compositeEncoder.l(serialDescriptor, 11, h.f31053a, appMessageEmbedImpl.getCanBeAccepted());
         }
         if (compositeEncoder.A(serialDescriptor, 12) || appMessageEmbedImpl.getEmbedCanBeTapped() != null) {
-            compositeEncoder.l(serialDescriptor, 12, h.f31005a, appMessageEmbedImpl.getEmbedCanBeTapped());
+            compositeEncoder.l(serialDescriptor, 12, h.f31053a, appMessageEmbedImpl.getEmbedCanBeTapped());
         }
         if (compositeEncoder.A(serialDescriptor, 13) || appMessageEmbedImpl.getResolvingGradientEnd() != null) {
-            compositeEncoder.l(serialDescriptor, 13, p0.f31057a, appMessageEmbedImpl.getResolvingGradientEnd());
+            compositeEncoder.l(serialDescriptor, 13, p0.f31105a, appMessageEmbedImpl.getResolvingGradientEnd());
         }
         if (compositeEncoder.A(serialDescriptor, 14) || appMessageEmbedImpl.getResolvingGradientStart() != null) {
-            compositeEncoder.l(serialDescriptor, 14, p0.f31057a, appMessageEmbedImpl.getResolvingGradientStart());
+            compositeEncoder.l(serialDescriptor, 14, p0.f31105a, appMessageEmbedImpl.getResolvingGradientStart());
         }
         if (compositeEncoder.A(serialDescriptor, 15) || appMessageEmbedImpl.getSplashHasRadialGradient() != null) {
-            compositeEncoder.l(serialDescriptor, 15, h.f31005a, appMessageEmbedImpl.getSplashHasRadialGradient());
+            compositeEncoder.l(serialDescriptor, 15, h.f31053a, appMessageEmbedImpl.getSplashHasRadialGradient());
         }
         if (compositeEncoder.A(serialDescriptor, 16) || appMessageEmbedImpl.getSplashOpacity() != null) {
-            compositeEncoder.l(serialDescriptor, 16, p0.f31057a, appMessageEmbedImpl.getSplashOpacity());
+            compositeEncoder.l(serialDescriptor, 16, p0.f31105a, appMessageEmbedImpl.getSplashOpacity());
         }
         if (compositeEncoder.A(serialDescriptor, 17) || appMessageEmbedImpl.getSplashUrl() != null) {
-            compositeEncoder.l(serialDescriptor, 17, n2.f31041a, appMessageEmbedImpl.getSplashUrl());
+            compositeEncoder.l(serialDescriptor, 17, n2.f31089a, appMessageEmbedImpl.getSplashUrl());
         }
         if (compositeEncoder.A(serialDescriptor, 18) || appMessageEmbedImpl.getInviteSplash() != null) {
-            compositeEncoder.l(serialDescriptor, 18, n2.f31041a, appMessageEmbedImpl.getInviteSplash());
+            compositeEncoder.l(serialDescriptor, 18, n2.f31089a, appMessageEmbedImpl.getInviteSplash());
         }
         if (compositeEncoder.A(serialDescriptor, 19) || appMessageEmbedImpl.getSubtitle() != null) {
-            compositeEncoder.l(serialDescriptor, 19, n2.f31041a, appMessageEmbedImpl.getSubtitle());
+            compositeEncoder.l(serialDescriptor, 19, n2.f31089a, appMessageEmbedImpl.getSubtitle());
         }
         if (compositeEncoder.A(serialDescriptor, 20) || appMessageEmbedImpl.getSubtitleColor() != null) {
-            compositeEncoder.l(serialDescriptor, 20, p0.f31057a, appMessageEmbedImpl.getSubtitleColor());
+            compositeEncoder.l(serialDescriptor, 20, p0.f31105a, appMessageEmbedImpl.getSubtitleColor());
         }
         if (compositeEncoder.A(serialDescriptor, 21) || appMessageEmbedImpl.getThumbnailBackgroundColor() != null) {
-            compositeEncoder.l(serialDescriptor, 21, p0.f31057a, appMessageEmbedImpl.getThumbnailBackgroundColor());
+            compositeEncoder.l(serialDescriptor, 21, p0.f31105a, appMessageEmbedImpl.getThumbnailBackgroundColor());
         }
         if (compositeEncoder.A(serialDescriptor, 22) || appMessageEmbedImpl.getThumbnailCornerRadius() != null) {
-            compositeEncoder.l(serialDescriptor, 22, p0.f31057a, appMessageEmbedImpl.getThumbnailCornerRadius());
+            compositeEncoder.l(serialDescriptor, 22, p0.f31105a, appMessageEmbedImpl.getThumbnailCornerRadius());
         }
         if (compositeEncoder.A(serialDescriptor, 23) || appMessageEmbedImpl.getThumbnailText() != null) {
-            compositeEncoder.l(serialDescriptor, 23, n2.f31041a, appMessageEmbedImpl.getThumbnailText());
+            compositeEncoder.l(serialDescriptor, 23, n2.f31089a, appMessageEmbedImpl.getThumbnailText());
         }
         if (compositeEncoder.A(serialDescriptor, 24) || appMessageEmbedImpl.getThumbnailUrl() != null) {
-            compositeEncoder.l(serialDescriptor, 24, n2.f31041a, appMessageEmbedImpl.getThumbnailUrl());
+            compositeEncoder.l(serialDescriptor, 24, n2.f31089a, appMessageEmbedImpl.getThumbnailUrl());
         }
         if (compositeEncoder.A(serialDescriptor, 25) || appMessageEmbedImpl.getTitleColor() != null) {
-            compositeEncoder.l(serialDescriptor, 25, p0.f31057a, appMessageEmbedImpl.getTitleColor());
+            compositeEncoder.l(serialDescriptor, 25, p0.f31105a, appMessageEmbedImpl.getTitleColor());
         }
         if (compositeEncoder.A(serialDescriptor, 26) || appMessageEmbedImpl.getTitleText() != null) {
-            compositeEncoder.l(serialDescriptor, 26, n2.f31041a, appMessageEmbedImpl.getTitleText());
+            compositeEncoder.l(serialDescriptor, 26, n2.f31089a, appMessageEmbedImpl.getTitleText());
         }
         if (compositeEncoder.A(serialDescriptor, 27) || !Intrinsics.areEqual(appMessageEmbedImpl.getAppId(), "")) {
             compositeEncoder.z(serialDescriptor, 27, appMessageEmbedImpl.getAppId());
@@ -376,28 +376,28 @@ public final class AppMessageEmbedImpl extends CodedLinkEmbed implements AppMess
             compositeEncoder.z(serialDescriptor, 28, appMessageEmbedImpl.getMessageId());
         }
         if (compositeEncoder.A(serialDescriptor, 29) || appMessageEmbedImpl.getTitle() != null) {
-            compositeEncoder.l(serialDescriptor, 29, n2.f31041a, appMessageEmbedImpl.getTitle());
+            compositeEncoder.l(serialDescriptor, 29, n2.f31089a, appMessageEmbedImpl.getTitle());
         }
         if (compositeEncoder.A(serialDescriptor, 30) || appMessageEmbedImpl.getHeader() != null) {
-            compositeEncoder.l(serialDescriptor, 30, n2.f31041a, appMessageEmbedImpl.getHeader());
+            compositeEncoder.l(serialDescriptor, 30, n2.f31089a, appMessageEmbedImpl.getHeader());
         }
         if (compositeEncoder.A(serialDescriptor, 31) || appMessageEmbedImpl.getInfo() != null) {
-            compositeEncoder.l(serialDescriptor, 31, n2.f31041a, appMessageEmbedImpl.getInfo());
+            compositeEncoder.l(serialDescriptor, 31, n2.f31089a, appMessageEmbedImpl.getInfo());
         }
         if (compositeEncoder.A(serialDescriptor, 32) || appMessageEmbedImpl.getTagline() != null) {
-            compositeEncoder.l(serialDescriptor, 32, n2.f31041a, appMessageEmbedImpl.getTagline());
+            compositeEncoder.l(serialDescriptor, 32, n2.f31089a, appMessageEmbedImpl.getTagline());
         }
         if (compositeEncoder.A(serialDescriptor, 33) || appMessageEmbedImpl.getGradientColors() != null) {
             compositeEncoder.l(serialDescriptor, 33, (ft.o) lazyArr[33].getValue(), appMessageEmbedImpl.getGradientColors());
         }
         if (compositeEncoder.A(serialDescriptor, 34) || appMessageEmbedImpl.getStaticBannerSrc() != null) {
-            compositeEncoder.l(serialDescriptor, 34, n2.f31041a, appMessageEmbedImpl.getStaticBannerSrc());
+            compositeEncoder.l(serialDescriptor, 34, n2.f31089a, appMessageEmbedImpl.getStaticBannerSrc());
         }
         if (compositeEncoder.A(serialDescriptor, 35) || appMessageEmbedImpl.getIconSrc() != null) {
-            compositeEncoder.l(serialDescriptor, 35, n2.f31041a, appMessageEmbedImpl.getIconSrc());
+            compositeEncoder.l(serialDescriptor, 35, n2.f31089a, appMessageEmbedImpl.getIconSrc());
         }
         if (compositeEncoder.A(serialDescriptor, 36) || appMessageEmbedImpl.getEmbedUrl() != null) {
-            compositeEncoder.l(serialDescriptor, 36, n2.f31041a, appMessageEmbedImpl.getEmbedUrl());
+            compositeEncoder.l(serialDescriptor, 36, n2.f31089a, appMessageEmbedImpl.getEmbedUrl());
         }
         if (compositeEncoder.A(serialDescriptor, 37) || !Intrinsics.areEqual(appMessageEmbedImpl.getBannerRatio(), "")) {
             compositeEncoder.z(serialDescriptor, 37, appMessageEmbedImpl.getBannerRatio());

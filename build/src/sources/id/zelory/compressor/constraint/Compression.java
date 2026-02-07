@@ -8,14 +8,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Compression {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f26657a = new ArrayList();
+    private final List f26705a = new ArrayList();
 
     public final void a(a constraint) {
         Intrinsics.checkParameterIsNotNull(constraint, "constraint");
-        this.f26657a.add(constraint);
+        this.f26705a.add(constraint);
     }
 
     public final List b() {
-        return this.f26657a;
+        return this.f26705a;
     }
 }

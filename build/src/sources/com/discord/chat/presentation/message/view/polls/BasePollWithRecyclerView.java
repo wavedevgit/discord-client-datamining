@@ -47,7 +47,7 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
     public static final Unit bind$lambda$3(Function3 function3, PollMessageAccessory pollMessageAccessory, String answerId) {
         Intrinsics.checkNotNullParameter(answerId, "answerId");
         function3.invoke(ChannelId.m1057boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1083boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), answerId);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -55,7 +55,7 @@ public abstract class BasePollWithRecyclerView extends ConstraintLayout implemen
         Intrinsics.checkNotNullParameter(attachmentId, "attachmentId");
         Intrinsics.checkNotNullParameter(viewResizeMode, "viewResizeMode");
         function8.invoke(ChannelId.m1057boximpl(pollMessageAccessory.m630getChannelIdo4g7jtM()), MessageId.m1083boximpl(pollMessageAccessory.mo536getMessageId3Eiw7ao()), attachmentId, Integer.valueOf((int) SizeUtilsKt.getPxToDp(i10)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i11)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i12)), Integer.valueOf((int) SizeUtilsKt.getPxToDp(i13)), viewResizeMode);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     protected static /* synthetic */ void getBinding$annotations() {

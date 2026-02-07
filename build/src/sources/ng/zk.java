@@ -3,16 +3,16 @@ package ng;
 public abstract class zk {
 
     /* renamed from: a  reason: collision with root package name */
-    private static xk f40679a;
+    private static xk f40727a;
 
     public static synchronized nk a(fk fkVar) {
         nk nkVar;
         synchronized (zk.class) {
             try {
-                if (f40679a == null) {
-                    f40679a = new xk(null);
+                if (f40727a == null) {
+                    f40727a = new xk(null);
                 }
-                nkVar = (nk) f40679a.b(fkVar);
+                nkVar = (nk) f40727a.b(fkVar);
             } catch (Throwable th2) {
                 throw th2;
             }

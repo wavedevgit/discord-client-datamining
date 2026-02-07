@@ -54,7 +54,7 @@ public /* synthetic */ class SafetySystemNotificationEmbed$$serializer implement
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = SafetySystemNotificationEmbed.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, n2Var, n2Var, n2Var, a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), lazyArr[10].getValue()};
     }
 
@@ -85,7 +85,7 @@ public /* synthetic */ class SafetySystemNotificationEmbed$$serializer implement
             String m11 = b10.m(serialDescriptor, 1);
             String m12 = b10.m(serialDescriptor, 2);
             String m13 = b10.m(serialDescriptor, 3);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             footerTheme = (FooterTheme) b10.y(serialDescriptor, 10, (DeserializationStrategy) lazyArr[10].getValue(), null);
             str7 = m10;
             str = (String) b10.n(serialDescriptor, 9, n2Var, null);
@@ -139,31 +139,31 @@ public /* synthetic */ class SafetySystemNotificationEmbed$$serializer implement
                         i11 = 9;
                         break;
                     case 4:
-                        str17 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str17);
                         i12 |= 16;
                         i11 = 9;
                         break;
                     case 5:
-                        str16 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str16);
                         i12 |= 32;
                         i11 = 9;
                         break;
                     case 6:
-                        str15 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str15);
+                        str15 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str15);
                         i12 |= 64;
                         i11 = 9;
                         break;
                     case 7:
-                        str13 = (String) b10.n(serialDescriptor, 7, n2.f31041a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 7, n2.f31089a, str13);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i11 = 9;
                         continue;
                     case 8:
-                        str14 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str14);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     case 9:
-                        str12 = (String) b10.n(serialDescriptor, i11, n2.f31041a, str12);
+                        str12 = (String) b10.n(serialDescriptor, i11, n2.f31089a, str12);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         break;
                     case 10:

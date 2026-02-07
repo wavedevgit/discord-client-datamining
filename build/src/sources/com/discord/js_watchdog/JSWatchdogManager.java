@@ -133,7 +133,7 @@ public final class JSWatchdogManager {
         synchronized (this) {
             storage = JSWatchdogStorage.Companion.getInstance(context);
             cacheDir = context.getCacheDir();
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -141,6 +141,6 @@ public final class JSWatchdogManager {
         Intrinsics.checkNotNullParameter(sessionId, "sessionId");
         Intrinsics.checkNotNullParameter(promise, "promise");
         cancelExistingJobs();
-        pingCoroutineJob = g.d(v0.f43538d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
+        pingCoroutineJob = g.d(v0.f43586d, null, null, new JSWatchdogManager$ping$1(z10, j10, promise, sessionId, z11, null), 3, null);
     }
 }

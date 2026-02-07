@@ -3,8 +3,8 @@ package pq;
 public abstract class g1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f45236a = 2131558631;
+    public static int f45284a = 2131558631;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f45237b = 2131558645;
+    public static int f45285b = 2131558645;
 }

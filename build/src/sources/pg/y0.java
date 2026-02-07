@@ -9,31 +9,31 @@ import java.util.Map;
 final class y0 extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    final Map f44940d;
+    final Map f44988d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y0(Map map) {
-        this.f44940d = map;
+        this.f44988d = map;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final void clear() {
-        this.f44940d.clear();
+        this.f44988d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean contains(Object obj) {
-        return this.f44940d.containsValue(obj);
+        return this.f44988d.containsValue(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean isEmpty() {
-        return this.f44940d.isEmpty();
+        return this.f44988d.isEmpty();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
-        return new v0(this.f44940d.entrySet().iterator());
+        return new v0(this.f44988d.entrySet().iterator());
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
@@ -41,9 +41,9 @@ final class y0 extends AbstractCollection {
         try {
             return super.remove(obj);
         } catch (UnsupportedOperationException unused) {
-            for (Map.Entry entry : this.f44940d.entrySet()) {
+            for (Map.Entry entry : this.f44988d.entrySet()) {
                 if (ze.a(obj, entry.getValue())) {
-                    this.f44940d.remove(entry.getKey());
+                    this.f44988d.remove(entry.getKey());
                     return true;
                 }
             }
@@ -60,12 +60,12 @@ final class y0 extends AbstractCollection {
             throw null;
         } catch (UnsupportedOperationException unused) {
             HashSet hashSet = new HashSet();
-            for (Map.Entry entry : this.f44940d.entrySet()) {
+            for (Map.Entry entry : this.f44988d.entrySet()) {
                 if (collection.contains(entry.getValue())) {
                     hashSet.add(entry.getKey());
                 }
             }
-            return this.f44940d.keySet().removeAll(hashSet);
+            return this.f44988d.keySet().removeAll(hashSet);
         }
     }
 
@@ -78,17 +78,17 @@ final class y0 extends AbstractCollection {
             throw null;
         } catch (UnsupportedOperationException unused) {
             HashSet hashSet = new HashSet();
-            for (Map.Entry entry : this.f44940d.entrySet()) {
+            for (Map.Entry entry : this.f44988d.entrySet()) {
                 if (collection.contains(entry.getValue())) {
                     hashSet.add(entry.getKey());
                 }
             }
-            return this.f44940d.keySet().retainAll(hashSet);
+            return this.f44988d.keySet().retainAll(hashSet);
         }
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final int size() {
-        return this.f44940d.size();
+        return this.f44988d.size();
     }
 }

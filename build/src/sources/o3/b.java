@@ -6,24 +6,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends a {
 
     /* renamed from: f  reason: collision with root package name */
-    private long f41450f;
+    private long f41498f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f41451g;
+    private long f41499g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(long j10, long j11, long j12, long j13, long j14, boolean z10, List states) {
         super(j10, j11, j12, z10, states);
         Intrinsics.checkNotNullParameter(states, "states");
-        this.f41450f = j13;
-        this.f41451g = j14;
+        this.f41498f = j13;
+        this.f41499g = j14;
     }
 
     @Override // o3.a, androidx.metrics.performance.FrameData
     public boolean equals(Object obj) {
         if ((obj instanceof b) && super.equals(obj)) {
             b bVar = (b) obj;
-            if (this.f41450f == bVar.f41450f && this.f41451g == bVar.f41451g) {
+            if (this.f41498f == bVar.f41498f && this.f41499g == bVar.f41499g) {
                 return true;
             }
             return false;
@@ -33,17 +33,17 @@ public final class b extends a {
 
     public final void h(long j10, long j11, long j12, long j13, long j14, boolean z10) {
         super.g(j10, j11, j12, z10);
-        this.f41450f = j13;
-        this.f41451g = j14;
+        this.f41498f = j13;
+        this.f41499g = j14;
     }
 
     @Override // o3.a, androidx.metrics.performance.FrameData
     public int hashCode() {
-        return (super.hashCode() * 31) + (Long.hashCode(this.f41450f) * 31) + Long.hashCode(this.f41451g);
+        return (super.hashCode() * 31) + (Long.hashCode(this.f41498f) * 31) + Long.hashCode(this.f41499g);
     }
 
     @Override // o3.a, androidx.metrics.performance.FrameData
     public String toString() {
-        return "FrameData(frameStartNanos=" + b() + ", frameDurationUiNanos=" + a() + ", frameDurationCpuNanos=" + f() + ", frameDurationTotalNanos=" + this.f41450f + ", frameOverrunNanos=" + this.f41451g + ", isJank=" + d() + ", states=" + c() + ')';
+        return "FrameData(frameStartNanos=" + b() + ", frameDurationUiNanos=" + a() + ", frameDurationCpuNanos=" + f() + ", frameDurationTotalNanos=" + this.f41498f + ", frameOverrunNanos=" + this.f41499g + ", isJank=" + d() + ", states=" + c() + ')';
     }
 }

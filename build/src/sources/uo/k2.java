@@ -3,10 +3,10 @@ package uo;
 public final class k2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f51974a;
+    private final br.h f52022a;
 
     public k2(br.h hVar) {
-        this.f51974a = hVar;
+        this.f52022a = hVar;
     }
 
     public static k2 a(br.h hVar) {
@@ -18,6 +18,6 @@ public final class k2 {
     }
 
     public com.withpersona.sdk2.inquiry.internal.u b(String str, String str2, String str3, yp.g gVar) {
-        return c(str, str2, str3, gVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f51974a.get());
+        return c(str, str2, str3, gVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f52022a.get());
     }
 }

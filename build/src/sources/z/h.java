@@ -10,47 +10,47 @@ import x.n0;
 public final class h extends e1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f55700b;
+    private final Executor f55748b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final n0.f f55701c;
+    private final n0.f f55749c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final n0.g f55702d;
+    private final n0.g f55750d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f55703e;
+    private final Rect f55751e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Matrix f55704f;
+    private final Matrix f55752f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f55705g;
+    private final int f55753g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f55706h;
+    private final int f55754h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f55707i;
+    private final int f55755i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final List f55708j;
+    private final List f55756j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(Executor executor, n0.e eVar, n0.f fVar, n0.g gVar, Rect rect, Matrix matrix, int i10, int i11, int i12, List list) {
         if (executor != null) {
-            this.f55700b = executor;
-            this.f55701c = fVar;
-            this.f55702d = gVar;
+            this.f55748b = executor;
+            this.f55749c = fVar;
+            this.f55750d = gVar;
             if (rect != null) {
-                this.f55703e = rect;
+                this.f55751e = rect;
                 if (matrix != null) {
-                    this.f55704f = matrix;
-                    this.f55705g = i10;
-                    this.f55706h = i11;
-                    this.f55707i = i12;
+                    this.f55752f = matrix;
+                    this.f55753g = i10;
+                    this.f55754h = i11;
+                    this.f55755i = i12;
                     if (list != null) {
-                        this.f55708j = list;
+                        this.f55756j = list;
                         return;
                     }
                     throw new NullPointerException("Null sessionConfigCameraCaptureCallbacks");
@@ -68,13 +68,13 @@ public final class h extends e1 {
         }
         if (obj instanceof e1) {
             e1 e1Var = (e1) obj;
-            if (this.f55700b.equals(e1Var.g())) {
+            if (this.f55748b.equals(e1Var.g())) {
                 e1Var.j();
-                n0.f fVar = this.f55701c;
+                n0.f fVar = this.f55749c;
                 if (fVar != null ? fVar.equals(e1Var.l()) : e1Var.l() == null) {
-                    n0.g gVar = this.f55702d;
+                    n0.g gVar = this.f55750d;
                     if (gVar != null ? gVar.equals(e1Var.m()) : e1Var.m() == null) {
-                        if (this.f55703e.equals(e1Var.i()) && this.f55704f.equals(e1Var.o()) && this.f55705g == e1Var.n() && this.f55706h == e1Var.k() && this.f55707i == e1Var.h() && this.f55708j.equals(e1Var.p())) {
+                        if (this.f55751e.equals(e1Var.i()) && this.f55752f.equals(e1Var.o()) && this.f55753g == e1Var.n() && this.f55754h == e1Var.k() && this.f55755i == e1Var.h() && this.f55756j.equals(e1Var.p())) {
                             return true;
                         }
                     }
@@ -87,19 +87,19 @@ public final class h extends e1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public Executor g() {
-        return this.f55700b;
+        return this.f55748b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public int h() {
-        return this.f55707i;
+        return this.f55755i;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f55700b.hashCode() ^ 1000003) * (-721379959);
-        n0.f fVar = this.f55701c;
+        int hashCode2 = (this.f55748b.hashCode() ^ 1000003) * (-721379959);
+        n0.f fVar = this.f55749c;
         int i10 = 0;
         if (fVar == null) {
             hashCode = 0;
@@ -107,17 +107,17 @@ public final class h extends e1 {
             hashCode = fVar.hashCode();
         }
         int i11 = (hashCode2 ^ hashCode) * 1000003;
-        n0.g gVar = this.f55702d;
+        n0.g gVar = this.f55750d;
         if (gVar != null) {
             i10 = gVar.hashCode();
         }
-        return ((((((((((((i11 ^ i10) * 1000003) ^ this.f55703e.hashCode()) * 1000003) ^ this.f55704f.hashCode()) * 1000003) ^ this.f55705g) * 1000003) ^ this.f55706h) * 1000003) ^ this.f55707i) * 1000003) ^ this.f55708j.hashCode();
+        return ((((((((((((i11 ^ i10) * 1000003) ^ this.f55751e.hashCode()) * 1000003) ^ this.f55752f.hashCode()) * 1000003) ^ this.f55753g) * 1000003) ^ this.f55754h) * 1000003) ^ this.f55755i) * 1000003) ^ this.f55756j.hashCode();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public Rect i() {
-        return this.f55703e;
+        return this.f55751e;
     }
 
     @Override // z.e1
@@ -128,39 +128,39 @@ public final class h extends e1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public int k() {
-        return this.f55706h;
+        return this.f55754h;
     }
 
     @Override // z.e1
     public n0.f l() {
-        return this.f55701c;
+        return this.f55749c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public n0.g m() {
-        return this.f55702d;
+        return this.f55750d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public int n() {
-        return this.f55705g;
+        return this.f55753g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public Matrix o() {
-        return this.f55704f;
+        return this.f55752f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // z.e1
     public List p() {
-        return this.f55708j;
+        return this.f55756j;
     }
 
     public String toString() {
-        return "TakePictureRequest{appExecutor=" + this.f55700b + ", inMemoryCallback=" + ((Object) null) + ", onDiskCallback=" + this.f55701c + ", outputFileOptions=" + this.f55702d + ", cropRect=" + this.f55703e + ", sensorToBufferTransform=" + this.f55704f + ", rotationDegrees=" + this.f55705g + ", jpegQuality=" + this.f55706h + ", captureMode=" + this.f55707i + ", sessionConfigCameraCaptureCallbacks=" + this.f55708j + "}";
+        return "TakePictureRequest{appExecutor=" + this.f55748b + ", inMemoryCallback=" + ((Object) null) + ", onDiskCallback=" + this.f55749c + ", outputFileOptions=" + this.f55750d + ", cropRect=" + this.f55751e + ", sensorToBufferTransform=" + this.f55752f + ", rotationDegrees=" + this.f55753g + ", jpegQuality=" + this.f55754h + ", captureMode=" + this.f55755i + ", sessionConfigCameraCaptureCallbacks=" + this.f55756j + "}";
     }
 }

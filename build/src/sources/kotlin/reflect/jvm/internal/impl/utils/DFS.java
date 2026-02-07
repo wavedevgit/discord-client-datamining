@@ -26,7 +26,7 @@ public class DFS {
     public static abstract class CollectingNodeHandler<N, R, C extends Iterable<R>> extends AbstractNodeHandler<N, C> {
 
         /* renamed from: a  reason: collision with root package name */
-        protected final Iterable f34817a;
+        protected final Iterable f34865a;
 
         private static /* synthetic */ void a(int i10) {
             String str = i10 != 1 ? "Argument for @NotNull parameter '%s' of %s.%s must not be null" : "@NotNull method %s.%s must not return null";
@@ -53,7 +53,7 @@ public class DFS {
         @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
         @NotNull
         public C result() {
-            C c10 = (C) this.f34817a;
+            C c10 = (C) this.f34865a;
             if (c10 == null) {
                 a(1);
             }
@@ -89,7 +89,7 @@ public class DFS {
     public static class VisitedWithSet<N> implements Visited<N> {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Set f34818a;
+        private final Set f34866a;
 
         public VisitedWithSet() {
             this(new HashSet());
@@ -101,14 +101,14 @@ public class DFS {
 
         @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.Visited
         public boolean checkAndMarkVisited(N n10) {
-            return this.f34818a.add(n10);
+            return this.f34866a.add(n10);
         }
 
         public VisitedWithSet(@NotNull Set<N> set) {
             if (set == null) {
                 a(0);
             }
-            this.f34818a = set;
+            this.f34866a = set;
         }
     }
 
@@ -116,28 +116,28 @@ public class DFS {
     static class a extends AbstractNodeHandler {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function1 f34819a;
+        final /* synthetic */ Function1 f34867a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ boolean[] f34820b;
+        final /* synthetic */ boolean[] f34868b;
 
         a(Function1 function1, boolean[] zArr) {
-            this.f34819a = function1;
-            this.f34820b = zArr;
+            this.f34867a = function1;
+            this.f34868b = zArr;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
         /* renamed from: a */
         public Boolean result() {
-            return Boolean.valueOf(this.f34820b[0]);
+            return Boolean.valueOf(this.f34868b[0]);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.utils.DFS.AbstractNodeHandler, kotlin.reflect.jvm.internal.impl.utils.DFS.NodeHandler
         public boolean beforeChildren(Object obj) {
-            if (((Boolean) this.f34819a.invoke(obj)).booleanValue()) {
-                this.f34820b[0] = true;
+            if (((Boolean) this.f34867a.invoke(obj)).booleanValue()) {
+                this.f34868b[0] = true;
             }
-            return !this.f34820b[0];
+            return !this.f34868b[0];
         }
     }
 

@@ -28,13 +28,7 @@ public class TransitionResilientLinearLayoutManager extends LinearLayoutManager 
     }
 
     /*  JADX ERROR: NullPointerException in pass: MarkMethodsForInline
-        java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.InsnArg.isRegister()" because "arg" is null
-        	at jadx.core.dex.instructions.args.RegisterArg.sameRegAndSVar(RegisterArg.java:173)
-        	at jadx.core.dex.instructions.args.InsnArg.isSameVar(InsnArg.java:269)
-        	at jadx.core.dex.visitors.MarkMethodsForInline.isSyntheticAccessPattern(MarkMethodsForInline.java:118)
-        	at jadx.core.dex.visitors.MarkMethodsForInline.inlineMth(MarkMethodsForInline.java:86)
-        	at jadx.core.dex.visitors.MarkMethodsForInline.process(MarkMethodsForInline.java:53)
-        	at jadx.core.dex.visitors.MarkMethodsForInline.visit(MarkMethodsForInline.java:37)
+        java.lang.NullPointerException
         */
     /* JADX INFO: Access modifiers changed from: private */
     public static final java.lang.Exception _init_$lambda$0(java.lang.Exception r1) {
@@ -51,27 +45,27 @@ public class TransitionResilientLinearLayoutManager extends LinearLayoutManager 
         Intrinsics.checkNotNullParameter(rec, "rec");
         Intrinsics.checkNotNullParameter(st2, "st");
         super.onLayoutChildren(rec, st2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleAllViews$lambda$3(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager) {
         super.removeAllViews();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleAllViews$lambda$4(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, RecyclerView.Recycler rec) {
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleAllViews(rec);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleView$lambda$1(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         super.removeView(it);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -79,20 +73,20 @@ public class TransitionResilientLinearLayoutManager extends LinearLayoutManager 
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleView(view, rec);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleViewAt$lambda$5(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, int i10) {
         super.removeViewAt(i10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit removeAndRecycleViewAt$lambda$6(TransitionResilientLinearLayoutManager transitionResilientLinearLayoutManager, int i10, RecyclerView.Recycler rec) {
         Intrinsics.checkNotNullParameter(rec, "rec");
         super.removeAndRecycleViewAt(i10, rec);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager

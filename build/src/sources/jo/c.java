@@ -7,28 +7,28 @@ import kotlin.enums.EnumEntries;
 public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f29995d = new c("IdTypeRejected", 0);
+    public static final c f30043d = new c("IdTypeRejected", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f29996e = new c("UnableToClassify", 1);
+    public static final c f30044e = new c("UnableToClassify", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ c[] f29997i;
+    private static final /* synthetic */ c[] f30045i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f29998o;
+    private static final /* synthetic */ EnumEntries f30046o;
 
     static {
         c[] a10 = a();
-        f29997i = a10;
-        f29998o = xr.a.a(a10);
+        f30045i = a10;
+        f30046o = xr.a.a(a10);
     }
 
     private c(String str, int i10) {
     }
 
     private static final /* synthetic */ c[] a() {
-        return new c[]{f29995d, f29996e};
+        return new c[]{f30043d, f30044e};
     }
 
     public static c valueOf(String str) {
@@ -36,6 +36,6 @@ public final class c {
     }
 
     public static c[] values() {
-        return (c[]) f29997i.clone();
+        return (c[]) f30045i.clone();
     }
 }

@@ -9,40 +9,40 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f45061a = new a();
+    public static final a f45109a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f45062b = true;
+    private static final boolean f45110b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f45063c = new ArrayList();
+    private static final List f45111c = new ArrayList();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f45064d = System.currentTimeMillis();
+    private static final long f45112d = System.currentTimeMillis();
 
     /* renamed from: e  reason: collision with root package name */
-    private static ReactApplicationContext f45065e;
+    private static ReactApplicationContext f45113e;
 
     private a() {
     }
 
     private final void a(String str) {
-        if (f45065e != null && System.currentTimeMillis() - f45064d > 10000) {
-            for (String str2 : f45063c) {
-                ReactApplicationContext reactApplicationContext = f45065e;
+        if (f45113e != null && System.currentTimeMillis() - f45112d > 10000) {
+            for (String str2 : f45111c) {
+                ReactApplicationContext reactApplicationContext = f45113e;
                 if (reactApplicationContext != null) {
                     reactApplicationContext.emitDeviceEvent("KeyboardStateDebugging", "Startup flushed: " + str2);
                 }
             }
-            f45063c.clear();
-            ReactApplicationContext reactApplicationContext2 = f45065e;
+            f45111c.clear();
+            ReactApplicationContext reactApplicationContext2 = f45113e;
             if (reactApplicationContext2 != null) {
                 reactApplicationContext2.emitDeviceEvent("KeyboardStateDebugging", str);
                 return;
             }
             return;
         }
-        f45063c.add(str);
+        f45111c.add(str);
     }
 
     public static /* synthetic */ void c(a aVar, String str, String str2, Throwable th2, int i10, Object obj) {
@@ -61,7 +61,7 @@ public final class a {
 
     public final void b(String str, String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(message, "message");
-        if (f45062b) {
+        if (f45110b) {
             Log.i(str, message, th2);
             String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
             a(message + ", " + str2);
@@ -69,12 +69,12 @@ public final class a {
     }
 
     public final void d(ReactApplicationContext reactApplicationContext) {
-        f45065e = reactApplicationContext;
+        f45113e = reactApplicationContext;
     }
 
     public final void e(String str, String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(message, "message");
-        if (f45062b) {
+        if (f45110b) {
             Log.w(str, message, th2);
             String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
             a(message + ", " + str2);

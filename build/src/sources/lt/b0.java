@@ -7,21 +7,21 @@ import kotlinx.serialization.json.Json;
 public final class b0 extends kotlinx.serialization.encoding.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f36637a;
+    private final a f36685a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final mt.b f36638b;
+    private final mt.b f36686b;
 
     public b0(a lexer, Json json) {
         Intrinsics.checkNotNullParameter(lexer, "lexer");
         Intrinsics.checkNotNullParameter(json, "json");
-        this.f36637a = lexer;
-        this.f36638b = json.a();
+        this.f36685a = lexer;
+        this.f36686b = json.a();
     }
 
     @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
     public byte H() {
-        a aVar = this.f36637a;
+        a aVar = this.f36685a;
         String q10 = aVar.q();
         try {
             return kotlin.text.e0.a(q10);
@@ -33,12 +33,12 @@ public final class b0 extends kotlinx.serialization.encoding.a {
 
     @Override // kotlinx.serialization.encoding.Decoder, kotlinx.serialization.encoding.c
     public mt.b a() {
-        return this.f36638b;
+        return this.f36686b;
     }
 
     @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
     public int h() {
-        a aVar = this.f36637a;
+        a aVar = this.f36685a;
         String q10 = aVar.q();
         try {
             return kotlin.text.e0.d(q10);
@@ -50,7 +50,7 @@ public final class b0 extends kotlinx.serialization.encoding.a {
 
     @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
     public long l() {
-        a aVar = this.f36637a;
+        a aVar = this.f36685a;
         String q10 = aVar.q();
         try {
             return kotlin.text.e0.g(q10);
@@ -68,7 +68,7 @@ public final class b0 extends kotlinx.serialization.encoding.a {
 
     @Override // kotlinx.serialization.encoding.a, kotlinx.serialization.encoding.Decoder
     public short s() {
-        a aVar = this.f36637a;
+        a aVar = this.f36685a;
         String q10 = aVar.q();
         try {
             return kotlin.text.e0.j(q10);

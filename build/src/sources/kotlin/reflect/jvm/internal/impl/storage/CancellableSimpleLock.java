@@ -11,10 +11,10 @@ import org.jetbrains.annotations.NotNull;
 public final class CancellableSimpleLock extends DefaultSimpleLock {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Runnable f34509b;
+    private final Runnable f34557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f34510c;
+    private final Function1 f34558c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public CancellableSimpleLock(@NotNull Lock lock, @NotNull Runnable checkCancelled, @NotNull Function1<? super InterruptedException, Unit> interruptedExceptionHandler) {
@@ -22,17 +22,17 @@ public final class CancellableSimpleLock extends DefaultSimpleLock {
         Intrinsics.checkNotNullParameter(lock, "lock");
         Intrinsics.checkNotNullParameter(checkCancelled, "checkCancelled");
         Intrinsics.checkNotNullParameter(interruptedExceptionHandler, "interruptedExceptionHandler");
-        this.f34509b = checkCancelled;
-        this.f34510c = interruptedExceptionHandler;
+        this.f34557b = checkCancelled;
+        this.f34558c = interruptedExceptionHandler;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.storage.DefaultSimpleLock, kotlin.reflect.jvm.internal.impl.storage.SimpleLock
     public void lock() {
         while (!a().tryLock(50L, TimeUnit.MILLISECONDS)) {
             try {
-                this.f34509b.run();
+                this.f34557b.run();
             } catch (InterruptedException e10) {
-                this.f34510c.invoke(e10);
+                this.f34558c.invoke(e10);
                 return;
             }
         }

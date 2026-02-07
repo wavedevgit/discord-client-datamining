@@ -16,10 +16,10 @@ import pk.d;
 public final class a implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p[] f42789b = new p[0];
+    private static final p[] f42837b = new p[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f42790a = new d();
+    private final d f42838a = new d();
 
     private static b b(b bVar) {
         int[] k10 = bVar.k();
@@ -73,11 +73,11 @@ public final class a implements m {
         p[] b10;
         e eVar;
         if (map != null && map.containsKey(hk.e.PURE_BARCODE)) {
-            eVar = this.f42790a.b(b(cVar.a()));
-            b10 = f42789b;
+            eVar = this.f42838a.b(b(cVar.a()));
+            b10 = f42837b;
         } else {
             g b11 = new qk.a(cVar.a()).b();
-            e b12 = this.f42790a.b(b11.a());
+            e b12 = this.f42838a.b(b11.a());
             b10 = b11.b();
             eVar = b12;
         }

@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/low_performance_mode/LowPerformanceAndroidDevices.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun14182: for (var _fun14182_ip = 0;;) switch (_fun14182_ip) {
+        _fun14184: for (var _fun14184_ip = 0;;) switch (_fun14184_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun14182_ip = 57;
-                    continue _fun14182
+                    _fun14184_ip = 57;
+                    continue _fun14184
                 }
             case 13:
                 var1 = global;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new var5[var3](var4, var3);
                 var2 = var1 instanceof Object ? var1 : var2;
                 _closure1_slot0 = var2;
-                _fun14182_ip = 61;
-                continue _fun14182;
+                _fun14184_ip = 61;
+                continue _fun14184;
             case 57:
                 var2 = _closure1_slot0;
             case 61:

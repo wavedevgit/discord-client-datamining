@@ -38,13 +38,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.removePunctuation = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun38537: for (var _fun38537_ip = 0;;) switch (_fun38537_ip) {
+        _fun38544: for (var _fun38544_ip = 0;;) switch (_fun38544_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun38537_ip = 51;
-                    continue _fun38537
+                    _fun38544_ip = 51;
+                    continue _fun38544
                 }
             case 9:
                 var1 = _closure1_slot2;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.split;
                 var0 = ' ';
                 var0 = var1.bind(var2)(var0);
-                _fun38537_ip = 55;
-                continue _fun38537;
+                _fun38544_ip = 55;
+                continue _fun38544;
             case 51:
                 var0 = new Array(0);
             case 55:

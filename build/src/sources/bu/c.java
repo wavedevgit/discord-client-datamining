@@ -55,7 +55,7 @@ public final class c {
 
         public final ByteString b(X509Certificate x509Certificate) {
             Intrinsics.checkNotNullParameter(x509Certificate, "<this>");
-            ByteString.a aVar = ByteString.f43166o;
+            ByteString.a aVar = ByteString.f43214o;
             byte[] encoded = x509Certificate.getPublicKey().getEncoded();
             Intrinsics.checkNotNullExpressionValue(encoded, "publicKey.encoded");
             return ByteString.a.j(aVar, encoded, 0, 0, 3, null).F();

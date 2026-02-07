@@ -11,18 +11,18 @@ import com.google.android.material.checkbox.MaterialCheckBox;
 public final class q implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29268a;
+    private final ConstraintLayout f29316a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCheckBox f29269b;
+    public final MaterialCheckBox f29317b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f29270c;
+    public final TextView f29318c;
 
     private q(ConstraintLayout constraintLayout, MaterialCheckBox materialCheckBox, TextView textView) {
-        this.f29268a = constraintLayout;
-        this.f29269b = materialCheckBox;
-        this.f29270c = textView;
+        this.f29316a = constraintLayout;
+        this.f29317b = materialCheckBox;
+        this.f29318c = textView;
     }
 
     public static q a(View view) {
@@ -49,6 +49,6 @@ public final class q implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29268a;
+        return this.f29316a;
     }
 }

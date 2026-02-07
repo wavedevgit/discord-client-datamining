@@ -8,7 +8,7 @@ final class f implements Comparator {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f f50809d = new f();
+    public static final f f50857d = new f();
 
     private f() {
     }
@@ -23,6 +23,6 @@ final class f implements Comparator {
 
     @Override // java.util.Comparator
     public final Comparator reversed() {
-        return g.f50810d;
+        return g.f50858d;
     }
 }

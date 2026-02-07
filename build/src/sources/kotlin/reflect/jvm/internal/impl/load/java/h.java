@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class h implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final NullabilityAnnotationStatesImpl f32838d;
+    private final NullabilityAnnotationStatesImpl f32886d;
 
     public h(NullabilityAnnotationStatesImpl nullabilityAnnotationStatesImpl) {
-        this.f32838d = nullabilityAnnotationStatesImpl;
+        this.f32886d = nullabilityAnnotationStatesImpl;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Object b10;
-        b10 = NullabilityAnnotationStatesImpl.b(this.f32838d, (FqName) obj);
+        b10 = NullabilityAnnotationStatesImpl.b(this.f32886d, (FqName) obj);
         return b10;
     }
 }

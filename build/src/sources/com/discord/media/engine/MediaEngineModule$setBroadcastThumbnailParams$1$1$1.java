@@ -37,13 +37,13 @@ public final class MediaEngineModule$setBroadcastThumbnailParams$1$1$1 extends k
             kotlin.c.b(obj);
             reactEvents = this.this$0.reactEvents;
             reactEvents.emitModuleEvent(this.this$0.getReactContext(), new OnBroadcastThumbnailEvent(this.$imgdata));
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$setBroadcastThumbnailParams$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

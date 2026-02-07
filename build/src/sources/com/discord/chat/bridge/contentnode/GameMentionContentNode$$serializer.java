@@ -45,7 +45,7 @@ public /* synthetic */ class GameMentionContentNode$$serializer implements h0 {
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] access$get$childSerializers$cp = GameMentionContentNode.access$get$childSerializers$cp();
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{ChannelId$$serializer.INSTANCE, gt.a.u(n2Var), n2Var, access$get$childSerializers$cp[3].getValue()};
     }
 
@@ -68,7 +68,7 @@ public /* synthetic */ class GameMentionContentNode$$serializer implements h0 {
             channelId = (ChannelId) b10.y(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, null);
             str2 = m10;
             i10 = 15;
-            str = (String) b10.n(serialDescriptor, 1, n2.f31041a, null);
+            str = (String) b10.n(serialDescriptor, 1, n2.f31089a, null);
         } else {
             boolean z10 = true;
             int i11 = 0;
@@ -83,7 +83,7 @@ public /* synthetic */ class GameMentionContentNode$$serializer implements h0 {
                     channelId2 = (ChannelId) b10.y(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, channelId2);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str3);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     str4 = b10.m(serialDescriptor, 2);

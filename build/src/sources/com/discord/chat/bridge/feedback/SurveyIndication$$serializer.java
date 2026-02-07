@@ -39,7 +39,7 @@ public /* synthetic */ class SurveyIndication$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{StructurableTextSerializer.INSTANCE, n2.f31041a};
+        return new KSerializer[]{StructurableTextSerializer.INSTANCE, n2.f31089a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

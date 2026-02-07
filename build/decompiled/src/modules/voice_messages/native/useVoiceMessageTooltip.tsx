@@ -84,12 +84,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = new Array(1);
         var3[0] = var8;
         var0 = function() { // Environment: var0
-            _fun90606: for (var _fun90606_ip = 0;;) switch (_fun90606_ip) {
+            _fun91086: for (var _fun91086_ip = 0;;) switch (_fun91086_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     if (var1) {
-                        _fun90606_ip = 16;
-                        continue _fun90606
+                        _fun91086_ip = 16;
+                        continue _fun91086
                     }
                 case 12:
                     var1 = undefined;
@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var2;
                     var2 = _closure1_slot3;
                     var1 = function() { // Environment: var0
-                        _fun90607: for (var _fun90607_ip = 0;;) switch (_fun90607_ip) {
+                        _fun91087: for (var _fun91087_ip = 0;;) switch (_fun91087_ip) {
                             case 0:
                                 var3 = _closure3_slot0;
                                 var4 = _closure1_slot0;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2.includeCustomKeyboard = var6;
                                 var2 = var4.bind(var5)(var2);
                                 if (!(var3 !== var2)) {
-                                    _fun90607_ip = 64;
-                                    continue _fun90607
+                                    _fun91087_ip = 64;
+                                    continue _fun91087
                                 }
                             case 56:
                                 var1 = _closure1_slot4;
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1466, 11626, 1234, 5404, 7045, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1466, 11672, 1234, 5451, 7089, 2]);

@@ -10,19 +10,19 @@ import java.util.Arrays;
 public class e extends d {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f43210q = "ol.e";
+    private static final String f43258q = "ol.e";
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f43211e;
+    private final a f43259e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final MediaFormat f43212i;
+    private final MediaFormat f43260i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final MediaCodec f43213o;
+    private final MediaCodec f43261o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MediaCodecList f43214p;
+    private final MediaCodecList f43262p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -43,10 +43,10 @@ public class e extends d {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f43229d;
+        private final String f43277d;
 
         a(String str) {
-            this.f43229d = str;
+            this.f43277d = str;
         }
     }
 
@@ -58,7 +58,7 @@ public class e extends d {
         try {
             return c(mediaCodec.getCodecInfo());
         } catch (IllegalStateException unused) {
-            Log.e(f43210q, "Failed to retrieve media codec info.");
+            Log.e(f43258q, "Failed to retrieve media codec info.");
             return "";
         }
     }
@@ -78,7 +78,7 @@ public class e extends d {
                 }
             }
         } catch (IllegalStateException e10) {
-            Log.e(f43210q, "Failed to retrieve media codec info.", e10);
+            Log.e(f43258q, "Failed to retrieve media codec info.", e10);
         }
         return sb2.toString();
     }
@@ -92,20 +92,20 @@ public class e extends d {
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return this.f43211e.f43229d;
+        return this.f43259e.f43277d;
     }
 
     @Override // ol.d, java.lang.Throwable
     public String toString() {
         String str = super.toString() + '\n';
-        if (this.f43212i != null) {
-            str = str + "Media format: " + this.f43212i.toString() + '\n';
+        if (this.f43260i != null) {
+            str = str + "Media format: " + this.f43260i.toString() + '\n';
         }
-        if (this.f43213o != null) {
-            str = str + "Selected media codec info: " + b(this.f43213o) + '\n';
+        if (this.f43261o != null) {
+            str = str + "Selected media codec info: " + b(this.f43261o) + '\n';
         }
-        if (this.f43214p != null) {
-            str = str + "Available media codec info list (Name, IsEncoder, Supported Types): " + d(this.f43214p);
+        if (this.f43262p != null) {
+            str = str + "Available media codec info list (Name, IsEncoder, Supported Types): " + d(this.f43262p);
         }
         if (getCause() != null) {
             return str + "Diagnostic info: " + e(getCause());
@@ -123,9 +123,9 @@ public class e extends d {
 
     public e(a aVar, MediaFormat mediaFormat, MediaCodec mediaCodec, MediaCodecList mediaCodecList, Throwable th2) {
         super(th2);
-        this.f43211e = aVar;
-        this.f43212i = mediaFormat;
-        this.f43213o = mediaCodec;
-        this.f43214p = mediaCodecList;
+        this.f43259e = aVar;
+        this.f43260i = mediaFormat;
+        this.f43261o = mediaCodec;
+        this.f43262p = mediaCodecList;
     }
 }

@@ -7,22 +7,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f26448a;
+    private final File f26496a;
 
     public d(File destination) {
         Intrinsics.checkParameterIsNotNull(destination, "destination");
-        this.f26448a = destination;
+        this.f26496a = destination;
     }
 
     @Override // hr.a
     public boolean isSatisfied(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f26448a.getAbsolutePath());
+        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f26496a.getAbsolutePath());
     }
 
     @Override // hr.a
     public File satisfy(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return j.q(imageFile, this.f26448a, true, 0, 4, null);
+        return j.q(imageFile, this.f26496a, true, 0, 4, null);
     }
 }

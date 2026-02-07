@@ -10,32 +10,32 @@ import kotlin.Lazy;
 public class d implements InvocationHandler {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f36591a;
+    private final Class f36639a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f36592b;
+    private final Map f36640b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f36593c;
+    private final Lazy f36641c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f36594d;
+    private final Lazy f36642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f36595e;
+    private final List f36643e;
 
     public d(Class cls, Map map, Lazy lazy, Lazy lazy2, List list) {
-        this.f36591a = cls;
-        this.f36592b = map;
-        this.f36593c = lazy;
-        this.f36594d = lazy2;
-        this.f36595e = list;
+        this.f36639a = cls;
+        this.f36640b = map;
+        this.f36641c = lazy;
+        this.f36642d = lazy2;
+        this.f36643e = list;
     }
 
     @Override // java.lang.reflect.InvocationHandler
     public Object invoke(Object obj, Method method, Object[] objArr) {
         Object o10;
-        o10 = f.o(this.f36591a, this.f36592b, this.f36593c, this.f36594d, this.f36595e, obj, method, objArr);
+        o10 = f.o(this.f36639a, this.f36640b, this.f36641c, this.f36642d, this.f36643e, obj, method, objArr);
         return o10;
     }
 }

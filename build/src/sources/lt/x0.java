@@ -9,53 +9,53 @@ import kotlinx.serialization.json.Json;
 public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m f36734a;
+    private final m f36782a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Json f36735b;
+    private final Json f36783b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e1 f36736c;
+    private final e1 f36784c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final kt.q[] f36737d;
+    private final kt.q[] f36785d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final mt.b f36738e;
+    private final mt.b f36786e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final kt.d f36739f;
+    private final kt.d f36787f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f36740g;
+    private boolean f36788g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f36741h;
+    private String f36789h;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f36742i;
+    private String f36790i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f36743a;
+        public static final /* synthetic */ int[] f36791a;
 
         static {
             int[] iArr = new int[e1.values().length];
             try {
-                iArr[e1.f36651o.ordinal()] = 1;
+                iArr[e1.f36699o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[e1.f36652p.ordinal()] = 2;
+                iArr[e1.f36700p.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[e1.f36653q.ordinal()] = 3;
+                iArr[e1.f36701q.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f36743a = iArr;
+            f36791a = iArr;
         }
     }
 
@@ -63,12 +63,12 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
         Intrinsics.checkNotNullParameter(composer, "composer");
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(mode, "mode");
-        this.f36734a = composer;
-        this.f36735b = json;
-        this.f36736c = mode;
-        this.f36737d = qVarArr;
-        this.f36738e = d().a();
-        this.f36739f = d().e();
+        this.f36782a = composer;
+        this.f36783b = json;
+        this.f36784c = mode;
+        this.f36785d = qVarArr;
+        this.f36786e = d().a();
+        this.f36787f = d().e();
         int ordinal = mode.ordinal();
         if (qVarArr != null) {
             kt.q qVar = qVarArr[ordinal];
@@ -80,85 +80,85 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
     }
 
     private final void I(String str, String str2) {
-        this.f36734a.c();
+        this.f36782a.c();
         F(str);
-        this.f36734a.f(':');
-        this.f36734a.p();
+        this.f36782a.f(':');
+        this.f36782a.p();
         F(str2);
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.CompositeEncoder
     public boolean A(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return this.f36739f.i();
+        return this.f36787f.i();
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void B(int i10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf(i10));
         } else {
-            this.f36734a.i(i10);
+            this.f36782a.i(i10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void F(String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f36734a.n(value);
+        this.f36782a.n(value);
     }
 
     @Override // kotlinx.serialization.encoding.b
     public boolean G(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i11 = a.f36743a[this.f36736c.ordinal()];
+        int i11 = a.f36791a[this.f36784c.ordinal()];
         if (i11 != 1) {
             boolean z10 = false;
             if (i11 != 2) {
                 if (i11 != 3) {
-                    if (!this.f36734a.a()) {
-                        this.f36734a.f(',');
+                    if (!this.f36782a.a()) {
+                        this.f36782a.f(',');
                     }
-                    this.f36734a.c();
+                    this.f36782a.c();
                     F(i0.h(descriptor, d(), i10));
-                    this.f36734a.f(':');
-                    this.f36734a.p();
+                    this.f36782a.f(':');
+                    this.f36782a.p();
                 } else {
                     if (i10 == 0) {
-                        this.f36740g = true;
+                        this.f36788g = true;
                     }
                     if (i10 == 1) {
-                        this.f36734a.f(',');
-                        this.f36734a.p();
-                        this.f36740g = false;
+                        this.f36782a.f(',');
+                        this.f36782a.p();
+                        this.f36788g = false;
                     }
                 }
-            } else if (!this.f36734a.a()) {
+            } else if (!this.f36782a.a()) {
                 if (i10 % 2 == 0) {
-                    this.f36734a.f(',');
-                    this.f36734a.c();
+                    this.f36782a.f(',');
+                    this.f36782a.c();
                     z10 = true;
                 } else {
-                    this.f36734a.f(':');
-                    this.f36734a.p();
+                    this.f36782a.f(':');
+                    this.f36782a.p();
                 }
-                this.f36740g = z10;
+                this.f36788g = z10;
             } else {
-                this.f36740g = true;
-                this.f36734a.c();
+                this.f36788g = true;
+                this.f36782a.c();
             }
         } else {
-            if (!this.f36734a.a()) {
-                this.f36734a.f(',');
+            if (!this.f36782a.a()) {
+                this.f36782a.f(',');
             }
-            this.f36734a.c();
+            this.f36782a.c();
         }
         return true;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
     public mt.b a() {
-        return this.f36738e;
+        return this.f36786e;
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
@@ -166,67 +166,67 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
         kt.q qVar;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         e1 b10 = f1.b(d(), descriptor);
-        char c10 = b10.f36656d;
+        char c10 = b10.f36704d;
         if (c10 != 0) {
-            this.f36734a.f(c10);
-            this.f36734a.b();
+            this.f36782a.f(c10);
+            this.f36782a.b();
         }
-        String str = this.f36741h;
+        String str = this.f36789h;
         if (str != null) {
-            String str2 = this.f36742i;
+            String str2 = this.f36790i;
             if (str2 == null) {
                 str2 = descriptor.h();
             }
             I(str, str2);
-            this.f36741h = null;
-            this.f36742i = null;
+            this.f36789h = null;
+            this.f36790i = null;
         }
-        if (this.f36736c == b10) {
+        if (this.f36784c == b10) {
             return this;
         }
-        kt.q[] qVarArr = this.f36737d;
+        kt.q[] qVarArr = this.f36785d;
         if (qVarArr != null && (qVar = qVarArr[b10.ordinal()]) != null) {
             return qVar;
         }
-        return new x0(this.f36734a, d(), b10, this.f36737d);
+        return new x0(this.f36782a, d(), b10, this.f36785d);
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.CompositeEncoder
     public void c(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (this.f36736c.f36657e != 0) {
-            this.f36734a.q();
-            this.f36734a.d();
-            this.f36734a.f(this.f36736c.f36657e);
+        if (this.f36784c.f36705e != 0) {
+            this.f36782a.q();
+            this.f36782a.d();
+            this.f36782a.f(this.f36784c.f36705e);
         }
     }
 
     @Override // kt.q
     public Json d() {
-        return this.f36735b;
+        return this.f36783b;
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void f(double d10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf(d10));
         } else {
-            this.f36734a.g(d10);
+            this.f36782a.g(d10);
         }
-        if (!this.f36739f.b()) {
+        if (!this.f36787f.b()) {
             if (!Double.isInfinite(d10) && !Double.isNaN(d10)) {
                 return;
             }
-            throw g0.b(Double.valueOf(d10), this.f36734a.f36683a.toString());
+            throw g0.b(Double.valueOf(d10), this.f36782a.f36731a.toString());
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void g(byte b10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf((int) b10));
         } else {
-            this.f36734a.e(b10);
+            this.f36782a.e(b10);
         }
     }
 
@@ -240,19 +240,19 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
     public Encoder j(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (y0.b(descriptor)) {
-            m mVar = this.f36734a;
+            m mVar = this.f36782a;
             if (!(mVar instanceof t)) {
-                mVar = new t(mVar.f36683a, this.f36740g);
+                mVar = new t(mVar.f36731a, this.f36788g);
             }
-            return new x0(mVar, d(), this.f36736c, (kt.q[]) null);
+            return new x0(mVar, d(), this.f36784c, (kt.q[]) null);
         } else if (y0.a(descriptor)) {
-            m mVar2 = this.f36734a;
+            m mVar2 = this.f36782a;
             if (!(mVar2 instanceof n)) {
-                mVar2 = new n(mVar2.f36683a, this.f36740g);
+                mVar2 = new n(mVar2.f36731a, this.f36788g);
             }
-            return new x0(mVar2, d(), this.f36736c, (kt.q[]) null);
-        } else if (this.f36741h != null) {
-            this.f36742i = descriptor.h();
+            return new x0(mVar2, d(), this.f36784c, (kt.q[]) null);
+        } else if (this.f36789h != null) {
+            this.f36790i = descriptor.h();
             return this;
         } else {
             return super.j(descriptor);
@@ -261,10 +261,10 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void k(long j10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf(j10));
         } else {
-            this.f36734a.j(j10);
+            this.f36782a.j(j10);
         }
     }
 
@@ -272,7 +272,7 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
     public void l(SerialDescriptor descriptor, int i10, ft.o serializer, Object obj) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(serializer, "serializer");
-        if (obj == null && !this.f36739f.j()) {
+        if (obj == null && !this.f36787f.j()) {
             return;
         }
         super.l(descriptor, i10, serializer, obj);
@@ -280,39 +280,39 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
 
     @Override // kotlinx.serialization.encoding.Encoder
     public void n() {
-        this.f36734a.k("null");
+        this.f36782a.k("null");
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void p(short s10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf((int) s10));
         } else {
-            this.f36734a.l(s10);
+            this.f36782a.l(s10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void q(boolean z10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf(z10));
         } else {
-            this.f36734a.m(z10);
+            this.f36782a.m(z10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void t(float f10) {
-        if (this.f36740g) {
+        if (this.f36788g) {
             F(String.valueOf(f10));
         } else {
-            this.f36734a.h(f10);
+            this.f36782a.h(f10);
         }
-        if (!this.f36739f.b()) {
+        if (!this.f36787f.b()) {
             if (!Float.isInfinite(f10) && !Float.isNaN(f10)) {
                 return;
             }
-            throw g0.b(Float.valueOf(f10), this.f36734a.f36683a.toString());
+            throw g0.b(Float.valueOf(f10), this.f36782a.f36731a.toString());
         }
     }
 
@@ -322,10 +322,10 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x005f, code lost:
-        if (kotlin.jvm.internal.Intrinsics.areEqual(r1, ht.l.d.f26492a) == false) goto L10;
+        if (kotlin.jvm.internal.Intrinsics.areEqual(r1, ht.l.d.f26540a) == false) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0029, code lost:
-        if (d().e().f() != kt.a.f35491d) goto L24;
+        if (d().e().f() != kt.a.f35539d) goto L24;
      */
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     /*
@@ -349,14 +349,14 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
             kotlinx.serialization.json.Json r1 = r3.d()
             kt.d r1 = r1.e()
             kt.a r1 = r1.f()
-            kt.a r2 = kt.a.f35491d
+            kt.a r2 = kt.a.f35539d
             if (r1 == r2) goto L74
             goto L61
         L2c:
             kotlinx.serialization.json.Json r1 = r3.d()
             kt.d r1 = r1.e()
             kt.a r1 = r1.f()
-            int[] r2 = lt.r0.a.f36713a
+            int[] r2 = lt.r0.a.f36761a
             int r1 = r1.ordinal()
             r1 = r2[r1]
             r2 = 1
@@ -367,10 +367,10 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
             if (r1 != r2) goto L6e
             kotlinx.serialization.descriptors.SerialDescriptor r1 = r4.getDescriptor()
             ht.k r1 = r1.getKind()
-            ht.l$a r2 = ht.l.a.f26489a
+            ht.l$a r2 = ht.l.a.f26537a
             boolean r2 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
             if (r2 != 0) goto L61
-            ht.l$d r2 = ht.l.d.f26492a
+            ht.l$d r2 = ht.l.d.f26540a
             boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
             if (r1 == 0) goto L74
         L61:
@@ -418,8 +418,8 @@ public final class x0 extends kotlinx.serialization.encoding.b implements kt.q {
             if (r1 == 0) goto Lc9
             kotlinx.serialization.descriptors.SerialDescriptor r0 = r4.getDescriptor()
             java.lang.String r0 = r0.h()
-            r3.f36741h = r1
-            r3.f36742i = r0
+            r3.f36789h = r1
+            r3.f36790i = r0
         Lc9:
             r4.serialize(r3, r5)
             return

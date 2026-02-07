@@ -18,49 +18,49 @@ import java.util.Set;
 public abstract class x1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private x2 f54374d;
+    private x2 f54422d;
 
     /* renamed from: e  reason: collision with root package name */
-    private x2 f54375e;
+    private x2 f54423e;
 
     /* renamed from: f  reason: collision with root package name */
-    private x2 f54376f;
+    private x2 f54424f;
 
     /* renamed from: g  reason: collision with root package name */
-    private m2 f54377g;
+    private m2 f54425g;
 
     /* renamed from: h  reason: collision with root package name */
-    private x2 f54378h;
+    private x2 f54426h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Rect f54379i;
+    private Rect f54427i;
 
     /* renamed from: k  reason: collision with root package name */
-    private a0.e0 f54381k;
+    private a0.e0 f54429k;
 
     /* renamed from: l  reason: collision with root package name */
-    private a0.e0 f54382l;
+    private a0.e0 f54430l;
 
     /* renamed from: m  reason: collision with root package name */
-    private String f54383m;
+    private String f54431m;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f54371a = new HashSet();
+    private final Set f54419a = new HashSet();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f54372b = new Object();
+    private final Object f54420b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private a f54373c = a.INACTIVE;
+    private a f54421c = a.INACTIVE;
 
     /* renamed from: j  reason: collision with root package name */
-    private Matrix f54380j = new Matrix();
+    private Matrix f54428j = new Matrix();
 
     /* renamed from: n  reason: collision with root package name */
-    private i2 f54384n = i2.b();
+    private i2 f54432n = i2.b();
 
     /* renamed from: o  reason: collision with root package name */
-    private i2 f54385o = i2.b();
+    private i2 f54433o = i2.b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -82,20 +82,20 @@ public abstract class x1 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public x1(x2 x2Var) {
-        this.f54375e = x2Var;
-        this.f54376f = x2Var;
+        this.f54423e = x2Var;
+        this.f54424f = x2Var;
     }
 
     private void Q(b bVar) {
-        this.f54371a.remove(bVar);
+        this.f54419a.remove(bVar);
     }
 
     private void a(b bVar) {
-        this.f54371a.add(bVar);
+        this.f54419a.add(bVar);
     }
 
     public Rect A() {
-        return this.f54379i;
+        return this.f54427i;
     }
 
     public boolean B(int i10) {
@@ -129,22 +129,22 @@ public abstract class x1 {
         } else {
             Z = a0.r1.Z();
         }
-        if (this.f54375e.h(a0.i1.f84j) || this.f54375e.h(a0.i1.f88n)) {
+        if (this.f54423e.h(a0.i1.f84j) || this.f54423e.h(a0.i1.f88n)) {
             r0.a aVar = a0.i1.f92r;
             if (Z.h(aVar)) {
                 Z.b0(aVar);
             }
         }
-        x2 x2Var3 = this.f54375e;
+        x2 x2Var3 = this.f54423e;
         r0.a aVar2 = a0.i1.f92r;
         if (x2Var3.h(aVar2)) {
             r0.a aVar3 = a0.i1.f90p;
-            if (Z.h(aVar3) && ((m0.c) this.f54375e.a(aVar2)).d() != null) {
+            if (Z.h(aVar3) && ((m0.c) this.f54423e.a(aVar2)).d() != null) {
                 Z.b0(aVar3);
             }
         }
-        for (r0.a aVar4 : this.f54375e.b()) {
-            a0.r0.Q(Z, Z, this.f54375e, aVar4);
+        for (r0.a aVar4 : this.f54423e.b()) {
+            a0.r0.Q(Z, Z, this.f54423e, aVar4);
         }
         if (x2Var != null) {
             for (r0.a aVar5 : x2Var.b()) {
@@ -168,35 +168,35 @@ public abstract class x1 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void E() {
-        this.f54373c = a.ACTIVE;
+        this.f54421c = a.ACTIVE;
         H();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void F() {
-        this.f54373c = a.INACTIVE;
+        this.f54421c = a.INACTIVE;
         H();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void G() {
-        for (b bVar : this.f54371a) {
+        for (b bVar : this.f54419a) {
             bVar.k(this);
         }
     }
 
     public final void H() {
-        int ordinal = this.f54373c.ordinal();
+        int ordinal = this.f54421c.ordinal();
         if (ordinal != 0) {
             if (ordinal == 1) {
-                for (b bVar : this.f54371a) {
+                for (b bVar : this.f54419a) {
                     bVar.j(this);
                 }
                 return;
             }
             return;
         }
-        for (b bVar2 : this.f54371a) {
+        for (b bVar2 : this.f54419a) {
             bVar2.e(this);
         }
     }
@@ -212,44 +212,44 @@ public abstract class x1 {
     }
 
     public void S(Matrix matrix) {
-        this.f54380j = new Matrix(matrix);
+        this.f54428j = new Matrix(matrix);
     }
 
     public void T(Rect rect) {
-        this.f54379i = rect;
+        this.f54427i = rect;
     }
 
     public final void U(a0.e0 e0Var) {
         P();
-        synchronized (this.f54372b) {
+        synchronized (this.f54420b) {
             try {
-                a0.e0 e0Var2 = this.f54381k;
+                a0.e0 e0Var2 = this.f54429k;
                 if (e0Var == e0Var2) {
                     Q(e0Var2);
-                    this.f54381k = null;
+                    this.f54429k = null;
                 }
-                a0.e0 e0Var3 = this.f54382l;
+                a0.e0 e0Var3 = this.f54430l;
                 if (e0Var == e0Var3) {
                     Q(e0Var3);
-                    this.f54382l = null;
+                    this.f54430l = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        this.f54377g = null;
-        this.f54379i = null;
-        this.f54376f = this.f54375e;
-        this.f54374d = null;
-        this.f54378h = null;
+        this.f54425g = null;
+        this.f54427i = null;
+        this.f54424f = this.f54423e;
+        this.f54422d = null;
+        this.f54426h = null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void V(List list) {
         if (!list.isEmpty()) {
-            this.f54384n = (i2) list.get(0);
+            this.f54432n = (i2) list.get(0);
             if (list.size() > 1) {
-                this.f54385o = (i2) list.get(1);
+                this.f54433o = (i2) list.get(1);
             }
             Iterator it = list.iterator();
             while (it.hasNext()) {
@@ -263,18 +263,18 @@ public abstract class x1 {
     }
 
     public void W(m2 m2Var, m2 m2Var2) {
-        this.f54377g = O(m2Var, m2Var2);
+        this.f54425g = O(m2Var, m2Var2);
     }
 
     public void X(a0.r0 r0Var) {
-        this.f54377g = N(r0Var);
+        this.f54425g = N(r0Var);
     }
 
     public final void b(a0.e0 e0Var, a0.e0 e0Var2, x2 x2Var, x2 x2Var2) {
-        synchronized (this.f54372b) {
+        synchronized (this.f54420b) {
             try {
-                this.f54381k = e0Var;
-                this.f54382l = e0Var2;
+                this.f54429k = e0Var;
+                this.f54430l = e0Var2;
                 a(e0Var);
                 if (e0Var2 != null) {
                     a(e0Var2);
@@ -283,28 +283,28 @@ public abstract class x1 {
                 throw th2;
             }
         }
-        this.f54374d = x2Var;
-        this.f54378h = x2Var2;
-        this.f54376f = D(e0Var.m(), this.f54374d, this.f54378h);
+        this.f54422d = x2Var;
+        this.f54426h = x2Var2;
+        this.f54424f = D(e0Var.m(), this.f54422d, this.f54426h);
         I();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public x2 c() {
-        return this.f54375e;
+        return this.f54423e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public int d() {
-        return ((a0.i1) this.f54376f).p(-1);
+        return ((a0.i1) this.f54424f).p(-1);
     }
 
     public m2 e() {
-        return this.f54377g;
+        return this.f54425g;
     }
 
     public Size f() {
-        m2 m2Var = this.f54377g;
+        m2 m2Var = this.f54425g;
         if (m2Var != null) {
             return m2Var.e();
         }
@@ -313,17 +313,17 @@ public abstract class x1 {
 
     public a0.e0 g() {
         a0.e0 e0Var;
-        synchronized (this.f54372b) {
-            e0Var = this.f54381k;
+        synchronized (this.f54420b) {
+            e0Var = this.f54429k;
         }
         return e0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a0.a0 h() {
-        synchronized (this.f54372b) {
+        synchronized (this.f54420b) {
             try {
-                a0.e0 e0Var = this.f54381k;
+                a0.e0 e0Var = this.f54429k;
                 if (e0Var == null) {
                     return a0.a0.f5a;
                 }
@@ -341,7 +341,7 @@ public abstract class x1 {
     }
 
     public x2 j() {
-        return this.f54376f;
+        return this.f54424f;
     }
 
     public abstract x2 k(boolean z10, y2 y2Var);
@@ -351,23 +351,23 @@ public abstract class x1 {
     }
 
     public int m() {
-        return this.f54376f.getInputFormat();
+        return this.f54424f.getInputFormat();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public int n() {
-        return ((a0.i1) this.f54376f).U(-1);
+        return ((a0.i1) this.f54424f).U(-1);
     }
 
     public String o() {
-        x2 x2Var = this.f54376f;
+        x2 x2Var = this.f54424f;
         String q10 = x2Var.q("<UnknownUseCase-" + hashCode() + ">");
         Objects.requireNonNull(q10);
         return q10;
     }
 
     public String p() {
-        return this.f54383m;
+        return this.f54431m;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -386,8 +386,8 @@ public abstract class x1 {
 
     public a0.e0 s() {
         a0.e0 e0Var;
-        synchronized (this.f54372b) {
-            e0Var = this.f54382l;
+        synchronized (this.f54420b) {
+            e0Var = this.f54430l;
         }
         return e0Var;
     }
@@ -401,15 +401,15 @@ public abstract class x1 {
     }
 
     public i2 u() {
-        return this.f54385o;
+        return this.f54433o;
     }
 
     public Matrix v() {
-        return this.f54380j;
+        return this.f54428j;
     }
 
     public i2 w() {
-        return this.f54384n;
+        return this.f54432n;
     }
 
     protected Set x() {
@@ -418,7 +418,7 @@ public abstract class x1 {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public int y() {
-        return ((a0.i1) this.f54376f).z(0);
+        return ((a0.i1) this.f54424f).z(0);
     }
 
     public abstract x2.a z(a0.r0 r0Var);

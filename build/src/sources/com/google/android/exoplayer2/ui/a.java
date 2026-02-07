@@ -37,12 +37,12 @@ public final class a extends View implements SubtitleView.a {
 
     private static zd.b b(zd.b bVar) {
         b.C0770b p10 = bVar.b().k(-3.4028235E38f).l(Integer.MIN_VALUE).p(null);
-        if (bVar.f56195q == 0) {
-            p10.h(1.0f - bVar.f56194p, 0);
+        if (bVar.f56243q == 0) {
+            p10.h(1.0f - bVar.f56242p, 0);
         } else {
-            p10.h((-bVar.f56194p) - 1.0f, 1);
+            p10.h((-bVar.f56242p) - 1.0f, 1);
         }
-        int i10 = bVar.f56196r;
+        int i10 = bVar.f56244r;
         if (i10 != 0) {
             if (i10 == 2) {
                 p10.i(0);
@@ -85,7 +85,7 @@ public final class a extends View implements SubtitleView.a {
                         if (bVar.A != Integer.MIN_VALUE) {
                             bVar = b(bVar);
                         }
-                        ((f) this.f13213d.get(i11)).b(bVar, this.f13217p, f10, i.f(bVar.f56203y, bVar.f56204z, height, i10), this.f13218q, canvas, paddingLeft, paddingTop, width, paddingBottom);
+                        ((f) this.f13213d.get(i11)).b(bVar, this.f13217p, f10, i.f(bVar.f56251y, bVar.f56252z, height, i10), this.f13218q, canvas, paddingLeft, paddingTop, width, paddingBottom);
                     }
                 }
             }
@@ -98,7 +98,7 @@ public final class a extends View implements SubtitleView.a {
         this.f13214e = Collections.EMPTY_LIST;
         this.f13215i = 0;
         this.f13216o = 0.0533f;
-        this.f13217p = ke.b.f31551g;
+        this.f13217p = ke.b.f31599g;
         this.f13218q = 0.08f;
     }
 }

@@ -12,45 +12,45 @@ import x.x1;
 public class i implements e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e0 f38358d;
+    private final e0 f38406d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o f38359e;
+    private final o f38407e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final p f38360i;
+    private final p f38408i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final x1.b f38361o;
+    private final x1.b f38409o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(e0 e0Var, x1.b bVar, f.a aVar) {
-        this.f38358d = e0Var;
-        this.f38361o = bVar;
-        this.f38359e = new o(e0Var.f(), aVar);
-        this.f38360i = new p(e0Var.m());
+        this.f38406d = e0Var;
+        this.f38409o = bVar;
+        this.f38407e = new o(e0Var.f(), aVar);
+        this.f38408i = new p(e0Var.m());
     }
 
     @Override // a0.e0
     public u1 c() {
-        return this.f38358d.c();
+        return this.f38406d.c();
     }
 
     @Override // x.x1.b
     public void d(x1 x1Var) {
         b0.p.a();
-        this.f38361o.d(x1Var);
+        this.f38409o.d(x1Var);
     }
 
     @Override // x.x1.b
     public void e(x1 x1Var) {
         b0.p.a();
-        this.f38361o.e(x1Var);
+        this.f38409o.e(x1Var);
     }
 
     @Override // a0.e0
     public a0 f() {
-        return this.f38359e;
+        return this.f38407e;
     }
 
     @Override // a0.e0
@@ -61,13 +61,13 @@ public class i implements e0 {
     @Override // x.x1.b
     public void j(x1 x1Var) {
         b0.p.a();
-        this.f38361o.j(x1Var);
+        this.f38409o.j(x1Var);
     }
 
     @Override // x.x1.b
     public void k(x1 x1Var) {
         b0.p.a();
-        this.f38361o.k(x1Var);
+        this.f38409o.k(x1Var);
     }
 
     @Override // a0.e0
@@ -77,12 +77,12 @@ public class i implements e0 {
 
     @Override // a0.e0
     public d0 m() {
-        return this.f38360i;
+        return this.f38408i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n(int i10) {
-        this.f38360i.l(i10);
+        this.f38408i.l(i10);
     }
 
     @Override // a0.e0

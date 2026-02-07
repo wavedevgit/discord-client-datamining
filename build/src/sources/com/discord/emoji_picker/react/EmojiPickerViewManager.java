@@ -92,7 +92,7 @@ public final class EmojiPickerViewManager extends InitialPropsViewGroupManager<E
             str = null;
         }
         reactEvents.emitEvent(themedReactContext, view, new OnPressEmojiEvent(emojiName, str));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -100,7 +100,7 @@ public final class EmojiPickerViewManager extends InitialPropsViewGroupManager<E
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         emojiPickerViewManager.reactEvents.emitEvent(view, new OnScrollEvent(data));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -108,7 +108,7 @@ public final class EmojiPickerViewManager extends InitialPropsViewGroupManager<E
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         emojiPickerViewManager.reactEvents.emitEvent(view, new OnScrollBeginDragEvent(data));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -116,7 +116,7 @@ public final class EmojiPickerViewManager extends InitialPropsViewGroupManager<E
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(data, "data");
         emojiPickerViewManager.reactEvents.emitEvent(view, new OnScrollEndDragEvent(data));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -131,21 +131,21 @@ public final class EmojiPickerViewManager extends InitialPropsViewGroupManager<E
             str = null;
         }
         reactEvents.emitEvent(themedReactContext, view, new OnLongPressEmojiEvent(emojiName, str));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$6(EmojiPickerViewManager emojiPickerViewManager, ThemedReactContext themedReactContext, View view, int i10) {
         Intrinsics.checkNotNullParameter(view, "view");
         emojiPickerViewManager.reactEvents.emitEvent(themedReactContext, view, new OnStickyHeaderRenderEvent(i10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$7(EmojiPickerViewManager emojiPickerViewManager, ThemedReactContext themedReactContext, View view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
         emojiPickerViewManager.reactEvents.emitEvent(themedReactContext, view, new OnShowNitroUpsell(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

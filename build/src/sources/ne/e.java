@@ -6,7 +6,7 @@ import android.os.Looper;
 public interface e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f38905a = new p0();
+    public static final e f38953a = new p0();
 
     long a();
 

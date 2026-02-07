@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final a.g f55309a;
+    private static final a.g f55357a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final a f55310b;
+    private static final a f55358b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ef.a f55311c;
+    private static final ef.a f55359c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends a.AbstractC0286a {
@@ -37,9 +37,9 @@ public abstract class g {
 
     static {
         a.g gVar = new a.g();
-        f55309a = gVar;
+        f55357a = gVar;
         a aVar = new a();
-        f55310b = aVar;
-        f55311c = new ef.a("IdentityCredentials.API", aVar, gVar);
+        f55358b = aVar;
+        f55359c = new ef.a("IdentityCredentials.API", aVar, gVar);
     }
 }

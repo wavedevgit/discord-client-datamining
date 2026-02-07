@@ -40,7 +40,7 @@ public /* synthetic */ class BackgroundHighlight$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{a.u(p0Var), a.u(p0Var)};
     }
 
@@ -54,7 +54,7 @@ public /* synthetic */ class BackgroundHighlight$$serializer implements h0 {
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             num2 = (Integer) b10.n(serialDescriptor, 0, p0Var, null);
             num = (Integer) b10.n(serialDescriptor, 1, p0Var, null);
             i10 = 3;
@@ -68,12 +68,12 @@ public /* synthetic */ class BackgroundHighlight$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    num3 = (Integer) b10.n(serialDescriptor, 0, p0.f31057a, num3);
+                    num3 = (Integer) b10.n(serialDescriptor, 0, p0.f31105a, num3);
                     i11 |= 1;
                 } else if (o10 != 1) {
                     throw new b0(o10);
                 } else {
-                    num = (Integer) b10.n(serialDescriptor, 1, p0.f31057a, num);
+                    num = (Integer) b10.n(serialDescriptor, 1, p0.f31105a, num);
                     i11 |= 2;
                 }
             }

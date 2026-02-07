@@ -1,31 +1,47 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var1 = function arg0() {
-        _fun45676: for (var _fun45676_ip = 0;;) switch (_fun45676_ip) {
+    var1 = function arg0, arg1() {
+        _fun45650: for (var _fun45650_ip = 0;;) switch (_fun45650_ip) {
             case 0:
-                var0 = arg0;
-                var1 = undefined;
-                if (!(var1 !== var0)) {
-                    _fun45676_ip = 11;
-                    continue _fun45676
+                var8 = arg0;
+                var7 = arg1;
+                var0 = null;
+                if (!(var0 != var8)) {
+                    _fun45650_ip = 92;
+                    continue _fun45650
                 }
-            case 9:
-                return var0;
-            case 11:
-                var0 = global;
-                var2 = var0.ReferenceError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
+            case 12:
+                var0 = {};
+                var5 = var8;
+                var1 = -1;
+                for (var2 in var5)
+                    case 31: {
+                        case 40: var10 = var2;
+                        var9 = {};
+                        var11 = var9.hasOwnProperty;
+                        var9 = var11.call;
+                        var9 = var9.bind(var11)(var8, var10);
+                        if (!var9) {
+                            _fun45650_ip = 31;
+                            continue _fun45650
+                        }
+                        case 65: var9 = var7.indexOf;
+                        var9 = var9.bind(var7)(var10);
+                        if (var1 !== var9) {
+                            _fun45650_ip = 31;
+                            continue _fun45650
+                        }
+                        case 80: var9 = var8[var10];
+                        var0[var10] = var9;
+                        _fun45650_ip = 31;
+                        continue _fun45650;
                     }
-                });
-                var3 = "this hasn't been initialised - super() hasn't been called";
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
+            case 90:
+                return var0;
+            case 92:
+                var0 = {};
+                return var0;
         }
     };
     var0.exports = var1;

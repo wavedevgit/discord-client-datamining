@@ -48,4 +48,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'GUILD_POWERUPS_BOTTOM_SHEET_KEY';
     var2.GUILD_POWERUPS_BOTTOM_SHEET_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3280, 13381, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 13424, 1307, 2]);

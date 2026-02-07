@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/native/images/perks',
-        'width': 300.5,
-        'height': 175,
+        'httpServerLocation': '/assets/images/native/premium/illustrations',
+        'width': 134.5,
+        'height': 82,
         'scales': null,
-        'hash': '767971903774f3e283939a2d77b5c958',
-        'name': 'server_boosts',
+        'hash': 'db25e5ae76d4f6a3f9af5fda0e269762',
+        'name': 'img_what_you_lose_uploads',
         'type': 'png'
     };
     var4 = [2, 3];

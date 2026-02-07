@@ -21,34 +21,34 @@ import wk.j;
 public final class d extends uk.a {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final int[] f52696k = {7, 5, 4, 3, 1};
+    private static final int[] f52744k = {7, 5, 4, 3, 1};
 
     /* renamed from: l  reason: collision with root package name */
-    private static final int[] f52697l = {4, 20, 52, 104, 204};
+    private static final int[] f52745l = {4, 20, 52, 104, 204};
 
     /* renamed from: m  reason: collision with root package name */
-    private static final int[] f52698m = {0, 348, 1388, 2948, 3988};
+    private static final int[] f52746m = {0, 348, 1388, 2948, 3988};
 
     /* renamed from: n  reason: collision with root package name */
-    private static final int[][] f52699n = {new int[]{1, 8, 4, 1}, new int[]{3, 6, 4, 1}, new int[]{3, 4, 6, 1}, new int[]{3, 2, 8, 1}, new int[]{2, 6, 5, 1}, new int[]{2, 2, 9, 1}};
+    private static final int[][] f52747n = {new int[]{1, 8, 4, 1}, new int[]{3, 6, 4, 1}, new int[]{3, 4, 6, 1}, new int[]{3, 2, 8, 1}, new int[]{2, 6, 5, 1}, new int[]{2, 2, 9, 1}};
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[][] f52700o = {new int[]{1, 3, 9, 27, 81, 32, 96, 77}, new int[]{20, 60, 180, 118, 143, 7, 21, 63}, new int[]{189, 145, 13, 39, 117, 140, 209, 205}, new int[]{193, 157, 49, 147, 19, 57, 171, 91}, new int[]{62, 186, 136, 197, 169, 85, 44, 132}, new int[]{185, 133, 188, 142, 4, 12, 36, 108}, new int[]{113, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 173, 97, 80, 29, 87, 50}, new int[]{150, 28, 84, 41, 123, 158, 52, 156}, new int[]{46, 138, 203, 187, 139, 206, 196, 166}, new int[]{76, 17, 51, 153, 37, 111, 122, 155}, new int[]{43, 129, 176, 106, 107, 110, 119, MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH}, new int[]{16, 48, 144, 10, 30, 90, 59, 177}, new int[]{109, 116, 137, h.DEFAULT_DRAG_ANIMATION_DURATION, 178, 112, 125, 164}, new int[]{70, 210, 208, 202, 184, 130, 179, 115}, new int[]{134, 191, 151, 31, 93, 68, 204, 190}, new int[]{148, 22, 66, 198, 172, 94, 71, 2}, new int[]{6, 18, 54, 162, 64, 192, 154, 40}, new int[]{120, 149, 25, 75, 14, 42, 126, 167}, new int[]{79, 26, 78, 23, 69, 207, 199, 175}, new int[]{103, 98, 83, 38, MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION, 131, 182, 124}, new int[]{161, 61, 183, 127, 170, 88, 53, 159}, new int[]{55, 165, 73, 8, 24, 72, 5, 15}, new int[]{45, 135, 194, 160, 58, 174, 100, 89}};
+    private static final int[][] f52748o = {new int[]{1, 3, 9, 27, 81, 32, 96, 77}, new int[]{20, 60, 180, 118, 143, 7, 21, 63}, new int[]{189, 145, 13, 39, 117, 140, 209, 205}, new int[]{193, 157, 49, 147, 19, 57, 171, 91}, new int[]{62, 186, 136, 197, 169, 85, 44, 132}, new int[]{185, 133, 188, 142, 4, 12, 36, 108}, new int[]{113, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 173, 97, 80, 29, 87, 50}, new int[]{150, 28, 84, 41, 123, 158, 52, 156}, new int[]{46, 138, 203, 187, 139, 206, 196, 166}, new int[]{76, 17, 51, 153, 37, 111, 122, 155}, new int[]{43, 129, 176, 106, 107, 110, 119, MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH}, new int[]{16, 48, 144, 10, 30, 90, 59, 177}, new int[]{109, 116, 137, h.DEFAULT_DRAG_ANIMATION_DURATION, 178, 112, 125, 164}, new int[]{70, 210, 208, 202, 184, 130, 179, 115}, new int[]{134, 191, 151, 31, 93, 68, 204, 190}, new int[]{148, 22, 66, 198, 172, 94, 71, 2}, new int[]{6, 18, 54, 162, 64, 192, 154, 40}, new int[]{120, 149, 25, 75, 14, 42, 126, 167}, new int[]{79, 26, 78, 23, 69, 207, 199, 175}, new int[]{103, 98, 83, 38, MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION, 131, 182, 124}, new int[]{161, 61, 183, 127, 170, 88, 53, 159}, new int[]{55, 165, 73, 8, 24, 72, 5, 15}, new int[]{45, 135, 194, 160, 58, 174, 100, 89}};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final int[][] f52701p = {new int[]{0, 0}, new int[]{0, 1, 1}, new int[]{0, 2, 1, 3}, new int[]{0, 4, 1, 3, 2}, new int[]{0, 4, 1, 3, 3, 5}, new int[]{0, 4, 1, 3, 4, 5, 5}, new int[]{0, 0, 1, 1, 2, 2, 3, 3}, new int[]{0, 0, 1, 1, 2, 2, 3, 4, 4}, new int[]{0, 0, 1, 1, 2, 2, 3, 4, 5, 5}, new int[]{0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5}};
+    private static final int[][] f52749p = {new int[]{0, 0}, new int[]{0, 1, 1}, new int[]{0, 2, 1, 3}, new int[]{0, 4, 1, 3, 2}, new int[]{0, 4, 1, 3, 3, 5}, new int[]{0, 4, 1, 3, 4, 5, 5}, new int[]{0, 0, 1, 1, 2, 2, 3, 3}, new int[]{0, 0, 1, 1, 2, 2, 3, 4, 4}, new int[]{0, 0, 1, 1, 2, 2, 3, 4, 5, 5}, new int[]{0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5}};
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f52702g = new ArrayList(11);
+    private final List f52750g = new ArrayList(11);
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f52703h = new ArrayList();
+    private final List f52751h = new ArrayList();
 
     /* renamed from: i  reason: collision with root package name */
-    private final int[] f52704i = new int[2];
+    private final int[] f52752i = new int[2];
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f52705j;
+    private boolean f52753j;
 
     private static boolean A(Iterable iterable, Iterable iterable2) {
         Iterator it = iterable2.iterator();
@@ -75,7 +75,7 @@ public final class d extends uk.a {
     */
     private static boolean B(java.util.List r8, boolean r9) {
         /*
-            int[][] r0 = vk.d.f52701p
+            int[][] r0 = vk.d.f52749p
             int r1 = r0.length
             r2 = 0
             r3 = r2
@@ -121,7 +121,7 @@ public final class d extends uk.a {
         if (list.isEmpty()) {
             return true;
         }
-        for (int[] iArr2 : f52701p) {
+        for (int[] iArr2 : f52749p) {
             if (list.size() + 1 <= iArr2.length) {
                 for (int size = list.size(); size < iArr2.length; size++) {
                     if (iArr2[size] == i10) {
@@ -145,28 +145,28 @@ public final class d extends uk.a {
         int i12;
         int i13;
         if (z10) {
-            int i14 = this.f52704i[0] - 1;
+            int i14 = this.f52752i[0] - 1;
             while (i14 >= 0 && !aVar.h(i14)) {
                 i14--;
             }
             int i15 = i14 + 1;
-            int[] iArr = this.f52704i;
+            int[] iArr = this.f52752i;
             i12 = iArr[0] - i15;
             k10 = iArr[1];
             i11 = i15;
         } else {
-            int[] iArr2 = this.f52704i;
+            int[] iArr2 = this.f52752i;
             int i16 = iArr2[0];
             k10 = aVar.k(iArr2[1] + 1);
             i11 = i16;
-            i12 = k10 - this.f52704i[1];
+            i12 = k10 - this.f52752i[1];
         }
         int i17 = k10;
         int[] i18 = i();
         System.arraycopy(i18, 0, i18, 1, i18.length - 1);
         i18[0] = i12;
         try {
-            int p10 = uk.a.p(i18, f52699n);
+            int p10 = uk.a.p(i18, f52747n);
             if (!C(list, p10)) {
                 return null;
             }
@@ -223,21 +223,21 @@ public final class d extends uk.a {
         int i11 = 0;
         boolean z11 = false;
         while (true) {
-            if (i11 >= this.f52703h.size()) {
+            if (i11 >= this.f52751h.size()) {
                 break;
             }
-            c cVar = (c) this.f52703h.get(i11);
+            c cVar = (c) this.f52751h.get(i11);
             if (cVar.b() > i10) {
-                z10 = cVar.c(this.f52702g);
+                z10 = cVar.c(this.f52750g);
                 break;
             } else {
-                z11 = cVar.c(this.f52702g);
+                z11 = cVar.c(this.f52750g);
                 i11++;
             }
         }
-        if (!z10 && !z11 && !A(this.f52702g, this.f52703h)) {
-            this.f52703h.add(i11, new c(this.f52702g, i10));
-            E(this.f52702g, this.f52703h);
+        if (!z10 && !z11 && !A(this.f52750g, this.f52751h)) {
+            this.f52751h.add(i11, new c(this.f52750g, i10));
+            E(this.f52750g, this.f52751h);
         }
     }
 
@@ -259,7 +259,7 @@ public final class d extends uk.a {
     }
 
     private boolean r() {
-        b bVar = (b) this.f52702g.get(0);
+        b bVar = (b) this.f52750g.get(0);
         uk.b b10 = bVar.b();
         uk.b c10 = bVar.c();
         if (c10 == null) {
@@ -267,8 +267,8 @@ public final class d extends uk.a {
         }
         int a10 = c10.a();
         int i10 = 2;
-        for (int i11 = 1; i11 < this.f52702g.size(); i11++) {
-            b bVar2 = (b) this.f52702g.get(i11);
+        for (int i11 = 1; i11 < this.f52750g.size(); i11++) {
+            b bVar2 = (b) this.f52750g.get(i11);
             a10 += bVar2.b().a();
             int i12 = i10 + 1;
             uk.b c11 = bVar2.c();
@@ -286,16 +286,16 @@ public final class d extends uk.a {
     }
 
     private List s(List list, int i10) {
-        while (i10 < this.f52703h.size()) {
-            c cVar = (c) this.f52703h.get(i10);
-            this.f52702g.clear();
+        while (i10 < this.f52751h.size()) {
+            c cVar = (c) this.f52751h.get(i10);
+            this.f52750g.clear();
             for (c cVar2 : list) {
-                this.f52702g.addAll(cVar2.a());
+                this.f52750g.addAll(cVar2.a());
             }
-            this.f52702g.addAll(cVar.a());
-            if (B(this.f52702g, false)) {
+            this.f52750g.addAll(cVar.a());
+            if (B(this.f52750g, false)) {
                 if (r()) {
-                    return this.f52702g;
+                    return this.f52750g;
                 }
                 ArrayList arrayList = new ArrayList(list);
                 arrayList.add(cVar);
@@ -312,20 +312,20 @@ public final class d extends uk.a {
 
     private List t(boolean z10) {
         List list = null;
-        if (this.f52703h.size() > 25) {
-            this.f52703h.clear();
+        if (this.f52751h.size() > 25) {
+            this.f52751h.clear();
             return null;
         }
-        this.f52702g.clear();
+        this.f52750g.clear();
         if (z10) {
-            Collections.reverse(this.f52703h);
+            Collections.reverse(this.f52751h);
         }
         try {
             list = s(new ArrayList(), 0);
         } catch (k unused) {
         }
         if (z10) {
-            Collections.reverse(this.f52703h);
+            Collections.reverse(this.f52751h);
         }
         return list;
     }
@@ -359,7 +359,7 @@ public final class d extends uk.a {
         } else {
             z10 = false;
         }
-        if (this.f52705j) {
+        if (this.f52753j) {
             z10 = !z10;
         }
         boolean z11 = false;
@@ -389,7 +389,7 @@ public final class d extends uk.a {
                         G(i11);
                     }
                     if (uk.a.o(i11)) {
-                        int[] iArr = this.f52704i;
+                        int[] iArr = this.f52752i;
                         iArr[0] = i13;
                         iArr[1] = i10;
                         return;
@@ -436,7 +436,7 @@ public final class d extends uk.a {
         } else {
             z10 = false;
         }
-        if (this.f52705j) {
+        if (this.f52753j) {
             z10 = !z10;
         }
         uk.b bVar = null;
@@ -447,7 +447,7 @@ public final class d extends uk.a {
             x(aVar, list, i11);
             D = D(aVar, i10, z10, list);
             if (D == null) {
-                i11 = y(aVar, this.f52704i[0]);
+                i11 = y(aVar, this.f52752i[0]);
                 continue;
             } else {
                 try {
@@ -455,7 +455,7 @@ public final class d extends uk.a {
                     z11 = false;
                     continue;
                 } catch (k unused) {
-                    i11 = y(aVar, this.f52704i[0]);
+                    i11 = y(aVar, this.f52752i[0]);
                     continue;
                 }
             }
@@ -472,19 +472,19 @@ public final class d extends uk.a {
 
     @Override // tk.k
     public Result b(int i10, lk.a aVar, Map map) {
-        this.f52705j = false;
+        this.f52753j = false;
         try {
             return u(w(i10, aVar));
         } catch (k unused) {
-            this.f52705j = true;
+            this.f52753j = true;
             return u(w(i10, aVar));
         }
     }
 
     @Override // tk.k, hk.m
     public void reset() {
-        this.f52702g.clear();
-        this.f52703h.clear();
+        this.f52750g.clear();
+        this.f52751h.clear();
     }
 
     uk.b v(lk.a aVar, uk.c cVar, boolean z10, boolean z11) {
@@ -547,22 +547,22 @@ public final class d extends uk.a {
             int i18 = 0;
             for (int length2 = l10.length - 1; length2 >= 0; length2--) {
                 if (z(cVar, z10, z11)) {
-                    i17 += l10[length2] * f52700o[i16][length2 * 2];
+                    i17 += l10[length2] * f52748o[i16][length2 * 2];
                 }
                 i18 += l10[length2];
             }
             int i19 = 0;
             for (int length3 = j10.length - 1; length3 >= 0; length3--) {
                 if (z(cVar, z10, z11)) {
-                    i19 += j10[length3] * f52700o[i16][(length3 * 2) + 1];
+                    i19 += j10[length3] * f52748o[i16][(length3 * 2) + 1];
                 }
             }
             int i20 = i17 + i19;
             if ((i18 & 1) == 0 && i18 <= 13 && i18 >= 4) {
                 int i21 = (13 - i18) / 2;
-                int i22 = f52696k[i21];
+                int i22 = f52744k[i21];
                 int i23 = 9 - i22;
-                return new uk.b((f.b(l10, i22, true) * f52697l[i21]) + f.b(j10, i23, false) + f52698m[i21], i20);
+                return new uk.b((f.b(l10, i22, true) * f52745l[i21]) + f.b(j10, i23, false) + f52746m[i21], i20);
             }
             throw k.a();
         }
@@ -570,24 +570,24 @@ public final class d extends uk.a {
     }
 
     List w(int i10, lk.a aVar) {
-        this.f52702g.clear();
+        this.f52750g.clear();
         boolean z10 = false;
         while (!z10) {
             try {
-                List list = this.f52702g;
+                List list = this.f52750g;
                 list.add(F(aVar, list, i10));
             } catch (k e10) {
-                if (!this.f52702g.isEmpty()) {
+                if (!this.f52750g.isEmpty()) {
                     z10 = true;
                 } else {
                     throw e10;
                 }
             }
         }
-        if (r() && B(this.f52702g, true)) {
-            return this.f52702g;
+        if (r() && B(this.f52750g, true)) {
+            return this.f52750g;
         }
-        boolean isEmpty = this.f52703h.isEmpty();
+        boolean isEmpty = this.f52751h.isEmpty();
         H(i10);
         if (!isEmpty) {
             List t10 = t(false);

@@ -16,7 +16,7 @@ public final class RiveInitializer implements a4.a {
     @Override // a4.a
     public /* bridge */ /* synthetic */ Object create(Context context) {
         m204create(context);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // a4.a

@@ -36,23 +36,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4.hasAnyAfter;
         var2 = arg0;
         var1 = function(arg0) { // Environment: var0
-            _fun92589: for (var _fun92589_ip = 0;;) switch (_fun92589_ip) {
+            _fun93069: for (var _fun93069_ip = 0;;) switch (_fun93069_ip) {
                 case 0:
                     var5 = arg0;
                     var0 = var5.activity;
                     var2 = null;
                     var0 = var2 != var0;
                     if (!var0) {
-                        _fun92589_ip = 48;
-                        continue _fun92589
+                        _fun93069_ip = 48;
+                        continue _fun93069
                     }
                 case 18:
                     var1 = var5.application;
                     var3 = var2 == var1;
                     var2 = undefined;
                     if (var3) {
-                        _fun92589_ip = 37;
-                        continue _fun92589
+                        _fun93069_ip = 37;
+                        continue _fun93069
                     }
                 case 32:
                     var2 = var1.id;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 === var1;
                 case 48:
                     if (!var0) {
-                        _fun92589_ip = 79;
-                        continue _fun92589
+                        _fun93069_ip = 79;
+                        continue _fun93069
                     }
                 case 51:
                     var1 = var5.activity;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 === var1;
                 case 79:
                     if (!var0) {
-                        _fun92589_ip = 128;
-                        continue _fun92589
+                        _fun93069_ip = 128;
+                        continue _fun93069
                     }
                 case 82:
                     var2 = _closure1_slot0;
@@ -97,4 +97,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isMostRecentDeadEndInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 12093, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 12139, 2]);

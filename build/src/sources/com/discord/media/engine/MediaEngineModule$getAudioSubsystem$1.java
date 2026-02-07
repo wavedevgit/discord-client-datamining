@@ -25,7 +25,7 @@ final class MediaEngineModule$getAudioSubsystem$1 extends kotlin.coroutines.jvm.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, String str, String str2) {
         callback.invoke(str, str2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -63,11 +63,11 @@ final class MediaEngineModule$getAudioSubsystem$1 extends kotlin.coroutines.jvm.
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$getAudioSubsystem$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$getAudioSubsystem$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

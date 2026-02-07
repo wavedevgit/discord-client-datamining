@@ -351,7 +351,7 @@ public final class BillingManager {
                 BillingManager.loadPurchases$default(BillingManager.this, null, null, 3, null);
             }
         };
-        this.backoff = new ExponentialBackoff(v0.f43538d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
+        this.backoff = new ExponentialBackoff(v0.f43586d, 1000L, LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES, 10);
     }
 
     private static /* synthetic */ void getBackoff$annotations() {
@@ -372,7 +372,7 @@ public final class BillingManager {
         if (jVar != null) {
             return jVar;
         }
-        return v0.f43538d;
+        return v0.f43586d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -437,7 +437,7 @@ public final class BillingManager {
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit unit;
-                    unit = Unit.f32008a;
+                    unit = Unit.f32056a;
                     return unit;
                 }
             };
@@ -458,7 +458,7 @@ public final class BillingManager {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit loadPurchases$lambda$8(Exception it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static /* synthetic */ void purchase$default(BillingManager billingManager, Activity activity, String str, ProductType productType, String str2, String str3, String str4, String str5, Function0 function0, Function1 function1, int i10, Object obj) {
@@ -633,7 +633,7 @@ public final class BillingManager {
                         completableDeferred.L0(Boolean.TRUE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -645,7 +645,7 @@ public final class BillingManager {
                         completableDeferred2.L0(Boolean.FALSE);
                     }
                     this.connectionReadyListeners.clear();
-                    Unit unit2 = Unit.f32008a;
+                    Unit unit2 = Unit.f32056a;
                 } catch (Throwable th3) {
                     throw th3;
                 }

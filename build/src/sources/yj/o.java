@@ -7,23 +7,23 @@ import ng.zh;
 public final class o implements xj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zh f55422a;
+    private final zh f55470a;
 
     public o(zh zhVar) {
-        this.f55422a = zhVar;
+        this.f55470a = zhVar;
     }
 
     @Override // xj.a
     public final Rect a() {
-        zh zhVar = this.f55422a;
-        if (zhVar.f40664p != null) {
+        zh zhVar = this.f55470a;
+        if (zhVar.f40712p != null) {
             int i10 = 0;
             int i11 = Integer.MIN_VALUE;
             int i12 = Integer.MAX_VALUE;
             int i13 = Integer.MAX_VALUE;
             int i14 = Integer.MIN_VALUE;
             while (true) {
-                Point[] pointArr = zhVar.f40664p;
+                Point[] pointArr = zhVar.f40712p;
                 if (i10 < pointArr.length) {
                     Point point = pointArr[i10];
                     i12 = Math.min(i12, point.x);
@@ -42,21 +42,21 @@ public final class o implements xj.a {
 
     @Override // xj.a
     public final String b() {
-        return this.f55422a.f40661e;
+        return this.f55470a.f40709e;
     }
 
     @Override // xj.a
     public final int c() {
-        return this.f55422a.f40663o;
+        return this.f55470a.f40711o;
     }
 
     @Override // xj.a
     public final Point[] d() {
-        return this.f55422a.f40664p;
+        return this.f55470a.f40712p;
     }
 
     @Override // xj.a
     public final int getFormat() {
-        return this.f55422a.f40660d;
+        return this.f55470a.f40708d;
     }
 }

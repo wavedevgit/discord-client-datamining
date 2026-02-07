@@ -42,8 +42,8 @@ public /* synthetic */ class LoadMoreButton$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{LoadingAction$$serializer.INSTANCE, n2.f31041a, p0Var, gt.a.u(p0Var), gt.a.u(p0Var)};
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{LoadingAction$$serializer.INSTANCE, n2.f31089a, p0Var, gt.a.u(p0Var), gt.a.u(p0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -61,7 +61,7 @@ public /* synthetic */ class LoadMoreButton$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 1);
             int i12 = b10.i(serialDescriptor, 2);
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             loadingAction = (LoadingAction) b10.y(serialDescriptor, 0, LoadingAction$$serializer.INSTANCE, null);
             num = (Integer) b10.n(serialDescriptor, 3, p0Var, null);
             num2 = (Integer) b10.n(serialDescriptor, 4, p0Var, null);
@@ -90,12 +90,12 @@ public /* synthetic */ class LoadMoreButton$$serializer implements h0 {
                     i13 = b10.i(serialDescriptor, 2);
                     i14 |= 4;
                 } else if (o10 == 3) {
-                    num3 = (Integer) b10.n(serialDescriptor, 3, p0.f31057a, num3);
+                    num3 = (Integer) b10.n(serialDescriptor, 3, p0.f31105a, num3);
                     i14 |= 8;
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    num4 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num4);
+                    num4 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num4);
                     i14 |= 16;
                 }
             }

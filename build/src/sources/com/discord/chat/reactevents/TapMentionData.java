@@ -68,7 +68,7 @@ public final class TapMentionData implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(TapMentionData tapMentionData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         compositeEncoder.l(serialDescriptor, 0, n2Var, tapMentionData.userId);
         compositeEncoder.z(serialDescriptor, 1, tapMentionData.channelId);
         compositeEncoder.l(serialDescriptor, 2, n2Var, tapMentionData.roleName);

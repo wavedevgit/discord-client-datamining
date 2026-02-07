@@ -26,33 +26,33 @@ import wn.g;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f49026a;
+    private final Context f49074a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final z.a f49027b;
+    private final z.a f49075b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g.a f49028c;
+    private final g.a f49076c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final zp.b f49029d;
+    private final zp.b f49077d;
 
     public s(Context applicationContext, z.a cameraXControllerFactory, g.a camera2ManagerFactoryFactory, zp.b navigationStateManager) {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
         Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
-        this.f49026a = applicationContext;
-        this.f49027b = cameraXControllerFactory;
-        this.f49028c = camera2ManagerFactoryFactory;
-        this.f49029d = navigationStateManager;
+        this.f49074a = applicationContext;
+        this.f49075b = cameraXControllerFactory;
+        this.f49076c = camera2ManagerFactoryFactory;
+        this.f49077d = navigationStateManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(List list, v vVar) {
         Intrinsics.checkNotNullParameter(list, "<unused var>");
         Intrinsics.checkNotNullParameter(vVar, "<unused var>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -68,37 +68,37 @@ public final class s {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(g3.b.C0429b.f30287a);
-        return Unit.f32008a;
+        action.d(g3.b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(k.a aVar, k kVar) {
         b4.L(aVar, kVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(Throwable it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n() {
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(s sVar, k.a aVar, g3.a aVar2) {
-        b4.N(sVar.f49026a, aVar, aVar2, true);
-        return Unit.f32008a;
+        b4.N(sVar.f49074a, aVar, aVar2, true);
+        return Unit.f32056a;
     }
 
     public final Object h(final g3.a renderProps, n1.f renderState, final k.a context, final k videoCaptureHelper) {
@@ -116,15 +116,15 @@ public final class s {
             aVar = null;
         }
         if (aVar == null || (eVar = aVar.a()) == null) {
-            eVar = c4.e.f30022o;
+            eVar = c4.e.f30070o;
         }
         c4.e eVar2 = eVar;
         c4.c c10 = renderState.q().c(eVar2);
         String E = b4.E(renderProps.t(), eVar2, renderState.q().w1(), renderState.f());
         String n10 = renderProps.t().n();
-        f5.b.a aVar2 = f5.b.a.f30151d;
+        f5.b.a aVar2 = f5.b.a.f30199d;
         qo.e d10 = renderState.q().d();
-        return new hn.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f49029d.b(), new Function2() { // from class: ro.l
+        return new hn.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f49077d.b(), new Function2() { // from class: ro.l
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit i10;
@@ -145,7 +145,7 @@ public final class s {
                 l10 = s.l(k.a.this, videoCaptureHelper);
                 return l10;
             }
-        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f49027b, this.f49028c, null, new Function1() { // from class: ro.o
+        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f49075b, this.f49076c, null, new Function1() { // from class: ro.o
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit m10;

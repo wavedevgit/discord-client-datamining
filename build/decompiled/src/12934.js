@@ -1,75 +1,125 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = function() {
-        var4 = undefined;
-        var0 = undefined;
-        var3 = _closure1_slot2;
-        var2 = function*(arg0, arg1) { // Environment: var2
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun99118: for (var _fun99118_ip = 0;;) switch (_fun99118_ip) {
-                    case 0:
-                        StartGenerator();
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun99118_ip = 53;
-                            continue _fun99118
-                        }
-                    case 7:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var1 = 1;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var4 = var3.bind(var1)(var2);
-                        var3 = var4._nullishCoalesce;
-                        var2 = arg0;
-                        var1 = arg1;
-                        var1 = var3.bind(var4)(var2, var1);
-                        return var1;
-                    case 53:
-                        return var0;
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var3 = function() {
+        _fun99229: for (var _fun99229_ip = 0;;) switch (_fun99229_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 1;
+                var1 = var0[var6];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.getActiveSpan;
+                var5 = var1.bind(var2)();
+                var3 = var5;
+                if (!var3) {
+                    _fun99229_ip = 69;
+                    continue _fun99229
                 }
-            };
-            return var0;
-        };
-        var3 = var3.bind(var4)(var2);
-        _closure1_slot3 = var3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
+            case 41:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.getRootSpan;
+                var3 = var1.bind(var2)(var5);
+            case 69:
+                if (!var3) {
+                    _fun99229_ip = 229;
+                    continue _fun99229
+                }
+            case 75:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var2.bind(var0)(var1);
+                var1 = var1.DEBUG_BUILD;
+                if (!var1) {
+                    _fun99229_ip = 176;
+                    continue _fun99229
+                }
+            case 104:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 0;
+                var1 = var5[var1];
+                var1 = var2.bind(var0)(var1);
+                var5 = var1.logger;
+                var2 = var5.log;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var8 = var1.concat;
+                var7 = '[Tracing] Root span: ';
+                var6 = 'internal_error';
+                var1 = ' -> Global error occured';
+                var1 = var8.bind(var7)(var6, var1);
+                var1 = var2.bind(var5)(var1);
+            case 176:
+                var2 = var3.setStatus;
+                var1 = {};
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var4 = 3;
+                var4 = var6[var4];
+                var4 = var5.bind(var0)(var4);
+                var4 = var4.SPAN_STATUS_ERROR;
+                var1.code = var4;
+                var4 = 'internal_error';
+                var1.message = var4;
+                var1 = var2.bind(var3)(var1);
+            case 229:
+                return var0;
+        }
     };
-    var _closure1_slot3 = var0;
-    var0 = 0;
-    var3 = var3[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = global;
-    var6 = var3.Object;
+    var _closure1_slot3 = var3;
+    var2 = global;
+    var6 = var2.Object;
     var5 = var6.defineProperty;
     var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function arg0, arg1() {
-        var0 = undefined;
-        var3 = _closure1_slot3;
-        var2 = var3.apply;
-        var0 = arguments;
-        var1 = var0;
-        var0 = this;
-        var0 = var2.bind(var3)(var0, var1);
-        return var0;
+    var2 = true;
+    var4.value = var2;
+    var2 = '__esModule';
+    var2 = var5.bind(var6)(var1, var2, var4);
+    var2 = false;
+    var _closure1_slot2 = var2;
+    var2 = 'sentry_tracingErrorCallback';
+    var3.tag = var2;
+    var0 = function() {
+        _fun99230: for (var _fun99230_ip = 0;;) switch (_fun99230_ip) {
+            case 0:
+                var0 = _closure1_slot2;
+                if (var0) {
+                    _fun99230_ip = 72;
+                    continue _fun99230
+                }
+            case 10:
+                var0 = true;
+                _closure1_slot2 = var0;
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 0;
+                var5 = var4[var0];
+                var1 = undefined;
+                var6 = var3.bind(var1)(var5);
+                var5 = var6.addGlobalErrorInstrumentationHandler;
+                var2 = _closure1_slot3;
+                var5 = var5.bind(var6)(var2);
+                var0 = var4[var0];
+                var1 = var3.bind(var1)(var0);
+                var0 = var1.addGlobalUnhandledRejectionInstrumentationHandler;
+                var0 = var0.bind(var1)(var2);
+            case 72:
+                var0 = undefined;
+                return var0;
+        }
     };
-    var2._asyncNullishCoalesce = var1;
+    var1.registerSpanErrorInstrumentation = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 12935]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12935, 12989, 13001, 12992]);

@@ -62,14 +62,14 @@ public enum ie implements x1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f47132d;
+    private final int f47180d;
 
     ie(int i10) {
-        this.f47132d = i10;
+        this.f47180d = i10;
     }
 
     @Override // qg.x1
     public final int zza() {
-        return this.f47132d;
+        return this.f47180d;
     }
 }

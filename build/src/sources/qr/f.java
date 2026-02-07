@@ -10,7 +10,7 @@ public class f {
         Intrinsics.checkNotNullParameter(th2, "<this>");
         Intrinsics.checkNotNullParameter(exception, "exception");
         if (th2 != exception) {
-            yr.b.f55568a.a(th2, exception);
+            yr.b.f55616a.a(th2, exception);
         }
     }
 

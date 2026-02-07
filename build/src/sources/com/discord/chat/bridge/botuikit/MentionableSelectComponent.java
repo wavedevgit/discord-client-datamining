@@ -41,7 +41,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.h
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.botuikit.h
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -150,10 +150,10 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         compositeEncoder.s(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, mentionableSelectComponent.getState());
         compositeEncoder.z(serialDescriptor, 3, mentionableSelectComponent.getCustomId());
         if (compositeEncoder.A(serialDescriptor, 4) || mentionableSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, mentionableSelectComponent.getPlaceholder());
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, mentionableSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.A(serialDescriptor, 5) || mentionableSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, mentionableSelectComponent.getAccessibilityLabel());
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, mentionableSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.x(serialDescriptor, 6, mentionableSelectComponent.getMinValues());
         compositeEncoder.x(serialDescriptor, 7, mentionableSelectComponent.getMaxValues());

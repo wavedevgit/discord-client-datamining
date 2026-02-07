@@ -119,7 +119,7 @@ public final class OrientationModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(OrientationModule orientationModule, boolean z10) {
         updateOrientation$default(orientationModule, null, z10, false, 5, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

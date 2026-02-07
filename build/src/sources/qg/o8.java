@@ -5,7 +5,7 @@ import yi.c;
 final class o8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o8 f47422a = new o8();
+    static final o8 f47470a = new o8();
 
     static {
         c.b a10 = yi.c.a("languageCode");

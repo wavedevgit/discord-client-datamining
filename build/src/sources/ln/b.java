@@ -6,30 +6,30 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f36380a;
+    private final int f36428a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36381b;
+    private final int f36429b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f36382c;
+    private final int f36430c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36383d;
+    private final int f36431d;
 
     public b(kn.d handler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f36380a = handler.O();
-        this.f36381b = handler.T();
-        this.f36382c = handler.S();
-        this.f36383d = handler.Q();
+        this.f36428a = handler.O();
+        this.f36429b = handler.T();
+        this.f36430c = handler.S();
+        this.f36431d = handler.Q();
     }
 
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
-        eventData.putInt("numberOfPointers", this.f36380a);
-        eventData.putInt("handlerTag", this.f36381b);
-        eventData.putInt("state", this.f36382c);
-        eventData.putInt("pointerType", this.f36383d);
+        eventData.putInt("numberOfPointers", this.f36428a);
+        eventData.putInt("handlerTag", this.f36429b);
+        eventData.putInt("state", this.f36430c);
+        eventData.putInt("pointerType", this.f36431d);
     }
 }

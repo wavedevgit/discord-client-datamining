@@ -28,7 +28,7 @@ public final class PassthroughTouchViewGroup extends ReactViewGroup {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
                 return unit;
             }
         };

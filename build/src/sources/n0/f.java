@@ -39,37 +39,37 @@ public class f extends x1 {
     private i2.c C;
 
     /* renamed from: p  reason: collision with root package name */
-    private final h f38346p;
+    private final h f38394p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final j f38347q;
+    private final j f38395q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final x0 f38348r;
+    private final x0 f38396r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final x0 f38349s;
+    private final x0 f38397s;
 
     /* renamed from: t  reason: collision with root package name */
-    private t0 f38350t;
+    private t0 f38398t;
 
     /* renamed from: u  reason: collision with root package name */
-    private t0 f38351u;
+    private t0 f38399u;
 
     /* renamed from: v  reason: collision with root package name */
-    private r f38352v;
+    private r f38400v;
 
     /* renamed from: w  reason: collision with root package name */
-    private l0 f38353w;
+    private l0 f38401w;
 
     /* renamed from: x  reason: collision with root package name */
-    private l0 f38354x;
+    private l0 f38402x;
 
     /* renamed from: y  reason: collision with root package name */
-    private l0 f38355y;
+    private l0 f38403y;
 
     /* renamed from: z  reason: collision with root package name */
-    private l0 f38356z;
+    private l0 f38404z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -79,10 +79,10 @@ public class f extends x1 {
 
     public f(e0 e0Var, e0 e0Var2, x0 x0Var, x0 x0Var2, Set set, y2 y2Var) {
         super(k0(set));
-        this.f38346p = k0(set);
-        this.f38348r = x0Var;
-        this.f38349s = x0Var2;
-        this.f38347q = new j(e0Var, e0Var2, set, y2Var, new a() { // from class: n0.d
+        this.f38394p = k0(set);
+        this.f38396r = x0Var;
+        this.f38397s = x0Var2;
+        this.f38395q = new j(e0Var, e0Var2, set, y2Var, new a() { // from class: n0.d
             @Override // n0.f.a
             public final ListenableFuture a(int i10, int i11) {
                 return f.Z(f.this, i10, i11);
@@ -97,11 +97,11 @@ public class f extends x1 {
         fVar.b0();
         fVar.V(fVar.c0(str, str2, x2Var, m2Var, m2Var2));
         fVar.G();
-        fVar.f38347q.J();
+        fVar.f38395q.J();
     }
 
     public static /* synthetic */ ListenableFuture Z(f fVar, int i10, int i11) {
-        t0 t0Var = fVar.f38351u;
+        t0 t0Var = fVar.f38399u;
         if (t0Var != null) {
             return t0Var.e().c(i10, i11);
         }
@@ -129,40 +129,40 @@ public class f extends x1 {
             cVar.b();
             this.C = null;
         }
-        l0 l0Var = this.f38353w;
+        l0 l0Var = this.f38401w;
         if (l0Var != null) {
             l0Var.i();
-            this.f38353w = null;
+            this.f38401w = null;
         }
-        l0 l0Var2 = this.f38354x;
+        l0 l0Var2 = this.f38402x;
         if (l0Var2 != null) {
             l0Var2.i();
-            this.f38354x = null;
+            this.f38402x = null;
         }
-        l0 l0Var3 = this.f38355y;
+        l0 l0Var3 = this.f38403y;
         if (l0Var3 != null) {
             l0Var3.i();
-            this.f38355y = null;
+            this.f38403y = null;
         }
-        l0 l0Var4 = this.f38356z;
+        l0 l0Var4 = this.f38404z;
         if (l0Var4 != null) {
             l0Var4.i();
-            this.f38356z = null;
+            this.f38404z = null;
         }
-        t0 t0Var = this.f38351u;
+        t0 t0Var = this.f38399u;
         if (t0Var != null) {
             t0Var.f();
-            this.f38351u = null;
+            this.f38399u = null;
         }
-        r rVar = this.f38352v;
+        r rVar = this.f38400v;
         if (rVar != null) {
             rVar.d();
-            this.f38352v = null;
+            this.f38400v = null;
         }
-        t0 t0Var2 = this.f38350t;
+        t0 t0Var2 = this.f38398t;
         if (t0Var2 != null) {
             t0Var2.f();
-            this.f38350t = null;
+            this.f38398t = null;
         }
     }
 
@@ -175,33 +175,33 @@ public class f extends x1 {
             d0(str, str2, x2Var, m2Var, null);
             e0 g10 = g();
             Objects.requireNonNull(g10);
-            this.f38351u = n0(g10, m2Var);
+            this.f38399u = n0(g10, m2Var);
             if (A() != null) {
                 z10 = true;
             }
-            Map A = this.f38347q.A(this.f38355y, y(), z10);
-            t0.c j10 = this.f38351u.j(t0.b.c(this.f38355y, new ArrayList(A.values())));
+            Map A = this.f38395q.A(this.f38403y, y(), z10);
+            t0.c j10 = this.f38399u.j(t0.b.c(this.f38403y, new ArrayList(A.values())));
             HashMap hashMap = new HashMap();
             for (Map.Entry entry : A.entrySet()) {
                 hashMap.put((x1) entry.getKey(), (l0) j10.get(entry.getValue()));
             }
-            this.f38347q.L(hashMap);
+            this.f38395q.L(hashMap);
             a11 = d0.a(new Object[]{this.A.o()});
             return a11;
         }
         d0(str, str2, x2Var, m2Var, m2Var2);
         e0(str, str2, x2Var, m2Var, m2Var2);
-        this.f38352v = l0(g(), s(), m2Var, this.f38348r, this.f38349s);
+        this.f38400v = l0(g(), s(), m2Var, this.f38396r, this.f38397s);
         if (A() != null) {
             z10 = true;
         }
-        Map B = this.f38347q.B(this.f38355y, this.f38356z, y(), z10);
-        r.c g11 = this.f38352v.g(r.b.d(this.f38355y, this.f38356z, new ArrayList(B.values())));
+        Map B = this.f38395q.B(this.f38403y, this.f38404z, y(), z10);
+        r.c g11 = this.f38400v.g(r.b.d(this.f38403y, this.f38404z, new ArrayList(B.values())));
         HashMap hashMap2 = new HashMap();
         for (Map.Entry entry2 : B.entrySet()) {
             hashMap2.put((x1) entry2.getKey(), (l0) g11.get(entry2.getValue()));
         }
-        this.f38347q.L(hashMap2);
+        this.f38395q.L(hashMap2);
         a10 = d0.a(new Object[]{this.A.o(), this.B.o()});
         return a10;
     }
@@ -219,11 +219,11 @@ public class f extends x1 {
         e0 g12 = g();
         Objects.requireNonNull(g12);
         l0 l0Var = new l0(3, 34, m2Var, v10, q10, j02, q11, -1, C(g12));
-        this.f38353w = l0Var;
+        this.f38401w = l0Var;
         e0 g13 = g();
         Objects.requireNonNull(g13);
-        this.f38355y = m0(l0Var, g13);
-        i2.b f02 = f0(this.f38353w, x2Var, m2Var);
+        this.f38403y = m0(l0Var, g13);
+        i2.b f02 = f0(this.f38401w, x2Var, m2Var);
         this.A = f02;
         a0(f02, str, str2, x2Var, m2Var, m2Var2);
     }
@@ -241,11 +241,11 @@ public class f extends x1 {
         e0 s12 = s();
         Objects.requireNonNull(s12);
         l0 l0Var = new l0(3, 34, m2Var2, v10, q10, j02, q11, -1, C(s12));
-        this.f38354x = l0Var;
+        this.f38402x = l0Var;
         e0 s13 = s();
         Objects.requireNonNull(s13);
-        this.f38356z = m0(l0Var, s13);
-        i2.b f02 = f0(this.f38354x, x2Var, m2Var2);
+        this.f38404z = m0(l0Var, s13);
+        i2.b f02 = f0(this.f38402x, x2Var, m2Var2);
         this.B = f02;
         a0(f02, str, str2, x2Var, m2Var, m2Var2);
     }
@@ -255,7 +255,7 @@ public class f extends x1 {
         q0(p10);
         p0(m2Var.e(), p10);
         p10.m(l0Var.o(), m2Var.b(), null, -1);
-        p10.j(this.f38347q.D());
+        p10.j(this.f38395q.D());
         if (m2Var.d() != null) {
             p10.g(m2Var.d());
         }
@@ -345,25 +345,25 @@ public class f extends x1 {
     @Override // x.x1
     public void I() {
         super.I();
-        this.f38347q.n();
+        this.f38395q.n();
     }
 
     @Override // x.x1
     protected x2 K(a0.d0 d0Var, x2.a aVar) {
-        this.f38347q.G(aVar.a());
+        this.f38395q.G(aVar.a());
         return aVar.b();
     }
 
     @Override // x.x1
     public void L() {
         super.L();
-        this.f38347q.H();
+        this.f38395q.H();
     }
 
     @Override // x.x1
     public void M() {
         super.M();
-        this.f38347q.I();
+        this.f38395q.I();
     }
 
     @Override // x.x1
@@ -386,18 +386,18 @@ public class f extends x1 {
     public void P() {
         super.P();
         b0();
-        this.f38347q.N();
+        this.f38395q.N();
     }
 
     public Set i0() {
-        return this.f38347q.z();
+        return this.f38395q.z();
     }
 
     @Override // x.x1
     public x2 k(boolean z10, y2 y2Var) {
-        r0 a10 = y2Var.a(this.f38346p.L(), 1);
+        r0 a10 = y2Var.a(this.f38394p.L(), 1);
         if (z10) {
-            a10 = r0.E(a10, this.f38346p.getConfig());
+            a10 = r0.E(a10, this.f38394p.getConfig());
         }
         if (a10 == null) {
             return null;

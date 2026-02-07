@@ -30,26 +30,26 @@ import mp.x5;
 public final class c2 implements dn.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f37347d = new a(null);
+    public static final a f37395d = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final np.h f37348b;
+    private final np.h f37396b;
 
     /* renamed from: c  reason: collision with root package name */
-    private View f37349c;
+    private View f37397c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements dn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ dn.c0 f37350a;
+        private final /* synthetic */ dn.c0 f37398a;
 
         /* renamed from: mp.c2$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0508a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0508a f37351d = new C0508a();
+            public static final C0508a f37399d = new C0508a();
 
             C0508a() {
                 super(3, np.h.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieSubmittingScreenBinding;", 0);
@@ -70,7 +70,7 @@ public final class c2 implements dn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f37352d = new b();
+            public static final b f37400d = new b();
 
             b() {
                 super(1, c2.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/selfie/databinding/Pi2SelfieSubmittingScreenBinding;)V", 0);
@@ -94,17 +94,17 @@ public final class c2 implements dn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f37350a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f37398a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // dn.c0
         public KClass getType() {
-            return this.f37350a.getType();
+            return this.f37398a.getType();
         }
 
         private a() {
             k.a aVar = dn.k.f20913a;
-            this.f37350a = new dn.z(Reflection.getOrCreateKotlinClass(x5.d.f.class), C0508a.f37351d, b.f37352d);
+            this.f37398a = new dn.z(Reflection.getOrCreateKotlinClass(x5.d.f.class), C0508a.f37399d, b.f37400d);
         }
     }
 
@@ -112,7 +112,7 @@ public final class c2 implements dn.k {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f37353a;
+        public static final /* synthetic */ int[] f37401a;
 
         static {
             int[] iArr = new int[StyleElements.PositionType.values().length];
@@ -128,21 +128,21 @@ public final class c2 implements dn.k {
                 iArr[StyleElements.PositionType.END.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f37353a = iArr;
+            f37401a = iArr;
         }
     }
 
     public c2(final np.h binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f37348b = binding;
+        this.f37396b = binding;
         Context context = binding.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = rp.s.f(context, jp.a.f30774n, null, false, 6, null);
+        Integer f10 = rp.s.f(context, jp.a.f30822n, null, false, 6, null);
         if (f10 != null) {
-            binding.f41146f.setAnimation(f10.intValue());
-            binding.f41146f.u();
+            binding.f41194f.setAnimation(f10.intValue());
+            binding.f41194f.u();
         } else {
-            binding.f41146f.l(new q5.e("scanner", "**"), l5.a0.f35765a, new y5.e() { // from class: mp.z1
+            binding.f41194f.l(new q5.e("scanner", "**"), l5.a0.f35813a, new y5.e() { // from class: mp.z1
                 @Override // y5.e
                 public final Object a(y5.b bVar) {
                     return c2.d(np.h.this, bVar);
@@ -170,10 +170,10 @@ public final class c2 implements dn.k {
                 pendingPageAlignmentValue = StyleElements.PositionType.CENTER;
             }
         }
-        int[] iArr = pendingPageTextPosition == PendingPageTextPosition.TOP ? new int[]{this.f37348b.f41147g.getId(), this.f37348b.f41143c.getId(), this.f37348b.f41142b.getId()} : new int[]{this.f37348b.f41142b.getId(), this.f37348b.f41147g.getId(), this.f37348b.f41143c.getId()};
+        int[] iArr = pendingPageTextPosition == PendingPageTextPosition.TOP ? new int[]{this.f37396b.f41195g.getId(), this.f37396b.f41191c.getId(), this.f37396b.f41190b.getId()} : new int[]{this.f37396b.f41190b.getId(), this.f37396b.f41195g.getId(), this.f37396b.f41191c.getId()};
         ConstraintSet constraintSet = new ConstraintSet();
-        constraintSet.f(this.f37348b.f41144d);
-        int i10 = b.f37353a[pendingPageAlignmentValue.ordinal()];
+        constraintSet.f(this.f37396b.f41192d);
+        int i10 = b.f37401a[pendingPageAlignmentValue.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -189,59 +189,59 @@ public final class c2 implements dn.k {
         }
         constraintSet.p(0, 3, 0, 4, iArr, null, 2);
         constraintSet.D(kotlin.collections.i.T(iArr), f10);
-        constraintSet.c(this.f37348b.f41144d);
+        constraintSet.c(this.f37396b.f41192d);
         Integer backgroundColorValue = selfieStepStyle.getBackgroundColorValue();
         if (backgroundColorValue != null) {
             int intValue = backgroundColorValue.intValue();
-            this.f37348b.getRoot().setBackgroundColor(intValue);
+            this.f37396b.getRoot().setBackgroundColor(intValue);
             aq.c.a(a0Var, intValue);
         }
-        Context context = this.f37348b.getRoot().getContext();
+        Context context = this.f37396b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         Drawable a10 = mq.c.a(selfieStepStyle, context);
         if (a10 != null) {
-            this.f37348b.getRoot().setBackground(a10);
+            this.f37396b.getRoot().setBackground(a10);
         }
         TextBasedComponentStyle processingTitleStyleValue = selfieStepStyle.getProcessingTitleStyleValue();
         if (processingTitleStyleValue != null) {
-            TextView title = this.f37348b.f41147g;
+            TextView title = this.f37396b.f41195g;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             kq.f0.n(title, processingTitleStyleValue, null, 2, null);
         }
         TextBasedComponentStyle processingTextStyleValue = selfieStepStyle.getProcessingTextStyleValue();
         if (processingTextStyleValue != null) {
-            TextView body = this.f37348b.f41143c;
+            TextView body = this.f37396b.f41191c;
             Intrinsics.checkNotNullExpressionValue(body, "body");
             kq.f0.n(body, processingTextStyleValue, null, 2, null);
         }
         Integer fillColorValue = selfieStepStyle.getFillColorValue();
         if (fillColorValue != null) {
             int intValue2 = fillColorValue.intValue();
-            this.f37348b.f41146f.I(Color.parseColor("#AA85FF"), intValue2);
-            this.f37348b.f41146f.I(Color.parseColor("#4600EB"), intValue2);
+            this.f37396b.f41194f.I(Color.parseColor("#AA85FF"), intValue2);
+            this.f37396b.f41194f.I(Color.parseColor("#4600EB"), intValue2);
         }
         Integer strokeColorValue = selfieStepStyle.getStrokeColorValue();
         if (strokeColorValue != null) {
-            this.f37348b.f41146f.I(Color.parseColor("#190052"), strokeColorValue.intValue());
+            this.f37396b.f41194f.I(Color.parseColor("#190052"), strokeColorValue.intValue());
         }
         Integer backgroundColorValue2 = selfieStepStyle.getBackgroundColorValue();
         if (backgroundColorValue2 != null) {
             int intValue3 = backgroundColorValue2.intValue();
-            this.f37348b.f41146f.I(Color.parseColor("#FFFFFF"), intValue3);
-            this.f37348b.f41146f.I(Color.parseColor("#F1EBFF"), intValue3);
+            this.f37396b.f41194f.I(Color.parseColor("#FFFFFF"), intValue3);
+            this.f37396b.f41194f.I(Color.parseColor("#F1EBFF"), intValue3);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g(x5.d.f fVar) {
         fVar.d().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(x5.d.f fVar) {
         fVar.e().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // dn.k
@@ -249,7 +249,7 @@ public final class c2 implements dn.k {
     public void a(final x5.d.f rendering, dn.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        np.h hVar = this.f37348b;
+        np.h hVar = this.f37396b;
         zp.a c10 = rendering.c();
         Function0 function0 = new Function0() { // from class: mp.a2
             @Override // kotlin.jvm.functions.Function0
@@ -267,30 +267,30 @@ public final class c2 implements dn.k {
                 return h10;
             }
         };
-        Pi2NavigationBar navigationBar = hVar.f41145e;
+        Pi2NavigationBar navigationBar = hVar.f41193e;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         ConstraintLayout root = hVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         zp.e.b(c10, function0, function02, navigationBar, root);
         if (rendering.h().length() == 0) {
-            hVar.f41147g.setVisibility(8);
+            hVar.f41195g.setVisibility(8);
         } else {
-            hVar.f41147g.setText(rendering.h());
-            TextView title = hVar.f41147g;
+            hVar.f41195g.setText(rendering.h());
+            TextView title = hVar.f41195g;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             bq.s.e(title);
         }
         if (rendering.b().length() == 0) {
-            hVar.f41143c.setVisibility(8);
+            hVar.f41191c.setVisibility(8);
         } else {
-            hVar.f41143c.setText(rendering.b());
+            hVar.f41191c.setText(rendering.b());
         }
         RemoteImage a10 = rendering.a();
-        if (a10 != null && this.f37349c == null) {
-            ConstraintLayout animationContainer = hVar.f41142b;
+        if (a10 != null && this.f37397c == null) {
+            ConstraintLayout animationContainer = hVar.f41190b;
             Intrinsics.checkNotNullExpressionValue(animationContainer, "animationContainer");
-            this.f37349c = mq.b.c(a10, animationContainer, false, 2, null);
-            hVar.f41146f.setVisibility(8);
+            this.f37397c = mq.b.c(a10, animationContainer, false, 2, null);
+            hVar.f41194f.setVisibility(8);
         }
         StepStyles.SelfieStepStyle g10 = rendering.g();
         if (g10 != null) {

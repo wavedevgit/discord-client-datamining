@@ -5,16 +5,16 @@ import yi.c;
 final class n6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n6 f44517a = new n6();
+    static final n6 f44565a = new n6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44518b;
+    private static final yi.c f44566b;
 
     static {
         c.b a10 = yi.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44518b = a10.b(s1Var.b()).a();
+        f44566b = a10.b(s1Var.b()).a();
     }
 
     private n6() {
@@ -22,6 +22,6 @@ final class n6 implements yi.d {
 
     @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        ((yi.e) obj2).a(f44518b, ((za) obj).a());
+        ((yi.e) obj2).a(f44566b, ((za) obj).a());
     }
 }

@@ -9,13 +9,13 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class pk {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gf.w f40185a;
+    private final gf.w f40233a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicLong f40186b = new AtomicLong(-1);
+    private final AtomicLong f40234b = new AtomicLong(-1);
 
     pk(Context context, String str) {
-        this.f40185a = gf.v.b(context, gf.x.a().b("mlkit:vision").a());
+        this.f40233a = gf.v.b(context, gf.x.a().b("mlkit:vision").a());
     }
 
     public static pk a(Context context) {
@@ -24,16 +24,16 @@ public final class pk {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void b(long j10, Exception exc) {
-        this.f40186b.set(j10);
+        this.f40234b.set(j10);
     }
 
     public final synchronized void c(int i10, int i11, long j10, long j11) {
-        AtomicLong atomicLong = this.f40186b;
+        AtomicLong atomicLong = this.f40234b;
         final long elapsedRealtime = SystemClock.elapsedRealtime();
-        if (atomicLong.get() != -1 && elapsedRealtime - this.f40186b.get() <= TimeUnit.MINUTES.toMillis(30L)) {
+        if (atomicLong.get() != -1 && elapsedRealtime - this.f40234b.get() <= TimeUnit.MINUTES.toMillis(30L)) {
             return;
         }
-        this.f40185a.d(new gf.u(0, Arrays.asList(new gf.n(i10, i11, 0, j10, j11, null, null, 0, -1)))).e(new yg.f() { // from class: ng.ok
+        this.f40233a.d(new gf.u(0, Arrays.asList(new gf.n(i10, i11, 0, j10, j11, null, null, 0, -1)))).e(new yg.f() { // from class: ng.ok
             @Override // yg.f
             public final void onFailure(Exception exc) {
                 pk.this.b(elapsedRealtime, exc);

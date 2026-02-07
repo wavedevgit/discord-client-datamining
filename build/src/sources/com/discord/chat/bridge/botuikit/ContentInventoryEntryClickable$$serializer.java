@@ -36,7 +36,7 @@ public /* synthetic */ class ContentInventoryEntryClickable$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{gt.a.u(n2.f31041a)};
+        return new KSerializer[]{gt.a.u(n2.f31089a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -48,7 +48,7 @@ public /* synthetic */ class ContentInventoryEntryClickable$$serializer implemen
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         int i10 = 1;
         if (b10.p()) {
-            str = (String) b10.n(serialDescriptor, 0, n2.f31041a, null);
+            str = (String) b10.n(serialDescriptor, 0, n2.f31089a, null);
         } else {
             boolean z10 = true;
             int i11 = 0;
@@ -60,7 +60,7 @@ public /* synthetic */ class ContentInventoryEntryClickable$$serializer implemen
                 } else if (o10 != 0) {
                     throw new b0(o10);
                 } else {
-                    str = (String) b10.n(serialDescriptor, 0, n2.f31041a, str);
+                    str = (String) b10.n(serialDescriptor, 0, n2.f31089a, str);
                     i11 = 1;
                 }
             }

@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 final class e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public volatile SoftReference f30991a = new SoftReference(null);
+    public volatile SoftReference f31039a = new SoftReference(null);
 
     public final synchronized Object a(Function0 factory) {
         Intrinsics.checkNotNullParameter(factory, "factory");
-        Object obj = this.f30991a.get();
+        Object obj = this.f31039a.get();
         if (obj != null) {
             return obj;
         }
         Object invoke = factory.invoke();
-        this.f30991a = new SoftReference(invoke);
+        this.f31039a = new SoftReference(invoke);
         return invoke;
     }
 }

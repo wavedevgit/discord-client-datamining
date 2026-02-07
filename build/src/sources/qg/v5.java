@@ -5,7 +5,7 @@ import yi.c;
 final class v5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v5 f47586a = new v5();
+    static final v5 f47634a = new v5();
 
     static {
         c.b a10 = yi.c.a("format");

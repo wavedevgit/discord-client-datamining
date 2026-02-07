@@ -16,32 +16,32 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 public final class d3 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d3 f35292a = new d3();
+    public static final d3 f35340a = new d3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final DescriptorRenderer f35293b = DescriptorRenderer.FQ_NAMES_IN_TYPES;
+    private static final DescriptorRenderer f35341b = DescriptorRenderer.FQ_NAMES_IN_TYPES;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f35294a;
+        public static final /* synthetic */ int[] f35342a;
 
         static {
             int[] iArr = new int[i.a.values().length];
             try {
-                iArr[i.a.f32125e.ordinal()] = 1;
+                iArr[i.a.f32173e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[i.a.f32124d.ordinal()] = 2;
+                iArr[i.a.f32172d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[i.a.f32126i.ordinal()] = 3;
+                iArr[i.a.f32174i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f35294a = iArr;
+            f35342a = iArr;
         }
     }
 
@@ -88,7 +88,7 @@ public final class d3 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CharSequence g(ValueParameterDescriptor valueParameterDescriptor) {
-        d3 d3Var = f35292a;
+        d3 d3Var = f35340a;
         KotlinType type = valueParameterDescriptor.getType();
         Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
         return d3Var.l(type);
@@ -96,7 +96,7 @@ public final class d3 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CharSequence i(ValueParameterDescriptor valueParameterDescriptor) {
-        d3 d3Var = f35292a;
+        d3 d3Var = f35340a;
         KotlinType type = valueParameterDescriptor.getType();
         Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
         return d3Var.l(type);
@@ -106,15 +106,15 @@ public final class d3 {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         StringBuilder sb2 = new StringBuilder();
         sb2.append("fun ");
-        d3 d3Var = f35292a;
+        d3 d3Var = f35340a;
         d3Var.d(sb2, descriptor);
-        DescriptorRenderer descriptorRenderer = f35293b;
+        DescriptorRenderer descriptorRenderer = f35341b;
         Name name = descriptor.getName();
         Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
         sb2.append(descriptorRenderer.renderName(name, true));
         List<ValueParameterDescriptor> valueParameters = descriptor.getValueParameters();
         Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
-        CollectionsKt.v0(valueParameters, sb2, ", ", "(", ")", 0, null, b3.f35270d, 48, null);
+        CollectionsKt.v0(valueParameters, sb2, ", ", "(", ")", 0, null, b3.f35318d, 48, null);
         sb2.append(": ");
         KotlinType returnType = descriptor.getReturnType();
         Intrinsics.checkNotNull(returnType);
@@ -125,11 +125,11 @@ public final class d3 {
     public final String h(FunctionDescriptor invoke) {
         Intrinsics.checkNotNullParameter(invoke, "invoke");
         StringBuilder sb2 = new StringBuilder();
-        d3 d3Var = f35292a;
+        d3 d3Var = f35340a;
         d3Var.d(sb2, invoke);
         List<ValueParameterDescriptor> valueParameters = invoke.getValueParameters();
         Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
-        CollectionsKt.v0(valueParameters, sb2, ", ", "(", ")", 0, null, c3.f35286d, 48, null);
+        CollectionsKt.v0(valueParameters, sb2, ", ", "(", ")", 0, null, c3.f35334d, 48, null);
         sb2.append(" -> ");
         KotlinType returnType = invoke.getReturnType();
         Intrinsics.checkNotNull(returnType);
@@ -140,7 +140,7 @@ public final class d3 {
     public final String j(x1 parameter) {
         Intrinsics.checkNotNullParameter(parameter, "parameter");
         StringBuilder sb2 = new StringBuilder();
-        int i10 = a.f35294a[parameter.getKind().ordinal()];
+        int i10 = a.f35342a[parameter.getKind().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -155,7 +155,7 @@ public final class d3 {
             sb2.append("extension receiver parameter");
         }
         sb2.append(" of ");
-        sb2.append(f35292a.e(parameter.g().D()));
+        sb2.append(f35340a.e(parameter.g().D()));
         return sb2.toString();
     }
 
@@ -169,9 +169,9 @@ public final class d3 {
             str = "val ";
         }
         sb2.append(str);
-        d3 d3Var = f35292a;
+        d3 d3Var = f35340a;
         d3Var.d(sb2, descriptor);
-        DescriptorRenderer descriptorRenderer = f35293b;
+        DescriptorRenderer descriptorRenderer = f35341b;
         Name name = descriptor.getName();
         Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
         sb2.append(descriptorRenderer.renderName(name, true));
@@ -184,6 +184,6 @@ public final class d3 {
 
     public final String l(KotlinType type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        return f35293b.renderType(type);
+        return f35341b.renderType(type);
     }
 }

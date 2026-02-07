@@ -9,24 +9,24 @@ public final class b extends hf.a implements ef.k {
     public static final Parcelable.Creator<b> CREATOR = new c();
 
     /* renamed from: d  reason: collision with root package name */
-    final int f53819d;
+    final int f53867d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f53820e;
+    private int f53868e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Intent f53821i;
+    private Intent f53869i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, int i11, Intent intent) {
-        this.f53819d = i10;
-        this.f53820e = i11;
-        this.f53821i = intent;
+        this.f53867d = i10;
+        this.f53868e = i11;
+        this.f53869i = intent;
     }
 
     @Override // ef.k
     public final Status a() {
-        if (this.f53820e == 0) {
+        if (this.f53868e == 0) {
             return Status.f13734q;
         }
         return Status.f13738u;
@@ -34,11 +34,11 @@ public final class b extends hf.a implements ef.k {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f53819d;
+        int i11 = this.f53867d;
         int a10 = hf.c.a(parcel);
         hf.c.l(parcel, 1, i11);
-        hf.c.l(parcel, 2, this.f53820e);
-        hf.c.q(parcel, 3, this.f53821i, i10, false);
+        hf.c.l(parcel, 2, this.f53868e);
+        hf.c.q(parcel, 3, this.f53869i, i10, false);
         hf.c.b(parcel, a10);
     }
 }

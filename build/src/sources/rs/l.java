@@ -10,11 +10,11 @@ public abstract /* synthetic */ class l {
     public static final Flow a(Flow flow, int i10, qs.a aVar) {
         if (i10 < 0 && i10 != -2 && i10 != -1) {
             throw new IllegalArgumentException(("Buffer size should be non-negative, BUFFERED, or CONFLATED, but was " + i10).toString());
-        } else if (i10 == -1 && aVar != qs.a.f48066d) {
+        } else if (i10 == -1 && aVar != qs.a.f48114d) {
             throw new IllegalArgumentException("CONFLATED capacity cannot be used with non-default onBufferOverflow");
         } else {
             if (i10 == -1) {
-                aVar = qs.a.f48067e;
+                aVar = qs.a.f48115e;
                 i10 = 0;
             }
             int i11 = i10;
@@ -31,7 +31,7 @@ public abstract /* synthetic */ class l {
             i10 = -2;
         }
         if ((i11 & 2) != 0) {
-            aVar = qs.a.f48066d;
+            aVar = qs.a.f48114d;
         }
         return g.b(flow, i10, aVar);
     }
@@ -44,7 +44,7 @@ public abstract /* synthetic */ class l {
     }
 
     private static final void d(CoroutineContext coroutineContext) {
-        if (coroutineContext.m(Job.f35017h) == null) {
+        if (coroutineContext.m(Job.f35065h) == null) {
             return;
         }
         throw new IllegalArgumentException(("Flow context cannot contain job in it. Had " + coroutineContext).toString());
@@ -58,7 +58,7 @@ public abstract /* synthetic */ class l {
 
     public static final Flow f(Flow flow, CoroutineContext coroutineContext) {
         d(coroutineContext);
-        if (Intrinsics.areEqual(coroutineContext, kotlin.coroutines.e.f32082d)) {
+        if (Intrinsics.areEqual(coroutineContext, kotlin.coroutines.e.f32130d)) {
             return flow;
         }
         if (flow instanceof ss.q) {

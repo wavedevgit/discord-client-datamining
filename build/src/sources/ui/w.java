@@ -3,31 +3,31 @@ package ui;
 public class w implements fj.b {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f51558c = new Object();
+    private static final Object f51606c = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Object f51559a = f51558c;
+    private volatile Object f51607a = f51606c;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile fj.b f51560b;
+    private volatile fj.b f51608b;
 
     public w(fj.b bVar) {
-        this.f51560b = bVar;
+        this.f51608b = bVar;
     }
 
     @Override // fj.b
     public Object get() {
         Object obj;
-        Object obj2 = this.f51559a;
-        Object obj3 = f51558c;
+        Object obj2 = this.f51607a;
+        Object obj3 = f51606c;
         if (obj2 == obj3) {
             synchronized (this) {
                 try {
-                    obj = this.f51559a;
+                    obj = this.f51607a;
                     if (obj == obj3) {
-                        obj = this.f51560b.get();
-                        this.f51559a = obj;
-                        this.f51560b = null;
+                        obj = this.f51608b.get();
+                        this.f51607a = obj;
+                        this.f51608b = null;
                     }
                 } catch (Throwable th2) {
                     throw th2;

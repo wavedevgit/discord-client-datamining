@@ -6,7 +6,7 @@ import yi.c;
 final class qb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qb f40210a = new qb();
+    static final qb f40258a = new qb();
 
     static {
         c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);

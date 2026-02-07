@@ -5,92 +5,92 @@ import ij.d;
 final class a extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f26748a;
+    private final String f26796a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26749b;
+    private final String f26797b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f26750c;
+    private final String f26798c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f26751d;
+    private final f f26799d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.b f26752e;
+    private final d.b f26800e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class b extends d.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f26753a;
+        private String f26801a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f26754b;
+        private String f26802b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f26755c;
+        private String f26803c;
 
         /* renamed from: d  reason: collision with root package name */
-        private f f26756d;
+        private f f26804d;
 
         /* renamed from: e  reason: collision with root package name */
-        private d.b f26757e;
+        private d.b f26805e;
 
         @Override // ij.d.a
         public d a() {
-            return new a(this.f26753a, this.f26754b, this.f26755c, this.f26756d, this.f26757e);
+            return new a(this.f26801a, this.f26802b, this.f26803c, this.f26804d, this.f26805e);
         }
 
         @Override // ij.d.a
         public d.a b(f fVar) {
-            this.f26756d = fVar;
+            this.f26804d = fVar;
             return this;
         }
 
         @Override // ij.d.a
         public d.a c(String str) {
-            this.f26754b = str;
+            this.f26802b = str;
             return this;
         }
 
         @Override // ij.d.a
         public d.a d(String str) {
-            this.f26755c = str;
+            this.f26803c = str;
             return this;
         }
 
         @Override // ij.d.a
         public d.a e(d.b bVar) {
-            this.f26757e = bVar;
+            this.f26805e = bVar;
             return this;
         }
 
         @Override // ij.d.a
         public d.a f(String str) {
-            this.f26753a = str;
+            this.f26801a = str;
             return this;
         }
     }
 
     @Override // ij.d
     public f b() {
-        return this.f26751d;
+        return this.f26799d;
     }
 
     @Override // ij.d
     public String c() {
-        return this.f26749b;
+        return this.f26797b;
     }
 
     @Override // ij.d
     public String d() {
-        return this.f26750c;
+        return this.f26798c;
     }
 
     @Override // ij.d
     public d.b e() {
-        return this.f26752e;
+        return this.f26800e;
     }
 
     public boolean equals(Object obj) {
@@ -99,15 +99,15 @@ final class a extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            String str = this.f26748a;
+            String str = this.f26796a;
             if (str != null ? str.equals(dVar.f()) : dVar.f() == null) {
-                String str2 = this.f26749b;
+                String str2 = this.f26797b;
                 if (str2 != null ? str2.equals(dVar.c()) : dVar.c() == null) {
-                    String str3 = this.f26750c;
+                    String str3 = this.f26798c;
                     if (str3 != null ? str3.equals(dVar.d()) : dVar.d() == null) {
-                        f fVar = this.f26751d;
+                        f fVar = this.f26799d;
                         if (fVar != null ? fVar.equals(dVar.b()) : dVar.b() == null) {
-                            d.b bVar = this.f26752e;
+                            d.b bVar = this.f26800e;
                             if (bVar != null ? bVar.equals(dVar.e()) : dVar.e() == null) {
                                 return true;
                             }
@@ -121,7 +121,7 @@ final class a extends d {
 
     @Override // ij.d
     public String f() {
-        return this.f26748a;
+        return this.f26796a;
     }
 
     public int hashCode() {
@@ -129,7 +129,7 @@ final class a extends d {
         int hashCode2;
         int hashCode3;
         int hashCode4;
-        String str = this.f26748a;
+        String str = this.f26796a;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
@@ -137,28 +137,28 @@ final class a extends d {
             hashCode = str.hashCode();
         }
         int i11 = (hashCode ^ 1000003) * 1000003;
-        String str2 = this.f26749b;
+        String str2 = this.f26797b;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
         int i12 = (i11 ^ hashCode2) * 1000003;
-        String str3 = this.f26750c;
+        String str3 = this.f26798c;
         if (str3 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str3.hashCode();
         }
         int i13 = (i12 ^ hashCode3) * 1000003;
-        f fVar = this.f26751d;
+        f fVar = this.f26799d;
         if (fVar == null) {
             hashCode4 = 0;
         } else {
             hashCode4 = fVar.hashCode();
         }
         int i14 = (i13 ^ hashCode4) * 1000003;
-        d.b bVar = this.f26752e;
+        d.b bVar = this.f26800e;
         if (bVar != null) {
             i10 = bVar.hashCode();
         }
@@ -166,14 +166,14 @@ final class a extends d {
     }
 
     public String toString() {
-        return "InstallationResponse{uri=" + this.f26748a + ", fid=" + this.f26749b + ", refreshToken=" + this.f26750c + ", authToken=" + this.f26751d + ", responseCode=" + this.f26752e + "}";
+        return "InstallationResponse{uri=" + this.f26796a + ", fid=" + this.f26797b + ", refreshToken=" + this.f26798c + ", authToken=" + this.f26799d + ", responseCode=" + this.f26800e + "}";
     }
 
     private a(String str, String str2, String str3, f fVar, d.b bVar) {
-        this.f26748a = str;
-        this.f26749b = str2;
-        this.f26750c = str3;
-        this.f26751d = fVar;
-        this.f26752e = bVar;
+        this.f26796a = str;
+        this.f26797b = str2;
+        this.f26798c = str3;
+        this.f26799d = fVar;
+        this.f26800e = bVar;
     }
 }

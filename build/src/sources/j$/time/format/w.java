@@ -10,14 +10,14 @@ public final class w {
     public static final w NOT_NEGATIVE;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ w[] f29491a;
+    public static final /* synthetic */ w[] f29539a;
 
     public static w valueOf(String str) {
         return (w) Enum.valueOf(w.class, str);
     }
 
     public static w[] values() {
-        return (w[]) f29491a.clone();
+        return (w[]) f29539a.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.format.w, java.lang.Enum] */
@@ -36,6 +36,6 @@ public final class w {
         NOT_NEGATIVE = r32;
         ?? r42 = new Enum("EXCEEDS_PAD", 4);
         EXCEEDS_PAD = r42;
-        f29491a = new w[]{r02, r12, r22, r32, r42};
+        f29539a = new w[]{r02, r12, r22, r32, r42};
     }
 }

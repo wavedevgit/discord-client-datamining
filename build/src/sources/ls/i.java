@@ -17,25 +17,25 @@ import ls.h;
 public abstract class i implements ls.h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d f36597e = new d(null);
+    public static final d f36645e = new d(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Member f36598a;
+    private final Member f36646a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Type f36599b;
+    private final Type f36647b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Class f36600c;
+    private final Class f36648c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f36601d;
+    private final List f36649d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends i implements ls.g {
 
         /* renamed from: f  reason: collision with root package name */
-        private final Object f36602f;
+        private final Object f36650f;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -72,7 +72,7 @@ public abstract class i implements ls.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f36602f = r9
+                r1.f36650f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: ls.i.a.<init>(java.lang.reflect.Constructor, java.lang.Object):void");
@@ -83,7 +83,7 @@ public abstract class i implements ls.h {
             Intrinsics.checkNotNullParameter(args, "args");
             d(args);
             SpreadBuilder spreadBuilder = new SpreadBuilder(3);
-            spreadBuilder.add(this.f36602f);
+            spreadBuilder.add(this.f36650f);
             spreadBuilder.addSpread(args);
             spreadBuilder.add(null);
             return ((Constructor) b()).newInstance(spreadBuilder.toArray(new Object[spreadBuilder.size()]));
@@ -146,7 +146,7 @@ public abstract class i implements ls.h {
     public static final class c extends i implements ls.g {
 
         /* renamed from: f  reason: collision with root package name */
-        private final Object f36603f;
+        private final Object f36651f;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -169,7 +169,7 @@ public abstract class i implements ls.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f36603f = r9
+                r1.f36651f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: ls.i.c.<init>(java.lang.reflect.Constructor, java.lang.Object):void");
@@ -180,7 +180,7 @@ public abstract class i implements ls.h {
             Intrinsics.checkNotNullParameter(args, "args");
             d(args);
             SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-            spreadBuilder.add(this.f36603f);
+            spreadBuilder.add(this.f36651f);
             spreadBuilder.addSpread(args);
             return ((Constructor) b()).newInstance(spreadBuilder.toArray(new Object[spreadBuilder.size()]));
         }
@@ -251,20 +251,20 @@ public abstract class i implements ls.h {
         public static final class a extends f implements ls.g {
 
             /* renamed from: f  reason: collision with root package name */
-            private final Object f36604f;
+            private final Object f36652f;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Field field, Object obj) {
                 super(field, false, null);
                 Intrinsics.checkNotNullParameter(field, "field");
-                this.f36604f = obj;
+                this.f36652f = obj;
             }
 
             @Override // ls.i.f, ls.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                return ((Field) b()).get(this.f36604f);
+                return ((Field) b()).get(this.f36652f);
             }
         }
 
@@ -365,27 +365,27 @@ public abstract class i implements ls.h {
     public static abstract class g extends i {
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f36605f;
+        private final boolean f36653f;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends g implements ls.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object f36606g;
+            private final Object f36654g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Field field, boolean z10, Object obj) {
                 super(field, z10, false, null);
                 Intrinsics.checkNotNullParameter(field, "field");
-                this.f36606g = obj;
+                this.f36654g = obj;
             }
 
             @Override // ls.i.g, ls.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                ((Field) b()).set(this.f36606g, kotlin.collections.i.U(args));
-                return Unit.f32008a;
+                ((Field) b()).set(this.f36654g, kotlin.collections.i.U(args));
+                return Unit.f32056a;
             }
         }
 
@@ -402,7 +402,7 @@ public abstract class i implements ls.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 ((Field) b()).set(null, kotlin.collections.i.w0(args));
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -456,14 +456,14 @@ public abstract class i implements ls.h {
                 obj = null;
             }
             field.set(obj, kotlin.collections.i.w0(args));
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // ls.i
         public void d(Object[] args) {
             Intrinsics.checkNotNullParameter(args, "args");
             super.d(args);
-            if (this.f36605f && kotlin.collections.i.w0(args) == null) {
+            if (this.f36653f && kotlin.collections.i.w0(args) == null) {
                 throw new IllegalArgumentException("null is not allowed as a value for this property.");
             }
         }
@@ -497,7 +497,7 @@ public abstract class i implements ls.h {
                 r1 = r7
                 r2 = r8
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f36605f = r9
+                r1.f36653f = r9
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: ls.i.g.<init>(java.lang.reflect.Field, boolean, boolean):void");
@@ -508,26 +508,26 @@ public abstract class i implements ls.h {
     public static abstract class h extends i {
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f36607f;
+        private final boolean f36655f;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends h implements ls.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object f36608g;
+            private final Object f36656g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Method method, Object obj) {
                 super(method, false, null, 4, null);
                 Intrinsics.checkNotNullParameter(method, "method");
-                this.f36608g = obj;
+                this.f36656g = obj;
             }
 
             @Override // ls.h
             public Object call(Object[] args) {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
-                return g(this.f36608g, args);
+                return g(this.f36656g, args);
             }
         }
 
@@ -551,10 +551,10 @@ public abstract class i implements ls.h {
         public static final class c extends h implements ls.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final boolean f36609g;
+            private final boolean f36657g;
 
             /* renamed from: h  reason: collision with root package name */
-            private final Object f36610h;
+            private final Object f36658h;
 
             /* JADX WARN: Illegal instructions before constructor call */
             /*
@@ -582,8 +582,8 @@ public abstract class i implements ls.h {
                     java.lang.reflect.Type[] r0 = (java.lang.reflect.Type[]) r0
                     r1 = 0
                     r4.<init>(r5, r2, r0, r1)
-                    r4.f36609g = r6
-                    r4.f36610h = r7
+                    r4.f36657g = r6
+                    r4.f36658h = r7
                     return
                 */
                 throw new UnsupportedOperationException("Method not decompiled: ls.i.h.c.<init>(java.lang.reflect.Method, boolean, java.lang.Object):void");
@@ -594,17 +594,17 @@ public abstract class i implements ls.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-                spreadBuilder.add(this.f36610h);
+                spreadBuilder.add(this.f36658h);
                 spreadBuilder.addSpread(args);
                 return g(null, spreadBuilder.toArray(new Object[spreadBuilder.size()]));
             }
 
             public final Object h() {
-                return this.f36610h;
+                return this.f36658h;
             }
 
             public final boolean i() {
-                return this.f36609g;
+                return this.f36657g;
             }
         }
 
@@ -612,7 +612,7 @@ public abstract class i implements ls.h {
         public static final class d extends h implements ls.g {
 
             /* renamed from: g  reason: collision with root package name */
-            private final Object[] f36611g;
+            private final Object[] f36659g;
 
             /* JADX WARN: Illegal instructions before constructor call */
             /*
@@ -638,7 +638,7 @@ public abstract class i implements ls.h {
                     java.lang.reflect.Type[] r0 = (java.lang.reflect.Type[]) r0
                     r2 = 0
                     r3.<init>(r4, r1, r0, r2)
-                    r3.f36611g = r5
+                    r3.f36659g = r5
                     return
                 */
                 throw new UnsupportedOperationException("Method not decompiled: ls.i.h.d.<init>(java.lang.reflect.Method, java.lang.Object[]):void");
@@ -649,17 +649,17 @@ public abstract class i implements ls.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 SpreadBuilder spreadBuilder = new SpreadBuilder(2);
-                spreadBuilder.addSpread(this.f36611g);
+                spreadBuilder.addSpread(this.f36659g);
                 spreadBuilder.addSpread(args);
                 return g(null, spreadBuilder.toArray(new Object[spreadBuilder.size()]));
             }
 
             public final Object[] h() {
-                return this.f36611g;
+                return this.f36659g;
             }
 
             public final int i() {
-                return this.f36611g.length;
+                return this.f36659g.length;
             }
         }
 
@@ -732,8 +732,8 @@ public abstract class i implements ls.h {
         protected final Object g(Object obj, Object[] args) {
             Intrinsics.checkNotNullParameter(args, "args");
             Object invoke = ((Method) b()).invoke(obj, Arrays.copyOf(args, args.length));
-            if (this.f36607f) {
-                return Unit.f32008a;
+            if (this.f36655f) {
+                return Unit.f32056a;
             }
             return invoke;
         }
@@ -770,7 +770,7 @@ public abstract class i implements ls.h {
                 java.lang.reflect.Type r7 = r6.getReturnType()
                 java.lang.Class r8 = java.lang.Void.TYPE
                 boolean r7 = kotlin.jvm.internal.Intrinsics.areEqual(r7, r8)
-                r0.f36607f = r7
+                r0.f36655f = r7
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: ls.i.h.<init>(java.lang.reflect.Method, boolean, java.lang.reflect.Type[]):void");
@@ -783,12 +783,12 @@ public abstract class i implements ls.h {
 
     @Override // ls.h
     public List a() {
-        return this.f36601d;
+        return this.f36649d;
     }
 
     @Override // ls.h
     public final Member b() {
-        return this.f36598a;
+        return this.f36646a;
     }
 
     @Override // ls.h
@@ -801,19 +801,19 @@ public abstract class i implements ls.h {
     }
 
     protected final void e(Object obj) {
-        if (obj != null && this.f36598a.getDeclaringClass().isInstance(obj)) {
+        if (obj != null && this.f36646a.getDeclaringClass().isInstance(obj)) {
             return;
         }
         throw new IllegalArgumentException("An object member requires the object instance passed as the first argument.");
     }
 
     public final Class f() {
-        return this.f36600c;
+        return this.f36648c;
     }
 
     @Override // ls.h
     public final Type getReturnType() {
-        return this.f36599b;
+        return this.f36647b;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0025, code lost:
@@ -827,9 +827,9 @@ public abstract class i implements ls.h {
         /*
             r0 = this;
             r0.<init>()
-            r0.f36598a = r1
-            r0.f36599b = r2
-            r0.f36600c = r3
+            r0.f36646a = r1
+            r0.f36647b = r2
+            r0.f36648c = r3
             if (r3 == 0) goto L27
             kotlin.jvm.internal.SpreadBuilder r1 = new kotlin.jvm.internal.SpreadBuilder
             r2 = 2
@@ -844,7 +844,7 @@ public abstract class i implements ls.h {
         L27:
             java.util.List r1 = kotlin.collections.i.R0(r4)
         L2b:
-            r0.f36601d = r1
+            r0.f36649d = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: ls.i.<init>(java.lang.reflect.Member, java.lang.reflect.Type, java.lang.Class, java.lang.reflect.Type[]):void");

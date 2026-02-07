@@ -6,37 +6,37 @@ import yi.c;
 final class d6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d6 f44032a = new d6();
+    static final d6 f44080a = new d6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44033b;
+    private static final yi.c f44081b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44034c;
+    private static final yi.c f44082c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44035d;
+    private static final yi.c f44083d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44036e;
+    private static final yi.c f44084e;
 
     static {
         c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44033b = a10.b(s1Var.b()).a();
+        f44081b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("type");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44034c = a11.b(s1Var2.b()).a();
+        f44082c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("version");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44035d = a12.b(s1Var3.b()).a();
+        f44083d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("featureLevel");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44036e = a13.b(s1Var4.b()).a();
+        f44084e = a13.b(s1Var4.b()).a();
     }
 
     private d6() {

@@ -225,7 +225,7 @@ public final class m {
 
     public static final Unit i(m5 m5Var) {
         m5Var.c();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final List k(List list, Map map, Context context, boolean z10, List list2, m5 m5Var) {
@@ -502,7 +502,7 @@ public final class m {
         Intrinsics.checkNotNull(context);
         h h10 = h(this, context, uiScreen, false, z10, false, 16, null);
         if (uiScreen.f() == StyleElements.PositionType.CENTER) {
-            binding.f50795c.setFillViewport(true);
+            binding.f50843c.setFillViewport(true);
             h10.a().setLayoutParams(new FrameLayout.LayoutParams(-1, -2));
             View a10 = h10.a();
             ViewGroup.LayoutParams layoutParams = a10.getLayoutParams();
@@ -514,12 +514,12 @@ public final class m {
                 throw new NullPointerException("null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
             }
         }
-        binding.f50794b.addView(h10.a());
+        binding.f50842b.addView(h10.a());
         ConstraintLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         bq.f.d(root, false, false, false, false, 13, null);
         if (h10.b() != null) {
-            binding.f50796d.addView(h10.b());
+            binding.f50844d.addView(h10.b());
             bq.f.d(h10.b(), false, false, false, false, 2, null);
         }
         if (function2 != null) {
@@ -527,7 +527,7 @@ public final class m {
         }
         Integer e10 = uiScreen.e();
         if (e10 != null) {
-            binding.f50797e.setControlsColor(e10.intValue());
+            binding.f50845e.setControlsColor(e10.intValue());
         }
         return h10;
     }

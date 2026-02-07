@@ -15,10 +15,10 @@ import om.p;
 public final class b {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f47900b = new a(null);
+    public static final a f47948b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private p f47901a;
+    private p f47949a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -32,25 +32,25 @@ public final class b {
 
     public final vm.c a(ThemedReactContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        if (this.f47901a == null) {
+        if (this.f47949a == null) {
             p pVar = new p(reactContext);
-            this.f47901a = pVar;
+            this.f47949a = pVar;
             pVar.b();
         }
         return new vm.c(reactContext);
     }
 
     public final Map b() {
-        f.a aVar = f.f31746f;
+        f.a aVar = f.f31794f;
         return MapBuilder.of(aVar.c().d(), MapBuilder.of("registrationName", "onKeyboardMove"), aVar.d().d(), MapBuilder.of("registrationName", "onKeyboardMoveStart"), aVar.a().d(), MapBuilder.of("registrationName", "onKeyboardMoveEnd"), aVar.b().d(), MapBuilder.of("registrationName", "onKeyboardMoveInteractive"), "topFocusedInputLayoutChanged", MapBuilder.of("registrationName", "onFocusedInputLayoutChanged"), "topFocusedInputTextChanged", MapBuilder.of("registrationName", "onFocusedInputTextChanged"), "topFocusedInputSelectionChanged", MapBuilder.of("registrationName", "onFocusedInputSelectionChanged"));
     }
 
     public final void c() {
-        p pVar = this.f47901a;
+        p pVar = this.f47949a;
         if (pVar != null) {
             pVar.d();
         }
-        this.f47901a = null;
+        this.f47949a = null;
     }
 
     public final void d(vm.c view) {

@@ -19,14 +19,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var3 = var3.Platform;
     var1 = function arg0() {
-        _fun12897: for (var _fun12897_ip = 0;;) switch (_fun12897_ip) {
+        _fun12899: for (var _fun12899_ip = 0;;) switch (_fun12899_ip) {
             case 0:
                 var0 = arg0;
                 var2 = 'boolean';
                 var1 = typeof var0;
                 if (!(var2 !== var1)) {
-                    _fun12897_ip = 52;
-                    continue _fun12897
+                    _fun12899_ip = 52;
+                    continue _fun12899
                 }
             case 14:
                 var3 = _closure1_slot0;

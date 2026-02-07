@@ -177,7 +177,7 @@ public final class w implements i0 {
                             throw new IllegalStateException();
                         }
                     } else {
-                        if (d(h0Var, this.f20688b.f38921a, Math.min(10, this.f20695i)) && d(h0Var, null, this.f20695i)) {
+                        if (d(h0Var, this.f20688b.f38969a, Math.min(10, this.f20695i)) && d(h0Var, null, this.f20695i)) {
                             f();
                             if (this.f20697k) {
                                 i13 = 4;
@@ -187,7 +187,7 @@ public final class w implements i0 {
                             g(3);
                         }
                     }
-                } else if (d(h0Var, this.f20688b.f38921a, 9)) {
+                } else if (d(h0Var, this.f20688b.f38969a, 9)) {
                     if (e()) {
                         i13 = 2;
                     }

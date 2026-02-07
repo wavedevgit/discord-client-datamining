@@ -1,155 +1,104 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0() {
-        _fun48549: for (var _fun48549_ip = 0;;) switch (_fun48549_ip) {
-            case 0:
-                var1 = arg0;
-                var3 = _closure1_slot0;
-                var2 = var3.exec;
-                var4 = var2.bind(var3)(var1);
-                if (var4) {
-                    _fun48549_ip = 71;
-                    continue _fun48549
-                }
-            case 24:
-                var2 = global;
-                var5 = var2.console;
-                var3 = var5.warn;
-                var2 = var2.HermesInternal;
-                var7 = var2.concat;
-                var6 = '"';
-                var2 = '" is not a valid percentage rgb/rgba color';
-                var2 = var7.bind(var6)(var1, var2);
-                var2 = var3.bind(var5)(var2);
-                return var1;
-            case 71:
-                var1 = 1;
-                var5 = var4[var1];
-                var1 = 3;
-                var3 = var4[var1];
-                var1 = 5;
-                var1 = var4[var1];
-                var2 = 7;
-                var7 = var4[var2];
-                var2 = _closure1_slot1;
-                var4 = undefined;
-                var8 = var2.bind(var4)(var5);
-                var2 = _closure1_slot1;
-                var11 = var2.bind(var4)(var3);
-                var0 = _closure1_slot1;
-                var9 = var0.bind(var4)(var1);
-                var1 = global;
-                var0 = var1.HermesInternal;
-                var2 = var0.concat;
-                var14 = '';
-                var6 = ', ';
-                var13 = var8;
-                var12 = var6;
-                var10 = var6;
-                var5 = var14[var2](var13, var12, var11, var10, var9, var8);
-                if (var7) {
-                    _fun48549_ip = 196;
-                    continue _fun48549
-                }
-            case 167:
-                var0 = var1.HermesInternal;
-                var3 = var0.concat;
-                var2 = 'rgb(';
-                var0 = ')';
-                var0 = var3.bind(var2)(var5, var0);
-                _fun48549_ip = 271;
-                continue _fun48549;
-            case 196:
-                var3 = var7.endsWith;
-                var2 = '%';
-                var2 = var3.bind(var7)(var2);
-                var3 = var1.parseFloat;
-                var3 = var3.bind(var4)(var7);
-                if (var2) {
-                    _fun48549_ip = 230;
-                    continue _fun48549
-                }
-            case 225:
-                var4 = var3;
-                _fun48549_ip = 237;
-                continue _fun48549;
-            case 230:
-                var2 = 100;
-                var4 = var3 / var2;
-            case 237:
-                var1 = var1.HermesInternal;
-                var3 = var1.concat;
-                var14 = 'rgba(';
-                var10 = ')';
-                var13 = var5;
-                var12 = var6;
-                var11 = var4;
-                var0 = var14[var3](var13, var12, var11, var10, var9);
-            case 271:
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = /^rgba?\(\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*(?:,\s*(1|0(\.\d+)?|100%|\d{1,2}(\.\d+)?%)\s*)?\)$/;
-    var _closure1_slot0 = var2;
-    var3 = function arg0() {
-        var0 = global;
-        var2 = var0.Math;
-        var1 = var2.round;
-        var4 = var0.parseFloat;
-        var3 = undefined;
-        var0 = arg0;
-        var3 = var4.bind(var3)(var0);
-        var0 = 2.55;
-        var0 = var0 * var3;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot1 = var3;
-    var1.RGB_RGBA_PATTERN = var2;
-    var0 = function arg0() {
-        _fun48551: for (var _fun48551_ip = 0;;) switch (_fun48551_ip) {
-            case 0:
-                var0 = arg0;
-                var2 = 'string';
-                var1 = typeof var0;
-                if (!(var2 === var1)) {
-                    _fun48551_ip = 79;
-                    continue _fun48551
-                }
-            case 14:
-                var3 = var0.replace;
-                var2 = /\s/g;
-                var1 = '';
-                var4 = var3.bind(var0)(var2, var1);
-                var3 = _closure1_slot0;
-                var1 = var3.test;
-                var3 = var1.bind(var3)(var4);
-                var1 = var0;
-                if (!var3) {
-                    _fun48551_ip = 77;
-                    continue _fun48551
-                }
-            case 66:
-                var3 = _closure1_slot2;
-                var2 = undefined;
-                var1 = var3.bind(var2)(var4);
-            case 77:
-                return var1;
-            case 79:
-                return var0;
-        }
-    };
-    var1.convertPercentageColor = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    _fun48791: for (var _fun48791_ip = 0;;) switch (_fun48791_ip) {
+        case 0:
+            var2 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var2, var0, var1);
+            var0 = undefined;
+            var2.styles = var0;
+            var1 = dependencyMap;
+            var6 = 0;
+            var3 = var1[var6];
+            var1 = require;
+            var7 = var1.bind(var0)(var3);
+            var4 = var7.StyleSheet;
+            var3 = var4.create;
+            var1 = {};
+            var5 = {
+                'marginTop': 20,
+                'alignItems': 'center',
+                'position': 'absolute'
+            };
+            var1.stepNumber = var5;
+            var5 = {
+                'zIndex': 1,
+                'width': '100%'
+            };
+            var1.sliderMainContainer = var5;
+            var5 = {};
+            var8 = 40;
+            var5.height = var8;
+            var1.defaultSlideriOS = var5;
+            var5 = {};
+            var1.defaultSlider = var5;
+            var5 = {
+                'flex': 1,
+                'flexDirection': 'row',
+                'justifyContent': 'space-between',
+                'top': null,
+                'zIndex': 2
+            };
+            var7 = var7.Platform;
+            var8 = var7.OS;
+            var7 = 'ios';
+            if (!(var7 === var8)) {
+                _fun48791_ip = 171;
+                continue _fun48791
+            }
+        case 168:
+            var6 = 10;
+        case 171:
+            var5.top = var6;
+            var1.stepsIndicator = var5;
+            var5 = {
+                'alignItems': 'center',
+                'alignContent': 'center',
+                'alignSelf': 'center',
+                'justifyContent': 'center',
+                'position': 'absolute',
+                'zIndex': 3
+            };
+            var1.trackMarkContainer = var5;
+            var5 = {
+                'position': 'absolute',
+                'zIndex': 3,
+                'justifyContent': 'center',
+                'alignItems': 'center',
+                'alignContent': 'center'
+            };
+            var1.thumbImageContainer = var5;
+            var5 = {
+                'alignContent': 'center',
+                'alignItems': 'center',
+                'position': 'absolute'
+            };
+            var1.thumbImage = var5;
+            var5 = {
+                'alignItems': 'center',
+                'alignContent': 'center'
+            };
+            var1.stepIndicatorElement = var5;
+            var5 = {
+                'height': 20,
+                'width': 5,
+                'backgroundColor': '#CCCCCC'
+            };
+            var1.defaultIndicatorMarked = var5;
+            var5 = {
+                'height': 10,
+                'width': 2,
+                'backgroundColor': '#C0C0C0'
+            };
+            var1.defaultIndicatorIdle = var5;
+            var1 = var3.bind(var4)(var1);
+            var2.styles = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

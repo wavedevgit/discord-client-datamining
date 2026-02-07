@@ -9,15 +9,15 @@ import sa.k;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f56013a = new e();
+    public static final e f56061a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final o8.e f56014b;
+    public static final o8.e f56062b;
 
     static {
         o8.e c10 = o8.e.c(2, 7, 4, 5);
         Intrinsics.checkNotNullExpressionValue(c10, "of(...)");
-        f56014b = c10;
+        f56062b = c10;
     }
 
     private e() {
@@ -57,7 +57,7 @@ public final class e {
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         int a12 = encodedImage.a1();
-        o8.e eVar = f56014b;
+        o8.e eVar = f56062b;
         int indexOf = eVar.indexOf(Integer.valueOf(a12));
         if (indexOf >= 0) {
             if (!rotationOptions.j()) {
@@ -78,7 +78,7 @@ public final class e {
         if (!rotationOptions.i()) {
             return 0;
         }
-        int c10 = f56013a.c(encodedImage);
+        int c10 = f56061a.c(encodedImage);
         if (rotationOptions.j()) {
             return c10;
         }
@@ -96,7 +96,7 @@ public final class e {
         }
         int e10 = e(rotationOptions, encodedImage);
         boolean z11 = false;
-        if (f56014b.contains(Integer.valueOf(encodedImage.a1()))) {
+        if (f56062b.contains(Integer.valueOf(encodedImage.a1()))) {
             i10 = d(rotationOptions, encodedImage);
         } else {
             i10 = 0;
@@ -127,8 +127,8 @@ public final class e {
     public static final Matrix g(k encodedImage, RotationOptions rotationOptions) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
-        if (f56014b.contains(Integer.valueOf(encodedImage.a1()))) {
-            return f56013a.h(d(rotationOptions, encodedImage));
+        if (f56062b.contains(Integer.valueOf(encodedImage.a1()))) {
+            return f56061a.h(d(rotationOptions, encodedImage));
         }
         int e10 = e(rotationOptions, encodedImage);
         if (e10 != 0) {

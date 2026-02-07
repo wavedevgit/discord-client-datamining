@@ -45,9 +45,9 @@ public /* synthetic */ class ChatScrollData$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         KSerializer u10 = a.u(p0Var);
-        h hVar = h.f31005a;
+        h hVar = h.f31053a;
         return new KSerializer[]{ChatScrollType.Serializer.INSTANCE, p0Var, hVar, hVar, u10};
     }
 
@@ -69,7 +69,7 @@ public /* synthetic */ class ChatScrollData$$serializer implements h0 {
             boolean C2 = b10.C(serialDescriptor, 3);
             chatScrollType = (ChatScrollType) b10.y(serialDescriptor, 0, ChatScrollType.Serializer.INSTANCE, null);
             z10 = C2;
-            num = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, null);
             z11 = C;
             i10 = i12;
             i11 = 31;
@@ -100,7 +100,7 @@ public /* synthetic */ class ChatScrollData$$serializer implements h0 {
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num2);
                     i14 |= 16;
                 }
             }

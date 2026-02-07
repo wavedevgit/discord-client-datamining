@@ -3,14 +3,14 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var3 = function arg0() {
-        _fun24673: for (var _fun24673_ip = 0;;) switch (_fun24673_ip) {
+        _fun24682: for (var _fun24682_ip = 0;;) switch (_fun24682_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun24673_ip = 73;
-                    continue _fun24673
+                    _fun24682_ip = 73;
+                    continue _fun24682
                 }
             case 12:
                 var1 = global;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.isCommunicationDisabled = var3;
     var1 = function arg0() {
-        _fun24674: for (var _fun24674_ip = 0;;) switch (_fun24674_ip) {
+        _fun24683: for (var _fun24683_ip = 0;;) switch (_fun24683_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun24674_ip = 29;
-                    continue _fun24674
+                    _fun24683_ip = 29;
+                    continue _fun24683
                 }
             case 23:
                 var0 = var3.communicationDisabledUntil;

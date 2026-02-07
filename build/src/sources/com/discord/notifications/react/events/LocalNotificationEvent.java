@@ -29,7 +29,7 @@ public final class LocalNotificationEvent implements ReactEvent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {l.b(o.f48044e, new Function0() { // from class: s7.a
+    private static final Lazy[] $childSerializers = {l.b(o.f48092e, new Function0() { // from class: s7.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -63,7 +63,7 @@ public final class LocalNotificationEvent implements ReactEvent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new u0(n2Var, a.u(n2Var));
     }
 

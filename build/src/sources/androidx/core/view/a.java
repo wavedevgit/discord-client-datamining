@@ -180,7 +180,7 @@ public class a {
         if (!z10) {
             z10 = this.mOriginalDelegate.performAccessibilityAction(view, i10, bundle);
         }
-        if (!z10 && i10 == o1.e.f41325a && bundle != null) {
+        if (!z10 && i10 == o1.e.f41373a && bundle != null) {
             return b(bundle.getInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", -1), view);
         }
         return z10;

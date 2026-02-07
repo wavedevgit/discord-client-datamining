@@ -79,49 +79,49 @@ public final class m0 implements a0.e0 {
     private final h W;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0.w2 f45967d;
+    private final a0.w2 f46015d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r.n0 f45968e;
+    private final r.n0 f46016e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Executor f45969i;
+    private final Executor f46017i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ScheduledExecutorService f45970o;
+    private final ScheduledExecutorService f46018o;
 
     /* renamed from: p  reason: collision with root package name */
-    volatile i f45971p = i.INITIALIZED;
+    volatile i f46019p = i.INITIALIZED;
 
     /* renamed from: q  reason: collision with root package name */
-    private final a0.p1 f45972q;
+    private final a0.p1 f46020q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final n2 f45973r;
+    private final n2 f46021r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final u f45974s;
+    private final u f46022s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final j f45975t;
+    private final j f46023t;
 
     /* renamed from: u  reason: collision with root package name */
-    final s0 f45976u;
+    final s0 f46024u;
 
     /* renamed from: v  reason: collision with root package name */
-    CameraDevice f45977v;
+    CameraDevice f46025v;
 
     /* renamed from: w  reason: collision with root package name */
-    int f45978w;
+    int f46026w;
 
     /* renamed from: x  reason: collision with root package name */
-    z2 f45979x;
+    z2 f46027x;
 
     /* renamed from: y  reason: collision with root package name */
-    final AtomicInteger f45980y;
+    final AtomicInteger f46028y;
 
     /* renamed from: z  reason: collision with root package name */
-    c.a f45981z;
+    c.a f46029z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements q.f {
@@ -144,29 +144,29 @@ public final class m0 implements a0.e0 {
     public class b extends CameraDevice.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f45983a;
+        final /* synthetic */ c.a f46031a;
 
         b(c.a aVar) {
-            this.f45983a = aVar;
+            this.f46031a = aVar;
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onClosed(CameraDevice cameraDevice) {
             m0.this.U("openCameraConfigAndClose camera closed");
-            this.f45983a.c(null);
+            this.f46031a.c(null);
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onDisconnected(CameraDevice cameraDevice) {
             m0.this.U("openCameraConfigAndClose camera disconnected");
-            this.f45983a.c(null);
+            this.f46031a.c(null);
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onError(CameraDevice cameraDevice, int i10) {
             m0 m0Var = m0.this;
             m0Var.U("openCameraConfigAndClose camera error " + i10);
-            this.f45983a.c(null);
+            this.f46031a.c(null);
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
@@ -179,7 +179,7 @@ public final class m0 implements a0.e0 {
                 public final void run() {
                     cameraDevice.close();
                 }
-            }, m0.this.f45969i);
+            }, m0.this.f46017i);
         }
     }
 
@@ -188,16 +188,16 @@ public final class m0 implements a0.e0 {
     public class d implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ z2 f45987a;
+        final /* synthetic */ z2 f46035a;
 
         d(z2 z2Var) {
-            this.f45987a = z2Var;
+            this.f46035a = z2Var;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r22) {
-            if (m0.this.E.c() == 2 && m0.this.f45971p == i.OPENED) {
+            if (m0.this.E.c() == 2 && m0.this.f46019p == i.OPENED) {
                 m0.this.s0(i.CONFIGURED);
             }
         }
@@ -212,14 +212,14 @@ public final class m0 implements a0.e0 {
             } else if (th2 instanceof CancellationException) {
                 m0.this.U("Unable to configure camera cancelled");
             } else {
-                i iVar = m0.this.f45971p;
+                i iVar = m0.this.f46019p;
                 i iVar2 = i.OPENED;
                 if (iVar == iVar2) {
                     m0.this.t0(iVar2, q.a.b(4, th2));
                 }
                 x.y0.d("Camera2CameraImpl", "Unable to configure camera " + m0.this, th2);
                 m0 m0Var = m0.this;
-                if (m0Var.f45979x == this.f45987a) {
+                if (m0Var.f46027x == this.f46035a) {
                     m0Var.q0(false);
                 }
             }
@@ -231,31 +231,31 @@ public final class m0 implements a0.e0 {
     public final class e extends CameraManager.AvailabilityCallback implements l0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f45989a;
+        private final String f46037a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f45990b = true;
+        private boolean f46038b = true;
 
         e(String str) {
-            this.f45989a = str;
+            this.f46037a = str;
         }
 
         @Override // a0.l0.c
         public void a() {
-            if (m0.this.f45971p == i.PENDING_OPEN) {
+            if (m0.this.f46019p == i.PENDING_OPEN) {
                 m0.this.B0(false);
             }
         }
 
         boolean b() {
-            return this.f45990b;
+            return this.f46038b;
         }
 
         @Override // android.hardware.camera2.CameraManager.AvailabilityCallback
         public void onCameraAvailable(String str) {
-            if (this.f45989a.equals(str)) {
-                this.f45990b = true;
-                if (m0.this.f45971p == i.PENDING_OPEN) {
+            if (this.f46037a.equals(str)) {
+                this.f46038b = true;
+                if (m0.this.f46019p == i.PENDING_OPEN) {
                     m0.this.B0(false);
                 }
             }
@@ -263,10 +263,10 @@ public final class m0 implements a0.e0 {
 
         @Override // android.hardware.camera2.CameraManager.AvailabilityCallback
         public void onCameraUnavailable(String str) {
-            if (!this.f45989a.equals(str)) {
+            if (!this.f46037a.equals(str)) {
                 return;
             }
-            this.f45990b = false;
+            this.f46038b = false;
         }
     }
 
@@ -277,7 +277,7 @@ public final class m0 implements a0.e0 {
 
         @Override // a0.l0.b
         public void a() {
-            if (m0.this.f45971p == i.OPENED) {
+            if (m0.this.f46019p == i.OPENED) {
                 m0.this.l0();
             }
         }
@@ -319,32 +319,32 @@ public final class m0 implements a0.e0 {
     public final class j extends CameraDevice.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Executor f46010a;
+        private final Executor f46058a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ScheduledExecutorService f46011b;
+        private final ScheduledExecutorService f46059b;
 
         /* renamed from: c  reason: collision with root package name */
-        private b f46012c;
+        private b f46060c;
 
         /* renamed from: d  reason: collision with root package name */
-        ScheduledFuture f46013d;
+        ScheduledFuture f46061d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final a f46014e;
+        private final a f46062e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final long f46016a;
+            private final long f46064a;
 
             /* renamed from: b  reason: collision with root package name */
-            private long f46017b = -1;
+            private long f46065b = -1;
 
             a(long j10) {
-                this.f46016a = j10;
+                this.f46064a = j10;
             }
 
             boolean a() {
@@ -357,10 +357,10 @@ public final class m0 implements a0.e0 {
 
             long b() {
                 long uptimeMillis = SystemClock.uptimeMillis();
-                if (this.f46017b == -1) {
-                    this.f46017b = uptimeMillis;
+                if (this.f46065b == -1) {
+                    this.f46065b = uptimeMillis;
                 }
-                return uptimeMillis - this.f46017b;
+                return uptimeMillis - this.f46065b;
             }
 
             int c() {
@@ -379,13 +379,13 @@ public final class m0 implements a0.e0 {
 
             int d() {
                 if (!j.this.f()) {
-                    long j10 = this.f46016a;
+                    long j10 = this.f46064a;
                     if (j10 <= 0) {
                         return 10000;
                     }
                     return Math.min((int) j10, 10000);
                 }
-                long j11 = this.f46016a;
+                long j11 = this.f46064a;
                 if (j11 <= 0) {
                     return 1800000;
                 }
@@ -393,7 +393,7 @@ public final class m0 implements a0.e0 {
             }
 
             void e() {
-                this.f46017b = -1L;
+                this.f46065b = -1L;
             }
         }
 
@@ -402,19 +402,19 @@ public final class m0 implements a0.e0 {
         public class b implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            private Executor f46019d;
+            private Executor f46067d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f46020e = false;
+            private boolean f46068e = false;
 
             b(Executor executor) {
-                this.f46019d = executor;
+                this.f46067d = executor;
             }
 
             public static /* synthetic */ void a(b bVar) {
                 boolean z10;
-                if (!bVar.f46020e) {
-                    if (m0.this.f45971p != i.REOPENING && m0.this.f45971p != i.REOPENING_QUIRK) {
+                if (!bVar.f46068e) {
+                    if (m0.this.f46019p != i.REOPENING && m0.this.f46019p != i.REOPENING_QUIRK) {
                         z10 = false;
                     } else {
                         z10 = true;
@@ -429,12 +429,12 @@ public final class m0 implements a0.e0 {
             }
 
             void b() {
-                this.f46020e = true;
+                this.f46068e = true;
             }
 
             @Override // java.lang.Runnable
             public void run() {
-                this.f46019d.execute(new Runnable() { // from class: q.q0
+                this.f46067d.execute(new Runnable() { // from class: q.q0
                     @Override // java.lang.Runnable
                     public final void run() {
                         m0.j.b.a(m0.j.b.this);
@@ -444,20 +444,20 @@ public final class m0 implements a0.e0 {
         }
 
         j(Executor executor, ScheduledExecutorService scheduledExecutorService, long j10) {
-            this.f46010a = executor;
-            this.f46011b = scheduledExecutorService;
-            this.f46014e = new a(j10);
+            this.f46058a = executor;
+            this.f46059b = scheduledExecutorService;
+            this.f46062e = new a(j10);
         }
 
         private void b(CameraDevice cameraDevice, int i10) {
             boolean z10;
             int i11;
-            if (m0.this.f45971p != i.OPENING && m0.this.f45971p != i.OPENED && m0.this.f45971p != i.CONFIGURED && m0.this.f45971p != i.REOPENING && m0.this.f45971p != i.REOPENING_QUIRK) {
+            if (m0.this.f46019p != i.OPENING && m0.this.f46019p != i.OPENED && m0.this.f46019p != i.CONFIGURED && m0.this.f46019p != i.REOPENING && m0.this.f46019p != i.REOPENING_QUIRK) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            b2.e.j(z10, "Attempt to handle open error from non open state: " + m0.this.f45971p);
+            b2.e.j(z10, "Attempt to handle open error from non open state: " + m0.this.f46019p);
             if (i10 != 1 && i10 != 2 && i10 != 4) {
                 x.y0.c("Camera2CameraImpl", "Error observed on open (or opening) camera device " + cameraDevice.getId() + ": " + m0.a0(i10) + " closing camera.");
                 if (i10 == 3) {
@@ -476,7 +476,7 @@ public final class m0 implements a0.e0 {
         private void c(int i10) {
             boolean z10;
             int i11 = 1;
-            if (m0.this.f45978w != 0) {
+            if (m0.this.f46026w != 0) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -494,49 +494,49 @@ public final class m0 implements a0.e0 {
         }
 
         boolean a() {
-            if (this.f46013d == null) {
+            if (this.f46061d == null) {
                 return false;
             }
             m0 m0Var = m0.this;
-            m0Var.U("Cancelling scheduled re-open: " + this.f46012c);
-            this.f46012c.b();
-            this.f46012c = null;
-            this.f46013d.cancel(false);
-            this.f46013d = null;
+            m0Var.U("Cancelling scheduled re-open: " + this.f46060c);
+            this.f46060c.b();
+            this.f46060c = null;
+            this.f46061d.cancel(false);
+            this.f46061d = null;
             return true;
         }
 
         void d() {
-            this.f46014e.e();
+            this.f46062e.e();
         }
 
         void e() {
             boolean z10;
             boolean z11 = true;
-            if (this.f46012c == null) {
+            if (this.f46060c == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.i(z10);
-            if (this.f46013d != null) {
+            if (this.f46061d != null) {
                 z11 = false;
             }
             b2.e.i(z11);
-            if (this.f46014e.a()) {
-                this.f46012c = new b(this.f46010a);
-                m0.this.U("Attempting camera re-open in " + this.f46014e.c() + "ms: " + this.f46012c + " activeResuming = " + m0.this.R);
-                this.f46013d = this.f46011b.schedule(this.f46012c, (long) this.f46014e.c(), TimeUnit.MILLISECONDS);
+            if (this.f46062e.a()) {
+                this.f46060c = new b(this.f46058a);
+                m0.this.U("Attempting camera re-open in " + this.f46062e.c() + "ms: " + this.f46060c + " activeResuming = " + m0.this.R);
+                this.f46061d = this.f46059b.schedule(this.f46060c, (long) this.f46062e.c(), TimeUnit.MILLISECONDS);
                 return;
             }
-            x.y0.c("Camera2CameraImpl", "Camera reopening attempted for " + this.f46014e.d() + "ms without success.");
+            x.y0.c("Camera2CameraImpl", "Camera reopening attempted for " + this.f46062e.d() + "ms without success.");
             m0.this.u0(i.PENDING_OPEN, null, false);
         }
 
         boolean f() {
             m0 m0Var = m0.this;
             if (m0Var.R) {
-                int i10 = m0Var.f45978w;
+                int i10 = m0Var.f46026w;
                 if (i10 == 1 || i10 == 2) {
                     return true;
                 }
@@ -549,20 +549,20 @@ public final class m0 implements a0.e0 {
         public void onClosed(CameraDevice cameraDevice) {
             boolean z10;
             m0.this.U("CameraDevice.onClosed()");
-            if (m0.this.f45977v == null) {
+            if (m0.this.f46025v == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "Unexpected onClose callback on camera device: " + cameraDevice);
-            int ordinal = m0.this.f45971p.ordinal();
+            int ordinal = m0.this.f46019p.ordinal();
             if (ordinal != 1 && ordinal != 4) {
                 if (ordinal != 5 && ordinal != 6) {
-                    throw new IllegalStateException("Camera closed while in state: " + m0.this.f45971p);
+                    throw new IllegalStateException("Camera closed while in state: " + m0.this.f46019p);
                 }
                 m0 m0Var = m0.this;
-                if (m0Var.f45978w != 0) {
-                    m0Var.U("Camera closed due to error: " + m0.a0(m0.this.f45978w));
+                if (m0Var.f46026w != 0) {
+                    m0Var.U("Camera closed due to error: " + m0.a0(m0.this.f46026w));
                     e();
                     return;
                 }
@@ -582,10 +582,10 @@ public final class m0 implements a0.e0 {
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onError(CameraDevice cameraDevice, int i10) {
             m0 m0Var = m0.this;
-            m0Var.f45977v = cameraDevice;
-            m0Var.f45978w = i10;
+            m0Var.f46025v = cameraDevice;
+            m0Var.f46026w = i10;
             m0Var.W.b();
-            int ordinal = m0.this.f45971p.ordinal();
+            int ordinal = m0.this.f46019p.ordinal();
             if (ordinal != 1) {
                 switch (ordinal) {
                     case 4:
@@ -595,14 +595,14 @@ public final class m0 implements a0.e0 {
                     case 7:
                     case 8:
                     case 9:
-                        x.y0.a("Camera2CameraImpl", String.format("CameraDevice.onError(): %s failed with %s while in %s state. Will attempt recovering from error.", cameraDevice.getId(), m0.a0(i10), m0.this.f45971p.name()));
+                        x.y0.a("Camera2CameraImpl", String.format("CameraDevice.onError(): %s failed with %s while in %s state. Will attempt recovering from error.", cameraDevice.getId(), m0.a0(i10), m0.this.f46019p.name()));
                         b(cameraDevice, i10);
                         return;
                     default:
-                        throw new IllegalStateException("onError() should not be possible from state: " + m0.this.f45971p);
+                        throw new IllegalStateException("onError() should not be possible from state: " + m0.this.f46019p);
                 }
             }
-            x.y0.c("Camera2CameraImpl", String.format("CameraDevice.onError(): %s failed with %s while in %s state. Will finish closing camera.", cameraDevice.getId(), m0.a0(i10), m0.this.f45971p.name()));
+            x.y0.c("Camera2CameraImpl", String.format("CameraDevice.onError(): %s failed with %s while in %s state. Will finish closing camera.", cameraDevice.getId(), m0.a0(i10), m0.this.f46019p.name()));
             m0.this.P(false);
         }
 
@@ -610,27 +610,27 @@ public final class m0 implements a0.e0 {
         public void onOpened(CameraDevice cameraDevice) {
             m0.this.U("CameraDevice.onOpened()");
             m0 m0Var = m0.this;
-            m0Var.f45977v = cameraDevice;
-            m0Var.f45978w = 0;
+            m0Var.f46025v = cameraDevice;
+            m0Var.f46026w = 0;
             d();
-            int ordinal = m0.this.f45971p.ordinal();
+            int ordinal = m0.this.f46019p.ordinal();
             if (ordinal != 1 && ordinal != 4) {
                 if (ordinal != 5 && ordinal != 6 && ordinal != 7) {
-                    throw new IllegalStateException("onOpened() should not be possible from state: " + m0.this.f45971p);
+                    throw new IllegalStateException("onOpened() should not be possible from state: " + m0.this.f46019p);
                 }
                 m0.this.s0(i.OPENED);
                 a0.l0 l0Var = m0.this.F;
                 String id2 = cameraDevice.getId();
                 m0 m0Var2 = m0.this;
-                if (l0Var.j(id2, m0Var2.E.b(m0Var2.f45977v.getId()))) {
+                if (l0Var.j(id2, m0Var2.E.b(m0Var2.f46025v.getId()))) {
                     m0.this.l0();
                     return;
                 }
                 return;
             }
             b2.e.i(m0.this.e0());
-            m0.this.f45977v.close();
-            m0.this.f45977v = null;
+            m0.this.f46025v.close();
+            m0.this.f46025v = null;
         }
     }
 
@@ -678,9 +678,9 @@ public final class m0 implements a0.e0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(Context context, r.n0 n0Var, String str, s0 s0Var, y.a aVar, a0.l0 l0Var, Executor executor, Handler handler, e3 e3Var, long j10) {
         a0.p1 p1Var = new a0.p1();
-        this.f45972q = p1Var;
-        this.f45978w = 0;
-        this.f45980y = new AtomicInteger(0);
+        this.f46020q = p1Var;
+        this.f46026w = 0;
+        this.f46028y = new AtomicInteger(0);
         this.A = new LinkedHashMap();
         this.B = 0;
         this.I = false;
@@ -691,18 +691,18 @@ public final class m0 implements a0.e0 {
         this.Q = new Object();
         this.R = false;
         this.W = new h(this, null);
-        this.f45968e = n0Var;
+        this.f46016e = n0Var;
         this.E = aVar;
         this.F = l0Var;
         ScheduledExecutorService e10 = c0.a.e(handler);
-        this.f45970o = e10;
+        this.f46018o = e10;
         Executor f10 = c0.a.f(executor);
-        this.f45969i = f10;
-        this.f45975t = new j(f10, e10, j10);
-        this.f45967d = new a0.w2(str);
+        this.f46017i = f10;
+        this.f46023t = new j(f10, e10, j10);
+        this.f46015d = new a0.w2(str);
         p1Var.e(e0.a.CLOSED);
         n2 n2Var = new n2(l0Var);
-        this.f45973r = n2Var;
+        this.f46021r = n2Var;
         c3 c3Var = new c3(f10);
         this.M = c3Var;
         this.S = e3Var;
@@ -710,12 +710,12 @@ public final class m0 implements a0.e0 {
             r.a0 c10 = n0Var.c(str);
             this.T = c10;
             u uVar = new u(c10, e10, f10, new g(), s0Var.e());
-            this.f45974s = uVar;
-            this.f45976u = s0Var;
+            this.f46022s = uVar;
+            this.f46024u = s0Var;
             s0Var.p(uVar);
             s0Var.s(n2Var.a());
             this.U = s.f.a(c10);
-            this.f45979x = g0();
+            this.f46027x = g0();
             this.N = new g4.b(f10, e10, handler, c3Var, s0Var.e(), androidx.camera.camera2.internal.compat.quirk.b.c());
             this.G = s0Var.e().a(LegacyCameraOutputConfigNullPointerQuirk.class);
             this.H = s0Var.e().a(LegacyCameraSurfaceCleanupQuirk.class);
@@ -744,33 +744,33 @@ public final class m0 implements a0.e0 {
             aVar.c(Boolean.FALSE);
             return;
         }
-        aVar.c(Boolean.valueOf(m0Var.f45967d.o(b0(b4Var))));
+        aVar.c(Boolean.valueOf(m0Var.f46015d.o(b0(b4Var))));
     }
 
     public static /* synthetic */ void D(m0 m0Var, String str, a0.i2 i2Var, a0.x2 x2Var, a0.m2 m2Var, List list) {
         m0Var.getClass();
         m0Var.U("Use case " + str + " ACTIVE");
-        m0Var.f45967d.q(str, i2Var, x2Var, m2Var, list);
-        m0Var.f45967d.u(str, i2Var, x2Var, m2Var, list);
+        m0Var.f46015d.q(str, i2Var, x2Var, m2Var, list);
+        m0Var.f46015d.u(str, i2Var, x2Var, m2Var, list);
         m0Var.C0();
     }
 
     private void D0() {
         boolean z10 = false;
-        for (a0.x2 x2Var : this.f45967d.i()) {
+        for (a0.x2 x2Var : this.f46015d.i()) {
             z10 |= x2Var.H(false);
         }
-        this.f45974s.c0(z10);
+        this.f46022s.c0(z10);
     }
 
     public static /* synthetic */ void E(m0 m0Var, String str, a0.i2 i2Var, a0.x2 x2Var, a0.m2 m2Var, List list) {
         m0Var.getClass();
         m0Var.U("Use case " + str + " RESET");
-        m0Var.f45967d.u(str, i2Var, x2Var, m2Var, list);
+        m0Var.f46015d.u(str, i2Var, x2Var, m2Var, list);
         m0Var.N();
         m0Var.q0(false);
         m0Var.C0();
-        if (m0Var.f45971p == i.OPENED) {
+        if (m0Var.f46019p == i.OPENED) {
             m0Var.l0();
         }
     }
@@ -780,7 +780,7 @@ public final class m0 implements a0.e0 {
         try {
             m0Var.y0(list);
         } finally {
-            m0Var.f45974s.x();
+            m0Var.f46022s.x();
         }
     }
 
@@ -788,24 +788,24 @@ public final class m0 implements a0.e0 {
         b4 b4Var = this.L;
         if (b4Var != null) {
             String b02 = b0(b4Var);
-            a0.w2 w2Var = this.f45967d;
+            a0.w2 w2Var = this.f46015d;
             a0.i2 h10 = this.L.h();
             a0.x2 i10 = this.L.i();
             y2.b bVar = y2.b.METERING_REPEATING;
             w2Var.r(b02, h10, i10, null, Collections.singletonList(bVar));
-            this.f45967d.q(b02, this.L.h(), this.L.i(), null, Collections.singletonList(bVar));
+            this.f46015d.q(b02, this.L.h(), this.L.i(), null, Collections.singletonList(bVar));
         }
     }
 
     private void N() {
-        a0.i2 c10 = this.f45967d.g().c();
+        a0.i2 c10 = this.f46015d.g().c();
         a0.p0 j10 = c10.j();
         int size = j10.i().size();
         int size2 = c10.n().size();
         if (!c10.n().isEmpty()) {
             if (j10.i().isEmpty()) {
                 if (this.L == null) {
-                    this.L = new b4(this.f45976u.m(), this.S, new b4.c() { // from class: q.d0
+                    this.L = new b4(this.f46024u.m(), this.S, new b4.c() { // from class: q.d0
                         @Override // q.b4.c
                         public final void a() {
                             m0.B(m0.this);
@@ -834,7 +834,7 @@ public final class m0 implements a0.e0 {
             x.y0.l("Camera2CameraImpl", "The capture config builder already has surface inside.");
             return false;
         }
-        for (a0.i2 i2Var : this.f45967d.f()) {
+        for (a0.i2 i2Var : this.f46015d.f()) {
             a0.p0 j10 = i2Var.j();
             List<a0.w0> i10 = j10.i();
             if (!i10.isEmpty()) {
@@ -859,9 +859,9 @@ public final class m0 implements a0.e0 {
     private void Q() {
         U("Closing camera.");
         boolean z10 = true;
-        switch (this.f45971p.ordinal()) {
+        switch (this.f46019p.ordinal()) {
             case 3:
-                if (this.f45977v != null) {
+                if (this.f46025v != null) {
                     z10 = false;
                 }
                 b2.e.i(z10);
@@ -869,12 +869,12 @@ public final class m0 implements a0.e0 {
                 return;
             case 4:
             default:
-                U("close() ignored due to being in state: " + this.f45971p);
+                U("close() ignored due to being in state: " + this.f46019p);
                 return;
             case 5:
             case 6:
             case 7:
-                if (!this.f45975t.a() && !this.W.c()) {
+                if (!this.f46023t.a() && !this.W.c()) {
                     z10 = false;
                 }
                 this.W.a();
@@ -915,13 +915,13 @@ public final class m0 implements a0.e0 {
             public final ListenableFuture apply(Object obj) {
                 return m0.z(y2.this, k1Var, (Void) obj);
             }
-        }, this.f45969i);
+        }, this.f46017i);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void S() {
         boolean z10;
-        if (this.f45971p != i.RELEASING && this.f45971p != i.CLOSING) {
+        if (this.f46019p != i.RELEASING && this.f46019p != i.CLOSING) {
             z10 = false;
         } else {
             z10 = true;
@@ -945,14 +945,14 @@ public final class m0 implements a0.e0 {
                 public final void run() {
                     m0.t(m0.this);
                 }
-            }, this.f45969i);
+            }, this.f46017i);
         }
     }
 
     private CameraDevice.StateCallback T() {
-        ArrayList arrayList = new ArrayList(this.f45967d.g().c().c());
+        ArrayList arrayList = new ArrayList(this.f46015d.g().c().c());
         arrayList.add(this.M.c());
-        arrayList.add(this.f45975t);
+        arrayList.add(this.f46023t);
         return k2.a(arrayList);
     }
 
@@ -1013,7 +1013,7 @@ public final class m0 implements a0.e0 {
     private boolean f0() {
         ArrayList arrayList = new ArrayList();
         int Y = Y();
-        for (w2.b bVar : this.f45967d.j()) {
+        for (w2.b bVar : this.f46015d.j()) {
             if (bVar.c() == null || bVar.c().get(0) != y2.b.METERING_REPEATING) {
                 if (bVar.e() != null && bVar.c() != null) {
                     a0.i2 d10 = bVar.d();
@@ -1043,7 +1043,7 @@ public final class m0 implements a0.e0 {
     private z2 g0() {
         y2 y2Var;
         synchronized (this.Q) {
-            y2Var = new y2(this.U, this.f45976u.e());
+            y2Var = new y2(this.U, this.f46024u.e());
         }
         return y2Var;
     }
@@ -1084,18 +1084,18 @@ public final class m0 implements a0.e0 {
 
     private void k0(boolean z10) {
         if (!z10) {
-            this.f45975t.d();
+            this.f46023t.d();
         }
-        this.f45975t.a();
+        this.f46023t.a();
         this.W.a();
         U("Opening camera.");
         s0(i.OPENING);
         try {
-            this.f45968e.f(this.f45976u.b(), this.f45969i, T());
+            this.f46016e.f(this.f46024u.b(), this.f46017i, T());
         } catch (SecurityException e10) {
             U("Unable to open camera due to " + e10.getMessage());
             s0(i.REOPENING);
-            this.f45975t.e();
+            this.f46023t.e();
         } catch (r.f e11) {
             U("Unable to open camera due to " + e11.getMessage());
             if (e11.d() != 10001) {
@@ -1107,16 +1107,16 @@ public final class m0 implements a0.e0 {
     }
 
     private void m0() {
-        int ordinal = this.f45971p.ordinal();
+        int ordinal = this.f46019p.ordinal();
         boolean z10 = false;
         if (ordinal != 2 && ordinal != 3) {
             if (ordinal != 4) {
-                U("open() ignored due to being in state: " + this.f45971p);
+                U("open() ignored due to being in state: " + this.f46019p);
                 return;
             }
             s0(i.REOPENING);
-            if (!e0() && !this.J && this.f45978w == 0) {
-                if (this.f45977v != null) {
+            if (!e0() && !this.J && this.f46026w == 0) {
+                if (this.f46025v != null) {
                     z10 = true;
                 }
                 b2.e.j(z10, "Camera Device should be open if session close is not complete");
@@ -1132,10 +1132,10 @@ public final class m0 implements a0.e0 {
     public static /* synthetic */ Object n(m0 m0Var, c.a aVar) {
         m0Var.getClass();
         try {
-            ArrayList arrayList = new ArrayList(m0Var.f45967d.g().c().c());
+            ArrayList arrayList = new ArrayList(m0Var.f46015d.g().c().c());
             arrayList.add(m0Var.M.c());
             arrayList.add(new b(aVar));
-            m0Var.f45968e.f(m0Var.f45976u.b(), m0Var.f45969i, k2.a(arrayList));
+            m0Var.f46016e.f(m0Var.f46024u.b(), m0Var.f46017i, k2.a(arrayList));
             return "configAndCloseTask";
         } catch (SecurityException | r.f e10) {
             m0Var.V("Unable to open camera for configAndClose: " + e10.getMessage(), e10);
@@ -1146,9 +1146,9 @@ public final class m0 implements a0.e0 {
 
     private void p0() {
         if (this.L != null) {
-            a0.w2 w2Var = this.f45967d;
+            a0.w2 w2Var = this.f46015d;
             w2Var.s(this.L.f() + this.L.hashCode());
-            a0.w2 w2Var2 = this.f45967d;
+            a0.w2 w2Var2 = this.f46015d;
             w2Var2.t(this.L.f() + this.L.hashCode());
             this.L.c();
             this.L = null;
@@ -1156,7 +1156,7 @@ public final class m0 implements a0.e0 {
     }
 
     private void r0(final String str, final a0.i2 i2Var, final a0.x2 x2Var, final a0.m2 m2Var, final List list) {
-        this.f45969i.execute(new Runnable() { // from class: q.b0
+        this.f46017i.execute(new Runnable() { // from class: q.b0
             @Override // java.lang.Runnable
             public final void run() {
                 m0.E(m0.this, str, i2Var, x2Var, m2Var, list);
@@ -1167,7 +1167,7 @@ public final class m0 implements a0.e0 {
     public static /* synthetic */ Object s(final m0 m0Var, final c.a aVar) {
         m0Var.getClass();
         try {
-            m0Var.f45969i.execute(new Runnable() { // from class: q.h0
+            m0Var.f46017i.execute(new Runnable() { // from class: q.h0
                 @Override // java.lang.Runnable
                 public final void run() {
                     m0.C(m0.this, aVar);
@@ -1183,15 +1183,15 @@ public final class m0 implements a0.e0 {
     public static /* synthetic */ void t(m0 m0Var) {
         m0Var.J = false;
         m0Var.I = false;
-        m0Var.U("OpenCameraConfigAndClose is done, state: " + m0Var.f45971p);
-        int ordinal = m0Var.f45971p.ordinal();
+        m0Var.U("OpenCameraConfigAndClose is done, state: " + m0Var.f46019p);
+        int ordinal = m0Var.f46019p.ordinal();
         if (ordinal != 1 && ordinal != 4) {
             if (ordinal != 6) {
-                m0Var.U("OpenCameraConfigAndClose finished while in state: " + m0Var.f45971p);
+                m0Var.U("OpenCameraConfigAndClose finished while in state: " + m0Var.f46019p);
                 return;
-            } else if (m0Var.f45978w != 0) {
-                m0Var.U("OpenCameraConfigAndClose in error: " + a0(m0Var.f45978w));
-                m0Var.f45975t.e();
+            } else if (m0Var.f46026w != 0) {
+                m0Var.U("OpenCameraConfigAndClose in error: " + a0(m0Var.f46026w));
+                m0Var.f46023t.e();
                 return;
             } else {
                 m0Var.B0(false);
@@ -1210,13 +1210,13 @@ public final class m0 implements a0.e0 {
     public static /* synthetic */ void v(m0 m0Var, String str) {
         m0Var.getClass();
         m0Var.U("Use case " + str + " INACTIVE");
-        m0Var.f45967d.t(str);
+        m0Var.f46015d.t(str);
         m0Var.C0();
     }
 
     public static /* synthetic */ void w(m0 m0Var, boolean z10) {
         m0Var.R = z10;
-        if (z10 && m0Var.f45971p == i.PENDING_OPEN) {
+        if (z10 && m0Var.f46019p == i.PENDING_OPEN) {
             m0Var.A0(false);
         }
     }
@@ -1233,20 +1233,20 @@ public final class m0 implements a0.e0 {
     public static /* synthetic */ void x(m0 m0Var, String str, a0.i2 i2Var, a0.x2 x2Var, a0.m2 m2Var, List list) {
         m0Var.getClass();
         m0Var.U("Use case " + str + " UPDATED");
-        m0Var.f45967d.u(str, i2Var, x2Var, m2Var, list);
+        m0Var.f46015d.u(str, i2Var, x2Var, m2Var, list);
         m0Var.C0();
     }
 
     private void y0(Collection collection) {
         Size f10;
-        boolean isEmpty = this.f45967d.h().isEmpty();
+        boolean isEmpty = this.f46015d.h().isEmpty();
         ArrayList arrayList = new ArrayList();
         Iterator it = collection.iterator();
         Rational rational = null;
         while (it.hasNext()) {
             k kVar = (k) it.next();
-            if (!this.f45967d.o(kVar.h())) {
-                this.f45967d.r(kVar.h(), kVar.d(), kVar.g(), kVar.e(), kVar.c());
+            if (!this.f46015d.o(kVar.h())) {
+                this.f46015d.r(kVar.h(), kVar.d(), kVar.g(), kVar.e(), kVar.c());
                 arrayList.add(kVar.h());
                 if (kVar.i() == x.g1.class && (f10 = kVar.f()) != null) {
                     rational = new Rational(f10.getWidth(), f10.getHeight());
@@ -1256,20 +1256,20 @@ public final class m0 implements a0.e0 {
         if (!arrayList.isEmpty()) {
             U("Use cases [" + TextUtils.join(", ", arrayList) + "] now ATTACHED");
             if (isEmpty) {
-                this.f45974s.Z(true);
-                this.f45974s.Q();
+                this.f46022s.Z(true);
+                this.f46022s.Q();
             }
             N();
             D0();
             C0();
             q0(false);
-            if (this.f45971p == i.OPENED) {
+            if (this.f46019p == i.OPENED) {
                 l0();
             } else {
                 m0();
             }
             if (rational != null) {
-                this.f45974s.a0(rational);
+                this.f46022s.a0(rational);
             }
         }
     }
@@ -1287,8 +1287,8 @@ public final class m0 implements a0.e0 {
         boolean z10 = false;
         while (it.hasNext()) {
             k kVar = (k) it.next();
-            if (this.f45967d.o(kVar.h())) {
-                this.f45967d.p(kVar.h());
+            if (this.f46015d.o(kVar.h())) {
+                this.f46015d.p(kVar.h());
                 arrayList.add(kVar.h());
                 if (kVar.i() == x.g1.class) {
                     z10 = true;
@@ -1298,25 +1298,25 @@ public final class m0 implements a0.e0 {
         if (!arrayList.isEmpty()) {
             U("Use cases [" + TextUtils.join(", ", arrayList) + "] now DETACHED for camera");
             if (z10) {
-                this.f45974s.a0(null);
+                this.f46022s.a0(null);
             }
             N();
-            if (this.f45967d.i().isEmpty()) {
-                this.f45974s.c0(false);
+            if (this.f46015d.i().isEmpty()) {
+                this.f46022s.c0(false);
             } else {
                 D0();
             }
-            if (this.f45967d.h().isEmpty()) {
-                this.f45974s.x();
+            if (this.f46015d.h().isEmpty()) {
+                this.f46022s.x();
                 q0(false);
-                this.f45974s.Z(false);
-                this.f45979x = g0();
+                this.f46022s.Z(false);
+                this.f46027x = g0();
                 Q();
                 return;
             }
             C0();
             q0(false);
-            if (this.f45971p == i.OPENED) {
+            if (this.f46019p == i.OPENED) {
                 l0();
             }
         }
@@ -1343,27 +1343,27 @@ public final class m0 implements a0.e0 {
     }
 
     void C0() {
-        i2.h e10 = this.f45967d.e();
+        i2.h e10 = this.f46015d.e();
         if (e10.e()) {
-            this.f45974s.b0(e10.c().o());
-            e10.b(this.f45974s.G());
-            this.f45979x.e(e10.c());
+            this.f46022s.b0(e10.c().o());
+            e10.b(this.f46022s.G());
+            this.f46027x.e(e10.c());
             return;
         }
-        this.f45974s.Y();
-        this.f45979x.e(this.f45974s.G());
+        this.f46022s.Y();
+        this.f46027x.e(this.f46022s.G());
     }
 
     void P(boolean z10) {
         boolean z11;
-        if (this.f45971p != i.CLOSING && this.f45971p != i.RELEASING && (this.f45971p != i.REOPENING || this.f45978w == 0)) {
+        if (this.f46019p != i.CLOSING && this.f46019p != i.RELEASING && (this.f46019p != i.REOPENING || this.f46026w == 0)) {
             z11 = false;
         } else {
             z11 = true;
         }
-        b2.e.j(z11, "closeCamera should only be called in a CLOSING, RELEASING or REOPENING (with error) state. Current state: " + this.f45971p + " (error: " + a0(this.f45978w) + ")");
+        b2.e.j(z11, "closeCamera should only be called in a CLOSING, RELEASING or REOPENING (with error) state. Current state: " + this.f46019p + " (error: " + a0(this.f46026w) + ")");
         q0(z10);
-        this.f45979x.d();
+        this.f46027x.d();
     }
 
     void U(String str) {
@@ -1371,7 +1371,7 @@ public final class m0 implements a0.e0 {
     }
 
     a0.i2 W(a0.w0 w0Var) {
-        for (a0.i2 i2Var : this.f45967d.h()) {
+        for (a0.i2 i2Var : this.f46015d.h()) {
             if (i2Var.n().contains(w0Var)) {
                 return i2Var;
             }
@@ -1381,30 +1381,30 @@ public final class m0 implements a0.e0 {
 
     void X() {
         boolean z10;
-        if (this.f45971p != i.RELEASING && this.f45971p != i.CLOSING) {
+        if (this.f46019p != i.RELEASING && this.f46019p != i.CLOSING) {
             z10 = false;
         } else {
             z10 = true;
         }
         b2.e.i(z10);
         b2.e.i(this.A.isEmpty());
-        this.f45977v = null;
-        if (this.f45971p == i.CLOSING) {
+        this.f46025v = null;
+        if (this.f46019p == i.CLOSING) {
             s0(i.INITIALIZED);
             return;
         }
-        this.f45968e.h(this.C);
+        this.f46016e.h(this.C);
         s0(i.RELEASED);
-        c.a aVar = this.f45981z;
+        c.a aVar = this.f46029z;
         if (aVar != null) {
             aVar.c(null);
-            this.f45981z = null;
+            this.f46029z = null;
         }
     }
 
     @Override // a0.e0
     public a0.u1 c() {
-        return this.f45972q;
+        return this.f46020q;
     }
 
     @Override // x.x1.b
@@ -1421,7 +1421,7 @@ public final class m0 implements a0.e0 {
         final a0.x2 j10 = x1Var.j();
         final a0.m2 e10 = x1Var.e();
         final List Z = Z(x1Var);
-        this.f45969i.execute(new Runnable() { // from class: q.k0
+        this.f46017i.execute(new Runnable() { // from class: q.k0
             @Override // java.lang.Runnable
             public final void run() {
                 m0.x(m0.this, c02, i2Var, j10, e10, Z);
@@ -1456,7 +1456,7 @@ public final class m0 implements a0.e0 {
         final a0.x2 j10 = x1Var.j();
         final a0.m2 e10 = x1Var.e();
         final List Z = Z(x1Var);
-        this.f45969i.execute(new Runnable() { // from class: q.y
+        this.f46017i.execute(new Runnable() { // from class: q.y
             @Override // java.lang.Runnable
             public final void run() {
                 m0.D(m0.this, c02, i2Var, j10, e10, Z);
@@ -1470,7 +1470,7 @@ public final class m0 implements a0.e0 {
 
     @Override // a0.e0
     public a0.a0 f() {
-        return this.f45974s;
+        return this.f46022s;
     }
 
     @Override // a0.e0
@@ -1480,7 +1480,7 @@ public final class m0 implements a0.e0 {
 
     @Override // a0.e0
     public void h(final boolean z10) {
-        this.f45969i.execute(new Runnable() { // from class: q.c0
+        this.f46017i.execute(new Runnable() { // from class: q.c0
             @Override // java.lang.Runnable
             public final void run() {
                 m0.w(m0.this, z10);
@@ -1494,11 +1494,11 @@ public final class m0 implements a0.e0 {
         if (arrayList.isEmpty()) {
             return;
         }
-        this.f45974s.Q();
+        this.f46022s.Q();
         h0(new ArrayList(arrayList));
         final ArrayList arrayList2 = new ArrayList(w0(arrayList));
         try {
-            this.f45969i.execute(new Runnable() { // from class: q.j0
+            this.f46017i.execute(new Runnable() { // from class: q.j0
                 @Override // java.lang.Runnable
                 public final void run() {
                     m0.F(m0.this, arrayList2);
@@ -1506,7 +1506,7 @@ public final class m0 implements a0.e0 {
             });
         } catch (RejectedExecutionException e10) {
             V("Unable to attach use cases.", e10);
-            this.f45974s.x();
+            this.f46022s.x();
         }
     }
 
@@ -1514,7 +1514,7 @@ public final class m0 implements a0.e0 {
     public void j(x.x1 x1Var) {
         b2.e.g(x1Var);
         final String c02 = c0(x1Var);
-        this.f45969i.execute(new Runnable() { // from class: q.l0
+        this.f46017i.execute(new Runnable() { // from class: q.l0
             @Override // java.lang.Runnable
             public final void run() {
                 m0.v(m0.this, c02);
@@ -1543,7 +1543,7 @@ public final class m0 implements a0.e0 {
         }
         final ArrayList arrayList2 = new ArrayList(w0(arrayList));
         i0(new ArrayList(arrayList));
-        this.f45969i.execute(new Runnable() { // from class: q.a0
+        this.f46017i.execute(new Runnable() { // from class: q.a0
             @Override // java.lang.Runnable
             public final void run() {
                 m0.this.z0(arrayList2);
@@ -1553,29 +1553,29 @@ public final class m0 implements a0.e0 {
 
     void l0() {
         boolean z10;
-        if (this.f45971p == i.OPENED) {
+        if (this.f46019p == i.OPENED) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.i(z10);
-        i2.h g10 = this.f45967d.g();
+        i2.h g10 = this.f46015d.g();
         if (!g10.e()) {
             U("Unable to create capture session due to conflicting configurations");
-        } else if (!this.F.j(this.f45977v.getId(), this.E.b(this.f45977v.getId()))) {
+        } else if (!this.F.j(this.f46025v.getId(), this.E.b(this.f46025v.getId()))) {
             U("Unable to create capture session in camera operating mode = " + this.E.c());
         } else {
             HashMap hashMap = new HashMap();
-            d4.m(this.f45967d.h(), this.f45967d.i(), hashMap);
-            this.f45979x.i(hashMap);
-            z2 z2Var = this.f45979x;
-            d0.n.j(z2Var.c(g10.c(), (CameraDevice) b2.e.g(this.f45977v), this.N.a()), new d(z2Var), this.f45969i);
+            d4.m(this.f46015d.h(), this.f46015d.i(), hashMap);
+            this.f46027x.i(hashMap);
+            z2 z2Var = this.f46027x;
+            d0.n.j(z2Var.c(g10.c(), (CameraDevice) b2.e.g(this.f46025v), this.N.a()), new d(z2Var), this.f46017i);
         }
     }
 
     @Override // a0.e0
     public a0.d0 m() {
-        return this.f45976u;
+        return this.f46024u;
     }
 
     void n0(final a0.i2 i2Var) {
@@ -1595,7 +1595,7 @@ public final class m0 implements a0.e0 {
     ListenableFuture o0(z2 z2Var, boolean z10) {
         z2Var.close();
         ListenableFuture f10 = z2Var.f(z10);
-        U("Releasing session in state " + this.f45971p.name());
+        U("Releasing session in state " + this.f46019p.name());
         this.A.put(z2Var, f10);
         d0.n.j(f10, new c(z2Var), c0.a.a());
         return f10;
@@ -1614,22 +1614,22 @@ public final class m0 implements a0.e0 {
 
     void q0(boolean z10) {
         boolean z11;
-        if (this.f45979x != null) {
+        if (this.f46027x != null) {
             z11 = true;
         } else {
             z11 = false;
         }
         b2.e.i(z11);
         U("Resetting Capture Session");
-        z2 z2Var = this.f45979x;
+        z2 z2Var = this.f46027x;
         a0.i2 h10 = z2Var.h();
         List g10 = z2Var.g();
         z2 g02 = g0();
-        this.f45979x = g02;
+        this.f46027x = g02;
         g02.e(h10);
-        this.f45979x.a(g10);
-        if (this.f45971p.ordinal() != 8) {
-            U("Skipping Capture Session state check due to current camera state: " + this.f45971p + " and previous session status: " + z2Var.b());
+        this.f46027x.a(g10);
+        if (this.f46019p.ordinal() != 8) {
+            U("Skipping Capture Session state check due to current camera state: " + this.f46019p + " and previous session status: " + z2Var.b());
         } else if (this.G && z2Var.b()) {
             U("Close camera before creating new session");
             s0(i.REOPENING_QUIRK);
@@ -1655,14 +1655,14 @@ public final class m0 implements a0.e0 {
     }
 
     public String toString() {
-        return String.format(Locale.US, "Camera@%x[id=%s]", Integer.valueOf(hashCode()), this.f45976u.b());
+        return String.format(Locale.US, "Camera@%x[id=%s]", Integer.valueOf(hashCode()), this.f46024u.b());
     }
 
     void u0(i iVar, q.a aVar, boolean z10) {
         e0.a aVar2;
-        U("Transitioning camera internal state: " + this.f45971p + " --> " + iVar);
+        U("Transitioning camera internal state: " + this.f46019p + " --> " + iVar);
         x0(iVar, aVar);
-        this.f45971p = iVar;
+        this.f46019p = iVar;
         switch (iVar.ordinal()) {
             case 0:
                 aVar2 = e0.a.RELEASED;
@@ -1694,8 +1694,8 @@ public final class m0 implements a0.e0 {
                 throw new IllegalStateException("Unknown state: " + iVar);
         }
         this.F.e(this, aVar2, z10);
-        this.f45972q.e(aVar2);
-        this.f45973r.c(aVar2, aVar);
+        this.f46020q.e(aVar2);
+        this.f46021r.c(aVar2, aVar);
     }
 
     void v0(List list) {
@@ -1712,7 +1712,7 @@ public final class m0 implements a0.e0 {
             }
         }
         U("Issue capture request");
-        this.f45979x.a(arrayList);
+        this.f46027x.a(arrayList);
     }
 
     void x0(i iVar, q.a aVar) {
@@ -1739,20 +1739,20 @@ public final class m0 implements a0.e0 {
     public class h {
 
         /* renamed from: a  reason: collision with root package name */
-        private a f45994a;
+        private a f46042a;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ScheduledFuture f45996a;
+            private final ScheduledFuture f46044a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final AtomicBoolean f45997b = new AtomicBoolean(false);
+            private final AtomicBoolean f46045b = new AtomicBoolean(false);
 
             a() {
-                this.f45996a = m0.this.f45970o.schedule(new Runnable() { // from class: q.p0
+                this.f46044a = m0.this.f46018o.schedule(new Runnable() { // from class: q.p0
                     @Override // java.lang.Runnable
                     public final void run() {
                         m0.h.a.this.d();
@@ -1762,10 +1762,10 @@ public final class m0 implements a0.e0 {
 
             /* JADX INFO: Access modifiers changed from: private */
             public void d() {
-                if (this.f45997b.getAndSet(true)) {
+                if (this.f46045b.getAndSet(true)) {
                     return;
                 }
-                m0.this.f45969i.execute(new Runnable() { // from class: q.o0
+                m0.this.f46017i.execute(new Runnable() { // from class: q.o0
                     @Override // java.lang.Runnable
                     public final void run() {
                         m0.h.a.this.e();
@@ -1775,36 +1775,36 @@ public final class m0 implements a0.e0 {
 
             /* JADX INFO: Access modifiers changed from: private */
             public void e() {
-                if (m0.this.f45971p != i.OPENING) {
+                if (m0.this.f46019p != i.OPENING) {
                     m0 m0Var = m0.this;
-                    m0Var.U("Camera skip reopen at state: " + m0.this.f45971p);
+                    m0Var.U("Camera skip reopen at state: " + m0.this.f46019p);
                     return;
                 }
                 m0.this.U("Camera onError timeout, reopen it.");
                 m0.this.s0(i.REOPENING);
-                m0.this.f45975t.e();
+                m0.this.f46023t.e();
             }
 
             public void c() {
-                this.f45997b.set(true);
-                this.f45996a.cancel(true);
+                this.f46045b.set(true);
+                this.f46044a.cancel(true);
             }
 
             public boolean f() {
-                return this.f45997b.get();
+                return this.f46045b.get();
             }
         }
 
         private h() {
-            this.f45994a = null;
+            this.f46042a = null;
         }
 
         public void a() {
-            a aVar = this.f45994a;
+            a aVar = this.f46042a;
             if (aVar != null) {
                 aVar.c();
             }
-            this.f45994a = null;
+            this.f46042a = null;
         }
 
         public void b() {
@@ -1813,7 +1813,7 @@ public final class m0 implements a0.e0 {
         }
 
         public boolean c() {
-            a aVar = this.f45994a;
+            a aVar = this.f46042a;
             if (aVar != null && !aVar.f()) {
                 return true;
             }
@@ -1821,13 +1821,13 @@ public final class m0 implements a0.e0 {
         }
 
         public void d() {
-            if (m0.this.f45971p != i.OPENING) {
+            if (m0.this.f46019p != i.OPENING) {
                 m0.this.U("Don't need the onError timeout handler.");
                 return;
             }
             m0.this.U("Camera waiting for onError.");
             a();
-            this.f45994a = new a();
+            this.f46042a = new a();
         }
 
         /* synthetic */ h(m0 m0Var, a aVar) {
@@ -1840,19 +1840,19 @@ public final class m0 implements a0.e0 {
     public class c implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ z2 f45985a;
+        final /* synthetic */ z2 f46033a;
 
         c(z2 z2Var) {
-            this.f45985a = z2Var;
+            this.f46033a = z2Var;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(Void r22) {
-            m0.this.A.remove(this.f45985a);
-            int ordinal = m0.this.f45971p.ordinal();
+            m0.this.A.remove(this.f46033a);
+            int ordinal = m0.this.f46019p.ordinal();
             if (ordinal != 1 && ordinal != 4) {
-                if (ordinal == 5 || (ordinal == 6 && m0.this.f45978w != 0)) {
+                if (ordinal == 5 || (ordinal == 6 && m0.this.f46026w != 0)) {
                     m0.this.U("Camera reopen required. Checking if the current camera can be closed safely.");
                 } else {
                     return;
@@ -1860,10 +1860,10 @@ public final class m0 implements a0.e0 {
             }
             if (m0.this.e0()) {
                 m0 m0Var = m0.this;
-                if (m0Var.f45977v != null) {
+                if (m0Var.f46025v != null) {
                     m0Var.U("closing camera");
-                    r.a.a(m0.this.f45977v);
-                    m0.this.f45977v = null;
+                    r.a.a(m0.this.f46025v);
+                    m0.this.f46025v = null;
                 }
             }
         }

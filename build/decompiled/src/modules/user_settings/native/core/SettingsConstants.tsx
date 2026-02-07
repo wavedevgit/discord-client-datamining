@@ -277,6 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.PROFILE_UPDATES_NOTIFICATIONS = var0;
     var0 = 'SERVER_TRENDING_NOTIFICATIONS';
     var1.SERVER_TRENDING_NOTIFICATIONS = var0;
+    var0 = 'SUMMARY_REMINDER_NOTIFICATIONS';
+    var1.SUMMARY_REMINDER_NOTIFICATIONS = var0;
     var0 = 'APP_ICONS';
     var1.APP_ICONS = var0;
     var0 = 'ADVANCED';

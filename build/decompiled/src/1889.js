@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/parent_tools',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=',
         'scales': null,
-        'hash': 'c9565981e9ad784a5eead8d242037f22',
-        'name': 'FamilyCenter.compiled.messages',
+        'hash': '43381e89c3e1cc732d97e659fb637a55',
+        'name': 'zh-CN.messages.43381e89c3e1cc732d97e659fb637a55.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

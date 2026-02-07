@@ -79,7 +79,7 @@ public final class PollMediaEmoji {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(PollMediaEmoji pollMediaEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         compositeEncoder.l(serialDescriptor, 0, n2Var, pollMediaEmoji.f8554id);
         compositeEncoder.z(serialDescriptor, 1, pollMediaEmoji.name);
         if (compositeEncoder.A(serialDescriptor, 2) || pollMediaEmoji.displayName != null) {

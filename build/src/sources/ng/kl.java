@@ -7,31 +7,31 @@ public final class kl extends hf.a {
     public static final Parcelable.Creator<kl> CREATOR = new am();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f40033d;
+    private final int f40081d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f40034e;
+    private final String f40082e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f40035i;
+    private final String f40083i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f40036o;
+    private final String f40084o;
 
     public kl(int i10, String str, String str2, String str3) {
-        this.f40033d = i10;
-        this.f40034e = str;
-        this.f40035i = str2;
-        this.f40036o = str3;
+        this.f40081d = i10;
+        this.f40082e = str;
+        this.f40083i = str2;
+        this.f40084o = str3;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f40033d);
-        hf.c.s(parcel, 2, this.f40034e, false);
-        hf.c.s(parcel, 3, this.f40035i, false);
-        hf.c.s(parcel, 4, this.f40036o, false);
+        hf.c.l(parcel, 1, this.f40081d);
+        hf.c.s(parcel, 2, this.f40082e, false);
+        hf.c.s(parcel, 3, this.f40083i, false);
+        hf.c.s(parcel, 4, this.f40084o, false);
         hf.c.b(parcel, a10);
     }
 }

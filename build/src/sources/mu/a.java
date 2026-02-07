@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0524a f38298a = new C0524a(null);
+    public static final C0524a f38346a = new C0524a(null);
 
     /* renamed from: mu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -29,7 +29,7 @@ public final class a implements k {
         }
 
         public final boolean b() {
-            if (lu.h.f36777a.h() && Build.VERSION.SDK_INT >= 29) {
+            if (lu.h.f36825a.h() && Build.VERSION.SDK_INT >= 29) {
                 return true;
             }
             return false;
@@ -41,7 +41,7 @@ public final class a implements k {
 
     @Override // mu.k
     public boolean a() {
-        return f38298a.b();
+        return f38346a.b();
     }
 
     @Override // mu.k
@@ -73,7 +73,7 @@ public final class a implements k {
         try {
             SSLSockets.setUseSessionTickets(sslSocket, true);
             SSLParameters sSLParameters = sslSocket.getSSLParameters();
-            sSLParameters.setApplicationProtocols((String[]) lu.h.f36777a.b(protocols).toArray(new String[0]));
+            sSLParameters.setApplicationProtocols((String[]) lu.h.f36825a.b(protocols).toArray(new String[0]));
             sslSocket.setSSLParameters(sSLParameters);
         } catch (IllegalArgumentException e10) {
             throw new IOException("Android internal error", e10);

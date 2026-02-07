@@ -31,112 +31,112 @@ import pu.g;
 public final class d implements WebSocket, g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Request f45673a;
+    private final Request f45721a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l f45674b;
+    private final l f45722b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Random f45675c;
+    private final Random f45723c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f45676d;
+    private final long f45724d;
 
     /* renamed from: e  reason: collision with root package name */
-    private pu.e f45677e;
+    private pu.e f45725e;
 
     /* renamed from: f  reason: collision with root package name */
-    private long f45678f;
+    private long f45726f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f45679g;
+    private final String f45727g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Call f45680h;
+    private Call f45728h;
 
     /* renamed from: i  reason: collision with root package name */
-    private fu.a f45681i;
+    private fu.a f45729i;
 
     /* renamed from: j  reason: collision with root package name */
-    private pu.g f45682j;
+    private pu.g f45730j;
 
     /* renamed from: k  reason: collision with root package name */
-    private pu.h f45683k;
+    private pu.h f45731k;
 
     /* renamed from: l  reason: collision with root package name */
-    private fu.d f45684l;
+    private fu.d f45732l;
 
     /* renamed from: m  reason: collision with root package name */
-    private String f45685m;
+    private String f45733m;
 
     /* renamed from: n  reason: collision with root package name */
-    private AbstractC0593d f45686n;
+    private AbstractC0593d f45734n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ArrayDeque f45687o;
+    private final ArrayDeque f45735o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ArrayDeque f45688p;
+    private final ArrayDeque f45736p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f45689q;
+    private long f45737q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f45690r;
+    private boolean f45738r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f45691s;
+    private int f45739s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f45692t;
+    private String f45740t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f45693u;
+    private boolean f45741u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f45694v;
+    private int f45742v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f45695w;
+    private int f45743w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f45696x;
+    private int f45744x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f45697y;
+    private boolean f45745y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final b f45672z = new b(null);
+    public static final b f45720z = new b(null);
     private static final List A = CollectionsKt.e(j.HTTP_1_1);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f45698a;
+        private final int f45746a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ByteString f45699b;
+        private final ByteString f45747b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final long f45700c;
+        private final long f45748c;
 
         public a(int i10, ByteString byteString, long j10) {
-            this.f45698a = i10;
-            this.f45699b = byteString;
-            this.f45700c = j10;
+            this.f45746a = i10;
+            this.f45747b = byteString;
+            this.f45748c = j10;
         }
 
         public final long a() {
-            return this.f45700c;
+            return this.f45748c;
         }
 
         public final int b() {
-            return this.f45698a;
+            return this.f45746a;
         }
 
         public final ByteString c() {
-            return this.f45699b;
+            return this.f45747b;
         }
     }
 
@@ -154,23 +154,23 @@ public final class d implements WebSocket, g.a {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f45701a;
+        private final int f45749a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ByteString f45702b;
+        private final ByteString f45750b;
 
         public c(int i10, ByteString data) {
             Intrinsics.checkNotNullParameter(data, "data");
-            this.f45701a = i10;
-            this.f45702b = data;
+            this.f45749a = i10;
+            this.f45750b = data;
         }
 
         public final ByteString a() {
-            return this.f45702b;
+            return this.f45750b;
         }
 
         public final int b() {
-            return this.f45701a;
+            return this.f45749a;
         }
     }
 
@@ -179,32 +179,32 @@ public final class d implements WebSocket, g.a {
     public static abstract class AbstractC0593d implements Closeable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f45703d;
+        private final boolean f45751d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final BufferedSource f45704e;
+        private final BufferedSource f45752e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final BufferedSink f45705i;
+        private final BufferedSink f45753i;
 
         public AbstractC0593d(boolean z10, BufferedSource source, BufferedSink sink) {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(sink, "sink");
-            this.f45703d = z10;
-            this.f45704e = source;
-            this.f45705i = sink;
+            this.f45751d = z10;
+            this.f45752e = source;
+            this.f45753i = sink;
         }
 
         public final boolean a() {
-            return this.f45703d;
+            return this.f45751d;
         }
 
         public final BufferedSink g() {
-            return this.f45705i;
+            return this.f45753i;
         }
 
         public final BufferedSource k() {
-            return this.f45704e;
+            return this.f45752e;
         }
     }
 
@@ -212,7 +212,7 @@ public final class d implements WebSocket, g.a {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class e extends fu.a {
         public e() {
-            super(d.this.f45685m + " writer", false, 2, null);
+            super(d.this.f45733m + " writer", false, 2, null);
         }
 
         @Override // fu.a
@@ -233,10 +233,10 @@ public final class d implements WebSocket, g.a {
     public static final class f implements bu.b {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Request f45708e;
+        final /* synthetic */ Request f45756e;
 
         f(Request request) {
-            this.f45708e = request;
+            this.f45756e = request;
         }
 
         @Override // bu.b
@@ -255,17 +255,17 @@ public final class d implements WebSocket, g.a {
                 d.this.m(response, C);
                 Intrinsics.checkNotNull(C);
                 AbstractC0593d n10 = C.n();
-                pu.e a10 = pu.e.f45712g.a(response.E0());
-                d.this.f45677e = a10;
+                pu.e a10 = pu.e.f45760g.a(response.E0());
+                d.this.f45725e = a10;
                 if (!d.this.s(a10)) {
                     d dVar = d.this;
                     synchronized (dVar) {
-                        dVar.f45688p.clear();
+                        dVar.f45736p.clear();
                         dVar.f(1010, "unexpected Sec-WebSocket-Extensions in response header");
                     }
                 }
                 try {
-                    d.this.r(cu.e.f20043i + " WebSocket " + this.f45708e.n().q(), n10);
+                    d.this.r(cu.e.f20043i + " WebSocket " + this.f45756e.n().q(), n10);
                     d.this.q().onOpen(d.this, response);
                     d.this.t();
                 } catch (Exception e10) {
@@ -285,22 +285,22 @@ public final class d implements WebSocket, g.a {
     public static final class g extends fu.a {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f45709e;
+        final /* synthetic */ d f45757e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ long f45710f;
+        final /* synthetic */ long f45758f;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public g(String str, d dVar, long j10) {
             super(str, false, 2, null);
-            this.f45709e = dVar;
-            this.f45710f = j10;
+            this.f45757e = dVar;
+            this.f45758f = j10;
         }
 
         @Override // fu.a
         public long f() {
-            this.f45709e.x();
-            return this.f45710f;
+            this.f45757e.x();
+            return this.f45758f;
         }
     }
 
@@ -308,17 +308,17 @@ public final class d implements WebSocket, g.a {
     public static final class h extends fu.a {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f45711e;
+        final /* synthetic */ d f45759e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public h(String str, boolean z10, d dVar) {
             super(str, z10);
-            this.f45711e = dVar;
+            this.f45759e = dVar;
         }
 
         @Override // fu.a
         public long f() {
-            this.f45711e.l();
+            this.f45759e.l();
             return -1L;
         }
     }
@@ -328,22 +328,22 @@ public final class d implements WebSocket, g.a {
         Intrinsics.checkNotNullParameter(originalRequest, "originalRequest");
         Intrinsics.checkNotNullParameter(listener, "listener");
         Intrinsics.checkNotNullParameter(random, "random");
-        this.f45673a = originalRequest;
-        this.f45674b = listener;
-        this.f45675c = random;
-        this.f45676d = j10;
-        this.f45677e = eVar;
-        this.f45678f = j11;
-        this.f45684l = taskRunner.i();
-        this.f45687o = new ArrayDeque();
-        this.f45688p = new ArrayDeque();
-        this.f45691s = -1;
+        this.f45721a = originalRequest;
+        this.f45722b = listener;
+        this.f45723c = random;
+        this.f45724d = j10;
+        this.f45725e = eVar;
+        this.f45726f = j11;
+        this.f45732l = taskRunner.i();
+        this.f45735o = new ArrayDeque();
+        this.f45736p = new ArrayDeque();
+        this.f45739s = -1;
         if (Intrinsics.areEqual("GET", originalRequest.j())) {
-            ByteString.a aVar = ByteString.f43166o;
+            ByteString.a aVar = ByteString.f43214o;
             byte[] bArr = new byte[16];
             random.nextBytes(bArr);
-            Unit unit = Unit.f32008a;
-            this.f45679g = ByteString.a.j(aVar, bArr, 0, 0, 3, null).d();
+            Unit unit = Unit.f32056a;
+            this.f45727g = ByteString.a.j(aVar, bArr, 0, 0, 3, null).d();
             return;
         }
         throw new IllegalArgumentException(("Request must be GET: " + originalRequest.j()).toString());
@@ -351,10 +351,10 @@ public final class d implements WebSocket, g.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean s(pu.e eVar) {
-        if (eVar.f45718f || eVar.f45714b != null) {
+        if (eVar.f45766f || eVar.f45762b != null) {
             return false;
         }
-        if (eVar.f45716d != null && !new IntRange(8, 15).contains(eVar.f45716d.intValue())) {
+        if (eVar.f45764d != null && !new IntRange(8, 15).contains(eVar.f45764d.intValue())) {
             return false;
         }
         return true;
@@ -364,20 +364,20 @@ public final class d implements WebSocket, g.a {
         if (cu.e.f20042h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
-        fu.a aVar = this.f45681i;
+        fu.a aVar = this.f45729i;
         if (aVar != null) {
-            fu.d.j(this.f45684l, aVar, 0L, 2, null);
+            fu.d.j(this.f45732l, aVar, 0L, 2, null);
         }
     }
 
     private final synchronized boolean v(ByteString byteString, int i10) {
-        if (!this.f45693u && !this.f45690r) {
-            if (this.f45689q + byteString.G() > 16777216) {
+        if (!this.f45741u && !this.f45738r) {
+            if (this.f45737q + byteString.G() > 16777216) {
                 f(RNCWebViewManager.COMMAND_CLEAR_CACHE, null);
                 return false;
             }
-            this.f45689q += byteString.G();
-            this.f45688p.add(new c(i10, byteString));
+            this.f45737q += byteString.G();
+            this.f45736p.add(new c(i10, byteString));
             u();
             return true;
         }
@@ -393,23 +393,23 @@ public final class d implements WebSocket, g.a {
     @Override // pu.g.a
     public void b(ByteString bytes) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        this.f45674b.onMessage(this, bytes);
+        this.f45722b.onMessage(this, bytes);
     }
 
     @Override // pu.g.a
     public void c(String text) {
         Intrinsics.checkNotNullParameter(text, "text");
-        this.f45674b.onMessage(this, text);
+        this.f45722b.onMessage(this, text);
     }
 
     @Override // pu.g.a
     public synchronized void d(ByteString payload) {
         try {
             Intrinsics.checkNotNullParameter(payload, "payload");
-            if (!this.f45693u && (!this.f45690r || !this.f45688p.isEmpty())) {
-                this.f45687o.add(payload);
+            if (!this.f45741u && (!this.f45738r || !this.f45736p.isEmpty())) {
+                this.f45735o.add(payload);
                 u();
-                this.f45695w++;
+                this.f45743w++;
             }
         } finally {
         }
@@ -418,8 +418,8 @@ public final class d implements WebSocket, g.a {
     @Override // pu.g.a
     public synchronized void e(ByteString payload) {
         Intrinsics.checkNotNullParameter(payload, "payload");
-        this.f45696x++;
-        this.f45697y = false;
+        this.f45744x++;
+        this.f45745y = false;
     }
 
     @Override // okhttp3.WebSocket
@@ -436,24 +436,24 @@ public final class d implements WebSocket, g.a {
         if (i10 != -1) {
             synchronized (this) {
                 try {
-                    if (this.f45691s == -1) {
-                        this.f45691s = i10;
-                        this.f45692t = reason;
+                    if (this.f45739s == -1) {
+                        this.f45739s = i10;
+                        this.f45740t = reason;
                         abstractC0593d = null;
-                        if (this.f45690r && this.f45688p.isEmpty()) {
-                            AbstractC0593d abstractC0593d2 = this.f45686n;
-                            this.f45686n = null;
-                            gVar = this.f45682j;
-                            this.f45682j = null;
-                            hVar = this.f45683k;
-                            this.f45683k = null;
-                            this.f45684l.n();
+                        if (this.f45738r && this.f45736p.isEmpty()) {
+                            AbstractC0593d abstractC0593d2 = this.f45734n;
+                            this.f45734n = null;
+                            gVar = this.f45730j;
+                            this.f45730j = null;
+                            hVar = this.f45731k;
+                            this.f45731k = null;
+                            this.f45732l.n();
                             abstractC0593d = abstractC0593d2;
                         } else {
                             gVar = null;
                             hVar = null;
                         }
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                     } else {
                         throw new IllegalStateException("already closed");
                     }
@@ -462,9 +462,9 @@ public final class d implements WebSocket, g.a {
                 }
             }
             try {
-                this.f45674b.onClosing(this, i10, reason);
+                this.f45722b.onClosing(this, i10, reason);
                 if (abstractC0593d != null) {
-                    this.f45674b.onClosed(this, i10, reason);
+                    this.f45722b.onClosed(this, i10, reason);
                 }
                 if (hVar != null) {
                     return;
@@ -486,7 +486,7 @@ public final class d implements WebSocket, g.a {
     }
 
     public void l() {
-        Call call = this.f45680h;
+        Call call = this.f45728h;
         Intrinsics.checkNotNull(call);
         call.cancel();
     }
@@ -499,8 +499,8 @@ public final class d implements WebSocket, g.a {
                 String Y2 = Response.Y(response, "Upgrade", null, 2, null);
                 if (StringsKt.A("websocket", Y2, true)) {
                     String Y3 = Response.Y(response, "Sec-WebSocket-Accept", null, 2, null);
-                    ByteString.a aVar = ByteString.f43166o;
-                    String d10 = aVar.g(this.f45679g + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").E().d();
+                    ByteString.a aVar = ByteString.f43214o;
+                    String d10 = aVar.g(this.f45727g + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").E().d();
                     if (Intrinsics.areEqual(d10, Y3)) {
                         if (cVar != null) {
                             return;
@@ -519,18 +519,18 @@ public final class d implements WebSocket, g.a {
     public final synchronized boolean n(int i10, String str, long j10) {
         ByteString byteString;
         try {
-            pu.f.f45719a.c(i10);
+            pu.f.f45767a.c(i10);
             if (str != null) {
-                byteString = ByteString.f43166o.g(str);
+                byteString = ByteString.f43214o.g(str);
                 if (byteString.G() > 123) {
                     throw new IllegalArgumentException(("reason.size() > 123: " + str).toString());
                 }
             } else {
                 byteString = null;
             }
-            if (!this.f45693u && !this.f45690r) {
-                this.f45690r = true;
-                this.f45688p.add(new a(i10, byteString, j10));
+            if (!this.f45741u && !this.f45738r) {
+                this.f45738r = true;
+                this.f45736p.add(new a(i10, byteString, j10));
                 u();
                 return true;
             }
@@ -541,14 +541,14 @@ public final class d implements WebSocket, g.a {
 
     public final void o(OkHttpClient client) {
         Intrinsics.checkNotNullParameter(client, "client");
-        if (this.f45673a.f("Sec-WebSocket-Extensions") != null) {
+        if (this.f45721a.f("Sec-WebSocket-Extensions") != null) {
             p(new ProtocolException("Request header not permitted: 'Sec-WebSocket-Extensions'"), null);
             return;
         }
-        OkHttpClient c10 = client.E().j(okhttp3.e.f43123b).P(A).c();
-        Request b10 = this.f45673a.k().e("Upgrade", "websocket").e("Connection", "Upgrade").e("Sec-WebSocket-Key", this.f45679g).e("Sec-WebSocket-Version", "13").e("Sec-WebSocket-Extensions", "permessage-deflate").b();
+        OkHttpClient c10 = client.E().j(okhttp3.e.f43171b).P(A).c();
+        Request b10 = this.f45721a.k().e("Upgrade", "websocket").e("Connection", "Upgrade").e("Sec-WebSocket-Key", this.f45727g).e("Sec-WebSocket-Version", "13").e("Sec-WebSocket-Extensions", "permessage-deflate").b();
         gu.e eVar = new gu.e(c10, b10, true);
-        this.f45680h = eVar;
+        this.f45728h = eVar;
         Intrinsics.checkNotNull(eVar);
         eVar.J0(new f(b10));
     }
@@ -556,20 +556,20 @@ public final class d implements WebSocket, g.a {
     public final void p(Exception e10, Response response) {
         Intrinsics.checkNotNullParameter(e10, "e");
         synchronized (this) {
-            if (this.f45693u) {
+            if (this.f45741u) {
                 return;
             }
-            this.f45693u = true;
-            AbstractC0593d abstractC0593d = this.f45686n;
-            this.f45686n = null;
-            pu.g gVar = this.f45682j;
-            this.f45682j = null;
-            pu.h hVar = this.f45683k;
-            this.f45683k = null;
-            this.f45684l.n();
-            Unit unit = Unit.f32008a;
+            this.f45741u = true;
+            AbstractC0593d abstractC0593d = this.f45734n;
+            this.f45734n = null;
+            pu.g gVar = this.f45730j;
+            this.f45730j = null;
+            pu.h hVar = this.f45731k;
+            this.f45731k = null;
+            this.f45732l.n();
+            Unit unit = Unit.f32056a;
             try {
-                this.f45674b.onFailure(this, e10, response);
+                this.f45722b.onFailure(this, e10, response);
             } finally {
                 if (abstractC0593d != null) {
                     cu.e.m(abstractC0593d);
@@ -585,37 +585,37 @@ public final class d implements WebSocket, g.a {
     }
 
     public final l q() {
-        return this.f45674b;
+        return this.f45722b;
     }
 
     public final void r(String name, AbstractC0593d streams) {
         Throwable th2;
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(streams, "streams");
-        pu.e eVar = this.f45677e;
+        pu.e eVar = this.f45725e;
         Intrinsics.checkNotNull(eVar);
         synchronized (this) {
             try {
-                this.f45685m = name;
-                this.f45686n = streams;
-                this.f45683k = new pu.h(streams.a(), streams.g(), this.f45675c, eVar.f45713a, eVar.a(streams.a()), this.f45678f);
-                this.f45681i = new e();
-                long j10 = this.f45676d;
+                this.f45733m = name;
+                this.f45734n = streams;
+                this.f45731k = new pu.h(streams.a(), streams.g(), this.f45723c, eVar.f45761a, eVar.a(streams.a()), this.f45726f);
+                this.f45729i = new e();
+                long j10 = this.f45724d;
                 if (j10 != 0) {
                     try {
                         long nanos = TimeUnit.MILLISECONDS.toNanos(j10);
-                        fu.d dVar = this.f45684l;
+                        fu.d dVar = this.f45732l;
                         dVar.i(new g(name + " ping", this, nanos), nanos);
                     } catch (Throwable th3) {
                         th2 = th3;
                         throw th2;
                     }
                 }
-                if (!this.f45688p.isEmpty()) {
+                if (!this.f45736p.isEmpty()) {
                     u();
                 }
-                Unit unit = Unit.f32008a;
-                this.f45682j = new pu.g(streams.a(), streams.k(), this, eVar.f45713a, eVar.a(!streams.a()));
+                Unit unit = Unit.f32056a;
+                this.f45730j = new pu.g(streams.a(), streams.k(), this, eVar.f45761a, eVar.a(!streams.a()));
             } catch (Throwable th4) {
                 th2 = th4;
             }
@@ -625,12 +625,12 @@ public final class d implements WebSocket, g.a {
     @Override // okhttp3.WebSocket
     public boolean send(String text) {
         Intrinsics.checkNotNullParameter(text, "text");
-        return v(ByteString.f43166o.g(text), 1);
+        return v(ByteString.f43214o.g(text), 1);
     }
 
     public final void t() {
-        while (this.f45691s == -1) {
-            pu.g gVar = this.f45682j;
+        while (this.f45739s == -1) {
+            pu.g gVar = this.f45730j;
             Intrinsics.checkNotNull(gVar);
             gVar.a();
         }
@@ -644,28 +644,28 @@ public final class d implements WebSocket, g.a {
         AbstractC0593d abstractC0593d;
         synchronized (this) {
             try {
-                if (this.f45693u) {
+                if (this.f45741u) {
                     return false;
                 }
-                pu.h hVar2 = this.f45683k;
-                Object poll = this.f45687o.poll();
+                pu.h hVar2 = this.f45731k;
+                Object poll = this.f45735o.poll();
                 Object obj = null;
                 if (poll == null) {
-                    Object poll2 = this.f45688p.poll();
+                    Object poll2 = this.f45736p.poll();
                     if (poll2 instanceof a) {
-                        i10 = this.f45691s;
-                        str = this.f45692t;
+                        i10 = this.f45739s;
+                        str = this.f45740t;
                         if (i10 != -1) {
-                            abstractC0593d = this.f45686n;
-                            this.f45686n = null;
-                            gVar = this.f45682j;
-                            this.f45682j = null;
-                            hVar = this.f45683k;
-                            this.f45683k = null;
-                            this.f45684l.n();
+                            abstractC0593d = this.f45734n;
+                            this.f45734n = null;
+                            gVar = this.f45730j;
+                            this.f45730j = null;
+                            hVar = this.f45731k;
+                            this.f45731k = null;
+                            this.f45732l.n();
                         } else {
                             long a10 = ((a) poll2).a();
-                            this.f45684l.i(new h(this.f45685m + " cancel", true, this), TimeUnit.MILLISECONDS.toNanos(a10));
+                            this.f45732l.i(new h(this.f45733m + " cancel", true, this), TimeUnit.MILLISECONDS.toNanos(a10));
                             abstractC0593d = null;
                             gVar = null;
                             hVar = null;
@@ -687,7 +687,7 @@ public final class d implements WebSocket, g.a {
                     i10 = -1;
                     abstractC0593d = null;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 try {
                     if (poll != null) {
                         Intrinsics.checkNotNull(hVar2);
@@ -697,14 +697,14 @@ public final class d implements WebSocket, g.a {
                         Intrinsics.checkNotNull(hVar2);
                         hVar2.k(cVar.b(), cVar.a());
                         synchronized (this) {
-                            this.f45689q -= cVar.a().G();
+                            this.f45737q -= cVar.a().G();
                         }
                     } else if (obj instanceof a) {
                         a aVar = (a) obj;
                         Intrinsics.checkNotNull(hVar2);
                         hVar2.a(aVar.b(), aVar.c());
                         if (abstractC0593d != null) {
-                            l lVar = this.f45674b;
+                            l lVar = this.f45722b;
                             Intrinsics.checkNotNull(str);
                             lVar.onClosed(this, i10, str);
                         }
@@ -733,27 +733,27 @@ public final class d implements WebSocket, g.a {
         int i10;
         synchronized (this) {
             try {
-                if (this.f45693u) {
+                if (this.f45741u) {
                     return;
                 }
-                pu.h hVar = this.f45683k;
+                pu.h hVar = this.f45731k;
                 if (hVar == null) {
                     return;
                 }
-                if (this.f45697y) {
-                    i10 = this.f45694v;
+                if (this.f45745y) {
+                    i10 = this.f45742v;
                 } else {
                     i10 = -1;
                 }
-                this.f45694v++;
-                this.f45697y = true;
-                Unit unit = Unit.f32008a;
+                this.f45742v++;
+                this.f45745y = true;
+                Unit unit = Unit.f32056a;
                 if (i10 != -1) {
-                    p(new SocketTimeoutException("sent ping but didn't receive pong within " + this.f45676d + "ms (after " + (i10 - 1) + " successful ping/pongs)"), null);
+                    p(new SocketTimeoutException("sent ping but didn't receive pong within " + this.f45724d + "ms (after " + (i10 - 1) + " successful ping/pongs)"), null);
                     return;
                 }
                 try {
-                    hVar.m(ByteString.f43167p);
+                    hVar.m(ByteString.f43215p);
                 } catch (IOException e10) {
                     p(e10, null);
                 }

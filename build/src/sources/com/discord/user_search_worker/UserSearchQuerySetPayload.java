@@ -54,7 +54,7 @@ public final class UserSearchQuerySetPayload {
     }
 
     static {
-        o oVar = o.f48044e;
+        o oVar = o.f48092e;
         $childSerializers = new Lazy[]{null, null, l.b(oVar, new Function0() { // from class: com.discord.user_search_worker.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -106,17 +106,17 @@ public final class UserSearchQuerySetPayload {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new jt.f(n2.f31041a);
+        return new jt.f(n2.f31089a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new jt.f(n2.f31041a);
+        return new jt.f(n2.f31089a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new u0(n2.f31041a, x.f31095a);
+        return new u0(n2.f31089a, x.f31143a);
     }
 
     public static /* synthetic */ UserSearchQuerySetPayload copy$default(UserSearchQuerySetPayload userSearchQuerySetPayload, String str, UserSearchQuerySetFilters userSearchQuerySetFilters, List list, List list2, Map map, double d10, int i10, int i11, Object obj) {

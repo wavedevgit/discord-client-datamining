@@ -8,18 +8,18 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaLiteralAnnotationArgument extends ReflectJavaAnnotationArgument implements JavaLiteralAnnotationArgument {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f32653b;
+    private final Object f32701b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReflectJavaLiteralAnnotationArgument(Name name, @NotNull Object value) {
         super(name, null);
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f32653b = value;
+        this.f32701b = value;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaLiteralAnnotationArgument
     @NotNull
     public Object getValue() {
-        return this.f32653b;
+        return this.f32701b;
     }
 }

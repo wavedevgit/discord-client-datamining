@@ -14,22 +14,22 @@ import ne.w0;
 public final class i extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ContentResolver f36113e;
+    private final ContentResolver f36161e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Uri f36114f;
+    private Uri f36162f;
 
     /* renamed from: g  reason: collision with root package name */
-    private AssetFileDescriptor f36115g;
+    private AssetFileDescriptor f36163g;
 
     /* renamed from: h  reason: collision with root package name */
-    private FileInputStream f36116h;
+    private FileInputStream f36164h;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f36117i;
+    private long f36165i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f36118j;
+    private boolean f36166j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends m {
@@ -40,7 +40,7 @@ public final class i extends f {
 
     public i(Context context) {
         super(false);
-        this.f36113e = context.getContentResolver();
+        this.f36161e = context.getContentResolver();
     }
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
@@ -49,20 +49,20 @@ public final class i extends f {
         int i10 = 2000;
         try {
             Uri normalizeScheme = aVar.f13265a.normalizeScheme();
-            this.f36114f = normalizeScheme;
+            this.f36162f = normalizeScheme;
             q(aVar);
             if ("content".equals(normalizeScheme.getScheme())) {
                 Bundle bundle = new Bundle();
                 bundle.putBoolean("android.provider.extra.ACCEPT_ORIGINAL_MEDIA_FORMAT", true);
-                openAssetFileDescriptor = this.f36113e.openTypedAssetFileDescriptor(normalizeScheme, "*/*", bundle);
+                openAssetFileDescriptor = this.f36161e.openTypedAssetFileDescriptor(normalizeScheme, "*/*", bundle);
             } else {
-                openAssetFileDescriptor = this.f36113e.openAssetFileDescriptor(normalizeScheme, "r");
+                openAssetFileDescriptor = this.f36161e.openAssetFileDescriptor(normalizeScheme, "r");
             }
-            this.f36115g = openAssetFileDescriptor;
+            this.f36163g = openAssetFileDescriptor;
             if (openAssetFileDescriptor != null) {
                 long length = openAssetFileDescriptor.getLength();
                 FileInputStream fileInputStream = new FileInputStream(openAssetFileDescriptor.getFileDescriptor());
-                this.f36116h = fileInputStream;
+                this.f36164h = fileInputStream;
                 int i11 = (length > (-1L) ? 1 : (length == (-1L) ? 0 : -1));
                 if (i11 != 0 && aVar.f13271g > length) {
                     throw new a(null, 2008);
@@ -74,36 +74,36 @@ public final class i extends f {
                         FileChannel channel = fileInputStream.getChannel();
                         long size = channel.size();
                         if (size == 0) {
-                            this.f36117i = -1L;
+                            this.f36165i = -1L;
                         } else {
                             long position = size - channel.position();
-                            this.f36117i = position;
+                            this.f36165i = position;
                             if (position < 0) {
                                 throw new a(null, 2008);
                             }
                         }
                     } else {
                         long j10 = length - skip;
-                        this.f36117i = j10;
+                        this.f36165i = j10;
                         if (j10 < 0) {
                             throw new a(null, 2008);
                         }
                     }
                     long j11 = aVar.f13272h;
                     if (j11 != -1) {
-                        long j12 = this.f36117i;
+                        long j12 = this.f36165i;
                         if (j12 != -1) {
                             j11 = Math.min(j12, j11);
                         }
-                        this.f36117i = j11;
+                        this.f36165i = j11;
                     }
-                    this.f36118j = true;
+                    this.f36166j = true;
                     r(aVar);
                     long j13 = aVar.f13272h;
                     if (j13 != -1) {
                         return j13;
                     }
-                    return this.f36117i;
+                    return this.f36165i;
                 }
                 throw new a(null, 2008);
             }
@@ -120,17 +120,17 @@ public final class i extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36114f = null;
+        this.f36162f = null;
         try {
             try {
-                FileInputStream fileInputStream = this.f36116h;
+                FileInputStream fileInputStream = this.f36164h;
                 if (fileInputStream != null) {
                     fileInputStream.close();
                 }
-                this.f36116h = null;
+                this.f36164h = null;
                 try {
                     try {
-                        AssetFileDescriptor assetFileDescriptor = this.f36115g;
+                        AssetFileDescriptor assetFileDescriptor = this.f36163g;
                         if (assetFileDescriptor != null) {
                             assetFileDescriptor.close();
                         }
@@ -138,9 +138,9 @@ public final class i extends f {
                         throw new a(e10, 2000);
                     }
                 } finally {
-                    this.f36115g = null;
-                    if (this.f36118j) {
-                        this.f36118j = false;
+                    this.f36163g = null;
+                    if (this.f36166j) {
+                        this.f36166j = false;
                         p();
                     }
                 }
@@ -148,16 +148,16 @@ public final class i extends f {
                 throw new a(e11, 2000);
             }
         } catch (Throwable th2) {
-            this.f36116h = null;
+            this.f36164h = null;
             try {
                 try {
-                    AssetFileDescriptor assetFileDescriptor2 = this.f36115g;
+                    AssetFileDescriptor assetFileDescriptor2 = this.f36163g;
                     if (assetFileDescriptor2 != null) {
                         assetFileDescriptor2.close();
                     }
-                    this.f36115g = null;
-                    if (this.f36118j) {
-                        this.f36118j = false;
+                    this.f36163g = null;
+                    if (this.f36166j) {
+                        this.f36166j = false;
                         p();
                     }
                     throw th2;
@@ -165,9 +165,9 @@ public final class i extends f {
                     throw new a(e12, 2000);
                 }
             } finally {
-                this.f36115g = null;
-                if (this.f36118j) {
-                    this.f36118j = false;
+                this.f36163g = null;
+                if (this.f36166j) {
+                    this.f36166j = false;
                     p();
                 }
             }
@@ -176,7 +176,7 @@ public final class i extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36114f;
+        return this.f36162f;
     }
 
     @Override // le.j
@@ -184,7 +184,7 @@ public final class i extends f {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f36117i;
+        long j10 = this.f36165i;
         if (j10 == 0) {
             return -1;
         }
@@ -195,13 +195,13 @@ public final class i extends f {
                 throw new a(e10, 2000);
             }
         }
-        int read = ((FileInputStream) w0.j(this.f36116h)).read(bArr, i10, i11);
+        int read = ((FileInputStream) w0.j(this.f36164h)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        long j11 = this.f36117i;
+        long j11 = this.f36165i;
         if (j11 != -1) {
-            this.f36117i = j11 - read;
+            this.f36165i = j11 - read;
         }
         o(read);
         return read;

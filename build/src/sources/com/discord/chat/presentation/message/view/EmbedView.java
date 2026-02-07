@@ -384,7 +384,7 @@ public final class EmbedView extends FrameLayout {
     public static final Unit setEmbed_uKkM4jM$lambda$6(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(str), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -524,7 +524,7 @@ public final class EmbedView extends FrameLayout {
     public static final Unit setFields_SAQFhFE$lambda$27(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(str), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -616,7 +616,7 @@ public final class EmbedView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMediaEmbed$lambda$33(EmbedView embedView) {
         embedView.binding.spoiler.makeObscureHideButtonHidden();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void setProvider(final CharSequence charSequence, Integer num, final Function1<? super CharSequence, Unit> function1) {

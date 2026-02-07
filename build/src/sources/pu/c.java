@@ -11,38 +11,38 @@ import qu.o;
 public final class c implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f45668d;
+    private final boolean f45716d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Buffer f45669e;
+    private final Buffer f45717e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Inflater f45670i;
+    private final Inflater f45718i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final o f45671o;
+    private final o f45719o;
 
     public c(boolean z10) {
-        this.f45668d = z10;
+        this.f45716d = z10;
         Buffer buffer = new Buffer();
-        this.f45669e = buffer;
+        this.f45717e = buffer;
         Inflater inflater = new Inflater(true);
-        this.f45670i = inflater;
-        this.f45671o = new o((Source) buffer, inflater);
+        this.f45718i = inflater;
+        this.f45719o = new o((Source) buffer, inflater);
     }
 
     public final void a(Buffer buffer) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        if (this.f45669e.size() == 0) {
-            if (this.f45668d) {
-                this.f45670i.reset();
+        if (this.f45717e.size() == 0) {
+            if (this.f45716d) {
+                this.f45718i.reset();
             }
-            this.f45669e.B0(buffer);
-            this.f45669e.writeInt(65535);
-            long bytesRead = this.f45670i.getBytesRead() + this.f45669e.size();
+            this.f45717e.B0(buffer);
+            this.f45717e.writeInt(65535);
+            long bytesRead = this.f45718i.getBytesRead() + this.f45717e.size();
             do {
-                this.f45671o.a(buffer, LongCompanionObject.MAX_VALUE);
-            } while (this.f45670i.getBytesRead() < bytesRead);
+                this.f45719o.a(buffer, LongCompanionObject.MAX_VALUE);
+            } while (this.f45718i.getBytesRead() < bytesRead);
             return;
         }
         throw new IllegalArgumentException("Failed requirement.");
@@ -50,6 +50,6 @@ public final class c implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f45671o.close();
+        this.f45719o.close();
     }
 }

@@ -62,7 +62,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             java.lang.String r1 = r9.$uri
             com.facebook.react.bridge.Promise r2 = r9.$promise
             double r3 = r9.$chunkSize
-            kotlin.Result$a r5 = kotlin.Result.f32005e     // Catch: java.lang.Throwable -> La3
+            kotlin.Result$a r5 = kotlin.Result.f32053e     // Catch: java.lang.Throwable -> La3
             java.util.Locale r5 = java.util.Locale.ROOT     // Catch: java.lang.Throwable -> La3
             java.lang.String r10 = r10.toLowerCase(r5)     // Catch: java.lang.Throwable -> La3
             java.lang.String r5 = "toLowerCase(...)"
@@ -135,7 +135,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             java.lang.String r0 = ""
         Lad:
             r2.resolve(r0)     // Catch: java.lang.Throwable -> La3
-            kotlin.Unit r10 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> La3
+            kotlin.Unit r10 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> La3
             java.lang.Object r10 = kotlin.Result.b(r10)     // Catch: java.lang.Throwable -> La3
             goto Lc9
         Lb7:
@@ -144,7 +144,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             r0.<init>(r10)     // Catch: java.lang.Throwable -> La3
             throw r0     // Catch: java.lang.Throwable -> La3
         Lbf:
-            kotlin.Result$a r0 = kotlin.Result.f32005e
+            kotlin.Result$a r0 = kotlin.Result.f32053e
             java.lang.Object r10 = kotlin.c.a(r10)
             java.lang.Object r10 = kotlin.Result.b(r10)
         Lc9:
@@ -155,7 +155,7 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
             java.lang.String r2 = "Cannot get checksum of file"
             r0.reject(r1, r2, r10)
         Ld8:
-            kotlin.Unit r10 = kotlin.Unit.f32008a
+            kotlin.Unit r10 = kotlin.Unit.f32056a
             return r10
         Ldb:
             java.lang.IllegalStateException r10 = new java.lang.IllegalStateException
@@ -168,6 +168,6 @@ final class FileModule$getFileHash$1 extends k implements Function2<CoroutineSco
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$getFileHash$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((FileModule$getFileHash$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

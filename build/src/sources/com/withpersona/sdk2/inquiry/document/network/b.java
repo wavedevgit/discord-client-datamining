@@ -274,7 +274,7 @@ public final class b implements o<AbstractC0225b> {
                     r6 = 0
                     kotlinx.coroutines.z.e(r5, r6, r3, r6)
                 L55:
-                    kotlin.Unit r5 = kotlin.Unit.f32008a
+                    kotlin.Unit r5 = kotlin.Unit.f32056a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.b.c.a.emit(com.withpersona.sdk2.inquiry.document.network.b$b, kotlin.coroutines.Continuation):java.lang.Object");
@@ -318,7 +318,7 @@ public final class b implements o<AbstractC0225b> {
                 }
 
                 public final Object invoke(int i10, Continuation continuation) {
-                    return ((a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f32008a);
+                    return ((a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f32056a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
@@ -360,7 +360,7 @@ public final class b implements o<AbstractC0225b> {
                     if (emit == wr.b.f()) {
                         return emit;
                     }
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
 
                 @Override // kotlinx.coroutines.flow.FlowCollector
@@ -447,7 +447,7 @@ public final class b implements o<AbstractC0225b> {
                 L5b:
                     return r0
                 L5c:
-                    kotlin.Unit r7 = kotlin.Unit.f32008a
+                    kotlin.Unit r7 = kotlin.Unit.f32056a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.b.c.C0228b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -455,7 +455,7 @@ public final class b implements o<AbstractC0225b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-                return ((C0228b) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+                return ((C0228b) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -513,7 +513,7 @@ public final class b implements o<AbstractC0225b> {
                     kotlin.c.b(obj);
                     go.b bVar = this.f18560e.f18530c;
                     String str = this.f18560e.f18529b;
-                    MultipartBody.b.a aVar = MultipartBody.b.f42896c;
+                    MultipartBody.b.a aVar = MultipartBody.b.f42944c;
                     MultipartBody.b b10 = aVar.b("data[type]", "document-file");
                     MultipartBody.b b11 = aVar.b("data[attributes][document-id]", this.f18560e.f18531d);
                     MultipartBody.b b12 = aVar.b("data[attributes][capture-method]", this.f18560e.f18532e.d().d());
@@ -531,7 +531,7 @@ public final class b implements o<AbstractC0225b> {
 
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Continuation continuation) {
-                    return ((a) create(continuation)).invokeSuspend(Unit.f32008a);
+                    return ((a) create(continuation)).invokeSuspend(Unit.f32056a);
                 }
             }
 
@@ -570,7 +570,7 @@ public final class b implements o<AbstractC0225b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0230c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((C0230c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -644,7 +644,7 @@ public final class b implements o<AbstractC0225b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-                return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+                return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -672,7 +672,7 @@ public final class b implements o<AbstractC0225b> {
                 }
             } else {
                 kotlin.c.b(obj);
-                go.d dVar = new go.d(new File(b.this.f18532e.c()), MediaType.f42872e.c(b.this.f18533f.a(b.this.f18532e.c())));
+                go.d dVar = new go.d(new File(b.this.f18532e.c()), MediaType.f42920e.c(b.this.f18533f.a(b.this.f18532e.c())));
                 b10 = os.i.b(b.this.f18534g, m0.b(), null, new C0230c(b.this, dVar, null), 2, null);
                 Flow B = g.B(g.v(new d(b10, b.this, null)), g.v(new C0228b(dVar, null)));
                 a aVar = new a((FlowCollector) this.f18543e);
@@ -681,12 +681,12 @@ public final class b implements o<AbstractC0225b> {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

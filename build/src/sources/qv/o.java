@@ -3,18 +3,18 @@ package qv;
 public class o extends r {
 
     /* renamed from: f  reason: collision with root package name */
-    private String f48284f;
+    private String f48332f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f48285g;
+    private String f48333g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f48286h;
+    private String f48334h;
 
     public o(String str, String str2, String str3) {
-        this.f48284f = str;
-        this.f48285g = str2;
-        this.f48286h = str3;
+        this.f48332f = str;
+        this.f48333g = str2;
+        this.f48334h = str3;
     }
 
     @Override // qv.r
@@ -23,14 +23,14 @@ public class o extends r {
     }
 
     public String m() {
-        return this.f48285g;
+        return this.f48333g;
     }
 
     public String n() {
-        return this.f48284f;
+        return this.f48332f;
     }
 
     public String o() {
-        return this.f48286h;
+        return this.f48334h;
     }
 }

@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/keyboard/native/PortalKeyboardFooterIOS.ios.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68471: for (var _fun68471_ip = 0;;) switch (_fun68471_ip) {
+        _fun68921: for (var _fun68921_ip = 0;;) switch (_fun68921_ip) {
             case 0:
                 var0 = arg0;
                 var14 = var0.animatedSheetIndex;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.portalHostName;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun68471_ip = 33;
-                    continue _fun68471
+                    _fun68921_ip = 33;
+                    continue _fun68921
                 }
             case 27:
                 var6 = 'expression-footer';
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5.bind(var3)(var8);
                 var9 = var10.useAnimatedStyle;
                 var8 = function() {
-                    _fun68472: for (var _fun68472_ip = 0;;) switch (_fun68472_ip) {
+                    _fun68922: for (var _fun68922_ip = 0;;) switch (_fun68922_ip) {
                         case 0:
                             var1 = _closure1_slot0;
                             var0 = _closure1_slot2;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var1)();
                             var1 = 0;
                             if (!(!(var0 >= var1))) {
-                                _fun68472_ip = 239;
-                                continue _fun68472
+                                _fun68922_ip = 239;
+                                continue _fun68922
                             }
                         case 104:
                             var0 = {};
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = new Array(1);
                             var1[0] = var3;
                             var0.transform = var1;
-                            _fun68472_ip = 280;
-                            continue _fun68472;
+                            _fun68922_ip = 280;
+                            continue _fun68922;
                         case 239:
                             var1 = {};
                             var3 = {};
@@ -238,4 +238,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 1568, 8543, 3722, 670, 3928, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 1568, 8587, 3721, 670, 3927, 2]);

@@ -15,13 +15,13 @@ public abstract class e extends f {
     private static class a extends AbstractList implements RandomAccess, Serializable {
 
         /* renamed from: d  reason: collision with root package name */
-        final int[] f45021d;
+        final int[] f45069d;
 
         /* renamed from: e  reason: collision with root package name */
-        final int f45022e;
+        final int f45070e;
 
         /* renamed from: i  reason: collision with root package name */
-        final int f45023i;
+        final int f45071i;
 
         a(int[] iArr) {
             this(iArr, 0, iArr.length);
@@ -31,15 +31,15 @@ public abstract class e extends f {
         /* renamed from: b */
         public Integer get(int i10) {
             m.h(i10, size());
-            return Integer.valueOf(this.f45021d[this.f45022e + i10]);
+            return Integer.valueOf(this.f45069d[this.f45070e + i10]);
         }
 
         @Override // java.util.AbstractList, java.util.List
         /* renamed from: c */
         public Integer set(int i10, Integer num) {
             m.h(i10, size());
-            int[] iArr = this.f45021d;
-            int i11 = this.f45022e;
+            int[] iArr = this.f45069d;
+            int i11 = this.f45070e;
             int i12 = iArr[i11 + i10];
             iArr[i11 + i10] = ((Integer) m.j(num)).intValue();
             return Integer.valueOf(i12);
@@ -47,14 +47,14 @@ public abstract class e extends f {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
         public boolean contains(Object obj) {
-            if ((obj instanceof Integer) && e.i(this.f45021d, ((Integer) obj).intValue(), this.f45022e, this.f45023i) != -1) {
+            if ((obj instanceof Integer) && e.i(this.f45069d, ((Integer) obj).intValue(), this.f45070e, this.f45071i) != -1) {
                 return true;
             }
             return false;
         }
 
         int[] d() {
-            return Arrays.copyOfRange(this.f45021d, this.f45022e, this.f45023i);
+            return Arrays.copyOfRange(this.f45069d, this.f45070e, this.f45071i);
         }
 
         @Override // java.util.AbstractList, java.util.Collection, java.util.List
@@ -69,7 +69,7 @@ public abstract class e extends f {
                     return false;
                 }
                 for (int i10 = 0; i10 < size; i10++) {
-                    if (this.f45021d[this.f45022e + i10] != aVar.f45021d[aVar.f45022e + i10]) {
+                    if (this.f45069d[this.f45070e + i10] != aVar.f45069d[aVar.f45070e + i10]) {
                         return false;
                     }
                 }
@@ -81,8 +81,8 @@ public abstract class e extends f {
         @Override // java.util.AbstractList, java.util.Collection, java.util.List
         public int hashCode() {
             int i10 = 1;
-            for (int i11 = this.f45022e; i11 < this.f45023i; i11++) {
-                i10 = (i10 * 31) + e.g(this.f45021d[i11]);
+            for (int i11 = this.f45070e; i11 < this.f45071i; i11++) {
+                i10 = (i10 * 31) + e.g(this.f45069d[i11]);
             }
             return i10;
         }
@@ -90,8 +90,8 @@ public abstract class e extends f {
         @Override // java.util.AbstractList, java.util.List
         public int indexOf(Object obj) {
             int i10;
-            if ((obj instanceof Integer) && (i10 = e.i(this.f45021d, ((Integer) obj).intValue(), this.f45022e, this.f45023i)) >= 0) {
-                return i10 - this.f45022e;
+            if ((obj instanceof Integer) && (i10 = e.i(this.f45069d, ((Integer) obj).intValue(), this.f45070e, this.f45071i)) >= 0) {
+                return i10 - this.f45070e;
             }
             return -1;
         }
@@ -104,15 +104,15 @@ public abstract class e extends f {
         @Override // java.util.AbstractList, java.util.List
         public int lastIndexOf(Object obj) {
             int j10;
-            if ((obj instanceof Integer) && (j10 = e.j(this.f45021d, ((Integer) obj).intValue(), this.f45022e, this.f45023i)) >= 0) {
-                return j10 - this.f45022e;
+            if ((obj instanceof Integer) && (j10 = e.j(this.f45069d, ((Integer) obj).intValue(), this.f45070e, this.f45071i)) >= 0) {
+                return j10 - this.f45070e;
             }
             return -1;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
         public int size() {
-            return this.f45023i - this.f45022e;
+            return this.f45071i - this.f45070e;
         }
 
         @Override // java.util.AbstractList, java.util.List
@@ -121,8 +121,8 @@ public abstract class e extends f {
             if (i10 == i11) {
                 return Collections.EMPTY_LIST;
             }
-            int[] iArr = this.f45021d;
-            int i12 = this.f45022e;
+            int[] iArr = this.f45069d;
+            int i12 = this.f45070e;
             return new a(iArr, i10 + i12, i12 + i11);
         }
 
@@ -130,13 +130,13 @@ public abstract class e extends f {
         public String toString() {
             StringBuilder sb2 = new StringBuilder(size() * 5);
             sb2.append('[');
-            sb2.append(this.f45021d[this.f45022e]);
-            int i10 = this.f45022e;
+            sb2.append(this.f45069d[this.f45070e]);
+            int i10 = this.f45070e;
             while (true) {
                 i10++;
-                if (i10 < this.f45023i) {
+                if (i10 < this.f45071i) {
                     sb2.append(", ");
-                    sb2.append(this.f45021d[i10]);
+                    sb2.append(this.f45069d[i10]);
                 } else {
                     sb2.append(']');
                     return sb2.toString();
@@ -145,9 +145,9 @@ public abstract class e extends f {
         }
 
         a(int[] iArr, int i10, int i11) {
-            this.f45021d = iArr;
-            this.f45022e = i10;
-            this.f45023i = i11;
+            this.f45069d = iArr;
+            this.f45070e = i10;
+            this.f45071i = i11;
         }
     }
 

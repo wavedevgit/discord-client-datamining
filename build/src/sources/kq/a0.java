@@ -422,7 +422,7 @@ public abstract class a0 {
         if (error == null || !StringsKt.o1(error)) {
             i(textInputLayout, z10, i10, i11, i12);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -439,6 +439,6 @@ public abstract class a0 {
     public static final Unit s(TextInputLayout textInputLayout, Typeface it) {
         Intrinsics.checkNotNullParameter(it, "it");
         textInputLayout.setTypeface(it);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

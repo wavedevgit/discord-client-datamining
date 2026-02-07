@@ -36,15 +36,15 @@ public final class Pi2NavigationBar extends ConstraintLayout {
 
     private final void c(AttributeSet attributeSet, int i10, int i11) {
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, p.f49132a, i10, i11);
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, p.f49180a, i10, i11);
             Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
             int indexCount = obtainStyledAttributes.getIndexCount();
             for (int i12 = 0; i12 < indexCount; i12++) {
                 int index = obtainStyledAttributes.getIndex(i12);
-                if (index == p.f49133b) {
-                    this.f19549d.f50799b.setImageResource(obtainStyledAttributes.getResourceId(index, l.f49084s));
-                } else if (index == p.f49134c) {
-                    this.f19549d.f50800c.setImageResource(obtainStyledAttributes.getResourceId(index, l.f49086u));
+                if (index == p.f49181b) {
+                    this.f19549d.f50847b.setImageResource(obtainStyledAttributes.getResourceId(index, l.f49132s));
+                } else if (index == p.f49182c) {
+                    this.f19549d.f50848c.setImageResource(obtainStyledAttributes.getResourceId(index, l.f49134u));
                 }
             }
             obtainStyledAttributes.recycle();
@@ -63,7 +63,7 @@ public final class Pi2NavigationBar extends ConstraintLayout {
 
     @NotNull
     public final View getBackButton() {
-        ImageView navBarBackButton = this.f19549d.f50799b;
+        ImageView navBarBackButton = this.f19549d.f50847b;
         Intrinsics.checkNotNullExpressionValue(navBarBackButton, "navBarBackButton");
         return navBarBackButton;
     }
@@ -74,11 +74,11 @@ public final class Pi2NavigationBar extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(back, "back");
         Intrinsics.checkNotNullParameter(cancel, "cancel");
         if (!state.d()) {
-            this.f19549d.f50799b.setVisibility(8);
-            this.f19549d.f50800c.setVisibility(8);
+            this.f19549d.f50847b.setVisibility(8);
+            this.f19549d.f50848c.setVisibility(8);
             return;
         }
-        ImageView imageView = this.f19549d.f50799b;
+        ImageView imageView = this.f19549d.f50847b;
         int i11 = 4;
         if (state.b()) {
             i10 = 0;
@@ -86,36 +86,36 @@ public final class Pi2NavigationBar extends ConstraintLayout {
             i10 = 4;
         }
         imageView.setVisibility(i10);
-        this.f19549d.f50799b.setOnClickListener(new View.OnClickListener() { // from class: bq.h
+        this.f19549d.f50847b.setOnClickListener(new View.OnClickListener() { // from class: bq.h
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Pi2NavigationBar.j(Function0.this, view);
             }
         });
-        ImageView imageView2 = this.f19549d.f50800c;
+        ImageView imageView2 = this.f19549d.f50848c;
         if (state.c()) {
             i11 = 0;
         }
         imageView2.setVisibility(i11);
-        this.f19549d.f50800c.setOnClickListener(new View.OnClickListener() { // from class: bq.i
+        this.f19549d.f50848c.setOnClickListener(new View.OnClickListener() { // from class: bq.i
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Pi2NavigationBar.k(Function0.this, view);
             }
         });
-        this.f19549d.f50799b.setEnabled(state.e());
-        this.f19549d.f50800c.setEnabled(state.e());
+        this.f19549d.f50847b.setEnabled(state.e());
+        this.f19549d.f50848c.setEnabled(state.e());
     }
 
     @Override // android.view.View
     protected void onFinishInflate() {
         super.onFinishInflate();
-        int dimensionPixelOffset = getContext().getResources().getDimensionPixelOffset(k.f49064a);
+        int dimensionPixelOffset = getContext().getResources().getDimensionPixelOffset(k.f49112a);
         setPadding(dimensionPixelOffset, dimensionPixelOffset, dimensionPixelOffset, dimensionPixelOffset);
     }
 
     public final void setControlsColor(int i10) {
-        this.f19549d.f50799b.setColorFilter(i10);
-        this.f19549d.f50800c.setColorFilter(i10);
+        this.f19549d.f50847b.setColorFilter(i10);
+        this.f19549d.f50848c.setColorFilter(i10);
     }
 }

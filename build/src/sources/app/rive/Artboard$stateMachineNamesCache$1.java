@@ -57,6 +57,6 @@ public final class Artboard$stateMachineNamesCache$1 extends k implements Functi
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<String>> continuation) {
-        return ((Artboard$stateMachineNamesCache$1) create(continuation)).invokeSuspend(Unit.f32008a);
+        return ((Artboard$stateMachineNamesCache$1) create(continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -38,8 +38,8 @@ public /* synthetic */ class TapForwardFooterData$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{p0.f31057a, n2Var, n2Var};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{p0.f31105a, n2Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

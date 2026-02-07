@@ -140,7 +140,7 @@ public final class o implements dn.k {
         this.f21825b = binding;
         Context context = binding.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = rp.s.f(context, jp.a.f30774n, null, false, 6, null);
+        Integer f10 = rp.s.f(context, jp.a.f30822n, null, false, 6, null);
         if (f10 != null) {
             binding.f23373f.setAnimation(f10.intValue());
             binding.f23373f.v();
@@ -240,13 +240,13 @@ public final class o implements dn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(r2.d.a aVar) {
         aVar.c().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(r2.d.a aVar) {
         aVar.d().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // dn.k

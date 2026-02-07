@@ -6,18 +6,18 @@ import java.util.Map;
 public final class a5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f45122a;
+    private final br.h f45170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f45123b;
+    private final br.h f45171b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.h f45124c;
+    private final br.h f45172c;
 
     public a5(br.h hVar, br.h hVar2, br.h hVar3) {
-        this.f45122a = hVar;
-        this.f45123b = hVar2;
-        this.f45124c = hVar3;
+        this.f45170a = hVar;
+        this.f45171b = hVar2;
+        this.f45172c = hVar3;
     }
 
     public static a5 a(br.h hVar, br.h hVar2, br.h hVar3) {
@@ -29,6 +29,6 @@ public final class a5 {
     }
 
     public z4 b(String str, String str2, String str3, String str4, Map map) {
-        return c((ActivityResultLauncher) this.f45122a.get(), (rq.b) this.f45123b.get(), (com.squareup.moshi.w) this.f45124c.get(), str, str2, str3, str4, map);
+        return c((ActivityResultLauncher) this.f45170a.get(), (rq.b) this.f45171b.get(), (com.squareup.moshi.w) this.f45172c.get(), str, str2, str3, str4, map);
     }
 }

@@ -41,7 +41,7 @@ public abstract class o {
         private static final SparseArray H;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f55198d;
+        private final int f55246d;
 
         static {
             b bVar = UNKNOWN_MOBILE_SUBTYPE;
@@ -89,7 +89,7 @@ public abstract class o {
         }
 
         b(int i10) {
-            this.f55198d = i10;
+            this.f55246d = i10;
         }
 
         public static b a(int i10) {
@@ -97,7 +97,7 @@ public abstract class o {
         }
 
         public int d() {
-            return this.f55198d;
+            return this.f55246d;
         }
     }
 
@@ -126,7 +126,7 @@ public abstract class o {
         private static final SparseArray F;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f55213d;
+        private final int f55261d;
 
         static {
             c cVar = MOBILE;
@@ -172,7 +172,7 @@ public abstract class o {
         }
 
         c(int i10) {
-            this.f55213d = i10;
+            this.f55261d = i10;
         }
 
         public static c a(int i10) {
@@ -180,7 +180,7 @@ public abstract class o {
         }
 
         public int d() {
-            return this.f55213d;
+            return this.f55261d;
         }
     }
 

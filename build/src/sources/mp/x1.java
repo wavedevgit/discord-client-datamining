@@ -20,7 +20,7 @@ import un.v;
 public abstract class x1 implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f37837d;
+    private boolean f37885d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends x1 {
@@ -28,19 +28,19 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final x1 f37852e;
+        private final x1 f37900e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final a1.b f37853i;
+        private final a1.b f37901i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final x1 f37854o;
+        private final x1 f37902o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final v.b f37855p;
+        private final v.b f37903p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final boolean f37856q;
+        private final boolean f37904q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -74,11 +74,11 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(nextState, "nextState");
             Intrinsics.checkNotNullParameter(completedPose, "completedPose");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37852e = nextState;
-            this.f37853i = completedPose;
-            this.f37854o = x1Var;
-            this.f37855p = cameraFacingMode;
-            this.f37856q = z10;
+            this.f37900e = nextState;
+            this.f37901i = completedPose;
+            this.f37902o = x1Var;
+            this.f37903p = cameraFacingMode;
+            this.f37904q = z10;
         }
 
         @Override // android.os.Parcelable
@@ -88,39 +88,39 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37854o;
+            return this.f37902o;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37855p;
+            return this.f37903p;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37852e.r();
+            return this.f37900e.r();
         }
 
         public final a1.b u() {
-            return this.f37853i;
+            return this.f37901i;
         }
 
         public final x1 v() {
-            return this.f37852e;
+            return this.f37900e;
         }
 
         public final boolean w() {
-            return this.f37856q;
+            return this.f37904q;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f37852e, i10);
-            dest.writeString(this.f37853i.name());
-            dest.writeParcelable(this.f37854o, i10);
-            dest.writeString(this.f37855p.name());
-            dest.writeInt(this.f37856q ? 1 : 0);
+            dest.writeParcelable(this.f37900e, i10);
+            dest.writeString(this.f37901i.name());
+            dest.writeParcelable(this.f37902o, i10);
+            dest.writeString(this.f37903p.name());
+            dest.writeInt(this.f37904q ? 1 : 0);
         }
     }
 
@@ -130,46 +130,46 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f37857e;
+        private final int f37905e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final yn.b f37858i;
+        private final yn.b f37906i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f37859o;
+        private final long f37907o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final un.v f37860p;
+        private final un.v f37908p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final long f37861q;
+        private final long f37909q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final float f37862r;
+        private final float f37910r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final yn.a f37863s;
+        private final yn.a f37911s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final List f37864t;
+        private final List f37912t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final x1 f37865u;
+        private final x1 f37913u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final s0 f37866v;
+        private final s0 f37914v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final boolean f37867w;
+        private final boolean f37915w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final v.b f37868x;
+        private final v.b f37916x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final boolean f37869y;
+        private final boolean f37917y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final List f37870z;
+        private final List f37918z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -241,67 +241,67 @@ public abstract class x1 implements Parcelable {
             v.b bVar4;
             boolean z13;
             if ((i11 & 1) != 0) {
-                i12 = cVar.f37857e;
+                i12 = cVar.f37905e;
             } else {
                 i12 = i10;
             }
             if ((i11 & 2) != 0) {
-                bVar3 = cVar.f37858i;
+                bVar3 = cVar.f37906i;
             } else {
                 bVar3 = bVar;
             }
             if ((i11 & 4) != 0) {
-                j12 = cVar.f37859o;
+                j12 = cVar.f37907o;
             } else {
                 j12 = j10;
             }
             if ((i11 & 8) != 0) {
-                vVar2 = cVar.f37860p;
+                vVar2 = cVar.f37908p;
             } else {
                 vVar2 = vVar;
             }
             if ((i11 & 16) != 0) {
-                j13 = cVar.f37861q;
+                j13 = cVar.f37909q;
             } else {
                 j13 = j11;
             }
             if ((i11 & 32) != 0) {
-                f11 = cVar.f37862r;
+                f11 = cVar.f37910r;
             } else {
                 f11 = f10;
             }
             if ((i11 & 64) != 0) {
-                aVar2 = cVar.f37863s;
+                aVar2 = cVar.f37911s;
             } else {
                 aVar2 = aVar;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                list2 = cVar.f37864t;
+                list2 = cVar.f37912t;
             } else {
                 list2 = list;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                x1Var2 = cVar.f37865u;
+                x1Var2 = cVar.f37913u;
             } else {
                 x1Var2 = x1Var;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                s0Var2 = cVar.f37866v;
+                s0Var2 = cVar.f37914v;
             } else {
                 s0Var2 = s0Var;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                z12 = cVar.f37867w;
+                z12 = cVar.f37915w;
             } else {
                 z12 = z10;
             }
             if ((i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-                bVar4 = cVar.f37868x;
+                bVar4 = cVar.f37916x;
             } else {
                 bVar4 = bVar2;
             }
             if ((i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                z13 = cVar.f37869y;
+                z13 = cVar.f37917y;
             } else {
                 z13 = z11;
             }
@@ -309,30 +309,30 @@ public abstract class x1 implements Parcelable {
         }
 
         public final float A() {
-            return this.f37862r;
+            return this.f37910r;
         }
 
         public final yn.b B() {
-            return this.f37858i;
+            return this.f37906i;
         }
 
         @Override // mp.z
         public boolean a() {
-            return this.f37867w;
+            return this.f37915w;
         }
 
         public final un.v b() {
-            return this.f37860p;
+            return this.f37908p;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37864t;
+            return this.f37912t;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37866v;
+            return this.f37914v;
         }
 
         @Override // android.os.Parcelable
@@ -353,7 +353,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f37857e == cVar.f37857e && this.f37858i == cVar.f37858i && this.f37859o == cVar.f37859o && Intrinsics.areEqual(this.f37860p, cVar.f37860p) && this.f37861q == cVar.f37861q && Float.compare(this.f37862r, cVar.f37862r) == 0 && Intrinsics.areEqual(this.f37863s, cVar.f37863s) && Intrinsics.areEqual(this.f37864t, cVar.f37864t) && Intrinsics.areEqual(this.f37865u, cVar.f37865u) && Intrinsics.areEqual(this.f37866v, cVar.f37866v) && this.f37867w == cVar.f37867w && this.f37868x == cVar.f37868x && this.f37869y == cVar.f37869y) {
+            if (this.f37905e == cVar.f37905e && this.f37906i == cVar.f37906i && this.f37907o == cVar.f37907o && Intrinsics.areEqual(this.f37908p, cVar.f37908p) && this.f37909q == cVar.f37909q && Float.compare(this.f37910r, cVar.f37910r) == 0 && Intrinsics.areEqual(this.f37911s, cVar.f37911s) && Intrinsics.areEqual(this.f37912t, cVar.f37912t) && Intrinsics.areEqual(this.f37913u, cVar.f37913u) && Intrinsics.areEqual(this.f37914v, cVar.f37914v) && this.f37915w == cVar.f37915w && this.f37916x == cVar.f37916x && this.f37917y == cVar.f37917y) {
                 return true;
             }
             return false;
@@ -372,71 +372,71 @@ public abstract class x1 implements Parcelable {
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = Integer.hashCode(this.f37857e) * 31;
-            yn.b bVar = this.f37858i;
+            int hashCode3 = Integer.hashCode(this.f37905e) * 31;
+            yn.b bVar = this.f37906i;
             int i10 = 0;
             if (bVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = bVar.hashCode();
             }
-            int hashCode4 = (((((((((hashCode3 + hashCode) * 31) + Long.hashCode(this.f37859o)) * 31) + this.f37860p.hashCode()) * 31) + Long.hashCode(this.f37861q)) * 31) + Float.hashCode(this.f37862r)) * 31;
-            yn.a aVar = this.f37863s;
+            int hashCode4 = (((((((((hashCode3 + hashCode) * 31) + Long.hashCode(this.f37907o)) * 31) + this.f37908p.hashCode()) * 31) + Long.hashCode(this.f37909q)) * 31) + Float.hashCode(this.f37910r)) * 31;
+            yn.a aVar = this.f37911s;
             if (aVar == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = aVar.hashCode();
             }
-            int hashCode5 = (((hashCode4 + hashCode2) * 31) + this.f37864t.hashCode()) * 31;
-            x1 x1Var = this.f37865u;
+            int hashCode5 = (((hashCode4 + hashCode2) * 31) + this.f37912t.hashCode()) * 31;
+            x1 x1Var = this.f37913u;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((((hashCode5 + i10) * 31) + this.f37866v.hashCode()) * 31) + Boolean.hashCode(this.f37867w)) * 31) + this.f37868x.hashCode()) * 31) + Boolean.hashCode(this.f37869y);
+            return ((((((((hashCode5 + i10) * 31) + this.f37914v.hashCode()) * 31) + Boolean.hashCode(this.f37915w)) * 31) + this.f37916x.hashCode()) * 31) + Boolean.hashCode(this.f37917y);
         }
 
         public final long i() {
-            return this.f37859o;
+            return this.f37907o;
         }
 
         @Override // mp.z
         public boolean l() {
-            return this.f37869y;
+            return this.f37917y;
         }
 
         public final long o() {
-            return this.f37861q;
+            return this.f37909q;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37865u;
+            return this.f37913u;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37868x;
+            return this.f37916x;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37870z;
+            return this.f37918z;
         }
 
         public String toString() {
-            int i10 = this.f37857e;
-            yn.b bVar = this.f37858i;
-            long j10 = this.f37859o;
-            un.v vVar = this.f37860p;
-            long j11 = this.f37861q;
-            float f10 = this.f37862r;
-            yn.a aVar = this.f37863s;
-            List list = this.f37864t;
-            x1 x1Var = this.f37865u;
-            s0 s0Var = this.f37866v;
-            boolean z10 = this.f37867w;
-            v.b bVar2 = this.f37868x;
-            boolean z11 = this.f37869y;
+            int i10 = this.f37905e;
+            yn.b bVar = this.f37906i;
+            long j10 = this.f37907o;
+            un.v vVar = this.f37908p;
+            long j11 = this.f37909q;
+            float f10 = this.f37910r;
+            yn.a aVar = this.f37911s;
+            List list = this.f37912t;
+            x1 x1Var = this.f37913u;
+            s0 s0Var = this.f37914v;
+            boolean z10 = this.f37915w;
+            v.b bVar2 = this.f37916x;
+            boolean z11 = this.f37917y;
             return "CountdownToCapture(countDown=" + i10 + ", selfieError=" + bVar + ", startCaptureTimestamp=" + j10 + ", cameraProperties=" + vVar + ", startSelfieTimestamp=" + j11 + ", poseScore=" + f10 + ", brightnessInfo=" + aVar + ", posesNeeded=" + list + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", autoCaptureSupported=" + z10 + ", cameraFacingMode=" + bVar2 + ", isFlashEnabled=" + z11 + ")";
         }
 
@@ -449,39 +449,39 @@ public abstract class x1 implements Parcelable {
         }
 
         public final yn.a w() {
-            return this.f37863s;
+            return this.f37911s;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f37857e);
-            yn.b bVar = this.f37858i;
+            dest.writeInt(this.f37905e);
+            yn.b bVar = this.f37906i;
             if (bVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 dest.writeString(bVar.name());
             }
-            dest.writeLong(this.f37859o);
-            dest.writeParcelable(this.f37860p, i10);
-            dest.writeLong(this.f37861q);
-            dest.writeFloat(this.f37862r);
-            dest.writeParcelable(this.f37863s, i10);
-            List<a1.b> list = this.f37864t;
+            dest.writeLong(this.f37907o);
+            dest.writeParcelable(this.f37908p, i10);
+            dest.writeLong(this.f37909q);
+            dest.writeFloat(this.f37910r);
+            dest.writeParcelable(this.f37911s, i10);
+            List<a1.b> list = this.f37912t;
             dest.writeInt(list.size());
             for (a1.b bVar2 : list) {
                 dest.writeString(bVar2.name());
             }
-            dest.writeParcelable(this.f37865u, i10);
-            this.f37866v.writeToParcel(dest, i10);
-            dest.writeInt(this.f37867w ? 1 : 0);
-            dest.writeString(this.f37868x.name());
-            dest.writeInt(this.f37869y ? 1 : 0);
+            dest.writeParcelable(this.f37913u, i10);
+            this.f37914v.writeToParcel(dest, i10);
+            dest.writeInt(this.f37915w ? 1 : 0);
+            dest.writeString(this.f37916x.name());
+            dest.writeInt(this.f37917y ? 1 : 0);
         }
 
         public final int x() {
-            return this.f37857e;
+            return this.f37905e;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -491,20 +491,20 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(posesNeeded, "posesNeeded");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37857e = i10;
-            this.f37858i = bVar;
-            this.f37859o = j10;
-            this.f37860p = cameraProperties;
-            this.f37861q = j11;
-            this.f37862r = f10;
-            this.f37863s = aVar;
-            this.f37864t = posesNeeded;
-            this.f37865u = x1Var;
-            this.f37866v = poseConfigs;
-            this.f37867w = z10;
-            this.f37868x = cameraFacingMode;
-            this.f37869y = z11;
-            this.f37870z = CollectionsKt.l();
+            this.f37905e = i10;
+            this.f37906i = bVar;
+            this.f37907o = j10;
+            this.f37908p = cameraProperties;
+            this.f37909q = j11;
+            this.f37910r = f10;
+            this.f37911s = aVar;
+            this.f37912t = posesNeeded;
+            this.f37913u = x1Var;
+            this.f37914v = poseConfigs;
+            this.f37915w = z10;
+            this.f37916x = cameraFacingMode;
+            this.f37917y = z11;
+            this.f37918z = CollectionsKt.l();
         }
     }
 
@@ -514,40 +514,40 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f37871e;
+        private final int f37919e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final yn.b f37872i;
+        private final yn.b f37920i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final un.v f37873o;
+        private final un.v f37921o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final List f37874p;
+        private final List f37922p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final long f37875q;
+        private final long f37923q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final boolean f37876r;
+        private final boolean f37924r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final long f37877s;
+        private final long f37925s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final x1 f37878t;
+        private final x1 f37926t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final s0 f37879u;
+        private final s0 f37927u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final v.b f37880v;
+        private final v.b f37928v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final boolean f37881w;
+        private final boolean f37929w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final List f37882x;
+        private final List f37930x;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -621,55 +621,55 @@ public abstract class x1 implements Parcelable {
             v.b bVar4;
             boolean z13;
             if ((i11 & 1) != 0) {
-                i10 = dVar.f37871e;
+                i10 = dVar.f37919e;
             }
             if ((i11 & 2) != 0) {
-                bVar3 = dVar.f37872i;
+                bVar3 = dVar.f37920i;
             } else {
                 bVar3 = bVar;
             }
             if ((i11 & 4) != 0) {
-                vVar2 = dVar.f37873o;
+                vVar2 = dVar.f37921o;
             } else {
                 vVar2 = vVar;
             }
             if ((i11 & 8) != 0) {
-                list2 = dVar.f37874p;
+                list2 = dVar.f37922p;
             } else {
                 list2 = list;
             }
             if ((i11 & 16) != 0) {
-                j12 = dVar.f37875q;
+                j12 = dVar.f37923q;
             } else {
                 j12 = j10;
             }
             if ((i11 & 32) != 0) {
-                z12 = dVar.f37876r;
+                z12 = dVar.f37924r;
             } else {
                 z12 = z10;
             }
             if ((i11 & 64) != 0) {
-                j13 = dVar.f37877s;
+                j13 = dVar.f37925s;
             } else {
                 j13 = j11;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                x1Var2 = dVar.f37878t;
+                x1Var2 = dVar.f37926t;
             } else {
                 x1Var2 = x1Var;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                s0Var2 = dVar.f37879u;
+                s0Var2 = dVar.f37927u;
             } else {
                 s0Var2 = s0Var;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                bVar4 = dVar.f37880v;
+                bVar4 = dVar.f37928v;
             } else {
                 bVar4 = bVar2;
             }
             if ((i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                z13 = dVar.f37881w;
+                z13 = dVar.f37929w;
             } else {
                 z13 = z11;
             }
@@ -678,22 +678,22 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean a() {
-            return this.f37876r;
+            return this.f37924r;
         }
 
         @Override // mp.a0
         public un.v b() {
-            return this.f37873o;
+            return this.f37921o;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37874p;
+            return this.f37922p;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37879u;
+            return this.f37927u;
         }
 
         @Override // android.os.Parcelable
@@ -714,7 +714,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             d dVar = (d) obj;
-            if (this.f37871e == dVar.f37871e && this.f37872i == dVar.f37872i && Intrinsics.areEqual(this.f37873o, dVar.f37873o) && Intrinsics.areEqual(this.f37874p, dVar.f37874p) && this.f37875q == dVar.f37875q && this.f37876r == dVar.f37876r && this.f37877s == dVar.f37877s && Intrinsics.areEqual(this.f37878t, dVar.f37878t) && Intrinsics.areEqual(this.f37879u, dVar.f37879u) && this.f37880v == dVar.f37880v && this.f37881w == dVar.f37881w) {
+            if (this.f37919e == dVar.f37919e && this.f37920i == dVar.f37920i && Intrinsics.areEqual(this.f37921o, dVar.f37921o) && Intrinsics.areEqual(this.f37922p, dVar.f37922p) && this.f37923q == dVar.f37923q && this.f37924r == dVar.f37924r && this.f37925s == dVar.f37925s && Intrinsics.areEqual(this.f37926t, dVar.f37926t) && Intrinsics.areEqual(this.f37927u, dVar.f37927u) && this.f37928v == dVar.f37928v && this.f37929w == dVar.f37929w) {
                 return true;
             }
             return false;
@@ -732,25 +732,25 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = Integer.hashCode(this.f37871e) * 31;
-            yn.b bVar = this.f37872i;
+            int hashCode2 = Integer.hashCode(this.f37919e) * 31;
+            yn.b bVar = this.f37920i;
             int i10 = 0;
             if (bVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = bVar.hashCode();
             }
-            int hashCode3 = (((((((((((hashCode2 + hashCode) * 31) + this.f37873o.hashCode()) * 31) + this.f37874p.hashCode()) * 31) + Long.hashCode(this.f37875q)) * 31) + Boolean.hashCode(this.f37876r)) * 31) + Long.hashCode(this.f37877s)) * 31;
-            x1 x1Var = this.f37878t;
+            int hashCode3 = (((((((((((hashCode2 + hashCode) * 31) + this.f37921o.hashCode()) * 31) + this.f37922p.hashCode()) * 31) + Long.hashCode(this.f37923q)) * 31) + Boolean.hashCode(this.f37924r)) * 31) + Long.hashCode(this.f37925s)) * 31;
+            x1 x1Var = this.f37926t;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((hashCode3 + i10) * 31) + this.f37879u.hashCode()) * 31) + this.f37880v.hashCode()) * 31) + Boolean.hashCode(this.f37881w);
+            return ((((((hashCode3 + i10) * 31) + this.f37927u.hashCode()) * 31) + this.f37928v.hashCode()) * 31) + Boolean.hashCode(this.f37929w);
         }
 
         @Override // mp.a0
         public long i() {
-            return this.f37875q;
+            return this.f37923q;
         }
 
         @Override // mp.a0
@@ -760,41 +760,41 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean l() {
-            return this.f37881w;
+            return this.f37929w;
         }
 
         @Override // mp.a0
         public long o() {
-            return this.f37877s;
+            return this.f37925s;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37878t;
+            return this.f37926t;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37880v;
+            return this.f37928v;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37882x;
+            return this.f37930x;
         }
 
         public String toString() {
-            int i10 = this.f37871e;
-            yn.b bVar = this.f37872i;
-            un.v vVar = this.f37873o;
-            List list = this.f37874p;
-            long j10 = this.f37875q;
-            boolean z10 = this.f37876r;
-            long j11 = this.f37877s;
-            x1 x1Var = this.f37878t;
-            s0 s0Var = this.f37879u;
-            v.b bVar2 = this.f37880v;
-            boolean z11 = this.f37881w;
+            int i10 = this.f37919e;
+            yn.b bVar = this.f37920i;
+            un.v vVar = this.f37921o;
+            List list = this.f37922p;
+            long j10 = this.f37923q;
+            boolean z10 = this.f37924r;
+            long j11 = this.f37925s;
+            x1 x1Var = this.f37926t;
+            s0 s0Var = this.f37927u;
+            v.b bVar2 = this.f37928v;
+            boolean z11 = this.f37929w;
             return "CountdownToManualCapture(countDown=" + i10 + ", selfieError=" + bVar + ", cameraProperties=" + vVar + ", posesNeeded=" + list + ", startCaptureTimestamp=" + j10 + ", autoCaptureSupported=" + z10 + ", startSelfieTimestamp=" + j11 + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", cameraFacingMode=" + bVar2 + ", isFlashEnabled=" + z11 + ")";
         }
 
@@ -807,37 +807,37 @@ public abstract class x1 implements Parcelable {
         }
 
         public final int w() {
-            return this.f37871e;
+            return this.f37919e;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f37871e);
-            yn.b bVar = this.f37872i;
+            dest.writeInt(this.f37919e);
+            yn.b bVar = this.f37920i;
             if (bVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 dest.writeString(bVar.name());
             }
-            dest.writeParcelable(this.f37873o, i10);
-            List<a1.b> list = this.f37874p;
+            dest.writeParcelable(this.f37921o, i10);
+            List<a1.b> list = this.f37922p;
             dest.writeInt(list.size());
             for (a1.b bVar2 : list) {
                 dest.writeString(bVar2.name());
             }
-            dest.writeLong(this.f37875q);
-            dest.writeInt(this.f37876r ? 1 : 0);
-            dest.writeLong(this.f37877s);
-            dest.writeParcelable(this.f37878t, i10);
-            this.f37879u.writeToParcel(dest, i10);
-            dest.writeString(this.f37880v.name());
-            dest.writeInt(this.f37881w ? 1 : 0);
+            dest.writeLong(this.f37923q);
+            dest.writeInt(this.f37924r ? 1 : 0);
+            dest.writeLong(this.f37925s);
+            dest.writeParcelable(this.f37926t, i10);
+            this.f37927u.writeToParcel(dest, i10);
+            dest.writeString(this.f37928v.name());
+            dest.writeInt(this.f37929w ? 1 : 0);
         }
 
         public final yn.b x() {
-            return this.f37872i;
+            return this.f37920i;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -847,18 +847,18 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(posesNeeded, "posesNeeded");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37871e = i10;
-            this.f37872i = bVar;
-            this.f37873o = cameraProperties;
-            this.f37874p = posesNeeded;
-            this.f37875q = j10;
-            this.f37876r = z10;
-            this.f37877s = j11;
-            this.f37878t = x1Var;
-            this.f37879u = poseConfigs;
-            this.f37880v = cameraFacingMode;
-            this.f37881w = z11;
-            this.f37882x = CollectionsKt.l();
+            this.f37919e = i10;
+            this.f37920i = bVar;
+            this.f37921o = cameraProperties;
+            this.f37922p = posesNeeded;
+            this.f37923q = j10;
+            this.f37924r = z10;
+            this.f37925s = j11;
+            this.f37926t = x1Var;
+            this.f37927u = poseConfigs;
+            this.f37928v = cameraFacingMode;
+            this.f37929w = z11;
+            this.f37930x = CollectionsKt.l();
         }
     }
 
@@ -868,28 +868,28 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<e> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37883e;
+        private final List f37931e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f37884i;
+        private final long f37932i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final boolean f37885o;
+        private final boolean f37933o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final boolean f37886p;
+        private final boolean f37934p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final un.v f37887q;
+        private final un.v f37935q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final long f37888r;
+        private final long f37936r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final x1 f37889s;
+        private final x1 f37937s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final v.b f37890t;
+        private final v.b f37938t;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -972,28 +972,28 @@ public abstract class x1 implements Parcelable {
 
         public static /* synthetic */ e v(e eVar, List list, long j10, boolean z10, boolean z11, un.v vVar, long j11, x1 x1Var, v.b bVar, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                list = eVar.f37883e;
+                list = eVar.f37931e;
             }
             if ((i10 & 2) != 0) {
-                j10 = eVar.f37884i;
+                j10 = eVar.f37932i;
             }
             if ((i10 & 4) != 0) {
-                z10 = eVar.f37885o;
+                z10 = eVar.f37933o;
             }
             if ((i10 & 8) != 0) {
-                z11 = eVar.f37886p;
+                z11 = eVar.f37934p;
             }
             if ((i10 & 16) != 0) {
-                vVar = eVar.f37887q;
+                vVar = eVar.f37935q;
             }
             if ((i10 & 32) != 0) {
-                j11 = eVar.f37888r;
+                j11 = eVar.f37936r;
             }
             if ((i10 & 64) != 0) {
-                x1Var = eVar.f37889s;
+                x1Var = eVar.f37937s;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                bVar = eVar.f37890t;
+                bVar = eVar.f37938t;
             }
             long j12 = j11;
             un.v vVar2 = vVar;
@@ -1002,11 +1002,11 @@ public abstract class x1 implements Parcelable {
         }
 
         public final boolean A() {
-            return this.f37886p;
+            return this.f37934p;
         }
 
         public final un.v b() {
-            return this.f37887q;
+            return this.f37935q;
         }
 
         @Override // android.os.Parcelable
@@ -1022,7 +1022,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             e eVar = (e) obj;
-            if (Intrinsics.areEqual(this.f37883e, eVar.f37883e) && this.f37884i == eVar.f37884i && this.f37885o == eVar.f37885o && this.f37886p == eVar.f37886p && Intrinsics.areEqual(this.f37887q, eVar.f37887q) && this.f37888r == eVar.f37888r && Intrinsics.areEqual(this.f37889s, eVar.f37889s) && this.f37890t == eVar.f37890t) {
+            if (Intrinsics.areEqual(this.f37931e, eVar.f37931e) && this.f37932i == eVar.f37932i && this.f37933o == eVar.f37933o && this.f37934p == eVar.f37934p && Intrinsics.areEqual(this.f37935q, eVar.f37935q) && this.f37936r == eVar.f37936r && Intrinsics.areEqual(this.f37937s, eVar.f37937s) && this.f37938t == eVar.f37938t) {
                 return true;
             }
             return false;
@@ -1030,44 +1030,44 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((((((((((this.f37883e.hashCode() * 31) + Long.hashCode(this.f37884i)) * 31) + Boolean.hashCode(this.f37885o)) * 31) + Boolean.hashCode(this.f37886p)) * 31) + this.f37887q.hashCode()) * 31) + Long.hashCode(this.f37888r)) * 31;
-            x1 x1Var = this.f37889s;
+            int hashCode2 = ((((((((((this.f37931e.hashCode() * 31) + Long.hashCode(this.f37932i)) * 31) + Boolean.hashCode(this.f37933o)) * 31) + Boolean.hashCode(this.f37934p)) * 31) + this.f37935q.hashCode()) * 31) + Long.hashCode(this.f37936r)) * 31;
+            x1 x1Var = this.f37937s;
             if (x1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = x1Var.hashCode();
             }
-            return ((hashCode2 + hashCode) * 31) + this.f37890t.hashCode();
+            return ((hashCode2 + hashCode) * 31) + this.f37938t.hashCode();
         }
 
         public final long o() {
-            return this.f37888r;
+            return this.f37936r;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37889s;
+            return this.f37937s;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37890t;
+            return this.f37938t;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37883e;
+            return this.f37931e;
         }
 
         public String toString() {
-            List list = this.f37883e;
-            long j10 = this.f37884i;
-            boolean z10 = this.f37885o;
-            boolean z11 = this.f37886p;
-            un.v vVar = this.f37887q;
-            long j11 = this.f37888r;
-            x1 x1Var = this.f37889s;
-            v.b bVar = this.f37890t;
+            List list = this.f37931e;
+            long j10 = this.f37932i;
+            boolean z10 = this.f37933o;
+            boolean z11 = this.f37934p;
+            un.v vVar = this.f37935q;
+            long j11 = this.f37936r;
+            x1 x1Var = this.f37937s;
+            v.b bVar = this.f37938t;
             return "FinalizeLocalVideoCapture(selfies=" + list + ", minDurationMs=" + j10 + ", isDelayComplete=" + z10 + ", isFinalizeComplete=" + z11 + ", cameraProperties=" + vVar + ", startSelfieTimestamp=" + j11 + ", backState=" + x1Var + ", cameraFacingMode=" + bVar + ")";
         }
 
@@ -1079,28 +1079,28 @@ public abstract class x1 implements Parcelable {
         }
 
         public final long w() {
-            return this.f37884i;
+            return this.f37932i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37883e;
+            List<Parcelable> list = this.f37931e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeLong(this.f37884i);
-            dest.writeInt(this.f37885o ? 1 : 0);
-            dest.writeInt(this.f37886p ? 1 : 0);
-            dest.writeParcelable(this.f37887q, i10);
-            dest.writeLong(this.f37888r);
-            dest.writeParcelable(this.f37889s, i10);
-            dest.writeString(this.f37890t.name());
+            dest.writeLong(this.f37932i);
+            dest.writeInt(this.f37933o ? 1 : 0);
+            dest.writeInt(this.f37934p ? 1 : 0);
+            dest.writeParcelable(this.f37935q, i10);
+            dest.writeLong(this.f37936r);
+            dest.writeParcelable(this.f37937s, i10);
+            dest.writeString(this.f37938t.name());
         }
 
         public final boolean x() {
-            return this.f37885o;
+            return this.f37933o;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -1109,14 +1109,14 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(selfies, "selfies");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37883e = selfies;
-            this.f37884i = j10;
-            this.f37885o = z10;
-            this.f37886p = z11;
-            this.f37887q = cameraProperties;
-            this.f37888r = j11;
-            this.f37889s = x1Var;
-            this.f37890t = cameraFacingMode;
+            this.f37931e = selfies;
+            this.f37932i = j10;
+            this.f37933o = z10;
+            this.f37934p = z11;
+            this.f37935q = cameraProperties;
+            this.f37936r = j11;
+            this.f37937s = x1Var;
+            this.f37938t = cameraFacingMode;
         }
     }
 
@@ -1126,19 +1126,19 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<f> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37891e;
+        private final List f37939e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final un.v f37892i;
+        private final un.v f37940i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f37893o;
+        private final long f37941o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final x1 f37894p;
+        private final x1 f37942p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final v.b f37895q;
+        private final v.b f37943q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1167,11 +1167,11 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(selfies, "selfies");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37891e = selfies;
-            this.f37892i = cameraProperties;
-            this.f37893o = j10;
-            this.f37894p = x1Var;
-            this.f37895q = cameraFacingMode;
+            this.f37939e = selfies;
+            this.f37940i = cameraProperties;
+            this.f37941o = j10;
+            this.f37942p = x1Var;
+            this.f37943q = cameraFacingMode;
         }
 
         @Override // android.os.Parcelable
@@ -1181,31 +1181,31 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37894p;
+            return this.f37942p;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37895q;
+            return this.f37943q;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37891e;
+            return this.f37939e;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37891e;
+            List<Parcelable> list = this.f37939e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeParcelable(this.f37892i, i10);
-            dest.writeLong(this.f37893o);
-            dest.writeParcelable(this.f37894p, i10);
-            dest.writeString(this.f37895q.name());
+            dest.writeParcelable(this.f37940i, i10);
+            dest.writeLong(this.f37941o);
+            dest.writeParcelable(this.f37942p, i10);
+            dest.writeString(this.f37943q.name());
         }
     }
 
@@ -1215,34 +1215,34 @@ public abstract class x1 implements Parcelable {
     public static final class g {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final g f37896d = new g("Disabled", 0);
+        public static final g f37944d = new g("Disabled", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final g f37897e = new g(PeerConnectionFactory.TRIAL_ENABLED, 1);
+        public static final g f37945e = new g(PeerConnectionFactory.TRIAL_ENABLED, 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final g f37898i = new g("FlashOn", 2);
+        public static final g f37946i = new g("FlashOn", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final g f37899o = new g("ReadyToCapture", 3);
+        public static final g f37947o = new g("ReadyToCapture", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ g[] f37900p;
+        private static final /* synthetic */ g[] f37948p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f37901q;
+        private static final /* synthetic */ EnumEntries f37949q;
 
         static {
             g[] a10 = a();
-            f37900p = a10;
-            f37901q = xr.a.a(a10);
+            f37948p = a10;
+            f37949q = xr.a.a(a10);
         }
 
         private g(String str, int i10) {
         }
 
         private static final /* synthetic */ g[] a() {
-            return new g[]{f37896d, f37897e, f37898i, f37899o};
+            return new g[]{f37944d, f37945e, f37946i, f37947o};
         }
 
         public static g valueOf(String str) {
@@ -1250,7 +1250,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public static g[] values() {
-            return (g[]) f37900p.clone();
+            return (g[]) f37948p.clone();
         }
     }
 
@@ -1260,19 +1260,19 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<h> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f37902e;
+        private final boolean f37950e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final boolean f37903i;
+        private final boolean f37951i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final x1 f37904o;
+        private final x1 f37952o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final v.b f37905p;
+        private final v.b f37953p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f37906q;
+        private final List f37954q;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1317,7 +1317,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             h hVar = (h) obj;
-            if (this.f37902e == hVar.f37902e && this.f37903i == hVar.f37903i && Intrinsics.areEqual(this.f37904o, hVar.f37904o) && this.f37905p == hVar.f37905p) {
+            if (this.f37950e == hVar.f37950e && this.f37951i == hVar.f37951i && Intrinsics.areEqual(this.f37952o, hVar.f37952o) && this.f37953p == hVar.f37953p) {
                 return true;
             }
             return false;
@@ -1325,57 +1325,57 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((Boolean.hashCode(this.f37902e) * 31) + Boolean.hashCode(this.f37903i)) * 31;
-            x1 x1Var = this.f37904o;
+            int hashCode2 = ((Boolean.hashCode(this.f37950e) * 31) + Boolean.hashCode(this.f37951i)) * 31;
+            x1 x1Var = this.f37952o;
             if (x1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = x1Var.hashCode();
             }
-            return ((hashCode2 + hashCode) * 31) + this.f37905p.hashCode();
+            return ((hashCode2 + hashCode) * 31) + this.f37953p.hashCode();
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37904o;
+            return this.f37952o;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37905p;
+            return this.f37953p;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37906q;
+            return this.f37954q;
         }
 
         public String toString() {
-            boolean z10 = this.f37902e;
-            boolean z11 = this.f37903i;
-            x1 x1Var = this.f37904o;
-            v.b bVar = this.f37905p;
+            boolean z10 = this.f37950e;
+            boolean z11 = this.f37951i;
+            x1 x1Var = this.f37952o;
+            v.b bVar = this.f37953p;
             return "RestartCamera(hasRequestedCameraPermissions=" + z10 + ", hasRequestedAudioPermissions=" + z11 + ", backState=" + x1Var + ", cameraFacingMode=" + bVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f37902e ? 1 : 0);
-            dest.writeInt(this.f37903i ? 1 : 0);
-            dest.writeParcelable(this.f37904o, i10);
-            dest.writeString(this.f37905p.name());
+            dest.writeInt(this.f37950e ? 1 : 0);
+            dest.writeInt(this.f37951i ? 1 : 0);
+            dest.writeParcelable(this.f37952o, i10);
+            dest.writeString(this.f37953p.name());
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public h(boolean z10, boolean z11, x1 x1Var, v.b cameraFacingMode) {
             super(null);
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37902e = z10;
-            this.f37903i = z11;
-            this.f37904o = x1Var;
-            this.f37905p = cameraFacingMode;
-            this.f37906q = CollectionsKt.l();
+            this.f37950e = z10;
+            this.f37951i = z11;
+            this.f37952o = x1Var;
+            this.f37953p = cameraFacingMode;
+            this.f37954q = CollectionsKt.l();
         }
     }
 
@@ -1385,25 +1385,25 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37907e;
+        private final List f37955e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f37908i;
+        private final List f37956i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final String f37909o;
+        private final String f37957o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final un.v f37910p;
+        private final un.v f37958p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final long f37911q;
+        private final long f37959q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final x1 f37912r;
+        private final x1 f37960r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final v.b f37913s;
+        private final v.b f37961s;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1438,17 +1438,17 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(selfiesToReview, "selfiesToReview");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37907e = selfies;
-            this.f37908i = selfiesToReview;
-            this.f37909o = str;
-            this.f37910p = cameraProperties;
-            this.f37911q = j10;
-            this.f37912r = x1Var;
-            this.f37913s = cameraFacingMode;
+            this.f37955e = selfies;
+            this.f37956i = selfiesToReview;
+            this.f37957o = str;
+            this.f37958p = cameraProperties;
+            this.f37959q = j10;
+            this.f37960r = x1Var;
+            this.f37961s = cameraFacingMode;
         }
 
         public final un.v b() {
-            return this.f37910p;
+            return this.f37958p;
         }
 
         @Override // android.os.Parcelable
@@ -1457,50 +1457,50 @@ public abstract class x1 implements Parcelable {
         }
 
         public final long o() {
-            return this.f37911q;
+            return this.f37959q;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37912r;
+            return this.f37960r;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37913s;
+            return this.f37961s;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37907e;
+            return this.f37955e;
         }
 
         public final List u() {
-            return this.f37908i;
+            return this.f37956i;
         }
 
         public final String v() {
-            return this.f37909o;
+            return this.f37957o;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37907e;
+            List<Parcelable> list = this.f37955e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<Parcelable> list2 = this.f37908i;
+            List<Parcelable> list2 = this.f37956i;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeString(this.f37909o);
-            dest.writeParcelable(this.f37910p, i10);
-            dest.writeLong(this.f37911q);
-            dest.writeParcelable(this.f37912r, i10);
-            dest.writeString(this.f37913s.name());
+            dest.writeString(this.f37957o);
+            dest.writeParcelable(this.f37958p, i10);
+            dest.writeLong(this.f37959q);
+            dest.writeParcelable(this.f37960r, i10);
+            dest.writeString(this.f37961s.name());
         }
     }
 
@@ -1510,31 +1510,31 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<k> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37917e;
+        private final List f37965e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f37918i;
+        private final List f37966i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final boolean f37919o;
+        private final boolean f37967o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final un.v f37920p;
+        private final un.v f37968p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final long f37921q;
+        private final long f37969q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final x1 f37922r;
+        private final x1 f37970r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final s0 f37923s;
+        private final s0 f37971s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final v.b f37924t;
+        private final v.b f37972t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final boolean f37925u;
+        private final boolean f37973u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1590,44 +1590,44 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37917e = selfies;
-            this.f37918i = posesNeeded;
-            this.f37919o = z10;
-            this.f37920p = cameraProperties;
-            this.f37921q = j10;
-            this.f37922r = x1Var;
-            this.f37923s = poseConfigs;
-            this.f37924t = cameraFacingMode;
-            this.f37925u = z11;
+            this.f37965e = selfies;
+            this.f37966i = posesNeeded;
+            this.f37967o = z10;
+            this.f37968p = cameraProperties;
+            this.f37969q = j10;
+            this.f37970r = x1Var;
+            this.f37971s = poseConfigs;
+            this.f37972t = cameraFacingMode;
+            this.f37973u = z11;
         }
 
         public static /* synthetic */ k v(k kVar, List list, List list2, boolean z10, un.v vVar, long j10, x1 x1Var, s0 s0Var, v.b bVar, boolean z11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                list = kVar.f37917e;
+                list = kVar.f37965e;
             }
             if ((i10 & 2) != 0) {
-                list2 = kVar.f37918i;
+                list2 = kVar.f37966i;
             }
             if ((i10 & 4) != 0) {
-                z10 = kVar.f37919o;
+                z10 = kVar.f37967o;
             }
             if ((i10 & 8) != 0) {
-                vVar = kVar.f37920p;
+                vVar = kVar.f37968p;
             }
             if ((i10 & 16) != 0) {
-                j10 = kVar.f37921q;
+                j10 = kVar.f37969q;
             }
             if ((i10 & 32) != 0) {
-                x1Var = kVar.f37922r;
+                x1Var = kVar.f37970r;
             }
             if ((i10 & 64) != 0) {
-                s0Var = kVar.f37923s;
+                s0Var = kVar.f37971s;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                bVar = kVar.f37924t;
+                bVar = kVar.f37972t;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                z11 = kVar.f37925u;
+                z11 = kVar.f37973u;
             }
             long j11 = j10;
             boolean z12 = z10;
@@ -1637,21 +1637,21 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean a() {
-            return this.f37919o;
+            return this.f37967o;
         }
 
         public final un.v b() {
-            return this.f37920p;
+            return this.f37968p;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37918i;
+            return this.f37966i;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37923s;
+            return this.f37971s;
         }
 
         @Override // android.os.Parcelable
@@ -1672,7 +1672,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             k kVar = (k) obj;
-            if (Intrinsics.areEqual(this.f37917e, kVar.f37917e) && Intrinsics.areEqual(this.f37918i, kVar.f37918i) && this.f37919o == kVar.f37919o && Intrinsics.areEqual(this.f37920p, kVar.f37920p) && this.f37921q == kVar.f37921q && Intrinsics.areEqual(this.f37922r, kVar.f37922r) && Intrinsics.areEqual(this.f37923s, kVar.f37923s) && this.f37924t == kVar.f37924t && this.f37925u == kVar.f37925u) {
+            if (Intrinsics.areEqual(this.f37965e, kVar.f37965e) && Intrinsics.areEqual(this.f37966i, kVar.f37966i) && this.f37967o == kVar.f37967o && Intrinsics.areEqual(this.f37968p, kVar.f37968p) && this.f37969q == kVar.f37969q && Intrinsics.areEqual(this.f37970r, kVar.f37970r) && Intrinsics.areEqual(this.f37971s, kVar.f37971s) && this.f37972t == kVar.f37972t && this.f37973u == kVar.f37973u) {
                 return true;
             }
             return false;
@@ -1685,50 +1685,50 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((((((((this.f37917e.hashCode() * 31) + this.f37918i.hashCode()) * 31) + Boolean.hashCode(this.f37919o)) * 31) + this.f37920p.hashCode()) * 31) + Long.hashCode(this.f37921q)) * 31;
-            x1 x1Var = this.f37922r;
+            int hashCode2 = ((((((((this.f37965e.hashCode() * 31) + this.f37966i.hashCode()) * 31) + Boolean.hashCode(this.f37967o)) * 31) + this.f37968p.hashCode()) * 31) + Long.hashCode(this.f37969q)) * 31;
+            x1 x1Var = this.f37970r;
             if (x1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = x1Var.hashCode();
             }
-            return ((((((hashCode2 + hashCode) * 31) + this.f37923s.hashCode()) * 31) + this.f37924t.hashCode()) * 31) + Boolean.hashCode(this.f37925u);
+            return ((((((hashCode2 + hashCode) * 31) + this.f37971s.hashCode()) * 31) + this.f37972t.hashCode()) * 31) + Boolean.hashCode(this.f37973u);
         }
 
         @Override // mp.z
         public boolean l() {
-            return this.f37925u;
+            return this.f37973u;
         }
 
         public final long o() {
-            return this.f37921q;
+            return this.f37969q;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37922r;
+            return this.f37970r;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37924t;
+            return this.f37972t;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37917e;
+            return this.f37965e;
         }
 
         public String toString() {
-            List list = this.f37917e;
-            List list2 = this.f37918i;
-            boolean z10 = this.f37919o;
-            un.v vVar = this.f37920p;
-            long j10 = this.f37921q;
-            x1 x1Var = this.f37922r;
-            s0 s0Var = this.f37923s;
-            v.b bVar = this.f37924t;
-            boolean z11 = this.f37925u;
+            List list = this.f37965e;
+            List list2 = this.f37966i;
+            boolean z10 = this.f37967o;
+            un.v vVar = this.f37968p;
+            long j10 = this.f37969q;
+            x1 x1Var = this.f37970r;
+            s0 s0Var = this.f37971s;
+            v.b bVar = this.f37972t;
+            boolean z11 = this.f37973u;
             return "ShowPoseHint(selfies=" + list + ", posesNeeded=" + list2 + ", autoCaptureSupported=" + z10 + ", cameraProperties=" + vVar + ", startSelfieTimestamp=" + j10 + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", cameraFacingMode=" + bVar + ", isFlashEnabled=" + z11 + ")";
         }
 
@@ -1744,23 +1744,23 @@ public abstract class x1 implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37917e;
+            List<Parcelable> list = this.f37965e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<a1.b> list2 = this.f37918i;
+            List<a1.b> list2 = this.f37966i;
             dest.writeInt(list2.size());
             for (a1.b bVar : list2) {
                 dest.writeString(bVar.name());
             }
-            dest.writeInt(this.f37919o ? 1 : 0);
-            dest.writeParcelable(this.f37920p, i10);
-            dest.writeLong(this.f37921q);
-            dest.writeParcelable(this.f37922r, i10);
-            this.f37923s.writeToParcel(dest, i10);
-            dest.writeString(this.f37924t.name());
-            dest.writeInt(this.f37925u ? 1 : 0);
+            dest.writeInt(this.f37967o ? 1 : 0);
+            dest.writeParcelable(this.f37968p, i10);
+            dest.writeLong(this.f37969q);
+            dest.writeParcelable(this.f37970r, i10);
+            this.f37971s.writeToParcel(dest, i10);
+            dest.writeString(this.f37972t.name());
+            dest.writeInt(this.f37973u ? 1 : 0);
         }
     }
 
@@ -1770,40 +1770,40 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<m> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f37940e;
+        private final long f37988e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final un.v f37941i;
+        private final un.v f37989i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f37942o;
+        private final long f37990o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final float f37943p;
+        private final float f37991p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final yn.a f37944q;
+        private final yn.a f37992q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final List f37945r;
+        private final List f37993r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final x1 f37946s;
+        private final x1 f37994s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final s0 f37947t;
+        private final s0 f37995t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final boolean f37948u;
+        private final boolean f37996u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final v.b f37949v;
+        private final v.b f37997v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final boolean f37950w;
+        private final boolean f37998w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final List f37951x;
+        private final List f37999x;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -1855,18 +1855,18 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(posesNeeded, "posesNeeded");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37940e = j10;
-            this.f37941i = cameraProperties;
-            this.f37942o = j11;
-            this.f37943p = f10;
-            this.f37944q = aVar;
-            this.f37945r = posesNeeded;
-            this.f37946s = x1Var;
-            this.f37947t = poseConfigs;
-            this.f37948u = z10;
-            this.f37949v = cameraFacingMode;
-            this.f37950w = z11;
-            this.f37951x = CollectionsKt.l();
+            this.f37988e = j10;
+            this.f37989i = cameraProperties;
+            this.f37990o = j11;
+            this.f37991p = f10;
+            this.f37992q = aVar;
+            this.f37993r = posesNeeded;
+            this.f37994s = x1Var;
+            this.f37995t = poseConfigs;
+            this.f37996u = z10;
+            this.f37997v = cameraFacingMode;
+            this.f37998w = z11;
+            this.f37999x = CollectionsKt.l();
         }
 
         public static /* synthetic */ m v(m mVar, long j10, un.v vVar, long j11, float f10, yn.a aVar, List list, x1 x1Var, s0 s0Var, boolean z10, v.b bVar, boolean z11, int i10, Object obj) {
@@ -1882,57 +1882,57 @@ public abstract class x1 implements Parcelable {
             v.b bVar2;
             boolean z13;
             if ((i10 & 1) != 0) {
-                j12 = mVar.f37940e;
+                j12 = mVar.f37988e;
             } else {
                 j12 = j10;
             }
             if ((i10 & 2) != 0) {
-                vVar2 = mVar.f37941i;
+                vVar2 = mVar.f37989i;
             } else {
                 vVar2 = vVar;
             }
             if ((i10 & 4) != 0) {
-                j13 = mVar.f37942o;
+                j13 = mVar.f37990o;
             } else {
                 j13 = j11;
             }
             if ((i10 & 8) != 0) {
-                f11 = mVar.f37943p;
+                f11 = mVar.f37991p;
             } else {
                 f11 = f10;
             }
             if ((i10 & 16) != 0) {
-                aVar2 = mVar.f37944q;
+                aVar2 = mVar.f37992q;
             } else {
                 aVar2 = aVar;
             }
             if ((i10 & 32) != 0) {
-                list2 = mVar.f37945r;
+                list2 = mVar.f37993r;
             } else {
                 list2 = list;
             }
             if ((i10 & 64) != 0) {
-                x1Var2 = mVar.f37946s;
+                x1Var2 = mVar.f37994s;
             } else {
                 x1Var2 = x1Var;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                s0Var2 = mVar.f37947t;
+                s0Var2 = mVar.f37995t;
             } else {
                 s0Var2 = s0Var;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                z12 = mVar.f37948u;
+                z12 = mVar.f37996u;
             } else {
                 z12 = z10;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                bVar2 = mVar.f37949v;
+                bVar2 = mVar.f37997v;
             } else {
                 bVar2 = bVar;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                z13 = mVar.f37950w;
+                z13 = mVar.f37998w;
             } else {
                 z13 = z11;
             }
@@ -1941,21 +1941,21 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean a() {
-            return this.f37948u;
+            return this.f37996u;
         }
 
         public final un.v b() {
-            return this.f37941i;
+            return this.f37989i;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37945r;
+            return this.f37993r;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37947t;
+            return this.f37995t;
         }
 
         @Override // android.os.Parcelable
@@ -1976,7 +1976,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             m mVar = (m) obj;
-            if (this.f37940e == mVar.f37940e && Intrinsics.areEqual(this.f37941i, mVar.f37941i) && this.f37942o == mVar.f37942o && Float.compare(this.f37943p, mVar.f37943p) == 0 && Intrinsics.areEqual(this.f37944q, mVar.f37944q) && Intrinsics.areEqual(this.f37945r, mVar.f37945r) && Intrinsics.areEqual(this.f37946s, mVar.f37946s) && Intrinsics.areEqual(this.f37947t, mVar.f37947t) && this.f37948u == mVar.f37948u && this.f37949v == mVar.f37949v && this.f37950w == mVar.f37950w) {
+            if (this.f37988e == mVar.f37988e && Intrinsics.areEqual(this.f37989i, mVar.f37989i) && this.f37990o == mVar.f37990o && Float.compare(this.f37991p, mVar.f37991p) == 0 && Intrinsics.areEqual(this.f37992q, mVar.f37992q) && Intrinsics.areEqual(this.f37993r, mVar.f37993r) && Intrinsics.areEqual(this.f37994s, mVar.f37994s) && Intrinsics.areEqual(this.f37995t, mVar.f37995t) && this.f37996u == mVar.f37996u && this.f37997v == mVar.f37997v && this.f37998w == mVar.f37998w) {
                 return true;
             }
             return false;
@@ -1994,62 +1994,62 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((((((Long.hashCode(this.f37940e) * 31) + this.f37941i.hashCode()) * 31) + Long.hashCode(this.f37942o)) * 31) + Float.hashCode(this.f37943p)) * 31;
-            yn.a aVar = this.f37944q;
+            int hashCode2 = ((((((Long.hashCode(this.f37988e) * 31) + this.f37989i.hashCode()) * 31) + Long.hashCode(this.f37990o)) * 31) + Float.hashCode(this.f37991p)) * 31;
+            yn.a aVar = this.f37992q;
             int i10 = 0;
             if (aVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = aVar.hashCode();
             }
-            int hashCode3 = (((hashCode2 + hashCode) * 31) + this.f37945r.hashCode()) * 31;
-            x1 x1Var = this.f37946s;
+            int hashCode3 = (((hashCode2 + hashCode) * 31) + this.f37993r.hashCode()) * 31;
+            x1 x1Var = this.f37994s;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((((hashCode3 + i10) * 31) + this.f37947t.hashCode()) * 31) + Boolean.hashCode(this.f37948u)) * 31) + this.f37949v.hashCode()) * 31) + Boolean.hashCode(this.f37950w);
+            return ((((((((hashCode3 + i10) * 31) + this.f37995t.hashCode()) * 31) + Boolean.hashCode(this.f37996u)) * 31) + this.f37997v.hashCode()) * 31) + Boolean.hashCode(this.f37998w);
         }
 
         public final long i() {
-            return this.f37940e;
+            return this.f37988e;
         }
 
         @Override // mp.z
         public boolean l() {
-            return this.f37950w;
+            return this.f37998w;
         }
 
         public final long o() {
-            return this.f37942o;
+            return this.f37990o;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37946s;
+            return this.f37994s;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37949v;
+            return this.f37997v;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37951x;
+            return this.f37999x;
         }
 
         public String toString() {
-            long j10 = this.f37940e;
-            un.v vVar = this.f37941i;
-            long j11 = this.f37942o;
-            float f10 = this.f37943p;
-            yn.a aVar = this.f37944q;
-            List list = this.f37945r;
-            x1 x1Var = this.f37946s;
-            s0 s0Var = this.f37947t;
-            boolean z10 = this.f37948u;
-            v.b bVar = this.f37949v;
-            boolean z11 = this.f37950w;
+            long j10 = this.f37988e;
+            un.v vVar = this.f37989i;
+            long j11 = this.f37990o;
+            float f10 = this.f37991p;
+            yn.a aVar = this.f37992q;
+            List list = this.f37993r;
+            x1 x1Var = this.f37994s;
+            s0 s0Var = this.f37995t;
+            boolean z10 = this.f37996u;
+            v.b bVar = this.f37997v;
+            boolean z11 = this.f37998w;
             return "StartCaptureFaceDetected(startCaptureTimestamp=" + j10 + ", cameraProperties=" + vVar + ", startSelfieTimestamp=" + j11 + ", poseScore=" + f10 + ", brightnessInfo=" + aVar + ", posesNeeded=" + list + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", autoCaptureSupported=" + z10 + ", cameraFacingMode=" + bVar + ", isFlashEnabled=" + z11 + ")";
         }
 
@@ -2062,31 +2062,31 @@ public abstract class x1 implements Parcelable {
         }
 
         public final yn.a w() {
-            return this.f37944q;
+            return this.f37992q;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeLong(this.f37940e);
-            dest.writeParcelable(this.f37941i, i10);
-            dest.writeLong(this.f37942o);
-            dest.writeFloat(this.f37943p);
-            dest.writeParcelable(this.f37944q, i10);
-            List<a1.b> list = this.f37945r;
+            dest.writeLong(this.f37988e);
+            dest.writeParcelable(this.f37989i, i10);
+            dest.writeLong(this.f37990o);
+            dest.writeFloat(this.f37991p);
+            dest.writeParcelable(this.f37992q, i10);
+            List<a1.b> list = this.f37993r;
             dest.writeInt(list.size());
             for (a1.b bVar : list) {
                 dest.writeString(bVar.name());
             }
-            dest.writeParcelable(this.f37946s, i10);
-            this.f37947t.writeToParcel(dest, i10);
-            dest.writeInt(this.f37948u ? 1 : 0);
-            dest.writeString(this.f37949v.name());
-            dest.writeInt(this.f37950w ? 1 : 0);
+            dest.writeParcelable(this.f37994s, i10);
+            this.f37995t.writeToParcel(dest, i10);
+            dest.writeInt(this.f37996u ? 1 : 0);
+            dest.writeString(this.f37997v.name());
+            dest.writeInt(this.f37998w ? 1 : 0);
         }
 
         public final float x() {
-            return this.f37943p;
+            return this.f37991p;
         }
     }
 
@@ -2096,22 +2096,22 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<n> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37952e;
+        private final List f38000e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f37953i;
+        private final String f38001i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final un.v f37954o;
+        private final un.v f38002o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final long f37955p;
+        private final long f38003p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final x1 f37956q;
+        private final x1 f38004q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final v.b f37957r;
+        private final v.b f38005r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2140,16 +2140,16 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(selfies, "selfies");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37952e = selfies;
-            this.f37953i = str;
-            this.f37954o = cameraProperties;
-            this.f37955p = j10;
-            this.f37956q = x1Var;
-            this.f37957r = cameraFacingMode;
+            this.f38000e = selfies;
+            this.f38001i = str;
+            this.f38002o = cameraProperties;
+            this.f38003p = j10;
+            this.f38004q = x1Var;
+            this.f38005r = cameraFacingMode;
         }
 
         public final un.v b() {
-            return this.f37954o;
+            return this.f38002o;
         }
 
         @Override // android.os.Parcelable
@@ -2158,41 +2158,41 @@ public abstract class x1 implements Parcelable {
         }
 
         public final long o() {
-            return this.f37955p;
+            return this.f38003p;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37956q;
+            return this.f38004q;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37957r;
+            return this.f38005r;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37952e;
+            return this.f38000e;
         }
 
         public final String u() {
-            return this.f37953i;
+            return this.f38001i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37952e;
+            List<Parcelable> list = this.f38000e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeString(this.f37953i);
-            dest.writeParcelable(this.f37954o, i10);
-            dest.writeLong(this.f37955p);
-            dest.writeParcelable(this.f37956q, i10);
-            dest.writeString(this.f37957r.name());
+            dest.writeString(this.f38001i);
+            dest.writeParcelable(this.f38002o, i10);
+            dest.writeLong(this.f38003p);
+            dest.writeParcelable(this.f38004q, i10);
+            dest.writeString(this.f38005r.name());
         }
     }
 
@@ -2202,31 +2202,31 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<o> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f37958e;
+        private final boolean f38006e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final boolean f37959i;
+        private final boolean f38007i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final x1 f37960o;
+        private final x1 f38008o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final List f37961p;
+        private final List f38009p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final s0 f37962q;
+        private final s0 f38010q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final boolean f37963r;
+        private final boolean f38011r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final v.b f37964s;
+        private final v.b f38012s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final boolean f37965t;
+        private final boolean f38013t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final List f37966u;
+        private final List f38014u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2282,28 +2282,28 @@ public abstract class x1 implements Parcelable {
 
         public static /* synthetic */ o v(o oVar, boolean z10, boolean z11, x1 x1Var, List list, s0 s0Var, boolean z12, v.b bVar, boolean z13, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                z10 = oVar.f37958e;
+                z10 = oVar.f38006e;
             }
             if ((i10 & 2) != 0) {
-                z11 = oVar.f37959i;
+                z11 = oVar.f38007i;
             }
             if ((i10 & 4) != 0) {
-                x1Var = oVar.f37960o;
+                x1Var = oVar.f38008o;
             }
             if ((i10 & 8) != 0) {
-                list = oVar.f37961p;
+                list = oVar.f38009p;
             }
             if ((i10 & 16) != 0) {
-                s0Var = oVar.f37962q;
+                s0Var = oVar.f38010q;
             }
             if ((i10 & 32) != 0) {
-                z12 = oVar.f37963r;
+                z12 = oVar.f38011r;
             }
             if ((i10 & 64) != 0) {
-                bVar = oVar.f37964s;
+                bVar = oVar.f38012s;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                z13 = oVar.f37965t;
+                z13 = oVar.f38013t;
             }
             v.b bVar2 = bVar;
             boolean z14 = z13;
@@ -2314,17 +2314,17 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean a() {
-            return this.f37963r;
+            return this.f38011r;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37961p;
+            return this.f38009p;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37962q;
+            return this.f38010q;
         }
 
         @Override // android.os.Parcelable
@@ -2345,7 +2345,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             o oVar = (o) obj;
-            if (this.f37958e == oVar.f37958e && this.f37959i == oVar.f37959i && Intrinsics.areEqual(this.f37960o, oVar.f37960o) && Intrinsics.areEqual(this.f37961p, oVar.f37961p) && Intrinsics.areEqual(this.f37962q, oVar.f37962q) && this.f37963r == oVar.f37963r && this.f37964s == oVar.f37964s && this.f37965t == oVar.f37965t) {
+            if (this.f38006e == oVar.f38006e && this.f38007i == oVar.f38007i && Intrinsics.areEqual(this.f38008o, oVar.f38008o) && Intrinsics.areEqual(this.f38009p, oVar.f38009p) && Intrinsics.areEqual(this.f38010q, oVar.f38010q) && this.f38011r == oVar.f38011r && this.f38012s == oVar.f38012s && this.f38013t == oVar.f38013t) {
                 return true;
             }
             return false;
@@ -2358,45 +2358,45 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((Boolean.hashCode(this.f37958e) * 31) + Boolean.hashCode(this.f37959i)) * 31;
-            x1 x1Var = this.f37960o;
+            int hashCode2 = ((Boolean.hashCode(this.f38006e) * 31) + Boolean.hashCode(this.f38007i)) * 31;
+            x1 x1Var = this.f38008o;
             if (x1Var == null) {
                 hashCode = 0;
             } else {
                 hashCode = x1Var.hashCode();
             }
-            return ((((((((((hashCode2 + hashCode) * 31) + this.f37961p.hashCode()) * 31) + this.f37962q.hashCode()) * 31) + Boolean.hashCode(this.f37963r)) * 31) + this.f37964s.hashCode()) * 31) + Boolean.hashCode(this.f37965t);
+            return ((((((((((hashCode2 + hashCode) * 31) + this.f38009p.hashCode()) * 31) + this.f38010q.hashCode()) * 31) + Boolean.hashCode(this.f38011r)) * 31) + this.f38012s.hashCode()) * 31) + Boolean.hashCode(this.f38013t);
         }
 
         @Override // mp.z
         public boolean l() {
-            return this.f37965t;
+            return this.f38013t;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37960o;
+            return this.f38008o;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37964s;
+            return this.f38012s;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37966u;
+            return this.f38014u;
         }
 
         public String toString() {
-            boolean z10 = this.f37958e;
-            boolean z11 = this.f37959i;
-            x1 x1Var = this.f37960o;
-            List list = this.f37961p;
-            s0 s0Var = this.f37962q;
-            boolean z12 = this.f37963r;
-            v.b bVar = this.f37964s;
-            boolean z13 = this.f37965t;
+            boolean z10 = this.f38006e;
+            boolean z11 = this.f38007i;
+            x1 x1Var = this.f38008o;
+            List list = this.f38009p;
+            s0 s0Var = this.f38010q;
+            boolean z12 = this.f38011r;
+            v.b bVar = this.f38012s;
+            boolean z13 = this.f38013t;
             return "WaitForCameraFeed(hasRequestedCameraPermissions=" + z10 + ", hasRequestedAudioPermissions=" + z11 + ", backState=" + x1Var + ", posesNeeded=" + list + ", poseConfigs=" + s0Var + ", autoCaptureSupported=" + z12 + ", cameraFacingMode=" + bVar + ", isFlashEnabled=" + z13 + ")";
         }
 
@@ -2408,28 +2408,28 @@ public abstract class x1 implements Parcelable {
         }
 
         public final boolean w() {
-            return this.f37959i;
+            return this.f38007i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f37958e ? 1 : 0);
-            dest.writeInt(this.f37959i ? 1 : 0);
-            dest.writeParcelable(this.f37960o, i10);
-            List<a1.b> list = this.f37961p;
+            dest.writeInt(this.f38006e ? 1 : 0);
+            dest.writeInt(this.f38007i ? 1 : 0);
+            dest.writeParcelable(this.f38008o, i10);
+            List<a1.b> list = this.f38009p;
             dest.writeInt(list.size());
             for (a1.b bVar : list) {
                 dest.writeString(bVar.name());
             }
-            this.f37962q.writeToParcel(dest, i10);
-            dest.writeInt(this.f37963r ? 1 : 0);
-            dest.writeString(this.f37964s.name());
-            dest.writeInt(this.f37965t ? 1 : 0);
+            this.f38010q.writeToParcel(dest, i10);
+            dest.writeInt(this.f38011r ? 1 : 0);
+            dest.writeString(this.f38012s.name());
+            dest.writeInt(this.f38013t ? 1 : 0);
         }
 
         public final boolean x() {
-            return this.f37958e;
+            return this.f38006e;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -2438,15 +2438,15 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(posesNeeded, "posesNeeded");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37958e = z10;
-            this.f37959i = z11;
-            this.f37960o = x1Var;
-            this.f37961p = posesNeeded;
-            this.f37962q = poseConfigs;
-            this.f37963r = z12;
-            this.f37964s = cameraFacingMode;
-            this.f37965t = z13;
-            this.f37966u = CollectionsKt.l();
+            this.f38006e = z10;
+            this.f38007i = z11;
+            this.f38008o = x1Var;
+            this.f38009p = posesNeeded;
+            this.f38010q = poseConfigs;
+            this.f38011r = z12;
+            this.f38012s = cameraFacingMode;
+            this.f38013t = z13;
+            this.f38014u = CollectionsKt.l();
         }
     }
 
@@ -2456,34 +2456,34 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<p> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f37967e;
+        private final String f38015e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final un.v f37968i;
+        private final un.v f38016i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f37969o;
+        private final long f38017o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final x1 f37970p;
+        private final x1 f38018p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f37971q;
+        private final List f38019q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final s0 f37972r;
+        private final s0 f38020r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f37973s;
+        private final boolean f38021s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final v.b f37974t;
+        private final v.b f38022t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final boolean f37975u;
+        private final boolean f38023u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final List f37976v;
+        private final List f38024v;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2533,45 +2533,45 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(posesNeeded, "posesNeeded");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37967e = str;
-            this.f37968i = cameraProperties;
-            this.f37969o = j10;
-            this.f37970p = x1Var;
-            this.f37971q = posesNeeded;
-            this.f37972r = poseConfigs;
-            this.f37973s = z10;
-            this.f37974t = cameraFacingMode;
-            this.f37975u = z11;
-            this.f37976v = CollectionsKt.l();
+            this.f38015e = str;
+            this.f38016i = cameraProperties;
+            this.f38017o = j10;
+            this.f38018p = x1Var;
+            this.f38019q = posesNeeded;
+            this.f38020r = poseConfigs;
+            this.f38021s = z10;
+            this.f38022t = cameraFacingMode;
+            this.f38023u = z11;
+            this.f38024v = CollectionsKt.l();
         }
 
         public static /* synthetic */ p v(p pVar, String str, un.v vVar, long j10, x1 x1Var, List list, s0 s0Var, boolean z10, v.b bVar, boolean z11, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = pVar.f37967e;
+                str = pVar.f38015e;
             }
             if ((i10 & 2) != 0) {
-                vVar = pVar.f37968i;
+                vVar = pVar.f38016i;
             }
             if ((i10 & 4) != 0) {
-                j10 = pVar.f37969o;
+                j10 = pVar.f38017o;
             }
             if ((i10 & 8) != 0) {
-                x1Var = pVar.f37970p;
+                x1Var = pVar.f38018p;
             }
             if ((i10 & 16) != 0) {
-                list = pVar.f37971q;
+                list = pVar.f38019q;
             }
             if ((i10 & 32) != 0) {
-                s0Var = pVar.f37972r;
+                s0Var = pVar.f38020r;
             }
             if ((i10 & 64) != 0) {
-                z10 = pVar.f37973s;
+                z10 = pVar.f38021s;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                bVar = pVar.f37974t;
+                bVar = pVar.f38022t;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                z11 = pVar.f37975u;
+                z11 = pVar.f38023u;
             }
             v.b bVar2 = bVar;
             boolean z12 = z11;
@@ -2581,17 +2581,17 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean a() {
-            return this.f37973s;
+            return this.f38021s;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37971q;
+            return this.f38019q;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37972r;
+            return this.f38020r;
         }
 
         @Override // android.os.Parcelable
@@ -2612,7 +2612,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             p pVar = (p) obj;
-            if (Intrinsics.areEqual(this.f37967e, pVar.f37967e) && Intrinsics.areEqual(this.f37968i, pVar.f37968i) && this.f37969o == pVar.f37969o && Intrinsics.areEqual(this.f37970p, pVar.f37970p) && Intrinsics.areEqual(this.f37971q, pVar.f37971q) && Intrinsics.areEqual(this.f37972r, pVar.f37972r) && this.f37973s == pVar.f37973s && this.f37974t == pVar.f37974t && this.f37975u == pVar.f37975u) {
+            if (Intrinsics.areEqual(this.f38015e, pVar.f38015e) && Intrinsics.areEqual(this.f38016i, pVar.f38016i) && this.f38017o == pVar.f38017o && Intrinsics.areEqual(this.f38018p, pVar.f38018p) && Intrinsics.areEqual(this.f38019q, pVar.f38019q) && Intrinsics.areEqual(this.f38020r, pVar.f38020r) && this.f38021s == pVar.f38021s && this.f38022t == pVar.f38022t && this.f38023u == pVar.f38023u) {
                 return true;
             }
             return false;
@@ -2625,51 +2625,51 @@ public abstract class x1 implements Parcelable {
 
         public int hashCode() {
             int hashCode;
-            String str = this.f37967e;
+            String str = this.f38015e;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
             } else {
                 hashCode = str.hashCode();
             }
-            int hashCode2 = ((((hashCode * 31) + this.f37968i.hashCode()) * 31) + Long.hashCode(this.f37969o)) * 31;
-            x1 x1Var = this.f37970p;
+            int hashCode2 = ((((hashCode * 31) + this.f38016i.hashCode()) * 31) + Long.hashCode(this.f38017o)) * 31;
+            x1 x1Var = this.f38018p;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((((((hashCode2 + i10) * 31) + this.f37971q.hashCode()) * 31) + this.f37972r.hashCode()) * 31) + Boolean.hashCode(this.f37973s)) * 31) + this.f37974t.hashCode()) * 31) + Boolean.hashCode(this.f37975u);
+            return ((((((((((hashCode2 + i10) * 31) + this.f38019q.hashCode()) * 31) + this.f38020r.hashCode()) * 31) + Boolean.hashCode(this.f38021s)) * 31) + this.f38022t.hashCode()) * 31) + Boolean.hashCode(this.f38023u);
         }
 
         @Override // mp.z
         public boolean l() {
-            return this.f37975u;
+            return this.f38023u;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37970p;
+            return this.f38018p;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37974t;
+            return this.f38022t;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37976v;
+            return this.f38024v;
         }
 
         public String toString() {
-            String str = this.f37967e;
-            un.v vVar = this.f37968i;
-            long j10 = this.f37969o;
-            x1 x1Var = this.f37970p;
-            List list = this.f37971q;
-            s0 s0Var = this.f37972r;
-            boolean z10 = this.f37973s;
-            v.b bVar = this.f37974t;
-            boolean z11 = this.f37975u;
+            String str = this.f38015e;
+            un.v vVar = this.f38016i;
+            long j10 = this.f38017o;
+            x1 x1Var = this.f38018p;
+            List list = this.f38019q;
+            s0 s0Var = this.f38020r;
+            boolean z10 = this.f38021s;
+            v.b bVar = this.f38022t;
+            boolean z11 = this.f38023u;
             return "WaitForWebRtcSetup(webRtcJwt=" + str + ", cameraProperties=" + vVar + ", startSelfieTimestamp=" + j10 + ", backState=" + x1Var + ", posesNeeded=" + list + ", poseConfigs=" + s0Var + ", autoCaptureSupported=" + z10 + ", cameraFacingMode=" + bVar + ", isFlashEnabled=" + z11 + ")";
         }
 
@@ -2684,19 +2684,19 @@ public abstract class x1 implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f37967e);
-            dest.writeParcelable(this.f37968i, i10);
-            dest.writeLong(this.f37969o);
-            dest.writeParcelable(this.f37970p, i10);
-            List<a1.b> list = this.f37971q;
+            dest.writeString(this.f38015e);
+            dest.writeParcelable(this.f38016i, i10);
+            dest.writeLong(this.f38017o);
+            dest.writeParcelable(this.f38018p, i10);
+            List<a1.b> list = this.f38019q;
             dest.writeInt(list.size());
             for (a1.b bVar : list) {
                 dest.writeString(bVar.name());
             }
-            this.f37972r.writeToParcel(dest, i10);
-            dest.writeInt(this.f37973s ? 1 : 0);
-            dest.writeString(this.f37974t.name());
-            dest.writeInt(this.f37975u ? 1 : 0);
+            this.f38020r.writeToParcel(dest, i10);
+            dest.writeInt(this.f38021s ? 1 : 0);
+            dest.writeString(this.f38022t.name());
+            dest.writeInt(this.f38023u ? 1 : 0);
         }
     }
 
@@ -2706,22 +2706,22 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<q> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37977e;
+        private final List f38025e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f37978i;
+        private final String f38026i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final un.v f37979o;
+        private final un.v f38027o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final long f37980p;
+        private final long f38028p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final x1 f37981q;
+        private final x1 f38029q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final v.b f37982r;
+        private final v.b f38030r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2751,16 +2751,16 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(webRtcObjectId, "webRtcObjectId");
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37977e = selfies;
-            this.f37978i = webRtcObjectId;
-            this.f37979o = cameraProperties;
-            this.f37980p = j10;
-            this.f37981q = x1Var;
-            this.f37982r = cameraFacingMode;
+            this.f38025e = selfies;
+            this.f38026i = webRtcObjectId;
+            this.f38027o = cameraProperties;
+            this.f38028p = j10;
+            this.f38029q = x1Var;
+            this.f38030r = cameraFacingMode;
         }
 
         public final un.v b() {
-            return this.f37979o;
+            return this.f38027o;
         }
 
         @Override // android.os.Parcelable
@@ -2769,41 +2769,41 @@ public abstract class x1 implements Parcelable {
         }
 
         public final long o() {
-            return this.f37980p;
+            return this.f38028p;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37981q;
+            return this.f38029q;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37982r;
+            return this.f38030r;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37977e;
+            return this.f38025e;
         }
 
         public final String u() {
-            return this.f37978i;
+            return this.f38026i;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f37977e;
+            List<Parcelable> list = this.f38025e;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeString(this.f37978i);
-            dest.writeParcelable(this.f37979o, i10);
-            dest.writeLong(this.f37980p);
-            dest.writeParcelable(this.f37981q, i10);
-            dest.writeString(this.f37982r.name());
+            dest.writeString(this.f38026i);
+            dest.writeParcelable(this.f38027o, i10);
+            dest.writeLong(this.f38028p);
+            dest.writeParcelable(this.f38029q, i10);
+            dest.writeString(this.f38030r.name());
         }
     }
 
@@ -2818,7 +2818,7 @@ public abstract class x1 implements Parcelable {
     public abstract List r();
 
     public final void t(boolean z10) {
-        this.f37837d = z10;
+        this.f37885d = z10;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -2827,13 +2827,13 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<j> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final x1 f37914e;
+        private final x1 f37962e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final v.b f37915i;
+        private final v.b f37963i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final List f37916o;
+        private final List f37964o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2852,7 +2852,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public /* synthetic */ j(x1 x1Var, v.b bVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this(x1Var, (i10 & 2) != 0 ? v.b.f51832d : bVar);
+            this(x1Var, (i10 & 2) != 0 ? v.b.f51880d : bVar);
         }
 
         @Override // android.os.Parcelable
@@ -2862,33 +2862,33 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37914e;
+            return this.f37962e;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37915i;
+            return this.f37963i;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37916o;
+            return this.f37964o;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f37914e, i10);
-            dest.writeString(this.f37915i.name());
+            dest.writeParcelable(this.f37962e, i10);
+            dest.writeString(this.f37963i.name());
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public j(x1 x1Var, v.b cameraFacingMode) {
             super(null);
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37914e = x1Var;
-            this.f37915i = cameraFacingMode;
-            this.f37916o = CollectionsKt.l();
+            this.f37962e = x1Var;
+            this.f37963i = cameraFacingMode;
+            this.f37964o = CollectionsKt.l();
         }
     }
 
@@ -2898,46 +2898,46 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<l> CREATOR = new a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f37926e;
+        private final boolean f37974e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final yn.b f37927i;
+        private final yn.b f37975i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final float f37928o;
+        private final float f37976o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final yn.a f37929p;
+        private final yn.a f37977p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f37930q;
+        private final List f37978q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final long f37931r;
+        private final long f37979r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f37932s;
+        private final boolean f37980s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final long f37933t;
+        private final long f37981t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final un.v f37934u;
+        private final un.v f37982u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final x1 f37935v;
+        private final x1 f37983v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final s0 f37936w;
+        private final s0 f37984w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final v.b f37937x;
+        private final v.b f37985x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final boolean f37938y;
+        private final boolean f37986y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final List f37939z;
+        private final List f37987z;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -2994,7 +2994,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public /* synthetic */ l(boolean z10, yn.b bVar, float f10, yn.a aVar, List list, long j10, boolean z11, long j11, un.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? false : z10, (i10 & 2) != 0 ? yn.b.f55476d : bVar, f10, aVar, list, j10, (i10 & 64) != 0 ? true : z11, j11, vVar, x1Var, s0Var, bVar2, z12);
+            this((i10 & 1) != 0 ? false : z10, (i10 & 2) != 0 ? yn.b.f55524d : bVar, f10, aVar, list, j10, (i10 & 64) != 0 ? true : z11, j11, vVar, x1Var, s0Var, bVar2, z12);
         }
 
         public static /* synthetic */ l v(l lVar, boolean z10, yn.b bVar, float f10, yn.a aVar, List list, long j10, boolean z11, long j11, un.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z12, int i10, Object obj) {
@@ -3012,67 +3012,67 @@ public abstract class x1 implements Parcelable {
             v.b bVar4;
             boolean z15;
             if ((i10 & 1) != 0) {
-                z13 = lVar.f37926e;
+                z13 = lVar.f37974e;
             } else {
                 z13 = z10;
             }
             if ((i10 & 2) != 0) {
-                bVar3 = lVar.f37927i;
+                bVar3 = lVar.f37975i;
             } else {
                 bVar3 = bVar;
             }
             if ((i10 & 4) != 0) {
-                f11 = lVar.f37928o;
+                f11 = lVar.f37976o;
             } else {
                 f11 = f10;
             }
             if ((i10 & 8) != 0) {
-                aVar2 = lVar.f37929p;
+                aVar2 = lVar.f37977p;
             } else {
                 aVar2 = aVar;
             }
             if ((i10 & 16) != 0) {
-                list2 = lVar.f37930q;
+                list2 = lVar.f37978q;
             } else {
                 list2 = list;
             }
             if ((i10 & 32) != 0) {
-                j12 = lVar.f37931r;
+                j12 = lVar.f37979r;
             } else {
                 j12 = j10;
             }
             if ((i10 & 64) != 0) {
-                z14 = lVar.f37932s;
+                z14 = lVar.f37980s;
             } else {
                 z14 = z11;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                j13 = lVar.f37933t;
+                j13 = lVar.f37981t;
             } else {
                 j13 = j11;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                vVar2 = lVar.f37934u;
+                vVar2 = lVar.f37982u;
             } else {
                 vVar2 = vVar;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                x1Var2 = lVar.f37935v;
+                x1Var2 = lVar.f37983v;
             } else {
                 x1Var2 = x1Var;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                s0Var2 = lVar.f37936w;
+                s0Var2 = lVar.f37984w;
             } else {
                 s0Var2 = s0Var;
             }
             if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-                bVar4 = lVar.f37937x;
+                bVar4 = lVar.f37985x;
             } else {
                 bVar4 = bVar2;
             }
             if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                z15 = lVar.f37938y;
+                z15 = lVar.f37986y;
             } else {
                 z15 = z12;
             }
@@ -3080,27 +3080,27 @@ public abstract class x1 implements Parcelable {
         }
 
         public final yn.b A() {
-            return this.f37927i;
+            return this.f37975i;
         }
 
         @Override // mp.z
         public boolean a() {
-            return this.f37932s;
+            return this.f37980s;
         }
 
         @Override // mp.a0
         public un.v b() {
-            return this.f37934u;
+            return this.f37982u;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37930q;
+            return this.f37978q;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37936w;
+            return this.f37984w;
         }
 
         @Override // android.os.Parcelable
@@ -3121,7 +3121,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             l lVar = (l) obj;
-            if (this.f37926e == lVar.f37926e && this.f37927i == lVar.f37927i && Float.compare(this.f37928o, lVar.f37928o) == 0 && Intrinsics.areEqual(this.f37929p, lVar.f37929p) && Intrinsics.areEqual(this.f37930q, lVar.f37930q) && this.f37931r == lVar.f37931r && this.f37932s == lVar.f37932s && this.f37933t == lVar.f37933t && Intrinsics.areEqual(this.f37934u, lVar.f37934u) && Intrinsics.areEqual(this.f37935v, lVar.f37935v) && Intrinsics.areEqual(this.f37936w, lVar.f37936w) && this.f37937x == lVar.f37937x && this.f37938y == lVar.f37938y) {
+            if (this.f37974e == lVar.f37974e && this.f37975i == lVar.f37975i && Float.compare(this.f37976o, lVar.f37976o) == 0 && Intrinsics.areEqual(this.f37977p, lVar.f37977p) && Intrinsics.areEqual(this.f37978q, lVar.f37978q) && this.f37979r == lVar.f37979r && this.f37980s == lVar.f37980s && this.f37981t == lVar.f37981t && Intrinsics.areEqual(this.f37982u, lVar.f37982u) && Intrinsics.areEqual(this.f37983v, lVar.f37983v) && Intrinsics.areEqual(this.f37984w, lVar.f37984w) && this.f37985x == lVar.f37985x && this.f37986y == lVar.f37986y) {
                 return true;
             }
             return false;
@@ -3140,32 +3140,32 @@ public abstract class x1 implements Parcelable {
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = Boolean.hashCode(this.f37926e) * 31;
-            yn.b bVar = this.f37927i;
+            int hashCode3 = Boolean.hashCode(this.f37974e) * 31;
+            yn.b bVar = this.f37975i;
             int i10 = 0;
             if (bVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = bVar.hashCode();
             }
-            int hashCode4 = (((hashCode3 + hashCode) * 31) + Float.hashCode(this.f37928o)) * 31;
-            yn.a aVar = this.f37929p;
+            int hashCode4 = (((hashCode3 + hashCode) * 31) + Float.hashCode(this.f37976o)) * 31;
+            yn.a aVar = this.f37977p;
             if (aVar == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = aVar.hashCode();
             }
-            int hashCode5 = (((((((((((hashCode4 + hashCode2) * 31) + this.f37930q.hashCode()) * 31) + Long.hashCode(this.f37931r)) * 31) + Boolean.hashCode(this.f37932s)) * 31) + Long.hashCode(this.f37933t)) * 31) + this.f37934u.hashCode()) * 31;
-            x1 x1Var = this.f37935v;
+            int hashCode5 = (((((((((((hashCode4 + hashCode2) * 31) + this.f37978q.hashCode()) * 31) + Long.hashCode(this.f37979r)) * 31) + Boolean.hashCode(this.f37980s)) * 31) + Long.hashCode(this.f37981t)) * 31) + this.f37982u.hashCode()) * 31;
+            x1 x1Var = this.f37983v;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((hashCode5 + i10) * 31) + this.f37936w.hashCode()) * 31) + this.f37937x.hashCode()) * 31) + Boolean.hashCode(this.f37938y);
+            return ((((((hashCode5 + i10) * 31) + this.f37984w.hashCode()) * 31) + this.f37985x.hashCode()) * 31) + Boolean.hashCode(this.f37986y);
         }
 
         @Override // mp.a0
         public long i() {
-            return this.f37931r;
+            return this.f37979r;
         }
 
         @Override // mp.a0
@@ -3175,43 +3175,43 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean l() {
-            return this.f37938y;
+            return this.f37986y;
         }
 
         @Override // mp.a0
         public long o() {
-            return this.f37933t;
+            return this.f37981t;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37935v;
+            return this.f37983v;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37937x;
+            return this.f37985x;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37939z;
+            return this.f37987z;
         }
 
         public String toString() {
-            boolean z10 = this.f37926e;
-            yn.b bVar = this.f37927i;
-            float f10 = this.f37928o;
-            yn.a aVar = this.f37929p;
-            List list = this.f37930q;
-            long j10 = this.f37931r;
-            boolean z11 = this.f37932s;
-            long j11 = this.f37933t;
-            un.v vVar = this.f37934u;
-            x1 x1Var = this.f37935v;
-            s0 s0Var = this.f37936w;
-            v.b bVar2 = this.f37937x;
-            boolean z12 = this.f37938y;
+            boolean z10 = this.f37974e;
+            yn.b bVar = this.f37975i;
+            float f10 = this.f37976o;
+            yn.a aVar = this.f37977p;
+            List list = this.f37978q;
+            long j10 = this.f37979r;
+            boolean z11 = this.f37980s;
+            long j11 = this.f37981t;
+            un.v vVar = this.f37982u;
+            x1 x1Var = this.f37983v;
+            s0 s0Var = this.f37984w;
+            v.b bVar2 = this.f37985x;
+            boolean z12 = this.f37986y;
             return "StartCapture(centered=" + z10 + ", selfieError=" + bVar + ", poseScore=" + f10 + ", brightnessInfo=" + aVar + ", posesNeeded=" + list + ", startCaptureTimestamp=" + j10 + ", autoCaptureSupported=" + z11 + ", startSelfieTimestamp=" + j11 + ", cameraProperties=" + vVar + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", cameraFacingMode=" + bVar2 + ", isFlashEnabled=" + z12 + ")";
         }
 
@@ -3224,39 +3224,39 @@ public abstract class x1 implements Parcelable {
         }
 
         public final yn.a w() {
-            return this.f37929p;
+            return this.f37977p;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f37926e ? 1 : 0);
-            yn.b bVar = this.f37927i;
+            dest.writeInt(this.f37974e ? 1 : 0);
+            yn.b bVar = this.f37975i;
             if (bVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 dest.writeString(bVar.name());
             }
-            dest.writeFloat(this.f37928o);
-            dest.writeParcelable(this.f37929p, i10);
-            List<a1.b> list = this.f37930q;
+            dest.writeFloat(this.f37976o);
+            dest.writeParcelable(this.f37977p, i10);
+            List<a1.b> list = this.f37978q;
             dest.writeInt(list.size());
             for (a1.b bVar2 : list) {
                 dest.writeString(bVar2.name());
             }
-            dest.writeLong(this.f37931r);
-            dest.writeInt(this.f37932s ? 1 : 0);
-            dest.writeLong(this.f37933t);
-            dest.writeParcelable(this.f37934u, i10);
-            dest.writeParcelable(this.f37935v, i10);
-            this.f37936w.writeToParcel(dest, i10);
-            dest.writeString(this.f37937x.name());
-            dest.writeInt(this.f37938y ? 1 : 0);
+            dest.writeLong(this.f37979r);
+            dest.writeInt(this.f37980s ? 1 : 0);
+            dest.writeLong(this.f37981t);
+            dest.writeParcelable(this.f37982u, i10);
+            dest.writeParcelable(this.f37983v, i10);
+            this.f37984w.writeToParcel(dest, i10);
+            dest.writeString(this.f37985x.name());
+            dest.writeInt(this.f37986y ? 1 : 0);
         }
 
         public final float x() {
-            return this.f37928o;
+            return this.f37976o;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -3266,20 +3266,20 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
-            this.f37926e = z10;
-            this.f37927i = bVar;
-            this.f37928o = f10;
-            this.f37929p = aVar;
-            this.f37930q = posesNeeded;
-            this.f37931r = j10;
-            this.f37932s = z11;
-            this.f37933t = j11;
-            this.f37934u = cameraProperties;
-            this.f37935v = x1Var;
-            this.f37936w = poseConfigs;
-            this.f37937x = cameraFacingMode;
-            this.f37938y = z12;
-            this.f37939z = CollectionsKt.l();
+            this.f37974e = z10;
+            this.f37975i = bVar;
+            this.f37976o = f10;
+            this.f37977p = aVar;
+            this.f37978q = posesNeeded;
+            this.f37979r = j10;
+            this.f37980s = z11;
+            this.f37981t = j11;
+            this.f37982u = cameraProperties;
+            this.f37983v = x1Var;
+            this.f37984w = poseConfigs;
+            this.f37985x = cameraFacingMode;
+            this.f37986y = z12;
+            this.f37987z = CollectionsKt.l();
         }
     }
 
@@ -3292,46 +3292,46 @@ public abstract class x1 implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0514a();
 
         /* renamed from: e  reason: collision with root package name */
-        private final yn.b f37838e;
+        private final yn.b f37886e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final float f37839i;
+        private final float f37887i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final yn.a f37840o;
+        private final yn.a f37888o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final List f37841p;
+        private final List f37889p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f37842q;
+        private final List f37890q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final long f37843r;
+        private final long f37891r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f37844s;
+        private final boolean f37892s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final long f37845t;
+        private final long f37893t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final un.v f37846u;
+        private final un.v f37894u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final x1 f37847v;
+        private final x1 f37895v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final s0 f37848w;
+        private final s0 f37896w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final v.b f37849x;
+        private final v.b f37897x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final boolean f37850y;
+        private final boolean f37898y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final g f37851z;
+        private final g f37899z;
 
         /* renamed from: mp.x1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -3397,7 +3397,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public /* synthetic */ a(yn.b bVar, float f10, yn.a aVar, List list, List list2, long j10, boolean z10, long j11, un.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z11, g gVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? null : bVar, f10, aVar, (i10 & 8) != 0 ? CollectionsKt.l() : list, list2, j10, (i10 & 64) != 0 ? true : z10, j11, vVar, x1Var, s0Var, bVar2, z11, (i10 & 8192) != 0 ? g.f37896d : gVar);
+            this((i10 & 1) != 0 ? null : bVar, f10, aVar, (i10 & 8) != 0 ? CollectionsKt.l() : list, list2, j10, (i10 & 64) != 0 ? true : z10, j11, vVar, x1Var, s0Var, bVar2, z11, (i10 & 8192) != 0 ? g.f37944d : gVar);
         }
 
         public static /* synthetic */ a v(a aVar, yn.b bVar, float f10, yn.a aVar2, List list, List list2, long j10, boolean z10, long j11, un.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z11, g gVar, int i10, Object obj) {
@@ -3416,73 +3416,73 @@ public abstract class x1 implements Parcelable {
             boolean z13;
             g gVar2;
             if ((i10 & 1) != 0) {
-                bVar3 = aVar.f37838e;
+                bVar3 = aVar.f37886e;
             } else {
                 bVar3 = bVar;
             }
             if ((i10 & 2) != 0) {
-                f11 = aVar.f37839i;
+                f11 = aVar.f37887i;
             } else {
                 f11 = f10;
             }
             if ((i10 & 4) != 0) {
-                aVar3 = aVar.f37840o;
+                aVar3 = aVar.f37888o;
             } else {
                 aVar3 = aVar2;
             }
             if ((i10 & 8) != 0) {
-                list3 = aVar.f37841p;
+                list3 = aVar.f37889p;
             } else {
                 list3 = list;
             }
             if ((i10 & 16) != 0) {
-                list4 = aVar.f37842q;
+                list4 = aVar.f37890q;
             } else {
                 list4 = list2;
             }
             if ((i10 & 32) != 0) {
-                j12 = aVar.f37843r;
+                j12 = aVar.f37891r;
             } else {
                 j12 = j10;
             }
             if ((i10 & 64) != 0) {
-                z12 = aVar.f37844s;
+                z12 = aVar.f37892s;
             } else {
                 z12 = z10;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                j13 = aVar.f37845t;
+                j13 = aVar.f37893t;
             } else {
                 j13 = j11;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                vVar2 = aVar.f37846u;
+                vVar2 = aVar.f37894u;
             } else {
                 vVar2 = vVar;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                x1Var2 = aVar.f37847v;
+                x1Var2 = aVar.f37895v;
             } else {
                 x1Var2 = x1Var;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                s0Var2 = aVar.f37848w;
+                s0Var2 = aVar.f37896w;
             } else {
                 s0Var2 = s0Var;
             }
             if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-                bVar4 = aVar.f37849x;
+                bVar4 = aVar.f37897x;
             } else {
                 bVar4 = bVar2;
             }
             yn.b bVar5 = bVar3;
             if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                z13 = aVar.f37850y;
+                z13 = aVar.f37898y;
             } else {
                 z13 = z11;
             }
             if ((i10 & 8192) != 0) {
-                gVar2 = aVar.f37851z;
+                gVar2 = aVar.f37899z;
             } else {
                 gVar2 = gVar;
             }
@@ -3490,31 +3490,31 @@ public abstract class x1 implements Parcelable {
         }
 
         public final float A() {
-            return this.f37839i;
+            return this.f37887i;
         }
 
         public final yn.b B() {
-            return this.f37838e;
+            return this.f37886e;
         }
 
         @Override // mp.z
         public boolean a() {
-            return this.f37844s;
+            return this.f37892s;
         }
 
         @Override // mp.a0
         public un.v b() {
-            return this.f37846u;
+            return this.f37894u;
         }
 
         @Override // mp.z
         public List c() {
-            return this.f37842q;
+            return this.f37890q;
         }
 
         @Override // mp.z
         public s0 d() {
-            return this.f37848w;
+            return this.f37896w;
         }
 
         @Override // android.os.Parcelable
@@ -3535,7 +3535,7 @@ public abstract class x1 implements Parcelable {
                 return false;
             }
             a aVar = (a) obj;
-            if (this.f37838e == aVar.f37838e && Float.compare(this.f37839i, aVar.f37839i) == 0 && Intrinsics.areEqual(this.f37840o, aVar.f37840o) && Intrinsics.areEqual(this.f37841p, aVar.f37841p) && Intrinsics.areEqual(this.f37842q, aVar.f37842q) && this.f37843r == aVar.f37843r && this.f37844s == aVar.f37844s && this.f37845t == aVar.f37845t && Intrinsics.areEqual(this.f37846u, aVar.f37846u) && Intrinsics.areEqual(this.f37847v, aVar.f37847v) && Intrinsics.areEqual(this.f37848w, aVar.f37848w) && this.f37849x == aVar.f37849x && this.f37850y == aVar.f37850y && this.f37851z == aVar.f37851z) {
+            if (this.f37886e == aVar.f37886e && Float.compare(this.f37887i, aVar.f37887i) == 0 && Intrinsics.areEqual(this.f37888o, aVar.f37888o) && Intrinsics.areEqual(this.f37889p, aVar.f37889p) && Intrinsics.areEqual(this.f37890q, aVar.f37890q) && this.f37891r == aVar.f37891r && this.f37892s == aVar.f37892s && this.f37893t == aVar.f37893t && Intrinsics.areEqual(this.f37894u, aVar.f37894u) && Intrinsics.areEqual(this.f37895v, aVar.f37895v) && Intrinsics.areEqual(this.f37896w, aVar.f37896w) && this.f37897x == aVar.f37897x && this.f37898y == aVar.f37898y && this.f37899z == aVar.f37899z) {
                 return true;
             }
             return false;
@@ -3554,31 +3554,31 @@ public abstract class x1 implements Parcelable {
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            yn.b bVar = this.f37838e;
+            yn.b bVar = this.f37886e;
             int i10 = 0;
             if (bVar == null) {
                 hashCode = 0;
             } else {
                 hashCode = bVar.hashCode();
             }
-            int hashCode3 = ((hashCode * 31) + Float.hashCode(this.f37839i)) * 31;
-            yn.a aVar = this.f37840o;
+            int hashCode3 = ((hashCode * 31) + Float.hashCode(this.f37887i)) * 31;
+            yn.a aVar = this.f37888o;
             if (aVar == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = aVar.hashCode();
             }
-            int hashCode4 = (((((((((((((hashCode3 + hashCode2) * 31) + this.f37841p.hashCode()) * 31) + this.f37842q.hashCode()) * 31) + Long.hashCode(this.f37843r)) * 31) + Boolean.hashCode(this.f37844s)) * 31) + Long.hashCode(this.f37845t)) * 31) + this.f37846u.hashCode()) * 31;
-            x1 x1Var = this.f37847v;
+            int hashCode4 = (((((((((((((hashCode3 + hashCode2) * 31) + this.f37889p.hashCode()) * 31) + this.f37890q.hashCode()) * 31) + Long.hashCode(this.f37891r)) * 31) + Boolean.hashCode(this.f37892s)) * 31) + Long.hashCode(this.f37893t)) * 31) + this.f37894u.hashCode()) * 31;
+            x1 x1Var = this.f37895v;
             if (x1Var != null) {
                 i10 = x1Var.hashCode();
             }
-            return ((((((((hashCode4 + i10) * 31) + this.f37848w.hashCode()) * 31) + this.f37849x.hashCode()) * 31) + Boolean.hashCode(this.f37850y)) * 31) + this.f37851z.hashCode();
+            return ((((((((hashCode4 + i10) * 31) + this.f37896w.hashCode()) * 31) + this.f37897x.hashCode()) * 31) + Boolean.hashCode(this.f37898y)) * 31) + this.f37899z.hashCode();
         }
 
         @Override // mp.a0
         public long i() {
-            return this.f37843r;
+            return this.f37891r;
         }
 
         @Override // mp.a0
@@ -3588,44 +3588,44 @@ public abstract class x1 implements Parcelable {
 
         @Override // mp.z
         public boolean l() {
-            return this.f37850y;
+            return this.f37898y;
         }
 
         @Override // mp.a0
         public long o() {
-            return this.f37845t;
+            return this.f37893t;
         }
 
         @Override // mp.x1
         public x1 p() {
-            return this.f37847v;
+            return this.f37895v;
         }
 
         @Override // mp.x1
         public v.b q() {
-            return this.f37849x;
+            return this.f37897x;
         }
 
         @Override // mp.x1
         public List r() {
-            return this.f37841p;
+            return this.f37889p;
         }
 
         public String toString() {
-            yn.b bVar = this.f37838e;
-            float f10 = this.f37839i;
-            yn.a aVar = this.f37840o;
-            List list = this.f37841p;
-            List list2 = this.f37842q;
-            long j10 = this.f37843r;
-            boolean z10 = this.f37844s;
-            long j11 = this.f37845t;
-            un.v vVar = this.f37846u;
-            x1 x1Var = this.f37847v;
-            s0 s0Var = this.f37848w;
-            v.b bVar2 = this.f37849x;
-            boolean z11 = this.f37850y;
-            g gVar = this.f37851z;
+            yn.b bVar = this.f37886e;
+            float f10 = this.f37887i;
+            yn.a aVar = this.f37888o;
+            List list = this.f37889p;
+            List list2 = this.f37890q;
+            long j10 = this.f37891r;
+            boolean z10 = this.f37892s;
+            long j11 = this.f37893t;
+            un.v vVar = this.f37894u;
+            x1 x1Var = this.f37895v;
+            s0 s0Var = this.f37896w;
+            v.b bVar2 = this.f37897x;
+            boolean z11 = this.f37898y;
+            g gVar = this.f37899z;
             return "Capture(selfieError=" + bVar + ", poseScore=" + f10 + ", brightnessInfo=" + aVar + ", selfies=" + list + ", posesNeeded=" + list2 + ", startCaptureTimestamp=" + j10 + ", autoCaptureSupported=" + z10 + ", startSelfieTimestamp=" + j11 + ", cameraProperties=" + vVar + ", backState=" + x1Var + ", poseConfigs=" + s0Var + ", cameraFacingMode=" + bVar2 + ", isFlashEnabled=" + z11 + ", flashState=" + gVar + ")";
         }
 
@@ -3640,44 +3640,44 @@ public abstract class x1 implements Parcelable {
         }
 
         public final yn.a w() {
-            return this.f37840o;
+            return this.f37888o;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            yn.b bVar = this.f37838e;
+            yn.b bVar = this.f37886e;
             if (bVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 dest.writeString(bVar.name());
             }
-            dest.writeFloat(this.f37839i);
-            dest.writeParcelable(this.f37840o, i10);
-            List<Parcelable> list = this.f37841p;
+            dest.writeFloat(this.f37887i);
+            dest.writeParcelable(this.f37888o, i10);
+            List<Parcelable> list = this.f37889p;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            List<a1.b> list2 = this.f37842q;
+            List<a1.b> list2 = this.f37890q;
             dest.writeInt(list2.size());
             for (a1.b bVar2 : list2) {
                 dest.writeString(bVar2.name());
             }
-            dest.writeLong(this.f37843r);
-            dest.writeInt(this.f37844s ? 1 : 0);
-            dest.writeLong(this.f37845t);
-            dest.writeParcelable(this.f37846u, i10);
-            dest.writeParcelable(this.f37847v, i10);
-            this.f37848w.writeToParcel(dest, i10);
-            dest.writeString(this.f37849x.name());
-            dest.writeInt(this.f37850y ? 1 : 0);
-            dest.writeString(this.f37851z.name());
+            dest.writeLong(this.f37891r);
+            dest.writeInt(this.f37892s ? 1 : 0);
+            dest.writeLong(this.f37893t);
+            dest.writeParcelable(this.f37894u, i10);
+            dest.writeParcelable(this.f37895v, i10);
+            this.f37896w.writeToParcel(dest, i10);
+            dest.writeString(this.f37897x.name());
+            dest.writeInt(this.f37898y ? 1 : 0);
+            dest.writeString(this.f37899z.name());
         }
 
         public final g x() {
-            return this.f37851z;
+            return this.f37899z;
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -3689,20 +3689,20 @@ public abstract class x1 implements Parcelable {
             Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
             Intrinsics.checkNotNullParameter(cameraFacingMode, "cameraFacingMode");
             Intrinsics.checkNotNullParameter(flashState, "flashState");
-            this.f37838e = bVar;
-            this.f37839i = f10;
-            this.f37840o = aVar;
-            this.f37841p = selfies;
-            this.f37842q = posesNeeded;
-            this.f37843r = j10;
-            this.f37844s = z10;
-            this.f37845t = j11;
-            this.f37846u = cameraProperties;
-            this.f37847v = x1Var;
-            this.f37848w = poseConfigs;
-            this.f37849x = cameraFacingMode;
-            this.f37850y = z11;
-            this.f37851z = flashState;
+            this.f37886e = bVar;
+            this.f37887i = f10;
+            this.f37888o = aVar;
+            this.f37889p = selfies;
+            this.f37890q = posesNeeded;
+            this.f37891r = j10;
+            this.f37892s = z10;
+            this.f37893t = j11;
+            this.f37894u = cameraProperties;
+            this.f37895v = x1Var;
+            this.f37896w = poseConfigs;
+            this.f37897x = cameraFacingMode;
+            this.f37898y = z11;
+            this.f37899z = flashState;
         }
     }
 }

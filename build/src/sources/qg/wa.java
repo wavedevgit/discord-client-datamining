@@ -5,7 +5,7 @@ import yi.c;
 final class wa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final wa f47698a = new wa();
+    static final wa f47746a = new wa();
 
     static {
         c.b a10 = yi.c.a("errorCode");

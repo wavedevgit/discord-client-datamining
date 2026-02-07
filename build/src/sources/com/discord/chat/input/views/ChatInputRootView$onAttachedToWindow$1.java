@@ -29,7 +29,7 @@ final class ChatInputRootView$onAttachedToWindow$1 extends kotlin.coroutines.jvm
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ChatInputRootView.CurrentTextAndSelection currentTextAndSelection, Continuation<? super Unit> continuation) {
-        return ((ChatInputRootView$onAttachedToWindow$1) create(currentTextAndSelection, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ChatInputRootView$onAttachedToWindow$1) create(currentTextAndSelection, continuation)).invokeSuspend(Unit.f32056a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -42,7 +42,7 @@ final class ChatInputRootView$onAttachedToWindow$1 extends kotlin.coroutines.jvm
             if (currentTextAndSelection != null && (listener = this.this$0.getListener()) != null) {
                 listener.onTextOrSelectionChanged(currentTextAndSelection.getSelectionStart(), currentTextAndSelection.getSelectionEnd(), currentTextAndSelection.getText(), currentTextAndSelection.getEditId());
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

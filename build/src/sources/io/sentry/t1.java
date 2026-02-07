@@ -17,10 +17,10 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public final class t1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final v1 f28861a;
+    public final v1 f28909a;
 
     public t1(int i10) {
-        this.f28861a = new v1(i10);
+        this.f28909a = new v1(i10);
     }
 
     private void b(f3 f3Var, ILogger iLogger, Collection collection) {
@@ -103,7 +103,7 @@ public final class t1 {
             f3Var.f(obj.toString());
         } else {
             try {
-                a(f3Var, iLogger, this.f28861a.d(obj, iLogger));
+                a(f3Var, iLogger, this.f28909a.d(obj, iLogger));
             } catch (Exception e10) {
                 iLogger.b(SentryLevel.ERROR, "Failed serializing unknown object.", e10);
                 f3Var.f("[OBJECT]");

@@ -5,30 +5,30 @@ import yi.c;
 final class y3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y3 f44950a = new y3();
+    static final y3 f44998a = new y3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44951b;
+    private static final yi.c f44999b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44952c;
+    private static final yi.c f45000c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44953d;
+    private static final yi.c f45001d;
 
     static {
         c.b a10 = yi.c.a("logEventKey");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44951b = a10.b(s1Var.b()).a();
+        f44999b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("eventCount");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44952c = a11.b(s1Var2.b()).a();
+        f45000c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("inferenceDurationStats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44953d = a12.b(s1Var3.b()).a();
+        f45001d = a12.b(s1Var3.b()).a();
     }
 
     private y3() {

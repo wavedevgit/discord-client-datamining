@@ -6,7 +6,7 @@ import android.os.Looper;
 final class a2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Handler f26999a;
+    private final Handler f27047a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a2() {
@@ -14,14 +14,14 @@ final class a2 {
     }
 
     public Thread a() {
-        return this.f26999a.getLooper().getThread();
+        return this.f27047a.getLooper().getThread();
     }
 
     public void b(Runnable runnable) {
-        this.f26999a.post(runnable);
+        this.f27047a.post(runnable);
     }
 
     a2(Looper looper) {
-        this.f26999a = new Handler(looper);
+        this.f27047a = new Handler(looper);
     }
 }

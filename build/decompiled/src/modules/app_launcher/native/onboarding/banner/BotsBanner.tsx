@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/onboarding/banner/BotsBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107442: for (var _fun107442_ip = 0;;) switch (_fun107442_ip) {
+        _fun107918: for (var _fun107918_ip = 0;;) switch (_fun107918_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.context;
@@ -62,15 +62,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var10;
                 var0 = null;
                 if (var1) {
-                    _fun107442_ip = 244;
-                    continue _fun107442
+                    _fun107918_ip = 244;
+                    continue _fun107918
                 }
             case 114:
                 var1 = var2 == var9;
                 var0 = null;
                 if (var1) {
-                    _fun107442_ip = 244;
-                    continue _fun107442
+                    _fun107918_ip = 244;
+                    continue _fun107918
                 }
             case 123:
                 var3 = _closure1_slot3;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13897, 13884, 13893, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13939, 13926, 13935, 1234, 2]);

@@ -9,7 +9,7 @@ import qr.p;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f27812a = new l();
+    public static final l f27860a = new l();
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -51,7 +51,7 @@ public final class l {
     public static final /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f27813a;
+        public static final /* synthetic */ int[] f27861a;
 
         static {
             int[] iArr = new int[a.values().length];
@@ -63,7 +63,7 @@ public final class l {
                 iArr[a.SOC_MANUFACTURER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f27813a = iArr;
+            f27861a = iArr;
         }
     }
 
@@ -82,7 +82,7 @@ public final class l {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
         if (Build.VERSION.SDK_INT >= 31) {
-            int i10 = b.f27813a[key.ordinal()];
+            int i10 = b.f27861a[key.ordinal()];
             if (i10 == 1) {
                 str = Build.SOC_MODEL;
             } else if (i10 == 2) {

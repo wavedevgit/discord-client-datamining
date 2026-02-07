@@ -35,20 +35,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var0 = {};
             var2 = function arg0() {
-                _fun92987: for (var _fun92987_ip = 0;;) switch (_fun92987_ip) {
+                _fun93467: for (var _fun93467_ip = 0;;) switch (_fun93467_ip) {
                     case 0:
                         var0 = arg0;
                         var0 = var0.data;
                         var0 = var0.closing;
                         if (var0) {
-                            _fun92987_ip = 64;
-                            continue _fun92987
+                            _fun93467_ip = 64;
+                            continue _fun93467
                         }
                     case 17:
                         var0 = _closure3_slot0;
                         if (!var0) {
-                            _fun92987_ip = 93;
-                            continue _fun92987
+                            _fun93467_ip = 93;
+                            continue _fun93467
                         }
                     case 27:
                         var0 = false;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = undefined;
                         var0 = var2.bind(var1)(var0);
                         var0 = var0.bind(var1)();
-                        _fun92987_ip = 93;
-                        continue _fun92987;
+                        _fun93467_ip = 93;
+                        continue _fun93467;
                     case 64:
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAccessibilityNativeStackFocusTracking = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12211, 12212, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12257, 12258, 2]);

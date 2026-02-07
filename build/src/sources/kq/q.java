@@ -21,23 +21,23 @@ public abstract class q {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f35233a;
+        public static final /* synthetic */ int[] f35281a;
 
         static {
             int[] iArr = new int[p.values().length];
             try {
-                iArr[p.f35228d.ordinal()] = 1;
+                iArr[p.f35276d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[p.f35229e.ordinal()] = 2;
+                iArr[p.f35277e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[p.f35230i.ordinal()] = 3;
+                iArr[p.f35278i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f35233a = iArr;
+            f35281a = iArr;
         }
     }
 
@@ -45,7 +45,7 @@ public abstract class q {
         Intrinsics.checkNotNullParameter(constraintLayout, "<this>");
         if (clickableStackComponentStyle != null) {
             e(constraintLayout, clickableStackComponentStyle);
-            constraintLayout.setBackground(g(clickableStackComponentStyle, p.f35229e));
+            constraintLayout.setBackground(g(clickableStackComponentStyle, p.f35277e));
         }
     }
 
@@ -53,7 +53,7 @@ public abstract class q {
         Intrinsics.checkNotNullParameter(constraintLayout, "<this>");
         Intrinsics.checkNotNullParameter(styles, "styles");
         e(constraintLayout, styles);
-        constraintLayout.setBackground(g(styles, p.f35228d));
+        constraintLayout.setBackground(g(styles, p.f35276d));
         Double widthValue = styles.getWidthValue();
         if (widthValue != null) {
             int a10 = (int) rp.h.a(widthValue.doubleValue());
@@ -93,7 +93,7 @@ public abstract class q {
         Intrinsics.checkNotNullParameter(constraintLayout, "<this>");
         if (clickableStackComponentStyle != null) {
             e(constraintLayout, clickableStackComponentStyle);
-            constraintLayout.setBackground(g(clickableStackComponentStyle, p.f35230i));
+            constraintLayout.setBackground(g(clickableStackComponentStyle, p.f35278i));
         }
     }
 
@@ -243,7 +243,7 @@ public abstract class q {
             arrayList.add(Integer.valueOf((int) Math.ceil(rp.h.a(number.doubleValue()))));
         }
         int intValue2 = ((Number) CollectionsKt.E0(arrayList)).intValue();
-        int[] iArr = a.f35233a;
+        int[] iArr = a.f35281a;
         int i13 = iArr[pVar.ordinal()];
         if (i13 != 1) {
             if (i13 != 2) {

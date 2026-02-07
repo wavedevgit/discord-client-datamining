@@ -38,7 +38,7 @@ public /* synthetic */ class EmbedFooter$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(n2Var)};
     }
 
@@ -54,7 +54,7 @@ public /* synthetic */ class EmbedFooter$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         String str4 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             i10 = 7;
             str2 = (String) b10.n(serialDescriptor, 1, n2Var, null);
@@ -69,15 +69,15 @@ public /* synthetic */ class EmbedFooter$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str4 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str5 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str5);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str6 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str6);
                     i11 |= 4;
                 }
             }

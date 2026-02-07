@@ -8,12 +8,12 @@ public abstract class g extends d implements Serializable {
     private static final long serialVersionUID = 1;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient byte f39613p;
+    private final transient byte f39661p;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public g(b0 b0Var, int i10, i iVar, int i11) {
         super(i10, iVar, i11);
-        this.f39613p = (byte) b0Var.d();
+        this.f39661p = (byte) b0Var.d();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -24,7 +24,7 @@ public abstract class g extends d implements Serializable {
 
     @Override // net.time4j.tz.model.d
     public final f0 b(int i10) {
-        return (f0) j(i10).K(c(), net.time4j.f.f39288s);
+        return (f0) j(i10).K(c(), net.time4j.f.f39336s);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -43,12 +43,12 @@ public abstract class g extends d implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte k() {
-        return this.f39613p;
+        return this.f39661p;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public boolean l(g gVar) {
-        if (f().equals(gVar.f()) && c() == gVar.c() && d() == gVar.d() && e() == gVar.e() && this.f39613p == gVar.f39613p) {
+        if (f().equals(gVar.f()) && c() == gVar.c() && d() == gVar.d() && e() == gVar.e() && this.f39661p == gVar.f39661p) {
             return true;
         }
         return false;

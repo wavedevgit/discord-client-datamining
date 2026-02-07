@@ -218,7 +218,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
         MediaType mediaType;
         ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
         MultipartBody.Builder builder = new MultipartBody.Builder(null, 1, null);
-        MediaType a10 = MediaType.f42872e.a(str);
+        MediaType a10 = MediaType.f42920e.a(str);
         if (a10 == null) {
             ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Invalid media type.", null);
             return null;
@@ -238,7 +238,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
             }
             String c10 = extractHeaders.c(CONTENT_TYPE_HEADER_NAME);
             if (c10 != null) {
-                mediaType = MediaType.f42872e.a(c10);
+                mediaType = MediaType.f42920e.a(c10);
                 extractHeaders = extractHeaders.g().i(CONTENT_TYPE_HEADER_NAME).f();
             } else {
                 mediaType = null;
@@ -269,7 +269,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                 builder.b(extractHeaders, RequestBodyUtil.create(mediaType, fileInputStream));
             } else {
                 ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Unrecognized FormData part.", null);
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
         }
         return builder;
@@ -518,7 +518,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                 OkHttpClient.Builder E = this.client.E();
                 Companion.applyCustomBuilder(E);
                 if (!z11) {
-                    E.g(CookieJar.f42839b);
+                    E.g(CookieJar.f42887b);
                 }
                 if (z10) {
                     E.b(new Interceptor() { // from class: com.facebook.react.modules.network.NetworkingModule$sendRequestInternal$$inlined$-addNetworkInterceptor$1
@@ -603,7 +603,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     return;
                                 }
                                 String string = readableMap.getString("string");
-                                MediaType a10 = MediaType.f42872e.a(c12);
+                                MediaType a10 = MediaType.f42920e.a(c12);
                                 if (RequestBodyUtil.isGzipEncoding(c13)) {
                                     if (a10 != null && string != null) {
                                         emptyBody = RequestBodyUtil.createGzip(a10, string);
@@ -640,12 +640,12 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                 }
                                 String string2 = readableMap.getString(REQUEST_BODY_KEY_BASE64);
                                 if (string2 != null) {
-                                    MediaType a11 = MediaType.f42872e.a(c12);
+                                    MediaType a11 = MediaType.f42920e.a(c12);
                                     if (a11 == null) {
                                         ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Invalid content type specified: " + c12, null);
                                         return;
                                     }
-                                    ByteString a12 = ByteString.f43166o.a(string2);
+                                    ByteString a12 = ByteString.f43214o.a(string2);
                                     if (a12 == null) {
                                         ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Request body base64 string was invalid", null);
                                         return;
@@ -671,7 +671,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     ResponseUtil.onRequestError(reactApplicationContextIfActiveOrWarn, i10, "Could not retrieve file for uri " + string3, null);
                                     return;
                                 }
-                                emptyBody = RequestBodyUtil.create(MediaType.f42872e.a(c12), fileInputStream);
+                                emptyBody = RequestBodyUtil.create(MediaType.f42920e.a(c12), fileInputStream);
                             } else if (readableMap.hasKey(REQUEST_BODY_KEY_FORMDATA)) {
                                 if (c12 == null) {
                                     c12 = "multipart/form-data";
@@ -734,7 +734,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                                 m mVar = new m(a13.source());
                                                 String Y = Response.Y(response, "Content-Type", null, 2, null);
                                                 if (Y != null) {
-                                                    mediaType = MediaType.f42872e.a(Y);
+                                                    mediaType = MediaType.f42920e.a(Y);
                                                 }
                                                 a13 = ResponseBody.Companion.b(mediaType, -1L, qu.b.a().b(mVar));
                                             }
@@ -824,7 +824,7 @@ public final class NetworkingModule extends NativeNetworkingAndroidSpec {
                                     m mVar = new m(a13.source());
                                     String Y = Response.Y(response, "Content-Type", null, 2, null);
                                     if (Y != null) {
-                                        mediaType = MediaType.f42872e.a(Y);
+                                        mediaType = MediaType.f42920e.a(Y);
                                     }
                                     a13 = ResponseBody.Companion.b(mediaType, -1L, qu.b.a().b(mVar));
                                 }

@@ -9,24 +9,24 @@ import org.jetbrains.annotations.NotNull;
 public final class r0 implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f37636d;
+    private final boolean f37684d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f37637e;
+    private final boolean f37685e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f37638i;
+    private final long f37686i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f37639o;
+    private final boolean f37687o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f37634p = new a(null);
+    public static final a f37682p = new a(null);
     @NotNull
     public static final Parcelable.Creator<r0> CREATOR = new b();
 
     /* renamed from: q  reason: collision with root package name */
-    private static final r0 f37635q = new r0(false, false, 0, false, 15, null);
+    private static final r0 f37683q = new r0(false, false, 0, false, 15, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -35,7 +35,7 @@ public final class r0 implements Parcelable {
         }
 
         public final r0 a() {
-            return r0.f37635q;
+            return r0.f37683q;
         }
 
         private a() {
@@ -85,22 +85,22 @@ public final class r0 implements Parcelable {
     }
 
     public r0(boolean z10, boolean z11, long j10, boolean z12) {
-        this.f37636d = z10;
-        this.f37637e = z11;
-        this.f37638i = j10;
-        this.f37639o = z12;
+        this.f37684d = z10;
+        this.f37685e = z11;
+        this.f37686i = j10;
+        this.f37687o = z12;
     }
 
     public final boolean b() {
-        return this.f37636d;
+        return this.f37684d;
     }
 
     public final boolean c() {
-        return this.f37639o;
+        return this.f37687o;
     }
 
     public final long d() {
-        return this.f37638i;
+        return this.f37686i;
     }
 
     @Override // android.os.Parcelable
@@ -109,7 +109,7 @@ public final class r0 implements Parcelable {
     }
 
     public final boolean e() {
-        return this.f37637e;
+        return this.f37685e;
     }
 
     public boolean equals(Object obj) {
@@ -120,31 +120,31 @@ public final class r0 implements Parcelable {
             return false;
         }
         r0 r0Var = (r0) obj;
-        if (this.f37636d == r0Var.f37636d && this.f37637e == r0Var.f37637e && this.f37638i == r0Var.f37638i && this.f37639o == r0Var.f37639o) {
+        if (this.f37684d == r0Var.f37684d && this.f37685e == r0Var.f37685e && this.f37686i == r0Var.f37686i && this.f37687o == r0Var.f37687o) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Boolean.hashCode(this.f37636d) * 31) + Boolean.hashCode(this.f37637e)) * 31) + Long.hashCode(this.f37638i)) * 31) + Boolean.hashCode(this.f37639o);
+        return (((((Boolean.hashCode(this.f37684d) * 31) + Boolean.hashCode(this.f37685e)) * 31) + Long.hashCode(this.f37686i)) * 31) + Boolean.hashCode(this.f37687o);
     }
 
     public String toString() {
-        boolean z10 = this.f37636d;
-        boolean z11 = this.f37637e;
-        long j10 = this.f37638i;
-        boolean z12 = this.f37639o;
+        boolean z10 = this.f37684d;
+        boolean z11 = this.f37685e;
+        long j10 = this.f37686i;
+        boolean z12 = this.f37687o;
         return "PoseConfig(allowReview=" + z10 + ", manualCaptureEnabled=" + z11 + ", manualCaptureDelayMs=" + j10 + ", autoCaptureEnabled=" + z12 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f37636d ? 1 : 0);
-        dest.writeInt(this.f37637e ? 1 : 0);
-        dest.writeLong(this.f37638i);
-        dest.writeInt(this.f37639o ? 1 : 0);
+        dest.writeInt(this.f37684d ? 1 : 0);
+        dest.writeInt(this.f37685e ? 1 : 0);
+        dest.writeLong(this.f37686i);
+        dest.writeInt(this.f37687o ? 1 : 0);
     }
 
     public /* synthetic */ r0(boolean z10, boolean z11, long j10, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {

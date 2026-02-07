@@ -14,56 +14,56 @@ import la.w;
 public class v implements n, w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n.b f35955a;
+    private final n.b f36003a;
 
     /* renamed from: b  reason: collision with root package name */
-    final m f35956b;
+    final m f36004b;
 
     /* renamed from: c  reason: collision with root package name */
-    final m f35957c;
+    final m f36005c;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b0 f35959e;
+    private final b0 f36007e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final w.a f35960f;
+    private final w.a f36008f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Supplier f35961g;
+    private final Supplier f36009g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected MemoryCacheParams f35962h;
+    protected MemoryCacheParams f36010h;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f35964j;
+    private final boolean f36012j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f35965k;
+    private final boolean f36013k;
 
     /* renamed from: d  reason: collision with root package name */
-    final Map f35958d = new WeakHashMap();
+    final Map f36006d = new WeakHashMap();
 
     /* renamed from: i  reason: collision with root package name */
-    private long f35963i = SystemClock.uptimeMillis();
+    private long f36011i = SystemClock.uptimeMillis();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public class a implements b0 {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ b0 f35966a;
+        final /* synthetic */ b0 f36014a;
 
         a(b0 b0Var) {
-            this.f35966a = b0Var;
+            this.f36014a = b0Var;
         }
 
         @Override // la.b0
         /* renamed from: b */
         public int a(n.a aVar) {
-            if (v.this.f35964j) {
-                return aVar.f35949g;
+            if (v.this.f36012j) {
+                return aVar.f35997g;
             }
-            return this.f35966a.a(aVar.f35944b.J());
+            return this.f36014a.a(aVar.f35992b.J());
         }
     }
 
@@ -72,28 +72,28 @@ public class v implements n, w {
     public class b implements s8.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ n.a f35968a;
+        final /* synthetic */ n.a f36016a;
 
         b(n.a aVar) {
-            this.f35968a = aVar;
+            this.f36016a = aVar;
         }
 
         @Override // s8.c
         public void release(Object obj) {
-            v.this.y(this.f35968a);
+            v.this.y(this.f36016a);
         }
     }
 
     public v(b0 b0Var, w.a aVar, Supplier supplier, n.b bVar, boolean z10, boolean z11) {
-        this.f35959e = b0Var;
-        this.f35956b = new m(A(b0Var));
-        this.f35957c = new m(A(b0Var));
-        this.f35960f = aVar;
-        this.f35961g = supplier;
-        this.f35962h = (MemoryCacheParams) o8.j.h((MemoryCacheParams) supplier.get(), "mMemoryCacheParamsSupplier returned null");
-        this.f35955a = bVar;
-        this.f35964j = z10;
-        this.f35965k = z11;
+        this.f36007e = b0Var;
+        this.f36004b = new m(A(b0Var));
+        this.f36005c = new m(A(b0Var));
+        this.f36008f = aVar;
+        this.f36009g = supplier;
+        this.f36010h = (MemoryCacheParams) o8.j.h((MemoryCacheParams) supplier.get(), "mMemoryCacheParamsSupplier returned null");
+        this.f36003a = bVar;
+        this.f36012j = z10;
+        this.f36013k = z11;
     }
 
     private b0 A(b0 b0Var) {
@@ -101,7 +101,7 @@ public class v implements n, w {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:9:0x001c, code lost:
-        if (l() <= (r3.f35962h.f10316a - r4)) goto L10;
+        if (l() <= (r3.f36010h.f10316a - r4)) goto L10;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -111,17 +111,17 @@ public class v implements n, w {
         /*
             r3 = this;
             monitor-enter(r3)
-            com.facebook.imagepipeline.cache.MemoryCacheParams r0 = r3.f35962h     // Catch: java.lang.Throwable -> L1f
+            com.facebook.imagepipeline.cache.MemoryCacheParams r0 = r3.f36010h     // Catch: java.lang.Throwable -> L1f
             int r0 = r0.f10320e     // Catch: java.lang.Throwable -> L1f
             if (r4 > r0) goto L21
             int r0 = r3.k()     // Catch: java.lang.Throwable -> L1f
-            com.facebook.imagepipeline.cache.MemoryCacheParams r1 = r3.f35962h     // Catch: java.lang.Throwable -> L1f
+            com.facebook.imagepipeline.cache.MemoryCacheParams r1 = r3.f36010h     // Catch: java.lang.Throwable -> L1f
             int r1 = r1.f10317b     // Catch: java.lang.Throwable -> L1f
             r2 = 1
             int r1 = r1 - r2
             if (r0 > r1) goto L21
             int r0 = r3.l()     // Catch: java.lang.Throwable -> L1f
-            com.facebook.imagepipeline.cache.MemoryCacheParams r1 = r3.f35962h     // Catch: java.lang.Throwable -> L1f
+            com.facebook.imagepipeline.cache.MemoryCacheParams r1 = r3.f36010h     // Catch: java.lang.Throwable -> L1f
             int r1 = r1.f10316a     // Catch: java.lang.Throwable -> L1f
             int r1 = r1 - r4
             if (r0 > r1) goto L21
@@ -144,25 +144,25 @@ public class v implements n, w {
     private synchronized void j(n.a aVar) {
         boolean z10;
         o8.j.g(aVar);
-        if (aVar.f35945c > 0) {
+        if (aVar.f35993c > 0) {
             z10 = true;
         } else {
             z10 = false;
         }
         o8.j.i(z10);
-        aVar.f35945c--;
+        aVar.f35993c--;
     }
 
     private synchronized void m(n.a aVar) {
         o8.j.g(aVar);
-        o8.j.i(!aVar.f35946d);
-        aVar.f35945c++;
+        o8.j.i(!aVar.f35994d);
+        aVar.f35993c++;
     }
 
     private synchronized void n(n.a aVar) {
         o8.j.g(aVar);
-        o8.j.i(!aVar.f35946d);
-        aVar.f35946d = true;
+        o8.j.i(!aVar.f35994d);
+        aVar.f35994d = true;
     }
 
     private synchronized void o(ArrayList arrayList) {
@@ -175,8 +175,8 @@ public class v implements n, w {
     }
 
     private synchronized boolean p(n.a aVar) {
-        if (!aVar.f35946d && aVar.f35945c == 0) {
-            this.f35956b.h(aVar.f35943a, aVar);
+        if (!aVar.f35994d && aVar.f35993c == 0) {
+            this.f36004b.h(aVar.f35991a, aVar);
             return true;
         }
         return false;
@@ -193,8 +193,8 @@ public class v implements n, w {
 
     private static void s(n.a aVar) {
         n.b bVar;
-        if (aVar != null && (bVar = aVar.f35947e) != null) {
-            bVar.a(aVar.f35943a, true);
+        if (aVar != null && (bVar = aVar.f35995e) != null) {
+            bVar.a(aVar.f35991a, true);
         }
     }
 
@@ -209,29 +209,29 @@ public class v implements n, w {
 
     private static void u(n.a aVar) {
         n.b bVar;
-        if (aVar != null && (bVar = aVar.f35947e) != null) {
-            bVar.a(aVar.f35943a, false);
+        if (aVar != null && (bVar = aVar.f35995e) != null) {
+            bVar.a(aVar.f35991a, false);
         }
     }
 
     private synchronized void v() {
-        if (this.f35963i + this.f35962h.f10321f > SystemClock.uptimeMillis()) {
+        if (this.f36011i + this.f36010h.f10321f > SystemClock.uptimeMillis()) {
             return;
         }
-        this.f35963i = SystemClock.uptimeMillis();
-        this.f35962h = (MemoryCacheParams) o8.j.h((MemoryCacheParams) this.f35961g.get(), "mMemoryCacheParamsSupplier returned null");
+        this.f36011i = SystemClock.uptimeMillis();
+        this.f36010h = (MemoryCacheParams) o8.j.h((MemoryCacheParams) this.f36009g.get(), "mMemoryCacheParamsSupplier returned null");
     }
 
     private synchronized CloseableReference w(n.a aVar) {
         m(aVar);
-        return CloseableReference.O0(aVar.f35944b.J(), new b(aVar));
+        return CloseableReference.O0(aVar.f35992b.J(), new b(aVar));
     }
 
     private synchronized CloseableReference x(n.a aVar) {
         CloseableReference closeableReference;
         o8.j.g(aVar);
-        if (aVar.f35946d && aVar.f35945c == 0) {
-            closeableReference = aVar.f35944b;
+        if (aVar.f35994d && aVar.f35993c == 0) {
+            closeableReference = aVar.f35992b;
         } else {
             closeableReference = null;
         }
@@ -260,24 +260,24 @@ public class v implements n, w {
     private synchronized ArrayList z(int i10, int i11) {
         int max = Math.max(i10, 0);
         int max2 = Math.max(i11, 0);
-        if (this.f35956b.c() <= max && this.f35956b.f() <= max2) {
+        if (this.f36004b.c() <= max && this.f36004b.f() <= max2) {
             return null;
         }
         ArrayList arrayList = new ArrayList();
         while (true) {
-            if (this.f35956b.c() <= max && this.f35956b.f() <= max2) {
+            if (this.f36004b.c() <= max && this.f36004b.f() <= max2) {
                 break;
             }
-            Object d10 = this.f35956b.d();
+            Object d10 = this.f36004b.d();
             if (d10 == null) {
-                if (this.f35965k) {
-                    this.f35956b.k();
+                if (this.f36013k) {
+                    this.f36004b.k();
                 } else {
-                    throw new IllegalStateException(String.format("key is null, but exclusiveEntries count: %d, size: %d", Integer.valueOf(this.f35956b.c()), Integer.valueOf(this.f35956b.f())));
+                    throw new IllegalStateException(String.format("key is null, but exclusiveEntries count: %d, size: %d", Integer.valueOf(this.f36004b.c()), Integer.valueOf(this.f36004b.f())));
                 }
             } else {
-                this.f35956b.i(d10);
-                arrayList.add((n.a) this.f35957c.i(d10));
+                this.f36004b.i(d10);
+                arrayList.add((n.a) this.f36005c.i(d10));
             }
         }
         return arrayList;
@@ -294,8 +294,8 @@ public class v implements n, w {
         v();
         synchronized (this) {
             try {
-                aVar = (n.a) this.f35956b.i(obj);
-                n.a aVar2 = (n.a) this.f35957c.i(obj);
+                aVar = (n.a) this.f36004b.i(obj);
+                n.a aVar2 = (n.a) this.f36005c.i(obj);
                 closeableReference2 = null;
                 if (aVar2 != null) {
                     n(aVar2);
@@ -303,14 +303,14 @@ public class v implements n, w {
                 } else {
                     closeableReference3 = null;
                 }
-                int a10 = this.f35959e.a(closeableReference.J());
+                int a10 = this.f36007e.a(closeableReference.J());
                 if (i(a10)) {
-                    if (this.f35964j) {
+                    if (this.f36012j) {
                         b10 = n.a.a(obj, closeableReference, a10, bVar);
                     } else {
                         b10 = n.a.b(obj, closeableReference, bVar);
                     }
-                    this.f35957c.h(obj, b10);
+                    this.f36005c.h(obj, b10);
                     closeableReference2 = w(b10);
                 }
             } catch (Throwable th2) {
@@ -328,9 +328,9 @@ public class v implements n, w {
         o8.j.g(obj);
         synchronized (this) {
             try {
-                n.a aVar = (n.a) this.f35956b.i(obj);
+                n.a aVar = (n.a) this.f36004b.i(obj);
                 if (aVar != null) {
-                    this.f35956b.h(obj, aVar);
+                    this.f36004b.h(obj, aVar);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -340,12 +340,12 @@ public class v implements n, w {
 
     @Override // la.w
     public CloseableReference c(Object obj, CloseableReference closeableReference) {
-        return a(obj, closeableReference, this.f35955a);
+        return a(obj, closeableReference, this.f36003a);
     }
 
     @Override // la.w
     public synchronized boolean contains(Object obj) {
-        return this.f35957c.a(obj);
+        return this.f36005c.a(obj);
     }
 
     @Override // la.n
@@ -356,16 +356,16 @@ public class v implements n, w {
         o8.j.g(obj);
         synchronized (this) {
             try {
-                aVar = (n.a) this.f35956b.i(obj);
+                aVar = (n.a) this.f36004b.i(obj);
                 z10 = false;
                 if (aVar != null) {
-                    n.a aVar2 = (n.a) this.f35957c.i(obj);
+                    n.a aVar2 = (n.a) this.f36005c.i(obj);
                     o8.j.g(aVar2);
-                    if (aVar2.f35945c == 0) {
+                    if (aVar2.f35993c == 0) {
                         z10 = true;
                     }
                     o8.j.i(z10);
-                    closeableReference = aVar2.f35944b;
+                    closeableReference = aVar2.f35992b;
                     z10 = true;
                 } else {
                     closeableReference = null;
@@ -382,7 +382,7 @@ public class v implements n, w {
 
     @Override // la.w
     public synchronized boolean e(o8.k kVar) {
-        return !this.f35957c.e(kVar).isEmpty();
+        return !this.f36005c.e(kVar).isEmpty();
     }
 
     @Override // la.w
@@ -390,8 +390,8 @@ public class v implements n, w {
         ArrayList j10;
         ArrayList j11;
         synchronized (this) {
-            j10 = this.f35956b.j(kVar);
-            j11 = this.f35957c.j(kVar);
+            j10 = this.f36004b.j(kVar);
+            j11 = this.f36005c.j(kVar);
             o(j11);
         }
         q(j11);
@@ -408,8 +408,8 @@ public class v implements n, w {
         o8.j.g(obj);
         synchronized (this) {
             try {
-                aVar = (n.a) this.f35956b.i(obj);
-                n.a aVar2 = (n.a) this.f35957c.b(obj);
+                aVar = (n.a) this.f36004b.i(obj);
+                n.a aVar2 = (n.a) this.f36005c.b(obj);
                 if (aVar2 != null) {
                     closeableReference = w(aVar2);
                 } else {
@@ -426,19 +426,19 @@ public class v implements n, w {
     }
 
     public synchronized int k() {
-        return this.f35957c.c() - this.f35956b.c();
+        return this.f36005c.c() - this.f36004b.c();
     }
 
     public synchronized int l() {
-        return this.f35957c.f() - this.f35956b.f();
+        return this.f36005c.f() - this.f36004b.f();
     }
 
     public void r() {
         ArrayList z10;
         synchronized (this) {
-            MemoryCacheParams memoryCacheParams = this.f35962h;
+            MemoryCacheParams memoryCacheParams = this.f36010h;
             int min = Math.min(memoryCacheParams.f10319d, memoryCacheParams.f10317b - k());
-            MemoryCacheParams memoryCacheParams2 = this.f35962h;
+            MemoryCacheParams memoryCacheParams2 = this.f36010h;
             z10 = z(min, Math.min(memoryCacheParams2.f10318c, memoryCacheParams2.f10316a - l()));
             o(z10);
         }

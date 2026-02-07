@@ -9,7 +9,7 @@ import st.t;
 class i implements t, z, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final i f39191d = new i();
+    private static final i f39239d = new i();
     private static final long serialVersionUID = 4572549754637955194L;
 
     i() {
@@ -17,7 +17,7 @@ class i implements t, z, Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static i C() {
-        return f39191d;
+        return f39239d;
     }
 
     @Override // rt.p
@@ -59,7 +59,7 @@ class i implements t, z, Serializable {
     @Override // st.t
     /* renamed from: I */
     public p r(CharSequence charSequence, ParsePosition parsePosition, rt.d dVar) {
-        Locale locale = (Locale) dVar.b(st.a.f50112c, Locale.ROOT);
+        Locale locale = (Locale) dVar.b(st.a.f50160c, Locale.ROOT);
         int length = charSequence.length();
         if (parsePosition.getIndex() >= length) {
             parsePosition.setErrorIndex(length);
@@ -122,12 +122,12 @@ class i implements t, z, Serializable {
     }
 
     protected Object readResolve() {
-        return f39191d;
+        return f39239d;
     }
 
     @Override // st.t
     public void v(rt.o oVar, Appendable appendable, rt.d dVar) {
-        appendable.append(((p) oVar.s(this)).e((Locale) dVar.b(st.a.f50112c, Locale.ROOT)));
+        appendable.append(((p) oVar.s(this)).e((Locale) dVar.b(st.a.f50160c, Locale.ROOT)));
     }
 
     @Override // rt.p

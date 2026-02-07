@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class w implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedMemberScope.b f34470d;
+    private final DeserializedMemberScope.b f34518d;
 
     public w(DeserializedMemberScope.b bVar) {
-        this.f34470d = bVar;
+        this.f34518d = bVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Map J;
-        J = DeserializedMemberScope.b.J(this.f34470d);
+        J = DeserializedMemberScope.b.J(this.f34518d);
         return J;
     }
 }

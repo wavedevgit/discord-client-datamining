@@ -31,19 +31,19 @@ public final class x extends d {
     public static final class b extends d.c {
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f31907b = x.class;
+        private final Class f31955b = x.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f31908c = "RotationGestureHandler";
+        private final String f31956c = "RotationGestureHandler";
 
         @Override // kn.d.c
         public String d() {
-            return this.f31908c;
+            return this.f31956c;
         }
 
         @Override // kn.d.c
         public Class e() {
-            return this.f31907b;
+            return this.f31955b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

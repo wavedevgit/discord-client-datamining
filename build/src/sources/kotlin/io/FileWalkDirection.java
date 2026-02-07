@@ -10,28 +10,28 @@ import xr.a;
 public final class FileWalkDirection {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final FileWalkDirection f32090d = new FileWalkDirection("TOP_DOWN", 0);
+    public static final FileWalkDirection f32138d = new FileWalkDirection("TOP_DOWN", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final FileWalkDirection f32091e = new FileWalkDirection("BOTTOM_UP", 1);
+    public static final FileWalkDirection f32139e = new FileWalkDirection("BOTTOM_UP", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ FileWalkDirection[] f32092i;
+    private static final /* synthetic */ FileWalkDirection[] f32140i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32093o;
+    private static final /* synthetic */ EnumEntries f32141o;
 
     static {
         FileWalkDirection[] a10 = a();
-        f32092i = a10;
-        f32093o = a.a(a10);
+        f32140i = a10;
+        f32141o = a.a(a10);
     }
 
     private FileWalkDirection(String str, int i10) {
     }
 
     private static final /* synthetic */ FileWalkDirection[] a() {
-        return new FileWalkDirection[]{f32090d, f32091e};
+        return new FileWalkDirection[]{f32138d, f32139e};
     }
 
     public static FileWalkDirection valueOf(String str) {
@@ -39,6 +39,6 @@ public final class FileWalkDirection {
     }
 
     public static FileWalkDirection[] values() {
-        return (FileWalkDirection[]) f32092i.clone();
+        return (FileWalkDirection[]) f32140i.clone();
     }
 }

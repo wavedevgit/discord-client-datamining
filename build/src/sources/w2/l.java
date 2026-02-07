@@ -15,55 +15,55 @@ import qs.q;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoroutineScope f53298a;
+    private final CoroutineScope f53346a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function2 f53299b;
+    private final Function2 f53347b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final qs.g f53300c;
+    private final qs.g f53348c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicInteger f53301d;
+    private final AtomicInteger f53349d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f53302d;
+        final /* synthetic */ Function1 f53350d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ l f53303e;
+        final /* synthetic */ l f53351e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f53304i;
+        final /* synthetic */ Function2 f53352i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function1 function1, l lVar, Function2 function2) {
             super(1);
-            this.f53302d = function1;
-            this.f53303e = lVar;
-            this.f53304i = function2;
+            this.f53350d = function1;
+            this.f53351e = lVar;
+            this.f53352i = function2;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         public final void invoke(Throwable th2) {
             Unit unit;
-            this.f53302d.invoke(th2);
-            this.f53303e.f53300c.v(th2);
+            this.f53350d.invoke(th2);
+            this.f53351e.f53348c.v(th2);
             do {
-                Object f10 = qs.k.f(this.f53303e.f53300c.o());
+                Object f10 = qs.k.f(this.f53351e.f53348c.o());
                 if (f10 == null) {
                     unit = null;
                     continue;
                 } else {
-                    this.f53304i.invoke(f10, th2);
-                    unit = Unit.f32008a;
+                    this.f53352i.invoke(f10, th2);
+                    unit = Unit.f32056a;
                     continue;
                 }
             } while (unit != null);
@@ -74,10 +74,10 @@ public final class l {
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f53305d;
+        Object f53353d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f53306e;
+        int f53354e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -107,7 +107,7 @@ public final class l {
             /*
                 r5 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r5.f53306e
+                int r1 = r5.f53354e
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -121,7 +121,7 @@ public final class l {
                 r6.<init>(r0)
                 throw r6
             L1a:
-                java.lang.Object r1 = r5.f53305d
+                java.lang.Object r1 = r5.f53353d
                 kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
                 kotlin.c.b(r6)
                 goto L56
@@ -145,15 +145,15 @@ public final class l {
                 kotlin.jvm.functions.Function2 r1 = w2.l.a(r6)
                 w2.l r6 = w2.l.this
                 qs.g r6 = w2.l.b(r6)
-                r5.f53305d = r1
-                r5.f53306e = r3
+                r5.f53353d = r1
+                r5.f53354e = r3
                 java.lang.Object r6 = r6.u(r5)
                 if (r6 != r0) goto L56
                 goto L61
             L56:
                 r4 = 0
-                r5.f53305d = r4
-                r5.f53306e = r2
+                r5.f53353d = r4
+                r5.f53354e = r2
                 java.lang.Object r6 = r1.invoke(r6, r5)
                 if (r6 != r0) goto L62
             L61:
@@ -163,7 +163,7 @@ public final class l {
                 java.util.concurrent.atomic.AtomicInteger r6 = w2.l.c(r6)
                 int r6 = r6.decrementAndGet()
                 if (r6 != 0) goto L36
-                kotlin.Unit r6 = kotlin.Unit.f32008a
+                kotlin.Unit r6 = kotlin.Unit.f32056a
                 return r6
             L71:
                 java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
@@ -176,7 +176,7 @@ public final class l {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -185,11 +185,11 @@ public final class l {
         Intrinsics.checkNotNullParameter(onComplete, "onComplete");
         Intrinsics.checkNotNullParameter(onUndeliveredElement, "onUndeliveredElement");
         Intrinsics.checkNotNullParameter(consumeMessage, "consumeMessage");
-        this.f53298a = scope;
-        this.f53299b = consumeMessage;
-        this.f53300c = qs.j.b(Integer.MAX_VALUE, null, null, 6, null);
-        this.f53301d = new AtomicInteger(0);
-        Job job = (Job) scope.getCoroutineContext().m(Job.f35017h);
+        this.f53346a = scope;
+        this.f53347b = consumeMessage;
+        this.f53348c = qs.j.b(Integer.MAX_VALUE, null, null, 6, null);
+        this.f53349d = new AtomicInteger(0);
+        Job job = (Job) scope.getCoroutineContext().m(Job.f35065h);
         if (job == null) {
             return;
         }
@@ -197,15 +197,15 @@ public final class l {
     }
 
     public final void e(Object obj) {
-        Object i10 = this.f53300c.i(obj);
+        Object i10 = this.f53348c.i(obj);
         if (i10 instanceof k.a) {
             Throwable e10 = qs.k.e(i10);
             if (e10 == null) {
                 throw new q("Channel was closed normally");
             }
         } else if (qs.k.i(i10)) {
-            if (this.f53301d.getAndIncrement() == 0) {
-                os.i.d(this.f53298a, null, null, new b(null), 3, null);
+            if (this.f53349d.getAndIncrement() == 0) {
+                os.i.d(this.f53346a, null, null, new b(null), 3, null);
             }
         } else {
             throw new IllegalStateException("Check failed.");

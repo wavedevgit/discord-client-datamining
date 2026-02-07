@@ -1,159 +1,163 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = function arg0() {
-        _fun34262: for (var _fun34262_ip = 0;;) switch (_fun34262_ip) {
-            case 0:
-                var2 = arg0;
+    _fun34274: for (var _fun34274_ip = 0;;) switch (_fun34274_ip) {
+        case 0:
+            var4 = require;
+            var2 = exports;
+            var1 = dependencyMap;
+            var _closure1_slot0 = var4;
+            var _closure1_slot1 = var1;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var5 = {};
+            var0 = true;
+            var5.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var5);
+            var0 = 0;
+            var1 = var1[var0];
+            var0 = undefined;
+            var4 = var4.bind(var0)(var1);
+            var1 = var4.shouldBeUseWeb;
+            var1 = var1.bind(var4)();
+            if (var1) {
+                _fun34274_ip = 97;
+                continue _fun34274
+            }
+        case 77:
+            var1 = function() {
+                var0 = new Array(0);
+                var _closure2_slot0 = var0;
+                var0 = new Array(0);
+                var _closure2_slot1 = var0;
                 var0 = {};
-                var3 = null;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34262_ip = 37;
-                    continue _fun34262
-                }
-            case 16:
-                var5 = var2.viewConfig;
-                var6 = var3 == var5;
-                var4 = undefined;
-                if (var6) {
-                    _fun34262_ip = 37;
-                    continue _fun34262
-                }
-            case 31:
-                var4 = var5.uiViewClassName;
-            case 37:
-                var0.viewName = var4;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34262_ip = 57;
-                    continue _fun34262
-                }
-            case 51:
-                var4 = var2._nativeTag;
-            case 57:
-                var0.viewTag = var4;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun34262_ip = 77;
-                    continue _fun34262
-                }
-            case 71:
-                var1 = var2.viewConfig;
-            case 77:
-                var0.viewConfig = var1;
+                var2 = function arg0, arg1() {
+                    _fun34277: for (var _fun34277_ip = 0;;) switch (_fun34277_ip) {
+                        case 0:
+                            var4 = arg0;
+                            var1 = this;
+                            var2 = arg1;
+                            if (var2) {
+                                _fun34277_ip = 31;
+                                continue _fun34277
+                            }
+                        case 15:
+                            var3 = _closure2_slot0;
+                            var2 = var3.push;
+                            var2 = var2.bind(var3)(var4);
+                            _fun34277_ip = 45;
+                            continue _fun34277;
+                        case 31:
+                            var3 = _closure2_slot1;
+                            var2 = var3.push;
+                            var2 = var2.bind(var3)(var4);
+                        case 45:
+                            var2 = _closure2_slot0;
+                            var2 = var2.length;
+                            var0 = _closure2_slot1;
+                            var0 = var0.length;
+                            var2 = var2 + var0;
+                            var0 = 1;
+                            if (!(var2 === var0)) {
+                                _fun34277_ip = 142;
+                                continue _fun34277
+                            }
+                        case 74:
+                            var2 = _closure1_slot0;
+                            var3 = _closure1_slot1;
+                            var0 = 0;
+                            var0 = var3[var0];
+                            var3 = undefined;
+                            var2 = var2.bind(var3)(var0);
+                            var0 = var2.isFabric;
+                            var0 = var0.bind(var2)();
+                            if (var0) {
+                                _fun34277_ip = 132;
+                                continue _fun34277
+                            }
+                        case 111:
+                            var0 = global;
+                            var2 = var0.setImmediate;
+                            var0 = var1.flush;
+                            var0 = var2.bind(var3)(var0);
+                            _fun34277_ip = 142;
+                            continue _fun34277;
+                        case 132:
+                            var0 = var1.flush;
+                            var0 = var0.bind(var1)();
+                        case 142:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var0.update = var2;
+                var1 = function() {
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 1;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var5 = var2.bind(var0)(var1);
+                    var4 = var5.configureLayoutAnimationBatch;
+                    var3 = _closure2_slot0;
+                    var1 = var3.concat;
+                    var2 = _closure2_slot1;
+                    var1 = var1.bind(var3)(var2);
+                    var1 = var4.bind(var5)(var1);
+                    var1 = 0;
+                    var3.length = var1;
+                    var2.length = var1;
+                    return var0;
+                };
+                var0.flush = var1;
                 return var0;
-        }
-    };
-    var _closure1_slot0 = var2;
-    var2 = function arg0() {
-        _fun34263: for (var _fun34263_ip = 0;;) switch (_fun34263_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = {};
-                var3 = null;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34263_ip = 37;
-                    continue _fun34263
+            };
+            var1 = var1.bind(var0)();
+            var _closure1_slot2 = var1;
+            var1 = function arg0, arg1, arg2, arg3, arg4() {
+                _fun34279: for (var _fun34279_ip = 0;;) switch (_fun34279_ip) {
+                    case 0:
+                        var6 = arg2;
+                        var3 = _closure1_slot2;
+                        var2 = var3.update;
+                        var1 = {};
+                        var0 = arg0;
+                        var1.viewTag = var0;
+                        var0 = arg1;
+                        var1.type = var0;
+                        var7 = undefined;
+                        var0 = undefined;
+                        if (!var6) {
+                            _fun34279_ip = 71;
+                            continue _fun34279
+                        }
+                    case 40:
+                        var5 = _closure1_slot0;
+                        var8 = _closure1_slot1;
+                        var4 = 1;
+                        var4 = var8[var4];
+                        var5 = var5.bind(var7)(var4);
+                        var4 = var5.makeShareableCloneRecursive;
+                        var0 = var4.bind(var5)(var6);
+                    case 71:
+                        var1.config = var0;
+                        var0 = arg3;
+                        var1.sharedTransitionTag = var0;
+                        var0 = arg4;
+                        var0 = var2.bind(var3)(var1, var0);
+                        return var0;
                 }
-            case 16:
-                var5 = var2._viewConfig;
-                var6 = var3 == var5;
-                var4 = undefined;
-                if (var6) {
-                    _fun34263_ip = 37;
-                    continue _fun34263
-                }
-            case 31:
-                var4 = var5.uiViewClassName;
-            case 37:
-                var0.viewName = var4;
-                var5 = var3 == var2;
-                var4 = undefined;
-                if (var5) {
-                    _fun34263_ip = 57;
-                    continue _fun34263
-                }
-            case 51:
-                var4 = var2.__nativeTag;
-            case 57:
-                var0.viewTag = var4;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun34263_ip = 77;
-                    continue _fun34263
-                }
-            case 71:
-                var1 = var2._viewConfig;
-            case 77:
-                var0.viewConfig = var1;
+            };
+            _fun34274_ip = 102;
+            continue _fun34274;
+        case 97:
+            var1 = function() {
+                var0 = undefined;
                 return var0;
-        }
-    };
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0() {
-        _fun34264: for (var _fun34264_ip = 0;;) switch (_fun34264_ip) {
-            case 0:
-                var3 = arg0;
-                var0 = var3._nativeTag;
-                var2 = undefined;
-                if (!(var2 !== var0)) {
-                    _fun34264_ip = 27;
-                    continue _fun34264
-                }
-            case 15:
-                var1 = var3.__nativeTag;
-                var0 = null;
-                if (!(var0 === var1)) {
-                    _fun34264_ip = 77;
-                    continue _fun34264
-                }
-            case 27:
-                var0 = var3.__nativeTag;
-                if (!(var2 !== var0)) {
-                    _fun34264_ip = 49;
-                    continue _fun34264
-                }
-            case 37:
-                var1 = var3.__nativeTag;
-                var0 = null;
-                if (!(var0 === var1)) {
-                    _fun34264_ip = 63;
-                    continue _fun34264
-                }
-            case 49:
-                var0 = _closure1_slot0;
-                var0 = var0.bind(var2)(var3);
-                _fun34264_ip = 75;
-                continue _fun34264;
-            case 63:
-                var1 = _closure1_slot1;
-                var0 = var1.bind(var2)(var3);
-            case 75:
-                _fun34264_ip = 89;
-                continue _fun34264;
-            case 77:
-                var1 = _closure1_slot0;
-                var0 = var1.bind(var2)(var3);
-            case 89:
-                return var0;
-        }
-    };
-    var1.getViewInfo = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+        case 102:
+            var2.updateLayoutAnimations = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3725, 3766]);

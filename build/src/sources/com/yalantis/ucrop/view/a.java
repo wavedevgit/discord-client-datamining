@@ -436,8 +436,8 @@ public abstract class a extends com.yalantis.ucrop.view.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void y(TypedArray typedArray) {
-        float abs = Math.abs(typedArray.getFloat(h.f52915f, 0.0f));
-        float abs2 = Math.abs(typedArray.getFloat(h.f52916g, 0.0f));
+        float abs = Math.abs(typedArray.getFloat(h.f52963f, 0.0f));
+        float abs2 = Math.abs(typedArray.getFloat(h.f52964g, 0.0f));
         if (abs != 0.0f && abs2 != 0.0f) {
             this.C = abs / abs2;
         } else {

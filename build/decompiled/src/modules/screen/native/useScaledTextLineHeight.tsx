@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useScaledTextLineHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3943, 4091, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3942, 4090, 2]);

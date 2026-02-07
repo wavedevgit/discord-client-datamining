@@ -9,7 +9,7 @@ import st.t;
 public interface a extends t {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final rt.c f52087m = st.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
+    public static final rt.c f52135m = st.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
 
     Integer w(CharSequence charSequence, ParsePosition parsePosition, rt.d dVar, q qVar);
 

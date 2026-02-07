@@ -12,51 +12,51 @@ import java.util.concurrent.Executor;
 public final class k1 extends h {
 
     /* renamed from: g  reason: collision with root package name */
-    private final HashMap f25099g = new HashMap();
+    private final HashMap f25147g = new HashMap();
 
     /* renamed from: h  reason: collision with root package name */
-    private final Context f25100h;
+    private final Context f25148h;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile Handler f25101i;
+    private volatile Handler f25149i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final j1 f25102j;
+    private final j1 f25150j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final nf.a f25103k;
+    private final nf.a f25151k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final long f25104l;
+    private final long f25152l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final long f25105m;
+    private final long f25153m;
 
     /* renamed from: n  reason: collision with root package name */
-    private volatile Executor f25106n;
+    private volatile Executor f25154n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k1(Context context, Looper looper, Executor executor) {
         j1 j1Var = new j1(this, null);
-        this.f25102j = j1Var;
-        this.f25100h = context.getApplicationContext();
-        this.f25101i = new hg.p(looper, j1Var);
-        this.f25103k = nf.a.b();
-        this.f25104l = 5000L;
-        this.f25105m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
-        this.f25106n = executor;
+        this.f25150j = j1Var;
+        this.f25148h = context.getApplicationContext();
+        this.f25149i = new hg.p(looper, j1Var);
+        this.f25151k = nf.a.b();
+        this.f25152l = 5000L;
+        this.f25153m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
+        this.f25154n = executor;
     }
 
     @Override // gf.h
     protected final com.google.android.gms.common.b c(h1 h1Var, ServiceConnection serviceConnection, String str, Executor executor) {
         com.google.android.gms.common.b bVar;
         q.m(serviceConnection, "ServiceConnection must not be null");
-        HashMap hashMap = this.f25099g;
+        HashMap hashMap = this.f25147g;
         synchronized (hashMap) {
             try {
                 i1 i1Var = (i1) hashMap.get(h1Var);
                 if (executor == null) {
-                    executor = this.f25106n;
+                    executor = this.f25154n;
                 }
                 if (i1Var == null) {
                     i1Var = new i1(this, h1Var);
@@ -64,7 +64,7 @@ public final class k1 extends h {
                     bVar = i1Var.j(str, executor);
                     hashMap.put(h1Var, i1Var);
                 } else {
-                    this.f25101i.removeMessages(0, h1Var);
+                    this.f25149i.removeMessages(0, h1Var);
                     if (!i1Var.f(serviceConnection)) {
                         i1Var.b(serviceConnection, serviceConnection, str);
                         int e10 = i1Var.e();
@@ -100,7 +100,7 @@ public final class k1 extends h {
     @Override // gf.h
     protected final void e(h1 h1Var, ServiceConnection serviceConnection, String str) {
         q.m(serviceConnection, "ServiceConnection must not be null");
-        HashMap hashMap = this.f25099g;
+        HashMap hashMap = this.f25147g;
         synchronized (hashMap) {
             try {
                 i1 i1Var = (i1) hashMap.get(h1Var);
@@ -108,7 +108,7 @@ public final class k1 extends h {
                     if (i1Var.f(serviceConnection)) {
                         i1Var.c(serviceConnection, str);
                         if (i1Var.g()) {
-                            this.f25101i.sendMessageDelayed(this.f25101i.obtainMessage(0, h1Var), this.f25104l);
+                            this.f25149i.sendMessageDelayed(this.f25149i.obtainMessage(0, h1Var), this.f25152l);
                         }
                     } else {
                         String obj = h1Var.toString();
@@ -132,26 +132,26 @@ public final class k1 extends h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ HashMap f() {
-        return this.f25099g;
+        return this.f25147g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Context g() {
-        return this.f25100h;
+        return this.f25148h;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ Handler h() {
-        return this.f25101i;
+        return this.f25149i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ nf.a i() {
-        return this.f25103k;
+        return this.f25151k;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ long j() {
-        return this.f25105m;
+        return this.f25153m;
     }
 }

@@ -12,10 +12,10 @@ public class a extends yr.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0787a f56455a = new C0787a();
+        public static final C0787a f56503a = new C0787a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f56456b;
+        public static final Integer f56504b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends yr.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f56456b = num2;
+                f56504b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f56456b = num2;
+            f56504b = num2;
         }
 
         private C0787a() {
@@ -44,7 +44,7 @@ public class a extends yr.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0787a.f56456b;
+        Integer num = C0787a.f56504b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

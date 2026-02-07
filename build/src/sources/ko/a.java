@@ -11,16 +11,16 @@ import org.jetbrains.annotations.NotNull;
 public final class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f31942d;
+    private final boolean f31990d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f31943e;
+    private final boolean f31991e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c4.c f31944i;
+    private final c4.c f31992i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final C0452a f31941o = new C0452a(null);
+    public static final C0452a f31989o = new C0452a(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new b();
 
@@ -32,7 +32,7 @@ public final class a implements Parcelable {
         }
 
         private final c4.c a() {
-            return new c4.c("unknown", c4.e.f30022o, f5.d.b.f30171d, new c4.a(null, 1, null), new c4.d(true, 0L));
+            return new c4.c("unknown", c4.e.f30070o, f5.d.b.f30219d, new c4.a(null, 1, null), new c4.d(true, 0L));
         }
 
         public final a b(Boolean bool, Boolean bool2, c4.c cVar) {
@@ -86,21 +86,21 @@ public final class a implements Parcelable {
 
     public a(boolean z10, boolean z11, c4.c idSideConfig) {
         Intrinsics.checkNotNullParameter(idSideConfig, "idSideConfig");
-        this.f31942d = z10;
-        this.f31943e = z11;
-        this.f31944i = idSideConfig;
+        this.f31990d = z10;
+        this.f31991e = z11;
+        this.f31992i = idSideConfig;
     }
 
     public final boolean a() {
-        return this.f31943e;
+        return this.f31991e;
     }
 
     public final c4.c b() {
-        return this.f31944i;
+        return this.f31992i;
     }
 
     public final boolean c() {
-        return this.f31942d;
+        return this.f31990d;
     }
 
     @Override // android.os.Parcelable
@@ -111,8 +111,8 @@ public final class a implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f31942d ? 1 : 0);
-        dest.writeInt(this.f31943e ? 1 : 0);
-        this.f31944i.writeToParcel(dest, i10);
+        dest.writeInt(this.f31990d ? 1 : 0);
+        dest.writeInt(this.f31991e ? 1 : 0);
+        this.f31992i.writeToParcel(dest, i10);
     }
 }

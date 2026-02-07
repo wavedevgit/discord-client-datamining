@@ -5,7 +5,7 @@ import yi.c;
 final class kb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final kb f47326a = new kb();
+    static final kb f47374a = new kb();
 
     static {
         c.b a10 = yi.c.a("errorCode");

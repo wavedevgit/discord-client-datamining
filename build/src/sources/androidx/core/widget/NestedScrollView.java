@@ -280,7 +280,7 @@ public class NestedScrollView extends FrameLayout implements u, s, ScrollingView
     }
 
     public NestedScrollView(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, o1.a.f41317c);
+        this(context, attributeSet, o1.a.f41365c);
     }
 
     private boolean A(View view, int i10, int i11) {

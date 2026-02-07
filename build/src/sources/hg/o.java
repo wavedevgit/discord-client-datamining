@@ -8,7 +8,7 @@ import android.os.Parcelable;
 public abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ClassLoader f25980a = o.class.getClassLoader();
+    private static final ClassLoader f26028a = o.class.getClassLoader();
 
     public static Parcelable a(Parcel parcel, Parcelable.Creator creator) {
         if (parcel.readInt() == 0) {

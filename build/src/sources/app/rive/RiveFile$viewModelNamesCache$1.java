@@ -56,6 +56,6 @@ public final class RiveFile$viewModelNamesCache$1 extends k implements Function1
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<String>> continuation) {
-        return ((RiveFile$viewModelNamesCache$1) create(continuation)).invokeSuspend(Unit.f32008a);
+        return ((RiveFile$viewModelNamesCache$1) create(continuation)).invokeSuspend(Unit.f32056a);
     }
 }

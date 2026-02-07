@@ -21,7 +21,7 @@ import kotlin.reflect.KClass;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ir.e f25525a;
+    private static ir.e f25573a;
 
     public static final k5 a(List list, KClass type, Function1 predicate) {
         k5 a10;
@@ -45,8 +45,8 @@ public abstract class f {
 
     public static final Drawable b(Context context, int i10, int i11) {
         Intrinsics.checkNotNullParameter(context, "context");
-        int c10 = androidx.core.content.a.c(context, jp.b.f30781a);
-        int c11 = androidx.core.content.a.c(context, jp.b.f30782b);
+        int c10 = androidx.core.content.a.c(context, jp.b.f30829a);
+        int c11 = androidx.core.content.a.c(context, jp.b.f30830b);
         double d10 = r1.c.d(i10, c10);
         double d11 = r1.c.d(i10, c11);
         float a10 = (float) rp.h.a(8.0d);
@@ -61,10 +61,10 @@ public abstract class f {
     }
 
     private static final ir.e c(Context context) {
-        ir.e eVar = f25525a;
+        ir.e eVar = f25573a;
         if (eVar == null) {
             ir.e b10 = ir.e.b(context);
-            f25525a = b10;
+            f25573a = b10;
             Intrinsics.checkNotNullExpressionValue(b10, "also(...)");
             return b10;
         }

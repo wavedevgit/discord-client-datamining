@@ -3,10 +3,10 @@ package yo;
 public final class d implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f55498a;
+    private final c f55546a;
 
     public d(c cVar) {
-        this.f55498a = cVar;
+        this.f55546a = cVar;
     }
 
     public static d a(c cVar) {
@@ -20,6 +20,6 @@ public final class d implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public uo.f get() {
-        return b(this.f55498a);
+        return b(this.f55546a);
     }
 }

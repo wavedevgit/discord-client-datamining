@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/home/SubmittingOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107430: for (var _fun107430_ip = 0;;) switch (_fun107430_ip) {
+        _fun107906: for (var _fun107906_ip = 0;;) switch (_fun107906_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.submitting;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var12.bind(var3)(var2);
                 var2 = var7.useAnimatedStyle;
                 var1 = function() {
-                    _fun107431: for (var _fun107431_ip = 0;;) switch (_fun107431_ip) {
+                    _fun107907: for (var _fun107907_ip = 0;;) switch (_fun107907_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun107431_ip = 47;
-                                continue _fun107431
+                                _fun107907_ip = 47;
+                                continue _fun107907
                             }
                         case 44:
                             var3 = 1;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[2] = var7;
                 var0.style = var6;
                 if (!var4) {
-                    _fun107430_ip = 257;
-                    continue _fun107430
+                    _fun107906_ip = 257;
+                    continue _fun107906
                 }
             case 207:
                 var7 = _closure1_slot3;
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SubmittingOverlay = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 3722, 4082, 4088, 4103, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 3721, 4081, 4087, 4102, 2]);

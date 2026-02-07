@@ -5,16 +5,16 @@ import x.q;
 final class b extends q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q.b f54140a;
+    private final q.b f54188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final q.a f54141b;
+    private final q.a f54189b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(q.b bVar, q.a aVar) {
         if (bVar != null) {
-            this.f54140a = bVar;
-            this.f54141b = aVar;
+            this.f54188a = bVar;
+            this.f54189b = aVar;
             return;
         }
         throw new NullPointerException("Null type");
@@ -22,12 +22,12 @@ final class b extends q {
 
     @Override // x.q
     public q.a c() {
-        return this.f54141b;
+        return this.f54189b;
     }
 
     @Override // x.q
     public q.b d() {
-        return this.f54140a;
+        return this.f54188a;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class b extends q {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f54140a.equals(qVar.d()) && ((aVar = this.f54141b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
+            if (this.f54188a.equals(qVar.d()) && ((aVar = this.f54189b) != null ? aVar.equals(qVar.c()) : qVar.c() == null)) {
                 return true;
             }
         }
@@ -46,8 +46,8 @@ final class b extends q {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = (this.f54140a.hashCode() ^ 1000003) * 1000003;
-        q.a aVar = this.f54141b;
+        int hashCode2 = (this.f54188a.hashCode() ^ 1000003) * 1000003;
+        q.a aVar = this.f54189b;
         if (aVar == null) {
             hashCode = 0;
         } else {
@@ -57,6 +57,6 @@ final class b extends q {
     }
 
     public String toString() {
-        return "CameraState{type=" + this.f54140a + ", error=" + this.f54141b + "}";
+        return "CameraState{type=" + this.f54188a + ", error=" + this.f54189b + "}";
     }
 }

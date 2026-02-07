@@ -318,10 +318,10 @@ public final class h {
                     return;
                 }
                 try {
-                    Result.a aVar = Result.f32005e;
+                    Result.a aVar = Result.f32053e;
                     b10 = Result.b(Uri.parse(str4).getScheme());
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f32005e;
+                    Result.a aVar2 = Result.f32053e;
                     b10 = Result.b(kotlin.c.a(th2));
                 }
                 if (Result.g(b10)) {

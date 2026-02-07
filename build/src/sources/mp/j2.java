@@ -21,36 +21,36 @@ public abstract class j2 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f37456a;
+        public static final /* synthetic */ int[] f37504a;
 
         /* renamed from: b */
-        public static final /* synthetic */ int[] f37457b;
+        public static final /* synthetic */ int[] f37505b;
 
         static {
             int[] iArr = new int[b0.values().length];
             try {
-                iArr[b0.f37305d.ordinal()] = 1;
+                iArr[b0.f37353d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b0.f37306e.ordinal()] = 2;
+                iArr[b0.f37354e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f37456a = iArr;
+            f37504a = iArr;
             int[] iArr2 = new int[a1.b.values().length];
             try {
-                iArr2[a1.b.f37288e.ordinal()] = 1;
+                iArr2[a1.b.f37336e.ordinal()] = 1;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr2[a1.b.f37289i.ordinal()] = 2;
+                iArr2[a1.b.f37337i.ordinal()] = 2;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[a1.b.f37287d.ordinal()] = 3;
+                iArr2[a1.b.f37335d.ordinal()] = 3;
             } catch (NoSuchFieldError unused5) {
             }
-            f37457b = iArr2;
+            f37505b = iArr2;
         }
     }
 
@@ -69,7 +69,7 @@ public abstract class j2 {
         Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
         Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
         Intrinsics.checkNotNullParameter(facingMode, "facingMode");
-        int i10 = a.f37456a[renderProps.h().ordinal()];
+        int i10 = a.f37504a[renderProps.h().ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 if (!(mode instanceof x5.d.c.b.g) && !(mode instanceof x5.d.c.b.i)) {
@@ -192,13 +192,13 @@ public abstract class j2 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit h(v.b bVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(new x1.h(false, false, m6.i(action, false), bVar, 3, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit i(k.a aVar, final boolean z10) {
@@ -213,7 +213,7 @@ public abstract class j2 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit j(boolean z10, r.c action) {
@@ -241,9 +241,9 @@ public abstract class j2 {
                 throw new qr.p();
             }
             action.e(v10);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final String k(x5.b bVar, a1.b bVar2) {
@@ -251,7 +251,7 @@ public abstract class j2 {
         if (bVar2 == null) {
             i10 = -1;
         } else {
-            i10 = a.f37457b[bVar2.ordinal()];
+            i10 = a.f37505b[bVar2.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
@@ -273,7 +273,7 @@ public abstract class j2 {
         if (bVar2 == null) {
             i10 = -1;
         } else {
-            i10 = a.f37457b[bVar2.ordinal()];
+            i10 = a.f37505b[bVar2.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {

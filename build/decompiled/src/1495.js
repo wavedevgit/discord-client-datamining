@@ -36,20 +36,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = function() { // Environment: var2
             var0 = {};
             var2 = function arg0() {
-                _fun17155: for (var _fun17155_ip = 0;;) switch (_fun17155_ip) {
+                _fun17160: for (var _fun17160_ip = 0;;) switch (_fun17160_ip) {
                     case 0:
                         var2 = arg0;
                         var0 = _closure2_slot0;
                         var3 = var0.current;
                         var0 = undefined;
                         if (!(var0 !== var3)) {
-                            _fun17155_ip = 25;
-                            continue _fun17155
+                            _fun17160_ip = 25;
+                            continue _fun17160
                         }
                     case 21:
                         if (!(var2 === var3)) {
-                            _fun17155_ip = 37;
-                            continue _fun17155
+                            _fun17160_ip = 37;
+                            continue _fun17160
                         }
                     case 25:
                         var1 = _closure2_slot0;
@@ -73,14 +73,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0.register = var2;
             var1 = function arg0() {
-                _fun17156: for (var _fun17156_ip = 0;;) switch (_fun17156_ip) {
+                _fun17161: for (var _fun17161_ip = 0;;) switch (_fun17161_ip) {
                     case 0:
                         var1 = _closure2_slot0;
                         var2 = var1.current;
                         var1 = arg0;
                         if (!(var1 === var2)) {
-                            _fun17156_ip = 31;
-                            continue _fun17156
+                            _fun17161_ip = 31;
+                            continue _fun17161
                         }
                     case 19:
                         var1 = _closure2_slot0;

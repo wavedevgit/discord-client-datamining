@@ -3,7 +3,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
-    var _closure1_slot0 = var4;
+    var0 = require;
+    var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -24,222 +25,209 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
-        var2 = function() {
-            var2 = this;
-            var3 = _closure1_slot2;
-            var1 = _closure2_slot0;
-            var0 = undefined;
-            var1 = var3.bind(var0)(var2, var1);
-            var1 = global;
-            var1 = var1.Map;
-            var3 = var1.prototype;
-            var3 = Object.create(var3, {
-                constructor: {
-                    value: var1
-                }
-            });
-            var6 = var3;
-            var1 = new var6[var1](var5);
-            var1 = var1 instanceof Object ? var1 : var3;
-            var2.nativeSensors = var1;
-            return var0;
+        var2 = function arg0, arg1() {
+            _fun33733: for (var _fun33733_ip = 0;;) switch (_fun33733_ip) {
+                case 0:
+                    var4 = arg0;
+                    var2 = this;
+                    var5 = _closure1_slot2;
+                    var1 = _closure2_slot0;
+                    var0 = undefined;
+                    var1 = var5.bind(var0)(var2, var1);
+                    var1 = 0;
+                    var2.listenersNumber = var1;
+                    var1 = null;
+                    var2.sensorId = var1;
+                    var2.sensorType = var4;
+                    var1 = arg1;
+                    var2.config = var1;
+                    var5 = _closure1_slot0;
+                    var6 = _closure1_slot1;
+                    var1 = 2;
+                    var1 = var6[var1];
+                    var1 = var5.bind(var0)(var1);
+                    var1 = var1.SensorType;
+                    var1 = var1.ROTATION;
+                    if (!(var4 !== var1)) {
+                        _fun33733_ip = 142;
+                        continue _fun33733
+                    }
+                case 95:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var1 = 3;
+                    var1 = var5[var1];
+                    var5 = var4.bind(var0)(var1);
+                    var4 = var5.makeMutable;
+                    var1 = {
+                        'x': 0,
+                        'y': 0,
+                        'z': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var1);
+                    _fun33733_ip = 187;
+                    continue _fun33733;
+                case 142:
+                    var4 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var3 = 3;
+                    var3 = var5[var3];
+                    var5 = var4.bind(var0)(var3);
+                    var4 = var5.makeMutable;
+                    var3 = {
+                        'qw': 0,
+                        'qx': 0,
+                        'qy': 0,
+                        'qz': 0,
+                        'yaw': 0,
+                        'pitch': 0,
+                        'roll': 0,
+                        'interfaceOrientation': 0
+                    };
+                    var1 = var4.bind(var5)(var3);
+                case 187:
+                    var2.data = var1;
+                    return var0;
+            }
         };
         var _closure2_slot0 = var2;
         var0 = {};
-        var1 = 'getSensorId';
+        var1 = 'register';
         var0.key = var1;
-        var1 = function arg0, arg1() {
-            var1 = arg1;
-            var2 = 100;
-            var0 = arg0;
-            var2 = var2 * var0;
-            var3 = var1.iosReferenceFrame;
-            var0 = 10;
-            var0 = var0 * var3;
-            var3 = global;
-            var4 = var3.Number;
-            var3 = var1.adjustToInterfaceOrientation;
-            var1 = undefined;
-            var1 = var4.bind(var1)(var3);
-            var0 = var2 + var0;
-            var0 = var0 + var1;
-            return var0;
-        };
-        var0.value = var1;
-        var1 = new Array(4);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'initializeSensor';
-        var0.key = var5;
-        var5 = function arg0, arg1() {
-            _fun33719: for (var _fun33719_ip = 0;;) switch (_fun33719_ip) {
+        var1 = function arg0() {
+            _fun33734: for (var _fun33734_ip = 0;;) switch (_fun33734_ip) {
                 case 0:
-                    var5 = arg0;
-                    var4 = arg1;
                     var0 = this;
-                    var1 = var0.getSensorId;
-                    var2 = var1.bind(var0)(var5, var4);
-                    var3 = var0.nativeSensors;
-                    var1 = var3.has;
-                    var1 = var1.bind(var3)(var2);
-                    if (var1) {
-                        _fun33719_ip = 108;
-                        continue _fun33719
-                    }
-                case 40:
-                    var6 = _closure1_slot0;
+                    var2 = var0.config;
+                    var7 = var0.sensorType;
+                    var4 = _closure1_slot0;
                     var3 = _closure1_slot1;
-                    var1 = 2;
+                    var1 = 4;
                     var3 = var3[var1];
                     var1 = undefined;
-                    var1 = var6.bind(var1)(var3);
-                    var3 = var1.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var1
-                        }
-                    });
-                    var9 = var3;
-                    var8 = var5;
-                    var7 = var4;
-                    var1 = new var9[var1](var8, var7, var6);
-                    var4 = var1 instanceof Object ? var1 : var3;
-                    var3 = var0.nativeSensors;
-                    var1 = var3.set;
-                    var1 = var1.bind(var3)(var2, var4);
-                case 108:
-                    var1 = var0.nativeSensors;
-                    var0 = var1.get;
-                    var1 = var0.bind(var1)(var2);
-                    var0 = var1.getSharedValue;
-                    var0 = var0.bind(var1)();
+                    var1 = var4.bind(var1)(var3);
+                    var6 = var1.ReanimatedModule;
+                    var5 = var6.registerSensor;
+                    var8 = var2.interval;
+                    var1 = -1;
+                    var3 = 'auto';
+                    var4 = var1;
+                    if (!(var3 !== var8)) {
+                        _fun33734_ip = 80;
+                        continue _fun33734
+                    }
+                case 74:
+                    var4 = var2.interval;
+                case 80:
+                    var10 = var2.iosReferenceFrame;
+                    var9 = arg0;
+                    var13 = var6;
+                    var12 = var7;
+                    var11 = var4;
+                    var2 = var13[var5](var12, var11, var10, var9, var8);
+                    var0.sensorId = var2;
+                    var0 = var0.sensorId;
+                    var0 = var1 !== var0;
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(5);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'isRunning';
+        var0.key = var5;
+        var5 = function() {
+            _fun33735: for (var _fun33735_ip = 0;;) switch (_fun33735_ip) {
+                case 0:
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = -1;
+                    var0 = var0 !== var2;
+                    if (!var0) {
+                        _fun33735_ip = 34;
+                        continue _fun33735
+                    }
+                case 22:
+                    var2 = var1.sensorId;
+                    var1 = null;
+                    var0 = var1 !== var2;
+                case 34:
                     return var0;
             }
         };
         var0.value = var5;
         var1[1] = var0;
         var0 = {};
-        var5 = 'registerSensor';
+        var5 = 'isAvailable';
         var0.key = var5;
-        var5 = function arg0, arg1, arg2() {
-            _fun33720: for (var _fun33720_ip = 0;;) switch (_fun33720_ip) {
-                case 0:
-                    var0 = this;
-                    var3 = var0.getSensorId;
-                    var2 = arg0;
-                    var1 = arg1;
-                    var1 = var3.bind(var0)(var2, var1);
-                    var3 = var0.nativeSensors;
-                    var2 = var3.has;
-                    var2 = var2.bind(var3)(var1);
-                    var4 = -1;
-                    if (var2) {
-                        _fun33720_ip = 48;
-                        continue _fun33720
-                    }
-                case 46:
-                    return var4;
-                case 48:
-                    var2 = var0.nativeSensors;
-                    var0 = var2.get;
-                    var3 = var0.bind(var2)(var1);
-                    var0 = var4;
-                    if (!var3) {
-                        _fun33720_ip = 137;
-                        continue _fun33720
-                    }
-                case 70:
-                    var2 = var3.isAvailable;
-                    var2 = var2.bind(var3)();
-                    var0 = var4;
-                    if (!var2) {
-                        _fun33720_ip = 137;
-                        continue _fun33720
-                    }
-                case 86:
-                    var2 = var3.isRunning;
-                    var2 = var2.bind(var3)();
-                    if (var2) {
-                        _fun33720_ip = 119;
-                        continue _fun33720
-                    }
-                case 99:
-                    var5 = var3.register;
-                    var2 = arg2;
-                    var2 = var5.bind(var3)(var2);
-                    var0 = var4;
-                    if (!var2) {
-                        _fun33720_ip = 137;
-                        continue _fun33720
-                    }
-                case 119:
-                    var2 = var3.listenersNumber;
-                    var2 = var2 + 1;
-                    var3.listenersNumber = var2;
-                    var0 = var1;
-                case 137:
-                    return var0;
-            }
+        var5 = function() {
+            var0 = this;
+            var1 = var0.sensorId;
+            var0 = -1;
+            var0 = var0 !== var1;
+            return var0;
         };
         var0.value = var5;
         var1[2] = var0;
         var0 = {};
-        var5 = 'unregisterSensor';
+        var5 = 'getSharedValue';
         var0.key = var5;
-        var4 = function arg0() {
-            _fun33721: for (var _fun33721_ip = 0;;) switch (_fun33721_ip) {
+        var5 = function() {
+            var0 = this;
+            var0 = var0.data;
+            return var0;
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'unregister';
+        var0.key = var5;
+        var4 = function() {
+            _fun33738: for (var _fun33738_ip = 0;;) switch (_fun33738_ip) {
                 case 0:
-                    var2 = arg0;
-                    var0 = this;
-                    var3 = var0.nativeSensors;
-                    var1 = var3.has;
-                    var1 = var1.bind(var3)(var2);
-                    if (!var1) {
-                        _fun33721_ip = 97;
-                        continue _fun33721
+                    var1 = this;
+                    var2 = var1.sensorId;
+                    var0 = null;
+                    var2 = var0 !== var2;
+                    if (!var2) {
+                        _fun33738_ip = 34;
+                        continue _fun33738
                     }
-                case 25:
-                    var1 = var0.nativeSensors;
-                    var0 = var1.get;
-                    var1 = var0.bind(var1)(var2);
-                    var0 = var1;
-                    if (!var0) {
-                        _fun33721_ip = 57;
-                        continue _fun33721
+                case 18:
+                    var4 = var1.sensorId;
+                    var3 = -1;
+                    var2 = var3 !== var4;
+                case 34:
+                    if (!var2) {
+                        _fun33738_ip = 85;
+                        continue _fun33738
                     }
-                case 47:
-                    var2 = var1.isRunning;
-                    var0 = var2.bind(var1)();
-                case 57:
-                    if (!var0) {
-                        _fun33721_ip = 97;
-                        continue _fun33721
-                    }
-                case 60:
-                    var0 = var1.listenersNumber;
-                    var0 = var0 - 1;
-                    var1.listenersNumber = var0;
-                    var2 = var1.listenersNumber;
-                    var0 = 0;
-                    if (!(var0 === var2)) {
-                        _fun33721_ip = 97;
-                        continue _fun33721
-                    }
-                case 87:
-                    var0 = var1.unregister;
-                    var0 = var0.bind(var1)();
-                case 97:
+                case 37:
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 4;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var2 = var4.bind(var2)(var3);
+                    var4 = var2.ReanimatedModule;
+                    var3 = var4.unregisterSensor;
+                    var2 = var1.sensorId;
+                    var2 = var3.bind(var4)(var2);
+                case 85:
+                    var1.sensorId = var0;
                     var0 = undefined;
                     return var0;
             }
         };
         var0.value = var4;
-        var1[3] = var0;
+        var1[4] = var0;
         var0 = undefined;
         var0 = var3.bind(var0)(var2, var1);
         return var0;
     };
     var1 = var1.bind(var0)();
-    var2.SensorContainer = var1;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3770]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3747, 3759, 3730]);

@@ -8,7 +8,7 @@ public abstract class l extends k {
     public static final class a extends l {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f26489a = new a();
+        public static final a f26537a = new a();
 
         private a() {
             super(null);
@@ -19,7 +19,7 @@ public abstract class l extends k {
     public static final class b extends l {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f26490a = new b();
+        public static final b f26538a = new b();
 
         private b() {
             super(null);
@@ -30,7 +30,7 @@ public abstract class l extends k {
     public static final class c extends l {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f26491a = new c();
+        public static final c f26539a = new c();
 
         private c() {
             super(null);
@@ -41,7 +41,7 @@ public abstract class l extends k {
     public static final class d extends l {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f26492a = new d();
+        public static final d f26540a = new d();
 
         private d() {
             super(null);

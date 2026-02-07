@@ -654,14 +654,14 @@ public final class y extends FrameLayout {
                 if (this.f17739d == 0) {
                     kotlin.c.b(obj);
                     this.f17740e.a(this.f17741i);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -703,14 +703,14 @@ public final class y extends FrameLayout {
                     String uri = this.f17744i.toString();
                     Intrinsics.checkNotNullExpressionValue(uri, "toString(...)");
                     yVar.N(uri, this.f17745o, this.f17743e.A);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -832,7 +832,7 @@ public final class y extends FrameLayout {
             Lc4:
                 return r1
             Lc5:
-                kotlin.Unit r12 = kotlin.Unit.f32008a
+                kotlin.Unit r12 = kotlin.Unit.f32056a
                 return r12
             */
             throw new UnsupportedOperationException("Method not decompiled: com.rivereactnative.y.f.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -840,7 +840,7 @@ public final class y extends FrameLayout {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -881,7 +881,7 @@ public final class y extends FrameLayout {
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
                 this.f17751d.p0(this.f17752e, null);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -903,7 +903,7 @@ public final class y extends FrameLayout {
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
                 this.f17753d.p0(this.f17754e, null);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -925,7 +925,7 @@ public final class y extends FrameLayout {
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
                 this.f17755d.p0(this.f17756e, obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -1053,7 +1053,7 @@ public final class y extends FrameLayout {
             L8d:
                 return r0
             L8e:
-                kotlin.Unit r6 = kotlin.Unit.f32008a
+                kotlin.Unit r6 = kotlin.Unit.f32056a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: com.rivereactnative.y.g.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -1061,7 +1061,7 @@ public final class y extends FrameLayout {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -1081,7 +1081,7 @@ public final class y extends FrameLayout {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ReadableMap) obj, (FileAsset) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -1218,10 +1218,10 @@ public final class y extends FrameLayout {
     private final void K(String str, FileAsset fileAsset) {
         Object b10;
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(Uri.parse(str).getScheme());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         String str2 = null;
@@ -1239,7 +1239,7 @@ public final class y extends FrameLayout {
                 try {
                     Intrinsics.checkNotNull(openRawResource);
                     h0(bs.b.c(openRawResource), fileAsset);
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                     bs.c.a(openRawResource, null);
                 } catch (Throwable th3) {
                     try {
@@ -2195,11 +2195,11 @@ public final class y extends FrameLayout {
             k kVar2 = this.f17702e;
             if (kVar2 != null) {
                 RiveAnimationView.play$default((RiveAnimationView) kVar2, animationName, c10, b10, z10, false, 16, (Object) null);
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
         } catch (RiveException e10) {
             I(e10);
-            Unit unit2 = Unit.f32008a;
+            Unit unit2 = Unit.f32056a;
         }
     }
 

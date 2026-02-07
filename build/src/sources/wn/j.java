@@ -21,23 +21,23 @@ public abstract class j {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f53981a;
+        public static final /* synthetic */ int[] f54029a;
 
         static {
             int[] iArr = new int[n.values().length];
             try {
-                iArr[n.f54014d.ordinal()] = 1;
+                iArr[n.f54062d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[n.f54015e.ordinal()] = 2;
+                iArr[n.f54063e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[n.f54016i.ordinal()] = 3;
+                iArr[n.f54064i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f53981a = iArr;
+            f54029a = iArr;
         }
     }
 
@@ -80,11 +80,11 @@ public abstract class j {
                 i10 = i12;
             }
             if (num != null && num.intValue() == 0) {
-                bVar = v.b.f51832d;
+                bVar = v.b.f51880d;
             } else if (num != null && num.intValue() == 1) {
-                bVar = v.b.f51833e;
+                bVar = v.b.f51881e;
             } else {
-                bVar = v.b.f51834i;
+                bVar = v.b.f51882i;
             }
             v.b bVar2 = bVar;
             int[] iArr = (int[]) cameraCharacteristics.get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);
@@ -207,16 +207,16 @@ public abstract class j {
     }
 
     private static final v.b d(n nVar) {
-        int i10 = a.f53981a[nVar.ordinal()];
+        int i10 = a.f54029a[nVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return v.b.f51834i;
+                    return v.b.f51882i;
                 }
                 throw new qr.p();
             }
-            return v.b.f51833e;
+            return v.b.f51881e;
         }
-        return v.b.f51832d;
+        return v.b.f51880d;
     }
 }

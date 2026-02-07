@@ -3,42 +3,42 @@ package pg;
 public final class ua {
 
     /* renamed from: a  reason: collision with root package name */
-    private v9 f44785a;
+    private v9 f44833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private r9 f44786b;
+    private r9 f44834b;
 
     /* renamed from: c  reason: collision with root package name */
-    private n9 f44787c;
+    private n9 f44835c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f44788d;
+    private Integer f44836d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f44789e;
+    private Integer f44837e;
 
     public final ua d(Integer num) {
-        this.f44788d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f44836d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final ua e(n9 n9Var) {
-        this.f44787c = n9Var;
+        this.f44835c = n9Var;
         return this;
     }
 
     public final ua f(r9 r9Var) {
-        this.f44786b = r9Var;
+        this.f44834b = r9Var;
         return this;
     }
 
     public final ua g(v9 v9Var) {
-        this.f44785a = v9Var;
+        this.f44833a = v9Var;
         return this;
     }
 
     public final ua h(Integer num) {
-        this.f44789e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f44837e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

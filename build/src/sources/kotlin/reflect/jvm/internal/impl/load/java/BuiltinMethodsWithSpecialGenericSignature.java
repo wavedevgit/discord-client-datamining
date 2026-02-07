@@ -46,7 +46,7 @@ public final class BuiltinMethodsWithSpecialGenericSignature extends SpecialGene
         if (!builtinMethodsWithSpecialGenericSignature.getSameAsBuiltinMethodWithErasedValueParameters(name)) {
             return null;
         }
-        return (FunctionDescriptor) DescriptorUtilsKt.firstOverridden$default(functionDescriptor, false, c.f32792d, 1, null);
+        return (FunctionDescriptor) DescriptorUtilsKt.firstOverridden$default(functionDescriptor, false, c.f32840d, 1, null);
     }
 
     public static final SpecialGenericSignatures.SpecialSignatureInfo getSpecialSignatureInfo(@NotNull CallableMemberDescriptor callableMemberDescriptor) {
@@ -54,7 +54,7 @@ public final class BuiltinMethodsWithSpecialGenericSignature extends SpecialGene
         String computeJvmSignature;
         Intrinsics.checkNotNullParameter(callableMemberDescriptor, "<this>");
         SpecialGenericSignatures.Companion companion = SpecialGenericSignatures.Companion;
-        if (!companion.getERASED_VALUE_PARAMETERS_SHORT_NAMES().contains(callableMemberDescriptor.getName()) || (firstOverridden$default = DescriptorUtilsKt.firstOverridden$default(callableMemberDescriptor, false, d.f32827d, 1, null)) == null || (computeJvmSignature = MethodSignatureMappingKt.computeJvmSignature(firstOverridden$default)) == null) {
+        if (!companion.getERASED_VALUE_PARAMETERS_SHORT_NAMES().contains(callableMemberDescriptor.getName()) || (firstOverridden$default = DescriptorUtilsKt.firstOverridden$default(callableMemberDescriptor, false, d.f32875d, 1, null)) == null || (computeJvmSignature = MethodSignatureMappingKt.computeJvmSignature(firstOverridden$default)) == null) {
             return null;
         }
         return companion.getSpecialSignatureInfo(computeJvmSignature);

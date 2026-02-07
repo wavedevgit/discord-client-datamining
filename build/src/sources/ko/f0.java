@@ -34,26 +34,26 @@ import kotlin.reflect.KClass;
 public final class f0 implements dn.k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f31957d = new a(null);
+    public static final a f32005d = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final no.i f31958b;
+    private final no.i f32006b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final jq.k f31959c;
+    private final jq.k f32007c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements dn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ dn.c0 f31960a;
+        private final /* synthetic */ dn.c0 f32008a;
 
         /* renamed from: ko.f0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0453a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0453a f31961d = new C0453a();
+            public static final C0453a f32009d = new C0453a();
 
             C0453a() {
                 super(3, no.i.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidSelectCountryAndIdClassBinding;", 0);
@@ -74,7 +74,7 @@ public final class f0 implements dn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f31962d = new b();
+            public static final b f32010d = new b();
 
             b() {
                 super(1, f0.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidSelectCountryAndIdClassBinding;)V", 0);
@@ -98,27 +98,27 @@ public final class f0 implements dn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f31960a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f32008a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // dn.c0
         public KClass getType() {
-            return this.f31960a.getType();
+            return this.f32008a.getType();
         }
 
         private a() {
             k.a aVar = dn.k.f20913a;
-            this.f31960a = new dn.z(Reflection.getOrCreateKotlinClass(f5.a.class), C0453a.f31961d, b.f31962d);
+            this.f32008a = new dn.z(Reflection.getOrCreateKotlinClass(f5.a.class), C0453a.f32009d, b.f32010d);
         }
     }
 
     public f0(no.i binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f31958b = binding;
+        this.f32006b = binding;
         CoordinatorLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        this.f31959c = new jq.k(root);
-        LinearLayout contentView = binding.f41054b;
+        this.f32007c = new jq.k(root);
+        LinearLayout contentView = binding.f41102b;
         Intrinsics.checkNotNullExpressionValue(contentView, "contentView");
         bq.f.d(contentView, false, false, false, false, 15, null);
     }
@@ -141,31 +141,31 @@ public final class f0 implements dn.k {
             }
             StepStyles.GovernmentIdStepTitleComponentStyle titleStyle = governmentIdStepStyle.getTitleStyle();
             if (titleStyle != null && (base7 = titleStyle.getBase()) != null && (base8 = base7.getBase()) != null) {
-                TextView title = iVar.f41061i;
+                TextView title = iVar.f41109i;
                 Intrinsics.checkNotNullExpressionValue(title, "title");
                 kq.f0.n(title, base8, null, 2, null);
             }
             StepStyles.GovernmentIdStepTextBasedComponentStyle textStyle = governmentIdStepStyle.getTextStyle();
             if (textStyle != null && (base5 = textStyle.getBase()) != null && (base6 = base5.getBase()) != null) {
-                TextView countrySelectorText = iVar.f41057e;
+                TextView countrySelectorText = iVar.f41105e;
                 Intrinsics.checkNotNullExpressionValue(countrySelectorText, "countrySelectorText");
                 kq.f0.n(countrySelectorText, base6, null, 2, null);
-                TextView idClassSelectorText = iVar.f41059g;
+                TextView idClassSelectorText = iVar.f41107g;
                 Intrinsics.checkNotNullExpressionValue(idClassSelectorText, "idClassSelectorText");
                 kq.f0.n(idClassSelectorText, base6, null, 2, null);
             }
             StepStyles.GovernmentIdStepInputSelectStyle inputSelectStyle = governmentIdStepStyle.getInputSelectStyle();
             if (inputSelectStyle != null && (base3 = inputSelectStyle.getBase()) != null && (base4 = base3.getBase()) != null) {
-                TextInputLayout countrySelector = iVar.f41056d;
+                TextInputLayout countrySelector = iVar.f41104d;
                 Intrinsics.checkNotNullExpressionValue(countrySelector, "countrySelector");
                 kq.o.i(countrySelector, base4);
-                TextInputLayout idClassSelector = iVar.f41058f;
+                TextInputLayout idClassSelector = iVar.f41106f;
                 Intrinsics.checkNotNullExpressionValue(idClassSelector, "idClassSelector");
                 kq.o.i(idClassSelector, base4);
             }
             StepStyles.GovernmentIdStepPrimaryButtonComponentStyle buttonPrimaryStyle = governmentIdStepStyle.getButtonPrimaryStyle();
             if (buttonPrimaryStyle != null && (base = buttonPrimaryStyle.getBase()) != null && (base2 = base.getBase()) != null) {
-                Button continueButton = iVar.f41055c;
+                Button continueButton = iVar.f41103c;
                 Intrinsics.checkNotNullExpressionValue(continueButton, "continueButton");
                 kq.e.f(continueButton, base2, false, false, 6, null);
             }
@@ -173,7 +173,7 @@ public final class f0 implements dn.k {
     }
 
     private final void k(c2 c2Var, final Function1 function1) {
-        this.f31959c.u(c2Var, new Function1() { // from class: ko.e0
+        this.f32007c.u(c2Var, new Function1() { // from class: ko.e0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit l10;
@@ -188,22 +188,22 @@ public final class f0 implements dn.k {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
         b4 b4Var = (b4) CollectionsKt.firstOrNull(selectedItems);
         if (b4Var == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         function1.invoke(b4Var);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(f5.a aVar) {
         aVar.g().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(f5.a aVar) {
         aVar.h().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -237,7 +237,7 @@ public final class f0 implements dn.k {
         String str;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        no.i iVar = this.f31958b;
+        no.i iVar = this.f32006b;
         zp.a f10 = rendering.f();
         Function0 function0 = new Function0() { // from class: ko.x
             @Override // kotlin.jvm.functions.Function0
@@ -255,12 +255,12 @@ public final class f0 implements dn.k {
                 return o10;
             }
         };
-        Pi2NavigationBar navigationBar = iVar.f41060h;
+        Pi2NavigationBar navigationBar = iVar.f41108h;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = iVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         zp.e.b(f10, function0, function02, navigationBar, root);
-        iVar.f41061i.setText(rendering.m());
+        iVar.f41109i.setText(rendering.m());
         b4 b4Var = (b4) CollectionsKt.firstOrNull(rendering.c().f());
         String str2 = null;
         if (b4Var != null) {
@@ -268,13 +268,13 @@ public final class f0 implements dn.k {
         } else {
             str = null;
         }
-        iVar.f41056d.setOnClickListener(new View.OnClickListener() { // from class: ko.z
+        iVar.f41104d.setOnClickListener(new View.OnClickListener() { // from class: ko.z
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 f0.p(f0.this, rendering, view);
             }
         });
-        EditText editText = iVar.f41056d.getEditText();
+        EditText editText = iVar.f41104d.getEditText();
         if (editText != null) {
             editText.setOnClickListener(new View.OnClickListener() { // from class: ko.a0
                 @Override // android.view.View.OnClickListener
@@ -283,23 +283,23 @@ public final class f0 implements dn.k {
                 }
             });
         }
-        EditText editText2 = iVar.f41056d.getEditText();
+        EditText editText2 = iVar.f41104d.getEditText();
         if (editText2 != null) {
             editText2.setText(str);
         }
         if (str != null) {
-            iVar.f41058f.setEnabled(true);
-            EditText editText3 = iVar.f41058f.getEditText();
+            iVar.f41106f.setEnabled(true);
+            EditText editText3 = iVar.f41106f.getEditText();
             if (editText3 != null) {
                 editText3.setEnabled(true);
             }
-            iVar.f41058f.setOnClickListener(new View.OnClickListener() { // from class: ko.b0
+            iVar.f41106f.setOnClickListener(new View.OnClickListener() { // from class: ko.b0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     f0.r(f0.this, rendering, view);
                 }
             });
-            EditText editText4 = iVar.f41058f.getEditText();
+            EditText editText4 = iVar.f41106f.getEditText();
             if (editText4 != null) {
                 editText4.setOnClickListener(new View.OnClickListener() { // from class: ko.c0
                     @Override // android.view.View.OnClickListener
@@ -308,7 +308,7 @@ public final class f0 implements dn.k {
                     }
                 });
             }
-            EditText editText5 = iVar.f41058f.getEditText();
+            EditText editText5 = iVar.f41106f.getEditText();
             if (editText5 != null) {
                 b4 b4Var2 = (b4) CollectionsKt.firstOrNull(rendering.e().f());
                 if (b4Var2 != null) {
@@ -317,22 +317,22 @@ public final class f0 implements dn.k {
                 editText5.setText(str2);
             }
         } else {
-            iVar.f41058f.setEnabled(false);
-            EditText editText6 = iVar.f41058f.getEditText();
+            iVar.f41106f.setEnabled(false);
+            EditText editText6 = iVar.f41106f.getEditText();
             if (editText6 != null) {
                 editText6.setEnabled(false);
             }
         }
-        iVar.f41057e.setText(rendering.b());
-        iVar.f41059g.setText(rendering.d());
-        iVar.f41055c.setEnabled(rendering.n());
-        iVar.f41055c.setOnClickListener(new View.OnClickListener() { // from class: ko.d0
+        iVar.f41105e.setText(rendering.b());
+        iVar.f41107g.setText(rendering.d());
+        iVar.f41103c.setEnabled(rendering.n());
+        iVar.f41103c.setOnClickListener(new View.OnClickListener() { // from class: ko.d0
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 f0.t(f5.a.this, view);
             }
         });
-        iVar.f41055c.setText(rendering.a());
+        iVar.f41103c.setText(rendering.a());
         j(iVar, rendering.l(), viewEnvironment);
     }
 }

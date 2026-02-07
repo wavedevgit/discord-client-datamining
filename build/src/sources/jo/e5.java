@@ -35,55 +35,55 @@ public final class e5 implements dn.b {
     private final dn.c0 C;
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4.h f30086d;
+    private final v4.h f30134d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f30087e;
+    private final String f30135e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f30088i;
+    private final String f30136i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f30089o;
+    private final String f30137o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f30090p;
+    private final String f30138p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f30091q;
+    private final String f30139q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f30092r;
+    private final String f30140r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f30093s;
+    private final String f30141s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final zp.a f30094t;
+    private final zp.a f30142t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Function0 f30095u;
+    private final Function0 f30143u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Function0 f30096v;
+    private final Function0 f30144v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Function0 f30097w;
+    private final Function0 f30145w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Function0 f30098x;
+    private final Function0 f30146x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final String f30099y;
+    private final String f30147y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Function0 f30100z;
+    private final Function0 f30148z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f30101d = new a();
+        public static final a f30149d = new a();
 
         a() {
             super(3, no.h.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidReviewSelectedImageBinding;", 0);
@@ -114,25 +114,25 @@ public final class e5 implements dn.b {
         Intrinsics.checkNotNullParameter(onBack, "onBack");
         Intrinsics.checkNotNullParameter(onCancel, "onCancel");
         Intrinsics.checkNotNullParameter(onErrorDismissed, "onErrorDismissed");
-        this.f30086d = imageLoader;
-        this.f30087e = title;
-        this.f30088i = body;
-        this.f30089o = confirmButtonText;
-        this.f30090p = chooseNewPhotoText;
-        this.f30091q = fileToReviewPath;
-        this.f30092r = fileMimeType;
-        this.f30093s = str;
-        this.f30094t = navigationState;
-        this.f30095u = onUsePhotoClick;
-        this.f30096v = onChooseNewPhotoClick;
-        this.f30097w = onBack;
-        this.f30098x = onCancel;
-        this.f30099y = str2;
-        this.f30100z = onErrorDismissed;
+        this.f30134d = imageLoader;
+        this.f30135e = title;
+        this.f30136i = body;
+        this.f30137o = confirmButtonText;
+        this.f30138p = chooseNewPhotoText;
+        this.f30139q = fileToReviewPath;
+        this.f30140r = fileMimeType;
+        this.f30141s = str;
+        this.f30142t = navigationState;
+        this.f30143u = onUsePhotoClick;
+        this.f30144v = onChooseNewPhotoClick;
+        this.f30145w = onBack;
+        this.f30146x = onCancel;
+        this.f30147y = str2;
+        this.f30148z = onErrorDismissed;
         this.A = governmentIdStepStyle;
         this.B = z10;
         k.a aVar = dn.k.f20913a;
-        this.C = new dn.z(Reflection.getOrCreateKotlinClass(e5.class), a.f30101d, new Function1() { // from class: jo.y4
+        this.C = new dn.z(Reflection.getOrCreateKotlinClass(e5.class), a.f30149d, new Function1() { // from class: jo.y4
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 dn.k i10;
@@ -195,30 +195,30 @@ public final class e5 implements dn.b {
     public static final void j(no.h hVar, final e5 e5Var, final e5 rendering, dn.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        hVar.f41051i.setText(rendering.f30087e);
-        hVar.f41044b.setText(rendering.f30088i);
-        hVar.f41052j.setText(e5Var.f30089o);
-        hVar.f41052j.setOnClickListener(new View.OnClickListener() { // from class: jo.a5
+        hVar.f41099i.setText(rendering.f30135e);
+        hVar.f41092b.setText(rendering.f30136i);
+        hVar.f41100j.setText(e5Var.f30137o);
+        hVar.f41100j.setOnClickListener(new View.OnClickListener() { // from class: jo.a5
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 e5.k(e5.this, view);
             }
         });
-        hVar.f41045c.setText(e5Var.f30090p);
-        hVar.f41045c.setOnClickListener(new View.OnClickListener() { // from class: jo.b5
+        hVar.f41093c.setText(e5Var.f30138p);
+        hVar.f41093c.setOnClickListener(new View.OnClickListener() { // from class: jo.b5
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 e5.l(e5.this, view);
             }
         });
-        File file = new File(e5Var.f30091q);
+        File file = new File(e5Var.f30139q);
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(e5Var.f30091q, options);
-        if (StringsKt.P(e5Var.f30092r, "image/", false, 2, null)) {
-            ImageView imageView = hVar.f41048f;
+        BitmapFactory.decodeFile(e5Var.f30139q, options);
+        if (StringsKt.P(e5Var.f30140r, "image/", false, 2, null)) {
+            ImageView imageView = hVar.f41096f;
             Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
-            v4.h hVar2 = e5Var.f30086d;
+            v4.h hVar2 = e5Var.f30134d;
             h.a r10 = new h.a(imageView.getContext()).d(file).r(imageView);
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setShape(0);
@@ -227,12 +227,12 @@ public final class e5 implements dn.b {
             r10.i(gradientDrawable);
             hVar2.a(r10.a());
         } else {
-            hVar.f41048f.setVisibility(8);
-            hVar.f41046d.setVisibility(0);
-            hVar.f41047e.setVisibility(0);
-            hVar.f41047e.setText(e5Var.f30093s);
+            hVar.f41096f.setVisibility(8);
+            hVar.f41094d.setVisibility(0);
+            hVar.f41095e.setVisibility(0);
+            hVar.f41095e.setText(e5Var.f30141s);
         }
-        zp.a aVar = rendering.f30094t;
+        zp.a aVar = rendering.f30142t;
         Function0 function0 = new Function0() { // from class: jo.c5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -249,28 +249,28 @@ public final class e5 implements dn.b {
                 return n10;
             }
         };
-        Pi2NavigationBar navigationBar = hVar.f41050h;
+        Pi2NavigationBar navigationBar = hVar.f41098h;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = hVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         zp.e.b(aVar, function0, function02, navigationBar, root);
-        hVar.f41052j.setIsLoading(rendering.B);
+        hVar.f41100j.setIsLoading(rendering.B);
         CoordinatorLayout root2 = hVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        rp.z.b(root2, rendering.f30099y, rendering.f30100z, null, 0, 0, 56, null);
+        rp.z.b(root2, rendering.f30147y, rendering.f30148z, null, 0, 0, 56, null);
         StepStyles.GovernmentIdStepStyle governmentIdStepStyle = e5Var.A;
         if (governmentIdStepStyle != null) {
             CoordinatorLayout root3 = hVar.getRoot();
             Intrinsics.checkNotNullExpressionValue(root3, "getRoot(...)");
-            Pi2NavigationBar navigationBar2 = hVar.f41050h;
+            Pi2NavigationBar navigationBar2 = hVar.f41098h;
             Intrinsics.checkNotNullExpressionValue(navigationBar2, "navigationBar");
-            TextView title = hVar.f41051i;
+            TextView title = hVar.f41099i;
             Intrinsics.checkNotNullExpressionValue(title, "title");
-            TextView body = hVar.f41044b;
+            TextView body = hVar.f41092b;
             Intrinsics.checkNotNullExpressionValue(body, "body");
-            ButtonWithLoadingIndicator usePhotoButton = hVar.f41052j;
+            ButtonWithLoadingIndicator usePhotoButton = hVar.f41100j;
             Intrinsics.checkNotNullExpressionValue(usePhotoButton, "usePhotoButton");
-            Button chooseNewPhotoButton = hVar.f41045c;
+            Button chooseNewPhotoButton = hVar.f41093c;
             Intrinsics.checkNotNullExpressionValue(chooseNewPhotoButton, "chooseNewPhotoButton");
             e5Var.h(governmentIdStepStyle, root3, navigationBar2, title, body, usePhotoButton, chooseNewPhotoButton, viewEnvironment);
         }
@@ -278,24 +278,24 @@ public final class e5 implements dn.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(e5 e5Var, View view) {
-        e5Var.f30095u.invoke();
+        e5Var.f30143u.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void l(e5 e5Var, View view) {
-        e5Var.f30096v.invoke();
+        e5Var.f30144v.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(e5 e5Var) {
-        e5Var.f30097w.invoke();
-        return Unit.f32008a;
+        e5Var.f30145w.invoke();
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(e5 e5Var) {
-        e5Var.f30098x.invoke();
-        return Unit.f32008a;
+        e5Var.f30146x.invoke();
+        return Unit.f32056a;
     }
 
     @Override // dn.b
@@ -311,7 +311,7 @@ public final class e5 implements dn.b {
             return false;
         }
         e5 e5Var = (e5) obj;
-        if (Intrinsics.areEqual(this.f30086d, e5Var.f30086d) && Intrinsics.areEqual(this.f30087e, e5Var.f30087e) && Intrinsics.areEqual(this.f30088i, e5Var.f30088i) && Intrinsics.areEqual(this.f30089o, e5Var.f30089o) && Intrinsics.areEqual(this.f30090p, e5Var.f30090p) && Intrinsics.areEqual(this.f30091q, e5Var.f30091q) && Intrinsics.areEqual(this.f30092r, e5Var.f30092r) && Intrinsics.areEqual(this.f30093s, e5Var.f30093s) && Intrinsics.areEqual(this.f30094t, e5Var.f30094t) && Intrinsics.areEqual(this.f30095u, e5Var.f30095u) && Intrinsics.areEqual(this.f30096v, e5Var.f30096v) && Intrinsics.areEqual(this.f30097w, e5Var.f30097w) && Intrinsics.areEqual(this.f30098x, e5Var.f30098x) && Intrinsics.areEqual(this.f30099y, e5Var.f30099y) && Intrinsics.areEqual(this.f30100z, e5Var.f30100z) && Intrinsics.areEqual(this.A, e5Var.A) && this.B == e5Var.B) {
+        if (Intrinsics.areEqual(this.f30134d, e5Var.f30134d) && Intrinsics.areEqual(this.f30135e, e5Var.f30135e) && Intrinsics.areEqual(this.f30136i, e5Var.f30136i) && Intrinsics.areEqual(this.f30137o, e5Var.f30137o) && Intrinsics.areEqual(this.f30138p, e5Var.f30138p) && Intrinsics.areEqual(this.f30139q, e5Var.f30139q) && Intrinsics.areEqual(this.f30140r, e5Var.f30140r) && Intrinsics.areEqual(this.f30141s, e5Var.f30141s) && Intrinsics.areEqual(this.f30142t, e5Var.f30142t) && Intrinsics.areEqual(this.f30143u, e5Var.f30143u) && Intrinsics.areEqual(this.f30144v, e5Var.f30144v) && Intrinsics.areEqual(this.f30145w, e5Var.f30145w) && Intrinsics.areEqual(this.f30146x, e5Var.f30146x) && Intrinsics.areEqual(this.f30147y, e5Var.f30147y) && Intrinsics.areEqual(this.f30148z, e5Var.f30148z) && Intrinsics.areEqual(this.A, e5Var.A) && this.B == e5Var.B) {
             return true;
         }
         return false;
@@ -320,22 +320,22 @@ public final class e5 implements dn.b {
     public int hashCode() {
         int hashCode;
         int hashCode2;
-        int hashCode3 = ((((((((((((this.f30086d.hashCode() * 31) + this.f30087e.hashCode()) * 31) + this.f30088i.hashCode()) * 31) + this.f30089o.hashCode()) * 31) + this.f30090p.hashCode()) * 31) + this.f30091q.hashCode()) * 31) + this.f30092r.hashCode()) * 31;
-        String str = this.f30093s;
+        int hashCode3 = ((((((((((((this.f30134d.hashCode() * 31) + this.f30135e.hashCode()) * 31) + this.f30136i.hashCode()) * 31) + this.f30137o.hashCode()) * 31) + this.f30138p.hashCode()) * 31) + this.f30139q.hashCode()) * 31) + this.f30140r.hashCode()) * 31;
+        String str = this.f30141s;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        int hashCode4 = (((((((((((hashCode3 + hashCode) * 31) + this.f30094t.hashCode()) * 31) + this.f30095u.hashCode()) * 31) + this.f30096v.hashCode()) * 31) + this.f30097w.hashCode()) * 31) + this.f30098x.hashCode()) * 31;
-        String str2 = this.f30099y;
+        int hashCode4 = (((((((((((hashCode3 + hashCode) * 31) + this.f30142t.hashCode()) * 31) + this.f30143u.hashCode()) * 31) + this.f30144v.hashCode()) * 31) + this.f30145w.hashCode()) * 31) + this.f30146x.hashCode()) * 31;
+        String str2 = this.f30147y;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
-        int hashCode5 = (((hashCode4 + hashCode2) * 31) + this.f30100z.hashCode()) * 31;
+        int hashCode5 = (((hashCode4 + hashCode2) * 31) + this.f30148z.hashCode()) * 31;
         StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.A;
         if (governmentIdStepStyle != null) {
             i10 = governmentIdStepStyle.hashCode();
@@ -344,21 +344,21 @@ public final class e5 implements dn.b {
     }
 
     public String toString() {
-        v4.h hVar = this.f30086d;
-        String str = this.f30087e;
-        String str2 = this.f30088i;
-        String str3 = this.f30089o;
-        String str4 = this.f30090p;
-        String str5 = this.f30091q;
-        String str6 = this.f30092r;
-        String str7 = this.f30093s;
-        zp.a aVar = this.f30094t;
-        Function0 function0 = this.f30095u;
-        Function0 function02 = this.f30096v;
-        Function0 function03 = this.f30097w;
-        Function0 function04 = this.f30098x;
-        String str8 = this.f30099y;
-        Function0 function05 = this.f30100z;
+        v4.h hVar = this.f30134d;
+        String str = this.f30135e;
+        String str2 = this.f30136i;
+        String str3 = this.f30137o;
+        String str4 = this.f30138p;
+        String str5 = this.f30139q;
+        String str6 = this.f30140r;
+        String str7 = this.f30141s;
+        zp.a aVar = this.f30142t;
+        Function0 function0 = this.f30143u;
+        Function0 function02 = this.f30144v;
+        Function0 function03 = this.f30145w;
+        Function0 function04 = this.f30146x;
+        String str8 = this.f30147y;
+        Function0 function05 = this.f30148z;
         StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.A;
         boolean z10 = this.B;
         return "ReviewSelectedImageView(imageLoader=" + hVar + ", title=" + str + ", body=" + str2 + ", confirmButtonText=" + str3 + ", chooseNewPhotoText=" + str4 + ", fileToReviewPath=" + str5 + ", fileMimeType=" + str6 + ", fileName=" + str7 + ", navigationState=" + aVar + ", onUsePhotoClick=" + function0 + ", onChooseNewPhotoClick=" + function02 + ", onBack=" + function03 + ", onCancel=" + function04 + ", error=" + str8 + ", onErrorDismissed=" + function05 + ", styles=" + governmentIdStepStyle + ", isAutoClassifying=" + z10 + ")";

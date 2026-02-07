@@ -14,27 +14,27 @@ import java.util.regex.Pattern;
 public final class c extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Pattern f28208e;
+    private final Pattern f28256e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Pattern f28209f;
+    private final Pattern f28257f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ClassLoader f28210g;
+    private final ClassLoader f28258g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f28211a;
+        private final String f28259a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f28212b;
+        private final String f28260b;
 
         public a(String str, String str2) {
-            this.f28211a = str;
-            this.f28212b = str2;
+            this.f28259a = str;
+            this.f28260b = str2;
         }
     }
 
@@ -46,7 +46,7 @@ public final class c extends d {
         if (str == null) {
             return null;
         }
-        Matcher matcher = this.f28209f.matcher(str);
+        Matcher matcher = this.f28257f.matcher(str);
         if (!matcher.matches() || matcher.groupCount() != 2) {
             return null;
         }
@@ -56,7 +56,7 @@ public final class c extends d {
     private List e() {
         ArrayList arrayList = new ArrayList();
         try {
-            Enumeration<URL> resources = this.f28210g.getResources("META-INF/MANIFEST.MF");
+            Enumeration<URL> resources = this.f28258g.getResources("META-INF/MANIFEST.MF");
             while (resources.hasMoreElements()) {
                 a d10 = d(f(resources.nextElement()));
                 if (d10 != null) {
@@ -65,13 +65,13 @@ public final class c extends d {
             }
             return arrayList;
         } catch (Throwable th2) {
-            this.f28214a.b(SentryLevel.ERROR, "Unable to detect modules via manifest files.", th2);
+            this.f28262a.b(SentryLevel.ERROR, "Unable to detect modules via manifest files.", th2);
             return arrayList;
         }
     }
 
     private String f(URL url) {
-        Matcher matcher = this.f28208e.matcher(url.toString());
+        Matcher matcher = this.f28256e.matcher(url.toString());
         if (matcher.matches() && matcher.groupCount() == 1) {
             return matcher.group(1);
         }
@@ -82,15 +82,15 @@ public final class c extends d {
     protected Map b() {
         HashMap hashMap = new HashMap();
         for (a aVar : e()) {
-            hashMap.put(aVar.f28211a, aVar.f28212b);
+            hashMap.put(aVar.f28259a, aVar.f28260b);
         }
         return hashMap;
     }
 
     c(ClassLoader classLoader, ILogger iLogger) {
         super(iLogger);
-        this.f28208e = Pattern.compile(".*/(.+)!/META-INF/MANIFEST.MF");
-        this.f28209f = Pattern.compile("(.*?)-(\\d+\\.\\d+.*).jar");
-        this.f28210g = io.sentry.util.b.a(classLoader);
+        this.f28256e = Pattern.compile(".*/(.+)!/META-INF/MANIFEST.MF");
+        this.f28257f = Pattern.compile("(.*?)-(\\d+\\.\\d+.*).jar");
+        this.f28258g = io.sentry.util.b.a(classLoader);
     }
 }

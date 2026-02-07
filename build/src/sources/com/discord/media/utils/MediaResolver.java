@@ -70,7 +70,7 @@ public final class MediaResolver {
         if (g10 == wr.b.f()) {
             return g10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -173,7 +173,7 @@ public final class MediaResolver {
         compress.a(new QualityAndResolutionConstraint(i10, z10));
         hr.g.a(compress, Bitmap.CompressFormat.JPEG);
         hr.e.a(compress, ContentResolverUtils.createTempFile$default(ContentResolverUtils.INSTANCE, mediaResolver.getResolver(), uri, null, "jpeg", 2, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -207,7 +207,7 @@ public final class MediaResolver {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit handleVideo$lambda$4$lambda$3(MediaResolver mediaResolver, Uri uri, float f10) {
         mediaResolver.onProgress.invoke(uri, Integer.valueOf((int) (f10 * 100)));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void logMediaError(String str, String str2, Uri uri, Uri uri2) {

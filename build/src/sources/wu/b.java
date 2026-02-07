@@ -7,7 +7,7 @@ import kotlin.collections.CollectionsKt;
 public final class b implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f54128a = new b();
+    public static final b f54176a = new b();
 
     private b() {
     }
@@ -51,7 +51,7 @@ public final class b implements su.b {
         if (list3 == null) {
             list3 = CollectionsKt.l();
         }
-        List f10 = a.f54127a.f(list3, obj2);
+        List f10 = a.f54175a.f(list3, obj2);
         if (list3.size() - f10.size() < j10) {
             list4 = f10;
         }

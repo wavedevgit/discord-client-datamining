@@ -8,25 +8,25 @@ import java.util.Set;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f51495a;
+    private final String f51543a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f51496b;
+    private final Set f51544b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f51497c;
+    private final Set f51545c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f51498d;
+    private final int f51546d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f51499e;
+    private final int f51547e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final g f51500f;
+    private final g f51548f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Set f51501g;
+    private final Set f51549g;
 
     public static /* synthetic */ Object a(Object obj, d dVar) {
         return obj;
@@ -75,104 +75,104 @@ public final class c {
     }
 
     public Set g() {
-        return this.f51497c;
+        return this.f51545c;
     }
 
     public g h() {
-        return this.f51500f;
+        return this.f51548f;
     }
 
     public String i() {
-        return this.f51495a;
+        return this.f51543a;
     }
 
     public Set j() {
-        return this.f51496b;
+        return this.f51544b;
     }
 
     public Set k() {
-        return this.f51501g;
+        return this.f51549g;
     }
 
     public boolean n() {
-        if (this.f51498d == 1) {
+        if (this.f51546d == 1) {
             return true;
         }
         return false;
     }
 
     public boolean o() {
-        if (this.f51498d == 2) {
+        if (this.f51546d == 2) {
             return true;
         }
         return false;
     }
 
     public boolean p() {
-        if (this.f51499e == 0) {
+        if (this.f51547e == 0) {
             return true;
         }
         return false;
     }
 
     public c r(g gVar) {
-        return new c(this.f51495a, this.f51496b, this.f51497c, this.f51498d, this.f51499e, gVar, this.f51501g);
+        return new c(this.f51543a, this.f51544b, this.f51545c, this.f51546d, this.f51547e, gVar, this.f51549g);
     }
 
     public String toString() {
-        return "Component<" + Arrays.toString(this.f51496b.toArray()) + ">{" + this.f51498d + ", type=" + this.f51499e + ", deps=" + Arrays.toString(this.f51497c.toArray()) + "}";
+        return "Component<" + Arrays.toString(this.f51544b.toArray()) + ">{" + this.f51546d + ", type=" + this.f51547e + ", deps=" + Arrays.toString(this.f51545c.toArray()) + "}";
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f51502a;
+        private String f51550a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Set f51503b;
+        private final Set f51551b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Set f51504c;
+        private final Set f51552c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f51505d;
+        private int f51553d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f51506e;
+        private int f51554e;
 
         /* renamed from: f  reason: collision with root package name */
-        private g f51507f;
+        private g f51555f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Set f51508g;
+        private final Set f51556g;
 
         /* JADX INFO: Access modifiers changed from: private */
         public b f() {
-            this.f51506e = 1;
+            this.f51554e = 1;
             return this;
         }
 
         private b h(int i10) {
             boolean z10;
-            if (this.f51505d == 0) {
+            if (this.f51553d == 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             c0.d(z10, "Instantiation type has already been set.");
-            this.f51505d = i10;
+            this.f51553d = i10;
             return this;
         }
 
         private void i(d0 d0Var) {
-            c0.a(!this.f51503b.contains(d0Var), "Components are not allowed to depend on interfaces they themselves provide.");
+            c0.a(!this.f51551b.contains(d0Var), "Components are not allowed to depend on interfaces they themselves provide.");
         }
 
         public b b(q qVar) {
             c0.c(qVar, "Null dependency");
             i(qVar.b());
-            this.f51504c.add(qVar);
+            this.f51552c.add(qVar);
             return this;
         }
 
@@ -182,65 +182,65 @@ public final class c {
 
         public c d() {
             boolean z10;
-            if (this.f51507f != null) {
+            if (this.f51555f != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             c0.d(z10, "Missing required property: factory.");
-            return new c(this.f51502a, new HashSet(this.f51503b), new HashSet(this.f51504c), this.f51505d, this.f51506e, this.f51507f, this.f51508g);
+            return new c(this.f51550a, new HashSet(this.f51551b), new HashSet(this.f51552c), this.f51553d, this.f51554e, this.f51555f, this.f51556g);
         }
 
         public b e(g gVar) {
-            this.f51507f = (g) c0.c(gVar, "Null factory");
+            this.f51555f = (g) c0.c(gVar, "Null factory");
             return this;
         }
 
         public b g(String str) {
-            this.f51502a = str;
+            this.f51550a = str;
             return this;
         }
 
         private b(Class cls, Class... clsArr) {
-            this.f51502a = null;
+            this.f51550a = null;
             HashSet hashSet = new HashSet();
-            this.f51503b = hashSet;
-            this.f51504c = new HashSet();
-            this.f51505d = 0;
-            this.f51506e = 0;
-            this.f51508g = new HashSet();
+            this.f51551b = hashSet;
+            this.f51552c = new HashSet();
+            this.f51553d = 0;
+            this.f51554e = 0;
+            this.f51556g = new HashSet();
             c0.c(cls, "Null interface");
             hashSet.add(d0.b(cls));
             for (Class cls2 : clsArr) {
                 c0.c(cls2, "Null interface");
-                this.f51503b.add(d0.b(cls2));
+                this.f51551b.add(d0.b(cls2));
             }
         }
 
         private b(d0 d0Var, d0... d0VarArr) {
-            this.f51502a = null;
+            this.f51550a = null;
             HashSet hashSet = new HashSet();
-            this.f51503b = hashSet;
-            this.f51504c = new HashSet();
-            this.f51505d = 0;
-            this.f51506e = 0;
-            this.f51508g = new HashSet();
+            this.f51551b = hashSet;
+            this.f51552c = new HashSet();
+            this.f51553d = 0;
+            this.f51554e = 0;
+            this.f51556g = new HashSet();
             c0.c(d0Var, "Null interface");
             hashSet.add(d0Var);
             for (d0 d0Var2 : d0VarArr) {
                 c0.c(d0Var2, "Null interface");
             }
-            Collections.addAll(this.f51503b, d0VarArr);
+            Collections.addAll(this.f51551b, d0VarArr);
         }
     }
 
     private c(String str, Set set, Set set2, int i10, int i11, g gVar, Set set3) {
-        this.f51495a = str;
-        this.f51496b = Collections.unmodifiableSet(set);
-        this.f51497c = Collections.unmodifiableSet(set2);
-        this.f51498d = i10;
-        this.f51499e = i11;
-        this.f51500f = gVar;
-        this.f51501g = Collections.unmodifiableSet(set3);
+        this.f51543a = str;
+        this.f51544b = Collections.unmodifiableSet(set);
+        this.f51545c = Collections.unmodifiableSet(set2);
+        this.f51546d = i10;
+        this.f51547e = i11;
+        this.f51548f = gVar;
+        this.f51549g = Collections.unmodifiableSet(set3);
     }
 }

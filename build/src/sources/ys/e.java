@@ -18,19 +18,19 @@ public final class e implements Comparable<e> {
     public static final a Companion = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e f55587e;
+    private static final e f55635e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e f55588i;
+    private static final e f55636i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final e f55589o;
+    private static final e f55637o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final e f55590p;
+    private static final e f55638p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Instant f55591d;
+    private final Instant f55639d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -40,7 +40,7 @@ public final class e implements Comparable<e> {
 
         public static /* synthetic */ e g(a aVar, CharSequence charSequence, zs.n nVar, int i10, Object obj) {
             if ((i10 & 2) != 0) {
-                nVar = j.b.f56519a.a();
+                nVar = j.b.f56567a.a();
             }
             return aVar.e(charSequence, nVar);
         }
@@ -66,11 +66,11 @@ public final class e implements Comparable<e> {
         }
 
         public final e c() {
-            return e.f55590p;
+            return e.f55638p;
         }
 
         public final e d() {
-            return e.f55589o;
+            return e.f55637o;
         }
 
         public final e e(CharSequence input, zs.n format) {
@@ -100,33 +100,33 @@ public final class e implements Comparable<e> {
     static {
         Instant ofEpochSecond = Instant.ofEpochSecond(-3217862419201L, 999999999L);
         Intrinsics.checkNotNullExpressionValue(ofEpochSecond, "ofEpochSecond(...)");
-        f55587e = new e(ofEpochSecond);
+        f55635e = new e(ofEpochSecond);
         Instant ofEpochSecond2 = Instant.ofEpochSecond(3093527980800L, 0L);
         Intrinsics.checkNotNullExpressionValue(ofEpochSecond2, "ofEpochSecond(...)");
-        f55588i = new e(ofEpochSecond2);
+        f55636i = new e(ofEpochSecond2);
         Instant MIN = Instant.MIN;
         Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f55589o = new e(MIN);
+        f55637o = new e(MIN);
         Instant MAX = Instant.MAX;
         Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f55590p = new e(MAX);
+        f55638p = new e(MAX);
     }
 
     public e(Instant value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f55591d = value;
+        this.f55639d = value;
     }
 
     @Override // java.lang.Comparable
     /* renamed from: e */
     public int compareTo(e other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f55591d.compareTo(other.f55591d);
+        return this.f55639d.compareTo(other.f55639d);
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            if (!(obj instanceof e) || !Intrinsics.areEqual(this.f55591d, ((e) obj).f55591d)) {
+            if (!(obj instanceof e) || !Intrinsics.areEqual(this.f55639d, ((e) obj).f55639d)) {
                 return false;
             }
             return true;
@@ -135,15 +135,15 @@ public final class e implements Comparable<e> {
     }
 
     public final long f() {
-        return this.f55591d.getEpochSecond();
+        return this.f55639d.getEpochSecond();
     }
 
     public int hashCode() {
-        return this.f55591d.hashCode();
+        return this.f55639d.hashCode();
     }
 
     public String toString() {
-        String instant = this.f55591d.toString();
+        String instant = this.f55639d.toString();
         Intrinsics.checkNotNullExpressionValue(instant, "toString(...)");
         return instant;
     }

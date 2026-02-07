@@ -116,14 +116,14 @@ public final class EmojiRendererKt {
     public static final Unit renderEmoji$lambda$0(RenderContext renderContext, EmojiContentNode emojiContentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapEmoji().invoke(emojiContentNode);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit renderEmoji$lambda$2$lambda$1(RenderContext renderContext, GenericDraweeHierarchyBuilder renderEmojiInto) {
         Intrinsics.checkNotNullParameter(renderEmojiInto, "$this$renderEmojiInto");
         handleEmojiSpoiler$default(renderEmojiInto, renderContext, false, 2, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @NotNull

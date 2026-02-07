@@ -13,7 +13,7 @@ public interface TemporalAccessor {
             if (!j(nVar)) {
                 throw new DateTimeException("Unsupported field: " + nVar);
             }
-            return ((a) nVar).f29505b;
+            return ((a) nVar).f29553b;
         }
         Objects.requireNonNull(nVar, "field");
         return nVar.t(this);
@@ -21,7 +21,7 @@ public interface TemporalAccessor {
 
     default int g(n nVar) {
         r i10 = i(nVar);
-        if (i10.f29524a < -2147483648L || i10.f29527d > 2147483647L) {
+        if (i10.f29572a < -2147483648L || i10.f29575d > 2147483647L) {
             throw new DateTimeException("Invalid field " + nVar + " for get() method, use getLong() instead");
         }
         long m10 = m(nVar);
@@ -32,7 +32,7 @@ public interface TemporalAccessor {
     }
 
     default Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f29517a || temporalQuery == o.f29518b || temporalQuery == o.f29519c) {
+        if (temporalQuery == o.f29565a || temporalQuery == o.f29566b || temporalQuery == o.f29567c) {
             return null;
         }
         return temporalQuery.queryFrom(this);

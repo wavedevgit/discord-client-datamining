@@ -5,7 +5,7 @@ import yi.c;
 final class gb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final gb f47064a = new gb();
+    static final gb f47112a = new gb();
 
     static {
         c.b a10 = yi.c.a("x");

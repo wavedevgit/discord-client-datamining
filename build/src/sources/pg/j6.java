@@ -5,16 +5,16 @@ import yi.c;
 final class j6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j6 f44369a = new j6();
+    static final j6 f44417a = new j6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44370b;
+    private static final yi.c f44418b;
 
     static {
         c.b a10 = yi.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44370b = a10.b(s1Var.b()).a();
+        f44418b = a10.b(s1Var.b()).a();
     }
 
     private j6() {

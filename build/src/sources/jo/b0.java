@@ -10,13 +10,13 @@ public final class b0 implements Parcelable {
     public static final Parcelable.Creator<b0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final g4 f29980d;
+    private final g4 f30028d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c4 f29981e;
+    private final c4 f30029e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f29982i;
+    private final String f30030i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -38,17 +38,17 @@ public final class b0 implements Parcelable {
         Intrinsics.checkNotNullParameter(icon, "icon");
         Intrinsics.checkNotNullParameter(idConfig, "idConfig");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f29980d = icon;
-        this.f29981e = idConfig;
-        this.f29982i = name;
+        this.f30028d = icon;
+        this.f30029e = idConfig;
+        this.f30030i = name;
     }
 
     public final g4 a() {
-        return this.f29980d;
+        return this.f30028d;
     }
 
     public final c4 b() {
-        return this.f29981e;
+        return this.f30029e;
     }
 
     @Override // android.os.Parcelable
@@ -64,32 +64,32 @@ public final class b0 implements Parcelable {
             return false;
         }
         b0 b0Var = (b0) obj;
-        if (this.f29980d == b0Var.f29980d && Intrinsics.areEqual(this.f29981e, b0Var.f29981e) && Intrinsics.areEqual(this.f29982i, b0Var.f29982i)) {
+        if (this.f30028d == b0Var.f30028d && Intrinsics.areEqual(this.f30029e, b0Var.f30029e) && Intrinsics.areEqual(this.f30030i, b0Var.f30030i)) {
             return true;
         }
         return false;
     }
 
     public final String getName() {
-        return this.f29982i;
+        return this.f30030i;
     }
 
     public int hashCode() {
-        return (((this.f29980d.hashCode() * 31) + this.f29981e.hashCode()) * 31) + this.f29982i.hashCode();
+        return (((this.f30028d.hashCode() * 31) + this.f30029e.hashCode()) * 31) + this.f30030i.hashCode();
     }
 
     public String toString() {
-        g4 g4Var = this.f29980d;
-        c4 c4Var = this.f29981e;
-        String str = this.f29982i;
+        g4 g4Var = this.f30028d;
+        c4 c4Var = this.f30029e;
+        String str = this.f30030i;
         return "EnabledIdClass(icon=" + g4Var + ", idConfig=" + c4Var + ", name=" + str + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f29980d.name());
-        this.f29981e.writeToParcel(dest, i10);
-        dest.writeString(this.f29982i);
+        dest.writeString(this.f30028d.name());
+        this.f30029e.writeToParcel(dest, i10);
+        dest.writeString(this.f30030i);
     }
 }

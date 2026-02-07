@@ -7,24 +7,24 @@ import java.util.Set;
 public class d {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile d f40869b;
+    private static volatile d f40917b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f40870a = new HashSet();
+    private final Set f40918a = new HashSet();
 
     d() {
     }
 
     public static d a() {
         d dVar;
-        d dVar2 = f40869b;
+        d dVar2 = f40917b;
         if (dVar2 == null) {
             synchronized (d.class) {
                 try {
-                    dVar = f40869b;
+                    dVar = f40917b;
                     if (dVar == null) {
                         dVar = new d();
-                        f40869b = dVar;
+                        f40917b = dVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -38,8 +38,8 @@ public class d {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Set b() {
         Set unmodifiableSet;
-        synchronized (this.f40870a) {
-            unmodifiableSet = Collections.unmodifiableSet(this.f40870a);
+        synchronized (this.f40918a) {
+            unmodifiableSet = Collections.unmodifiableSet(this.f40918a);
         }
         return unmodifiableSet;
     }

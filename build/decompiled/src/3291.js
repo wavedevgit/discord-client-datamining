@@ -1,53 +1,34 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun28312: for (var _fun28312_ip = 0;;) switch (_fun28312_ip) {
+    _fun28322: for (var _fun28322_ip = 0;;) switch (_fun28322_ip) {
         case 0:
-            var3 = require;
-            var4 = dependencyMap;
-            var _closure1_slot0 = var3;
-            var _closure1_slot1 = var4;
+            var1 = require;
+            var0 = dependencyMap;
+        case 6: // try_start_0
+            var2 = var0;
             var0 = 0;
-            var2 = var4[var0];
+            var0 = var2[var0];
+            var4 = undefined;
+            var2 = var1.bind(var4)(var0);
+            var0 = global;
+            var1 = var0.Object;
+            var0 = 'defineProperty';
+            var0 = var2.bind(var4)(var1, var0);
+            var3 = {};
+            var2 = '';
+            var1 = {};
+            var1 = var0.bind(var4)(var3, var2, var1);
+        case 55: // try_end0
+            var1 = var0;
+            _fun28322_ip = 64;
+            continue _fun28322;
+        case 60: // catch_target0
+            CatchBlockStart(arg_register = 0);
+            var1 = undefined;
+        case 64:
+            var0 = module;
+            var0.exports = var1;
             var0 = undefined;
-            var2 = var3.bind(var0)(var2);
-            if (var2) {
-                _fun28312_ip = 46;
-                continue _fun28312
-            }
-        case 32:
-            var2 = 1;
-            var2 = var4[var2];
-            var2 = var3.bind(var0)(var2);
-            _fun28312_ip = 51;
-            continue _fun28312;
-        case 46:
-            var2 = function(arg0, arg1) { // Environment: var1
-                var1 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 0;
-                var0 = var5[var0];
-                var4 = undefined;
-                var3 = var1.bind(var4)(var0);
-                var2 = {
-                    'configurable': true,
-                    'enumerable': false,
-                    'value': null,
-                    'writable': true
-                };
-                var0 = 2;
-                var0 = var5[var0];
-                var1 = var1.bind(var4)(var0);
-                var0 = arg1;
-                var0 = var1.bind(var4)(var0);
-                var2.value = var0;
-                var1 = arg0;
-                var0 = 'toString';
-                var0 = var3.bind(var4)(var1, var0, var2);
-                return var0;
-            };
-        case 51:
-            var1 = arg4;
-            var1.exports = var2;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3292, 626, 3299]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3292]);

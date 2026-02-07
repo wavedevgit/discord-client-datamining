@@ -306,31 +306,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = var4;
     var2.SUPPORTED_ACTIVITIES_CHANNEL_TYPES = var3;
     var3 = function arg0() {
-        _fun29703: for (var _fun29703_ip = 0;;) switch (_fun29703_ip) {
+        _fun29712: for (var _fun29712_ip = 0;;) switch (_fun29712_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'tiktok';
                 if (!(var0 !== var1)) {
-                    _fun29703_ip = 67;
-                    continue _fun29703
+                    _fun29712_ip = 67;
+                    continue _fun29712
                 }
             case 11:
                 var0 = 'photos';
                 if (!(var0 !== var1)) {
-                    _fun29703_ip = 59;
-                    continue _fun29703
+                    _fun29712_ip = 59;
+                    continue _fun29712
                 }
             case 21:
                 var0 = 'snapchat';
                 if (!(var0 !== var1)) {
-                    _fun29703_ip = 51;
-                    continue _fun29703
+                    _fun29712_ip = 51;
+                    continue _fun29712
                 }
             case 31:
                 var0 = 'instagram';
                 if (!(var0 !== var1)) {
-                    _fun29703_ip = 43;
-                    continue _fun29703
+                    _fun29712_ip = 43;
+                    continue _fun29712
                 }
             case 39:
                 var0 = undefined;
@@ -362,4 +362,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 21600000;
     var2.INVITE_EXPIRATION_MS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1645, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1647, 2]);

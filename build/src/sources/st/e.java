@@ -8,18 +8,18 @@ public enum e implements rt.y {
     
 
     /* renamed from: q  reason: collision with root package name */
-    private static e[] f50162q = values();
+    private static e[] f50210q = values();
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f50164d;
+    private final transient int f50212d;
 
     e(int i10) {
-        this.f50164d = i10;
+        this.f50212d = i10;
     }
 
     public static e d(int i10) {
         e[] eVarArr;
-        for (e eVar : f50162q) {
+        for (e eVar : f50210q) {
             if (eVar.a() == i10) {
                 return eVar;
             }
@@ -29,6 +29,6 @@ public enum e implements rt.y {
 
     @Override // rt.y
     public int a() {
-        return this.f50164d;
+        return this.f50212d;
     }
 }

@@ -6,10 +6,10 @@ import ts.e0;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e0 f54769a = new e0("NO_OWNER");
+    private static final e0 f54817a = new e0("NO_OWNER");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e0 f54770b = new e0("ALREADY_LOCKED_BY_OWNER");
+    private static final e0 f54818b = new e0("ALREADY_LOCKED_BY_OWNER");
 
     public static final Mutex a(boolean z10) {
         return new e(z10);

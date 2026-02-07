@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35156: for (var _fun35156_ip = 0;;) switch (_fun35156_ip) {
+    _fun35173: for (var _fun35173_ip = 0;;) switch (_fun35173_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -18,113 +18,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = '__esModule';
             var0 = var3.bind(var7)(var2, var0, var1);
             var0 = {};
-            var1 = 'function measureFabric_Pnpm_measureTs1(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn("The view with tag "+viewTag+" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}const measured=global._measureFabric(viewTag);if(measured===null){logger.warn("The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}else if(measured.x===-1234567){logger.warn("The view returned an invalid measurement response. Please make sure the view is currently rendered.");return null;}else if(isNaN(measured.x)){logger.warn("The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");return null;}else{return measured;}}';
+            var1 = "function scrollToFabric_Pnpm_scrollToTs1(animatedRef,x,y,animated){const{dispatchCommand}=this.__closure;dispatchCommand(animatedRef,'scrollTo',[x,y,animated]);}";
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
-                var0 = function arg0() {
-                    _fun35158: for (var _fun35158_ip = 0;;) switch (_fun35158_ip) {
-                        case 0:
-                            var0 = global;
-                            var1 = var0._WORKLET;
-                            if (var1) {
-                                _fun35158_ip = 15;
-                                continue _fun35158
-                            }
-                        case 11:
-                            var1 = null;
-                            return var1;
-                        case 15:
-                            var1 = arg0;
-                            var3 = undefined;
-                            var5 = var1.bind(var3)();
-                            var1 = -1;
-                            if (!(var1 !== var5)) {
-                                _fun35158_ip = 235;
-                                continue _fun35158
-                            }
-                        case 37:
-                            var2 = _closure1_slot0;
-                            var1 = var2._measureFabric;
-                            var1 = var1.bind(var2)(var5);
-                            var2 = null;
-                            if (!(var2 !== var1)) {
-                                _fun35158_ip = 190;
-                                continue _fun35158
-                            }
-                        case 66:
-                            var7 = var1.x;
-                            var6 = -1234567;
-                            if (!(var6 !== var7)) {
-                                _fun35158_ip = 145;
-                                continue _fun35158
-                            }
-                        case 81:
-                            var7 = var0.isNaN;
-                            var6 = var1.x;
-                            var6 = var7.bind(var3)(var6);
-                            if (!var6) {
-                                _fun35158_ip = 143;
-                                continue _fun35158
-                            }
-                        case 100:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = 'The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.';
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 143:
-                            _fun35158_ip = 188;
-                            continue _fun35158;
-                        case 145:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = 'The view returned an invalid measurement response. Please make sure the view is currently rendered.';
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 188:
-                            _fun35158_ip = 233;
-                            continue _fun35158;
-                        case 190:
-                            var6 = _closure1_slot1;
-                            var7 = _closure1_slot2;
-                            var4 = 0;
-                            var4 = var7[var4];
-                            var4 = var6.bind(var3)(var4);
-                            var7 = var4.logger;
-                            var6 = var7.warn;
-                            var4 = 'The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var4 = var6.bind(var7)(var4);
-                            var1 = null;
-                        case 233:
-                            return var1;
-                        case 235:
-                            var2 = _closure1_slot1;
-                            var4 = _closure1_slot2;
-                            var1 = 0;
-                            var1 = var4[var1];
-                            var1 = var2.bind(var3)(var1);
-                            var2 = var1.logger;
-                            var1 = var2.warn;
-                            var0 = var0.HermesInternal;
-                            var4 = var0.concat;
-                            var3 = 'The view with tag ';
-                            var0 = ' is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var0 = var4.bind(var3)(var5, var0);
-                            var0 = var1.bind(var2)(var0);
-                            var0 = null;
-                            return var0;
-                    }
+                var0 = function arg0, arg1, arg2, arg3() {
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 0;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var5 = var2.bind(var0)(var1);
+                    var4 = var5.dispatchCommand;
+                    var3 = new Array(3);
+                    var1 = arg1;
+                    var3[0] = var1;
+                    var1 = arg2;
+                    var3[1] = var1;
+                    var1 = arg3;
+                    var3[2] = var1;
+                    var2 = arg0;
+                    var1 = 'scrollTo';
+                    var1 = var4.bind(var5)(var2, var1, var3);
+                    return var0;
                 };
                 var2 = {};
                 var5 = _closure1_slot1;
@@ -133,10 +49,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4[var3];
                 var3 = undefined;
                 var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
+                var3 = var3.dispatchCommand;
+                var2.dispatchCommand = var3;
                 var0.__closure = var2;
-                var2 = 11588690892656.0;
+                var2 = 5331784934384.0;
                 var0.__workletHash = var2;
                 var1 = _closure1_slot3;
                 var0.__initData = var1;
@@ -145,144 +61,45 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var7 = var1.bind(var0)();
             var1 = {};
-            var3 = 'function measurePaper_Pnpm_measureTs2(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn("The view with tag "+viewTag+" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}const measured=global._measurePaper(viewTag);if(measured===null){logger.warn("The view with tag "+viewTag+" has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}else if(measured.x===-1234567){logger.warn("The view with tag "+viewTag+" returned an invalid measurement response. Please make sure the view is currently rendered.");return null;}else if(isNaN(measured.x)){logger.warn("The view with tag "+viewTag+" gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");return null;}else{return measured;}}';
+            var3 = 'function scrollToPaper_Pnpm_scrollToTs2(animatedRef,x,y,animated){if(!_WORKLET){return;}const viewTag=animatedRef();global._scrollToPaper(viewTag,x,y,animated);}';
             var1.code = var3;
             var _closure1_slot4 = var1;
             var1 = function() { // Environment: var4
-                var0 = function arg0() {
-                    _fun35160: for (var _fun35160_ip = 0;;) switch (_fun35160_ip) {
+                var0 = function arg0, arg1, arg2, arg3() {
+                    _fun35177: for (var _fun35177_ip = 0;;) switch (_fun35177_ip) {
                         case 0:
                             var0 = global;
-                            var1 = var0._WORKLET;
-                            if (var1) {
-                                _fun35160_ip = 15;
-                                continue _fun35160
+                            var0 = var0._WORKLET;
+                            if (!var0) {
+                                _fun35177_ip = 51;
+                                continue _fun35177
                             }
                         case 11:
-                            var1 = null;
-                            return var1;
-                        case 15:
                             var1 = arg0;
-                            var3 = undefined;
-                            var5 = var1.bind(var3)();
-                            var1 = -1;
-                            if (!(var1 !== var5)) {
-                                _fun35160_ip = 304;
-                                continue _fun35160
-                            }
-                        case 37:
-                            var2 = _closure1_slot0;
-                            var1 = var2._measurePaper;
-                            var1 = var1.bind(var2)(var5);
-                            var2 = null;
-                            if (!(var2 !== var1)) {
-                                _fun35160_ip = 236;
-                                continue _fun35160
-                            }
-                        case 66:
-                            var7 = var1.x;
-                            var6 = -1234567;
-                            if (!(var6 !== var7)) {
-                                _fun35160_ip = 168;
-                                continue _fun35160
-                            }
-                        case 81:
-                            var7 = var0.isNaN;
-                            var6 = var1.x;
-                            var6 = var7.bind(var3)(var6);
-                            if (!var6) {
-                                _fun35160_ip = 166;
-                                continue _fun35160
-                            }
-                        case 100:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = var0.HermesInternal;
-                            var10 = var6.concat;
-                            var9 = 'The view with tag ';
-                            var6 = ' gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.';
-                            var6 = var10.bind(var9)(var5, var6);
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 166:
-                            _fun35160_ip = 234;
-                            continue _fun35160;
-                        case 168:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = var0.HermesInternal;
-                            var10 = var6.concat;
-                            var9 = 'The view with tag ';
-                            var6 = ' returned an invalid measurement response. Please make sure the view is currently rendered.';
-                            var6 = var10.bind(var9)(var5, var6);
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 234:
-                            _fun35160_ip = 302;
-                            continue _fun35160;
-                        case 236:
-                            var6 = _closure1_slot1;
-                            var7 = _closure1_slot2;
-                            var4 = 0;
-                            var4 = var7[var4];
-                            var4 = var6.bind(var3)(var4);
-                            var7 = var4.logger;
-                            var6 = var7.warn;
-                            var4 = var0.HermesInternal;
-                            var9 = var4.concat;
-                            var8 = 'The view with tag ';
-                            var4 = ' has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var4 = var9.bind(var8)(var5, var4);
-                            var4 = var6.bind(var7)(var4);
-                            var1 = null;
-                        case 302:
-                            return var1;
-                        case 304:
-                            var2 = _closure1_slot1;
-                            var4 = _closure1_slot2;
-                            var1 = 0;
-                            var1 = var4[var1];
-                            var1 = var2.bind(var3)(var1);
-                            var2 = var1.logger;
-                            var1 = var2.warn;
-                            var0 = var0.HermesInternal;
-                            var4 = var0.concat;
-                            var3 = 'The view with tag ';
-                            var0 = ' is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var0 = var4.bind(var3)(var5, var0);
-                            var0 = var1.bind(var2)(var0);
-                            var0 = null;
+                            var0 = undefined;
+                            var9 = var1.bind(var0)();
+                            var4 = _closure1_slot0;
+                            var3 = var4._scrollToPaper;
+                            var8 = arg1;
+                            var7 = arg2;
+                            var6 = arg3;
+                            var10 = var4;
+                            var0 = var10[var3](var9, var8, var7, var6, var5);
+                        case 51:
+                            var0 = undefined;
                             return var0;
                     }
                 };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 12497864483036.0;
-                var0.__workletHash = var2;
+                var1 = {};
+                var0.__closure = var1;
+                var1 = 10376977850779.0;
+                var0.__workletHash = var1;
                 var1 = _closure1_slot4;
                 var0.__initData = var1;
                 return var0;
             };
             var1 = var1.bind(var0)();
-            var3 = 1;
+            var3 = 2;
             var8 = var6[var3];
             var9 = var5.bind(var0)(var8);
             var8 = var9.shouldBeUseWeb;
@@ -290,27 +107,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var6[var3];
             var8 = var5.bind(var0)(var8);
             if (var9) {
-                _fun35156_ip = 162;
-                continue _fun35156
+                _fun35173_ip = 162;
+                continue _fun35173
             }
         case 144:
             var9 = var8.isFabric;
             var9 = var9.bind(var8)();
             if (!var9) {
-                _fun35156_ip = 160;
-                continue _fun35156
+                _fun35173_ip = 160;
+                continue _fun35173
             }
         case 157:
             var1 = var7;
         case 160:
-            _fun35156_ip = 219;
-            continue _fun35156;
+            _fun35173_ip = 219;
+            continue _fun35173;
         case 162:
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun35156_ip = 211;
-                continue _fun35156
+                _fun35173_ip = 211;
+                continue _fun35173
             }
         case 175:
             var3 = var6[var3];
@@ -318,63 +135,60 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun35156_ip = 204;
-                continue _fun35156
+                _fun35173_ip = 204;
+                continue _fun35173
             }
         case 197:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 0;
+                var0 = 1;
                 var1 = var1[var0];
                 var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() is not supported on this configuration.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
+                var1 = var2.bind(var0)(var1);
+                var3 = var1.logger;
+                var2 = var3.warn;
+                var1 = 'scrollTo() is not supported on this configuration.';
+                var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun35156_ip = 209;
-            continue _fun35156;
+            _fun35173_ip = 209;
+            continue _fun35173;
         case 204:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 0;
+                var0 = 1;
                 var1 = var1[var0];
                 var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() cannot be used with Chrome Debugger.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
+                var1 = var2.bind(var0)(var1);
+                var3 = var1.logger;
+                var2 = var3.warn;
+                var1 = 'scrollTo() is not supported with Chrome Debugger.';
+                var1 = var2.bind(var3)(var1);
                 return var0;
             };
         case 209:
-            _fun35156_ip = 216;
-            continue _fun35156;
+            _fun35173_ip = 216;
+            continue _fun35173;
         case 211:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 0;
+                var0 = 1;
                 var1 = var1[var0];
                 var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() cannot be used with Jest.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
+                var1 = var2.bind(var0)(var1);
+                var3 = var1.logger;
+                var2 = var3.warn;
+                var1 = 'scrollTo() is not supported with Jest.';
+                var1 = var2.bind(var3)(var1);
                 return var0;
             };
         case 216:
             var1 = var3;
         case 219:
-            var2.measure = var1;
+            var2.scrollTo = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3727, 3726]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3897, 3726, 3725]);

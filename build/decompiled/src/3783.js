@@ -13,567 +13,473 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var3.bind(var4)(var2, var0, var1);
     var5 = {};
     var0 = {
-        'name': 'BounceIn',
+        'name': 'FlipInYRight',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var6 = {};
-    var7 = 0;
-    var6.scale = var7;
     var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '90deg',
+        'translateX': '100%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var6 = {};
-    var16 = 1.2;
-    var6.scale = var16;
     var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[55] = var3;
-    var3 = {};
-    var6 = {};
-    var17 = 0.9;
-    var6.scale = var17;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var6 = {};
-    var18 = 1.1;
-    var6.scale = var18;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var6 = {};
-    var19 = 1;
-    var6.scale = var19;
-    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.BounceIn = var0;
+    var5.FlipInYRight = var0;
     var0 = {
-        'name': 'BounceInRight',
+        'name': 'FlipInYLeft',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var6 = {};
-    var4 = '100vw';
-    var6.translateX = var4;
     var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '-90deg',
+        'translateX': '-100%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var6 = {};
-    var10 = '-20px';
-    var6.translateX = var10;
     var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[55] = var3;
-    var3 = {};
-    var6 = {};
-    var11 = '10px';
-    var6.translateX = var11;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var6 = {};
-    var12 = '-10px';
-    var6.translateX = var12;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var6 = {};
-    var13 = '0px';
-    var6.translateX = var13;
-    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.BounceInRight = var0;
+    var5.FlipInYLeft = var0;
     var0 = {
-        'name': 'BounceInLeft',
+        'name': 'FlipInXUp',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var6 = {};
-    var4 = '-100vw';
-    var6.translateX = var4;
     var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '90deg',
+        'translateY': '-100%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var6 = {};
-    var15 = '20px';
-    var6.translateX = var15;
     var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[55] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateX = var12;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateX = var11;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateX = var13;
-    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.BounceInLeft = var0;
+    var5.FlipInXUp = var0;
     var0 = {
-        'name': 'BounceInUp',
+        'name': 'FlipInXDown',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var6 = {};
-    var14 = '-100vh';
-    var6.translateY = var14;
     var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '-90deg',
+        'translateY': '100%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var6 = {};
-    var6.translateY = var15;
     var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[55] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateY = var12;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateY = var11;
-    var4 = new Array(1);
-    var4[0] = var6;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var6 = {};
-    var6.translateY = var13;
-    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
+    };
     var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.BounceInUp = var0;
+    var5.FlipInXDown = var0;
     var0 = {
-        'name': 'BounceInDown',
+        'name': 'FlipInEasyX',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var20 = {};
-    var6 = '100vh';
-    var20.translateY = var6;
     var4 = new Array(1);
-    var4[0] = var20;
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '90deg'
+    };
+    var4[0] = var6;
     var3.transform = var4;
     var1[0] = var3;
     var3 = {};
-    var20 = {};
-    var20.translateY = var10;
     var4 = new Array(1);
-    var4[0] = var20;
-    var3.transform = var4;
-    var1[55] = var3;
-    var3 = {};
-    var20 = {};
-    var20.translateY = var11;
-    var4 = new Array(1);
-    var4[0] = var20;
-    var3.transform = var4;
-    var1[70] = var3;
-    var3 = {};
-    var20 = {};
-    var20.translateY = var12;
-    var4 = new Array(1);
-    var4[0] = var20;
-    var3.transform = var4;
-    var1[85] = var3;
-    var3 = {};
-    var20 = {};
-    var20.translateY = var13;
-    var4 = new Array(1);
-    var4[0] = var20;
+    var6 = {
+        'perspective': '500px',
+        'rotateX': '0deg'
+    };
+    var4[0] = var6;
     var3.transform = var4;
     var1[100] = var3;
     var0.style = var1;
-    var5.BounceInDown = var0;
+    var5.FlipInEasyX = var0;
+    var0 = {
+        'name': 'FlipInEasyY',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '90deg'
+    };
+    var4[0] = var6;
+    var3.transform = var4;
+    var1[0] = var3;
+    var3 = {};
+    var4 = new Array(1);
+    var6 = {
+        'perspective': '500px',
+        'rotateY': '0deg'
+    };
+    var4[0] = var6;
+    var3.transform = var4;
+    var1[100] = var3;
+    var0.style = var1;
+    var5.FlipInEasyY = var0;
     var4 = {};
     var0 = {
-        'name': 'BounceOut',
+        'name': 'FlipOutYRight',
         'style': null,
-        'duration': 0.6
+        'duration': 0.3
     };
     var1 = {};
     var3 = {};
-    var20 = {};
-    var20.scale = var19;
-    var19 = new Array(1);
-    var19[0] = var20;
-    var3.transform = var19;
-    var1[0] = var3;
-    var3 = {};
-    var19 = {};
-    var19.scale = var18;
-    var18 = new Array(1);
-    var18[0] = var19;
-    var3.transform = var18;
-    var1[15] = var3;
-    var3 = {};
-    var18 = {};
-    var18.scale = var17;
-    var17 = new Array(1);
-    var17[0] = var18;
-    var3.transform = var17;
-    var1[30] = var3;
-    var3 = {};
-    var17 = {};
-    var17.scale = var16;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[45] = var3;
-    var3 = {};
-    var17 = {};
-    var16 = 0.1;
-    var17.scale = var16;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.BounceOut = var0;
-    var0 = {
-        'name': 'BounceOutRight',
-        'style': null,
-        'duration': 0.6
-    };
-    var1 = {};
-    var3 = {};
-    var17 = {};
-    var17.translateX = var13;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[0] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var12;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[15] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var11;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[30] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var10;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[45] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var6;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.BounceOutRight = var0;
-    var0 = {
-        'name': 'BounceOutLeft',
-        'style': null,
-        'duration': 0.6
-    };
-    var1 = {};
-    var3 = {};
-    var17 = {};
-    var17.translateX = var13;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[0] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var11;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[15] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var12;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[30] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var15;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[45] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateX = var14;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.BounceOutLeft = var0;
-    var0 = {
-        'name': 'BounceOutUp',
-        'style': null,
-        'duration': 0.6
-    };
-    var1 = {};
-    var3 = {};
-    var17 = {};
-    var17.translateY = var13;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[0] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateY = var11;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[15] = var3;
-    var3 = {};
-    var17 = {};
-    var17.translateY = var12;
-    var16 = new Array(1);
-    var16[0] = var17;
-    var3.transform = var16;
-    var1[30] = var3;
-    var3 = {};
-    var16 = {};
-    var16.translateY = var15;
-    var15 = new Array(1);
-    var15[0] = var16;
-    var3.transform = var15;
-    var1[45] = var3;
-    var3 = {};
-    var15 = {};
-    var15.translateY = var14;
-    var14 = new Array(1);
-    var14[0] = var15;
-    var3.transform = var14;
-    var1[100] = var3;
-    var0.style = var1;
-    var4.BounceOutUp = var0;
-    var0 = {
-        'name': 'BounceOutDown',
-        'style': null,
-        'duration': 0.6
-    };
-    var1 = {};
-    var3 = {};
-    var14 = {};
-    var14.translateY = var13;
-    var13 = new Array(1);
-    var13[0] = var14;
-    var3.transform = var13;
-    var1[0] = var3;
-    var3 = {};
-    var13 = {};
-    var13.translateY = var12;
-    var12 = new Array(1);
-    var12[0] = var13;
-    var3.transform = var12;
-    var1[15] = var3;
-    var3 = {};
-    var12 = {};
-    var12.translateY = var11;
-    var11 = new Array(1);
-    var11[0] = var12;
-    var3.transform = var11;
-    var1[30] = var3;
-    var3 = {};
-    var11 = {};
-    var11.translateY = var10;
-    var10 = new Array(1);
-    var10[0] = var11;
-    var3.transform = var10;
-    var1[45] = var3;
-    var3 = {};
-    var10 = {};
-    var10.translateY = var6;
     var6 = new Array(1);
-    var6[0] = var10;
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '90deg',
+        'translateX': '100%'
+    };
+    var6[0] = var7;
     var3.transform = var6;
     var1[100] = var3;
     var0.style = var1;
-    var4.BounceOutDown = var0;
+    var4.FlipOutYRight = var0;
+    var0 = {
+        'name': 'FlipOutYLeft',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg',
+        'translateX': '0%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '-90deg',
+        'translateX': '-100%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[100] = var3;
+    var0.style = var1;
+    var4.FlipOutYLeft = var0;
+    var0 = {
+        'name': 'FlipOutXUp',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '90deg',
+        'translateY': '-100%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[100] = var3;
+    var0.style = var1;
+    var4.FlipOutXUp = var0;
+    var0 = {
+        'name': 'FlipOutXDown',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg',
+        'translateY': '0%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '-90deg',
+        'translateY': '100%'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[100] = var3;
+    var0.style = var1;
+    var4.FlipOutXDown = var0;
+    var0 = {
+        'name': 'FlipOutEasyX',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '0deg'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateX': '90deg'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[100] = var3;
+    var0.style = var1;
+    var4.FlipOutEasyX = var0;
+    var0 = {
+        'name': 'FlipOutEasyY',
+        'style': null,
+        'duration': 0.3
+    };
+    var1 = {};
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '0deg'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[0] = var3;
+    var3 = {};
+    var6 = new Array(1);
+    var7 = {
+        'perspective': '500px',
+        'rotateY': '90deg'
+    };
+    var6[0] = var7;
+    var3.transform = var6;
+    var1[100] = var3;
+    var0.style = var1;
+    var4.FlipOutEasyY = var0;
     var3 = {};
     var1 = {};
+    var7 = 0;
     var6 = var9[var7];
     var0 = undefined;
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.BounceIn;
+    var6 = var5.FlipInYRight;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.BounceIn;
+    var6 = var5.FlipInYRight;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.BounceIn = var1;
+    var3.FlipInYRight = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.BounceInRight;
+    var6 = var5.FlipInYLeft;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.BounceInRight;
+    var6 = var5.FlipInYLeft;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.BounceInRight = var1;
+    var3.FlipInYLeft = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.BounceInLeft;
+    var6 = var5.FlipInXUp;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.BounceInLeft;
+    var6 = var5.FlipInXUp;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.BounceInLeft = var1;
+    var3.FlipInXUp = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.BounceInUp;
+    var6 = var5.FlipInXDown;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.BounceInUp;
+    var6 = var5.FlipInXDown;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.BounceInUp = var1;
+    var3.FlipInXDown = var1;
     var1 = {};
     var6 = var9[var7];
     var11 = var8.bind(var0)(var6);
     var10 = var11.convertAnimationObjectToKeyframes;
-    var6 = var5.BounceInDown;
+    var6 = var5.FlipInEasyX;
     var6 = var10.bind(var11)(var6);
     var1.style = var6;
-    var6 = var5.BounceInDown;
+    var6 = var5.FlipInEasyX;
     var6 = var6.duration;
     var1.duration = var6;
-    var3.BounceInDown = var1;
+    var3.FlipInEasyX = var1;
+    var1 = {};
+    var6 = var9[var7];
+    var11 = var8.bind(var0)(var6);
+    var10 = var11.convertAnimationObjectToKeyframes;
+    var6 = var5.FlipInEasyY;
+    var6 = var10.bind(var11)(var6);
+    var1.style = var6;
+    var6 = var5.FlipInEasyY;
+    var6 = var6.duration;
+    var1.duration = var6;
+    var3.FlipInEasyY = var1;
     var1 = {};
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.BounceOut;
+    var10 = var4.FlipOutYRight;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.BounceOut;
+    var10 = var4.FlipOutYRight;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.BounceOut = var6;
+    var1.FlipOutYRight = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.BounceOutRight;
+    var10 = var4.FlipOutYLeft;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.BounceOutRight;
+    var10 = var4.FlipOutYLeft;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.BounceOutRight = var6;
+    var1.FlipOutYLeft = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.BounceOutLeft;
+    var10 = var4.FlipOutXUp;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.BounceOutLeft;
+    var10 = var4.FlipOutXUp;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.BounceOutLeft = var6;
+    var1.FlipOutXUp = var6;
     var6 = {};
     var10 = var9[var7];
     var12 = var8.bind(var0)(var10);
     var11 = var12.convertAnimationObjectToKeyframes;
-    var10 = var4.BounceOutUp;
+    var10 = var4.FlipOutXDown;
     var10 = var11.bind(var12)(var10);
     var6.style = var10;
-    var10 = var4.BounceOutUp;
+    var10 = var4.FlipOutXDown;
     var10 = var10.duration;
     var6.duration = var10;
-    var1.BounceOutUp = var6;
+    var1.FlipOutXDown = var6;
+    var6 = {};
+    var10 = var9[var7];
+    var12 = var8.bind(var0)(var10);
+    var11 = var12.convertAnimationObjectToKeyframes;
+    var10 = var4.FlipOutEasyX;
+    var10 = var11.bind(var12)(var10);
+    var6.style = var10;
+    var10 = var4.FlipOutEasyX;
+    var10 = var10.duration;
+    var6.duration = var10;
+    var1.FlipOutEasyX = var6;
     var6 = {};
     var7 = var9[var7];
     var9 = var8.bind(var0)(var7);
     var8 = var9.convertAnimationObjectToKeyframes;
-    var7 = var4.BounceOutDown;
+    var7 = var4.FlipOutEasyY;
     var7 = var8.bind(var9)(var7);
     var6.style = var7;
-    var7 = var4.BounceOutDown;
+    var7 = var4.FlipOutEasyY;
     var7 = var7.duration;
     var6.duration = var7;
-    var1.BounceOutDown = var6;
-    var2.BounceInData = var5;
-    var2.BounceOutData = var4;
-    var2.BounceIn = var3;
-    var2.BounceOut = var1;
+    var1.FlipOutEasyY = var6;
+    var2.FlipInData = var5;
+    var2.FlipOutData = var4;
+    var2.FlipIn = var3;
+    var2.FlipOut = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3781]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3780]);

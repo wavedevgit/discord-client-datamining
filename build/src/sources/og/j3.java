@@ -5,37 +5,37 @@ import yi.c;
 final class j3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j3 f42139a = new j3();
+    static final j3 f42187a = new j3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42140b;
+    private static final yi.c f42188b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42141c;
+    private static final yi.c f42189c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42142d;
+    private static final yi.c f42190d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42143e;
+    private static final yi.c f42191e;
 
     static {
         c.b a10 = yi.c.a("imageFormat");
         f fVar = new f();
         fVar.a(1);
-        f42140b = a10.b(fVar.b()).a();
+        f42188b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("originalImageSize");
         f fVar2 = new f();
         fVar2.a(2);
-        f42141c = a11.b(fVar2.b()).a();
+        f42189c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("compressedImageSize");
         f fVar3 = new f();
         fVar3.a(3);
-        f42142d = a12.b(fVar3.b()).a();
+        f42190d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("isOdmlImage");
         f fVar4 = new f();
         fVar4.a(4);
-        f42143e = a13.b(fVar4.b()).a();
+        f42191e = a13.b(fVar4.b()).a();
     }
 
     private j3() {

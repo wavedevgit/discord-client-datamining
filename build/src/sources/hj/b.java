@@ -17,17 +17,17 @@ import ri.e;
 public class b {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f26038c = {"*", "FCM", "GCM", ""};
+    private static final String[] f26086c = {"*", "FCM", "GCM", ""};
 
     /* renamed from: a  reason: collision with root package name */
-    private final SharedPreferences f26039a;
+    private final SharedPreferences f26087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26040b;
+    private final String f26088b;
 
     public b(e eVar) {
-        this.f26039a = eVar.j().getSharedPreferences("com.google.android.gms.appid", 0);
-        this.f26040b = b(eVar);
+        this.f26087a = eVar.j().getSharedPreferences("com.google.android.gms.appid", 0);
+        this.f26088b = b(eVar);
     }
 
     private String a(String str, String str2) {
@@ -84,16 +84,16 @@ public class b {
 
     private String g() {
         String string;
-        synchronized (this.f26039a) {
-            string = this.f26039a.getString("|S|id", null);
+        synchronized (this.f26087a) {
+            string = this.f26087a.getString("|S|id", null);
         }
         return string;
     }
 
     private String h() {
-        synchronized (this.f26039a) {
+        synchronized (this.f26087a) {
             try {
-                String string = this.f26039a.getString("|S||P|", null);
+                String string = this.f26087a.getString("|S||P|", null);
                 if (string == null) {
                     return null;
                 }
@@ -109,7 +109,7 @@ public class b {
     }
 
     public String f() {
-        synchronized (this.f26039a) {
+        synchronized (this.f26087a) {
             try {
                 String g10 = g();
                 if (g10 != null) {
@@ -123,10 +123,10 @@ public class b {
     }
 
     public String i() {
-        synchronized (this.f26039a) {
+        synchronized (this.f26087a) {
             try {
-                for (String str : f26038c) {
-                    String string = this.f26039a.getString(a(this.f26040b, str), null);
+                for (String str : f26086c) {
+                    String string = this.f26087a.getString(a(this.f26088b, str), null);
                     if (string != null && !string.isEmpty()) {
                         if (string.startsWith("{")) {
                             string = d(string);

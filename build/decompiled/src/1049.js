@@ -36,14 +36,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = '_processEntry';
         var0.key = var4;
         var1 = function arg0() {
-            _fun10803: for (var _fun10803_ip = 0;;) switch (_fun10803_ip) {
+            _fun10805: for (var _fun10805_ip = 0;;) switch (_fun10805_ip) {
                 case 0:
                     var3 = this;
                     var2 = var3._onBeforeProcessingEntry;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun10803_ip = 29;
-                        continue _fun10803
+                        _fun10805_ip = 29;
+                        continue _fun10805
                     }
                 case 15:
                     var1 = var2.call;

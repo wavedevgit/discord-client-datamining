@@ -15,25 +15,25 @@ import sa.o;
 public class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f46565a;
+    private final c f46613a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f46566b;
+    private final c f46614b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f46567c;
+    private final c f46615c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wa.d f46568d;
+    private final wa.d f46616d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Supplier f46569e;
+    private final Supplier f46617e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final c f46570f;
+    private final c f46618f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f46571g;
+    private final Map f46619g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements c {
@@ -44,7 +44,7 @@ public class b implements c {
         public sa.e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
             ColorSpace colorSpace;
             fa.c z10 = kVar.z();
-            if (((Boolean) b.this.f46569e.get()).booleanValue()) {
+            if (((Boolean) b.this.f46617e.get()).booleanValue()) {
                 colorSpace = imageDecodeOptions.f10337k;
                 if (colorSpace == null) {
                     colorSpace = kVar.s();
@@ -78,7 +78,7 @@ public class b implements c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public sa.e h(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
-        c cVar = this.f46567c;
+        c cVar = this.f46615c;
         if (cVar != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
@@ -98,16 +98,16 @@ public class b implements c {
             z10 = fa.e.d(C);
             kVar.A1(z10);
         }
-        Map map = this.f46571g;
+        Map map = this.f46619g;
         if (map != null && (cVar = (c) map.get(z10)) != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
-        return this.f46570f.a(kVar, i10, oVar, imageDecodeOptions);
+        return this.f46618f.a(kVar, i10, oVar, imageDecodeOptions);
     }
 
     public sa.e d(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
         c cVar;
-        if (!imageDecodeOptions.f10333g && (cVar = this.f46566b) != null) {
+        if (!imageDecodeOptions.f10333g && (cVar = this.f46614b) != null) {
             return cVar.a(kVar, i10, oVar, imageDecodeOptions);
         }
         return g(kVar, imageDecodeOptions);
@@ -116,7 +116,7 @@ public class b implements c {
     public sa.e e(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
         c cVar;
         if (kVar.getWidth() != -1 && kVar.getHeight() != -1) {
-            if (!imageDecodeOptions.f10333g && (cVar = this.f46565a) != null) {
+            if (!imageDecodeOptions.f10333g && (cVar = this.f46613a) != null) {
                 return cVar.a(kVar, i10, oVar, imageDecodeOptions);
             }
             return g(kVar, imageDecodeOptions);
@@ -125,7 +125,7 @@ public class b implements c {
     }
 
     public sa.f f(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions, ColorSpace colorSpace) {
-        CloseableReference b10 = this.f46568d.b(kVar, imageDecodeOptions.f10334h, null, i10, colorSpace);
+        CloseableReference b10 = this.f46616d.b(kVar, imageDecodeOptions.f10334h, null, i10, colorSpace);
         try {
             ab.b.a(null, b10);
             j.g(b10);
@@ -138,11 +138,11 @@ public class b implements c {
     }
 
     public sa.f g(k kVar, ImageDecodeOptions imageDecodeOptions) {
-        CloseableReference a10 = this.f46568d.a(kVar, imageDecodeOptions.f10334h, null, imageDecodeOptions.f10337k);
+        CloseableReference a10 = this.f46616d.a(kVar, imageDecodeOptions.f10334h, null, imageDecodeOptions.f10337k);
         try {
             ab.b.a(null, a10);
             j.g(a10);
-            sa.f M0 = sa.f.M0(a10, n.f49850d, kVar.p1(), kVar.a1());
+            sa.f M0 = sa.f.M0(a10, n.f49898d, kVar.p1(), kVar.a1());
             M0.p("is_rounded", false);
             return M0;
         } finally {
@@ -151,16 +151,16 @@ public class b implements c {
     }
 
     public b(c cVar, c cVar2, c cVar3, wa.d dVar, Map map) {
-        this(cVar, cVar2, cVar3, dVar, map, m.f41557b);
+        this(cVar, cVar2, cVar3, dVar, map, m.f41605b);
     }
 
     public b(c cVar, c cVar2, c cVar3, wa.d dVar, Map map, Supplier supplier) {
-        this.f46570f = new a();
-        this.f46565a = cVar;
-        this.f46566b = cVar2;
-        this.f46567c = cVar3;
-        this.f46568d = dVar;
-        this.f46571g = map;
-        this.f46569e = supplier;
+        this.f46618f = new a();
+        this.f46613a = cVar;
+        this.f46614b = cVar2;
+        this.f46615c = cVar3;
+        this.f46616d = dVar;
+        this.f46619g = map;
+        this.f46617e = supplier;
     }
 }

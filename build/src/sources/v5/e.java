@@ -5,10 +5,10 @@ import w5.c;
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52185a = c.a.a("ef");
+    private static final c.a f52233a = c.a.a("ef");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52186b = c.a.a("ty", "v");
+    private static final c.a f52234b = c.a.a("ty", "v");
 
     private static s5.a a(w5.c cVar, l5.i iVar) {
         cVar.u();
@@ -16,7 +16,7 @@ abstract class e {
         while (true) {
             boolean z10 = false;
             while (cVar.hasNext()) {
-                int p10 = cVar.p(f52186b);
+                int p10 = cVar.p(f52234b);
                 if (p10 != 0) {
                     if (p10 != 1) {
                         cVar.s();
@@ -39,7 +39,7 @@ abstract class e {
     public static s5.a b(w5.c cVar, l5.i iVar) {
         s5.a aVar = null;
         while (cVar.hasNext()) {
-            if (cVar.p(f52185a) != 0) {
+            if (cVar.p(f52233a) != 0) {
                 cVar.s();
                 cVar.S();
             } else {

@@ -488,7 +488,7 @@ public final class NativeAnimatedModule extends NativeAnimatedModuleSpec impleme
         while (it.hasNext()) {
             putArray.add(((Number) it.next()).intValue());
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -12,67 +12,67 @@ import ts.h0;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m f48106a = new m(-1, null, null, 0);
+    private static final m f48154a = new m(-1, null, null, 0);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final int f48107b;
+    public static final int f48155b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f48108c;
+    private static final int f48156c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e0 f48109d;
+    public static final e0 f48157d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e0 f48110e;
+    private static final e0 f48158e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e0 f48111f;
+    private static final e0 f48159f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final e0 f48112g;
+    private static final e0 f48160g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final e0 f48113h;
+    private static final e0 f48161h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e0 f48114i;
+    private static final e0 f48162i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final e0 f48115j;
+    private static final e0 f48163j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final e0 f48116k;
+    private static final e0 f48164k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final e0 f48117l;
+    private static final e0 f48165l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final e0 f48118m;
+    private static final e0 f48166m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final e0 f48119n;
+    private static final e0 f48167n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final e0 f48120o;
+    private static final e0 f48168o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final e0 f48121p;
+    private static final e0 f48169p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final e0 f48122q;
+    private static final e0 f48170q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final e0 f48123r;
+    private static final e0 f48171r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final e0 f48124s;
+    private static final e0 f48172s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f48125d = new a();
+        public static final a f48173d = new a();
 
         a() {
             super(2, f.class, "createSegment", "createSegment(JLkotlinx/coroutines/channels/ChannelSegment;)Lkotlinx/coroutines/channels/ChannelSegment;", 1);
@@ -92,25 +92,25 @@ public abstract class f {
         int e10;
         int e11;
         e10 = h0.e("kotlinx.coroutines.bufferedChannel.segmentSize", 32, 0, 0, 12, null);
-        f48107b = e10;
+        f48155b = e10;
         e11 = h0.e("kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 10000, 0, 0, 12, null);
-        f48108c = e11;
-        f48109d = new e0("BUFFERED");
-        f48110e = new e0("SHOULD_BUFFER");
-        f48111f = new e0("S_RESUMING_BY_RCV");
-        f48112g = new e0("RESUMING_BY_EB");
-        f48113h = new e0("POISONED");
-        f48114i = new e0("DONE_RCV");
-        f48115j = new e0("INTERRUPTED_SEND");
-        f48116k = new e0("INTERRUPTED_RCV");
-        f48117l = new e0("CHANNEL_CLOSED");
-        f48118m = new e0("SUSPEND");
-        f48119n = new e0("SUSPEND_NO_WAITER");
-        f48120o = new e0("FAILED");
-        f48121p = new e0("NO_RECEIVE_RESULT");
-        f48122q = new e0("CLOSE_HANDLER_CLOSED");
-        f48123r = new e0("CLOSE_HANDLER_INVOKED");
-        f48124s = new e0("NO_CLOSE_CAUSE");
+        f48156c = e11;
+        f48157d = new e0("BUFFERED");
+        f48158e = new e0("SHOULD_BUFFER");
+        f48159f = new e0("S_RESUMING_BY_RCV");
+        f48160g = new e0("RESUMING_BY_EB");
+        f48161h = new e0("POISONED");
+        f48162i = new e0("DONE_RCV");
+        f48163j = new e0("INTERRUPTED_SEND");
+        f48164k = new e0("INTERRUPTED_RCV");
+        f48165l = new e0("CHANNEL_CLOSED");
+        f48166m = new e0("SUSPEND");
+        f48167n = new e0("SUSPEND_NO_WAITER");
+        f48168o = new e0("FAILED");
+        f48169p = new e0("NO_RECEIVE_RESULT");
+        f48170q = new e0("CLOSE_HANDLER_CLOSED");
+        f48171r = new e0("CLOSE_HANDLER_INVOKED");
+        f48172s = new e0("NO_CLOSE_CAUSE");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -164,10 +164,10 @@ public abstract class f {
     }
 
     public static final KFunction y() {
-        return a.f48125d;
+        return a.f48173d;
     }
 
     public static final e0 z() {
-        return f48117l;
+        return f48165l;
     }
 }

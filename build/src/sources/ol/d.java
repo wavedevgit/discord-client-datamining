@@ -3,18 +3,18 @@ package ol;
 public abstract class d extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f43209d;
+    private String f43257d;
 
     public d(Throwable th2) {
         super(th2);
     }
 
     public void a(String str) {
-        this.f43209d = str;
+        this.f43257d = str;
     }
 
     @Override // java.lang.Throwable
     public String toString() {
-        return super.toString() + "Media transformation failed for job id: " + this.f43209d;
+        return super.toString() + "Media transformation failed for job id: " + this.f43257d;
     }
 }

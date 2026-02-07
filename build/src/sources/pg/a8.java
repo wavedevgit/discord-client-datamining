@@ -5,30 +5,30 @@ import yi.c;
 final class a8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a8 f43922a = new a8();
+    static final a8 f43970a = new a8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f43923b;
+    private static final yi.c f43971b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f43924c;
+    private static final yi.c f43972c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f43925d;
+    private static final yi.c f43973d;
 
     static {
         c.b a10 = yi.c.a("language");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43923b = a10.b(s1Var.b()).a();
+        f43971b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("durationMs");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43924c = a11.b(s1Var2.b()).a();
+        f43972c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43925d = a12.b(s1Var3.b()).a();
+        f43973d = a12.b(s1Var3.b()).a();
     }
 
     private a8() {

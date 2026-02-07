@@ -3,22 +3,22 @@ package om;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f43230a;
+    private final double f43278a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f43231b;
+    private final double f43279b;
 
     public a(double d10, double d11) {
-        this.f43230a = d10;
-        this.f43231b = d11;
+        this.f43278a = d10;
+        this.f43279b = d11;
     }
 
     public final double a() {
-        return this.f43231b;
+        return this.f43279b;
     }
 
     public final double b() {
-        return this.f43230a;
+        return this.f43278a;
     }
 
     public boolean equals(Object obj) {
@@ -29,19 +29,19 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (Double.compare(this.f43230a, aVar.f43230a) == 0 && Double.compare(this.f43231b, aVar.f43231b) == 0) {
+        if (Double.compare(this.f43278a, aVar.f43278a) == 0 && Double.compare(this.f43279b, aVar.f43279b) == 0) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Double.hashCode(this.f43230a) * 31) + Double.hashCode(this.f43231b);
+        return (Double.hashCode(this.f43278a) * 31) + Double.hashCode(this.f43279b);
     }
 
     public String toString() {
-        double d10 = this.f43230a;
-        double d11 = this.f43231b;
+        double d10 = this.f43278a;
+        double d11 = this.f43279b;
         return "Dimensions(width=" + d10 + ", height=" + d11 + ")";
     }
 }

@@ -5,10 +5,10 @@ import kotlin.jvm.internal.LongCompanionObject;
 public abstract class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ts.e0 f43526a = new ts.e0("REMOVED_TASK");
+    private static final ts.e0 f43574a = new ts.e0("REMOVED_TASK");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ts.e0 f43527b = new ts.e0("CLOSED_EMPTY");
+    private static final ts.e0 f43575b = new ts.e0("CLOSED_EMPTY");
 
     public static final long c(long j10) {
         if (j10 <= 0) {

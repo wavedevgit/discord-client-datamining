@@ -291,7 +291,7 @@ abstract class h {
 
     public static void k(int i10, v vVar, Format.b bVar) {
         if (i10 == 1 && vVar.a()) {
-            bVar.P(vVar.f50572a).Q(vVar.f50573b);
+            bVar.P(vVar.f50620a).Q(vVar.f50621b);
         }
     }
 
@@ -305,7 +305,7 @@ abstract class h {
                 Metadata.b d10 = metadata2.d(i11);
                 if (d10 instanceof md.a) {
                     md.a aVar = (md.a) d10;
-                    if (aVar.f37049d.equals("com.android.capture.fps")) {
+                    if (aVar.f37097d.equals("com.android.capture.fps")) {
                         if (i10 == 2) {
                             metadata = metadata.a(aVar);
                         }

@@ -5,7 +5,7 @@ import yi.c;
 final class a8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a8 f46938a = new a8();
+    static final a8 f46986a = new a8();
 
     static {
         c.b a10 = yi.c.a("isChargingRequired");

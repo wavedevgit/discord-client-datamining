@@ -5,14 +5,14 @@ import java.io.Serializable;
 final class f0 extends i0 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final f0 f40768d = new f0();
+    static final f0 f40816d = new f0();
 
     private f0() {
     }
 
     @Override // ni.i0
     public i0 g() {
-        return n0.f40825d;
+        return n0.f40873d;
     }
 
     @Override // ni.i0, java.util.Comparator

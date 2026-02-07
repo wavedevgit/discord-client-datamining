@@ -22,7 +22,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot0 = var2;
     var0 = function arg0, arg1() {
-        _fun10787: for (var _fun10787_ip = 0;;) switch (_fun10787_ip) {
+        _fun10789: for (var _fun10789_ip = 0;;) switch (_fun10789_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
@@ -30,8 +30,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.get;
                 var3 = var3.bind(var4)(var2);
                 if (var3) {
-                    _fun10787_ip = 61;
-                    continue _fun10787
+                    _fun10789_ip = 61;
+                    continue _fun10789
                 }
             case 26:
                 var4 = _closure1_slot0;

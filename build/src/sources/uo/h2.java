@@ -3,5 +3,5 @@ package uo;
 public abstract class h2 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f51960a = 2131887119;
+    public static int f52008a = 2131887118;
 }

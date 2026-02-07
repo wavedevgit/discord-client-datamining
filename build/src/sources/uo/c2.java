@@ -9,7 +9,7 @@ public abstract class c2 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51889a;
+        public static final /* synthetic */ int[] f51937a;
 
         static {
             int[] iArr = new int[CheckInquiryResponse.PollingMode.values().length];
@@ -25,22 +25,22 @@ public abstract class c2 {
                 iArr[CheckInquiryResponse.PollingMode.None.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f51889a = iArr;
+            f51937a = iArr;
         }
     }
 
     public static final b2 a(CheckInquiryResponse.PollingMode pollingMode) {
         Intrinsics.checkNotNullParameter(pollingMode, "<this>");
-        int i10 = a.f51889a[pollingMode.ordinal()];
+        int i10 = a.f51937a[pollingMode.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return b2.f51882e;
+                    return b2.f51930e;
                 }
                 throw new qr.p();
             }
-            return b2.f51881d;
+            return b2.f51929d;
         }
-        return b2.f51882e;
+        return b2.f51930e;
     }
 }

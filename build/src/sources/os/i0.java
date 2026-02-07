@@ -9,7 +9,7 @@ import kotlin.time.Duration;
 public abstract class i0 {
     public static final Object a(long j10, Continuation continuation) {
         if (j10 <= 0) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
         eVar.H();
@@ -23,7 +23,7 @@ public abstract class i0 {
         if (B == wr.b.f()) {
             return B;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Object b(long j10, Continuation continuation) {
@@ -31,12 +31,12 @@ public abstract class i0 {
         if (a10 == wr.b.f()) {
             return a10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final kotlinx.coroutines.k c(CoroutineContext coroutineContext) {
         kotlinx.coroutines.k kVar;
-        CoroutineContext.Element m10 = coroutineContext.m(kotlin.coroutines.d.f32080g);
+        CoroutineContext.Element m10 = coroutineContext.m(kotlin.coroutines.d.f32128g);
         if (m10 instanceof kotlinx.coroutines.k) {
             kVar = (kotlinx.coroutines.k) m10;
         } else {
@@ -51,7 +51,7 @@ public abstract class i0 {
     public static final long d(long j10) {
         boolean H = Duration.H(j10);
         if (H) {
-            return Duration.t(Duration.I(j10, kotlin.time.b.t(999999L, ms.b.f38281e)));
+            return Duration.t(Duration.I(j10, kotlin.time.b.t(999999L, ms.b.f38329e)));
         }
         if (!H) {
             return 0L;

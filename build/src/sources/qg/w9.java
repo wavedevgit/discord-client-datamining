@@ -5,7 +5,7 @@ import yi.c;
 final class w9 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w9 f47697a = new w9();
+    static final w9 f47745a = new w9();
 
     static {
         c.b a10 = yi.c.a("maxLabels");

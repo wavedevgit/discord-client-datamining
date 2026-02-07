@@ -19,10 +19,10 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class m implements bn.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f26350b;
+    private final ActivityResultLauncher f26398b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f26351c;
+    private final Context f26399c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -36,7 +36,7 @@ public final class m implements bn.o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f26352a = new a();
+            public static final a f26400a = new a();
 
             private a() {
                 super(null);
@@ -63,7 +63,7 @@ public final class m implements bn.o<b> {
         public static final class C0365b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0365b f26353a = new C0365b();
+            public static final C0365b f26401a = new C0365b();
 
             private C0365b() {
                 super(null);
@@ -89,7 +89,7 @@ public final class m implements bn.o<b> {
         public static final class c extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final c f26354a = new c();
+            public static final c f26402a = new c();
 
             private c() {
                 super(null);
@@ -123,43 +123,43 @@ public final class m implements bn.o<b> {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f26355d;
+        Object f26403d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f26356e;
+        Object f26404e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f26357i;
+        int f26405i;
 
         /* renamed from: o  reason: collision with root package name */
-        private /* synthetic */ Object f26358o;
+        private /* synthetic */ Object f26406o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f26360d;
+            final /* synthetic */ FlowCollector f26408d;
 
             a(FlowCollector flowCollector) {
-                this.f26360d = flowCollector;
+                this.f26408d = flowCollector;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(d.a aVar, Continuation continuation) {
                 if (aVar != null && aVar.b() == -1) {
-                    Object emit = this.f26360d.emit(b.c.f26354a, continuation);
+                    Object emit = this.f26408d.emit(b.c.f26402a, continuation);
                     if (emit == wr.b.f()) {
                         return emit;
                     }
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
-                Object emit2 = this.f26360d.emit(b.a.f26352a, continuation);
+                Object emit2 = this.f26408d.emit(b.a.f26400a, continuation);
                 if (emit2 == wr.b.f()) {
                     return emit2;
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -168,20 +168,20 @@ public final class m implements bn.o<b> {
         public static final class b implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f26361d;
+            final /* synthetic */ CancellableContinuation f26409d;
 
             b(CancellableContinuation cancellableContinuation) {
-                this.f26361d = cancellableContinuation;
+                this.f26409d = cancellableContinuation;
             }
 
             public final void a(ug.e eVar) {
-                this.f26361d.resumeWith(Result.b(Result.a(Result.b(eVar))));
+                this.f26409d.resumeWith(Result.b(Result.a(Result.b(eVar))));
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((ug.e) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -191,17 +191,17 @@ public final class m implements bn.o<b> {
         public static final class C0366c implements yg.f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f26362a;
+            final /* synthetic */ CancellableContinuation f26410a;
 
             C0366c(CancellableContinuation cancellableContinuation) {
-                this.f26362a = cancellableContinuation;
+                this.f26410a = cancellableContinuation;
             }
 
             @Override // yg.f
             public final void onFailure(Exception exception) {
                 Intrinsics.checkNotNullParameter(exception, "exception");
-                CancellableContinuation cancellableContinuation = this.f26362a;
-                Result.a aVar = Result.f32005e;
+                CancellableContinuation cancellableContinuation = this.f26410a;
+                Result.a aVar = Result.f32053e;
                 cancellableContinuation.resumeWith(Result.b(Result.a(Result.b(kotlin.c.a(exception)))));
             }
         }
@@ -213,7 +213,7 @@ public final class m implements bn.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f26358o = obj;
+            cVar.f26406o = obj;
             return cVar;
         }
 
@@ -247,7 +247,7 @@ public final class m implements bn.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -256,24 +256,24 @@ public final class m implements bn.o<b> {
     public static final class d implements yg.g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ Function1 f26363a;
+        private final /* synthetic */ Function1 f26411a;
 
         d(Function1 function) {
             Intrinsics.checkNotNullParameter(function, "function");
-            this.f26363a = function;
+            this.f26411a = function;
         }
 
         @Override // yg.g
         public final /* synthetic */ void onSuccess(Object obj) {
-            this.f26363a.invoke(obj);
+            this.f26411a.invoke(obj);
         }
     }
 
     public m(ActivityResultLauncher resolvableApiLauncher, Context context) {
         Intrinsics.checkNotNullParameter(resolvableApiLauncher, "resolvableApiLauncher");
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f26350b = resolvableApiLauncher;
-        this.f26351c = context;
+        this.f26398b = resolvableApiLauncher;
+        this.f26399c = context;
     }
 
     @Override // bn.o

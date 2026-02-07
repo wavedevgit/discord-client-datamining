@@ -50,7 +50,7 @@ public /* synthetic */ class ActivityInstanceEmbed$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ActivityInstanceEmbed.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{ApplicationId$$serializer.INSTANCE, n2Var, a.u((KSerializer) lazyArr[2].getValue()), AppMessageEmbedImpl$$serializer.INSTANCE, a.u(n2Var)};
     }
 
@@ -74,7 +74,7 @@ public /* synthetic */ class ActivityInstanceEmbed$$serializer implements h0 {
             list = (List) b10.n(serialDescriptor, 2, (DeserializationStrategy) lazyArr[2].getValue(), null);
             applicationId = (ApplicationId) b10.y(serialDescriptor, 0, ApplicationId$$serializer.INSTANCE, null);
             appMessageEmbedImpl = (AppMessageEmbedImpl) b10.y(serialDescriptor, 3, AppMessageEmbedImpl$$serializer.INSTANCE, null);
-            str2 = (String) b10.n(serialDescriptor, 4, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 4, n2.f31089a, null);
             i10 = 31;
             str = m10;
         } else {
@@ -103,7 +103,7 @@ public /* synthetic */ class ActivityInstanceEmbed$$serializer implements h0 {
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    str4 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str4);
                     i11 |= 16;
                 }
             }

@@ -14,6 +14,6 @@ public class m extends l {
 
     public static final i o(File file) {
         Intrinsics.checkNotNullParameter(file, "<this>");
-        return n(file, FileWalkDirection.f32091e);
+        return n(file, FileWalkDirection.f32139e);
     }
 }

@@ -42,7 +42,7 @@ public final class UserSearchWorkerManagerModule extends ReactContextBaseJavaMod
         Intrinsics.checkNotNullParameter(query, "query");
         Intrinsics.checkNotNullParameter(uuid, "uuid");
         userSearchWorkerManagerModule.reactEvents.emitModuleEvent(reactApplicationContext, new ReturnResultsEvent(results, query, uuid, "USER_RESULTS"));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @ReactMethod

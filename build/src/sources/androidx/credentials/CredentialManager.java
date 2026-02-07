@@ -54,7 +54,7 @@ public interface CredentialManager {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         public final void invoke(Throwable th2) {
@@ -78,7 +78,7 @@ public interface CredentialManager {
             Intrinsics.checkNotNullParameter(e10, "e");
             if (this.f3944a.a()) {
                 CancellableContinuation cancellableContinuation = this.f3944a;
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 cancellableContinuation.resumeWith(Result.b(kotlin.c.a(e10)));
             }
         }
@@ -109,7 +109,7 @@ public interface CredentialManager {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         public final void invoke(Throwable th2) {
@@ -133,7 +133,7 @@ public interface CredentialManager {
             Intrinsics.checkNotNullParameter(e10, "e");
             if (this.f3946a.a()) {
                 CancellableContinuation cancellableContinuation = this.f3946a;
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 cancellableContinuation.resumeWith(Result.b(kotlin.c.a(e10)));
             }
         }

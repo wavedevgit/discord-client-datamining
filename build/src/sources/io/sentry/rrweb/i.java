@@ -14,31 +14,31 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class i extends b implements w1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28811i;
+    private String f28859i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28812o;
+    private String f28860o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f28813p;
+    private String f28861p;
 
     /* renamed from: q  reason: collision with root package name */
-    private double f28814q;
+    private double f28862q;
 
     /* renamed from: r  reason: collision with root package name */
-    private double f28815r;
+    private double f28863r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Map f28816s;
+    private Map f28864s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f28817t;
+    private Map f28865t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f28818u;
+    private Map f28866u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f28819v;
+    private Map f28867v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -59,7 +59,7 @@ public final class i extends b implements w1 {
                         if (q12 == null) {
                             q12 = "";
                         }
-                        iVar.f28811i = q12;
+                        iVar.f28859i = q12;
                     }
                 } else {
                     d(iVar, e3Var, iLogger);
@@ -110,23 +110,23 @@ public final class i extends b implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        iVar.f28813p = e3Var.q1();
+                        iVar.f28861p = e3Var.q1();
                         break;
                     case 1:
-                        iVar.f28815r = e3Var.nextDouble();
+                        iVar.f28863r = e3Var.nextDouble();
                         break;
                     case 2:
-                        iVar.f28814q = e3Var.nextDouble();
+                        iVar.f28862q = e3Var.nextDouble();
                         break;
                     case 3:
-                        iVar.f28812o = e3Var.q1();
+                        iVar.f28860o = e3Var.q1();
                         break;
                     case 4:
                         Map b10 = io.sentry.util.c.b((Map) e3Var.U1());
                         if (b10 == null) {
                             break;
                         } else {
-                            iVar.f28816s = b10;
+                            iVar.f28864s = b10;
                             break;
                         }
                     default:
@@ -170,18 +170,18 @@ public final class i extends b implements w1 {
 
     public i() {
         super(c.Custom);
-        this.f28811i = "performanceSpan";
+        this.f28859i = "performanceSpan";
     }
 
     private void m(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("tag").f(this.f28811i);
+        f3Var.e("tag").f(this.f28859i);
         f3Var.e("payload");
         n(f3Var, iLogger);
-        Map map = this.f28819v;
+        Map map = this.f28867v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28819v.get(str);
+                Object obj = this.f28867v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -191,21 +191,21 @@ public final class i extends b implements w1 {
 
     private void n(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28812o != null) {
-            f3Var.e("op").f(this.f28812o);
+        if (this.f28860o != null) {
+            f3Var.e("op").f(this.f28860o);
         }
-        if (this.f28813p != null) {
-            f3Var.e("description").f(this.f28813p);
+        if (this.f28861p != null) {
+            f3Var.e("description").f(this.f28861p);
         }
-        f3Var.e("startTimestamp").j(iLogger, BigDecimal.valueOf(this.f28814q));
-        f3Var.e("endTimestamp").j(iLogger, BigDecimal.valueOf(this.f28815r));
-        if (this.f28816s != null) {
-            f3Var.e("data").j(iLogger, this.f28816s);
+        f3Var.e("startTimestamp").j(iLogger, BigDecimal.valueOf(this.f28862q));
+        f3Var.e("endTimestamp").j(iLogger, BigDecimal.valueOf(this.f28863r));
+        if (this.f28864s != null) {
+            f3Var.e("data").j(iLogger, this.f28864s);
         }
-        Map map = this.f28818u;
+        Map map = this.f28866u;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28818u.get(str);
+                Object obj = this.f28866u.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -220,23 +220,23 @@ public final class i extends b implements w1 {
         } else {
             concurrentHashMap = new ConcurrentHashMap(map);
         }
-        this.f28816s = concurrentHashMap;
+        this.f28864s = concurrentHashMap;
     }
 
     public void p(Map map) {
-        this.f28819v = map;
+        this.f28867v = map;
     }
 
     public void q(String str) {
-        this.f28813p = str;
+        this.f28861p = str;
     }
 
     public void r(double d10) {
-        this.f28815r = d10;
+        this.f28863r = d10;
     }
 
     public void s(String str) {
-        this.f28812o = str;
+        this.f28860o = str;
     }
 
     @Override // io.sentry.w1
@@ -245,10 +245,10 @@ public final class i extends b implements w1 {
         new b.C0406b().a(this, f3Var, iLogger);
         f3Var.e("data");
         m(f3Var, iLogger);
-        Map map = this.f28817t;
+        Map map = this.f28865t;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28817t.get(str);
+                Object obj = this.f28865t.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -257,14 +257,14 @@ public final class i extends b implements w1 {
     }
 
     public void t(Map map) {
-        this.f28818u = map;
+        this.f28866u = map;
     }
 
     public void u(double d10) {
-        this.f28814q = d10;
+        this.f28862q = d10;
     }
 
     public void v(Map map) {
-        this.f28817t = map;
+        this.f28865t = map;
     }
 }

@@ -57,13 +57,13 @@ public final class ExecutedCommandBackgroundStyles {
 
     public static final /* synthetic */ void write$Self$chat_release(ExecutedCommandBackgroundStyles executedCommandBackgroundStyles, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || executedCommandBackgroundStyles.color != null) {
-            compositeEncoder.l(serialDescriptor, 0, p0.f31057a, executedCommandBackgroundStyles.color);
+            compositeEncoder.l(serialDescriptor, 0, p0.f31105a, executedCommandBackgroundStyles.color);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || executedCommandBackgroundStyles.borderRadius != null) {
-            compositeEncoder.l(serialDescriptor, 1, p0.f31057a, executedCommandBackgroundStyles.borderRadius);
+            compositeEncoder.l(serialDescriptor, 1, p0.f31105a, executedCommandBackgroundStyles.borderRadius);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || !Intrinsics.areEqual(executedCommandBackgroundStyles.spaceAround, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 2, h.f31005a, executedCommandBackgroundStyles.spaceAround);
+            compositeEncoder.l(serialDescriptor, 2, h.f31053a, executedCommandBackgroundStyles.spaceAround);
         }
     }
 

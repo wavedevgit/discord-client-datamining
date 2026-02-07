@@ -22,7 +22,7 @@ public abstract class ComponentUnionSerializer<T> implements KSerializer {
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return ht.j.b(getUnionName(), e.i.f26478a);
+        return ht.j.b(getUnionName(), e.i.f26526a);
     }
 
     @NotNull

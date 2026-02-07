@@ -1,108 +1,323 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = undefined;
-    var2.default = var0;
-    var3 = {};
-    var4 = 'http://localhost:8081';
-    var3.url = var4;
-    var _closure1_slot0 = var3;
-    var1 = function() {
-        _fun97604: for (var _fun97604_ip = 0;;) switch (_fun97604_ip) {
-            case 0:
-                var4 = undefined;
-                var3 = undefined;
-                var1 = arguments.length;
-                var2 = 0;
-                if (!(var1 > var2)) {
-                    _fun97604_ip = 23;
-                    continue _fun97604
-                }
-            case 15:
-                var1 = arguments[var2];
-                if (!(var4 === var1)) {
-                    _fun97604_ip = 27;
-                    continue _fun97604
-                }
-            case 23:
-                var1 = {};
-                _fun97604_ip = 31;
-                continue _fun97604;
-            case 27:
-                var1 = arguments[var2];
-            case 31:
-                var _closure2_slot0 = var1;
-                var0 = function() { // Environment: var0
-                    var0 = global;
-                    var5 = var0.Object;
-                    var4 = var5.assign;
-                    var3 = _closure1_slot0;
-                    var2 = _closure2_slot0;
-                    var0 = {};
-                    var0 = var4.bind(var5)(var0, var3, var2);
-                    var _closure3_slot0 = var0;
-                    var0 = {};
-                    var1 = function arg0() {
-                        _fun97606: for (var _fun97606_ip = 0;;) switch (_fun97606_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var2 = var0.type;
-                                var1 = 'editor.open';
-                                if (!(var1 === var2)) {
-                                    _fun97606_ip = 146;
-                                    continue _fun97606
-                                }
-                            case 21:
-                                var0 = var0.payload;
-                                var2 = var0.file;
-                                var1 = var0.lineNumber;
-                                var0 = _closure3_slot0;
-                                var6 = var0.url;
-                                var0 = global;
-                                var3 = var0.HermesInternal;
-                                var5 = var3.concat;
-                                var4 = '';
-                                var3 = '/open-stack-frame';
-                                var3 = var5.bind(var4)(var6, var3);
-                                var5 = {};
-                                var5.file = var2;
-                                if (var1) {
-                                    _fun97606_ip = 93;
-                                    continue _fun97606
-                                }
-                            case 90:
-                                var1 = 1;
-                            case 93:
-                                var5.lineNumber = var1;
-                                var2 = var0.fetch;
-                                var1 = {};
-                                var4 = 'POST';
-                                var1.method = var4;
-                                var4 = var0.JSON;
-                                var0 = var4.stringify;
-                                var0 = var0.bind(var4)(var5);
-                                var1.body = var0;
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var3, var1);
-                            case 146:
-                                var0 = undefined;
-                                return var0;
+    _fun97486: for (var _fun97486_ip = 0;;) switch (_fun97486_ip) {
+        case 0:
+            var8 = require;
+            var9 = dependencyMap;
+            var _closure1_slot0 = var8;
+            var _closure1_slot1 = var9;
+            var0 = 2;
+            var2 = var9[var0];
+            var0 = undefined;
+            var2 = var8.bind(var0)(var2);
+            if (var2) {
+                _fun97486_ip = 134;
+                continue _fun97486
+            }
+        case 33:
+            var2 = 3;
+            var2 = var9[var2];
+            var2 = var8.bind(var0)(var2);
+            var2 = var2.state;
+            if (var2) {
+                _fun97486_ip = 134;
+                continue _fun97486
+            }
+        case 53:
+            var2 = 4;
+            var2 = var9[var2];
+            var3 = var8.bind(var0)(var2);
+            var2 = 'state';
+            var4 = var3.bind(var0)(var2);
+            var _closure1_slot6 = var4;
+            var2 = 5;
+            var2 = var9[var2];
+            var3 = var8.bind(var0)(var2);
+            var2 = true;
+            var3[var4] = var2;
+            var5 = function arg0, arg1() {
+                _fun97490: for (var _fun97490_ip = 0;;) switch (_fun97490_ip) {
+                    case 0:
+                        var5 = arg0;
+                        var1 = arg1;
+                        var4 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var2 = 6;
+                        var3 = var3[var2];
+                        var2 = undefined;
+                        var4 = var4.bind(var2)(var3);
+                        var3 = _closure1_slot6;
+                        var3 = var4.bind(var2)(var5, var3);
+                        if (var3) {
+                            _fun97490_ip = 83;
+                            continue _fun97490
                         }
-                    };
-                    var0.onCommand = var1;
-                    return var0;
+                    case 44:
+                        var1.facade = var5;
+                        var4 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var3 = 7;
+                        var3 = var6[var3];
+                        var4 = var4.bind(var2)(var3);
+                        var3 = _closure1_slot6;
+                        var3 = var4.bind(var2)(var5, var3, var1);
+                        return var1;
+                    case 83:
+                        var1 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var0 = 1;
+                        var0 = var3[var0];
+                        var0 = var1.bind(var2)(var0);
+                        var2 = var0.TypeError;
+                        var0 = var2.prototype;
+                        var1 = Object.create(var0, {
+                            constructor: {
+                                value: var2
+                            }
+                        });
+                        var9 = 'Object already initialized';
+                        var10 = var1;
+                        var0 = new var10[var2](var9, var8);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        throw var0;
+                }
+            };
+            var _closure1_slot2 = var5;
+            var4 = function arg0() {
+                _fun97491: for (var _fun97491_ip = 0;;) switch (_fun97491_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var3 = _closure1_slot0;
+                        var4 = _closure1_slot1;
+                        var0 = 6;
+                        var0 = var4[var0];
+                        var4 = undefined;
+                        var3 = var3.bind(var4)(var0);
+                        var0 = _closure1_slot6;
+                        var0 = var3.bind(var4)(var2, var0);
+                        if (var0) {
+                            _fun97491_ip = 45;
+                            continue _fun97491
+                        }
+                    case 41:
+                        var0 = {};
+                        _fun97491_ip = 53;
+                        continue _fun97491;
+                    case 45:
+                        var1 = _closure1_slot6;
+                        var0 = var2[var1];
+                    case 53:
+                        return var0;
+                }
+            };
+            var _closure1_slot3 = var4;
+            var3 = function arg0() {
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var1 = 6;
+                var1 = var3[var1];
+                var3 = undefined;
+                var2 = var2.bind(var3)(var1);
+                var1 = _closure1_slot6;
+                var0 = arg0;
+                var0 = var2.bind(var3)(var0, var1);
+                return var0;
+            };
+            var _closure1_slot4 = var3;
+            _fun97486_ip = 289;
+            continue _fun97486;
+        case 134:
+            var2 = 3;
+            var6 = var9[var2];
+            var6 = var8.bind(var0)(var6);
+            var6 = var6.state;
+            if (var6) {
+                _fun97486_ip = 210;
+                continue _fun97486
+            }
+        case 154:
+            var2 = var9[var2];
+            var7 = var8.bind(var0)(var2);
+            var2 = 1;
+            var2 = var9[var2];
+            var2 = var8.bind(var0)(var2);
+            var2 = var2.WeakMap;
+            var8 = var2.prototype;
+            var8 = Object.create(var8, {
+                constructor: {
+                    value: var2
+                }
+            });
+            var11 = var8;
+            var2 = new var11[var2](var10);
+            var2 = var2 instanceof Object ? var2 : var8;
+            var7.state = var2;
+            var6 = var2;
+        case 210:
+            var _closure1_slot5 = var6;
+            var2 = var6.get;
+            var6.get = var2;
+            var2 = var6.has;
+            var6.has = var2;
+            var2 = var6.set;
+            var6.set = var2;
+            var7 = function arg0, arg1() {
+                _fun97487: for (var _fun97487_ip = 0;;) switch (_fun97487_ip) {
+                    case 0:
+                        var4 = arg0;
+                        var1 = arg1;
+                        var3 = _closure1_slot5;
+                        var2 = var3.has;
+                        var2 = var2.bind(var3)(var4);
+                        if (var2) {
+                            _fun97487_ip = 49;
+                            continue _fun97487
+                        }
+                    case 26:
+                        var1.facade = var4;
+                        var3 = _closure1_slot5;
+                        var2 = var3.set;
+                        var2 = var2.bind(var3)(var4, var1);
+                        return var1;
+                    case 49:
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var0 = 1;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var0 = var2.bind(var0)(var1);
+                        var2 = var0.TypeError;
+                        var0 = var2.prototype;
+                        var1 = Object.create(var0, {
+                            constructor: {
+                                value: var2
+                            }
+                        });
+                        var6 = 'Object already initialized';
+                        var7 = var1;
+                        var0 = new var7[var2](var6, var5);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        throw var0;
+                }
+            };
+            _closure1_slot2 = var7;
+            var6 = function arg0() {
+                _fun97488: for (var _fun97488_ip = 0;;) switch (_fun97488_ip) {
+                    case 0:
+                        var2 = _closure1_slot5;
+                        var1 = var2.get;
+                        var0 = arg0;
+                        var0 = var1.bind(var2)(var0);
+                        if (var0) {
+                            _fun97488_ip = 25;
+                            continue _fun97488
+                        }
+                    case 23:
+                        var0 = {};
+                    case 25:
+                        return var0;
+                }
+            };
+            _closure1_slot3 = var6;
+            var2 = function arg0() {
+                var2 = _closure1_slot5;
+                var1 = var2.has;
+                var0 = arg0;
+                var0 = var1.bind(var2)(var0);
+                return var0;
+            };
+            _closure1_slot4 = var2;
+            var5 = var7;
+            var4 = var6;
+            var3 = var2;
+        case 289:
+            var2 = {};
+            var2.set = var5;
+            var2.get = var4;
+            var2.has = var3;
+            var3 = function arg0() {
+                _fun97493: for (var _fun97493_ip = 0;;) switch (_fun97493_ip) {
+                    case 0:
+                        var3 = arg0;
+                        var0 = _closure1_slot4;
+                        var2 = undefined;
+                        var0 = var0.bind(var2)(var3);
+                        if (var0) {
+                            _fun97493_ip = 34;
+                            continue _fun97493
+                        }
+                    case 20:
+                        var4 = _closure1_slot2;
+                        var0 = {};
+                        var0 = var4.bind(var2)(var3, var0);
+                        _fun97493_ip = 43;
+                        continue _fun97493;
+                    case 34:
+                        var1 = _closure1_slot3;
+                        var0 = var1.bind(var2)(var3);
+                    case 43:
+                        return var0;
+                }
+            };
+            var2.enforce = var3;
+            var1 = function arg0() {
+                var1 = arg0;
+                var _closure2_slot0 = var1;
+                var0 = function(arg0) { // Environment: var0
+                    _fun97495: for (var _fun97495_ip = 0;;) switch (_fun97495_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var4 = _closure1_slot0;
+                            var2 = _closure1_slot1;
+                            var1 = 0;
+                            var1 = var2[var1];
+                            var2 = undefined;
+                            var1 = var4.bind(var2)(var1);
+                            var1 = var1.bind(var2)(var3);
+                            if (!var1) {
+                                _fun97495_ip = 62;
+                                continue _fun97495
+                            }
+                        case 35:
+                            var1 = _closure1_slot3;
+                            var1 = var1.bind(var2)(var3);
+                            var4 = var1.type;
+                            var3 = _closure2_slot0;
+                            if (!(var4 === var3)) {
+                                _fun97495_ip = 62;
+                                continue _fun97495
+                            }
+                        case 60:
+                            return var1;
+                        case 62:
+                            var1 = _closure1_slot0;
+                            var3 = _closure1_slot1;
+                            var0 = 1;
+                            var0 = var3[var0];
+                            var0 = var1.bind(var2)(var0);
+                            var2 = var0.TypeError;
+                            var1 = _closure2_slot0;
+                            var0 = 'Incompatible receiver, ';
+                            var3 = var0 + var1;
+                            var0 = var2.prototype;
+                            var1 = Object.create(var0, {
+                                constructor: {
+                                    value: var2
+                                }
+                            });
+                            var0 = ' required';
+                            var5 = var3 + var0;
+                            var6 = var1;
+                            var0 = new var6[var2](var5, var4);
+                            var0 = var0 instanceof Object ? var0 : var1;
+                            throw var0;
+                    }
                 };
                 return var0;
-        }
-    };
-    var2.default = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+            var2.getterFor = var1;
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12732, 12707, 12769, 12723, 12770, 12752, 12730, 12763]);

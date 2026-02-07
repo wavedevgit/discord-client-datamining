@@ -16,48 +16,48 @@ import os.e0;
 public abstract class e implements q {
 
     /* renamed from: d  reason: collision with root package name */
-    public final CoroutineContext f50032d;
+    public final CoroutineContext f50080d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f50033e;
+    public final int f50081e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final qs.a f50034i;
+    public final qs.a f50082i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50035d;
+        int f50083d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f50036e;
+        private /* synthetic */ Object f50084e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f50037i;
+        final /* synthetic */ FlowCollector f50085i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ e f50038o;
+        final /* synthetic */ e f50086o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(FlowCollector flowCollector, e eVar, Continuation continuation) {
             super(2, continuation);
-            this.f50037i = flowCollector;
-            this.f50038o = eVar;
+            this.f50085i = flowCollector;
+            this.f50086o = eVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f50037i, this.f50038o, continuation);
-            aVar.f50036e = obj;
+            a aVar = new a(this.f50085i, this.f50086o, continuation);
+            aVar.f50084e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f50035d;
+            int i10 = this.f50083d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -66,19 +66,19 @@ public abstract class e implements q {
                 }
             } else {
                 kotlin.c.b(obj);
-                FlowCollector flowCollector = this.f50037i;
-                qs.v m10 = this.f50038o.m((CoroutineScope) this.f50036e);
-                this.f50035d = 1;
+                FlowCollector flowCollector = this.f50085i;
+                qs.v m10 = this.f50086o.m((CoroutineScope) this.f50084e);
+                this.f50083d = 1;
                 if (rs.g.p(flowCollector, m10, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -87,10 +87,10 @@ public abstract class e implements q {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50039d;
+        int f50087d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f50040e;
+        /* synthetic */ Object f50088e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -99,14 +99,14 @@ public abstract class e implements q {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f50040e = obj;
+            bVar.f50088e = obj;
             return bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f50039d;
+            int i10 = this.f50087d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -116,24 +116,24 @@ public abstract class e implements q {
             } else {
                 kotlin.c.b(obj);
                 e eVar = e.this;
-                this.f50039d = 1;
-                if (eVar.e((ProducerScope) this.f50040e, this) == f10) {
+                this.f50087d = 1;
+                if (eVar.e((ProducerScope) this.f50088e, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(ProducerScope producerScope, Continuation continuation) {
-            return ((b) create(producerScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(producerScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
     public e(CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        this.f50032d = coroutineContext;
-        this.f50033e = i10;
-        this.f50034i = aVar;
+        this.f50080d = coroutineContext;
+        this.f50081e = i10;
+        this.f50082i = aVar;
     }
 
     static /* synthetic */ Object c(e eVar, FlowCollector flowCollector, Continuation continuation) {
@@ -141,7 +141,7 @@ public abstract class e implements q {
         if (g10 == wr.b.f()) {
             return g10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     protected String a() {
@@ -157,9 +157,9 @@ public abstract class e implements q {
 
     @Override // ss.q
     public Flow f(CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        CoroutineContext Y0 = coroutineContext.Y0(this.f50032d);
-        if (aVar == qs.a.f48066d) {
-            int i11 = this.f50033e;
+        CoroutineContext Y0 = coroutineContext.Y0(this.f50080d);
+        if (aVar == qs.a.f48114d) {
+            int i11 = this.f50081e;
             if (i11 != -3) {
                 if (i10 != -3) {
                     if (i11 != -2) {
@@ -173,9 +173,9 @@ public abstract class e implements q {
                 }
                 i10 = i11;
             }
-            aVar = this.f50034i;
+            aVar = this.f50082i;
         }
-        if (Intrinsics.areEqual(Y0, this.f50032d) && i10 == this.f50033e && aVar == this.f50034i) {
+        if (Intrinsics.areEqual(Y0, this.f50080d) && i10 == this.f50081e && aVar == this.f50082i) {
             return this;
         }
         return h(Y0, i10, aVar);
@@ -192,7 +192,7 @@ public abstract class e implements q {
     }
 
     public final int l() {
-        int i10 = this.f50033e;
+        int i10 = this.f50081e;
         if (i10 == -3) {
             return -2;
         }
@@ -200,7 +200,7 @@ public abstract class e implements q {
     }
 
     public qs.v m(CoroutineScope coroutineScope) {
-        return qs.s.e(coroutineScope, this.f50032d, l(), this.f50034i, os.c0.f43493i, null, k(), 16, null);
+        return qs.s.e(coroutineScope, this.f50080d, l(), this.f50082i, os.c0.f43541i, null, k(), 16, null);
     }
 
     public String toString() {
@@ -209,14 +209,14 @@ public abstract class e implements q {
         if (a10 != null) {
             arrayList.add(a10);
         }
-        if (this.f50032d != kotlin.coroutines.e.f32082d) {
-            arrayList.add("context=" + this.f50032d);
+        if (this.f50080d != kotlin.coroutines.e.f32130d) {
+            arrayList.add("context=" + this.f50080d);
         }
-        if (this.f50033e != -3) {
-            arrayList.add("capacity=" + this.f50033e);
+        if (this.f50081e != -3) {
+            arrayList.add("capacity=" + this.f50081e);
         }
-        if (this.f50034i != qs.a.f48066d) {
-            arrayList.add("onBufferOverflow=" + this.f50034i);
+        if (this.f50082i != qs.a.f48114d) {
+            arrayList.add("onBufferOverflow=" + this.f50082i);
         }
         return e0.a(this) + '[' + CollectionsKt.x0(arrayList, ", ", null, null, 0, null, null, 62, null) + ']';
     }

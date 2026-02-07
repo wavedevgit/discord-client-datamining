@@ -4,92 +4,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1, arg2, arg3() {
-        _fun28352: for (var _fun28352_ip = 0;;) switch (_fun28352_ip) {
+    var1 = function arg0() {
+        _fun28362: for (var _fun28362_ip = 0;;) switch (_fun28362_ip) {
             case 0:
-                var0 = arg0;
-                var3 = arg1;
-                var9 = arg3;
-                var8 = var0.length;
-                var5 = _closure1_slot0;
+                var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
-                var2 = 0;
-                var1 = var1[var2];
-                var6 = undefined;
-                var5 = var5.bind(var6)(var1);
-                var1 = arg2;
-                var7 = var5.bind(var6)(var1);
-                var1 = var7;
-                if (!(var1 < var2)) {
-                    _fun28352_ip = 72;
-                    continue _fun28352
+                var0 = 0;
+                var1 = var1[var0];
+                var3 = undefined;
+                var2 = var2.bind(var3)(var1);
+                var1 = arg0;
+                var3 = var2.bind(var3)(var1);
+                var1 = 1;
+                var2 = var3 % var1;
+                var1 = var3 == var3;
+                if (!var1) {
+                    _fun28362_ip = 59;
+                    continue _fun28362
                 }
-            case 53:
-                var5 = -var7;
-                var10 = var5 > var8;
-                var5 = 0;
-                if (var10) {
-                    _fun28352_ip = 69;
-                    continue _fun28352
+            case 46:
+                var1 = var3;
+                if (!var2) {
+                    _fun28362_ip = 56;
+                    continue _fun28362
                 }
-            case 65:
-                var5 = var8 + var7;
-            case 69:
-                var1 = var5;
-            case 72:
-                var7 = var8;
-                if (!(var6 !== var9)) {
-                    _fun28352_ip = 108;
-                    continue _fun28352
-                }
-            case 79:
-                var7 = var8;
-                if (!(!(var9 > var7))) {
-                    _fun28352_ip = 108;
-                    continue _fun28352
-                }
-            case 86:
-                var10 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var5 = var5[var2];
-                var5 = var10.bind(var6)(var5);
-                var7 = var5.bind(var6)(var9);
-            case 108:
-                var5 = var7;
-                if (!(var5 < var2)) {
-                    _fun28352_ip = 119;
-                    continue _fun28352
-                }
-            case 115:
-                var5 = var7 + var8;
-            case 119:
-                var7 = var1 > var5;
-                var2 = 0;
-                if (var7) {
-                    _fun28352_ip = 153;
-                    continue _fun28352
-                }
-            case 128:
-                var7 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var4 = 1;
-                var4 = var8[var4];
-                var4 = var7.bind(var6)(var4);
-                var2 = var4.bind(var6)(var5);
-            case 153:
-                if (!(var1 < var2)) {
-                    _fun28352_ip = 171;
-                    continue _fun28352
-                }
-            case 157:
-                var4 = parseFloat(var1);
-                var1 = var4 + 1;
-                var0[var4] = var3;
-                if (var1 < var2) {
-                    _fun28352_ip = 157;
-                    continue _fun28352
-                }
-            case 171:
+            case 52:
+                var1 = var3 - var2;
+            case 56:
+                var0 = var1;
+            case 59:
                 return var0;
         }
     };
@@ -97,4 +40,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3310, 3313]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3310]);

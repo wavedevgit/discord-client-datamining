@@ -86,19 +86,19 @@ public final class f implements yo.a {
                     }
                 }
                 if (arrayList != null && !arrayList.isEmpty()) {
-                    Result.a aVar = Result.f32005e;
+                    Result.a aVar = Result.f32053e;
                     i.a aVar2 = this.f18886c;
                     String uuid = UUID.randomUUID().toString();
                     Intrinsics.checkNotNullExpressionValue(uuid, "toString(...)");
                     return Result.b(aVar2.a(arrayList, uuid));
                 }
-                Result.a aVar3 = Result.f32005e;
+                Result.a aVar3 = Result.f32053e;
                 return Result.b(kotlin.c.a(new yo.b("Expected steps to contain at least one step")));
             }
-            Result.a aVar4 = Result.f32005e;
+            Result.a aVar4 = Result.f32053e;
             return Result.b(kotlin.c.a(new yo.b("Failed to open resource as static template")));
         } catch (Exception unused) {
-            Result.a aVar5 = Result.f32005e;
+            Result.a aVar5 = Result.f32053e;
             return Result.b(kotlin.c.a(new yo.b("Failed to open resource as static template. Resource not found.")));
         }
     }

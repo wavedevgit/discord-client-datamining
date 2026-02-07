@@ -142,7 +142,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit getAccountUrlAndAuthCode$lambda$1(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final String getAccountUrlFromAuthServerUrl(String str) {
@@ -200,7 +200,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit handleAuthResult$lambda$2(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -257,7 +257,7 @@ public final class SamsungModule extends ReactContextBaseJavaModule {
     public static final Unit showConnectionDisclaimer$lambda$0(SamsungModule samsungModule, Throwable th2) {
         Intrinsics.checkNotNull(th2);
         samsungModule.rejectConnection(th2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0021, code lost:

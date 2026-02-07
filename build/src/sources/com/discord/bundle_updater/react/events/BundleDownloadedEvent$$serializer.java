@@ -36,7 +36,7 @@ public /* synthetic */ class BundleDownloadedEvent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{h.f31005a};
+        return new KSerializer[]{h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

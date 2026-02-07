@@ -50,25 +50,25 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeDeserializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationContext f34354a;
+    private final DeserializationContext f34402a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeDeserializer f34355b;
+    private final TypeDeserializer f34403b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f34356c;
+    private final String f34404c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34357d;
+    private final String f34405d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f34358e;
+    private final Function1 f34406e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Function1 f34359f;
+    private final Function1 f34407f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f34360g;
+    private final Map f34408g;
 
     public TypeDeserializer(@NotNull DeserializationContext c10, TypeDeserializer typeDeserializer, @NotNull List<ProtoBuf.TypeParameter> typeParameterProtos, @NotNull String debugName, @NotNull String containerPresentableName) {
         Map linkedHashMap;
@@ -76,23 +76,23 @@ public final class TypeDeserializer {
         Intrinsics.checkNotNullParameter(typeParameterProtos, "typeParameterProtos");
         Intrinsics.checkNotNullParameter(debugName, "debugName");
         Intrinsics.checkNotNullParameter(containerPresentableName, "containerPresentableName");
-        this.f34354a = c10;
-        this.f34355b = typeDeserializer;
-        this.f34356c = debugName;
-        this.f34357d = containerPresentableName;
-        this.f34358e = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new m(this));
-        this.f34359f = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new n(this));
+        this.f34402a = c10;
+        this.f34403b = typeDeserializer;
+        this.f34404c = debugName;
+        this.f34405d = containerPresentableName;
+        this.f34406e = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new m(this));
+        this.f34407f = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new n(this));
         if (typeParameterProtos.isEmpty()) {
             linkedHashMap = o0.i();
         } else {
             linkedHashMap = new LinkedHashMap();
             int i10 = 0;
             for (ProtoBuf.TypeParameter typeParameter : typeParameterProtos) {
-                linkedHashMap.put(Integer.valueOf(typeParameter.getId()), new DeserializedTypeParameterDescriptor(this.f34354a, typeParameter, i10));
+                linkedHashMap.put(Integer.valueOf(typeParameter.getId()), new DeserializedTypeParameterDescriptor(this.f34402a, typeParameter, i10));
                 i10++;
             }
         }
-        this.f34360g = linkedHashMap;
+        this.f34408g = linkedHashMap;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,26 +101,26 @@ public final class TypeDeserializer {
     }
 
     private final ClassifierDescriptor g(int i10) {
-        ClassId classId = NameResolverUtilKt.getClassId(this.f34354a.getNameResolver(), i10);
+        ClassId classId = NameResolverUtilKt.getClassId(this.f34402a.getNameResolver(), i10);
         if (classId.isLocal()) {
-            return this.f34354a.getComponents().deserializeClass(classId);
+            return this.f34402a.getComponents().deserializeClass(classId);
         }
-        return FindClassInModuleKt.findClassifierAcrossModuleDependencies(this.f34354a.getComponents().getModuleDescriptor(), classId);
+        return FindClassInModuleKt.findClassifierAcrossModuleDependencies(this.f34402a.getComponents().getModuleDescriptor(), classId);
     }
 
     private final SimpleType h(int i10) {
-        if (NameResolverUtilKt.getClassId(this.f34354a.getNameResolver(), i10).isLocal()) {
-            return this.f34354a.getComponents().getLocalClassifierTypeSettings().getReplacementTypeForLocalClassifiers();
+        if (NameResolverUtilKt.getClassId(this.f34402a.getNameResolver(), i10).isLocal()) {
+            return this.f34402a.getComponents().getLocalClassifierTypeSettings().getReplacementTypeForLocalClassifiers();
         }
         return null;
     }
 
     private final ClassifierDescriptor i(int i10) {
-        ClassId classId = NameResolverUtilKt.getClassId(this.f34354a.getNameResolver(), i10);
+        ClassId classId = NameResolverUtilKt.getClassId(this.f34402a.getNameResolver(), i10);
         if (classId.isLocal()) {
             return null;
         }
-        return FindClassInModuleKt.findTypeAliasAcrossModuleDependencies(this.f34354a.getComponents().getModuleDescriptor(), classId);
+        return FindClassInModuleKt.findTypeAliasAcrossModuleDependencies(this.f34402a.getComponents().getModuleDescriptor(), classId);
     }
 
     private final SimpleType j(KotlinType kotlinType, KotlinType kotlinType2) {
@@ -171,9 +171,9 @@ public final class TypeDeserializer {
     }
 
     private final TypeParameterDescriptor m(int i10) {
-        TypeParameterDescriptor typeParameterDescriptor = (TypeParameterDescriptor) this.f34360g.get(Integer.valueOf(i10));
+        TypeParameterDescriptor typeParameterDescriptor = (TypeParameterDescriptor) this.f34408g.get(Integer.valueOf(i10));
         if (typeParameterDescriptor == null) {
-            TypeDeserializer typeDeserializer = this.f34355b;
+            TypeDeserializer typeDeserializer = this.f34403b;
             if (typeDeserializer != null) {
                 return typeDeserializer.m(i10);
             }
@@ -187,7 +187,7 @@ public final class TypeDeserializer {
         List<ProtoBuf.Type.Argument> argumentList = type.getArgumentList();
         Intrinsics.checkNotNullExpressionValue(argumentList, "getArgumentList(...)");
         List<ProtoBuf.Type.Argument> list2 = argumentList;
-        ProtoBuf.Type outerType = ProtoTypeTableUtilKt.outerType(type, typeDeserializer.f34354a.getTypeTable());
+        ProtoBuf.Type outerType = ProtoTypeTableUtilKt.outerType(type, typeDeserializer.f34402a.getTypeTable());
         if (outerType != null) {
             list = n(outerType, typeDeserializer);
         } else {
@@ -201,7 +201,7 @@ public final class TypeDeserializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List o(TypeDeserializer typeDeserializer, ProtoBuf.Type type) {
-        return typeDeserializer.f34354a.getComponents().getAnnotationAndConstantLoader().loadTypeAnnotations(type, typeDeserializer.f34354a.getNameResolver());
+        return typeDeserializer.f34402a.getComponents().getAnnotationAndConstantLoader().loadTypeAnnotations(type, typeDeserializer.f34402a.getNameResolver());
     }
 
     private final TypeAttributes p(List list, Annotations annotations, TypeConstructor typeConstructor, DeclarationDescriptor declarationDescriptor) {
@@ -258,7 +258,7 @@ public final class TypeDeserializer {
             kotlin.reflect.jvm.internal.impl.types.KotlinType r0 = r0.getType()
             java.lang.String r2 = "getType(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r0, r2)
-            kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext r2 = r5.f34354a
+            kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext r2 = r5.f34402a
             kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor r2 = r2.getContainingDeclaration()
             boolean r3 = r2 instanceof kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
             if (r3 == 0) goto L62
@@ -295,7 +295,7 @@ public final class TypeDeserializer {
     private final TypeProjection s(TypeParameterDescriptor typeParameterDescriptor, ProtoBuf.Type.Argument argument) {
         if (argument.getProjection() == ProtoBuf.Type.Argument.Projection.STAR) {
             if (typeParameterDescriptor == null) {
-                return new StarProjectionForAbsentTypeParameter(this.f34354a.getComponents().getModuleDescriptor().getBuiltIns());
+                return new StarProjectionForAbsentTypeParameter(this.f34402a.getComponents().getModuleDescriptor().getBuiltIns());
             }
             return new StarProjectionImpl(typeParameterDescriptor);
         }
@@ -303,7 +303,7 @@ public final class TypeDeserializer {
         ProtoBuf.Type.Argument.Projection projection = argument.getProjection();
         Intrinsics.checkNotNullExpressionValue(projection, "getProjection(...)");
         Variance variance = protoEnumFlags.variance(projection);
-        ProtoBuf.Type type = ProtoTypeTableUtilKt.type(argument, this.f34354a.getTypeTable());
+        ProtoBuf.Type type = ProtoTypeTableUtilKt.type(argument, this.f34402a.getTypeTable());
         if (type == null) {
             return new TypeProjectionImpl(ErrorUtils.createErrorType(ErrorTypeKind.NO_RECORDED_TYPE, argument.toString()));
         }
@@ -321,17 +321,17 @@ public final class TypeDeserializer {
         ClassifierDescriptor classifierDescriptor;
         Object obj;
         if (type.hasClassName()) {
-            classifierDescriptor = (ClassifierDescriptor) this.f34358e.invoke(Integer.valueOf(type.getClassName()));
+            classifierDescriptor = (ClassifierDescriptor) this.f34406e.invoke(Integer.valueOf(type.getClassName()));
             if (classifierDescriptor == null) {
                 classifierDescriptor = u(this, type, type.getClassName());
             }
         } else if (type.hasTypeParameter()) {
             classifierDescriptor = m(type.getTypeParameter());
             if (classifierDescriptor == null) {
-                return ErrorUtils.INSTANCE.createErrorTypeConstructor(ErrorTypeKind.CANNOT_LOAD_DESERIALIZE_TYPE_PARAMETER, String.valueOf(type.getTypeParameter()), this.f34357d);
+                return ErrorUtils.INSTANCE.createErrorTypeConstructor(ErrorTypeKind.CANNOT_LOAD_DESERIALIZE_TYPE_PARAMETER, String.valueOf(type.getTypeParameter()), this.f34405d);
             }
         } else if (type.hasTypeParameterName()) {
-            String string = this.f34354a.getNameResolver().getString(type.getTypeParameterName());
+            String string = this.f34402a.getNameResolver().getString(type.getTypeParameterName());
             Iterator<T> it = getOwnTypeParameters().iterator();
             while (true) {
                 if (it.hasNext()) {
@@ -346,10 +346,10 @@ public final class TypeDeserializer {
             }
             classifierDescriptor = (TypeParameterDescriptor) obj;
             if (classifierDescriptor == null) {
-                return ErrorUtils.INSTANCE.createErrorTypeConstructor(ErrorTypeKind.CANNOT_LOAD_DESERIALIZE_TYPE_PARAMETER_BY_NAME, string, this.f34354a.getContainingDeclaration().toString());
+                return ErrorUtils.INSTANCE.createErrorTypeConstructor(ErrorTypeKind.CANNOT_LOAD_DESERIALIZE_TYPE_PARAMETER_BY_NAME, string, this.f34402a.getContainingDeclaration().toString());
             }
         } else if (type.hasTypeAliasName()) {
-            classifierDescriptor = (ClassifierDescriptor) this.f34359f.invoke(Integer.valueOf(type.getTypeAliasName()));
+            classifierDescriptor = (ClassifierDescriptor) this.f34407f.invoke(Integer.valueOf(type.getTypeAliasName()));
             if (classifierDescriptor == null) {
                 classifierDescriptor = u(this, type, type.getTypeAliasName());
             }
@@ -362,8 +362,8 @@ public final class TypeDeserializer {
     }
 
     private static final ClassDescriptor u(TypeDeserializer typeDeserializer, ProtoBuf.Type type, int i10) {
-        ClassId classId = NameResolverUtilKt.getClassId(typeDeserializer.f34354a.getNameResolver(), i10);
-        List<Integer> Z = kotlin.sequences.k.Z(kotlin.sequences.k.R(kotlin.sequences.k.q(type, new p(typeDeserializer)), q.f34508d));
+        ClassId classId = NameResolverUtilKt.getClassId(typeDeserializer.f34402a.getNameResolver(), i10);
+        List<Integer> Z = kotlin.sequences.k.Z(kotlin.sequences.k.R(kotlin.sequences.k.q(type, new p(typeDeserializer)), q.f34556d));
         int C = kotlin.sequences.k.C(kotlin.sequences.k.q(classId, new PropertyReference1Impl() { // from class: kotlin.reflect.jvm.internal.impl.serialization.deserialization.TypeDeserializer.a
             @Override // kotlin.jvm.internal.PropertyReference1Impl, kotlin.jvm.internal.PropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
@@ -373,13 +373,13 @@ public final class TypeDeserializer {
         while (Z.size() < C) {
             Z.add(0);
         }
-        return typeDeserializer.f34354a.getComponents().getNotFoundClasses().getClass(classId, Z);
+        return typeDeserializer.f34402a.getComponents().getNotFoundClasses().getClass(classId, Z);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ProtoBuf.Type v(TypeDeserializer typeDeserializer, ProtoBuf.Type it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return ProtoTypeTableUtilKt.outerType(it, typeDeserializer.f34354a.getTypeTable());
+        return ProtoTypeTableUtilKt.outerType(it, typeDeserializer.f34402a.getTypeTable());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -390,7 +390,7 @@ public final class TypeDeserializer {
 
     @NotNull
     public final List<TypeParameterDescriptor> getOwnTypeParameters() {
-        return CollectionsKt.h1(this.f34360g.values());
+        return CollectionsKt.h1(this.f34408g.values());
     }
 
     @NotNull
@@ -414,8 +414,8 @@ public final class TypeDeserializer {
         if (ErrorUtils.isError(t10.mo1199getDeclarationDescriptor())) {
             return ErrorUtils.INSTANCE.createErrorType(ErrorTypeKind.TYPE_FOR_ERROR_TYPE_CONSTRUCTOR, t10, t10.toString());
         }
-        DeserializedAnnotations deserializedAnnotations = new DeserializedAnnotations(this.f34354a.getStorageManager(), new o(this, proto));
-        TypeAttributes p10 = p(this.f34354a.getComponents().getTypeAttributeTranslators(), deserializedAnnotations, t10, this.f34354a.getContainingDeclaration());
+        DeserializedAnnotations deserializedAnnotations = new DeserializedAnnotations(this.f34402a.getStorageManager(), new o(this, proto));
+        TypeAttributes p10 = p(this.f34402a.getComponents().getTypeAttributeTranslators(), deserializedAnnotations, t10, this.f34402a.getContainingDeclaration());
         List n10 = n(proto, this);
         ArrayList arrayList = new ArrayList(CollectionsKt.w(n10, 10));
         int i10 = 0;
@@ -433,7 +433,7 @@ public final class TypeDeserializer {
         ClassifierDescriptor mo1199getDeclarationDescriptor = t10.mo1199getDeclarationDescriptor();
         if (z10 && (mo1199getDeclarationDescriptor instanceof TypeAliasDescriptor)) {
             SimpleType computeExpandedType = KotlinTypeFactory.computeExpandedType((TypeAliasDescriptor) mo1199getDeclarationDescriptor, h12);
-            TypeAttributes p11 = p(this.f34354a.getComponents().getTypeAttributeTranslators(), Annotations.Companion.create(CollectionsKt.J0(deserializedAnnotations, computeExpandedType.getAnnotations())), t10, this.f34354a.getContainingDeclaration());
+            TypeAttributes p11 = p(this.f34402a.getComponents().getTypeAttributeTranslators(), Annotations.Companion.create(CollectionsKt.J0(deserializedAnnotations, computeExpandedType.getAnnotations())), t10, this.f34402a.getContainingDeclaration());
             if (!KotlinTypeKt.isNullable(computeExpandedType) && !proto.getNullable()) {
                 z11 = false;
             } else {
@@ -453,7 +453,7 @@ public final class TypeDeserializer {
                 simpleType2 = simpleType$default;
             }
         }
-        ProtoBuf.Type abbreviatedType = ProtoTypeTableUtilKt.abbreviatedType(proto, this.f34354a.getTypeTable());
+        ProtoBuf.Type abbreviatedType = ProtoTypeTableUtilKt.abbreviatedType(proto, this.f34402a.getTypeTable());
         if (abbreviatedType != null && (withAbbreviation = SpecialTypesKt.withAbbreviation(simpleType2, simpleType(abbreviatedType, false))) != null) {
             return withAbbreviation;
         }
@@ -464,11 +464,11 @@ public final class TypeDeserializer {
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f34356c);
-        if (this.f34355b == null) {
+        sb2.append(this.f34404c);
+        if (this.f34403b == null) {
             str = "";
         } else {
-            str = ". Child of " + this.f34355b.f34356c;
+            str = ". Child of " + this.f34403b.f34404c;
         }
         sb2.append(str);
         return sb2.toString();
@@ -478,11 +478,11 @@ public final class TypeDeserializer {
     public final KotlinType type(@NotNull ProtoBuf.Type proto) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         if (proto.hasFlexibleTypeCapabilitiesId()) {
-            String string = this.f34354a.getNameResolver().getString(proto.getFlexibleTypeCapabilitiesId());
+            String string = this.f34402a.getNameResolver().getString(proto.getFlexibleTypeCapabilitiesId());
             SimpleType simpleType$default = simpleType$default(this, proto, false, 2, null);
-            ProtoBuf.Type flexibleUpperBound = ProtoTypeTableUtilKt.flexibleUpperBound(proto, this.f34354a.getTypeTable());
+            ProtoBuf.Type flexibleUpperBound = ProtoTypeTableUtilKt.flexibleUpperBound(proto, this.f34402a.getTypeTable());
             Intrinsics.checkNotNull(flexibleUpperBound);
-            return this.f34354a.getComponents().getFlexibleTypeDeserializer().create(proto, string, simpleType$default, simpleType$default(this, flexibleUpperBound, false, 2, null));
+            return this.f34402a.getComponents().getFlexibleTypeDeserializer().create(proto, string, simpleType$default, simpleType$default(this, flexibleUpperBound, false, 2, null));
         }
         return simpleType(proto, true);
     }

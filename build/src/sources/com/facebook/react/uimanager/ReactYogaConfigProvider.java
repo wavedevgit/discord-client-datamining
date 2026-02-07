@@ -17,7 +17,7 @@ public final class ReactYogaConfigProvider {
 
     static {
         LegacyArchitectureLogger.assertLegacyArchitecture$default("ReactYogaConfigProvider", null, 2, null);
-        yogaConfig$delegate = qr.l.b(qr.o.f48045i, new Function0() { // from class: com.facebook.react.uimanager.v
+        yogaConfig$delegate = qr.l.b(qr.o.f48093i, new Function0() { // from class: com.facebook.react.uimanager.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 YogaConfig yogaConfig_delegate$lambda$1;

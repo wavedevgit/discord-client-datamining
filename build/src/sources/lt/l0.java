@@ -11,7 +11,7 @@ public abstract class l0 {
         Intrinsics.checkNotNullParameter(reader, "reader");
         t0 b10 = u0.b(json, reader, null, 4, null);
         try {
-            Object G = new w0(json, e1.f36650i, b10, deserializer.getDescriptor(), null).G(deserializer);
+            Object G = new w0(json, e1.f36698i, b10, deserializer.getDescriptor(), null).G(deserializer);
             b10.v();
             return G;
         } finally {
@@ -23,6 +23,6 @@ public abstract class l0 {
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(writer, "writer");
         Intrinsics.checkNotNullParameter(serializer, "serializer");
-        new x0(writer, json, e1.f36650i, new kt.q[e1.d().size()]).v(serializer, obj);
+        new x0(writer, json, e1.f36698i, new kt.q[e1.d().size()]).v(serializer, obj);
     }
 }

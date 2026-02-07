@@ -177,7 +177,7 @@ public class a extends g implements Drawable.Callback, j.b {
         setState(iArr);
         l2(iArr);
         this.R0 = true;
-        if (b.f42758a) {
+        if (b.f42806a) {
             V0.setTint(-1);
         }
     }
@@ -199,7 +199,7 @@ public class a extends g implements Drawable.Callback, j.b {
             float f11 = rectF.top;
             canvas.translate(f10, f11);
             this.Y.setBounds(0, 0, (int) this.f14843v0.width(), (int) this.f14843v0.height());
-            if (b.f42758a) {
+            if (b.f42806a) {
                 this.Z.setBounds(this.Y.getBounds());
                 this.Z.jumpToCurrentState();
                 this.Z.draw(canvas);
@@ -740,7 +740,7 @@ public class a extends g implements Drawable.Callback, j.b {
             System.arraycopy(iArr2, 0, iArr3, iArr.length, iArr2.length);
             z14 |= this.Y.setState(iArr3);
         }
-        if (b.f42758a && s1(this.Z)) {
+        if (b.f42806a && s1(this.Z)) {
             z14 |= this.Z.setState(iArr2);
         }
         if (z14) {
@@ -1190,7 +1190,7 @@ public class a extends g implements Drawable.Callback, j.b {
                 drawable2 = null;
             }
             this.Y = drawable2;
-            if (b.f42758a) {
+            if (b.f42806a) {
                 S2();
             }
             float q03 = q0();

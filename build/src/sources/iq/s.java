@@ -9,10 +9,10 @@ import androidx.viewbinding.ViewBinding;
 public final class s implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29274a;
+    private final ConstraintLayout f29322a;
 
     private s(ConstraintLayout constraintLayout) {
-        this.f29274a = constraintLayout;
+        this.f29322a = constraintLayout;
     }
 
     public static s a(View view) {
@@ -37,6 +37,6 @@ public final class s implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29274a;
+        return this.f29322a;
     }
 }

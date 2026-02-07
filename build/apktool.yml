@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 316206
-  versionName: 316.6 - Alpha
+  versionCode: 316207
+  versionName: 316.7 - Alpha
 doNotCompress:
 - arsc
 - jpg
@@ -713,4 +713,3 @@ doNotCompress:
 - res/raw/modules_overlay_web_v3_overlaywidgetscompiledmessages.jsona
 - res/raw/modules_premium_tenure_reward_tenurerewardcompiledmessages.jsona
 - res/raw/modules_private_browsing_perk_intl_privatebrowsingperkcompiledmessages.jsona
-- res/raw/modules_voice_dares_voicedarescompiledmessages.jsona

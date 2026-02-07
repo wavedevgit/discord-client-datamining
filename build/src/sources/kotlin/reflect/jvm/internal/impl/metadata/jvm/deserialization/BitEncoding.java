@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 public class BitEncoding {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f33799a;
+    private static final boolean f33847a;
 
     static {
         String str;
@@ -14,7 +14,7 @@ public class BitEncoding {
         } catch (SecurityException unused) {
             str = null;
         }
-        f33799a = "true".equals(str);
+        f33847a = "true".equals(str);
     }
 
     private static /* synthetic */ void a(int i10) {

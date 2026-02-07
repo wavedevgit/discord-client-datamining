@@ -3,10 +3,10 @@ package tf;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ClassLoader f50600a;
+    private static ClassLoader f50648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Thread f50601b;
+    private static Thread f50649b;
 
     /* JADX WARN: Code restructure failed: missing block: B:46:0x00af, code lost:
         if (r2 == null) goto L13;

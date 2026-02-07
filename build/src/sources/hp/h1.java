@@ -10,10 +10,10 @@ public final class h1 implements Parcelable {
     public static final Parcelable.Creator<h1> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final d0 f26313d;
+    private final d0 f26361d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final g1 f26314e;
+    private final g1 f26362e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -34,12 +34,12 @@ public final class h1 implements Parcelable {
     public h1(d0 permission, g1 result) {
         Intrinsics.checkNotNullParameter(permission, "permission");
         Intrinsics.checkNotNullParameter(result, "result");
-        this.f26313d = permission;
-        this.f26314e = result;
+        this.f26361d = permission;
+        this.f26362e = result;
     }
 
     public final g1 a() {
-        return this.f26314e;
+        return this.f26362e;
     }
 
     @Override // android.os.Parcelable
@@ -55,26 +55,26 @@ public final class h1 implements Parcelable {
             return false;
         }
         h1 h1Var = (h1) obj;
-        if (this.f26313d == h1Var.f26313d && this.f26314e == h1Var.f26314e) {
+        if (this.f26361d == h1Var.f26361d && this.f26362e == h1Var.f26362e) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f26313d.hashCode() * 31) + this.f26314e.hashCode();
+        return (this.f26361d.hashCode() * 31) + this.f26362e.hashCode();
     }
 
     public String toString() {
-        d0 d0Var = this.f26313d;
-        g1 g1Var = this.f26314e;
+        d0 d0Var = this.f26361d;
+        g1 g1Var = this.f26362e;
         return "PermissionState(permission=" + d0Var + ", result=" + g1Var + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f26313d.name());
-        dest.writeString(this.f26314e.name());
+        dest.writeString(this.f26361d.name());
+        dest.writeString(this.f26362e.name());
     }
 }

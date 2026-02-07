@@ -7,64 +7,64 @@ import java.util.Arrays;
 public class i implements b.a {
 
     /* renamed from: n  reason: collision with root package name */
-    private static float f25738n = 0.001f;
+    private static float f25786n = 0.001f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f25739a = -1;
+    private final int f25787a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f25740b = 16;
+    private int f25788b = 16;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f25741c = 16;
+    private int f25789c = 16;
 
     /* renamed from: d  reason: collision with root package name */
-    int[] f25742d = new int[16];
+    int[] f25790d = new int[16];
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f25743e = new int[16];
+    int[] f25791e = new int[16];
 
     /* renamed from: f  reason: collision with root package name */
-    int[] f25744f = new int[16];
+    int[] f25792f = new int[16];
 
     /* renamed from: g  reason: collision with root package name */
-    float[] f25745g = new float[16];
+    float[] f25793g = new float[16];
 
     /* renamed from: h  reason: collision with root package name */
-    int[] f25746h = new int[16];
+    int[] f25794h = new int[16];
 
     /* renamed from: i  reason: collision with root package name */
-    int[] f25747i = new int[16];
+    int[] f25795i = new int[16];
 
     /* renamed from: j  reason: collision with root package name */
-    int f25748j = 0;
+    int f25796j = 0;
 
     /* renamed from: k  reason: collision with root package name */
-    int f25749k = -1;
+    int f25797k = -1;
 
     /* renamed from: l  reason: collision with root package name */
-    private final b f25750l;
+    private final b f25798l;
 
     /* renamed from: m  reason: collision with root package name */
-    protected final c f25751m;
+    protected final c f25799m;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(b bVar, c cVar) {
-        this.f25750l = bVar;
-        this.f25751m = cVar;
+        this.f25798l = bVar;
+        this.f25799m = cVar;
         clear();
     }
 
     private void l(h hVar, int i10) {
         int[] iArr;
-        int i11 = hVar.f25719i % this.f25741c;
-        int[] iArr2 = this.f25742d;
+        int i11 = hVar.f25767i % this.f25789c;
+        int[] iArr2 = this.f25790d;
         int i12 = iArr2[i11];
         if (i12 == -1) {
             iArr2[i11] = i10;
         } else {
             while (true) {
-                iArr = this.f25743e;
+                iArr = this.f25791e;
                 int i13 = iArr[i12];
                 if (i13 == -1) {
                     break;
@@ -73,22 +73,22 @@ public class i implements b.a {
             }
             iArr[i12] = i10;
         }
-        this.f25743e[i10] = -1;
+        this.f25791e[i10] = -1;
     }
 
     private void m(int i10, h hVar, float f10) {
-        this.f25744f[i10] = hVar.f25719i;
-        this.f25745g[i10] = f10;
-        this.f25746h[i10] = -1;
-        this.f25747i[i10] = -1;
-        hVar.a(this.f25750l);
-        hVar.f25729x++;
-        this.f25748j++;
+        this.f25792f[i10] = hVar.f25767i;
+        this.f25793g[i10] = f10;
+        this.f25794h[i10] = -1;
+        this.f25795i[i10] = -1;
+        hVar.a(this.f25798l);
+        hVar.f25777x++;
+        this.f25796j++;
     }
 
     private int n() {
-        for (int i10 = 0; i10 < this.f25740b; i10++) {
-            if (this.f25744f[i10] == -1) {
+        for (int i10 = 0; i10 < this.f25788b; i10++) {
+            if (this.f25792f[i10] == -1) {
                 return i10;
             }
         }
@@ -96,39 +96,39 @@ public class i implements b.a {
     }
 
     private void o() {
-        int i10 = this.f25740b * 2;
-        this.f25744f = Arrays.copyOf(this.f25744f, i10);
-        this.f25745g = Arrays.copyOf(this.f25745g, i10);
-        this.f25746h = Arrays.copyOf(this.f25746h, i10);
-        this.f25747i = Arrays.copyOf(this.f25747i, i10);
-        this.f25743e = Arrays.copyOf(this.f25743e, i10);
-        for (int i11 = this.f25740b; i11 < i10; i11++) {
-            this.f25744f[i11] = -1;
-            this.f25743e[i11] = -1;
+        int i10 = this.f25788b * 2;
+        this.f25792f = Arrays.copyOf(this.f25792f, i10);
+        this.f25793g = Arrays.copyOf(this.f25793g, i10);
+        this.f25794h = Arrays.copyOf(this.f25794h, i10);
+        this.f25795i = Arrays.copyOf(this.f25795i, i10);
+        this.f25791e = Arrays.copyOf(this.f25791e, i10);
+        for (int i11 = this.f25788b; i11 < i10; i11++) {
+            this.f25792f[i11] = -1;
+            this.f25791e[i11] = -1;
         }
-        this.f25740b = i10;
+        this.f25788b = i10;
     }
 
     private void q(int i10, h hVar, float f10) {
         int n10 = n();
         m(n10, hVar, f10);
         if (i10 != -1) {
-            this.f25746h[n10] = i10;
-            int[] iArr = this.f25747i;
+            this.f25794h[n10] = i10;
+            int[] iArr = this.f25795i;
             iArr[n10] = iArr[i10];
             iArr[i10] = n10;
         } else {
-            this.f25746h[n10] = -1;
-            if (this.f25748j > 0) {
-                this.f25747i[n10] = this.f25749k;
-                this.f25749k = n10;
+            this.f25794h[n10] = -1;
+            if (this.f25796j > 0) {
+                this.f25795i[n10] = this.f25797k;
+                this.f25797k = n10;
             } else {
-                this.f25747i[n10] = -1;
+                this.f25795i[n10] = -1;
             }
         }
-        int i11 = this.f25747i[n10];
+        int i11 = this.f25795i[n10];
         if (i11 != -1) {
-            this.f25746h[i11] = n10;
+            this.f25794h[i11] = n10;
         }
         l(hVar, n10);
     }
@@ -136,26 +136,26 @@ public class i implements b.a {
     private void r(h hVar) {
         int[] iArr;
         int i10;
-        int i11 = hVar.f25719i;
-        int i12 = i11 % this.f25741c;
-        int[] iArr2 = this.f25742d;
+        int i11 = hVar.f25767i;
+        int i12 = i11 % this.f25789c;
+        int[] iArr2 = this.f25790d;
         int i13 = iArr2[i12];
         if (i13 != -1) {
-            if (this.f25744f[i13] == i11) {
-                int[] iArr3 = this.f25743e;
+            if (this.f25792f[i13] == i11) {
+                int[] iArr3 = this.f25791e;
                 iArr2[i12] = iArr3[i13];
                 iArr3[i13] = -1;
                 return;
             }
             while (true) {
-                iArr = this.f25743e;
+                iArr = this.f25791e;
                 i10 = iArr[i13];
-                if (i10 == -1 || this.f25744f[i10] == i11) {
+                if (i10 == -1 || this.f25792f[i10] == i11) {
                     break;
                 }
                 i13 = i10;
             }
-            if (i10 != -1 && this.f25744f[i10] == i11) {
+            if (i10 != -1 && this.f25792f[i10] == i11) {
                 iArr[i13] = iArr[i10];
                 iArr[i10] = -1;
             }
@@ -164,39 +164,39 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public void a(h hVar, float f10) {
-        float f11 = f25738n;
+        float f11 = f25786n;
         if (f10 > (-f11) && f10 < f11) {
             f(hVar, true);
             return;
         }
-        if (this.f25748j == 0) {
+        if (this.f25796j == 0) {
             m(0, hVar, f10);
             l(hVar, 0);
-            this.f25749k = 0;
+            this.f25797k = 0;
             return;
         }
         int p10 = p(hVar);
         if (p10 != -1) {
-            this.f25745g[p10] = f10;
+            this.f25793g[p10] = f10;
             return;
         }
-        if (this.f25748j + 1 >= this.f25740b) {
+        if (this.f25796j + 1 >= this.f25788b) {
             o();
         }
-        int i10 = this.f25748j;
-        int i11 = this.f25749k;
+        int i10 = this.f25796j;
+        int i11 = this.f25797k;
         int i12 = -1;
         for (int i13 = 0; i13 < i10; i13++) {
-            int i14 = this.f25744f[i11];
-            int i15 = hVar.f25719i;
+            int i14 = this.f25792f[i11];
+            int i15 = hVar.f25767i;
             if (i14 == i15) {
-                this.f25745g[i11] = f10;
+                this.f25793g[i11] = f10;
                 return;
             }
             if (i14 < i15) {
                 i12 = i11;
             }
-            i11 = this.f25747i[i11];
+            i11 = this.f25795i[i11];
             if (i11 == -1) {
                 break;
             }
@@ -206,17 +206,17 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public void b(h hVar, float f10, boolean z10) {
-        float f11 = f25738n;
+        float f11 = f25786n;
         if (f10 <= (-f11) || f10 >= f11) {
             int p10 = p(hVar);
             if (p10 == -1) {
                 a(hVar, f10);
                 return;
             }
-            float[] fArr = this.f25745g;
+            float[] fArr = this.f25793g;
             float f12 = fArr[p10] + f10;
             fArr[p10] = f12;
-            float f13 = f25738n;
+            float f13 = f25786n;
             if (f12 > (-f13) && f12 < f13) {
                 fArr[p10] = 0.0f;
                 f(hVar, z10);
@@ -226,16 +226,16 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public h c(int i10) {
-        int i11 = this.f25748j;
+        int i11 = this.f25796j;
         if (i11 == 0) {
             return null;
         }
-        int i12 = this.f25749k;
+        int i12 = this.f25797k;
         for (int i13 = 0; i13 < i11; i13++) {
             if (i13 == i10 && i12 != -1) {
-                return this.f25751m.f25678d[this.f25744f[i12]];
+                return this.f25799m.f25726d[this.f25792f[i12]];
             }
-            i12 = this.f25747i[i12];
+            i12 = this.f25795i[i12];
             if (i12 == -1) {
                 break;
             }
@@ -245,32 +245,32 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public void clear() {
-        int i10 = this.f25748j;
+        int i10 = this.f25796j;
         for (int i11 = 0; i11 < i10; i11++) {
             h c10 = c(i11);
             if (c10 != null) {
-                c10.f(this.f25750l);
+                c10.f(this.f25798l);
             }
         }
-        for (int i12 = 0; i12 < this.f25740b; i12++) {
-            this.f25744f[i12] = -1;
-            this.f25743e[i12] = -1;
+        for (int i12 = 0; i12 < this.f25788b; i12++) {
+            this.f25792f[i12] = -1;
+            this.f25791e[i12] = -1;
         }
-        for (int i13 = 0; i13 < this.f25741c; i13++) {
-            this.f25742d[i13] = -1;
+        for (int i13 = 0; i13 < this.f25789c; i13++) {
+            this.f25790d[i13] = -1;
         }
-        this.f25748j = 0;
-        this.f25749k = -1;
+        this.f25796j = 0;
+        this.f25797k = -1;
     }
 
     @Override // h1.b.a
     public void d() {
-        int i10 = this.f25748j;
-        int i11 = this.f25749k;
+        int i10 = this.f25796j;
+        int i11 = this.f25797k;
         for (int i12 = 0; i12 < i10; i12++) {
-            float[] fArr = this.f25745g;
+            float[] fArr = this.f25793g;
             fArr[i11] = fArr[i11] * (-1.0f);
-            i11 = this.f25747i[i11];
+            i11 = this.f25795i[i11];
             if (i11 == -1) {
                 return;
             }
@@ -279,16 +279,16 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public float e(b bVar, boolean z10) {
-        float i10 = i(bVar.f25669a);
-        f(bVar.f25669a, z10);
-        i iVar = (i) bVar.f25673e;
+        float i10 = i(bVar.f25717a);
+        f(bVar.f25717a, z10);
+        i iVar = (i) bVar.f25721e;
         int h10 = iVar.h();
         int i11 = 0;
         int i12 = 0;
         while (i11 < h10) {
-            int i13 = iVar.f25744f[i12];
+            int i13 = iVar.f25792f[i12];
             if (i13 != -1) {
-                b(this.f25751m.f25678d[i13], iVar.f25745g[i12] * i10, z10);
+                b(this.f25799m.f25726d[i13], iVar.f25793g[i12] * i10, z10);
                 i11++;
             }
             i12++;
@@ -303,25 +303,25 @@ public class i implements b.a {
             return 0.0f;
         }
         r(hVar);
-        float f10 = this.f25745g[p10];
-        if (this.f25749k == p10) {
-            this.f25749k = this.f25747i[p10];
+        float f10 = this.f25793g[p10];
+        if (this.f25797k == p10) {
+            this.f25797k = this.f25795i[p10];
         }
-        this.f25744f[p10] = -1;
-        int[] iArr = this.f25746h;
+        this.f25792f[p10] = -1;
+        int[] iArr = this.f25794h;
         int i10 = iArr[p10];
         if (i10 != -1) {
-            int[] iArr2 = this.f25747i;
+            int[] iArr2 = this.f25795i;
             iArr2[i10] = iArr2[p10];
         }
-        int i11 = this.f25747i[p10];
+        int i11 = this.f25795i[p10];
         if (i11 != -1) {
             iArr[i11] = iArr[p10];
         }
-        this.f25748j--;
-        hVar.f25729x--;
+        this.f25796j--;
+        hVar.f25777x--;
         if (z10) {
-            hVar.f(this.f25750l);
+            hVar.f(this.f25798l);
         }
         return f10;
     }
@@ -336,27 +336,27 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public int h() {
-        return this.f25748j;
+        return this.f25796j;
     }
 
     @Override // h1.b.a
     public float i(h hVar) {
         int p10 = p(hVar);
         if (p10 != -1) {
-            return this.f25745g[p10];
+            return this.f25793g[p10];
         }
         return 0.0f;
     }
 
     @Override // h1.b.a
     public float j(int i10) {
-        int i11 = this.f25748j;
-        int i12 = this.f25749k;
+        int i11 = this.f25796j;
+        int i12 = this.f25797k;
         for (int i13 = 0; i13 < i11; i13++) {
             if (i13 == i10) {
-                return this.f25745g[i12];
+                return this.f25793g[i12];
             }
-            i12 = this.f25747i[i12];
+            i12 = this.f25795i[i12];
             if (i12 == -1) {
                 return 0.0f;
             }
@@ -366,12 +366,12 @@ public class i implements b.a {
 
     @Override // h1.b.a
     public void k(float f10) {
-        int i10 = this.f25748j;
-        int i11 = this.f25749k;
+        int i10 = this.f25796j;
+        int i11 = this.f25797k;
         for (int i12 = 0; i12 < i10; i12++) {
-            float[] fArr = this.f25745g;
+            float[] fArr = this.f25793g;
             fArr[i11] = fArr[i11] / f10;
-            i11 = this.f25747i[i11];
+            i11 = this.f25795i[i11];
             if (i11 == -1) {
                 return;
             }
@@ -379,22 +379,22 @@ public class i implements b.a {
     }
 
     public int p(h hVar) {
-        if (this.f25748j != 0 && hVar != null) {
-            int i10 = hVar.f25719i;
-            int i11 = this.f25742d[i10 % this.f25741c];
+        if (this.f25796j != 0 && hVar != null) {
+            int i10 = hVar.f25767i;
+            int i11 = this.f25790d[i10 % this.f25789c];
             if (i11 == -1) {
                 return -1;
             }
-            if (this.f25744f[i11] == i10) {
+            if (this.f25792f[i11] == i10) {
                 return i11;
             }
             do {
-                i11 = this.f25743e[i11];
+                i11 = this.f25791e[i11];
                 if (i11 == -1) {
                     break;
                 }
-            } while (this.f25744f[i11] != i10);
-            if (i11 != -1 && this.f25744f[i11] == i10) {
+            } while (this.f25792f[i11] != i10);
+            if (i11 != -1 && this.f25792f[i11] == i10) {
                 return i11;
             }
         }
@@ -405,21 +405,21 @@ public class i implements b.a {
         String str;
         String str2;
         String str3 = hashCode() + " { ";
-        int i10 = this.f25748j;
+        int i10 = this.f25796j;
         for (int i11 = 0; i11 < i10; i11++) {
             h c10 = c(i11);
             if (c10 != null) {
                 String str4 = str3 + c10 + " = " + j(i11) + " ";
                 int p10 = p(c10);
                 String str5 = str4 + "[p: ";
-                if (this.f25746h[p10] != -1) {
-                    str = str5 + this.f25751m.f25678d[this.f25744f[this.f25746h[p10]]];
+                if (this.f25794h[p10] != -1) {
+                    str = str5 + this.f25799m.f25726d[this.f25792f[this.f25794h[p10]]];
                 } else {
                     str = str5 + ViewProps.NONE;
                 }
                 String str6 = str + ", n: ";
-                if (this.f25747i[p10] != -1) {
-                    str2 = str6 + this.f25751m.f25678d[this.f25744f[this.f25747i[p10]]];
+                if (this.f25795i[p10] != -1) {
+                    str2 = str6 + this.f25799m.f25726d[this.f25792f[this.f25795i[p10]]];
                 } else {
                     str2 = str6 + ViewProps.NONE;
                 }

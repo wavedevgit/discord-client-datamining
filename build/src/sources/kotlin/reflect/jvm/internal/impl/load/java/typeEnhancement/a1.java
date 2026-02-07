@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.types.UnwrappedType;
 public class a1 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a1 f33097d = new a1();
+    public static final a1 f33145d = new a1();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

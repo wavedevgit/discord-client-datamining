@@ -53,7 +53,7 @@ public final class PollData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, l.b(o.f48044e, new Function0() { // from class: n6.c
+    private static final Lazy[] $childSerializers = {null, null, l.b(o.f48092e, new Function0() { // from class: n6.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -223,7 +223,7 @@ public final class PollData {
         compositeEncoder.s(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), pollData.answers);
         compositeEncoder.s(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, pollData.answersInteraction);
         if (compositeEncoder.A(serialDescriptor, 4) || pollData.answerTapAccessibilityLabel != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, pollData.answerTapAccessibilityLabel);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, pollData.answerTapAccessibilityLabel);
         }
         compositeEncoder.s(serialDescriptor, 5, PollLayoutType.Serializer.INSTANCE, pollData.layoutType);
         if (compositeEncoder.A(serialDescriptor, 6) || pollData.canSelectMultipleAnswers) {
@@ -237,7 +237,7 @@ public final class PollData {
             compositeEncoder.z(serialDescriptor, 11, pollData.containerStyle);
         }
         if (compositeEncoder.A(serialDescriptor, 12) || pollData.myAvatarUrl != null) {
-            compositeEncoder.l(serialDescriptor, 12, n2.f31041a, pollData.myAvatarUrl);
+            compositeEncoder.l(serialDescriptor, 12, n2.f31089a, pollData.myAvatarUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 13) || pollData.secondaryAction != null) {
             compositeEncoder.l(serialDescriptor, 13, PollAction$$serializer.INSTANCE, pollData.secondaryAction);
@@ -249,7 +249,7 @@ public final class PollData {
             compositeEncoder.l(serialDescriptor, 15, PollAction$$serializer.INSTANCE, pollData.tertiaryAction);
         }
         if (compositeEncoder.A(serialDescriptor, 16) || pollData.promptLabel != null) {
-            compositeEncoder.l(serialDescriptor, 16, n2.f31041a, pollData.promptLabel);
+            compositeEncoder.l(serialDescriptor, 16, n2.f31089a, pollData.promptLabel);
         }
     }
 

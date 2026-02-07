@@ -7,19 +7,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f36394e;
+    private final boolean f36442e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(q handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f36394e = handler.f0();
+        this.f36442e = handler.f0();
     }
 
     @Override // ln.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putBoolean("pointerInside", this.f36394e);
+        eventData.putBoolean("pointerInside", this.f36442e);
     }
 }

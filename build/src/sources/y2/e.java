@@ -65,7 +65,7 @@ public final class e extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54878a[dVar.ordinal()]) {
+        switch (c.f54926a[dVar.ordinal()]) {
             case 1:
                 return new e();
             case 2:

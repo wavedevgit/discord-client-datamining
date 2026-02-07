@@ -5,7 +5,7 @@ import os.f1;
 final class b implements f1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f35020d = new b();
+    public static final b f35068d = new b();
 
     private b() {
     }

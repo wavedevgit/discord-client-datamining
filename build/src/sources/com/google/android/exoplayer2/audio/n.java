@@ -229,7 +229,7 @@ public final class n extends i {
     protected void k() {
         this.f12274m = false;
         this.f12279r = 0;
-        byte[] bArr = w0.f39017f;
+        byte[] bArr = w0.f39065f;
         this.f12275n = bArr;
         this.f12276o = bArr;
     }
@@ -247,7 +247,7 @@ public final class n extends i {
         this.f12270i = j10;
         this.f12271j = j11;
         this.f12272k = s10;
-        byte[] bArr = w0.f39017f;
+        byte[] bArr = w0.f39065f;
         this.f12275n = bArr;
         this.f12276o = bArr;
     }

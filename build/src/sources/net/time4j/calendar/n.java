@@ -8,19 +8,19 @@ import rt.z;
 final class n implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f39198d;
+    private final Map f39246d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final rt.p f39199e;
+    private final rt.p f39247e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(rt.k kVar, rt.p pVar) {
-        this.f39198d = Collections.singletonMap("calendrical", kVar);
-        this.f39199e = pVar;
+        this.f39246d = Collections.singletonMap("calendrical", kVar);
+        this.f39247e = pVar;
     }
 
     private rt.k b(rt.q qVar) {
-        return (rt.k) this.f39198d.get("calendrical");
+        return (rt.k) this.f39246d.get("calendrical");
     }
 
     private static Integer j(long j10) {
@@ -63,20 +63,20 @@ final class n implements z {
     /* renamed from: e */
     public Integer k(rt.q qVar) {
         rt.k b10 = b(qVar);
-        return j(b10.c(((rt.q) b10.b(b10.a())).C(this.f39199e, 1)));
+        return j(b10.c(((rt.q) b10.b(b10.a())).C(this.f39247e, 1)));
     }
 
     @Override // rt.z
     /* renamed from: f */
     public Integer o(rt.q qVar) {
         rt.k b10 = b(qVar);
-        return j(b10.c(((rt.q) b10.b(b10.d())).C(this.f39199e, 1)));
+        return j(b10.c(((rt.q) b10.b(b10.d())).C(this.f39247e, 1)));
     }
 
     @Override // rt.z
     /* renamed from: h */
     public Integer y(rt.q qVar) {
-        return j(b(qVar).c(qVar.C(this.f39199e, 1)));
+        return j(b(qVar).c(qVar.C(this.f39247e, 1)));
     }
 
     @Override // rt.z

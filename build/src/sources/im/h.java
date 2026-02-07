@@ -6,16 +6,16 @@ import com.facebook.react.bridge.Promise;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private Promise f26837a;
+    private Promise f26885a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f26838b;
+    private String f26886b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f26839c;
+    private final String f26887c;
 
     public h(String str) {
-        this.f26839c = str;
+        this.f26887c = str;
     }
 
     private void f(Promise promise, String str) {
@@ -23,12 +23,12 @@ public class h {
     }
 
     private void g() {
-        this.f26838b = null;
-        this.f26837a = null;
+        this.f26886b = null;
+        this.f26885a = null;
     }
 
     public String a() {
-        return this.f26838b;
+        return this.f26886b;
     }
 
     public void b(Exception exc) {
@@ -40,7 +40,7 @@ public class h {
         } else {
             str = "unknown error";
         }
-        d(this.f26838b, str, exc);
+        d(this.f26886b, str, exc);
     }
 
     public void c(String str, String str2) {
@@ -48,9 +48,9 @@ public class h {
     }
 
     public void d(String str, String str2, Exception exc) {
-        Promise promise = this.f26837a;
+        Promise promise = this.f26885a;
         if (promise == null) {
-            Log.e(this.f26839c, "cannot reject promise because it's null");
+            Log.e(this.f26887c, "cannot reject promise because it's null");
             return;
         }
         g();
@@ -62,9 +62,9 @@ public class h {
     }
 
     public void h(Object obj) {
-        Promise promise = this.f26837a;
+        Promise promise = this.f26885a;
         if (promise == null) {
-            Log.e(this.f26839c, "cannot resolve promise because it's null");
+            Log.e(this.f26887c, "cannot resolve promise because it's null");
             return;
         }
         g();
@@ -72,12 +72,12 @@ public class h {
     }
 
     public boolean i(Promise promise, String str) {
-        if (this.f26837a != null) {
+        if (this.f26885a != null) {
             f(promise, str);
             return false;
         }
-        this.f26837a = promise;
-        this.f26838b = str;
+        this.f26885a = promise;
+        this.f26886b = str;
         return true;
     }
 }

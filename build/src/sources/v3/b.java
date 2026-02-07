@@ -23,31 +23,31 @@ import u3.g;
 public final class b {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final a f52106i = new a(null);
+    private static final a f52154i = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f52107a;
+    private final f f52155a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f52108b;
+    private final Function0 f52156b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f52109c;
+    private final c f52157c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f52110d;
+    private final Map f52158d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f52111e;
+    private boolean f52159e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Bundle f52112f;
+    private Bundle f52160f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f52113g;
+    private boolean f52161g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f52114h;
+    private boolean f52162h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -62,11 +62,11 @@ public final class b {
     public b(f owner, Function0 onAttach) {
         Intrinsics.checkNotNullParameter(owner, "owner");
         Intrinsics.checkNotNullParameter(onAttach, "onAttach");
-        this.f52107a = owner;
-        this.f52108b = onAttach;
-        this.f52109c = new c();
-        this.f52110d = new LinkedHashMap();
-        this.f52114h = true;
+        this.f52155a = owner;
+        this.f52156b = onAttach;
+        this.f52157c = new c();
+        this.f52158d = new LinkedHashMap();
+        this.f52162h = true;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -74,17 +74,17 @@ public final class b {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<unused var>");
         Intrinsics.checkNotNullParameter(event, "event");
         if (event == Lifecycle.a.ON_START) {
-            bVar.f52114h = true;
+            bVar.f52162h = true;
         } else if (event == Lifecycle.a.ON_STOP) {
-            bVar.f52114h = false;
+            bVar.f52162h = false;
         }
     }
 
     public final Bundle c(String key) {
         Bundle bundle;
         Intrinsics.checkNotNullParameter(key, "key");
-        if (this.f52113g) {
-            Bundle bundle2 = this.f52112f;
+        if (this.f52161g) {
+            Bundle bundle2 = this.f52160f;
             if (bundle2 == null) {
                 return null;
             }
@@ -96,7 +96,7 @@ public final class b {
             }
             g.e(g.a(bundle2), key);
             if (u3.b.f(u3.b.a(bundle2))) {
-                this.f52112f = null;
+                this.f52160f = null;
             }
             return bundle;
         }
@@ -106,8 +106,8 @@ public final class b {
     public final SavedStateRegistry.b d(String key) {
         SavedStateRegistry.b bVar;
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f52109c) {
-            Iterator it = this.f52110d.entrySet().iterator();
+        synchronized (this.f52157c) {
+            Iterator it = this.f52158d.entrySet().iterator();
             do {
                 bVar = null;
                 if (!it.hasNext()) {
@@ -125,20 +125,20 @@ public final class b {
     }
 
     public final boolean e() {
-        return this.f52114h;
+        return this.f52162h;
     }
 
     public final void f() {
-        if (this.f52107a.getLifecycle().b() == Lifecycle.State.f4847e) {
-            if (!this.f52111e) {
-                this.f52108b.invoke();
-                this.f52107a.getLifecycle().a(new m() { // from class: v3.a
+        if (this.f52155a.getLifecycle().b() == Lifecycle.State.f4847e) {
+            if (!this.f52159e) {
+                this.f52156b.invoke();
+                this.f52155a.getLifecycle().a(new m() { // from class: v3.a
                     @Override // androidx.lifecycle.m
                     public final void k(LifecycleOwner lifecycleOwner, Lifecycle.a aVar) {
                         b.g(b.this, lifecycleOwner, aVar);
                     }
                 });
-                this.f52111e = true;
+                this.f52159e = true;
                 return;
             }
             throw new IllegalStateException("SavedStateRegistry was already attached.");
@@ -147,11 +147,11 @@ public final class b {
     }
 
     public final void h(Bundle bundle) {
-        if (!this.f52111e) {
+        if (!this.f52159e) {
             f();
         }
-        if (!this.f52107a.getLifecycle().b().d(Lifecycle.State.f4849o)) {
-            if (!this.f52113g) {
+        if (!this.f52155a.getLifecycle().b().d(Lifecycle.State.f4849o)) {
+            if (!this.f52161g) {
                 Bundle bundle2 = null;
                 if (bundle != null) {
                     Bundle a10 = u3.b.a(bundle);
@@ -159,13 +159,13 @@ public final class b {
                         bundle2 = u3.b.c(a10, "androidx.lifecycle.BundlableSavedStateRegistry.key");
                     }
                 }
-                this.f52112f = bundle2;
-                this.f52113g = true;
+                this.f52160f = bundle2;
+                this.f52161g = true;
                 return;
             }
             throw new IllegalStateException("SavedStateRegistry was already restored.");
         }
-        throw new IllegalStateException(("performRestore cannot be called when owner is " + this.f52107a.getLifecycle().b()).toString());
+        throw new IllegalStateException(("performRestore cannot be called when owner is " + this.f52155a.getLifecycle().b()).toString());
     }
 
     public final void i(Bundle outBundle) {
@@ -183,16 +183,16 @@ public final class b {
         }
         Bundle a10 = w1.c.a((Pair[]) Arrays.copyOf(pairArr, pairArr.length));
         Bundle a11 = g.a(a10);
-        Bundle bundle = this.f52112f;
+        Bundle bundle = this.f52160f;
         if (bundle != null) {
             g.b(a11, bundle);
         }
-        synchronized (this.f52109c) {
+        synchronized (this.f52157c) {
             try {
-                for (Map.Entry entry2 : this.f52110d.entrySet()) {
+                for (Map.Entry entry2 : this.f52158d.entrySet()) {
                     g.c(a11, (String) entry2.getKey(), ((SavedStateRegistry.b) entry2.getValue()).a());
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -205,10 +205,10 @@ public final class b {
     public final void j(String key, SavedStateRegistry.b provider) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(provider, "provider");
-        synchronized (this.f52109c) {
-            if (!this.f52110d.containsKey(key)) {
-                this.f52110d.put(key, provider);
-                Unit unit = Unit.f32008a;
+        synchronized (this.f52157c) {
+            if (!this.f52158d.containsKey(key)) {
+                this.f52158d.put(key, provider);
+                Unit unit = Unit.f32056a;
             } else {
                 throw new IllegalArgumentException("SavedStateProvider with the given key is already registered");
             }
@@ -217,8 +217,8 @@ public final class b {
 
     public final void k(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        synchronized (this.f52109c) {
-            SavedStateRegistry.b bVar = (SavedStateRegistry.b) this.f52110d.remove(key);
+        synchronized (this.f52157c) {
+            SavedStateRegistry.b bVar = (SavedStateRegistry.b) this.f52158d.remove(key);
         }
     }
 }

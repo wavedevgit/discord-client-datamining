@@ -72,14 +72,14 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
                 if (this.f19553d == 0) {
                     kotlin.c.b(obj);
                     this.f19554e.A(this.f19555i, null);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0253a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((C0253a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -166,7 +166,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
             L4d:
                 return r0
             L4e:
-                kotlin.Unit r7 = kotlin.Unit.f32008a
+                kotlin.Unit r7 = kotlin.Unit.f32056a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -174,7 +174,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -192,8 +192,8 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void G(ThemeableLottieAnimationView themeableLottieAnimationView, l5.i iVar) {
-        themeableLottieAnimationView.k(new e("**"), a0.f35765a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
-        themeableLottieAnimationView.k(new e("**"), a0.f35766b, new b(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), a0.f35813a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), a0.f35814b, new b(themeableLottieAnimationView));
     }
 
     public final void I(int i10, int i11) {

@@ -10,19 +10,19 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class j0 extends d1 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f31016c;
+    private final SerialDescriptor f31064c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j0(KSerializer kSerializer, KSerializer vSerializer) {
         super(kSerializer, vSerializer, null);
         Intrinsics.checkNotNullParameter(kSerializer, "kSerializer");
         Intrinsics.checkNotNullParameter(vSerializer, "vSerializer");
-        this.f31016c = new i0(kSerializer.getDescriptor(), vSerializer.getDescriptor());
+        this.f31064c = new i0(kSerializer.getDescriptor(), vSerializer.getDescriptor());
     }
 
     @Override // jt.d1, kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f31016c;
+        return this.f31064c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/contact_sync/native/components/ContactSyncSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun82070: for (var _fun82070_ip = 0;;) switch (_fun82070_ip) {
+        _fun82501: for (var _fun82501_ip = 0;;) switch (_fun82501_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var13;
                 var14 = var19;
                 if (var14) {
-                    _fun82070_ip = 52;
-                    continue _fun82070
+                    _fun82501_ip = 52;
+                    continue _fun82501
                 }
             case 49:
                 var14 = var13;
@@ -426,4 +426,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10335, 660, 33, 1297, 671, 5383, 1234, 3943, 10344, 5211, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10380, 660, 33, 1297, 671, 5430, 1234, 3942, 10389, 5258, 2]);

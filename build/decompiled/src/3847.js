@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var12 = dependencyMap;
     var0 = function arg0, arg1, arg2() {
-        _fun34536: for (var _fun34536_ip = 0;;) switch (_fun34536_ip) {
+        _fun34590: for (var _fun34590_ip = 0;;) switch (_fun34590_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -17,21 +17,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot15;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun34536_ip = 51;
-                    continue _fun34536
+                    _fun34590_ip = 51;
+                    continue _fun34590
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun34536_ip = 92;
-                continue _fun34536;
+                _fun34590_ip = 92;
+                continue _fun34590;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun34536_ip = 71;
-                    continue _fun34536
+                    _fun34590_ip = 71;
+                    continue _fun34590
                 }
             case 67:
                 var5 = new Array(0);
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot14 = var0;
     var0 = function() {
-        _fun34537: for (var _fun34537_ip = 0;;) switch (_fun34537_ip) {
+        _fun34591: for (var _fun34591_ip = 0;;) switch (_fun34591_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun34537_ip = 74;
-                continue _fun34537;
+                _fun34591_ip = 74;
+                continue _fun34591;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -120,7 +120,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs1(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{rotate:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))},{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{rotate:'-90deg'},{translateX:values.targetWidth/2-values.targetHeight/2},{translateY:-(values.targetWidth/2-values.targetHeight/2)}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs1(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX+values.windowWidth,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot6 = var3;
     var10 = 6;
@@ -129,7 +129,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34541: for (var _fun34541_ip = 0;;) switch (_fun34541_ip) {
+            _fun34595: for (var _fun34595_ip = 0;;) switch (_fun34595_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -153,16 +153,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34541_ip = 87;
-                        continue _fun34541
+                        _fun34595_ip = 87;
+                        continue _fun34595
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34541_ip = 72;
-                        continue _fun34541
+                        _fun34595_ip = 72;
+                        continue _fun34595
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -201,67 +201,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var7 = arg0;
+                            var2 = arg0;
                             var0 = {};
                             var3 = {};
-                            var10 = _closure4_slot0;
-                            var9 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var6 = _closure4_slot2;
-                            var8 = undefined;
-                            var2 = 1;
-                            var2 = var11.bind(var8)(var2, var6);
-                            var2 = var10.bind(var8)(var9, var2);
-                            var3.opacity = var2;
-                            var2 = {};
-                            var4 = '0deg';
-                            var4 = var11.bind(var8)(var4, var6);
-                            var4 = var10.bind(var8)(var9, var4);
-                            var2.rotate = var4;
-                            var4 = new Array(3);
-                            var4[0] = var2;
-                            var5 = {};
-                            var2 = 0;
-                            var12 = var11.bind(var8)(var2, var6);
-                            var12 = var10.bind(var8)(var9, var12);
-                            var5.translateX = var12;
-                            var4[1] = var5;
-                            var5 = {};
-                            var6 = var11.bind(var8)(var2, var6);
-                            var6 = var10.bind(var8)(var9, var6);
-                            var5.translateY = var6;
-                            var4[2] = var5;
-                            var3.transform = var4;
+                            var7 = _closure4_slot0;
+                            var6 = _closure4_slot3;
+                            var9 = _closure4_slot1;
+                            var8 = var2.targetOriginX;
+                            var4 = _closure4_slot2;
+                            var5 = undefined;
+                            var4 = var9.bind(var5)(var8, var4);
+                            var4 = var7.bind(var5)(var6, var4);
+                            var3.originX = var4;
                             var0.animations = var3;
                             var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '-90deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var9 = 2;
-                            var10 = var8 / var9;
-                            var8 = var7.targetHeight;
-                            var8 = var8 / var9;
-                            var8 = var10 - var8;
-                            var6.translateX = var8;
-                            var2[1] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var8 = var8 / var9;
-                            var7 = var7.targetHeight;
-                            var7 = var7 / var9;
-                            var7 = var8 - var7;
-                            var7 = -var7;
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var6 = var2.targetOriginX;
+                            var2 = var2.windowWidth;
+                            var2 = var6 + var2;
+                            var3.originX = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -277,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 1900668823867.0;
+                        var2 = 10760418577189.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot6;
                         var0.__initData = var1;
@@ -317,10 +277,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var9 = var3.bind(var0)(var4);
-    var3 = 'RotateInDownLeft';
+    var3 = 'SlideInRight';
     var9.presetName = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs2(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{rotate:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))},{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{rotate:'90deg'},{translateX:-(values.targetWidth/2-values.targetHeight/2)},{translateY:-(values.targetWidth/2-values.targetHeight/2)}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs2(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX-values.windowWidth,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot7 = var3;
     var3 = var12[var10];
@@ -328,7 +288,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34546: for (var _fun34546_ip = 0;;) switch (_fun34546_ip) {
+            _fun34600: for (var _fun34600_ip = 0;;) switch (_fun34600_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -352,16 +312,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34546_ip = 87;
-                        continue _fun34546
+                        _fun34600_ip = 87;
+                        continue _fun34600
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34546_ip = 72;
-                        continue _fun34546
+                        _fun34600_ip = 72;
+                        continue _fun34600
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -400,68 +360,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var7 = arg0;
+                            var2 = arg0;
                             var0 = {};
                             var3 = {};
-                            var10 = _closure4_slot0;
-                            var9 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var6 = _closure4_slot2;
-                            var8 = undefined;
-                            var2 = 1;
-                            var2 = var11.bind(var8)(var2, var6);
-                            var2 = var10.bind(var8)(var9, var2);
-                            var3.opacity = var2;
-                            var2 = {};
-                            var4 = '0deg';
-                            var4 = var11.bind(var8)(var4, var6);
-                            var4 = var10.bind(var8)(var9, var4);
-                            var2.rotate = var4;
-                            var4 = new Array(3);
-                            var4[0] = var2;
-                            var5 = {};
-                            var2 = 0;
-                            var12 = var11.bind(var8)(var2, var6);
-                            var12 = var10.bind(var8)(var9, var12);
-                            var5.translateX = var12;
-                            var4[1] = var5;
-                            var5 = {};
-                            var6 = var11.bind(var8)(var2, var6);
-                            var6 = var10.bind(var8)(var9, var6);
-                            var5.translateY = var6;
-                            var4[2] = var5;
-                            var3.transform = var4;
+                            var7 = _closure4_slot0;
+                            var6 = _closure4_slot3;
+                            var9 = _closure4_slot1;
+                            var8 = var2.targetOriginX;
+                            var4 = _closure4_slot2;
+                            var5 = undefined;
+                            var4 = var9.bind(var5)(var8, var4);
+                            var4 = var7.bind(var5)(var6, var4);
+                            var3.originX = var4;
                             var0.animations = var3;
                             var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '90deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var9 = 2;
-                            var10 = var8 / var9;
-                            var8 = var7.targetHeight;
-                            var8 = var8 / var9;
-                            var8 = var10 - var8;
-                            var8 = -var8;
-                            var6.translateX = var8;
-                            var2[1] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var8 = var8 / var9;
-                            var7 = var7.targetHeight;
-                            var7 = var7 / var9;
-                            var7 = var8 - var7;
-                            var7 = -var7;
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var6 = var2.targetOriginX;
+                            var2 = var2.windowWidth;
+                            var2 = var6 - var2;
+                            var3.originX = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -477,7 +396,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 1066189129817.0;
+                        var2 = 2180499422144.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot7;
                         var0.__initData = var1;
@@ -517,10 +436,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var8 = var3.bind(var0)(var4);
-    var3 = 'RotateInDownRight';
+    var3 = 'SlideInLeft';
     var8.presetName = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs3(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{rotate:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))},{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{rotate:'90deg'},{translateX:values.targetWidth/2-values.targetHeight/2},{translateY:values.targetWidth/2-values.targetHeight/2}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs3(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.max(values.currentOriginX+values.windowWidth,values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot8 = var3;
     var3 = var12[var10];
@@ -528,7 +447,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34551: for (var _fun34551_ip = 0;;) switch (_fun34551_ip) {
+            _fun34605: for (var _fun34605_ip = 0;;) switch (_fun34605_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -552,16 +471,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34551_ip = 87;
-                        continue _fun34551
+                        _fun34605_ip = 87;
+                        continue _fun34605
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34551_ip = 72;
-                        continue _fun34551
+                        _fun34605_ip = 72;
+                        continue _fun34605
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -600,66 +519,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var7 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var3 = {};
-                            var10 = _closure4_slot0;
-                            var9 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var6 = _closure4_slot2;
-                            var8 = undefined;
-                            var2 = 1;
-                            var2 = var11.bind(var8)(var2, var6);
-                            var2 = var10.bind(var8)(var9, var2);
-                            var3.opacity = var2;
-                            var2 = {};
-                            var4 = '0deg';
-                            var4 = var11.bind(var8)(var4, var6);
-                            var4 = var10.bind(var8)(var9, var4);
-                            var2.rotate = var4;
-                            var4 = new Array(3);
-                            var4[0] = var2;
-                            var5 = {};
-                            var2 = 0;
-                            var12 = var11.bind(var8)(var2, var6);
-                            var12 = var10.bind(var8)(var9, var12);
-                            var5.translateX = var12;
-                            var4[1] = var5;
-                            var5 = {};
-                            var6 = var11.bind(var8)(var2, var6);
-                            var6 = var10.bind(var8)(var9, var6);
-                            var5.translateY = var6;
-                            var4[2] = var5;
-                            var3.transform = var4;
-                            var0.animations = var3;
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
                             var3 = global;
+                            var11 = var3.Math;
+                            var9 = var11.max;
+                            var6 = var2.currentOriginX;
+                            var5 = var2.windowWidth;
+                            var6 = var6 + var5;
+                            var5 = var2.windowWidth;
+                            var9 = var9.bind(var11)(var6, var5);
+                            var5 = _closure4_slot2;
+                            var6 = undefined;
+                            var5 = var10.bind(var6)(var9, var5);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.originX = var5;
+                            var0.animations = var4;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '90deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var9 = 2;
-                            var10 = var8 / var9;
-                            var8 = var7.targetHeight;
-                            var8 = var8 / var9;
-                            var8 = var10 - var8;
-                            var6.translateX = var8;
-                            var2[1] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var8 = var8 / var9;
-                            var7 = var7.targetHeight;
-                            var7 = var7 / var9;
-                            var7 = var8 - var7;
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var2 = var2.currentOriginX;
+                            var3.originX = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -675,7 +559,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 11999620665656.0;
+                        var2 = 12812296890492.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot8;
                         var0.__initData = var1;
@@ -715,10 +599,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var7 = var3.bind(var0)(var4);
-    var3 = 'RotateInUpLeft';
+    var3 = 'SlideOutRight';
     var7.presetName = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs4(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{rotate:delayFunction(delay,animation('0deg',config))},{translateX:delayFunction(delay,animation(0,config))},{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{rotate:'-90deg'},{translateX:-(values.targetWidth/2-values.targetHeight/2)},{translateY:values.targetWidth/2-values.targetHeight/2}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs4(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.min(values.currentOriginX-values.windowWidth,-values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot9 = var3;
     var3 = var12[var10];
@@ -726,7 +610,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34556: for (var _fun34556_ip = 0;;) switch (_fun34556_ip) {
+            _fun34610: for (var _fun34610_ip = 0;;) switch (_fun34610_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -750,16 +634,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34556_ip = 87;
-                        continue _fun34556
+                        _fun34610_ip = 87;
+                        continue _fun34610
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34556_ip = 72;
-                        continue _fun34556
+                        _fun34610_ip = 72;
+                        continue _fun34610
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -798,67 +682,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var7 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var3 = {};
-                            var10 = _closure4_slot0;
-                            var9 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var6 = _closure4_slot2;
-                            var8 = undefined;
-                            var2 = 1;
-                            var2 = var11.bind(var8)(var2, var6);
-                            var2 = var10.bind(var8)(var9, var2);
-                            var3.opacity = var2;
-                            var2 = {};
-                            var4 = '0deg';
-                            var4 = var11.bind(var8)(var4, var6);
-                            var4 = var10.bind(var8)(var9, var4);
-                            var2.rotate = var4;
-                            var4 = new Array(3);
-                            var4[0] = var2;
-                            var5 = {};
-                            var2 = 0;
-                            var12 = var11.bind(var8)(var2, var6);
-                            var12 = var10.bind(var8)(var9, var12);
-                            var5.translateX = var12;
-                            var4[1] = var5;
-                            var5 = {};
-                            var6 = var11.bind(var8)(var2, var6);
-                            var6 = var10.bind(var8)(var9, var6);
-                            var5.translateY = var6;
-                            var4[2] = var5;
-                            var3.transform = var4;
-                            var0.animations = var3;
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
                             var3 = global;
+                            var11 = var3.Math;
+                            var9 = var11.min;
+                            var6 = var2.currentOriginX;
+                            var5 = var2.windowWidth;
+                            var6 = var6 - var5;
+                            var5 = var2.windowWidth;
+                            var5 = -var5;
+                            var9 = var9.bind(var11)(var6, var5);
+                            var5 = _closure4_slot2;
+                            var6 = undefined;
+                            var5 = var10.bind(var6)(var9, var5);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.originX = var5;
+                            var0.animations = var4;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '-90deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var9 = 2;
-                            var10 = var8 / var9;
-                            var8 = var7.targetHeight;
-                            var8 = var8 / var9;
-                            var8 = var10 - var8;
-                            var8 = -var8;
-                            var6.translateX = var8;
-                            var2[1] = var6;
-                            var6 = {};
-                            var8 = var7.targetWidth;
-                            var8 = var8 / var9;
-                            var7 = var7.targetHeight;
-                            var7 = var7 / var9;
-                            var7 = var8 - var7;
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var2 = var2.currentOriginX;
+                            var3.originX = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -874,7 +723,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 15143335307550.0;
+                        var2 = 6273927341006.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot9;
                         var0.__initData = var1;
@@ -914,10 +763,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var6 = var3.bind(var0)(var4);
-    var3 = 'RotateInUpRight';
+    var3 = 'SlideOutLeft';
     var6.presetName = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs5(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{rotate:delayFunction(delay,animation('90deg',config))},{translateX:delayFunction(delay,animation(values.currentWidth/2-values.currentHeight/2,config))},{translateY:delayFunction(delay,animation(values.currentWidth/2-values.currentHeight/2,config))}]},initialValues:{opacity:1,transform:[{rotate:'0deg'},{translateX:0},{translateY:0}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs5(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:-values.windowHeight,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot10 = var3;
     var3 = var12[var10];
@@ -925,7 +774,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34561: for (var _fun34561_ip = 0;;) switch (_fun34561_ip) {
+            _fun34615: for (var _fun34615_ip = 0;;) switch (_fun34615_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -949,16 +798,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34561_ip = 87;
-                        continue _fun34561
+                        _fun34615_ip = 87;
+                        continue _fun34615
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34561_ip = 72;
-                        continue _fun34561
+                        _fun34615_ip = 72;
+                        continue _fun34615
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -997,66 +846,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var5 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var2 = {};
-                            var9 = _closure4_slot0;
-                            var8 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var10 = _closure4_slot2;
-                            var6 = undefined;
-                            var7 = 0;
-                            var3 = var11.bind(var6)(var7, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var2.opacity = var3;
-                            var4 = {};
-                            var3 = '90deg';
-                            var3 = var11.bind(var6)(var3, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var4.rotate = var3;
-                            var3 = new Array(3);
-                            var3[0] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var13 = 2;
-                            var14 = var12 / var13;
-                            var12 = var5.currentHeight;
-                            var12 = var12 / var13;
-                            var12 = var14 - var12;
-                            var12 = var11.bind(var6)(var12, var10);
-                            var12 = var9.bind(var6)(var8, var12);
-                            var4.translateX = var12;
-                            var3[1] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var12 = var12 / var13;
-                            var5 = var5.currentHeight;
-                            var5 = var5 / var13;
-                            var5 = var12 - var5;
-                            var5 = var11.bind(var6)(var5, var10);
-                            var5 = var9.bind(var6)(var8, var5);
-                            var4.translateY = var5;
-                            var3[2] = var4;
-                            var2.transform = var3;
-                            var0.animations = var2;
-                            var2 = global;
-                            var5 = var2.Object;
+                            var3 = {};
+                            var7 = _closure4_slot0;
+                            var6 = _closure4_slot3;
+                            var9 = _closure4_slot1;
+                            var8 = var2.targetOriginY;
+                            var4 = _closure4_slot2;
+                            var5 = undefined;
+                            var4 = var9.bind(var5)(var8, var4);
+                            var4 = var7.bind(var5)(var6, var4);
+                            var3.originY = var4;
+                            var0.animations = var3;
+                            var3 = global;
+                            var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = 1;
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '0deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var6.translateX = var7;
-                            var2[1] = var6;
-                            var6 = {};
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var2 = var2.windowHeight;
+                            var2 = -var2;
+                            var3.originY = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -1072,7 +881,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 11712932777694.0;
+                        var2 = 9846507393044.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot10;
                         var0.__initData = var1;
@@ -1112,10 +921,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var5 = var3.bind(var0)(var4);
-    var3 = 'RotateOutDownLeft';
+    var3 = 'SlideInUp';
     var5.presetName = var3;
     var3 = {};
-    var4 = "function pnpm_RotateTs6(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{rotate:delayFunction(delay,animation('-90deg',config))},{translateX:delayFunction(delay,animation(-(values.currentWidth/2-values.currentHeight/2),config))},{translateY:delayFunction(delay,animation(values.currentWidth/2-values.currentHeight/2,config))}]},initialValues:{opacity:1,transform:[{rotate:'0deg'},{translateX:0},{translateY:0}],...initialValues},callback:callback};}";
+    var4 = 'function pnpm_SlideTs6(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:values.targetOriginY+values.windowHeight,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot11 = var3;
     var3 = var12[var10];
@@ -1123,7 +932,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34566: for (var _fun34566_ip = 0;;) switch (_fun34566_ip) {
+            _fun34620: for (var _fun34620_ip = 0;;) switch (_fun34620_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1147,16 +956,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34566_ip = 87;
-                        continue _fun34566
+                        _fun34620_ip = 87;
+                        continue _fun34620
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34566_ip = 72;
-                        continue _fun34566
+                        _fun34620_ip = 72;
+                        continue _fun34620
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -1195,67 +1004,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var5 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var2 = {};
-                            var9 = _closure4_slot0;
-                            var8 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var10 = _closure4_slot2;
-                            var6 = undefined;
-                            var7 = 0;
-                            var3 = var11.bind(var6)(var7, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var2.opacity = var3;
-                            var4 = {};
-                            var3 = '-90deg';
-                            var3 = var11.bind(var6)(var3, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var4.rotate = var3;
-                            var3 = new Array(3);
-                            var3[0] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var13 = 2;
-                            var14 = var12 / var13;
-                            var12 = var5.currentHeight;
-                            var12 = var12 / var13;
-                            var12 = var14 - var12;
-                            var12 = -var12;
-                            var12 = var11.bind(var6)(var12, var10);
-                            var12 = var9.bind(var6)(var8, var12);
-                            var4.translateX = var12;
-                            var3[1] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var12 = var12 / var13;
-                            var5 = var5.currentHeight;
-                            var5 = var5 / var13;
-                            var5 = var12 - var5;
-                            var5 = var11.bind(var6)(var5, var10);
-                            var5 = var9.bind(var6)(var8, var5);
-                            var4.translateY = var5;
-                            var3[2] = var4;
-                            var2.transform = var3;
-                            var0.animations = var2;
-                            var2 = global;
-                            var5 = var2.Object;
+                            var3 = {};
+                            var7 = _closure4_slot0;
+                            var6 = _closure4_slot3;
+                            var9 = _closure4_slot1;
+                            var8 = var2.targetOriginY;
+                            var4 = _closure4_slot2;
+                            var5 = undefined;
+                            var4 = var9.bind(var5)(var8, var4);
+                            var4 = var7.bind(var5)(var6, var4);
+                            var3.originY = var4;
+                            var0.animations = var3;
+                            var3 = global;
+                            var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = 1;
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '0deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var6.translateX = var7;
-                            var2[1] = var6;
-                            var6 = {};
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var6 = var2.targetOriginY;
+                            var2 = var2.windowHeight;
+                            var2 = var6 + var2;
+                            var3.originY = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -1271,7 +1040,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 16449003298460.0;
+                        var2 = 9348728185019.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot11;
                         var0.__initData = var1;
@@ -1311,10 +1080,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var4 = var3.bind(var0)(var4);
-    var3 = 'RotateOutDownRight';
+    var3 = 'SlideInDown';
     var4.presetName = var3;
     var3 = {};
-    var13 = "function pnpm_RotateTs7(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{rotate:delayFunction(delay,animation('-90deg',config))},{translateX:delayFunction(delay,animation(values.currentWidth/2-values.currentHeight/2,config))},{translateY:delayFunction(delay,animation(-(values.currentWidth/2-values.currentHeight/2),config))}]},initialValues:{opacity:1,transform:[{rotate:'0deg'},{translateX:0},{translateY:0}],...initialValues},callback:callback};}";
+    var13 = 'function pnpm_SlideTs7(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.min(values.currentOriginY-values.windowHeight,-values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}';
     var3.code = var13;
     var _closure1_slot12 = var3;
     var3 = var12[var10];
@@ -1322,7 +1091,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var13 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34571: for (var _fun34571_ip = 0;;) switch (_fun34571_ip) {
+            _fun34625: for (var _fun34625_ip = 0;;) switch (_fun34625_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1346,16 +1115,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34571_ip = 87;
-                        continue _fun34571
+                        _fun34625_ip = 87;
+                        continue _fun34625
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34571_ip = 72;
-                        continue _fun34571
+                        _fun34625_ip = 72;
+                        continue _fun34625
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -1394,67 +1163,32 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var5 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var2 = {};
-                            var9 = _closure4_slot0;
-                            var8 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var10 = _closure4_slot2;
-                            var6 = undefined;
-                            var7 = 0;
-                            var3 = var11.bind(var6)(var7, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var2.opacity = var3;
                             var4 = {};
-                            var3 = '-90deg';
-                            var3 = var11.bind(var6)(var3, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var4.rotate = var3;
-                            var3 = new Array(3);
-                            var3[0] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var13 = 2;
-                            var14 = var12 / var13;
-                            var12 = var5.currentHeight;
-                            var12 = var12 / var13;
-                            var12 = var14 - var12;
-                            var12 = var11.bind(var6)(var12, var10);
-                            var12 = var9.bind(var6)(var8, var12);
-                            var4.translateX = var12;
-                            var3[1] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var12 = var12 / var13;
-                            var5 = var5.currentHeight;
-                            var5 = var5 / var13;
-                            var5 = var12 - var5;
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var3 = global;
+                            var11 = var3.Math;
+                            var9 = var11.min;
+                            var6 = var2.currentOriginY;
+                            var5 = var2.windowHeight;
+                            var6 = var6 - var5;
+                            var5 = var2.windowHeight;
                             var5 = -var5;
-                            var5 = var11.bind(var6)(var5, var10);
-                            var5 = var9.bind(var6)(var8, var5);
-                            var4.translateY = var5;
-                            var3[2] = var4;
-                            var2.transform = var3;
-                            var0.animations = var2;
-                            var2 = global;
-                            var5 = var2.Object;
+                            var9 = var9.bind(var11)(var6, var5);
+                            var5 = _closure4_slot2;
+                            var6 = undefined;
+                            var5 = var10.bind(var6)(var9, var5);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.originY = var5;
+                            var0.animations = var4;
+                            var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = 1;
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '0deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var6.translateX = var7;
-                            var2[1] = var6;
-                            var6 = {};
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var2 = var2.currentOriginY;
+                            var3.originY = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -1470,7 +1204,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 16777964503997.0;
+                        var2 = 14850009730573.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot12;
                         var0.__initData = var1;
@@ -1510,10 +1244,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var3 = var3.bind(var0)(var13);
-    var13 = 'RotateOutUpLeft';
+    var13 = 'SlideOutUp';
     var3.presetName = var13;
     var13 = {};
-    var14 = "function pnpm_RotateTs8(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{rotate:delayFunction(delay,animation('90deg',config))},{translateX:delayFunction(delay,animation(-(values.currentWidth/2-values.currentHeight/2),config))},{translateY:delayFunction(delay,animation(-(values.currentWidth/2-values.currentHeight/2),config))}]},initialValues:{opacity:1,transform:[{rotate:'0deg'},{translateX:0},{translateY:0}],...initialValues},callback:callback};}";
+    var14 = 'function pnpm_SlideTs8(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.max(values.currentOriginY+values.windowHeight,values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}';
     var13.code = var14;
     var _closure1_slot13 = var13;
     var10 = var12[var10];
@@ -1521,7 +1255,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var10 = var10.ComplexAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34576: for (var _fun34576_ip = 0;;) switch (_fun34576_ip) {
+            _fun34630: for (var _fun34630_ip = 0;;) switch (_fun34630_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1545,16 +1279,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34576_ip = 87;
-                        continue _fun34576
+                        _fun34630_ip = 87;
+                        continue _fun34630
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34576_ip = 72;
-                        continue _fun34576
+                        _fun34630_ip = 72;
+                        continue _fun34630
                     }
                 case 87:
                     var3 = _closure1_slot14;
@@ -1593,68 +1327,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var2.initialValues;
                         var _closure4_slot5 = var4;
                         var0 = function arg0() {
-                            var5 = arg0;
+                            var2 = arg0;
                             var0 = {};
-                            var2 = {};
-                            var9 = _closure4_slot0;
-                            var8 = _closure4_slot3;
-                            var11 = _closure4_slot1;
-                            var10 = _closure4_slot2;
+                            var4 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot3;
+                            var10 = _closure4_slot1;
+                            var3 = global;
+                            var11 = var3.Math;
+                            var9 = var11.max;
+                            var6 = var2.currentOriginY;
+                            var5 = var2.windowHeight;
+                            var6 = var6 + var5;
+                            var5 = var2.windowHeight;
+                            var9 = var9.bind(var11)(var6, var5);
+                            var5 = _closure4_slot2;
                             var6 = undefined;
-                            var7 = 0;
-                            var3 = var11.bind(var6)(var7, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var2.opacity = var3;
-                            var4 = {};
-                            var3 = '90deg';
-                            var3 = var11.bind(var6)(var3, var10);
-                            var3 = var9.bind(var6)(var8, var3);
-                            var4.rotate = var3;
-                            var3 = new Array(3);
-                            var3[0] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var13 = 2;
-                            var14 = var12 / var13;
-                            var12 = var5.currentHeight;
-                            var12 = var12 / var13;
-                            var12 = var14 - var12;
-                            var12 = -var12;
-                            var12 = var11.bind(var6)(var12, var10);
-                            var12 = var9.bind(var6)(var8, var12);
-                            var4.translateX = var12;
-                            var3[1] = var4;
-                            var4 = {};
-                            var12 = var5.currentWidth;
-                            var12 = var12 / var13;
-                            var5 = var5.currentHeight;
-                            var5 = var5 / var13;
-                            var5 = var12 - var5;
-                            var5 = -var5;
-                            var5 = var11.bind(var6)(var5, var10);
-                            var5 = var9.bind(var6)(var8, var5);
-                            var4.translateY = var5;
-                            var3[2] = var4;
-                            var2.transform = var3;
-                            var0.animations = var2;
-                            var2 = global;
-                            var5 = var2.Object;
+                            var5 = var10.bind(var6)(var9, var5);
+                            var5 = var8.bind(var6)(var7, var5);
+                            var4.originY = var5;
+                            var0.animations = var4;
+                            var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = 1;
-                            var3.opacity = var2;
-                            var6 = {};
-                            var2 = '0deg';
-                            var6.rotate = var2;
-                            var2 = new Array(3);
-                            var2[0] = var6;
-                            var6 = {};
-                            var6.translateX = var7;
-                            var2[1] = var6;
-                            var6 = {};
-                            var6.translateY = var7;
-                            var2[2] = var6;
-                            var3.transform = var2;
+                            var2 = var2.currentOriginY;
+                            var3.originY = var2;
                             var2 = _closure4_slot5;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
@@ -1670,7 +1367,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 14312403608563.0;
+                        var2 = 14065812257143.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot13;
                         var0.__initData = var1;
@@ -1710,15 +1407,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var10);
-    var10 = 'RotateOutUpRight';
+    var10 = 'SlideOutDown';
     var1.presetName = var10;
-    var2.RotateInDownLeft = var9;
-    var2.RotateInDownRight = var8;
-    var2.RotateInUpLeft = var7;
-    var2.RotateInUpRight = var6;
-    var2.RotateOutDownLeft = var5;
-    var2.RotateOutDownRight = var4;
-    var2.RotateOutUpLeft = var3;
-    var2.RotateOutUpRight = var1;
+    var2.SlideInRight = var9;
+    var2.SlideInLeft = var8;
+    var2.SlideOutRight = var7;
+    var2.SlideOutLeft = var6;
+    var2.SlideInUp = var5;
+    var2.SlideInDown = var4;
+    var2.SlideOutUp = var3;
+    var2.SlideOutDown = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 3793]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 3792]);

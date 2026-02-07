@@ -17,10 +17,10 @@ import kotlinx.serialization.json.JsonPrimitive;
 public final class o implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f35518a = new o();
+    public static final o f35566a = new o();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35519b = ht.j.d("kotlinx.serialization.json.JsonElement", d.b.f26469a, new SerialDescriptor[0], new Function1() { // from class: kt.i
+    private static final SerialDescriptor f35567b = ht.j.d("kotlinx.serialization.json.JsonElement", d.b.f26517a, new SerialDescriptor[0], new Function1() { // from class: kt.i
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Unit g10;
@@ -75,37 +75,37 @@ public final class o implements KSerializer {
                 return l10;
             }
         }), null, false, 12, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor h() {
-        return z.f35534a.getDescriptor();
+        return z.f35582a.getDescriptor();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor i() {
-        return v.f35526a.getDescriptor();
+        return v.f35574a.getDescriptor();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor j() {
-        return s.f35524a.getDescriptor();
+        return s.f35572a.getDescriptor();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor k() {
-        return y.f35529a.getDescriptor();
+        return y.f35577a.getDescriptor();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor l() {
-        return b.f35496a.getDescriptor();
+        return b.f35544a.getDescriptor();
     }
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f35519b;
+        return f35567b;
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -122,11 +122,11 @@ public final class o implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         p.c(encoder);
         if (value instanceof JsonPrimitive) {
-            encoder.v(z.f35534a, value);
+            encoder.v(z.f35582a, value);
         } else if (value instanceof JsonObject) {
-            encoder.v(y.f35529a, value);
+            encoder.v(y.f35577a, value);
         } else if (value instanceof JsonArray) {
-            encoder.v(b.f35496a, value);
+            encoder.v(b.f35544a, value);
         } else {
             throw new qr.p();
         }

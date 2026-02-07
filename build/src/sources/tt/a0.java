@@ -7,45 +7,45 @@ import java.util.Set;
 public final class a0 implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final st.t f50872d;
+    private final st.t f50920d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f50873e;
+    private final boolean f50921e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ut.e f50874i;
+    private final ut.e f50922i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Locale f50875o;
+    private final Locale f50923o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final st.v f50876p;
+    private final st.v f50924p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final st.m f50877q;
+    private final st.m f50925q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final st.g f50878r;
+    private final st.g f50926r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final int f50879s;
+    private final int f50927s;
 
     private a0(st.t tVar, boolean z10, Locale locale, st.v vVar, st.m mVar, st.g gVar, int i10) {
         ut.e eVar;
         if (tVar != null) {
-            this.f50872d = tVar;
-            this.f50873e = z10;
+            this.f50920d = tVar;
+            this.f50921e = z10;
             if (tVar instanceof ut.e) {
                 eVar = (ut.e) tVar;
             } else {
                 eVar = null;
             }
-            this.f50874i = eVar;
-            this.f50875o = locale;
-            this.f50876p = vVar;
-            this.f50877q = mVar;
-            this.f50878r = gVar;
-            this.f50879s = i10;
+            this.f50922i = eVar;
+            this.f50923o = locale;
+            this.f50924p = vVar;
+            this.f50925q = mVar;
+            this.f50926r = gVar;
+            this.f50927s = i10;
             return;
         }
         throw new NullPointerException("Missing element.");
@@ -57,12 +57,12 @@ public final class a0 implements h {
     }
 
     private boolean c(rt.o oVar, Appendable appendable, rt.d dVar, boolean z10) {
-        ut.e eVar = this.f50874i;
+        ut.e eVar = this.f50922i;
         if (eVar != null && z10) {
-            eVar.h(oVar, appendable, this.f50875o, this.f50876p, this.f50877q);
+            eVar.h(oVar, appendable, this.f50923o, this.f50924p, this.f50925q);
             return true;
-        } else if (oVar.n(this.f50872d)) {
-            this.f50872d.v(oVar, appendable, dVar);
+        } else if (oVar.n(this.f50920d)) {
+            this.f50920d.v(oVar, appendable, dVar);
             return true;
         } else {
             return false;
@@ -77,22 +77,22 @@ public final class a0 implements h {
         int f10 = sVar.f();
         int length = charSequence.length();
         if (z10) {
-            intValue = this.f50879s;
+            intValue = this.f50927s;
         } else {
-            intValue = ((Integer) dVar.b(st.a.f50128s, 0)).intValue();
+            intValue = ((Integer) dVar.b(st.a.f50176s, 0)).intValue();
         }
         if (intValue > 0) {
             length -= intValue;
         }
         if (f10 >= length) {
-            sVar.k(f10, "Missing chars for: " + this.f50872d.name());
+            sVar.k(f10, "Missing chars for: " + this.f50920d.name());
             sVar.n();
             return;
         }
-        if (z10 && (eVar = this.f50874i) != null && this.f50878r != null) {
-            r10 = eVar.q(charSequence, sVar.e(), this.f50875o, this.f50876p, this.f50877q, this.f50878r);
+        if (z10 && (eVar = this.f50922i) != null && this.f50926r != null) {
+            r10 = eVar.q(charSequence, sVar.e(), this.f50923o, this.f50924p, this.f50925q, this.f50926r);
         } else {
-            st.t tVar2 = this.f50872d;
+            st.t tVar2 = this.f50920d;
             if (tVar2 instanceof ut.a) {
                 r10 = ((ut.a) tVar2).w(charSequence, sVar.e(), dVar, tVar);
             } else {
@@ -100,18 +100,18 @@ public final class a0 implements h {
             }
         }
         if (sVar.i()) {
-            Class type = this.f50872d.getType();
+            Class type = this.f50920d.getType();
             if (type.isEnum()) {
                 int c10 = sVar.c();
                 sVar.k(c10, "No suitable enum found: " + type.getName());
                 return;
             }
             int c11 = sVar.c();
-            sVar.k(c11, "Unparseable element: " + this.f50872d.name());
+            sVar.k(c11, "Unparseable element: " + this.f50920d.name());
         } else if (r10 == null) {
             sVar.k(f10, "No interpretable value.");
         } else {
-            st.t tVar3 = this.f50872d;
+            st.t tVar3 = this.f50920d;
             if (tVar3 == net.time4j.f0.D) {
                 tVar.H(net.time4j.f0.E, ((net.time4j.b0) net.time4j.b0.class.cast(r10)).d());
             } else {
@@ -122,7 +122,7 @@ public final class a0 implements h {
 
     @Override // tt.h
     public h d(rt.p pVar) {
-        if (!this.f50873e && this.f50872d != pVar) {
+        if (!this.f50921e && this.f50920d != pVar) {
             if (pVar instanceof st.t) {
                 return b((st.t) pVar);
             }
@@ -134,20 +134,20 @@ public final class a0 implements h {
     @Override // tt.h
     public h e(c cVar, rt.d dVar, int i10) {
         st.g gVar;
-        rt.c cVar2 = st.a.f50115f;
+        rt.c cVar2 = st.a.f50163f;
         st.g gVar2 = st.g.SMART;
         st.g gVar3 = (st.g) dVar.b(cVar2, gVar2);
-        rt.c cVar3 = st.a.f50120k;
+        rt.c cVar3 = st.a.f50168k;
         Boolean bool = Boolean.TRUE;
         boolean booleanValue = ((Boolean) dVar.b(cVar3, bool)).booleanValue();
-        boolean booleanValue2 = ((Boolean) dVar.b(st.a.f50118i, bool)).booleanValue();
-        boolean booleanValue3 = ((Boolean) dVar.b(st.a.f50119j, Boolean.FALSE)).booleanValue();
+        boolean booleanValue2 = ((Boolean) dVar.b(st.a.f50166i, bool)).booleanValue();
+        boolean booleanValue3 = ((Boolean) dVar.b(st.a.f50167j, Boolean.FALSE)).booleanValue();
         if ((gVar3 == st.g.STRICT && (booleanValue || booleanValue2 || booleanValue3)) || ((gVar3 == gVar2 && (!booleanValue || !booleanValue2 || booleanValue3)) || !booleanValue || !booleanValue2 || !booleanValue3)) {
             gVar = null;
         } else {
             gVar = gVar3;
         }
-        return new a0(this.f50872d, this.f50873e, (Locale) dVar.b(st.a.f50112c, Locale.ROOT), (st.v) dVar.b(st.a.f50116g, st.v.WIDE), (st.m) dVar.b(st.a.f50117h, st.m.FORMAT), gVar, ((Integer) dVar.b(st.a.f50128s, 0)).intValue());
+        return new a0(this.f50920d, this.f50921e, (Locale) dVar.b(st.a.f50160c, Locale.ROOT), (st.v) dVar.b(st.a.f50164g, st.v.WIDE), (st.m) dVar.b(st.a.f50165h, st.m.FORMAT), gVar, ((Integer) dVar.b(st.a.f50176s, 0)).intValue());
     }
 
     public boolean equals(Object obj) {
@@ -156,7 +156,7 @@ public final class a0 implements h {
         }
         if (obj instanceof a0) {
             a0 a0Var = (a0) obj;
-            if (this.f50872d.equals(a0Var.f50872d) && this.f50873e == a0Var.f50873e) {
+            if (this.f50920d.equals(a0Var.f50920d) && this.f50921e == a0Var.f50921e) {
                 return true;
             }
         }
@@ -170,7 +170,7 @@ public final class a0 implements h {
             int length = charSequence.length();
             if (c(oVar, appendable, dVar, z10)) {
                 if (set != null) {
-                    set.add(new g(this.f50872d, length, charSequence.length()));
+                    set.add(new g(this.f50920d, length, charSequence.length()));
                 }
                 return charSequence.length() - length;
             }
@@ -189,20 +189,20 @@ public final class a0 implements h {
 
     @Override // tt.h
     public rt.p getElement() {
-        return this.f50872d;
+        return this.f50920d;
     }
 
     public int hashCode() {
-        return this.f50872d.hashCode();
+        return this.f50920d.hashCode();
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(a0.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f50872d.name());
+        sb2.append(this.f50920d.name());
         sb2.append(",protected-mode=");
-        sb2.append(this.f50873e);
+        sb2.append(this.f50921e);
         sb2.append(']');
         return sb2.toString();
     }

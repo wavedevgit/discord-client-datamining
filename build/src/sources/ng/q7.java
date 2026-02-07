@@ -5,7 +5,7 @@ import yi.c;
 final class q7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f40193a = new q7();
+    static final q7 f40241a = new q7();
 
     static {
         c.b a10 = yi.c.a("options");

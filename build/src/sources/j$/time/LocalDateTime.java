@@ -15,16 +15,16 @@ import java.util.Objects;
 public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal.l, j$.time.chrono.c, Serializable {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final LocalDateTime f29383c = x(LocalDate.MIN, LocalTime.MIN);
+    public static final LocalDateTime f29431c = x(LocalDate.MIN, LocalTime.MIN);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final LocalDateTime f29384d = x(LocalDate.MAX, LocalTime.MAX);
+    public static final LocalDateTime f29432d = x(LocalDate.MAX, LocalTime.MAX);
 
     /* renamed from: a  reason: collision with root package name */
-    public final LocalDate f29385a;
+    public final LocalDate f29433a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LocalTime f29386b;
+    public final LocalTime f29434b;
 
     @Override // j$.time.chrono.c
     public final j$.time.chrono.g v(j jVar) {
@@ -59,16 +59,16 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
                 throw new RuntimeException("Unable to obtain LocalDateTime from TemporalAccessor: " + temporalAccessor + " of type " + temporalAccessor.getClass().getName(), e10);
             }
         }
-        return ((m) temporalAccessor).f29500a;
+        return ((m) temporalAccessor).f29548a;
     }
 
     public LocalDateTime(LocalDate localDate, LocalTime localTime) {
-        this.f29385a = localDate;
-        this.f29386b = localTime;
+        this.f29433a = localDate;
+        this.f29434b = localTime;
     }
 
     public final LocalDateTime G(LocalDate localDate, LocalTime localTime) {
-        return (this.f29385a == localDate && this.f29386b == localTime) ? this : new LocalDateTime(localDate, localTime);
+        return (this.f29433a == localDate && this.f29434b == localTime) ? this : new LocalDateTime(localDate, localTime);
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -83,7 +83,7 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     @Override // j$.time.temporal.TemporalAccessor
     public final r i(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return ((j$.time.temporal.a) nVar).F() ? this.f29386b.i(nVar) : this.f29385a.i(nVar);
+            return ((j$.time.temporal.a) nVar).F() ? this.f29434b.i(nVar) : this.f29433a.i(nVar);
         }
         return nVar.t(this);
     }
@@ -91,7 +91,7 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return ((j$.time.temporal.a) nVar).F() ? this.f29386b.g(nVar) : this.f29385a.g(nVar);
+            return ((j$.time.temporal.a) nVar).F() ? this.f29434b.g(nVar) : this.f29433a.g(nVar);
         }
         return super.g(nVar);
     }
@@ -99,29 +99,29 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     @Override // j$.time.temporal.TemporalAccessor
     public final long m(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return ((j$.time.temporal.a) nVar).F() ? this.f29386b.m(nVar) : this.f29385a.m(nVar);
+            return ((j$.time.temporal.a) nVar).F() ? this.f29434b.m(nVar) : this.f29433a.m(nVar);
         }
         return nVar.B(this);
     }
 
     @Override // j$.time.chrono.c
     public final ChronoLocalDate l() {
-        return this.f29385a;
+        return this.f29433a;
     }
 
     @Override // j$.time.chrono.c
     public final LocalTime e() {
-        return this.f29386b;
+        return this.f29434b;
     }
 
     @Override // j$.time.temporal.k
     /* renamed from: H */
     public final LocalDateTime c(j$.time.temporal.l lVar) {
         if (lVar instanceof LocalDate) {
-            return G((LocalDate) lVar, this.f29386b);
+            return G((LocalDate) lVar, this.f29434b);
         }
         if (lVar instanceof LocalTime) {
-            return G(this.f29385a, (LocalTime) lVar);
+            return G(this.f29433a, (LocalTime) lVar);
         }
         if (lVar instanceof LocalDateTime) {
             return (LocalDateTime) lVar;
@@ -134,9 +134,9 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     public final LocalDateTime b(long j10, n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             if (((j$.time.temporal.a) nVar).F()) {
-                return G(this.f29385a, this.f29386b.b(j10, nVar));
+                return G(this.f29433a, this.f29434b.b(j10, nVar));
             }
-            return G(this.f29385a.b(j10, nVar), this.f29386b);
+            return G(this.f29433a.b(j10, nVar), this.f29434b);
         }
         return (LocalDateTime) nVar.C(this, j10);
     }
@@ -147,45 +147,45 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
         if (!(pVar instanceof j$.time.temporal.b)) {
             return (LocalDateTime) pVar.r(this, j10);
         }
-        switch (d.f29417a[((j$.time.temporal.b) pVar).ordinal()]) {
+        switch (d.f29465a[((j$.time.temporal.b) pVar).ordinal()]) {
             case 1:
-                return E(this.f29385a, 0L, 0L, 0L, j10);
+                return E(this.f29433a, 0L, 0L, 0L, j10);
             case 2:
-                LocalDateTime G = G(this.f29385a.F(j10 / 86400000000L), this.f29386b);
-                return G.E(G.f29385a, 0L, 0L, 0L, (j10 % 86400000000L) * 1000);
+                LocalDateTime G = G(this.f29433a.F(j10 / 86400000000L), this.f29434b);
+                return G.E(G.f29433a, 0L, 0L, 0L, (j10 % 86400000000L) * 1000);
             case 3:
-                LocalDateTime G2 = G(this.f29385a.F(j10 / 86400000), this.f29386b);
-                return G2.E(G2.f29385a, 0L, 0L, 0L, (j10 % 86400000) * 1000000);
+                LocalDateTime G2 = G(this.f29433a.F(j10 / 86400000), this.f29434b);
+                return G2.E(G2.f29433a, 0L, 0L, 0L, (j10 % 86400000) * 1000000);
             case 4:
-                return E(this.f29385a, 0L, 0L, j10, 0L);
+                return E(this.f29433a, 0L, 0L, j10, 0L);
             case 5:
-                return E(this.f29385a, 0L, j10, 0L, 0L);
+                return E(this.f29433a, 0L, j10, 0L, 0L);
             case 6:
-                return E(this.f29385a, j10, 0L, 0L, 0L);
+                return E(this.f29433a, j10, 0L, 0L, 0L);
             case 7:
-                LocalDateTime G3 = G(this.f29385a.F(j10 / 256), this.f29386b);
-                return G3.E(G3.f29385a, (j10 % 256) * 12, 0L, 0L, 0L);
+                LocalDateTime G3 = G(this.f29433a.F(j10 / 256), this.f29434b);
+                return G3.E(G3.f29433a, (j10 % 256) * 12, 0L, 0L, 0L);
             default:
-                return G(this.f29385a.p(j10, pVar), this.f29386b);
+                return G(this.f29433a.p(j10, pVar), this.f29434b);
         }
     }
 
     public final LocalDateTime E(LocalDate localDate, long j10, long j11, long j12, long j13) {
         if ((j10 | j11 | j12 | j13) == 0) {
-            return G(localDate, this.f29386b);
+            return G(localDate, this.f29434b);
         }
         long j14 = 1;
-        long G = this.f29386b.G();
+        long G = this.f29434b.G();
         long j15 = ((((j10 % 24) * 3600000000000L) + ((j11 % 1440) * 60000000000L) + ((j12 % 86400) * 1000000000) + (j13 % 86400000000000L)) * j14) + G;
         long floorDiv = Math.floorDiv(j15, 86400000000000L) + (((j10 / 24) + (j11 / 1440) + (j12 / 86400) + (j13 / 86400000000000L)) * j14);
         long floorMod = Math.floorMod(j15, 86400000000000L);
-        return G(localDate.F(floorDiv), floorMod == G ? this.f29386b : LocalTime.x(floorMod));
+        return G(localDate.F(floorDiv), floorMod == G ? this.f29434b : LocalTime.x(floorMod));
     }
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f29522f) {
-            return this.f29385a;
+        if (temporalQuery == o.f29570f) {
+            return this.f29433a;
         }
         return super.a(temporalQuery);
     }
@@ -205,17 +205,17 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     }
 
     public final int r(LocalDateTime localDateTime) {
-        int r10 = this.f29385a.r(localDateTime.f29385a);
-        return r10 == 0 ? this.f29386b.compareTo(localDateTime.f29386b) : r10;
+        int r10 = this.f29433a.r(localDateTime.f29433a);
+        return r10 == 0 ? this.f29434b.compareTo(localDateTime.f29434b) : r10;
     }
 
     public final boolean w(j$.time.chrono.c cVar) {
         if (cVar instanceof LocalDateTime) {
             return r((LocalDateTime) cVar) < 0;
         }
-        int i10 = (this.f29385a.toEpochDay() > cVar.l().toEpochDay() ? 1 : (this.f29385a.toEpochDay() == cVar.l().toEpochDay() ? 0 : -1));
+        int i10 = (this.f29433a.toEpochDay() > cVar.l().toEpochDay() ? 1 : (this.f29433a.toEpochDay() == cVar.l().toEpochDay() ? 0 : -1));
         if (i10 >= 0) {
-            return i10 == 0 && this.f29386b.G() < cVar.e().G();
+            return i10 == 0 && this.f29434b.G() < cVar.e().G();
         }
         return true;
     }
@@ -226,7 +226,7 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
         }
         if (obj instanceof LocalDateTime) {
             LocalDateTime localDateTime = (LocalDateTime) obj;
-            if (this.f29385a.equals(localDateTime.f29385a) && this.f29386b.equals(localDateTime.f29386b)) {
+            if (this.f29433a.equals(localDateTime.f29433a) && this.f29434b.equals(localDateTime.f29434b)) {
                 return true;
             }
         }
@@ -234,10 +234,10 @@ public final class LocalDateTime implements j$.time.temporal.k, j$.time.temporal
     }
 
     public final int hashCode() {
-        return this.f29385a.hashCode() ^ this.f29386b.hashCode();
+        return this.f29433a.hashCode() ^ this.f29434b.hashCode();
     }
 
     public final String toString() {
-        return this.f29385a.toString() + 'T' + this.f29386b.toString();
+        return this.f29433a.toString() + 'T' + this.f29434b.toString();
     }
 }

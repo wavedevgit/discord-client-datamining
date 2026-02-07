@@ -23,35 +23,35 @@ public abstract class u2 {
     public static final String d(GenericFileUploadErrorResponse.DocumentErrorResponse documentErrorResponse, Context context) {
         if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError) {
             GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError disabledFileTypeError = (GenericFileUploadErrorResponse.DocumentErrorResponse.DisabledFileTypeError) documentErrorResponse;
-            String string = context.getString(jp.e.f30795d, disabledFileTypeError.getDetails().getUploadedFileType(), CollectionsKt.x0(disabledFileTypeError.getDetails().getEnabledFileTypes(), ", ", null, null, 0, null, null, 62, null));
+            String string = context.getString(jp.e.f30843d, disabledFileTypeError.getDetails().getUploadedFileType(), CollectionsKt.x0(disabledFileTypeError.getDetails().getEnabledFileTypes(), ", ", null, null, 0, null, null, 62, null));
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             return string;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.FileLimitExceededError) {
-            String string2 = context.getString(jp.e.f30796e);
+            String string2 = context.getString(jp.e.f30844e);
             Intrinsics.checkNotNullExpressionValue(string2, "getString(...)");
             return string2;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError) {
-            String string3 = context.getString(jp.e.f30800i, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError) documentErrorResponse).getDetails().getPageLimit()));
+            String string3 = context.getString(jp.e.f30848i, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.PageLimitExceededError) documentErrorResponse).getDetails().getPageLimit()));
             Intrinsics.checkNotNullExpressionValue(string3, "getString(...)");
             return string3;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedFileError) {
-            String string4 = context.getString(jp.e.f30798g);
+            String string4 = context.getString(jp.e.f30846g);
             Intrinsics.checkNotNullExpressionValue(string4, "getString(...)");
             return string4;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedImageError) {
-            String string5 = context.getString(jp.e.f30798g);
+            String string5 = context.getString(jp.e.f30846g);
             Intrinsics.checkNotNullExpressionValue(string5, "getString(...)");
             return string5;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.MalformedPdfError) {
-            String string6 = context.getString(jp.e.f30799h);
+            String string6 = context.getString(jp.e.f30847h);
             Intrinsics.checkNotNullExpressionValue(string6, "getString(...)");
             return string6;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) {
-            String string7 = context.getString(jp.e.f30797f, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) documentErrorResponse).getDetails().getMinDimensionSize()));
+            String string7 = context.getString(jp.e.f30845f, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) documentErrorResponse).getDetails().getMinDimensionSize()));
             Intrinsics.checkNotNullExpressionValue(string7, "getString(...)");
             return string7;
         } else if (documentErrorResponse instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.UnknownError) {
-            String string8 = context.getString(jp.e.f30801j);
+            String string8 = context.getString(jp.e.f30849j);
             Intrinsics.checkNotNullExpressionValue(string8, "getString(...)");
             return string8;
         } else {

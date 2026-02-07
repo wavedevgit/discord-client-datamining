@@ -11,23 +11,23 @@ public class d2 extends j2 implements KProperty1 {
     private final Lazy A;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Lazy f35290z;
+    private final Lazy f35338z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends j2.c implements KProperty1.a {
 
         /* renamed from: u  reason: collision with root package name */
-        private final d2 f35291u;
+        private final d2 f35339u;
 
         public a(d2 property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            this.f35291u = property;
+            this.f35339u = property;
         }
 
         @Override // kotlin.reflect.KProperty.a
         /* renamed from: P */
         public d2 a() {
-            return this.f35291u;
+            return this.f35339u;
         }
 
         @Override // kotlin.jvm.functions.Function1
@@ -42,8 +42,8 @@ public class d2 extends j2 implements KProperty1 {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        qr.o oVar = qr.o.f48044e;
-        this.f35290z = qr.l.b(oVar, new b2(this));
+        qr.o oVar = qr.o.f48092e;
+        this.f35338z = qr.l.b(oVar, new b2(this));
         this.A = qr.l.b(oVar, new c2(this));
     }
 
@@ -60,7 +60,7 @@ public class d2 extends j2 implements KProperty1 {
     @Override // kotlin.reflect.KProperty
     /* renamed from: X */
     public a getGetter() {
-        return (a) this.f35290z.getValue();
+        return (a) this.f35338z.getValue();
     }
 
     @Override // kotlin.reflect.KProperty1
@@ -83,8 +83,8 @@ public class d2 extends j2 implements KProperty1 {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        qr.o oVar = qr.o.f48044e;
-        this.f35290z = qr.l.b(oVar, new b2(this));
+        qr.o oVar = qr.o.f48092e;
+        this.f35338z = qr.l.b(oVar, new b2(this));
         this.A = qr.l.b(oVar, new c2(this));
     }
 }

@@ -9,28 +9,28 @@ import rs.l0;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f25538a;
+    private final MutableStateFlow f25586a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f25539b;
+    private final Flow f25587b;
 
     public l(Set initialValue) {
         Intrinsics.checkNotNullParameter(initialValue, "initialValue");
         MutableStateFlow a10 = l0.a(initialValue);
-        this.f25538a = a10;
-        this.f25539b = rs.g.m(a10, 1);
+        this.f25586a = a10;
+        this.f25587b = rs.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f25539b;
+        return this.f25587b;
     }
 
     public final Set b() {
-        return (Set) this.f25538a.getValue();
+        return (Set) this.f25586a.getValue();
     }
 
     public final void c(Set value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f25538a.setValue(value);
+        this.f25586a.setValue(value);
     }
 }

@@ -20,202 +20,202 @@ public class r extends y {
     public static final Parcelable.Creator<r> CREATOR = new s0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final u f53761d;
+    private final u f53809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w f53762e;
+    private final w f53810e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final byte[] f53763i;
+    private final byte[] f53811i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f53764o;
+    private final List f53812o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Double f53765p;
+    private final Double f53813p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f53766q;
+    private final List f53814q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final j f53767r;
+    private final j f53815r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Integer f53768s;
+    private final Integer f53816s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final com.google.android.gms.fido.fido2.api.common.a f53769t;
+    private final com.google.android.gms.fido.fido2.api.common.a f53817t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final c f53770u;
+    private final c f53818u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final AuthenticationExtensions f53771v;
+    private final AuthenticationExtensions f53819v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final String f53772w;
+    private final String f53820w;
 
     /* renamed from: x  reason: collision with root package name */
-    private ResultReceiver f53773x;
+    private ResultReceiver f53821x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final List f53774y;
+    private final List f53822y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private u f53775a;
+        private u f53823a;
 
         /* renamed from: b  reason: collision with root package name */
-        private w f53776b;
+        private w f53824b;
 
         /* renamed from: c  reason: collision with root package name */
-        private byte[] f53777c;
+        private byte[] f53825c;
 
         /* renamed from: d  reason: collision with root package name */
-        private List f53778d;
+        private List f53826d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Double f53779e;
+        private Double f53827e;
 
         /* renamed from: f  reason: collision with root package name */
-        private List f53780f;
+        private List f53828f;
 
         /* renamed from: g  reason: collision with root package name */
-        private j f53781g;
+        private j f53829g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Integer f53782h;
+        private Integer f53830h;
 
         /* renamed from: i  reason: collision with root package name */
-        private com.google.android.gms.fido.fido2.api.common.a f53783i;
+        private com.google.android.gms.fido.fido2.api.common.a f53831i;
 
         /* renamed from: j  reason: collision with root package name */
-        private c f53784j;
+        private c f53832j;
 
         /* renamed from: k  reason: collision with root package name */
-        private AuthenticationExtensions f53785k;
+        private AuthenticationExtensions f53833k;
 
         /* renamed from: l  reason: collision with root package name */
-        private List f53786l;
+        private List f53834l;
 
         public r a() {
             String cVar;
-            u uVar = this.f53775a;
-            w wVar = this.f53776b;
-            byte[] bArr = this.f53777c;
-            List list = this.f53778d;
-            Double d10 = this.f53779e;
-            List list2 = this.f53780f;
-            j jVar = this.f53781g;
-            Integer num = this.f53782h;
-            com.google.android.gms.fido.fido2.api.common.a aVar = this.f53783i;
-            c cVar2 = this.f53784j;
+            u uVar = this.f53823a;
+            w wVar = this.f53824b;
+            byte[] bArr = this.f53825c;
+            List list = this.f53826d;
+            Double d10 = this.f53827e;
+            List list2 = this.f53828f;
+            j jVar = this.f53829g;
+            Integer num = this.f53830h;
+            com.google.android.gms.fido.fido2.api.common.a aVar = this.f53831i;
+            c cVar2 = this.f53832j;
             if (cVar2 == null) {
                 cVar = null;
             } else {
                 cVar = cVar2.toString();
             }
-            return new r(uVar, wVar, bArr, list, d10, list2, jVar, num, aVar, cVar, this.f53785k, null, null, this.f53786l);
+            return new r(uVar, wVar, bArr, list, d10, list2, jVar, num, aVar, cVar, this.f53833k, null, null, this.f53834l);
         }
 
         public a b(c cVar) {
-            this.f53784j = cVar;
+            this.f53832j = cVar;
             return this;
         }
 
         public a c(List list) {
-            this.f53786l = list;
+            this.f53834l = list;
             return this;
         }
 
         public a d(AuthenticationExtensions authenticationExtensions) {
-            this.f53785k = authenticationExtensions;
+            this.f53833k = authenticationExtensions;
             return this;
         }
 
         public a e(j jVar) {
-            this.f53781g = jVar;
+            this.f53829g = jVar;
             return this;
         }
 
         public a f(byte[] bArr) {
-            this.f53777c = (byte[]) gf.q.l(bArr);
+            this.f53825c = (byte[]) gf.q.l(bArr);
             return this;
         }
 
         public a g(List list) {
-            this.f53780f = list;
+            this.f53828f = list;
             return this;
         }
 
         public a h(List list) {
-            this.f53778d = (List) gf.q.l(list);
+            this.f53826d = (List) gf.q.l(list);
             return this;
         }
 
         public a i(u uVar) {
-            this.f53775a = (u) gf.q.l(uVar);
+            this.f53823a = (u) gf.q.l(uVar);
             return this;
         }
 
         public a j(Double d10) {
-            this.f53779e = d10;
+            this.f53827e = d10;
             return this;
         }
 
         public a k(w wVar) {
-            this.f53776b = (w) gf.q.l(wVar);
+            this.f53824b = (w) gf.q.l(wVar);
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(u uVar, w wVar, byte[] bArr, List list, Double d10, List list2, j jVar, Integer num, com.google.android.gms.fido.fido2.api.common.a aVar, String str, AuthenticationExtensions authenticationExtensions, String str2, ResultReceiver resultReceiver, List list3) {
-        this.f53773x = resultReceiver;
+        this.f53821x = resultReceiver;
         if (str2 != null) {
             try {
                 r t10 = t(new JSONObject(str2));
-                this.f53761d = t10.f53761d;
-                this.f53762e = t10.f53762e;
-                this.f53763i = t10.f53763i;
-                this.f53764o = t10.f53764o;
-                this.f53765p = t10.f53765p;
-                this.f53766q = t10.f53766q;
-                this.f53767r = t10.f53767r;
-                this.f53768s = t10.f53768s;
-                this.f53769t = t10.f53769t;
-                this.f53770u = t10.f53770u;
-                this.f53771v = t10.f53771v;
-                this.f53774y = t10.f53774y;
-                this.f53772w = str2;
+                this.f53809d = t10.f53809d;
+                this.f53810e = t10.f53810e;
+                this.f53811i = t10.f53811i;
+                this.f53812o = t10.f53812o;
+                this.f53813p = t10.f53813p;
+                this.f53814q = t10.f53814q;
+                this.f53815r = t10.f53815r;
+                this.f53816s = t10.f53816s;
+                this.f53817t = t10.f53817t;
+                this.f53818u = t10.f53818u;
+                this.f53819v = t10.f53819v;
+                this.f53822y = t10.f53822y;
+                this.f53820w = str2;
                 return;
             } catch (JSONException e10) {
                 throw new IllegalArgumentException(e10);
             }
         }
-        this.f53761d = (u) gf.q.l(uVar);
-        this.f53762e = (w) gf.q.l(wVar);
-        this.f53763i = (byte[]) gf.q.l(bArr);
-        this.f53764o = (List) gf.q.l(list);
-        this.f53765p = d10;
-        this.f53766q = list2;
-        this.f53767r = jVar;
-        this.f53768s = num;
-        this.f53769t = aVar;
+        this.f53809d = (u) gf.q.l(uVar);
+        this.f53810e = (w) gf.q.l(wVar);
+        this.f53811i = (byte[]) gf.q.l(bArr);
+        this.f53812o = (List) gf.q.l(list);
+        this.f53813p = d10;
+        this.f53814q = list2;
+        this.f53815r = jVar;
+        this.f53816s = num;
+        this.f53817t = aVar;
         if (str != null) {
             try {
-                this.f53770u = c.a(str);
+                this.f53818u = c.a(str);
             } catch (c.a e11) {
                 throw new IllegalArgumentException(e11);
             }
         } else {
-            this.f53770u = null;
+            this.f53818u = null;
         }
-        this.f53771v = authenticationExtensions;
-        this.f53772w = null;
-        this.f53774y = list3;
+        this.f53819v = authenticationExtensions;
+        this.f53820w = null;
+        this.f53822y = list3;
     }
 
     public static r t(JSONObject jSONObject) {
@@ -320,7 +320,7 @@ public class r extends y {
     }
 
     public String b() {
-        c cVar = this.f53770u;
+        c cVar = this.f53818u;
         if (cVar == null) {
             return null;
         }
@@ -328,15 +328,15 @@ public class r extends y {
     }
 
     public List c() {
-        return this.f53774y;
+        return this.f53822y;
     }
 
     public AuthenticationExtensions d() {
-        return this.f53771v;
+        return this.f53819v;
     }
 
     public j e() {
-        return this.f53767r;
+        return this.f53815r;
     }
 
     public boolean equals(Object obj) {
@@ -347,12 +347,12 @@ public class r extends y {
             return false;
         }
         r rVar = (r) obj;
-        if (gf.o.a(this.f53761d, rVar.f53761d) && gf.o.a(this.f53762e, rVar.f53762e) && Arrays.equals(this.f53763i, rVar.f53763i) && gf.o.a(this.f53765p, rVar.f53765p) && this.f53764o.containsAll(rVar.f53764o) && rVar.f53764o.containsAll(this.f53764o) && ((((list = this.f53766q) == null && rVar.f53766q == null) || (list != null && (list2 = rVar.f53766q) != null && list.containsAll(list2) && rVar.f53766q.containsAll(this.f53766q))) && gf.o.a(this.f53767r, rVar.f53767r) && gf.o.a(this.f53768s, rVar.f53768s) && gf.o.a(this.f53769t, rVar.f53769t) && gf.o.a(this.f53770u, rVar.f53770u) && gf.o.a(this.f53771v, rVar.f53771v) && gf.o.a(this.f53772w, rVar.f53772w))) {
-            List list4 = this.f53774y;
-            if (list4 == null && rVar.f53774y == null) {
+        if (gf.o.a(this.f53809d, rVar.f53809d) && gf.o.a(this.f53810e, rVar.f53810e) && Arrays.equals(this.f53811i, rVar.f53811i) && gf.o.a(this.f53813p, rVar.f53813p) && this.f53812o.containsAll(rVar.f53812o) && rVar.f53812o.containsAll(this.f53812o) && ((((list = this.f53814q) == null && rVar.f53814q == null) || (list != null && (list2 = rVar.f53814q) != null && list.containsAll(list2) && rVar.f53814q.containsAll(this.f53814q))) && gf.o.a(this.f53815r, rVar.f53815r) && gf.o.a(this.f53816s, rVar.f53816s) && gf.o.a(this.f53817t, rVar.f53817t) && gf.o.a(this.f53818u, rVar.f53818u) && gf.o.a(this.f53819v, rVar.f53819v) && gf.o.a(this.f53820w, rVar.f53820w))) {
+            List list4 = this.f53822y;
+            if (list4 == null && rVar.f53822y == null) {
                 return true;
             }
-            if (list4 == null || (list3 = rVar.f53774y) == null || !list4.containsAll(list3) || !rVar.f53774y.containsAll(this.f53774y)) {
+            if (list4 == null || (list3 = rVar.f53822y) == null || !list4.containsAll(list3) || !rVar.f53822y.containsAll(this.f53822y)) {
                 return false;
             }
             return true;
@@ -361,56 +361,56 @@ public class r extends y {
     }
 
     public byte[] f() {
-        return this.f53763i;
+        return this.f53811i;
     }
 
     public List h() {
-        return this.f53766q;
+        return this.f53814q;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f53761d, this.f53762e, Integer.valueOf(Arrays.hashCode(this.f53763i)), this.f53764o, this.f53765p, this.f53766q, this.f53767r, this.f53768s, this.f53769t, this.f53770u, this.f53771v, this.f53772w, this.f53774y);
+        return gf.o.b(this.f53809d, this.f53810e, Integer.valueOf(Arrays.hashCode(this.f53811i)), this.f53812o, this.f53813p, this.f53814q, this.f53815r, this.f53816s, this.f53817t, this.f53818u, this.f53819v, this.f53820w, this.f53822y);
     }
 
     public String i() {
-        return this.f53772w;
+        return this.f53820w;
     }
 
     public List j() {
-        return this.f53764o;
+        return this.f53812o;
     }
 
     public Integer l() {
-        return this.f53768s;
+        return this.f53816s;
     }
 
     public u o() {
-        return this.f53761d;
+        return this.f53809d;
     }
 
     public Double p() {
-        return this.f53765p;
+        return this.f53813p;
     }
 
     public com.google.android.gms.fido.fido2.api.common.a q() {
-        return this.f53769t;
+        return this.f53817t;
     }
 
     public w r() {
-        return this.f53762e;
+        return this.f53810e;
     }
 
     public final String toString() {
-        List list = this.f53774y;
-        AuthenticationExtensions authenticationExtensions = this.f53771v;
-        c cVar = this.f53770u;
-        com.google.android.gms.fido.fido2.api.common.a aVar = this.f53769t;
-        j jVar = this.f53767r;
-        List list2 = this.f53766q;
-        List list3 = this.f53764o;
-        byte[] bArr = this.f53763i;
-        w wVar = this.f53762e;
-        String valueOf = String.valueOf(this.f53761d);
+        List list = this.f53822y;
+        AuthenticationExtensions authenticationExtensions = this.f53819v;
+        c cVar = this.f53818u;
+        com.google.android.gms.fido.fido2.api.common.a aVar = this.f53817t;
+        j jVar = this.f53815r;
+        List list2 = this.f53814q;
+        List list3 = this.f53812o;
+        byte[] bArr = this.f53811i;
+        w wVar = this.f53810e;
+        String valueOf = String.valueOf(this.f53809d);
         String valueOf2 = String.valueOf(wVar);
         String b10 = com.google.android.gms.common.util.c.b(bArr);
         String valueOf3 = String.valueOf(list3);
@@ -420,7 +420,7 @@ public class r extends y {
         String valueOf7 = String.valueOf(cVar);
         String valueOf8 = String.valueOf(authenticationExtensions);
         String valueOf9 = String.valueOf(list);
-        return "PublicKeyCredentialCreationOptions{\n rp=" + valueOf + ", \n user=" + valueOf2 + ", \n challenge=" + b10 + ", \n parameters=" + valueOf3 + ", \n timeoutSeconds=" + this.f53765p + ", \n excludeList=" + valueOf4 + ", \n authenticatorSelection=" + valueOf5 + ", \n requestId=" + this.f53768s + ", \n tokenBinding=" + valueOf6 + ", \n attestationConveyancePreference=" + valueOf7 + ", \n authenticationExtensions=" + valueOf8 + ", \n attestationFormats=" + valueOf9 + "}";
+        return "PublicKeyCredentialCreationOptions{\n rp=" + valueOf + ", \n user=" + valueOf2 + ", \n challenge=" + b10 + ", \n parameters=" + valueOf3 + ", \n timeoutSeconds=" + this.f53813p + ", \n excludeList=" + valueOf4 + ", \n authenticatorSelection=" + valueOf5 + ", \n requestId=" + this.f53816s + ", \n tokenBinding=" + valueOf6 + ", \n attestationConveyancePreference=" + valueOf7 + ", \n authenticationExtensions=" + valueOf8 + ", \n attestationFormats=" + valueOf9 + "}";
     }
 
     @Override // android.os.Parcelable
@@ -438,7 +438,7 @@ public class r extends y {
         hf.c.s(parcel, 11, b(), false);
         hf.c.q(parcel, 12, d(), i10, false);
         hf.c.s(parcel, 13, i(), false);
-        hf.c.q(parcel, 14, this.f53773x, i10, false);
+        hf.c.q(parcel, 14, this.f53821x, i10, false);
         hf.c.u(parcel, 15, c(), false);
         hf.c.b(parcel, a10);
     }
@@ -446,19 +446,19 @@ public class r extends y {
     public r(String str) {
         try {
             r t10 = t(new JSONObject(str));
-            this.f53761d = t10.f53761d;
-            this.f53762e = t10.f53762e;
-            this.f53763i = t10.f53763i;
-            this.f53764o = t10.f53764o;
-            this.f53765p = t10.f53765p;
-            this.f53766q = t10.f53766q;
-            this.f53767r = t10.f53767r;
-            this.f53768s = t10.f53768s;
-            this.f53769t = t10.f53769t;
-            this.f53770u = t10.f53770u;
-            this.f53771v = t10.f53771v;
-            this.f53774y = t10.f53774y;
-            this.f53772w = str;
+            this.f53809d = t10.f53809d;
+            this.f53810e = t10.f53810e;
+            this.f53811i = t10.f53811i;
+            this.f53812o = t10.f53812o;
+            this.f53813p = t10.f53813p;
+            this.f53814q = t10.f53814q;
+            this.f53815r = t10.f53815r;
+            this.f53816s = t10.f53816s;
+            this.f53817t = t10.f53817t;
+            this.f53818u = t10.f53818u;
+            this.f53819v = t10.f53819v;
+            this.f53822y = t10.f53822y;
+            this.f53820w = str;
         } catch (JSONException e10) {
             throw new IllegalArgumentException(e10);
         }

@@ -1671,10 +1671,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.WISHLIST_NUX_TOOLTIP_AND_MODAL = var1;
     var0 = 'WISHLIST_NUX_TOOLTIP_AND_MODAL';
     var3[var1] = var0;
-    var1 = 612;
-    var3.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER = var1;
-    var0 = 'USER_SETTINGS_REDESIGN_EDUCATION_POPOVER';
-    var3[var1] = var0;
     var1 = 613;
     var3.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE = var1;
     var0 = 'WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE';
@@ -1930,6 +1926,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 681;
     var3.WISHLIST_MOBILE_YOU_SCREEN_COACHMARK = var1;
     var0 = 'WISHLIST_MOBILE_YOU_SCREEN_COACHMARK';
+    var3[var1] = var0;
+    var1 = 682;
+    var3.GAME_CLAIM_COACHMARK = var1;
+    var0 = 'GAME_CLAIM_COACHMARK';
     var3[var1] = var0;
     var1 = {};
     var1.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = var4;

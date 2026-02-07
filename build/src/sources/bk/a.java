@@ -52,31 +52,31 @@ public class a {
         mc[] mcVarArr;
         c2[] c2VarArr;
         int length;
-        float f10 = e4Var.f44153i;
-        float f11 = e4Var.f44155p / 2.0f;
-        float f12 = e4Var.f44154o;
-        float f13 = e4Var.f44156q / 2.0f;
+        float f10 = e4Var.f44201i;
+        float f11 = e4Var.f44203p / 2.0f;
+        float f12 = e4Var.f44202o;
+        float f13 = e4Var.f44204q / 2.0f;
         Rect rect = new Rect((int) (f10 - f11), (int) (f12 - f13), (int) (f10 + f11), (int) (f12 + f13));
         this.f6809a = rect;
         if (matrix != null) {
             ak.b.e(rect, matrix);
         }
-        this.f6810b = e4Var.f44152e;
-        for (mc mcVar : e4Var.f44160u) {
-            if (i(mcVar.f44489o)) {
-                PointF pointF = new PointF(mcVar.f44487e, mcVar.f44488i);
+        this.f6810b = e4Var.f44200e;
+        for (mc mcVar : e4Var.f44208u) {
+            if (i(mcVar.f44537o)) {
+                PointF pointF = new PointF(mcVar.f44535e, mcVar.f44536i);
                 if (matrix != null) {
                     ak.b.c(pointF, matrix);
                 }
                 SparseArray sparseArray = this.f6817i;
-                int i10 = mcVar.f44489o;
+                int i10 = mcVar.f44537o;
                 sparseArray.put(i10, new f(i10, pointF));
             }
         }
-        for (c2 c2Var : e4Var.f44164y) {
-            int i11 = c2Var.f43965e;
+        for (c2 c2Var : e4Var.f44212y) {
+            int i11 = c2Var.f44013e;
             if (h(i11)) {
-                PointF[] pointFArr = c2Var.f43964d;
+                PointF[] pointFArr = c2Var.f44012d;
                 pointFArr.getClass();
                 long length2 = pointFArr.length + 5 + (length / 10);
                 ArrayList arrayList = new ArrayList(length2 > 2147483647L ? Integer.MAX_VALUE : (int) length2);
@@ -87,12 +87,12 @@ public class a {
                 this.f6818j.put(i11, new b(i11, arrayList));
             }
         }
-        this.f6814f = e4Var.f44159t;
-        this.f6815g = e4Var.f44157r;
-        this.f6816h = e4Var.f44158s;
-        this.f6813e = e4Var.f44163x;
-        this.f6812d = e4Var.f44161v;
-        this.f6811c = e4Var.f44162w;
+        this.f6814f = e4Var.f44207t;
+        this.f6815g = e4Var.f44205r;
+        this.f6816h = e4Var.f44206s;
+        this.f6813e = e4Var.f44211x;
+        this.f6812d = e4Var.f44209v;
+        this.f6811c = e4Var.f44210w;
     }
 
     private static boolean h(int i10) {

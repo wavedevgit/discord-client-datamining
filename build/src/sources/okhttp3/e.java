@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f43122a = new b(null);
+    public static final b f43170a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e f43123b = new a();
+    public static final e f43171b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends e {

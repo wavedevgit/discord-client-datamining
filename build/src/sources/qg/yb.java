@@ -5,7 +5,7 @@ import yi.c;
 final class yb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final yb f47753a = new yb();
+    static final yb f47801a = new yb();
 
     static {
         c.b a10 = yi.c.a("sourceLanguage");

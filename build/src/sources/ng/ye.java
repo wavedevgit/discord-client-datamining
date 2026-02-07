@@ -298,14 +298,14 @@ public enum ye implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f40614d;
+    private final int f40662d;
 
     ye(int i10) {
-        this.f40614d = i10;
+        this.f40662d = i10;
     }
 
     @Override // ng.n2
     public final int zza() {
-        return this.f40614d;
+        return this.f40662d;
     }
 }

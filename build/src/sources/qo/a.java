@@ -14,7 +14,7 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0606a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f47907d;
+    private final List f47955d;
 
     /* renamed from: qo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -40,7 +40,7 @@ public final class a implements Parcelable {
 
     public a(List previousFramesMetadata) {
         Intrinsics.checkNotNullParameter(previousFramesMetadata, "previousFramesMetadata");
-        this.f47907d = previousFramesMetadata;
+        this.f47955d = previousFramesMetadata;
     }
 
     public final a a(List previousFramesMetadata) {
@@ -49,7 +49,7 @@ public final class a implements Parcelable {
     }
 
     public final List b() {
-        return this.f47907d;
+        return this.f47955d;
     }
 
     @Override // android.os.Parcelable
@@ -61,25 +61,25 @@ public final class a implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && Intrinsics.areEqual(this.f47907d, ((a) obj).f47907d)) {
+        if ((obj instanceof a) && Intrinsics.areEqual(this.f47955d, ((a) obj).f47955d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f47907d.hashCode();
+        return this.f47955d.hashCode();
     }
 
     public String toString() {
-        List list = this.f47907d;
+        List list = this.f47955d;
         return "AutocaptureState(previousFramesMetadata=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f47907d;
+        List<Parcelable> list = this.f47955d;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);

@@ -98,7 +98,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation<? super BillingManager.ProductDetailsResponse> continuation) {
-            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -127,7 +127,7 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(BillingManager.ProductDetailsResponse productDetailsResponse, Continuation<? super Boolean> continuation) {
-            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass2) create(productDetailsResponse, continuation)).invokeSuspend(Unit.f32056a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -179,6 +179,6 @@ public final class BillingManager$getProducts$1 extends kotlin.coroutines.jvm.in
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$getProducts$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((BillingManager$getProducts$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

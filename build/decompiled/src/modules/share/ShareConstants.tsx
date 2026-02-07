@@ -56,4 +56,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAllowedType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6649, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6692, 2]);

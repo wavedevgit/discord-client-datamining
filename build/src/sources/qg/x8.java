@@ -5,7 +5,7 @@ import yi.c;
 final class x8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x8 f47711a = new x8();
+    static final x8 f47759a = new x8();
 
     static {
         c.b a10 = yi.c.a("options");

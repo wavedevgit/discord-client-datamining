@@ -15,13 +15,13 @@ import java.util.List;
 public final class e implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f28007a = new b();
+    private final i f28055a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private final k7 f28008b;
+    private final k7 f28056b;
 
     public e(k7 k7Var) {
-        this.f28008b = k7Var;
+        this.f28056b = k7Var;
     }
 
     private io.sentry.j f(v6 v6Var) {
@@ -62,11 +62,11 @@ public final class e implements h {
     }
 
     private void g(f fVar, io.sentry.j jVar, Long l10) {
-        this.f28008b.getOnDiscard();
+        this.f28056b.getOnDiscard();
     }
 
     private void h(String str, String str2, Long l10) {
-        this.f28007a.a(new d(str, str2), l10);
+        this.f28055a.a(new d(str, str2), l10);
     }
 
     private void j(c cVar) {
@@ -90,7 +90,7 @@ public final class e implements h {
                     d(fVar, l6Var);
                 }
             } catch (Throwable th2) {
-                this.f28008b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost envelope.", new Object[0]);
+                this.f28056b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost envelope.", new Object[0]);
             }
         }
     }
@@ -101,7 +101,7 @@ public final class e implements h {
             h(fVar.getReason(), jVar.getCategory(), Long.valueOf(j10));
             g(fVar, jVar, Long.valueOf(j10));
         } catch (Throwable th2) {
-            this.f28008b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost event.", new Object[0]);
+            this.f28056b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost event.", new Object[0]);
         }
     }
 
@@ -112,16 +112,16 @@ public final class e implements h {
                 v6 b10 = l6Var.K().b();
                 if (v6.ClientReport.equals(b10)) {
                     try {
-                        j(l6Var.H(this.f28008b.getSerializer()));
+                        j(l6Var.H(this.f28056b.getSerializer()));
                         return;
                     } catch (Exception unused) {
-                        this.f28008b.getLogger().c(SentryLevel.ERROR, "Unable to restore counts from previous client report.", new Object[0]);
+                        this.f28056b.getLogger().c(SentryLevel.ERROR, "Unable to restore counts from previous client report.", new Object[0]);
                         return;
                     }
                 }
                 io.sentry.j f10 = f(b10);
                 if (f10.equals(io.sentry.j.Transaction)) {
-                    d0 M = l6Var.M(this.f28008b.getSerializer());
+                    d0 M = l6Var.M(this.f28056b.getSerializer());
                     if (M != null) {
                         List q02 = M.q0();
                         String reason = fVar.getReason();
@@ -132,7 +132,7 @@ public final class e implements h {
                     h(fVar.getReason(), f10.getCategory(), 1L);
                     g(fVar, f10, 1L);
                 } else if (f10.equals(io.sentry.j.LogItem)) {
-                    z6 L = l6Var.L(this.f28008b.getSerializer());
+                    z6 L = l6Var.L(this.f28056b.getSerializer());
                     if (L != null) {
                         long size = L.a().size();
                         h(fVar.getReason(), f10.getCategory(), Long.valueOf(size));
@@ -140,13 +140,13 @@ public final class e implements h {
                         g(fVar, f10, Long.valueOf(size));
                         return;
                     }
-                    this.f28008b.getLogger().c(SentryLevel.ERROR, "Unable to parse lost logs envelope item.", new Object[0]);
+                    this.f28056b.getLogger().c(SentryLevel.ERROR, "Unable to parse lost logs envelope item.", new Object[0]);
                 } else {
                     h(fVar.getReason(), f10.getCategory(), 1L);
                     g(fVar, f10, 1L);
                 }
             } catch (Throwable th2) {
-                this.f28008b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost envelope item.", new Object[0]);
+                this.f28056b.getLogger().a(SentryLevel.ERROR, th2, "Unable to record lost envelope item.", new Object[0]);
             }
         }
     }
@@ -158,22 +158,22 @@ public final class e implements h {
             return l5Var;
         }
         try {
-            this.f28008b.getLogger().c(SentryLevel.DEBUG, "Attaching client report to envelope.", new Object[0]);
+            this.f28056b.getLogger().c(SentryLevel.DEBUG, "Attaching client report to envelope.", new Object[0]);
             ArrayList arrayList = new ArrayList();
             for (l6 l6Var : l5Var.c()) {
                 arrayList.add(l6Var);
             }
-            arrayList.add(l6.A(this.f28008b.getSerializer(), i10));
+            arrayList.add(l6.A(this.f28056b.getSerializer(), i10));
             return new l5(l5Var.b(), arrayList);
         } catch (Throwable th2) {
-            this.f28008b.getLogger().a(SentryLevel.ERROR, th2, "Unable to attach client report to envelope.", new Object[0]);
+            this.f28056b.getLogger().a(SentryLevel.ERROR, th2, "Unable to attach client report to envelope.", new Object[0]);
             return l5Var;
         }
     }
 
     c i() {
         Date d10 = k.d();
-        List b10 = this.f28007a.b();
+        List b10 = this.f28055a.b();
         if (b10.isEmpty()) {
             return null;
         }

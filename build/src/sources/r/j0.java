@@ -11,28 +11,28 @@ import x.y0;
 abstract class j0 implements b0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    final CameraDevice f48335a;
+    final CameraDevice f48383a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Object f48336b;
+    final Object f48384b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Handler f48337a;
+        final Handler f48385a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(Handler handler) {
-            this.f48337a = handler;
+            this.f48385a = handler;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j0(CameraDevice cameraDevice, Object obj) {
-        this.f48335a = (CameraDevice) b2.e.g(cameraDevice);
-        this.f48336b = obj;
+        this.f48383a = (CameraDevice) b2.e.g(cameraDevice);
+        this.f48384b = obj;
     }
 
     private static void b(CameraDevice cameraDevice, List list) {

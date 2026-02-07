@@ -156,7 +156,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMonetizationNetwork((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }
@@ -180,7 +180,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getCurrencyIso4217Code((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }
@@ -203,7 +203,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMediationNetwork((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }
@@ -226,7 +226,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 AFAdRevenueData((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }
@@ -269,7 +269,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 AFAdRevenueData((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }
@@ -292,7 +292,7 @@ public final class AFLogger extends AFh1ySDK {
             @Override // kotlin.jvm.functions.Function1
             public final /* synthetic */ Object invoke(Object obj) {
                 getMonetizationNetwork((AFh1ySDK) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }));
     }

@@ -13,32 +13,32 @@ import ls.i;
 public abstract class k implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Method f36612a;
+    private final Method f36660a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f36613b;
+    private final List f36661b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Type f36614c;
+    private final Type f36662c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends k implements g {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f36615d;
+        private final Object f36663d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(Method unboxMethod, Object obj) {
             super(unboxMethod, CollectionsKt.l(), null);
             Intrinsics.checkNotNullParameter(unboxMethod, "unboxMethod");
-            this.f36615d = obj;
+            this.f36663d = obj;
         }
 
         @Override // ls.h
         public Object call(Object[] args) {
             Intrinsics.checkNotNullParameter(args, "args");
             e(args);
-            return d(this.f36615d, args);
+            return d(this.f36663d, args);
         }
     }
 
@@ -56,7 +56,7 @@ public abstract class k implements h {
             Intrinsics.checkNotNullParameter(args, "args");
             e(args);
             Object obj = args[0];
-            i.d dVar = i.f36597e;
+            i.d dVar = i.f36645e;
             if (args.length <= 1) {
                 r10 = new Object[0];
             } else {
@@ -72,7 +72,7 @@ public abstract class k implements h {
 
     @Override // ls.h
     public final List a() {
-        return this.f36613b;
+        return this.f36661b;
     }
 
     @Override // ls.h
@@ -82,7 +82,7 @@ public abstract class k implements h {
 
     protected final Object d(Object obj, Object[] args) {
         Intrinsics.checkNotNullParameter(args, "args");
-        return this.f36612a.invoke(obj, Arrays.copyOf(args, args.length));
+        return this.f36660a.invoke(obj, Arrays.copyOf(args, args.length));
     }
 
     public void e(Object[] objArr) {
@@ -97,14 +97,14 @@ public abstract class k implements h {
 
     @Override // ls.h
     public final Type getReturnType() {
-        return this.f36614c;
+        return this.f36662c;
     }
 
     private k(Method method, List list) {
-        this.f36612a = method;
-        this.f36613b = list;
+        this.f36660a = method;
+        this.f36661b = list;
         Class<?> returnType = method.getReturnType();
         Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
-        this.f36614c = returnType;
+        this.f36662c = returnType;
     }
 }

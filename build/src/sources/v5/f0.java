@@ -5,7 +5,7 @@ import w5.c;
 public abstract class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52189a = c.a.a("nm", "r", "hd");
+    private static final c.a f52237a = c.a.a("nm", "r", "hd");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.n a(w5.c cVar, l5.i iVar) {
@@ -13,7 +13,7 @@ public abstract class f0 {
         String str = null;
         r5.b bVar = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52189a);
+            int p10 = cVar.p(f52237a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

@@ -6,7 +6,7 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 class e implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f32390d = new e();
+    public static final e f32438d = new e();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

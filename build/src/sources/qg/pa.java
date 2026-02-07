@@ -5,7 +5,7 @@ import yi.c;
 final class pa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pa f47440a = new pa();
+    static final pa f47488a = new pa();
 
     static {
         c.b a10 = yi.c.a("shadowRemovalType");

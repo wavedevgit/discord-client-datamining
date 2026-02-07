@@ -3,5 +3,5 @@ package yr;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f55568a = new as.a();
+    public static final a f55616a = new as.a();
 }

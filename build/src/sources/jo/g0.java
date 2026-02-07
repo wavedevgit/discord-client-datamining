@@ -6,10 +6,10 @@ import jo.e0;
 public final class g0 implements e0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f0 f30207a;
+    private final f0 f30255a;
 
     g0(f0 f0Var) {
-        this.f30207a = f0Var;
+        this.f30255a = f0Var;
     }
 
     public static br.h b(f0 f0Var) {
@@ -18,6 +18,6 @@ public final class g0 implements e0.a {
 
     @Override // jo.e0.a
     public e0 a(c4.e eVar, String str) {
-        return this.f30207a.b(eVar, str);
+        return this.f30255a.b(eVar, str);
     }
 }

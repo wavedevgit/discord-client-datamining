@@ -91,7 +91,7 @@ public final class d {
 
     private final ByteBuffer c() {
         if (f7282c) {
-            return r8.b.f48674a.acquire();
+            return r8.b.f48722a.acquire();
         }
         return (ByteBuffer) g().acquire();
     }

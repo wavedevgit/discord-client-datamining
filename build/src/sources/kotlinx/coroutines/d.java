@@ -9,19 +9,19 @@ public interface d extends f1 {
     public static final class a implements d {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Function1 f35045d;
+        private final Function1 f35093d;
 
         public a(Function1 function1) {
-            this.f35045d = function1;
+            this.f35093d = function1;
         }
 
         @Override // kotlinx.coroutines.d
         public void b(Throwable th2) {
-            this.f35045d.invoke(th2);
+            this.f35093d.invoke(th2);
         }
 
         public String toString() {
-            return "CancelHandler.UserSupplied[" + os.e0.a(this.f35045d) + '@' + os.e0.b(this) + ']';
+            return "CancelHandler.UserSupplied[" + os.e0.a(this.f35093d) + '@' + os.e0.b(this) + ']';
         }
     }
 

@@ -31,72 +31,72 @@ public final class e implements Call {
     private volatile f C;
 
     /* renamed from: d  reason: collision with root package name */
-    private final OkHttpClient f25584d;
+    private final OkHttpClient f25632d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Request f25585e;
+    private final Request f25633e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f25586i;
+    private final boolean f25634i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final g f25587o;
+    private final g f25635o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final okhttp3.e f25588p;
+    private final okhttp3.e f25636p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final c f25589q;
+    private final c f25637q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final AtomicBoolean f25590r;
+    private final AtomicBoolean f25638r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Object f25591s;
+    private Object f25639s;
 
     /* renamed from: t  reason: collision with root package name */
-    private d f25592t;
+    private d f25640t;
 
     /* renamed from: u  reason: collision with root package name */
-    private f f25593u;
+    private f f25641u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f25594v;
+    private boolean f25642v;
 
     /* renamed from: w  reason: collision with root package name */
-    private gu.c f25595w;
+    private gu.c f25643w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f25596x;
+    private boolean f25644x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f25597y;
+    private boolean f25645y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f25598z;
+    private boolean f25646z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.b f25599d;
+        private final bu.b f25647d;
 
         /* renamed from: e  reason: collision with root package name */
-        private volatile AtomicInteger f25600e;
+        private volatile AtomicInteger f25648e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ e f25601i;
+        final /* synthetic */ e f25649i;
 
         public a(e eVar, bu.b responseCallback) {
             Intrinsics.checkNotNullParameter(responseCallback, "responseCallback");
-            this.f25601i = eVar;
-            this.f25599d = responseCallback;
-            this.f25600e = new AtomicInteger(0);
+            this.f25649i = eVar;
+            this.f25647d = responseCallback;
+            this.f25648e = new AtomicInteger(0);
         }
 
         public final void a(ExecutorService executorService) {
             Intrinsics.checkNotNullParameter(executorService, "executorService");
-            Dispatcher t10 = this.f25601i.k().t();
+            Dispatcher t10 = this.f25649i.k().t();
             if (cu.e.f20042h && Thread.holdsLock(t10)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + t10);
             }
@@ -106,31 +106,31 @@ public final class e implements Call {
                 } catch (RejectedExecutionException e10) {
                     InterruptedIOException interruptedIOException = new InterruptedIOException("executor rejected");
                     interruptedIOException.initCause(e10);
-                    this.f25601i.v(interruptedIOException);
-                    this.f25599d.onFailure(this.f25601i, interruptedIOException);
-                    this.f25601i.k().t().h(this);
+                    this.f25649i.v(interruptedIOException);
+                    this.f25647d.onFailure(this.f25649i, interruptedIOException);
+                    this.f25649i.k().t().h(this);
                 }
             } catch (Throwable th2) {
-                this.f25601i.k().t().h(this);
+                this.f25649i.k().t().h(this);
                 throw th2;
             }
         }
 
         public final e b() {
-            return this.f25601i;
+            return this.f25649i;
         }
 
         public final AtomicInteger c() {
-            return this.f25600e;
+            return this.f25648e;
         }
 
         public final String d() {
-            return this.f25601i.q().n().i();
+            return this.f25649i.q().n().i();
         }
 
         public final void e(a other) {
             Intrinsics.checkNotNullParameter(other, "other");
-            this.f25600e = other.f25600e;
+            this.f25648e = other.f25648e;
         }
 
         @Override // java.lang.Runnable
@@ -139,23 +139,23 @@ public final class e implements Call {
             Throwable th2;
             IOException e10;
             OkHttpClient k10;
-            e eVar = this.f25601i;
+            e eVar = this.f25649i;
             Thread currentThread = Thread.currentThread();
             String name = currentThread.getName();
-            currentThread.setName("OkHttp " + this.f25601i.w());
+            currentThread.setName("OkHttp " + this.f25649i.w());
             try {
-                eVar.f25589q.v();
+                eVar.f25637q.v();
                 try {
                     z10 = true;
                     try {
-                        this.f25599d.onResponse(eVar, eVar.r());
+                        this.f25647d.onResponse(eVar, eVar.r());
                         k10 = eVar.k();
                     } catch (IOException e11) {
                         e10 = e11;
                         if (z10) {
-                            lu.h.f36777a.g().k("Callback failure for " + eVar.D(), 4, e10);
+                            lu.h.f36825a.g().k("Callback failure for " + eVar.D(), 4, e10);
                         } else {
-                            this.f25599d.onFailure(eVar, e10);
+                            this.f25647d.onFailure(eVar, e10);
                         }
                         k10 = eVar.k();
                         k10.t().h(this);
@@ -165,7 +165,7 @@ public final class e implements Call {
                         if (!z10) {
                             IOException iOException = new IOException("canceled due to " + th2);
                             qr.e.a(iOException, th2);
-                            this.f25599d.onFailure(eVar, iOException);
+                            this.f25647d.onFailure(eVar, iOException);
                         }
                         throw th2;
                     }
@@ -187,17 +187,17 @@ public final class e implements Call {
     public static final class b extends WeakReference {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f25602a;
+        private final Object f25650a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(e referent, Object obj) {
             super(referent);
             Intrinsics.checkNotNullParameter(referent, "referent");
-            this.f25602a = obj;
+            this.f25650a = obj;
         }
 
         public final Object a() {
-            return this.f25602a;
+            return this.f25650a;
         }
     }
 
@@ -215,20 +215,20 @@ public final class e implements Call {
     public e(OkHttpClient client, Request originalRequest, boolean z10) {
         Intrinsics.checkNotNullParameter(client, "client");
         Intrinsics.checkNotNullParameter(originalRequest, "originalRequest");
-        this.f25584d = client;
-        this.f25585e = originalRequest;
-        this.f25586i = z10;
-        this.f25587o = client.o().a();
-        this.f25588p = client.v().a(this);
+        this.f25632d = client;
+        this.f25633e = originalRequest;
+        this.f25634i = z10;
+        this.f25635o = client.o().a();
+        this.f25636p = client.v().a(this);
         c cVar = new c();
         cVar.g(client.k(), TimeUnit.MILLISECONDS);
-        this.f25589q = cVar;
-        this.f25590r = new AtomicBoolean();
-        this.f25598z = true;
+        this.f25637q = cVar;
+        this.f25638r = new AtomicBoolean();
+        this.f25646z = true;
     }
 
     private final IOException B(IOException iOException) {
-        if (this.f25594v || !this.f25589q.w()) {
+        if (this.f25642v || !this.f25637q.w()) {
             return iOException;
         }
         InterruptedIOException interruptedIOException = new InterruptedIOException("timeout");
@@ -249,7 +249,7 @@ public final class e implements Call {
             str = "";
         }
         sb2.append(str);
-        if (this.f25586i) {
+        if (this.f25634i) {
             str2 = "web socket";
         } else {
             str2 = "call";
@@ -266,7 +266,7 @@ public final class e implements Call {
         if (z10 && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        f fVar = this.f25593u;
+        f fVar = this.f25641u;
         if (fVar != null) {
             if (z10 && Thread.holdsLock(fVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + fVar);
@@ -274,29 +274,29 @@ public final class e implements Call {
             synchronized (fVar) {
                 x10 = x();
             }
-            if (this.f25593u == null) {
+            if (this.f25641u == null) {
                 if (x10 != null) {
                     cu.e.n(x10);
                 }
-                this.f25588p.l(this, fVar);
+                this.f25636p.l(this, fVar);
             } else if (x10 != null) {
                 throw new IllegalStateException("Check failed.");
             }
         }
         IOException B = B(iOException);
         if (iOException != null) {
-            okhttp3.e eVar = this.f25588p;
+            okhttp3.e eVar = this.f25636p;
             Intrinsics.checkNotNull(B);
             eVar.e(this, B);
             return B;
         }
-        this.f25588p.d(this);
+        this.f25636p.d(this);
         return B;
     }
 
     private final void e() {
-        this.f25591s = lu.h.f36777a.g().i("response.body().close()");
-        this.f25588p.f(this);
+        this.f25639s = lu.h.f36825a.g().i("response.body().close()");
+        this.f25636p.f(this);
     }
 
     private final okhttp3.a h(HttpUrl httpUrl) {
@@ -304,21 +304,21 @@ public final class e implements Call {
         HostnameVerifier hostnameVerifier;
         bu.c cVar;
         if (httpUrl.j()) {
-            sSLSocketFactory = this.f25584d.O();
-            hostnameVerifier = this.f25584d.z();
-            cVar = this.f25584d.m();
+            sSLSocketFactory = this.f25632d.O();
+            hostnameVerifier = this.f25632d.z();
+            cVar = this.f25632d.m();
         } else {
             sSLSocketFactory = null;
             hostnameVerifier = null;
             cVar = null;
         }
-        return new okhttp3.a(httpUrl.i(), httpUrl.o(), this.f25584d.u(), this.f25584d.N(), sSLSocketFactory, hostnameVerifier, cVar, this.f25584d.J(), this.f25584d.I(), this.f25584d.H(), this.f25584d.q(), this.f25584d.K());
+        return new okhttp3.a(httpUrl.i(), httpUrl.o(), this.f25632d.u(), this.f25632d.N(), sSLSocketFactory, hostnameVerifier, cVar, this.f25632d.J(), this.f25632d.I(), this.f25632d.H(), this.f25632d.q(), this.f25632d.K());
     }
 
     public final void A() {
-        if (!this.f25594v) {
-            this.f25594v = true;
-            this.f25589q.w();
+        if (!this.f25642v) {
+            this.f25642v = true;
+            this.f25637q.w();
             return;
         }
         throw new IllegalStateException("Check failed.");
@@ -332,9 +332,9 @@ public final class e implements Call {
     @Override // okhttp3.Call
     public void J0(bu.b responseCallback) {
         Intrinsics.checkNotNullParameter(responseCallback, "responseCallback");
-        if (this.f25590r.compareAndSet(false, true)) {
+        if (this.f25638r.compareAndSet(false, true)) {
             e();
-            this.f25584d.t().c(new a(this, responseCallback));
+            this.f25632d.t().c(new a(this, responseCallback));
             return;
         }
         throw new IllegalStateException("Already Executed");
@@ -344,9 +344,9 @@ public final class e implements Call {
         Intrinsics.checkNotNullParameter(connection, "connection");
         if (cu.e.f20042h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        } else if (this.f25593u == null) {
-            this.f25593u = connection;
-            connection.n().add(new b(this, this.f25591s));
+        } else if (this.f25641u == null) {
+            this.f25641u = connection;
+            connection.n().add(new b(this, this.f25639s));
         } else {
             throw new IllegalStateException("Check failed.");
         }
@@ -366,19 +366,19 @@ public final class e implements Call {
         if (fVar != null) {
             fVar.d();
         }
-        this.f25588p.g(this);
+        this.f25636p.g(this);
     }
 
     @Override // okhttp3.Call
     public Response execute() {
-        if (this.f25590r.compareAndSet(false, true)) {
-            this.f25589q.v();
+        if (this.f25638r.compareAndSet(false, true)) {
+            this.f25637q.v();
             e();
             try {
-                this.f25584d.t().d(this);
+                this.f25632d.t().d(this);
                 return r();
             } finally {
-                this.f25584d.t().i(this);
+                this.f25632d.t().i(this);
             }
         }
         throw new IllegalStateException("Already Executed");
@@ -386,21 +386,21 @@ public final class e implements Call {
 
     /* renamed from: f */
     public e clone() {
-        return new e(this.f25584d, this.f25585e, this.f25586i);
+        return new e(this.f25632d, this.f25633e, this.f25634i);
     }
 
     @Override // okhttp3.Call
     public Request g() {
-        return this.f25585e;
+        return this.f25633e;
     }
 
     public final void i(Request request, boolean z10) {
         Intrinsics.checkNotNullParameter(request, "request");
-        if (this.f25595w == null) {
+        if (this.f25643w == null) {
             synchronized (this) {
-                if (!this.f25597y) {
-                    if (!this.f25596x) {
-                        Unit unit = Unit.f32008a;
+                if (!this.f25645y) {
+                    if (!this.f25644x) {
+                        Unit unit = Unit.f32056a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -409,7 +409,7 @@ public final class e implements Call {
                 }
             }
             if (z10) {
-                this.f25592t = new d(this.f25587o, h(request.n()), this, this.f25588p);
+                this.f25640t = new d(this.f25635o, h(request.n()), this, this.f25636p);
                 return;
             }
             return;
@@ -420,8 +420,8 @@ public final class e implements Call {
     public final void j(boolean z10) {
         gu.c cVar;
         synchronized (this) {
-            if (this.f25598z) {
-                Unit unit = Unit.f32008a;
+            if (this.f25646z) {
+                Unit unit = Unit.f32056a;
             } else {
                 throw new IllegalStateException("released");
             }
@@ -429,48 +429,48 @@ public final class e implements Call {
         if (z10 && (cVar = this.B) != null) {
             cVar.d();
         }
-        this.f25595w = null;
+        this.f25643w = null;
     }
 
     public final OkHttpClient k() {
-        return this.f25584d;
+        return this.f25632d;
     }
 
     public final f l() {
-        return this.f25593u;
+        return this.f25641u;
     }
 
     public final okhttp3.e m() {
-        return this.f25588p;
+        return this.f25636p;
     }
 
     public final boolean n() {
-        return this.f25586i;
+        return this.f25634i;
     }
 
     public final gu.c o() {
-        return this.f25595w;
+        return this.f25643w;
     }
 
     public final Request q() {
-        return this.f25585e;
+        return this.f25633e;
     }
 
     public final Response r() {
         ArrayList arrayList = new ArrayList();
-        CollectionsKt.B(arrayList, this.f25584d.A());
-        arrayList.add(new hu.j(this.f25584d));
-        arrayList.add(new hu.a(this.f25584d.r()));
-        arrayList.add(new eu.a(this.f25584d.j()));
-        arrayList.add(gu.a.f25551a);
-        if (!this.f25586i) {
-            CollectionsKt.B(arrayList, this.f25584d.D());
+        CollectionsKt.B(arrayList, this.f25632d.A());
+        arrayList.add(new hu.j(this.f25632d));
+        arrayList.add(new hu.a(this.f25632d.r()));
+        arrayList.add(new eu.a(this.f25632d.j()));
+        arrayList.add(gu.a.f25599a);
+        if (!this.f25634i) {
+            CollectionsKt.B(arrayList, this.f25632d.D());
         }
-        arrayList.add(new hu.b(this.f25586i));
+        arrayList.add(new hu.b(this.f25634i));
         boolean z10 = false;
         try {
             try {
-                Response a10 = new hu.g(this, arrayList, 0, null, this.f25585e, this.f25584d.n(), this.f25584d.L(), this.f25584d.R()).a(this.f25585e);
+                Response a10 = new hu.g(this, arrayList, 0, null, this.f25633e, this.f25632d.n(), this.f25632d.L(), this.f25632d.R()).a(this.f25633e);
                 if (!C()) {
                     v(null);
                     return a10;
@@ -494,10 +494,10 @@ public final class e implements Call {
     public final gu.c t(hu.g chain) {
         Intrinsics.checkNotNullParameter(chain, "chain");
         synchronized (this) {
-            if (this.f25598z) {
-                if (!this.f25597y) {
-                    if (!this.f25596x) {
-                        Unit unit = Unit.f32008a;
+            if (this.f25646z) {
+                if (!this.f25645y) {
+                    if (!this.f25644x) {
+                        Unit unit = Unit.f32056a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -508,14 +508,14 @@ public final class e implements Call {
                 throw new IllegalStateException("released");
             }
         }
-        d dVar = this.f25592t;
+        d dVar = this.f25640t;
         Intrinsics.checkNotNull(dVar);
-        gu.c cVar = new gu.c(this, this.f25588p, dVar, dVar.a(this.f25584d, chain));
-        this.f25595w = cVar;
+        gu.c cVar = new gu.c(this, this.f25636p, dVar, dVar.a(this.f25632d, chain));
+        this.f25643w = cVar;
         this.B = cVar;
         synchronized (this) {
-            this.f25596x = true;
-            this.f25597y = true;
+            this.f25644x = true;
+            this.f25645y = true;
         }
         if (!this.A) {
             return cVar;
@@ -542,7 +542,7 @@ public final class e implements Call {
             monitor-enter(r1)
             r2 = 0
             if (r3 == 0) goto L19
-            boolean r0 = r1.f25596x     // Catch: java.lang.Throwable -> L17
+            boolean r0 = r1.f25644x     // Catch: java.lang.Throwable -> L17
             if (r0 != 0) goto L1f
             goto L19
         L17:
@@ -550,19 +550,19 @@ public final class e implements Call {
             goto L59
         L19:
             if (r4 == 0) goto L41
-            boolean r0 = r1.f25597y     // Catch: java.lang.Throwable -> L17
+            boolean r0 = r1.f25645y     // Catch: java.lang.Throwable -> L17
             if (r0 == 0) goto L41
         L1f:
             if (r3 == 0) goto L23
-            r1.f25596x = r2     // Catch: java.lang.Throwable -> L17
+            r1.f25644x = r2     // Catch: java.lang.Throwable -> L17
         L23:
             if (r4 == 0) goto L27
-            r1.f25597y = r2     // Catch: java.lang.Throwable -> L17
+            r1.f25645y = r2     // Catch: java.lang.Throwable -> L17
         L27:
-            boolean r3 = r1.f25596x     // Catch: java.lang.Throwable -> L17
+            boolean r3 = r1.f25644x     // Catch: java.lang.Throwable -> L17
             r4 = 1
             if (r3 != 0) goto L32
-            boolean r0 = r1.f25597y     // Catch: java.lang.Throwable -> L17
+            boolean r0 = r1.f25645y     // Catch: java.lang.Throwable -> L17
             if (r0 != 0) goto L32
             r0 = r4
             goto L33
@@ -570,9 +570,9 @@ public final class e implements Call {
             r0 = r2
         L33:
             if (r3 != 0) goto L3e
-            boolean r3 = r1.f25597y     // Catch: java.lang.Throwable -> L17
+            boolean r3 = r1.f25645y     // Catch: java.lang.Throwable -> L17
             if (r3 != 0) goto L3e
-            boolean r3 = r1.f25598z     // Catch: java.lang.Throwable -> L17
+            boolean r3 = r1.f25646z     // Catch: java.lang.Throwable -> L17
             if (r3 != 0) goto L3e
             r2 = r4
         L3e:
@@ -582,12 +582,12 @@ public final class e implements Call {
         L41:
             r3 = r2
         L42:
-            kotlin.Unit r4 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L17
+            kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L17
             monitor-exit(r1)
             if (r2 == 0) goto L51
             r2 = 0
             r1.B = r2
-            gu.f r2 = r1.f25593u
+            gu.f r2 = r1.f25641u
             if (r2 == 0) goto L51
             r2.s()
         L51:
@@ -608,13 +608,13 @@ public final class e implements Call {
         synchronized (this) {
             try {
                 z10 = false;
-                if (this.f25598z) {
-                    this.f25598z = false;
-                    if (!this.f25596x && !this.f25597y) {
+                if (this.f25646z) {
+                    this.f25646z = false;
+                    if (!this.f25644x && !this.f25645y) {
                         z10 = true;
                     }
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -626,11 +626,11 @@ public final class e implements Call {
     }
 
     public final String w() {
-        return this.f25585e.n().q();
+        return this.f25633e.n().q();
     }
 
     public final Socket x() {
-        f fVar = this.f25593u;
+        f fVar = this.f25641u;
         Intrinsics.checkNotNull(fVar);
         if (cu.e.f20042h && !Thread.holdsLock(fVar)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
@@ -651,10 +651,10 @@ public final class e implements Call {
         }
         if (i10 != -1) {
             n10.remove(i10);
-            this.f25593u = null;
+            this.f25641u = null;
             if (n10.isEmpty()) {
                 fVar.C(System.nanoTime());
-                if (this.f25587o.c(fVar)) {
+                if (this.f25635o.c(fVar)) {
                     return fVar.E();
                 }
             }
@@ -664,7 +664,7 @@ public final class e implements Call {
     }
 
     public final boolean y() {
-        d dVar = this.f25592t;
+        d dVar = this.f25640t;
         Intrinsics.checkNotNull(dVar);
         return dVar.e();
     }

@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.STICKER_SCROLL_LOAD_DELAY_AFTER_HEIGHT_CHANGE_MS = var3;
     var2.STICKER_FORMATS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1565, 4220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1565, 4219, 2]);

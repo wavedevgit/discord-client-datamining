@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107114: for (var _fun107114_ip = 0;;) switch (_fun107114_ip) {
+        _fun107590: for (var _fun107590_ip = 0;;) switch (_fun107590_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.channel;
@@ -44,22 +44,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var3;
                 var0 = function() { // Environment: var0
-                    _fun107115: for (var _fun107115_ip = 0;;) switch (_fun107115_ip) {
+                    _fun107591: for (var _fun107591_ip = 0;;) switch (_fun107591_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = null;
                             var1 = var1 != var2;
                             if (!var1) {
-                                _fun107115_ip = 50;
-                                continue _fun107115
+                                _fun107591_ip = 50;
+                                continue _fun107591
                             }
                         case 16:
                             var3 = _closure2_slot0;
                             var2 = var3.isDM;
                             var2 = var2.bind(var3)();
                             if (var2) {
-                                _fun107115_ip = 47;
-                                continue _fun107115
+                                _fun107591_ip = 47;
+                                continue _fun107591
                             }
                         case 33:
                             var4 = _closure2_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2;
                         case 50:
                             if (!var1) {
-                                _fun107115_ip = 98;
-                                continue _fun107115
+                                _fun107591_ip = 98;
+                                continue _fun107591
                             }
                         case 53:
                             var3 = _closure1_slot0;
@@ -93,23 +93,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun107114_ip = 231;
-                    continue _fun107114
+                    _fun107590_ip = 231;
+                    continue _fun107590
                 }
             case 61:
                 var1 = var3.isDM;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun107114_ip = 92;
-                    continue _fun107114
+                    _fun107590_ip = 92;
+                    continue _fun107590
                 }
             case 74:
                 var1 = var3.isGroupDM;
                 var1 = var1.bind(var3)();
                 var0 = null;
                 if (!var1) {
-                    _fun107114_ip = 231;
-                    continue _fun107114
+                    _fun107590_ip = 231;
+                    continue _fun107590
                 }
             case 92:
                 var4 = _closure1_slot4;
@@ -151,4 +151,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9137, 8931, 8928, 1234, 8224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9182, 8975, 8972, 1234, 8268, 2]);

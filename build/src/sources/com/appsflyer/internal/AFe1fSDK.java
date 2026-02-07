@@ -442,10 +442,10 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
                 if (advertisingId != null) {
                     if (advertisingId.length() == 0) {
                     }
-                    unit = Unit.f32008a;
+                    unit = Unit.f32056a;
                 }
                 aFa1tSDK.getGaidError().append("emptyOrNull |");
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
             } else {
                 unit = null;
             }
@@ -596,7 +596,7 @@ public final class AFe1fSDK extends AFe1lSDK<AFh1pSDK> {
             java.lang.String r0 = "emptyOrNull (bypass) |"
             r11.append(r0)     // Catch: java.lang.Throwable -> L21
         L2e:
-            kotlin.Unit r11 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L21
+            kotlin.Unit r11 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L21
             if (r11 == 0) goto L34
             r11 = 1
             return r11

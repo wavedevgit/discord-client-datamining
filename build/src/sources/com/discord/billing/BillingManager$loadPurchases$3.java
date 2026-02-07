@@ -73,7 +73,7 @@ public final class BillingManager$loadPurchases$3 extends kotlin.coroutines.jvm.
                     billingManager$loadPurchases$3 = this;
                     CrashReporting.captureException$default(CrashReporting.INSTANCE, exc, false, 2, null);
                     billingManager$loadPurchases$3.$onError.invoke(exc);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             } else {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -97,7 +97,7 @@ public final class BillingManager$loadPurchases$3 extends kotlin.coroutines.jvm.
                     exc = e;
                     CrashReporting.captureException$default(CrashReporting.INSTANCE, exc, false, 2, null);
                     billingManager$loadPurchases$3.$onError.invoke(exc);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             } catch (CancellationException e14) {
                 e = e14;
@@ -136,14 +136,14 @@ public final class BillingManager$loadPurchases$3 extends kotlin.coroutines.jvm.
                 }
             });
             billingManager$loadPurchases$3.$onSuccess.invoke();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         billingManager$loadPurchases$3.$onError.invoke(new BillingManagerException.BillingClientNotReadyException());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BillingManager$loadPurchases$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((BillingManager$loadPurchases$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

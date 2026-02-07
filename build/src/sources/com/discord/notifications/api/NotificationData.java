@@ -216,7 +216,7 @@ public final class NotificationData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f48044e, new Function0() { // from class: p7.e
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f48092e, new Function0() { // from class: p7.e
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -247,7 +247,7 @@ public final class NotificationData {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new u0(n2Var, n2Var);
     }
 
@@ -468,43 +468,43 @@ public final class NotificationData {
             compositeEncoder.l(serialDescriptor, 1, messageId$$serializer, messageId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || notificationData.messageActivityType != null) {
-            compositeEncoder.l(serialDescriptor, 2, p0.f31057a, notificationData.messageActivityType);
+            compositeEncoder.l(serialDescriptor, 2, p0.f31105a, notificationData.messageActivityType);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || notificationData.messageApplicationName != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, notificationData.messageApplicationName);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, notificationData.messageApplicationName);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || notificationData.messageType != null) {
-            compositeEncoder.l(serialDescriptor, 4, p0.f31057a, notificationData.messageType);
+            compositeEncoder.l(serialDescriptor, 4, p0.f31105a, notificationData.messageType);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || notificationData.messageContent != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, notificationData.messageContent);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, notificationData.messageContent);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || notificationData.messageFlags != null) {
-            compositeEncoder.l(serialDescriptor, 6, z0.f31115a, notificationData.messageFlags);
+            compositeEncoder.l(serialDescriptor, 6, z0.f31163a, notificationData.messageFlags);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || notificationData.channelType != null) {
-            compositeEncoder.l(serialDescriptor, 7, p0.f31057a, notificationData.channelType);
+            compositeEncoder.l(serialDescriptor, 7, p0.f31105a, notificationData.channelType);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || notificationData.channelName != null) {
-            compositeEncoder.l(serialDescriptor, 8, n2.f31041a, notificationData.channelName);
+            compositeEncoder.l(serialDescriptor, 8, n2.f31089a, notificationData.channelName);
         }
         if (compositeEncoder.A(serialDescriptor, 9) || notificationData.channelId != null) {
             compositeEncoder.l(serialDescriptor, 9, ChannelId$$serializer.INSTANCE, notificationData.channelId);
         }
         if (compositeEncoder.A(serialDescriptor, 10) || notificationData.channelIcon != null) {
-            compositeEncoder.l(serialDescriptor, 10, n2.f31041a, notificationData.channelIcon);
+            compositeEncoder.l(serialDescriptor, 10, n2.f31089a, notificationData.channelIcon);
         }
         if (compositeEncoder.A(serialDescriptor, 11) || notificationData.parentName != null) {
-            compositeEncoder.l(serialDescriptor, 11, n2.f31041a, notificationData.parentName);
+            compositeEncoder.l(serialDescriptor, 11, n2.f31089a, notificationData.parentName);
         }
         if (compositeEncoder.A(serialDescriptor, 12) || notificationData.parentId != null) {
             compositeEncoder.l(serialDescriptor, 12, ChannelId$$serializer.INSTANCE, notificationData.parentId);
         }
         if (compositeEncoder.A(serialDescriptor, 13) || notificationData.messageReferenceType != null) {
-            compositeEncoder.l(serialDescriptor, 13, p0.f31057a, notificationData.messageReferenceType);
+            compositeEncoder.l(serialDescriptor, 13, p0.f31105a, notificationData.messageReferenceType);
         }
         if (compositeEncoder.A(serialDescriptor, 14) || notificationData.channelRtcRegion != null) {
-            compositeEncoder.l(serialDescriptor, 14, n2.f31041a, notificationData.channelRtcRegion);
+            compositeEncoder.l(serialDescriptor, 14, n2.f31089a, notificationData.channelRtcRegion);
         }
         if (compositeEncoder.A(serialDescriptor, 15) || !Intrinsics.areEqual(notificationData.ackChannelIds, CollectionsKt.l())) {
             compositeEncoder.s(serialDescriptor, 15, ChannelListSerializer.INSTANCE, notificationData.ackChannelIds);
@@ -513,61 +513,61 @@ public final class NotificationData {
             compositeEncoder.l(serialDescriptor, 16, UserId$$serializer.INSTANCE, notificationData.userId);
         }
         if (compositeEncoder.A(serialDescriptor, 17) || notificationData.userUsername != null) {
-            compositeEncoder.l(serialDescriptor, 17, n2.f31041a, notificationData.userUsername);
+            compositeEncoder.l(serialDescriptor, 17, n2.f31089a, notificationData.userUsername);
         }
         if (compositeEncoder.A(serialDescriptor, 18) || notificationData.userGlobalName != null) {
-            compositeEncoder.l(serialDescriptor, 18, n2.f31041a, notificationData.userGlobalName);
+            compositeEncoder.l(serialDescriptor, 18, n2.f31089a, notificationData.userGlobalName);
         }
         if (compositeEncoder.A(serialDescriptor, 19) || notificationData.userDiscriminator != null) {
-            compositeEncoder.l(serialDescriptor, 19, p0.f31057a, notificationData.userDiscriminator);
+            compositeEncoder.l(serialDescriptor, 19, p0.f31105a, notificationData.userDiscriminator);
         }
         if (compositeEncoder.A(serialDescriptor, 20) || notificationData.userAvatar != null) {
-            compositeEncoder.l(serialDescriptor, 20, n2.f31041a, notificationData.userAvatar);
+            compositeEncoder.l(serialDescriptor, 20, n2.f31089a, notificationData.userAvatar);
         }
         if (compositeEncoder.A(serialDescriptor, 21) || notificationData.userGuildAvatar != null) {
-            compositeEncoder.l(serialDescriptor, 21, n2.f31041a, notificationData.userGuildAvatar);
+            compositeEncoder.l(serialDescriptor, 21, n2.f31089a, notificationData.userGuildAvatar);
         }
         if (compositeEncoder.A(serialDescriptor, 22) || notificationData.platformUserUsername != null) {
-            compositeEncoder.l(serialDescriptor, 22, n2.f31041a, notificationData.platformUserUsername);
+            compositeEncoder.l(serialDescriptor, 22, n2.f31089a, notificationData.platformUserUsername);
         }
         if (compositeEncoder.A(serialDescriptor, 23) || notificationData.relationshipType != null) {
-            compositeEncoder.l(serialDescriptor, 23, p0.f31057a, notificationData.relationshipType);
+            compositeEncoder.l(serialDescriptor, 23, p0.f31105a, notificationData.relationshipType);
         }
         if (compositeEncoder.A(serialDescriptor, 24) || notificationData.guildId != null) {
             compositeEncoder.l(serialDescriptor, 24, GuildId$$serializer.INSTANCE, notificationData.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 25) || notificationData.guildName != null) {
-            compositeEncoder.l(serialDescriptor, 25, n2.f31041a, notificationData.guildName);
+            compositeEncoder.l(serialDescriptor, 25, n2.f31089a, notificationData.guildName);
         }
         if (compositeEncoder.A(serialDescriptor, 26) || notificationData.guildIcon != null) {
-            compositeEncoder.l(serialDescriptor, 26, n2.f31041a, notificationData.guildIcon);
+            compositeEncoder.l(serialDescriptor, 26, n2.f31089a, notificationData.guildIcon);
         }
         if (compositeEncoder.A(serialDescriptor, 27) || notificationData.activityInstanceId != null) {
-            compositeEncoder.l(serialDescriptor, 27, n2.f31041a, notificationData.activityInstanceId);
+            compositeEncoder.l(serialDescriptor, 27, n2.f31089a, notificationData.activityInstanceId);
         }
         if (compositeEncoder.A(serialDescriptor, 28) || notificationData.activityType != null) {
-            compositeEncoder.l(serialDescriptor, 28, p0.f31057a, notificationData.activityType);
+            compositeEncoder.l(serialDescriptor, 28, p0.f31105a, notificationData.activityType);
         }
         if (compositeEncoder.A(serialDescriptor, 29) || notificationData.activityName != null) {
-            compositeEncoder.l(serialDescriptor, 29, n2.f31041a, notificationData.activityName);
+            compositeEncoder.l(serialDescriptor, 29, n2.f31089a, notificationData.activityName);
         }
         if (compositeEncoder.A(serialDescriptor, 30) || notificationData.applicationId != null) {
             compositeEncoder.l(serialDescriptor, 30, ApplicationId$$serializer.INSTANCE, notificationData.applicationId);
         }
         if (compositeEncoder.A(serialDescriptor, 31) || notificationData.applicationName != null) {
-            compositeEncoder.l(serialDescriptor, 31, n2.f31041a, notificationData.applicationName);
+            compositeEncoder.l(serialDescriptor, 31, n2.f31089a, notificationData.applicationName);
         }
         if (compositeEncoder.A(serialDescriptor, 32) || notificationData.applicationIcon != null) {
-            compositeEncoder.l(serialDescriptor, 32, n2.f31041a, notificationData.applicationIcon);
+            compositeEncoder.l(serialDescriptor, 32, n2.f31089a, notificationData.applicationIcon);
         }
         if (compositeEncoder.A(serialDescriptor, 33) || notificationData.message != null) {
             compositeEncoder.l(serialDescriptor, 33, NotificationMessageSerializer.INSTANCE, notificationData.message);
         }
         if (compositeEncoder.A(serialDescriptor, 34) || notificationData.stageInstanceTopic != null) {
-            compositeEncoder.l(serialDescriptor, 34, n2.f31041a, notificationData.stageInstanceTopic);
+            compositeEncoder.l(serialDescriptor, 34, n2.f31089a, notificationData.stageInstanceTopic);
         }
         if (compositeEncoder.A(serialDescriptor, 35) || notificationData.guildScheduledEventEntityType != null) {
-            compositeEncoder.l(serialDescriptor, 35, p0.f31057a, notificationData.guildScheduledEventEntityType);
+            compositeEncoder.l(serialDescriptor, 35, p0.f31105a, notificationData.guildScheduledEventEntityType);
         }
         if (compositeEncoder.A(serialDescriptor, 36) || notificationData.canReply) {
             compositeEncoder.s(serialDescriptor, 36, CanReplySerializer.INSTANCE, Boolean.valueOf(notificationData.canReply));
@@ -579,43 +579,43 @@ public final class NotificationData {
             compositeEncoder.l(serialDescriptor, 38, UserId$$serializer.INSTANCE, notificationData.receivingUserId);
         }
         if (compositeEncoder.A(serialDescriptor, 39) || notificationData.title != null) {
-            compositeEncoder.l(serialDescriptor, 39, n2.f31041a, notificationData.title);
+            compositeEncoder.l(serialDescriptor, 39, n2.f31089a, notificationData.title);
         }
         if (compositeEncoder.A(serialDescriptor, 40) || notificationData.subtitle != null) {
-            compositeEncoder.l(serialDescriptor, 40, n2.f31041a, notificationData.subtitle);
+            compositeEncoder.l(serialDescriptor, 40, n2.f31089a, notificationData.subtitle);
         }
         if (compositeEncoder.A(serialDescriptor, 41) || notificationData.iconUrl != null) {
-            compositeEncoder.l(serialDescriptor, 41, n2.f31041a, notificationData.iconUrl);
+            compositeEncoder.l(serialDescriptor, 41, n2.f31089a, notificationData.iconUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 42) || notificationData.notificationChannel != null) {
-            compositeEncoder.l(serialDescriptor, 42, n2.f31041a, notificationData.notificationChannel);
+            compositeEncoder.l(serialDescriptor, 42, n2.f31089a, notificationData.notificationChannel);
         }
         if (compositeEncoder.A(serialDescriptor, 43) || notificationData.trackingType != null) {
-            compositeEncoder.l(serialDescriptor, 43, n2.f31041a, notificationData.trackingType);
+            compositeEncoder.l(serialDescriptor, 43, n2.f31089a, notificationData.trackingType);
         }
         if (compositeEncoder.A(serialDescriptor, 44) || notificationData.deeplink != null) {
-            compositeEncoder.l(serialDescriptor, 44, n2.f31041a, notificationData.deeplink);
+            compositeEncoder.l(serialDescriptor, 44, n2.f31089a, notificationData.deeplink);
         }
         if (compositeEncoder.A(serialDescriptor, 45) || !Intrinsics.areEqual(notificationData.expandSubtitle, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 45, h.f31005a, notificationData.expandSubtitle);
+            compositeEncoder.l(serialDescriptor, 45, h.f31053a, notificationData.expandSubtitle);
         }
         if (compositeEncoder.A(serialDescriptor, 46) || notificationData.imageAttachmentUrl != null) {
-            compositeEncoder.l(serialDescriptor, 46, n2.f31041a, notificationData.imageAttachmentUrl);
+            compositeEncoder.l(serialDescriptor, 46, n2.f31089a, notificationData.imageAttachmentUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 47) || notificationData.ergoImageAttachmentUrl != null) {
-            compositeEncoder.l(serialDescriptor, 47, n2.f31041a, notificationData.ergoImageAttachmentUrl);
+            compositeEncoder.l(serialDescriptor, 47, n2.f31089a, notificationData.ergoImageAttachmentUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 48) || notificationData.attachmentTextVariant != null) {
-            compositeEncoder.l(serialDescriptor, 48, p0.f31057a, notificationData.attachmentTextVariant);
+            compositeEncoder.l(serialDescriptor, 48, p0.f31105a, notificationData.attachmentTextVariant);
         }
         if (compositeEncoder.A(serialDescriptor, 49) || notificationData.imageAttachmentCount != null) {
-            compositeEncoder.l(serialDescriptor, 49, p0.f31057a, notificationData.imageAttachmentCount);
+            compositeEncoder.l(serialDescriptor, 49, p0.f31105a, notificationData.imageAttachmentCount);
         }
         if (compositeEncoder.A(serialDescriptor, 50) || notificationData.videoAttachmentCount != null) {
-            compositeEncoder.l(serialDescriptor, 50, p0.f31057a, notificationData.videoAttachmentCount);
+            compositeEncoder.l(serialDescriptor, 50, p0.f31105a, notificationData.videoAttachmentCount);
         }
         if (compositeEncoder.A(serialDescriptor, 51) || notificationData.timeReceived != null) {
-            compositeEncoder.l(serialDescriptor, 51, n2.f31041a, notificationData.timeReceived);
+            compositeEncoder.l(serialDescriptor, 51, n2.f31089a, notificationData.timeReceived);
         }
         if (compositeEncoder.A(serialDescriptor, 52) || notificationData.silent) {
             compositeEncoder.y(serialDescriptor, 52, notificationData.silent);
@@ -627,31 +627,31 @@ public final class NotificationData {
             compositeEncoder.y(serialDescriptor, 54, notificationData.appDm);
         }
         if (compositeEncoder.A(serialDescriptor, 55) || notificationData.notifTypeId != null) {
-            compositeEncoder.l(serialDescriptor, 55, n2.f31041a, notificationData.notifTypeId);
+            compositeEncoder.l(serialDescriptor, 55, n2.f31089a, notificationData.notifTypeId);
         }
         if (compositeEncoder.A(serialDescriptor, 56) || notificationData.notifInstanceId != null) {
-            compositeEncoder.l(serialDescriptor, 56, n2.f31041a, notificationData.notifInstanceId);
+            compositeEncoder.l(serialDescriptor, 56, n2.f31089a, notificationData.notifInstanceId);
         }
         if (compositeEncoder.A(serialDescriptor, 57) || notificationData.joinId != null) {
-            compositeEncoder.l(serialDescriptor, 57, n2.f31041a, notificationData.joinId);
+            compositeEncoder.l(serialDescriptor, 57, n2.f31089a, notificationData.joinId);
         }
         if (compositeEncoder.A(serialDescriptor, 58) || notificationData.mentionType != null) {
-            compositeEncoder.l(serialDescriptor, 58, n2.f31041a, notificationData.mentionType);
+            compositeEncoder.l(serialDescriptor, 58, n2.f31089a, notificationData.mentionType);
         }
         if (compositeEncoder.A(serialDescriptor, 59) || notificationData.appState != null) {
-            compositeEncoder.l(serialDescriptor, 59, n2.f31041a, notificationData.appState);
+            compositeEncoder.l(serialDescriptor, 59, n2.f31089a, notificationData.appState);
         }
         if (compositeEncoder.A(serialDescriptor, 60) || notificationData.inviteGuildName != null) {
-            compositeEncoder.l(serialDescriptor, 60, n2.f31041a, notificationData.inviteGuildName);
+            compositeEncoder.l(serialDescriptor, 60, n2.f31089a, notificationData.inviteGuildName);
         }
         if (compositeEncoder.A(serialDescriptor, 61) || notificationData.inviteChannelName != null) {
-            compositeEncoder.l(serialDescriptor, 61, n2.f31041a, notificationData.inviteChannelName);
+            compositeEncoder.l(serialDescriptor, 61, n2.f31089a, notificationData.inviteChannelName);
         }
         if (compositeEncoder.A(serialDescriptor, 62) || notificationData.inviteTitleVariant != null) {
-            compositeEncoder.l(serialDescriptor, 62, p0.f31057a, notificationData.inviteTitleVariant);
+            compositeEncoder.l(serialDescriptor, 62, p0.f31105a, notificationData.inviteTitleVariant);
         }
         if (compositeEncoder.A(serialDescriptor, 63) || notificationData.pollQuestion != null) {
-            compositeEncoder.l(serialDescriptor, 63, n2.f31041a, notificationData.pollQuestion);
+            compositeEncoder.l(serialDescriptor, 63, n2.f31089a, notificationData.pollQuestion);
         }
     }
 

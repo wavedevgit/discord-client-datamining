@@ -38,7 +38,7 @@ public /* synthetic */ class BillingManagerPurchaseStateUpdated$$serializer impl
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a, h.f31005a};
+        return new KSerializer[]{p0.f31105a, h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

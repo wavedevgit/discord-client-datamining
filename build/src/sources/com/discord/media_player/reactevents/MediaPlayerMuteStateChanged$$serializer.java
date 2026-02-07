@@ -39,7 +39,7 @@ public /* synthetic */ class MediaPlayerMuteStateChanged$$serializer implements 
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{x.f31095a, h.f31005a};
+        return new KSerializer[]{x.f31143a, h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -7,9 +7,9 @@ import qr.v;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f52768a = o0.m(v.a("linear", new nm.c()), v.a("ios", new nm.b()));
+    private static final Map f52816a = o0.m(v.a("linear", new nm.c()), v.a("ios", new nm.b()));
 
     public static final Map a() {
-        return f52768a;
+        return f52816a;
     }
 }

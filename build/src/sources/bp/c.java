@@ -69,7 +69,7 @@ public final class c extends FrameLayout {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((d) obj, (a0) obj2);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -83,7 +83,7 @@ public final class c extends FrameLayout {
             Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
             Intrinsics.checkNotNullParameter(context, "context");
             c cVar = new c(context, null, 0, 0, 14, null);
-            cVar.setId(f2.f51919h);
+            cVar.setId(f2.f51967h);
             cVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             g0.a(cVar, initialRendering, initialEnv, new C0111a(cVar));
             return cVar;
@@ -146,8 +146,8 @@ public final class c extends FrameLayout {
         });
         g0.h(c11);
         this.f6962e.h(CollectionsKt.l(), currentView, c11);
-        this.f6961d.f54046c.removeView(currentView);
-        this.f6961d.f54046c.addView(c11);
+        this.f6961d.f54094c.removeView(currentView);
+        this.f6961d.f54094c.addView(c11);
         if (currentView != null && (c10 = en.d.f21675f.c(currentView)) != null) {
             c10.d();
         }
@@ -163,8 +163,8 @@ public final class c extends FrameLayout {
     }
 
     private final View getCurrentView() {
-        if (this.f6961d.f54046c.getChildCount() > 0) {
-            return this.f6961d.f54046c.getChildAt(0);
+        if (this.f6961d.f54094c.getChildCount() > 0) {
+            return this.f6961d.f54094c.getChildAt(0);
         }
         return null;
     }
@@ -176,11 +176,11 @@ public final class c extends FrameLayout {
         setEnabled(newRendering.b());
         if (!isEnabled()) {
             b10.setAlpha(0.5f);
-            this.f6961d.f54045b.setVisibility(0);
+            this.f6961d.f54093b.setVisibility(0);
             return;
         }
         b10.setAlpha(1.0f);
-        this.f6961d.f54045b.setVisibility(8);
+        this.f6961d.f54093b.setVisibility(8);
     }
 
     @Override // android.view.ViewGroup, android.view.View

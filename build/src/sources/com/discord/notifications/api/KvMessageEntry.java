@@ -62,7 +62,7 @@ public final class KvMessageEntry {
     }
 
     static {
-        o oVar = o.f48044e;
+        o oVar = o.f48092e;
         $childSerializers = new Lazy[]{l.b(oVar, new Function0() { // from class: p7.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -86,12 +86,12 @@ public final class KvMessageEntry {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(y.f35529a);
+        return new f(y.f35577a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f35529a);
+        return new f(y.f35577a);
     }
 
     /* renamed from: copy-kA7ecXY$default  reason: not valid java name */
@@ -138,7 +138,7 @@ public final class KvMessageEntry {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.s(serialDescriptor, 0, (ft.o) lazyArr[0].getValue(), kvMessageEntry.members);
         compositeEncoder.s(serialDescriptor, 1, (ft.o) lazyArr[1].getValue(), kvMessageEntry.users);
-        compositeEncoder.s(serialDescriptor, 2, y.f35529a, kvMessageEntry.message);
+        compositeEncoder.s(serialDescriptor, 2, y.f35577a, kvMessageEntry.message);
         compositeEncoder.s(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(kvMessageEntry.f9529id));
         compositeEncoder.s(serialDescriptor, 4, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(kvMessageEntry.channelId));
     }

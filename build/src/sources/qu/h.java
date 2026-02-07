@@ -10,16 +10,16 @@ import qu.c0;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f48231a = new a(null);
+    public static final a f48279a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final h f48232b;
+    public static final h f48280b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final c0 f48233c;
+    public static final c0 f48281c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f48234d;
+    public static final h f48282d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -39,14 +39,14 @@ public abstract class h {
         } catch (ClassNotFoundException unused) {
             rVar = new r();
         }
-        f48232b = rVar;
-        c0.a aVar = c0.f48188e;
+        f48280b = rVar;
+        c0.a aVar = c0.f48236e;
         String property = System.getProperty("java.io.tmpdir");
         Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
-        f48233c = c0.a.e(aVar, property, false, 1, null);
+        f48281c = c0.a.e(aVar, property, false, 1, null);
         ClassLoader classLoader = ru.h.class.getClassLoader();
         Intrinsics.checkNotNullExpressionValue(classLoader, "getClassLoader(...)");
-        f48234d = new ru.h(classLoader, false, null, 4, null);
+        f48282d = new ru.h(classLoader, false, null, 4, null);
     }
 
     public final Sink a(c0 file) {

@@ -47,8 +47,8 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, ChannelId$$serializer.INSTANCE, MessageId$$serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(n2Var), jt.h.f31005a, gt.a.u(n2Var), gt.a.u(n2Var)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, ChannelId$$serializer.INSTANCE, MessageId$$serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(n2Var), jt.h.f31053a, gt.a.u(n2Var), gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -75,7 +75,7 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
             ChannelId channelId2 = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 2, MessageId$$serializer.INSTANCE, null);
             String m1092unboximpl = messageId != null ? messageId.m1092unboximpl() : null;
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             boolean C = b10.C(serialDescriptor, 5);
             str3 = (String) b10.n(serialDescriptor, 7, n2Var, null);
             str4 = (String) b10.n(serialDescriptor, 6, n2Var, null);
@@ -123,19 +123,19 @@ public /* synthetic */ class SoundmojiContentNode$$serializer implements h0 {
                         i11 = 7;
                         i12 = 6;
                     case 3:
-                        str10 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str10);
                         i13 |= 8;
                     case 4:
-                        str7 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str7);
                         i13 |= 16;
                     case 5:
                         z12 = b10.C(serialDescriptor, 5);
                         i13 |= 32;
                     case 6:
-                        str9 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str9);
+                        str9 = (String) b10.n(serialDescriptor, i12, n2.f31089a, str9);
                         i13 |= 64;
                     case 7:
-                        str8 = (String) b10.n(serialDescriptor, i11, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, i11, n2.f31089a, str8);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                     default:
                         throw new b0(o10);

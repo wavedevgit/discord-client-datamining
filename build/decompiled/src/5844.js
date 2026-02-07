@@ -14,9 +14,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var1[var0];
     var1 = metroImportAll;
     var0 = undefined;
-    var3 = var1.bind(var0)(var3);
-    var1 = var3.createContext;
-    var1 = var1.bind(var3)(var0);
+    var4 = var1.bind(var0)(var3);
+    var3 = var4.createContext;
+    var1 = null;
+    var1 = var3.bind(var4)(var1);
     var2.default = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

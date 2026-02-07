@@ -61,7 +61,7 @@ public final class CheckpointGuild {
         compositeEncoder.z(serialDescriptor, 0, checkpointGuild.guildName);
         compositeEncoder.s(serialDescriptor, 1, GuildId$$serializer.INSTANCE, GuildId.m1070boximpl(checkpointGuild.guildId));
         if (compositeEncoder.A(serialDescriptor, 2) || checkpointGuild.guildIcon != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, checkpointGuild.guildIcon);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, checkpointGuild.guildIcon);
         }
     }
 

@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111737: for (var _fun111737_ip = 0;;) switch (_fun111737_ip) {
+        _fun112223: for (var _fun112223_ip = 0;;) switch (_fun112223_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.props;
@@ -144,12 +144,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var0;
                 var2[2] = var12;
                 var1 = function() { // Environment: var1
-                    _fun111739: for (var _fun111739_ip = 0;;) switch (_fun111739_ip) {
+                    _fun112225: for (var _fun112225_ip = 0;;) switch (_fun112225_ip) {
                         case 0:
                             var1 = _closure2_slot2;
                             if (!var1) {
-                                _fun111739_ip = 112;
-                                continue _fun111739
+                                _fun112225_ip = 112;
+                                continue _fun112225
                             }
                         case 10:
                             var5 = _closure1_slot1;
@@ -183,34 +183,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7.bind(var9)(var1, var2);
                 var7 = !var0;
                 if (var7) {
-                    _fun111737_ip = 277;
-                    continue _fun111737
+                    _fun112223_ip = 277;
+                    continue _fun112223
                 }
             case 264:
                 var0 = var5.iconFill;
                 var12 = var0.color;
-                _fun111737_ip = 288;
-                continue _fun111737;
+                _fun112223_ip = 288;
+                continue _fun112223;
             case 277:
                 var0 = var5.iconFillMuted;
                 var12 = var0.color;
             case 288:
                 if (var6) {
-                    _fun111737_ip = 304;
-                    continue _fun111737
+                    _fun112223_ip = 304;
+                    continue _fun112223
                 }
             case 291:
                 var0 = var5.iconBg;
                 var16 = var0.backgroundColor;
-                _fun111737_ip = 315;
-                continue _fun111737;
+                _fun112223_ip = 315;
+                continue _fun112223;
             case 304:
                 var0 = var5.iconBgSelected;
                 var16 = var0.backgroundColor;
             case 315:
                 if (!var6) {
-                    _fun111737_ip = 329;
-                    continue _fun111737
+                    _fun112223_ip = 329;
+                    continue _fun112223
                 }
             case 318:
                 var0 = var5.iconFillSelected;
@@ -237,14 +237,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.bind(var3)(var4);
                 var7 = var4.t;
                 if (var6) {
-                    _fun111737_ip = 427;
-                    continue _fun111737
+                    _fun112223_ip = 427;
+                    continue _fun112223
                 }
             case 414:
                 var4 = var7.fjBNo1;
                 var4 = var9.bind(var13)(var4);
-                _fun111737_ip = 438;
-                continue _fun111737;
+                _fun112223_ip = 438;
+                continue _fun112223;
             case 427:
                 var7 = var7.CpkXwZ;
                 var4 = var9.bind(var13)(var7);
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityLabel = var4;
                 var4 = undefined;
                 if (!var6) {
-                    _fun111737_ip = 453;
-                    continue _fun111737
+                    _fun112223_ip = 453;
+                    continue _fun112223
                 }
             case 447:
                 var4 = var5.iconBgSelected;
@@ -302,4 +302,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 1297, 671, 11839, 14375, 566, 44, 8483, 795, 14376, 1234, 6481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 1297, 671, 11885, 14418, 566, 44, 8527, 795, 14419, 1234, 6524, 2]);

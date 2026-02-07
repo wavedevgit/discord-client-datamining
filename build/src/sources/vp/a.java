@@ -7,32 +7,32 @@ public interface a {
     public static final class C0699a implements a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f52812a;
+        private final boolean f52860a;
 
         public C0699a(boolean z10) {
-            this.f52812a = z10;
+            this.f52860a = z10;
         }
 
         public final boolean a() {
-            return this.f52812a;
+            return this.f52860a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0699a) && this.f52812a == ((C0699a) obj).f52812a) {
+            if ((obj instanceof C0699a) && this.f52860a == ((C0699a) obj).f52860a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f52812a);
+            return Boolean.hashCode(this.f52860a);
         }
 
         public String toString() {
-            boolean z10 = this.f52812a;
+            boolean z10 = this.f52860a;
             return "CancelRequest(force=" + z10 + ")";
         }
     }

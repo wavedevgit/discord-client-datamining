@@ -16,26 +16,26 @@ public abstract /* synthetic */ class j {
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49290d;
+        int f49338d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Flow f49291e;
+        final /* synthetic */ Flow f49339e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Flow flow, Continuation continuation) {
             super(2, continuation);
-            this.f49291e = flow;
+            this.f49339e = flow;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f49291e, continuation);
+            return new a(this.f49339e, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f49290d;
+            int i10 = this.f49338d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -44,27 +44,27 @@ public abstract /* synthetic */ class j {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow flow = this.f49291e;
-                this.f49290d = 1;
+                Flow flow = this.f49339e;
+                this.f49338d = 1;
                 if (g.h(flow, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
     public static final Object a(Flow flow, Continuation continuation) {
-        Object collect = flow.collect(ss.s.f50098d, continuation);
+        Object collect = flow.collect(ss.s.f50146d, continuation);
         if (collect == wr.b.f()) {
             return collect;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Object b(Flow flow, Function2 function2, Continuation continuation) {
@@ -74,7 +74,7 @@ public abstract /* synthetic */ class j {
         if (h10 == wr.b.f()) {
             return h10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Object c(FlowCollector flowCollector, Flow flow, Continuation continuation) {
@@ -83,7 +83,7 @@ public abstract /* synthetic */ class j {
         if (collect == wr.b.f()) {
             return collect;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Job d(Flow flow, CoroutineScope coroutineScope) {

@@ -17,13 +17,13 @@ import mp.x5;
 public final class f1 implements dn.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ dn.f f37400a;
+    private final /* synthetic */ dn.f f37448a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final un.t f37401b;
+    private final un.t f37449b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final un.w0 f37402c;
+    private final un.w0 f37450c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -41,14 +41,14 @@ public final class f1 implements dn.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((x5.d.a) obj, (dn.a0) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
     public f1(final un.t cameraPreview, final un.w0 selfieDirectionFeed) {
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
-        this.f37400a = new dn.f(Reflection.getOrCreateKotlinClass(x5.d.a.class), new Function4() { // from class: mp.e1
+        this.f37448a = new dn.f(Reflection.getOrCreateKotlinClass(x5.d.a.class), new Function4() { // from class: mp.e1
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 View c10;
@@ -56,8 +56,8 @@ public final class f1 implements dn.c0 {
                 return c10;
             }
         });
-        this.f37401b = cameraPreview;
-        this.f37402c = selfieDirectionFeed;
+        this.f37449b = cameraPreview;
+        this.f37450c = selfieDirectionFeed;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -70,7 +70,7 @@ public final class f1 implements dn.c0 {
             context2 = context;
         }
         np.c c10 = np.c.c(LayoutInflater.from(context2).cloneInContext(context));
-        aq.c.a(initialViewEnvironment, androidx.core.content.a.c(c10.getRoot().getContext(), t0.f37666a));
+        aq.c.a(initialViewEnvironment, androidx.core.content.a.c(c10.getRoot().getContext(), t0.f37714a));
         ConstraintLayout root = c10.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         Intrinsics.checkNotNull(c10);
@@ -86,11 +86,11 @@ public final class f1 implements dn.c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f37400a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f37448a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // dn.c0
     public KClass getType() {
-        return this.f37400a.getType();
+        return this.f37448a.getType();
     }
 }

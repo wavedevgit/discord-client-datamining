@@ -1,87 +1,73 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0() {
-        _fun51506: for (var _fun51506_ip = 0;;) switch (_fun51506_ip) {
-            case 0:
-                var5 = arg0;
-                var1 = !var5;
-                if (var1) {
-                    _fun51506_ip = 20;
-                    continue _fun51506
-                }
-            case 9:
-                var2 = 'string';
-                var0 = typeof var5;
-                var1 = var2 === var0;
-            case 20:
-                var0 = !var1;
-                if (var1) {
-                    _fun51506_ip = 159;
-                    continue _fun51506
-                }
-            case 29:
-                var4 = global;
-                var1 = var4.Array;
-                var1 = var5 instanceof var1;
-                if (var1) {
-                    _fun51506_ip = 60;
-                    continue _fun51506
-                }
-            case 44:
-                var3 = var4.Array;
-                var2 = var3.isArray;
-                var1 = var2.bind(var3)(var5);
-            case 60:
-                if (var1) {
-                    _fun51506_ip = 156;
-                    continue _fun51506
-                }
-            case 63:
-                var3 = var5.length;
-                var2 = 0;
-                var2 = var3 >= var2;
-                if (!var2) {
-                    _fun51506_ip = 153;
-                    continue _fun51506
-                }
-            case 77:
-                var6 = var5.splice;
-                var3 = var4.Function;
-                var3 = var6 instanceof var3;
-                if (var3) {
-                    _fun51506_ip = 150;
-                    continue _fun51506
-                }
-            case 96:
-                var7 = var4.Object;
-                var6 = var7.getOwnPropertyDescriptor;
-                var8 = var5.length;
-                var4 = 1;
-                var4 = var8 - var4;
-                var4 = var6.bind(var7)(var5, var4);
-                if (!var4) {
-                    _fun51506_ip = 147;
-                    continue _fun51506
-                }
-            case 129:
-                var5 = var5.constructor;
-                var6 = var5.name;
-                var5 = 'String';
-                var4 = var5 !== var6;
-            case 147:
-                var3 = var4;
-            case 150:
-                var2 = var3;
-            case 153:
-                var1 = var2;
-            case 156:
-                var0 = var1;
-            case 159:
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var _closure1_slot0 = var3;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var4;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var6 = var4[var0];
+    var5 = metroImportAll;
     var0 = undefined;
+    var5 = var5.bind(var0)(var6);
+    var _closure1_slot3 = var5;
+    var5 = 1;
+    var5 = var4[var5];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.jsx;
+    var _closure1_slot4 = var5;
+    var1 = function arg0() {
+        var2 = _closure1_slot3;
+        var1 = var2.useRef;
+        var0 = null;
+        var4 = var1.bind(var2)(var0);
+        var3 = _closure1_slot4;
+        var1 = _closure1_slot1;
+        var7 = _closure1_slot2;
+        var0 = 2;
+        var0 = var7[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.Provider;
+        var0 = {};
+        var0.value = var4;
+        var6 = _closure1_slot0;
+        var5 = 3;
+        var5 = var7[var5];
+        var5 = var6.bind(var2)(var5);
+        var5 = var5.PanGestureHandler;
+        var6 = global;
+        var9 = var6.Object;
+        var8 = var9.assign;
+        var7 = {};
+        var7.ref = var4;
+        var6 = {};
+        var4 = arg0;
+        var4 = var8.bind(var9)(var6, var4, var7);
+        var4 = var3.bind(var2)(var5, var4);
+        var0.children = var4;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var2.PanGestureHandler = var1;
+    var1 = 3;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.GestureHandlerRootView;
+    var2.GestureHandlerRootView = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.State;
+    var2.GestureState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5844, 4963]);

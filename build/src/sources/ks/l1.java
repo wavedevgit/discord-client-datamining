@@ -14,17 +14,17 @@ public final class l1 extends d2 implements kotlin.reflect.g {
     public static final class a extends j2.d implements g.a {
 
         /* renamed from: u  reason: collision with root package name */
-        private final l1 f35360u;
+        private final l1 f35408u;
 
         public a(l1 property) {
             Intrinsics.checkNotNullParameter(property, "property");
-            this.f35360u = property;
+            this.f35408u = property;
         }
 
         @Override // kotlin.reflect.KProperty.a
         /* renamed from: P */
         public l1 a() {
-            return this.f35360u;
+            return this.f35408u;
         }
 
         public void Q(Object obj, Object obj2) {
@@ -34,7 +34,7 @@ public final class l1 extends d2 implements kotlin.reflect.g {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             Q(obj, obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -44,7 +44,7 @@ public final class l1 extends d2 implements kotlin.reflect.g {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        this.B = qr.l.b(qr.o.f48044e, new k1(this));
+        this.B = qr.l.b(qr.o.f48092e, new k1(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -68,6 +68,6 @@ public final class l1 extends d2 implements kotlin.reflect.g {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.B = qr.l.b(qr.o.f48044e, new k1(this));
+        this.B = qr.l.b(qr.o.f48092e, new k1(this));
     }
 }

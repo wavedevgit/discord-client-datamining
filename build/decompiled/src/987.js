@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function arg0, arg1, arg2() {
-        _fun10146: for (var _fun10146_ip = 0;;) switch (_fun10146_ip) {
+        _fun10148: for (var _fun10148_ip = 0;;) switch (_fun10148_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 'function';
                 var5 = typeof var5;
                 if (!(var6 === var5)) {
-                    _fun10146_ip = 173;
-                    continue _fun10146
+                    _fun10148_ip = 173;
+                    continue _fun10148
                 }
             case 40: // try_start_0
                 var7 = var2;
@@ -34,8 +34,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var1;
                 var7[var6] = var5;
             case 53: // try_end0
-                _fun10146_ip = 102;
-                continue _fun10146;
+                _fun10148_ip = 102;
+                continue _fun10148;
             case 55: // catch_target0
                 CatchBlockStart(arg_register = 5);
                 var5 = global;
@@ -56,16 +56,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2;
                 var4 = var4.default;
                 if (!(var4 === var3)) {
-                    _fun10146_ip = 173;
-                    continue _fun10146
+                    _fun10148_ip = 173;
+                    continue _fun10148
                 }
             case 114: // try_start_1
                 var4 = var2;
                 var3 = var1;
                 var4.default = var3;
             case 126: // try_end1
-                _fun10146_ip = 173;
-                continue _fun10146;
+                _fun10148_ip = 173;
+                continue _fun10148;
             case 128: // catch_target1
                 CatchBlockStart(arg_register = 3);
                 var3 = global;

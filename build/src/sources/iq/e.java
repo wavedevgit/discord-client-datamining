@@ -10,18 +10,18 @@ import androidx.viewbinding.ViewBinding;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29215a;
+    private final ConstraintLayout f29263a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Guideline f29216b;
+    public final Guideline f29264b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Guideline f29217c;
+    public final Guideline f29265c;
 
     private e(ConstraintLayout constraintLayout, Guideline guideline, Guideline guideline2) {
-        this.f29215a = constraintLayout;
-        this.f29216b = guideline;
-        this.f29217c = guideline2;
+        this.f29263a = constraintLayout;
+        this.f29264b = guideline;
+        this.f29265c = guideline2;
     }
 
     public static e a(View view) {
@@ -52,6 +52,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29215a;
+        return this.f29263a;
     }
 }

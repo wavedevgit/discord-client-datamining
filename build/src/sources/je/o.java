@@ -11,13 +11,13 @@ import qd.u0;
 public final class o implements com.google.android.exoplayer2.g {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f29858i = w0.B0(0);
+    private static final String f29906i = w0.B0(0);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f29859o = w0.B0(1);
+    private static final String f29907o = w0.B0(1);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final g.a f29860p = new g.a() { // from class: je.n
+    public static final g.a f29908p = new g.a() { // from class: je.n
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             return o.a(bundle);
@@ -25,25 +25,25 @@ public final class o implements com.google.android.exoplayer2.g {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    public final u0 f29861d;
+    public final u0 f29909d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final s f29862e;
+    public final s f29910e;
 
     public o(u0 u0Var, List list) {
-        if (!list.isEmpty() && (((Integer) Collections.min(list)).intValue() < 0 || ((Integer) Collections.max(list)).intValue() >= u0Var.f46876d)) {
+        if (!list.isEmpty() && (((Integer) Collections.min(list)).intValue() < 0 || ((Integer) Collections.max(list)).intValue() >= u0Var.f46924d)) {
             throw new IndexOutOfBoundsException();
         }
-        this.f29861d = u0Var;
-        this.f29862e = s.o(list);
+        this.f29909d = u0Var;
+        this.f29910e = s.o(list);
     }
 
     public static /* synthetic */ o a(Bundle bundle) {
-        return new o((u0) u0.f46875s.a((Bundle) ne.a.e(bundle.getBundle(f29858i))), pi.e.c((int[]) ne.a.e(bundle.getIntArray(f29859o))));
+        return new o((u0) u0.f46923s.a((Bundle) ne.a.e(bundle.getBundle(f29906i))), pi.e.c((int[]) ne.a.e(bundle.getIntArray(f29907o))));
     }
 
     public int b() {
-        return this.f29861d.f46878i;
+        return this.f29909d.f46926i;
     }
 
     public boolean equals(Object obj) {
@@ -52,7 +52,7 @@ public final class o implements com.google.android.exoplayer2.g {
         }
         if (obj != null && o.class == obj.getClass()) {
             o oVar = (o) obj;
-            if (this.f29861d.equals(oVar.f29861d) && this.f29862e.equals(oVar.f29862e)) {
+            if (this.f29909d.equals(oVar.f29909d) && this.f29910e.equals(oVar.f29910e)) {
                 return true;
             }
         }
@@ -60,6 +60,6 @@ public final class o implements com.google.android.exoplayer2.g {
     }
 
     public int hashCode() {
-        return this.f29861d.hashCode() + (this.f29862e.hashCode() * 31);
+        return this.f29909d.hashCode() + (this.f29910e.hashCode() * 31);
     }
 }

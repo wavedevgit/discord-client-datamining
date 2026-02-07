@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicReference f34863a;
+    private final AtomicReference f34911a;
 
     public a(Sequence sequence) {
         Intrinsics.checkNotNullParameter(sequence, "sequence");
-        this.f34863a = new AtomicReference(sequence);
+        this.f34911a = new AtomicReference(sequence);
     }
 
     @Override // kotlin.sequences.Sequence
     public Iterator iterator() {
-        Sequence sequence = (Sequence) this.f34863a.getAndSet(null);
+        Sequence sequence = (Sequence) this.f34911a.getAndSet(null);
         if (sequence != null) {
             return sequence.iterator();
         }

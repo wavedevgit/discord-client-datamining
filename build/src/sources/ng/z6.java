@@ -5,7 +5,7 @@ import yi.c;
 final class z6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z6 f40637a = new z6();
+    static final z6 f40685a = new z6();
 
     static {
         c.b a10 = yi.c.a("detectorOptions");

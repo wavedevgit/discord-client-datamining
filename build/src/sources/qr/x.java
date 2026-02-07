@@ -8,10 +8,10 @@ public final class x implements Comparable {
     @NotNull
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f48059e = new a(null);
+    public static final a f48107e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte f48060d;
+    private final byte f48108d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -24,7 +24,7 @@ public final class x implements Comparable {
     }
 
     private /* synthetic */ x(byte b10) {
-        this.f48060d = b10;
+        this.f48108d = b10;
     }
 
     public static final /* synthetic */ x a(byte b10) {
@@ -52,19 +52,19 @@ public final class x implements Comparable {
     }
 
     public boolean equals(Object obj) {
-        return e(this.f48060d, obj);
+        return e(this.f48108d, obj);
     }
 
     public final /* synthetic */ byte h() {
-        return this.f48060d;
+        return this.f48108d;
     }
 
     public int hashCode() {
-        return f(this.f48060d);
+        return f(this.f48108d);
     }
 
     public String toString() {
-        return g(this.f48060d);
+        return g(this.f48108d);
     }
 
     public static byte d(byte b10) {

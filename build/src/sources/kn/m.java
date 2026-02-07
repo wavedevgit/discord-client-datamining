@@ -38,19 +38,19 @@ public final class m extends d {
     public static final class b extends d.c {
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f31848b = m.class;
+        private final Class f31896b = m.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f31849c = "HoverGestureHandler";
+        private final String f31897c = "HoverGestureHandler";
 
         @Override // kn.d.c
         public String d() {
-            return this.f31849c;
+            return this.f31897c;
         }
 
         @Override // kn.d.c
         public Class e() {
-            return this.f31848b;
+            return this.f31896b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -206,7 +206,7 @@ public final class m extends d {
         } else if (!f0()) {
             V0();
         } else if (S() == 4 && event.getToolType(0) == 2) {
-            this.Q = z.f31935f.a(event);
+            this.Q = z.f31983f.a(event);
         } else if (S() == 0) {
             if (event.getAction() == 7 || event.getAction() == 9) {
                 p();

@@ -30,28 +30,28 @@ import un.x;
 public final class m0 implements dn.k {
 
     /* renamed from: b  reason: collision with root package name */
-    private final np.a f37504b;
+    private final np.a f37552b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final un.i f37505c;
+    private final un.i f37553c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final un.w0 f37506d;
+    private final un.w0 f37554d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Job f37507e;
+    private Job f37555e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Function1 f37508f;
+    private Function1 f37556f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Function0 f37509g;
+    private Function0 f37557g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Job f37510h;
+    private Job f37558h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f37511i;
+    private final int f37559i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements DefaultLifecycleObserver {
@@ -60,7 +60,7 @@ public final class m0 implements dn.k {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(m0 m0Var) {
-            Function0 function0 = m0Var.f37509g;
+            Function0 function0 = m0Var.f37557g;
             if (function0 != null) {
                 function0.invoke();
             }
@@ -70,7 +70,7 @@ public final class m0 implements dn.k {
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onResume(LifecycleOwner owner) {
             Intrinsics.checkNotNullParameter(owner, "owner");
-            ConstraintLayout root = m0.this.f37504b.getRoot();
+            ConstraintLayout root = m0.this.f37552b.getRoot();
             final m0 m0Var = m0.this;
             root.post(new Runnable() { // from class: mp.l0
                 @Override // java.lang.Runnable
@@ -85,59 +85,59 @@ public final class m0 implements dn.k {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f37513a;
+        public static final /* synthetic */ int[] f37561a;
 
         static {
             int[] iArr = new int[x5.d.c.EnumC0522c.values().length];
             try {
-                iArr[x5.d.c.EnumC0522c.f38177d.ordinal()] = 1;
+                iArr[x5.d.c.EnumC0522c.f38225d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38180o.ordinal()] = 2;
+                iArr[x5.d.c.EnumC0522c.f38228o.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38183r.ordinal()] = 3;
+                iArr[x5.d.c.EnumC0522c.f38231r.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38178e.ordinal()] = 4;
+                iArr[x5.d.c.EnumC0522c.f38226e.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38181p.ordinal()] = 5;
+                iArr[x5.d.c.EnumC0522c.f38229p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38184s.ordinal()] = 6;
+                iArr[x5.d.c.EnumC0522c.f38232s.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38187v.ordinal()] = 7;
+                iArr[x5.d.c.EnumC0522c.f38235v.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38179i.ordinal()] = 8;
+                iArr[x5.d.c.EnumC0522c.f38227i.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38182q.ordinal()] = 9;
+                iArr[x5.d.c.EnumC0522c.f38230q.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38185t.ordinal()] = 10;
+                iArr[x5.d.c.EnumC0522c.f38233t.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38186u.ordinal()] = 11;
+                iArr[x5.d.c.EnumC0522c.f38234u.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38188w.ordinal()] = 12;
+                iArr[x5.d.c.EnumC0522c.f38236w.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
-            f37513a = iArr;
+            f37561a = iArr;
         }
     }
 
@@ -146,32 +146,32 @@ public final class m0 implements dn.k {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37514d;
+        int f37562d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ m0 f37516d;
+            final /* synthetic */ m0 f37564d;
 
             a(m0 m0Var) {
-                this.f37516d = m0Var;
+                this.f37564d = m0Var;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(un.x xVar, Continuation continuation) {
                 Function1 function1;
-                if (Intrinsics.areEqual(xVar, x.b.f51850a)) {
-                    Function1 function12 = this.f37516d.f37508f;
+                if (Intrinsics.areEqual(xVar, x.b.f51898a)) {
+                    Function1 function12 = this.f37564d.f37556f;
                     if (function12 != null) {
                         function12.invoke(new un.e1());
                     }
-                } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f37516d.f37508f) != null) {
+                } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f37564d.f37556f) != null) {
                     function1.invoke(new un.u0());
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -187,7 +187,7 @@ public final class m0 implements dn.k {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f37514d;
+            int i10 = this.f37562d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -196,19 +196,19 @@ public final class m0 implements dn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow a10 = un.j.a(m0.this.f37505c.c());
+                Flow a10 = un.j.a(m0.this.f37553c.c());
                 a aVar = new a(m0.this);
-                this.f37514d = 1;
+                this.f37562d = 1;
                 if (a10.collect(aVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -217,20 +217,20 @@ public final class m0 implements dn.k {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37517d;
+        int f37565d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ x5.d.c.b f37519i;
+        final /* synthetic */ x5.d.c.b f37567i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f37520d;
+            int f37568d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f37521e;
+            /* synthetic */ Object f37569e;
 
             a(Continuation continuation) {
                 super(2, continuation);
@@ -239,16 +239,16 @@ public final class m0 implements dn.k {
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
                 a aVar = new a(continuation);
-                aVar.f37521e = obj;
+                aVar.f37569e = obj;
                 return aVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 wr.b.f();
-                if (this.f37520d == 0) {
+                if (this.f37568d == 0) {
                     kotlin.c.b(obj);
-                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((un.x) this.f37521e, x.e.f51853a));
+                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((un.x) this.f37569e, x.e.f51901a));
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -256,7 +256,7 @@ public final class m0 implements dn.k {
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(un.x xVar, Continuation continuation) {
-                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -265,52 +265,52 @@ public final class m0 implements dn.k {
         public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f37522d;
+            int f37570d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ x5.d.c.b f37523e;
+            final /* synthetic */ x5.d.c.b f37571e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ m0 f37524i;
+            final /* synthetic */ m0 f37572i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(x5.d.c.b bVar, m0 m0Var, Continuation continuation) {
                 super(2, continuation);
-                this.f37523e = bVar;
-                this.f37524i = m0Var;
+                this.f37571e = bVar;
+                this.f37572i = m0Var;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new b(this.f37523e, this.f37524i, continuation);
+                return new b(this.f37571e, this.f37572i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 wr.b.f();
-                if (this.f37522d == 0) {
+                if (this.f37570d == 0) {
                     kotlin.c.b(obj);
-                    ((x5.d.c.b.g) this.f37523e).b().invoke(this.f37524i.f37505c.b());
-                    return Unit.f32008a;
+                    ((x5.d.c.b.g) this.f37571e).b().invoke(this.f37572i.f37553c.b());
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(x5.d.c.b bVar, Continuation continuation) {
             super(2, continuation);
-            this.f37519i = bVar;
+            this.f37567i = bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f37519i, continuation);
+            return new d(this.f37567i, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x003b, code lost:
@@ -331,7 +331,7 @@ public final class m0 implements dn.k {
             /*
                 r6 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r6.f37517d
+                int r1 = r6.f37565d
                 r2 = 0
                 r3 = 2
                 r4 = 1
@@ -356,23 +356,23 @@ public final class m0 implements dn.k {
                 mp.m0$d$a r1 = new mp.m0$d$a
                 r1.<init>(r2)
                 kotlinx.coroutines.flow.Flow r7 = rs.g.H(r7, r1)
-                r6.f37517d = r4
+                r6.f37565d = r4
                 java.lang.Object r7 = rs.g.h(r7, r6)
                 if (r7 != r0) goto L3e
                 goto L53
             L3e:
                 os.c1 r7 = os.m0.c()
                 mp.m0$d$b r1 = new mp.m0$d$b
-                mp.x5$d$c$b r4 = r6.f37519i
+                mp.x5$d$c$b r4 = r6.f37567i
                 mp.m0 r5 = mp.m0.this
                 r1.<init>(r4, r5, r2)
-                r6.f37517d = r3
+                r6.f37565d = r3
                 java.lang.Object r7 = os.g.g(r7, r1, r6)
                 if (r7 != r0) goto L54
             L53:
                 return r0
             L54:
-                kotlin.Unit r7 = kotlin.Unit.f32008a
+                kotlin.Unit r7 = kotlin.Unit.f32056a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: mp.m0.d.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -380,7 +380,7 @@ public final class m0 implements dn.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -389,30 +389,30 @@ public final class m0 implements dn.k {
     public static final class e extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37525d;
+        int f37573d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ x5.d.c.b f37526e;
+        final /* synthetic */ x5.d.c.b f37574e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ m0 f37527i;
+        final /* synthetic */ m0 f37575i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(x5.d.c.b bVar, m0 m0Var, Continuation continuation) {
             super(2, continuation);
-            this.f37526e = bVar;
-            this.f37527i = m0Var;
+            this.f37574e = bVar;
+            this.f37575i = m0Var;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f37526e, this.f37527i, continuation);
+            return new e(this.f37574e, this.f37575i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f37525d;
+            int i10 = this.f37573d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -421,25 +421,25 @@ public final class m0 implements dn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                long b10 = ((x5.d.c.b.i) this.f37526e).b();
-                this.f37525d = 1;
+                long b10 = ((x5.d.c.b.i) this.f37574e).b();
+                this.f37573d = 1;
                 if (os.i0.a(b10, this) == f10) {
                     return f10;
                 }
             }
-            if (!(this.f37527i.f37505c.c().getValue() instanceof x.a)) {
-                Function1 function1 = this.f37527i.f37508f;
+            if (!(this.f37575i.f37553c.c().getValue() instanceof x.a)) {
+                Function1 function1 = this.f37575i.f37556f;
                 if (function1 != null) {
                     function1.invoke(new un.v0());
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -448,37 +448,37 @@ public final class m0 implements dn.k {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37528d;
+        int f37576d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ androidx.lifecycle.j f37530i;
+        final /* synthetic */ androidx.lifecycle.j f37578i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ x5.d.c.b f37531o;
+        final /* synthetic */ x5.d.c.b f37579o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f37532d;
+            int f37580d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ x5.d.c.b f37533e;
+            final /* synthetic */ x5.d.c.b f37581e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ m0 f37534i;
+            final /* synthetic */ m0 f37582i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(x5.d.c.b bVar, m0 m0Var, Continuation continuation) {
                 super(2, continuation);
-                this.f37533e = bVar;
-                this.f37534i = m0Var;
+                this.f37581e = bVar;
+                this.f37582i = m0Var;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f37533e, this.f37534i, continuation);
+                return new a(this.f37581e, this.f37582i, continuation);
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:11:0x0035, code lost:
@@ -499,7 +499,7 @@ public final class m0 implements dn.k {
                 /*
                     r6 = this;
                     java.lang.Object r0 = wr.b.f()
-                    int r1 = r6.f37532d
+                    int r1 = r6.f37580d
                     r2 = 2
                     r3 = 1
                     if (r1 == 0) goto L24
@@ -519,26 +519,26 @@ public final class m0 implements dn.k {
                     goto L38
                 L24:
                     kotlin.c.b(r7)
-                    mp.x5$d$c$b r7 = r6.f37533e
+                    mp.x5$d$c$b r7 = r6.f37581e
                     mp.x5$d$c$b$b r7 = (mp.x5.d.c.b.C0519b) r7
                     long r4 = r7.c()
-                    r6.f37532d = r3
+                    r6.f37580d = r3
                     java.lang.Object r7 = os.i0.a(r4, r6)
                     if (r7 != r0) goto L38
                     goto L5b
                 L38:
-                    mp.m0 r7 = r6.f37534i
+                    mp.m0 r7 = r6.f37582i
                     un.i r7 = mp.m0.l(r7)
                     rs.j0 r7 = r7.c()
                     java.lang.Object r7 = r7.getValue()
                     boolean r7 = r7 instanceof un.x.a
                     if (r7 == 0) goto L4d
-                    kotlin.Unit r7 = kotlin.Unit.f32008a
+                    kotlin.Unit r7 = kotlin.Unit.f32056a
                     return r7
                 L4d:
-                    mp.m0 r7 = r6.f37534i
+                    mp.m0 r7 = r6.f37582i
                     un.i r7 = mp.m0.l(r7)
-                    r6.f37532d = r2
+                    r6.f37580d = r2
                     java.lang.Object r7 = r7.i(r6)
                     if (r7 != r0) goto L5c
                 L5b:
@@ -549,14 +549,14 @@ public final class m0 implements dn.k {
                     java.io.File r7 = (java.io.File) r7
                     r7.delete()
                 L67:
-                    mp.m0 r7 = r6.f37534i
+                    mp.m0 r7 = r6.f37582i
                     kotlin.jvm.functions.Function1 r7 = mp.m0.m(r7)
                     if (r7 == 0) goto L77
                     un.v0 r0 = new un.v0
                     r0.<init>()
                     r7.invoke(r0)
                 L77:
-                    kotlin.Unit r7 = kotlin.Unit.f32008a
+                    kotlin.Unit r7 = kotlin.Unit.f32056a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: mp.m0.f.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -564,20 +564,20 @@ public final class m0 implements dn.k {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(androidx.lifecycle.j jVar, x5.d.c.b bVar, Continuation continuation) {
             super(2, continuation);
-            this.f37530i = jVar;
-            this.f37531o = bVar;
+            this.f37578i = jVar;
+            this.f37579o = bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f37530i, this.f37531o, continuation);
+            return new f(this.f37578i, this.f37579o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -585,7 +585,7 @@ public final class m0 implements dn.k {
             Object g10;
             Job d10;
             Object f10 = wr.b.f();
-            int i10 = this.f37528d;
+            int i10 = this.f37576d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -595,35 +595,35 @@ public final class m0 implements dn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                un.i iVar = m0.this.f37505c;
-                this.f37528d = 1;
+                un.i iVar = m0.this.f37553c;
+                this.f37576d = 1;
                 g10 = iVar.g(this);
                 if (g10 == f10) {
                     return f10;
                 }
             }
             m0 m0Var = m0.this;
-            androidx.lifecycle.j jVar = this.f37530i;
-            x5.d.c.b bVar = this.f37531o;
+            androidx.lifecycle.j jVar = this.f37578i;
+            x5.d.c.b bVar = this.f37579o;
             if (Result.h(g10) && ((Boolean) g10).booleanValue()) {
-                Job job = m0Var.f37507e;
+                Job job = m0Var.f37555e;
                 if (job != null) {
                     Job.a.a(job, null, 1, null);
                 }
                 d10 = os.i.d(jVar, os.m0.b(), null, new a(bVar, m0Var, null), 2, null);
-                m0Var.f37507e = d10;
+                m0Var.f37555e = d10;
             }
-            x5.d.c.b bVar2 = this.f37531o;
+            x5.d.c.b bVar2 = this.f37579o;
             Throwable e10 = Result.e(g10);
             if (e10 != null) {
                 ((x5.d.c.b.C0519b) bVar2).d().invoke(e10);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -632,31 +632,31 @@ public final class m0 implements dn.k {
     public static final class g extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37535d;
+        int f37583d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ x5.d.c.b f37537i;
+        final /* synthetic */ x5.d.c.b f37585i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ x5.d.c f37538o;
+        final /* synthetic */ x5.d.c f37586o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(x5.d.c.b bVar, x5.d.c cVar, Continuation continuation) {
             super(2, continuation);
-            this.f37537i = bVar;
-            this.f37538o = cVar;
+            this.f37585i = bVar;
+            this.f37586o = cVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new g(this.f37537i, this.f37538o, continuation);
+            return new g(this.f37585i, this.f37586o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object i10;
             Object f10 = wr.b.f();
-            int i11 = this.f37535d;
+            int i11 = this.f37583d;
             if (i11 != 0) {
                 if (i11 == 1) {
                     kotlin.c.b(obj);
@@ -666,28 +666,28 @@ public final class m0 implements dn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                un.i iVar = m0.this.f37505c;
-                this.f37535d = 1;
+                un.i iVar = m0.this.f37553c;
+                this.f37583d = 1;
                 i10 = iVar.i(this);
                 if (i10 == f10) {
                     return f10;
                 }
             }
-            x5.d.c.b bVar = this.f37537i;
+            x5.d.c.b bVar = this.f37585i;
             if (Result.h(i10)) {
                 ((x5.d.c.b.C0520c) bVar).b().invoke((File) i10);
             }
-            x5.d.c cVar = this.f37538o;
+            x5.d.c cVar = this.f37586o;
             Throwable e10 = Result.e(i10);
             if (e10 != null && !(e10 instanceof un.q0)) {
                 cVar.h().invoke(e10);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -696,27 +696,27 @@ public final class m0 implements dn.k {
     public static final class h extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f37539d;
+        int f37587d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ x5.d.c.b f37541i;
+        final /* synthetic */ x5.d.c.b f37589i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         h(x5.d.c.b bVar, Continuation continuation) {
             super(2, continuation);
-            this.f37541i = bVar;
+            this.f37589i = bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new h(this.f37541i, continuation);
+            return new h(this.f37589i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object j10;
             Object f10 = wr.b.f();
-            int i10 = this.f37539d;
+            int i10 = this.f37587d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -726,31 +726,31 @@ public final class m0 implements dn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                un.i iVar = m0.this.f37505c;
-                this.f37539d = 1;
+                un.i iVar = m0.this.f37553c;
+                this.f37587d = 1;
                 j10 = iVar.j(this);
                 if (j10 == f10) {
                     return f10;
                 }
             }
-            x5.d.c.b bVar = this.f37541i;
+            x5.d.c.b bVar = this.f37589i;
             if (Result.h(j10)) {
                 Function1 d10 = ((x5.d.c.b.C0521d) bVar).d();
                 String absolutePath = ((File) j10).getAbsolutePath();
                 Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
                 d10.invoke(absolutePath);
             }
-            x5.d.c.b bVar2 = this.f37541i;
+            x5.d.c.b bVar2 = this.f37589i;
             Throwable e10 = Result.e(j10);
             if (e10 != null) {
                 ((x5.d.c.b.C0521d) bVar2).c().invoke(e10);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -759,10 +759,10 @@ public final class m0 implements dn.k {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(cameraController, "cameraController");
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
-        this.f37504b = binding;
-        this.f37505c = cameraController;
-        this.f37506d = selfieDirectionFeed;
-        binding.f41080l.setPreviewView(cameraController.e());
+        this.f37552b = binding;
+        this.f37553c = cameraController;
+        this.f37554d = selfieDirectionFeed;
+        binding.f41128l.setPreviewView(cameraController.e());
         ConstraintLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         bq.f.d(root, false, false, false, false, 15, null);
@@ -775,13 +775,13 @@ public final class m0 implements dn.k {
         } else {
             i10 = 3;
         }
-        this.f37511i = i10;
+        this.f37559i = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void A(np.a aVar, final x5.d.c.b bVar, View view) {
-        if (!aVar.f41080l.E()) {
-            aVar.f41080l.B(new Function0() { // from class: mp.k0
+        if (!aVar.f41128l.E()) {
+            aVar.f41128l.B(new Function0() { // from class: mp.k0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit B;
@@ -797,25 +797,25 @@ public final class m0 implements dn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B(x5.d.c.b bVar) {
         ((x5.d.c.b.e) bVar).b().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit C(x5.d.c.b bVar) {
         ((x5.d.c.b.C0520c) bVar).c().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D(x5.d.c cVar) {
         cVar.g().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E(x5.d.c cVar) {
         cVar.i().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final void F(androidx.lifecycle.j jVar, m0 m0Var, x5.d.c.b bVar) {
@@ -823,7 +823,7 @@ public final class m0 implements dn.k {
     }
 
     private final OldSelfieOverlayView.b G(x5.d.c.EnumC0522c enumC0522c) {
-        switch (b.f37513a[enumC0522c.ordinal()]) {
+        switch (b.f37561a[enumC0522c.ordinal()]) {
             case 1:
                 return OldSelfieOverlayView.b.f19430d;
             case 2:
@@ -872,41 +872,41 @@ public final class m0 implements dn.k {
     private final void t(StepStyles.SelfieStepStyle selfieStepStyle) {
         TextBasedComponentStyle titleStyleValue = selfieStepStyle.getTitleStyleValue();
         if (titleStyleValue != null) {
-            TextView title = this.f37504b.f41081m;
+            TextView title = this.f37552b.f41129m;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             kq.f0.n(title, titleStyleValue, null, 2, null);
-            this.f37504b.f41081m.setTextColor(-1);
+            this.f37552b.f41129m.setTextColor(-1);
         }
         TextBasedComponentStyle selfieCaptureHintTextStyle = selfieStepStyle.getSelfieCaptureHintTextStyle();
         if (selfieCaptureHintTextStyle != null) {
-            TextView hintMessage = this.f37504b.f41074f;
+            TextView hintMessage = this.f37552b.f41122f;
             Intrinsics.checkNotNullExpressionValue(hintMessage, "hintMessage");
             kq.f0.n(hintMessage, selfieCaptureHintTextStyle, null, 2, null);
-            this.f37504b.f41074f.setTextColor(-1);
+            this.f37552b.f41122f.setTextColor(-1);
         }
         Integer capturePageHeaderIconColorValue = selfieStepStyle.getCapturePageHeaderIconColorValue();
         if (capturePageHeaderIconColorValue != null) {
-            this.f37504b.f41076h.setControlsColor(capturePageHeaderIconColorValue.intValue());
+            this.f37552b.f41124h.setControlsColor(capturePageHeaderIconColorValue.intValue());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void u() {
         Job d10;
-        Job job = this.f37510h;
+        Job job = this.f37558h;
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        Context context = this.f37504b.getRoot().getContext();
+        Context context = this.f37552b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         d10 = os.i.d(androidx.lifecycle.p.a(rp.f.i(context)), null, null, new c(null), 3, null);
-        this.f37510h = d10;
+        this.f37558h = d10;
     }
 
     private static final void w(np.a aVar, final androidx.lifecycle.j jVar, final m0 m0Var, final x5.d.c.b bVar) {
-        aVar.f41070b.setEnabled(false);
-        if (!aVar.f41080l.E()) {
-            aVar.f41080l.B(new Function0() { // from class: mp.j0
+        aVar.f41118b.setEnabled(false);
+        if (!aVar.f41128l.E()) {
+            aVar.f41128l.B(new Function0() { // from class: mp.j0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit x10;
@@ -922,13 +922,13 @@ public final class m0 implements dn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x(androidx.lifecycle.j jVar, m0 m0Var, x5.d.c.b bVar) {
         F(jVar, m0Var, bVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit y(x5.d.c.b bVar) {
         ((x5.d.c.b.f) bVar).b().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -943,29 +943,29 @@ public final class m0 implements dn.k {
         Job d10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        this.f37508f = rendering.h();
-        this.f37509g = rendering.j();
-        this.f37505c.d();
-        this.f37505c.e().setVisibility(0);
+        this.f37556f = rendering.h();
+        this.f37557g = rendering.j();
+        this.f37553c.d();
+        this.f37553c.e().setVisibility(0);
         if (!(rendering.e() instanceof x5.d.c.b.i) && !(rendering.e() instanceof x5.d.c.b.g)) {
-            this.f37504b.f41072d.setVisibility(8);
+            this.f37552b.f41120d.setVisibility(8);
         } else {
-            this.f37504b.f41072d.setVisibility(0);
+            this.f37552b.f41120d.setVisibility(0);
         }
-        this.f37506d.k(rendering.k());
-        final np.a aVar = this.f37504b;
+        this.f37554d.k(rendering.k());
+        final np.a aVar = this.f37552b;
         Context context = aVar.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         final androidx.lifecycle.j a10 = androidx.lifecycle.p.a(rp.f.i(context));
-        TextView textView = this.f37504b.f41081m;
+        TextView textView = this.f37552b.f41129m;
         String m10 = rendering.m();
         String str = "";
         if (m10 == null) {
             m10 = "";
         }
         textView.setText(m10);
-        TextView textView2 = this.f37504b.f41081m;
-        CharSequence text = aVar.f41081m.getText();
+        TextView textView2 = this.f37552b.f41129m;
+        CharSequence text = aVar.f41129m.getText();
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
         if (text.length() == 0) {
             i10 = 8;
@@ -977,57 +977,57 @@ public final class m0 implements dn.k {
         if (d11 != null) {
             str = d11;
         }
-        if (!Intrinsics.areEqual(str, aVar.f41074f.getText())) {
-            aVar.f41074f.setText(str);
+        if (!Intrinsics.areEqual(str, aVar.f41122f.getText())) {
+            aVar.f41122f.setText(str);
         }
-        aVar.f41080l.setLeftPoseImage(rendering.a().a());
-        aVar.f41080l.setRightPoseImage(rendering.a().b());
-        int i11 = b.f37513a[rendering.e().a().ordinal()];
+        aVar.f41128l.setLeftPoseImage(rendering.a().a());
+        aVar.f41128l.setRightPoseImage(rendering.a().b());
+        int i11 = b.f37561a[rendering.e().a().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
                     if (rendering.e() instanceof x5.d.c.b.C0521d) {
-                        TextView textView3 = aVar.f41074f;
+                        TextView textView3 = aVar.f41122f;
                         textView3.announceForAccessibility(textView3.getContext().getString(jp.e.O));
                     }
                 } else {
-                    TextView textView4 = aVar.f41074f;
+                    TextView textView4 = aVar.f41122f;
                     textView4.announceForAccessibility(textView4.getContext().getString(jp.e.Q));
                 }
             } else {
-                TextView textView5 = aVar.f41074f;
+                TextView textView5 = aVar.f41122f;
                 textView5.announceForAccessibility(textView5.getContext().getString(jp.e.P));
             }
         } else {
-            TextView textView6 = aVar.f41074f;
+            TextView textView6 = aVar.f41122f;
             textView6.announceForAccessibility(textView6.getContext().getString(jp.e.N));
         }
-        aVar.f41070b.setEnabled(true);
+        aVar.f41118b.setEnabled(true);
         if (!(rendering.e() instanceof x5.d.c.b.C0519b)) {
-            aVar.f41073e.setVisibility(8);
+            aVar.f41121e.setVisibility(8);
         }
         if (!(rendering.e() instanceof x5.d.c.b.i)) {
-            aVar.f41075g.setVisibility(8);
+            aVar.f41123g.setVisibility(8);
         }
         final x5.d.c.b e10 = rendering.e();
         if (e10 instanceof x5.d.c.b.g) {
-            aVar.f41070b.setVisibility(4);
+            aVar.f41118b.setVisibility(4);
             os.i.d(a10, os.m0.a(), null, new d(e10, null), 2, null);
             x5.d.c.b.g gVar = (x5.d.c.b.g) e10;
-            OldSelfieOverlayView.J(aVar.f41080l, G(gVar.a()), gVar.c(), null, 4, null);
+            OldSelfieOverlayView.J(aVar.f41128l, G(gVar.a()), gVar.c(), null, 4, null);
         } else if (e10 instanceof x5.d.c.b.i) {
-            aVar.f41075g.setVisibility(0);
-            aVar.f41070b.setVisibility(4);
-            Job job = this.f37507e;
+            aVar.f41123g.setVisibility(0);
+            aVar.f41118b.setVisibility(4);
+            Job job = this.f37555e;
             if (job != null) {
                 Job.a.a(job, null, 1, null);
             }
             d10 = os.i.d(a10, os.m0.b(), null, new e(e10, this, null), 2, null);
-            this.f37507e = d10;
+            this.f37555e = d10;
         } else if (e10 instanceof x5.d.c.b.f) {
-            aVar.f41070b.setVisibility(4);
+            aVar.f41118b.setVisibility(4);
             x5.d.c.b.f fVar = (x5.d.c.b.f) e10;
-            aVar.f41080l.I(G(fVar.a()), fVar.c(), new Function0() { // from class: mp.c0
+            aVar.f41128l.I(G(fVar.a()), fVar.c(), new Function0() { // from class: mp.c0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit y10;
@@ -1040,30 +1040,30 @@ public final class m0 implements dn.k {
             if (c0519b.e()) {
                 os.i.d(a10, os.m0.c(), null, new f(a10, e10, null), 2, null);
             }
-            aVar.f41070b.setVisibility(4);
-            if (!Intrinsics.areEqual(aVar.f41073e.getTag(), Integer.valueOf(c0519b.b()))) {
-                TextView countdown = aVar.f41073e;
+            aVar.f41118b.setVisibility(4);
+            if (!Intrinsics.areEqual(aVar.f41121e.getTag(), Integer.valueOf(c0519b.b()))) {
+                TextView countdown = aVar.f41121e;
                 Intrinsics.checkNotNullExpressionValue(countdown, "countdown");
                 r(countdown, kotlin.ranges.d.d(4 - c0519b.b(), 1) * 1.5f);
-                aVar.f41073e.setText(String.valueOf(c0519b.b()));
-                aVar.f41073e.setTag(Integer.valueOf(c0519b.b()));
+                aVar.f41121e.setText(String.valueOf(c0519b.b()));
+                aVar.f41121e.setTag(Integer.valueOf(c0519b.b()));
             }
-            OldSelfieOverlayView.J(aVar.f41080l, G(c0519b.a()), c0519b.f(), null, 4, null);
+            OldSelfieOverlayView.J(aVar.f41128l, G(c0519b.a()), c0519b.f(), null, 4, null);
         } else if (e10 instanceof x5.d.c.b.h) {
-            Job job2 = this.f37507e;
+            Job job2 = this.f37555e;
             if (job2 != null) {
                 Job.a.a(job2, null, 1, null);
             }
-            aVar.f41070b.setEnabled(false);
+            aVar.f41118b.setEnabled(false);
             x5.d.c.b.h hVar = (x5.d.c.b.h) e10;
-            aVar.f41080l.I(G(hVar.a()), hVar.d(), hVar.c());
+            aVar.f41128l.I(G(hVar.a()), hVar.d(), hVar.c());
             if (hVar.b()) {
                 aVar.getRoot().setHapticFeedbackEnabled(true);
-                aVar.getRoot().performHapticFeedback(this.f37511i, 2);
+                aVar.getRoot().performHapticFeedback(this.f37559i, 2);
             }
         } else if (e10 instanceof x5.d.c.b.C0521d) {
-            aVar.f41070b.setVisibility(0);
-            aVar.f41070b.setOnClickListener(new View.OnClickListener() { // from class: mp.d0
+            aVar.f41118b.setVisibility(0);
+            aVar.f41118b.setOnClickListener(new View.OnClickListener() { // from class: mp.d0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     m0.z(np.a.this, a10, this, e10, view);
@@ -1071,35 +1071,35 @@ public final class m0 implements dn.k {
             });
             x5.d.c.b.C0521d c0521d = (x5.d.c.b.C0521d) e10;
             if (c0521d.b()) {
-                aVar.f41070b.setVisibility(4);
+                aVar.f41118b.setVisibility(4);
                 w(aVar, a10, this, e10);
             }
-            OldSelfieOverlayView.J(aVar.f41080l, G(c0521d.a()), c0521d.e(), null, 4, null);
+            OldSelfieOverlayView.J(aVar.f41128l, G(c0521d.a()), c0521d.e(), null, 4, null);
         } else if (e10 instanceof x5.d.c.b.e) {
-            aVar.f41070b.setVisibility(0);
-            aVar.f41070b.setOnClickListener(new View.OnClickListener() { // from class: mp.e0
+            aVar.f41118b.setVisibility(0);
+            aVar.f41118b.setOnClickListener(new View.OnClickListener() { // from class: mp.e0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     m0.A(np.a.this, e10, view);
                 }
             });
             x5.d.c.b.e eVar = (x5.d.c.b.e) e10;
-            OldSelfieOverlayView.J(aVar.f41080l, G(eVar.a()), eVar.c(), null, 4, null);
+            OldSelfieOverlayView.J(aVar.f41128l, G(eVar.a()), eVar.c(), null, 4, null);
         } else if (e10 instanceof x5.d.c.b.a) {
-            aVar.f41070b.setVisibility(4);
+            aVar.f41118b.setVisibility(4);
             x5.d.c.b.a aVar2 = (x5.d.c.b.a) e10;
-            OldSelfieOverlayView.J(aVar.f41080l, G(aVar2.a()), aVar2.b(), null, 4, null);
+            OldSelfieOverlayView.J(aVar.f41128l, G(aVar2.a()), aVar2.b(), null, 4, null);
         } else if (e10 instanceof x5.d.c.b.C0520c) {
-            aVar.f41070b.setVisibility(4);
+            aVar.f41118b.setVisibility(4);
             x5.d.c.b.C0520c c0520c = (x5.d.c.b.C0520c) e10;
             if (c0520c.e()) {
-                Job job3 = this.f37507e;
+                Job job3 = this.f37555e;
                 if (job3 != null) {
                     Job.a.a(job3, null, 1, null);
                 }
                 os.i.d(a10, os.m0.c(), null, new g(e10, rendering, null), 2, null);
             }
-            aVar.f41080l.I(G(c0520c.a()), c0520c.d(), new Function0() { // from class: mp.f0
+            aVar.f41128l.I(G(c0520c.a()), c0520c.d(), new Function0() { // from class: mp.f0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit C;
@@ -1127,7 +1127,7 @@ public final class m0 implements dn.k {
                 return E;
             }
         };
-        Pi2NavigationBar navigationBar = aVar.f41076h;
+        Pi2NavigationBar navigationBar = aVar.f41124h;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         ConstraintLayout root = aVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
@@ -1135,8 +1135,8 @@ public final class m0 implements dn.k {
         StepStyles.SelfieStepStyle l10 = rendering.l();
         if (l10 != null) {
             t(l10);
-            int c10 = androidx.core.content.a.c(this.f37504b.getRoot().getContext(), rp.j.f49063a);
-            this.f37504b.f41080l.A(l10);
+            int c10 = androidx.core.content.a.c(this.f37552b.getRoot().getContext(), rp.j.f49111a);
+            this.f37552b.f41128l.A(l10);
             aq.c.a(viewEnvironment, c10);
         }
     }

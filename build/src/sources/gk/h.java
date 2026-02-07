@@ -7,93 +7,93 @@ import java.util.List;
 public final class h implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f25247a;
+    private final g f25295a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f25248b;
+    private int f25296b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f25249c;
+    private int f25297c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f25250d = 0;
+    private int f25298d = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f25251a;
+        static final /* synthetic */ int[] f25299a;
 
         static {
             int[] iArr = new int[j1.b.values().length];
-            f25251a = iArr;
+            f25299a = iArr;
             try {
-                iArr[j1.b.f25288u.ordinal()] = 1;
+                iArr[j1.b.f25336u.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f25251a[j1.b.f25292y.ordinal()] = 2;
+                f25299a[j1.b.f25340y.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f25251a[j1.b.f25281i.ordinal()] = 3;
+                f25299a[j1.b.f25329i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f25251a[j1.b.A.ordinal()] = 4;
+                f25299a[j1.b.A.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f25251a[j1.b.f25287t.ordinal()] = 5;
+                f25299a[j1.b.f25335t.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f25251a[j1.b.f25286s.ordinal()] = 6;
+                f25299a[j1.b.f25334s.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f25251a[j1.b.f25282o.ordinal()] = 7;
+                f25299a[j1.b.f25330o.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f25251a[j1.b.f25285r.ordinal()] = 8;
+                f25299a[j1.b.f25333r.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f25251a[j1.b.f25283p.ordinal()] = 9;
+                f25299a[j1.b.f25331p.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f25251a[j1.b.f25291x.ordinal()] = 10;
+                f25299a[j1.b.f25339x.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f25251a[j1.b.B.ordinal()] = 11;
+                f25299a[j1.b.B.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f25251a[j1.b.C.ordinal()] = 12;
+                f25299a[j1.b.C.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f25251a[j1.b.D.ordinal()] = 13;
+                f25299a[j1.b.D.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f25251a[j1.b.E.ordinal()] = 14;
+                f25299a[j1.b.E.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f25251a[j1.b.f25289v.ordinal()] = 15;
+                f25299a[j1.b.f25337v.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f25251a[j1.b.f25293z.ordinal()] = 16;
+                f25299a[j1.b.f25341z.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f25251a[j1.b.f25284q.ordinal()] = 17;
+                f25299a[j1.b.f25332q.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
         }
@@ -101,12 +101,12 @@ public final class h implements w0 {
 
     private h(g gVar) {
         g gVar2 = (g) u.b(gVar, "input");
-        this.f25247a = gVar2;
-        gVar2.f25222d = this;
+        this.f25295a = gVar2;
+        gVar2.f25270d = this;
     }
 
     public static h N(g gVar) {
-        h hVar = gVar.f25222d;
+        h hVar = gVar.f25270d;
         if (hVar != null) {
             return hVar;
         }
@@ -114,37 +114,37 @@ public final class h implements w0 {
     }
 
     private void O(Object obj, x0 x0Var, l lVar) {
-        int i10 = this.f25249c;
-        this.f25249c = j1.c(j1.a(this.f25248b), 4);
+        int i10 = this.f25297c;
+        this.f25297c = j1.c(j1.a(this.f25296b), 4);
         try {
             x0Var.g(obj, this, lVar);
-            if (this.f25248b == this.f25249c) {
+            if (this.f25296b == this.f25297c) {
                 return;
             }
             throw v.h();
         } finally {
-            this.f25249c = i10;
+            this.f25297c = i10;
         }
     }
 
     private void P(Object obj, x0 x0Var, l lVar) {
         g gVar;
-        int D = this.f25247a.D();
-        g gVar2 = this.f25247a;
-        if (gVar2.f25219a < gVar2.f25220b) {
+        int D = this.f25295a.D();
+        g gVar2 = this.f25295a;
+        if (gVar2.f25267a < gVar2.f25268b) {
             int l10 = gVar2.l(D);
-            this.f25247a.f25219a++;
+            this.f25295a.f25267a++;
             x0Var.g(obj, this, lVar);
-            this.f25247a.a(0);
-            gVar.f25219a--;
-            this.f25247a.k(l10);
+            this.f25295a.a(0);
+            gVar.f25267a--;
+            this.f25295a.k(l10);
             return;
         }
         throw v.i();
     }
 
     private Object Q(j1.b bVar, Class cls, l lVar) {
-        switch (a.f25251a[bVar.ordinal()]) {
+        switch (a.f25299a[bVar.ordinal()]) {
             case 1:
                 return Boolean.valueOf(d());
             case 2:
@@ -199,14 +199,14 @@ public final class h implements w0 {
     }
 
     private void V(int i10) {
-        if (this.f25247a.d() == i10) {
+        if (this.f25295a.d() == i10) {
             return;
         }
         throw v.m();
     }
 
     private void W(int i10) {
-        if (j1.b(this.f25248b) == i10) {
+        if (j1.b(this.f25296b) == i10) {
             return;
         }
         throw v.e();
@@ -236,48 +236,48 @@ public final class h implements w0 {
         int C;
         if (list instanceof q) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 2) {
                 if (b10 != 5) {
                     throw v.e();
                 }
-                this.f25247a.s();
+                this.f25295a.s();
                 throw null;
             }
-            X(this.f25247a.D());
-            this.f25247a.d();
-            this.f25247a.s();
+            X(this.f25295a.D());
+            this.f25295a.d();
+            this.f25295a.s();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 2) {
             if (b11 == 5) {
                 do {
-                    list.add(Float.valueOf(this.f25247a.s()));
-                    if (!this.f25247a.e()) {
-                        C = this.f25247a.C();
+                    list.add(Float.valueOf(this.f25295a.s()));
+                    if (!this.f25295a.e()) {
+                        C = this.f25295a.C();
                     } else {
                         return;
                     }
-                } while (C == this.f25248b);
-                this.f25250d = C;
+                } while (C == this.f25296b);
+                this.f25298d = C;
                 return;
             }
             throw v.e();
         }
-        int D = this.f25247a.D();
+        int D = this.f25295a.D();
         X(D);
-        int d10 = this.f25247a.d() + D;
+        int d10 = this.f25295a.d() + D;
         do {
-            list.add(Float.valueOf(this.f25247a.s()));
-        } while (this.f25247a.d() < d10);
+            list.add(Float.valueOf(this.f25295a.s()));
+        } while (this.f25295a.d() < d10);
     }
 
     @Override // gk.w0
     public boolean C() {
         int i10;
-        if (!this.f25247a.e() && (i10 = this.f25248b) != this.f25249c) {
-            return this.f25247a.F(i10);
+        if (!this.f25295a.e() && (i10 = this.f25296b) != this.f25297c) {
+            return this.f25295a.F(i10);
         }
         return false;
     }
@@ -285,21 +285,21 @@ public final class h implements w0 {
     @Override // gk.w0
     public int D() {
         W(5);
-        return this.f25247a.w();
+        return this.f25295a.w();
     }
 
     @Override // gk.w0
     public void E(List list) {
         int C;
-        if (j1.b(this.f25248b) == 2) {
+        if (j1.b(this.f25296b) == 2) {
             do {
                 list.add(n());
-                if (this.f25247a.e()) {
+                if (this.f25295a.e()) {
                     return;
                 }
-                C = this.f25247a.C();
-            } while (C == this.f25248b);
-            this.f25250d = C;
+                C = this.f25295a.C();
+            } while (C == this.f25296b);
+            this.f25298d = C;
             return;
         }
         throw v.e();
@@ -310,68 +310,68 @@ public final class h implements w0 {
         int C;
         if (list instanceof i) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 1) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                Y(this.f25247a.D());
-                this.f25247a.d();
-                this.f25247a.o();
+                Y(this.f25295a.D());
+                this.f25295a.d();
+                this.f25295a.o();
                 throw null;
             }
-            this.f25247a.o();
+            this.f25295a.o();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 1) {
             if (b11 == 2) {
-                int D = this.f25247a.D();
+                int D = this.f25295a.D();
                 Y(D);
-                int d10 = this.f25247a.d() + D;
+                int d10 = this.f25295a.d() + D;
                 do {
-                    list.add(Double.valueOf(this.f25247a.o()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Double.valueOf(this.f25295a.o()));
+                } while (this.f25295a.d() < d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Double.valueOf(this.f25247a.o()));
-            if (this.f25247a.e()) {
+            list.add(Double.valueOf(this.f25295a.o()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public long G() {
         W(0);
-        return this.f25247a.u();
+        return this.f25295a.u();
     }
 
     @Override // gk.w0
     public String H() {
         W(2);
-        return this.f25247a.B();
+        return this.f25295a.B();
     }
 
     @Override // gk.w0
     public void I(List list, x0 x0Var, l lVar) {
         int C;
-        if (j1.b(this.f25248b) == 3) {
-            int i10 = this.f25248b;
+        if (j1.b(this.f25296b) == 3) {
+            int i10 = this.f25296b;
             do {
                 list.add(R(x0Var, lVar));
-                if (!this.f25247a.e() && this.f25250d == 0) {
-                    C = this.f25247a.C();
+                if (!this.f25295a.e() && this.f25298d == 0) {
+                    C = this.f25295a.C();
                 } else {
                     return;
                 }
             } while (C == i10);
-            this.f25250d = C;
+            this.f25298d = C;
             return;
         }
         throw v.e();
@@ -380,17 +380,17 @@ public final class h implements w0 {
     @Override // gk.w0
     public void J(List list, x0 x0Var, l lVar) {
         int C;
-        if (j1.b(this.f25248b) == 2) {
-            int i10 = this.f25248b;
+        if (j1.b(this.f25296b) == 2) {
+            int i10 = this.f25296b;
             do {
                 list.add(S(x0Var, lVar));
-                if (!this.f25247a.e() && this.f25250d == 0) {
-                    C = this.f25247a.C();
+                if (!this.f25295a.e() && this.f25298d == 0) {
+                    C = this.f25295a.C();
                 } else {
                     return;
                 }
             } while (C == i10);
-            this.f25250d = C;
+            this.f25298d = C;
             return;
         }
         throw v.e();
@@ -400,7 +400,7 @@ public final class h implements w0 {
         r8.put(r2, r3);
      */
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0061, code lost:
-        r7.f25247a.k(r1);
+        r7.f25295a.k(r1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0066, code lost:
         return;
@@ -415,17 +415,17 @@ public final class h implements w0 {
             r7 = this;
             r0 = 2
             r7.W(r0)
-            gk.g r1 = r7.f25247a
+            gk.g r1 = r7.f25295a
             int r1 = r1.D()
-            gk.g r2 = r7.f25247a
+            gk.g r2 = r7.f25295a
             int r1 = r2.l(r1)
-            java.lang.Object r2 = r9.f25189b
-            java.lang.Object r3 = r9.f25191d
+            java.lang.Object r2 = r9.f25237b
+            java.lang.Object r3 = r9.f25239d
         L14:
             int r4 = r7.z()     // Catch: java.lang.Throwable -> L3a
             r5 = 2147483647(0x7fffffff, float:NaN)
             if (r4 == r5) goto L5e
-            gk.g r5 = r7.f25247a     // Catch: java.lang.Throwable -> L3a
+            gk.g r5 = r7.f25295a     // Catch: java.lang.Throwable -> L3a
             boolean r5 = r5.e()     // Catch: java.lang.Throwable -> L3a
             if (r5 == 0) goto L26
             goto L5e
@@ -445,13 +445,13 @@ public final class h implements w0 {
             r8 = move-exception
             goto L67
         L3c:
-            gk.j1$b r4 = r9.f25190c     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
-            java.lang.Object r5 = r9.f25191d     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
+            gk.j1$b r4 = r9.f25238c     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
+            java.lang.Object r5 = r9.f25239d     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
             java.lang.Class r5 = r5.getClass()     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
             java.lang.Object r3 = r7.Q(r4, r5, r10)     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
             goto L14
         L49:
-            gk.j1$b r4 = r9.f25188a     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
+            gk.j1$b r4 = r9.f25236a     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
             r5 = 0
             java.lang.Object r2 = r7.Q(r4, r5, r5)     // Catch: java.lang.Throwable -> L3a gk.v.a -> L51
             goto L14
@@ -465,11 +465,11 @@ public final class h implements w0 {
             throw r8     // Catch: java.lang.Throwable -> L3a
         L5e:
             r8.put(r2, r3)     // Catch: java.lang.Throwable -> L3a
-            gk.g r8 = r7.f25247a
+            gk.g r8 = r7.f25295a
             r8.k(r1)
             return
         L67:
-            gk.g r9 = r7.f25247a
+            gk.g r9 = r7.f25295a
             r9.k(r1)
             throw r8
         */
@@ -497,18 +497,18 @@ public final class h implements w0 {
         String y10;
         int C;
         int C2;
-        if (j1.b(this.f25248b) == 2) {
+        if (j1.b(this.f25296b) == 2) {
             if ((list instanceof x) && !z10) {
                 x xVar = (x) list;
                 do {
                     xVar.L0(n());
-                    if (!this.f25247a.e()) {
-                        C2 = this.f25247a.C();
+                    if (!this.f25295a.e()) {
+                        C2 = this.f25295a.C();
                     } else {
                         return;
                     }
-                } while (C2 == this.f25248b);
-                this.f25250d = C2;
+                } while (C2 == this.f25296b);
+                this.f25298d = C2;
                 return;
             }
             do {
@@ -518,12 +518,12 @@ public final class h implements w0 {
                     y10 = y();
                 }
                 list.add(y10);
-                if (this.f25247a.e()) {
+                if (this.f25295a.e()) {
                     return;
                 }
-                C = this.f25247a.C();
-            } while (C == this.f25248b);
-            this.f25250d = C;
+                C = this.f25295a.C();
+            } while (C == this.f25296b);
+            this.f25298d = C;
             return;
         }
         throw v.e();
@@ -532,7 +532,7 @@ public final class h implements w0 {
     @Override // gk.w0
     public long a() {
         W(1);
-        return this.f25247a.r();
+        return this.f25295a.r();
     }
 
     @Override // gk.w0
@@ -540,41 +540,41 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 2) {
                 if (b10 != 5) {
                     throw v.e();
                 }
-                this.f25247a.w();
+                this.f25295a.w();
                 throw null;
             }
-            X(this.f25247a.D());
-            this.f25247a.d();
-            this.f25247a.w();
+            X(this.f25295a.D());
+            this.f25295a.d();
+            this.f25295a.w();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 2) {
             if (b11 == 5) {
                 do {
-                    list.add(Integer.valueOf(this.f25247a.w()));
-                    if (!this.f25247a.e()) {
-                        C = this.f25247a.C();
+                    list.add(Integer.valueOf(this.f25295a.w()));
+                    if (!this.f25295a.e()) {
+                        C = this.f25295a.C();
                     } else {
                         return;
                     }
-                } while (C == this.f25248b);
-                this.f25250d = C;
+                } while (C == this.f25296b);
+                this.f25298d = C;
                 return;
             }
             throw v.e();
         }
-        int D = this.f25247a.D();
+        int D = this.f25295a.D();
         X(D);
-        int d10 = this.f25247a.d() + D;
+        int d10 = this.f25295a.d() + D;
         do {
-            list.add(Integer.valueOf(this.f25247a.w()));
-        } while (this.f25247a.d() < d10);
+            list.add(Integer.valueOf(this.f25295a.w()));
+        } while (this.f25295a.d() < d10);
     }
 
     @Override // gk.w0
@@ -582,51 +582,51 @@ public final class h implements w0 {
         int C;
         if (list instanceof z) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.z();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.z();
                 throw null;
             }
-            this.f25247a.z();
+            this.f25295a.z();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Long.valueOf(this.f25247a.z()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Long.valueOf(this.f25295a.z()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Long.valueOf(this.f25247a.z()));
-            if (this.f25247a.e()) {
+            list.add(Long.valueOf(this.f25295a.z()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public boolean d() {
         W(0);
-        return this.f25247a.m();
+        return this.f25295a.m();
     }
 
     @Override // gk.w0
     public long e() {
         W(1);
-        return this.f25247a.x();
+        return this.f25295a.x();
     }
 
     @Override // gk.w0
@@ -634,50 +634,50 @@ public final class h implements w0 {
         int C;
         if (list instanceof z) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.E();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.E();
                 throw null;
             }
-            this.f25247a.E();
+            this.f25295a.E();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Long.valueOf(this.f25247a.E()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Long.valueOf(this.f25295a.E()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Long.valueOf(this.f25247a.E()));
-            if (this.f25247a.e()) {
+            list.add(Long.valueOf(this.f25295a.E()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public int g() {
         W(0);
-        return this.f25247a.D();
+        return this.f25295a.D();
     }
 
     @Override // gk.w0
     public int getTag() {
-        return this.f25248b;
+        return this.f25296b;
     }
 
     @Override // gk.w0
@@ -685,39 +685,39 @@ public final class h implements w0 {
         int C;
         if (list instanceof z) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.u();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.u();
                 throw null;
             }
-            this.f25247a.u();
+            this.f25295a.u();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Long.valueOf(this.f25247a.u()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Long.valueOf(this.f25295a.u()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Long.valueOf(this.f25247a.u()));
-            if (this.f25247a.e()) {
+            list.add(Long.valueOf(this.f25295a.u()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
@@ -725,51 +725,51 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.p();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.p();
                 throw null;
             }
-            this.f25247a.p();
+            this.f25295a.p();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Integer.valueOf(this.f25247a.p()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Integer.valueOf(this.f25295a.p()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Integer.valueOf(this.f25247a.p()));
-            if (this.f25247a.e()) {
+            list.add(Integer.valueOf(this.f25295a.p()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public int j() {
         W(0);
-        return this.f25247a.p();
+        return this.f25295a.p();
     }
 
     @Override // gk.w0
     public int k() {
         W(0);
-        return this.f25247a.y();
+        return this.f25295a.y();
     }
 
     @Override // gk.w0
@@ -777,39 +777,39 @@ public final class h implements w0 {
         int C;
         if (list instanceof e) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.m();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.m();
                 throw null;
             }
-            this.f25247a.m();
+            this.f25295a.m();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Boolean.valueOf(this.f25247a.m()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Boolean.valueOf(this.f25295a.m()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Boolean.valueOf(this.f25247a.m()));
-            if (this.f25247a.e()) {
+            list.add(Boolean.valueOf(this.f25295a.m()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
@@ -820,13 +820,13 @@ public final class h implements w0 {
     @Override // gk.w0
     public f n() {
         W(2);
-        return this.f25247a.n();
+        return this.f25295a.n();
     }
 
     @Override // gk.w0
     public int o() {
         W(0);
-        return this.f25247a.t();
+        return this.f25295a.t();
     }
 
     @Override // gk.w0
@@ -834,40 +834,40 @@ public final class h implements w0 {
         int C;
         if (list instanceof z) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 1) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                Y(this.f25247a.D());
-                this.f25247a.d();
-                this.f25247a.r();
+                Y(this.f25295a.D());
+                this.f25295a.d();
+                this.f25295a.r();
                 throw null;
             }
-            this.f25247a.r();
+            this.f25295a.r();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 1) {
             if (b11 == 2) {
-                int D = this.f25247a.D();
+                int D = this.f25295a.D();
                 Y(D);
-                int d10 = this.f25247a.d() + D;
+                int d10 = this.f25295a.d() + D;
                 do {
-                    list.add(Long.valueOf(this.f25247a.r()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Long.valueOf(this.f25295a.r()));
+                } while (this.f25295a.d() < d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Long.valueOf(this.f25247a.r()));
-            if (this.f25247a.e()) {
+            list.add(Long.valueOf(this.f25295a.r()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
@@ -875,57 +875,57 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.y();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.y();
                 throw null;
             }
-            this.f25247a.y();
+            this.f25295a.y();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Integer.valueOf(this.f25247a.y()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Integer.valueOf(this.f25295a.y()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Integer.valueOf(this.f25247a.y()));
-            if (this.f25247a.e()) {
+            list.add(Integer.valueOf(this.f25295a.y()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public long r() {
         W(0);
-        return this.f25247a.E();
+        return this.f25295a.E();
     }
 
     @Override // gk.w0
     public double readDouble() {
         W(1);
-        return this.f25247a.o();
+        return this.f25295a.o();
     }
 
     @Override // gk.w0
     public float readFloat() {
         W(5);
-        return this.f25247a.s();
+        return this.f25295a.s();
     }
 
     @Override // gk.w0
@@ -933,45 +933,45 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.D();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.D();
                 throw null;
             }
-            this.f25247a.D();
+            this.f25295a.D();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Integer.valueOf(this.f25247a.D()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Integer.valueOf(this.f25295a.D()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Integer.valueOf(this.f25247a.D()));
-            if (this.f25247a.e()) {
+            list.add(Integer.valueOf(this.f25295a.D()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
     public int t() {
         W(5);
-        return this.f25247a.q();
+        return this.f25295a.q();
     }
 
     @Override // gk.w0
@@ -979,40 +979,40 @@ public final class h implements w0 {
         int C;
         if (list instanceof z) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 1) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                Y(this.f25247a.D());
-                this.f25247a.d();
-                this.f25247a.x();
+                Y(this.f25295a.D());
+                this.f25295a.d();
+                this.f25295a.x();
                 throw null;
             }
-            this.f25247a.x();
+            this.f25295a.x();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 1) {
             if (b11 == 2) {
-                int D = this.f25247a.D();
+                int D = this.f25295a.D();
                 Y(D);
-                int d10 = this.f25247a.d() + D;
+                int d10 = this.f25295a.d() + D;
                 do {
-                    list.add(Long.valueOf(this.f25247a.x()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Long.valueOf(this.f25295a.x()));
+                } while (this.f25295a.d() < d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Long.valueOf(this.f25247a.x()));
-            if (this.f25247a.e()) {
+            list.add(Long.valueOf(this.f25295a.x()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
@@ -1020,39 +1020,39 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 0) {
                 if (b10 != 2) {
                     throw v.e();
                 }
-                this.f25247a.D();
-                this.f25247a.d();
-                this.f25247a.t();
+                this.f25295a.D();
+                this.f25295a.d();
+                this.f25295a.t();
                 throw null;
             }
-            this.f25247a.t();
+            this.f25295a.t();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 0) {
             if (b11 == 2) {
-                int d10 = this.f25247a.d() + this.f25247a.D();
+                int d10 = this.f25295a.d() + this.f25295a.D();
                 do {
-                    list.add(Integer.valueOf(this.f25247a.t()));
-                } while (this.f25247a.d() < d10);
+                    list.add(Integer.valueOf(this.f25295a.t()));
+                } while (this.f25295a.d() < d10);
                 V(d10);
                 return;
             }
             throw v.e();
         }
         do {
-            list.add(Integer.valueOf(this.f25247a.t()));
-            if (this.f25247a.e()) {
+            list.add(Integer.valueOf(this.f25295a.t()));
+            if (this.f25295a.e()) {
                 return;
             }
-            C = this.f25247a.C();
-        } while (C == this.f25248b);
-        this.f25250d = C;
+            C = this.f25295a.C();
+        } while (C == this.f25296b);
+        this.f25298d = C;
     }
 
     @Override // gk.w0
@@ -1060,66 +1060,66 @@ public final class h implements w0 {
         int C;
         if (list instanceof t) {
             android.support.v4.media.session.b.a(list);
-            int b10 = j1.b(this.f25248b);
+            int b10 = j1.b(this.f25296b);
             if (b10 != 2) {
                 if (b10 != 5) {
                     throw v.e();
                 }
-                this.f25247a.q();
+                this.f25295a.q();
                 throw null;
             }
-            X(this.f25247a.D());
-            this.f25247a.d();
-            this.f25247a.q();
+            X(this.f25295a.D());
+            this.f25295a.d();
+            this.f25295a.q();
             throw null;
         }
-        int b11 = j1.b(this.f25248b);
+        int b11 = j1.b(this.f25296b);
         if (b11 != 2) {
             if (b11 == 5) {
                 do {
-                    list.add(Integer.valueOf(this.f25247a.q()));
-                    if (!this.f25247a.e()) {
-                        C = this.f25247a.C();
+                    list.add(Integer.valueOf(this.f25295a.q()));
+                    if (!this.f25295a.e()) {
+                        C = this.f25295a.C();
                     } else {
                         return;
                     }
-                } while (C == this.f25248b);
-                this.f25250d = C;
+                } while (C == this.f25296b);
+                this.f25298d = C;
                 return;
             }
             throw v.e();
         }
-        int D = this.f25247a.D();
+        int D = this.f25295a.D();
         X(D);
-        int d10 = this.f25247a.d() + D;
+        int d10 = this.f25295a.d() + D;
         do {
-            list.add(Integer.valueOf(this.f25247a.q()));
-        } while (this.f25247a.d() < d10);
+            list.add(Integer.valueOf(this.f25295a.q()));
+        } while (this.f25295a.d() < d10);
     }
 
     @Override // gk.w0
     public long x() {
         W(0);
-        return this.f25247a.z();
+        return this.f25295a.z();
     }
 
     @Override // gk.w0
     public String y() {
         W(2);
-        return this.f25247a.A();
+        return this.f25295a.A();
     }
 
     @Override // gk.w0
     public int z() {
-        int i10 = this.f25250d;
+        int i10 = this.f25298d;
         if (i10 != 0) {
-            this.f25248b = i10;
-            this.f25250d = 0;
+            this.f25296b = i10;
+            this.f25298d = 0;
         } else {
-            this.f25248b = this.f25247a.C();
+            this.f25296b = this.f25295a.C();
         }
-        int i11 = this.f25248b;
-        if (i11 != 0 && i11 != this.f25249c) {
+        int i11 = this.f25296b;
+        if (i11 != 0 && i11 != this.f25297c) {
             return j1.a(i11);
         }
         return Integer.MAX_VALUE;

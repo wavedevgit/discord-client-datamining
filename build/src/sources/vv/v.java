@@ -7,31 +7,31 @@ import vv.w;
 abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Executor f53144a;
+    static final Executor f53192a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final w f53145b;
+    static final w f53193b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final c f53146c;
+    static final c f53194c;
 
     static {
         String property = System.getProperty("java.vm.name");
         property.getClass();
         if (!property.equals("RoboVM")) {
             if (!property.equals("Dalvik")) {
-                f53144a = null;
-                f53145b = new w.b();
-                f53146c = new c.a();
+                f53192a = null;
+                f53193b = new w.b();
+                f53194c = new c.a();
                 return;
             }
-            f53144a = new a();
-            f53145b = new w.a();
-            f53146c = new c.a();
+            f53192a = new a();
+            f53193b = new w.a();
+            f53194c = new c.a();
             return;
         }
-        f53144a = null;
-        f53145b = new w();
-        f53146c = new c();
+        f53192a = null;
+        f53193b = new w();
+        f53194c = new c();
     }
 }

@@ -7,49 +7,49 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c0 {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f31778f = new a(null);
+    public static final a f31826f = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final c0 f31779g = new c0(-1.0d, 0.0d);
+    private static final c0 f31827g = new c0(-1.0d, 0.0d);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final c0 f31780h = new c0(1.0d, 0.0d);
+    private static final c0 f31828h = new c0(1.0d, 0.0d);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final c0 f31781i = new c0(0.0d, -1.0d);
+    private static final c0 f31829i = new c0(0.0d, -1.0d);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final c0 f31782j = new c0(0.0d, 1.0d);
+    private static final c0 f31830j = new c0(0.0d, 1.0d);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final c0 f31783k = new c0(1.0d, -1.0d);
+    private static final c0 f31831k = new c0(1.0d, -1.0d);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final c0 f31784l = new c0(1.0d, 1.0d);
+    private static final c0 f31832l = new c0(1.0d, 1.0d);
 
     /* renamed from: m  reason: collision with root package name */
-    private static final c0 f31785m = new c0(-1.0d, -1.0d);
+    private static final c0 f31833m = new c0(-1.0d, -1.0d);
 
     /* renamed from: n  reason: collision with root package name */
-    private static final c0 f31786n = new c0(-1.0d, 1.0d);
+    private static final c0 f31834n = new c0(-1.0d, 1.0d);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final c0 f31787o = new c0(0.0d, 0.0d);
+    private static final c0 f31835o = new c0(0.0d, 0.0d);
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f31788a;
+    private final double f31836a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f31789b;
+    private final double f31837b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f31790c;
+    private final double f31838c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final double f31791d;
+    private final double f31839d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f31792e;
+    private final double f31840e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -60,25 +60,25 @@ public final class c0 {
         public final c0 a(int i10) {
             switch (i10) {
                 case 1:
-                    return c0.f31780h;
+                    return c0.f31828h;
                 case 2:
-                    return c0.f31779g;
+                    return c0.f31827g;
                 case 3:
                 case 7:
                 default:
-                    return c0.f31787o;
+                    return c0.f31835o;
                 case 4:
-                    return c0.f31781i;
+                    return c0.f31829i;
                 case 5:
-                    return c0.f31783k;
+                    return c0.f31831k;
                 case 6:
-                    return c0.f31785m;
+                    return c0.f31833m;
                 case 8:
-                    return c0.f31782j;
+                    return c0.f31830j;
                 case 9:
-                    return c0.f31784l;
+                    return c0.f31832l;
                 case 10:
-                    return c0.f31786n;
+                    return c0.f31834n;
             }
         }
 
@@ -95,10 +95,10 @@ public final class c0 {
     public c0(double d10, double d11) {
         boolean z10;
         double d12;
-        this.f31788a = d10;
-        this.f31789b = d11;
+        this.f31836a = d10;
+        this.f31837b = d11;
         double hypot = Math.hypot(d10, d11);
-        this.f31792e = hypot;
+        this.f31840e = hypot;
         if (hypot > 0.1d) {
             z10 = true;
         } else {
@@ -109,16 +109,16 @@ public final class c0 {
         } else {
             d12 = 0.0d;
         }
-        this.f31790c = d12;
-        this.f31791d = z10 ? d11 / hypot : 0.0d;
+        this.f31838c = d12;
+        this.f31839d = z10 ? d11 / hypot : 0.0d;
     }
 
     private final double j(c0 c0Var) {
-        return (this.f31790c * c0Var.f31790c) + (this.f31791d * c0Var.f31791d);
+        return (this.f31838c * c0Var.f31838c) + (this.f31839d * c0Var.f31839d);
     }
 
     public final double k() {
-        return this.f31792e;
+        return this.f31840e;
     }
 
     public final boolean l(c0 vector, double d10) {

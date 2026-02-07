@@ -11,57 +11,57 @@ import zn.a;
 public final class b implements zn.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SensorManager f56355a;
+    private final SensorManager f56403a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Sensor f56356b;
+    private final Sensor f56404b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f56357c;
+    private long f56405c;
 
     /* renamed from: d  reason: collision with root package name */
-    private double f56358d;
+    private double f56406d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f56359e;
+    private boolean f56407e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a f56360f;
+    private final a f56408f;
 
     public b(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         Object systemService = context.getSystemService("sensor");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.hardware.SensorManager");
         SensorManager sensorManager = (SensorManager) systemService;
-        this.f56355a = sensorManager;
-        this.f56356b = sensorManager.getDefaultSensor(4);
-        this.f56360f = new a();
+        this.f56403a = sensorManager;
+        this.f56404b = sensorManager.getDefaultSensor(4);
+        this.f56408f = new a();
     }
 
     @Override // zn.a
     public a.C0775a a() {
         double d10;
-        long j10 = this.f56357c;
+        long j10 = this.f56405c;
         if (j10 == 0) {
             d10 = 0.0d;
         } else {
-            d10 = this.f56358d / j10;
+            d10 = this.f56406d / j10;
         }
         return new a.C0775a(d10);
     }
 
     @Override // zn.a
     public void b() {
-        this.f56355a.unregisterListener(this.f56360f);
+        this.f56403a.unregisterListener(this.f56408f);
     }
 
     @Override // zn.a
     public void c() {
-        if (!this.f56359e) {
-            this.f56359e = true;
-            Sensor sensor = this.f56356b;
+        if (!this.f56407e) {
+            this.f56407e = true;
+            Sensor sensor = this.f56404b;
             if (sensor != null) {
-                this.f56355a.registerListener(this.f56360f, sensor, 100000);
+                this.f56403a.registerListener(this.f56408f, sensor, 100000);
             }
         }
     }
@@ -79,8 +79,8 @@ public final class b implements zn.a {
                 float f11 = fArr[1];
                 float f12 = fArr[2];
                 b bVar = b.this;
-                bVar.f56358d = ((bVar.f56358d * b.this.f56357c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f56357c + 1);
-                b.this.f56357c++;
+                bVar.f56406d = ((bVar.f56406d * b.this.f56405c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f56405c + 1);
+                b.this.f56405c++;
             }
         }
 

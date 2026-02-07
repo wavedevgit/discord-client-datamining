@@ -9,7 +9,7 @@ public class k implements Parcelable {
     public static final Parcelable.Creator<k> CREATOR = new q1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final wf.a f53716d;
+    private final wf.a f53764d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends Exception {
@@ -19,7 +19,7 @@ public class k implements Parcelable {
     }
 
     k(wf.a aVar) {
-        this.f53716d = (wf.a) gf.q.l(aVar);
+        this.f53764d = (wf.a) gf.q.l(aVar);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -54,7 +54,7 @@ public class k implements Parcelable {
     }
 
     public int b() {
-        return this.f53716d.a();
+        return this.f53764d.a();
     }
 
     @Override // android.os.Parcelable
@@ -63,23 +63,23 @@ public class k implements Parcelable {
     }
 
     public boolean equals(Object obj) {
-        if (!(obj instanceof k) || this.f53716d.a() != ((k) obj).f53716d.a()) {
+        if (!(obj instanceof k) || this.f53764d.a() != ((k) obj).f53764d.a()) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f53716d);
+        return gf.o.b(this.f53764d);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f53716d);
+        String valueOf = String.valueOf(this.f53764d);
         return "COSEAlgorithmIdentifier{algorithm=" + valueOf + "}";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f53716d.a());
+        parcel.writeInt(this.f53764d.a());
     }
 }

@@ -13,7 +13,7 @@ public final class MemberSignature {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f33247a;
+    private final String f33295a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -74,24 +74,24 @@ public final class MemberSignature {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof MemberSignature) && Intrinsics.areEqual(this.f33247a, ((MemberSignature) obj).f33247a);
+        return (obj instanceof MemberSignature) && Intrinsics.areEqual(this.f33295a, ((MemberSignature) obj).f33295a);
     }
 
     @NotNull
     public final String getSignature() {
-        return this.f33247a;
+        return this.f33295a;
     }
 
     public int hashCode() {
-        return this.f33247a.hashCode();
+        return this.f33295a.hashCode();
     }
 
     @NotNull
     public String toString() {
-        return "MemberSignature(signature=" + this.f33247a + ')';
+        return "MemberSignature(signature=" + this.f33295a + ')';
     }
 
     private MemberSignature(String str) {
-        this.f33247a = str;
+        this.f33295a = str;
     }
 }

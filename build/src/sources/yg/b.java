@@ -3,13 +3,13 @@ package yg;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final s f55315a = new s();
+    private final s f55363a = new s();
 
     public void a() {
-        this.f55315a.c();
+        this.f55363a.c();
     }
 
     public a b() {
-        return this.f55315a;
+        return this.f55363a;
     }
 }

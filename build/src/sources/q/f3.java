@@ -17,13 +17,13 @@ import java.util.Set;
 final class f3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r.a0 f45847a;
+    private final r.a0 f45895a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s.f f45848b;
+    private final s.f f45896b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f45849c;
+    private final boolean f45897c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -39,8 +39,8 @@ final class f3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f3(r.a0 a0Var) {
-        this.f45847a = a0Var;
-        this.f45848b = s.f.a(a0Var);
+        this.f45895a = a0Var;
+        this.f45896b = s.f.a(a0Var);
         int[] iArr = (int[]) a0Var.a(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);
         boolean z10 = false;
         if (iArr != null) {
@@ -57,7 +57,7 @@ final class f3 {
                 }
             }
         }
-        this.f45849c = z10;
+        this.f45897c = z10;
     }
 
     private static boolean a(x.z zVar, x.z zVar2) {
@@ -100,7 +100,7 @@ final class f3 {
     }
 
     private static boolean e(x.z zVar) {
-        return Objects.equals(zVar, x.z.f54401c);
+        return Objects.equals(zVar, x.z.f54449c);
     }
 
     private static boolean f(x.z zVar) {
@@ -128,7 +128,7 @@ final class f3 {
         int b10 = zVar.b();
         int a10 = zVar.a();
         if (b10 == 1 && a10 == 0) {
-            x.z zVar3 = x.z.f54402d;
+            x.z zVar3 = x.z.f54450d;
             if (!set.contains(zVar3)) {
                 return null;
             }
@@ -144,7 +144,7 @@ final class f3 {
             x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s from concurrently bound use case.\n%s\n->\n%s", str, zVar, c11));
             return c11;
         }
-        x.z zVar4 = x.z.f54402d;
+        x.z zVar4 = x.z.f54450d;
         if (b(zVar, zVar4, set)) {
             x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s to no compatible HDR dynamic ranges.\n%s\n->\n%s", str, zVar, zVar4));
             return zVar4;
@@ -152,14 +152,14 @@ final class f3 {
         if (b10 == 2 && (a10 == 10 || a10 == 0)) {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
             if (Build.VERSION.SDK_INT >= 33) {
-                zVar2 = a.a(this.f45847a);
+                zVar2 = a.a(this.f45895a);
                 if (zVar2 != null) {
                     linkedHashSet.add(zVar2);
                 }
             } else {
                 zVar2 = null;
             }
-            linkedHashSet.add(x.z.f54404f);
+            linkedHashSet.add(x.z.f54452f);
             x.z c12 = c(zVar, linkedHashSet, set);
             if (c12 != null) {
                 if (c12.equals(zVar2)) {
@@ -175,7 +175,7 @@ final class f3 {
         while (it.hasNext()) {
             x.z zVar5 = (x.z) it.next();
             b2.e.j(zVar5.e(), "Candidate dynamic range must be fully specified.");
-            if (!zVar5.equals(x.z.f54402d) && a(zVar, zVar5)) {
+            if (!zVar5.equals(x.z.f54450d) && a(zVar, zVar5)) {
                 x.y0.a("DynamicRangeResolver", String.format("Resolved dynamic range for use case %s from validated dynamic range constraints or supported HDR dynamic ranges.\n%s\n->\n%s", str, zVar, zVar5));
                 return zVar5;
             }
@@ -187,7 +187,7 @@ final class f3 {
         x.z B = x2Var.B();
         x.z h10 = h(B, set4, set2, set3, x2Var.M());
         if (h10 != null) {
-            j(set4, h10, this.f45848b);
+            j(set4, h10, this.f45896b);
             return h10;
         }
         throw new IllegalArgumentException(String.format("Unable to resolve supported dynamic range. The dynamic range may not be supported on the device or may not be allowed concurrently with other attached use cases.\nUse case:\n  %s\nRequested dynamic range:\n  %s\nSupported dynamic ranges:\n  %s\nConstrained set of concurrent dynamic ranges:\n  %s", x2Var.M(), B, TextUtils.join("\n  ", set), TextUtils.join("\n  ", set4)));
@@ -207,7 +207,7 @@ final class f3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d() {
-        return this.f45849c;
+        return this.f45897c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -217,10 +217,10 @@ final class f3 {
         while (it.hasNext()) {
             linkedHashSet.add(((a0.a) it.next()).c());
         }
-        Set c10 = this.f45848b.c();
+        Set c10 = this.f45896b.c();
         Set hashSet = new HashSet(c10);
         for (x.z zVar : linkedHashSet) {
-            j(hashSet, zVar, this.f45848b);
+            j(hashSet, zVar, this.f45896b);
         }
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();

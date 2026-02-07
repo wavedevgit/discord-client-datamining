@@ -39,82 +39,82 @@ public abstract class d {
     private boolean I;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f31793a = new int[12];
+    private final int[] f31841a = new int[12];
 
     /* renamed from: b  reason: collision with root package name */
-    private int f31794b;
+    private int f31842b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int[] f31795c;
+    private final int[] f31843c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f31796d;
+    private int f31844d;
 
     /* renamed from: e  reason: collision with root package name */
-    private View f31797e;
+    private View f31845e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f31798f;
+    private int f31846f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f31799g;
+    private float f31847g;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f31800h;
+    private float f31848h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f31801i;
+    private boolean f31849i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f31802j;
+    private boolean f31850j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f31803k;
+    private int f31851k;
 
     /* renamed from: l  reason: collision with root package name */
-    private WritableArray f31804l;
+    private WritableArray f31852l;
 
     /* renamed from: m  reason: collision with root package name */
-    private WritableArray f31805m;
+    private WritableArray f31853m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f31806n;
+    private int f31854n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f31807o;
+    private int f31855o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final C0451d[] f31808p;
+    private final C0451d[] f31856p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f31809q;
+    private boolean f31857q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float[] f31810r;
+    private float[] f31858r;
 
     /* renamed from: s  reason: collision with root package name */
-    private short f31811s;
+    private short f31859s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f31812t;
+    private float f31860t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f31813u;
+    private float f31861u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f31814v;
+    private boolean f31862v;
 
     /* renamed from: w  reason: collision with root package name */
-    private float f31815w;
+    private float f31863w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f31816x;
+    private float f31864x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f31817y;
+    private int f31865y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f31818z;
+    private boolean f31866z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Exception {
@@ -253,7 +253,7 @@ public abstract class d {
     public static abstract class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f31819a = new a(null);
+        public static final a f31867a = new a(null);
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a {
@@ -342,13 +342,13 @@ public abstract class d {
                 handler.y0(config.getBoolean(ViewProps.ENABLED));
             }
             if (config.hasKey("hitSlop")) {
-                f31819a.b(handler, config);
+                f31867a.b(handler, config);
             }
             if (config.hasKey("needsPointerData")) {
                 handler.C0(config.getBoolean("needsPointerData"));
             }
             if (config.hasKey("manualActivation")) {
-                handler.f31814v = config.getBoolean("manualActivation");
+                handler.f31862v = config.getBoolean("manualActivation");
             }
             if (config.hasKey("mouseButton")) {
                 handler.B0(config.getInt("mouseButton"));
@@ -362,46 +362,46 @@ public abstract class d {
     public static final class C0451d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f31820a;
+        private final int f31868a;
 
         /* renamed from: b  reason: collision with root package name */
-        private float f31821b;
+        private float f31869b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f31822c;
+        private float f31870c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f31823d;
+        private float f31871d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f31824e;
+        private float f31872e;
 
         public C0451d(int i10, float f10, float f11, float f12, float f13) {
-            this.f31820a = i10;
-            this.f31821b = f10;
-            this.f31822c = f11;
-            this.f31823d = f12;
-            this.f31824e = f13;
+            this.f31868a = i10;
+            this.f31869b = f10;
+            this.f31870c = f11;
+            this.f31871d = f12;
+            this.f31872e = f13;
         }
 
         public final float a() {
-            return this.f31823d;
+            return this.f31871d;
         }
 
         public final float b() {
-            return this.f31824e;
+            return this.f31872e;
         }
 
         public final int c() {
-            return this.f31820a;
+            return this.f31868a;
         }
 
         public final float d() {
-            return this.f31821b;
+            return this.f31869b;
         }
 
         public final float e() {
-            return this.f31822c;
+            return this.f31870c;
         }
 
         public boolean equals(Object obj) {
@@ -412,38 +412,38 @@ public abstract class d {
                 return false;
             }
             C0451d c0451d = (C0451d) obj;
-            if (this.f31820a == c0451d.f31820a && Float.compare(this.f31821b, c0451d.f31821b) == 0 && Float.compare(this.f31822c, c0451d.f31822c) == 0 && Float.compare(this.f31823d, c0451d.f31823d) == 0 && Float.compare(this.f31824e, c0451d.f31824e) == 0) {
+            if (this.f31868a == c0451d.f31868a && Float.compare(this.f31869b, c0451d.f31869b) == 0 && Float.compare(this.f31870c, c0451d.f31870c) == 0 && Float.compare(this.f31871d, c0451d.f31871d) == 0 && Float.compare(this.f31872e, c0451d.f31872e) == 0) {
                 return true;
             }
             return false;
         }
 
         public final void f(float f10) {
-            this.f31823d = f10;
+            this.f31871d = f10;
         }
 
         public final void g(float f10) {
-            this.f31824e = f10;
+            this.f31872e = f10;
         }
 
         public final void h(float f10) {
-            this.f31821b = f10;
+            this.f31869b = f10;
         }
 
         public int hashCode() {
-            return (((((((Integer.hashCode(this.f31820a) * 31) + Float.hashCode(this.f31821b)) * 31) + Float.hashCode(this.f31822c)) * 31) + Float.hashCode(this.f31823d)) * 31) + Float.hashCode(this.f31824e);
+            return (((((((Integer.hashCode(this.f31868a) * 31) + Float.hashCode(this.f31869b)) * 31) + Float.hashCode(this.f31870c)) * 31) + Float.hashCode(this.f31871d)) * 31) + Float.hashCode(this.f31872e);
         }
 
         public final void i(float f10) {
-            this.f31822c = f10;
+            this.f31870c = f10;
         }
 
         public String toString() {
-            int i10 = this.f31820a;
-            float f10 = this.f31821b;
-            float f11 = this.f31822c;
-            float f12 = this.f31823d;
-            float f13 = this.f31824e;
+            int i10 = this.f31868a;
+            float f10 = this.f31869b;
+            float f11 = this.f31870c;
+            float f12 = this.f31871d;
+            float f13 = this.f31872e;
             return "PointerData(pointerId=" + i10 + ", x=" + f10 + ", y=" + f11 + ", absoluteX=" + f12 + ", absoluteY=" + f13 + ")";
         }
     }
@@ -453,34 +453,34 @@ public abstract class d {
         for (int i10 = 0; i10 < 2; i10++) {
             iArr[i10] = 0;
         }
-        this.f31795c = iArr;
-        this.f31802j = true;
+        this.f31843c = iArr;
+        this.f31850j = true;
         C0451d[] c0451dArr = new C0451d[12];
         for (int i11 = 0; i11 < 12; i11++) {
             c0451dArr[i11] = null;
         }
-        this.f31808p = c0451dArr;
+        this.f31856p = c0451dArr;
         this.D = 3;
     }
 
     private final void A(MotionEvent motionEvent, MotionEvent motionEvent2) {
         C();
-        this.f31804l = null;
-        this.f31806n = 3;
+        this.f31852l = null;
+        this.f31854n = 3;
         int pointerId = motionEvent.getPointerId(motionEvent.getActionIndex());
-        this.f31808p[pointerId] = new C0451d(pointerId, motionEvent.getX(motionEvent.getActionIndex()), motionEvent.getY(motionEvent.getActionIndex()), (motionEvent2.getX(motionEvent.getActionIndex()) + (motionEvent2.getRawX() - motionEvent2.getX())) - this.f31795c[0], (motionEvent2.getY(motionEvent.getActionIndex()) + (motionEvent2.getRawY() - motionEvent2.getY())) - this.f31795c[1]);
-        C0451d c0451d = this.f31808p[pointerId];
+        this.f31856p[pointerId] = new C0451d(pointerId, motionEvent.getX(motionEvent.getActionIndex()), motionEvent.getY(motionEvent.getActionIndex()), (motionEvent2.getX(motionEvent.getActionIndex()) + (motionEvent2.getRawX() - motionEvent2.getX())) - this.f31843c[0], (motionEvent2.getY(motionEvent.getActionIndex()) + (motionEvent2.getRawY() - motionEvent2.getY())) - this.f31843c[1]);
+        C0451d c0451d = this.f31856p[pointerId];
         Intrinsics.checkNotNull(c0451d);
         n(c0451d);
-        this.f31808p[pointerId] = null;
-        this.f31807o--;
+        this.f31856p[pointerId] = null;
+        this.f31855o--;
         y();
     }
 
     private final void C() {
         C0451d[] c0451dArr;
-        this.f31805m = null;
-        for (C0451d c0451d : this.f31808p) {
+        this.f31853m = null;
+        for (C0451d c0451d : this.f31856p) {
             if (c0451d != null) {
                 o(c0451d);
             }
@@ -490,10 +490,10 @@ public abstract class d {
     private final int E() {
         int[] iArr;
         int i10 = 0;
-        while (i10 < this.f31794b) {
+        while (i10 < this.f31842b) {
             int i11 = 0;
             while (true) {
-                iArr = this.f31793a;
+                iArr = this.f31841a;
                 if (i11 >= iArr.length || iArr[i11] == i10) {
                     break;
                 }
@@ -556,7 +556,7 @@ public abstract class d {
     }
 
     private final boolean e0(int i10) {
-        if (this.f31793a[i10] != -1) {
+        if (this.f31841a[i10] != -1) {
             return true;
         }
         return false;
@@ -564,18 +564,18 @@ public abstract class d {
 
     private final void h0(int i10) {
         UiThreadUtil.assertOnUiThread();
-        if (this.f31798f == i10) {
+        if (this.f31846f == i10) {
             return;
         }
-        if (this.f31807o > 0 && (i10 == 5 || i10 == 3 || i10 == 1)) {
+        if (this.f31855o > 0 && (i10 == 5 || i10 == 3 || i10 == 1)) {
             r();
         }
-        int i11 = this.f31798f;
-        this.f31798f = i10;
+        int i11 = this.f31846f;
+        this.f31846f = i10;
         if (i10 == 4) {
             short s10 = N;
             N = (short) (s10 + 1);
-            this.f31811s = s10;
+            this.f31859s = s10;
         }
         i iVar = this.A;
         Intrinsics.checkNotNull(iVar);
@@ -584,12 +584,12 @@ public abstract class d {
     }
 
     private final boolean i0(MotionEvent motionEvent) {
-        if (motionEvent.getPointerCount() != this.f31794b) {
+        if (motionEvent.getPointerCount() != this.f31842b) {
             return true;
         }
-        int length = this.f31793a.length;
+        int length = this.f31841a.length;
         for (int i10 = 0; i10 < length; i10++) {
-            int i11 = this.f31793a[i10];
+            int i11 = this.f31841a[i10];
             if (i11 != -1 && i11 != i10) {
                 return true;
             }
@@ -619,35 +619,35 @@ public abstract class d {
     }
 
     private final void n(C0451d c0451d) {
-        if (this.f31804l == null) {
-            this.f31804l = Arguments.createArray();
+        if (this.f31852l == null) {
+            this.f31852l = Arguments.createArray();
         }
-        WritableArray writableArray = this.f31804l;
+        WritableArray writableArray = this.f31852l;
         Intrinsics.checkNotNull(writableArray);
         writableArray.pushMap(u(c0451d));
     }
 
     private final void o(C0451d c0451d) {
-        if (this.f31805m == null) {
-            this.f31805m = Arguments.createArray();
+        if (this.f31853m == null) {
+            this.f31853m = Arguments.createArray();
         }
-        WritableArray writableArray = this.f31805m;
+        WritableArray writableArray = this.f31853m;
         Intrinsics.checkNotNull(writableArray);
         writableArray.pushMap(u(c0451d));
     }
 
     private final void r() {
         C0451d[] c0451dArr;
-        this.f31806n = 4;
-        this.f31804l = null;
+        this.f31854n = 4;
+        this.f31852l = null;
         C();
-        for (C0451d c0451d : this.f31808p) {
+        for (C0451d c0451d : this.f31856p) {
             if (c0451d != null) {
                 n(c0451d);
             }
         }
-        this.f31807o = 0;
-        kotlin.collections.i.z(this.f31808p, null, 0, 0, 6, null);
+        this.f31855o = 0;
+        kotlin.collections.i.z(this.f31856p, null, 0, 0, 6, null);
         y();
     }
 
@@ -663,12 +663,12 @@ public abstract class d {
     }
 
     private final void x(MotionEvent motionEvent, MotionEvent motionEvent2) {
-        this.f31804l = null;
-        this.f31806n = 1;
+        this.f31852l = null;
+        this.f31854n = 1;
         int pointerId = motionEvent.getPointerId(motionEvent.getActionIndex());
-        this.f31808p[pointerId] = new C0451d(pointerId, motionEvent.getX(motionEvent.getActionIndex()), motionEvent.getY(motionEvent.getActionIndex()), (motionEvent2.getX(motionEvent.getActionIndex()) + (motionEvent2.getRawX() - motionEvent2.getX())) - this.f31795c[0], (motionEvent2.getY(motionEvent.getActionIndex()) + (motionEvent2.getRawY() - motionEvent2.getY())) - this.f31795c[1]);
-        this.f31807o++;
-        C0451d c0451d = this.f31808p[pointerId];
+        this.f31856p[pointerId] = new C0451d(pointerId, motionEvent.getX(motionEvent.getActionIndex()), motionEvent.getY(motionEvent.getActionIndex()), (motionEvent2.getX(motionEvent.getActionIndex()) + (motionEvent2.getRawX() - motionEvent2.getX())) - this.f31843c[0], (motionEvent2.getY(motionEvent.getActionIndex()) + (motionEvent2.getRawY() - motionEvent2.getY())) - this.f31843c[1]);
+        this.f31855o++;
+        C0451d c0451d = this.f31856p[pointerId];
         Intrinsics.checkNotNull(c0451d);
         n(c0451d);
         C();
@@ -677,7 +677,7 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void y0(boolean z10) {
-        if (this.f31797e != null && this.f31802j != z10) {
+        if (this.f31845e != null && this.f31850j != z10) {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: kn.c
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -685,23 +685,23 @@ public abstract class d {
                 }
             });
         }
-        this.f31802j = z10;
+        this.f31850j = z10;
     }
 
     private final void z(MotionEvent motionEvent, MotionEvent motionEvent2) {
-        this.f31804l = null;
-        this.f31806n = 2;
+        this.f31852l = null;
+        this.f31854n = 2;
         float rawX = motionEvent2.getRawX() - motionEvent2.getX();
         float rawY = motionEvent2.getRawY() - motionEvent2.getY();
         int pointerCount = motionEvent.getPointerCount();
         int i10 = 0;
         for (int i11 = 0; i11 < pointerCount; i11++) {
-            C0451d c0451d = this.f31808p[motionEvent.getPointerId(i11)];
+            C0451d c0451d = this.f31856p[motionEvent.getPointerId(i11)];
             if (c0451d != null && (c0451d.d() != motionEvent.getX(i11) || c0451d.e() != motionEvent.getY(i11))) {
                 c0451d.h(motionEvent.getX(i11));
                 c0451d.i(motionEvent.getY(i11));
-                c0451d.f((motionEvent2.getX(i11) + rawX) - this.f31795c[0]);
-                c0451d.g((motionEvent2.getY(i11) + rawY) - this.f31795c[1]);
+                c0451d.f((motionEvent2.getX(i11) + rawX) - this.f31843c[0]);
+                c0451d.g((motionEvent2.getY(i11) + rawY) - this.f31843c[1]);
                 n(c0451d);
                 i10++;
             }
@@ -717,7 +717,7 @@ public abstract class d {
     }
 
     public final void B() {
-        int i10 = this.f31798f;
+        int i10 = this.f31846f;
         if (i10 != 2 && i10 != 4) {
             return;
         }
@@ -729,11 +729,11 @@ public abstract class d {
     }
 
     public final void C0(boolean z10) {
-        this.f31809q = z10;
+        this.f31857q = z10;
     }
 
     public final void D() {
-        int i10 = this.f31798f;
+        int i10 = this.f31846f;
         if (i10 != 4 && i10 != 0 && i10 != 2) {
             return;
         }
@@ -743,7 +743,7 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void D0(int i10) {
-        this.f31817y = i10;
+        this.f31865y = i10;
     }
 
     public final void E0(r rVar) {
@@ -751,7 +751,7 @@ public abstract class d {
     }
 
     public final int F() {
-        return this.f31803k;
+        return this.f31851k;
     }
 
     public final int G() {
@@ -760,7 +760,7 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void G0(boolean z10) {
-        this.f31818z = z10;
+        this.f31866z = z10;
     }
 
     public final void H0(boolean z10) {
@@ -768,15 +768,15 @@ public abstract class d {
     }
 
     public final short I() {
-        return this.f31811s;
+        return this.f31859s;
     }
 
     public final void I0(int i10) {
-        this.f31796d = i10;
+        this.f31844d = i10;
     }
 
     public final float J() {
-        return (this.f31812t + this.f31815w) - this.f31795c[0];
+        return (this.f31860t + this.f31863w) - this.f31843c[0];
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -794,7 +794,7 @@ public abstract class d {
     }
 
     public final float K() {
-        return (this.f31813u + this.f31816x) - this.f31795c[1];
+        return (this.f31861u + this.f31864x) - this.f31843c[1];
     }
 
     public boolean K0(d handler) {
@@ -807,7 +807,7 @@ public abstract class d {
     }
 
     public final float L() {
-        return this.f31812t;
+        return this.f31860t;
     }
 
     public boolean L0(d handler) {
@@ -823,7 +823,7 @@ public abstract class d {
     }
 
     public final float M() {
-        return this.f31813u;
+        return this.f31861u;
     }
 
     public boolean M0(d handler) {
@@ -836,7 +836,7 @@ public abstract class d {
     }
 
     public final boolean N() {
-        return this.f31809q;
+        return this.f31857q;
     }
 
     public final boolean N0(d handler) {
@@ -849,15 +849,15 @@ public abstract class d {
     }
 
     public final int O() {
-        return this.f31817y;
+        return this.f31865y;
     }
 
     public final void O0(int i10) {
         if (e0(i10)) {
             return;
         }
-        this.f31793a[i10] = E();
-        this.f31794b++;
+        this.f31841a[i10] = E();
+        this.f31842b++;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -869,8 +869,8 @@ public abstract class d {
         if (!e0(i10)) {
             return;
         }
-        this.f31793a[i10] = -1;
-        this.f31794b--;
+        this.f31841a[i10] = -1;
+        this.f31842b--;
     }
 
     public final int Q() {
@@ -882,7 +882,7 @@ public abstract class d {
         PointF L2;
         Intrinsics.checkNotNullParameter(point, "point");
         i iVar = this.A;
-        if (iVar != null && (L2 = iVar.L(this.f31797e, point)) != null) {
+        if (iVar != null && (L2 = iVar.L(this.f31845e, point)) != null) {
             return L2;
         }
         point.x = Float.NaN;
@@ -914,57 +914,57 @@ public abstract class d {
     }
 
     public final int S() {
-        return this.f31798f;
+        return this.f31846f;
     }
 
     public final boolean S0(MotionEvent event) {
         int i10;
         Intrinsics.checkNotNullParameter(event, "event");
-        if (this.f31802j && (i10 = this.f31798f) != 1 && i10 != 3 && i10 != 5 && e0(event.getPointerId(event.getActionIndex()))) {
+        if (this.f31850j && (i10 = this.f31846f) != 1 && i10 != 3 && i10 != 5 && e0(event.getPointerId(event.getActionIndex()))) {
             return true;
         }
         return false;
     }
 
     public final int T() {
-        return this.f31796d;
+        return this.f31844d;
     }
 
     public final void T0(Function0 closure) {
         Intrinsics.checkNotNullParameter(closure, "closure");
-        this.f31801i = true;
+        this.f31849i = true;
         closure.invoke();
-        this.f31801i = false;
+        this.f31849i = false;
     }
 
     public final int U() {
-        return this.f31806n;
+        return this.f31854n;
     }
 
     public final int V() {
-        return this.f31807o;
+        return this.f31855o;
     }
 
     public final View W() {
-        return this.f31797e;
+        return this.f31845e;
     }
 
     public final void X(MotionEvent transformedEvent, MotionEvent sourceEvent) {
         int i10;
         Intrinsics.checkNotNullParameter(transformedEvent, "transformedEvent");
         Intrinsics.checkNotNullParameter(sourceEvent, "sourceEvent");
-        if (this.f31802j && (i10 = this.f31798f) != 3 && i10 != 1 && i10 != 5 && this.f31794b >= 1) {
+        if (this.f31850j && (i10 = this.f31846f) != 3 && i10 != 1 && i10 != 5 && this.f31842b >= 1) {
             try {
                 MotionEvent[] motionEventArr = {m(transformedEvent), m(sourceEvent)};
                 MotionEvent motionEvent = motionEventArr[0];
                 MotionEvent motionEvent2 = motionEventArr[1];
-                this.f31799g = motionEvent.getX();
-                this.f31800h = motionEvent.getY();
-                this.f31817y = motionEvent.getPointerCount();
-                boolean g02 = g0(this.f31797e, this.f31799g, this.f31800h);
-                this.f31801i = g02;
-                if (this.f31818z && !g02) {
-                    int i11 = this.f31798f;
+                this.f31847g = motionEvent.getX();
+                this.f31848h = motionEvent.getY();
+                this.f31865y = motionEvent.getPointerCount();
+                boolean g02 = g0(this.f31845e, this.f31847g, this.f31848h);
+                this.f31849i = g02;
+                if (this.f31866z && !g02) {
+                    int i11 = this.f31846f;
                     if (i11 == 4) {
                         q();
                         return;
@@ -975,11 +975,11 @@ public abstract class d {
                         return;
                     }
                 }
-                k kVar = k.f31846a;
-                this.f31812t = kVar.b(motionEvent, true);
-                this.f31813u = kVar.c(motionEvent, true);
-                this.f31815w = motionEvent.getRawX() - motionEvent.getX();
-                this.f31816x = motionEvent.getRawY() - motionEvent.getY();
+                k kVar = k.f31894a;
+                this.f31860t = kVar.b(motionEvent, true);
+                this.f31861u = kVar.c(motionEvent, true);
+                this.f31863w = motionEvent.getRawX() - motionEvent.getX();
+                this.f31864x = motionEvent.getRawY() - motionEvent.getY();
                 if (sourceEvent.getAction() == 0 || sourceEvent.getAction() == 9 || sourceEvent.getAction() == 7) {
                     F0(sourceEvent);
                 }
@@ -1002,9 +1002,9 @@ public abstract class d {
 
     public final boolean Y(d other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        int length = this.f31793a.length;
+        int length = this.f31841a.length;
         for (int i10 = 0; i10 < length; i10++) {
-            if (this.f31793a[i10] != -1 && other.f31793a[i10] != -1) {
+            if (this.f31841a[i10] != -1 && other.f31841a[i10] != -1) {
                 return true;
             }
         }
@@ -1030,7 +1030,7 @@ public abstract class d {
             r3 = this;
             java.lang.String r0 = "of"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r4, r0)
-            android.view.View r0 = r3.f31797e
+            android.view.View r0 = r3.f31845e
             r1 = 0
             if (r0 == 0) goto Lf
             android.view.ViewParent r0 = r0.getParent()
@@ -1046,7 +1046,7 @@ public abstract class d {
             r0 = r1
         L18:
             if (r0 == 0) goto L2f
-            android.view.View r2 = r4.f31797e
+            android.view.View r2 = r4.f31845e
             boolean r2 = kotlin.jvm.internal.Intrinsics.areEqual(r0, r2)
             if (r2 == 0) goto L24
             r4 = 1
@@ -1065,24 +1065,24 @@ public abstract class d {
     }
 
     public final boolean d0() {
-        return this.f31802j;
+        return this.f31850j;
     }
 
     public final boolean f0() {
-        return this.f31801i;
+        return this.f31849i;
     }
 
     public final boolean g0(View view, float f10, float f11) {
         float f12;
         float f13;
-        f.a aVar = jn.f.f29956a;
+        f.a aVar = jn.f.f30004a;
         Intrinsics.checkNotNull(view);
         if (aVar.e(view)) {
             return aVar.c(view, f10, f11);
         }
         float width = view.getWidth();
         float height = view.getHeight();
-        float[] fArr = this.f31810r;
+        float[] fArr = this.f31858r;
         float f14 = 0.0f;
         if (fArr != null) {
             float f15 = fArr[0];
@@ -1136,8 +1136,8 @@ public abstract class d {
     }
 
     public void l(boolean z10) {
-        if (!this.f31814v || z10) {
-            int i10 = this.f31798f;
+        if (!this.f31862v || z10) {
+            int i10 = this.f31846f;
             if (i10 != 0 && i10 != 2) {
                 return;
             }
@@ -1153,13 +1153,13 @@ public abstract class d {
     }
 
     public final void p() {
-        if (this.f31798f == 0) {
+        if (this.f31846f == 0) {
             h0(2);
         }
     }
 
     public final void q() {
-        int i10 = this.f31798f;
+        int i10 = this.f31846f;
         if (i10 != 4 && i10 != 0 && i10 != 2 && !this.H) {
             return;
         }
@@ -1169,11 +1169,11 @@ public abstract class d {
 
     public final void q0(View view, i iVar) {
         Context context;
-        if (this.f31797e == null && this.A == null) {
-            Arrays.fill(this.f31793a, -1);
-            this.f31794b = 0;
-            this.f31798f = 0;
-            this.f31797e = view;
+        if (this.f31845e == null && this.A == null) {
+            Arrays.fill(this.f31841a, -1);
+            this.f31842b = 0;
+            this.f31846f = 0;
+            this.f31845e = view;
             this.A = iVar;
             View view2 = null;
             if (view != null) {
@@ -1186,9 +1186,9 @@ public abstract class d {
                 view2 = H.findViewById(16908290);
             }
             if (view2 != null) {
-                view2.getLocationOnScreen(this.f31795c);
+                view2.getLocationOnScreen(this.f31843c);
             } else {
-                int[] iArr = this.f31795c;
+                int[] iArr = this.f31843c;
                 iArr[0] = 0;
                 iArr[1] = 0;
             }
@@ -1199,40 +1199,40 @@ public abstract class d {
     }
 
     public final void r0() {
-        this.f31797e = null;
+        this.f31845e = null;
         this.A = null;
-        Arrays.fill(this.f31793a, -1);
-        this.f31794b = 0;
-        this.f31807o = 0;
-        kotlin.collections.i.z(this.f31808p, null, 0, 0, 6, null);
-        this.f31806n = 0;
+        Arrays.fill(this.f31841a, -1);
+        this.f31842b = 0;
+        this.f31855o = 0;
+        kotlin.collections.i.z(this.f31856p, null, 0, 0, 6, null);
+        this.f31854n = 0;
         o0();
     }
 
     public final WritableArray s() {
-        WritableArray writableArray = this.f31805m;
-        this.f31805m = null;
+        WritableArray writableArray = this.f31853m;
+        this.f31853m = null;
         return writableArray;
     }
 
     public void s0() {
-        this.f31809q = false;
-        this.f31814v = false;
-        this.f31818z = false;
+        this.f31857q = false;
+        this.f31862v = false;
+        this.f31866z = false;
         y0(true);
-        this.f31810r = (float[]) K;
+        this.f31858r = (float[]) K;
         this.E = 0;
     }
 
     public final WritableArray t() {
-        WritableArray writableArray = this.f31804l;
-        this.f31804l = null;
+        WritableArray writableArray = this.f31852l;
+        this.f31852l = null;
         return writableArray;
     }
 
     public String toString() {
         String simpleName;
-        View view = this.f31797e;
+        View view = this.f31845e;
         if (view == null) {
             simpleName = null;
         } else {
@@ -1240,12 +1240,12 @@ public abstract class d {
             simpleName = view.getClass().getSimpleName();
         }
         String simpleName2 = getClass().getSimpleName();
-        int i10 = this.f31796d;
+        int i10 = this.f31844d;
         return simpleName2 + "@[" + i10 + "]:" + simpleName;
     }
 
     public final void u0(int i10) {
-        this.f31803k = i10;
+        this.f31851k = i10;
     }
 
     public void v(MotionEvent event) {
@@ -1277,31 +1277,31 @@ public abstract class d {
 
     public void y() {
         r rVar;
-        if (this.f31804l != null && (rVar = this.B) != null) {
+        if (this.f31852l != null && (rVar = this.B) != null) {
             rVar.c(this);
         }
     }
 
     public final void z0(float f10, float f11, float f12, float f13, float f14, float f15) {
-        if (this.f31810r == null) {
-            this.f31810r = new float[6];
+        if (this.f31858r == null) {
+            this.f31858r = new float[6];
         }
-        float[] fArr = this.f31810r;
+        float[] fArr = this.f31858r;
         Intrinsics.checkNotNull(fArr);
         fArr[0] = f10;
-        float[] fArr2 = this.f31810r;
+        float[] fArr2 = this.f31858r;
         Intrinsics.checkNotNull(fArr2);
         fArr2[1] = f11;
-        float[] fArr3 = this.f31810r;
+        float[] fArr3 = this.f31858r;
         Intrinsics.checkNotNull(fArr3);
         fArr3[2] = f12;
-        float[] fArr4 = this.f31810r;
+        float[] fArr4 = this.f31858r;
         Intrinsics.checkNotNull(fArr4);
         fArr4[3] = f13;
-        float[] fArr5 = this.f31810r;
+        float[] fArr5 = this.f31858r;
         Intrinsics.checkNotNull(fArr5);
         fArr5[4] = f14;
-        float[] fArr6 = this.f31810r;
+        float[] fArr6 = this.f31858r;
         Intrinsics.checkNotNull(fArr6);
         fArr6[5] = f15;
         b bVar = J;

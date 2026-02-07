@@ -92,17 +92,17 @@ public final class ComponentEmoji {
 
     public static final /* synthetic */ void write$Self$chat_release(ComponentEmoji componentEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || componentEmoji.f8523id != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, componentEmoji.f8523id);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, componentEmoji.f8523id);
         }
         compositeEncoder.z(serialDescriptor, 1, componentEmoji.name);
         if (compositeEncoder.A(serialDescriptor, 2) || componentEmoji.src != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, componentEmoji.src);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, componentEmoji.src);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || componentEmoji.animated) {
             compositeEncoder.y(serialDescriptor, 3, componentEmoji.animated);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || componentEmoji.surrogates != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, componentEmoji.surrogates);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, componentEmoji.surrogates);
         }
     }
 

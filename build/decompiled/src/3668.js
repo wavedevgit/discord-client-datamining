@@ -5,18 +5,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1() {
-        _fun32673: for (var _fun32673_ip = 0;;) switch (_fun32673_ip) {
+        _fun32684: for (var _fun32684_ip = 0;;) switch (_fun32684_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
                 if (var1) {
-                    _fun32673_ip = 17;
-                    continue _fun32673
+                    _fun32684_ip = 17;
+                    continue _fun32684
                 }
             case 9:
                 var4 = var0.buffer;
-                _fun32673_ip = 52;
-                continue _fun32673;
+                _fun32684_ip = 52;
+                continue _fun32684;
             case 17:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 52:
                 var3 = var0.constructor;
                 var6 = var0.byteOffset;
-                var5 = var0.byteLength;
+                var5 = var0.length;
                 var1 = var3.prototype;
                 var1 = Object.create(var1, {
                     constructor: {
@@ -47,4 +47,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3667]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3666]);

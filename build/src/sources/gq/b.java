@@ -7,38 +7,38 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f25506a;
+    private final String f25554a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f25507b;
+    private final String f25555b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f25508c;
+    private final String f25556c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25509d;
+    private final String f25557d;
 
     public b(String prefix, String countryCode, String str, String defaultFlagEmoji) {
         Intrinsics.checkNotNullParameter(prefix, "prefix");
         Intrinsics.checkNotNullParameter(countryCode, "countryCode");
         Intrinsics.checkNotNullParameter(defaultFlagEmoji, "defaultFlagEmoji");
-        this.f25506a = prefix;
-        this.f25507b = countryCode;
-        this.f25508c = str;
-        this.f25509d = defaultFlagEmoji;
+        this.f25554a = prefix;
+        this.f25555b = countryCode;
+        this.f25556c = str;
+        this.f25557d = defaultFlagEmoji;
     }
 
     private final String b() {
-        String displayCountry = new Locale("", this.f25507b).getDisplayCountry(Locale.getDefault());
+        String displayCountry = new Locale("", this.f25555b).getDisplayCountry(Locale.getDefault());
         Intrinsics.checkNotNullExpressionValue(displayCountry, "getDisplayCountry(...)");
         return displayCountry;
     }
 
     private final String c() {
-        if (this.f25507b.length() != 2) {
-            return this.f25509d;
+        if (this.f25555b.length() != 2) {
+            return this.f25557d;
         }
-        String str = this.f25507b;
+        String str = this.f25555b;
         Locale locale = Locale.getDefault();
         Intrinsics.checkNotNullExpressionValue(locale, "getDefault(...)");
         String upperCase = str.toUpperCase(locale);
@@ -51,18 +51,18 @@ public final class b {
     }
 
     public final String a() {
-        return this.f25507b;
+        return this.f25555b;
     }
 
     public final String d() {
         String c10 = c();
         String b10 = b();
-        String str = this.f25506a;
+        String str = this.f25554a;
         return c10 + " " + b10 + " " + str;
     }
 
     public final String e() {
-        return this.f25506a;
+        return this.f25554a;
     }
 
     public boolean equals(Object obj) {
@@ -73,7 +73,7 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f25506a, bVar.f25506a) && Intrinsics.areEqual(this.f25507b, bVar.f25507b) && Intrinsics.areEqual(this.f25508c, bVar.f25508c) && Intrinsics.areEqual(this.f25509d, bVar.f25509d)) {
+        if (Intrinsics.areEqual(this.f25554a, bVar.f25554a) && Intrinsics.areEqual(this.f25555b, bVar.f25555b) && Intrinsics.areEqual(this.f25556c, bVar.f25556c) && Intrinsics.areEqual(this.f25557d, bVar.f25557d)) {
             return true;
         }
         return false;
@@ -81,21 +81,21 @@ public final class b {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((this.f25506a.hashCode() * 31) + this.f25507b.hashCode()) * 31;
-        String str = this.f25508c;
+        int hashCode2 = ((this.f25554a.hashCode() * 31) + this.f25555b.hashCode()) * 31;
+        String str = this.f25556c;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        return ((hashCode2 + hashCode) * 31) + this.f25509d.hashCode();
+        return ((hashCode2 + hashCode) * 31) + this.f25557d.hashCode();
     }
 
     public String toString() {
-        String str = this.f25506a;
-        String str2 = this.f25507b;
-        String str3 = this.f25508c;
-        String str4 = this.f25509d;
+        String str = this.f25554a;
+        String str2 = this.f25555b;
+        String str3 = this.f25556c;
+        String str4 = this.f25557d;
         return "CountryCodeMetadata(prefix=" + str + ", countryCode=" + str2 + ", pattern=" + str3 + ", defaultFlagEmoji=" + str4 + ")";
     }
 

@@ -13,7 +13,7 @@ public final class f extends ActivityResultContract {
     public Intent createIntent(Context context, e input) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(input, "input");
-        Intent intent = new Intent(context, d.f25443a.a());
+        Intent intent = new Intent(context, d.f25491a.a());
         intent.putExtra("EXTRA_NFC_READER_CONFIG", input);
         return intent;
     }
@@ -26,6 +26,6 @@ public final class f extends ActivityResultContract {
         if (intent != null && (extras = intent.getExtras()) != null && (kVar = (k) w1.b.a(extras, "EXTRA_RESULT", k.class)) != null) {
             return kVar;
         }
-        return new k.b("Unable to extract output from result intent.", k.c.f25456e);
+        return new k.b("Unable to extract output from result intent.", k.c.f25504e);
     }
 }

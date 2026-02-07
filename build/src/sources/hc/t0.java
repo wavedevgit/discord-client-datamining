@@ -10,34 +10,34 @@ import java.util.List;
 public final class t0 extends SQLiteOpenHelper {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f25921i = "INSERT INTO global_log_event_state VALUES (" + System.currentTimeMillis() + ")";
+    private static final String f25969i = "INSERT INTO global_log_event_state VALUES (" + System.currentTimeMillis() + ")";
 
     /* renamed from: o  reason: collision with root package name */
-    static int f25922o = 5;
+    static int f25970o = 5;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f25923p;
+    private static final a f25971p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f25924q;
+    private static final a f25972q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a f25925r;
+    private static final a f25973r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f25926s;
+    private static final a f25974s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final a f25927t;
+    private static final a f25975t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final List f25928u;
+    private static final List f25976u;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f25929d;
+    private final int f25977d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f25930e;
+    private boolean f25978e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -51,43 +51,43 @@ public final class t0 extends SQLiteOpenHelper {
                 t0.a(sQLiteDatabase);
             }
         };
-        f25923p = aVar;
+        f25971p = aVar;
         a aVar2 = new a() { // from class: hc.p0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 t0.m(sQLiteDatabase);
             }
         };
-        f25924q = aVar2;
+        f25972q = aVar2;
         a aVar3 = new a() { // from class: hc.q0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 sQLiteDatabase.execSQL("ALTER TABLE events ADD COLUMN payload_encoding TEXT");
             }
         };
-        f25925r = aVar3;
+        f25973r = aVar3;
         a aVar4 = new a() { // from class: hc.r0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 t0.n(sQLiteDatabase);
             }
         };
-        f25926s = aVar4;
+        f25974s = aVar4;
         a aVar5 = new a() { // from class: hc.s0
             @Override // hc.t0.a
             public final void a(SQLiteDatabase sQLiteDatabase) {
                 t0.k(sQLiteDatabase);
             }
         };
-        f25927t = aVar5;
-        f25928u = Arrays.asList(aVar, aVar2, aVar3, aVar4, aVar5);
+        f25975t = aVar5;
+        f25976u = Arrays.asList(aVar, aVar2, aVar3, aVar4, aVar5);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t0(Context context, String str, int i10) {
         super(context, str, (SQLiteDatabase.CursorFactory) null, i10);
-        this.f25930e = false;
-        this.f25929d = i10;
+        this.f25978e = false;
+        this.f25977d = i10;
     }
 
     public static /* synthetic */ void a(SQLiteDatabase sQLiteDatabase) {
@@ -103,7 +103,7 @@ public final class t0 extends SQLiteOpenHelper {
         sQLiteDatabase.execSQL("DROP TABLE IF EXISTS global_log_event_state");
         sQLiteDatabase.execSQL("CREATE TABLE log_event_dropped (log_source VARCHAR(45) NOT NULL,reason INTEGER NOT NULL,events_dropped_count BIGINT NOT NULL,PRIMARY KEY(log_source, reason))");
         sQLiteDatabase.execSQL("CREATE TABLE global_log_event_state (last_metrics_upload_ms BIGINT PRIMARY KEY)");
-        sQLiteDatabase.execSQL(f25921i);
+        sQLiteDatabase.execSQL(f25969i);
     }
 
     public static /* synthetic */ void m(SQLiteDatabase sQLiteDatabase) {
@@ -119,7 +119,7 @@ public final class t0 extends SQLiteOpenHelper {
     }
 
     private void p(SQLiteDatabase sQLiteDatabase) {
-        if (!this.f25930e) {
+        if (!this.f25978e) {
             onConfigure(sQLiteDatabase);
         }
     }
@@ -130,10 +130,10 @@ public final class t0 extends SQLiteOpenHelper {
     }
 
     private void y(SQLiteDatabase sQLiteDatabase, int i10, int i11) {
-        List list = f25928u;
+        List list = f25976u;
         if (i11 <= list.size()) {
             while (i10 < i11) {
-                ((a) f25928u.get(i10)).a(sQLiteDatabase);
+                ((a) f25976u.get(i10)).a(sQLiteDatabase);
                 i10++;
             }
             return;
@@ -143,14 +143,14 @@ public final class t0 extends SQLiteOpenHelper {
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onConfigure(SQLiteDatabase sQLiteDatabase) {
-        this.f25930e = true;
+        this.f25978e = true;
         sQLiteDatabase.rawQuery("PRAGMA busy_timeout=0;", new String[0]).close();
         sQLiteDatabase.setForeignKeyConstraintsEnabled(true);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper
     public void onCreate(SQLiteDatabase sQLiteDatabase) {
-        s(sQLiteDatabase, this.f25929d);
+        s(sQLiteDatabase, this.f25977d);
     }
 
     @Override // android.database.sqlite.SQLiteOpenHelper

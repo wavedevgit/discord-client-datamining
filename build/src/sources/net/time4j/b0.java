@@ -16,11 +16,11 @@ public enum b0 implements rt.n, rt.v {
     
 
     /* renamed from: x  reason: collision with root package name */
-    private static final b0[] f39126x = values();
+    private static final b0[] f39174x = values();
 
     public static b0 f(int i10) {
         if (i10 >= 1 && i10 <= 12) {
-            return f39126x[i10 - 1];
+            return f39174x[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }

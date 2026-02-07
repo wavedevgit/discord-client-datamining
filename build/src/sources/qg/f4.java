@@ -5,7 +5,7 @@ import yi.c;
 final class f4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f4 f47036a = new f4();
+    static final f4 f47084a = new f4();
 
     static {
         c.b a10 = yi.c.a("errorCode");

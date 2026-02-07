@@ -77,7 +77,7 @@ public final class MediaManagerModule$downloadMediaAssetWithContentType$1 extend
                     } else if (!(downloadState instanceof DownloadState.InProgress)) {
                         throw new p();
                     }
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             };
             this.label = 1;
@@ -85,11 +85,11 @@ public final class MediaManagerModule$downloadMediaAssetWithContentType$1 extend
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$downloadMediaAssetWithContentType$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaManagerModule$downloadMediaAssetWithContentType$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

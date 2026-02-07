@@ -1,179 +1,190 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {};
-    var3 = 'function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}';
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var0 = function arg0() {
-        var4 = arg0;
-        var10 = {};
-        var _closure2_slot0 = var10;
-        var0 = global;
-        var2 = var0.Set;
-        var3 = var2.prototype;
-        var3 = Object.create(var3, {
-            constructor: {
-                value: var2
-            }
-        });
-        var14 = var3;
-        var2 = new var14[var2](var13);
-        var6 = var2 instanceof Object ? var2 : var3;
-        var _closure2_slot1 = var6;
-        var8 = {};
-        var _closure2_slot2 = var8;
-        var3 = var4.filter;
-        var2 = function(arg0) { // Environment: var1
-            var1 = null;
-            var0 = arg0;
-            var0 = var1 !== var0;
-            return var0;
-        };
-        var4 = var3.bind(var4)(var2);
-        var3 = var4.forEach;
-        var2 = function(arg0) { // Environment: var1
-            _fun35002: for (var _fun35002_ip = 0;;) switch (_fun35002_ip) {
-                case 0:
-                    var0 = arg0;
-                    var2 = var0.workletEventHandler;
-                    var _closure3_slot0 = var2;
-                    var4 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var0 = 0;
-                    var3 = var3[var0];
-                    var0 = undefined;
-                    var3 = var4.bind(var0)(var3);
-                    var3 = var3.WorkletEventHandler;
-                    var3 = var2 instanceof var3;
-                    if (!var3) {
-                        _fun35002_ip = 73;
-                        continue _fun35002
-                    }
-                case 52:
-                    var3 = var2.eventNames;
-                    var2 = var3.forEach;
-                    var1 = function(arg0) { // Environment: var1
-                        _fun35003: for (var _fun35003_ip = 0;;) switch (_fun35003_ip) {
-                            case 0:
-                                var3 = arg0;
-                                var2 = _closure2_slot1;
-                                var0 = var2.add;
-                                var0 = var0.bind(var2)(var3);
-                                var0 = _closure2_slot2;
-                                var4 = var0[var3];
-                                var2 = _closure2_slot2;
-                                if (var4) {
-                                    _fun35003_ip = 62;
-                                    continue _fun35003
-                                }
-                            case 38:
-                                var4 = _closure3_slot0;
-                                var5 = var4.worklet;
-                                var4 = new Array(1);
-                                var4[0] = var5;
-                                var2[var3] = var4;
-                                _fun35003_ip = 86;
-                                continue _fun35003;
-                            case 62:
-                                var5 = var2[var3];
-                                var4 = var5.push;
-                                var2 = _closure3_slot0;
-                                var2 = var2.worklet;
-                                var2 = var4.bind(var5)(var2);
-                            case 86:
-                                var2 = _closure2_slot2;
-                                var2 = var2[var3];
-                                var5 = var2.length;
-                                var2 = global;
-                                var2 = var2.HermesInternal;
-                                var4 = var2.concat;
-                                var2 = '';
-                                var2 = var4.bind(var2)(var5);
-                                var2 = var3 + var2;
-                                var1 = _closure2_slot0;
-                                var0 = _closure3_slot0;
-                                var0 = var0.worklet;
-                                var1[var2] = var0;
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var1 = var2.bind(var3)(var1);
-                case 73:
-                    return var0;
-            }
-        };
-        var2 = var3.bind(var4)(var2);
-        var7 = _closure1_slot0;
-        var9 = _closure1_slot1;
-        var2 = 1;
-        var2 = var9[var2];
-        var3 = undefined;
-        var4 = var7.bind(var3)(var2);
-        var2 = var4.useHandler;
-        var2 = var2.bind(var4)(var10);
-        var4 = var2.doDependenciesDiffer;
-        var2 = 2;
-        var2 = var9[var2];
-        var3 = var7.bind(var3)(var2);
-        var2 = var3.useEvent;
-        var1 = function arg0() {
-            _fun35004: for (var _fun35004_ip = 0;;) switch (_fun35004_ip) {
-                case 0:
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var4 = _closure2_slot2;
-                    var3 = var1.eventName;
-                    var3 = var4[var3];
-                    if (!var3) {
-                        _fun35004_ip = 58;
-                        continue _fun35004
-                    }
-                case 29:
-                    var2 = _closure2_slot2;
-                    var1 = var1.eventName;
-                    var2 = var2[var1];
-                    var1 = var2.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        var2 = _closure3_slot0;
-                        var1 = arg0;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useEffect;
+    var _closure1_slot3 = var4;
+    var3 = var3.useRef;
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var1 = function arg0, arg1() {
+        _fun35016: for (var _fun35016_ip = 0;;) switch (_fun35016_ip) {
+            case 0:
+                var9 = arg0;
+                var3 = arg1;
+                var _closure2_slot0 = var9;
+                var0 = _closure1_slot4;
+                var4 = undefined;
+                var6 = null;
+                var0 = var0.bind(var4)(var6);
+                var5 = global;
+                var8 = var5.Object;
+                var7 = var8.values;
+                var5 = var9.__closure;
+                if (!(var6 == var5)) {
+                    _fun35016_ip = 52;
+                    continue _fun35016
+                }
+            case 50:
+                var5 = {};
+            case 52:
+                var7 = var7.bind(var8)(var5);
+                var _closure2_slot1 = var7;
+                var8 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var5 = 2;
+                var5 = var10[var5];
+                var8 = var8.bind(var4)(var5);
+                var5 = var8.shouldBeUseWeb;
+                var5 = var5.bind(var8)();
+                if (!var5) {
+                    _fun35016_ip = 102;
+                    continue _fun35016
+                }
+            case 94:
+                var8 = var7.length;
+                var5 = !var8;
+            case 102:
+                var8 = undefined;
+                if (!var5) {
+                    _fun35016_ip = 114;
+                    continue _fun35016
+                }
+            case 107:
+                var5 = var6 != var3;
+                var8 = var3;
+            case 114:
+                if (!var5) {
+                    _fun35016_ip = 122;
+                    continue _fun35016
+                }
+            case 117:
+                var5 = var8.length;
+            case 122:
+                if (!var5) {
+                    _fun35016_ip = 132;
+                    continue _fun35016
+                }
+            case 125:
+                _closure2_slot1 = var3;
+                var7 = var3;
+            case 132:
+                if (!(var4 !== var3)) {
+                    _fun35016_ip = 153;
+                    continue _fun35016
+                }
+            case 136:
+                var8 = var3.push;
+                var5 = var9.__workletHash;
+                var5 = var8.bind(var3)(var5);
+                _fun35016_ip = 190;
+                continue _fun35016;
+            case 153:
+                var10 = new Array(0);
+                var8 = var10.concat;
+                var5 = _closure1_slot2;
+                var7 = var5.bind(var4)(var7);
+                var11 = var9.__workletHash;
+                var5 = new Array(1);
+                var5[0] = var11;
+                var3 = var8.bind(var10)(var7, var5);
+            case 190:
+                var5 = var0.current;
+                if (!(var6 === var5)) {
+                    _fun35016_ip = 259;
+                    continue _fun35016
+                }
+            case 199:
+                var8 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var5 = 3;
+                var5 = var10[var5];
+                var7 = var8.bind(var4)(var5);
+                var6 = var7.makeMutable;
+                var5 = 4;
+                var5 = var10[var5];
+                var8 = var8.bind(var4)(var5);
+                var5 = var8.initialUpdaterRun;
+                var5 = var5.bind(var8)(var9);
+                var5 = var6.bind(var7)(var5);
+                var0.current = var5;
+            case 259:
+                var0 = var0.current;
+                var _closure2_slot2 = var0;
+                var2 = _closure1_slot3;
+                var1 = function() { // Environment: var1
+                    var5 = function() {
+                        var2 = _closure2_slot2;
+                        var1 = _closure2_slot0;
                         var0 = undefined;
-                        var0 = var1.bind(var0)(var2);
+                        var1 = var1.bind(var0)();
+                        var2.value = var1;
                         return var0;
                     };
-                    var0 = var1.bind(var2)(var0);
-                case 58:
-                    var0 = undefined;
+                    var2 = {};
+                    var3 = _closure2_slot2;
+                    var2.sharedValue = var3;
+                    var3 = _closure2_slot0;
+                    var2.updater = var3;
+                    var5.__closure = var2;
+                    var2 = 1316501239615.0;
+                    var5.__workletHash = var2;
+                    var3 = _closure1_slot5;
+                    var5.__initData = var3;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var2 = 3;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var4 = var4.bind(var2)(var3);
+                    var3 = var4.startMapper;
+                    var2 = _closure2_slot1;
+                    var6 = _closure2_slot2;
+                    var1 = new Array(1);
+                    var1[0] = var6;
+                    var1 = var3.bind(var4)(var5, var2, var1);
+                    var _closure3_slot0 = var1;
+                    var0 = function() { // Environment: var0
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var0 = 3;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var3 = var2.bind(var0)(var1);
+                        var2 = var3.stopMapper;
+                        var1 = _closure3_slot0;
+                        var1 = var2.bind(var3)(var1);
+                        return var0;
+                    };
                     return var0;
-            }
-        };
-        var7 = {};
-        var7.workletsMap = var8;
-        var1.__closure = var7;
-        var7 = 14960316830945.0;
-        var1.__workletHash = var7;
-        var5 = _closure1_slot2;
-        var1.__initData = var5;
-        var5 = var0.Array;
-        var0 = var5.from;
-        var0 = var0.bind(var5)(var6);
-        var0 = var2.bind(var3)(var1, var0, var4);
-        return var0;
+                };
+                var1 = var2.bind(var4)(var1, var3);
+                return var0;
+        }
     };
-    var1.useComposedEventHandler = var0;
-    var0 = undefined;
+    var2.useDerivedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3828, 3868, 3870]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 31, 3725, 3766, 3794]);

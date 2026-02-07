@@ -11,84 +11,84 @@ import pe.e;
 final class g {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final float[] f43822j = {1.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f};
+    private static final float[] f43870j = {1.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f};
 
     /* renamed from: k  reason: collision with root package name */
-    private static final float[] f43823k = {1.0f, 0.0f, 0.0f, 0.0f, -0.5f, 0.0f, 0.0f, 0.5f, 1.0f};
+    private static final float[] f43871k = {1.0f, 0.0f, 0.0f, 0.0f, -0.5f, 0.0f, 0.0f, 0.5f, 1.0f};
 
     /* renamed from: l  reason: collision with root package name */
-    private static final float[] f43824l = {1.0f, 0.0f, 0.0f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f, 1.0f};
+    private static final float[] f43872l = {1.0f, 0.0f, 0.0f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f, 1.0f};
 
     /* renamed from: m  reason: collision with root package name */
-    private static final float[] f43825m = {0.5f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f};
+    private static final float[] f43873m = {0.5f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f};
 
     /* renamed from: n  reason: collision with root package name */
-    private static final float[] f43826n = {0.5f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.5f, 1.0f, 1.0f};
+    private static final float[] f43874n = {0.5f, 0.0f, 0.0f, 0.0f, -1.0f, 0.0f, 0.5f, 1.0f, 1.0f};
 
     /* renamed from: a  reason: collision with root package name */
-    private int f43827a;
+    private int f43875a;
 
     /* renamed from: b  reason: collision with root package name */
-    private a f43828b;
+    private a f43876b;
 
     /* renamed from: c  reason: collision with root package name */
-    private a f43829c;
+    private a f43877c;
 
     /* renamed from: d  reason: collision with root package name */
-    private s f43830d;
+    private s f43878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f43831e;
+    private int f43879e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f43832f;
+    private int f43880f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f43833g;
+    private int f43881g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f43834h;
+    private int f43882h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f43835i;
+    private int f43883i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f43836a;
+        private final int f43884a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final FloatBuffer f43837b;
+        private final FloatBuffer f43885b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final FloatBuffer f43838c;
+        private final FloatBuffer f43886c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f43839d;
+        private final int f43887d;
 
         public a(e.b bVar) {
-            this.f43836a = bVar.a();
-            this.f43837b = t.e(bVar.f43820c);
-            this.f43838c = t.e(bVar.f43821d);
-            int i10 = bVar.f43819b;
+            this.f43884a = bVar.a();
+            this.f43885b = t.e(bVar.f43868c);
+            this.f43886c = t.e(bVar.f43869d);
+            int i10 = bVar.f43867b;
             if (i10 != 1) {
                 if (i10 != 2) {
-                    this.f43839d = 4;
+                    this.f43887d = 4;
                     return;
                 } else {
-                    this.f43839d = 6;
+                    this.f43887d = 6;
                     return;
                 }
             }
-            this.f43839d = 5;
+            this.f43887d = 5;
         }
     }
 
     public static boolean c(e eVar) {
-        e.a aVar = eVar.f43813a;
-        e.a aVar2 = eVar.f43814b;
-        if (aVar.b() != 1 || aVar.a(0).f43818a != 0 || aVar2.b() != 1 || aVar2.a(0).f43818a != 0) {
+        e.a aVar = eVar.f43861a;
+        e.a aVar2 = eVar.f43862b;
+        if (aVar.b() != 1 || aVar.a(0).f43866a != 0 || aVar2.b() != 1 || aVar2.a(0).f43866a != 0) {
             return false;
         }
         return true;
@@ -98,51 +98,51 @@ final class g {
         a aVar;
         float[] fArr2;
         if (z10) {
-            aVar = this.f43829c;
+            aVar = this.f43877c;
         } else {
-            aVar = this.f43828b;
+            aVar = this.f43876b;
         }
         a aVar2 = aVar;
         if (aVar2 != null) {
-            int i11 = this.f43827a;
+            int i11 = this.f43875a;
             if (i11 == 1) {
                 if (z10) {
-                    fArr2 = f43824l;
+                    fArr2 = f43872l;
                 } else {
-                    fArr2 = f43823k;
+                    fArr2 = f43871k;
                 }
             } else if (i11 == 2) {
                 if (z10) {
-                    fArr2 = f43826n;
+                    fArr2 = f43874n;
                 } else {
-                    fArr2 = f43825m;
+                    fArr2 = f43873m;
                 }
             } else {
-                fArr2 = f43822j;
+                fArr2 = f43870j;
             }
-            GLES20.glUniformMatrix3fv(this.f43832f, 1, false, fArr2, 0);
-            GLES20.glUniformMatrix4fv(this.f43831e, 1, false, fArr, 0);
+            GLES20.glUniformMatrix3fv(this.f43880f, 1, false, fArr2, 0);
+            GLES20.glUniformMatrix4fv(this.f43879e, 1, false, fArr, 0);
             GLES20.glActiveTexture(33984);
             GLES20.glBindTexture(36197, i10);
-            GLES20.glUniform1i(this.f43835i, 0);
+            GLES20.glUniform1i(this.f43883i, 0);
             try {
                 t.b();
             } catch (t.a e10) {
                 Log.e("ProjectionRenderer", "Failed to bind uniforms", e10);
             }
-            GLES20.glVertexAttribPointer(this.f43833g, 3, 5126, false, 12, (Buffer) aVar2.f43837b);
+            GLES20.glVertexAttribPointer(this.f43881g, 3, 5126, false, 12, (Buffer) aVar2.f43885b);
             try {
                 t.b();
             } catch (t.a e11) {
                 Log.e("ProjectionRenderer", "Failed to load position data", e11);
             }
-            GLES20.glVertexAttribPointer(this.f43834h, 2, 5126, false, 8, (Buffer) aVar2.f43838c);
+            GLES20.glVertexAttribPointer(this.f43882h, 2, 5126, false, 8, (Buffer) aVar2.f43886c);
             try {
                 t.b();
             } catch (t.a e12) {
                 Log.e("ProjectionRenderer", "Failed to load texture data", e12);
             }
-            GLES20.glDrawArrays(aVar2.f43839d, 0, aVar2.f43836a);
+            GLES20.glDrawArrays(aVar2.f43887d, 0, aVar2.f43884a);
             try {
                 t.b();
             } catch (t.a e13) {
@@ -154,12 +154,12 @@ final class g {
     public void b() {
         try {
             s sVar = new s("uniform mat4 uMvpMatrix;\nuniform mat3 uTexMatrix;\nattribute vec4 aPosition;\nattribute vec2 aTexCoords;\nvarying vec2 vTexCoords;\n// Standard transformation.\nvoid main() {\n  gl_Position = uMvpMatrix * aPosition;\n  vTexCoords = (uTexMatrix * vec3(aTexCoords, 1)).xy;\n}\n", "// This is required since the texture data is GL_TEXTURE_EXTERNAL_OES.\n#extension GL_OES_EGL_image_external : require\nprecision mediump float;\n// Standard texture rendering shader.\nuniform samplerExternalOES uTexture;\nvarying vec2 vTexCoords;\nvoid main() {\n  gl_FragColor = texture2D(uTexture, vTexCoords);\n}\n");
-            this.f43830d = sVar;
-            this.f43831e = sVar.j("uMvpMatrix");
-            this.f43832f = this.f43830d.j("uTexMatrix");
-            this.f43833g = this.f43830d.e("aPosition");
-            this.f43834h = this.f43830d.e("aTexCoords");
-            this.f43835i = this.f43830d.j("uTexture");
+            this.f43878d = sVar;
+            this.f43879e = sVar.j("uMvpMatrix");
+            this.f43880f = this.f43878d.j("uTexMatrix");
+            this.f43881g = this.f43878d.e("aPosition");
+            this.f43882h = this.f43878d.e("aTexCoords");
+            this.f43883i = this.f43878d.j("uTexture");
         } catch (t.a e10) {
             Log.e("ProjectionRenderer", "Failed to initialize the program", e10);
         }
@@ -169,12 +169,12 @@ final class g {
         if (!c(eVar)) {
             return;
         }
-        this.f43827a = eVar.f43815c;
-        a aVar = new a(eVar.f43813a.a(0));
-        this.f43828b = aVar;
-        if (!eVar.f43816d) {
-            aVar = new a(eVar.f43814b.a(0));
+        this.f43875a = eVar.f43863c;
+        a aVar = new a(eVar.f43861a.a(0));
+        this.f43876b = aVar;
+        if (!eVar.f43864d) {
+            aVar = new a(eVar.f43862b.a(0));
         }
-        this.f43829c = aVar;
+        this.f43877c = aVar;
     }
 }

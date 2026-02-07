@@ -6,19 +6,19 @@ import ne.s0;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f52559a = new SparseArray();
+    private final SparseArray f52607a = new SparseArray();
 
     public s0 a(int i10) {
-        s0 s0Var = (s0) this.f52559a.get(i10);
+        s0 s0Var = (s0) this.f52607a.get(i10);
         if (s0Var == null) {
             s0 s0Var2 = new s0(9223372036854775806L);
-            this.f52559a.put(i10, s0Var2);
+            this.f52607a.put(i10, s0Var2);
             return s0Var2;
         }
         return s0Var;
     }
 
     public void b() {
-        this.f52559a.clear();
+        this.f52607a.clear();
     }
 }

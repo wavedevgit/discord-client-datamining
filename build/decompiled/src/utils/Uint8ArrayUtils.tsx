@@ -3,7 +3,7 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var3 = function arg0, arg1() {
-        _fun15566: for (var _fun15566_ip = 0;;) switch (_fun15566_ip) {
+        _fun15571: for (var _fun15571_ip = 0;;) switch (_fun15571_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -11,8 +11,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 0;
                 var0 = var0 !== var1;
                 if (!var0) {
-                    _fun15566_ip = 71;
-                    continue _fun15566
+                    _fun15571_ip = 71;
+                    continue _fun15571
                 }
             case 20:
                 var1 = global;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.hasBit = var3;
     var3 = function arg0, arg1() {
-        _fun15567: for (var _fun15567_ip = 0;;) switch (_fun15567_ip) {
+        _fun15572: for (var _fun15572_ip = 0;;) switch (_fun15572_ip) {
             case 0:
                 var7 = arg0;
                 var4 = arg1;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.length;
                 var0 = var7;
                 if (!(var5 <= var2)) {
-                    _fun15567_ip = 93;
-                    continue _fun15567
+                    _fun15572_ip = 93;
+                    continue _fun15572
                 }
             case 44:
                 var6 = var3.Uint8Array;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.addBit = var3;
     var3 = function arg0, arg1() {
-        _fun15568: for (var _fun15568_ip = 0;;) switch (_fun15568_ip) {
+        _fun15573: for (var _fun15573_ip = 0;;) switch (_fun15573_ip) {
             case 0:
                 var0 = arg0;
                 var4 = arg1;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var1 = var2.bind(var1)(var0, var4);
                 if (!var1) {
-                    _fun15568_ip = 76;
-                    continue _fun15568
+                    _fun15573_ip = 76;
+                    continue _fun15573
                 }
             case 24:
                 var1 = global;
@@ -136,14 +136,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUint8Array = var3;
     var1 = function arg0() {
-        _fun15570: for (var _fun15570_ip = 0;;) switch (_fun15570_ip) {
+        _fun15575: for (var _fun15575_ip = 0;;) switch (_fun15575_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun15570_ip = 23;
-                    continue _fun15570
+                    _fun15575_ip = 23;
+                    continue _fun15575
                 }
             case 12:
                 var3 = 'object';
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var2;
             case 23:
                 if (!var0) {
-                    _fun15570_ip = 42;
-                    continue _fun15570
+                    _fun15575_ip = 42;
+                    continue _fun15575
                 }
             case 26:
                 var2 = var1.__tag__;

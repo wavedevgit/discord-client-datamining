@@ -5,16 +5,16 @@ import yi.c;
 final class i7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i7 f44338a = new i7();
+    static final i7 f44386a = new i7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44339b;
+    private static final yi.c f44387b;
 
     static {
         c.b a10 = yi.c.a("isFaceMeshEnabled");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44339b = a10.b(s1Var.b()).a();
+        f44387b = a10.b(s1Var.b()).a();
     }
 
     private i7() {

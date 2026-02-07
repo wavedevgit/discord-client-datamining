@@ -8,22 +8,22 @@ import java.net.UnknownHostException;
 public abstract class y {
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f39041b = 0;
+    private static int f39089b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f39042c = true;
+    private static boolean f39090c = true;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f39040a = new Object();
+    private static final Object f39088a = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static a f39043d = a.f39044a;
+    private static a f39091d = a.f39092a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f39044a = new C0537a();
+        public static final a f39092a = new C0537a();
 
         /* renamed from: ne.y$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -70,10 +70,10 @@ public abstract class y {
     }
 
     public static void b(String str, String str2) {
-        synchronized (f39040a) {
+        synchronized (f39088a) {
             try {
-                if (f39041b == 0) {
-                    f39043d.d(str, str2);
+                if (f39089b == 0) {
+                    f39091d.d(str, str2);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -82,10 +82,10 @@ public abstract class y {
     }
 
     public static void c(String str, String str2) {
-        synchronized (f39040a) {
+        synchronized (f39088a) {
             try {
-                if (f39041b <= 3) {
-                    f39043d.e(str, str2);
+                if (f39089b <= 3) {
+                    f39091d.e(str, str2);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -98,7 +98,7 @@ public abstract class y {
     }
 
     public static String e(Throwable th2) {
-        synchronized (f39040a) {
+        synchronized (f39088a) {
             try {
                 if (th2 == null) {
                     return null;
@@ -106,7 +106,7 @@ public abstract class y {
                 if (h(th2)) {
                     return "UnknownHostException (no network)";
                 }
-                if (!f39042c) {
+                if (!f39090c) {
                     return th2.getMessage();
                 }
                 return Log.getStackTraceString(th2).trim().replace("\t", "    ");
@@ -117,10 +117,10 @@ public abstract class y {
     }
 
     public static void f(String str, String str2) {
-        synchronized (f39040a) {
+        synchronized (f39088a) {
             try {
-                if (f39041b <= 1) {
-                    f39043d.i(str, str2);
+                if (f39089b <= 1) {
+                    f39091d.i(str, str2);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -143,10 +143,10 @@ public abstract class y {
     }
 
     public static void i(String str, String str2) {
-        synchronized (f39040a) {
+        synchronized (f39088a) {
             try {
-                if (f39041b <= 2) {
-                    f39043d.w(str, str2);
+                if (f39089b <= 2) {
+                    f39091d.w(str, str2);
                 }
             } catch (Throwable th2) {
                 throw th2;

@@ -99,13 +99,13 @@ public final class ThreadEmbed {
         compositeEncoder.z(serialDescriptor, 0, threadEmbed.title);
         compositeEncoder.z(serialDescriptor, 1, threadEmbed.messageCountLabel);
         if (compositeEncoder.A(serialDescriptor, 2) || threadEmbed.messagePreviewString != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, threadEmbed.messagePreviewString);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, threadEmbed.messagePreviewString);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || threadEmbed.archived != null) {
-            compositeEncoder.l(serialDescriptor, 3, h.f31005a, threadEmbed.archived);
+            compositeEncoder.l(serialDescriptor, 3, h.f31053a, threadEmbed.archived);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || threadEmbed.archivedIconUrl != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, threadEmbed.archivedIconUrl);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, threadEmbed.archivedIconUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || threadEmbed.referencedMessage != null) {
             compositeEncoder.l(serialDescriptor, 5, ThreadEmbedMessage$$serializer.INSTANCE, threadEmbed.referencedMessage);

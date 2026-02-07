@@ -7,26 +7,26 @@ import rs.l0;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f25532a;
+    private final MutableStateFlow f25580a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f25533b;
+    private final Flow f25581b;
 
     public i(Number number) {
         MutableStateFlow a10 = l0.a(number);
-        this.f25532a = a10;
-        this.f25533b = rs.g.m(a10, 1);
+        this.f25580a = a10;
+        this.f25581b = rs.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f25533b;
+        return this.f25581b;
     }
 
     public final Number b() {
-        return (Number) this.f25532a.getValue();
+        return (Number) this.f25580a.getValue();
     }
 
     public final void c(Number number) {
-        this.f25532a.setValue(number);
+        this.f25580a.setValue(number);
     }
 }

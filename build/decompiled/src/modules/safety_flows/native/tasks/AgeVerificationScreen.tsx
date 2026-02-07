@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var12;
         var1[1] = var0;
         var0 = function() { // Environment: var13
-            _fun118034: for (var _fun118034_ip = 0;;) switch (_fun118034_ip) {
+            _fun118524: for (var _fun118524_ip = 0;;) switch (_fun118524_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var0 = null;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var4 = undefined;
                     if (var2) {
-                        _fun118034_ip = 30;
-                        continue _fun118034
+                        _fun118524_ip = 30;
+                        continue _fun118524
                     }
                 case 20:
                     var2 = _closure2_slot2;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.AgeVerificationStatusUkAndAusOnly;
                     var2 = var2.UNVERIFIED;
                     if (!(var4 !== var2)) {
-                        _fun118034_ip = 116;
-                        continue _fun118034
+                        _fun118524_ip = 116;
+                        continue _fun118524
                     }
                 case 69:
                     var2 = _closure2_slot1;
@@ -321,4 +321,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 491, 15066, 566, 6460, 15061, 1645, 4556, 15070, 5970, 1234, 2116, 2372, 5940, 1684, 11459, 4558, 3943, 6465, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 660, 33, 1297, 671, 491, 15109, 566, 6503, 15104, 1647, 4555, 15113, 6013, 1234, 2118, 2374, 5983, 1686, 11505, 4557, 3942, 6508, 2]);

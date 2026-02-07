@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumFeaturesLogo.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61801: for (var _fun61801_ip = 0;;) switch (_fun61801_ip) {
+        _fun62252: for (var _fun62252_ip = 0;;) switch (_fun62252_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.premiumType;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.TIER_0;
                 if (!(var8 !== var0)) {
-                    _fun61801_ip = 55;
-                    continue _fun61801
+                    _fun62252_ip = 55;
+                    continue _fun62252
                 }
             case 31:
                 var2 = _closure1_slot1;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1[var0];
                 var0 = undefined;
                 var4 = var2.bind(var0)(var1);
-                _fun61801_ip = 77;
-                continue _fun61801;
+                _fun62252_ip = 77;
+                continue _fun62252;
             case 55:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -95,4 +95,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 33, 7710, 7085, 4705, 3111, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1623, 33, 7754, 7129, 4704, 3111, 2]);

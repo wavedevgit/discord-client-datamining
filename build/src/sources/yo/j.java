@@ -6,22 +6,22 @@ import com.withpersona.sdk2.inquiry.FallbackMode;
 public final class j implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f55530a;
+    private final br.h f55578a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f55531b;
+    private final br.h f55579b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.h f55532c;
+    private final br.h f55580c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final br.h f55533d;
+    private final br.h f55581d;
 
     public j(br.h hVar, br.h hVar2, br.h hVar3, br.h hVar4) {
-        this.f55530a = hVar;
-        this.f55531b = hVar2;
-        this.f55532c = hVar3;
-        this.f55533d = hVar4;
+        this.f55578a = hVar;
+        this.f55579b = hVar2;
+        this.f55580c = hVar3;
+        this.f55581d = hVar4;
     }
 
     public static j a(br.h hVar, br.h hVar2, br.h hVar3, br.h hVar4) {
@@ -35,6 +35,6 @@ public final class j implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public i get() {
-        return c((FallbackMode) this.f55530a.get(), (a) this.f55531b.get(), (uo.f) this.f55532c.get(), (w) this.f55533d.get());
+        return c((FallbackMode) this.f55578a.get(), (a) this.f55579b.get(), (uo.f) this.f55580c.get(), (w) this.f55581d.get());
     }
 }

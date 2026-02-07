@@ -39,8 +39,8 @@ public /* synthetic */ class AppManifestMetadata$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, gt.a.u(n2Var), n2Var, jt.h.f31005a};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, gt.a.u(n2Var), n2Var, jt.h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,7 +60,7 @@ public /* synthetic */ class AppManifestMetadata$$serializer implements h0 {
             str = m10;
             z10 = b10.C(serialDescriptor, 3);
             str3 = m11;
-            str2 = (String) b10.n(serialDescriptor, 1, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 1, n2.f31089a, null);
             i10 = 15;
         } else {
             boolean z11 = true;
@@ -77,7 +77,7 @@ public /* synthetic */ class AppManifestMetadata$$serializer implements h0 {
                     str4 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str5 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str5);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     str6 = b10.m(serialDescriptor, 2);

@@ -9,76 +9,76 @@ public class d extends hf.a {
     public static final Parcelable.Creator<d> CREATOR = new n();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52611d;
+    private final String f52659d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f52612e;
+    private final String f52660e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f52613i;
+    private final String f52661i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f52614o;
+    private final String f52662o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f52615p;
+    private final boolean f52663p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f52616q;
+    private final int f52664q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f52617a;
+        private String f52665a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f52618b;
+        private String f52666b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f52619c;
+        private String f52667c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f52620d;
+        private String f52668d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f52621e;
+        private boolean f52669e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f52622f;
+        private int f52670f;
 
         public d a() {
-            return new d(this.f52617a, this.f52618b, this.f52619c, this.f52620d, this.f52621e, this.f52622f);
+            return new d(this.f52665a, this.f52666b, this.f52667c, this.f52668d, this.f52669e, this.f52670f);
         }
 
         public a b(String str) {
-            this.f52618b = str;
+            this.f52666b = str;
             return this;
         }
 
         public a c(String str) {
-            this.f52620d = str;
+            this.f52668d = str;
             return this;
         }
 
         public a d(boolean z10) {
-            this.f52621e = z10;
+            this.f52669e = z10;
             return this;
         }
 
         public a e(String str) {
             gf.q.l(str);
-            this.f52617a = str;
+            this.f52665a = str;
             return this;
         }
 
         public final a f(String str) {
-            this.f52619c = str;
+            this.f52667c = str;
             return this;
         }
 
         public final a g(int i10) {
-            this.f52622f = i10;
+            this.f52670f = i10;
             return this;
         }
     }
@@ -86,12 +86,12 @@ public class d extends hf.a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(String str, String str2, String str3, String str4, boolean z10, int i10) {
         gf.q.l(str);
-        this.f52611d = str;
-        this.f52612e = str2;
-        this.f52613i = str3;
-        this.f52614o = str4;
-        this.f52615p = z10;
-        this.f52616q = i10;
+        this.f52659d = str;
+        this.f52660e = str2;
+        this.f52661i = str3;
+        this.f52662o = str4;
+        this.f52663p = z10;
+        this.f52664q = i10;
     }
 
     public static a b() {
@@ -104,9 +104,9 @@ public class d extends hf.a {
         b10.e(dVar.e());
         b10.c(dVar.d());
         b10.b(dVar.c());
-        b10.d(dVar.f52615p);
-        b10.g(dVar.f52616q);
-        String str = dVar.f52613i;
+        b10.d(dVar.f52663p);
+        b10.g(dVar.f52664q);
+        String str = dVar.f52661i;
         if (str != null) {
             b10.f(str);
         }
@@ -114,15 +114,15 @@ public class d extends hf.a {
     }
 
     public String c() {
-        return this.f52612e;
+        return this.f52660e;
     }
 
     public String d() {
-        return this.f52614o;
+        return this.f52662o;
     }
 
     public String e() {
-        return this.f52611d;
+        return this.f52659d;
     }
 
     public boolean equals(Object obj) {
@@ -130,18 +130,18 @@ public class d extends hf.a {
             return false;
         }
         d dVar = (d) obj;
-        if (!gf.o.a(this.f52611d, dVar.f52611d) || !gf.o.a(this.f52614o, dVar.f52614o) || !gf.o.a(this.f52612e, dVar.f52612e) || !gf.o.a(Boolean.valueOf(this.f52615p), Boolean.valueOf(dVar.f52615p)) || this.f52616q != dVar.f52616q) {
+        if (!gf.o.a(this.f52659d, dVar.f52659d) || !gf.o.a(this.f52662o, dVar.f52662o) || !gf.o.a(this.f52660e, dVar.f52660e) || !gf.o.a(Boolean.valueOf(this.f52663p), Boolean.valueOf(dVar.f52663p)) || this.f52664q != dVar.f52664q) {
             return false;
         }
         return true;
     }
 
     public boolean f() {
-        return this.f52615p;
+        return this.f52663p;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f52611d, this.f52612e, this.f52614o, Boolean.valueOf(this.f52615p), Integer.valueOf(this.f52616q));
+        return gf.o.b(this.f52659d, this.f52660e, this.f52662o, Boolean.valueOf(this.f52663p), Integer.valueOf(this.f52664q));
     }
 
     @Override // android.os.Parcelable
@@ -149,10 +149,10 @@ public class d extends hf.a {
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 1, e(), false);
         hf.c.s(parcel, 2, c(), false);
-        hf.c.s(parcel, 3, this.f52613i, false);
+        hf.c.s(parcel, 3, this.f52661i, false);
         hf.c.s(parcel, 4, d(), false);
         hf.c.c(parcel, 5, f());
-        hf.c.l(parcel, 6, this.f52616q);
+        hf.c.l(parcel, 6, this.f52664q);
         hf.c.b(parcel, a10);
     }
 }

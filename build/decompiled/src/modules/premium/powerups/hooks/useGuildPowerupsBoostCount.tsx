@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun55842: for (var _fun55842_ip = 0;;) switch (_fun55842_ip) {
+        _fun56287: for (var _fun56287_ip = 0;;) switch (_fun56287_ip) {
             case 0:
                 var10 = arg0;
                 var _closure2_slot0 = var10;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var2;
                 var2 = function() { // Environment: var0
-                    _fun55843: for (var _fun55843_ip = 0;;) switch (_fun55843_ip) {
+                    _fun56288: for (var _fun56288_ip = 0;;) switch (_fun56288_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getGuild;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun55843_ip = 41;
-                                continue _fun55843
+                                _fun56288_ip = 41;
+                                continue _fun56288
                             }
                         case 35:
                             var0 = var1.premiumSubscriberCount;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 != var2;
                 var7 = 0;
                 if (!var3) {
-                    _fun55842_ip = 76;
-                    continue _fun55842
+                    _fun56287_ip = 76;
+                    continue _fun56287
                 }
             case 73:
                 var7 = var2;
@@ -102,7 +102,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = new Array(1);
                 var9[0] = var6;
                 var6 = function() { // Environment: var0
-                    _fun55844: for (var _fun55844_ip = 0;;) switch (_fun55844_ip) {
+                    _fun56289: for (var _fun56289_ip = 0;;) switch (_fun56289_ip) {
                         case 0:
                             var2 = _closure1_slot5;
                             var1 = var2.getStateForGuild;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun55844_ip = 42;
-                                continue _fun55844
+                                _fun56289_ip = 42;
+                                continue _fun56289
                             }
                         case 36:
                             var0 = var1.appliedBoosts;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var2;
                 var2 = function() { // Environment: var0
-                    _fun55845: for (var _fun55845_ip = 0;;) switch (_fun55845_ip) {
+                    _fun56290: for (var _fun56290_ip = 0;;) switch (_fun56290_ip) {
                         case 0:
                             var2 = _closure1_slot4;
                             var1 = var2.getStateForGuild;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun55845_ip = 42;
-                                continue _fun55845
+                                _fun56290_ip = 42;
+                                continue _fun56290
                             }
                         case 36:
                             var0 = var1.appliedBoosts;
@@ -159,25 +159,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var5;
                 var1[3] = var4;
                 var0 = function() { // Environment: var0
-                    _fun55846: for (var _fun55846_ip = 0;;) switch (_fun55846_ip) {
+                    _fun56291: for (var _fun56291_ip = 0;;) switch (_fun56291_ip) {
                         case 0:
                             var0 = _closure2_slot3;
                             var3 = null;
                             if (!(var3 != var0)) {
-                                _fun55846_ip = 105;
-                                continue _fun55846
+                                _fun56291_ip = 105;
+                                continue _fun56291
                             }
                         case 13:
                             var0 = _closure2_slot2;
                             if (!var0) {
-                                _fun55846_ip = 28;
-                                continue _fun55846
+                                _fun56291_ip = 28;
+                                continue _fun56291
                             }
                         case 20:
                             var0 = _closure2_slot4;
                             if (!(var3 != var0)) {
-                                _fun55846_ip = 105;
-                                continue _fun55846
+                                _fun56291_ip = 105;
+                                continue _fun56291
                             }
                         case 28:
                             var2 = _closure2_slot3;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = 0;
                             var0 = 0;
                             if (!var3) {
-                                _fun55846_ip = 51;
-                                continue _fun55846
+                                _fun56291_ip = 51;
+                                continue _fun56291
                             }
                         case 47:
                             var0 = _closure2_slot4;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun55847: for (var _fun55847_ip = 0;;) switch (_fun55847_ip) {
+        _fun56292: for (var _fun56292_ip = 0;;) switch (_fun56292_ip) {
             case 0:
                 var8 = arg0;
                 var1 = _closure1_slot3;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var2 = undefined;
                 if (var4) {
-                    _fun55847_ip = 39;
-                    continue _fun55847
+                    _fun56292_ip = 39;
+                    continue _fun56292
                 }
             case 33:
                 var2 = var1.premiumSubscriberCount;
@@ -242,8 +242,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 0;
                 var1 = 0;
                 if (!var4) {
-                    _fun55847_ip = 53;
-                    continue _fun55847
+                    _fun56292_ip = 53;
+                    continue _fun56292
                 }
             case 50:
                 var1 = var2;
@@ -262,8 +262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0 == var7;
                 var2 = undefined;
                 if (var9) {
-                    _fun55847_ip = 121;
-                    continue _fun55847
+                    _fun56292_ip = 121;
+                    continue _fun56292
                 }
             case 115:
                 var2 = var7.appliedBoosts;
@@ -274,32 +274,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 == var5;
                 var3 = undefined;
                 if (var7) {
-                    _fun55847_ip = 151;
-                    continue _fun55847
+                    _fun56292_ip = 151;
+                    continue _fun56292
                 }
             case 145:
                 var3 = var5.appliedBoosts;
             case 151:
                 if (!(var0 != var2)) {
-                    _fun55847_ip = 220;
-                    continue _fun55847
+                    _fun56292_ip = 220;
+                    continue _fun56292
                 }
             case 155:
                 if (!var4) {
-                    _fun55847_ip = 162;
-                    continue _fun55847
+                    _fun56292_ip = 162;
+                    continue _fun56292
                 }
             case 158:
                 if (!(var0 != var3)) {
-                    _fun55847_ip = 220;
-                    continue _fun55847
+                    _fun56292_ip = 220;
+                    continue _fun56292
                 }
             case 162:
                 var4 = var0 != var3;
                 var0 = 0;
                 if (!var4) {
-                    _fun55847_ip = 174;
-                    continue _fun55847
+                    _fun56292_ip = 174;
+                    continue _fun56292
                 }
             case 171:
                 var0 = var3;
@@ -326,4 +326,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildPowerupsBoostCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 6738, 6740, 5646, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 6781, 6783, 5693, 566, 2]);

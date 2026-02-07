@@ -5,16 +5,16 @@ import w5.c;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52178a = c.a.a("a");
+    private static final c.a f52226a = c.a.a("a");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52179b = c.a.a("fc", "sc", "sw", "t");
+    private static final c.a f52227b = c.a.a("fc", "sc", "sw", "t");
 
     public static r5.k a(w5.c cVar, l5.i iVar) {
         cVar.u();
         r5.k kVar = null;
         while (cVar.hasNext()) {
-            if (cVar.p(f52178a) != 0) {
+            if (cVar.p(f52226a) != 0) {
                 cVar.s();
                 cVar.S();
             } else {
@@ -35,7 +35,7 @@ public abstract class b {
         r5.b bVar = null;
         r5.b bVar2 = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52179b);
+            int p10 = cVar.p(f52227b);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

@@ -1,233 +1,338 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportDefault;
-    var2 = exports;
-    var5 = dependencyMap;
+    var1 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot2 = var0;
+    var0 = function arg0, arg1, arg2() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot2;
+        var0 = 9;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.objectAssign;
+        var2 = {};
+        var0 = {};
+        var1 = arg1;
+        var0.value = var1;
+        var1 = arg2;
+        var0.description = var1;
+        var2.fileType = var0;
+        var1 = {};
+        var0 = arg0;
+        var0 = var3.bind(var4)(var1, var0, var2);
+        return var0;
+    };
+    var _closure1_slot3 = var0;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot1;
-        var2 = function arg0() {
-            _fun38048: for (var _fun38048_ip = 0;;) switch (_fun38048_ip) {
-                case 0:
-                    var1 = arg0;
-                    var2 = this;
-                    var4 = _closure1_slot0;
-                    var3 = _closure2_slot0;
-                    var0 = undefined;
-                    var3 = var4.bind(var0)(var2, var3);
-                    var4 = 'object';
-                    var3 = typeof var1;
-                    var3 = var4 !== var3;
-                    if (var3) {
-                        _fun38048_ip = 51;
-                        continue _fun38048
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = {};
+    var2 = function arg0, arg1() {
+        _fun38062: for (var _fun38062_ip = 0;;) switch (_fun38062_ip) {
+            case 0:
+                var5 = arg0;
+                var2 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var12 = 0;
+                var1 = var1[var12];
+                var4 = undefined;
+                var1 = var2.bind(var4)(var1);
+                var1 = var1.USE_TIFF;
+                if (!var1) {
+                    _fun38062_ip = 73;
+                    continue _fun38062
+                }
+            case 36:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var2 = 1;
+                var1 = var1[var2];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isTiffFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 906;
+                    continue _fun38062
+                }
+            case 73:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_JPEG;
+                if (!var1) {
+                    _fun38062_ip = 136;
+                    continue _fun38062
+                }
+            case 99:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var7 = 2;
+                var1 = var1[var7];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isJpegFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 855;
+                    continue _fun38062
+                }
+            case 136:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_PNG;
+                if (!var1) {
+                    _fun38062_ip = 199;
+                    continue _fun38062
+                }
+            case 162:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var6 = 3;
+                var1 = var1[var6];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isPngFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 802;
+                    continue _fun38062
+                }
+            case 199:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_HEIC;
+                if (!var1) {
+                    _fun38062_ip = 262;
+                    continue _fun38062
+                }
+            case 225:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var8 = 4;
+                var1 = var1[var8];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isHeicFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 751;
+                    continue _fun38062
+                }
+            case 262:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_AVIF;
+                if (!var1) {
+                    _fun38062_ip = 325;
+                    continue _fun38062
+                }
+            case 288:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var9 = 5;
+                var1 = var1[var9];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isAvifFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 700;
+                    continue _fun38062
+                }
+            case 325:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_WEBP;
+                if (!var1) {
+                    _fun38062_ip = 388;
+                    continue _fun38062
+                }
+            case 351:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var10 = 6;
+                var1 = var1[var10];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isWebpFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 647;
+                    continue _fun38062
+                }
+            case 388:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_GIF;
+                if (!var1) {
+                    _fun38062_ip = 451;
+                    continue _fun38062
+                }
+            case 414:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var11 = 7;
+                var1 = var1[var11];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isGifFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 598;
+                    continue _fun38062
+                }
+            case 451:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.USE_XMP;
+                if (!var1) {
+                    _fun38062_ip = 511;
+                    continue _fun38062
+                }
+            case 477:
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var12 = 8;
+                var1 = var1[var12];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isXMLFile;
+                var1 = var1.bind(var3)(var5);
+                if (var1) {
+                    _fun38062_ip = 547;
+                    continue _fun38062
+                }
+            case 511:
+                var1 = global;
+                var13 = var1.Error;
+                var1 = var13.prototype;
+                var3 = Object.create(var1, {
+                    constructor: {
+                        value: var13
                     }
-                case 42:
-                    var4 = var1.length;
-                    var3 = var0 === var4;
-                case 51:
-                    if (var3) {
-                        _fun38048_ip = 64;
-                        continue _fun38048
-                    }
-                case 54:
-                    var4 = var1.readUInt8;
-                    var3 = var0 === var4;
-                case 64:
-                    if (var3) {
-                        _fun38048_ip = 77;
-                        continue _fun38048
-                    }
-                case 67:
-                    var4 = var1.readUInt16LE;
-                    var3 = var0 === var4;
-                case 77:
-                    if (var3) {
-                        _fun38048_ip = 90;
-                        continue _fun38048
-                    }
-                case 80:
-                    var4 = var1.readUInt16BE;
-                    var3 = var0 === var4;
-                case 90:
-                    if (var3) {
-                        _fun38048_ip = 103;
-                        continue _fun38048
-                    }
-                case 93:
-                    var4 = var1.readUInt32LE;
-                    var3 = var0 === var4;
-                case 103:
-                    if (var3) {
-                        _fun38048_ip = 116;
-                        continue _fun38048
-                    }
-                case 106:
-                    var4 = var1.readUInt32BE;
-                    var3 = var0 === var4;
-                case 116:
-                    if (var3) {
-                        _fun38048_ip = 129;
-                        continue _fun38048
-                    }
-                case 119:
-                    var4 = var1.readInt32LE;
-                    var3 = var0 === var4;
-                case 129:
-                    if (var3) {
-                        _fun38048_ip = 142;
-                        continue _fun38048
-                    }
-                case 132:
-                    var4 = var1.readInt32BE;
-                    var3 = var0 === var4;
-                case 142:
-                    if (var3) {
-                        _fun38048_ip = 170;
-                        continue _fun38048
-                    }
-                case 145:
-                    var2.buffer = var1;
-                    var1 = var2.buffer;
-                    var1 = var1.length;
-                    var2.byteLength = var1;
-                    return var0;
-                case 170:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var6 = 'DataView: Passed buffer type is unsupported.';
-                    var7 = var1;
-                    var0 = new var7[var2](var6, var5);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-            }
-        };
-        var _closure2_slot0 = var2;
-        var0 = {};
-        var1 = 'getUint8';
-        var0.key = var1;
-        var1 = function arg0() {
-            var0 = this;
-            var2 = var0.buffer;
-            var1 = var2.readUInt8;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            return var0;
-        };
-        var0.value = var1;
-        var1 = new Array(4);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'getUint16';
-        var0.key = var5;
-        var5 = function arg0, arg1() {
-            _fun38050: for (var _fun38050_ip = 0;;) switch (_fun38050_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var2 = var0.buffer;
-                    var0 = arg1;
-                    if (var0) {
-                        _fun38050_ip = 31;
-                        continue _fun38050
-                    }
-                case 18:
-                    var0 = var2.readUInt16BE;
-                    var0 = var0.bind(var2)(var3);
-                    _fun38050_ip = 42;
-                    continue _fun38050;
-                case 31:
-                    var1 = var2.readUInt16LE;
-                    var0 = var1.bind(var2)(var3);
-                case 42:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'getUint32';
-        var0.key = var5;
-        var5 = function arg0, arg1() {
-            _fun38051: for (var _fun38051_ip = 0;;) switch (_fun38051_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var2 = var0.buffer;
-                    var0 = arg1;
-                    if (var0) {
-                        _fun38051_ip = 31;
-                        continue _fun38051
-                    }
-                case 18:
-                    var0 = var2.readUInt32BE;
-                    var0 = var0.bind(var2)(var3);
-                    _fun38051_ip = 42;
-                    continue _fun38051;
-                case 31:
-                    var1 = var2.readUInt32LE;
-                    var0 = var1.bind(var2)(var3);
-                case 42:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[2] = var0;
-        var0 = {};
-        var5 = 'getInt32';
-        var0.key = var5;
-        var4 = function arg0, arg1() {
-            _fun38052: for (var _fun38052_ip = 0;;) switch (_fun38052_ip) {
-                case 0:
-                    var3 = arg0;
-                    var0 = this;
-                    var2 = var0.buffer;
-                    var0 = arg1;
-                    if (var0) {
-                        _fun38052_ip = 31;
-                        continue _fun38052
-                    }
-                case 18:
-                    var0 = var2.readInt32BE;
-                    var0 = var0.bind(var2)(var3);
-                    _fun38052_ip = 42;
-                    continue _fun38052;
-                case 31:
-                    var1 = var2.readInt32LE;
-                    var0 = var1.bind(var2)(var3);
-                case 42:
-                    return var0;
-            }
-        };
-        var0.value = var4;
-        var1[3] = var0;
-        var0 = undefined;
-        var0 = var3.bind(var0)(var2, var1);
-        return var0;
+                });
+                var16 = 'Invalid image format';
+                var17 = var3;
+                var1 = new var17[var13](var16, var15);
+                var1 = var1 instanceof Object ? var1 : var3;
+                throw var1;
+            case 547:
+                var13 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var12];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findOffsets;
+                var12 = var1.bind(var3)(var5);
+                var3 = 'xml';
+                var1 = 'XML';
+                var1 = var13.bind(var4)(var12, var3, var1);
+                return var1;
+            case 598:
+                var12 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var11];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findOffsets;
+                var11 = var1.bind(var3)(var5);
+                var3 = 'gif';
+                var1 = 'GIF';
+                var1 = var12.bind(var4)(var11, var3, var1);
+                return var1;
+            case 647:
+                var11 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var10];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findOffsets;
+                var10 = var1.bind(var3)(var5);
+                var3 = 'webp';
+                var1 = 'WebP';
+                var1 = var11.bind(var4)(var10, var3, var1);
+                return var1;
+            case 700:
+                var10 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var9];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findAvifOffsets;
+                var9 = var1.bind(var3)(var5);
+                var3 = 'avif';
+                var1 = 'AVIF';
+                var1 = var10.bind(var4)(var9, var3, var1);
+                return var1;
+            case 751:
+                var9 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var8];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findHeicOffsets;
+                var8 = var1.bind(var3)(var5);
+                var3 = 'heic';
+                var1 = 'HEIC';
+                var1 = var9.bind(var4)(var8, var3, var1);
+                return var1;
+            case 802:
+                var8 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var6];
+                var6 = var3.bind(var4)(var1);
+                var3 = var6.findPngOffsets;
+                var1 = arg1;
+                var6 = var3.bind(var6)(var5, var1);
+                var3 = 'png';
+                var1 = 'PNG';
+                var1 = var8.bind(var4)(var6, var3, var1);
+                return var1;
+            case 855:
+                var6 = _closure1_slot3;
+                var3 = _closure1_slot1;
+                var1 = _closure1_slot2;
+                var1 = var1[var7];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.findJpegOffsets;
+                var5 = var1.bind(var3)(var5);
+                var3 = 'jpeg';
+                var1 = 'JPEG';
+                var1 = var6.bind(var4)(var5, var3, var1);
+                return var1;
+            case 906:
+                var3 = _closure1_slot3;
+                var1 = _closure1_slot1;
+                var0 = _closure1_slot2;
+                var0 = var0[var2];
+                var1 = var1.bind(var4)(var0);
+                var0 = var1.findTiffOffsets;
+                var2 = var0.bind(var1)();
+                var1 = 'tiff';
+                var0 = 'TIFF';
+                var0 = var3.bind(var4)(var2, var1, var0);
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)();
-    var2.default = var1;
+    var0.parseAppMarkers = var2;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4168, 4169, 4171, 4172, 4173, 4177, 4178, 4179, 4180, 4165]);

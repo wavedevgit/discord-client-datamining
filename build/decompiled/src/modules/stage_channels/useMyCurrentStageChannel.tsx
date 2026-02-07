@@ -44,30 +44,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot2;
         var1[1] = var0;
         var0 = function() { // Environment: var0
-            _fun68936: for (var _fun68936_ip = 0;;) switch (_fun68936_ip) {
+            _fun69386: for (var _fun69386_ip = 0;;) switch (_fun69386_ip) {
                 case 0:
                     var2 = _closure1_slot3;
                     var1 = var2.getVoiceChannelId;
                     var3 = var1.bind(var2)();
                     var1 = null;
                     if (!(var1 != var3)) {
-                        _fun68936_ip = 54;
-                        continue _fun68936
+                        _fun69386_ip = 54;
+                        continue _fun69386
                     }
                 case 23:
                     var2 = _closure1_slot2;
                     var0 = var2.getChannel;
                     var0 = var0.bind(var2)(var3);
                     if (!(var1 != var0)) {
-                        _fun68936_ip = 54;
-                        continue _fun68936
+                        _fun69386_ip = 54;
+                        continue _fun69386
                     }
                 case 41:
                     var2 = var0.isGuildStageVoice;
                     var2 = var2.bind(var0)();
                     if (var2) {
-                        _fun68936_ip = 56;
-                        continue _fun68936
+                        _fun69386_ip = 56;
+                        continue _fun69386
                     }
                 case 54:
                     return var1;
@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1670, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1672, 566, 2]);

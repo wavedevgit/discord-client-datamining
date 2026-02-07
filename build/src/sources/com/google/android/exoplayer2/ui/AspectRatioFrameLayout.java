@@ -62,9 +62,9 @@ public final class AspectRatioFrameLayout extends FrameLayout {
         super(context, attributeSet);
         this.f13114i = 0;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.f31620a, 0, 0);
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.f31668a, 0, 0);
             try {
-                this.f13114i = obtainStyledAttributes.getInt(n.f31621b, 0);
+                this.f13114i = obtainStyledAttributes.getInt(n.f31669b, 0);
             } finally {
                 obtainStyledAttributes.recycle();
             }

@@ -38,7 +38,7 @@ public /* synthetic */ class ContentScanMetadata$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a, z0.f31115a};
+        return new KSerializer[]{p0.f31105a, z0.f31163a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

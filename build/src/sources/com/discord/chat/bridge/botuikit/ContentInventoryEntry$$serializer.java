@@ -58,7 +58,7 @@ public /* synthetic */ class ContentInventoryEntry$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ContentInventoryEntry.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         ContentInventoryEntryClickable$$serializer contentInventoryEntryClickable$$serializer = ContentInventoryEntryClickable$$serializer.INSTANCE;
         return new KSerializer[]{UserId$$serializer.INSTANCE, n2Var, n2Var, gt.a.u(contentInventoryEntryClickable$$serializer), n2Var, gt.a.u(n2Var), gt.a.u(contentInventoryEntryClickable$$serializer), n2Var, gt.a.u(contentInventoryEntryClickable$$serializer), n2Var, gt.a.u(contentInventoryEntryClickable$$serializer), lazyArr[11].getValue(), lazyArr[12].getValue(), gt.a.u(contentInventoryEntryClickable$$serializer)};
     }
@@ -100,7 +100,7 @@ public /* synthetic */ class ContentInventoryEntry$$serializer implements h0 {
             list = (List) b10.y(serialDescriptor, 12, (DeserializationStrategy) lazyArr[12].getValue(), null);
             contentInventoryEntryClickable = (ContentInventoryEntryClickable) b10.n(serialDescriptor, 13, contentInventoryEntryClickable$$serializer, null);
             str = m10;
-            str2 = (String) b10.n(serialDescriptor, 5, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 5, n2.f31089a, null);
             str6 = m14;
             str5 = m13;
             contentInventoryEntryClickable4 = (ContentInventoryEntryClickable) b10.n(serialDescriptor, 6, contentInventoryEntryClickable$$serializer, null);
@@ -154,7 +154,7 @@ public /* synthetic */ class ContentInventoryEntry$$serializer implements h0 {
                         i12 |= 16;
                         i11 = 9;
                     case 5:
-                        str8 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str8);
                         i12 |= 32;
                         i11 = 9;
                     case 6:

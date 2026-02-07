@@ -18,26 +18,26 @@ import ts.c0;
 public class i {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f54772c = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "head$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f54820c = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "head$volatile");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f54773d = AtomicLongFieldUpdater.newUpdater(i.class, "deqIdx$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f54821d = AtomicLongFieldUpdater.newUpdater(i.class, "deqIdx$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f54774e = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "tail$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f54822e = AtomicReferenceFieldUpdater.newUpdater(i.class, Object.class, "tail$volatile");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f54775f = AtomicLongFieldUpdater.newUpdater(i.class, "enqIdx$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f54823f = AtomicLongFieldUpdater.newUpdater(i.class, "enqIdx$volatile");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f54776g = AtomicIntegerFieldUpdater.newUpdater(i.class, "_availablePermits$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f54824g = AtomicIntegerFieldUpdater.newUpdater(i.class, "_availablePermits$volatile");
     private volatile /* synthetic */ int _availablePermits$volatile;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f54777a;
+    private final int f54825a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function3 f54778b;
+    private final Function3 f54826b;
     private volatile /* synthetic */ long deqIdx$volatile;
     private volatile /* synthetic */ long enqIdx$volatile;
     private volatile /* synthetic */ Object head$volatile;
@@ -48,7 +48,7 @@ public class i {
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f54779d = new a();
+        public static final a f54827d = new a();
 
         a() {
             super(2, k.class, "createSegment", "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;", 1);
@@ -69,7 +69,7 @@ public class i {
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f54780d = new b();
+        public static final b f54828d = new b();
 
         b() {
             super(2, k.class, "createSegment", "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;", 1);
@@ -86,14 +86,14 @@ public class i {
     }
 
     public i(int i10, int i11) {
-        this.f54777a = i10;
+        this.f54825a = i10;
         if (i10 > 0) {
             if (i11 >= 0 && i11 <= i10) {
                 l lVar = new l(0L, null, 2);
                 this.head$volatile = lVar;
                 this.tail$volatile = lVar;
                 this._availablePermits$volatile = i10 - i11;
-                this.f54778b = new Function3() { // from class: xs.h
+                this.f54826b = new Function3() { // from class: xs.h
                     @Override // kotlin.jvm.functions.Function3
                     public final Object invoke(Object obj, Object obj2, Object obj3) {
                         Unit q10;
@@ -121,7 +121,7 @@ public class i {
             if (B == wr.b.f()) {
                 return B;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         } catch (Throwable th2) {
             b10.P();
             throw th2;
@@ -131,10 +131,10 @@ public class i {
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean h(w1 w1Var) {
         Object c10;
-        l lVar = (l) f54774e.get(this);
-        long andIncrement = f54775f.getAndIncrement(this);
-        a aVar = a.f54779d;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54774e;
+        l lVar = (l) f54822e.get(this);
+        long andIncrement = f54823f.getAndIncrement(this);
+        a aVar = a.f54827d;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54822e;
         long h10 = andIncrement / k.h();
         loop0: while (true) {
             c10 = ts.b.c(lVar, h10, aVar);
@@ -142,7 +142,7 @@ public class i {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f50815i >= b10.f50815i) {
+                    if (b0Var.f50863i >= b10.f50863i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -167,9 +167,9 @@ public class i {
         if (qs.l.a(lVar2.v(), h11, k.g(), k.i())) {
             if (w1Var instanceof CancellableContinuation) {
                 Intrinsics.checkNotNull(w1Var, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
-                ((CancellableContinuation) w1Var).r(Unit.f32008a, this.f54778b);
+                ((CancellableContinuation) w1Var).r(Unit.f32056a, this.f54826b);
             } else if (w1Var instanceof ws.l) {
-                ((ws.l) w1Var).c(Unit.f32008a);
+                ((ws.l) w1Var).c(Unit.f32056a);
             } else {
                 throw new IllegalStateException(("unexpected: " + w1Var).toString());
             }
@@ -181,39 +181,39 @@ public class i {
     private final void i() {
         int i10;
         do {
-            i10 = f54776g.get(this);
-            if (i10 <= this.f54777a) {
+            i10 = f54824g.get(this);
+            if (i10 <= this.f54825a) {
                 return;
             }
-        } while (!f54776g.compareAndSet(this, i10, this.f54777a));
+        } while (!f54824g.compareAndSet(this, i10, this.f54825a));
     }
 
     private final int j() {
         int andDecrement;
         do {
-            andDecrement = f54776g.getAndDecrement(this);
-        } while (andDecrement > this.f54777a);
+            andDecrement = f54824g.getAndDecrement(this);
+        } while (andDecrement > this.f54825a);
         return andDecrement;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(i iVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
         iVar.release();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final boolean s(Object obj) {
         if (obj instanceof CancellableContinuation) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
             CancellableContinuation cancellableContinuation = (CancellableContinuation) obj;
-            Object w10 = cancellableContinuation.w(Unit.f32008a, null, this.f54778b);
+            Object w10 = cancellableContinuation.w(Unit.f32056a, null, this.f54826b);
             if (w10 != null) {
                 cancellableContinuation.A(w10);
                 return true;
             }
             return false;
         } else if (obj instanceof ws.l) {
-            return ((ws.l) obj).e(this, Unit.f32008a);
+            return ((ws.l) obj).e(this, Unit.f32056a);
         } else {
             throw new IllegalStateException(("unexpected: " + obj).toString());
         }
@@ -221,11 +221,11 @@ public class i {
 
     private final boolean t() {
         Object c10;
-        l lVar = (l) f54772c.get(this);
-        long andIncrement = f54773d.getAndIncrement(this);
+        l lVar = (l) f54820c.get(this);
+        long andIncrement = f54821d.getAndIncrement(this);
         long h10 = andIncrement / k.h();
-        b bVar = b.f54780d;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54772c;
+        b bVar = b.f54828d;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f54820c;
         loop0: while (true) {
             c10 = ts.b.c(lVar, h10, bVar);
             if (c0.c(c10)) {
@@ -234,7 +234,7 @@ public class i {
             b0 b10 = c0.b(c10);
             while (true) {
                 b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                if (b0Var.f50815i >= b10.f50815i) {
+                if (b0Var.f50863i >= b10.f50863i) {
                     break loop0;
                 } else if (!b10.u()) {
                     break;
@@ -249,7 +249,7 @@ public class i {
         }
         l lVar2 = (l) c0.b(c10);
         lVar2.c();
-        if (lVar2.f50815i > h10) {
+        if (lVar2.f50863i > h10) {
             return false;
         }
         int h11 = (int) (andIncrement % k.h());
@@ -271,13 +271,13 @@ public class i {
 
     public final Object a(Continuation continuation) {
         if (j() > 0) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         Object g10 = g(continuation);
         if (g10 == wr.b.f()) {
             return g10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -288,22 +288,22 @@ public class i {
                 return;
             }
         }
-        cancellableContinuation.r(Unit.f32008a, this.f54778b);
+        cancellableContinuation.r(Unit.f32056a, this.f54826b);
     }
 
     public final int k() {
-        return Math.max(f54776g.get(this), 0);
+        return Math.max(f54824g.get(this), 0);
     }
 
     public final boolean r() {
         while (true) {
-            int i10 = f54776g.get(this);
-            if (i10 > this.f54777a) {
+            int i10 = f54824g.get(this);
+            if (i10 > this.f54825a) {
                 i();
             } else if (i10 <= 0) {
                 return false;
             } else {
-                if (f54776g.compareAndSet(this, i10, i10 - 1)) {
+                if (f54824g.compareAndSet(this, i10, i10 - 1)) {
                     return true;
                 }
             }
@@ -312,14 +312,14 @@ public class i {
 
     public final void release() {
         do {
-            int andIncrement = f54776g.getAndIncrement(this);
-            if (andIncrement < this.f54777a) {
+            int andIncrement = f54824g.getAndIncrement(this);
+            if (andIncrement < this.f54825a) {
                 if (andIncrement >= 0) {
                     return;
                 }
             } else {
                 i();
-                throw new IllegalStateException(("The number of released permits cannot be greater than " + this.f54777a).toString());
+                throw new IllegalStateException(("The number of released permits cannot be greater than " + this.f54825a).toString());
             }
         } while (!t());
     }

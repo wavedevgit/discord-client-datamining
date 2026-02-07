@@ -104,15 +104,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.returnParticipant = var6;
     var6 = function arg0, arg1() {
-        _fun62822: for (var _fun62822_ip = 0;;) switch (_fun62822_ip) {
+        _fun63273: for (var _fun63273_ip = 0;;) switch (_fun63273_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
                 var4 = arguments[2];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun62822_ip = 28;
-                    continue _fun62822
+                    _fun63273_ip = 28;
+                    continue _fun63273
                 }
             case 15:
                 var1 = _closure1_slot4;
@@ -180,25 +180,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var0)(var1);
         var2 = var3.dispatch;
         var1 = {};
-        var4 = 'CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN';
-        var1.type = var4;
-        var4 = arg0;
-        var1.channelId = var4;
-        var4 = arg1;
-        var1.participantsListOpen = var4;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var1.toggleParticipantsList = var6;
-    var6 = function arg0, arg1() {
-        var2 = _closure1_slot1;
-        var1 = _closure1_slot2;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.dispatch;
-        var1 = {};
         var4 = 'CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN';
         var1.type = var4;
         var4 = arg0;
@@ -248,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.updateStageVideoLimitBoostUpsellDismissed = var6;
     var6 = function arg0, arg1, arg2() {
-        _fun62828: for (var _fun62828_ip = 0;;) switch (_fun62828_ip) {
+        _fun63278: for (var _fun63278_ip = 0;;) switch (_fun63278_ip) {
             case 0:
                 var8 = arg0;
                 var2 = arg1;
@@ -267,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.chatOpen = var2;
                 var3 = var4.bind(var5)(var3);
                 if (var2) {
-                    _fun62828_ip = 264;
-                    continue _fun62828
+                    _fun63278_ip = 264;
+                    continue _fun63278
                 }
             case 72:
                 var3 = _closure1_slot0;
@@ -292,8 +273,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.collectAnalytics;
                 if (!var2) {
-                    _fun62828_ip = 285;
-                    continue _fun62828
+                    _fun63278_ip = 285;
+                    continue _fun63278
                 }
             case 168:
                 var3 = _closure1_slot1;
@@ -315,8 +296,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var8;
                 var6 = undefined;
                 if (var7) {
-                    _fun62828_ip = 252;
-                    continue _fun62828
+                    _fun63278_ip = 252;
+                    continue _fun63278
                 }
             case 242:
                 var7 = var8.getGuildId;
@@ -324,8 +305,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 252:
                 var2.guild_id = var6;
                 var2 = var4.bind(var5)(var3, var2);
-                _fun62828_ip = 285;
-                continue _fun62828;
+                _fun63278_ip = 285;
+                continue _fun63278;
             case 264:
                 var2 = global;
                 var3 = var2.setTimeout;
@@ -384,4 +365,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 806, 795, 4303, 1229, 7906, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 806, 795, 4302, 1229, 7950, 2]);

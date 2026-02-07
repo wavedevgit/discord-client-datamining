@@ -6,26 +6,26 @@ import android.content.Intent;
 final class c0 extends e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Intent f25024d;
+    final /* synthetic */ Intent f25072d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Activity f25025e;
+    final /* synthetic */ Activity f25073e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ int f25026i;
+    final /* synthetic */ int f25074i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0(Intent intent, Activity activity, int i10) {
-        this.f25024d = intent;
-        this.f25025e = activity;
-        this.f25026i = i10;
+        this.f25072d = intent;
+        this.f25073e = activity;
+        this.f25074i = i10;
     }
 
     @Override // gf.e0
     public final void a() {
-        Intent intent = this.f25024d;
+        Intent intent = this.f25072d;
         if (intent != null) {
-            this.f25025e.startActivityForResult(intent, this.f25026i);
+            this.f25073e.startActivityForResult(intent, this.f25074i);
         }
     }
 }

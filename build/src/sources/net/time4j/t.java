@@ -7,33 +7,33 @@ public final class t extends b implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f39533o;
+    private final transient int f39581o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f39534p;
+    private final transient Integer f39582p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f39535q;
+    private final transient Integer f39583q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f39536r;
+    private final transient char f39584r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient rt.t f39537s;
+    private final transient rt.t f39585s;
 
     private t(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
         boolean z10;
-        this.f39533o = i10;
-        this.f39534p = num;
-        this.f39535q = num2;
-        this.f39536r = c10;
+        this.f39581o = i10;
+        this.f39582p = num;
+        this.f39583q = num2;
+        this.f39584r = c10;
         if (i10 != 5 && i10 != 7 && i10 != 9 && i10 != 13) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f39537s = new m0(this, z10);
+        this.f39585s = new m0(this, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -91,23 +91,23 @@ public final class t extends b implements l0 {
     @Override // rt.p
     /* renamed from: I */
     public Integer e() {
-        return this.f39535q;
+        return this.f39583q;
     }
 
     @Override // rt.p
     /* renamed from: J */
     public Integer B() {
-        return this.f39534p;
+        return this.f39582p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int K() {
-        return this.f39533o;
+        return this.f39581o;
     }
 
     @Override // rt.e, rt.p
     public char d() {
-        return this.f39536r;
+        return this.f39584r;
     }
 
     @Override // rt.p

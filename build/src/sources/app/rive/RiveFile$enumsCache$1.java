@@ -57,6 +57,6 @@ public final class RiveFile$enumsCache$1 extends k implements Function1<Continua
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<File.Enum>> continuation) {
-        return ((RiveFile$enumsCache$1) create(continuation)).invokeSuspend(Unit.f32008a);
+        return ((RiveFile$enumsCache$1) create(continuation)).invokeSuspend(Unit.f32056a);
     }
 }

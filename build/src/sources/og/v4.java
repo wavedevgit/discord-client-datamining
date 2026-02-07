@@ -5,30 +5,30 @@ import yi.c;
 final class v4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v4 f42584a = new v4();
+    static final v4 f42632a = new v4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42585b;
+    private static final yi.c f42633b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42586c;
+    private static final yi.c f42634c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42587d;
+    private static final yi.c f42635d;
 
     static {
         c.b a10 = yi.c.a("maxLabels");
         f fVar = new f();
         fVar.a(1);
-        f42585b = a10.b(fVar.b()).a();
+        f42633b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("confidenceThreshold");
         f fVar2 = new f();
         fVar2.a(2);
-        f42586c = a11.b(fVar2.b()).a();
+        f42634c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("customLocalModelOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42587d = a12.b(fVar3.b()).a();
+        f42635d = a12.b(fVar3.b()).a();
     }
 
     private v4() {

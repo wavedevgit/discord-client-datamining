@@ -34,35 +34,35 @@ import wn.g;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f49013a;
+    private final Context f49061a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final z.a f49014b;
+    private final z.a f49062b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g.a f49015c;
+    private final g.a f49063c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final zp.b f49016d;
+    private final zp.b f49064d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49017d;
+        int f49065d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ n1.e f49018e;
+        final /* synthetic */ n1.e f49066e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k.a f49019i;
+        final /* synthetic */ k.a f49067i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(n1.e eVar, k.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f49018e = eVar;
-            this.f49019i = aVar;
+            this.f49066e = eVar;
+            this.f49067i = aVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -76,22 +76,22 @@ public final class j {
             }
             n1.e eVar2 = eVar;
             if (eVar2 == null) {
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             cVar.e(n1.e.r(eVar2, null, null, null, null, 0, null, null, null, 0L, true, 511, null));
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f49018e, this.f49019i, continuation);
+            return new a(this.f49066e, this.f49067i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             bn.r c10;
             Object f10 = wr.b.f();
-            int i10 = this.f49017d;
+            int i10 = this.f49065d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -100,13 +100,13 @@ public final class j {
                 }
             } else {
                 kotlin.c.b(obj);
-                long u10 = this.f49018e.u();
-                this.f49017d = 1;
+                long u10 = this.f49066e.u();
+                this.f49065d = 1;
                 if (i0.a(u10, this) == f10) {
                     return f10;
                 }
             }
-            bn.h c11 = this.f49019i.c();
+            bn.h c11 = this.f49067i.c();
             c10 = b0.c(null, new Function1() { // from class: ro.i
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
@@ -116,12 +116,12 @@ public final class j {
                 }
             }, 1, null);
             c11.d(c10);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -130,17 +130,17 @@ public final class j {
         Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
         Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
-        this.f49013a = applicationContext;
-        this.f49014b = cameraXControllerFactory;
-        this.f49015c = camera2ManagerFactoryFactory;
-        this.f49016d = navigationStateManager;
+        this.f49061a = applicationContext;
+        this.f49062b = cameraXControllerFactory;
+        this.f49063c = camera2ManagerFactoryFactory;
+        this.f49064d = navigationStateManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(List list, v vVar) {
         Intrinsics.checkNotNullParameter(list, "<unused var>");
         Intrinsics.checkNotNullParameter(vVar, "<unused var>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -156,26 +156,26 @@ public final class j {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(g3.b.C0429b.f30287a);
-        return Unit.f32008a;
+        action.d(g3.b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(k.a aVar) {
         b4.L(aVar, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(Throwable it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -187,31 +187,31 @@ public final class j {
         for (d0 d0Var : o10) {
             arrayList.add(d0Var.O0());
         }
-        d0.d dVar = d0.d.f30046d;
+        d0.d dVar = d0.d.f30094d;
         boolean contains = arrayList.contains(dVar);
-        d0.d dVar2 = d0.d.f30047e;
+        d0.d dVar2 = d0.d.f30095e;
         boolean contains2 = arrayList.contains(dVar2);
         String absolutePath = file.getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
         List e10 = CollectionsKt.e(new c0(absolutePath, "video/*"));
         if (contains && contains2) {
-            dVar = d0.d.f30048i;
+            dVar = d0.d.f30096i;
         } else if (!contains && contains2) {
             dVar = dVar2;
         }
-        b4.Q(eVar, aVar, aVar2, new d0.c(e10, dVar, eVar.t().w1(), d0.a.f30032e), eVar.t(), kVar, cameraProperties, false, null, 0, null, null, 3840, null);
-        return Unit.f32008a;
+        b4.Q(eVar, aVar, aVar2, new d0.c(e10, dVar, eVar.t().w1(), d0.a.f30080e), eVar.t(), kVar, cameraProperties, false, null, 0, null, null, 3840, null);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p() {
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(j jVar, k.a aVar, g3.a aVar2) {
-        b4.N(jVar.f49013a, aVar, aVar2, true);
-        return Unit.f32008a;
+        b4.N(jVar.f49061a, aVar, aVar2, true);
+        return Unit.f32056a;
     }
 
     public final Object i(final g3.a renderProps, final n1.e renderState, final k.a context, final k videoCaptureHelper) {
@@ -229,15 +229,15 @@ public final class j {
             aVar = null;
         }
         if (aVar == null || (eVar = aVar.a()) == null) {
-            eVar = c4.e.f30022o;
+            eVar = c4.e.f30070o;
         }
         c4.e eVar2 = eVar;
         c4.c c10 = renderState.t().c(eVar2);
         String E = b4.E(renderProps.t(), eVar2, renderState.t().w1(), renderState.f());
         String n10 = renderProps.t().n();
-        f5.b.a aVar2 = f5.b.a.f30151d;
+        f5.b.a aVar2 = f5.b.a.f30199d;
         qo.e d10 = renderState.t().d();
-        return new hn.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f49016d.b(), new Function2() { // from class: ro.a
+        return new hn.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f49064d.b(), new Function2() { // from class: ro.a
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit j10;
@@ -258,7 +258,7 @@ public final class j {
                 m10 = j.m(k.a.this);
                 return m10;
             }
-        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f49014b, this.f49015c, null, new Function1() { // from class: ro.d
+        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f49062b, this.f49063c, null, new Function1() { // from class: ro.d
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit n11;

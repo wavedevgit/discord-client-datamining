@@ -5,7 +5,7 @@ import yi.c;
 final class e5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e5 f47020a = new e5();
+    static final e5 f47068a = new e5();
 
     static {
         c.b a10 = yi.c.a("logEventKey");

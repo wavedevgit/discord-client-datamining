@@ -78,13 +78,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$2(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, ImageAttachmentMessageAccessory imageAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(imageAttachmentMessageAccessory);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$3(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -105,13 +105,13 @@ public final class AttachmentMediaMosaicAdapter extends RecyclerView.Adapter {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$6(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, VideoAttachmentMessageAccessory videoAttachmentMessageAccessory) {
         attachmentMediaMosaicAdapter.onItemSpoilerClicked.invoke(videoAttachmentMessageAccessory);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$7(AttachmentMediaMosaicAdapter attachmentMediaMosaicAdapter, boolean z10) {
         attachmentMediaMosaicAdapter.onItemObscureToggle.invoke(Boolean.valueOf(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

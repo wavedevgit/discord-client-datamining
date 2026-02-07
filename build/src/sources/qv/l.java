@@ -3,14 +3,14 @@ package qv;
 public class l extends r {
 
     /* renamed from: f  reason: collision with root package name */
-    private String f48279f;
+    private String f48327f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f48280g;
+    private String f48328g;
 
     public l(String str, String str2) {
-        this.f48279f = str;
-        this.f48280g = str2;
+        this.f48327f = str;
+        this.f48328g = str2;
     }
 
     @Override // qv.r
@@ -20,10 +20,10 @@ public class l extends r {
 
     @Override // qv.r
     protected String k() {
-        return "destination=" + this.f48279f + ", title=" + this.f48280g;
+        return "destination=" + this.f48327f + ", title=" + this.f48328g;
     }
 
     public String m() {
-        return this.f48279f;
+        return this.f48327f;
     }
 }

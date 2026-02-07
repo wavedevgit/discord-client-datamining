@@ -19,49 +19,49 @@ public class b extends Drawable implements Animatable, c9.a {
     private final Runnable B;
 
     /* renamed from: d  reason: collision with root package name */
-    private o9.a f52248d;
+    private o9.a f52296d;
 
     /* renamed from: e  reason: collision with root package name */
-    private x9.b f52249e;
+    private x9.b f52297e;
 
     /* renamed from: i  reason: collision with root package name */
-    private volatile boolean f52250i;
+    private volatile boolean f52298i;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f52251o;
+    private long f52299o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f52252p;
+    private long f52300p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f52253q;
+    private long f52301q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f52254r;
+    private int f52302r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f52255s;
+    private long f52303s;
 
     /* renamed from: t  reason: collision with root package name */
-    private long f52256t;
+    private long f52304t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f52257u;
+    private int f52305u;
 
     /* renamed from: w  reason: collision with root package name */
-    private long f52259w;
+    private long f52307w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f52260x;
+    private int f52308x;
 
     /* renamed from: z  reason: collision with root package name */
-    private final a.InterfaceC0557a f52262z;
+    private final a.InterfaceC0557a f52310z;
 
     /* renamed from: v  reason: collision with root package name */
-    private long f52258v = 8;
+    private long f52306v = 8;
 
     /* renamed from: y  reason: collision with root package name */
-    private volatile d f52261y = E;
+    private volatile d f52309y = E;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -95,13 +95,13 @@ public class b extends Drawable implements Animatable, c9.a {
     }
 
     public b(o9.a aVar) {
-        this.f52248d = aVar;
+        this.f52296d = aVar;
         a.InterfaceC0557a interfaceC0557a = new a.InterfaceC0557a() { // from class: v9.a
         };
-        this.f52262z = interfaceC0557a;
+        this.f52310z = interfaceC0557a;
         this.B = new RunnableC0685b();
-        this.f52249e = C.b(this.f52248d);
-        o9.a aVar2 = this.f52248d;
+        this.f52297e = C.b(this.f52296d);
+        o9.a aVar2 = this.f52296d;
         if (aVar2 != null) {
             aVar2.k(interfaceC0557a);
         }
@@ -112,21 +112,21 @@ public class b extends Drawable implements Animatable, c9.a {
     }
 
     private final void c() {
-        this.f52260x++;
+        this.f52308x++;
         if (p8.a.w(2)) {
-            p8.a.z(D, "Dropped a frame. Count: %s", Integer.valueOf(this.f52260x));
+            p8.a.z(D, "Dropped a frame. Count: %s", Integer.valueOf(this.f52308x));
         }
     }
 
     private final void d(long j10) {
-        long j11 = this.f52251o + j10;
-        this.f52253q = j11;
+        long j11 = this.f52299o + j10;
+        this.f52301q = j11;
         scheduleSelf(this.B, j11);
     }
 
     @Override // c9.a
     public void a() {
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             aVar.clear();
         }
@@ -136,56 +136,56 @@ public class b extends Drawable implements Animatable, c9.a {
     public void draw(Canvas canvas) {
         long max;
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (this.f52248d != null && this.f52249e != null) {
+        if (this.f52296d != null && this.f52297e != null) {
             long b10 = b();
-            if (this.f52250i) {
-                max = (b10 - this.f52251o) + this.f52259w;
+            if (this.f52298i) {
+                max = (b10 - this.f52299o) + this.f52307w;
             } else {
-                max = (long) Math.max(this.f52252p, 0.0d);
+                max = (long) Math.max(this.f52300p, 0.0d);
             }
-            x9.b bVar = this.f52249e;
+            x9.b bVar = this.f52297e;
             Intrinsics.checkNotNull(bVar);
-            int b11 = bVar.b(max, this.f52252p);
+            int b11 = bVar.b(max, this.f52300p);
             if (b11 != -1) {
-                if (b11 == 0 && this.f52254r != -1 && b10 >= this.f52253q) {
-                    this.f52261y.a(this);
+                if (b11 == 0 && this.f52302r != -1 && b10 >= this.f52301q) {
+                    this.f52309y.a(this);
                 }
             } else {
-                o9.a aVar = this.f52248d;
+                o9.a aVar = this.f52296d;
                 Intrinsics.checkNotNull(aVar);
                 b11 = aVar.a() - 1;
-                this.f52261y.c(this);
-                this.f52250i = false;
+                this.f52309y.c(this);
+                this.f52298i = false;
             }
-            o9.a aVar2 = this.f52248d;
+            o9.a aVar2 = this.f52296d;
             Intrinsics.checkNotNull(aVar2);
             boolean h10 = aVar2.h(this, canvas, b11);
             if (h10) {
-                this.f52261y.d(this, b11);
-                this.f52254r = b11;
+                this.f52309y.d(this, b11);
+                this.f52302r = b11;
             }
             if (!h10) {
                 c();
             }
             long b12 = b();
-            if (this.f52250i) {
-                x9.b bVar2 = this.f52249e;
+            if (this.f52298i) {
+                x9.b bVar2 = this.f52297e;
                 Intrinsics.checkNotNull(bVar2);
-                long a10 = bVar2.a(b12 - this.f52251o);
+                long a10 = bVar2.a(b12 - this.f52299o);
                 if (a10 != -1) {
-                    d(a10 + this.f52258v);
+                    d(a10 + this.f52306v);
                 } else {
-                    this.f52261y.c(this);
-                    this.f52250i = false;
+                    this.f52309y.c(this);
+                    this.f52298i = false;
                 }
             }
-            this.f52252p = max;
+            this.f52300p = max;
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             return aVar.c();
         }
@@ -194,7 +194,7 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             return aVar.e();
         }
@@ -208,14 +208,14 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        return this.f52250i;
+        return this.f52298i;
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect bounds) {
         Intrinsics.checkNotNullParameter(bounds, "bounds");
         super.onBoundsChange(bounds);
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             aVar.d(bounds);
         }
@@ -223,14 +223,14 @@ public class b extends Drawable implements Animatable, c9.a {
 
     @Override // android.graphics.drawable.Drawable
     protected boolean onLevelChange(int i10) {
-        if (this.f52250i) {
+        if (this.f52298i) {
             return false;
         }
         long j10 = i10;
-        if (this.f52252p == j10) {
+        if (this.f52300p == j10) {
             return false;
         }
-        this.f52252p = j10;
+        this.f52300p = j10;
         invalidateSelf();
         return true;
     }
@@ -243,7 +243,7 @@ public class b extends Drawable implements Animatable, c9.a {
         DrawableProperties drawableProperties = this.A;
         Intrinsics.checkNotNull(drawableProperties);
         drawableProperties.b(i10);
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             aVar.m(i10);
         }
@@ -257,7 +257,7 @@ public class b extends Drawable implements Animatable, c9.a {
         DrawableProperties drawableProperties = this.A;
         Intrinsics.checkNotNull(drawableProperties);
         drawableProperties.c(colorFilter);
-        o9.a aVar = this.f52248d;
+        o9.a aVar = this.f52296d;
         if (aVar != null) {
             aVar.f(colorFilter);
         }
@@ -266,37 +266,37 @@ public class b extends Drawable implements Animatable, c9.a {
     @Override // android.graphics.drawable.Animatable
     public void start() {
         o9.a aVar;
-        if (!this.f52250i && (aVar = this.f52248d) != null) {
+        if (!this.f52298i && (aVar = this.f52296d) != null) {
             Intrinsics.checkNotNull(aVar);
             if (aVar.a() > 1) {
-                this.f52250i = true;
+                this.f52298i = true;
                 long b10 = b();
-                long j10 = b10 - this.f52255s;
-                this.f52251o = j10;
-                this.f52253q = j10;
-                this.f52252p = b10 - this.f52256t;
-                this.f52254r = this.f52257u;
+                long j10 = b10 - this.f52303s;
+                this.f52299o = j10;
+                this.f52301q = j10;
+                this.f52300p = b10 - this.f52304t;
+                this.f52302r = this.f52305u;
                 invalidateSelf();
-                this.f52261y.b(this);
+                this.f52309y.b(this);
             }
         }
     }
 
     @Override // android.graphics.drawable.Animatable
     public void stop() {
-        if (!this.f52250i) {
+        if (!this.f52298i) {
             return;
         }
         long b10 = b();
-        this.f52255s = b10 - this.f52251o;
-        this.f52256t = b10 - this.f52252p;
-        this.f52257u = this.f52254r;
-        this.f52250i = false;
-        this.f52251o = 0L;
-        this.f52253q = 0L;
-        this.f52252p = -1L;
-        this.f52254r = -1;
+        this.f52303s = b10 - this.f52299o;
+        this.f52304t = b10 - this.f52300p;
+        this.f52305u = this.f52302r;
+        this.f52298i = false;
+        this.f52299o = 0L;
+        this.f52301q = 0L;
+        this.f52300p = -1L;
+        this.f52302r = -1;
         unscheduleSelf(this.B);
-        this.f52261y.c(this);
+        this.f52309y.c(this);
     }
 }

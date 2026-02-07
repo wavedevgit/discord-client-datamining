@@ -56,7 +56,7 @@ public final class MultipartStreamReader {
     }
 
     private final void emitChunk(Buffer buffer, boolean z10, ChunkListener chunkListener) {
-        ByteString b10 = ByteString.f43166o.b("\r\n\r\n");
+        ByteString b10 = ByteString.f43214o.b("\r\n\r\n");
         long X = buffer.X(b10);
         if (X == -1) {
             chunkListener.onChunkComplete(kotlin.collections.o0.i(), buffer, z10);

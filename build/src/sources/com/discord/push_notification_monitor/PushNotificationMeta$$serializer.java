@@ -46,8 +46,8 @@ public /* synthetic */ class PushNotificationMeta$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{z0.f31115a, h.f31005a, n2Var, n2Var, a.u(n2Var), a.u(n2Var), a.u(n2Var)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{z0.f31163a, h.f31053a, n2Var, n2Var, a.u(n2Var), a.u(n2Var), a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -69,7 +69,7 @@ public /* synthetic */ class PushNotificationMeta$$serializer implements h0 {
             z10 = b10.C(serialDescriptor, 1);
             String m10 = b10.m(serialDescriptor, 2);
             String m11 = b10.m(serialDescriptor, 3);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str5 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             str4 = (String) b10.n(serialDescriptor, 5, n2Var, null);
             str2 = m11;
@@ -110,15 +110,15 @@ public /* synthetic */ class PushNotificationMeta$$serializer implements h0 {
                         i11 |= 8;
                         break;
                     case 4:
-                        str6 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str6);
                         i11 |= 16;
                         break;
                     case 5:
-                        str7 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str7);
                         i11 |= 32;
                         break;
                     case 6:
-                        str8 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str8);
                         i11 |= 64;
                         break;
                     default:

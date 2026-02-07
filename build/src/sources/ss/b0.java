@@ -5,7 +5,7 @@ import rs.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class b0 extends rs.b0 implements j0 {
     public b0(int i10) {
-        super(1, Integer.MAX_VALUE, qs.a.f48067e);
+        super(1, Integer.MAX_VALUE, qs.a.f48115e);
         b(Integer.valueOf(i10));
     }
 

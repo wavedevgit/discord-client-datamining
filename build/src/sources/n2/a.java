@@ -13,7 +13,7 @@ import ve.a;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0526a f38398a = new C0526a(null);
+    public static final C0526a f38446a = new C0526a(null);
 
     /* renamed from: n2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -44,9 +44,9 @@ public abstract class a {
             for (l lVar : request.a()) {
                 if ((lVar instanceof e0) && !z10) {
                     if (c(b10)) {
-                        c0690a.e(k.f41422a.g((e0) lVar));
+                        c0690a.e(k.f41470a.g((e0) lVar));
                     } else {
-                        c0690a.d(k.f41422a.f((e0) lVar));
+                        c0690a.d(k.f41470a.f((e0) lVar));
                     }
                     z10 = true;
                 }

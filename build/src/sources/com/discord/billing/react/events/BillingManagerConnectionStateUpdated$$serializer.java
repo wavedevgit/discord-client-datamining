@@ -36,7 +36,7 @@ public /* synthetic */ class BillingManagerConnectionStateUpdated$$serializer im
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a};
+        return new KSerializer[]{p0.f31105a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

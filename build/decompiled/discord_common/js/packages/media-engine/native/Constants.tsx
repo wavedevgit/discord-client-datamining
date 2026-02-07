@@ -285,4 +285,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ProcessPriority = var3;
     var2.ClipsRecordingEvent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3512, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3511, 2]);

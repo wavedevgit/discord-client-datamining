@@ -7,10 +7,10 @@ public enum c {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36790d;
+    private final int f36838d;
 
     c(int i10) {
-        this.f36790d = i10;
+        this.f36838d = i10;
     }
 
     public static c d(Boolean bool) {
@@ -24,6 +24,6 @@ public enum c {
     }
 
     public int e() {
-        return this.f36790d;
+        return this.f36838d;
     }
 }

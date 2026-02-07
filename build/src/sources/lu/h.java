@@ -27,13 +27,13 @@ import okio.Buffer;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f36777a;
+    public static final a f36825a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile h f36778b;
+    private static volatile h f36826b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Logger f36779c;
+    private static final Logger f36827c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -42,10 +42,10 @@ public class h {
         }
 
         private final h d() {
-            mu.c.f38302a.b();
-            h a10 = lu.a.f36747e.a();
+            mu.c.f38350a.b();
+            h a10 = lu.a.f36795e.a();
             if (a10 == null) {
-                h a11 = b.f36750f.a();
+                h a11 = b.f36798f.a();
                 Intrinsics.checkNotNull(a11);
                 return a11;
             }
@@ -56,20 +56,20 @@ public class h {
             g a10;
             c a11;
             d b10;
-            if (j() && (b10 = d.f36759e.b()) != null) {
+            if (j() && (b10 = d.f36807e.b()) != null) {
                 return b10;
             }
-            if (i() && (a11 = c.f36756e.a()) != null) {
+            if (i() && (a11 = c.f36804e.a()) != null) {
                 return a11;
             }
-            if (k() && (a10 = g.f36774e.a()) != null) {
+            if (k() && (a10 = g.f36822e.a()) != null) {
                 return a10;
             }
-            f a12 = f.f36772d.a();
+            f a12 = f.f36820d.a();
             if (a12 != null) {
                 return a12;
             }
-            h a13 = e.f36763i.a();
+            h a13 = e.f36811i.a();
             if (a13 != null) {
                 return a13;
             }
@@ -122,7 +122,7 @@ public class h {
         }
 
         public final h g() {
-            return h.f36778b;
+            return h.f36826b;
         }
 
         public final boolean h() {
@@ -135,9 +135,9 @@ public class h {
 
     static {
         a aVar = new a(null);
-        f36777a = aVar;
-        f36778b = aVar.f();
-        f36779c = Logger.getLogger(OkHttpClient.class.getName());
+        f36825a = aVar;
+        f36826b = aVar.f();
+        f36827c = Logger.getLogger(OkHttpClient.class.getName());
     }
 
     public static /* synthetic */ void l(h hVar, String str, int i10, Throwable th2, int i11, Object obj) {
@@ -192,7 +192,7 @@ public class h {
 
     public Object i(String closer) {
         Intrinsics.checkNotNullParameter(closer, "closer");
-        if (f36779c.isLoggable(Level.FINE)) {
+        if (f36827c.isLoggable(Level.FINE)) {
             return new Throwable(closer);
         }
         return null;
@@ -211,7 +211,7 @@ public class h {
         } else {
             level = Level.INFO;
         }
-        f36779c.log(level, message, th2);
+        f36827c.log(level, message, th2);
     }
 
     public void m(String message, Object obj) {

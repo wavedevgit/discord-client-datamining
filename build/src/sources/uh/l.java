@@ -7,33 +7,33 @@ import rg.r;
 public final class l {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final rg.d f51476c = new rg.d("AgeSignalsService");
+    private static final rg.d f51524c = new rg.d("AgeSignalsService");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f51477a;
+    private final Context f51525a;
 
     /* renamed from: b  reason: collision with root package name */
-    final rg.o f51478b;
+    final rg.o f51526b;
 
     /* JADX WARN: Type inference failed for: r6v0, types: [uh.i, java.lang.Object] */
     public l(Context context) {
-        this.f51477a = context;
+        this.f51525a = context;
         if (r.b(context)) {
-            this.f51478b = new rg.o(context, f51476c, "AgeSignalsService", f.f51468a, new Object(), null);
+            this.f51526b = new rg.o(context, f51524c, "AgeSignalsService", f.f51516a, new Object(), null);
         } else {
-            this.f51478b = null;
+            this.f51526b = null;
         }
     }
 
     private static Task d(int i10) {
-        f51476c.a("onError(%d)", Integer.valueOf(i10));
+        f51524c.a("onError(%d)", Integer.valueOf(i10));
         return yg.m.e(new a(i10));
     }
 
     public final Task b(d dVar) {
-        rg.o oVar = this.f51478b;
+        rg.o oVar = this.f51526b;
         if (oVar != null) {
-            if (r.a(this.f51477a) < 82380000) {
+            if (r.a(this.f51525a) < 82380000) {
                 return d(-6);
             }
             yg.k kVar = new yg.k();

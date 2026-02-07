@@ -15,10 +15,10 @@ import lt.g0;
 public final class z implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final z f35534a = new z();
+    public static final z f35582a = new z();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35535b = ht.j.e("kotlinx.serialization.json.JsonPrimitive", e.i.f26478a, new SerialDescriptor[0], null, 8, null);
+    private static final SerialDescriptor f35583b = ht.j.e("kotlinx.serialization.json.JsonPrimitive", e.i.f26526a, new SerialDescriptor[0], null, 8, null);
 
     private z() {
     }
@@ -41,14 +41,14 @@ public final class z implements KSerializer {
         Intrinsics.checkNotNullParameter(value, "value");
         p.c(encoder);
         if (value instanceof JsonNull) {
-            encoder.v(v.f35526a, JsonNull.INSTANCE);
+            encoder.v(v.f35574a, JsonNull.INSTANCE);
         } else {
-            encoder.v(s.f35524a, (r) value);
+            encoder.v(s.f35572a, (r) value);
         }
     }
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f35535b;
+        return f35583b;
     }
 }

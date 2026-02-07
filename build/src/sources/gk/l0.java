@@ -13,86 +13,86 @@ import sun.misc.Unsafe;
 final class l0 implements x0 {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f25315r = new int[0];
+    private static final int[] f25363r = new int[0];
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Unsafe f25316s = h1.B();
+    private static final Unsafe f25364s = h1.B();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f25317a;
+    private final int[] f25365a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object[] f25318b;
+    private final Object[] f25366b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f25319c;
+    private final int f25367c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f25320d;
+    private final int f25368d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i0 f25321e;
+    private final i0 f25369e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f25322f;
+    private final boolean f25370f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f25323g;
+    private final boolean f25371g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f25324h;
+    private final boolean f25372h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f25325i;
+    private final boolean f25373i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int[] f25326j;
+    private final int[] f25374j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final int f25327k;
+    private final int f25375k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f25328l;
+    private final int f25376l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final n0 f25329m;
+    private final n0 f25377m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final y f25330n;
+    private final y f25378n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final d1 f25331o;
+    private final d1 f25379o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final m f25332p;
+    private final m f25380p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final d0 f25333q;
+    private final d0 f25381q;
 
     private l0(int[] iArr, Object[] objArr, int i10, int i11, i0 i0Var, boolean z10, boolean z11, int[] iArr2, int i12, int i13, n0 n0Var, y yVar, d1 d1Var, m mVar, d0 d0Var) {
         boolean z12;
-        this.f25317a = iArr;
-        this.f25318b = objArr;
-        this.f25319c = i10;
-        this.f25320d = i11;
-        this.f25323g = i0Var instanceof s;
-        this.f25324h = z10;
+        this.f25365a = iArr;
+        this.f25366b = objArr;
+        this.f25367c = i10;
+        this.f25368d = i11;
+        this.f25371g = i0Var instanceof s;
+        this.f25372h = z10;
         if (mVar != null && mVar.d(i0Var)) {
             z12 = true;
         } else {
             z12 = false;
         }
-        this.f25322f = z12;
-        this.f25325i = z11;
-        this.f25326j = iArr2;
-        this.f25327k = i12;
-        this.f25328l = i13;
-        this.f25329m = n0Var;
-        this.f25330n = yVar;
-        this.f25331o = d1Var;
-        this.f25332p = mVar;
-        this.f25321e = i0Var;
-        this.f25333q = d0Var;
+        this.f25370f = z12;
+        this.f25373i = z11;
+        this.f25374j = iArr2;
+        this.f25375k = i12;
+        this.f25376l = i13;
+        this.f25377m = n0Var;
+        this.f25378n = yVar;
+        this.f25379o = d1Var;
+        this.f25380p = mVar;
+        this.f25369e = i0Var;
+        this.f25381q = d0Var;
     }
 
     private void A(Object obj, Object obj2, int i10) {
@@ -100,7 +100,7 @@ final class l0 implements x0 {
             return;
         }
         long J = J(c0(i10));
-        Unsafe unsafe = f25316s;
+        Unsafe unsafe = f25364s;
         Object object = unsafe.getObject(obj2, J);
         if (object != null) {
             x0 n10 = n(i10);
@@ -134,7 +134,7 @@ final class l0 implements x0 {
             return;
         }
         long J = J(c0(i10));
-        Unsafe unsafe = f25316s;
+        Unsafe unsafe = f25364s;
         Object object = unsafe.getObject(obj2, J);
         if (object != null) {
             x0 n10 = n(i10);
@@ -317,10 +317,10 @@ final class l0 implements x0 {
             case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
             case 48:
             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                this.f25330n.d(obj, obj2, J);
+                this.f25378n.d(obj, obj2, J);
                 return;
             case 50:
-                z0.f(this.f25333q, obj, obj2, J);
+                z0.f(this.f25381q, obj, obj2, J);
                 return;
             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_VISUAL_PLACEHOLDER /* 51 */:
             case ChatViewRecyclerTypes.REFERRAL /* 52 */:
@@ -367,7 +367,7 @@ final class l0 implements x0 {
         if (!p(obj, i10)) {
             return n10.d();
         }
-        Object object = f25316s.getObject(obj, J);
+        Object object = f25364s.getObject(obj, J);
         if (u(object)) {
             return object;
         }
@@ -383,7 +383,7 @@ final class l0 implements x0 {
         if (!w(obj, i10, i11)) {
             return n10.d();
         }
-        Object object = f25316s.getObject(obj, J(c0(i11)));
+        Object object = f25364s.getObject(obj, J(c0(i11)));
         if (u(object)) {
             return object;
         }
@@ -424,7 +424,7 @@ final class l0 implements x0 {
     }
 
     private int I(int i10) {
-        return this.f25317a[i10];
+        return this.f25365a[i10];
     }
 
     private static long J(int i10) {
@@ -452,28 +452,28 @@ final class l0 implements x0 {
     }
 
     private int P(int i10) {
-        if (i10 >= this.f25319c && i10 <= this.f25320d) {
+        if (i10 >= this.f25367c && i10 <= this.f25368d) {
             return Y(i10, 0);
         }
         return -1;
     }
 
     private int Q(int i10) {
-        return this.f25317a[i10 + 2];
+        return this.f25365a[i10 + 2];
     }
 
     private void R(Object obj, long j10, w0 w0Var, x0 x0Var, l lVar) {
-        w0Var.I(this.f25330n.e(obj, j10), x0Var, lVar);
+        w0Var.I(this.f25378n.e(obj, j10), x0Var, lVar);
     }
 
     private void S(Object obj, int i10, w0 w0Var, x0 x0Var, l lVar) {
-        w0Var.J(this.f25330n.e(obj, J(i10)), x0Var, lVar);
+        w0Var.J(this.f25378n.e(obj, J(i10)), x0Var, lVar);
     }
 
     private void T(Object obj, int i10, w0 w0Var) {
         if (o(i10)) {
             h1.O(obj, J(i10), w0Var.H());
-        } else if (this.f25323g) {
+        } else if (this.f25371g) {
             h1.O(obj, J(i10), w0Var.y());
         } else {
             h1.O(obj, J(i10), w0Var.n());
@@ -482,9 +482,9 @@ final class l0 implements x0 {
 
     private void U(Object obj, int i10, w0 w0Var) {
         if (o(i10)) {
-            w0Var.m(this.f25330n.e(obj, J(i10)));
+            w0Var.m(this.f25378n.e(obj, J(i10)));
         } else {
-            w0Var.A(this.f25330n.e(obj, J(i10)));
+            w0Var.A(this.f25378n.e(obj, J(i10)));
         }
     }
 
@@ -516,7 +516,7 @@ final class l0 implements x0 {
     }
 
     private int Y(int i10, int i11) {
-        int length = (this.f25317a.length / 3) - 1;
+        int length = (this.f25365a.length / 3) - 1;
         while (i11 <= length) {
             int i12 = (length + i11) >>> 1;
             int i13 = i12 * 3;
@@ -534,12 +534,12 @@ final class l0 implements x0 {
     }
 
     private void Z(Object obj, int i10, Object obj2) {
-        f25316s.putObject(obj, J(c0(i10)), obj2);
+        f25364s.putObject(obj, J(c0(i10)), obj2);
         W(obj, i10);
     }
 
     private void a0(Object obj, int i10, int i11, Object obj2) {
-        f25316s.putObject(obj, J(c0(i11)), obj2);
+        f25364s.putObject(obj, J(c0(i11)), obj2);
         X(obj, i10, i11);
     }
 
@@ -548,7 +548,7 @@ final class l0 implements x0 {
     }
 
     private int c0(int i10) {
-        return this.f25317a[i10 + 1];
+        return this.f25365a[i10 + 1];
     }
 
     private boolean h(Object obj, Object obj2, int i10) {
@@ -731,22 +731,22 @@ final class l0 implements x0 {
     }
 
     private u.a l(int i10) {
-        android.support.v4.media.session.b.a(this.f25318b[((i10 / 3) * 2) + 1]);
+        android.support.v4.media.session.b.a(this.f25366b[((i10 / 3) * 2) + 1]);
         return null;
     }
 
     private Object m(int i10) {
-        return this.f25318b[(i10 / 3) * 2];
+        return this.f25366b[(i10 / 3) * 2];
     }
 
     private x0 n(int i10) {
         int i11 = (i10 / 3) * 2;
-        x0 x0Var = (x0) this.f25318b[i11];
+        x0 x0Var = (x0) this.f25366b[i11];
         if (x0Var != null) {
             return x0Var;
         }
-        x0 c10 = t0.a().c((Class) this.f25318b[i11 + 1]);
-        this.f25318b[i11] = c10;
+        x0 c10 = t0.a().c((Class) this.f25366b[i11 + 1]);
+        this.f25366b[i11] = c10;
         return c10;
     }
 
@@ -808,7 +808,7 @@ final class l0 implements x0 {
                         equals = ((String) A).isEmpty();
                         break;
                     } else if (A instanceof f) {
-                        equals = f.f25206e.equals(A);
+                        equals = f.f25254e.equals(A);
                         break;
                     } else {
                         throw new IllegalArgumentException();
@@ -819,7 +819,7 @@ final class l0 implements x0 {
                     }
                     return true;
                 case 10:
-                    equals = f.f25206e.equals(h1.A(obj, J));
+                    equals = f.f25254e.equals(h1.A(obj, J));
                     break;
                 case 11:
                     if (h1.x(obj, J) == 0) {
@@ -896,11 +896,11 @@ final class l0 implements x0 {
     }
 
     private boolean t(Object obj, int i10, int i11) {
-        Map e10 = this.f25333q.e(h1.A(obj, J(i10)));
+        Map e10 = this.f25381q.e(h1.A(obj, J(i10)));
         if (e10.isEmpty()) {
             return true;
         }
-        if (this.f25333q.b(m(i11)).f25190c.a() != j1.c.MESSAGE) {
+        if (this.f25381q.b(m(i11)).f25238c.a() != j1.c.MESSAGE) {
             return true;
         }
         x0 x0Var = null;
@@ -954,15 +954,15 @@ final class l0 implements x0 {
         return;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x00a4, code lost:
-        r0 = r9.f25327k;
+        r0 = r9.f25375k;
         r4 = r5;
      */
     /* JADX WARN: Code restructure failed: missing block: B:51:0x00a9, code lost:
-        if (r0 >= r9.f25328l) goto L293;
+        if (r0 >= r9.f25376l) goto L293;
      */
     /* JADX WARN: Code restructure failed: missing block: B:52:0x00ab, code lost:
         r1 = r9;
-        r4 = r1.k(r2, r9.f25326j[r0], r4, r17, r19);
+        r4 = r1.k(r2, r9.f25374j[r0], r4, r17, r19);
         r6 = r17;
         r0 = r0 + 1;
         r9 = r1;
@@ -993,27 +993,27 @@ final class l0 implements x0 {
         long J = J(c0(i10));
         Object A = h1.A(obj, J);
         if (A == null) {
-            A = this.f25333q.d(obj2);
+            A = this.f25381q.d(obj2);
             h1.O(obj, J, A);
-        } else if (this.f25333q.g(A)) {
-            Object d10 = this.f25333q.d(obj2);
-            this.f25333q.a(d10, A);
+        } else if (this.f25381q.g(A)) {
+            Object d10 = this.f25381q.d(obj2);
+            this.f25381q.a(d10, A);
             h1.O(obj, J, d10);
             A = d10;
         }
-        w0Var.K(this.f25333q.c(A), this.f25333q.b(obj2), lVar);
+        w0Var.K(this.f25381q.c(A), this.f25381q.b(obj2), lVar);
     }
 
     @Override // gk.x0
     public void a(Object obj, Object obj2) {
         i(obj);
         obj2.getClass();
-        for (int i10 = 0; i10 < this.f25317a.length; i10 += 3) {
+        for (int i10 = 0; i10 < this.f25365a.length; i10 += 3) {
             C(obj, obj2, i10);
         }
-        z0.g(this.f25331o, obj, obj2);
-        if (this.f25322f) {
-            z0.e(this.f25332p, obj, obj2);
+        z0.g(this.f25379o, obj, obj2);
+        if (this.f25370f) {
+            z0.e(this.f25380p, obj, obj2);
         }
     }
 
@@ -1026,7 +1026,7 @@ final class l0 implements x0 {
                 sVar.d();
                 sVar.v();
             }
-            int length = this.f25317a.length;
+            int length = this.f25365a.length;
             for (int i10 = 0; i10 < length; i10 += 3) {
                 int c02 = c0(i10);
                 long J = J(c02);
@@ -1066,29 +1066,29 @@ final class l0 implements x0 {
                             case ChatViewRecyclerTypes.REACTION_ADD_REACTION /* 47 */:
                             case 48:
                             case ChatViewRecyclerTypes.MEDIA_ATTACHMENT_MOSAIC_IMAGE /* 49 */:
-                                this.f25330n.c(obj, J);
+                                this.f25378n.c(obj, J);
                                 break;
                             case 50:
-                                Unsafe unsafe = f25316s;
+                                Unsafe unsafe = f25364s;
                                 Object object = unsafe.getObject(obj, J);
                                 if (object != null) {
-                                    unsafe.putObject(obj, J, this.f25333q.f(object));
+                                    unsafe.putObject(obj, J, this.f25381q.f(object));
                                     break;
                                 } else {
                                     break;
                                 }
                         }
                     } else if (w(obj, I(i10), i10)) {
-                        n(i10).b(f25316s.getObject(obj, J));
+                        n(i10).b(f25364s.getObject(obj, J));
                     }
                 }
                 if (p(obj, i10)) {
-                    n(i10).b(f25316s.getObject(obj, J));
+                    n(i10).b(f25364s.getObject(obj, J));
                 }
             }
-            this.f25331o.h(obj);
-            if (this.f25322f) {
-                this.f25332p.e(obj);
+            this.f25379o.h(obj);
+            if (this.f25370f) {
+                this.f25380p.e(obj);
             }
         }
     }
@@ -1100,16 +1100,16 @@ final class l0 implements x0 {
         int i12 = 1048575;
         int i13 = 0;
         int i14 = 0;
-        while (i13 < this.f25327k) {
-            int i15 = this.f25326j[i13];
+        while (i13 < this.f25375k) {
+            int i15 = this.f25374j[i13];
             int I = I(i15);
             int c02 = c0(i15);
-            int i16 = this.f25317a[i15 + 2];
+            int i16 = this.f25365a[i15 + 2];
             int i17 = i16 & 1048575;
             int i18 = 1 << (i16 >>> 20);
             if (i17 != i12) {
                 if (i17 != 1048575) {
-                    i14 = f25316s.getInt(obj, i17);
+                    i14 = f25364s.getInt(obj, i17);
                 }
                 i11 = i14;
                 i10 = i17;
@@ -1146,7 +1146,7 @@ final class l0 implements x0 {
             i14 = i11;
         }
         Object obj3 = obj;
-        if (this.f25322f && !this.f25332p.b(obj3).b()) {
+        if (this.f25370f && !this.f25380p.b(obj3).b()) {
             return false;
         }
         return true;
@@ -1154,14 +1154,14 @@ final class l0 implements x0 {
 
     @Override // gk.x0
     public Object d() {
-        return this.f25329m.a(this.f25321e);
+        return this.f25377m.a(this.f25369e);
     }
 
     @Override // gk.x0
     public int e(Object obj) {
         int i10;
         int f10;
-        int length = this.f25317a.length;
+        int length = this.f25365a.length;
         int i11 = 0;
         for (int i12 = 0; i12 < length; i12 += 3) {
             int c02 = c0(i12);
@@ -1468,26 +1468,26 @@ final class l0 implements x0 {
                     }
             }
         }
-        int hashCode = (i11 * 53) + this.f25331o.g(obj).hashCode();
-        if (this.f25322f) {
-            return (hashCode * 53) + this.f25332p.b(obj).hashCode();
+        int hashCode = (i11 * 53) + this.f25379o.g(obj).hashCode();
+        if (this.f25370f) {
+            return (hashCode * 53) + this.f25380p.b(obj).hashCode();
         }
         return hashCode;
     }
 
     @Override // gk.x0
     public boolean f(Object obj, Object obj2) {
-        int length = this.f25317a.length;
+        int length = this.f25365a.length;
         for (int i10 = 0; i10 < length; i10 += 3) {
             if (!j(obj, obj2, i10)) {
                 return false;
             }
         }
-        if (!this.f25331o.g(obj).equals(this.f25331o.g(obj2))) {
+        if (!this.f25379o.g(obj).equals(this.f25379o.g(obj2))) {
             return false;
         }
-        if (this.f25322f) {
-            return this.f25332p.b(obj).equals(this.f25332p.b(obj2));
+        if (this.f25370f) {
+            return this.f25380p.b(obj).equals(this.f25380p.b(obj2));
         }
         return true;
     }
@@ -1496,6 +1496,6 @@ final class l0 implements x0 {
     public void g(Object obj, w0 w0Var, l lVar) {
         lVar.getClass();
         i(obj);
-        y(this.f25331o, this.f25332p, obj, w0Var, lVar);
+        y(this.f25379o, this.f25380p, obj, w0Var, lVar);
     }
 }

@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/safety_flows',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcw==',
         'scales': null,
-        'hash': '54ddfa9739285c0f035c5b32c72a4f10',
-        'name': 'SafetyFlows.compiled.messages',
+        'hash': '6cf607a066ea3a3efb2567e1ed4a7cd4',
+        'name': 'zh-CN.messages.6cf607a066ea3a3efb2567e1ed4a7cd4.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

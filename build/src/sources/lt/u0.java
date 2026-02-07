@@ -16,7 +16,7 @@ public abstract class u0 {
 
     public static /* synthetic */ t0 b(Json json, y yVar, char[] cArr, int i10, Object obj) {
         if ((i10 & 4) != 0) {
-            cArr = j.f36668c.d();
+            cArr = j.f36716c.d();
         }
         return a(json, yVar, cArr);
     }

@@ -16,15 +16,15 @@ public final class j extends q implements Runnable {
     private static volatile int debugStatus;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final j f35066t;
+    public static final j f35114t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f35067u;
+    private static final long f35115u;
 
     static {
         Long l10;
         j jVar = new j();
-        f35066t = jVar;
+        f35114t = jVar;
         p0.q2(jVar, false, 1, null);
         TimeUnit timeUnit = TimeUnit.MILLISECONDS;
         try {
@@ -32,7 +32,7 @@ public final class j extends q implements Runnable {
         } catch (SecurityException unused) {
             l10 = 1000L;
         }
-        f35067u = timeUnit.toNanos(l10.longValue());
+        f35115u = timeUnit.toNanos(l10.longValue());
     }
 
     private j() {
@@ -54,7 +54,7 @@ public final class j extends q implements Runnable {
         if (thread == null) {
             thread = new Thread(this, "kotlinx.coroutines.DefaultExecutor");
             _thread = thread;
-            thread.setContextClassLoader(f35066t.getClass().getClassLoader());
+            thread.setContextClassLoader(f35114t.getClass().getClassLoader());
             thread.setDaemon(true);
             thread.start();
         }
@@ -106,7 +106,7 @@ public final class j extends q implements Runnable {
     @Override // java.lang.Runnable
     public void run() {
         boolean I2;
-        l1.f43508a.d(this);
+        l1.f43556a.d(this);
         os.b.a();
         try {
             if (!U2()) {
@@ -123,7 +123,7 @@ public final class j extends q implements Runnable {
                     os.b.a();
                     long nanoTime = System.nanoTime();
                     if (j10 == LongCompanionObject.MAX_VALUE) {
-                        j10 = f35067u + nanoTime;
+                        j10 = f35115u + nanoTime;
                     }
                     long j11 = j10 - nanoTime;
                     if (j11 <= 0) {

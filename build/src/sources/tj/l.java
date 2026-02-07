@@ -15,119 +15,119 @@ public abstract class l {
     private static final mg.i B;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f50632a = new com.google.android.gms.common.d[0];
+    public static final com.google.android.gms.common.d[] f50680a = new com.google.android.gms.common.d[0];
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50633b;
+    public static final com.google.android.gms.common.d f50681b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50634c;
+    public static final com.google.android.gms.common.d f50682c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50635d;
+    public static final com.google.android.gms.common.d f50683d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50636e;
+    public static final com.google.android.gms.common.d f50684e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50637f;
+    public static final com.google.android.gms.common.d f50685f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50638g;
+    public static final com.google.android.gms.common.d f50686g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50639h;
+    public static final com.google.android.gms.common.d f50687h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50640i;
+    public static final com.google.android.gms.common.d f50688i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50641j;
+    public static final com.google.android.gms.common.d f50689j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50642k;
+    public static final com.google.android.gms.common.d f50690k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50643l;
+    public static final com.google.android.gms.common.d f50691l;
 
     /* renamed from: m  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50644m;
+    public static final com.google.android.gms.common.d f50692m;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50645n;
+    public static final com.google.android.gms.common.d f50693n;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50646o;
+    public static final com.google.android.gms.common.d f50694o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50647p;
+    public static final com.google.android.gms.common.d f50695p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50648q;
+    public static final com.google.android.gms.common.d f50696q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50649r;
+    public static final com.google.android.gms.common.d f50697r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50650s;
+    public static final com.google.android.gms.common.d f50698s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50651t;
+    public static final com.google.android.gms.common.d f50699t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50652u;
+    public static final com.google.android.gms.common.d f50700u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50653v;
+    public static final com.google.android.gms.common.d f50701v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50654w;
+    public static final com.google.android.gms.common.d f50702w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50655x;
+    public static final com.google.android.gms.common.d f50703x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50656y;
+    public static final com.google.android.gms.common.d f50704y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f50657z;
+    public static final com.google.android.gms.common.d f50705z;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("vision.barcode", 1L);
-        f50633b = dVar;
+        f50681b = dVar;
         com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("vision.custom.ica", 1L);
-        f50634c = dVar2;
+        f50682c = dVar2;
         com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("vision.face", 1L);
-        f50635d = dVar3;
+        f50683d = dVar3;
         com.google.android.gms.common.d dVar4 = new com.google.android.gms.common.d("vision.ica", 1L);
-        f50636e = dVar4;
+        f50684e = dVar4;
         com.google.android.gms.common.d dVar5 = new com.google.android.gms.common.d("vision.ocr", 1L);
-        f50637f = dVar5;
-        f50638g = new com.google.android.gms.common.d("mlkit.ocr.chinese", 1L);
-        f50639h = new com.google.android.gms.common.d("mlkit.ocr.common", 1L);
-        f50640i = new com.google.android.gms.common.d("mlkit.ocr.devanagari", 1L);
-        f50641j = new com.google.android.gms.common.d("mlkit.ocr.japanese", 1L);
-        f50642k = new com.google.android.gms.common.d("mlkit.ocr.korean", 1L);
+        f50685f = dVar5;
+        f50686g = new com.google.android.gms.common.d("mlkit.ocr.chinese", 1L);
+        f50687h = new com.google.android.gms.common.d("mlkit.ocr.common", 1L);
+        f50688i = new com.google.android.gms.common.d("mlkit.ocr.devanagari", 1L);
+        f50689j = new com.google.android.gms.common.d("mlkit.ocr.japanese", 1L);
+        f50690k = new com.google.android.gms.common.d("mlkit.ocr.korean", 1L);
         com.google.android.gms.common.d dVar6 = new com.google.android.gms.common.d("mlkit.langid", 1L);
-        f50643l = dVar6;
+        f50691l = dVar6;
         com.google.android.gms.common.d dVar7 = new com.google.android.gms.common.d("mlkit.nlclassifier", 1L);
-        f50644m = dVar7;
+        f50692m = dVar7;
         com.google.android.gms.common.d dVar8 = new com.google.android.gms.common.d("tflite_dynamite", 1L);
-        f50645n = dVar8;
+        f50693n = dVar8;
         com.google.android.gms.common.d dVar9 = new com.google.android.gms.common.d("mlkit.barcode.ui", 1L);
-        f50646o = dVar9;
+        f50694o = dVar9;
         com.google.android.gms.common.d dVar10 = new com.google.android.gms.common.d("mlkit.smartreply", 1L);
-        f50647p = dVar10;
-        f50648q = new com.google.android.gms.common.d("mlkit.image.caption", 1L);
-        f50649r = new com.google.android.gms.common.d("mlkit.docscan.detect", 1L);
-        f50650s = new com.google.android.gms.common.d("mlkit.docscan.crop", 1L);
-        f50651t = new com.google.android.gms.common.d("mlkit.docscan.enhance", 1L);
-        f50652u = new com.google.android.gms.common.d("mlkit.docscan.ui", 1L);
-        f50653v = new com.google.android.gms.common.d("mlkit.docscan.stain", 1L);
-        f50654w = new com.google.android.gms.common.d("mlkit.docscan.shadow", 1L);
-        f50655x = new com.google.android.gms.common.d("mlkit.quality.aesthetic", 1L);
-        f50656y = new com.google.android.gms.common.d("mlkit.quality.technical", 1L);
-        f50657z = new com.google.android.gms.common.d("mlkit.segmentation.subject", 1L);
+        f50695p = dVar10;
+        f50696q = new com.google.android.gms.common.d("mlkit.image.caption", 1L);
+        f50697r = new com.google.android.gms.common.d("mlkit.docscan.detect", 1L);
+        f50698s = new com.google.android.gms.common.d("mlkit.docscan.crop", 1L);
+        f50699t = new com.google.android.gms.common.d("mlkit.docscan.enhance", 1L);
+        f50700u = new com.google.android.gms.common.d("mlkit.docscan.ui", 1L);
+        f50701v = new com.google.android.gms.common.d("mlkit.docscan.stain", 1L);
+        f50702w = new com.google.android.gms.common.d("mlkit.docscan.shadow", 1L);
+        f50703x = new com.google.android.gms.common.d("mlkit.quality.aesthetic", 1L);
+        f50704y = new com.google.android.gms.common.d("mlkit.quality.technical", 1L);
+        f50705z = new com.google.android.gms.common.d("mlkit.segmentation.subject", 1L);
         mg.h hVar = new mg.h();
         hVar.a("barcode", dVar);
         hVar.a("custom_ica", dVar2);
@@ -173,7 +173,7 @@ public abstract class l {
             return ((lf.b) yg.m.a(lf.c.a(context).i(new ef.f() { // from class: tj.c0
                 @Override // ef.f
                 public final com.google.android.gms.common.d[] a() {
-                    com.google.android.gms.common.d[] dVarArr2 = l.f50632a;
+                    com.google.android.gms.common.d[] dVarArr2 = l.f50680a;
                     return dVarArr;
                 }
             }).e(new yg.f() { // from class: tj.d0
@@ -209,7 +209,7 @@ public abstract class l {
         lf.c.a(context).j(lf.f.d().a(new ef.f() { // from class: tj.a0
             @Override // ef.f
             public final com.google.android.gms.common.d[] a() {
-                com.google.android.gms.common.d[] dVarArr2 = l.f50632a;
+                com.google.android.gms.common.d[] dVarArr2 = l.f50680a;
                 return dVarArr;
             }
         }).b()).e(new yg.f() { // from class: tj.b0

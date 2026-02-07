@@ -15,52 +15,52 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public abstract class x implements u {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final List f49535q = new CopyOnWriteArrayList();
+    private static final List f49583q = new CopyOnWriteArrayList();
 
     /* renamed from: r  reason: collision with root package name */
-    private static final ReferenceQueue f49536r = new ReferenceQueue();
+    private static final ReferenceQueue f49584r = new ReferenceQueue();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f49537d;
+    private final Class f49585d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final u f49538e;
+    private final u f49586e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f49539i;
+    private final Map f49587i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f49540o;
+    private final List f49588o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Map f49541p;
+    private final Map f49589p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Class f49542a;
+        final Class f49590a;
 
         /* renamed from: b  reason: collision with root package name */
-        final boolean f49543b;
+        final boolean f49591b;
 
         /* renamed from: c  reason: collision with root package name */
-        final u f49544c;
+        final u f49592c;
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f49545d;
+        final Map f49593d;
 
         /* renamed from: e  reason: collision with root package name */
-        final List f49546e;
+        final List f49594e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(Class cls, u uVar) {
             if (uVar != null) {
-                this.f49542a = cls;
-                this.f49543b = cls.getName().startsWith("net.time4j.");
-                this.f49544c = uVar;
-                this.f49545d = new HashMap();
-                this.f49546e = new ArrayList();
+                this.f49590a = cls;
+                this.f49591b = cls.getName().startsWith("net.time4j.");
+                this.f49592c = uVar;
+                this.f49593d = new HashMap();
+                this.f49594e = new ArrayList();
                 return;
             }
             throw new NullPointerException("Missing chronological merger.");
@@ -74,13 +74,13 @@ public abstract class x implements u {
         private void c(rt.p r5) {
             /*
                 r4 = this;
-                boolean r0 = r4.f49543b
+                boolean r0 = r4.f49591b
                 if (r0 == 0) goto L5
                 goto L49
             L5:
                 if (r5 == 0) goto L4a
                 java.lang.String r0 = r5.name()
-                java.util.Map r1 = r4.f49545d
+                java.util.Map r1 = r4.f49593d
                 java.util.Set r1 = r1.keySet()
                 java.util.Iterator r1 = r1.iterator()
             L15:
@@ -117,14 +117,14 @@ public abstract class x implements u {
 
         public a a(p pVar, z zVar) {
             c(pVar);
-            this.f49545d.put(pVar, zVar);
+            this.f49593d.put(pVar, zVar);
             return this;
         }
 
         public a b(s sVar) {
             if (sVar != null) {
-                if (!this.f49546e.contains(sVar)) {
-                    this.f49546e.add(sVar);
+                if (!this.f49594e.contains(sVar)) {
+                    this.f49594e.add(sVar);
                 }
                 return this;
             }
@@ -137,11 +137,11 @@ public abstract class x implements u {
     public static class b extends WeakReference {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f49547a;
+        private final String f49595a;
 
         b(x xVar, ReferenceQueue referenceQueue) {
             super(xVar, referenceQueue);
-            this.f49547a = xVar.f49537d.getName();
+            this.f49595a = xVar.f49585d.getName();
         }
     }
 
@@ -149,21 +149,21 @@ public abstract class x implements u {
     public x(Class cls, u uVar, Map map, List list) {
         if (cls != null) {
             if (uVar != null) {
-                this.f49537d = cls;
-                this.f49538e = uVar;
+                this.f49585d = cls;
+                this.f49586e = uVar;
                 Map unmodifiableMap = Collections.unmodifiableMap(map);
-                this.f49539i = unmodifiableMap;
-                this.f49540o = Collections.unmodifiableList(list);
+                this.f49587i = unmodifiableMap;
+                this.f49588o = Collections.unmodifiableList(list);
                 HashMap hashMap = new HashMap();
                 for (p pVar : unmodifiableMap.keySet()) {
                     if (pVar.getType() == Integer.class) {
-                        Object obj = this.f49539i.get(pVar);
+                        Object obj = this.f49587i.get(pVar);
                         if (obj instanceof c0) {
                             hashMap.put(pVar, (c0) obj);
                         }
                     }
                 }
-                this.f49541p = Collections.unmodifiableMap(hashMap);
+                this.f49589p = Collections.unmodifiableMap(hashMap);
                 return;
             }
             throw new NullPointerException("Missing chronological merger.");
@@ -175,7 +175,7 @@ public abstract class x implements u {
         x xVar;
         try {
             Class.forName(cls.getName(), true, cls.getClassLoader());
-            Iterator it = f49535q.iterator();
+            Iterator it = f49583q.iterator();
             boolean z10 = false;
             while (true) {
                 if (it.hasNext()) {
@@ -201,14 +201,14 @@ public abstract class x implements u {
 
     private static void H() {
         while (true) {
-            b bVar = (b) f49536r.poll();
+            b bVar = (b) f49584r.poll();
             if (bVar != null) {
-                Iterator it = f49535q.iterator();
+                Iterator it = f49583q.iterator();
                 while (true) {
                     if (it.hasNext()) {
                         b bVar2 = (b) it.next();
-                        if (bVar2.f49547a.equals(bVar.f49547a)) {
-                            f49535q.remove(bVar2);
+                        if (bVar2.f49595a.equals(bVar.f49595a)) {
+                            f49583q.remove(bVar2);
                             break;
                         }
                     }
@@ -221,7 +221,7 @@ public abstract class x implements u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void I(x xVar) {
-        f49535q.add(new b(xVar, f49536r));
+        f49583q.add(new b(xVar, f49584r));
     }
 
     private z s(p pVar, boolean z10) {
@@ -242,7 +242,7 @@ public abstract class x implements u {
     /* JADX INFO: Access modifiers changed from: package-private */
     public z C(p pVar) {
         if (pVar != null) {
-            z zVar = (z) this.f49539i.get(pVar);
+            z zVar = (z) this.f49587i.get(pVar);
             if (zVar == null && (zVar = s(pVar, true)) == null) {
                 throw new e0(this, pVar);
             }
@@ -252,7 +252,7 @@ public abstract class x implements u {
     }
 
     public boolean E(p pVar) {
-        if (pVar != null && this.f49539i.containsKey(pVar)) {
+        if (pVar != null && this.f49587i.containsKey(pVar)) {
             return true;
         }
         return false;
@@ -270,32 +270,32 @@ public abstract class x implements u {
 
     @Override // rt.u
     public f0 a() {
-        return this.f49538e.a();
+        return this.f49586e.a();
     }
 
     @Override // rt.u
     public String b(y yVar, Locale locale) {
-        return this.f49538e.b(yVar, locale);
+        return this.f49586e.b(yVar, locale);
     }
 
     @Override // rt.u
     public x c() {
-        return this.f49538e.c();
+        return this.f49586e.c();
     }
 
     @Override // rt.u
     public int g() {
-        return this.f49538e.g();
+        return this.f49586e.g();
     }
 
     @Override // rt.u
     public o k(Object obj, d dVar) {
-        return this.f49538e.k(obj, dVar);
+        return this.f49586e.k(obj, dVar);
     }
 
     @Override // rt.u
     public Object l(q qVar, d dVar, boolean z10, boolean z11) {
-        return this.f49538e.l(qVar, dVar, z10, z11);
+        return this.f49586e.l(qVar, dVar, z10, z11);
     }
 
     public k o() {
@@ -303,20 +303,20 @@ public abstract class x implements u {
     }
 
     public Class p() {
-        return this.f49537d;
+        return this.f49585d;
     }
 
     public List u() {
-        return this.f49540o;
+        return this.f49588o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0 y(p pVar) {
-        return (c0) this.f49541p.get(pVar);
+        return (c0) this.f49589p.get(pVar);
     }
 
     public Set z() {
-        return this.f49539i.keySet();
+        return this.f49587i.keySet();
     }
 
     private static Object n(Object obj) {

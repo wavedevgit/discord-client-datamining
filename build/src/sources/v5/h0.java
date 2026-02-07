@@ -9,10 +9,10 @@ import w5.c;
 public class h0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h0 f52193a = new h0();
+    public static final h0 f52241a = new h0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52194b = c.a.a("c", "v", "i", "o");
+    private static final c.a f52242b = c.a.a("c", "v", "i", "o");
 
     private h0() {
     }
@@ -29,7 +29,7 @@ public class h0 implements n0 {
         List list3 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52194b);
+            int p10 = cVar.p(f52242b);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

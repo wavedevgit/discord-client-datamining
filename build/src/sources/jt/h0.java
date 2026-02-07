@@ -7,7 +7,7 @@ public interface h0 extends KSerializer {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
         public static KSerializer[] a(h0 h0Var) {
-            return c2.f30981a;
+            return c2.f31029a;
         }
     }
 

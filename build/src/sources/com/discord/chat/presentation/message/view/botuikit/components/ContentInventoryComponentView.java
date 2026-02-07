@@ -189,7 +189,7 @@ public final class ContentInventoryComponentView extends ConstraintLayout implem
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
         this.draweeControllerBuilder = e9.d.g();
-        this.binding$delegate = qr.l.b(o.f48045i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.g
+        this.binding$delegate = qr.l.b(o.f48093i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MessageComponentContentInventoryViewBinding binding_delegate$lambda$4;

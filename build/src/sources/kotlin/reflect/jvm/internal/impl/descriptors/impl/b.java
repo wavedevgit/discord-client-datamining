@@ -6,16 +6,16 @@ import kotlin.reflect.jvm.internal.impl.types.UnwrappedType;
 class b implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeAliasDescriptor f32588d;
+    private final AbstractTypeAliasDescriptor f32636d;
 
     public b(AbstractTypeAliasDescriptor abstractTypeAliasDescriptor) {
-        this.f32588d = abstractTypeAliasDescriptor;
+        this.f32636d = abstractTypeAliasDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Boolean i10;
-        i10 = AbstractTypeAliasDescriptor.i(this.f32588d, (UnwrappedType) obj);
+        i10 = AbstractTypeAliasDescriptor.i(this.f32636d, (UnwrappedType) obj);
         return i10;
     }
 }

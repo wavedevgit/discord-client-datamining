@@ -7,10 +7,10 @@ import java.util.List;
 public final class q implements o.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p f25503a;
+    private final p f25551a;
 
     q(p pVar) {
-        this.f25503a = pVar;
+        this.f25551a = pVar;
     }
 
     public static br.h b(p pVar) {
@@ -19,6 +19,6 @@ public final class q implements o.a {
 
     @Override // gp.o.a
     public o a(String str, b bVar, m mVar, List list, StepStyles.UiStepStyle uiStepStyle, Integer num) {
-        return this.f25503a.b(str, bVar, mVar, list, uiStepStyle, num);
+        return this.f25551a.b(str, bVar, mVar, list, uiStepStyle, num);
     }
 }

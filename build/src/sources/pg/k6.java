@@ -5,23 +5,23 @@ import yi.c;
 final class k6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f44407a = new k6();
+    static final k6 f44455a = new k6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44408b;
+    private static final yi.c f44456b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44409c;
+    private static final yi.c f44457c;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44408b = a10.b(s1Var.b()).a();
+        f44456b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44409c = a11.b(s1Var2.b()).a();
+        f44457c = a11.b(s1Var2.b()).a();
     }
 
     private k6() {

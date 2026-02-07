@@ -7,16 +7,16 @@ import java.util.List;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f38496a = new ArrayList();
+    private final List f38544a = new ArrayList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(u uVar) {
-        this.f38496a.add(uVar);
+        this.f38544a.add(uVar);
     }
 
     public void b(Path path) {
-        for (int size = this.f38496a.size() - 1; size >= 0; size--) {
-            x5.j.b(path, (u) this.f38496a.get(size));
+        for (int size = this.f38544a.size() - 1; size >= 0; size--) {
+            x5.j.b(path, (u) this.f38544a.get(size));
         }
     }
 }

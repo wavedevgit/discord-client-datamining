@@ -94,7 +94,7 @@ public abstract class o0 {
             L4e:
                 return r0
             L4f:
-                kotlin.Unit r5 = kotlin.Unit.f32008a
+                kotlin.Unit r5 = kotlin.Unit.f32056a
                 return r5
             */
             throw new UnsupportedOperationException("Method not decompiled: androidx.core.view.o0.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -103,7 +103,7 @@ public abstract class o0 {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(kotlin.sequences.j jVar, Continuation continuation) {
-            return ((a) create(jVar, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(jVar, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

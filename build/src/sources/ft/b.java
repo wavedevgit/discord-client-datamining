@@ -33,7 +33,7 @@ public final class b implements KSerializer {
         this.f23732a = serializableClass;
         this.f23733b = kSerializer;
         this.f23734c = kotlin.collections.i.e(typeArgumentsSerializers);
-        this.f23735d = ht.b.c(ht.j.d("kotlinx.serialization.ContextualSerializer", k.a.f26487a, new SerialDescriptor[0], new Function1() { // from class: ft.a
+        this.f23735d = ht.b.c(ht.j.d("kotlinx.serialization.ContextualSerializer", k.a.f26535a, new SerialDescriptor[0], new Function1() { // from class: ft.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit b10;
@@ -58,7 +58,7 @@ public final class b implements KSerializer {
             list = CollectionsKt.l();
         }
         buildSerialDescriptor.h(list);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final KSerializer c(mt.b bVar) {

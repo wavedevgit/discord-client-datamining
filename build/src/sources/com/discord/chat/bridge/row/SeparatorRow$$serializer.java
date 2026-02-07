@@ -51,12 +51,12 @@ public /* synthetic */ class SeparatorRow$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        h hVar = h.f31005a;
+        h hVar = h.f31053a;
         KSerializer u10 = gt.a.u(hVar);
         KSerializer u11 = gt.a.u(hVar);
         KSerializer u12 = gt.a.u(Summary$$serializer.INSTANCE);
-        p0 p0Var = p0.f31057a;
-        n2 n2Var = n2.f31041a;
+        p0 p0Var = p0.f31105a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{ChangeType.Serializer.INSTANCE, p0Var, n2Var, n2Var, p0Var, u10, u11, u12};
     }
 
@@ -82,7 +82,7 @@ public /* synthetic */ class SeparatorRow$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 2);
             String m11 = b10.m(serialDescriptor, 3);
             int i16 = b10.i(serialDescriptor, 4);
-            h hVar = h.f31005a;
+            h hVar = h.f31053a;
             changeType = (ChangeType) b10.y(serialDescriptor, 0, ChangeType.Serializer.INSTANCE, null);
             summary = (Summary) b10.n(serialDescriptor, 7, Summary$$serializer.INSTANCE, null);
             bool = (Boolean) b10.n(serialDescriptor, 6, hVar, null);
@@ -133,11 +133,11 @@ public /* synthetic */ class SeparatorRow$$serializer implements h0 {
                         i18 |= 16;
                         break;
                     case 5:
-                        bool4 = (Boolean) b10.n(serialDescriptor, 5, h.f31005a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, 5, h.f31053a, bool4);
                         i18 |= 32;
                         break;
                     case 6:
-                        bool3 = (Boolean) b10.n(serialDescriptor, i14, h.f31005a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, i14, h.f31053a, bool3);
                         i18 |= 64;
                         break;
                     case 7:

@@ -13,19 +13,19 @@ import java.util.ConcurrentModificationException;
 public abstract class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f38953a = new Object();
+    private static final Object f39001a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f38954b = new Object();
+    private static final Object f39002b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f38955c = false;
+    private static boolean f39003c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private static long f38956d = 0;
+    private static long f39004d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private static String f38957e = "time.android.com";
+    private static String f39005e = "time.android.com";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -56,10 +56,10 @@ public abstract class m0 {
 
     public static long h() {
         long j10;
-        synchronized (f38954b) {
+        synchronized (f39002b) {
             try {
-                if (f38955c) {
-                    j10 = f38956d;
+                if (f39003c) {
+                    j10 = f39004d;
                 } else {
                     j10 = -9223372036854775807L;
                 }
@@ -72,8 +72,8 @@ public abstract class m0 {
 
     public static String i() {
         String str;
-        synchronized (f38954b) {
-            str = f38957e;
+        synchronized (f39002b) {
+            str = f39005e;
         }
         return str;
     }
@@ -94,8 +94,8 @@ public abstract class m0 {
 
     public static boolean k() {
         boolean z10;
-        synchronized (f38954b) {
-            z10 = f38955c;
+        synchronized (f39002b) {
+            z10 = f39003c;
         }
         return z10;
     }
@@ -188,15 +188,15 @@ public abstract class m0 {
 
         @Override // com.google.android.exoplayer2.upstream.j.e
         public void b() {
-            synchronized (m0.f38953a) {
-                synchronized (m0.f38954b) {
-                    if (m0.f38955c) {
+            synchronized (m0.f39001a) {
+                synchronized (m0.f39002b) {
+                    if (m0.f39003c) {
                         return;
                     }
                     long e10 = m0.e();
-                    synchronized (m0.f38954b) {
-                        long unused = m0.f38956d = e10;
-                        boolean unused2 = m0.f38955c = true;
+                    synchronized (m0.f39002b) {
+                        long unused = m0.f39004d = e10;
+                        boolean unused2 = m0.f39003c = true;
                     }
                 }
             }
@@ -211,26 +211,26 @@ public abstract class m0 {
     private static final class c implements j.b {
 
         /* renamed from: d  reason: collision with root package name */
-        private final b f38958d;
+        private final b f39006d;
 
         public c(b bVar) {
-            this.f38958d = bVar;
+            this.f39006d = bVar;
         }
 
         @Override // com.google.android.exoplayer2.upstream.j.b
         public void j(j.e eVar, long j10, long j11) {
-            if (this.f38958d != null) {
+            if (this.f39006d != null) {
                 if (!m0.k()) {
-                    this.f38958d.a(new IOException(new ConcurrentModificationException()));
+                    this.f39006d.a(new IOException(new ConcurrentModificationException()));
                 } else {
-                    this.f38958d.b();
+                    this.f39006d.b();
                 }
             }
         }
 
         @Override // com.google.android.exoplayer2.upstream.j.b
         public j.c n(j.e eVar, long j10, long j11, IOException iOException, int i10) {
-            b bVar = this.f38958d;
+            b bVar = this.f39006d;
             if (bVar != null) {
                 bVar.a(iOException);
             }

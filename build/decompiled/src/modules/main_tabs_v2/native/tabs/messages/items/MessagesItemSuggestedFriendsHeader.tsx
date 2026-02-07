@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var4;
     var4 = var7.memo;
     var3 = function arg0() {
-        _fun101488: for (var _fun101488_ip = 0;;) switch (_fun101488_ip) {
+        _fun101969: for (var _fun101969_ip = 0;;) switch (_fun101969_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.stickyAt;
@@ -108,14 +108,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)(var1);
                 var2 = var4.useDerivedValue;
                 var1 = function() {
-                    _fun101489: for (var _fun101489_ip = 0;;) switch (_fun101489_ip) {
+                    _fun101970: for (var _fun101970_ip = 0;;) switch (_fun101970_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun101489_ip = 37;
-                                continue _fun101489
+                                _fun101970_ip = 37;
+                                continue _fun101970
                             }
                         case 16:
                             var3 = _closure2_slot1;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.collapsable = var6;
                 var6 = null;
                 if (!var4) {
-                    _fun101488_ip = 331;
-                    continue _fun101488
+                    _fun101969_ip = 331;
+                    continue _fun101969
                 }
             case 227:
                 var9 = _closure1_slot7;
@@ -246,4 +246,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3943, 671, 1297, 3722, 8218, 8751, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3942, 671, 1297, 3721, 8262, 8795, 1234, 2]);

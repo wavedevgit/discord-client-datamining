@@ -20,7 +20,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$68 exten
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
         m523invokeSHRpUJI(((Number) obj).intValue(), ((ChannelId) obj2).m1066unboximpl(), ((MessageId) obj3).m1092unboximpl());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* renamed from: invoke-SHRpUJI  reason: not valid java name */

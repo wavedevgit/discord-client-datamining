@@ -11,49 +11,49 @@ public abstract class j {
     private static final /* synthetic */ j[] D;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final j f50170d;
+    public static final j f50218d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final j f50171e;
+    public static final j f50219e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final j f50172i;
+    public static final j f50220i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final j f50173o;
+    public static final j f50221o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final j f50174p;
+    public static final j f50222p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final j f50175q;
+    public static final j f50223q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final j f50176r;
+    public static final j f50224r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final j f50177s;
+    public static final j f50225s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final j f50178t;
+    public static final j f50226t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final j f50179u;
+    public static final j f50227u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final j f50180v;
+    public static final j f50228v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final j f50181w;
+    public static final j f50229w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final j f50182x;
+    public static final j f50230x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final j f50183y;
+    public static final j f50231y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final j f50184z;
+    public static final j f50232z;
     private final String code;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -100,7 +100,7 @@ public abstract class j {
 
     static {
         g gVar = new g("ARABIC", 0, "latn");
-        f50170d = gVar;
+        f50218d = gVar;
         j jVar = new j("ARABIC_INDIC", 1, "arab") { // from class: st.j.h
             @Override // st.j
             public String m() {
@@ -112,7 +112,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50171e = jVar;
+        f50219e = jVar;
         j jVar2 = new j("ARABIC_INDIC_EXT", 2, "arabext") { // from class: st.j.i
             @Override // st.j
             public String m() {
@@ -124,7 +124,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50172i = jVar2;
+        f50220i = jVar2;
         j jVar3 = new j("BENGALI", 3, "beng") { // from class: st.j.j
             @Override // st.j
             public String m() {
@@ -136,7 +136,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50173o = jVar3;
+        f50221o = jVar3;
         j jVar4 = new j("DEVANAGARI", 4, "deva") { // from class: st.j.k
             @Override // st.j
             public String m() {
@@ -148,7 +148,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50174p = jVar4;
+        f50222p = jVar4;
         j jVar5 = new j("DOZENAL", 5, "dozenal") { // from class: st.j.l
             @Override // st.j
             public boolean j(char c10) {
@@ -222,7 +222,7 @@ public abstract class j {
                 throw new IllegalArgumentException("Cannot convert: " + i10);
             }
         };
-        f50175q = jVar5;
+        f50223q = jVar5;
         j jVar6 = new j("ETHIOPIC", 6, "ethiopic") { // from class: st.j.m
             @Override // st.j
             public boolean j(char c10) {
@@ -396,7 +396,7 @@ public abstract class j {
                 throw new UnsupportedOperationException("Method not decompiled: st.j.m.t(int):java.lang.String");
             }
         };
-        f50176r = jVar6;
+        f50224r = jVar6;
         j jVar7 = new j("GUJARATI", 7, "gujr") { // from class: st.j.n
             @Override // st.j
             public String m() {
@@ -408,7 +408,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50177s = jVar7;
+        f50225s = jVar7;
         j jVar8 = new j("JAPANESE", 8, "jpan") { // from class: st.j.o
             @Override // st.j
             public String m() {
@@ -527,7 +527,7 @@ public abstract class j {
                 throw new IllegalArgumentException("Cannot convert: " + i10);
             }
         };
-        f50178t = jVar8;
+        f50226t = jVar8;
         j jVar9 = new j("KHMER", 9, "khmr") { // from class: st.j.a
             @Override // st.j
             public String m() {
@@ -539,7 +539,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50179u = jVar9;
+        f50227u = jVar9;
         j jVar10 = new j("MYANMAR", 10, "mymr") { // from class: st.j.b
             @Override // st.j
             public String m() {
@@ -551,7 +551,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50180v = jVar10;
+        f50228v = jVar10;
         j jVar11 = new j("ORYA", 11, "orya") { // from class: st.j.c
             @Override // st.j
             public String m() {
@@ -563,7 +563,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50181w = jVar11;
+        f50229w = jVar11;
         j jVar12 = new j("ROMAN", 12, "roman") { // from class: st.j.d
             @Override // st.j
             public boolean j(char c10) {
@@ -615,7 +615,7 @@ public abstract class j {
                 throw new IllegalArgumentException("Out of range (1-3999): " + i10);
             }
         };
-        f50182x = jVar12;
+        f50230x = jVar12;
         j jVar13 = new j("TELUGU", 13, "telu") { // from class: st.j.e
             @Override // st.j
             public String m() {
@@ -627,7 +627,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50183y = jVar13;
+        f50231y = jVar13;
         j jVar14 = new j("THAI", 14, "thai") { // from class: st.j.f
             @Override // st.j
             public String m() {
@@ -639,7 +639,7 @@ public abstract class j {
                 return true;
             }
         };
-        f50184z = jVar14;
+        f50232z = jVar14;
         D = new j[]{gVar, jVar, jVar2, jVar3, jVar4, jVar5, jVar6, jVar7, jVar8, jVar9, jVar10, jVar11, jVar12, jVar13, jVar14};
         A = new int[]{1000, 900, 500, ReactFontManager.TypefaceStyle.NORMAL, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         B = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};

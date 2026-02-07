@@ -19,7 +19,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     public static boolean RUN_SLOW_ASSERTIONS;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f34570o;
+    private boolean f34618o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -39,8 +39,8 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     }
 
     private final void b() {
-        if (RUN_SLOW_ASSERTIONS && !this.f34570o) {
-            this.f34570o = true;
+        if (RUN_SLOW_ASSERTIONS && !this.f34618o) {
+            this.f34618o = true;
             FlexibleTypesKt.isFlexible(getLowerBound());
             FlexibleTypesKt.isFlexible(getUpperBound());
             Intrinsics.areEqual(getLowerBound(), getUpperBound());

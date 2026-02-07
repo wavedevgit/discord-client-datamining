@@ -67,14 +67,14 @@ public final class m extends FileAssetLoader {
                     m.this.f17678e.invoke(this.f17684i, this.f17685o);
                 } catch (Exception unused) {
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

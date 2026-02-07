@@ -8,11 +8,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f49209d;
+    private final d f49257d;
 
     public e(d backing) {
         Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f49209d = backing;
+        this.f49257d = backing;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -24,24 +24,24 @@ public final class e extends a {
     @Override // rr.a
     public boolean c(Map.Entry element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f49209d.o(element);
+        return this.f49257d.o(element);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public void clear() {
-        this.f49209d.clear();
+        this.f49257d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean containsAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return this.f49209d.n(elements);
+        return this.f49257d.n(elements);
     }
 
     @Override // rr.a
     public boolean d(Map.Entry element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f49209d.I(element);
+        return this.f49257d.I(element);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -53,30 +53,30 @@ public final class e extends a {
 
     @Override // kotlin.collections.g
     public int getSize() {
-        return this.f49209d.size();
+        return this.f49257d.size();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean isEmpty() {
-        return this.f49209d.isEmpty();
+        return this.f49257d.isEmpty();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public Iterator iterator() {
-        return this.f49209d.s();
+        return this.f49257d.s();
     }
 
     @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean removeAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f49209d.l();
+        this.f49257d.l();
         return super.removeAll(elements);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean retainAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f49209d.l();
+        this.f49257d.l();
         return super.retainAll(elements);
     }
 }

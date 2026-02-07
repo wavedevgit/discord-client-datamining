@@ -10,28 +10,28 @@ import net.time4j.c1;
 public final class f implements h {
 
     /* renamed from: s  reason: collision with root package name */
-    private static final rt.t f50960s = new a();
+    private static final rt.t f51008s = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final rt.p f50961d;
+    private final rt.p f51009d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e f50962e;
+    private final e f51010e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final d f50963i;
+    private final d f51011i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f50964o;
+    private final boolean f51012o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f50965p;
+    private boolean f51013p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f50966q;
+    private boolean f51014q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f50967r;
+    private boolean f51015r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static class a implements rt.t {
@@ -70,18 +70,18 @@ public final class f implements h {
         int f10 = sVar.f();
         if (z10) {
             try {
-                if (this.f50966q) {
-                    dVar = ((c) c.class.cast(this.f50963i)).o();
+                if (this.f51014q) {
+                    dVar = ((c) c.class.cast(this.f51011i)).o();
                 }
             } catch (IndexOutOfBoundsException e10) {
                 sVar.k(f10, e10.getMessage());
                 return;
             }
         }
-        Object a10 = this.f50963i.a(charSequence, sVar, dVar);
+        Object a10 = this.f51011i.a(charSequence, sVar, dVar);
         if (a10 == null) {
             sVar.k(f10, sVar.d());
-        } else if (this.f50967r && (tVar instanceof u)) {
+        } else if (this.f51015r && (tVar instanceof u)) {
             tVar.J(a10);
         } else {
             rt.q g10 = sVar.g();
@@ -92,21 +92,21 @@ public final class f implements h {
                     tVar.I(pVar, g10.s(pVar));
                 }
             }
-            tVar.I(this.f50961d, a10);
+            tVar.I(this.f51009d, a10);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c() {
-        return this.f50967r;
+        return this.f51015r;
     }
 
     @Override // tt.h
     public h d(rt.p pVar) {
-        if (this.f50961d == pVar) {
+        if (this.f51009d == pVar) {
             return this;
         }
-        return new f(pVar, this.f50962e, this.f50963i);
+        return new f(pVar, this.f51010e, this.f51011i);
     }
 
     @Override // tt.h
@@ -114,17 +114,17 @@ public final class f implements h {
         boolean z10;
         boolean z11;
         boolean z12;
-        if (cVar.z() && this.f50961d.getType().equals(cVar.q().p())) {
+        if (cVar.z() && this.f51009d.getType().equals(cVar.q().p())) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (dVar instanceof b) {
-            e eVar = this.f50962e;
-            d dVar2 = this.f50963i;
+            e eVar = this.f51010e;
+            d dVar2 = this.f51011i;
             Map r10 = cVar.r();
             b bVar = (b) dVar;
-            e eVar2 = this.f50962e;
+            e eVar2 = this.f51010e;
             if (eVar2 instanceof c) {
                 c cVar2 = (c) c.class.cast(eVar2);
                 eVar = cVar2.R(b(r10, cVar2), bVar);
@@ -133,7 +133,7 @@ public final class f implements h {
                 z11 = false;
             }
             e eVar3 = eVar;
-            d dVar3 = this.f50963i;
+            d dVar3 = this.f51011i;
             if (dVar3 instanceof c) {
                 c cVar3 = (c) c.class.cast(dVar3);
                 dVar2 = cVar3.R(b(r10, cVar3), bVar);
@@ -141,11 +141,11 @@ public final class f implements h {
             } else {
                 z12 = false;
             }
-            return new f(this.f50961d, eVar3, dVar2, z11, z12, z10);
-        } else if (!this.f50965p && !this.f50966q) {
+            return new f(this.f51009d, eVar3, dVar2, z11, z12, z10);
+        } else if (!this.f51013p && !this.f51014q) {
             return this;
         } else {
-            return new f(this.f50961d, this.f50962e, this.f50963i);
+            return new f(this.f51009d, this.f51010e, this.f51011i);
         }
     }
 
@@ -155,7 +155,7 @@ public final class f implements h {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f50961d.equals(fVar.f50961d) && this.f50962e.equals(fVar.f50962e) && this.f50963i.equals(fVar.f50963i)) {
+            if (this.f51009d.equals(fVar.f51009d) && this.f51010e.equals(fVar.f51010e) && this.f51011i.equals(fVar.f51011i)) {
                 return true;
             }
         }
@@ -164,18 +164,18 @@ public final class f implements h {
 
     @Override // tt.h
     public int f(rt.o oVar, Appendable appendable, rt.d dVar, Set set, boolean z10) {
-        if (z10 && this.f50965p) {
-            dVar = ((c) c.class.cast(this.f50962e)).o();
+        if (z10 && this.f51013p) {
+            dVar = ((c) c.class.cast(this.f51010e)).o();
         }
-        if (this.f50964o && (oVar instanceof c1) && set == null) {
-            ((c) this.f50962e).K(oVar, appendable, dVar, false);
+        if (this.f51012o && (oVar instanceof c1) && set == null) {
+            ((c) this.f51010e).K(oVar, appendable, dVar, false);
             return Integer.MAX_VALUE;
         }
-        Object s10 = oVar.s(this.f50961d);
+        Object s10 = oVar.s(this.f51009d);
         StringBuilder sb2 = new StringBuilder();
         if ((appendable instanceof CharSequence) && set != null) {
             int length = ((CharSequence) appendable).length();
-            e eVar = this.f50962e;
+            e eVar = this.f51010e;
             if (eVar instanceof c) {
                 Set<g> h10 = h((c) c.class.cast(eVar), s10, sb2, dVar);
                 LinkedHashSet linkedHashSet = new LinkedHashSet();
@@ -184,11 +184,11 @@ public final class f implements h {
                 }
                 set.addAll(linkedHashSet);
             } else {
-                eVar.b(s10, sb2, dVar, f50960s);
+                eVar.b(s10, sb2, dVar, f51008s);
             }
-            set.add(new g(this.f50961d, length, sb2.length() + length));
+            set.add(new g(this.f51009d, length, sb2.length() + length));
         } else {
-            this.f50962e.b(s10, sb2, dVar, f50960s);
+            this.f51010e.b(s10, sb2, dVar, f51008s);
         }
         appendable.append(sb2);
         return sb2.length();
@@ -201,22 +201,22 @@ public final class f implements h {
 
     @Override // tt.h
     public rt.p getElement() {
-        return this.f50961d;
+        return this.f51009d;
     }
 
     public int hashCode() {
-        return (this.f50961d.hashCode() * 7) + (this.f50962e.hashCode() * 31) + (this.f50963i.hashCode() * 37);
+        return (this.f51009d.hashCode() * 7) + (this.f51010e.hashCode() * 31) + (this.f51011i.hashCode() * 37);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(f.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f50961d.name());
+        sb2.append(this.f51009d.name());
         sb2.append(", printer=");
-        sb2.append(this.f50962e);
+        sb2.append(this.f51010e);
         sb2.append(", parser=");
-        sb2.append(this.f50963i);
+        sb2.append(this.f51011i);
         sb2.append(']');
         return sb2.toString();
     }
@@ -229,13 +229,13 @@ public final class f implements h {
             throw new NullPointerException("Missing printer.");
         }
         if (dVar != null) {
-            this.f50961d = pVar;
-            this.f50962e = eVar;
-            this.f50963i = dVar;
-            this.f50964o = (eVar instanceof c) && pVar.getType() == net.time4j.a0.class;
-            this.f50965p = z10;
-            this.f50966q = z11;
-            this.f50967r = z12;
+            this.f51009d = pVar;
+            this.f51010e = eVar;
+            this.f51011i = dVar;
+            this.f51012o = (eVar instanceof c) && pVar.getType() == net.time4j.a0.class;
+            this.f51013p = z10;
+            this.f51014q = z11;
+            this.f51015r = z12;
             return;
         }
         throw new NullPointerException("Missing parser.");

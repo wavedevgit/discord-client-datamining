@@ -7,29 +7,29 @@ import android.view.Surface;
 class j implements SurfaceTexture.OnFrameAvailableListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private SurfaceTexture f51619d;
+    private SurfaceTexture f51667d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Surface f51620e;
+    private Surface f51668e;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f51623p;
+    private boolean f51671p;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Object f51622o = new Object();
+    private final Object f51670o = new Object();
 
     /* renamed from: i  reason: collision with root package name */
-    private int f51621i = b();
+    private int f51669i = b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(int i10, int i11) {
-        SurfaceTexture surfaceTexture = new SurfaceTexture(this.f51621i);
-        this.f51619d = surfaceTexture;
+        SurfaceTexture surfaceTexture = new SurfaceTexture(this.f51669i);
+        this.f51667d = surfaceTexture;
         if (i10 != -1 && i11 != -1) {
             surfaceTexture.setDefaultBufferSize(i10, i11);
         }
-        this.f51620e = new Surface(this.f51619d);
-        this.f51619d.setOnFrameAvailableListener(this);
+        this.f51668e = new Surface(this.f51667d);
+        this.f51667d.setOnFrameAvailableListener(this);
     }
 
     private int b() {
@@ -48,56 +48,56 @@ class j implements SurfaceTexture.OnFrameAvailableListener {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        synchronized (this.f51622o) {
-            while (!this.f51623p) {
+        synchronized (this.f51670o) {
+            while (!this.f51671p) {
                 try {
-                    this.f51622o.wait(10000L);
-                    if (!this.f51623p) {
+                    this.f51670o.wait(10000L);
+                    if (!this.f51671p) {
                         throw new RuntimeException("Surface frame wait timed out");
                     }
                 } catch (InterruptedException e10) {
                     throw new RuntimeException(e10);
                 }
             }
-            this.f51623p = false;
+            this.f51671p = false;
         }
         f.a("before updateTexImage");
-        this.f51619d.updateTexImage();
+        this.f51667d.updateTexImage();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Surface c() {
-        return this.f51620e;
+        return this.f51668e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f51621i;
+        return this.f51669i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float[] e() {
         float[] fArr = new float[16];
-        this.f51619d.getTransformMatrix(fArr);
+        this.f51667d.getTransformMatrix(fArr);
         return fArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        Surface surface = this.f51620e;
+        Surface surface = this.f51668e;
         if (surface != null) {
             surface.release();
-            this.f51620e = null;
+            this.f51668e = null;
         }
     }
 
     @Override // android.graphics.SurfaceTexture.OnFrameAvailableListener
     public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-        synchronized (this.f51622o) {
+        synchronized (this.f51670o) {
             try {
-                if (!this.f51623p) {
-                    this.f51623p = true;
-                    this.f51622o.notifyAll();
+                if (!this.f51671p) {
+                    this.f51671p = true;
+                    this.f51670o.notifyAll();
                 } else {
                     throw new RuntimeException("frameAvailable already set, frame could be dropped");
                 }

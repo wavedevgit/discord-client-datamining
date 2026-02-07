@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DeserializedPackageFragment extends PackageFragmentDescriptorImpl {
 
     /* renamed from: r  reason: collision with root package name */
-    private final StorageManager f34325r;
+    private final StorageManager f34373r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeserializedPackageFragment(@NotNull FqName fqName, @NotNull StorageManager storageManager, @NotNull ModuleDescriptor module) {
@@ -21,7 +21,7 @@ public abstract class DeserializedPackageFragment extends PackageFragmentDescrip
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(module, "module");
-        this.f34325r = storageManager;
+        this.f34373r = storageManager;
     }
 
     @NotNull

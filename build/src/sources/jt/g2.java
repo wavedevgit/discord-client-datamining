@@ -7,16 +7,16 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class g2 implements SerialDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f31003a;
+    private final String f31051a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ht.e f31004b;
+    private final ht.e f31052b;
 
     public g2(String serialName, ht.e kind) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(kind, "kind");
-        this.f31003a = serialName;
-        this.f31004b = kind;
+        this.f31051a = serialName;
+        this.f31052b = kind;
     }
 
     private final Void a() {
@@ -79,7 +79,7 @@ public final class g2 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return this.f31003a;
+        return this.f31051a;
     }
 
     public int hashCode() {
@@ -100,7 +100,7 @@ public final class g2 implements SerialDescriptor {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     /* renamed from: j */
     public ht.e getKind() {
-        return this.f31004b;
+        return this.f31052b;
     }
 
     public String toString() {

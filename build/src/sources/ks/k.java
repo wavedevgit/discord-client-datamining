@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 public final class k extends c1 {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final k f35350o = new k();
+    public static final k f35398o = new k();
 
     private k() {
     }

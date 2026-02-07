@@ -5,22 +5,22 @@ import com.facebook.react.bridge.Dynamic;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f25389a;
+    private Object f25437a;
 
     public k() {
     }
 
     public Object a() {
-        return this.f25389a;
+        return this.f25437a;
     }
 
     public void b(Dynamic dynamic) {
-        this.f25389a = c(dynamic);
+        this.f25437a = c(dynamic);
     }
 
     abstract Object c(Dynamic dynamic);
 
     public k(Object obj) {
-        this.f25389a = obj;
+        this.f25437a = obj;
     }
 }

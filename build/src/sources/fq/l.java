@@ -89,6 +89,6 @@ public abstract class l {
         ConstraintLayout root = eVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         kq.q.b(root, clickableStackComponentStyle);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

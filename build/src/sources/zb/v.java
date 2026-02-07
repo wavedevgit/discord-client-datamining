@@ -5,26 +5,26 @@ import javax.inject.Provider;
 public final class v implements bc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f56108a;
+    private final Provider f56156a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f56109b;
+    private final Provider f56157b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Provider f56110c;
+    private final Provider f56158c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f56111d;
+    private final Provider f56159d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Provider f56112e;
+    private final Provider f56160e;
 
     public v(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5) {
-        this.f56108a = provider;
-        this.f56109b = provider2;
-        this.f56110c = provider3;
-        this.f56111d = provider4;
-        this.f56112e = provider5;
+        this.f56156a = provider;
+        this.f56157b = provider2;
+        this.f56158c = provider3;
+        this.f56159d = provider4;
+        this.f56160e = provider5;
     }
 
     public static v a(Provider provider, Provider provider2, Provider provider3, Provider provider4, Provider provider5) {
@@ -38,6 +38,6 @@ public final class v implements bc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public t get() {
-        return c((jc.a) this.f56108a.get(), (jc.a) this.f56109b.get(), (fc.e) this.f56110c.get(), (gc.r) this.f56111d.get(), (gc.v) this.f56112e.get());
+        return c((jc.a) this.f56156a.get(), (jc.a) this.f56157b.get(), (fc.e) this.f56158c.get(), (gc.r) this.f56159d.get(), (gc.v) this.f56160e.get());
     }
 }

@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108821: for (var _fun108821_ip = 0;;) switch (_fun108821_ip) {
+        _fun109297: for (var _fun109297_ip = 0;;) switch (_fun109297_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.navigation;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var4.length;
                 var1 = 0;
                 if (!(var1 === var7)) {
-                    _fun108821_ip = 281;
-                    continue _fun108821
+                    _fun109297_ip = 281;
+                    continue _fun109297
                 }
             case 269:
                 var1 = var2.goBack;
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3102, 1621, 8922, 660, 33, 5734, 5584, 566, 14047, 7377, 9123, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3102, 1621, 8966, 660, 33, 5777, 5631, 566, 14089, 7421, 9168, 2]);

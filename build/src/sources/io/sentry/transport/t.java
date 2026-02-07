@@ -6,13 +6,13 @@ import io.sentry.l5;
 public final class t implements q {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final t f28911d = new t();
+    private static final t f28959d = new t();
 
     private t() {
     }
 
     public static t a() {
-        return f28911d;
+        return f28959d;
     }
 
     @Override // io.sentry.transport.q

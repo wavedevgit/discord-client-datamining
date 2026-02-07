@@ -3,13 +3,13 @@ package io.sentry;
 public final class l4 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final l4 f28277a = new l4();
+    private static final l4 f28325a = new l4();
 
     private l4() {
     }
 
     public static l4 g() {
-        return f28277a;
+        return f28325a;
     }
 
     @Override // io.sentry.w0

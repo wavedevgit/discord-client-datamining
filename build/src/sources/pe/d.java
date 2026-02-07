@@ -10,25 +10,25 @@ import android.view.Display;
 final class d implements SensorEventListener {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f43806a = new float[16];
+    private final float[] f43854a = new float[16];
 
     /* renamed from: b  reason: collision with root package name */
-    private final float[] f43807b = new float[16];
+    private final float[] f43855b = new float[16];
 
     /* renamed from: c  reason: collision with root package name */
-    private final float[] f43808c = new float[16];
+    private final float[] f43856c = new float[16];
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f43809d = new float[3];
+    private final float[] f43857d = new float[3];
 
     /* renamed from: e  reason: collision with root package name */
-    private final Display f43810e;
+    private final Display f43858e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a[] f43811f;
+    private final a[] f43859f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f43812g;
+    private boolean f43860g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -36,30 +36,30 @@ final class d implements SensorEventListener {
     }
 
     public d(Display display, a... aVarArr) {
-        this.f43810e = display;
-        this.f43811f = aVarArr;
+        this.f43858e = display;
+        this.f43859f = aVarArr;
     }
 
     private float a(float[] fArr) {
-        SensorManager.remapCoordinateSystem(fArr, 1, 131, this.f43807b);
-        SensorManager.getOrientation(this.f43807b, this.f43809d);
-        return this.f43809d[2];
+        SensorManager.remapCoordinateSystem(fArr, 1, 131, this.f43855b);
+        SensorManager.getOrientation(this.f43855b, this.f43857d);
+        return this.f43857d[2];
     }
 
     private void b(float[] fArr, float f10) {
-        for (a aVar : this.f43811f) {
+        for (a aVar : this.f43859f) {
             aVar.a(fArr, f10);
         }
     }
 
     private void c(float[] fArr) {
-        if (!this.f43812g) {
-            c.a(this.f43808c, fArr);
-            this.f43812g = true;
+        if (!this.f43860g) {
+            c.a(this.f43856c, fArr);
+            this.f43860g = true;
         }
-        float[] fArr2 = this.f43807b;
+        float[] fArr2 = this.f43855b;
         System.arraycopy(fArr, 0, fArr2, 0, fArr2.length);
-        Matrix.multiplyMM(fArr, 0, this.f43807b, 0, this.f43808c, 0);
+        Matrix.multiplyMM(fArr, 0, this.f43855b, 0, this.f43856c, 0);
     }
 
     private void d(float[] fArr, int i10) {
@@ -80,9 +80,9 @@ final class d implements SensorEventListener {
                 i12 = 129;
                 i11 = 2;
             }
-            float[] fArr2 = this.f43807b;
+            float[] fArr2 = this.f43855b;
             System.arraycopy(fArr, 0, fArr2, 0, fArr2.length);
-            SensorManager.remapCoordinateSystem(this.f43807b, i11, i12, fArr);
+            SensorManager.remapCoordinateSystem(this.f43855b, i11, i12, fArr);
         }
     }
 
@@ -92,12 +92,12 @@ final class d implements SensorEventListener {
 
     @Override // android.hardware.SensorEventListener
     public void onSensorChanged(SensorEvent sensorEvent) {
-        SensorManager.getRotationMatrixFromVector(this.f43806a, sensorEvent.values);
-        d(this.f43806a, this.f43810e.getRotation());
-        float a10 = a(this.f43806a);
-        e(this.f43806a);
-        c(this.f43806a);
-        b(this.f43806a, a10);
+        SensorManager.getRotationMatrixFromVector(this.f43854a, sensorEvent.values);
+        d(this.f43854a, this.f43858e.getRotation());
+        float a10 = a(this.f43854a);
+        e(this.f43854a);
+        c(this.f43854a);
+        b(this.f43854a, a10);
     }
 
     @Override // android.hardware.SensorEventListener

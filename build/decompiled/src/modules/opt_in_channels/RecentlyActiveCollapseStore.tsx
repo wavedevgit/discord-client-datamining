@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun41566: for (var _fun41566_ip = 0;;) switch (_fun41566_ip) {
+        _fun41573: for (var _fun41573_ip = 0;;) switch (_fun41573_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun41566_ip = 74;
-                continue _fun41566;
+                _fun41573_ip = 74;
+                continue _fun41573;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun41570: for (var _fun41570_ip = 0;;) switch (_fun41570_ip) {
+            _fun41577: for (var _fun41577_ip = 0;;) switch (_fun41577_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -104,16 +104,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot6;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun41570_ip = 69;
-                        continue _fun41570
+                        _fun41577_ip = 69;
+                        continue _fun41577
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun41570_ip = 105;
-                    continue _fun41570;
+                    _fun41577_ip = 105;
+                    continue _fun41577;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function arg0() {
-            _fun41571: for (var _fun41571_ip = 0;;) switch (_fun41571_ip) {
+            _fun41578: for (var _fun41578_ip = 0;;) switch (_fun41578_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = _closure1_slot5;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)();
                     var1 = null;
                     if (!(var1 != var0)) {
-                        _fun41571_ip = 49;
-                        continue _fun41571
+                        _fun41578_ip = 49;
+                        continue _fun41578
                     }
                 case 26:
                     var2 = var0.guilds;
@@ -203,21 +203,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var5.bind(var0)(var1);
     var1 = {};
     var3 = function arg0() {
-        _fun41575: for (var _fun41575_ip = 0;;) switch (_fun41575_ip) {
+        _fun41582: for (var _fun41582_ip = 0;;) switch (_fun41582_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
                 var0 = var0.collapsed;
                 var1 = _closure1_slot5;
                 if (var0) {
-                    _fun41575_ip = 36;
-                    continue _fun41575
+                    _fun41582_ip = 36;
+                    continue _fun41582
                 }
             case 24:
                 var0 = var1.delete;
                 var0 = var0.bind(var1)(var2);
-                _fun41575_ip = 46;
-                continue _fun41575;
+                _fun41582_ip = 46;
+                continue _fun41582;
             case 36:
                 var0 = var1.add;
                 var0 = var0.bind(var1)(var2);

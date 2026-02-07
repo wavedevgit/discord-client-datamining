@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1.onFeedbackShown = var7;
         var6 = function arg0() {
-            _fun76495: for (var _fun76495_ip = 0;;) switch (_fun76495_ip) {
+            _fun76946: for (var _fun76946_ip = 0;;) switch (_fun76946_ip) {
                 case 0:
                     var0 = arg0;
                     var6 = var0.rating;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 == var7;
                     var6 = undefined;
                     if (var8) {
-                        _fun76495_ip = 97;
-                        continue _fun76495
+                        _fun76946_ip = 97;
+                        continue _fun76946
                     }
                 case 92:
                     var6 = var7.value;
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openGuildHighlightNotificationForPush = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9751, 660, 3280, 9752, 1307, 1234, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9796, 660, 3279, 9797, 1307, 1234, 795, 2]);

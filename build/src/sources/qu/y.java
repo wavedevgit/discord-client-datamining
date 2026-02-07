@@ -16,7 +16,7 @@ import okio.Timeout;
 public abstract /* synthetic */ class y {
 
     /* renamed from: a */
-    private static final Logger f48267a = Logger.getLogger("okio.Okio");
+    private static final Logger f48315a = Logger.getLogger("okio.Okio");
 
     public static final Sink b(File file) {
         Intrinsics.checkNotNullParameter(file, "<this>");
@@ -67,7 +67,7 @@ public abstract /* synthetic */ class y {
 
     public static final Source h(File file) {
         Intrinsics.checkNotNullParameter(file, "<this>");
-        return new p(new FileInputStream(file), Timeout.f43172e);
+        return new p(new FileInputStream(file), Timeout.f43220e);
     }
 
     public static final Source i(InputStream inputStream) {

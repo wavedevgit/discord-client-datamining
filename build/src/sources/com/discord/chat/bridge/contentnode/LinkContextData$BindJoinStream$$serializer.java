@@ -39,7 +39,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f31041a, gt.a.u(jt.h.f31005a), LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f31089a, gt.a.u(jt.h.f31053a), LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -56,7 +56,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$$serializer implemen
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
             applicationStream = (LinkContextData.BindJoinStream.ApplicationStream) b10.y(serialDescriptor, 2, LinkContextData$BindJoinStream$ApplicationStream$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -71,7 +71,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$$serializer implemen
                     str2 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool2);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);

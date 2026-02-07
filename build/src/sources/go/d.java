@@ -17,16 +17,16 @@ import rs.l0;
 public final class d extends RequestBody {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f25424d = new a(null);
+    public static final a f25472d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f25425a;
+    private final File f25473a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MediaType f25426b;
+    private final MediaType f25474b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final MutableStateFlow f25427c;
+    private final MutableStateFlow f25475c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -40,31 +40,31 @@ public final class d extends RequestBody {
 
     public d(File file, MediaType mediaType) {
         Intrinsics.checkNotNullParameter(file, "file");
-        this.f25425a = file;
-        this.f25426b = mediaType;
-        this.f25427c = l0.a(0);
+        this.f25473a = file;
+        this.f25474b = mediaType;
+        this.f25475c = l0.a(0);
     }
 
     public final j0 a() {
-        return g.a(this.f25427c);
+        return g.a(this.f25475c);
     }
 
     @Override // okhttp3.RequestBody
     public long contentLength() {
-        return this.f25425a.length();
+        return this.f25473a.length();
     }
 
     @Override // okhttp3.RequestBody
     public MediaType contentType() {
-        return this.f25426b;
+        return this.f25474b;
     }
 
     @Override // okhttp3.RequestBody
     public void writeTo(BufferedSink sink) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        float length = (float) this.f25425a.length();
+        float length = (float) this.f25473a.length();
         byte[] bArr = new byte[RecyclerView.ItemAnimator.FLAG_MOVED];
-        FileInputStream fileInputStream = new FileInputStream(this.f25425a);
+        FileInputStream fileInputStream = new FileInputStream(this.f25473a);
         try {
             int read = fileInputStream.read(bArr);
             long j10 = 0;
@@ -75,11 +75,11 @@ public final class d extends RequestBody {
                 read = fileInputStream.read(bArr);
                 int c10 = fs.a.c((((float) j10) / length) * 100.0f);
                 if (c10 - i10 > 1 || c10 >= 100) {
-                    this.f25427c.b(Integer.valueOf(c10));
+                    this.f25475c.b(Integer.valueOf(c10));
                     i10 = c10;
                 }
             }
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             bs.c.a(fileInputStream, null);
         } finally {
         }

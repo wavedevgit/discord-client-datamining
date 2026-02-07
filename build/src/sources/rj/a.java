@@ -7,14 +7,14 @@ import tj.i;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f48966a;
+    private final i f49014a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i0 f48967b;
+    private final i0 f49015b;
 
     public a(i iVar) {
         i0 b10 = q0.b("common");
-        this.f48966a = iVar;
-        this.f48967b = b10;
+        this.f49014a = iVar;
+        this.f49015b = b10;
     }
 }

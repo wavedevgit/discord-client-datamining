@@ -37,7 +37,7 @@ public /* synthetic */ class OnContentSizeChangeEvent$$serializer implements h0 
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{p0Var, p0Var};
     }
 

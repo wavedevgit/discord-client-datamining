@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/hang_status/parseHangStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun62195: for (var _fun62195_ip = 0;;) switch (_fun62195_ip) {
+        _fun62646: for (var _fun62646_ip = 0;;) switch (_fun62646_ip) {
             case 0:
                 var3 = arg1;
                 var4 = null;
                 if (!(var4 != var3)) {
-                    _fun62195_ip = 191;
-                    continue _fun62195
+                    _fun62646_ip = 191;
+                    continue _fun62646
                 }
             case 12:
                 var6 = _closure1_slot2;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var1 = undefined;
                 if (var8) {
-                    _fun62195_ip = 58;
-                    continue _fun62195
+                    _fun62646_ip = 58;
+                    continue _fun62646
                 }
             case 53:
                 var1 = var7.channelId;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 == var1;
                 var4 = undefined;
                 if (var5) {
-                    _fun62195_ip = 77;
-                    continue _fun62195
+                    _fun62646_ip = 77;
+                    continue _fun62646
                 }
             case 72:
                 var4 = var1.guild_id;
@@ -87,15 +87,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 1;
                 var0 = var3;
                 if (!(var4 > var1)) {
-                    _fun62195_ip = 189;
-                    continue _fun62195
+                    _fun62646_ip = 189;
+                    continue _fun62646
                 }
             case 157:
                 var1 = var3[var1];
                 var0 = var3;
                 if (!(var1 !== var2)) {
-                    _fun62195_ip = 189;
-                    continue _fun62195
+                    _fun62646_ip = 189;
+                    continue _fun62646
                 }
             case 168:
                 var1 = 0;
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseHangStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3523, 3616, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3522, 3615, 2]);

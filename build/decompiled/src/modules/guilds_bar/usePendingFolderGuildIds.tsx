@@ -8,13 +8,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function() {
-        _fun60029: for (var _fun60029_ip = 0;;) switch (_fun60029_ip) {
+        _fun60480: for (var _fun60480_ip = 0;;) switch (_fun60480_ip) {
             case 0:
                 var2 = arguments[0];
                 var1 = undefined;
                 if (!(var2 === var1)) {
-                    _fun60029_ip = 37;
-                    continue _fun60029
+                    _fun60480_ip = 37;
+                    continue _fun60480
                 }
             case 11:
                 var5 = _closure1_slot2;
@@ -32,16 +32,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 === var1;
                 var2 = undefined;
                 if (var5) {
-                    _fun60029_ip = 62;
-                    continue _fun60029
+                    _fun60480_ip = 62;
+                    continue _fun60480
                 }
             case 59:
                 var2 = var3;
             case 62:
                 var3 = undefined;
                 if (var5) {
-                    _fun60029_ip = 92;
-                    continue _fun60029
+                    _fun60480_ip = 92;
+                    continue _fun60480
                 }
             case 67:
                 var7 = var6().value;
@@ -50,16 +50,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var5 = var6;
                 if (var6) {
-                    _fun60029_ip = 92;
-                    continue _fun60029
+                    _fun60480_ip = 92;
+                    continue _fun60480
                 }
             case 86:
                 var3 = var7;
                 var5 = var6;
             case 92:
                 if (var5) {
-                    _fun60029_ip = 98;
-                    continue _fun60029
+                    _fun60480_ip = 98;
+                    continue _fun60480
                 }
             case 95:
                 var4.return();
@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getPendingFolderGuildIds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3216, 1410, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3215, 1410, 566, 2]);

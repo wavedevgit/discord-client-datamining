@@ -13,11 +13,11 @@ public abstract class b {
         static {
             int[] iArr = new int[uo.f.values().length];
             try {
-                iArr[uo.f.f51905d.ordinal()] = 1;
+                iArr[uo.f.f51953d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[uo.f.f51906e.ordinal()] = 2;
+                iArr[uo.f.f51954e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             f6231a = iArr;

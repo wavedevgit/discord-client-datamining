@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111680: for (var _fun111680_ip = 0;;) switch (_fun111680_ip) {
+        _fun112166: for (var _fun112166_ip = 0;;) switch (_fun112166_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.props;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var13.bind(var14)(var12);
                 var12 = null;
                 if (!(var12 != var2)) {
-                    _fun111680_ip = 142;
-                    continue _fun111680
+                    _fun112166_ip = 142;
+                    continue _fun112166
                 }
             case 139:
                 var19 = var2;
@@ -133,14 +133,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[2] = var15;
                 var12[3] = var4;
                 var4 = function() { // Environment: var1
-                    _fun111681: for (var _fun111681_ip = 0;;) switch (_fun111681_ip) {
+                    _fun112167: for (var _fun112167_ip = 0;;) switch (_fun112167_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure2_slot0;
                             var4 = null;
                             if (!(var4 == var3)) {
-                                _fun111681_ip = 26;
-                                continue _fun111681
+                                _fun112167_ip = 26;
+                                continue _fun112167
                             }
                         case 17:
                             var3 = function() { // Environment: var1
@@ -154,16 +154,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = undefined;
                                 return var0;
                             };
-                            _fun111681_ip = 30;
-                            continue _fun111681;
+                            _fun112167_ip = 30;
+                            continue _fun112167;
                         case 26:
                             var3 = _closure2_slot0;
                         case 30:
                             var0.onPressIn = var3;
                             var3 = _closure2_slot1;
                             if (!(var4 == var3)) {
-                                _fun111681_ip = 52;
-                                continue _fun111681
+                                _fun112167_ip = 52;
+                                continue _fun112167
                             }
                         case 43:
                             var1 = function() { // Environment: var1
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = undefined;
                                 return var0;
                             };
-                            _fun111681_ip = 56;
-                            continue _fun111681;
+                            _fun112167_ip = 56;
+                            continue _fun112167;
                         case 52:
                             var1 = _closure2_slot1;
                         case 56:
@@ -202,7 +202,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = new Array(1);
                 var11[0] = var2;
                 var6 = function() { // Environment: var1
-                    _fun111684: for (var _fun111684_ip = 0;;) switch (_fun111684_ip) {
+                    _fun112170: for (var _fun112170_ip = 0;;) switch (_fun112170_ip) {
                         case 0:
                             var3 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3.isAndroid;
                             var1 = var1.bind(var3)();
                             if (var1) {
-                                _fun111684_ip = 154;
-                                continue _fun111684
+                                _fun112170_ip = 154;
+                                continue _fun112170
                             }
                         case 38:
                             var1 = function arg0() {
@@ -313,7 +313,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var2;
                 var2 = function() { // Environment: var1
-                    _fun111686: for (var _fun111686_ip = 0;;) switch (_fun111686_ip) {
+                    _fun112172: for (var _fun112172_ip = 0;;) switch (_fun112172_ip) {
                         case 0:
                             var3 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -324,8 +324,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3.isAndroid;
                             var1 = var1.bind(var3)();
                             if (var1) {
-                                _fun111686_ip = 154;
-                                continue _fun111686
+                                _fun112172_ip = 154;
+                                continue _fun112172
                             }
                         case 38:
                             var1 = function arg0() {
@@ -458,4 +458,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11840, 33, 1297, 671, 3722, 14290, 478, 4082, 4098, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11886, 33, 1297, 671, 3721, 14333, 478, 4081, 4097, 2]);

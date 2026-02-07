@@ -26,15 +26,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'Shop Product Preview';
     var2.PRODUCT_DETAILS_ACTION_SHEET_KEY = var3;
     var1 = function arg0() {
-        _fun87602: for (var _fun87602_ip = 0;;) switch (_fun87602_ip) {
+        _fun88080: for (var _fun88080_ip = 0;;) switch (_fun88080_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.product;
                 var4 = var1.initialVariantIndex;
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun87602_ip = 23;
-                    continue _fun87602
+                    _fun88080_ip = 23;
+                    continue _fun88080
                 }
             case 21:
                 var4 = 0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var5)(var7);
                 var6 = 0;
                 if (!var2) {
-                    _fun87602_ip = 90;
-                    continue _fun87602
+                    _fun88080_ip = 90;
+                    continue _fun88080
                 }
             case 67:
                 var5 = var7.variants;
@@ -58,20 +58,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 < var5;
                 var6 = 0;
                 if (!var5) {
-                    _fun87602_ip = 90;
-                    continue _fun87602
+                    _fun88080_ip = 90;
+                    continue _fun88080
                 }
             case 87:
                 var6 = var4;
             case 90:
                 if (var2) {
-                    _fun87602_ip = 101;
-                    continue _fun87602
+                    _fun88080_ip = 101;
+                    continue _fun88080
                 }
             case 93:
                 var9 = var7.skuId;
-                _fun87602_ip = 117;
-                continue _fun87602;
+                _fun88080_ip = 117;
+                continue _fun88080;
             case 101:
                 var2 = var7.variants;
                 var2 = var2[var6];
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openProductDetailsActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4614, 4598, 3280, 11340, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4613, 4597, 3279, 11385, 1307, 2]);

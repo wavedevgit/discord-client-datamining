@@ -13,13 +13,13 @@ import java.util.Objects;
 public final class i implements g, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final transient e f29413a;
+    public final transient e f29461a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final transient ZoneOffset f29414b;
+    public final transient ZoneOffset f29462b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final transient j$.time.j f29415c;
+    public final transient j$.time.j f29463c;
 
     public static i t(j$.time.j jVar, ZoneOffset zoneOffset, e eVar) {
         Objects.requireNonNull(jVar, "zone");
@@ -39,8 +39,8 @@ public final class i implements g, Serializable {
         } else {
             Object e10 = t10.e(t11);
             j$.time.zone.a aVar = e10 instanceof j$.time.zone.a ? (j$.time.zone.a) e10 : null;
-            eVar = eVar.w(eVar.f29409a, 0L, 0L, Duration.r(aVar.f29530c.getTotalSeconds() - aVar.f29529b.getTotalSeconds(), 0).f29375a, 0L);
-            zoneOffset = aVar.f29530c;
+            eVar = eVar.w(eVar.f29457a, 0L, 0L, Duration.r(aVar.f29578c.getTotalSeconds() - aVar.f29577b.getTotalSeconds(), 0).f29423a, 0L);
+            zoneOffset = aVar.f29578c;
         }
         Objects.requireNonNull(zoneOffset, "offset");
         return new i(jVar, zoneOffset, eVar);
@@ -49,7 +49,7 @@ public final class i implements g, Serializable {
     public static i r(j jVar, j$.time.temporal.k kVar) {
         i iVar = (i) kVar;
         iVar.f();
-        if (((a) jVar).equals(k.f29416a)) {
+        if (((a) jVar).equals(k.f29464a)) {
             return iVar;
         }
         iVar.f();
@@ -58,30 +58,30 @@ public final class i implements g, Serializable {
 
     public i(j$.time.j jVar, ZoneOffset zoneOffset, e eVar) {
         Objects.requireNonNull(eVar, "dateTime");
-        this.f29413a = eVar;
+        this.f29461a = eVar;
         Objects.requireNonNull(zoneOffset, "offset");
-        this.f29414b = zoneOffset;
+        this.f29462b = zoneOffset;
         Objects.requireNonNull(jVar, "zone");
-        this.f29415c = jVar;
+        this.f29463c = jVar;
     }
 
     @Override // j$.time.chrono.g
     public final ZoneOffset n() {
-        return this.f29414b;
+        return this.f29462b;
     }
 
     public final int hashCode() {
-        return (this.f29413a.hashCode() ^ this.f29414b.hashCode()) ^ Integer.rotateLeft(this.f29415c.hashCode(), 3);
+        return (this.f29461a.hashCode() ^ this.f29462b.hashCode()) ^ Integer.rotateLeft(this.f29463c.hashCode(), 3);
     }
 
     @Override // j$.time.chrono.g
     public final c s() {
-        return this.f29413a;
+        return this.f29461a;
     }
 
     @Override // j$.time.chrono.g
     public final j$.time.j y() {
-        return this.f29415c;
+        return this.f29463c;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -96,35 +96,35 @@ public final class i implements g, Serializable {
     public final j$.time.temporal.k b(long j10, n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
-            int i10 = h.f29412a[aVar.ordinal()];
+            int i10 = h.f29460a[aVar.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    ZoneOffset ofTotalSeconds = ZoneOffset.ofTotalSeconds(aVar.f29505b.a(j10, aVar));
-                    e eVar = this.f29413a;
-                    Instant ofEpochSecond = Instant.ofEpochSecond(eVar.q(ofTotalSeconds), eVar.e().f29392d);
-                    j$.time.j jVar = this.f29415c;
+                    ZoneOffset ofTotalSeconds = ZoneOffset.ofTotalSeconds(aVar.f29553b.a(j10, aVar));
+                    e eVar = this.f29461a;
+                    Instant ofEpochSecond = Instant.ofEpochSecond(eVar.q(ofTotalSeconds), eVar.e().f29440d);
+                    j$.time.j jVar = this.f29463c;
                     f();
-                    k kVar = k.f29416a;
+                    k kVar = k.f29464a;
                     ZoneOffset d10 = jVar.t().d(ofEpochSecond);
                     Objects.requireNonNull(d10, "offset");
                     return new i(jVar, d10, (e) LocalDateTime.t(LocalDateTime.B(ofEpochSecond.getEpochSecond(), ofEpochSecond.getNano(), d10)));
                 }
-                return t(this.f29415c, this.f29414b, this.f29413a.b(j10, nVar));
+                return t(this.f29463c, this.f29462b, this.f29461a.b(j10, nVar));
             }
             return h(j10 - D(), j$.time.temporal.b.SECONDS);
         }
         f();
-        return r(k.f29416a, nVar.C(this, j10));
+        return r(k.f29464a, nVar.C(this, j10));
     }
 
     @Override // j$.time.temporal.k
     /* renamed from: w */
     public final i h(long j10, p pVar) {
         if (pVar instanceof j$.time.temporal.b) {
-            return (i) c(this.f29413a.h(j10, pVar));
+            return (i) c(this.f29461a.h(j10, pVar));
         }
         f();
-        return r(k.f29416a, pVar.r(this, j10));
+        return r(k.f29464a, pVar.r(this, j10));
     }
 
     public final boolean equals(Object obj) {
@@ -135,9 +135,9 @@ public final class i implements g, Serializable {
     }
 
     public final String toString() {
-        String str = this.f29413a.toString() + this.f29414b.toString();
-        if (this.f29414b != this.f29415c) {
-            return str + '[' + this.f29415c.toString() + ']';
+        String str = this.f29461a.toString() + this.f29462b.toString();
+        if (this.f29462b != this.f29463c) {
+            return str + '[' + this.f29463c.toString() + ']';
         }
         return str;
     }

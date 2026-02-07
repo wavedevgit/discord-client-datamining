@@ -15,44 +15,44 @@ public abstract class p {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ui.c f51545a;
+        private final ui.c f51593a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Set f51546b = new HashSet();
+        private final Set f51594b = new HashSet();
 
         /* renamed from: c  reason: collision with root package name */
-        private final Set f51547c = new HashSet();
+        private final Set f51595c = new HashSet();
 
         b(ui.c cVar) {
-            this.f51545a = cVar;
+            this.f51593a = cVar;
         }
 
         void a(b bVar) {
-            this.f51546b.add(bVar);
+            this.f51594b.add(bVar);
         }
 
         void b(b bVar) {
-            this.f51547c.add(bVar);
+            this.f51595c.add(bVar);
         }
 
         ui.c c() {
-            return this.f51545a;
+            return this.f51593a;
         }
 
         Set d() {
-            return this.f51546b;
+            return this.f51594b;
         }
 
         boolean e() {
-            return this.f51546b.isEmpty();
+            return this.f51594b.isEmpty();
         }
 
         boolean f() {
-            return this.f51547c.isEmpty();
+            return this.f51595c.isEmpty();
         }
 
         void g(b bVar) {
-            this.f51547c.remove(bVar);
+            this.f51595c.remove(bVar);
         }
     }
 
@@ -61,15 +61,15 @@ public abstract class p {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final d0 f51548a;
+        private final d0 f51596a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f51549b;
+        private final boolean f51597b;
 
         public boolean equals(Object obj) {
             if (obj instanceof c) {
                 c cVar = (c) obj;
-                if (cVar.f51548a.equals(this.f51548a) && cVar.f51549b == this.f51549b) {
+                if (cVar.f51596a.equals(this.f51596a) && cVar.f51597b == this.f51597b) {
                     return true;
                 }
             }
@@ -77,12 +77,12 @@ public abstract class p {
         }
 
         public int hashCode() {
-            return ((this.f51548a.hashCode() ^ 1000003) * 1000003) ^ Boolean.valueOf(this.f51549b).hashCode();
+            return ((this.f51596a.hashCode() ^ 1000003) * 1000003) ^ Boolean.valueOf(this.f51597b).hashCode();
         }
 
         private c(d0 d0Var, boolean z10) {
-            this.f51548a = d0Var;
-            this.f51549b = z10;
+            this.f51596a = d0Var;
+            this.f51597b = z10;
         }
     }
 
@@ -139,7 +139,7 @@ public abstract class p {
                     hashMap.put(cVar2, new HashSet());
                 }
                 Set set2 = (Set) hashMap.get(cVar2);
-                if (!set2.isEmpty() && !cVar2.f51549b) {
+                if (!set2.isEmpty() && !cVar2.f51597b) {
                     throw new IllegalArgumentException(String.format("Multiple components provide %s.", d0Var));
                 }
                 set2.add(bVar);

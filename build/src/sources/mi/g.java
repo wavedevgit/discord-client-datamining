@@ -7,10 +7,10 @@ import java.util.Objects;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f37175a;
+    private final String f37223a;
 
     private g(String str) {
-        this.f37175a = (String) m.j(str);
+        this.f37223a = (String) m.j(str);
     }
 
     public static g d(char c10) {
@@ -22,7 +22,7 @@ public class g {
         if (it.hasNext()) {
             appendable.append(e(it.next()));
             while (it.hasNext()) {
-                appendable.append(this.f37175a);
+                appendable.append(this.f37223a);
                 appendable.append(e(it.next()));
             }
         }

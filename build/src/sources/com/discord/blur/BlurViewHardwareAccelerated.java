@@ -62,13 +62,13 @@ public final class BlurViewHardwareAccelerated extends FrameLayout implements Bl
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$1(BlurViewHardwareAccelerated blurViewHardwareAccelerated) {
         blurViewHardwareAccelerated.maybeUpdate();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit blurTargetChangeListener$lambda$0(BlurViewHardwareAccelerated blurViewHardwareAccelerated) {
         blurViewHardwareAccelerated.maybeUpdate();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void maybeUpdate() {
@@ -92,13 +92,13 @@ public final class BlurViewHardwareAccelerated extends FrameLayout implements Bl
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onAttachedToWindow$lambda$2(BlurViewHardwareAccelerated blurViewHardwareAccelerated) {
         blurViewHardwareAccelerated.maybeUpdate();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onDetachedFromWindow$lambda$3(BlurViewHardwareAccelerated blurViewHardwareAccelerated) {
         blurViewHardwareAccelerated.maybeUpdate();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // android.view.ViewGroup, android.view.View

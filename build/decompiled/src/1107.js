@@ -19,20 +19,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var0.setupOnce = var2;
         var1 = function arg0() {
-            _fun12177: for (var _fun12177_ip = 0;;) switch (_fun12177_ip) {
+            _fun12179: for (var _fun12179_ip = 0;;) switch (_fun12179_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.tags;
                     var2 = null;
                     if (!(var2 !== var1)) {
-                        _fun12177_ip = 21;
-                        continue _fun12177
+                        _fun12179_ip = 21;
+                        continue _fun12179
                     }
                 case 15:
                     var2 = undefined;
                     if (!(var2 === var1)) {
-                        _fun12177_ip = 23;
-                        continue _fun12177
+                        _fun12179_ip = 23;
+                        continue _fun12179
                     }
                 case 21:
                     var1 = {};

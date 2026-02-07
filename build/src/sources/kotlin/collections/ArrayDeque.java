@@ -12,19 +12,19 @@ public final class ArrayDeque extends f {
     @NotNull
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f32014o = new a(null);
+    public static final a f32062o = new a(null);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Object[] f32015p = new Object[0];
+    private static final Object[] f32063p = new Object[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private int f32016d;
+    private int f32064d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f32017e = f32015p;
+    private Object[] f32065e = f32063p;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f32018i;
+    private int f32066i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -38,48 +38,48 @@ public final class ArrayDeque extends f {
 
     private final void d(int i10, Collection collection) {
         Iterator it = collection.iterator();
-        int length = this.f32017e.length;
+        int length = this.f32065e.length;
         while (i10 < length && it.hasNext()) {
-            this.f32017e[i10] = it.next();
+            this.f32065e[i10] = it.next();
             i10++;
         }
-        int i11 = this.f32016d;
+        int i11 = this.f32064d;
         for (int i12 = 0; i12 < i11 && it.hasNext(); i12++) {
-            this.f32017e[i12] = it.next();
+            this.f32065e[i12] = it.next();
         }
-        this.f32018i = size() + collection.size();
+        this.f32066i = size() + collection.size();
     }
 
     private final void e(int i10) {
         Object[] objArr = new Object[i10];
-        Object[] objArr2 = this.f32017e;
-        l.k(objArr2, objArr, 0, this.f32016d, objArr2.length);
-        Object[] objArr3 = this.f32017e;
+        Object[] objArr2 = this.f32065e;
+        l.k(objArr2, objArr, 0, this.f32064d, objArr2.length);
+        Object[] objArr3 = this.f32065e;
         int length = objArr3.length;
-        int i11 = this.f32016d;
+        int i11 = this.f32064d;
         l.k(objArr3, objArr, length - i11, 0, i11);
-        this.f32016d = 0;
-        this.f32017e = objArr;
+        this.f32064d = 0;
+        this.f32065e = objArr;
     }
 
     private final int f(int i10) {
         if (i10 == 0) {
-            return n.a0(this.f32017e);
+            return n.a0(this.f32065e);
         }
         return i10 - 1;
     }
 
     private final void g(int i10) {
         if (i10 >= 0) {
-            Object[] objArr = this.f32017e;
+            Object[] objArr = this.f32065e;
             if (i10 <= objArr.length) {
                 return;
             }
-            if (objArr == f32015p) {
-                this.f32017e = new Object[kotlin.ranges.d.d(i10, 10)];
+            if (objArr == f32063p) {
+                this.f32065e = new Object[kotlin.ranges.d.d(i10, 10)];
                 return;
             } else {
-                e(d.f32042d.e(objArr.length, i10));
+                e(d.f32090d.e(objArr.length, i10));
                 return;
             }
         }
@@ -87,7 +87,7 @@ public final class ArrayDeque extends f {
     }
 
     private final int h(int i10) {
-        if (i10 == n.a0(this.f32017e)) {
+        if (i10 == n.a0(this.f32065e)) {
             return 0;
         }
         return i10 + 1;
@@ -95,23 +95,23 @@ public final class ArrayDeque extends f {
 
     private final int i(int i10) {
         if (i10 < 0) {
-            return i10 + this.f32017e.length;
+            return i10 + this.f32065e.length;
         }
         return i10;
     }
 
     private final void j(int i10, int i11) {
         if (i10 < i11) {
-            l.v(this.f32017e, null, i10, i11);
+            l.v(this.f32065e, null, i10, i11);
             return;
         }
-        Object[] objArr = this.f32017e;
+        Object[] objArr = this.f32065e;
         l.v(objArr, null, i10, objArr.length);
-        l.v(this.f32017e, null, 0, i11);
+        l.v(this.f32065e, null, 0, i11);
     }
 
     private final int l(int i10) {
-        Object[] objArr = this.f32017e;
+        Object[] objArr = this.f32065e;
         if (i10 >= objArr.length) {
             return i10 - objArr.length;
         }
@@ -123,12 +123,12 @@ public final class ArrayDeque extends f {
     }
 
     private final void r(int i10, int i11) {
-        int l10 = l(this.f32016d + (i10 - 1));
-        int l11 = l(this.f32016d + (i11 - 1));
+        int l10 = l(this.f32064d + (i10 - 1));
+        int l11 = l(this.f32064d + (i11 - 1));
         while (i10 > 0) {
             int i12 = l10 + 1;
             int min = Math.min(i10, Math.min(i12, l11 + 1));
-            Object[] objArr = this.f32017e;
+            Object[] objArr = this.f32065e;
             int i13 = l11 - min;
             int i14 = l10 - min;
             l.k(objArr, objArr, i13 + 1, i14 + 1, i12);
@@ -139,15 +139,15 @@ public final class ArrayDeque extends f {
     }
 
     private final void s(int i10, int i11) {
-        int l10 = l(this.f32016d + i11);
-        int l11 = l(this.f32016d + i10);
+        int l10 = l(this.f32064d + i11);
+        int l11 = l(this.f32064d + i10);
         int size = size();
         while (true) {
             size -= i11;
             if (size > 0) {
-                Object[] objArr = this.f32017e;
+                Object[] objArr = this.f32065e;
                 i11 = Math.min(size, Math.min(objArr.length - l10, objArr.length - l11));
-                Object[] objArr2 = this.f32017e;
+                Object[] objArr2 = this.f32065e;
                 int i12 = l10 + i11;
                 l.k(objArr2, objArr2, l11, l10, i12);
                 l10 = l(i12);
@@ -172,34 +172,34 @@ public final class ArrayDeque extends f {
         }
         o();
         g(size() + elements.size());
-        d(l(this.f32016d + size()), elements);
+        d(l(this.f32064d + size()), elements);
         return true;
     }
 
     public final void addFirst(Object obj) {
         o();
         g(size() + 1);
-        int f10 = f(this.f32016d);
-        this.f32016d = f10;
-        this.f32017e[f10] = obj;
-        this.f32018i = size() + 1;
+        int f10 = f(this.f32064d);
+        this.f32064d = f10;
+        this.f32065e[f10] = obj;
+        this.f32066i = size() + 1;
     }
 
     public final void addLast(Object obj) {
         o();
         g(size() + 1);
-        this.f32017e[l(this.f32016d + size())] = obj;
-        this.f32018i = size() + 1;
+        this.f32065e[l(this.f32064d + size())] = obj;
+        this.f32066i = size() + 1;
     }
 
     @Override // kotlin.collections.f
     public int b() {
-        return this.f32018i;
+        return this.f32066i;
     }
 
     @Override // kotlin.collections.f
     public Object c(int i10) {
-        d.f32042d.b(i10, size());
+        d.f32090d.b(i10, size());
         if (i10 == t.n(this)) {
             return removeLast();
         }
@@ -207,40 +207,40 @@ public final class ArrayDeque extends f {
             return removeFirst();
         }
         o();
-        int l10 = l(this.f32016d + i10);
-        Object obj = this.f32017e[l10];
+        int l10 = l(this.f32064d + i10);
+        Object obj = this.f32065e[l10];
         if (i10 < (size() >> 1)) {
-            int i11 = this.f32016d;
+            int i11 = this.f32064d;
             if (l10 >= i11) {
-                Object[] objArr = this.f32017e;
+                Object[] objArr = this.f32065e;
                 l.k(objArr, objArr, i11 + 1, i11, l10);
             } else {
-                Object[] objArr2 = this.f32017e;
+                Object[] objArr2 = this.f32065e;
                 l.k(objArr2, objArr2, 1, 0, l10);
-                Object[] objArr3 = this.f32017e;
+                Object[] objArr3 = this.f32065e;
                 objArr3[0] = objArr3[objArr3.length - 1];
-                int i12 = this.f32016d;
+                int i12 = this.f32064d;
                 l.k(objArr3, objArr3, i12 + 1, i12, objArr3.length - 1);
             }
-            Object[] objArr4 = this.f32017e;
-            int i13 = this.f32016d;
+            Object[] objArr4 = this.f32065e;
+            int i13 = this.f32064d;
             objArr4[i13] = null;
-            this.f32016d = h(i13);
+            this.f32064d = h(i13);
         } else {
-            int l11 = l(this.f32016d + t.n(this));
+            int l11 = l(this.f32064d + t.n(this));
             if (l10 <= l11) {
-                Object[] objArr5 = this.f32017e;
+                Object[] objArr5 = this.f32065e;
                 l.k(objArr5, objArr5, l10, l10 + 1, l11 + 1);
             } else {
-                Object[] objArr6 = this.f32017e;
+                Object[] objArr6 = this.f32065e;
                 l.k(objArr6, objArr6, l10, l10 + 1, objArr6.length);
-                Object[] objArr7 = this.f32017e;
+                Object[] objArr7 = this.f32065e;
                 objArr7[objArr7.length - 1] = objArr7[0];
                 l.k(objArr7, objArr7, 0, 1, l11 + 1);
             }
-            this.f32017e[l11] = null;
+            this.f32065e[l11] = null;
         }
-        this.f32018i = size() - 1;
+        this.f32066i = size() - 1;
         return obj;
     }
 
@@ -248,10 +248,10 @@ public final class ArrayDeque extends f {
     public void clear() {
         if (!isEmpty()) {
             o();
-            j(this.f32016d, l(this.f32016d + size()));
+            j(this.f32064d, l(this.f32064d + size()));
         }
-        this.f32016d = 0;
-        this.f32018i = 0;
+        this.f32064d = 0;
+        this.f32066i = 0;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
@@ -264,38 +264,38 @@ public final class ArrayDeque extends f {
 
     @Override // java.util.AbstractList, java.util.List
     public Object get(int i10) {
-        d.f32042d.b(i10, size());
-        return this.f32017e[l(this.f32016d + i10)];
+        d.f32090d.b(i10, size());
+        return this.f32065e[l(this.f32064d + i10)];
     }
 
     @Override // java.util.AbstractList, java.util.List
     public int indexOf(Object obj) {
         int i10;
-        int l10 = l(this.f32016d + size());
-        int i11 = this.f32016d;
+        int l10 = l(this.f32064d + size());
+        int i11 = this.f32064d;
         if (i11 < l10) {
             while (i11 < l10) {
-                if (Intrinsics.areEqual(obj, this.f32017e[i11])) {
-                    i10 = this.f32016d;
+                if (Intrinsics.areEqual(obj, this.f32065e[i11])) {
+                    i10 = this.f32064d;
                 } else {
                     i11++;
                 }
             }
             return -1;
         } else if (i11 >= l10) {
-            int length = this.f32017e.length;
+            int length = this.f32065e.length;
             while (true) {
                 if (i11 < length) {
-                    if (Intrinsics.areEqual(obj, this.f32017e[i11])) {
-                        i10 = this.f32016d;
+                    if (Intrinsics.areEqual(obj, this.f32065e[i11])) {
+                        i10 = this.f32064d;
                         break;
                     }
                     i11++;
                 } else {
                     for (int i12 = 0; i12 < l10; i12++) {
-                        if (Intrinsics.areEqual(obj, this.f32017e[i12])) {
-                            i11 = i12 + this.f32017e.length;
-                            i10 = this.f32016d;
+                        if (Intrinsics.areEqual(obj, this.f32065e[i12])) {
+                            i11 = i12 + this.f32065e.length;
+                            i10 = this.f32064d;
                         }
                     }
                     return -1;
@@ -319,17 +319,17 @@ public final class ArrayDeque extends f {
     public int lastIndexOf(Object obj) {
         int a02;
         int i10;
-        int l10 = l(this.f32016d + size());
-        int i11 = this.f32016d;
+        int l10 = l(this.f32064d + size());
+        int i11 = this.f32064d;
         if (i11 < l10) {
             a02 = l10 - 1;
             if (i11 <= a02) {
-                while (!Intrinsics.areEqual(obj, this.f32017e[a02])) {
+                while (!Intrinsics.areEqual(obj, this.f32065e[a02])) {
                     if (a02 != i11) {
                         a02--;
                     }
                 }
-                i10 = this.f32016d;
+                i10 = this.f32064d;
                 return a02 - i10;
             }
             return -1;
@@ -338,22 +338,22 @@ public final class ArrayDeque extends f {
             int i12 = l10 - 1;
             while (true) {
                 if (-1 < i12) {
-                    if (Intrinsics.areEqual(obj, this.f32017e[i12])) {
-                        a02 = i12 + this.f32017e.length;
-                        i10 = this.f32016d;
+                    if (Intrinsics.areEqual(obj, this.f32065e[i12])) {
+                        a02 = i12 + this.f32065e.length;
+                        i10 = this.f32064d;
                         break;
                     }
                     i12--;
                 } else {
-                    a02 = n.a0(this.f32017e);
-                    int i13 = this.f32016d;
+                    a02 = n.a0(this.f32065e);
+                    int i13 = this.f32064d;
                     if (i13 <= a02) {
-                        while (!Intrinsics.areEqual(obj, this.f32017e[a02])) {
+                        while (!Intrinsics.areEqual(obj, this.f32065e[a02])) {
                             if (a02 != i13) {
                                 a02--;
                             }
                         }
-                        i10 = this.f32016d;
+                        i10 = this.f32064d;
                     }
                 }
             }
@@ -392,32 +392,32 @@ public final class ArrayDeque extends f {
         boolean z10 = false;
         z10 = false;
         z10 = false;
-        if (!isEmpty() && this.f32017e.length != 0) {
-            int l11 = l(this.f32016d + size());
-            int i10 = this.f32016d;
+        if (!isEmpty() && this.f32065e.length != 0) {
+            int l11 = l(this.f32064d + size());
+            int i10 = this.f32064d;
             if (i10 < l11) {
                 l10 = i10;
                 while (i10 < l11) {
-                    Object obj = this.f32017e[i10];
+                    Object obj = this.f32065e[i10];
                     if (!elements.contains(obj)) {
-                        this.f32017e[l10] = obj;
+                        this.f32065e[l10] = obj;
                         l10++;
                     } else {
                         z10 = true;
                     }
                     i10++;
                 }
-                l.v(this.f32017e, null, l10, l11);
+                l.v(this.f32065e, null, l10, l11);
             } else {
-                int length = this.f32017e.length;
+                int length = this.f32065e.length;
                 boolean z11 = false;
                 int i11 = i10;
                 while (i10 < length) {
-                    Object[] objArr = this.f32017e;
+                    Object[] objArr = this.f32065e;
                     Object obj2 = objArr[i10];
                     objArr[i10] = null;
                     if (!elements.contains(obj2)) {
-                        this.f32017e[i11] = obj2;
+                        this.f32065e[i11] = obj2;
                         i11++;
                     } else {
                         z11 = true;
@@ -426,11 +426,11 @@ public final class ArrayDeque extends f {
                 }
                 l10 = l(i11);
                 for (int i12 = 0; i12 < l11; i12++) {
-                    Object[] objArr2 = this.f32017e;
+                    Object[] objArr2 = this.f32065e;
                     Object obj3 = objArr2[i12];
                     objArr2[i12] = null;
                     if (!elements.contains(obj3)) {
-                        this.f32017e[l10] = obj3;
+                        this.f32065e[l10] = obj3;
                         l10 = h(l10);
                     } else {
                         z11 = true;
@@ -440,7 +440,7 @@ public final class ArrayDeque extends f {
             }
             if (z10) {
                 o();
-                this.f32018i = i(l10 - this.f32016d);
+                this.f32066i = i(l10 - this.f32064d);
             }
         }
         return z10;
@@ -449,12 +449,12 @@ public final class ArrayDeque extends f {
     public final Object removeFirst() {
         if (!isEmpty()) {
             o();
-            Object[] objArr = this.f32017e;
-            int i10 = this.f32016d;
+            Object[] objArr = this.f32065e;
+            int i10 = this.f32064d;
             Object obj = objArr[i10];
             objArr[i10] = null;
-            this.f32016d = h(i10);
-            this.f32018i = size() - 1;
+            this.f32064d = h(i10);
+            this.f32066i = size() - 1;
             return obj;
         }
         throw new NoSuchElementException("ArrayDeque is empty.");
@@ -463,11 +463,11 @@ public final class ArrayDeque extends f {
     public final Object removeLast() {
         if (!isEmpty()) {
             o();
-            int l10 = l(this.f32016d + t.n(this));
-            Object[] objArr = this.f32017e;
+            int l10 = l(this.f32064d + t.n(this));
+            Object[] objArr = this.f32065e;
             Object obj = objArr[l10];
             objArr[l10] = null;
-            this.f32018i = size() - 1;
+            this.f32066i = size() - 1;
             return obj;
         }
         throw new NoSuchElementException("ArrayDeque is empty.");
@@ -475,7 +475,7 @@ public final class ArrayDeque extends f {
 
     @Override // java.util.AbstractList
     protected void removeRange(int i10, int i11) {
-        d.f32042d.d(i10, i11, size());
+        d.f32090d.d(i10, i11, size());
         int i12 = i11 - i10;
         if (i12 == 0) {
             return;
@@ -488,15 +488,15 @@ public final class ArrayDeque extends f {
             o();
             if (i10 < size() - i11) {
                 r(i10, i11);
-                int l10 = l(this.f32016d + i12);
-                j(this.f32016d, l10);
-                this.f32016d = l10;
+                int l10 = l(this.f32064d + i12);
+                j(this.f32064d, l10);
+                this.f32064d = l10;
             } else {
                 s(i10, i11);
-                int l11 = l(this.f32016d + size());
+                int l11 = l(this.f32064d + size());
                 j(i(l11 - i12), l11);
             }
-            this.f32018i = size() - i12;
+            this.f32066i = size() - i12;
         }
     }
 
@@ -507,32 +507,32 @@ public final class ArrayDeque extends f {
         boolean z10 = false;
         z10 = false;
         z10 = false;
-        if (!isEmpty() && this.f32017e.length != 0) {
-            int l11 = l(this.f32016d + size());
-            int i10 = this.f32016d;
+        if (!isEmpty() && this.f32065e.length != 0) {
+            int l11 = l(this.f32064d + size());
+            int i10 = this.f32064d;
             if (i10 < l11) {
                 l10 = i10;
                 while (i10 < l11) {
-                    Object obj = this.f32017e[i10];
+                    Object obj = this.f32065e[i10];
                     if (elements.contains(obj)) {
-                        this.f32017e[l10] = obj;
+                        this.f32065e[l10] = obj;
                         l10++;
                     } else {
                         z10 = true;
                     }
                     i10++;
                 }
-                l.v(this.f32017e, null, l10, l11);
+                l.v(this.f32065e, null, l10, l11);
             } else {
-                int length = this.f32017e.length;
+                int length = this.f32065e.length;
                 boolean z11 = false;
                 int i11 = i10;
                 while (i10 < length) {
-                    Object[] objArr = this.f32017e;
+                    Object[] objArr = this.f32065e;
                     Object obj2 = objArr[i10];
                     objArr[i10] = null;
                     if (elements.contains(obj2)) {
-                        this.f32017e[i11] = obj2;
+                        this.f32065e[i11] = obj2;
                         i11++;
                     } else {
                         z11 = true;
@@ -541,11 +541,11 @@ public final class ArrayDeque extends f {
                 }
                 l10 = l(i11);
                 for (int i12 = 0; i12 < l11; i12++) {
-                    Object[] objArr2 = this.f32017e;
+                    Object[] objArr2 = this.f32065e;
                     Object obj3 = objArr2[i12];
                     objArr2[i12] = null;
                     if (elements.contains(obj3)) {
-                        this.f32017e[l10] = obj3;
+                        this.f32065e[l10] = obj3;
                         l10 = h(l10);
                     } else {
                         z11 = true;
@@ -555,7 +555,7 @@ public final class ArrayDeque extends f {
             }
             if (z10) {
                 o();
-                this.f32018i = i(l10 - this.f32016d);
+                this.f32066i = i(l10 - this.f32064d);
             }
         }
         return z10;
@@ -563,9 +563,9 @@ public final class ArrayDeque extends f {
 
     @Override // java.util.AbstractList, java.util.List
     public Object set(int i10, Object obj) {
-        d.f32042d.b(i10, size());
-        int l10 = l(this.f32016d + i10);
-        Object[] objArr = this.f32017e;
+        d.f32090d.b(i10, size());
+        int l10 = l(this.f32064d + i10);
+        Object[] objArr = this.f32065e;
         Object obj2 = objArr[l10];
         objArr[l10] = obj;
         return obj2;
@@ -578,22 +578,22 @@ public final class ArrayDeque extends f {
             array = j.a(array, size());
         }
         Object[] objArr = array;
-        int l10 = l(this.f32016d + size());
-        int i10 = this.f32016d;
+        int l10 = l(this.f32064d + size());
+        int i10 = this.f32064d;
         if (i10 < l10) {
-            l.p(this.f32017e, objArr, 0, i10, l10, 2, null);
+            l.p(this.f32065e, objArr, 0, i10, l10, 2, null);
         } else if (!isEmpty()) {
-            Object[] objArr2 = this.f32017e;
-            l.k(objArr2, objArr, 0, this.f32016d, objArr2.length);
-            Object[] objArr3 = this.f32017e;
-            l.k(objArr3, objArr, objArr3.length - this.f32016d, 0, l10);
+            Object[] objArr2 = this.f32065e;
+            l.k(objArr2, objArr, 0, this.f32064d, objArr2.length);
+            Object[] objArr3 = this.f32065e;
+            l.k(objArr3, objArr, objArr3.length - this.f32064d, 0, l10);
         }
         return s.f(size(), objArr);
     }
 
     @Override // java.util.AbstractList, java.util.List
     public void add(int i10, Object obj) {
-        d.f32042d.c(i10, size());
+        d.f32090d.c(i10, size());
         if (i10 == size()) {
             addLast(obj);
         } else if (i10 == 0) {
@@ -601,46 +601,46 @@ public final class ArrayDeque extends f {
         } else {
             o();
             g(size() + 1);
-            int l10 = l(this.f32016d + i10);
+            int l10 = l(this.f32064d + i10);
             if (i10 < ((size() + 1) >> 1)) {
                 int f10 = f(l10);
-                int f11 = f(this.f32016d);
-                int i11 = this.f32016d;
+                int f11 = f(this.f32064d);
+                int i11 = this.f32064d;
                 if (f10 >= i11) {
-                    Object[] objArr = this.f32017e;
+                    Object[] objArr = this.f32065e;
                     objArr[f11] = objArr[i11];
                     l.k(objArr, objArr, i11, i11 + 1, f10 + 1);
                 } else {
-                    Object[] objArr2 = this.f32017e;
+                    Object[] objArr2 = this.f32065e;
                     l.k(objArr2, objArr2, i11 - 1, i11, objArr2.length);
-                    Object[] objArr3 = this.f32017e;
+                    Object[] objArr3 = this.f32065e;
                     objArr3[objArr3.length - 1] = objArr3[0];
                     l.k(objArr3, objArr3, 0, 1, f10 + 1);
                 }
-                this.f32017e[f10] = obj;
-                this.f32016d = f11;
+                this.f32065e[f10] = obj;
+                this.f32064d = f11;
             } else {
-                int l11 = l(this.f32016d + size());
+                int l11 = l(this.f32064d + size());
                 if (l10 < l11) {
-                    Object[] objArr4 = this.f32017e;
+                    Object[] objArr4 = this.f32065e;
                     l.k(objArr4, objArr4, l10 + 1, l10, l11);
                 } else {
-                    Object[] objArr5 = this.f32017e;
+                    Object[] objArr5 = this.f32065e;
                     l.k(objArr5, objArr5, 1, 0, l11);
-                    Object[] objArr6 = this.f32017e;
+                    Object[] objArr6 = this.f32065e;
                     objArr6[0] = objArr6[objArr6.length - 1];
                     l.k(objArr6, objArr6, l10 + 1, l10, objArr6.length - 1);
                 }
-                this.f32017e[l10] = obj;
+                this.f32065e[l10] = obj;
             }
-            this.f32018i = size() + 1;
+            this.f32066i = size() + 1;
         }
     }
 
     @Override // java.util.AbstractList, java.util.List
     public boolean addAll(int i10, Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        d.f32042d.c(i10, size());
+        d.f32090d.c(i10, size());
         if (elements.isEmpty()) {
             return false;
         }
@@ -649,29 +649,29 @@ public final class ArrayDeque extends f {
         }
         o();
         g(size() + elements.size());
-        int l10 = l(this.f32016d + size());
-        int l11 = l(this.f32016d + i10);
+        int l10 = l(this.f32064d + size());
+        int l11 = l(this.f32064d + i10);
         int size = elements.size();
         if (i10 < ((size() + 1) >> 1)) {
-            int i11 = this.f32016d;
+            int i11 = this.f32064d;
             int i12 = i11 - size;
             if (l11 < i11) {
-                Object[] objArr = this.f32017e;
+                Object[] objArr = this.f32065e;
                 l.k(objArr, objArr, i12, i11, objArr.length);
                 if (size >= l11) {
-                    Object[] objArr2 = this.f32017e;
+                    Object[] objArr2 = this.f32065e;
                     l.k(objArr2, objArr2, objArr2.length - size, 0, l11);
                 } else {
-                    Object[] objArr3 = this.f32017e;
+                    Object[] objArr3 = this.f32065e;
                     l.k(objArr3, objArr3, objArr3.length - size, 0, size);
-                    Object[] objArr4 = this.f32017e;
+                    Object[] objArr4 = this.f32065e;
                     l.k(objArr4, objArr4, 0, size, l11);
                 }
             } else if (i12 >= 0) {
-                Object[] objArr5 = this.f32017e;
+                Object[] objArr5 = this.f32065e;
                 l.k(objArr5, objArr5, i12, i11, l11);
             } else {
-                Object[] objArr6 = this.f32017e;
+                Object[] objArr6 = this.f32065e;
                 i12 += objArr6.length;
                 int i13 = l11 - i11;
                 int length = objArr6.length - i12;
@@ -679,17 +679,17 @@ public final class ArrayDeque extends f {
                     l.k(objArr6, objArr6, i12, i11, l11);
                 } else {
                     l.k(objArr6, objArr6, i12, i11, i11 + length);
-                    Object[] objArr7 = this.f32017e;
-                    l.k(objArr7, objArr7, 0, this.f32016d + length, l11);
+                    Object[] objArr7 = this.f32065e;
+                    l.k(objArr7, objArr7, 0, this.f32064d + length, l11);
                 }
             }
-            this.f32016d = i12;
+            this.f32064d = i12;
             d(i(l11 - size), elements);
         } else {
             int i14 = l11 + size;
             if (l11 < l10) {
                 int i15 = size + l10;
-                Object[] objArr8 = this.f32017e;
+                Object[] objArr8 = this.f32065e;
                 if (i15 <= objArr8.length) {
                     l.k(objArr8, objArr8, i14, l11, l10);
                 } else if (i14 >= objArr8.length) {
@@ -697,18 +697,18 @@ public final class ArrayDeque extends f {
                 } else {
                     int length2 = l10 - (i15 - objArr8.length);
                     l.k(objArr8, objArr8, 0, length2, l10);
-                    Object[] objArr9 = this.f32017e;
+                    Object[] objArr9 = this.f32065e;
                     l.k(objArr9, objArr9, i14, l11, length2);
                 }
             } else {
-                Object[] objArr10 = this.f32017e;
+                Object[] objArr10 = this.f32065e;
                 l.k(objArr10, objArr10, size, 0, l10);
-                Object[] objArr11 = this.f32017e;
+                Object[] objArr11 = this.f32065e;
                 if (i14 >= objArr11.length) {
                     l.k(objArr11, objArr11, i14 - objArr11.length, l11, objArr11.length);
                 } else {
                     l.k(objArr11, objArr11, 0, objArr11.length - size, objArr11.length);
-                    Object[] objArr12 = this.f32017e;
+                    Object[] objArr12 = this.f32065e;
                     l.k(objArr12, objArr12, i14, l11, objArr12.length - size);
                 }
             }

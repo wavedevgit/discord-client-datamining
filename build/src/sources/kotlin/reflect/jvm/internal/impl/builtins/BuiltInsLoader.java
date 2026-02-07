@@ -16,16 +16,16 @@ import qr.o;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BuiltInsLoader {
     @NotNull
-    public static final Companion Companion = Companion.f32132a;
+    public static final Companion Companion = Companion.f32180a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32132a = new Companion();
+        static final /* synthetic */ Companion f32180a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Lazy f32133b = l.b(o.f48044e, a.f32185d);
+        private static final Lazy f32181b = l.b(o.f48092e, a.f32233d);
 
         private Companion() {
         }
@@ -43,7 +43,7 @@ public interface BuiltInsLoader {
 
         @NotNull
         public final BuiltInsLoader getInstance() {
-            return (BuiltInsLoader) f32133b.getValue();
+            return (BuiltInsLoader) f32181b.getValue();
         }
     }
 

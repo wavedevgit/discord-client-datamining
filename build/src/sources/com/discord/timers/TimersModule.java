@@ -35,7 +35,7 @@ public final class TimersModule extends NativeTimersModuleSpec {
         ReactApplicationContext reactApplicationContext = timersModule.getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new IntervalEvent((int) d10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -44,7 +44,7 @@ public final class TimersModule extends NativeTimersModuleSpec {
         ReactApplicationContext reactApplicationContext = timersModule.getReactApplicationContext();
         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "getReactApplicationContext(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new TimerEvent((int) d10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.discord.codegen.NativeTimersModuleSpec

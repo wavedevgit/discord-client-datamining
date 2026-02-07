@@ -45,7 +45,7 @@ public class h extends fd.r {
     private static boolean B1;
 
     /* renamed from: z1  reason: collision with root package name */
-    private static final int[] f41635z1 = {1920, 1600, 1440, 1280, 960, 854, DiscordVideoMediaSource.DEFAULT_WIDTH, 540, DiscordVideoMediaSource.DEFAULT_HEIGHT};
+    private static final int[] f41683z1 = {1920, 1600, 1440, 1280, 960, 854, DiscordVideoMediaSource.DEFAULT_WIDTH, 540, DiscordVideoMediaSource.DEFAULT_HEIGHT};
     private final Context R0;
     private final n S0;
     private final y.a T0;
@@ -57,79 +57,79 @@ public class h extends fd.r {
     private boolean Z0;
 
     /* renamed from: a1  reason: collision with root package name */
-    private boolean f41636a1;
+    private boolean f41684a1;
 
     /* renamed from: b1  reason: collision with root package name */
-    private Surface f41637b1;
+    private Surface f41685b1;
 
     /* renamed from: c1  reason: collision with root package name */
-    private i f41638c1;
+    private i f41686c1;
 
     /* renamed from: d1  reason: collision with root package name */
-    private boolean f41639d1;
+    private boolean f41687d1;
 
     /* renamed from: e1  reason: collision with root package name */
-    private int f41640e1;
+    private int f41688e1;
 
     /* renamed from: f1  reason: collision with root package name */
-    private boolean f41641f1;
+    private boolean f41689f1;
 
     /* renamed from: g1  reason: collision with root package name */
-    private boolean f41642g1;
+    private boolean f41690g1;
 
     /* renamed from: h1  reason: collision with root package name */
-    private boolean f41643h1;
+    private boolean f41691h1;
 
     /* renamed from: i1  reason: collision with root package name */
-    private long f41644i1;
+    private long f41692i1;
 
     /* renamed from: j1  reason: collision with root package name */
-    private long f41645j1;
+    private long f41693j1;
 
     /* renamed from: k1  reason: collision with root package name */
-    private long f41646k1;
+    private long f41694k1;
 
     /* renamed from: l1  reason: collision with root package name */
-    private int f41647l1;
+    private int f41695l1;
 
     /* renamed from: m1  reason: collision with root package name */
-    private int f41648m1;
+    private int f41696m1;
 
     /* renamed from: n1  reason: collision with root package name */
-    private int f41649n1;
+    private int f41697n1;
 
     /* renamed from: o1  reason: collision with root package name */
-    private long f41650o1;
+    private long f41698o1;
 
     /* renamed from: p1  reason: collision with root package name */
-    private long f41651p1;
+    private long f41699p1;
 
     /* renamed from: q1  reason: collision with root package name */
-    private long f41652q1;
+    private long f41700q1;
 
     /* renamed from: r1  reason: collision with root package name */
-    private int f41653r1;
+    private int f41701r1;
 
     /* renamed from: s1  reason: collision with root package name */
-    private long f41654s1;
+    private long f41702s1;
 
     /* renamed from: t1  reason: collision with root package name */
-    private VideoSize f41655t1;
+    private VideoSize f41703t1;
 
     /* renamed from: u1  reason: collision with root package name */
-    private VideoSize f41656u1;
+    private VideoSize f41704u1;
 
     /* renamed from: v1  reason: collision with root package name */
-    private boolean f41657v1;
+    private boolean f41705v1;
 
     /* renamed from: w1  reason: collision with root package name */
-    private int f41658w1;
+    private int f41706w1;
 
     /* renamed from: x1  reason: collision with root package name */
-    c f41659x1;
+    c f41707x1;
 
     /* renamed from: y1  reason: collision with root package name */
-    private l f41660y1;
+    private l f41708y1;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -158,18 +158,18 @@ public class h extends fd.r {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f41661a;
+        public final int f41709a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f41662b;
+        public final int f41710b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f41663c;
+        public final int f41711c;
 
         public b(int i10, int i11, int i12) {
-            this.f41661a = i10;
-            this.f41662b = i11;
-            this.f41663c = i12;
+            this.f41709a = i10;
+            this.f41710b = i11;
+            this.f41711c = i12;
         }
     }
 
@@ -178,17 +178,17 @@ public class h extends fd.r {
     public final class c implements l.c, Handler.Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Handler f41664d;
+        private final Handler f41712d;
 
         public c(fd.l lVar) {
             Handler x10 = w0.x(this);
-            this.f41664d = x10;
+            this.f41712d = x10;
             lVar.b(this, x10);
         }
 
         private void b(long j10) {
             h hVar = h.this;
-            if (this == hVar.f41659x1 && hVar.y0() != null) {
+            if (this == hVar.f41707x1 && hVar.y0() != null) {
                 if (j10 == LongCompanionObject.MAX_VALUE) {
                     h.this.o2();
                     return;
@@ -203,8 +203,8 @@ public class h extends fd.r {
 
         @Override // fd.l.c
         public void a(fd.l lVar, long j10, long j11) {
-            if (w0.f39012a < 30) {
-                this.f41664d.sendMessageAtFrontOfQueue(Message.obtain(this.f41664d, 0, (int) (j10 >> 32), (int) j10));
+            if (w0.f39060a < 30) {
+                this.f41712d.sendMessageAtFrontOfQueue(Message.obtain(this.f41712d, 0, (int) (j10 >> 32), (int) j10));
                 return;
             }
             b(j10);
@@ -225,62 +225,62 @@ public class h extends fd.r {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final n f41666a;
+        private final n f41714a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final h f41667b;
+        private final h f41715b;
 
         /* renamed from: e  reason: collision with root package name */
-        private Handler f41670e;
+        private Handler f41718e;
 
         /* renamed from: f  reason: collision with root package name */
-        private CopyOnWriteArrayList f41671f;
+        private CopyOnWriteArrayList f41719f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Pair f41672g;
+        private Pair f41720g;
 
         /* renamed from: h  reason: collision with root package name */
-        private Pair f41673h;
+        private Pair f41721h;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f41676k;
+        private boolean f41724k;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f41677l;
+        private boolean f41725l;
 
         /* renamed from: c  reason: collision with root package name */
-        private final ArrayDeque f41668c = new ArrayDeque();
+        private final ArrayDeque f41716c = new ArrayDeque();
 
         /* renamed from: d  reason: collision with root package name */
-        private final ArrayDeque f41669d = new ArrayDeque();
+        private final ArrayDeque f41717d = new ArrayDeque();
 
         /* renamed from: i  reason: collision with root package name */
-        private int f41674i = -1;
+        private int f41722i = -1;
 
         /* renamed from: j  reason: collision with root package name */
-        private boolean f41675j = true;
+        private boolean f41723j = true;
 
         /* renamed from: m  reason: collision with root package name */
-        private long f41678m = -9223372036854775807L;
+        private long f41726m = -9223372036854775807L;
 
         /* renamed from: n  reason: collision with root package name */
-        private VideoSize f41679n = VideoSize.f13456p;
+        private VideoSize f41727n = VideoSize.f13456p;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f41680o = -9223372036854775807L;
+        private long f41728o = -9223372036854775807L;
 
         /* renamed from: p  reason: collision with root package name */
-        private long f41681p = -9223372036854775807L;
+        private long f41729p = -9223372036854775807L;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public class a {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ Format f41682a;
+            final /* synthetic */ Format f41730a;
 
             a(Format format) {
-                this.f41682a = format;
+                this.f41730a = format;
             }
         }
 
@@ -289,53 +289,53 @@ public class h extends fd.r {
         public static final class b {
 
             /* renamed from: a  reason: collision with root package name */
-            private static Constructor f41684a;
+            private static Constructor f41732a;
 
             /* renamed from: b  reason: collision with root package name */
-            private static Method f41685b;
+            private static Method f41733b;
 
             /* renamed from: c  reason: collision with root package name */
-            private static Method f41686c;
+            private static Method f41734c;
 
             /* renamed from: d  reason: collision with root package name */
-            private static Constructor f41687d;
+            private static Constructor f41735d;
 
             /* renamed from: e  reason: collision with root package name */
-            private static Method f41688e;
+            private static Method f41736e;
 
             public static ne.n a(float f10) {
                 c();
-                Object newInstance = f41684a.newInstance(null);
-                f41685b.invoke(newInstance, Float.valueOf(f10));
-                android.support.v4.media.session.b.a(ne.a.e(f41686c.invoke(newInstance, null)));
+                Object newInstance = f41732a.newInstance(null);
+                f41733b.invoke(newInstance, Float.valueOf(f10));
+                android.support.v4.media.session.b.a(ne.a.e(f41734c.invoke(newInstance, null)));
                 return null;
             }
 
             public static x0 b() {
                 c();
-                android.support.v4.media.session.b.a(ne.a.e(f41688e.invoke(f41687d.newInstance(null), null)));
+                android.support.v4.media.session.b.a(ne.a.e(f41736e.invoke(f41735d.newInstance(null), null)));
                 return null;
             }
 
             private static void c() {
-                if (f41684a == null || f41685b == null || f41686c == null) {
+                if (f41732a == null || f41733b == null || f41734c == null) {
                     Class<?> cls = Class.forName("com.google.android.exoplayer2.effect.ScaleAndRotateTransformation$Builder");
-                    f41684a = cls.getConstructor(null);
-                    f41685b = cls.getMethod("setRotationDegrees", Float.TYPE);
-                    f41686c = cls.getMethod("build", null);
+                    f41732a = cls.getConstructor(null);
+                    f41733b = cls.getMethod("setRotationDegrees", Float.TYPE);
+                    f41734c = cls.getMethod("build", null);
                 }
-                if (f41687d != null && f41688e != null) {
+                if (f41735d != null && f41736e != null) {
                     return;
                 }
                 Class<?> cls2 = Class.forName("com.google.android.exoplayer2.effect.DefaultVideoFrameProcessor$Factory$Builder");
-                f41687d = cls2.getConstructor(null);
-                f41688e = cls2.getMethod("build", null);
+                f41735d = cls2.getConstructor(null);
+                f41736e = cls2.getMethod("build", null);
             }
         }
 
         public d(n nVar, h hVar) {
-            this.f41666a = nVar;
-            this.f41667b = hVar;
+            this.f41714a = nVar;
+            this.f41715b = hVar;
         }
 
         private void k(long j10, boolean z10) {
@@ -344,7 +344,7 @@ public class h extends fd.r {
         }
 
         public MediaFormat a(MediaFormat mediaFormat) {
-            if (w0.f39012a >= 29 && this.f41667b.R0.getApplicationContext().getApplicationInfo().targetSdkVersion >= 29) {
+            if (w0.f39060a >= 29 && this.f41715b.R0.getApplicationContext().getApplicationInfo().targetSdkVersion >= 29) {
                 mediaFormat.setInteger("allow-frame-drop", 0);
             }
             return mediaFormat;
@@ -362,13 +362,13 @@ public class h extends fd.r {
 
         public long d(long j10, long j11) {
             boolean z10;
-            if (this.f41681p != -9223372036854775807L) {
+            if (this.f41729p != -9223372036854775807L) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             ne.a.g(z10);
-            return (j10 + j11) - this.f41681p;
+            return (j10 + j11) - this.f41729p;
         }
 
         public Surface e() {
@@ -381,8 +381,8 @@ public class h extends fd.r {
         }
 
         public boolean g() {
-            Pair pair = this.f41673h;
-            if (pair != null && ((l0) pair.second).equals(l0.f38942c)) {
+            Pair pair = this.f41721h;
+            if (pair != null && ((l0) pair.second).equals(l0.f38990c)) {
                 return false;
             }
             return true;
@@ -391,41 +391,41 @@ public class h extends fd.r {
         public boolean h(Format format, long j10) {
             int i10;
             ne.a.g(!f());
-            if (!this.f41675j) {
+            if (!this.f41723j) {
                 return false;
             }
-            if (this.f41671f == null) {
-                this.f41675j = false;
+            if (this.f41719f == null) {
+                this.f41723j = false;
                 return false;
             }
-            this.f41670e = w0.w();
-            Pair V1 = this.f41667b.V1(format.I);
+            this.f41718e = w0.w();
+            Pair V1 = this.f41715b.V1(format.I);
             try {
                 if (!h.B1() && (i10 = format.E) != 0) {
-                    CopyOnWriteArrayList copyOnWriteArrayList = this.f41671f;
+                    CopyOnWriteArrayList copyOnWriteArrayList = this.f41719f;
                     b.a(i10);
                     copyOnWriteArrayList.add(0, null);
                 }
                 b.b();
-                Context unused = this.f41667b.R0;
-                List list = (List) ne.a.e(this.f41671f);
-                ne.l lVar = ne.l.f38941a;
+                Context unused = this.f41715b.R0;
+                List list = (List) ne.a.e(this.f41719f);
+                ne.l lVar = ne.l.f38989a;
                 oe.c cVar = (oe.c) V1.first;
                 oe.c cVar2 = (oe.c) V1.second;
-                Handler handler = this.f41670e;
+                Handler handler = this.f41718e;
                 Objects.requireNonNull(handler);
                 new nc.s(handler);
                 new a(format);
                 throw null;
             } catch (Exception e10) {
-                throw this.f41667b.G(e10, format, 7000);
+                throw this.f41715b.G(e10, format, 7000);
             }
         }
 
         public boolean i(Format format, long j10, boolean z10) {
             boolean z11;
             ne.a.i(null);
-            if (this.f41674i != -1) {
+            if (this.f41722i != -1) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -435,41 +435,41 @@ public class h extends fd.r {
         }
 
         public void j(String str) {
-            this.f41674i = w0.d0(this.f41667b.R0, str, false);
+            this.f41722i = w0.d0(this.f41715b.R0, str, false);
         }
 
         public void l(long j10, long j11) {
             boolean z10;
             ne.a.i(null);
-            while (!this.f41668c.isEmpty()) {
+            while (!this.f41716c.isEmpty()) {
                 boolean z11 = false;
-                if (this.f41667b.getState() == 2) {
+                if (this.f41715b.getState() == 2) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                long longValue = ((Long) ne.a.e((Long) this.f41668c.peek())).longValue();
-                long j12 = longValue + this.f41681p;
-                long M1 = this.f41667b.M1(j10, j11, SystemClock.elapsedRealtime() * 1000, j12, z10);
-                if (this.f41676k && this.f41668c.size() == 1) {
+                long longValue = ((Long) ne.a.e((Long) this.f41716c.peek())).longValue();
+                long j12 = longValue + this.f41729p;
+                long M1 = this.f41715b.M1(j10, j11, SystemClock.elapsedRealtime() * 1000, j12, z10);
+                if (this.f41724k && this.f41716c.size() == 1) {
                     z11 = true;
                 }
-                if (this.f41667b.z2(j10, M1)) {
+                if (this.f41715b.z2(j10, M1)) {
                     k(-1L, z11);
                     return;
-                } else if (z10 && j10 != this.f41667b.f41644i1 && M1 <= 50000) {
-                    this.f41666a.h(j12);
-                    long b10 = this.f41666a.b(System.nanoTime() + (M1 * 1000));
-                    if (this.f41667b.y2((b10 - System.nanoTime()) / 1000, j11, z11)) {
+                } else if (z10 && j10 != this.f41715b.f41692i1 && M1 <= 50000) {
+                    this.f41714a.h(j12);
+                    long b10 = this.f41714a.b(System.nanoTime() + (M1 * 1000));
+                    if (this.f41715b.y2((b10 - System.nanoTime()) / 1000, j11, z11)) {
                         k(-2L, z11);
                     } else {
-                        if (!this.f41669d.isEmpty() && j12 > ((Long) ((Pair) this.f41669d.peek()).first).longValue()) {
-                            this.f41672g = (Pair) this.f41669d.remove();
+                        if (!this.f41717d.isEmpty() && j12 > ((Long) ((Pair) this.f41717d.peek()).first).longValue()) {
+                            this.f41720g = (Pair) this.f41717d.remove();
                         }
-                        this.f41667b.m2(longValue, b10, (Format) this.f41672g.second);
-                        if (this.f41680o >= j12) {
-                            this.f41680o = -9223372036854775807L;
-                            this.f41667b.j2(this.f41679n);
+                        this.f41715b.m2(longValue, b10, (Format) this.f41720g.second);
+                        if (this.f41728o >= j12) {
+                            this.f41728o = -9223372036854775807L;
+                            this.f41715b.j2(this.f41727n);
                         }
                         k(b10, z11);
                     }
@@ -480,7 +480,7 @@ public class h extends fd.r {
         }
 
         public boolean m() {
-            return this.f41677l;
+            return this.f41725l;
         }
 
         public void n() {
@@ -495,9 +495,9 @@ public class h extends fd.r {
         }
 
         public void p(Surface surface, l0 l0Var) {
-            Pair pair = this.f41673h;
-            if (pair == null || !((Surface) pair.first).equals(surface) || !((l0) this.f41673h.second).equals(l0Var)) {
-                this.f41673h = Pair.create(surface, l0Var);
+            Pair pair = this.f41721h;
+            if (pair == null || !((Surface) pair.first).equals(surface) || !((l0) this.f41721h.second).equals(l0Var)) {
+                this.f41721h = Pair.create(surface, l0Var);
                 if (!f()) {
                     return;
                 }
@@ -508,13 +508,13 @@ public class h extends fd.r {
         }
 
         public void q(List list) {
-            CopyOnWriteArrayList copyOnWriteArrayList = this.f41671f;
+            CopyOnWriteArrayList copyOnWriteArrayList = this.f41719f;
             if (copyOnWriteArrayList == null) {
-                this.f41671f = new CopyOnWriteArrayList(list);
+                this.f41719f = new CopyOnWriteArrayList(list);
                 return;
             }
             copyOnWriteArrayList.clear();
-            this.f41671f.addAll(list);
+            this.f41719f.addAll(list);
         }
     }
 
@@ -527,7 +527,7 @@ public class h extends fd.r {
     }
 
     private boolean B2(fd.q qVar) {
-        if (w0.f39012a >= 23 && !this.f41657v1 && !Q1(qVar.f23112a)) {
+        if (w0.f39060a >= 23 && !this.f41705v1 && !Q1(qVar.f23112a)) {
             if (!qVar.f23118g || i.b(this.R0)) {
                 return true;
             }
@@ -547,18 +547,18 @@ public class h extends fd.r {
 
     private void N1() {
         fd.l y02;
-        this.f41641f1 = false;
-        if (w0.f39012a >= 23 && this.f41657v1 && (y02 = y0()) != null) {
-            this.f41659x1 = new c(y02);
+        this.f41689f1 = false;
+        if (w0.f39060a >= 23 && this.f41705v1 && (y02 = y0()) != null) {
+            this.f41707x1 = new c(y02);
         }
     }
 
     private void O1() {
-        this.f41656u1 = null;
+        this.f41704u1 = null;
     }
 
     private static boolean P1() {
-        if (w0.f39012a >= 21) {
+        if (w0.f39060a >= 21) {
             return true;
         }
         return false;
@@ -570,7 +570,7 @@ public class h extends fd.r {
     }
 
     private static boolean S1() {
-        return "NVIDIA".equals(w0.f39014c);
+        return "NVIDIA".equals(w0.f39062c);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -627,12 +627,12 @@ public class h extends fd.r {
             i13 = i14;
         }
         float f10 = i13 / i10;
-        for (int i15 : f41635z1) {
+        for (int i15 : f41683z1) {
             int i16 = (int) (i15 * f10);
             if (i15 <= i10 || i16 <= i13) {
                 break;
             }
-            if (w0.f39012a >= 21) {
+            if (w0.f39060a >= 21) {
                 if (z10) {
                     i12 = i16;
                 } else {
@@ -672,7 +672,7 @@ public class h extends fd.r {
         if (str == null) {
             return ni.s.t();
         }
-        if (w0.f39012a >= 26 && "video/dolby-vision".equals(str) && !a.a(context)) {
+        if (w0.f39060a >= 26 && "video/dolby-vision".equals(str) && !a.a(context)) {
             List n10 = fd.y.n(tVar, format, z10, z11);
             if (!n10.isEmpty()) {
                 return n10;
@@ -712,39 +712,39 @@ public class h extends fd.r {
     }
 
     private void g2() {
-        if (this.f41647l1 > 0) {
+        if (this.f41695l1 > 0) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            this.T0.n(this.f41647l1, elapsedRealtime - this.f41646k1);
-            this.f41647l1 = 0;
-            this.f41646k1 = elapsedRealtime;
+            this.T0.n(this.f41695l1, elapsedRealtime - this.f41694k1);
+            this.f41695l1 = 0;
+            this.f41694k1 = elapsedRealtime;
         }
     }
 
     private void i2() {
-        int i10 = this.f41653r1;
+        int i10 = this.f41701r1;
         if (i10 != 0) {
-            this.T0.r(this.f41652q1, i10);
-            this.f41652q1 = 0L;
-            this.f41653r1 = 0;
+            this.T0.r(this.f41700q1, i10);
+            this.f41700q1 = 0L;
+            this.f41701r1 = 0;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void j2(VideoSize videoSize) {
-        if (!videoSize.equals(VideoSize.f13456p) && !videoSize.equals(this.f41656u1)) {
-            this.f41656u1 = videoSize;
+        if (!videoSize.equals(VideoSize.f13456p) && !videoSize.equals(this.f41704u1)) {
+            this.f41704u1 = videoSize;
             this.T0.t(videoSize);
         }
     }
 
     private void k2() {
-        if (this.f41639d1) {
-            this.T0.q(this.f41637b1);
+        if (this.f41687d1) {
+            this.T0.q(this.f41685b1);
         }
     }
 
     private void l2() {
-        VideoSize videoSize = this.f41656u1;
+        VideoSize videoSize = this.f41704u1;
         if (videoSize != null) {
             this.T0.t(videoSize);
         }
@@ -752,7 +752,7 @@ public class h extends fd.r {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void m2(long j10, long j11, Format format) {
-        l lVar = this.f41660y1;
+        l lVar = this.f41708y1;
         if (lVar != null) {
             lVar.a(j10, j11, format, C0());
         }
@@ -764,13 +764,13 @@ public class h extends fd.r {
     }
 
     private void p2() {
-        Surface surface = this.f41637b1;
-        i iVar = this.f41638c1;
+        Surface surface = this.f41685b1;
+        i iVar = this.f41686c1;
         if (surface == iVar) {
-            this.f41637b1 = null;
+            this.f41685b1 = null;
         }
         iVar.release();
-        this.f41638c1 = null;
+        this.f41686c1 = null;
     }
 
     private void r2(fd.l lVar, Format format, int i10, long j10, boolean z10) {
@@ -788,7 +788,7 @@ public class h extends fd.r {
         } else {
             j11 = j10;
         }
-        if (w0.f39012a >= 21) {
+        if (w0.f39060a >= 21) {
             s2(lVar, i10, j11, j12);
         } else {
             q2(lVar, i10, j11);
@@ -808,7 +808,7 @@ public class h extends fd.r {
         } else {
             j10 = -9223372036854775807L;
         }
-        this.f41645j1 = j10;
+        this.f41693j1 = j10;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -822,39 +822,39 @@ public class h extends fd.r {
             iVar = null;
         }
         if (iVar == null) {
-            i iVar2 = this.f41638c1;
+            i iVar2 = this.f41686c1;
             if (iVar2 != null) {
                 iVar = iVar2;
             } else {
                 fd.q z02 = z0();
                 if (z02 != null && B2(z02)) {
                     iVar = i.c(this.R0, z02.f23118g);
-                    this.f41638c1 = iVar;
+                    this.f41686c1 = iVar;
                 }
             }
         }
-        if (this.f41637b1 != iVar) {
-            this.f41637b1 = iVar;
+        if (this.f41685b1 != iVar) {
+            this.f41685b1 = iVar;
             this.S0.m(iVar);
-            this.f41639d1 = false;
+            this.f41687d1 = false;
             int state = getState();
             fd.l y02 = y0();
             if (y02 != null && !this.U0.f()) {
-                if (w0.f39012a >= 23 && iVar != null && !this.Z0) {
+                if (w0.f39060a >= 23 && iVar != null && !this.Z0) {
                     w2(y02, iVar);
                 } else {
                     h1();
                     Q0();
                 }
             }
-            if (iVar != null && iVar != this.f41638c1) {
+            if (iVar != null && iVar != this.f41686c1) {
                 l2();
                 N1();
                 if (state == 2) {
                     u2();
                 }
                 if (this.U0.f()) {
-                    this.U0.p(iVar, l0.f38942c);
+                    this.U0.p(iVar, l0.f38990c);
                     return;
                 }
                 return;
@@ -864,7 +864,7 @@ public class h extends fd.r {
             if (this.U0.f()) {
                 this.U0.b();
             }
-        } else if (iVar != null && iVar != this.f41638c1) {
+        } else if (iVar != null && iVar != this.f41686c1) {
             l2();
             k2();
         }
@@ -879,13 +879,13 @@ public class h extends fd.r {
         } else {
             z10 = false;
         }
-        if (this.f41643h1 ? this.f41641f1 : !z10 && !this.f41642g1) {
+        if (this.f41691h1 ? this.f41689f1 : !z10 && !this.f41690g1) {
             z11 = false;
         } else {
             z11 = true;
         }
-        long elapsedRealtime = (SystemClock.elapsedRealtime() * 1000) - this.f41651p1;
-        if (this.f41645j1 != -9223372036854775807L || j10 < F0() || (!z11 && (!z10 || !A2(j11, elapsedRealtime)))) {
+        long elapsedRealtime = (SystemClock.elapsedRealtime() * 1000) - this.f41699p1;
+        if (this.f41693j1 != -9223372036854775807L || j10 < F0() || (!z11 && (!z10 || !A2(j11, elapsedRealtime)))) {
             return false;
         }
         return true;
@@ -893,7 +893,7 @@ public class h extends fd.r {
 
     @Override // fd.r
     protected boolean A0() {
-        if (this.f41657v1 && w0.f39012a < 23) {
+        if (this.f41705v1 && w0.f39060a < 23) {
             return true;
         }
         return false;
@@ -930,7 +930,7 @@ public class h extends fd.r {
 
     @Override // fd.r
     protected List D0(fd.t tVar, Format format, boolean z10) {
-        return fd.y.w(Z1(this.R0, tVar, format, z10, this.f41657v1), format);
+        return fd.y.w(Z1(this.R0, tVar, format, z10, this.f41705v1), format);
     }
 
     protected void D2(int i10, int i11) {
@@ -938,12 +938,12 @@ public class h extends fd.r {
         decoderCounters.f12373h += i10;
         int i12 = i10 + i11;
         decoderCounters.f12372g += i12;
-        this.f41647l1 += i12;
-        int i13 = this.f41648m1 + i12;
-        this.f41648m1 = i13;
+        this.f41695l1 += i12;
+        int i13 = this.f41696m1 + i12;
+        this.f41696m1 = i13;
         decoderCounters.f12374i = Math.max(i13, decoderCounters.f12374i);
         int i14 = this.W0;
-        if (i14 > 0 && this.f41647l1 >= i14) {
+        if (i14 > 0 && this.f41695l1 >= i14) {
             g2();
         }
     }
@@ -952,26 +952,26 @@ public class h extends fd.r {
     protected l.a E0(fd.q qVar, Format format, MediaCrypto mediaCrypto, float f10) {
         int i10;
         Surface surface;
-        i iVar = this.f41638c1;
-        if (iVar != null && iVar.f41691d != qVar.f23118g) {
+        i iVar = this.f41686c1;
+        if (iVar != null && iVar.f41739d != qVar.f23118g) {
             p2();
         }
         String str = qVar.f23114c;
         b Y1 = Y1(qVar, format, M());
         this.Y0 = Y1;
         boolean z10 = this.X0;
-        if (this.f41657v1) {
-            i10 = this.f41658w1;
+        if (this.f41705v1) {
+            i10 = this.f41706w1;
         } else {
             i10 = 0;
         }
         MediaFormat c22 = c2(format, str, Y1, f10, z10, i10);
-        if (this.f41637b1 == null) {
+        if (this.f41685b1 == null) {
             if (B2(qVar)) {
-                if (this.f41638c1 == null) {
-                    this.f41638c1 = i.c(this.R0, qVar.f23118g);
+                if (this.f41686c1 == null) {
+                    this.f41686c1 = i.c(this.R0, qVar.f23118g);
                 }
-                this.f41637b1 = this.f41638c1;
+                this.f41685b1 = this.f41686c1;
             } else {
                 throw new IllegalStateException();
             }
@@ -982,21 +982,21 @@ public class h extends fd.r {
         if (this.U0.f()) {
             surface = this.U0.e();
         } else {
-            surface = this.f41637b1;
+            surface = this.f41685b1;
         }
         return l.a.b(qVar, c22, format, surface, mediaCrypto);
     }
 
     protected void E2(long j10) {
         this.M0.a(j10);
-        this.f41652q1 += j10;
-        this.f41653r1++;
+        this.f41700q1 += j10;
+        this.f41701r1++;
     }
 
     @Override // fd.r
     protected void H0(qc.f fVar) {
-        if (this.f41636a1) {
-            ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f46612q);
+        if (this.f41684a1) {
+            ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f46660q);
             if (byteBuffer.remaining() >= 7) {
                 byte b10 = byteBuffer.get();
                 short s10 = byteBuffer.getShort();
@@ -1021,8 +1021,8 @@ public class h extends fd.r {
     public void O() {
         O1();
         N1();
-        this.f41639d1 = false;
-        this.f41659x1 = null;
+        this.f41687d1 = false;
+        this.f41707x1 = null;
         try {
             super.O();
         } finally {
@@ -1036,20 +1036,20 @@ public class h extends fd.r {
     public void P(boolean z10, boolean z11) {
         boolean z12;
         super.P(z10, z11);
-        boolean z13 = I().f36017a;
-        if (z13 && this.f41658w1 == 0) {
+        boolean z13 = I().f36065a;
+        if (z13 && this.f41706w1 == 0) {
             z12 = false;
         } else {
             z12 = true;
         }
         ne.a.g(z12);
-        if (this.f41657v1 != z13) {
-            this.f41657v1 = z13;
+        if (this.f41705v1 != z13) {
+            this.f41705v1 = z13;
             h1();
         }
         this.T0.o(this.M0);
-        this.f41642g1 = z11;
-        this.f41643h1 = false;
+        this.f41690g1 = z11;
+        this.f41691h1 = false;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1061,13 +1061,13 @@ public class h extends fd.r {
         }
         N1();
         this.S0.j();
-        this.f41650o1 = -9223372036854775807L;
-        this.f41644i1 = -9223372036854775807L;
-        this.f41648m1 = 0;
+        this.f41698o1 = -9223372036854775807L;
+        this.f41692i1 = -9223372036854775807L;
+        this.f41696m1 = 0;
         if (z10) {
             u2();
         } else {
-            this.f41645j1 = -9223372036854775807L;
+            this.f41693j1 = -9223372036854775807L;
         }
     }
 
@@ -1103,7 +1103,7 @@ public class h extends fd.r {
             if (this.U0.f()) {
                 this.U0.n();
             }
-            if (this.f41638c1 != null) {
+            if (this.f41686c1 != null) {
                 p2();
             }
         }
@@ -1113,9 +1113,9 @@ public class h extends fd.r {
     protected void T0(String str, l.a aVar, long j10, long j11) {
         this.T0.k(str, j10, j11);
         this.Z0 = Q1(str);
-        this.f41636a1 = ((fd.q) ne.a.e(z0())).p();
-        if (w0.f39012a >= 23 && this.f41657v1) {
-            this.f41659x1 = new c((fd.l) ne.a.e(y0()));
+        this.f41684a1 = ((fd.q) ne.a.e(z0())).p();
+        if (w0.f39060a >= 23 && this.f41705v1) {
+            this.f41707x1 = new c((fd.l) ne.a.e(y0()));
         }
         this.U0.j(str);
     }
@@ -1131,11 +1131,11 @@ public class h extends fd.r {
     @Override // fd.r, com.google.android.exoplayer2.f
     public void U() {
         super.U();
-        this.f41647l1 = 0;
-        this.f41646k1 = SystemClock.elapsedRealtime();
-        this.f41651p1 = SystemClock.elapsedRealtime() * 1000;
-        this.f41652q1 = 0L;
-        this.f41653r1 = 0;
+        this.f41695l1 = 0;
+        this.f41694k1 = SystemClock.elapsedRealtime();
+        this.f41699p1 = SystemClock.elapsedRealtime() * 1000;
+        this.f41700q1 = 0L;
+        this.f41701r1 = 0;
         this.S0.k();
     }
 
@@ -1147,7 +1147,7 @@ public class h extends fd.r {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // fd.r, com.google.android.exoplayer2.f
     public void V() {
-        this.f41645j1 = -9223372036854775807L;
+        this.f41693j1 = -9223372036854775807L;
         g2();
         i2();
         this.S0.l();
@@ -1158,15 +1158,15 @@ public class h extends fd.r {
     @Override // fd.r
     public DecoderReuseEvaluation V0(lc.x xVar) {
         DecoderReuseEvaluation V0 = super.V0(xVar);
-        this.T0.p(xVar.f36029b, V0);
+        this.T0.p(xVar.f36077b, V0);
         return V0;
     }
 
     protected Pair V1(oe.c cVar) {
         if (!oe.c.f(cVar)) {
-            oe.c cVar2 = oe.c.f41591q;
+            oe.c cVar2 = oe.c.f41639q;
             return Pair.create(cVar2, cVar2);
-        } else if (cVar.f41600i == 7) {
+        } else if (cVar.f41648i == 7) {
             return Pair.create(cVar, cVar.b().d(6).a());
         } else {
             return Pair.create(cVar, cVar);
@@ -1182,10 +1182,10 @@ public class h extends fd.r {
         int i11;
         fd.l y02 = y0();
         if (y02 != null) {
-            y02.c(this.f41640e1);
+            y02.c(this.f41688e1);
         }
         int i12 = 0;
-        if (this.f41657v1) {
+        if (this.f41705v1) {
             i11 = format.B;
             i10 = format.C;
         } else {
@@ -1221,7 +1221,7 @@ public class h extends fd.r {
         } else if (!this.U0.f()) {
             i12 = format.E;
         }
-        this.f41655t1 = new VideoSize(i11, i10, i12, f10);
+        this.f41703t1 = new VideoSize(i11, i10, i12, f10);
         this.S0.g(format.D);
         if (this.U0.f()) {
             this.U0.o(format.b().n0(i11).S(i10).f0(i12).c0(f10).G());
@@ -1232,8 +1232,8 @@ public class h extends fd.r {
     @Override // fd.r
     public void Y0(long j10) {
         super.Y0(j10);
-        if (!this.f41657v1) {
-            this.f41649n1--;
+        if (!this.f41705v1) {
+            this.f41697n1--;
         }
     }
 
@@ -1291,12 +1291,12 @@ public class h extends fd.r {
 
     @Override // fd.r
     protected void a1(qc.f fVar) {
-        boolean z10 = this.f41657v1;
+        boolean z10 = this.f41705v1;
         if (!z10) {
-            this.f41649n1++;
+            this.f41697n1++;
         }
-        if (w0.f39012a < 23 && z10) {
-            n2(fVar.f46611p);
+        if (w0.f39060a < 23 && z10) {
+            n2(fVar.f46659p);
         }
     }
 
@@ -1314,10 +1314,10 @@ public class h extends fd.r {
         int i11 = f10.f12382e;
         int i12 = format2.B;
         b bVar = this.Y0;
-        if (i12 > bVar.f41661a || format2.C > bVar.f41662b) {
+        if (i12 > bVar.f41709a || format2.C > bVar.f41710b) {
             i11 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
         }
-        if (a2(qVar, format2) > this.Y0.f41663c) {
+        if (a2(qVar, format2) > this.Y0.f41711c) {
             i11 |= 64;
         }
         int i13 = i11;
@@ -1343,10 +1343,10 @@ public class h extends fd.r {
         if ("video/dolby-vision".equals(format.f11587w) && (r10 = fd.y.r(format)) != null) {
             b0.d(mediaFormat, "profile", ((Integer) r10.first).intValue());
         }
-        mediaFormat.setInteger("max-width", bVar.f41661a);
-        mediaFormat.setInteger("max-height", bVar.f41662b);
-        b0.d(mediaFormat, "max-input-size", bVar.f41663c);
-        if (w0.f39012a >= 23) {
+        mediaFormat.setInteger("max-width", bVar.f41709a);
+        mediaFormat.setInteger("max-height", bVar.f41710b);
+        b0.d(mediaFormat, "max-input-size", bVar.f41711c);
+        if (w0.f39060a >= 23) {
             mediaFormat.setInteger("priority", 0);
             if (f10 != -1.0f) {
                 mediaFormat.setFloat("operating-rate", f10);
@@ -1379,14 +1379,14 @@ public class h extends fd.r {
         long j14;
         boolean z14;
         ne.a.e(lVar);
-        if (this.f41644i1 == -9223372036854775807L) {
-            this.f41644i1 = j10;
+        if (this.f41692i1 == -9223372036854775807L) {
+            this.f41692i1 = j10;
         }
-        if (j12 != this.f41650o1) {
+        if (j12 != this.f41698o1) {
             if (!this.U0.f()) {
                 this.S0.h(j12);
             }
-            this.f41650o1 = j12;
+            this.f41698o1 = j12;
         }
         long F0 = j12 - F0();
         if (z10 && !z11) {
@@ -1399,7 +1399,7 @@ public class h extends fd.r {
             z12 = false;
         }
         long M1 = M1(j10, j11, SystemClock.elapsedRealtime() * 1000, j12, z12);
-        if (this.f41637b1 == this.f41638c1) {
+        if (this.f41685b1 == this.f41686c1) {
             if (!d2(M1)) {
                 return false;
             }
@@ -1419,13 +1419,13 @@ public class h extends fd.r {
             E2(M1);
             return true;
         } else {
-            if (z12 && j10 != this.f41644i1) {
+            if (z12 && j10 != this.f41692i1) {
                 long nanoTime = System.nanoTime();
                 long b10 = this.S0.b((M1 * 1000) + nanoTime);
                 if (!this.U0.f()) {
                     M1 = (b10 - nanoTime) / 1000;
                 }
-                if (this.f41645j1 != -9223372036854775807L) {
+                if (this.f41693j1 != -9223372036854775807L) {
                     j13 = M1;
                     z13 = true;
                 } else {
@@ -1451,9 +1451,9 @@ public class h extends fd.r {
                     }
                     r2(lVar, format, i10, F0, false);
                     return true;
-                } else if (w0.f39012a >= 21) {
+                } else if (w0.f39060a >= 21) {
                     if (j15 < 50000) {
-                        if (b10 == this.f41654s1) {
+                        if (b10 == this.f41702s1) {
                             C2(lVar, i10, F0);
                             j14 = b10;
                         } else {
@@ -1462,7 +1462,7 @@ public class h extends fd.r {
                             j14 = b10;
                         }
                         E2(j15);
-                        this.f41654s1 = j14;
+                        this.f41702s1 = j14;
                         return true;
                     }
                 } else if (j15 < 30000) {
@@ -1492,10 +1492,10 @@ public class h extends fd.r {
         if (z10) {
             DecoderCounters decoderCounters = this.M0;
             decoderCounters.f12369d += Z;
-            decoderCounters.f12371f += this.f41649n1;
+            decoderCounters.f12371f += this.f41697n1;
         } else {
             this.M0.f12375j++;
-            D2(Z, this.f41649n1);
+            D2(Z, this.f41697n1);
         }
         v0();
         if (this.U0.f()) {
@@ -1510,27 +1510,27 @@ public class h extends fd.r {
     }
 
     void h2() {
-        this.f41643h1 = true;
-        if (!this.f41641f1) {
-            this.f41641f1 = true;
-            this.T0.q(this.f41637b1);
-            this.f41639d1 = true;
+        this.f41691h1 = true;
+        if (!this.f41689f1) {
+            this.f41689f1 = true;
+            this.T0.q(this.f41685b1);
+            this.f41687d1 = true;
         }
     }
 
     @Override // fd.r, com.google.android.exoplayer2.v1
     public boolean isReady() {
         i iVar;
-        if (super.isReady() && ((!this.U0.f() || this.U0.g()) && (this.f41641f1 || (((iVar = this.f41638c1) != null && this.f41637b1 == iVar) || y0() == null || this.f41657v1)))) {
-            this.f41645j1 = -9223372036854775807L;
+        if (super.isReady() && ((!this.U0.f() || this.U0.g()) && (this.f41689f1 || (((iVar = this.f41686c1) != null && this.f41685b1 == iVar) || y0() == null || this.f41705v1)))) {
+            this.f41693j1 = -9223372036854775807L;
             return true;
-        } else if (this.f41645j1 == -9223372036854775807L) {
+        } else if (this.f41693j1 == -9223372036854775807L) {
             return false;
         } else {
-            if (SystemClock.elapsedRealtime() < this.f41645j1) {
+            if (SystemClock.elapsedRealtime() < this.f41693j1) {
                 return true;
             }
-            this.f41645j1 = -9223372036854775807L;
+            this.f41693j1 = -9223372036854775807L;
             return false;
         }
     }
@@ -1539,12 +1539,12 @@ public class h extends fd.r {
     @Override // fd.r
     public void j1() {
         super.j1();
-        this.f41649n1 = 0;
+        this.f41697n1 = 0;
     }
 
     @Override // fd.r
     protected fd.m m0(Throwable th2, fd.q qVar) {
-        return new g(th2, qVar, this.f41637b1);
+        return new g(th2, qVar, this.f41685b1);
     }
 
     @Override // com.google.android.exoplayer2.f, com.google.android.exoplayer2.s1.b
@@ -1561,7 +1561,7 @@ public class h extends fd.r {
                                     return;
                                 }
                                 l0 l0Var = (l0) ne.a.e(obj);
-                                if (l0Var.b() != 0 && l0Var.a() != 0 && (surface = this.f41637b1) != null) {
+                                if (l0Var.b() != 0 && l0Var.a() != 0 && (surface = this.f41685b1) != null) {
                                     this.U0.p(surface, l0Var);
                                     return;
                                 }
@@ -1573,18 +1573,18 @@ public class h extends fd.r {
                         this.S0.o(((Integer) obj).intValue());
                         return;
                     }
-                    this.f41640e1 = ((Integer) obj).intValue();
+                    this.f41688e1 = ((Integer) obj).intValue();
                     fd.l y02 = y0();
                     if (y02 != null) {
-                        y02.c(this.f41640e1);
+                        y02.c(this.f41688e1);
                         return;
                     }
                     return;
                 }
                 int intValue = ((Integer) obj).intValue();
-                if (this.f41658w1 != intValue) {
-                    this.f41658w1 = intValue;
-                    if (this.f41657v1) {
+                if (this.f41706w1 != intValue) {
+                    this.f41706w1 = intValue;
+                    if (this.f41705v1) {
                         h1();
                         return;
                     }
@@ -1592,7 +1592,7 @@ public class h extends fd.r {
                 }
                 return;
             }
-            this.f41660y1 = (l) obj;
+            this.f41708y1 = (l) obj;
             return;
         }
         v2(obj);
@@ -1600,7 +1600,7 @@ public class h extends fd.r {
 
     protected void n2(long j10) {
         A1(j10);
-        j2(this.f41655t1);
+        j2(this.f41703t1);
         this.M0.f12370e++;
         h2();
         Y0(j10);
@@ -1611,10 +1611,10 @@ public class h extends fd.r {
         lVar.releaseOutputBuffer(i10, true);
         t0.c();
         this.M0.f12370e++;
-        this.f41648m1 = 0;
+        this.f41696m1 = 0;
         if (!this.U0.f()) {
-            this.f41651p1 = SystemClock.elapsedRealtime() * 1000;
-            j2(this.f41655t1);
+            this.f41699p1 = SystemClock.elapsedRealtime() * 1000;
+            j2(this.f41703t1);
             h2();
         }
     }
@@ -1624,17 +1624,17 @@ public class h extends fd.r {
         lVar.f(i10, j11);
         t0.c();
         this.M0.f12370e++;
-        this.f41648m1 = 0;
+        this.f41696m1 = 0;
         if (!this.U0.f()) {
-            this.f41651p1 = SystemClock.elapsedRealtime() * 1000;
-            j2(this.f41655t1);
+            this.f41699p1 = SystemClock.elapsedRealtime() * 1000;
+            j2(this.f41703t1);
             h2();
         }
     }
 
     @Override // fd.r
     protected boolean t1(fd.q qVar) {
-        if (this.f41637b1 == null && !B2(qVar)) {
+        if (this.f41685b1 == null && !B2(qVar)) {
             return false;
         }
         return true;
@@ -1707,7 +1707,7 @@ public class h extends fd.r {
         } else {
             i13 = 0;
         }
-        if (w0.f39012a >= 26 && "video/dolby-vision".equals(format.f11587w) && !a.a(this.R0)) {
+        if (w0.f39060a >= 26 && "video/dolby-vision".equals(format.f11587w) && !a.a(this.R0)) {
             i13 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
         }
         if (o10) {
@@ -1759,10 +1759,10 @@ public class h extends fd.r {
         this.T0 = new y.a(handler, yVar);
         this.U0 = new d(nVar, this);
         this.X0 = S1();
-        this.f41645j1 = -9223372036854775807L;
-        this.f41640e1 = 1;
-        this.f41655t1 = VideoSize.f13456p;
-        this.f41658w1 = 0;
+        this.f41693j1 = -9223372036854775807L;
+        this.f41688e1 = 1;
+        this.f41703t1 = VideoSize.f13456p;
+        this.f41706w1 = 0;
         O1();
     }
 }

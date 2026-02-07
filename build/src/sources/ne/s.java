@@ -7,36 +7,36 @@ import java.util.Map;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f38987a;
+    private final int f39035a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a[] f38988b;
+    private final a[] f39036b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b[] f38989c;
+    private final b[] f39037c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f38990d;
+    private final Map f39038d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f38991e;
+    private final Map f39039e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f38992a;
+        public final String f39040a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f38993b;
+        private final int f39041b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f38994c;
+        private final int f39042c;
 
         private a(String str, int i10, int i11) {
-            this.f38992a = str;
-            this.f38993b = i10;
-            this.f38994c = i11;
+            this.f39040a = str;
+            this.f39041b = i10;
+            this.f39042c = i11;
         }
 
         public static a a(int i10, int i11) {
@@ -54,21 +54,21 @@ public final class s {
     private static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f38995a;
+        public final String f39043a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f38996b;
+        private final int f39044b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f38997c;
+        private final int f39045c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final float[] f38998d = new float[16];
+        private final float[] f39046d = new float[16];
 
         private b(String str, int i10, int i11) {
-            this.f38995a = str;
-            this.f38996b = i10;
-            this.f38997c = i11;
+            this.f39043a = str;
+            this.f39044b = i10;
+            this.f39045c = i11;
         }
 
         public static b a(int i10, int i11) {
@@ -86,7 +86,7 @@ public final class s {
     public s(String str, String str2) {
         boolean z10;
         int glCreateProgram = GLES20.glCreateProgram();
-        this.f38987a = glCreateProgram;
+        this.f39035a = glCreateProgram;
         t.b();
         d(glCreateProgram, 35633, str);
         d(glCreateProgram, 35632, str2);
@@ -100,23 +100,23 @@ public final class s {
         }
         t.c(z10, "Unable to link shader program: \n" + GLES20.glGetProgramInfoLog(glCreateProgram));
         GLES20.glUseProgram(glCreateProgram);
-        this.f38990d = new HashMap();
+        this.f39038d = new HashMap();
         int[] iArr2 = new int[1];
         GLES20.glGetProgramiv(glCreateProgram, 35721, iArr2, 0);
-        this.f38988b = new a[iArr2[0]];
+        this.f39036b = new a[iArr2[0]];
         for (int i10 = 0; i10 < iArr2[0]; i10++) {
-            a a10 = a.a(this.f38987a, i10);
-            this.f38988b[i10] = a10;
-            this.f38990d.put(a10.f38992a, a10);
+            a a10 = a.a(this.f39035a, i10);
+            this.f39036b[i10] = a10;
+            this.f39038d.put(a10.f39040a, a10);
         }
-        this.f38991e = new HashMap();
+        this.f39039e = new HashMap();
         int[] iArr3 = new int[1];
-        GLES20.glGetProgramiv(this.f38987a, 35718, iArr3, 0);
-        this.f38989c = new b[iArr3[0]];
+        GLES20.glGetProgramiv(this.f39035a, 35718, iArr3, 0);
+        this.f39037c = new b[iArr3[0]];
         for (int i11 = 0; i11 < iArr3[0]; i11++) {
-            b a11 = b.a(this.f38987a, i11);
-            this.f38989c[i11] = a11;
-            this.f38991e.put(a11.f38995a, a11);
+            b a11 = b.a(this.f39035a, i11);
+            this.f39037c[i11] = a11;
+            this.f39039e.put(a11.f39043a, a11);
         }
         t.b();
     }
@@ -143,7 +143,7 @@ public final class s {
     }
 
     private int g(String str) {
-        return f(this.f38987a, str);
+        return f(this.f39035a, str);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -169,6 +169,6 @@ public final class s {
     }
 
     public int j(String str) {
-        return i(this.f38987a, str);
+        return i(this.f39035a, str);
     }
 }

@@ -18,7 +18,7 @@ import qu.k0;
 public final class d implements HostnameVerifier {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f43553a = new d();
+    public static final d f43601a = new d();
 
     private d() {
     }
@@ -97,7 +97,7 @@ public final class d implements HostnameVerifier {
             return false;
         }
         for (String str2 : c10) {
-            if (f43553a.f(b10, str2)) {
+            if (f43601a.f(b10, str2)) {
                 return true;
             }
         }

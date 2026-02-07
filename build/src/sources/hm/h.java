@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f26174b = new a(null);
+    public static final a f26222b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final WritableMap f26175a;
+    private final WritableMap f26223a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,7 +28,7 @@ public final class h extends Event {
     public h(int i10, WritableMap mData) {
         super(i10);
         Intrinsics.checkNotNullParameter(mData, "mData");
-        this.f26175a = mData;
+        this.f26223a = mData;
         mData.putString("navigationType", "other");
         mData.putBoolean("isTopFrame", true);
     }
@@ -41,7 +41,7 @@ public final class h extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     public void dispatch(RCTEventEmitter rctEventEmitter) {
         Intrinsics.checkNotNullParameter(rctEventEmitter, "rctEventEmitter");
-        rctEventEmitter.receiveEvent(getViewTag(), "topShouldStartLoadWithRequest", this.f26175a);
+        rctEventEmitter.receiveEvent(getViewTag(), "topShouldStartLoadWithRequest", this.f26223a);
     }
 
     @Override // com.facebook.react.uimanager.events.Event

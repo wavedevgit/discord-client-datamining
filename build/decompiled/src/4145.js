@@ -5,30 +5,158 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
+    var3 = function arg0() {
+        _fun37937: for (var _fun37937_ip = 0;;) switch (_fun37937_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'm4v';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37937_ip = 111;
+                    continue _fun37937
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isftypStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var3;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
     var0 = true;
-    var3.value = var0;
+    var4.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = var5.bind(var6)(var2, var0, var4);
     var0 = undefined;
-    var2.isBLEND = var0;
-    var2.isELF = var0;
-    var2.isEXE = var0;
-    var2.isMACHO = var0;
-    var2.isINDD = var0;
-    var2.isORC = var0;
-    var2.isPARQUET = var0;
-    var2.isPDF = var0;
-    var2.isPS = var0;
-    var2.isRTF = var0;
-    var2.isSQLITE = var0;
-    var2.isSTL = var0;
-    var2.isTTF = var0;
-    var2.isDOC = var0;
-    var2.isPCAP = var0;
+    var2.isAVI = var0;
+    var2.isFLV = var0;
+    var2.isM4V = var0;
+    var2.isMKV = var0;
+    var2.isMOV = var0;
+    var2.isMP4 = var0;
+    var2.isOGG = var0;
+    var2.isSWF = var0;
+    var2.isWEBM = var0;
+    var4 = function arg0() {
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'avi';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isAVI = var4;
+    var4 = function arg0() {
+        _fun37939: for (var _fun37939_ip = 0;;) switch (_fun37939_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'flv';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37939_ip = 111;
+                    continue _fun37939
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isFlvStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isFLV = var4;
+    var2.isM4V = var3;
+    var3 = function arg0() {
+        _fun37940: for (var _fun37940_ip = 0;;) switch (_fun37940_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'mkv';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37940_ip = 119;
+                    continue _fun37940
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
+    };
+    var2.isMKV = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -44,11 +172,63 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'blend';
+        var0 = 'mov';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isBLEND = var3;
+    var2.isMOV = var3;
+    var3 = function arg0, arg1() {
+        _fun37942: for (var _fun37942_ip = 0;;) switch (_fun37942_ip) {
+            case 0:
+                var5 = arg1;
+                var1 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var0 = 0;
+                var0 = var6[var0];
+                var4 = undefined;
+                var0 = var1.bind(var4)(var0);
+                var3 = var0.getFileChunk;
+                var0 = arg0;
+                var3 = var3.bind(var4)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var1.bind(var4)(var0);
+                var6 = var0.FileTypes;
+                var1 = var6.checkByFileType;
+                var0 = 'mp4';
+                var0 = var1.bind(var6)(var3, var0);
+                var1 = !var0;
+                var0 = !var1;
+                if (!var1) {
+                    _fun37942_ip = 121;
+                    continue _fun37942
+                }
+            case 86:
+                var1 = null;
+                var6 = var1 == var5;
+                var1 = undefined;
+                if (var6) {
+                    _fun37942_ip = 103;
+                    continue _fun37942
+                }
+            case 97:
+                var1 = var5.excludeSimilarTypes;
+            case 103:
+                var1 = !var1;
+                if (!var1) {
+                    _fun37942_ip = 118;
+                    continue _fun37942
+                }
+            case 109:
+                var2 = _closure1_slot2;
+                var1 = var2.bind(var4)(var3);
+            case 118:
+                var0 = var1;
+            case 121:
+                return var0;
+        }
+    };
+    var2.isMP4 = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -64,11 +244,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'elf';
+        var0 = 'ogg';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isELF = var3;
+    var2.isOGG = var3;
     var3 = function arg0() {
         var2 = _closure1_slot0;
         var4 = _closure1_slot1;
@@ -84,250 +264,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var1)(var0);
         var2 = var0.FileTypes;
         var1 = var2.checkByFileType;
-        var0 = 'exe';
+        var0 = 'swf';
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var2.isEXE = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'macho';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isMACHO = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'indd';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isINDD = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'orc';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isORC = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'parquet';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isPARQUET = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'pdf';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isPDF = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'ps';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isPS = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'rtf';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isRTF = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'sqlite';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isSQLITE = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'stl';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isSTL = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'ttf';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isTTF = var3;
-    var3 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'doc';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
-    };
-    var2.isDOC = var3;
+    var2.isSWF = var3;
     var1 = function arg0() {
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var0 = var2.bind(var1)(var0);
-        var3 = var0.getFileChunk;
-        var0 = arg0;
-        var3 = var3.bind(var1)(var0);
-        var0 = 1;
-        var0 = var4[var0];
-        var0 = var2.bind(var1)(var0);
-        var2 = var0.FileTypes;
-        var1 = var2.checkByFileType;
-        var0 = 'pcap';
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
+        _fun37945: for (var _fun37945_ip = 0;;) switch (_fun37945_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var6 = 0;
+                var0 = var5[var6];
+                var4 = undefined;
+                var0 = var2.bind(var4)(var0);
+                var7 = var0.getFileChunk;
+                var3 = arg0;
+                var0 = 64;
+                var3 = var7.bind(var4)(var3, var0);
+                var0 = 1;
+                var0 = var5[var0];
+                var0 = var2.bind(var4)(var0);
+                var5 = var0.FileTypes;
+                var0 = var5.checkByFileType;
+                var2 = 'webm';
+                var0 = var0.bind(var5)(var3, var2);
+                var5 = !var0;
+                var0 = !var5;
+                if (var5) {
+                    _fun37945_ip = 119;
+                    continue _fun37945
+                }
+            case 87:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var6];
+                var1 = var5.bind(var4)(var1);
+                var1 = var1.findMatroskaDocTypeElements;
+                var1 = var1.bind(var4)(var3);
+                var0 = var2 === var1;
+            case 119:
+                return var0;
+        }
     };
-    var2.isPCAP = var1;
+    var2.isWEBM = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4138, 4139]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4137, 4138]);

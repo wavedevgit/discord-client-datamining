@@ -20,14 +20,14 @@ public enum tj implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f40303d;
+    private final int f40351d;
 
     tj(int i10) {
-        this.f40303d = i10;
+        this.f40351d = i10;
     }
 
     @Override // ng.n2
     public final int zza() {
-        return this.f40303d;
+        return this.f40351d;
     }
 }

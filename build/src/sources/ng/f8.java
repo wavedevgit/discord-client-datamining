@@ -5,7 +5,7 @@ import yi.c;
 final class f8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f8 f39803a = new f8();
+    static final f8 f39851a = new f8();
 
     static {
         c.b a10 = yi.c.a("api");

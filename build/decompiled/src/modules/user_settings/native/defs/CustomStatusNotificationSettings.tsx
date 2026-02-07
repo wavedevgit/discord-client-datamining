@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun85748: for (var _fun85748_ip = 0;;) switch (_fun85748_ip) {
+        _fun86179: for (var _fun86179_ip = 0;;) switch (_fun86179_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -27,13 +27,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var0)(var1);
                 var4 = var1.CustomStatusPushNotificationType;
                 if (var5) {
-                    _fun85748_ip = 77;
-                    continue _fun85748
+                    _fun86179_ip = 77;
+                    continue _fun86179
                 }
             case 69:
                 var1 = var4.STATUS_PUSH_DISABLED;
-                _fun85748_ip = 83;
-                continue _fun85748;
+                _fun86179_ip = 83;
+                continue _fun86179;
             case 77:
                 var1 = var4.STATUS_PUSH_ENABLED;
             case 83:
@@ -100,6 +100,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var3.title = var10;
+    var10 = function() {
+        var4 = _closure1_slot0;
+        var5 = _closure1_slot2;
+        var0 = 7;
+        var1 = var5[var0];
+        var3 = undefined;
+        var1 = var4.bind(var3)(var1);
+        var2 = var1.intl;
+        var1 = var2.string;
+        var0 = var5[var0];
+        var0 = var4.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0["/+OQEs"];
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var3.useDescription = var10;
     var9 = var9.NOTIFICATIONS;
     var3.parent = var9;
     var8 = function() {
@@ -137,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.onChange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7033, 660, 3105, 1348, 1311, 795, 9023, 1234, 11051, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7077, 660, 3105, 1348, 1311, 795, 9067, 1234, 11089, 2]);

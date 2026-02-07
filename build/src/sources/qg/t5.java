@@ -5,7 +5,7 @@ import yi.c;
 final class t5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final t5 f47538a = new t5();
+    static final t5 f47586a = new t5();
 
     static {
         c.b a10 = yi.c.a("remoteModelOptions");

@@ -1,75 +1,90 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun49630: for (var _fun49630_ip = 0;;) switch (_fun49630_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var5 = var0.length;
-                var4 = var1.length;
-                if (!(!(var4 > var5))) {
-                    _fun49630_ip = 105;
-                    continue _fun49630
-                }
-            case 20:
-                if (!(var4 !== var5)) {
-                    _fun49630_ip = 99;
-                    continue _fun49630
-                }
-            case 24:
-                var2 = 0;
-                var6 = var2 < var4;
-                var3 = 0;
-                if (!var6) {
-                    _fun49630_ip = 95;
-                    continue _fun49630
-                }
-            case 35:
-                var6 = var1.charCodeAt;
-                var8 = var6.bind(var1)(var3);
-                var7 = var3;
-                if (!(var2 < var5)) {
-                    _fun49630_ip = 81;
-                    continue _fun49630
-                }
-            case 53:
-                var10 = var0.charCodeAt;
-                var9 = parseFloat(var2);
-                var6 = var9 + 1;
-                var9 = var10.bind(var0)(var9);
-                if (!(var9 !== var8)) {
-                    _fun49630_ip = 85;
-                    continue _fun49630
-                }
-            case 74:
-                var2 = var6;
-                if (var2 < var5) {
-                    _fun49630_ip = 53;
-                    continue _fun49630
-                }
-            case 81:
-                var8 = false;
-                return var8;
-            case 85:
-                var3 = var7 + 1;
-                var2 = var6;
-                if (var3 < var4) {
-                    _fun49630_ip = 35;
-                    continue _fun49630
-                }
-            case 95:
-                var2 = true;
-                return var2;
-            case 99:
-                var0 = var1 === var0;
-                return var0;
-            case 105:
-                var0 = false;
-                return var0;
-        }
+    var5 = require;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var4 = {};
+    var13 = true;
+    var4.value = var13;
+    var1 = '__esModule';
+    var1 = var6.bind(var8)(var2, var1, var4);
+    var1 = {};
+    var6 = 'RNSVGRect';
+    var1.uiViewClassName = var6;
+    var4 = {};
+    var8 = {};
+    var9 = 'onSvgLayout';
+    var8.registrationName = var9;
+    var4.topSvgLayout = var8;
+    var1.directEventTypes = var4;
+    var10 = var0.Object;
+    var9 = var10.assign;
+    var8 = {
+        'name': true,
+        'opacity': true,
+        'matrix': true,
+        'mask': true,
+        'markerStart': true,
+        'markerMid': true,
+        'markerEnd': true,
+        'clipPath': true,
+        'clipRule': true,
+        'responsible': true,
+        'display': true,
+        'pointerEvents': true,
+        'color': null,
+        'fill': true,
+        'fillOpacity': true,
+        'fillRule': true,
+        'stroke': true,
+        'strokeOpacity': true,
+        'strokeWidth': true,
+        'strokeLinecap': true,
+        'strokeLinejoin': true,
+        'strokeDasharray': true,
+        'strokeDashoffset': true,
+        'strokeMiterlimit': true,
+        'vectorEffect': true,
+        'propList': true,
+        'filter': true,
+        'x': true,
+        'y': true,
+        'height': true,
+        'width': true,
+        'rx': true,
+        'ry': true
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var4 = {};
+    var0 = 0;
+    var11 = var7[var0];
     var0 = undefined;
+    var11 = var5.bind(var0)(var11);
+    var11 = var11.default;
+    var4.process = var11;
+    var8.color = var4;
+    var4 = 1;
+    var4 = var7[var4];
+    var12 = var5.bind(var0)(var4);
+    var11 = var12.ConditionallyIgnoredEventHandlers;
+    var4 = {};
+    var4.onSvgLayout = var13;
+    var4 = var11.bind(var12)(var4);
+    var4 = var9.bind(var10)(var8, var4);
+    var1.validAttributes = var4;
+    var _closure1_slot0 = var1;
+    var4 = 2;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.get;
+    var3 = function() { // Environment: var3
+        var0 = _closure1_slot0;
+        return var0;
+    };
+    var3 = var4.bind(var5)(var6, var3);
+    var2.default = var3;
+    var2.__INTERNAL_VIEW_CONFIG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);

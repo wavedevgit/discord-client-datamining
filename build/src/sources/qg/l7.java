@@ -5,79 +5,79 @@ import yi.c;
 final class l7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l7 f47360a = new l7();
+    static final l7 f47408a = new l7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f47361b;
+    private static final yi.c f47409b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f47362c;
+    private static final yi.c f47410c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f47363d;
+    private static final yi.c f47411d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f47364e;
+    private static final yi.c f47412e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f47365f;
+    private static final yi.c f47413f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f47366g;
+    private static final yi.c f47414g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final yi.c f47367h;
+    private static final yi.c f47415h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final yi.c f47368i;
+    private static final yi.c f47416i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final yi.c f47369j;
+    private static final yi.c f47417j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final yi.c f47370k;
+    private static final yi.c f47418k;
 
     static {
         c.b a10 = yi.c.a("durationMs");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f47361b = a10.b(v1Var.b()).a();
+        f47409b = a10.b(v1Var.b()).a();
         c.b a11 = yi.c.a("errorCode");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f47362c = a11.b(v1Var2.b()).a();
+        f47410c = a11.b(v1Var2.b()).a();
         c.b a12 = yi.c.a("isColdCall");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f47363d = a12.b(v1Var3.b()).a();
+        f47411d = a12.b(v1Var3.b()).a();
         c.b a13 = yi.c.a("autoManageModelOnBackground");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
-        f47364e = a13.b(v1Var4.b()).a();
+        f47412e = a13.b(v1Var4.b()).a();
         c.b a14 = yi.c.a("autoManageModelOnLowMemory");
         v1 v1Var5 = new v1();
         v1Var5.a(5);
-        f47365f = a14.b(v1Var5.b()).a();
+        f47413f = a14.b(v1Var5.b()).a();
         c.b a15 = yi.c.a("isNnApiEnabled");
         v1 v1Var6 = new v1();
         v1Var6.a(6);
-        f47366g = a15.b(v1Var6.b()).a();
+        f47414g = a15.b(v1Var6.b()).a();
         c.b a16 = yi.c.a("eventsCount");
         v1 v1Var7 = new v1();
         v1Var7.a(7);
-        f47367h = a16.b(v1Var7.b()).a();
+        f47415h = a16.b(v1Var7.b()).a();
         c.b a17 = yi.c.a("otherErrors");
         v1 v1Var8 = new v1();
         v1Var8.a(8);
-        f47368i = a17.b(v1Var8.b()).a();
+        f47416i = a17.b(v1Var8.b()).a();
         c.b a18 = yi.c.a("remoteConfigValueForAcceleration");
         v1 v1Var9 = new v1();
         v1Var9.a(9);
-        f47369j = a18.b(v1Var9.b()).a();
+        f47417j = a18.b(v1Var9.b()).a();
         c.b a19 = yi.c.a("isAccelerated");
         v1 v1Var10 = new v1();
         v1Var10.a(10);
-        f47370k = a19.b(v1Var10.b()).a();
+        f47418k = a19.b(v1Var10.b()).a();
     }
 
     private l7() {
@@ -87,15 +87,15 @@ final class l7 implements yi.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         xd xdVar = (xd) obj;
         yi.e eVar = (yi.e) obj2;
-        eVar.a(f47361b, xdVar.e());
-        eVar.a(f47362c, xdVar.a());
-        eVar.a(f47363d, xdVar.d());
-        eVar.a(f47364e, xdVar.b());
-        eVar.a(f47365f, xdVar.c());
-        eVar.a(f47366g, null);
-        eVar.a(f47367h, null);
-        eVar.a(f47368i, null);
-        eVar.a(f47369j, null);
-        eVar.a(f47370k, null);
+        eVar.a(f47409b, xdVar.e());
+        eVar.a(f47410c, xdVar.a());
+        eVar.a(f47411d, xdVar.d());
+        eVar.a(f47412e, xdVar.b());
+        eVar.a(f47413f, xdVar.c());
+        eVar.a(f47414g, null);
+        eVar.a(f47415h, null);
+        eVar.a(f47416i, null);
+        eVar.a(f47417j, null);
+        eVar.a(f47418k, null);
     }
 }

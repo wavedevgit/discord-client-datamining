@@ -14,7 +14,7 @@ public abstract class e implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0679a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51692d;
+        private final boolean f51740d;
 
         /* renamed from: un.e$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -52,30 +52,30 @@ public abstract class e implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && this.f51692d == ((a) obj).f51692d) {
+            if ((obj instanceof a) && this.f51740d == ((a) obj).f51740d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f51692d);
+            return Boolean.hashCode(this.f51740d);
         }
 
         public String toString() {
-            boolean z10 = this.f51692d;
+            boolean z10 = this.f51740d;
             return "BarcodePdf417Rule(isRequired=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f51692d ? 1 : 0);
+            dest.writeInt(this.f51740d ? 1 : 0);
         }
 
         public a(boolean z10) {
             super(null);
-            this.f51692d = z10;
+            this.f51740d = z10;
         }
     }
 
@@ -85,7 +85,7 @@ public abstract class e implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51693d;
+        private final boolean f51741d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -122,30 +122,30 @@ public abstract class e implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && this.f51693d == ((b) obj).f51693d) {
+            if ((obj instanceof b) && this.f51741d == ((b) obj).f51741d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f51693d);
+            return Boolean.hashCode(this.f51741d);
         }
 
         public String toString() {
-            boolean z10 = this.f51693d;
+            boolean z10 = this.f51741d;
             return "FrontOrBackRule(isRequired=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f51693d ? 1 : 0);
+            dest.writeInt(this.f51741d ? 1 : 0);
         }
 
         public b(boolean z10) {
             super(null);
-            this.f51693d = z10;
+            this.f51741d = z10;
         }
     }
 
@@ -155,7 +155,7 @@ public abstract class e implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51694d;
+        private final boolean f51742d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -192,30 +192,30 @@ public abstract class e implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof c) && this.f51694d == ((c) obj).f51694d) {
+            if ((obj instanceof c) && this.f51742d == ((c) obj).f51742d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f51694d);
+            return Boolean.hashCode(this.f51742d);
         }
 
         public String toString() {
-            boolean z10 = this.f51694d;
+            boolean z10 = this.f51742d;
             return "FrontRule(isRequired=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f51694d ? 1 : 0);
+            dest.writeInt(this.f51742d ? 1 : 0);
         }
 
         public c(boolean z10) {
             super(null);
-            this.f51694d = z10;
+            this.f51742d = z10;
         }
     }
 
@@ -225,7 +225,7 @@ public abstract class e implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51695d;
+        private final boolean f51743d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -251,7 +251,7 @@ public abstract class e implements Parcelable {
 
         public d(boolean z10) {
             super(null);
-            this.f51695d = z10;
+            this.f51743d = z10;
         }
 
         @Override // android.os.Parcelable
@@ -263,25 +263,25 @@ public abstract class e implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof d) && this.f51695d == ((d) obj).f51695d) {
+            if ((obj instanceof d) && this.f51743d == ((d) obj).f51743d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f51695d);
+            return Boolean.hashCode(this.f51743d);
         }
 
         public String toString() {
-            boolean z10 = this.f51695d;
+            boolean z10 = this.f51743d;
             return "MrzRule(isRequired=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f51695d ? 1 : 0);
+            dest.writeInt(this.f51743d ? 1 : 0);
         }
     }
 
@@ -292,7 +292,7 @@ public abstract class e implements Parcelable {
         public static final Parcelable.Creator<C0680e> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51696d;
+        private final boolean f51744d;
 
         /* renamed from: un.e$e$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -319,7 +319,7 @@ public abstract class e implements Parcelable {
 
         public C0680e(boolean z10) {
             super(null);
-            this.f51696d = z10;
+            this.f51744d = z10;
         }
 
         @Override // android.os.Parcelable
@@ -331,25 +331,25 @@ public abstract class e implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0680e) && this.f51696d == ((C0680e) obj).f51696d) {
+            if ((obj instanceof C0680e) && this.f51744d == ((C0680e) obj).f51744d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f51696d);
+            return Boolean.hashCode(this.f51744d);
         }
 
         public String toString() {
-            boolean z10 = this.f51696d;
+            boolean z10 = this.f51744d;
             return "TextExtractionRule(isRequired=" + z10 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeInt(this.f51696d ? 1 : 0);
+            dest.writeInt(this.f51744d ? 1 : 0);
         }
     }
 

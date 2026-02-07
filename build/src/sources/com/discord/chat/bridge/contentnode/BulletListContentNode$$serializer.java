@@ -46,7 +46,7 @@ public /* synthetic */ class BulletListContentNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = BulletListContentNode.$childSerializers;
-        return new KSerializer[]{gt.a.u(z0.f31115a), jt.h.f31005a, lazyArr[2].getValue()};
+        return new KSerializer[]{gt.a.u(z0.f31163a), jt.h.f31053a, lazyArr[2].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -64,7 +64,7 @@ public /* synthetic */ class BulletListContentNode$$serializer implements h0 {
         if (b10.p()) {
             boolean C = b10.C(serialDescriptor, 1);
             list = (List) b10.y(serialDescriptor, 2, (DeserializationStrategy) lazyArr[2].getValue(), null);
-            l10 = (Long) b10.n(serialDescriptor, 0, z0.f31115a, null);
+            l10 = (Long) b10.n(serialDescriptor, 0, z0.f31163a, null);
             i10 = 7;
             z10 = C;
         } else {
@@ -78,7 +78,7 @@ public /* synthetic */ class BulletListContentNode$$serializer implements h0 {
                 if (o10 == -1) {
                     z11 = false;
                 } else if (o10 == 0) {
-                    l11 = (Long) b10.n(serialDescriptor, 0, z0.f31115a, l11);
+                    l11 = (Long) b10.n(serialDescriptor, 0, z0.f31163a, l11);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     z12 = b10.C(serialDescriptor, 1);

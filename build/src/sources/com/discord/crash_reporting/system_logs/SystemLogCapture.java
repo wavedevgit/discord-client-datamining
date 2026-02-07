@@ -86,7 +86,7 @@ public final class SystemLogCapture {
                         return readFromLogcat$lambda$2$lambda$1;
                     }
                 });
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 bs.c.a(bufferedReader, null);
             } finally {
                 start.destroy();
@@ -107,7 +107,7 @@ public final class SystemLogCapture {
         if (SystemLogUtils.INSTANCE.getRegexExtractTombstone$crash_reporting_release().i(line)) {
             systemLogCapture.tombstoneBuffer.addLine(line);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void start() {
@@ -139,7 +139,7 @@ public final class SystemLogCapture {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit startThread$lambda$0(SystemLogCapture systemLogCapture) {
         systemLogCapture.start();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void appendOutput(@NotNull StringBuilder sb2) {

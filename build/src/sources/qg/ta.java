@@ -5,7 +5,7 @@ import yi.c;
 final class ta implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ta f47543a = new ta();
+    static final ta f47591a = new ta();
 
     static {
         c.b a10 = yi.c.a("userSelectedArea");

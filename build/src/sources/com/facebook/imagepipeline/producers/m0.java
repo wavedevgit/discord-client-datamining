@@ -105,7 +105,7 @@ public class m0 implements w0 {
             if (bitmap == null) {
                 return null;
             }
-            sa.f o12 = sa.f.o1(bitmap, ka.e.a(), sa.n.f49850d, 0);
+            sa.f o12 = sa.f.o1(bitmap, ka.e.a(), sa.n.f49898d, 0);
             this.f10731r.p("image_format", "thumbnail");
             o12.J(this.f10731r.getExtras());
             return CloseableReference.K0(o12);

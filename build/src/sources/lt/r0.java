@@ -13,23 +13,23 @@ public abstract class r0 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f36713a;
+        public static final /* synthetic */ int[] f36761a;
 
         static {
             int[] iArr = new int[kt.a.values().length];
             try {
-                iArr[kt.a.f35491d.ordinal()] = 1;
+                iArr[kt.a.f35539d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[kt.a.f35493i.ordinal()] = 2;
+                iArr[kt.a.f35541i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[kt.a.f35492e.ordinal()] = 3;
+                iArr[kt.a.f35540e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f36713a = iArr;
+            f36761a = iArr;
         }
     }
 

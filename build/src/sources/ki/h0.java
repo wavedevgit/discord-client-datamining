@@ -3,25 +3,25 @@ package ki;
 final class h0 extends i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31679a;
+    private final int f31727a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f31680b;
+    private final long f31728b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h0(int i10, long j10) {
-        this.f31679a = i10;
-        this.f31680b = j10;
+        this.f31727a = i10;
+        this.f31728b = j10;
     }
 
     @Override // ki.i0
     public final int a() {
-        return this.f31679a;
+        return this.f31727a;
     }
 
     @Override // ki.i0
     public final long b() {
-        return this.f31680b;
+        return this.f31728b;
     }
 
     public final boolean equals(Object obj) {
@@ -30,7 +30,7 @@ final class h0 extends i0 {
         }
         if (obj instanceof i0) {
             i0 i0Var = (i0) obj;
-            if (this.f31679a == i0Var.a() && this.f31680b == i0Var.b()) {
+            if (this.f31727a == i0Var.a() && this.f31728b == i0Var.b()) {
                 return true;
             }
         }
@@ -38,11 +38,11 @@ final class h0 extends i0 {
     }
 
     public final int hashCode() {
-        long j10 = this.f31680b;
-        return ((int) (j10 ^ (j10 >>> 32))) ^ ((this.f31679a ^ 1000003) * 1000003);
+        long j10 = this.f31728b;
+        return ((int) (j10 ^ (j10 >>> 32))) ^ ((this.f31727a ^ 1000003) * 1000003);
     }
 
     public final String toString() {
-        return "EventRecord{eventType=" + this.f31679a + ", eventTimestamp=" + this.f31680b + "}";
+        return "EventRecord{eventType=" + this.f31727a + ", eventTimestamp=" + this.f31728b + "}";
     }
 }

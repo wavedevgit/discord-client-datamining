@@ -14,22 +14,22 @@ public final class j4 implements Parcelable {
     public static final Parcelable.Creator<j4> CREATOR = new b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f30339d;
+    private final Map f30387d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f30340a = new LinkedHashMap();
+        private final Map f30388a = new LinkedHashMap();
 
         public final j4 a() {
-            return new j4(this.f30340a);
+            return new j4(this.f30388a);
         }
 
         public final void b(String str, String str2, c4.e side, String text) {
             Intrinsics.checkNotNullParameter(side, "side");
             Intrinsics.checkNotNullParameter(text, "text");
-            Map map = this.f30340a;
+            Map map = this.f30388a;
             String str3 = str + "-" + str2 + "-" + side.g();
             Locale US = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US, "US");
@@ -62,7 +62,7 @@ public final class j4 implements Parcelable {
 
     public j4(Map backingData) {
         Intrinsics.checkNotNullParameter(backingData, "backingData");
-        this.f30339d = backingData;
+        this.f30387d = backingData;
     }
 
     public final String a(String str, String str2, c4.e side) {
@@ -73,7 +73,7 @@ public final class j4 implements Parcelable {
         if (Intrinsics.areEqual(str2, "auto-classification") || str2 == null) {
             str2 = "unpopulated";
         }
-        Map map = this.f30339d;
+        Map map = this.f30387d;
         Locale US = Locale.US;
         Intrinsics.checkNotNullExpressionValue(US, "US");
         String lowerCase = (str + "-" + str2 + "-" + side.g()).toLowerCase(US);
@@ -82,7 +82,7 @@ public final class j4 implements Parcelable {
         if (str3 != null) {
             return str3;
         }
-        Map map2 = this.f30339d;
+        Map map2 = this.f30387d;
         Intrinsics.checkNotNullExpressionValue(US, "US");
         String lowerCase2 = (((String) null) + "-" + str2 + "-" + side.g()).toLowerCase(US);
         Intrinsics.checkNotNullExpressionValue(lowerCase2, "toLowerCase(...)");
@@ -90,7 +90,7 @@ public final class j4 implements Parcelable {
         if (str4 != null) {
             return str4;
         }
-        Map map3 = this.f30339d;
+        Map map3 = this.f30387d;
         Intrinsics.checkNotNullExpressionValue(US, "US");
         String lowerCase3 = (((String) null) + "-" + ((String) null) + "-" + side.g()).toLowerCase(US);
         Intrinsics.checkNotNullExpressionValue(lowerCase3, "toLowerCase(...)");
@@ -110,25 +110,25 @@ public final class j4 implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof j4) && Intrinsics.areEqual(this.f30339d, ((j4) obj).f30339d)) {
+        if ((obj instanceof j4) && Intrinsics.areEqual(this.f30387d, ((j4) obj).f30387d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f30339d.hashCode();
+        return this.f30387d.hashCode();
     }
 
     public String toString() {
-        Map map = this.f30339d;
+        Map map = this.f30387d;
         return "OverridableText(backingData=" + map + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        Map map = this.f30339d;
+        Map map = this.f30387d;
         dest.writeInt(map.size());
         for (Map.Entry entry : map.entrySet()) {
             dest.writeString((String) entry.getKey());

@@ -5,26 +5,26 @@ import java.nio.ByteBuffer;
 final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ByteBuffer f29906a;
+    private final ByteBuffer f29954a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f29907b;
+    private final long f29955b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f29908c;
+    private final long f29956c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f29909d;
+    private final long f29957d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ByteBuffer f29910e;
+    private final ByteBuffer f29958e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ i0(ByteBuffer byteBuffer, long j10, long j11, long j12, ByteBuffer byteBuffer2, h0 h0Var) {
-        this.f29906a = byteBuffer;
-        this.f29907b = j10;
-        this.f29908c = j11;
-        this.f29909d = j12;
-        this.f29910e = byteBuffer2;
+        this.f29954a = byteBuffer;
+        this.f29955b = j10;
+        this.f29956c = j11;
+        this.f29957d = j12;
+        this.f29958e = byteBuffer2;
     }
 }

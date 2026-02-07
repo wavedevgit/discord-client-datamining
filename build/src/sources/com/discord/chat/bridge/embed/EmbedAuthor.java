@@ -94,13 +94,13 @@ public final class EmbedAuthor {
     public static final /* synthetic */ void write$Self$chat_release(EmbedAuthor embedAuthor, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, embedAuthor.name);
         if (compositeEncoder.A(serialDescriptor, 1) || embedAuthor.url != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, embedAuthor.url);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, embedAuthor.url);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || embedAuthor.iconURL != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, embedAuthor.iconURL);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, embedAuthor.iconURL);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || embedAuthor.iconProxyURL != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, embedAuthor.iconProxyURL);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, embedAuthor.iconProxyURL);
         }
     }
 

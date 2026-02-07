@@ -59,23 +59,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = var6.assign;
         var4 = {};
         var0 = function arg0() {
-            _fun17484: for (var _fun17484_ip = 0;;) switch (_fun17484_ip) {
+            _fun17489: for (var _fun17489_ip = 0;;) switch (_fun17489_ip) {
                 case 0:
                     var2 = arg0;
                     var3 = _closure2_slot0;
                     var1 = 'onPress';
                     var1 = var1 in var3;
                     if (!var1) {
-                        _fun17484_ip = 50;
-                        continue _fun17484
+                        _fun17489_ip = 50;
+                        continue _fun17489
                     }
                 case 21:
                     var1 = _closure2_slot0;
                     var3 = var1.onPress;
                     var1 = null;
                     if (!(var1 != var3)) {
-                        _fun17484_ip = 50;
-                        continue _fun17484
+                        _fun17489_ip = 50;
+                        continue _fun17489
                     }
                 case 36:
                     var3 = _closure2_slot0;

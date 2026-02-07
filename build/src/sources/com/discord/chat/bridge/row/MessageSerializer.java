@@ -27,7 +27,7 @@ public final class MessageSerializer implements KSerializer {
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return j.b("Message", e.i.f26478a);
+        return j.b("Message", e.i.f26526a);
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

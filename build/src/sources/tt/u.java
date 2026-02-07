@@ -8,25 +8,25 @@ import java.util.Set;
 class u extends t {
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f51076e = null;
+    private Map f51124e = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f51075d = null;
+    private Object f51123d = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // tt.t
     public Object G() {
-        return this.f51075d;
+        return this.f51123d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // tt.t
     public void H(rt.p pVar, int i10) {
         pVar.getClass();
-        Map map = this.f51076e;
+        Map map = this.f51124e;
         if (map == null) {
             map = new HashMap();
-            this.f51076e = map;
+            this.f51124e = map;
         }
         map.put(pVar, Integer.valueOf(i10));
     }
@@ -36,21 +36,21 @@ class u extends t {
     public void I(rt.p pVar, Object obj) {
         pVar.getClass();
         if (obj == null) {
-            Map map = this.f51076e;
+            Map map = this.f51124e;
             if (map != null) {
                 map.remove(pVar);
-                if (this.f51076e.isEmpty()) {
-                    this.f51076e = null;
+                if (this.f51124e.isEmpty()) {
+                    this.f51124e = null;
                     return;
                 }
                 return;
             }
             return;
         }
-        Map map2 = this.f51076e;
+        Map map2 = this.f51124e;
         if (map2 == null) {
             map2 = new HashMap();
-            this.f51076e = map2;
+            this.f51124e = map2;
         }
         map2.put(pVar, obj);
     }
@@ -58,13 +58,13 @@ class u extends t {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // tt.t
     public void J(Object obj) {
-        this.f51075d = obj;
+        this.f51123d = obj;
     }
 
     @Override // rt.q, rt.o
     public boolean n(rt.p pVar) {
         Map map;
-        if (pVar != null && (map = this.f51076e) != null) {
+        if (pVar != null && (map = this.f51124e) != null) {
             return map.containsKey(pVar);
         }
         return false;
@@ -73,7 +73,7 @@ class u extends t {
     @Override // rt.q, rt.o
     public int q(rt.p pVar) {
         pVar.getClass();
-        Map map = this.f51076e;
+        Map map = this.f51124e;
         if (map != null && map.containsKey(pVar)) {
             return ((Integer) pVar.getType().cast(map.get(pVar))).intValue();
         }
@@ -83,7 +83,7 @@ class u extends t {
     @Override // rt.q, rt.o
     public Object s(rt.p pVar) {
         pVar.getClass();
-        Map map = this.f51076e;
+        Map map = this.f51124e;
         if (map != null && map.containsKey(pVar)) {
             return pVar.getType().cast(map.get(pVar));
         }
@@ -92,7 +92,7 @@ class u extends t {
 
     @Override // rt.q
     public Set y() {
-        Map map = this.f51076e;
+        Map map = this.f51124e;
         if (map == null) {
             return Collections.EMPTY_SET;
         }

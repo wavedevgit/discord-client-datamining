@@ -12,17 +12,17 @@ import qu.y;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0471a f35536a = C0471a.f35538a;
+    public static final C0471a f35584a = C0471a.f35586a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f35537b = new C0471a.C0472a();
+    public static final a f35585b = new C0471a.C0472a();
 
     /* renamed from: ku.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class C0471a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0471a f35538a = new C0471a();
+        static final /* synthetic */ C0471a f35586a = new C0471a();
 
         /* renamed from: ku.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

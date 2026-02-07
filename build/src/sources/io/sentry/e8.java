@@ -9,49 +9,49 @@ import java.util.concurrent.ConcurrentHashMap;
 public class e8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f28106d;
+    private final io.sentry.protocol.x f28154d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final j8 f28107e;
+    private final j8 f28155e;
 
     /* renamed from: i  reason: collision with root package name */
-    private j8 f28108i;
+    private j8 f28156i;
 
     /* renamed from: o  reason: collision with root package name */
-    private transient s8 f28109o;
+    private transient s8 f28157o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected String f28110p;
+    protected String f28158p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected String f28111q;
+    protected String f28159q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected l8 f28112r;
+    protected l8 f28160r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected Map f28113s;
+    protected Map f28161s;
 
     /* renamed from: t  reason: collision with root package name */
-    protected String f28114t;
+    protected String f28162t;
 
     /* renamed from: u  reason: collision with root package name */
-    protected Map f28115u;
+    protected Map f28163u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f28116v;
+    private Map f28164v;
 
     /* renamed from: w  reason: collision with root package name */
-    private j1 f28117w;
+    private j1 f28165w;
 
     /* renamed from: x  reason: collision with root package name */
-    protected d f28118x;
+    protected d f28166x;
 
     /* renamed from: y  reason: collision with root package name */
-    protected io.sentry.featureflags.b f28119y;
+    protected io.sentry.featureflags.b f28167y;
 
     /* renamed from: z  reason: collision with root package name */
-    private io.sentry.protocol.x f28120z;
+    private io.sentry.protocol.x f28168z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -175,10 +175,10 @@ public class e8 implements w1 {
                     e8Var.v(l8Var);
                     e8Var.t(str3);
                     if (map != null) {
-                        e8Var.f28113s = map;
+                        e8Var.f28161s = map;
                     }
                     if (map2 != null) {
-                        e8Var.f28115u = map2;
+                        e8Var.f28163u = map2;
                     }
                     e8Var.w(concurrentHashMap);
                     e3Var.D();
@@ -199,27 +199,27 @@ public class e8 implements w1 {
     }
 
     public e8 a(String str, j8 j8Var, j8 j8Var2) {
-        io.sentry.protocol.x xVar = this.f28106d;
+        io.sentry.protocol.x xVar = this.f28154d;
         if (j8Var2 == null) {
             j8Var2 = new j8();
         }
-        return new e8(xVar, j8Var2, j8Var, str, null, this.f28109o, null, "manual");
+        return new e8(xVar, j8Var2, j8Var, str, null, this.f28157o, null, "manual");
     }
 
     public d b() {
-        return this.f28118x;
+        return this.f28166x;
     }
 
     public String c() {
-        return this.f28111q;
+        return this.f28159q;
     }
 
     public io.sentry.featureflags.b d() {
-        return this.f28119y;
+        return this.f28167y;
     }
 
     public j1 e() {
-        return this.f28117w;
+        return this.f28165w;
     }
 
     public boolean equals(Object obj) {
@@ -230,30 +230,30 @@ public class e8 implements w1 {
             return false;
         }
         e8 e8Var = (e8) obj;
-        if (this.f28106d.equals(e8Var.f28106d) && this.f28107e.equals(e8Var.f28107e) && io.sentry.util.y.a(this.f28108i, e8Var.f28108i) && this.f28110p.equals(e8Var.f28110p) && io.sentry.util.y.a(this.f28111q, e8Var.f28111q) && n() == e8Var.n()) {
+        if (this.f28154d.equals(e8Var.f28154d) && this.f28155e.equals(e8Var.f28155e) && io.sentry.util.y.a(this.f28156i, e8Var.f28156i) && this.f28158p.equals(e8Var.f28158p) && io.sentry.util.y.a(this.f28159q, e8Var.f28159q) && n() == e8Var.n()) {
             return true;
         }
         return false;
     }
 
     public String f() {
-        return this.f28110p;
+        return this.f28158p;
     }
 
     public String g() {
-        return this.f28114t;
+        return this.f28162t;
     }
 
     public j8 h() {
-        return this.f28108i;
+        return this.f28156i;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28106d, this.f28107e, this.f28108i, this.f28110p, this.f28111q, n());
+        return io.sentry.util.y.b(this.f28154d, this.f28155e, this.f28156i, this.f28158p, this.f28159q, n());
     }
 
     public Boolean i() {
-        s8 s8Var = this.f28109o;
+        s8 s8Var = this.f28157o;
         if (s8Var == null) {
             return null;
         }
@@ -261,11 +261,11 @@ public class e8 implements w1 {
     }
 
     public io.sentry.protocol.x j() {
-        return this.f28120z;
+        return this.f28168z;
     }
 
     public Boolean k() {
-        s8 s8Var = this.f28109o;
+        s8 s8Var = this.f28157o;
         if (s8Var == null) {
             return null;
         }
@@ -273,23 +273,23 @@ public class e8 implements w1 {
     }
 
     public s8 l() {
-        return this.f28109o;
+        return this.f28157o;
     }
 
     public j8 m() {
-        return this.f28107e;
+        return this.f28155e;
     }
 
     public l8 n() {
-        return this.f28112r;
+        return this.f28160r;
     }
 
     public Map o() {
-        return this.f28113s;
+        return this.f28161s;
     }
 
     public io.sentry.protocol.x p() {
-        return this.f28106d;
+        return this.f28154d;
     }
 
     public void q(String str, Object obj) {
@@ -297,74 +297,74 @@ public class e8 implements w1 {
             return;
         }
         if (obj == null) {
-            this.f28115u.remove(str);
+            this.f28163u.remove(str);
         } else {
-            this.f28115u.put(str, obj);
+            this.f28163u.put(str, obj);
         }
     }
 
     public void r(String str) {
-        this.f28111q = str;
+        this.f28159q = str;
     }
 
     public void s(j1 j1Var) {
-        this.f28117w = j1Var;
+        this.f28165w = j1Var;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
         f3Var.e("trace_id");
-        this.f28106d.serialize(f3Var, iLogger);
+        this.f28154d.serialize(f3Var, iLogger);
         f3Var.e("span_id");
-        this.f28107e.serialize(f3Var, iLogger);
-        if (this.f28108i != null) {
+        this.f28155e.serialize(f3Var, iLogger);
+        if (this.f28156i != null) {
             f3Var.e("parent_span_id");
-            this.f28108i.serialize(f3Var, iLogger);
+            this.f28156i.serialize(f3Var, iLogger);
         }
-        f3Var.e("op").f(this.f28110p);
-        if (this.f28111q != null) {
-            f3Var.e("description").f(this.f28111q);
+        f3Var.e("op").f(this.f28158p);
+        if (this.f28159q != null) {
+            f3Var.e("description").f(this.f28159q);
         }
         if (n() != null) {
             f3Var.e("status").j(iLogger, n());
         }
-        if (this.f28114t != null) {
-            f3Var.e("origin").j(iLogger, this.f28114t);
+        if (this.f28162t != null) {
+            f3Var.e("origin").j(iLogger, this.f28162t);
         }
-        if (!this.f28113s.isEmpty()) {
-            f3Var.e("tags").j(iLogger, this.f28113s);
+        if (!this.f28161s.isEmpty()) {
+            f3Var.e("tags").j(iLogger, this.f28161s);
         }
-        if (!this.f28115u.isEmpty()) {
-            f3Var.e("data").j(iLogger, this.f28115u);
+        if (!this.f28163u.isEmpty()) {
+            f3Var.e("data").j(iLogger, this.f28163u);
         }
-        Map map = this.f28116v;
+        Map map = this.f28164v;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28116v.get(str));
+                f3Var.e(str).j(iLogger, this.f28164v.get(str));
             }
         }
         f3Var.D();
     }
 
     public void t(String str) {
-        this.f28114t = str;
+        this.f28162t = str;
     }
 
     public void u(s8 s8Var) {
-        this.f28109o = s8Var;
-        d dVar = this.f28118x;
+        this.f28157o = s8Var;
+        d dVar = this.f28166x;
         if (dVar != null) {
             dVar.G(s8Var);
         }
     }
 
     public void v(l8 l8Var) {
-        this.f28112r = l8Var;
+        this.f28160r = l8Var;
     }
 
     public void w(Map map) {
-        this.f28116v = map;
+        this.f28164v = map;
     }
 
     public e8(io.sentry.protocol.x xVar, j8 j8Var, String str, j8 j8Var2, s8 s8Var) {
@@ -372,51 +372,51 @@ public class e8 implements w1 {
     }
 
     public e8(io.sentry.protocol.x xVar, j8 j8Var, j8 j8Var2, String str, String str2, s8 s8Var, l8 l8Var, String str3) {
-        this.f28113s = new ConcurrentHashMap();
-        this.f28114t = "manual";
-        this.f28115u = new ConcurrentHashMap();
-        this.f28117w = j1.SENTRY;
-        this.f28119y = io.sentry.featureflags.d.a();
-        this.f28120z = io.sentry.protocol.x.f28615e;
-        this.f28106d = (io.sentry.protocol.x) io.sentry.util.y.c(xVar, "traceId is required");
-        this.f28107e = (j8) io.sentry.util.y.c(j8Var, "spanId is required");
-        this.f28110p = (String) io.sentry.util.y.c(str, "operation is required");
-        this.f28108i = j8Var2;
-        this.f28111q = str2;
-        this.f28112r = l8Var;
-        this.f28114t = str3;
+        this.f28161s = new ConcurrentHashMap();
+        this.f28162t = "manual";
+        this.f28163u = new ConcurrentHashMap();
+        this.f28165w = j1.SENTRY;
+        this.f28167y = io.sentry.featureflags.d.a();
+        this.f28168z = io.sentry.protocol.x.f28663e;
+        this.f28154d = (io.sentry.protocol.x) io.sentry.util.y.c(xVar, "traceId is required");
+        this.f28155e = (j8) io.sentry.util.y.c(j8Var, "spanId is required");
+        this.f28158p = (String) io.sentry.util.y.c(str, "operation is required");
+        this.f28156i = j8Var2;
+        this.f28159q = str2;
+        this.f28160r = l8Var;
+        this.f28162t = str3;
         u(s8Var);
         io.sentry.util.thread.a threadChecker = l4.g().b().getThreadChecker();
-        this.f28115u.put("thread.id", String.valueOf(threadChecker.c()));
-        this.f28115u.put("thread.name", threadChecker.b());
+        this.f28163u.put("thread.id", String.valueOf(threadChecker.c()));
+        this.f28163u.put("thread.name", threadChecker.b());
     }
 
     public e8(e8 e8Var) {
-        this.f28113s = new ConcurrentHashMap();
-        this.f28114t = "manual";
-        this.f28115u = new ConcurrentHashMap();
-        this.f28117w = j1.SENTRY;
-        this.f28119y = io.sentry.featureflags.d.a();
-        this.f28120z = io.sentry.protocol.x.f28615e;
-        this.f28106d = e8Var.f28106d;
-        this.f28107e = e8Var.f28107e;
-        this.f28108i = e8Var.f28108i;
-        u(e8Var.f28109o);
-        this.f28110p = e8Var.f28110p;
-        this.f28111q = e8Var.f28111q;
-        this.f28112r = e8Var.f28112r;
-        Map b10 = io.sentry.util.c.b(e8Var.f28113s);
+        this.f28161s = new ConcurrentHashMap();
+        this.f28162t = "manual";
+        this.f28163u = new ConcurrentHashMap();
+        this.f28165w = j1.SENTRY;
+        this.f28167y = io.sentry.featureflags.d.a();
+        this.f28168z = io.sentry.protocol.x.f28663e;
+        this.f28154d = e8Var.f28154d;
+        this.f28155e = e8Var.f28155e;
+        this.f28156i = e8Var.f28156i;
+        u(e8Var.f28157o);
+        this.f28158p = e8Var.f28158p;
+        this.f28159q = e8Var.f28159q;
+        this.f28160r = e8Var.f28160r;
+        Map b10 = io.sentry.util.c.b(e8Var.f28161s);
         if (b10 != null) {
-            this.f28113s = b10;
+            this.f28161s = b10;
         }
-        Map b11 = io.sentry.util.c.b(e8Var.f28116v);
+        Map b11 = io.sentry.util.c.b(e8Var.f28164v);
         if (b11 != null) {
-            this.f28116v = b11;
+            this.f28164v = b11;
         }
-        this.f28118x = e8Var.f28118x;
-        Map b12 = io.sentry.util.c.b(e8Var.f28115u);
+        this.f28166x = e8Var.f28166x;
+        Map b12 = io.sentry.util.c.b(e8Var.f28163u);
         if (b12 != null) {
-            this.f28115u = b12;
+            this.f28163u = b12;
         }
     }
 }

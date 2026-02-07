@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayDeque f36664a = new ArrayDeque();
+    private final ArrayDeque f36712a = new ArrayDeque();
 
     /* renamed from: b  reason: collision with root package name */
-    private int f36665b;
+    private int f36713b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void a(char[] array) {
@@ -18,13 +18,13 @@ public abstract class i {
         Intrinsics.checkNotNullParameter(array, "array");
         synchronized (this) {
             try {
-                int length = this.f36665b + array.length;
-                i10 = e.f36649a;
+                int length = this.f36713b + array.length;
+                i10 = e.f36697a;
                 if (length < i10) {
-                    this.f36665b += array.length;
-                    this.f36664a.addLast(array);
+                    this.f36713b += array.length;
+                    this.f36712a.addLast(array);
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -35,9 +35,9 @@ public abstract class i {
     public final char[] b(int i10) {
         char[] cArr;
         synchronized (this) {
-            cArr = (char[]) this.f36664a.q();
+            cArr = (char[]) this.f36712a.q();
             if (cArr != null) {
-                this.f36665b -= cArr.length;
+                this.f36713b -= cArr.length;
             } else {
                 cArr = null;
             }

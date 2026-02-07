@@ -5,7 +5,7 @@ import yi.c;
 final class ha implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ha f39859a = new ha();
+    static final ha f39907a = new ha();
 
     static {
         c.b a10 = yi.c.a("detectorOptions");

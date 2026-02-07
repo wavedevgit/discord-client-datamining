@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy92b2ljZV9maWx0ZXJz',
+        'httpServerLocation': '/assets/modules/premium/gifting',
         'scales': null,
-        'hash': '046e8abfeed3c731cb0b4b30e9a1032f',
-        'name': 'bg.messages.046e8abfeed3c731cb0b4b30e9a1032f.compiled.messages',
+        'hash': 'ba60c3587627b7946a34de742eec457a',
+        'name': 'PremiumGifting.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

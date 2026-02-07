@@ -47,7 +47,7 @@ public final class AppManifest {
     }
 
     static {
-        qr.o oVar = qr.o.f48044e;
+        qr.o oVar = qr.o.f48092e;
         $childSerializers = new Lazy[]{null, qr.l.b(oVar, new Function0() { // from class: com.discord.bundle_updater.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -84,13 +84,13 @@ public final class AppManifest {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new u0(n2Var, n2Var);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new u0(n2Var, n2Var);
     }
 

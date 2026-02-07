@@ -11,7 +11,7 @@ import os.s0;
 public abstract class i {
     public static final CoroutineScope a(CoroutineContext coroutineContext) {
         CompletableJob b10;
-        if (coroutineContext.m(Job.f35017h) == null) {
+        if (coroutineContext.m(Job.f35065h) == null) {
             b10 = a0.b(null, 1, null);
             coroutineContext = coroutineContext.Y0(b10);
         }
@@ -27,7 +27,7 @@ public abstract class i {
     }
 
     public static final void d(CoroutineScope coroutineScope, CancellationException cancellationException) {
-        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f35017h);
+        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f35065h);
         if (job != null) {
             job.k(cancellationException);
             return;
@@ -63,7 +63,7 @@ public abstract class i {
     }
 
     public static final boolean i(CoroutineScope coroutineScope) {
-        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f35017h);
+        Job job = (Job) coroutineScope.getCoroutineContext().m(Job.f35065h);
         if (job != null) {
             return job.a();
         }

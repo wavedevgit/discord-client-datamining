@@ -9,30 +9,30 @@ import kotlin.jvm.internal.Intrinsics;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0486a f36504a = C0486a.f36505a;
+    public static final C0486a f36552a = C0486a.f36553a;
 
     /* renamed from: lq.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class C0486a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0486a f36505a = new C0486a();
+        static final /* synthetic */ C0486a f36553a = new C0486a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static a f36506b;
+        private static a f36554b;
 
         private C0486a() {
         }
 
         public final a a() {
-            a aVar = f36506b;
+            a aVar = f36554b;
             Intrinsics.checkNotNull(aVar);
             return aVar;
         }
 
         public final void b(a instance) {
             Intrinsics.checkNotNullParameter(instance, "instance");
-            f36506b = instance;
+            f36554b = instance;
         }
     }
 

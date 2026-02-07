@@ -5,7 +5,7 @@ import yi.c;
 final class k7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f47312a = new k7();
+    static final k7 f47360a = new k7();
 
     static {
         c.b a10 = yi.c.a("scoreType");

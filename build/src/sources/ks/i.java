@@ -7,24 +7,24 @@ import kotlin.jvm.internal.Intrinsics;
 final class i extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f35326a;
+    private final Function1 f35374a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentHashMap f35327b;
+    private final ConcurrentHashMap f35375b;
 
     public i(Function1 compute) {
         Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f35326a = compute;
-        this.f35327b = new ConcurrentHashMap();
+        this.f35374a = compute;
+        this.f35375b = new ConcurrentHashMap();
     }
 
     @Override // ks.a
     public Object a(Class key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        ConcurrentHashMap concurrentHashMap = this.f35327b;
+        ConcurrentHashMap concurrentHashMap = this.f35375b;
         Object obj = concurrentHashMap.get(key);
         if (obj == null) {
-            Object invoke = this.f35326a.invoke(key);
+            Object invoke = this.f35374a.invoke(key);
             Object putIfAbsent = concurrentHashMap.putIfAbsent(key, invoke);
             if (putIfAbsent == null) {
                 return invoke;

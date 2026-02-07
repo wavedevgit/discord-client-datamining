@@ -5,7 +5,7 @@ import yi.c;
 final class ob implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ob f40153a = new ob();
+    static final ob f40201a = new ob();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

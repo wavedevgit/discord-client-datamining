@@ -43,7 +43,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
         } else {
             promise.reject(new Exception("Unable to decode image source."));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -64,7 +64,7 @@ public final class ImageManagerModule extends ReactContextBaseJavaModule {
         } else {
             promise.reject(new Exception("Unable to decode image source."));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @ReactMethod

@@ -91,7 +91,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
             Unit unit = null;
             try {
             } catch (Throwable th2) {
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 b10 = Result.b(c.a(th2));
             }
             if (i10 != 0) {
@@ -113,7 +113,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                 objectRef2 = this.$referrer;
                 sharedPreferences = this.$prefs;
                 promise = this.$promise;
-                Result.a aVar2 = Result.f32005e;
+                Result.a aVar2 = Result.f32053e;
                 reactApplicationContext = installReferrerModule.getReactApplicationContext();
                 ?? build = InstallReferrerClient.newBuilder(reactApplicationContext).build();
                 objectRef.element = build;
@@ -145,7 +145,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                         edit.putString("referrer", objectRef2.element);
                         edit.apply();
                         promise.resolve(objectRef2.element);
-                        b10 = Result.b(Unit.f32008a);
+                        b10 = Result.b(Unit.f32056a);
                         SharedPreferences sharedPreferences3 = this.$prefs;
                         Promise promise3 = this.$promise;
                         int i11 = this.$attempts;
@@ -164,14 +164,14 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                             InstallReferrerClient installReferrerClient2 = this.$client.element;
                             if (installReferrerClient2 != null) {
                                 installReferrerClient2.endConnection();
-                                unit = Unit.f32008a;
+                                unit = Unit.f32056a;
                             }
                             Result.b(unit);
                         } catch (Throwable th3) {
-                            Result.a aVar3 = Result.f32005e;
+                            Result.a aVar3 = Result.f32053e;
                             Result.b(c.a(th3));
                         }
-                        return Unit.f32008a;
+                        return Unit.f32056a;
                     }
                     throw new IllegalStateException("Check failed.");
                 }
@@ -186,7 +186,7 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -225,11 +225,11 @@ final class InstallReferrerModule$get$1 extends k implements Function2<Coroutine
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((InstallReferrerModule$get$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

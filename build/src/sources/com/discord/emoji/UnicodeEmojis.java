@@ -59,7 +59,7 @@ public final class UnicodeEmojis {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {qr.l.b(o.f48044e, new Function0() { // from class: com.discord.emoji.e
+        private static final Lazy[] $childSerializers = {qr.l.b(o.f48092e, new Function0() { // from class: com.discord.emoji.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
@@ -94,7 +94,7 @@ public final class UnicodeEmojis {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new jt.f(n2.f31041a);
+            return new jt.f(n2.f31089a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -212,7 +212,7 @@ public final class UnicodeEmojis {
         }
 
         static {
-            o oVar = o.f48044e;
+            o oVar = o.f48092e;
             $childSerializers = new Lazy[]{qr.l.b(oVar, new Function0() { // from class: com.discord.emoji.f
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -531,7 +531,7 @@ public final class UnicodeEmojis {
     public static final Unit emojiJsonParser$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

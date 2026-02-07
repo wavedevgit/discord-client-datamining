@@ -87,12 +87,12 @@ public abstract class CoroutineWorker extends c {
                 obj = t10;
             }
             lVar.c(obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -135,12 +135,12 @@ public abstract class CoroutineWorker extends c {
             } catch (Throwable th2) {
                 CoroutineWorker.this.v().q(th2);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

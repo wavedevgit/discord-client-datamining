@@ -5,30 +5,30 @@ import yi.c;
 final class u5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u5 f44773a = new u5();
+    static final u5 f44821a = new u5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44774b;
+    private static final yi.c f44822b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44775c;
+    private static final yi.c f44823c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44776d;
+    private static final yi.c f44824d;
 
     static {
         c.b a10 = yi.c.a("identifyLanguageConfidenceThreshold");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44774b = a10.b(s1Var.b()).a();
+        f44822b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("identifyAllLanguagesConfidenceThreshold");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44775c = a11.b(s1Var2.b()).a();
+        f44823c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("confidenceThreshold");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44776d = a12.b(s1Var3.b()).a();
+        f44824d = a12.b(s1Var3.b()).a();
     }
 
     private u5() {

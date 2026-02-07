@@ -78,7 +78,7 @@ public final class ModuleHolder {
                     if (this.initializable && !this.isInitializing) {
                         z11 = true;
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
                 if (z11) {
                     doInitialize(nativeModule);
@@ -109,7 +109,7 @@ public final class ModuleHolder {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
             if (z10) {
                 if (nativeModule != null) {
@@ -158,7 +158,7 @@ public final class ModuleHolder {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 if (z10) {
                     NativeModule create = create();
                     synchronized (this) {
@@ -231,7 +231,7 @@ public final class ModuleHolder {
                     z10 = false;
                     nativeModule = null;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

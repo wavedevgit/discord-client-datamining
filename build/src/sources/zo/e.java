@@ -6,11 +6,11 @@ public final class e implements br.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f56414a = new e();
+        static final e f56462a = new e();
     }
 
     public static e a() {
-        return a.f56414a;
+        return a.f56462a;
     }
 
     public static d c() {

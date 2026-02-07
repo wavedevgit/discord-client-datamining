@@ -63,7 +63,7 @@ public final class BundleUpdaterUtils {
         Intrinsics.checkNotNullParameter(file, "file");
         BufferedSource d10 = x.d(x.j(file));
         try {
-            qu.n a10 = qu.n.f48257o.a(x.b());
+            qu.n a10 = qu.n.f48305o.a(x.b());
             d10.e2(a10);
             String q10 = a10.a().q();
             bs.c.a(d10, null);

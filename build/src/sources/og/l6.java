@@ -5,30 +5,30 @@ import yi.c;
 final class l6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l6 f42240a = new l6();
+    static final l6 f42288a = new l6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42241b;
+    private static final yi.c f42289b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42242c;
+    private static final yi.c f42290c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42243d;
+    private static final yi.c f42291d;
 
     static {
         c.b a10 = yi.c.a("numSamples");
         f fVar = new f();
         fVar.a(1);
-        f42241b = a10.b(fVar.b()).a();
+        f42289b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42242c = a11.b(fVar2.b()).a();
+        f42290c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("metricResults");
         f fVar3 = new f();
         fVar3.a(3);
-        f42243d = a12.b(fVar3.b()).a();
+        f42291d = a12.b(fVar3.b()).a();
     }
 
     private l6() {

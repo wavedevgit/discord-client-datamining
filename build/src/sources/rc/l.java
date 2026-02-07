@@ -12,25 +12,25 @@ import rc.h;
 public final class l implements x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f48829a = new Object();
+    private final Object f48877a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private MediaItem.f f48830b;
+    private MediaItem.f f48878b;
 
     /* renamed from: c  reason: collision with root package name */
-    private v f48831c;
+    private v f48879c;
 
     /* renamed from: d  reason: collision with root package name */
-    private DataSource.Factory f48832d;
+    private DataSource.Factory f48880d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f48833e;
+    private String f48881e;
 
     private v b(MediaItem.f fVar) {
         String uri;
-        DataSource.Factory factory = this.f48832d;
+        DataSource.Factory factory = this.f48880d;
         if (factory == null) {
-            factory = new d.b().b(this.f48833e);
+            factory = new d.b().b(this.f48881e);
         }
         Uri uri2 = fVar.f11675i;
         if (uri2 == null) {
@@ -44,7 +44,7 @@ public final class l implements x {
             Map.Entry entry = (Map.Entry) s10.next();
             h0Var.e((String) entry.getKey(), (String) entry.getValue());
         }
-        h a10 = new h.b().e(fVar.f11673d, g0.f48771d).b(fVar.f11678q).c(fVar.f11679r).d(pi.e.l(fVar.f11682u)).a(h0Var);
+        h a10 = new h.b().e(fVar.f11673d, g0.f48819d).b(fVar.f11678q).c(fVar.f11679r).d(pi.e.l(fVar.f11682u)).a(h0Var);
         a10.F(0, fVar.c());
         return a10;
     }
@@ -54,20 +54,20 @@ public final class l implements x {
         v vVar;
         ne.a.e(mediaItem.f11625e);
         MediaItem.f fVar = mediaItem.f11625e.f11717i;
-        if (fVar != null && w0.f39012a >= 18) {
-            synchronized (this.f48829a) {
+        if (fVar != null && w0.f39060a >= 18) {
+            synchronized (this.f48877a) {
                 try {
-                    if (!w0.c(fVar, this.f48830b)) {
-                        this.f48830b = fVar;
-                        this.f48831c = b(fVar);
+                    if (!w0.c(fVar, this.f48878b)) {
+                        this.f48878b = fVar;
+                        this.f48879c = b(fVar);
                     }
-                    vVar = (v) ne.a.e(this.f48831c);
+                    vVar = (v) ne.a.e(this.f48879c);
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
             return vVar;
         }
-        return v.f48864a;
+        return v.f48912a;
     }
 }

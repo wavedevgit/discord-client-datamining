@@ -52,8 +52,8 @@ public /* synthetic */ class SharedCustomThemeData$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = SharedCustomThemeData.$childSerializers;
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{lazyArr[0].getValue(), g0.f31001a, n2Var, n2Var, n2Var, n2Var, n2Var, n2Var};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{lazyArr[0].getValue(), g0.f31049a, n2Var, n2Var, n2Var, n2Var, n2Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

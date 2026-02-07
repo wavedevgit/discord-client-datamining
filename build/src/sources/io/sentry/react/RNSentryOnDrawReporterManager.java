@@ -27,94 +27,94 @@ public class RNSentryOnDrawReporterManager extends SimpleViewManager<a> {
     public static class a extends View {
 
         /* renamed from: s  reason: collision with root package name */
-        private static final ILogger f28704s = new z("RNSentryOnDrawReporterView");
+        private static final ILogger f28752s = new z("RNSentryOnDrawReporterView");
 
         /* renamed from: d  reason: collision with root package name */
-        private final ReactApplicationContext f28705d;
+        private final ReactApplicationContext f28753d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final k5 f28706e;
+        private final k5 f28754e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final x0 f28707i;
+        private final x0 f28755i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f28708o;
+        private boolean f28756o;
 
         /* renamed from: p  reason: collision with root package name */
-        private boolean f28709p;
+        private boolean f28757p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f28710q;
+        private boolean f28758q;
 
         /* renamed from: r  reason: collision with root package name */
-        private String f28711r;
+        private String f28759r;
 
         public a(ReactApplicationContext reactApplicationContext, x0 x0Var) {
             super(reactApplicationContext);
-            this.f28706e = new l2();
-            this.f28708o = false;
-            this.f28709p = false;
-            this.f28710q = false;
-            this.f28711r = null;
-            this.f28705d = reactApplicationContext;
-            this.f28707i = x0Var;
+            this.f28754e = new l2();
+            this.f28756o = false;
+            this.f28757p = false;
+            this.f28758q = false;
+            this.f28759r = null;
+            this.f28753d = reactApplicationContext;
+            this.f28755i = x0Var;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public /* synthetic */ void b() {
-            Double valueOf = Double.valueOf(this.f28706e.now().h() / 1.0E9d);
-            if (this.f28711r == null) {
-                f28704s.c(SentryLevel.ERROR, "[TimeToDisplay] parentSpanId removed before frame was rendered.", new Object[0]);
-            } else if (this.f28708o) {
-                w.e(RNSentryOnDrawReporterManager.TTID_PREFIX + this.f28711r, valueOf);
-            } else if (this.f28709p) {
-                w.e(RNSentryOnDrawReporterManager.TTFD_PREFIX + this.f28711r, valueOf);
+            Double valueOf = Double.valueOf(this.f28754e.now().h() / 1.0E9d);
+            if (this.f28759r == null) {
+                f28752s.c(SentryLevel.ERROR, "[TimeToDisplay] parentSpanId removed before frame was rendered.", new Object[0]);
+            } else if (this.f28756o) {
+                w.e(RNSentryOnDrawReporterManager.TTID_PREFIX + this.f28759r, valueOf);
+            } else if (this.f28757p) {
+                w.e(RNSentryOnDrawReporterManager.TTFD_PREFIX + this.f28759r, valueOf);
             } else {
-                f28704s.c(SentryLevel.DEBUG, "[TimeToDisplay] display type removed before frame was rendered.", new Object[0]);
+                f28752s.c(SentryLevel.DEBUG, "[TimeToDisplay] display type removed before frame was rendered.", new Object[0]);
             }
         }
 
         private void c() {
-            if (this.f28711r == null) {
+            if (this.f28759r == null) {
                 return;
             }
-            if (this.f28710q) {
-                ILogger iLogger = f28704s;
+            if (this.f28758q) {
+                ILogger iLogger = f28752s;
                 SentryLevel sentryLevel = SentryLevel.DEBUG;
-                iLogger.c(sentryLevel, "[TimeToDisplay] Already recorded time to display for spanId: " + this.f28711r, new Object[0]);
+                iLogger.c(sentryLevel, "[TimeToDisplay] Already recorded time to display for spanId: " + this.f28759r, new Object[0]);
                 return;
             }
-            if (this.f28708o) {
-                f28704s.c(SentryLevel.DEBUG, "[TimeToDisplay] Register initial display event emitter.", new Object[0]);
-            } else if (this.f28709p) {
-                f28704s.c(SentryLevel.DEBUG, "[TimeToDisplay] Register full display event emitter.", new Object[0]);
+            if (this.f28756o) {
+                f28752s.c(SentryLevel.DEBUG, "[TimeToDisplay] Register initial display event emitter.", new Object[0]);
+            } else if (this.f28757p) {
+                f28752s.c(SentryLevel.DEBUG, "[TimeToDisplay] Register full display event emitter.", new Object[0]);
             } else {
-                f28704s.c(SentryLevel.DEBUG, "[TimeToDisplay] Not ready, missing displayType prop.", new Object[0]);
+                f28752s.c(SentryLevel.DEBUG, "[TimeToDisplay] Not ready, missing displayType prop.", new Object[0]);
                 return;
             }
-            if (this.f28707i == null) {
-                f28704s.c(SentryLevel.ERROR, "[TimeToDisplay] Won't emit next frame drawn event, buildInfo is null.", new Object[0]);
+            if (this.f28755i == null) {
+                f28752s.c(SentryLevel.ERROR, "[TimeToDisplay] Won't emit next frame drawn event, buildInfo is null.", new Object[0]);
                 return;
             }
-            ReactApplicationContext reactApplicationContext = this.f28705d;
+            ReactApplicationContext reactApplicationContext = this.f28753d;
             if (reactApplicationContext == null) {
-                f28704s.c(SentryLevel.ERROR, "[TimeToDisplay] Won't emit next frame drawn event, reactContext is null.", new Object[0]);
+                f28752s.c(SentryLevel.ERROR, "[TimeToDisplay] Won't emit next frame drawn event, reactContext is null.", new Object[0]);
                 return;
             }
-            ILogger iLogger2 = f28704s;
+            ILogger iLogger2 = f28752s;
             Activity a10 = io.sentry.react.utils.a.a(reactApplicationContext, iLogger2);
             if (a10 == null) {
                 iLogger2.c(SentryLevel.ERROR, "[TimeToDisplay] Won't emit next frame drawn event, activity is null.", new Object[0]);
                 return;
             }
-            this.f28710q = true;
+            this.f28758q = true;
             d(a10, new Runnable() { // from class: io.sentry.react.o
                 @Override // java.lang.Runnable
                 public final void run() {
                     RNSentryOnDrawReporterManager.a.this.b();
                 }
-            }, this.f28707i);
+            }, this.f28755i);
         }
 
         protected void d(Activity activity, Runnable runnable, x0 x0Var) {
@@ -122,23 +122,23 @@ public class RNSentryOnDrawReporterManager extends SimpleViewManager<a> {
         }
 
         public void setFullDisplay(boolean z10) {
-            if (z10 != this.f28709p) {
-                this.f28709p = z10;
+            if (z10 != this.f28757p) {
+                this.f28757p = z10;
                 c();
             }
         }
 
         public void setInitialDisplay(boolean z10) {
-            if (z10 != this.f28708o) {
-                this.f28708o = z10;
+            if (z10 != this.f28756o) {
+                this.f28756o = z10;
                 c();
             }
         }
 
         public void setParentSpanId(String str) {
-            if (!Objects.equals(str, this.f28711r)) {
-                this.f28711r = str;
-                this.f28710q = false;
+            if (!Objects.equals(str, this.f28759r)) {
+                this.f28759r = str;
+                this.f28758q = false;
                 c();
             }
         }

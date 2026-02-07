@@ -5,14 +5,14 @@ import java.util.Set;
 public final class o1 implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f37583a;
+    private final br.h f37631a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f37584b;
+    private final br.h f37632b;
 
     public o1(br.h hVar, br.h hVar2) {
-        this.f37583a = hVar;
-        this.f37584b = hVar2;
+        this.f37631a = hVar;
+        this.f37632b = hVar2;
     }
 
     public static o1 a(br.h hVar, br.h hVar2) {
@@ -26,6 +26,6 @@ public final class o1 implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Set get() {
-        return c((o0) this.f37583a.get(), (f1) this.f37584b.get());
+        return c((o0) this.f37631a.get(), (f1) this.f37632b.get());
     }
 }

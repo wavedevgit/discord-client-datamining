@@ -18,16 +18,16 @@ import kotlinx.serialization.json.JsonPrimitive;
 public class n0 extends c {
 
     /* renamed from: g  reason: collision with root package name */
-    private final JsonObject f36688g;
+    private final JsonObject f36736g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final SerialDescriptor f36689h;
+    private final SerialDescriptor f36737h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f36690i;
+    private int f36738i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f36691j;
+    private boolean f36739j;
 
     public /* synthetic */ n0(Json json, JsonObject jsonObject, String str, SerialDescriptor serialDescriptor, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(json, jsonObject, (i10 & 4) != 0 ? null : str, (i10 & 8) != 0 ? null : serialDescriptor);
@@ -40,7 +40,7 @@ public class n0 extends c {
         } else {
             z10 = false;
         }
-        this.f36691j = z10;
+        this.f36739j = z10;
         return z10;
     }
 
@@ -53,7 +53,7 @@ public class n0 extends c {
         if (i11 && !g10.b() && (o0(str) instanceof JsonNull)) {
             return true;
         }
-        if (!Intrinsics.areEqual(g10.getKind(), k.b.f26488a) || (g10.b() && (o0(str) instanceof JsonNull))) {
+        if (!Intrinsics.areEqual(g10.getKind(), k.b.f26536a) || (g10.b() && (o0(str) instanceof JsonNull))) {
             return false;
         }
         JsonElement o02 = o0(str);
@@ -83,7 +83,7 @@ public class n0 extends c {
 
     @Override // lt.c, jt.q2, kotlinx.serialization.encoding.Decoder
     public boolean D() {
-        if (!this.f36691j && super.D()) {
+        if (!this.f36739j && super.D()) {
             return true;
         }
         return false;
@@ -92,18 +92,18 @@ public class n0 extends c {
     @Override // lt.c
     /* renamed from: I0 */
     public JsonObject D0() {
-        return this.f36688g;
+        return this.f36736g;
     }
 
     @Override // lt.c, kotlinx.serialization.encoding.Decoder
     public kotlinx.serialization.encoding.c b(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (descriptor == this.f36689h) {
+        if (descriptor == this.f36737h) {
             Json d10 = d();
             JsonElement p02 = p0();
-            String h10 = this.f36689h.h();
+            String h10 = this.f36737h.h();
             if (p02 instanceof JsonObject) {
-                return new n0(d10, (JsonObject) p02, C0(), this.f36689h);
+                return new n0(d10, (JsonObject) p02, C0(), this.f36737h);
             }
             throw g0.e(-1, "Expected " + Reflection.getOrCreateKotlinClass(JsonObject.class).getSimpleName() + ", but had " + Reflection.getOrCreateKotlinClass(p02.getClass()).getSimpleName() + " as the serialized body of " + h10 + " at element: " + l0(), p02.toString());
         }
@@ -115,9 +115,9 @@ public class n0 extends c {
         Set set;
         Set l10;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (!this.f36642f.k() && !(descriptor.getKind() instanceof ht.d)) {
+        if (!this.f36690f.k() && !(descriptor.getKind() instanceof ht.d)) {
             i0.m(descriptor, d());
-            if (!this.f36642f.o()) {
+            if (!this.f36690f.o()) {
                 l10 = jt.q0.a(descriptor);
             } else {
                 Set a10 = jt.q0.a(descriptor);
@@ -146,7 +146,7 @@ public class n0 extends c {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         i0.m(descriptor, d());
         String e10 = descriptor.e(i10);
-        if (!this.f36642f.o() || D0().keySet().contains(e10)) {
+        if (!this.f36690f.o() || D0().keySet().contains(e10)) {
             return e10;
         }
         Map e11 = i0.e(d(), descriptor);
@@ -173,14 +173,14 @@ public class n0 extends c {
     @Override // kotlinx.serialization.encoding.c
     public int o(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        while (this.f36690i < descriptor.d()) {
-            int i10 = this.f36690i;
-            this.f36690i = i10 + 1;
+        while (this.f36738i < descriptor.d()) {
+            int i10 = this.f36738i;
+            this.f36738i = i10 + 1;
             String c02 = c0(descriptor, i10);
-            int i11 = this.f36690i - 1;
-            this.f36691j = false;
+            int i11 = this.f36738i - 1;
+            this.f36739j = false;
             if (D0().containsKey(c02) || G0(descriptor, i11)) {
-                if (!this.f36642f.g() || !H0(descriptor, i11, c02)) {
+                if (!this.f36690f.g() || !H0(descriptor, i11, c02)) {
                     return i11;
                 }
             }
@@ -200,7 +200,7 @@ public class n0 extends c {
         super(json, value, str, null);
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f36688g = value;
-        this.f36689h = serialDescriptor;
+        this.f36736g = value;
+        this.f36737h = serialDescriptor;
     }
 }

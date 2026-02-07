@@ -5,7 +5,7 @@ import yi.c;
 final class l6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l6 f40041a = new l6();
+    static final l6 f40089a = new l6();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

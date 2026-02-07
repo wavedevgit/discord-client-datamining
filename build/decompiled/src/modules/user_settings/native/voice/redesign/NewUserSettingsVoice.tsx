@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoice.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun68187: for (var _fun68187_ip = 0;;) switch (_fun68187_ip) {
+        _fun68637: for (var _fun68637_ip = 0;;) switch (_fun68637_ip) {
             case 0:
                 var0 = _closure1_slot8;
                 var3 = undefined;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot4;
                 var9 = var9.bind(var3)();
                 if (!var9) {
-                    _fun68187_ip = 305;
-                    continue _fun68187
+                    _fun68637_ip = 305;
+                    continue _fun68637
                 }
             case 273:
                 var12 = _closure1_slot6;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NewUserSettingsTableRowGroup = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8494, 8495, 33, 1297, 5368, 4081, 8496, 8498, 5337, 1234, 8502, 8503, 8505, 4737, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8538, 8539, 33, 1297, 5415, 4080, 8540, 8542, 5384, 1234, 8546, 8547, 8549, 4736, 2]);

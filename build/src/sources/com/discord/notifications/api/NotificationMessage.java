@@ -55,7 +55,7 @@ public final class NotificationMessage {
     }
 
     static {
-        o oVar = o.f48044e;
+        o oVar = o.f48092e;
         $childSerializers = new Lazy[]{l.b(oVar, new Function0() { // from class: p7.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -98,7 +98,7 @@ public final class NotificationMessage {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f35529a);
+        return new f(y.f35577a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -163,7 +163,7 @@ public final class NotificationMessage {
             compositeEncoder.s(serialDescriptor, 0, (ft.o) lazyArr[0].getValue(), notificationMessage.stickerItems);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || notificationMessage.author != null) {
-            compositeEncoder.l(serialDescriptor, 1, y.f35529a, notificationMessage.author);
+            compositeEncoder.l(serialDescriptor, 1, y.f35577a, notificationMessage.author);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || !Intrinsics.areEqual(notificationMessage.mentions, CollectionsKt.l())) {
             compositeEncoder.s(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), notificationMessage.mentions);

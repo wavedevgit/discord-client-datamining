@@ -1,66 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = require;
-    var2 = exports;
-    var4 = dependencyMap;
-    var1 = {};
-    var5 = 0;
-    var6 = var4[var5];
-    var0 = undefined;
-    var6 = var3.bind(var0)(var6);
-    var7 = var6.URL;
-    var6 = var7.install;
-    var6 = var6.bind(var7)(var1);
-    var5 = var4[var5];
-    var5 = var3.bind(var0)(var5);
-    var6 = var5.URLSearchParams;
-    var5 = var6.install;
-    var5 = var5.bind(var6)(var1);
-    var5 = var1.URL;
-    var2.URL = var5;
-    var1 = var1.URLSearchParams;
-    var2.URLSearchParams = var1;
-    var1 = 1;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.parseURL;
-    var2.parseURL = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.basicURLParse;
-    var2.basicURLParse = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeURL;
-    var2.serializeURL = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeHost;
-    var2.serializeHost = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeInteger;
-    var2.serializeInteger = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.serializeURLOrigin;
-    var2.serializeURLOrigin = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.setTheUsername;
-    var2.setTheUsername = var5;
-    var5 = var4[var1];
-    var5 = var3.bind(var0)(var5);
-    var5 = var5.setThePassword;
-    var2.setThePassword = var5;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.cannotHaveAUsernamePasswordPort;
-    var2.cannotHaveAUsernamePasswordPort = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.percentDecode;
-    var2.percentDecode = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12734, 12738, 12741]);
+    _fun97409: for (var _fun97409_ip = 0;;) switch (_fun97409_ip) {
+        case 0:
+            var0 = global;
+            var2 = var0.document;
+            var3 = 'object';
+            var2 = typeof var2;
+            var2 = var3 === var2;
+            if (!var2) {
+                _fun97409_ip = 36;
+                continue _fun97409
+            }
+        case 24:
+            var0 = var0.document;
+            var2 = var0.all;
+        case 36:
+            var _closure1_slot0 = var2;
+            var0 = undefined;
+            if (!(var0 === var2)) {
+                _fun97409_ip = 50;
+                continue _fun97409
+            }
+        case 46:
+            if (!(var0 === var2)) {
+                _fun97409_ip = 59;
+                continue _fun97409
+            }
+        case 50:
+            var2 = function(arg0) { // Environment: var1
+                var1 = 'function';
+                var0 = arg0;
+                var0 = typeof var0;
+                var0 = var1 === var0;
+                return var0;
+            };
+            _fun97409_ip = 66;
+            continue _fun97409;
+        case 59:
+            var2 = function(arg0) { // Environment: var1
+                _fun97410: for (var _fun97410_ip = 0;;) switch (_fun97410_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var1 = 'function';
+                        var0 = typeof var2;
+                        var0 = var1 === var0;
+                        if (var0) {
+                            _fun97410_ip = 28;
+                            continue _fun97410
+                        }
+                    case 17:
+                        var1 = _closure1_slot0;
+                        var0 = var2 === var1;
+                    case 28:
+                        return var0;
+                }
+            };
+        case 66:
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

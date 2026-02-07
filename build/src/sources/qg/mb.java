@@ -5,7 +5,7 @@ import yi.c;
 final class mb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final mb f47385a = new mb();
+    static final mb f47433a = new mb();
 
     static {
         c.b a10 = yi.c.a("modelLanguage");

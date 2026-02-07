@@ -16,25 +16,25 @@ import n8.c;
 public class a implements j8.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Class f29739f = a.class;
+    private static final Class f29787f = a.class;
 
     /* renamed from: g  reason: collision with root package name */
-    static final long f29740g = TimeUnit.MINUTES.toMillis(30);
+    static final long f29788g = TimeUnit.MINUTES.toMillis(30);
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f29741a;
+    private final File f29789a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f29742b;
+    private final boolean f29790b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final File f29743c;
+    private final File f29791c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i8.a f29744d;
+    private final i8.a f29792d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v8.a f29745e;
+    private final v8.a f29793e;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: j8.a$a  reason: collision with other inner class name */
@@ -42,22 +42,22 @@ public class a implements j8.e {
     public class C0416a implements n8.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f29746a;
+        private final List f29794a;
 
         @Override // n8.b
         public void b(File file) {
             c u10 = a.this.u(file);
-            if (u10 != null && u10.f29752a == ".cnt") {
-                this.f29746a.add(new b(u10.f29753b, file));
+            if (u10 != null && u10.f29800a == ".cnt") {
+                this.f29794a.add(new b(u10.f29801b, file));
             }
         }
 
         public List d() {
-            return Collections.unmodifiableList(this.f29746a);
+            return Collections.unmodifiableList(this.f29794a);
         }
 
         private C0416a() {
-            this.f29746a = new ArrayList();
+            this.f29794a = new ArrayList();
         }
 
         @Override // n8.b
@@ -73,48 +73,48 @@ public class a implements j8.e {
     static class b implements e.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f29748a;
+        private final String f29796a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final h8.b f29749b;
+        private final h8.b f29797b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f29750c;
+        private long f29798c;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f29751d;
+        private long f29799d;
 
         @Override // j8.e.a
         public long a() {
-            if (this.f29751d < 0) {
-                this.f29751d = this.f29749b.d().lastModified();
+            if (this.f29799d < 0) {
+                this.f29799d = this.f29797b.d().lastModified();
             }
-            return this.f29751d;
+            return this.f29799d;
         }
 
         public h8.b b() {
-            return this.f29749b;
+            return this.f29797b;
         }
 
         @Override // j8.e.a
         public String getId() {
-            return this.f29748a;
+            return this.f29796a;
         }
 
         @Override // j8.e.a
         public long getSize() {
-            if (this.f29750c < 0) {
-                this.f29750c = this.f29749b.size();
+            if (this.f29798c < 0) {
+                this.f29798c = this.f29797b.size();
             }
-            return this.f29750c;
+            return this.f29798c;
         }
 
         private b(String str, File file) {
             o8.j.g(file);
-            this.f29748a = (String) o8.j.g(str);
-            this.f29749b = h8.b.b(file);
-            this.f29750c = -1L;
-            this.f29751d = -1L;
+            this.f29796a = (String) o8.j.g(str);
+            this.f29797b = h8.b.b(file);
+            this.f29798c = -1L;
+            this.f29799d = -1L;
         }
     }
 
@@ -123,10 +123,10 @@ public class a implements j8.e {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f29752a;
+        public final String f29800a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f29753b;
+        public final String f29801b;
 
         public static c b(File file) {
             String s10;
@@ -147,20 +147,20 @@ public class a implements j8.e {
         }
 
         public File a(File file) {
-            return File.createTempFile(this.f29753b + ".", ".tmp", file);
+            return File.createTempFile(this.f29801b + ".", ".tmp", file);
         }
 
         public String c(String str) {
-            return str + File.separator + this.f29753b + this.f29752a;
+            return str + File.separator + this.f29801b + this.f29800a;
         }
 
         public String toString() {
-            return this.f29752a + "(" + this.f29753b + ")";
+            return this.f29800a + "(" + this.f29801b + ")";
         }
 
         private c(String str, String str2) {
-            this.f29752a = str;
-            this.f29753b = str2;
+            this.f29800a = str;
+            this.f29801b = str2;
         }
     }
 
@@ -175,50 +175,50 @@ public class a implements j8.e {
     class e implements e.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f29754a;
+        private final String f29802a;
 
         /* renamed from: b  reason: collision with root package name */
-        final File f29755b;
+        final File f29803b;
 
         public e(String str, File file) {
-            this.f29754a = str;
-            this.f29755b = file;
+            this.f29802a = str;
+            this.f29803b = file;
         }
 
         @Override // j8.e.b
         public h8.a a(Object obj) {
-            return c(obj, a.this.f29745e.now());
+            return c(obj, a.this.f29793e.now());
         }
 
         @Override // j8.e.b
         public void b(i8.i iVar, Object obj) {
             try {
-                FileOutputStream fileOutputStream = new FileOutputStream(this.f29755b);
+                FileOutputStream fileOutputStream = new FileOutputStream(this.f29803b);
                 try {
                     o8.c cVar = new o8.c(fileOutputStream);
                     iVar.a(cVar);
                     cVar.flush();
                     long a10 = cVar.a();
                     fileOutputStream.close();
-                    if (this.f29755b.length() == a10) {
+                    if (this.f29803b.length() == a10) {
                         return;
                     }
-                    throw new d(a10, this.f29755b.length());
+                    throw new d(a10, this.f29803b.length());
                 } catch (Throwable th2) {
                     fileOutputStream.close();
                     throw th2;
                 }
             } catch (FileNotFoundException e10) {
-                a.this.f29744d.a(a.EnumC0377a.WRITE_UPDATE_FILE_NOT_FOUND, a.f29739f, "updateResource", e10);
+                a.this.f29792d.a(a.EnumC0377a.WRITE_UPDATE_FILE_NOT_FOUND, a.f29787f, "updateResource", e10);
                 throw e10;
             }
         }
 
         public h8.a c(Object obj, long j10) {
             a.EnumC0377a enumC0377a;
-            File q10 = a.this.q(this.f29754a);
+            File q10 = a.this.q(this.f29802a);
             try {
-                n8.c.b(this.f29755b, q10);
+                n8.c.b(this.f29803b, q10);
                 if (q10.exists()) {
                     q10.setLastModified(j10);
                 }
@@ -238,14 +238,14 @@ public class a implements j8.e {
                 } else {
                     enumC0377a = a.EnumC0377a.WRITE_RENAME_FILE_OTHER;
                 }
-                a.this.f29744d.a(enumC0377a, a.f29739f, "commit", e10);
+                a.this.f29792d.a(enumC0377a, a.f29787f, "commit", e10);
                 throw e10;
             }
         }
 
         @Override // j8.e.b
         public boolean l() {
-            if (this.f29755b.exists() && !this.f29755b.delete()) {
+            if (this.f29803b.exists() && !this.f29803b.delete()) {
                 return false;
             }
             return true;
@@ -256,7 +256,7 @@ public class a implements j8.e {
     private class f implements n8.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f29757a;
+        private boolean f29805a;
 
         private boolean d(File file) {
             c u10 = a.this.u(file);
@@ -264,7 +264,7 @@ public class a implements j8.e {
             if (u10 == null) {
                 return false;
             }
-            String str = u10.f29752a;
+            String str = u10.f29800a;
             if (str == ".tmp") {
                 return e(file);
             }
@@ -276,7 +276,7 @@ public class a implements j8.e {
         }
 
         private boolean e(File file) {
-            if (file.lastModified() > a.this.f29745e.now() - a.f29740g) {
+            if (file.lastModified() > a.this.f29793e.now() - a.f29788g) {
                 return true;
             }
             return false;
@@ -284,17 +284,17 @@ public class a implements j8.e {
 
         @Override // n8.b
         public void a(File file) {
-            if (!a.this.f29741a.equals(file) && !this.f29757a) {
+            if (!a.this.f29789a.equals(file) && !this.f29805a) {
                 file.delete();
             }
-            if (this.f29757a && file.equals(a.this.f29743c)) {
-                this.f29757a = false;
+            if (this.f29805a && file.equals(a.this.f29791c)) {
+                this.f29805a = false;
             }
         }
 
         @Override // n8.b
         public void b(File file) {
-            if (this.f29757a && d(file)) {
+            if (this.f29805a && d(file)) {
                 return;
             }
             file.delete();
@@ -302,8 +302,8 @@ public class a implements j8.e {
 
         @Override // n8.b
         public void c(File file) {
-            if (!this.f29757a && file.equals(a.this.f29743c)) {
-                this.f29757a = true;
+            if (!this.f29805a && file.equals(a.this.f29791c)) {
+                this.f29805a = true;
             }
         }
 
@@ -313,38 +313,38 @@ public class a implements j8.e {
 
     public a(File file, int i10, i8.a aVar) {
         o8.j.g(file);
-        this.f29741a = file;
-        this.f29742b = y(file, aVar);
-        this.f29743c = new File(file, x(i10));
-        this.f29744d = aVar;
+        this.f29789a = file;
+        this.f29790b = y(file, aVar);
+        this.f29791c = new File(file, x(i10));
+        this.f29792d = aVar;
         B();
-        this.f29745e = v8.d.a();
+        this.f29793e = v8.d.a();
     }
 
     private boolean A(String str, boolean z10) {
         File q10 = q(str);
         boolean exists = q10.exists();
         if (z10 && exists) {
-            q10.setLastModified(this.f29745e.now());
+            q10.setLastModified(this.f29793e.now());
         }
         return exists;
     }
 
     private void B() {
-        if (this.f29741a.exists()) {
-            if (!this.f29743c.exists()) {
-                n8.a.b(this.f29741a);
+        if (this.f29789a.exists()) {
+            if (!this.f29791c.exists()) {
+                n8.a.b(this.f29789a);
             } else {
                 return;
             }
         }
         try {
-            n8.c.a(this.f29743c);
+            n8.c.a(this.f29791c);
         } catch (c.a unused) {
-            i8.a aVar = this.f29744d;
+            i8.a aVar = this.f29792d;
             a.EnumC0377a enumC0377a = a.EnumC0377a.WRITE_CREATE_DIR;
-            Class cls = f29739f;
-            aVar.a(enumC0377a, cls, "version directory could not be created: " + this.f29743c, null);
+            Class cls = f29787f;
+            aVar.a(enumC0377a, cls, "version directory could not be created: " + this.f29791c, null);
         }
     }
 
@@ -372,13 +372,13 @@ public class a implements j8.e {
 
     private String t(String str) {
         c cVar = new c(".cnt", str);
-        return cVar.c(w(cVar.f29753b));
+        return cVar.c(w(cVar.f29801b));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public c u(File file) {
         c b10 = c.b(file);
-        if (b10 == null || !v(b10.f29753b).equals(file.getParentFile())) {
+        if (b10 == null || !v(b10.f29801b).equals(file.getParentFile())) {
             return null;
         }
         return b10;
@@ -390,7 +390,7 @@ public class a implements j8.e {
 
     private String w(String str) {
         String valueOf = String.valueOf(Math.abs(str.hashCode() % 100));
-        return this.f29743c + File.separator + valueOf;
+        return this.f29791c + File.separator + valueOf;
     }
 
     static String x(int i10) {
@@ -416,12 +416,12 @@ public class a implements j8.e {
             } catch (IOException e11) {
                 e = e11;
                 a.EnumC0377a enumC0377a = a.EnumC0377a.OTHER;
-                Class cls = f29739f;
+                Class cls = f29787f;
                 aVar.a(enumC0377a, cls, "failed to read folder to check if external: " + str, e);
                 return false;
             }
         } catch (Exception e12) {
-            aVar.a(a.EnumC0377a.OTHER, f29739f, "failed to get the external storage directory!", e12);
+            aVar.a(a.EnumC0377a.OTHER, f29787f, "failed to get the external storage directory!", e12);
             return false;
         }
     }
@@ -430,14 +430,14 @@ public class a implements j8.e {
         try {
             n8.c.a(file);
         } catch (c.a e10) {
-            this.f29744d.a(a.EnumC0377a.WRITE_CREATE_DIR, f29739f, str, e10);
+            this.f29792d.a(a.EnumC0377a.WRITE_CREATE_DIR, f29787f, str, e10);
             throw e10;
         }
     }
 
     @Override // j8.e
     public void a() {
-        n8.a.a(this.f29741a);
+        n8.a.a(this.f29789a);
     }
 
     @Override // j8.e
@@ -447,7 +447,7 @@ public class a implements j8.e {
 
     @Override // j8.e
     public void c() {
-        n8.a.c(this.f29741a, new f());
+        n8.a.c(this.f29789a, new f());
     }
 
     @Override // j8.e
@@ -458,14 +458,14 @@ public class a implements j8.e {
     @Override // j8.e
     public e.b e(String str, Object obj) {
         c cVar = new c(".tmp", str);
-        File v10 = v(cVar.f29753b);
+        File v10 = v(cVar.f29801b);
         if (!v10.exists()) {
             z(v10, "insert");
         }
         try {
             return new e(str, cVar.a(v10));
         } catch (IOException e10) {
-            this.f29744d.a(a.EnumC0377a.WRITE_CREATE_TEMPFILE, f29739f, "insert", e10);
+            this.f29792d.a(a.EnumC0377a.WRITE_CREATE_TEMPFILE, f29787f, "insert", e10);
             throw e10;
         }
     }
@@ -479,7 +479,7 @@ public class a implements j8.e {
     public h8.a g(String str, Object obj) {
         File q10 = q(str);
         if (q10.exists()) {
-            q10.setLastModified(this.f29745e.now());
+            q10.setLastModified(this.f29793e.now());
             return h8.b.c(q10);
         }
         return null;
@@ -487,7 +487,7 @@ public class a implements j8.e {
 
     @Override // j8.e
     public boolean isExternal() {
-        return this.f29742b;
+        return this.f29790b;
     }
 
     File q(String str) {
@@ -498,7 +498,7 @@ public class a implements j8.e {
     /* renamed from: r */
     public List h() {
         C0416a c0416a = new C0416a();
-        n8.a.c(this.f29743c, c0416a);
+        n8.a.c(this.f29791c, c0416a);
         return c0416a.d();
     }
 

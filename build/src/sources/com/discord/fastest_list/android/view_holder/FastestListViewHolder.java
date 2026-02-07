@@ -91,7 +91,7 @@ public abstract class FastestListViewHolder extends RecyclerView.ViewHolder impl
     public static final Unit _init_$lambda$0(FastestListViewHolder fastestListViewHolder, boolean z10) {
         fastestListViewHolder.viewTransitioning = z10;
         updatePlaceholder$default(fastestListViewHolder, fastestListViewHolder.view, null, 1, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void updateLayoutParams(View view, int i10, boolean z10) {

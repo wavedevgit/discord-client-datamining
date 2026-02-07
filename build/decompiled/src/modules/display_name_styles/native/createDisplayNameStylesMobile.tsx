@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/createDisplayNameStylesMobile.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun92630: for (var _fun92630_ip = 0;;) switch (_fun92630_ip) {
+        _fun93110: for (var _fun93110_ip = 0;;) switch (_fun93110_ip) {
             case 0:
                 var7 = arg0;
                 var4 = arg1;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.location = var6;
                 var2 = var3.bind(var5)(var2);
                 if (!var2) {
-                    _fun92630_ip = 65;
-                    continue _fun92630
+                    _fun93110_ip = 65;
+                    continue _fun93110
                 }
             case 55:
                 var3 = _closure1_slot2;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var6 = var3 != var1;
                 if (!var6) {
-                    _fun92630_ip = 107;
-                    continue _fun92630
+                    _fun93110_ip = 107;
+                    continue _fun93110
                 }
             case 93:
                 var8 = var1.id;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8 === var7;
             case 107:
                 if (!var6) {
-                    _fun92630_ip = 116;
-                    continue _fun92630
+                    _fun93110_ip = 116;
+                    continue _fun93110
                 }
             case 110:
                 var5 = var1.displayNameStyles;
@@ -79,30 +79,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3 == var4;
                 var1 = undefined;
                 if (var6) {
-                    _fun92630_ip = 146;
-                    continue _fun92630
+                    _fun93110_ip = 146;
+                    continue _fun93110
                 }
             case 125:
                 var4 = var4.displayNameStyles;
                 var6 = var3 == var4;
                 var1 = undefined;
                 if (var6) {
-                    _fun92630_ip = 146;
-                    continue _fun92630
+                    _fun93110_ip = 146;
+                    continue _fun93110
                 }
             case 140:
                 var1 = var4.fontId;
             case 146:
                 if (!(var3 == var1)) {
-                    _fun92630_ip = 168;
-                    continue _fun92630
+                    _fun93110_ip = 168;
+                    continue _fun93110
                 }
             case 150:
                 var6 = var3 == var5;
                 var4 = undefined;
                 if (var6) {
-                    _fun92630_ip = 165;
-                    continue _fun92630
+                    _fun93110_ip = 165;
+                    continue _fun93110
                 }
             case 159:
                 var4 = var5.fontId;
@@ -110,13 +110,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4;
             case 168:
                 if (!(var3 != var1)) {
-                    _fun92630_ip = 175;
-                    continue _fun92630
+                    _fun93110_ip = 175;
+                    continue _fun93110
                 }
             case 172:
                 if (var2) {
-                    _fun92630_ip = 177;
-                    continue _fun92630
+                    _fun93110_ip = 177;
+                    continue _fun93110
                 }
             case 175:
                 return var0;
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createDisplayNameStylesMobile = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 1621, 3987, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 1621, 3986, 2]);

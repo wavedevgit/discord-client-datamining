@@ -34,10 +34,10 @@ public final class JavaAnnotationTargetMapper {
     public static final JavaAnnotationTargetMapper INSTANCE = new JavaAnnotationTargetMapper();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f32807a = o0.m(v.a("PACKAGE", EnumSet.noneOf(KotlinTarget.class)), v.a("TYPE", EnumSet.of(KotlinTarget.CLASS, KotlinTarget.FILE)), v.a("ANNOTATION_TYPE", EnumSet.of(KotlinTarget.ANNOTATION_CLASS)), v.a("TYPE_PARAMETER", EnumSet.of(KotlinTarget.TYPE_PARAMETER)), v.a("FIELD", EnumSet.of(KotlinTarget.FIELD)), v.a("LOCAL_VARIABLE", EnumSet.of(KotlinTarget.LOCAL_VARIABLE)), v.a("PARAMETER", EnumSet.of(KotlinTarget.VALUE_PARAMETER)), v.a("CONSTRUCTOR", EnumSet.of(KotlinTarget.CONSTRUCTOR)), v.a("METHOD", EnumSet.of(KotlinTarget.FUNCTION, KotlinTarget.PROPERTY_GETTER, KotlinTarget.PROPERTY_SETTER)), v.a("TYPE_USE", EnumSet.of(KotlinTarget.TYPE)));
+    private static final Map f32855a = o0.m(v.a("PACKAGE", EnumSet.noneOf(KotlinTarget.class)), v.a("TYPE", EnumSet.of(KotlinTarget.CLASS, KotlinTarget.FILE)), v.a("ANNOTATION_TYPE", EnumSet.of(KotlinTarget.ANNOTATION_CLASS)), v.a("TYPE_PARAMETER", EnumSet.of(KotlinTarget.TYPE_PARAMETER)), v.a("FIELD", EnumSet.of(KotlinTarget.FIELD)), v.a("LOCAL_VARIABLE", EnumSet.of(KotlinTarget.LOCAL_VARIABLE)), v.a("PARAMETER", EnumSet.of(KotlinTarget.VALUE_PARAMETER)), v.a("CONSTRUCTOR", EnumSet.of(KotlinTarget.CONSTRUCTOR)), v.a("METHOD", EnumSet.of(KotlinTarget.FUNCTION, KotlinTarget.PROPERTY_GETTER, KotlinTarget.PROPERTY_SETTER)), v.a("TYPE_USE", EnumSet.of(KotlinTarget.TYPE)));
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f32808b = o0.m(v.a("RUNTIME", KotlinRetention.RUNTIME), v.a("CLASS", KotlinRetention.BINARY), v.a("SOURCE", KotlinRetention.SOURCE));
+    private static final Map f32856b = o0.m(v.a("RUNTIME", KotlinRetention.RUNTIME), v.a("CLASS", KotlinRetention.BINARY), v.a("SOURCE", KotlinRetention.SOURCE));
 
     private JavaAnnotationTargetMapper() {
     }
@@ -62,7 +62,7 @@ public final class JavaAnnotationTargetMapper {
             javaEnumValueAnnotationArgument = null;
         }
         if (javaEnumValueAnnotationArgument != null) {
-            Map map = f32808b;
+            Map map = f32856b;
             Name entryName = javaEnumValueAnnotationArgument.getEntryName();
             if (entryName != null) {
                 str = entryName.asString();
@@ -82,7 +82,7 @@ public final class JavaAnnotationTargetMapper {
 
     @NotNull
     public final Set<KotlinTarget> mapJavaTargetArgumentByName(String str) {
-        EnumSet enumSet = (EnumSet) f32807a.get(str);
+        EnumSet enumSet = (EnumSet) f32855a.get(str);
         if (enumSet != null) {
             return enumSet;
         }
@@ -117,6 +117,6 @@ public final class JavaAnnotationTargetMapper {
             Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
             arrayList3.add(new EnumValue(classId, identifier));
         }
-        return new ArrayValue(arrayList3, b.f32823d);
+        return new ArrayValue(arrayList3, b.f32871d);
     }
 }

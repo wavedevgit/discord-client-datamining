@@ -15,45 +15,45 @@ import mp.x0;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f41130a;
+    private final ConstraintLayout f41178a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f41131b;
+    public final TextView f41179b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f41132c;
+    public final ConstraintLayout f41180c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Pi2NavigationBar f41133d;
+    public final Pi2NavigationBar f41181d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final RecyclerView f41134e;
+    public final RecyclerView f41182e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Button f41135f;
+    public final Button f41183f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f41136g;
+    public final TextView f41184g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Button f41137h;
+    public final Button f41185h;
 
     private f(ConstraintLayout constraintLayout, TextView textView, ConstraintLayout constraintLayout2, Pi2NavigationBar pi2NavigationBar, RecyclerView recyclerView, Button button, TextView textView2, Button button2) {
-        this.f41130a = constraintLayout;
-        this.f41131b = textView;
-        this.f41132c = constraintLayout2;
-        this.f41133d = pi2NavigationBar;
-        this.f41134e = recyclerView;
-        this.f41135f = button;
-        this.f41136g = textView2;
-        this.f41137h = button2;
+        this.f41178a = constraintLayout;
+        this.f41179b = textView;
+        this.f41180c = constraintLayout2;
+        this.f41181d = pi2NavigationBar;
+        this.f41182e = recyclerView;
+        this.f41183f = button;
+        this.f41184g = textView2;
+        this.f41185h = button2;
     }
 
     public static f a(View view) {
-        int i10 = w0.f37795e;
+        int i10 = w0.f37843e;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = w0.f37807q;
+            i10 = w0.f37855q;
             ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
             if (constraintLayout != null) {
                 i10 = w0.E;
@@ -68,7 +68,7 @@ public final class f implements ViewBinding {
                             i10 = w0.Y;
                             TextView textView2 = (TextView) e4.a.a(view, i10);
                             if (textView2 != null) {
-                                i10 = w0.f37792b0;
+                                i10 = w0.f37840b0;
                                 Button button2 = (Button) e4.a.a(view, i10);
                                 if (button2 != null) {
                                     return new f((ConstraintLayout) view, textView, constraintLayout, pi2NavigationBar, recyclerView, button, textView2, button2);
@@ -83,7 +83,7 @@ public final class f implements ViewBinding {
     }
 
     public static f c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f37834f, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f37882f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -93,6 +93,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f41130a;
+        return this.f41178a;
     }
 }

@@ -4,35 +4,51 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0() {
-        _fun29204: for (var _fun29204_ip = 0;;) switch (_fun29204_ip) {
+    var1 = function arg0, arg1() {
+        _fun29215: for (var _fun29215_ip = 0;;) switch (_fun29215_ip) {
             case 0:
                 var4 = arg0;
-                var3 = typeof var4;
-                var0 = 'Symbol';
-                var1 = 'symbol';
-                if (!(var1 !== var3)) {
-                    _fun29204_ip = 62;
-                    continue _fun29204
+                var3 = arg1;
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var2.bind(var1)(var0);
+                var0 = var0.bind(var1)(var3);
+                if (!var0) {
+                    _fun29215_ip = 46;
+                    continue _fun29215
                 }
-            case 18:
-                var1 = 'BigInt';
-                var2 = 'bigint';
-                if (!(var2 !== var3)) {
-                    _fun29204_ip = 59;
-                    continue _fun29204
+            case 38:
+                var1 = '[[Enumerable]]';
+                var0 = var1 in var3;
+            case 46:
+                if (!var0) {
+                    _fun29215_ip = 57;
+                    continue _fun29215
                 }
-            case 30:
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var2 = var5.bind(var3)(var2);
-                var1 = var2.bind(var3)(var4);
-            case 59:
+            case 49:
+                var1 = '[[Configurable]]';
+                var0 = var1 in var3;
+            case 57:
+                if (!var0) {
+                    _fun29215_ip = 88;
+                    continue _fun29215
+                }
+            case 60:
+                var1 = var4.IsAccessorDescriptor;
+                var1 = var1.bind(var4)(var3);
+                if (var1) {
+                    _fun29215_ip = 85;
+                    continue _fun29215
+                }
+            case 74:
+                var2 = var4.IsDataDescriptor;
+                var1 = var2.bind(var4)(var3);
+            case 85:
                 var0 = var1;
-            case 62:
+            case 88:
                 return var0;
         }
     };
@@ -40,4 +56,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3369]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3420]);

@@ -10,19 +10,19 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0786a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f56415d;
+    private final boolean f56463d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f56416e;
+    private final boolean f56464e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f56417i;
+    private final boolean f56465i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f56418o;
+    private final boolean f56466o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f56419p;
+    private final boolean f56467p;
 
     /* renamed from: zp.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -75,27 +75,27 @@ public final class a implements Parcelable {
     }
 
     public a(boolean z10, boolean z11, boolean z12, boolean z13, boolean z14) {
-        this.f56415d = z10;
-        this.f56416e = z11;
-        this.f56417i = z12;
-        this.f56418o = z13;
-        this.f56419p = z14;
+        this.f56463d = z10;
+        this.f56464e = z11;
+        this.f56465i = z12;
+        this.f56466o = z13;
+        this.f56467p = z14;
     }
 
     public final boolean a() {
-        return this.f56418o;
+        return this.f56466o;
     }
 
     public final boolean b() {
-        return this.f56415d;
+        return this.f56463d;
     }
 
     public final boolean c() {
-        return this.f56416e;
+        return this.f56464e;
     }
 
     public final boolean d() {
-        return this.f56417i;
+        return this.f56465i;
     }
 
     @Override // android.os.Parcelable
@@ -104,16 +104,16 @@ public final class a implements Parcelable {
     }
 
     public final boolean e() {
-        return this.f56419p;
+        return this.f56467p;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f56415d ? 1 : 0);
-        dest.writeInt(this.f56416e ? 1 : 0);
-        dest.writeInt(this.f56417i ? 1 : 0);
-        dest.writeInt(this.f56418o ? 1 : 0);
-        dest.writeInt(this.f56419p ? 1 : 0);
+        dest.writeInt(this.f56463d ? 1 : 0);
+        dest.writeInt(this.f56464e ? 1 : 0);
+        dest.writeInt(this.f56465i ? 1 : 0);
+        dest.writeInt(this.f56466o ? 1 : 0);
+        dest.writeInt(this.f56467p ? 1 : 0);
     }
 }

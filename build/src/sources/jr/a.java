@@ -23,10 +23,10 @@ import qv.x;
 public class a extends ir.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f30888a = new ArrayList(0);
+    private final List f30936a = new ArrayList(0);
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f30889b;
+    private boolean f30937b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: jr.a$a  reason: collision with other inner class name */
@@ -58,7 +58,7 @@ public class a extends ir.a {
             lVar.i(iVar);
             int length = lVar.length();
             lVar.t(iVar);
-            jr.b.f30894d.d(lVar.o(), Integer.valueOf(iVar.n()));
+            jr.b.f30942d.d(lVar.o(), Integer.valueOf(iVar.n()));
             lVar.b(iVar, length);
             lVar.c(iVar);
         }
@@ -105,7 +105,7 @@ public class a extends ir.a {
             }
             int length = lVar.length();
             lVar.t(tVar);
-            jr.b.f30896f.d(lVar.o(), Boolean.valueOf(y10));
+            jr.b.f30944f.d(lVar.o(), Boolean.valueOf(y10));
             lVar.b(tVar, length);
             if (!y10) {
                 lVar.c(tVar);
@@ -124,7 +124,7 @@ public class a extends ir.a {
         public void a(ir.l lVar, qv.n nVar) {
             int length = lVar.length();
             lVar.t(nVar);
-            jr.b.f30895e.d(lVar.o(), nVar.m());
+            jr.b.f30943e.d(lVar.o(), nVar.m());
             lVar.b(nVar, length);
         }
     }
@@ -140,10 +140,10 @@ public class a extends ir.a {
         public void a(ir.l lVar, w wVar) {
             String m10 = wVar.m();
             lVar.builder().d(m10);
-            if (!a.this.f30888a.isEmpty()) {
+            if (!a.this.f30936a.isEmpty()) {
                 lVar.length();
                 m10.length();
-                Iterator it = a.this.f30888a.iterator();
+                Iterator it = a.this.f30936a.iterator();
                 if (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     throw null;
@@ -262,9 +262,9 @@ public class a extends ir.a {
             ir.g w10 = lVar.w();
             String b10 = w10.a().b(lVar2.m());
             q o10 = lVar.o();
-            mr.c.f38276a.d(o10, b10);
-            mr.c.f38277b.d(o10, Boolean.valueOf(lVar2.f() instanceof qv.n));
-            mr.c.f38278c.d(o10, null);
+            mr.c.f38324a.d(o10, b10);
+            mr.c.f38325b.d(o10, Boolean.valueOf(lVar2.f() instanceof qv.n));
+            mr.c.f38326c.d(o10, null);
             lVar.d(length, a10.a(w10, o10));
         }
     }
@@ -284,12 +284,12 @@ public class a extends ir.a {
             if (f10 instanceof qv.s) {
                 qv.s sVar = (qv.s) f10;
                 int q10 = sVar.q();
-                jr.b.f30891a.d(lVar.o(), b.a.ORDERED);
-                jr.b.f30893c.d(lVar.o(), Integer.valueOf(q10));
+                jr.b.f30939a.d(lVar.o(), b.a.ORDERED);
+                jr.b.f30941c.d(lVar.o(), Integer.valueOf(q10));
                 sVar.s(sVar.q() + 1);
             } else {
-                jr.b.f30891a.d(lVar.o(), b.a.BULLET);
-                jr.b.f30892b.d(lVar.o(), Integer.valueOf(a.B(qVar)));
+                jr.b.f30939a.d(lVar.o(), b.a.BULLET);
+                jr.b.f30940b.d(lVar.o(), Integer.valueOf(a.B(qVar)));
             }
             lVar.b(qVar, length);
             if (lVar.E(qVar)) {
@@ -346,7 +346,7 @@ public class a extends ir.a {
         lVar.builder().append((char) 160).append('\n').append(lVar.w().d().a(str, str2));
         lVar.z();
         lVar.builder().append((char) 160);
-        jr.b.f30897g.d(lVar.o(), str);
+        jr.b.f30945g.d(lVar.o(), str);
         lVar.b(rVar, length);
         lVar.c(rVar);
     }
@@ -437,7 +437,7 @@ public class a extends ir.a {
 
     @Override // ir.i
     public void e(TextView textView) {
-        if (!this.f30889b && textView.getMovementMethod() == null) {
+        if (!this.f30937b && textView.getMovementMethod() == null) {
             textView.setMovementMethod(LinkMovementMethod.getInstance());
         }
     }

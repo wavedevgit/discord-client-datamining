@@ -64,7 +64,7 @@ public final class ContentInventoryEntry {
     }
 
     static {
-        qr.o oVar = qr.o.f48044e;
+        qr.o oVar = qr.o.f48092e;
         $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, null, null, qr.l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -106,7 +106,7 @@ public final class ContentInventoryEntry {
         }
         compositeEncoder.z(serialDescriptor, 4, contentInventoryEntry.avatarUrl);
         if (compositeEncoder.A(serialDescriptor, 5) || contentInventoryEntry.platformIconUrl != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, contentInventoryEntry.platformIconUrl);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, contentInventoryEntry.platformIconUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || contentInventoryEntry.platformClickable != null) {
             compositeEncoder.l(serialDescriptor, 6, ContentInventoryEntryClickable$$serializer.INSTANCE, contentInventoryEntry.platformClickable);

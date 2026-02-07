@@ -34,10 +34,10 @@ public final class e implements h {
         Drawable drawable;
         boolean u10 = k5.k.u(this.f392a);
         if (u10) {
-            drawable = new BitmapDrawable(this.f393b.g().getResources(), n.f31493a.a(this.f392a, this.f393b.f(), this.f393b.o(), this.f393b.n(), this.f393b.c()));
+            drawable = new BitmapDrawable(this.f393b.g().getResources(), n.f31541a.a(this.f392a, this.f393b.f(), this.f393b.o(), this.f393b.n(), this.f393b.c()));
         } else {
             drawable = this.f392a;
         }
-        return new f(drawable, u10, x4.h.f54472e);
+        return new f(drawable, u10, x4.h.f54520e);
     }
 }

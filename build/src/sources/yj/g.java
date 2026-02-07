@@ -16,22 +16,22 @@ import vj.b;
 public final class g extends ak.e implements vj.a {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final vj.b f55391x = new b.a().a();
+    private static final vj.b f55439x = new b.a().a();
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f55392s;
+    private final boolean f55440s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final vj.b f55393t;
+    private final vj.b f55441t;
 
     /* renamed from: u  reason: collision with root package name */
-    final cl f55394u;
+    final cl f55442u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f55395v;
+    private int f55443v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f55396w;
+    private boolean f55444w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -39,9 +39,9 @@ public final class g extends ak.e implements vj.a {
         super(kVar, executor);
         we weVar;
         bVar.b();
-        this.f55393t = bVar;
+        this.f55441t = bVar;
         boolean f10 = b.f();
-        this.f55392s = f10;
+        this.f55440s = f10;
         mf mfVar = new mf();
         mfVar.i(b.c(bVar));
         of j10 = mfVar.j();
@@ -54,7 +54,7 @@ public final class g extends ak.e implements vj.a {
         zeVar.e(weVar);
         zeVar.g(j10);
         nkVar.d(qk.f(zeVar, 1), ye.ON_DEVICE_BARCODE_CREATE);
-        this.f55394u = null;
+        this.f55442u = null;
     }
 
     private final Task z(Task task, final int i10, final int i11) {
@@ -68,7 +68,7 @@ public final class g extends ak.e implements vj.a {
 
     @Override // ef.f
     public final com.google.android.gms.common.d[] a() {
-        return this.f55392s ? tj.l.f50632a : new com.google.android.gms.common.d[]{tj.l.f50633b};
+        return this.f55440s ? tj.l.f50680a : new com.google.android.gms.common.d[]{tj.l.f50681b};
     }
 
     @Override // ak.e, java.io.Closeable, java.lang.AutoCloseable

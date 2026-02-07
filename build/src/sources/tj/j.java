@@ -12,10 +12,10 @@ import java.util.concurrent.TimeUnit;
 public class j extends mg.u {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ThreadLocal f50626e = new ThreadLocal();
+    private static final ThreadLocal f50674e = new ThreadLocal();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThreadPoolExecutor f50627d;
+    private final ThreadPoolExecutor f50675d;
 
     public j() {
         final ThreadFactory defaultThreadFactory = Executors.defaultThreadFactory();
@@ -31,13 +31,13 @@ public class j extends mg.u {
                 });
             }
         });
-        this.f50627d = threadPoolExecutor;
+        this.f50675d = threadPoolExecutor;
         threadPoolExecutor.allowCoreThreadTimeOut(true);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* synthetic */ void n(Runnable runnable) {
-        f50626e.set(new ArrayDeque());
+        f50674e.set(new ArrayDeque());
         runnable.run();
     }
 
@@ -56,19 +56,19 @@ public class j extends mg.u {
 
     @Override // mg.x0
     protected final /* synthetic */ Object a() {
-        return this.f50627d;
+        return this.f50675d;
     }
 
     @Override // java.util.concurrent.Executor
     public final void execute(final Runnable runnable) {
-        Deque deque = (Deque) f50626e.get();
+        Deque deque = (Deque) f50674e.get();
         if (deque != null && deque.size() <= 1) {
             p(deque, runnable);
         } else {
-            this.f50627d.execute(new Runnable() { // from class: tj.u
+            this.f50675d.execute(new Runnable() { // from class: tj.u
                 @Override // java.lang.Runnable
                 public final void run() {
-                    j.p((Deque) j.f50626e.get(), runnable);
+                    j.p((Deque) j.f50674e.get(), runnable);
                 }
             });
         }
@@ -76,6 +76,6 @@ public class j extends mg.u {
 
     @Override // mg.u
     protected final ExecutorService k() {
-        return this.f50627d;
+        return this.f50675d;
     }
 }

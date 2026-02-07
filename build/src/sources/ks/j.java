@@ -9,11 +9,11 @@ import kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVi
 public class j extends DeclarationDescriptorVisitorEmptyBodies {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c1 f35331a;
+    private final c1 f35379a;
 
     public j(c1 container) {
         Intrinsics.checkNotNullParameter(container, "container");
-        this.f35331a = container;
+        this.f35379a = container;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVisitorEmptyBodies, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
@@ -21,7 +21,7 @@ public class j extends DeclarationDescriptorVisitorEmptyBodies {
     public a0 visitFunctionDescriptor(FunctionDescriptor descriptor, Unit data) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(data, "data");
-        return new h1(this.f35331a, descriptor);
+        return new h1(this.f35379a, descriptor);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorVisitorEmptyBodies, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorVisitor
@@ -44,24 +44,24 @@ public class j extends DeclarationDescriptorVisitorEmptyBodies {
             if (i12 != 0) {
                 if (i12 != 1) {
                     if (i12 == 2) {
-                        return new n1(this.f35331a, descriptor);
+                        return new n1(this.f35379a, descriptor);
                     }
                 } else {
-                    return new l1(this.f35331a, descriptor);
+                    return new l1(this.f35379a, descriptor);
                 }
             } else {
-                return new j1(this.f35331a, descriptor);
+                return new j1(this.f35379a, descriptor);
             }
         } else if (i12 != 0) {
             if (i12 != 1) {
                 if (i12 == 2) {
-                    return new g2(this.f35331a, descriptor);
+                    return new g2(this.f35379a, descriptor);
                 }
             } else {
-                return new d2(this.f35331a, descriptor);
+                return new d2(this.f35379a, descriptor);
             }
         } else {
-            return new a2(this.f35331a, descriptor);
+            return new a2(this.f35379a, descriptor);
         }
         throw new x2("Unsupported property: " + descriptor);
     }

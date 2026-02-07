@@ -9,29 +9,29 @@ import rs.l0;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f25536a;
+    private final MutableStateFlow f25584a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f25537b;
+    private final Flow f25585b;
 
     public k(List initialValue) {
         Intrinsics.checkNotNullParameter(initialValue, "initialValue");
         MutableStateFlow a10 = l0.a(initialValue);
-        this.f25536a = a10;
-        this.f25537b = rs.g.m(a10, 1);
+        this.f25584a = a10;
+        this.f25585b = rs.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f25537b;
+        return this.f25585b;
     }
 
     public final List b() {
-        return (List) this.f25536a.getValue();
+        return (List) this.f25584a.getValue();
     }
 
     public final void c(List value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f25536a.setValue(value);
+        this.f25584a.setValue(value);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

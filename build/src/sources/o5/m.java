@@ -7,24 +7,24 @@ import n5.s;
 public class m extends a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final s5.o f41514i;
+    private final s5.o f41562i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Path f41515j;
+    private final Path f41563j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Path f41516k;
+    private Path f41564k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Path f41517l;
+    private Path f41565l;
 
     /* renamed from: m  reason: collision with root package name */
-    private List f41518m;
+    private List f41566m;
 
     public m(List list) {
         super(list);
-        this.f41514i = new s5.o();
-        this.f41515j = new Path();
+        this.f41562i = new s5.o();
+        this.f41563j = new Path();
     }
 
     @Override // o5.a
@@ -32,47 +32,47 @@ public class m extends a {
     public Path i(y5.a aVar, float f10) {
         s5.o oVar;
         Path path;
-        s5.o oVar2 = (s5.o) aVar.f54980b;
-        s5.o oVar3 = (s5.o) aVar.f54981c;
-        s5.o oVar4 = this.f41514i;
+        s5.o oVar2 = (s5.o) aVar.f55028b;
+        s5.o oVar3 = (s5.o) aVar.f55029c;
+        s5.o oVar4 = this.f41562i;
         if (oVar3 == null) {
             oVar = oVar2;
         } else {
             oVar = oVar3;
         }
         oVar4.c(oVar2, oVar, f10);
-        s5.o oVar5 = this.f41514i;
-        List list = this.f41518m;
+        s5.o oVar5 = this.f41562i;
+        List list = this.f41566m;
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
-                oVar5 = ((s) this.f41518m.get(size)).h(oVar5);
+                oVar5 = ((s) this.f41566m.get(size)).h(oVar5);
             }
         }
-        x5.i.h(oVar5, this.f41515j);
-        if (this.f41482e != null) {
-            if (this.f41516k == null) {
-                this.f41516k = new Path();
-                this.f41517l = new Path();
+        x5.i.h(oVar5, this.f41563j);
+        if (this.f41530e != null) {
+            if (this.f41564k == null) {
+                this.f41564k = new Path();
+                this.f41565l = new Path();
             }
-            x5.i.h(oVar2, this.f41516k);
+            x5.i.h(oVar2, this.f41564k);
             if (oVar3 != null) {
-                x5.i.h(oVar3, this.f41517l);
+                x5.i.h(oVar3, this.f41565l);
             }
-            y5.c cVar = this.f41482e;
-            float f11 = aVar.f54985g;
-            float floatValue = aVar.f54986h.floatValue();
-            Path path2 = this.f41516k;
+            y5.c cVar = this.f41530e;
+            float f11 = aVar.f55033g;
+            float floatValue = aVar.f55034h.floatValue();
+            Path path2 = this.f41564k;
             if (oVar3 == null) {
                 path = path2;
             } else {
-                path = this.f41517l;
+                path = this.f41565l;
             }
             return (Path) cVar.b(f11, floatValue, path2, path, f10, e(), f());
         }
-        return this.f41515j;
+        return this.f41563j;
     }
 
     public void r(List list) {
-        this.f41518m = list;
+        this.f41566m = list;
     }
 }

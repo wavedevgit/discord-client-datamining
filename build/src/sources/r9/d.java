@@ -8,13 +8,13 @@ import r9.a;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48700a;
+    private final int f48748a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f48701b = d.class;
+    private final Class f48749b = d.class;
 
     public d(int i10) {
-        this.f48700a = i10;
+        this.f48748a = i10;
     }
 
     @Override // r9.a
@@ -42,13 +42,13 @@ public final class d implements a {
         Intrinsics.checkNotNullParameter(bitmapFramePreparer, "bitmapFramePreparer");
         Intrinsics.checkNotNullParameter(bitmapFrameCache, "bitmapFrameCache");
         Intrinsics.checkNotNullParameter(animationBackend, "animationBackend");
-        int i11 = this.f48700a;
+        int i11 = this.f48748a;
         int i12 = 1;
         if (1 <= i11) {
             while (true) {
                 int a10 = (i10 + i12) % animationBackend.a();
                 if (p8.a.w(2)) {
-                    p8.a.A(this.f48701b, "Preparing frame %d, last drawn: %d", Integer.valueOf(a10), Integer.valueOf(i10));
+                    p8.a.A(this.f48749b, "Preparing frame %d, last drawn: %d", Integer.valueOf(a10), Integer.valueOf(i10));
                 }
                 if (bitmapFramePreparer.a(bitmapFrameCache, animationBackend, a10)) {
                     if (i12 == i11) {

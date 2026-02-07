@@ -7,15 +7,15 @@ import ts.b0;
 public final class m extends b0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final e f48134p;
+    private final e f48182p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final /* synthetic */ AtomicReferenceArray f48135q;
+    private final /* synthetic */ AtomicReferenceArray f48183q;
 
     public m(long j10, m mVar, e eVar, int i10) {
         super(j10, mVar, i10);
-        this.f48134p = eVar;
-        this.f48135q = new AtomicReferenceArray(f.f48107b * 2);
+        this.f48182p = eVar;
+        this.f48183q = new AtomicReferenceArray(f.f48155b * 2);
     }
 
     private final void E(int i10, Object obj) {
@@ -23,7 +23,7 @@ public final class m extends b0 {
     }
 
     private final /* synthetic */ AtomicReferenceArray z() {
-        return this.f48135q;
+        return this.f48183q;
     }
 
     public final Object A(int i10) {
@@ -36,7 +36,7 @@ public final class m extends b0 {
 
     public final void C(int i10, boolean z10) {
         if (z10) {
-            y().w1((this.f50815i * f.f48107b) + i10);
+            y().w1((this.f50863i * f.f48155b) + i10);
         }
         t();
     }
@@ -57,7 +57,7 @@ public final class m extends b0 {
 
     @Override // ts.b0
     public int r() {
-        return f.f48107b;
+        return f.f48155b;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:34:0x0062, code lost:
@@ -67,7 +67,7 @@ public final class m extends b0 {
         if (r0 == false) goto L61;
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x0067, code lost:
-        r4 = y().f48087e;
+        r4 = y().f48135e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x006d, code lost:
         if (r4 == null) goto L60;
@@ -92,7 +92,7 @@ public final class m extends b0 {
     public void s(int r4, java.lang.Throwable r5, kotlin.coroutines.CoroutineContext r6) {
         /*
             r3 = this;
-            int r5 = qs.f.f48107b
+            int r5 = qs.f.f48155b
             if (r4 < r5) goto L6
             r0 = 1
             goto L7
@@ -125,7 +125,7 @@ public final class m extends b0 {
         L35:
             ts.e0 r4 = qs.f.f()
             if (r1 == r4) goto L99
-            ts.e0 r4 = qs.f.f48109d
+            ts.e0 r4 = qs.f.f48157d
             if (r1 != r4) goto L40
             goto L99
         L40:
@@ -147,7 +147,7 @@ public final class m extends b0 {
             r3.w(r4)
             if (r0 == 0) goto L99
             qs.e r4 = r3.y()
-            kotlin.jvm.functions.Function1 r4 = r4.f48087e
+            kotlin.jvm.functions.Function1 r4 = r4.f48135e
             if (r4 == 0) goto L99
             ts.x.a(r4, r5, r6)
             return
@@ -165,7 +165,7 @@ public final class m extends b0 {
             r3.C(r4, r1)
             if (r0 == 0) goto L99
             qs.e r4 = r3.y()
-            kotlin.jvm.functions.Function1 r4 = r4.f48087e
+            kotlin.jvm.functions.Function1 r4 = r4.f48135e
             if (r4 == 0) goto L99
             ts.x.a(r4, r5, r6)
         L99:
@@ -187,7 +187,7 @@ public final class m extends b0 {
     }
 
     public final e y() {
-        e eVar = this.f48134p;
+        e eVar = this.f48182p;
         Intrinsics.checkNotNull(eVar);
         return eVar;
     }

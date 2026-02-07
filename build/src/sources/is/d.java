@@ -30,23 +30,23 @@ public abstract class d {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f29336a;
+        public static final /* synthetic */ int[] f29384a;
 
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f34847d.ordinal()] = 1;
+                iArr[m.f34895d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f34848e.ordinal()] = 2;
+                iArr[m.f34896e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f34849i.ordinal()] = 3;
+                iArr[m.f34897i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f29336a = iArr;
+            f29384a = iArr;
         }
     }
 
@@ -75,7 +75,7 @@ public abstract class d {
             if (d10 == null) {
                 i10 = -1;
             } else {
-                i10 = a.f29336a[d10.ordinal()];
+                i10 = a.f29384a[d10.ordinal()];
             }
             if (i10 != -1) {
                 if (i10 != 1) {

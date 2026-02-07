@@ -8,14 +8,14 @@ import java.util.concurrent.TimeUnit;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ThreadPoolExecutor f26000a;
+    private static ThreadPoolExecutor f26048a;
 
     public static Executor a() {
-        if (f26000a == null) {
+        if (f26048a == null) {
             ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 10L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new d());
-            f26000a = threadPoolExecutor;
+            f26048a = threadPoolExecutor;
             threadPoolExecutor.allowCoreThreadTimeOut(true);
         }
-        return f26000a;
+        return f26048a;
     }
 }

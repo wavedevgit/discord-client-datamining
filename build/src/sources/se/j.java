@@ -9,12 +9,12 @@ import java.util.concurrent.TimeUnit;
 public final class j extends ThreadPoolExecutor implements AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ n f49952d;
+    final /* synthetic */ n f50000d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(n nVar) {
         super(1, 1, 1L, TimeUnit.MINUTES, new LinkedBlockingQueue());
-        this.f49952d = nVar;
+        this.f50000d = nVar;
         setThreadFactory(new l(null));
         allowCoreThreadTimeOut(true);
     }

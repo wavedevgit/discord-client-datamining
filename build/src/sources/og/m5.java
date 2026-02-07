@@ -5,30 +5,30 @@ import yi.c;
 final class m5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m5 f42273a = new m5();
+    static final m5 f42321a = new m5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42274b;
+    private static final yi.c f42322b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42275c;
+    private static final yi.c f42323c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42276d;
+    private static final yi.c f42324d;
 
     static {
         c.b a10 = yi.c.a("detectorMode");
         f fVar = new f();
         fVar.a(1);
-        f42274b = a10.b(fVar.b()).a();
+        f42322b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("streamModeSmoothingRatio");
         f fVar2 = new f();
         fVar2.a(2);
-        f42275c = a11.b(fVar2.b()).a();
+        f42323c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("rawSizeMaskEnabled");
         f fVar3 = new f();
         fVar3.a(3);
-        f42276d = a12.b(fVar3.b()).a();
+        f42324d = a12.b(fVar3.b()).a();
     }
 
     private m5() {

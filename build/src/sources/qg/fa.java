@@ -5,7 +5,7 @@ import yi.c;
 final class fa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fa f47041a = new fa();
+    static final fa f47089a = new fa();
 
     static {
         c.b a10 = yi.c.a("detectorOptions");

@@ -6,10 +6,10 @@ import com.google.android.gms.common.api.Status;
 public abstract class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final kf.a f56251a = new kf.a("GoogleSignInCommon", new String[0]);
+    private static final kf.a f56299a = new kf.a("GoogleSignInCommon", new String[0]);
 
     public static ef.g a(ef.e eVar, Context context, boolean z10) {
-        f56251a.a("Revoking access", new Object[0]);
+        f56299a.a("Revoking access", new Object[0]);
         String e10 = c.b(context).e();
         c(context);
         if (z10) {
@@ -19,7 +19,7 @@ public abstract class o {
     }
 
     public static ef.g b(ef.e eVar, Context context, boolean z10) {
-        f56251a.a("Signing out", new Object[0]);
+        f56299a.a("Signing out", new Object[0]);
         c(context);
         if (z10) {
             return ef.h.b(Status.f13734q, eVar);

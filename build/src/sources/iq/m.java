@@ -10,22 +10,22 @@ import androidx.viewbinding.ViewBinding;
 public final class m implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f29248a;
+    private final LinearLayout f29296a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f29249b;
+    public final LinearLayout f29297b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f29250c;
+    public final TextView f29298c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f29251d;
+    public final TextView f29299d;
 
     private m(LinearLayout linearLayout, LinearLayout linearLayout2, TextView textView, TextView textView2) {
-        this.f29248a = linearLayout;
-        this.f29249b = linearLayout2;
-        this.f29250c = textView;
-        this.f29251d = textView2;
+        this.f29296a = linearLayout;
+        this.f29297b = linearLayout2;
+        this.f29298c = textView;
+        this.f29299d = textView2;
     }
 
     public static m a(View view) {
@@ -60,6 +60,6 @@ public final class m implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public LinearLayout getRoot() {
-        return this.f29248a;
+        return this.f29296a;
     }
 }

@@ -13,13 +13,13 @@ public final class d implements Continuation, CoroutineStackFrame {
     @NotNull
 
     /* renamed from: e  reason: collision with root package name */
-    private static final a f52930e = new a(null);
+    private static final a f52978e = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final AtomicReferenceFieldUpdater f52931i = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "result");
+    private static final AtomicReferenceFieldUpdater f52979i = AtomicReferenceFieldUpdater.newUpdater(d.class, Object.class, "result");
 
     /* renamed from: d  reason: collision with root package name */
-    private final Continuation f52932d;
+    private final Continuation f52980d;
     private volatile Object result;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -34,31 +34,31 @@ public final class d implements Continuation, CoroutineStackFrame {
 
     public d(Continuation delegate, Object obj) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f52932d = delegate;
+        this.f52980d = delegate;
         this.result = obj;
     }
 
     public final Object b() {
         Object obj = this.result;
-        wr.a aVar = wr.a.f54055e;
+        wr.a aVar = wr.a.f54103e;
         if (obj == aVar) {
-            if (androidx.concurrent.futures.b.a(f52931i, this, aVar, wr.b.f())) {
+            if (androidx.concurrent.futures.b.a(f52979i, this, aVar, wr.b.f())) {
                 return wr.b.f();
             }
             obj = this.result;
         }
-        if (obj == wr.a.f54056i) {
+        if (obj == wr.a.f54104i) {
             return wr.b.f();
         }
         if (!(obj instanceof Result.b)) {
             return obj;
         }
-        throw ((Result.b) obj).f32007d;
+        throw ((Result.b) obj).f32055d;
     }
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f52932d;
+        Continuation continuation = this.f52980d;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }
@@ -67,21 +67,21 @@ public final class d implements Continuation, CoroutineStackFrame {
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return this.f52932d.getContext();
+        return this.f52980d.getContext();
     }
 
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
         while (true) {
             Object obj2 = this.result;
-            wr.a aVar = wr.a.f54055e;
+            wr.a aVar = wr.a.f54103e;
             if (obj2 == aVar) {
-                if (androidx.concurrent.futures.b.a(f52931i, this, aVar, obj)) {
+                if (androidx.concurrent.futures.b.a(f52979i, this, aVar, obj)) {
                     return;
                 }
             } else if (obj2 == wr.b.f()) {
-                if (androidx.concurrent.futures.b.a(f52931i, this, wr.b.f(), wr.a.f54056i)) {
-                    this.f52932d.resumeWith(obj);
+                if (androidx.concurrent.futures.b.a(f52979i, this, wr.b.f(), wr.a.f54104i)) {
+                    this.f52980d.resumeWith(obj);
                     return;
                 }
             } else {
@@ -91,12 +91,12 @@ public final class d implements Continuation, CoroutineStackFrame {
     }
 
     public String toString() {
-        return "SafeContinuation for " + this.f52932d;
+        return "SafeContinuation for " + this.f52980d;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public d(Continuation delegate) {
-        this(delegate, wr.a.f54055e);
+        this(delegate, wr.a.f54103e);
         Intrinsics.checkNotNullParameter(delegate, "delegate");
     }
 }

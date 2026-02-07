@@ -19,26 +19,26 @@ public abstract class m0 {
     public static final class a implements j0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Image f51752a;
+        private final Image f51800a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Lazy f51753b;
+        private final Lazy f51801b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Lazy f51754c;
+        private final Lazy f51802c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f51755d;
+        private final int f51803d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f51756e;
+        private final int f51804e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f51757f;
+        private final int f51805f;
 
         a(final Image image, final int i10) {
-            this.f51752a = image;
-            this.f51753b = qr.l.a(new Function0() { // from class: un.k0
+            this.f51800a = image;
+            this.f51801b = qr.l.a(new Function0() { // from class: un.k0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     zj.a g10;
@@ -46,7 +46,7 @@ public abstract class m0 {
                     return g10;
                 }
             });
-            this.f51754c = qr.l.a(new Function0() { // from class: un.l0
+            this.f51802c = qr.l.a(new Function0() { // from class: un.l0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Bitmap c10;
@@ -54,9 +54,9 @@ public abstract class m0 {
                     return c10;
                 }
             });
-            this.f51755d = image.getWidth();
-            this.f51756e = image.getHeight();
-            this.f51757f = i10;
+            this.f51803d = image.getWidth();
+            this.f51804e = image.getHeight();
+            this.f51805f = i10;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -73,32 +73,32 @@ public abstract class m0 {
 
         @Override // un.j0
         public Image F() {
-            return this.f51752a;
+            return this.f51800a;
         }
 
         @Override // un.j0
         public int d() {
-            return this.f51757f;
+            return this.f51805f;
         }
 
         @Override // un.j0
         public Bitmap e() {
-            return (Bitmap) this.f51754c.getValue();
+            return (Bitmap) this.f51802c.getValue();
         }
 
         @Override // un.j0
         public zj.a f() {
-            return (zj.a) this.f51753b.getValue();
+            return (zj.a) this.f51801b.getValue();
         }
 
         @Override // un.j0
         public int getHeight() {
-            return this.f51756e;
+            return this.f51804e;
         }
 
         @Override // un.j0
         public int getWidth() {
-            return this.f51755d;
+            return this.f51803d;
         }
     }
 
@@ -134,7 +134,7 @@ public abstract class m0 {
     public static final Bitmap c(Image image, int i10) {
         Intrinsics.checkNotNullParameter(image, "<this>");
         e0 e0Var = new e0(image.getWidth(), image.getHeight(), i10);
-        h hVar = h.f51730a;
+        h hVar = h.f51778a;
         Image.Plane[] planes = image.getPlanes();
         if (planes == null) {
             return null;

@@ -3,10 +3,10 @@ package ts;
 abstract /* synthetic */ class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f50824a = Runtime.getRuntime().availableProcessors();
+    private static final int f50872a = Runtime.getRuntime().availableProcessors();
 
     public static final int a() {
-        return f50824a;
+        return f50872a;
     }
 
     public static final String b(String str) {

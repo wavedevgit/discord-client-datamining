@@ -4,17 +4,17 @@ package wk;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lk.a f53860a;
+    private final lk.a f53908a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final m f53861b = new m();
+    private final m f53909b = new m();
 
     /* renamed from: c  reason: collision with root package name */
-    private final StringBuilder f53862c = new StringBuilder();
+    private final StringBuilder f53910c = new StringBuilder();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(lk.a aVar) {
-        this.f53860a = aVar;
+        this.f53908a = aVar;
     }
 
     private n b(int i10) {
@@ -139,12 +139,12 @@ public final class s {
 
     private p e(int i10) {
         int i11 = i10 + 7;
-        if (i11 > this.f53860a.l()) {
+        if (i11 > this.f53908a.l()) {
             int f10 = f(i10, 4);
             if (f10 == 0) {
-                return new p(this.f53860a.l(), 10, 10);
+                return new p(this.f53908a.l(), 10, 10);
             }
-            return new p(this.f53860a.l(), f10 - 1, 10);
+            return new p(this.f53908a.l(), f10 - 1, 10);
         }
         int f11 = f(i10, 7) - 8;
         return new p(i11, f11 / 11, f11 % 11);
@@ -163,11 +163,11 @@ public final class s {
 
     private boolean h(int i10) {
         int i11 = i10 + 3;
-        if (i11 > this.f53860a.l()) {
+        if (i11 > this.f53908a.l()) {
             return false;
         }
         while (i10 < i11) {
-            if (this.f53860a.h(i10)) {
+            if (this.f53908a.h(i10)) {
                 return false;
             }
             i10++;
@@ -177,15 +177,15 @@ public final class s {
 
     private boolean i(int i10) {
         int i11;
-        if (i10 + 1 > this.f53860a.l()) {
+        if (i10 + 1 > this.f53908a.l()) {
             return false;
         }
-        for (int i12 = 0; i12 < 5 && (i11 = i12 + i10) < this.f53860a.l(); i12++) {
+        for (int i12 = 0; i12 < 5 && (i11 = i12 + i10) < this.f53908a.l(); i12++) {
             if (i12 == 2) {
-                if (!this.f53860a.h(i10 + 2)) {
+                if (!this.f53908a.h(i10 + 2)) {
                     return false;
                 }
-            } else if (this.f53860a.h(i11)) {
+            } else if (this.f53908a.h(i11)) {
                 return false;
             }
         }
@@ -194,11 +194,11 @@ public final class s {
 
     private boolean j(int i10) {
         int i11;
-        if (i10 + 1 > this.f53860a.l()) {
+        if (i10 + 1 > this.f53908a.l()) {
             return false;
         }
-        for (int i12 = 0; i12 < 4 && (i11 = i12 + i10) < this.f53860a.l(); i12++) {
-            if (this.f53860a.h(i11)) {
+        for (int i12 = 0; i12 < 4 && (i11 = i12 + i10) < this.f53908a.l(); i12++) {
+            if (this.f53908a.h(i11)) {
                 return false;
             }
         }
@@ -207,14 +207,14 @@ public final class s {
 
     private boolean k(int i10) {
         int f10;
-        if (i10 + 5 > this.f53860a.l()) {
+        if (i10 + 5 > this.f53908a.l()) {
             return false;
         }
         int f11 = f(i10, 5);
         if (f11 >= 5 && f11 < 16) {
             return true;
         }
-        if (i10 + 6 > this.f53860a.l() || (f10 = f(i10, 6)) < 16 || f10 >= 63) {
+        if (i10 + 6 > this.f53908a.l() || (f10 = f(i10, 6)) < 16 || f10 >= 63) {
             return false;
         }
         return true;
@@ -222,29 +222,29 @@ public final class s {
 
     private boolean l(int i10) {
         int f10;
-        if (i10 + 5 > this.f53860a.l()) {
+        if (i10 + 5 > this.f53908a.l()) {
             return false;
         }
         int f11 = f(i10, 5);
         if (f11 >= 5 && f11 < 16) {
             return true;
         }
-        if (i10 + 7 > this.f53860a.l()) {
+        if (i10 + 7 > this.f53908a.l()) {
             return false;
         }
         int f12 = f(i10, 7);
         if (f12 >= 64 && f12 < 116) {
             return true;
         }
-        if (i10 + 8 > this.f53860a.l() || (f10 = f(i10, 8)) < 232 || f10 >= 253) {
+        if (i10 + 8 > this.f53908a.l() || (f10 = f(i10, 8)) < 232 || f10 >= 253) {
             return false;
         }
         return true;
     }
 
     private boolean m(int i10) {
-        if (i10 + 7 > this.f53860a.l()) {
-            if (i10 + 4 <= this.f53860a.l()) {
+        if (i10 + 7 > this.f53908a.l()) {
+            if (i10 + 4 <= this.f53908a.l()) {
                 return true;
             }
             return false;
@@ -253,35 +253,35 @@ public final class s {
         while (true) {
             int i12 = i10 + 3;
             if (i11 < i12) {
-                if (this.f53860a.h(i11)) {
+                if (this.f53908a.h(i11)) {
                     return true;
                 }
                 i11++;
             } else {
-                return this.f53860a.h(i12);
+                return this.f53908a.h(i12);
             }
         }
     }
 
     private l n() {
-        while (k(this.f53861b.a())) {
-            n b10 = b(this.f53861b.a());
-            this.f53861b.h(b10.a());
+        while (k(this.f53909b.a())) {
+            n b10 = b(this.f53909b.a());
+            this.f53909b.h(b10.a());
             if (b10.c()) {
-                return new l(new o(this.f53861b.a(), this.f53862c.toString()), true);
+                return new l(new o(this.f53909b.a(), this.f53910c.toString()), true);
             }
-            this.f53862c.append(b10.b());
+            this.f53910c.append(b10.b());
         }
-        if (h(this.f53861b.a())) {
-            this.f53861b.b(3);
-            this.f53861b.g();
-        } else if (i(this.f53861b.a())) {
-            if (this.f53861b.a() + 5 < this.f53860a.l()) {
-                this.f53861b.b(5);
+        if (h(this.f53909b.a())) {
+            this.f53909b.b(3);
+            this.f53909b.g();
+        } else if (i(this.f53909b.a())) {
+            if (this.f53909b.a() + 5 < this.f53908a.l()) {
+                this.f53909b.b(5);
             } else {
-                this.f53861b.h(this.f53860a.l());
+                this.f53909b.h(this.f53908a.l());
             }
-            this.f53861b.f();
+            this.f53909b.f();
         }
         return new l();
     }
@@ -290,18 +290,18 @@ public final class s {
         l q10;
         boolean b10;
         do {
-            int a10 = this.f53861b.a();
-            if (this.f53861b.c()) {
+            int a10 = this.f53909b.a();
+            if (this.f53909b.c()) {
                 q10 = n();
                 b10 = q10.b();
-            } else if (this.f53861b.d()) {
+            } else if (this.f53909b.d()) {
                 q10 = p();
                 b10 = q10.b();
             } else {
                 q10 = q();
                 b10 = q10.b();
             }
-            if (a10 != this.f53861b.a() || b10) {
+            if (a10 != this.f53909b.a() || b10) {
                 break;
                 break;
             }
@@ -311,50 +311,50 @@ public final class s {
     }
 
     private l p() {
-        while (l(this.f53861b.a())) {
-            n d10 = d(this.f53861b.a());
-            this.f53861b.h(d10.a());
+        while (l(this.f53909b.a())) {
+            n d10 = d(this.f53909b.a());
+            this.f53909b.h(d10.a());
             if (d10.c()) {
-                return new l(new o(this.f53861b.a(), this.f53862c.toString()), true);
+                return new l(new o(this.f53909b.a(), this.f53910c.toString()), true);
             }
-            this.f53862c.append(d10.b());
+            this.f53910c.append(d10.b());
         }
-        if (h(this.f53861b.a())) {
-            this.f53861b.b(3);
-            this.f53861b.g();
-        } else if (i(this.f53861b.a())) {
-            if (this.f53861b.a() + 5 < this.f53860a.l()) {
-                this.f53861b.b(5);
+        if (h(this.f53909b.a())) {
+            this.f53909b.b(3);
+            this.f53909b.g();
+        } else if (i(this.f53909b.a())) {
+            if (this.f53909b.a() + 5 < this.f53908a.l()) {
+                this.f53909b.b(5);
             } else {
-                this.f53861b.h(this.f53860a.l());
+                this.f53909b.h(this.f53908a.l());
             }
-            this.f53861b.e();
+            this.f53909b.e();
         }
         return new l();
     }
 
     private l q() {
         o oVar;
-        while (m(this.f53861b.a())) {
-            p e10 = e(this.f53861b.a());
-            this.f53861b.h(e10.a());
+        while (m(this.f53909b.a())) {
+            p e10 = e(this.f53909b.a());
+            this.f53909b.h(e10.a());
             if (e10.d()) {
                 if (e10.e()) {
-                    oVar = new o(this.f53861b.a(), this.f53862c.toString());
+                    oVar = new o(this.f53909b.a(), this.f53910c.toString());
                 } else {
-                    oVar = new o(this.f53861b.a(), this.f53862c.toString(), e10.c());
+                    oVar = new o(this.f53909b.a(), this.f53910c.toString(), e10.c());
                 }
                 return new l(oVar, true);
             }
-            this.f53862c.append(e10.b());
+            this.f53910c.append(e10.b());
             if (e10.e()) {
-                return new l(new o(this.f53861b.a(), this.f53862c.toString()), true);
+                return new l(new o(this.f53909b.a(), this.f53910c.toString()), true);
             }
-            this.f53862c.append(e10.c());
+            this.f53910c.append(e10.c());
         }
-        if (j(this.f53861b.a())) {
-            this.f53861b.e();
-            this.f53861b.b(4);
+        if (j(this.f53909b.a())) {
+            this.f53909b.e();
+            this.f53909b.b(4);
         }
         return new l();
     }
@@ -384,20 +384,20 @@ public final class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o c(int i10, String str) {
-        this.f53862c.setLength(0);
+        this.f53910c.setLength(0);
         if (str != null) {
-            this.f53862c.append(str);
+            this.f53910c.append(str);
         }
-        this.f53861b.h(i10);
+        this.f53909b.h(i10);
         o o10 = o();
         if (o10 != null && o10.d()) {
-            return new o(this.f53861b.a(), this.f53862c.toString(), o10.c());
+            return new o(this.f53909b.a(), this.f53910c.toString(), o10.c());
         }
-        return new o(this.f53861b.a(), this.f53862c.toString());
+        return new o(this.f53909b.a(), this.f53910c.toString());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f(int i10, int i11) {
-        return g(this.f53860a, i10, i11);
+        return g(this.f53908a, i10, i11);
     }
 }

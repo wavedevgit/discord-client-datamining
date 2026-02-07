@@ -6,19 +6,19 @@ import java.util.Objects;
 public abstract class y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Object f25160a;
+    private Object f25208a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f25161b;
+    private boolean f25209b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ c f25162c;
+    final /* synthetic */ c f25210c;
 
     public y0(c cVar, Object obj) {
         Objects.requireNonNull(cVar);
-        this.f25162c = cVar;
-        this.f25160a = obj;
-        this.f25161b = false;
+        this.f25210c = cVar;
+        this.f25208a = obj;
+        this.f25209b = false;
     }
 
     protected abstract void a(Object obj);
@@ -27,8 +27,8 @@ public abstract class y0 {
         Object obj;
         synchronized (this) {
             try {
-                obj = this.f25160a;
-                if (this.f25161b) {
+                obj = this.f25208a;
+                if (this.f25209b) {
                     String obj2 = toString();
                     StringBuilder sb2 = new StringBuilder(obj2.length() + 47);
                     sb2.append("Callback proxy ");
@@ -44,14 +44,14 @@ public abstract class y0 {
             a(obj);
         }
         synchronized (this) {
-            this.f25161b = true;
+            this.f25209b = true;
         }
         c();
     }
 
     public final void c() {
         d();
-        c cVar = this.f25162c;
+        c cVar = this.f25210c;
         synchronized (cVar.a0()) {
             cVar.a0().remove(this);
         }
@@ -59,7 +59,7 @@ public abstract class y0 {
 
     public final void d() {
         synchronized (this) {
-            this.f25160a = null;
+            this.f25208a = null;
         }
     }
 }

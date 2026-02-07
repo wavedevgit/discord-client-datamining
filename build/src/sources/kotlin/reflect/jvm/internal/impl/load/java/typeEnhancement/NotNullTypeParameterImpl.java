@@ -17,11 +17,11 @@ import org.jetbrains.annotations.NotNull;
 public final class NotNullTypeParameterImpl extends DelegatingSimpleType implements NotNullTypeParameter {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f33067e;
+    private final SimpleType f33115e;
 
     public NotNullTypeParameterImpl(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f33067e = delegate;
+        this.f33115e = delegate;
     }
 
     private final SimpleType b(SimpleType simpleType) {
@@ -34,7 +34,7 @@ public final class NotNullTypeParameterImpl extends DelegatingSimpleType impleme
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f33067e;
+        return this.f33115e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.KotlinType

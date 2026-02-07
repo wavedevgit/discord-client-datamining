@@ -10,7 +10,7 @@ import kotlinx.serialization.json.JsonElement;
 public final class k0 extends c {
 
     /* renamed from: g  reason: collision with root package name */
-    private final JsonElement f36676g;
+    private final JsonElement f36724g;
 
     public /* synthetic */ k0(Json json, JsonElement jsonElement, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(json, jsonElement, (i10 & 4) != 0 ? null : str);
@@ -18,7 +18,7 @@ public final class k0 extends c {
 
     @Override // lt.c
     public JsonElement D0() {
-        return this.f36676g;
+        return this.f36724g;
     }
 
     @Override // kotlinx.serialization.encoding.c
@@ -42,7 +42,7 @@ public final class k0 extends c {
         super(json, value, str, null);
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f36676g = value;
+        this.f36724g = value;
         f0("primitive");
     }
 }

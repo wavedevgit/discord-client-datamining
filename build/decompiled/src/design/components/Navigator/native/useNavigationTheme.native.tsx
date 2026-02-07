@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNavigationTheme = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3153, 671, 3208, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3153, 671, 3207, 2]);

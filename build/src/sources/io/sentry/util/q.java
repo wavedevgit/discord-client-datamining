@@ -19,16 +19,16 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Charset f28958a = Charset.forName("UTF-8");
+    private static final Charset f29006a = Charset.forName("UTF-8");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class b extends Writer {
 
         /* renamed from: d  reason: collision with root package name */
-        private long f28959d;
+        private long f29007d;
 
         private b() {
-            this.f28959d = 0L;
+            this.f29007d = 0L;
         }
 
         private static int g(char c10) {
@@ -42,7 +42,7 @@ public abstract class q {
         }
 
         public long a() {
-            return this.f28959d;
+            return this.f29007d;
         }
 
         @Override // java.io.Writer, java.io.Closeable, java.lang.AutoCloseable
@@ -56,19 +56,19 @@ public abstract class q {
         @Override // java.io.Writer
         public void write(char[] cArr, int i10, int i11) {
             for (int i12 = i10; i12 < i10 + i11; i12++) {
-                this.f28959d += g(cArr[i12]);
+                this.f29007d += g(cArr[i12]);
             }
         }
 
         @Override // java.io.Writer
         public void write(int i10) {
-            this.f28959d += g((char) i10);
+            this.f29007d += g((char) i10);
         }
 
         @Override // java.io.Writer
         public void write(String str, int i10, int i11) {
             for (int i12 = i10; i12 < i10 + i11; i12++) {
-                this.f28959d += g(str.charAt(i12));
+                this.f29007d += g(str.charAt(i12));
             }
         }
     }
@@ -99,7 +99,7 @@ public abstract class q {
     public static byte[] c(b1 b1Var, ILogger iLogger, w1 w1Var) {
         try {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f28958a));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(byteArrayOutputStream, f29006a));
             b1Var.a(w1Var, bufferedWriter);
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             bufferedWriter.close();

@@ -988,11 +988,11 @@ public abstract class NotificationCompat {
                     if (i10 != 3) {
                         return null;
                     }
-                    return this.f3459a.f3377a.getResources().getString(o1.f.f41357g);
+                    return this.f3459a.f3377a.getResources().getString(o1.f.f41405g);
                 }
-                return this.f3459a.f3377a.getResources().getString(o1.f.f41356f);
+                return this.f3459a.f3377a.getResources().getString(o1.f.f41404f);
             }
-            return this.f3459a.f3377a.getResources().getString(o1.f.f41355e);
+            return this.f3459a.f3377a.getResources().getString(o1.f.f41403e);
         }
 
         private boolean q(Action action) {
@@ -1017,8 +1017,8 @@ public abstract class NotificationCompat {
         private Action s() {
             int i10;
             int i11;
-            int i12 = o1.d.f41323b;
-            int i13 = o1.d.f41322a;
+            int i12 = o1.d.f41371b;
+            int i13 = o1.d.f41370a;
             PendingIntent pendingIntent = this.f3436g;
             if (pendingIntent == null) {
                 return null;
@@ -1030,20 +1030,20 @@ public abstract class NotificationCompat {
                 i10 = i13;
             }
             if (z10) {
-                i11 = o1.f.f41352b;
+                i11 = o1.f.f41400b;
             } else {
-                i11 = o1.f.f41351a;
+                i11 = o1.f.f41399a;
             }
-            return r(i10, i11, this.f3440k, o1.b.f41318a, pendingIntent);
+            return r(i10, i11, this.f3440k, o1.b.f41366a, pendingIntent);
         }
 
         private Action t() {
-            int i10 = o1.d.f41324c;
+            int i10 = o1.d.f41372c;
             PendingIntent pendingIntent = this.f3437h;
             if (pendingIntent == null) {
-                return r(i10, o1.f.f41354d, this.f3441l, o1.b.f41319b, this.f3438i);
+                return r(i10, o1.f.f41402d, this.f3441l, o1.b.f41367b, this.f3438i);
             }
-            return r(i10, o1.f.f41353c, this.f3441l, o1.b.f41319b, pendingIntent);
+            return r(i10, o1.f.f41401c, this.f3441l, o1.b.f41367b, pendingIntent);
         }
 
         @Override // androidx.core.app.NotificationCompat.l
@@ -1877,8 +1877,8 @@ public abstract class NotificationCompat {
     public static Bitmap C(Context context, Bitmap bitmap) {
         if (bitmap != null && Build.VERSION.SDK_INT < 27) {
             Resources resources = context.getResources();
-            int dimensionPixelSize = resources.getDimensionPixelSize(o1.c.f41321b);
-            int dimensionPixelSize2 = resources.getDimensionPixelSize(o1.c.f41320a);
+            int dimensionPixelSize = resources.getDimensionPixelSize(o1.c.f41369b);
+            int dimensionPixelSize2 = resources.getDimensionPixelSize(o1.c.f41368a);
             if (bitmap.getWidth() <= dimensionPixelSize && bitmap.getHeight() <= dimensionPixelSize2) {
                 return bitmap;
             }

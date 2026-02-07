@@ -28,31 +28,31 @@ import ts.q0;
 public class e implements qs.g {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f48077o = AtomicLongFieldUpdater.newUpdater(e.class, "sendersAndCloseStatus$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f48125o = AtomicLongFieldUpdater.newUpdater(e.class, "sendersAndCloseStatus$volatile");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f48078p = AtomicLongFieldUpdater.newUpdater(e.class, "receivers$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f48126p = AtomicLongFieldUpdater.newUpdater(e.class, "receivers$volatile");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f48079q = AtomicLongFieldUpdater.newUpdater(e.class, "bufferEnd$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f48127q = AtomicLongFieldUpdater.newUpdater(e.class, "bufferEnd$volatile");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f48080r = AtomicLongFieldUpdater.newUpdater(e.class, "completedExpandBuffersAndPauseFlag$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f48128r = AtomicLongFieldUpdater.newUpdater(e.class, "completedExpandBuffersAndPauseFlag$volatile");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48081s = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "sendSegment$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48129s = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "sendSegment$volatile");
 
     /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48082t = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "receiveSegment$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48130t = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "receiveSegment$volatile");
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48083u = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "bufferEndSegment$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48131u = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "bufferEndSegment$volatile");
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48084v = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_closeCause$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48132v = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_closeCause$volatile");
 
     /* renamed from: w  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f48085w = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "closeHandler$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f48133w = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "closeHandler$volatile");
     private volatile /* synthetic */ Object _closeCause$volatile;
     private volatile /* synthetic */ long bufferEnd$volatile;
     private volatile /* synthetic */ Object bufferEndSegment$volatile;
@@ -60,13 +60,13 @@ public class e implements qs.g {
     private volatile /* synthetic */ long completedExpandBuffersAndPauseFlag$volatile;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48086d;
+    private final int f48134d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Function1 f48087e;
+    public final Function1 f48135e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function3 f48088i;
+    private final Function3 f48136i;
     private volatile /* synthetic */ Object receiveSegment$volatile;
     private volatile /* synthetic */ long receivers$volatile;
     private volatile /* synthetic */ Object sendSegment$volatile;
@@ -77,15 +77,15 @@ public class e implements qs.g {
     public final class a implements qs.i, w1 {
 
         /* renamed from: d  reason: collision with root package name */
-        private Object f48089d;
+        private Object f48137d;
 
         /* renamed from: e  reason: collision with root package name */
-        private kotlinx.coroutines.e f48090e;
+        private kotlinx.coroutines.e f48138e;
 
         public a() {
             e0 e0Var;
-            e0Var = qs.f.f48121p;
-            this.f48089d = e0Var;
+            e0Var = qs.f.f48169p;
+            this.f48137d = e0Var;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:38:0x00a4, code lost:
@@ -137,13 +137,13 @@ public class e implements qs.g {
             L4c:
                 java.util.concurrent.atomic.AtomicLongFieldUpdater r11 = qs.e.t()     // Catch: java.lang.Throwable -> L20
                 long r3 = r11.getAndIncrement(r0)     // Catch: java.lang.Throwable -> L20
-                int r11 = qs.f.f48107b     // Catch: java.lang.Throwable -> L20
+                int r11 = qs.f.f48155b     // Catch: java.lang.Throwable -> L20
                 long r1 = (long) r11     // Catch: java.lang.Throwable -> L20
                 long r1 = r3 / r1
                 long r7 = (long) r11     // Catch: java.lang.Throwable -> L20
                 long r7 = r3 % r7
                 int r11 = (int) r7     // Catch: java.lang.Throwable -> L20
-                long r7 = r10.f50815i     // Catch: java.lang.Throwable -> L20
+                long r7 = r10.f50863i     // Catch: java.lang.Throwable -> L20
                 int r7 = (r7 > r1 ? 1 : (r7 == r1 ? 0 : -1))
                 if (r7 == 0) goto L6c
                 qs.m r1 = qs.e.n(r0, r1, r10)     // Catch: java.lang.Throwable -> L20
@@ -178,7 +178,7 @@ public class e implements qs.g {
                 d(r9, r10)     // Catch: java.lang.Throwable -> L20
                 c(r9, r13)     // Catch: java.lang.Throwable -> L20
                 java.lang.Boolean r11 = kotlin.coroutines.jvm.internal.b.a(r12)     // Catch: java.lang.Throwable -> L20
-                kotlin.jvm.functions.Function1 r12 = r0.f48087e     // Catch: java.lang.Throwable -> L20
+                kotlin.jvm.functions.Function1 r12 = r0.f48135e     // Catch: java.lang.Throwable -> L20
                 if (r12 == 0) goto Lc5
             La6:
                 kotlin.jvm.functions.Function3 r13 = qs.e.f(r0, r12, r10)     // Catch: java.lang.Throwable -> L20
@@ -193,7 +193,7 @@ public class e implements qs.g {
                 d(r9, r10)     // Catch: java.lang.Throwable -> L20
                 c(r9, r13)     // Catch: java.lang.Throwable -> L20
                 java.lang.Boolean r11 = kotlin.coroutines.jvm.internal.b.a(r12)     // Catch: java.lang.Throwable -> L20
-                kotlin.jvm.functions.Function1 r12 = r0.f48087e     // Catch: java.lang.Throwable -> L20
+                kotlin.jvm.functions.Function1 r12 = r0.f48135e     // Catch: java.lang.Throwable -> L20
                 if (r12 == 0) goto Lc5
                 goto La6
             Lc5:
@@ -217,7 +217,7 @@ public class e implements qs.g {
         }
 
         private final boolean f() {
-            this.f48089d = qs.f.z();
+            this.f48137d = qs.f.z();
             Throwable i02 = e.this.i0();
             if (i02 == null) {
                 return false;
@@ -227,17 +227,17 @@ public class e implements qs.g {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final void h() {
-            kotlinx.coroutines.e eVar = this.f48090e;
+            kotlinx.coroutines.e eVar = this.f48138e;
             Intrinsics.checkNotNull(eVar);
-            this.f48090e = null;
-            this.f48089d = qs.f.z();
+            this.f48138e = null;
+            this.f48137d = qs.f.z();
             Throwable i02 = e.this.i0();
             if (i02 == null) {
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 eVar.resumeWith(Result.b(Boolean.FALSE));
                 return;
             }
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             eVar.resumeWith(Result.b(kotlin.c.a(i02)));
         }
 
@@ -248,18 +248,18 @@ public class e implements qs.g {
             e0 e0Var2;
             e0 e0Var3;
             e0 e0Var4;
-            Object obj = this.f48089d;
-            e0Var = qs.f.f48121p;
+            Object obj = this.f48137d;
+            e0Var = qs.f.f48169p;
             boolean z10 = true;
-            if (obj == e0Var || this.f48089d == qs.f.z()) {
+            if (obj == e0Var || this.f48137d == qs.f.z()) {
                 e eVar = e.this;
                 m mVar2 = (m) e.s().get(eVar);
                 while (!eVar.b()) {
                     long andIncrement = e.t().getAndIncrement(eVar);
-                    int i10 = qs.f.f48107b;
+                    int i10 = qs.f.f48155b;
                     long j10 = andIncrement / i10;
                     int i11 = (int) (andIncrement % i10);
-                    if (mVar2.f50815i != j10) {
+                    if (mVar2.f50863i != j10) {
                         mVar = eVar.d0(j10, mVar2);
                         if (mVar == null) {
                             continue;
@@ -268,16 +268,16 @@ public class e implements qs.g {
                         mVar = mVar2;
                     }
                     Object q12 = eVar.q1(mVar, i11, andIncrement, null);
-                    e0Var2 = qs.f.f48118m;
+                    e0Var2 = qs.f.f48166m;
                     if (q12 != e0Var2) {
-                        e0Var3 = qs.f.f48120o;
+                        e0Var3 = qs.f.f48168o;
                         if (q12 != e0Var3) {
-                            e0Var4 = qs.f.f48119n;
+                            e0Var4 = qs.f.f48167n;
                             if (q12 == e0Var4) {
                                 return e(mVar, i11, andIncrement, continuation);
                             }
                             mVar.c();
-                            this.f48089d = q12;
+                            this.f48137d = q12;
                             return kotlin.coroutines.jvm.internal.b.a(z10);
                         }
                         if (andIncrement < eVar.s0()) {
@@ -295,7 +295,7 @@ public class e implements qs.g {
 
         @Override // os.w1
         public void g(b0 b0Var, int i10) {
-            kotlinx.coroutines.e eVar = this.f48090e;
+            kotlinx.coroutines.e eVar = this.f48138e;
             if (eVar != null) {
                 eVar.g(b0Var, i10);
             }
@@ -303,14 +303,14 @@ public class e implements qs.g {
 
         public final boolean i(Object obj) {
             boolean B;
-            kotlinx.coroutines.e eVar = this.f48090e;
+            kotlinx.coroutines.e eVar = this.f48138e;
             Intrinsics.checkNotNull(eVar);
             Function3 function3 = null;
-            this.f48090e = null;
-            this.f48089d = obj;
+            this.f48138e = null;
+            this.f48137d = obj;
             Boolean bool = Boolean.TRUE;
             e eVar2 = e.this;
-            Function1 function1 = eVar2.f48087e;
+            Function1 function1 = eVar2.f48135e;
             if (function1 != null) {
                 function3 = eVar2.O(function1, obj);
             }
@@ -319,17 +319,17 @@ public class e implements qs.g {
         }
 
         public final void j() {
-            kotlinx.coroutines.e eVar = this.f48090e;
+            kotlinx.coroutines.e eVar = this.f48138e;
             Intrinsics.checkNotNull(eVar);
-            this.f48090e = null;
-            this.f48089d = qs.f.z();
+            this.f48138e = null;
+            this.f48137d = qs.f.z();
             Throwable i02 = e.this.i0();
             if (i02 == null) {
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 eVar.resumeWith(Result.b(Boolean.FALSE));
                 return;
             }
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             eVar.resumeWith(Result.b(kotlin.c.a(i02)));
         }
 
@@ -337,11 +337,11 @@ public class e implements qs.g {
         public Object next() {
             e0 e0Var;
             e0 e0Var2;
-            Object obj = this.f48089d;
-            e0Var = qs.f.f48121p;
+            Object obj = this.f48137d;
+            e0Var = qs.f.f48169p;
             if (obj != e0Var) {
-                e0Var2 = qs.f.f48121p;
-                this.f48089d = e0Var2;
+                e0Var2 = qs.f.f48169p;
+                this.f48137d = e0Var2;
                 if (obj != qs.f.z()) {
                     return obj;
                 }
@@ -365,7 +365,7 @@ public class e implements qs.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((Throwable) obj, obj2, (CoroutineContext) obj3);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -383,7 +383,7 @@ public class e implements qs.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((Throwable) obj, ((k) obj2).k(), (CoroutineContext) obj3);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -391,7 +391,7 @@ public class e implements qs.g {
     /* synthetic */ class d extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f48092d = new d();
+        public static final d f48140d = new d();
 
         d() {
             super(3, e.class, "registerSelectForReceive", "registerSelectForReceive(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
@@ -404,7 +404,7 @@ public class e implements qs.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((e) obj, (ws.l) obj2, obj3);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -413,7 +413,7 @@ public class e implements qs.g {
     /* synthetic */ class C0608e extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0608e f48093d = new C0608e();
+        public static final C0608e f48141d = new C0608e();
 
         C0608e() {
             super(3, e.class, "processResultSelectReceive", "processResultSelectReceive(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", 0);
@@ -430,7 +430,7 @@ public class e implements qs.g {
     /* synthetic */ class f extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final f f48094d = new f();
+        public static final f f48142d = new f();
 
         f() {
             super(3, e.class, "registerSelectForReceive", "registerSelectForReceive(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
@@ -443,7 +443,7 @@ public class e implements qs.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((e) obj, (ws.l) obj2, obj3);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -451,7 +451,7 @@ public class e implements qs.g {
     /* synthetic */ class g extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final g f48095d = new g();
+        public static final g f48143d = new g();
 
         g() {
             super(3, e.class, "processResultSelectReceiveCatching", "processResultSelectReceiveCatching(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", 0);
@@ -469,10 +469,10 @@ public class e implements qs.g {
     public static final class h extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f48096d;
+        /* synthetic */ Object f48144d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f48098i;
+        int f48146i;
 
         h(Continuation continuation) {
             super(continuation);
@@ -480,8 +480,8 @@ public class e implements qs.g {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f48096d = obj;
-            this.f48098i |= Integer.MIN_VALUE;
+            this.f48144d = obj;
+            this.f48146i |= Integer.MIN_VALUE;
             Object a12 = e.a1(e.this, this);
             if (a12 == wr.b.f()) {
                 return a12;
@@ -495,22 +495,22 @@ public class e implements qs.g {
     public static final class i extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f48099d;
+        Object f48147d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f48100e;
+        Object f48148e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f48101i;
+        int f48149i;
 
         /* renamed from: o  reason: collision with root package name */
-        long f48102o;
+        long f48150o;
 
         /* renamed from: p  reason: collision with root package name */
-        /* synthetic */ Object f48103p;
+        /* synthetic */ Object f48151p;
 
         /* renamed from: r  reason: collision with root package name */
-        int f48105r;
+        int f48153r;
 
         i(Continuation continuation) {
             super(continuation);
@@ -518,8 +518,8 @@ public class e implements qs.g {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f48103p = obj;
-            this.f48105r |= Integer.MIN_VALUE;
+            this.f48151p = obj;
+            this.f48153r |= Integer.MIN_VALUE;
             Object b12 = e.this.b1(null, 0, 0L, this);
             if (b12 == wr.b.f()) {
                 return b12;
@@ -532,8 +532,8 @@ public class e implements qs.g {
         long A;
         Function3 function3;
         e0 e0Var;
-        this.f48086d = i10;
-        this.f48087e = function1;
+        this.f48134d = i10;
+        this.f48135e = function1;
         if (i10 >= 0) {
             A = qs.f.A(i10);
             this.bufferEnd$volatile = A;
@@ -542,7 +542,7 @@ public class e implements qs.g {
             this.sendSegment$volatile = mVar;
             this.receiveSegment$volatile = mVar;
             if (D0()) {
-                mVar = qs.f.f48106a;
+                mVar = qs.f.f48154a;
                 Intrinsics.checkNotNull(mVar, "null cannot be cast to non-null type kotlinx.coroutines.channels.ChannelSegment<E of kotlinx.coroutines.channels.BufferedChannel>");
             }
             this.bufferEndSegment$volatile = mVar;
@@ -558,8 +558,8 @@ public class e implements qs.g {
             } else {
                 function3 = null;
             }
-            this.f48088i = function3;
-            e0Var = qs.f.f48124s;
+            this.f48136i = function3;
+            e0Var = qs.f.f48172s;
             this._closeCause$volatile = e0Var;
             return;
         }
@@ -586,18 +586,18 @@ public class e implements qs.g {
     private final long E0(m mVar) {
         e0 e0Var;
         do {
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             while (true) {
                 i10--;
                 if (-1 < i10) {
-                    long j10 = (mVar.f50815i * qs.f.f48107b) + i10;
+                    long j10 = (mVar.f50863i * qs.f.f48155b) + i10;
                     if (j10 >= o0()) {
                         while (true) {
                             Object B = mVar.B(i10);
                             if (B != null) {
-                                e0Var = qs.f.f48110e;
+                                e0Var = qs.f.f48158e;
                                 if (B != e0Var) {
-                                    if (B == qs.f.f48109d) {
+                                    if (B == qs.f.f48157d) {
                                         return j10;
                                     }
                                 }
@@ -621,7 +621,7 @@ public class e implements qs.g {
     private final void F0() {
         long j10;
         long w10;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f48077o;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f48125o;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             if (((int) (j10 >> 60)) == 0) {
@@ -635,7 +635,7 @@ public class e implements qs.g {
     private final void G0() {
         long j10;
         long w10;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f48077o;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f48125o;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             w10 = qs.f.w(1152921504606846975L & j10, 3);
@@ -645,7 +645,7 @@ public class e implements qs.g {
     private final void H0() {
         long j10;
         long w10;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f48077o;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f48125o;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             int i10 = (int) (j10 >> 60);
@@ -670,7 +670,7 @@ public class e implements qs.g {
         /*
             r4 = this;
         L0:
-            long r0 = r7.f50815i
+            long r0 = r7.f50863i
             int r0 = (r0 > r5 ? 1 : (r0 == r5 ? 0 : -1))
             if (r0 >= 0) goto L11
             ts.c r0 = r7.f()
@@ -695,8 +695,8 @@ public class e implements qs.g {
         L26:
             java.lang.Object r6 = r5.get(r4)
             ts.b0 r6 = (ts.b0) r6
-            long r0 = r6.f50815i
-            long r2 = r7.f50815i
+            long r0 = r6.f50863i
+            long r2 = r7.f50863i
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r0 < 0) goto L35
             return
@@ -723,7 +723,7 @@ public class e implements qs.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void J0(Throwable th2, Object obj, CoroutineContext coroutineContext) {
-        Function1 function1 = this.f48087e;
+        Function1 function1 = this.f48135e;
         Intrinsics.checkNotNull(function1);
         Object f10 = k.f(obj);
         Intrinsics.checkNotNull(f10);
@@ -732,20 +732,20 @@ public class e implements qs.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void K0(Throwable th2, Object obj, CoroutineContext coroutineContext) {
-        Function1 function1 = this.f48087e;
+        Function1 function1 = this.f48135e;
         Intrinsics.checkNotNull(function1);
         ts.x.a(function1, obj, coroutineContext);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void M0(CancellableContinuation cancellableContinuation) {
-        Result.a aVar = Result.f32005e;
-        cancellableContinuation.resumeWith(Result.b(k.b(k.f48130b.a(i0()))));
+        Result.a aVar = Result.f32053e;
+        cancellableContinuation.resumeWith(Result.b(k.b(k.f48178b.a(i0()))));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void N0(CancellableContinuation cancellableContinuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         cancellableContinuation.resumeWith(Result.b(kotlin.c.a(l0())));
     }
 
@@ -774,14 +774,14 @@ public class e implements qs.g {
         q0 c10;
         kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(wr.b.c(continuation), 1);
         eVar.H();
-        Function1 function1 = this.f48087e;
+        Function1 function1 = this.f48135e;
         if (function1 != null && (c10 = ts.x.c(function1, obj, null, 2, null)) != null) {
             qr.e.a(c10, p0());
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             eVar.resumeWith(Result.b(kotlin.c.a(c10)));
         } else {
             Throwable p02 = p0();
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             eVar.resumeWith(Result.b(kotlin.c.a(p02)));
         }
         Object B = eVar.B();
@@ -791,23 +791,23 @@ public class e implements qs.g {
         if (B == wr.b.f()) {
             return B;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Q(Function1 function1, Object obj, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
         ts.x.a(function1, obj, coroutineContext);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void Q0(Object obj, CancellableContinuation cancellableContinuation) {
-        Function1 function1 = this.f48087e;
+        Function1 function1 = this.f48135e;
         if (function1 != null) {
             ts.x.a(function1, obj, cancellableContinuation.getContext());
         }
         Throwable p02 = p0();
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         cancellableContinuation.resumeWith(Result.b(kotlin.c.a(p02)));
     }
 
@@ -817,7 +817,7 @@ public class e implements qs.g {
     }
 
     private final boolean S(long j10) {
-        if (j10 >= g0() && j10 >= o0() + this.f48086d) {
+        if (j10 >= g0() && j10 >= o0() + this.f48134d) {
             return false;
         }
         return true;
@@ -839,18 +839,18 @@ public class e implements qs.g {
         e0 e0Var;
         Object b10 = ts.k.b(null, 1, null);
         loop0: while (mVar != null) {
-            for (int i10 = qs.f.f48107b - 1; -1 < i10; i10--) {
-                if ((mVar.f50815i * qs.f.f48107b) + i10 < j10) {
+            for (int i10 = qs.f.f48155b - 1; -1 < i10; i10--) {
+                if ((mVar.f50863i * qs.f.f48155b) + i10 < j10) {
                     break loop0;
                 }
                 while (true) {
                     Object B = mVar.B(i10);
                     if (B != null) {
-                        e0Var = qs.f.f48110e;
+                        e0Var = qs.f.f48158e;
                         if (B != e0Var) {
                             if (B instanceof x) {
                                 if (mVar.v(i10, B, qs.f.z())) {
-                                    b10 = ts.k.c(b10, ((x) B).f48144a);
+                                    b10 = ts.k.c(b10, ((x) B).f48192a);
                                     mVar.C(i10, true);
                                     break;
                                 }
@@ -887,19 +887,19 @@ public class e implements qs.g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U0(Object obj, e eVar, ws.l lVar, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
         if (obj != qs.f.z()) {
-            ts.x.a(eVar.f48087e, obj, lVar.getContext());
+            ts.x.a(eVar.f48135e, obj, lVar.getContext());
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final m V() {
-        m mVar = f48083u.get(this);
-        m mVar2 = (m) f48081s.get(this);
-        if (mVar2.f50815i > ((m) mVar).f50815i) {
+        m mVar = f48131u.get(this);
+        m mVar2 = (m) f48129s.get(this);
+        if (mVar2.f50863i > ((m) mVar).f50863i) {
             mVar = mVar2;
         }
-        m mVar3 = (m) f48082t.get(this);
-        if (mVar3.f50815i > ((m) mVar).f50815i) {
+        m mVar3 = (m) f48130t.get(this);
+        if (mVar3.f50863i > ((m) mVar).f50863i) {
             mVar = mVar3;
         }
         return (m) ts.b.b((ts.c) mVar);
@@ -913,7 +913,7 @@ public class e implements qs.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void W0(w1 w1Var, m mVar, int i10) {
-        w1Var.g(mVar, i10 + qs.f.f48107b);
+        w1Var.g(mVar, i10 + qs.f.f48155b);
     }
 
     private final void X(long j10) {
@@ -944,9 +944,9 @@ public class e implements qs.g {
     public final Object Y0(Object obj, Object obj2) {
         Object c10;
         if (obj2 == qs.f.z()) {
-            c10 = k.f48130b.a(i0());
+            c10 = k.f48178b.a(i0());
         } else {
-            c10 = k.f48130b.c(obj2);
+            c10 = k.f48178b.c(obj2);
         }
         return k.b(c10);
     }
@@ -963,10 +963,10 @@ public class e implements qs.g {
         m mVar2 = (m) s().get(eVar);
         while (!eVar.b()) {
             long andIncrement = t().getAndIncrement(eVar);
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             long j10 = andIncrement / i10;
             int i11 = (int) (andIncrement % i10);
-            if (mVar2.f50815i != j10) {
+            if (mVar2.f50863i != j10) {
                 m d02 = eVar.d0(j10, mVar2);
                 if (d02 == null) {
                     continue;
@@ -978,11 +978,11 @@ public class e implements qs.g {
             }
             e eVar2 = eVar;
             Object q12 = eVar2.q1(mVar, i11, andIncrement, null);
-            e0Var = qs.f.f48118m;
+            e0Var = qs.f.f48166m;
             if (q12 != e0Var) {
-                e0Var2 = qs.f.f48120o;
+                e0Var2 = qs.f.f48168o;
                 if (q12 != e0Var2) {
-                    e0Var3 = qs.f.f48119n;
+                    e0Var3 = qs.f.f48167n;
                     if (q12 == e0Var3) {
                         return eVar2.c1(mVar, i11, andIncrement, continuation);
                     }
@@ -1013,12 +1013,12 @@ public class e implements qs.g {
             if (r0 == 0) goto L14
             r0 = r14
             qs.e$h r0 = (qs.e.h) r0
-            int r1 = r0.f48098i
+            int r1 = r0.f48146i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L14
             int r1 = r1 - r2
-            r0.f48098i = r1
+            r0.f48146i = r1
         L12:
             r6 = r0
             goto L1a
@@ -1027,9 +1027,9 @@ public class e implements qs.g {
             r0.<init>(r14)
             goto L12
         L1a:
-            java.lang.Object r14 = r6.f48096d
+            java.lang.Object r14 = r6.f48144d
             java.lang.Object r0 = wr.b.f()
-            int r1 = r6.f48098i
+            int r1 = r6.f48146i
             r2 = 1
             if (r1 == 0) goto L39
             if (r1 != r2) goto L31
@@ -1050,20 +1050,20 @@ public class e implements qs.g {
         L46:
             boolean r1 = r13.b()
             if (r1 == 0) goto L57
-            qs.k$b r14 = qs.k.f48130b
+            qs.k$b r14 = qs.k.f48178b
             java.lang.Throwable r13 = r13.i0()
             java.lang.Object r13 = r14.a(r13)
             return r13
         L57:
             java.util.concurrent.atomic.AtomicLongFieldUpdater r1 = t()
             long r4 = r1.getAndIncrement(r13)
-            int r1 = qs.f.f48107b
+            int r1 = qs.f.f48155b
             long r7 = (long) r1
             long r7 = r4 / r7
             long r9 = (long) r1
             long r9 = r4 % r9
             int r3 = (int) r9
-            long r9 = r14.f50815i
+            long r9 = r14.f50863i
             int r1 = (r9 > r7 ? 1 : (r9 == r7 ? 0 : -1))
             if (r1 == 0) goto L77
             qs.m r1 = n(r13, r7, r14)
@@ -1096,7 +1096,7 @@ public class e implements qs.g {
         L9b:
             ts.e0 r14 = qs.f.s()
             if (r13 != r14) goto Lac
-            r6.f48098i = r2
+            r6.f48146i = r2
             r2 = r8
             java.lang.Object r13 = r1.b1(r2, r3, r4, r6)
             if (r13 != r0) goto Lab
@@ -1105,7 +1105,7 @@ public class e implements qs.g {
             return r13
         Lac:
             r8.c()
-            qs.k$b r14 = qs.k.f48130b
+            qs.k$b r14 = qs.k.f48178b
             java.lang.Object r13 = r14.c(r13)
             return r13
         Lb6:
@@ -1121,19 +1121,19 @@ public class e implements qs.g {
         if (D0()) {
             return;
         }
-        m mVar = (m) f48083u.get(this);
+        m mVar = (m) f48131u.get(this);
         while (true) {
-            long andIncrement = f48079q.getAndIncrement(this);
-            int i10 = qs.f.f48107b;
+            long andIncrement = f48127q.getAndIncrement(this);
+            int i10 = qs.f.f48155b;
             long j10 = andIncrement / i10;
             if (s0() <= andIncrement) {
-                if (mVar.f50815i < j10 && mVar.f() != null) {
+                if (mVar.f50863i < j10 && mVar.f() != null) {
                     I0(j10, mVar);
                 }
                 w0(this, 0L, 1, null);
                 return;
             }
-            if (mVar.f50815i != j10) {
+            if (mVar.f50863i != j10) {
                 m c02 = c0(j10, mVar, andIncrement);
                 if (c02 == null) {
                     continue;
@@ -1166,7 +1166,7 @@ public class e implements qs.g {
 
     private final m c0(long j10, m mVar, long j11) {
         Object c10;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48083u;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48131u;
         Function2 function2 = (Function2) qs.f.y();
         loop0: while (true) {
             c10 = ts.b.c(mVar, j10, function2);
@@ -1174,7 +1174,7 @@ public class e implements qs.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f50815i >= b10.f50815i) {
+                    if (b0Var.f50863i >= b10.f50863i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1197,11 +1197,11 @@ public class e implements qs.g {
             return null;
         }
         m mVar2 = (m) c0.b(c10);
-        if (mVar2.f50815i > j10) {
-            long j12 = mVar2.f50815i;
-            int i10 = qs.f.f48107b;
-            if (f48079q.compareAndSet(this, j11 + 1, j12 * i10)) {
-                v0((mVar2.f50815i * i10) - j11);
+        if (mVar2.f50863i > j10) {
+            long j12 = mVar2.f50863i;
+            int i10 = qs.f.f48155b;
+            if (f48127q.compareAndSet(this, j11 + 1, j12 * i10)) {
+                v0((mVar2.f50863i * i10) - j11);
             } else {
                 w0(this, 0L, 1, null);
             }
@@ -1220,11 +1220,11 @@ public class e implements qs.g {
         kotlinx.coroutines.e b10 = os.l.b(wr.b.c(continuation));
         try {
             Object q12 = q1(mVar, i10, j10, b10);
-            e0Var = qs.f.f48118m;
+            e0Var = qs.f.f48166m;
             if (q12 == e0Var) {
                 V0(b10, mVar, i10);
             } else {
-                e0Var2 = qs.f.f48120o;
+                e0Var2 = qs.f.f48168o;
                 KFunction kFunction = null;
                 kFunction = null;
                 kotlinx.coroutines.e eVar = null;
@@ -1239,10 +1239,10 @@ public class e implements qs.g {
                             break;
                         }
                         long andIncrement = t().getAndIncrement(this);
-                        int i11 = qs.f.f48107b;
+                        int i11 = qs.f.f48155b;
                         long j11 = andIncrement / i11;
                         int i12 = (int) (andIncrement % i11);
-                        if (mVar3.f50815i != j11) {
+                        if (mVar3.f50863i != j11) {
                             m d02 = d0(j11, mVar3);
                             if (d02 != null) {
                                 mVar2 = d02;
@@ -1252,14 +1252,14 @@ public class e implements qs.g {
                         }
                         q12 = q1(mVar2, i12, andIncrement, b10);
                         m mVar4 = mVar2;
-                        e0Var3 = qs.f.f48118m;
+                        e0Var3 = qs.f.f48166m;
                         if (q12 != e0Var3) {
-                            e0Var4 = qs.f.f48120o;
+                            e0Var4 = qs.f.f48168o;
                             if (q12 != e0Var4) {
-                                e0Var5 = qs.f.f48119n;
+                                e0Var5 = qs.f.f48167n;
                                 if (q12 != e0Var5) {
                                     mVar4.c();
-                                    Function1 function1 = this.f48087e;
+                                    Function1 function1 = this.f48135e;
                                     if (function1 != null) {
                                         kFunction = P(function1);
                                     }
@@ -1283,7 +1283,7 @@ public class e implements qs.g {
                     }
                 } else {
                     mVar.c();
-                    Function1 function12 = this.f48087e;
+                    Function1 function12 = this.f48135e;
                     if (function12 != null) {
                         kFunction = P(function12);
                     }
@@ -1304,7 +1304,7 @@ public class e implements qs.g {
     /* JADX INFO: Access modifiers changed from: private */
     public final m d0(long j10, m mVar) {
         Object c10;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48082t;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48130t;
         Function2 function2 = (Function2) qs.f.y();
         loop0: while (true) {
             c10 = ts.b.c(mVar, j10, function2);
@@ -1312,7 +1312,7 @@ public class e implements qs.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f50815i >= b10.f50815i) {
+                    if (b0Var.f50863i >= b10.f50863i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1330,17 +1330,17 @@ public class e implements qs.g {
         }
         if (c0.c(c10)) {
             Z();
-            if (mVar.f50815i * qs.f.f48107b < s0()) {
+            if (mVar.f50863i * qs.f.f48155b < s0()) {
                 mVar.c();
             }
             return null;
         }
         m mVar2 = (m) c0.b(c10);
-        if (!D0() && j10 <= g0() / qs.f.f48107b) {
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f48083u;
+        if (!D0() && j10 <= g0() / qs.f.f48155b) {
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f48131u;
             while (true) {
                 b0 b0Var2 = (b0) atomicReferenceFieldUpdater2.get(this);
-                if (b0Var2.f50815i >= mVar2.f50815i || !mVar2.u()) {
+                if (b0Var2.f50863i >= mVar2.f50863i || !mVar2.u()) {
                     break;
                 } else if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater2, this, b0Var2, mVar2)) {
                     if (b0Var2.p()) {
@@ -1351,11 +1351,11 @@ public class e implements qs.g {
                 }
             }
         }
-        long j11 = mVar2.f50815i;
+        long j11 = mVar2.f50863i;
         if (j11 > j10) {
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             u1(j11 * i10);
-            if (mVar2.f50815i * i10 < s0()) {
+            if (mVar2.f50863i * i10 < s0()) {
                 mVar2.c();
             }
             return null;
@@ -1373,10 +1373,10 @@ public class e implements qs.g {
         m mVar2 = (m) s().get(this);
         while (!b()) {
             long andIncrement = t().getAndIncrement(this);
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             long j10 = andIncrement / i10;
             int i11 = (int) (andIncrement % i10);
-            if (mVar2.f50815i != j10) {
+            if (mVar2.f50863i != j10) {
                 m d02 = d0(j10, mVar2);
                 if (d02 == null) {
                     continue;
@@ -1389,11 +1389,11 @@ public class e implements qs.g {
             ws.l lVar2 = lVar;
             Object q12 = q1(mVar, i11, andIncrement, lVar2);
             mVar2 = mVar;
-            e0Var = qs.f.f48118m;
+            e0Var = qs.f.f48166m;
             if (q12 != e0Var) {
-                e0Var2 = qs.f.f48120o;
+                e0Var2 = qs.f.f48168o;
                 if (q12 != e0Var2) {
-                    e0Var3 = qs.f.f48119n;
+                    e0Var3 = qs.f.f48167n;
                     if (q12 != e0Var3) {
                         mVar2.c();
                         lVar2.c(q12);
@@ -1424,7 +1424,7 @@ public class e implements qs.g {
     /* JADX INFO: Access modifiers changed from: private */
     public final m e0(long j10, m mVar) {
         Object c10;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48081s;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48129s;
         Function2 function2 = (Function2) qs.f.y();
         loop0: while (true) {
             c10 = ts.b.c(mVar, j10, function2);
@@ -1432,7 +1432,7 @@ public class e implements qs.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f50815i >= b10.f50815i) {
+                    if (b0Var.f50863i >= b10.f50863i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1450,17 +1450,17 @@ public class e implements qs.g {
         }
         if (c0.c(c10)) {
             Z();
-            if (mVar.f50815i * qs.f.f48107b < o0()) {
+            if (mVar.f50863i * qs.f.f48155b < o0()) {
                 mVar.c();
             }
             return null;
         }
         m mVar2 = (m) c0.b(c10);
-        long j11 = mVar2.f50815i;
+        long j11 = mVar2.f50863i;
         if (j11 > j10) {
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             v1(j11 * i10);
-            if (mVar2.f50815i * i10 < o0()) {
+            if (mVar2.f50863i * i10 < o0()) {
                 mVar2.c();
             }
             return null;
@@ -1478,18 +1478,18 @@ public class e implements qs.g {
     private final void e1(qs.m r12) {
         /*
             r11 = this;
-            kotlin.jvm.functions.Function1 r0 = r11.f48087e
+            kotlin.jvm.functions.Function1 r0 = r11.f48135e
             r1 = 0
             r2 = 1
             java.lang.Object r3 = ts.k.b(r1, r2, r1)
         L8:
-            int r4 = qs.f.f48107b
+            int r4 = qs.f.f48155b
             int r4 = r4 - r2
         Lb:
             r5 = -1
             if (r5 >= r4) goto Lb3
-            long r6 = r12.f50815i
-            int r8 = qs.f.f48107b
+            long r6 = r12.f50863i
+            int r8 = qs.f.f48155b
             long r8 = (long) r8
             long r6 = r6 * r8
             long r8 = (long) r4
@@ -1498,7 +1498,7 @@ public class e implements qs.g {
             java.lang.Object r8 = r12.B(r4)
             ts.e0 r9 = qs.f.f()
             if (r8 == r9) goto Lbb
-            ts.e0 r9 = qs.f.f48109d
+            ts.e0 r9 = qs.f.f48157d
             if (r8 != r9) goto L48
             long r9 = r11.o0()
             int r9 = (r6 > r9 ? 1 : (r6 == r9 ? 0 : -1))
@@ -1542,7 +1542,7 @@ public class e implements qs.g {
             if (r9 == 0) goto L80
             r9 = r8
             qs.x r9 = (qs.x) r9
-            os.w1 r9 = r9.f48144a
+            os.w1 r9 = r9.f48192a
             goto L83
         L80:
             r9 = r8
@@ -1605,7 +1605,7 @@ public class e implements qs.g {
     }
 
     private final long g0() {
-        return f48079q.get(this);
+        return f48127q.get(this);
     }
 
     private final void g1(w1 w1Var) {
@@ -1616,7 +1616,7 @@ public class e implements qs.g {
         Throwable p02;
         if (w1Var instanceof CancellableContinuation) {
             Continuation continuation = (Continuation) w1Var;
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             if (z10) {
                 p02 = l0();
             } else {
@@ -1624,9 +1624,9 @@ public class e implements qs.g {
             }
             continuation.resumeWith(Result.b(kotlin.c.a(p02)));
         } else if (w1Var instanceof u) {
-            kotlinx.coroutines.e eVar = ((u) w1Var).f48143d;
-            Result.a aVar2 = Result.f32005e;
-            eVar.resumeWith(Result.b(k.b(k.f48130b.a(i0()))));
+            kotlinx.coroutines.e eVar = ((u) w1Var).f48191d;
+            Result.a aVar2 = Result.f32053e;
+            eVar.resumeWith(Result.b(k.b(k.f48178b.a(i0()))));
         } else if (w1Var instanceof a) {
             ((a) w1Var).j();
         } else if (w1Var instanceof ws.l) {
@@ -1643,10 +1643,10 @@ public class e implements qs.g {
             long andIncrement = z().getAndIncrement(eVar);
             long j10 = andIncrement & 1152921504606846975L;
             boolean B0 = eVar.B0(andIncrement);
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             long j11 = j10 / i10;
             int i11 = (int) (j10 % i10);
-            if (mVar2.f50815i != j11) {
+            if (mVar2.f50863i != j11) {
                 m e02 = eVar.e0(j11, mVar2);
                 if (e02 == null) {
                     if (B0) {
@@ -1703,7 +1703,7 @@ public class e implements qs.g {
                 break;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:62:0x00f4  */
@@ -1746,9 +1746,9 @@ public class e implements qs.g {
         KFunction kFunction = null;
         if (obj instanceof u) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.channels.ReceiveCatching<E of kotlinx.coroutines.channels.BufferedChannel>");
-            kotlinx.coroutines.e eVar = ((u) obj).f48143d;
-            k b10 = k.b(k.f48130b.c(obj2));
-            Function1 function1 = this.f48087e;
+            kotlinx.coroutines.e eVar = ((u) obj).f48191d;
+            k b10 = k.b(k.f48178b.c(obj2));
+            Function1 function1 = this.f48135e;
             if (function1 != null) {
                 kFunction = R(function1);
             }
@@ -1760,7 +1760,7 @@ public class e implements qs.g {
         } else if (obj instanceof CancellableContinuation) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<E of kotlinx.coroutines.channels.BufferedChannel>");
             CancellableContinuation cancellableContinuation = (CancellableContinuation) obj;
-            Function1 function12 = this.f48087e;
+            Function1 function12 = this.f48135e;
             if (function12 != null) {
                 kFunction = P(function12);
             }
@@ -1774,14 +1774,14 @@ public class e implements qs.g {
     private final boolean m1(Object obj, m mVar, int i10) {
         if (obj instanceof CancellableContinuation) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
-            return qs.f.C((CancellableContinuation) obj, Unit.f32008a, null, 2, null);
+            return qs.f.C((CancellableContinuation) obj, Unit.f32056a, null, 2, null);
         } else if (obj instanceof ws.l) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
-            ws.o x10 = ((ws.k) obj).x(this, Unit.f32008a);
-            if (x10 == ws.o.f54107e) {
+            ws.o x10 = ((ws.k) obj).x(this, Unit.f32056a);
+            if (x10 == ws.o.f54155e) {
                 mVar.w(i10);
             }
-            if (x10 == ws.o.f54106d) {
+            if (x10 == ws.o.f54154d) {
                 return true;
             }
             return false;
@@ -1794,16 +1794,16 @@ public class e implements qs.g {
         e0 e0Var;
         e0 e0Var2;
         Object B = mVar.B(i10);
-        if ((B instanceof w1) && j10 >= f48078p.get(this)) {
-            e0Var = qs.f.f48112g;
+        if ((B instanceof w1) && j10 >= f48126p.get(this)) {
+            e0Var = qs.f.f48160g;
             if (mVar.v(i10, B, e0Var)) {
                 if (!m1(B, mVar, i10)) {
-                    e0Var2 = qs.f.f48115j;
+                    e0Var2 = qs.f.f48163j;
                     mVar.F(i10, e0Var2);
                     mVar.C(i10, false);
                     return false;
                 }
-                mVar.F(i10, qs.f.f48109d);
+                mVar.F(i10, qs.f.f48157d);
                 return true;
             }
         }
@@ -1822,27 +1822,27 @@ public class e implements qs.g {
         while (true) {
             Object B = mVar.B(i10);
             if (!(B instanceof w1)) {
-                e0Var3 = qs.f.f48115j;
+                e0Var3 = qs.f.f48163j;
                 if (B == e0Var3) {
                     return false;
                 }
                 if (B == null) {
-                    e0Var4 = qs.f.f48110e;
+                    e0Var4 = qs.f.f48158e;
                     if (mVar.v(i10, B, e0Var4)) {
                         return true;
                     }
-                } else if (B != qs.f.f48109d) {
-                    e0Var5 = qs.f.f48113h;
+                } else if (B != qs.f.f48157d) {
+                    e0Var5 = qs.f.f48161h;
                     if (B == e0Var5) {
                         break;
                     }
-                    e0Var6 = qs.f.f48114i;
+                    e0Var6 = qs.f.f48162i;
                     if (B == e0Var6) {
                         break;
                     }
-                    e0Var7 = qs.f.f48116k;
+                    e0Var7 = qs.f.f48164k;
                     if (B != e0Var7 && B != qs.f.z()) {
-                        e0Var8 = qs.f.f48111f;
+                        e0Var8 = qs.f.f48159f;
                         if (B != e0Var8) {
                             throw new IllegalStateException(("Unexpected cell state: " + B).toString());
                         }
@@ -1852,16 +1852,16 @@ public class e implements qs.g {
                 } else {
                     return true;
                 }
-            } else if (j10 >= f48078p.get(this)) {
-                e0Var = qs.f.f48112g;
+            } else if (j10 >= f48126p.get(this)) {
+                e0Var = qs.f.f48160g;
                 if (mVar.v(i10, B, e0Var)) {
                     if (!m1(B, mVar, i10)) {
-                        e0Var2 = qs.f.f48115j;
+                        e0Var2 = qs.f.f48163j;
                         mVar.F(i10, e0Var2);
                         mVar.C(i10, false);
                         return false;
                     }
-                    mVar.F(i10, qs.f.f48109d);
+                    mVar.F(i10, qs.f.f48157d);
                     return true;
                 }
             } else if (mVar.v(i10, B, new x((w1) B))) {
@@ -1877,18 +1877,18 @@ public class e implements qs.g {
         e0 e0Var3;
         Object B = mVar.B(i10);
         if (B == null) {
-            if (j10 >= (f48077o.get(this) & 1152921504606846975L)) {
+            if (j10 >= (f48125o.get(this) & 1152921504606846975L)) {
                 if (obj == null) {
-                    e0Var3 = qs.f.f48119n;
+                    e0Var3 = qs.f.f48167n;
                     return e0Var3;
                 } else if (mVar.v(i10, B, obj)) {
                     b0();
-                    e0Var2 = qs.f.f48118m;
+                    e0Var2 = qs.f.f48166m;
                     return e0Var2;
                 }
             }
-        } else if (B == qs.f.f48109d) {
-            e0Var = qs.f.f48114i;
+        } else if (B == qs.f.f48157d) {
+            e0Var = qs.f.f48162i;
             if (mVar.v(i10, B, e0Var)) {
                 b0();
                 return mVar.D(i10);
@@ -1917,46 +1917,46 @@ public class e implements qs.g {
         while (true) {
             Object B = mVar.B(i10);
             if (B != null) {
-                e0Var5 = qs.f.f48110e;
+                e0Var5 = qs.f.f48158e;
                 if (B != e0Var5) {
-                    if (B == qs.f.f48109d) {
-                        e0Var6 = qs.f.f48114i;
+                    if (B == qs.f.f48157d) {
+                        e0Var6 = qs.f.f48162i;
                         if (mVar.v(i10, B, e0Var6)) {
                             b0();
                             return mVar.D(i10);
                         }
                     } else {
-                        e0Var7 = qs.f.f48115j;
+                        e0Var7 = qs.f.f48163j;
                         if (B == e0Var7) {
-                            e0Var8 = qs.f.f48120o;
+                            e0Var8 = qs.f.f48168o;
                             return e0Var8;
                         }
-                        e0Var9 = qs.f.f48113h;
+                        e0Var9 = qs.f.f48161h;
                         if (B == e0Var9) {
-                            e0Var10 = qs.f.f48120o;
+                            e0Var10 = qs.f.f48168o;
                             return e0Var10;
                         } else if (B != qs.f.z()) {
-                            e0Var12 = qs.f.f48112g;
+                            e0Var12 = qs.f.f48160g;
                             if (B != e0Var12) {
-                                e0Var13 = qs.f.f48111f;
+                                e0Var13 = qs.f.f48159f;
                                 if (mVar.v(i10, B, e0Var13)) {
                                     boolean z10 = B instanceof x;
                                     if (z10) {
-                                        B = ((x) B).f48144a;
+                                        B = ((x) B).f48192a;
                                     }
                                     if (m1(B, mVar, i10)) {
-                                        e0Var16 = qs.f.f48114i;
+                                        e0Var16 = qs.f.f48162i;
                                         mVar.F(i10, e0Var16);
                                         b0();
                                         return mVar.D(i10);
                                     }
-                                    e0Var14 = qs.f.f48115j;
+                                    e0Var14 = qs.f.f48163j;
                                     mVar.F(i10, e0Var14);
                                     mVar.C(i10, false);
                                     if (z10) {
                                         b0();
                                     }
-                                    e0Var15 = qs.f.f48120o;
+                                    e0Var15 = qs.f.f48168o;
                                     return e0Var15;
                                 }
                             } else {
@@ -1964,32 +1964,32 @@ public class e implements qs.g {
                             }
                         } else {
                             b0();
-                            e0Var11 = qs.f.f48120o;
+                            e0Var11 = qs.f.f48168o;
                             return e0Var11;
                         }
                     }
                 }
             }
-            if (j10 < (f48077o.get(this) & 1152921504606846975L)) {
-                e0Var = qs.f.f48113h;
+            if (j10 < (f48125o.get(this) & 1152921504606846975L)) {
+                e0Var = qs.f.f48161h;
                 if (mVar.v(i10, B, e0Var)) {
                     b0();
-                    e0Var2 = qs.f.f48120o;
+                    e0Var2 = qs.f.f48168o;
                     return e0Var2;
                 }
             } else if (obj == null) {
-                e0Var3 = qs.f.f48119n;
+                e0Var3 = qs.f.f48167n;
                 return e0Var3;
             } else if (mVar.v(i10, B, obj)) {
                 b0();
-                e0Var4 = qs.f.f48118m;
+                e0Var4 = qs.f.f48166m;
                 return e0Var4;
             }
         }
     }
 
     public static final /* synthetic */ AtomicReferenceFieldUpdater s() {
-        return f48082t;
+        return f48130t;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2004,7 +2004,7 @@ public class e implements qs.g {
         Object B = mVar.B(i10);
         if (B == null) {
             if (S(j10)) {
-                if (mVar.v(i10, null, qs.f.f48109d)) {
+                if (mVar.v(i10, null, qs.f.f48157d)) {
                     return 1;
                 }
             } else if (obj2 == null) {
@@ -2017,14 +2017,14 @@ public class e implements qs.g {
         } else if (B instanceof w1) {
             mVar.w(i10);
             if (l1(B, obj)) {
-                e0Var3 = qs.f.f48114i;
+                e0Var3 = qs.f.f48162i;
                 mVar.F(i10, e0Var3);
                 R0();
                 return 0;
             }
-            e0Var = qs.f.f48116k;
+            e0Var = qs.f.f48164k;
             Object x10 = mVar.x(i10, e0Var);
-            e0Var2 = qs.f.f48116k;
+            e0Var2 = qs.f.f48164k;
             if (x10 != e0Var2) {
                 mVar.C(i10, true);
                 return 5;
@@ -2035,7 +2035,7 @@ public class e implements qs.g {
     }
 
     public static final /* synthetic */ AtomicLongFieldUpdater t() {
-        return f48078p;
+        return f48126p;
     }
 
     private final int t1(m mVar, int i10, Object obj, long j10, Object obj2, boolean z10) {
@@ -2049,11 +2049,11 @@ public class e implements qs.g {
         while (true) {
             Object B = mVar.B(i10);
             if (B != null) {
-                e0Var2 = qs.f.f48110e;
+                e0Var2 = qs.f.f48158e;
                 if (B != e0Var2) {
-                    e0Var3 = qs.f.f48116k;
+                    e0Var3 = qs.f.f48164k;
                     if (B != e0Var3) {
-                        e0Var4 = qs.f.f48113h;
+                        e0Var4 = qs.f.f48161h;
                         if (B == e0Var4) {
                             mVar.w(i10);
                             return 5;
@@ -2064,17 +2064,17 @@ public class e implements qs.g {
                         } else {
                             mVar.w(i10);
                             if (B instanceof x) {
-                                B = ((x) B).f48144a;
+                                B = ((x) B).f48192a;
                             }
                             if (l1(B, obj)) {
-                                e0Var7 = qs.f.f48114i;
+                                e0Var7 = qs.f.f48162i;
                                 mVar.F(i10, e0Var7);
                                 R0();
                                 return 0;
                             }
-                            e0Var5 = qs.f.f48116k;
+                            e0Var5 = qs.f.f48164k;
                             Object x10 = mVar.x(i10, e0Var5);
-                            e0Var6 = qs.f.f48116k;
+                            e0Var6 = qs.f.f48164k;
                             if (x10 != e0Var6) {
                                 mVar.C(i10, true);
                             }
@@ -2083,15 +2083,15 @@ public class e implements qs.g {
                     }
                     mVar.w(i10);
                     return 5;
-                } else if (mVar.v(i10, B, qs.f.f48109d)) {
+                } else if (mVar.v(i10, B, qs.f.f48157d)) {
                     return 1;
                 }
             } else if (S(j10) && !z10) {
-                if (mVar.v(i10, null, qs.f.f48109d)) {
+                if (mVar.v(i10, null, qs.f.f48157d)) {
                     return 1;
                 }
             } else if (z10) {
-                e0Var = qs.f.f48115j;
+                e0Var = qs.f.f48163j;
                 if (mVar.v(i10, null, e0Var)) {
                     mVar.C(i10, false);
                     return 4;
@@ -2107,12 +2107,12 @@ public class e implements qs.g {
     }
 
     private final void u1(long j10) {
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f48078p;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f48126p;
         while (true) {
             long j11 = atomicLongFieldUpdater.get(this);
             if (j11 < j10) {
                 long j12 = j10;
-                if (f48078p.compareAndSet(this, j11, j12)) {
+                if (f48126p.compareAndSet(this, j11, j12)) {
                     return;
                 }
                 j10 = j12;
@@ -2123,16 +2123,16 @@ public class e implements qs.g {
     }
 
     private final void v0(long j10) {
-        if ((f48080r.addAndGet(this, j10) & 4611686018427387904L) != 0) {
+        if ((f48128r.addAndGet(this, j10) & 4611686018427387904L) != 0) {
             do {
-            } while ((f48080r.get(this) & 4611686018427387904L) != 0);
+            } while ((f48128r.get(this) & 4611686018427387904L) != 0);
         }
     }
 
     private final void v1(long j10) {
         long j11;
         long w10;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f48077o;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f48125o;
         do {
             j11 = atomicLongFieldUpdater.get(this);
             long j12 = 1152921504606846975L & j11;
@@ -2141,11 +2141,11 @@ public class e implements qs.g {
             } else {
                 return;
             }
-        } while (!f48077o.compareAndSet(this, j11, w10));
+        } while (!f48125o.compareAndSet(this, j11, w10));
     }
 
     public static final /* synthetic */ AtomicReferenceFieldUpdater w() {
-        return f48081s;
+        return f48129s;
     }
 
     static /* synthetic */ void w0(e eVar, long j10, int i10, Object obj) {
@@ -2161,10 +2161,10 @@ public class e implements qs.g {
 
     private final void x0() {
         Object obj;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48085w;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48133w;
         do {
             obj = atomicReferenceFieldUpdater.get(this);
-        } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj, obj == null ? qs.f.f48122q : qs.f.f48123r));
+        } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj, obj == null ? qs.f.f48170q : qs.f.f48171r));
         if (obj == null) {
             return;
         }
@@ -2184,18 +2184,18 @@ public class e implements qs.g {
         do {
             B = mVar.B(i10);
             if (B != null) {
-                e0Var2 = qs.f.f48110e;
+                e0Var2 = qs.f.f48158e;
                 if (B != e0Var2) {
-                    if (B != qs.f.f48109d) {
-                        e0Var3 = qs.f.f48115j;
+                    if (B != qs.f.f48157d) {
+                        e0Var3 = qs.f.f48163j;
                         if (B != e0Var3 && B != qs.f.z()) {
-                            e0Var4 = qs.f.f48114i;
+                            e0Var4 = qs.f.f48162i;
                             if (B != e0Var4) {
-                                e0Var5 = qs.f.f48113h;
+                                e0Var5 = qs.f.f48161h;
                                 if (B != e0Var5) {
-                                    e0Var6 = qs.f.f48112g;
+                                    e0Var6 = qs.f.f48160g;
                                     if (B != e0Var6) {
-                                        e0Var7 = qs.f.f48111f;
+                                        e0Var7 = qs.f.f48159f;
                                         if (B == e0Var7 || j10 != o0()) {
                                             return false;
                                         }
@@ -2212,14 +2212,14 @@ public class e implements qs.g {
                     return true;
                 }
             }
-            e0Var = qs.f.f48113h;
+            e0Var = qs.f.f48161h;
         } while (!mVar.v(i10, B, e0Var));
         b0();
         return false;
     }
 
     public static final /* synthetic */ AtomicLongFieldUpdater z() {
-        return f48077o;
+        return f48125o;
     }
 
     private final boolean z0(long j10, boolean z10) {
@@ -2257,8 +2257,8 @@ public class e implements qs.g {
         if (z10) {
             F0();
         }
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48084v;
-        e0Var = qs.f.f48124s;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f48132v;
+        e0Var = qs.f.f48172s;
         boolean a10 = androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, e0Var, th2);
         if (z10) {
             G0();
@@ -2277,17 +2277,17 @@ public class e implements qs.g {
         m mVar;
         e0 e0Var;
         q0 c10;
-        m mVar2 = (m) f48082t.get(this);
+        m mVar2 = (m) f48130t.get(this);
         while (true) {
-            long j11 = f48078p.get(this);
-            if (j10 < Math.max(this.f48086d + j11, g0())) {
+            long j11 = f48126p.get(this);
+            if (j10 < Math.max(this.f48134d + j11, g0())) {
                 return;
             }
-            if (f48078p.compareAndSet(this, j11, 1 + j11)) {
-                int i10 = qs.f.f48107b;
+            if (f48126p.compareAndSet(this, j11, 1 + j11)) {
+                int i10 = qs.f.f48155b;
                 long j12 = j11 / i10;
                 int i11 = (int) (j11 % i10);
-                if (mVar2.f50815i != j12) {
+                if (mVar2.f50863i != j12) {
                     mVar = d0(j12, mVar2);
                     if (mVar == null) {
                         continue;
@@ -2296,14 +2296,14 @@ public class e implements qs.g {
                     mVar = mVar2;
                 }
                 Object q12 = q1(mVar, i11, j11, null);
-                e0Var = qs.f.f48120o;
+                e0Var = qs.f.f48168o;
                 if (q12 == e0Var) {
                     if (j11 < s0()) {
                         mVar.c();
                     }
                 } else {
                     mVar.c();
-                    Function1 function1 = this.f48087e;
+                    Function1 function1 = this.f48135e;
                     if (function1 != null && (c10 = ts.x.c(function1, q12, null, 2, null)) != null) {
                         throw c10;
                     }
@@ -2315,7 +2315,7 @@ public class e implements qs.g {
 
     @Override // qs.v
     public boolean b() {
-        return A0(f48077o.get(this));
+        return A0(f48125o.get(this));
     }
 
     @Override // qs.w
@@ -2325,17 +2325,17 @@ public class e implements qs.g {
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         e0 e0Var3;
         e0 e0Var4;
-        if (!androidx.concurrent.futures.b.a(f48085w, this, null, function1)) {
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f48085w;
+        if (!androidx.concurrent.futures.b.a(f48133w, this, null, function1)) {
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f48133w;
             do {
                 Object obj = atomicReferenceFieldUpdater2.get(this);
-                e0Var = qs.f.f48122q;
+                e0Var = qs.f.f48170q;
                 if (obj == e0Var) {
-                    atomicReferenceFieldUpdater = f48085w;
-                    e0Var3 = qs.f.f48122q;
-                    e0Var4 = qs.f.f48123r;
+                    atomicReferenceFieldUpdater = f48133w;
+                    e0Var3 = qs.f.f48170q;
+                    e0Var4 = qs.f.f48171r;
                 } else {
-                    e0Var2 = qs.f.f48123r;
+                    e0Var2 = qs.f.f48171r;
                     if (obj == e0Var2) {
                         throw new IllegalStateException("Another handler was already registered and successfully invoked");
                     }
@@ -2354,21 +2354,21 @@ public class e implements qs.g {
         m mVar;
         e eVar;
         w1 w1Var;
-        if (!k1(f48077o.get(this))) {
-            e0Var = qs.f.f48115j;
+        if (!k1(f48125o.get(this))) {
+            e0Var = qs.f.f48163j;
             m mVar2 = (m) w().get(this);
             while (true) {
                 long andIncrement = z().getAndIncrement(this);
                 long j10 = andIncrement & 1152921504606846975L;
                 boolean B0 = B0(andIncrement);
-                int i11 = qs.f.f48107b;
+                int i11 = qs.f.f48155b;
                 long j11 = j10 / i11;
                 int i12 = (int) (j10 % i11);
-                if (mVar2.f50815i != j11) {
+                if (mVar2.f50863i != j11) {
                     m e02 = e0(j11, mVar2);
                     if (e02 == null) {
                         if (B0) {
-                            return k.f48130b.a(p0());
+                            return k.f48178b.a(p0());
                         }
                     } else {
                         i10 = i12;
@@ -2397,14 +2397,14 @@ public class e implements qs.g {
                                     if (j10 < o0()) {
                                         mVar2.c();
                                     }
-                                    return k.f48130b.a(p0());
+                                    return k.f48178b.a(p0());
                                 }
                             } else {
                                 throw new IllegalStateException("unexpected");
                             }
                         } else if (B0) {
                             mVar2.t();
-                            return k.f48130b.a(p0());
+                            return k.f48178b.a(p0());
                         } else {
                             if (e0Var instanceof w1) {
                                 w1Var = (w1) e0Var;
@@ -2415,23 +2415,23 @@ public class e implements qs.g {
                                 W0(w1Var, mVar2, i10);
                             }
                             mVar2.t();
-                            return k.f48130b.b();
+                            return k.f48178b.b();
                         }
                     } else {
-                        return k.f48130b.c(Unit.f32008a);
+                        return k.f48178b.c(Unit.f32056a);
                     }
                 } else {
                     mVar2.c();
-                    return k.f48130b.c(Unit.f32008a);
+                    return k.f48178b.c(Unit.f32056a);
                 }
             }
         } else {
-            return k.f48130b.b();
+            return k.f48178b.b();
         }
     }
 
     protected final Throwable i0() {
-        return (Throwable) f48084v.get(this);
+        return (Throwable) f48132v.get(this);
     }
 
     @Override // qs.v
@@ -2441,11 +2441,11 @@ public class e implements qs.g {
 
     @Override // qs.v
     public ws.h j() {
-        d dVar = d.f48092d;
+        d dVar = d.f48140d;
         Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
-        C0608e c0608e = C0608e.f48093d;
+        C0608e c0608e = C0608e.f48141d;
         Intrinsics.checkNotNull(c0608e, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"param\")] kotlin.Any?, @[ParameterName(name = \"clauseResult\")] kotlin.Any?, kotlin.Any?>");
-        return new ws.i(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(dVar, 3), (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(c0608e, 3), this.f48088i);
+        return new ws.i(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(dVar, 3), (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(c0608e, 3), this.f48136i);
     }
 
     @Override // qs.v
@@ -2455,11 +2455,11 @@ public class e implements qs.g {
 
     @Override // qs.v
     public ws.h l() {
-        f fVar = f.f48094d;
+        f fVar = f.f48142d;
         Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"select\")] kotlinx.coroutines.selects.SelectInstance<*>, @[ParameterName(name = \"param\")] kotlin.Any?, kotlin.Unit>");
-        g gVar = g.f48095d;
+        g gVar = g.f48143d;
         Intrinsics.checkNotNull(gVar, "null cannot be cast to non-null type kotlin.Function3<@[ParameterName(name = \"clauseObject\")] kotlin.Any, @[ParameterName(name = \"param\")] kotlin.Any?, @[ParameterName(name = \"clauseResult\")] kotlin.Any?, kotlin.Any?>");
-        return new ws.i(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(fVar, 3), (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(gVar, 3), this.f48088i);
+        return new ws.i(this, (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(fVar, 3), (Function3) TypeIntrinsics.beforeCheckcastToFunctionOfArity(gVar, 3), this.f48136i);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -2468,20 +2468,20 @@ public class e implements qs.g {
         int i10;
         e eVar;
         w1 w1Var;
-        e0 e0Var = qs.f.f48109d;
+        e0 e0Var = qs.f.f48157d;
         m mVar2 = (m) w().get(this);
         while (true) {
             long andIncrement = z().getAndIncrement(this);
             long j10 = andIncrement & 1152921504606846975L;
             boolean B0 = B0(andIncrement);
-            int i11 = qs.f.f48107b;
+            int i11 = qs.f.f48155b;
             long j11 = j10 / i11;
             int i12 = (int) (j10 % i11);
-            if (mVar2.f50815i != j11) {
+            if (mVar2.f50863i != j11) {
                 mVar = e0(j11, mVar2);
                 if (mVar == null) {
                     if (B0) {
-                        return k.f48130b.a(p0());
+                        return k.f48178b.a(p0());
                     }
                 } else {
                     eVar = this;
@@ -2508,14 +2508,14 @@ public class e implements qs.g {
                                 if (j10 < o0()) {
                                     mVar2.c();
                                 }
-                                return k.f48130b.a(p0());
+                                return k.f48178b.a(p0());
                             }
                         } else {
                             throw new IllegalStateException("unexpected");
                         }
                     } else if (B0) {
                         mVar2.t();
-                        return k.f48130b.a(p0());
+                        return k.f48178b.a(p0());
                     } else {
                         if (e0Var instanceof w1) {
                             w1Var = (w1) e0Var;
@@ -2525,15 +2525,15 @@ public class e implements qs.g {
                         if (w1Var != null) {
                             W0(w1Var, mVar2, i10);
                         }
-                        a0((mVar2.f50815i * i11) + i10);
-                        return k.f48130b.c(Unit.f32008a);
+                        a0((mVar2.f50863i * i11) + i10);
+                        return k.f48178b.c(Unit.f32056a);
                     }
                 } else {
-                    return k.f48130b.c(Unit.f32008a);
+                    return k.f48178b.c(Unit.f32056a);
                 }
             } else {
                 mVar2.c();
-                return k.f48130b.c(Unit.f32008a);
+                return k.f48178b.c(Unit.f32056a);
             }
         }
     }
@@ -2546,20 +2546,20 @@ public class e implements qs.g {
         w1 w1Var;
         e0 e0Var3;
         e0 e0Var4;
-        long j10 = f48078p.get(this);
-        long j11 = f48077o.get(this);
+        long j10 = f48126p.get(this);
+        long j11 = f48125o.get(this);
         if (A0(j11)) {
-            return k.f48130b.a(i0());
+            return k.f48178b.a(i0());
         }
         if (j10 < (j11 & 1152921504606846975L)) {
-            e0Var = qs.f.f48116k;
+            e0Var = qs.f.f48164k;
             m mVar2 = (m) s().get(this);
             while (!b()) {
                 long andIncrement = t().getAndIncrement(this);
-                int i10 = qs.f.f48107b;
+                int i10 = qs.f.f48155b;
                 long j12 = andIncrement / i10;
                 int i11 = (int) (andIncrement % i10);
-                if (mVar2.f50815i != j12) {
+                if (mVar2.f50863i != j12) {
                     mVar = d0(j12, mVar2);
                     if (mVar == null) {
                         continue;
@@ -2568,14 +2568,14 @@ public class e implements qs.g {
                     mVar = mVar2;
                 }
                 Object q12 = q1(mVar, i11, andIncrement, e0Var);
-                e0Var2 = qs.f.f48118m;
+                e0Var2 = qs.f.f48166m;
                 if (q12 != e0Var2) {
-                    e0Var3 = qs.f.f48120o;
+                    e0Var3 = qs.f.f48168o;
                     if (q12 != e0Var3) {
-                        e0Var4 = qs.f.f48119n;
+                        e0Var4 = qs.f.f48167n;
                         if (q12 != e0Var4) {
                             mVar.c();
-                            return k.f48130b.c(q12);
+                            return k.f48178b.c(q12);
                         }
                         throw new IllegalStateException("unexpected");
                     }
@@ -2594,16 +2594,16 @@ public class e implements qs.g {
                     }
                     w1(andIncrement);
                     mVar.t();
-                    return k.f48130b.b();
+                    return k.f48178b.b();
                 }
             }
-            return k.f48130b.a(i0());
+            return k.f48178b.a(i0());
         }
-        return k.f48130b.b();
+        return k.f48178b.b();
     }
 
     public final long o0() {
-        return f48078p.get(this);
+        return f48126p.get(this);
     }
 
     @Override // qs.w
@@ -2626,7 +2626,7 @@ public class e implements qs.g {
     }
 
     public final long s0() {
-        return f48077o.get(this) & 1152921504606846975L;
+        return f48125o.get(this) & 1152921504606846975L;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:85:0x01d7, code lost:
@@ -2659,15 +2659,15 @@ public class e implements qs.g {
 
     public final boolean u0() {
         while (true) {
-            m mVar = (m) f48082t.get(this);
+            m mVar = (m) f48130t.get(this);
             long o02 = o0();
             if (s0() <= o02) {
                 return false;
             }
-            int i10 = qs.f.f48107b;
+            int i10 = qs.f.f48155b;
             long j10 = o02 / i10;
-            if (mVar.f50815i != j10 && (mVar = d0(j10, mVar)) == null) {
-                if (((m) f48082t.get(this)).f50815i < j10) {
+            if (mVar.f50863i != j10 && (mVar = d0(j10, mVar)) == null) {
+                if (((m) f48130t.get(this)).f50863i < j10) {
                     return false;
                 }
             } else {
@@ -2675,7 +2675,7 @@ public class e implements qs.g {
                 if (y0(mVar, (int) (o02 % i10), o02)) {
                     return true;
                 }
-                f48078p.compareAndSet(this, o02, 1 + o02);
+                f48126p.compareAndSet(this, o02, 1 + o02);
             }
         }
     }
@@ -2696,14 +2696,14 @@ public class e implements qs.g {
             while (eVar.g0() <= j10) {
                 eVar = this;
             }
-            i10 = qs.f.f48108c;
+            i10 = qs.f.f48156c;
             for (int i11 = 0; i11 < i10; i11++) {
                 long g02 = eVar.g0();
-                if (g02 == (4611686018427387903L & f48080r.get(eVar)) && g02 == eVar.g0()) {
+                if (g02 == (4611686018427387903L & f48128r.get(eVar)) && g02 == eVar.g0()) {
                     return;
                 }
             }
-            AtomicLongFieldUpdater atomicLongFieldUpdater = f48080r;
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f48128r;
             while (true) {
                 long j11 = atomicLongFieldUpdater.get(eVar);
                 v10 = qs.f.v(j11 & 4611686018427387903L, true);
@@ -2714,7 +2714,7 @@ public class e implements qs.g {
             }
             while (true) {
                 long g03 = eVar.g0();
-                long j12 = f48080r.get(eVar);
+                long j12 = f48128r.get(eVar);
                 long j13 = j12 & 4611686018427387903L;
                 if ((4611686018427387904L & j12) != 0) {
                     z10 = true;
@@ -2724,7 +2724,7 @@ public class e implements qs.g {
                 if (g03 == j13 && g03 == eVar.g0()) {
                     break;
                 } else if (!z10) {
-                    AtomicLongFieldUpdater atomicLongFieldUpdater2 = f48080r;
+                    AtomicLongFieldUpdater atomicLongFieldUpdater2 = f48128r;
                     v11 = qs.f.v(j13, true);
                     eVar = this;
                     atomicLongFieldUpdater2.compareAndSet(eVar, j12, v11);
@@ -2732,7 +2732,7 @@ public class e implements qs.g {
                     eVar = this;
                 }
             }
-            AtomicLongFieldUpdater atomicLongFieldUpdater3 = f48080r;
+            AtomicLongFieldUpdater atomicLongFieldUpdater3 = f48128r;
             while (true) {
                 long j14 = atomicLongFieldUpdater3.get(eVar);
                 v12 = qs.f.v(j14 & 4611686018427387903L, false);
@@ -2754,7 +2754,7 @@ public class e implements qs.g {
 
     @Override // qs.w
     public boolean y() {
-        return B0(f48077o.get(this));
+        return B0(f48125o.get(this));
     }
 
     protected void L0() {

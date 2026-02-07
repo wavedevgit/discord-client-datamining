@@ -18,63 +18,63 @@ public abstract class t0 {
     public static final class a extends CameraCaptureSession.CaptureCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f46117a = new ArrayList();
+        private final List f46165a = new ArrayList();
 
         a(List list) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 CameraCaptureSession.CaptureCallback captureCallback = (CameraCaptureSession.CaptureCallback) it.next();
                 if (!(captureCallback instanceof b)) {
-                    this.f46117a.add(captureCallback);
+                    this.f46165a.add(captureCallback);
                 }
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureBufferLost(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, Surface surface, long j10) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 r.c.a(captureCallback, cameraCaptureSession, captureRequest, surface, j10);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, TotalCaptureResult totalCaptureResult) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureCompleted(cameraCaptureSession, captureRequest, totalCaptureResult);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureFailed(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, CaptureFailure captureFailure) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureFailed(cameraCaptureSession, captureRequest, captureFailure);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureProgressed(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, CaptureResult captureResult) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureProgressed(cameraCaptureSession, captureRequest, captureResult);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureSequenceAborted(CameraCaptureSession cameraCaptureSession, int i10) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureSequenceAborted(cameraCaptureSession, i10);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureSequenceCompleted(CameraCaptureSession cameraCaptureSession, int i10, long j10) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureSequenceCompleted(cameraCaptureSession, i10, j10);
             }
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureStarted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, long j10, long j11) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46117a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f46165a) {
                 captureCallback.onCaptureStarted(cameraCaptureSession, captureRequest, j10, j11);
             }
         }

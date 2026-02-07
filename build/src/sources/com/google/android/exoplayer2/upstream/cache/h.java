@@ -317,7 +317,7 @@ public class h {
                 long readLong = dataInputStream.readLong();
                 me.e eVar = new me.e();
                 me.e.g(eVar, readLong);
-                q10 = me.f.f37074c.g(eVar);
+                q10 = me.f.f37122c.g(eVar);
             }
             return new g(readInt, readUTF, q10);
         }
@@ -570,7 +570,7 @@ public class h {
     }
 
     private static Cipher i() {
-        if (w0.f39012a == 18) {
+        if (w0.f39060a == 18) {
             try {
                 return Cipher.getInstance("AES/CBC/PKCS5PADDING", "BC");
             } catch (Throwable unused) {
@@ -610,7 +610,7 @@ public class h {
             int readInt2 = dataInputStream.readInt();
             if (readInt2 >= 0) {
                 int min = Math.min(readInt2, 10485760);
-                byte[] bArr = w0.f39017f;
+                byte[] bArr = w0.f39065f;
                 int i11 = 0;
                 while (i11 != readInt2) {
                     int i12 = i11 + min;
@@ -663,7 +663,7 @@ public class h {
         if (g10 != null) {
             return g10.c();
         }
-        return me.f.f37074c;
+        return me.f.f37122c;
     }
 
     public String k(int i10) {

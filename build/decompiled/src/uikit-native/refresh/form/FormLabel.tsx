@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormLabel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44615: for (var _fun44615_ip = 0;;) switch (_fun44615_ip) {
+        _fun44622: for (var _fun44622_ip = 0;;) switch (_fun44622_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.text;
                 var8 = var0.numberOfLines;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun44615_ip = 22;
-                    continue _fun44615
+                    _fun44622_ip = 22;
+                    continue _fun44622
                 }
             case 20:
                 var8 = 0;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.accessible;
                 var9 = var0.color;
                 if (!(var9 === var3)) {
-                    _fun44615_ip = 47;
-                    continue _fun44615
+                    _fun44622_ip = 47;
+                    continue _fun44622
                 }
             case 41:
                 var9 = 'mobile-text-heading-primary';
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3943, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3942, 2]);

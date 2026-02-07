@@ -10,10 +10,10 @@ public final class c0 implements Parcelable {
     public static final Parcelable.Creator<c0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f29999d;
+    private final String f30047d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f30000e;
+    private final String f30048e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -34,16 +34,16 @@ public final class c0 implements Parcelable {
     public c0(String absoluteFilePath, String mimeType) {
         Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
         Intrinsics.checkNotNullParameter(mimeType, "mimeType");
-        this.f29999d = absoluteFilePath;
-        this.f30000e = mimeType;
+        this.f30047d = absoluteFilePath;
+        this.f30048e = mimeType;
     }
 
     public final String a() {
-        return this.f29999d;
+        return this.f30047d;
     }
 
     public final String b() {
-        return this.f30000e;
+        return this.f30048e;
     }
 
     @Override // android.os.Parcelable
@@ -59,27 +59,27 @@ public final class c0 implements Parcelable {
             return false;
         }
         c0 c0Var = (c0) obj;
-        if (Intrinsics.areEqual(this.f29999d, c0Var.f29999d) && Intrinsics.areEqual(this.f30000e, c0Var.f30000e)) {
+        if (Intrinsics.areEqual(this.f30047d, c0Var.f30047d) && Intrinsics.areEqual(this.f30048e, c0Var.f30048e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f29999d.hashCode() * 31) + this.f30000e.hashCode();
+        return (this.f30047d.hashCode() * 31) + this.f30048e.hashCode();
     }
 
     public String toString() {
-        String str = this.f29999d;
-        String str2 = this.f30000e;
+        String str = this.f30047d;
+        String str2 = this.f30048e;
         return "Frame(absoluteFilePath=" + str + ", mimeType=" + str2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f29999d);
-        dest.writeString(this.f30000e);
+        dest.writeString(this.f30047d);
+        dest.writeString(this.f30048e);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

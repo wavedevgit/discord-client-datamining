@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var4 = var1.bind(var0)(var3);
     var1 = {};
-    var3 = 'PinchGestureHandler';
+    var3 = 'RotationGestureHandler';
     var1.name = var3;
     var5 = 1;
     var6 = var6[var5];
@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = {};
     var1.config = var5;
     var1 = var4.bind(var0)(var1);
-    var2.pinchHandlerName = var3;
-    var2.PinchGestureHandler = var1;
+    var2.rotationHandlerName = var3;
+    var2.RotationGestureHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4983, 4981]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4982, 4980]);

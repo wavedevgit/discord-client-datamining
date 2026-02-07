@@ -5,7 +5,7 @@ import yi.c;
 final class jb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final jb f47151a = new jb();
+    static final jb f47199a = new jb();
 
     static {
         c.b a10 = yi.c.a("xMin");

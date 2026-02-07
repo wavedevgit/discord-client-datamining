@@ -27,49 +27,49 @@ public class i implements m0, n0, j.b, j.f {
     boolean H;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f49896d;
+    public final int f49944d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f49897e;
+    private final int[] f49945e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Format[] f49898i;
+    private final Format[] f49946i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean[] f49899o;
+    private final boolean[] f49947o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final j f49900p;
+    private final j f49948p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final n0.a f49901q;
+    private final n0.a f49949q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final y.a f49902r;
+    private final y.a f49950r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f49903s;
+    private final com.google.android.exoplayer2.upstream.i f49951s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.j f49904t;
+    private final com.google.android.exoplayer2.upstream.j f49952t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final h f49905u;
+    private final h f49953u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ArrayList f49906v;
+    private final ArrayList f49954v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f49907w;
+    private final List f49955w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final l0 f49908x;
+    private final l0 f49956x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final l0[] f49909y;
+    private final l0[] f49957y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final c f49910z;
+    private final c f49958z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -77,39 +77,39 @@ public class i implements m0, n0, j.b, j.f {
     }
 
     public i(int i10, int[] iArr, Format[] formatArr, j jVar, n0.a aVar, le.b bVar, long j10, v vVar, u.a aVar2, com.google.android.exoplayer2.upstream.i iVar, y.a aVar3) {
-        this.f49896d = i10;
+        this.f49944d = i10;
         int i11 = 0;
         iArr = iArr == null ? new int[0] : iArr;
-        this.f49897e = iArr;
-        this.f49898i = formatArr == null ? new Format[0] : formatArr;
-        this.f49900p = jVar;
-        this.f49901q = aVar;
-        this.f49902r = aVar3;
-        this.f49903s = iVar;
-        this.f49904t = new com.google.android.exoplayer2.upstream.j("ChunkSampleStream");
-        this.f49905u = new h();
+        this.f49945e = iArr;
+        this.f49946i = formatArr == null ? new Format[0] : formatArr;
+        this.f49948p = jVar;
+        this.f49949q = aVar;
+        this.f49950r = aVar3;
+        this.f49951s = iVar;
+        this.f49952t = new com.google.android.exoplayer2.upstream.j("ChunkSampleStream");
+        this.f49953u = new h();
         ArrayList arrayList = new ArrayList();
-        this.f49906v = arrayList;
-        this.f49907w = Collections.unmodifiableList(arrayList);
+        this.f49954v = arrayList;
+        this.f49955w = Collections.unmodifiableList(arrayList);
         int length = iArr.length;
-        this.f49909y = new l0[length];
-        this.f49899o = new boolean[length];
+        this.f49957y = new l0[length];
+        this.f49947o = new boolean[length];
         int i12 = length + 1;
         int[] iArr2 = new int[i12];
         l0[] l0VarArr = new l0[i12];
         l0 k10 = l0.k(bVar, vVar, aVar2);
-        this.f49908x = k10;
+        this.f49956x = k10;
         iArr2[0] = i10;
         l0VarArr[0] = k10;
         while (i11 < length) {
             l0 l10 = l0.l(bVar);
-            this.f49909y[i11] = l10;
+            this.f49957y[i11] = l10;
             int i13 = i11 + 1;
             l0VarArr[i13] = l10;
-            iArr2[i13] = this.f49897e[i11];
+            iArr2[i13] = this.f49945e[i11];
             i11 = i13;
         }
-        this.f49910z = new c(iArr2, l0VarArr);
+        this.f49958z = new c(iArr2, l0VarArr);
         this.D = j10;
         this.E = j10;
     }
@@ -117,14 +117,14 @@ public class i implements m0, n0, j.b, j.f {
     private void A(int i10) {
         int min = Math.min(N(i10, 0), this.F);
         if (min > 0) {
-            w0.V0(this.f49906v, 0, min);
+            w0.V0(this.f49954v, 0, min);
             this.F -= min;
         }
     }
 
     private void B(int i10) {
-        ne.a.g(!this.f49904t.j());
-        int size = this.f49906v.size();
+        ne.a.g(!this.f49952t.j());
+        int size = this.f49954v.size();
         while (true) {
             if (i10 < size) {
                 if (!F(i10)) {
@@ -139,24 +139,24 @@ public class i implements m0, n0, j.b, j.f {
         if (i10 == -1) {
             return;
         }
-        long j10 = E().f49892h;
+        long j10 = E().f49940h;
         sd.a C = C(i10);
-        if (this.f49906v.isEmpty()) {
+        if (this.f49954v.isEmpty()) {
             this.D = this.E;
         }
         this.H = false;
-        this.f49902r.w(this.f49896d, C.f49891g, j10);
+        this.f49950r.w(this.f49944d, C.f49939g, j10);
     }
 
     private sd.a C(int i10) {
-        sd.a aVar = (sd.a) this.f49906v.get(i10);
-        ArrayList arrayList = this.f49906v;
+        sd.a aVar = (sd.a) this.f49954v.get(i10);
+        ArrayList arrayList = this.f49954v;
         w0.V0(arrayList, i10, arrayList.size());
-        this.F = Math.max(this.F, this.f49906v.size());
+        this.F = Math.max(this.F, this.f49954v.size());
         int i11 = 0;
-        this.f49908x.u(aVar.i(0));
+        this.f49956x.u(aVar.i(0));
         while (true) {
-            l0[] l0VarArr = this.f49909y;
+            l0[] l0VarArr = this.f49957y;
             if (i11 < l0VarArr.length) {
                 l0 l0Var = l0VarArr[i11];
                 i11++;
@@ -168,19 +168,19 @@ public class i implements m0, n0, j.b, j.f {
     }
 
     private sd.a E() {
-        ArrayList arrayList = this.f49906v;
+        ArrayList arrayList = this.f49954v;
         return (sd.a) arrayList.get(arrayList.size() - 1);
     }
 
     private boolean F(int i10) {
         int C;
-        sd.a aVar = (sd.a) this.f49906v.get(i10);
-        if (this.f49908x.C() > aVar.i(0)) {
+        sd.a aVar = (sd.a) this.f49954v.get(i10);
+        if (this.f49956x.C() > aVar.i(0)) {
             return true;
         }
         int i11 = 0;
         do {
-            l0[] l0VarArr = this.f49909y;
+            l0[] l0VarArr = this.f49957y;
             if (i11 >= l0VarArr.length) {
                 return false;
             }
@@ -195,7 +195,7 @@ public class i implements m0, n0, j.b, j.f {
     }
 
     private void I() {
-        int N = N(this.f49908x.C(), this.F - 1);
+        int N = N(this.f49956x.C(), this.F - 1);
         while (true) {
             int i10 = this.F;
             if (i10 <= N) {
@@ -208,10 +208,10 @@ public class i implements m0, n0, j.b, j.f {
     }
 
     private void J(int i10) {
-        sd.a aVar = (sd.a) this.f49906v.get(i10);
-        Format format = aVar.f49888d;
+        sd.a aVar = (sd.a) this.f49954v.get(i10);
+        Format format = aVar.f49936d;
         if (!format.equals(this.B)) {
-            this.f49902r.h(this.f49896d, format, aVar.f49889e, aVar.f49890f, aVar.f49891g);
+            this.f49950r.h(this.f49944d, format, aVar.f49937e, aVar.f49938f, aVar.f49939g);
         }
         this.B = format;
     }
@@ -219,22 +219,22 @@ public class i implements m0, n0, j.b, j.f {
     private int N(int i10, int i11) {
         do {
             i11++;
-            if (i11 >= this.f49906v.size()) {
-                return this.f49906v.size() - 1;
+            if (i11 >= this.f49954v.size()) {
+                return this.f49954v.size() - 1;
             }
-        } while (((sd.a) this.f49906v.get(i11)).i(0) <= i10);
+        } while (((sd.a) this.f49954v.get(i11)).i(0) <= i10);
         return i11 - 1;
     }
 
     private void Q() {
-        this.f49908x.U();
-        for (l0 l0Var : this.f49909y) {
+        this.f49956x.U();
+        for (l0 l0Var : this.f49957y) {
             l0Var.U();
         }
     }
 
     public j D() {
-        return this.f49900p;
+        return this.f49948p;
     }
 
     boolean H() {
@@ -249,19 +249,19 @@ public class i implements m0, n0, j.b, j.f {
     public void i(f fVar, long j10, long j11, boolean z10) {
         this.A = null;
         this.G = null;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(fVar.f49885a, fVar.f49886b, fVar.f(), fVar.e(), j10, j11, fVar.a());
-        this.f49903s.d(fVar.f49885a);
-        this.f49902r.k(loadEventInfo, fVar.f49887c, this.f49896d, fVar.f49888d, fVar.f49889e, fVar.f49890f, fVar.f49891g, fVar.f49892h);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(fVar.f49933a, fVar.f49934b, fVar.f(), fVar.e(), j10, j11, fVar.a());
+        this.f49951s.d(fVar.f49933a);
+        this.f49950r.k(loadEventInfo, fVar.f49935c, this.f49944d, fVar.f49936d, fVar.f49937e, fVar.f49938f, fVar.f49939g, fVar.f49940h);
         if (!z10) {
             if (H()) {
                 Q();
             } else if (G(fVar)) {
-                C(this.f49906v.size() - 1);
-                if (this.f49906v.isEmpty()) {
+                C(this.f49954v.size() - 1);
+                if (this.f49954v.isEmpty()) {
                     this.D = this.E;
                 }
             }
-            this.f49901q.i(this);
+            this.f49949q.i(this);
         }
     }
 
@@ -269,11 +269,11 @@ public class i implements m0, n0, j.b, j.f {
     /* renamed from: L */
     public void j(f fVar, long j10, long j11) {
         this.A = null;
-        this.f49900p.h(fVar);
-        LoadEventInfo loadEventInfo = new LoadEventInfo(fVar.f49885a, fVar.f49886b, fVar.f(), fVar.e(), j10, j11, fVar.a());
-        this.f49903s.d(fVar.f49885a);
-        this.f49902r.n(loadEventInfo, fVar.f49887c, this.f49896d, fVar.f49888d, fVar.f49889e, fVar.f49890f, fVar.f49891g, fVar.f49892h);
-        this.f49901q.i(this);
+        this.f49948p.h(fVar);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(fVar.f49933a, fVar.f49934b, fVar.f(), fVar.e(), j10, j11, fVar.a());
+        this.f49951s.d(fVar.f49933a);
+        this.f49950r.n(loadEventInfo, fVar.f49935c, this.f49944d, fVar.f49936d, fVar.f49937e, fVar.f49938f, fVar.f49939g, fVar.f49940h);
+        this.f49949q.i(this);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:25:0x009e  */
@@ -298,11 +298,11 @@ public class i implements m0, n0, j.b, j.f {
 
     public void P(b bVar) {
         this.C = bVar;
-        this.f49908x.Q();
-        for (l0 l0Var : this.f49909y) {
+        this.f49956x.Q();
+        for (l0 l0Var : this.f49957y) {
             l0Var.Q();
         }
-        this.f49904t.m(this);
+        this.f49952t.m(this);
     }
 
     public void R(long j10) {
@@ -315,10 +315,10 @@ public class i implements m0, n0, j.b, j.f {
             return;
         }
         int i10 = 0;
-        for (int i11 = 0; i11 < this.f49906v.size(); i11++) {
-            aVar = (sd.a) this.f49906v.get(i11);
-            int i12 = (aVar.f49891g > j10 ? 1 : (aVar.f49891g == j10 ? 0 : -1));
-            if (i12 == 0 && aVar.f49858k == -9223372036854775807L) {
+        for (int i11 = 0; i11 < this.f49954v.size(); i11++) {
+            aVar = (sd.a) this.f49954v.get(i11);
+            int i12 = (aVar.f49939g > j10 ? 1 : (aVar.f49939g == j10 ? 0 : -1));
+            if (i12 == 0 && aVar.f49906k == -9223372036854775807L) {
                 break;
             } else if (i12 > 0) {
                 break;
@@ -326,9 +326,9 @@ public class i implements m0, n0, j.b, j.f {
         }
         aVar = null;
         if (aVar != null) {
-            Y = this.f49908x.X(aVar.i(0));
+            Y = this.f49956x.X(aVar.i(0));
         } else {
-            l0 l0Var = this.f49908x;
+            l0 l0Var = this.f49956x;
             if (j10 < b()) {
                 z10 = true;
             } else {
@@ -337,8 +337,8 @@ public class i implements m0, n0, j.b, j.f {
             Y = l0Var.Y(j10, z10);
         }
         if (Y) {
-            this.F = N(this.f49908x.C(), 0);
-            l0[] l0VarArr = this.f49909y;
+            this.F = N(this.f49956x.C(), 0);
+            l0[] l0VarArr = this.f49957y;
             int length = l0VarArr.length;
             while (i10 < length) {
                 l0VarArr[i10].Y(j10, true);
@@ -348,30 +348,30 @@ public class i implements m0, n0, j.b, j.f {
         }
         this.D = j10;
         this.H = false;
-        this.f49906v.clear();
+        this.f49954v.clear();
         this.F = 0;
-        if (this.f49904t.j()) {
-            this.f49908x.r();
-            l0[] l0VarArr2 = this.f49909y;
+        if (this.f49952t.j()) {
+            this.f49956x.r();
+            l0[] l0VarArr2 = this.f49957y;
             int length2 = l0VarArr2.length;
             while (i10 < length2) {
                 l0VarArr2[i10].r();
                 i10++;
             }
-            this.f49904t.f();
+            this.f49952t.f();
             return;
         }
-        this.f49904t.g();
+        this.f49952t.g();
         Q();
     }
 
     public a S(long j10, int i10) {
-        for (int i11 = 0; i11 < this.f49909y.length; i11++) {
-            if (this.f49897e[i11] == i10) {
-                ne.a.g(!this.f49899o[i11]);
-                this.f49899o[i11] = true;
-                this.f49909y[i11].Y(j10, true);
-                return new a(this, this.f49909y[i11], i11);
+        for (int i11 = 0; i11 < this.f49957y.length; i11++) {
+            if (this.f49945e[i11] == i10) {
+                ne.a.g(!this.f49947o[i11]);
+                this.f49947o[i11] = true;
+                this.f49957y[i11].Y(j10, true);
+                return new a(this, this.f49957y[i11], i11);
             }
         }
         throw new IllegalStateException();
@@ -379,10 +379,10 @@ public class i implements m0, n0, j.b, j.f {
 
     @Override // qd.m0
     public void a() {
-        this.f49904t.a();
-        this.f49908x.M();
-        if (!this.f49904t.j()) {
-            this.f49900p.a();
+        this.f49952t.a();
+        this.f49956x.M();
+        if (!this.f49952t.j()) {
+            this.f49948p.a();
         }
     }
 
@@ -394,7 +394,7 @@ public class i implements m0, n0, j.b, j.f {
         if (this.H) {
             return Long.MIN_VALUE;
         }
-        return E().f49892h;
+        return E().f49940h;
     }
 
     @Override // qd.m0
@@ -403,27 +403,27 @@ public class i implements m0, n0, j.b, j.f {
             return -3;
         }
         sd.a aVar = this.G;
-        if (aVar != null && aVar.i(0) <= this.f49908x.C()) {
+        if (aVar != null && aVar.i(0) <= this.f49956x.C()) {
             return -3;
         }
         I();
-        return this.f49908x.R(xVar, fVar, i10, this.H);
+        return this.f49956x.R(xVar, fVar, i10, this.H);
     }
 
     @Override // qd.n0
     public boolean d() {
-        return this.f49904t.j();
+        return this.f49952t.j();
     }
 
     public long e(long j10, t0 t0Var) {
-        return this.f49900p.e(j10, t0Var);
+        return this.f49948p.e(j10, t0Var);
     }
 
     @Override // qd.n0
     public boolean f(long j10) {
         List list;
         long j11;
-        if (this.H || this.f49904t.j() || this.f49904t.i()) {
+        if (this.H || this.f49952t.j() || this.f49952t.i()) {
             return false;
         }
         boolean H = H();
@@ -431,13 +431,13 @@ public class i implements m0, n0, j.b, j.f {
             list = Collections.EMPTY_LIST;
             j11 = this.D;
         } else {
-            list = this.f49907w;
-            j11 = E().f49892h;
+            list = this.f49955w;
+            j11 = E().f49940h;
         }
-        this.f49900p.d(j10, j11, list, this.f49905u);
-        h hVar = this.f49905u;
-        boolean z10 = hVar.f49895b;
-        f fVar = hVar.f49894a;
+        this.f49948p.d(j10, j11, list, this.f49953u);
+        h hVar = this.f49953u;
+        boolean z10 = hVar.f49943b;
+        f fVar = hVar.f49942a;
         hVar.a();
         if (z10) {
             this.D = -9223372036854775807L;
@@ -450,22 +450,22 @@ public class i implements m0, n0, j.b, j.f {
             if (G(fVar)) {
                 sd.a aVar = (sd.a) fVar;
                 if (H) {
-                    long j12 = aVar.f49891g;
+                    long j12 = aVar.f49939g;
                     long j13 = this.D;
                     if (j12 != j13) {
-                        this.f49908x.a0(j13);
-                        for (l0 l0Var : this.f49909y) {
+                        this.f49956x.a0(j13);
+                        for (l0 l0Var : this.f49957y) {
                             l0Var.a0(this.D);
                         }
                     }
                     this.D = -9223372036854775807L;
                 }
-                aVar.k(this.f49910z);
-                this.f49906v.add(aVar);
+                aVar.k(this.f49958z);
+                this.f49954v.add(aVar);
             } else if (fVar instanceof m) {
-                ((m) fVar).g(this.f49910z);
+                ((m) fVar).g(this.f49958z);
             }
-            this.f49902r.t(new LoadEventInfo(fVar.f49885a, fVar.f49886b, this.f49904t.n(fVar, this, this.f49903s.b(fVar.f49887c))), fVar.f49887c, this.f49896d, fVar.f49888d, fVar.f49889e, fVar.f49890f, fVar.f49891g, fVar.f49892h);
+            this.f49950r.t(new LoadEventInfo(fVar.f49933a, fVar.f49934b, this.f49952t.n(fVar, this, this.f49951s.b(fVar.f49935c))), fVar.f49935c, this.f49944d, fVar.f49936d, fVar.f49937e, fVar.f49938f, fVar.f49939g, fVar.f49940h);
             return true;
         }
     }
@@ -481,26 +481,26 @@ public class i implements m0, n0, j.b, j.f {
         long j10 = this.E;
         sd.a E = E();
         if (!E.h()) {
-            if (this.f49906v.size() > 1) {
-                ArrayList arrayList = this.f49906v;
+            if (this.f49954v.size() > 1) {
+                ArrayList arrayList = this.f49954v;
                 E = (sd.a) arrayList.get(arrayList.size() - 2);
             } else {
                 E = null;
             }
         }
         if (E != null) {
-            j10 = Math.max(j10, E.f49892h);
+            j10 = Math.max(j10, E.f49940h);
         }
-        return Math.max(j10, this.f49908x.z());
+        return Math.max(j10, this.f49956x.z());
     }
 
     @Override // qd.n0
     public void h(long j10) {
-        if (!this.f49904t.i() && !H()) {
-            if (this.f49904t.j()) {
+        if (!this.f49952t.i() && !H()) {
+            if (this.f49952t.j()) {
                 f fVar = (f) ne.a.e(this.A);
-                if ((!G(fVar) || !F(this.f49906v.size() - 1)) && this.f49900p.g(j10, fVar, this.f49907w)) {
-                    this.f49904t.f();
+                if ((!G(fVar) || !F(this.f49954v.size() - 1)) && this.f49948p.g(j10, fVar, this.f49955w)) {
+                    this.f49952t.f();
                     if (G(fVar)) {
                         this.G = (sd.a) fVar;
                         return;
@@ -509,8 +509,8 @@ public class i implements m0, n0, j.b, j.f {
                 }
                 return;
             }
-            int j11 = this.f49900p.j(j10, this.f49907w);
-            if (j11 < this.f49906v.size()) {
+            int j11 = this.f49948p.j(j10, this.f49955w);
+            if (j11 < this.f49954v.size()) {
                 B(j11);
             }
         }
@@ -518,7 +518,7 @@ public class i implements m0, n0, j.b, j.f {
 
     @Override // qd.m0
     public boolean isReady() {
-        if (!H() && this.f49908x.K(this.H)) {
+        if (!H() && this.f49956x.K(this.H)) {
             return true;
         }
         return false;
@@ -526,11 +526,11 @@ public class i implements m0, n0, j.b, j.f {
 
     @Override // com.google.android.exoplayer2.upstream.j.f
     public void p() {
-        this.f49908x.S();
-        for (l0 l0Var : this.f49909y) {
+        this.f49956x.S();
+        for (l0 l0Var : this.f49957y) {
             l0Var.S();
         }
-        this.f49900p.release();
+        this.f49948p.release();
         b bVar = this.C;
         if (bVar != null) {
             bVar.a(this);
@@ -542,12 +542,12 @@ public class i implements m0, n0, j.b, j.f {
         if (H()) {
             return 0;
         }
-        int E = this.f49908x.E(j10, this.H);
+        int E = this.f49956x.E(j10, this.H);
         sd.a aVar = this.G;
         if (aVar != null) {
-            E = Math.min(E, aVar.i(0) - this.f49908x.C());
+            E = Math.min(E, aVar.i(0) - this.f49956x.C());
         }
-        this.f49908x.d0(E);
+        this.f49956x.d0(E);
         I();
         return E;
     }
@@ -556,18 +556,18 @@ public class i implements m0, n0, j.b, j.f {
         if (H()) {
             return;
         }
-        int x10 = this.f49908x.x();
-        this.f49908x.q(j10, z10, true);
-        int x11 = this.f49908x.x();
+        int x10 = this.f49956x.x();
+        this.f49956x.q(j10, z10, true);
+        int x11 = this.f49956x.x();
         if (x11 > x10) {
-            long y10 = this.f49908x.y();
+            long y10 = this.f49956x.y();
             int i10 = 0;
             while (true) {
-                l0[] l0VarArr = this.f49909y;
+                l0[] l0VarArr = this.f49957y;
                 if (i10 >= l0VarArr.length) {
                     break;
                 }
-                l0VarArr[i10].q(y10, z10, this.f49899o[i10]);
+                l0VarArr[i10].q(y10, z10, this.f49947o[i10]);
                 i10++;
             }
         }
@@ -578,27 +578,27 @@ public class i implements m0, n0, j.b, j.f {
     public final class a implements m0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public final i f49911d;
+        public final i f49959d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final l0 f49912e;
+        private final l0 f49960e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f49913i;
+        private final int f49961i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f49914o;
+        private boolean f49962o;
 
         public a(i iVar, l0 l0Var, int i10) {
-            this.f49911d = iVar;
-            this.f49912e = l0Var;
-            this.f49913i = i10;
+            this.f49959d = iVar;
+            this.f49960e = l0Var;
+            this.f49961i = i10;
         }
 
         private void b() {
-            if (!this.f49914o) {
-                i.this.f49902r.h(i.this.f49897e[this.f49913i], i.this.f49898i[this.f49913i], 0, null, i.this.E);
-                this.f49914o = true;
+            if (!this.f49962o) {
+                i.this.f49950r.h(i.this.f49945e[this.f49961i], i.this.f49946i[this.f49961i], 0, null, i.this.E);
+                this.f49962o = true;
             }
         }
 
@@ -607,21 +607,21 @@ public class i implements m0, n0, j.b, j.f {
             if (i.this.H()) {
                 return -3;
             }
-            if (i.this.G != null && i.this.G.i(this.f49913i + 1) <= this.f49912e.C()) {
+            if (i.this.G != null && i.this.G.i(this.f49961i + 1) <= this.f49960e.C()) {
                 return -3;
             }
             b();
-            return this.f49912e.R(xVar, fVar, i10, i.this.H);
+            return this.f49960e.R(xVar, fVar, i10, i.this.H);
         }
 
         public void d() {
-            ne.a.g(i.this.f49899o[this.f49913i]);
-            i.this.f49899o[this.f49913i] = false;
+            ne.a.g(i.this.f49947o[this.f49961i]);
+            i.this.f49947o[this.f49961i] = false;
         }
 
         @Override // qd.m0
         public boolean isReady() {
-            if (!i.this.H() && this.f49912e.K(i.this.H)) {
+            if (!i.this.H() && this.f49960e.K(i.this.H)) {
                 return true;
             }
             return false;
@@ -632,11 +632,11 @@ public class i implements m0, n0, j.b, j.f {
             if (i.this.H()) {
                 return 0;
             }
-            int E = this.f49912e.E(j10, i.this.H);
+            int E = this.f49960e.E(j10, i.this.H);
             if (i.this.G != null) {
-                E = Math.min(E, i.this.G.i(this.f49913i + 1) - this.f49912e.C());
+                E = Math.min(E, i.this.G.i(this.f49961i + 1) - this.f49960e.C());
             }
-            this.f49912e.d0(E);
+            this.f49960e.d0(E);
             if (E > 0) {
                 b();
             }

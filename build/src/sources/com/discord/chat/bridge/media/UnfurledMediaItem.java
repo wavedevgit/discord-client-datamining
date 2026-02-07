@@ -136,19 +136,19 @@ public final class UnfurledMediaItem {
         compositeEncoder.z(serialDescriptor, 1, unfurledMediaItem.proxyUrl);
         compositeEncoder.s(serialDescriptor, 2, UnfurledMediaLoadingState.Serializer.INSTANCE, unfurledMediaItem.loadingState);
         if (compositeEncoder.A(serialDescriptor, 3) || unfurledMediaItem.height != null) {
-            compositeEncoder.l(serialDescriptor, 3, p0.f31057a, unfurledMediaItem.height);
+            compositeEncoder.l(serialDescriptor, 3, p0.f31105a, unfurledMediaItem.height);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || unfurledMediaItem.width != null) {
-            compositeEncoder.l(serialDescriptor, 4, p0.f31057a, unfurledMediaItem.width);
+            compositeEncoder.l(serialDescriptor, 4, p0.f31105a, unfurledMediaItem.width);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || unfurledMediaItem.contentType != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, unfurledMediaItem.contentType);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, unfurledMediaItem.contentType);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || unfurledMediaItem.placeholder != null) {
-            compositeEncoder.l(serialDescriptor, 6, n2.f31041a, unfurledMediaItem.placeholder);
+            compositeEncoder.l(serialDescriptor, 6, n2.f31089a, unfurledMediaItem.placeholder);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || unfurledMediaItem.placeholderVersion != null) {
-            compositeEncoder.l(serialDescriptor, 7, p0.f31057a, unfurledMediaItem.placeholderVersion);
+            compositeEncoder.l(serialDescriptor, 7, p0.f31105a, unfurledMediaItem.placeholderVersion);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || unfurledMediaItem.contentScanMetadata != null) {
             compositeEncoder.l(serialDescriptor, 8, ContentScanMetadata$$serializer.INSTANCE, unfurledMediaItem.contentScanMetadata);

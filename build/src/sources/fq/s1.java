@@ -23,26 +23,26 @@ public abstract class s1 {
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f29245c.setHint(label);
+                c10.f29293c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f29245c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f29245c;
+                c10.f29293c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f29293c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 bq.o.a(inputLayout);
             }
             Integer precision = attributes.getPrecision();
             if (precision != null) {
                 int intValue = precision.intValue();
-                EditText editText = c10.f29245c.getEditText();
+                EditText editText = c10.f29293c.getEditText();
                 if (editText != null) {
                     editText.setFilters(new u[]{new u(intValue)});
                 }
             }
         }
-        c10.f29244b.setText(String.valueOf(inputNumberComponent.b().b()));
-        TextInputEditText editText2 = c10.f29244b;
+        c10.f29292b.setText(String.valueOf(inputNumberComponent.b().b()));
+        TextInputEditText editText2 = c10.f29292b;
         Intrinsics.checkNotNullExpressionValue(editText2, "editText");
         editText2.addTextChangedListener(new a(inputNumberComponent));
         uiComponentHelper.d(new Function0() { // from class: fq.r1
@@ -62,11 +62,11 @@ public abstract class s1 {
     public static final Unit c(InputNumber inputNumber, iq.k kVar) {
         InputTextBasedComponentStyle styles = inputNumber.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = kVar.f29245c;
+            TextInputLayout inputLayout = kVar.f29293c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             kq.a0.k(inputLayout, styles);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

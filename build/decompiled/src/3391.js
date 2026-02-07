@@ -1,71 +1,69 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function() {
-        _fun29108: for (var _fun29108_ip = 0;;) switch (_fun29108_ip) {
-            case 0:
-                var1 = global;
-                var0 = var1.String;
-                var0 = var0.prototype;
-                var0 = var0.trim;
-                if (!var0) {
-                    _fun29108_ip = 102;
-                    continue _fun29108
-                }
-            case 22:
-                var2 = '\u200b';
-                var0 = var2.trim;
-                var0 = var0.bind(var2)();
-                if (!(var2 === var0)) {
-                    _fun29108_ip = 102;
-                    continue _fun29108
-                }
-            case 42:
-                var2 = '\u180e';
-                var0 = var2.trim;
-                var0 = var0.bind(var2)();
-                if (!(var2 === var0)) {
-                    _fun29108_ip = 102;
-                    continue _fun29108
-                }
-            case 62:
-                var2 = '_\u180e';
-                var0 = var2.trim;
-                var0 = var0.bind(var2)();
-                if (!(var2 === var0)) {
-                    _fun29108_ip = 102;
-                    continue _fun29108
-                }
-            case 82:
-                var2 = '\u180e_';
-                var0 = var2.trim;
-                var0 = var0.bind(var2)();
-                if (!(var2 !== var0)) {
-                    _fun29108_ip = 128;
-                    continue _fun29108
-                }
-            case 102:
+    _fun29118: for (var _fun29118_ip = 0;;) switch (_fun29118_ip) {
+        case 0:
+            var3 = require;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var3;
+            var _closure1_slot1 = var2;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = 'String.prototype.replace';
+            var2 = var3.bind(var0)(var2);
+            var _closure1_slot2 = var2;
+            var4 = /^\s$/;
+            var3 = var4.test;
+            var2 = '\u180e';
+            var2 = var3.bind(var4)(var2);
+            if (var2) {
+                _fun29118_ip = 93;
+                continue _fun29118
+            }
+        case 77:
+            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
+            _fun29118_ip = 107;
+            continue _fun29118;
+        case 93:
+            var3 = /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
+        case 107:
+            var _closure1_slot3 = var3;
+            if (var2) {
+                _fun29118_ip = 130;
+                continue _fun29118
+            }
+        case 114:
+            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+            _fun29118_ip = 144;
+            continue _fun29118;
+        case 130:
+            var2 = /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+        case 144:
+            var _closure1_slot4 = var2;
+            var2 = function() {
                 var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var0 = var3.bind(var0)(var2);
-                _fun29108_ip = 145;
-                continue _fun29108;
-            case 128:
-                var1 = var1.String;
-                var1 = var1.prototype;
-                var0 = var1.trim;
-            case 145:
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var4 = undefined;
+                var2 = var3.bind(var4)(var1);
+                var1 = 2;
+                var1 = var5[var1];
+                var3 = var3.bind(var4)(var1);
+                var1 = this;
+                var1 = var3.bind(var4)(var1);
+                var5 = var2.bind(var4)(var1);
+                var3 = _closure1_slot2;
+                var1 = _closure1_slot3;
+                var2 = '';
+                var1 = var3.bind(var4)(var5, var1, var2);
+                var0 = _closure1_slot4;
+                var0 = var3.bind(var4)(var1, var0, var2);
                 return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3392]);
+            };
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [551, 3392, 3378]);

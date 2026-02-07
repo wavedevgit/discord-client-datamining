@@ -10,37 +10,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t implements Lazy, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function0 f48053d;
+    private Function0 f48101d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Object f48054e;
+    private volatile Object f48102e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f48055i;
+    private final Object f48103i;
 
     public t(Function0 initializer, Object obj) {
         Intrinsics.checkNotNullParameter(initializer, "initializer");
-        this.f48053d = initializer;
-        this.f48054e = d0.f48026a;
-        this.f48055i = obj == null ? this : obj;
+        this.f48101d = initializer;
+        this.f48102e = d0.f48074a;
+        this.f48103i = obj == null ? this : obj;
     }
 
     @Override // kotlin.Lazy
     public Object getValue() {
         Object obj;
-        Object obj2 = this.f48054e;
-        d0 d0Var = d0.f48026a;
+        Object obj2 = this.f48102e;
+        d0 d0Var = d0.f48074a;
         if (obj2 != d0Var) {
             return obj2;
         }
-        synchronized (this.f48055i) {
-            obj = this.f48054e;
+        synchronized (this.f48103i) {
+            obj = this.f48102e;
             if (obj == d0Var) {
-                Function0 function0 = this.f48053d;
+                Function0 function0 = this.f48101d;
                 Intrinsics.checkNotNull(function0);
                 obj = function0.invoke();
-                this.f48054e = obj;
-                this.f48053d = null;
+                this.f48102e = obj;
+                this.f48101d = null;
             }
         }
         return obj;
@@ -48,7 +48,7 @@ public final class t implements Lazy, Serializable {
 
     @Override // kotlin.Lazy
     public boolean isInitialized() {
-        if (this.f48054e != d0.f48026a) {
+        if (this.f48102e != d0.f48074a) {
             return true;
         }
         return false;

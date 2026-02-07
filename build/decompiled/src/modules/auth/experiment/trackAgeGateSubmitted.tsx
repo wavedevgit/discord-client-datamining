@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/auth/experiment/trackAgeGateSubmitted.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun100393: for (var _fun100393_ip = 0;;) switch (_fun100393_ip) {
+        _fun100882: for (var _fun100882_ip = 0;;) switch (_fun100882_ip) {
             case 0:
                 var6 = arg0;
                 var8 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8 < var5;
                 var5 = null;
                 if (!var8) {
-                    _fun100393_ip = 105;
-                    continue _fun100393
+                    _fun100882_ip = 105;
+                    continue _fun100882
                 }
             case 89:
                 var9 = var6.format;

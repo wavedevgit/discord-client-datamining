@@ -39,7 +39,7 @@ public final class d extends w implements p0 {
     private static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final h0 f54879a = h0.d(q1.b.f4188v, "", q1.b.f4190x, f.L());
+        static final h0 f54927a = h0.d(q1.b.f4188v, "", q1.b.f4190x, f.L());
     }
 
     static {
@@ -82,13 +82,13 @@ public final class d extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54878a[dVar.ordinal()]) {
+        switch (c.f54926a[dVar.ordinal()]) {
             case 1:
                 return new d();
             case 2:
                 return new a(null);
             case 3:
-                return w.x(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u00012", new Object[]{"preferences_", b.f54879a});
+                return w.x(DEFAULT_INSTANCE, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u00012", new Object[]{"preferences_", b.f54927a});
             case 4:
                 return DEFAULT_INSTANCE;
             case 5:

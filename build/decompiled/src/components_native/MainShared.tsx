@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var2.ToastContainer = var3;
     var3 = function() {
-        _fun109681: for (var _fun109681_ip = 0;;) switch (_fun109681_ip) {
+        _fun110155: for (var _fun110155_ip = 0;;) switch (_fun110155_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -121,26 +121,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var3 == var5;
                 var0 = null;
                 if (var8) {
-                    _fun109681_ip = 203;
-                    continue _fun109681
+                    _fun110155_ip = 203;
+                    continue _fun110155
                 }
             case 152:
                 var0 = null;
                 if (!var7) {
-                    _fun109681_ip = 203;
-                    continue _fun109681
+                    _fun110155_ip = 203;
+                    continue _fun110155
                 }
             case 157:
                 var0 = null;
                 if (var6) {
-                    _fun109681_ip = 203;
-                    continue _fun109681
+                    _fun110155_ip = 203;
+                    continue _fun110155
                 }
             case 162:
                 var0 = null;
                 if (var2) {
-                    _fun109681_ip = 203;
-                    continue _fun109681
+                    _fun110155_ip = 203;
+                    continue _fun110155
                 }
             case 167:
                 var3 = _closure1_slot7;
@@ -161,7 +161,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var3 = var4.useMemo;
         var2 = function() { // Environment: var1
-            _fun109684: for (var _fun109684_ip = 0;;) switch (_fun109684_ip) {
+            _fun110158: for (var _fun110158_ip = 0;;) switch (_fun110158_ip) {
                 case 0:
                     var1 = {
                         'input': 'k',
@@ -177,15 +177,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.isAndroid;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun109684_ip = 70;
-                        continue _fun109684
+                        _fun110158_ip = 70;
+                        continue _fun110158
                     }
                 case 52:
                     var2 = _closure1_slot4;
                     var2 = var2.KeyCommandsView;
                     var2 = var2.keyModifierCommand;
-                    _fun109684_ip = 106;
-                    continue _fun109684;
+                    _fun110158_ip = 106;
+                    continue _fun110158;
                 case 70:
                     var4 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -260,4 +260,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useScreenReaderEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 3520, 33, 566, 7926, 3921, 7907, 14132, 478, 13046, 1234, 14134, 13040, 12790, 2, 14135, 14136, 14137, 14138, 14146, 14148, 5225]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 3519, 33, 566, 7970, 3920, 7951, 14174, 478, 13092, 1234, 14176, 13086, 12836, 2, 14177, 14178, 14179, 14180, 14188, 14190, 5272]);

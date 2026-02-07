@@ -1,108 +1,101 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var6 = metroImportDefault;
+    var3 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = ['scrollViewOffset'];
-    var _closure1_slot2 = var0;
+    var4 = dependencyMap;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var3 = {};
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
     var0 = true;
-    var3.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = var5.bind(var6)(var2, var0, var1);
     var0 = 0;
-    var3 = var5[var0];
+    var1 = var4[var0];
     var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var7 = var3.ScrollView;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot4 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var6 = var4.bind(var0)(var3);
-    var3 = var6.createAnimatedComponent;
-    var3 = var3.bind(var6)(var7);
-    var _closure1_slot5 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var4 = var4.bind(var0)(var3);
-    var3 = var4.componentWithRef;
-    var1 = function(arg0, arg1) { // Environment: var1
-        _fun34877: for (var _fun34877_ip = 0;;) switch (_fun34877_ip) {
-            case 0:
-                var5 = arg0;
-                var7 = arg1;
-                var4 = var5.scrollViewOffset;
-                var2 = _closure1_slot3;
-                var1 = _closure1_slot2;
-                var3 = undefined;
-                var6 = var2.bind(var3)(var5, var1);
-                var1 = null;
-                if (!(var1 === var7)) {
-                    _fun34877_ip = 69;
-                    continue _fun34877
-                }
-            case 39:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 6;
-                var1 = var5[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useAnimatedRef;
-                var7 = var1.bind(var2)();
-            case 69:
-                if (!var4) {
-                    _fun34877_ip = 104;
-                    continue _fun34877
-                }
-            case 72:
-                var2 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var1 = 6;
-                var1 = var5[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useScrollViewOffset;
-                var1 = var1.bind(var2)(var7, var4);
-            case 104:
-                var1 = 'scrollEventThrottle';
-                var1 = var1 in var6;
-                if (var1) {
-                    _fun34877_ip = 124;
-                    continue _fun34877
-                }
-            case 115:
-                var1 = 1;
-                var6.scrollEventThrottle = var1;
-            case 124:
-                var2 = _closure1_slot4;
-                var1 = _closure1_slot5;
-                var0 = global;
-                var5 = var0.Object;
-                var4 = var5.assign;
-                var0 = {};
-                var0.ref = var7;
-                var0 = var4.bind(var5)(var0, var6);
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
-    };
-    var1 = var3.bind(var4)(var1);
-    var2.AnimatedScrollView = var1;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedGestureHandler;
+    var2.useAnimatedGestureHandler = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedKeyboard;
+    var2.useAnimatedKeyboard = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedProps;
+    var2.useAnimatedProps = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedReaction;
+    var2.useAnimatedReaction = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedRef;
+    var2.useAnimatedRef = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedScrollHandler;
+    var2.useAnimatedScrollHandler = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedSensor;
+    var2.useAnimatedSensor = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useAnimatedStyle;
+    var2.useAnimatedStyle = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useComposedEventHandler;
+    var2.useComposedEventHandler = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useDerivedValue;
+    var2.useDerivedValue = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useEvent;
+    var2.useEvent = var1;
+    var1 = 11;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useFrameCallback;
+    var2.useFrameCallback = var1;
+    var1 = 12;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useHandler;
+    var2.useHandler = var1;
+    var1 = 13;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useReducedMotion;
+    var2.useReducedMotion = var1;
+    var1 = 14;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useScrollViewOffset;
+    var2.useScrollViewOffset = var1;
+    var1 = 15;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useSharedValue;
+    var2.useSharedValue = var1;
+    var1 = 16;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.useWorkletCallback;
+    var2.useWorkletCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 3757, 3862, 3866]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3866, 3870, 3871, 3875, 3876, 3877, 3878, 3872, 3879, 3880, 3869, 3881, 3867, 3884, 3885, 3874, 3886]);

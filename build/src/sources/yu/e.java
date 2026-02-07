@@ -9,7 +9,7 @@ import kotlin.collections.CollectionsKt;
 public final class e implements su.b, bv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f55633a = new e();
+    public static final e f55681a = new e();
 
     private e() {
     }
@@ -33,7 +33,7 @@ public final class e implements su.b, bv.d {
                             break;
                         }
                         Object next = it.next();
-                        if (f55633a.a(next)) {
+                        if (f55681a.a(next)) {
                             obj3 = next;
                             break;
                         }
@@ -51,7 +51,7 @@ public final class e implements su.b, bv.d {
                 break;
             }
             Object next2 = it2.next();
-            if (f55633a.a(next2)) {
+            if (f55681a.a(next2)) {
                 obj3 = next2;
                 break;
             }

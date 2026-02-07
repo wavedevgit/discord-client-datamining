@@ -11,16 +11,16 @@ import ni.d0;
 public abstract class f implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Collection f40762d;
+    private transient Collection f40810d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient Set f40763e;
+    private transient Set f40811e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient Collection f40764i;
+    private transient Collection f40812i;
 
     /* renamed from: o  reason: collision with root package name */
-    private transient Map f40765o;
+    private transient Map f40813o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends d0.b {
@@ -68,10 +68,10 @@ public abstract class f implements b0 {
 
     @Override // ni.b0
     public Collection a() {
-        Collection collection = this.f40762d;
+        Collection collection = this.f40810d;
         if (collection == null) {
             Collection e10 = e();
-            this.f40762d = e10;
+            this.f40810d = e10;
             return e10;
         }
         return collection;
@@ -79,10 +79,10 @@ public abstract class f implements b0 {
 
     @Override // ni.b0
     public Map asMap() {
-        Map map = this.f40765o;
+        Map map = this.f40813o;
         if (map == null) {
             Map d10 = d();
-            this.f40765o = d10;
+            this.f40813o = d10;
             return d10;
         }
         return map;
@@ -125,10 +125,10 @@ public abstract class f implements b0 {
     }
 
     public Set i() {
-        Set set = this.f40763e;
+        Set set = this.f40811e;
         if (set == null) {
             Set f10 = f();
-            this.f40763e = f10;
+            this.f40811e = f10;
             return f10;
         }
         return set;
@@ -151,10 +151,10 @@ public abstract class f implements b0 {
 
     @Override // ni.b0
     public Collection values() {
-        Collection collection = this.f40764i;
+        Collection collection = this.f40812i;
         if (collection == null) {
             Collection g10 = g();
-            this.f40764i = g10;
+            this.f40812i = g10;
             return g10;
         }
         return collection;

@@ -13,10 +13,10 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private Object[] f34776d;
+    private Object[] f34824d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f34777e;
+    private int f34825e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -30,12 +30,12 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
 
     private ArrayMapImpl(Object[] objArr, int i10) {
         super(null);
-        this.f34776d = objArr;
-        this.f34777e = i10;
+        this.f34824d = objArr;
+        this.f34825e = i10;
     }
 
     private final void b(int i10) {
-        Object[] objArr = this.f34776d;
+        Object[] objArr = this.f34824d;
         if (objArr.length > i10) {
             return;
         }
@@ -43,19 +43,19 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
         do {
             length *= 2;
         } while (length <= i10);
-        Object[] copyOf = Arrays.copyOf(this.f34776d, length);
+        Object[] copyOf = Arrays.copyOf(this.f34824d, length);
         Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-        this.f34776d = copyOf;
+        this.f34824d = copyOf;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap
     public T get(int i10) {
-        return (T) kotlin.collections.i.c0(this.f34776d, i10);
+        return (T) kotlin.collections.i.c0(this.f34824d, i10);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap
     public int getSize() {
-        return this.f34777e;
+        return this.f34825e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.ArrayMap, java.lang.Iterable
@@ -64,7 +64,7 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
         return new kotlin.collections.c() { // from class: kotlin.reflect.jvm.internal.impl.util.ArrayMapImpl$iterator$1
 
             /* renamed from: i  reason: collision with root package name */
-            private int f34778i = -1;
+            private int f34826i = -1;
 
             @Override // kotlin.collections.c
             protected void a() {
@@ -73,19 +73,19 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
                 Object[] objArr3;
                 Object[] objArr4;
                 do {
-                    int i10 = this.f34778i + 1;
-                    this.f34778i = i10;
-                    objArr = ArrayMapImpl.this.f34776d;
+                    int i10 = this.f34826i + 1;
+                    this.f34826i = i10;
+                    objArr = ArrayMapImpl.this.f34824d;
                     if (i10 >= objArr.length) {
                         break;
                     }
-                    objArr4 = ArrayMapImpl.this.f34776d;
-                } while (objArr4[this.f34778i] == null);
-                int i11 = this.f34778i;
-                objArr2 = ArrayMapImpl.this.f34776d;
+                    objArr4 = ArrayMapImpl.this.f34824d;
+                } while (objArr4[this.f34826i] == null);
+                int i11 = this.f34826i;
+                objArr2 = ArrayMapImpl.this.f34824d;
                 if (i11 < objArr2.length) {
-                    objArr3 = ArrayMapImpl.this.f34776d;
-                    Object obj = objArr3[this.f34778i];
+                    objArr3 = ArrayMapImpl.this.f34824d;
+                    Object obj = objArr3[this.f34826i];
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type T of org.jetbrains.kotlin.util.ArrayMapImpl");
                     c(obj);
                     return;
@@ -99,10 +99,10 @@ public final class ArrayMapImpl<T> extends ArrayMap<T> {
     public void set(int i10, @NotNull T value) {
         Intrinsics.checkNotNullParameter(value, "value");
         b(i10);
-        if (this.f34776d[i10] == null) {
-            this.f34777e = getSize() + 1;
+        if (this.f34824d[i10] == null) {
+            this.f34825e = getSize() + 1;
         }
-        this.f34776d[i10] = value;
+        this.f34824d[i10] = value;
     }
 
     public ArrayMapImpl() {

@@ -31,7 +31,7 @@ public abstract class n {
             if (a10 != null) {
                 try {
                     a10.invoke(error, context);
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                     return;
                 } catch (Throwable th2) {
                     Log.e("RiveReactNative", "Error in custom error handler for context: " + context, th2);

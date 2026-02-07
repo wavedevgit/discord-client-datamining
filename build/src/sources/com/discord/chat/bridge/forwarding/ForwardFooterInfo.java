@@ -77,7 +77,7 @@ public final class ForwardFooterInfo {
         compositeEncoder.z(serialDescriptor, 1, forwardFooterInfo.originLabel);
         compositeEncoder.z(serialDescriptor, 2, forwardFooterInfo.accessibilityLabel);
         if (compositeEncoder.A(serialDescriptor, 3) || forwardFooterInfo.originIconUrl != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, forwardFooterInfo.originIconUrl);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, forwardFooterInfo.originIconUrl);
         }
     }
 

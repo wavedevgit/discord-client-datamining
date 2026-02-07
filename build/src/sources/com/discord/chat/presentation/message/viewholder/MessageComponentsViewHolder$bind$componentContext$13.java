@@ -19,7 +19,7 @@ public /* synthetic */ class MessageComponentsViewHolder$bind$componentContext$1
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((SoundmojiContentNode) obj);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void invoke(SoundmojiContentNode p02) {

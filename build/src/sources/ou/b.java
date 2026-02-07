@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f43551a;
+    private final Map f43599a;
 
     public b(X509Certificate... caCerts) {
         Intrinsics.checkNotNullParameter(caCerts, "caCerts");
@@ -27,13 +27,13 @@ public final class b implements e {
             }
             ((Set) obj).add(x509Certificate);
         }
-        this.f43551a = linkedHashMap;
+        this.f43599a = linkedHashMap;
     }
 
     @Override // ou.e
     public X509Certificate a(X509Certificate cert) {
         Intrinsics.checkNotNullParameter(cert, "cert");
-        Set set = (Set) this.f43551a.get(cert.getIssuerX500Principal());
+        Set set = (Set) this.f43599a.get(cert.getIssuerX500Principal());
         Object obj = null;
         if (set == null) {
             return null;
@@ -56,7 +56,7 @@ public final class b implements e {
 
     public boolean equals(Object obj) {
         if (obj != this) {
-            if (!(obj instanceof b) || !Intrinsics.areEqual(((b) obj).f43551a, this.f43551a)) {
+            if (!(obj instanceof b) || !Intrinsics.areEqual(((b) obj).f43599a, this.f43599a)) {
                 return false;
             }
             return true;
@@ -65,6 +65,6 @@ public final class b implements e {
     }
 
     public int hashCode() {
-        return this.f43551a.hashCode();
+        return this.f43599a.hashCode();
     }
 }

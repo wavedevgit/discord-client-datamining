@@ -6,7 +6,7 @@ import yi.c;
 final class m8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m8 f40085a = new m8();
+    static final m8 f40133a = new m8();
 
     static {
         c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);

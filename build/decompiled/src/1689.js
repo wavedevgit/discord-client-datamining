@@ -1,81 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun19278: for (var _fun19278_ip = 0;;) switch (_fun19278_ip) {
-        case 0:
-            var1 = exports;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var2 = {};
-            var0 = true;
-            var2.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var1, var0, var2);
-            var0 = undefined;
-            var1.default = var0;
-            var3 = dependencyMap;
-            var2 = 0;
-            var3 = var3[var2];
-            var2 = require;
-            var4 = var2.bind(var0)(var3);
-            if (!var4) {
-                _fun19278_ip = 75;
-                continue _fun19278
-            }
-        case 63:
-            var2 = var4.__esModule;
-            var3 = var4;
-            if (var2) {
-                _fun19278_ip = 84;
-                continue _fun19278
-            }
-        case 75:
-            var2 = {};
-            var2.default = var4;
-            var3 = var2;
-        case 84:
-            var2 = {};
-            var6 = var3.default;
-            var4 = {};
-            var5 = {
-                'full': 'EEEE, MMMM do, y',
-                'long': 'MMMM do, y',
-                'medium': 'MMM d, y',
-                'short': 'MM/dd/yyyy'
-            };
-            var4.formats = var5;
-            var5 = 'full';
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.date = var4;
-            var6 = var3.default;
-            var4 = {};
-            var7 = {
-                'full': 'h:mm:ss a zzzz',
-                'long': 'h:mm:ss a z',
-                'medium': 'h:mm:ss a',
-                'short': 'h:mm a'
-            };
-            var4.formats = var7;
-            var4.defaultWidth = var5;
-            var4 = var6.bind(var0)(var4);
-            var2.time = var4;
-            var4 = var3.default;
-            var3 = {};
-            var6 = {
-                'full': "{{date}} 'at' {{time}}",
-                'long': "{{date}} 'at' {{time}}",
-                'medium': '{{date}}, {{time}}',
-                'short': '{{date}}, {{time}}'
-            };
-            var3.formats = var6;
-            var3.defaultWidth = var5;
-            var3 = var4.bind(var0)(var3);
-            var2.dateTime = var3;
-            var1.default = var2;
-            var2 = var1.default;
-            var1 = module;
-            var1.exports = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1690]);
+    var8 = require;
+    var1 = exports;
+    var9 = dependencyMap;
+    var3 = function arg0() {
+        _fun19288: for (var _fun19288_ip = 0;;) switch (_fun19288_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun19288_ip = 18;
+                    continue _fun19288
+                }
+            case 6:
+                var1 = var2.__esModule;
+                var0 = var2;
+                if (var1) {
+                    _fun19288_ip = 27;
+                    continue _fun19288
+                }
+            case 18:
+                var1 = {};
+                var1.default = var2;
+                var0 = var1;
+            case 27:
+                return var0;
+        }
+    };
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = undefined;
+    var1.default = var0;
+    var2 = 0;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var7 = var3.bind(var0)(var2);
+    var2 = 1;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var6 = var3.bind(var0)(var2);
+    var2 = 2;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var5 = var3.bind(var0)(var2);
+    var2 = 3;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var4 = var3.bind(var0)(var2);
+    var2 = 4;
+    var2 = var9[var2];
+    var2 = var8.bind(var0)(var2);
+    var3 = var3.bind(var0)(var2);
+    var2 = {};
+    var8 = 'en-US';
+    var2.code = var8;
+    var7 = var7.default;
+    var2.formatDistance = var7;
+    var6 = var6.default;
+    var2.formatLong = var6;
+    var5 = var5.default;
+    var2.formatRelative = var5;
+    var4 = var4.default;
+    var2.localize = var4;
+    var3 = var3.default;
+    var2.match = var3;
+    var3 = {
+        'weekStartsOn': 0,
+        'firstWeekContainsDate': 1
+    };
+    var2.options = var3;
+    var1.default = var2;
+    var2 = var1.default;
+    var1 = arg4;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1690, 1691, 1693, 1694, 1696]);

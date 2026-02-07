@@ -82,13 +82,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIncomingFriendRequestCount = var3;
     var1 = function() {
-        _fun107249: for (var _fun107249_ip = 0;;) switch (_fun107249_ip) {
+        _fun107725: for (var _fun107725_ip = 0;;) switch (_fun107725_ip) {
             case 0:
                 var3 = arguments[0];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun107249_ip = 38;
-                    continue _fun107249
+                    _fun107725_ip = 38;
+                    continue _fun107725
                 }
             case 9:
                 var1 = global;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOutgoingFriendRequestCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11366, 3102, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11411, 3102, 566, 2]);

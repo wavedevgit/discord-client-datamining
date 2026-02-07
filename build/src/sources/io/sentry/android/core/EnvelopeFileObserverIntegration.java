@@ -9,16 +9,16 @@ import java.io.Closeable;
 public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private o1 f26932d;
+    private o1 f26980d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ILogger f26933e;
+    private ILogger f26981e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f26934i = false;
+    private boolean f26982i = false;
 
     /* renamed from: o  reason: collision with root package name */
-    protected final io.sentry.util.a f26935o = new io.sentry.util.a();
+    protected final io.sentry.util.a f26983o = new io.sentry.util.a();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -33,9 +33,9 @@ public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, C
     }
 
     public static /* synthetic */ void a(EnvelopeFileObserverIntegration envelopeFileObserverIntegration, io.sentry.w0 w0Var, k7 k7Var, String str) {
-        io.sentry.a1 a10 = envelopeFileObserverIntegration.f26935o.a();
+        io.sentry.a1 a10 = envelopeFileObserverIntegration.f26983o.a();
         try {
-            if (!envelopeFileObserverIntegration.f26934i) {
+            if (!envelopeFileObserverIntegration.f26982i) {
                 envelopeFileObserverIntegration.n(w0Var, k7Var, str);
             }
             if (a10 != null) {
@@ -59,7 +59,7 @@ public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, C
 
     private void n(io.sentry.w0 w0Var, k7 k7Var, String str) {
         o1 o1Var = new o1(str, new j3(w0Var, k7Var.getEnvelopeReader(), k7Var.getSerializer(), k7Var.getLogger(), k7Var.getFlushTimeoutMillis(), k7Var.getMaxQueueSize()), k7Var.getLogger(), k7Var.getFlushTimeoutMillis());
-        this.f26932d = o1Var;
+        this.f26980d = o1Var;
         try {
             o1Var.startWatching();
             k7Var.getLogger().c(SentryLevel.DEBUG, "EnvelopeFileObserverIntegration installed.", new Object[0]);
@@ -71,16 +71,16 @@ public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, C
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        io.sentry.a1 a10 = this.f26935o.a();
+        io.sentry.a1 a10 = this.f26983o.a();
         try {
-            this.f26934i = true;
+            this.f26982i = true;
             if (a10 != null) {
                 a10.close();
             }
-            o1 o1Var = this.f26932d;
+            o1 o1Var = this.f26980d;
             if (o1Var != null) {
                 o1Var.stopWatching();
-                ILogger iLogger = this.f26933e;
+                ILogger iLogger = this.f26981e;
                 if (iLogger != null) {
                     iLogger.c(SentryLevel.DEBUG, "EnvelopeFileObserverIntegration removed.", new Object[0]);
                 }
@@ -101,13 +101,13 @@ public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, C
     public final void g(final io.sentry.w0 w0Var, final k7 k7Var) {
         io.sentry.util.y.c(w0Var, "Scopes are required");
         io.sentry.util.y.c(k7Var, "SentryOptions is required");
-        this.f26933e = k7Var.getLogger();
+        this.f26981e = k7Var.getLogger();
         final String m10 = m(k7Var);
         if (m10 == null) {
-            this.f26933e.c(SentryLevel.WARNING, "Null given as a path to EnvelopeFileObserverIntegration. Nothing will be registered.", new Object[0]);
+            this.f26981e.c(SentryLevel.WARNING, "Null given as a path to EnvelopeFileObserverIntegration. Nothing will be registered.", new Object[0]);
             return;
         }
-        this.f26933e.c(SentryLevel.DEBUG, "Registering EnvelopeFileObserverIntegration for path: %s", m10);
+        this.f26981e.c(SentryLevel.DEBUG, "Registering EnvelopeFileObserverIntegration for path: %s", m10);
         try {
             k7Var.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.core.p1
                 @Override // java.lang.Runnable
@@ -116,7 +116,7 @@ public abstract class EnvelopeFileObserverIntegration implements io.sentry.k1, C
                 }
             });
         } catch (Throwable th2) {
-            this.f26933e.b(SentryLevel.DEBUG, "Failed to start EnvelopeFileObserverIntegration on executor thread.", th2);
+            this.f26981e.b(SentryLevel.DEBUG, "Failed to start EnvelopeFileObserverIntegration on executor thread.", th2);
         }
     }
 

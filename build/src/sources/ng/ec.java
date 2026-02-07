@@ -5,7 +5,7 @@ import yi.c;
 final class ec implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ec f39793a = new ec();
+    static final ec f39841a = new ec();
 
     static {
         c.b a10 = yi.c.a("subjectSegmenterOptions");

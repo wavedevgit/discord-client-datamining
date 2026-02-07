@@ -8,25 +8,25 @@ import java.util.regex.Pattern;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Pattern f45747a = Pattern.compile("[\\\\&]");
+    private static final Pattern f45795a = Pattern.compile("[\\\\&]");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f45748b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
+    private static final Pattern f45796b = Pattern.compile("\\\\[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]|&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});", 2);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f45749c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
+    private static final Pattern f45797c = Pattern.compile("(%[a-fA-F0-9]{0,2}|[^:/?#@!$&'()*+,;=a-zA-Z0-9\\-._~])");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final char[] f45750d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static final char[] f45798d = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Pattern f45751e = Pattern.compile("[ \t\r\n]+");
+    private static final Pattern f45799e = Pattern.compile("[ \t\r\n]+");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final c f45752f = new C0594a();
+    private static final c f45800f = new C0594a();
 
     /* renamed from: g  reason: collision with root package name */
-    private static final c f45753g = new b();
+    private static final c f45801g = new b();
 
     /* renamed from: pv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -63,8 +63,8 @@ public abstract class a {
             }
             for (byte b10 : str.getBytes(Charset.forName("UTF-8"))) {
                 sb2.append('%');
-                sb2.append(a.f45750d[(b10 >> 4) & 15]);
-                sb2.append(a.f45750d[b10 & 15]);
+                sb2.append(a.f45798d[(b10 >> 4) & 15]);
+                sb2.append(a.f45798d[b10 & 15]);
             }
         }
     }
@@ -76,7 +76,7 @@ public abstract class a {
     }
 
     public static String b(String str) {
-        return f45751e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
+        return f45799e.matcher(str.trim().toLowerCase(Locale.ROOT)).replaceAll(" ");
     }
 
     public static String c(String str) {
@@ -102,8 +102,8 @@ public abstract class a {
     }
 
     public static String e(String str) {
-        if (f45747a.matcher(str).find()) {
-            return d(f45748b, str, f45752f);
+        if (f45795a.matcher(str).find()) {
+            return d(f45796b, str, f45800f);
         }
         return str;
     }

@@ -18,13 +18,13 @@ import org.conscrypt.ConscryptHostnameVerifier;
 public final class d extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f36759e;
+    public static final a f36807e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f36760f;
+    private static final boolean f36808f;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f36761d;
+    private final Provider f36809d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -59,7 +59,7 @@ public final class d extends h {
         }
 
         public final boolean c() {
-            return d.f36760f;
+            return d.f36808f;
         }
 
         private a() {
@@ -70,7 +70,7 @@ public final class d extends h {
     public static final class b implements ConscryptHostnameVerifier {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f36762a = new b();
+        public static final b f36810a = new b();
 
         private b() {
         }
@@ -78,7 +78,7 @@ public final class d extends h {
 
     static {
         a aVar = new a(null);
-        f36759e = aVar;
+        f36807e = aVar;
         boolean z10 = false;
         try {
             Class.forName("org.conscrypt.Conscrypt$Version", false, aVar.getClass().getClassLoader());
@@ -89,7 +89,7 @@ public final class d extends h {
             }
         } catch (ClassNotFoundException | NoClassDefFoundError unused) {
         }
-        f36760f = z10;
+        f36808f = z10;
     }
 
     public /* synthetic */ d(DefaultConstructorMarker defaultConstructorMarker) {
@@ -102,7 +102,7 @@ public final class d extends h {
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         if (Conscrypt.isConscrypt(sslSocket)) {
             Conscrypt.setUseSessionTickets(sslSocket, true);
-            Conscrypt.setApplicationProtocols(sslSocket, (String[]) h.f36777a.b(protocols).toArray(new String[0]));
+            Conscrypt.setApplicationProtocols(sslSocket, (String[]) h.f36825a.b(protocols).toArray(new String[0]));
             return;
         }
         super.e(sslSocket, str, protocols);
@@ -119,7 +119,7 @@ public final class d extends h {
 
     @Override // lu.h
     public SSLContext n() {
-        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f36761d);
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f36809d);
         Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
         return sSLContext;
     }
@@ -145,7 +145,7 @@ public final class d extends h {
             if (trustManager instanceof X509TrustManager) {
                 Intrinsics.checkNotNull(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
                 X509TrustManager x509TrustManager = (X509TrustManager) trustManager;
-                Conscrypt.setHostnameVerifier(x509TrustManager, b.f36762a);
+                Conscrypt.setHostnameVerifier(x509TrustManager, b.f36810a);
                 return x509TrustManager;
             }
         }
@@ -160,6 +160,6 @@ public final class d extends h {
     private d() {
         Provider newProvider = Conscrypt.newProvider();
         Intrinsics.checkNotNullExpressionValue(newProvider, "newProvider()");
-        this.f36761d = newProvider;
+        this.f36809d = newProvider;
     }
 }

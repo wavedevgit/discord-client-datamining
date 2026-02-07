@@ -5,7 +5,7 @@ import yi.c;
 final class u9 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u9 f47566a = new u9();
+    static final u9 f47614a = new u9();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

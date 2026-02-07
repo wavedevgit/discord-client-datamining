@@ -6,33 +6,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class k {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f48130b = new b(null);
+    public static final b f48178b = new b(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c f48131c = new c();
+    private static final c f48179c = new c();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f48132a;
+    private final Object f48180a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Throwable f48133a;
+        public final Throwable f48181a;
 
         public a(Throwable th2) {
-            this.f48133a = th2;
+            this.f48181a = th2;
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && Intrinsics.areEqual(this.f48133a, ((a) obj).f48133a)) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f48181a, ((a) obj).f48181a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            Throwable th2 = this.f48133a;
+            Throwable th2 = this.f48181a;
             if (th2 != null) {
                 return th2.hashCode();
             }
@@ -41,7 +41,7 @@ public final class k {
 
         @Override // qs.k.c
         public String toString() {
-            return "Closed(" + this.f48133a + ')';
+            return "Closed(" + this.f48181a + ')';
         }
     }
 
@@ -56,7 +56,7 @@ public final class k {
         }
 
         public final Object b() {
-            return k.c(k.f48131c);
+            return k.c(k.f48179c);
         }
 
         public final Object c(Object obj) {
@@ -75,7 +75,7 @@ public final class k {
     }
 
     private /* synthetic */ k(Object obj) {
-        this.f48132a = obj;
+        this.f48180a = obj;
     }
 
     public static final /* synthetic */ k b(Object obj) {
@@ -99,7 +99,7 @@ public final class k {
         if (aVar == null) {
             return null;
         }
-        return aVar.f48133a;
+        return aVar.f48181a;
     }
 
     public static final Object f(Object obj) {
@@ -132,19 +132,19 @@ public final class k {
     }
 
     public boolean equals(Object obj) {
-        return d(this.f48132a, obj);
+        return d(this.f48180a, obj);
     }
 
     public int hashCode() {
-        return g(this.f48132a);
+        return g(this.f48180a);
     }
 
     public final /* synthetic */ Object k() {
-        return this.f48132a;
+        return this.f48180a;
     }
 
     public String toString() {
-        return j(this.f48132a);
+        return j(this.f48180a);
     }
 
     public static Object c(Object obj) {

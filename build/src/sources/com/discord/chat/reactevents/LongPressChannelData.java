@@ -63,16 +63,16 @@ public final class LongPressChannelData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(LongPressChannelData longPressChannelData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || longPressChannelData.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, longPressChannelData.guildId);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, longPressChannelData.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || longPressChannelData.channelId != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, longPressChannelData.channelId);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, longPressChannelData.channelId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || longPressChannelData.messageId != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, longPressChannelData.messageId);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, longPressChannelData.messageId);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || longPressChannelData.originalLink != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, longPressChannelData.originalLink);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, longPressChannelData.originalLink);
         }
     }
 

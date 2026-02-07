@@ -1,106 +1,244 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        _fun97536: for (var _fun97536_ip = 0;;) switch (_fun97536_ip) {
-            case 0:
-                var4 = arg0;
-                var3 = undefined;
-                var2 = undefined;
-                var1 = undefined;
-                var5 = undefined;
-                var0 = undefined;
-            case 13: // try_start_0
-                var6 = var4;
-                if (var6) {
-                    _fun97536_ip = 23;
-                    continue _fun97536
+    _fun97466: for (var _fun97466_ip = 0;;) switch (_fun97466_ip) {
+        case 0:
+            var5 = require;
+            var6 = dependencyMap;
+            var _closure1_slot0 = var5;
+            var _closure1_slot1 = var6;
+            var0 = global;
+            var1 = var0.TypeError;
+            var _closure1_slot2 = var1;
+            var1 = var0.Object;
+            var1 = var1.defineProperty;
+            var _closure1_slot3 = var1;
+            var0 = var0.Object;
+            var0 = var0.getOwnPropertyDescriptor;
+            var _closure1_slot4 = var0;
+            var0 = 0;
+            var2 = var6[var0];
+            var0 = undefined;
+            var2 = var5.bind(var0)(var2);
+            if (var2) {
+                _fun97466_ip = 84;
+                continue _fun97466
+            }
+        case 75:
+            var2 = function arg0, arg1, arg2() {
+                _fun97468: for (var _fun97468_ip = 0;;) switch (_fun97468_ip) {
+                    case 0:
+                        var11 = arg0;
+                        var10 = arg1;
+                        var7 = arg2;
+                        var1 = var11;
+                        var3 = var10;
+                        var2 = var7;
+                        var5 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var4 = 2;
+                        var9 = var6[var4];
+                        var8 = undefined;
+                        var9 = var5.bind(var8)(var9);
+                        var9 = var9.bind(var8)(var11);
+                        var9 = 3;
+                        var9 = var6[var9];
+                        var9 = var5.bind(var8)(var9);
+                        var3 = var9.bind(var8)(var10);
+                        var4 = var6[var4];
+                        var4 = var5.bind(var8)(var4);
+                        var4 = var4.bind(var8)(var7);
+                        var4 = 4;
+                        var4 = var6[var4];
+                        var4 = var5.bind(var8)(var4);
+                        if (!var4) {
+                            _fun97468_ip = 118;
+                            continue _fun97468
+                        }
+                    case 94: // try_start_0
+                        var7 = _closure1_slot3;
+                        var6 = var1;
+                        var5 = var3;
+                        var4 = var2;
+                        var4 = var7.bind(var8)(var6, var5, var4);
+                    case 114: // try_end0
+                        return var4;
+                    case 116: // catch_target0
+                        CatchBlockStart(arg_register = 4);
+                    case 118:
+                        var5 = var2;
+                        var4 = 'get';
+                        var4 = var4 in var5;
+                        if (var4) {
+                            _fun97468_ip = 174;
+                            continue _fun97468
+                        }
+                    case 132:
+                        var5 = var2;
+                        var4 = 'set';
+                        var4 = var4 in var5;
+                        if (var4) {
+                            _fun97468_ip = 174;
+                            continue _fun97468
+                        }
+                    case 146:
+                        var5 = var2;
+                        var4 = 'value';
+                        var4 = var4 in var5;
+                        if (!var4) {
+                            _fun97468_ip = 172;
+                            continue _fun97468
+                        }
+                    case 160:
+                        var4 = var1;
+                        var2 = var2.value;
+                        var4[var3] = var2;
+                    case 172:
+                        return var1;
+                    case 174:
+                        var2 = _closure1_slot2;
+                        var0 = var2.prototype;
+                        var1 = Object.create(var0, {
+                            constructor: {
+                                value: var2
+                            }
+                        });
+                        var14 = 'Accessors not supported';
+                        var15 = var1;
+                        var0 = new var15[var2](var14, var13);
+                        var0 = var0 instanceof Object ? var0 : var1;
+                        throw var0;
                 }
-            case 19: // try_end0
-                var6 = null;
-                return var6;
-            case 23: // try_start_1
-                var6 = var4;
-                var6 = var6.reactNativeVersion;
-                if (var6) {
-                    _fun97536_ip = 39;
-                    continue _fun97536
+            };
+            _fun97466_ip = 109;
+            continue _fun97466;
+        case 84:
+            var4 = 1;
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            if (!var4) {
+                _fun97466_ip = 106;
+                continue _fun97466
+            }
+        case 99:
+            var1 = function arg0, arg1, arg2() {
+                _fun97467: for (var _fun97467_ip = 0;;) switch (_fun97467_ip) {
+                    case 0:
+                        var4 = arg0;
+                        var7 = arg2;
+                        var5 = _closure1_slot0;
+                        var6 = _closure1_slot1;
+                        var1 = 2;
+                        var2 = var6[var1];
+                        var3 = undefined;
+                        var2 = var5.bind(var3)(var2);
+                        var2 = var2.bind(var3)(var4);
+                        var2 = 3;
+                        var2 = var6[var2];
+                        var8 = var5.bind(var3)(var2);
+                        var2 = arg1;
+                        var2 = var8.bind(var3)(var2);
+                        var1 = var6[var1];
+                        var1 = var5.bind(var3)(var1);
+                        var1 = var1.bind(var3)(var7);
+                        var6 = 'function';
+                        var5 = typeof var4;
+                        var1 = var7;
+                        if (!(var6 === var5)) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 87:
+                        var5 = 'prototype';
+                        var1 = var7;
+                        if (!(var5 === var2)) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 101:
+                        var5 = 'value';
+                        var5 = var5 in var7;
+                        var1 = var7;
+                        if (!var5) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 118:
+                        var5 = 'writable';
+                        var5 = var5 in var7;
+                        var1 = var7;
+                        if (!var5) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 132:
+                        var5 = var7.writable;
+                        var1 = var7;
+                        if (var5) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 144:
+                        var5 = _closure1_slot4;
+                        var6 = var5.bind(var3)(var4, var2);
+                        var5 = var6;
+                        if (!var5) {
+                            _fun97467_ip = 166;
+                            continue _fun97467
+                        }
+                    case 160:
+                        var5 = var6.writable;
+                    case 166:
+                        var1 = var7;
+                        if (!var5) {
+                            _fun97467_ip = 250;
+                            continue _fun97467
+                        }
+                    case 172:
+                        var5 = var7.value;
+                        var4[var2] = var5;
+                        var5 = {};
+                        var8 = 'configurable';
+                        var8 = var8 in var7;
+                        if (var8) {
+                            _fun97467_ip = 202;
+                            continue _fun97467
+                        }
+                    case 194:
+                        var8 = var6.configurable;
+                        _fun97467_ip = 208;
+                        continue _fun97467;
+                    case 202:
+                        var8 = var7.configurable;
+                    case 208:
+                        var5.configurable = var8;
+                        var8 = 'enumerable';
+                        var8 = var8 in var7;
+                        if (var8) {
+                            _fun97467_ip = 231;
+                            continue _fun97467
+                        }
+                    case 224:
+                        var6 = var6.enumerable;
+                        _fun97467_ip = 236;
+                        continue _fun97467;
+                    case 231:
+                        var6 = var7.enumerable;
+                    case 236:
+                        var5.enumerable = var6;
+                        var6 = false;
+                        var5.writable = var6;
+                        var1 = var5;
+                    case 250:
+                        var0 = _closure1_slot3;
+                        var0 = var0.bind(var3)(var4, var2, var1);
+                        return var0;
                 }
-            case 35: // try_end1
-                var6 = null;
-                return var6;
-            case 39: // try_start_2
-                var6 = var4;
-                var4 = var6.reactNativeVersion;
-                var4 = var4.major;
-                var3 = var4;
-                var7 = var6.reactNativeVersion;
-                var2 = var7.minor;
-                var7 = var6.reactNativeVersion;
-                var1 = var7.patch;
-                var6 = var6.reactNativeVersion;
-                var5 = var6.prerelease;
-                var6 = 'number';
-                var4 = typeof var4;
-                if (!(var6 === var4)) {
-                    _fun97536_ip = 221;
-                    continue _fun97536
-                }
-            case 104:
-                var6 = new Array(0);
-                var0 = var6;
-                var4 = var6.push;
-                var15 = var3;
-                var13 = var2;
-                var11 = var1;
-                var1 = global;
-                var2 = var1.HermesInternal;
-                var7 = var2.concat;
-                var2 = '';
-                var3 = '.';
-                var16 = var2;
-                var14 = var3;
-                var12 = var3;
-                var3 = var16[var7](var15, var14, var13, var12, var11, var10);
-                var3 = var4.bind(var6)(var3);
-                var3 = var5;
-                if (!var3) {
-                    _fun97536_ip = 206;
-                    continue _fun97536
-                }
-            case 170:
-                var4 = var0;
-                var3 = var4.push;
-                var6 = var5;
-                var1 = var1.HermesInternal;
-                var5 = var1.concat;
-                var1 = '-';
-                var1 = var5.bind(var1)(var6);
-                var1 = var3.bind(var4)(var1);
-            case 206:
-                var1 = var0;
-                var0 = var1.join;
-                var0 = var0.bind(var1)(var2);
-            case 219: // try_end2
-                return var0;
-            case 221:
-                var0 = null;
-                return var0;
-            case 225: // catch_target0 // catch_target1 // catch_target2
-                CatchBlockStart(arg_register = 0);
-                var0 = null;
-                return var0;
-        }
-    };
-    var1.getReactNativeVersionWithModules = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+        case 106:
+            var2 = var1;
+        case 109:
+            var1 = arg5;
+            var1.f = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12710, 12762, 12759, 12719, 12742]);

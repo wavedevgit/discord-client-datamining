@@ -3,16 +3,16 @@ package og;
 final class kc extends h6 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final mc f42212i;
+    private final mc f42260i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public kc(mc mcVar, int i10) {
         super(mcVar.size(), i10);
-        this.f42212i = mcVar;
+        this.f42260i = mcVar;
     }
 
     @Override // og.h6
     protected final Object a(int i10) {
-        return this.f42212i.get(i10);
+        return this.f42260i.get(i10);
     }
 }

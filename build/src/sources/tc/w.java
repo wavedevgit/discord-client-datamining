@@ -8,24 +8,24 @@ import ne.h0;
 public final class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f50574a = new h0(10);
+    private final h0 f50622a = new h0(10);
 
     public Metadata a(l lVar, h.a aVar) {
         Metadata metadata = null;
         int i10 = 0;
         while (true) {
             try {
-                lVar.n(this.f50574a.e(), 0, 10);
-                this.f50574a.U(0);
-                if (this.f50574a.K() != 4801587) {
+                lVar.n(this.f50622a.e(), 0, 10);
+                this.f50622a.U(0);
+                if (this.f50622a.K() != 4801587) {
                     break;
                 }
-                this.f50574a.V(3);
-                int G = this.f50574a.G();
+                this.f50622a.V(3);
+                int G = this.f50622a.G();
                 int i11 = G + 10;
                 if (metadata == null) {
                     byte[] bArr = new byte[i11];
-                    System.arraycopy(this.f50574a.e(), 0, bArr, 0, 10);
+                    System.arraycopy(this.f50622a.e(), 0, bArr, 0, 10);
                     lVar.n(bArr, 10, G);
                     metadata = new ld.h(aVar).e(bArr, i11);
                 } else {

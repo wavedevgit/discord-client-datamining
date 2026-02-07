@@ -6,7 +6,7 @@ import java.util.Date;
 public final /* synthetic */ class DateRetargetClass {
     public static Instant toInstant(Date date) {
         long time = date.getTime();
-        Instant instant = Instant.f29377c;
+        Instant instant = Instant.f29425c;
         return Instant.r(Math.floorDiv(time, 1000L), ((int) Math.floorMod(time, 1000L)) * 1000000);
     }
 }

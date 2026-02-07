@@ -28,7 +28,7 @@ public abstract class d {
             } else {
                 i10 = 0;
                 for (k4.z zVar : list) {
-                    if (zVar.d().f43694j.e() && (i10 = i10 + 1) < 0) {
+                    if (zVar.d().f43742j.e() && (i10 = i10 + 1) < 0) {
                         CollectionsKt.u();
                     }
                 }
@@ -51,10 +51,10 @@ public abstract class d {
 
     public static final p4.u b(p4.u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        k4.d dVar = workSpec.f43694j;
-        String str = workSpec.f43687c;
+        k4.d dVar = workSpec.f43742j;
+        String str = workSpec.f43735c;
         if (!Intrinsics.areEqual(str, ConstraintTrackingWorker.class.getName()) && (dVar.f() || dVar.i())) {
-            androidx.work.b a10 = new b.a().c(workSpec.f43689e).h("androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME", str).a();
+            androidx.work.b a10 = new b.a().c(workSpec.f43737e).h("androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME", str).a();
             Intrinsics.checkNotNullExpressionValue(a10, "Builder().putAll(workSpe…ame)\n            .build()");
             String name = ConstraintTrackingWorker.class.getName();
             Intrinsics.checkNotNullExpressionValue(name, "name");

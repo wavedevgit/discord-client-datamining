@@ -26,7 +26,7 @@ public final class BulletListContentNode extends ContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.c
+    private static final Lazy[] $childSerializers = {null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -92,7 +92,7 @@ public final class BulletListContentNode extends ContentNode {
     public static final /* synthetic */ void write$Self$chat_release(BulletListContentNode bulletListContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.A(serialDescriptor, 0) || bulletListContentNode.start != null) {
-            compositeEncoder.l(serialDescriptor, 0, z0.f31115a, bulletListContentNode.start);
+            compositeEncoder.l(serialDescriptor, 0, z0.f31163a, bulletListContentNode.start);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || bulletListContentNode.ordered) {
             compositeEncoder.y(serialDescriptor, 1, bulletListContentNode.ordered);

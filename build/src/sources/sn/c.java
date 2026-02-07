@@ -12,7 +12,7 @@ public abstract class c {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49996a;
+        public static final /* synthetic */ int[] f50044a;
 
         static {
             int[] iArr = new int[Screen.StackAnimation.values().length];
@@ -52,7 +52,7 @@ public abstract class c {
                 iArr[Screen.StackAnimation.f18160t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
-            f49996a = iArr;
+            f50044a = iArr;
         }
     }
 
@@ -60,7 +60,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(fragmentTransaction, "<this>");
         Intrinsics.checkNotNullParameter(stackAnimation, "stackAnimation");
         if (z10) {
-            switch (a.f49996a[stackAnimation.ordinal()]) {
+            switch (a.f50044a[stackAnimation.ordinal()]) {
                 case 1:
                     fragmentTransaction.r(q.f18299a, q.f18300b);
                     return;
@@ -93,7 +93,7 @@ public abstract class c {
                     throw new p();
             }
         }
-        switch (a.f49996a[stackAnimation.ordinal()]) {
+        switch (a.f50044a[stackAnimation.ordinal()]) {
             case 1:
                 fragmentTransaction.r(q.f18301c, q.f18302d);
                 return;

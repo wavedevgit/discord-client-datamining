@@ -70,7 +70,7 @@ final class g {
     }
 
     public g(AudioTrack audioTrack) {
-        if (w0.f39012a >= 19) {
+        if (w0.f39060a >= 19) {
             this.f12135a = new a(audioTrack);
             g();
             return;

@@ -5,10 +5,10 @@ import ji.r0;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final r0 f26734a = new r0("SplitInstallInfoProvider");
+    private static final r0 f26782a = new r0("SplitInstallInfoProvider");
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f26735b = 0;
+    public static final /* synthetic */ int f26783b = 0;
 
     public static String a(String str) {
         if (str.startsWith("config.")) {

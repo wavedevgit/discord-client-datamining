@@ -38,7 +38,7 @@ public /* synthetic */ class TapObscuredMediaLearnMoreData$$serializer implement
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, n2Var, n2Var, n2Var};
     }
 

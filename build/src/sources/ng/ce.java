@@ -3,18 +3,18 @@ package ng;
 public final class ce {
 
     /* renamed from: a  reason: collision with root package name */
-    private de f39751a;
+    private de f39799a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f39752b;
+    private Integer f39800b;
 
     public final ce a(de deVar) {
-        this.f39751a = deVar;
+        this.f39799a = deVar;
         return this;
     }
 
     public final ce b(Integer num) {
-        this.f39752b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f39800b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

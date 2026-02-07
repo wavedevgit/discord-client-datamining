@@ -20,7 +20,7 @@ public abstract class g {
         final ShapeableImageView shapeableImageView = new ShapeableImageView(a10);
         shapeableImageView.setImageResource(dq.d.f21020b);
         shapeableImageView.setAdjustViewBounds(true);
-        int dimension = (int) a10.getResources().getDimension(rp.k.f49065b);
+        int dimension = (int) a10.getResources().getDimension(rp.k.f49113b);
         shapeableImageView.setPadding(dimension, shapeableImageView.getPaddingTop(), dimension, shapeableImageView.getPaddingBottom());
         uiComponentHelper.d(new Function0() { // from class: fq.f
             @Override // kotlin.jvm.functions.Function0
@@ -42,7 +42,7 @@ public abstract class g {
             ((ViewGroup.MarginLayoutParams) layoutParams2).width = -2;
             ((ViewGroup.MarginLayoutParams) layoutParams2).height = -2;
             shapeableImageView.setLayoutParams(layoutParams2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }

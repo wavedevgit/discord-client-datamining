@@ -16,15 +16,15 @@ import okio.ByteString;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f26498a;
+    private static final ByteString f26546a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f26499b;
+    private static final ByteString f26547b;
 
     static {
-        ByteString.a aVar = ByteString.f43166o;
-        f26498a = aVar.g("\"\\");
-        f26499b = aVar.g("\t ,=");
+        ByteString.a aVar = ByteString.f43214o;
+        f26546a = aVar.g("\"\\");
+        f26547b = aVar.g("\t ,=");
     }
 
     public static final List a(Headers headers, String headerName) {
@@ -37,7 +37,7 @@ public abstract class e {
                 try {
                     c(new Buffer().q0(headers.j(i10)), arrayList);
                 } catch (EOFException e10) {
-                    lu.h.f36777a.g().k("Unable to parse challenge", 5, e10);
+                    lu.h.f36825a.g().k("Unable to parse challenge", 5, e10);
                 }
             }
         }
@@ -173,7 +173,7 @@ public abstract class e {
         if (buffer.readByte() == 34) {
             Buffer buffer2 = new Buffer();
             while (true) {
-                long f02 = buffer.f0(f26498a);
+                long f02 = buffer.f0(f26546a);
                 if (f02 == -1) {
                     return null;
                 }
@@ -195,7 +195,7 @@ public abstract class e {
     }
 
     private static final String e(Buffer buffer) {
-        long f02 = buffer.f0(f26499b);
+        long f02 = buffer.f0(f26547b);
         if (f02 == -1) {
             f02 = buffer.size();
         }
@@ -209,8 +209,8 @@ public abstract class e {
         Intrinsics.checkNotNullParameter(cookieJar, "<this>");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(headers, "headers");
-        if (cookieJar != CookieJar.f42839b) {
-            List e10 = Cookie.f42815j.e(url, headers);
+        if (cookieJar != CookieJar.f42887b) {
+            List e10 = Cookie.f42863j.e(url, headers);
             if (e10.isEmpty()) {
                 return;
             }

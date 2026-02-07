@@ -42,7 +42,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinClassFinder f33172a;
+    private final KotlinClassFinder f33220a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static abstract class AnnotationsContainer<A> {
@@ -160,31 +160,31 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f33173d = new a("PROPERTY", 0);
+        public static final a f33221d = new a("PROPERTY", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f33174e = new a("BACKING_FIELD", 1);
+        public static final a f33222e = new a("BACKING_FIELD", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f33175i = new a("DELEGATE_FIELD", 2);
+        public static final a f33223i = new a("DELEGATE_FIELD", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f33176o;
+        private static final /* synthetic */ a[] f33224o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f33177p;
+        private static final /* synthetic */ EnumEntries f33225p;
 
         static {
             a[] a10 = a();
-            f33176o = a10;
-            f33177p = xr.a.a(a10);
+            f33224o = a10;
+            f33225p = xr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f33173d, f33174e, f33175i};
+            return new a[]{f33221d, f33222e, f33223i};
         }
 
         public static a valueOf(String str) {
@@ -192,13 +192,13 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
         }
 
         public static a[] values() {
-            return (a[]) f33176o.clone();
+            return (a[]) f33224o.clone();
         }
     }
 
     public AbstractBinaryClassAnnotationLoader(@NotNull KotlinClassFinder kotlinClassFinder) {
         Intrinsics.checkNotNullParameter(kotlinClassFinder, "kotlinClassFinder");
-        this.f33172a = kotlinClassFinder;
+        this.f33220a = kotlinClassFinder;
     }
 
     private final int a(ProtoContainer protoContainer, MessageLite messageLite) {
@@ -228,7 +228,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     }
 
     private final List b(ProtoContainer protoContainer, MemberSignature memberSignature, boolean z10, boolean z11, Boolean bool, boolean z12) {
-        KotlinJvmBinaryClass d10 = d(protoContainer, Companion.getSpecialCaseContainerClass(protoContainer, z10, z11, bool, z12, this.f33172a, getMetadataVersion()));
+        KotlinJvmBinaryClass d10 = d(protoContainer, Companion.getSpecialCaseContainerClass(protoContainer, z10, z11, bool, z12, this.f33220a, getMetadataVersion()));
         if (d10 == null) {
             return CollectionsKt.l();
         }
@@ -273,7 +273,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         bool.booleanValue();
         boolean isMovedFromInterfaceCompanion = JvmProtoBufUtil.isMovedFromInterfaceCompanion(property);
-        if (aVar == a.f33173d) {
+        if (aVar == a.f33221d) {
             MemberSignature propertySignature$default = AbstractBinaryClassAnnotationLoaderKt.getPropertySignature$default(property, protoContainer.getNameResolver(), protoContainer.getTypeTable(), false, true, false, 40, null);
             if (propertySignature$default == null) {
                 return CollectionsKt.l();
@@ -286,7 +286,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
         }
         boolean z10 = false;
         boolean V = StringsKt.V(propertySignature$default2.getSignature(), "$delegate", false, 2, null);
-        if (aVar == a.f33175i) {
+        if (aVar == a.f33223i) {
             z10 = true;
         }
         if (V != z10) {
@@ -383,7 +383,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final KotlinClassFinder g() {
-        return this.f33172a;
+        return this.f33220a;
     }
 
     protected abstract AnnotationsContainer getAnnotationsContainer(KotlinJvmBinaryClass kotlinJvmBinaryClass);
@@ -395,7 +395,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     public final boolean h(ClassId classId) {
         KotlinJvmBinaryClass findKotlinClass;
         Intrinsics.checkNotNullParameter(classId, "classId");
-        if (classId.getOuterClassId() == null || !Intrinsics.areEqual(classId.getShortClassName().asString(), "Container") || (findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f33172a, classId, getMetadataVersion())) == null || !SpecialJvmAnnotations.INSTANCE.isAnnotatedWithContainerMetaAnnotation(findKotlinClass)) {
+        if (classId.getOuterClassId() == null || !Intrinsics.areEqual(classId.getShortClassName().asString(), "Container") || (findKotlinClass = KotlinClassFinderKt.findKotlinClass(this.f33220a, classId, getMetadataVersion())) == null || !SpecialJvmAnnotations.INSTANCE.isAnnotatedWithContainerMetaAnnotation(findKotlinClass)) {
             return false;
         }
         return true;
@@ -425,7 +425,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(kind, "kind");
         if (kind == AnnotatedCallableKind.PROPERTY) {
-            return k(container, (ProtoBuf.Property) proto, a.f33173d);
+            return k(container, (ProtoBuf.Property) proto, a.f33221d);
         }
         MemberSignature callableSignature$default = getCallableSignature$default(this, proto, container.getNameResolver(), container.getTypeTable(), kind, false, 16, null);
         if (callableSignature$default == null) {
@@ -484,7 +484,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     public List<A> loadPropertyBackingFieldAnnotations(@NotNull ProtoContainer container, @NotNull ProtoBuf.Property proto) {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        return k(container, proto, a.f33174e);
+        return k(container, proto, a.f33222e);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.AnnotationLoader
@@ -492,7 +492,7 @@ public abstract class AbstractBinaryClassAnnotationLoader<A, S extends Annotatio
     public List<A> loadPropertyDelegateFieldAnnotations(@NotNull ProtoContainer container, @NotNull ProtoBuf.Property proto) {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(proto, "proto");
-        return k(container, proto, a.f33175i);
+        return k(container, proto, a.f33223i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.AnnotationLoader

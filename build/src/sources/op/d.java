@@ -9,30 +9,30 @@ import un.v;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f43320a;
+    private final h f43368a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f43321b;
+    private final h f43369b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f43322c;
+    private final h f43370c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f43323d;
+    private final h f43371d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f43324e;
+    private final h f43372e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f43325f;
+    private final h f43373f;
 
     public d(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
-        this.f43320a = hVar;
-        this.f43321b = hVar2;
-        this.f43322c = hVar3;
-        this.f43323d = hVar4;
-        this.f43324e = hVar5;
-        this.f43325f = hVar6;
+        this.f43368a = hVar;
+        this.f43369b = hVar2;
+        this.f43370c = hVar3;
+        this.f43371d = hVar4;
+        this.f43372e = hVar5;
+        this.f43373f = hVar6;
     }
 
     public static d a(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
@@ -44,6 +44,6 @@ public final class d {
     }
 
     public c b(String str, String str2, d2 d2Var, List list, String str3, String str4, String str5, String str6, v vVar, long j10) {
-        return c((Context) this.f43320a.get(), str, str2, d2Var, list, (a) this.f43321b.get(), str3, str4, str5, (sp.a) this.f43322c.get(), (io.a) this.f43323d.get(), (xp.a) this.f43324e.get(), str6, vVar, (zn.a) this.f43325f.get(), j10);
+        return c((Context) this.f43368a.get(), str, str2, d2Var, list, (a) this.f43369b.get(), str3, str4, str5, (sp.a) this.f43370c.get(), (io.a) this.f43371d.get(), (xp.a) this.f43372e.get(), str6, vVar, (zn.a) this.f43373f.get(), j10);
     }
 }

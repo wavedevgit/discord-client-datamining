@@ -9,14 +9,14 @@ import org.jetbrains.annotations.NotNull;
 public final class TypedArrayValue extends ArrayValue {
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinType f34154c;
+    private final KotlinType f34202c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public TypedArrayValue(@NotNull List<? extends ConstantValue<?>> value, @NotNull KotlinType type) {
         super(value, new d(type));
         Intrinsics.checkNotNullParameter(value, "value");
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f34154c = type;
+        this.f34202c = type;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -27,6 +27,6 @@ public final class TypedArrayValue extends ArrayValue {
 
     @NotNull
     public final KotlinType getType() {
-        return this.f34154c;
+        return this.f34202c;
     }
 }

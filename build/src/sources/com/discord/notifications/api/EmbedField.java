@@ -52,10 +52,10 @@ public final class EmbedField {
 
     public static final /* synthetic */ void write$Self$notification_api_release(EmbedField embedField, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || embedField.name != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, embedField.name);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, embedField.name);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || embedField.value != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, embedField.value);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, embedField.value);
         }
     }
 

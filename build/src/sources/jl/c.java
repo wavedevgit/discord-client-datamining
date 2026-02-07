@@ -11,21 +11,21 @@ import java.util.HashMap;
 public class c extends g {
 
     /* renamed from: h  reason: collision with root package name */
-    private static int f29940h = 150;
+    private static int f29988h = 150;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f29941f;
+    private String f29989f;
 
     /* renamed from: g  reason: collision with root package name */
-    private HashMap f29942g;
+    private HashMap f29990g;
 
     public c(com.henninghall.date_picker.pickers.a aVar, n nVar) {
         super(aVar, nVar);
     }
 
     private Calendar A() {
-        Calendar w10 = this.f29944a.w();
-        Calendar x10 = this.f29944a.x();
+        Calendar w10 = this.f29992a.w();
+        Calendar x10 = this.f29992a.x();
         if (x10 != null) {
             return (Calendar) x10.clone();
         }
@@ -34,13 +34,13 @@ public class c extends g {
             calendar.add(5, (-calendar.getActualMaximum(6)) / 2);
             return calendar;
         }
-        Calendar A = this.f29944a.A();
-        A.add(5, (-f29940h) / 2);
+        Calendar A = this.f29992a.A();
+        A.add(5, (-f29988h) / 2);
         return A;
     }
 
     private String B(Calendar calendar) {
-        return this.f29948e.format(calendar.getTime());
+        return this.f29996e.format(calendar.getTime());
     }
 
     private Calendar C(Calendar calendar) {
@@ -52,7 +52,7 @@ public class c extends g {
     }
 
     private String D(String str) {
-        String i10 = o.i(this.f29944a.u());
+        String i10 = o.i(this.f29992a.u());
         if (Character.isUpperCase(str.charAt(0))) {
             return o.a(i10);
         }
@@ -64,16 +64,16 @@ public class c extends g {
     }
 
     private SimpleDateFormat x() {
-        return new SimpleDateFormat(y(), this.f29944a.u());
+        return new SimpleDateFormat(y(), this.f29992a.u());
     }
 
     private String y() {
-        return com.henninghall.date_picker.h.d(this.f29944a.v());
+        return com.henninghall.date_picker.h.d(this.f29992a.v());
     }
 
     private Calendar z() {
-        Calendar w10 = this.f29944a.w();
-        Calendar x10 = this.f29944a.x();
+        Calendar w10 = this.f29992a.w();
+        Calendar x10 = this.f29992a.x();
         if (w10 != null) {
             return (Calendar) w10.clone();
         }
@@ -82,14 +82,14 @@ public class c extends g {
             calendar.add(5, calendar.getActualMaximum(6) / 2);
             return calendar;
         }
-        Calendar A = this.f29944a.A();
-        A.add(5, f29940h / 2);
+        Calendar A = this.f29992a.A();
+        A.add(5, f29988h / 2);
         return A;
     }
 
     @Override // jl.g
     public String e() {
-        return com.henninghall.date_picker.h.b(this.f29944a.u()).replace("EEEE", "EEE").replace("MMMM", "MMM");
+        return com.henninghall.date_picker.h.b(this.f29992a.u()).replace("EEEE", "EEE").replace("MMMM", "MMM");
     }
 
     @Override // jl.g
@@ -100,15 +100,15 @@ public class c extends g {
     @Override // jl.g
     public ArrayList n() {
         ArrayList arrayList = new ArrayList();
-        this.f29942g = new HashMap();
+        this.f29990g = new HashMap();
         Calendar A = A();
         Calendar z10 = z();
         do {
             String B = B(A);
             arrayList.add(B);
-            this.f29942g.put(B, w(A));
+            this.f29990g.put(B, w(A));
             if (o.f(A)) {
-                this.f29941f = B;
+                this.f29989f = B;
             }
             A.add(5, 1);
         } while (!C((Calendar) A.clone()).after(z10));
@@ -117,15 +117,15 @@ public class c extends g {
 
     @Override // jl.g
     public String s(String str) {
-        if (str.equals(this.f29941f)) {
+        if (str.equals(this.f29989f)) {
             return D(str);
         }
-        return (String) this.f29942g.get(str);
+        return (String) this.f29990g.get(str);
     }
 
     @Override // jl.g
     public boolean u() {
-        if (this.f29944a.z() == fl.b.datetime) {
+        if (this.f29992a.z() == fl.b.datetime) {
             return true;
         }
         return false;

@@ -3,18 +3,18 @@ package to;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50785a;
+    private final boolean f50833a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f50786b;
+    private final boolean f50834b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f50787c;
+    private final boolean f50835c;
 
     public c(boolean z10, boolean z11, boolean z12) {
-        this.f50785a = z10;
-        this.f50786b = z11;
-        this.f50787c = z12;
+        this.f50833a = z10;
+        this.f50834b = z11;
+        this.f50835c = z12;
     }
 
     public boolean equals(Object obj) {
@@ -25,20 +25,20 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (this.f50785a == cVar.f50785a && this.f50786b == cVar.f50786b && this.f50787c == cVar.f50787c) {
+        if (this.f50833a == cVar.f50833a && this.f50834b == cVar.f50834b && this.f50835c == cVar.f50835c) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((Boolean.hashCode(this.f50785a) * 31) + Boolean.hashCode(this.f50786b)) * 31) + Boolean.hashCode(this.f50787c);
+        return (((Boolean.hashCode(this.f50833a) * 31) + Boolean.hashCode(this.f50834b)) * 31) + Boolean.hashCode(this.f50835c);
     }
 
     public String toString() {
-        boolean z10 = this.f50785a;
-        boolean z11 = this.f50786b;
-        boolean z12 = this.f50787c;
+        boolean z10 = this.f50833a;
+        boolean z11 = this.f50834b;
+        boolean z12 = this.f50835c;
         return "ScreenState(shouldShowBackButton=" + z10 + ", shouldShowCancelButton=" + z11 + ", isNavigationEnabled=" + z12 + ")";
     }
 }

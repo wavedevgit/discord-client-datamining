@@ -5,7 +5,7 @@ import yi.c;
 final class h6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h6 f39855a = new h6();
+    static final h6 f39903a = new h6();
 
     static {
         c.b a10 = yi.c.a("remoteModelOptions");

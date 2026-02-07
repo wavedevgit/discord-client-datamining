@@ -32,55 +32,55 @@ public abstract class j {
     public static final class b extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.BooleanRef f49585d;
+        final /* synthetic */ Ref.BooleanRef f49633d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f49586e;
+        final /* synthetic */ long f49634e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.LongRef f49587i;
+        final /* synthetic */ Ref.LongRef f49635i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ BufferedSource f49588o;
+        final /* synthetic */ BufferedSource f49636o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Ref.LongRef f49589p;
+        final /* synthetic */ Ref.LongRef f49637p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Ref.LongRef f49590q;
+        final /* synthetic */ Ref.LongRef f49638q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49591r;
+        final /* synthetic */ Ref.ObjectRef f49639r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49592s;
+        final /* synthetic */ Ref.ObjectRef f49640s;
 
         /* renamed from: t  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49593t;
+        final /* synthetic */ Ref.ObjectRef f49641t;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends Lambda implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f49594d;
+            final /* synthetic */ Ref.ObjectRef f49642d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ BufferedSource f49595e;
+            final /* synthetic */ BufferedSource f49643e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f49596i;
+            final /* synthetic */ Ref.ObjectRef f49644i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f49597o;
+            final /* synthetic */ Ref.ObjectRef f49645o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Ref.ObjectRef objectRef, BufferedSource bufferedSource, Ref.ObjectRef objectRef2, Ref.ObjectRef objectRef3) {
                 super(2);
-                this.f49594d = objectRef;
-                this.f49595e = bufferedSource;
-                this.f49596i = objectRef2;
-                this.f49597o = objectRef3;
+                this.f49642d = objectRef;
+                this.f49643e = bufferedSource;
+                this.f49644i = objectRef2;
+                this.f49645o = objectRef3;
             }
 
             /* JADX WARN: Type inference failed for: r4v12, types: [T, java.lang.Long] */
@@ -88,12 +88,12 @@ public abstract class j {
             /* JADX WARN: Type inference failed for: r4v9, types: [T, java.lang.Long] */
             public final void a(int i10, long j10) {
                 if (i10 == 1) {
-                    Ref.ObjectRef objectRef = this.f49594d;
+                    Ref.ObjectRef objectRef = this.f49642d;
                     if (objectRef.element == 0) {
                         if (j10 == 24) {
-                            objectRef.element = Long.valueOf(this.f49595e.Q0());
-                            this.f49596i.element = Long.valueOf(this.f49595e.Q0());
-                            this.f49597o.element = Long.valueOf(this.f49595e.Q0());
+                            objectRef.element = Long.valueOf(this.f49643e.Q0());
+                            this.f49644i.element = Long.valueOf(this.f49643e.Q0());
+                            this.f49645o.element = Long.valueOf(this.f49643e.Q0());
                             return;
                         }
                         throw new IOException("bad zip: NTFS extra attribute tag 0x0001 size != 24");
@@ -105,22 +105,22 @@ public abstract class j {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a(((Number) obj).intValue(), ((Number) obj2).longValue());
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Ref.BooleanRef booleanRef, long j10, Ref.LongRef longRef, BufferedSource bufferedSource, Ref.LongRef longRef2, Ref.LongRef longRef3, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Ref.ObjectRef objectRef3) {
             super(2);
-            this.f49585d = booleanRef;
-            this.f49586e = j10;
-            this.f49587i = longRef;
-            this.f49588o = bufferedSource;
-            this.f49589p = longRef2;
-            this.f49590q = longRef3;
-            this.f49591r = objectRef;
-            this.f49592s = objectRef2;
-            this.f49593t = objectRef3;
+            this.f49633d = booleanRef;
+            this.f49634e = j10;
+            this.f49635i = longRef;
+            this.f49636o = bufferedSource;
+            this.f49637p = longRef2;
+            this.f49638q = longRef3;
+            this.f49639r = objectRef;
+            this.f49640s = objectRef2;
+            this.f49641t = objectRef3;
         }
 
         public final void a(int i10, long j10) {
@@ -130,34 +130,34 @@ public abstract class j {
                     return;
                 }
                 if (j10 >= 4) {
-                    this.f49588o.skip(4L);
-                    BufferedSource bufferedSource = this.f49588o;
-                    j.i(bufferedSource, (int) (j10 - 4), new a(this.f49591r, bufferedSource, this.f49592s, this.f49593t));
+                    this.f49636o.skip(4L);
+                    BufferedSource bufferedSource = this.f49636o;
+                    j.i(bufferedSource, (int) (j10 - 4), new a(this.f49639r, bufferedSource, this.f49640s, this.f49641t));
                     return;
                 }
                 throw new IOException("bad zip: NTFS extra too short");
             }
-            Ref.BooleanRef booleanRef = this.f49585d;
+            Ref.BooleanRef booleanRef = this.f49633d;
             if (!booleanRef.element) {
                 booleanRef.element = true;
-                if (j10 >= this.f49586e) {
-                    Ref.LongRef longRef = this.f49587i;
+                if (j10 >= this.f49634e) {
+                    Ref.LongRef longRef = this.f49635i;
                     long j12 = longRef.element;
                     if (j12 == 4294967295L) {
-                        j12 = this.f49588o.Q0();
+                        j12 = this.f49636o.Q0();
                     }
                     longRef.element = j12;
-                    Ref.LongRef longRef2 = this.f49589p;
+                    Ref.LongRef longRef2 = this.f49637p;
                     long j13 = 0;
                     if (longRef2.element == 4294967295L) {
-                        j11 = this.f49588o.Q0();
+                        j11 = this.f49636o.Q0();
                     } else {
                         j11 = 0;
                     }
                     longRef2.element = j11;
-                    Ref.LongRef longRef3 = this.f49590q;
+                    Ref.LongRef longRef3 = this.f49638q;
                     if (longRef3.element == 4294967295L) {
-                        j13 = this.f49588o.Q0();
+                        j13 = this.f49636o.Q0();
                     }
                     longRef3.element = j13;
                     return;
@@ -170,7 +170,7 @@ public abstract class j {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), ((Number) obj2).longValue());
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -179,24 +179,24 @@ public abstract class j {
     public static final class c extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BufferedSource f49598d;
+        final /* synthetic */ BufferedSource f49646d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49599e;
+        final /* synthetic */ Ref.ObjectRef f49647e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49600i;
+        final /* synthetic */ Ref.ObjectRef f49648i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f49601o;
+        final /* synthetic */ Ref.ObjectRef f49649o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(BufferedSource bufferedSource, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Ref.ObjectRef objectRef3) {
             super(2);
-            this.f49598d = bufferedSource;
-            this.f49599e = objectRef;
-            this.f49600i = objectRef2;
-            this.f49601o = objectRef3;
+            this.f49646d = bufferedSource;
+            this.f49647e = objectRef;
+            this.f49648i = objectRef2;
+            this.f49649o = objectRef3;
         }
 
         /* JADX WARN: Type inference failed for: r10v11, types: [T, java.lang.Integer] */
@@ -208,7 +208,7 @@ public abstract class j {
             if (i10 == 21589) {
                 long j11 = 1;
                 if (j10 >= 1) {
-                    byte readByte = this.f49598d.readByte();
+                    byte readByte = this.f49646d.readByte();
                     boolean z12 = false;
                     if ((readByte & 1) == 1) {
                         z10 = true;
@@ -223,7 +223,7 @@ public abstract class j {
                     if ((readByte & 4) == 4) {
                         z12 = true;
                     }
-                    BufferedSource bufferedSource = this.f49598d;
+                    BufferedSource bufferedSource = this.f49646d;
                     if (z10) {
                         j11 = 5;
                     }
@@ -235,13 +235,13 @@ public abstract class j {
                     }
                     if (j10 >= j11) {
                         if (z10) {
-                            this.f49599e.element = Integer.valueOf(bufferedSource.P1());
+                            this.f49647e.element = Integer.valueOf(bufferedSource.P1());
                         }
                         if (z11) {
-                            this.f49600i.element = Integer.valueOf(this.f49598d.P1());
+                            this.f49648i.element = Integer.valueOf(this.f49646d.P1());
                         }
                         if (z12) {
-                            this.f49601o.element = Integer.valueOf(this.f49598d.P1());
+                            this.f49649o.element = Integer.valueOf(this.f49646d.P1());
                             return;
                         }
                         return;
@@ -255,12 +255,12 @@ public abstract class j {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), ((Number) obj2).longValue());
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
     private static final Map b(List list) {
-        c0 e10 = c0.a.e(c0.f48188e, "/", false, 1, null);
+        c0 e10 = c0.a.e(c0.f48236e, "/", false, 1, null);
         Map n10 = o0.n(v.a(e10, new i(e10, true, null, 0L, 0L, 0L, 0, 0L, 0, 0, null, null, null, null, null, null, 65532, null)));
         for (i iVar : CollectionsKt.W0(list, new a())) {
             if (((i) n10.put(iVar.b(), iVar)) == null) {
@@ -361,7 +361,7 @@ public abstract class j {
                     if (j11 > 0 && !booleanRef.element) {
                         throw new IOException("bad zip: zip64 extra required but absent");
                     }
-                    return new i(c0.a.e(c0.f48188e, "/", false, 1, null).k(b12), StringsKt.z(b12, "/", false, 2, null), bufferedSource.b1(P06), P12, longRef.element, longRef2.element, P02, longRef3.element, P04, P03, (Long) objectRef.element, (Long) objectRef2.element, (Long) objectRef3.element, null, null, null, 57344, null);
+                    return new i(c0.a.e(c0.f48236e, "/", false, 1, null).k(b12), StringsKt.z(b12, "/", false, 2, null), bufferedSource.b1(P06), P12, longRef.element, longRef2.element, P02, longRef3.element, P04, P03, (Long) objectRef.element, (Long) objectRef2.element, (Long) objectRef3.element, null, null, null, 57344, null);
                 }
                 throw new IOException("bad zip: filename contains 0x00");
             }

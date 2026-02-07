@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.protobuf.MessageLite;
 public abstract class AbstractMessageLite implements MessageLite {
 
     /* renamed from: d  reason: collision with root package name */
-    protected int f33899d = 0;
+    protected int f33947d = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public UninitializedMessageException a() {
@@ -40,49 +40,49 @@ public abstract class AbstractMessageLite implements MessageLite {
         static final class a extends FilterInputStream {
 
             /* renamed from: d  reason: collision with root package name */
-            private int f33900d;
+            private int f33948d;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             public a(InputStream inputStream, int i10) {
                 super(inputStream);
-                this.f33900d = i10;
+                this.f33948d = i10;
             }
 
             @Override // java.io.FilterInputStream, java.io.InputStream
             public int available() {
-                return Math.min(super.available(), this.f33900d);
+                return Math.min(super.available(), this.f33948d);
             }
 
             @Override // java.io.FilterInputStream, java.io.InputStream
             public int read() {
-                if (this.f33900d <= 0) {
+                if (this.f33948d <= 0) {
                     return -1;
                 }
                 int read = super.read();
                 if (read >= 0) {
-                    this.f33900d--;
+                    this.f33948d--;
                 }
                 return read;
             }
 
             @Override // java.io.FilterInputStream, java.io.InputStream
             public long skip(long j10) {
-                long skip = super.skip(Math.min(j10, this.f33900d));
+                long skip = super.skip(Math.min(j10, this.f33948d));
                 if (skip >= 0) {
-                    this.f33900d = (int) (this.f33900d - skip);
+                    this.f33948d = (int) (this.f33948d - skip);
                 }
                 return skip;
             }
 
             @Override // java.io.FilterInputStream, java.io.InputStream
             public int read(byte[] bArr, int i10, int i11) {
-                int i12 = this.f33900d;
+                int i12 = this.f33948d;
                 if (i12 <= 0) {
                     return -1;
                 }
                 int read = super.read(bArr, i10, Math.min(i11, i12));
                 if (read >= 0) {
-                    this.f33900d -= read;
+                    this.f33948d -= read;
                 }
                 return read;
             }

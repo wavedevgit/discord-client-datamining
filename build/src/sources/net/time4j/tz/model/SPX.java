@@ -24,10 +24,10 @@ final class SPX implements Externalizable {
     private static final long serialVersionUID = 6526945678752534989L;
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f39594d;
+    private transient Object f39642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f39595e;
+    private transient int f39643e;
 
     public SPX() {
     }
@@ -46,7 +46,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         b0 f10 = b0.f((readByte & 255) >>> 4);
         int i11 = readByte & 15;
-        i iVar = i.f39618o[i11 % 3];
+        i iVar = i.f39666o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         int i13 = (readByte2 & 255) >>> 3;
@@ -74,7 +74,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         int i10 = (readByte & 255) >>> 4;
         int i11 = readByte & 15;
-        i iVar = i.f39618o[i11 % 3];
+        i iVar = i.f39666o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         int i13 = (readByte2 & 255) >>> 3;
@@ -94,7 +94,7 @@ final class SPX implements Externalizable {
         byte readByte = dataInput.readByte();
         b0 f10 = b0.f((readByte & 255) >>> 4);
         int i11 = readByte & 15;
-        i iVar = i.f39618o[i11 % 3];
+        i iVar = i.f39666o[i11 % 3];
         int i12 = i(i11);
         byte readByte2 = dataInput.readByte();
         y0 h10 = y0.h((readByte2 & 255) >>> 5);
@@ -376,7 +376,7 @@ final class SPX implements Externalizable {
     }
 
     private Object readResolve() {
-        return this.f39594d;
+        return this.f39642d;
     }
 
     private static void s(Object obj, DataOutput dataOutput) {
@@ -565,62 +565,62 @@ final class SPX implements Externalizable {
     public void readExternal(ObjectInput objectInput) {
         switch (objectInput.readByte()) {
             case 120:
-                this.f39594d = d(objectInput);
+                this.f39642d = d(objectInput);
                 return;
             case 121:
-                this.f39594d = c(objectInput);
+                this.f39642d = c(objectInput);
                 return;
             case 122:
-                this.f39594d = e(objectInput);
+                this.f39642d = e(objectInput);
                 return;
             case 123:
             case 124:
             default:
                 throw new StreamCorruptedException("Unknown serialized type.");
             case 125:
-                this.f39594d = g(objectInput);
+                this.f39642d = g(objectInput);
                 return;
             case 126:
-                this.f39594d = a(objectInput);
+                this.f39642d = a(objectInput);
                 return;
             case Byte.MAX_VALUE:
-                this.f39594d = b(objectInput);
+                this.f39642d = b(objectInput);
                 return;
         }
     }
 
     @Override // java.io.Externalizable
     public void writeExternal(ObjectOutput objectOutput) {
-        objectOutput.writeByte(this.f39595e);
-        switch (this.f39595e) {
+        objectOutput.writeByte(this.f39643e);
+        switch (this.f39643e) {
             case 120:
-                s(this.f39594d, objectOutput);
+                s(this.f39642d, objectOutput);
                 return;
             case 121:
-                r(this.f39594d, objectOutput);
+                r(this.f39642d, objectOutput);
                 return;
             case 122:
-                t(this.f39594d, objectOutput);
+                t(this.f39642d, objectOutput);
                 return;
             case 123:
             case 124:
             default:
                 throw new InvalidClassException("Unknown serialized type.");
             case 125:
-                w(this.f39594d, objectOutput);
+                w(this.f39642d, objectOutput);
                 return;
             case 126:
-                p(this.f39594d, objectOutput);
+                p(this.f39642d, objectOutput);
                 return;
             case 127:
-                q(this.f39594d, objectOutput);
+                q(this.f39642d, objectOutput);
                 return;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public SPX(Object obj, int i10) {
-        this.f39594d = obj;
-        this.f39595e = i10;
+        this.f39642d = obj;
+        this.f39643e = i10;
     }
 }

@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/utils/isActivityPermanentCustomStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101604: for (var _fun101604_ip = 0;;) switch (_fun101604_ip) {
+        _fun102085: for (var _fun102085_ip = 0;;) switch (_fun102085_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.type;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.CUSTOM_STATUS;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun101604_ip = 54;
-                    continue _fun101604
+                    _fun102085_ip = 54;
+                    continue _fun102085
                 }
             case 28:
                 var3 = var1.timestamps;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun101604_ip = 50;
-                    continue _fun101604
+                    _fun102085_ip = 50;
+                    continue _fun102085
                 }
             case 45:
                 var1 = var3.end;

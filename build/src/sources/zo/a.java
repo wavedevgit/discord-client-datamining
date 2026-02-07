@@ -28,34 +28,34 @@ import rs.l0;
 public final class a {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0776a f56363i = new C0776a(null);
+    public static final C0776a f56411i = new C0776a(null);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final long f56364j;
+    private static final long f56412j;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f56365a;
+    private final Context f56413a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e.a f56366b;
+    private final e.a f56414b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f56367c;
+    private final f f56415c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineDispatcher f56368d;
+    private final CoroutineDispatcher f56416d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final dp.e f56369e;
+    private final dp.e f56417e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Mutex f56370f;
+    private final Mutex f56418f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final CoroutineScope f56371g;
+    private final CoroutineScope f56419g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final MutableStateFlow f56372h;
+    private final MutableStateFlow f56420h;
 
     /* renamed from: zo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -76,7 +76,7 @@ public final class a {
         public static final class C0777a implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0777a f56373a = new C0777a();
+            public static final C0777a f56421a = new C0777a();
 
             private C0777a() {
             }
@@ -102,7 +102,7 @@ public final class a {
         public static final class C0778b implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0778b f56374a = new C0778b();
+            public static final C0778b f56422a = new C0778b();
 
             private C0778b() {
             }
@@ -127,7 +127,7 @@ public final class a {
         public static final class c implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final c f56375a = new c();
+            public static final c f56423a = new c();
 
             private c() {
             }
@@ -152,15 +152,15 @@ public final class a {
         public static final class d implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final c.InterfaceC0183c f56376a;
+            private final c.InterfaceC0183c f56424a;
 
             public d(c.InterfaceC0183c integrityTokenProvider) {
                 Intrinsics.checkNotNullParameter(integrityTokenProvider, "integrityTokenProvider");
-                this.f56376a = integrityTokenProvider;
+                this.f56424a = integrityTokenProvider;
             }
 
             public final c.InterfaceC0183c a() {
-                return this.f56376a;
+                return this.f56424a;
             }
         }
     }
@@ -170,13 +170,13 @@ public final class a {
     public static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f56377d;
+        Object f56425d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f56378e;
+        Object f56426e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f56379i;
+        int f56427i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: zo.a$c$a  reason: collision with other inner class name */
@@ -184,22 +184,22 @@ public final class a {
         public static final class C0779a implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f56381d;
+            final /* synthetic */ CancellableContinuation f56429d;
 
             C0779a(CancellableContinuation cancellableContinuation) {
-                this.f56381d = cancellableContinuation;
+                this.f56429d = cancellableContinuation;
             }
 
             public final void a(c.b bVar) {
-                CancellableContinuation cancellableContinuation = this.f56381d;
-                Result.a aVar = Result.f32005e;
+                CancellableContinuation cancellableContinuation = this.f56429d;
+                Result.a aVar = Result.f32053e;
                 cancellableContinuation.resumeWith(Result.b(bVar.a()));
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.b) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -208,23 +208,23 @@ public final class a {
         public static final class b implements yg.f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ a f56382a;
+            final /* synthetic */ a f56430a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f56383b;
+            final /* synthetic */ CancellableContinuation f56431b;
 
             b(a aVar, CancellableContinuation cancellableContinuation) {
-                this.f56382a = aVar;
-                this.f56383b = cancellableContinuation;
+                this.f56430a = aVar;
+                this.f56431b = cancellableContinuation;
             }
 
             @Override // yg.f
             public final void onFailure(Exception it) {
                 Intrinsics.checkNotNullParameter(it, "it");
-                dp.e eVar = this.f56382a.f56369e;
+                dp.e eVar = this.f56430a.f56417e;
                 String message = it.getMessage();
                 eVar.a("integrity:request:" + message);
-                this.f56383b.resumeWith(Result.b(null));
+                this.f56431b.resumeWith(Result.b(null));
             }
         }
 
@@ -234,7 +234,7 @@ public final class a {
         public static final class C0780c extends k implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f56384d;
+            int f56432d;
 
             C0780c(Continuation continuation) {
                 super(3, continuation);
@@ -243,10 +243,10 @@ public final class a {
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 wr.b.f();
-                if (this.f56384d == 0) {
+                if (this.f56432d == 0) {
                     kotlin.c.b(obj);
-                    b.C0777a c0777a = b.C0777a.f56373a;
-                    return Unit.f32008a;
+                    b.C0777a c0777a = b.C0777a.f56421a;
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -254,7 +254,7 @@ public final class a {
             @Override // kotlin.jvm.functions.Function3
             /* renamed from: j */
             public final Object invoke(FlowCollector flowCollector, Throwable th2, Continuation continuation) {
-                return new C0780c(continuation).invokeSuspend(Unit.f32008a);
+                return new C0780c(continuation).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -262,24 +262,24 @@ public final class a {
         public static final class d implements Flow {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Flow f56385d;
+            final /* synthetic */ Flow f56433d;
 
             /* renamed from: zo.a$c$d$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0781a implements FlowCollector {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ FlowCollector f56386d;
+                final /* synthetic */ FlowCollector f56434d;
 
                 /* renamed from: zo.a$c$d$a$a  reason: collision with other inner class name */
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
                 public static final class C0782a extends kotlin.coroutines.jvm.internal.d {
 
                     /* renamed from: d  reason: collision with root package name */
-                    /* synthetic */ Object f56387d;
+                    /* synthetic */ Object f56435d;
 
                     /* renamed from: e  reason: collision with root package name */
-                    int f56388e;
+                    int f56436e;
 
                     public C0782a(Continuation continuation) {
                         super(continuation);
@@ -287,14 +287,14 @@ public final class a {
 
                     @Override // kotlin.coroutines.jvm.internal.a
                     public final Object invokeSuspend(Object obj) {
-                        this.f56387d = obj;
-                        this.f56388e |= Integer.MIN_VALUE;
+                        this.f56435d = obj;
+                        this.f56436e |= Integer.MIN_VALUE;
                         return C0781a.this.emit(null, this);
                     }
                 }
 
                 public C0781a(FlowCollector flowCollector) {
-                    this.f56386d = flowCollector;
+                    this.f56434d = flowCollector;
                 }
 
                 /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -311,20 +311,20 @@ public final class a {
                         if (r0 == 0) goto L13
                         r0 = r7
                         zo.a$c$d$a$a r0 = (zo.a.c.d.C0781a.C0782a) r0
-                        int r1 = r0.f56388e
+                        int r1 = r0.f56436e
                         r2 = -2147483648(0xffffffff80000000, float:-0.0)
                         r3 = r1 & r2
                         if (r3 == 0) goto L13
                         int r1 = r1 - r2
-                        r0.f56388e = r1
+                        r0.f56436e = r1
                         goto L18
                     L13:
                         zo.a$c$d$a$a r0 = new zo.a$c$d$a$a
                         r0.<init>(r7)
                     L18:
-                        java.lang.Object r7 = r0.f56387d
+                        java.lang.Object r7 = r0.f56435d
                         java.lang.Object r1 = wr.b.f()
-                        int r2 = r0.f56388e
+                        int r2 = r0.f56436e
                         r3 = 1
                         if (r2 == 0) goto L31
                         if (r2 != r3) goto L29
@@ -337,7 +337,7 @@ public final class a {
                         throw r6
                     L31:
                         kotlin.c.b(r7)
-                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f56386d
+                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f56434d
                         r2 = r6
                         zo.a$b r2 = (zo.a.b) r2
                         boolean r4 = r2 instanceof zo.a.b.C0777a
@@ -345,12 +345,12 @@ public final class a {
                         boolean r2 = r2 instanceof zo.a.b.d
                         if (r2 == 0) goto L4a
                     L41:
-                        r0.f56388e = r3
+                        r0.f56436e = r3
                         java.lang.Object r6 = r7.emit(r6, r0)
                         if (r6 != r1) goto L4a
                         return r1
                     L4a:
-                        kotlin.Unit r6 = kotlin.Unit.f32008a
+                        kotlin.Unit r6 = kotlin.Unit.f32056a
                         return r6
                     */
                     throw new UnsupportedOperationException("Method not decompiled: zo.a.c.d.C0781a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -358,16 +358,16 @@ public final class a {
             }
 
             public d(Flow flow) {
-                this.f56385d = flow;
+                this.f56433d = flow;
             }
 
             @Override // kotlinx.coroutines.flow.Flow
             public Object collect(FlowCollector flowCollector, Continuation continuation) {
-                Object collect = this.f56385d.collect(new C0781a(flowCollector), continuation);
+                Object collect = this.f56433d.collect(new C0781a(flowCollector), continuation);
                 if (collect == wr.b.f()) {
                     return collect;
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -375,24 +375,24 @@ public final class a {
         public static final class e implements Flow {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Flow f56390d;
+            final /* synthetic */ Flow f56438d;
 
             /* renamed from: zo.a$c$e$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0783a implements FlowCollector {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ FlowCollector f56391d;
+                final /* synthetic */ FlowCollector f56439d;
 
                 /* renamed from: zo.a$c$e$a$a  reason: collision with other inner class name */
                 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
                 public static final class C0784a extends kotlin.coroutines.jvm.internal.d {
 
                     /* renamed from: d  reason: collision with root package name */
-                    /* synthetic */ Object f56392d;
+                    /* synthetic */ Object f56440d;
 
                     /* renamed from: e  reason: collision with root package name */
-                    int f56393e;
+                    int f56441e;
 
                     public C0784a(Continuation continuation) {
                         super(continuation);
@@ -400,14 +400,14 @@ public final class a {
 
                     @Override // kotlin.coroutines.jvm.internal.a
                     public final Object invokeSuspend(Object obj) {
-                        this.f56392d = obj;
-                        this.f56393e |= Integer.MIN_VALUE;
+                        this.f56440d = obj;
+                        this.f56441e |= Integer.MIN_VALUE;
                         return C0783a.this.emit(null, this);
                     }
                 }
 
                 public C0783a(FlowCollector flowCollector) {
-                    this.f56391d = flowCollector;
+                    this.f56439d = flowCollector;
                 }
 
                 /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -424,20 +424,20 @@ public final class a {
                         if (r0 == 0) goto L13
                         r0 = r7
                         zo.a$c$e$a$a r0 = (zo.a.c.e.C0783a.C0784a) r0
-                        int r1 = r0.f56393e
+                        int r1 = r0.f56441e
                         r2 = -2147483648(0xffffffff80000000, float:-0.0)
                         r3 = r1 & r2
                         if (r3 == 0) goto L13
                         int r1 = r1 - r2
-                        r0.f56393e = r1
+                        r0.f56441e = r1
                         goto L18
                     L13:
                         zo.a$c$e$a$a r0 = new zo.a$c$e$a$a
                         r0.<init>(r7)
                     L18:
-                        java.lang.Object r7 = r0.f56392d
+                        java.lang.Object r7 = r0.f56440d
                         java.lang.Object r1 = wr.b.f()
-                        int r2 = r0.f56393e
+                        int r2 = r0.f56441e
                         r3 = 1
                         if (r2 == 0) goto L31
                         if (r2 != r3) goto L29
@@ -450,7 +450,7 @@ public final class a {
                         throw r6
                     L31:
                         kotlin.c.b(r7)
-                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f56391d
+                        kotlinx.coroutines.flow.FlowCollector r7 = r5.f56439d
                         zo.a$b r6 = (zo.a.b) r6
                         boolean r2 = r6 instanceof zo.a.b.d
                         r4 = 0
@@ -463,12 +463,12 @@ public final class a {
                         if (r6 == 0) goto L47
                         com.google.android.play.core.integrity.c$c r4 = r6.a()
                     L47:
-                        r0.f56393e = r3
+                        r0.f56441e = r3
                         java.lang.Object r6 = r7.emit(r4, r0)
                         if (r6 != r1) goto L50
                         return r1
                     L50:
-                        kotlin.Unit r6 = kotlin.Unit.f32008a
+                        kotlin.Unit r6 = kotlin.Unit.f32056a
                         return r6
                     */
                     throw new UnsupportedOperationException("Method not decompiled: zo.a.c.e.C0783a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -476,16 +476,16 @@ public final class a {
             }
 
             public e(Flow flow) {
-                this.f56390d = flow;
+                this.f56438d = flow;
             }
 
             @Override // kotlinx.coroutines.flow.Flow
             public Object collect(FlowCollector flowCollector, Continuation continuation) {
-                Object collect = this.f56390d.collect(new C0783a(flowCollector), continuation);
+                Object collect = this.f56438d.collect(new C0783a(flowCollector), continuation);
                 if (collect == wr.b.f()) {
                     return collect;
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -510,16 +510,16 @@ public final class a {
             /*
                 r7 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r7.f56379i
+                int r1 = r7.f56427i
                 r2 = 2
                 r3 = 0
                 r4 = 1
                 if (r1 == 0) goto L27
                 if (r1 == r4) goto L23
                 if (r1 != r2) goto L1b
-                java.lang.Object r0 = r7.f56378e
+                java.lang.Object r0 = r7.f56426e
                 zo.a r0 = (zo.a) r0
-                java.lang.Object r0 = r7.f56377d
+                java.lang.Object r0 = r7.f56425d
                 com.google.android.play.core.integrity.c$c r0 = (com.google.android.play.core.integrity.c.InterfaceC0183c) r0
                 kotlin.c.b(r8)
                 return r8
@@ -551,7 +551,7 @@ public final class a {
                 kotlinx.coroutines.flow.Flow r8 = rs.g.f(r8, r1)
                 zo.a$c$e r1 = new zo.a$c$e
                 r1.<init>(r8)
-                r7.f56379i = r4
+                r7.f56427i = r4
                 java.lang.Object r8 = rs.g.u(r1, r7)
                 if (r8 != r0) goto L63
                 goto Lb9
@@ -561,9 +561,9 @@ public final class a {
                 return r3
             L68:
                 zo.a r1 = zo.a.this
-                r7.f56377d = r8
-                r7.f56378e = r1
-                r7.f56379i = r2
+                r7.f56425d = r8
+                r7.f56426e = r1
+                r7.f56427i = r2
                 kotlinx.coroutines.e r2 = new kotlinx.coroutines.e
                 kotlin.coroutines.Continuation r3 = wr.b.c(r7)
                 r2.<init>(r3, r4)
@@ -598,7 +598,7 @@ public final class a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -607,25 +607,25 @@ public final class a {
     public static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f56395d;
+        Object f56443d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f56396e;
+        Object f56444e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f56397i;
+        Object f56445i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f56398o;
+        Object f56446o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f56399p;
+        Object f56447p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f56400q;
+        int f56448q;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ String f56402s;
+        final /* synthetic */ String f56450s;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: zo.a$d$a  reason: collision with other inner class name */
@@ -633,20 +633,20 @@ public final class a {
         public static final class C0785a implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f56403d;
+            final /* synthetic */ CancellableContinuation f56451d;
 
             C0785a(CancellableContinuation cancellableContinuation) {
-                this.f56403d = cancellableContinuation;
+                this.f56451d = cancellableContinuation;
             }
 
             public final void a(c.InterfaceC0183c interfaceC0183c) {
-                this.f56403d.resumeWith(Result.b(Result.a(Result.b(interfaceC0183c))));
+                this.f56451d.resumeWith(Result.b(Result.a(Result.b(interfaceC0183c))));
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.InterfaceC0183c) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -655,17 +655,17 @@ public final class a {
         public static final class b implements yg.f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f56404a;
+            final /* synthetic */ CancellableContinuation f56452a;
 
             b(CancellableContinuation cancellableContinuation) {
-                this.f56404a = cancellableContinuation;
+                this.f56452a = cancellableContinuation;
             }
 
             @Override // yg.f
             public final void onFailure(Exception it) {
                 Intrinsics.checkNotNullParameter(it, "it");
-                CancellableContinuation cancellableContinuation = this.f56404a;
-                Result.a aVar = Result.f32005e;
+                CancellableContinuation cancellableContinuation = this.f56452a;
+                Result.a aVar = Result.f32053e;
                 cancellableContinuation.resumeWith(Result.b(Result.a(Result.b(kotlin.c.a(it)))));
             }
         }
@@ -673,12 +673,12 @@ public final class a {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(String str, Continuation continuation) {
             super(2, continuation);
-            this.f56402s = str;
+            this.f56450s = str;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f56402s, continuation);
+            return new d(this.f56450s, continuation);
         }
 
         /* JADX WARN: Can't wrap try/catch for region: R(5:1|(1:(3:(1:(1:(6:11|12|13|14|15|16)(2:8|9))(8:21|22|23|24|(3:26|(2:28|29)|30)(1:31)|14|15|16))(8:35|36|37|38|39|(1:41)|(6:43|24|(0)(0)|14|15|16)|29)|19|20)(1:47))(1:60)|48|49|(3:51|52|53)(2:54|(2:56|29)(5:57|39|(0)|(0)|29))) */
@@ -714,7 +714,7 @@ public final class a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -723,13 +723,13 @@ public final class a {
     public static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f56405d;
+        Object f56453d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f56406e;
+        Object f56454e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f56407i;
+        int f56455i;
 
         e(Continuation continuation) {
             super(2, continuation);
@@ -752,14 +752,14 @@ public final class a {
             /*
                 r6 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r6.f56407i
+                int r1 = r6.f56455i
                 r2 = 2
                 r3 = 1
                 r4 = 0
                 if (r1 == 0) goto L2e
                 if (r1 == r3) goto L21
                 if (r1 != r2) goto L19
-                java.lang.Object r0 = r6.f56405d
+                java.lang.Object r0 = r6.f56453d
                 kotlinx.coroutines.sync.Mutex r0 = (kotlinx.coroutines.sync.Mutex) r0
                 kotlin.c.b(r7)     // Catch: java.lang.Throwable -> L17
                 goto L5a
@@ -772,9 +772,9 @@ public final class a {
                 r7.<init>(r0)
                 throw r7
             L21:
-                java.lang.Object r1 = r6.f56406e
+                java.lang.Object r1 = r6.f56454e
                 zo.a r1 = (zo.a) r1
-                java.lang.Object r3 = r6.f56405d
+                java.lang.Object r3 = r6.f56453d
                 kotlinx.coroutines.sync.Mutex r3 = (kotlinx.coroutines.sync.Mutex) r3
                 kotlin.c.b(r7)
                 r7 = r3
@@ -784,18 +784,18 @@ public final class a {
                 zo.a r7 = zo.a.this
                 kotlinx.coroutines.sync.Mutex r7 = zo.a.d(r7)
                 zo.a r1 = zo.a.this
-                r6.f56405d = r7
-                r6.f56406e = r1
-                r6.f56407i = r3
+                r6.f56453d = r7
+                r6.f56454e = r1
+                r6.f56455i = r3
                 java.lang.Object r3 = r7.b(r4, r6)
                 if (r3 != r0) goto L46
                 goto L58
             L46:
                 kotlinx.coroutines.flow.MutableStateFlow r1 = zo.a.e(r1)     // Catch: java.lang.Throwable -> L62
-                zo.a$b$b r3 = zo.a.b.C0778b.f56374a     // Catch: java.lang.Throwable -> L62
-                r6.f56405d = r7     // Catch: java.lang.Throwable -> L62
-                r6.f56406e = r4     // Catch: java.lang.Throwable -> L62
-                r6.f56407i = r2     // Catch: java.lang.Throwable -> L62
+                zo.a$b$b r3 = zo.a.b.C0778b.f56422a     // Catch: java.lang.Throwable -> L62
+                r6.f56453d = r7     // Catch: java.lang.Throwable -> L62
+                r6.f56454e = r4     // Catch: java.lang.Throwable -> L62
+                r6.f56455i = r2     // Catch: java.lang.Throwable -> L62
                 java.lang.Object r1 = r1.emit(r3, r6)     // Catch: java.lang.Throwable -> L62
                 if (r1 != r0) goto L59
             L58:
@@ -803,9 +803,9 @@ public final class a {
             L59:
                 r0 = r7
             L5a:
-                kotlin.Unit r7 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L17
+                kotlin.Unit r7 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L17
                 r0.c(r4)
-                kotlin.Unit r7 = kotlin.Unit.f32008a
+                kotlin.Unit r7 = kotlin.Unit.f32056a
                 return r7
             L62:
                 r0 = move-exception
@@ -821,13 +821,13 @@ public final class a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
     static {
-        Duration.a aVar = Duration.f35007e;
-        f56364j = kotlin.time.b.s(10, ms.b.f38284p);
+        Duration.a aVar = Duration.f35055e;
+        f56412j = kotlin.time.b.s(10, ms.b.f38332p);
     }
 
     public a(Context applicationContext, e.a loggerFactory, f standardIntegrityManagerFactory, CoroutineDispatcher dispatcher) {
@@ -835,30 +835,30 @@ public final class a {
         Intrinsics.checkNotNullParameter(loggerFactory, "loggerFactory");
         Intrinsics.checkNotNullParameter(standardIntegrityManagerFactory, "standardIntegrityManagerFactory");
         Intrinsics.checkNotNullParameter(dispatcher, "dispatcher");
-        this.f56365a = applicationContext;
-        this.f56366b = loggerFactory;
-        this.f56367c = standardIntegrityManagerFactory;
-        this.f56368d = dispatcher;
-        this.f56369e = loggerFactory.a("com.withpersona.sdk2.inquiry.integrity");
-        this.f56370f = xs.f.b(false, 1, null);
-        this.f56371g = i.a(dispatcher.Y0(j1.b(null, 1, null)));
-        this.f56372h = l0.a(b.C0778b.f56374a);
+        this.f56413a = applicationContext;
+        this.f56414b = loggerFactory;
+        this.f56415c = standardIntegrityManagerFactory;
+        this.f56416d = dispatcher;
+        this.f56417e = loggerFactory.a("com.withpersona.sdk2.inquiry.integrity");
+        this.f56418f = xs.f.b(false, 1, null);
+        this.f56419g = i.a(dispatcher.Y0(j1.b(null, 1, null)));
+        this.f56420h = l0.a(b.C0778b.f56422a);
     }
 
     public final Object g(Continuation continuation) {
-        return g.g(this.f56368d, new c(null), continuation);
+        return g.g(this.f56416d, new c(null), continuation);
     }
 
     public final void h(String cloudProjectNumber) {
         Intrinsics.checkNotNullParameter(cloudProjectNumber, "cloudProjectNumber");
-        os.i.d(this.f56371g, null, null, new d(cloudProjectNumber, null), 3, null);
+        os.i.d(this.f56419g, null, null, new d(cloudProjectNumber, null), 3, null);
     }
 
     public final Object i(Continuation continuation) {
-        Object g10 = g.g(this.f56368d, new e(null), continuation);
+        Object g10 = g.g(this.f56416d, new e(null), continuation);
         if (g10 == wr.b.f()) {
             return g10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

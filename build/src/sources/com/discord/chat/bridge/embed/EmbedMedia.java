@@ -119,19 +119,19 @@ public final class EmbedMedia implements EmbedUrlProvider {
     public static final /* synthetic */ void write$Self$chat_release(EmbedMedia embedMedia, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, embedMedia.url);
         if (compositeEncoder.A(serialDescriptor, 1) || embedMedia.proxyURL != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, embedMedia.proxyURL);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, embedMedia.proxyURL);
         }
         compositeEncoder.x(serialDescriptor, 2, embedMedia.width);
         compositeEncoder.x(serialDescriptor, 3, embedMedia.height);
         if (compositeEncoder.A(serialDescriptor, 4) || embedMedia.placeholder != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, embedMedia.placeholder);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, embedMedia.placeholder);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || embedMedia.placeholderVersion != null) {
-            compositeEncoder.l(serialDescriptor, 5, p0.f31057a, embedMedia.placeholderVersion);
+            compositeEncoder.l(serialDescriptor, 5, p0.f31105a, embedMedia.placeholderVersion);
         }
         compositeEncoder.y(serialDescriptor, 6, embedMedia.srcIsAnimated);
         if (compositeEncoder.A(serialDescriptor, 7) || embedMedia.contentType != null) {
-            compositeEncoder.l(serialDescriptor, 7, n2.f31041a, embedMedia.contentType);
+            compositeEncoder.l(serialDescriptor, 7, n2.f31089a, embedMedia.contentType);
         }
         if (!compositeEncoder.A(serialDescriptor, 8)) {
             String embedUrl = embedMedia.getEmbedUrl();

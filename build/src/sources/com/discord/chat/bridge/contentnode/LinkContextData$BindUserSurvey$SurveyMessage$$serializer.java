@@ -43,7 +43,7 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$SurveyMessage$$seria
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, gt.a.u(n2.f31041a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, gt.a.u(n2.f31089a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -59,7 +59,7 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$SurveyMessage$$seria
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1092unboximpl() : null;
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f31089a, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 7;
         } else {
@@ -82,7 +82,7 @@ public /* synthetic */ class LinkContextData$BindUserSurvey$SurveyMessage$$seria
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str3);
                     i11 |= 4;
                 }
             }

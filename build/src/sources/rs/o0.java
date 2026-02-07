@@ -7,20 +7,20 @@ import kotlin.jvm.functions.Function2;
 public final class o0 implements a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f49350d;
+    private final a0 f49398d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f49351e;
+    private final Function2 f49399e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f49352d;
+        /* synthetic */ Object f49400d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f49354i;
+        int f49402i;
 
         a(Continuation continuation) {
             super(continuation);
@@ -28,15 +28,15 @@ public final class o0 implements a0 {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f49352d = obj;
-            this.f49354i |= Integer.MIN_VALUE;
+            this.f49400d = obj;
+            this.f49402i |= Integer.MIN_VALUE;
             return o0.this.collect(null, this);
         }
     }
 
     public o0(a0 a0Var, Function2 function2) {
-        this.f49350d = a0Var;
-        this.f49351e = function2;
+        this.f49398d = a0Var;
+        this.f49399e = function2;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -53,20 +53,20 @@ public final class o0 implements a0 {
             if (r0 == 0) goto L13
             r0 = r7
             rs.o0$a r0 = (rs.o0.a) r0
-            int r1 = r0.f49354i
+            int r1 = r0.f49402i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f49354i = r1
+            r0.f49402i = r1
             goto L18
         L13:
             rs.o0$a r0 = new rs.o0$a
             r0.<init>(r7)
         L18:
-            java.lang.Object r7 = r0.f49352d
+            java.lang.Object r7 = r0.f49400d
             java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f49354i
+            int r2 = r0.f49402i
             r3 = 1
             if (r2 == 0) goto L31
             if (r2 == r3) goto L2d
@@ -79,11 +79,11 @@ public final class o0 implements a0 {
             goto L46
         L31:
             kotlin.c.b(r7)
-            rs.a0 r7 = r5.f49350d
+            rs.a0 r7 = r5.f49398d
             rs.n0 r2 = new rs.n0
-            kotlin.jvm.functions.Function2 r4 = r5.f49351e
+            kotlin.jvm.functions.Function2 r4 = r5.f49399e
             r2.<init>(r6, r4)
-            r0.f49354i = r3
+            r0.f49402i = r3
             java.lang.Object r6 = r7.collect(r2, r0)
             if (r6 != r1) goto L46
             return r1

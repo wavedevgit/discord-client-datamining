@@ -5,7 +5,7 @@ import yi.c;
 final class ea implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ea f39791a = new ea();
+    static final ea f39839a = new ea();
 
     static {
         c.b a10 = yi.c.a("errorCode");

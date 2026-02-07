@@ -6,7 +6,7 @@ import w0.w;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final w f26573a;
+    private static final w f26621a;
 
     /* JADX WARN: Code restructure failed: missing block: B:7:0x0026, code lost:
         r1 = null;
@@ -14,7 +14,7 @@ public abstract class b {
     static {
         /*
             r0 = 0
-            kotlin.Result$a r1 = kotlin.Result.f32005e     // Catch: java.lang.Throwable -> L2b
+            kotlin.Result$a r1 = kotlin.Result.f32053e     // Catch: java.lang.Throwable -> L2b
             java.lang.Class<androidx.lifecycle.LifecycleOwner> r1 = androidx.lifecycle.LifecycleOwner.class
             java.lang.ClassLoader r1 = r1.getClassLoader()     // Catch: java.lang.Throwable -> L2b
             kotlin.jvm.internal.Intrinsics.checkNotNull(r1)     // Catch: java.lang.Throwable -> L2b
@@ -48,7 +48,7 @@ public abstract class b {
             java.lang.Object r1 = kotlin.Result.b(r1)     // Catch: java.lang.Throwable -> L2b
             goto L46
         L3c:
-            kotlin.Result$a r2 = kotlin.Result.f32005e
+            kotlin.Result$a r2 = kotlin.Result.f32053e
             java.lang.Object r1 = kotlin.c.a(r1)
             java.lang.Object r1 = kotlin.Result.b(r1)
         L46:
@@ -64,7 +64,7 @@ public abstract class b {
             r0.<init>()
             w0.w r0 = w0.e.a(r0)
         L5b:
-            i3.b.f26573a = r0
+            i3.b.f26621a = r0
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: i3.b.<clinit>():void");
@@ -76,6 +76,6 @@ public abstract class b {
     }
 
     public static final w c() {
-        return f26573a;
+        return f26621a;
     }
 }

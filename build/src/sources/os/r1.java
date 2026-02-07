@@ -6,11 +6,11 @@ import kotlinx.coroutines.Job;
 public final class r1 extends CancellationException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final transient Job f43528d;
+    public final transient Job f43576d;
 
     public r1(String str, Job job) {
         super(str);
-        this.f43528d = job;
+        this.f43576d = job;
     }
 
     public r1(String str) {

@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class g1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g1 f26306d = new g1("PermissionGranted", 0);
+    public static final g1 f26354d = new g1("PermissionGranted", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g1 f26307e = new g1("PermissionRejected", 1);
+    public static final g1 f26355e = new g1("PermissionRejected", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final g1 f26308i = new g1("SettingsLaunched", 2);
+    public static final g1 f26356i = new g1("SettingsLaunched", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ g1[] f26309o;
+    private static final /* synthetic */ g1[] f26357o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f26310p;
+    private static final /* synthetic */ EnumEntries f26358p;
 
     static {
         g1[] a10 = a();
-        f26309o = a10;
-        f26310p = xr.a.a(a10);
+        f26357o = a10;
+        f26358p = xr.a.a(a10);
     }
 
     private g1(String str, int i10) {
     }
 
     private static final /* synthetic */ g1[] a() {
-        return new g1[]{f26306d, f26307e, f26308i};
+        return new g1[]{f26354d, f26355e, f26356i};
     }
 
     public static g1 valueOf(String str) {
@@ -39,6 +39,6 @@ public final class g1 {
     }
 
     public static g1[] values() {
-        return (g1[]) f26309o.clone();
+        return (g1[]) f26357o.clone();
     }
 }

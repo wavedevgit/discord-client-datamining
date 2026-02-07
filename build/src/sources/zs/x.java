@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class x implements n0, dt.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Boolean f56611a;
+    private Boolean f56659a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f56612b;
+    private Integer f56660b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f56613c;
+    private Integer f56661c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f56614d;
+    private Integer f56662d;
 
     public x(Boolean bool, Integer num, Integer num2, Integer num3) {
-        this.f56611a = bool;
-        this.f56612b = num;
-        this.f56613c = num2;
-        this.f56614d = num3;
+        this.f56659a = bool;
+        this.f56660b = num;
+        this.f56661c = num2;
+        this.f56662d = num3;
     }
 
     @Override // dt.c
@@ -32,7 +32,7 @@ public final class x implements n0, dt.c {
 
     @Override // zs.n0
     public Integer b() {
-        return this.f56612b;
+        return this.f56660b;
     }
 
     public final ys.k c() {
@@ -109,32 +109,32 @@ public final class x implements n0, dt.c {
 
     @Override // zs.n0
     public Boolean isNegative() {
-        return this.f56611a;
+        return this.f56659a;
     }
 
     @Override // zs.n0
     public Integer j() {
-        return this.f56613c;
+        return this.f56661c;
     }
 
     @Override // zs.n0
     public void k(Boolean bool) {
-        this.f56611a = bool;
+        this.f56659a = bool;
     }
 
     @Override // zs.n0
     public void l(Integer num) {
-        this.f56613c = num;
+        this.f56661c = num;
     }
 
     @Override // zs.n0
     public void o(Integer num) {
-        this.f56612b = num;
+        this.f56660b = num;
     }
 
     @Override // zs.n0
     public void p(Integer num) {
-        this.f56614d = num;
+        this.f56662d = num;
     }
 
     public String toString() {
@@ -174,7 +174,7 @@ public final class x implements n0, dt.c {
 
     @Override // zs.n0
     public Integer v() {
-        return this.f56614d;
+        return this.f56662d;
     }
 
     public /* synthetic */ x(Boolean bool, Integer num, Integer num2, Integer num3, int i10, DefaultConstructorMarker defaultConstructorMarker) {

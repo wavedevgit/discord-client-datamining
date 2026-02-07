@@ -8,34 +8,34 @@ public class o extends g {
     class a extends y5.c {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ y5.b f41525d;
+        final /* synthetic */ y5.b f41573d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ y5.c f41526e;
+        final /* synthetic */ y5.c f41574e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ q5.b f41527f;
+        final /* synthetic */ q5.b f41575f;
 
         a(y5.b bVar, y5.c cVar, q5.b bVar2) {
-            this.f41525d = bVar;
-            this.f41526e = cVar;
-            this.f41527f = bVar2;
+            this.f41573d = bVar;
+            this.f41574e = cVar;
+            this.f41575f = bVar2;
         }
 
         @Override // y5.c
         /* renamed from: d */
         public q5.b a(y5.b bVar) {
             Object g10;
-            this.f41525d.h(bVar.f(), bVar.a(), ((q5.b) bVar.g()).f46509a, ((q5.b) bVar.b()).f46509a, bVar.d(), bVar.c(), bVar.e());
-            String str = (String) this.f41526e.a(this.f41525d);
+            this.f41573d.h(bVar.f(), bVar.a(), ((q5.b) bVar.g()).f46557a, ((q5.b) bVar.b()).f46557a, bVar.d(), bVar.c(), bVar.e());
+            String str = (String) this.f41574e.a(this.f41573d);
             if (bVar.c() == 1.0f) {
                 g10 = bVar.b();
             } else {
                 g10 = bVar.g();
             }
             q5.b bVar2 = (q5.b) g10;
-            this.f41527f.a(str, bVar2.f46510b, bVar2.f46511c, bVar2.f46512d, bVar2.f46513e, bVar2.f46514f, bVar2.f46515g, bVar2.f46516h, bVar2.f46517i, bVar2.f46518j, bVar2.f46519k, bVar2.f46520l, bVar2.f46521m);
-            return this.f41527f;
+            this.f41575f.a(str, bVar2.f46558b, bVar2.f46559c, bVar2.f46560d, bVar2.f46561e, bVar2.f46562f, bVar2.f46563g, bVar2.f46564h, bVar2.f46565i, bVar2.f46566j, bVar2.f46567k, bVar2.f46568l, bVar2.f46569m);
+            return this.f41575f;
         }
     }
 
@@ -50,28 +50,28 @@ public class o extends g {
         Object obj;
         float floatValue;
         q5.b bVar;
-        y5.c cVar = this.f41482e;
+        y5.c cVar = this.f41530e;
         if (cVar != null) {
-            float f11 = aVar.f54985g;
-            Float f12 = aVar.f54986h;
+            float f11 = aVar.f55033g;
+            Float f12 = aVar.f55034h;
             if (f12 == null) {
                 floatValue = Float.MAX_VALUE;
             } else {
                 floatValue = f12.floatValue();
             }
-            Object obj2 = aVar.f54980b;
+            Object obj2 = aVar.f55028b;
             q5.b bVar2 = (q5.b) obj2;
-            Object obj3 = aVar.f54981c;
+            Object obj3 = aVar.f55029c;
             if (obj3 == null) {
                 bVar = (q5.b) obj2;
             } else {
                 bVar = (q5.b) obj3;
             }
             return (q5.b) cVar.b(f11, floatValue, bVar2, bVar, f10, d(), f());
-        } else if (f10 == 1.0f && (obj = aVar.f54981c) != null) {
+        } else if (f10 == 1.0f && (obj = aVar.f55029c) != null) {
             return (q5.b) obj;
         } else {
-            return (q5.b) aVar.f54980b;
+            return (q5.b) aVar.f55028b;
         }
     }
 

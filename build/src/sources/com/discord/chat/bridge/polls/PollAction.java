@@ -32,7 +32,7 @@ public final class PollAction {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.b(o.f48044e, new Function0() { // from class: n6.a
+    private static final Lazy[] $childSerializers = {null, l.b(o.f48092e, new Function0() { // from class: n6.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -116,13 +116,13 @@ public final class PollAction {
         compositeEncoder.s(serialDescriptor, 1, (ft.o) lazyArr[1].getValue(), pollAction.presentation);
         compositeEncoder.y(serialDescriptor, 2, pollAction.enabled);
         if (compositeEncoder.A(serialDescriptor, 3) || pollAction.type != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, pollAction.type);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, pollAction.type);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || pollAction.secondaryLabel != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, pollAction.secondaryLabel);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, pollAction.secondaryLabel);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || pollAction.accessibilityHint != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, pollAction.accessibilityHint);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, pollAction.accessibilityHint);
         }
     }
 

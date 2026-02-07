@@ -271,7 +271,7 @@ public class b {
     }
 
     private Drawable i() {
-        if (oh.b.f42758a) {
+        if (oh.b.f42806a) {
             this.f14718r = j();
             return new RippleDrawable(this.f14711k, null, this.f14718r);
         }
@@ -292,7 +292,7 @@ public class b {
 
     private void k0() {
         Drawable drawable;
-        if (oh.b.f42758a && (drawable = this.f14715o) != null) {
+        if (oh.b.f42806a && (drawable = this.f14715o) != null) {
             ((RippleDrawable) drawable).setColor(this.f14711k);
             return;
         }

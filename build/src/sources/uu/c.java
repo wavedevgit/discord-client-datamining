@@ -13,7 +13,7 @@ import uu.f;
 public final class c implements su.a, f, bv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f52091a = new c();
+    public static final c f52139a = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -41,7 +41,7 @@ public final class c implements su.a, f, bv.d {
         }
         ArrayList arrayList = new ArrayList();
         for (Object obj : b10) {
-            if (f52091a.i(hVar, obj, bVar.a(), bVar.c())) {
+            if (f52139a.i(hVar, obj, bVar.a(), bVar.c())) {
                 arrayList.add(obj);
             }
         }

@@ -11,7 +11,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public abstract class h2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f31007a = t1.i();
+    private static final Map f31055a = t1.i();
 
     public static final SerialDescriptor a(String serialName, ht.e kind) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
@@ -22,11 +22,11 @@ public abstract class h2 {
 
     public static final KSerializer b(KClass kClass) {
         Intrinsics.checkNotNullParameter(kClass, "<this>");
-        return (KSerializer) f31007a.get(kClass);
+        return (KSerializer) f31055a.get(kClass);
     }
 
     private static final void c(String str) {
-        for (KSerializer kSerializer : f31007a.values()) {
+        for (KSerializer kSerializer : f31055a.values()) {
             if (Intrinsics.areEqual(str, kSerializer.getDescriptor().h())) {
                 throw new IllegalArgumentException(StringsKt.j("\n                The name of serial descriptor should uniquely identify associated serializer.\n                For serial name " + str + " there already exists " + Reflection.getOrCreateKotlinClass(kSerializer.getClass()).getSimpleName() + ".\n                Please refer to SerialDescriptor documentation for additional information.\n            "));
             }

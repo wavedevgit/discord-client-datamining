@@ -14,7 +14,7 @@ import kotlin.text.StringsKt;
 public final class g implements su.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f55642a = new g();
+    public static final g f55690a = new g();
 
     private g() {
     }
@@ -47,7 +47,7 @@ public final class g implements su.b, o {
         Set<kotlin.text.m> set = a10;
         if (!(set instanceof Collection) || !set.isEmpty()) {
             for (kotlin.text.m mVar : set) {
-                if (mVar == kotlin.text.m.f34992o) {
+                if (mVar == kotlin.text.m.f35040o) {
                     List<String> split$default = StringsKt.split$default(str2, new String[]{ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE}, false, 0, 6, null);
                     if ((split$default instanceof Collection) && split$default.isEmpty()) {
                         return true;
@@ -67,7 +67,7 @@ public final class g implements su.b, o {
     private final h e(List list) {
         Object b10;
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             Object obj = list.get(0);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
             Object obj2 = list.get(1);
@@ -76,7 +76,7 @@ public final class g implements su.b, o {
             Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any?>");
             b10 = Result.b(new h((String) obj, (String) obj2, (List) obj3));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) == null) {

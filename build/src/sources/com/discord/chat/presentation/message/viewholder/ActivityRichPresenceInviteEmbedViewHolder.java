@@ -95,7 +95,7 @@ public final class ActivityRichPresenceInviteEmbedViewHolder extends MessagePart
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
                 return unit;
             }
         }, new ActivityRichPresenceInviteEmbedViewHolder$bind$12(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$13(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$14(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$15(this.eventHandler), new ActivityRichPresenceInviteEmbedViewHolder$bind$16(this.eventHandler));

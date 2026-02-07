@@ -3,17 +3,17 @@ package pg;
 final class x extends a0 {
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ f0 f44891p;
+    final /* synthetic */ f0 f44939p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public x(f0 f0Var) {
         super(f0Var, null);
-        this.f44891p = f0Var;
+        this.f44939p = f0Var;
     }
 
     @Override // pg.a0
     final /* bridge */ /* synthetic */ Object a(int i10) {
-        return new d0(this.f44891p, i10);
+        return new d0(this.f44939p, i10);
     }
 }

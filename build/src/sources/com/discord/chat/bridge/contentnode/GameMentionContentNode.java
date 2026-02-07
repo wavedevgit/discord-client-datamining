@@ -28,7 +28,7 @@ public final class GameMentionContentNode extends MentionContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.j
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.j
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -91,7 +91,7 @@ public final class GameMentionContentNode extends MentionContentNode {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.s(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(gameMentionContentNode.channelId));
         if (compositeEncoder.A(serialDescriptor, 1) || gameMentionContentNode.icon != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, gameMentionContentNode.icon);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, gameMentionContentNode.icon);
         }
         compositeEncoder.z(serialDescriptor, 2, gameMentionContentNode.applicationId);
         compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), gameMentionContentNode.getContent());

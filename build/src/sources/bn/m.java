@@ -93,7 +93,7 @@ public final class m {
 
     public m(i iVar, Function0 childTreeSnapshots) {
         Intrinsics.checkNotNullParameter(childTreeSnapshots, "childTreeSnapshots");
-        qr.o oVar = qr.o.f48045i;
+        qr.o oVar = qr.o.f48093i;
         this.f6911a = qr.l.b(oVar, new b(iVar));
         this.f6912b = qr.l.b(oVar, childTreeSnapshots);
     }
@@ -126,7 +126,7 @@ public final class m {
             okio.ByteString r1 = r1.b()
         L12:
             if (r1 != 0) goto L16
-            okio.ByteString r1 = okio.ByteString.f43167p
+            okio.ByteString r1 = okio.ByteString.f43215p
         L16:
             bn.j.c(r0, r1)
             java.util.Map r1 = r7.a()

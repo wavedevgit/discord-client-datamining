@@ -5,16 +5,16 @@ import java.util.List;
 public class r extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qv.t f41276a = new qv.t();
+    private final qv.t f41324a = new qv.t();
 
     /* renamed from: b  reason: collision with root package name */
-    private o f41277b = new o();
+    private o f41325b = new o();
 
     @Override // sv.a, sv.d
     public void b(rv.a aVar) {
-        CharSequence d10 = this.f41277b.d();
+        CharSequence d10 = this.f41325b.d();
         if (d10.length() > 0) {
-            aVar.a(d10.toString(), this.f41276a);
+            aVar.a(d10.toString(), this.f41324a);
         }
     }
 
@@ -33,26 +33,26 @@ public class r extends sv.a {
 
     @Override // sv.d
     public qv.a e() {
-        return this.f41276a;
+        return this.f41324a;
     }
 
     @Override // sv.a, sv.d
     public void f(CharSequence charSequence) {
-        this.f41277b.f(charSequence);
+        this.f41325b.f(charSequence);
     }
 
     @Override // sv.a, sv.d
     public void g() {
-        if (this.f41277b.d().length() == 0) {
-            this.f41276a.l();
+        if (this.f41325b.d().length() == 0) {
+            this.f41324a.l();
         }
     }
 
     public CharSequence i() {
-        return this.f41277b.d();
+        return this.f41325b.d();
     }
 
     public List j() {
-        return this.f41277b.c();
+        return this.f41325b.c();
     }
 }

@@ -17,21 +17,21 @@ public final class c implements Serializable {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f48154a;
+        static final /* synthetic */ int[] f48202a;
 
         static {
             int[] iArr = new int[f.values().length];
-            f48154a = iArr;
+            f48202a = iArr;
             try {
                 iArr[f.UT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f48154a[f.TT.ordinal()] = 2;
+                f48202a[f.TT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f48154a[f.POSIX.ordinal()] = 3;
+                f48202a[f.POSIX.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -45,7 +45,7 @@ public final class c implements Serializable {
 
     private static void a(double d10, f fVar) {
         if (!Double.isNaN(d10) && !Double.isInfinite(d10)) {
-            int i10 = a.f48154a[fVar.ordinal()];
+            int i10 = a.f48202a[fVar.ordinal()];
             if (i10 != 1 && i10 != 2 && i10 != 3) {
                 throw new IllegalArgumentException("Unsupported time scale: " + fVar);
             } else if (Double.compare(990575.0d, d10) <= 0 && Double.compare(d10, 2817152.0d) <= 0) {
@@ -62,7 +62,7 @@ public final class c implements Serializable {
     }
 
     private static long e(f fVar) {
-        int i10 = a.f48154a[fVar.ordinal()];
+        int i10 = a.f48202a[fVar.ordinal()];
         if (i10 != 1 && i10 != 2) {
             if (i10 == 3) {
                 return 210866760000L;

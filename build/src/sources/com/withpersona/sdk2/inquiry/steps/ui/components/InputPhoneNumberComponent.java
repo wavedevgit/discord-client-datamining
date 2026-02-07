@@ -87,7 +87,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
         @Override // fq.c2
         public List f() {
-            return CollectionsKt.e(gq.d.f25510a.g(InputPhoneNumberComponent.this.l()));
+            return CollectionsKt.e(gq.d.f25558a.g(InputPhoneNumberComponent.this.l()));
         }
 
         @Override // fq.c2
@@ -119,14 +119,14 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
             String str3 = (attributes == null || (prefill = attributes.getPrefill()) == null || (str3 = StringsKt.k1(prefill).toString()) == null) ? "" : "";
             TextBasedComponentStyle textBasedComponentStyle = null;
             if (StringsKt.P(str3, "+", false, 2, null)) {
-                j k10 = gq.d.f25510a.k(str3);
+                j k10 = gq.d.f25558a.k(str3);
                 String b10 = k10.b();
                 str2 = k10.a();
                 str = b10;
             } else {
                 InputPhoneNumber.Attributes attributes2 = config.getAttributes();
                 if (attributes2 == null || (a10 = attributes2.getCountryCode()) == null) {
-                    a10 = gq.d.f25510a.j().a();
+                    a10 = gq.d.f25558a.j().a();
                 }
                 str = str3;
                 str2 = a10;
@@ -181,7 +181,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         this.f19661p = textBasedComponentStyle;
         this.f19662q = str;
         this.f19663r = new ArrayList();
-        gq.d dVar = gq.d.f25510a;
+        gq.d dVar = gq.d.f25558a;
         this.f19666u = dVar.f();
         this.f19664s = new a();
         this.f19665t = new k(dVar.g(this.f19662q));
@@ -313,7 +313,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
     public final InputPhoneNumberComponent q(b4 b4Var) {
         String str;
         if (b4Var != null) {
-            str = gq.d.f25510a.e(b4Var);
+            str = gq.d.f25558a.e(b4Var);
         } else {
             str = null;
         }

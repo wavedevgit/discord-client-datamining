@@ -7,29 +7,29 @@ import rt.a0;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    final long f39392a;
+    final long f39440a;
 
     /* renamed from: b  reason: collision with root package name */
-    final c f39393b;
+    final c f39441b;
 
     /* renamed from: c  reason: collision with root package name */
-    final h f39394c;
+    final h f39442c;
 
     /* renamed from: d  reason: collision with root package name */
-    final h f39395d;
+    final h f39443d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(long j10, c cVar, c cVar2) {
-        this.f39392a = j10;
-        this.f39393b = cVar2;
+        this.f39440a = j10;
+        this.f39441b = cVar2;
         if (j10 == Long.MIN_VALUE) {
             h hVar = new h(j.BC, 1000000000, 1, 1);
-            this.f39394c = hVar;
-            this.f39395d = hVar;
+            this.f39442c = hVar;
+            this.f39443d = hVar;
             return;
         }
-        this.f39394c = cVar2.e(j10);
-        this.f39395d = cVar.e(j10 - 1);
+        this.f39442c = cVar2.e(j10);
+        this.f39443d = cVar.e(j10 - 1);
     }
 
     public boolean equals(Object obj) {
@@ -38,7 +38,7 @@ public final class f {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f39392a == fVar.f39392a && this.f39393b == fVar.f39393b && this.f39395d.equals(fVar.f39395d)) {
+            if (this.f39440a == fVar.f39440a && this.f39441b == fVar.f39441b && this.f39443d.equals(fVar.f39443d)) {
                 return true;
             }
         }
@@ -46,11 +46,11 @@ public final class f {
     }
 
     public int hashCode() {
-        long j10 = this.f39392a;
+        long j10 = this.f39440a;
         return (int) (j10 ^ (j10 >>> 32));
     }
 
     public String toString() {
-        return f.class.getName() + "[start=" + this.f39392a + " (" + f0.M0(this.f39392a, a0.MODIFIED_JULIAN_DATE) + "),algorithm=" + this.f39393b + ",date-before-cutover=" + this.f39395d + ",date-at-cutover=" + this.f39394c + ']';
+        return f.class.getName() + "[start=" + this.f39440a + " (" + f0.M0(this.f39440a, a0.MODIFIED_JULIAN_DATE) + "),algorithm=" + this.f39441b + ",date-before-cutover=" + this.f39443d + ",date-at-cutover=" + this.f39442c + ']';
     }
 }

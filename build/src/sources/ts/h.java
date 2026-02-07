@@ -5,10 +5,10 @@ import kotlin.coroutines.CoroutineContext;
 public final class h extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient CoroutineContext f50825d;
+    private final transient CoroutineContext f50873d;
 
     public h(CoroutineContext coroutineContext) {
-        this.f50825d = coroutineContext;
+        this.f50873d = coroutineContext;
     }
 
     @Override // java.lang.Throwable
@@ -19,6 +19,6 @@ public final class h extends RuntimeException {
 
     @Override // java.lang.Throwable
     public String getLocalizedMessage() {
-        return String.valueOf(this.f50825d);
+        return String.valueOf(this.f50873d);
     }
 }

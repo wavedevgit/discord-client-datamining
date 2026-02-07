@@ -10,13 +10,13 @@ import p4.u;
 public final class e extends c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f38469c = new a(null);
+    public static final a f38517c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f38470d;
+    private static final String f38518d;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f38471b;
+    private final int f38519b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -31,25 +31,25 @@ public final class e extends c {
     static {
         String i10 = m.i("NetworkMeteredCtrlr");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"NetworkMeteredCtrlr\")");
-        f38470d = i10;
+        f38518d = i10;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(o4.h tracker) {
         super(tracker);
         Intrinsics.checkNotNullParameter(tracker, "tracker");
-        this.f38471b = 7;
+        this.f38519b = 7;
     }
 
     @Override // n4.c
     public int b() {
-        return this.f38471b;
+        return this.f38519b;
     }
 
     @Override // n4.c
     public boolean c(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        if (workSpec.f43694j.d() == n.METERED) {
+        if (workSpec.f43742j.d() == n.METERED) {
             return true;
         }
         return false;
@@ -60,7 +60,7 @@ public final class e extends c {
     public boolean d(m4.c value) {
         Intrinsics.checkNotNullParameter(value, "value");
         if (Build.VERSION.SDK_INT < 26) {
-            m.e().a(f38470d, "Metered network constraint is not supported before API 26, only checking for connected state.");
+            m.e().a(f38518d, "Metered network constraint is not supported before API 26, only checking for connected state.");
             if (value.a()) {
                 return false;
             }

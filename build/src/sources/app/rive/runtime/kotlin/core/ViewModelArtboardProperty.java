@@ -56,7 +56,7 @@ public final class ViewModelArtboardProperty extends ViewModelProperty<Unit> {
     @Override // app.rive.runtime.kotlin.core.ViewModelProperty
     public /* bridge */ /* synthetic */ Unit nativeGetValue() {
         nativeGetValue2();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void set(BindableArtboard bindableArtboard) {

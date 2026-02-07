@@ -11,36 +11,36 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class f0 implements Collection, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final short[] f48029d;
+    private final short[] f48077d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final short[] f48030d;
+        private final short[] f48078d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f48031e;
+        private int f48079e;
 
         public a(short[] array) {
             Intrinsics.checkNotNullParameter(array, "array");
-            this.f48030d = array;
+            this.f48078d = array;
         }
 
         public short a() {
-            int i10 = this.f48031e;
-            short[] sArr = this.f48030d;
+            int i10 = this.f48079e;
+            short[] sArr = this.f48078d;
             if (i10 < sArr.length) {
-                this.f48031e = i10 + 1;
+                this.f48079e = i10 + 1;
                 return e0.d(sArr[i10]);
             }
-            throw new NoSuchElementException(String.valueOf(this.f48031e));
+            throw new NoSuchElementException(String.valueOf(this.f48079e));
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f48031e < this.f48030d.length) {
+            if (this.f48079e < this.f48078d.length) {
                 return true;
             }
             return false;
@@ -58,7 +58,7 @@ public final class f0 implements Collection, KMappedMarker {
     }
 
     private /* synthetic */ f0(short[] sArr) {
-        this.f48029d = sArr;
+        this.f48077d = sArr;
     }
 
     public static final /* synthetic */ f0 b(short[] sArr) {
@@ -180,37 +180,37 @@ public final class f0 implements Collection, KMappedMarker {
     @Override // java.util.Collection
     public boolean containsAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return g(this.f48029d, elements);
+        return g(this.f48077d, elements);
     }
 
     public boolean e(short s10) {
-        return f(this.f48029d, s10);
+        return f(this.f48077d, s10);
     }
 
     @Override // java.util.Collection
     public boolean equals(Object obj) {
-        return h(this.f48029d, obj);
+        return h(this.f48077d, obj);
     }
 
     @Override // java.util.Collection
     public int hashCode() {
-        return o(this.f48029d);
+        return o(this.f48077d);
     }
 
     @Override // java.util.Collection
     public boolean isEmpty() {
-        return p(this.f48029d);
+        return p(this.f48077d);
     }
 
     @Override // java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return q(this.f48029d);
+        return q(this.f48077d);
     }
 
     @Override // java.util.Collection
     /* renamed from: j */
     public int size() {
-        return l(this.f48029d);
+        return l(this.f48077d);
     }
 
     @Override // java.util.Collection
@@ -229,7 +229,7 @@ public final class f0 implements Collection, KMappedMarker {
     }
 
     public final /* synthetic */ short[] t() {
-        return this.f48029d;
+        return this.f48077d;
     }
 
     @Override // java.util.Collection
@@ -238,7 +238,7 @@ public final class f0 implements Collection, KMappedMarker {
     }
 
     public String toString() {
-        return s(this.f48029d);
+        return s(this.f48077d);
     }
 
     @Override // java.util.Collection

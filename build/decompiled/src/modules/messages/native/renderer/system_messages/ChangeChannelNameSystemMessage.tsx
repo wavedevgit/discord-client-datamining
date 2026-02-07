@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55618: for (var _fun55618_ip = 0;;) switch (_fun55618_ip) {
+        _fun56063: for (var _fun56063_ip = 0;;) switch (_fun56063_ip) {
             case 0:
                 var3 = arg0;
                 var10 = var3.message;
@@ -65,16 +65,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var11 == var5;
                 var0 = undefined;
                 if (var4) {
-                    _fun55618_ip = 176;
-                    continue _fun55618
+                    _fun56063_ip = 176;
+                    continue _fun56063
                 }
             case 151:
                 var4 = var5.isGroupDM;
                 var4 = var11 == var4;
                 var0 = undefined;
                 if (var4) {
-                    _fun55618_ip = 176;
-                    continue _fun55618
+                    _fun56063_ip = 176;
+                    continue _fun56063
                 }
             case 166:
                 var4 = var5.isGroupDM;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 176:
                 var4 = var11 != var0;
                 if (!var4) {
-                    _fun55618_ip = 186;
-                    continue _fun55618
+                    _fun56063_ip = 186;
+                    continue _fun56063
                 }
             case 183:
                 var4 = var0;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var10.content;
                 var0 = '';
                 if (!(var0 !== var5)) {
-                    _fun55618_ip = 234;
-                    continue _fun55618
+                    _fun56063_ip = 234;
+                    continue _fun56063
                 }
             case 199:
                 var5 = _closure1_slot0;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.bind(var2)(var0);
                 var0 = var0.t;
                 var8 = var0.rk0be9;
-                _fun55618_ip = 267;
-                continue _fun55618;
+                _fun56063_ip = 267;
+                continue _fun56063;
             case 234:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5.intl;
                 var6 = var7.formatToParts;
                 if (var4) {
-                    _fun55618_ip = 377;
-                    continue _fun55618
+                    _fun56063_ip = 377;
+                    continue _fun56063
                 }
             case 303:
                 var5 = var3.isForumPost;
@@ -133,13 +133,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var14.bind(var2)(var4);
                 var4 = var4.t;
                 if (var5) {
-                    _fun55618_ip = 342;
-                    continue _fun55618
+                    _fun56063_ip = 342;
+                    continue _fun56063
                 }
             case 334:
                 var5 = var4.XCPMEG;
-                _fun55618_ip = 348;
-                continue _fun55618;
+                _fun56063_ip = 348;
+                continue _fun56063;
             case 342:
                 var5 = var4["qa0e/n"];
             case 348:
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var10.content;
                 var4.channelName = var14;
                 var4 = var6.bind(var7)(var5, var4);
-                _fun55618_ip = 451;
-                continue _fun55618;
+                _fun56063_ip = 451;
+                continue _fun56063;
             case 377:
                 var5 = {};
                 var5.username = var13;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11 == var12;
                 var11 = undefined;
                 if (var13) {
-                    _fun55618_ip = 425;
-                    continue _fun55618
+                    _fun56063_ip = 425;
+                    continue _fun56063
                 }
             case 419:
                 var11 = var12.linkColor;
@@ -189,4 +189,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChangeChannelNameSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6692, 3983, 1234, 6702, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6735, 3982, 1234, 6745, 2]);

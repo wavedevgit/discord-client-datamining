@@ -25,21 +25,21 @@ import qr.v;
 public final class Headers implements Iterable, KMappedMarker {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f42848e = new b(null);
+    public static final b f42896e = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f42849d;
+    private final String[] f42897d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f42850a = new ArrayList(20);
+        private final List f42898a = new ArrayList(20);
 
         public final a a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            b bVar = Headers.f42848e;
+            b bVar = Headers.f42896e;
             bVar.e(name);
             bVar.f(value, name);
             d(name, value);
@@ -79,51 +79,51 @@ public final class Headers implements Iterable, KMappedMarker {
         public final a d(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f42850a.add(name);
-            this.f42850a.add(StringsKt.k1(value).toString());
+            this.f42898a.add(name);
+            this.f42898a.add(StringsKt.k1(value).toString());
             return this;
         }
 
         public final a e(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            Headers.f42848e.e(name);
+            Headers.f42896e.e(name);
             d(name, value);
             return this;
         }
 
         public final Headers f() {
-            return new Headers((String[]) this.f42850a.toArray(new String[0]), null);
+            return new Headers((String[]) this.f42898a.toArray(new String[0]), null);
         }
 
         public final String g(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            int size = this.f42850a.size() - 2;
+            int size = this.f42898a.size() - 2;
             int c10 = yr.c.c(size, 0, -2);
             if (c10 <= size) {
-                while (!StringsKt.A(name, (String) this.f42850a.get(size), true)) {
+                while (!StringsKt.A(name, (String) this.f42898a.get(size), true)) {
                     if (size != c10) {
                         size -= 2;
                     } else {
                         return null;
                     }
                 }
-                return (String) this.f42850a.get(size + 1);
+                return (String) this.f42898a.get(size + 1);
             }
             return null;
         }
 
         public final List h() {
-            return this.f42850a;
+            return this.f42898a;
         }
 
         public final a i(String name) {
             Intrinsics.checkNotNullParameter(name, "name");
             int i10 = 0;
-            while (i10 < this.f42850a.size()) {
-                if (StringsKt.A(name, (String) this.f42850a.get(i10), true)) {
-                    this.f42850a.remove(i10);
-                    this.f42850a.remove(i10);
+            while (i10 < this.f42898a.size()) {
+                if (StringsKt.A(name, (String) this.f42898a.get(i10), true)) {
+                    this.f42898a.remove(i10);
+                    this.f42898a.remove(i10);
                     i10 -= 2;
                 }
                 i10 += 2;
@@ -134,7 +134,7 @@ public final class Headers implements Iterable, KMappedMarker {
         public final a j(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            b bVar = Headers.f42848e;
+            b bVar = Headers.f42896e;
             bVar.e(name);
             bVar.f(value, name);
             i(name);
@@ -263,7 +263,7 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     public static final Headers h(String... strArr) {
-        return f42848e.i(strArr);
+        return f42896e.i(strArr);
     }
 
     public final int b() {
@@ -272,7 +272,7 @@ public final class Headers implements Iterable, KMappedMarker {
 
     public final String c(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return f42848e.g(this.f42849d, name);
+        return f42896e.g(this.f42897d, name);
     }
 
     public final Date d(String name) {
@@ -285,11 +285,11 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     public final String e(int i10) {
-        return this.f42849d[i10 * 2];
+        return this.f42897d[i10 * 2];
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof Headers) && Arrays.equals(this.f42849d, ((Headers) obj).f42849d)) {
+        if ((obj instanceof Headers) && Arrays.equals(this.f42897d, ((Headers) obj).f42897d)) {
             return true;
         }
         return false;
@@ -308,12 +308,12 @@ public final class Headers implements Iterable, KMappedMarker {
 
     public final a g() {
         a aVar = new a();
-        CollectionsKt.D(aVar.h(), this.f42849d);
+        CollectionsKt.D(aVar.h(), this.f42897d);
         return aVar;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f42849d);
+        return Arrays.hashCode(this.f42897d);
     }
 
     public final Map i() {
@@ -346,7 +346,7 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     public final String j(int i10) {
-        return this.f42849d[(i10 * 2) + 1];
+        return this.f42897d[(i10 * 2) + 1];
     }
 
     public final List l(String name) {
@@ -370,7 +370,7 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     public final int size() {
-        return this.f42849d.length / 2;
+        return this.f42897d.length / 2;
     }
 
     public String toString() {
@@ -393,6 +393,6 @@ public final class Headers implements Iterable, KMappedMarker {
     }
 
     private Headers(String[] strArr) {
-        this.f42849d = strArr;
+        this.f42897d = strArr;
     }
 }

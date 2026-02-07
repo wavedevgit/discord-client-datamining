@@ -6,7 +6,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends kotlin.random.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f32097i = new a();
+    private final a f32145i = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends ThreadLocal {
@@ -23,7 +23,7 @@ public final class b extends kotlin.random.a {
 
     @Override // kotlin.random.a
     public Random g() {
-        Object obj = this.f32097i.get();
+        Object obj = this.f32145i.get();
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         return (Random) obj;
     }

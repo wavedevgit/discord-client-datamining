@@ -11,16 +11,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f56586b = new a(null);
+    public static final a f56634b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final s f56587c = new s(CollectionsKt.o("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+    private static final s f56635c = new s(CollectionsKt.o("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s f56588d = new s(CollectionsKt.o("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
+    private static final s f56636d = new s(CollectionsKt.o("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"));
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f56589a;
+    private final List f56637a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -29,7 +29,7 @@ public final class s {
         }
 
         public final s a() {
-            return s.f56588d;
+            return s.f56636d;
         }
 
         private a() {
@@ -40,7 +40,7 @@ public final class s {
     /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f56590d = new b();
+        public static final b f56638d = new b();
 
         b() {
             super(1, String.class, "toString", "toString()Ljava/lang/String;", 0);
@@ -55,15 +55,15 @@ public final class s {
 
     public s(List names) {
         Intrinsics.checkNotNullParameter(names, "names");
-        this.f56589a = names;
+        this.f56637a = names;
         if (names.size() == 7) {
             Iterator it = CollectionsKt.m(names).iterator();
             while (it.hasNext()) {
                 int nextInt = ((kotlin.collections.m0) it).nextInt();
-                if (((CharSequence) this.f56589a.get(nextInt)).length() > 0) {
+                if (((CharSequence) this.f56637a.get(nextInt)).length() > 0) {
                     for (int i10 = 0; i10 < nextInt; i10++) {
-                        if (Intrinsics.areEqual(this.f56589a.get(nextInt), this.f56589a.get(i10))) {
-                            throw new IllegalArgumentException(("Day-of-week names must be unique, but '" + ((String) this.f56589a.get(nextInt)) + "' was repeated").toString());
+                        if (Intrinsics.areEqual(this.f56637a.get(nextInt), this.f56637a.get(i10))) {
+                            throw new IllegalArgumentException(("Day-of-week names must be unique, but '" + ((String) this.f56637a.get(nextInt)) + "' was repeated").toString());
                         }
                     }
                 } else {
@@ -76,21 +76,21 @@ public final class s {
     }
 
     public final List b() {
-        return this.f56589a;
+        return this.f56637a;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof s) && Intrinsics.areEqual(this.f56589a, ((s) obj).f56589a)) {
+        if ((obj instanceof s) && Intrinsics.areEqual(this.f56637a, ((s) obj).f56637a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f56589a.hashCode();
+        return this.f56637a.hashCode();
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f56589a, ", ", "DayOfWeekNames(", ")", 0, null, b.f56590d, 24, null);
+        return CollectionsKt.x0(this.f56637a, ", ", "DayOfWeekNames(", ")", 0, null, b.f56638d, 24, null);
     }
 }

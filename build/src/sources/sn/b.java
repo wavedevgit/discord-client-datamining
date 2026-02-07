@@ -5,10 +5,10 @@ import com.facebook.react.views.view.WindowUtilKt;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f49994a = new b();
+    public static final b f50042a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f49995b;
+    private static final boolean f50043b;
 
     static {
         boolean z10;
@@ -20,13 +20,13 @@ public final class b {
             }
         }
         z10 = true;
-        f49995b = z10;
+        f50043b = z10;
     }
 
     private b() {
     }
 
     public final boolean a() {
-        return f49995b;
+        return f50043b;
     }
 }

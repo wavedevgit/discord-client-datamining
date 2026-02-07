@@ -10,10 +10,10 @@ import uo.g2;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f54049a;
+    private final FrameLayout f54097a;
 
     private d(FrameLayout frameLayout) {
-        this.f54049a = frameLayout;
+        this.f54097a = frameLayout;
     }
 
     public static d a(View view) {
@@ -24,7 +24,7 @@ public final class d implements ViewBinding {
     }
 
     public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g2.f51951e, viewGroup, false);
+        View inflate = layoutInflater.inflate(g2.f51999e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -34,6 +34,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f54049a;
+        return this.f54097a;
     }
 }

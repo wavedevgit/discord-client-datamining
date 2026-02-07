@@ -40,25 +40,25 @@ import ls.n;
 public final class h1 extends a0 implements FunctionBase, KFunction, l {
 
     /* renamed from: x  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f35318x = {Reflection.property1(new PropertyReference1Impl(h1.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/FunctionDescriptor;", 0))};
+    static final /* synthetic */ KProperty[] f35366x = {Reflection.property1(new PropertyReference1Impl(h1.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/FunctionDescriptor;", 0))};
 
     /* renamed from: r  reason: collision with root package name */
-    private final c1 f35319r;
+    private final c1 f35367r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f35320s;
+    private final String f35368s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Object f35321t;
+    private final Object f35369t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final z2.a f35322u;
+    private final z2.a f35370u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Lazy f35323v;
+    private final Lazy f35371v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Lazy f35324w;
+    private final Lazy f35372w;
 
     /* synthetic */ h1(c1 c1Var, String str, String str2, FunctionDescriptor functionDescriptor, Object obj, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(c1Var, str, str2, functionDescriptor, (i10 & 16) != 0 ? CallableReference.NO_RECEIVER : obj);
@@ -68,7 +68,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
     public static final ls.h L(h1 h1Var) {
         Object d10;
         ls.h P;
-        n g10 = e3.f35300a.g(h1Var.D());
+        n g10 = e3.f35348a.g(h1Var.D());
         if (g10 instanceof n.d) {
             if (h1Var.F()) {
                 Class<?> jClass = h1Var.B().getJClass();
@@ -79,7 +79,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
                     Intrinsics.checkNotNull(name);
                     arrayList.add(name);
                 }
-                return new ls.a(jClass, arrayList, a.EnumC0488a.f36581e, a.b.f36585e, null, 16, null);
+                return new ls.a(jClass, arrayList, a.EnumC0488a.f36629e, a.b.f36633e, null, 16, null);
             }
             d10 = h1Var.B().h(((n.d) g10).b());
         } else if (g10 instanceof n.e) {
@@ -110,7 +110,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
             for (Method method : list) {
                 arrayList2.add(method.getName());
             }
-            return new ls.a(jClass2, arrayList2, a.EnumC0488a.f36581e, a.b.f36584d, d11);
+            return new ls.a(jClass2, arrayList2, a.EnumC0488a.f36629e, a.b.f36632d, d11);
         } else {
             throw new qr.p();
         }
@@ -162,7 +162,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
         Object S;
         if (G()) {
             if (V(method)) {
-                S = this.f35321t;
+                S = this.f35369t;
             } else {
                 S = S();
             }
@@ -176,7 +176,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
         GenericDeclaration genericDeclaration;
         ls.h hVar;
         Member b10;
-        e3 e3Var = e3.f35300a;
+        e3 e3Var = e3.f35348a;
         n g10 = e3Var.g(h1Var.D());
         if (g10 instanceof n.e) {
             FunctionDescriptor D = h1Var.D();
@@ -209,7 +209,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
                     Intrinsics.checkNotNull(name);
                     arrayList.add(name);
                 }
-                return new ls.a(jClass, arrayList, a.EnumC0488a.f36580d, a.b.f36585e, null, 16, null);
+                return new ls.a(jClass, arrayList, a.EnumC0488a.f36628d, a.b.f36633e, null, 16, null);
             }
             genericDeclaration = h1Var.B().i(((n.d) g10).b());
         } else if (g10 instanceof n.a) {
@@ -220,7 +220,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
             for (Method method : list) {
                 arrayList2.add(method.getName());
             }
-            return new ls.a(jClass2, arrayList2, a.EnumC0488a.f36580d, a.b.f36584d, d10);
+            return new ls.a(jClass2, arrayList2, a.EnumC0488a.f36628d, a.b.f36632d, d10);
         } else {
             genericDeclaration = null;
         }
@@ -246,11 +246,11 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FunctionDescriptor R(h1 h1Var, String str) {
-        return h1Var.B().k(str, h1Var.f35320s);
+        return h1Var.B().k(str, h1Var.f35368s);
     }
 
     private final Object S() {
-        return ls.o.h(this.f35321t, D());
+        return ls.o.h(this.f35369t, D());
     }
 
     private final FunctionDescriptor U(FunctionDescriptor functionDescriptor) {
@@ -316,22 +316,22 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
 
     @Override // ks.a0
     public ls.h A() {
-        return (ls.h) this.f35323v.getValue();
+        return (ls.h) this.f35371v.getValue();
     }
 
     @Override // ks.a0
     public c1 B() {
-        return this.f35319r;
+        return this.f35367r;
     }
 
     @Override // ks.a0
     public ls.h C() {
-        return (ls.h) this.f35324w.getValue();
+        return (ls.h) this.f35372w.getValue();
     }
 
     @Override // ks.a0
     public boolean G() {
-        if (this.f35321t != CallableReference.NO_RECEIVER) {
+        if (this.f35369t != CallableReference.NO_RECEIVER) {
             return true;
         }
         return false;
@@ -340,14 +340,14 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
     @Override // ks.a0
     /* renamed from: T */
     public FunctionDescriptor D() {
-        Object b10 = this.f35322u.b(this, f35318x[0]);
+        Object b10 = this.f35370u.b(this, f35366x[0]);
         Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
         return (FunctionDescriptor) b10;
     }
 
     public boolean equals(Object obj) {
         h1 c10 = j3.c(obj);
-        if (c10 == null || !Intrinsics.areEqual(B(), c10.B()) || !Intrinsics.areEqual(getName(), c10.getName()) || !Intrinsics.areEqual(this.f35320s, c10.f35320s) || !Intrinsics.areEqual(this.f35321t, c10.f35321t)) {
+        if (c10 == null || !Intrinsics.areEqual(B(), c10.B()) || !Intrinsics.areEqual(getName(), c10.getName()) || !Intrinsics.areEqual(this.f35368s, c10.f35368s) || !Intrinsics.areEqual(this.f35369t, c10.f35369t)) {
             return false;
         }
         return true;
@@ -366,7 +366,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
     }
 
     public int hashCode() {
-        return (((B().hashCode() * 31) + getName().hashCode()) * 31) + this.f35320s.hashCode();
+        return (((B().hashCode() * 31) + getName().hashCode()) * 31) + this.f35368s.hashCode();
     }
 
     @Override // kotlin.jvm.functions.Function0
@@ -400,7 +400,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
     }
 
     public String toString() {
-        return d3.f35292a.f(D());
+        return d3.f35340a.f(D());
     }
 
     @Override // kotlin.jvm.functions.Function1
@@ -409,13 +409,13 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
     }
 
     private h1(c1 c1Var, String str, String str2, FunctionDescriptor functionDescriptor, Object obj) {
-        this.f35319r = c1Var;
-        this.f35320s = str2;
-        this.f35321t = obj;
-        this.f35322u = z2.b(functionDescriptor, new e1(this, str));
-        qr.o oVar = qr.o.f48044e;
-        this.f35323v = qr.l.b(oVar, new f1(this));
-        this.f35324w = qr.l.b(oVar, new g1(this));
+        this.f35367r = c1Var;
+        this.f35368s = str2;
+        this.f35369t = obj;
+        this.f35370u = z2.b(functionDescriptor, new e1(this, str));
+        qr.o oVar = qr.o.f48092e;
+        this.f35371v = qr.l.b(oVar, new f1(this));
+        this.f35372w = qr.l.b(oVar, new g1(this));
     }
 
     @Override // kotlin.jvm.functions.Function2
@@ -472,7 +472,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
             java.lang.String r3 = r0.asString()
             java.lang.String r0 = "asString(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r3, r0)
-            ks.e3 r0 = ks.e3.f35300a
+            ks.e3 r0 = ks.e3.f35348a
             ks.n r0 = r0.g(r11)
             java.lang.String r4 = r0.a()
             r7 = 16

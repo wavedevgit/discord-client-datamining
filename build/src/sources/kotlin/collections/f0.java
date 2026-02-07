@@ -15,7 +15,7 @@ public final class f0 implements List, Serializable, RandomAccess, KMappedMarker
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f0 f32050d = new f0();
+    public static final f0 f32098d = new f0();
 
     private f0() {
     }
@@ -102,7 +102,7 @@ public final class f0 implements List, Serializable, RandomAccess, KMappedMarker
 
     @Override // java.util.List, java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return e0.f32049d;
+        return e0.f32097d;
     }
 
     @Override // java.util.List
@@ -115,7 +115,7 @@ public final class f0 implements List, Serializable, RandomAccess, KMappedMarker
 
     @Override // java.util.List
     public ListIterator listIterator() {
-        return e0.f32049d;
+        return e0.f32097d;
     }
 
     @Override // java.util.List
@@ -173,7 +173,7 @@ public final class f0 implements List, Serializable, RandomAccess, KMappedMarker
     @Override // java.util.List
     public ListIterator listIterator(int i10) {
         if (i10 == 0) {
-            return e0.f32049d;
+            return e0.f32097d;
         }
         throw new IndexOutOfBoundsException("Index: " + i10);
     }

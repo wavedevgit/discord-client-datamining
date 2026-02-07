@@ -31,30 +31,30 @@ public abstract class AbstractSignatureParts<TAnnotation> {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final KotlinTypeMarker f33051a;
+        private final KotlinTypeMarker f33099a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final JavaTypeQualifiersByElementType f33052b;
+        private final JavaTypeQualifiersByElementType f33100b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final TypeParameterMarker f33053c;
+        private final TypeParameterMarker f33101c;
 
         public a(KotlinTypeMarker kotlinTypeMarker, JavaTypeQualifiersByElementType javaTypeQualifiersByElementType, TypeParameterMarker typeParameterMarker) {
-            this.f33051a = kotlinTypeMarker;
-            this.f33052b = javaTypeQualifiersByElementType;
-            this.f33053c = typeParameterMarker;
+            this.f33099a = kotlinTypeMarker;
+            this.f33100b = javaTypeQualifiersByElementType;
+            this.f33101c = typeParameterMarker;
         }
 
         public final JavaTypeQualifiersByElementType a() {
-            return this.f33052b;
+            return this.f33100b;
         }
 
         public final KotlinTypeMarker b() {
-            return this.f33051a;
+            return this.f33099a;
         }
 
         public final TypeParameterMarker c() {
-            return this.f33053c;
+            return this.f33101c;
         }
     }
 

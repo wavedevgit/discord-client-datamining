@@ -8,16 +8,16 @@ import ks.j2;
 public class m2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2.d f35365d;
+    private final j2.d f35413d;
 
     public m2(j2.d dVar) {
-        this.f35365d = dVar;
+        this.f35413d = dVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         PropertySetterDescriptor N;
-        N = j2.d.N(this.f35365d);
+        N = j2.d.N(this.f35413d);
         return N;
     }
 }

@@ -16,7 +16,7 @@ public final class g {
         Intrinsics.checkNotNullParameter(username, "username");
         Intrinsics.checkNotNullParameter(password, "password");
         Intrinsics.checkNotNullParameter(charset, "charset");
-        String d10 = ByteString.f43166o.f(username + ':' + password, charset).d();
+        String d10 = ByteString.f43214o.f(username + ':' + password, charset).d();
         return "Basic " + d10;
     }
 }

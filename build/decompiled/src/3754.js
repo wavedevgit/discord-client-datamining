@@ -1,94 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33420: for (var _fun33420_ip = 0;;) switch (_fun33420_ip) {
-        case 0:
-            var2 = exports;
-            var4 = global;
-            var6 = var4.Object;
-            var3 = var6.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var6)(var2, var0, var1);
-            var1 = dependencyMap;
-            var0 = 0;
-            var3 = var1[var0];
-            var1 = require;
-            var0 = undefined;
-            var3 = var1.bind(var0)(var3);
-            var1 = var3.shouldBeUseWeb;
-            var1 = var1.bind(var3)();
-            var6 = var4.Symbol;
-            var3 = 'shareable flag';
-            var3 = var6.bind(var0)(var3);
-            var _closure1_slot0 = var3;
-            var7 = null;
-            if (var1) {
-                _fun33420_ip = 118;
-                continue _fun33420
-            }
-        case 92:
-            var4 = var4.WeakMap;
-            var6 = var4.prototype;
-            var6 = Object.create(var6, {
-                constructor: {
-                    value: var4
-                }
-            });
-            var11 = var6;
-            var4 = new var11[var4](var10);
-            var7 = var4 instanceof Object ? var4 : var6;
-        case 118:
-            var _closure1_slot1 = var7;
-            var4 = {};
-            if (var1) {
-                _fun33420_ip = 160;
-                continue _fun33420
-            }
-        case 127:
-            var1 = function arg0, arg1() {
-                _fun33423: for (var _fun33423_ip = 0;;) switch (_fun33423_ip) {
-                    case 0:
-                        var3 = arg1;
-                        var2 = _closure1_slot1;
-                        var1 = var2.set;
-                        if (var3) {
-                            _fun33423_ip = 22;
-                            continue _fun33423
-                        }
-                    case 18:
-                        var3 = _closure1_slot0;
-                    case 22:
-                        var0 = arg0;
-                        var0 = var1.bind(var2)(var0, var3);
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var4.set = var1;
-            var6 = var7.get;
-            var1 = var6.bind;
-            var1 = var1.bind(var6)(var7);
-            var4.get = var1;
-            var1 = var4;
-            _fun33420_ip = 181;
-            continue _fun33420;
-        case 160:
-            var6 = function() {
-                var0 = undefined;
-                return var0;
-            };
-            var4.set = var6;
-            var5 = function() {
-                var0 = null;
-                return var0;
-            };
-            var4.get = var5;
-            var1 = var4;
-        case 181:
-            var2.shareableMappingFlag = var3;
-            var2.shareableMappingCache = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3726]);
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.ReanimatedFlatList;
+    var2.FlatList = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.AnimatedImage;
+    var2.Image = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.AnimatedScrollView;
+    var2.ScrollView = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.AnimatedText;
+    var2.Text = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.AnimatedView;
+    var2.View = var1;
+    var1 = 5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.addWhitelistedNativeProps;
+    var2.addWhitelistedNativeProps = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.addWhitelistedUIProps;
+    var2.addWhitelistedUIProps = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.createAnimatedComponent;
+    var2.createAnimatedComponent = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3755, 3863, 3864, 3887, 3862, 3822, 3756]);

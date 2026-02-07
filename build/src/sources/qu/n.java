@@ -11,13 +11,13 @@ import okio.Sink;
 public final class n extends j implements Sink {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f48257o = new a(null);
+    public static final a f48305o = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final MessageDigest f48258e;
+    private final MessageDigest f48306e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Mac f48259i;
+    private final Mac f48307i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -39,17 +39,17 @@ public final class n extends j implements Sink {
         super(sink);
         Intrinsics.checkNotNullParameter(sink, "sink");
         Intrinsics.checkNotNullParameter(digest, "digest");
-        this.f48258e = digest;
-        this.f48259i = null;
+        this.f48306e = digest;
+        this.f48307i = null;
     }
 
     public final ByteString a() {
         byte[] doFinal;
-        MessageDigest messageDigest = this.f48258e;
+        MessageDigest messageDigest = this.f48306e;
         if (messageDigest != null) {
             doFinal = messageDigest.digest();
         } else {
-            Mac mac = this.f48259i;
+            Mac mac = this.f48307i;
             Intrinsics.checkNotNull(mac);
             doFinal = mac.doFinal();
         }
@@ -61,21 +61,21 @@ public final class n extends j implements Sink {
     public void w0(Buffer source, long j10) {
         Intrinsics.checkNotNullParameter(source, "source");
         okio.b.b(source.size(), 0L, j10);
-        g0 g0Var = source.f43155d;
+        g0 g0Var = source.f43203d;
         Intrinsics.checkNotNull(g0Var);
         long j11 = 0;
         while (j11 < j10) {
-            int min = (int) Math.min(j10 - j11, g0Var.f48226c - g0Var.f48225b);
-            MessageDigest messageDigest = this.f48258e;
+            int min = (int) Math.min(j10 - j11, g0Var.f48274c - g0Var.f48273b);
+            MessageDigest messageDigest = this.f48306e;
             if (messageDigest != null) {
-                messageDigest.update(g0Var.f48224a, g0Var.f48225b, min);
+                messageDigest.update(g0Var.f48272a, g0Var.f48273b, min);
             } else {
-                Mac mac = this.f48259i;
+                Mac mac = this.f48307i;
                 Intrinsics.checkNotNull(mac);
-                mac.update(g0Var.f48224a, g0Var.f48225b, min);
+                mac.update(g0Var.f48272a, g0Var.f48273b, min);
             }
             j11 += min;
-            g0Var = g0Var.f48229f;
+            g0Var = g0Var.f48277f;
             Intrinsics.checkNotNull(g0Var);
         }
         super.w0(source, j10);

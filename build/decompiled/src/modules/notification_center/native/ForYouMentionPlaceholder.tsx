@@ -173,14 +173,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var2.bind(var3)(var1);
         var2 = var5.useAnimatedStyle;
         var1 = function() {
-            _fun103438: for (var _fun103438_ip = 0;;) switch (_fun103438_ip) {
+            _fun103914: for (var _fun103914_ip = 0;;) switch (_fun103914_ip) {
                 case 0:
                     var0 = {};
                     var3 = _closure2_slot1;
                     var1 = 0.7;
                     if (var3) {
-                        _fun103438_ip = 35;
-                        continue _fun103438
+                        _fun103914_ip = 35;
+                        continue _fun103914
                     }
                 case 22:
                     var3 = _closure2_slot2;
@@ -274,4 +274,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForYouMentionPlaceholder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 671, 566, 3722, 4098, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 671, 566, 3721, 4097, 2]);

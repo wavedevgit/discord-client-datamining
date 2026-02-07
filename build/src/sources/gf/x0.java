@@ -10,13 +10,13 @@ import java.util.Objects;
 public final class x0 extends hg.p {
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ c f25159b;
+    final /* synthetic */ c f25207b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public x0(c cVar, Looper looper) {
         super(looper);
         Objects.requireNonNull(cVar);
-        this.f25159b = cVar;
+        this.f25207b = cVar;
     }
 
     private static final void a(Message message) {
@@ -38,7 +38,7 @@ public final class x0 extends hg.p {
     public final void handleMessage(Message message) {
         com.google.android.gms.common.b bVar;
         com.google.android.gms.common.b bVar2;
-        c cVar = this.f25159b;
+        c cVar = this.f25207b;
         if (cVar.N.get() != message.arg1) {
             if (b(message)) {
                 a(message);

@@ -18,19 +18,19 @@ import q.f4;
 public abstract class d4 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final r0.a f45816a = r0.a.a("camera2.streamSpec.streamUseCase", Long.TYPE);
+    public static final r0.a f45864a = r0.a.a("camera2.streamSpec.streamUseCase", Long.TYPE);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f45817b;
+    private static final Map f45865b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f45818c;
+    private static final Map f45866c;
 
     static {
         HashMap hashMap = new HashMap();
-        f45817b = hashMap;
+        f45865b = hashMap;
         HashMap hashMap2 = new HashMap();
-        f45818c = hashMap2;
+        f45866c = hashMap2;
         if (Build.VERSION.SDK_INT >= 33) {
             HashSet hashSet = new HashSet();
             y2.b bVar = y2.b.PREVIEW;
@@ -169,7 +169,7 @@ public abstract class d4 {
     }
 
     private static a0.r0 f(a0.r0 r0Var, long j10) {
-        r0.a aVar = f45816a;
+        r0.a aVar = f45864a;
         if (r0Var.h(aVar) && ((Long) r0Var.a(aVar)).longValue() == j10) {
             return null;
         }
@@ -183,7 +183,7 @@ public abstract class d4 {
             return false;
         }
         if (bVar == y2.b.STREAM_SHARING) {
-            Map map = f45818c;
+            Map map = f45866c;
             if (!map.containsKey(Long.valueOf(j10))) {
                 return false;
             }
@@ -199,7 +199,7 @@ public abstract class d4 {
             }
             return true;
         }
-        Map map2 = f45817b;
+        Map map2 = f45865b;
         if (!map2.containsKey(Long.valueOf(j10)) || !((Set) map2.get(Long.valueOf(j10))).contains(bVar)) {
             return false;
         }
@@ -352,7 +352,7 @@ public abstract class d4 {
         while (it.hasNext()) {
             a0.i2 i2Var = (a0.i2) it.next();
             a0.r0 f10 = i2Var.f();
-            r0.a aVar = f45816a;
+            r0.a aVar = f45864a;
             if (f10.h(aVar) && i2Var.n().size() != 1) {
                 x.y0.c("StreamUseCaseUtil", String.format("SessionConfig has stream use case but also contains %d surfaces, abort populateSurfaceToStreamUseCaseMapping().", Integer.valueOf(i2Var.n().size())));
                 return;
@@ -366,7 +366,7 @@ public abstract class d4 {
                         map.put((a0.w0) i2Var2.n().get(0), 1L);
                     } else {
                         a0.r0 f11 = i2Var2.f();
-                        r0.a aVar2 = f45816a;
+                        r0.a aVar2 = f45864a;
                         if (f11.h(aVar2) && !i2Var2.n().isEmpty()) {
                             map.put((a0.w0) i2Var2.n().get(0), (Long) i2Var2.f().a(aVar2));
                         }

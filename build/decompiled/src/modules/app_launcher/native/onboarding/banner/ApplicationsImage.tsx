@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/app_launcher/native/onboarding/banner/ApplicationsImage.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun107353: for (var _fun107353_ip = 0;;) switch (_fun107353_ip) {
+        _fun107829: for (var _fun107829_ip = 0;;) switch (_fun107829_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.firstApplication;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 != var6;
                 var7 = null;
                 if (!var1) {
-                    _fun107353_ip = 70;
-                    continue _fun107353
+                    _fun107829_ip = 70;
+                    continue _fun107829
                 }
             case 39:
                 var2 = _closure1_slot0;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 != var5;
                 var6 = null;
                 if (!var1) {
-                    _fun107353_ip = 110;
-                    continue _fun107353
+                    _fun107829_ip = 110;
+                    continue _fun107829
                 }
             case 79:
                 var2 = _closure1_slot0;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 110:
                 var8 = var0 != var7;
                 if (!var8) {
-                    _fun107353_ip = 163;
-                    continue _fun107353
+                    _fun107829_ip = 163;
+                    continue _fun107829
                 }
             case 117:
                 var5 = _closure1_slot4;
@@ -158,8 +158,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 163:
                 var5 = var0 != var6;
                 if (!var5) {
-                    _fun107353_ip = 216;
-                    continue _fun107353
+                    _fun107829_ip = 216;
+                    continue _fun107829
                 }
             case 170:
                 var2 = _closure1_slot4;
@@ -208,4 +208,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.APP_ICON_SIZE = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13885, 4705, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 13927, 4704, 2]);

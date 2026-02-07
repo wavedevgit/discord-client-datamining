@@ -122,7 +122,7 @@ public class SparseArrayCompat implements Cloneable {
         int i11 = ~a10;
         if (i11 < this.f2636o) {
             Object obj3 = this.f2635i[i11];
-            obj2 = u.f51197a;
+            obj2 = u.f51245a;
             if (obj3 == obj2) {
                 this.f2634e[i11] = i10;
                 this.f2635i[i11] = obj;
@@ -171,7 +171,7 @@ public class SparseArrayCompat implements Cloneable {
         if (i10 < objArr.length) {
             return objArr[i10];
         }
-        e eVar = e.f51164a;
+        e eVar = e.f51212a;
         throw new ArrayIndexOutOfBoundsException();
     }
 
@@ -203,8 +203,8 @@ public class SparseArrayCompat implements Cloneable {
 
     public SparseArrayCompat(int i10) {
         if (i10 == 0) {
-            this.f2634e = a.f52101a;
-            this.f2635i = a.f52103c;
+            this.f2634e = a.f52149a;
+            this.f2635i = a.f52151c;
             return;
         }
         int e10 = a.e(i10);

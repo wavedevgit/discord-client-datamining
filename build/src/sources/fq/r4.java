@@ -205,20 +205,20 @@ public abstract class r4 {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        g10 = rp.s.g(a10, str, rp.t.f49138i);
+                        g10 = rp.s.g(a10, str, rp.t.f49186i);
                         if (g10 != null) {
                             booleanRef.element = true;
                         } else {
-                            g10 = rp.s.g(a10, str, rp.t.f49137e);
+                            g10 = rp.s.g(a10, str, rp.t.f49185e);
                         }
                     } else {
                         throw new qr.p();
                     }
                 } else {
-                    g10 = rp.s.g(a10, str, rp.t.f49137e);
+                    g10 = rp.s.g(a10, str, rp.t.f49185e);
                 }
             } else {
-                g10 = rp.s.g(a10, str, rp.t.f49138i);
+                g10 = rp.s.g(a10, str, rp.t.f49186i);
             }
             if (g10 != null) {
                 final int intValue = g10.intValue();
@@ -261,7 +261,7 @@ public abstract class r4 {
                             return o10;
                         }
                     });
-                    c12.f50804b.setAnimation(intValue);
+                    c12.f50852b.setAnimation(intValue);
                     eVar = c12;
                 }
                 return eVar.getRoot();
@@ -272,41 +272,41 @@ public abstract class r4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(tp.e eVar, RemoteImage remoteImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f50804b;
+        ThemeableLottieAnimationView lottieView = eVar.f50852b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         kq.g.f(lottieView, remoteImage);
-        eVar.f50804b.setRepeatMode(1);
-        eVar.f50804b.setRepeatCount(-1);
-        eVar.f50804b.playAnimation();
-        return Unit.f32008a;
+        eVar.f50852b.setRepeatMode(1);
+        eVar.f50852b.setRepeatCount(-1);
+        eVar.f50852b.playAnimation();
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p(tp.f fVar, RemoteImage remoteImage, int i10) {
-        ImageView imageView = fVar.f50806b;
+        ImageView imageView = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         kq.g.f(imageView, remoteImage);
-        fVar.f50806b.setImageResource(i10);
-        fVar.f50806b.setScaleType(ImageView.ScaleType.FIT_XY);
-        fVar.f50806b.setAdjustViewBounds(true);
-        return Unit.f32008a;
+        fVar.f50854b.setImageResource(i10);
+        fVar.f50854b.setScaleType(ImageView.ScaleType.FIT_XY);
+        fVar.f50854b.setAdjustViewBounds(true);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(final tp.f fVar, final RemoteImage remoteImage, Ref.BooleanRef booleanRef, Context context, int i10) {
-        ImageView imageView = fVar.f50806b;
+        ImageView imageView = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         kq.g.f(imageView, remoteImage);
         if (booleanRef.element) {
-            Context context2 = fVar.f50806b.getContext();
+            Context context2 = fVar.f50854b.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             v4.h d10 = new h.a(context2).d();
             String resourcePackageName = context.getResources().getResourcePackageName(i10);
-            String lowerCase = rp.t.f49138i.toString().toLowerCase(Locale.ROOT);
+            String lowerCase = rp.t.f49186i.toString().toLowerCase(Locale.ROOT);
             Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
             String resourceEntryName = context.getResources().getResourceEntryName(i10);
             Uri parse = Uri.parse("android.resource://" + resourcePackageName + "/" + lowerCase + "/" + resourceEntryName);
-            ImageView imageView2 = fVar.f50806b;
+            ImageView imageView2 = fVar.f50854b;
             Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
             h.a r10 = new h.a(imageView2.getContext()).d(parse).r(imageView2);
             r10.e(new k.a() { // from class: fq.q4
@@ -319,11 +319,11 @@ public abstract class r4 {
             });
             d10.a(r10.a());
         } else {
-            fVar.f50806b.setImageResource(i10);
+            fVar.f50854b.setImageResource(i10);
         }
-        fVar.f50806b.setScaleType(ImageView.ScaleType.FIT_XY);
-        fVar.f50806b.setAdjustViewBounds(true);
-        return Unit.f32008a;
+        fVar.f50854b.setScaleType(ImageView.ScaleType.FIT_XY);
+        fVar.f50854b.setAdjustViewBounds(true);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -336,7 +336,7 @@ public abstract class r4 {
         byte[] bytes = i(new String(m12, charset), remoteImage.getStyles()).getBytes(charset);
         Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
         Buffer write = new Buffer().write(bytes);
-        Context context = fVar.f50806b.getContext();
+        Context context = fVar.f50854b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         return new x4.z(x4.u.e(write, context), options, false, 4, null);
     }
@@ -391,7 +391,7 @@ public abstract class r4 {
                     return u10;
                 }
             });
-            c12.f50804b.J(attributes.getUrl());
+            c12.f50852b.J(attributes.getUrl());
             eVar = c12;
         }
         View root = eVar.getRoot();
@@ -401,31 +401,31 @@ public abstract class r4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t(tp.f fVar, RemoteImage remoteImage, RemoteImage.Attributes attributes) {
-        ImageView imageView = fVar.f50806b;
+        ImageView imageView = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         kq.g.f(imageView, remoteImage);
         String url = attributes.getUrl();
-        ImageView imageView2 = fVar.f50806b;
+        ImageView imageView2 = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         k(imageView2, url, remoteImage.getStyles());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u(tp.e eVar, RemoteImage remoteImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f50804b;
+        ThemeableLottieAnimationView lottieView = eVar.f50852b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         kq.g.f(lottieView, remoteImage);
-        eVar.f50804b.setRepeatMode(1);
-        eVar.f50804b.setRepeatCount(-1);
-        eVar.f50804b.playAnimation();
-        return Unit.f32008a;
+        eVar.f50852b.setRepeatMode(1);
+        eVar.f50852b.setRepeatCount(-1);
+        eVar.f50852b.playAnimation();
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v(tp.f fVar, RemoteImage remoteImage, RemoteImage.Attributes attributes) {
         String str;
-        ImageView imageView = fVar.f50806b;
+        ImageView imageView = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         kq.g.f(imageView, remoteImage);
         if (attributes != null) {
@@ -433,10 +433,10 @@ public abstract class r4 {
         } else {
             str = null;
         }
-        ImageView imageView2 = fVar.f50806b;
+        ImageView imageView2 = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         j(imageView2, str);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final String w(String str, String str2, String str3, String str4) {

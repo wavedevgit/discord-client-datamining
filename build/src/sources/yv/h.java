@@ -6,33 +6,33 @@ import kotlin.jvm.internal.Intrinsics;
 final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f55643a;
+    private final String f55691a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55644b;
+    private final String f55692b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f55645c;
+    private final List f55693c;
 
     public h(String text, String regexPattern, List regexOptions) {
         Intrinsics.checkNotNullParameter(text, "text");
         Intrinsics.checkNotNullParameter(regexPattern, "regexPattern");
         Intrinsics.checkNotNullParameter(regexOptions, "regexOptions");
-        this.f55643a = text;
-        this.f55644b = regexPattern;
-        this.f55645c = regexOptions;
+        this.f55691a = text;
+        this.f55692b = regexPattern;
+        this.f55693c = regexOptions;
     }
 
     public final List a() {
-        return this.f55645c;
+        return this.f55693c;
     }
 
     public final String b() {
-        return this.f55644b;
+        return this.f55692b;
     }
 
     public final String c() {
-        return this.f55643a;
+        return this.f55691a;
     }
 
     public boolean equals(Object obj) {
@@ -43,20 +43,20 @@ final class h {
             return false;
         }
         h hVar = (h) obj;
-        if (Intrinsics.areEqual(this.f55643a, hVar.f55643a) && Intrinsics.areEqual(this.f55644b, hVar.f55644b) && Intrinsics.areEqual(this.f55645c, hVar.f55645c)) {
+        if (Intrinsics.areEqual(this.f55691a, hVar.f55691a) && Intrinsics.areEqual(this.f55692b, hVar.f55692b) && Intrinsics.areEqual(this.f55693c, hVar.f55693c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f55643a.hashCode() * 31) + this.f55644b.hashCode()) * 31) + this.f55645c.hashCode();
+        return (((this.f55691a.hashCode() * 31) + this.f55692b.hashCode()) * 31) + this.f55693c.hashCode();
     }
 
     public String toString() {
-        String str = this.f55643a;
-        String str2 = this.f55644b;
-        List list = this.f55645c;
+        String str = this.f55691a;
+        String str2 = this.f55692b;
+        List list = this.f55693c;
         return "MatchArguments(text=" + str + ", regexPattern=" + str2 + ", regexOptions=" + list + ")";
     }
 }

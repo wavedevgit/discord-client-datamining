@@ -182,7 +182,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
     public void onClick(@NotNull View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         this.onClickListener.invoke(view);
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         setSpanView(null);
     }
 
@@ -226,7 +226,7 @@ public final class ClickableSpan extends android.text.style.ClickableSpan implem
                     intValue = this.primaryColor.intValue();
                 }
                 textPaint.setColor(intValue);
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
         } else {
             textPaint.setShader(null);

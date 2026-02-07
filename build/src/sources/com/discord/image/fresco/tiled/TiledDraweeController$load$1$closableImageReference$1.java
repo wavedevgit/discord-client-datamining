@@ -42,6 +42,6 @@ final class TiledDraweeController$load$1$closableImageReference$1 extends k impl
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super CloseableReference> continuation) {
-        return ((TiledDraweeController$load$1$closableImageReference$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((TiledDraweeController$load$1$closableImageReference$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -35,15 +35,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/useTypingUsersIds.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89628: for (var _fun89628_ip = 0;;) switch (_fun89628_ip) {
+        _fun90108: for (var _fun90108_ip = 0;;) switch (_fun90108_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var6;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun89628_ip = 32;
-                    continue _fun89628
+                    _fun90108_ip = 32;
+                    continue _fun90108
                 }
             case 18:
                 var1 = global;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var6;
                 var1[1] = var5;
                 var0 = function() { // Environment: var0
-                    _fun89629: for (var _fun89629_ip = 0;;) switch (_fun89629_ip) {
+                    _fun90109: for (var _fun90109_ip = 0;;) switch (_fun90109_ip) {
                         case 0:
                             var1 = _closure1_slot4;
                             var0 = var1.getCurrentUser;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var8 == var0;
                             var7 = undefined;
                             if (var1) {
-                                _fun89629_ip = 32;
-                                continue _fun89629
+                                _fun90109_ip = 32;
+                                continue _fun90109
                             }
                         case 27:
                             var7 = var0.id;
@@ -95,34 +95,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var11 = var0.length;
                                     var10 = _closure2_slot1;
                                     if (!(!(var11 >= var10))) {
-                                        _fun89629_ip = 162;
-                                        continue _fun89629
+                                        _fun90109_ip = 162;
+                                        continue _fun90109
                                     }
                                     case 94: var11 = _closure1_slot4;
                                     var10 = var11.getUser;
                                     var10 = var10.bind(var11)(var12);
                                     if (var8 == var10) {
-                                        _fun89629_ip = 69;
-                                        continue _fun89629
+                                        _fun90109_ip = 69;
+                                        continue _fun90109
                                     }
                                     case 113: var11 = var10.id;
                                     if (var11 === var7) {
-                                        _fun89629_ip = 69;
-                                        continue _fun89629
+                                        _fun90109_ip = 69;
+                                        continue _fun90109
                                     }
                                     case 122: var13 = _closure1_slot2;
                                     var12 = var13.isBlockedOrIgnored;
                                     var11 = var10.id;
                                     var11 = var12.bind(var13)(var11);
                                     if (var11) {
-                                        _fun89629_ip = 69;
-                                        continue _fun89629
+                                        _fun90109_ip = 69;
+                                        continue _fun90109
                                     }
                                     case 145: var11 = var0.push;
                                     var10 = var10.id;
                                     var10 = var11.bind(var0)(var10);
-                                    _fun89629_ip = 69;
-                                    continue _fun89629;
+                                    _fun90109_ip = 69;
+                                    continue _fun90109;
                                 }
                         case 162:
                             return var0;
@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTypingUserIds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3102, 11659, 1621, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3102, 11705, 1621, 566, 2]);

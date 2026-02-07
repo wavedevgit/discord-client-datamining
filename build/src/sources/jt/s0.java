@@ -12,10 +12,10 @@ import kotlinx.serialization.encoding.c;
 public abstract class s0 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f31073a;
+    private final KSerializer f31121a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f31074b;
+    private final KSerializer f31122b;
 
     public /* synthetic */ s0(KSerializer kSerializer, KSerializer kSerializer2, DefaultConstructorMarker defaultConstructorMarker) {
         this(kSerializer, kSerializer2);
@@ -24,13 +24,13 @@ public abstract class s0 implements KSerializer {
     protected abstract Object a(Object obj);
 
     protected final KSerializer b() {
-        return this.f31073a;
+        return this.f31121a;
     }
 
     protected abstract Object c(Object obj);
 
     protected final KSerializer d() {
-        return this.f31074b;
+        return this.f31122b;
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -44,15 +44,15 @@ public abstract class s0 implements KSerializer {
         SerialDescriptor descriptor = getDescriptor();
         kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
         if (!b10.p()) {
-            obj = u2.f31084a;
-            obj2 = u2.f31084a;
+            obj = u2.f31132a;
+            obj2 = u2.f31132a;
             Object obj5 = obj2;
             while (true) {
                 int o10 = b10.o(getDescriptor());
                 if (o10 == -1) {
-                    obj3 = u2.f31084a;
+                    obj3 = u2.f31132a;
                     if (obj != obj3) {
-                        obj4 = u2.f31084a;
+                        obj4 = u2.f31132a;
                         if (obj5 != obj4) {
                             e10 = e(obj, obj5);
                         } else {
@@ -84,13 +84,13 @@ public abstract class s0 implements KSerializer {
     public void serialize(Encoder encoder, Object obj) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         CompositeEncoder b10 = encoder.b(getDescriptor());
-        b10.s(getDescriptor(), 0, this.f31073a, a(obj));
-        b10.s(getDescriptor(), 1, this.f31074b, c(obj));
+        b10.s(getDescriptor(), 0, this.f31121a, a(obj));
+        b10.s(getDescriptor(), 1, this.f31122b, c(obj));
         b10.c(getDescriptor());
     }
 
     private s0(KSerializer kSerializer, KSerializer kSerializer2) {
-        this.f31073a = kSerializer;
-        this.f31074b = kSerializer2;
+        this.f31121a = kSerializer;
+        this.f31122b = kSerializer2;
     }
 }

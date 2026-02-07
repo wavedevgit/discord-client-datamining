@@ -15,43 +15,43 @@ import ng.zh;
 final class p implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f55423a;
+    private boolean f55471a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f55424b;
+    private final Context f55472b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ng.i f55425c;
+    private final ng.i f55473c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final nk f55426d;
+    private final nk f55474d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ng.k f55427e;
+    private ng.k f55475e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Context context, vj.b bVar, nk nkVar) {
         ng.i iVar = new ng.i();
-        this.f55425c = iVar;
-        this.f55424b = context;
-        iVar.f39873d = bVar.a();
-        this.f55426d = nkVar;
+        this.f55473c = iVar;
+        this.f55472b = context;
+        iVar.f39921d = bVar.a();
+        this.f55474d = nkVar;
     }
 
     @Override // yj.l
     public final boolean a() {
-        if (this.f55427e == null) {
+        if (this.f55475e == null) {
             try {
-                ng.k R = ng.m.e(DynamiteModule.e(this.f55424b, DynamiteModule.f13823b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).R(sf.b.W0(this.f55424b), this.f55425c);
-                this.f55427e = R;
-                if (R == null && !this.f55423a) {
+                ng.k R = ng.m.e(DynamiteModule.e(this.f55472b, DynamiteModule.f13823b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).R(sf.b.W0(this.f55472b), this.f55473c);
+                this.f55475e = R;
+                if (R == null && !this.f55471a) {
                     Log.d("LegacyBarcodeScanner", "Request optional module download.");
-                    tj.l.c(this.f55424b, "barcode");
-                    this.f55423a = true;
-                    b.e(this.f55426d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
+                    tj.l.c(this.f55472b, "barcode");
+                    this.f55471a = true;
+                    b.e(this.f55474d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
                     throw new pj.a("Waiting for the barcode module to be downloaded. Please wait.", 14);
                 }
-                b.e(this.f55426d, xe.NO_ERROR);
+                b.e(this.f55474d, xe.NO_ERROR);
                 return false;
             } catch (RemoteException e10) {
                 throw new pj.a("Failed to create legacy barcode detector.", 13, e10);
@@ -65,10 +65,10 @@ final class p implements l {
     @Override // yj.l
     public final List c(zj.a aVar) {
         zh[] Y0;
-        if (this.f55427e == null) {
+        if (this.f55475e == null) {
             a();
         }
-        ng.k kVar = this.f55427e;
+        ng.k kVar = this.f55475e;
         if (kVar != null) {
             ng.k kVar2 = (ng.k) q.l(kVar);
             ng.o oVar = new ng.o(aVar.l(), aVar.h(), 0, 0L, ak.b.a(aVar.k()));
@@ -84,7 +84,7 @@ final class p implements l {
                             }
                         } else {
                             Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
-                            oVar.f40131d = planeArr[0].getRowStride();
+                            oVar.f40179d = planeArr[0].getRowStride();
                             Y0 = kVar2.X0(sf.b.W0(planeArr[0].getBuffer()), oVar);
                         }
                     } else {
@@ -107,14 +107,14 @@ final class p implements l {
 
     @Override // yj.l
     public final void zzb() {
-        ng.k kVar = this.f55427e;
+        ng.k kVar = this.f55475e;
         if (kVar != null) {
             try {
                 kVar.W0();
             } catch (RemoteException e10) {
                 Log.e("LegacyBarcodeScanner", "Failed to release legacy barcode detector.", e10);
             }
-            this.f55427e = null;
+            this.f55475e = null;
         }
     }
 }

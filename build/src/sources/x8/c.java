@@ -6,31 +6,31 @@ import java.io.UnsupportedEncodingException;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final boolean f54557a = true;
+    public static final boolean f54605a = true;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final boolean f54558b = e();
+    public static final boolean f54606b = e();
 
     /* renamed from: c  reason: collision with root package name */
-    public static b f54559c = null;
+    public static b f54607c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f54560d = false;
+    private static boolean f54608d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final byte[] f54561e = a("RIFF");
+    private static final byte[] f54609e = a("RIFF");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final byte[] f54562f = a("WEBP");
+    private static final byte[] f54610f = a("WEBP");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final byte[] f54563g = a("VP8 ");
+    private static final byte[] f54611g = a("VP8 ");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final byte[] f54564h = a("VP8L");
+    private static final byte[] f54612h = a("VP8L");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final byte[] f54565i = a("VP8X");
+    private static final byte[] f54613i = a("VP8X");
 
     private static byte[] a(String str) {
         try {
@@ -42,7 +42,7 @@ public abstract class c {
 
     public static boolean b(byte[] bArr, int i10) {
         boolean z10;
-        boolean j10 = j(bArr, i10 + 12, f54565i);
+        boolean j10 = j(bArr, i10 + 12, f54613i);
         if ((bArr[i10 + 20] & 2) == 2) {
             z10 = true;
         } else {
@@ -55,7 +55,7 @@ public abstract class c {
     }
 
     public static boolean c(byte[] bArr, int i10, int i11) {
-        if (i11 >= 21 && j(bArr, i10 + 12, f54565i)) {
+        if (i11 >= 21 && j(bArr, i10 + 12, f54613i)) {
             return true;
         }
         return false;
@@ -63,7 +63,7 @@ public abstract class c {
 
     public static boolean d(byte[] bArr, int i10) {
         boolean z10;
-        boolean j10 = j(bArr, i10 + 12, f54565i);
+        boolean j10 = j(bArr, i10 + 12, f54613i);
         if ((bArr[i10 + 20] & 16) == 16) {
             z10 = true;
         } else {
@@ -80,15 +80,15 @@ public abstract class c {
     }
 
     public static boolean f(byte[] bArr, int i10) {
-        return j(bArr, i10 + 12, f54564h);
+        return j(bArr, i10 + 12, f54612h);
     }
 
     public static boolean g(byte[] bArr, int i10) {
-        return j(bArr, i10 + 12, f54563g);
+        return j(bArr, i10 + 12, f54611g);
     }
 
     public static boolean h(byte[] bArr, int i10, int i11) {
-        if (i11 >= 20 && j(bArr, i10, f54561e) && j(bArr, i10 + 8, f54562f)) {
+        if (i11 >= 20 && j(bArr, i10, f54609e) && j(bArr, i10 + 8, f54610f)) {
             return true;
         }
         return false;
@@ -96,15 +96,15 @@ public abstract class c {
 
     public static b i() {
         b bVar;
-        if (f54560d) {
-            return f54559c;
+        if (f54608d) {
+            return f54607c;
         }
         try {
             bVar = (b) WebpBitmapFactoryImpl.class.newInstance();
         } catch (Throwable unused) {
             bVar = null;
         }
-        f54560d = true;
+        f54608d = true;
         return bVar;
     }
 

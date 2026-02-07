@@ -11,21 +11,21 @@ public abstract class w {
     public class a extends ni.b {
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Iterator f40859i;
+        final /* synthetic */ Iterator f40907i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ mi.n f40860o;
+        final /* synthetic */ mi.n f40908o;
 
         a(Iterator it, mi.n nVar) {
-            this.f40859i = it;
-            this.f40860o = nVar;
+            this.f40907i = it;
+            this.f40908o = nVar;
         }
 
         @Override // ni.b
         protected Object a() {
-            while (this.f40859i.hasNext()) {
-                Object next = this.f40859i.next();
-                if (this.f40860o.apply(next)) {
+            while (this.f40907i.hasNext()) {
+                Object next = this.f40907i.next();
+                if (this.f40908o.apply(next)) {
                     return next;
                 }
             }
@@ -37,25 +37,25 @@ public abstract class w {
     class b extends t0 {
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f40861d;
+        boolean f40909d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Object f40862e;
+        final /* synthetic */ Object f40910e;
 
         b(Object obj) {
-            this.f40862e = obj;
+            this.f40910e = obj;
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return !this.f40861d;
+            return !this.f40909d;
         }
 
         @Override // java.util.Iterator
         public Object next() {
-            if (!this.f40861d) {
-                this.f40861d = true;
-                return this.f40862e;
+            if (!this.f40909d) {
+                this.f40909d = true;
+                return this.f40910e;
             }
             throw new NoSuchElementException();
         }

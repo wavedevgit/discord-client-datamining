@@ -8,7 +8,7 @@ public abstract class d2 {
     public static final class a extends d2 {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f37374a = new a();
+        public static final a f37422a = new a();
 
         private a() {
             super(null);
@@ -34,7 +34,7 @@ public abstract class d2 {
     public static final class b extends d2 {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f37375a = new b();
+        public static final b f37423a = new b();
 
         private b() {
             super(null);
@@ -60,7 +60,7 @@ public abstract class d2 {
     public static final class c extends d2 {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f37376a = new c();
+        public static final c f37424a = new c();
 
         private c() {
             super(null);

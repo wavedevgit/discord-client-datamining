@@ -9,7 +9,7 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class b extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f35109c = new b();
+    public static final b f35157c = new b();
 
     private b() {
         super(gt.a.x(ByteCompanionObject.INSTANCE));

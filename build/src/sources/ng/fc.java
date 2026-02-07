@@ -5,7 +5,7 @@ import yi.c;
 final class fc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fc f39807a = new fc();
+    static final fc f39855a = new fc();
 
     static {
         c.b a10 = yi.c.a("isForegroundConfidenceMaskEnabled");

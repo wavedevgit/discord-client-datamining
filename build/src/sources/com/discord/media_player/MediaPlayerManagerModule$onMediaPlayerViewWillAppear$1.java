@@ -54,13 +54,13 @@ public final class MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1 extend
                 arrayList.add(MediaPlayerPlaybackSource.Companion.createId(mediaSource));
             }
             reactEvents.emitModuleEvent(reactApplicationContext, new MediaPlayerViewWillAppear(m1064toStringimpl, arrayList));
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaPlayerManagerModule$onMediaPlayerViewWillAppear$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

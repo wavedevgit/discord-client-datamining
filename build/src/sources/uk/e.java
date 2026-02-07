@@ -14,31 +14,31 @@ import tk.k;
 public final class e extends a {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f51581i = {1, 10, 34, 70, 126};
+    private static final int[] f51629i = {1, 10, 34, 70, 126};
 
     /* renamed from: j  reason: collision with root package name */
-    private static final int[] f51582j = {4, 20, 48, 81};
+    private static final int[] f51630j = {4, 20, 48, 81};
 
     /* renamed from: k  reason: collision with root package name */
-    private static final int[] f51583k = {0, 161, 961, 2015, 2715};
+    private static final int[] f51631k = {0, 161, 961, 2015, 2715};
 
     /* renamed from: l  reason: collision with root package name */
-    private static final int[] f51584l = {0, 336, 1036, 1516};
+    private static final int[] f51632l = {0, 336, 1036, 1516};
 
     /* renamed from: m  reason: collision with root package name */
-    private static final int[] f51585m = {8, 6, 4, 3, 1};
+    private static final int[] f51633m = {8, 6, 4, 3, 1};
 
     /* renamed from: n  reason: collision with root package name */
-    private static final int[] f51586n = {2, 4, 6, 8};
+    private static final int[] f51634n = {2, 4, 6, 8};
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[][] f51587o = {new int[]{3, 8, 2, 1}, new int[]{3, 5, 5, 1}, new int[]{3, 3, 7, 1}, new int[]{3, 1, 9, 1}, new int[]{2, 7, 4, 1}, new int[]{2, 5, 6, 1}, new int[]{2, 3, 8, 1}, new int[]{1, 5, 7, 1}, new int[]{1, 3, 9, 1}};
+    private static final int[][] f51635o = {new int[]{3, 8, 2, 1}, new int[]{3, 5, 5, 1}, new int[]{3, 3, 7, 1}, new int[]{3, 1, 9, 1}, new int[]{2, 7, 4, 1}, new int[]{2, 5, 6, 1}, new int[]{2, 3, 8, 1}, new int[]{1, 5, 7, 1}, new int[]{1, 3, 9, 1}};
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f51588g = new ArrayList();
+    private final List f51636g = new ArrayList();
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f51589h = new ArrayList();
+    private final List f51637h = new ArrayList();
 
     private static void q(Collection collection, d dVar) {
         if (dVar == null) {
@@ -190,15 +190,15 @@ public final class e extends a {
         if (z10) {
             if ((i17 & 1) == 0 && i17 <= 12 && i17 >= 4) {
                 int i23 = (12 - i17) / 2;
-                int i24 = f51585m[i23];
+                int i24 = f51633m[i23];
                 int i25 = 9 - i24;
-                return new b((f.b(l10, i24, false) * f51581i[i23]) + f.b(j10, i25, true) + f51583k[i23], i22);
+                return new b((f.b(l10, i24, false) * f51629i[i23]) + f.b(j10, i25, true) + f51631k[i23], i22);
             }
             throw hk.k.a();
         } else if ((i20 & 1) == 0 && i20 <= 10 && i20 >= 4) {
             int i26 = (10 - i20) / 2;
-            int i27 = f51586n[i26];
-            return new b((f.b(j10, 9 - i27, false) * f51582j[i26]) + f.b(l10, i27, true) + f51584l[i26], i22);
+            int i27 = f51634n[i26];
+            return new b((f.b(j10, 9 - i27, false) * f51630j[i26]) + f.b(l10, i27, true) + f51632l[i26], i22);
         } else {
             throw hk.k.a();
         }
@@ -272,7 +272,7 @@ public final class e extends a {
         int[] i14 = i();
         System.arraycopy(i14, 0, i14, 1, i14.length - 1);
         i14[0] = iArr[0] - i13;
-        int p10 = a.p(i14, f51587o);
+        int p10 = a.p(i14, f51635o);
         int i15 = iArr[1];
         if (z10) {
             i15 = (aVar.l() - 1) - i15;
@@ -285,13 +285,13 @@ public final class e extends a {
 
     @Override // tk.k
     public Result b(int i10, lk.a aVar, Map map) {
-        q(this.f51588g, v(aVar, false, i10, map));
+        q(this.f51636g, v(aVar, false, i10, map));
         aVar.q();
-        q(this.f51589h, v(aVar, true, i10, map));
+        q(this.f51637h, v(aVar, true, i10, map));
         aVar.q();
-        for (d dVar : this.f51588g) {
+        for (d dVar : this.f51636g) {
             if (dVar.c() > 1) {
-                for (d dVar2 : this.f51589h) {
+                for (d dVar2 : this.f51637h) {
                     if (dVar2.c() > 1 && s(dVar, dVar2)) {
                         return t(dVar, dVar2);
                     }
@@ -304,7 +304,7 @@ public final class e extends a {
 
     @Override // tk.k, hk.m
     public void reset() {
-        this.f51588g.clear();
-        this.f51589h.clear();
+        this.f51636g.clear();
+        this.f51637h.clear();
     }
 }

@@ -7,28 +7,28 @@ import kotlin.coroutines.jvm.internal.CoroutineStackFrame;
 public class a0 extends kotlinx.coroutines.a implements CoroutineStackFrame {
 
     /* renamed from: o  reason: collision with root package name */
-    public final Continuation f50812o;
+    public final Continuation f50860o;
 
     public a0(CoroutineContext coroutineContext, Continuation continuation) {
         super(coroutineContext, true, true);
-        this.f50812o = continuation;
+        this.f50860o = continuation;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlinx.coroutines.b0
     public void F(Object obj) {
-        j.b(wr.b.c(this.f50812o), os.t.a(obj, this.f50812o));
+        j.b(wr.b.c(this.f50860o), os.t.a(obj, this.f50860o));
     }
 
     @Override // kotlinx.coroutines.a
     protected void S0(Object obj) {
-        Continuation continuation = this.f50812o;
+        Continuation continuation = this.f50860o;
         continuation.resumeWith(os.t.a(obj, continuation));
     }
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public final CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f50812o;
+        Continuation continuation = this.f50860o;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }

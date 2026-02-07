@@ -18,11 +18,11 @@ import qu.x;
 public final class a implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CookieJar f26493a;
+    private final CookieJar f26541a;
 
     public a(CookieJar cookieJar) {
         Intrinsics.checkNotNullParameter(cookieJar, "cookieJar");
-        this.f26493a = cookieJar;
+        this.f26541a = cookieJar;
     }
 
     private final String a(List list) {
@@ -79,7 +79,7 @@ public final class a implements Interceptor {
             k10.e("Accept-Encoding", "gzip");
             z10 = true;
         }
-        List loadForRequest = this.f26493a.loadForRequest(g10.n());
+        List loadForRequest = this.f26541a.loadForRequest(g10.n());
         if (!loadForRequest.isEmpty()) {
             k10.e("Cookie", a(loadForRequest));
         }
@@ -87,7 +87,7 @@ public final class a implements Interceptor {
             k10.e("User-Agent", "okhttp/4.12.0");
         }
         Response a10 = chain.a(k10.b());
-        e.f(this.f26493a, g10.n(), a10.E0());
+        e.f(this.f26541a, g10.n(), a10.E0());
         Response.a r10 = a10.K0().r(g10);
         if (z10 && StringsKt.A("gzip", Response.Y(a10, "Content-Encoding", null, 2, null), true) && e.b(a10) && (n10 = a10.n()) != null) {
             m mVar = new m(n10.source());

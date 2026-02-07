@@ -21,43 +21,43 @@ import ts.z;
 public final class a implements Executor, Closeable {
 
     /* renamed from: s  reason: collision with root package name */
-    public static final C0702a f52933s = new C0702a(null);
+    public static final C0702a f52981s = new C0702a(null);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f52934t = AtomicLongFieldUpdater.newUpdater(a.class, "parkedWorkersStack$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f52982t = AtomicLongFieldUpdater.newUpdater(a.class, "parkedWorkersStack$volatile");
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f52935u = AtomicLongFieldUpdater.newUpdater(a.class, "controlState$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f52983u = AtomicLongFieldUpdater.newUpdater(a.class, "controlState$volatile");
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f52936v = AtomicIntegerFieldUpdater.newUpdater(a.class, "_isTerminated$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f52984v = AtomicIntegerFieldUpdater.newUpdater(a.class, "_isTerminated$volatile");
 
     /* renamed from: w  reason: collision with root package name */
-    public static final e0 f52937w = new e0("NOT_IN_STACK");
+    public static final e0 f52985w = new e0("NOT_IN_STACK");
     private volatile /* synthetic */ int _isTerminated$volatile;
     private volatile /* synthetic */ long controlState$volatile;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f52938d;
+    public final int f52986d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f52939e;
+    public final int f52987e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f52940i;
+    public final long f52988i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final String f52941o;
+    public final String f52989o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final vs.d f52942p;
+    public final vs.d f52990p;
     private volatile /* synthetic */ long parkedWorkersStack$volatile;
 
     /* renamed from: q  reason: collision with root package name */
-    public final vs.d f52943q;
+    public final vs.d f52991q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final z f52944r;
+    public final z f52992r;
 
     /* renamed from: vs.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -74,31 +74,31 @@ public final class a implements Executor, Closeable {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f52945a;
+        public static final /* synthetic */ int[] f52993a;
 
         static {
             int[] iArr = new int[d.values().length];
             try {
-                iArr[d.f52957i.ordinal()] = 1;
+                iArr[d.f53005i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[d.f52956e.ordinal()] = 2;
+                iArr[d.f53004e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[d.f52955d.ordinal()] = 3;
+                iArr[d.f53003d.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[d.f52958o.ordinal()] = 4;
+                iArr[d.f53006o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[d.f52959p.ordinal()] = 5;
+                iArr[d.f53007p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f52945a = iArr;
+            f52993a = iArr;
         }
     }
 
@@ -108,37 +108,37 @@ public final class a implements Executor, Closeable {
     public static final class d {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f52955d = new d("CPU_ACQUIRED", 0);
+        public static final d f53003d = new d("CPU_ACQUIRED", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final d f52956e = new d("BLOCKING", 1);
+        public static final d f53004e = new d("BLOCKING", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final d f52957i = new d("PARKING", 2);
+        public static final d f53005i = new d("PARKING", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final d f52958o = new d("DORMANT", 3);
+        public static final d f53006o = new d("DORMANT", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final d f52959p = new d("TERMINATED", 4);
+        public static final d f53007p = new d("TERMINATED", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ d[] f52960q;
+        private static final /* synthetic */ d[] f53008q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f52961r;
+        private static final /* synthetic */ EnumEntries f53009r;
 
         static {
             d[] a10 = a();
-            f52960q = a10;
-            f52961r = xr.a.a(a10);
+            f53008q = a10;
+            f53009r = xr.a.a(a10);
         }
 
         private d(String str, int i10) {
         }
 
         private static final /* synthetic */ d[] a() {
-            return new d[]{f52955d, f52956e, f52957i, f52958o, f52959p};
+            return new d[]{f53003d, f53004e, f53005i, f53006o, f53007p};
         }
 
         public static d valueOf(String str) {
@@ -146,22 +146,22 @@ public final class a implements Executor, Closeable {
         }
 
         public static d[] values() {
-            return (d[]) f52960q.clone();
+            return (d[]) f53008q.clone();
         }
     }
 
     public a(int i10, int i11, long j10, String str) {
-        this.f52938d = i10;
-        this.f52939e = i11;
-        this.f52940i = j10;
-        this.f52941o = str;
+        this.f52986d = i10;
+        this.f52987e = i11;
+        this.f52988i = j10;
+        this.f52989o = str;
         if (i10 >= 1) {
             if (i11 >= i10) {
                 if (i11 <= 2097150) {
                     if (j10 > 0) {
-                        this.f52942p = new vs.d();
-                        this.f52943q = new vs.d();
-                        this.f52944r = new z((i10 + 1) * 2);
+                        this.f52990p = new vs.d();
+                        this.f52991q = new vs.d();
+                        this.f52992r = new z((i10 + 1) * 2);
                         this.controlState$volatile = i10 << 42;
                         return;
                     }
@@ -176,7 +176,7 @@ public final class a implements Executor, Closeable {
 
     private final int J(c cVar) {
         Object g10 = cVar.g();
-        while (g10 != f52937w) {
+        while (g10 != f52985w) {
             if (g10 == null) {
                 return 0;
             }
@@ -199,37 +199,37 @@ public final class a implements Executor, Closeable {
 
     private final h O0(c cVar, h hVar, boolean z10) {
         d dVar;
-        if (cVar == null || (dVar = cVar.f52949i) == d.f52959p) {
+        if (cVar == null || (dVar = cVar.f52997i) == d.f53007p) {
             return hVar;
         }
-        if (!hVar.f52972e && dVar == d.f52956e) {
+        if (!hVar.f53020e && dVar == d.f53004e) {
             return hVar;
         }
-        cVar.f52953r = true;
-        return cVar.f52947d.a(hVar, z10);
+        cVar.f53001r = true;
+        return cVar.f52995d.a(hVar, z10);
     }
 
     private final c P() {
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f52934t;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f52982t;
         while (true) {
             long j10 = atomicLongFieldUpdater.get(this);
-            c cVar = (c) this.f52944r.b((int) (2097151 & j10));
+            c cVar = (c) this.f52992r.b((int) (2097151 & j10));
             if (cVar == null) {
                 return null;
             }
             long j11 = (2097152 + j10) & (-2097152);
             int J = J(cVar);
-            if (J >= 0 && f52934t.compareAndSet(this, j10, J | j11)) {
-                cVar.o(f52937w);
+            if (J >= 0 && f52982t.compareAndSet(this, j10, J | j11)) {
+                cVar.o(f52985w);
                 return cVar;
             }
         }
     }
 
     private final boolean V0(long j10) {
-        if (kotlin.ranges.d.d(((int) (2097151 & j10)) - ((int) ((j10 & 4398044413952L) >> 21)), 0) < this.f52938d) {
+        if (kotlin.ranges.d.d(((int) (2097151 & j10)) - ((int) ((j10 & 4398044413952L) >> 21)), 0) < this.f52986d) {
             int m10 = m();
-            if (m10 == 1 && this.f52938d > 1) {
+            if (m10 == 1 && this.f52986d > 1) {
                 m();
             }
             if (m10 > 0) {
@@ -241,13 +241,13 @@ public final class a implements Executor, Closeable {
 
     static /* synthetic */ boolean Y0(a aVar, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = f52935u.get(aVar);
+            j10 = f52983u.get(aVar);
         }
         return aVar.V0(j10);
     }
 
     public static final /* synthetic */ AtomicLongFieldUpdater a() {
-        return f52935u;
+        return f52983u;
     }
 
     private final boolean d1() {
@@ -257,38 +257,38 @@ public final class a implements Executor, Closeable {
             if (P == null) {
                 return false;
             }
-        } while (!c.f52946t.compareAndSet(P, -1, 0));
+        } while (!c.f52994t.compareAndSet(P, -1, 0));
         LockSupport.unpark(P);
         return true;
     }
 
     private final boolean k(h hVar) {
-        if (hVar.f52972e) {
-            return this.f52943q.a(hVar);
+        if (hVar.f53020e) {
+            return this.f52991q.a(hVar);
         }
-        return this.f52942p.a(hVar);
+        return this.f52990p.a(hVar);
     }
 
     private final int m() {
-        synchronized (this.f52944r) {
+        synchronized (this.f52992r) {
             try {
                 if (isTerminated()) {
                     return -1;
                 }
-                long j10 = f52935u.get(this);
+                long j10 = f52983u.get(this);
                 int i10 = (int) (j10 & 2097151);
                 int d10 = kotlin.ranges.d.d(i10 - ((int) ((j10 & 4398044413952L) >> 21)), 0);
-                if (d10 >= this.f52938d) {
+                if (d10 >= this.f52986d) {
                     return 0;
                 }
-                if (i10 >= this.f52939e) {
+                if (i10 >= this.f52987e) {
                     return 0;
                 }
                 int i11 = ((int) (a().get(this) & 2097151)) + 1;
-                if (i11 > 0 && this.f52944r.b(i11) == null) {
+                if (i11 > 0 && this.f52992r.b(i11) == null) {
                     c cVar = new c(this, i11);
-                    this.f52944r.c(i11, cVar);
-                    if (i11 == ((int) (2097151 & f52935u.incrementAndGet(this)))) {
+                    this.f52992r.c(i11, cVar);
+                    if (i11 == ((int) (2097151 & f52983u.incrementAndGet(this)))) {
                         int i12 = d10 + 1;
                         cVar.start();
                         return i12;
@@ -327,7 +327,7 @@ public final class a implements Executor, Closeable {
     }
 
     public final void E0(c cVar, int i10, int i11) {
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f52934t;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f52982t;
         while (true) {
             long j10 = atomicLongFieldUpdater.get(this);
             int i12 = (int) (2097151 & j10);
@@ -340,7 +340,7 @@ public final class a implements Executor, Closeable {
                 }
             }
             if (i12 >= 0) {
-                if (f52934t.compareAndSet(this, j10, j11 | i12)) {
+                if (f52982t.compareAndSet(this, j10, j11 | i12)) {
                     return;
                 }
             }
@@ -363,17 +363,17 @@ public final class a implements Executor, Closeable {
     public final void J0(long j10) {
         int i10;
         h hVar;
-        if (!f52936v.compareAndSet(this, 0, 1)) {
+        if (!f52984v.compareAndSet(this, 0, 1)) {
             return;
         }
         c p10 = p();
-        synchronized (this.f52944r) {
+        synchronized (this.f52992r) {
             i10 = (int) (a().get(this) & 2097151);
         }
         if (1 <= i10) {
             int i11 = 1;
             while (true) {
-                Object b10 = this.f52944r.b(i11);
+                Object b10 = this.f52992r.b(i11);
                 Intrinsics.checkNotNull(b10);
                 c cVar = (c) b10;
                 if (cVar != p10) {
@@ -381,7 +381,7 @@ public final class a implements Executor, Closeable {
                         LockSupport.unpark(cVar);
                         cVar.join(j10);
                     }
-                    cVar.f52947d.j(this.f52943q);
+                    cVar.f52995d.j(this.f52991q);
                 }
                 if (i11 == i10) {
                     break;
@@ -389,8 +389,8 @@ public final class a implements Executor, Closeable {
                 i11++;
             }
         }
-        this.f52943q.b();
-        this.f52942p.b();
+        this.f52991q.b();
+        this.f52990p.b();
         while (true) {
             if (p10 != null) {
                 hVar = p10.e(true);
@@ -399,17 +399,17 @@ public final class a implements Executor, Closeable {
                     I0(hVar);
                 }
             }
-            hVar = (h) this.f52942p.e();
-            if (hVar == null && (hVar = (h) this.f52943q.e()) == null) {
+            hVar = (h) this.f52990p.e();
+            if (hVar == null && (hVar = (h) this.f52991q.e()) == null) {
                 break;
             }
             I0(hVar);
         }
         if (p10 != null) {
-            p10.r(d.f52959p);
+            p10.r(d.f53007p);
         }
-        f52934t.set(this, 0L);
-        f52935u.set(this, 0L);
+        f52982t.set(this, 0L);
+        f52983u.set(this, 0L);
     }
 
     public final void L0() {
@@ -422,13 +422,13 @@ public final class a implements Executor, Closeable {
     public final boolean Y(c cVar) {
         long j10;
         int f10;
-        if (cVar.g() == f52937w) {
-            AtomicLongFieldUpdater atomicLongFieldUpdater = f52934t;
+        if (cVar.g() == f52985w) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f52982t;
             do {
                 j10 = atomicLongFieldUpdater.get(this);
                 f10 = cVar.f();
-                cVar.o(this.f52944r.b((int) (2097151 & j10)));
-            } while (!f52934t.compareAndSet(this, j10, ((2097152 + j10) & (-2097152)) | f10));
+                cVar.o(this.f52992r.b((int) (2097151 & j10)));
+            } while (!f52982t.compareAndSet(this, j10, ((2097152 + j10) & (-2097152)) | f10));
             return true;
         }
         return false;
@@ -445,18 +445,18 @@ public final class a implements Executor, Closeable {
     }
 
     public final boolean isTerminated() {
-        if (f52936v.get(this) == 1) {
+        if (f52984v.get(this) == 1) {
             return true;
         }
         return false;
     }
 
     public final h n(Runnable runnable, boolean z10) {
-        long a10 = j.f52979f.a();
+        long a10 = j.f53027f.a();
         if (runnable instanceof h) {
             h hVar = (h) runnable;
-            hVar.f52971d = a10;
-            hVar.f52972e = z10;
+            hVar.f53019d = a10;
+            hVar.f53020e = z10;
             return hVar;
         }
         return j.b(runnable, a10, z10);
@@ -466,15 +466,15 @@ public final class a implements Executor, Closeable {
         long j10;
         os.b.a();
         h n10 = n(runnable, z10);
-        boolean z12 = n10.f52972e;
+        boolean z12 = n10.f53020e;
         if (z12) {
-            j10 = f52935u.addAndGet(this, 2097152L);
+            j10 = f52983u.addAndGet(this, 2097152L);
         } else {
             j10 = 0;
         }
         h O0 = O0(p(), n10, z11);
         if (O0 != null && !k(O0)) {
-            throw new RejectedExecutionException(this.f52941o + " was terminated");
+            throw new RejectedExecutionException(this.f52989o + " was terminated");
         } else if (z12) {
             K0(j10);
         } else {
@@ -484,17 +484,17 @@ public final class a implements Executor, Closeable {
 
     public String toString() {
         ArrayList arrayList = new ArrayList();
-        int a10 = this.f52944r.a();
+        int a10 = this.f52992r.a();
         int i10 = 0;
         int i11 = 0;
         int i12 = 0;
         int i13 = 0;
         int i14 = 0;
         for (int i15 = 1; i15 < a10; i15++) {
-            c cVar = (c) this.f52944r.b(i15);
+            c cVar = (c) this.f52992r.b(i15);
             if (cVar != null) {
-                int i16 = cVar.f52947d.i();
-                int i17 = b.f52945a[cVar.f52949i.ordinal()];
+                int i16 = cVar.f52995d.i();
+                int i17 = b.f52993a[cVar.f52997i.ordinal()];
                 if (i17 != 1) {
                     if (i17 != 2) {
                         if (i17 != 3) {
@@ -532,64 +532,64 @@ public final class a implements Executor, Closeable {
                 }
             }
         }
-        long j10 = f52935u.get(this);
-        return this.f52941o + '@' + os.e0.b(this) + "[Pool Size {core = " + this.f52938d + ", max = " + this.f52939e + "}, Worker States {CPU = " + i10 + ", blocking = " + i11 + ", parked = " + i12 + ", dormant = " + i13 + ", terminated = " + i14 + "}, running workers queues = " + arrayList + ", global CPU queue size = " + this.f52942p.c() + ", global blocking queue size = " + this.f52943q.c() + ", Control State {created workers= " + ((int) (2097151 & j10)) + ", blocking tasks = " + ((int) ((4398044413952L & j10) >> 21)) + ", CPUs acquired = " + (this.f52938d - ((int) ((9223367638808264704L & j10) >> 42))) + "}]";
+        long j10 = f52983u.get(this);
+        return this.f52989o + '@' + os.e0.b(this) + "[Pool Size {core = " + this.f52986d + ", max = " + this.f52987e + "}, Worker States {CPU = " + i10 + ", blocking = " + i11 + ", parked = " + i12 + ", dormant = " + i13 + ", terminated = " + i14 + "}, running workers queues = " + arrayList + ", global CPU queue size = " + this.f52990p.c() + ", global blocking queue size = " + this.f52991q.c() + ", Control State {created workers= " + ((int) (2097151 & j10)) + ", blocking tasks = " + ((int) ((4398044413952L & j10) >> 21)) + ", CPUs acquired = " + (this.f52986d - ((int) ((9223367638808264704L & j10) >> 42))) + "}]";
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class c extends Thread {
 
         /* renamed from: t  reason: collision with root package name */
-        private static final /* synthetic */ AtomicIntegerFieldUpdater f52946t = AtomicIntegerFieldUpdater.newUpdater(c.class, "workerCtl$volatile");
+        private static final /* synthetic */ AtomicIntegerFieldUpdater f52994t = AtomicIntegerFieldUpdater.newUpdater(c.class, "workerCtl$volatile");
 
         /* renamed from: d  reason: collision with root package name */
-        public final l f52947d;
+        public final l f52995d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Ref.ObjectRef f52948e;
+        private final Ref.ObjectRef f52996e;
 
         /* renamed from: i  reason: collision with root package name */
-        public d f52949i;
+        public d f52997i;
         private volatile int indexInArray;
         private volatile Object nextParkedWorker;
 
         /* renamed from: o  reason: collision with root package name */
-        private long f52950o;
+        private long f52998o;
 
         /* renamed from: p  reason: collision with root package name */
-        private long f52951p;
+        private long f52999p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f52952q;
+        private int f53000q;
 
         /* renamed from: r  reason: collision with root package name */
-        public boolean f52953r;
+        public boolean f53001r;
         private volatile /* synthetic */ int workerCtl$volatile;
 
         private c() {
             setDaemon(true);
             setContextClassLoader(a.this.getClass().getClassLoader());
-            this.f52947d = new l();
-            this.f52948e = new Ref.ObjectRef();
-            this.f52949i = d.f52958o;
-            this.nextParkedWorker = a.f52937w;
+            this.f52995d = new l();
+            this.f52996e = new Ref.ObjectRef();
+            this.f52997i = d.f53006o;
+            this.nextParkedWorker = a.f52985w;
             int nanoTime = (int) System.nanoTime();
-            this.f52952q = nanoTime == 0 ? 42 : nanoTime;
+            this.f53000q = nanoTime == 0 ? 42 : nanoTime;
         }
 
         private final void b(h hVar) {
-            this.f52950o = 0L;
-            if (this.f52949i == d.f52957i) {
-                this.f52949i = d.f52956e;
+            this.f52998o = 0L;
+            if (this.f52997i == d.f53005i) {
+                this.f52997i = d.f53004e;
             }
-            if (hVar.f52972e) {
-                if (r(d.f52956e)) {
+            if (hVar.f53020e) {
+                if (r(d.f53004e)) {
                     a.this.L0();
                 }
                 a.this.I0(hVar);
                 a.a().addAndGet(a.this, -2097152L);
-                if (this.f52949i != d.f52959p) {
-                    this.f52949i = d.f52958o;
+                if (this.f52997i != d.f53007p) {
+                    this.f52997i = d.f53006o;
                     return;
                 }
                 return;
@@ -602,7 +602,7 @@ public final class a implements Executor, Closeable {
             h l10;
             h l11;
             if (z10) {
-                if (j(a.this.f52938d * 2) == 0) {
+                if (j(a.this.f52986d * 2) == 0) {
                     z11 = true;
                 } else {
                     z11 = false;
@@ -610,7 +610,7 @@ public final class a implements Executor, Closeable {
                 if (z11 && (l11 = l()) != null) {
                     return l11;
                 }
-                h k10 = this.f52947d.k();
+                h k10 = this.f52995d.k();
                 if (k10 != null) {
                     return k10;
                 }
@@ -627,9 +627,9 @@ public final class a implements Executor, Closeable {
         }
 
         private final h d() {
-            h l10 = this.f52947d.l();
+            h l10 = this.f52995d.l();
             if (l10 == null) {
-                h hVar = (h) a.this.f52943q.e();
+                h hVar = (h) a.this.f52991q.e();
                 if (hVar == null) {
                     return s(1);
                 }
@@ -639,56 +639,56 @@ public final class a implements Executor, Closeable {
         }
 
         private final boolean i() {
-            if (this.nextParkedWorker != a.f52937w) {
+            if (this.nextParkedWorker != a.f52985w) {
                 return true;
             }
             return false;
         }
 
         private final void k() {
-            if (this.f52950o == 0) {
-                this.f52950o = System.nanoTime() + a.this.f52940i;
+            if (this.f52998o == 0) {
+                this.f52998o = System.nanoTime() + a.this.f52988i;
             }
-            LockSupport.parkNanos(a.this.f52940i);
-            if (System.nanoTime() - this.f52950o >= 0) {
-                this.f52950o = 0L;
+            LockSupport.parkNanos(a.this.f52988i);
+            if (System.nanoTime() - this.f52998o >= 0) {
+                this.f52998o = 0L;
                 t();
             }
         }
 
         private final h l() {
             if (j(2) == 0) {
-                h hVar = (h) a.this.f52942p.e();
+                h hVar = (h) a.this.f52990p.e();
                 if (hVar != null) {
                     return hVar;
                 }
-                return (h) a.this.f52943q.e();
+                return (h) a.this.f52991q.e();
             }
-            h hVar2 = (h) a.this.f52943q.e();
+            h hVar2 = (h) a.this.f52991q.e();
             if (hVar2 != null) {
                 return hVar2;
             }
-            return (h) a.this.f52942p.e();
+            return (h) a.this.f52990p.e();
         }
 
         private final void m() {
             loop0: while (true) {
                 boolean z10 = false;
-                while (!a.this.isTerminated() && this.f52949i != d.f52959p) {
-                    h e10 = e(this.f52953r);
+                while (!a.this.isTerminated() && this.f52997i != d.f53007p) {
+                    h e10 = e(this.f53001r);
                     if (e10 != null) {
-                        this.f52951p = 0L;
+                        this.f52999p = 0L;
                         b(e10);
                     } else {
-                        this.f52953r = false;
-                        if (this.f52951p != 0) {
+                        this.f53001r = false;
+                        if (this.f52999p != 0) {
                             if (!z10) {
                                 z10 = true;
                             } else {
-                                r(d.f52957i);
+                                r(d.f53005i);
                                 Thread.interrupted();
-                                LockSupport.parkNanos(this.f52951p);
-                                this.f52951p = 0L;
+                                LockSupport.parkNanos(this.f52999p);
+                                this.f52999p = 0L;
                             }
                         } else {
                             q();
@@ -696,12 +696,12 @@ public final class a implements Executor, Closeable {
                     }
                 }
             }
-            r(d.f52959p);
+            r(d.f53007p);
         }
 
         private final boolean p() {
             long j10;
-            if (this.f52949i == d.f52955d) {
+            if (this.f52997i == d.f53003d) {
                 return true;
             }
             a aVar = a.this;
@@ -712,7 +712,7 @@ public final class a implements Executor, Closeable {
                     return false;
                 }
             } while (!a.a().compareAndSet(aVar, j10, j10 - 4398046511104L));
-            this.f52949i = d.f52955d;
+            this.f52997i = d.f53003d;
             return true;
         }
 
@@ -721,9 +721,9 @@ public final class a implements Executor, Closeable {
                 a.this.Y(this);
                 return;
             }
-            f52946t.set(this, -1);
-            while (i() && f52946t.get(this) == -1 && !a.this.isTerminated() && this.f52949i != d.f52959p) {
-                r(d.f52957i);
+            f52994t.set(this, -1);
+            while (i() && f52994t.get(this) == -1 && !a.this.isTerminated() && this.f52997i != d.f53007p) {
+                r(d.f53005i);
                 Thread.interrupted();
                 k();
             }
@@ -742,11 +742,11 @@ public final class a implements Executor, Closeable {
                 if (j10 > i11) {
                     j10 = 1;
                 }
-                c cVar = (c) aVar.f52944r.b(j10);
+                c cVar = (c) aVar.f52992r.b(j10);
                 if (cVar != null && cVar != this) {
-                    long r10 = cVar.f52947d.r(i10, this.f52948e);
+                    long r10 = cVar.f52995d.r(i10, this.f52996e);
                     if (r10 == -1) {
-                        Ref.ObjectRef objectRef = this.f52948e;
+                        Ref.ObjectRef objectRef = this.f52996e;
                         h hVar = (h) objectRef.element;
                         objectRef.element = null;
                         return hVar;
@@ -758,21 +758,21 @@ public final class a implements Executor, Closeable {
             if (j11 == LongCompanionObject.MAX_VALUE) {
                 j11 = 0;
             }
-            this.f52951p = j11;
+            this.f52999p = j11;
             return null;
         }
 
         private final void t() {
             a aVar = a.this;
-            synchronized (aVar.f52944r) {
+            synchronized (aVar.f52992r) {
                 try {
                     if (aVar.isTerminated()) {
                         return;
                     }
-                    if (((int) (a.a().get(aVar) & 2097151)) <= aVar.f52938d) {
+                    if (((int) (a.a().get(aVar) & 2097151)) <= aVar.f52986d) {
                         return;
                     }
-                    if (!f52946t.compareAndSet(this, -1, 1)) {
+                    if (!f52994t.compareAndSet(this, -1, 1)) {
                         return;
                     }
                     int i10 = this.indexInArray;
@@ -780,16 +780,16 @@ public final class a implements Executor, Closeable {
                     aVar.E0(this, i10, 0);
                     int andDecrement = (int) (a.a().getAndDecrement(aVar) & 2097151);
                     if (andDecrement != i10) {
-                        Object b10 = aVar.f52944r.b(andDecrement);
+                        Object b10 = aVar.f52992r.b(andDecrement);
                         Intrinsics.checkNotNull(b10);
                         c cVar = (c) b10;
-                        aVar.f52944r.c(i10, cVar);
+                        aVar.f52992r.c(i10, cVar);
                         cVar.n(i10);
                         aVar.E0(cVar, andDecrement, i10);
                     }
-                    aVar.f52944r.c(andDecrement, null);
-                    Unit unit = Unit.f32008a;
-                    this.f52949i = d.f52959p;
+                    aVar.f52992r.c(andDecrement, null);
+                    Unit unit = Unit.f32056a;
+                    this.f52997i = d.f53007p;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -812,11 +812,11 @@ public final class a implements Executor, Closeable {
         }
 
         public final int j(int i10) {
-            int i11 = this.f52952q;
+            int i11 = this.f53000q;
             int i12 = i11 ^ (i11 << 13);
             int i13 = i12 ^ (i12 >> 17);
             int i14 = i13 ^ (i13 << 5);
-            this.f52952q = i14;
+            this.f53000q = i14;
             int i15 = i10 - 1;
             if ((i15 & i10) == 0) {
                 return i14 & i15;
@@ -827,7 +827,7 @@ public final class a implements Executor, Closeable {
         public final void n(int i10) {
             String valueOf;
             StringBuilder sb2 = new StringBuilder();
-            sb2.append(a.this.f52941o);
+            sb2.append(a.this.f52989o);
             sb2.append("-worker-");
             if (i10 == 0) {
                 valueOf = "TERMINATED";
@@ -845,8 +845,8 @@ public final class a implements Executor, Closeable {
 
         public final boolean r(d dVar) {
             boolean z10;
-            d dVar2 = this.f52949i;
-            if (dVar2 == d.f52955d) {
+            d dVar2 = this.f52997i;
+            if (dVar2 == d.f53003d) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -855,7 +855,7 @@ public final class a implements Executor, Closeable {
                 a.a().addAndGet(a.this, 4398046511104L);
             }
             if (dVar2 != dVar) {
-                this.f52949i = dVar;
+                this.f52997i = dVar;
             }
             return z10;
         }

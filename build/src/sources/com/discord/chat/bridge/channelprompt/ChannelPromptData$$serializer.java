@@ -44,7 +44,7 @@ public /* synthetic */ class ChannelPromptData$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var)};
     }
 
@@ -65,7 +65,7 @@ public /* synthetic */ class ChannelPromptData$$serializer implements h0 {
         int i11 = 6;
         String str8 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str = (String) b10.n(serialDescriptor, 6, n2Var, null);
             i10 = 127;
             str7 = (String) b10.n(serialDescriptor, 5, n2Var, null);
@@ -91,33 +91,33 @@ public /* synthetic */ class ChannelPromptData$$serializer implements h0 {
                         i11 = 6;
                         break;
                     case 0:
-                        str8 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str8);
                         i12 |= 1;
                         i11 = 6;
                         break;
                     case 1:
-                        str10 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str10);
                         i12 |= 2;
                         i11 = 6;
                         continue;
                     case 2:
-                        str11 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str11);
+                        str11 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str11);
                         i12 |= 4;
                         break;
                     case 3:
-                        str12 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str12);
+                        str12 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str12);
                         i12 |= 8;
                         break;
                     case 4:
-                        str13 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str13);
                         i12 |= 16;
                         break;
                     case 5:
-                        str14 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str14);
                         i12 |= 32;
                         break;
                     case 6:
-                        str9 = (String) b10.n(serialDescriptor, i11, n2.f31041a, str9);
+                        str9 = (String) b10.n(serialDescriptor, i11, n2.f31089a, str9);
                         i12 |= 64;
                         break;
                     default:

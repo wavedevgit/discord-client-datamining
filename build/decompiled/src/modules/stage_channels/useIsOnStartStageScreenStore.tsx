@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.setIsOnStartStageScreen = var3;
     var1 = function arg0() {
-        _fun51948: for (var _fun51948_ip = 0;;) switch (_fun51948_ip) {
+        _fun52393: for (var _fun52393_ip = 0;;) switch (_fun52393_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var0)(var3);
                 var5 = var4;
                 if (!var5) {
-                    _fun51948_ip = 147;
-                    continue _fun51948
+                    _fun52393_ip = 147;
+                    continue _fun52393
                 }
             case 144:
                 var5 = !var3;
@@ -143,25 +143,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun51951: for (var _fun51951_ip = 0;;) switch (_fun51951_ip) {
+                    _fun52396: for (var _fun52396_ip = 0;;) switch (_fun52396_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             if (var1) {
-                                _fun51951_ip = 30;
-                                continue _fun51951
+                                _fun52396_ip = 30;
+                                continue _fun52396
                             }
                         case 10:
                             var3 = _closure1_slot7;
                             var2 = _closure2_slot2;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun51951_ip = 53;
-                            continue _fun51951;
+                            _fun52396_ip = 53;
+                            continue _fun52396;
                         case 30:
                             var0 = _closure2_slot2;
                             if (var0) {
-                                _fun51951_ip = 53;
-                                continue _fun51951
+                                _fun52396_ip = 53;
+                                continue _fun52396
                             }
                         case 37:
                             var2 = _closure1_slot7;
@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUpdateIsOnStartStageScreenEffect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3093, 1670, 629, 802, 566, 1380, 5922, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3093, 1672, 629, 802, 566, 1380, 5965, 2]);

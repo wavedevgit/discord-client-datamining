@@ -60,7 +60,7 @@ public final class MobileVoiceOverlayData {
     }
 
     static {
-        qr.o oVar = qr.o.f48044e;
+        qr.o oVar = qr.o.f48092e;
         $childSerializers = new Lazy[]{qr.l.b(oVar, new Function0() { // from class: com.discord.mobile_voice_overlay.s
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

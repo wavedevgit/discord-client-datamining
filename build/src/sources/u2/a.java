@@ -6,10 +6,10 @@ import android.os.Parcelable;
 public abstract class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Parcelable f51199d;
+    private final Parcelable f51247d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51198e = new C0674a();
+    public static final a f51246e = new C0674a();
     public static final Parcelable.Creator<a> CREATOR = new b();
 
     /* renamed from: u2.a$a  reason: collision with other inner class name */
@@ -35,7 +35,7 @@ public abstract class a implements Parcelable {
         /* renamed from: b */
         public a createFromParcel(Parcel parcel, ClassLoader classLoader) {
             if (parcel.readParcelable(classLoader) == null) {
-                return a.f51198e;
+                return a.f51246e;
             }
             throw new IllegalStateException("superState must be null");
         }
@@ -52,7 +52,7 @@ public abstract class a implements Parcelable {
     }
 
     public final Parcelable a() {
-        return this.f51199d;
+        return this.f51247d;
     }
 
     @Override // android.os.Parcelable
@@ -62,17 +62,17 @@ public abstract class a implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeParcelable(this.f51199d, i10);
+        parcel.writeParcelable(this.f51247d, i10);
     }
 
     private a() {
-        this.f51199d = null;
+        this.f51247d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public a(Parcelable parcelable) {
         if (parcelable != null) {
-            this.f51199d = parcelable == f51198e ? null : parcelable;
+            this.f51247d = parcelable == f51246e ? null : parcelable;
             return;
         }
         throw new IllegalArgumentException("superState must not be null");
@@ -81,6 +81,6 @@ public abstract class a implements Parcelable {
     /* JADX INFO: Access modifiers changed from: protected */
     public a(Parcel parcel, ClassLoader classLoader) {
         Parcelable readParcelable = parcel.readParcelable(classLoader);
-        this.f51199d = readParcelable == null ? f51198e : readParcelable;
+        this.f51247d = readParcelable == null ? f51246e : readParcelable;
     }
 }

@@ -11,7 +11,7 @@ public interface h1 extends e2 {
     public static final r0.a f77i = r0.a.a("camerax.core.imageInput.inputDynamicRange", x.z.class);
 
     default x.z B() {
-        return (x.z) b2.e.g((x.z) e(f77i, x.z.f54401c));
+        return (x.z) b2.e.g((x.z) e(f77i, x.z.f54449c));
     }
 
     default int getInputFormat() {

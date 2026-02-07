@@ -13,28 +13,28 @@ import rt.z;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final rt.p f39161a = m.f39197d;
+    public static final rt.p f39209a = m.f39245d;
 
     /* renamed from: net.time4j.calendar.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class C0538b implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f39162d;
+        private final d f39210d;
 
         private rt.p b(rt.q qVar, boolean z10) {
-            f V = f.V(qVar.getClass(), this.f39162d.model);
+            f V = f.V(qVar.getClass(), this.f39210d.model);
             int l10 = l(qVar);
             a0 a0Var = a0.UTC;
             long longValue = ((Long) qVar.s(a0Var)).longValue();
-            int q10 = qVar.q(this.f39162d.dayElement);
+            int q10 = qVar.q(this.f39210d.dayElement);
             if (z10) {
-                if (((Integer) qVar.t(this.f39162d.dayElement)).intValue() < q10 + (((Long) qVar.E(V, qVar.t(V)).s(a0Var)).longValue() - longValue)) {
-                    return this.f39162d.dayElement;
+                if (((Integer) qVar.t(this.f39210d.dayElement)).intValue() < q10 + (((Long) qVar.E(V, qVar.t(V)).s(a0Var)).longValue() - longValue)) {
+                    return this.f39210d.dayElement;
                 }
             } else if (l10 <= 1) {
-                if (((Integer) qVar.v(this.f39162d.dayElement)).intValue() > q10 - (longValue - ((Long) qVar.E(V, qVar.v(V)).s(a0Var)).longValue())) {
-                    return this.f39162d.dayElement;
+                if (((Integer) qVar.v(this.f39210d.dayElement)).intValue() > q10 - (longValue - ((Long) qVar.E(V, qVar.v(V)).s(a0Var)).longValue())) {
+                    return this.f39210d.dayElement;
                 }
             }
             return V;
@@ -54,9 +54,9 @@ public abstract class b {
 
         private int p(rt.q qVar, int i10) {
             int i11;
-            int q10 = qVar.q(this.f39162d.dayElement);
-            int e10 = b.c((((Long) qVar.s(a0.UTC)).longValue() - q10) + 1).e(this.f39162d.model);
-            if (e10 <= 8 - this.f39162d.model.g()) {
+            int q10 = qVar.q(this.f39210d.dayElement);
+            int e10 = b.c((((Long) qVar.s(a0.UTC)).longValue() - q10) + 1).e(this.f39210d.model);
+            if (e10 <= 8 - this.f39210d.model.g()) {
                 i11 = 2 - e10;
             } else {
                 i11 = 9 - e10;
@@ -64,7 +64,7 @@ public abstract class b {
             if (i10 != -1) {
                 if (i10 != 0) {
                     if (i10 == 1) {
-                        q10 = ((Integer) qVar.t(this.f39162d.dayElement)).intValue();
+                        q10 = ((Integer) qVar.t(this.f39210d.dayElement)).intValue();
                     } else {
                         throw new AssertionError("Unexpected: " + i10);
                     }
@@ -134,7 +134,7 @@ public abstract class b {
         }
 
         private C0538b(d dVar) {
-            this.f39162d = dVar;
+            this.f39210d = dVar;
         }
     }
 
@@ -142,11 +142,11 @@ public abstract class b {
     private static class c implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f39163d;
+        private final d f39211d;
 
         private int b(rt.q qVar) {
             int h10;
-            int q10 = qVar.q(this.f39163d.dayElement);
+            int q10 = qVar.q(this.f39211d.dayElement);
             int f10 = f(qVar, 0);
             if (f10 <= q10) {
                 if (f(qVar, 1) + h(qVar, 0) <= q10) {
@@ -160,12 +160,12 @@ public abstract class b {
         }
 
         private rt.p c(Object obj) {
-            return new f((Class) obj, this.f39163d.model);
+            return new f((Class) obj, this.f39211d.model);
         }
 
         private int f(rt.q qVar, int i10) {
             y0 q10 = q(qVar, i10);
-            a1 a1Var = this.f39163d.model;
+            a1 a1Var = this.f39211d.model;
             int e10 = q10.e(a1Var);
             if (e10 <= 8 - a1Var.g()) {
                 return 2 - e10;
@@ -174,17 +174,17 @@ public abstract class b {
         }
 
         private int h(rt.q qVar, int i10) {
-            int q10 = qVar.q(this.f39163d.dayElement);
+            int q10 = qVar.q(this.f39211d.dayElement);
             if (i10 == -1) {
-                rt.p pVar = this.f39163d.dayElement;
+                rt.p pVar = this.f39211d.dayElement;
                 a0 a0Var = a0.UTC;
                 return b.d(pVar, qVar.D(a0Var, ((Long) qVar.s(a0Var)).longValue() - q10));
             } else if (i10 == 0) {
-                return b.d(this.f39163d.dayElement, qVar);
+                return b.d(this.f39211d.dayElement, qVar);
             } else {
                 if (i10 == 1) {
-                    int d10 = b.d(this.f39163d.dayElement, qVar);
-                    rt.p pVar2 = this.f39163d.dayElement;
+                    int d10 = b.d(this.f39211d.dayElement, qVar);
+                    rt.p pVar2 = this.f39211d.dayElement;
                     a0 a0Var2 = a0.UTC;
                     return b.d(pVar2, qVar.D(a0Var2, ((((Long) qVar.s(a0Var2)).longValue() + d10) + 1) - q10));
                 }
@@ -193,7 +193,7 @@ public abstract class b {
         }
 
         private int i(rt.q qVar) {
-            int q10 = qVar.q(this.f39163d.dayElement);
+            int q10 = qVar.q(this.f39211d.dayElement);
             int f10 = f(qVar, 0);
             if (f10 <= q10) {
                 int f11 = f(qVar, 1) + h(qVar, 0);
@@ -213,19 +213,19 @@ public abstract class b {
         }
 
         private y0 q(rt.q qVar, int i10) {
-            int q10 = qVar.q(this.f39163d.dayElement);
+            int q10 = qVar.q(this.f39211d.dayElement);
             if (i10 != -1) {
                 if (i10 == 0) {
                     return b.c((((Long) qVar.s(a0.UTC)).longValue() - q10) + 1);
                 }
                 if (i10 == 1) {
-                    return b.c(((((Long) qVar.s(a0.UTC)).longValue() + b.d(this.f39163d.dayElement, qVar)) + 1) - q10);
+                    return b.c(((((Long) qVar.s(a0.UTC)).longValue() + b.d(this.f39211d.dayElement, qVar)) + 1) - q10);
                 }
                 throw new AssertionError("Unexpected: " + i10);
             }
             a0 a0Var = a0.UTC;
             long longValue = ((Long) qVar.s(a0Var)).longValue() - q10;
-            return b.c((longValue - qVar.D(a0Var, longValue).q(this.f39163d.dayElement)) + 1);
+            return b.c((longValue - qVar.D(a0Var, longValue).q(this.f39211d.dayElement)) + 1);
         }
 
         private rt.q t(rt.q qVar, int i10) {
@@ -288,7 +288,7 @@ public abstract class b {
         }
 
         private c(d dVar) {
-            this.f39163d = dVar;
+            this.f39211d = dVar;
         }
     }
 
@@ -354,7 +354,7 @@ public abstract class b {
     private static class e implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final f f39164d;
+        private final f f39212d;
 
         @Override // rt.z
         /* renamed from: b */
@@ -373,10 +373,10 @@ public abstract class b {
         public y0 k(rt.q qVar) {
             long a10 = x.G(qVar.getClass()).o().a();
             long longValue = ((Long) qVar.s(a0.UTC)).longValue();
-            if ((longValue + 7) - b.c(longValue).e(this.f39164d.model) > a10) {
+            if ((longValue + 7) - b.c(longValue).e(this.f39212d.model) > a10) {
                 return b.c(a10);
             }
-            return this.f39164d.e();
+            return this.f39212d.e();
         }
 
         @Override // rt.z
@@ -384,10 +384,10 @@ public abstract class b {
         public y0 o(rt.q qVar) {
             long d10 = x.G(qVar.getClass()).o().d();
             long longValue = ((Long) qVar.s(a0.UTC)).longValue();
-            if ((longValue + 1) - b.c(longValue).e(this.f39164d.model) < d10) {
+            if ((longValue + 1) - b.c(longValue).e(this.f39212d.model) < d10) {
                 return b.c(d10);
             }
-            return this.f39164d.B();
+            return this.f39212d.B();
         }
 
         @Override // rt.z
@@ -419,11 +419,11 @@ public abstract class b {
             if (y0Var == c10) {
                 return qVar;
             }
-            return qVar.D(a0Var, (longValue + y0Var.e(this.f39164d.model)) - c10.e(this.f39164d.model));
+            return qVar.D(a0Var, (longValue + y0Var.e(this.f39212d.model)) - c10.e(this.f39212d.model));
         }
 
         private e(f fVar) {
-            this.f39164d = fVar;
+            this.f39212d = fVar;
         }
     }
 
@@ -517,23 +517,23 @@ public abstract class b {
     static class g implements rt.s {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f39165a;
+        private final Class f39213a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final rt.p f39166b;
+        private final rt.p f39214b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final rt.p f39167c;
+        private final rt.p f39215c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final a1 f39168d;
+        private final a1 f39216d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public g(Class cls, rt.p pVar, rt.p pVar2, a1 a1Var) {
-            this.f39165a = cls;
-            this.f39166b = pVar;
-            this.f39167c = pVar2;
-            this.f39168d = a1Var;
+            this.f39213a = cls;
+            this.f39214b = pVar;
+            this.f39215c = pVar2;
+            this.f39216d = a1Var;
         }
 
         @Override // rt.s
@@ -543,24 +543,24 @@ public abstract class b {
 
         @Override // rt.s
         public boolean c(Class cls) {
-            return this.f39165a.equals(cls);
+            return this.f39213a.equals(cls);
         }
 
         @Override // rt.s
         public Set d(Locale locale, rt.d dVar) {
             a1 j10;
             if (locale.getCountry().isEmpty()) {
-                j10 = this.f39168d;
+                j10 = this.f39216d;
             } else {
                 j10 = a1.j(locale);
             }
             a1 a1Var = j10;
             HashSet hashSet = new HashSet();
-            hashSet.add(f.V(this.f39165a, a1Var));
-            hashSet.add(d.K("WEEK_OF_MONTH", this.f39165a, 1, 5, 'W', a1Var, this.f39166b, false));
-            hashSet.add(d.K("WEEK_OF_YEAR", this.f39165a, 1, 52, 'w', a1Var, this.f39167c, false));
-            hashSet.add(d.K("BOUNDED_WEEK_OF_MONTH", this.f39165a, 1, 5, (char) 0, a1Var, this.f39166b, true));
-            hashSet.add(d.K("BOUNDED_WEEK_OF_YEAR", this.f39165a, 1, 52, (char) 0, a1Var, this.f39167c, true));
+            hashSet.add(f.V(this.f39213a, a1Var));
+            hashSet.add(d.K("WEEK_OF_MONTH", this.f39213a, 1, 5, 'W', a1Var, this.f39214b, false));
+            hashSet.add(d.K("WEEK_OF_YEAR", this.f39213a, 1, 52, 'w', a1Var, this.f39215c, false));
+            hashSet.add(d.K("BOUNDED_WEEK_OF_MONTH", this.f39213a, 1, 5, (char) 0, a1Var, this.f39214b, true));
+            hashSet.add(d.K("BOUNDED_WEEK_OF_YEAR", this.f39213a, 1, 52, (char) 0, a1Var, this.f39215c, true));
             return Collections.unmodifiableSet(hashSet);
         }
 

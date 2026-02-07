@@ -45,7 +45,7 @@ public abstract class g0 {
     public static final Void g(a aVar, String entity) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
         Intrinsics.checkNotNullParameter(entity, "entity");
-        aVar.w("Trailing comma before the end of JSON " + entity, aVar.f36632a - 1, "Trailing commas are non-complaint JSON and not allowed by default. Use 'allowTrailingCommas = true' in 'Json {}' builder to support them.");
+        aVar.w("Trailing comma before the end of JSON " + entity, aVar.f36680a - 1, "Trailing commas are non-complaint JSON and not allowed by default. Use 'allowTrailingCommas = true' in 'Json {}' builder to support them.");
         throw new qr.h();
     }
 

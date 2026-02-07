@@ -17,7 +17,7 @@ import uj.a;
 public class CommonComponentRegistrar implements ComponentRegistrar {
     @Override // com.google.firebase.components.ComponentRegistrar
     public final List getComponents() {
-        return f.i(m.f50658b, c.c(a.class).b(q.j(i.class)).e(new g() { // from class: qj.a
+        return f.i(m.f50706b, c.c(a.class).b(q.j(i.class)).e(new g() { // from class: qj.a
             @Override // ui.g
             public final Object a(ui.d dVar) {
                 return new uj.a((i) dVar.a(i.class));

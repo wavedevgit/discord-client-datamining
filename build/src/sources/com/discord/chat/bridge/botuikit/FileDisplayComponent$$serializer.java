@@ -49,8 +49,8 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{p0.f31057a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, n2Var, n2Var, jt.h.f31005a, gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(k1.f31024a)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{p0.f31105a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, n2Var, n2Var, jt.h.f31053a, gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(k1.f31072a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -77,12 +77,12 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
             String m11 = b10.m(serialDescriptor, 3);
             String m12 = b10.m(serialDescriptor, 4);
             boolean C = b10.C(serialDescriptor, 5);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str = (String) b10.n(serialDescriptor, 7, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             z10 = C;
             str4 = m11;
-            r30 = (Void) b10.n(serialDescriptor, 8, k1.f31024a, null);
+            r30 = (Void) b10.n(serialDescriptor, 8, k1.f31072a, null);
             str5 = m12;
             unfurledMediaItem = (UnfurledMediaItem) b10.y(serialDescriptor, 2, UnfurledMediaItem$$serializer.INSTANCE, null);
             str3 = m10;
@@ -137,15 +137,15 @@ public /* synthetic */ class FileDisplayComponent$$serializer implements h0 {
                         i14 |= 32;
                         break;
                     case 6:
-                        str10 = (String) b10.n(serialDescriptor, i13, n2.f31041a, str10);
+                        str10 = (String) b10.n(serialDescriptor, i13, n2.f31089a, str10);
                         i14 |= 64;
                         break;
                     case 7:
-                        str6 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, i12, n2.f31089a, str6);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
-                        r92 = (Void) b10.n(serialDescriptor, 8, k1.f31024a, r92);
+                        r92 = (Void) b10.n(serialDescriptor, 8, k1.f31072a, r92);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     default:

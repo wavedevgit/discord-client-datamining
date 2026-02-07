@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80520: for (var _fun80520_ip = 0;;) switch (_fun80520_ip) {
+        _fun80971: for (var _fun80971_ip = 0;;) switch (_fun80971_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.legacyUsername;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var2;
                 var5 = var2;
                 if (!(var3 !== var1)) {
-                    _fun80520_ip = 72;
-                    continue _fun80520
+                    _fun80971_ip = 72;
+                    continue _fun80971
                 }
             case 69:
                 var5 = var1;
@@ -88,14 +88,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var6, var5);
                 var0.subLabel = var5;
                 var4 = function arg0() {
-                    _fun80521: for (var _fun80521_ip = 0;;) switch (_fun80521_ip) {
+                    _fun80972: for (var _fun80972_ip = 0;;) switch (_fun80972_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = !var0;
                             var1 = _closure2_slot0;
                             if (!(var2 !== var1)) {
-                                _fun80521_ip = 58;
-                                continue _fun80521
+                                _fun80972_ip = 58;
+                                continue _fun80972
                             }
                         case 17:
                             var3 = _closure1_slot0;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.setPendingLegacyUsernameDisabled;
                             var0 = !var0;
                             var0 = var1.bind(var2)(var0);
-                            _fun80521_ip = 93;
-                            continue _fun80521;
+                            _fun80972_ip = 93;
+                            continue _fun80972;
                         case 58:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot1;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1348, 10250, 1234, 5729, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1348, 10295, 1234, 5772, 2]);

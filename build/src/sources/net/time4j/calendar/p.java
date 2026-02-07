@@ -128,7 +128,7 @@ public enum p {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static double o(double d10) {
-        return qt.e.f48173o.h(d10, "solar-longitude");
+        return qt.e.f48221o.h(d10, "solar-longitude");
     }
 
     public String e(Locale locale) {

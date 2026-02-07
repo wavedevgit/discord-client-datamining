@@ -23,7 +23,7 @@ public final class OnDemandResourceModule extends NativeOnDemandResourceModuleSp
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit fetchOnDemandResource$lambda$1$lambda$0(Promise promise, boolean z10) {
         promise.resolve(Boolean.valueOf(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.discord.codegen.NativeOnDemandResourceModuleSpec

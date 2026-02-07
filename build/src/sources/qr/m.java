@@ -11,23 +11,23 @@ public class m {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f48042a;
+        public static final /* synthetic */ int[] f48090a;
 
         static {
             int[] iArr = new int[o.values().length];
             try {
-                iArr[o.f48043d.ordinal()] = 1;
+                iArr[o.f48091d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[o.f48044e.ordinal()] = 2;
+                iArr[o.f48092e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[o.f48045i.ordinal()] = 3;
+                iArr[o.f48093i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f48042a = iArr;
+            f48090a = iArr;
         }
     }
 
@@ -39,7 +39,7 @@ public class m {
     public static Lazy b(o mode, Function0 initializer) {
         Intrinsics.checkNotNullParameter(mode, "mode");
         Intrinsics.checkNotNullParameter(initializer, "initializer");
-        int i10 = a.f48042a[mode.ordinal()];
+        int i10 = a.f48090a[mode.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {

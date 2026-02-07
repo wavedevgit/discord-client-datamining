@@ -4,10 +4,10 @@ package hi;
 public final class q implements ii.i {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ a f26020a;
+    final /* synthetic */ a f26068a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(a aVar) {
-        this.f26020a = aVar;
+        this.f26068a = aVar;
     }
 }

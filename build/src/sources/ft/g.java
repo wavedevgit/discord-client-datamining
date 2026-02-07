@@ -29,7 +29,7 @@ public final class g extends jt.b {
         Intrinsics.checkNotNullParameter(baseClass, "baseClass");
         this.f23739a = baseClass;
         this.f23740b = CollectionsKt.l();
-        this.f23741c = qr.l.b(qr.o.f48044e, new Function0() { // from class: ft.e
+        this.f23741c = qr.l.b(qr.o.f48092e, new Function0() { // from class: ft.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor h10;
@@ -41,7 +41,7 @@ public final class g extends jt.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor h(final g gVar) {
-        return ht.b.c(ht.j.d("kotlinx.serialization.Polymorphic", d.a.f26468a, new SerialDescriptor[0], new Function1() { // from class: ft.f
+        return ht.b.c(ht.j.d("kotlinx.serialization.Polymorphic", d.a.f26516a, new SerialDescriptor[0], new Function1() { // from class: ft.f
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit i10;
@@ -55,9 +55,9 @@ public final class g extends jt.b {
     public static final Unit i(g gVar, ht.a buildSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
         ht.a.b(buildSerialDescriptor, "type", gt.a.E(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
-        ht.a.b(buildSerialDescriptor, "value", ht.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f26487a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
+        ht.a.b(buildSerialDescriptor, "value", ht.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f26535a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
         buildSerialDescriptor.h(gVar.f23740b);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // jt.b

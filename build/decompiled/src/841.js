@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun8885: for (var _fun8885_ip = 0;;) switch (_fun8885_ip) {
+        _fun8887: for (var _fun8887_ip = 0;;) switch (_fun8887_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -22,8 +22,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.bind(var1)(var3);
                 var0 = var1.stack;
                 if (var0) {
-                    _fun8885_ip = 140;
-                    continue _fun8885
+                    _fun8887_ip = 140;
+                    continue _fun8887
                 }
             case 64:
                 var5 = _closure1_slot4;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
         var2 = function arg0, arg1() {
-            _fun8892: for (var _fun8892_ip = 0;;) switch (_fun8892_ip) {
+            _fun8894: for (var _fun8894_ip = 0;;) switch (_fun8894_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = arg1;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = undefined;
                     var5 = var6.bind(var0)(var1, var5);
                     if (var3) {
-                        _fun8892_ip = 80;
-                        continue _fun8892
+                        _fun8894_ip = 80;
+                        continue _fun8894
                     }
                 case 34:
                     var6 = _closure1_slot0;
@@ -162,8 +162,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var5 instanceof Object ? var5 : var6;
                 case 80:
                     if (var2) {
-                        _fun8892_ip = 129;
-                        continue _fun8892
+                        _fun8894_ip = 129;
+                        continue _fun8894
                     }
                 case 83:
                     var5 = _closure1_slot0;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'withScope';
         var0.key = var1;
         var1 = function arg0() {
-            _fun8893: for (var _fun8893_ip = 0;;) switch (_fun8893_ip) {
+            _fun8895: for (var _fun8895_ip = 0;;) switch (_fun8895_ip) {
                 case 0:
                     var2 = this;
                     var4 = arg0;
@@ -218,15 +218,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var3;
                     var0 = var4.bind(var5)(var0);
                     if (var0) {
-                        _fun8893_ip = 88;
-                        continue _fun8893
+                        _fun8895_ip = 88;
+                        continue _fun8895
                     }
                 case 73:
                     var0 = var2._popScope;
                     var0 = var0.bind(var2)();
                     var0 = var3;
-                    _fun8893_ip = 112;
-                    continue _fun8893;
+                    _fun8895_ip = 112;
+                    continue _fun8895;
                 case 88:
                     var5 = var3;
                     var4 = var5.then;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_popScope';
         var0.key = var5;
         var4 = function() {
-            _fun8901: for (var _fun8901_ip = 0;;) switch (_fun8901_ip) {
+            _fun8903: for (var _fun8903_ip = 0;;) switch (_fun8903_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1._stack;
@@ -340,8 +340,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2 <= var0;
                     var0 = !var2;
                     if (var2) {
-                        _fun8901_ip = 49;
-                        continue _fun8901
+                        _fun8903_ip = 49;
+                        continue _fun8903
                     }
                 case 27:
                     var2 = var1._stack;

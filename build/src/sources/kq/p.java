@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 final class p {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final p f35228d = new p("BASE", 0);
+    public static final p f35276d = new p("BASE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final p f35229e = new p("ACTIVE", 1);
+    public static final p f35277e = new p("ACTIVE", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final p f35230i = new p("DISABLED", 2);
+    public static final p f35278i = new p("DISABLED", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ p[] f35231o;
+    private static final /* synthetic */ p[] f35279o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35232p;
+    private static final /* synthetic */ EnumEntries f35280p;
 
     static {
         p[] a10 = a();
-        f35231o = a10;
-        f35232p = xr.a.a(a10);
+        f35279o = a10;
+        f35280p = xr.a.a(a10);
     }
 
     private p(String str, int i10) {
     }
 
     private static final /* synthetic */ p[] a() {
-        return new p[]{f35228d, f35229e, f35230i};
+        return new p[]{f35276d, f35277e, f35278i};
     }
 
     public static p valueOf(String str) {
@@ -39,6 +39,6 @@ final class p {
     }
 
     public static p[] values() {
-        return (p[]) f35231o.clone();
+        return (p[]) f35279o.clone();
     }
 }

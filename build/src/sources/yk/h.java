@@ -5,24 +5,24 @@ import hk.p;
 final class h extends g {
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f55465c;
+    private final boolean f55513c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(c cVar, boolean z10) {
         super(cVar);
-        this.f55465c = z10;
+        this.f55513c = z10;
     }
 
     private void h(a aVar) {
         p i10;
         p c10;
         c a10 = a();
-        if (this.f55465c) {
+        if (this.f55513c) {
             i10 = a10.h();
         } else {
             i10 = a10.i();
         }
-        if (this.f55465c) {
+        if (this.f55513c) {
             c10 = a10.b();
         } else {
             c10 = a10.c();
@@ -63,7 +63,7 @@ final class h extends g {
                 if (c10 > aVar.c()) {
                     dVarArr[i10] = null;
                 } else {
-                    if (!this.f55465c) {
+                    if (!this.f55513c) {
                         c10 += 2;
                     }
                     int i11 = c10 % 3;
@@ -101,12 +101,12 @@ final class h extends g {
         m();
         l(d10, aVar);
         c a10 = a();
-        if (this.f55465c) {
+        if (this.f55513c) {
             i10 = a10.h();
         } else {
             i10 = a10.i();
         }
-        if (this.f55465c) {
+        if (this.f55513c) {
             c10 = a10.b();
         } else {
             c10 = a10.c();
@@ -167,7 +167,7 @@ final class h extends g {
                 dVar.j();
                 int e10 = dVar.e() % 30;
                 int c10 = dVar.c();
-                if (!this.f55465c) {
+                if (!this.f55513c) {
                     c10 += 2;
                 }
                 int i10 = c10 % 3;
@@ -214,11 +214,11 @@ final class h extends g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean k() {
-        return this.f55465c;
+        return this.f55513c;
     }
 
     @Override // yk.g
     public String toString() {
-        return "IsLeft: " + this.f55465c + '\n' + super.toString();
+        return "IsLeft: " + this.f55513c + '\n' + super.toString();
     }
 }

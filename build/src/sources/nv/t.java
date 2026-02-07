@@ -5,7 +5,7 @@ import qv.x;
 public class t extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x f41281a = new x();
+    private final x f41329a = new x();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends sv.b {
@@ -66,6 +66,6 @@ public class t extends sv.a {
 
     @Override // sv.d
     public qv.a e() {
-        return this.f41281a;
+        return this.f41329a;
     }
 }

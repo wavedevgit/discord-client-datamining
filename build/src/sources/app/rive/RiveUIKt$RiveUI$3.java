@@ -72,7 +72,7 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
                         return "No view model instance to bind for " + m195toStringimpl;
                     }
                 });
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             RiveLog.INSTANCE.getLogger().d(ViewModelInstanceKt.VM_INSTANCE_TAG, new Function0<String>() { // from class: app.rive.RiveUIKt$RiveUI$3.2
                 {
@@ -113,7 +113,7 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
                         }
                     });
                     RiveUIKt.RiveUI$lambda$4(qVar, false);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             };
             this.label = 1;
@@ -126,6 +126,6 @@ final class RiveUIKt$RiveUI$3 extends k implements Function2<CoroutineScope, Con
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((RiveUIKt$RiveUI$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

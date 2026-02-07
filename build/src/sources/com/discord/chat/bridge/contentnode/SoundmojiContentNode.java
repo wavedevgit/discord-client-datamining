@@ -88,19 +88,19 @@ public final class SoundmojiContentNode extends ContentNode {
         compositeEncoder.s(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(soundmojiContentNode.channelId));
         compositeEncoder.s(serialDescriptor, 2, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(soundmojiContentNode.messageId));
         if (compositeEncoder.A(serialDescriptor, 3) || soundmojiContentNode.content != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, soundmojiContentNode.content);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, soundmojiContentNode.content);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || soundmojiContentNode.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, soundmojiContentNode.guildId);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, soundmojiContentNode.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || soundmojiContentNode.jumboable) {
             compositeEncoder.y(serialDescriptor, 5, soundmojiContentNode.jumboable);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || soundmojiContentNode.emojiId != null) {
-            compositeEncoder.l(serialDescriptor, 6, n2.f31041a, soundmojiContentNode.emojiId);
+            compositeEncoder.l(serialDescriptor, 6, n2.f31089a, soundmojiContentNode.emojiId);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || soundmojiContentNode.emojiName != null) {
-            compositeEncoder.l(serialDescriptor, 7, n2.f31041a, soundmojiContentNode.emojiName);
+            compositeEncoder.l(serialDescriptor, 7, n2.f31089a, soundmojiContentNode.emojiName);
         }
     }
 

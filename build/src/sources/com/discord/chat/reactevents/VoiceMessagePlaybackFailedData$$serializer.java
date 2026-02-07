@@ -38,7 +38,7 @@ public /* synthetic */ class VoiceMessagePlaybackFailedData$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, gt.a.u(n2.f31041a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, gt.a.u(n2.f31089a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -53,7 +53,7 @@ public /* synthetic */ class VoiceMessagePlaybackFailedData$$serializer implemen
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1092unboximpl() : null;
-            str2 = (String) b10.n(serialDescriptor, 1, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 1, n2.f31089a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -71,7 +71,7 @@ public /* synthetic */ class VoiceMessagePlaybackFailedData$$serializer implemen
                 } else if (o10 != 1) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str3);
                     i11 |= 2;
                 }
             }

@@ -5,7 +5,7 @@ import yi.c;
 final class y5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y5 f47744a = new y5();
+    static final y5 f47792a = new y5();
 
     static {
         c.b a10 = yi.c.a("maxResults");

@@ -8,40 +8,40 @@ public abstract class r {
     public static final oq.d a(InternalErrorInfo internalErrorInfo) {
         Intrinsics.checkNotNullParameter(internalErrorInfo, "<this>");
         if (internalErrorInfo instanceof InternalErrorInfo.CameraErrorInfo) {
-            return oq.d.f43334o;
+            return oq.d.f43382o;
         }
         if (internalErrorInfo instanceof InternalErrorInfo.IntegrationErrorInfo) {
-            return oq.d.f43335p;
+            return oq.d.f43383p;
         }
         if (internalErrorInfo instanceof InternalErrorInfo.NetworkErrorInfo) {
             ErrorResponse.Error responseError = ((InternalErrorInfo.NetworkErrorInfo) internalErrorInfo).getResponseError();
             if (responseError instanceof ErrorResponse.Error.RateLimitExceededError) {
-                return oq.d.f43337r;
+                return oq.d.f43385r;
             }
             if (responseError instanceof ErrorResponse.Error.UnauthenticatedError) {
-                return oq.d.f43336q;
+                return oq.d.f43384q;
             }
             if (!(responseError instanceof ErrorResponse.Error.FieldNotFoundError) && !(responseError instanceof ErrorResponse.Error.InactiveTemplateError) && !(responseError instanceof ErrorResponse.Error.InconsistentTransitionError) && !(responseError instanceof ErrorResponse.Error.TransitionFromTerminalStateError) && !(responseError instanceof ErrorResponse.Error.InvalidConfigError) && !(responseError instanceof ErrorResponse.Error.UnknownError) && !(responseError instanceof ErrorResponse.Error.InvalidFieldValueError) && responseError != null) {
                 throw new qr.p();
             }
-            return oq.d.f43331d;
+            return oq.d.f43379d;
         } else if (internalErrorInfo instanceof InternalErrorInfo.PermissionErrorInfo) {
-            return oq.d.f43332e;
+            return oq.d.f43380e;
         } else {
             if (internalErrorInfo instanceof InternalErrorInfo.ConfigurationErrorInfo) {
-                return oq.d.f43333i;
+                return oq.d.f43381i;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.NoDiskSpaceErrorInfo) {
-                return oq.d.f43339t;
+                return oq.d.f43387t;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.WebRtcIntegrationErrorInfo) {
-                return oq.d.f43340u;
+                return oq.d.f43388u;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.InvalidOneTimeLinkCode) {
-                return oq.d.f43341v;
+                return oq.d.f43389v;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.UnknownErrorInfo) {
-                return oq.d.f43338s;
+                return oq.d.f43386s;
             }
             throw new qr.p();
         }

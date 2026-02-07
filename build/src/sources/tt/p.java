@@ -3,36 +3,36 @@ package tt;
 final class p implements rt.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final rt.d f51053a;
+    private final rt.d f51101a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final rt.d f51054b;
+    private final rt.d f51102b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(rt.d dVar, rt.d dVar2) {
-        this.f51053a = dVar;
-        this.f51054b = dVar2;
+        this.f51101a = dVar;
+        this.f51102b = dVar2;
     }
 
     @Override // rt.d
     public Object a(rt.c cVar) {
-        if (this.f51053a.c(cVar)) {
-            return this.f51053a.a(cVar);
+        if (this.f51101a.c(cVar)) {
+            return this.f51101a.a(cVar);
         }
-        return this.f51054b.a(cVar);
+        return this.f51102b.a(cVar);
     }
 
     @Override // rt.d
     public Object b(rt.c cVar, Object obj) {
-        if (this.f51053a.c(cVar)) {
-            return this.f51053a.a(cVar);
+        if (this.f51101a.c(cVar)) {
+            return this.f51101a.a(cVar);
         }
-        return this.f51054b.b(cVar, obj);
+        return this.f51102b.b(cVar, obj);
     }
 
     @Override // rt.d
     public boolean c(rt.c cVar) {
-        if (!this.f51053a.c(cVar) && !this.f51054b.c(cVar)) {
+        if (!this.f51101a.c(cVar) && !this.f51102b.c(cVar)) {
             return false;
         }
         return true;

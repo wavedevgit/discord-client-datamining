@@ -35,13 +35,13 @@ public final class SoundManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit prepare$lambda$0(Callback callback, int i10) {
         callback.invoke(null, NativeMapExtensionsKt.nativeMapOf(v.a("duration", Integer.valueOf(i10)), v.a("numberOfChannels", -1)));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit prepare$lambda$1(Callback callback, int i10) {
         callback.invoke(null, NativeMapExtensionsKt.nativeMapOf(v.a("duration", Integer.valueOf(i10)), v.a("numberOfChannels", -1)));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @SuppressLint({"DiscouragedApi"})

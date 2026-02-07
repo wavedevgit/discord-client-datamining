@@ -77,7 +77,7 @@ public final class ExecutedCommand {
         compositeEncoder.s(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1135boximpl(executedCommand.userId));
         compositeEncoder.x(serialDescriptor, 1, executedCommand.usernameColor);
         if (compositeEncoder.A(serialDescriptor, 2) || executedCommand.avatarURL != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, executedCommand.avatarURL);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, executedCommand.avatarURL);
         }
         compositeEncoder.x(serialDescriptor, 3, executedCommand.targetUsernameColor);
         compositeEncoder.s(serialDescriptor, 4, AnnotatedStructurableTextSerializer.INSTANCE, executedCommand.content);
@@ -85,10 +85,10 @@ public final class ExecutedCommand {
             compositeEncoder.l(serialDescriptor, 5, ExecutedCommandBackgroundStyles$$serializer.INSTANCE, executedCommand.commandNameBackgroundStyles);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || !Intrinsics.areEqual(executedCommand.showAppsIcon, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 6, h.f31005a, executedCommand.showAppsIcon);
+            compositeEncoder.l(serialDescriptor, 6, h.f31053a, executedCommand.showAppsIcon);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || !Intrinsics.areEqual(executedCommand.showControllerIcon, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 7, h.f31005a, executedCommand.showControllerIcon);
+            compositeEncoder.l(serialDescriptor, 7, h.f31053a, executedCommand.showControllerIcon);
         }
     }
 

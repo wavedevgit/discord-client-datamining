@@ -3,13 +3,13 @@ package qv;
 public abstract class p extends a {
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f48287f;
+    private boolean f48335f;
 
     public boolean n() {
-        return this.f48287f;
+        return this.f48335f;
     }
 
     public void o(boolean z10) {
-        this.f48287f = z10;
+        this.f48335f = z10;
     }
 }

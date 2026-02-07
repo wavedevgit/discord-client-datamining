@@ -18,7 +18,7 @@ public class b extends ef.d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, GoogleSignInOptions googleSignInOptions) {
-        super(context, ue.a.f51410b, googleSignInOptions, new d.a.C0288a().c(new ff.a()).a());
+        super(context, ue.a.f51458b, googleSignInOptions, new d.a.C0288a().c(new ff.a()).a());
     }
 
     private final synchronized int E() {

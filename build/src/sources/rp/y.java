@@ -5,14 +5,14 @@ import android.view.Window;
 public final class y implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v f49152a;
+    private final v f49200a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f49153b;
+    private final br.h f49201b;
 
     public y(v vVar, br.h hVar) {
-        this.f49152a = vVar;
-        this.f49153b = hVar;
+        this.f49200a = vVar;
+        this.f49201b = hVar;
     }
 
     public static y a(v vVar, br.h hVar) {
@@ -26,6 +26,6 @@ public final class y implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public aq.a get() {
-        return c(this.f49152a, (Window) this.f49153b.get());
+        return c(this.f49200a, (Window) this.f49201b.get());
     }
 }

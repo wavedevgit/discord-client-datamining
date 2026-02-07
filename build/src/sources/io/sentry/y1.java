@@ -9,57 +9,57 @@ import java.util.Map;
 public final class y1 implements b0, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final k7 f29100d;
+    private final k7 f29148d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p7 f29101e;
+    private final p7 f29149e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final n6 f29102i;
+    private final n6 f29150i;
 
     /* renamed from: o  reason: collision with root package name */
-    private volatile i0 f29103o = null;
+    private volatile i0 f29151o = null;
 
     public y1(k7 k7Var) {
         k7 k7Var2 = (k7) io.sentry.util.y.c(k7Var, "The SentryOptions is required.");
-        this.f29100d = k7Var2;
+        this.f29148d = k7Var2;
         o7 o7Var = new o7(k7Var2);
-        this.f29102i = new n6(o7Var);
-        this.f29101e = new p7(o7Var, k7Var2);
+        this.f29150i = new n6(o7Var);
+        this.f29149e = new p7(o7Var, k7Var2);
     }
 
     private void C(e5 e5Var) {
         if (e5Var.E() == null) {
-            e5Var.V(this.f29100d.getDist());
+            e5Var.V(this.f29148d.getDist());
         }
     }
 
     private void E0(e5 e5Var) {
         if (e5Var.J() == null) {
-            e5Var.b0(this.f29100d.getRelease());
+            e5Var.b0(this.f29148d.getRelease());
         }
     }
 
     private void F0(e5 e5Var) {
         if (e5Var.L() == null) {
-            e5Var.d0(this.f29100d.getSdkVersion());
+            e5Var.d0(this.f29148d.getSdkVersion());
         }
     }
 
     private void I(e5 e5Var) {
         if (e5Var.F() == null) {
-            e5Var.W(this.f29100d.getEnvironment());
+            e5Var.W(this.f29148d.getEnvironment());
         }
     }
 
     private void I0(e5 e5Var) {
         if (e5Var.M() == null) {
-            e5Var.e0(this.f29100d.getServerName());
+            e5Var.e0(this.f29148d.getServerName());
         }
-        if (this.f29100d.isAttachServerName() && e5Var.M() == null) {
+        if (this.f29148d.isAttachServerName() && e5Var.M() == null) {
             m();
-            if (this.f29103o != null) {
-                e5Var.e0(this.f29103o.d());
+            if (this.f29151o != null) {
+                e5Var.e0(this.f29151o.d());
             }
         }
     }
@@ -67,16 +67,16 @@ public final class y1 implements b0, Closeable {
     private void J(SentryEvent sentryEvent) {
         Throwable P = sentryEvent.P();
         if (P != null) {
-            sentryEvent.C0(this.f29102i.d(P));
+            sentryEvent.C0(this.f29150i.d(P));
         }
     }
 
     private void J0(e5 e5Var) {
         if (e5Var.N() == null) {
-            e5Var.g0(new HashMap(this.f29100d.getTags()));
+            e5Var.g0(new HashMap(this.f29148d.getTags()));
             return;
         }
-        for (Map.Entry<String, String> entry : this.f29100d.getTags().entrySet()) {
+        for (Map.Entry<String, String> entry : this.f29148d.getTags().entrySet()) {
             if (!e5Var.N().containsKey(entry.getKey())) {
                 e5Var.f0(entry.getKey(), entry.getValue());
             }
@@ -98,10 +98,10 @@ public final class y1 implements b0, Closeable {
                     }
                 }
             }
-            if (!this.f29100d.isAttachThreads() && !io.sentry.util.n.h(hint, io.sentry.hints.a.class)) {
-                if (this.f29100d.isAttachStacktrace()) {
+            if (!this.f29148d.isAttachThreads() && !io.sentry.util.n.h(hint, io.sentry.hints.a.class)) {
+                if (this.f29148d.isAttachStacktrace()) {
                     if ((r02 == null || r02.isEmpty()) && !n(hint)) {
-                        sentryEvent.H0(this.f29101e.a());
+                        sentryEvent.H0(this.f29149e.a());
                         return;
                     }
                     return;
@@ -114,7 +114,7 @@ public final class y1 implements b0, Closeable {
             } else {
                 z10 = false;
             }
-            sentryEvent.H0(this.f29101e.b(arrayList, z10));
+            sentryEvent.H0(this.f29149e.b(arrayList, z10));
         }
     }
 
@@ -122,12 +122,12 @@ public final class y1 implements b0, Closeable {
         if (io.sentry.util.n.q(hint)) {
             return true;
         }
-        this.f29100d.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying data relevant to the current app execution/version: %s", e5Var.G());
+        this.f29148d.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying data relevant to the current app execution/version: %s", e5Var.G());
         return false;
     }
 
     private void P(SentryEvent sentryEvent) {
-        Map a10 = this.f29100d.getModulesLoader().a();
+        Map a10 = this.f29148d.getModulesLoader().a();
         if (a10 == null) {
             return;
         }
@@ -146,8 +146,8 @@ public final class y1 implements b0, Closeable {
     }
 
     private void m() {
-        if (this.f29103o == null) {
-            this.f29103o = i0.e();
+        if (this.f29151o == null) {
+            this.f29151o = i0.e();
         }
     }
 
@@ -161,7 +161,7 @@ public final class y1 implements b0, Closeable {
             Q = new io.sentry.protocol.h0();
             e5Var.h0(Q);
         }
-        if (Q.j() == null && this.f29100d.isSendDefaultPii()) {
+        if (Q.j() == null && this.f29148d.isSendDefaultPii()) {
             Q.p("{{auto}}");
         }
     }
@@ -181,7 +181,7 @@ public final class y1 implements b0, Closeable {
     }
 
     private void z(e5 e5Var) {
-        io.sentry.protocol.d c10 = io.sentry.protocol.d.c(e5Var.D(), this.f29100d);
+        io.sentry.protocol.d c10 = io.sentry.protocol.d.c(e5Var.D(), this.f29148d);
         if (c10 != null) {
             e5Var.U(c10);
         }
@@ -192,7 +192,7 @@ public final class y1 implements b0, Closeable {
         y(l7Var);
         if (L0(l7Var, hint)) {
             s(l7Var);
-            io.sentry.protocol.r o10 = this.f29100d.getSessionReplay().o();
+            io.sentry.protocol.r o10 = this.f29148d.getSessionReplay().o();
             if (o10 != null) {
                 l7Var.d0(o10);
             }
@@ -202,8 +202,8 @@ public final class y1 implements b0, Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (this.f29103o != null) {
-            this.f29103o.c();
+        if (this.f29151o != null) {
+            this.f29151o.c();
         }
     }
 

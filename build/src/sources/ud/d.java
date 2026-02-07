@@ -37,67 +37,67 @@ import ud.k;
 public class d extends DefaultHandler implements k.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f51330b = Pattern.compile("(\\d+)(?:/(\\d+))?");
+    private static final Pattern f51378b = Pattern.compile("(\\d+)(?:/(\\d+))?");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f51331c = Pattern.compile("CC([1-4])=.*");
+    private static final Pattern f51379c = Pattern.compile("CC([1-4])=.*");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f51332d = Pattern.compile("([1-9]|[1-5][0-9]|6[0-3])=.*");
+    private static final Pattern f51380d = Pattern.compile("([1-9]|[1-5][0-9]|6[0-3])=.*");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f51333e = {-1, 1, 2, 3, 4, 5, 6, 8, 2, 3, 4, 7, 8, 24, 8, 12, 10, 12, 14, 12, 14};
+    private static final int[] f51381e = {-1, 1, 2, 3, 4, 5, 6, 8, 2, 3, 4, 7, 8, 24, 8, 12, 10, 12, 14, 12, 14};
 
     /* renamed from: a  reason: collision with root package name */
-    private final XmlPullParserFactory f51334a;
+    private final XmlPullParserFactory f51382a;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Format f51335a;
+        public final Format f51383a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final s f51336b;
+        public final s f51384b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final k f51337c;
+        public final k f51385c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final String f51338d;
+        public final String f51386d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final ArrayList f51339e;
+        public final ArrayList f51387e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final ArrayList f51340f;
+        public final ArrayList f51388f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final long f51341g;
+        public final long f51389g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final List f51342h;
+        public final List f51390h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final List f51343i;
+        public final List f51391i;
 
         public a(Format format, List list, k kVar, String str, ArrayList arrayList, ArrayList arrayList2, List list2, List list3, long j10) {
-            this.f51335a = format;
-            this.f51336b = s.o(list);
-            this.f51337c = kVar;
-            this.f51338d = str;
-            this.f51339e = arrayList;
-            this.f51340f = arrayList2;
-            this.f51342h = list2;
-            this.f51343i = list3;
-            this.f51341g = j10;
+            this.f51383a = format;
+            this.f51384b = s.o(list);
+            this.f51385c = kVar;
+            this.f51386d = str;
+            this.f51387e = arrayList;
+            this.f51388f = arrayList2;
+            this.f51390h = list2;
+            this.f51391i = list3;
+            this.f51389g = j10;
         }
     }
 
     public d() {
         try {
-            this.f51334a = XmlPullParserFactory.newInstance();
+            this.f51382a = XmlPullParserFactory.newInstance();
         } catch (XmlPullParserException e10) {
             throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e10);
         }
@@ -107,12 +107,12 @@ public class d extends DefaultHandler implements k.a {
         String str;
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
-            if ("urn:scte:dash:cc:cea-608:2015".equals(eVar.f51344a) && (str = eVar.f51345b) != null) {
-                Matcher matcher = f51331c.matcher(str);
+            if ("urn:scte:dash:cc:cea-608:2015".equals(eVar.f51392a) && (str = eVar.f51393b) != null) {
+                Matcher matcher = f51379c.matcher(str);
                 if (matcher.matches()) {
                     return Integer.parseInt(matcher.group(1));
                 }
-                y.i("MpdParser", "Unable to parse CEA-608 channel number from: " + eVar.f51345b);
+                y.i("MpdParser", "Unable to parse CEA-608 channel number from: " + eVar.f51393b);
             }
         }
         return -1;
@@ -122,12 +122,12 @@ public class d extends DefaultHandler implements k.a {
         String str;
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
-            if ("urn:scte:dash:cc:cea-708:2015".equals(eVar.f51344a) && (str = eVar.f51345b) != null) {
-                Matcher matcher = f51332d.matcher(str);
+            if ("urn:scte:dash:cc:cea-708:2015".equals(eVar.f51392a) && (str = eVar.f51393b) != null) {
+                Matcher matcher = f51380d.matcher(str);
                 if (matcher.matches()) {
                     return Integer.parseInt(matcher.group(1));
                 }
-                y.i("MpdParser", "Unable to parse CEA-708 service block number from: " + eVar.f51345b);
+                y.i("MpdParser", "Unable to parse CEA-708 service block number from: " + eVar.f51393b);
             }
         }
         return -1;
@@ -235,9 +235,9 @@ public class d extends DefaultHandler implements k.a {
     protected static String N(List list) {
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
-            String str = eVar.f51344a;
-            if (!"tag:dolby.com,2018:dash:EC3_ExtensionType:2018".equals(str) || !"JOC".equals(eVar.f51345b)) {
-                if ("tag:dolby.com,2014:dash:DolbyDigitalPlusExtensionType:2014".equals(str) && "ec+3".equals(eVar.f51345b)) {
+            String str = eVar.f51392a;
+            if (!"tag:dolby.com,2018:dash:EC3_ExtensionType:2018".equals(str) || !"JOC".equals(eVar.f51393b)) {
+                if ("tag:dolby.com,2014:dash:DolbyDigitalPlusExtensionType:2014".equals(str) && "ec+3".equals(eVar.f51393b)) {
                     return "audio/eac3-joc";
                 }
             } else {
@@ -258,7 +258,7 @@ public class d extends DefaultHandler implements k.a {
     protected static float S(XmlPullParser xmlPullParser, float f10) {
         String attributeValue = xmlPullParser.getAttributeValue(null, "frameRate");
         if (attributeValue != null) {
-            Matcher matcher = f51330b.matcher(attributeValue);
+            Matcher matcher = f51378b.matcher(attributeValue);
             if (matcher.matches()) {
                 int parseInt = Integer.parseInt(matcher.group(1));
                 String group = matcher.group(2);
@@ -282,8 +282,8 @@ public class d extends DefaultHandler implements k.a {
     protected static long W(List list) {
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
-            if (mi.b.a("http://dashif.org/guidelines/last-segment-number", eVar.f51344a)) {
-                return Long.parseLong(eVar.f51345b);
+            if (mi.b.a("http://dashif.org/guidelines/last-segment-number", eVar.f51392a)) {
+                return Long.parseLong(eVar.f51393b);
             }
         }
         return -1L;
@@ -300,7 +300,7 @@ public class d extends DefaultHandler implements k.a {
     protected static int Z(XmlPullParser xmlPullParser) {
         int U = U(xmlPullParser, "value", -1);
         if (U >= 0) {
-            int[] iArr = f51333e;
+            int[] iArr = f51381e;
             if (U < iArr.length) {
                 return iArr[U];
             }
@@ -356,7 +356,7 @@ public class d extends DefaultHandler implements k.a {
         while (true) {
             if (i10 < arrayList.size()) {
                 m.b bVar = (m.b) arrayList.get(i10);
-                if (lc.d.f35974c.equals(bVar.f48840e) && (str = bVar.f48841i) != null) {
+                if (lc.d.f36022c.equals(bVar.f48888e) && (str = bVar.f48889i) != null) {
                     arrayList.remove(i10);
                     break;
                 }
@@ -369,8 +369,8 @@ public class d extends DefaultHandler implements k.a {
         if (str != null) {
             for (int i11 = 0; i11 < arrayList.size(); i11++) {
                 m.b bVar2 = (m.b) arrayList.get(i11);
-                if (lc.d.f35973b.equals(bVar2.f48840e) && bVar2.f48841i == null) {
-                    arrayList.set(i11, new m.b(lc.d.f35974c, str, bVar2.f48842o, bVar2.f48843p));
+                if (lc.d.f36021b.equals(bVar2.f48888e) && bVar2.f48889i == null) {
+                    arrayList.set(i11, new m.b(lc.d.f36022c, str, bVar2.f48890o, bVar2.f48891p));
                 }
             }
         }
@@ -592,16 +592,16 @@ public class d extends DefaultHandler implements k.a {
         ArrayList arrayList = new ArrayList();
         for (int i12 = 0; i12 < list.size(); i12++) {
             b bVar = (b) list.get(i12);
-            String d10 = u0.d(bVar.f51313a, s02);
+            String d10 = u0.d(bVar.f51361a, s02);
             if (attributeValue3 == null) {
                 str = d10;
             } else {
                 str = attributeValue3;
             }
             if (z10) {
-                i10 = bVar.f51315c;
-                i11 = bVar.f51316d;
-                str = bVar.f51314b;
+                i10 = bVar.f51363c;
+                i11 = bVar.f51364d;
+                str = bVar.f51362b;
             }
             arrayList.add(new b(d10, str, i10, i11));
         }
@@ -661,7 +661,7 @@ public class d extends DefaultHandler implements k.a {
     protected byte[] P(XmlPullParser xmlPullParser, ByteArrayOutputStream byteArrayOutputStream) {
         byteArrayOutputStream.reset();
         XmlSerializer newSerializer = Xml.newSerializer();
-        newSerializer.setOutput(byteArrayOutputStream, mi.d.f37171c.name());
+        newSerializer.setOutput(byteArrayOutputStream, mi.d.f37219c.name());
         xmlPullParser.nextToken();
         while (!y0.d(xmlPullParser, "Event")) {
             switch (xmlPullParser.getEventType()) {
@@ -1106,10 +1106,10 @@ public class d extends DefaultHandler implements k.a {
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
             e eVar = (e) list.get(i11);
-            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51344a)) {
-                u02 = g0(eVar.f51345b);
-            } else if (mi.b.a("urn:tva:metadata:cs:AudioPurposeCS:2007", eVar.f51344a)) {
-                u02 = u0(eVar.f51345b);
+            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51392a)) {
+                u02 = g0(eVar.f51393b);
+            } else if (mi.b.a("urn:tva:metadata:cs:AudioPurposeCS:2007", eVar.f51392a)) {
+                u02 = u0(eVar.f51393b);
             }
             i10 |= u02;
         }
@@ -1242,7 +1242,7 @@ public class d extends DefaultHandler implements k.a {
     protected int h0(List list) {
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
-            if (mi.b.a("http://dashif.org/guidelines/trickmode", ((e) list.get(i11)).f51344a)) {
+            if (mi.b.a("http://dashif.org/guidelines/trickmode", ((e) list.get(i11)).f51392a)) {
                 i10 = 16384;
             }
         }
@@ -1257,32 +1257,32 @@ public class d extends DefaultHandler implements k.a {
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
             e eVar = (e) list.get(i11);
-            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51344a)) {
-                i10 |= g0(eVar.f51345b);
+            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51392a)) {
+                i10 |= g0(eVar.f51393b);
             }
         }
         return i10;
     }
 
     protected j j(a aVar, String str, String str2, ArrayList arrayList, ArrayList arrayList2) {
-        Format.b b10 = aVar.f51335a.b();
+        Format.b b10 = aVar.f51383a.b();
         if (str != null) {
             b10.W(str);
         }
-        String str3 = aVar.f51338d;
+        String str3 = aVar.f51386d;
         if (str3 != null) {
             str2 = str3;
         }
-        ArrayList arrayList3 = aVar.f51339e;
+        ArrayList arrayList3 = aVar.f51387e;
         arrayList3.addAll(arrayList);
         if (!arrayList3.isEmpty()) {
             r(arrayList3);
             s(arrayList3);
             b10.O(new rc.m(str2, arrayList3));
         }
-        ArrayList arrayList4 = aVar.f51340f;
+        ArrayList arrayList4 = aVar.f51388f;
         arrayList4.addAll(arrayList2);
-        return j.o(aVar.f51341g, b10.G(), aVar.f51336b, aVar.f51337c, arrayList4, aVar.f51342h, aVar.f51343i, null);
+        return j.o(aVar.f51389g, b10.G(), aVar.f51384b, aVar.f51385c, arrayList4, aVar.f51390h, aVar.f51391i, null);
     }
 
     protected k.e j0(XmlPullParser xmlPullParser, k.e eVar) {
@@ -1290,25 +1290,25 @@ public class d extends DefaultHandler implements k.a {
         long j11;
         long j12;
         if (eVar != null) {
-            j10 = eVar.f51381b;
+            j10 = eVar.f51429b;
         } else {
             j10 = 1;
         }
         long X = X(xmlPullParser, "timescale", j10);
         long j13 = 0;
         if (eVar != null) {
-            j11 = eVar.f51382c;
+            j11 = eVar.f51430c;
         } else {
             j11 = 0;
         }
         long X2 = X(xmlPullParser, "presentationTimeOffset", j11);
         if (eVar != null) {
-            j12 = eVar.f51395d;
+            j12 = eVar.f51443d;
         } else {
             j12 = 0;
         }
         if (eVar != null) {
-            j13 = eVar.f51396e;
+            j13 = eVar.f51444e;
         }
         i iVar = null;
         String attributeValue = xmlPullParser.getAttributeValue(null, "indexRange");
@@ -1319,7 +1319,7 @@ public class d extends DefaultHandler implements k.a {
         }
         long j14 = j13;
         if (eVar != null) {
-            iVar = eVar.f51380a;
+            iVar = eVar.f51428a;
         }
         while (true) {
             xmlPullParser.next();
@@ -1347,25 +1347,25 @@ public class d extends DefaultHandler implements k.a {
         long j18;
         long j19 = 1;
         if (bVar != null) {
-            j15 = bVar.f51381b;
+            j15 = bVar.f51429b;
         } else {
             j15 = 1;
         }
         long X = X(xmlPullParser, "timescale", j15);
         if (bVar != null) {
-            j16 = bVar.f51382c;
+            j16 = bVar.f51430c;
         } else {
             j16 = 0;
         }
         long X2 = X(xmlPullParser, "presentationTimeOffset", j16);
         if (bVar != null) {
-            j17 = bVar.f51384e;
+            j17 = bVar.f51432e;
         } else {
             j17 = -9223372036854775807L;
         }
         long X3 = X(xmlPullParser, "duration", j17);
         if (bVar != null) {
-            j19 = bVar.f51383d;
+            j19 = bVar.f51431d;
         }
         long X4 = X(xmlPullParser, "startNumber", j19);
         long t10 = t(j12, j13);
@@ -1398,13 +1398,13 @@ public class d extends DefaultHandler implements k.a {
         }
         if (bVar != null) {
             if (iVar == null) {
-                iVar = bVar.f51380a;
+                iVar = bVar.f51428a;
             }
             if (list2 == null) {
-                list2 = bVar.f51385f;
+                list2 = bVar.f51433f;
             }
             if (list == null) {
-                list = bVar.f51389j;
+                list = bVar.f51437j;
             }
         }
         return k(iVar, j18, X2, X4, X3, list2, t10, list, j14, j10);
@@ -1424,37 +1424,37 @@ public class d extends DefaultHandler implements k.a {
         d dVar = this;
         long j19 = 1;
         if (cVar != null) {
-            j15 = cVar.f51381b;
+            j15 = cVar.f51429b;
         } else {
             j15 = 1;
         }
         long X = X(xmlPullParser, "timescale", j15);
         if (cVar != null) {
-            j16 = cVar.f51382c;
+            j16 = cVar.f51430c;
         } else {
             j16 = 0;
         }
         long X2 = X(xmlPullParser, "presentationTimeOffset", j16);
         if (cVar != null) {
-            j17 = cVar.f51384e;
+            j17 = cVar.f51432e;
         } else {
             j17 = -9223372036854775807L;
         }
         long X3 = X(xmlPullParser, "duration", j17);
         if (cVar != null) {
-            j19 = cVar.f51383d;
+            j19 = cVar.f51431d;
         }
         long X4 = X(xmlPullParser, "startNumber", j19);
         long W = W(list);
         long t10 = t(j12, j13);
         if (cVar != null) {
-            nVar = cVar.f51391k;
+            nVar = cVar.f51439k;
         } else {
             nVar = null;
         }
         n v02 = dVar.v0(xmlPullParser, "media", nVar);
         if (cVar != null) {
-            nVar2 = cVar.f51390j;
+            nVar2 = cVar.f51438j;
         } else {
             nVar2 = null;
         }
@@ -1485,10 +1485,10 @@ public class d extends DefaultHandler implements k.a {
         }
         if (cVar != null) {
             if (iVar == null) {
-                iVar = cVar.f51380a;
+                iVar = cVar.f51428a;
             }
             if (list2 == null) {
-                list2 = cVar.f51385f;
+                list2 = cVar.f51433f;
             }
         }
         return l(iVar, j18, X2, X4, W, X3, list2, t10, v03, v02, j14, j10);
@@ -1555,8 +1555,8 @@ public class d extends DefaultHandler implements k.a {
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
             e eVar = (e) list.get(i11);
-            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51344a)) {
-                i10 |= o0(eVar.f51345b);
+            if (mi.b.a("urn:mpeg:dash:role:2011", eVar.f51392a)) {
+                i10 |= o0(eVar.f51393b);
             }
         }
         return i10;
@@ -1598,7 +1598,7 @@ public class d extends DefaultHandler implements k.a {
         String str;
         for (int i10 = 0; i10 < list.size(); i10++) {
             e eVar = (e) list.get(i10);
-            if ((mi.b.a("http://dashif.org/thumbnail_tile", eVar.f51344a) || mi.b.a("http://dashif.org/guidelines/thumbnail_tile", eVar.f51344a)) && (str = eVar.f51345b) != null) {
+            if ((mi.b.a("http://dashif.org/thumbnail_tile", eVar.f51392a) || mi.b.a("http://dashif.org/guidelines/thumbnail_tile", eVar.f51392a)) && (str = eVar.f51393b) != null) {
                 String[] d12 = w0.d1(str, "x");
                 if (d12.length == 2) {
                     try {
@@ -1681,7 +1681,7 @@ public class d extends DefaultHandler implements k.a {
     /* renamed from: x */
     public c a(Uri uri, InputStream inputStream) {
         try {
-            XmlPullParser newPullParser = this.f51334a.newPullParser();
+            XmlPullParser newPullParser = this.f51382a.newPullParser();
             newPullParser.setInput(inputStream, null);
             if (newPullParser.next() == 2 && "MPD".equals(newPullParser.getName())) {
                 return Y(newPullParser, uri);
@@ -1876,7 +1876,7 @@ public class d extends DefaultHandler implements k.a {
                                 i12 = U3;
                                 j15 = j21;
                                 i11 = i18;
-                                i10 = p(i19, c0.k(e02.f51335a.f11587w));
+                                i10 = p(i19, c0.k(e02.f51383a.f11587w));
                                 arrayList7 = arrayList13;
                                 arrayList7.add(e02);
                                 xmlPullParser3 = xmlPullParser2;

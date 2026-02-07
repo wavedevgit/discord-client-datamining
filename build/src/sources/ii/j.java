@@ -5,10 +5,10 @@ import java.util.concurrent.atomic.AtomicReference;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicReference f26733a = new AtomicReference(null);
+    private static final AtomicReference f26781a = new AtomicReference(null);
 
     public static void a(i iVar) {
-        AtomicReference atomicReference = f26733a;
+        AtomicReference atomicReference = f26781a;
         while (!p0.d.a(atomicReference, null, iVar) && atomicReference.get() == null) {
         }
     }

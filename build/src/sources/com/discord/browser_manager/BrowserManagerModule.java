@@ -51,14 +51,14 @@ public final class BrowserManagerModule extends NativeBrowserManagerModuleSpec {
     public static final Unit openInAppURL$lambda$1(Promise promise, Exception e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(null, e10.getMessage(), e10, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit openInChromeURL$lambda$0(Promise promise, Exception e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
         promise.reject(null, e10.getMessage(), e10, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @NotNull

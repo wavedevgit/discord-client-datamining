@@ -11,40 +11,40 @@ public class j extends hf.a {
     public static final Parcelable.Creator<j> CREATOR = new p1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f53709d;
+    private final b f53757d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Boolean f53710e;
+    private final Boolean f53758e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b0 f53711i;
+    private final b0 f53759i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final z f53712o;
+    private final z f53760o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private b f53713a;
+        private b f53761a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Boolean f53714b;
+        private Boolean f53762b;
 
         /* renamed from: c  reason: collision with root package name */
-        private z f53715c;
+        private z f53763c;
 
         public j a() {
             String bVar;
             String zVar;
-            b bVar2 = this.f53713a;
+            b bVar2 = this.f53761a;
             if (bVar2 == null) {
                 bVar = null;
             } else {
                 bVar = bVar2.toString();
             }
-            Boolean bool = this.f53714b;
-            z zVar2 = this.f53715c;
+            Boolean bool = this.f53762b;
+            z zVar2 = this.f53763c;
             if (zVar2 == null) {
                 zVar = null;
             } else {
@@ -54,17 +54,17 @@ public class j extends hf.a {
         }
 
         public a b(b bVar) {
-            this.f53713a = bVar;
+            this.f53761a = bVar;
             return this;
         }
 
         public a c(Boolean bool) {
-            this.f53714b = bool;
+            this.f53762b = bool;
             return this;
         }
 
         public a d(z zVar) {
-            this.f53715c = zVar;
+            this.f53763c = zVar;
             return this;
         }
     }
@@ -83,22 +83,22 @@ public class j extends hf.a {
                 throw new IllegalArgumentException(e10);
             }
         }
-        this.f53709d = a10;
-        this.f53710e = bool;
+        this.f53757d = a10;
+        this.f53758e = bool;
         if (str2 == null) {
             a11 = null;
         } else {
             a11 = b0.a(str2);
         }
-        this.f53711i = a11;
+        this.f53759i = a11;
         if (str3 != null) {
             zVar = z.a(str3);
         }
-        this.f53712o = zVar;
+        this.f53760o = zVar;
     }
 
     public String b() {
-        b bVar = this.f53709d;
+        b bVar = this.f53757d;
         if (bVar == null) {
             return null;
         }
@@ -106,13 +106,13 @@ public class j extends hf.a {
     }
 
     public Boolean c() {
-        return this.f53710e;
+        return this.f53758e;
     }
 
     public z d() {
-        z zVar = this.f53712o;
+        z zVar = this.f53760o;
         if (zVar == null) {
-            Boolean bool = this.f53710e;
+            Boolean bool = this.f53758e;
             if (bool != null && bool.booleanValue()) {
                 return z.RESIDENT_KEY_REQUIRED;
             }
@@ -134,23 +134,23 @@ public class j extends hf.a {
             return false;
         }
         j jVar = (j) obj;
-        if (!gf.o.a(this.f53709d, jVar.f53709d) || !gf.o.a(this.f53710e, jVar.f53710e) || !gf.o.a(this.f53711i, jVar.f53711i) || !gf.o.a(d(), jVar.d())) {
+        if (!gf.o.a(this.f53757d, jVar.f53757d) || !gf.o.a(this.f53758e, jVar.f53758e) || !gf.o.a(this.f53759i, jVar.f53759i) || !gf.o.a(d(), jVar.d())) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f53709d, this.f53710e, this.f53711i, d());
+        return gf.o.b(this.f53757d, this.f53758e, this.f53759i, d());
     }
 
     public final String toString() {
-        z zVar = this.f53712o;
-        b0 b0Var = this.f53711i;
-        String valueOf = String.valueOf(this.f53709d);
+        z zVar = this.f53760o;
+        b0 b0Var = this.f53759i;
+        String valueOf = String.valueOf(this.f53757d);
         String valueOf2 = String.valueOf(b0Var);
         String valueOf3 = String.valueOf(zVar);
-        return "AuthenticatorSelectionCriteria{\n attachment=" + valueOf + ", \n requireResidentKey=" + this.f53710e + ", \n requireUserVerification=" + valueOf2 + ", \n residentKeyRequirement=" + valueOf3 + "\n }";
+        return "AuthenticatorSelectionCriteria{\n attachment=" + valueOf + ", \n requireResidentKey=" + this.f53758e + ", \n requireUserVerification=" + valueOf2 + ", \n residentKeyRequirement=" + valueOf3 + "\n }";
     }
 
     @Override // android.os.Parcelable
@@ -159,7 +159,7 @@ public class j extends hf.a {
         int a10 = hf.c.a(parcel);
         hf.c.s(parcel, 2, b(), false);
         hf.c.d(parcel, 3, c(), false);
-        b0 b0Var2 = this.f53711i;
+        b0 b0Var2 = this.f53759i;
         if (b0Var2 == null) {
             b0Var = null;
         } else {

@@ -3,10 +3,10 @@ package qv;
 public class v extends r {
 
     /* renamed from: f  reason: collision with root package name */
-    private String f48295f;
+    private String f48343f;
 
     public v(String str) {
-        this.f48295f = str;
+        this.f48343f = str;
     }
 
     @Override // qv.r

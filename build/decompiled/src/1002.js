@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function() {
-        _fun10331: for (var _fun10331_ip = 0;;) switch (_fun10331_ip) {
+        _fun10333: for (var _fun10333_ip = 0;;) switch (_fun10333_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var2)();
                 var2 = var1.__SENTRY__;
                 if (var2) {
-                    _fun10331_ip = 45;
-                    continue _fun10331
+                    _fun10333_ip = 45;
+                    continue _fun10333
                 }
             case 43:
                 var2 = {};
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.SDK_VERSION;
                 var0 = var2[var0];
                 if (var0) {
-                    _fun10331_ip = 98;
-                    continue _fun10331
+                    _fun10333_ip = 98;
+                    continue _fun10333
                 }
             case 96:
                 var0 = {};

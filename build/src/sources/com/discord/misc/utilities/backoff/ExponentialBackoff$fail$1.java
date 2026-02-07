@@ -81,7 +81,7 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
         L3a:
             return r0
         L3b:
-            kotlin.Unit r7 = kotlin.Unit.f32008a
+            kotlin.Unit r7 = kotlin.Unit.f32056a
             return r7
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.misc.utilities.backoff.ExponentialBackoff$fail$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -89,6 +89,6 @@ public final class ExponentialBackoff$fail$1 extends k implements Function2<Coro
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ExponentialBackoff$fail$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

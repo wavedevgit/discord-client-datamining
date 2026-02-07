@@ -7,7 +7,7 @@ import java.util.Map;
 public abstract class d extends rt.e {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f50157d;
+    private static final Map f50205d;
 
     static {
         HashMap hashMap = new HashMap();
@@ -16,7 +16,7 @@ public abstract class d extends rt.e {
         hashMap.put("HOUR_FROM_0_TO_24", "L_hour");
         hashMap.put("DAY_OF_MONTH", "L_day");
         hashMap.put("DAY_OF_DIVISION", "L_day");
-        f50157d = Collections.unmodifiableMap(hashMap);
+        f50205d = Collections.unmodifiableMap(hashMap);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

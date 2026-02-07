@@ -34,7 +34,7 @@ public final class MediaPlayerViewWillAppear implements ReactEvent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.b(o.f48044e, new Function0() { // from class: l7.b
+    private static final Lazy[] $childSerializers = {null, l.b(o.f48092e, new Function0() { // from class: l7.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -69,7 +69,7 @@ public final class MediaPlayerViewWillAppear implements ReactEvent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f31041a);
+        return new f(n2.f31089a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */

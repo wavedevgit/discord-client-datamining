@@ -23,22 +23,22 @@ public class JvmNameResolverBase implements NameResolver {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f33810d;
+    private static final String f33858d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f33811e;
+    private static final List f33859e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f33812f;
+    private static final Map f33860f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String[] f33813a;
+    private final String[] f33861a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f33814b;
+    private final Set f33862b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f33815c;
+    private final List f33863c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -74,24 +74,24 @@ public class JvmNameResolverBase implements NameResolver {
 
     static {
         String x02 = CollectionsKt.x0(CollectionsKt.o('k', 'o', 't', 'l', 'i', 'n'), "", null, null, 0, null, null, 62, null);
-        f33810d = x02;
+        f33858d = x02;
         List o10 = CollectionsKt.o(x02 + "/Any", x02 + "/Nothing", x02 + "/Unit", x02 + "/Throwable", x02 + "/Number", x02 + "/Byte", x02 + "/Double", x02 + "/Float", x02 + "/Int", x02 + "/Long", x02 + "/Short", x02 + "/Boolean", x02 + "/Char", x02 + "/CharSequence", x02 + "/String", x02 + "/Comparable", x02 + "/Enum", x02 + "/Array", x02 + "/ByteArray", x02 + "/DoubleArray", x02 + "/FloatArray", x02 + "/IntArray", x02 + "/LongArray", x02 + "/ShortArray", x02 + "/BooleanArray", x02 + "/CharArray", x02 + "/Cloneable", x02 + "/Annotation", x02 + "/collections/Iterable", x02 + "/collections/MutableIterable", x02 + "/collections/Collection", x02 + "/collections/MutableCollection", x02 + "/collections/List", x02 + "/collections/MutableList", x02 + "/collections/Set", x02 + "/collections/MutableSet", x02 + "/collections/Map", x02 + "/collections/MutableMap", x02 + "/collections/Map.Entry", x02 + "/collections/MutableMap.MutableEntry", x02 + "/collections/Iterator", x02 + "/collections/MutableIterator", x02 + "/collections/ListIterator", x02 + "/collections/MutableListIterator");
-        f33811e = o10;
+        f33859e = o10;
         Iterable<IndexedValue> n12 = CollectionsKt.n1(o10);
         LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(CollectionsKt.w(n12, 10)), 16));
         for (IndexedValue indexedValue : n12) {
             linkedHashMap.put((String) indexedValue.d(), Integer.valueOf(indexedValue.c()));
         }
-        f33812f = linkedHashMap;
+        f33860f = linkedHashMap;
     }
 
     public JvmNameResolverBase(@NotNull String[] strings, @NotNull Set<Integer> localNameIndices, @NotNull List<JvmProtoBuf.StringTableTypes.Record> records) {
         Intrinsics.checkNotNullParameter(strings, "strings");
         Intrinsics.checkNotNullParameter(localNameIndices, "localNameIndices");
         Intrinsics.checkNotNullParameter(records, "records");
-        this.f33813a = strings;
-        this.f33814b = localNameIndices;
-        this.f33815c = records;
+        this.f33861a = strings;
+        this.f33862b = localNameIndices;
+        this.f33863c = records;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver
@@ -104,19 +104,19 @@ public class JvmNameResolverBase implements NameResolver {
     @NotNull
     public String getString(int i10) {
         String str;
-        JvmProtoBuf.StringTableTypes.Record record = (JvmProtoBuf.StringTableTypes.Record) this.f33815c.get(i10);
+        JvmProtoBuf.StringTableTypes.Record record = (JvmProtoBuf.StringTableTypes.Record) this.f33863c.get(i10);
         if (record.hasString()) {
             str = record.getString();
         } else {
             if (record.hasPredefinedIndex()) {
-                List list = f33811e;
+                List list = f33859e;
                 int size = list.size();
                 int predefinedIndex = record.getPredefinedIndex();
                 if (predefinedIndex >= 0 && predefinedIndex < size) {
                     str = (String) list.get(record.getPredefinedIndex());
                 }
             }
-            str = this.f33813a[i10];
+            str = this.f33861a[i10];
         }
         if (record.getSubstringIndexCount() >= 2) {
             List<Integer> substringIndexList = record.getSubstringIndexList();
@@ -170,6 +170,6 @@ public class JvmNameResolverBase implements NameResolver {
 
     @Override // kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver
     public boolean isLocalClassName(int i10) {
-        return this.f33814b.contains(Integer.valueOf(i10));
+        return this.f33862b.contains(Integer.valueOf(i10));
     }
 }

@@ -9,25 +9,25 @@ import zs.c;
 public final class y extends zs.a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f56615b = new b(null);
+    public static final b f56663b = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final bt.f f56616a;
+    private final bt.f f56664a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements zs.b, c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final bt.d f56617a;
+        private final bt.d f56665a;
 
         public a(bt.d actualBuilder) {
             Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f56617a = actualBuilder;
+            this.f56665a = actualBuilder;
         }
 
         @Override // zs.b
         public bt.d a() {
-            return this.f56617a;
+            return this.f56665a;
         }
 
         @Override // zs.b
@@ -98,19 +98,19 @@ public final class y extends zs.a {
     public y(bt.f actualFormat) {
         super(null);
         Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f56616a = actualFormat;
+        this.f56664a = actualFormat;
     }
 
     @Override // zs.a
     public bt.f b() {
-        return this.f56616a;
+        return this.f56664a;
     }
 
     @Override // zs.a
     /* renamed from: e */
     public v c() {
         v vVar;
-        vVar = z.f56620c;
+        vVar = z.f56668c;
         return vVar;
     }
 

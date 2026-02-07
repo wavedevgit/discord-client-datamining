@@ -19,7 +19,7 @@ public final class ParagraphContentNode extends ContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.q
+    private static final Lazy[] $childSerializers = {qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.q
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

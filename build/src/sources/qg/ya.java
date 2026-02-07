@@ -5,30 +5,30 @@ import yi.c;
 final class ya implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ya f47749a = new ya();
+    static final ya f47797a = new ya();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f47750b;
+    private static final yi.c f47798b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f47751c;
+    private static final yi.c f47799c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f47752d;
+    private static final yi.c f47800d;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f47750b = a10.b(v1Var.b()).a();
+        f47798b = a10.b(v1Var.b()).a();
         c.b a11 = yi.c.a("imageInfo");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f47751c = a11.b(v1Var2.b()).a();
+        f47799c = a11.b(v1Var2.b()).a();
         c.b a12 = yi.c.a("recognizerOptions");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f47752d = a12.b(v1Var3.b()).a();
+        f47800d = a12.b(v1Var3.b()).a();
     }
 
     private ya() {
@@ -38,8 +38,8 @@ final class ya implements yi.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         rh rhVar = (rh) obj;
         yi.e eVar = (yi.e) obj2;
-        eVar.a(f47750b, rhVar.b());
-        eVar.a(f47751c, rhVar.a());
-        eVar.a(f47752d, rhVar.c());
+        eVar.a(f47798b, rhVar.b());
+        eVar.a(f47799c, rhVar.a());
+        eVar.a(f47800d, rhVar.c());
     }
 }

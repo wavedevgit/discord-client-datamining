@@ -6,15 +6,15 @@ import gf.c;
 public final class g0 implements c.b {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ ff.k f25071a;
+    final /* synthetic */ ff.k f25119a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g0(ff.k kVar) {
-        this.f25071a = kVar;
+        this.f25119a = kVar;
     }
 
     @Override // gf.c.b
     public final void h(com.google.android.gms.common.b bVar) {
-        this.f25071a.h(bVar);
+        this.f25119a.h(bVar);
     }
 }

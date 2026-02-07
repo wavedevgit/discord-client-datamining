@@ -366,7 +366,7 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
 
         private void H(Context context) {
             CaptioningManager captioningManager;
-            if ((w0.f39012a >= 23 || Looper.myLooper() != null) && (captioningManager = (CaptioningManager) context.getSystemService("captioning")) != null && captioningManager.isEnabled()) {
+            if ((w0.f39060a >= 23 || Looper.myLooper() != null) && (captioningManager = (CaptioningManager) context.getSystemService("captioning")) != null && captioningManager.isEnabled()) {
                 this.f13068t = 1088;
                 Locale locale = captioningManager.getLocale();
                 if (locale != null) {
@@ -396,7 +396,7 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
         }
 
         public a G(Context context) {
-            if (w0.f39012a >= 19) {
+            if (w0.f39060a >= 19) {
                 H(context);
             }
             return this;
@@ -458,12 +458,12 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
             if (parcelableArrayList == null) {
                 d10 = s.t();
             } else {
-                d10 = ne.d.d(o.f29860p, parcelableArrayList);
+                d10 = ne.d.d(o.f29908p, parcelableArrayList);
             }
             this.f13073y = new HashMap();
             for (int i10 = 0; i10 < d10.size(); i10++) {
                 o oVar = (o) d10.get(i10);
-                this.f13073y.put(oVar.f29861d, oVar);
+                this.f13073y.put(oVar.f29909d, oVar);
             }
             int[] iArr = (int[]) mi.h.a(bundle.getIntArray(TrackSelectionParameters.f13030k0), new int[0]);
             this.f13074z = new HashSet();

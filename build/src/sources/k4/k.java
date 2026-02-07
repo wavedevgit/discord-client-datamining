@@ -5,12 +5,12 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f31435a;
+    private static final String f31483a;
 
     static {
         String i10 = m.i("InputMerger");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"InputMerger\")");
-        f31435a = i10;
+        f31483a = i10;
     }
 
     public static final i a(String className) {
@@ -21,7 +21,7 @@ public abstract class k {
             return (i) newInstance;
         } catch (Exception e10) {
             m e11 = m.e();
-            String str = f31435a;
+            String str = f31483a;
             e11.d(str, "Trouble instantiating " + className, e10);
             return null;
         }

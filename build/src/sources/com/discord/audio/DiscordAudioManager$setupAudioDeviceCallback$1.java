@@ -27,14 +27,14 @@ public final class DiscordAudioManager$setupAudioDeviceCallback$1 extends AudioD
     public static final Unit onAudioDevicesAdded$lambda$1(DiscordAudioManager discordAudioManager, DiscordAudioManagerListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         listener.onAudioDevicesUpdated(CollectionsKt.h1(discordAudioManager.getAudioDevices()));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onAudioDevicesRemoved$lambda$4(DiscordAudioManager discordAudioManager, DiscordAudioManagerListener listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         listener.onAudioDevicesUpdated(CollectionsKt.h1(discordAudioManager.getAudioDevices()));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // android.media.AudioDeviceCallback

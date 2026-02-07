@@ -60,7 +60,7 @@ public final class DebouncedFlow<T> {
                 if (invokeSuspend$suspendConversion0 == wr.b.f()) {
                     return invokeSuspend$suspendConversion0;
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
 
             public final boolean equals(Object obj) {
@@ -98,7 +98,7 @@ public final class DebouncedFlow<T> {
                 if (invokeSuspend$suspendConversion1 == wr.b.f()) {
                     return invokeSuspend$suspendConversion1;
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
 
             public final boolean equals(Object obj) {
@@ -131,13 +131,13 @@ public final class DebouncedFlow<T> {
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ Object invokeSuspend$suspendConversion0(Function1 function1, Object obj, Continuation continuation) {
             function1.invoke(obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ Object invokeSuspend$suspendConversion1(Function1 function1, Object obj, Continuation continuation) {
             function1.invoke(obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -206,7 +206,7 @@ public final class DebouncedFlow<T> {
             L55:
                 return r0
             L56:
-                kotlin.Unit r7 = kotlin.Unit.f32008a
+                kotlin.Unit r7 = kotlin.Unit.f32056a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.discord.recycler_view.scroll.DebouncedFlow.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -214,7 +214,7 @@ public final class DebouncedFlow<T> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

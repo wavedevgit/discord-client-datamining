@@ -6,47 +6,47 @@ import kotlin.jvm.internal.Intrinsics;
 final class Java16SealedRecordLoader {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Java16SealedRecordLoader f32619a = new Java16SealedRecordLoader();
+    public static final Java16SealedRecordLoader f32667a = new Java16SealedRecordLoader();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Cache f32620b;
+    private static Cache f32668b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Cache {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f32621a;
+        private final Method f32669a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f32622b;
+        private final Method f32670b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Method f32623c;
+        private final Method f32671c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Method f32624d;
+        private final Method f32672d;
 
         public Cache(Method method, Method method2, Method method3, Method method4) {
-            this.f32621a = method;
-            this.f32622b = method2;
-            this.f32623c = method3;
-            this.f32624d = method4;
+            this.f32669a = method;
+            this.f32670b = method2;
+            this.f32671c = method3;
+            this.f32672d = method4;
         }
 
         public final Method getGetPermittedSubclasses() {
-            return this.f32622b;
+            return this.f32670b;
         }
 
         public final Method getGetRecordComponents() {
-            return this.f32624d;
+            return this.f32672d;
         }
 
         public final Method isRecord() {
-            return this.f32623c;
+            return this.f32671c;
         }
 
         public final Method isSealed() {
-            return this.f32621a;
+            return this.f32669a;
         }
     }
 
@@ -62,10 +62,10 @@ final class Java16SealedRecordLoader {
     }
 
     private final Cache b() {
-        Cache cache = f32620b;
+        Cache cache = f32668b;
         if (cache == null) {
             Cache a10 = a();
-            f32620b = a10;
+            f32668b = a10;
             return a10;
         }
         return cache;

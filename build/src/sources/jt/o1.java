@@ -17,20 +17,20 @@ import kotlinx.serialization.encoding.Encoder;
 public final class o1 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f31047a;
+    private final Object f31095a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f31048b;
+    private List f31096b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f31049c;
+    private final Lazy f31097c;
 
     public o1(final String serialName, Object objectInstance) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(objectInstance, "objectInstance");
-        this.f31047a = objectInstance;
-        this.f31048b = CollectionsKt.l();
-        this.f31049c = qr.l.b(qr.o.f48044e, new Function0() { // from class: jt.m1
+        this.f31095a = objectInstance;
+        this.f31096b = CollectionsKt.l();
+        this.f31097c = qr.l.b(qr.o.f48092e, new Function0() { // from class: jt.m1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor c10;
@@ -42,7 +42,7 @@ public final class o1 implements KSerializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor c(String str, final o1 o1Var) {
-        return ht.j.d(str, l.d.f26492a, new SerialDescriptor[0], new Function1() { // from class: jt.n1
+        return ht.j.d(str, l.d.f26540a, new SerialDescriptor[0], new Function1() { // from class: jt.n1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit d10;
@@ -55,8 +55,8 @@ public final class o1 implements KSerializer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d(o1 o1Var, ht.a buildSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        buildSerialDescriptor.h(o1Var.f31048b);
-        return Unit.f32008a;
+        buildSerialDescriptor.h(o1Var.f31096b);
+        return Unit.f32056a;
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -66,16 +66,16 @@ public final class o1 implements KSerializer {
         SerialDescriptor descriptor = getDescriptor();
         kotlinx.serialization.encoding.c b10 = decoder.b(descriptor);
         if (b10.p() || (o10 = b10.o(getDescriptor())) == -1) {
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             b10.c(descriptor);
-            return this.f31047a;
+            return this.f31095a;
         }
         throw new ft.n("Unexpected index " + o10);
     }
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) this.f31049c.getValue();
+        return (SerialDescriptor) this.f31097c.getValue();
     }
 
     @Override // ft.o
@@ -91,6 +91,6 @@ public final class o1 implements KSerializer {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(objectInstance, "objectInstance");
         Intrinsics.checkNotNullParameter(classAnnotations, "classAnnotations");
-        this.f31048b = kotlin.collections.i.e(classAnnotations);
+        this.f31096b = kotlin.collections.i.e(classAnnotations);
     }
 }

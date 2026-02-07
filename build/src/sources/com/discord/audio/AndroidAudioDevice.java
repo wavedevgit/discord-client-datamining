@@ -32,7 +32,7 @@ public final class AndroidAudioDevice {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.b(o.f48044e, new Function0() { // from class: com.discord.audio.a
+    private static final Lazy[] $childSerializers = {null, l.b(o.f48092e, new Function0() { // from class: com.discord.audio.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2.reflectionLongConvert = var0;
     var1 = function arg0, arg1() {
-        _fun14951: for (var _fun14951_ip = 0;;) switch (_fun14951_ip) {
+        _fun14954: for (var _fun14954_ip = 0;;) switch (_fun14954_ip) {
             case 0:
                 var1 = arg0;
                 var2 = arg1;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.LongType;
                 var3 = var3.BIGINT;
                 if (!(var3 !== var2)) {
-                    _fun14951_ip = 102;
-                    continue _fun14951
+                    _fun14954_ip = 102;
+                    continue _fun14954
                 }
             case 46:
                 var3 = _closure1_slot0;
@@ -40,8 +40,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.LongType;
                 var0 = var0.NUMBER;
                 if (!(var0 !== var2)) {
-                    _fun14951_ip = 90;
-                    continue _fun14951
+                    _fun14954_ip = 90;
+                    continue _fun14954
                 }
             case 79:
                 var0 = var1.toString;

@@ -12,34 +12,34 @@ import java.util.TimeZone;
 public class g implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f26141a;
+    private final i f26189a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n f26142b;
+    private final n f26190b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f26143c;
+    private final e f26191c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f26144d;
+    private final View f26192d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c f26145e;
+    private c f26193e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Set f26146f = new HashSet();
+    private Set f26194f = new HashSet();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(i iVar, n nVar, e eVar, View view) {
-        this.f26141a = iVar;
-        this.f26143c = eVar;
-        this.f26142b = nVar;
-        this.f26144d = view;
+        this.f26189a = iVar;
+        this.f26191c = eVar;
+        this.f26190b = nVar;
+        this.f26192d = view;
     }
 
     private boolean d() {
         SimpleDateFormat f10 = f();
-        String r10 = this.f26141a.r();
+        String r10 = this.f26189a.r();
         try {
             f10.setLenient(false);
             f10.parse(r10);
@@ -54,8 +54,8 @@ public class g implements f {
         f10.setLenient(false);
         for (int i10 = 0; i10 < 10; i10++) {
             try {
-                String s10 = this.f26141a.s(i10);
-                Calendar calendar = Calendar.getInstance(this.f26142b.D());
+                String s10 = this.f26189a.s(i10);
+                Calendar calendar = Calendar.getInstance(this.f26190b.D());
                 calendar.setTime(f10.parse(s10));
                 return calendar;
             } catch (ParseException unused) {
@@ -65,16 +65,16 @@ public class g implements f {
     }
 
     private SimpleDateFormat f() {
-        TimeZone D = this.f26142b.D();
-        SimpleDateFormat d10 = this.f26143c.d();
+        TimeZone D = this.f26190b.D();
+        SimpleDateFormat d10 = this.f26191c.d();
         d10.setTimeZone(D);
         return d10;
     }
 
     private Calendar g() {
         SimpleDateFormat f10 = f();
-        String r10 = this.f26141a.r();
-        Calendar calendar = Calendar.getInstance(this.f26142b.D());
+        String r10 = this.f26189a.r();
+        Calendar calendar = Calendar.getInstance(this.f26190b.D());
         try {
             f10.setLenient(true);
             calendar.setTime(f10.parse(r10));
@@ -87,11 +87,11 @@ public class g implements f {
 
     @Override // hl.f
     public void a(jl.g gVar) {
-        if (!this.f26141a.A()) {
+        if (!this.f26189a.A()) {
             if (!d()) {
                 Calendar e10 = e();
                 if (e10 != null) {
-                    this.f26143c.c(e10);
+                    this.f26191c.c(e10);
                     return;
                 }
                 return;
@@ -100,40 +100,40 @@ public class g implements f {
             if (g10 == null) {
                 return;
             }
-            Calendar x10 = this.f26142b.x();
+            Calendar x10 = this.f26190b.x();
             if (x10 != null && g10.before(x10)) {
-                this.f26143c.c(x10);
+                this.f26191c.c(x10);
                 return;
             }
-            Calendar w10 = this.f26142b.w();
+            Calendar w10 = this.f26190b.w();
             if (w10 != null && g10.after(w10)) {
-                this.f26143c.c(w10);
+                this.f26191c.c(w10);
                 return;
             }
-            String e11 = this.f26143c.e();
-            this.f26143c.i(g10);
-            com.henninghall.date_picker.e.d(g10, e11, this.f26142b.q(), this.f26144d);
+            String e11 = this.f26191c.e();
+            this.f26191c.i(g10);
+            com.henninghall.date_picker.e.d(g10, e11, this.f26190b.q(), this.f26192d);
         }
     }
 
     @Override // hl.f
     public void b(jl.g gVar) {
         c cVar;
-        if (this.f26141a.A()) {
+        if (this.f26189a.A()) {
             cVar = c.spinning;
         } else {
             cVar = c.idle;
         }
-        if (!cVar.equals(this.f26145e)) {
-            this.f26145e = cVar;
-            com.henninghall.date_picker.e.e(cVar, this.f26142b.q(), this.f26144d);
-            for (d dVar : this.f26146f) {
+        if (!cVar.equals(this.f26193e)) {
+            this.f26193e = cVar;
+            com.henninghall.date_picker.e.e(cVar, this.f26190b.q(), this.f26192d);
+            for (d dVar : this.f26194f) {
                 dVar.a(cVar);
             }
         }
     }
 
     public void c(d dVar) {
-        this.f26146f.add(dVar);
+        this.f26194f.add(dVar);
     }
 }

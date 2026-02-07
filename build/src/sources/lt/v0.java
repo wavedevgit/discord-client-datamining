@@ -49,18 +49,18 @@ public final class v0 extends t0 {
             }
             i10 = i13;
         }
-        this.f36632a = D().length();
+        this.f36680a = D().length();
         a.x(this, "Expected end of the block comment: \"*/\", but had EOF instead", 0, null, 6, null);
         throw new qr.h();
     }
 
     private final int X(int i10) {
-        if (D().length() - i10 > this.f36719g) {
+        if (D().length() - i10 > this.f36767g) {
             return i10;
         }
-        this.f36632a = i10;
+        this.f36680a = i10;
         u();
-        if (this.f36632a == 0 && D().length() != 0) {
+        if (this.f36680a == 0 && D().length() != 0) {
             return 0;
         }
         return -1;
@@ -72,7 +72,7 @@ public final class v0 extends t0 {
         d D = D();
         int K = K();
         if (K < D.length() && K != -1) {
-            this.f36632a = K;
+            this.f36680a = K;
             return b.a(D.charAt(K));
         }
         return (byte) 10;
@@ -81,7 +81,7 @@ public final class v0 extends t0 {
     @Override // lt.t0, lt.a
     public int K() {
         int I;
-        int i10 = this.f36632a;
+        int i10 = this.f36680a;
         while (true) {
             I = I(i10);
             if (I != -1) {
@@ -104,7 +104,7 @@ public final class v0 extends t0 {
                 break;
             }
         }
-        this.f36632a = I;
+        this.f36680a = I;
         return I;
     }
 
@@ -124,7 +124,7 @@ public final class v0 extends t0 {
         d D = D();
         int K = K();
         if (K < D.length() && K != -1) {
-            this.f36632a = K + 1;
+            this.f36680a = K + 1;
             return b.a(D.charAt(K));
         }
         return (byte) 10;
@@ -136,11 +136,11 @@ public final class v0 extends t0 {
         d D = D();
         int K = K();
         if (K >= D.length() || K == -1) {
-            this.f36632a = -1;
+            this.f36680a = -1;
             Q(c10);
         }
         char charAt = D.charAt(K);
-        this.f36632a = K + 1;
+        this.f36680a = K + 1;
         if (charAt == c10) {
             return;
         }

@@ -5,10 +5,10 @@ import br.g;
 public final class c implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f50001a;
+    private final b f50049a;
 
     public c(b bVar) {
-        this.f50001a = bVar;
+        this.f50049a = bVar;
     }
 
     public static c a(b bVar) {
@@ -22,6 +22,6 @@ public final class c implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public a get() {
-        return b(this.f50001a);
+        return b(this.f50049a);
     }
 }

@@ -47,7 +47,7 @@ public /* synthetic */ class CommandMentionContentNode$$serializer implements h0
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = CommandMentionContentNode.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{ChannelId$$serializer.INSTANCE, n2Var, n2Var, n2Var, lazyArr[4].getValue()};
     }
 

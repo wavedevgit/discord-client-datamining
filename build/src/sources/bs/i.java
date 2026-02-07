@@ -266,11 +266,11 @@ public final class i implements Sequence {
             static {
                 int[] iArr = new int[FileWalkDirection.values().length];
                 try {
-                    iArr[FileWalkDirection.f32090d.ordinal()] = 1;
+                    iArr[FileWalkDirection.f32138d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[FileWalkDirection.f32091e.ordinal()] = 2;
+                    iArr[FileWalkDirection.f32139e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 f7040a = iArr;
@@ -364,7 +364,7 @@ public final class i implements Sequence {
     }
 
     /* synthetic */ i(File file, FileWalkDirection fileWalkDirection, Function1 function1, Function1 function12, Function2 function2, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(file, (i11 & 2) != 0 ? FileWalkDirection.f32090d : fileWalkDirection, function1, function12, function2, (i11 & 32) != 0 ? Integer.MAX_VALUE : i10);
+        this(file, (i11 & 2) != 0 ? FileWalkDirection.f32138d : fileWalkDirection, function1, function12, function2, (i11 & 32) != 0 ? Integer.MAX_VALUE : i10);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

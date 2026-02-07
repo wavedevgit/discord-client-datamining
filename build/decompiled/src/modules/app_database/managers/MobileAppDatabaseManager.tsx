@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = {};
     var6 = 'GuildsRequiringChannelSync';
     var1.name = var6;
-    var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'CHANNEL_SYNC'];
+    var6 = ['BACKGROUND_SYNC', 'CONNECTION_OPEN', 'GUILD_CREATE', 'CHANNEL_SYNC', 'UNMARK_RESYNC_GUILDS'];
     var1.actions = var6;
     var6 = function() {
         var2 = _closure1_slot0;
@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12224, 12226, 12227, 4746, 12229, 12230, 12231, 5601, 12232, 12233, 4367, 12234, 12235, 4383, 4382, 4384, 11367, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12270, 12272, 12273, 4745, 12275, 12276, 12277, 5648, 12278, 12279, 4366, 12280, 12281, 4382, 4381, 4383, 11412, 2]);

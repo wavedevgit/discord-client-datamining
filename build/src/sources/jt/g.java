@@ -6,45 +6,45 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends d2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean[] f30999a;
+    private boolean[] f31047a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f31000b;
+    private int f31048b;
 
     public g(boolean[] bufferWithData) {
         Intrinsics.checkNotNullParameter(bufferWithData, "bufferWithData");
-        this.f30999a = bufferWithData;
-        this.f31000b = bufferWithData.length;
+        this.f31047a = bufferWithData;
+        this.f31048b = bufferWithData.length;
         b(10);
     }
 
     @Override // jt.d2
     public void b(int i10) {
-        boolean[] zArr = this.f30999a;
+        boolean[] zArr = this.f31047a;
         if (zArr.length < i10) {
             boolean[] copyOf = Arrays.copyOf(zArr, kotlin.ranges.d.d(i10, zArr.length * 2));
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
-            this.f30999a = copyOf;
+            this.f31047a = copyOf;
         }
     }
 
     @Override // jt.d2
     public int d() {
-        return this.f31000b;
+        return this.f31048b;
     }
 
     public final void e(boolean z10) {
         d2.c(this, 0, 1, null);
-        boolean[] zArr = this.f30999a;
+        boolean[] zArr = this.f31047a;
         int d10 = d();
-        this.f31000b = d10 + 1;
+        this.f31048b = d10 + 1;
         zArr[d10] = z10;
     }
 
     @Override // jt.d2
     /* renamed from: f */
     public boolean[] a() {
-        boolean[] copyOf = Arrays.copyOf(this.f30999a, d());
+        boolean[] copyOf = Arrays.copyOf(this.f31047a, d());
         Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
         return copyOf;
     }

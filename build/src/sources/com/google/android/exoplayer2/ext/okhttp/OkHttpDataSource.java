@@ -192,7 +192,7 @@ public class OkHttpDataSource extends f implements h {
             if (bArr != null) {
                 requestBody = RequestBody.create((MediaType) null, bArr);
             } else if (aVar.f13267c == 2) {
-                requestBody = RequestBody.create((MediaType) null, w0.f39017f);
+                requestBody = RequestBody.create((MediaType) null, w0.f39065f);
             }
             m11.g(aVar.b(), requestBody);
             return m11.b();
@@ -279,7 +279,7 @@ public class OkHttpDataSource extends f implements h {
                 try {
                     bArr = w0.i1((InputStream) ne.a.e(this.f12438m));
                 } catch (IOException unused) {
-                    bArr = w0.f39017f;
+                    bArr = w0.f39065f;
                 }
                 byte[] bArr2 = bArr;
                 Map i10 = t10.E0().i();

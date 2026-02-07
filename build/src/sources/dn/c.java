@@ -32,7 +32,7 @@ public final class c implements View.OnAttachStateChangeListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         public final void invoke(Throwable th2) {

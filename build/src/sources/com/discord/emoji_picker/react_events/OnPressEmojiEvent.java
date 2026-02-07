@@ -64,7 +64,7 @@ public final class OnPressEmojiEvent implements ReactEvent {
     public static final /* synthetic */ void write$Self$emoji_picker_release(OnPressEmojiEvent onPressEmojiEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, onPressEmojiEvent.emojiName);
         if (compositeEncoder.A(serialDescriptor, 1) || onPressEmojiEvent.emojiId != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, onPressEmojiEvent.emojiId);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, onPressEmojiEvent.emojiId);
         }
     }
 

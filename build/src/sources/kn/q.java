@@ -96,27 +96,27 @@ public final class q extends kn.d {
     private static final class c implements e {
 
         /* renamed from: d  reason: collision with root package name */
-        private final q f31856d;
+        private final q f31904d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ReactEditText f31857e;
+        private final ReactEditText f31905e;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f31858i;
+        private float f31906i;
 
         /* renamed from: o  reason: collision with root package name */
-        private float f31859o;
+        private float f31907o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f31860p;
+        private int f31908p;
 
         public c(q handler, ReactEditText editText) {
             Intrinsics.checkNotNullParameter(handler, "handler");
             Intrinsics.checkNotNullParameter(editText, "editText");
-            this.f31856d = handler;
-            this.f31857e = editText;
+            this.f31904d = handler;
+            this.f31905e = editText;
             ViewConfiguration viewConfiguration = ViewConfiguration.get(editText.getContext());
-            this.f31860p = viewConfiguration.getScaledTouchSlop() * viewConfiguration.getScaledTouchSlop();
+            this.f31908p = viewConfiguration.getScaledTouchSlop() * viewConfiguration.getScaledTouchSlop();
         }
 
         @Override // kn.q.e
@@ -159,17 +159,17 @@ public final class q extends kn.d {
         @Override // kn.q.e
         public void g(MotionEvent event) {
             Intrinsics.checkNotNullParameter(event, "event");
-            this.f31856d.k();
-            this.f31857e.onTouchEvent(event);
-            this.f31858i = event.getX();
-            this.f31859o = event.getY();
+            this.f31904d.k();
+            this.f31905e.onTouchEvent(event);
+            this.f31906i = event.getX();
+            this.f31907o = event.getY();
         }
 
         @Override // kn.q.e
         public void h(MotionEvent event) {
             Intrinsics.checkNotNullParameter(event, "event");
-            if (((event.getX() - this.f31858i) * (event.getX() - this.f31858i)) + ((event.getY() - this.f31859o) * (event.getY() - this.f31859o)) < this.f31860p) {
-                this.f31857e.requestFocusFromJS();
+            if (((event.getX() - this.f31906i) * (event.getX() - this.f31906i)) + ((event.getY() - this.f31907o) * (event.getY() - this.f31907o)) < this.f31908p) {
+                this.f31905e.requestFocusFromJS();
             }
         }
     }
@@ -178,13 +178,13 @@ public final class q extends kn.d {
     public static final class d extends d.c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f31861d = new a(null);
+        public static final a f31909d = new a(null);
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f31862b = q.class;
+        private final Class f31910b = q.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f31863c = "NativeViewGestureHandler";
+        private final String f31911c = "NativeViewGestureHandler";
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a {
@@ -198,12 +198,12 @@ public final class q extends kn.d {
 
         @Override // kn.d.c
         public String d() {
-            return this.f31863c;
+            return this.f31911c;
         }
 
         @Override // kn.d.c
         public Class e() {
-            return this.f31862b;
+            return this.f31910b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -391,16 +391,16 @@ public final class q extends kn.d {
     private static final class h implements e {
 
         /* renamed from: d  reason: collision with root package name */
-        private final q f31864d;
+        private final q f31912d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ReactSwipeRefreshLayout f31865e;
+        private final ReactSwipeRefreshLayout f31913e;
 
         public h(q handler, ReactSwipeRefreshLayout swipeRefreshLayout) {
             Intrinsics.checkNotNullParameter(handler, "handler");
             Intrinsics.checkNotNullParameter(swipeRefreshLayout, "swipeRefreshLayout");
-            this.f31864d = handler;
-            this.f31865e = swipeRefreshLayout;
+            this.f31912d = handler;
+            this.f31913e = swipeRefreshLayout;
         }
 
         @Override // kn.q.e
@@ -438,7 +438,7 @@ public final class q extends kn.d {
             ScrollView scrollView;
             ArrayList<kn.d> s10;
             Intrinsics.checkNotNullParameter(event, "event");
-            View childAt = this.f31865e.getChildAt(0);
+            View childAt = this.f31913e.getChildAt(0);
             r1 = null;
             if (childAt instanceof ScrollView) {
                 scrollView = (ScrollView) childAt;
@@ -446,7 +446,7 @@ public final class q extends kn.d {
                 scrollView = null;
             }
             if (scrollView != null) {
-                kn.i P = this.f31864d.P();
+                kn.i P = this.f31912d.P();
                 if (P != null && (s10 = P.s(scrollView)) != null) {
                     for (kn.d dVar : s10) {
                         if (dVar instanceof q) {
@@ -458,7 +458,7 @@ public final class q extends kn.d {
                     }
                     throw new NoSuchElementException("Collection contains no element matching the predicate.");
                 } else if (dVar == null && dVar.S() == 4 && scrollView.getScrollY() > 0) {
-                    this.f31864d.D();
+                    this.f31912d.D();
                 }
             }
         }

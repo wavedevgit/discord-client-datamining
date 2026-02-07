@@ -8,7 +8,7 @@ import sa.k;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56011a = new a();
+    public static final a f56059a = new a();
 
     private a() {
     }
@@ -21,7 +21,7 @@ public final class a {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (k.J0(encodedImage)) {
             if (resizeOptions != null && resizeOptions.f10347b > 0 && resizeOptions.f10346a > 0 && encodedImage.getWidth() != 0 && encodedImage.getHeight() != 0) {
-                int d10 = f56011a.d(rotationOptions, encodedImage);
+                int d10 = f56059a.d(rotationOptions, encodedImage);
                 if (d10 != 90 && d10 != 270) {
                     z10 = false;
                 } else {

@@ -1,58 +1,72 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var3 = dependencyMap;
-    var0 = metroImportDefault;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var0 = true;
-    var4.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportAll;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var1 = function() {
-        _fun51558: for (var _fun51558_ip = 0;;) switch (_fun51558_ip) {
-            case 0:
-                var3 = _closure1_slot2;
-                var2 = var3.useContext;
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var4.bind(var1)(var0);
-                var0 = var2.bind(var3)(var0);
-                if (!(var1 !== var0)) {
-                    _fun51558_ip = 46;
-                    continue _fun51558
+    _fun51711: for (var _fun51711_ip = 0;;) switch (_fun51711_ip) {
+        case 0:
+            var4 = global;
+            var2 = exports;
+            var _closure1_slot0 = var4;
+            var5 = global;
+            var7 = var5.Object;
+            var6 = var7.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var3);
+            var3 = dependencyMap;
+            var0 = 0;
+            var6 = var3[var0];
+            var3 = metroImportAll;
+            var0 = undefined;
+            var3 = var3.bind(var0)(var6);
+            var _closure1_slot1 = var3;
+            var3 = var4.__react_navigation__elements_contexts;
+            var6 = null;
+            if (!(var6 == var3)) {
+                _fun51711_ip = 105;
+                continue _fun51711
+            }
+        case 79:
+            var5 = var5.Map;
+            var6 = var5.prototype;
+            var6 = Object.create(var6, {
+                constructor: {
+                    value: var5
                 }
-            case 44:
-                return var0;
-            case 46:
-                var0 = global;
-                var2 = var0.Error;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var5 = "Couldn't find a ref for gesture handler. Are you inside a screen in Stack?";
-                var6 = var1;
-                var0 = new var6[var2](var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-        }
-    };
-    var2.default = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5801]);
+            });
+            var11 = var6;
+            var5 = new var11[var5](var10);
+            var3 = var5 instanceof Object ? var5 : var6;
+        case 105:
+            var4.__react_navigation__elements_contexts = var3;
+            var1 = function arg0, arg1() {
+                _fun51712: for (var _fun51712_ip = 0;;) switch (_fun51712_ip) {
+                    case 0:
+                        var4 = arg0;
+                        var0 = _closure1_slot0;
+                        var1 = var0.__react_navigation__elements_contexts;
+                        var0 = var1.get;
+                        var0 = var0.bind(var1)(var4);
+                        if (var0) {
+                            _fun51712_ip = 77;
+                            continue _fun51712
+                        }
+                    case 29:
+                        var5 = _closure1_slot1;
+                        var3 = var5.createContext;
+                        var1 = arg1;
+                        var1 = var3.bind(var5)(var1);
+                        var1.displayName = var4;
+                        var2 = _closure1_slot0;
+                        var3 = var2.__react_navigation__elements_contexts;
+                        var2 = var3.set;
+                        var2 = var2.bind(var3)(var4, var1);
+                        var0 = var1;
+                    case 77:
+                        return var0;
+                }
+            };
+            var2.default = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

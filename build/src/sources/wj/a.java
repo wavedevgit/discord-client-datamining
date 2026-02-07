@@ -9,38 +9,38 @@ import gf.q;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xj.a f53832a;
+    private final xj.a f53880a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f53833b;
+    private final Rect f53881b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Point[] f53834c;
+    private final Point[] f53882c;
 
     public a(xj.a aVar, Matrix matrix) {
-        this.f53832a = (xj.a) q.l(aVar);
+        this.f53880a = (xj.a) q.l(aVar);
         Rect a10 = aVar.a();
         if (a10 != null && matrix != null) {
             b.e(a10, matrix);
         }
-        this.f53833b = a10;
+        this.f53881b = a10;
         Point[] d10 = aVar.d();
         if (d10 != null && matrix != null) {
             b.b(d10, matrix);
         }
-        this.f53834c = d10;
+        this.f53882c = d10;
     }
 
     public Rect a() {
-        return this.f53833b;
+        return this.f53881b;
     }
 
     public Point[] b() {
-        return this.f53834c;
+        return this.f53882c;
     }
 
     public int c() {
-        int format = this.f53832a.getFormat();
+        int format = this.f53880a.getFormat();
         if (format > 4096 || format == 0) {
             return -1;
         }
@@ -48,10 +48,10 @@ public class a {
     }
 
     public String d() {
-        return this.f53832a.b();
+        return this.f53880a.b();
     }
 
     public int e() {
-        return this.f53832a.c();
+        return this.f53880a.c();
     }
 }

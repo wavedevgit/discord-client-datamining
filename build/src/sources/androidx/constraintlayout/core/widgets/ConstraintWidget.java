@@ -1482,11 +1482,11 @@ public class ConstraintWidget {
         boolean k10 = z10 & this.f2703e.k();
         boolean k11 = z11 & this.f2705f.k();
         l lVar = this.f2703e;
-        int i12 = lVar.f35712h.f35659g;
+        int i12 = lVar.f35760h.f35707g;
         n nVar = this.f2705f;
-        int i13 = nVar.f35712h.f35659g;
-        int i14 = lVar.f35713i.f35659g;
-        int i15 = nVar.f35713i.f35659g;
+        int i13 = nVar.f35760h.f35707g;
+        int i14 = lVar.f35761i.f35707g;
+        int i15 = nVar.f35761i.f35707g;
         int i16 = i15 - i13;
         if (i14 - i12 < 0 || i16 < 0 || i12 == Integer.MIN_VALUE || i12 == Integer.MAX_VALUE || i13 == Integer.MIN_VALUE || i13 == Integer.MAX_VALUE || i14 == Integer.MIN_VALUE || i14 == Integer.MAX_VALUE || i15 == Integer.MIN_VALUE || i15 == Integer.MAX_VALUE) {
             i14 = 0;
@@ -1545,22 +1545,22 @@ public class ConstraintWidget {
         int A3 = dVar.A(this.Q);
         int A4 = dVar.A(this.R);
         if (z10 && (lVar = this.f2703e) != null) {
-            l1.f fVar = lVar.f35712h;
-            if (fVar.f35662j) {
-                l1.f fVar2 = lVar.f35713i;
-                if (fVar2.f35662j) {
-                    A = fVar.f35659g;
-                    A3 = fVar2.f35659g;
+            l1.f fVar = lVar.f35760h;
+            if (fVar.f35710j) {
+                l1.f fVar2 = lVar.f35761i;
+                if (fVar2.f35710j) {
+                    A = fVar.f35707g;
+                    A3 = fVar2.f35707g;
                 }
             }
         }
         if (z10 && (nVar = this.f2705f) != null) {
-            l1.f fVar3 = nVar.f35712h;
-            if (fVar3.f35662j) {
-                l1.f fVar4 = nVar.f35713i;
-                if (fVar4.f35662j) {
-                    A2 = fVar3.f35659g;
-                    A4 = fVar4.f35659g;
+            l1.f fVar3 = nVar.f35760h;
+            if (fVar3.f35710j) {
+                l1.f fVar4 = nVar.f35761i;
+                if (fVar4.f35710j) {
+                    A2 = fVar3.f35707g;
+                    A4 = fVar4.f35707g;
                 }
             }
         }

@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsBoostButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102601: for (var _fun102601_ip = 0;;) switch (_fun102601_ip) {
+        _fun103083: for (var _fun103083_ip = 0;;) switch (_fun103083_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.guildId;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var3, var0);
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun102601_ip = 221;
-                    continue _fun102601
+                    _fun103083_ip = 221;
+                    continue _fun103083
                 }
             case 187:
                 var6 = _closure1_slot0;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var4)(var5);
                 var5 = var5.PremiumSubscriptionGroupRole;
                 var5 = var5.UNSPECIFIED;
-                _fun102601_ip = 227;
-                continue _fun102601;
+                _fun103083_ip = 227;
+                continue _fun103083;
             case 221:
                 var5 = var3.premiumGroupRole;
             case 227:
@@ -149,13 +149,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9.bind(var6)(var2, var3);
                 var3 = var6.useCallback;
                 var2 = function(arg0, arg1) { // Environment: var1
-                    _fun102607: for (var _fun102607_ip = 0;;) switch (_fun102607_ip) {
+                    _fun103089: for (var _fun103089_ip = 0;;) switch (_fun103089_ip) {
                         case 0:
                             var4 = arg1;
                             var0 = null;
                             if (!(var0 != var4)) {
-                                _fun102607_ip = 67;
-                                continue _fun102607
+                                _fun103089_ip = 67;
+                                continue _fun103089
                             }
                         case 9:
                             var2 = _closure1_slot0;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var10;
                 var0 = null;
                 if (var1) {
-                    _fun102601_ip = 365;
-                    continue _fun102601
+                    _fun103083_ip = 365;
+                    continue _fun103083
                 }
             case 288:
                 var3 = _closure1_slot8;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildPowerupsBoostButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 1621, 6732, 660, 33, 566, 4652, 1637, 9976, 9984, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 1621, 6775, 660, 33, 566, 4651, 1637, 10021, 10029, 2]);

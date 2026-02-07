@@ -22,59 +22,59 @@ public abstract class m6 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f37558a;
+        public static final /* synthetic */ int[] f37606a;
 
         static {
             int[] iArr = new int[x5.d.c.EnumC0522c.values().length];
             try {
-                iArr[x5.d.c.EnumC0522c.f38177d.ordinal()] = 1;
+                iArr[x5.d.c.EnumC0522c.f38225d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38178e.ordinal()] = 2;
+                iArr[x5.d.c.EnumC0522c.f38226e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38179i.ordinal()] = 3;
+                iArr[x5.d.c.EnumC0522c.f38227i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38180o.ordinal()] = 4;
+                iArr[x5.d.c.EnumC0522c.f38228o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38181p.ordinal()] = 5;
+                iArr[x5.d.c.EnumC0522c.f38229p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38182q.ordinal()] = 6;
+                iArr[x5.d.c.EnumC0522c.f38230q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38183r.ordinal()] = 7;
+                iArr[x5.d.c.EnumC0522c.f38231r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38184s.ordinal()] = 8;
+                iArr[x5.d.c.EnumC0522c.f38232s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38185t.ordinal()] = 9;
+                iArr[x5.d.c.EnumC0522c.f38233t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38186u.ordinal()] = 10;
+                iArr[x5.d.c.EnumC0522c.f38234u.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38187v.ordinal()] = 11;
+                iArr[x5.d.c.EnumC0522c.f38235v.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[x5.d.c.EnumC0522c.f38188w.ordinal()] = 12;
+                iArr[x5.d.c.EnumC0522c.f38236w.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
-            f37558a = iArr;
+            f37606a = iArr;
         }
     }
 
@@ -123,7 +123,7 @@ public abstract class m6 {
                 }
             }, 1, null);
             c15.d(c14);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         un.k kVar = (un.k) cameraError;
         if (!(kVar instanceof un.q0)) {
@@ -175,40 +175,40 @@ public abstract class m6 {
                 throw new qr.p();
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit m(Throwable th2, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         String canonicalName = th2.getClass().getCanonicalName();
         action.d(new x5.c.C0515c(new InternalErrorInfo.CameraErrorInfo("Unexpected camera error with type " + canonicalName)));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit n(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new x5.c.C0515c(new InternalErrorInfo.CameraErrorInfo("Unable to find a camera that satisfies the requirements for the selfie flow.")));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit o(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         y1.a((x1) action.c());
         action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).q(), 3, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit p(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new x5.c.C0515c(new InternalErrorInfo.CameraErrorInfo("Unsupported device.")));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit q(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         y1.a((x1) action.c());
         action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).q(), 3, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final void r(k.a aVar, tq.a aVar2) {
@@ -234,15 +234,15 @@ public abstract class m6 {
         }
         if (p10 == null) {
             if (((x5.b) action.b()).b()) {
-                action.d(x5.c.a.f38054a);
+                action.d(x5.c.a.f38102a);
             } else {
-                action.d(x5.c.b.f38055a);
+                action.d(x5.c.b.f38103a);
             }
         } else {
             p10.t(true);
             action.e(p10);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final void t(Context context, k.a renderContext, x5.b renderProps, boolean z10) {
@@ -250,9 +250,9 @@ public abstract class m6 {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(renderContext, "renderContext");
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
-        List r10 = CollectionsKt.r(hp.d0.f26280d);
+        List r10 = CollectionsKt.r(hp.d0.f26328d);
         if (z10 && rp.f.f(context) && renderProps.z().b()) {
-            r10.add(hp.d0.f26281e);
+            r10.add(hp.d0.f26329e);
         }
         final List a10 = hp.l1.a(context, r10);
         if (a10.isEmpty()) {
@@ -274,12 +274,12 @@ public abstract class m6 {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         x1 x1Var = (x1) action.c();
         if (x1Var instanceof x1.o) {
-            action.e(x1.o.v((x1.o) x1Var, !list.contains(hp.d0.f26280d), !list.contains(hp.d0.f26281e), null, null, null, false, null, false, 252, null));
+            action.e(x1.o.v((x1.o) x1Var, !list.contains(hp.d0.f26328d), !list.contains(hp.d0.f26329e), null, null, null, false, null, false, 252, null));
         } else {
             y1.a((x1) action.c());
             action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).q(), 3, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final x5.d.c.a v(x5.b bVar) {
@@ -324,26 +324,26 @@ public abstract class m6 {
 
     public static final x5.d.a.b x(x5.d.c.EnumC0522c enumC0522c) {
         Intrinsics.checkNotNullParameter(enumC0522c, "<this>");
-        switch (a.f37558a[enumC0522c.ordinal()]) {
+        switch (a.f37606a[enumC0522c.ordinal()]) {
             case 1:
-                return x5.d.a.b.f38109d;
+                return x5.d.a.b.f38157d;
             case 2:
             case 3:
-                return x5.d.a.b.f38110e;
+                return x5.d.a.b.f38158e;
             case 4:
             case 5:
             case 6:
-                return x5.d.a.b.f38111i;
+                return x5.d.a.b.f38159i;
             case 7:
             case 8:
             case 9:
-                return x5.d.a.b.f38112o;
+                return x5.d.a.b.f38160o;
             case 10:
-                return x5.d.a.b.f38113p;
+                return x5.d.a.b.f38161p;
             case 11:
-                return x5.d.a.b.f38109d;
+                return x5.d.a.b.f38157d;
             case 12:
-                return x5.d.a.b.f38109d;
+                return x5.d.a.b.f38157d;
             default:
                 throw new qr.p();
         }

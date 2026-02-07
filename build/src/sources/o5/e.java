@@ -5,25 +5,25 @@ import java.util.List;
 public class e extends g {
 
     /* renamed from: i  reason: collision with root package name */
-    private final s5.d f41501i;
+    private final s5.d f41549i;
 
     public e(List list) {
         super(list);
         int i10 = 0;
         for (int i11 = 0; i11 < list.size(); i11++) {
-            s5.d dVar = (s5.d) ((y5.a) list.get(i11)).f54980b;
+            s5.d dVar = (s5.d) ((y5.a) list.get(i11)).f55028b;
             if (dVar != null) {
                 i10 = Math.max(i10, dVar.f());
             }
         }
-        this.f41501i = new s5.d(new float[i10], new int[i10]);
+        this.f41549i = new s5.d(new float[i10], new int[i10]);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // o5.a
     /* renamed from: q */
     public s5.d i(y5.a aVar, float f10) {
-        this.f41501i.g((s5.d) aVar.f54980b, (s5.d) aVar.f54981c, f10);
-        return this.f41501i;
+        this.f41549i.g((s5.d) aVar.f55028b, (s5.d) aVar.f55029c, f10);
+        return this.f41549i;
     }
 }

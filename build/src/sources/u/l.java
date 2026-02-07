@@ -7,7 +7,7 @@ import androidx.camera.camera2.internal.compat.quirk.ExtraCroppingQuirk;
 public class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ExtraCroppingQuirk f51124a;
+    private final ExtraCroppingQuirk f51172a;
 
     public l() {
         this((ExtraCroppingQuirk) androidx.camera.camera2.internal.compat.quirk.b.b(ExtraCroppingQuirk.class));
@@ -15,7 +15,7 @@ public class l {
 
     public Size a(Size size) {
         Size c10;
-        ExtraCroppingQuirk extraCroppingQuirk = this.f51124a;
+        ExtraCroppingQuirk extraCroppingQuirk = this.f51172a;
         if (extraCroppingQuirk == null || (c10 = extraCroppingQuirk.c(o2.b.PRIV)) == null) {
             return size;
         }
@@ -26,6 +26,6 @@ public class l {
     }
 
     l(ExtraCroppingQuirk extraCroppingQuirk) {
-        this.f51124a = extraCroppingQuirk;
+        this.f51172a = extraCroppingQuirk;
     }
 }

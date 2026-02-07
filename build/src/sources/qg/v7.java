@@ -5,7 +5,7 @@ import yi.c;
 final class v7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v7 f47588a = new v7();
+    static final v7 f47636a = new v7();
 
     static {
         c.b a10 = yi.c.a("latencyMs");

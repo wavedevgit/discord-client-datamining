@@ -124,10 +124,10 @@ public final class IconUrlUtils {
         }
         if (str != null && str.length() != 0) {
             try {
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/channel-icons/" + channelId + "/" + str, false, num, str));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32005e;
+                Result.a aVar2 = Result.f32053e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -165,10 +165,10 @@ public final class IconUrlUtils {
         if (str != null && str.length() != 0 && guildId != null) {
             MediaProxy mediaProxy = MediaProxy.INSTANCE;
             try {
-                Result.a aVar = Result.f32005e;
+                Result.a aVar = Result.f32053e;
                 b10 = Result.b(Hosts.INSTANCE.getCDN() + "/icons/" + guildId + "/" + str);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f32005e;
+                Result.a aVar2 = Result.f32053e;
                 b10 = Result.b(c.a(th2));
             }
             if (Result.e(b10) != null) {
@@ -205,10 +205,10 @@ public final class IconUrlUtils {
                 return str;
             } else if (str != null) {
                 try {
-                    Result.a aVar = Result.f32005e;
+                    Result.a aVar = Result.f32053e;
                     b10 = Result.b(MediaProxy.INSTANCE.withSize(Hosts.INSTANCE.getCDN() + "/avatars/" + userId + "/" + str, z10, num2, str));
                 } catch (Throwable th2) {
-                    Result.a aVar2 = Result.f32005e;
+                    Result.a aVar2 = Result.f32053e;
                     b10 = Result.b(c.a(th2));
                 }
                 if (Result.e(b10) != null) {

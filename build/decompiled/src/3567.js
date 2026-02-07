@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = var1.bind(var3)(var0);
         var0 = this;
         var1 = var1.bind(var3)(var0, var2);
-        var0 = var1.get;
+        var0 = var1.has;
         var0 = var0.bind(var1)(var2);
         return var0;
     };
@@ -22,4 +22,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3565]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3564]);

@@ -8,24 +8,24 @@ import kotlin.jvm.functions.Function0;
 public class s2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final t2 f35409d;
+    private final t2 f35457d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f35410e;
+    private final int f35458e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f35411i;
+    private final Lazy f35459i;
 
     public s2(t2 t2Var, int i10, Lazy lazy) {
-        this.f35409d = t2Var;
-        this.f35410e = i10;
-        this.f35411i = lazy;
+        this.f35457d = t2Var;
+        this.f35458e = i10;
+        this.f35459i = lazy;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Type i10;
-        i10 = t2.i(this.f35409d, this.f35410e, this.f35411i);
+        i10 = t2.i(this.f35457d, this.f35458e, this.f35459i);
         return i10;
     }
 }

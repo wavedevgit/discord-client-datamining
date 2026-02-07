@@ -7,12 +7,12 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f49663a;
+    private static final String f49711a;
 
     static {
         String i10 = m.i("ConstraintTrkngWrkr");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"ConstraintTrkngWrkr\")");
-        f49663a = i10;
+        f49711a = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -41,8 +41,8 @@ public /* synthetic */ class OnSelectionOrTextChangeEvent$$serializer implements
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
-        n2 n2Var = n2.f31041a;
+        p0 p0Var = p0.f31105a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{p0Var, p0Var, n2Var, n2Var};
     }
 

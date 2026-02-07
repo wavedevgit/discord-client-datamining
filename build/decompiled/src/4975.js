@@ -9,20 +9,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = {
-        'RIGHT': 1,
-        'LEFT': 2,
-        'UP': 4,
-        'DOWN': 8
-    };
-    var1.Directions = var0;
-    var0 = {
-        'UP_RIGHT': 5,
-        'DOWN_RIGHT': 9,
-        'UP_LEFT': 6,
-        'DOWN_LEFT': 10
-    };
-    var1.DiagonalDirections = var0;
+    var0 = {};
+    var3 = 0;
+    var0.TOUCH = var3;
+    var2 = 'TOUCH';
+    var0[var3] = var2;
+    var3 = 1;
+    var0.STYLUS = var3;
+    var2 = 'STYLUS';
+    var0[var3] = var2;
+    var3 = 2;
+    var0.MOUSE = var3;
+    var2 = 'MOUSE';
+    var0[var3] = var2;
+    var3 = 3;
+    var0.KEY = var3;
+    var2 = 'KEY';
+    var0[var3] = var2;
+    var3 = 4;
+    var0.OTHER = var3;
+    var2 = 'OTHER';
+    var0[var3] = var2;
+    var1.PointerType = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -43,7 +43,7 @@ public /* synthetic */ class SpoilerContentNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = SpoilerContentNode.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{lazyArr[0].getValue(), n2Var, n2Var};
     }
 

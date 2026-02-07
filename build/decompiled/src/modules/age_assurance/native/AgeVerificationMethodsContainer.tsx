@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_assurance/native/AgeVerificationMethodsContainer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53171: for (var _fun53171_ip = 0;;) switch (_fun53171_ip) {
+        _fun53616: for (var _fun53616_ip = 0;;) switch (_fun53616_ip) {
             case 0:
                 var0 = arg0;
                 var17 = var0.ageVerificationMethods;
@@ -148,15 +148,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var14 = null;
                 if (!(var14 != var17)) {
-                    _fun53171_ip = 318;
-                    continue _fun53171
+                    _fun53616_ip = 318;
+                    continue _fun53616
                 }
             case 287:
                 var16 = var17.length;
                 var14 = 0;
                 if (!(var14 !== var16)) {
-                    _fun53171_ip = 318;
-                    continue _fun53171
+                    _fun53616_ip = 318;
+                    continue _fun53616
                 }
             case 298:
                 var16 = var17.map;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var14 = var16.bind(var17)(var14);
-                _fun53171_ip = 639;
-                continue _fun53171;
+                _fun53616_ip = 639;
+                continue _fun53616;
             case 318:
                 var17 = _closure1_slot5;
                 var25 = _closure1_slot0;
@@ -276,8 +276,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun53171_ip = 786;
-                    continue _fun53171
+                    _fun53616_ip = 786;
+                    continue _fun53616
                 }
             case 674:
                 var8 = _closure1_slot4;
@@ -326,4 +326,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AgeVerificationMethodsContainer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5949, 33, 1297, 671, 5948, 4081, 6466, 1234, 5368, 3943, 2372, 6467, 4085, 6462, 4901, 5940, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5992, 33, 1297, 671, 5991, 4080, 6509, 1234, 5415, 3942, 2374, 6510, 4084, 6505, 4900, 5983, 2]);

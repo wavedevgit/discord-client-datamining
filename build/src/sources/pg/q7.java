@@ -6,30 +6,30 @@ import yi.c;
 final class q7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f44639a = new q7();
+    static final q7 f44687a = new q7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44640b;
+    private static final yi.c f44688b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44641c;
+    private static final yi.c f44689c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44642d;
+    private static final yi.c f44690d;
 
     static {
         c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44640b = a10.b(s1Var.b()).a();
+        f44688b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("stages");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44641c = a11.b(s1Var2.b()).a();
+        f44689c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("runMiniBenchmark");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44642d = a12.b(s1Var3.b()).a();
+        f44690d = a12.b(s1Var3.b()).a();
     }
 
     private q7() {

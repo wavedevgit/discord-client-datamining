@@ -29,50 +29,50 @@ import java.util.Map;
 public final class g implements GestureDetector.OnGestureListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakReference f27105d;
+    private final WeakReference f27153d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f27106e;
+    private final w0 f27154e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SentryAndroidOptions f27107i;
+    private final SentryAndroidOptions f27155i;
 
     /* renamed from: o  reason: collision with root package name */
-    private io.sentry.internal.gestures.b f27108o = null;
+    private io.sentry.internal.gestures.b f27156o = null;
 
     /* renamed from: p  reason: collision with root package name */
-    private e1 f27109p = null;
+    private e1 f27157p = null;
 
     /* renamed from: q  reason: collision with root package name */
-    private b f27110q = b.Unknown;
+    private b f27158q = b.Unknown;
 
     /* renamed from: r  reason: collision with root package name */
-    private final c f27111r = new c(null);
+    private final c f27159r = new c(null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f27112a;
+        static final /* synthetic */ int[] f27160a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f27112a = iArr;
+            f27160a = iArr;
             try {
                 iArr[b.Click.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f27112a[b.Scroll.ordinal()] = 2;
+                f27160a[b.Scroll.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f27112a[b.Swipe.ordinal()] = 3;
+                f27160a[b.Swipe.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f27112a[b.Unknown.ordinal()] = 4;
+                f27160a[b.Unknown.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -88,9 +88,9 @@ public final class g implements GestureDetector.OnGestureListener {
     }
 
     public g(Activity activity, w0 w0Var, SentryAndroidOptions sentryAndroidOptions) {
-        this.f27105d = new WeakReference(activity);
-        this.f27106e = w0Var;
-        this.f27107i = sentryAndroidOptions;
+        this.f27153d = new WeakReference(activity);
+        this.f27154e = w0Var;
+        this.f27155i = sentryAndroidOptions;
     }
 
     public static /* synthetic */ void b(g gVar, IScope iScope, e1 e1Var, e1 e1Var2) {
@@ -99,44 +99,44 @@ public final class g implements GestureDetector.OnGestureListener {
             iScope.B(e1Var);
             return;
         }
-        gVar.f27107i.getLogger().c(SentryLevel.DEBUG, "Transaction '%s' won't be bound to the Scope since there's one already in there.", e1Var.getName());
+        gVar.f27155i.getLogger().c(SentryLevel.DEBUG, "Transaction '%s' won't be bound to the Scope since there's one already in there.", e1Var.getName());
     }
 
     public static /* synthetic */ void d(g gVar, IScope iScope, e1 e1Var) {
-        if (e1Var == gVar.f27109p) {
+        if (e1Var == gVar.f27157p) {
             iScope.F();
         }
     }
 
     private void e(io.sentry.internal.gestures.b bVar, b bVar2, Map map, MotionEvent motionEvent) {
-        if (!this.f27107i.isEnableUserInteractionBreadcrumbs()) {
+        if (!this.f27155i.isEnableUserInteractionBreadcrumbs()) {
             return;
         }
         String j10 = j(bVar2);
         Hint hint = new Hint();
         hint.k("android:motionEvent", motionEvent);
         hint.k("android:view", bVar.f());
-        this.f27106e.h(Breadcrumb.G(j10, bVar.d(), bVar.a(), bVar.e(), map), hint);
+        this.f27154e.h(Breadcrumb.G(j10, bVar.d(), bVar.a(), bVar.e(), map), hint);
     }
 
     private View h(String str) {
-        Activity activity = (Activity) this.f27105d.get();
+        Activity activity = (Activity) this.f27153d.get();
         if (activity == null) {
-            ILogger logger = this.f27107i.getLogger();
+            ILogger logger = this.f27155i.getLogger();
             SentryLevel sentryLevel = SentryLevel.DEBUG;
             logger.c(sentryLevel, "Activity is null in " + str + ". No breadcrumb captured.", new Object[0]);
             return null;
         }
         Window window = activity.getWindow();
         if (window == null) {
-            ILogger logger2 = this.f27107i.getLogger();
+            ILogger logger2 = this.f27155i.getLogger();
             SentryLevel sentryLevel2 = SentryLevel.DEBUG;
             logger2.c(sentryLevel2, "Window is null in " + str + ". No breadcrumb captured.", new Object[0]);
             return null;
         }
         View decorView = window.getDecorView();
         if (decorView == null) {
-            ILogger logger3 = this.f27107i.getLogger();
+            ILogger logger3 = this.f27155i.getLogger();
             SentryLevel sentryLevel3 = SentryLevel.DEBUG;
             logger3.c(sentryLevel3, "DecorView is null in " + str + ". No breadcrumb captured.", new Object[0]);
             return null;
@@ -149,7 +149,7 @@ public final class g implements GestureDetector.OnGestureListener {
     }
 
     private static String j(b bVar) {
-        int i10 = a.f27112a[bVar.ordinal()];
+        int i10 = a.f27160a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -167,7 +167,7 @@ public final class g implements GestureDetector.OnGestureListener {
         boolean z11;
         Activity activity;
         Long valueOf;
-        if (bVar2 == this.f27110q && bVar.equals(this.f27108o)) {
+        if (bVar2 == this.f27158q && bVar.equals(this.f27156o)) {
             z10 = true;
         } else {
             z10 = false;
@@ -177,18 +177,18 @@ public final class g implements GestureDetector.OnGestureListener {
         } else {
             z11 = false;
         }
-        if (this.f27107i.isTracingEnabled() && this.f27107i.isEnableUserInteractionTracing()) {
-            if (((Activity) this.f27105d.get()) == null) {
-                this.f27107i.getLogger().c(SentryLevel.DEBUG, "Activity is null, no transaction captured.", new Object[0]);
+        if (this.f27155i.isTracingEnabled() && this.f27155i.isEnableUserInteractionTracing()) {
+            if (((Activity) this.f27153d.get()) == null) {
+                this.f27155i.getLogger().c(SentryLevel.DEBUG, "Activity is null, no transaction captured.", new Object[0]);
                 return;
             }
             String b10 = bVar.b();
-            e1 e1Var = this.f27109p;
+            e1 e1Var = this.f27157p;
             if (e1Var != null) {
                 if (!z11 && !e1Var.isFinished()) {
-                    this.f27107i.getLogger().c(SentryLevel.DEBUG, "The view with id: " + b10 + " already has an ongoing transaction assigned. Rescheduling finish", new Object[0]);
-                    if (this.f27107i.getIdleTimeout() != null) {
-                        this.f27109p.p();
+                    this.f27155i.getLogger().c(SentryLevel.DEBUG, "The view with id: " + b10 + " already has an ongoing transaction assigned. Rescheduling finish", new Object[0]);
+                    if (this.f27155i.getIdleTimeout() != null) {
+                        this.f27157p.p();
                         return;
                     }
                     return;
@@ -199,32 +199,32 @@ public final class g implements GestureDetector.OnGestureListener {
             String str2 = "ui.action." + j(bVar2);
             v8 v8Var = new v8();
             v8Var.v(true);
-            long deadlineTimeout = this.f27107i.getDeadlineTimeout();
+            long deadlineTimeout = this.f27155i.getDeadlineTimeout();
             if (deadlineTimeout <= 0) {
                 valueOf = null;
             } else {
                 valueOf = Long.valueOf(deadlineTimeout);
             }
             v8Var.s(valueOf);
-            v8Var.t(this.f27107i.getIdleTimeout());
+            v8Var.t(this.f27155i.getIdleTimeout());
             v8Var.i(true);
             v8Var.g("auto.ui.gesture_listener." + bVar.c());
-            final e1 z12 = this.f27106e.z(new t8(str, g0.COMPONENT, str2), v8Var);
-            this.f27106e.o(new b4() { // from class: io.sentry.android.core.internal.gestures.d
+            final e1 z12 = this.f27154e.z(new t8(str, g0.COMPONENT, str2), v8Var);
+            this.f27154e.o(new b4() { // from class: io.sentry.android.core.internal.gestures.d
                 @Override // io.sentry.b4
                 public final void a(IScope iScope) {
                     g.this.f(iScope, z12);
                 }
             });
-            this.f27109p = z12;
-            this.f27108o = bVar;
-            this.f27110q = bVar2;
+            this.f27157p = z12;
+            this.f27156o = bVar;
+            this.f27158q = bVar2;
         } else if (z11) {
-            if (this.f27107i.isEnableAutoTraceIdGeneration()) {
-                j0.h(this.f27106e);
+            if (this.f27155i.isEnableAutoTraceIdGeneration()) {
+                j0.h(this.f27154e);
             }
-            this.f27108o = bVar;
-            this.f27110q = bVar2;
+            this.f27156o = bVar;
+            this.f27158q = bVar2;
         }
     }
 
@@ -250,39 +250,39 @@ public final class g implements GestureDetector.OnGestureListener {
 
     public void k(MotionEvent motionEvent) {
         View h10 = h("onUp");
-        io.sentry.internal.gestures.b bVar = this.f27111r.f27114b;
+        io.sentry.internal.gestures.b bVar = this.f27159r.f27162b;
         if (h10 != null && bVar != null) {
-            if (this.f27111r.f27113a != b.Unknown) {
-                e(bVar, this.f27111r.f27113a, Collections.singletonMap("direction", this.f27111r.i(motionEvent)), motionEvent);
-                l(bVar, this.f27111r.f27113a);
-                this.f27111r.j();
+            if (this.f27159r.f27161a != b.Unknown) {
+                e(bVar, this.f27159r.f27161a, Collections.singletonMap("direction", this.f27159r.i(motionEvent)), motionEvent);
+                l(bVar, this.f27159r.f27161a);
+                this.f27159r.j();
                 return;
             }
-            this.f27107i.getLogger().c(SentryLevel.DEBUG, "Unable to define scroll type. No breadcrumb captured.", new Object[0]);
+            this.f27155i.getLogger().c(SentryLevel.DEBUG, "Unable to define scroll type. No breadcrumb captured.", new Object[0]);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(l8 l8Var) {
-        e1 e1Var = this.f27109p;
+        e1 e1Var = this.f27157p;
         if (e1Var != null) {
             if (e1Var.a() == null) {
-                this.f27109p.k(l8Var);
+                this.f27157p.k(l8Var);
             } else {
-                this.f27109p.d();
+                this.f27157p.d();
             }
         }
-        this.f27106e.o(new b4() { // from class: io.sentry.android.core.internal.gestures.c
+        this.f27154e.o(new b4() { // from class: io.sentry.android.core.internal.gestures.c
             @Override // io.sentry.b4
             public final void a(IScope iScope) {
                 g.this.g(iScope);
             }
         });
-        this.f27109p = null;
-        if (this.f27108o != null) {
-            this.f27108o = null;
+        this.f27157p = null;
+        if (this.f27156o != null) {
+            this.f27156o = null;
         }
-        this.f27110q = b.Unknown;
+        this.f27158q = b.Unknown;
     }
 
     @Override // android.view.GestureDetector.OnGestureListener
@@ -290,15 +290,15 @@ public final class g implements GestureDetector.OnGestureListener {
         if (motionEvent == null) {
             return false;
         }
-        this.f27111r.j();
-        this.f27111r.f27115c = motionEvent.getX();
-        this.f27111r.f27116d = motionEvent.getY();
+        this.f27159r.j();
+        this.f27159r.f27163c = motionEvent.getX();
+        this.f27159r.f27164d = motionEvent.getY();
         return false;
     }
 
     @Override // android.view.GestureDetector.OnGestureListener
     public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
-        this.f27111r.f27113a = b.Swipe;
+        this.f27159r.f27161a = b.Swipe;
         return false;
     }
 
@@ -309,18 +309,18 @@ public final class g implements GestureDetector.OnGestureListener {
     @Override // android.view.GestureDetector.OnGestureListener
     public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
         View h10 = h("onScroll");
-        if (h10 != null && motionEvent != null && this.f27111r.f27113a == b.Unknown) {
-            io.sentry.internal.gestures.b a10 = i.a(this.f27107i, h10, motionEvent.getX(), motionEvent.getY(), b.a.SCROLLABLE);
+        if (h10 != null && motionEvent != null && this.f27159r.f27161a == b.Unknown) {
+            io.sentry.internal.gestures.b a10 = i.a(this.f27155i, h10, motionEvent.getX(), motionEvent.getY(), b.a.SCROLLABLE);
             if (a10 == null) {
-                this.f27107i.getLogger().c(SentryLevel.DEBUG, "Unable to find scroll target. No breadcrumb captured.", new Object[0]);
-                this.f27111r.f27113a = b.Scroll;
+                this.f27155i.getLogger().c(SentryLevel.DEBUG, "Unable to find scroll target. No breadcrumb captured.", new Object[0]);
+                this.f27159r.f27161a = b.Scroll;
                 return false;
             }
-            ILogger logger = this.f27107i.getLogger();
+            ILogger logger = this.f27155i.getLogger();
             SentryLevel sentryLevel = SentryLevel.DEBUG;
             logger.c(sentryLevel, "Scroll target found: " + a10.b(), new Object[0]);
-            this.f27111r.k(a10);
-            this.f27111r.f27113a = b.Scroll;
+            this.f27159r.k(a10);
+            this.f27159r.f27161a = b.Scroll;
         }
         return false;
     }
@@ -333,9 +333,9 @@ public final class g implements GestureDetector.OnGestureListener {
     public boolean onSingleTapUp(MotionEvent motionEvent) {
         View h10 = h("onSingleTapUp");
         if (h10 != null && motionEvent != null) {
-            io.sentry.internal.gestures.b a10 = i.a(this.f27107i, h10, motionEvent.getX(), motionEvent.getY(), b.a.CLICKABLE);
+            io.sentry.internal.gestures.b a10 = i.a(this.f27155i, h10, motionEvent.getX(), motionEvent.getY(), b.a.CLICKABLE);
             if (a10 == null) {
-                this.f27107i.getLogger().c(SentryLevel.DEBUG, "Unable to find click target. No breadcrumb captured.", new Object[0]);
+                this.f27155i.getLogger().c(SentryLevel.DEBUG, "Unable to find click target. No breadcrumb captured.", new Object[0]);
                 return false;
             }
             b bVar = b.Click;
@@ -349,27 +349,27 @@ public final class g implements GestureDetector.OnGestureListener {
     private static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private b f27113a;
+        private b f27161a;
 
         /* renamed from: b  reason: collision with root package name */
-        private io.sentry.internal.gestures.b f27114b;
+        private io.sentry.internal.gestures.b f27162b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f27115c;
+        private float f27163c;
 
         /* renamed from: d  reason: collision with root package name */
-        private float f27116d;
+        private float f27164d;
 
         private c() {
-            this.f27113a = b.Unknown;
-            this.f27115c = 0.0f;
-            this.f27116d = 0.0f;
+            this.f27161a = b.Unknown;
+            this.f27163c = 0.0f;
+            this.f27164d = 0.0f;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public String i(MotionEvent motionEvent) {
-            float x10 = motionEvent.getX() - this.f27115c;
-            float y10 = motionEvent.getY() - this.f27116d;
+            float x10 = motionEvent.getX() - this.f27163c;
+            float y10 = motionEvent.getY() - this.f27164d;
             if (Math.abs(x10) > Math.abs(y10)) {
                 if (x10 > 0.0f) {
                     return ViewProps.RIGHT;
@@ -384,15 +384,15 @@ public final class g implements GestureDetector.OnGestureListener {
 
         /* JADX INFO: Access modifiers changed from: private */
         public void j() {
-            this.f27114b = null;
-            this.f27113a = b.Unknown;
-            this.f27115c = 0.0f;
-            this.f27116d = 0.0f;
+            this.f27162b = null;
+            this.f27161a = b.Unknown;
+            this.f27163c = 0.0f;
+            this.f27164d = 0.0f;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public void k(io.sentry.internal.gestures.b bVar) {
-            this.f27114b = bVar;
+            this.f27162b = bVar;
         }
 
         /* synthetic */ c(a aVar) {

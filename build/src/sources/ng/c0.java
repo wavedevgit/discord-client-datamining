@@ -8,13 +8,13 @@ import java.util.Map;
 public final class c0 extends q1 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ i0 f39736e;
+    final /* synthetic */ i0 f39784e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c0(i0 i0Var, Map map) {
         super(map);
-        this.f39736e = i0Var;
+        this.f39784e = i0Var;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -24,12 +24,12 @@ public final class c0 extends q1 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean containsAll(Collection collection) {
-        return this.f40190d.keySet().containsAll(collection);
+        return this.f40238d.keySet().containsAll(collection);
     }
 
     @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
     public final boolean equals(Object obj) {
-        if (this != obj && !this.f40190d.keySet().equals(obj)) {
+        if (this != obj && !this.f40238d.keySet().equals(obj)) {
             return false;
         }
         return true;
@@ -37,24 +37,24 @@ public final class c0 extends q1 {
 
     @Override // java.util.AbstractSet, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f40190d.keySet().hashCode();
+        return this.f40238d.keySet().hashCode();
     }
 
     @Override // ng.q1, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        return new b0(this, this.f40190d.entrySet().iterator());
+        return new b0(this, this.f40238d.entrySet().iterator());
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean remove(Object obj) {
         int i10;
-        Collection collection = (Collection) this.f40190d.remove(obj);
+        Collection collection = (Collection) this.f40238d.remove(obj);
         if (collection != null) {
             int size = collection.size();
             collection.clear();
-            i0 i0Var = this.f39736e;
-            i10 = i0Var.f39876o;
-            i0Var.f39876o = i10 - size;
+            i0 i0Var = this.f39784e;
+            i10 = i0Var.f39924o;
+            i0Var.f39924o = i10 - size;
             if (size > 0) {
                 return true;
             }

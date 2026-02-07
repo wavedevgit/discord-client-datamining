@@ -44,7 +44,7 @@ public /* synthetic */ class LinkContextData$BindDismissMessage$DismissedMessage
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, gt.a.u(n2.f31041a), LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, gt.a.u(n2.f31089a), LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,7 +62,7 @@ public /* synthetic */ class LinkContextData$BindDismissMessage$DismissedMessage
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1092unboximpl() : null;
             dismissedMessageAuthor = (LinkContextData.BindDismissMessage.DismissedMessageAuthor) b10.y(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, null);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f31089a, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
@@ -84,7 +84,7 @@ public /* synthetic */ class LinkContextData$BindDismissMessage$DismissedMessage
                     channelId2 = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, channelId2);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str3 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str3);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

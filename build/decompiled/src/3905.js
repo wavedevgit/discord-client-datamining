@@ -1,54 +1,30 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function arg0, arg1() {
-        _fun35189: for (var _fun35189_ip = 0;;) switch (_fun35189_ip) {
-            case 0:
-                var3 = arg1;
-                var2 = {};
-                var _closure2_slot0 = var2;
-                var1 = null;
-                if (!(var1 != var3)) {
-                    _fun35189_ip = 32;
-                    continue _fun35189
-                }
-            case 17:
-                var1 = var3.forEach;
-                var0 = function(arg0) { // Environment: var0
-                    var2 = _closure2_slot0;
-                    var1 = true;
-                    var0 = arg0;
-                    var2[var0] = var1;
-                    var0 = undefined;
-                    return var0;
-                };
-                var0 = var1.bind(var3)(var0);
-            case 32:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var3.bind(var0)(var1);
-                var0 = var1.addWhitelistedNativeProps;
-                var0 = var0.bind(var1)(var2);
-                var0 = arg0;
-                return var0;
-        }
-    };
-    var1.createAnimatedPropAdapter = var0;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var1 = 0;
+    var5 = var4[var1];
     var0 = undefined;
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.finishScreenTransition;
+    var2.finishScreenTransition = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.startScreenTransition;
+    var2.startScreenTransition = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.ScreenTransition;
+    var2.ScreenTransition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3823]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3906, 3910]);

@@ -5,29 +5,29 @@ import java.util.Formatter;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f55459a;
+    private final a f55507a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g[] f55460b;
+    private final g[] f55508b;
 
     /* renamed from: c  reason: collision with root package name */
-    private c f55461c;
+    private c f55509c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f55462d;
+    private final int f55510d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(a aVar, c cVar) {
-        this.f55459a = aVar;
+        this.f55507a = aVar;
         int a10 = aVar.a();
-        this.f55462d = a10;
-        this.f55461c = cVar;
-        this.f55460b = new g[a10 + 2];
+        this.f55510d = a10;
+        this.f55509c = cVar;
+        this.f55508b = new g[a10 + 2];
     }
 
     private void a(g gVar) {
         if (gVar != null) {
-            ((h) gVar).g(this.f55459a);
+            ((h) gVar).g(this.f55507a);
         }
     }
 
@@ -55,8 +55,8 @@ final class f {
         if (f10 == 0) {
             return 0;
         }
-        for (int i10 = 1; i10 < this.f55462d + 1; i10++) {
-            d[] d10 = this.f55460b[i10].d();
+        for (int i10 = 1; i10 < this.f55510d + 1; i10++) {
+            d[] d10 = this.f55508b[i10].d();
             for (int i11 = 0; i11 < d10.length; i11++) {
                 d dVar = d10[i11];
                 if (dVar != null && !dVar.g()) {
@@ -70,8 +70,8 @@ final class f {
     private void e(int i10, int i11, d[] dVarArr) {
         d[] dVarArr2;
         d dVar = dVarArr[i11];
-        d[] d10 = this.f55460b[i10 - 1].d();
-        g gVar = this.f55460b[i10 + 1];
+        d[] d10 = this.f55508b[i10 - 1].d();
+        g gVar = this.f55508b[i10 + 1];
         if (gVar != null) {
             dVarArr2 = gVar.d();
         } else {
@@ -114,20 +114,20 @@ final class f {
     }
 
     private void g() {
-        g[] gVarArr = this.f55460b;
+        g[] gVarArr = this.f55508b;
         g gVar = gVarArr[0];
-        if (gVar != null && gVarArr[this.f55462d + 1] != null) {
+        if (gVar != null && gVarArr[this.f55510d + 1] != null) {
             d[] d10 = gVar.d();
-            d[] d11 = this.f55460b[this.f55462d + 1].d();
+            d[] d11 = this.f55508b[this.f55510d + 1].d();
             for (int i10 = 0; i10 < d10.length; i10++) {
                 d dVar = d10[i10];
                 if (dVar != null && d11[i10] != null && dVar.c() == d11[i10].c()) {
-                    for (int i11 = 1; i11 <= this.f55462d; i11++) {
-                        d dVar2 = this.f55460b[i11].d()[i10];
+                    for (int i11 = 1; i11 <= this.f55510d; i11++) {
+                        d dVar2 = this.f55508b[i11].d()[i10];
                         if (dVar2 != null) {
                             dVar2.i(d10[i10].c());
                             if (!dVar2.g()) {
-                                this.f55460b[i11].d()[i10] = null;
+                                this.f55508b[i11].d()[i10] = null;
                             }
                         }
                     }
@@ -137,7 +137,7 @@ final class f {
     }
 
     private int h() {
-        g gVar = this.f55460b[0];
+        g gVar = this.f55508b[0];
         if (gVar == null) {
             return 0;
         }
@@ -148,8 +148,8 @@ final class f {
             if (dVar != null) {
                 int c10 = dVar.c();
                 int i12 = 0;
-                for (int i13 = 1; i13 < this.f55462d + 1 && i12 < 2; i13++) {
-                    d dVar2 = this.f55460b[i13].d()[i11];
+                for (int i13 = 1; i13 < this.f55510d + 1 && i12 < 2; i13++) {
+                    d dVar2 = this.f55508b[i13].d()[i11];
                     if (dVar2 != null) {
                         i12 = c(c10, i12, dVar2);
                         if (!dVar2.g()) {
@@ -163,8 +163,8 @@ final class f {
     }
 
     private int i() {
-        g[] gVarArr = this.f55460b;
-        int i10 = this.f55462d;
+        g[] gVarArr = this.f55508b;
+        int i10 = this.f55510d;
         if (gVarArr[i10 + 1] == null) {
             return 0;
         }
@@ -175,8 +175,8 @@ final class f {
             if (dVar != null) {
                 int c10 = dVar.c();
                 int i13 = 0;
-                for (int i14 = this.f55462d + 1; i14 > 0 && i13 < 2; i14--) {
-                    d dVar2 = this.f55460b[i14].d()[i12];
+                for (int i14 = this.f55510d + 1; i14 > 0 && i13 < 2; i14--) {
+                    d dVar2 = this.f55508b[i14].d()[i12];
                     if (dVar2 != null) {
                         i13 = c(c10, i13, dVar2);
                         if (!dVar2.g()) {
@@ -191,33 +191,33 @@ final class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int j() {
-        return this.f55462d;
+        return this.f55510d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int k() {
-        return this.f55459a.b();
+        return this.f55507a.b();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int l() {
-        return this.f55459a.c();
+        return this.f55507a.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c m() {
-        return this.f55461c;
+        return this.f55509c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g n(int i10) {
-        return this.f55460b[i10];
+        return this.f55508b[i10];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g[] o() {
-        a(this.f55460b[0]);
-        a(this.f55460b[this.f55462d + 1]);
+        a(this.f55508b[0]);
+        a(this.f55508b[this.f55510d + 1]);
         int i10 = 928;
         while (true) {
             int d10 = d();
@@ -226,31 +226,31 @@ final class f {
             }
             i10 = d10;
         }
-        return this.f55460b;
+        return this.f55508b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(c cVar) {
-        this.f55461c = cVar;
+        this.f55509c = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void q(int i10, g gVar) {
-        this.f55460b[i10] = gVar;
+        this.f55508b[i10] = gVar;
     }
 
     public String toString() {
-        g[] gVarArr = this.f55460b;
+        g[] gVarArr = this.f55508b;
         g gVar = gVarArr[0];
         if (gVar == null) {
-            gVar = gVarArr[this.f55462d + 1];
+            gVar = gVarArr[this.f55510d + 1];
         }
         Formatter formatter = new Formatter();
         for (int i10 = 0; i10 < gVar.d().length; i10++) {
             try {
                 formatter.format("CW %3d:", Integer.valueOf(i10));
-                for (int i11 = 0; i11 < this.f55462d + 2; i11++) {
-                    g gVar2 = this.f55460b[i11];
+                for (int i11 = 0; i11 < this.f55510d + 2; i11++) {
+                    g gVar2 = this.f55508b[i11];
                     if (gVar2 == null) {
                         formatter.format("    |   ", new Object[0]);
                     } else {

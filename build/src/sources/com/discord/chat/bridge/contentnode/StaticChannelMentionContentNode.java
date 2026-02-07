@@ -32,7 +32,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.s
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.s
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -95,7 +95,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
             compositeEncoder.l(serialDescriptor, 1, GuildId$$serializer.INSTANCE, staticChannelMentionContentNode.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || staticChannelMentionContentNode.itemId != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, staticChannelMentionContentNode.itemId);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, staticChannelMentionContentNode.itemId);
         }
         compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), staticChannelMentionContentNode.getContent());
     }

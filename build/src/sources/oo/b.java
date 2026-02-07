@@ -13,13 +13,13 @@ public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final e f43286d;
+    private final e f43334d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f43287e;
+    private final String f43335e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f43288i;
+    private final Map f43336i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -48,9 +48,9 @@ public final class b implements Parcelable {
         Intrinsics.checkNotNullParameter(idType, "idType");
         Intrinsics.checkNotNullParameter(minAge, "minAge");
         Intrinsics.checkNotNullParameter(elementToStoreLength, "elementToStoreLength");
-        this.f43286d = idType;
-        this.f43287e = minAge;
-        this.f43288i = elementToStoreLength;
+        this.f43334d = idType;
+        this.f43335e = minAge;
+        this.f43336i = elementToStoreLength;
     }
 
     @Override // android.os.Parcelable
@@ -61,9 +61,9 @@ public final class b implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43286d.name());
-        dest.writeString(this.f43287e);
-        Map map = this.f43288i;
+        dest.writeString(this.f43334d.name());
+        dest.writeString(this.f43335e);
+        Map map = this.f43336i;
         dest.writeInt(map.size());
         for (Map.Entry entry : map.entrySet()) {
             dest.writeString((String) entry.getKey());

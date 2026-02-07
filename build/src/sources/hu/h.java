@@ -8,37 +8,37 @@ import okio.BufferedSource;
 public final class h extends ResponseBody {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f26510d;
+    private final String f26558d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f26511e;
+    private final long f26559e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final BufferedSource f26512i;
+    private final BufferedSource f26560i;
 
     public h(String str, long j10, BufferedSource source) {
         Intrinsics.checkNotNullParameter(source, "source");
-        this.f26510d = str;
-        this.f26511e = j10;
-        this.f26512i = source;
+        this.f26558d = str;
+        this.f26559e = j10;
+        this.f26560i = source;
     }
 
     @Override // okhttp3.ResponseBody
     public long contentLength() {
-        return this.f26511e;
+        return this.f26559e;
     }
 
     @Override // okhttp3.ResponseBody
     public MediaType contentType() {
-        String str = this.f26510d;
+        String str = this.f26558d;
         if (str != null) {
-            return MediaType.f42872e.c(str);
+            return MediaType.f42920e.c(str);
         }
         return null;
     }
 
     @Override // okhttp3.ResponseBody
     public BufferedSource source() {
-        return this.f26512i;
+        return this.f26560i;
     }
 }

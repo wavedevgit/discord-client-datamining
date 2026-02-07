@@ -13,50 +13,50 @@ public final class n extends rt.a implements Serializable {
     private static final rt.j0 B;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final char f39484i;
+    private static final char f39532i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final n f39485o;
+    private static final n f39533o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a f39486p;
+    private static final a f39534p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f39487q;
+    private static final a f39535q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a f39488r;
+    private static final a f39536r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final a f39489s;
+    private static final a f39537s;
     private static final long serialVersionUID = -6321211763598951499L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final a f39490t;
+    private static final a f39538t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final a f39491u;
+    private static final a f39539u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Comparator f39492v;
+    private static final Comparator f39540v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static rt.d0 f39493w;
+    public static rt.d0 f39541w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static rt.d0 f39494x;
+    public static rt.d0 f39542x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static rt.d0 f39495y;
+    public static rt.d0 f39543y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final rt.j0 f39496z;
+    private static final rt.j0 f39544z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient List f39497d;
+    private final transient List f39545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient boolean f39498e;
+    private final transient boolean f39546e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends st.w {
@@ -83,32 +83,32 @@ public final class n extends rt.a implements Serializable {
                                             if (c10 != 's') {
                                                 switch (c10) {
                                                     case 'C':
-                                                        return f.f39282e;
+                                                        return f.f39330e;
                                                     case 'D':
-                                                        return f.f39288s;
+                                                        return f.f39336s;
                                                     case 'E':
-                                                        return f.f39283i;
+                                                        return f.f39331i;
                                                     default:
                                                         throw new IllegalArgumentException("Unsupported pattern symbol: " + c10);
                                                 }
                                             }
-                                            return g.f39323i;
+                                            return g.f39371i;
                                         }
-                                        return g.f39322e;
+                                        return g.f39370e;
                                     }
-                                    return g.f39321d;
+                                    return g.f39369d;
                                 }
-                                return g.f39326q;
+                                return g.f39374q;
                             }
-                            return f.f39284o;
+                            return f.f39332o;
                         }
-                        return f.f39287r;
+                        return f.f39335r;
                     }
-                    return f.f39285p;
+                    return f.f39333p;
                 }
-                return f.f39286q;
+                return f.f39334q;
             }
-            return f.f39281d;
+            return f.f39329d;
         }
     }
 
@@ -131,36 +131,36 @@ public final class n extends rt.a implements Serializable {
         } else {
             c10 = ',';
         }
-        f39484i = c10;
-        f39485o = new n();
-        f39486p = e(true, false);
-        f39487q = e(true, true);
-        f39488r = e(false, false);
-        f39489s = e(false, true);
-        f39490t = f(true);
-        f39491u = f(false);
-        f39492v = p0.a();
-        f39493w = p0.l();
-        f39494x = p0.g();
-        f39495y = p0.k();
-        f fVar = f.f39284o;
-        f fVar2 = f.f39286q;
-        f fVar3 = f.f39288s;
-        f39496z = g(fVar, fVar2, fVar3);
-        A = g(g.f39321d, g.f39322e, g.f39323i, g.f39326q);
-        B = g(f.f(), f.f39287r, fVar3);
+        f39532i = c10;
+        f39533o = new n();
+        f39534p = e(true, false);
+        f39535q = e(true, true);
+        f39536r = e(false, false);
+        f39537s = e(false, true);
+        f39538t = f(true);
+        f39539u = f(false);
+        f39540v = p0.a();
+        f39541w = p0.l();
+        f39542x = p0.g();
+        f39543y = p0.k();
+        f fVar = f.f39332o;
+        f fVar2 = f.f39334q;
+        f fVar3 = f.f39336s;
+        f39544z = g(fVar, fVar2, fVar3);
+        A = g(g.f39369d, g.f39370e, g.f39371i, g.f39374q);
+        B = g(f.f(), f.f39335r, fVar3);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(List list, boolean z10) {
         boolean isEmpty = list.isEmpty();
         if (isEmpty) {
-            this.f39497d = Collections.EMPTY_LIST;
+            this.f39545d = Collections.EMPTY_LIST;
         } else {
-            Collections.sort(list, f39492v);
-            this.f39497d = Collections.unmodifiableList(list);
+            Collections.sort(list, f39540v);
+            this.f39545d = Collections.unmodifiableList(list);
         }
-        this.f39498e = !isEmpty && z10;
+        this.f39546e = !isEmpty && z10;
     }
 
     private int d() {
@@ -206,7 +206,7 @@ public final class n extends rt.a implements Serializable {
     }
 
     public static n j() {
-        return f39485o;
+        return f39533o;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:113:0x01e1  */
@@ -232,7 +232,7 @@ public final class n extends rt.a implements Serializable {
 
     @Override // rt.l0
     public List a() {
-        return this.f39497d;
+        return this.f39545d;
     }
 
     public boolean c(w wVar) {
@@ -240,9 +240,9 @@ public final class n extends rt.a implements Serializable {
             return false;
         }
         boolean h10 = h(wVar);
-        int size = this.f39497d.size();
+        int size = this.f39545d.size();
         for (int i10 = 0; i10 < size; i10++) {
-            l0.a aVar = (l0.a) this.f39497d.get(i10);
+            l0.a aVar = (l0.a) this.f39545d.get(i10);
             w wVar2 = (w) aVar.b();
             if (wVar2.equals(wVar) || (h10 && h(wVar2))) {
                 if (aVar.a() <= 0) {
@@ -261,7 +261,7 @@ public final class n extends rt.a implements Serializable {
         }
         if (obj instanceof n) {
             n nVar = (n) n.class.cast(obj);
-            if (this.f39498e == nVar.f39498e && a().equals(nVar.a())) {
+            if (this.f39546e == nVar.f39546e && a().equals(nVar.a())) {
                 return true;
             }
         }
@@ -270,14 +270,14 @@ public final class n extends rt.a implements Serializable {
 
     public int hashCode() {
         int hashCode = a().hashCode();
-        if (this.f39498e) {
+        if (this.f39546e) {
             return 0;
         }
         return hashCode;
     }
 
     public boolean i() {
-        return this.f39498e;
+        return this.f39546e;
     }
 
     public String toString() {
@@ -285,7 +285,7 @@ public final class n extends rt.a implements Serializable {
     }
 
     private n() {
-        this.f39497d = Collections.EMPTY_LIST;
-        this.f39498e = false;
+        this.f39545d = Collections.EMPTY_LIST;
+        this.f39546e = false;
     }
 }

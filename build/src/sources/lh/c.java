@@ -13,20 +13,20 @@ import java.util.Objects;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f36234a = a();
+    private final d f36282a = a();
 
     /* renamed from: b  reason: collision with root package name */
-    private final lh.b f36235b;
+    private final lh.b f36283b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final View f36236c;
+    private final View f36284c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class b implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private OnBackInvokedCallback f36237a;
+        private OnBackInvokedCallback f36285a;
 
         private b() {
         }
@@ -37,19 +37,19 @@ public final class c {
             if (findOnBackInvokedDispatcher == null) {
                 return;
             }
-            findOnBackInvokedDispatcher.unregisterOnBackInvokedCallback(this.f36237a);
-            this.f36237a = null;
+            findOnBackInvokedDispatcher.unregisterOnBackInvokedCallback(this.f36285a);
+            this.f36285a = null;
         }
 
         @Override // lh.c.d
         public void b(@NonNull lh.b bVar, @NonNull View view, boolean z10) {
             OnBackInvokedDispatcher findOnBackInvokedDispatcher;
             int i10;
-            if (this.f36237a != null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
+            if (this.f36285a != null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
                 return;
             }
             OnBackInvokedCallback c10 = c(bVar);
-            this.f36237a = c10;
+            this.f36285a = c10;
             if (z10) {
                 i10 = 1000000;
             } else {
@@ -68,7 +68,7 @@ public final class c {
         }
 
         boolean d() {
-            if (this.f36237a != null) {
+            if (this.f36285a != null) {
                 return true;
             }
             return false;
@@ -85,35 +85,35 @@ public final class c {
         class a implements OnBackAnimationCallback {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ lh.b f36238a;
+            final /* synthetic */ lh.b f36286a;
 
             a(lh.b bVar) {
-                this.f36238a = bVar;
+                this.f36286a = bVar;
             }
 
             public void onBackCancelled() {
                 if (!C0483c.this.d()) {
                     return;
                 }
-                this.f36238a.a();
+                this.f36286a.a();
             }
 
             public void onBackInvoked() {
-                this.f36238a.d();
+                this.f36286a.d();
             }
 
             public void onBackProgressed(BackEvent backEvent) {
                 if (!C0483c.this.d()) {
                     return;
                 }
-                this.f36238a.c(new BackEventCompat(backEvent));
+                this.f36286a.c(new BackEventCompat(backEvent));
             }
 
             public void onBackStarted(BackEvent backEvent) {
                 if (!C0483c.this.d()) {
                     return;
                 }
-                this.f36238a.b(new BackEventCompat(backEvent));
+                this.f36286a.b(new BackEventCompat(backEvent));
             }
         }
 
@@ -136,8 +136,8 @@ public final class c {
     }
 
     public c(lh.b bVar, View view) {
-        this.f36235b = bVar;
-        this.f36236c = view;
+        this.f36283b = bVar;
+        this.f36284c = view;
     }
 
     private static d a() {
@@ -152,9 +152,9 @@ public final class c {
     }
 
     private void c(boolean z10) {
-        d dVar = this.f36234a;
+        d dVar = this.f36282a;
         if (dVar != null) {
-            dVar.b(this.f36235b, this.f36236c, z10);
+            dVar.b(this.f36283b, this.f36284c, z10);
         }
     }
 
@@ -163,9 +163,9 @@ public final class c {
     }
 
     public void d() {
-        d dVar = this.f36234a;
+        d dVar = this.f36282a;
         if (dVar != null) {
-            dVar.a(this.f36236c);
+            dVar.a(this.f36284c);
         }
     }
 }

@@ -55,8 +55,8 @@ public /* synthetic */ class CheckpointDataV2025$$serializer implements h0 {
         KSerializer u11 = gt.a.u(CheckpointEmoji$$serializer.INSTANCE);
         KSerializer u12 = gt.a.u(CheckpointGuild$$serializer.INSTANCE);
         KSerializer u13 = gt.a.u(CheckpointApplication$$serializer.INSTANCE);
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{UserId$$serializer.INSTANCE, n2Var, n2Var, n2Var, p0.f31057a, n2Var, n2Var, n2Var, u10, u11, u12, u13};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{UserId$$serializer.INSTANCE, n2Var, n2Var, n2Var, p0.f31105a, n2Var, n2Var, n2Var, u10, u11, u12, u13};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

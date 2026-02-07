@@ -43,7 +43,7 @@ public /* synthetic */ class UnicodeEmojis$Emoji$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = UnicodeEmojis.Emoji.$childSerializers;
-        return new KSerializer[]{lazyArr[0].getValue(), n2.f31041a};
+        return new KSerializer[]{lazyArr[0].getValue(), n2.f31089a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

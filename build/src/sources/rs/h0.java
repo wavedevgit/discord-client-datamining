@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow;
 final class h0 implements g0 {
     @Override // rs.g0
     public Flow a(j0 j0Var) {
-        return g.w(e0.f49253d);
+        return g.w(e0.f49301d);
     }
 
     public String toString() {

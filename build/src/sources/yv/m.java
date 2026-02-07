@@ -11,7 +11,7 @@ import kotlin.text.StringsKt;
 public final class m implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m f55651a = new m();
+    public static final m f55699a = new m();
 
     private m() {
     }
@@ -30,14 +30,14 @@ public final class m implements su.b {
     private final n b(List list) {
         Object b10;
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             Object obj = list.get(0);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
             Object obj2 = list.get(1);
             Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any?>");
             b10 = Result.b(new n((String) obj, (List) obj2));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) == null) {

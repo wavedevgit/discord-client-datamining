@@ -11,10 +11,10 @@ import qr.y;
 public final class i extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final i f35116c = new i();
+    public static final i f35164c = new i();
 
     private i() {
-        super(gt.a.H(x.f48059e));
+        super(gt.a.H(x.f48107e));
     }
 
     @Override // jt.a

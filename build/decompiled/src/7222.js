@@ -1,167 +1,300 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-            var1 = exports;
-            var2 = global;
-            var5 = var2.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var2 = true;
-            var3.value = var2;
-            var2 = '__esModule';
-            var2 = var4.bind(var5)(var1, var2, var3);
-            var2 = function arg0() {
-                var2 = arg0;
-                var1 = var2.split;
-                var0 = /\\?\\/ / ;
-                var2 = var1.bind(var2)(var0);
-                var1 = var2.filter;
-                var0 = function(arg0) { // Environment: var0
-                    _fun59014: for (var _fun59014_ip = 0;;) switch (_fun59014_ip) {
-                        case 0:
-                            var2 = arg0;
-                            var1 = var2.length;
-                            var0 = 0;
-                            var0 = var1 > var0;
-                            if (!var0) {
-                                _fun59014_ip = 25;
-                                continue _fun59014
-                            }
-                        case 17:
-                            var1 = ',';
-                            var0 = var1 !== var2;
-                        case 25:
-                            return var0;
-                    }
-                };
-                var0 = var1.bind(var2)(var0);
-                var0 = var0.length;
-                return var0;
-            };
-            var1.getNumberOfUrlSegments = var2;
-            var2 = function arg0() {
-                _fun59015: for (var _fun59015_ip = 0;;) switch (_fun59015_ip) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.Linking;
+    var _closure1_slot3 = var4;
+    var3 = var3.NativeModules;
+    var4 = var3.RNIapModule;
+    var _closure1_slot4 = var4;
+    var5 = var3.RNIapModule;
+    var _closure1_slot5 = var5;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun59029: for (var _fun59029_ip = 0;;) switch (_fun59029_ip) {
                     case 0:
-                        var0 = arg0;
-                        var5 = var0.protocol;
-                        var7 = var0.host;
-                        var4 = var0.path;
-                        var3 = '';
-                        var2 = var3;
-                        if (!var5) {
-                            _fun59015_ip = 56;
-                            continue _fun59015
-                        }
-                    case 31:
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var1 = var0.concat;
-                        var0 = '://';
-                        var2 = var1.bind(var3)(var5, var0);
-                    case 56:
-                        var1 = var7;
-                        if (!var1) {
-                            _fun59015_ip = 143;
-                            continue _fun59015
-                        }
-                    case 62:
-                        var6 = var7.replace;
-                        var5 = /^.*@/;
-                        var0 = '[filtered]:[filtered]@';
-                        var6 = var6.bind(var7)(var5, var0);
-                        var5 = var6.replace;
-                        var0 = /(:80)$/;
-                        var6 = var5.bind(var6)(var0, var3);
-                        var5 = var6.replace;
-                        var0 = /(:443)$/;
-                        var1 = var5.bind(var6)(var0, var3);
-                    case 143:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59015_ip = 149;
-                            continue _fun59015
+                            _fun59029_ip = 133;
+                            continue _fun59029
                         }
-                    case 146:
-                        var1 = var3;
-                    case 149:
-                        var0 = global;
-                        var0 = var0.HermesInternal;
-                        var0 = var0.concat;
-                        var0 = var0.bind(var3)(var2, var1, var4);
+                    case 10:
+                        var1 = arg0;
+                        var7 = var1.sku;
+                        var4 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var2 = 3;
+                        var3 = var3[var2];
+                        var2 = undefined;
+                        var3 = var4.bind(var2)(var3);
+                        var2 = var3.checkNativeAndroidAvailable;
+                        var2 = var2.bind(var3)();
+                        var4 = _closure1_slot3;
+                        var3 = var4.openURL;
+                        var2 = _closure1_slot4;
+                        var1 = var2.getPackageName;
+                        var1 = var1.bind(var2)();
+                        SaveGenerator(address = 84);
+                    case 82:
+                        return var1;
+                    case 84:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun59029_ip = 130;
+                            continue _fun59029
+                        }
+                    case 90:
+                        var2 = global;
+                        var2 = var2.HermesInternal;
+                        var6 = var2.concat;
+                        var5 = 'https://play.google.com/store/account/subscriptions?package=';
+                        var2 = '&sku=';
+                        var2 = var6.bind(var5)(var1, var2, var7);
+                        var2 = var3.bind(var4)(var2);
+                        return var2;
+                    case 130:
+                        return var1;
+                    case 133:
                         return var0;
                 }
             };
-            var1.getSanitizedUrlString = var2;
-            var2 = function arg0() {
-                _fun59016: for (var _fun59016_ip = 0;;) switch (_fun59016_ip) {
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var4 = var3.bind(var0)();
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun59033: for (var _fun59033_ip = 0;;) switch (_fun59033_ip) {
                     case 0:
-                        var2 = arg0;
+                        StartGenerator();
+                        var1 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59016_ip = 10;
-                            continue _fun59016
+                            _fun59033_ip = 259;
+                            continue _fun59033
                         }
-                    case 6:
-                        var0 = {};
-                        return var0;
-                    case 10:
-                        var1 = var2.match;
-                        var0 = /^(([^:\/?#]+):)?(\\/\\ / ([ ^ \/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/;
-                                var4 = var1.bind(var2)(var0);
-                                if (var4) {
-                                    _fun59016_ip = 42;
-                                    continue _fun59016
-                                }
-                                case 38:
-                                var0 = {};
-                                return var0;
-                                case 42:
-                                var0 = 6;
-                                var3 = var4[var0];
-                                if (var3) {
-                                    _fun59016_ip = 56;
-                                    continue _fun59016
-                                }
-                                case 52:
-                                var3 = '';
-                                case 56:
-                                var0 = 8;
-                                var2 = var4[var0];
-                                if (var2) {
-                                    _fun59016_ip = 70;
-                                    continue _fun59016
-                                }
-                                case 66:
-                                var2 = '';
-                                case 70:
-                                var0 = {};
-                                var1 = 4;
-                                var1 = var4[var1];
-                                var0.host = var1;
-                                var1 = 5;
-                                var5 = var4[var1];
-                                var0.path = var5;
-                                var5 = 2;
-                                var5 = var4[var5];
-                                var0.protocol = var5;
-                                var0.search = var3;
-                                var0.hash = var2;
-                                var1 = var4[var1];
-                                var1 = var1 + var3;
-                                var1 = var1 + var2;
-                                var0.relative = var1;
-                                return var0;
+                    case 13:
+                        var12 = var1.packageName;
+                        var11 = var1.productId;
+                        var10 = var1.productToken;
+                        var9 = var1.accessToken;
+                        var1 = var1.isSub;
+                        var8 = 'products';
+                        if (!var1) {
+                            _fun59033_ip = 58;
+                            continue _fun59033
+                        }
+                    case 54:
+                        var8 = 'subscriptions';
+                    case 58:
+                        var2 = global;
+                        var1 = var2.HermesInternal;
+                        var7 = var1.concat;
+                        var22 = 'https://androidpublisher.googleapis.com/androidpublisher/v3/applications/';
+                        var20 = '/purchases/';
+                        var18 = '/';
+                        var16 = '/tokens/';
+                        var14 = '?access_token=';
+                        var21 = var12;
+                        var19 = var8;
+                        var17 = var11;
+                        var15 = var10;
+                        var13 = var9;
+                        var5 = var22[var7](var21, var20, var19, var18, var17, var16, var15, var14, var13, var12);
+                        var4 = var2.fetch;
+                        var3 = {};
+                        var1 = 'GET';
+                        var3.method = var1;
+                        var1 = {};
+                        var6 = 'application/json';
+                        var1['Content-Type'] = var6;
+                        var3.headers = var1;
+                        var1 = undefined;
+                        var1 = var4.bind(var1)(var5, var3);
+                        SaveGenerator(address = 165);
+                    case 163:
+                        return var1;
+                    case 165:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (var3) {
+                            _fun59033_ip = 256;
+                            continue _fun59033
+                        }
+                    case 171:
+                        var3 = var1.ok;
+                        if (var3) {
+                            _fun59033_ip = 243;
+                            continue _fun59033
+                        }
+                    case 180:
+                        var5 = var2.Object;
+                        var4 = var5.assign;
+                        var6 = var2.Error;
+                        var21 = var1.statusText;
+                        var3 = var6.prototype;
+                        var3 = Object.create(var3, {
+                            constructor: {
+                                value: var6
                             }
-                        };
-                        var1.parseUrl = var2;
-                        var0 = function arg0() {
-                            var3 = arg0;
-                            var2 = var3.split;
-                            var1 = /[?#]/;
-                            var0 = 1;
-                            var1 = var2.bind(var3)(var1, var0);
-                            var0 = 0;
-                            var0 = var1[var0];
-                            return var0;
-                        };
-                        var1.stripUrlQueryAndFragment = var0;
-                        var0 = undefined;
+                        });
+                        var22 = var3;
+                        var2 = new var22[var6](var21, var20);
+                        var3 = var2 instanceof Object ? var2 : var3;
+                        var2 = {};
+                        var6 = var1.status;
+                        var2.statusCode = var6;
+                        var2 = var4.bind(var5)(var3, var2);
+                        throw var2;
+                    case 243:
+                        var2 = var1.json;
+                        var2 = var2.bind(var1)();
+                        return var2;
+                    case 256:
+                        return var1;
+                    case 259:
                         return var0;
-                })(undefined, undefined, undefined, undefined, undefined, undefined, []);
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function arg0() {
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var2.AndroidModule = var5;
+    var5 = function() {
+        _fun59035: for (var _fun59035_ip = 0;;) switch (_fun59035_ip) {
+            case 0:
+                var0 = _closure1_slot4;
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 2;
+                var2 = var2[var1];
+                var1 = undefined;
+                var1 = var3.bind(var1)(var2);
+                var1 = var1.InstallSourceAndroid;
+                if (var0) {
+                    _fun59035_ip = 46;
+                    continue _fun59035
+                }
+            case 38:
+                var0 = var1.AMAZON;
+                _fun59035_ip = 52;
+                continue _fun59035;
+            case 46:
+                var0 = var1.GOOGLE_PLAY;
+            case 52:
+                return var0;
+        }
+    };
+    var2.getInstallSourceAndroid = var5;
+    var2.deepLinkToSubscriptionsAndroid = var4;
+    var2.validateReceiptAndroid = var3;
+    var3 = function arg0() {
+        var0 = arg0;
+        var3 = var0.token;
+        var2 = var0.developerPayload;
+        var4 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var4.bind(var0)(var1);
+        var0 = var1.getAndroidModule;
+        var1 = var0.bind(var1)();
+        var0 = var1.acknowledgePurchase;
+        var0 = var0.bind(var1)(var3, var2);
+        return var0;
+    };
+    var2.acknowledgePurchaseAndroid = var3;
+    var1 = function arg0() {
+        _fun59037: for (var _fun59037_ip = 0;;) switch (_fun59037_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 3;
+                var2 = var2[var0];
+                var0 = undefined;
+                var0 = var3.bind(var0)(var2);
+                var0 = var0.isAndroid;
+                if (!var0) {
+                    _fun59037_ip = 41;
+                    continue _fun59037
+                }
+            case 34:
+                var0 = _closure1_slot4;
+                if (var0) {
+                    _fun59037_ip = 68;
+                    continue _fun59037
+                }
+            case 41:
+                var0 = global;
+                var3 = var0.Promise;
+                var2 = var3.reject;
+                var0 = 'This is only available on Android clients';
+                var0 = var2.bind(var3)(var0);
+                _fun59037_ip = 86;
+                continue _fun59037;
+            case 68:
+                var3 = _closure1_slot5;
+                var2 = var3.isFeatureSupported;
+                var1 = arg0;
+                var0 = var2.bind(var3)(var1);
+            case 86:
+                return var0;
+        }
+    };
+    var2.isFeatureSupported = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 7214, 7215]);

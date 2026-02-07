@@ -14,17 +14,17 @@ public abstract class a {
     public static final class C0697a extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final un.g f52769a;
+        private final un.g f52817a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0697a(un.g extractedBarcode) {
             super(null);
             Intrinsics.checkNotNullParameter(extractedBarcode, "extractedBarcode");
-            this.f52769a = extractedBarcode;
+            this.f52817a = extractedBarcode;
         }
 
         public final un.g a() {
-            return this.f52769a;
+            return this.f52817a;
         }
     }
 
@@ -32,7 +32,7 @@ public abstract class a {
     public static final class b extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f52770a = new b();
+        public static final b f52818a = new b();
 
         private b() {
             super(null);
@@ -58,26 +58,26 @@ public abstract class a {
     public static final class c extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final t0.c f52771a;
+        private final t0.c f52819a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final a f52772b;
+        private final a f52820b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(t0.c side, a frontOrBackData) {
             super(null);
             Intrinsics.checkNotNullParameter(side, "side");
             Intrinsics.checkNotNullParameter(frontOrBackData, "frontOrBackData");
-            this.f52771a = side;
-            this.f52772b = frontOrBackData;
+            this.f52819a = side;
+            this.f52820b = frontOrBackData;
         }
 
         public final a a() {
-            return this.f52772b;
+            return this.f52820b;
         }
 
         public final t0.c b() {
-            return this.f52771a;
+            return this.f52819a;
         }
     }
 
@@ -85,17 +85,17 @@ public abstract class a {
     public static final class d extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h0 f52773a;
+        private final h0 f52821a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(h0 metadata) {
             super(null);
             Intrinsics.checkNotNullParameter(metadata, "metadata");
-            this.f52773a = metadata;
+            this.f52821a = metadata;
         }
 
         public final h0 a() {
-            return this.f52773a;
+            return this.f52821a;
         }
     }
 
@@ -103,17 +103,17 @@ public abstract class a {
     public static final class e extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final i0 f52774a;
+        private final i0 f52822a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(i0 imageLightCondition) {
             super(null);
             Intrinsics.checkNotNullParameter(imageLightCondition, "imageLightCondition");
-            this.f52774a = imageLightCondition;
+            this.f52822a = imageLightCondition;
         }
 
         public final i0 a() {
-            return this.f52774a;
+            return this.f52822a;
         }
     }
 
@@ -121,17 +121,17 @@ public abstract class a {
     public static final class f extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final d0 f52775a;
+        private final d0 f52823a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(d0 extractedTexts) {
             super(null);
             Intrinsics.checkNotNullParameter(extractedTexts, "extractedTexts");
-            this.f52775a = extractedTexts;
+            this.f52823a = extractedTexts;
         }
 
         public final d0 a() {
-            return this.f52775a;
+            return this.f52823a;
         }
     }
 

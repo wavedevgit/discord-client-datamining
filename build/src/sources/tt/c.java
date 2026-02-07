@@ -23,58 +23,58 @@ import st.a;
 public final class c implements tt.e, tt.d {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f50900r = L();
+    public static final c f50948r = L();
 
     /* renamed from: a  reason: collision with root package name */
-    private final rt.x f50901a;
+    private final rt.x f50949a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f50902b;
+    private final e f50950b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tt.b f50903c;
+    private final tt.b f50951c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f50904d;
+    private final List f50952d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f50905e;
+    private final Map f50953e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final j f50906f;
+    private final j f50954f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f50907g;
+    private final boolean f50955g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f50908h;
+    private final boolean f50956h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f50909i;
+    private final boolean f50957i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f50910j;
+    private final int f50958j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final st.g f50911k;
+    private final st.g f50959k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f50912l;
+    private final boolean f50960l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f50913m;
+    private final boolean f50961m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final boolean f50914n;
+    private final boolean f50962n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final rt.x f50915o;
+    private final rt.x f50963o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f50916p;
+    private final int f50964p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f50917q;
+    private final boolean f50965q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -94,10 +94,10 @@ public final class c implements tt.e, tt.d {
     public static class b implements tt.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Map f50918a;
+        final /* synthetic */ Map f50966a;
 
         b(Map map) {
-            this.f50918a = map;
+            this.f50966a = map;
         }
 
         @Override // tt.d
@@ -106,7 +106,7 @@ public final class c implements tt.e, tt.d {
             int f10 = sVar.f();
             int i10 = f10 + 3;
             if (i10 <= charSequence.length()) {
-                net.time4j.tz.k kVar = (net.time4j.tz.k) this.f50918a.get(charSequence.subSequence(f10, i10).toString());
+                net.time4j.tz.k kVar = (net.time4j.tz.k) this.f50966a.get(charSequence.subSequence(f10, i10).toString());
                 if (kVar != null) {
                     sVar.l(i10);
                     return kVar;
@@ -124,25 +124,25 @@ public final class c implements tt.e, tt.d {
     public static /* synthetic */ class C0671c {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f50919a;
+        static final /* synthetic */ int[] f50967a;
 
         static {
             int[] iArr = new int[w.values().length];
-            f50919a = iArr;
+            f50967a = iArr;
             try {
                 iArr[w.CLDR.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f50919a[w.CLDR_24.ordinal()] = 2;
+                f50967a[w.CLDR_24.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f50919a[w.CLDR_DATE.ordinal()] = 3;
+                f50967a[w.CLDR_DATE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f50919a[w.SIMPLE_DATE_FORMAT.ordinal()] = 4;
+                f50967a[w.SIMPLE_DATE_FORMAT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -152,66 +152,66 @@ public final class c implements tt.e, tt.d {
     public static final class d {
 
         /* renamed from: n  reason: collision with root package name */
-        private static final rt.c f50920n = st.a.e("CUSTOM_DAY_PERIOD", net.time4j.k.class);
+        private static final rt.c f50968n = st.a.e("CUSTOM_DAY_PERIOD", net.time4j.k.class);
 
         /* renamed from: a  reason: collision with root package name */
-        private final rt.x f50921a;
+        private final rt.x f50969a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final rt.x f50922b;
+        private final rt.x f50970b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Locale f50923c;
+        private final Locale f50971c;
 
         /* renamed from: d  reason: collision with root package name */
-        private List f50924d;
+        private List f50972d;
 
         /* renamed from: e  reason: collision with root package name */
-        private LinkedList f50925e;
+        private LinkedList f50973e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f50926f;
+        private int f50974f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f50927g;
+        private int f50975g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f50928h;
+        private int f50976h;
 
         /* renamed from: i  reason: collision with root package name */
-        private String f50929i;
+        private String f50977i;
 
         /* renamed from: j  reason: collision with root package name */
-        private net.time4j.k f50930j;
+        private net.time4j.k f50978j;
 
         /* renamed from: k  reason: collision with root package name */
-        private Map f50931k;
+        private Map f50979k;
 
         /* renamed from: l  reason: collision with root package name */
-        private rt.x f50932l;
+        private rt.x f50980l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f50933m;
+        private int f50981m;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class a implements rt.n {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ rt.n f50934d;
+            final /* synthetic */ rt.n f50982d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ rt.n f50935e;
+            final /* synthetic */ rt.n f50983e;
 
             a(rt.n nVar, rt.n nVar2) {
-                this.f50934d = nVar;
-                this.f50935e = nVar2;
+                this.f50982d = nVar;
+                this.f50983e = nVar2;
             }
 
             @Override // rt.n
             /* renamed from: a */
             public boolean test(rt.o oVar) {
-                if (this.f50934d.test(oVar) && this.f50935e.test(oVar)) {
+                if (this.f50982d.test(oVar) && this.f50983e.test(oVar)) {
                     return true;
                 }
                 return false;
@@ -225,10 +225,10 @@ public final class c implements tt.e, tt.d {
         private i H(rt.p pVar) {
             List list;
             i iVar;
-            if (this.f50924d.isEmpty()) {
+            if (this.f50972d.isEmpty()) {
                 iVar = null;
             } else {
-                iVar = (i) this.f50924d.get(list.size() - 1);
+                iVar = (i) this.f50972d.get(list.size() - 1);
             }
             if (iVar == null) {
                 return null;
@@ -247,24 +247,24 @@ public final class c implements tt.e, tt.d {
         }
 
         private void J(rt.p pVar) {
-            rt.x j10 = c.j(this.f50921a, this.f50922b, pVar);
-            int s10 = c.s(j10, this.f50921a, this.f50922b);
-            if (s10 >= this.f50933m) {
-                this.f50932l = j10;
-                this.f50933m = s10;
+            rt.x j10 = c.j(this.f50969a, this.f50970b, pVar);
+            int s10 = c.s(j10, this.f50969a, this.f50970b);
+            if (s10 >= this.f50981m) {
+                this.f50980l = j10;
+                this.f50981m = s10;
             }
         }
 
         private void K() {
-            if (R(this.f50921a)) {
+            if (R(this.f50969a)) {
                 return;
             }
             throw new IllegalStateException("Timezone names in specific non-location format can only be reliably combined with instant-like types, for example \"Moment\".");
         }
 
         private void M() {
-            for (int size = this.f50924d.size() - 1; size >= 0; size--) {
-                i iVar = (i) this.f50924d.get(size);
+            for (int size = this.f50972d.size() - 1; size >= 0; size--) {
+                i iVar = (i) this.f50972d.get(size);
                 if (!iVar.i()) {
                     if (iVar.g()) {
                         throw new IllegalArgumentException("Cannot define more than one element with decimal digits.");
@@ -277,7 +277,7 @@ public final class c implements tt.e, tt.d {
 
         private void N(boolean z10, boolean z11) {
             M();
-            if (!z10 && !z11 && this.f50927g != -1) {
+            if (!z10 && !z11 && this.f50975g != -1) {
                 throw new IllegalArgumentException("Cannot add fractional element with variable width after another numerical element with variable width.");
             }
         }
@@ -287,15 +287,15 @@ public final class c implements tt.e, tt.d {
             st.a a10 = new a.b(P()).a();
             tt.b bVar2 = a10;
             if (kVar != null) {
-                if (this.f50925e.isEmpty()) {
-                    bVar = new tt.b(a10, this.f50923c);
+                if (this.f50973e.isEmpty()) {
+                    bVar = new tt.b(a10, this.f50971c);
                 } else {
-                    bVar = (tt.b) this.f50925e.getLast();
+                    bVar = (tt.b) this.f50973e.getLast();
                 }
-                bVar2 = bVar.m(f50920n, kVar);
+                bVar2 = bVar.m(f50968n, kVar);
             }
             for (rt.s sVar : net.time4j.g0.i0().u()) {
-                for (rt.p pVar : sVar.d(this.f50923c, bVar2)) {
+                for (rt.p pVar : sVar.d(this.f50971c, bVar2)) {
                     if (z10 && pVar.d() == 'b' && S(pVar)) {
                         return (st.t) c.h(pVar);
                     }
@@ -329,10 +329,10 @@ public final class c implements tt.e, tt.d {
             if (!pVar.name().endsWith("_DAY_PERIOD")) {
                 return false;
             }
-            if (this.f50922b != null || this.f50921a.F(pVar)) {
+            if (this.f50970b != null || this.f50969a.F(pVar)) {
                 return true;
             }
-            rt.x xVar = this.f50921a;
+            rt.x xVar = this.f50969a;
             do {
                 xVar = xVar.c();
                 if (xVar == null) {
@@ -353,7 +353,7 @@ public final class c implements tt.e, tt.d {
         }
 
         private void V() {
-            this.f50928h = 0;
+            this.f50976h = 0;
         }
 
         private void o(StringBuilder sb2) {
@@ -372,24 +372,24 @@ public final class c implements tt.e, tt.d {
             i H = H(pVar);
             r rVar = new r(pVar, z10, i10, i11, xVar, z11);
             if (z10) {
-                int i12 = this.f50927g;
+                int i12 = this.f50975g;
                 if (i12 == -1) {
                     w(rVar);
                     return this;
                 }
-                i iVar = (i) this.f50924d.get(i12);
+                i iVar = (i) this.f50972d.get(i12);
                 w(rVar);
-                List list = this.f50924d;
+                List list = this.f50972d;
                 if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                    this.f50927g = i12;
-                    this.f50924d.set(i12, iVar.t(i10));
+                    this.f50975g = i12;
+                    this.f50972d.set(i12, iVar.t(i10));
                 }
                 return this;
             } else if (H != null && H.j() && !H.i()) {
                 throw new IllegalStateException("Numerical element with variable width can't be inserted after another numerical element. Consider \"addFixedXXX()\" instead.");
             } else {
                 w(rVar);
-                this.f50927g = this.f50924d.size() - 1;
+                this.f50975g = this.f50972d.size() - 1;
                 return this;
             }
         }
@@ -399,9 +399,9 @@ public final class c implements tt.e, tt.d {
             tt.b bVar;
             int i10;
             int i11;
-            this.f50927g = -1;
-            if (!this.f50925e.isEmpty()) {
-                bVar = (tt.b) this.f50925e.getLast();
+            this.f50975g = -1;
+            if (!this.f50973e.isEmpty()) {
+                bVar = (tt.b) this.f50973e.getLast();
                 i10 = bVar.g();
                 i11 = bVar.i();
             } else {
@@ -410,12 +410,12 @@ public final class c implements tt.e, tt.d {
                 i11 = 0;
             }
             i iVar = new i(hVar, i10, i11, bVar);
-            int i12 = this.f50928h;
+            int i12 = this.f50976h;
             if (i12 > 0) {
                 iVar = iVar.n(i12, 0);
-                this.f50928h = 0;
+                this.f50976h = 0;
             }
-            this.f50924d.add(iVar);
+            this.f50972d.add(iVar);
         }
 
         public d A(st.t tVar) {
@@ -425,7 +425,7 @@ public final class c implements tt.e, tt.d {
         }
 
         public d B() {
-            if (R(this.f50921a)) {
+            if (R(this.f50969a)) {
                 w(c0.INSTANCE);
                 return this;
             }
@@ -441,20 +441,20 @@ public final class c implements tt.e, tt.d {
             J(pVar);
             H(pVar);
             f0 f0Var = new f0(pVar);
-            int i10 = this.f50927g;
+            int i10 = this.f50975g;
             if (i10 == -1) {
                 w(f0Var);
-                this.f50927g = this.f50924d.size() - 1;
+                this.f50975g = this.f50972d.size() - 1;
                 return this;
             }
-            i iVar = (i) this.f50924d.get(i10);
-            b0(st.a.f50115f, st.g.STRICT);
+            i iVar = (i) this.f50972d.get(i10);
+            b0(st.a.f50163f, st.g.STRICT);
             w(f0Var);
             L();
-            List list = this.f50924d;
+            List list = this.f50972d;
             if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                this.f50927g = i10;
-                this.f50924d.set(i10, iVar.t(2));
+                this.f50975g = i10;
+                this.f50972d.set(i10, iVar.t(2));
             }
             return this;
         }
@@ -462,10 +462,10 @@ public final class c implements tt.e, tt.d {
         /* JADX INFO: Access modifiers changed from: package-private */
         public d E(rt.p pVar, int i10, boolean z10) {
             i iVar;
-            if (this.f50924d.isEmpty()) {
+            if (this.f50972d.isEmpty()) {
                 iVar = null;
             } else {
-                List list = this.f50924d;
+                List list = this.f50972d;
                 iVar = (i) list.get(list.size() - 1);
             }
             if (iVar != null && !iVar.i() && iVar.j() && i10 == 4) {
@@ -481,16 +481,16 @@ public final class c implements tt.e, tt.d {
         public c G(st.a aVar) {
             boolean z10;
             if (aVar != null) {
-                int size = this.f50924d.size();
+                int size = this.f50972d.size();
                 HashMap hashMap = null;
                 for (int i10 = 0; i10 < size; i10++) {
-                    i iVar = (i) this.f50924d.get(i10);
+                    i iVar = (i) this.f50972d.get(i10);
                     if (iVar.i()) {
                         int f10 = iVar.f();
                         int i11 = size - 1;
                         while (true) {
                             if (i11 > i10) {
-                                if (((i) this.f50924d.get(i11)).f() == f10) {
+                                if (((i) this.f50972d.get(i11)).f() == f10) {
                                     if (hashMap == null) {
                                         hashMap = new HashMap();
                                     }
@@ -511,22 +511,22 @@ public final class c implements tt.e, tt.d {
                 }
                 if (hashMap != null) {
                     for (Integer num : hashMap.keySet()) {
-                        this.f50924d.set(num.intValue(), hashMap.get(num));
+                        this.f50972d.set(num.intValue(), hashMap.get(num));
                     }
                 }
-                c cVar = new c(this.f50921a, this.f50922b, this.f50923c, this.f50924d, this.f50931k, aVar, this.f50932l, null);
-                String str = this.f50929i;
+                c cVar = new c(this.f50969a, this.f50970b, this.f50971c, this.f50972d, this.f50979k, aVar, this.f50980l, null);
+                String str = this.f50977i;
                 if (str == null) {
                     str = "";
                 }
-                if (this.f50930j != null || !str.isEmpty()) {
-                    tt.b bVar = cVar.f50903c;
+                if (this.f50978j != null || !str.isEmpty()) {
+                    tt.b bVar = cVar.f50951c;
                     if (!str.isEmpty()) {
-                        bVar = bVar.m(st.a.f50133x, str);
+                        bVar = bVar.m(st.a.f50181x, str);
                     }
-                    net.time4j.k kVar = this.f50930j;
+                    net.time4j.k kVar = this.f50978j;
                     if (kVar != null) {
-                        bVar = bVar.m(f50920n, kVar);
+                        bVar = bVar.m(f50968n, kVar);
                     }
                     return new c(cVar, bVar, (a) null);
                 }
@@ -536,15 +536,15 @@ public final class c implements tt.e, tt.d {
         }
 
         public d L() {
-            this.f50925e.removeLast();
+            this.f50973e.removeLast();
             V();
             return this;
         }
 
         public rt.x P() {
-            rt.x xVar = this.f50922b;
+            rt.x xVar = this.f50970b;
             if (xVar == null) {
-                return this.f50921a;
+                return this.f50969a;
             }
             return xVar;
         }
@@ -554,14 +554,14 @@ public final class c implements tt.e, tt.d {
             i iVar;
             int i11;
             int i12;
-            if (!this.f50925e.isEmpty()) {
-                i10 = ((tt.b) this.f50925e.getLast()).i();
+            if (!this.f50973e.isEmpty()) {
+                i10 = ((tt.b) this.f50973e.getLast()).i();
             } else {
                 i10 = 0;
             }
-            if (!this.f50924d.isEmpty()) {
-                i11 = this.f50924d.size() - 1;
-                iVar = (i) this.f50924d.get(i11);
+            if (!this.f50972d.isEmpty()) {
+                i11 = this.f50972d.size() - 1;
+                iVar = (i) this.f50972d.get(i11);
                 i12 = iVar.f();
             } else {
                 iVar = null;
@@ -569,9 +569,9 @@ public final class c implements tt.e, tt.d {
                 i12 = -1;
             }
             if (i10 == i12) {
-                this.f50924d.set(i11, iVar.v());
+                this.f50972d.set(i11, iVar.v());
                 V();
-                this.f50927g = -1;
+                this.f50975g = -1;
                 return this;
             }
             throw new IllegalStateException("Cannot start or-block without any previous step in current section.");
@@ -592,8 +592,8 @@ public final class c implements tt.e, tt.d {
             a aVar;
             V();
             a.b bVar2 = new a.b();
-            if (!this.f50925e.isEmpty()) {
-                bVar = (tt.b) this.f50925e.getLast();
+            if (!this.f50973e.isEmpty()) {
+                bVar = (tt.b) this.f50973e.getLast();
                 bVar2.f(bVar.e());
                 nVar2 = bVar.f();
             } else {
@@ -601,8 +601,8 @@ public final class c implements tt.e, tt.d {
                 nVar2 = null;
             }
             int Q = Q(bVar) + 1;
-            int i10 = this.f50926f + 1;
-            this.f50926f = i10;
+            int i10 = this.f50974f + 1;
+            this.f50974f = i10;
             if (nVar != null) {
                 if (nVar2 == null) {
                     aVar = nVar;
@@ -612,7 +612,7 @@ public final class c implements tt.e, tt.d {
             } else {
                 aVar = nVar2;
             }
-            this.f50925e.addLast(new tt.b(bVar2.a(), this.f50923c, Q, i10, aVar));
+            this.f50973e.addLast(new tt.b(bVar2.a(), this.f50971c, Q, i10, aVar));
             return this;
         }
 
@@ -620,16 +620,16 @@ public final class c implements tt.e, tt.d {
             tt.b l10;
             I(cVar);
             V();
-            if (this.f50925e.isEmpty()) {
-                l10 = new tt.b(new a.b().b(cVar, c10).a(), this.f50923c);
+            if (this.f50973e.isEmpty()) {
+                l10 = new tt.b(new a.b().b(cVar, c10).a(), this.f50971c);
             } else {
-                tt.b bVar = (tt.b) this.f50925e.getLast();
+                tt.b bVar = (tt.b) this.f50973e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.b(cVar, c10);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f50925e.addLast(l10);
+            this.f50973e.addLast(l10);
             return this;
         }
 
@@ -637,16 +637,16 @@ public final class c implements tt.e, tt.d {
             tt.b l10;
             I(cVar);
             V();
-            if (this.f50925e.isEmpty()) {
-                l10 = new tt.b(new a.b().c(cVar, i10).a(), this.f50923c);
+            if (this.f50973e.isEmpty()) {
+                l10 = new tt.b(new a.b().c(cVar, i10).a(), this.f50971c);
             } else {
-                tt.b bVar = (tt.b) this.f50925e.getLast();
+                tt.b bVar = (tt.b) this.f50973e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.c(cVar, i10);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f50925e.addLast(l10);
+            this.f50973e.addLast(l10);
             return this;
         }
 
@@ -654,16 +654,16 @@ public final class c implements tt.e, tt.d {
             tt.b l10;
             I(cVar);
             V();
-            if (this.f50925e.isEmpty()) {
-                l10 = new tt.b(new a.b().d(cVar, r52).a(), this.f50923c);
+            if (this.f50973e.isEmpty()) {
+                l10 = new tt.b(new a.b().d(cVar, r52).a(), this.f50971c);
             } else {
-                tt.b bVar = (tt.b) this.f50925e.getLast();
+                tt.b bVar = (tt.b) this.f50973e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.d(cVar, r52);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f50925e.addLast(l10);
+            this.f50973e.addLast(l10);
             return this;
         }
 
@@ -699,14 +699,14 @@ public final class c implements tt.e, tt.d {
             }
             N(z11, z10);
             j jVar = new j(pVar, i10, i11, z10);
-            int i12 = this.f50927g;
+            int i12 = this.f50975g;
             if (i12 != -1 && z11) {
-                i iVar = (i) this.f50924d.get(i12);
+                i iVar = (i) this.f50972d.get(i12);
                 w(jVar);
-                List list = this.f50924d;
+                List list = this.f50972d;
                 if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                    this.f50927g = i12;
-                    this.f50924d.set(i12, iVar.t(i10));
+                    this.f50975g = i12;
+                    this.f50972d.set(i12, iVar.t(i10));
                 }
                 return this;
             }
@@ -737,24 +737,24 @@ public final class c implements tt.e, tt.d {
             m mVar = new m(str);
             int c10 = mVar.c();
             if (c10 > 0) {
-                if (this.f50924d.isEmpty()) {
+                if (this.f50972d.isEmpty()) {
                     iVar = null;
                 } else {
-                    List list = this.f50924d;
+                    List list = this.f50972d;
                     iVar = (i) list.get(list.size() - 1);
                 }
                 if (iVar != null && iVar.g() && !iVar.i()) {
                     throw new IllegalStateException("Numerical literal can't be inserted after an element with decimal digits.");
                 }
             }
-            if (c10 != 0 && (i10 = this.f50927g) != -1) {
-                i iVar2 = (i) this.f50924d.get(i10);
+            if (c10 != 0 && (i10 = this.f50975g) != -1) {
+                i iVar2 = (i) this.f50972d.get(i10);
                 w(mVar);
                 int f10 = iVar2.f();
-                List list2 = this.f50924d;
+                List list2 = this.f50972d;
                 if (f10 == ((i) list2.get(list2.size() - 1)).f()) {
-                    this.f50927g = i10;
-                    this.f50924d.set(i10, iVar2.t(c10));
+                    this.f50975g = i10;
+                    this.f50972d.set(i10, iVar2.t(c10));
                 }
                 return this;
             }
@@ -785,10 +785,10 @@ public final class c implements tt.e, tt.d {
             if (wVar != null) {
                 Map map = Collections.EMPTY_MAP;
                 int length = str.length();
-                Locale locale = this.f50923c;
+                Locale locale = this.f50971c;
                 StringBuilder sb2 = new StringBuilder();
-                if (!this.f50925e.isEmpty()) {
-                    locale = ((tt.b) this.f50925e.getLast()).h();
+                if (!this.f50973e.isEmpty()) {
+                    locale = ((tt.b) this.f50973e.getLast()).h();
                 }
                 int i10 = 0;
                 while (i10 < length) {
@@ -856,19 +856,19 @@ public final class c implements tt.e, tt.d {
                 }
                 o(sb2);
                 if (!map.isEmpty()) {
-                    int size = this.f50924d.size();
+                    int size = this.f50972d.size();
                     for (int i15 = 0; i15 < size; i15++) {
-                        i iVar = (i) this.f50924d.get(i15);
+                        i iVar = (i) this.f50972d.get(i15);
                         rt.p element = iVar.d().getElement();
                         if (map.containsKey(element)) {
-                            this.f50924d.set(i15, iVar.x((rt.p) map.get(element)));
+                            this.f50972d.set(i15, iVar.x((rt.p) map.get(element)));
                         }
                     }
                 }
-                if (this.f50929i != null) {
+                if (this.f50977i != null) {
                     str = "";
                 }
-                this.f50929i = str;
+                this.f50977i = str;
                 return this;
             }
             throw new NullPointerException("Missing pattern type.");
@@ -909,19 +909,19 @@ public final class c implements tt.e, tt.d {
                 throw new NullPointerException("Missing chronology.");
             }
             if (locale != null) {
-                this.f50921a = xVar;
-                this.f50922b = xVar2;
-                this.f50923c = locale;
-                this.f50924d = new ArrayList();
-                this.f50925e = new LinkedList();
-                this.f50926f = 0;
-                this.f50927g = -1;
-                this.f50928h = 0;
-                this.f50929i = null;
-                this.f50930j = null;
-                this.f50931k = new HashMap();
-                this.f50932l = xVar;
-                this.f50933m = 0;
+                this.f50969a = xVar;
+                this.f50970b = xVar2;
+                this.f50971c = locale;
+                this.f50972d = new ArrayList();
+                this.f50973e = new LinkedList();
+                this.f50974f = 0;
+                this.f50975g = -1;
+                this.f50976h = 0;
+                this.f50977i = null;
+                this.f50978j = null;
+                this.f50979k = new HashMap();
+                this.f50980l = xVar;
+                this.f50981m = 0;
                 return;
             }
             throw new NullPointerException("Missing locale.");
@@ -933,17 +933,17 @@ public final class c implements tt.e, tt.d {
     public static class e implements rt.u {
 
         /* renamed from: d  reason: collision with root package name */
-        private final rt.x f50937d;
+        private final rt.x f50985d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f50938e;
+        private final List f50986e;
 
         private e(rt.x xVar) {
-            this.f50937d = xVar;
+            this.f50985d = xVar;
             ArrayList arrayList = new ArrayList();
             arrayList.addAll(xVar.u());
             arrayList.addAll(net.time4j.g0.i0().u());
-            this.f50938e = Collections.unmodifiableList(arrayList);
+            this.f50986e = Collections.unmodifiableList(arrayList);
         }
 
         static e h(rt.x xVar) {
@@ -955,7 +955,7 @@ public final class c implements tt.e, tt.d {
 
         @Override // rt.u
         public rt.f0 a() {
-            return this.f50937d.a();
+            return this.f50985d.a();
         }
 
         @Override // rt.u
@@ -971,7 +971,7 @@ public final class c implements tt.e, tt.d {
         @Override // rt.u
         /* renamed from: d */
         public net.time4j.r l(rt.q qVar, rt.d dVar, boolean z10, boolean z11) {
-            Object l10 = this.f50937d.l(qVar, dVar, z10, z11);
+            Object l10 = this.f50985d.l(qVar, dVar, z10, z11);
             net.time4j.g0 g0Var = (net.time4j.g0) net.time4j.g0.i0().l(qVar, dVar, z10, z11);
             if (l10 instanceof rt.m) {
                 return (net.time4j.r) c.h(net.time4j.r.b((rt.m) rt.m.class.cast(l10), g0Var));
@@ -980,7 +980,7 @@ public final class c implements tt.e, tt.d {
         }
 
         public rt.x e() {
-            return this.f50937d;
+            return this.f50985d;
         }
 
         public boolean equals(Object obj) {
@@ -988,22 +988,22 @@ public final class c implements tt.e, tt.d {
                 return true;
             }
             if (obj instanceof e) {
-                return this.f50937d.equals(((e) obj).f50937d);
+                return this.f50985d.equals(((e) obj).f50985d);
             }
             return false;
         }
 
         public List f() {
-            return this.f50938e;
+            return this.f50986e;
         }
 
         @Override // rt.u
         public int g() {
-            return this.f50937d.g();
+            return this.f50985d.g();
         }
 
         public int hashCode() {
-            return this.f50937d.hashCode();
+            return this.f50985d.hashCode();
         }
 
         @Override // rt.u
@@ -1013,7 +1013,7 @@ public final class c implements tt.e, tt.d {
         }
 
         public String toString() {
-            return this.f50937d.p().getName();
+            return this.f50985d.p().getName();
         }
     }
 
@@ -1022,13 +1022,13 @@ public final class c implements tt.e, tt.d {
     public static class f implements rt.o, pt.f {
 
         /* renamed from: d  reason: collision with root package name */
-        private final net.time4j.r f50939d;
+        private final net.time4j.r f50987d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f50940e;
+        private final String f50988e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final net.time4j.tz.k f50941i;
+        private final net.time4j.tz.k f50989i;
 
         /* synthetic */ f(net.time4j.r rVar, String str, net.time4j.tz.k kVar, a aVar) {
             this(rVar, str, kVar);
@@ -1037,11 +1037,11 @@ public final class c implements tt.e, tt.d {
         private pt.f b() {
             rt.f0 f0Var;
             try {
-                f0Var = rt.x.G(this.f50939d.c().getClass()).a();
+                f0Var = rt.x.G(this.f50987d.c().getClass()).a();
             } catch (RuntimeException unused) {
-                f0Var = rt.f0.f49502a;
+                f0Var = rt.f0.f49550a;
             }
-            return this.f50939d.a(net.time4j.tz.l.N(this.f50941i), f0Var);
+            return this.f50987d.a(net.time4j.tz.l.N(this.f50989i), f0Var);
         }
 
         @Override // pt.f
@@ -1061,38 +1061,38 @@ public final class c implements tt.e, tt.d {
 
         @Override // rt.o
         public boolean n(rt.p pVar) {
-            return this.f50939d.n(pVar);
+            return this.f50987d.n(pVar);
         }
 
         @Override // rt.o
         public int q(rt.p pVar) {
-            return this.f50939d.q(pVar);
+            return this.f50987d.q(pVar);
         }
 
         @Override // rt.o
         public Object s(rt.p pVar) {
-            return this.f50939d.s(pVar);
+            return this.f50987d.s(pVar);
         }
 
         @Override // rt.o
         public Object t(rt.p pVar) {
-            return this.f50939d.t(pVar);
+            return this.f50987d.t(pVar);
         }
 
         @Override // rt.o
         public net.time4j.tz.k u() {
-            return this.f50941i;
+            return this.f50989i;
         }
 
         @Override // rt.o
         public Object v(rt.p pVar) {
-            return this.f50939d.v(pVar);
+            return this.f50987d.v(pVar);
         }
 
         private f(net.time4j.r rVar, String str, net.time4j.tz.k kVar) {
-            this.f50939d = rVar;
-            this.f50940e = str;
-            this.f50941i = kVar;
+            this.f50987d = rVar;
+            this.f50988e = str;
+            this.f50989i = kVar;
         }
     }
 
@@ -1185,7 +1185,7 @@ public final class c implements tt.e, tt.d {
         rt.x xVar3;
         Object G;
         rt.x c10 = xVar.c();
-        if (c10 != null && xVar != (xVar3 = cVar.f50915o)) {
+        if (c10 != null && xVar != (xVar3 = cVar.f50963o)) {
             if (c10 == xVar3) {
                 G = F(cVar, c10, c10.u(), charSequence, sVar, dVar, gVar, true, z10);
             } else {
@@ -1248,21 +1248,21 @@ public final class c implements tt.e, tt.d {
         v vVar2;
         int i11;
         rt.p element;
-        v vVar3 = new v(i10, this.f50912l);
+        v vVar3 = new v(i10, this.f50960l);
         vVar3.d0(sVar.f());
-        if (this.f50907g) {
+        if (this.f50955g) {
             LinkedList linkedList2 = new LinkedList();
             linkedList2.push(vVar3);
             linkedList = linkedList2;
         } else {
             linkedList = null;
         }
-        int size = this.f50904d.size();
+        int size = this.f50952d.size();
         int i12 = 0;
         int i13 = 0;
         int i14 = 0;
         while (i14 < size) {
-            i iVar = (i) this.f50904d.get(i14);
+            i iVar = (i) this.f50952d.get(i14);
             if (linkedList == null) {
                 vVar2 = vVar3;
                 vVar = vVar2;
@@ -1270,7 +1270,7 @@ public final class c implements tt.e, tt.d {
                 i12 = iVar.b();
                 int i15 = i12;
                 while (i15 > i13) {
-                    vVar3 = new v(i10 >>> 1, this.f50912l);
+                    vVar3 = new v(i10 >>> 1, this.f50960l);
                     vVar3.d0(sVar.f());
                     linkedList.push(vVar3);
                     i15--;
@@ -1286,8 +1286,8 @@ public final class c implements tt.e, tt.d {
             int i16 = i12;
             sVar.b();
             iVar.q(charSequence, sVar, dVar, vVar2, z10);
-            if (sVar.j() && (element = iVar.d().getElement()) != null && this.f50905e.containsKey(element)) {
-                vVar2.I(element, this.f50905e.get(element));
+            if (sVar.j() && (element = iVar.d().getElement()) != null && this.f50953e.containsKey(element)) {
+                vVar2.I(element, this.f50953e.get(element));
                 vVar2.E(n0.ERROR_MESSAGE, null);
                 sVar.a();
                 sVar.b();
@@ -1297,7 +1297,7 @@ public final class c implements tt.e, tt.d {
                 if (!iVar.i()) {
                     i11 = i14 + 1;
                     while (i11 < size) {
-                        i iVar2 = (i) this.f50904d.get(i11);
+                        i iVar2 = (i) this.f50952d.get(i11);
                         if (iVar2.i() && iVar2.f() == f10) {
                             break;
                         }
@@ -1315,14 +1315,14 @@ public final class c implements tt.e, tt.d {
                     }
                     int b10 = iVar.b();
                     int i17 = i11;
-                    for (int i18 = i14 + 1; i18 < size && ((i) this.f50904d.get(i18)).b() > b10; i18++) {
+                    for (int i18 = i14 + 1; i18 < size && ((i) this.f50952d.get(i18)).b() > b10; i18++) {
                         i17 = i18;
                     }
                     int i19 = size - 1;
                     while (true) {
                         if (i19 <= i17) {
                             break;
-                        } else if (((i) this.f50904d.get(i19)).f() == f10) {
+                        } else if (((i) this.f50952d.get(i19)).f() == f10) {
                             i17 = i19;
                             break;
                         } else {
@@ -1386,12 +1386,12 @@ public final class c implements tt.e, tt.d {
         hashMap.put("PST", net.time4j.tz.p.r(fVar, 8));
         hashMap.put("PDT", net.time4j.tz.p.r(fVar, 7));
         N.w(new tt.f(b0.TIMEZONE_OFFSET, new a(), new b(hashMap)));
-        return N.F().V(net.time4j.tz.p.f39641v);
+        return N.F().V(net.time4j.tz.p.f39689v);
     }
 
     private static void M(d dVar) {
         d X = dVar.X();
-        rt.c cVar = st.a.f50116g;
+        rt.c cVar = st.a.f50164g;
         st.v vVar = st.v.ABBREVIATED;
         X.b0(cVar, vVar).z(net.time4j.f0.G).L().n(", ").L().j(net.time4j.f0.F, 1, 2).l(' ').b0(cVar, vVar).z(net.time4j.f0.D).L().l(' ').g(net.time4j.f0.A, 4).l(' ').g(net.time4j.g0.F, 2).l(':').g(net.time4j.g0.H, 2).X().l(':').g(net.time4j.g0.J, 2).L().l(' ');
     }
@@ -1443,7 +1443,7 @@ public final class c implements tt.e, tt.d {
                         if (i12 < length && str.charAt(i12) == '\'') {
                             i11 = i12;
                         } else {
-                            if (z10 && i11 == i10 + 2 && d.R(dVar.f50921a)) {
+                            if (z10 && i11 == i10 + 2 && d.R(dVar.f50969a)) {
                                 throw new IllegalArgumentException("Z-literal (=UTC+00) should not be escaped: " + str);
                             }
                             i10 = i11;
@@ -1458,7 +1458,7 @@ public final class c implements tt.e, tt.d {
             i10++;
         }
         String sb3 = sb2.toString();
-        int i13 = C0671c.f50919a[wVar.ordinal()];
+        int i13 = C0671c.f50967a[wVar.ordinal()];
         if (i13 == 1 || i13 == 2 || i13 == 3 || i13 == 4) {
             if ((sb3.contains("h") || sb3.contains("K")) && !sb3.contains("a") && !sb3.contains("b") && !sb3.contains("B")) {
                 throw new IllegalArgumentException("12-hour-clock requires am/pm-marker or dayperiod: " + str);
@@ -1511,22 +1511,22 @@ public final class c implements tt.e, tt.d {
 
     private rt.o k(Object obj, rt.d dVar) {
         net.time4j.r q02;
-        e eVar = this.f50902b;
+        e eVar = this.f50950b;
         if (eVar == null) {
-            return this.f50901a.k(obj, dVar);
+            return this.f50949a.k(obj, dVar);
         }
         try {
             Class p10 = eVar.e().p();
-            rt.f0 f0Var = (rt.f0) dVar.b(st.a.f50130u, this.f50902b.a());
+            rt.f0 f0Var = (rt.f0) dVar.b(st.a.f50178u, this.f50950b.a());
             net.time4j.a0 a0Var = (net.time4j.a0) net.time4j.a0.class.cast(obj);
-            net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.a(st.a.f50113d);
+            net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.a(st.a.f50161d);
             String str = "";
             if (rt.l.class.isAssignableFrom(p10)) {
-                android.support.v4.media.session.b.a(h(this.f50902b.e()));
-                str = (String) dVar.a(st.a.f50129t);
+                android.support.v4.media.session.b.a(h(this.f50950b.e()));
+                str = (String) dVar.a(st.a.f50177t);
                 q02 = a0Var.p0(null, str, kVar, f0Var);
             } else if (rt.m.class.isAssignableFrom(p10)) {
-                q02 = a0Var.q0(this.f50902b.e(), kVar, f0Var);
+                q02 = a0Var.q0(this.f50950b.e(), kVar, f0Var);
             } else {
                 throw new IllegalStateException("Unexpected calendar override: " + p10);
             }
@@ -1539,9 +1539,9 @@ public final class c implements tt.e, tt.d {
     }
 
     private String m(rt.o oVar) {
-        StringBuilder sb2 = new StringBuilder(this.f50904d.size() * 8);
+        StringBuilder sb2 = new StringBuilder(this.f50952d.size() * 8);
         try {
-            K(oVar, sb2, this.f50903c, false);
+            K(oVar, sb2, this.f50951c, false);
             return sb2.toString();
         } catch (IOException e10) {
             throw new IllegalStateException(e10);
@@ -1609,7 +1609,7 @@ public final class c implements tt.e, tt.d {
     private boolean w() {
         boolean z10 = z();
         if (z10) {
-            h d10 = ((i) this.f50904d.get(0)).d();
+            h d10 = ((i) this.f50952d.get(0)).d();
             if (d10 instanceof tt.f) {
                 return ((tt.f) tt.f.class.cast(d10)).c();
             }
@@ -1621,7 +1621,7 @@ public final class c implements tt.e, tt.d {
     }
 
     private boolean x() {
-        if (this.f50901a.c() == null && this.f50902b == null) {
+        if (this.f50949a.c() == null && this.f50950b == null) {
             return true;
         }
         return false;
@@ -1642,7 +1642,7 @@ public final class c implements tt.e, tt.d {
         Object E = E(charSequence, sVar);
         if (E != null) {
             int f10 = sVar.f();
-            if (!this.f50913m && f10 < charSequence.length()) {
+            if (!this.f50961m && f10 < charSequence.length()) {
                 throw new ParseException("Unparsed trailing characters: " + P(f10, charSequence), f10);
             }
             return E;
@@ -1651,15 +1651,15 @@ public final class c implements tt.e, tt.d {
     }
 
     public Object E(CharSequence charSequence, s sVar) {
-        if (this.f50914n) {
-            rt.x xVar = this.f50901a;
-            return F(this, xVar, xVar.u(), charSequence, sVar, this.f50903c, this.f50911k, false, true);
+        if (this.f50962n) {
+            rt.x xVar = this.f50949a;
+            return F(this, xVar, xVar.u(), charSequence, sVar, this.f50951c, this.f50959k, false, true);
         }
-        return a(charSequence, sVar, this.f50903c);
+        return a(charSequence, sVar, this.f50951c);
     }
 
     public String I(Object obj) {
-        return m(k(obj, this.f50903c));
+        return m(k(obj, this.f50951c));
     }
 
     public Set J(Object obj, Appendable appendable, rt.d dVar) {
@@ -1674,12 +1674,12 @@ public final class c implements tt.e, tt.d {
         int i11;
         Appendable appendable2 = appendable;
         if (appendable2 != null) {
-            int size = this.f50904d.size();
+            int size = this.f50952d.size();
             int i12 = 0;
             rt.d dVar2 = dVar;
-            boolean z11 = dVar2 == this.f50903c;
+            boolean z11 = dVar2 == this.f50951c;
             LinkedHashSet linkedHashSet = z10 ? new LinkedHashSet(size) : null;
-            if (this.f50908h) {
+            if (this.f50956h) {
                 LinkedList linkedList2 = new LinkedList();
                 linkedList2.push(new StringBuilder(size << 2));
                 if (z10) {
@@ -1691,7 +1691,7 @@ public final class c implements tt.e, tt.d {
                 }
                 int i13 = 0;
                 while (i13 < size) {
-                    i iVar = (i) this.f50904d.get(i13);
+                    i iVar = (i) this.f50952d.get(i13);
                     int b10 = iVar.b();
                     int i14 = b10;
                     while (i14 > i12) {
@@ -1733,7 +1733,7 @@ public final class c implements tt.e, tt.d {
                         if (!iVar.i()) {
                             i11 = i13 + 1;
                             while (i11 < size) {
-                                i iVar2 = (i) this.f50904d.get(i11);
+                                i iVar2 = (i) this.f50952d.get(i11);
                                 if (iVar2.i() && iVar2.f() == f10) {
                                     break;
                                 }
@@ -1779,7 +1779,7 @@ public final class c implements tt.e, tt.d {
                 int i15 = 0;
                 while (i15 < size) {
                     try {
-                        i iVar3 = (i) this.f50904d.get(i15);
+                        i iVar3 = (i) this.f50952d.get(i15);
                         iVar3.r(oVar, appendable2, dVar, linkedHashSet, z11);
                         if (iVar3.i()) {
                             i15 = iVar3.u();
@@ -1801,23 +1801,23 @@ public final class c implements tt.e, tt.d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c R(Map map, tt.b bVar) {
-        tt.b k10 = tt.b.k(bVar, this.f50903c);
-        return new c(new c(this, map), k10, (net.time4j.history.d) k10.b(wt.a.f54112a, null));
+        tt.b k10 = tt.b.k(bVar, this.f50951c);
+        return new c(new c(this, map), k10, (net.time4j.history.d) k10.b(wt.a.f54160a, null));
     }
 
     public c S(net.time4j.tz.l lVar) {
         if (lVar != null) {
-            return new c(this, this.f50903c.l(new a.b().f(this.f50903c.e()).i(lVar.z()).a()).m(st.a.f50114e, lVar.E()));
+            return new c(this, this.f50951c.l(new a.b().f(this.f50951c.e()).i(lVar.z()).a()).m(st.a.f50162e, lVar.E()));
         }
         throw new NullPointerException("Missing timezone id.");
     }
 
     public c T(rt.c cVar, Enum r42) {
-        return new c(this, new a.b().f(this.f50903c.e()).d(cVar, r42).a());
+        return new c(this, new a.b().f(this.f50951c.e()).d(cVar, r42).a());
     }
 
     public c U(st.g gVar) {
-        return T(st.a.f50115f, gVar);
+        return T(st.a.f50163f, gVar);
     }
 
     public c V(net.time4j.tz.k kVar) {
@@ -1832,23 +1832,23 @@ public final class c implements tt.e, tt.d {
         net.time4j.tz.k kVar;
         net.time4j.a0 a0Var;
         net.time4j.tz.g gVar2;
-        st.g gVar3 = this.f50911k;
-        tt.b bVar = this.f50903c;
+        st.g gVar3 = this.f50959k;
+        tt.b bVar = this.f50951c;
         if (dVar != bVar) {
             p pVar2 = new p(dVar, bVar);
             z10 = false;
             pVar = pVar2;
-            gVar = (st.g) pVar2.b(st.a.f50115f, st.g.SMART);
+            gVar = (st.g) pVar2.b(st.a.f50163f, st.g.SMART);
         } else {
             z10 = true;
             pVar = dVar;
             gVar = gVar3;
         }
         boolean z11 = z10;
-        e eVar = this.f50902b;
+        e eVar = this.f50950b;
         if (eVar != null) {
             List f10 = eVar.f();
-            e eVar2 = this.f50902b;
+            e eVar2 = this.f50950b;
             net.time4j.r rVar = (net.time4j.r) F(this, eVar2, f10, charSequence, sVar, pVar, gVar, true, z11);
             if (sVar.i()) {
                 return null;
@@ -1857,7 +1857,7 @@ public final class c implements tt.e, tt.d {
             if (h10.k()) {
                 kVar = h10.u();
             } else {
-                rt.c cVar = st.a.f50113d;
+                rt.c cVar = st.a.f50161d;
                 if (pVar.c(cVar)) {
                     kVar = (net.time4j.tz.k) pVar.a(cVar);
                 } else {
@@ -1865,11 +1865,11 @@ public final class c implements tt.e, tt.d {
                 }
             }
             if (kVar != null) {
-                rt.f0 f0Var = (rt.f0) dVar.b(st.a.f50130u, eVar2.a());
+                rt.f0 f0Var = (rt.f0) dVar.b(st.a.f50178u, eVar2.a());
                 rt.b0 b0Var = rt.b0.DAYLIGHT_SAVING;
                 if (h10.n(b0Var)) {
                     boolean booleanValue = ((Boolean) h10.s(b0Var)).booleanValue();
-                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(st.a.f50114e, net.time4j.tz.l.f39579o);
+                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(st.a.f50162e, net.time4j.tz.l.f39627o);
                     if (booleanValue) {
                         gVar2 = net.time4j.tz.g.EARLIER_OFFSET;
                     } else {
@@ -1877,7 +1877,7 @@ public final class c implements tt.e, tt.d {
                     }
                     a0Var = rVar.a(net.time4j.tz.l.N(kVar).Q(oVar.a(gVar2)), f0Var);
                 } else {
-                    rt.c cVar2 = st.a.f50114e;
+                    rt.c cVar2 = st.a.f50162e;
                     if (pVar.c(cVar2)) {
                         a0Var = rVar.a(net.time4j.tz.l.N(kVar).Q((net.time4j.tz.o) pVar.a(cVar2)), f0Var);
                     } else {
@@ -1898,7 +1898,7 @@ public final class c implements tt.e, tt.d {
             }
             return h11;
         }
-        return G(this, this.f50901a, 0, charSequence, sVar, pVar, gVar, z11);
+        return G(this, this.f50949a, 0, charSequence, sVar, pVar, gVar, z11);
     }
 
     @Override // tt.e
@@ -1914,7 +1914,7 @@ public final class c implements tt.e, tt.d {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (this.f50901a.equals(cVar.f50901a) && y(this.f50902b, cVar.f50902b) && this.f50903c.equals(cVar.f50903c) && this.f50905e.equals(cVar.f50905e) && this.f50904d.equals(cVar.f50904d)) {
+            if (this.f50949a.equals(cVar.f50949a) && y(this.f50950b, cVar.f50950b) && this.f50951c.equals(cVar.f50951c) && this.f50953e.equals(cVar.f50953e) && this.f50952d.equals(cVar.f50952d)) {
                 return true;
             }
         }
@@ -1922,7 +1922,7 @@ public final class c implements tt.e, tt.d {
     }
 
     public int hashCode() {
-        return (this.f50901a.hashCode() * 7) + (this.f50903c.hashCode() * 31) + (this.f50904d.hashCode() * 37);
+        return (this.f50949a.hashCode() * 7) + (this.f50951c.hashCode() * 31) + (this.f50952d.hashCode() * 37);
     }
 
     public String l(Object obj) {
@@ -1930,38 +1930,38 @@ public final class c implements tt.e, tt.d {
     }
 
     public rt.d o() {
-        return this.f50903c;
+        return this.f50951c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public tt.b p() {
-        return this.f50903c;
+        return this.f50951c;
     }
 
     public rt.x q() {
-        return this.f50901a;
+        return this.f50949a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map r() {
-        return this.f50905e;
+        return this.f50953e;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
         sb2.append("net.time4j.format.ChronoFormatter[chronology=");
-        sb2.append(this.f50901a.p().getName());
-        if (this.f50902b != null) {
+        sb2.append(this.f50949a.p().getName());
+        if (this.f50950b != null) {
             sb2.append(", override=");
-            sb2.append(this.f50902b);
+            sb2.append(this.f50950b);
         }
         sb2.append(", default-attributes=");
-        sb2.append(this.f50903c);
+        sb2.append(this.f50951c);
         sb2.append(", default-values=");
-        sb2.append(this.f50905e);
+        sb2.append(this.f50953e);
         sb2.append(", processors=");
         boolean z10 = true;
-        for (i iVar : this.f50904d) {
+        for (i iVar : this.f50952d) {
             if (z10) {
                 sb2.append('{');
                 z10 = false;
@@ -1975,12 +1975,12 @@ public final class c implements tt.e, tt.d {
     }
 
     public Locale u() {
-        return this.f50903c.h();
+        return this.f50951c.h();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean z() {
-        if (this.f50916p == 1 && !this.f50907g) {
+        if (this.f50964p == 1 && !this.f50955g) {
             return true;
         }
         return false;
@@ -1993,13 +1993,13 @@ public final class c implements tt.e, tt.d {
     private c(rt.x xVar, rt.x xVar2, Locale locale, List list, Map map, st.a aVar, rt.x xVar3) {
         if (xVar != null) {
             if (!list.isEmpty()) {
-                this.f50901a = xVar;
-                this.f50902b = e.h(xVar2);
-                this.f50915o = xVar3;
+                this.f50949a = xVar;
+                this.f50950b = e.h(xVar2);
+                this.f50963o = xVar3;
                 tt.b d10 = tt.b.d(xVar2 == null ? xVar : xVar2, aVar, locale);
-                this.f50903c = d10;
-                this.f50911k = (st.g) d10.b(st.a.f50115f, st.g.SMART);
-                this.f50905e = Collections.unmodifiableMap(map);
+                this.f50951c = d10;
+                this.f50959k = (st.g) d10.b(st.a.f50163f, st.g.SMART);
+                this.f50953e = Collections.unmodifiableMap(map);
                 Iterator it = list.iterator();
                 j jVar = null;
                 boolean z10 = true;
@@ -2027,17 +2027,17 @@ public final class c implements tt.e, tt.d {
                         }
                     }
                 }
-                this.f50906f = jVar;
-                this.f50907g = z11;
-                this.f50908h = z12;
-                this.f50909i = z13;
-                this.f50910j = i10;
-                this.f50912l = z10;
-                this.f50913m = ((Boolean) this.f50903c.b(st.a.f50127r, Boolean.FALSE)).booleanValue();
-                this.f50914n = x();
-                this.f50916p = list.size();
-                this.f50904d = n(list);
-                this.f50917q = w();
+                this.f50954f = jVar;
+                this.f50955g = z11;
+                this.f50956h = z12;
+                this.f50957i = z13;
+                this.f50958j = i10;
+                this.f50960l = z10;
+                this.f50961m = ((Boolean) this.f50951c.b(st.a.f50175r, Boolean.FALSE)).booleanValue();
+                this.f50962n = x();
+                this.f50964p = list.size();
+                this.f50952d = n(list);
+                this.f50965q = w();
                 return;
             }
             throw new IllegalStateException("No format processors defined.");
@@ -2046,7 +2046,7 @@ public final class c implements tt.e, tt.d {
     }
 
     private c(c cVar, st.a aVar) {
-        this(cVar, cVar.f50903c.l(aVar), (net.time4j.history.d) null);
+        this(cVar, cVar.f50951c.l(aVar), (net.time4j.history.d) null);
     }
 
     private c(c cVar, tt.b bVar) {
@@ -2056,24 +2056,24 @@ public final class c implements tt.e, tt.d {
     private c(c cVar, tt.b bVar, net.time4j.history.d dVar) {
         rt.p C;
         if (bVar != null) {
-            this.f50901a = cVar.f50901a;
-            this.f50902b = cVar.f50902b;
-            this.f50915o = cVar.f50915o;
-            this.f50903c = bVar;
-            this.f50911k = (st.g) bVar.b(st.a.f50115f, st.g.SMART);
-            this.f50905e = Collections.unmodifiableMap(new q(cVar.f50905e));
-            this.f50906f = cVar.f50906f;
-            this.f50907g = cVar.f50907g;
-            this.f50908h = cVar.f50908h;
-            this.f50909i = cVar.f50909i || dVar != null;
-            this.f50910j = cVar.f50910j;
-            int size = cVar.f50904d.size();
-            ArrayList arrayList = new ArrayList(cVar.f50904d);
-            boolean z10 = cVar.f50912l;
+            this.f50949a = cVar.f50949a;
+            this.f50950b = cVar.f50950b;
+            this.f50963o = cVar.f50963o;
+            this.f50951c = bVar;
+            this.f50959k = (st.g) bVar.b(st.a.f50163f, st.g.SMART);
+            this.f50953e = Collections.unmodifiableMap(new q(cVar.f50953e));
+            this.f50954f = cVar.f50954f;
+            this.f50955g = cVar.f50955g;
+            this.f50956h = cVar.f50956h;
+            this.f50957i = cVar.f50957i || dVar != null;
+            this.f50958j = cVar.f50958j;
+            int size = cVar.f50952d.size();
+            ArrayList arrayList = new ArrayList(cVar.f50952d);
+            boolean z10 = cVar.f50960l;
             for (int i10 = 0; i10 < size; i10++) {
                 i iVar = (i) arrayList.get(i10);
                 rt.p element = iVar.d().getElement();
-                rt.x xVar = this.f50901a;
+                rt.x xVar = this.f50949a;
                 xVar = xVar == net.time4j.a0.T() ? xVar.c() : xVar;
                 if (element != null && !xVar.E(element)) {
                     Iterator it = xVar.u().iterator();
@@ -2082,7 +2082,7 @@ public final class c implements tt.e, tt.d {
                             break;
                         }
                         rt.s sVar = (rt.s) it.next();
-                        if (sVar.d(cVar.u(), cVar.f50903c).contains(element)) {
+                        if (sVar.d(cVar.u(), cVar.f50951c).contains(element)) {
                             Iterator it2 = sVar.d(bVar.h(), bVar).iterator();
                             while (true) {
                                 if (!it2.hasNext()) {
@@ -2117,12 +2117,12 @@ public final class c implements tt.e, tt.d {
                     z10 = false;
                 }
             }
-            this.f50912l = z10;
-            this.f50913m = ((Boolean) this.f50903c.b(st.a.f50127r, Boolean.FALSE)).booleanValue();
-            this.f50914n = x();
-            this.f50916p = arrayList.size();
-            this.f50904d = n(arrayList);
-            this.f50917q = w();
+            this.f50960l = z10;
+            this.f50961m = ((Boolean) this.f50951c.b(st.a.f50175r, Boolean.FALSE)).booleanValue();
+            this.f50962n = x();
+            this.f50964p = arrayList.size();
+            this.f50952d = n(arrayList);
+            this.f50965q = w();
             return;
         }
         throw new NullPointerException("Missing global format attributes.");
@@ -2134,24 +2134,24 @@ public final class c implements tt.e, tt.d {
     }
 
     private c(c cVar, Map map) {
-        e eVar = cVar.f50902b;
+        e eVar = cVar.f50950b;
         rt.x e10 = eVar == null ? null : eVar.e();
         for (rt.p pVar : map.keySet()) {
-            j(cVar.f50901a, e10, pVar);
+            j(cVar.f50949a, e10, pVar);
         }
-        this.f50901a = cVar.f50901a;
-        this.f50902b = cVar.f50902b;
-        this.f50915o = cVar.f50915o;
-        this.f50903c = cVar.f50903c;
-        this.f50911k = cVar.f50911k;
-        this.f50906f = cVar.f50906f;
-        this.f50907g = cVar.f50907g;
-        this.f50908h = cVar.f50908h;
-        this.f50909i = cVar.f50909i;
-        this.f50910j = cVar.f50910j;
-        this.f50913m = cVar.f50913m;
-        HashMap hashMap = new HashMap(cVar.f50905e);
-        boolean z10 = cVar.f50912l;
+        this.f50949a = cVar.f50949a;
+        this.f50950b = cVar.f50950b;
+        this.f50963o = cVar.f50963o;
+        this.f50951c = cVar.f50951c;
+        this.f50959k = cVar.f50959k;
+        this.f50954f = cVar.f50954f;
+        this.f50955g = cVar.f50955g;
+        this.f50956h = cVar.f50956h;
+        this.f50957i = cVar.f50957i;
+        this.f50958j = cVar.f50958j;
+        this.f50961m = cVar.f50961m;
+        HashMap hashMap = new HashMap(cVar.f50953e);
+        boolean z10 = cVar.f50960l;
         for (rt.p pVar2 : map.keySet()) {
             Object obj = map.get(pVar2);
             if (obj == null) {
@@ -2161,11 +2161,11 @@ public final class c implements tt.e, tt.d {
                 z10 = z10 && v.T(pVar2);
             }
         }
-        this.f50905e = Collections.unmodifiableMap(hashMap);
-        this.f50912l = z10;
-        this.f50914n = x();
-        this.f50916p = cVar.f50916p;
-        this.f50904d = n(cVar.f50904d);
-        this.f50917q = w();
+        this.f50953e = Collections.unmodifiableMap(hashMap);
+        this.f50960l = z10;
+        this.f50962n = x();
+        this.f50964p = cVar.f50964p;
+        this.f50952d = n(cVar.f50952d);
+        this.f50965q = w();
     }
 }

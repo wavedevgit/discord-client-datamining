@@ -33,23 +33,23 @@ import yg.m;
 public class c {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f26764d = Pattern.compile("[0-9]+s");
+    private static final Pattern f26812d = Pattern.compile("[0-9]+s");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Charset f26765e = Charset.forName("UTF-8");
+    private static final Charset f26813e = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f26766a;
+    private final Context f26814a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final fj.b f26767b;
+    private final fj.b f26815b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f26768c = new e();
+    private final e f26816c = new e();
 
     public c(Context context, fj.b bVar) {
-        this.f26766a = context;
-        this.f26767b = bVar;
+        this.f26814a = context;
+        this.f26815b = bVar;
     }
 
     private static String a(String str, String str2, String str3) {
@@ -89,15 +89,15 @@ public class c {
 
     private String f() {
         try {
-            Context context = this.f26766a;
+            Context context = this.f26814a;
             byte[] a10 = com.google.android.gms.common.util.a.a(context, context.getPackageName());
             if (a10 == null) {
-                Log.e("ContentValues", "Could not get fingerprint hash for package: " + this.f26766a.getPackageName());
+                Log.e("ContentValues", "Could not get fingerprint hash for package: " + this.f26814a.getPackageName());
                 return null;
             }
             return h.a(a10, false);
         } catch (PackageManager.NameNotFoundException e10) {
-            Log.e("ContentValues", "No such package: " + this.f26766a.getPackageName(), e10);
+            Log.e("ContentValues", "No such package: " + this.f26814a.getPackageName(), e10);
             return null;
         }
     }
@@ -143,8 +143,8 @@ public class c {
             httpURLConnection.addRequestProperty("Accept", "application/json");
             httpURLConnection.addRequestProperty("Content-Encoding", "gzip");
             httpURLConnection.addRequestProperty("Cache-Control", "no-cache");
-            httpURLConnection.addRequestProperty("X-Android-Package", this.f26766a.getPackageName());
-            i iVar = (i) this.f26767b.get();
+            httpURLConnection.addRequestProperty("X-Android-Package", this.f26814a.getPackageName());
+            i iVar = (i) this.f26815b.get();
             if (iVar != null) {
                 try {
                     httpURLConnection.addRequestProperty("x-firebase-client", (String) m.a(iVar.a()));
@@ -164,7 +164,7 @@ public class c {
     }
 
     static long m(String str) {
-        q.b(f26764d.matcher(str).matches(), "Invalid Expiration Timestamp.");
+        q.b(f26812d.matcher(str).matches(), "Invalid Expiration Timestamp.");
         if (str != null && str.length() != 0) {
             return Long.parseLong(str.substring(0, str.length() - 1));
         }
@@ -173,7 +173,7 @@ public class c {
 
     private d n(HttpURLConnection httpURLConnection) {
         InputStream inputStream = httpURLConnection.getInputStream();
-        JsonReader jsonReader = new JsonReader(new InputStreamReader(inputStream, f26765e));
+        JsonReader jsonReader = new JsonReader(new InputStreamReader(inputStream, f26813e));
         f.a a10 = f.a();
         d.a a11 = d.a();
         jsonReader.beginObject();
@@ -214,7 +214,7 @@ public class c {
         if (errorStream == null) {
             return null;
         }
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(errorStream, f26765e));
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(errorStream, f26813e));
         try {
             try {
                 StringBuilder sb2 = new StringBuilder();
@@ -249,7 +249,7 @@ public class c {
 
     private f p(HttpURLConnection httpURLConnection) {
         InputStream inputStream = httpURLConnection.getInputStream();
-        JsonReader jsonReader = new JsonReader(new InputStreamReader(inputStream, f26765e));
+        JsonReader jsonReader = new JsonReader(new InputStreamReader(inputStream, f26813e));
         f.a a10 = f.a();
         jsonReader.beginObject();
         while (jsonReader.hasNext()) {
@@ -301,7 +301,7 @@ public class c {
     public d d(String str, String str2, String str3, String str4, String str5) {
         int responseCode;
         d n10;
-        if (this.f26768c.b()) {
+        if (this.f26816c.b()) {
             URL g10 = g(String.format("projects/%s/installations", str3));
             for (int i10 = 0; i10 <= 1; i10++) {
                 TrafficStats.setThreadStatsTag(32769);
@@ -314,7 +314,7 @@ public class c {
                     }
                     q(l10, str2, str4);
                     responseCode = l10.getResponseCode();
-                    this.f26768c.f(responseCode);
+                    this.f26816c.f(responseCode);
                 } catch (IOException | AssertionError unused) {
                 } catch (Throwable th2) {
                     l10.disconnect();
@@ -348,7 +348,7 @@ public class c {
     public f e(String str, String str2, String str3, String str4) {
         int responseCode;
         f p10;
-        if (this.f26768c.b()) {
+        if (this.f26816c.b()) {
             URL g10 = g(String.format("projects/%s/installations/%s/authTokens:generate", str3, str2));
             for (int i10 = 0; i10 <= 1; i10++) {
                 TrafficStats.setThreadStatsTag(32771);
@@ -359,7 +359,7 @@ public class c {
                     l10.setDoOutput(true);
                     r(l10);
                     responseCode = l10.getResponseCode();
-                    this.f26768c.f(responseCode);
+                    this.f26816c.f(responseCode);
                 } catch (IOException | AssertionError unused) {
                 } catch (Throwable th2) {
                     l10.disconnect();

@@ -6,7 +6,7 @@ import kotlin.jvm.functions.Function1;
 class g implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f34079d = new g();
+    public static final g f34127d = new g();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

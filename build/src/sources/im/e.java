@@ -20,57 +20,57 @@ import os.m0;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f26816a;
+    private final Map f26864a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f26817d;
+        int f26865d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Context f26818e;
+        final /* synthetic */ Context f26866e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Uri f26819i;
+        final /* synthetic */ Uri f26867i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ f f26820o;
+        final /* synthetic */ f f26868o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ e f26821p;
+        final /* synthetic */ e f26869p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Context context, Uri uri, f fVar, e eVar, Continuation continuation) {
             super(2, continuation);
-            this.f26818e = context;
-            this.f26819i = uri;
-            this.f26820o = fVar;
-            this.f26821p = eVar;
+            this.f26866e = context;
+            this.f26867i = uri;
+            this.f26868o = fVar;
+            this.f26869p = eVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f26818e, this.f26819i, this.f26820o, this.f26821p, continuation);
+            return new a(this.f26866e, this.f26867i, this.f26868o, this.f26869p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             boolean z10;
             wr.b.f();
-            if (this.f26817d == 0) {
+            if (this.f26865d == 0) {
                 kotlin.c.b(obj);
-                ContentResolver contentResolver = this.f26818e.getContentResolver();
-                im.a aVar = new im.a(this.f26819i);
-                aVar.h(contentResolver.getType(this.f26819i));
-                if (this.f26820o.b()) {
-                    aVar.j(contentResolver.getStreamTypes(this.f26819i, "*/*"));
+                ContentResolver contentResolver = this.f26866e.getContentResolver();
+                im.a aVar = new im.a(this.f26867i);
+                aVar.h(contentResolver.getType(this.f26867i));
+                if (this.f26868o.b()) {
+                    aVar.j(contentResolver.getStreamTypes(this.f26867i, "*/*"));
                 }
-                if (this.f26820o.h()) {
+                if (this.f26868o.h()) {
                     try {
-                        this.f26818e.getContentResolver().takePersistableUriPermission(this.f26819i, 3);
-                        aVar.a(this.f26819i);
+                        this.f26866e.getContentResolver().takePersistableUriPermission(this.f26867i, 3);
+                        aVar.a(this.f26867i);
                     } catch (Exception e10) {
                         String localizedMessage = e10.getLocalizedMessage();
                         if (localizedMessage == null && (localizedMessage = e10.getMessage()) == null) {
@@ -79,12 +79,12 @@ public final class e {
                         aVar.b(localizedMessage);
                     }
                 }
-                if (this.f26820o.b() && DocumentsContract.isDocumentUri(this.f26818e, this.f26819i)) {
+                if (this.f26868o.b() && DocumentsContract.isDocumentUri(this.f26866e, this.f26867i)) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                e eVar = this.f26821p;
+                e eVar = this.f26869p;
                 Intrinsics.checkNotNull(contentResolver);
                 eVar.f(contentResolver, aVar, z10);
                 return aVar;
@@ -94,7 +94,7 @@ public final class e {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -102,41 +102,41 @@ public final class e {
     static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f26822d;
+        Object f26870d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f26823e;
+        Object f26871e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f26824i;
+        Object f26872i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f26825o;
+        int f26873o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ List f26826p;
+        final /* synthetic */ List f26874p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ e f26827q;
+        final /* synthetic */ e f26875q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ Context f26828r;
+        final /* synthetic */ Context f26876r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ f f26829s;
+        final /* synthetic */ f f26877s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(List list, e eVar, Context context, f fVar, Continuation continuation) {
             super(2, continuation);
-            this.f26826p = list;
-            this.f26827q = eVar;
-            this.f26828r = context;
-            this.f26829s = fVar;
+            this.f26874p = list;
+            this.f26875q = eVar;
+            this.f26876r = context;
+            this.f26877s = fVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f26826p, this.f26827q, this.f26828r, this.f26829s, continuation);
+            return new b(this.f26874p, this.f26875q, this.f26876r, this.f26877s, continuation);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:11:0x003d  */
@@ -151,15 +151,15 @@ public final class e {
             /*
                 r7 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r7.f26825o
+                int r1 = r7.f26873o
                 r2 = 1
                 if (r1 == 0) goto L23
                 if (r1 != r2) goto L1b
-                java.lang.Object r1 = r7.f26824i
+                java.lang.Object r1 = r7.f26872i
                 android.net.Uri r1 = (android.net.Uri) r1
-                java.lang.Object r3 = r7.f26823e
+                java.lang.Object r3 = r7.f26871e
                 java.util.Iterator r3 = (java.util.Iterator) r3
-                java.lang.Object r4 = r7.f26822d
+                java.lang.Object r4 = r7.f26870d
                 com.facebook.react.bridge.WritableArray r4 = (com.facebook.react.bridge.WritableArray) r4
                 kotlin.c.b(r8)
                 goto L59
@@ -173,7 +173,7 @@ public final class e {
                 com.facebook.react.bridge.WritableArray r8 = com.facebook.react.bridge.Arguments.createArray()
                 java.lang.String r1 = "createArray(...)"
                 kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r8, r1)
-                java.util.List r1 = r7.f26826p
+                java.util.List r1 = r7.f26874p
                 java.util.Iterator r1 = r1.iterator()
                 r4 = r8
                 r3 = r1
@@ -183,19 +183,19 @@ public final class e {
                 java.lang.Object r8 = r3.next()
                 r1 = r8
                 android.net.Uri r1 = (android.net.Uri) r1
-                im.e r8 = r7.f26827q
-                android.content.Context r5 = r7.f26828r
-                im.f r6 = r7.f26829s
-                r7.f26822d = r4
-                r7.f26823e = r3
-                r7.f26824i = r1
-                r7.f26825o = r2
+                im.e r8 = r7.f26875q
+                android.content.Context r5 = r7.f26876r
+                im.f r6 = r7.f26877s
+                r7.f26870d = r4
+                r7.f26871e = r3
+                r7.f26872i = r1
+                r7.f26873o = r2
                 java.lang.Object r8 = im.e.a(r8, r5, r1, r6, r7)
                 if (r8 != r0) goto L59
                 return r0
             L59:
                 im.a r8 = (im.a) r8
-                im.e r5 = r7.f26827q
+                im.e r5 = r7.f26875q
                 java.util.Map r5 = im.e.b(r5)
                 java.lang.String r6 = r1.toString()
                 r5.put(r6, r1)
@@ -210,13 +210,13 @@ public final class e {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
     public e(Map uriMap) {
         Intrinsics.checkNotNullParameter(uriMap, "uriMap");
-        this.f26816a = uriMap;
+        this.f26864a = uriMap;
     }
 
     private final Object c(Cursor cursor, String str, Class cls) {

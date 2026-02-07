@@ -82,14 +82,14 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$3(BundleUpdaterManager bundleUpdaterManager, boolean z10) {
         bundleUpdaterManager.reactEvents.emitModuleEvent(bundleUpdaterManager.reactContext, new BundleDownloadedEvent(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit addListener$lambda$4(BundleUpdaterManager bundleUpdaterManager, List metrics) {
         Intrinsics.checkNotNullParameter(metrics, "metrics");
         bundleUpdaterManager.reactEvents.emitModuleEvent(bundleUpdaterManager.reactContext, new OtaCheckAttemptEvent(metrics));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -103,14 +103,14 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
                 return checkForUpdateAndReload$lambda$1$lambda$0;
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit checkForUpdateAndReload$lambda$1$lambda$0(BundleUpdaterManager bundleUpdaterManager, ViewGroup runOnActivity) {
         Intrinsics.checkNotNullParameter(runOnActivity, "$this$runOnActivity");
         bundleUpdaterManager.update();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void removeSpinnerView() {
@@ -132,7 +132,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
             runOnActivity.removeView(viewGroup);
         }
         bundleUpdaterManager.progressLayout = null;
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void runOnActivity(final Function1<? super ViewGroup, Unit> function1) {
@@ -185,7 +185,7 @@ public final class BundleUpdaterManager extends ReactContextBaseJavaModule {
     public static final Unit showSpinnerView$lambda$7(BundleUpdaterManager bundleUpdaterManager, ViewGroup runOnActivity) {
         Intrinsics.checkNotNullParameter(runOnActivity, "$this$runOnActivity");
         runOnActivity.addView(bundleUpdaterManager.progressLayout);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void update() {

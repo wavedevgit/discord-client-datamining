@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'mapDiscordToMuxMetadata';
         var0.key = var2;
         var2 = function arg0, arg1() {
-            _fun83537: for (var _fun83537_ip = 0;;) switch (_fun83537_ip) {
+            _fun83968: for (var _fun83968_ip = 0;;) switch (_fun83968_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = this;
@@ -58,15 +58,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.durationMs;
                     var3 = null;
                     if (!(var3 == var1)) {
-                        _fun83537_ip = 102;
-                        continue _fun83537
+                        _fun83968_ip = 104;
+                        continue _fun83968
                     }
                 case 80:
                     var5 = var2.contentMetadata;
                     var6 = var5.durationSec;
                     var5 = 1000;
                     var1 = var5 * var6;
-                case 102:
+                case 104:
                     var0.video_duration = var1;
                     var1 = var2.contentMetadata;
                     var1 = var1.contentType;
@@ -82,12 +82,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 != var5;
                     var1 = 'Discord';
                     if (!var6) {
-                        _fun83537_ip = 186;
-                        continue _fun83537
+                        _fun83968_ip = 188;
+                        continue _fun83968
                     }
-                case 183:
+                case 185:
                     var1 = var5;
-                case 186:
+                case 188:
                     var0.video_brand = var1;
                     var1 = 'Cloudflare';
                     var0.video_cdn = var1;
@@ -104,23 +104,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 == var5;
                     var4 = undefined;
                     if (var6) {
-                        _fun83537_ip = 269;
-                        continue _fun83537
+                        _fun83968_ip = 271;
+                        continue _fun83968
                     }
-                case 264:
+                case 266:
                     var4 = var5.userId;
-                case 269:
+                case 271:
                     var0.viewer_user_id = var4;
                     var2 = var2.userContext;
                     var3 = var3 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun83537_ip = 297;
-                        continue _fun83537
+                        _fun83968_ip = 299;
+                        continue _fun83968
                     }
-                case 289:
+                case 291:
                     var1 = var2.userTier;
-                case 297:
+                case 299:
                     var0.viewer_plan = var1;
                     return var0;
             }
@@ -132,9 +132,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getAppVersion';
         var0.key = var5;
         var5 = function() {
-            _fun83538: for (var _fun83538_ip = 0;;) switch (_fun83538_ip) {
+            _fun83969: for (var _fun83969_ip = 0;;) switch (_fun83969_ip) {
                 case 0:
-                    var0 = '5129';
+                    var0 = '5135';
                     return var0;
                 case 8:
                     CatchBlockStart(arg_register = 0);
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getBuildChannel';
         var0.key = var5;
         var1 = function() {
-            _fun83539: for (var _fun83539_ip = 0;;) switch (_fun83539_ip) {
+            _fun83970: for (var _fun83970_ip = 0;;) switch (_fun83970_ip) {
                 case 0:
                     var1 = undefined;
                     var3 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var4;
                     var2 = undefined;
                     if (var4) {
-                        _fun83539_ip = 38;
-                        continue _fun83539
+                        _fun83970_ip = 38;
+                        continue _fun83970
                     }
                 case 32:
                     var2 = var3.RELEASE_CHANNEL;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var2;
                     var0 = 'stable';
                     if (!var2) {
-                        _fun83539_ip = 55;
-                        continue _fun83539
+                        _fun83970_ip = 55;
+                        continue _fun83970
                     }
                 case 52:
                     var0 = var1;

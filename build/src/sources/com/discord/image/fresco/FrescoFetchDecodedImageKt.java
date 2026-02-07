@@ -33,10 +33,10 @@ public final class FrescoFetchDecodedImageKt {
         Intrinsics.checkNotNullParameter(context, "<this>");
         Intrinsics.checkNotNullParameter(onDecodedImage, "onDecodedImage");
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(str != null ? Uri.parse(str) : null);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(c.a(th2));
         }
         fetchDecodedImage(context, Result.g(b10) ? null : b10, postProcessor, onDecodedImage);
@@ -100,10 +100,10 @@ public final class FrescoFetchDecodedImageKt {
     public static final Object fetchDecodedImage(@NotNull Context context, String str, PostProcessor postProcessor, boolean z10, @NotNull Continuation<? super Bitmap> continuation) {
         Object b10;
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(str != null ? Uri.parse(str) : null);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(c.a(th2));
         }
         return fetchDecodedImage(context, Result.g(b10) ? null : b10, postProcessor, z10, continuation);
@@ -126,7 +126,7 @@ public final class FrescoFetchDecodedImageKt {
                 @Override // oa.b
                 protected void onNewResultImpl(Bitmap bitmap) {
                     CancellableContinuation cancellableContinuation = CancellableContinuation.this;
-                    Result.a aVar = Result.f32005e;
+                    Result.a aVar = Result.f32053e;
                     if (z10 && bitmap != null) {
                         bitmap = Bitmap.createBitmap(bitmap);
                     }
@@ -137,7 +137,7 @@ public final class FrescoFetchDecodedImageKt {
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke((Throwable) obj);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
 
                 public final void invoke(Throwable th2) {

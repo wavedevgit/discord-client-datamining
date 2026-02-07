@@ -6,10 +6,10 @@ import pq.z4;
 public final class b5 implements z4.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a5 f45138a;
+    private final a5 f45186a;
 
     b5(a5 a5Var) {
-        this.f45138a = a5Var;
+        this.f45186a = a5Var;
     }
 
     public static br.h b(a5 a5Var) {
@@ -18,6 +18,6 @@ public final class b5 implements z4.a {
 
     @Override // pq.z4.a
     public z4 a(String str, String str2, String str3, String str4, Map map) {
-        return this.f45138a.b(str, str2, str3, str4, map);
+        return this.f45186a.b(str, str2, str3, str4, map);
     }
 }

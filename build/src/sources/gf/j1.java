@@ -10,12 +10,12 @@ import java.util.Objects;
 public final class j1 implements Handler.Callback {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ k1 f25094d;
+    final /* synthetic */ k1 f25142d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ j1(k1 k1Var, byte[] bArr) {
         Objects.requireNonNull(k1Var);
-        this.f25094d = k1Var;
+        this.f25142d = k1Var;
     }
 
     @Override // android.os.Handler.Callback
@@ -25,7 +25,7 @@ public final class j1 implements Handler.Callback {
             if (i10 != 1) {
                 return false;
             }
-            k1 k1Var = this.f25094d;
+            k1 k1Var = this.f25142d;
             synchronized (k1Var.f()) {
                 try {
                     h1 h1Var = (h1) message.obj;
@@ -52,7 +52,7 @@ public final class j1 implements Handler.Callback {
             }
             return true;
         }
-        k1 k1Var2 = this.f25094d;
+        k1 k1Var2 = this.f25142d;
         synchronized (k1Var2.f()) {
             try {
                 h1 h1Var2 = (h1) message.obj;

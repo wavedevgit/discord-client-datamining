@@ -4,29 +4,29 @@ package ii;
 public final class m implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ a f26740d;
+    final /* synthetic */ a f26788d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f26741e;
+    final /* synthetic */ int f26789e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ int f26742i;
+    final /* synthetic */ int f26790i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ n f26743o;
+    final /* synthetic */ n f26791o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(n nVar, a aVar, int i10, int i11) {
-        this.f26743o = nVar;
-        this.f26740d = aVar;
-        this.f26741e = i10;
-        this.f26742i = i11;
+        this.f26791o = nVar;
+        this.f26788d = aVar;
+        this.f26789e = i10;
+        this.f26790i = i11;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        n nVar = this.f26743o;
-        a aVar = this.f26740d;
-        nVar.h(new b(aVar.d(), this.f26741e, this.f26742i, aVar.a(), aVar.f(), aVar.h(), aVar.g(), aVar.c(), aVar.i()));
+        n nVar = this.f26791o;
+        a aVar = this.f26788d;
+        nVar.h(new b(aVar.d(), this.f26789e, this.f26790i, aVar.a(), aVar.f(), aVar.h(), aVar.g(), aVar.c(), aVar.i()));
     }
 }

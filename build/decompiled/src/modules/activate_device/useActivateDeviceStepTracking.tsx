@@ -50,13 +50,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            _fun96345: for (var _fun96345_ip = 0;;) switch (_fun96345_ip) {
+            _fun96834: for (var _fun96834_ip = 0;;) switch (_fun96834_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = _closure2_slot1;
                     if (!(var1 !== var0)) {
-                        _fun96345_ip = 210;
-                        continue _fun96345
+                        _fun96834_ip = 210;
+                        continue _fun96834
                     }
                 case 18:
                     var0 = _closure2_slot0;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = 'user-code-input';
                     var0 = var0 !== var1;
                     if (!var0) {
-                        _fun96345_ip = 59;
-                        continue _fun96345
+                        _fun96834_ip = 59;
+                        continue _fun96834
                     }
                 case 40:
                     var1 = _closure2_slot0;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = null;
                     var4 = null;
                     if (!var0) {
-                        _fun96345_ip = 118;
-                        continue _fun96345
+                        _fun96834_ip = 118;
+                        continue _fun96834
                     }
                 case 66:
                     var2 = _closure1_slot0;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot1;
                     var7 = var8 == var7;
                     if (var7) {
-                        _fun96345_ip = 180;
-                        continue _fun96345
+                        _fun96834_ip = 180;
+                        continue _fun96834
                     }
                 case 171:
                     var7 = _closure2_slot1;
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActivateDeviceStepTracking = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 5311, 12564, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 5358, 12610, 795, 2]);

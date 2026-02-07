@@ -11,28 +11,28 @@ import kotlinx.coroutines.flow.FlowCollector;
 public abstract /* synthetic */ class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f49430a = ts.f0.b("kotlinx.coroutines.flow.defaultConcurrency", 16, 1, Integer.MAX_VALUE);
+    private static final int f49478a = ts.f0.b("kotlinx.coroutines.flow.defaultConcurrency", 16, 1, Integer.MAX_VALUE);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49431d;
+        int f49479d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f49432e;
+        private /* synthetic */ Object f49480e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f49433i;
+        /* synthetic */ Object f49481i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Function2 f49434o;
+        final /* synthetic */ Function2 f49482o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function2 function2, Continuation continuation) {
             super(3, continuation);
-            this.f49434o = function2;
+            this.f49482o = function2;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0036, code lost:
@@ -53,7 +53,7 @@ public abstract /* synthetic */ class u {
             /*
                 r5 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r5.f49431d
+                int r1 = r5.f49479d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -67,32 +67,32 @@ public abstract /* synthetic */ class u {
                 r6.<init>(r0)
                 throw r6
             L1a:
-                java.lang.Object r1 = r5.f49432e
+                java.lang.Object r1 = r5.f49480e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r6)
                 goto L39
             L22:
                 kotlin.c.b(r6)
-                java.lang.Object r6 = r5.f49432e
+                java.lang.Object r6 = r5.f49480e
                 r1 = r6
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-                java.lang.Object r6 = r5.f49433i
-                kotlin.jvm.functions.Function2 r4 = r5.f49434o
-                r5.f49432e = r1
-                r5.f49431d = r3
+                java.lang.Object r6 = r5.f49481i
+                kotlin.jvm.functions.Function2 r4 = r5.f49482o
+                r5.f49480e = r1
+                r5.f49479d = r3
                 java.lang.Object r6 = r4.invoke(r6, r5)
                 if (r6 != r0) goto L39
                 goto L44
             L39:
                 r3 = 0
-                r5.f49432e = r3
-                r5.f49431d = r2
+                r5.f49480e = r3
+                r5.f49479d = r2
                 java.lang.Object r6 = r1.emit(r6, r5)
                 if (r6 != r0) goto L45
             L44:
                 return r0
             L45:
-                kotlin.Unit r6 = kotlin.Unit.f32008a
+                kotlin.Unit r6 = kotlin.Unit.f32056a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: rs.u.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -101,10 +101,10 @@ public abstract /* synthetic */ class u {
         @Override // kotlin.jvm.functions.Function3
         /* renamed from: j */
         public final Object invoke(FlowCollector flowCollector, Object obj, Continuation continuation) {
-            a aVar = new a(this.f49434o, continuation);
-            aVar.f49432e = flowCollector;
-            aVar.f49433i = obj;
-            return aVar.invokeSuspend(Unit.f32008a);
+            a aVar = new a(this.f49482o, continuation);
+            aVar.f49480e = flowCollector;
+            aVar.f49481i = obj;
+            return aVar.invokeSuspend(Unit.f32056a);
         }
     }
 

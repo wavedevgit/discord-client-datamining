@@ -67,12 +67,12 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
         KSerializer u10 = a.u(GuildId$$serializer.INSTANCE);
         KSerializer u11 = a.u(UserId$$serializer.INSTANCE);
         KSerializer u12 = a.u(StructurableTextSerializer.INSTANCE);
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         KSerializer u13 = a.u(n2Var);
         KSerializer u14 = a.u(n2Var);
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         KSerializer u15 = a.u(p0Var);
-        h hVar = h.f31005a;
+        h hVar = h.f31053a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, u10, u11, u12, u13, u14, p0Var, u15, hVar, a.u(n2Var), a.u(hVar)};
     }
 
@@ -103,9 +103,9 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1092unboximpl() : null;
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             int i15 = b10.i(serialDescriptor, 7);
-            num = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 8, p0.f31105a, null);
             boolean C = b10.C(serialDescriptor, 9);
             str4 = (String) b10.n(serialDescriptor, 10, n2Var, null);
             z10 = C;
@@ -113,7 +113,7 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
             str3 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             str2 = (String) b10.n(serialDescriptor, 5, n2Var, null);
             userId = (UserId) b10.n(serialDescriptor, 3, UserId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 11, h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 11, h.f31053a, null);
             structurableText = (StructurableText) b10.n(serialDescriptor, 4, StructurableTextSerializer.INSTANCE, null);
             guildId = (GuildId) b10.n(serialDescriptor, 2, GuildId$$serializer.INSTANCE, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
@@ -188,13 +188,13 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 5:
-                        str6 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str6);
                         i16 |= 32;
                         i12 = 10;
                         c10 = 6;
                         continue;
                     case 6:
-                        str7 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str7);
                         i16 |= 64;
                         c10 = 6;
                         i12 = 10;
@@ -205,7 +205,7 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 8:
-                        num = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, num);
+                        num = (Integer) b10.n(serialDescriptor, 8, p0.f31105a, num);
                         i16 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         c10 = 6;
                         break;
@@ -215,12 +215,12 @@ public /* synthetic */ class FlaggedMessageEmbed$$serializer implements h0 {
                         c10 = 6;
                         break;
                     case 10:
-                        str5 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str5);
+                        str5 = (String) b10.n(serialDescriptor, i12, n2.f31089a, str5);
                         i16 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         c10 = 6;
                         break;
                     case 11:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 11, h.f31005a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 11, h.f31053a, bool2);
                         i16 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         c10 = 6;
                         break;

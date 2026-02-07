@@ -14,14 +14,14 @@ public enum r7 implements h {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42424d;
+    private final int f42472d;
 
     r7(int i10) {
-        this.f42424d = i10;
+        this.f42472d = i10;
     }
 
     @Override // og.h
     public final int zza() {
-        return this.f42424d;
+        return this.f42472d;
     }
 }

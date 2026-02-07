@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var1.subblocks;
             var3 = var4.map;
             var1 = function(arg0) { // Environment: var1
-                _fun42578: for (var _fun42578_ip = 0;;) switch (_fun42578_ip) {
+                _fun42585: for (var _fun42585_ip = 0;;) switch (_fun42585_ip) {
                     case 0:
                         var3 = arg0;
                         var4 = var3.type;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.CATEGORY;
                         var0 = var3;
                         if (!(var4 === var2)) {
-                            _fun42578_ip = 67;
-                            continue _fun42578
+                            _fun42585_ip = 67;
+                            continue _fun42585
                         }
                     case 52:
                         var2 = _closure1_slot4;
@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.FeaturedBlockRecord = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4637, 3318, 4638, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4636, 3317, 4637, 2]);

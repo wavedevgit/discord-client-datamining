@@ -6,22 +6,22 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinType f34689a;
+    private final KotlinType f34737a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f34690b;
+    private final e f34738b;
 
     public e(KotlinType type, e eVar) {
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f34689a = type;
-        this.f34690b = eVar;
+        this.f34737a = type;
+        this.f34738b = eVar;
     }
 
     public final e a() {
-        return this.f34690b;
+        return this.f34738b;
     }
 
     public final KotlinType b() {
-        return this.f34689a;
+        return this.f34737a;
     }
 }

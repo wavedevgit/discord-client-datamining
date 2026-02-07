@@ -5,22 +5,22 @@ import java.util.Iterator;
 public final class q0 implements pt.e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yt.e f39518c;
+    private static final yt.e f39566c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final boolean f39519d;
+    private static final boolean f39567d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final q0 f39520e;
+    public static final q0 f39568e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final q0 f39521f;
+    public static final q0 f39569f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f39522a;
+    private final boolean f39570a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f39523b;
+    private final long f39571b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b implements yt.e {
@@ -56,15 +56,15 @@ public final class q0 implements pt.e {
         if (eVar == null) {
             eVar = new b();
         }
-        f39518c = eVar;
-        f39519d = Boolean.getBoolean("net.time4j.systemclock.nanoTime");
-        f39520e = new q0(false, a());
-        f39521f = new q0(true, a());
+        f39566c = eVar;
+        f39567d = Boolean.getBoolean("net.time4j.systemclock.nanoTime");
+        f39568e = new q0(false, a());
+        f39569f = new q0(true, a());
     }
 
     private q0(boolean z10, long j10) {
-        this.f39522a = z10;
-        this.f39523b = j10;
+        this.f39570a = z10;
+        this.f39571b = j10;
     }
 
     private static long a() {
@@ -72,10 +72,10 @@ public final class q0 implements pt.e {
         long j10 = 0;
         int i10 = 0;
         while (i10 < 10) {
-            if (f39519d) {
+            if (f39567d) {
                 j10 = System.nanoTime();
             } else {
-                j10 = f39518c.a();
+                j10 = f39566c.a();
             }
             long currentTimeMillis2 = System.currentTimeMillis();
             if (currentTimeMillis == currentTimeMillis2) {
@@ -88,21 +88,21 @@ public final class q0 implements pt.e {
     }
 
     public static a0 b() {
-        return f39520e.c();
+        return f39568e.c();
     }
 
     private long d() {
         long a10;
-        if (f39519d) {
+        if (f39567d) {
             a10 = System.nanoTime();
         } else {
-            a10 = f39518c.a();
+            a10 = f39566c.a();
         }
-        return pt.c.f(a10, this.f39523b);
+        return pt.c.f(a10, this.f39571b);
     }
 
     public a0 c() {
-        if ((this.f39522a || f39519d) && yt.d.u().G()) {
+        if ((this.f39570a || f39567d) && yt.d.u().G()) {
             long d10 = d();
             return a0.l0(pt.c.b(d10, 1000000000), pt.c.d(d10, 1000000000), yt.f.UTC);
         }

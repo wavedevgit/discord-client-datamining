@@ -5,7 +5,7 @@ import yi.c;
 final class f9 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f9 f47040a = new f9();
+    static final f9 f47088a = new f9();
 
     static {
         c.b a10 = yi.c.a("durationMs");

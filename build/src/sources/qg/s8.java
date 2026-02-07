@@ -5,7 +5,7 @@ import yi.c;
 final class s8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s8 f47512a = new s8();
+    static final s8 f47560a = new s8();
 
     static {
         c.b a10 = yi.c.a("handwritingRecognitionStrategy");

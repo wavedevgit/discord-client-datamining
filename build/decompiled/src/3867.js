@@ -1,304 +1,145 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {
-        'UNDETERMINED': 0,
-        'FAILED': 1,
-        'BEGAN': 2,
-        'CANCELLED': 3,
-        'ACTIVE': 4,
-        'END': 5
-    };
-    var _closure1_slot2 = var2;
-    var2 = {};
-    var3 = 'function pnpm_useAnimatedGestureHandlerTs1(e){const{useWeb,EVENT_TYPE,handlers,context}=this.__closure;const event=useWeb?e.nativeEvent:e;if(event.state===EVENT_TYPE.BEGAN&&handlers.onStart){handlers.onStart(event,context);}if(event.state===EVENT_TYPE.ACTIVE&&handlers.onActive){handlers.onActive(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.END&&handlers.onEnd){handlers.onEnd(event,context);}if(event.oldState===EVENT_TYPE.BEGAN&&event.state===EVENT_TYPE.FAILED&&handlers.onFail){handlers.onFail(event,context);}if(event.oldState===EVENT_TYPE.ACTIVE&&event.state===EVENT_TYPE.CANCELLED&&handlers.onCancel){handlers.onCancel(event,context);}if((event.oldState===EVENT_TYPE.BEGAN||event.oldState===EVENT_TYPE.ACTIVE)&&event.state!==EVENT_TYPE.BEGAN&&event.state!==EVENT_TYPE.ACTIVE&&handlers.onFinish){handlers.onFinish(event,context,event.state===EVENT_TYPE.CANCELLED||event.state===EVENT_TYPE.FAILED);}}';
-    var2.code = var3;
-    var _closure1_slot3 = var2;
-    var0 = function arg0, arg1() {
-        _fun34880: for (var _fun34880_ip = 0;;) switch (_fun34880_ip) {
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useEffect;
+    var _closure1_slot2 = var4;
+    var3 = var3.useRef;
+    var _closure1_slot3 = var3;
+    var1 = function arg0, arg1() {
+        _fun34892: for (var _fun34892_ip = 0;;) switch (_fun34892_ip) {
             case 0:
-                var7 = arg0;
-                var _closure2_slot0 = var7;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var5 = var4.bind(var3)(var2);
-                var4 = var5.useHandler;
-                var2 = arg1;
-                var2 = var4.bind(var5)(var7, var2);
-                var6 = var2.context;
-                var _closure2_slot1 = var6;
-                var5 = var2.doDependenciesDiffer;
-                var2 = var2.useWeb;
-                var _closure2_slot2 = var2;
-                var4 = function arg0() {
-                    _fun34881: for (var _fun34881_ip = 0;;) switch (_fun34881_ip) {
-                        case 0:
-                            var1 = arg0;
-                            var2 = _closure2_slot2;
-                            var4 = var1;
-                            if (!var2) {
-                                _fun34881_ip = 22;
-                                continue _fun34881
-                            }
-                        case 16:
-                            var4 = var1.nativeEvent;
-                        case 22:
-                            var2 = var4.state;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34881_ip = 57;
-                                continue _fun34881
-                            }
-                        case 47:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onStart;
-                        case 57:
-                            if (!var1) {
-                                _fun34881_ip = 80;
-                                continue _fun34881
-                            }
-                        case 60:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onStart;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 80:
-                            var2 = var4.state;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34881_ip = 112;
-                                continue _fun34881
-                            }
-                        case 102:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onActive;
-                        case 112:
-                            if (!var1) {
-                                _fun34881_ip = 135;
-                                continue _fun34881
-                            }
-                        case 115:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onActive;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 135:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34881_ip = 177;
-                                continue _fun34881
-                            }
-                        case 158:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.END;
-                            var1 = var3 === var2;
-                        case 177:
-                            if (!var1) {
-                                _fun34881_ip = 190;
-                                continue _fun34881
-                            }
-                        case 180:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onEnd;
-                        case 190:
-                            if (!var1) {
-                                _fun34881_ip = 213;
-                                continue _fun34881
-                            }
-                        case 193:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onEnd;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 213:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34881_ip = 255;
-                                continue _fun34881
-                            }
-                        case 236:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.FAILED;
-                            var1 = var3 === var2;
-                        case 255:
-                            if (!var1) {
-                                _fun34881_ip = 268;
-                                continue _fun34881
-                            }
-                        case 258:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onFail;
-                        case 268:
-                            if (!var1) {
-                                _fun34881_ip = 291;
-                                continue _fun34881
-                            }
-                        case 271:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onFail;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 291:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.ACTIVE;
-                            var1 = var2 === var1;
-                            if (!var1) {
-                                _fun34881_ip = 333;
-                                continue _fun34881
-                            }
-                        case 314:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.CANCELLED;
-                            var1 = var3 === var2;
-                        case 333:
-                            if (!var1) {
-                                _fun34881_ip = 346;
-                                continue _fun34881
-                            }
-                        case 336:
-                            var2 = _closure2_slot0;
-                            var1 = var2.onCancel;
-                        case 346:
-                            if (!var1) {
-                                _fun34881_ip = 369;
-                                continue _fun34881
-                            }
-                        case 349:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onCancel;
-                            var1 = _closure2_slot1;
-                            var1 = var2.bind(var3)(var4, var1);
-                        case 369:
-                            var2 = var4.oldState;
-                            var1 = _closure1_slot2;
-                            var1 = var1.BEGAN;
-                            var1 = var2 !== var1;
-                            if (!var1) {
-                                _fun34881_ip = 412;
-                                continue _fun34881
-                            }
-                        case 392:
-                            var3 = var4.oldState;
-                            var2 = _closure1_slot2;
-                            var2 = var2.ACTIVE;
-                            var1 = var3 !== var2;
-                        case 412:
-                            if (var1) {
-                                _fun34881_ip = 434;
-                                continue _fun34881
-                            }
-                        case 415:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.BEGAN;
-                            var1 = var3 === var2;
-                        case 434:
-                            if (var1) {
-                                _fun34881_ip = 456;
-                                continue _fun34881
-                            }
-                        case 437:
-                            var3 = var4.state;
-                            var2 = _closure1_slot2;
-                            var2 = var2.ACTIVE;
-                            var1 = var3 === var2;
-                        case 456:
-                            if (var1) {
-                                _fun34881_ip = 472;
-                                continue _fun34881
-                            }
-                        case 459:
-                            var2 = _closure2_slot0;
-                            var2 = var2.onFinish;
-                            var1 = !var2;
-                        case 472:
-                            if (var1) {
-                                _fun34881_ip = 537;
-                                continue _fun34881
-                            }
-                        case 475:
-                            var3 = _closure2_slot0;
-                            var2 = var3.onFinish;
-                            var1 = _closure2_slot1;
-                            var6 = var4.state;
-                            var0 = _closure1_slot2;
-                            var0 = var0.CANCELLED;
-                            var0 = var6 === var0;
-                            if (var0) {
-                                _fun34881_ip = 530;
-                                continue _fun34881
-                            }
-                        case 511:
-                            var6 = var4.state;
-                            var5 = _closure1_slot2;
-                            var5 = var5.FAILED;
-                            var0 = var6 === var5;
-                        case 530:
-                            var0 = var2.bind(var3)(var4, var1, var0);
-                        case 537:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var0 = {};
-                var0.useWeb = var2;
-                var8 = _closure1_slot2;
-                var0.EVENT_TYPE = var8;
-                var0.handlers = var7;
-                var0.context = var6;
-                var4.__closure = var0;
-                var0 = 2401621621985.0;
-                var4.__workletHash = var0;
+                var11 = arg0;
                 var0 = _closure1_slot3;
-                var4.__initData = var0;
-                var0 = var4;
-                if (var2) {
-                    _fun34880_ip = 186;
-                    continue _fun34880
+                var4 = undefined;
+                var5 = null;
+                var0 = var0.bind(var4)(var5);
+                var _closure2_slot0 = var0;
+                var3 = var0.current;
+                if (!(var5 === var3)) {
+                    _fun34892_ip = 88;
+                    continue _fun34892
                 }
-            case 143:
-                var2 = _closure1_slot0;
+            case 34:
+                var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
-                var1 = 1;
-                var1 = var6[var1];
-                var3 = var2.bind(var3)(var1);
-                var2 = var3.useEvent;
-                var1 = ['onGestureHandlerStateChange', 'onGestureHandlerEvent'];
-                var0 = var2.bind(var3)(var4, var1, var5);
-            case 186:
+                var3 = 1;
+                var3 = var6[var3];
+                var6 = var5.bind(var4)(var3);
+                var5 = var6.makeShareable;
+                var3 = {};
+                var5 = var5.bind(var6)(var3);
+                var3 = {};
+                var3.context = var5;
+                var5 = new Array(0);
+                var3.savedDependencies = var5;
+                var0.current = var3;
+            case 88:
+                var5 = _closure1_slot2;
+                var3 = function() { // Environment: var1
+                    var0 = function() { // Environment: var0
+                        var1 = _closure2_slot0;
+                        var0 = null;
+                        var1.current = var0;
+                        var0 = undefined;
+                        return var0;
+                    };
+                    return var0;
+                };
+                var1 = new Array(0);
+                var1 = var5.bind(var4)(var3, var1);
+                var1 = var0.current;
+                var6 = var1.context;
+                var9 = var1.savedDependencies;
+                var10 = var11;
+                var3 = 2;
+                for (var5 in var10)
+                    case 137: {
+                        case 146: var1 = var5;
+                        var14 = _closure1_slot0;
+                        var13 = _closure1_slot1;
+                        var13 = var13[var3];
+                        var14 = var14.bind(var4)(var13);
+                        var13 = var14.isWorkletFunction;
+                        var1 = var11[var1];
+                        var1 = var13.bind(var14)(var1);
+                        if (var1) {
+                            _fun34892_ip = 137;
+                            continue _fun34892
+                        }
+                        case 184: var3 = _closure1_slot0;
+                        var5 = _closure1_slot1;
+                        var1 = 3;
+                        var1 = var5[var1];
+                        var1 = var3.bind(var4)(var1);
+                        var5 = var1.ReanimatedError;
+                        var1 = var5.prototype;
+                        var3 = Object.create(var1, {
+                            constructor: {
+                                value: var5
+                            }
+                        });
+                        var16 = 'Passed a function that is not a worklet. Please provide a worklet function.';
+                        var17 = var3;
+                        var1 = new var17[var5](var16, var15);
+                        var1 = var1 instanceof Object ? var1 : var3;
+                        throw var1;
+                    }
+            case 238:
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var5 = 4;
+                var7 = var1[var5];
+                var10 = var3.bind(var4)(var7);
+                var8 = var10.buildDependencies;
+                var7 = arg1;
+                var7 = var8.bind(var10)(var7, var11);
+                var5 = var1[var5];
+                var8 = var3.bind(var4)(var5);
+                var5 = var8.areDependenciesEqual;
+                var5 = var5.bind(var8)(var7, var9);
+                var5 = !var5;
+                var0 = var0.current;
+                var0.savedDependencies = var7;
+                var0 = {};
+                var0.context = var6;
+                var0.doDependenciesDiffer = var5;
+                var5 = 5;
+                var1 = var1[var5];
+                var3 = var3.bind(var4)(var1);
+                var1 = var3.isWeb;
+                var1 = var1.bind(var3)();
+                if (var1) {
+                    _fun34892_ip = 371;
+                    continue _fun34892
+                }
+            case 344:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var5];
+                var3 = var3.bind(var4)(var2);
+                var2 = var3.isJest;
+                var1 = var2.bind(var3)();
+            case 371:
+                var0.useWeb = var1;
                 return var0;
         }
     };
-    var1.useAnimatedGestureHandler = var0;
-    var0 = undefined;
+    var2.useHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3868, 3870]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3752, 3747, 3733, 3868, 3725]);

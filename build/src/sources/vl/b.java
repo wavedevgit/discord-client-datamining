@@ -9,16 +9,16 @@ import tl.f;
 public class b extends c {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f52711p = "b";
+    private static final String f52759p = "b";
 
     /* renamed from: m  reason: collision with root package name */
-    ByteBuffer f52712m;
+    ByteBuffer f52760m;
 
     /* renamed from: n  reason: collision with root package name */
-    MediaCodec.BufferInfo f52713n;
+    MediaCodec.BufferInfo f52761n;
 
     /* renamed from: o  reason: collision with root package name */
-    int f52714o;
+    int f52762o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(tl.e eVar, int i10, f fVar, int i11) {
@@ -39,87 +39,87 @@ public class b extends c {
     public int g() {
         int i10;
         int i11;
-        int i12 = this.f52714o;
+        int i12 = this.f52762o;
         if (i12 == 4) {
             return i12;
         }
         if (i12 == 5) {
-            this.f52714o = b();
+            this.f52762o = b();
             return 4;
-        } else if (!this.f52723i) {
-            MediaFormat trackFormat = this.f52715a.getTrackFormat(this.f52721g);
-            this.f52724j = trackFormat;
-            long j10 = this.f52725k;
+        } else if (!this.f52771i) {
+            MediaFormat trackFormat = this.f52763a.getTrackFormat(this.f52769g);
+            this.f52772j = trackFormat;
+            long j10 = this.f52773k;
             if (j10 > 0) {
                 trackFormat.setLong("durationUs", j10);
             }
-            this.f52722h = this.f52716b.c(this.f52724j, this.f52722h);
-            this.f52723i = true;
-            if (this.f52724j.containsKey("max-input-size")) {
-                i11 = this.f52724j.getInteger("max-input-size");
+            this.f52770h = this.f52764b.c(this.f52772j, this.f52770h);
+            this.f52771i = true;
+            if (this.f52772j.containsKey("max-input-size")) {
+                i11 = this.f52772j.getInteger("max-input-size");
             } else {
                 i11 = 1048576;
             }
-            this.f52712m = ByteBuffer.allocate(i11);
-            this.f52714o = 1;
+            this.f52760m = ByteBuffer.allocate(i11);
+            this.f52762o = 1;
             return 1;
         } else {
-            int sampleTrackIndex = this.f52715a.getSampleTrackIndex();
-            if (sampleTrackIndex != -1 && sampleTrackIndex != this.f52721g) {
-                this.f52714o = 2;
+            int sampleTrackIndex = this.f52763a.getSampleTrackIndex();
+            if (sampleTrackIndex != -1 && sampleTrackIndex != this.f52769g) {
+                this.f52762o = 2;
                 return 2;
             }
-            this.f52714o = 2;
-            int readSampleData = this.f52715a.readSampleData(this.f52712m, 0);
-            long sampleTime = this.f52715a.getSampleTime();
-            int sampleFlags = this.f52715a.getSampleFlags();
+            this.f52762o = 2;
+            int readSampleData = this.f52763a.readSampleData(this.f52760m, 0);
+            long sampleTime = this.f52763a.getSampleTime();
+            int sampleFlags = this.f52763a.getSampleFlags();
             if (readSampleData >= 0 && (sampleFlags & 4) == 0) {
-                if (sampleTime >= this.f52720f.a()) {
-                    this.f52712m.clear();
-                    this.f52726l = 1.0f;
-                    this.f52713n.set(0, 0, sampleTime - this.f52720f.b(), this.f52713n.flags | 4);
-                    this.f52716b.b(this.f52722h, this.f52712m, this.f52713n);
-                    this.f52714o = b();
-                    Log.d(f52711p, "Reach selection end on input stream");
+                if (sampleTime >= this.f52768f.a()) {
+                    this.f52760m.clear();
+                    this.f52774l = 1.0f;
+                    this.f52761n.set(0, 0, sampleTime - this.f52768f.b(), this.f52761n.flags | 4);
+                    this.f52764b.b(this.f52770h, this.f52760m, this.f52761n);
+                    this.f52762o = b();
+                    Log.d(f52759p, "Reach selection end on input stream");
                 } else {
-                    if (sampleTime >= this.f52720f.b()) {
+                    if (sampleTime >= this.f52768f.b()) {
                         if ((sampleFlags & 1) != 0) {
                             i10 = 1;
                         } else {
                             i10 = 0;
                         }
-                        long b10 = sampleTime - this.f52720f.b();
-                        long j11 = this.f52725k;
+                        long b10 = sampleTime - this.f52768f.b();
+                        long j11 = this.f52773k;
                         if (j11 > 0) {
-                            this.f52726l = ((float) b10) / ((float) j11);
+                            this.f52774l = ((float) b10) / ((float) j11);
                         }
-                        this.f52713n.set(0, readSampleData, b10, i10);
-                        this.f52716b.b(this.f52722h, this.f52712m, this.f52713n);
+                        this.f52761n.set(0, readSampleData, b10, i10);
+                        this.f52764b.b(this.f52770h, this.f52760m, this.f52761n);
                     }
-                    this.f52715a.advance();
+                    this.f52763a.advance();
                 }
             } else {
-                this.f52712m.clear();
-                this.f52726l = 1.0f;
-                this.f52714o = 4;
-                Log.d(f52711p, "Reach EoS on input stream");
+                this.f52760m.clear();
+                this.f52774l = 1.0f;
+                this.f52762o = 4;
+                Log.d(f52759p, "Reach EoS on input stream");
             }
-            return this.f52714o;
+            return this.f52762o;
         }
     }
 
     @Override // vl.c
     public void h() {
-        this.f52715a.selectTrack(this.f52721g);
-        this.f52713n = new MediaCodec.BufferInfo();
+        this.f52763a.selectTrack(this.f52769g);
+        this.f52761n = new MediaCodec.BufferInfo();
     }
 
     @Override // vl.c
     public void i() {
-        ByteBuffer byteBuffer = this.f52712m;
+        ByteBuffer byteBuffer = this.f52760m;
         if (byteBuffer != null) {
             byteBuffer.clear();
-            this.f52712m = null;
+            this.f52760m = null;
         }
     }
 }

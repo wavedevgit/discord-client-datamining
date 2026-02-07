@@ -15,7 +15,7 @@ public final class b1 extends z0 {
         String D = D();
         int K = K();
         if (K < D.length() && K != -1) {
-            this.f36632a = K;
+            this.f36680a = K;
             return b.a(D.charAt(K));
         }
         return (byte) 10;
@@ -24,7 +24,7 @@ public final class b1 extends z0 {
     @Override // lt.z0, lt.a
     public int K() {
         int i10;
-        int i11 = this.f36632a;
+        int i11 = this.f36680a;
         if (i11 == -1) {
             return i11;
         }
@@ -49,7 +49,7 @@ public final class b1 extends z0 {
                     if (i02 != -1) {
                         i11 = i02 + 2;
                     } else {
-                        this.f36632a = D.length();
+                        this.f36680a = D.length();
                         a.x(this, "Expected end of the block comment: \"*/\", but had EOF instead", 0, null, 6, null);
                         throw new qr.h();
                     }
@@ -57,7 +57,7 @@ public final class b1 extends z0 {
             }
             i11++;
         }
-        this.f36632a = i11;
+        this.f36680a = i11;
         return i11;
     }
 
@@ -75,7 +75,7 @@ public final class b1 extends z0 {
         String D = D();
         int K = K();
         if (K < D.length() && K != -1) {
-            this.f36632a = K + 1;
+            this.f36680a = K + 1;
             return b.a(D.charAt(K));
         }
         return (byte) 10;
@@ -86,11 +86,11 @@ public final class b1 extends z0 {
         String D = D();
         int K = K();
         if (K >= D.length() || K == -1) {
-            this.f36632a = -1;
+            this.f36680a = -1;
             Q(c10);
         }
         char charAt = D.charAt(K);
-        this.f36632a = K + 1;
+        this.f36680a = K + 1;
         if (charAt == c10) {
             return;
         }

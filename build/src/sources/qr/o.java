@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class o {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final o f48043d = new o("SYNCHRONIZED", 0);
+    public static final o f48091d = new o("SYNCHRONIZED", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final o f48044e = new o("PUBLICATION", 1);
+    public static final o f48092e = new o("PUBLICATION", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final o f48045i = new o("NONE", 2);
+    public static final o f48093i = new o("NONE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ o[] f48046o;
+    private static final /* synthetic */ o[] f48094o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f48047p;
+    private static final /* synthetic */ EnumEntries f48095p;
 
     static {
         o[] a10 = a();
-        f48046o = a10;
-        f48047p = xr.a.a(a10);
+        f48094o = a10;
+        f48095p = xr.a.a(a10);
     }
 
     private o(String str, int i10) {
     }
 
     private static final /* synthetic */ o[] a() {
-        return new o[]{f48043d, f48044e, f48045i};
+        return new o[]{f48091d, f48092e, f48093i};
     }
 
     public static o valueOf(String str) {
@@ -39,6 +39,6 @@ public final class o {
     }
 
     public static o[] values() {
-        return (o[]) f48046o.clone();
+        return (o[]) f48094o.clone();
     }
 }

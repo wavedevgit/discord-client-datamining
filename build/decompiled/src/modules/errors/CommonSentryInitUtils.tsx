@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.hour = var2;
         var _closure2_slot2 = var1;
         var0 = function() { // Environment: var0
-            _fun96853: for (var _fun96853_ip = 0;;) switch (_fun96853_ip) {
+            _fun97342: for (var _fun97342_ip = 0;;) switch (_fun97342_ip) {
                 case 0:
                     var1 = global;
                     var2 = var1.Date;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.minute;
                     var0 = var0.slot;
                     if (!(var0 !== var4)) {
-                        _fun96853_ip = 131;
-                        continue _fun96853
+                        _fun97342_ip = 131;
+                        continue _fun97342
                     }
                 case 101:
                     var0 = _closure2_slot2;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.hour;
                     var0 = var0.slot;
                     if (!(var0 !== var3)) {
-                        _fun96853_ip = 181;
-                        continue _fun96853
+                        _fun97342_ip = 181;
+                        continue _fun97342
                     }
                 case 151:
                     var0 = _closure2_slot2;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot0;
                     var0 = var2 < var0;
                     if (!var0) {
-                        _fun96853_ip = 253;
-                        continue _fun96853
+                        _fun97342_ip = 253;
+                        continue _fun97342
                     }
                 case 208:
                     var2 = _closure2_slot2;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3 < var2;
                 case 253:
                     if (!var0) {
-                        _fun96853_ip = 283;
-                        continue _fun96853
+                        _fun97342_ip = 283;
+                        continue _fun97342
                     }
                 case 256:
                     var1 = _closure2_slot2;

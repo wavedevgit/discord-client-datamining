@@ -11,13 +11,13 @@ import kotlinx.serialization.encoding.Encoder;
 public abstract class f2 extends s {
 
     /* renamed from: b  reason: collision with root package name */
-    private final SerialDescriptor f30998b;
+    private final SerialDescriptor f31046b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f2(KSerializer primitiveSerializer) {
         super(primitiveSerializer, null);
         Intrinsics.checkNotNullParameter(primitiveSerializer, "primitiveSerializer");
-        this.f30998b = new e2(primitiveSerializer.getDescriptor());
+        this.f31046b = new e2(primitiveSerializer.getDescriptor());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -34,7 +34,7 @@ public abstract class f2 extends s {
 
     @Override // jt.s, kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public final SerialDescriptor getDescriptor() {
-        return this.f30998b;
+        return this.f31046b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -74,7 +74,7 @@ public abstract class f2 extends s {
     public final void serialize(Encoder encoder, Object obj) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         int e10 = e(obj);
-        SerialDescriptor serialDescriptor = this.f30998b;
+        SerialDescriptor serialDescriptor = this.f31046b;
         CompositeEncoder h10 = encoder.h(serialDescriptor, e10);
         u(h10, obj, e10);
         h10.c(serialDescriptor);

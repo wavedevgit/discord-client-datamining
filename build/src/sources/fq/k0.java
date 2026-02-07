@@ -27,9 +27,9 @@ public abstract class k0 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c(tp.f fVar, CombinedStepImagePreview combinedStepImagePreview) {
-        ImageView imageView = fVar.f50806b;
+        ImageView imageView = fVar.f50854b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         kq.g.b(imageView, combinedStepImagePreview.getStyles());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

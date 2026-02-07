@@ -8,16 +8,16 @@ import java.util.List;
 abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final y f25381a = new b();
+    private static final y f25429a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final y f25382b = new c();
+    private static final y f25430b = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class b extends y {
 
         /* renamed from: c  reason: collision with root package name */
-        private static final Class f25383c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
+        private static final Class f25431c = Collections.unmodifiableList(Collections.EMPTY_LIST).getClass();
 
         private b() {
             super();
@@ -40,7 +40,7 @@ abstract class y {
                 }
                 h1.O(obj, j10, arrayList);
                 return arrayList;
-            } else if (f25383c.isAssignableFrom(f10.getClass())) {
+            } else if (f25431c.isAssignableFrom(f10.getClass())) {
                 ArrayList arrayList2 = new ArrayList(f10.size() + i10);
                 arrayList2.addAll(f10);
                 h1.O(obj, j10, arrayList2);
@@ -69,7 +69,7 @@ abstract class y {
             List list = (List) h1.A(obj, j10);
             if (list instanceof x) {
                 unmodifiableList = ((x) list).getUnmodifiableView();
-            } else if (!f25383c.isAssignableFrom(list.getClass())) {
+            } else if (!f25431c.isAssignableFrom(list.getClass())) {
                 if ((list instanceof r0) && (list instanceof u.b)) {
                     u.b bVar = (u.b) list;
                     if (bVar.y()) {
@@ -160,12 +160,12 @@ abstract class y {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static y a() {
-        return f25381a;
+        return f25429a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static y b() {
-        return f25382b;
+        return f25430b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

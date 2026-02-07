@@ -10,55 +10,55 @@ import java.util.ArrayList;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f35626a = new ArrayList();
+    private final ArrayList f35674a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private a f35627b = new a();
+    private a f35675b = new a();
 
     /* renamed from: c  reason: collision with root package name */
-    private ConstraintWidgetContainer f35628c;
+    private ConstraintWidgetContainer f35676c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: k  reason: collision with root package name */
-        public static int f35629k = 0;
+        public static int f35677k = 0;
 
         /* renamed from: l  reason: collision with root package name */
-        public static int f35630l = 1;
+        public static int f35678l = 1;
 
         /* renamed from: m  reason: collision with root package name */
-        public static int f35631m = 2;
+        public static int f35679m = 2;
 
         /* renamed from: a  reason: collision with root package name */
-        public ConstraintWidget.b f35632a;
+        public ConstraintWidget.b f35680a;
 
         /* renamed from: b  reason: collision with root package name */
-        public ConstraintWidget.b f35633b;
+        public ConstraintWidget.b f35681b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f35634c;
+        public int f35682c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f35635d;
+        public int f35683d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f35636e;
+        public int f35684e;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f35637f;
+        public int f35685f;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f35638g;
+        public int f35686g;
 
         /* renamed from: h  reason: collision with root package name */
-        public boolean f35639h;
+        public boolean f35687h;
 
         /* renamed from: i  reason: collision with root package name */
-        public boolean f35640i;
+        public boolean f35688i;
 
         /* renamed from: j  reason: collision with root package name */
-        public int f35641j;
+        public int f35689j;
     }
 
     /* renamed from: l1.b$b  reason: collision with other inner class name */
@@ -70,7 +70,7 @@ public class b {
     }
 
     public b(ConstraintWidgetContainer constraintWidgetContainer) {
-        this.f35628c = constraintWidgetContainer;
+        this.f35676c = constraintWidgetContainer;
     }
 
     private boolean a(InterfaceC0477b interfaceC0477b, ConstraintWidget constraintWidget, int i10) {
@@ -78,21 +78,21 @@ public class b {
         boolean z11;
         boolean z12;
         boolean z13;
-        this.f35627b.f35632a = constraintWidget.A();
-        this.f35627b.f35633b = constraintWidget.T();
-        this.f35627b.f35634c = constraintWidget.W();
-        this.f35627b.f35635d = constraintWidget.x();
-        a aVar = this.f35627b;
-        aVar.f35640i = false;
-        aVar.f35641j = i10;
-        ConstraintWidget.b bVar = aVar.f35632a;
+        this.f35675b.f35680a = constraintWidget.A();
+        this.f35675b.f35681b = constraintWidget.T();
+        this.f35675b.f35682c = constraintWidget.W();
+        this.f35675b.f35683d = constraintWidget.x();
+        a aVar = this.f35675b;
+        aVar.f35688i = false;
+        aVar.f35689j = i10;
+        ConstraintWidget.b bVar = aVar.f35680a;
         ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
         if (bVar == bVar2) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (aVar.f35633b == bVar2) {
+        if (aVar.f35681b == bVar2) {
             z11 = true;
         } else {
             z11 = false;
@@ -108,19 +108,19 @@ public class b {
             z13 = false;
         }
         if (z12 && constraintWidget.f2743y[0] == 4) {
-            aVar.f35632a = ConstraintWidget.b.FIXED;
+            aVar.f35680a = ConstraintWidget.b.FIXED;
         }
         if (z13 && constraintWidget.f2743y[1] == 4) {
-            aVar.f35633b = ConstraintWidget.b.FIXED;
+            aVar.f35681b = ConstraintWidget.b.FIXED;
         }
         interfaceC0477b.b(constraintWidget, aVar);
-        constraintWidget.l1(this.f35627b.f35636e);
-        constraintWidget.M0(this.f35627b.f35637f);
-        constraintWidget.L0(this.f35627b.f35639h);
-        constraintWidget.B0(this.f35627b.f35638g);
-        a aVar2 = this.f35627b;
-        aVar2.f35641j = a.f35629k;
-        return aVar2.f35640i;
+        constraintWidget.l1(this.f35675b.f35684e);
+        constraintWidget.M0(this.f35675b.f35685f);
+        constraintWidget.L0(this.f35675b.f35687h);
+        constraintWidget.B0(this.f35675b.f35686g);
+        a aVar2 = this.f35675b;
+        aVar2.f35689j = a.f35677k;
+        return aVar2.f35688i;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:52:0x008e, code lost:
@@ -165,11 +165,11 @@ public class b {
             if (r6 == 0) goto L48
             l1.n r7 = r5.f2705f
             if (r7 == 0) goto L48
-            l1.g r6 = r6.f35709e
-            boolean r6 = r6.f35662j
+            l1.g r6 = r6.f35757e
+            boolean r6 = r6.f35710j
             if (r6 == 0) goto L48
-            l1.g r6 = r7.f35709e
-            boolean r6 = r6.f35662j
+            l1.g r6 = r7.f35757e
+            boolean r6 = r6.f35710j
             if (r6 == 0) goto L48
             goto Lac
         L48:
@@ -223,7 +223,7 @@ public class b {
             if (r7 == 0) goto L9c
             goto Lac
         L9c:
-            int r6 = l1.b.a.f35629k
+            int r6 = l1.b.a.f35677k
             r12.a(r2, r5, r6)
             androidx.constraintlayout.core.Metrics r5 = r13.R0
             if (r5 == 0) goto Lac
@@ -256,8 +256,8 @@ public class b {
         constraintWidgetContainer.M0(i12);
         constraintWidgetContainer.b1(I);
         constraintWidgetContainer.a1(H);
-        this.f35628c.Z1(i10);
-        this.f35628c.t1();
+        this.f35676c.Z1(i10);
+        this.f35676c.t1();
         if (constraintWidgetContainer.R0 != null) {
             long nanoTime = System.nanoTime();
             Metrics metrics = constraintWidgetContainer.R0;
@@ -326,7 +326,7 @@ public class b {
                 }
             }
         }
-        if (z10 && (metrics = h1.d.f25684x) != null) {
+        if (z10 && (metrics = h1.d.f25732x) != null) {
             metrics.f2673e++;
         }
         if ((i13 == 1073741824 && i15 == 1073741824) || b10) {
@@ -394,7 +394,7 @@ public class b {
                 j13 = System.nanoTime();
             }
             e(constraintWidgetContainer);
-            int size2 = bVar.f35626a.size();
+            int size2 = bVar.f35674a.size();
             if (size > 0) {
                 bVar.c(constraintWidgetContainer2, "First pass", 0, W, x10);
                 i20 = W;
@@ -416,12 +416,12 @@ public class b {
                 } else {
                     z14 = false;
                 }
-                int max = Math.max(constraintWidgetContainer2.W(), bVar.f35628c.I());
-                int max2 = Math.max(constraintWidgetContainer2.x(), bVar.f35628c.H());
+                int max = Math.max(constraintWidgetContainer2.W(), bVar.f35676c.I());
+                int max2 = Math.max(constraintWidgetContainer2.x(), bVar.f35676c.H());
                 int i27 = 0;
                 boolean z22 = false;
                 while (i27 < size2) {
-                    ConstraintWidget constraintWidget2 = (ConstraintWidget) bVar.f35626a.get(i27);
+                    ConstraintWidget constraintWidget2 = (ConstraintWidget) bVar.f35674a.get(i27);
                     boolean z23 = z21;
                     if (!(constraintWidget2 instanceof androidx.constraintlayout.core.widgets.h)) {
                         j12 = j13;
@@ -431,7 +431,7 @@ public class b {
                         int W2 = constraintWidget2.W();
                         j12 = j13;
                         int x11 = constraintWidget2.x();
-                        boolean a10 = z22 | bVar.a(K1, constraintWidget2, a.f35630l);
+                        boolean a10 = z22 | bVar.a(K1, constraintWidget2, a.f35678l);
                         Metrics metrics2 = constraintWidgetContainer2.R0;
                         i23 = i20;
                         i24 = i21;
@@ -477,16 +477,16 @@ public class b {
                     }
                     int i32 = 0;
                     while (i32 < size2) {
-                        ConstraintWidget constraintWidget3 = (ConstraintWidget) bVar.f35626a.get(i32);
-                        if (((constraintWidget3 instanceof k1.a) && !(constraintWidget3 instanceof androidx.constraintlayout.core.widgets.h)) || (constraintWidget3 instanceof androidx.constraintlayout.core.widgets.f) || constraintWidget3.V() == 8 || ((z24 && constraintWidget3.f2703e.f35709e.f35662j && constraintWidget3.f2705f.f35709e.f35662j) || (constraintWidget3 instanceof androidx.constraintlayout.core.widgets.h))) {
+                        ConstraintWidget constraintWidget3 = (ConstraintWidget) bVar.f35674a.get(i32);
+                        if (((constraintWidget3 instanceof k1.a) && !(constraintWidget3 instanceof androidx.constraintlayout.core.widgets.h)) || (constraintWidget3 instanceof androidx.constraintlayout.core.widgets.f) || constraintWidget3.V() == 8 || ((z24 && constraintWidget3.f2703e.f35757e.f35710j && constraintWidget3.f2705f.f35757e.f35710j) || (constraintWidget3 instanceof androidx.constraintlayout.core.widgets.h))) {
                             i22 = i31;
                         } else {
                             int W4 = constraintWidget3.W();
                             int x13 = constraintWidget3.x();
                             int p10 = constraintWidget3.p();
-                            int i33 = a.f35630l;
+                            int i33 = a.f35678l;
                             if (i31 == 1) {
-                                i33 = a.f35631m;
+                                i33 = a.f35679m;
                             }
                             boolean a11 = z22 | bVar.a(K1, constraintWidget3, i33);
                             Metrics metrics3 = constraintWidgetContainer2.R0;
@@ -547,14 +547,14 @@ public class b {
     }
 
     public void e(ConstraintWidgetContainer constraintWidgetContainer) {
-        this.f35626a.clear();
+        this.f35674a.clear();
         int size = constraintWidgetContainer.L0.size();
         for (int i10 = 0; i10 < size; i10++) {
             ConstraintWidget constraintWidget = (ConstraintWidget) constraintWidgetContainer.L0.get(i10);
             ConstraintWidget.b A = constraintWidget.A();
             ConstraintWidget.b bVar = ConstraintWidget.b.MATCH_CONSTRAINT;
             if (A == bVar || constraintWidget.T() == bVar) {
-                this.f35626a.add(constraintWidget);
+                this.f35674a.add(constraintWidget);
             }
         }
         constraintWidgetContainer.O1();

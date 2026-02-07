@@ -10,18 +10,18 @@ import org.jetbrains.annotations.NotNull;
 public final class FlexibleTypeWithEnhancement extends FlexibleType implements TypeWithEnhancement {
 
     /* renamed from: o  reason: collision with root package name */
-    private final FlexibleType f34571o;
+    private final FlexibleType f34619o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final KotlinType f34572p;
+    private final KotlinType f34620p;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FlexibleTypeWithEnhancement(@NotNull FlexibleType origin, @NotNull KotlinType enhancement) {
         super(origin.getLowerBound(), origin.getUpperBound());
         Intrinsics.checkNotNullParameter(origin, "origin");
         Intrinsics.checkNotNullParameter(enhancement, "enhancement");
-        this.f34571o = origin;
-        this.f34572p = enhancement;
+        this.f34619o = origin;
+        this.f34620p = enhancement;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.FlexibleType
@@ -33,7 +33,7 @@ public final class FlexibleTypeWithEnhancement extends FlexibleType implements T
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancement
     @NotNull
     public KotlinType getEnhancement() {
-        return this.f34572p;
+        return this.f34620p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -69,7 +69,7 @@ public final class FlexibleTypeWithEnhancement extends FlexibleType implements T
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancement
     @NotNull
     public FlexibleType getOrigin() {
-        return this.f34571o;
+        return this.f34619o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType

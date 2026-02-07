@@ -60,7 +60,7 @@ public final class WorkflowViewStub extends View {
                 unit = null;
             } else {
                 parent.addView(newView, indexOfChild, layoutParams);
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
             }
             if (unit == null) {
                 parent.addView(newView, indexOfChild);
@@ -70,7 +70,7 @@ public final class WorkflowViewStub extends View {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ViewGroup) obj, (View) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 

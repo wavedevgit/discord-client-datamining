@@ -16,10 +16,10 @@ import lt.g0;
 public final class s implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final s f35524a = new s();
+    public static final s f35572a = new s();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f35525b = ht.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f26478a);
+    private static final SerialDescriptor f35573b = ht.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f26526a);
 
     private s() {
     }
@@ -53,7 +53,7 @@ public final class s implements KSerializer {
             }
             qr.b0 h10 = e0.h(value.b());
             if (h10 != null) {
-                encoder.j(gt.a.J(qr.b0.f48016e).getDescriptor()).k(h10.h());
+                encoder.j(gt.a.J(qr.b0.f48064e).getDescriptor()).k(h10.h());
                 return;
             }
             Double p10 = StringsKt.p(value.b());
@@ -72,6 +72,6 @@ public final class s implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f35525b;
+        return f35573b;
     }
 }

@@ -10,59 +10,59 @@ import kotlin.reflect.jvm.internal.impl.protobuf.MessageLite;
 public final class CodedInputStream {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f33908a;
+    private final byte[] f33956a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f33909b;
+    private final boolean f33957b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f33910c;
+    private int f33958c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f33911d;
+    private int f33959d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f33912e;
+    private int f33960e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final InputStream f33913f;
+    private final InputStream f33961f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f33914g;
+    private int f33962g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f33915h;
+    private boolean f33963h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f33916i;
+    private int f33964i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f33917j;
+    private int f33965j;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f33918k;
+    private int f33966k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f33919l;
+    private int f33967l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f33920m;
+    private int f33968m;
 
     private CodedInputStream(InputStream inputStream) {
-        this.f33915h = false;
-        this.f33917j = Integer.MAX_VALUE;
-        this.f33919l = 64;
-        this.f33920m = 67108864;
-        this.f33908a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
-        this.f33910c = 0;
-        this.f33912e = 0;
-        this.f33916i = 0;
-        this.f33913f = inputStream;
-        this.f33909b = false;
+        this.f33963h = false;
+        this.f33965j = Integer.MAX_VALUE;
+        this.f33967l = 64;
+        this.f33968m = 67108864;
+        this.f33956a = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
+        this.f33958c = 0;
+        this.f33960e = 0;
+        this.f33964i = 0;
+        this.f33961f = inputStream;
+        this.f33957b = false;
     }
 
     private void a(int i10) {
-        if (this.f33910c - this.f33912e < i10) {
+        if (this.f33958c - this.f33960e < i10) {
             f(i10);
         }
     }
@@ -86,26 +86,26 @@ public final class CodedInputStream {
             }
             throw InvalidProtocolBufferException.f();
         }
-        int i11 = this.f33916i;
-        int i12 = this.f33912e;
+        int i11 = this.f33964i;
+        int i12 = this.f33960e;
         int i13 = i11 + i12 + i10;
-        int i14 = this.f33917j;
+        int i14 = this.f33965j;
         if (i13 <= i14) {
             if (i10 < 4096) {
                 byte[] bArr = new byte[i10];
-                int i15 = this.f33910c - i12;
-                System.arraycopy(this.f33908a, i12, bArr, 0, i15);
-                this.f33912e = this.f33910c;
+                int i15 = this.f33958c - i12;
+                System.arraycopy(this.f33956a, i12, bArr, 0, i15);
+                this.f33960e = this.f33958c;
                 int i16 = i10 - i15;
                 a(i16);
-                System.arraycopy(this.f33908a, 0, bArr, i15, i16);
-                this.f33912e = i16;
+                System.arraycopy(this.f33956a, 0, bArr, i15, i16);
+                this.f33960e = i16;
                 return bArr;
             }
-            int i17 = this.f33910c;
-            this.f33916i = i11 + i17;
-            this.f33912e = 0;
-            this.f33910c = 0;
+            int i17 = this.f33958c;
+            this.f33964i = i11 + i17;
+            this.f33960e = 0;
+            this.f33958c = 0;
             int i18 = i17 - i12;
             int i19 = i10 - i18;
             ArrayList<byte[]> arrayList = new ArrayList();
@@ -114,14 +114,14 @@ public final class CodedInputStream {
                 byte[] bArr2 = new byte[min];
                 int i20 = 0;
                 while (i20 < min) {
-                    InputStream inputStream = this.f33913f;
+                    InputStream inputStream = this.f33961f;
                     if (inputStream == null) {
                         read = -1;
                     } else {
                         read = inputStream.read(bArr2, i20, min - i20);
                     }
                     if (read != -1) {
-                        this.f33916i += read;
+                        this.f33964i += read;
                         i20 += read;
                     } else {
                         throw InvalidProtocolBufferException.i();
@@ -131,7 +131,7 @@ public final class CodedInputStream {
                 arrayList.add(bArr2);
             }
             byte[] bArr3 = new byte[i10];
-            System.arraycopy(this.f33908a, i12, bArr3, 0, i18);
+            System.arraycopy(this.f33956a, i12, bArr3, 0, i18);
             for (byte[] bArr4 : arrayList) {
                 System.arraycopy(bArr4, 0, bArr3, i18, bArr4.length);
                 i18 += bArr4.length;
@@ -151,17 +151,17 @@ public final class CodedInputStream {
     }
 
     private void e() {
-        int i10 = this.f33910c + this.f33911d;
-        this.f33910c = i10;
-        int i11 = this.f33916i + i10;
-        int i12 = this.f33917j;
+        int i10 = this.f33958c + this.f33959d;
+        this.f33958c = i10;
+        int i11 = this.f33964i + i10;
+        int i12 = this.f33965j;
         if (i11 > i12) {
             int i13 = i11 - i12;
-            this.f33911d = i13;
-            this.f33910c = i10 - i13;
+            this.f33959d = i13;
+            this.f33958c = i10 - i13;
             return;
         }
-        this.f33911d = 0;
+        this.f33959d = 0;
     }
 
     private void f(int i10) {
@@ -173,24 +173,24 @@ public final class CodedInputStream {
 
     private void g(int i10) {
         if (i10 >= 0) {
-            int i11 = this.f33916i;
-            int i12 = this.f33912e;
+            int i11 = this.f33964i;
+            int i12 = this.f33960e;
             int i13 = i11 + i12 + i10;
-            int i14 = this.f33917j;
+            int i14 = this.f33965j;
             if (i13 <= i14) {
-                int i15 = this.f33910c;
+                int i15 = this.f33958c;
                 int i16 = i15 - i12;
-                this.f33912e = i15;
+                this.f33960e = i15;
                 f(1);
                 while (true) {
                     int i17 = i10 - i16;
-                    int i18 = this.f33910c;
+                    int i18 = this.f33958c;
                     if (i17 > i18) {
                         i16 += i18;
-                        this.f33912e = i18;
+                        this.f33960e = i18;
                         f(1);
                     } else {
-                        this.f33912e = i17;
+                        this.f33960e = i17;
                         return;
                     }
                 }
@@ -204,30 +204,30 @@ public final class CodedInputStream {
     }
 
     private boolean h(int i10) {
-        int i11 = this.f33912e;
+        int i11 = this.f33960e;
         int i12 = i11 + i10;
-        int i13 = this.f33910c;
+        int i13 = this.f33958c;
         if (i12 > i13) {
-            if (this.f33916i + i11 + i10 <= this.f33917j && this.f33913f != null) {
+            if (this.f33964i + i11 + i10 <= this.f33965j && this.f33961f != null) {
                 if (i11 > 0) {
                     if (i13 > i11) {
-                        byte[] bArr = this.f33908a;
+                        byte[] bArr = this.f33956a;
                         System.arraycopy(bArr, i11, bArr, 0, i13 - i11);
                     }
-                    this.f33916i += i11;
-                    this.f33910c -= i11;
-                    this.f33912e = 0;
+                    this.f33964i += i11;
+                    this.f33958c -= i11;
+                    this.f33960e = 0;
                 }
-                InputStream inputStream = this.f33913f;
-                byte[] bArr2 = this.f33908a;
-                int i14 = this.f33910c;
+                InputStream inputStream = this.f33961f;
+                byte[] bArr2 = this.f33956a;
+                int i14 = this.f33958c;
                 int read = inputStream.read(bArr2, i14, bArr2.length - i14);
-                if (read != 0 && read >= -1 && read <= this.f33908a.length) {
+                if (read != 0 && read >= -1 && read <= this.f33956a.length) {
                     if (read > 0) {
-                        this.f33910c += read;
-                        if ((this.f33916i + i10) - this.f33920m <= 0) {
+                        this.f33958c += read;
+                        if ((this.f33964i + i10) - this.f33968m <= 0) {
                             e();
-                            if (this.f33910c >= i10) {
+                            if (this.f33958c >= i10) {
                                 return true;
                             }
                             return h(i10);
@@ -256,7 +256,7 @@ public final class CodedInputStream {
     }
 
     public void checkLastTagWas(int i10) {
-        if (this.f33914g == i10) {
+        if (this.f33962g == i10) {
             return;
         }
         throw InvalidProtocolBufferException.a();
@@ -275,31 +275,31 @@ public final class CodedInputStream {
     }
 
     public int getBytesUntilLimit() {
-        int i10 = this.f33917j;
+        int i10 = this.f33965j;
         if (i10 == Integer.MAX_VALUE) {
             return -1;
         }
-        return i10 - (this.f33916i + this.f33912e);
+        return i10 - (this.f33964i + this.f33960e);
     }
 
     public boolean isAtEnd() {
-        if (this.f33912e == this.f33910c && !h(1)) {
+        if (this.f33960e == this.f33958c && !h(1)) {
             return true;
         }
         return false;
     }
 
     public void popLimit(int i10) {
-        this.f33917j = i10;
+        this.f33965j = i10;
         e();
     }
 
     public int pushLimit(int i10) {
         if (i10 >= 0) {
-            int i11 = i10 + this.f33916i + this.f33912e;
-            int i12 = this.f33917j;
+            int i11 = i10 + this.f33964i + this.f33960e;
+            int i12 = this.f33965j;
             if (i11 <= i12) {
-                this.f33917j = i11;
+                this.f33965j = i11;
                 e();
                 return i12;
             }
@@ -318,15 +318,15 @@ public final class CodedInputStream {
     public ByteString readBytes() {
         ByteString copyFrom;
         int readRawVarint32 = readRawVarint32();
-        int i10 = this.f33910c;
-        int i11 = this.f33912e;
+        int i10 = this.f33958c;
+        int i11 = this.f33960e;
         if (readRawVarint32 <= i10 - i11 && readRawVarint32 > 0) {
-            if (this.f33909b && this.f33915h) {
-                copyFrom = new a(this.f33908a, this.f33912e, readRawVarint32);
+            if (this.f33957b && this.f33963h) {
+                copyFrom = new a(this.f33956a, this.f33960e, readRawVarint32);
             } else {
-                copyFrom = ByteString.copyFrom(this.f33908a, i11, readRawVarint32);
+                copyFrom = ByteString.copyFrom(this.f33956a, i11, readRawVarint32);
             }
-            this.f33912e += readRawVarint32;
+            this.f33960e += readRawVarint32;
             return copyFrom;
         } else if (readRawVarint32 == 0) {
             return ByteString.EMPTY;
@@ -356,12 +356,12 @@ public final class CodedInputStream {
     }
 
     public void readGroup(int i10, MessageLite.Builder builder, ExtensionRegistryLite extensionRegistryLite) {
-        int i11 = this.f33918k;
-        if (i11 < this.f33919l) {
-            this.f33918k = i11 + 1;
+        int i11 = this.f33966k;
+        if (i11 < this.f33967l) {
+            this.f33966k = i11 + 1;
             builder.mergeFrom(this, extensionRegistryLite);
             checkLastTagWas(WireFormat.b(i10, 4));
-            this.f33918k--;
+            this.f33966k--;
             return;
         }
         throw InvalidProtocolBufferException.g();
@@ -377,12 +377,12 @@ public final class CodedInputStream {
 
     public void readMessage(MessageLite.Builder builder, ExtensionRegistryLite extensionRegistryLite) {
         int readRawVarint32 = readRawVarint32();
-        if (this.f33918k < this.f33919l) {
+        if (this.f33966k < this.f33967l) {
             int pushLimit = pushLimit(readRawVarint32);
-            this.f33918k++;
+            this.f33966k++;
             builder.mergeFrom(this, extensionRegistryLite);
             checkLastTagWas(0);
-            this.f33918k--;
+            this.f33966k--;
             popLimit(pushLimit);
             return;
         }
@@ -390,34 +390,34 @@ public final class CodedInputStream {
     }
 
     public byte readRawByte() {
-        if (this.f33912e == this.f33910c) {
+        if (this.f33960e == this.f33958c) {
             f(1);
         }
-        byte[] bArr = this.f33908a;
-        int i10 = this.f33912e;
-        this.f33912e = i10 + 1;
+        byte[] bArr = this.f33956a;
+        int i10 = this.f33960e;
+        this.f33960e = i10 + 1;
         return bArr[i10];
     }
 
     public int readRawLittleEndian32() {
-        int i10 = this.f33912e;
-        if (this.f33910c - i10 < 4) {
+        int i10 = this.f33960e;
+        if (this.f33958c - i10 < 4) {
             f(4);
-            i10 = this.f33912e;
+            i10 = this.f33960e;
         }
-        byte[] bArr = this.f33908a;
-        this.f33912e = i10 + 4;
+        byte[] bArr = this.f33956a;
+        this.f33960e = i10 + 4;
         return ((bArr[i10 + 3] & 255) << 24) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16);
     }
 
     public long readRawLittleEndian64() {
-        int i10 = this.f33912e;
-        if (this.f33910c - i10 < 8) {
+        int i10 = this.f33960e;
+        if (this.f33958c - i10 < 8) {
             f(8);
-            i10 = this.f33912e;
+            i10 = this.f33960e;
         }
-        byte[] bArr = this.f33908a;
-        this.f33912e = i10 + 8;
+        byte[] bArr = this.f33956a;
+        this.f33960e = i10 + 8;
         return ((bArr[i10 + 7] & 255) << 56) | (bArr[i10] & 255) | ((bArr[i10 + 1] & 255) << 8) | ((bArr[i10 + 2] & 255) << 16) | ((bArr[i10 + 3] & 255) << 24) | ((bArr[i10 + 4] & 255) << 32) | ((bArr[i10 + 5] & 255) << 40) | ((bArr[i10 + 6] & 255) << 48);
     }
 
@@ -425,14 +425,14 @@ public final class CodedInputStream {
         int i10;
         byte b10;
         int i11;
-        int i12 = this.f33912e;
-        int i13 = this.f33910c;
+        int i12 = this.f33960e;
+        int i13 = this.f33958c;
         if (i13 != i12) {
-            byte[] bArr = this.f33908a;
+            byte[] bArr = this.f33956a;
             int i14 = i12 + 1;
             byte b11 = bArr[i12];
             if (b11 >= 0) {
-                this.f33912e = i14;
+                this.f33960e = i14;
                 return b11;
             } else if (i13 - i14 >= 9) {
                 int i15 = i12 + 2;
@@ -480,7 +480,7 @@ public final class CodedInputStream {
                     }
                     i15 = i17;
                 }
-                this.f33912e = i15;
+                this.f33960e = i15;
                 return i11;
             }
         }
@@ -491,14 +491,14 @@ public final class CodedInputStream {
         long j10;
         long j11;
         long j12;
-        int i10 = this.f33912e;
-        int i11 = this.f33910c;
+        int i10 = this.f33960e;
+        int i11 = this.f33958c;
         if (i11 != i10) {
-            byte[] bArr = this.f33908a;
+            byte[] bArr = this.f33956a;
             int i12 = i10 + 1;
             byte b10 = bArr[i10];
             if (b10 >= 0) {
-                this.f33912e = i12;
+                this.f33960e = i12;
                 return b10;
             } else if (i11 - i12 >= 9) {
                 int i13 = i10 + 2;
@@ -542,13 +542,13 @@ public final class CodedInputStream {
                                                 i13 = i10 + 10;
                                                 if (bArr[i14] >= 0) {
                                                     j10 = j15;
-                                                    this.f33912e = i13;
+                                                    this.f33960e = i13;
                                                     return j10;
                                                 }
                                             } else {
                                                 j10 = j15;
                                                 i13 = i14;
-                                                this.f33912e = i13;
+                                                this.f33960e = i13;
                                                 return j10;
                                             }
                                         }
@@ -559,11 +559,11 @@ public final class CodedInputStream {
                     }
                     j10 = j14 ^ j12;
                     i13 = i14;
-                    this.f33912e = i13;
+                    this.f33960e = i13;
                     return j10;
                 }
                 j10 = j13 ^ j11;
-                this.f33912e = i13;
+                this.f33960e = i13;
                 return j10;
             }
         }
@@ -588,11 +588,11 @@ public final class CodedInputStream {
 
     public String readString() {
         int readRawVarint32 = readRawVarint32();
-        int i10 = this.f33910c;
-        int i11 = this.f33912e;
+        int i10 = this.f33958c;
+        int i11 = this.f33960e;
         if (readRawVarint32 <= i10 - i11 && readRawVarint32 > 0) {
-            String str = new String(this.f33908a, i11, readRawVarint32, "UTF-8");
-            this.f33912e += readRawVarint32;
+            String str = new String(this.f33956a, i11, readRawVarint32, "UTF-8");
+            this.f33960e += readRawVarint32;
             return str;
         } else if (readRawVarint32 == 0) {
             return "";
@@ -604,10 +604,10 @@ public final class CodedInputStream {
     public String readStringRequireUtf8() {
         byte[] c10;
         int readRawVarint32 = readRawVarint32();
-        int i10 = this.f33912e;
-        if (readRawVarint32 <= this.f33910c - i10 && readRawVarint32 > 0) {
-            c10 = this.f33908a;
-            this.f33912e = i10 + readRawVarint32;
+        int i10 = this.f33960e;
+        if (readRawVarint32 <= this.f33958c - i10 && readRawVarint32 > 0) {
+            c10 = this.f33956a;
+            this.f33960e = i10 + readRawVarint32;
         } else if (readRawVarint32 == 0) {
             return "";
         } else {
@@ -622,13 +622,13 @@ public final class CodedInputStream {
 
     public int readTag() {
         if (isAtEnd()) {
-            this.f33914g = 0;
+            this.f33962g = 0;
             return 0;
         }
         int readRawVarint32 = readRawVarint32();
-        this.f33914g = readRawVarint32;
+        this.f33962g = readRawVarint32;
         if (WireFormat.getTagFieldNumber(readRawVarint32) != 0) {
-            return this.f33914g;
+            return this.f33962g;
         }
         throw InvalidProtocolBufferException.b();
     }
@@ -692,10 +692,10 @@ public final class CodedInputStream {
     }
 
     public void skipRawBytes(int i10) {
-        int i11 = this.f33910c;
-        int i12 = this.f33912e;
+        int i11 = this.f33958c;
+        int i12 = this.f33960e;
         if (i10 <= i11 - i12 && i10 >= 0) {
-            this.f33912e = i12 + i10;
+            this.f33960e = i12 + i10;
         } else {
             g(i10);
         }
@@ -703,12 +703,12 @@ public final class CodedInputStream {
 
     public <T extends MessageLite> T readMessage(Parser<T> parser, ExtensionRegistryLite extensionRegistryLite) {
         int readRawVarint32 = readRawVarint32();
-        if (this.f33918k < this.f33919l) {
+        if (this.f33966k < this.f33967l) {
             int pushLimit = pushLimit(readRawVarint32);
-            this.f33918k++;
+            this.f33966k++;
             T parsePartialFrom = parser.parsePartialFrom(this, extensionRegistryLite);
             checkLastTagWas(0);
-            this.f33918k--;
+            this.f33966k--;
             popLimit(pushLimit);
             return parsePartialFrom;
         }
@@ -716,17 +716,17 @@ public final class CodedInputStream {
     }
 
     private CodedInputStream(b bVar) {
-        this.f33915h = false;
-        this.f33917j = Integer.MAX_VALUE;
-        this.f33919l = 64;
-        this.f33920m = 67108864;
-        this.f33908a = bVar.f33986d;
+        this.f33963h = false;
+        this.f33965j = Integer.MAX_VALUE;
+        this.f33967l = 64;
+        this.f33968m = 67108864;
+        this.f33956a = bVar.f34034d;
         int p10 = bVar.p();
-        this.f33912e = p10;
-        this.f33910c = p10 + bVar.size();
-        this.f33916i = -this.f33912e;
-        this.f33913f = null;
-        this.f33909b = true;
+        this.f33960e = p10;
+        this.f33958c = p10 + bVar.size();
+        this.f33964i = -this.f33960e;
+        this.f33961f = null;
+        this.f33957b = true;
     }
 
     public static int readRawVarint32(int i10, InputStream inputStream) {

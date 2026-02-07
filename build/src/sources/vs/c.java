@@ -6,16 +6,16 @@ import ts.m;
 public final class c extends f {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final c f52964t = new c();
+    public static final c f53012t = new c();
 
     private c() {
-        super(j.f52976c, j.f52977d, j.f52978e, j.f52974a);
+        super(j.f53024c, j.f53025d, j.f53026e, j.f53022a);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public CoroutineDispatcher a2(int i10, String str) {
         m.a(i10);
-        if (i10 >= j.f52976c) {
+        if (i10 >= j.f53024c) {
             return m.b(this, str);
         }
         return super.a2(i10, str);

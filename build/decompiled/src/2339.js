@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/checkpoint',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9jaGVja3BvaW50',
         'scales': null,
-        'hash': 'b12f864e6ef57f14618e22f2b6960161',
-        'name': 'Checkpoint.compiled.messages',
+        'hash': 'b030a5b36b2eb299239092b007ed9013',
+        'name': 'zh-CN.messages.b030a5b36b2eb299239092b007ed9013.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

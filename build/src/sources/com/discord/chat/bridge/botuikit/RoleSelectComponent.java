@@ -41,7 +41,7 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.i
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.botuikit.i
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -150,10 +150,10 @@ public final class RoleSelectComponent extends SearchableSelectComponent {
         compositeEncoder.s(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, roleSelectComponent.getState());
         compositeEncoder.z(serialDescriptor, 3, roleSelectComponent.getCustomId());
         if (compositeEncoder.A(serialDescriptor, 4) || roleSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, roleSelectComponent.getPlaceholder());
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, roleSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.A(serialDescriptor, 5) || roleSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, roleSelectComponent.getAccessibilityLabel());
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, roleSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.x(serialDescriptor, 6, roleSelectComponent.getMinValues());
         compositeEncoder.x(serialDescriptor, 7, roleSelectComponent.getMaxValues());

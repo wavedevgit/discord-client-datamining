@@ -8,16 +8,16 @@ import kotlin.text.StringsKt;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f36632a;
+    public int f36680a;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f36634c;
+    private String f36682c;
 
     /* renamed from: b  reason: collision with root package name */
-    public final j0 f36633b = new j0();
+    public final j0 f36681b = new j0();
 
     /* renamed from: d  reason: collision with root package name */
-    private StringBuilder f36635d = new StringBuilder();
+    private StringBuilder f36683d = new StringBuilder();
 
     private final int B(CharSequence charSequence, int i10) {
         char charAt = charSequence.charAt(i10);
@@ -35,9 +35,9 @@ public abstract class a {
     }
 
     private final String M() {
-        String str = this.f36634c;
+        String str = this.f36682c;
         Intrinsics.checkNotNull(str);
-        this.f36634c = null;
+        this.f36682c = null;
         return str;
     }
 
@@ -52,7 +52,7 @@ public abstract class a {
     }
 
     private final boolean R() {
-        if (D().charAt(this.f36632a - 1) != '\"') {
+        if (D().charAt(this.f36680a - 1) != '\"') {
             return true;
         }
         return false;
@@ -68,7 +68,7 @@ public abstract class a {
             }
             char b10 = b.b(charAt);
             if (b10 != 0) {
-                this.f36635d.append(b10);
+                this.f36683d.append(b10);
                 return i11;
             }
             x(this, "Invalid escaped char '" + charAt + '\'', 0, null, 6, null);
@@ -86,15 +86,15 @@ public abstract class a {
     private final int c(CharSequence charSequence, int i10) {
         int i11 = i10 + 4;
         if (i11 >= charSequence.length()) {
-            this.f36632a = i10;
+            this.f36680a = i10;
             u();
-            if (this.f36632a + 4 < charSequence.length()) {
-                return c(charSequence, this.f36632a);
+            if (this.f36680a + 4 < charSequence.length()) {
+                return c(charSequence, this.f36680a);
             }
             x(this, "Unexpected EOF during unicode escape", 0, null, 6, null);
             throw new qr.h();
         }
-        this.f36635d.append((char) ((B(charSequence, i10) << 12) + (B(charSequence, i10 + 1) << 8) + (B(charSequence, i10 + 2) << 4) + B(charSequence, i10 + 3)));
+        this.f36683d.append((char) ((B(charSequence, i10) << 12) + (B(charSequence, i10 + 1) << 8) + (B(charSequence, i10 + 2) << 4) + B(charSequence, i10 + 3)));
         return i11;
     }
 
@@ -127,7 +127,7 @@ public abstract class a {
                     throw new qr.h();
                 }
             }
-            this.f36632a = i10 + str.length();
+            this.f36680a = i10 + str.length();
             return;
         }
         x(this, "Unexpected end of boolean literal", 0, null, 6, null);
@@ -146,16 +146,16 @@ public abstract class a {
 
     private final String s(int i10, int i11) {
         d(i10, i11);
-        String sb2 = this.f36635d.toString();
+        String sb2 = this.f36683d.toString();
         Intrinsics.checkNotNullExpressionValue(sb2, "toString(...)");
-        this.f36635d.setLength(0);
+        this.f36683d.setLength(0);
         return sb2;
     }
 
     public static /* synthetic */ Void x(a aVar, String str, int i10, String str2, int i11, Object obj) {
         if (obj == null) {
             if ((i11 & 2) != 0) {
-                i10 = aVar.f36632a;
+                i10 = aVar.f36680a;
             }
             if ((i11 & 4) != 0) {
                 str2 = "";
@@ -177,14 +177,14 @@ public abstract class a {
 
     public final void A(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        int o02 = StringsKt.o0(L(0, this.f36632a), key, 0, false, 6, null);
+        int o02 = StringsKt.o0(L(0, this.f36680a), key, 0, false, 6, null);
         w("Encountered an unknown key '" + key + '\'', o02, "Use 'ignoreUnknownKeys = true' in 'Json {}' builder to ignore unknown keys.");
         throw new qr.h();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final StringBuilder C() {
-        return this.f36635d;
+        return this.f36683d;
     }
 
     protected abstract CharSequence D();
@@ -201,18 +201,18 @@ public abstract class a {
 
     public byte G() {
         CharSequence D = D();
-        int i10 = this.f36632a;
+        int i10 = this.f36680a;
         while (true) {
             int I = I(i10);
             if (I != -1) {
                 char charAt = D.charAt(I);
                 if (charAt != '\t' && charAt != '\n' && charAt != '\r' && charAt != ' ') {
-                    this.f36632a = I;
+                    this.f36680a = I;
                     return b.a(charAt);
                 }
                 i10 = I + 1;
             } else {
-                this.f36632a = I;
+                this.f36680a = I;
                 return (byte) 10;
             }
         }
@@ -231,7 +231,7 @@ public abstract class a {
         } else {
             o10 = o();
         }
-        this.f36634c = o10;
+        this.f36682c = o10;
         return o10;
     }
 
@@ -258,15 +258,15 @@ public abstract class a {
                         if (((Number) CollectionsKt.z0(arrayList)).byteValue() == 8) {
                             CollectionsKt.L(arrayList);
                         } else {
-                            int i10 = this.f36632a;
-                            throw g0.e(i10, "found ] instead of } at path: " + this.f36633b, D());
+                            int i10 = this.f36680a;
+                            throw g0.e(i10, "found ] instead of } at path: " + this.f36681b, D());
                         }
                     } else if (G2 == 7) {
                         if (((Number) CollectionsKt.z0(arrayList)).byteValue() == 6) {
                             CollectionsKt.L(arrayList);
                         } else {
-                            int i11 = this.f36632a;
-                            throw g0.e(i11, "found } instead of ] at path: " + this.f36633b, D());
+                            int i11 = this.f36680a;
+                            throw g0.e(i11, "found } instead of ] at path: " + this.f36681b, D());
                         }
                     } else if (G2 == 10) {
                         x(this, "Unexpected end of input due to malformed JSON during ignoring unknown keys", 0, null, 6, null);
@@ -295,7 +295,7 @@ public abstract class a {
         if (K >= D.length() || K == -1 || D.charAt(K) != ',') {
             return false;
         }
-        this.f36632a++;
+        this.f36680a++;
         return true;
     }
 
@@ -314,7 +314,7 @@ public abstract class a {
             return false;
         }
         if (z10) {
-            this.f36632a = I + 4;
+            this.f36680a = I + 4;
             return true;
         }
         return true;
@@ -322,18 +322,18 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void Q(char c10) {
-        int i10 = this.f36632a;
+        int i10 = this.f36680a;
         if (i10 > 0 && c10 == '\"') {
             try {
-                this.f36632a = i10 - 1;
+                this.f36680a = i10 - 1;
                 String q10 = q();
-                this.f36632a = i10;
+                this.f36680a = i10;
                 if (Intrinsics.areEqual(q10, "null")) {
-                    w("Expected string literal but 'null' literal was found", this.f36632a - 1, "Use 'coerceInputValues = true' in 'Json {}' builder to coerce nulls if property has a default value.");
+                    w("Expected string literal but 'null' literal was found", this.f36680a - 1, "Use 'coerceInputValues = true' in 'Json {}' builder to coerce nulls if property has a default value.");
                     throw new qr.h();
                 }
             } catch (Throwable th2) {
-                this.f36632a = i10;
+                this.f36680a = i10;
                 throw th2;
             }
         }
@@ -342,7 +342,7 @@ public abstract class a {
     }
 
     protected void d(int i10, int i11) {
-        this.f36635d.append(D(), i10, i11);
+        this.f36683d.append(D(), i10, i11);
     }
 
     public abstract boolean e();
@@ -359,9 +359,9 @@ public abstract class a {
             }
             boolean f10 = f(K);
             if (z10) {
-                if (this.f36632a != D().length()) {
-                    if (D().charAt(this.f36632a) == '\"') {
-                        this.f36632a++;
+                if (this.f36680a != D().length()) {
+                    if (D().charAt(this.f36680a) == '\"') {
+                        this.f36680a++;
                         return f10;
                     }
                     x(this, "Expected closing quotation mark", 0, null, 6, null);
@@ -446,7 +446,7 @@ public abstract class a {
         throw new qr.h();
      */
     /* JADX WARN: Code restructure failed: missing block: B:79:0x0181, code lost:
-        r18.f36632a = r2;
+        r18.f36680a = r2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x0183, code lost:
         if (r8 == false) goto L86;
@@ -509,7 +509,7 @@ public abstract class a {
     }
 
     public final String o() {
-        if (this.f36634c != null) {
+        if (this.f36682c != null) {
             return M();
         }
         return i();
@@ -556,13 +556,13 @@ public abstract class a {
         } else {
             s10 = s(i10, i11);
         }
-        this.f36632a = i11 + 1;
+        this.f36680a = i11 + 1;
         return s10;
     }
 
     public final String q() {
         String s10;
-        if (this.f36634c != null) {
+        if (this.f36682c != null) {
             return M();
         }
         int K = K();
@@ -576,10 +576,10 @@ public abstract class a {
                 while (b.a(D().charAt(K)) == 0) {
                     K++;
                     if (K >= D().length()) {
-                        d(this.f36632a, K);
+                        d(this.f36680a, K);
                         int I = I(K);
                         if (I == -1) {
-                            this.f36632a = K;
+                            this.f36680a = K;
                             return s(0, 0);
                         }
                         K = I;
@@ -587,11 +587,11 @@ public abstract class a {
                     }
                 }
                 if (!z10) {
-                    s10 = L(this.f36632a, K);
+                    s10 = L(this.f36680a, K);
                 } else {
-                    s10 = s(this.f36632a, K);
+                    s10 = s(this.f36680a, K);
                 }
-                this.f36632a = K;
+                this.f36680a = K;
                 return s10;
             }
             x(this, "Expected beginning of the string, but got " + D().charAt(K), 0, null, 6, null);
@@ -611,18 +611,18 @@ public abstract class a {
     }
 
     public final void t() {
-        this.f36634c = null;
+        this.f36682c = null;
     }
 
     public String toString() {
-        return "JsonReader(source='" + ((Object) D()) + "', currentPosition=" + this.f36632a + ')';
+        return "JsonReader(source='" + ((Object) D()) + "', currentPosition=" + this.f36680a + ')';
     }
 
     public final void v() {
         if (j() == 10) {
             return;
         }
-        x(this, "Expected EOF after parsing, but had " + D().charAt(this.f36632a - 1) + " instead", 0, null, 6, null);
+        x(this, "Expected EOF after parsing, but had " + D().charAt(this.f36680a - 1) + " instead", 0, null, 6, null);
         throw new qr.h();
     }
 
@@ -635,7 +635,7 @@ public abstract class a {
         } else {
             str = '\n' + hint;
         }
-        throw g0.e(i10, message + " at path: " + this.f36633b.a() + str, D());
+        throw g0.e(i10, message + " at path: " + this.f36681b.a() + str, D());
     }
 
     public final Void y(byte b10, boolean z10) {
@@ -643,12 +643,12 @@ public abstract class a {
         String str;
         String c10 = b.c(b10);
         if (z10) {
-            i10 = this.f36632a - 1;
+            i10 = this.f36680a - 1;
         } else {
-            i10 = this.f36632a;
+            i10 = this.f36680a;
         }
         int i11 = i10;
-        if (this.f36632a != D().length() && i11 >= 0) {
+        if (this.f36680a != D().length() && i11 >= 0) {
             str = String.valueOf(D().charAt(i11));
         } else {
             str = "EOF";

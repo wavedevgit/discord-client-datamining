@@ -5,7 +5,7 @@ import yi.c;
 final class d4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d4 f46999a = new d4();
+    static final d4 f47047a = new d4();
 
     static {
         c.b a10 = yi.c.a("logEventKey");

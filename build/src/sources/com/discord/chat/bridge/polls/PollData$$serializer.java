@@ -66,8 +66,8 @@ public /* synthetic */ class PollData$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = PollData.$childSerializers;
-        n2 n2Var = n2.f31041a;
-        h hVar = h.f31005a;
+        n2 n2Var = n2.f31089a;
+        h hVar = h.f31053a;
         PollAction$$serializer pollAction$$serializer = PollAction$$serializer.INSTANCE;
         return new KSerializer[]{PollResources$$serializer.INSTANCE, PollMedia$$serializer.INSTANCE, lazyArr[2].getValue(), PollChatAnswerInteractionType.Serializer.INSTANCE, a.u(n2Var), PollLayoutType.Serializer.INSTANCE, hVar, hVar, hVar, hVar, hVar, n2Var, a.u(n2Var), a.u(pollAction$$serializer), a.u(pollAction$$serializer), a.u(pollAction$$serializer), a.u(n2Var)};
     }
@@ -106,7 +106,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
             PollResources pollResources3 = (PollResources) b10.y(serialDescriptor, 0, PollResources$$serializer.INSTANCE, null);
             List list2 = (List) b10.y(serialDescriptor, 2, (DeserializationStrategy) lazyArr[2].getValue(), null);
             pollChatAnswerInteractionType = (PollChatAnswerInteractionType) b10.y(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, null);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             boolean C = b10.C(serialDescriptor, 6);
             boolean C2 = b10.C(serialDescriptor, 7);
             boolean C3 = b10.C(serialDescriptor, 8);
@@ -189,7 +189,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 4:
                         lazyArr2 = lazyArr;
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str8);
                         i13 |= 16;
                         lazyArr = lazyArr2;
                         break;
@@ -236,7 +236,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 12:
                         lazyArr2 = lazyArr;
-                        str7 = (String) b10.n(serialDescriptor, 12, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 12, n2.f31089a, str7);
                         i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         lazyArr = lazyArr2;
                         break;
@@ -261,7 +261,7 @@ public /* synthetic */ class PollData$$serializer implements h0 {
                         break;
                     case 16:
                         lazyArr2 = lazyArr;
-                        str6 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 16, n2.f31089a, str6);
                         i11 = 65536;
                         i13 |= i11;
                         lazyArr = lazyArr2;

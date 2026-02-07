@@ -25,7 +25,7 @@ public abstract class j {
         if (!StringsKt.k0(serialName)) {
             a aVar = new a(serialName);
             builderAction.invoke(aVar);
-            return new kotlinx.serialization.descriptors.a(serialName, l.a.f26489a, aVar.f().size(), kotlin.collections.i.R0(typeParameters), aVar);
+            return new kotlinx.serialization.descriptors.a(serialName, l.a.f26537a, aVar.f().size(), kotlin.collections.i.R0(typeParameters), aVar);
         }
         throw new IllegalArgumentException("Blank serial names are prohibited");
     }
@@ -36,7 +36,7 @@ public abstract class j {
         Intrinsics.checkNotNullParameter(typeParameters, "typeParameters");
         Intrinsics.checkNotNullParameter(builder, "builder");
         if (!StringsKt.k0(serialName)) {
-            if (!Intrinsics.areEqual(kind, l.a.f26489a)) {
+            if (!Intrinsics.areEqual(kind, l.a.f26537a)) {
                 a aVar = new a(serialName);
                 builder.invoke(aVar);
                 return new kotlinx.serialization.descriptors.a(serialName, kind, aVar.f().size(), kotlin.collections.i.R0(typeParameters), aVar);
@@ -62,6 +62,6 @@ public abstract class j {
 
     public static final Unit f(a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

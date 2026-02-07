@@ -20,15 +20,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'lib/zipWithNext.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1() {
-        _fun93530: for (var _fun93530_ip = 0;;) switch (_fun93530_ip) {
+        _fun94019: for (var _fun94019_ip = 0;;) switch (_fun94019_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
                 var1 = var6.length;
                 var0 = 2;
                 if (!(!(var1 < var0))) {
-                    _fun93530_ip = 82;
-                    continue _fun93530
+                    _fun94019_ip = 82;
+                    continue _fun94019
                 }
             case 18:
                 var0 = new Array(0);
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 < var1;
                 var2 = undefined;
                 if (!var1) {
-                    _fun93530_ip = 80;
-                    continue _fun93530
+                    _fun94019_ip = 80;
+                    continue _fun94019
                 }
             case 45:
                 var7 = var6[var3];
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6.length;
                 var4 = var7;
                 if (var3 < var1) {
-                    _fun93530_ip = 45;
-                    continue _fun93530
+                    _fun94019_ip = 45;
+                    continue _fun94019
                 }
             case 80:
                 return var0;

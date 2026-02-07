@@ -56,7 +56,7 @@ final class e0 extends tc.a {
             if (j14 != -9223372036854775807L) {
                 return a.e.f(j14, j11 + j12);
             }
-            return a.e.f50471d;
+            return a.e.f50519d;
         }
 
         @Override // tc.a.f
@@ -70,7 +70,7 @@ final class e0 extends tc.a {
 
         @Override // tc.a.f
         public void b() {
-            this.f20396b.R(w0.f39017f);
+            this.f20396b.R(w0.f39065f);
         }
     }
 

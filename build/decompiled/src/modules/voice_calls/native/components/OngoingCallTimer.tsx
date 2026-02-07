@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/components/OngoingCallTimer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun69671: for (var _fun69671_ip = 0;;) switch (_fun69671_ip) {
+        _fun70121: for (var _fun70121_ip = 0;;) switch (_fun70121_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function() { // Environment: var1
-                    _fun69672: for (var _fun69672_ip = 0;;) switch (_fun69672_ip) {
+                    _fun70122: for (var _fun70122_ip = 0;;) switch (_fun70122_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getCall;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun69672_ip = 41;
-                                continue _fun69672
+                                _fun70122_ip = 41;
+                                continue _fun70122
                             }
                         case 36:
                             var0 = var1.messageId;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var6;
                 var4 = 0;
                 if (!var1) {
-                    _fun69671_ip = 125;
-                    continue _fun69671
+                    _fun70121_ip = 125;
+                    continue _fun70121
                 }
             case 94:
                 var2 = _closure1_slot1;
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3477, 33, 566, 21, 8731, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3476, 33, 566, 21, 8775, 2]);

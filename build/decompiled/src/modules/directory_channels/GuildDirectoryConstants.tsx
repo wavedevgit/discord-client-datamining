@@ -96,13 +96,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '883060064561299456';
     var2.HQ_CHANNEL_ID = var3;
     var3 = function arg0() {
-        _fun71532: for (var _fun71532_ip = 0;;) switch (_fun71532_ip) {
+        _fun71977: for (var _fun71977_ip = 0;;) switch (_fun71977_ip) {
             case 0:
                 var1 = arg0;
                 var0 = '883060064561299456';
                 if (!(var1 !== var0)) {
-                    _fun71532_ip = 361;
-                    continue _fun71532
+                    _fun71977_ip = 361;
+                    continue _fun71977
                 }
             case 16:
                 var1 = {};
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var1.label = var2;
                 var0[3] = var1;
-                _fun71532_ip = 688;
-                continue _fun71532;
+                _fun71977_ip = 688;
+                continue _fun71977;
             case 361:
                 var2 = {};
                 var1 = 'club';

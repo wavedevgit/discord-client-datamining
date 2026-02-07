@@ -3,34 +3,34 @@ package y5;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f55005a;
+    private float f55053a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f55006b;
+    private float f55054b;
 
     public d(float f10, float f11) {
-        this.f55005a = f10;
-        this.f55006b = f11;
+        this.f55053a = f10;
+        this.f55054b = f11;
     }
 
     public boolean a(float f10, float f11) {
-        if (this.f55005a == f10 && this.f55006b == f11) {
+        if (this.f55053a == f10 && this.f55054b == f11) {
             return true;
         }
         return false;
     }
 
     public float b() {
-        return this.f55005a;
+        return this.f55053a;
     }
 
     public float c() {
-        return this.f55006b;
+        return this.f55054b;
     }
 
     public void d(float f10, float f11) {
-        this.f55005a = f10;
-        this.f55006b = f11;
+        this.f55053a = f10;
+        this.f55054b = f11;
     }
 
     public String toString() {

@@ -1,47 +1,53 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33215: for (var _fun33215_ip = 0;;) switch (_fun33215_ip) {
+    _fun33225: for (var _fun33225_ip = 0;;) switch (_fun33225_ip) {
         case 0:
-            var9 = require;
-            var8 = exports;
-            var7 = dependencyMap;
+            var2 = exports;
             var0 = global;
-            var10 = var0.Object;
-            var2 = var10.defineProperty;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
             var1 = {};
             var0 = true;
             var1.value = var0;
             var0 = '__esModule';
-            var0 = var2.bind(var10)(var8, var0, var1);
-            var2 = 0;
-            var1 = var7[var2];
+            var0 = var3.bind(var4)(var2, var0, var1);
+            var1 = dependencyMap;
+            var0 = 0;
+            var3 = var1[var0];
+            var1 = require;
             var0 = undefined;
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 62: {
-                    case 71: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun33215_ip = 62;
-                    continue _fun33215;
-                }
-        case 93:
-            var2 = 1;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 113: {
-                    case 122: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun33215_ip = 113;
-                    continue _fun33215;
-                }
-        case 144:
+            var1 = var1.bind(var0)(var3);
+            var6 = var1.LogBox;
+            var3 = null;
+            var4 = var3 == var6;
+            var1 = undefined;
+            if (var4) {
+                _fun33225_ip = 96;
+                continue _fun33225
+            }
+        case 71:
+            var5 = var6.addLog;
+            var4 = var3 == var5;
+            var1 = undefined;
+            if (var4) {
+                _fun33225_ip = 96;
+                continue _fun33225
+            }
+        case 86:
+            var4 = var5.bind;
+            var1 = var4.bind(var5)(var6);
+        case 96:
+            if (!(var3 == var1)) {
+                _fun33225_ip = 107;
+                continue _fun33225
+            }
+        case 100:
+            var1 = function() {
+                var0 = undefined;
+                return var0;
+            };
+        case 107:
+            var2.addLogBoxLog = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3728, 3729]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

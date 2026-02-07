@@ -27,7 +27,7 @@ public final class ResponseUtil {
             WritableArray createArray = Arguments.createArray();
             createArray.pushInt(i10);
             createArray.pushMap(writableMap);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didReceiveNetworkData", createArray);
         }
     }
@@ -40,7 +40,7 @@ public final class ResponseUtil {
             readableArrayBuilder.add(i10);
             readableArrayBuilder.add((int) j10);
             readableArrayBuilder.add((int) j11);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didReceiveNetworkDataProgress", createArray);
         }
     }
@@ -53,7 +53,7 @@ public final class ResponseUtil {
             readableArrayBuilder.add(i10);
             readableArrayBuilder.add((int) j10);
             readableArrayBuilder.add((int) j11);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didSendNetworkData", createArray);
         }
     }
@@ -67,7 +67,7 @@ public final class ResponseUtil {
             readableArrayBuilder.add(str);
             readableArrayBuilder.add((int) j10);
             readableArrayBuilder.add((int) j11);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didReceiveNetworkIncrementalData", createArray);
         }
     }
@@ -88,7 +88,7 @@ public final class ResponseUtil {
             if (Intrinsics.areEqual(cls, SocketTimeoutException.class)) {
                 readableArrayBuilder.add(true);
             }
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didCompleteNetworkResponse", createArray);
         }
     }
@@ -100,7 +100,7 @@ public final class ResponseUtil {
             ReadableArrayBuilder readableArrayBuilder = new ReadableArrayBuilder(createArray);
             readableArrayBuilder.add(i10);
             readableArrayBuilder.addNull();
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didCompleteNetworkResponse", createArray);
         }
     }
@@ -112,7 +112,7 @@ public final class ResponseUtil {
             createArray.pushInt(i11);
             createArray.pushMap(writableMap);
             createArray.pushString(str);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didReceiveNetworkResponse", createArray);
         }
     }
@@ -124,7 +124,7 @@ public final class ResponseUtil {
             ReadableArrayBuilder readableArrayBuilder = new ReadableArrayBuilder(createArray);
             readableArrayBuilder.add(i10);
             readableArrayBuilder.add(str);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             reactApplicationContext.emitDeviceEvent("didReceiveNetworkData", createArray);
         }
     }

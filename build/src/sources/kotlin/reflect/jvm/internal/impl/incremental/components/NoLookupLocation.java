@@ -8,10 +8,10 @@ import xr.a;
 public final class NoLookupLocation implements LookupLocation {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ NoLookupLocation[] f32673d;
+    private static final /* synthetic */ NoLookupLocation[] f32721d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32674e;
+    private static final /* synthetic */ EnumEntries f32722e;
     public static final NoLookupLocation FROM_IDE = new NoLookupLocation("FROM_IDE", 0);
     public static final NoLookupLocation FROM_BACKEND = new NoLookupLocation("FROM_BACKEND", 1);
     public static final NoLookupLocation FROM_TEST = new NoLookupLocation("FROM_TEST", 2);
@@ -38,8 +38,8 @@ public final class NoLookupLocation implements LookupLocation {
 
     static {
         NoLookupLocation[] a10 = a();
-        f32673d = a10;
-        f32674e = a.a(a10);
+        f32721d = a10;
+        f32722e = a.a(a10);
     }
 
     private NoLookupLocation(String str, int i10) {
@@ -54,7 +54,7 @@ public final class NoLookupLocation implements LookupLocation {
     }
 
     public static NoLookupLocation[] values() {
-        return (NoLookupLocation[]) f32673d.clone();
+        return (NoLookupLocation[]) f32721d.clone();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.incremental.components.LookupLocation

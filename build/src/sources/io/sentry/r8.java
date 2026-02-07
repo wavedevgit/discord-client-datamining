@@ -3,10 +3,10 @@ package io.sentry;
 public final class r8 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f28703a;
+    private final k7 f28751a;
 
     public r8(k7 k7Var) {
-        this.f28703a = (k7) io.sentry.util.y.c(k7Var, "options are required");
+        this.f28751a = (k7) io.sentry.util.y.c(k7Var, "options are required");
     }
 
     private boolean b(Double d10, Double d11) {
@@ -24,21 +24,21 @@ public final class r8 {
         if (l10 != null) {
             return io.sentry.util.c0.a(l10);
         }
-        this.f28703a.getProfilesSampler();
-        Double profilesSampleRate = this.f28703a.getProfilesSampleRate();
+        this.f28751a.getProfilesSampler();
+        Double profilesSampleRate = this.f28751a.getProfilesSampleRate();
         if (profilesSampleRate != null && b(profilesSampleRate, a10)) {
             z10 = true;
         } else {
             z10 = false;
         }
         Boolean valueOf2 = Boolean.valueOf(z10);
-        this.f28703a.getTracesSampler();
+        this.f28751a.getTracesSampler();
         s8 z11 = y3Var.b().z();
         if (z11 != null) {
             return io.sentry.util.c0.a(z11);
         }
-        Double tracesSampleRate = this.f28703a.getTracesSampleRate();
-        double pow = Math.pow(2.0d, this.f28703a.getBackpressureMonitor().a());
+        Double tracesSampleRate = this.f28751a.getTracesSampleRate();
+        double pow = Math.pow(2.0d, this.f28751a.getBackpressureMonitor().a());
         if (tracesSampleRate == null) {
             valueOf = null;
         } else {
@@ -53,7 +53,7 @@ public final class r8 {
     }
 
     public boolean c(double d10) {
-        Double profileSessionSampleRate = this.f28703a.getProfileSessionSampleRate();
+        Double profileSessionSampleRate = this.f28751a.getProfileSessionSampleRate();
         if (profileSessionSampleRate != null && b(profileSessionSampleRate, Double.valueOf(d10))) {
             return true;
         }

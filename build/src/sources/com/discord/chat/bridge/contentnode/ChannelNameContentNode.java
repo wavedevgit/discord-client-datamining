@@ -27,7 +27,7 @@ public final class ChannelNameContentNode extends ContentNode {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.f
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.f
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -101,7 +101,7 @@ public final class ChannelNameContentNode extends ContentNode {
         }
         compositeEncoder.z(serialDescriptor, 1, channelNameContentNode.iconType);
         if (compositeEncoder.A(serialDescriptor, 2) || channelNameContentNode.icon != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, channelNameContentNode.icon);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, channelNameContentNode.icon);
         }
         compositeEncoder.s(serialDescriptor, 3, (ft.o) lazyArr[3].getValue(), channelNameContentNode.content);
     }

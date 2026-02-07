@@ -9,7 +9,7 @@ import java.util.RandomAccess;
 abstract class c extends AbstractList implements u.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f25193d = true;
+    private boolean f25241d = true;
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public boolean add(Object obj) {
@@ -25,7 +25,7 @@ abstract class c extends AbstractList implements u.b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void b() {
-        if (this.f25193d) {
+        if (this.f25241d) {
             return;
         }
         throw new UnsupportedOperationException();
@@ -73,7 +73,7 @@ abstract class c extends AbstractList implements u.b {
 
     @Override // gk.u.b
     public final void m() {
-        this.f25193d = false;
+        this.f25241d = false;
     }
 
     @Override // java.util.AbstractList, java.util.List
@@ -104,7 +104,7 @@ abstract class c extends AbstractList implements u.b {
 
     @Override // gk.u.b
     public boolean y() {
-        return this.f25193d;
+        return this.f25241d;
     }
 
     @Override // java.util.AbstractList, java.util.List

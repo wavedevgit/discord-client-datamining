@@ -15,16 +15,16 @@ public abstract class g {
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f31476d;
+        Object f31524d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f31477e;
+        Object f31525e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f31478i;
+        /* synthetic */ Object f31526i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f31479o;
+        int f31527o;
 
         a(Continuation continuation) {
             super(continuation);
@@ -32,8 +32,8 @@ public abstract class g {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f31478i = obj;
-            this.f31479o |= Integer.MIN_VALUE;
+            this.f31526i = obj;
+            this.f31527o |= Integer.MIN_VALUE;
             return g.a(null, this);
         }
     }
@@ -42,17 +42,17 @@ public abstract class g {
     public static final class b implements DefaultLifecycleObserver {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f31480d;
+        final /* synthetic */ CancellableContinuation f31528d;
 
         b(CancellableContinuation cancellableContinuation) {
-            this.f31480d = cancellableContinuation;
+            this.f31528d = cancellableContinuation;
         }
 
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onStart(LifecycleOwner lifecycleOwner) {
-            CancellableContinuation cancellableContinuation = this.f31480d;
-            Result.a aVar = Result.f32005e;
-            cancellableContinuation.resumeWith(Result.b(Unit.f32008a));
+            CancellableContinuation cancellableContinuation = this.f31528d;
+            Result.a aVar = Result.f32053e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f32056a));
         }
     }
 
@@ -71,26 +71,26 @@ public abstract class g {
             if (r0 == 0) goto L13
             r0 = r7
             k5.g$a r0 = (k5.g.a) r0
-            int r1 = r0.f31479o
+            int r1 = r0.f31527o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f31479o = r1
+            r0.f31527o = r1
             goto L18
         L13:
             k5.g$a r0 = new k5.g$a
             r0.<init>(r7)
         L18:
-            java.lang.Object r7 = r0.f31478i
+            java.lang.Object r7 = r0.f31526i
             java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f31479o
+            int r2 = r0.f31527o
             r3 = 1
             if (r2 == 0) goto L3b
             if (r2 != r3) goto L33
-            java.lang.Object r6 = r0.f31477e
+            java.lang.Object r6 = r0.f31525e
             kotlin.jvm.internal.Ref$ObjectRef r6 = (kotlin.jvm.internal.Ref.ObjectRef) r6
-            java.lang.Object r0 = r0.f31476d
+            java.lang.Object r0 = r0.f31524d
             androidx.lifecycle.Lifecycle r0 = (androidx.lifecycle.Lifecycle) r0
             kotlin.c.b(r7)     // Catch: java.lang.Throwable -> L31
             goto L8c
@@ -108,14 +108,14 @@ public abstract class g {
             androidx.lifecycle.Lifecycle$State r2 = androidx.lifecycle.Lifecycle.State.f4849o
             boolean r7 = r7.d(r2)
             if (r7 == 0) goto L4d
-            kotlin.Unit r6 = kotlin.Unit.f32008a
+            kotlin.Unit r6 = kotlin.Unit.f32056a
             return r6
         L4d:
             kotlin.jvm.internal.Ref$ObjectRef r7 = new kotlin.jvm.internal.Ref$ObjectRef
             r7.<init>()
-            r0.f31476d = r6     // Catch: java.lang.Throwable -> L81
-            r0.f31477e = r7     // Catch: java.lang.Throwable -> L81
-            r0.f31479o = r3     // Catch: java.lang.Throwable -> L81
+            r0.f31524d = r6     // Catch: java.lang.Throwable -> L81
+            r0.f31525e = r7     // Catch: java.lang.Throwable -> L81
+            r0.f31527o = r3     // Catch: java.lang.Throwable -> L81
             kotlinx.coroutines.e r2 = new kotlinx.coroutines.e     // Catch: java.lang.Throwable -> L81
             kotlin.coroutines.Continuation r4 = wr.b.c(r0)     // Catch: java.lang.Throwable -> L81
             r2.<init>(r4, r3)     // Catch: java.lang.Throwable -> L81
@@ -150,7 +150,7 @@ public abstract class g {
             if (r6 == 0) goto L95
             r0.d(r6)
         L95:
-            kotlin.Unit r6 = kotlin.Unit.f32008a
+            kotlin.Unit r6 = kotlin.Unit.f32056a
             return r6
         L98:
             T r6 = r6.element

@@ -24,7 +24,7 @@ public abstract class MessageBase {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy $cachedSerializer$delegate = l.b(o.f48044e, new Function0() { // from class: j6.l
+    private static final Lazy $cachedSerializer$delegate = l.b(o.f48092e, new Function0() { // from class: j6.l
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _init_$_anonymous_;

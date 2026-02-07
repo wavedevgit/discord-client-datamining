@@ -9,13 +9,13 @@ import lt.c1;
 public final class r extends JsonPrimitive {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f35521d;
+    private final boolean f35569d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SerialDescriptor f35522e;
+    private final SerialDescriptor f35570e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f35523i;
+    private final String f35571i;
 
     public /* synthetic */ r(Object obj, boolean z10, SerialDescriptor serialDescriptor, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(obj, z10, (i10 & 4) != 0 ? null : serialDescriptor);
@@ -23,16 +23,16 @@ public final class r extends JsonPrimitive {
 
     @Override // kotlinx.serialization.json.JsonPrimitive
     public String b() {
-        return this.f35523i;
+        return this.f35571i;
     }
 
     @Override // kotlinx.serialization.json.JsonPrimitive
     public boolean c() {
-        return this.f35521d;
+        return this.f35569d;
     }
 
     public final SerialDescriptor d() {
-        return this.f35522e;
+        return this.f35570e;
     }
 
     public boolean equals(Object obj) {
@@ -69,9 +69,9 @@ public final class r extends JsonPrimitive {
     public r(Object body, boolean z10, SerialDescriptor serialDescriptor) {
         super(null);
         Intrinsics.checkNotNullParameter(body, "body");
-        this.f35521d = z10;
-        this.f35522e = serialDescriptor;
-        this.f35523i = body.toString();
+        this.f35569d = z10;
+        this.f35570e = serialDescriptor;
+        this.f35571i = body.toString();
         if (serialDescriptor != null && !serialDescriptor.isInline()) {
             throw new IllegalArgumentException("Failed requirement.");
         }

@@ -52,28 +52,28 @@ public final class DiagnosticsWorker extends Worker {
         List l10 = H.l(h.DEFAULT_DRAG_ANIMATION_DURATION);
         if (!c10.isEmpty()) {
             m e10 = m.e();
-            str5 = e.f49664a;
+            str5 = e.f49712a;
             e10.f(str5, "Recently completed work:\n\n");
             m e11 = m.e();
-            str6 = e.f49664a;
+            str6 = e.f49712a;
             d12 = e.d(F, I, E, c10);
             e11.f(str6, d12);
         }
         if (!t10.isEmpty()) {
             m e12 = m.e();
-            str3 = e.f49664a;
+            str3 = e.f49712a;
             e12.f(str3, "Running work:\n\n");
             m e13 = m.e();
-            str4 = e.f49664a;
+            str4 = e.f49712a;
             d11 = e.d(F, I, E, t10);
             e13.f(str4, d11);
         }
         if (!l10.isEmpty()) {
             m e14 = m.e();
-            str = e.f49664a;
+            str = e.f49712a;
             e14.f(str, "Enqueued work:\n\n");
             m e15 = m.e();
-            str2 = e.f49664a;
+            str2 = e.f49712a;
             d10 = e.d(F, I, E, l10);
             e15.f(str2, d10);
         }

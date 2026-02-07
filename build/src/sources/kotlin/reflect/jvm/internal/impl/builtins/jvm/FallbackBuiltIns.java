@@ -10,10 +10,10 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackBuiltIns extends KotlinBuiltIns {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final Companion f32216g = new Companion(null);
+    public static final Companion f32264g = new Companion(null);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final KotlinBuiltIns f32217h = new FallbackBuiltIns();
+    private static final KotlinBuiltIns f32265h = new FallbackBuiltIns();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -23,7 +23,7 @@ public final class FallbackBuiltIns extends KotlinBuiltIns {
 
         @NotNull
         public final KotlinBuiltIns getInstance() {
-            return FallbackBuiltIns.f32217h;
+            return FallbackBuiltIns.f32265h;
         }
 
         private Companion() {

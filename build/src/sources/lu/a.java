@@ -17,13 +17,13 @@ import mu.k;
 public final class a extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0489a f36747e = new C0489a(null);
+    public static final C0489a f36795e = new C0489a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f36748f;
+    private static final boolean f36796f;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f36749d;
+    private final List f36797d;
 
     /* renamed from: lu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -40,7 +40,7 @@ public final class a extends h {
         }
 
         public final boolean b() {
-            return a.f36748f;
+            return a.f36796f;
         }
 
         private C0489a() {
@@ -49,29 +49,29 @@ public final class a extends h {
 
     static {
         boolean z10;
-        if (h.f36777a.h() && Build.VERSION.SDK_INT >= 29) {
+        if (h.f36825a.h() && Build.VERSION.SDK_INT >= 29) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f36748f = z10;
+        f36796f = z10;
     }
 
     public a() {
-        k[] kVarArr = {mu.a.f38298a.a(), new j(mu.f.f38306f.d()), new j(i.f38320a.a()), new j(mu.g.f38314a.a())};
+        k[] kVarArr = {mu.a.f38346a.a(), new j(mu.f.f38354f.d()), new j(i.f38368a.a()), new j(mu.g.f38362a.a())};
         ArrayList arrayList = new ArrayList();
         for (Object obj : CollectionsKt.q(kVarArr)) {
             if (((k) obj).a()) {
                 arrayList.add(obj);
             }
         }
-        this.f36749d = arrayList;
+        this.f36797d = arrayList;
     }
 
     @Override // lu.h
     public ou.c c(X509TrustManager trustManager) {
         Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        mu.b a10 = mu.b.f38299d.a(trustManager);
+        mu.b a10 = mu.b.f38347d.a(trustManager);
         if (a10 != null) {
             return a10;
         }
@@ -83,7 +83,7 @@ public final class a extends h {
         Object obj;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
-        Iterator it = this.f36749d.iterator();
+        Iterator it = this.f36797d.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -105,7 +105,7 @@ public final class a extends h {
     public String h(SSLSocket sslSocket) {
         Object obj;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Iterator it = this.f36749d.iterator();
+        Iterator it = this.f36797d.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();

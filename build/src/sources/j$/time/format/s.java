@@ -9,28 +9,28 @@ import java.util.Map;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Map f29479a;
+    public final Map f29527a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Map f29480b;
+    public final Map f29528b;
 
     public s(Map map) {
-        this.f29479a = map;
+        this.f29527a = map;
         HashMap hashMap = new HashMap();
         ArrayList arrayList = new ArrayList();
         for (Map.Entry entry : map.entrySet()) {
             HashMap hashMap2 = new HashMap();
             for (Map.Entry entry2 : ((Map) entry.getValue()).entrySet()) {
-                r rVar = a.f29434b;
+                r rVar = a.f29482b;
                 hashMap2.put((String) entry2.getValue(), new AbstractMap.SimpleImmutableEntry((String) entry2.getValue(), (Long) entry2.getKey()));
             }
             ArrayList arrayList2 = new ArrayList(hashMap2.values());
-            Collections.sort(arrayList2, a.f29434b);
+            Collections.sort(arrayList2, a.f29482b);
             hashMap.put((x) entry.getKey(), arrayList2);
             arrayList.addAll(arrayList2);
             hashMap.put(null, arrayList);
         }
-        Collections.sort(arrayList, a.f29434b);
-        this.f29480b = hashMap;
+        Collections.sort(arrayList, a.f29482b);
+        this.f29528b = hashMap;
     }
 }

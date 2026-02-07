@@ -11,7 +11,7 @@ public abstract class f1 {
         SerialDescriptor a10;
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
         Intrinsics.checkNotNullParameter(module, "module");
-        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.a.f26487a)) {
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.a.f26535a)) {
             SerialDescriptor b10 = ht.b.b(module, serialDescriptor);
             if (b10 != null && (a10 = a(b10, module)) != null) {
                 return a10;
@@ -29,22 +29,22 @@ public abstract class f1 {
         Intrinsics.checkNotNullParameter(desc, "desc");
         ht.k kind = desc.getKind();
         if (kind instanceof ht.d) {
-            return e1.f36653q;
+            return e1.f36701q;
         }
-        if (Intrinsics.areEqual(kind, l.b.f26490a)) {
-            return e1.f36651o;
+        if (Intrinsics.areEqual(kind, l.b.f26538a)) {
+            return e1.f36699o;
         }
-        if (Intrinsics.areEqual(kind, l.c.f26491a)) {
+        if (Intrinsics.areEqual(kind, l.c.f26539a)) {
             SerialDescriptor a10 = a(desc.g(0), json.a());
             ht.k kind2 = a10.getKind();
-            if (!(kind2 instanceof ht.e) && !Intrinsics.areEqual(kind2, k.b.f26488a)) {
+            if (!(kind2 instanceof ht.e) && !Intrinsics.areEqual(kind2, k.b.f26536a)) {
                 if (json.e().c()) {
-                    return e1.f36651o;
+                    return e1.f36699o;
                 }
                 throw g0.c(a10);
             }
-            return e1.f36652p;
+            return e1.f36700p;
         }
-        return e1.f36650i;
+        return e1.f36698i;
     }
 }

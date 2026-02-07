@@ -19,7 +19,7 @@ public /* synthetic */ class EmbeddedActivityInviteViewHolder$bind$1$12 extends 
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         invoke((EmojiContentNode) obj);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void invoke(EmojiContentNode p02) {

@@ -64,7 +64,7 @@ public final class OnLongPressEmojiEvent implements ReactEvent {
     public static final /* synthetic */ void write$Self$emoji_picker_release(OnLongPressEmojiEvent onLongPressEmojiEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, onLongPressEmojiEvent.emojiName);
         if (compositeEncoder.A(serialDescriptor, 1) || onLongPressEmojiEvent.emojiId != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, onLongPressEmojiEvent.emojiId);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, onLongPressEmojiEvent.emojiId);
         }
     }
 

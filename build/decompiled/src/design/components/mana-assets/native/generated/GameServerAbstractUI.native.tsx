@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/GameServerAbstractUI.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52660: for (var _fun52660_ip = 0;;) switch (_fun52660_ip) {
+        _fun53105: for (var _fun53105_ip = 0;;) switch (_fun53105_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52660_ip = 35;
-                    continue _fun52660
+                    _fun53105_ip = 35;
+                    continue _fun53105
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52660_ip = 47;
-                    continue _fun52660
+                    _fun53105_ip = 47;
+                    continue _fun53105
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GameServerAbstractUI = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4705, 6166, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6209, 2]);

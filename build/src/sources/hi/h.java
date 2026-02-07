@@ -5,18 +5,18 @@ import java.io.File;
 final class h implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ i f26004a;
+    final /* synthetic */ i f26052a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(i iVar) {
-        this.f26004a = iVar;
+        this.f26052a = iVar;
     }
 
     @Override // hi.m
     public final void a(n nVar, File file, boolean z10) {
-        this.f26004a.f26006b.add(file);
+        this.f26052a.f26054b.add(file);
         if (!z10) {
-            this.f26004a.f26007c.set(false);
+            this.f26052a.f26055c.set(false);
         }
     }
 }

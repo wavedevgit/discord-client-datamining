@@ -10,32 +10,32 @@ import ni.t;
 public final class l0 extends t {
 
     /* renamed from: s  reason: collision with root package name */
-    static final t f40800s = new l0(null, new Object[0], 0);
+    static final t f40848s = new l0(null, new Object[0], 0);
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Object f40801p;
+    private final transient Object f40849p;
 
     /* renamed from: q  reason: collision with root package name */
-    final transient Object[] f40802q;
+    final transient Object[] f40850q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f40803r;
+    private final transient int f40851r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a extends u {
 
         /* renamed from: i  reason: collision with root package name */
-        private final transient t f40804i;
+        private final transient t f40852i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final transient Object[] f40805o;
+        private final transient Object[] f40853o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final transient int f40806p;
+        private final transient int f40854p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final transient int f40807q;
+        private final transient int f40855q;
 
         /* renamed from: ni.l0$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -46,11 +46,11 @@ public final class l0 extends t {
             @Override // java.util.List
             /* renamed from: C */
             public Map.Entry get(int i10) {
-                mi.m.h(i10, a.this.f40807q);
+                mi.m.h(i10, a.this.f40855q);
                 int i11 = i10 * 2;
-                Object obj = a.this.f40805o[a.this.f40806p + i11];
+                Object obj = a.this.f40853o[a.this.f40854p + i11];
                 Objects.requireNonNull(obj);
-                Object obj2 = a.this.f40805o[i11 + (a.this.f40806p ^ 1)];
+                Object obj2 = a.this.f40853o[i11 + (a.this.f40854p ^ 1)];
                 Objects.requireNonNull(obj2);
                 return new AbstractMap.SimpleImmutableEntry(obj, obj2);
             }
@@ -62,15 +62,15 @@ public final class l0 extends t {
 
             @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
             public int size() {
-                return a.this.f40807q;
+                return a.this.f40855q;
             }
         }
 
         a(t tVar, Object[] objArr, int i10, int i11) {
-            this.f40804i = tVar;
-            this.f40805o = objArr;
-            this.f40806p = i10;
-            this.f40807q = i11;
+            this.f40852i = tVar;
+            this.f40853o = objArr;
+            this.f40854p = i10;
+            this.f40855q = i11;
         }
 
         @Override // ni.q
@@ -84,7 +84,7 @@ public final class l0 extends t {
                 Map.Entry entry = (Map.Entry) obj;
                 Object key = entry.getKey();
                 Object value = entry.getValue();
-                if (value != null && value.equals(this.f40804i.get(key))) {
+                if (value != null && value.equals(this.f40852i.get(key))) {
                     return true;
                 }
             }
@@ -110,7 +110,7 @@ public final class l0 extends t {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public int size() {
-            return this.f40807q;
+            return this.f40855q;
         }
     }
 
@@ -118,19 +118,19 @@ public final class l0 extends t {
     static final class b extends u {
 
         /* renamed from: i  reason: collision with root package name */
-        private final transient t f40809i;
+        private final transient t f40857i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final transient s f40810o;
+        private final transient s f40858o;
 
         b(t tVar, s sVar) {
-            this.f40809i = tVar;
-            this.f40810o = sVar;
+            this.f40857i = tVar;
+            this.f40858o = sVar;
         }
 
         @Override // ni.u, ni.q
         public s b() {
-            return this.f40810o;
+            return this.f40858o;
         }
 
         @Override // ni.q
@@ -140,7 +140,7 @@ public final class l0 extends t {
 
         @Override // ni.q, java.util.AbstractCollection, java.util.Collection, java.util.Set
         public boolean contains(Object obj) {
-            if (this.f40809i.get(obj) != null) {
+            if (this.f40857i.get(obj) != null) {
                 return true;
             }
             return false;
@@ -160,7 +160,7 @@ public final class l0 extends t {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public int size() {
-            return this.f40809i.size();
+            return this.f40857i.size();
         }
     }
 
@@ -168,18 +168,18 @@ public final class l0 extends t {
     static final class c extends s {
 
         /* renamed from: i  reason: collision with root package name */
-        private final transient Object[] f40811i;
+        private final transient Object[] f40859i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final transient int f40812o;
+        private final transient int f40860o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final transient int f40813p;
+        private final transient int f40861p;
 
         c(Object[] objArr, int i10, int i11) {
-            this.f40811i = objArr;
-            this.f40812o = i10;
-            this.f40813p = i11;
+            this.f40859i = objArr;
+            this.f40860o = i10;
+            this.f40861p = i11;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -190,28 +190,28 @@ public final class l0 extends t {
 
         @Override // java.util.List
         public Object get(int i10) {
-            mi.m.h(i10, this.f40813p);
-            Object obj = this.f40811i[(i10 * 2) + this.f40812o];
+            mi.m.h(i10, this.f40861p);
+            Object obj = this.f40859i[(i10 * 2) + this.f40860o];
             Objects.requireNonNull(obj);
             return obj;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
         public int size() {
-            return this.f40813p;
+            return this.f40861p;
         }
     }
 
     private l0(Object obj, Object[] objArr, int i10) {
-        this.f40801p = obj;
-        this.f40802q = objArr;
-        this.f40803r = i10;
+        this.f40849p = obj;
+        this.f40850q = objArr;
+        this.f40851r = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static l0 l(int i10, Object[] objArr, t.a aVar) {
         if (i10 == 0) {
-            return (l0) f40800s;
+            return (l0) f40848s;
         }
         if (i10 == 1) {
             Object obj = objArr[0];
@@ -227,7 +227,7 @@ public final class l0 extends t {
             Object[] objArr2 = (Object[]) m10;
             t.a.C0548a c0548a = (t.a.C0548a) objArr2[2];
             if (aVar != null) {
-                aVar.f40852e = c0548a;
+                aVar.f40900e = c0548a;
                 Object obj3 = objArr2[0];
                 int intValue = ((Integer) objArr2[1]).intValue();
                 objArr = Arrays.copyOf(objArr, intValue * 2);
@@ -446,22 +446,22 @@ public final class l0 extends t {
 
     @Override // ni.t
     u d() {
-        return new a(this, this.f40802q, 0, this.f40803r);
+        return new a(this, this.f40850q, 0, this.f40851r);
     }
 
     @Override // ni.t
     u e() {
-        return new b(this, new c(this.f40802q, 0, this.f40803r));
+        return new b(this, new c(this.f40850q, 0, this.f40851r));
     }
 
     @Override // ni.t
     q f() {
-        return new c(this.f40802q, 1, this.f40803r);
+        return new c(this.f40850q, 1, this.f40851r);
     }
 
     @Override // ni.t, java.util.Map
     public Object get(Object obj) {
-        Object n10 = n(this.f40801p, this.f40802q, this.f40803r, 0, obj);
+        Object n10 = n(this.f40849p, this.f40850q, this.f40851r, 0, obj);
         if (n10 == null) {
             return null;
         }
@@ -475,6 +475,6 @@ public final class l0 extends t {
 
     @Override // java.util.Map
     public int size() {
-        return this.f40803r;
+        return this.f40851r;
     }
 }

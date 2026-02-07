@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class d {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final d f48021d = new d("WARNING", 0);
+    public static final d f48069d = new d("WARNING", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d f48022e = new d("ERROR", 1);
+    public static final d f48070e = new d("ERROR", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final d f48023i = new d("HIDDEN", 2);
+    public static final d f48071i = new d("HIDDEN", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ d[] f48024o;
+    private static final /* synthetic */ d[] f48072o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f48025p;
+    private static final /* synthetic */ EnumEntries f48073p;
 
     static {
         d[] a10 = a();
-        f48024o = a10;
-        f48025p = xr.a.a(a10);
+        f48072o = a10;
+        f48073p = xr.a.a(a10);
     }
 
     private d(String str, int i10) {
     }
 
     private static final /* synthetic */ d[] a() {
-        return new d[]{f48021d, f48022e, f48023i};
+        return new d[]{f48069d, f48070e, f48071i};
     }
 
     public static d valueOf(String str) {
@@ -39,6 +39,6 @@ public final class d {
     }
 
     public static d[] values() {
-        return (d[]) f48024o.clone();
+        return (d[]) f48072o.clone();
     }
 }

@@ -3,17 +3,17 @@ package qg;
 final class u extends x {
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ c0 f47554p;
+    final /* synthetic */ c0 f47602p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public u(c0 c0Var) {
         super(c0Var, null);
-        this.f47554p = c0Var;
+        this.f47602p = c0Var;
     }
 
     @Override // qg.x
     final Object a(int i10) {
-        return c0.m(this.f47554p, i10);
+        return c0.m(this.f47602p, i10);
     }
 }

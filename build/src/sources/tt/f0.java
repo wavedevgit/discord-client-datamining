@@ -6,32 +6,32 @@ import java.util.Set;
 public final class f0 implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final rt.p f50968d;
+    private final rt.p f51016d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f50969e;
+    private final int f51017e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final char f50970i;
+    private final char f51018i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final st.g f50971o;
+    private final st.g f51019o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f50972p;
+    private final int f51020p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f50973q;
+    private final int f51021q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(rt.p pVar) {
         if (pVar.name().startsWith("YEAR")) {
-            this.f50968d = pVar;
-            this.f50969e = 0;
-            this.f50970i = '0';
-            this.f50971o = st.g.SMART;
-            this.f50972p = 0;
-            this.f50973q = 100;
+            this.f51016d = pVar;
+            this.f51017e = 0;
+            this.f51018i = '0';
+            this.f51019o = st.g.SMART;
+            this.f51020p = 0;
+            this.f51021q = 100;
             return;
         }
         throw new IllegalArgumentException("Year element required: " + pVar);
@@ -40,9 +40,9 @@ public final class f0 implements h {
     private int b(boolean z10, rt.d dVar) {
         int intValue;
         if (z10) {
-            intValue = this.f50973q;
+            intValue = this.f51021q;
         } else {
-            intValue = ((Integer) dVar.b(st.a.f50126q, Integer.valueOf(this.f50973q))).intValue();
+            intValue = ((Integer) dVar.b(st.a.f50174q, Integer.valueOf(this.f51021q))).intValue();
         }
         if (intValue >= 100) {
             return intValue;
@@ -77,7 +77,7 @@ public final class f0 implements h {
 
     @Override // tt.h
     public h d(rt.p pVar) {
-        if (this.f50968d == pVar) {
+        if (this.f51016d == pVar) {
             return this;
         }
         return new f0(pVar);
@@ -85,7 +85,7 @@ public final class f0 implements h {
 
     @Override // tt.h
     public h e(c cVar, rt.d dVar, int i10) {
-        return new f0(this.f50968d, i10, ((Character) dVar.b(st.a.f50122m, '0')).charValue(), (st.g) dVar.b(st.a.f50115f, st.g.SMART), ((Integer) dVar.b(st.a.f50128s, 0)).intValue(), ((Integer) dVar.b(st.a.f50126q, Integer.valueOf(cVar.q().g()))).intValue());
+        return new f0(this.f51016d, i10, ((Character) dVar.b(st.a.f50170m, '0')).charValue(), (st.g) dVar.b(st.a.f50163f, st.g.SMART), ((Integer) dVar.b(st.a.f50176s, 0)).intValue(), ((Integer) dVar.b(st.a.f50174q, Integer.valueOf(cVar.q().g()))).intValue());
     }
 
     public boolean equals(Object obj) {
@@ -93,7 +93,7 @@ public final class f0 implements h {
             return true;
         }
         if (obj instanceof f0) {
-            return this.f50968d.equals(((f0) obj).f50968d);
+            return this.f51016d.equals(((f0) obj).f51016d);
         }
         return false;
     }
@@ -102,7 +102,7 @@ public final class f0 implements h {
     public int f(rt.o oVar, Appendable appendable, rt.d dVar, Set set, boolean z10) {
         char charValue;
         int i10;
-        int q10 = oVar.q(this.f50968d);
+        int q10 = oVar.q(this.f51016d);
         if (q10 < 0) {
             if (q10 == Integer.MIN_VALUE) {
                 throw new IllegalArgumentException("Format context has no year: " + oVar);
@@ -114,9 +114,9 @@ public final class f0 implements h {
         }
         String num = Integer.toString(q10);
         if (z10) {
-            charValue = this.f50970i;
+            charValue = this.f51018i;
         } else {
-            charValue = ((Character) dVar.b(st.a.f50122m, '0')).charValue();
+            charValue = ((Character) dVar.b(st.a.f50170m, '0')).charValue();
         }
         int i11 = 0;
         if (charValue != '0') {
@@ -139,7 +139,7 @@ public final class f0 implements h {
         appendable.append(num);
         int length = i11 + num.length();
         if (i10 != -1 && length > 0 && set != null) {
-            set.add(new g(this.f50968d, i10, i10 + length));
+            set.add(new g(this.f51016d, i10, i10 + length));
         }
         return length;
     }
@@ -151,28 +151,28 @@ public final class f0 implements h {
 
     @Override // tt.h
     public rt.p getElement() {
-        return this.f50968d;
+        return this.f51016d;
     }
 
     public int hashCode() {
-        return this.f50968d.hashCode();
+        return this.f51016d.hashCode();
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(f0.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f50968d.name());
+        sb2.append(this.f51016d.name());
         sb2.append(']');
         return sb2.toString();
     }
 
     private f0(rt.p pVar, int i10, char c10, st.g gVar, int i11, int i12) {
-        this.f50968d = pVar;
-        this.f50969e = i10;
-        this.f50970i = c10;
-        this.f50971o = gVar;
-        this.f50972p = i11;
-        this.f50973q = i12;
+        this.f51016d = pVar;
+        this.f51017e = i10;
+        this.f51018i = c10;
+        this.f51019o = gVar;
+        this.f51020p = i11;
+        this.f51021q = i12;
     }
 }

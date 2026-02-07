@@ -75,7 +75,7 @@ public class d extends o3.c {
     }
 
     private final androidx.metrics.performance.a n(Window window) {
-        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f41454a);
+        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f41502a);
         if (aVar == null) {
             androidx.metrics.performance.a aVar2 = new androidx.metrics.performance.a(new ArrayList());
             if (f5073q == null) {
@@ -84,14 +84,14 @@ public class d extends o3.c {
                 f5073q = new Handler(handlerThread.getLooper());
             }
             window.addOnFrameMetricsAvailableListener(aVar2, f5073q);
-            window.getDecorView().setTag(o3.g.f41454a, aVar2);
+            window.getDecorView().setTag(o3.g.f41502a, aVar2);
             return aVar2;
         }
         return aVar;
     }
 
     private final void p(Window window, Window.OnFrameMetricsAvailableListener onFrameMetricsAvailableListener) {
-        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f41454a);
+        androidx.metrics.performance.a aVar = (androidx.metrics.performance.a) window.getDecorView().getTag(o3.g.f41502a);
         if (aVar != null) {
             aVar.b(onFrameMetricsAvailableListener, window);
         }
@@ -110,7 +110,7 @@ public class d extends o3.c {
                     p(this.f5074j, this.f5079o);
                     this.f5076l = 0L;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

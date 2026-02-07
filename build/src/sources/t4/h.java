@@ -11,19 +11,19 @@ import t4.i;
 public final class h implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f50299a = new h();
+    public static final h f50347a = new h();
 
     private h() {
     }
 
     private final Object a(i iVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(iVar, i.b.f50301a)) {
+        if (Intrinsics.areEqual(iVar, i.b.f50349a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.a.f50300a)) {
+        if (Intrinsics.areEqual(iVar, i.a.f50348a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.c.f50302a)) {
+        if (Intrinsics.areEqual(iVar, i.c.f50350a)) {
             return null;
         }
         throw new p();
@@ -111,12 +111,12 @@ public final class h implements su.b {
 
     private final i c(String str) {
         if (Intrinsics.areEqual(str, "desc")) {
-            return i.b.f50301a;
+            return i.b.f50349a;
         }
         if (Intrinsics.areEqual(str, "asc")) {
-            return i.a.f50300a;
+            return i.a.f50348a;
         }
-        return i.c.f50302a;
+        return i.c.f50350a;
     }
 
     @Override // su.b
@@ -133,7 +133,7 @@ public final class h implements su.b {
         if (list == null) {
             return null;
         }
-        h hVar = f50299a;
+        h hVar = f50347a;
         Object b10 = cw.c.b(c10);
         if (b10 instanceof String) {
             str = (String) b10;

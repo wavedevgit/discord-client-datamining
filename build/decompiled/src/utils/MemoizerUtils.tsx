@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var1 instanceof Object ? var1 : var2;
         var _closure2_slot1 = var1;
         var0 = function(arg0) { // Environment: var0
-            _fun54754: for (var _fun54754_ip = 0;;) switch (_fun54754_ip) {
+            _fun55199: for (var _fun55199_ip = 0;;) switch (_fun55199_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = _closure2_slot1;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)(var4);
                     var3 = undefined;
                     if (!(var3 === var0)) {
-                        _fun54754_ip = 53;
-                        continue _fun54754
+                        _fun55199_ip = 53;
+                        continue _fun55199
                     }
                 case 26:
                     var1 = _closure2_slot0;

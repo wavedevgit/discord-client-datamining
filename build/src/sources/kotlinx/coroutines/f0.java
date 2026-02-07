@@ -9,10 +9,10 @@ import os.z0;
 public final class f0 extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Continuation f35054p;
+    private final Continuation f35102p;
 
     public f0(Continuation continuation) {
-        this.f35054p = continuation;
+        this.f35102p = continuation;
     }
 
     @Override // os.z0
@@ -22,8 +22,8 @@ public final class f0 extends z0 {
 
     @Override // os.z0
     public void w(Throwable th2) {
-        Continuation continuation = this.f35054p;
-        Result.a aVar = Result.f32005e;
-        continuation.resumeWith(Result.b(Unit.f32008a));
+        Continuation continuation = this.f35102p;
+        Result.a aVar = Result.f32053e;
+        continuation.resumeWith(Result.b(Unit.f32056a));
     }
 }

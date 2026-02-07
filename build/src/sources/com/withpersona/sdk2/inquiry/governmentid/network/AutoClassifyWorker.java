@@ -259,7 +259,7 @@ public final class AutoClassifyWorker implements o<c> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -269,8 +269,8 @@ public final class AutoClassifyWorker implements o<c> {
 
         private static final void j(List list, AutoClassifyWorker autoClassifyWorker, c0 c0Var) {
             String b10;
-            MultipartBody.b.a aVar = MultipartBody.b.f42896c;
-            list.add(aVar.c("data[attributes][image]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f42872e.c(c0Var.b()))));
+            MultipartBody.b.a aVar = MultipartBody.b.f42944c;
+            list.add(aVar.c("data[attributes][image]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f42920e.c(c0Var.b()))));
             if (autoClassifyWorker.f18632k && (b10 = autoClassifyWorker.f18633l.b(c0Var.a())) != null) {
                 list.add(aVar.b("data[attributes][client_extracted_text]", b10));
             }
@@ -325,7 +325,7 @@ public final class AutoClassifyWorker implements o<c> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

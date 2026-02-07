@@ -9,11 +9,11 @@ import kotlin.jvm.internal.markers.KMutableSet;
 public final class f extends kotlin.collections.g implements Set, KMutableSet {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f49210d;
+    private final d f49258d;
 
     public f(d backing) {
         Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f49210d = backing;
+        this.f49258d = backing;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -29,45 +29,45 @@ public final class f extends kotlin.collections.g implements Set, KMutableSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public void clear() {
-        this.f49210d.clear();
+        this.f49258d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean contains(Object obj) {
-        return this.f49210d.containsKey(obj);
+        return this.f49258d.containsKey(obj);
     }
 
     @Override // kotlin.collections.g
     public int getSize() {
-        return this.f49210d.size();
+        return this.f49258d.size();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean isEmpty() {
-        return this.f49210d.isEmpty();
+        return this.f49258d.isEmpty();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public Iterator iterator() {
-        return this.f49210d.C();
+        return this.f49258d.C();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean remove(Object obj) {
-        return this.f49210d.L(obj);
+        return this.f49258d.L(obj);
     }
 
     @Override // java.util.AbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean removeAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f49210d.l();
+        this.f49258d.l();
         return super.removeAll(elements);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean retainAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f49210d.l();
+        this.f49258d.l();
         return super.retainAll(elements);
     }
 }

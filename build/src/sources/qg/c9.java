@@ -5,7 +5,7 @@ import yi.c;
 final class c9 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c9 f46991a = new c9();
+    static final c9 f47039a = new c9();
 
     static {
         c.b a10 = yi.c.a("textEnhancementParam");

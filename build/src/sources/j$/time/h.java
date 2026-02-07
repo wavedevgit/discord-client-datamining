@@ -10,10 +10,10 @@ import java.util.regex.Pattern;
 public final class h implements Serializable {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final h f29494b = new h(0);
+    public static final h f29542b = new h(0);
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f29495a;
+    public final int f29543a;
 
     static {
         Pattern.compile("([-+]?)P(?:([-+]?[0-9]+)Y)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)W)?(?:([-+]?[0-9]+)D)?", 2);
@@ -21,13 +21,13 @@ public final class h implements Serializable {
     }
 
     public h(int i10) {
-        this.f29495a = i10;
+        this.f29543a = i10;
     }
 
     public final j$.time.temporal.k a(ChronoLocalDate chronoLocalDate) {
-        j$.time.chrono.j jVar = (j$.time.chrono.j) chronoLocalDate.a(o.f29518b);
-        if (jVar == null || j$.time.chrono.k.f29416a.equals(jVar)) {
-            int i10 = this.f29495a;
+        j$.time.chrono.j jVar = (j$.time.chrono.j) chronoLocalDate.a(o.f29566b);
+        if (jVar == null || j$.time.chrono.k.f29464a.equals(jVar)) {
+            int i10 = this.f29543a;
             return i10 != 0 ? chronoLocalDate.h(i10, j$.time.temporal.b.DAYS) : chronoLocalDate;
         }
         throw new DateTimeException("Chronology mismatch, expected: ISO, actual: ISO");
@@ -37,19 +37,19 @@ public final class h implements Serializable {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof h) && this.f29495a == ((h) obj).f29495a;
+        return (obj instanceof h) && this.f29543a == ((h) obj).f29543a;
     }
 
     public final int hashCode() {
-        return Integer.rotateLeft(this.f29495a, 16) + Integer.rotateLeft(0, 8);
+        return Integer.rotateLeft(this.f29543a, 16) + Integer.rotateLeft(0, 8);
     }
 
     public final String toString() {
-        if (this == f29494b) {
+        if (this == f29542b) {
             return "P0D";
         }
         StringBuilder sb2 = new StringBuilder("P");
-        int i10 = this.f29495a;
+        int i10 = this.f29543a;
         if (i10 != 0) {
             sb2.append(i10);
             sb2.append('D');

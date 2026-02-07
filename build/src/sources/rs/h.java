@@ -13,19 +13,19 @@ public abstract /* synthetic */ class h {
     public static final class a implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Object f49275d;
+        final /* synthetic */ Object f49323d;
 
         public a(Object obj) {
-            this.f49275d = obj;
+            this.f49323d = obj;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object emit = flowCollector.emit(this.f49275d, continuation);
+            Object emit = flowCollector.emit(this.f49323d, continuation);
             if (emit == wr.b.f()) {
                 return emit;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 

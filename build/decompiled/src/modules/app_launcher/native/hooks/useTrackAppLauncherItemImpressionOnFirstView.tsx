@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function(arg0) { // Environment: var1
-            _fun107817: for (var _fun107817_ip = 0;;) switch (_fun107817_ip) {
+            _fun108293: for (var _fun108293_ip = 0;;) switch (_fun108293_ip) {
                 case 0:
                     var0 = arg0;
                     var2 = var0.itemKey;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.has;
                     var0 = var0.bind(var1)(var2);
                     if (var0) {
-                        _fun107817_ip = 233;
-                        continue _fun107817
+                        _fun108293_ip = 233;
+                        continue _fun108293
                     }
                 case 72:
                     var0 = _closure2_slot1;
@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackAppLauncherItemImpressionOnFirstView = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7760, 1470, 5217, 481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7804, 1470, 5264, 481, 2]);

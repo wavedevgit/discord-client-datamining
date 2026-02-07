@@ -81,7 +81,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             this.isAttached = false;
             stop();
             cppDestroySurface(getCppPointer());
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -116,7 +116,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
             destroySurface();
             cppDelete(getCppPointer());
             setCppPointer(0L);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -133,7 +133,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     refCount.release();
                 }
                 getDependencies().clear();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -148,7 +148,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                     if (getHasCppObject()) {
                         cppDoFrame(getCppPointer());
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -251,7 +251,7 @@ public abstract class Renderer extends NativeObject implements Choreographer.Fra
                 this.sharedSurface = surface;
                 cppSetSurface(surface.getSurface(), getCppPointer());
                 this.isAttached = true;
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

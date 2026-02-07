@@ -13,22 +13,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f25628f = new a(null);
+    public static final a f25676f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f25629a;
+    private final int f25677a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f25630b;
+    private final long f25678b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fu.d f25631c;
+    private final fu.d f25679c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f25632d;
+    private final b f25680d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ConcurrentLinkedQueue f25633e;
+    private final ConcurrentLinkedQueue f25681e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -55,11 +55,11 @@ public final class g {
     public g(fu.e taskRunner, int i10, long j10, TimeUnit timeUnit) {
         Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
         Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
-        this.f25629a = i10;
-        this.f25630b = timeUnit.toNanos(j10);
-        this.f25631c = taskRunner.i();
-        this.f25632d = new b(cu.e.f20043i + " ConnectionPool");
-        this.f25633e = new ConcurrentLinkedQueue();
+        this.f25677a = i10;
+        this.f25678b = timeUnit.toNanos(j10);
+        this.f25679c = taskRunner.i();
+        this.f25680d = new b(cu.e.f20043i + " ConnectionPool");
+        this.f25681e = new ConcurrentLinkedQueue();
         if (j10 > 0) {
             return;
         }
@@ -78,11 +78,11 @@ public final class g {
                 i10++;
             } else {
                 Intrinsics.checkNotNull(reference, "null cannot be cast to non-null type okhttp3.internal.connection.RealCall.CallReference");
-                lu.h.f36777a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
+                lu.h.f36825a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
                 n10.remove(i10);
                 fVar.D(true);
                 if (n10.isEmpty()) {
-                    fVar.C(j10 - this.f25630b);
+                    fVar.C(j10 - this.f25678b);
                     return 0;
                 }
             }
@@ -93,7 +93,7 @@ public final class g {
     public final boolean a(okhttp3.a address, e call, List list, boolean z10) {
         Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(call, "call");
-        Iterator it = this.f25633e.iterator();
+        Iterator it = this.f25681e.iterator();
         while (it.hasNext()) {
             f connection = (f) it.next();
             Intrinsics.checkNotNullExpressionValue(connection, "connection");
@@ -102,7 +102,7 @@ public final class g {
                     try {
                         if (connection.v()) {
                         }
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -111,14 +111,14 @@ public final class g {
                     call.c(connection);
                     return true;
                 }
-                Unit unit2 = Unit.f32008a;
+                Unit unit2 = Unit.f32056a;
             }
         }
         return false;
     }
 
     public final long b(long j10) {
-        Iterator it = this.f25633e.iterator();
+        Iterator it = this.f25681e.iterator();
         int i10 = 0;
         long j11 = Long.MIN_VALUE;
         f fVar = null;
@@ -136,12 +136,12 @@ public final class g {
                         fVar = connection;
                         j11 = o10;
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
             }
         }
-        long j12 = this.f25630b;
-        if (j11 < j12 && i10 <= this.f25629a) {
+        long j12 = this.f25678b;
+        if (j11 < j12 && i10 <= this.f25677a) {
             if (i10 > 0) {
                 return j12 - j11;
             }
@@ -159,10 +159,10 @@ public final class g {
                 return 0L;
             }
             fVar.D(true);
-            this.f25633e.remove(fVar);
+            this.f25681e.remove(fVar);
             cu.e.n(fVar.E());
-            if (this.f25633e.isEmpty()) {
-                this.f25631c.a();
+            if (this.f25681e.isEmpty()) {
+                this.f25679c.a();
             }
             return 0L;
         }
@@ -172,14 +172,14 @@ public final class g {
         Intrinsics.checkNotNullParameter(connection, "connection");
         if (cu.e.f20042h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        } else if (!connection.p() && this.f25629a != 0) {
-            fu.d.j(this.f25631c, this.f25632d, 0L, 2, null);
+        } else if (!connection.p() && this.f25677a != 0) {
+            fu.d.j(this.f25679c, this.f25680d, 0L, 2, null);
             return false;
         } else {
             connection.D(true);
-            this.f25633e.remove(connection);
-            if (this.f25633e.isEmpty()) {
-                this.f25631c.a();
+            this.f25681e.remove(connection);
+            if (this.f25681e.isEmpty()) {
+                this.f25679c.a();
             }
             return true;
         }
@@ -190,7 +190,7 @@ public final class g {
         if (cu.e.f20042h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
         }
-        this.f25633e.add(connection);
-        fu.d.j(this.f25631c, this.f25632d, 0L, 2, null);
+        this.f25681e.add(connection);
+        fu.d.j(this.f25679c, this.f25680d, 0L, 2, null);
     }
 }

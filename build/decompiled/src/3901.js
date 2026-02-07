@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun35164: for (var _fun35164_ip = 0;;) switch (_fun35164_ip) {
+    _fun35181: for (var _fun35181_ip = 0;;) switch (_fun35181_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -18,29 +18,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = '__esModule';
             var0 = var3.bind(var7)(var2, var0, var1);
             var0 = {};
-            var1 = "function scrollToFabric_Pnpm_scrollToTs1(animatedRef,x,y,animated){const{dispatchCommand}=this.__closure;dispatchCommand(animatedRef,'scrollTo',[x,y,animated]);}";
+            var1 = "function setGestureStateNative_Pnpm_setGestureStateTs1(handlerTag,newState){const{logger}=this.__closure;if(!_WORKLET){logger.warn('You can not use setGestureState in non-worklet function.');return;}global._setGestureState(handlerTag,newState);}";
             var0.code = var1;
             var _closure1_slot3 = var0;
             var1 = function() { // Environment: var4
-                var0 = function arg0, arg1, arg2, arg3() {
-                    var2 = _closure1_slot1;
-                    var1 = _closure1_slot2;
-                    var0 = 0;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var5 = var2.bind(var0)(var1);
-                    var4 = var5.dispatchCommand;
-                    var3 = new Array(3);
-                    var1 = arg1;
-                    var3[0] = var1;
-                    var1 = arg2;
-                    var3[1] = var1;
-                    var1 = arg3;
-                    var3[2] = var1;
-                    var2 = arg0;
-                    var1 = 'scrollTo';
-                    var1 = var4.bind(var5)(var2, var1, var3);
-                    return var0;
+                var0 = function arg0, arg1() {
+                    _fun35183: for (var _fun35183_ip = 0;;) switch (_fun35183_ip) {
+                        case 0:
+                            var0 = global;
+                            var1 = var0._WORKLET;
+                            if (var1) {
+                                _fun35183_ip = 59;
+                                continue _fun35183
+                            }
+                        case 14:
+                            var3 = _closure1_slot1;
+                            var2 = _closure1_slot2;
+                            var1 = 0;
+                            var2 = var2[var1];
+                            var1 = undefined;
+                            var1 = var3.bind(var1)(var2);
+                            var3 = var1.logger;
+                            var2 = var3.warn;
+                            var1 = 'You can not use setGestureState in non-worklet function.';
+                            var1 = var2.bind(var3)(var1);
+                            _fun35183_ip = 83;
+                            continue _fun35183;
+                        case 59:
+                            var3 = _closure1_slot0;
+                            var2 = var3._setGestureState;
+                            var1 = arg0;
+                            var0 = arg1;
+                            var0 = var2.bind(var3)(var1, var0);
+                        case 83:
+                            var0 = undefined;
+                            return var0;
+                    }
                 };
                 var2 = {};
                 var5 = _closure1_slot1;
@@ -49,146 +62,95 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4[var3];
                 var3 = undefined;
                 var3 = var5.bind(var3)(var4);
-                var3 = var3.dispatchCommand;
-                var2.dispatchCommand = var3;
+                var3 = var3.logger;
+                var2.logger = var3;
                 var0.__closure = var2;
-                var2 = 5331784934384.0;
+                var2 = 13301434022691.0;
                 var0.__workletHash = var2;
                 var1 = _closure1_slot3;
                 var0.__initData = var1;
                 return var0;
             };
             var0 = undefined;
-            var7 = var1.bind(var0)();
-            var1 = {};
-            var3 = 'function scrollToPaper_Pnpm_scrollToTs2(animatedRef,x,y,animated){if(!_WORKLET){return;}const viewTag=animatedRef();global._scrollToPaper(viewTag,x,y,animated);}';
-            var1.code = var3;
-            var _closure1_slot4 = var1;
-            var1 = function() { // Environment: var4
-                var0 = function arg0, arg1, arg2, arg3() {
-                    _fun35168: for (var _fun35168_ip = 0;;) switch (_fun35168_ip) {
-                        case 0:
-                            var0 = global;
-                            var0 = var0._WORKLET;
-                            if (!var0) {
-                                _fun35168_ip = 51;
-                                continue _fun35168
-                            }
-                        case 11:
-                            var1 = arg0;
-                            var0 = undefined;
-                            var9 = var1.bind(var0)();
-                            var4 = _closure1_slot0;
-                            var3 = var4._scrollToPaper;
-                            var8 = arg1;
-                            var7 = arg2;
-                            var6 = arg3;
-                            var10 = var4;
-                            var0 = var10[var3](var9, var8, var7, var6, var5);
-                        case 51:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var1 = {};
-                var0.__closure = var1;
-                var1 = 10376977850779.0;
-                var0.__workletHash = var1;
-                var1 = _closure1_slot4;
-                var0.__initData = var1;
-                return var0;
-            };
             var1 = var1.bind(var0)();
-            var3 = 2;
-            var8 = var6[var3];
-            var9 = var5.bind(var0)(var8);
-            var8 = var9.shouldBeUseWeb;
-            var9 = var8.bind(var9)();
-            var8 = var6[var3];
-            var8 = var5.bind(var0)(var8);
-            if (var9) {
-                _fun35164_ip = 162;
-                continue _fun35164
+            var3 = 1;
+            var7 = var6[var3];
+            var8 = var5.bind(var0)(var7);
+            var7 = var8.shouldBeUseWeb;
+            var7 = var7.bind(var8)();
+            if (!var7) {
+                _fun35181_ip = 176;
+                continue _fun35181
             }
-        case 144:
-            var9 = var8.isFabric;
-            var9 = var9.bind(var8)();
-            if (!var9) {
-                _fun35164_ip = 160;
-                continue _fun35164
-            }
-        case 157:
-            var1 = var7;
-        case 160:
-            _fun35164_ip = 219;
-            continue _fun35164;
-        case 162:
+        case 110:
+            var7 = var6[var3];
+            var8 = var5.bind(var0)(var7);
             var7 = var8.isJest;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun35164_ip = 211;
-                continue _fun35164
+                _fun35181_ip = 168;
+                continue _fun35181
             }
-        case 175:
+        case 132:
             var3 = var6[var3];
             var5 = var5.bind(var0)(var3);
             var3 = var5.isChromeDebugger;
             var3 = var3.bind(var5)();
             if (var3) {
-                _fun35164_ip = 204;
-                continue _fun35164
+                _fun35181_ip = 161;
+                continue _fun35181
             }
-        case 197:
+        case 154:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 1;
+                var0 = 0;
                 var1 = var1[var0];
                 var0 = undefined;
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'scrollTo() is not supported on this configuration.';
+                var1 = 'setGestureState() is not supported on this configuration.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-            _fun35164_ip = 209;
-            continue _fun35164;
-        case 204:
+            _fun35181_ip = 166;
+            continue _fun35181;
+        case 161:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 1;
+                var0 = 0;
                 var1 = var1[var0];
                 var0 = undefined;
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'scrollTo() is not supported with Chrome Debugger.';
+                var1 = 'setGestureState() cannot be used with Chrome Debugger.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-        case 209:
-            _fun35164_ip = 216;
-            continue _fun35164;
-        case 211:
+        case 166:
+            _fun35181_ip = 173;
+            continue _fun35181;
+        case 168:
             var3 = function() {
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 1;
+                var0 = 0;
                 var1 = var1[var0];
                 var0 = undefined;
                 var1 = var2.bind(var0)(var1);
                 var3 = var1.logger;
                 var2 = var3.warn;
-                var1 = 'scrollTo() is not supported with Jest.';
+                var1 = 'setGestureState() cannot be used with Jest.';
                 var1 = var2.bind(var3)(var1);
                 return var0;
             };
-        case 216:
+        case 173:
             var1 = var3;
-        case 219:
-            var2.scrollTo = var1;
+        case 176:
+            var2.setGestureState = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3898, 3727, 3726]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3726, 3725]);

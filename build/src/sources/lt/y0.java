@@ -7,7 +7,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public abstract class y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f36744a = kotlin.collections.x0.i(gt.a.I(qr.z.f48064e).getDescriptor(), gt.a.J(qr.b0.f48016e).getDescriptor(), gt.a.H(qr.x.f48059e).getDescriptor(), gt.a.K(qr.e0.f48027e).getDescriptor());
+    private static final Set f36792a = kotlin.collections.x0.i(gt.a.I(qr.z.f48112e).getDescriptor(), gt.a.J(qr.b0.f48064e).getDescriptor(), gt.a.H(qr.x.f48107e).getDescriptor(), gt.a.K(qr.e0.f48075e).getDescriptor());
 
     public static final boolean a(SerialDescriptor serialDescriptor) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
@@ -19,7 +19,7 @@ public abstract class y0 {
 
     public static final boolean b(SerialDescriptor serialDescriptor) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
-        if (serialDescriptor.isInline() && f36744a.contains(serialDescriptor)) {
+        if (serialDescriptor.isInline() && f36792a.contains(serialDescriptor)) {
             return true;
         }
         return false;

@@ -50,9 +50,9 @@ public /* synthetic */ class LinkContextData$BindTapCommandName$$serializer impl
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = gt.a.u(jt.h.f31005a);
+        KSerializer u10 = gt.a.u(jt.h.f31053a);
         UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
-        return new KSerializer[]{n2.f31041a, u10, userId$$serializer, MessageId$$serializer.INSTANCE, userId$$serializer, MessageType.Serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f31089a, u10, userId$$serializer, MessageId$$serializer.INSTANCE, userId$$serializer, MessageType.Serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -72,7 +72,7 @@ public /* synthetic */ class LinkContextData$BindTapCommandName$$serializer impl
         Boolean bool2 = null;
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
-            Boolean bool3 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, null);
+            Boolean bool3 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, null);
             UserId$$serializer userId$$serializer = UserId$$serializer.INSTANCE;
             UserId userId3 = (UserId) b10.y(serialDescriptor, 2, userId$$serializer, null);
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
@@ -104,7 +104,7 @@ public /* synthetic */ class LinkContextData$BindTapCommandName$$serializer impl
                         i11 |= 1;
                         continue;
                     case 1:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool2);
                         i11 |= 2;
                         break;
                     case 2:

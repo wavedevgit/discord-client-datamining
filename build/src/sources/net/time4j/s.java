@@ -7,27 +7,27 @@ public final class s extends a implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f39527o;
+    private final transient int f39575o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f39528p;
+    private final transient Integer f39576p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f39529q;
+    private final transient Integer f39577q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f39530r;
+    private final transient char f39578r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient rt.t f39531s;
+    private final transient rt.t f39579s;
 
     private s(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
-        this.f39527o = i10;
-        this.f39528p = num;
-        this.f39529q = num2;
-        this.f39530r = c10;
-        this.f39531s = new m0(this, false);
+        this.f39575o = i10;
+        this.f39576p = num;
+        this.f39577q = num2;
+        this.f39578r = c10;
+        this.f39579s = new m0(this, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -61,23 +61,23 @@ public final class s extends a implements l0 {
     @Override // rt.p
     /* renamed from: H */
     public Integer e() {
-        return this.f39529q;
+        return this.f39577q;
     }
 
     @Override // rt.p
     /* renamed from: I */
     public Integer B() {
-        return this.f39528p;
+        return this.f39576p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f39527o;
+        return this.f39575o;
     }
 
     @Override // rt.e, rt.p
     public char d() {
-        return this.f39530r;
+        return this.f39578r;
     }
 
     @Override // rt.p

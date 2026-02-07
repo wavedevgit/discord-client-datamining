@@ -43,7 +43,7 @@ public final class SharedCustomThemeData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {l.b(o.f48044e, new Function0() { // from class: m6.a
+    private static final Lazy[] $childSerializers = {l.b(o.f48092e, new Function0() { // from class: m6.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -84,7 +84,7 @@ public final class SharedCustomThemeData {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f31041a);
+        return new f(n2.f31089a);
     }
 
     public static /* synthetic */ SharedCustomThemeData copy$default(SharedCustomThemeData sharedCustomThemeData, List list, float f10, String str, String str2, String str3, String str4, String str5, String str6, int i10, Object obj) {

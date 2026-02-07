@@ -30,21 +30,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/themes/getSystemTheme.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun27722: for (var _fun27722_ip = 0;;) switch (_fun27722_ip) {
+        _fun27732: for (var _fun27732_ip = 0;;) switch (_fun27732_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.getColorScheme;
                 var2 = var1.bind(var2)();
                 var1 = 'light';
                 if (!(var1 !== var2)) {
-                    _fun27722_ip = 57;
-                    continue _fun27722
+                    _fun27732_ip = 57;
+                    continue _fun27732
                 }
             case 25:
                 var1 = 'dark';
                 if (!(var1 !== var2)) {
-                    _fun27722_ip = 45;
-                    continue _fun27722
+                    _fun27732_ip = 45;
+                    continue _fun27732
                 }
             case 33:
                 var1 = _closure1_slot1;

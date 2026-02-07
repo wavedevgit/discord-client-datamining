@@ -1086,7 +1086,7 @@ public class AccessibilityNodeInfoCompat {
             p0(view);
             ClickableSpan[] t10 = t(charSequence);
             if (t10 != null && t10.length > 0) {
-                A().putInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY", o1.e.f41325a);
+                A().putInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY", o1.e.f41373a);
                 SparseArray D = D(view);
                 for (int i10 = 0; i10 < t10.length; i10++) {
                     int O = O(t10[i10], D);

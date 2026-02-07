@@ -41,7 +41,7 @@ public /* synthetic */ class AttachmentLinkContentNode$$serializer implements h0
     @NotNull
     public final KSerializer[] childSerializers() {
         KSerializer u10 = gt.a.u((KSerializer) AttachmentLinkContentNode.access$get$childSerializers$cp()[2].getValue());
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, n2Var, u10};
     }
 

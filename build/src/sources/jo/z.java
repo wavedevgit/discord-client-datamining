@@ -24,16 +24,16 @@ public abstract class z {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30748a;
+        public static final /* synthetic */ int[] f30796a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30749b;
+        public static final /* synthetic */ int[] f30797b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30750c;
+        public static final /* synthetic */ int[] f30798c;
 
         /* renamed from: d  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30751d;
+        public static final /* synthetic */ int[] f30799d;
 
         static {
             int[] iArr = new int[CapturePageConfig.RuleType.values().length];
@@ -57,7 +57,7 @@ public abstract class z {
                 iArr[CapturePageConfig.RuleType.TEXT_EXTRACTION.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f30748a = iArr;
+            f30796a = iArr;
             int[] iArr2 = new int[CapturePageConfig.OverlayLocalIcon.values().length];
             try {
                 iArr2[CapturePageConfig.OverlayLocalIcon.BARCODE.ordinal()] = 1;
@@ -83,7 +83,7 @@ public abstract class z {
                 iArr2[CapturePageConfig.OverlayLocalIcon.EMPTY.ordinal()] = 6;
             } catch (NoSuchFieldError unused11) {
             }
-            f30749b = iArr2;
+            f30797b = iArr2;
             int[] iArr3 = new int[Id.IdLocalIcon.values().length];
             try {
                 iArr3[Id.IdLocalIcon.WORLD.ordinal()] = 1;
@@ -101,34 +101,34 @@ public abstract class z {
                 iArr3[Id.IdLocalIcon.HOUSE.ordinal()] = 4;
             } catch (NoSuchFieldError unused15) {
             }
-            f30750c = iArr3;
+            f30798c = iArr3;
             int[] iArr4 = new int[c4.e.values().length];
             try {
-                iArr4[c4.e.f30022o.ordinal()] = 1;
+                iArr4[c4.e.f30070o.ordinal()] = 1;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                iArr4[c4.e.f30023p.ordinal()] = 2;
+                iArr4[c4.e.f30071p.ordinal()] = 2;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                iArr4[c4.e.f30025r.ordinal()] = 3;
+                iArr4[c4.e.f30073r.ordinal()] = 3;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                iArr4[c4.e.f30024q.ordinal()] = 4;
+                iArr4[c4.e.f30072q.ordinal()] = 4;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                iArr4[c4.e.f30026s.ordinal()] = 5;
+                iArr4[c4.e.f30074s.ordinal()] = 5;
             } catch (NoSuchFieldError unused20) {
             }
-            f30751d = iArr4;
+            f30799d = iArr4;
         }
     }
 
     private static final c4.a a(c4.e eVar) {
-        int i10 = a.f30751d[eVar.ordinal()];
+        int i10 = a.f30799d[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -152,32 +152,32 @@ public abstract class z {
     }
 
     private static final f5.d c(qo.e eVar, c4.e eVar2, String str) {
-        if (eVar2 == c4.e.f30025r) {
-            return f5.d.a.f30170d;
+        if (eVar2 == c4.e.f30073r) {
+            return f5.d.a.f30218d;
         }
-        if (eVar2 == c4.e.f30026s) {
-            return f5.d.f.f30176d;
+        if (eVar2 == c4.e.f30074s) {
+            return f5.d.f.f30224d;
         }
-        qo.e eVar3 = qo.e.f47915i;
-        if (eVar == eVar3 && eVar2 == c4.e.f30023p && Intrinsics.areEqual(str, "US")) {
-            return f5.d.a.f30170d;
+        qo.e eVar3 = qo.e.f47963i;
+        if (eVar == eVar3 && eVar2 == c4.e.f30071p && Intrinsics.areEqual(str, "US")) {
+            return f5.d.a.f30218d;
         }
-        if (eVar == qo.e.f47922u) {
-            return f5.d.e.f30175d;
+        if (eVar == qo.e.f47970u) {
+            return f5.d.e.f30223d;
         }
         if (eVar == qo.e.D) {
-            return f5.d.e.f30175d;
+            return f5.d.e.f30223d;
         }
         if (eVar == eVar3) {
-            return f5.d.C0426d.f30174d;
+            return f5.d.C0426d.f30222d;
         }
-        if (eVar == qo.e.f47916o) {
-            return f5.d.C0426d.f30174d;
+        if (eVar == qo.e.f47964o) {
+            return f5.d.C0426d.f30222d;
         }
-        if (eVar == qo.e.f47924w) {
-            return f5.d.C0426d.f30174d;
+        if (eVar == qo.e.f47972w) {
+            return f5.d.C0426d.f30222d;
         }
-        return f5.d.f.f30176d;
+        return f5.d.f.f30224d;
     }
 
     private static final boolean d(CapturePageConfig.RuleSet ruleSet) {
@@ -286,26 +286,26 @@ public abstract class z {
         if (overlayFallback == null) {
             i10 = -1;
         } else {
-            i10 = a.f30749b[overlayFallback.ordinal()];
+            i10 = a.f30797b[overlayFallback.ordinal()];
         }
         switch (i10) {
             case -1:
-                return f5.d.f.f30176d;
+                return f5.d.f.f30224d;
             case 0:
             default:
                 throw new qr.p();
             case 1:
-                return f5.d.a.f30170d;
+                return f5.d.a.f30218d;
             case 2:
-                return f5.d.e.f30175d;
+                return f5.d.e.f30223d;
             case 3:
-                return f5.d.C0426d.f30174d;
+                return f5.d.C0426d.f30222d;
             case 4:
-                return f5.d.a.f30170d;
+                return f5.d.a.f30218d;
             case 5:
-                return f5.d.b.f30171d;
+                return f5.d.b.f30219d;
             case 6:
-                return f5.d.f.f30176d;
+                return f5.d.f.f30224d;
         }
     }
 
@@ -313,7 +313,7 @@ public abstract class z {
         Boolean bool;
         Boolean bool2;
         CapturePageConfig capturePageConfig;
-        a.C0452a c0452a = ko.a.f31941o;
+        a.C0452a c0452a = ko.a.f31989o;
         c4.c cVar = null;
         if (autoClassificationConfig != null) {
             bool = autoClassificationConfig.isEnabled();
@@ -326,7 +326,7 @@ public abstract class z {
             bool2 = null;
         }
         if (autoClassificationConfig != null && (capturePageConfig = autoClassificationConfig.getCapturePageConfig()) != null) {
-            cVar = f(capturePageConfig, c4.e.f30022o, qo.e.M, "", j10);
+            cVar = f(capturePageConfig, c4.e.f30070o, qo.e.M, "", j10);
         }
         return c0452a.b(bool, bool2, cVar);
     }
@@ -337,7 +337,7 @@ public abstract class z {
         if (type == null) {
             i10 = -1;
         } else {
-            i10 = a.f30748a[type.ordinal()];
+            i10 = a.f30796a[type.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
@@ -412,24 +412,24 @@ public abstract class z {
         if (idLocalIcon == null) {
             i10 = -1;
         } else {
-            i10 = a.f30750c[idLocalIcon.ordinal()];
+            i10 = a.f30798c[idLocalIcon.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
                         if (i10 == 4) {
-                            return g4.f30308o;
+                            return g4.f30356o;
                         }
                         throw new qr.p();
                     }
-                    return g4.f30307i;
+                    return g4.f30355i;
                 }
-                return g4.f30306e;
+                return g4.f30354e;
             }
-            return g4.f30305d;
+            return g4.f30353d;
         }
-        return g4.f30306e;
+        return g4.f30354e;
     }
 
     public static final c4 o(Id id2, String countryCode, long j10) {
@@ -439,7 +439,7 @@ public abstract class z {
         c4.c f10;
         Intrinsics.checkNotNullParameter(id2, "<this>");
         Intrinsics.checkNotNullParameter(countryCode, "countryCode");
-        qo.e a10 = qo.e.f47913d.a(id2.getClass());
+        qo.e a10 = qo.e.f47961d.a(id2.getClass());
         Id.IdLocalIcon idLocalIcon = null;
         if (a10 == qo.e.M && !id2.isDynamicGovId()) {
             return null;
@@ -457,7 +457,7 @@ public abstract class z {
         List<String> requiresSides = id2.getRequiresSides();
         ArrayList<c4.c> arrayList = new ArrayList(CollectionsKt.w(requiresSides, 10));
         for (String str2 : requiresSides) {
-            c4.e a11 = c4.e.f30020e.a(str2);
+            c4.e a11 = c4.e.f30068e.a(str2);
             if (a11 == null || (f10 = f((CapturePageConfig) linkedHashMap.get(str2), a11, a10, (str = countryCode), (j11 = j10))) == null) {
                 return null;
             }

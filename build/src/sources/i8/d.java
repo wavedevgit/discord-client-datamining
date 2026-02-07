@@ -10,7 +10,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f26609a = new d();
+    public static final d f26657a = new d();
 
     private d() {
     }
@@ -21,12 +21,12 @@ public final class d {
             if (key instanceof e) {
                 List d10 = ((e) key).d();
                 Intrinsics.checkNotNullExpressionValue(d10, "getCacheKeys(...)");
-                d dVar = f26609a;
+                d dVar = f26657a;
                 Object obj = d10.get(0);
                 Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
                 return dVar.c((CacheKey) obj);
             }
-            return f26609a.c(key);
+            return f26657a.c(key);
         } catch (UnsupportedEncodingException e10) {
             throw new RuntimeException(e10);
         }
@@ -42,7 +42,7 @@ public final class d {
                 ArrayList arrayList = new ArrayList(d10.size());
                 int size = d10.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    d dVar = f26609a;
+                    d dVar = f26657a;
                     Object obj = d10.get(i10);
                     Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
                     arrayList.add(dVar.c((CacheKey) obj));
@@ -53,7 +53,7 @@ public final class d {
             if (key.c()) {
                 c10 = key.a();
             } else {
-                c10 = f26609a.c(key);
+                c10 = f26657a.c(key);
             }
             arrayList2.add(c10);
             return arrayList2;

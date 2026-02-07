@@ -13,22 +13,22 @@ import vv.h;
 public final class a extends h.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f54130a;
+    private final w f54178a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f54131b;
+    private final boolean f54179b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f54132c;
+    private final boolean f54180c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f54133d;
+    private final boolean f54181d;
 
     private a(w wVar, boolean z10, boolean z11, boolean z12) {
-        this.f54130a = wVar;
-        this.f54131b = z10;
-        this.f54132c = z11;
-        this.f54133d = z12;
+        this.f54178a = wVar;
+        this.f54179b = z10;
+        this.f54180c = z11;
+        this.f54181d = z12;
     }
 
     public static a f(w wVar) {
@@ -56,14 +56,14 @@ public final class a extends h.a {
 
     @Override // vv.h.a
     public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f54130a.e(type, g(annotationArr));
-        if (this.f54131b) {
+        com.squareup.moshi.h e10 = this.f54178a.e(type, g(annotationArr));
+        if (this.f54179b) {
             e10 = e10.lenient();
         }
-        if (this.f54132c) {
+        if (this.f54180c) {
             e10 = e10.failOnUnknown();
         }
-        if (this.f54133d) {
+        if (this.f54181d) {
             e10 = e10.serializeNulls();
         }
         return new b(e10);
@@ -71,14 +71,14 @@ public final class a extends h.a {
 
     @Override // vv.h.a
     public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
-        com.squareup.moshi.h e10 = this.f54130a.e(type, g(annotationArr));
-        if (this.f54131b) {
+        com.squareup.moshi.h e10 = this.f54178a.e(type, g(annotationArr));
+        if (this.f54179b) {
             e10 = e10.lenient();
         }
-        if (this.f54132c) {
+        if (this.f54180c) {
             e10 = e10.failOnUnknown();
         }
-        if (this.f54133d) {
+        if (this.f54181d) {
             e10 = e10.serializeNulls();
         }
         return new c(e10);

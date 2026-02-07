@@ -87,10 +87,10 @@ public final class LoadMoreButton {
         compositeEncoder.z(serialDescriptor, 1, loadMoreButton.text);
         compositeEncoder.x(serialDescriptor, 2, loadMoreButton.backgroundColor);
         if (compositeEncoder.A(serialDescriptor, 3) || loadMoreButton.cornerRadius != null) {
-            compositeEncoder.l(serialDescriptor, 3, p0.f31057a, loadMoreButton.cornerRadius);
+            compositeEncoder.l(serialDescriptor, 3, p0.f31105a, loadMoreButton.cornerRadius);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || loadMoreButton.color != null) {
-            compositeEncoder.l(serialDescriptor, 4, p0.f31057a, loadMoreButton.color);
+            compositeEncoder.l(serialDescriptor, 4, p0.f31105a, loadMoreButton.color);
         }
     }
 

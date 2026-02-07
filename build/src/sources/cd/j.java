@@ -69,10 +69,10 @@ final class j extends i {
     }
 
     private static int o(byte b10, a aVar) {
-        if (!aVar.f7402d[p(b10, aVar.f7403e, 1)].f50516a) {
-            return aVar.f7399a.f50526g;
+        if (!aVar.f7402d[p(b10, aVar.f7403e, 1)].f50564a) {
+            return aVar.f7399a.f50574g;
         }
-        return aVar.f7399a.f50527h;
+        return aVar.f7399a.f50575h;
     }
 
     static int p(byte b10, int i10, int i11) {
@@ -101,7 +101,7 @@ final class j extends i {
         this.f7396p = z10;
         e0.c cVar = this.f7397q;
         if (cVar != null) {
-            i10 = cVar.f50526g;
+            i10 = cVar.f50574g;
         }
         this.f7395o = i10;
     }
@@ -136,9 +136,9 @@ final class j extends i {
         }
         e0.c cVar = q10.f7399a;
         ArrayList arrayList = new ArrayList();
-        arrayList.add(cVar.f50529j);
+        arrayList.add(cVar.f50577j);
         arrayList.add(q10.f7401c);
-        bVar.f7392a = new Format.b().g0("audio/vorbis").I(cVar.f50524e).b0(cVar.f50523d).J(cVar.f50521b).h0(cVar.f50522c).V(arrayList).Z(e0.c(s.p(q10.f7400b.f50514b))).G();
+        bVar.f7392a = new Format.b().g0("audio/vorbis").I(cVar.f50572e).b0(cVar.f50571d).J(cVar.f50569b).h0(cVar.f50570c).V(arrayList).Z(e0.c(s.p(q10.f7400b.f50562b))).G();
         return true;
     }
 
@@ -168,7 +168,7 @@ final class j extends i {
         }
         byte[] bArr = new byte[h0Var.g()];
         System.arraycopy(h0Var.e(), 0, bArr, 0, h0Var.g());
-        e0.b[] k10 = e0.k(h0Var, cVar.f50521b);
+        e0.b[] k10 = e0.k(h0Var, cVar.f50569b);
         return new a(cVar, aVar, bArr, k10, e0.a(k10.length - 1));
     }
 }

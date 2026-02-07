@@ -5,26 +5,26 @@ import android.content.Context;
 public class c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f43890b = new c();
+    private static final c f43938b = new c();
 
     /* renamed from: a  reason: collision with root package name */
-    private b f43891a = null;
+    private b f43939a = null;
 
     public static b a(Context context) {
-        return f43890b.b(context);
+        return f43938b.b(context);
     }
 
     public final synchronized b b(Context context) {
         try {
-            if (this.f43891a == null) {
+            if (this.f43939a == null) {
                 if (context.getApplicationContext() != null) {
                     context = context.getApplicationContext();
                 }
-                this.f43891a = new b(context);
+                this.f43939a = new b(context);
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f43891a;
+        return this.f43939a;
     }
 }

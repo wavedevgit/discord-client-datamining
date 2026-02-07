@@ -298,14 +298,14 @@ public final class Pi2ProgressArcView extends View {
         Intrinsics.checkNotNullParameter(context, "context");
         Paint paint = new Paint(1);
         this.f19452d = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f38257d, i10, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f38305d, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f19453e = obtainStyledAttributes.getFloat(z0.f38258e, 0.4f);
-            this.f19454i = obtainStyledAttributes.getFloat(z0.f38260g, 270.0f);
-            this.f19455o = obtainStyledAttributes.getFloat(z0.f38259f, 0.0f);
-            paint.setColor(obtainStyledAttributes.getColor(z0.f38261h, -1));
-            paint.setStrokeWidth(obtainStyledAttributes.getDimensionPixelSize(z0.f38262i, 4));
+            this.f19453e = obtainStyledAttributes.getFloat(z0.f38306e, 0.4f);
+            this.f19454i = obtainStyledAttributes.getFloat(z0.f38308g, 270.0f);
+            this.f19455o = obtainStyledAttributes.getFloat(z0.f38307f, 0.0f);
+            paint.setColor(obtainStyledAttributes.getColor(z0.f38309h, -1));
+            paint.setStrokeWidth(obtainStyledAttributes.getDimensionPixelSize(z0.f38310i, 4));
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeCap(Paint.Cap.BUTT);
             obtainStyledAttributes.recycle();

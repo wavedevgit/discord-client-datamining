@@ -10,179 +10,179 @@ import java.util.Locale;
 public class c {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final float[] f30901x = {2.0f, 1.5f, 1.17f, 1.0f, 0.83f, 0.67f};
+    private static final float[] f30949x = {2.0f, 1.5f, 1.17f, 1.0f, 0.83f, 0.67f};
 
     /* renamed from: a  reason: collision with root package name */
-    protected final int f30902a;
+    protected final int f30950a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected final boolean f30903b;
+    protected final boolean f30951b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected final int f30904c;
+    protected final int f30952c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final int f30905d;
+    protected final int f30953d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final int f30906e;
+    protected final int f30954e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final int f30907f;
+    protected final int f30955f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected final int f30908g;
+    protected final int f30956g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected final int f30909h;
+    protected final int f30957h;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final int f30910i;
+    protected final int f30958i;
 
     /* renamed from: j  reason: collision with root package name */
-    protected final int f30911j;
+    protected final int f30959j;
 
     /* renamed from: k  reason: collision with root package name */
-    protected final int f30912k;
+    protected final int f30960k;
 
     /* renamed from: l  reason: collision with root package name */
-    protected final int f30913l;
+    protected final int f30961l;
 
     /* renamed from: m  reason: collision with root package name */
-    protected final int f30914m;
+    protected final int f30962m;
 
     /* renamed from: n  reason: collision with root package name */
-    protected final Typeface f30915n;
+    protected final Typeface f30963n;
 
     /* renamed from: o  reason: collision with root package name */
-    protected final Typeface f30916o;
+    protected final Typeface f30964o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected final int f30917p;
+    protected final int f30965p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected final int f30918q;
+    protected final int f30966q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected final int f30919r;
+    protected final int f30967r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected final int f30920s;
+    protected final int f30968s;
 
     /* renamed from: t  reason: collision with root package name */
-    protected final Typeface f30921t;
+    protected final Typeface f30969t;
 
     /* renamed from: u  reason: collision with root package name */
-    protected final float[] f30922u;
+    protected final float[] f30970u;
 
     /* renamed from: v  reason: collision with root package name */
-    protected final int f30923v;
+    protected final int f30971v;
 
     /* renamed from: w  reason: collision with root package name */
-    protected final int f30924w;
+    protected final int f30972w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f30925a;
+        private int f30973a;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f30927c;
+        private int f30975c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f30928d;
+        private int f30976d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f30929e;
+        private int f30977e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f30930f;
+        private int f30978f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f30931g;
+        private int f30979g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f30932h;
+        private int f30980h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f30933i;
+        private int f30981i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f30934j;
+        private int f30982j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f30935k;
+        private int f30983k;
 
         /* renamed from: l  reason: collision with root package name */
-        private int f30936l;
+        private int f30984l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f30937m;
+        private int f30985m;
 
         /* renamed from: n  reason: collision with root package name */
-        private Typeface f30938n;
+        private Typeface f30986n;
 
         /* renamed from: o  reason: collision with root package name */
-        private Typeface f30939o;
+        private Typeface f30987o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f30940p;
+        private int f30988p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f30941q;
+        private int f30989q;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f30943s;
+        private int f30991s;
 
         /* renamed from: t  reason: collision with root package name */
-        private Typeface f30944t;
+        private Typeface f30992t;
 
         /* renamed from: u  reason: collision with root package name */
-        private float[] f30945u;
+        private float[] f30993u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f30946v;
+        private int f30994v;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f30926b = true;
+        private boolean f30974b = true;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f30942r = -1;
+        private int f30990r = -1;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f30947w = -1;
+        private int f30995w = -1;
 
         a() {
         }
 
         public a A(int i10) {
-            this.f30931g = i10;
+            this.f30979g = i10;
             return this;
         }
 
         public a B(int i10) {
-            this.f30937m = i10;
+            this.f30985m = i10;
             return this;
         }
 
         public a C(int i10) {
-            this.f30942r = i10;
+            this.f30990r = i10;
             return this;
         }
 
         public a D(int i10) {
-            this.f30947w = i10;
+            this.f30995w = i10;
             return this;
         }
 
         public a x(int i10) {
-            this.f30927c = i10;
+            this.f30975c = i10;
             return this;
         }
 
         public a y(int i10) {
-            this.f30928d = i10;
+            this.f30976d = i10;
             return this;
         }
 
@@ -192,29 +192,29 @@ public class c {
     }
 
     protected c(a aVar) {
-        this.f30902a = aVar.f30925a;
-        this.f30903b = aVar.f30926b;
-        this.f30904c = aVar.f30927c;
-        this.f30905d = aVar.f30928d;
-        this.f30906e = aVar.f30929e;
-        this.f30907f = aVar.f30930f;
-        this.f30908g = aVar.f30931g;
-        this.f30909h = aVar.f30932h;
-        this.f30910i = aVar.f30933i;
-        this.f30911j = aVar.f30934j;
-        this.f30912k = aVar.f30935k;
-        this.f30913l = aVar.f30936l;
-        this.f30914m = aVar.f30937m;
-        this.f30915n = aVar.f30938n;
-        this.f30916o = aVar.f30939o;
-        this.f30917p = aVar.f30940p;
-        this.f30918q = aVar.f30941q;
-        this.f30919r = aVar.f30942r;
-        this.f30920s = aVar.f30943s;
-        this.f30921t = aVar.f30944t;
-        this.f30922u = aVar.f30945u;
-        this.f30923v = aVar.f30946v;
-        this.f30924w = aVar.f30947w;
+        this.f30950a = aVar.f30973a;
+        this.f30951b = aVar.f30974b;
+        this.f30952c = aVar.f30975c;
+        this.f30953d = aVar.f30976d;
+        this.f30954e = aVar.f30977e;
+        this.f30955f = aVar.f30978f;
+        this.f30956g = aVar.f30979g;
+        this.f30957h = aVar.f30980h;
+        this.f30958i = aVar.f30981i;
+        this.f30959j = aVar.f30982j;
+        this.f30960k = aVar.f30983k;
+        this.f30961l = aVar.f30984l;
+        this.f30962m = aVar.f30985m;
+        this.f30963n = aVar.f30986n;
+        this.f30964o = aVar.f30987o;
+        this.f30965p = aVar.f30988p;
+        this.f30966q = aVar.f30989q;
+        this.f30967r = aVar.f30990r;
+        this.f30968s = aVar.f30991s;
+        this.f30969t = aVar.f30992t;
+        this.f30970u = aVar.f30993u;
+        this.f30971v = aVar.f30994v;
+        this.f30972w = aVar.f30995w;
     }
 
     public static a i(Context context) {
@@ -223,7 +223,7 @@ public class c {
     }
 
     public void a(Paint paint) {
-        int i10 = this.f30906e;
+        int i10 = this.f30954e;
         if (i10 == 0) {
             i10 = pr.a.a(paint.getColor(), 25);
         }
@@ -232,22 +232,22 @@ public class c {
     }
 
     public void b(Paint paint) {
-        int i10 = this.f30911j;
+        int i10 = this.f30959j;
         if (i10 == 0) {
-            i10 = this.f30910i;
+            i10 = this.f30958i;
         }
         if (i10 != 0) {
             paint.setColor(i10);
         }
-        Typeface typeface = this.f30916o;
+        Typeface typeface = this.f30964o;
         if (typeface == null) {
-            typeface = this.f30915n;
+            typeface = this.f30963n;
         }
         if (typeface != null) {
             paint.setTypeface(typeface);
-            int i11 = this.f30918q;
+            int i11 = this.f30966q;
             if (i11 <= 0) {
-                i11 = this.f30917p;
+                i11 = this.f30965p;
             }
             if (i11 > 0) {
                 paint.setTextSize(i11);
@@ -256,9 +256,9 @@ public class c {
             return;
         }
         paint.setTypeface(Typeface.MONOSPACE);
-        int i12 = this.f30918q;
+        int i12 = this.f30966q;
         if (i12 <= 0) {
-            i12 = this.f30917p;
+            i12 = this.f30965p;
         }
         if (i12 > 0) {
             paint.setTextSize(i12);
@@ -268,14 +268,14 @@ public class c {
     }
 
     public void c(Paint paint) {
-        int i10 = this.f30910i;
+        int i10 = this.f30958i;
         if (i10 != 0) {
             paint.setColor(i10);
         }
-        Typeface typeface = this.f30915n;
+        Typeface typeface = this.f30963n;
         if (typeface != null) {
             paint.setTypeface(typeface);
-            int i11 = this.f30917p;
+            int i11 = this.f30965p;
             if (i11 > 0) {
                 paint.setTextSize(i11);
                 return;
@@ -283,7 +283,7 @@ public class c {
             return;
         }
         paint.setTypeface(Typeface.MONOSPACE);
-        int i12 = this.f30917p;
+        int i12 = this.f30965p;
         if (i12 > 0) {
             paint.setTextSize(i12);
         } else {
@@ -292,28 +292,28 @@ public class c {
     }
 
     public void d(Paint paint) {
-        int i10 = this.f30920s;
+        int i10 = this.f30968s;
         if (i10 == 0) {
             i10 = pr.a.a(paint.getColor(), 75);
         }
         paint.setColor(i10);
         paint.setStyle(Paint.Style.FILL);
-        int i11 = this.f30919r;
+        int i11 = this.f30967r;
         if (i11 >= 0) {
             paint.setStrokeWidth(i11);
         }
     }
 
     public void e(Paint paint, int i10) {
-        Typeface typeface = this.f30921t;
+        Typeface typeface = this.f30969t;
         if (typeface == null) {
             paint.setFakeBoldText(true);
         } else {
             paint.setTypeface(typeface);
         }
-        float[] fArr = this.f30922u;
+        float[] fArr = this.f30970u;
         if (fArr == null) {
-            fArr = f30901x;
+            fArr = f30949x;
         }
         if (fArr != null && fArr.length >= i10) {
             paint.setTextSize(paint.getTextSize() * fArr[i10 - 1]);
@@ -323,8 +323,8 @@ public class c {
     }
 
     public void f(TextPaint textPaint) {
-        textPaint.setUnderlineText(this.f30903b);
-        int i10 = this.f30902a;
+        textPaint.setUnderlineText(this.f30951b);
+        int i10 = this.f30950a;
         if (i10 != 0) {
             textPaint.setColor(i10);
         } else {
@@ -333,45 +333,45 @@ public class c {
     }
 
     public void g(Paint paint) {
-        int i10 = this.f30907f;
+        int i10 = this.f30955f;
         if (i10 == 0) {
             i10 = paint.getColor();
         }
         paint.setColor(i10);
-        int i11 = this.f30908g;
+        int i11 = this.f30956g;
         if (i11 != 0) {
             paint.setStrokeWidth(i11);
         }
     }
 
     public void h(Paint paint) {
-        int i10 = this.f30923v;
+        int i10 = this.f30971v;
         if (i10 == 0) {
             i10 = pr.a.a(paint.getColor(), 25);
         }
         paint.setColor(i10);
         paint.setStyle(Paint.Style.FILL);
-        int i11 = this.f30924w;
+        int i11 = this.f30972w;
         if (i11 >= 0) {
             paint.setStrokeWidth(i11);
         }
     }
 
     public int j() {
-        return this.f30904c;
+        return this.f30952c;
     }
 
     public int k() {
-        int i10 = this.f30905d;
+        int i10 = this.f30953d;
         if (i10 == 0) {
-            return (int) ((this.f30904c * 0.25f) + 0.5f);
+            return (int) ((this.f30952c * 0.25f) + 0.5f);
         }
         return i10;
     }
 
     public int l(int i10) {
-        int min = Math.min(this.f30904c, i10) / 2;
-        int i11 = this.f30909h;
+        int min = Math.min(this.f30952c, i10) / 2;
+        int i11 = this.f30957h;
         if (i11 != 0 && i11 <= min) {
             return i11;
         }
@@ -379,7 +379,7 @@ public class c {
     }
 
     public int m(Paint paint) {
-        int i10 = this.f30912k;
+        int i10 = this.f30960k;
         if (i10 != 0) {
             return i10;
         }
@@ -387,9 +387,9 @@ public class c {
     }
 
     public int n(Paint paint) {
-        int i10 = this.f30913l;
+        int i10 = this.f30961l;
         if (i10 == 0) {
-            i10 = this.f30912k;
+            i10 = this.f30960k;
         }
         if (i10 != 0) {
             return i10;
@@ -398,6 +398,6 @@ public class c {
     }
 
     public int o() {
-        return this.f30914m;
+        return this.f30962m;
     }
 }

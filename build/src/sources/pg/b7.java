@@ -5,44 +5,44 @@ import yi.c;
 final class b7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b7 f43943a = new b7();
+    static final b7 f43991a = new b7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f43944b;
+    private static final yi.c f43992b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f43945c;
+    private static final yi.c f43993c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f43946d;
+    private static final yi.c f43994d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f43947e;
+    private static final yi.c f43995e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f43948f;
+    private static final yi.c f43996f;
 
     static {
         c.b a10 = yi.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43944b = a10.b(s1Var.b()).a();
+        f43992b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("personDetectionMode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43945c = a11.b(s1Var2.b()).a();
+        f43993c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("landmarkDetectionMode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43946d = a12.b(s1Var3.b()).a();
+        f43994d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("preferredHardwareConfigs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43947e = a13.b(s1Var4.b()).a();
+        f43995e = a13.b(s1Var4.b()).a();
         c.b a14 = yi.c.a("runConfig");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43948f = a14.b(s1Var5.b()).a();
+        f43996f = a14.b(s1Var5.b()).a();
     }
 
     private b7() {

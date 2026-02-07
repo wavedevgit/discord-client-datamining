@@ -54,7 +54,7 @@ public final class AFa1tSDK implements Runnable {
                         @Override // kotlin.jvm.functions.Function1
                         public final /* synthetic */ Object invoke(Object obj) {
                             getRevenue((AFe1uSDK) obj);
-                            return Unit.f32008a;
+                            return Unit.f32056a;
                         }
                     });
                 }

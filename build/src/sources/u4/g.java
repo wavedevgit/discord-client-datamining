@@ -3,10 +3,10 @@ package u4;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f51236a = new f();
+    private final f f51284a = new f();
 
     public f a() {
-        return this.f51236a;
+        return this.f51284a;
     }
 
     public void b() {
@@ -31,14 +31,14 @@ public class g {
     }
 
     public boolean e() {
-        return this.f51236a.p();
+        return this.f51284a.p();
     }
 
     public boolean f(Exception exc) {
-        return this.f51236a.q(exc);
+        return this.f51284a.q(exc);
     }
 
     public boolean g(Object obj) {
-        return this.f51236a.r(obj);
+        return this.f51284a.r(obj);
     }
 }

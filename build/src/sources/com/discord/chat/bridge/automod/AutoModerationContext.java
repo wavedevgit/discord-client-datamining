@@ -121,13 +121,13 @@ public final class AutoModerationContext {
         compositeEncoder.z(serialDescriptor, 0, autoModerationContext.headerText);
         compositeEncoder.z(serialDescriptor, 1, autoModerationContext.headerBadgeText);
         if (compositeEncoder.A(serialDescriptor, 2) || autoModerationContext.ruleDisplayText != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, autoModerationContext.ruleDisplayText);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, autoModerationContext.ruleDisplayText);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || autoModerationContext.keywordDisplayText != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, autoModerationContext.keywordDisplayText);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, autoModerationContext.keywordDisplayText);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || autoModerationContext.actionsIconURL != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, autoModerationContext.actionsIconURL);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, autoModerationContext.actionsIconURL);
         }
         compositeEncoder.z(serialDescriptor, 5, autoModerationContext.actionsText);
         compositeEncoder.z(serialDescriptor, 6, autoModerationContext.feedbackText);

@@ -52,9 +52,9 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = LinkContentNode.$childSerializers;
-        jt.h hVar = jt.h.f31005a;
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{lazyArr[0].getValue(), gt.a.u(LinkContextDataSerializer.INSTANCE), gt.a.u(p0.f31057a), gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(hVar), gt.a.u(n2Var), hVar, gt.a.u(n2Var)};
+        jt.h hVar = jt.h.f31053a;
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{lazyArr[0].getValue(), gt.a.u(LinkContextDataSerializer.INSTANCE), gt.a.u(p0.f31105a), gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(hVar), gt.a.u(n2Var), hVar, gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -76,7 +76,7 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
         lazyArr = LinkContentNode.$childSerializers;
         int i11 = 7;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             boolean C = b10.C(serialDescriptor, 6);
             list = (List) b10.y(serialDescriptor, 0, (DeserializationStrategy) lazyArr[0].getValue(), null);
             linkContextData = (LinkContextData) b10.n(serialDescriptor, 1, LinkContextDataSerializer.INSTANCE, null);
@@ -84,8 +84,8 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
             z10 = C;
             str2 = (String) b10.n(serialDescriptor, 5, n2Var, null);
             roleColors = (RoleColors) b10.n(serialDescriptor, 3, RoleColors$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31005a, null);
-            num = (Integer) b10.n(serialDescriptor, 2, p0.f31057a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31053a, null);
+            num = (Integer) b10.n(serialDescriptor, 2, p0.f31105a, null);
             i10 = 255;
         } else {
             boolean z11 = true;
@@ -116,7 +116,7 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
                         i11 = 7;
                         break;
                     case 2:
-                        num2 = (Integer) b10.n(serialDescriptor, 2, p0.f31057a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 2, p0.f31105a, num2);
                         i12 |= 4;
                         i11 = 7;
                         break;
@@ -126,12 +126,12 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
                         i11 = 7;
                         break;
                     case 4:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31005a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31053a, bool2);
                         i12 |= 16;
                         i11 = 7;
                         continue;
                     case 5:
-                        str4 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str4);
+                        str4 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str4);
                         i12 |= 32;
                         break;
                     case 6:
@@ -139,7 +139,7 @@ public /* synthetic */ class LinkContentNode$$serializer implements h0 {
                         i12 |= 64;
                         break;
                     case 7:
-                        str3 = (String) b10.n(serialDescriptor, i11, n2.f31041a, str3);
+                        str3 = (String) b10.n(serialDescriptor, i11, n2.f31089a, str3);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     default:

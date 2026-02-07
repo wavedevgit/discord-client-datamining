@@ -3,16 +3,16 @@ package ng;
 final class g1 extends w {
 
     /* renamed from: i  reason: collision with root package name */
-    private final i1 f39815i;
+    private final i1 f39863i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g1(i1 i1Var, int i10) {
         super(i1Var.size(), i10);
-        this.f39815i = i1Var;
+        this.f39863i = i1Var;
     }
 
     @Override // ng.w
     protected final Object a(int i10) {
-        return this.f39815i.get(i10);
+        return this.f39863i.get(i10);
     }
 }

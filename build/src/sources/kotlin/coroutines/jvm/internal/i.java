@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class i extends a {
     public i(Continuation continuation) {
         super(continuation);
-        if (continuation == null || continuation.getContext() == kotlin.coroutines.e.f32082d) {
+        if (continuation == null || continuation.getContext() == kotlin.coroutines.e.f32130d) {
             return;
         }
         throw new IllegalArgumentException("Coroutines with restricted suspension must have EmptyCoroutineContext");
@@ -16,6 +16,6 @@ public abstract class i extends a {
     @Override // kotlin.coroutines.Continuation
     @NotNull
     public CoroutineContext getContext() {
-        return kotlin.coroutines.e.f32082d;
+        return kotlin.coroutines.e.f32130d;
     }
 }

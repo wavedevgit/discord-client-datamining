@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var7;
     var0 = function arg0() {
-        _fun113986: for (var _fun113986_ip = 0;;) switch (_fun113986_ip) {
+        _fun114476: for (var _fun114476_ip = 0;;) switch (_fun114476_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.source;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10[0] = var11;
                 var11 = undefined;
                 if (!var9) {
-                    _fun113986_ip = 95;
-                    continue _fun113986
+                    _fun114476_ip = 95;
+                    continue _fun114476
                 }
             case 89:
                 var11 = var7.defaultAvatarSelected;
@@ -530,4 +530,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DEFAULT_AVATARS = var3;
     var2.DEFAULT_AVATARS_WITH_LABELS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 14623, 14624, 14625, 14626, 14627, 14628, 14629, 14630, 1234, 1297, 671, 3943, 4905, 4705, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 14666, 14667, 14668, 14669, 14670, 14671, 14672, 14673, 1234, 1297, 671, 3942, 4904, 4704, 2]);

@@ -6,41 +6,41 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v implements h, dt.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f56600a;
+    private Integer f56648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f56601b;
+    private Integer f56649b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f56602c;
+    private Integer f56650c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f56603d;
+    private Integer f56651d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f56604e;
+    private Integer f56652e;
 
     public v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5) {
-        this.f56600a = num;
-        this.f56601b = num2;
-        this.f56602c = num3;
-        this.f56603d = num4;
-        this.f56604e = num5;
+        this.f56648a = num;
+        this.f56649b = num2;
+        this.f56650c = num3;
+        this.f56651d = num4;
+        this.f56652e = num5;
     }
 
     @Override // zs.h
     public void A(Integer num) {
-        this.f56600a = num;
+        this.f56648a = num;
     }
 
     @Override // zs.h
     public Integer B() {
-        return this.f56601b;
+        return this.f56649b;
     }
 
     @Override // zs.h
     public void D(Integer num) {
-        this.f56603d = num;
+        this.f56651d = num;
     }
 
     @Override // dt.c
@@ -98,12 +98,12 @@ public final class v implements h, dt.c {
 
     @Override // zs.h
     public Integer f() {
-        return this.f56600a;
+        return this.f56648a;
     }
 
     @Override // zs.h
     public Integer g() {
-        return this.f56602c;
+        return this.f56650c;
     }
 
     public int hashCode() {
@@ -149,17 +149,17 @@ public final class v implements h, dt.c {
 
     @Override // zs.h
     public Integer i() {
-        return this.f56603d;
+        return this.f56651d;
     }
 
     @Override // zs.h
     public void n(Integer num) {
-        this.f56604e = num;
+        this.f56652e = num;
     }
 
     @Override // zs.h
     public void t(Integer num) {
-        this.f56601b = num;
+        this.f56649b = num;
     }
 
     public String toString() {
@@ -194,12 +194,12 @@ public final class v implements h, dt.c {
 
     @Override // zs.h
     public void x(Integer num) {
-        this.f56602c = num;
+        this.f56650c = num;
     }
 
     @Override // zs.h
     public Integer z() {
-        return this.f56604e;
+        return this.f56652e;
     }
 
     public /* synthetic */ v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5, int i10, DefaultConstructorMarker defaultConstructorMarker) {

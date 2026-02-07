@@ -13,16 +13,16 @@ import st.v;
 public final class b implements u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f39264a = new String[0];
+    private static final String[] f39312a = new String[0];
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f39265b;
+    private static final Set f39313b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f39266c;
+    private static final Set f39314c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f39267d;
+    private static final Set f39315d;
 
     static {
         String[] split = xt.e.h("calendar/names/generic/generic", Locale.ROOT).f("languages").split(" ");
@@ -30,7 +30,7 @@ public final class b implements u {
         Collections.addAll(hashSet, split);
         hashSet.add("");
         Set<String> unmodifiableSet = Collections.unmodifiableSet(hashSet);
-        f39266c = unmodifiableSet;
+        f39314c = unmodifiableSet;
         HashSet hashSet2 = new HashSet();
         for (String str : unmodifiableSet) {
             if (str.isEmpty()) {
@@ -39,7 +39,7 @@ public final class b implements u {
                 hashSet2.add(new Locale(str));
             }
         }
-        f39267d = Collections.unmodifiableSet(hashSet2);
+        f39315d = Collections.unmodifiableSet(hashSet2);
         HashSet hashSet3 = new HashSet();
         hashSet3.add("buddhist");
         hashSet3.add("chinese");
@@ -57,7 +57,7 @@ public final class b implements u {
         hashSet3.add("persian");
         hashSet3.add("roc");
         hashSet3.add("vietnam");
-        f39265b = Collections.unmodifiableSet(hashSet3);
+        f39313b = Collections.unmodifiableSet(hashSet3);
     }
 
     private static int b(String str) {
@@ -80,7 +80,7 @@ public final class b implements u {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static xt.e j(String str, Locale locale) {
         String str2 = "calendar/names/" + str + "/" + str;
-        if (!f39266c.contains(xt.d.a(locale))) {
+        if (!f39314c.contains(xt.d.a(locale))) {
             locale = Locale.ROOT;
         }
         return xt.e.h(str2, locale);
@@ -179,7 +179,7 @@ public final class b implements u {
 
     @Override // st.u
     public String[] a(String str, Locale locale, v vVar, m mVar) {
-        return f39264a;
+        return f39312a;
     }
 
     @Override // st.u
@@ -216,12 +216,12 @@ public final class b implements u {
                 return new String[]{str2};
             }
         }
-        return f39264a;
+        return f39312a;
     }
 
     @Override // st.u
     public String[] d(String str, Locale locale, v vVar, m mVar) {
-        return f39264a;
+        return f39312a;
     }
 
     @Override // st.u
@@ -276,12 +276,12 @@ public final class b implements u {
 
     @Override // st.u
     public String[] h(String str, Locale locale, v vVar, m mVar) {
-        return f39264a;
+        return f39312a;
     }
 
     @Override // st.u
     public boolean i(String str) {
-        return f39265b.contains(str);
+        return f39313b.contains(str);
     }
 
     public String toString() {

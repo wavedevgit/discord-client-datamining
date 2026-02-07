@@ -19,15 +19,15 @@ public final class FqNamesUtilKt {
         static {
             int[] iArr = new int[a.values().length];
             try {
-                iArr[a.f33891d.ordinal()] = 1;
+                iArr[a.f33939d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[a.f33893i.ordinal()] = 2;
+                iArr[a.f33941i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[a.f33892e.ordinal()] = 3;
+                iArr[a.f33940e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             $EnumSwitchMapping$0 = iArr;
@@ -101,14 +101,14 @@ public final class FqNamesUtilKt {
         if (str == null) {
             return false;
         }
-        a aVar = a.f33891d;
+        a aVar = a.f33939d;
         for (int i10 = 0; i10 < str.length(); i10++) {
             char charAt = str.charAt(i10);
             int i11 = WhenMappings.$EnumSwitchMapping$0[aVar.ordinal()];
             if (i11 != 1 && i11 != 2) {
                 if (i11 == 3) {
                     if (charAt == '.') {
-                        aVar = a.f33893i;
+                        aVar = a.f33941i;
                     } else if (!Character.isJavaIdentifierPart(charAt)) {
                         return false;
                     }
@@ -118,10 +118,10 @@ public final class FqNamesUtilKt {
             } else if (!Character.isJavaIdentifierStart(charAt)) {
                 return false;
             } else {
-                aVar = a.f33892e;
+                aVar = a.f33940e;
             }
         }
-        if (aVar == a.f33893i) {
+        if (aVar == a.f33941i) {
             return false;
         }
         return true;

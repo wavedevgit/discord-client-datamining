@@ -28,34 +28,34 @@ import os.m0;
 public final class k {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final a f53982j = new a(null);
+    public static final a f54030j = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f53983a;
+    private final l f54031a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f53984b;
+    private final List f54032b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Handler f53985c;
+    private final Handler f54033c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CameraCharacteristics f53986d;
+    private final CameraCharacteristics f54034d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineScope f53987e;
+    private final CoroutineScope f54035e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f53988f;
+    private boolean f54036f;
 
     /* renamed from: g  reason: collision with root package name */
-    private MeteringRectangle f53989g;
+    private MeteringRectangle f54037g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Job f53990h;
+    private Job f54038h;
 
     /* renamed from: i  reason: collision with root package name */
-    private CameraCaptureSession f53991i;
+    private CameraCaptureSession f54039i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -66,16 +66,16 @@ public final class k {
         public static final class C0725a extends kotlin.coroutines.jvm.internal.d {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f53992d;
+            Object f54040d;
 
             /* renamed from: e  reason: collision with root package name */
-            Object f53993e;
+            Object f54041e;
 
             /* renamed from: i  reason: collision with root package name */
-            /* synthetic */ Object f53994i;
+            /* synthetic */ Object f54042i;
 
             /* renamed from: p  reason: collision with root package name */
-            int f53996p;
+            int f54044p;
 
             C0725a(Continuation continuation) {
                 super(continuation);
@@ -83,8 +83,8 @@ public final class k {
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                this.f53994i = obj;
-                this.f53996p |= Integer.MIN_VALUE;
+                this.f54042i = obj;
+                this.f54044p |= Integer.MIN_VALUE;
                 return a.this.a(null, null, null, null, null, this);
             }
         }
@@ -107,26 +107,26 @@ public final class k {
                 if (r1 == 0) goto L15
                 r1 = r0
                 wn.k$a$a r1 = (wn.k.a.C0725a) r1
-                int r2 = r1.f53996p
+                int r2 = r1.f54044p
                 r3 = -2147483648(0xffffffff80000000, float:-0.0)
                 r4 = r2 & r3
                 if (r4 == 0) goto L15
                 int r2 = r2 - r3
-                r1.f53996p = r2
+                r1.f54044p = r2
                 goto L1a
             L15:
                 wn.k$a$a r1 = new wn.k$a$a
                 r1.<init>(r0)
             L1a:
-                java.lang.Object r0 = r1.f53994i
+                java.lang.Object r0 = r1.f54042i
                 java.lang.Object r2 = wr.b.f()
-                int r3 = r1.f53996p
+                int r3 = r1.f54044p
                 r4 = 1
                 if (r3 == 0) goto L3b
                 if (r3 != r4) goto L33
-                java.lang.Object r12 = r1.f53993e
+                java.lang.Object r12 = r1.f54041e
                 wn.k r12 = (wn.k) r12
-                java.lang.Object r13 = r1.f53992d
+                java.lang.Object r13 = r1.f54040d
                 wn.k r13 = (wn.k) r13
                 kotlin.c.b(r0)
                 goto L58
@@ -144,9 +144,9 @@ public final class k {
                 r7 = r14
                 r8 = r16
                 r5.<init>(r6, r7, r8, r9, r10)
-                r1.f53992d = r5
-                r1.f53993e = r5
-                r1.f53996p = r4
+                r1.f54040d = r5
+                r1.f54041e = r5
+                r1.f54044p = r4
                 java.lang.Object r0 = wn.k.b(r5, r15, r1)
                 if (r0 != r2) goto L56
                 return r2
@@ -169,30 +169,30 @@ public final class k {
     public static final class b extends CameraCaptureSession.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Continuation f53997a;
+        final /* synthetic */ Continuation f54045a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ CameraDevice f53998b;
+        final /* synthetic */ CameraDevice f54046b;
 
         b(Continuation continuation, CameraDevice cameraDevice) {
-            this.f53997a = continuation;
-            this.f53998b = cameraDevice;
+            this.f54045a = continuation;
+            this.f54046b = cameraDevice;
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigureFailed(CameraCaptureSession session) {
             Intrinsics.checkNotNullParameter(session, "session");
-            String id2 = this.f53998b.getId();
+            String id2 = this.f54046b.getId();
             RuntimeException runtimeException = new RuntimeException("Camera " + id2 + " session configuration failed");
-            Continuation continuation = this.f53997a;
-            Result.a aVar = Result.f32005e;
+            Continuation continuation = this.f54045a;
+            Result.a aVar = Result.f32053e;
             continuation.resumeWith(Result.b(kotlin.c.a(runtimeException)));
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
         public void onConfigured(CameraCaptureSession session) {
             Intrinsics.checkNotNullParameter(session, "session");
-            this.f53997a.resumeWith(Result.b(session));
+            this.f54045a.resumeWith(Result.b(session));
         }
 
         @Override // android.hardware.camera2.CameraCaptureSession.StateCallback
@@ -206,63 +206,63 @@ public final class k {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f53999d;
+        int f54047d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f54000e;
+        final /* synthetic */ long f54048e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k f54001i;
+        final /* synthetic */ k f54049i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f54002d;
+            int f54050d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ k f54003e;
+            final /* synthetic */ k f54051e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(k kVar, Continuation continuation) {
                 super(2, continuation);
-                this.f54003e = kVar;
+                this.f54051e = kVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f54003e, continuation);
+                return new a(this.f54051e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 wr.b.f();
-                if (this.f54002d == 0) {
+                if (this.f54050d == 0) {
                     kotlin.c.b(obj);
-                    this.f54003e.d();
-                    this.f54003e.l();
-                    return Unit.f32008a;
+                    this.f54051e.d();
+                    this.f54051e.l();
+                    return Unit.f32056a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(long j10, k kVar, Continuation continuation) {
             super(2, continuation);
-            this.f54000e = j10;
-            this.f54001i = kVar;
+            this.f54048e = j10;
+            this.f54049i = kVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f54000e, this.f54001i, continuation);
+            return new c(this.f54048e, this.f54049i, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0029, code lost:
@@ -283,7 +283,7 @@ public final class k {
             /*
                 r6 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r6.f53999d
+                int r1 = r6.f54047d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1e
@@ -301,24 +301,24 @@ public final class k {
                 goto L2c
             L1e:
                 kotlin.c.b(r7)
-                long r4 = r6.f54000e
-                r6.f53999d = r3
+                long r4 = r6.f54048e
+                r6.f54047d = r3
                 java.lang.Object r7 = os.i0.a(r4, r6)
                 if (r7 != r0) goto L2c
                 goto L40
             L2c:
                 os.c1 r7 = os.m0.c()
                 wn.k$c$a r1 = new wn.k$c$a
-                wn.k r3 = r6.f54001i
+                wn.k r3 = r6.f54049i
                 r4 = 0
                 r1.<init>(r3, r4)
-                r6.f53999d = r2
+                r6.f54047d = r2
                 java.lang.Object r7 = os.g.g(r7, r1, r6)
                 if (r7 != r0) goto L41
             L40:
                 return r0
             L41:
-                kotlin.Unit r7 = kotlin.Unit.f32008a
+                kotlin.Unit r7 = kotlin.Unit.f32056a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: wn.k.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -326,7 +326,7 @@ public final class k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -336,13 +336,13 @@ public final class k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void d() {
-        this.f53989g = null;
+        this.f54037g = null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object f(CameraDevice cameraDevice, Continuation continuation) {
         vr.d dVar = new vr.d(wr.b.c(continuation));
-        k(cameraDevice, this.f53984b, this.f53985c, new b(dVar, cameraDevice));
+        k(cameraDevice, this.f54032b, this.f54033c, new b(dVar, cameraDevice));
         Object b10 = dVar.b();
         if (b10 == wr.b.f()) {
             kotlin.coroutines.jvm.internal.g.c(continuation);
@@ -356,14 +356,14 @@ public final class k {
         while (it.hasNext()) {
             createCaptureRequest.addTarget((Surface) it.next());
         }
-        createCaptureRequest.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, this.f53983a.g());
+        createCaptureRequest.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, this.f54031a.g());
         if (z10 && Build.VERSION.SDK_INT >= 33) {
             createCaptureRequest.set(CaptureRequest.CONTROL_VIDEO_STABILIZATION_MODE, 2);
         }
-        if (this.f53988f) {
+        if (this.f54036f) {
             createCaptureRequest.set(CaptureRequest.FLASH_MODE, 2);
         }
-        MeteringRectangle meteringRectangle = this.f53989g;
+        MeteringRectangle meteringRectangle = this.f54037g;
         if (meteringRectangle != null && h()) {
             createCaptureRequest.set(CaptureRequest.CONTROL_AF_REGIONS, new MeteringRectangle[]{meteringRectangle});
         }
@@ -374,7 +374,7 @@ public final class k {
 
     private final boolean h() {
         int i10;
-        Integer num = (Integer) this.f53986d.get(CameraCharacteristics.CONTROL_MAX_REGIONS_AF);
+        Integer num = (Integer) this.f54034d.get(CameraCharacteristics.CONTROL_MAX_REGIONS_AF);
         if (num != null) {
             i10 = num.intValue();
         } else {
@@ -392,7 +392,7 @@ public final class k {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 OutputConfiguration outputConfiguration = new OutputConfiguration((Surface) it.next());
-                outputConfiguration.setDynamicRangeProfile(this.f53983a.a().a());
+                outputConfiguration.setDynamicRangeProfile(this.f54031a.a().a());
                 arrayList.add(outputConfiguration);
             }
             cameraDevice.createCaptureSessionByOutputConfigurations(arrayList, stateCallback, handler);
@@ -403,45 +403,45 @@ public final class k {
     }
 
     public final void e() {
-        kotlinx.coroutines.i.f(this.f53987e, null, 1, null);
+        kotlinx.coroutines.i.f(this.f54035e, null, 1, null);
     }
 
     public final void i(boolean z10) {
-        this.f53988f = z10;
+        this.f54036f = z10;
     }
 
     public final void j(int i10, int i11, Size size, long j10) {
         Job d10;
         Intrinsics.checkNotNullParameter(size, "size");
-        this.f53989g = new MeteringRectangle(new Point(i10, i11), size, 1000);
-        Job job = this.f53990h;
+        this.f54037g = new MeteringRectangle(new Point(i10, i11), size, 1000);
+        Job job = this.f54038h;
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        d10 = os.i.d(this.f53987e, null, null, new c(j10, this, null), 3, null);
-        this.f53990h = d10;
+        d10 = os.i.d(this.f54035e, null, null, new c(j10, this, null), 3, null);
+        this.f54038h = d10;
     }
 
     public final void l() {
-        CameraCaptureSession cameraCaptureSession = this.f53991i;
+        CameraCaptureSession cameraCaptureSession = this.f54039i;
         if (cameraCaptureSession == null) {
             Intrinsics.throwUninitializedPropertyAccessException("session");
             cameraCaptureSession = null;
         }
-        CaptureRequest g10 = g(cameraCaptureSession, this.f53983a.a().b(), this.f53984b);
-        CameraCaptureSession cameraCaptureSession2 = this.f53991i;
+        CaptureRequest g10 = g(cameraCaptureSession, this.f54031a.a().b(), this.f54032b);
+        CameraCaptureSession cameraCaptureSession2 = this.f54039i;
         if (cameraCaptureSession2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("session");
             cameraCaptureSession2 = null;
         }
-        cameraCaptureSession2.setRepeatingRequest(g10, null, this.f53985c);
+        cameraCaptureSession2.setRepeatingRequest(g10, null, this.f54033c);
     }
 
     private k(l lVar, List list, Handler handler, CameraCharacteristics cameraCharacteristics) {
-        this.f53983a = lVar;
-        this.f53984b = list;
-        this.f53985c = handler;
-        this.f53986d = cameraCharacteristics;
-        this.f53987e = kotlinx.coroutines.i.a(m0.a().Y0(j1.b(null, 1, null)));
+        this.f54031a = lVar;
+        this.f54032b = list;
+        this.f54033c = handler;
+        this.f54034d = cameraCharacteristics;
+        this.f54035e = kotlinx.coroutines.i.a(m0.a().Y0(j1.b(null, 1, null)));
     }
 }

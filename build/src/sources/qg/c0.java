@@ -13,34 +13,34 @@ import java.util.Set;
 public final class c0 extends AbstractMap implements Serializable {
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Object f46969u = new Object();
+    private static final Object f47017u = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Object f46970d;
+    private transient Object f47018d;
 
     /* renamed from: e  reason: collision with root package name */
-    transient int[] f46971e;
+    transient int[] f47019e;
 
     /* renamed from: i  reason: collision with root package name */
-    transient Object[] f46972i;
+    transient Object[] f47020i;
 
     /* renamed from: o  reason: collision with root package name */
-    transient Object[] f46973o;
+    transient Object[] f47021o;
 
     /* renamed from: p  reason: collision with root package name */
-    private transient int f46974p;
+    private transient int f47022p;
 
     /* renamed from: q  reason: collision with root package name */
-    private transient int f46975q;
+    private transient int f47023q;
 
     /* renamed from: r  reason: collision with root package name */
-    private transient Set f46976r;
+    private transient Set f47024r;
 
     /* renamed from: s  reason: collision with root package name */
-    private transient Set f46977s;
+    private transient Set f47025s;
 
     /* renamed from: t  reason: collision with root package name */
-    private transient Collection f46978t;
+    private transient Collection f47026t;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0(int i10) {
@@ -53,7 +53,7 @@ public final class c0 extends AbstractMap implements Serializable {
         if (i13 != 0) {
             d0.e(d10, i12 & i14, i13 + 1);
         }
-        Object obj = this.f46970d;
+        Object obj = this.f47018d;
         Objects.requireNonNull(obj);
         int[] a10 = a();
         for (int i15 = 0; i15 <= i10; i15++) {
@@ -69,7 +69,7 @@ public final class c0 extends AbstractMap implements Serializable {
                 c10 = i17 & i10;
             }
         }
-        this.f46970d = d10;
+        this.f47018d = d10;
         C(i14);
         return i14;
     }
@@ -78,41 +78,41 @@ public final class c0 extends AbstractMap implements Serializable {
     public final Object B(Object obj) {
         if (!u()) {
             int y10 = y();
-            Object obj2 = this.f46970d;
+            Object obj2 = this.f47018d;
             Objects.requireNonNull(obj2);
             int b10 = d0.b(obj, null, y10, obj2, a(), b(), null);
             if (b10 != -1) {
                 Object obj3 = c()[b10];
                 t(b10, y10);
-                this.f46975q--;
+                this.f47023q--;
                 r();
                 return obj3;
             }
         }
-        return f46969u;
+        return f47017u;
     }
 
     private final void C(int i10) {
-        this.f46974p = ((32 - Integer.numberOfLeadingZeros(i10)) & 31) | (this.f46974p & (-32));
+        this.f47022p = ((32 - Integer.numberOfLeadingZeros(i10)) & 31) | (this.f47022p & (-32));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int[] a() {
-        int[] iArr = this.f46971e;
+        int[] iArr = this.f47019e;
         Objects.requireNonNull(iArr);
         return iArr;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object[] b() {
-        Object[] objArr = this.f46972i;
+        Object[] objArr = this.f47020i;
         Objects.requireNonNull(objArr);
         return objArr;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object[] c() {
-        Object[] objArr = this.f46973o;
+        Object[] objArr = this.f47021o;
         Objects.requireNonNull(objArr);
         return objArr;
     }
@@ -124,7 +124,7 @@ public final class c0 extends AbstractMap implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* synthetic */ Object l(c0 c0Var) {
-        Object obj = c0Var.f46970d;
+        Object obj = c0Var.f47018d;
         Objects.requireNonNull(obj);
         return obj;
     }
@@ -141,7 +141,7 @@ public final class c0 extends AbstractMap implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int y() {
-        return (1 << (this.f46974p & 31)) - 1;
+        return (1 << (this.f47022p & 31)) - 1;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -151,7 +151,7 @@ public final class c0 extends AbstractMap implements Serializable {
         }
         int a10 = e0.a(obj);
         int y10 = y();
-        Object obj2 = this.f46970d;
+        Object obj2 = this.f47018d;
         Objects.requireNonNull(obj2);
         int c10 = d0.c(obj2, a10 & y10);
         if (c10 == 0) {
@@ -178,15 +178,15 @@ public final class c0 extends AbstractMap implements Serializable {
         r();
         Map o10 = o();
         if (o10 != null) {
-            this.f46974p = s1.a(size(), 3, 1073741823);
+            this.f47022p = s1.a(size(), 3, 1073741823);
             o10.clear();
-            this.f46970d = null;
-            this.f46975q = 0;
+            this.f47018d = null;
+            this.f47023q = 0;
             return;
         }
-        Arrays.fill(b(), 0, this.f46975q, (Object) null);
-        Arrays.fill(c(), 0, this.f46975q, (Object) null);
-        Object obj = this.f46970d;
+        Arrays.fill(b(), 0, this.f47023q, (Object) null);
+        Arrays.fill(c(), 0, this.f47023q, (Object) null);
+        Object obj = this.f47018d;
         Objects.requireNonNull(obj);
         if (obj instanceof byte[]) {
             Arrays.fill((byte[]) obj, (byte) 0);
@@ -195,8 +195,8 @@ public final class c0 extends AbstractMap implements Serializable {
         } else {
             Arrays.fill((int[]) obj, 0);
         }
-        Arrays.fill(a(), 0, this.f46975q, 0);
-        this.f46975q = 0;
+        Arrays.fill(a(), 0, this.f47023q, 0);
+        this.f47023q = 0;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -215,7 +215,7 @@ public final class c0 extends AbstractMap implements Serializable {
     public final boolean containsValue(Object obj) {
         Map o10 = o();
         if (o10 == null) {
-            for (int i10 = 0; i10 < this.f46975q; i10++) {
+            for (int i10 = 0; i10 < this.f47023q; i10++) {
                 if (dl.a(obj, c()[i10])) {
                     return true;
                 }
@@ -227,10 +227,10 @@ public final class c0 extends AbstractMap implements Serializable {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Set entrySet() {
-        Set set = this.f46977s;
+        Set set = this.f47025s;
         if (set == null) {
             v vVar = new v(this);
-            this.f46977s = vVar;
+            this.f47025s = vVar;
             return vVar;
         }
         return set;
@@ -260,7 +260,7 @@ public final class c0 extends AbstractMap implements Serializable {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int i(int i10) {
         int i11 = i10 + 1;
-        if (i11 < this.f46975q) {
+        if (i11 < this.f47023q) {
             return i11;
         }
         return -1;
@@ -276,10 +276,10 @@ public final class c0 extends AbstractMap implements Serializable {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Set keySet() {
-        Set set = this.f46976r;
+        Set set = this.f47024r;
         if (set == null) {
             y yVar = new y(this);
-            this.f46976r = yVar;
+            this.f47024r = yVar;
             return yVar;
         }
         return set;
@@ -287,7 +287,7 @@ public final class c0 extends AbstractMap implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Map o() {
-        Object obj = this.f46970d;
+        Object obj = this.f47018d;
         if (obj instanceof Map) {
             return (Map) obj;
         }
@@ -299,18 +299,18 @@ public final class c0 extends AbstractMap implements Serializable {
         int i10;
         if (u()) {
             el.d(u(), "Arrays already allocated");
-            int i11 = this.f46974p;
+            int i11 = this.f47022p;
             int max = Math.max(i11 + 1, 2);
             int highestOneBit = Integer.highestOneBit(max);
             if (max > highestOneBit && (highestOneBit = highestOneBit + highestOneBit) <= 0) {
                 highestOneBit = 1073741824;
             }
             int max2 = Math.max(4, highestOneBit);
-            this.f46970d = d0.d(max2);
+            this.f47018d = d0.d(max2);
             C(max2 - 1);
-            this.f46971e = new int[i11];
-            this.f46972i = new Object[i11];
-            this.f46973o = new Object[i11];
+            this.f47019e = new int[i11];
+            this.f47020i = new Object[i11];
+            this.f47021o = new Object[i11];
         }
         Map o10 = o();
         if (o10 != null) {
@@ -319,19 +319,19 @@ public final class c0 extends AbstractMap implements Serializable {
         int[] a10 = a();
         Object[] b10 = b();
         Object[] c10 = c();
-        int i12 = this.f46975q;
+        int i12 = this.f47023q;
         int i13 = i12 + 1;
         int a11 = e0.a(obj);
         int y10 = y();
         int i14 = a11 & y10;
-        Object obj3 = this.f46970d;
+        Object obj3 = this.f47018d;
         Objects.requireNonNull(obj3);
         int c11 = d0.c(obj3, i14);
         if (c11 == 0) {
             if (i13 > y10) {
                 y10 = A(y10, d0.a(y10), a11, i12);
             } else {
-                Object obj4 = this.f46970d;
+                Object obj4 = this.f47018d;
                 Objects.requireNonNull(obj4);
                 d0.e(obj4, i14, i13);
             }
@@ -360,10 +360,10 @@ public final class c0 extends AbstractMap implements Serializable {
                             linkedHashMap.put(b()[h10], c()[h10]);
                             h10 = i(h10);
                         }
-                        this.f46970d = linkedHashMap;
-                        this.f46971e = null;
-                        this.f46972i = null;
-                        this.f46973o = null;
+                        this.f47018d = linkedHashMap;
+                        this.f47019e = null;
+                        this.f47020i = null;
+                        this.f47021o = null;
                         r();
                         return linkedHashMap.put(obj, obj2);
                     } else if (i13 > y10) {
@@ -381,22 +381,22 @@ public final class c0 extends AbstractMap implements Serializable {
             int i22 = i10;
             int min = Math.min(1073741823, (Math.max(i22, length >>> 1) + length) | i22);
             if (min != length) {
-                this.f46971e = Arrays.copyOf(a(), min);
-                this.f46972i = Arrays.copyOf(b(), min);
-                this.f46973o = Arrays.copyOf(c(), min);
+                this.f47019e = Arrays.copyOf(a(), min);
+                this.f47020i = Arrays.copyOf(b(), min);
+                this.f47021o = Arrays.copyOf(c(), min);
             }
         }
         a()[i12] = (~y10) & a11;
         b()[i12] = obj;
         c()[i12] = obj2;
-        this.f46975q = i13;
+        this.f47023q = i13;
         r();
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void r() {
-        this.f46974p += 32;
+        this.f47022p += 32;
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -406,14 +406,14 @@ public final class c0 extends AbstractMap implements Serializable {
             return o10.remove(obj);
         }
         Object B = B(obj);
-        if (B == f46969u) {
+        if (B == f47017u) {
             return null;
         }
         return B;
     }
 
     final void s(int i10) {
-        this.f46974p = s1.a(i10, 1, 1073741823);
+        this.f47022p = s1.a(i10, 1, 1073741823);
     }
 
     @Override // java.util.AbstractMap, java.util.Map
@@ -422,12 +422,12 @@ public final class c0 extends AbstractMap implements Serializable {
         if (o10 != null) {
             return o10.size();
         }
-        return this.f46975q;
+        return this.f47023q;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void t(int i10, int i11) {
-        Object obj = this.f46970d;
+        Object obj = this.f47018d;
         Objects.requireNonNull(obj);
         int[] a10 = a();
         Object[] b10 = b();
@@ -469,7 +469,7 @@ public final class c0 extends AbstractMap implements Serializable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean u() {
-        if (this.f46970d == null) {
+        if (this.f47018d == null) {
             return true;
         }
         return false;
@@ -477,10 +477,10 @@ public final class c0 extends AbstractMap implements Serializable {
 
     @Override // java.util.AbstractMap, java.util.Map
     public final Collection values() {
-        Collection collection = this.f46978t;
+        Collection collection = this.f47026t;
         if (collection == null) {
             a0 a0Var = new a0(this);
-            this.f46978t = a0Var;
+            this.f47026t = a0Var;
             return a0Var;
         }
         return collection;

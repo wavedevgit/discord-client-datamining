@@ -3,5 +3,5 @@ package ke;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f31563a = 2131100064;
+    public static int f31611a = 2131100064;
 }

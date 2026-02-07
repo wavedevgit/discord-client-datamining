@@ -6,29 +6,29 @@ import java.util.Objects;
 public final class x1 extends i1 {
 
     /* renamed from: q  reason: collision with root package name */
-    static final i1 f40383q = new x1(new Object[0], 0);
+    static final i1 f40431q = new x1(new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f40384o;
+    final transient Object[] f40432o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f40385p;
+    private final transient int f40433p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x1(Object[] objArr, int i10) {
-        this.f40384o = objArr;
-        this.f40385p = i10;
+        this.f40432o = objArr;
+        this.f40433p = i10;
     }
 
     @Override // ng.i1, ng.d1
     final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f40384o, 0, objArr, i10, this.f40385p);
-        return i10 + this.f40385p;
+        System.arraycopy(this.f40432o, 0, objArr, i10, this.f40433p);
+        return i10 + this.f40433p;
     }
 
     @Override // ng.d1
     final int c() {
-        return this.f40385p;
+        return this.f40433p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -40,19 +40,19 @@ public final class x1 extends i1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.d1
     public final Object[] e() {
-        return this.f40384o;
+        return this.f40432o;
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        t.a(i10, this.f40385p, "index");
-        Object obj = this.f40384o[i10];
+        t.a(i10, this.f40433p, "index");
+        Object obj = this.f40432o[i10];
         Objects.requireNonNull(obj);
         return obj;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f40385p;
+        return this.f40433p;
     }
 }

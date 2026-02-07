@@ -18,39 +18,39 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.Image;
     var _closure1_slot0 = var3;
     var3 = function arg0() {
-        _fun27601: for (var _fun27601_ip = 0;;) switch (_fun27601_ip) {
+        _fun27612: for (var _fun27612_ip = 0;;) switch (_fun27612_ip) {
             case 0:
                 var2 = arg0;
                 var3 = typeof var2;
                 var0 = 'number';
                 if (!(var0 !== var3)) {
-                    _fun27601_ip = 116;
-                    continue _fun27601
+                    _fun27612_ip = 116;
+                    continue _fun27612
                 }
             case 14:
                 var1 = var2.uri;
                 var0 = 'object';
                 var0 = var0 === var3;
                 if (!var0) {
-                    _fun27601_ip = 33;
-                    continue _fun27601
+                    _fun27612_ip = 33;
+                    continue _fun27612
                 }
             case 30:
                 if (var1) {
-                    _fun27601_ip = 107;
-                    continue _fun27601
+                    _fun27612_ip = 107;
+                    continue _fun27612
                 }
             case 33:
                 var4 = var2.fileName;
                 var3 = var2.path;
                 if (!var0) {
-                    _fun27601_ip = 51;
-                    continue _fun27601
+                    _fun27612_ip = 51;
+                    continue _fun27612
                 }
             case 48:
                 if (var4) {
-                    _fun27601_ip = 87;
-                    continue _fun27601
+                    _fun27612_ip = 87;
+                    continue _fun27612
                 }
             case 51:
                 var0 = global;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var0.sourceAsset = var4;
                 if (!var3) {
-                    _fun27601_ip = 105;
-                    continue _fun27601
+                    _fun27612_ip = 105;
+                    continue _fun27612
                 }
             case 99:
                 var0.path = var3;
@@ -86,14 +86,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1.resolveAssetSource;
                 var1 = var0.bind(var1)(var2);
                 if (!var1) {
-                    _fun27601_ip = 145;
-                    continue _fun27601
+                    _fun27612_ip = 145;
+                    continue _fun27612
                 }
             case 137:
                 var0 = var1.uri;
                 if (var0) {
-                    _fun27601_ip = 181;
-                    continue _fun27601
+                    _fun27612_ip = 181;
+                    continue _fun27612
                 }
             case 145:
                 var0 = global;
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.parsePossibleSources = var3;
     var3 = function arg0() {
-        _fun27602: for (var _fun27602_ip = 0;;) switch (_fun27602_ip) {
+        _fun27613: for (var _fun27613_ip = 0;;) switch (_fun27613_ip) {
             case 0:
                 var5 = arg0;
                 var2 = var5.replace;
@@ -130,8 +130,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.bind(var1)(var10);
                 var0 = global;
                 if (var1) {
-                    _fun27602_ip = 115;
-                    continue _fun27602
+                    _fun27613_ip = 115;
+                    continue _fun27613
                 }
             case 61:
                 var3 = var0.console;
@@ -171,8 +171,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 255;
                 var8 = 8;
                 if (!(var8 === var5)) {
-                    _fun27602_ip = 238;
-                    continue _fun27602
+                    _fun27613_ip = 238;
+                    continue _fun27613
                 }
             case 215:
                 var5 = var0.parseInt;

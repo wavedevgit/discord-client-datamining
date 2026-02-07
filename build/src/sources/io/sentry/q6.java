@@ -10,16 +10,16 @@ import java.util.concurrent.TimeUnit;
 public final class q6 implements z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ScheduledThreadPoolExecutor f28648a;
+    private final ScheduledThreadPoolExecutor f28696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.a f28649b;
+    private final io.sentry.util.a f28697b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Runnable f28650c;
+    private final Runnable f28698c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final k7 f28651d;
+    private final k7 f28699d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class b implements Future {
@@ -56,7 +56,7 @@ public final class q6 implements z0 {
     private static final class c implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f28652a;
+        private int f28700a;
 
         private c() {
         }
@@ -65,8 +65,8 @@ public final class q6 implements z0 {
         public Thread newThread(Runnable runnable) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("SentryExecutorServiceThreadFactory-");
-            int i10 = this.f28652a;
-            this.f28652a = i10 + 1;
+            int i10 = this.f28700a;
+            this.f28700a = i10 + 1;
             sb2.append(i10);
             Thread thread = new Thread(runnable, sb2.toString());
             thread.setDaemon(true);
@@ -75,37 +75,37 @@ public final class q6 implements z0 {
     }
 
     q6(ScheduledThreadPoolExecutor scheduledThreadPoolExecutor, k7 k7Var) {
-        this.f28649b = new io.sentry.util.a();
-        this.f28650c = new Runnable() { // from class: io.sentry.o6
+        this.f28697b = new io.sentry.util.a();
+        this.f28698c = new Runnable() { // from class: io.sentry.o6
             @Override // java.lang.Runnable
             public final void run() {
                 q6.e();
             }
         };
-        this.f28648a = scheduledThreadPoolExecutor;
-        this.f28651d = k7Var;
+        this.f28696a = scheduledThreadPoolExecutor;
+        this.f28699d = k7Var;
     }
 
     public static /* synthetic */ void d(q6 q6Var) {
         q6Var.getClass();
         for (int i10 = 0; i10 < 40; i10++) {
             try {
-                q6Var.f28648a.schedule(q6Var.f28650c, 365L, TimeUnit.DAYS).cancel(true);
+                q6Var.f28696a.schedule(q6Var.f28698c, 365L, TimeUnit.DAYS).cancel(true);
             } catch (RejectedExecutionException unused) {
                 return;
             }
         }
-        q6Var.f28648a.purge();
+        q6Var.f28696a.purge();
     }
 
     public static /* synthetic */ void e() {
     }
 
     private boolean f() {
-        if (this.f28648a.getQueue().size() >= 271) {
-            this.f28648a.purge();
+        if (this.f28696a.getQueue().size() >= 271) {
+            this.f28696a.purge();
         }
-        if (this.f28648a.getQueue().size() < 271) {
+        if (this.f28696a.getQueue().size() < 271) {
             return true;
         }
         return false;
@@ -113,16 +113,16 @@ public final class q6 implements z0 {
 
     @Override // io.sentry.z0
     public void a(long j10) {
-        a1 a10 = this.f28649b.a();
+        a1 a10 = this.f28697b.a();
         try {
-            if (!this.f28648a.isShutdown()) {
-                this.f28648a.shutdown();
+            if (!this.f28696a.isShutdown()) {
+                this.f28696a.shutdown();
                 try {
-                    if (!this.f28648a.awaitTermination(j10, TimeUnit.MILLISECONDS)) {
-                        this.f28648a.shutdownNow();
+                    if (!this.f28696a.awaitTermination(j10, TimeUnit.MILLISECONDS)) {
+                        this.f28696a.shutdownNow();
                     }
                 } catch (InterruptedException unused) {
-                    this.f28648a.shutdownNow();
+                    this.f28696a.shutdownNow();
                     Thread.currentThread().interrupt();
                 }
             }
@@ -144,32 +144,32 @@ public final class q6 implements z0 {
     @Override // io.sentry.z0
     public void b() {
         try {
-            this.f28648a.submit(new Runnable() { // from class: io.sentry.p6
+            this.f28696a.submit(new Runnable() { // from class: io.sentry.p6
                 @Override // java.lang.Runnable
                 public final void run() {
                     q6.d(q6.this);
                 }
             });
         } catch (RejectedExecutionException e10) {
-            k7 k7Var = this.f28651d;
+            k7 k7Var = this.f28699d;
             if (k7Var != null) {
                 ILogger logger = k7Var.getLogger();
                 SentryLevel sentryLevel = SentryLevel.WARNING;
-                logger.b(sentryLevel, "Prewarm task rejected from " + this.f28648a, e10);
+                logger.b(sentryLevel, "Prewarm task rejected from " + this.f28696a, e10);
             }
         }
     }
 
     @Override // io.sentry.z0
     public Future c(Runnable runnable, long j10) {
-        return this.f28648a.schedule(runnable, j10, TimeUnit.MILLISECONDS);
+        return this.f28696a.schedule(runnable, j10, TimeUnit.MILLISECONDS);
     }
 
     @Override // io.sentry.z0
     public boolean isClosed() {
-        a1 a10 = this.f28649b.a();
+        a1 a10 = this.f28697b.a();
         try {
-            boolean isShutdown = this.f28648a.isShutdown();
+            boolean isShutdown = this.f28696a.isShutdown();
             if (a10 != null) {
                 a10.close();
             }
@@ -189,13 +189,13 @@ public final class q6 implements z0 {
     @Override // io.sentry.z0
     public Future submit(Runnable runnable) {
         if (f()) {
-            return this.f28648a.submit(runnable);
+            return this.f28696a.submit(runnable);
         }
-        k7 k7Var = this.f28651d;
+        k7 k7Var = this.f28699d;
         if (k7Var != null) {
             ILogger logger = k7Var.getLogger();
             SentryLevel sentryLevel = SentryLevel.WARNING;
-            logger.c(sentryLevel, "Task " + runnable + " rejected from " + this.f28648a, new Object[0]);
+            logger.c(sentryLevel, "Task " + runnable + " rejected from " + this.f28696a, new Object[0]);
         }
         return new b();
     }

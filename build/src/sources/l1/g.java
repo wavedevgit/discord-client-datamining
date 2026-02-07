@@ -6,24 +6,24 @@ import l1.f;
 public class g extends f {
 
     /* renamed from: m  reason: collision with root package name */
-    public int f35674m;
+    public int f35722m;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(p pVar) {
         super(pVar);
         if (pVar instanceof l) {
-            this.f35657e = f.a.HORIZONTAL_DIMENSION;
+            this.f35705e = f.a.HORIZONTAL_DIMENSION;
         } else {
-            this.f35657e = f.a.VERTICAL_DIMENSION;
+            this.f35705e = f.a.VERTICAL_DIMENSION;
         }
     }
 
     @Override // l1.f
     public void d(int i10) {
-        if (!this.f35662j) {
-            this.f35662j = true;
-            this.f35659g = i10;
-            for (d dVar : this.f35663k) {
+        if (!this.f35710j) {
+            this.f35710j = true;
+            this.f35707g = i10;
+            for (d dVar : this.f35711k) {
                 dVar.a(dVar);
             }
         }

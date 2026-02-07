@@ -5,34 +5,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1() {
-        _fun31750: for (var _fun31750_ip = 0;;) switch (_fun31750_ip) {
+        _fun31761: for (var _fun31761_ip = 0;;) switch (_fun31761_ip) {
             case 0:
-                var6 = arg0;
-                var0 = this;
-                var4 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var3 = 0;
-                var1 = var1[var3];
-                var2 = undefined;
-                var1 = var4.bind(var2)(var1);
-                var1 = var1.bind(var2)(var0, var6);
-                var4 = var1.size;
-                var5 = var1.set;
-                var2 = arg1;
-                var2 = var5.bind(var1)(var6, var2);
-                var2 = var0.size;
-                var1 = var1.size;
-                var4 = var1 == var4;
-                var1 = 1;
-                if (!var4) {
-                    _fun31750_ip = 76;
-                    continue _fun31750
+                var5 = arg0;
+                var0 = null;
+                var0 = var0 != var5;
+                if (!var0) {
+                    _fun31761_ip = 58;
+                    continue _fun31761
                 }
-            case 74:
+            case 12:
+                var2 = _closure1_slot0;
+                var6 = _closure1_slot1;
                 var1 = 0;
-            case 76:
-                var1 = var2 + var1;
-                var0.size = var1;
+                var1 = var6[var1];
+                var4 = undefined;
+                var3 = var2.bind(var4)(var1);
+                var1 = 1;
+                var1 = var6[var1];
+                var2 = var2.bind(var4)(var1);
+                var1 = arg1;
+                var0 = var3.bind(var4)(var5, var1, var2);
+            case 58:
                 return var0;
         }
     };
@@ -40,4 +34,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3565]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3570, 3571]);

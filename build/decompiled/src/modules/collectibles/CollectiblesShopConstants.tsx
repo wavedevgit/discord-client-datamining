@@ -86,6 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var18.NAMEPLATES = var5;
     var5 = 'bundles';
     var18.BUNDLES = var5;
+    var5 = 'layout';
+    var18.LAYOUT = var5;
     var _closure1_slot0 = var18;
     var5 = var18.AVATAR_DECORATIONS;
     var17 = new Array(4);
@@ -300,14 +302,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isIndexPageTab = var17;
     var17 = function(arg0) { // Environment: var11
-        _fun28301: for (var _fun28301_ip = 0;;) switch (_fun28301_ip) {
+        _fun28309: for (var _fun28309_ip = 0;;) switch (_fun28309_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun28301_ip = 29;
-                    continue _fun28301
+                    _fun28309_ip = 29;
+                    continue _fun28309
                 }
             case 12:
                 var1 = _closure1_slot0;
@@ -315,8 +317,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 !== var1;
             case 29:
                 if (!var0) {
-                    _fun28301_ip = 49;
-                    continue _fun28301
+                    _fun28309_ip = 49;
+                    continue _fun28309
                 }
             case 32:
                 var1 = _closure1_slot0;
@@ -367,4 +369,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1[0] = var3;
     var2.REWARD_CATEGORY_AND_REWARD_SKU_IDS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3286, 3287, 3306, 1625, 3315, 3316, 3317, 3318, 3319, 3320, 3321, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3285, 3286, 3305, 1625, 3314, 3315, 3316, 3317, 3318, 3319, 3320, 2]);

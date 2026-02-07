@@ -1,34 +1,82 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function() {
-        _fun29073: for (var _fun29073_ip = 0;;) switch (_fun29073_ip) {
+    var1 = function arg0() {
+        _fun29084: for (var _fun29084_ip = 0;;) switch (_fun29084_ip) {
             case 0:
-                var0 = global;
-                var0 = var0.Array;
-                var0 = var0.prototype;
-                var0 = var0.map;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var2 = var4.bind(var3)(var2);
-                var2 = var2.bind(var3)(var0);
-                if (var2) {
-                    _fun29073_ip = 70;
-                    continue _fun29073
+                var5 = arg0;
+                var2 = var5;
+                var0 = true;
+                var _closure2_slot0 = var0;
+                var _closure2_slot1 = var0;
+                var4 = false;
+                var3 = false;
+                var6 = 'function';
+                var5 = typeof var5;
+                if (!(var6 !== var5)) {
+                    _fun29084_ip = 35;
+                    continue _fun29084
                 }
-            case 50:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 1;
-                var1 = var4[var1];
-                var0 = var2.bind(var3)(var1);
-            case 70:
+            case 33:
+                return var4;
+            case 35: // try_start_0
+                var7 = var2;
+                var5 = var7.call;
+                var4 = 'f';
+                var2 = function(arg0, arg1, arg2) { // Environment: var1
+                    _fun29085: for (var _fun29085_ip = 0;;) switch (_fun29085_ip) {
+                        case 0:
+                            var1 = 'object';
+                            var0 = arg2;
+                            var0 = typeof var0;
+                            if (!(var1 !== var0)) {
+                                _fun29085_ip = 23;
+                                continue _fun29085
+                            }
+                        case 14:
+                            var0 = false;
+                            _closure2_slot0 = var0;
+                        case 23:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var2 = var5.bind(var7)(var4, var2);
+                var6 = var7.call;
+                var5 = [null];
+                var4 = function() { // Environment: var1
+                    var2 = 'string';
+                    var0 = this;
+                    var0 = typeof var0;
+                    var0 = var2 === var0;
+                    _closure2_slot1 = var0;
+                    var0 = undefined;
+                    return var0;
+                };
+                var2 = 'x';
+                var2 = var6.bind(var7)(var5, var4, var2);
+            case 89: // try_end0
+                _fun29084_ip = 95;
+                continue _fun29084;
+            case 91: // catch_target0
+                CatchBlockStart(arg_register = 2);
+                var3 = true;
+            case 95:
+                var2 = !var3;
+                if (var3) {
+                    _fun29084_ip = 105;
+                    continue _fun29084
+                }
+            case 101:
+                var2 = _closure2_slot0;
+            case 105:
+                var0 = var2;
+                if (!var2) {
+                    _fun29084_ip = 115;
+                    continue _fun29084
+                }
+            case 111:
+                var0 = _closure2_slot1;
+            case 115:
                 return var0;
         }
     };
@@ -36,4 +84,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3376, 3377]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

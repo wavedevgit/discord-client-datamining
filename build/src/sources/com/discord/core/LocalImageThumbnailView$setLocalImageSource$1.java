@@ -108,11 +108,11 @@ public final class LocalImageThumbnailView$setLocalImageSource$1 extends k imple
             simpleDraweeView = localImageThumbnailView2.simpleDraweeView;
             localImageThumbnailView2.loadDefaultBitmap(simpleDraweeView, this.$uri);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((LocalImageThumbnailView$setLocalImageSource$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

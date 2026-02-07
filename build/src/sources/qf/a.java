@@ -7,7 +7,7 @@ import rf.h;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f46922a = new a();
+    public static final a f46970a = new a();
 
     private a() {
     }

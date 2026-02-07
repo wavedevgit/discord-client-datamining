@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public class f extends h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f36772d = new a(null);
+    public static final a f36820d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final boolean f36773e;
+    private static final boolean f36821e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -28,7 +28,7 @@ public class f extends h {
         }
 
         public final boolean b() {
-            return f.f36773e;
+            return f.f36821e;
         }
 
         private a() {
@@ -43,7 +43,7 @@ public class f extends h {
             lu.f$a r0 = new lu.f$a
             r1 = 0
             r0.<init>(r1)
-            lu.f.f36772d = r0
+            lu.f.f36820d = r0
             java.lang.String r0 = "java.specification.version"
             java.lang.String r0 = java.lang.System.getProperty(r0)
             if (r0 == 0) goto L15
@@ -67,7 +67,7 @@ public class f extends h {
             r0.getMethod(r4, r1)     // Catch: java.lang.NoSuchMethodException -> L2c
             goto L22
         L2c:
-            lu.f.f36773e = r2
+            lu.f.f36821e = r2
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: lu.f.<clinit>():void");
@@ -78,7 +78,7 @@ public class f extends h {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         SSLParameters sSLParameters = sslSocket.getSSLParameters();
-        sSLParameters.setApplicationProtocols((String[]) h.f36777a.b(protocols).toArray(new String[0]));
+        sSLParameters.setApplicationProtocols((String[]) h.f36825a.b(protocols).toArray(new String[0]));
         sslSocket.setSSLParameters(sSLParameters);
     }
 

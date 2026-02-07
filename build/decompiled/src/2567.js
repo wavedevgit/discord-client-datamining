@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/haven',
+        'httpServerLocation': '/assets/modules/premium/tenure_reward',
         'scales': null,
-        'hash': '585699a24beb220c748d63d4a9ee4515',
-        'name': 'Haven.compiled.messages',
+        'hash': '2aa936e16e1b9b94e3bfe0fdf88cdfe8',
+        'name': 'TenureReward.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

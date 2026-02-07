@@ -1,36 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
     var1 = function() {
-        _fun29050: for (var _fun29050_ip = 0;;) switch (_fun29050_ip) {
+        _fun29061: for (var _fun29061_ip = 0;;) switch (_fun29061_ip) {
             case 0:
-                var0 = global;
-                var1 = var0.Promise;
-                var2 = 'function';
-                var1 = typeof var1;
-                if (!(var2 === var1)) {
-                    _fun29050_ip = 22;
-                    continue _fun29050
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var1 = 0;
+                var1 = var3[var1];
+                var3 = undefined;
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.bind(var3)();
+                var1 = global;
+                var2 = var1.Promise;
+                var2 = var2.allSettled;
+                var4 = 'function';
+                var2 = typeof var2;
+                if (!(var4 !== var2)) {
+                    _fun29061_ip = 75;
+                    continue _fun29061
                 }
-            case 18:
-                var1 = undefined;
-                return var1;
-            case 22:
-                var2 = var0.TypeError;
-                var0 = var2.prototype;
-                var1 = Object.create(var0, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = '`Promise.allSettled` requires a global `Promise` be available.';
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
+            case 53:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 1;
+                var0 = var4[var0];
+                var0 = var2.bind(var3)(var0);
+                _fun29061_ip = 87;
+                continue _fun29061;
+            case 75:
+                var1 = var1.Promise;
+                var0 = var1.allSettled;
+            case 87:
+                return var0;
         }
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3364, 3366]);

@@ -11,11 +11,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j0 extends okio.c {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Socket f48244o;
+    private final Socket f48292o;
 
     public j0(Socket socket) {
         Intrinsics.checkNotNullParameter(socket, "socket");
-        this.f48244o = socket;
+        this.f48292o = socket;
     }
 
     @Override // okio.c
@@ -23,19 +23,19 @@ public final class j0 extends okio.c {
         Logger logger;
         Logger logger2;
         try {
-            this.f48244o.close();
+            this.f48292o.close();
         } catch (AssertionError e10) {
             if (x.e(e10)) {
-                logger2 = y.f48267a;
+                logger2 = y.f48315a;
                 Level level = Level.WARNING;
-                logger2.log(level, "Failed to close timed out socket " + this.f48244o, (Throwable) e10);
+                logger2.log(level, "Failed to close timed out socket " + this.f48292o, (Throwable) e10);
                 return;
             }
             throw e10;
         } catch (Exception e11) {
-            logger = y.f48267a;
+            logger = y.f48315a;
             Level level2 = Level.WARNING;
-            logger.log(level2, "Failed to close timed out socket " + this.f48244o, (Throwable) e11);
+            logger.log(level2, "Failed to close timed out socket " + this.f48292o, (Throwable) e11);
         }
     }
 

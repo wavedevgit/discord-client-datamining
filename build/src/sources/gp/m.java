@@ -10,46 +10,46 @@ public final class m implements Parcelable {
     public static final Parcelable.Creator<m> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25466d;
+    private final String f25514d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f25467e;
+    private final String f25515e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f25468i;
+    private final String f25516i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f25469o;
+    private final String f25517o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f25470p;
+    private final String f25518p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f25471q;
+    private final String f25519q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f25472r;
+    private final String f25520r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f25473s;
+    private final String f25521s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f25474t;
+    private final String f25522t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final String f25475u;
+    private final String f25523u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final String f25476v;
+    private final String f25524v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final String f25477w;
+    private final String f25525w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final String f25478x;
+    private final String f25526x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final String f25479y;
+    private final String f25527y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -82,20 +82,20 @@ public final class m implements Parcelable {
         Intrinsics.checkNotNullParameter(authenticationErrorConfirmButtonText, "authenticationErrorConfirmButtonText");
         Intrinsics.checkNotNullParameter(genericErrorText, "genericErrorText");
         Intrinsics.checkNotNullParameter(genericErrorConfirmButtonText, "genericErrorConfirmButtonText");
-        this.f25466d = nfcScanPrompt;
-        this.f25467e = authenticating;
-        this.f25468i = reading;
-        this.f25469o = cancelNfcScan;
-        this.f25470p = nfcScanSuccess;
-        this.f25471q = enablePassportNfcText;
-        this.f25472r = enablePassportNfcConfirmButtonText;
-        this.f25473s = enablePassportNfcCancelButtonText;
-        this.f25474t = connectionLostText;
-        this.f25475u = connectionLostConfirmButtonText;
-        this.f25476v = authenticationErrorText;
-        this.f25477w = authenticationErrorConfirmButtonText;
-        this.f25478x = genericErrorText;
-        this.f25479y = genericErrorConfirmButtonText;
+        this.f25514d = nfcScanPrompt;
+        this.f25515e = authenticating;
+        this.f25516i = reading;
+        this.f25517o = cancelNfcScan;
+        this.f25518p = nfcScanSuccess;
+        this.f25519q = enablePassportNfcText;
+        this.f25520r = enablePassportNfcConfirmButtonText;
+        this.f25521s = enablePassportNfcCancelButtonText;
+        this.f25522t = connectionLostText;
+        this.f25523u = connectionLostConfirmButtonText;
+        this.f25524v = authenticationErrorText;
+        this.f25525w = authenticationErrorConfirmButtonText;
+        this.f25526x = genericErrorText;
+        this.f25527y = genericErrorConfirmButtonText;
     }
 
     @Override // android.os.Parcelable
@@ -111,50 +111,50 @@ public final class m implements Parcelable {
             return false;
         }
         m mVar = (m) obj;
-        if (Intrinsics.areEqual(this.f25466d, mVar.f25466d) && Intrinsics.areEqual(this.f25467e, mVar.f25467e) && Intrinsics.areEqual(this.f25468i, mVar.f25468i) && Intrinsics.areEqual(this.f25469o, mVar.f25469o) && Intrinsics.areEqual(this.f25470p, mVar.f25470p) && Intrinsics.areEqual(this.f25471q, mVar.f25471q) && Intrinsics.areEqual(this.f25472r, mVar.f25472r) && Intrinsics.areEqual(this.f25473s, mVar.f25473s) && Intrinsics.areEqual(this.f25474t, mVar.f25474t) && Intrinsics.areEqual(this.f25475u, mVar.f25475u) && Intrinsics.areEqual(this.f25476v, mVar.f25476v) && Intrinsics.areEqual(this.f25477w, mVar.f25477w) && Intrinsics.areEqual(this.f25478x, mVar.f25478x) && Intrinsics.areEqual(this.f25479y, mVar.f25479y)) {
+        if (Intrinsics.areEqual(this.f25514d, mVar.f25514d) && Intrinsics.areEqual(this.f25515e, mVar.f25515e) && Intrinsics.areEqual(this.f25516i, mVar.f25516i) && Intrinsics.areEqual(this.f25517o, mVar.f25517o) && Intrinsics.areEqual(this.f25518p, mVar.f25518p) && Intrinsics.areEqual(this.f25519q, mVar.f25519q) && Intrinsics.areEqual(this.f25520r, mVar.f25520r) && Intrinsics.areEqual(this.f25521s, mVar.f25521s) && Intrinsics.areEqual(this.f25522t, mVar.f25522t) && Intrinsics.areEqual(this.f25523u, mVar.f25523u) && Intrinsics.areEqual(this.f25524v, mVar.f25524v) && Intrinsics.areEqual(this.f25525w, mVar.f25525w) && Intrinsics.areEqual(this.f25526x, mVar.f25526x) && Intrinsics.areEqual(this.f25527y, mVar.f25527y)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((((((((((((((((((((((this.f25466d.hashCode() * 31) + this.f25467e.hashCode()) * 31) + this.f25468i.hashCode()) * 31) + this.f25469o.hashCode()) * 31) + this.f25470p.hashCode()) * 31) + this.f25471q.hashCode()) * 31) + this.f25472r.hashCode()) * 31) + this.f25473s.hashCode()) * 31) + this.f25474t.hashCode()) * 31) + this.f25475u.hashCode()) * 31) + this.f25476v.hashCode()) * 31) + this.f25477w.hashCode()) * 31) + this.f25478x.hashCode()) * 31) + this.f25479y.hashCode();
+        return (((((((((((((((((((((((((this.f25514d.hashCode() * 31) + this.f25515e.hashCode()) * 31) + this.f25516i.hashCode()) * 31) + this.f25517o.hashCode()) * 31) + this.f25518p.hashCode()) * 31) + this.f25519q.hashCode()) * 31) + this.f25520r.hashCode()) * 31) + this.f25521s.hashCode()) * 31) + this.f25522t.hashCode()) * 31) + this.f25523u.hashCode()) * 31) + this.f25524v.hashCode()) * 31) + this.f25525w.hashCode()) * 31) + this.f25526x.hashCode()) * 31) + this.f25527y.hashCode();
     }
 
     public String toString() {
-        String str = this.f25466d;
-        String str2 = this.f25467e;
-        String str3 = this.f25468i;
-        String str4 = this.f25469o;
-        String str5 = this.f25470p;
-        String str6 = this.f25471q;
-        String str7 = this.f25472r;
-        String str8 = this.f25473s;
-        String str9 = this.f25474t;
-        String str10 = this.f25475u;
-        String str11 = this.f25476v;
-        String str12 = this.f25477w;
-        String str13 = this.f25478x;
-        String str14 = this.f25479y;
+        String str = this.f25514d;
+        String str2 = this.f25515e;
+        String str3 = this.f25516i;
+        String str4 = this.f25517o;
+        String str5 = this.f25518p;
+        String str6 = this.f25519q;
+        String str7 = this.f25520r;
+        String str8 = this.f25521s;
+        String str9 = this.f25522t;
+        String str10 = this.f25523u;
+        String str11 = this.f25524v;
+        String str12 = this.f25525w;
+        String str13 = this.f25526x;
+        String str14 = this.f25527y;
         return "PassportNfcStrings(nfcScanPrompt=" + str + ", authenticating=" + str2 + ", reading=" + str3 + ", cancelNfcScan=" + str4 + ", nfcScanSuccess=" + str5 + ", enablePassportNfcText=" + str6 + ", enablePassportNfcConfirmButtonText=" + str7 + ", enablePassportNfcCancelButtonText=" + str8 + ", connectionLostText=" + str9 + ", connectionLostConfirmButtonText=" + str10 + ", authenticationErrorText=" + str11 + ", authenticationErrorConfirmButtonText=" + str12 + ", genericErrorText=" + str13 + ", genericErrorConfirmButtonText=" + str14 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f25466d);
-        dest.writeString(this.f25467e);
-        dest.writeString(this.f25468i);
-        dest.writeString(this.f25469o);
-        dest.writeString(this.f25470p);
-        dest.writeString(this.f25471q);
-        dest.writeString(this.f25472r);
-        dest.writeString(this.f25473s);
-        dest.writeString(this.f25474t);
-        dest.writeString(this.f25475u);
-        dest.writeString(this.f25476v);
-        dest.writeString(this.f25477w);
-        dest.writeString(this.f25478x);
-        dest.writeString(this.f25479y);
+        dest.writeString(this.f25514d);
+        dest.writeString(this.f25515e);
+        dest.writeString(this.f25516i);
+        dest.writeString(this.f25517o);
+        dest.writeString(this.f25518p);
+        dest.writeString(this.f25519q);
+        dest.writeString(this.f25520r);
+        dest.writeString(this.f25521s);
+        dest.writeString(this.f25522t);
+        dest.writeString(this.f25523u);
+        dest.writeString(this.f25524v);
+        dest.writeString(this.f25525w);
+        dest.writeString(this.f25526x);
+        dest.writeString(this.f25527y);
     }
 }

@@ -3,14 +3,14 @@ package un;
 public final class o implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f51758a;
+    private final n f51806a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f51759b;
+    private final br.h f51807b;
 
     public o(n nVar, br.h hVar) {
-        this.f51758a = nVar;
-        this.f51759b = hVar;
+        this.f51806a = nVar;
+        this.f51807b = hVar;
     }
 
     public static zn.a a(n nVar, ar.a aVar) {
@@ -24,6 +24,6 @@ public final class o implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public zn.a get() {
-        return a(this.f51758a, br.c.b(this.f51759b));
+        return a(this.f51806a, br.c.b(this.f51807b));
     }
 }

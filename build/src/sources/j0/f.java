@@ -5,10 +5,10 @@ import x.l1;
 public final /* synthetic */ class f implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    public final /* synthetic */ l1 f29569d;
+    public final /* synthetic */ l1 f29617d;
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.f29569d.close();
+        this.f29617d.close();
     }
 }

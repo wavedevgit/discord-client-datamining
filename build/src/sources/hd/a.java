@@ -8,10 +8,10 @@ public final class a implements Metadata.b {
     public static final Parcelable.Creator<a> CREATOR = new C0353a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f25939d;
+    public final int f25987d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f25940e;
+    public final String f25988e;
 
     /* renamed from: hd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -33,8 +33,8 @@ public final class a implements Metadata.b {
     }
 
     public a(int i10, String str) {
-        this.f25939d = i10;
-        this.f25940e = str;
+        this.f25987d = i10;
+        this.f25988e = str;
     }
 
     @Override // android.os.Parcelable
@@ -43,12 +43,12 @@ public final class a implements Metadata.b {
     }
 
     public String toString() {
-        return "Ait(controlCode=" + this.f25939d + ",url=" + this.f25940e + ")";
+        return "Ait(controlCode=" + this.f25987d + ",url=" + this.f25988e + ")";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f25940e);
-        parcel.writeInt(this.f25939d);
+        parcel.writeString(this.f25988e);
+        parcel.writeInt(this.f25987d);
     }
 }

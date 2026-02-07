@@ -10,10 +10,10 @@ import os.n0;
 public final class d0 extends kotlin.coroutines.a implements Job {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d0 f35046e = new d0();
+    public static final d0 f35094e = new d0();
 
     private d0() {
-        super(Job.f35017h);
+        super(Job.f35065h);
     }
 
     @Override // kotlinx.coroutines.Job
@@ -23,12 +23,12 @@ public final class d0 extends kotlin.coroutines.a implements Job {
 
     @Override // kotlinx.coroutines.Job
     public os.n E0(os.o oVar) {
-        return e1.f43500d;
+        return e1.f43548d;
     }
 
     @Override // kotlinx.coroutines.Job
     public n0 P(Function1 function1) {
-        return e1.f43500d;
+        return e1.f43548d;
     }
 
     @Override // kotlinx.coroutines.Job
@@ -71,6 +71,6 @@ public final class d0 extends kotlin.coroutines.a implements Job {
 
     @Override // kotlinx.coroutines.Job
     public n0 z(boolean z10, boolean z11, Function1 function1) {
-        return e1.f43500d;
+        return e1.f43548d;
     }
 }

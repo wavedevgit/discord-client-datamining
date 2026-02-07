@@ -14,18 +14,18 @@ import okio.Timeout;
 public final class e0 implements BufferedSink {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Sink f48200d;
+    public final Sink f48248d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Buffer f48201e;
+    public final Buffer f48249e;
 
     /* renamed from: i  reason: collision with root package name */
-    public boolean f48202i;
+    public boolean f48250i;
 
     public e0(Sink sink) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        this.f48200d = sink;
-        this.f48201e = new Buffer();
+        this.f48248d = sink;
+        this.f48249e = new Buffer();
     }
 
     @Override // okio.BufferedSink
@@ -33,7 +33,7 @@ public final class e0 implements BufferedSink {
         Intrinsics.checkNotNullParameter(source, "source");
         long j10 = 0;
         while (true) {
-            long read = source.read(this.f48201e, 8192L);
+            long read = source.read(this.f48249e, 8192L);
             if (read != -1) {
                 j10 += read;
                 g0();
@@ -45,8 +45,8 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink J1(long j10) {
-        if (!this.f48202i) {
-            this.f48201e.J1(j10);
+        if (!this.f48250i) {
+            this.f48249e.J1(j10);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -54,10 +54,10 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink R() {
-        if (!this.f48202i) {
-            long size = this.f48201e.size();
+        if (!this.f48250i) {
+            long size = this.f48249e.size();
             if (size > 0) {
-                this.f48200d.w0(this.f48201e, size);
+                this.f48248d.w0(this.f48249e, size);
             }
             return this;
         }
@@ -66,8 +66,8 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink W0(long j10) {
-        if (!this.f48202i) {
-            this.f48201e.W0(j10);
+        if (!this.f48250i) {
+            this.f48249e.W0(j10);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -76,8 +76,8 @@ public final class e0 implements BufferedSink {
     @Override // okio.BufferedSink
     public BufferedSink Z1(ByteString byteString) {
         Intrinsics.checkNotNullParameter(byteString, "byteString");
-        if (!this.f48202i) {
-            this.f48201e.Z1(byteString);
+        if (!this.f48250i) {
+            this.f48249e.Z1(byteString);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -85,11 +85,11 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (!this.f48202i) {
+        if (!this.f48250i) {
             try {
-                if (this.f48201e.size() > 0) {
-                    Sink sink = this.f48200d;
-                    Buffer buffer = this.f48201e;
+                if (this.f48249e.size() > 0) {
+                    Sink sink = this.f48248d;
+                    Buffer buffer = this.f48249e;
                     sink.w0(buffer, buffer.size());
                 }
                 th = null;
@@ -97,13 +97,13 @@ public final class e0 implements BufferedSink {
                 th = th2;
             }
             try {
-                this.f48200d.close();
+                this.f48248d.close();
             } catch (Throwable th3) {
                 if (th == null) {
                     th = th3;
                 }
             }
-            this.f48202i = true;
+            this.f48250i = true;
             if (th != null) {
                 throw th;
             }
@@ -112,18 +112,18 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public Buffer e() {
-        return this.f48201e;
+        return this.f48249e;
     }
 
     @Override // okio.BufferedSink, okio.Sink, java.io.Flushable
     public void flush() {
-        if (!this.f48202i) {
-            if (this.f48201e.size() > 0) {
-                Sink sink = this.f48200d;
-                Buffer buffer = this.f48201e;
+        if (!this.f48250i) {
+            if (this.f48249e.size() > 0) {
+                Sink sink = this.f48248d;
+                Buffer buffer = this.f48249e;
                 sink.w0(buffer, buffer.size());
             }
-            this.f48200d.flush();
+            this.f48248d.flush();
             return;
         }
         throw new IllegalStateException("closed");
@@ -131,10 +131,10 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink g0() {
-        if (!this.f48202i) {
-            long n10 = this.f48201e.n();
+        if (!this.f48250i) {
+            long n10 = this.f48249e.n();
             if (n10 > 0) {
-                this.f48200d.w0(this.f48201e, n10);
+                this.f48248d.w0(this.f48249e, n10);
             }
             return this;
         }
@@ -143,7 +143,7 @@ public final class e0 implements BufferedSink {
 
     @Override // java.nio.channels.Channel
     public boolean isOpen() {
-        return !this.f48202i;
+        return !this.f48250i;
     }
 
     @Override // okio.BufferedSink
@@ -154,8 +154,8 @@ public final class e0 implements BufferedSink {
     @Override // okio.BufferedSink
     public BufferedSink q0(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        if (!this.f48202i) {
-            this.f48201e.q0(string);
+        if (!this.f48250i) {
+            this.f48249e.q0(string);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -163,18 +163,18 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.Sink
     public Timeout timeout() {
-        return this.f48200d.timeout();
+        return this.f48248d.timeout();
     }
 
     public String toString() {
-        return "buffer(" + this.f48200d + ')';
+        return "buffer(" + this.f48248d + ')';
     }
 
     @Override // okio.Sink
     public void w0(Buffer source, long j10) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (!this.f48202i) {
-            this.f48201e.w0(source, j10);
+        if (!this.f48250i) {
+            this.f48249e.w0(source, j10);
             g0();
             return;
         }
@@ -184,8 +184,8 @@ public final class e0 implements BufferedSink {
     @Override // java.nio.channels.WritableByteChannel
     public int write(ByteBuffer source) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (!this.f48202i) {
-            int write = this.f48201e.write(source);
+        if (!this.f48250i) {
+            int write = this.f48249e.write(source);
             g0();
             return write;
         }
@@ -194,8 +194,8 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink writeByte(int i10) {
-        if (!this.f48202i) {
-            this.f48201e.writeByte(i10);
+        if (!this.f48250i) {
+            this.f48249e.writeByte(i10);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -203,8 +203,8 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink writeInt(int i10) {
-        if (!this.f48202i) {
-            this.f48201e.writeInt(i10);
+        if (!this.f48250i) {
+            this.f48249e.writeInt(i10);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -212,8 +212,8 @@ public final class e0 implements BufferedSink {
 
     @Override // okio.BufferedSink
     public BufferedSink writeShort(int i10) {
-        if (!this.f48202i) {
-            this.f48201e.writeShort(i10);
+        if (!this.f48250i) {
+            this.f48249e.writeShort(i10);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -222,8 +222,8 @@ public final class e0 implements BufferedSink {
     @Override // okio.BufferedSink
     public BufferedSink z0(String string, int i10, int i11) {
         Intrinsics.checkNotNullParameter(string, "string");
-        if (!this.f48202i) {
-            this.f48201e.z0(string, i10, i11);
+        if (!this.f48250i) {
+            this.f48249e.z0(string, i10, i11);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -242,7 +242,7 @@ public final class e0 implements BufferedSink {
         @Override // java.io.OutputStream, java.io.Flushable
         public void flush() {
             e0 e0Var = e0.this;
-            if (!e0Var.f48202i) {
+            if (!e0Var.f48250i) {
                 e0Var.flush();
             }
         }
@@ -254,8 +254,8 @@ public final class e0 implements BufferedSink {
         @Override // java.io.OutputStream
         public void write(int i10) {
             e0 e0Var = e0.this;
-            if (!e0Var.f48202i) {
-                e0Var.f48201e.writeByte((byte) i10);
+            if (!e0Var.f48250i) {
+                e0Var.f48249e.writeByte((byte) i10);
                 e0.this.g0();
                 return;
             }
@@ -266,8 +266,8 @@ public final class e0 implements BufferedSink {
         public void write(byte[] data, int i10, int i11) {
             Intrinsics.checkNotNullParameter(data, "data");
             e0 e0Var = e0.this;
-            if (!e0Var.f48202i) {
-                e0Var.f48201e.write(data, i10, i11);
+            if (!e0Var.f48250i) {
+                e0Var.f48249e.write(data, i10, i11);
                 e0.this.g0();
                 return;
             }
@@ -278,8 +278,8 @@ public final class e0 implements BufferedSink {
     @Override // okio.BufferedSink
     public BufferedSink write(byte[] source) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (!this.f48202i) {
-            this.f48201e.write(source);
+        if (!this.f48250i) {
+            this.f48249e.write(source);
             return g0();
         }
         throw new IllegalStateException("closed");
@@ -288,8 +288,8 @@ public final class e0 implements BufferedSink {
     @Override // okio.BufferedSink
     public BufferedSink write(byte[] source, int i10, int i11) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (!this.f48202i) {
-            this.f48201e.write(source, i10, i11);
+        if (!this.f48250i) {
+            this.f48249e.write(source, i10, i11);
             return g0();
         }
         throw new IllegalStateException("closed");

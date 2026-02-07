@@ -24,34 +24,34 @@ import kotlin.jvm.internal.Reflection;
 public final class w implements dn.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f31990d;
+    private final String f32038d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f31991e;
+    private final String f32039e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final StepStyles.GovernmentIdStepStyle f31992i;
+    private final StepStyles.GovernmentIdStepStyle f32040i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final zp.a f31993o;
+    private final zp.a f32041o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function0 f31994p;
+    private final Function0 f32042p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Function0 f31995q;
+    private final Function0 f32043q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Function0 f31996r;
+    private final Function0 f32044r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final dn.c0 f31997s;
+    private final dn.c0 f32045s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f31998d = new a();
+        public static final a f32046d = new a();
 
         a() {
             super(3, no.a.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2ErrorBinding;", 0);
@@ -73,15 +73,15 @@ public final class w implements dn.b {
         Intrinsics.checkNotNullParameter(onContinueClick, "onContinueClick");
         Intrinsics.checkNotNullParameter(onBackClick, "onBackClick");
         Intrinsics.checkNotNullParameter(onCancelClick, "onCancelClick");
-        this.f31990d = str;
-        this.f31991e = str2;
-        this.f31992i = governmentIdStepStyle;
-        this.f31993o = navigationState;
-        this.f31994p = onContinueClick;
-        this.f31995q = onBackClick;
-        this.f31996r = onCancelClick;
+        this.f32038d = str;
+        this.f32039e = str2;
+        this.f32040i = governmentIdStepStyle;
+        this.f32041o = navigationState;
+        this.f32042p = onContinueClick;
+        this.f32043q = onBackClick;
+        this.f32044r = onCancelClick;
         k.a aVar = dn.k.f20913a;
-        this.f31997s = new dn.z(Reflection.getOrCreateKotlinClass(w.class), a.f31998d, new Function1() { // from class: ko.q
+        this.f32045s = new dn.z(Reflection.getOrCreateKotlinClass(w.class), a.f32046d, new Function1() { // from class: ko.q
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 dn.k i10;
@@ -112,7 +112,7 @@ public final class w implements dn.b {
         StepStyles.GovernmentIdStepImageLocalStyleContainer illustration;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        zp.a aVar2 = rendering.f31993o;
+        zp.a aVar2 = rendering.f32041o;
         Function0 function0 = new Function0() { // from class: ko.s
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -129,18 +129,18 @@ public final class w implements dn.b {
                 return l10;
             }
         };
-        Pi2NavigationBar navigationBar = aVar.f40952e;
+        Pi2NavigationBar navigationBar = aVar.f41000e;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = aVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         zp.e.b(aVar2, function0, function02, navigationBar, root);
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = rendering.f31992i;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = rendering.f32040i;
         if (governmentIdStepStyle != null && (imageLocalStyle = governmentIdStepStyle.getImageLocalStyle()) != null && (illustration = imageLocalStyle.getIllustration()) != null) {
             localImageComponentStyle = illustration.getBase();
         } else {
             localImageComponentStyle = null;
         }
-        aVar.f40951d.setAnimation(rp.o.f49114i);
+        aVar.f40999d.setAnimation(rp.o.f49162i);
         if (localImageComponentStyle != null) {
             CoordinatorLayout root2 = aVar.getRoot();
             Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
@@ -153,46 +153,46 @@ public final class w implements dn.b {
                 }
             });
         }
-        aVar.f40953f.setText(rendering.f31990d);
-        aVar.f40950c.setText(rendering.f31991e);
-        aVar.f40950c.setOnClickListener(new View.OnClickListener() { // from class: ko.v
+        aVar.f41001f.setText(rendering.f32038d);
+        aVar.f40998c.setText(rendering.f32039e);
+        aVar.f40998c.setOnClickListener(new View.OnClickListener() { // from class: ko.v
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 w.n(w.this, view);
             }
         });
         Intrinsics.checkNotNull(aVar);
-        wVar.h(aVar, rendering.f31992i, viewEnvironment);
+        wVar.h(aVar, rendering.f32040i, viewEnvironment);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(w wVar) {
-        wVar.f31995q.invoke();
-        return Unit.f32008a;
+        wVar.f32043q.invoke();
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(w wVar) {
-        wVar.f31996r.invoke();
-        return Unit.f32008a;
+        wVar.f32044r.invoke();
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(no.a aVar, LocalImageComponentStyle localImageComponentStyle) {
-        ThemeableLottieAnimationView illustration = aVar.f40951d;
+        ThemeableLottieAnimationView illustration = aVar.f40999d;
         Intrinsics.checkNotNullExpressionValue(illustration, "illustration");
         kq.g.c(illustration, localImageComponentStyle, new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void n(w wVar, View view) {
-        wVar.f31994p.invoke();
+        wVar.f32042p.invoke();
     }
 
     @Override // dn.b
     public dn.c0 a() {
-        return this.f31997s;
+        return this.f32045s;
     }
 
     public final void h(no.a aVar, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, dn.a0 viewEnvironment) {
@@ -211,13 +211,13 @@ public final class w implements dn.b {
             }
             StepStyles.GovernmentIdStepTitleComponentStyle titleStyle = governmentIdStepStyle.getTitleStyle();
             if (titleStyle != null && (base3 = titleStyle.getBase()) != null && (base4 = base3.getBase()) != null) {
-                TextView title = aVar.f40953f;
+                TextView title = aVar.f41001f;
                 Intrinsics.checkNotNullExpressionValue(title, "title");
                 kq.f0.n(title, base4, null, 2, null);
             }
             StepStyles.GovernmentIdStepPrimaryButtonComponentStyle buttonPrimaryStyle = governmentIdStepStyle.getButtonPrimaryStyle();
             if (buttonPrimaryStyle != null && (base = buttonPrimaryStyle.getBase()) != null && (base2 = base.getBase()) != null) {
-                Button continueButton = aVar.f40950c;
+                Button continueButton = aVar.f40998c;
                 Intrinsics.checkNotNullExpressionValue(continueButton, "continueButton");
                 kq.e.f(continueButton, base2, false, false, 6, null);
             }

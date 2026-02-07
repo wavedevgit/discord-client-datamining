@@ -9,19 +9,19 @@ import java.util.ArrayList;
 public class b extends h9.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f25814b = new Object();
+    private final Object f25862b = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private final Runnable f25818f = new a();
+    private final Runnable f25866f = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private ArrayList f25816d = new ArrayList();
+    private ArrayList f25864d = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private ArrayList f25817e = new ArrayList();
+    private ArrayList f25865e = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Handler f25815c = new Handler(Looper.getMainLooper());
+    private final Handler f25863c = new Handler(Looper.getMainLooper());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Runnable {
@@ -30,24 +30,24 @@ public class b extends h9.a {
 
         @Override // java.lang.Runnable
         public void run() {
-            synchronized (b.this.f25814b) {
-                ArrayList arrayList = b.this.f25817e;
+            synchronized (b.this.f25862b) {
+                ArrayList arrayList = b.this.f25865e;
                 b bVar = b.this;
-                bVar.f25817e = bVar.f25816d;
-                b.this.f25816d = arrayList;
+                bVar.f25865e = bVar.f25864d;
+                b.this.f25864d = arrayList;
             }
-            int size = b.this.f25817e.size();
+            int size = b.this.f25865e.size();
             for (int i10 = 0; i10 < size; i10++) {
-                ((a.InterfaceC0351a) b.this.f25817e.get(i10)).release();
+                ((a.InterfaceC0351a) b.this.f25865e.get(i10)).release();
             }
-            b.this.f25817e.clear();
+            b.this.f25865e.clear();
         }
     }
 
     @Override // h9.a
     public void a(a.InterfaceC0351a interfaceC0351a) {
-        synchronized (this.f25814b) {
-            this.f25816d.remove(interfaceC0351a);
+        synchronized (this.f25862b) {
+            this.f25864d.remove(interfaceC0351a);
         }
     }
 
@@ -57,18 +57,18 @@ public class b extends h9.a {
             interfaceC0351a.release();
             return;
         }
-        synchronized (this.f25814b) {
+        synchronized (this.f25862b) {
             try {
-                if (this.f25816d.contains(interfaceC0351a)) {
+                if (this.f25864d.contains(interfaceC0351a)) {
                     return;
                 }
-                this.f25816d.add(interfaceC0351a);
+                this.f25864d.add(interfaceC0351a);
                 boolean z10 = true;
-                if (this.f25816d.size() != 1) {
+                if (this.f25864d.size() != 1) {
                     z10 = false;
                 }
                 if (z10) {
-                    this.f25815c.post(this.f25818f);
+                    this.f25863c.post(this.f25866f);
                 }
             } catch (Throwable th2) {
                 throw th2;

@@ -20,29 +20,29 @@ import os.w1;
 public class e extends m implements CancellableContinuation, CoroutineStackFrame, w1 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f35047q = AtomicIntegerFieldUpdater.newUpdater(e.class, "_decisionAndIndex$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f35095q = AtomicIntegerFieldUpdater.newUpdater(e.class, "_decisionAndIndex$volatile");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35048r = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_state$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35096r = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_state$volatile");
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f35049s = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_parentHandle$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f35097s = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "_parentHandle$volatile");
     private volatile /* synthetic */ int _decisionAndIndex$volatile;
     private volatile /* synthetic */ Object _parentHandle$volatile;
     private volatile /* synthetic */ Object _state$volatile;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Continuation f35050o;
+    private final Continuation f35098o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final CoroutineContext f35051p;
+    private final CoroutineContext f35099p;
 
     public e(Continuation continuation, int i10) {
         super(i10);
-        this.f35050o = continuation;
-        this.f35051p = continuation.getContext();
+        this.f35098o = continuation;
+        this.f35099p = continuation.getContext();
         this._decisionAndIndex$volatile = 536870911;
-        this._state$volatile = b.f35020d;
+        this._state$volatile = b.f35068d;
     }
 
     private final String D() {
@@ -57,21 +57,21 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     private final n0 I() {
-        Job job = (Job) getContext().m(Job.f35017h);
+        Job job = (Job) getContext().m(Job.f35065h);
         if (job == null) {
             return null;
         }
         n0 o10 = z.o(job, false, new f(this), 1, null);
-        androidx.concurrent.futures.b.a(f35049s, this, null, o10);
+        androidx.concurrent.futures.b.a(f35097s, this, null, o10);
         return o10;
     }
 
     private final void J(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35048r;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35096r;
         while (true) {
             Object obj2 = atomicReferenceFieldUpdater.get(this);
             if (obj2 instanceof b) {
-                if (androidx.concurrent.futures.b.a(f35048r, this, obj2, obj)) {
+                if (androidx.concurrent.futures.b.a(f35096r, this, obj2, obj)) {
                     return;
                 }
             } else if (!(obj2 instanceof d) && !(obj2 instanceof ts.b0)) {
@@ -81,7 +81,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                         M(obj, obj2);
                     }
                     if (obj2 instanceof os.m) {
-                        Throwable th2 = rVar.f43525a;
+                        Throwable th2 = rVar.f43573a;
                         if (obj instanceof d) {
                             o((d) obj, th2);
                             return;
@@ -93,7 +93,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                     return;
                 } else if (obj2 instanceof h) {
                     h hVar = (h) obj2;
-                    if (hVar.f35059b != null) {
+                    if (hVar.f35107b != null) {
                         M(obj, obj2);
                     }
                     if (obj instanceof ts.b0) {
@@ -102,17 +102,17 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancelHandler");
                     d dVar = (d) obj;
                     if (hVar.c()) {
-                        o(dVar, hVar.f35062e);
+                        o(dVar, hVar.f35110e);
                         return;
                     }
-                    if (androidx.concurrent.futures.b.a(f35048r, this, obj2, h.b(hVar, null, dVar, null, null, null, 29, null))) {
+                    if (androidx.concurrent.futures.b.a(f35096r, this, obj2, h.b(hVar, null, dVar, null, null, null, 29, null))) {
                         return;
                     }
                 } else if (obj instanceof ts.b0) {
                     return;
                 } else {
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancelHandler");
-                    if (androidx.concurrent.futures.b.a(f35048r, this, obj2, new h(obj2, (d) obj, null, null, null, 28, null))) {
+                    if (androidx.concurrent.futures.b.a(f35096r, this, obj2, new h(obj2, (d) obj, null, null, null, 28, null))) {
                         return;
                     }
                 }
@@ -123,8 +123,8 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     private final boolean L() {
-        if (k0.c(this.f35069i)) {
-            Continuation continuation = this.f35050o;
+        if (k0.c(this.f35117i)) {
+            Continuation continuation = this.f35098o;
             Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>");
             if (((ts.i) continuation).s()) {
                 return true;
@@ -141,7 +141,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit S(Function1 function1, Throwable th2, Object obj, CoroutineContext coroutineContext) {
         function1.invoke(th2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static /* synthetic */ void U(e eVar, Object obj, int i10, Function3 function3, int i11, Object obj2) {
@@ -173,7 +173,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
 
     private final boolean W() {
         int i10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35047q;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35095q;
         do {
             i10 = atomicIntegerFieldUpdater.get(this);
             int i11 = i10 >> 29;
@@ -183,38 +183,38 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                 }
                 throw new IllegalStateException("Already resumed");
             }
-        } while (!f35047q.compareAndSet(this, i10, 1073741824 + (536870911 & i10)));
+        } while (!f35095q.compareAndSet(this, i10, 1073741824 + (536870911 & i10)));
         return true;
     }
 
     private final ts.e0 X(Object obj, Object obj2, Function3 function3) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35048r;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35096r;
         while (true) {
             Object obj3 = atomicReferenceFieldUpdater.get(this);
             if (obj3 instanceof f1) {
                 Object obj4 = obj;
                 Object obj5 = obj2;
                 Function3 function32 = function3;
-                if (androidx.concurrent.futures.b.a(f35048r, this, obj3, V((f1) obj3, obj4, this.f35069i, function32, obj5))) {
+                if (androidx.concurrent.futures.b.a(f35096r, this, obj3, V((f1) obj3, obj4, this.f35117i, function32, obj5))) {
                     v();
-                    return os.k.f43506a;
+                    return os.k.f43554a;
                 }
                 obj = obj4;
                 function3 = function32;
                 obj2 = obj5;
             } else {
                 Object obj6 = obj2;
-                if (!(obj3 instanceof h) || obj6 == null || ((h) obj3).f35061d != obj6) {
+                if (!(obj3 instanceof h) || obj6 == null || ((h) obj3).f35109d != obj6) {
                     return null;
                 }
-                return os.k.f43506a;
+                return os.k.f43554a;
             }
         }
     }
 
     private final boolean Y() {
         int i10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35047q;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35095q;
         do {
             i10 = atomicIntegerFieldUpdater.get(this);
             int i11 = i10 >> 29;
@@ -224,7 +224,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                 }
                 throw new IllegalStateException("Already suspended");
             }
-        } while (!f35047q.compareAndSet(this, i10, 536870912 + (536870911 & i10)));
+        } while (!f35095q.compareAndSet(this, i10, 536870912 + (536870911 & i10)));
         return true;
     }
 
@@ -233,7 +233,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     private final void q(ts.b0 b0Var, Throwable th2) {
-        int i10 = f35047q.get(this) & 536870911;
+        int i10 = f35095q.get(this) & 536870911;
         if (i10 != 536870911) {
             try {
                 b0Var.s(i10, th2, getContext());
@@ -251,7 +251,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
         if (!L()) {
             return false;
         }
-        Continuation continuation = this.f35050o;
+        Continuation continuation = this.f35098o;
         Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>");
         return ((ts.i) continuation).u(th2);
     }
@@ -270,12 +270,12 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     private final n0 z() {
-        return (n0) f35049s.get(this);
+        return (n0) f35097s.get(this);
     }
 
     @Override // kotlinx.coroutines.CancellableContinuation
     public void A(Object obj) {
-        x(this.f35069i);
+        x(this.f35117i);
     }
 
     public final Object B() {
@@ -295,25 +295,25 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
         }
         Object C = C();
         if (!(C instanceof os.r)) {
-            if (k0.b(this.f35069i) && (job = (Job) getContext().m(Job.f35017h)) != null && !job.a()) {
+            if (k0.b(this.f35117i) && (job = (Job) getContext().m(Job.f35065h)) != null && !job.a()) {
                 CancellationException C2 = job.C();
                 b(C, C2);
                 throw C2;
             }
             return j(C);
         }
-        throw ((os.r) C).f43525a;
+        throw ((os.r) C).f43573a;
     }
 
     public final Object C() {
-        return f35048r.get(this);
+        return f35096r.get(this);
     }
 
     public void H() {
         n0 I = I();
         if (I != null && isCompleted()) {
             I.dispose();
-            f35049s.set(this, e1.f43500d);
+            f35097s.set(this, e1.f43548d);
         }
     }
 
@@ -336,7 +336,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     public final void P() {
         ts.i iVar;
         Throwable x10;
-        Continuation continuation = this.f35050o;
+        Continuation continuation = this.f35098o;
         if (continuation instanceof ts.i) {
             iVar = (ts.i) continuation;
         } else {
@@ -349,19 +349,19 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     public final boolean Q() {
-        Object obj = f35048r.get(this);
-        if ((obj instanceof h) && ((h) obj).f35061d != null) {
+        Object obj = f35096r.get(this);
+        if ((obj instanceof h) && ((h) obj).f35109d != null) {
             u();
             return false;
         }
-        f35047q.set(this, 536870911);
-        f35048r.set(this, b.f35020d);
+        f35095q.set(this, 536870911);
+        f35096r.set(this, b.f35068d);
         return true;
     }
 
     public void R(Object obj, final Function1 function1) {
         Function3 function3;
-        int i10 = this.f35069i;
+        int i10 = this.f35117i;
         if (function1 != null) {
             function3 = new Function3() { // from class: os.j
                 @Override // kotlin.jvm.functions.Function3
@@ -378,14 +378,14 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     }
 
     public final void T(Object obj, int i10, Function3 function3) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35048r;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35096r;
         while (true) {
             Object obj2 = atomicReferenceFieldUpdater.get(this);
             if (obj2 instanceof f1) {
                 Object obj3 = obj;
                 int i11 = i10;
                 Function3 function32 = function3;
-                if (androidx.concurrent.futures.b.a(f35048r, this, obj2, V((f1) obj2, obj3, i11, function32, null))) {
+                if (androidx.concurrent.futures.b.a(f35096r, this, obj2, V((f1) obj2, obj3, i11, function32, null))) {
                     v();
                     x(i11);
                     return;
@@ -400,7 +400,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                     os.m mVar = (os.m) obj2;
                     if (mVar.e()) {
                         if (function33 != null) {
-                            p(function33, mVar.f43525a, obj4);
+                            p(function33, mVar.f43573a, obj4);
                             return;
                         }
                         return;
@@ -420,7 +420,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     @Override // kotlinx.coroutines.m
     public void b(Object obj, Throwable th2) {
         Throwable th3;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35048r;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35096r;
         while (true) {
             Object obj2 = atomicReferenceFieldUpdater.get(this);
             if (!(obj2 instanceof f1)) {
@@ -430,7 +430,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                         if (!hVar.c()) {
                             Throwable th4 = th2;
                             th3 = th4;
-                            if (androidx.concurrent.futures.b.a(f35048r, this, obj2, h.b(hVar, null, null, null, null, th4, 15, null))) {
+                            if (androidx.concurrent.futures.b.a(f35096r, this, obj2, h.b(hVar, null, null, null, null, th4, 15, null))) {
                                 hVar.d(this, th3);
                                 return;
                             }
@@ -439,7 +439,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
                         }
                     } else {
                         th3 = th2;
-                        if (androidx.concurrent.futures.b.a(f35048r, this, obj2, new h(obj2, null, null, null, th3, 14, null))) {
+                        if (androidx.concurrent.futures.b.a(f35096r, this, obj2, new h(obj2, null, null, null, th3, 14, null))) {
                             return;
                         }
                     }
@@ -460,7 +460,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
 
     @Override // kotlinx.coroutines.m
     public final Continuation d() {
-        return this.f35050o;
+        return this.f35098o;
     }
 
     @Override // kotlinx.coroutines.CancellableContinuation
@@ -472,7 +472,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     public void f(CoroutineDispatcher coroutineDispatcher, Throwable th2) {
         ts.i iVar;
         int i10;
-        Continuation continuation = this.f35050o;
+        Continuation continuation = this.f35098o;
         CoroutineDispatcher coroutineDispatcher2 = null;
         if (continuation instanceof ts.i) {
             iVar = (ts.i) continuation;
@@ -481,12 +481,12 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
         }
         os.r rVar = new os.r(th2, false, 2, null);
         if (iVar != null) {
-            coroutineDispatcher2 = iVar.f50827o;
+            coroutineDispatcher2 = iVar.f50875o;
         }
         if (coroutineDispatcher2 == coroutineDispatcher) {
             i10 = 4;
         } else {
-            i10 = this.f35069i;
+            i10 = this.f35117i;
         }
         U(this, rVar, i10, null, 4, null);
     }
@@ -494,7 +494,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     @Override // os.w1
     public void g(ts.b0 b0Var, int i10) {
         int i11;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35047q;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f35095q;
         do {
             i11 = atomicIntegerFieldUpdater.get(this);
             if ((i11 & 536870911) != 536870911) {
@@ -506,7 +506,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f35050o;
+        Continuation continuation = this.f35098o;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }
@@ -515,14 +515,14 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return this.f35051p;
+        return this.f35099p;
     }
 
     @Override // kotlinx.coroutines.CancellableContinuation
     public boolean h(Throwable th2) {
         Object obj;
         boolean z10;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35048r;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f35096r;
         do {
             obj = atomicReferenceFieldUpdater.get(this);
             z10 = false;
@@ -532,7 +532,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
             if ((obj instanceof d) || (obj instanceof ts.b0)) {
                 z10 = true;
             }
-        } while (!androidx.concurrent.futures.b.a(f35048r, this, obj, new os.m(this, th2, z10)));
+        } while (!androidx.concurrent.futures.b.a(f35096r, this, obj, new os.m(this, th2, z10)));
         f1 f1Var = (f1) obj;
         if (f1Var instanceof d) {
             o((d) obj, th2);
@@ -540,7 +540,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
             q((ts.b0) obj, th2);
         }
         v();
-        x(this.f35069i);
+        x(this.f35117i);
         return true;
     }
 
@@ -561,7 +561,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
     @Override // kotlinx.coroutines.m
     public Object j(Object obj) {
         if (obj instanceof h) {
-            return ((h) obj).f35058a;
+            return ((h) obj).f35106a;
         }
         return obj;
     }
@@ -591,19 +591,19 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
 
     @Override // kotlinx.coroutines.CancellableContinuation
     public void r(Object obj, Function3 function3) {
-        T(obj, this.f35069i, function3);
+        T(obj, this.f35117i, function3);
     }
 
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
-        U(this, os.t.c(obj, this), this.f35069i, null, 4, null);
+        U(this, os.t.c(obj, this), this.f35117i, null, 4, null);
     }
 
     @Override // kotlinx.coroutines.CancellableContinuation
     public void t(CoroutineDispatcher coroutineDispatcher, Object obj) {
         ts.i iVar;
         int i10;
-        Continuation continuation = this.f35050o;
+        Continuation continuation = this.f35098o;
         CoroutineDispatcher coroutineDispatcher2 = null;
         if (continuation instanceof ts.i) {
             iVar = (ts.i) continuation;
@@ -611,18 +611,18 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
             iVar = null;
         }
         if (iVar != null) {
-            coroutineDispatcher2 = iVar.f50827o;
+            coroutineDispatcher2 = iVar.f50875o;
         }
         if (coroutineDispatcher2 == coroutineDispatcher) {
             i10 = 4;
         } else {
-            i10 = this.f35069i;
+            i10 = this.f35117i;
         }
         U(this, obj, i10, null, 4, null);
     }
 
     public String toString() {
-        return N() + '(' + os.e0.c(this.f35050o) + "){" + D() + "}@" + os.e0.b(this);
+        return N() + '(' + os.e0.c(this.f35098o) + "){" + D() + "}@" + os.e0.b(this);
     }
 
     public final void u() {
@@ -631,7 +631,7 @@ public class e extends m implements CancellableContinuation, CoroutineStackFrame
             return;
         }
         z10.dispose();
-        f35049s.set(this, e1.f43500d);
+        f35097s.set(this, e1.f43548d);
     }
 
     @Override // kotlinx.coroutines.CancellableContinuation

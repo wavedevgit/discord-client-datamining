@@ -22,43 +22,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = "function getPIPBottomOffsetForPIPMode_getPIPBottomOffsetForPIPModeTsx1(screenName){const{DEFAULT_CHANNEL_INPUT_HEIGHT,PIP_WINDOW_OFFSET,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;switch(screenName){case'panels':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'channel':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'messages':case'notifications':case'main_tab':case'guilds':return PIP_AVOIDANCE_TAB_BAR_HEIGHT+PIP_WINDOW_OFFSET;default:return 0;}}";
     var4.code = var7;
     var3 = function arg0() {
-        _fun109704: for (var _fun109704_ip = 0;;) switch (_fun109704_ip) {
+        _fun110178: for (var _fun110178_ip = 0;;) switch (_fun110178_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'panels';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 75;
-                    continue _fun109704
+                    _fun110178_ip = 75;
+                    continue _fun110178
                 }
             case 13:
                 var0 = 'channel';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 75;
-                    continue _fun109704
+                    _fun110178_ip = 75;
+                    continue _fun110178
                 }
             case 21:
                 var0 = 'messages';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 59;
-                    continue _fun109704
+                    _fun110178_ip = 59;
+                    continue _fun110178
                 }
             case 29:
                 var0 = 'notifications';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 59;
-                    continue _fun109704
+                    _fun110178_ip = 59;
+                    continue _fun110178
                 }
             case 37:
                 var0 = 'main_tab';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 59;
-                    continue _fun109704
+                    _fun110178_ip = 59;
+                    continue _fun110178
                 }
             case 47:
                 var0 = 'guilds';
                 if (!(var0 !== var1)) {
-                    _fun109704_ip = 59;
-                    continue _fun109704
+                    _fun110178_ip = 59;
+                    continue _fun110178
                 }
             case 55:
                 var0 = 0;
@@ -95,4 +95,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.PIP_AVOIDANCE_TAB_BAR_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11841, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11887, 2]);

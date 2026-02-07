@@ -5,13 +5,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f55077a = new b();
+    public static final b f55125a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f55078b = new C0745b();
+    public static final a f55126b = new C0745b();
 
     /* renamed from: c  reason: collision with root package name */
-    private static c f55079c;
+    private static c f55127c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -36,20 +36,20 @@ public final class b {
 
     public static final void a(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        f55077a.c().a(name);
+        f55125a.c().a(name);
     }
 
     public static final void b() {
-        f55077a.c().b();
+        f55125a.c().b();
     }
 
     private final c c() {
         ya.a aVar;
-        c cVar = f55079c;
+        c cVar = f55127c;
         if (cVar == null) {
             synchronized (b.class) {
                 aVar = new ya.a();
-                f55079c = aVar;
+                f55127c = aVar;
             }
             return aVar;
         }
@@ -57,6 +57,6 @@ public final class b {
     }
 
     public static final boolean d() {
-        return f55077a.c().isTracing();
+        return f55125a.c().isTracing();
     }
 }

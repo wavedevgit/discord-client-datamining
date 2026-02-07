@@ -11,14 +11,14 @@ import java.util.concurrent.TimeUnit;
 public abstract class e extends AbstractExecutorService implements ScheduledExecutorService, AutoCloseable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f36879d;
+    private final Handler f36927d;
 
     public e(Handler handler) {
-        this.f36879d = handler;
+        this.f36927d = handler;
     }
 
     public boolean a() {
-        if (Thread.currentThread() == this.f36879d.getLooper().getThread()) {
+        if (Thread.currentThread() == this.f36927d.getLooper().getThread()) {
             return true;
         }
         return false;
@@ -36,7 +36,7 @@ public abstract class e extends AbstractExecutorService implements ScheduledExec
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        this.f36879d.post(runnable);
+        this.f36927d.post(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
@@ -53,14 +53,14 @@ public abstract class e extends AbstractExecutorService implements ScheduledExec
     @Override // java.util.concurrent.AbstractExecutorService
     /* renamed from: k */
     public f newTaskFor(Runnable runnable, Object obj) {
-        return new f(this.f36879d, runnable, obj);
+        return new f(this.f36927d, runnable, obj);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // java.util.concurrent.AbstractExecutorService
     /* renamed from: m */
     public f newTaskFor(Callable callable) {
-        return new f(this.f36879d, callable);
+        return new f(this.f36927d, callable);
     }
 
     @Override // java.util.concurrent.AbstractExecutorService, java.util.concurrent.ExecutorService
@@ -90,7 +90,7 @@ public abstract class e extends AbstractExecutorService implements ScheduledExec
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture schedule(Runnable runnable, long j10, TimeUnit timeUnit) {
         f newTaskFor = newTaskFor(runnable, null);
-        this.f36879d.postDelayed(newTaskFor, timeUnit.toMillis(j10));
+        this.f36927d.postDelayed(newTaskFor, timeUnit.toMillis(j10));
         return newTaskFor;
     }
 
@@ -117,7 +117,7 @@ public abstract class e extends AbstractExecutorService implements ScheduledExec
     @Override // java.util.concurrent.ScheduledExecutorService
     public ScheduledFuture schedule(Callable callable, long j10, TimeUnit timeUnit) {
         f newTaskFor = newTaskFor(callable);
-        this.f36879d.postDelayed(newTaskFor, timeUnit.toMillis(j10));
+        this.f36927d.postDelayed(newTaskFor, timeUnit.toMillis(j10));
         return newTaskFor;
     }
 }

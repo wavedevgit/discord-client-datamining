@@ -93,7 +93,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
             createMap.putString("exit_description", exitReason.getDescription());
         }
         if (nativeCrashDiagnostics != null && (tombstone = nativeCrashDiagnostics.getTombstone()) != null) {
-            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f32098d) == 0 && !StringsKt.k0(tombstone.getText())) {
+            if (kotlin.ranges.d.q(new IntRange(0, 1000), kotlin.random.c.f32146d) == 0 && !StringsKt.k0(tombstone.getText())) {
                 createMap.putString("tombstone", StringsKt.x1(tombstone.getText(), 6291456));
             }
             createMap.putString("tombstone_cause", tombstone.getCause());
@@ -109,7 +109,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
     public static final Unit getLastCrashReport$lambda$2(CrashReportingModule crashReportingModule, CrashPersistence.LastCrashInfo lastCrashInfo, Callback callback, SystemLogReport.NativeCrashDiagnostics diagnostics) {
         Intrinsics.checkNotNullParameter(diagnostics, "diagnostics");
         callback.invoke(crashReportingModule.buildCrashReportMap(lastCrashInfo, diagnostics));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final RNSentryModule getSentryModule() {
@@ -235,7 +235,7 @@ public final class CrashReportingModule extends ReactContextBaseJavaModule {
                     if (Intrinsics.areEqual(this.pendingCrashEventId, str)) {
                         this.pendingCrashEventId = null;
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
             } catch (Throwable th2) {
                 Log.INSTANCE.e(TAG, "Failed to mark crash handled", th2);

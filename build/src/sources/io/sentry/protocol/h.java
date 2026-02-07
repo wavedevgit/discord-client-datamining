@@ -15,25 +15,25 @@ import java.util.Map;
 public final class h implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28493d;
+    private String f28541d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28494e;
+    private String f28542e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28495i;
+    private String f28543i;
 
     /* renamed from: o  reason: collision with root package name */
-    private x f28496o;
+    private x f28544o;
 
     /* renamed from: p  reason: collision with root package name */
-    private x f28497p;
+    private x f28545p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f28498q;
+    private String f28546q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f28499r;
+    private Map f28547r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -120,12 +120,12 @@ public final class h implements w1 {
             e3Var.D();
             if (str != null) {
                 h hVar = new h(str);
-                hVar.f28494e = str2;
-                hVar.f28495i = str3;
-                hVar.f28496o = xVar;
-                hVar.f28497p = xVar2;
-                hVar.f28498q = str4;
-                hVar.f28499r = hashMap;
+                hVar.f28542e = str2;
+                hVar.f28543i = str3;
+                hVar.f28544o = xVar;
+                hVar.f28545p = xVar2;
+                hVar.f28546q = str4;
+                hVar.f28547r = hashMap;
                 return hVar;
             }
             IllegalStateException illegalStateException = new IllegalStateException("Missing required field \"message\"");
@@ -146,7 +146,7 @@ public final class h implements w1 {
             return false;
         }
         h hVar = (h) obj;
-        if (io.sentry.util.y.a(this.f28493d, hVar.f28493d) && io.sentry.util.y.a(this.f28494e, hVar.f28494e) && io.sentry.util.y.a(this.f28495i, hVar.f28495i) && io.sentry.util.y.a(this.f28496o, hVar.f28496o) && io.sentry.util.y.a(this.f28497p, hVar.f28497p) && io.sentry.util.y.a(this.f28498q, hVar.f28498q) && io.sentry.util.y.a(this.f28499r, hVar.f28499r)) {
+        if (io.sentry.util.y.a(this.f28541d, hVar.f28541d) && io.sentry.util.y.a(this.f28542e, hVar.f28542e) && io.sentry.util.y.a(this.f28543i, hVar.f28543i) && io.sentry.util.y.a(this.f28544o, hVar.f28544o) && io.sentry.util.y.a(this.f28545p, hVar.f28545p) && io.sentry.util.y.a(this.f28546q, hVar.f28546q) && io.sentry.util.y.a(this.f28547r, hVar.f28547r)) {
             return true;
         }
         return false;
@@ -154,57 +154,57 @@ public final class h implements w1 {
 
     public void g(String str) {
         if (str.length() > 4096) {
-            this.f28493d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
+            this.f28541d = str.substring(0, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
         } else {
-            this.f28493d = str;
+            this.f28541d = str;
         }
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28493d, this.f28494e, this.f28495i, this.f28496o, this.f28497p, this.f28498q, this.f28499r);
+        return io.sentry.util.y.b(this.f28541d, this.f28542e, this.f28543i, this.f28544o, this.f28545p, this.f28546q, this.f28547r);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("message").f(this.f28493d);
-        if (this.f28494e != null) {
-            f3Var.e("contact_email").f(this.f28494e);
+        f3Var.e("message").f(this.f28541d);
+        if (this.f28542e != null) {
+            f3Var.e("contact_email").f(this.f28542e);
         }
-        if (this.f28495i != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28495i);
+        if (this.f28543i != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28543i);
         }
-        if (this.f28496o != null) {
+        if (this.f28544o != null) {
             f3Var.e("associated_event_id");
-            this.f28496o.serialize(f3Var, iLogger);
+            this.f28544o.serialize(f3Var, iLogger);
         }
-        if (this.f28497p != null) {
+        if (this.f28545p != null) {
             f3Var.e("replay_id");
-            this.f28497p.serialize(f3Var, iLogger);
+            this.f28545p.serialize(f3Var, iLogger);
         }
-        if (this.f28498q != null) {
-            f3Var.e("url").f(this.f28498q);
+        if (this.f28546q != null) {
+            f3Var.e("url").f(this.f28546q);
         }
-        Map map = this.f28499r;
+        Map map = this.f28547r;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28499r.get(str));
+                f3Var.e(str).j(iLogger, this.f28547r.get(str));
             }
         }
         f3Var.D();
     }
 
     public String toString() {
-        return "Feedback{message='" + this.f28493d + "', contactEmail='" + this.f28494e + "', name='" + this.f28495i + "', associatedEventId=" + this.f28496o + ", replayId=" + this.f28497p + ", url='" + this.f28498q + "', unknown=" + this.f28499r + '}';
+        return "Feedback{message='" + this.f28541d + "', contactEmail='" + this.f28542e + "', name='" + this.f28543i + "', associatedEventId=" + this.f28544o + ", replayId=" + this.f28545p + ", url='" + this.f28546q + "', unknown=" + this.f28547r + '}';
     }
 
     public h(h hVar) {
-        this.f28493d = hVar.f28493d;
-        this.f28494e = hVar.f28494e;
-        this.f28495i = hVar.f28495i;
-        this.f28496o = hVar.f28496o;
-        this.f28497p = hVar.f28497p;
-        this.f28498q = hVar.f28498q;
-        this.f28499r = io.sentry.util.c.b(hVar.f28499r);
+        this.f28541d = hVar.f28541d;
+        this.f28542e = hVar.f28542e;
+        this.f28543i = hVar.f28543i;
+        this.f28544o = hVar.f28544o;
+        this.f28545p = hVar.f28545p;
+        this.f28546q = hVar.f28546q;
+        this.f28547r = io.sentry.util.c.b(hVar.f28547r);
     }
 }

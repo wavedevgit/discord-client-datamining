@@ -6,10 +6,10 @@ import java.util.ServiceLoader;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Collection f50823a = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(os.z.class, os.z.class.getClassLoader()).iterator()));
+    private static final Collection f50871a = kotlin.sequences.k.Y(kotlin.sequences.k.h(ServiceLoader.load(os.z.class, os.z.class.getClassLoader()).iterator()));
 
     public static final Collection a() {
-        return f50823a;
+        return f50871a;
     }
 
     public static final void b(Throwable th2) {

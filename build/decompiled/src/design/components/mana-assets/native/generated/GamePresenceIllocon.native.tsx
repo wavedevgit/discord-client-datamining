@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52657: for (var _fun52657_ip = 0;;) switch (_fun52657_ip) {
+        _fun53102: for (var _fun53102_ip = 0;;) switch (_fun53102_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52657_ip = 32;
-                    continue _fun52657
+                    _fun53102_ip = 32;
+                    continue _fun53102
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GamePresenceIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4705, 6164, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4704, 6207, 2]);

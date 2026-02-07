@@ -41,7 +41,7 @@ public /* synthetic */ class LinkContextData$BindOpenThreadChannel$$serializer i
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f31041a, gt.a.u(jt.h.f31005a), ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f31089a, gt.a.u(jt.h.f31053a), ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class LinkContextData$BindOpenThreadChannel$$serializer i
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
             channelId = (ChannelId) b10.y(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -73,7 +73,7 @@ public /* synthetic */ class LinkContextData$BindOpenThreadChannel$$serializer i
                     str2 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool2);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);

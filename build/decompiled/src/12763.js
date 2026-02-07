@@ -1,88 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0, arg1() {
-        _fun97540: for (var _fun97540_ip = 0;;) switch (_fun97540_ip) {
-            case 0:
-                var4 = arg0;
-                var3 = arg1;
-                var1 = undefined;
-                var0 = undefined;
-            case 10: // try_start_0
-                var1 = {};
-                var0 = {};
-                var2 = var4;
-                if (!var2) {
-                    _fun97540_ip = 105;
-                    continue _fun97540
-                }
-            case 20:
-                var2 = {};
-                var5 = global;
-                var8 = var5.Math;
-                var7 = var8.ceil;
-                var6 = var4.width;
-                var6 = var7.bind(var8)(var6);
-                var2.screenWidth = var6;
-                var7 = var5.Math;
-                var6 = var7.ceil;
-                var5 = var4.height;
-                var5 = var6.bind(var7)(var5);
-                var2.screenHeight = var5;
-                var5 = var4.scale;
-                var2.screenScale = var5;
-                var4 = var4.fontScale;
-                var2.screenFontScale = var4;
-                var1 = var2;
-            case 105:
-                var2 = var3;
-                if (!var2) {
-                    _fun97540_ip = 198;
-                    continue _fun97540
-                }
-            case 111:
-                var2 = {};
-                var4 = global;
-                var7 = var4.Math;
-                var6 = var7.ceil;
-                var5 = var3.width;
-                var5 = var6.bind(var7)(var5);
-                var2.windowWidth = var5;
-                var6 = var4.Math;
-                var5 = var6.ceil;
-                var4 = var3.height;
-                var4 = var5.bind(var6)(var4);
-                var2.windowHeight = var4;
-                var4 = var3.scale;
-                var2.windowScale = var4;
-                var3 = var3.fontScale;
-                var2.windowFontScale = var3;
-                var0 = var2;
-            case 198:
-                var2 = global;
-                var4 = var2.Object;
-                var3 = var4.assign;
-                var2 = var1;
-                var1 = var0;
-                var0 = {};
-                var0 = var3.bind(var4)(var0, var2, var1);
-            case 226: // try_end0
+    _fun97472: for (var _fun97472_ip = 0;;) switch (_fun97472_ip) {
+        case 0:
+            var3 = require;
+            var2 = dependencyMap;
+            var _closure1_slot0 = var3;
+            var _closure1_slot1 = var2;
+            var0 = 0;
+            var2 = var2[var0];
+            var0 = undefined;
+            var2 = var3.bind(var0)(var2);
+            if (var2) {
+                _fun97472_ip = 41;
+                continue _fun97472
+            }
+        case 32:
+            var2 = function(arg0, arg1, arg2) { // Environment: var1
+                var0 = arg0;
+                var2 = arg2;
+                var1 = arg1;
+                var0[var1] = var2;
                 return var0;
-            case 228: // catch_target0
-                CatchBlockStart(arg_register = 0);
-                var0 = null;
+            };
+            _fun97472_ip = 48;
+            continue _fun97472;
+        case 41:
+            var2 = function(arg0, arg1, arg2) { // Environment: var1
+                var1 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 1;
+                var0 = var6[var5];
+                var2 = undefined;
+                var4 = var1.bind(var2)(var0);
+                var3 = var4.f;
+                var0 = 2;
+                var0 = var6[var0];
+                var1 = var1.bind(var2)(var0);
+                var0 = arg2;
+                var2 = var1.bind(var2)(var5, var0);
+                var1 = arg0;
+                var0 = arg1;
+                var0 = var3.bind(var4)(var1, var0, var2);
                 return var0;
-        }
-    };
-    var1.getReactNativeDimensionsWithDimensions = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+            };
+        case 48:
+            var1 = arg4;
+            var1.exports = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12710, 12761, 12744]);

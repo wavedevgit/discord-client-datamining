@@ -11,25 +11,25 @@ import rp.n;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f50798a;
+    private final View f50846a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f50799b;
+    public final ImageView f50847b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f50800c;
+    public final ImageView f50848c;
 
     private c(View view, ImageView imageView, ImageView imageView2) {
-        this.f50798a = view;
-        this.f50799b = imageView;
-        this.f50800c = imageView2;
+        this.f50846a = view;
+        this.f50847b = imageView;
+        this.f50848c = imageView2;
     }
 
     public static c a(View view) {
-        int i10 = m.f49091e;
+        int i10 = m.f49139e;
         ImageView imageView = (ImageView) e4.a.a(view, i10);
         if (imageView != null) {
-            i10 = m.f49092f;
+            i10 = m.f49140f;
             ImageView imageView2 = (ImageView) e4.a.a(view, i10);
             if (imageView2 != null) {
                 return new c(view, imageView, imageView2);
@@ -40,7 +40,7 @@ public final class c implements ViewBinding {
 
     public static c b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(n.f49102c, viewGroup);
+            layoutInflater.inflate(n.f49150c, viewGroup);
             return a(viewGroup);
         }
         throw new NullPointerException("parent");
@@ -48,6 +48,6 @@ public final class c implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f50798a;
+        return this.f50846a;
     }
 }

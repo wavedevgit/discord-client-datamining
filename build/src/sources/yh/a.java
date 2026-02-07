@@ -6,16 +6,16 @@ import java.util.Map;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f55374a;
+    private static final Map f55422a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f55375b;
+    private static final Map f55423b;
 
     static {
         HashMap hashMap = new HashMap();
-        f55374a = hashMap;
+        f55422a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f55375b = hashMap2;
+        f55423b = hashMap2;
         hashMap.put(-1, "The requesting app is unavailable (e.g. unpublished, nonexistent version code).");
         hashMap.put(-2, "The requested pack is not available.");
         hashMap.put(-3, "The request is invalid.");
@@ -47,11 +47,11 @@ public abstract class a {
     }
 
     public static String a(int i10) {
-        Map map = f55374a;
+        Map map = f55422a;
         Integer valueOf = Integer.valueOf(i10);
         if (!map.containsKey(valueOf)) {
             return "";
         }
-        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/assetpacks/model/AssetPackErrorCode.html#" + ((String) f55375b.get(valueOf)) + ")";
+        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/assetpacks/model/AssetPackErrorCode.html#" + ((String) f55423b.get(valueOf)) + ")";
     }
 }

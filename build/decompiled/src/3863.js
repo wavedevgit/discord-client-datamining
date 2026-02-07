@@ -15,12 +15,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var5[var0];
     var0 = undefined;
     var1 = var3.bind(var0)(var1);
-    var4 = var1.View;
+    var4 = var1.Image;
     var1 = 1;
     var1 = var5[var1];
     var3 = var3.bind(var0)(var1);
     var1 = var3.createAnimatedComponent;
     var1 = var1.bind(var3)(var4);
-    var2.AnimatedView = var1;
+    var2.AnimatedImage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3757]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 3756]);

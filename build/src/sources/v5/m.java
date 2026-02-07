@@ -7,10 +7,10 @@ import w5.c;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52215a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
+    private static final c.a f52263a = c.a.a("ch", "size", "w", "style", "fFamily", "data");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52216b = c.a.a("shapes");
+    private static final c.a f52264b = c.a.a("shapes");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static q5.d a(w5.c cVar, l5.i iVar) {
@@ -22,7 +22,7 @@ public abstract class m {
         char c10 = 0;
         double d11 = 0.0d;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52215a);
+            int p10 = cVar.p(f52263a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {
@@ -34,7 +34,7 @@ public abstract class m {
                                 } else {
                                     cVar.u();
                                     while (cVar.hasNext()) {
-                                        if (cVar.p(f52216b) != 0) {
+                                        if (cVar.p(f52264b) != 0) {
                                             cVar.s();
                                             cVar.S();
                                         } else {

@@ -34,7 +34,7 @@ public final class LinkingModule extends NativeLinkingModuleSpec {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit tryOpenScheme$lambda$5(Promise promise, Unit unit) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -46,7 +46,7 @@ public final class LinkingModule extends NativeLinkingModuleSpec {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit tryOpenUrlAsUniversalLink$lambda$1(Promise promise, Unit unit) {
         promise.resolve(Boolean.TRUE);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

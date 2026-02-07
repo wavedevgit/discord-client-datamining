@@ -5,7 +5,7 @@ import yi.c;
 final class i8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i8 f39882a = new i8();
+    static final i8 f39930a = new i8();
 
     static {
         c.b a10 = yi.c.a("cameraId");

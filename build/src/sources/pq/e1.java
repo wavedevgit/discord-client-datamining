@@ -13,46 +13,46 @@ import kotlin.jvm.internal.Ref;
 public final class e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f45173a;
+    private final ViewGroup f45221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private dq.j f45174b;
+    private dq.j f45222b;
 
     /* renamed from: c  reason: collision with root package name */
-    private fq.t4 f45175c;
+    private fq.t4 f45223c;
 
     public e1(ViewGroup contentView) {
         Intrinsics.checkNotNullParameter(contentView, "contentView");
-        this.f45173a = contentView;
+        this.f45221a = contentView;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h() {
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(Ref.ObjectRef objectRef) {
         ((Function0) objectRef.element).invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(fq.t4 t4Var, e1 e1Var, View view) {
         t4Var.I0(true);
         t4Var.x1(false);
-        e1Var.f45173a.removeView(view);
-        e1Var.f45175c = null;
-        e1Var.f45174b = null;
-        return Unit.f32008a;
+        e1Var.f45221a.removeView(view);
+        e1Var.f45223c = null;
+        e1Var.f45222b = null;
+        return Unit.f32056a;
     }
 
     public final fq.t4 d() {
-        return this.f45175c;
+        return this.f45223c;
     }
 
     public final dq.h e() {
-        dq.j jVar = this.f45174b;
+        dq.j jVar = this.f45222b;
         if (jVar != null) {
             return jVar.h();
         }
@@ -61,11 +61,11 @@ public final class e1 {
 
     public final void f() {
         BottomSheetBehavior g10;
-        dq.j jVar = this.f45174b;
+        dq.j jVar = this.f45222b;
         if (jVar != null && (g10 = jVar.g()) != null) {
             g10.Y0(5);
         }
-        this.f45175c = null;
+        this.f45223c = null;
     }
 
     /* JADX WARN: Type inference failed for: r1v0, types: [pq.b1, T] */
@@ -73,7 +73,7 @@ public final class e1 {
     public final void g(final fq.t4 sheetComponent, dn.a0 viewEnvironment) {
         Intrinsics.checkNotNullParameter(sheetComponent, "sheetComponent");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        this.f45175c = sheetComponent;
+        this.f45223c = sheetComponent;
         final Ref.ObjectRef objectRef = new Ref.ObjectRef();
         objectRef.element = new Function0() { // from class: pq.b1
             @Override // kotlin.jvm.functions.Function0
@@ -91,12 +91,12 @@ public final class e1 {
                 return i10;
             }
         }, null, sheetComponent.J0());
-        this.f45174b = jVar;
+        this.f45222b = jVar;
         dn.c0 a10 = jVar.a();
-        Context context = this.f45173a.getContext();
+        Context context = this.f45221a.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        final View a11 = a10.a(jVar, viewEnvironment, context, this.f45173a);
-        this.f45173a.addView(a11);
+        final View a11 = a10.a(jVar, viewEnvironment, context, this.f45221a);
+        this.f45221a.addView(a11);
         dn.g0.h(a11);
         objectRef.element = new Function0() { // from class: pq.d1
             @Override // kotlin.jvm.functions.Function0

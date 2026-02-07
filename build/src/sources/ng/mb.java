@@ -5,7 +5,7 @@ import yi.c;
 final class mb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final mb f40088a = new mb();
+    static final mb f40136a = new mb();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

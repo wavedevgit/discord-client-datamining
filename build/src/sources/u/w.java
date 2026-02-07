@@ -5,7 +5,7 @@ import androidx.camera.camera2.internal.compat.quirk.StillCaptureFlashStopRepeat
 public class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51142a;
+    private final boolean f51190a;
 
     public w() {
         boolean z10;
@@ -14,7 +14,7 @@ public class w {
         } else {
             z10 = false;
         }
-        this.f51142a = z10;
+        this.f51190a = z10;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:9:0x0012  */
@@ -25,7 +25,7 @@ public class w {
     public boolean a(java.util.List r3, boolean r4) {
         /*
             r2 = this;
-            boolean r0 = r2.f51142a
+            boolean r0 = r2.f51190a
             r1 = 0
             if (r0 == 0) goto L2c
             if (r4 != 0) goto L8

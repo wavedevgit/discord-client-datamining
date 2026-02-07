@@ -4,17 +4,17 @@ package yg;
 public final class j0 implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ k f55334a;
+    final /* synthetic */ k f55382a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j0(k kVar) {
-        this.f55334a = kVar;
+        this.f55382a = kVar;
     }
 
     @Override // yg.h
     public final void a() {
         m0 m0Var;
-        m0Var = this.f55334a.f55335a;
+        m0Var = this.f55382a.f55383a;
         m0Var.u();
     }
 }

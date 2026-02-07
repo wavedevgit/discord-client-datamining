@@ -4,51 +4,65 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0, arg1() {
-        _fun29206: for (var _fun29206_ip = 0;;) switch (_fun29206_ip) {
+    var1 = function arg0() {
+        _fun29217: for (var _fun29217_ip = 0;;) switch (_fun29217_ip) {
             case 0:
-                var4 = arg0;
-                var3 = arg1;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
+                var3 = arg0;
+                var2 = undefined;
+                if (!(var2 !== var3)) {
+                    _fun29217_ip = 143;
+                    continue _fun29217
+                }
+            case 12:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
                 var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var2.bind(var1)(var0);
-                var0 = var0.bind(var1)(var3);
+                var0 = var5[var0];
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.bind(var2)(var3);
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                if (var0) {
+                    _fun29217_ip = 90;
+                    continue _fun29217
+                }
+            case 50:
+                var0 = 1;
+                var0 = var5[var0];
+                var7 = var4.bind(var2)(var0);
+                var0 = var7.prototype;
+                var6 = Object.create(var0, {
+                    constructor: {
+                        value: var7
+                    }
+                });
+                var8 = 'Assertion failed: `Desc` must be a Property Descriptor';
+                var9 = var6;
+                var0 = new var9[var7](var8, var7);
+                var0 = var0 instanceof Object ? var0 : var6;
+                throw var0;
+            case 90:
+                var0 = 2;
+                var0 = var5[var0];
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.bind(var2)(var3);
+                var0 = !var0;
                 if (!var0) {
-                    _fun29206_ip = 46;
-                    continue _fun29206
+                    _fun29217_ip = 141;
+                    continue _fun29217
                 }
-            case 38:
-                var1 = '[[Enumerable]]';
-                var0 = var1 in var3;
-            case 46:
-                if (!var0) {
-                    _fun29206_ip = 57;
-                    continue _fun29206
-                }
-            case 49:
-                var1 = '[[Configurable]]';
-                var0 = var1 in var3;
-            case 57:
-                if (!var0) {
-                    _fun29206_ip = 88;
-                    continue _fun29206
-                }
-            case 60:
-                var1 = var4.IsAccessorDescriptor;
-                var1 = var1.bind(var4)(var3);
-                if (var1) {
-                    _fun29206_ip = 85;
-                    continue _fun29206
-                }
-            case 74:
-                var2 = var4.IsDataDescriptor;
-                var1 = var2.bind(var4)(var3);
-            case 85:
-                var0 = var1;
-            case 88:
+            case 113:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 3;
+                var1 = var5[var1];
+                var1 = var4.bind(var2)(var1);
+                var1 = var1.bind(var2)(var3);
+                var0 = !var1;
+            case 141:
+                return var0;
+            case 143:
+                var0 = false;
                 return var0;
         }
     };
@@ -56,4 +70,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3421]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3420, 518, 3433, 3424]);

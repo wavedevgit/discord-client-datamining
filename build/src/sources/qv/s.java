@@ -3,10 +3,10 @@ package qv;
 public class s extends p {
 
     /* renamed from: g  reason: collision with root package name */
-    private int f48293g;
+    private int f48341g;
 
     /* renamed from: h  reason: collision with root package name */
-    private char f48294h;
+    private char f48342h;
 
     @Override // qv.r
     public void a(y yVar) {
@@ -14,18 +14,18 @@ public class s extends p {
     }
 
     public char p() {
-        return this.f48294h;
+        return this.f48342h;
     }
 
     public int q() {
-        return this.f48293g;
+        return this.f48341g;
     }
 
     public void r(char c10) {
-        this.f48294h = c10;
+        this.f48342h = c10;
     }
 
     public void s(int i10) {
-        this.f48293g = i10;
+        this.f48341g = i10;
     }
 }

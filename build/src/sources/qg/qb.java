@@ -5,7 +5,7 @@ import yi.c;
 final class qb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qb f47470a = new qb();
+    static final qb f47518a = new qb();
 
     static {
         c.b a10 = yi.c.a("subjectSegmenterOptions");

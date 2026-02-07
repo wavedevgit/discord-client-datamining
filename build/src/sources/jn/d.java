@@ -26,7 +26,7 @@ import qr.v;
 public final class d extends BaseReactPackage implements ViewManagerOnDemandReactPackage {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f29955a = l.a(new Function0() { // from class: jn.a
+    private final Lazy f30003a = l.a(new Function0() { // from class: jn.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Map e10;
@@ -36,7 +36,7 @@ public final class d extends BaseReactPackage implements ViewManagerOnDemandReac
     });
 
     private final Map d() {
-        return (Map) this.f29955a.getValue();
+        return (Map) this.f30003a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

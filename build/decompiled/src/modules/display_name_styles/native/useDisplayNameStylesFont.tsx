@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = var3;
     var1 = function arg0() {
-        _fun57026: for (var _fun57026_ip = 0;;) switch (_fun57026_ip) {
+        _fun57477: for (var _fun57477_ip = 0;;) switch (_fun57477_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.displayNameStyles;
@@ -84,14 +84,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.location = var6;
                 var3 = var4.bind(var5)(var3);
                 if (!var3) {
-                    _fun57026_ip = 66;
-                    continue _fun57026
+                    _fun57477_ip = 66;
+                    continue _fun57477
                 }
             case 60:
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun57026_ip = 68;
-                    continue _fun57026
+                    _fun57477_ip = 68;
+                    continue _fun57477
                 }
             case 66:
                 return var2;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDisplayNameStylesFont = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1634, 3985, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1634, 3984, 2]);

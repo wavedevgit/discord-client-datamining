@@ -18,26 +18,26 @@ public abstract class g2 {
         InputTextArea.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             dn.t b10 = inputTextAreaComponent.b();
-            TextInputEditText editText = c10.f29253b;
+            TextInputEditText editText = c10.f29301b;
             Intrinsics.checkNotNullExpressionValue(editText, "editText");
             dn.u.b(b10, editText);
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f29254c.setHint(label);
+                c10.f29302c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f29254c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f29254c;
+                c10.f29302c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f29302c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 bq.o.a(inputLayout);
             }
             Integer rows = attributes.getRows();
             if (rows != null) {
                 int intValue = rows.intValue();
-                c10.f29253b.setMaxLines(intValue);
-                c10.f29253b.setMinLines(intValue);
-                c10.f29253b.setVerticalScrollBarEnabled(true);
+                c10.f29301b.setMaxLines(intValue);
+                c10.f29301b.setMinLines(intValue);
+                c10.f29301b.setVerticalScrollBarEnabled(true);
             }
         }
         uiComponentHelper.d(new Function0() { // from class: fq.f2
@@ -57,10 +57,10 @@ public abstract class g2 {
     public static final Unit c(InputTextArea inputTextArea, iq.n nVar) {
         InputTextBasedComponentStyle styles = inputTextArea.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = nVar.f29254c;
+            TextInputLayout inputLayout = nVar.f29302c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             kq.a0.k(inputLayout, styles);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

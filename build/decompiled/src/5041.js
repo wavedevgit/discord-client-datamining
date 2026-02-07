@@ -1,157 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportDefault;
     var2 = exports;
-    var5 = dependencyMap;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
     var0 = 0;
-    var3 = var5[var0];
+    var4 = var3[var0];
+    var3 = require;
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
+    var3 = var3.bind(var0)(var4);
+    var3 = var3.Platform;
+    var3 = {};
+    var4 = 'nativeBegin';
+    var3.NATIVE_BEGIN = var4;
+    var4 = 'nativeStart';
+    var3.NATIVE_START = var4;
+    var4 = 'finalize';
+    var3.FINALIZE = var4;
+    var4 = 'longPressTouchesDown';
+    var3.LONG_PRESS_TOUCHES_DOWN = var4;
+    var4 = 'cancel';
+    var3.CANCEL = var4;
     var _closure1_slot0 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot1;
-        var2 = function() {
-            var2 = this;
-            var3 = _closure1_slot0;
-            var1 = _closure2_slot0;
-            var0 = undefined;
-            var1 = var3.bind(var0)(var2, var1);
-            var1 = null;
-            var2.states = var1;
-            var3 = 0;
-            var2.currentStepIndex = var3;
-            var2.eventPayload = var1;
-            return var0;
-        };
-        var _closure2_slot0 = var2;
-        var0 = {};
-        var1 = 'setStates';
-        var0.key = var1;
-        var1 = function arg0() {
-            var1 = arg0;
-            var0 = this;
-            var0.states = var1;
-            var0 = undefined;
-            return var0;
-        };
-        var0.value = var1;
-        var1 = new Array(3);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'reset';
-        var0.key = var5;
-        var5 = function() {
-            var1 = this;
-            var0 = 0;
-            var1.currentStepIndex = var0;
-            var0 = null;
-            var1.eventPayload = var0;
-            var0 = undefined;
-            return var0;
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'handleEvent';
-        var0.key = var5;
-        var4 = function arg0, arg1() {
-            _fun45363: for (var _fun45363_ip = 0;;) switch (_fun45363_ip) {
-                case 0:
-                    var4 = arg0;
-                    var2 = arg1;
-                    var1 = this;
-                    var0 = var1.states;
-                    if (!var0) {
-                        _fun45363_ip = 182;
-                        continue _fun45363
-                    }
-                case 21:
-                    var3 = var1.states;
-                    var0 = var1.currentStepIndex;
-                    var3 = var3[var0];
-                    var0 = var2;
-                    if (var0) {
-                        _fun45363_ip = 49;
-                        continue _fun45363
-                    }
-                case 43:
-                    var0 = var1.eventPayload;
-                case 49:
-                    var1.eventPayload = var0;
-                    var0 = var3.eventName;
-                    if (!(var0 !== var4)) {
-                        _fun45363_ip = 101;
-                        continue _fun45363
-                    }
-                case 65:
-                    var5 = var1.currentStepIndex;
-                    var0 = 0;
-                    if (!(var5 > var0)) {
-                        _fun45363_ip = 182;
-                        continue _fun45363
-                    }
-                case 77:
-                    var0 = var1.reset;
-                    var0 = var0.bind(var1)();
-                    var0 = var1.handleEvent;
-                    var0 = var0.bind(var1)(var4, var2);
-                    _fun45363_ip = 182;
-                    continue _fun45363;
-                case 101:
-                    var0 = var1.eventPayload;
-                    if (!var0) {
-                        _fun45363_ip = 116;
-                        continue _fun45363
-                    }
-                case 110:
-                    var0 = var3.callback;
-                case 116:
-                    if (!var0) {
-                        _fun45363_ip = 136;
-                        continue _fun45363
-                    }
-                case 119:
-                    var2 = var3.callback;
-                    var0 = var1.eventPayload;
-                    var0 = var2.bind(var3)(var0);
-                case 136:
-                    var0 = var1.currentStepIndex;
-                    var0 = var0 + 1;
-                    var1.currentStepIndex = var0;
-                    var2 = var1.currentStepIndex;
-                    var0 = var1.states;
-                    var0 = var0.length;
-                    if (!(var2 === var0)) {
-                        _fun45363_ip = 182;
-                        continue _fun45363
-                    }
-                case 172:
-                    var0 = var1.reset;
-                    var0 = var0.bind(var1)();
-                case 182:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.value = var4;
-        var1[2] = var0;
-        var0 = undefined;
-        var0 = var3.bind(var0)(var2, var1);
+    var2.StateMachineEvent = var3;
+    var1 = function arg0, arg1() {
+        var1 = {};
+        var2 = _closure1_slot0;
+        var0 = var2.NATIVE_BEGIN;
+        var1.eventName = var0;
+        var0 = new Array(3);
+        var0[0] = var1;
+        var1 = {};
+        var3 = var2.LONG_PRESS_TOUCHES_DOWN;
+        var1.eventName = var3;
+        var3 = arg0;
+        var1.callback = var3;
+        var0[1] = var1;
+        var1 = {};
+        var2 = var2.FINALIZE;
+        var1.eventName = var2;
+        var2 = arg1;
+        var1.callback = var2;
+        var0[2] = var1;
         return var0;
     };
-    var1 = var1.bind(var0)();
-    var2.PressableStateMachine = var1;
+    var2.getStatesConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

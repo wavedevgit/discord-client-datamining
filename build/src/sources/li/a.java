@@ -11,7 +11,7 @@ public abstract class a {
     public /* synthetic */ class C0484a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f36250a;
+        public static final /* synthetic */ int[] f36298a;
 
         static {
             int[] iArr = new int[Bitmap.Config.values().length];
@@ -23,7 +23,7 @@ public abstract class a {
                 iArr[Bitmap.Config.ALPHA_8.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f36250a = iArr;
+            f36298a = iArr;
         }
     }
 
@@ -109,7 +109,7 @@ public abstract class a {
         if (config == null) {
             i10 = -1;
         } else {
-            i10 = C0484a.f36250a[config.ordinal()];
+            i10 = C0484a.f36298a[config.ordinal()];
         }
         if (i10 != 1) {
             if (i10 == 2) {

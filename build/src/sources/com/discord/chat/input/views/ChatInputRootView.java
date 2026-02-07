@@ -210,7 +210,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         if (chatInputListener != null) {
             chatInputListener.onRequestSend();
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -222,7 +222,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$2(ChatInputRootView chatInputRootView, int i10, int i11) {
         chatInputRootView.currentTextFlow.setValue(new CurrentTextAndSelection(i10, i11, String.valueOf(chatInputRootView.editText.getText()), chatInputRootView.lastEditId));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -343,7 +343,7 @@ public final class ChatInputRootView extends RelativeLayout implements KeyboardE
         if (chatInputListener != null) {
             chatInputListener.onContentSizeChange((int) SizeUtilsKt.getPxToDp(chatInputRootView.getWidth()), (int) SizeUtilsKt.getPxToDp(i10));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static /* synthetic */ void setSelection$default(ChatInputRootView chatInputRootView, int i10, int i11, int i12, Object obj) {

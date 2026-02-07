@@ -5,10 +5,10 @@ import java.util.Set;
 public final class w0 implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f30712a;
+    private final br.h f30760a;
 
     public w0(br.h hVar) {
-        this.f30712a = hVar;
+        this.f30760a = hVar;
     }
 
     public static w0 a(br.h hVar) {
@@ -22,6 +22,6 @@ public final class w0 implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Set get() {
-        return c((i0) this.f30712a.get());
+        return c((i0) this.f30760a.get());
     }
 }

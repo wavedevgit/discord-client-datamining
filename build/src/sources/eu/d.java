@@ -138,14 +138,14 @@ public final class d implements Closeable, Flushable {
                 b bVar = this.f22174e;
                 synchronized (dVar) {
                     bVar.c();
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((IOException) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -171,7 +171,7 @@ public final class d implements Closeable, Flushable {
                             dVar.C(this, false);
                         }
                         this.f22171c = true;
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -190,7 +190,7 @@ public final class d implements Closeable, Flushable {
                             dVar.C(this, true);
                         }
                         this.f22171c = true;
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                     } else {
                         throw new IllegalStateException("Check failed.");
                     }
@@ -306,7 +306,7 @@ public final class d implements Closeable, Flushable {
                             if (cVar.f() == 0 && cVar.i()) {
                                 dVar.z1(cVar);
                             }
-                            Unit unit = Unit.f32008a;
+                            Unit unit = Unit.f32056a;
                         } catch (Throwable th2) {
                             throw th2;
                         }
@@ -562,7 +562,7 @@ public final class d implements Closeable, Flushable {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((IOException) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -675,7 +675,7 @@ public final class d implements Closeable, Flushable {
                         } else {
                             this.f22163u = O0();
                         }
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                         bs.c.a(d10, null);
                         return;
                     }
@@ -920,7 +920,7 @@ public final class d implements Closeable, Flushable {
                     this.f22168z = true;
                     return;
                 } catch (IOException e10) {
-                    lu.h g10 = lu.h.f36777a.g();
+                    lu.h g10 = lu.h.f36825a.g();
                     g10.k("DiskLruCache " + this.f22155e + " is corrupt: " + e10.getMessage() + ", removing", 5, e10);
                     I();
                     this.A = false;
@@ -1019,7 +1019,7 @@ public final class d implements Closeable, Flushable {
                     c10.writeByte(10);
                 }
             }
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             bs.c.a(c10, null);
             if (this.f22154d.b(this.f22159q)) {
                 this.f22154d.g(this.f22159q, this.f22161s);

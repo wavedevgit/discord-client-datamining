@@ -5,13 +5,13 @@ import os.w1;
 final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    public final w1 f48144a;
+    public final w1 f48192a;
 
     public x(w1 w1Var) {
-        this.f48144a = w1Var;
+        this.f48192a = w1Var;
     }
 
     public String toString() {
-        return "WaiterEB(" + this.f48144a + ')';
+        return "WaiterEB(" + this.f48192a + ')';
     }
 }

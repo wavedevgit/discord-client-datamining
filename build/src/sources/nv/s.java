@@ -8,38 +8,38 @@ import qv.w;
 class s implements tv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final char f41278a;
+    private final char f41326a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f41279b = 0;
+    private int f41327b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private LinkedList f41280c = new LinkedList();
+    private LinkedList f41328c = new LinkedList();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(char c10) {
-        this.f41278a = c10;
+        this.f41326a = c10;
     }
 
     private tv.a g(int i10) {
-        Iterator it = this.f41280c.iterator();
+        Iterator it = this.f41328c.iterator();
         while (it.hasNext()) {
             tv.a aVar = (tv.a) it.next();
             if (aVar.b() <= i10) {
                 return aVar;
             }
         }
-        return (tv.a) this.f41280c.getFirst();
+        return (tv.a) this.f41328c.getFirst();
     }
 
     @Override // tv.a
     public char a() {
-        return this.f41278a;
+        return this.f41326a;
     }
 
     @Override // tv.a
     public int b() {
-        return this.f41279b;
+        return this.f41327b;
     }
 
     @Override // tv.a
@@ -49,7 +49,7 @@ class s implements tv.a {
 
     @Override // tv.a
     public char d() {
-        return this.f41278a;
+        return this.f41326a;
     }
 
     @Override // tv.a
@@ -60,7 +60,7 @@ class s implements tv.a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(tv.a aVar) {
         int b10 = aVar.b();
-        ListIterator listIterator = this.f41280c.listIterator();
+        ListIterator listIterator = this.f41328c.listIterator();
         while (listIterator.hasNext()) {
             int b11 = ((tv.a) listIterator.next()).b();
             if (b10 > b11) {
@@ -68,10 +68,10 @@ class s implements tv.a {
                 listIterator.add(aVar);
                 return;
             } else if (b10 == b11) {
-                throw new IllegalArgumentException("Cannot add two delimiter processors for char '" + this.f41278a + "' and minimum length " + b10);
+                throw new IllegalArgumentException("Cannot add two delimiter processors for char '" + this.f41326a + "' and minimum length " + b10);
             }
         }
-        this.f41280c.add(aVar);
-        this.f41279b = b10;
+        this.f41328c.add(aVar);
+        this.f41327b = b10;
     }
 }

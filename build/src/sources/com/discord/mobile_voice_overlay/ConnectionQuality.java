@@ -55,7 +55,7 @@ public final class ConnectionQuality {
         $VALUES = $values;
         $ENTRIES = xr.a.a($values);
         Companion = new Companion(null);
-        $cachedSerializer$delegate = qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.mobile_voice_overlay.a
+        $cachedSerializer$delegate = qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.mobile_voice_overlay.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;

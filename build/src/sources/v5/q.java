@@ -9,13 +9,13 @@ import w5.c;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52222a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f52270a = c.a.a("nm", "g", "o", "t", "s", "e", "w", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52223b = c.a.a("p", "k");
+    private static final c.a f52271b = c.a.a("p", "k");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f52224c = c.a.a("n", "v");
+    private static final c.a f52272c = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.f a(w5.c cVar, l5.i iVar) {
@@ -37,7 +37,7 @@ public abstract class q {
         r5.d dVar3 = null;
         while (cVar.hasNext()) {
             s5.g gVar3 = gVar2;
-            switch (cVar.p(f52222a)) {
+            switch (cVar.p(f52270a)) {
                 case 0:
                     str = cVar.e1();
                     gVar2 = gVar3;
@@ -46,7 +46,7 @@ public abstract class q {
                     cVar.u();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int p10 = cVar.p(f52223b);
+                        int p10 = cVar.p(f52271b);
                         if (p10 != 0) {
                             if (p10 != 1) {
                                 cVar.s();
@@ -107,7 +107,7 @@ public abstract class q {
                         String str2 = null;
                         r5.b bVar4 = null;
                         while (cVar.hasNext()) {
-                            int p11 = cVar.p(f52224c);
+                            int p11 = cVar.p(f52272c);
                             if (p11 != 0) {
                                 r5.d dVar4 = dVar3;
                                 if (p11 != 1) {

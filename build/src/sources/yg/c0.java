@@ -7,28 +7,28 @@ import java.util.concurrent.Executor;
 public final class c0 implements h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f55318a;
+    private final Executor f55366a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f55319b = new Object();
+    private final Object f55367b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private f f55320c;
+    private f f55368c;
 
     public c0(Executor executor, f fVar) {
-        this.f55318a = executor;
-        this.f55320c = fVar;
+        this.f55366a = executor;
+        this.f55368c = fVar;
     }
 
     @Override // yg.h0
     public final void b(Task task) {
         if (!task.p() && !task.n()) {
-            synchronized (this.f55319b) {
+            synchronized (this.f55367b) {
                 try {
-                    if (this.f55320c == null) {
+                    if (this.f55368c == null) {
                         return;
                     }
-                    this.f55318a.execute(new b0(this, task));
+                    this.f55366a.execute(new b0(this, task));
                 } catch (Throwable th2) {
                     throw th2;
                 }

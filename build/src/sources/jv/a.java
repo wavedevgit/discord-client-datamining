@@ -9,50 +9,50 @@ import java.util.List;
 public final class a extends s implements j0 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a f31304q;
+    private static final a f31352q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static volatile q0 f31305r;
+    private static volatile q0 f31353r;
 
     /* renamed from: p  reason: collision with root package name */
-    private u.b f31306p = s.k();
+    private u.b f31354p = s.k();
 
     /* renamed from: jv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static /* synthetic */ class C0443a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f31307a;
+        static final /* synthetic */ int[] f31355a;
 
         static {
             int[] iArr = new int[s.d.values().length];
-            f31307a = iArr;
+            f31355a = iArr;
             try {
                 iArr[s.d.NEW_MUTABLE_INSTANCE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f31307a[s.d.NEW_BUILDER.ordinal()] = 2;
+                f31355a[s.d.NEW_BUILDER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f31307a[s.d.BUILD_MESSAGE_INFO.ordinal()] = 3;
+                f31355a[s.d.BUILD_MESSAGE_INFO.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f31307a[s.d.GET_DEFAULT_INSTANCE.ordinal()] = 4;
+                f31355a[s.d.GET_DEFAULT_INSTANCE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f31307a[s.d.GET_PARSER.ordinal()] = 5;
+                f31355a[s.d.GET_PARSER.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f31307a[s.d.GET_MEMOIZED_IS_INITIALIZED.ordinal()] = 6;
+                f31355a[s.d.GET_MEMOIZED_IS_INITIALIZED.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f31307a[s.d.SET_MEMOIZED_IS_INITIALIZED.ordinal()] = 7;
+                f31355a[s.d.SET_MEMOIZED_IS_INITIALIZED.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
         }
@@ -61,7 +61,7 @@ public final class a extends s implements j0 {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class b extends s.a implements j0 {
         private b() {
-            super(a.f31304q);
+            super(a.f31352q);
         }
     }
 
@@ -71,7 +71,7 @@ public final class a extends s implements j0 {
 
     static {
         a aVar = new a();
-        f31304q = aVar;
+        f31352q = aVar;
         s.C(a.class, aVar);
     }
 
@@ -79,34 +79,34 @@ public final class a extends s implements j0 {
     }
 
     public static a H() {
-        return f31304q;
+        return f31352q;
     }
 
     public List G() {
-        return this.f31306p;
+        return this.f31354p;
     }
 
     @Override // gk.s
     protected final Object j(s.d dVar, Object obj, Object obj2) {
         q0 q0Var;
-        switch (C0443a.f31307a[dVar.ordinal()]) {
+        switch (C0443a.f31355a[dVar.ordinal()]) {
             case 1:
                 return new a();
             case 2:
                 return new b();
             case 3:
-                return s.x(f31304q, "\u0001\u0001\u0000\u0000\b\b\u0001\u0000\u0001\u0000\b\u001b", new Object[]{"constrainedValues_", c.class});
+                return s.x(f31352q, "\u0001\u0001\u0000\u0000\b\b\u0001\u0000\u0001\u0000\b\u001b", new Object[]{"constrainedValues_", c.class});
             case 4:
-                return f31304q;
+                return f31352q;
             case 5:
-                q0 q0Var2 = f31305r;
+                q0 q0Var2 = f31353r;
                 if (q0Var2 == null) {
                     synchronized (a.class) {
                         try {
-                            q0Var = f31305r;
+                            q0Var = f31353r;
                             if (q0Var == null) {
-                                q0Var = new s.b(f31304q);
-                                f31305r = q0Var;
+                                q0Var = new s.b(f31352q);
+                                f31353r = q0Var;
                             }
                         } catch (Throwable th2) {
                             throw th2;

@@ -7,19 +7,19 @@ import java.util.concurrent.FutureTask;
 final class i extends FutureTask {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ j f49951d;
+    final /* synthetic */ j f49999d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(j jVar, Runnable runnable, Object obj) {
         super(runnable, obj);
-        this.f49951d = jVar;
+        this.f49999d = jVar;
     }
 
     @Override // java.util.concurrent.FutureTask
     protected final void setException(Throwable th2) {
         Thread.UncaughtExceptionHandler uncaughtExceptionHandler;
-        uncaughtExceptionHandler = this.f49951d.f49952d.f49960f;
+        uncaughtExceptionHandler = this.f49999d.f50000d.f50008f;
         if (uncaughtExceptionHandler != null) {
             uncaughtExceptionHandler.uncaughtException(Thread.currentThread(), th2);
         } else if (Log.isLoggable("GAv4", 6)) {

@@ -11,10 +11,10 @@ import org.bouncycastle.jsse.BCSSLSocket;
 public final class g implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f38314a = new b(null);
+    public static final b f38362a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final j.a f38315b = new a();
+    private static final j.a f38363b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements j.a {
@@ -24,7 +24,7 @@ public final class g implements k {
         @Override // mu.j.a
         public boolean b(SSLSocket sslSocket) {
             Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-            lu.c.f36756e.b();
+            lu.c.f36804e.b();
             return false;
         }
 
@@ -42,7 +42,7 @@ public final class g implements k {
         }
 
         public final j.a a() {
-            return g.f38315b;
+            return g.f38363b;
         }
 
         private b() {
@@ -51,7 +51,7 @@ public final class g implements k {
 
     @Override // mu.k
     public boolean a() {
-        return lu.c.f36756e.b();
+        return lu.c.f36804e.b();
     }
 
     @Override // mu.k
@@ -83,7 +83,7 @@ public final class g implements k {
         if (b(sslSocket)) {
             BCSSLSocket bCSSLSocket = (BCSSLSocket) sslSocket;
             BCSSLParameters parameters = bCSSLSocket.getParameters();
-            parameters.setApplicationProtocols((String[]) lu.h.f36777a.b(protocols).toArray(new String[0]));
+            parameters.setApplicationProtocols((String[]) lu.h.f36825a.b(protocols).toArray(new String[0]));
             bCSSLSocket.setParameters(parameters);
         }
     }

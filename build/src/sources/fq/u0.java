@@ -79,14 +79,14 @@ public abstract class u0 {
                 z12 = false;
             }
             InputCheckboxComponent inputCheckboxComponent = new InputCheckboxComponent(inputCheckbox, z12);
-            iq.i d10 = iq.i.d(uiComponentHelper.b(), c10.f29240b, false);
+            iq.i d10 = iq.i.d(uiComponentHelper.b(), c10.f29288b, false);
             Intrinsics.checkNotNullExpressionValue(d10, "inflate(...)");
-            c10.f29240b.addView(r0.e(inputCheckboxComponent, uiComponentHelper, d10, inputCheckbox));
-            d10.f29235b.setTag(optionWithDescription.getValue());
+            c10.f29288b.addView(r0.e(inputCheckboxComponent, uiComponentHelper, d10, inputCheckbox));
+            d10.f29283b.setTag(optionWithDescription.getValue());
             if (inputCheckboxGroupComponent.b().b().contains(optionWithDescription.getValue())) {
-                d10.f29235b.setChecked(z11);
+                d10.f29283b.setChecked(z11);
             }
-            MaterialCheckBox checkbox = d10.f29235b;
+            MaterialCheckBox checkbox = d10.f29283b;
             Intrinsics.checkNotNullExpressionValue(checkbox, "checkbox");
             arrayList.add(checkbox);
         }
@@ -100,7 +100,7 @@ public abstract class u0 {
         }
         InputCheckbox.InputCheckboxComponentStyle styles = config.getStyles();
         if (styles != null && (errorTextStyle = styles.getErrorTextStyle()) != null) {
-            TextView checkboxGroupError = c10.f29241c;
+            TextView checkboxGroupError = c10.f29289c;
             Intrinsics.checkNotNullExpressionValue(checkboxGroupError, "checkboxGroupError");
             str = null;
             kq.f0.n(checkboxGroupError, errorTextStyle, null, 2, null);
@@ -113,8 +113,8 @@ public abstract class u0 {
             str2 = str;
         }
         if (str2 != null && str2.length() != 0) {
-            c10.f29242d.setVisibility(0);
-            c10.f29242d.setText(str2);
+            c10.f29290d.setVisibility(0);
+            c10.f29290d.setText(str2);
             uiComponentHelper.d(new Function0() { // from class: fq.t0
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -124,7 +124,7 @@ public abstract class u0 {
                 }
             });
         } else {
-            c10.f29242d.setVisibility(8);
+            c10.f29290d.setVisibility(8);
         }
         c10.getRoot().setTag(c10);
         LinearLayout root = c10.getRoot();
@@ -143,11 +143,11 @@ public abstract class u0 {
         TextBasedComponentStyle textBasedStyle;
         InputCheckbox.InputCheckboxComponentStyle styles = inputCheckboxGroup.getStyles();
         if (styles != null && (textBasedStyle = styles.getTextBasedStyle()) != null) {
-            TextView checkboxGroupLabel = jVar.f29242d;
+            TextView checkboxGroupLabel = jVar.f29290d;
             Intrinsics.checkNotNullExpressionValue(checkboxGroupLabel, "checkboxGroupLabel");
             kq.f0.n(checkboxGroupLabel, textBasedStyle, null, 2, null);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final void f(InputCheckboxGroupComponent inputCheckboxGroupComponent, List list) {

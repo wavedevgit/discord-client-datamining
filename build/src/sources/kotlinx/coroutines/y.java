@@ -3,12 +3,12 @@ package kotlinx.coroutines;
 public class y extends b0 implements CompletableJob {
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f35089i;
+    private final boolean f35137i;
 
     public y(Job job) {
         super(true);
         j0(job);
-        this.f35089i = S0();
+        this.f35137i = S0();
     }
 
     private final boolean S0() {
@@ -42,7 +42,7 @@ public class y extends b0 implements CompletableJob {
 
     @Override // kotlinx.coroutines.b0
     public boolean Z() {
-        return this.f35089i;
+        return this.f35137i;
     }
 
     @Override // kotlinx.coroutines.b0

@@ -5,7 +5,7 @@ import yi.c;
 final class ka implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ka f40014a = new ka();
+    static final ka f40062a = new ka();
 
     static {
         c.b a10 = yi.c.a("maxLabels");

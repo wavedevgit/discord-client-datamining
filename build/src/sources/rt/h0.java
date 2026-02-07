@@ -15,42 +15,42 @@ public final class h0 extends x implements i0 {
     private final i0 B;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Class f49511s;
+    private final Class f49559s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Map f49512t;
+    private final Map f49560t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Map f49513u;
+    private final Map f49561u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Map f49514v;
+    private final Map f49562v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Map f49515w;
+    private final Map f49563w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final k0 f49516x;
+    private final k0 f49564x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final k0 f49517y;
+    private final k0 f49565y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final k f49518z;
+    private final k f49566z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements Comparator {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Map f49519d;
+        final /* synthetic */ Map f49567d;
 
         a(Map map) {
-            this.f49519d = map;
+            this.f49567d = map;
         }
 
         @Override // java.util.Comparator
         public int compare(Object obj, Object obj2) {
-            return Double.compare(h0.O(this.f49519d, obj), h0.O(this.f49519d, obj2));
+            return Double.compare(h0.O(this.f49567d, obj), h0.O(this.f49567d, obj2));
         }
     }
 
@@ -58,50 +58,50 @@ public final class h0 extends x implements i0 {
     public static final class b extends x.a {
 
         /* renamed from: f  reason: collision with root package name */
-        private final Class f49521f;
+        private final Class f49569f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Map f49522g;
+        private final Map f49570g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final Map f49523h;
+        private final Map f49571h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Map f49524i;
+        private final Map f49572i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final Map f49525j;
+        private final Map f49573j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final k0 f49526k;
+        private final k0 f49574k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final k0 f49527l;
+        private final k0 f49575l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final k f49528m;
+        private final k f49576m;
 
         /* renamed from: n  reason: collision with root package name */
-        private i0 f49529n;
+        private i0 f49577n;
 
         private b(Class cls, Class cls2, u uVar, k0 k0Var, k0 k0Var2, k kVar, i0 i0Var) {
             super(cls2, uVar);
-            this.f49529n = null;
+            this.f49577n = null;
             if (cls != null) {
                 if (k0Var != null) {
                     if (k0Var2 != null) {
                         if (m.class.isAssignableFrom(cls2) && kVar == null) {
                             throw new NullPointerException("Missing calendar system.");
                         }
-                        this.f49521f = cls;
-                        this.f49522g = new HashMap();
-                        this.f49523h = new HashMap();
-                        this.f49524i = new HashMap();
-                        this.f49525j = new HashMap();
-                        this.f49526k = k0Var;
-                        this.f49527l = k0Var2;
-                        this.f49528m = kVar;
-                        this.f49529n = i0Var;
+                        this.f49569f = cls;
+                        this.f49570g = new HashMap();
+                        this.f49571h = new HashMap();
+                        this.f49572i = new HashMap();
+                        this.f49573j = new HashMap();
+                        this.f49574k = k0Var;
+                        this.f49575l = k0Var2;
+                        this.f49576m = kVar;
+                        this.f49577n = i0Var;
                         return;
                     }
                     throw new NullPointerException("Missing maximum of range.");
@@ -112,15 +112,15 @@ public final class h0 extends x implements i0 {
         }
 
         private void i(Object obj) {
-            if (!this.f49543b) {
-                for (Object obj2 : this.f49522g.keySet()) {
+            if (!this.f49591b) {
+                for (Object obj2 : this.f49570g.keySet()) {
                     if (obj2.equals(obj)) {
                         throw new IllegalArgumentException("Unit duplicate found: " + obj.toString());
                     }
                 }
                 if (obj instanceof Enum) {
                     String name = ((Enum) Enum.class.cast(obj)).name();
-                    for (Object obj3 : this.f49522g.keySet()) {
+                    for (Object obj3 : this.f49570g.keySet()) {
                         if ((obj3 instanceof Enum) && ((Enum) Enum.class.cast(obj3)).name().equals(name)) {
                             throw new IllegalArgumentException("Unit duplicate found: " + name);
                         }
@@ -150,7 +150,7 @@ public final class h0 extends x implements i0 {
         public b e(p pVar, z zVar, Object obj) {
             if (obj != null) {
                 super.a(pVar, zVar);
-                this.f49525j.put(pVar, obj);
+                this.f49573j.put(pVar, obj);
                 return this;
             }
             throw new NullPointerException("Missing base unit.");
@@ -172,11 +172,11 @@ public final class h0 extends x implements i0 {
                     }
                     if (!Double.isNaN(d10)) {
                         if (!Double.isInfinite(d10)) {
-                            this.f49522g.put(obj, m0Var);
-                            this.f49523h.put(obj, Double.valueOf(d10));
+                            this.f49570g.put(obj, m0Var);
+                            this.f49571h.put(obj, Double.valueOf(d10));
                             HashSet hashSet = new HashSet(set);
                             hashSet.remove(obj);
-                            this.f49524i.put(obj, hashSet);
+                            this.f49572i.put(obj, hashSet);
                             return this;
                         }
                         throw new IllegalArgumentException("Infinite: " + d10);
@@ -189,8 +189,8 @@ public final class h0 extends x implements i0 {
         }
 
         public h0 h() {
-            if (!this.f49522g.isEmpty()) {
-                h0 h0Var = new h0(this.f49542a, this.f49521f, this.f49544c, this.f49545d, this.f49522g, this.f49523h, this.f49524i, this.f49546e, this.f49525j, this.f49526k, this.f49527l, this.f49528m, this.f49529n, null);
+            if (!this.f49570g.isEmpty()) {
+                h0 h0Var = new h0(this.f49590a, this.f49569f, this.f49592c, this.f49593d, this.f49570g, this.f49571h, this.f49572i, this.f49594e, this.f49573j, this.f49574k, this.f49575l, this.f49576m, this.f49577n, null);
                 x.I(h0Var);
                 return h0Var;
             }
@@ -199,7 +199,7 @@ public final class h0 extends x implements i0 {
 
         public b l(i0 i0Var) {
             if (i0Var != null) {
-                this.f49529n = i0Var;
+                this.f49577n = i0Var;
                 return this;
             }
             throw new NullPointerException("Missing time line.");
@@ -210,18 +210,18 @@ public final class h0 extends x implements i0 {
     private static class c implements i0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f49530d;
+        private final Object f49578d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final k0 f49531e;
+        private final k0 f49579e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final k0 f49532i;
+        private final k0 f49580i;
 
         c(Object obj, k0 k0Var, k0 k0Var2) {
-            this.f49530d = obj;
-            this.f49531e = k0Var;
-            this.f49532i = k0Var2;
+            this.f49578d = obj;
+            this.f49579e = k0Var;
+            this.f49580i = k0Var2;
         }
 
         @Override // java.util.Comparator
@@ -382,9 +382,9 @@ public final class h0 extends x implements i0 {
 
     public Object N(p pVar) {
         if (pVar != null) {
-            Object obj = this.f49515w.get(pVar);
+            Object obj = this.f49563w.get(pVar);
             if (obj == null && (pVar instanceof e)) {
-                obj = this.f49515w.get(((e) pVar).p());
+                obj = this.f49563w.get(((e) pVar).p());
             }
             if (obj != null) {
                 return obj;
@@ -395,11 +395,11 @@ public final class h0 extends x implements i0 {
     }
 
     public k0 P() {
-        return this.f49517y;
+        return this.f49565y;
     }
 
     public k0 Q() {
-        return this.f49516x;
+        return this.f49564x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -407,7 +407,7 @@ public final class h0 extends x implements i0 {
         m0 b10;
         if (obj != null) {
             if (S(obj)) {
-                return (m0) this.f49512t.get(obj);
+                return (m0) this.f49560t.get(obj);
             }
             if ((obj instanceof f) && (b10 = ((f) f.class.cast(obj)).b(this)) != null) {
                 return b10;
@@ -418,12 +418,12 @@ public final class h0 extends x implements i0 {
     }
 
     public boolean S(Object obj) {
-        return this.f49512t.containsKey(obj);
+        return this.f49560t.containsKey(obj);
     }
 
     @Override // rt.x
     public k o() {
-        k kVar = this.f49518z;
+        k kVar = this.f49566z;
         if (kVar == null) {
             return super.o();
         }
@@ -432,14 +432,14 @@ public final class h0 extends x implements i0 {
 
     private h0(Class cls, Class cls2, u uVar, Map map, Map map2, Map map3, Map map4, List list, Map map5, k0 k0Var, k0 k0Var2, k kVar, i0 i0Var) {
         super(cls, uVar, map, list);
-        this.f49511s = cls2;
-        this.f49512t = Collections.unmodifiableMap(map2);
-        this.f49513u = Collections.unmodifiableMap(map3);
-        this.f49514v = Collections.unmodifiableMap(map4);
-        this.f49515w = Collections.unmodifiableMap(map5);
-        this.f49516x = k0Var;
-        this.f49517y = k0Var2;
-        this.f49518z = kVar;
+        this.f49559s = cls2;
+        this.f49560t = Collections.unmodifiableMap(map2);
+        this.f49561u = Collections.unmodifiableMap(map3);
+        this.f49562v = Collections.unmodifiableMap(map4);
+        this.f49563w = Collections.unmodifiableMap(map5);
+        this.f49564x = k0Var;
+        this.f49565y = k0Var2;
+        this.f49566z = kVar;
         this.A = new d(cls, k0Var, k0Var2, null);
         if (i0Var == null) {
             ArrayList arrayList = new ArrayList(map2.keySet());

@@ -37,14 +37,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/message_previews/useLatestChannelMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85160: for (var _fun85160_ip = 0;;) switch (_fun85160_ip) {
+        _fun85591: for (var _fun85591_ip = 0;;) switch (_fun85591_ip) {
             case 0:
                 var0 = arg0;
                 var2 = arguments[1];
                 var4 = undefined;
                 if (!(var2 === var4)) {
-                    _fun85160_ip = 16;
-                    continue _fun85160
+                    _fun85591_ip = 16;
+                    continue _fun85591
                 }
             case 14:
                 var2 = false;
@@ -67,12 +67,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var0;
                 var0 = function() { // Environment: var1
-                    _fun85161: for (var _fun85161_ip = 0;;) switch (_fun85161_ip) {
+                    _fun85592: for (var _fun85592_ip = 0;;) switch (_fun85592_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             if (var0) {
-                                _fun85161_ip = 70;
-                                continue _fun85161
+                                _fun85592_ip = 70;
+                                continue _fun85592
                             }
                         case 10:
                             var4 = _closure1_slot5;
@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot2;
                             var1 = var3.bind(var4)(var2, var1);
                             var0[1] = var1;
-                            _fun85161_ip = 87;
-                            continue _fun85161;
+                            _fun85592_ip = 89;
+                            continue _fun85592;
                         case 70:
                             var1 = [null];
                             var2 = true;
                             var1[1] = var2;
                             var0 = var1;
-                        case 87:
+                        case 89:
                             return var0;
                     }
                 };
@@ -112,21 +112,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun85162: for (var _fun85162_ip = 0;;) switch (_fun85162_ip) {
+                    _fun85593: for (var _fun85593_ip = 0;;) switch (_fun85593_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             var1 = null;
                             var1 = var1 == var2;
                             if (var1) {
-                                _fun85162_ip = 20;
-                                continue _fun85162
+                                _fun85593_ip = 20;
+                                continue _fun85593
                             }
                         case 16:
                             var1 = _closure2_slot3;
                         case 20:
                             if (var1) {
-                                _fun85162_ip = 63;
-                                continue _fun85162
+                                _fun85593_ip = 63;
+                                continue _fun85593
                             }
                         case 23:
                             var3 = _closure1_slot1;
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10940, 566, 10942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10978, 566, 10980, 2]);

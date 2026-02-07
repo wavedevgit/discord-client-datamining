@@ -3,10 +3,10 @@ package ud;
 final class m implements td.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f51402a;
+    private final i f51450a;
 
     public m(i iVar) {
-        this.f51402a = iVar;
+        this.f51450a = iVar;
     }
 
     @Override // td.f
@@ -26,7 +26,7 @@ final class m implements td.f {
 
     @Override // td.f
     public i e(long j10) {
-        return this.f51402a;
+        return this.f51450a;
     }
 
     @Override // td.f

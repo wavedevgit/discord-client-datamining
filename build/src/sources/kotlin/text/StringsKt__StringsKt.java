@@ -24,15 +24,15 @@ public class StringsKt__StringsKt extends w {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ CharSequence f34934a;
+        final /* synthetic */ CharSequence f34982a;
 
         public a(CharSequence charSequence) {
-            this.f34934a = charSequence;
+            this.f34982a = charSequence;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return new g(this.f34934a);
+            return new g(this.f34982a);
         }
     }
 

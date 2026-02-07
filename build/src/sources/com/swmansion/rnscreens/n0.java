@@ -478,9 +478,9 @@ public final class n0 extends w implements ScreenStackFragmentWrapper {
         }
         nn.i iVar = new nn.i(g());
         if (z10) {
-            aVar = e.a.f40914d;
+            aVar = e.a.f40962d;
         } else {
-            aVar = e.a.f40915e;
+            aVar = e.a.f40963e;
         }
         animatorSet.addListener(new nn.e(this, iVar, aVar));
         return animatorSet;
@@ -610,7 +610,7 @@ public final class n0 extends w implements ScreenStackFragmentWrapper {
 
     @Override // androidx.fragment.app.Fragment
     public void onStop() {
-        if (sn.a.f49993a.a(getContext())) {
+        if (sn.a.f50041a.a(getContext())) {
             this.f18292x = X();
         }
         super.onStop();

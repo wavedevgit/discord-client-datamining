@@ -10,24 +10,24 @@ import okio.Sink;
 public final class a implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f45663d;
+    private final boolean f45711d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Buffer f45664e;
+    private final Buffer f45712e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Deflater f45665i;
+    private final Deflater f45713i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final qu.e f45666o;
+    private final qu.e f45714o;
 
     public a(boolean z10) {
-        this.f45663d = z10;
+        this.f45711d = z10;
         Buffer buffer = new Buffer();
-        this.f45664e = buffer;
+        this.f45712e = buffer;
         Deflater deflater = new Deflater(-1, true);
-        this.f45665i = deflater;
-        this.f45666o = new qu.e((Sink) buffer, deflater);
+        this.f45713i = deflater;
+        this.f45714o = new qu.e((Sink) buffer, deflater);
     }
 
     private final boolean g(Buffer buffer, ByteString byteString) {
@@ -37,26 +37,26 @@ public final class a implements Closeable {
     public final void a(Buffer buffer) {
         ByteString byteString;
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        if (this.f45664e.size() == 0) {
-            if (this.f45663d) {
-                this.f45665i.reset();
+        if (this.f45712e.size() == 0) {
+            if (this.f45711d) {
+                this.f45713i.reset();
             }
-            this.f45666o.w0(buffer, buffer.size());
-            this.f45666o.flush();
-            Buffer buffer2 = this.f45664e;
-            byteString = b.f45667a;
+            this.f45714o.w0(buffer, buffer.size());
+            this.f45714o.flush();
+            Buffer buffer2 = this.f45712e;
+            byteString = b.f45715a;
             if (g(buffer2, byteString)) {
-                long size = this.f45664e.size() - 4;
-                Buffer.a O0 = Buffer.O0(this.f45664e, null, 1, null);
+                long size = this.f45712e.size() - 4;
+                Buffer.a O0 = Buffer.O0(this.f45712e, null, 1, null);
                 try {
                     O0.k(size);
                     bs.c.a(O0, null);
                 } finally {
                 }
             } else {
-                this.f45664e.writeByte(0);
+                this.f45712e.writeByte(0);
             }
-            Buffer buffer3 = this.f45664e;
+            Buffer buffer3 = this.f45712e;
             buffer.w0(buffer3, buffer3.size());
             return;
         }
@@ -65,6 +65,6 @@ public final class a implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f45666o.close();
+        this.f45714o.close();
     }
 }

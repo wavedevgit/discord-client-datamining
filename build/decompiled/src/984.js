@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function() {
-        _fun10137: for (var _fun10137_ip = 0;;) switch (_fun10137_ip) {
+        _fun10139: for (var _fun10139_ip = 0;;) switch (_fun10139_ip) {
             case 0:
                 var0 = global;
                 var0 = var0.window;
@@ -23,8 +23,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var0;
                 var0 = var1 !== var0;
                 if (!var0) {
-                    _fun10137_ip = 120;
-                    continue _fun10137
+                    _fun10139_ip = 120;
+                    continue _fun10139
                 }
             case 21:
                 var4 = _closure1_slot0;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var4)();
                 var1 = !var1;
                 if (var1) {
-                    _fun10137_ip = 117;
-                    continue _fun10137
+                    _fun10139_ip = 117;
+                    continue _fun10139
                 }
             case 61:
                 var4 = _closure1_slot0;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4 == var2;
                 var3 = undefined;
                 if (var4) {
-                    _fun10137_ip = 109;
-                    continue _fun10137
+                    _fun10139_ip = 109;
+                    continue _fun10139
                 }
             case 104:
                 var3 = var2.type;

@@ -6,14 +6,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function arg0() {
-        _fun9691: for (var _fun9691_ip = 0;;) switch (_fun9691_ip) {
+        _fun9693: for (var _fun9693_ip = 0;;) switch (_fun9693_ip) {
             case 0:
                 var1 = arg0;
                 var2 = !var1;
                 var0 = !var2;
                 if (var2) {
-                    _fun9691_ip = 24;
-                    continue _fun9691
+                    _fun9693_ip = 24;
+                    continue _fun9693
                 }
             case 12:
                 var3 = var1._profiler;
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 !== var3;
             case 24:
                 if (!var0) {
-                    _fun9691_ip = 49;
-                    continue _fun9691
+                    _fun9693_ip = 49;
+                    continue _fun9693
                 }
             case 27:
                 var2 = var1._profiler;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 49:
                 if (!var0) {
-                    _fun9691_ip = 75;
-                    continue _fun9691
+                    _fun9693_ip = 75;
+                    continue _fun9693
                 }
             case 52:
                 var1 = var1._profiler;
@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = var4.bind(var5)(var1, var3, var0);
     var0 = {};
     var3 = function() {
-        _fun9692: for (var _fun9692_ip = 0;;) switch (_fun9692_ip) {
+        _fun9694: for (var _fun9694_ip = 0;;) switch (_fun9694_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.getClient;
                 var4 = var1.bind(var3)();
                 if (var4) {
-                    _fun9692_ip = 116;
-                    continue _fun9692
+                    _fun9694_ip = 116;
+                    continue _fun9694
                 }
             case 37:
                 var3 = _closure1_slot0;
@@ -79,8 +79,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9692_ip = 312;
-                    continue _fun9692
+                    _fun9694_ip = 312;
+                    continue _fun9694
                 }
             case 69:
                 var3 = _closure1_slot0;
@@ -92,15 +92,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.warn;
                 var1 = 'No Sentry client available, profiling is not started';
                 var1 = var3.bind(var5)(var1);
-                _fun9692_ip = 312;
-                continue _fun9692;
+                _fun9694_ip = 312;
+                continue _fun9694;
             case 116:
                 var3 = var4.getIntegrationByName;
                 var1 = 'ProfilingIntegration';
                 var1 = var3.bind(var4)(var1);
                 if (var1) {
-                    _fun9692_ip = 212;
-                    continue _fun9692
+                    _fun9694_ip = 212;
+                    continue _fun9694
                 }
             case 136:
                 var4 = _closure1_slot0;
@@ -110,8 +110,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun9692_ip = 312;
-                    continue _fun9692
+                    _fun9694_ip = 312;
+                    continue _fun9694
                 }
             case 168:
                 var4 = _closure1_slot0;
@@ -123,14 +123,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.warn;
                 var3 = 'ProfilingIntegration is not available';
                 var3 = var4.bind(var5)(var3);
-                _fun9692_ip = 312;
-                continue _fun9692;
+                _fun9694_ip = 312;
+                continue _fun9694;
             case 212:
                 var3 = _closure1_slot2;
                 var3 = var3.bind(var0)(var1);
                 if (var3) {
-                    _fun9692_ip = 297;
-                    continue _fun9692
+                    _fun9694_ip = 297;
+                    continue _fun9694
                 }
             case 224:
                 var4 = _closure1_slot0;
@@ -140,8 +140,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun9692_ip = 312;
-                    continue _fun9692
+                    _fun9694_ip = 312;
+                    continue _fun9694
                 }
             case 253:
                 var3 = _closure1_slot0;
@@ -153,8 +153,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.warn;
                 var2 = 'Profiler is not available on profiling integration.';
                 var2 = var3.bind(var4)(var2);
-                _fun9692_ip = 312;
-                continue _fun9692;
+                _fun9694_ip = 312;
+                continue _fun9694;
             case 297:
                 var2 = var1._profiler;
                 var1 = var2.start;
@@ -165,7 +165,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var0.startProfiler = var3;
     var2 = function() {
-        _fun9693: for (var _fun9693_ip = 0;;) switch (_fun9693_ip) {
+        _fun9695: for (var _fun9695_ip = 0;;) switch (_fun9695_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -176,8 +176,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.getClient;
                 var4 = var1.bind(var3)();
                 if (var4) {
-                    _fun9693_ip = 116;
-                    continue _fun9693
+                    _fun9695_ip = 116;
+                    continue _fun9695
                 }
             case 37:
                 var3 = _closure1_slot0;
@@ -187,8 +187,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9693_ip = 313;
-                    continue _fun9693
+                    _fun9695_ip = 313;
+                    continue _fun9695
                 }
             case 69:
                 var3 = _closure1_slot0;
@@ -200,15 +200,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.warn;
                 var1 = 'No Sentry client available, profiling is not started';
                 var1 = var3.bind(var5)(var1);
-                _fun9693_ip = 313;
-                continue _fun9693;
+                _fun9695_ip = 313;
+                continue _fun9695;
             case 116:
                 var3 = var4.getIntegrationByName;
                 var1 = 'ProfilingIntegration';
                 var1 = var3.bind(var4)(var1);
                 if (var1) {
-                    _fun9693_ip = 212;
-                    continue _fun9693
+                    _fun9695_ip = 212;
+                    continue _fun9695
                 }
             case 136:
                 var4 = _closure1_slot0;
@@ -218,8 +218,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun9693_ip = 313;
-                    continue _fun9693
+                    _fun9695_ip = 313;
+                    continue _fun9695
                 }
             case 168:
                 var4 = _closure1_slot0;
@@ -231,14 +231,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var5.warn;
                 var3 = 'ProfilingIntegration is not available';
                 var3 = var4.bind(var5)(var3);
-                _fun9693_ip = 313;
-                continue _fun9693;
+                _fun9695_ip = 313;
+                continue _fun9695;
             case 212:
                 var3 = _closure1_slot2;
                 var3 = var3.bind(var0)(var1);
                 if (var3) {
-                    _fun9693_ip = 297;
-                    continue _fun9693
+                    _fun9695_ip = 297;
+                    continue _fun9695
                 }
             case 224:
                 var4 = _closure1_slot0;
@@ -248,8 +248,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun9693_ip = 313;
-                    continue _fun9693
+                    _fun9695_ip = 313;
+                    continue _fun9695
                 }
             case 253:
                 var3 = _closure1_slot0;
@@ -261,8 +261,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.warn;
                 var2 = 'Profiler is not available on profiling integration.';
                 var2 = var3.bind(var4)(var2);
-                _fun9693_ip = 313;
-                continue _fun9693;
+                _fun9695_ip = 313;
+                continue _fun9695;
             case 297:
                 var2 = var1._profiler;
                 var1 = var2.stop;

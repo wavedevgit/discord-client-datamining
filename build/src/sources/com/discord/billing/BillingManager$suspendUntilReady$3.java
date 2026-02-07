@@ -54,6 +54,6 @@ public final class BillingManager$suspendUntilReady$3 extends kotlin.coroutines.
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super BillingManager.ClientReadyState> continuation) {
-        return ((BillingManager$suspendUntilReady$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((BillingManager$suspendUntilReady$3) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

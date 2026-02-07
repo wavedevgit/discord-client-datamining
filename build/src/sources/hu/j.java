@@ -23,10 +23,10 @@ import okhttp3.Response;
 public final class j implements Interceptor {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f26514b = new a(null);
+    public static final a f26562b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final OkHttpClient f26515a;
+    private final OkHttpClient f26563a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -40,7 +40,7 @@ public final class j implements Interceptor {
 
     public j(OkHttpClient client) {
         Intrinsics.checkNotNullParameter(client, "client");
-        this.f26515a = client;
+        this.f26563a = client;
     }
 
     private final Request a(Response response, String str) {
@@ -48,16 +48,16 @@ public final class j implements Interceptor {
         HttpUrl r10;
         boolean z10;
         RequestBody requestBody = null;
-        if (!this.f26515a.w() || (Y = Response.Y(response, "Location", null, 2, null)) == null || (r10 = response.Y0().n().r(Y)) == null) {
+        if (!this.f26563a.w() || (Y = Response.Y(response, "Location", null, 2, null)) == null || (r10 = response.Y0().n().r(Y)) == null) {
             return null;
         }
-        if (!Intrinsics.areEqual(r10.s(), response.Y0().n().s()) && !this.f26515a.x()) {
+        if (!Intrinsics.areEqual(r10.s(), response.Y0().n().s()) && !this.f26563a.x()) {
             return null;
         }
         Request.Builder k10 = response.Y0().k();
         if (f.b(str)) {
             int z11 = response.z();
-            f fVar = f.f26500a;
+            f fVar = f.f26548a;
             if (!fVar.d(str) && z11 != 308 && z11 != 307) {
                 z10 = false;
             } else {
@@ -108,7 +108,7 @@ public final class j implements Interceptor {
                                     default:
                                         return null;
                                 }
-                            } else if (!this.f26515a.M()) {
+                            } else if (!this.f26563a.M()) {
                                 return null;
                             } else {
                                 RequestBody c10 = response.Y0().c();
@@ -124,7 +124,7 @@ public final class j implements Interceptor {
                         } else {
                             Intrinsics.checkNotNull(kVar);
                             if (kVar.b().type() == Proxy.Type.HTTP) {
-                                return this.f26515a.J().a(kVar, response);
+                                return this.f26563a.J().a(kVar, response);
                             }
                             throw new ProtocolException("Received HTTP_PROXY_AUTH (407) code while not using proxy");
                         }
@@ -144,7 +144,7 @@ public final class j implements Interceptor {
                     return response.Y0();
                 }
             } else {
-                return this.f26515a.i().a(kVar, response);
+                return this.f26563a.i().a(kVar, response);
             }
         }
         return a(response, j10);
@@ -167,7 +167,7 @@ public final class j implements Interceptor {
     }
 
     private final boolean d(IOException iOException, gu.e eVar, Request request, boolean z10) {
-        if (!this.f26515a.M()) {
+        if (!this.f26563a.M()) {
             return false;
         }
         if ((z10 && e(iOException, request)) || !c(iOException, z10) || !eVar.y()) {

@@ -5,5 +5,5 @@ import kotlin.coroutines.Continuation;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Continuation[] f50025a = new Continuation[0];
+    public static final Continuation[] f50073a = new Continuation[0];
 }

@@ -11,22 +11,22 @@ import com.google.android.material.radiobutton.MaterialRadioButton;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29185a;
+    private final ConstraintLayout f29233a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialRadioButton f29186b;
+    public final MaterialRadioButton f29234b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f29187c;
+    public final TextView f29235c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f29188d;
+    public final TextView f29236d;
 
     private b(ConstraintLayout constraintLayout, MaterialRadioButton materialRadioButton, TextView textView, TextView textView2) {
-        this.f29185a = constraintLayout;
-        this.f29186b = materialRadioButton;
-        this.f29187c = textView;
-        this.f29188d = textView2;
+        this.f29233a = constraintLayout;
+        this.f29234b = materialRadioButton;
+        this.f29235c = textView;
+        this.f29236d = textView2;
     }
 
     public static b a(View view) {
@@ -57,6 +57,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29185a;
+        return this.f29233a;
     }
 }

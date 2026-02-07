@@ -5,51 +5,51 @@ import yi.c;
 final class a7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a7 f46931a = new a7();
+    static final a7 f46979a = new a7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f46932b;
+    private static final yi.c f46980b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f46933c;
+    private static final yi.c f46981c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f46934d;
+    private static final yi.c f46982d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f46935e;
+    private static final yi.c f46983e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f46936f;
+    private static final yi.c f46984f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f46937g;
+    private static final yi.c f46985g;
 
     static {
         c.b a10 = yi.c.a("maxMs");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f46932b = a10.b(v1Var.b()).a();
+        f46980b = a10.b(v1Var.b()).a();
         c.b a11 = yi.c.a("minMs");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f46933c = a11.b(v1Var2.b()).a();
+        f46981c = a11.b(v1Var2.b()).a();
         c.b a12 = yi.c.a("avgMs");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f46934d = a12.b(v1Var3.b()).a();
+        f46982d = a12.b(v1Var3.b()).a();
         c.b a13 = yi.c.a("firstQuartileMs");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
-        f46935e = a13.b(v1Var4.b()).a();
+        f46983e = a13.b(v1Var4.b()).a();
         c.b a14 = yi.c.a("medianMs");
         v1 v1Var5 = new v1();
         v1Var5.a(5);
-        f46936f = a14.b(v1Var5.b()).a();
+        f46984f = a14.b(v1Var5.b()).a();
         c.b a15 = yi.c.a("thirdQuartileMs");
         v1 v1Var6 = new v1();
         v1Var6.a(6);
-        f46937g = a15.b(v1Var6.b()).a();
+        f46985g = a15.b(v1Var6.b()).a();
     }
 
     private a7() {
@@ -59,11 +59,11 @@ final class a7 implements yi.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         jd jdVar = (jd) obj;
         yi.e eVar = (yi.e) obj2;
-        eVar.a(f46932b, jdVar.c());
-        eVar.a(f46933c, jdVar.e());
-        eVar.a(f46934d, jdVar.a());
-        eVar.a(f46935e, jdVar.b());
-        eVar.a(f46936f, jdVar.d());
-        eVar.a(f46937g, jdVar.f());
+        eVar.a(f46980b, jdVar.c());
+        eVar.a(f46981c, jdVar.e());
+        eVar.a(f46982d, jdVar.a());
+        eVar.a(f46983e, jdVar.b());
+        eVar.a(f46984f, jdVar.d());
+        eVar.a(f46985g, jdVar.f());
     }
 }

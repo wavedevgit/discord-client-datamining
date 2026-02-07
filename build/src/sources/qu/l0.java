@@ -17,22 +17,22 @@ import qu.c0;
 public final class l0 extends h {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final a f48246i = new a(null);
+    private static final a f48294i = new a(null);
 
     /* renamed from: j  reason: collision with root package name */
-    private static final c0 f48247j = c0.a.e(c0.f48188e, "/", false, 1, null);
+    private static final c0 f48295j = c0.a.e(c0.f48236e, "/", false, 1, null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final c0 f48248e;
+    private final c0 f48296e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f48249f;
+    private final h f48297f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f48250g;
+    private final Map f48298g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f48251h;
+    private final String f48299h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static final class a {
@@ -48,18 +48,18 @@ public final class l0 extends h {
         Intrinsics.checkNotNullParameter(zipPath, "zipPath");
         Intrinsics.checkNotNullParameter(fileSystem, "fileSystem");
         Intrinsics.checkNotNullParameter(entries, "entries");
-        this.f48248e = zipPath;
-        this.f48249f = fileSystem;
-        this.f48250g = entries;
-        this.f48251h = str;
+        this.f48296e = zipPath;
+        this.f48297f = fileSystem;
+        this.f48298g = entries;
+        this.f48299h = str;
     }
 
     private final c0 r(c0 c0Var) {
-        return f48247j.m(c0Var, true);
+        return f48295j.m(c0Var, true);
     }
 
     private final List s(c0 c0Var, boolean z10) {
-        ru.i iVar = (ru.i) this.f48250g.get(r(c0Var));
+        ru.i iVar = (ru.i) this.f48298g.get(r(c0Var));
         if (iVar == null) {
             if (!z10) {
                 return null;
@@ -106,13 +106,13 @@ public final class l0 extends h {
     public g m(c0 path) {
         Throwable th2;
         Intrinsics.checkNotNullParameter(path, "path");
-        ru.i iVar = (ru.i) this.f48250g.get(r(path));
+        ru.i iVar = (ru.i) this.f48298g.get(r(path));
         Long l10 = null;
         if (iVar == null) {
             return null;
         }
         if (iVar.i() != -1) {
-            f n10 = this.f48249f.n(this.f48248e);
+            f n10 = this.f48297f.n(this.f48296e);
             try {
                 BufferedSource d10 = x.d(n10.C(iVar.i()));
                 iVar = ru.j.j(d10, iVar);
@@ -178,9 +178,9 @@ public final class l0 extends h {
     @Override // qu.h
     public Source q(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        ru.i iVar = (ru.i) this.f48250g.get(r(file));
+        ru.i iVar = (ru.i) this.f48298g.get(r(file));
         if (iVar != null) {
-            f n10 = this.f48249f.n(this.f48248e);
+            f n10 = this.f48297f.n(this.f48296e);
             BufferedSource th2 = null;
             try {
                 BufferedSource d10 = x.d(n10.C(iVar.i()));

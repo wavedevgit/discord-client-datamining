@@ -5,44 +5,44 @@ import yi.c;
 final class h6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h6 f44286a = new h6();
+    static final h6 f44334a = new h6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44287b;
+    private static final yi.c f44335b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44288c;
+    private static final yi.c f44336c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44289d;
+    private static final yi.c f44337d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44290e;
+    private static final yi.c f44338e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f44291f;
+    private static final yi.c f44339f;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44287b = a10.b(s1Var.b()).a();
+        f44335b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44288c = a11.b(s1Var2.b()).a();
+        f44336c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("detectedBarcodeFormats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44289d = a12.b(s1Var3.b()).a();
+        f44337d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("detectedBarcodeValueTypes");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44290e = a13.b(s1Var4.b()).a();
+        f44338e = a13.b(s1Var4.b()).a();
         c.b a14 = yi.c.a("imageInfo");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44291f = a14.b(s1Var5.b()).a();
+        f44339f = a14.b(s1Var5.b()).a();
     }
 
     private h6() {

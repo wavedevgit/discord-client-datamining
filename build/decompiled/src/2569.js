@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/voice_dares',
+        'httpServerLocation': '/assets/modules/haven',
         'scales': null,
-        'hash': '3df4ded6a9aaf76b278f999989014742',
-        'name': 'VoiceDares.compiled.messages',
+        'hash': '585699a24beb220c748d63d4a9ee4515',
+        'name': 'Haven.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

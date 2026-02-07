@@ -5,10 +5,10 @@ import java.util.List;
 public interface n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a0.e1 f54224a = a0.e1.a(new Object());
+    public static final a0.e1 f54272a = a0.e1.a(new Object());
 
     default a0.e1 a() {
-        return f54224a;
+        return f54272a;
     }
 
     List b(List list);

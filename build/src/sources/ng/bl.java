@@ -3,23 +3,23 @@ package ng;
 final class bl extends dl {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f39732a;
+    private final float f39780a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f39733b;
+    private final float f39781b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f39734c;
+    private final float f39782c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f39735d;
+    private final float f39783d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bl(float f10, float f11, float f12, float f13, float f14) {
-        this.f39732a = f10;
-        this.f39733b = f11;
-        this.f39734c = f12;
-        this.f39735d = f13;
+        this.f39780a = f10;
+        this.f39781b = f11;
+        this.f39782c = f12;
+        this.f39783d = f13;
     }
 
     @Override // ng.dl
@@ -29,22 +29,22 @@ final class bl extends dl {
 
     @Override // ng.dl
     final float b() {
-        return this.f39734c;
+        return this.f39782c;
     }
 
     @Override // ng.dl
     final float c() {
-        return this.f39732a;
+        return this.f39780a;
     }
 
     @Override // ng.dl
     final float d() {
-        return this.f39735d;
+        return this.f39783d;
     }
 
     @Override // ng.dl
     final float e() {
-        return this.f39733b;
+        return this.f39781b;
     }
 
     public final boolean equals(Object obj) {
@@ -53,7 +53,7 @@ final class bl extends dl {
         }
         if (obj instanceof dl) {
             dl dlVar = (dl) obj;
-            if (Float.floatToIntBits(this.f39732a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f39733b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f39734c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f39735d) == Float.floatToIntBits(dlVar.d())) {
+            if (Float.floatToIntBits(this.f39780a) == Float.floatToIntBits(dlVar.c()) && Float.floatToIntBits(this.f39781b) == Float.floatToIntBits(dlVar.e()) && Float.floatToIntBits(this.f39782c) == Float.floatToIntBits(dlVar.b()) && Float.floatToIntBits(this.f39783d) == Float.floatToIntBits(dlVar.d())) {
                 int floatToIntBits = Float.floatToIntBits(0.0f);
                 dlVar.a();
                 if (floatToIntBits == Float.floatToIntBits(0.0f)) {
@@ -65,10 +65,10 @@ final class bl extends dl {
     }
 
     public final int hashCode() {
-        return ((((((((Float.floatToIntBits(this.f39732a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f39733b)) * 1000003) ^ Float.floatToIntBits(this.f39734c)) * 1000003) ^ Float.floatToIntBits(this.f39735d)) * 1000003) ^ Float.floatToIntBits(0.0f);
+        return ((((((((Float.floatToIntBits(this.f39780a) ^ 1000003) * 1000003) ^ Float.floatToIntBits(this.f39781b)) * 1000003) ^ Float.floatToIntBits(this.f39782c)) * 1000003) ^ Float.floatToIntBits(this.f39783d)) * 1000003) ^ Float.floatToIntBits(0.0f);
     }
 
     public final String toString() {
-        return "PredictedArea{xMin=" + this.f39732a + ", yMin=" + this.f39733b + ", xMax=" + this.f39734c + ", yMax=" + this.f39735d + ", confidenceScore=0.0}";
+        return "PredictedArea{xMin=" + this.f39780a + ", yMin=" + this.f39781b + ", xMax=" + this.f39782c + ", yMax=" + this.f39783d + ", confidenceScore=0.0}";
     }
 }

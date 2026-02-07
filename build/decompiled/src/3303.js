@@ -1,51 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0, arg1() {
-        _fun28339: for (var _fun28339_ip = 0;;) switch (_fun28339_ip) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0() {
+        _fun28349: for (var _fun28349_ip = 0;;) switch (_fun28349_ip) {
             case 0:
-                var6 = arg0;
-                var5 = arg1;
-                var0 = null;
-                var0 = var0 == var6;
-                var1 = 0;
-                var4 = 0;
-                if (var0) {
-                    _fun28339_ip = 24;
-                    continue _fun28339
+                var3 = arg0;
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 0;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.bind(var2)(var3);
+                if (!var0) {
+                    _fun28349_ip = 60;
+                    continue _fun28349
                 }
-            case 19:
-                var4 = var6.length;
-            case 24:
-                var0 = new Array(0);
-                var7 = var1 < var4;
-                var3 = undefined;
-                var2 = 0;
-                var1 = 0;
-                if (!var7) {
-                    _fun28339_ip = 81;
-                    continue _fun28339
-                }
-            case 41:
-                var11 = var6[var2];
-                var9 = var5.bind(var3)(var11, var2, var6);
-                var8 = var2;
-                var7 = var1;
-                if (!var9) {
-                    _fun28339_ip = 71;
-                    continue _fun28339
-                }
-            case 61:
-                var10 = parseFloat(var1);
-                var7 = var10 + 1;
-                var0[var10] = var11;
-            case 71:
-                var2 = var8 + 1;
-                var1 = var7;
-                if (var2 < var4) {
-                    _fun28339_ip = 41;
-                    continue _fun28339
-                }
-            case 81:
+            case 35:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 1;
+                var1 = var5[var1];
+                var1 = var4.bind(var2)(var1);
+                var0 = var1.bind(var2)(var3);
+            case 60:
                 return var0;
         }
     };
@@ -53,4 +34,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [612, 595]);

@@ -66,7 +66,7 @@ public final class I18nModule extends NativeI18nModuleSpec {
             hashMap.put(name, string);
             i10 = i11;
         }
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         i18nCache.set(reactApplicationContext, hashMap);
     }
 }

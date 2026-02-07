@@ -5,7 +5,7 @@ import yi.c;
 final class x8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x8 f40397a = new x8();
+    static final x8 f40445a = new x8();
 
     static {
         c.b a10 = yi.c.a("sampledSegmentations");

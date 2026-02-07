@@ -113,11 +113,11 @@ public final class ForumPostActions {
         compositeEncoder.x(serialDescriptor, 0, forumPostActions.numDisplayedReactions);
         compositeEncoder.y(serialDescriptor, 1, forumPostActions.isFollowing);
         if (compositeEncoder.A(serialDescriptor, 2) || forumPostActions.followIcon != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, forumPostActions.followIcon);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, forumPostActions.followIcon);
         }
         compositeEncoder.z(serialDescriptor, 3, forumPostActions.followLabel);
         if (compositeEncoder.A(serialDescriptor, 4) || forumPostActions.shareIcon != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, forumPostActions.shareIcon);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, forumPostActions.shareIcon);
         }
         compositeEncoder.z(serialDescriptor, 5, forumPostActions.shareLabel);
         if (compositeEncoder.A(serialDescriptor, 6) || forumPostActions.defaultReaction != null) {

@@ -103,142 +103,172 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/wishlists/native/WishlistItemCardBase.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103276: for (var _fun103276_ip = 0;;) switch (_fun103276_ip) {
+        _fun87835: for (var _fun87835_ip = 0;;) switch (_fun87835_ip) {
             case 0:
-                var1 = arg0;
-                var4 = var1.onPress;
-                var11 = var1.renderPreview;
-                var12 = var1.backgroundColor;
-                var0 = var1.width;
-                var5 = var1.accessibilityElementsHidden;
-                var8 = var1.isOwned;
-                var3 = undefined;
-                if (!(var8 === var3)) {
-                    _fun103276_ip = 44;
-                    continue _fun103276
+                var0 = arg0;
+                var8 = var0.onPress;
+                var14 = var0.renderPreview;
+                var16 = var0.backgroundColor;
+                var2 = var0.width;
+                var7 = var0.accessibilityHidden;
+                var11 = var0.isOwned;
+                var4 = undefined;
+                if (!(var11 === var4)) {
+                    _fun87835_ip = 44;
+                    continue _fun87835
                 }
             case 42:
-                var8 = false;
+                var11 = false;
             case 44:
-                var1 = _closure1_slot7;
-                var7 = var1.bind(var3)();
-                var1 = null;
-                var1 = var1 != var0;
-                var14 = 170;
-                if (!var1) {
-                    _fun103276_ip = 70;
-                    continue _fun103276
+                var0 = _closure1_slot7;
+                var6 = var0.bind(var4)();
+                var0 = null;
+                var3 = var0 != var2;
+                var9 = 170;
+                if (!var3) {
+                    _fun87835_ip = 70;
+                    continue _fun87835
                 }
             case 67:
-                var14 = var0;
+                var9 = var2;
             case 70:
-                var2 = _closure1_slot5;
-                var1 = _closure1_slot4;
-                var0 = {};
-                var6 = _closure1_slot8;
-                var6 = var6.ownedOverlay;
-                var0.style = var6;
-                var6 = 'none';
-                var0.pointerEvents = var6;
-                var17 = _closure1_slot0;
-                var18 = _closure1_slot2;
-                var6 = 5;
-                var6 = var18[var6];
-                var6 = var17.bind(var3)(var6);
-                var9 = var6.CheckmarkLargeBoldIcon;
-                var6 = {};
+                var13 = _closure1_slot5;
+                var5 = _closure1_slot4;
+                var2 = {};
+                var3 = _closure1_slot8;
+                var3 = var3.ownedOverlay;
+                var2.style = var3;
+                var3 = 'none';
+                var2.pointerEvents = var3;
+                var18 = _closure1_slot0;
+                var19 = _closure1_slot2;
+                var3 = 5;
+                var3 = var19[var3];
+                var3 = var18.bind(var4)(var3);
+                var10 = var3.CheckmarkLargeBoldIcon;
+                var3 = {};
                 var15 = _closure1_slot1;
-                var10 = 4;
-                var10 = var18[var10];
-                var10 = var15.bind(var3)(var10);
-                var10 = var10.colors;
-                var10 = var10.WHITE;
-                var6.color = var10;
-                var10 = 'custom';
-                var6.size = var10;
-                var10 = {
+                var12 = 4;
+                var12 = var19[var12];
+                var12 = var15.bind(var4)(var12);
+                var12 = var12.colors;
+                var12 = var12.WHITE;
+                var3.color = var12;
+                var12 = 'custom';
+                var3.size = var12;
+                var12 = {
                     'width': 40,
                     'height': 40
                 };
-                var6.style = var10;
-                var10 = 6;
-                var15 = var18[var10];
-                var15 = var17.bind(var3)(var15);
-                var16 = var15.intl;
-                var15 = var16.string;
-                var10 = var18[var10];
-                var10 = var17.bind(var3)(var10);
-                var10 = var10.t;
-                var10 = var10["6cfuDj"];
-                var10 = var15.bind(var16)(var10);
-                var6.accessibilityLabel = var10;
-                var6 = var2.bind(var3)(var9, var6);
-                var0.children = var6;
-                var9 = var2.bind(var3)(var1, var0);
-                var1 = _closure1_slot3;
+                var3.style = var12;
+                var12 = 6;
+                var15 = var19[var12];
+                var15 = var18.bind(var4)(var15);
+                var17 = var15.intl;
+                var15 = var17.string;
+                var12 = var19[var12];
+                var12 = var18.bind(var4)(var12);
+                var12 = var12.t;
+                var12 = var12["6cfuDj"];
+                var12 = var15.bind(var17)(var12);
+                var3.accessibilityLabel = var12;
+                var3 = var13.bind(var4)(var10, var3);
+                var2.children = var3;
+                var12 = var13.bind(var4)(var5, var2);
+                var3 = _closure1_slot6;
+                var2 = {};
+                var15 = var6.cardContent;
+                var10 = new Array(2);
+                var10[0] = var15;
+                var15 = {};
+                var15.backgroundColor = var16;
+                var10[1] = var15;
+                var2.style = var10;
+                var10 = {};
+                var15 = var11;
+                if (!var11) {
+                    _fun87835_ip = 303;
+                    continue _fun87835
+                }
+            case 293:
+                var16 = _closure1_slot8;
+                var15 = var16.ownedCard;
+            case 303:
+                var10.style = var15;
+                var14 = var14.bind(var4)();
+                var10.children = var14;
+                var13 = var13.bind(var4)(var5, var10);
+                var10 = new Array(2);
+                var10[0] = var13;
+                if (!var11) {
+                    _fun87835_ip = 335;
+                    continue _fun87835
+                }
+            case 332:
+                var11 = var12;
+            case 335:
+                var10[1] = var11;
+                var2.children = var10;
+                var5 = var3.bind(var4)(var5, var2);
+                if (!(var0 != var8)) {
+                    _fun87835_ip = 438;
+                    continue _fun87835
+                }
+            case 353:
+                var3 = _closure1_slot5;
+                var2 = _closure1_slot3;
                 var0 = {};
-                var6 = 'button';
-                var0.accessibilityRole = var6;
-                var10 = var7.card;
+                var10 = 'button';
+                var0.accessibilityRole = var10;
+                var11 = var6.card;
+                var10 = new Array(2);
+                var10[0] = var11;
+                var11 = {};
+                var11.width = var9;
+                var10[1] = var11;
+                var0.style = var10;
+                var0.onPress = var8;
+                var0.accessibilityElementsHidden = var7;
+                var8 = 'auto';
+                if (!var7) {
+                    _fun87835_ip = 421;
+                    continue _fun87835
+                }
+            case 415:
+                var8 = 'no-hide-descendants';
+            case 421:
+                var0.importantForAccessibility = var8;
+                var0.children = var5;
+                var0 = var3.bind(var4)(var2, var0);
+                _fun87835_ip = 509;
+                continue _fun87835;
+            case 438:
+                var3 = _closure1_slot5;
+                var2 = _closure1_slot4;
+                var1 = {};
+                var8 = var6.card;
                 var6 = new Array(2);
-                var6[0] = var10;
-                var10 = {};
-                var10.width = var14;
-                var6[1] = var10;
-                var0.style = var6;
-                var0.onPress = var4;
-                var0.accessibilityElementsHidden = var5;
-                var4 = 'auto';
-                if (!var5) {
-                    _fun103276_ip = 315;
-                    continue _fun103276
+                var6[0] = var8;
+                var8 = {};
+                var8.width = var9;
+                var6[1] = var8;
+                var1.style = var6;
+                var1.accessibilityElementsHidden = var7;
+                var6 = 'auto';
+                if (!var7) {
+                    _fun87835_ip = 494;
+                    continue _fun87835
                 }
-            case 309:
-                var4 = 'no-hide-descendants';
-            case 315:
-                var0.importantForAccessibility = var4;
-                var6 = _closure1_slot6;
-                var5 = _closure1_slot4;
-                var4 = {};
-                var10 = var7.cardContent;
-                var7 = new Array(2);
-                var7[0] = var10;
-                var10 = {};
-                var10.backgroundColor = var12;
-                var7[1] = var10;
-                var4.style = var7;
-                var10 = _closure1_slot5;
-                var7 = {};
-                var12 = var8;
-                if (!var8) {
-                    _fun103276_ip = 380;
-                    continue _fun103276
-                }
-            case 370:
-                var13 = _closure1_slot8;
-                var12 = var13.ownedCard;
-            case 380:
-                var7.style = var12;
-                var11 = var11.bind(var3)();
-                var7.children = var11;
-                var10 = var10.bind(var3)(var5, var7);
-                var7 = new Array(2);
-                var7[0] = var10;
-                if (!var8) {
-                    _fun103276_ip = 412;
-                    continue _fun103276
-                }
-            case 409:
-                var8 = var9;
-            case 412:
-                var7[1] = var8;
-                var4.children = var7;
-                var4 = var6.bind(var3)(var5, var4);
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
+            case 488:
+                var6 = 'no-hide-descendants';
+            case 494:
+                var1.importantForAccessibility = var6;
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 509:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8311, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8355, 1234, 2]);

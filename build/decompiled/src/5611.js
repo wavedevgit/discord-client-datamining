@@ -1,468 +1,302 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var5 = {
-        'À': 'A',
-        'Á': 'A',
-        'Â': 'A',
-        'Ã': 'A',
-        'Ä': 'A',
-        'Å': 'A',
-        'Ấ': 'A',
-        'Ắ': 'A',
-        'Ẳ': 'A',
-        'Ẵ': 'A',
-        'Ặ': 'A',
-        'Æ': 'AE',
-        'Ầ': 'A',
-        'Ằ': 'A',
-        'Ȃ': 'A',
-        'Ç': 'C',
-        'Ḉ': 'C',
-        'È': 'E',
-        'É': 'E',
-        'Ê': 'E',
-        'Ë': 'E',
-        'Ế': 'E',
-        'Ḗ': 'E',
-        'Ề': 'E',
-        'Ḕ': 'E',
-        'Ḝ': 'E',
-        'Ȇ': 'E',
-        'Ì': 'I',
-        'Í': 'I',
-        'Î': 'I',
-        'Ï': 'I',
-        'Ḯ': 'I',
-        'Ȋ': 'I',
-        'Ð': 'D',
-        'Ñ': 'N',
-        'Ò': 'O',
-        'Ó': 'O',
-        'Ô': 'O',
-        'Õ': 'O',
-        'Ö': 'O',
-        'Ø': 'O',
-        'Ố': 'O',
-        'Ṍ': 'O',
-        'Ṓ': 'O',
-        'Ȏ': 'O',
-        'Ù': 'U',
-        'Ú': 'U',
-        'Û': 'U',
-        'Ü': 'U',
-        'Ý': 'Y',
-        'à': 'a',
-        'á': 'a',
-        'â': 'a',
-        'ã': 'a',
-        'ä': 'a',
-        'å': 'a',
-        'ấ': 'a',
-        'ắ': 'a',
-        'ẳ': 'a',
-        'ẵ': 'a',
-        'ặ': 'a',
-        'æ': 'ae',
-        'ầ': 'a',
-        'ằ': 'a',
-        'ȃ': 'a',
-        'ç': 'c',
-        'ḉ': 'c',
-        'è': 'e',
-        'é': 'e',
-        'ê': 'e',
-        'ë': 'e',
-        'ế': 'e',
-        'ḗ': 'e',
-        'ề': 'e',
-        'ḕ': 'e',
-        'ḝ': 'e',
-        'ȇ': 'e',
-        'ì': 'i',
-        'í': 'i',
-        'î': 'i',
-        'ï': 'i',
-        'ḯ': 'i',
-        'ȋ': 'i',
-        'ð': 'd',
-        'ñ': 'n',
-        'ò': 'o',
-        'ó': 'o',
-        'ô': 'o',
-        'õ': 'o',
-        'ö': 'o',
-        'ø': 'o',
-        'ố': 'o',
-        'ṍ': 'o',
-        'ṓ': 'o',
-        'ȏ': 'o',
-        'ù': 'u',
-        'ú': 'u',
-        'û': 'u',
-        'ü': 'u',
-        'ý': 'y',
-        'ÿ': 'y',
-        'Ā': 'A',
-        'ā': 'a',
-        'Ă': 'A',
-        'ă': 'a',
-        'Ą': 'A',
-        'ą': 'a',
-        'Ć': 'C',
-        'ć': 'c',
-        'Ĉ': 'C',
-        'ĉ': 'c',
-        'Ċ': 'C',
-        'ċ': 'c',
-        'Č': 'C',
-        'č': 'c',
-        'C̆': 'C',
-        'c̆': 'c',
-        'Ď': 'D',
-        'ď': 'd',
-        'Đ': 'D',
-        'đ': 'd',
-        'Ē': 'E',
-        'ē': 'e',
-        'Ĕ': 'E',
-        'ĕ': 'e',
-        'Ė': 'E',
-        'ė': 'e',
-        'Ę': 'E',
-        'ę': 'e',
-        'Ě': 'E',
-        'ě': 'e',
-        'Ĝ': 'G',
-        'Ǵ': 'G',
-        'ĝ': 'g',
-        'ǵ': 'g',
-        'Ğ': 'G',
-        'ğ': 'g',
-        'Ġ': 'G',
-        'ġ': 'g',
-        'Ģ': 'G',
-        'ģ': 'g',
-        'Ĥ': 'H',
-        'ĥ': 'h',
-        'Ħ': 'H',
-        'ħ': 'h',
-        'Ḫ': 'H',
-        'ḫ': 'h',
-        'Ĩ': 'I',
-        'ĩ': 'i',
-        'Ī': 'I',
-        'ī': 'i',
-        'Ĭ': 'I',
-        'ĭ': 'i',
-        'Į': 'I',
-        'į': 'i',
-        'İ': 'I',
-        'ı': 'i',
-        'Ĳ': 'IJ',
-        'ĳ': 'ij',
-        'Ĵ': 'J',
-        'ĵ': 'j',
-        'Ķ': 'K',
-        'ķ': 'k',
-        'Ḱ': 'K',
-        'ḱ': 'k',
-        'K̆': 'K',
-        'k̆': 'k',
-        'Ĺ': 'L',
-        'ĺ': 'l',
-        'Ļ': 'L',
-        'ļ': 'l',
-        'Ľ': 'L',
-        'ľ': 'l',
-        'Ŀ': 'L',
-        'ŀ': 'l',
-        'Ł': 'l',
-        'ł': 'l',
-        'Ḿ': 'M',
-        'ḿ': 'm',
-        'M̆': 'M',
-        'm̆': 'm',
-        'Ń': 'N',
-        'ń': 'n',
-        'Ņ': 'N',
-        'ņ': 'n',
-        'Ň': 'N',
-        'ň': 'n',
-        'ŉ': 'n',
-        'N̆': 'N',
-        'n̆': 'n',
-        'Ō': 'O',
-        'ō': 'o',
-        'Ŏ': 'O',
-        'ŏ': 'o',
-        'Ő': 'O',
-        'ő': 'o',
-        'Œ': 'OE',
-        'œ': 'oe',
-        'P̆': 'P',
-        'p̆': 'p',
-        'Ŕ': 'R',
-        'ŕ': 'r',
-        'Ŗ': 'R',
-        'ŗ': 'r',
-        'Ř': 'R',
-        'ř': 'r',
-        'R̆': 'R',
-        'r̆': 'r',
-        'Ȓ': 'R',
-        'ȓ': 'r',
-        'Ś': 'S',
-        'ś': 's',
-        'Ŝ': 'S',
-        'ŝ': 's',
-        'Ş': 'S',
-        'Ș': 'S',
-        'ș': 's',
-        'ş': 's',
-        'Š': 'S',
-        'š': 's',
-        'Ţ': 'T',
-        'ţ': 't',
-        'ț': 't',
-        'Ț': 'T',
-        'Ť': 'T',
-        'ť': 't',
-        'Ŧ': 'T',
-        'ŧ': 't',
-        'T̆': 'T',
-        't̆': 't',
-        'Ũ': 'U',
-        'ũ': 'u',
-        'Ū': 'U',
-        'ū': 'u',
-        'Ŭ': 'U',
-        'ŭ': 'u',
-        'Ů': 'U',
-        'ů': 'u',
-        'Ű': 'U',
-        'ű': 'u',
-        'Ų': 'U',
-        'ų': 'u',
-        'Ȗ': 'U',
-        'ȗ': 'u',
-        'V̆': 'V',
-        'v̆': 'v',
-        'Ŵ': 'W',
-        'ŵ': 'w',
-        'Ẃ': 'W',
-        'ẃ': 'w',
-        'X̆': 'X',
-        'x̆': 'x',
-        'Ŷ': 'Y',
-        'ŷ': 'y',
-        'Ÿ': 'Y',
-        'Y̆': 'Y',
-        'y̆': 'y',
-        'Ź': 'Z',
-        'ź': 'z',
-        'Ż': 'Z',
-        'ż': 'z',
-        'Ž': 'Z',
-        'ž': 'z',
-        'ſ': 's',
-        'ƒ': 'f',
-        'Ơ': 'O',
-        'ơ': 'o',
-        'Ư': 'U',
-        'ư': 'u',
-        'Ǎ': 'A',
-        'ǎ': 'a',
-        'Ǐ': 'I',
-        'ǐ': 'i',
-        'Ǒ': 'O',
-        'ǒ': 'o',
-        'Ǔ': 'U',
-        'ǔ': 'u',
-        'Ǖ': 'U',
-        'ǖ': 'u',
-        'Ǘ': 'U',
-        'ǘ': 'u',
-        'Ǚ': 'U',
-        'ǚ': 'u',
-        'Ǜ': 'U',
-        'ǜ': 'u',
-        'Ứ': 'U',
-        'ứ': 'u',
-        'Ṹ': 'U',
-        'ṹ': 'u',
-        'Ǻ': 'A',
-        'ǻ': 'a',
-        'Ǽ': 'AE',
-        'ǽ': 'ae',
-        'Ǿ': 'O',
-        'ǿ': 'o',
-        'Þ': 'TH',
-        'þ': 'th',
-        'Ṕ': 'P',
-        'ṕ': 'p',
-        'Ṥ': 'S',
-        'ṥ': 's',
-        'X́': 'X',
-        'x́': 'x',
-        'Ѓ': 'Г',
-        'ѓ': 'г',
-        'Ќ': 'К',
-        'ќ': 'к',
-        'A̋': 'A',
-        'a̋': 'a',
-        'E̋': 'E',
-        'e̋': 'e',
-        'I̋': 'I',
-        'i̋': 'i',
-        'Ǹ': 'N',
-        'ǹ': 'n',
-        'Ồ': 'O',
-        'ồ': 'o',
-        'Ṑ': 'O',
-        'ṑ': 'o',
-        'Ừ': 'U',
-        'ừ': 'u',
-        'Ẁ': 'W',
-        'ẁ': 'w',
-        'Ỳ': 'Y',
-        'ỳ': 'y',
-        'Ȁ': 'A',
-        'ȁ': 'a',
-        'Ȅ': 'E',
-        'ȅ': 'e',
-        'Ȉ': 'I',
-        'ȉ': 'i',
-        'Ȍ': 'O',
-        'ȍ': 'o',
-        'Ȑ': 'R',
-        'ȑ': 'r',
-        'Ȕ': 'U',
-        'ȕ': 'u',
-        'B̌': 'B',
-        'b̌': 'b',
-        'Č̣': 'C',
-        'č̣': 'c',
-        'Ê̌': 'E',
-        'ê̌': 'e',
-        'F̌': 'F',
-        'f̌': 'f',
-        'Ǧ': 'G',
-        'ǧ': 'g',
-        'Ȟ': 'H',
-        'ȟ': 'h',
-        'J̌': 'J',
-        'ǰ': 'j',
-        'Ǩ': 'K',
-        'ǩ': 'k',
-        'M̌': 'M',
-        'm̌': 'm',
-        'P̌': 'P',
-        'p̌': 'p',
-        'Q̌': 'Q',
-        'q̌': 'q',
-        'Ř̩': 'R',
-        'ř̩': 'r',
-        'Ṧ': 'S',
-        'ṧ': 's',
-        'V̌': 'V',
-        'v̌': 'v',
-        'W̌': 'W',
-        'w̌': 'w',
-        'X̌': 'X',
-        'x̌': 'x',
-        'Y̌': 'Y',
-        'y̌': 'y',
-        'A̧': 'A',
-        'a̧': 'a',
-        'B̧': 'B',
-        'b̧': 'b',
-        'Ḑ': 'D',
-        'ḑ': 'd',
-        'Ȩ': 'E',
-        'ȩ': 'e',
-        'Ɛ̧': 'E',
-        'ɛ̧': 'e',
-        'Ḩ': 'H',
-        'ḩ': 'h',
-        'I̧': 'I',
-        'i̧': 'i',
-        'Ɨ̧': 'I',
-        'ɨ̧': 'i',
-        'M̧': 'M',
-        'm̧': 'm',
-        'O̧': 'O',
-        'o̧': 'o',
-        'Q̧': 'Q',
-        'q̧': 'q',
-        'U̧': 'U',
-        'u̧': 'u',
-        'X̧': 'X',
-        'x̧': 'x',
-        'Z̧': 'Z',
-        'z̧': 'z'
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
+    var0 = function() {
+        _fun49523: for (var _fun49523_ip = 0;;) switch (_fun49523_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun49523_ip = 74;
+                continue _fun49523;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot9 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
     };
-    var7 = 'g';
-    var _closure1_slot0 = var5;
-    var1 = global;
-    var4 = var1.Object;
-    var3 = var4.keys;
-    var5 = var3.bind(var4)(var5);
-    var4 = var5.join;
-    var3 = '|';
-    var5 = var4.bind(var5)(var3);
-    var3 = var1.RegExp;
-    var4 = var3.prototype;
-    var4 = Object.create(var4, {
-        constructor: {
-            value: var3
-        }
-    });
-    var9 = var4;
-    var8 = var5;
-    var3 = new var9[var3](var8, var7, var6);
-    var3 = var3 instanceof Object ? var3 : var4;
-    var _closure1_slot1 = var3;
-    var4 = var1.RegExp;
-    var1 = var4.prototype;
-    var3 = Object.create(var1, {
-        constructor: {
-            value: var4
-        }
-    });
-    var7 = '';
-    var9 = var3;
-    var8 = var5;
-    var1 = new var9[var4](var8, var7, var6);
-    var1 = var1 instanceof Object ? var1 : var3;
-    var _closure1_slot2 = var1;
-    var1 = function arg0() {
-        var3 = arg0;
-        var2 = var3.replace;
-        var1 = _closure1_slot1;
-        var0 = function(arg0) { // Environment: var0
-            var1 = _closure1_slot0;
-            var0 = arg0;
-            var0 = var1[var0];
+    var _closure1_slot9 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 5;
+    var7 = var5[var3];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var7);
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot8 = var3;
+    var3 = 12;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() {
+            _fun49527: for (var _fun49527_ip = 0;;) switch (_fun49527_ip) {
+                case 0:
+                    var4 = this;
+                    var3 = undefined;
+                    var9 = undefined;
+                    var6 = _closure1_slot3;
+                    var2 = _closure2_slot0;
+                    var2 = var6.bind(var3)(var4, var2);
+                    var6 = arguments.length;
+                    var7 = global;
+                    var2 = var7.Array;
+                    var8 = var2.prototype;
+                    var8 = Object.create(var8, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var14 = var8;
+                    var13 = var6;
+                    var2 = new var14[var2](var13, var12);
+                    var8 = var2 instanceof Object ? var2 : var8;
+                    var2 = 0;
+                    var10 = var2 < var6;
+                    if (!var10) {
+                        _fun49527_ip = 87;
+                        continue _fun49527
+                    }
+                case 72:
+                    var10 = arguments[var2];
+                    var8[var2] = var10;
+                    var2 = var2 + 1;
+                    if (var2 < var6) {
+                        _fun49527_ip = 72;
+                        continue _fun49527
+                    }
+                case 87:
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var6 = var0.bind(var6)(var8);
+                    var0 = _closure1_slot6;
+                    var9 = var0.bind(var3)(var2);
+                    var2 = _closure1_slot5;
+                    var0 = _closure1_slot9;
+                    var0 = var0.bind(var3)();
+                    if (var0) {
+                        _fun49527_ip = 142;
+                        continue _fun49527
+                    }
+                case 129:
+                    var0 = var9.apply;
+                    var0 = var0.bind(var9)(var4, var6);
+                    _fun49527_ip = 181;
+                    continue _fun49527;
+                case 142:
+                    var8 = var7.Reflect;
+                    var7 = var8.construct;
+                    if (var6) {
+                        _fun49527_ip = 160;
+                        continue _fun49527
+                    }
+                case 156:
+                    var6 = new Array(0);
+                case 160:
+                    var5 = _closure1_slot6;
+                    var5 = var5.bind(var3)(var4);
+                    var5 = var5.constructor;
+                    var0 = var7.bind(var8)(var9, var6, var5);
+                case 181:
+                    var0 = var2.bind(var3)(var4, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function(arg0) { // Environment: var1
+                        _fun49528: for (var _fun49528_ip = 0;;) switch (_fun49528_ip) {
+                            case 0:
+                                var4 = arg0;
+                                var0 = var4.matrix;
+                                var0 = !var0;
+                                if (!var0) {
+                                    _fun49528_ip = 45;
+                                    continue _fun49528
+                                }
+                            case 15:
+                                var3 = _closure1_slot1;
+                                var2 = _closure1_slot2;
+                                var1 = 7;
+                                var1 = var2[var1];
+                                var2 = undefined;
+                                var1 = var3.bind(var2)(var1);
+                                var0 = var1.bind(var2)(var4);
+                            case 45:
+                                if (!var0) {
+                                    _fun49528_ip = 54;
+                                    continue _fun49528
+                                }
+                            case 48:
+                                var4.matrix = var0;
+                            case 54:
+                                var6 = _closure1_slot0;
+                                var8 = _closure1_slot2;
+                                var0 = 8;
+                                var2 = var8[var0];
+                                var0 = undefined;
+                                var3 = var6.bind(var0)(var2);
+                                var2 = var3.propsAndStyles;
+                                var3 = var2.bind(var3)(var4);
+                                var2 = global;
+                                var4 = var2.Object;
+                                var2 = var4.assign;
+                                var5 = 9;
+                                var5 = var8[var5];
+                                var6 = var6.bind(var0)(var5);
+                                var5 = var6.pickNotNil;
+                                var7 = _closure1_slot1;
+                                var1 = 10;
+                                var1 = var8[var1];
+                                var7 = var7.bind(var0)(var1);
+                                var1 = false;
+                                var1 = var7.bind(var0)(var3, var1);
+                                var1 = var5.bind(var6)(var1);
+                                var1 = var2.bind(var4)(var3, var1);
+                                var2 = _closure3_slot0;
+                                var2 = var2.root;
+                                if (!var2) {
+                                    _fun49528_ip = 193;
+                                    continue _fun49528
+                                }
+                            case 172:
+                                var1 = _closure3_slot0;
+                                var2 = var1.root;
+                                var1 = var2.setNativeProps;
+                                var1 = var1.bind(var2)(var3);
+                            case 193:
+                                return var0;
+                        }
+                    };
+                    var0.setNativeProps = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var5 = _closure1_slot7;
+        var2 = undefined;
+        var4 = arg0;
+        var4 = var5.bind(var2)(var3, var4);
+        var1 = _closure1_slot4;
+        var4 = {};
+        var5 = 'render';
+        var4.key = var5;
+        var0 = function() {
+            var2 = this;
+            var6 = _closure1_slot0;
+            var5 = _closure1_slot2;
+            var0 = 8;
+            var4 = var5[var0];
+            var3 = undefined;
+            var7 = var6.bind(var3)(var4);
+            var6 = var7.propsAndStyles;
+            var4 = var2.props;
+            var11 = var6.bind(var7)(var4);
+            var4 = _closure1_slot1;
+            var0 = var5[var0];
+            var7 = var4.bind(var3)(var0);
+            var0 = global;
+            var10 = var0.Object;
+            var9 = var10.assign;
+            var8 = {};
+            var6 = {
+                'x': null,
+                'y': null
+            };
+            var6 = var9.bind(var10)(var8, var11, var6);
+            var6 = var7.bind(var3)(var6, var2);
+            var9 = var0.Object;
+            var8 = var9.assign;
+            var7 = 10;
+            var7 = var5[var7];
+            var10 = var4.bind(var3)(var7);
+            var7 = false;
+            var7 = var10.bind(var3)(var11, var7);
+            var7 = var8.bind(var9)(var6, var7);
+            var2 = var2.refMethod;
+            var6.ref = var2;
+            var2 = _closure1_slot8;
+            var1 = 11;
+            var1 = var5[var1];
+            var1 = var4.bind(var3)(var1);
+            var5 = var0.Object;
+            var4 = var5.assign;
+            var0 = {};
+            var0 = var4.bind(var5)(var0, var6);
+            var0 = var2.bind(var3)(var1, var0);
             return var0;
         };
-        var0 = var2.bind(var3)(var1, var0);
+        var4.value = var0;
+        var0 = new Array(1);
+        var0[0] = var4;
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var0.exports = var1;
-    var3 = var0.exports;
-    var2 = function arg0() {
-        var2 = arg0;
-        var1 = var2.match;
-        var0 = _closure1_slot2;
-        var0 = var1.bind(var2)(var0);
-        var0 = !var0;
-        var0 = !var0;
-        return var0;
-    };
-    var3.has = var2;
-    var0 = var0.exports;
-    var0.remove = var1;
-    var0 = undefined;
+    var1 = var1.bind(var0)(var3);
+    var3 = 'TSpan';
+    var1.displayName = var3;
+    var3 = 10;
+    var3 = var5[var3];
+    var4 = var4.bind(var0)(var3);
+    var3 = var4.setTSpan;
+    var3 = var3.bind(var4)(var1);
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5520, 5527, 5528, 5534, 5612, 5536]);

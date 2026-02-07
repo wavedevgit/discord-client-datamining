@@ -3,10 +3,10 @@ package ng;
 public final class pf {
 
     /* renamed from: a  reason: collision with root package name */
-    private xe f40184a;
+    private xe f40232a;
 
     public final pf b(xe xeVar) {
-        this.f40184a = xeVar;
+        this.f40232a = xeVar;
         return this;
     }
 

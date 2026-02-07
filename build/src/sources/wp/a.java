@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f54050a;
+    private final c f54098a;
 
     public a(c sdkFilesManager) {
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f54050a = sdkFilesManager;
+        this.f54098a = sdkFilesManager;
     }
 
     public final c a() {
-        return this.f54050a;
+        return this.f54098a;
     }
 }

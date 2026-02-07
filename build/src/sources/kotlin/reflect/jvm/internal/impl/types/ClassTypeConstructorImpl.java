@@ -14,13 +14,13 @@ import org.jetbrains.annotations.NotNull;
 public class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassDescriptor f34554d;
+    private final ClassDescriptor f34602d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f34555e;
+    private final List f34603e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Collection f34556f;
+    private final Collection f34604f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ClassTypeConstructorImpl(@NotNull ClassDescriptor classDescriptor, @NotNull List<? extends TypeParameterDescriptor> list, @NotNull Collection<KotlinType> collection, @NotNull StorageManager storageManager) {
@@ -37,9 +37,9 @@ public class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
         if (storageManager == null) {
             A(3);
         }
-        this.f34554d = classDescriptor;
-        this.f34555e = Collections.unmodifiableList(new ArrayList(list));
-        this.f34556f = Collections.unmodifiableCollection(collection);
+        this.f34602d = classDescriptor;
+        this.f34603e = Collections.unmodifiableList(new ArrayList(list));
+        this.f34604f = Collections.unmodifiableCollection(collection);
     }
 
     private static /* synthetic */ void A(int i10) {
@@ -89,7 +89,7 @@ public class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public List<TypeParameterDescriptor> getParameters() {
-        List<TypeParameterDescriptor> list = this.f34555e;
+        List<TypeParameterDescriptor> list = this.f34603e;
         if (list == null) {
             A(4);
         }
@@ -103,7 +103,7 @@ public class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor
     protected Collection l() {
-        Collection collection = this.f34556f;
+        Collection collection = this.f34604f;
         if (collection == null) {
             A(6);
         }
@@ -120,14 +120,14 @@ public class ClassTypeConstructorImpl extends AbstractClassTypeConstructor {
     }
 
     public String toString() {
-        return DescriptorUtils.getFqName(this.f34554d).asString();
+        return DescriptorUtils.getFqName(this.f34602d).asString();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.AbstractClassTypeConstructor, kotlin.reflect.jvm.internal.impl.types.ClassifierBasedTypeConstructor, kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     /* renamed from: getDeclarationDescriptor */
     public ClassDescriptor mo1199getDeclarationDescriptor() {
-        ClassDescriptor classDescriptor = this.f34554d;
+        ClassDescriptor classDescriptor = this.f34602d;
         if (classDescriptor == null) {
             A(5);
         }

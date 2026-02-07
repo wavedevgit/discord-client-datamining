@@ -8,7 +8,7 @@ final class e implements Sequence, c {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f34874a = new e();
+    public static final e f34922a = new e();
 
     private e() {
     }
@@ -16,11 +16,11 @@ final class e implements Sequence, c {
     @Override // kotlin.sequences.c
     /* renamed from: b */
     public e a(int i10) {
-        return f34874a;
+        return f34922a;
     }
 
     @Override // kotlin.sequences.Sequence
     public Iterator iterator() {
-        return e0.f32049d;
+        return e0.f32097d;
     }
 }

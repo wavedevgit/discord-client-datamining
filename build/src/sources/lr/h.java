@@ -7,26 +7,26 @@ import android.graphics.RectF;
 abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Rect f36562a = new Rect();
+    private static final Rect f36610a = new Rect();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final RectF f36563b = new RectF();
+    private static final RectF f36611b = new RectF();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Paint f36564c = new Paint(1);
+    private static final Paint f36612c = new Paint(1);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Paint a() {
-        return f36564c;
+        return f36612c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Rect b() {
-        return f36562a;
+        return f36610a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static RectF c() {
-        return f36563b;
+        return f36611b;
     }
 }

@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot8 = var4;
     var4 = var7.memo;
     var3 = function(arg0) { // Environment: var3
-        _fun75886: for (var _fun75886_ip = 0;;) switch (_fun75886_ip) {
+        _fun76337: for (var _fun76337_ip = 0;;) switch (_fun76337_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.disabled;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.useHasReachedEnd;
                 var0 = var0.bind(var1)();
                 if (var0) {
-                    _fun75886_ip = 114;
-                    continue _fun75886
+                    _fun76337_ip = 114;
+                    continue _fun76337
                 }
             case 60:
                 var2 = _closure1_slot6;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.color;
                 var0.color = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun75886_ip = 416;
-                continue _fun75886;
+                _fun76337_ip = 416;
+                continue _fun76337;
             case 114:
                 var3 = _closure1_slot7;
                 var2 = _closure1_slot3;
@@ -205,4 +205,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.FOOTER_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9623, 3943, 1234, 4085, 9629, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 9668, 3942, 1234, 4084, 9674, 2]);

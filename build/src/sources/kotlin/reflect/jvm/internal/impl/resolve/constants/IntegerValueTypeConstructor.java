@@ -17,18 +17,18 @@ import org.jetbrains.annotations.NotNull;
 public final class IntegerValueTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f34149a;
+    private final long f34197a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f34150b;
+    private final ModuleDescriptor f34198b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ArrayList f34151c;
+    private final ArrayList f34199c;
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return this.f34150b.getBuiltIns();
+        return this.f34198b.getBuiltIns();
     }
 
     public Void getDeclarationDescriptor() {
@@ -44,7 +44,7 @@ public final class IntegerValueTypeConstructor implements TypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public Collection<KotlinType> getSupertypes() {
-        return this.f34151c;
+        return this.f34199c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -61,7 +61,7 @@ public final class IntegerValueTypeConstructor implements TypeConstructor {
 
     @NotNull
     public String toString() {
-        return "IntegerValueType(" + this.f34149a + ')';
+        return "IntegerValueType(" + this.f34197a + ')';
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor

@@ -5,14 +5,14 @@ import android.content.Context;
 public final class o implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f52019a;
+    private final l f52067a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f52020b;
+    private final br.h f52068b;
 
     public o(l lVar, br.h hVar) {
-        this.f52019a = lVar;
-        this.f52020b = hVar;
+        this.f52067a = lVar;
+        this.f52068b = hVar;
     }
 
     public static o a(l lVar, br.h hVar) {
@@ -26,6 +26,6 @@ public final class o implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public v4.h get() {
-        return c(this.f52019a, (Context) this.f52020b.get());
+        return c(this.f52067a, (Context) this.f52068b.get());
     }
 }

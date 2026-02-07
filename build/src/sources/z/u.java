@@ -15,22 +15,22 @@ import z.y0;
 public class u {
 
     /* renamed from: b  reason: collision with root package name */
-    androidx.camera.core.q f55781b;
+    androidx.camera.core.q f55829b;
 
     /* renamed from: c  reason: collision with root package name */
-    androidx.camera.core.q f55782c;
+    androidx.camera.core.q f55830c;
 
     /* renamed from: d  reason: collision with root package name */
-    private o0.a f55783d;
+    private o0.a f55831d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c f55784e;
+    private c f55832e;
 
     /* renamed from: a  reason: collision with root package name */
-    p0 f55780a = null;
+    p0 f55828a = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private e0 f55785f = null;
+    private e0 f55833f = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -39,7 +39,7 @@ public class u {
         }
 
         public static /* synthetic */ void e(a aVar) {
-            p0 p0Var = u.this.f55780a;
+            p0 p0Var = u.this.f55828a;
             if (p0Var != null) {
                 p0Var.n();
             }
@@ -61,13 +61,13 @@ public class u {
     public static abstract class c {
 
         /* renamed from: b  reason: collision with root package name */
-        private a0.w0 f55790b;
+        private a0.w0 f55838b;
 
         /* renamed from: a  reason: collision with root package name */
-        private a0.k f55789a = new a();
+        private a0.k f55837a = new a();
 
         /* renamed from: c  reason: collision with root package name */
-        private a0.w0 f55791c = null;
+        private a0.w0 f55839c = null;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a extends a0.k {
@@ -82,7 +82,7 @@ public class u {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a0.k a() {
-            return this.f55789a;
+            return this.f55837a;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -105,7 +105,7 @@ public class u {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a0.w0 h() {
-            return this.f55791c;
+            return this.f55839c;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -116,7 +116,7 @@ public class u {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a0.w0 k() {
-            a0.w0 w0Var = this.f55790b;
+            a0.w0 w0Var = this.f55838b;
             Objects.requireNonNull(w0Var);
             return w0Var;
         }
@@ -125,28 +125,28 @@ public class u {
         public abstract boolean l();
 
         void n(a0.k kVar) {
-            this.f55789a = kVar;
+            this.f55837a = kVar;
         }
 
         void o(Surface surface, Size size, int i10) {
-            this.f55791c = new k1(surface, size, i10);
+            this.f55839c = new k1(surface, size, i10);
         }
 
         void p(Surface surface) {
             boolean z10;
-            if (this.f55790b == null) {
+            if (this.f55838b == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "The surface is already set.");
-            this.f55790b = new k1(surface, j(), d());
+            this.f55838b = new k1(surface, j(), d());
         }
     }
 
     public static /* synthetic */ void a(u uVar, p0 p0Var) {
         uVar.k(p0Var);
-        uVar.f55785f.h(p0Var);
+        uVar.f55833f.h(p0Var);
     }
 
     public static /* synthetic */ void b(u uVar, j1 j1Var) {
@@ -169,12 +169,12 @@ public class u {
                 uVar.j(b10);
                 return;
             }
-            p0 p0Var = uVar.f55780a;
+            p0 p0Var = uVar.f55828a;
             if (p0Var != null) {
                 uVar.o(y0.b.c(p0Var.e(), new x.o0(2, "Failed to acquire latest image", null)));
             }
         } catch (IllegalStateException e10) {
-            p0 p0Var2 = uVar.f55780a;
+            p0 p0Var2 = uVar.f55828a;
             if (p0Var2 != null) {
                 uVar.o(y0.b.c(p0Var2.e(), new x.o0(2, "Failed to acquire latest image", e10)));
             }
@@ -196,23 +196,23 @@ public class u {
 
     private void i(androidx.camera.core.n nVar) {
         b0.p.a();
-        o0.a aVar = this.f55783d;
+        o0.a aVar = this.f55831d;
         Objects.requireNonNull(aVar);
-        aVar.a().accept(o0.b.c(this.f55780a, nVar));
-        p0 p0Var = this.f55780a;
-        this.f55780a = null;
+        aVar.a().accept(o0.b.c(this.f55828a, nVar));
+        p0 p0Var = this.f55828a;
+        this.f55828a = null;
         p0Var.q();
     }
 
     private void l(androidx.camera.core.n nVar) {
-        if (this.f55780a == null) {
+        if (this.f55828a == null) {
             x.y0.l("CaptureNode", "Postview image is closed due to request completed or aborted");
             nVar.close();
             return;
         }
-        o0.a aVar = this.f55783d;
+        o0.a aVar = this.f55831d;
         Objects.requireNonNull(aVar);
-        aVar.d().accept(o0.b.c(this.f55780a, nVar));
+        aVar.d().accept(o0.b.c(this.f55828a, nVar));
     }
 
     private void n(c cVar, final androidx.camera.core.q qVar, final androidx.camera.core.q qVar2) {
@@ -237,21 +237,21 @@ public class u {
     public int h() {
         boolean z10;
         b0.p.a();
-        if (this.f55781b != null) {
+        if (this.f55829b != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.j(z10, "The ImageReader is not initialized.");
-        return this.f55781b.i();
+        return this.f55829b.i();
     }
 
     void j(androidx.camera.core.n nVar) {
         b0.p.a();
-        if (this.f55780a == null) {
+        if (this.f55828a == null) {
             x.y0.l("CaptureNode", "Discarding ImageProxy which was inadvertently acquired: " + nVar);
             nVar.close();
-        } else if (((Integer) nVar.E().c().d(this.f55780a.i())) == null) {
+        } else if (((Integer) nVar.E().c().d(this.f55828a.i())) == null) {
             x.y0.l("CaptureNode", "Discarding ImageProxy which was acquired for aborted request");
             nVar.close();
         } else {
@@ -274,38 +274,38 @@ public class u {
             z11 = true;
         }
         b2.e.j(z11, "Too many acquire images. Close image to be able to process next.");
-        this.f55780a = p0Var;
+        this.f55828a = p0Var;
         d0.n.j(p0Var.a(), new b(p0Var), c0.a.a());
     }
 
     public void m() {
         b0.p.a();
-        c cVar = this.f55784e;
+        c cVar = this.f55832e;
         Objects.requireNonNull(cVar);
-        androidx.camera.core.q qVar = this.f55781b;
+        androidx.camera.core.q qVar = this.f55829b;
         Objects.requireNonNull(qVar);
-        n(cVar, qVar, this.f55782c);
+        n(cVar, qVar, this.f55830c);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o(y0.b bVar) {
         b0.p.a();
-        p0 p0Var = this.f55780a;
+        p0 p0Var = this.f55828a;
         if (p0Var != null && p0Var.e() == bVar.b()) {
-            this.f55780a.l(bVar.a());
+            this.f55828a.l(bVar.a());
         }
     }
 
     public void p(e.a aVar) {
         boolean z10;
         b0.p.a();
-        if (this.f55781b != null) {
+        if (this.f55829b != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.j(z10, "The ImageReader is not initialized.");
-        this.f55781b.k(aVar);
+        this.f55829b.k(aVar);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -313,13 +313,13 @@ public class u {
         boolean z10;
         Consumer consumer;
         e0 e0Var;
-        if (this.f55784e == null && this.f55781b == null) {
+        if (this.f55832e == null && this.f55829b == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         b2.e.j(z10, "CaptureNode does not support recreation yet.");
-        this.f55784e = cVar;
+        this.f55832e = cVar;
         Size j10 = cVar.j();
         int d10 = cVar.d();
         boolean l10 = cVar.l();
@@ -338,7 +338,7 @@ public class u {
         } else {
             cVar.c();
             e0 e0Var2 = new e0(g(null, j10.getWidth(), j10.getHeight(), d10));
-            this.f55785f = e0Var2;
+            this.f55833f = e0Var2;
             consumer = new Consumer() { // from class: z.n
                 @Override // androidx.core.util.Consumer
                 public final void accept(Object obj) {
@@ -351,7 +351,7 @@ public class u {
         Surface surface = e0Var.getSurface();
         Objects.requireNonNull(surface);
         cVar.p(surface);
-        this.f55781b = new androidx.camera.core.q(e0Var);
+        this.f55829b = new androidx.camera.core.q(e0Var);
         e0Var.e(new j1.a() { // from class: z.o
             @Override // a0.j1.a
             public final void a(j1 j1Var) {
@@ -367,7 +367,7 @@ public class u {
                     u.b(u.this, j1Var);
                 }
             }, c0.a.d());
-            this.f55782c = new androidx.camera.core.q(g10);
+            this.f55830c = new androidx.camera.core.q(g10);
             cVar.o(g10.getSurface(), cVar.g(), cVar.f());
         }
         cVar.i().a(consumer);
@@ -378,7 +378,7 @@ public class u {
             }
         });
         o0.a e10 = o0.a.e(cVar.d(), cVar.e());
-        this.f55783d = e10;
+        this.f55831d = e10;
         return e10;
     }
 
@@ -387,21 +387,21 @@ public class u {
     public class b implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ p0 f55787a;
+        final /* synthetic */ p0 f55835a;
 
         b(p0 p0Var) {
-            this.f55787a = p0Var;
+            this.f55835a = p0Var;
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
             b0.p.a();
-            if (this.f55787a == u.this.f55780a) {
-                x.y0.l("CaptureNode", "request aborted, id=" + u.this.f55780a.e());
-                if (u.this.f55785f != null) {
-                    u.this.f55785f.i();
+            if (this.f55835a == u.this.f55828a) {
+                x.y0.l("CaptureNode", "request aborted, id=" + u.this.f55828a.e());
+                if (u.this.f55833f != null) {
+                    u.this.f55833f.i();
                 }
-                u.this.f55780a = null;
+                u.this.f55828a = null;
             }
         }
 

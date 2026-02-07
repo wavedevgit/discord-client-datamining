@@ -10,13 +10,13 @@ import kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectCla
 public abstract class y2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ConcurrentMap f35484a = new ConcurrentHashMap();
+    private static final ConcurrentMap f35532a = new ConcurrentHashMap();
 
     public static final RuntimeModuleData a(Class cls) {
         Intrinsics.checkNotNullParameter(cls, "<this>");
         ClassLoader safeClassLoader = ReflectClassUtilKt.getSafeClassLoader(cls);
         k3 k3Var = new k3(safeClassLoader);
-        ConcurrentMap concurrentMap = f35484a;
+        ConcurrentMap concurrentMap = f35532a;
         WeakReference weakReference = (WeakReference) concurrentMap.get(k3Var);
         if (weakReference != null) {
             RuntimeModuleData runtimeModuleData = (RuntimeModuleData) weakReference.get();
@@ -28,7 +28,7 @@ public abstract class y2 {
         RuntimeModuleData create = RuntimeModuleData.Companion.create(safeClassLoader);
         while (true) {
             try {
-                ConcurrentMap concurrentMap2 = f35484a;
+                ConcurrentMap concurrentMap2 = f35532a;
                 WeakReference weakReference2 = (WeakReference) concurrentMap2.putIfAbsent(k3Var, new WeakReference(create));
                 if (weakReference2 == null) {
                     return create;

@@ -183,7 +183,7 @@ public final class d extends FrameLayout {
         SimpleExoPlayer simpleExoPlayer = this.f8217q;
         if (simpleExoPlayer != null) {
             je.m t02 = simpleExoPlayer.t0();
-            for (int i10 = 0; i10 < t02.f29855a; i10++) {
+            for (int i10 = 0; i10 < t02.f29903a; i10++) {
                 if (this.f8217q.w0(i10) == 2 && t02.a(i10) != null) {
                     return;
                 }

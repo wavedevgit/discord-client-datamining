@@ -42,14 +42,14 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
             if (this.label == 0) {
                 kotlin.c.b(obj);
                 this.this$0.clearAnimation();
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -147,7 +147,7 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
         L8b:
             return r0
         L8c:
-            kotlin.Unit r12 = kotlin.Unit.f32008a
+            kotlin.Unit r12 = kotlin.Unit.f32056a
             return r12
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.sticker.sticker_types.RLottieImageView$fetchSticker$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -155,6 +155,6 @@ public final class RLottieImageView$fetchSticker$1 extends k implements Function
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((RLottieImageView$fetchSticker$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -10,18 +10,18 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class r implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f29271a;
+    private final TextInputLayout f29319a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputLayout f29272b;
+    public final TextInputLayout f29320b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final AutoCompleteTextView f29273c;
+    public final AutoCompleteTextView f29321c;
 
     private r(TextInputLayout textInputLayout, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView) {
-        this.f29271a = textInputLayout;
-        this.f29272b = textInputLayout2;
-        this.f29273c = autoCompleteTextView;
+        this.f29319a = textInputLayout;
+        this.f29320b = textInputLayout2;
+        this.f29321c = autoCompleteTextView;
     }
 
     public static r a(View view) {
@@ -49,6 +49,6 @@ public final class r implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public TextInputLayout getRoot() {
-        return this.f29271a;
+        return this.f29319a;
     }
 }

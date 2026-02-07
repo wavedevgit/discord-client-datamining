@@ -3,21 +3,21 @@ package te;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f50592a;
+    private final String f50640a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50593b;
+    private final int f50641b;
 
     public c(String str, int i10) {
-        this.f50592a = str;
-        this.f50593b = i10;
+        this.f50640a = str;
+        this.f50641b = i10;
     }
 
     public String a() {
-        return this.f50592a;
+        return this.f50640a;
     }
 
     public int b() {
-        return this.f50593b;
+        return this.f50641b;
     }
 }

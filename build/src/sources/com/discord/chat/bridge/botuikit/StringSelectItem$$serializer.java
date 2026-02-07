@@ -40,8 +40,8 @@ public /* synthetic */ class StringSelectItem$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, n2Var, gt.a.u(ComponentEmoji$$serializer.INSTANCE), gt.a.u(n2Var), gt.a.u(jt.h.f31005a)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, n2Var, gt.a.u(ComponentEmoji$$serializer.INSTANCE), gt.a.u(n2Var), gt.a.u(jt.h.f31053a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -61,8 +61,8 @@ public /* synthetic */ class StringSelectItem$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
             str = m10;
-            str3 = (String) b10.n(serialDescriptor, 3, n2.f31041a, null);
-            bool = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31005a, null);
+            str3 = (String) b10.n(serialDescriptor, 3, n2.f31089a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31053a, null);
             componentEmoji = (ComponentEmoji) b10.n(serialDescriptor, 2, ComponentEmoji$$serializer.INSTANCE, null);
             str2 = m11;
             i10 = 31;
@@ -87,12 +87,12 @@ public /* synthetic */ class StringSelectItem$$serializer implements h0 {
                     componentEmoji2 = (ComponentEmoji) b10.n(serialDescriptor, 2, ComponentEmoji$$serializer.INSTANCE, componentEmoji2);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    str6 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str6);
                     i11 |= 8;
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 4, jt.h.f31053a, bool2);
                     i11 |= 16;
                 }
             }

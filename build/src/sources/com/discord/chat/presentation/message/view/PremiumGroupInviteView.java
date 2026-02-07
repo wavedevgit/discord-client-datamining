@@ -42,7 +42,7 @@ public final class PremiumGroupInviteView extends CardView {
     public static final Unit bind$lambda$4$lambda$3(Function2 function2, PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(premiumGroupInviteMessageAccessory.mo536getMessageId3Eiw7ao()), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void bind(@NotNull final PremiumGroupInviteMessageAccessory accessory, @NotNull final Function2<? super MessageId, ? super LinkContentNode, Unit> onTapLink) {

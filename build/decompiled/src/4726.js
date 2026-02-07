@@ -4,48 +4,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = metroImportDefault;
     var2 = exports;
     var7 = dependencyMap;
-    var0 = function() {
-        _fun43704: for (var _fun43704_ip = 0;;) switch (_fun43704_ip) {
-            case 0:
-            case 2: // try_start_0
-                var1 = global;
-                var2 = var1.Boolean;
-                var2 = var2.prototype;
-                var3 = var2.valueOf;
-                var2 = var3.call;
-                var7 = var1.Reflect;
-                var6 = var7.construct;
-                var5 = var1.Boolean;
-                var4 = new Array(0);
-                var1 = function() { // Environment: var0
-                    var0 = undefined;
-                    return var0;
-                };
-                var1 = var6.bind(var7)(var5, var4, var1);
-                var1 = var2.bind(var3)(var1);
-                var1 = !var1;
-                var _closure2_slot0 = var1;
-            case 70: // try_end0
-                _fun43704_ip = 74;
-                continue _fun43704;
-            case 72: // catch_target0
-                CatchBlockStart(arg_register = 1);
-            case 74:
-                var1 = function() {
-                    var0 = _closure2_slot0;
-                    var0 = !var0;
-                    var0 = !var0;
-                    return var0;
-                };
-                _closure1_slot13 = var1;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                return var0;
-        }
-    };
-    var _closure1_slot13 = var0;
-    var0 = ['maskElement', 'children'];
-    var _closure1_slot0 = var0;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var7;
+    var0 = ['onPressIn', 'onPressOut', 'android_ripple', 'pressColor', 'pressOpacity', 'style'];
+    var _closure1_slot2 = var0;
     var0 = global;
     var8 = var0.Object;
     var5 = var8.defineProperty;
@@ -58,217 +20,192 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var7[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
+    var _closure1_slot3 = var3;
     var3 = 1;
     var3 = var7[var3];
     var3 = var4.bind(var0)(var3);
-    var _closure1_slot2 = var3;
+    var _closure1_slot4 = var3;
     var3 = 2;
-    var3 = var7[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot3 = var3;
+    var4 = var7[var3];
+    var3 = metroImportAll;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var7[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot4 = var3;
-    var3 = 4;
-    var3 = var7[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot5 = var3;
-    var3 = 5;
-    var3 = var7[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot6 = var3;
-    var3 = 6;
-    var4 = var7[var3];
-    var3 = arg3;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot7 = var3;
-    var4 = 7;
-    var4 = var7[var4];
-    var4 = var6.bind(var0)(var4);
-    var5 = var4.View;
-    var _closure1_slot8 = var5;
-    var5 = var4.StyleSheet;
-    var _closure1_slot9 = var5;
-    var5 = var4.requireNativeComponent;
-    var4 = 8;
-    var4 = var7[var4];
-    var4 = var6.bind(var0)(var4);
-    var6 = var4.jsx;
-    var _closure1_slot10 = var6;
-    var4 = var4.jsxs;
-    var _closure1_slot11 = var4;
-    var4 = 'RNCMaskedView';
-    var4 = var5.bind(var0)(var4);
-    var _closure1_slot12 = var4;
-    var3 = var3.Component;
-    var1 = function(arg0) { // Environment: var1
-        var3 = function() {
-            _fun43708: for (var _fun43708_ip = 0;;) switch (_fun43708_ip) {
-                case 0:
-                    var3 = this;
-                    var2 = undefined;
-                    var8 = undefined;
-                    var5 = _closure1_slot2;
-                    var1 = _closure2_slot0;
-                    var1 = var5.bind(var2)(var3, var1);
-                    var5 = arguments.length;
-                    var6 = global;
-                    var1 = var6.Array;
-                    var7 = var1.prototype;
-                    var7 = Object.create(var7, {
-                        constructor: {
-                            value: var1
-                        }
-                    });
-                    var13 = var7;
-                    var12 = var5;
-                    var1 = new var13[var1](var12, var11);
-                    var7 = var1 instanceof Object ? var1 : var7;
-                    var1 = 0;
-                    var9 = var1 < var5;
-                    if (!var9) {
-                        _fun43708_ip = 85;
-                        continue _fun43708
+    var4 = var6.bind(var0)(var3);
+    var3 = var4.Platform;
+    var4 = var4.Pressable;
+    var5 = 4;
+    var5 = var7[var5];
+    var5 = var6.bind(var0)(var5);
+    var5 = var5.jsx;
+    var _closure1_slot6 = var5;
+    var _closure1_slot7 = var4;
+    var4 = var3.Version;
+    var3 = 21;
+    var3 = var4 >= var3;
+    var _closure1_slot8 = var3;
+    var1 = function arg0() {
+        _fun43718: for (var _fun43718_ip = 0;;) switch (_fun43718_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = var2.onPressIn;
+                var _closure2_slot0 = var0;
+                var0 = var2.onPressOut;
+                var _closure2_slot1 = var0;
+                var15 = var2.android_ripple;
+                var16 = var2.pressColor;
+                var1 = var2.pressOpacity;
+                var0 = 0.3;
+                var3 = undefined;
+                if (!(var3 !== var1)) {
+                    _fun43718_ip = 62;
+                    continue _fun43718
+                }
+            case 59:
+                var0 = var1;
+            case 62:
+                var _closure2_slot2 = var0;
+                var8 = var2.style;
+                var1 = _closure1_slot4;
+                var0 = _closure1_slot2;
+                var6 = var1.bind(var3)(var2, var0);
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 5;
+                var0 = var2[var0];
+                var1 = var1.bind(var3)(var0);
+                var0 = var1.useTheme;
+                var0 = var0.bind(var1)();
+                var18 = var0.dark;
+                var1 = _closure1_slot5;
+                var0 = var1.useState;
+                var7 = 1;
+                var2 = var0.bind(var1)(var7);
+                var1 = _closure1_slot3;
+                var0 = 2;
+                var0 = var1.bind(var3)(var2, var0);
+                var1 = 0;
+                var10 = var0[var1];
+                var0 = var0[var7];
+                var _closure2_slot3 = var0;
+                var0 = function arg0, arg1() {
+                    _fun43719: for (var _fun43719_ip = 0;;) switch (_fun43719_ip) {
+                        case 0:
+                            var0 = _closure1_slot8;
+                            if (var0) {
+                                _fun43719_ip = 27;
+                                continue _fun43719
+                            }
+                        case 10:
+                            var2 = _closure2_slot3;
+                            var1 = undefined;
+                            var0 = arg0;
+                            var0 = var2.bind(var1)(var0);
+                        case 27:
+                            var0 = undefined;
+                            return var0;
                     }
-                case 70:
-                    var9 = arguments[var1];
-                    var7[var1] = var9;
-                    var1 = var1 + 1;
-                    if (var1 < var5) {
-                        _fun43708_ip = 70;
-                        continue _fun43708
+                };
+                var _closure2_slot4 = var0;
+                var2 = _closure1_slot6;
+                var1 = _closure1_slot7;
+                var12 = global;
+                var5 = var12.Object;
+                var4 = var5.assign;
+                var0 = {};
+                var13 = function arg0() {
+                    _fun43720: for (var _fun43720_ip = 0;;) switch (_fun43720_ip) {
+                        case 0:
+                            var3 = _closure2_slot4;
+                            var2 = _closure2_slot2;
+                            var0 = undefined;
+                            var2 = var3.bind(var0)(var2);
+                            var3 = _closure2_slot0;
+                            var2 = null;
+                            if (!(var2 != var3)) {
+                                _fun43720_ip = 40;
+                                continue _fun43720
+                            }
+                        case 28:
+                            var2 = _closure2_slot0;
+                            var1 = arg0;
+                            var1 = var2.bind(var0)(var1);
+                        case 40:
+                            return var0;
                     }
-                case 85:
-                    var1 = _closure2_slot0;
-                    var5 = new Array(0);
-                    var0 = var5.concat;
-                    var5 = var0.bind(var5)(var7);
-                    var0 = _closure1_slot5;
-                    var8 = var0.bind(var2)(var1);
-                    var1 = _closure1_slot4;
-                    var0 = _closure1_slot13;
-                    var0 = var0.bind(var2)();
-                    if (var0) {
-                        _fun43708_ip = 140;
-                        continue _fun43708
+                };
+                var0.onPressIn = var13;
+                var9 = function arg0() {
+                    _fun43721: for (var _fun43721_ip = 0;;) switch (_fun43721_ip) {
+                        case 0:
+                            var3 = _closure2_slot4;
+                            var0 = undefined;
+                            var2 = 1;
+                            var2 = var3.bind(var0)(var2);
+                            var3 = _closure2_slot1;
+                            var2 = null;
+                            if (!(var2 != var3)) {
+                                _fun43721_ip = 39;
+                                continue _fun43721
+                            }
+                        case 27:
+                            var2 = _closure2_slot1;
+                            var1 = arg0;
+                            var1 = var2.bind(var0)(var1);
+                        case 39:
+                            return var0;
                     }
-                case 127:
-                    var0 = var8.apply;
-                    var0 = var0.bind(var8)(var3, var5);
-                    _fun43708_ip = 179;
-                    continue _fun43708;
-                case 140:
-                    var7 = var6.Reflect;
-                    var6 = var7.construct;
-                    if (var5) {
-                        _fun43708_ip = 158;
-                        continue _fun43708
-                    }
-                case 154:
-                    var5 = new Array(0);
-                case 158:
-                    var4 = _closure1_slot5;
-                    var4 = var4.bind(var2)(var3);
-                    var4 = var4.constructor;
-                    var0 = var6.bind(var7)(var8, var5, var4);
-                case 179:
-                    var0 = var1.bind(var2)(var3, var0);
-                    var1 = false;
-                    var0._hasWarnedInvalidRenderMask = var1;
-                    return var0;
-            }
-        };
-        var _closure2_slot0 = var3;
-        var5 = _closure1_slot6;
-        var2 = undefined;
-        var4 = arg0;
-        var4 = var5.bind(var2)(var3, var4);
-        var1 = _closure1_slot3;
-        var4 = {};
-        var5 = 'render';
-        var4.key = var5;
-        var0 = function() {
-            _fun43709: for (var _fun43709_ip = 0;;) switch (_fun43709_ip) {
-                case 0:
-                    var1 = this;
-                    var3 = var1.props;
-                    var12 = var3.maskElement;
-                    var9 = var3.children;
-                    var2 = _closure1_slot1;
-                    var0 = _closure1_slot0;
-                    var4 = undefined;
-                    var8 = var2.bind(var4)(var3, var0);
-                    var2 = _closure1_slot7;
-                    var0 = var2.isValidElement;
-                    var0 = var0.bind(var2)(var12);
-                    if (var0) {
-                        _fun43709_ip = 141;
-                        continue _fun43709
-                    }
-                case 56:
-                    var0 = var1._hasWarnedInvalidRenderMask;
-                    if (var0) {
-                        _fun43709_ip = 97;
-                        continue _fun43709
-                    }
-                case 65:
-                    var0 = global;
-                    var3 = var0.console;
-                    var2 = var3.warn;
-                    var0 = 'MaskedView: Invalid `maskElement` prop was passed to MaskedView. Expected a React Element. No mask will render.';
-                    var0 = var2.bind(var3)(var0);
-                    var0 = true;
-                    var1._hasWarnedInvalidRenderMask = var0;
-                case 97:
-                    var2 = _closure1_slot10;
-                    var1 = _closure1_slot8;
-                    var0 = global;
-                    var6 = var0.Object;
-                    var5 = var6.assign;
-                    var3 = {};
-                    var3.children = var9;
-                    var0 = {};
-                    var0 = var5.bind(var6)(var0, var8, var3);
-                    var0 = var2.bind(var4)(var1, var0);
-                    _fun43709_ip = 238;
-                    continue _fun43709;
-                case 141:
-                    var3 = _closure1_slot11;
-                    var2 = _closure1_slot12;
-                    var1 = global;
-                    var7 = var1.Object;
-                    var6 = var7.assign;
-                    var5 = {};
-                    var11 = _closure1_slot10;
-                    var10 = _closure1_slot8;
-                    var1 = {};
-                    var14 = 'none';
-                    var1.pointerEvents = var14;
-                    var13 = _closure1_slot9;
-                    var13 = var13.absoluteFill;
-                    var1.style = var13;
-                    var1.children = var12;
-                    var10 = var11.bind(var4)(var10, var1);
-                    var1 = new Array(2);
-                    var1[0] = var10;
-                    var1[1] = var9;
-                    var5.children = var1;
-                    var1 = {};
-                    var1 = var6.bind(var7)(var1, var8, var5);
-                    var0 = var3.bind(var4)(var2, var1);
-                case 238:
-                    return var0;
-            }
-        };
-        var4.value = var0;
-        var0 = new Array(1);
-        var0[0] = var4;
-        var0 = var1.bind(var2)(var3, var0);
-        return var0;
+                };
+                var0.onPressOut = var9;
+                var13 = _closure1_slot8;
+                var9 = undefined;
+                if (!var13) {
+                    _fun43718_ip = 274;
+                    continue _fun43718
+                }
+            case 229:
+                var14 = var12.Object;
+                var13 = var14.assign;
+                var12 = {};
+                if (!(var3 === var16)) {
+                    _fun43718_ip = 264;
+                    continue _fun43718
+                }
+            case 246:
+                var17 = 'rgba(0, 0, 0, .32)';
+                if (!var18) {
+                    _fun43718_ip = 261;
+                    continue _fun43718
+                }
+            case 255:
+                var17 = 'rgba(255, 255, 255, .32)';
+            case 261:
+                var16 = var17;
+            case 264:
+                var12.color = var16;
+                var9 = var13.bind(var14)(var12, var15);
+            case 274:
+                var0.android_ripple = var9;
+                var9 = {};
+                var11 = _closure1_slot8;
+                if (var11) {
+                    _fun43718_ip = 291;
+                    continue _fun43718
+                }
+            case 288:
+                var7 = var10;
+            case 291:
+                var9.opacity = var7;
+                var7 = new Array(2);
+                var7[0] = var9;
+                var7[1] = var8;
+                var0.style = var7;
+                var0 = var4.bind(var5)(var0, var6);
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 6, 7, 15, 17, 18, 31, 27, 33]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 29, 31, 27, 33, 1470]);

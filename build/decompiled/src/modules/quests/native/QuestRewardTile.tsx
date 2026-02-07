@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/QuestRewardTile.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78939: for (var _fun78939_ip = 0;;) switch (_fun78939_ip) {
+        _fun79390: for (var _fun79390_ip = 0;;) switch (_fun79390_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.quest;
@@ -116,16 +116,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var2.paused;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun78939_ip = 52;
-                    continue _fun78939
+                    _fun79390_ip = 52;
+                    continue _fun79390
                 }
             case 50:
                 var11 = false;
             case 52:
                 var4 = var2.withAnimation;
                 if (!(var4 === var3)) {
-                    _fun78939_ip = 95;
-                    continue _fun78939
+                    _fun79390_ip = 95;
+                    continue _fun79390
                 }
             case 62:
                 var5 = _closure1_slot0;
@@ -172,14 +172,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.name;
                 var6 = null;
                 if (!(var6 == var8)) {
-                    _fun78939_ip = 205;
-                    continue _fun78939
+                    _fun79390_ip = 205;
+                    continue _fun79390
                 }
             case 192:
                 var6 = var2.messages;
                 var6 = var6.name;
-                _fun78939_ip = 210;
-                continue _fun78939;
+                _fun79390_ip = 210;
+                continue _fun79390;
             case 205:
                 var6 = var2.name;
             case 210:
@@ -230,13 +230,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var1;
                 var1 = function() { // Environment: var0
-                    _fun78943: for (var _fun78943_ip = 0;;) switch (_fun78943_ip) {
+                    _fun79394: for (var _fun79394_ip = 0;;) switch (_fun79394_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             var1 = var1.isAnimated;
                             if (var1) {
-                                _fun78943_ip = 22;
-                                continue _fun78943
+                                _fun79394_ip = 22;
+                                continue _fun79394
                             }
                         case 18:
                             var1 = undefined;
@@ -325,13 +325,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var6;
                 var6 = var13.isAnimated;
                 if (!var6) {
-                    _fun78939_ip = 436;
-                    continue _fun78939
+                    _fun79390_ip = 436;
+                    continue _fun79390
                 }
             case 433:
                 if (var4) {
-                    _fun78939_ip = 490;
-                    continue _fun78939
+                    _fun79390_ip = 490;
+                    continue _fun79390
                 }
             case 436:
                 var7 = _closure1_slot10;
@@ -347,8 +347,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var8.image;
                 var4.style = var14;
                 var4 = var7.bind(var3)(var6, var4);
-                _fun78939_ip = 607;
-                continue _fun78939;
+                _fun79390_ip = 611;
+                continue _fun79390;
             case 490:
                 var7 = _closure1_slot10;
                 var6 = _closure1_slot0;
@@ -376,25 +376,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.poster = var12;
                 var9 = !var9;
                 if (var9) {
-                    _fun78939_ip = 576;
-                    continue _fun78939
+                    _fun79390_ip = 580;
+                    continue _fun79390
                 }
-            case 573:
+            case 577:
                 var9 = var11;
-            case 576:
+            case 580:
                 if (var9) {
-                    _fun78939_ip = 582;
-                    continue _fun78939
+                    _fun79390_ip = 586;
+                    continue _fun79390
                 }
-            case 579:
+            case 583:
                 var9 = var10;
-            case 582:
+            case 586:
                 var5.paused = var9;
                 var9 = 'mix';
                 var5.mixWithOthers = var9;
                 var5.muted = var8;
                 var4 = var7.bind(var3)(var6, var5);
-            case 607:
+            case 611:
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
@@ -402,4 +402,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 33, 1297, 671, 478, 566, 5292, 5291, 1586, 8880, 4705, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 33, 1297, 671, 478, 566, 5339, 5338, 1586, 8924, 4704, 2]);

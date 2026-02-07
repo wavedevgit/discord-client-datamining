@@ -320,7 +320,7 @@ public final class SentryEvent extends e5 implements w1 {
 
     public SentryEvent(Throwable th2) {
         this();
-        this.f28096u = th2;
+        this.f28144u = th2;
     }
 
     public SentryEvent() {

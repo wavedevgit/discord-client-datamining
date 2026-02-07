@@ -57,7 +57,7 @@ public final class FullyDrawnReporter {
                     fullyDrawnReporter.f1249b.invoke();
                     fullyDrawnReporter.b();
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -72,7 +72,7 @@ public final class FullyDrawnReporter {
                     function0.invoke();
                 }
                 this.f1254g.clear();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -17,42 +17,42 @@ import x.y0;
 public class t0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final p0 f29662a;
+    final p0 f29710a;
 
     /* renamed from: b  reason: collision with root package name */
-    final a0.e0 f29663b;
+    final a0.e0 f29711b;
 
     /* renamed from: c  reason: collision with root package name */
-    private c f29664c;
+    private c f29712c;
 
     /* renamed from: d  reason: collision with root package name */
-    private b f29665d;
+    private b f29713d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l0 f29666a;
+        final /* synthetic */ l0 f29714a;
 
         a(l0 l0Var) {
-            this.f29666a = l0Var;
+            this.f29714a = l0Var;
         }
 
         @Override // d0.c
         /* renamed from: a */
         public void onSuccess(l1 l1Var) {
             b2.e.g(l1Var);
-            t0.this.f29662a.a(l1Var);
+            t0.this.f29710a.a(l1Var);
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            if (this.f29666a.s() == 2 && (th2 instanceof CancellationException)) {
+            if (this.f29714a.s() == 2 && (th2 instanceof CancellationException)) {
                 y0.a("SurfaceProcessorNode", "Downstream VideoCapture failed to provide Surface.");
                 return;
             }
-            y0.m("SurfaceProcessorNode", "Downstream node failed to provide Surface. Target: " + u0.a(this.f29666a.s()), th2);
+            y0.m("SurfaceProcessorNode", "Downstream node failed to provide Surface. Target: " + u0.a(this.f29714a.s()), th2);
         }
     }
 
@@ -72,8 +72,8 @@ public class t0 {
     }
 
     public t0(a0.e0 e0Var, p0 p0Var) {
-        this.f29663b = e0Var;
-        this.f29662a = p0Var;
+        this.f29711b = e0Var;
+        this.f29710a = p0Var;
     }
 
     public static /* synthetic */ void b(Map map, w1.h hVar) {
@@ -87,7 +87,7 @@ public class t0 {
     }
 
     public static /* synthetic */ void c(t0 t0Var) {
-        c cVar = t0Var.f29664c;
+        c cVar = t0Var.f29712c;
         if (cVar != null) {
             for (V v10 : cVar.values()) {
                 v10.i();
@@ -102,7 +102,7 @@ public class t0 {
         Size e10 = l0Var.r().e();
         Rect a10 = ((l0.f) entry.getKey()).a();
         if (l0Var.t()) {
-            e0Var = this.f29663b;
+            e0Var = this.f29711b;
         } else {
             e0Var = null;
         }
@@ -122,7 +122,7 @@ public class t0 {
     }
 
     private void h(l0 l0Var) {
-        this.f29662a.b(l0Var.k(this.f29663b));
+        this.f29710a.b(l0Var.k(this.f29711b));
     }
 
     private l0 k(l0 l0Var, l0.f fVar) {
@@ -158,11 +158,11 @@ public class t0 {
     }
 
     public p0 e() {
-        return this.f29662a;
+        return this.f29710a;
     }
 
     public void f() {
-        this.f29662a.release();
+        this.f29710a.release();
         b0.p.d(new Runnable() { // from class: j0.s0
             @Override // java.lang.Runnable
             public final void run() {
@@ -182,15 +182,15 @@ public class t0 {
 
     public c j(b bVar) {
         b0.p.a();
-        this.f29665d = bVar;
-        this.f29664c = new c();
+        this.f29713d = bVar;
+        this.f29712c = new c();
         l0 b10 = bVar.b();
         for (l0.f fVar : bVar.a()) {
-            this.f29664c.put(fVar, k(b10, fVar));
+            this.f29712c.put(fVar, k(b10, fVar));
         }
         h(b10);
-        g(b10, this.f29664c);
-        i(b10, this.f29664c);
-        return this.f29664c;
+        g(b10, this.f29712c);
+        i(b10, this.f29712c);
+        return this.f29712c;
     }
 }

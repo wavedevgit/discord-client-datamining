@@ -16,13 +16,13 @@ public final class i implements Comparable<i> {
     public static final a Companion = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final i f55599e;
+    private static final i f55647e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final i f55600i;
+    private static final i f55648i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LocalTime f55601d;
+    private final LocalTime f55649d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -40,7 +40,7 @@ public final class i implements Comparable<i> {
         public final i a(CharSequence input, zs.n format) {
             Intrinsics.checkNotNullParameter(input, "input");
             Intrinsics.checkNotNullParameter(format, "format");
-            if (format == b.f55602a.a()) {
+            if (format == b.f55650a.a()) {
                 try {
                     return new i(LocalTime.parse(input));
                 } catch (DateTimeParseException e10) {
@@ -63,7 +63,7 @@ public final class i implements Comparable<i> {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f55602a = new b();
+        public static final b f55650a = new b();
 
         private b() {
         }
@@ -76,31 +76,31 @@ public final class i implements Comparable<i> {
     static {
         LocalTime MIN = LocalTime.MIN;
         Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f55599e = new i(MIN);
+        f55647e = new i(MIN);
         LocalTime MAX = LocalTime.MAX;
         Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f55600i = new i(MAX);
+        f55648i = new i(MAX);
     }
 
     public i(LocalTime value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f55601d = value;
+        this.f55649d = value;
     }
 
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(i other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f55601d.compareTo(other.f55601d);
+        return this.f55649d.compareTo(other.f55649d);
     }
 
     public final int d() {
-        return this.f55601d.toSecondOfDay();
+        return this.f55649d.toSecondOfDay();
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            if (!(obj instanceof i) || !Intrinsics.areEqual(this.f55601d, ((i) obj).f55601d)) {
+            if (!(obj instanceof i) || !Intrinsics.areEqual(this.f55649d, ((i) obj).f55649d)) {
                 return false;
             }
             return true;
@@ -109,11 +109,11 @@ public final class i implements Comparable<i> {
     }
 
     public int hashCode() {
-        return this.f55601d.hashCode();
+        return this.f55649d.hashCode();
     }
 
     public String toString() {
-        String localTime = this.f55601d.toString();
+        String localTime = this.f55649d.toString();
         Intrinsics.checkNotNullExpressionValue(localTime, "toString(...)");
         return localTime;
     }

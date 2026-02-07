@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class g4 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g4 f30305d = new g4("World", 0);
+    public static final g4 f30353d = new g4("World", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g4 f30306e = new g4("Card", 1);
+    public static final g4 f30354e = new g4("Card", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final g4 f30307i = new g4("Flag", 2);
+    public static final g4 f30355i = new g4("Flag", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final g4 f30308o = new g4("House", 3);
+    public static final g4 f30356o = new g4("House", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ g4[] f30309p;
+    private static final /* synthetic */ g4[] f30357p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f30310q;
+    private static final /* synthetic */ EnumEntries f30358q;
 
     static {
         g4[] a10 = a();
-        f30309p = a10;
-        f30310q = xr.a.a(a10);
+        f30357p = a10;
+        f30358q = xr.a.a(a10);
     }
 
     private g4(String str, int i10) {
     }
 
     private static final /* synthetic */ g4[] a() {
-        return new g4[]{f30305d, f30306e, f30307i, f30308o};
+        return new g4[]{f30353d, f30354e, f30355i, f30356o};
     }
 
     public static g4 valueOf(String str) {
@@ -42,6 +42,6 @@ public final class g4 {
     }
 
     public static g4[] values() {
-        return (g4[]) f30309p.clone();
+        return (g4[]) f30357p.clone();
     }
 }

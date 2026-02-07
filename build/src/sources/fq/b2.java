@@ -36,17 +36,17 @@ public abstract class b2 {
         }
         for (final OptionWithDescription optionWithDescription : l10) {
             final iq.b c11 = iq.b.c(uiComponentHelper.b(), c10.getRoot(), false);
-            TextView radioButtonLabel = c11.f29188d;
+            TextView radioButtonLabel = c11.f29236d;
             Intrinsics.checkNotNullExpressionValue(radioButtonLabel, "radioButtonLabel");
             gq.f.d(radioButtonLabel, optionWithDescription.getText());
             String descriptionText = optionWithDescription.getDescriptionText();
             if (descriptionText != null && !StringsKt.k0(descriptionText)) {
-                c11.f29187c.setVisibility(0);
-                TextView radioButtonDescription = c11.f29187c;
+                c11.f29235c.setVisibility(0);
+                TextView radioButtonDescription = c11.f29235c;
                 Intrinsics.checkNotNullExpressionValue(radioButtonDescription, "radioButtonDescription");
                 gq.f.d(radioButtonDescription, descriptionText);
             } else {
-                c11.f29187c.setVisibility(8);
+                c11.f29235c.setVisibility(8);
             }
             uiComponentHelper.d(new Function0() { // from class: fq.w1
                 @Override // kotlin.jvm.functions.Function0
@@ -56,7 +56,7 @@ public abstract class b2 {
                     return i10;
                 }
             });
-            c11.f29186b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: fq.x1
+            c11.f29234b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: fq.x1
                 @Override // android.widget.CompoundButton.OnCheckedChangeListener
                 public final void onCheckedChanged(CompoundButton compoundButton, boolean z10) {
                     b2.j(arrayList, config, optionWithDescription, inputRadioGroupComponent, compoundButton, z10);
@@ -68,18 +68,18 @@ public abstract class b2 {
                     b2.k(iq.b.this, view);
                 }
             });
-            c10.f29249b.addView(c11.getRoot());
-            MaterialRadioButton radioButton = c11.f29186b;
+            c10.f29297b.addView(c11.getRoot());
+            MaterialRadioButton radioButton = c11.f29234b;
             Intrinsics.checkNotNullExpressionValue(radioButton, "radioButton");
             arrayList.add(radioButton);
             if (Intrinsics.areEqual(inputRadioGroupComponent.b().b(), optionWithDescription.getValue())) {
-                c11.f29186b.setChecked(true);
+                c11.f29234b.setChecked(true);
             }
         }
         InputRadioGroup.InputRadioGroupComponentStyle styles = config.getStyles();
         String str = null;
         if (styles != null && (errorTextStyle = styles.getErrorTextStyle()) != null) {
-            TextView radioGroupError = c10.f29250c;
+            TextView radioGroupError = c10.f29298c;
             Intrinsics.checkNotNullExpressionValue(radioGroupError, "radioGroupError");
             kq.f0.n(radioGroupError, errorTextStyle, null, 2, null);
         }
@@ -87,8 +87,8 @@ public abstract class b2 {
             str = attributes.getLabel();
         }
         if (str != null && str.length() != 0) {
-            c10.f29251d.setVisibility(0);
-            c10.f29251d.setText(str);
+            c10.f29299d.setVisibility(0);
+            c10.f29299d.setText(str);
             uiComponentHelper.d(new Function0() { // from class: fq.z1
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -98,7 +98,7 @@ public abstract class b2 {
                 }
             });
         } else {
-            c10.f29251d.setVisibility(8);
+            c10.f29299d.setVisibility(8);
         }
         uiComponentHelper.d(new Function0() { // from class: fq.a2
             @Override // kotlin.jvm.functions.Function0
@@ -119,11 +119,11 @@ public abstract class b2 {
         TextBasedComponentStyle textBasedStyle;
         InputRadioGroup.InputRadioGroupComponentStyle styles = inputRadioGroup.getStyles();
         if (styles != null && (textBasedStyle = styles.getTextBasedStyle()) != null) {
-            TextView radioGroupLabel = mVar.f29251d;
+            TextView radioGroupLabel = mVar.f29299d;
             Intrinsics.checkNotNullExpressionValue(radioGroupLabel, "radioGroupLabel");
             kq.f0.n(radioGroupLabel, textBasedStyle, null, 2, null);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -135,7 +135,7 @@ public abstract class b2 {
             Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
             nq.d.c(root, margins);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -144,18 +144,18 @@ public abstract class b2 {
         TextBasedComponentStyle textBasedStyle;
         InputRadioGroup.InputRadioGroupComponentStyle styles = inputRadioGroup.getStyles();
         if (styles != null && (textBasedStyle = styles.getTextBasedStyle()) != null) {
-            TextView radioButtonLabel = bVar.f29188d;
+            TextView radioButtonLabel = bVar.f29236d;
             Intrinsics.checkNotNullExpressionValue(radioButtonLabel, "radioButtonLabel");
             kq.f0.n(radioButtonLabel, textBasedStyle, null, 2, null);
         }
         InputRadioGroup.InputRadioGroupComponentStyle styles2 = inputRadioGroup.getStyles();
         if (styles2 != null && (descriptionTextStyle = styles2.getDescriptionTextStyle()) != null) {
-            TextView radioButtonDescription = bVar.f29187c;
+            TextView radioButtonDescription = bVar.f29235c;
             Intrinsics.checkNotNullExpressionValue(radioButtonDescription, "radioButtonDescription");
             kq.f0.n(radioButtonDescription, descriptionTextStyle, null, 2, null);
         }
-        bVar.f29186b.setButtonTintList(ColorStateList.valueOf(r1.c.l(bVar.f29188d.getCurrentTextColor(), 150)));
-        return Unit.f32008a;
+        bVar.f29234b.setButtonTintList(ColorStateList.valueOf(r1.c.l(bVar.f29236d.getCurrentTextColor(), 150)));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -176,8 +176,8 @@ public abstract class b2 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(iq.b bVar, View view) {
-        if (!bVar.f29186b.isChecked()) {
-            bVar.f29186b.setChecked(true);
+        if (!bVar.f29234b.isChecked()) {
+            bVar.f29234b.setChecked(true);
         }
     }
 

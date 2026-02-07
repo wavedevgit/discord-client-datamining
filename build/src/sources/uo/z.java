@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class z {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final z f52076d = new z("INQUIRY_COMPLETE", 0);
+    public static final z f52124d = new z("INQUIRY_COMPLETE", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final z f52077e = new z("INQUIRY_CANCELED", 1);
+    public static final z f52125e = new z("INQUIRY_CANCELED", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final z f52078i = new z("INQUIRY_ERROR", 2);
+    public static final z f52126i = new z("INQUIRY_ERROR", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ z[] f52079o;
+    private static final /* synthetic */ z[] f52127o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f52080p;
+    private static final /* synthetic */ EnumEntries f52128p;
 
     static {
         z[] a10 = a();
-        f52079o = a10;
-        f52080p = xr.a.a(a10);
+        f52127o = a10;
+        f52128p = xr.a.a(a10);
     }
 
     private z(String str, int i10) {
     }
 
     private static final /* synthetic */ z[] a() {
-        return new z[]{f52076d, f52077e, f52078i};
+        return new z[]{f52124d, f52125e, f52126i};
     }
 
     public static z valueOf(String str) {
@@ -39,6 +39,6 @@ public final class z {
     }
 
     public static z[] values() {
-        return (z[]) f52079o.clone();
+        return (z[]) f52127o.clone();
     }
 }

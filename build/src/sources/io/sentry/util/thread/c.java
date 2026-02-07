@@ -3,16 +3,16 @@ package io.sentry.util.thread;
 public final class c implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f28970a = Thread.currentThread().getId();
+    private static final long f29018a = Thread.currentThread().getId();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f28971b = new c();
+    private static final c f29019b = new c();
 
     private c() {
     }
 
     public static c d() {
-        return f28971b;
+        return f29019b;
     }
 
     @Override // io.sentry.util.thread.a
@@ -31,7 +31,7 @@ public final class c implements a {
     }
 
     public boolean e(long j10) {
-        if (f28970a == j10) {
+        if (f29018a == j10) {
             return true;
         }
         return false;

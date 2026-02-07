@@ -11,34 +11,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f extends Event {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f31746f = new a(null);
+    public static final a f31794f = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final a.EnumC0449a f31747g = a.EnumC0449a.f31756e;
+    private static final a.EnumC0449a f31795g = a.EnumC0449a.f31804e;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final a.EnumC0449a f31748h = a.EnumC0449a.f31757i;
+    private static final a.EnumC0449a f31796h = a.EnumC0449a.f31805i;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final a.EnumC0449a f31749i = a.EnumC0449a.f31758o;
+    private static final a.EnumC0449a f31797i = a.EnumC0449a.f31806o;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final a.EnumC0449a f31750j = a.EnumC0449a.f31759p;
+    private static final a.EnumC0449a f31798j = a.EnumC0449a.f31807p;
 
     /* renamed from: a  reason: collision with root package name */
-    private final a.EnumC0449a f31751a;
+    private final a.EnumC0449a f31799a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f31752b;
+    private final double f31800b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f31753c;
+    private final double f31801c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31754d;
+    private final int f31802d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f31755e;
+    private final int f31803e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,38 +50,38 @@ public final class f extends Event {
         public static final class EnumC0449a {
 
             /* renamed from: e  reason: collision with root package name */
-            public static final EnumC0449a f31756e = new EnumC0449a("Move", 0, "topKeyboardMove");
+            public static final EnumC0449a f31804e = new EnumC0449a("Move", 0, "topKeyboardMove");
 
             /* renamed from: i  reason: collision with root package name */
-            public static final EnumC0449a f31757i = new EnumC0449a("Start", 1, "topKeyboardMoveStart");
+            public static final EnumC0449a f31805i = new EnumC0449a("Start", 1, "topKeyboardMoveStart");
 
             /* renamed from: o  reason: collision with root package name */
-            public static final EnumC0449a f31758o = new EnumC0449a("End", 2, "topKeyboardMoveEnd");
+            public static final EnumC0449a f31806o = new EnumC0449a("End", 2, "topKeyboardMoveEnd");
 
             /* renamed from: p  reason: collision with root package name */
-            public static final EnumC0449a f31759p = new EnumC0449a("Interactive", 3, "topKeyboardMoveInteractive");
+            public static final EnumC0449a f31807p = new EnumC0449a("Interactive", 3, "topKeyboardMoveInteractive");
 
             /* renamed from: q  reason: collision with root package name */
-            private static final /* synthetic */ EnumC0449a[] f31760q;
+            private static final /* synthetic */ EnumC0449a[] f31808q;
 
             /* renamed from: r  reason: collision with root package name */
-            private static final /* synthetic */ EnumEntries f31761r;
+            private static final /* synthetic */ EnumEntries f31809r;
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f31762d;
+            private final String f31810d;
 
             static {
                 EnumC0449a[] a10 = a();
-                f31760q = a10;
-                f31761r = xr.a.a(a10);
+                f31808q = a10;
+                f31809r = xr.a.a(a10);
             }
 
             private EnumC0449a(String str, int i10, String str2) {
-                this.f31762d = str2;
+                this.f31810d = str2;
             }
 
             private static final /* synthetic */ EnumC0449a[] a() {
-                return new EnumC0449a[]{f31756e, f31757i, f31758o, f31759p};
+                return new EnumC0449a[]{f31804e, f31805i, f31806o, f31807p};
             }
 
             public static EnumC0449a valueOf(String str) {
@@ -89,11 +89,11 @@ public final class f extends Event {
             }
 
             public static EnumC0449a[] values() {
-                return (EnumC0449a[]) f31760q.clone();
+                return (EnumC0449a[]) f31808q.clone();
             }
 
             public final String d() {
-                return this.f31762d;
+                return this.f31810d;
             }
         }
 
@@ -102,19 +102,19 @@ public final class f extends Event {
         }
 
         public final EnumC0449a a() {
-            return f.f31749i;
+            return f.f31797i;
         }
 
         public final EnumC0449a b() {
-            return f.f31750j;
+            return f.f31798j;
         }
 
         public final EnumC0449a c() {
-            return f.f31747g;
+            return f.f31795g;
         }
 
         public final EnumC0449a d() {
-            return f.f31748h;
+            return f.f31796h;
         }
 
         private a() {
@@ -125,11 +125,11 @@ public final class f extends Event {
     public f(int i10, int i11, a.EnumC0449a event, double d10, double d11, int i12, int i13) {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(event, "event");
-        this.f31751a = event;
-        this.f31752b = d10;
-        this.f31753c = d11;
-        this.f31754d = i12;
-        this.f31755e = i13;
+        this.f31799a = event;
+        this.f31800b = d10;
+        this.f31801c = d11;
+        this.f31802d = i12;
+        this.f31803e = i13;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -140,15 +140,15 @@ public final class f extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putDouble(ReactProgressBarViewManager.PROP_PROGRESS, this.f31753c);
-        createMap.putDouble("height", this.f31752b);
-        createMap.putInt("duration", this.f31754d);
-        createMap.putInt("target", this.f31755e);
+        createMap.putDouble(ReactProgressBarViewManager.PROP_PROGRESS, this.f31801c);
+        createMap.putDouble("height", this.f31800b);
+        createMap.putInt("duration", this.f31802d);
+        createMap.putInt("target", this.f31803e);
         return createMap;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     public String getEventName() {
-        return this.f31751a.d();
+        return this.f31799a.d();
     }
 }

@@ -51,8 +51,8 @@ public /* synthetic */ class PremiumGroupInviteEmbed$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        p0 p0Var = p0.f31057a;
+        n2 n2Var = n2.f31089a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, n2Var, n2Var, p0Var, p0Var, n2Var, p0Var, AnnotatedStructurableTextSerializer.INSTANCE};
     }
 

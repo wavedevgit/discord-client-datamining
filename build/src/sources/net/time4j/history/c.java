@@ -5,16 +5,16 @@ package net.time4j.history;
 abstract class c implements net.time4j.history.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f39367d;
+    public static final c f39415d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f39368e;
+    public static final c f39416e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f39369i;
+    public static final c f39417i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ c[] f39370o;
+    private static final /* synthetic */ c[] f39418o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends c {
@@ -58,7 +58,7 @@ abstract class c implements net.time4j.history.b {
 
     static {
         a aVar = new a("GREGORIAN", 0);
-        f39367d = aVar;
+        f39415d = aVar;
         c cVar = new c("JULIAN", 1) { // from class: net.time4j.history.c.b
             @Override // net.time4j.history.b
             public long a(h hVar) {
@@ -93,7 +93,7 @@ abstract class c implements net.time4j.history.b {
                 return m.d(c.h(hVar), hVar.f(), hVar.d());
             }
         };
-        f39368e = cVar;
+        f39416e = cVar;
         c cVar2 = new c("SWEDISH", 2) { // from class: net.time4j.history.c.c
             @Override // net.time4j.history.b
             public long a(h hVar) {
@@ -118,7 +118,7 @@ abstract class c implements net.time4j.history.b {
                 if (j10 == -53576) {
                     return new h(j.AD, 1712, 2, 30);
                 }
-                return c.f39368e.e(j10 + 1);
+                return c.f39416e.e(j10 + 1);
             }
 
             @Override // net.time4j.history.b
@@ -130,8 +130,8 @@ abstract class c implements net.time4j.history.b {
                 return m.d(h10, hVar.f(), hVar.d());
             }
         };
-        f39369i = cVar2;
-        f39370o = new c[]{aVar, cVar, cVar2};
+        f39417i = cVar2;
+        f39418o = new c[]{aVar, cVar, cVar2};
     }
 
     private c(String str, int i10) {
@@ -147,7 +147,7 @@ abstract class c implements net.time4j.history.b {
     }
 
     public static c[] values() {
-        return (c[]) f39370o.clone();
+        return (c[]) f39418o.clone();
     }
 
     /* synthetic */ c(String str, int i10, a aVar) {

@@ -6,7 +6,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0417a f29821a = new C0417a(null);
+    public static final C0417a f29869a = new C0417a(null);
 
     /* renamed from: ja.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

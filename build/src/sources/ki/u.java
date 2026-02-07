@@ -6,18 +6,18 @@ import java.util.Objects;
 public final class u extends s {
 
     /* renamed from: p  reason: collision with root package name */
-    static final s f31693p = new u(new Object[0], 0);
+    static final s f31741p = new u(new Object[0], 0);
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f31694o;
+    final transient Object[] f31742o;
 
     u(Object[] objArr, int i10) {
-        this.f31694o = objArr;
+        this.f31742o = objArr;
     }
 
     @Override // ki.s, ki.p
     final int b(Object[] objArr, int i10) {
-        System.arraycopy(this.f31694o, 0, objArr, 0, 0);
+        System.arraycopy(this.f31742o, 0, objArr, 0, 0);
         return 0;
     }
 
@@ -35,13 +35,13 @@ public final class u extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ki.p
     public final Object[] e() {
-        return this.f31694o;
+        return this.f31742o;
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
         m.a(i10, 0, "index");
-        Object obj = this.f31694o[i10];
+        Object obj = this.f31742o[i10];
         Objects.requireNonNull(obj);
         return obj;
     }

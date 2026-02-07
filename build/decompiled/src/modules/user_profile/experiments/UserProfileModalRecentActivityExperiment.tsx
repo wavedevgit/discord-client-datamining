@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/experiments/UserProfileModalRecentActivityExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun91807: for (var _fun91807_ip = 0;;) switch (_fun91807_ip) {
+        _fun92287: for (var _fun92287_ip = 0;;) switch (_fun92287_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun91807_ip = 22;
-                    continue _fun91807
+                    _fun92287_ip = 22;
+                    continue _fun92287
                 }
             case 20:
                 var4 = true;
@@ -70,15 +70,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUserProfileModalRecentActivityExperiment = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun91808: for (var _fun91808_ip = 0;;) switch (_fun91808_ip) {
+        _fun92288: for (var _fun92288_ip = 0;;) switch (_fun92288_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun91808_ip = 22;
-                    continue _fun91808
+                    _fun92288_ip = 22;
+                    continue _fun92288
                 }
             case 20:
                 var4 = true;

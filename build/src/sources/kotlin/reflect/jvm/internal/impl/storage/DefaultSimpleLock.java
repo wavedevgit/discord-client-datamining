@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public class DefaultSimpleLock implements SimpleLock {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lock f34511a;
+    private final Lock f34559a;
 
     public DefaultSimpleLock() {
         this(null, 1, null);
@@ -17,22 +17,22 @@ public class DefaultSimpleLock implements SimpleLock {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Lock a() {
-        return this.f34511a;
+        return this.f34559a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.storage.SimpleLock
     public void lock() {
-        this.f34511a.lock();
+        this.f34559a.lock();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.storage.SimpleLock
     public void unlock() {
-        this.f34511a.unlock();
+        this.f34559a.unlock();
     }
 
     public DefaultSimpleLock(@NotNull Lock lock) {
         Intrinsics.checkNotNullParameter(lock, "lock");
-        this.f34511a = lock;
+        this.f34559a = lock;
     }
 
     public /* synthetic */ DefaultSimpleLock(Lock lock, int i10, DefaultConstructorMarker defaultConstructorMarker) {

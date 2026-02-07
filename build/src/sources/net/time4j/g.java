@@ -7,28 +7,28 @@ import com.discord.misc.utilities.logThrottle.LogThrottleSingleton;
 public abstract class g implements v {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f39321d;
+    public static final g f39369d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g f39322e;
+    public static final g f39370e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final g f39323i;
+    public static final g f39371i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final g f39324o;
+    public static final g f39372o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final g f39325p;
+    public static final g f39373p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final g f39326q;
+    public static final g f39374q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final long[] f39327r;
+    private static final long[] f39375r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ g[] f39328s;
+    private static final /* synthetic */ g[] f39376s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     enum a extends g {
@@ -49,7 +49,7 @@ public abstract class g implements v {
 
     static {
         a aVar = new a("HOURS", 0);
-        f39321d = aVar;
+        f39369d = aVar;
         g gVar = new g("MINUTES", 1) { // from class: net.time4j.g.b
             @Override // net.time4j.w
             public char d() {
@@ -61,7 +61,7 @@ public abstract class g implements v {
                 return 60.0d;
             }
         };
-        f39322e = gVar;
+        f39370e = gVar;
         g gVar2 = new g("SECONDS", 2) { // from class: net.time4j.g.c
             @Override // net.time4j.w
             public char d() {
@@ -73,7 +73,7 @@ public abstract class g implements v {
                 return 1.0d;
             }
         };
-        f39323i = gVar2;
+        f39371i = gVar2;
         g gVar3 = new g("MILLIS", 3) { // from class: net.time4j.g.d
             @Override // net.time4j.w
             public char d() {
@@ -85,7 +85,7 @@ public abstract class g implements v {
                 return 0.001d;
             }
         };
-        f39324o = gVar3;
+        f39372o = gVar3;
         g gVar4 = new g("MICROS", 4) { // from class: net.time4j.g.e
             @Override // net.time4j.w
             public char d() {
@@ -97,7 +97,7 @@ public abstract class g implements v {
                 return 1.0E-6d;
             }
         };
-        f39325p = gVar4;
+        f39373p = gVar4;
         g gVar5 = new g("NANOS", 5) { // from class: net.time4j.g.f
             @Override // net.time4j.w
             public char d() {
@@ -109,9 +109,9 @@ public abstract class g implements v {
                 return 1.0E-9d;
             }
         };
-        f39326q = gVar5;
-        f39328s = new g[]{aVar, gVar, gVar2, gVar3, gVar4, gVar5};
-        f39327r = new long[]{1, 60, 3600, LogThrottleSingleton.RATE_LIMIT_ONE_HOUR, 3600000000L, 3600000000000L};
+        f39374q = gVar5;
+        f39376s = new g[]{aVar, gVar, gVar2, gVar3, gVar4, gVar5};
+        f39375r = new long[]{1, 60, 3600, LogThrottleSingleton.RATE_LIMIT_ONE_HOUR, 3600000000L, 3600000000000L};
     }
 
     private g(String str, int i10) {
@@ -122,7 +122,7 @@ public abstract class g implements v {
     }
 
     public static g[] values() {
-        return (g[]) f39328s.clone();
+        return (g[]) f39376s.clone();
     }
 
     @Override // rt.w

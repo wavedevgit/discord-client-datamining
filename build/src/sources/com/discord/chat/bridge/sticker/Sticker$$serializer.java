@@ -52,11 +52,11 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         KSerializer u10 = a.u(p0Var);
         KSerializer u11 = a.u(p0Var);
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{z0.f31115a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, n2Var, n2Var, n2Var, u10, u11, p0Var, n2Var};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{z0.f31163a, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, n2Var, n2Var, n2Var, u10, u11, p0Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -82,7 +82,7 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 2);
             String m11 = b10.m(serialDescriptor, 3);
             String m12 = b10.m(serialDescriptor, 4);
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             int i14 = b10.i(serialDescriptor, 7);
             stickerFormatType = (StickerFormatType) b10.y(serialDescriptor, 1, StickerFormatType.StickerFormatTypeSerializer.INSTANCE, null);
             i10 = i14;
@@ -138,11 +138,11 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
                         i16 |= 16;
                         break;
                     case 5:
-                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31057a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31105a, num4);
                         i16 |= 32;
                         break;
                     case 6:
-                        num3 = (Integer) b10.n(serialDescriptor, i13, p0.f31057a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, i13, p0.f31105a, num3);
                         i16 |= 64;
                         break;
                     case 7:

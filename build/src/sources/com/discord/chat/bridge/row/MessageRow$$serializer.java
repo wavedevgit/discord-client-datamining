@@ -67,9 +67,9 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MessageRow.$childSerializers;
-        p0 p0Var = p0.f31057a;
-        h hVar = h.f31005a;
-        return new KSerializer[]{p0Var, ChangeType.Serializer.INSTANCE, gt.a.u(hVar), MessageSerializer.INSTANCE, gt.a.u(hVar), gt.a.u(n2.f31041a), gt.a.u(ReactionsTheme$$serializer.INSTANCE), gt.a.u(hVar), hVar, gt.a.u(p0Var), gt.a.u(Truncation$$serializer.INSTANCE), gt.a.u(BackgroundHighlight$$serializer.INSTANCE), SwipeActionsType.Serializer.INSTANCE, gt.a.u((KSerializer) lazyArr[13].getValue())};
+        p0 p0Var = p0.f31105a;
+        h hVar = h.f31053a;
+        return new KSerializer[]{p0Var, ChangeType.Serializer.INSTANCE, gt.a.u(hVar), MessageSerializer.INSTANCE, gt.a.u(hVar), gt.a.u(n2.f31089a), gt.a.u(ReactionsTheme$$serializer.INSTANCE), gt.a.u(hVar), hVar, gt.a.u(p0Var), gt.a.u(Truncation$$serializer.INSTANCE), gt.a.u(BackgroundHighlight$$serializer.INSTANCE), SwipeActionsType.Serializer.INSTANCE, gt.a.u((KSerializer) lazyArr[13].getValue())};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -100,7 +100,7 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
         if (b10.p()) {
             int i12 = b10.i(serialDescriptor, 0);
             ChangeType changeType3 = (ChangeType) b10.y(serialDescriptor, 1, ChangeType.Serializer.INSTANCE, null);
-            h hVar = h.f31005a;
+            h hVar = h.f31053a;
             boolean C = b10.C(serialDescriptor, 8);
             BackgroundHighlight backgroundHighlight2 = (BackgroundHighlight) b10.n(serialDescriptor, 11, BackgroundHighlight$$serializer.INSTANCE, null);
             i10 = 16383;
@@ -108,10 +108,10 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
             i11 = i12;
             messageContextType = (MessageContextType) b10.n(serialDescriptor, 13, (DeserializationStrategy) lazyArr[13].getValue(), null);
             messageBase = (MessageBase) b10.y(serialDescriptor, 3, MessageSerializer.INSTANCE, null);
-            num = (Integer) b10.n(serialDescriptor, 9, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 9, p0.f31105a, null);
             bool = (Boolean) b10.n(serialDescriptor, 7, hVar, null);
             reactionsTheme = (ReactionsTheme) b10.n(serialDescriptor, 6, ReactionsTheme$$serializer.INSTANCE, null);
-            str = (String) b10.n(serialDescriptor, 5, n2.f31041a, null);
+            str = (String) b10.n(serialDescriptor, 5, n2.f31089a, null);
             bool2 = (Boolean) b10.n(serialDescriptor, 4, hVar, null);
             z10 = C;
             truncation = (Truncation) b10.n(serialDescriptor, 10, Truncation$$serializer.INSTANCE, null);
@@ -162,7 +162,7 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
                         break;
                     case 2:
                         changeType2 = changeType4;
-                        bool7 = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, bool7);
+                        bool7 = (Boolean) b10.n(serialDescriptor, 2, h.f31053a, bool7);
                         i10 |= 4;
                         changeType4 = changeType2;
                         i13 = 13;
@@ -176,14 +176,14 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
                         break;
                     case 4:
                         changeType2 = changeType4;
-                        bool6 = (Boolean) b10.n(serialDescriptor, 4, h.f31005a, bool6);
+                        bool6 = (Boolean) b10.n(serialDescriptor, 4, h.f31053a, bool6);
                         i10 |= 16;
                         changeType4 = changeType2;
                         i13 = 13;
                         break;
                     case 5:
                         changeType2 = changeType4;
-                        str2 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str2);
+                        str2 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str2);
                         i10 |= 32;
                         changeType4 = changeType2;
                         i13 = 13;
@@ -197,7 +197,7 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
                         break;
                     case 7:
                         changeType2 = changeType4;
-                        bool5 = (Boolean) b10.n(serialDescriptor, 7, h.f31005a, bool5);
+                        bool5 = (Boolean) b10.n(serialDescriptor, 7, h.f31053a, bool5);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         changeType4 = changeType2;
                         i13 = 13;
@@ -211,7 +211,7 @@ public /* synthetic */ class MessageRow$$serializer implements h0 {
                         break;
                     case 9:
                         changeType2 = changeType4;
-                        num2 = (Integer) b10.n(serialDescriptor, 9, p0.f31057a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 9, p0.f31105a, num2);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         changeType4 = changeType2;
                         i13 = 13;

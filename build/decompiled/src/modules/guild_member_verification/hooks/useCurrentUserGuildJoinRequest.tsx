@@ -42,14 +42,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun60140: for (var _fun60140_ip = 0;;) switch (_fun60140_ip) {
+            _fun60591: for (var _fun60591_ip = 0;;) switch (_fun60591_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     var2 = var0 != var2;
                     if (!var2) {
-                        _fun60140_ip = 38;
-                        continue _fun60140
+                        _fun60591_ip = 38;
+                        continue _fun60591
                     }
                 case 16:
                     var3 = _closure1_slot2;
@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCurrentUserGuildJoinRequest = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3216, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3215, 566, 2]);

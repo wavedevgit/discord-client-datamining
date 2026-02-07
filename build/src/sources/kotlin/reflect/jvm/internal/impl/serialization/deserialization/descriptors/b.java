@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor f34441d;
+    private final DeserializedClassDescriptor f34489d;
 
     public b(DeserializedClassDescriptor deserializedClassDescriptor) {
-        this.f34441d = deserializedClassDescriptor;
+        this.f34489d = deserializedClassDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection p10;
-        p10 = DeserializedClassDescriptor.p(this.f34441d);
+        p10 = DeserializedClassDescriptor.p(this.f34489d);
         return p10;
     }
 }

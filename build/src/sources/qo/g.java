@@ -6,30 +6,30 @@ import un.v;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f47954a;
+    private final br.h f48002a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f47955b;
+    private final br.h f48003b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.h f47956c;
+    private final br.h f48004c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final br.h f47957d;
+    private final br.h f48005d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final br.h f47958e;
+    private final br.h f48006e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final br.h f47959f;
+    private final br.h f48007f;
 
     public g(br.h hVar, br.h hVar2, br.h hVar3, br.h hVar4, br.h hVar5, br.h hVar6) {
-        this.f47954a = hVar;
-        this.f47955b = hVar2;
-        this.f47956c = hVar3;
-        this.f47957d = hVar4;
-        this.f47958e = hVar5;
-        this.f47959f = hVar6;
+        this.f48002a = hVar;
+        this.f48003b = hVar2;
+        this.f48004c = hVar3;
+        this.f48005d = hVar4;
+        this.f48006e = hVar5;
+        this.f48007f = hVar6;
     }
 
     public static g a(br.h hVar, br.h hVar2, br.h hVar3, br.h hVar4, br.h hVar5, br.h hVar6) {
@@ -41,6 +41,6 @@ public final class g {
     }
 
     public f b(String str, String str2, String str3, String str4, c cVar, String str5, v vVar) {
-        return c((Context) this.f47954a.get(), str, str2, str3, str4, (com.withpersona.sdk2.inquiry.governmentid.network.a) this.f47955b.get(), cVar, (sp.a) this.f47956c.get(), (io.a) this.f47957d.get(), (xp.a) this.f47958e.get(), str5, vVar, (zn.a) this.f47959f.get());
+        return c((Context) this.f48002a.get(), str, str2, str3, str4, (com.withpersona.sdk2.inquiry.governmentid.network.a) this.f48003b.get(), cVar, (sp.a) this.f48004c.get(), (io.a) this.f48005d.get(), (xp.a) this.f48006e.get(), str5, vVar, (zn.a) this.f48007f.get());
     }
 }

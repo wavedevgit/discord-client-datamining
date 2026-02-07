@@ -8,17 +8,17 @@ import xr.a;
 public final class LightClassOriginKind {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ LightClassOriginKind[] f33049d;
+    private static final /* synthetic */ LightClassOriginKind[] f33097d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33050e;
+    private static final /* synthetic */ EnumEntries f33098e;
     public static final LightClassOriginKind SOURCE = new LightClassOriginKind("SOURCE", 0);
     public static final LightClassOriginKind BINARY = new LightClassOriginKind("BINARY", 1);
 
     static {
         LightClassOriginKind[] a10 = a();
-        f33049d = a10;
-        f33050e = a.a(a10);
+        f33097d = a10;
+        f33098e = a.a(a10);
     }
 
     private LightClassOriginKind(String str, int i10) {
@@ -33,6 +33,6 @@ public final class LightClassOriginKind {
     }
 
     public static LightClassOriginKind[] values() {
-        return (LightClassOriginKind[]) f33049d.clone();
+        return (LightClassOriginKind[]) f33097d.clone();
     }
 }

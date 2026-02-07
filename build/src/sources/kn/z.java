@@ -11,22 +11,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class z {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f31935f = new a(null);
+    public static final a f31983f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final double f31936a;
+    private final double f31984a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final double f31937b;
+    private final double f31985b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f31938c;
+    private final double f31986c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final double f31939d;
+    private final double f31987d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f31940e;
+    private final double f31988e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -101,24 +101,24 @@ public final class z {
     }
 
     public z(double d10, double d11, double d12, double d13, double d14) {
-        this.f31936a = d10;
-        this.f31937b = d11;
-        this.f31938c = d12;
-        this.f31939d = d13;
-        this.f31940e = d14;
+        this.f31984a = d10;
+        this.f31985b = d11;
+        this.f31986c = d12;
+        this.f31987d = d13;
+        this.f31988e = d14;
     }
 
     public final double a() {
-        return this.f31940e;
+        return this.f31988e;
     }
 
     public final ReadableMap b() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putDouble("tiltX", this.f31936a);
-        createMap.putDouble("tiltY", this.f31937b);
-        createMap.putDouble("altitudeAngle", this.f31938c);
-        createMap.putDouble("azimuthAngle", this.f31939d);
-        createMap.putDouble("pressure", this.f31940e);
+        createMap.putDouble("tiltX", this.f31984a);
+        createMap.putDouble("tiltY", this.f31985b);
+        createMap.putDouble("altitudeAngle", this.f31986c);
+        createMap.putDouble("azimuthAngle", this.f31987d);
+        createMap.putDouble("pressure", this.f31988e);
         Intrinsics.checkNotNullExpressionValue(createMap, "apply(...)");
         return createMap;
     }
@@ -131,22 +131,22 @@ public final class z {
             return false;
         }
         z zVar = (z) obj;
-        if (Double.compare(this.f31936a, zVar.f31936a) == 0 && Double.compare(this.f31937b, zVar.f31937b) == 0 && Double.compare(this.f31938c, zVar.f31938c) == 0 && Double.compare(this.f31939d, zVar.f31939d) == 0 && Double.compare(this.f31940e, zVar.f31940e) == 0) {
+        if (Double.compare(this.f31984a, zVar.f31984a) == 0 && Double.compare(this.f31985b, zVar.f31985b) == 0 && Double.compare(this.f31986c, zVar.f31986c) == 0 && Double.compare(this.f31987d, zVar.f31987d) == 0 && Double.compare(this.f31988e, zVar.f31988e) == 0) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((((Double.hashCode(this.f31936a) * 31) + Double.hashCode(this.f31937b)) * 31) + Double.hashCode(this.f31938c)) * 31) + Double.hashCode(this.f31939d)) * 31) + Double.hashCode(this.f31940e);
+        return (((((((Double.hashCode(this.f31984a) * 31) + Double.hashCode(this.f31985b)) * 31) + Double.hashCode(this.f31986c)) * 31) + Double.hashCode(this.f31987d)) * 31) + Double.hashCode(this.f31988e);
     }
 
     public String toString() {
-        double d10 = this.f31936a;
-        double d11 = this.f31937b;
-        double d12 = this.f31938c;
-        double d13 = this.f31939d;
-        double d14 = this.f31940e;
+        double d10 = this.f31984a;
+        double d11 = this.f31985b;
+        double d12 = this.f31986c;
+        double d13 = this.f31987d;
+        double d14 = this.f31988e;
         return "StylusData(tiltX=" + d10 + ", tiltY=" + d11 + ", altitudeAngle=" + d12 + ", azimuthAngle=" + d13 + ", pressure=" + d14 + ")";
     }
 

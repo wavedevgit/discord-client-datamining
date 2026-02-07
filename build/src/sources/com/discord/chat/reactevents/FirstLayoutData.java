@@ -68,7 +68,7 @@ public final class FirstLayoutData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(FirstLayoutData firstLayoutData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.x(serialDescriptor, 0, firstLayoutData.firstVisibleMessageIndex);
-        x xVar = x.f31095a;
+        x xVar = x.f31143a;
         compositeEncoder.l(serialDescriptor, 1, xVar, firstLayoutData.firstVisibleMessagePercentVisible);
         compositeEncoder.x(serialDescriptor, 2, firstLayoutData.lastVisibleMessageIndex);
         compositeEncoder.l(serialDescriptor, 3, xVar, firstLayoutData.lastVisibleMessagePercentVisible);

@@ -10,11 +10,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = {
-        'Cell': 'Cell',
-        'StickyHeader': 'StickyHeader',
-        'Measurement': 'Measurement'
+        'defaultDrawDistance': 250,
+        'supportsOffsetCorrection': true,
+        'trackAverageRenderTimeForOffsetProjection': true
     };
-    var1.RenderTargetOptions = var0;
+    var1.PlatformConfig = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

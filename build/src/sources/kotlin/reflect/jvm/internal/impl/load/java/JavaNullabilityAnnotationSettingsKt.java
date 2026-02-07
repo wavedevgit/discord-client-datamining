@@ -13,42 +13,42 @@ import qr.v;
 public final class JavaNullabilityAnnotationSettingsKt {
 
     /* renamed from: a */
-    private static final FqName f32707a;
+    private static final FqName f32755a;
 
     /* renamed from: b */
-    private static final FqName f32708b;
+    private static final FqName f32756b;
 
     /* renamed from: c */
-    private static final FqName f32709c;
+    private static final FqName f32757c;
 
     /* renamed from: d */
-    private static final FqName f32710d;
+    private static final FqName f32758d;
 
     /* renamed from: e */
-    private static final String f32711e;
+    private static final String f32759e;
 
     /* renamed from: f */
-    private static final FqName[] f32712f;
+    private static final FqName[] f32760f;
 
     /* renamed from: g */
-    private static final NullabilityAnnotationStates f32713g;
+    private static final NullabilityAnnotationStates f32761g;
 
     /* renamed from: h */
-    private static final JavaNullabilityAnnotationsStatus f32714h;
+    private static final JavaNullabilityAnnotationsStatus f32762h;
 
     static {
         FqName fqName = new FqName("org.jspecify.nullness");
-        f32707a = fqName;
+        f32755a = fqName;
         FqName fqName2 = new FqName("org.jspecify.annotations");
-        f32708b = fqName2;
+        f32756b = fqName2;
         FqName fqName3 = new FqName("io.reactivex.rxjava3.annotations");
-        f32709c = fqName3;
+        f32757c = fqName3;
         FqName fqName4 = new FqName("org.checkerframework.checker.nullness.compatqual");
-        f32710d = fqName4;
+        f32758d = fqName4;
         String asString = fqName3.asString();
-        f32711e = asString;
+        f32759e = asString;
         FqName fqName5 = new FqName(asString + ".Nullable");
-        f32712f = new FqName[]{fqName5, new FqName(asString + ".NonNull")};
+        f32760f = new FqName[]{fqName5, new FqName(asString + ".NonNull")};
         FqName fqName6 = new FqName("org.jetbrains.annotations");
         JavaNullabilityAnnotationsStatus.Companion companion = JavaNullabilityAnnotationsStatus.Companion;
         Pair a10 = v.a(fqName6, companion.getDEFAULT());
@@ -69,15 +69,15 @@ public final class JavaNullabilityAnnotationSettingsKt {
         Pair a23 = v.a(new FqName("lombok"), companion.getDEFAULT());
         qr.j jVar = new qr.j(2, 1);
         ReportLevel reportLevel2 = ReportLevel.STRICT;
-        f32713g = new NullabilityAnnotationStatesImpl(o0.m(a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, v.a(fqName, new JavaNullabilityAnnotationsStatus(reportLevel, jVar, reportLevel2)), v.a(fqName2, new JavaNullabilityAnnotationsStatus(reportLevel, new qr.j(2, 1), reportLevel2)), v.a(fqName3, new JavaNullabilityAnnotationsStatus(reportLevel, new qr.j(1, 8), reportLevel2))));
-        f32714h = new JavaNullabilityAnnotationsStatus(reportLevel, null, null, 4, null);
+        f32761g = new NullabilityAnnotationStatesImpl(o0.m(a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, v.a(fqName, new JavaNullabilityAnnotationsStatus(reportLevel, jVar, reportLevel2)), v.a(fqName2, new JavaNullabilityAnnotationsStatus(reportLevel, new qr.j(2, 1), reportLevel2)), v.a(fqName3, new JavaNullabilityAnnotationsStatus(reportLevel, new qr.j(1, 8), reportLevel2))));
+        f32762h = new JavaNullabilityAnnotationsStatus(reportLevel, null, null, 4, null);
     }
 
     @NotNull
     public static final Jsr305Settings getDefaultJsr305Settings(@NotNull qr.j configuredKotlinVersion) {
         ReportLevel reportLevelBefore;
         Intrinsics.checkNotNullParameter(configuredKotlinVersion, "configuredKotlinVersion");
-        JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = f32714h;
+        JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = f32762h;
         if (javaNullabilityAnnotationsStatus.getSinceVersion() != null && javaNullabilityAnnotationsStatus.getSinceVersion().compareTo(configuredKotlinVersion) <= 0) {
             reportLevelBefore = javaNullabilityAnnotationsStatus.getReportLevelAfter();
         } else {
@@ -89,7 +89,7 @@ public final class JavaNullabilityAnnotationSettingsKt {
 
     public static /* synthetic */ Jsr305Settings getDefaultJsr305Settings$default(qr.j jVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            jVar = qr.j.f48036q;
+            jVar = qr.j.f48084q;
         }
         return getDefaultJsr305Settings(jVar);
     }
@@ -110,12 +110,12 @@ public final class JavaNullabilityAnnotationSettingsKt {
 
     @NotNull
     public static final FqName getJSPECIFY_ANNOTATIONS_PACKAGE() {
-        return f32708b;
+        return f32756b;
     }
 
     @NotNull
     public static final FqName[] getRXJAVA3_ANNOTATIONS() {
-        return f32712f;
+        return f32760f;
     }
 
     @NotNull
@@ -127,7 +127,7 @@ public final class JavaNullabilityAnnotationSettingsKt {
         if (reportLevel != null) {
             return reportLevel;
         }
-        JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = (JavaNullabilityAnnotationsStatus) f32713g.get(annotation);
+        JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = (JavaNullabilityAnnotationsStatus) f32761g.get(annotation);
         if (javaNullabilityAnnotationsStatus == null) {
             return ReportLevel.IGNORE;
         }

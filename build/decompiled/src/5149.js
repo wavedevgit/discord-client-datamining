@@ -1,19 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function() {
-        var0 = undefined;
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var4 = var3.useRef;
+    var _closure1_slot0 = var4;
+    var3 = var3.useLayoutEffect;
+    var _closure1_slot1 = var3;
+    var1 = function() {
+        var3 = _closure1_slot0;
+        var4 = undefined;
+        var0 = false;
+        var0 = var3.bind(var4)(var0);
+        var _closure2_slot0 = var0;
+        var3 = _closure1_slot1;
+        var2 = function() { // Environment: var1
+            var1 = _closure2_slot0;
+            var0 = false;
+            var1.current = var0;
+            var0 = function() { // Environment: var0
+                var1 = _closure2_slot0;
+                var0 = true;
+                var1.current = var0;
+                var0 = undefined;
+                return var0;
+            };
+            return var0;
+        };
+        var1 = new Array(0);
+        var1 = var3.bind(var4)(var2, var1);
         return var0;
     };
-    var1.default = var0;
-    var0 = undefined;
+    var2.useUnmountFlag = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

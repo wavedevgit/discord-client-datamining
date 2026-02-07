@@ -146,7 +146,7 @@ public final class i implements dn.b, Parcelable {
                 if (a10 != null) {
                     tp.b bVar2 = this.f21778c;
                     bVar2.getRoot().setBackground(a10);
-                    bVar2.f50796d.setBackgroundColor(0);
+                    bVar2.f50844d.setBackgroundColor(0);
                 }
                 Function4 function4 = this.f21779d;
                 tp.b bVar3 = this.f21778c;
@@ -187,7 +187,7 @@ public final class i implements dn.b, Parcelable {
         @Override // kotlin.jvm.functions.Function4
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
             a((tp.b) obj, (i) obj2, (dn.a0) obj3, (Map) obj4);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -247,7 +247,7 @@ public final class i implements dn.b, Parcelable {
                 return l10;
             }
         };
-        Pi2NavigationBar navigationBar = bVar.f50797e;
+        Pi2NavigationBar navigationBar = bVar.f50845e;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         ConstraintLayout root = bVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
@@ -262,13 +262,13 @@ public final class i implements dn.b, Parcelable {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(i iVar) {
         iVar.f21769o.invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(i iVar) {
         iVar.f21770p.invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -278,7 +278,7 @@ public final class i implements dn.b, Parcelable {
         ConstraintLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         bq.f.d(root, false, false, false, false, 15, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // dn.b

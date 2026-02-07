@@ -78,7 +78,7 @@ public final class m {
         }
 
         public final Object j(Object obj, Continuation continuation) {
-            return ((a) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -115,7 +115,7 @@ public final class m {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(Object obj, Continuation continuation) {
-            return ((b) create(obj, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(obj, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

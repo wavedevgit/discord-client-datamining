@@ -47,7 +47,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(config, "config");
         final p c10 = p.c(uiComponentHelper.b());
         InputInternationalDb.Attributes attributes = config.getAttributes();
-        TextView textView = c10.f29265h;
+        TextView textView = c10.f29313h;
         String str4 = null;
         if (attributes != null) {
             str = attributes.getLabel();
@@ -55,26 +55,26 @@ public abstract class c {
             str = null;
         }
         textView.setText(str);
-        TextInputLayout textInputLayout = c10.f29260c;
+        TextInputLayout textInputLayout = c10.f29308c;
         if (attributes != null) {
             str2 = attributes.getLabelIdbCountry();
         } else {
             str2 = null;
         }
         textInputLayout.setHint(str2);
-        TextInputLayout textInputLayout2 = c10.f29263f;
+        TextInputLayout textInputLayout2 = c10.f29311f;
         if (attributes != null) {
             str3 = attributes.getLabelIdbType();
         } else {
             str3 = null;
         }
         textInputLayout2.setHint(str3);
-        TextInputLayout textInputLayout3 = c10.f29266i;
+        TextInputLayout textInputLayout3 = c10.f29314i;
         if (attributes != null) {
             str4 = attributes.getLabelIdbValue();
         }
         textInputLayout3.setHint(str4);
-        EditText editText = c10.f29266i.getEditText();
+        EditText editText = c10.f29314i.getEditText();
         if (editText != null) {
             u.b(bVar.u(), editText);
         }
@@ -97,27 +97,27 @@ public abstract class c {
         if (styles != null) {
             InputSelectComponentStyle inputSelectStyle = styles.getInputSelectStyle();
             if (inputSelectStyle != null) {
-                TextInputLayout idbCountryInput = pVar.f29260c;
+                TextInputLayout idbCountryInput = pVar.f29308c;
                 Intrinsics.checkNotNullExpressionValue(idbCountryInput, "idbCountryInput");
                 o.i(idbCountryInput, inputSelectStyle);
-                TextInputLayout idbIdTypeInput = pVar.f29263f;
+                TextInputLayout idbIdTypeInput = pVar.f29311f;
                 Intrinsics.checkNotNullExpressionValue(idbIdTypeInput, "idbIdTypeInput");
                 o.i(idbIdTypeInput, inputSelectStyle);
             }
             InputTextBasedComponentStyle inputTextStyle = styles.getInputTextStyle();
             if (inputTextStyle != null) {
-                TextInputLayout idbValueInput = pVar.f29266i;
+                TextInputLayout idbValueInput = pVar.f29314i;
                 Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
                 a0.k(idbValueInput, inputTextStyle);
             }
             TextBasedComponentStyle textStyle = styles.getTextStyle();
             if (textStyle != null) {
-                TextView idbDescription = pVar.f29262e;
+                TextView idbDescription = pVar.f29310e;
                 Intrinsics.checkNotNullExpressionValue(idbDescription, "idbDescription");
                 f0.n(idbDescription, textStyle, null, 2, null);
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final b4 l(b.c cVar) {
@@ -141,7 +141,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(onCountryInputClick, "onCountryInputClick");
         Intrinsics.checkNotNullParameter(onIdTypeInputClick, "onIdTypeInputClick");
-        EditText editText = binding.f29260c.getEditText();
+        EditText editText = binding.f29308c.getEditText();
         if (editText != null) {
             editText.setText(CollectionsKt.x0(bVar.f().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: fq.g1
                 @Override // kotlin.jvm.functions.Function1
@@ -152,7 +152,7 @@ public abstract class c {
                 }
             }, 30, null));
         }
-        EditText editText2 = binding.f29263f.getEditText();
+        EditText editText2 = binding.f29311f.getEditText();
         if (editText2 != null) {
             editText2.setText(CollectionsKt.x0(bVar.q().b(), ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, null, null, 0, null, new Function1() { // from class: fq.h1
                 @Override // kotlin.jvm.functions.Function1
@@ -170,9 +170,9 @@ public abstract class c {
         boolean i12 = bVar.i();
         boolean l10 = bVar.l();
         if (w10 == null) {
-            binding.f29263f.setEnabled(false);
+            binding.f29311f.setEnabled(false);
         } else {
-            binding.f29263f.setEnabled(true);
+            binding.f29311f.setEnabled(true);
         }
         if (w10 == null && e10 != null && e10.size() == 1) {
             bVar.f().c(CollectionsKt.e(l((b.c) CollectionsKt.o0(e10))));
@@ -186,14 +186,14 @@ public abstract class c {
                 l10 = true;
             }
         }
-        TextInputLayout textInputLayout = binding.f29260c;
+        TextInputLayout textInputLayout = binding.f29308c;
         if (i12) {
             i10 = 8;
         } else {
             i10 = 0;
         }
         textInputLayout.setVisibility(i10);
-        TextInputLayout textInputLayout2 = binding.f29263f;
+        TextInputLayout textInputLayout2 = binding.f29311f;
         if (l10) {
             i11 = 8;
         } else {
@@ -201,7 +201,7 @@ public abstract class c {
         }
         textInputLayout2.setVisibility(i11);
         if (w10 != null && x10 != null) {
-            binding.f29266i.setEnabled(true);
+            binding.f29314i.setEnabled(true);
             List c10 = bVar.c();
             String str7 = null;
             if (c10 != null) {
@@ -222,7 +222,7 @@ public abstract class c {
             } else {
                 idType = null;
             }
-            TextInputLayout idbValueInput = binding.f29266i;
+            TextInputLayout idbValueInput = binding.f29314i;
             Intrinsics.checkNotNullExpressionValue(idbValueInput, "idbValueInput");
             if (idType != null) {
                 str4 = idType.getMask();
@@ -246,26 +246,26 @@ public abstract class c {
                 str6 = null;
             }
             if (str6 != null && !StringsKt.k0(str6)) {
-                binding.f29262e.setVisibility(0);
-                TextView textView = binding.f29262e;
+                binding.f29310e.setVisibility(0);
+                TextView textView = binding.f29310e;
                 if (idType != null) {
                     str7 = idType.getDescription();
                 }
                 textView.setText(str7);
             } else {
-                binding.f29262e.setVisibility(8);
+                binding.f29310e.setVisibility(8);
             }
         } else {
-            binding.f29266i.setEnabled(false);
-            binding.f29262e.setVisibility(8);
+            binding.f29314i.setEnabled(false);
+            binding.f29310e.setVisibility(8);
         }
-        binding.f29260c.setOnClickListener(new View.OnClickListener() { // from class: fq.i1
+        binding.f29308c.setOnClickListener(new View.OnClickListener() { // from class: fq.i1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.o(Function0.this, view);
             }
         });
-        EditText editText3 = binding.f29260c.getEditText();
+        EditText editText3 = binding.f29308c.getEditText();
         if (editText3 != null) {
             editText3.setOnClickListener(new View.OnClickListener() { // from class: fq.j1
                 @Override // android.view.View.OnClickListener
@@ -274,13 +274,13 @@ public abstract class c {
                 }
             });
         }
-        binding.f29263f.setOnClickListener(new View.OnClickListener() { // from class: fq.k1
+        binding.f29311f.setOnClickListener(new View.OnClickListener() { // from class: fq.k1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 com.withpersona.sdk2.inquiry.steps.ui.components.c.q(Function0.this, view);
             }
         });
-        EditText editText4 = binding.f29263f.getEditText();
+        EditText editText4 = binding.f29311f.getEditText();
         if (editText4 != null) {
             editText4.setOnClickListener(new View.OnClickListener() { // from class: fq.l1
                 @Override // android.view.View.OnClickListener
@@ -289,9 +289,9 @@ public abstract class c {
                 }
             });
         }
-        binding.f29260c.setError(str);
-        binding.f29263f.setError(str2);
-        binding.f29266i.setError(str3);
+        binding.f29308c.setError(str);
+        binding.f29311f.setError(str2);
+        binding.f29314i.setError(str3);
     }
 
     public static final void o(Function0 function0, View view) {

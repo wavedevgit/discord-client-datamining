@@ -61,7 +61,7 @@ final class h extends i {
             }
             this.f7378n = true;
             h0Var.V(bArr.length);
-            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f50514b));
+            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f50562b));
             if (c11 == null) {
                 return true;
             }

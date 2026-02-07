@@ -25,19 +25,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/auth/QRLoginUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun29929: for (var _fun29929_ip = 0;;) switch (_fun29929_ip) {
+        _fun29938: for (var _fun29938_ip = 0;;) switch (_fun29938_ip) {
             case 0:
                 var5 = arg0;
                 var3 = arg1;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun29929_ip = 87;
-                    continue _fun29929
+                    _fun29938_ip = 87;
+                    continue _fun29938
                 }
             case 12:
                 if (!(var0 != var3)) {
-                    _fun29929_ip = 87;
-                    continue _fun29929
+                    _fun29938_ip = 87;
+                    continue _fun29938
                 }
             case 16:
                 var6 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.isDiscordHostname;
                 var2 = var2.bind(var4)(var5);
                 if (!var2) {
-                    _fun29929_ip = 87;
-                    continue _fun29929
+                    _fun29938_ip = 87;
+                    continue _fun29938
                 }
             case 54:
                 var2 = var3.match;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var3;
                 var1 = null;
                 if (!var2) {
-                    _fun29929_ip = 85;
-                    continue _fun29929
+                    _fun29938_ip = 85;
+                    continue _fun29938
                 }
             case 78:
                 var2 = 1;

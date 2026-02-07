@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.HappeningNowCardTrackingType = var3;
     var2.STATUS_CUTOUT_SMALL = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5458, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5505, 2]);

@@ -4,49 +4,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function arg0() {
-        _fun31691: for (var _fun31691_ip = 0;;) switch (_fun31691_ip) {
+    var1 = function arg0, arg1, arg2() {
+        _fun31702: for (var _fun31702_ip = 0;;) switch (_fun31702_ip) {
             case 0:
-                var0 = arg0;
-                var2 = 'string';
-                var1 = typeof var0;
-                if (!(var2 !== var1)) {
-                    _fun31691_ip = 91;
-                    continue _fun31691
-                }
-            case 14:
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var1 = 0;
-                var1 = var2[var1];
+                var5 = arg0;
+                var1 = arg2;
+                var0 = null;
+                var3 = var0 == var5;
                 var2 = undefined;
-                var1 = var3.bind(var2)(var1);
-                var1 = var1.bind(var2)(var0);
-                if (var1) {
-                    _fun31691_ip = 91;
-                    continue _fun31691
+                var0 = undefined;
+                if (var3) {
+                    _fun31702_ip = 50;
+                    continue _fun31702
                 }
-            case 46:
-                var2 = '' + var0;
-                var1 = '0';
-                if (!(var1 === var2)) {
-                    _fun31691_ip = 86;
-                    continue _fun31691
+            case 19:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var3 = 0;
+                var3 = var6[var3];
+                var4 = var4.bind(var2)(var3);
+                var3 = arg1;
+                var0 = var4.bind(var2)(var5, var3);
+            case 50:
+                if (!(var2 === var0)) {
+                    _fun31702_ip = 57;
+                    continue _fun31702
                 }
-            case 59:
-                var1 = 1;
-                var4 = var1 / var0;
-                var1 = '-0';
-                var3 = -inf;
-                if (!(var4 !== var3)) {
-                    _fun31691_ip = 89;
-                    continue _fun31691
-                }
-            case 86:
-                var1 = var2;
-            case 89:
-                return var1;
-            case 91:
+            case 54:
+                var0 = var1;
+            case 57:
                 return var0;
         }
     };
@@ -54,4 +40,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3236]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3541]);

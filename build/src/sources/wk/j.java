@@ -6,15 +6,15 @@ import com.discord.notifications.api.NotificationData;
 public abstract class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lk.a f53837a;
+    private final lk.a f53885a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s f53838b;
+    private final s f53886b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(lk.a aVar) {
-        this.f53837a = aVar;
-        this.f53838b = new s(aVar);
+        this.f53885a = aVar;
+        this.f53886b = new s(aVar);
     }
 
     public static j a(lk.a aVar) {
@@ -62,12 +62,12 @@ public abstract class j {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final s b() {
-        return this.f53838b;
+        return this.f53886b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final lk.a c() {
-        return this.f53837a;
+        return this.f53885a;
     }
 
     public abstract String d();

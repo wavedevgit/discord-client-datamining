@@ -73,7 +73,7 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         KSerializer u10 = a.u(n2Var);
         KSerializer u11 = a.u(n2Var);
         KSerializer u12 = a.u(n2Var);
@@ -81,7 +81,7 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
         KSerializer u14 = a.u(n2Var);
         KSerializer u15 = a.u(n2Var);
         KSerializer u16 = a.u(n2Var);
-        h hVar = h.f31005a;
+        h hVar = h.f31053a;
         KSerializer u17 = a.u(hVar);
         KSerializer u18 = a.u(hVar);
         KSerializer u19 = a.u(hVar);
@@ -89,7 +89,7 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
         KSerializer u21 = a.u(n2Var);
         KSerializer u22 = a.u(n2Var);
         ChannelId$$serializer channelId$$serializer = ChannelId$$serializer.INSTANCE;
-        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, n2Var, n2Var, p0.f31057a, StructurableTextSerializer.INSTANCE, u10, u11, u12, u13, u14, u15, u16, u17, hVar, u18, u19, u20, u21, u22};
+        return new KSerializer[]{channelId$$serializer, channelId$$serializer, MessageId$$serializer.INSTANCE, GuildId$$serializer.INSTANCE, n2Var, n2Var, p0.f31105a, StructurableTextSerializer.INSTANCE, u10, u11, u12, u13, u14, u15, u16, u17, hVar, u18, u19, u20, u21, u22};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -138,12 +138,12 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 4);
             String m11 = b10.m(serialDescriptor, 5);
             int i13 = b10.i(serialDescriptor, 6);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str = (String) b10.n(serialDescriptor, 10, n2Var, null);
             String str17 = (String) b10.n(serialDescriptor, 12, n2Var, null);
             String str18 = (String) b10.n(serialDescriptor, 13, n2Var, null);
             String str19 = (String) b10.n(serialDescriptor, 14, n2Var, null);
-            h hVar = h.f31005a;
+            h hVar = h.f31053a;
             Boolean bool7 = (Boolean) b10.n(serialDescriptor, 15, hVar, null);
             boolean C = b10.C(serialDescriptor, 16);
             Boolean bool8 = (Boolean) b10.n(serialDescriptor, 17, hVar, null);
@@ -330,12 +330,12 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
                         str30 = str30;
                         bool10 = bool10;
                         c10 = 11;
-                        str27 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str27);
+                        str27 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str27);
                         str29 = str29;
                         str20 = str20;
                         break;
                     case 9:
-                        str30 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str30);
+                        str30 = (String) b10.n(serialDescriptor, 9, n2.f31089a, str30);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         str20 = str20;
                         bool10 = bool10;
@@ -345,31 +345,31 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
                     case 10:
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         bool10 = bool10;
-                        str29 = (String) b10.n(serialDescriptor, 10, n2.f31041a, str29);
+                        str29 = (String) b10.n(serialDescriptor, 10, n2.f31089a, str29);
                         c10 = 11;
                         continue;
                     case 11:
-                        str23 = (String) b10.n(serialDescriptor, 11, n2.f31041a, str23);
+                        str23 = (String) b10.n(serialDescriptor, 11, n2.f31089a, str23);
                         i14 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         c10 = 11;
                         break;
                     case 12:
-                        str16 = (String) b10.n(serialDescriptor, 12, n2.f31041a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 12, n2.f31089a, str16);
                         i14 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         c10 = 11;
                         break;
                     case 13:
-                        str22 = (String) b10.n(serialDescriptor, 13, n2.f31041a, str22);
+                        str22 = (String) b10.n(serialDescriptor, 13, n2.f31089a, str22);
                         i14 |= 8192;
                         c10 = 11;
                         break;
                     case 14:
-                        str21 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str21);
+                        str21 = (String) b10.n(serialDescriptor, 14, n2.f31089a, str21);
                         i14 |= 16384;
                         c10 = 11;
                         break;
                     case 15:
-                        bool11 = (Boolean) b10.n(serialDescriptor, 15, h.f31005a, bool11);
+                        bool11 = (Boolean) b10.n(serialDescriptor, 15, h.f31053a, bool11);
                         i12 = PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i14 |= i12;
                         c10 = 11;
@@ -380,31 +380,31 @@ public /* synthetic */ class PostPreviewEmbed$$serializer implements h0 {
                         c10 = 11;
                         break;
                     case 17:
-                        bool10 = (Boolean) b10.n(serialDescriptor, 17, h.f31005a, bool10);
+                        bool10 = (Boolean) b10.n(serialDescriptor, 17, h.f31053a, bool10);
                         i12 = 131072;
                         i14 |= i12;
                         c10 = 11;
                         break;
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                        bool13 = (Boolean) b10.n(serialDescriptor, 18, h.f31005a, bool13);
+                        bool13 = (Boolean) b10.n(serialDescriptor, 18, h.f31053a, bool13);
                         i12 = 262144;
                         i14 |= i12;
                         c10 = 11;
                         break;
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                        bool12 = (Boolean) b10.n(serialDescriptor, 19, h.f31005a, bool12);
+                        bool12 = (Boolean) b10.n(serialDescriptor, 19, h.f31053a, bool12);
                         i12 = 524288;
                         i14 |= i12;
                         c10 = 11;
                         break;
                     case 20:
-                        str24 = (String) b10.n(serialDescriptor, 20, n2.f31041a, str24);
+                        str24 = (String) b10.n(serialDescriptor, 20, n2.f31089a, str24);
                         i12 = 1048576;
                         i14 |= i12;
                         c10 = 11;
                         break;
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                        str20 = (String) b10.n(serialDescriptor, 21, n2.f31041a, str20);
+                        str20 = (String) b10.n(serialDescriptor, 21, n2.f31089a, str20);
                         i12 = 2097152;
                         i14 |= i12;
                         c10 = 11;

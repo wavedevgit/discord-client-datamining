@@ -7,28 +7,28 @@ import tc.z;
 public final class s implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final t f50554a;
+    private final t f50602a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f50555b;
+    private final long f50603b;
 
     public s(t tVar, long j10) {
-        this.f50554a = tVar;
-        this.f50555b = j10;
+        this.f50602a = tVar;
+        this.f50603b = j10;
     }
 
     private a0 a(long j10, long j11) {
-        return new a0((j10 * 1000000) / this.f50554a.f50560e, this.f50555b + j11);
+        return new a0((j10 * 1000000) / this.f50602a.f50608e, this.f50603b + j11);
     }
 
     @Override // tc.z
     public z.a e(long j10) {
         long j11;
-        ne.a.i(this.f50554a.f50566k);
-        t tVar = this.f50554a;
-        t.a aVar = tVar.f50566k;
-        long[] jArr = aVar.f50568a;
-        long[] jArr2 = aVar.f50569b;
+        ne.a.i(this.f50602a.f50614k);
+        t tVar = this.f50602a;
+        t.a aVar = tVar.f50614k;
+        long[] jArr = aVar.f50616a;
+        long[] jArr2 = aVar.f50617b;
         int i10 = w0.i(jArr, tVar.i(j10), true, false);
         long j12 = 0;
         if (i10 == -1) {
@@ -40,7 +40,7 @@ public final class s implements z {
             j12 = jArr2[i10];
         }
         a0 a10 = a(j11, j12);
-        if (a10.f50476a != j10 && i10 != jArr.length - 1) {
+        if (a10.f50524a != j10 && i10 != jArr.length - 1) {
             int i11 = i10 + 1;
             return new z.a(a10, a(jArr[i11], jArr2[i11]));
         }
@@ -54,6 +54,6 @@ public final class s implements z {
 
     @Override // tc.z
     public long i() {
-        return this.f50554a.f();
+        return this.f50602a.f();
     }
 }

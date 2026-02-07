@@ -107,7 +107,7 @@ public final class MediaPlayerPlaybackRateChanged implements ReactEvent {
     public WritableMap serialize() {
         WritableNativeMap nativeMapOf = NativeMapExtensionsKt.nativeMapOf(v.a("rate", Double.valueOf(this.rate)));
         if (this.source != null) {
-            nativeMapOf.putMap("source", NativeMapExtensionsKt.toNativeMap(a.f41154b.e(w.b(MediaPlayerPlaybackSource.class), this.source)));
+            nativeMapOf.putMap("source", NativeMapExtensionsKt.toNativeMap(a.f41202b.e(w.b(MediaPlayerPlaybackSource.class), this.source)));
         }
         return nativeMapOf;
     }

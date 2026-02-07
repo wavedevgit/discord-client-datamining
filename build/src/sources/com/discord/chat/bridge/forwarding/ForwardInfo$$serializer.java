@@ -39,7 +39,7 @@ public /* synthetic */ class ForwardInfo$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a, a.u(ForwardFooterInfo$$serializer.INSTANCE)};
+        return new KSerializer[]{p0.f31105a, a.u(ForwardFooterInfo$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

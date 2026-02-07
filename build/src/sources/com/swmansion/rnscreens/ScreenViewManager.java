@@ -203,7 +203,7 @@ public class ScreenViewManager extends ViewGroupManager<Screen> implements RNSSc
         Intrinsics.checkNotNullParameter(view, "view");
         view.getSheetDetents().clear();
         if (readableArray != null && readableArray.size() != 0) {
-            kotlin.sequences.k.X(kotlin.sequences.k.R(CollectionsKt.b0(kotlin.ranges.a.f32102o.a(0, readableArray.size() - 1, 1)), new Function1() { // from class: com.swmansion.rnscreens.r0
+            kotlin.sequences.k.X(kotlin.sequences.k.R(CollectionsKt.b0(kotlin.ranges.a.f32150o.a(0, readableArray.size() - 1, 1)), new Function1() { // from class: com.swmansion.rnscreens.r0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     double d10;

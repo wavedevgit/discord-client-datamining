@@ -33,22 +33,22 @@ import r2.a;
 public final class c extends m2.b {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a f43576l = new a(null);
+    private static final a f43624l = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private final Context f43577g;
+    private final Context f43625g;
 
     /* renamed from: h  reason: collision with root package name */
-    public g2.j f43578h;
+    public g2.j f43626h;
 
     /* renamed from: i  reason: collision with root package name */
-    public Executor f43579i;
+    public Executor f43627i;
 
     /* renamed from: j  reason: collision with root package name */
-    private CancellationSignal f43580j;
+    private CancellationSignal f43628j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final i f43581k;
+    private final i f43629k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static final class a {
@@ -65,7 +65,7 @@ public final class c extends m2.b {
     public static final class b extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f43582d = new b();
+        public static final b f43630d = new b();
 
         b() {
             super(2);
@@ -73,14 +73,14 @@ public final class c extends m2.b {
 
         public final void a(CancellationSignal cancellationSignal, Function0 f10) {
             Intrinsics.checkNotNullParameter(f10, "f");
-            b.a aVar = m2.b.f36828f;
+            b.a aVar = m2.b.f36876f;
             m2.b.e(cancellationSignal, f10);
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((CancellationSignal) obj, (Function0) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -112,7 +112,7 @@ public final class c extends m2.b {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             b((h2.m) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -131,7 +131,7 @@ public final class c extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1220invoke();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -152,12 +152,12 @@ public final class c extends m2.b {
     public static final class e extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d0 f43586e;
+        final /* synthetic */ d0 f43634e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(d0 d0Var) {
             super(0);
-            this.f43586e = d0Var;
+            this.f43634e = d0Var;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -168,14 +168,14 @@ public final class c extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1221invoke();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1221invoke() {
             Executor s10 = c.this.s();
             final c cVar = c.this;
-            final d0 d0Var = this.f43586e;
+            final d0 d0Var = this.f43634e;
             s10.execute(new Runnable() { // from class: p2.f
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -190,12 +190,12 @@ public final class c extends m2.b {
     public static final class f extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ h2.m f43588e;
+        final /* synthetic */ h2.m f43636e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(h2.m mVar) {
             super(0);
-            this.f43588e = mVar;
+            this.f43636e = mVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -210,14 +210,14 @@ public final class c extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1222invoke();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1222invoke() {
             Executor s10 = c.this.s();
             final c cVar = c.this;
-            final h2.m mVar = this.f43588e;
+            final h2.m mVar = this.f43636e;
             s10.execute(new Runnable() { // from class: p2.g
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -231,34 +231,34 @@ public final class c extends m2.b {
     static final class g extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellationSignal f43589d;
+        final /* synthetic */ CancellationSignal f43637d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f43590e;
+        final /* synthetic */ c f43638e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(CancellationSignal cancellationSignal, c cVar) {
             super(1);
-            this.f43589d = cancellationSignal;
-            this.f43590e = cVar;
+            this.f43637d = cancellationSignal;
+            this.f43638e = cVar;
         }
 
         public final void a(xf.g gVar) {
-            if (CredentialProviderPlayServicesImpl.Companion.a(this.f43589d)) {
+            if (CredentialProviderPlayServicesImpl.Companion.a(this.f43637d)) {
                 return;
             }
-            Intent intent = new Intent(this.f43590e.f43577g, IdentityCredentialApiHiddenActivity.class);
+            Intent intent = new Intent(this.f43638e.f43625g, IdentityCredentialApiHiddenActivity.class);
             intent.setFlags(65536);
-            c cVar = this.f43590e;
-            intent.putExtra("RESULT_RECEIVER", cVar.d(cVar.f43581k));
+            c cVar = this.f43638e;
+            intent.putExtra("RESULT_RECEIVER", cVar.d(cVar.f43629k));
             intent.putExtra("EXTRA_GET_CREDENTIAL_INTENT", gVar.b());
-            this.f43590e.f43577g.startActivity(intent);
+            this.f43638e.f43625g.startActivity(intent);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((xf.g) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -267,20 +267,20 @@ public final class c extends m2.b {
     public static final class h extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Executor f43591d;
+        final /* synthetic */ Executor f43639d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g2.j f43592e;
+        final /* synthetic */ g2.j f43640e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ h2.m f43593i;
+        final /* synthetic */ h2.m f43641i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         h(Executor executor, g2.j jVar, h2.m mVar) {
             super(0);
-            this.f43591d = executor;
-            this.f43592e = jVar;
-            this.f43593i = mVar;
+            this.f43639d = executor;
+            this.f43640e = jVar;
+            this.f43641i = mVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -291,14 +291,14 @@ public final class c extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1223invoke();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1223invoke() {
-            Executor executor = this.f43591d;
-            final g2.j jVar = this.f43592e;
-            final h2.m mVar = this.f43593i;
+            Executor executor = this.f43639d;
+            final g2.j jVar = this.f43640e;
+            final h2.m mVar = this.f43641i;
             executor.execute(new Runnable() { // from class: p2.h
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -331,7 +331,7 @@ public final class c extends m2.b {
         @Override // android.os.ResultReceiver
         public void onReceiveResult(int i10, Bundle resultData) {
             Intrinsics.checkNotNullParameter(resultData, "resultData");
-            if (c.this.f(resultData, new a(m2.a.f36824b), c.this.s(), c.this.r(), c.this.f43580j)) {
+            if (c.this.f(resultData, new a(m2.a.f36872b), c.this.s(), c.this.r(), c.this.f43628j)) {
                 return;
             }
             c.this.t(resultData.getInt("ACTIVITY_REQUEST_CODE"), i10, (Intent) resultData.getParcelable("RESULT_DATA"));
@@ -342,8 +342,8 @@ public final class c extends m2.b {
     public c(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f43577g = context;
-        this.f43581k = new i(new Handler(Looper.getMainLooper()));
+        this.f43625g = context;
+        this.f43629k = new i(new Handler(Looper.getMainLooper()));
     }
 
     private final h2.m q(Throwable th2) {
@@ -352,7 +352,7 @@ public final class c extends m2.b {
             if (b10 == 16) {
                 return new h2.k(th2.getMessage());
             }
-            if (m2.a.f36824b.d().contains(Integer.valueOf(b10))) {
+            if (m2.a.f36872b.d().contains(Integer.valueOf(b10))) {
                 return new h2.n(th2.getMessage());
             }
             return new p("Get digital credential failed, failure: " + th2);
@@ -380,7 +380,7 @@ public final class c extends m2.b {
     }
 
     public final g2.j r() {
-        g2.j jVar = this.f43578h;
+        g2.j jVar = this.f43626h;
         if (jVar != null) {
             return jVar;
         }
@@ -389,7 +389,7 @@ public final class c extends m2.b {
     }
 
     public final Executor s() {
-        Executor executor = this.f43579i;
+        Executor executor = this.f43627i;
         if (executor != null) {
             return executor;
         }
@@ -398,22 +398,22 @@ public final class c extends m2.b {
     }
 
     public final void t(int i10, int i11, Intent intent) {
-        a.C0493a c0493a = m2.a.f36824b;
+        a.C0493a c0493a = m2.a.f36872b;
         if (i10 != c0493a.b()) {
             Log.w("DigitalCredentialClient", "Returned request code " + c0493a.b() + " which  does not match what was given " + i10);
-        } else if (m2.b.h(i11, b.f43582d, new C0576c(), this.f43580j)) {
+        } else if (m2.b.h(i11, b.f43630d, new C0576c(), this.f43628j)) {
         } else {
             if (intent == null) {
-                m2.b.e(this.f43580j, new d());
+                m2.b.e(this.f43628j, new d());
                 return;
             }
-            a.c cVar = r2.a.f48438a;
+            a.c cVar = r2.a.f48486a;
             d0 b10 = cVar.b(intent);
             if (b10 != null) {
-                m2.b.e(this.f43580j, new e(b10));
+                m2.b.e(this.f43628j, new e(b10));
                 return;
             }
-            m2.b.e(this.f43580j, new f(cVar.a(intent)));
+            m2.b.e(this.f43628j, new f(cVar.a(intent)));
         }
     }
 
@@ -421,13 +421,13 @@ public final class c extends m2.b {
         Intrinsics.checkNotNullParameter(request, "request");
         Intrinsics.checkNotNullParameter(callback, "callback");
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f43580j = cancellationSignal;
+        this.f43628j = cancellationSignal;
         x(callback);
         y(executor);
         if (CredentialProviderPlayServicesImpl.Companion.a(cancellationSignal)) {
             return;
         }
-        Task h10 = xf.f.f54620a.a(this.f43577g).h(p(request));
+        Task h10 = xf.f.f54668a.a(this.f43625g).h(p(request));
         final g gVar = new g(cancellationSignal, this);
         h10.g(new yg.g() { // from class: p2.a
             @Override // yg.g
@@ -444,11 +444,11 @@ public final class c extends m2.b {
 
     public final void x(g2.j jVar) {
         Intrinsics.checkNotNullParameter(jVar, "<set-?>");
-        this.f43578h = jVar;
+        this.f43626h = jVar;
     }
 
     public final void y(Executor executor) {
         Intrinsics.checkNotNullParameter(executor, "<set-?>");
-        this.f43579i = executor;
+        this.f43627i = executor;
     }
 }

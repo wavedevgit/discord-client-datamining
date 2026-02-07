@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var4.skuId;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun102534: for (var _fun102534_ip = 0;;) switch (_fun102534_ip) {
+            _fun103016: for (var _fun103016_ip = 0;;) switch (_fun103016_ip) {
                 case 0:
                     var3 = _closure1_slot1;
                     var6 = _closure1_slot2;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var5.bind(var0)(var3);
                     var3 = var3.GUILD_POWERUP_ROLE_COLOR_SKU_ID;
                     if (!(var4 === var3)) {
-                        _fun102534_ip = 152;
-                        continue _fun102534
+                        _fun103016_ip = 152;
+                        continue _fun103016
                     }
                 case 93:
                     var4 = _closure1_slot1;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot5;
                     var3 = var3.GUILD_POWERUPS_OVERVIEW_CARD;
                     var3 = var6.bind(var7)(var5, var4, var3);
-                    _fun102534_ip = 214;
-                    continue _fun102534;
+                    _fun103016_ip = 214;
+                    continue _fun103016;
                 case 152:
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3280, 13380, 6664, 8180, 44, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 3279, 13423, 6707, 8224, 44, 2]);

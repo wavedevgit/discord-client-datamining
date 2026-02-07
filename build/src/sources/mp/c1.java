@@ -5,14 +5,14 @@ import mp.a1;
 public final class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f37345a;
+    private final br.h f37393a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f37346b;
+    private final br.h f37394b;
 
     public c1(br.h hVar, br.h hVar2) {
-        this.f37345a = hVar;
-        this.f37346b = hVar2;
+        this.f37393a = hVar;
+        this.f37394b = hVar2;
     }
 
     public static c1 a(br.h hVar, br.h hVar2) {
@@ -24,6 +24,6 @@ public final class c1 {
     }
 
     public b1 b(a1.b bVar, boolean z10) {
-        return c((un.w0) this.f37345a.get(), bVar, z10, (wp.c) this.f37346b.get());
+        return c((un.w0) this.f37393a.get(), bVar, z10, (wp.c) this.f37394b.get());
     }
 }

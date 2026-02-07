@@ -5,15 +5,15 @@ import hk.d;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f56285a = b.f56286f;
+    private final b f56333a = b.f56334f;
 
     private int[] b(c cVar) {
         int d10 = cVar.d();
         int[] iArr = new int[d10];
         int i10 = 0;
-        for (int i11 = 1; i11 < this.f56285a.e() && i10 < d10; i11++) {
+        for (int i11 = 1; i11 < this.f56333a.e() && i10 < d10; i11++) {
             if (cVar.b(i11) == 0) {
-                iArr[i10] = this.f56285a.g(i11);
+                iArr[i10] = this.f56333a.g(i11);
                 i10++;
             }
         }
@@ -30,14 +30,14 @@ public final class a {
         }
         int[] iArr2 = new int[d10];
         for (int i10 = 1; i10 <= d10; i10++) {
-            iArr2[d10 - i10] = this.f56285a.i(i10, cVar2.c(i10));
+            iArr2[d10 - i10] = this.f56333a.i(i10, cVar2.c(i10));
         }
-        c cVar3 = new c(this.f56285a, iArr2);
+        c cVar3 = new c(this.f56333a, iArr2);
         int length = iArr.length;
         int[] iArr3 = new int[length];
         for (int i11 = 0; i11 < length; i11++) {
-            int g10 = this.f56285a.g(iArr[i11]);
-            iArr3[i11] = this.f56285a.i(this.f56285a.j(0, cVar.b(g10)), this.f56285a.g(cVar3.b(g10)));
+            int g10 = this.f56333a.g(iArr[i11]);
+            iArr3[i11] = this.f56333a.i(this.f56333a.j(0, cVar.b(g10)), this.f56333a.g(cVar3.b(g10)));
         }
         return iArr3;
     }
@@ -47,8 +47,8 @@ public final class a {
             cVar2 = cVar;
             cVar = cVar2;
         }
-        c f10 = this.f56285a.f();
-        c d10 = this.f56285a.d();
+        c f10 = this.f56333a.f();
+        c d10 = this.f56333a.d();
         while (true) {
             c cVar3 = cVar2;
             cVar2 = cVar;
@@ -58,12 +58,12 @@ public final class a {
             f10 = cVar4;
             if (cVar.d() >= i10 / 2) {
                 if (!cVar.e()) {
-                    c f11 = this.f56285a.f();
-                    int g10 = this.f56285a.g(cVar.c(cVar.d()));
+                    c f11 = this.f56333a.f();
+                    int g10 = this.f56333a.g(cVar.c(cVar.d()));
                     while (cVar2.d() >= cVar.d() && !cVar2.e()) {
                         int d11 = cVar2.d() - cVar.d();
-                        int i11 = this.f56285a.i(cVar2.c(cVar2.d()), g10);
-                        f11 = f11.a(this.f56285a.b(d11, i11));
+                        int i11 = this.f56333a.i(cVar2.c(cVar2.d()), g10);
+                        f11 = f11.a(this.f56333a.b(d11, i11));
                         cVar2 = cVar2.j(cVar.h(d11, i11));
                     }
                     d10 = f11.g(f10).j(cVar5).i();
@@ -73,7 +73,7 @@ public final class a {
             } else {
                 int c10 = f10.c(0);
                 if (c10 != 0) {
-                    int g11 = this.f56285a.g(c10);
+                    int g11 = this.f56333a.g(c10);
                     return new c[]{f10.f(g11), cVar.f(g11)};
                 }
                 throw d.a();
@@ -82,11 +82,11 @@ public final class a {
     }
 
     public int a(int[] iArr, int i10, int[] iArr2) {
-        c cVar = new c(this.f56285a, iArr);
+        c cVar = new c(this.f56333a, iArr);
         int[] iArr3 = new int[i10];
         boolean z10 = false;
         for (int i11 = i10; i11 > 0; i11--) {
-            int b10 = cVar.b(this.f56285a.c(i11));
+            int b10 = cVar.b(this.f56333a.c(i11));
             iArr3[i10 - i11] = b10;
             if (b10 != 0) {
                 z10 = true;
@@ -95,23 +95,23 @@ public final class a {
         if (!z10) {
             return 0;
         }
-        c d10 = this.f56285a.d();
+        c d10 = this.f56333a.d();
         if (iArr2 != null) {
             for (int i12 : iArr2) {
-                int c10 = this.f56285a.c((iArr.length - 1) - i12);
-                b bVar = this.f56285a;
+                int c10 = this.f56333a.c((iArr.length - 1) - i12);
+                b bVar = this.f56333a;
                 d10 = d10.g(new c(bVar, new int[]{bVar.j(0, c10), 1}));
             }
         }
-        c[] d11 = d(this.f56285a.b(i10, 1), new c(this.f56285a, iArr3), i10);
+        c[] d11 = d(this.f56333a.b(i10, 1), new c(this.f56333a, iArr3), i10);
         c cVar2 = d11[0];
         c cVar3 = d11[1];
         int[] b11 = b(cVar2);
         int[] c11 = c(cVar3, cVar2, b11);
         for (int i13 = 0; i13 < b11.length; i13++) {
-            int length = (iArr.length - 1) - this.f56285a.h(b11[i13]);
+            int length = (iArr.length - 1) - this.f56333a.h(b11[i13]);
             if (length >= 0) {
-                iArr[length] = this.f56285a.j(iArr[length], c11[i13]);
+                iArr[length] = this.f56333a.j(iArr[length], c11[i13]);
             } else {
                 throw d.a();
             }

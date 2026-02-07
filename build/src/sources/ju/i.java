@@ -18,49 +18,49 @@ import okio.Timeout;
 public final class i {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f31254o = new a(null);
+    public static final a f31302o = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31255a;
+    private final int f31303a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f31256b;
+    private final f f31304b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f31257c;
+    private long f31305c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f31258d;
+    private long f31306d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f31259e;
+    private long f31307e;
 
     /* renamed from: f  reason: collision with root package name */
-    private long f31260f;
+    private long f31308f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ArrayDeque f31261g;
+    private final ArrayDeque f31309g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f31262h;
+    private boolean f31310h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c f31263i;
+    private final c f31311i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final b f31264j;
+    private final b f31312j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final d f31265k;
+    private final d f31313k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final d f31266l;
+    private final d f31314l;
 
     /* renamed from: m  reason: collision with root package name */
-    private ju.b f31267m;
+    private ju.b f31315m;
 
     /* renamed from: n  reason: collision with root package name */
-    private IOException f31268n;
+    private IOException f31316n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -76,19 +76,19 @@ public final class i {
     public final class b implements Sink {
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f31269d;
+        private boolean f31317d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Buffer f31270e = new Buffer();
+        private final Buffer f31318e = new Buffer();
 
         /* renamed from: i  reason: collision with root package name */
-        private Headers f31271i;
+        private Headers f31319i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f31272o;
+        private boolean f31320o;
 
         public b(boolean z10) {
-            this.f31269d = z10;
+            this.f31317d = z10;
         }
 
         private final void a(boolean z10) {
@@ -99,27 +99,27 @@ public final class i {
             synchronized (iVar) {
                 try {
                     iVar.s().v();
-                    while (iVar.r() >= iVar.q() && !this.f31269d && !this.f31272o && iVar.h() == null) {
+                    while (iVar.r() >= iVar.q() && !this.f31317d && !this.f31320o && iVar.h() == null) {
                         iVar.D();
                     }
                     iVar.s().C();
                     iVar.c();
-                    min = Math.min(iVar.q() - iVar.r(), this.f31270e.size());
+                    min = Math.min(iVar.q() - iVar.r(), this.f31318e.size());
                     iVar.B(iVar.r() + min);
-                    if (z10 && min == this.f31270e.size()) {
+                    if (z10 && min == this.f31318e.size()) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
                     z12 = z11;
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
             i.this.s().v();
             try {
-                i.this.g().x2(i.this.j(), z12, this.f31270e, min);
+                i.this.g().x2(i.this.j(), z12, this.f31318e, min);
             } finally {
                 i.this.s().C();
             }
@@ -135,7 +135,7 @@ public final class i {
             }
             i iVar2 = i.this;
             synchronized (iVar2) {
-                if (this.f31272o) {
+                if (this.f31320o) {
                     return;
                 }
                 if (iVar2.h() == null) {
@@ -143,24 +143,24 @@ public final class i {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f32008a;
-                if (!i.this.o().f31269d) {
-                    if (this.f31270e.size() > 0) {
+                Unit unit = Unit.f32056a;
+                if (!i.this.o().f31317d) {
+                    if (this.f31318e.size() > 0) {
                         z11 = true;
                     } else {
                         z11 = false;
                     }
-                    if (this.f31271i != null) {
-                        while (this.f31270e.size() > 0) {
+                    if (this.f31319i != null) {
+                        while (this.f31318e.size() > 0) {
                             a(false);
                         }
                         f g10 = i.this.g();
                         int j10 = i.this.j();
-                        Headers headers = this.f31271i;
+                        Headers headers = this.f31319i;
                         Intrinsics.checkNotNull(headers);
                         g10.y2(j10, z10, cu.e.P(headers));
                     } else if (z11) {
-                        while (this.f31270e.size() > 0) {
+                        while (this.f31318e.size() > 0) {
                             a(true);
                         }
                     } else if (z10) {
@@ -168,8 +168,8 @@ public final class i {
                     }
                 }
                 synchronized (i.this) {
-                    this.f31272o = true;
-                    Unit unit2 = Unit.f32008a;
+                    this.f31320o = true;
+                    Unit unit2 = Unit.f32056a;
                 }
                 i.this.g().flush();
                 i.this.b();
@@ -185,20 +185,20 @@ public final class i {
             i iVar2 = i.this;
             synchronized (iVar2) {
                 iVar2.c();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
-            while (this.f31270e.size() > 0) {
+            while (this.f31318e.size() > 0) {
                 a(false);
                 i.this.g().flush();
             }
         }
 
         public final boolean g() {
-            return this.f31272o;
+            return this.f31320o;
         }
 
         public final boolean k() {
-            return this.f31269d;
+            return this.f31317d;
         }
 
         @Override // okio.Sink
@@ -213,8 +213,8 @@ public final class i {
             if (cu.e.f20042h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
-            this.f31270e.w0(source, j10);
-            while (this.f31270e.size() >= 16384) {
+            this.f31318e.w0(source, j10);
+            while (this.f31318e.size() >= 16384) {
                 a(false);
             }
         }
@@ -224,26 +224,26 @@ public final class i {
     public final class c implements Source {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f31274d;
+        private final long f31322d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f31275e;
+        private boolean f31323e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Buffer f31276i = new Buffer();
+        private final Buffer f31324i = new Buffer();
 
         /* renamed from: o  reason: collision with root package name */
-        private final Buffer f31277o = new Buffer();
+        private final Buffer f31325o = new Buffer();
 
         /* renamed from: p  reason: collision with root package name */
-        private Headers f31278p;
+        private Headers f31326p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f31279q;
+        private boolean f31327q;
 
         public c(long j10, boolean z10) {
-            this.f31274d = j10;
-            this.f31275e = z10;
+            this.f31322d = j10;
+            this.f31323e = z10;
         }
 
         private final void p(long j10) {
@@ -255,7 +255,7 @@ public final class i {
         }
 
         public final boolean a() {
-            return this.f31279q;
+            return this.f31327q;
         }
 
         @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
@@ -263,12 +263,12 @@ public final class i {
             long size;
             i iVar = i.this;
             synchronized (iVar) {
-                this.f31279q = true;
-                size = this.f31277o.size();
-                this.f31277o.k();
+                this.f31327q = true;
+                size = this.f31325o.size();
+                this.f31325o.k();
                 Intrinsics.checkNotNull(iVar, "null cannot be cast to non-null type java.lang.Object");
                 iVar.notifyAll();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
             if (size > 0) {
                 p(size);
@@ -277,7 +277,7 @@ public final class i {
         }
 
         public final boolean g() {
-            return this.f31275e;
+            return this.f31323e;
         }
 
         public final void k(BufferedSource source, long j10) {
@@ -292,14 +292,14 @@ public final class i {
             long j11 = j10;
             while (j11 > 0) {
                 synchronized (i.this) {
-                    z10 = this.f31275e;
+                    z10 = this.f31323e;
                     z11 = false;
-                    if (this.f31277o.size() + j11 > this.f31274d) {
+                    if (this.f31325o.size() + j11 > this.f31322d) {
                         z12 = true;
                     } else {
                         z12 = false;
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
                 if (z12) {
                     source.skip(j11);
@@ -309,19 +309,19 @@ public final class i {
                     source.skip(j11);
                     return;
                 } else {
-                    long read = source.read(this.f31276i, j11);
+                    long read = source.read(this.f31324i, j11);
                     if (read != -1) {
                         j11 -= read;
                         i iVar2 = i.this;
                         synchronized (iVar2) {
                             try {
-                                if (this.f31279q) {
-                                    this.f31276i.k();
+                                if (this.f31327q) {
+                                    this.f31324i.k();
                                 } else {
-                                    if (this.f31277o.size() == 0) {
+                                    if (this.f31325o.size() == 0) {
                                         z11 = true;
                                     }
-                                    this.f31277o.B0(this.f31276i);
+                                    this.f31325o.B0(this.f31324i);
                                     if (z11) {
                                         Intrinsics.checkNotNull(iVar2, "null cannot be cast to non-null type java.lang.Object");
                                         iVar2.notifyAll();
@@ -339,11 +339,11 @@ public final class i {
         }
 
         public final void m(boolean z10) {
-            this.f31275e = z10;
+            this.f31323e = z10;
         }
 
         public final void n(Headers headers) {
-            this.f31278p = headers;
+            this.f31326p = headers;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:45:0x00c2, code lost:
@@ -372,7 +372,7 @@ public final class i {
                 r7.v()     // Catch: java.lang.Throwable -> Lb9
                 ju.b r7 = r6.h()     // Catch: java.lang.Throwable -> L38
                 if (r7 == 0) goto L3b
-                boolean r7 = r1.f31275e     // Catch: java.lang.Throwable -> L38
+                boolean r7 = r1.f31323e     // Catch: java.lang.Throwable -> L38
                 if (r7 != 0) goto L3b
                 java.io.IOException r7 = r6.i()     // Catch: java.lang.Throwable -> L38
                 if (r7 != 0) goto L3c
@@ -387,15 +387,15 @@ public final class i {
             L3b:
                 r7 = 0
             L3c:
-                boolean r8 = r1.f31279q     // Catch: java.lang.Throwable -> L38
+                boolean r8 = r1.f31327q     // Catch: java.lang.Throwable -> L38
                 if (r8 != 0) goto Lbb
-                okio.Buffer r8 = r1.f31277o     // Catch: java.lang.Throwable -> L38
+                okio.Buffer r8 = r1.f31325o     // Catch: java.lang.Throwable -> L38
                 long r8 = r8.size()     // Catch: java.lang.Throwable -> L38
                 int r8 = (r8 > r4 ? 1 : (r8 == r4 ? 0 : -1))
                 r9 = -1
                 r11 = 0
                 if (r8 <= 0) goto L95
-                okio.Buffer r8 = r1.f31277o     // Catch: java.lang.Throwable -> L38
+                okio.Buffer r8 = r1.f31325o     // Catch: java.lang.Throwable -> L38
                 long r12 = r8.size()     // Catch: java.lang.Throwable -> L38
                 long r12 = java.lang.Math.min(r2, r12)     // Catch: java.lang.Throwable -> L38
                 long r12 = r8.read(r0, r12)     // Catch: java.lang.Throwable -> L38
@@ -420,7 +420,7 @@ public final class i {
                 r6.z(r4)     // Catch: java.lang.Throwable -> L38
                 goto La0
             L95:
-                boolean r4 = r1.f31275e     // Catch: java.lang.Throwable -> L38
+                boolean r4 = r1.f31323e     // Catch: java.lang.Throwable -> L38
                 if (r4 != 0) goto L9f
                 if (r7 != 0) goto L9f
                 r6.D()     // Catch: java.lang.Throwable -> L38
@@ -430,7 +430,7 @@ public final class i {
             La0:
                 ju.i$d r4 = r6.m()     // Catch: java.lang.Throwable -> Lb9
                 r4.C()     // Catch: java.lang.Throwable -> Lb9
-                kotlin.Unit r4 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> Lb9
+                kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> Lb9
                 monitor-exit(r6)
                 if (r11 == 0) goto Lb0
                 r4 = 0
@@ -510,15 +510,15 @@ public final class i {
 
     public i(int i10, f connection, boolean z10, boolean z11, Headers headers) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        this.f31255a = i10;
-        this.f31256b = connection;
-        this.f31260f = connection.z1().c();
+        this.f31303a = i10;
+        this.f31304b = connection;
+        this.f31308f = connection.z1().c();
         ArrayDeque arrayDeque = new ArrayDeque();
-        this.f31261g = arrayDeque;
-        this.f31263i = new c(connection.x1().c(), z11);
-        this.f31264j = new b(z10);
-        this.f31265k = new d();
-        this.f31266l = new d();
+        this.f31309g = arrayDeque;
+        this.f31311i = new c(connection.x1().c(), z11);
+        this.f31312j = new b(z10);
+        this.f31313k = new d();
+        this.f31314l = new d();
         if (headers != null) {
             if (!t()) {
                 arrayDeque.add(headers);
@@ -536,44 +536,44 @@ public final class i {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
-            if (this.f31267m != null) {
+            if (this.f31315m != null) {
                 return false;
             }
-            this.f31267m = bVar;
-            this.f31268n = iOException;
+            this.f31315m = bVar;
+            this.f31316n = iOException;
             Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
             notifyAll();
-            if (this.f31263i.g() && this.f31264j.k()) {
+            if (this.f31311i.g() && this.f31312j.k()) {
                 return false;
             }
-            Unit unit = Unit.f32008a;
-            this.f31256b.p2(this.f31255a);
+            Unit unit = Unit.f32056a;
+            this.f31304b.p2(this.f31303a);
             return true;
         }
     }
 
     public final void A(long j10) {
-        this.f31257c = j10;
+        this.f31305c = j10;
     }
 
     public final void B(long j10) {
-        this.f31259e = j10;
+        this.f31307e = j10;
     }
 
     public final synchronized Headers C() {
         Object removeFirst;
-        this.f31265k.v();
-        while (this.f31261g.isEmpty() && this.f31267m == null) {
+        this.f31313k.v();
+        while (this.f31309g.isEmpty() && this.f31315m == null) {
             D();
         }
-        this.f31265k.C();
-        if (!this.f31261g.isEmpty()) {
-            removeFirst = this.f31261g.removeFirst();
+        this.f31313k.C();
+        if (!this.f31309g.isEmpty()) {
+            removeFirst = this.f31309g.removeFirst();
             Intrinsics.checkNotNullExpressionValue(removeFirst, "headersQueue.removeFirst()");
         } else {
-            IOException iOException = this.f31268n;
+            IOException iOException = this.f31316n;
             if (iOException == null) {
-                ju.b bVar = this.f31267m;
+                ju.b bVar = this.f31315m;
                 Intrinsics.checkNotNull(bVar);
                 throw new n(bVar);
             }
@@ -593,11 +593,11 @@ public final class i {
     }
 
     public final Timeout E() {
-        return this.f31266l;
+        return this.f31314l;
     }
 
     public final void a(long j10) {
-        this.f31260f += j10;
+        this.f31308f += j10;
         if (j10 > 0) {
             Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
             notifyAll();
@@ -612,14 +612,14 @@ public final class i {
         }
         synchronized (this) {
             try {
-                if (this.f31263i.g() || !this.f31263i.a() || (!this.f31264j.k() && !this.f31264j.g())) {
+                if (this.f31311i.g() || !this.f31311i.a() || (!this.f31312j.k() && !this.f31312j.g())) {
                     z10 = false;
                     u10 = u();
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
                 z10 = true;
                 u10 = u();
-                Unit unit2 = Unit.f32008a;
+                Unit unit2 = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -627,17 +627,17 @@ public final class i {
         if (z10) {
             d(ju.b.CANCEL, null);
         } else if (!u10) {
-            this.f31256b.p2(this.f31255a);
+            this.f31304b.p2(this.f31303a);
         }
     }
 
     public final void c() {
-        if (!this.f31264j.g()) {
-            if (!this.f31264j.k()) {
-                if (this.f31267m != null) {
-                    IOException iOException = this.f31268n;
+        if (!this.f31312j.g()) {
+            if (!this.f31312j.k()) {
+                if (this.f31315m != null) {
+                    IOException iOException = this.f31316n;
                     if (iOException == null) {
-                        ju.b bVar = this.f31267m;
+                        ju.b bVar = this.f31315m;
                         Intrinsics.checkNotNull(bVar);
                         throw new n(bVar);
                     }
@@ -655,7 +655,7 @@ public final class i {
         if (!e(rstStatusCode, iOException)) {
             return;
         }
-        this.f31256b.A2(this.f31255a, rstStatusCode);
+        this.f31304b.A2(this.f31303a, rstStatusCode);
     }
 
     public final void f(ju.b errorCode) {
@@ -663,79 +663,79 @@ public final class i {
         if (!e(errorCode, null)) {
             return;
         }
-        this.f31256b.B2(this.f31255a, errorCode);
+        this.f31304b.B2(this.f31303a, errorCode);
     }
 
     public final f g() {
-        return this.f31256b;
+        return this.f31304b;
     }
 
     public final synchronized ju.b h() {
-        return this.f31267m;
+        return this.f31315m;
     }
 
     public final IOException i() {
-        return this.f31268n;
+        return this.f31316n;
     }
 
     public final int j() {
-        return this.f31255a;
+        return this.f31303a;
     }
 
     public final long k() {
-        return this.f31258d;
+        return this.f31306d;
     }
 
     public final long l() {
-        return this.f31257c;
+        return this.f31305c;
     }
 
     public final d m() {
-        return this.f31265k;
+        return this.f31313k;
     }
 
     public final Sink n() {
         synchronized (this) {
             try {
-                if (!this.f31262h && !t()) {
+                if (!this.f31310h && !t()) {
                     throw new IllegalStateException("reply before requesting the sink");
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return this.f31264j;
+        return this.f31312j;
     }
 
     public final b o() {
-        return this.f31264j;
+        return this.f31312j;
     }
 
     public final c p() {
-        return this.f31263i;
+        return this.f31311i;
     }
 
     public final long q() {
-        return this.f31260f;
+        return this.f31308f;
     }
 
     public final long r() {
-        return this.f31259e;
+        return this.f31307e;
     }
 
     public final d s() {
-        return this.f31266l;
+        return this.f31314l;
     }
 
     public final boolean t() {
         boolean z10;
-        if ((this.f31255a & 1) == 1) {
+        if ((this.f31303a & 1) == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (this.f31256b.O0() == z10) {
+        if (this.f31304b.O0() == z10) {
             return true;
         }
         return false;
@@ -743,16 +743,16 @@ public final class i {
 
     public final synchronized boolean u() {
         try {
-            if (this.f31267m != null) {
+            if (this.f31315m != null) {
                 return false;
             }
-            if (!this.f31263i.g()) {
-                if (this.f31263i.a()) {
+            if (!this.f31311i.g()) {
+                if (this.f31311i.a()) {
                 }
                 return true;
             }
-            if (this.f31264j.k() || this.f31264j.g()) {
-                if (this.f31262h) {
+            if (this.f31312j.k() || this.f31312j.g()) {
+                if (this.f31310h) {
                     return false;
                 }
             }
@@ -763,7 +763,7 @@ public final class i {
     }
 
     public final Timeout v() {
-        return this.f31265k;
+        return this.f31313k;
     }
 
     public final void w(BufferedSource source, int i10) {
@@ -771,7 +771,7 @@ public final class i {
         if (cu.e.f20042h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
-        this.f31263i.k(source, i10);
+        this.f31311i.k(source, i10);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0051 A[Catch: all -> 0x0046, TryCatch #0 {all -> 0x0046, blocks: (B:10:0x0038, B:14:0x0040, B:19:0x0051, B:20:0x0056, B:17:0x0048), top: B:27:0x0038 }] */
@@ -806,36 +806,36 @@ public final class i {
             throw r3
         L37:
             monitor-enter(r2)
-            boolean r0 = r2.f31262h     // Catch: java.lang.Throwable -> L46
+            boolean r0 = r2.f31310h     // Catch: java.lang.Throwable -> L46
             r1 = 1
             if (r0 == 0) goto L48
             if (r4 != 0) goto L40
             goto L48
         L40:
-            ju.i$c r0 = r2.f31263i     // Catch: java.lang.Throwable -> L46
+            ju.i$c r0 = r2.f31311i     // Catch: java.lang.Throwable -> L46
             r0.n(r3)     // Catch: java.lang.Throwable -> L46
             goto L4f
         L46:
             r3 = move-exception
             goto L6f
         L48:
-            r2.f31262h = r1     // Catch: java.lang.Throwable -> L46
-            java.util.ArrayDeque r0 = r2.f31261g     // Catch: java.lang.Throwable -> L46
+            r2.f31310h = r1     // Catch: java.lang.Throwable -> L46
+            java.util.ArrayDeque r0 = r2.f31309g     // Catch: java.lang.Throwable -> L46
             r0.add(r3)     // Catch: java.lang.Throwable -> L46
         L4f:
             if (r4 == 0) goto L56
-            ju.i$c r3 = r2.f31263i     // Catch: java.lang.Throwable -> L46
+            ju.i$c r3 = r2.f31311i     // Catch: java.lang.Throwable -> L46
             r3.m(r1)     // Catch: java.lang.Throwable -> L46
         L56:
             boolean r3 = r2.u()     // Catch: java.lang.Throwable -> L46
             java.lang.String r4 = "null cannot be cast to non-null type java.lang.Object"
             kotlin.jvm.internal.Intrinsics.checkNotNull(r2, r4)     // Catch: java.lang.Throwable -> L46
             r2.notifyAll()     // Catch: java.lang.Throwable -> L46
-            kotlin.Unit r4 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L46
+            kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L46
             monitor-exit(r2)
             if (r3 != 0) goto L6e
-            ju.f r3 = r2.f31256b
-            int r4 = r2.f31255a
+            ju.f r3 = r2.f31304b
+            int r4 = r2.f31303a
             r3.p2(r4)
         L6e:
             return
@@ -848,14 +848,14 @@ public final class i {
 
     public final synchronized void y(ju.b errorCode) {
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        if (this.f31267m == null) {
-            this.f31267m = errorCode;
+        if (this.f31315m == null) {
+            this.f31315m = errorCode;
             Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
             notifyAll();
         }
     }
 
     public final void z(long j10) {
-        this.f31258d = j10;
+        this.f31306d = j10;
     }
 }

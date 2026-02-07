@@ -40,10 +40,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -98,10 +98,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -150,10 +150,10 @@ public final class NotificationManagerUtilsKt {
             return null;
         }
         try {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             b10 = Result.b(notificationManager.getActiveNotifications());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {

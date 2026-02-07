@@ -48,11 +48,11 @@ public /* synthetic */ class EmbedThumbnail$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         KSerializer u10 = gt.a.u(n2Var);
         KSerializer u11 = gt.a.u(n2Var);
-        p0 p0Var = p0.f31057a;
-        jt.h hVar = jt.h.f31005a;
+        p0 p0Var = p0.f31105a;
+        jt.h hVar = jt.h.f31053a;
         return new KSerializer[]{n2Var, u10, u11, p0Var, p0Var, gt.a.u(hVar), gt.a.u(hVar), gt.a.u(n2Var), gt.a.u(p0Var), hVar, n2Var};
     }
 
@@ -79,10 +79,10 @@ public /* synthetic */ class EmbedThumbnail$$serializer implements h0 {
         int i15 = 0;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             int i16 = b10.i(serialDescriptor, 3);
             int i17 = b10.i(serialDescriptor, 4);
-            jt.h hVar = jt.h.f31005a;
+            jt.h hVar = jt.h.f31053a;
             boolean C = b10.C(serialDescriptor, 9);
             i15 = 2047;
             str4 = m10;
@@ -92,7 +92,7 @@ public /* synthetic */ class EmbedThumbnail$$serializer implements h0 {
             bool = (Boolean) b10.n(serialDescriptor, 6, hVar, null);
             bool2 = (Boolean) b10.n(serialDescriptor, 5, hVar, null);
             i10 = i16;
-            num = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, null);
+            num = (Integer) b10.n(serialDescriptor, 8, p0.f31105a, null);
             i11 = i17;
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             str = (String) b10.n(serialDescriptor, 1, n2Var, null);
@@ -126,13 +126,13 @@ public /* synthetic */ class EmbedThumbnail$$serializer implements h0 {
                         break;
                     case 1:
                         i15 |= 2;
-                        str9 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str9);
+                        str9 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str9);
                         i12 = 10;
                         i13 = 9;
                         i14 = 7;
                         break;
                     case 2:
-                        str7 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str7);
                         i15 |= 4;
                         i12 = 10;
                         i13 = 9;
@@ -148,21 +148,21 @@ public /* synthetic */ class EmbedThumbnail$$serializer implements h0 {
                         i12 = 10;
                         break;
                     case 5:
-                        bool4 = (Boolean) b10.n(serialDescriptor, 5, jt.h.f31005a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, 5, jt.h.f31053a, bool4);
                         i15 |= 32;
                         i12 = 10;
                         break;
                     case 6:
-                        bool3 = (Boolean) b10.n(serialDescriptor, 6, jt.h.f31005a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, 6, jt.h.f31053a, bool3);
                         i15 |= 64;
                         i12 = 10;
                         continue;
                     case 7:
-                        str6 = (String) b10.n(serialDescriptor, i14, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, i14, n2.f31089a, str6);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
-                        num2 = (Integer) b10.n(serialDescriptor, 8, p0.f31057a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 8, p0.f31105a, num2);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     case 9:

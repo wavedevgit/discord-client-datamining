@@ -5,7 +5,7 @@ import yi.c;
 final class w6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w6 f47618a = new w6();
+    static final w6 f47666a = new w6();
 
     static {
         c.b a10 = yi.c.a("screenName");

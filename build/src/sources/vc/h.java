@@ -5,10 +5,10 @@ import ne.h0;
 final class h implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f52430a;
+    public final String f52478a;
 
     private h(String str) {
-        this.f52430a = str;
+        this.f52478a = str;
     }
 
     public static h a(h0 h0Var) {

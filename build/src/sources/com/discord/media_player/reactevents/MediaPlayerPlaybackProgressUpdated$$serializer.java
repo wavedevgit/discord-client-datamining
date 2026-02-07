@@ -39,7 +39,7 @@ public /* synthetic */ class MediaPlayerPlaybackProgressUpdated$$serializer impl
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        z0 z0Var = z0.f31115a;
+        z0 z0Var = z0.f31163a;
         return new KSerializer[]{a.u(MediaPlayerPlaybackSource$$serializer.INSTANCE), z0Var, z0Var};
     }
 

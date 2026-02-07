@@ -3,7 +3,7 @@ package net.time4j.calendar;
 final class m extends rt.e {
 
     /* renamed from: d  reason: collision with root package name */
-    static final m f39197d = new m();
+    static final m f39245d = new m();
     private static final long serialVersionUID = -1117064522468823402L;
 
     private m() {
@@ -48,6 +48,6 @@ final class m extends rt.e {
     }
 
     protected Object readResolve() {
-        return f39197d;
+        return f39245d;
     }
 }

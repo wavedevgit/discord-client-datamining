@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f31735b = new a(null);
+    public static final a f31783b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f31736a;
+    private final d f31784a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -30,7 +30,7 @@ public final class c extends Event {
     public c(int i10, int i11, d event) {
         super(i10, i11);
         Intrinsics.checkNotNullParameter(event, "event");
-        this.f31736a = event;
+        this.f31784a = event;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -41,18 +41,18 @@ public final class c extends Event {
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putInt("target", this.f31736a.g());
+        createMap.putInt("target", this.f31784a.g());
         WritableMap createMap2 = Arguments.createMap();
         WritableMap createMap3 = Arguments.createMap();
-        createMap3.putDouble("x", this.f31736a.e());
-        createMap3.putDouble("y", this.f31736a.f());
-        createMap3.putInt(ViewProps.POSITION, this.f31736a.d());
-        Unit unit = Unit.f32008a;
+        createMap3.putDouble("x", this.f31784a.e());
+        createMap3.putDouble("y", this.f31784a.f());
+        createMap3.putInt(ViewProps.POSITION, this.f31784a.d());
+        Unit unit = Unit.f32056a;
         createMap2.putMap(ViewProps.START, createMap3);
         WritableMap createMap4 = Arguments.createMap();
-        createMap4.putDouble("x", this.f31736a.b());
-        createMap4.putDouble("y", this.f31736a.c());
-        createMap4.putInt(ViewProps.POSITION, this.f31736a.a());
+        createMap4.putDouble("x", this.f31784a.b());
+        createMap4.putDouble("y", this.f31784a.c());
+        createMap4.putInt(ViewProps.POSITION, this.f31784a.a());
         createMap2.putMap(ViewProps.END, createMap4);
         createMap.putMap("selection", createMap2);
         return createMap;

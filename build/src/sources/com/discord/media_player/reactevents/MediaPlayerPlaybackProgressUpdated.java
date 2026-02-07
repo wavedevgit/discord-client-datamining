@@ -121,7 +121,7 @@ public final class MediaPlayerPlaybackProgressUpdated implements ReactEvent {
     public WritableMap serialize() {
         WritableNativeMap nativeMapOf = NativeMapExtensionsKt.nativeMapOf(v.a("time", Long.valueOf(this.time)), v.a("duration", Long.valueOf(this.duration)));
         if (this.source != null) {
-            nativeMapOf.putMap("source", NativeMapExtensionsKt.toNativeMap(a.f41154b.e(w.b(MediaPlayerPlaybackSource.class), this.source)));
+            nativeMapOf.putMap("source", NativeMapExtensionsKt.toNativeMap(a.f41202b.e(w.b(MediaPlayerPlaybackSource.class), this.source)));
         }
         return nativeMapOf;
     }

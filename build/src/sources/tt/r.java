@@ -4,65 +4,65 @@ package tt;
 public class r implements h {
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int[] f51055z = {9, 99, 999, 9999, 99999, 999999, 9999999, 99999999, 999999999, Integer.MAX_VALUE};
+    private static final int[] f51103z = {9, 99, 999, 9999, 99999, 999999, 9999999, 99999999, 999999999, Integer.MAX_VALUE};
 
     /* renamed from: d  reason: collision with root package name */
-    private final rt.p f51056d;
+    private final rt.p f51104d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f51057e;
+    private final boolean f51105e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f51058i;
+    private final int f51106i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f51059o;
+    private final int f51107o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final x f51060p;
+    private final x f51108p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f51061q;
+    private final boolean f51109q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f51062r;
+    private final boolean f51110r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final st.g f51063s;
+    private final st.g f51111s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final int f51064t;
+    private final int f51112t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final char f51065u;
+    private final char f51113u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final st.j f51066v;
+    private final st.j f51114v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int f51067w;
+    private final int f51115w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final int f51068x;
+    private final int f51116x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f51069y;
+    private final boolean f51117y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51070a;
+        static final /* synthetic */ int[] f51118a;
 
         static {
             int[] iArr = new int[x.values().length];
-            f51070a = iArr;
+            f51118a = iArr;
             try {
                 iArr[x.SHOW_ALWAYS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f51070a[x.SHOW_WHEN_BIG_NUMBER.ordinal()] = 2;
+                f51118a[x.SHOW_WHEN_BIG_NUMBER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -70,7 +70,7 @@ public class r implements h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(rt.p pVar, boolean z10, int i10, int i11, x xVar, boolean z11) {
-        this(pVar, z10, i10, i11, xVar, z11, 0, '0', st.j.f50170d, st.g.SMART, 0, false);
+        this(pVar, z10, i10, i11, xVar, z11, 0, '0', st.j.f50218d, st.g.SMART, 0, false);
     }
 
     private static void b(int i10, Appendable appendable, char c10) {
@@ -81,7 +81,7 @@ public class r implements h {
 
     private int c(st.j jVar) {
         if (jVar.o()) {
-            Class type = this.f51056d.getType();
+            Class type = this.f51104d.getType();
             if (type == Integer.class) {
                 return 10;
             }
@@ -95,7 +95,7 @@ public class r implements h {
 
     private static int h(int i10) {
         int i11 = 0;
-        while (i10 > f51055z[i11]) {
+        while (i10 > f51103z[i11]) {
             i11++;
         }
         return i11 + 1;
@@ -122,15 +122,15 @@ public class r implements h {
         int i16;
         int length = charSequence.length();
         int f10 = sVar.f();
-        if (z10 && this.f51069y) {
+        if (z10 && this.f51117y) {
             if (f10 >= length) {
-                sVar.k(f10, "Missing digits for: " + this.f51056d.name());
+                sVar.k(f10, "Missing digits for: " + this.f51104d.name());
                 sVar.n();
                 return;
             }
             char charAt = charSequence.charAt(f10);
             if (charAt != '-' && charAt != '+') {
-                int i17 = this.f51058i + f10;
+                int i17 = this.f51106i + f10;
                 int min = Math.min(length, i17);
                 int i18 = f10;
                 long j11 = 0;
@@ -146,31 +146,31 @@ public class r implements h {
                     sVar.k(f10, "Parsed number does not fit into an integer: " + j11);
                     return;
                 } else if (i18 >= i17) {
-                    tVar.H(this.f51056d, (int) j11);
+                    tVar.H(this.f51104d, (int) j11);
                     sVar.l(i18);
                     return;
                 } else if (i18 == f10) {
                     sVar.k(f10, "Digit expected.");
                     return;
                 } else {
-                    sVar.k(f10, "Not enough digits found for: " + this.f51056d.name());
+                    sVar.k(f10, "Not enough digits found for: " + this.f51104d.name());
                     return;
                 }
             }
             sVar.k(f10, "Sign not allowed due to sign policy.");
             return;
         }
-        int intValue = z10 ? this.f51067w : ((Integer) dVar.b(st.a.f50128s, 0)).intValue();
+        int intValue = z10 ? this.f51115w : ((Integer) dVar.b(st.a.f50176s, 0)).intValue();
         if (intValue > 0) {
             length -= intValue;
         }
         if (f10 >= length) {
-            sVar.k(f10, "Missing digits for: " + this.f51056d.name());
+            sVar.k(f10, "Missing digits for: " + this.f51104d.name());
             sVar.n();
             return;
         }
-        if (this.f51062r) {
-            rt.p pVar = this.f51056d;
+        if (this.f51110r) {
+            rt.p pVar = this.f51104d;
             if (pVar instanceof ut.a) {
                 Integer w10 = ((ut.a) ut.a.class.cast(pVar)).w(charSequence, sVar.e(), dVar, tVar);
                 if (!sVar.i()) {
@@ -178,29 +178,29 @@ public class r implements h {
                         sVar.k(f10, "No interpretable value.");
                         return;
                     } else {
-                        tVar.I(this.f51056d, w10);
+                        tVar.I(this.f51104d, w10);
                         return;
                     }
                 }
-                sVar.k(sVar.c(), "Unparseable element: " + this.f51056d.name());
+                sVar.k(sVar.c(), "Unparseable element: " + this.f51104d.name());
                 return;
             }
         }
         if (z10) {
-            st.j jVar3 = this.f51066v;
+            st.j jVar3 = this.f51114v;
             boolean o10 = jVar3.o();
-            int i19 = this.f51068x;
+            int i19 = this.f51116x;
             i10 = intValue;
-            c10 = this.f51065u;
+            c10 = this.f51113u;
             i11 = i19;
             z11 = o10;
             jVar2 = jVar3;
         } else {
             i10 = intValue;
-            st.j jVar4 = (st.j) dVar.b(st.a.f50121l, st.j.f50170d);
+            st.j jVar4 = (st.j) dVar.b(st.a.f50169l, st.j.f50218d);
             boolean o11 = jVar4.o();
             int c12 = c(jVar4);
-            rt.c cVar = st.a.f50122m;
+            rt.c cVar = st.a.f50170m;
             if (dVar.c(cVar)) {
                 c10 = ((Character) dVar.a(cVar)).charValue();
                 jVar = jVar4;
@@ -216,34 +216,34 @@ public class r implements h {
             jVar2 = jVar;
         }
         if (z10) {
-            gVar = this.f51063s;
+            gVar = this.f51111s;
             c11 = c10;
         } else {
             c11 = c10;
-            gVar = (st.g) dVar.b(st.a.f50115f, st.g.SMART);
+            gVar = (st.g) dVar.b(st.a.f50163f, st.g.SMART);
         }
-        if (!z11 || (!this.f51057e && gVar.a())) {
+        if (!z11 || (!this.f51105e && gVar.a())) {
             z12 = true;
             i12 = 1;
             i13 = i11;
         } else {
-            int i20 = this.f51058i;
+            int i20 = this.f51106i;
             z12 = true;
-            i13 = this.f51059o;
+            i13 = this.f51107o;
             i12 = i20;
         }
         char charAt3 = charSequence.charAt(f10);
         boolean z15 = z11;
         if (charAt3 != '-' && charAt3 != '+') {
-            if (this.f51060p == x.SHOW_ALWAYS && gVar.e()) {
+            if (this.f51108p == x.SHOW_ALWAYS && gVar.e()) {
                 sVar.k(f10, "Missing sign of number.");
                 return;
             }
             z13 = false;
-        } else if (this.f51060p == x.SHOW_NEVER && (this.f51057e || gVar.e())) {
+        } else if (this.f51108p == x.SHOW_NEVER && (this.f51105e || gVar.e())) {
             sVar.k(f10, "Sign not allowed due to sign policy.");
             return;
-        } else if (this.f51060p == x.SHOW_WHEN_NEGATIVE && charAt3 == '+' && gVar.e()) {
+        } else if (this.f51108p == x.SHOW_WHEN_NEGATIVE && charAt3 == '+' && gVar.e()) {
             sVar.k(f10, "Positive sign not allowed due to sign policy.");
             return;
         } else {
@@ -252,10 +252,10 @@ public class r implements h {
         }
         int i21 = f10;
         if (f10 >= length) {
-            sVar.k(i21, "Missing digits for: " + this.f51056d.name());
+            sVar.k(i21, "Missing digits for: " + this.f51104d.name());
             return;
         }
-        if (this.f51057e || this.f51064t <= 0 || i10 > 0) {
+        if (this.f51105e || this.f51112t <= 0 || i10 > 0) {
             z14 = z13;
             i14 = f10;
         } else {
@@ -287,7 +287,7 @@ public class r implements h {
                     i16++;
                 }
             }
-            i13 = Math.min(i13, i16 - this.f51064t);
+            i13 = Math.min(i13, i16 - this.f51112t);
         }
         int i24 = i14 + i12;
         int min2 = Math.min(length, i14 + i13);
@@ -320,14 +320,14 @@ public class r implements h {
                 j10 = 0;
             }
         }
-        Class type = this.f51056d.getType();
+        Class type = this.f51104d.getType();
         if (j10 <= 2147483647L || type != Integer.class) {
             if (i15 < i24) {
                 if (i15 == i21) {
                     sVar.k(i21, "Digit expected.");
                     return;
-                } else if (this.f51057e || !gVar.a()) {
-                    sVar.k(i21, "Not enough digits found for: " + this.f51056d.name());
+                } else if (this.f51105e || !gVar.a()) {
+                    sVar.k(i21, "Not enough digits found for: " + this.f51104d.name());
                     return;
                 }
             }
@@ -337,7 +337,7 @@ public class r implements h {
                     return;
                 }
                 j10 = -j10;
-            } else if (this.f51060p == x.SHOW_WHEN_BIG_NUMBER && gVar.e() && z15) {
+            } else if (this.f51108p == x.SHOW_WHEN_BIG_NUMBER && gVar.e() && z15) {
                 if (charAt3 == '+' && i15 <= i24) {
                     sVar.k(i21 - 1, "Positive sign only allowed for big number.");
                 } else if (charAt3 != '+' && i15 > i24) {
@@ -345,22 +345,22 @@ public class r implements h {
                 }
             }
             if (type == Integer.class) {
-                tVar.H(this.f51056d, (int) j10);
+                tVar.H(this.f51104d, (int) j10);
             } else if (type == Long.class) {
-                tVar.I(this.f51056d, Long.valueOf(j10));
-            } else if (this.f51056d == net.time4j.f0.D) {
+                tVar.I(this.f51104d, Long.valueOf(j10));
+            } else if (this.f51104d == net.time4j.f0.D) {
                 tVar.H(net.time4j.f0.E, (int) j10);
             } else if (Enum.class.isAssignableFrom(type)) {
-                rt.p pVar2 = this.f51056d;
+                rt.p pVar2 = this.f51104d;
                 if (!(pVar2 instanceof st.l ? ((st.l) pVar2).f(tVar, (int) j10) : false)) {
                     if (charAt3 == '-' || charAt3 == '+') {
                         i21--;
                     }
-                    sVar.k(i21, "[" + this.f51056d.name() + "] No enum found for value: " + j10);
+                    sVar.k(i21, "[" + this.f51104d.name() + "] No enum found for value: " + j10);
                     return;
                 }
             } else {
-                throw new IllegalArgumentException("Not parseable: " + this.f51056d);
+                throw new IllegalArgumentException("Not parseable: " + this.f51104d);
             }
             sVar.l(i15);
             return;
@@ -370,8 +370,8 @@ public class r implements h {
 
     @Override // tt.h
     public h d(rt.p pVar) {
-        if (!this.f51061q && this.f51056d != pVar) {
-            return new r(pVar, this.f51057e, this.f51058i, this.f51059o, this.f51060p, false);
+        if (!this.f51109q && this.f51104d != pVar) {
+            return new r(pVar, this.f51105e, this.f51106i, this.f51107o, this.f51108p, false);
         }
         return this;
     }
@@ -380,10 +380,10 @@ public class r implements h {
     public h e(c cVar, rt.d dVar, int i10) {
         char c10;
         char charAt;
-        rt.c cVar2 = st.a.f50121l;
-        st.j jVar = st.j.f50170d;
+        rt.c cVar2 = st.a.f50169l;
+        st.j jVar = st.j.f50218d;
         st.j jVar2 = (st.j) dVar.b(cVar2, jVar);
-        rt.c cVar3 = st.a.f50122m;
+        rt.c cVar3 = st.a.f50170m;
         boolean z10 = false;
         if (dVar.c(cVar3)) {
             charAt = ((Character) dVar.a(cVar3)).charValue();
@@ -391,18 +391,18 @@ public class r implements h {
             charAt = jVar2.m().charAt(0);
         } else {
             c10 = '0';
-            int intValue = ((Integer) dVar.b(st.a.f50128s, 0)).intValue();
-            if (jVar2 == jVar && c10 == '0' && this.f51057e && intValue == 0 && this.f51056d.getType() == Integer.class && !this.f51062r) {
+            int intValue = ((Integer) dVar.b(st.a.f50176s, 0)).intValue();
+            if (jVar2 == jVar && c10 == '0' && this.f51105e && intValue == 0 && this.f51104d.getType() == Integer.class && !this.f51110r) {
                 z10 = true;
             }
-            return new r(this.f51056d, this.f51057e, this.f51058i, this.f51059o, this.f51060p, this.f51061q, i10, c10, jVar2, (st.g) dVar.b(st.a.f50115f, st.g.SMART), intValue, z10);
+            return new r(this.f51104d, this.f51105e, this.f51106i, this.f51107o, this.f51108p, this.f51109q, i10, c10, jVar2, (st.g) dVar.b(st.a.f50163f, st.g.SMART), intValue, z10);
         }
         c10 = charAt;
-        int intValue2 = ((Integer) dVar.b(st.a.f50128s, 0)).intValue();
+        int intValue2 = ((Integer) dVar.b(st.a.f50176s, 0)).intValue();
         if (jVar2 == jVar) {
             z10 = true;
         }
-        return new r(this.f51056d, this.f51057e, this.f51058i, this.f51059o, this.f51060p, this.f51061q, i10, c10, jVar2, (st.g) dVar.b(st.a.f50115f, st.g.SMART), intValue2, z10);
+        return new r(this.f51104d, this.f51105e, this.f51106i, this.f51107o, this.f51108p, this.f51109q, i10, c10, jVar2, (st.g) dVar.b(st.a.f50163f, st.g.SMART), intValue2, z10);
     }
 
     public boolean equals(Object obj) {
@@ -411,7 +411,7 @@ public class r implements h {
         }
         if (obj instanceof r) {
             r rVar = (r) obj;
-            if (this.f51056d.equals(rVar.f51056d) && this.f51057e == rVar.f51057e && this.f51058i == rVar.f51058i && this.f51059o == rVar.f51059o && this.f51060p == rVar.f51060p && this.f51061q == rVar.f51061q) {
+            if (this.f51104d.equals(rVar.f51104d) && this.f51105e == rVar.f51105e && this.f51106i == rVar.f51106i && this.f51107o == rVar.f51107o && this.f51108p == rVar.f51108p && this.f51109q == rVar.f51109q) {
                 return true;
             }
         }
@@ -441,40 +441,40 @@ public class r implements h {
 
     @Override // tt.h
     public rt.p getElement() {
-        return this.f51056d;
+        return this.f51104d;
     }
 
     public int hashCode() {
-        return (this.f51056d.hashCode() * 7) + ((this.f51058i + (this.f51059o * 10)) * 31);
+        return (this.f51104d.hashCode() * 7) + ((this.f51106i + (this.f51107o * 10)) * 31);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(getClass().getName());
         sb2.append("[element=");
-        sb2.append(this.f51056d.name());
+        sb2.append(this.f51104d.name());
         sb2.append(", fixed-width-mode=");
-        sb2.append(this.f51057e);
+        sb2.append(this.f51105e);
         sb2.append(", min-digits=");
-        sb2.append(this.f51058i);
+        sb2.append(this.f51106i);
         sb2.append(", max-digits=");
-        sb2.append(this.f51059o);
+        sb2.append(this.f51107o);
         sb2.append(", sign-policy=");
-        sb2.append(this.f51060p);
+        sb2.append(this.f51108p);
         sb2.append(", protected-mode=");
-        sb2.append(this.f51061q);
+        sb2.append(this.f51109q);
         sb2.append(']');
         return sb2.toString();
     }
 
     private r(rt.p pVar, boolean z10, int i10, int i11, x xVar, boolean z11, int i12, char c10, st.j jVar, st.g gVar, int i13, boolean z12) {
-        this.f51056d = pVar;
-        this.f51057e = z10;
-        this.f51058i = i10;
-        this.f51059o = i11;
-        this.f51060p = xVar;
-        this.f51061q = z11;
-        this.f51069y = z12;
+        this.f51104d = pVar;
+        this.f51105e = z10;
+        this.f51106i = i10;
+        this.f51107o = i11;
+        this.f51108p = xVar;
+        this.f51109q = z11;
+        this.f51117y = z12;
         if (pVar == null) {
             throw new NullPointerException("Missing element.");
         }
@@ -498,13 +498,13 @@ public class r implements h {
                     throw new IllegalArgumentException("Max digits out of range: " + i11);
                 }
             }
-            this.f51062r = pVar.name().equals("YEAR_OF_ERA");
-            this.f51064t = i12;
-            this.f51065u = c10;
-            this.f51066v = jVar;
-            this.f51063s = gVar;
-            this.f51067w = i13;
-            this.f51068x = c11;
+            this.f51110r = pVar.name().equals("YEAR_OF_ERA");
+            this.f51112t = i12;
+            this.f51113u = c10;
+            this.f51114v = jVar;
+            this.f51111s = gVar;
+            this.f51115w = i13;
+            this.f51116x = c11;
         }
     }
 }

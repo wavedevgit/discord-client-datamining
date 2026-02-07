@@ -5,7 +5,7 @@ import yi.c;
 final class c8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c8 f46990a = new c8();
+    static final c8 f47038a = new c8();
 
     static {
         c.b a10 = yi.c.a("eventType");

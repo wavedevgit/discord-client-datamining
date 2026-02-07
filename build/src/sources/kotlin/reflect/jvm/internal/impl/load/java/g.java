@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class g implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Jsr305Settings f32837d;
+    private final Jsr305Settings f32885d;
 
     public g(Jsr305Settings jsr305Settings) {
-        this.f32837d = jsr305Settings;
+        this.f32885d = jsr305Settings;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         String[] b10;
-        b10 = Jsr305Settings.b(this.f32837d);
+        b10 = Jsr305Settings.b(this.f32885d);
         return b10;
     }
 }

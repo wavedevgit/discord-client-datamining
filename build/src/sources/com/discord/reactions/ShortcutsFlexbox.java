@@ -238,7 +238,7 @@ public final class ShortcutsFlexbox extends FlexboxLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setReactions$lambda$1(ReactionView.Reaction reaction) {
         Intrinsics.checkNotNullParameter(reaction, "<unused var>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

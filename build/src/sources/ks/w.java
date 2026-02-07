@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ReceiverParameterDescriptor;
 public class w implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReceiverParameterDescriptor f35445d;
+    private final ReceiverParameterDescriptor f35493d;
 
     public w(ReceiverParameterDescriptor receiverParameterDescriptor) {
-        this.f35445d = receiverParameterDescriptor;
+        this.f35493d = receiverParameterDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ParameterDescriptor f10;
-        f10 = a0.f(this.f35445d);
+        f10 = a0.f(this.f35493d);
         return f10;
     }
 }

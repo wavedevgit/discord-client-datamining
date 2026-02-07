@@ -138,7 +138,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.acknowledgePurchase$lambda$34$lambda$33(RNIapModule.this, promise, billingResult);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -172,7 +172,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             createMap.putString("message", str5);
             rNIapModule.sendEvent(rNIapModule.reactContext, "purchase-error", createMap);
             d.b(promise, PROMISE_BUY_ITEM, str5);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         ArrayList<Object> arrayList = readableArray.toArrayList();
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
@@ -200,7 +200,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 createMap2.putString("productId", str6);
                 rNIapModule.sendEvent(rNIapModule.reactContext, "purchase-error", createMap2);
                 d.b(promise, PROMISE_BUY_ITEM, "The sku was not found. Please fetch products first by calling getItems");
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             BillingFlowParams.b.a c10 = BillingFlowParams.b.a().c(productDetails);
             Intrinsics.checkNotNullExpressionValue(c10, "setProductDetails(...)");
@@ -257,7 +257,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             com.dooboolab.rniap.a a14 = com.dooboolab.rniap.b.f9746a.a(b10);
             d.b(promise, a14.a(), a14.b());
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void consumeItems(List<? extends Purchase> list, final Promise promise, final int i10) {
@@ -291,7 +291,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.consumeItems$lambda$5$lambda$4(i10, promise, billingResult, str);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -313,7 +313,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.consumeProduct$lambda$36$lambda$35(RNIapModule.this, promise, billingResult, str);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -437,7 +437,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.flushFailedPurchasesCachedAsPending$lambda$8$lambda$7(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -478,7 +478,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.getAvailableItemsByType$lambda$24$lambda$23(RNIapModule.this, promise, writableNativeArray, str, billingResult, list);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -549,7 +549,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
         }
         if (arrayList.isEmpty()) {
             d.b(promise, "EMPTY_SKU_LIST", "The SKU list is empty.");
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         QueryProductDetailsParams a11 = QueryProductDetailsParams.a().b(arrayList).a();
         Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
@@ -559,7 +559,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.getItemsByType$lambda$20$lambda$19(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -668,7 +668,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.getPurchaseHistoryByType$lambda$28$lambda$27(RNIapModule.this, promise, billingResult, list);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -720,7 +720,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 RNIapModule.getStorefront$lambda$43$lambda$42(Promise.this, billingResult, billingConfig);
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -756,45 +756,45 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
                 if (str.equals("IN_APP_MESSAGING")) {
                     str2 = "bbb";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
             case 755711666:
                 if (str.equals("PRODUCT_DETAILS")) {
                     str2 = "fff";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
             case 808641238:
                 if (str.equals("SUBSCRIPTIONS")) {
                     str2 = "subscriptions";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
             case 1739975758:
                 if (str.equals("PRICE_CHANGE_CONFIRMATION")) {
                     str2 = "priceChangeConfirmation";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
             case 1785301586:
                 if (str.equals("SUBSCRIPTIONS_UPDATE")) {
                     str2 = "subscriptionsUpdate";
                     d.d(promise, billingClient.e(str2));
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
             default:
                 d.a(promise, "Invalid Feature name");
-                return Unit.f32008a;
+                return Unit.f32056a;
         }
     }
 
@@ -837,7 +837,7 @@ public final class RNIapModule extends ReactContextBaseJavaModule implements a6.
             });
         }
         d.d(promise, Boolean.TRUE);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

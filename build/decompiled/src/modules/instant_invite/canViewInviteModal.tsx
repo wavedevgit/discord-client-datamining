@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/instant_invite/canViewInviteModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun66205: for (var _fun66205_ip = 0;;) switch (_fun66205_ip) {
+        _fun66655: for (var _fun66655_ip = 0;;) switch (_fun66655_ip) {
             case 0:
                 var7 = arg0;
                 var4 = arg1;
@@ -34,16 +34,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var6 = var4;
                 if (!(var2 != var0)) {
-                    _fun66205_ip = 24;
-                    continue _fun66205
+                    _fun66655_ip = 24;
+                    continue _fun66655
                 }
             case 21:
                 var6 = var0;
             case 24:
                 var0 = var2 != var6;
                 if (!var0) {
-                    _fun66205_ip = 56;
-                    continue _fun66205
+                    _fun66655_ip = 56;
+                    continue _fun66655
                 }
             case 31:
                 var5 = var7.can;
@@ -52,14 +52,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.bind(var7)(var1, var6);
             case 56:
                 if (var0) {
-                    _fun66205_ip = 79;
-                    continue _fun66205
+                    _fun66655_ip = 79;
+                    continue _fun66655
                 }
             case 59:
                 var1 = var2 != var4;
                 if (!var1) {
-                    _fun66205_ip = 76;
-                    continue _fun66205
+                    _fun66655_ip = 76;
+                    continue _fun66655
                 }
             case 66:
                 var4 = var4.vanityURLCode;
@@ -68,15 +68,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1;
             case 79:
                 if (var0) {
-                    _fun66205_ip = 101;
-                    continue _fun66205
+                    _fun66655_ip = 101;
+                    continue _fun66655
                 }
             case 82:
                 var4 = var2 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun66205_ip = 97;
-                    continue _fun66205
+                    _fun66655_ip = 97;
+                    continue _fun66655
                 }
             case 91:
                 var1 = var3.invite_code;

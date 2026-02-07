@@ -1086,7 +1086,7 @@ public final class TouchLogger {
             set.clear();
             Log log = Log.INSTANCE;
             Log.i$default(log, TAG, "✅ Cleared " + size + " listeners", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -1303,7 +1303,7 @@ public final class TouchLogger {
             String simpleName = listener.getClass().getSimpleName();
             int size = set.size();
             Log.i$default(log, TAG, "✅ Registered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
         }
     }
 
@@ -1322,7 +1322,7 @@ public final class TouchLogger {
                     int size = set.size();
                     Log.i$default(log, TAG, "✅ Unregistered listener: " + simpleName + " (total: " + size + ")", (Throwable) null, 4, (Object) null);
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

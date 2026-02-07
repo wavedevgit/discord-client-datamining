@@ -12,7 +12,7 @@ import okio.Source;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f48179a = new a();
+    public static final a f48227a = new a();
 
     private a() {
     }

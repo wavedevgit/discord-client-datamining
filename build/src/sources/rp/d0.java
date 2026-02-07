@@ -5,16 +5,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f49041a;
+    private final int f49089a;
 
     /* renamed from: b  reason: collision with root package name */
-    private AtomicInteger f49042b = new AtomicInteger(0);
+    private AtomicInteger f49090b = new AtomicInteger(0);
 
     public d0(int i10) {
-        this.f49041a = i10;
+        this.f49089a = i10;
     }
 
     public final int a() {
-        return this.f49041a + this.f49042b.getAndIncrement();
+        return this.f49089a + this.f49090b.getAndIncrement();
     }
 }

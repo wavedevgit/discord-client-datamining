@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/application_commands/ApplicationCommandUserAppUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56398: for (var _fun56398_ip = 0;;) switch (_fun56398_ip) {
+        _fun56849: for (var _fun56849_ip = 0;;) switch (_fun56849_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.FEATURE_LIMITED;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1717;
-                    continue _fun56398
+                    _fun56849_ip = 1717;
+                    continue _fun56849
                 }
             case 46:
                 var3 = _closure1_slot0;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.GUILD_FEATURE_LIMITED;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1658;
-                    continue _fun56398
+                    _fun56849_ip = 1658;
+                    continue _fun56849
                 }
             case 82:
                 var3 = _closure1_slot0;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.USER_FEATURE_LIMITED;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1599;
-                    continue _fun56398
+                    _fun56849_ip = 1599;
+                    continue _fun56849
                 }
             case 118:
                 var3 = _closure1_slot0;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.SLOWMODE;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1540;
-                    continue _fun56398
+                    _fun56849_ip = 1540;
+                    continue _fun56849
                 }
             case 154:
                 var3 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.RATE_LIMIT;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1481;
-                    continue _fun56398
+                    _fun56849_ip = 1481;
+                    continue _fun56849
                 }
             case 190:
                 var3 = _closure1_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_MESSAGE_USER;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1422;
-                    continue _fun56398
+                    _fun56849_ip = 1422;
+                    continue _fun56849
                 }
             case 226:
                 var3 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.USER_VERIFICATION_LEVEL;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1363;
-                    continue _fun56398
+                    _fun56849_ip = 1363;
+                    continue _fun56849
                 }
             case 262:
                 var3 = _closure1_slot0;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_UNARCHIVE_THREAD;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1304;
-                    continue _fun56398
+                    _fun56849_ip = 1304;
+                    continue _fun56849
                 }
             case 298:
                 var3 = _closure1_slot0;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_JOIN_THREAD;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1245;
-                    continue _fun56398
+                    _fun56849_ip = 1245;
+                    continue _fun56849
                 }
             case 334:
                 var3 = _closure1_slot0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.MISSING_PERMISSIONS;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1186;
-                    continue _fun56398
+                    _fun56849_ip = 1186;
+                    continue _fun56849
                 }
             case 370:
                 var3 = _closure1_slot0;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_SEND_ATTACHMENTS;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1127;
-                    continue _fun56398
+                    _fun56849_ip = 1127;
+                    continue _fun56849
                 }
             case 406:
                 var3 = _closure1_slot0;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_SEND_EMBEDS;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1068;
-                    continue _fun56398
+                    _fun56849_ip = 1068;
+                    continue _fun56849
                 }
             case 442:
                 var3 = _closure1_slot0;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_SEND_STICKERS;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 1009;
-                    continue _fun56398
+                    _fun56849_ip = 1009;
+                    continue _fun56849
                 }
             case 478:
                 var3 = _closure1_slot0;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.AUTOMOD_BLOCKED;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 950;
-                    continue _fun56398
+                    _fun56849_ip = 950;
+                    continue _fun56849
                 }
             case 514:
                 var3 = _closure1_slot0;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.HARMFUL_LINK;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 891;
-                    continue _fun56398
+                    _fun56849_ip = 891;
+                    continue _fun56849
                 }
             case 550:
                 var3 = _closure1_slot0;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_USE_COMMAND;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 832;
-                    continue _fun56398
+                    _fun56849_ip = 832;
+                    continue _fun56849
                 }
             case 586:
                 var3 = _closure1_slot0;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.BETA_GUILD_SIZE;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 773;
-                    continue _fun56398
+                    _fun56849_ip = 773;
+                    continue _fun56849
                 }
             case 622:
                 var3 = _closure1_slot0;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EphemeralMessageReason;
                 var1 = var1.CANNOT_USE_EXTERNAL_APPS;
                 if (!(var1 !== var2)) {
-                    _fun56398_ip = 714;
-                    continue _fun56398
+                    _fun56849_ip = 714;
+                    continue _fun56849
                 }
             case 655:
                 var5 = _closure1_slot0;
@@ -494,4 +494,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getEphemeralReasonMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6846, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6890, 1234, 2]);

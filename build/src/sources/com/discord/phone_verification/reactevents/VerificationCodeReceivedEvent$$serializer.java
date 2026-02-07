@@ -36,7 +36,7 @@ public /* synthetic */ class VerificationCodeReceivedEvent$$serializer implement
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f31041a};
+        return new KSerializer[]{n2.f31089a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

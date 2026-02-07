@@ -11,35 +11,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function arg0() {
-        _fun10091: for (var _fun10091_ip = 0;;) switch (_fun10091_ip) {
+        _fun10093: for (var _fun10093_ip = 0;;) switch (_fun10093_ip) {
             case 0:
                 var4 = arg0;
                 var0 = undefined;
                 if (!(var0 !== var4)) {
-                    _fun10091_ip = 61;
-                    continue _fun10091
+                    _fun10093_ip = 61;
+                    continue _fun10093
                 }
             case 9:
                 var1 = 400;
                 if (!(var4 >= var1)) {
-                    _fun10091_ip = 36;
-                    continue _fun10091
+                    _fun10093_ip = 36;
+                    continue _fun10093
                 }
             case 19:
                 var1 = 500;
                 var3 = var4 < var1;
                 var1 = 'warning';
                 if (var3) {
-                    _fun10091_ip = 58;
-                    continue _fun10091
+                    _fun10093_ip = 58;
+                    continue _fun10093
                 }
             case 36:
                 var3 = 500;
                 var3 = var4 >= var3;
                 var2 = undefined;
                 if (!var3) {
-                    _fun10091_ip = 55;
-                    continue _fun10091
+                    _fun10093_ip = 55;
+                    continue _fun10093
                 }
             case 51:
                 var2 = 'error';

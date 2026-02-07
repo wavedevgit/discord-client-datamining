@@ -9,16 +9,16 @@ import qr.b0;
 public final class a implements Comparable, Serializable {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0551a f41150i = new C0551a(null);
+    public static final C0551a f41198i = new C0551a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final a f41151o = new a(0, 0);
+    private static final a f41199o = new a(0, 0);
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f41152d;
+    private final long f41200d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f41153e;
+    private final long f41201e;
 
     /* renamed from: ns.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -35,7 +35,7 @@ public final class a implements Comparable, Serializable {
         }
 
         public final a b() {
-            return a.f41151o;
+            return a.f41199o;
         }
 
         public final a c(String uuidString) {
@@ -71,26 +71,26 @@ public final class a implements Comparable, Serializable {
         int compare;
         int compare2;
         Intrinsics.checkNotNullParameter(other, "other");
-        long j10 = this.f41152d;
-        if (j10 != other.f41152d) {
-            compare2 = Long.compare(b0.d(j10) ^ Long.MIN_VALUE, b0.d(other.f41152d) ^ Long.MIN_VALUE);
+        long j10 = this.f41200d;
+        if (j10 != other.f41200d) {
+            compare2 = Long.compare(b0.d(j10) ^ Long.MIN_VALUE, b0.d(other.f41200d) ^ Long.MIN_VALUE);
             return compare2;
         }
-        compare = Long.compare(b0.d(this.f41153e) ^ Long.MIN_VALUE, b0.d(other.f41153e) ^ Long.MIN_VALUE);
+        compare = Long.compare(b0.d(this.f41201e) ^ Long.MIN_VALUE, b0.d(other.f41201e) ^ Long.MIN_VALUE);
         return compare;
     }
 
     public final String e() {
         byte[] bArr = new byte[36];
-        b.a(this.f41152d, bArr, 0, 0, 4);
+        b.a(this.f41200d, bArr, 0, 0, 4);
         bArr[8] = 45;
-        b.a(this.f41152d, bArr, 9, 4, 6);
+        b.a(this.f41200d, bArr, 9, 4, 6);
         bArr[13] = 45;
-        b.a(this.f41152d, bArr, 14, 6, 8);
+        b.a(this.f41200d, bArr, 14, 6, 8);
         bArr[18] = 45;
-        b.a(this.f41153e, bArr, 19, 0, 2);
+        b.a(this.f41201e, bArr, 19, 0, 2);
         bArr[23] = 45;
-        b.a(this.f41153e, bArr, 24, 2, 8);
+        b.a(this.f41201e, bArr, 24, 2, 8);
         return StringsKt.x(bArr);
     }
 
@@ -102,14 +102,14 @@ public final class a implements Comparable, Serializable {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f41152d == aVar.f41152d && this.f41153e == aVar.f41153e) {
+        if (this.f41200d == aVar.f41200d && this.f41201e == aVar.f41201e) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Long.hashCode(this.f41152d ^ this.f41153e);
+        return Long.hashCode(this.f41200d ^ this.f41201e);
     }
 
     public String toString() {
@@ -117,7 +117,7 @@ public final class a implements Comparable, Serializable {
     }
 
     private a(long j10, long j11) {
-        this.f41152d = j10;
-        this.f41153e = j11;
+        this.f41200d = j10;
+        this.f41201e = j11;
     }
 }

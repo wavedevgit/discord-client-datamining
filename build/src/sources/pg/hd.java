@@ -7,11 +7,11 @@ import java.util.List;
 public final class hd implements pd {
 
     /* renamed from: a  reason: collision with root package name */
-    final List f44308a;
+    final List f44356a;
 
     public hd(Context context, gd gdVar) {
         ArrayList arrayList = new ArrayList();
-        this.f44308a = arrayList;
+        this.f44356a = arrayList;
         if (gdVar.c()) {
             arrayList.add(new yd(context, gdVar));
         }
@@ -19,7 +19,7 @@ public final class hd implements pd {
 
     @Override // pg.pd
     public final void a(ed edVar) {
-        for (pd pdVar : this.f44308a) {
+        for (pd pdVar : this.f44356a) {
             pdVar.a(edVar);
         }
     }

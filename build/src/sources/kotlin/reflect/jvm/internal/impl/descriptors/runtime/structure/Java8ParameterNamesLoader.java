@@ -10,31 +10,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class Java8ParameterNamesLoader {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Java8ParameterNamesLoader f32625a = new Java8ParameterNamesLoader();
+    public static final Java8ParameterNamesLoader f32673a = new Java8ParameterNamesLoader();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Cache f32626b;
+    private static Cache f32674b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Cache {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f32627a;
+        private final Method f32675a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f32628b;
+        private final Method f32676b;
 
         public Cache(Method method, Method method2) {
-            this.f32627a = method;
-            this.f32628b = method2;
+            this.f32675a = method;
+            this.f32676b = method2;
         }
 
         public final Method getGetName() {
-            return this.f32628b;
+            return this.f32676b;
         }
 
         public final Method getGetParameters() {
-            return this.f32627a;
+            return this.f32675a;
         }
     }
 
@@ -54,13 +54,13 @@ public final class Java8ParameterNamesLoader {
     public final List b(Member member) {
         Method getName;
         Intrinsics.checkNotNullParameter(member, "member");
-        Cache cache = f32626b;
+        Cache cache = f32674b;
         if (cache == null) {
             synchronized (this) {
-                cache = f32626b;
+                cache = f32674b;
                 if (cache == null) {
-                    cache = f32625a.a(member);
-                    f32626b = cache;
+                    cache = f32673a.a(member);
+                    f32674b = cache;
                 }
             }
         }

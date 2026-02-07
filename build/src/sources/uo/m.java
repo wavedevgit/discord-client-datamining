@@ -5,10 +5,10 @@ import android.app.Application;
 public final class m implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f52007a;
+    private final l f52055a;
 
     public m(l lVar) {
-        this.f52007a = lVar;
+        this.f52055a = lVar;
     }
 
     public static Application a(l lVar) {
@@ -22,6 +22,6 @@ public final class m implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public Application get() {
-        return a(this.f52007a);
+        return a(this.f52055a);
     }
 }

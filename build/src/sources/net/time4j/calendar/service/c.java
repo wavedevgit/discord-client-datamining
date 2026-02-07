@@ -12,7 +12,7 @@ import rt.s;
 public class c implements s {
     @Override // rt.s
     public boolean a(p pVar) {
-        if (pVar == KoreanCalendar.f39141u) {
+        if (pVar == KoreanCalendar.f39189u) {
             return true;
         }
         return false;
@@ -20,7 +20,7 @@ public class c implements s {
 
     @Override // rt.s
     public q b(q qVar, Locale locale, rt.d dVar) {
-        p pVar = KoreanCalendar.f39141u;
+        p pVar = KoreanCalendar.f39189u;
         if (qVar.n(pVar)) {
             return qVar.C(f0.A, qVar.q(pVar) - 2333);
         }

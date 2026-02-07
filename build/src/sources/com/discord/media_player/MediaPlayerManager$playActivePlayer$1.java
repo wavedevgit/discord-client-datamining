@@ -35,13 +35,13 @@ public final class MediaPlayerManager$playActivePlayer$1 extends k implements Fu
             if (weakReference != null && (mediaPlayer = (MediaPlayer) weakReference.get()) != null) {
                 mediaPlayer.playOrReset();
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaPlayerManager$playActivePlayer$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaPlayerManager$playActivePlayer$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -5,20 +5,20 @@ import android.opengl.EGLSurface;
 final class c extends g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final EGLSurface f35600a;
+    private final EGLSurface f35648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f35601b;
+    private final int f35649b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f35602c;
+    private final int f35650c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(EGLSurface eGLSurface, int i10, int i11) {
         if (eGLSurface != null) {
-            this.f35600a = eGLSurface;
-            this.f35601b = i10;
-            this.f35602c = i11;
+            this.f35648a = eGLSurface;
+            this.f35649b = i10;
+            this.f35650c = i11;
             return;
         }
         throw new NullPointerException("Null eglSurface");
@@ -26,17 +26,17 @@ final class c extends g {
 
     @Override // l0.g
     public EGLSurface a() {
-        return this.f35600a;
+        return this.f35648a;
     }
 
     @Override // l0.g
     public int b() {
-        return this.f35602c;
+        return this.f35650c;
     }
 
     @Override // l0.g
     public int c() {
-        return this.f35601b;
+        return this.f35649b;
     }
 
     public boolean equals(Object obj) {
@@ -45,7 +45,7 @@ final class c extends g {
         }
         if (obj instanceof g) {
             g gVar = (g) obj;
-            if (this.f35600a.equals(gVar.a()) && this.f35601b == gVar.c() && this.f35602c == gVar.b()) {
+            if (this.f35648a.equals(gVar.a()) && this.f35649b == gVar.c() && this.f35650c == gVar.b()) {
                 return true;
             }
         }
@@ -53,10 +53,10 @@ final class c extends g {
     }
 
     public int hashCode() {
-        return ((((this.f35600a.hashCode() ^ 1000003) * 1000003) ^ this.f35601b) * 1000003) ^ this.f35602c;
+        return ((((this.f35648a.hashCode() ^ 1000003) * 1000003) ^ this.f35649b) * 1000003) ^ this.f35650c;
     }
 
     public String toString() {
-        return "OutputSurface{eglSurface=" + this.f35600a + ", width=" + this.f35601b + ", height=" + this.f35602c + "}";
+        return "OutputSurface{eglSurface=" + this.f35648a + ", width=" + this.f35649b + ", height=" + this.f35650c + "}";
     }
 }

@@ -12,43 +12,43 @@ public enum d {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f48169d;
+    private final transient int f48217d;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final int[] f48159q = {100, 1000, 10000, 100000};
+    private static final int[] f48207q = {100, 1000, 10000, 100000};
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a0 f48160r = i0.a0(2000, 1, 6, 18, 13, 42).R();
+    private static final a0 f48208r = i0.a0(2000, 1, 6, 18, 13, 42).R();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final int[] f48161s = {0, 1, 0, 0, 1, 1, 2, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static final int[] f48209s = {0, 1, 0, 0, 1, 1, 2, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     /* renamed from: t  reason: collision with root package name */
-    private static final int[] f48162t = {0, 1, 1, 0, 0, 1, 2, 0, 0, 0, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static final int[] f48210t = {0, 1, 1, 0, 0, 1, 2, 0, 0, 0, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     /* renamed from: u  reason: collision with root package name */
-    private static final int[] f48163u = {0, 1, 0, 0, -1, 1, 2, 0, 0, 1, 0, 1, 1, -1, 2, 0, 3, 1, 0, 1, -1, -1, 1, 0};
+    private static final int[] f48211u = {0, 1, 0, 0, -1, 1, 2, 0, 0, 1, 0, 1, 1, -1, 2, 0, 3, 1, 0, 1, -1, -1, 1, 0};
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int[] f48164v = {0, 1, 1, 0, 0, -1, 2, 0, 0, 0, -1, 1, 1, 2, 1, -1, 0, 1, -2, 1, 3, 0, -1, 1};
+    private static final int[] f48212v = {0, 1, 1, 0, 0, -1, 2, 0, 0, 0, -1, 1, 1, 2, 1, -1, 0, 1, -2, 1, 3, 0, -1, 1};
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int[] f48165w = {1, 0, 2, 0, 1, 1, 0, 1, 1, 2, 3, 0, 0, 2, 1, 2, 0, 1, 2, 1, 1, 1, 3, 4};
+    private static final int[] f48213w = {1, 0, 2, 0, 1, 1, 0, 1, 1, 2, 3, 0, 0, 2, 1, 2, 0, 1, 2, 1, 1, 1, 3, 4};
 
     /* renamed from: x  reason: collision with root package name */
-    private static final int[] f48166x = {1, 0, 1, 2, 0, 1, 0, 1, 1, 3, 2, 0, 0, 1, 2, 1, 2, 1, 1, 1, 0, 2, 1, 3};
+    private static final int[] f48214x = {1, 0, 1, 2, 0, 1, 0, 1, 1, 3, 2, 0, 0, 1, 2, 1, 2, 1, 1, 1, 0, 2, 1, 3};
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int[] f48167y = {0, 0, 0, 2, 0, 0, 0, -2, 2, 0, 0, 2, -2, 0, 0, -2, 0, -2, 2, 2, 2, -2, 0, 0};
+    private static final int[] f48215y = {0, 0, 0, 2, 0, 0, 0, -2, 2, 0, 0, 2, -2, 0, 0, -2, 0, -2, 2, 2, 2, -2, 0, 0};
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int[] f48168z = {0, 0, 0, 0, 2, 0, 0, -2, 2, 0, 0, 2, -2, 0, 0, -2, 2, 2, 0, -2, 0, -2, 2, 0};
+    private static final int[] f48216z = {0, 0, 0, 0, 2, 0, 0, -2, 2, 0, 0, 2, -2, 0, 0, -2, 2, 2, 0, -2, 0, -2, 2, 0};
     private static final double[] A = {-0.4072d, 0.17241d, 0.01608d, 0.01039d, 0.00739d, -0.00514d, 0.00208d, -0.00111d, -5.7E-4d, 5.6E-4d, -4.2E-4d, 4.2E-4d, 3.8E-4d, -2.4E-4d, -7.0E-5d, 4.0E-5d, 4.0E-5d, 3.0E-5d, 3.0E-5d, -3.0E-5d, 3.0E-5d, -2.0E-5d, -2.0E-5d, 2.0E-5d};
     private static final double[] B = {-0.40614d, 0.17302d, 0.01614d, 0.01043d, 0.00734d, -0.00515d, 0.00209d, -0.00111d, -5.7E-4d, 5.6E-4d, -4.2E-4d, 4.2E-4d, 3.8E-4d, -2.4E-4d, -7.0E-5d, 4.0E-5d, 4.0E-5d, 3.0E-5d, 3.0E-5d, -3.0E-5d, 3.0E-5d, -2.0E-5d, -2.0E-5d, 2.0E-5d};
     private static final double[] C = {-0.62801d, 0.17172d, -0.01183d, 0.00862d, 0.00804d, 0.00454d, 0.00204d, -0.0018d, -7.0E-4d, -4.0E-4d, -3.4E-4d, 3.2E-4d, 3.2E-4d, -2.8E-4d, 2.7E-4d, -5.0E-5d, 4.0E-5d, -4.0E-5d, 4.0E-5d, 3.0E-5d, 3.0E-5d, 2.0E-5d, 2.0E-5d, -2.0E-5d};
 
     d(int i10) {
-        this.f48169d = i10;
+        this.f48217d = i10;
     }
 
     private static double f(double d10, double d11, double d12, double d13) {
@@ -60,7 +60,7 @@ public enum d {
     }
 
     private int h(a0 a0Var) {
-        return pt.c.g(Math.round((f48160r.L(a0Var, TimeUnit.DAYS) / 29.530588861d) - (this.f48169d / 360.0d)));
+        return pt.c.g(Math.round((f48208r.L(a0Var, TimeUnit.DAYS) / 29.530588861d) - (this.f48217d / 360.0d)));
     }
 
     private double i(double d10, double d11, double d12, double d13) {
@@ -78,24 +78,24 @@ public enum d {
             dArr = C;
         }
         if (this != dVar && this != FULL_MOON) {
-            iArr = f48162t;
+            iArr = f48210t;
         } else {
-            iArr = f48161s;
+            iArr = f48209s;
         }
         if (this != dVar && this != FULL_MOON) {
-            iArr2 = f48164v;
+            iArr2 = f48212v;
         } else {
-            iArr2 = f48163u;
+            iArr2 = f48211u;
         }
         if (this != dVar && this != FULL_MOON) {
-            iArr3 = f48166x;
+            iArr3 = f48214x;
         } else {
-            iArr3 = f48165w;
+            iArr3 = f48213w;
         }
         if (this != dVar && this != FULL_MOON) {
-            iArr4 = f48168z;
+            iArr4 = f48216z;
         } else {
-            iArr4 = f48167y;
+            iArr4 = f48215y;
         }
         double d14 = 0.0d;
         for (int i10 = 23; i10 >= 0; i10--) {
@@ -119,7 +119,7 @@ public enum d {
     }
 
     public a0 a(int i10) {
-        double d10 = i10 + (this.f48169d / 360.0d);
+        double d10 = i10 + (this.f48217d / 360.0d);
         double d11 = d10 / 1236.85d;
         double d12 = d11 * d11;
         double d13 = 1.0d - (((7.4E-6d * d11) + 0.002516d) * d11);
@@ -136,7 +136,7 @@ public enum d {
         for (int i11 = 0; i11 < 28; i11 += 2) {
             sin += dArr[i11 + 1] * Math.sin(Math.toRadians(dArr[i11]));
         }
-        return (a0) c.f(sin).h().E(a0.f39063z, TimeUnit.SECONDS);
+        return (a0) c.f(sin).h().E(a0.f39111z, TimeUnit.SECONDS);
     }
 
     public a0 d(a0 a0Var) {

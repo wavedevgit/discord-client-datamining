@@ -22,10 +22,10 @@ import org.jetbrains.annotations.NotNull;
 public class PropertySetterDescriptorImpl extends PropertyAccessorDescriptorImpl implements PropertySetterDescriptor {
 
     /* renamed from: x  reason: collision with root package name */
-    private ValueParameterDescriptor f32567x;
+    private ValueParameterDescriptor f32615x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final PropertySetterDescriptor f32568y;
+    private final PropertySetterDescriptor f32616y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PropertySetterDescriptorImpl(@NotNull PropertyDescriptor propertyDescriptor, @NotNull Annotations annotations, @NotNull Modality modality, @NotNull DescriptorVisibility descriptorVisibility, boolean z10, boolean z11, boolean z12, @NotNull CallableMemberDescriptor.Kind kind, PropertySetterDescriptor propertySetterDescriptor, @NotNull SourceElement sourceElement) {
@@ -54,7 +54,7 @@ public class PropertySetterDescriptorImpl extends PropertyAccessorDescriptorImpl
         } else {
             propertySetterDescriptor2 = this;
         }
-        this.f32568y = propertySetterDescriptor2;
+        this.f32616y = propertySetterDescriptor2;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -207,7 +207,7 @@ public class PropertySetterDescriptorImpl extends PropertyAccessorDescriptorImpl
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public List<ValueParameterDescriptor> getValueParameters() {
-        ValueParameterDescriptor valueParameterDescriptor = this.f32567x;
+        ValueParameterDescriptor valueParameterDescriptor = this.f32615x;
         if (valueParameterDescriptor != null) {
             List<ValueParameterDescriptor> singletonList = Collections.singletonList(valueParameterDescriptor);
             if (singletonList == null) {
@@ -222,13 +222,13 @@ public class PropertySetterDescriptorImpl extends PropertyAccessorDescriptorImpl
         if (valueParameterDescriptor == null) {
             a(6);
         }
-        this.f32567x = valueParameterDescriptor;
+        this.f32615x = valueParameterDescriptor;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.PropertyAccessorDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public PropertySetterDescriptor getOriginal() {
-        PropertySetterDescriptor propertySetterDescriptor = this.f32568y;
+        PropertySetterDescriptor propertySetterDescriptor = this.f32616y;
         if (propertySetterDescriptor == null) {
             a(13);
         }

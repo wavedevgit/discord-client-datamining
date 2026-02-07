@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var2 = var4.useCallback;
         var1 = function() { // Environment: var0
-            _fun101805: for (var _fun101805_ip = 0;;) switch (_fun101805_ip) {
+            _fun102286: for (var _fun102286_ip = 0;;) switch (_fun102286_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3 == var2;
                     var4 = var2;
                     if (var1) {
-                        _fun101805_ip = 59;
-                        continue _fun101805
+                        _fun102286_ip = 59;
+                        continue _fun102286
                     }
                 case 47:
                     var2 = var2.current;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var2;
                 case 59:
                     if (var1) {
-                        _fun101805_ip = 110;
-                        continue _fun101805
+                        _fun102286_ip = 110;
+                        continue _fun102286
                     }
                 case 62:
                     var3 = var4.navigate;
@@ -252,4 +252,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_EMPTY_STATE_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3922, 13287, 3943, 1234, 4085, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3921, 13330, 3942, 1234, 4084, 2]);

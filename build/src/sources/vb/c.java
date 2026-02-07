@@ -20,22 +20,22 @@ import os.v0;
 public final class c implements LifecycleEventListener {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f52379o;
+    public static final b f52427o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static Integer f52380p;
+    private static Integer f52428p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Function2 f52381q;
+    private static final Function2 f52429q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactContext f52382d;
+    private final ReactContext f52430d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f52383e;
+    private final Function0 f52431e;
 
     /* renamed from: i  reason: collision with root package name */
-    private OrientationEventListener f52384i;
+    private OrientationEventListener f52432i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -51,7 +51,7 @@ public final class c implements LifecycleEventListener {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), (ReactContext) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -76,15 +76,15 @@ public final class c implements LifecycleEventListener {
         }
 
         public final Integer b() {
-            return c.f52380p;
+            return c.f52428p;
         }
 
         public final Function2 c() {
-            return c.f52381q;
+            return c.f52429q;
         }
 
         public final void d(Integer num) {
-            c.f52380p = num;
+            c.f52428p = num;
         }
 
         private b() {
@@ -96,41 +96,41 @@ public final class c implements LifecycleEventListener {
     public static final class C0688c extends OrientationEventListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c f52385a;
+        final /* synthetic */ c f52433a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         C0688c(Activity activity, c cVar) {
             super(activity);
-            this.f52385a = cVar;
+            this.f52433a = cVar;
         }
 
         @Override // android.view.OrientationEventListener
         public void onOrientationChanged(int i10) {
-            c.f52379o.c().invoke(Integer.valueOf(i10), this.f52385a.f52382d);
+            c.f52427o.c().invoke(Integer.valueOf(i10), this.f52433a.f52430d);
         }
     }
 
     static {
         b bVar = new b(null);
-        f52379o = bVar;
-        f52381q = f.b(1000L, v0.f43538d, new a(bVar));
+        f52427o = bVar;
+        f52429q = f.b(1000L, v0.f43586d, new a(bVar));
     }
 
     public c(ReactContext reactContext, Function0 onGetCurrentActivity) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(onGetCurrentActivity, "onGetCurrentActivity");
-        this.f52382d = reactContext;
-        this.f52383e = onGetCurrentActivity;
+        this.f52430d = reactContext;
+        this.f52431e = onGetCurrentActivity;
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        Activity activity = (Activity) this.f52383e.invoke();
-        if (activity != null && this.f52384i == null) {
+        Activity activity = (Activity) this.f52431e.invoke();
+        if (activity != null && this.f52432i == null) {
             C0688c c0688c = new C0688c(activity, this);
-            this.f52384i = c0688c;
+            this.f52432i = c0688c;
             if (c0688c.canDetectOrientation()) {
-                OrientationEventListener orientationEventListener = this.f52384i;
+                OrientationEventListener orientationEventListener = this.f52432i;
                 if (orientationEventListener == null) {
                     Intrinsics.throwUninitializedPropertyAccessException("orientationEventListener");
                     orientationEventListener = null;

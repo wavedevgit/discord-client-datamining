@@ -8,10 +8,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class d extends Event {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f40907b = new a(null);
+    public static final a f40955b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f40908a;
+    private final int f40956a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -25,18 +25,18 @@ public final class d extends Event {
 
     public d(int i10, int i11, int i12) {
         super(i10, i11);
-        this.f40908a = i12;
+        this.f40956a = i12;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     public short getCoalescingKey() {
-        return (short) this.f40908a;
+        return (short) this.f40956a;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
-        createMap.putDouble("headerHeight", this.f40908a);
+        createMap.putDouble("headerHeight", this.f40956a);
         return createMap;
     }
 

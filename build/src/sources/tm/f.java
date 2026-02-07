@@ -16,19 +16,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f50759e = new a(null);
+    public static final a f50807e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f50760a;
+    private final ReactApplicationContext f50808a;
 
     /* renamed from: b  reason: collision with root package name */
-    private h f50761b;
+    private h f50809b;
 
     /* renamed from: c  reason: collision with root package name */
-    private WindowInsetsControllerCompat f50762c;
+    private WindowInsetsControllerCompat f50810c;
 
     /* renamed from: d  reason: collision with root package name */
-    private WeakReference f50763d;
+    private WeakReference f50811d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -42,26 +42,26 @@ public final class f {
 
     public f(ReactApplicationContext mReactContext) {
         Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-        this.f50760a = mReactContext;
-        this.f50761b = new h(mReactContext);
-        this.f50763d = new WeakReference(null);
+        this.f50808a = mReactContext;
+        this.f50809b = new h(mReactContext);
+        this.f50811d = new WeakReference(null);
     }
 
     private final WindowInsetsControllerCompat g() {
         String str;
-        Activity currentActivity = this.f50760a.getCurrentActivity();
-        if (this.f50762c == null || !Intrinsics.areEqual(currentActivity, this.f50763d.get())) {
+        Activity currentActivity = this.f50808a.getCurrentActivity();
+        if (this.f50810c == null || !Intrinsics.areEqual(currentActivity, this.f50811d.get())) {
             if (currentActivity == null) {
-                pm.a aVar = pm.a.f45061a;
-                str = g.f50764a;
+                pm.a aVar = pm.a.f45109a;
+                str = g.f50812a;
                 pm.a.f(aVar, str, "StatusBarManagerCompatModule: can not get `WindowInsetsControllerCompat` because current activity is null.", null, 4, null);
-                return this.f50762c;
+                return this.f50810c;
             }
             Window window = currentActivity.getWindow();
-            this.f50763d = new WeakReference(currentActivity);
-            this.f50762c = new WindowInsetsControllerCompat(window, window.getDecorView());
+            this.f50811d = new WeakReference(currentActivity);
+            this.f50810c = new WindowInsetsControllerCompat(window, window.getDecorView());
         }
-        return this.f50762c;
+        return this.f50810c;
     }
 
     private final boolean h() {
@@ -131,23 +131,23 @@ public final class f {
     }
 
     private final vm.c r() {
-        return vm.e.f52752a.a();
+        return vm.e.f52800a.a();
     }
 
     public final Map f() {
-        return this.f50761b.a();
+        return this.f50809b.a();
     }
 
     public final void i(final int i10, final boolean z10) {
         String str;
         if (!h()) {
-            this.f50761b.b(i10, z10);
+            this.f50809b.b(i10, z10);
             return;
         }
-        final Activity currentActivity = this.f50760a.getCurrentActivity();
+        final Activity currentActivity = this.f50808a.getCurrentActivity();
         if (currentActivity == null) {
-            pm.a aVar = pm.a.f45061a;
-            str = g.f50764a;
+            pm.a aVar = pm.a.f45109a;
+            str = g.f50812a;
             pm.a.f(aVar, str, "StatusBarManagerCompatModule: Ignored status bar change, current activity is null.", null, 4, null);
             return;
         }
@@ -171,7 +171,7 @@ public final class f {
     public final void n(final String style) {
         Intrinsics.checkNotNullParameter(style, "style");
         if (!h()) {
-            this.f50761b.c(style);
+            this.f50809b.c(style);
         } else {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.b
                 @Override // java.lang.Runnable
@@ -184,7 +184,7 @@ public final class f {
 
     public final void p(final boolean z10) {
         if (!h()) {
-            this.f50761b.d(z10);
+            this.f50809b.d(z10);
         } else {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: tm.c
                 @Override // java.lang.Runnable

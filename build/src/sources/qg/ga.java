@@ -5,7 +5,7 @@ import yi.c;
 final class ga implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f47063a = new ga();
+    static final ga f47111a = new ga();
 
     static {
         c.b a10 = yi.c.a("detectorMode");

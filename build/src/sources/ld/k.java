@@ -9,19 +9,19 @@ public final class k extends i {
     public static final Parcelable.Creator<k> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f36065e;
+    public final int f36113e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f36066i;
+    public final int f36114i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f36067o;
+    public final int f36115o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int[] f36068p;
+    public final int[] f36116p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int[] f36069q;
+    public final int[] f36117q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -43,11 +43,11 @@ public final class k extends i {
 
     public k(int i10, int i11, int i12, int[] iArr, int[] iArr2) {
         super("MLLT");
-        this.f36065e = i10;
-        this.f36066i = i11;
-        this.f36067o = i12;
-        this.f36068p = iArr;
-        this.f36069q = iArr2;
+        this.f36113e = i10;
+        this.f36114i = i11;
+        this.f36115o = i12;
+        this.f36116p = iArr;
+        this.f36117q = iArr2;
     }
 
     @Override // ld.i, android.os.Parcelable
@@ -61,7 +61,7 @@ public final class k extends i {
         }
         if (obj != null && k.class == obj.getClass()) {
             k kVar = (k) obj;
-            if (this.f36065e == kVar.f36065e && this.f36066i == kVar.f36066i && this.f36067o == kVar.f36067o && Arrays.equals(this.f36068p, kVar.f36068p) && Arrays.equals(this.f36069q, kVar.f36069q)) {
+            if (this.f36113e == kVar.f36113e && this.f36114i == kVar.f36114i && this.f36115o == kVar.f36115o && Arrays.equals(this.f36116p, kVar.f36116p) && Arrays.equals(this.f36117q, kVar.f36117q)) {
                 return true;
             }
         }
@@ -69,24 +69,24 @@ public final class k extends i {
     }
 
     public int hashCode() {
-        return ((((((((527 + this.f36065e) * 31) + this.f36066i) * 31) + this.f36067o) * 31) + Arrays.hashCode(this.f36068p)) * 31) + Arrays.hashCode(this.f36069q);
+        return ((((((((527 + this.f36113e) * 31) + this.f36114i) * 31) + this.f36115o) * 31) + Arrays.hashCode(this.f36116p)) * 31) + Arrays.hashCode(this.f36117q);
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f36065e);
-        parcel.writeInt(this.f36066i);
-        parcel.writeInt(this.f36067o);
-        parcel.writeIntArray(this.f36068p);
-        parcel.writeIntArray(this.f36069q);
+        parcel.writeInt(this.f36113e);
+        parcel.writeInt(this.f36114i);
+        parcel.writeInt(this.f36115o);
+        parcel.writeIntArray(this.f36116p);
+        parcel.writeIntArray(this.f36117q);
     }
 
     k(Parcel parcel) {
         super("MLLT");
-        this.f36065e = parcel.readInt();
-        this.f36066i = parcel.readInt();
-        this.f36067o = parcel.readInt();
-        this.f36068p = (int[]) w0.j(parcel.createIntArray());
-        this.f36069q = (int[]) w0.j(parcel.createIntArray());
+        this.f36113e = parcel.readInt();
+        this.f36114i = parcel.readInt();
+        this.f36115o = parcel.readInt();
+        this.f36116p = (int[]) w0.j(parcel.createIntArray());
+        this.f36117q = (int[]) w0.j(parcel.createIntArray());
     }
 }

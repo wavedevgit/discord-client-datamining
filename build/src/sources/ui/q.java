@@ -3,13 +3,13 @@ package ui;
 public final class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f51550a;
+    private final d0 f51598a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f51551b;
+    private final int f51599b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f51552c;
+    private final int f51600c;
 
     private q(Class cls, int i10, int i11) {
         this(d0.b(cls), i10, i11);
@@ -57,25 +57,25 @@ public final class q {
     }
 
     public d0 b() {
-        return this.f51550a;
+        return this.f51598a;
     }
 
     public boolean c() {
-        if (this.f51552c == 2) {
+        if (this.f51600c == 2) {
             return true;
         }
         return false;
     }
 
     public boolean d() {
-        if (this.f51552c == 0) {
+        if (this.f51600c == 0) {
             return true;
         }
         return false;
     }
 
     public boolean e() {
-        if (this.f51551b == 1) {
+        if (this.f51599b == 1) {
             return true;
         }
         return false;
@@ -84,7 +84,7 @@ public final class q {
     public boolean equals(Object obj) {
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f51550a.equals(qVar.f51550a) && this.f51551b == qVar.f51551b && this.f51552c == qVar.f51552c) {
+            if (this.f51598a.equals(qVar.f51598a) && this.f51599b == qVar.f51599b && this.f51600c == qVar.f51600c) {
                 return true;
             }
         }
@@ -92,22 +92,22 @@ public final class q {
     }
 
     public boolean f() {
-        if (this.f51551b == 2) {
+        if (this.f51599b == 2) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return ((((this.f51550a.hashCode() ^ 1000003) * 1000003) ^ this.f51551b) * 1000003) ^ this.f51552c;
+        return ((((this.f51598a.hashCode() ^ 1000003) * 1000003) ^ this.f51599b) * 1000003) ^ this.f51600c;
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder("Dependency{anInterface=");
-        sb2.append(this.f51550a);
+        sb2.append(this.f51598a);
         sb2.append(", type=");
-        int i10 = this.f51551b;
+        int i10 = this.f51599b;
         if (i10 == 1) {
             str = "required";
         } else if (i10 == 0) {
@@ -117,14 +117,14 @@ public final class q {
         }
         sb2.append(str);
         sb2.append(", injection=");
-        sb2.append(a(this.f51552c));
+        sb2.append(a(this.f51600c));
         sb2.append("}");
         return sb2.toString();
     }
 
     private q(d0 d0Var, int i10, int i11) {
-        this.f51550a = (d0) c0.c(d0Var, "Null dependency anInterface.");
-        this.f51551b = i10;
-        this.f51552c = i11;
+        this.f51598a = (d0) c0.c(d0Var, "Null dependency anInterface.");
+        this.f51599b = i10;
+        this.f51600c = i11;
     }
 }

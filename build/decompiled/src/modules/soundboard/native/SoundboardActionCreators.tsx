@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showSoundboardSoundPickerActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1229, 3214, 1358, 3280, 8534, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 1229, 3213, 1358, 3279, 8578, 1307, 2]);

@@ -1,84 +1,70 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function arg0() {
-        _fun29185: for (var _fun29185_ip = 0;;) switch (_fun29185_ip) {
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1() {
+        _fun29196: for (var _fun29196_ip = 0;;) switch (_fun29196_ip) {
             case 0:
-                var0 = arg0;
-                var1 = undefined;
-                if (!(var1 !== var0)) {
-                    _fun29185_ip = 172;
-                    continue _fun29185
+                var1 = arg0;
+                var0 = arg1;
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var3 = 0;
+                var3 = var4[var3];
+                var4 = undefined;
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.bind(var4)(var1);
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                if (var3) {
+                    _fun29196_ip = 86;
+                    continue _fun29196
                 }
-            case 12:
-                var1 = {};
-                var2 = '[[Value]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 37;
-                    continue _fun29185
+            case 46:
+                var3 = 1;
+                var3 = var6[var3];
+                var8 = var5.bind(var4)(var3);
+                var3 = var8.prototype;
+                var7 = Object.create(var3, {
+                    constructor: {
+                        value: var8
+                    }
+                });
+                var9 = 'Assertion failed: `O` must be an Object';
+                var10 = var7;
+                var3 = new var10[var8](var9, var8);
+                var3 = var3 instanceof Object ? var3 : var7;
+                throw var3;
+            case 86:
+                var3 = 2;
+                var3 = var6[var3];
+                var3 = var5.bind(var4)(var3);
+                var3 = var3.bind(var4)(var0);
+                if (var3) {
+                    _fun29196_ip = 154;
+                    continue _fun29196
                 }
-            case 25:
-                var2 = var0["[[Value]]"];
-                var1.value = var2;
-            case 37:
-                var2 = '[[Writable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 66;
-                    continue _fun29185
-                }
-            case 48:
-                var2 = var0["[[Writable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.writable = var2;
-            case 66:
-                var2 = '[[Get]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 89;
-                    continue _fun29185
-                }
-            case 77:
-                var2 = var0["[[Get]]"];
-                var1.get = var2;
-            case 89:
-                var2 = '[[Set]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 112;
-                    continue _fun29185
-                }
-            case 100:
-                var2 = var0["[[Set]]"];
-                var1.set = var2;
-            case 112:
-                var2 = '[[Enumerable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 141;
-                    continue _fun29185
-                }
-            case 123:
-                var2 = var0["[[Enumerable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.enumerable = var2;
-            case 141:
-                var2 = '[[Configurable]]';
-                var2 = var2 in var0;
-                if (!var2) {
-                    _fun29185_ip = 170;
-                    continue _fun29185
-                }
-            case 152:
-                var2 = var0["[[Configurable]]"];
-                var2 = !var2;
-                var2 = !var2;
-                var1.configurable = var2;
-            case 170:
-                return var1;
-            case 172:
+            case 106:
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 1;
+                var2 = var5[var2];
+                var4 = var3.bind(var4)(var2);
+                var2 = var4.prototype;
+                var3 = Object.create(var2, {
+                    constructor: {
+                        value: var4
+                    }
+                });
+                var9 = 'Assertion failed: `P` must be a Property Key';
+                var10 = var3;
+                var2 = new var10[var4](var9, var8);
+                var2 = var2 instanceof Object ? var2 : var3;
+                throw var2;
+            case 154:
+                var0 = var0 in var1;
                 return var0;
         }
     };
@@ -86,4 +72,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3369, 518, 3416]);

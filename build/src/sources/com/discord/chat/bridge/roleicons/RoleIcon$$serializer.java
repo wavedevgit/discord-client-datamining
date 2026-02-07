@@ -44,8 +44,8 @@ public /* synthetic */ class RoleIcon$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{a.u(n2Var), a.u(n2Var), n2Var, p0.f31057a, n2Var};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{a.u(n2Var), a.u(n2Var), n2Var, p0.f31105a, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -61,7 +61,7 @@ public /* synthetic */ class RoleIcon$$serializer implements h0 {
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             String m10 = b10.m(serialDescriptor, 2);
             int i12 = b10.i(serialDescriptor, 3);
             str2 = (String) b10.n(serialDescriptor, 1, n2Var, null);
@@ -83,10 +83,10 @@ public /* synthetic */ class RoleIcon$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str5 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str5);
                     i14 |= 1;
                 } else if (o10 == 1) {
-                    str6 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str6);
                     i14 |= 2;
                 } else if (o10 == 2) {
                     str7 = b10.m(serialDescriptor, 2);

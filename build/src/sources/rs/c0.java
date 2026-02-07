@@ -7,12 +7,12 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public abstract class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ts.e0 f49244a = new ts.e0("NO_VALUE");
+    public static final ts.e0 f49292a = new ts.e0("NO_VALUE");
 
     public static final MutableSharedFlow a(int i10, int i11, qs.a aVar) {
         if (i10 >= 0) {
             if (i11 >= 0) {
-                if (i10 <= 0 && i11 <= 0 && aVar != qs.a.f48066d) {
+                if (i10 <= 0 && i11 <= 0 && aVar != qs.a.f48114d) {
                     throw new IllegalArgumentException(("replay or extraBufferCapacity must be positive with non-default onBufferOverflow strategy " + aVar).toString());
                 }
                 int i12 = i11 + i10;
@@ -34,13 +34,13 @@ public abstract class c0 {
             i11 = 0;
         }
         if ((i12 & 4) != 0) {
-            aVar = qs.a.f48066d;
+            aVar = qs.a.f48114d;
         }
         return a(i10, i11, aVar);
     }
 
     public static final Flow e(a0 a0Var, CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        if ((i10 == 0 || i10 == -3) && aVar == qs.a.f48066d) {
+        if ((i10 == 0 || i10 == -3) && aVar == qs.a.f48114d) {
             return a0Var;
         }
         return new ss.h(a0Var, coroutineContext, i10, aVar);

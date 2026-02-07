@@ -15,25 +15,25 @@ import ne.w0;
 public final class w extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Resources f36171e;
+    private final Resources f36219e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f36172f;
+    private final String f36220f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Uri f36173g;
+    private Uri f36221g;
 
     /* renamed from: h  reason: collision with root package name */
-    private AssetFileDescriptor f36174h;
+    private AssetFileDescriptor f36222h;
 
     /* renamed from: i  reason: collision with root package name */
-    private InputStream f36175i;
+    private InputStream f36223i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f36176j;
+    private long f36224j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f36177k;
+    private boolean f36225k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends m {
@@ -44,8 +44,8 @@ public final class w extends f {
 
     public w(Context context) {
         super(false);
-        this.f36171e = context.getResources();
-        this.f36172f = context.getPackageName();
+        this.f36219e = context.getResources();
+        this.f36220f = context.getPackageName();
     }
 
     public static Uri buildRawResourceUri(int i10) {
@@ -57,7 +57,7 @@ public final class w extends f {
         int parseInt;
         String str;
         Uri normalizeScheme = aVar.f13265a.normalizeScheme();
-        this.f36173g = normalizeScheme;
+        this.f36221g = normalizeScheme;
         if (!TextUtils.equals("rawresource", normalizeScheme.getScheme()) && (!TextUtils.equals("android.resource", normalizeScheme.getScheme()) || normalizeScheme.getPathSegments().size() != 1 || !((String) ne.a.e(normalizeScheme.getLastPathSegment())).matches("\\d+"))) {
             if (TextUtils.equals("android.resource", normalizeScheme.getScheme())) {
                 String str2 = (String) ne.a.e(normalizeScheme.getPath());
@@ -73,7 +73,7 @@ public final class w extends f {
                 }
                 sb2.append(str);
                 sb2.append(str2);
-                parseInt = this.f36171e.getIdentifier(sb2.toString(), "raw", this.f36172f);
+                parseInt = this.f36219e.getIdentifier(sb2.toString(), "raw", this.f36220f);
                 if (parseInt == 0) {
                     throw new a("Resource not found.", null, 2005);
                 }
@@ -89,12 +89,12 @@ public final class w extends f {
         }
         q(aVar);
         try {
-            AssetFileDescriptor openRawResourceFd = this.f36171e.openRawResourceFd(parseInt);
-            this.f36174h = openRawResourceFd;
+            AssetFileDescriptor openRawResourceFd = this.f36219e.openRawResourceFd(parseInt);
+            this.f36222h = openRawResourceFd;
             if (openRawResourceFd != null) {
                 long length = openRawResourceFd.getLength();
                 FileInputStream fileInputStream = new FileInputStream(openRawResourceFd.getFileDescriptor());
-                this.f36175i = fileInputStream;
+                this.f36223i = fileInputStream;
                 int i10 = (length > (-1L) ? 1 : (length == (-1L) ? 0 : -1));
                 if (i10 != 0) {
                     try {
@@ -113,36 +113,36 @@ public final class w extends f {
                     if (i10 == 0) {
                         FileChannel channel = fileInputStream.getChannel();
                         if (channel.size() == 0) {
-                            this.f36176j = -1L;
+                            this.f36224j = -1L;
                         } else {
                             long size = channel.size() - channel.position();
-                            this.f36176j = size;
+                            this.f36224j = size;
                             if (size < 0) {
                                 throw new a(null, null, 2008);
                             }
                         }
                     } else {
                         long j10 = length - skip;
-                        this.f36176j = j10;
+                        this.f36224j = j10;
                         if (j10 < 0) {
                             throw new m(2008);
                         }
                     }
                     long j11 = aVar.f13272h;
                     if (j11 != -1) {
-                        long j12 = this.f36176j;
+                        long j12 = this.f36224j;
                         if (j12 != -1) {
                             j11 = Math.min(j12, j11);
                         }
-                        this.f36176j = j11;
+                        this.f36224j = j11;
                     }
-                    this.f36177k = true;
+                    this.f36225k = true;
                     r(aVar);
                     long j13 = aVar.f13272h;
                     if (j13 != -1) {
                         return j13;
                     }
-                    return this.f36176j;
+                    return this.f36224j;
                 }
                 throw new a(null, null, 2008);
             }
@@ -154,17 +154,17 @@ public final class w extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36173g = null;
+        this.f36221g = null;
         try {
             try {
-                InputStream inputStream = this.f36175i;
+                InputStream inputStream = this.f36223i;
                 if (inputStream != null) {
                     inputStream.close();
                 }
-                this.f36175i = null;
+                this.f36223i = null;
                 try {
                     try {
-                        AssetFileDescriptor assetFileDescriptor = this.f36174h;
+                        AssetFileDescriptor assetFileDescriptor = this.f36222h;
                         if (assetFileDescriptor != null) {
                             assetFileDescriptor.close();
                         }
@@ -172,9 +172,9 @@ public final class w extends f {
                         throw new a(null, e10, 2000);
                     }
                 } finally {
-                    this.f36174h = null;
-                    if (this.f36177k) {
-                        this.f36177k = false;
+                    this.f36222h = null;
+                    if (this.f36225k) {
+                        this.f36225k = false;
                         p();
                     }
                 }
@@ -182,16 +182,16 @@ public final class w extends f {
                 throw new a(null, e11, 2000);
             }
         } catch (Throwable th2) {
-            this.f36175i = null;
+            this.f36223i = null;
             try {
                 try {
-                    AssetFileDescriptor assetFileDescriptor2 = this.f36174h;
+                    AssetFileDescriptor assetFileDescriptor2 = this.f36222h;
                     if (assetFileDescriptor2 != null) {
                         assetFileDescriptor2.close();
                     }
-                    this.f36174h = null;
-                    if (this.f36177k) {
-                        this.f36177k = false;
+                    this.f36222h = null;
+                    if (this.f36225k) {
+                        this.f36225k = false;
                         p();
                     }
                     throw th2;
@@ -199,9 +199,9 @@ public final class w extends f {
                     throw new a(null, e12, 2000);
                 }
             } finally {
-                this.f36174h = null;
-                if (this.f36177k) {
-                    this.f36177k = false;
+                this.f36222h = null;
+                if (this.f36225k) {
+                    this.f36225k = false;
                     p();
                 }
             }
@@ -210,7 +210,7 @@ public final class w extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36173g;
+        return this.f36221g;
     }
 
     @Override // le.j
@@ -218,7 +218,7 @@ public final class w extends f {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f36176j;
+        long j10 = this.f36224j;
         if (j10 == 0) {
             return -1;
         }
@@ -229,16 +229,16 @@ public final class w extends f {
                 throw new a(null, e10, 2000);
             }
         }
-        int read = ((InputStream) w0.j(this.f36175i)).read(bArr, i10, i11);
+        int read = ((InputStream) w0.j(this.f36223i)).read(bArr, i10, i11);
         if (read == -1) {
-            if (this.f36176j == -1) {
+            if (this.f36224j == -1) {
                 return -1;
             }
             throw new a("End of stream reached having not read sufficient data.", new EOFException(), 2000);
         }
-        long j11 = this.f36176j;
+        long j11 = this.f36224j;
         if (j11 != -1) {
-            this.f36176j = j11 - read;
+            this.f36224j = j11 - read;
         }
         o(read);
         return read;

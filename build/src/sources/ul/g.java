@@ -12,25 +12,25 @@ import java.util.List;
 public class g implements i {
 
     /* renamed from: g  reason: collision with root package name */
-    protected static final String f51612g = "rotation-degrees";
+    protected static final String f51660g = "rotation-degrees";
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51613a;
+    private final boolean f51661a;
 
     /* renamed from: b  reason: collision with root package name */
-    private j f51614b;
+    private j f51662b;
 
     /* renamed from: c  reason: collision with root package name */
-    private k f51615c;
+    private k f51663c;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f51618f;
+    private boolean f51666f;
 
     /* renamed from: e  reason: collision with root package name */
-    private float[] f51617e = new float[16];
+    private float[] f51665e = new float[16];
 
     /* renamed from: d  reason: collision with root package name */
-    private List f51616d = new ArrayList();
+    private List f51664d = new ArrayList();
 
     public g(List list) {
         boolean z10;
@@ -39,9 +39,9 @@ public class g implements i {
         } else {
             z10 = false;
         }
-        this.f51613a = z10;
+        this.f51661a = z10;
         if (list == null) {
-            this.f51616d.add(new rl.a());
+            this.f51664d.add(new rl.a());
             return;
         }
         Iterator it = list.iterator();
@@ -51,31 +51,31 @@ public class g implements i {
                     break;
                 }
             } else {
-                this.f51616d.add(new rl.a());
+                this.f51664d.add(new rl.a());
                 break;
             }
         }
-        this.f51616d.addAll(list);
+        this.f51664d.addAll(list);
     }
 
     private void e(long j10) {
         g();
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         GLES20.glClear(16640);
-        for (pl.a aVar : this.f51616d) {
+        for (pl.a aVar : this.f51664d) {
             aVar.apply(j10);
         }
         GLES20.glFinish();
     }
 
     private void g() {
-        if (!this.f51618f) {
-            for (pl.a aVar : this.f51616d) {
+        if (!this.f51666f) {
+            for (pl.a aVar : this.f51664d) {
                 if (aVar instanceof pl.b) {
-                    ((pl.b) aVar).c(this.f51614b.d(), this.f51614b.e());
+                    ((pl.b) aVar).c(this.f51662b.d(), this.f51662b.e());
                 }
             }
-            this.f51618f = true;
+            this.f51666f = true;
         }
     }
 
@@ -103,19 +103,19 @@ public class g implements i {
             f12 = f13;
             f11 = 0.0f;
             Matrix.setLookAtM(fArr2, 0, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, f12, f11, 0.0f);
-            Matrix.setIdentityM(this.f51617e, 0);
-            Matrix.multiplyMM(this.f51617e, 0, fArr, 0, fArr2, 0);
+            Matrix.setIdentityM(this.f51665e, 0);
+            Matrix.multiplyMM(this.f51665e, 0, fArr, 0, fArr2, 0);
         }
         f11 = f13;
         f12 = f14;
         Matrix.setLookAtM(fArr2, 0, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, f12, f11, 0.0f);
-        Matrix.setIdentityM(this.f51617e, 0);
-        Matrix.multiplyMM(this.f51617e, 0, fArr, 0, fArr2, 0);
+        Matrix.setIdentityM(this.f51665e, 0);
+        Matrix.multiplyMM(this.f51665e, 0, fArr, 0, fArr2, 0);
     }
 
     @Override // ul.i
     public boolean a() {
-        return this.f51613a;
+        return this.f51661a;
     }
 
     @Override // ul.i
@@ -125,7 +125,7 @@ public class g implements i {
         int i11;
         if (surface != null) {
             if (mediaFormat2 != null) {
-                String str = f51612g;
+                String str = f51660g;
                 if (mediaFormat2.containsKey(str)) {
                     i10 = mediaFormat2.getInteger(str);
                 } else if (mediaFormat != null && mediaFormat.containsKey(str)) {
@@ -138,7 +138,7 @@ public class g implements i {
                 } else {
                     f10 = 1.0f;
                 }
-                this.f51615c = new k(surface);
+                this.f51663c = new k(surface);
                 int i12 = -1;
                 if (mediaFormat != null && mediaFormat.containsKey("width")) {
                     i11 = mediaFormat.getInteger("width");
@@ -148,11 +148,11 @@ public class g implements i {
                 if (mediaFormat != null && mediaFormat.containsKey("height")) {
                     i12 = mediaFormat.getInteger("height");
                 }
-                this.f51614b = new j(i11, i12);
+                this.f51662b = new j(i11, i12);
                 h(i10, f10);
-                for (pl.a aVar : this.f51616d) {
+                for (pl.a aVar : this.f51664d) {
                     aVar.a();
-                    float[] fArr = this.f51617e;
+                    float[] fArr = this.f51665e;
                     aVar.b(Arrays.copyOf(fArr, fArr.length), 0);
                 }
                 return;
@@ -164,14 +164,14 @@ public class g implements i {
 
     @Override // ul.i
     public void c(nl.c cVar, long j10) {
-        this.f51614b.a();
+        this.f51662b.a();
         e(j10);
-        this.f51615c.e(j10);
-        this.f51615c.f();
+        this.f51663c.e(j10);
+        this.f51663c.f();
     }
 
     public Surface f() {
-        j jVar = this.f51614b;
+        j jVar = this.f51662b;
         if (jVar != null) {
             return jVar.c();
         }
@@ -180,11 +180,11 @@ public class g implements i {
 
     @Override // ul.i
     public void release() {
-        for (pl.a aVar : this.f51616d) {
+        for (pl.a aVar : this.f51664d) {
             aVar.release();
         }
-        this.f51614b.f();
-        this.f51615c.d();
+        this.f51662b.f();
+        this.f51663c.d();
     }
 
     @Override // ul.i

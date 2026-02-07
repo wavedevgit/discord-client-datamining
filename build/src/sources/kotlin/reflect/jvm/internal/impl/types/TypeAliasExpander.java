@@ -26,13 +26,13 @@ public final class TypeAliasExpander {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final TypeAliasExpander f34596c = new TypeAliasExpander(TypeAliasExpansionReportStrategy.DO_NOTHING.INSTANCE, false);
+    private static final TypeAliasExpander f34644c = new TypeAliasExpander(TypeAliasExpansionReportStrategy.DO_NOTHING.INSTANCE, false);
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeAliasExpansionReportStrategy f34597a;
+    private final TypeAliasExpansionReportStrategy f34645a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f34598b;
+    private final boolean f34646b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -54,8 +54,8 @@ public final class TypeAliasExpander {
 
     public TypeAliasExpander(@NotNull TypeAliasExpansionReportStrategy reportStrategy, boolean z10) {
         Intrinsics.checkNotNullParameter(reportStrategy, "reportStrategy");
-        this.f34597a = reportStrategy;
-        this.f34598b = z10;
+        this.f34645a = reportStrategy;
+        this.f34646b = z10;
     }
 
     private final void a(Annotations annotations, Annotations annotations2) {
@@ -66,7 +66,7 @@ public final class TypeAliasExpander {
         }
         for (AnnotationDescriptor annotationDescriptor : annotations2) {
             if (hashSet.contains(annotationDescriptor.getFqName())) {
-                this.f34597a.repeatedAnnotation(annotationDescriptor);
+                this.f34645a.repeatedAnnotation(annotationDescriptor);
             }
         }
     }
@@ -87,8 +87,8 @@ public final class TypeAliasExpander {
                 if (!TypeUtilsKt.containsTypeAliasParameters(type)) {
                     TypeProjection typeProjection2 = kotlinType.getArguments().get(i10);
                     TypeParameterDescriptor typeParameterDescriptor = kotlinType.getConstructor().getParameters().get(i10);
-                    if (this.f34598b) {
-                        TypeAliasExpansionReportStrategy typeAliasExpansionReportStrategy = this.f34597a;
+                    if (this.f34646b) {
+                        TypeAliasExpansionReportStrategy typeAliasExpansionReportStrategy = this.f34645a;
                         KotlinType type2 = typeProjection2.getType();
                         Intrinsics.checkNotNullExpressionValue(type2, "getType(...)");
                         KotlinType type3 = typeProjection.getType();
@@ -149,7 +149,7 @@ public final class TypeAliasExpander {
                     if (mo1199getDeclarationDescriptor instanceof TypeAliasDescriptor) {
                         TypeAliasDescriptor typeAliasDescriptor = (TypeAliasDescriptor) mo1199getDeclarationDescriptor;
                         if (typeAliasExpansion.isRecursion(typeAliasDescriptor)) {
-                            this.f34597a.recursiveTypeAlias(typeAliasDescriptor);
+                            this.f34645a.recursiveTypeAlias(typeAliasDescriptor);
                             return new TypeProjectionImpl(Variance.INVARIANT, ErrorUtils.createErrorType(ErrorTypeKind.RECURSIVE_TYPE_ALIAS, typeAliasDescriptor.getName().toString()));
                         }
                         List<TypeProjection> arguments = asSimpleType.getArguments();
@@ -230,7 +230,7 @@ public final class TypeAliasExpander {
             if (projectionKind == variance3) {
                 projectionKind = projectionKind2;
             } else {
-                this.f34597a.conflictingProjection(typeAliasExpansion.getDescriptor(), typeParameterDescriptor, unwrap);
+                this.f34645a.conflictingProjection(typeAliasExpansion.getDescriptor(), typeParameterDescriptor, unwrap);
             }
         }
         if (typeParameterDescriptor == null || (variance = typeParameterDescriptor.getVariance()) == null) {
@@ -240,7 +240,7 @@ public final class TypeAliasExpander {
             if (projectionKind == variance2) {
                 projectionKind = variance2;
             } else {
-                this.f34597a.conflictingProjection(typeAliasExpansion.getDescriptor(), typeParameterDescriptor, unwrap);
+                this.f34645a.conflictingProjection(typeAliasExpansion.getDescriptor(), typeParameterDescriptor, unwrap);
             }
         }
         a(type.getAnnotations(), unwrap.getAnnotations());

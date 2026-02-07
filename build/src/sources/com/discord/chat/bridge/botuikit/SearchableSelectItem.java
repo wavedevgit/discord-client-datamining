@@ -100,10 +100,10 @@ public final class SearchableSelectItem extends SelectItem {
         compositeEncoder.z(serialDescriptor, 1, searchableSelectItem.getValue());
         compositeEncoder.s(serialDescriptor, 2, SelectOptionType.Serializer.INSTANCE, searchableSelectItem.type);
         if (compositeEncoder.A(serialDescriptor, 3) || searchableSelectItem.iconSrc != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, searchableSelectItem.iconSrc);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, searchableSelectItem.iconSrc);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || searchableSelectItem.iconColor != null) {
-            compositeEncoder.l(serialDescriptor, 4, p0.f31057a, searchableSelectItem.iconColor);
+            compositeEncoder.l(serialDescriptor, 4, p0.f31105a, searchableSelectItem.iconColor);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || searchableSelectItem.iconEmoji != null) {
             compositeEncoder.l(serialDescriptor, 5, ComponentEmoji$$serializer.INSTANCE, searchableSelectItem.iconEmoji);

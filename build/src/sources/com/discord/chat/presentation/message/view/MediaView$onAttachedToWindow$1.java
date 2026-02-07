@@ -49,7 +49,7 @@ final class MediaView$onAttachedToWindow$1 extends kotlin.coroutines.jvm.interna
 
                 public final Object emit(PortalFromNativeContextManager.Event event, Continuation<? super Unit> continuation) {
                     MediaView.setMediaData$default(MediaView.this, null, false, false, false, null, false, null, event, false, false, false, 0, null, null, null, null, null, null, 262015, null);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             };
             this.label = 1;
@@ -57,11 +57,11 @@ final class MediaView$onAttachedToWindow$1 extends kotlin.coroutines.jvm.interna
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaView$onAttachedToWindow$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

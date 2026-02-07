@@ -5,10 +5,10 @@ import com.withpersona.sdk2.inquiry.FallbackMode;
 public final class e implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f55499a;
+    private final c f55547a;
 
     public e(c cVar) {
-        this.f55499a = cVar;
+        this.f55547a = cVar;
     }
 
     public static e a(c cVar) {
@@ -22,6 +22,6 @@ public final class e implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public FallbackMode get() {
-        return b(this.f55499a);
+        return b(this.f55547a);
     }
 }

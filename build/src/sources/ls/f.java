@@ -157,7 +157,7 @@ public abstract class f {
         StringBuilder sb2 = new StringBuilder();
         sb2.append('@');
         sb2.append(cls.getCanonicalName());
-        CollectionsKt.v0(map.entrySet(), sb2, ", ", "(", ")", 0, null, e.f36596d, 48, null);
+        CollectionsKt.v0(map.entrySet(), sb2, ", ", "(", ")", 0, null, e.f36644d, 48, null);
         return sb2.toString();
     }
 

@@ -424,7 +424,7 @@ public final class v0 {
     public final void s(Screen screen, Activity activity) {
         Boolean isNavigationBarTranslucent;
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (activity != null && !sn.b.f49994a.a()) {
+        if (activity != null && !sn.b.f50042a.a()) {
             Window window = activity.getWindow();
             Screen k10 = k(screen, Screen.b.f18177s);
             if (k10 != null && (isNavigationBarTranslucent = k10.isNavigationBarTranslucent()) != null) {
@@ -467,7 +467,7 @@ public final class v0 {
         boolean z10;
         Boolean isStatusBarTranslucent;
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (activity != null && reactContext != null && !sn.b.f49994a.a()) {
+        if (activity != null && reactContext != null && !sn.b.f50042a.a()) {
             Screen k10 = k(screen, Screen.b.f18173o);
             if (k10 != null && (isStatusBarTranslucent = k10.isStatusBarTranslucent()) != null) {
                 z10 = isStatusBarTranslucent.booleanValue();

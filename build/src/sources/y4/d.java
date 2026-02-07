@@ -9,14 +9,14 @@ import qu.j;
 public final class d extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f54970e;
+    private final Function1 f55018e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f54971i;
+    private boolean f55019i;
 
     public d(Sink sink, Function1 function1) {
         super(sink);
-        this.f54970e = function1;
+        this.f55018e = function1;
     }
 
     @Override // qu.j, okio.Sink, java.io.Closeable, java.lang.AutoCloseable
@@ -24,8 +24,8 @@ public final class d extends j {
         try {
             super.close();
         } catch (IOException e10) {
-            this.f54971i = true;
-            this.f54970e.invoke(e10);
+            this.f55019i = true;
+            this.f55018e.invoke(e10);
         }
     }
 
@@ -34,22 +34,22 @@ public final class d extends j {
         try {
             super.flush();
         } catch (IOException e10) {
-            this.f54971i = true;
-            this.f54970e.invoke(e10);
+            this.f55019i = true;
+            this.f55018e.invoke(e10);
         }
     }
 
     @Override // qu.j, okio.Sink
     public void w0(Buffer buffer, long j10) {
-        if (this.f54971i) {
+        if (this.f55019i) {
             buffer.skip(j10);
             return;
         }
         try {
             super.w0(buffer, j10);
         } catch (IOException e10) {
-            this.f54971i = true;
-            this.f54970e.invoke(e10);
+            this.f55019i = true;
+            this.f55018e.invoke(e10);
         }
     }
 }

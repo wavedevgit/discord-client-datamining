@@ -3,7 +3,7 @@ package qv;
 public class i extends a {
 
     /* renamed from: f  reason: collision with root package name */
-    private int f48276f;
+    private int f48324f;
 
     @Override // qv.r
     public void a(y yVar) {
@@ -11,10 +11,10 @@ public class i extends a {
     }
 
     public int n() {
-        return this.f48276f;
+        return this.f48324f;
     }
 
     public void o(int i10) {
-        this.f48276f = i10;
+        this.f48324f = i10;
     }
 }

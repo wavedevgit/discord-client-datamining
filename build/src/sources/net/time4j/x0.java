@@ -5,14 +5,14 @@ import java.io.Serializable;
 public final class x0 extends rt.f implements u, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final x0 f39651d = new x0();
+    public static final x0 f39699d = new x0();
     private static final long serialVersionUID = -4981215347844372171L;
 
     private x0() {
     }
 
     private Object readResolve() {
-        return f39651d;
+        return f39699d;
     }
 
     @Override // rt.w
@@ -23,7 +23,7 @@ public final class x0 extends rt.f implements u, Serializable {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // rt.f
     public rt.m0 b(rt.x xVar) {
-        if (xVar.E(f0.f39305y)) {
+        if (xVar.E(f0.f39353y)) {
             return b1.R();
         }
         return null;
@@ -36,7 +36,7 @@ public final class x0 extends rt.f implements u, Serializable {
 
     @Override // rt.w
     public double getLength() {
-        return f.f39284o.getLength();
+        return f.f39332o.getLength();
     }
 
     public String toString() {

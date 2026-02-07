@@ -27,16 +27,16 @@ import okio.BufferedSource;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f35883a = new HashMap();
+    private static final Map f35931a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f35884b = new HashSet();
+    private static final Set f35932b = new HashSet();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final byte[] f35885c = {80, 75, 3, 4};
+    private static final byte[] f35933c = {80, 75, 3, 4};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final byte[] f35886d = {31, -117, 8};
+    private static final byte[] f35934d = {31, -117, 8};
 
     public static com.airbnb.lottie.o A(final Context context, final ZipInputStream zipInputStream, final String str) {
         return j(str, new Callable() { // from class: l5.n
@@ -179,7 +179,7 @@ public abstract class s {
     }
 
     private static Boolean F(BufferedSource bufferedSource) {
-        return I(bufferedSource, f35886d);
+        return I(bufferedSource, f35934d);
     }
 
     private static boolean G(Context context) {
@@ -190,7 +190,7 @@ public abstract class s {
     }
 
     private static Boolean H(BufferedSource bufferedSource) {
-        return I(bufferedSource, f35885c);
+        return I(bufferedSource, f35933c);
     }
 
     private static Boolean I(BufferedSource bufferedSource, byte[] bArr) {
@@ -212,7 +212,7 @@ public abstract class s {
     }
 
     private static void J(boolean z10) {
-        ArrayList arrayList = new ArrayList(f35884b);
+        ArrayList arrayList = new ArrayList(f35932b);
         if (arrayList.size() <= 0) {
             return;
         }
@@ -251,7 +251,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void e(String str, AtomicBoolean atomicBoolean, i iVar) {
-        Map map = f35883a;
+        Map map = f35931a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -260,7 +260,7 @@ public abstract class s {
     }
 
     public static /* synthetic */ void f(String str, AtomicBoolean atomicBoolean, Throwable th2) {
-        Map map = f35883a;
+        Map map = f35931a;
         map.remove(str);
         atomicBoolean.set(true);
         if (map.size() == 0) {
@@ -280,7 +280,7 @@ public abstract class s {
             oVar = new com.airbnb.lottie.o(a10);
         }
         if (str != null) {
-            Map map = f35883a;
+            Map map = f35931a;
             if (map.containsKey(str)) {
                 oVar = (com.airbnb.lottie.o) map.get(str);
             }
@@ -307,7 +307,7 @@ public abstract class s {
                 }
             });
             if (!atomicBoolean.get()) {
-                Map map2 = f35883a;
+                Map map2 = f35931a;
                 map2.put(str, oVar2);
                 if (map2.size() == 1) {
                     J(false);

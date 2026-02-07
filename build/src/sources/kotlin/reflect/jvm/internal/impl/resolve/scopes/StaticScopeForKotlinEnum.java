@@ -28,48 +28,48 @@ import org.jetbrains.annotations.NotNull;
 public final class StaticScopeForKotlinEnum extends MemberScopeImpl {
 
     /* renamed from: e  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f34224e = {Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "functions", "getFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "properties", "getProperties()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f34272e = {Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "functions", "getFunctions()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(StaticScopeForKotlinEnum.class, "properties", "getProperties()Ljava/util/List;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassDescriptor f34225a;
+    private final ClassDescriptor f34273a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f34226b;
+    private final boolean f34274b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f34227c;
+    private final NotNullLazyValue f34275c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f34228d;
+    private final NotNullLazyValue f34276d;
 
     public StaticScopeForKotlinEnum(@NotNull StorageManager storageManager, @NotNull ClassDescriptor containingClass, boolean z10) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(containingClass, "containingClass");
-        this.f34225a = containingClass;
-        this.f34226b = z10;
+        this.f34273a = containingClass;
+        this.f34274b = z10;
         containingClass.getKind();
         ClassKind classKind = ClassKind.CLASS;
-        this.f34227c = storageManager.createLazyValue(new d(this));
-        this.f34228d = storageManager.createLazyValue(new e(this));
+        this.f34275c = storageManager.createLazyValue(new d(this));
+        this.f34276d = storageManager.createLazyValue(new e(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List c(StaticScopeForKotlinEnum staticScopeForKotlinEnum) {
-        return CollectionsKt.o(DescriptorFactory.createEnumValueOfMethod(staticScopeForKotlinEnum.f34225a), DescriptorFactory.createEnumValuesMethod(staticScopeForKotlinEnum.f34225a));
+        return CollectionsKt.o(DescriptorFactory.createEnumValueOfMethod(staticScopeForKotlinEnum.f34273a), DescriptorFactory.createEnumValuesMethod(staticScopeForKotlinEnum.f34273a));
     }
 
     private final List d() {
-        return (List) StorageKt.getValue(this.f34227c, this, f34224e[0]);
+        return (List) StorageKt.getValue(this.f34275c, this, f34272e[0]);
     }
 
     private final List e() {
-        return (List) StorageKt.getValue(this.f34228d, this, f34224e[1]);
+        return (List) StorageKt.getValue(this.f34276d, this, f34272e[1]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List f(StaticScopeForKotlinEnum staticScopeForKotlinEnum) {
-        if (staticScopeForKotlinEnum.f34226b) {
-            return CollectionsKt.p(DescriptorFactory.createEnumEntriesProperty(staticScopeForKotlinEnum.f34225a));
+        if (staticScopeForKotlinEnum.f34274b) {
+            return CollectionsKt.p(DescriptorFactory.createEnumEntriesProperty(staticScopeForKotlinEnum.f34273a));
         }
         return CollectionsKt.l();
     }

@@ -7,9 +7,9 @@ import kotlin.time.Duration;
 public abstract class e {
     private static final long a(long j10) {
         if (j10 < 0) {
-            return Duration.f35007e.b();
+            return Duration.f35055e.b();
         }
-        return Duration.f35007e.a();
+        return Duration.f35055e.a();
     }
 
     public static final long b(long j10, long j11, ms.b unit) {
@@ -23,11 +23,11 @@ public abstract class e {
     private static final long c(long j10, long j11, ms.b bVar) {
         long j12 = j10 - j11;
         if (((j12 ^ j10) & (~(j12 ^ j11))) < 0) {
-            ms.b bVar2 = ms.b.f38283o;
+            ms.b bVar2 = ms.b.f38331o;
             if (bVar.compareTo(bVar2) < 0) {
                 long b10 = c.b(1L, bVar2, bVar);
                 long j13 = (j10 % b10) - (j11 % b10);
-                Duration.a aVar = Duration.f35007e;
+                Duration.a aVar = Duration.f35055e;
                 return Duration.I(b.t((j10 / b10) - (j11 / b10), bVar2), b.t(j13, bVar));
             }
             return Duration.N(a(j12));
@@ -39,7 +39,7 @@ public abstract class e {
         Intrinsics.checkNotNullParameter(unit, "unit");
         if (((j11 - 1) | 1) == LongCompanionObject.MAX_VALUE) {
             if (j10 == j11) {
-                return Duration.f35007e.c();
+                return Duration.f35055e.c();
             }
             return Duration.N(a(j11));
         } else if ((1 | (j10 - 1)) == LongCompanionObject.MAX_VALUE) {

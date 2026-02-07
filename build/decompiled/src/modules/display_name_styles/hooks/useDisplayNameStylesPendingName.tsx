@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun85370: for (var _fun85370_ip = 0;;) switch (_fun85370_ip) {
+        _fun85801: for (var _fun85801_ip = 0;;) switch (_fun85801_ip) {
             case 0:
                 var6 = arg0;
                 var7 = arg1;
@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var7;
                 var2[1] = var6;
                 var0 = function() { // Environment: var0
-                    _fun85371: for (var _fun85371_ip = 0;;) switch (_fun85371_ip) {
+                    _fun85802: for (var _fun85802_ip = 0;;) switch (_fun85802_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var1 = var3.getPendingChanges;
@@ -68,18 +68,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var3)(var0);
                             var7 = null;
                             if (!(var7 == var0)) {
-                                _fun85371_ip = 39;
-                                continue _fun85371
+                                _fun85802_ip = 39;
+                                continue _fun85802
                             }
                         case 31:
                             var0 = var1.pendingGlobalName;
-                            _fun85371_ip = 94;
-                            continue _fun85371;
+                            _fun85802_ip = 94;
+                            continue _fun85802;
                         case 39:
                             var1 = var1.pendingNickname;
                             if (!(var7 == var1)) {
-                                _fun85371_ip = 91;
-                                continue _fun85371
+                                _fun85802_ip = 91;
+                                continue _fun85802
                             }
                         case 49:
                             var5 = _closure1_slot4;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7 == var2;
                             var2 = undefined;
                             if (var7) {
-                                _fun85371_ip = 85;
-                                continue _fun85371
+                                _fun85802_ip = 85;
+                                continue _fun85802
                             }
                         case 76:
                             var6 = _closure2_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var3, var0, var2);
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun85370_ip = 128;
-                    continue _fun85370
+                    _fun85801_ip = 128;
+                    continue _fun85801
                 }
             case 125:
                 var1 = var2;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = '';
                 if (!var2) {
-                    _fun85370_ip = 142;
-                    continue _fun85370
+                    _fun85801_ip = 142;
+                    continue _fun85801
                 }
             case 139:
                 var0 = var1;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDisplayNameStylesPendingName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5587, 1681, 3238, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5634, 1683, 3237, 566, 2]);

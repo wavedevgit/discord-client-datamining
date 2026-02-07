@@ -17,7 +17,7 @@ import org.xmlpull.v1.XmlPullParserException;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ThreadLocal f46345a = new ThreadLocal();
+    private static final ThreadLocal f46393a = new ThreadLocal();
 
     public static ColorStateList a(Resources resources, XmlPullParser xmlPullParser, Resources.Theme theme) {
         int next;
@@ -43,7 +43,7 @@ public abstract class c {
     }
 
     private static TypedValue c() {
-        ThreadLocal threadLocal = f46345a;
+        ThreadLocal threadLocal = f46393a;
         TypedValue typedValue = (TypedValue) threadLocal.get();
         if (typedValue == null) {
             TypedValue typedValue2 = new TypedValue();
@@ -78,27 +78,27 @@ public abstract class c {
                 break;
             }
             if (next == 2 && depth <= depth2 && xmlPullParser.getName().equals("item")) {
-                TypedArray h10 = h(resources2, theme, attributeSet, o1.g.f41359b);
-                int resourceId = h10.getResourceId(o1.g.f41360c, -1);
+                TypedArray h10 = h(resources2, theme, attributeSet, o1.g.f41407b);
+                int resourceId = h10.getResourceId(o1.g.f41408c, -1);
                 if (resourceId != -1 && !f(resources2, resourceId)) {
                     try {
                         color = a(resources2, resources2.getXml(resourceId), theme).getDefaultColor();
                     } catch (Exception unused) {
-                        color = h10.getColor(o1.g.f41360c, -65281);
+                        color = h10.getColor(o1.g.f41408c, -65281);
                     }
                 } else {
-                    color = h10.getColor(o1.g.f41360c, -65281);
+                    color = h10.getColor(o1.g.f41408c, -65281);
                 }
                 float f11 = 1.0f;
-                if (h10.hasValue(o1.g.f41361d)) {
-                    f11 = h10.getFloat(o1.g.f41361d, 1.0f);
-                } else if (h10.hasValue(o1.g.f41363f)) {
-                    f11 = h10.getFloat(o1.g.f41363f, 1.0f);
+                if (h10.hasValue(o1.g.f41409d)) {
+                    f11 = h10.getFloat(o1.g.f41409d, 1.0f);
+                } else if (h10.hasValue(o1.g.f41411f)) {
+                    f11 = h10.getFloat(o1.g.f41411f, 1.0f);
                 }
-                if (Build.VERSION.SDK_INT >= 31 && h10.hasValue(o1.g.f41362e)) {
-                    f10 = h10.getFloat(o1.g.f41362e, -1.0f);
+                if (Build.VERSION.SDK_INT >= 31 && h10.hasValue(o1.g.f41410e)) {
+                    f10 = h10.getFloat(o1.g.f41410e, -1.0f);
                 } else {
-                    f10 = h10.getFloat(o1.g.f41364g, -1.0f);
+                    f10 = h10.getFloat(o1.g.f41412g, -1.0f);
                 }
                 h10.recycle();
                 int attributeCount = attributeSet.getAttributeCount();
@@ -106,7 +106,7 @@ public abstract class c {
                 int i12 = 0;
                 for (int i13 = 0; i13 < attributeCount; i13++) {
                     int attributeNameResource = attributeSet.getAttributeNameResource(i13);
-                    if (attributeNameResource != 16843173 && attributeNameResource != 16843551 && attributeNameResource != o1.a.f41315a && attributeNameResource != o1.a.f41316b) {
+                    if (attributeNameResource != 16843173 && attributeNameResource != 16843551 && attributeNameResource != o1.a.f41363a && attributeNameResource != o1.a.f41364b) {
                         int i14 = i12 + 1;
                         if (!attributeSet.getAttributeBooleanValue(i13, false)) {
                             attributeNameResource = -attributeNameResource;

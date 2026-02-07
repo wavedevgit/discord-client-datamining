@@ -8,14 +8,14 @@ public enum we implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f40380d;
+    private final int f40428d;
 
     we(int i10) {
-        this.f40380d = i10;
+        this.f40428d = i10;
     }
 
     @Override // ng.n2
     public final int zza() {
-        return this.f40380d;
+        return this.f40428d;
     }
 }

@@ -20,33 +20,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.bind(var0)(var3);
     var3 = var4.defineIntegration;
     var1 = function() {
-        _fun11011: for (var _fun11011_ip = 0;;) switch (_fun11011_ip) {
+        _fun11013: for (var _fun11013_ip = 0;;) switch (_fun11013_ip) {
             case 0:
                 var4 = undefined;
                 var3 = undefined;
                 var0 = arguments.length;
                 var2 = 0;
                 if (!(var0 > var2)) {
-                    _fun11011_ip = 23;
-                    continue _fun11011
+                    _fun11013_ip = 23;
+                    continue _fun11013
                 }
             case 15:
                 var0 = arguments[var2];
                 if (!(var4 === var0)) {
-                    _fun11011_ip = 27;
-                    continue _fun11011
+                    _fun11013_ip = 27;
+                    continue _fun11013
                 }
             case 23:
                 var0 = {};
-                _fun11011_ip = 31;
-                continue _fun11011;
+                _fun11013_ip = 31;
+                continue _fun11013;
             case 27:
                 var0 = arguments[var2];
             case 31:
                 var2 = var0.limit;
                 if (var2) {
-                    _fun11011_ip = 42;
-                    continue _fun11011
+                    _fun11013_ip = 42;
+                    continue _fun11013
                 }
             case 39:
                 var2 = 5;
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var2;
                 var0 = var0.key;
                 if (var0) {
-                    _fun11011_ip = 58;
-                    continue _fun11011
+                    _fun11013_ip = 58;
+                    continue _fun11013
                 }
             case 54:
                 var0 = 'cause';

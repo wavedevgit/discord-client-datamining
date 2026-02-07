@@ -42,7 +42,7 @@ public abstract class a1 {
         Intrinsics.checkNotNullParameter(config, "config");
         final iq.c c10 = iq.c.c(uiComponentHelper.b());
         String b10 = inputConfirmationCodeComponent.b().b();
-        final List o10 = CollectionsKt.o(c10.f29190b.getEditText(), c10.f29193e.getEditText(), c10.f29195g.getEditText(), c10.f29192d.getEditText());
+        final List o10 = CollectionsKt.o(c10.f29238b.getEditText(), c10.f29241e.getEditText(), c10.f29243g.getEditText(), c10.f29240d.getEditText());
         for (IndexedValue indexedValue : CollectionsKt.n1(o10)) {
             int a10 = indexedValue.a();
             final EditText editText = (EditText) indexedValue.b();
@@ -99,7 +99,7 @@ public abstract class a1 {
         Context context;
         Intrinsics.checkNotNullParameter(newText, "newText");
         dn.t b10 = inputConfirmationCodeComponent.b();
-        hq.a aVar = hq.a.f26441a;
+        hq.a aVar = hq.a.f26489a;
         ConstraintLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         b10.c(aVar.a(root));
@@ -114,23 +114,23 @@ public abstract class a1 {
             editText3.requestFocus();
         } else if (!StringsKt.k0(newText)) {
             inputConfirmationCodeComponent.f().b().invoke();
-            EditText editText4 = cVar.f29192d.getEditText();
+            EditText editText4 = cVar.f29240d.getEditText();
             if (editText4 != null && (context = editText4.getContext()) != null) {
                 rp.f.d(context);
             }
-            EditText editText5 = cVar.f29192d.getEditText();
+            EditText editText5 = cVar.f29240d.getEditText();
             if (editText5 != null) {
                 editText5.clearFocus();
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(EditText editText) {
         editText.requestFocus();
         editText.setSelection(editText.length());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -145,7 +145,7 @@ public abstract class a1 {
                 kq.a0.k(textInputLayout, styles);
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final void j(String str, List list) {

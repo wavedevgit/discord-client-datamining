@@ -8,10 +8,10 @@ import java.util.List;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final byte[] f38908a = {0, 0, 0, 1};
+    private static final byte[] f38956a = {0, 0, 0, 1};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f38909b = {"", "A", "B", "C"};
+    private static final String[] f38957b = {"", "A", "B", "C"};
 
     public static String a(int i10, int i11, int i12) {
         return String.format("avc1.%02X%02X%02X", Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12));
@@ -23,7 +23,7 @@ public abstract class f {
 
     public static String c(int i10, boolean z10, int i11, int i12, int[] iArr, int i13) {
         char c10;
-        String str = f38909b[i10];
+        String str = f38957b[i10];
         Integer valueOf = Integer.valueOf(i11);
         Integer valueOf2 = Integer.valueOf(i12);
         if (z10) {
@@ -43,7 +43,7 @@ public abstract class f {
     }
 
     public static byte[] d(byte[] bArr, int i10, int i11) {
-        byte[] bArr2 = f38908a;
+        byte[] bArr2 = f38956a;
         byte[] bArr3 = new byte[bArr2.length + i11];
         System.arraycopy(bArr2, 0, bArr3, 0, bArr2.length);
         System.arraycopy(bArr, i10, bArr3, bArr2.length, i11);
@@ -51,7 +51,7 @@ public abstract class f {
     }
 
     private static int e(byte[] bArr, int i10) {
-        int length = bArr.length - f38908a.length;
+        int length = bArr.length - f38956a.length;
         while (i10 <= length) {
             if (f(bArr, i10)) {
                 return i10;
@@ -62,12 +62,12 @@ public abstract class f {
     }
 
     private static boolean f(byte[] bArr, int i10) {
-        if (bArr.length - i10 <= f38908a.length) {
+        if (bArr.length - i10 <= f38956a.length) {
             return false;
         }
         int i11 = 0;
         while (true) {
-            byte[] bArr2 = f38908a;
+            byte[] bArr2 = f38956a;
             if (i11 < bArr2.length) {
                 if (bArr[i10 + i11] != bArr2[i11]) {
                     return false;
@@ -103,7 +103,7 @@ public abstract class f {
         int i10 = 0;
         do {
             arrayList.add(Integer.valueOf(i10));
-            i10 = e(bArr, i10 + f38908a.length);
+            i10 = e(bArr, i10 + f38956a.length);
         } while (i10 != -1);
         byte[][] bArr2 = new byte[arrayList.size()];
         for (int i11 = 0; i11 < arrayList.size(); i11++) {

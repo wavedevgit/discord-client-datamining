@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o extends j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f31450a = new o();
+    public static final o f31498a = new o();
 
     private o() {
     }

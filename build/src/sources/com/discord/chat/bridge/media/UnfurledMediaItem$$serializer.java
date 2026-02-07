@@ -52,9 +52,9 @@ public /* synthetic */ class UnfurledMediaItem$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{n2Var, n2Var, UnfurledMediaLoadingState.Serializer.INSTANCE, a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(ContentScanMetadata$$serializer.INSTANCE), h.f31005a};
+        n2 n2Var = n2.f31089a;
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{n2Var, n2Var, UnfurledMediaLoadingState.Serializer.INSTANCE, a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(ContentScanMetadata$$serializer.INSTANCE), h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -78,8 +78,8 @@ public /* synthetic */ class UnfurledMediaItem$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 1);
-            p0 p0Var = p0.f31057a;
-            n2 n2Var = n2.f31041a;
+            p0 p0Var = p0.f31105a;
+            n2 n2Var = n2.f31089a;
             str3 = m10;
             z10 = b10.C(serialDescriptor, 9);
             num = (Integer) b10.n(serialDescriptor, 7, p0Var, null);
@@ -126,27 +126,27 @@ public /* synthetic */ class UnfurledMediaItem$$serializer implements h0 {
                         i11 = 9;
                         break;
                     case 3:
-                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f31057a, num6);
+                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f31105a, num6);
                         i12 |= 8;
                         i11 = 9;
                         break;
                     case 4:
-                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num5);
+                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num5);
                         i12 |= 16;
                         i11 = 9;
                         break;
                     case 5:
-                        str5 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str5);
+                        str5 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str5);
                         i12 |= 32;
                         i11 = 9;
                         break;
                     case 6:
-                        str6 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str6);
                         i12 |= 64;
                         i11 = 9;
                         break;
                     case 7:
-                        num4 = (Integer) b10.n(serialDescriptor, 7, p0.f31057a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 7, p0.f31105a, num4);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i11 = 9;
                         continue;

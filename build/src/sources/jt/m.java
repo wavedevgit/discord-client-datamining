@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f31031a;
+    private static final boolean f31079a;
 
     static {
         boolean z10;
@@ -17,12 +17,12 @@ public abstract class m {
         } catch (Throwable unused) {
             z10 = false;
         }
-        f31031a = z10;
+        f31079a = z10;
     }
 
     public static final k2 a(Function1 factory) {
         Intrinsics.checkNotNullParameter(factory, "factory");
-        if (f31031a) {
+        if (f31079a) {
             return new p(factory);
         }
         return new u(factory);
@@ -30,7 +30,7 @@ public abstract class m {
 
     public static final s1 b(Function2 factory) {
         Intrinsics.checkNotNullParameter(factory, "factory");
-        if (f31031a) {
+        if (f31079a) {
             return new q(factory);
         }
         return new v(factory);

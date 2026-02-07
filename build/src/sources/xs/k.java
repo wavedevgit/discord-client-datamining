@@ -6,34 +6,34 @@ import ts.h0;
 public abstract class k {
 
     /* renamed from: a */
-    private static final int f54781a;
+    private static final int f54829a;
 
     /* renamed from: b */
-    private static final e0 f54782b;
+    private static final e0 f54830b;
 
     /* renamed from: c */
-    private static final e0 f54783c;
+    private static final e0 f54831c;
 
     /* renamed from: d */
-    private static final e0 f54784d;
+    private static final e0 f54832d;
 
     /* renamed from: e */
-    private static final e0 f54785e;
+    private static final e0 f54833e;
 
     /* renamed from: f */
-    private static final int f54786f;
+    private static final int f54834f;
 
     static {
         int e10;
         int e11;
         e10 = h0.e("kotlinx.coroutines.semaphore.maxSpinCycles", 100, 0, 0, 12, null);
-        f54781a = e10;
-        f54782b = new e0("PERMIT");
-        f54783c = new e0("TAKEN");
-        f54784d = new e0("BROKEN");
-        f54785e = new e0("CANCELLED");
+        f54829a = e10;
+        f54830b = new e0("PERMIT");
+        f54831c = new e0("TAKEN");
+        f54832d = new e0("BROKEN");
+        f54833e = new e0("CANCELLED");
         e11 = h0.e("kotlinx.coroutines.semaphore.segmentSize", 16, 0, 0, 12, null);
-        f54786f = e11;
+        f54834f = e11;
     }
 
     public static final g a(int i10, int i11) {
@@ -52,27 +52,27 @@ public abstract class k {
     }
 
     public static final /* synthetic */ e0 d() {
-        return f54784d;
+        return f54832d;
     }
 
     public static final /* synthetic */ e0 e() {
-        return f54785e;
+        return f54833e;
     }
 
     public static final /* synthetic */ int f() {
-        return f54781a;
+        return f54829a;
     }
 
     public static final /* synthetic */ e0 g() {
-        return f54782b;
+        return f54830b;
     }
 
     public static final /* synthetic */ int h() {
-        return f54786f;
+        return f54834f;
     }
 
     public static final /* synthetic */ e0 i() {
-        return f54783c;
+        return f54831c;
     }
 
     public static final l j(long j10, l lVar) {

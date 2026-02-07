@@ -5,13 +5,13 @@ import com.discord.misc.utilities.chat_view_types.ChatViewRecyclerTypes;
 public class p extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qv.p f41266a;
+    private final qv.p f41314a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f41267b;
+    private boolean f41315b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f41268c;
+    private int f41316c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends sv.b {
@@ -19,7 +19,7 @@ public class p extends sv.a {
         public sv.f a(sv.h hVar, sv.g gVar) {
             boolean z10;
             sv.d b10 = gVar.b();
-            if (hVar.a() >= pv.d.f45756a) {
+            if (hVar.a() >= pv.d.f45804a) {
                 return sv.f.c();
             }
             int c10 = hVar.c();
@@ -33,13 +33,13 @@ public class p extends sv.a {
             if (n10 == null) {
                 return sv.f.c();
             }
-            int i10 = n10.f41270b;
+            int i10 = n10.f41318b;
             q qVar = new q(i10 - hVar.getColumn());
-            if ((b10 instanceof p) && p.m((qv.p) b10.e(), n10.f41269a)) {
+            if ((b10 instanceof p) && p.m((qv.p) b10.e(), n10.f41317a)) {
                 return sv.f.d(qVar).a(i10);
             }
-            p pVar = new p(n10.f41269a);
-            n10.f41269a.o(true);
+            p pVar = new p(n10.f41317a);
+            n10.f41317a.o(true);
             return sv.f.d(pVar, qVar).a(i10);
         }
     }
@@ -49,14 +49,14 @@ public class p extends sv.a {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final qv.p f41269a;
+        final qv.p f41317a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f41270b;
+        final int f41318b;
 
         b(qv.p pVar, int i10) {
-            this.f41269a = pVar;
-            this.f41270b = i10;
+            this.f41317a = pVar;
+            this.f41318b = i10;
         }
     }
 
@@ -65,19 +65,19 @@ public class p extends sv.a {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final qv.p f41271a;
+        final qv.p f41319a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f41272b;
+        final int f41320b;
 
         c(qv.p pVar, int i10) {
-            this.f41271a = pVar;
-            this.f41272b = i10;
+            this.f41319a = pVar;
+            this.f41320b = i10;
         }
     }
 
     public p(qv.p pVar) {
-        this.f41266a = pVar;
+        this.f41314a = pVar;
     }
 
     private static boolean k(Object obj, Object obj2) {
@@ -116,8 +116,8 @@ public class p extends sv.a {
         if (o10 == null) {
             return null;
         }
-        qv.p pVar = o10.f41271a;
-        int i12 = o10.f41272b;
+        qv.p pVar = o10.f41319a;
+        int i12 = o10.f41320b;
         int i13 = i11 + (i12 - i10);
         int length = charSequence.length();
         int i14 = i13;
@@ -141,7 +141,7 @@ public class p extends sv.a {
         if (z10 && (((pVar instanceof qv.s) && ((qv.s) pVar).q() != 1) || !z11)) {
             return null;
         }
-        if (!z11 || i14 - i13 > pv.d.f45756a) {
+        if (!z11 || i14 - i13 > pv.d.f45804a) {
             i14 = i13 + 1;
         }
         return new b(pVar, i14);
@@ -210,17 +210,17 @@ public class p extends sv.a {
     @Override // sv.d
     public sv.c c(sv.h hVar) {
         if (hVar.b()) {
-            this.f41267b = true;
-            this.f41268c = 0;
-        } else if (this.f41267b) {
-            this.f41268c++;
+            this.f41315b = true;
+            this.f41316c = 0;
+        } else if (this.f41315b) {
+            this.f41316c++;
         }
         return sv.c.b(hVar.getIndex());
     }
 
     @Override // sv.d
     public qv.a e() {
-        return this.f41266a;
+        return this.f41314a;
     }
 
     @Override // sv.a, sv.d
@@ -228,9 +228,9 @@ public class p extends sv.a {
         if (!(aVar instanceof qv.q)) {
             return false;
         }
-        if (this.f41267b && this.f41268c == 1) {
-            this.f41266a.o(false);
-            this.f41267b = false;
+        if (this.f41315b && this.f41316c == 1) {
+            this.f41314a.o(false);
+            this.f41315b = false;
         }
         return true;
     }

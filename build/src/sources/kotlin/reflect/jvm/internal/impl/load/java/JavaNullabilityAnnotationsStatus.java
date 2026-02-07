@@ -9,16 +9,16 @@ public final class JavaNullabilityAnnotationsStatus {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final JavaNullabilityAnnotationsStatus f32715d = new JavaNullabilityAnnotationsStatus(ReportLevel.STRICT, null, null, 6, null);
+    private static final JavaNullabilityAnnotationsStatus f32763d = new JavaNullabilityAnnotationsStatus(ReportLevel.STRICT, null, null, 6, null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReportLevel f32716a;
+    private final ReportLevel f32764a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final qr.j f32717b;
+    private final qr.j f32765b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ReportLevel f32718c;
+    private final ReportLevel f32766c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -28,7 +28,7 @@ public final class JavaNullabilityAnnotationsStatus {
 
         @NotNull
         public final JavaNullabilityAnnotationsStatus getDEFAULT() {
-            return JavaNullabilityAnnotationsStatus.f32715d;
+            return JavaNullabilityAnnotationsStatus.f32763d;
         }
 
         private Companion() {
@@ -38,9 +38,9 @@ public final class JavaNullabilityAnnotationsStatus {
     public JavaNullabilityAnnotationsStatus(@NotNull ReportLevel reportLevelBefore, qr.j jVar, @NotNull ReportLevel reportLevelAfter) {
         Intrinsics.checkNotNullParameter(reportLevelBefore, "reportLevelBefore");
         Intrinsics.checkNotNullParameter(reportLevelAfter, "reportLevelAfter");
-        this.f32716a = reportLevelBefore;
-        this.f32717b = jVar;
-        this.f32718c = reportLevelAfter;
+        this.f32764a = reportLevelBefore;
+        this.f32765b = jVar;
+        this.f32766c = reportLevelAfter;
     }
 
     public boolean equals(Object obj) {
@@ -49,34 +49,34 @@ public final class JavaNullabilityAnnotationsStatus {
         }
         if (obj instanceof JavaNullabilityAnnotationsStatus) {
             JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = (JavaNullabilityAnnotationsStatus) obj;
-            return this.f32716a == javaNullabilityAnnotationsStatus.f32716a && Intrinsics.areEqual(this.f32717b, javaNullabilityAnnotationsStatus.f32717b) && this.f32718c == javaNullabilityAnnotationsStatus.f32718c;
+            return this.f32764a == javaNullabilityAnnotationsStatus.f32764a && Intrinsics.areEqual(this.f32765b, javaNullabilityAnnotationsStatus.f32765b) && this.f32766c == javaNullabilityAnnotationsStatus.f32766c;
         }
         return false;
     }
 
     @NotNull
     public final ReportLevel getReportLevelAfter() {
-        return this.f32718c;
+        return this.f32766c;
     }
 
     @NotNull
     public final ReportLevel getReportLevelBefore() {
-        return this.f32716a;
+        return this.f32764a;
     }
 
     public final qr.j getSinceVersion() {
-        return this.f32717b;
+        return this.f32765b;
     }
 
     public int hashCode() {
-        int hashCode = this.f32716a.hashCode() * 31;
-        qr.j jVar = this.f32717b;
-        return ((hashCode + (jVar == null ? 0 : jVar.hashCode())) * 31) + this.f32718c.hashCode();
+        int hashCode = this.f32764a.hashCode() * 31;
+        qr.j jVar = this.f32765b;
+        return ((hashCode + (jVar == null ? 0 : jVar.hashCode())) * 31) + this.f32766c.hashCode();
     }
 
     @NotNull
     public String toString() {
-        return "JavaNullabilityAnnotationsStatus(reportLevelBefore=" + this.f32716a + ", sinceVersion=" + this.f32717b + ", reportLevelAfter=" + this.f32718c + ')';
+        return "JavaNullabilityAnnotationsStatus(reportLevelBefore=" + this.f32764a + ", sinceVersion=" + this.f32765b + ", reportLevelAfter=" + this.f32766c + ')';
     }
 
     public /* synthetic */ JavaNullabilityAnnotationsStatus(ReportLevel reportLevel, qr.j jVar, ReportLevel reportLevel2, int i10, DefaultConstructorMarker defaultConstructorMarker) {

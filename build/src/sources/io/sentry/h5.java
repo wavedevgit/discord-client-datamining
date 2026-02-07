@@ -17,19 +17,19 @@ import java.util.Map;
 public final class h5 implements y0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final k7 f28161b;
+    private final k7 f28209b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final io.sentry.transport.q f28162c;
+    private final io.sentry.transport.q f28210c;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.logger.b f28164e;
+    private final io.sentry.logger.b f28212e;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f28163d = new b();
+    private final b f28211d = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f28160a = true;
+    private boolean f28208a = true;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -45,17 +45,17 @@ public final class h5 implements y0 {
     }
 
     public h5(k7 k7Var) {
-        this.f28161b = (k7) io.sentry.util.y.c(k7Var, "SentryOptions is required.");
+        this.f28209b = (k7) io.sentry.util.y.c(k7Var, "SentryOptions is required.");
         g1 transportFactory = k7Var.getTransportFactory();
         if (transportFactory instanceof c3) {
             transportFactory = new io.sentry.a();
             k7Var.setTransportFactory(transportFactory);
         }
-        this.f28162c = transportFactory.a(k7Var, new x3(k7Var).a());
+        this.f28210c = transportFactory.a(k7Var, new x3(k7Var).a());
         if (k7Var.getLogs().a()) {
-            this.f28164e = new io.sentry.logger.e(k7Var, this);
+            this.f28212e = new io.sentry.logger.e(k7Var, this);
         } else {
-            this.f28164e = io.sentry.logger.f.a();
+            this.f28212e = io.sentry.logger.f.a();
         }
     }
 
@@ -92,7 +92,7 @@ public final class h5 implements y0 {
     private q8 C(IScope iScope, Hint hint, e5 e5Var, String str) {
         if (io.sentry.util.n.h(hint, io.sentry.hints.c.class)) {
             if (e5Var != null) {
-                return d.c(e5Var, str, this.f28161b).J();
+                return d.c(e5Var, str, this.f28209b).J();
             }
             return null;
         } else if (iScope != null) {
@@ -100,7 +100,7 @@ public final class h5 implements y0 {
             if (l10 != null) {
                 return l10.i();
             }
-            return io.sentry.util.j0.g(iScope, this.f28161b).h();
+            return io.sentry.util.j0.g(iScope, this.f28209b).h();
         } else {
             return null;
         }
@@ -134,12 +134,12 @@ public final class h5 implements y0 {
                     continue;
                 }
             } catch (Throwable th2) {
-                this.f28161b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing event by processor: %s", b0Var.getClass().getName());
+                this.f28209b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing event by processor: %s", b0Var.getClass().getName());
                 continue;
             }
             if (sentryEvent == null) {
-                this.f28161b.getLogger().c(SentryLevel.DEBUG, "Event was dropped by a processor: %s", b0Var.getClass().getName());
-                this.f28161b.getClientReportRecorder().a(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Error);
+                this.f28209b.getLogger().c(SentryLevel.DEBUG, "Event was dropped by a processor: %s", b0Var.getClass().getName());
+                this.f28209b.getClientReportRecorder().a(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Error);
                 break;
             }
         }
@@ -157,12 +157,12 @@ public final class h5 implements y0 {
                 l7Var = b0Var.a(l7Var, hint);
                 continue;
             } catch (Throwable th2) {
-                this.f28161b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing replay event by processor: %s", b0Var.getClass().getName());
+                this.f28209b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing replay event by processor: %s", b0Var.getClass().getName());
                 continue;
             }
             if (l7Var == null) {
-                this.f28161b.getLogger().c(SentryLevel.DEBUG, "Replay event was dropped by a processor: %s", b0Var.getClass().getName());
-                this.f28161b.getClientReportRecorder().a(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Replay);
+                this.f28209b.getLogger().c(SentryLevel.DEBUG, "Replay event was dropped by a processor: %s", b0Var.getClass().getName());
+                this.f28209b.getClientReportRecorder().a(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Replay);
                 break;
             }
         }
@@ -181,7 +181,7 @@ public final class h5 implements y0 {
             try {
                 d0Var = b0Var.k(d0Var, hint);
             } catch (Throwable th2) {
-                this.f28161b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing transaction by processor: %s", b0Var.getClass().getName());
+                this.f28209b.getLogger().a(SentryLevel.ERROR, th2, "An exception occurred while processing transaction by processor: %s", b0Var.getClass().getName());
             }
             if (d0Var == null) {
                 size = 0;
@@ -189,16 +189,16 @@ public final class h5 implements y0 {
                 size = d0Var.q0().size();
             }
             if (d0Var == null) {
-                this.f28161b.getLogger().c(SentryLevel.DEBUG, "Transaction was dropped by a processor: %s", b0Var.getClass().getName());
-                io.sentry.clientreport.h clientReportRecorder = this.f28161b.getClientReportRecorder();
+                this.f28209b.getLogger().c(SentryLevel.DEBUG, "Transaction was dropped by a processor: %s", b0Var.getClass().getName());
+                io.sentry.clientreport.h clientReportRecorder = this.f28209b.getClientReportRecorder();
                 io.sentry.clientreport.f fVar = io.sentry.clientreport.f.EVENT_PROCESSOR;
                 clientReportRecorder.a(fVar, j.Transaction);
-                this.f28161b.getClientReportRecorder().c(fVar, j.Span, size2 + 1);
+                this.f28209b.getClientReportRecorder().c(fVar, j.Span, size2 + 1);
                 break;
             } else if (size < size2) {
                 int i10 = size2 - size;
-                this.f28161b.getLogger().c(SentryLevel.DEBUG, "%d spans were dropped by a processor: %s", Integer.valueOf(i10), b0Var.getClass().getName());
-                this.f28161b.getClientReportRecorder().c(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Span, i10);
+                this.f28209b.getLogger().c(SentryLevel.DEBUG, "%d spans were dropped by a processor: %s", Integer.valueOf(i10), b0Var.getClass().getName());
+                this.f28209b.getClientReportRecorder().c(io.sentry.clientreport.f.EVENT_PROCESSOR, j.Span, i10);
             }
         }
         return d0Var;
@@ -206,35 +206,35 @@ public final class h5 implements y0 {
 
     private boolean H() {
         io.sentry.util.b0 a10;
-        if (this.f28161b.getSampleRate() == null) {
+        if (this.f28209b.getSampleRate() == null) {
             a10 = null;
         } else {
             a10 = io.sentry.util.d0.a();
         }
-        if (this.f28161b.getSampleRate() == null || a10 == null || this.f28161b.getSampleRate().doubleValue() >= a10.c()) {
+        if (this.f28209b.getSampleRate() == null || a10 == null || this.f28209b.getSampleRate().doubleValue() >= a10.c()) {
             return true;
         }
         return false;
     }
 
     private io.sentry.protocol.x I(l5 l5Var, Hint hint) {
-        k7.b beforeEnvelopeCallback = this.f28161b.getBeforeEnvelopeCallback();
+        k7.b beforeEnvelopeCallback = this.f28209b.getBeforeEnvelopeCallback();
         if (beforeEnvelopeCallback != null) {
             try {
                 beforeEnvelopeCallback.a(l5Var, hint);
             } catch (Throwable th2) {
-                this.f28161b.getLogger().b(SentryLevel.ERROR, "The BeforeEnvelope callback threw an exception.", th2);
+                this.f28209b.getLogger().b(SentryLevel.ERROR, "The BeforeEnvelope callback threw an exception.", th2);
             }
         }
-        u6.d().c(this.f28161b.getLogger());
+        u6.d().c(this.f28209b.getLogger());
         if (hint == null) {
-            this.f28162c.Q1(l5Var);
+            this.f28210c.Q1(l5Var);
         } else {
-            this.f28162c.c0(l5Var, hint);
+            this.f28210c.c0(l5Var, hint);
         }
         io.sentry.protocol.x a10 = l5Var.b().a();
         if (a10 == null) {
-            return io.sentry.protocol.x.f28615e;
+            return io.sentry.protocol.x.f28663e;
         }
         return a10;
     }
@@ -243,7 +243,7 @@ public final class h5 implements y0 {
         if (io.sentry.util.n.q(hint)) {
             return true;
         }
-        this.f28161b.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying scope: %s", e5Var.G());
+        this.f28209b.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying scope: %s", e5Var.G());
         return false;
     }
 
@@ -269,7 +269,7 @@ public final class h5 implements y0 {
         List B = e5Var.B();
         if (B != null && !collection.isEmpty()) {
             B.addAll(collection);
-            Collections.sort(B, this.f28163d);
+            Collections.sort(B, this.f28211d);
         }
     }
 
@@ -305,7 +305,7 @@ public final class h5 implements y0 {
             }
             return;
         }
-        h5Var.f28161b.getLogger().c(SentryLevel.INFO, "Session is null on scope.withSession", new Object[0]);
+        h5Var.f28209b.getLogger().c(SentryLevel.INFO, "Session is null on scope.withSession", new Object[0]);
     }
 
     private void p(IScope iScope, Hint hint) {
@@ -423,16 +423,16 @@ public final class h5 implements y0 {
         io.sentry.protocol.x xVar;
         ArrayList arrayList = new ArrayList();
         if (e5Var != null) {
-            arrayList.add(l6.B(this.f28161b.getSerializer(), e5Var));
+            arrayList.add(l6.B(this.f28209b.getSerializer(), e5Var));
             xVar = e5Var.G();
         } else {
             xVar = null;
         }
         if (z7Var != null) {
-            arrayList.add(l6.G(this.f28161b.getSerializer(), z7Var));
+            arrayList.add(l6.G(this.f28209b.getSerializer(), z7Var));
         }
         if (q3Var != null) {
-            arrayList.add(l6.E(q3Var, this.f28161b.getMaxTraceFileSize(), this.f28161b.getSerializer()));
+            arrayList.add(l6.E(q3Var, this.f28209b.getMaxTraceFileSize(), this.f28209b.getSerializer()));
             if (xVar == null) {
                 xVar = new io.sentry.protocol.x(q3Var.B());
             }
@@ -440,34 +440,34 @@ public final class h5 implements y0 {
         if (list != null) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                arrayList.add(l6.z(this.f28161b.getSerializer(), this.f28161b.getLogger(), (io.sentry.b) it.next(), this.f28161b.getMaxAttachmentSize()));
+                arrayList.add(l6.z(this.f28209b.getSerializer(), this.f28209b.getLogger(), (io.sentry.b) it.next(), this.f28209b.getMaxAttachmentSize()));
             }
         }
         if (arrayList.isEmpty()) {
             return null;
         }
-        return new l5(new m5(xVar, this.f28161b.getSdkVersion(), q8Var), arrayList);
+        return new l5(new m5(xVar, this.f28209b.getSdkVersion(), q8Var), arrayList);
     }
 
     private l5 u(z6 z6Var) {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(l6.C(this.f28161b.getSerializer(), z6Var));
-        return new l5(new m5(null, this.f28161b.getSdkVersion(), null), arrayList);
+        arrayList.add(l6.C(this.f28209b.getSerializer(), z6Var));
+        return new l5(new m5(null, this.f28209b.getSdkVersion(), null), arrayList);
     }
 
     private l5 v(l7 l7Var, v3 v3Var, q8 q8Var, boolean z10) {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(l6.F(this.f28161b.getSerializer(), this.f28161b.getLogger(), l7Var, v3Var, z10));
-        return new l5(new m5(l7Var.G(), this.f28161b.getSessionReplay().o(), q8Var), arrayList);
+        arrayList.add(l6.F(this.f28209b.getSerializer(), this.f28209b.getLogger(), l7Var, v3Var, z10));
+        return new l5(new m5(l7Var.G(), this.f28209b.getSessionReplay().o(), q8Var), arrayList);
     }
 
     private SentryEvent w(SentryEvent sentryEvent, Hint hint) {
-        k7.c beforeSend = this.f28161b.getBeforeSend();
+        k7.c beforeSend = this.f28209b.getBeforeSend();
         if (beforeSend != null) {
             try {
                 return beforeSend.a(sentryEvent, hint);
             } catch (Throwable th2) {
-                this.f28161b.getLogger().b(SentryLevel.ERROR, "The BeforeSend callback threw an exception. It will be added as breadcrumb and continue.", th2);
+                this.f28209b.getLogger().b(SentryLevel.ERROR, "The BeforeSend callback threw an exception. It will be added as breadcrumb and continue.", th2);
                 return null;
             }
         }
@@ -475,12 +475,12 @@ public final class h5 implements y0 {
     }
 
     private l7 x(l7 l7Var, Hint hint) {
-        this.f28161b.getBeforeSendReplay();
+        this.f28209b.getBeforeSendReplay();
         return l7Var;
     }
 
     private io.sentry.protocol.d0 y(io.sentry.protocol.d0 d0Var, Hint hint) {
-        this.f28161b.getBeforeSendTransaction();
+        this.f28209b.getBeforeSendTransaction();
         return d0Var;
     }
 
@@ -509,7 +509,7 @@ public final class h5 implements y0 {
                     }
                 });
             }
-            this.f28161b.getLogger().c(SentryLevel.INFO, "Scope is null on client.captureEvent", new Object[0]);
+            this.f28209b.getLogger().c(SentryLevel.INFO, "Scope is null on client.captureEvent", new Object[0]);
         }
         return null;
     }
@@ -524,19 +524,19 @@ public final class h5 implements y0 {
         if (J(l7Var, hint)) {
             s(l7Var, iScope);
         }
-        ILogger logger = this.f28161b.getLogger();
+        ILogger logger = this.f28209b.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "Capturing session replay: %s", l7Var.G());
-        io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28615e;
+        io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28663e;
         if (l7Var.G() != null) {
             xVar = l7Var.G();
         } else {
             xVar = xVar2;
         }
-        l7 F = F(l7Var, hint, this.f28161b.getEventProcessors());
+        l7 F = F(l7Var, hint, this.f28209b.getEventProcessors());
         if (F != null && (F = x(F, hint)) == null) {
-            this.f28161b.getLogger().c(sentryLevel, "Event was dropped by beforeSendReplay", new Object[0]);
-            this.f28161b.getClientReportRecorder().a(io.sentry.clientreport.f.BEFORE_SEND, j.Replay);
+            this.f28209b.getLogger().c(sentryLevel, "Event was dropped by beforeSendReplay", new Object[0]);
+            this.f28209b.getClientReportRecorder().a(io.sentry.clientreport.f.BEFORE_SEND, j.Replay);
         }
         if (F == null) {
             return xVar2;
@@ -544,11 +544,11 @@ public final class h5 implements y0 {
         try {
             l5 v10 = v(F, hint.f(), C(iScope, hint, F, null), io.sentry.util.n.h(hint, io.sentry.hints.c.class));
             hint.b();
-            this.f28162c.c0(v10, hint);
+            this.f28210c.c0(v10, hint);
             return xVar;
         } catch (IOException e10) {
-            this.f28161b.getLogger().a(SentryLevel.WARNING, e10, "Capturing event %s failed.", xVar);
-            return io.sentry.protocol.x.f28615e;
+            this.f28209b.getLogger().a(SentryLevel.WARNING, e10, "Capturing event %s failed.", xVar);
+            return io.sentry.protocol.x.f28663e;
         }
     }
 
@@ -563,18 +563,18 @@ public final class h5 implements y0 {
         if (J(d0Var, hint)) {
             p(iScope, hint);
         }
-        ILogger logger = this.f28161b.getLogger();
+        ILogger logger = this.f28209b.getLogger();
         SentryLevel sentryLevel = SentryLevel.DEBUG;
         logger.c(sentryLevel, "Capturing transaction: %s", d0Var.G());
-        if (io.sentry.util.j0.f(this.f28161b.getIgnoredTransactions(), d0Var.r0())) {
-            this.f28161b.getLogger().c(sentryLevel, "Transaction was dropped as transaction name %s is ignored", d0Var.r0());
-            io.sentry.clientreport.h clientReportRecorder = this.f28161b.getClientReportRecorder();
+        if (io.sentry.util.j0.f(this.f28209b.getIgnoredTransactions(), d0Var.r0())) {
+            this.f28209b.getLogger().c(sentryLevel, "Transaction was dropped as transaction name %s is ignored", d0Var.r0());
+            io.sentry.clientreport.h clientReportRecorder = this.f28209b.getClientReportRecorder();
             io.sentry.clientreport.f fVar = io.sentry.clientreport.f.EVENT_PROCESSOR;
             clientReportRecorder.a(fVar, j.Transaction);
-            this.f28161b.getClientReportRecorder().c(fVar, j.Span, d0Var.q0().size() + 1);
-            return io.sentry.protocol.x.f28615e;
+            this.f28209b.getClientReportRecorder().c(fVar, j.Span, d0Var.q0().size() + 1);
+            return io.sentry.protocol.x.f28663e;
         }
-        io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28615e;
+        io.sentry.protocol.x xVar2 = io.sentry.protocol.x.f28663e;
         if (d0Var.G() != null) {
             xVar = d0Var.G();
         } else {
@@ -586,14 +586,14 @@ public final class h5 implements y0 {
                 d0Var = G(d0Var, hint, iScope.U());
             }
             if (d0Var == null) {
-                this.f28161b.getLogger().c(sentryLevel, "Transaction was dropped by applyScope", new Object[0]);
+                this.f28209b.getLogger().c(sentryLevel, "Transaction was dropped by applyScope", new Object[0]);
             }
         }
         if (d0Var != null) {
-            d0Var = G(d0Var, hint, this.f28161b.getEventProcessors());
+            d0Var = G(d0Var, hint, this.f28209b.getEventProcessors());
         }
         if (d0Var == null) {
-            this.f28161b.getLogger().c(sentryLevel, "Transaction was dropped by Event processors.", new Object[0]);
+            this.f28209b.getLogger().c(sentryLevel, "Transaction was dropped by Event processors.", new Object[0]);
             return xVar2;
         }
         int size2 = d0Var.q0().size();
@@ -604,17 +604,17 @@ public final class h5 implements y0 {
             size = y10.q0().size();
         }
         if (y10 == null) {
-            this.f28161b.getLogger().c(sentryLevel, "Transaction was dropped by beforeSendTransaction.", new Object[0]);
-            io.sentry.clientreport.h clientReportRecorder2 = this.f28161b.getClientReportRecorder();
+            this.f28209b.getLogger().c(sentryLevel, "Transaction was dropped by beforeSendTransaction.", new Object[0]);
+            io.sentry.clientreport.h clientReportRecorder2 = this.f28209b.getClientReportRecorder();
             io.sentry.clientreport.f fVar2 = io.sentry.clientreport.f.BEFORE_SEND;
             clientReportRecorder2.a(fVar2, j.Transaction);
-            this.f28161b.getClientReportRecorder().c(fVar2, j.Span, size2 + 1);
+            this.f28209b.getClientReportRecorder().c(fVar2, j.Span, size2 + 1);
             return xVar2;
         }
         if (size < size2) {
             int i10 = size2 - size;
-            this.f28161b.getLogger().c(sentryLevel, "%d spans were dropped by beforeSendTransaction.", Integer.valueOf(i10));
-            this.f28161b.getClientReportRecorder().c(io.sentry.clientreport.f.BEFORE_SEND, j.Span, i10);
+            this.f28209b.getLogger().c(sentryLevel, "%d spans were dropped by beforeSendTransaction.", Integer.valueOf(i10));
+            this.f28209b.getClientReportRecorder().c(io.sentry.clientreport.f.BEFORE_SEND, j.Span, i10);
         }
         try {
             l5 t10 = t(y10, z(B(hint)), null, q8Var, q3Var);
@@ -624,48 +624,48 @@ public final class h5 implements y0 {
             }
             return xVar;
         } catch (io.sentry.exception.b | IOException e10) {
-            this.f28161b.getLogger().a(SentryLevel.WARNING, e10, "Capturing transaction %s failed.", xVar);
-            return io.sentry.protocol.x.f28615e;
+            this.f28209b.getLogger().a(SentryLevel.WARNING, e10, "Capturing transaction %s failed.", xVar);
+            return io.sentry.protocol.x.f28663e;
         }
     }
 
     @Override // io.sentry.y0
     public void c(boolean z10) {
         long shutdownTimeoutMillis;
-        this.f28161b.getLogger().c(SentryLevel.INFO, "Closing SentryClient.", new Object[0]);
+        this.f28209b.getLogger().c(SentryLevel.INFO, "Closing SentryClient.", new Object[0]);
         if (z10) {
             shutdownTimeoutMillis = 0;
         } else {
             try {
-                shutdownTimeoutMillis = this.f28161b.getShutdownTimeoutMillis();
+                shutdownTimeoutMillis = this.f28209b.getShutdownTimeoutMillis();
             } catch (IOException e10) {
-                this.f28161b.getLogger().b(SentryLevel.WARNING, "Failed to close the connection to the Sentry Server.", e10);
+                this.f28209b.getLogger().b(SentryLevel.WARNING, "Failed to close the connection to the Sentry Server.", e10);
             }
         }
         d(shutdownTimeoutMillis);
-        this.f28164e.c(z10);
-        this.f28162c.c(z10);
-        for (b0 b0Var : this.f28161b.getEventProcessors()) {
+        this.f28212e.c(z10);
+        this.f28210c.c(z10);
+        for (b0 b0Var : this.f28209b.getEventProcessors()) {
             if (b0Var instanceof Closeable) {
                 try {
                     ((Closeable) b0Var).close();
                 } catch (IOException e11) {
-                    this.f28161b.getLogger().c(SentryLevel.WARNING, "Failed to close the event processor {}.", b0Var, e11);
+                    this.f28209b.getLogger().c(SentryLevel.WARNING, "Failed to close the event processor {}.", b0Var, e11);
                 }
             }
         }
-        this.f28160a = false;
+        this.f28208a = false;
     }
 
     @Override // io.sentry.y0
     public void d(long j10) {
-        this.f28164e.d(j10);
-        this.f28162c.d(j10);
+        this.f28212e.d(j10);
+        this.f28210c.d(j10);
     }
 
     @Override // io.sentry.y0
     public boolean f() {
-        return this.f28162c.f();
+        return this.f28210c.f();
     }
 
     @Override // io.sentry.y0
@@ -673,14 +673,14 @@ public final class h5 implements y0 {
         io.sentry.util.y.c(z7Var, "Session is required.");
         if (z7Var.h() != null && !z7Var.h().isEmpty()) {
             try {
-                k(l5.a(this.f28161b.getSerializer(), z7Var, this.f28161b.getSdkVersion()), hint);
+                k(l5.a(this.f28209b.getSerializer(), z7Var, this.f28209b.getSdkVersion()), hint);
                 return;
             } catch (IOException e10) {
-                this.f28161b.getLogger().b(SentryLevel.ERROR, "Failed to capture session.", e10);
+                this.f28209b.getLogger().b(SentryLevel.ERROR, "Failed to capture session.", e10);
                 return;
             }
         }
-        this.f28161b.getLogger().c(SentryLevel.WARNING, "Sessions can't be captured without setting a release.", new Object[0]);
+        this.f28209b.getLogger().c(SentryLevel.WARNING, "Sessions can't be captured without setting a release.", new Object[0]);
     }
 
     @Override // io.sentry.y0
@@ -688,18 +688,18 @@ public final class h5 implements y0 {
         try {
             I(u(z6Var), null);
         } catch (IOException e10) {
-            this.f28161b.getLogger().a(SentryLevel.WARNING, e10, "Capturing log failed.", new Object[0]);
+            this.f28209b.getLogger().a(SentryLevel.WARNING, e10, "Capturing log failed.", new Object[0]);
         }
     }
 
     @Override // io.sentry.y0
     public io.sentry.transport.a0 i() {
-        return this.f28162c.i();
+        return this.f28210c.i();
     }
 
     @Override // io.sentry.y0
     public boolean isEnabled() {
-        return this.f28160a;
+        return this.f28208a;
     }
 
     @Override // io.sentry.y0
@@ -712,25 +712,25 @@ public final class h5 implements y0 {
             hint.b();
             return I(l5Var, hint);
         } catch (IOException e10) {
-            this.f28161b.getLogger().b(SentryLevel.ERROR, "Failed to capture envelope.", e10);
-            return io.sentry.protocol.x.f28615e;
+            this.f28209b.getLogger().b(SentryLevel.ERROR, "Failed to capture envelope.", e10);
+            return io.sentry.protocol.x.f28663e;
         }
     }
 
     @Override // io.sentry.y0
     public io.sentry.protocol.x l(m3 m3Var, IScope iScope) {
         io.sentry.util.y.c(m3Var, "profileChunk is required.");
-        this.f28161b.getLogger().c(SentryLevel.DEBUG, "Capturing profile chunk: %s", m3Var.n());
+        this.f28209b.getLogger().c(SentryLevel.DEBUG, "Capturing profile chunk: %s", m3Var.n());
         io.sentry.protocol.x n10 = m3Var.n();
-        io.sentry.protocol.d c10 = io.sentry.protocol.d.c(m3Var.o(), this.f28161b);
+        io.sentry.protocol.d c10 = io.sentry.protocol.d.c(m3Var.o(), this.f28209b);
         if (c10 != null) {
             m3Var.r(c10);
         }
         try {
-            return I(new l5(new m5(n10, this.f28161b.getSdkVersion(), null), Collections.singletonList(l6.D(m3Var, this.f28161b.getSerializer(), this.f28161b.getProfilerConverter()))), null);
+            return I(new l5(new m5(n10, this.f28209b.getSdkVersion(), null), Collections.singletonList(l6.D(m3Var, this.f28209b.getSerializer(), this.f28209b.getProfilerConverter()))), null);
         } catch (io.sentry.exception.b | IOException e10) {
-            this.f28161b.getLogger().a(SentryLevel.WARNING, e10, "Capturing profile chunk %s failed.", n10);
-            return io.sentry.protocol.x.f28615e;
+            this.f28209b.getLogger().a(SentryLevel.WARNING, e10, "Capturing profile chunk %s failed.", n10);
+            return io.sentry.protocol.x.f28663e;
         }
     }
 

@@ -7,16 +7,16 @@ import okio.BufferedSource;
 public interface l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f31297a = a.f31299a;
+    public static final a f31345a = a.f31347a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final l f31298b = new a.C0442a();
+    public static final l f31346b = new a.C0442a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f31299a = new a();
+        static final /* synthetic */ a f31347a = new a();
 
         /* renamed from: ju.l$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

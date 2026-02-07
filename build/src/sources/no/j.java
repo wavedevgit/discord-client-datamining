@@ -14,50 +14,50 @@ import jo.n4;
 public final class j implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f41062a;
+    private final ConstraintLayout f41110a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f41063b;
+    public final ConstraintLayout f41111b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f41064c;
+    public final TextView f41112c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f41065d;
+    public final ConstraintLayout f41113d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f41066e;
+    public final Pi2NavigationBar f41114e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f41067f;
+    public final ThemeableLottieAnimationView f41115f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f41068g;
+    public final TextView f41116g;
 
     private j(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, TextView textView, ConstraintLayout constraintLayout3, Pi2NavigationBar pi2NavigationBar, ThemeableLottieAnimationView themeableLottieAnimationView, TextView textView2) {
-        this.f41062a = constraintLayout;
-        this.f41063b = constraintLayout2;
-        this.f41064c = textView;
-        this.f41065d = constraintLayout3;
-        this.f41066e = pi2NavigationBar;
-        this.f41067f = themeableLottieAnimationView;
-        this.f41068g = textView2;
+        this.f41110a = constraintLayout;
+        this.f41111b = constraintLayout2;
+        this.f41112c = textView;
+        this.f41113d = constraintLayout3;
+        this.f41114e = pi2NavigationBar;
+        this.f41115f = themeableLottieAnimationView;
+        this.f41116g = textView2;
     }
 
     public static j a(View view) {
-        int i10 = m4.f30377b;
+        int i10 = m4.f30425b;
         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
         if (constraintLayout != null) {
-            i10 = m4.f30381d;
+            i10 = m4.f30429d;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = m4.f30411s;
+                i10 = m4.f30459s;
                 ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                 if (constraintLayout2 != null) {
                     i10 = m4.Y;
                     Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                     if (pi2NavigationBar != null) {
-                        i10 = m4.f30386f0;
+                        i10 = m4.f30434f0;
                         ThemeableLottieAnimationView themeableLottieAnimationView = (ThemeableLottieAnimationView) e4.a.a(view, i10);
                         if (themeableLottieAnimationView != null) {
                             i10 = m4.D0;
@@ -74,7 +74,7 @@ public final class j implements ViewBinding {
     }
 
     public static j c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f30555k, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f30603k, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -84,6 +84,6 @@ public final class j implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f41062a;
+        return this.f41110a;
     }
 }

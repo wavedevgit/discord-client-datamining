@@ -99,7 +99,7 @@ public abstract class a {
                     if (r5 != r1) goto L45
                     return r1
                 L45:
-                    kotlin.Unit r5 = kotlin.Unit.f32008a
+                    kotlin.Unit r5 = kotlin.Unit.f32056a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: dn.a.C0269a.C0270a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -116,7 +116,7 @@ public abstract class a {
             if (collect == wr.b.f()) {
                 return collect;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -155,7 +155,7 @@ public abstract class a {
                 if (b0Var != null) {
                     b0Var.h("com.squareup.workflow1.ui.renderWorkflowIn-snapshot", new p(gVar.b()));
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -163,7 +163,7 @@ public abstract class a {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(bn.g gVar, Continuation continuation) {
-            return ((b) create(gVar, continuation)).invokeSuspend(Unit.f32008a);
+            return ((b) create(gVar, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -196,6 +196,6 @@ public abstract class a {
             a10 = pVar.a();
         }
         rs.j0 a11 = bn.f.a(qVar, coroutineScope, j0Var, a10, list, function2);
-        return rs.g.F(new C0269a(rs.g.C(a11, new b(b0Var, null))), coroutineScope, rs.g0.f49271a.a(), ((bn.g) a11.getValue()).a());
+        return rs.g.F(new C0269a(rs.g.C(a11, new b(b0Var, null))), coroutineScope, rs.g0.f49319a.a(), ((bn.g) a11.getValue()).a());
     }
 }

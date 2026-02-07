@@ -7,9 +7,9 @@ import ng.yd;
 public final /* synthetic */ class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ k f55404a;
+    public final /* synthetic */ k f55452a;
 
     public final ck a(Object obj, int i10, yd ydVar) {
-        return this.f55404a.k((e3) obj, i10, ydVar);
+        return this.f55452a.k((e3) obj, i10, ydVar);
     }
 }

@@ -40,7 +40,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ChatModule$clearRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f32056a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -55,7 +55,7 @@ final class ChatModule$clearRows$1 extends k implements Function2<ChatListManage
             rowUpdateLoggerFor = companion.rowUpdateLoggerFor(reactApplicationContext, this.$tag);
             rowUpdateLoggerFor.logRowsClear();
             ((ChatListManager) this.L$0).clearRows(this.$changesetUpdateId);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

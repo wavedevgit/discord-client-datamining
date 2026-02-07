@@ -5,7 +5,7 @@ import yi.c;
 final class ga implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f39824a = new ga();
+    static final ga f39872a = new ga();
 
     static {
         c.b a10 = yi.c.a("errorCode");

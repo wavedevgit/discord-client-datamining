@@ -26,89 +26,89 @@ import pe.m;
 public final class l extends GLSurfaceView {
 
     /* renamed from: x  reason: collision with root package name */
-    public static final /* synthetic */ int f43857x = 0;
+    public static final /* synthetic */ int f43905x = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CopyOnWriteArrayList f43858d;
+    private final CopyOnWriteArrayList f43906d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SensorManager f43859e;
+    private final SensorManager f43907e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Sensor f43860i;
+    private final Sensor f43908i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final d f43861o;
+    private final d f43909o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Handler f43862p;
+    private final Handler f43910p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final m f43863q;
+    private final m f43911q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final i f43864r;
+    private final i f43912r;
 
     /* renamed from: s  reason: collision with root package name */
-    private SurfaceTexture f43865s;
+    private SurfaceTexture f43913s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Surface f43866t;
+    private Surface f43914t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f43867u;
+    private boolean f43915u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f43868v;
+    private boolean f43916v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f43869w;
+    private boolean f43917w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     final class a implements GLSurfaceView.Renderer, m.a, d.a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final i f43870d;
+        private final i f43918d;
 
         /* renamed from: o  reason: collision with root package name */
-        private final float[] f43873o;
+        private final float[] f43921o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final float[] f43874p;
+        private final float[] f43922p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final float[] f43875q;
+        private final float[] f43923q;
 
         /* renamed from: r  reason: collision with root package name */
-        private float f43876r;
+        private float f43924r;
 
         /* renamed from: s  reason: collision with root package name */
-        private float f43877s;
+        private float f43925s;
 
         /* renamed from: e  reason: collision with root package name */
-        private final float[] f43871e = new float[16];
+        private final float[] f43919e = new float[16];
 
         /* renamed from: i  reason: collision with root package name */
-        private final float[] f43872i = new float[16];
+        private final float[] f43920i = new float[16];
 
         /* renamed from: t  reason: collision with root package name */
-        private final float[] f43878t = new float[16];
+        private final float[] f43926t = new float[16];
 
         /* renamed from: u  reason: collision with root package name */
-        private final float[] f43879u = new float[16];
+        private final float[] f43927u = new float[16];
 
         public a(i iVar) {
             float[] fArr = new float[16];
-            this.f43873o = fArr;
+            this.f43921o = fArr;
             float[] fArr2 = new float[16];
-            this.f43874p = fArr2;
+            this.f43922p = fArr2;
             float[] fArr3 = new float[16];
-            this.f43875q = fArr3;
-            this.f43870d = iVar;
+            this.f43923q = fArr3;
+            this.f43918d = iVar;
             t.j(fArr);
             t.j(fArr2);
             t.j(fArr3);
-            this.f43877s = 3.1415927f;
+            this.f43925s = 3.1415927f;
         }
 
         private float c(float f10) {
@@ -119,32 +119,32 @@ public final class l extends GLSurfaceView {
         }
 
         private void d() {
-            Matrix.setRotateM(this.f43874p, 0, -this.f43876r, (float) Math.cos(this.f43877s), (float) Math.sin(this.f43877s), 0.0f);
+            Matrix.setRotateM(this.f43922p, 0, -this.f43924r, (float) Math.cos(this.f43925s), (float) Math.sin(this.f43925s), 0.0f);
         }
 
         @Override // pe.d.a
         public synchronized void a(float[] fArr, float f10) {
-            float[] fArr2 = this.f43873o;
+            float[] fArr2 = this.f43921o;
             System.arraycopy(fArr, 0, fArr2, 0, fArr2.length);
-            this.f43877s = -f10;
+            this.f43925s = -f10;
             d();
         }
 
         @Override // pe.m.a
         public synchronized void b(PointF pointF) {
-            this.f43876r = pointF.y;
+            this.f43924r = pointF.y;
             d();
-            Matrix.setRotateM(this.f43875q, 0, -pointF.x, 0.0f, 1.0f, 0.0f);
+            Matrix.setRotateM(this.f43923q, 0, -pointF.x, 0.0f, 1.0f, 0.0f);
         }
 
         @Override // android.opengl.GLSurfaceView.Renderer
         public void onDrawFrame(GL10 gl10) {
             synchronized (this) {
-                Matrix.multiplyMM(this.f43879u, 0, this.f43873o, 0, this.f43875q, 0);
-                Matrix.multiplyMM(this.f43878t, 0, this.f43874p, 0, this.f43879u, 0);
+                Matrix.multiplyMM(this.f43927u, 0, this.f43921o, 0, this.f43923q, 0);
+                Matrix.multiplyMM(this.f43926t, 0, this.f43922p, 0, this.f43927u, 0);
             }
-            Matrix.multiplyMM(this.f43872i, 0, this.f43871e, 0, this.f43878t, 0);
-            this.f43870d.e(this.f43872i, false);
+            Matrix.multiplyMM(this.f43920i, 0, this.f43919e, 0, this.f43926t, 0);
+            this.f43918d.e(this.f43920i, false);
         }
 
         @Override // pe.m.a
@@ -156,12 +156,12 @@ public final class l extends GLSurfaceView {
         public void onSurfaceChanged(GL10 gl10, int i10, int i11) {
             GLES20.glViewport(0, 0, i10, i11);
             float f10 = i10 / i11;
-            Matrix.perspectiveM(this.f43871e, 0, c(f10), f10, 0.1f, 100.0f);
+            Matrix.perspectiveM(this.f43919e, 0, c(f10), f10, 0.1f, 100.0f);
         }
 
         @Override // android.opengl.GLSurfaceView.Renderer
         public synchronized void onSurfaceCreated(GL10 gl10, EGLConfig eGLConfig) {
-            l.this.e(this.f43870d.f());
+            l.this.e(this.f43918d.f());
         }
     }
 
@@ -177,25 +177,25 @@ public final class l extends GLSurfaceView {
     }
 
     public static /* synthetic */ void a(l lVar) {
-        Surface surface = lVar.f43866t;
+        Surface surface = lVar.f43914t;
         if (surface != null) {
-            Iterator it = lVar.f43858d.iterator();
+            Iterator it = lVar.f43906d.iterator();
             while (it.hasNext()) {
                 ((b) it.next()).u(surface);
             }
         }
-        f(lVar.f43865s, surface);
-        lVar.f43865s = null;
-        lVar.f43866t = null;
+        f(lVar.f43913s, surface);
+        lVar.f43913s = null;
+        lVar.f43914t = null;
     }
 
     public static /* synthetic */ void b(l lVar, SurfaceTexture surfaceTexture) {
-        SurfaceTexture surfaceTexture2 = lVar.f43865s;
-        Surface surface = lVar.f43866t;
+        SurfaceTexture surfaceTexture2 = lVar.f43913s;
+        Surface surface = lVar.f43914t;
         Surface surface2 = new Surface(surfaceTexture);
-        lVar.f43865s = surfaceTexture;
-        lVar.f43866t = surface2;
-        Iterator it = lVar.f43858d.iterator();
+        lVar.f43913s = surfaceTexture;
+        lVar.f43914t = surface2;
+        Iterator it = lVar.f43906d.iterator();
         while (it.hasNext()) {
             ((b) it.next()).v(surface2);
         }
@@ -204,7 +204,7 @@ public final class l extends GLSurfaceView {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void e(final SurfaceTexture surfaceTexture) {
-        this.f43862p.post(new Runnable() { // from class: pe.j
+        this.f43910p.post(new Runnable() { // from class: pe.j
             @Override // java.lang.Runnable
             public final void run() {
                 l.b(l.this, surfaceTexture);
@@ -223,46 +223,46 @@ public final class l extends GLSurfaceView {
 
     private void h() {
         boolean z10;
-        if (this.f43867u && this.f43868v) {
+        if (this.f43915u && this.f43916v) {
             z10 = true;
         } else {
             z10 = false;
         }
-        Sensor sensor = this.f43860i;
-        if (sensor != null && z10 != this.f43869w) {
+        Sensor sensor = this.f43908i;
+        if (sensor != null && z10 != this.f43917w) {
             if (z10) {
-                this.f43859e.registerListener(this.f43861o, sensor, 0);
+                this.f43907e.registerListener(this.f43909o, sensor, 0);
             } else {
-                this.f43859e.unregisterListener(this.f43861o);
+                this.f43907e.unregisterListener(this.f43909o);
             }
-            this.f43869w = z10;
+            this.f43917w = z10;
         }
     }
 
     public void d(b bVar) {
-        this.f43858d.add(bVar);
+        this.f43906d.add(bVar);
     }
 
     public void g(b bVar) {
-        this.f43858d.remove(bVar);
+        this.f43906d.remove(bVar);
     }
 
     public pe.a getCameraMotionListener() {
-        return this.f43864r;
+        return this.f43912r;
     }
 
     public oe.l getVideoFrameMetadataListener() {
-        return this.f43864r;
+        return this.f43912r;
     }
 
     public Surface getVideoSurface() {
-        return this.f43866t;
+        return this.f43914t;
     }
 
     @Override // android.opengl.GLSurfaceView, android.view.SurfaceView, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f43862p.post(new Runnable() { // from class: pe.k
+        this.f43910p.post(new Runnable() { // from class: pe.k
             @Override // java.lang.Runnable
             public final void run() {
                 l.a(l.this);
@@ -272,7 +272,7 @@ public final class l extends GLSurfaceView {
 
     @Override // android.opengl.GLSurfaceView
     public void onPause() {
-        this.f43868v = false;
+        this.f43916v = false;
         h();
         super.onPause();
     }
@@ -280,34 +280,34 @@ public final class l extends GLSurfaceView {
     @Override // android.opengl.GLSurfaceView
     public void onResume() {
         super.onResume();
-        this.f43868v = true;
+        this.f43916v = true;
         h();
     }
 
     public void setDefaultStereoMode(int i10) {
-        this.f43864r.g(i10);
+        this.f43912r.g(i10);
     }
 
     public void setUseSensorRotation(boolean z10) {
-        this.f43867u = z10;
+        this.f43915u = z10;
         h();
     }
 
     public l(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f43858d = new CopyOnWriteArrayList();
-        this.f43862p = new Handler(Looper.getMainLooper());
+        this.f43906d = new CopyOnWriteArrayList();
+        this.f43910p = new Handler(Looper.getMainLooper());
         SensorManager sensorManager = (SensorManager) ne.a.e(context.getSystemService("sensor"));
-        this.f43859e = sensorManager;
-        Sensor defaultSensor = w0.f39012a >= 18 ? sensorManager.getDefaultSensor(15) : null;
-        this.f43860i = defaultSensor == null ? sensorManager.getDefaultSensor(11) : defaultSensor;
+        this.f43907e = sensorManager;
+        Sensor defaultSensor = w0.f39060a >= 18 ? sensorManager.getDefaultSensor(15) : null;
+        this.f43908i = defaultSensor == null ? sensorManager.getDefaultSensor(11) : defaultSensor;
         i iVar = new i();
-        this.f43864r = iVar;
+        this.f43912r = iVar;
         a aVar = new a(iVar);
         m mVar = new m(context, aVar, 25.0f);
-        this.f43863q = mVar;
-        this.f43861o = new d(((WindowManager) ne.a.e((WindowManager) context.getSystemService("window"))).getDefaultDisplay(), mVar, aVar);
-        this.f43867u = true;
+        this.f43911q = mVar;
+        this.f43909o = new d(((WindowManager) ne.a.e((WindowManager) context.getSystemService("window"))).getDefaultDisplay(), mVar, aVar);
+        this.f43915u = true;
         setEGLContextClientVersion(2);
         setRenderer(aVar);
         setOnTouchListener(mVar);

@@ -5,10 +5,10 @@ import androidx.lifecycle.b0;
 public final class g implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f55502a;
+    private final c f55550a;
 
     public g(c cVar) {
-        this.f55502a = cVar;
+        this.f55550a = cVar;
     }
 
     public static g a(c cVar) {
@@ -22,6 +22,6 @@ public final class g implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b0 get() {
-        return c(this.f55502a);
+        return c(this.f55550a);
     }
 }

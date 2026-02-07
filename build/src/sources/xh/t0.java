@@ -8,22 +8,22 @@ import android.os.IBinder;
 public final class t0 implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ v0 f54684d;
+    final /* synthetic */ v0 f54732d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ t0(v0 v0Var, u0 u0Var) {
-        this.f54684d = v0Var;
+        this.f54732d = v0Var;
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        v0.f(this.f54684d).d("ServiceConnectionImpl.onServiceConnected(%s)", componentName);
-        this.f54684d.c().post(new r0(this, iBinder));
+        v0.f(this.f54732d).d("ServiceConnectionImpl.onServiceConnected(%s)", componentName);
+        this.f54732d.c().post(new r0(this, iBinder));
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
-        v0.f(this.f54684d).d("ServiceConnectionImpl.onServiceDisconnected(%s)", componentName);
-        this.f54684d.c().post(new s0(this));
+        v0.f(this.f54732d).d("ServiceConnectionImpl.onServiceDisconnected(%s)", componentName);
+        this.f54732d.c().post(new s0(this));
     }
 }

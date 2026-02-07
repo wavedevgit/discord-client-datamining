@@ -5,30 +5,30 @@ import yi.c;
 final class n7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n7 f44519a = new n7();
+    static final n7 f44567a = new n7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44520b;
+    private static final yi.c f44568b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44521c;
+    private static final yi.c f44569c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44522d;
+    private static final yi.c f44570d;
 
     static {
         c.b a10 = yi.c.a("languageOption");
         s1 s1Var = new s1();
         s1Var.a(3);
-        f44520b = a10.b(s1Var.b()).a();
+        f44568b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("isUsingLegacyApi");
         s1 s1Var2 = new s1();
         s1Var2.a(4);
-        f44521c = a11.b(s1Var2.b()).a();
+        f44569c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("sdkVersion");
         s1 s1Var3 = new s1();
         s1Var3.a(5);
-        f44522d = a12.b(s1Var3.b()).a();
+        f44570d = a12.b(s1Var3.b()).a();
     }
 
     private n7() {

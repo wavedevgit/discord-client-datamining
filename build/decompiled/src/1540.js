@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot2 = var3;
     var1 = function() {
-        _fun17464: for (var _fun17464_ip = 0;;) switch (_fun17464_ip) {
+        _fun17469: for (var _fun17469_ip = 0;;) switch (_fun17469_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = var2.useRef;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.bind(var2)(var3);
                 var2 = var0.current;
                 if (!(var3 == var2)) {
-                    _fun17464_ip = 60;
-                    continue _fun17464
+                    _fun17469_ip = 60;
+                    continue _fun17469
                 }
             case 28:
                 var3 = _closure1_slot0;

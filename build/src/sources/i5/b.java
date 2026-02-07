@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public class b extends a {
 
     /* renamed from: e  reason: collision with root package name */
-    private final ImageView f26582e;
+    private final ImageView f26630e;
 
     public b(ImageView imageView) {
-        this.f26582e = imageView;
+        this.f26630e = imageView;
     }
 
     @Override // i5.a
@@ -31,7 +31,7 @@ public class b extends a {
     @Override // i5.d
     /* renamed from: g */
     public ImageView getView() {
-        return this.f26582e;
+        return this.f26630e;
     }
 
     @Override // i5.a, j5.d

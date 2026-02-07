@@ -9,22 +9,22 @@ import kotlinx.serialization.encoding.Encoder;
 public final class l1 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f31027a;
+    private final KSerializer f31075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SerialDescriptor f31028b;
+    private final SerialDescriptor f31076b;
 
     public l1(KSerializer serializer) {
         Intrinsics.checkNotNullParameter(serializer, "serializer");
-        this.f31027a = serializer;
-        this.f31028b = new j2(serializer.getDescriptor());
+        this.f31075a = serializer;
+        this.f31076b = new j2(serializer.getDescriptor());
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
     public Object deserialize(Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         if (decoder.D()) {
-            return decoder.G(this.f31027a);
+            return decoder.G(this.f31075a);
         }
         return decoder.j();
     }
@@ -33,7 +33,7 @@ public final class l1 implements KSerializer {
         if (this == obj) {
             return true;
         }
-        if (obj != null && l1.class == obj.getClass() && Intrinsics.areEqual(this.f31027a, ((l1) obj).f31027a)) {
+        if (obj != null && l1.class == obj.getClass() && Intrinsics.areEqual(this.f31075a, ((l1) obj).f31075a)) {
             return true;
         }
         return false;
@@ -41,11 +41,11 @@ public final class l1 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f31028b;
+        return this.f31076b;
     }
 
     public int hashCode() {
-        return this.f31027a.hashCode();
+        return this.f31075a.hashCode();
     }
 
     @Override // ft.o
@@ -53,7 +53,7 @@ public final class l1 implements KSerializer {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         if (obj != null) {
             encoder.w();
-            encoder.v(this.f31027a, obj);
+            encoder.v(this.f31075a, obj);
             return;
         }
         encoder.n();

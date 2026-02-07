@@ -10,22 +10,22 @@ import zs.o;
 public final class l extends zs.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final bt.f f56541a;
+    private final bt.f f56589a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements b, d, e, o.b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final bt.d f56542a;
+        private final bt.d f56590a;
 
         public a(bt.d actualBuilder) {
             Intrinsics.checkNotNullParameter(actualBuilder, "actualBuilder");
-            this.f56542a = actualBuilder;
+            this.f56590a = actualBuilder;
         }
 
         @Override // zs.b
         public bt.d a() {
-            return this.f56542a;
+            return this.f56590a;
         }
 
         @Override // zs.b
@@ -150,19 +150,19 @@ public final class l extends zs.a {
     public l(bt.f actualFormat) {
         super(null);
         Intrinsics.checkNotNullParameter(actualFormat, "actualFormat");
-        this.f56541a = actualFormat;
+        this.f56589a = actualFormat;
     }
 
     @Override // zs.a
     public bt.f b() {
-        return this.f56541a;
+        return this.f56589a;
     }
 
     @Override // zs.a
     /* renamed from: e */
     public k c() {
         k kVar;
-        kVar = m.f56557b;
+        kVar = m.f56605b;
         return kVar;
     }
 

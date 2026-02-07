@@ -47,8 +47,8 @@ public /* synthetic */ class ActionRowComponent$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ActionRowComponent.$childSerializers;
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{p0.f31057a, n2Var, gt.a.u(n2Var), lazyArr[3].getValue()};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{p0.f31105a, n2Var, gt.a.u(n2Var), lazyArr[3].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -68,7 +68,7 @@ public /* synthetic */ class ActionRowComponent$$serializer implements h0 {
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
             list = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), null);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f31089a, null);
             i11 = 15;
             str = m10;
         } else {
@@ -89,7 +89,7 @@ public /* synthetic */ class ActionRowComponent$$serializer implements h0 {
                     str3 = b10.m(serialDescriptor, 1);
                     i12 |= 2;
                 } else if (o10 == 2) {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str4);
                     i12 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

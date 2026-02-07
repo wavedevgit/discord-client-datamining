@@ -6,17 +6,17 @@ import java.util.Set;
 abstract class k0 implements u1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Set f39926d;
+    private transient Set f39974d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient Map f39927e;
+    private transient Map f39975e;
 
     @Override // ng.u1
     public final Set b() {
-        Set set = this.f39926d;
+        Set set = this.f39974d;
         if (set == null) {
             Set f10 = f();
-            this.f39926d = f10;
+            this.f39974d = f10;
             return f10;
         }
         return set;
@@ -24,10 +24,10 @@ abstract class k0 implements u1 {
 
     @Override // ng.u1
     public final Map d() {
-        Map map = this.f39927e;
+        Map map = this.f39975e;
         if (map == null) {
             Map e10 = e();
-            this.f39927e = e10;
+            this.f39975e = e10;
             return e10;
         }
         return map;

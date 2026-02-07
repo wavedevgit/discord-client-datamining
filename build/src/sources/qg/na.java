@@ -5,7 +5,7 @@ import yi.c;
 final class na implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final na f47410a = new na();
+    static final na f47458a = new na();
 
     static {
         c.b a10 = yi.c.a("detectorMode");

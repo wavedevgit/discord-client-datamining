@@ -12,34 +12,34 @@ import com.google.android.material.card.MaterialCardView;
 public final class v implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f29279a;
+    private final ConstraintLayout f29327a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f29280b;
+    public final TextView f29328b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f29281c;
+    public final ImageView f29329c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f29282d;
+    public final TextView f29330d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f29283e;
+    public final TextView f29331e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final MaterialCardView f29284f;
+    public final MaterialCardView f29332f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final ImageView f29285g;
+    public final ImageView f29333g;
 
     private v(ConstraintLayout constraintLayout, TextView textView, ImageView imageView, TextView textView2, TextView textView3, MaterialCardView materialCardView, ImageView imageView2) {
-        this.f29279a = constraintLayout;
-        this.f29280b = textView;
-        this.f29281c = imageView;
-        this.f29282d = textView2;
-        this.f29283e = textView3;
-        this.f29284f = materialCardView;
-        this.f29285g = imageView2;
+        this.f29327a = constraintLayout;
+        this.f29328b = textView;
+        this.f29329c = imageView;
+        this.f29330d = textView2;
+        this.f29331e = textView3;
+        this.f29332f = materialCardView;
+        this.f29333g = imageView2;
     }
 
     public static v a(View view) {
@@ -86,6 +86,6 @@ public final class v implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f29279a;
+        return this.f29327a;
     }
 }

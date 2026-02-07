@@ -8,28 +8,28 @@ import java.util.Set;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f49966a = new HashMap();
+    private final Map f50014a = new HashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f49967a;
+        private final Class f50015a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final fj.b f49968b;
+        private final fj.b f50016b;
 
         public a(Class cls, fj.b bVar) {
-            this.f49967a = cls;
-            this.f49968b = bVar;
+            this.f50015a = cls;
+            this.f50016b = bVar;
         }
 
         final fj.b a() {
-            return this.f49968b;
+            return this.f50016b;
         }
 
         final Class b() {
-            return this.f49967a;
+            return this.f50015a;
         }
     }
 
@@ -37,7 +37,7 @@ public class c {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             a aVar = (a) it.next();
-            this.f49966a.put(aVar.b(), aVar.a());
+            this.f50014a.put(aVar.b(), aVar.a());
         }
     }
 }

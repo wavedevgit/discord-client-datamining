@@ -18,7 +18,7 @@ public final class AnnotatedStructurableTextSerializer implements KSerializer {
     @NotNull
     public static final AnnotatedStructurableTextSerializer INSTANCE = new AnnotatedStructurableTextSerializer();
     @NotNull
-    private static final SerialDescriptor descriptor = j.b("AnnotatedStructurableText", e.i.f26478a);
+    private static final SerialDescriptor descriptor = j.b("AnnotatedStructurableText", e.i.f26526a);
 
     private AnnotatedStructurableTextSerializer() {
     }

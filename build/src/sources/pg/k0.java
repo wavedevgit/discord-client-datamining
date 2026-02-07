@@ -9,7 +9,7 @@ import java.util.Collection;
 public abstract class k0 extends AbstractCollection implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object[] f44390d = new Object[0];
+    private static final Object[] f44438d = new Object[0];
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean add(Object obj) {
@@ -63,7 +63,7 @@ public abstract class k0 extends AbstractCollection implements Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final Object[] toArray() {
-        return toArray(f44390d);
+        return toArray(f44438d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection

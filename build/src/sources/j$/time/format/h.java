@@ -5,69 +5,69 @@ import j$.time.DateTimeException;
 public final class h implements e {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final long[] f29446f = {0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000L};
+    public static final long[] f29494f = {0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000L};
 
     /* renamed from: a  reason: collision with root package name */
-    public final j$.time.temporal.n f29447a;
+    public final j$.time.temporal.n f29495a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f29448b;
+    public final int f29496b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f29449c;
+    public final int f29497c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final w f29450d;
+    public final w f29498d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f29451e;
+    public final int f29499e;
 
     public h(j$.time.temporal.n nVar, int i10, int i11, w wVar) {
-        this.f29447a = nVar;
-        this.f29448b = i10;
-        this.f29449c = i11;
-        this.f29450d = wVar;
-        this.f29451e = 0;
+        this.f29495a = nVar;
+        this.f29496b = i10;
+        this.f29497c = i11;
+        this.f29498d = wVar;
+        this.f29499e = 0;
     }
 
     public h(j$.time.temporal.n nVar, int i10, int i11, w wVar, int i12) {
-        this.f29447a = nVar;
-        this.f29448b = i10;
-        this.f29449c = i11;
-        this.f29450d = wVar;
-        this.f29451e = i12;
+        this.f29495a = nVar;
+        this.f29496b = i10;
+        this.f29497c = i11;
+        this.f29498d = wVar;
+        this.f29499e = i12;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
-        j$.time.temporal.n nVar = this.f29447a;
+        j$.time.temporal.n nVar = this.f29495a;
         Long a10 = qVar.a(nVar);
         if (a10 == null) {
             return false;
         }
         long longValue = a10.longValue();
-        t tVar = qVar.f29477b.f29425c;
+        t tVar = qVar.f29525b.f29473c;
         String l10 = longValue == Long.MIN_VALUE ? "9223372036854775808" : Long.toString(Math.abs(longValue));
         int length = l10.length();
-        int i10 = this.f29449c;
+        int i10 = this.f29497c;
         if (length > i10) {
             throw new DateTimeException("Field " + nVar + " cannot be printed as the value " + longValue + " exceeds the maximum print width of " + i10);
         }
         tVar.getClass();
         int i11 = (longValue > 0L ? 1 : (longValue == 0L ? 0 : -1));
-        int i12 = this.f29448b;
-        w wVar = this.f29450d;
+        int i12 = this.f29496b;
+        w wVar = this.f29498d;
         if (i11 >= 0) {
-            int i13 = b.f29436a[wVar.ordinal()];
+            int i13 = b.f29484a[wVar.ordinal()];
             if (i13 != 1) {
                 if (i13 == 2) {
                     sb2.append('+');
                 }
-            } else if (i12 < 19 && longValue >= f29446f[i12]) {
+            } else if (i12 < 19 && longValue >= f29494f[i12]) {
                 sb2.append('+');
             }
         } else {
-            int i14 = b.f29436a[wVar.ordinal()];
+            int i14 = b.f29484a[wVar.ordinal()];
             if (i14 == 1 || i14 == 2 || i14 == 3) {
                 sb2.append('-');
             } else if (i14 == 4) {
@@ -99,10 +99,10 @@ public final class h implements e {
     }
 
     public final String toString() {
-        j$.time.temporal.n nVar = this.f29447a;
-        w wVar = this.f29450d;
-        int i10 = this.f29449c;
-        int i11 = this.f29448b;
+        j$.time.temporal.n nVar = this.f29495a;
+        w wVar = this.f29498d;
+        int i10 = this.f29497c;
+        int i11 = this.f29496b;
         if (i11 == 1 && i10 == 19 && wVar == w.NORMAL) {
             return "Value(" + nVar + ")";
         } else if (i11 == i10 && wVar == w.NOT_NEGATIVE) {

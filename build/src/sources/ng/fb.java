@@ -5,7 +5,7 @@ import yi.c;
 final class fb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fb f39806a = new fb();
+    static final fb f39854a = new fb();
 
     static {
         c.b a10 = yi.c.a("confidence");

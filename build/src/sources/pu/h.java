@@ -12,90 +12,90 @@ import okio.ByteString;
 public final class h implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f45735d;
+    private final boolean f45783d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final BufferedSink f45736e;
+    private final BufferedSink f45784e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Random f45737i;
+    private final Random f45785i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f45738o;
+    private final boolean f45786o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f45739p;
+    private final boolean f45787p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f45740q;
+    private final long f45788q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Buffer f45741r;
+    private final Buffer f45789r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Buffer f45742s;
+    private final Buffer f45790s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f45743t;
+    private boolean f45791t;
 
     /* renamed from: u  reason: collision with root package name */
-    private a f45744u;
+    private a f45792u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final byte[] f45745v;
+    private final byte[] f45793v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Buffer.a f45746w;
+    private final Buffer.a f45794w;
 
     public h(boolean z10, BufferedSink sink, Random random, boolean z11, boolean z12, long j10) {
         byte[] bArr;
         Intrinsics.checkNotNullParameter(sink, "sink");
         Intrinsics.checkNotNullParameter(random, "random");
-        this.f45735d = z10;
-        this.f45736e = sink;
-        this.f45737i = random;
-        this.f45738o = z11;
-        this.f45739p = z12;
-        this.f45740q = j10;
-        this.f45741r = new Buffer();
-        this.f45742s = sink.e();
+        this.f45783d = z10;
+        this.f45784e = sink;
+        this.f45785i = random;
+        this.f45786o = z11;
+        this.f45787p = z12;
+        this.f45788q = j10;
+        this.f45789r = new Buffer();
+        this.f45790s = sink.e();
         if (z10) {
             bArr = new byte[4];
         } else {
             bArr = null;
         }
-        this.f45745v = bArr;
-        this.f45746w = z10 ? new Buffer.a() : null;
+        this.f45793v = bArr;
+        this.f45794w = z10 ? new Buffer.a() : null;
     }
 
     private final void g(int i10, ByteString byteString) {
-        if (!this.f45743t) {
+        if (!this.f45791t) {
             int G = byteString.G();
             if (G <= 125) {
-                this.f45742s.writeByte(i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                if (this.f45735d) {
-                    this.f45742s.writeByte(G | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
-                    Random random = this.f45737i;
-                    byte[] bArr = this.f45745v;
+                this.f45790s.writeByte(i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                if (this.f45783d) {
+                    this.f45790s.writeByte(G | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                    Random random = this.f45785i;
+                    byte[] bArr = this.f45793v;
                     Intrinsics.checkNotNull(bArr);
                     random.nextBytes(bArr);
-                    this.f45742s.write(this.f45745v);
+                    this.f45790s.write(this.f45793v);
                     if (G > 0) {
-                        long size = this.f45742s.size();
-                        this.f45742s.Z1(byteString);
-                        Buffer buffer = this.f45742s;
-                        Buffer.a aVar = this.f45746w;
+                        long size = this.f45790s.size();
+                        this.f45790s.Z1(byteString);
+                        Buffer buffer = this.f45790s;
+                        Buffer.a aVar = this.f45794w;
                         Intrinsics.checkNotNull(aVar);
                         buffer.L0(aVar);
-                        this.f45746w.m(size);
-                        f.f45719a.b(this.f45746w, this.f45745v);
-                        this.f45746w.close();
+                        this.f45794w.m(size);
+                        f.f45767a.b(this.f45794w, this.f45793v);
+                        this.f45794w.close();
                     }
                 } else {
-                    this.f45742s.writeByte(G);
-                    this.f45742s.Z1(byteString);
+                    this.f45790s.writeByte(G);
+                    this.f45790s.Z1(byteString);
                 }
-                this.f45736e.flush();
+                this.f45784e.flush();
                 return;
             }
             throw new IllegalArgumentException("Payload size must be less than or equal to 125");
@@ -104,10 +104,10 @@ public final class h implements Closeable {
     }
 
     public final void a(int i10, ByteString byteString) {
-        ByteString byteString2 = ByteString.f43167p;
+        ByteString byteString2 = ByteString.f43215p;
         if (i10 != 0 || byteString != null) {
             if (i10 != 0) {
-                f.f45719a.c(i10);
+                f.f45767a.c(i10);
             }
             Buffer buffer = new Buffer();
             buffer.writeShort(i10);
@@ -119,13 +119,13 @@ public final class h implements Closeable {
         try {
             g(8, byteString2);
         } finally {
-            this.f45743t = true;
+            this.f45791t = true;
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        a aVar = this.f45744u;
+        a aVar = this.f45792u;
         if (aVar != null) {
             aVar.close();
         }
@@ -134,52 +134,52 @@ public final class h implements Closeable {
     public final void k(int i10, ByteString data) {
         int i11;
         Intrinsics.checkNotNullParameter(data, "data");
-        if (!this.f45743t) {
-            this.f45741r.Z1(data);
+        if (!this.f45791t) {
+            this.f45789r.Z1(data);
             int i12 = i10 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-            if (this.f45738o && data.G() >= this.f45740q) {
-                a aVar = this.f45744u;
+            if (this.f45786o && data.G() >= this.f45788q) {
+                a aVar = this.f45792u;
                 if (aVar == null) {
-                    aVar = new a(this.f45739p);
-                    this.f45744u = aVar;
+                    aVar = new a(this.f45787p);
+                    this.f45792u = aVar;
                 }
-                aVar.a(this.f45741r);
+                aVar.a(this.f45789r);
                 i12 = i10 | 192;
             }
-            long size = this.f45741r.size();
-            this.f45742s.writeByte(i12);
-            if (this.f45735d) {
+            long size = this.f45789r.size();
+            this.f45790s.writeByte(i12);
+            if (this.f45783d) {
                 i11 = IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
             } else {
                 i11 = 0;
             }
             if (size <= 125) {
-                this.f45742s.writeByte(i11 | ((int) size));
+                this.f45790s.writeByte(i11 | ((int) size));
             } else if (size <= 65535) {
-                this.f45742s.writeByte(i11 | 126);
-                this.f45742s.writeShort((int) size);
+                this.f45790s.writeByte(i11 | 126);
+                this.f45790s.writeShort((int) size);
             } else {
-                this.f45742s.writeByte(i11 | 127);
-                this.f45742s.b2(size);
+                this.f45790s.writeByte(i11 | 127);
+                this.f45790s.b2(size);
             }
-            if (this.f45735d) {
-                Random random = this.f45737i;
-                byte[] bArr = this.f45745v;
+            if (this.f45783d) {
+                Random random = this.f45785i;
+                byte[] bArr = this.f45793v;
                 Intrinsics.checkNotNull(bArr);
                 random.nextBytes(bArr);
-                this.f45742s.write(this.f45745v);
+                this.f45790s.write(this.f45793v);
                 if (size > 0) {
-                    Buffer buffer = this.f45741r;
-                    Buffer.a aVar2 = this.f45746w;
+                    Buffer buffer = this.f45789r;
+                    Buffer.a aVar2 = this.f45794w;
                     Intrinsics.checkNotNull(aVar2);
                     buffer.L0(aVar2);
-                    this.f45746w.m(0L);
-                    f.f45719a.b(this.f45746w, this.f45745v);
-                    this.f45746w.close();
+                    this.f45794w.m(0L);
+                    f.f45767a.b(this.f45794w, this.f45793v);
+                    this.f45794w.close();
                 }
             }
-            this.f45742s.w0(this.f45741r, size);
-            this.f45736e.R();
+            this.f45790s.w0(this.f45789r, size);
+            this.f45784e.R();
             return;
         }
         throw new IOException("closed");

@@ -5,44 +5,44 @@ import yi.c;
 final class j7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j7 f44371a = new j7();
+    static final j7 f44419a = new j7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44372b;
+    private static final yi.c f44420b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44373c;
+    private static final yi.c f44421c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44374d;
+    private static final yi.c f44422d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44375e;
+    private static final yi.c f44423e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f44376f;
+    private static final yi.c f44424f;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44372b = a10.b(s1Var.b()).a();
+        f44420b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("smartReplies");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44373c = a11.b(s1Var2.b()).a();
+        f44421c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("resultStatus");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44374d = a12.b(s1Var3.b()).a();
+        f44422d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("suggestionsCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44375e = a13.b(s1Var4.b()).a();
+        f44423e = a13.b(s1Var4.b()).a();
         c.b a14 = yi.c.a("blacklistErrorCode");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44376f = a14.b(s1Var5.b()).a();
+        f44424f = a14.b(s1Var5.b()).a();
     }
 
     private j7() {

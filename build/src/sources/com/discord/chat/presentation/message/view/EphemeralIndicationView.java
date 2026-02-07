@@ -57,7 +57,7 @@ public final class EphemeralIndicationView extends ConstraintLayout {
     public static final Unit setEphemeralIndication_AFFcxXc$lambda$7$lambda$5(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(str), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* renamed from: setEphemeralIndication-AFFcxXc  reason: not valid java name */

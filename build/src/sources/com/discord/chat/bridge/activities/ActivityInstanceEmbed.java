@@ -36,7 +36,7 @@ public final class ActivityInstanceEmbed {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, l.b(o.f48044e, new Function0() { // from class: k6.a
+    private static final Lazy[] $childSerializers = {null, null, l.b(o.f48092e, new Function0() { // from class: k6.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -67,7 +67,7 @@ public final class ActivityInstanceEmbed {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f31041a);
+        return new f(n2.f31089a);
     }
 
     /* renamed from: copy-Nxq1Yvc$default  reason: not valid java name */
@@ -104,7 +104,7 @@ public final class ActivityInstanceEmbed {
         }
         compositeEncoder.s(serialDescriptor, 3, AppMessageEmbedImpl$$serializer.INSTANCE, activityInstanceEmbed.appMessageEmbedModel);
         if (compositeEncoder.A(serialDescriptor, 4) || activityInstanceEmbed.participantsDescription != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, activityInstanceEmbed.participantsDescription);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, activityInstanceEmbed.participantsDescription);
         }
     }
 

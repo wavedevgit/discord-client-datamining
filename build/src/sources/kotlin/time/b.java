@@ -80,7 +80,7 @@ public abstract class b {
         boolean z11;
         int length = str.length();
         if (length != 0) {
-            Duration.a aVar = Duration.f35007e;
+            Duration.a aVar = Duration.f35055e;
             long c10 = aVar.c();
             char charAt3 = str.charAt(0);
             int i12 = (charAt3 == '+' || charAt3 == '-') ? 1 : 0;
@@ -131,7 +131,7 @@ public abstract class b {
                                         throw new IllegalArgumentException("Unexpected order of duration components");
                                     }
                                     int h02 = StringsKt.h0(substring, '.', 0, false, 6, null);
-                                    if (d10 == ms.b.f38284p && h02 > 0) {
+                                    if (d10 == ms.b.f38332p && h02 > 0) {
                                         Intrinsics.checkNotNull(substring, "null cannot be cast to non-null type java.lang.String");
                                         String substring2 = substring.substring(0, h02);
                                         Intrinsics.checkNotNullExpressionValue(substring2, "substring(...)");
@@ -280,32 +280,32 @@ public abstract class b {
 
     public static final long r(double d10, ms.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        double a10 = c.a(d10, unit, ms.b.f38281e);
+        double a10 = c.a(d10, unit, ms.b.f38329e);
         if (!Double.isNaN(a10)) {
             long d11 = fs.a.d(a10);
             if (-4611686018426999999L <= d11 && d11 < 4611686018427000000L) {
                 return l(d11);
             }
-            return k(fs.a.d(c.a(d10, unit, ms.b.f38283o)));
+            return k(fs.a.d(c.a(d10, unit, ms.b.f38331o)));
         }
         throw new IllegalArgumentException("Duration value cannot be NaN.");
     }
 
     public static final long s(int i10, ms.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        if (unit.compareTo(ms.b.f38284p) <= 0) {
-            return l(c.c(i10, unit, ms.b.f38281e));
+        if (unit.compareTo(ms.b.f38332p) <= 0) {
+            return l(c.c(i10, unit, ms.b.f38329e));
         }
         return t(i10, unit);
     }
 
     public static final long t(long j10, ms.b unit) {
         Intrinsics.checkNotNullParameter(unit, "unit");
-        ms.b bVar = ms.b.f38281e;
+        ms.b bVar = ms.b.f38329e;
         long c10 = c.c(4611686018426999999L, bVar, unit);
         if ((-c10) <= j10 && j10 <= c10) {
             return l(c.c(j10, unit, bVar));
         }
-        return j(kotlin.ranges.d.o(c.b(j10, unit, ms.b.f38283o), -4611686018427387903L, 4611686018427387903L));
+        return j(kotlin.ranges.d.o(c.b(j10, unit, ms.b.f38331o), -4611686018427387903L, 4611686018427387903L));
     }
 }

@@ -37,7 +37,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
+    private static final Lazy[] $childSerializers = {null, null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -162,7 +162,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.String r4 = r7.getErrorText()
             if (r4 == 0) goto L29
         L20:
-            jt.n2 r4 = jt.n2.f31041a
+            jt.n2 r4 = jt.n2.f31089a
             java.lang.String r5 = r7.getErrorText()
             r8.l(r9, r1, r4, r5)
         L29:
@@ -180,14 +180,14 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r1 = r7.accentColor
             if (r1 == 0) goto L4a
         L43:
-            jt.p0 r1 = jt.p0.f31057a
+            jt.p0 r1 = jt.p0.f31105a
             java.lang.Integer r4 = r7.accentColor
             r8.l(r9, r0, r1, r4)
         L4a:
             r0 = 5
             boolean r1 = r7.isSpoiler
             r8.y(r9, r0, r1)
-            jt.n2 r0 = jt.n2.f31041a
+            jt.n2 r0 = jt.n2.f31089a
             java.lang.String r1 = r7.spoilerDescription
             r4 = 6
             r8.l(r9, r4, r0, r1)
@@ -199,7 +199,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r4 = r7.themedBackgroundColor
             if (r4 == 0) goto L6b
         L64:
-            jt.p0 r4 = jt.p0.f31057a
+            jt.p0 r4 = jt.p0.f31105a
             java.lang.Integer r5 = r7.themedBackgroundColor
             r8.l(r9, r1, r4, r5)
         L6b:
@@ -235,7 +235,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Void r1 = r7.m265getObscureOrNull()
             if (r1 == 0) goto Lac
         La3:
-            jt.k1 r1 = jt.k1.f31024a
+            jt.k1 r1 = jt.k1.f31072a
             java.lang.Void r7 = r7.m265getObscureOrNull()
             r8.l(r9, r0, r1, r7)
         Lac:

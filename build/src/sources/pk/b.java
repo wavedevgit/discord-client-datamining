@@ -5,14 +5,14 @@ import pk.e;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f45028a;
+    private final int f45076a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f45029b;
+    private final byte[] f45077b;
 
     private b(int i10, byte[] bArr) {
-        this.f45028a = i10;
-        this.f45029b = bArr;
+        this.f45076a = i10;
+        this.f45077b = bArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -37,13 +37,13 @@ final class b {
                 i13++;
             }
         }
-        int length = bVarArr[0].f45029b.length - d10.b();
+        int length = bVarArr[0].f45077b.length - d10.b();
         int i15 = length - 1;
         int i16 = 0;
         for (int i17 = 0; i17 < i15; i17++) {
             int i18 = 0;
             while (i18 < i13) {
-                bVarArr[i18].f45029b[i17] = bArr[i16];
+                bVarArr[i18].f45077b[i17] = bArr[i16];
                 i18++;
                 i16++;
             }
@@ -60,11 +60,11 @@ final class b {
         }
         int i19 = 0;
         while (i19 < i10) {
-            bVarArr[i19].f45029b[i15] = bArr[i16];
+            bVarArr[i19].f45077b[i15] = bArr[i16];
             i19++;
             i16++;
         }
-        int length2 = bVarArr[0].f45029b.length;
+        int length2 = bVarArr[0].f45077b.length;
         while (length < length2) {
             int i20 = 0;
             while (i20 < i13) {
@@ -73,7 +73,7 @@ final class b {
                 } else {
                     i11 = i20;
                 }
-                bVarArr[i11].f45029b[(z10 && i11 > 7) ? length - 1 : length] = bArr[i16];
+                bVarArr[i11].f45077b[(z10 && i11 > 7) ? length - 1 : length] = bArr[i16];
                 i20++;
                 i16++;
             }
@@ -87,11 +87,11 @@ final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte[] a() {
-        return this.f45029b;
+        return this.f45077b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f45028a;
+        return this.f45076a;
     }
 }

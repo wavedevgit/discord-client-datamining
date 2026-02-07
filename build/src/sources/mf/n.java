@@ -11,24 +11,24 @@ import java.util.Arrays;
 public final class n extends ef.d implements lf.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f37092k;
+    private static final a.g f37140k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final a.AbstractC0286a f37093l;
+    private static final a.AbstractC0286a f37141l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ef.a f37094m;
+    private static final ef.a f37142m;
 
     static {
         a.g gVar = new a.g();
-        f37092k = gVar;
+        f37140k = gVar;
         k kVar = new k();
-        f37093l = kVar;
-        f37094m = new ef.a("ModuleInstall.API", kVar, gVar);
+        f37141l = kVar;
+        f37142m = new ef.a("ModuleInstall.API", kVar, gVar);
     }
 
     public n(Context context) {
-        super(context, f37094m, a.d.f21490c, d.a.f21502c);
+        super(context, f37142m, a.d.f21490c, d.a.f21502c);
     }
 
     static final a C(boolean z10, ef.f... fVarArr) {

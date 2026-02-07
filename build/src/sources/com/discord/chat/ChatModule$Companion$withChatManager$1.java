@@ -51,11 +51,11 @@ final class ChatModule$Companion$withChatManager$1 extends k implements Function
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatModule$Companion$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ChatModule$Companion$withChatManager$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

@@ -65,7 +65,7 @@ public final class TapTagData implements ReactEvent {
     public static final /* synthetic */ void write$Self$chat_release(TapTagData tapTagData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.s(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(tapTagData.messageId));
         compositeEncoder.s(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(tapTagData.channelId));
-        compositeEncoder.l(serialDescriptor, 2, n2.f31041a, tapTagData.tagType);
+        compositeEncoder.l(serialDescriptor, 2, n2.f31089a, tapTagData.tagType);
     }
 
     @NotNull

@@ -47,7 +47,7 @@ public final class x extends tc.a {
             if (j12 != -9223372036854775807L) {
                 return a.e.f(j12, j11 + i10);
             }
-            return a.e.f50471d;
+            return a.e.f50519d;
         }
 
         private static void d(ne.h0 h0Var) {
@@ -98,7 +98,7 @@ public final class x extends tc.a {
 
         @Override // tc.a.f
         public void b() {
-            this.f20700b.R(w0.f39017f);
+            this.f20700b.R(w0.f39065f);
         }
 
         private b(s0 s0Var) {

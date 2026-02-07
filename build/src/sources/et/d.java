@@ -23,7 +23,7 @@ public final class d implements KSerializer {
     public static final d f22113a = new d();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f22114b = l.b(o.f48044e, a.f22115d);
+    private static final Lazy f22114b = l.b(o.f48092e, a.f22115d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
@@ -45,13 +45,13 @@ public final class d implements KSerializer {
 
             public final void a(ht.a buildClassSerialDescriptor) {
                 Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-                buildClassSerialDescriptor.a("days", p0.f31057a.getDescriptor(), CollectionsKt.l(), false);
+                buildClassSerialDescriptor.a("days", p0.f31105a.getDescriptor(), CollectionsKt.l(), false);
             }
 
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((ht.a) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -99,7 +99,7 @@ public final class d implements KSerializer {
                 }
             }
         }
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         b10.c(descriptor);
         if (z10) {
             return new c.C0757c(i10);

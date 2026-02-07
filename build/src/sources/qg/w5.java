@@ -5,7 +5,7 @@ import yi.c;
 final class w5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w5 f47617a = new w5();
+    static final w5 f47665a = new w5();
 
     static {
         c.b a10 = yi.c.a("cameraSource");

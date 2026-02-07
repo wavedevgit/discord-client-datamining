@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function3 f48012a;
+    private final Function3 f48060a;
 
     public a(Function3 block) {
         Intrinsics.checkNotNullParameter(block, "block");
-        this.f48012a = block;
+        this.f48060a = block;
     }
 
     public final Function3 a() {
-        return this.f48012a;
+        return this.f48060a;
     }
 }

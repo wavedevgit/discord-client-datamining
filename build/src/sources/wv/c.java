@@ -10,14 +10,14 @@ import vv.h;
 final class c implements h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f54136b = ByteString.f("EFBBBF");
+    private static final ByteString f54184b = ByteString.f("EFBBBF");
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f54137a;
+    private final com.squareup.moshi.h f54185a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(com.squareup.moshi.h hVar) {
-        this.f54137a = hVar;
+        this.f54185a = hVar;
     }
 
     @Override // vv.h
@@ -25,12 +25,12 @@ final class c implements h {
     public Object a(ResponseBody responseBody) {
         BufferedSource source = responseBody.source();
         try {
-            ByteString byteString = f54136b;
+            ByteString byteString = f54184b;
             if (source.s0(0L, byteString)) {
                 source.skip(byteString.G());
             }
             m p10 = m.p(source);
-            Object fromJson = this.f54137a.fromJson(p10);
+            Object fromJson = this.f54185a.fromJson(p10);
             if (p10.s() == m.c.END_DOCUMENT) {
                 responseBody.close();
                 return fromJson;

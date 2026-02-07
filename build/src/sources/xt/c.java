@@ -12,17 +12,17 @@ import st.v;
 public final class c implements u, ut.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f54795a;
+    private static final Set f54843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f54796b;
+    private static final Set f54844b;
 
     static {
         String[] split = e.h("calendar/names/iso8601/iso8601", Locale.ROOT).f("languages").split(" ");
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, split);
         Set<String> unmodifiableSet = Collections.unmodifiableSet(hashSet);
-        f54795a = unmodifiableSet;
+        f54843a = unmodifiableSet;
         HashSet hashSet2 = new HashSet();
         for (String str : unmodifiableSet) {
             hashSet2.add(new Locale(str));
@@ -30,7 +30,7 @@ public final class c implements u, ut.c {
         for (d dVar : d.values()) {
             hashSet2.add(new Locale(dVar.name()));
         }
-        f54796b = Collections.unmodifiableSet(hashSet2);
+        f54844b = Collections.unmodifiableSet(hashSet2);
     }
 
     private static String[] l(Locale locale, v vVar) {
@@ -265,7 +265,7 @@ public final class c implements u, ut.c {
 
     @Override // st.u
     public boolean e(Locale locale) {
-        return f54795a.contains(d.a(locale));
+        return f54843a.contains(d.a(locale));
     }
 
     @Override // st.u

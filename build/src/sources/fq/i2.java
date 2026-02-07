@@ -88,23 +88,23 @@ public abstract class i2 {
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(textController, "textController");
         final iq.o c10 = iq.o.c(uiComponentHelper.b());
-        TextInputEditText editText = c10.f29256b;
+        TextInputEditText editText = c10.f29304b;
         Intrinsics.checkNotNullExpressionValue(editText, "editText");
         dn.u.b(textController, editText);
         InputText.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f29257c.setHint(label);
+                c10.f29305c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f29257c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f29257c;
+                c10.f29305c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f29305c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 bq.o.a(inputLayout);
             }
-            c10.f29256b.setInputType(e(attributes.getInputType()));
+            c10.f29304b.setInputType(e(attributes.getInputType()));
             if (Build.VERSION.SDK_INT >= 26) {
                 InputText.AutofillHint autofillHint = attributes.getAutofillHint();
                 if (autofillHint != null) {
@@ -112,7 +112,7 @@ public abstract class i2 {
                 } else {
                     str = null;
                 }
-                c10.f29257c.setAutofillHints(new String[]{str});
+                c10.f29305c.setAutofillHints(new String[]{str});
             }
         }
         uiComponentHelper.d(new Function0() { // from class: fq.h2
@@ -138,11 +138,11 @@ public abstract class i2 {
     public static final Unit d(InputText inputText, iq.o oVar) {
         InputTextBasedComponentStyle styles = inputText.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = oVar.f29257c;
+            TextInputLayout inputLayout = oVar.f29305c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             kq.a0.k(inputLayout, styles);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final int e(InputText.InputType inputType) {

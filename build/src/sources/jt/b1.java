@@ -12,21 +12,21 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class b1 extends s0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f30970c;
+    private final SerialDescriptor f31018c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Map.Entry, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f30971d;
+        private final Object f31019d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Object f30972e;
+        private final Object f31020e;
 
         public a(Object obj, Object obj2) {
-            this.f30971d = obj;
-            this.f30972e = obj2;
+            this.f31019d = obj;
+            this.f31020e = obj2;
         }
 
         @Override // java.util.Map.Entry
@@ -38,7 +38,7 @@ public final class b1 extends s0 {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f30971d, aVar.f30971d) && Intrinsics.areEqual(this.f30972e, aVar.f30972e)) {
+            if (Intrinsics.areEqual(this.f31019d, aVar.f31019d) && Intrinsics.areEqual(this.f31020e, aVar.f31020e)) {
                 return true;
             }
             return false;
@@ -46,18 +46,18 @@ public final class b1 extends s0 {
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            return this.f30971d;
+            return this.f31019d;
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            return this.f30972e;
+            return this.f31020e;
         }
 
         @Override // java.util.Map.Entry
         public int hashCode() {
             int hashCode;
-            Object obj = this.f30971d;
+            Object obj = this.f31019d;
             int i10 = 0;
             if (obj == null) {
                 hashCode = 0;
@@ -65,7 +65,7 @@ public final class b1 extends s0 {
                 hashCode = obj.hashCode();
             }
             int i11 = hashCode * 31;
-            Object obj2 = this.f30972e;
+            Object obj2 = this.f31020e;
             if (obj2 != null) {
                 i10 = obj2.hashCode();
             }
@@ -78,7 +78,7 @@ public final class b1 extends s0 {
         }
 
         public String toString() {
-            return "MapEntry(key=" + this.f30971d + ", value=" + this.f30972e + ')';
+            return "MapEntry(key=" + this.f31019d + ", value=" + this.f31020e + ')';
         }
     }
 
@@ -87,7 +87,7 @@ public final class b1 extends s0 {
         super(keySerializer, valueSerializer, null);
         Intrinsics.checkNotNullParameter(keySerializer, "keySerializer");
         Intrinsics.checkNotNullParameter(valueSerializer, "valueSerializer");
-        this.f30970c = ht.j.d("kotlin.collections.Map.Entry", l.c.f26491a, new SerialDescriptor[0], new Function1() { // from class: jt.a1
+        this.f31018c = ht.j.d("kotlin.collections.Map.Entry", l.c.f26539a, new SerialDescriptor[0], new Function1() { // from class: jt.a1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit g10;
@@ -102,12 +102,12 @@ public final class b1 extends s0 {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
         ht.a.b(buildSerialDescriptor, "key", kSerializer.getDescriptor(), null, false, 12, null);
         ht.a.b(buildSerialDescriptor, "value", kSerializer2.getDescriptor(), null, false, 12, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f30970c;
+        return this.f31018c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

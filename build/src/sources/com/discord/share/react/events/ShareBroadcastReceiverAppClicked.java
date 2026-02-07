@@ -61,7 +61,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$share_release(ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.z(serialDescriptor, 0, shareBroadcastReceiverAppClicked.f9697app);
-        compositeEncoder.l(serialDescriptor, 1, n2.f31041a, shareBroadcastReceiverAppClicked.location);
+        compositeEncoder.l(serialDescriptor, 1, n2.f31089a, shareBroadcastReceiverAppClicked.location);
     }
 
     @NotNull

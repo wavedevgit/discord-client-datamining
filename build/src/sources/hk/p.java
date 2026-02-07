@@ -3,24 +3,24 @@ package hk;
 public class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f26128a;
+    private final float f26176a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f26129b;
+    private final float f26177b;
 
     public p(float f10, float f11) {
-        this.f26128a = f10;
-        this.f26129b = f11;
+        this.f26176a = f10;
+        this.f26177b = f11;
     }
 
     private static float a(p pVar, p pVar2, p pVar3) {
-        float f10 = pVar2.f26128a;
-        float f11 = pVar2.f26129b;
-        return ((pVar3.f26128a - f10) * (pVar.f26129b - f11)) - ((pVar3.f26129b - f11) * (pVar.f26128a - f10));
+        float f10 = pVar2.f26176a;
+        float f11 = pVar2.f26177b;
+        return ((pVar3.f26176a - f10) * (pVar.f26177b - f11)) - ((pVar3.f26177b - f11) * (pVar.f26176a - f10));
     }
 
     public static float b(p pVar, p pVar2) {
-        return mk.a.a(pVar.f26128a, pVar.f26129b, pVar2.f26128a, pVar2.f26129b);
+        return mk.a.a(pVar.f26176a, pVar.f26177b, pVar2.f26176a, pVar2.f26177b);
     }
 
     public static void e(p[] pVarArr) {
@@ -54,17 +54,17 @@ public class p {
     }
 
     public final float c() {
-        return this.f26128a;
+        return this.f26176a;
     }
 
     public final float d() {
-        return this.f26129b;
+        return this.f26177b;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof p) {
             p pVar = (p) obj;
-            if (this.f26128a == pVar.f26128a && this.f26129b == pVar.f26129b) {
+            if (this.f26176a == pVar.f26176a && this.f26177b == pVar.f26177b) {
                 return true;
             }
         }
@@ -72,10 +72,10 @@ public class p {
     }
 
     public final int hashCode() {
-        return (Float.floatToIntBits(this.f26128a) * 31) + Float.floatToIntBits(this.f26129b);
+        return (Float.floatToIntBits(this.f26176a) * 31) + Float.floatToIntBits(this.f26177b);
     }
 
     public final String toString() {
-        return "(" + this.f26128a + ',' + this.f26129b + ')';
+        return "(" + this.f26176a + ',' + this.f26177b + ')';
     }
 }

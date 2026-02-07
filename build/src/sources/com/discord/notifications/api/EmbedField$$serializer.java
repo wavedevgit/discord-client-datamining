@@ -40,7 +40,7 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{a.u(n2Var), a.u(n2Var)};
     }
 
@@ -54,7 +54,7 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             str2 = (String) b10.n(serialDescriptor, 0, n2Var, null);
             str = (String) b10.n(serialDescriptor, 1, n2Var, null);
             i10 = 3;
@@ -68,12 +68,12 @@ public /* synthetic */ class EmbedField$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str3 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str3);
                     i11 |= 1;
                 } else if (o10 != 1) {
                     throw new b0(o10);
                 } else {
-                    str = (String) b10.n(serialDescriptor, 1, n2.f31041a, str);
+                    str = (String) b10.n(serialDescriptor, 1, n2.f31089a, str);
                     i11 |= 2;
                 }
             }

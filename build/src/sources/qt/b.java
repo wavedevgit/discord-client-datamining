@@ -11,38 +11,38 @@ public enum b {
     
 
     /* renamed from: p  reason: collision with root package name */
-    private static final int[] f48149p = {485, 203, 199, 182, 156, 136, 77, 74, 70, 58, 52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12, 9, 8};
+    private static final int[] f48197p = {485, 203, 199, 182, 156, 136, 77, 74, 70, 58, 52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12, 9, 8};
 
     /* renamed from: q  reason: collision with root package name */
-    private static final double[] f48150q = {324.96d, 337.23d, 342.08d, 27.85d, 73.14d, 171.52d, 222.54d, 296.72d, 243.58d, 119.81d, 297.17d, 21.02d, 247.54d, 325.15d, 60.93d, 155.12d, 288.79d, 198.04d, 199.76d, 95.39d, 287.11d, 320.81d, 227.73d, 15.45d};
+    private static final double[] f48198q = {324.96d, 337.23d, 342.08d, 27.85d, 73.14d, 171.52d, 222.54d, 296.72d, 243.58d, 119.81d, 297.17d, 21.02d, 247.54d, 325.15d, 60.93d, 155.12d, 288.79d, 198.04d, 199.76d, 95.39d, 287.11d, 320.81d, 227.73d, 15.45d};
 
     /* renamed from: r  reason: collision with root package name */
-    private static final double[] f48151r = {1934.136d, 32964.467d, 20.186d, 445267.112d, 45036.886d, 22518.443d, 65928.934d, 3034.906d, 9037.513d, 33718.147d, 150.678d, 2281.226d, 29929.562d, 31555.956d, 4443.417d, 67555.328d, 4562.452d, 62894.029d, 31436.921d, 14577.848d, 31931.756d, 34777.259d, 1222.114d, 16859.074d};
+    private static final double[] f48199r = {1934.136d, 32964.467d, 20.186d, 445267.112d, 45036.886d, 22518.443d, 65928.934d, 3034.906d, 9037.513d, 33718.147d, 150.678d, 2281.226d, 29929.562d, 31555.956d, 4443.417d, 67555.328d, 4562.452d, 62894.029d, 31436.921d, 14577.848d, 31931.756d, 34777.259d, 1222.114d, 16859.074d};
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f48153a;
+        static final /* synthetic */ int[] f48201a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f48153a = iArr;
+            f48201a = iArr;
             try {
                 iArr[b.VERNAL_EQUINOX.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f48153a[b.SUMMER_SOLSTICE.ordinal()] = 2;
+                f48201a[b.SUMMER_SOLSTICE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f48153a[b.AUTUMNAL_EQUINOX.ordinal()] = 3;
+                f48201a[b.AUTUMNAL_EQUINOX.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f48153a[b.WINTER_SOLSTICE.ordinal()] = 4;
+                f48201a[b.WINTER_SOLSTICE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -73,7 +73,7 @@ public enum b {
         double d13;
         if (i10 < 1000) {
             double d14 = i10 / 1000.0d;
-            int i11 = a.f48153a[ordinal()];
+            int i11 = a.f48201a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
@@ -98,7 +98,7 @@ public enum b {
             return d10 + d11;
         }
         double d15 = (i10 - 2000) / 1000.0d;
-        int i12 = a.f48153a[ordinal()];
+        int i12 = a.f48201a[ordinal()];
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 != 3) {
@@ -126,7 +126,7 @@ public enum b {
     private static double h(double d10) {
         double d11 = 0.0d;
         for (int i10 = 0; i10 < 24; i10++) {
-            d11 += f48149p[i10] * d(f48150q[i10] + (f48151r[i10] * d10));
+            d11 += f48197p[i10] * d(f48198q[i10] + (f48199r[i10] * d10));
         }
         return d11;
     }

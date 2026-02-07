@@ -128,7 +128,7 @@ public abstract class LinkContextData {
                 compositeEncoder.s(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(dismissedMessage.f8545id));
                 compositeEncoder.s(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(dismissedMessage.channelId));
                 if (compositeEncoder.A(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
-                    compositeEncoder.l(serialDescriptor, 2, n2.f31041a, dismissedMessage.loggingName);
+                    compositeEncoder.l(serialDescriptor, 2, n2.f31089a, dismissedMessage.loggingName);
                 }
                 compositeEncoder.s(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, dismissedMessage.author);
             }
@@ -385,7 +385,7 @@ public abstract class LinkContextData {
     public static final class BindDoNothing extends LinkContext {
         @NotNull
         public static final BindDoNothing INSTANCE = new BindDoNothing();
-        private static final /* synthetic */ Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
+        private static final /* synthetic */ Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -710,7 +710,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindInsertText, compositeEncoder, serialDescriptor);
             compositeEncoder.z(serialDescriptor, 2, bindInsertText.text);
             if (compositeEncoder.A(serialDescriptor, 3) || bindInsertText.addSpace != null) {
-                compositeEncoder.l(serialDescriptor, 3, jt.h.f31005a, bindInsertText.addSpace);
+                compositeEncoder.l(serialDescriptor, 3, jt.h.f31053a, bindInsertText.addSpace);
             }
         }
 
@@ -849,7 +849,7 @@ public abstract class LinkContextData {
                 }
                 compositeEncoder.z(serialDescriptor, 3, applicationStream.streamType);
                 if (compositeEncoder.A(serialDescriptor, 4) || applicationStream.discoverable != null) {
-                    compositeEncoder.l(serialDescriptor, 4, jt.h.f31005a, applicationStream.discoverable);
+                    compositeEncoder.l(serialDescriptor, 4, jt.h.f31053a, applicationStream.discoverable);
                 }
             }
 
@@ -1218,7 +1218,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenGdmCustomizeActionSheet, compositeEncoder, serialDescriptor);
             compositeEncoder.z(serialDescriptor, 2, bindOpenGdmCustomizeActionSheet.messageChannelId);
             if (compositeEncoder.A(serialDescriptor, 3) || bindOpenGdmCustomizeActionSheet.linkColor != null) {
-                compositeEncoder.l(serialDescriptor, 3, p0.f31057a, bindOpenGdmCustomizeActionSheet.linkColor);
+                compositeEncoder.l(serialDescriptor, 3, p0.f31105a, bindOpenGdmCustomizeActionSheet.linkColor);
             }
         }
 
@@ -1528,7 +1528,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self$chat_release(BindOpenRoleSubscriptionOverview bindOpenRoleSubscriptionOverview, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenRoleSubscriptionOverview, compositeEncoder, serialDescriptor);
             compositeEncoder.z(serialDescriptor, 2, bindOpenRoleSubscriptionOverview.guildId);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             compositeEncoder.l(serialDescriptor, 3, n2Var, bindOpenRoleSubscriptionOverview.messageId);
             compositeEncoder.l(serialDescriptor, 4, n2Var, bindOpenRoleSubscriptionOverview.channelId);
             compositeEncoder.l(serialDescriptor, 5, n2Var, bindOpenRoleSubscriptionOverview.roleSubscriptionListingId);
@@ -1762,7 +1762,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenUrl, compositeEncoder, serialDescriptor);
             compositeEncoder.z(serialDescriptor, 2, bindOpenUrl.url);
             if (compositeEncoder.A(serialDescriptor, 3) || bindOpenUrl.linkColor != null) {
-                compositeEncoder.l(serialDescriptor, 3, p0.f31057a, bindOpenUrl.linkColor);
+                compositeEncoder.l(serialDescriptor, 3, p0.f31105a, bindOpenUrl.linkColor);
             }
         }
 
@@ -2298,19 +2298,19 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserMenu, compositeEncoder, serialDescriptor);
             compositeEncoder.s(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1135boximpl(bindUserMenu.userId));
             if (compositeEncoder.A(serialDescriptor, 3) || bindUserMenu.colorString != null) {
-                compositeEncoder.l(serialDescriptor, 3, p0.f31057a, bindUserMenu.colorString);
+                compositeEncoder.l(serialDescriptor, 3, p0.f31105a, bindUserMenu.colorString);
             }
             if (compositeEncoder.A(serialDescriptor, 4) || bindUserMenu.linkColor != null) {
-                compositeEncoder.l(serialDescriptor, 4, p0.f31057a, bindUserMenu.linkColor);
+                compositeEncoder.l(serialDescriptor, 4, p0.f31105a, bindUserMenu.linkColor);
             }
             if (compositeEncoder.A(serialDescriptor, 5) || bindUserMenu.roleColor != null) {
-                compositeEncoder.l(serialDescriptor, 5, p0.f31057a, bindUserMenu.roleColor);
+                compositeEncoder.l(serialDescriptor, 5, p0.f31105a, bindUserMenu.roleColor);
             }
             if (compositeEncoder.A(serialDescriptor, 6) || bindUserMenu.roleColors != null) {
                 compositeEncoder.l(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, bindUserMenu.roleColors);
             }
             if (compositeEncoder.A(serialDescriptor, 7) || bindUserMenu.shouldShowRoleDot != null) {
-                compositeEncoder.l(serialDescriptor, 7, jt.h.f31005a, bindUserMenu.shouldShowRoleDot);
+                compositeEncoder.l(serialDescriptor, 7, jt.h.f31053a, bindUserMenu.shouldShowRoleDot);
             }
             if (compositeEncoder.A(serialDescriptor, 8) || bindUserMenu.messageChannelId != null) {
                 compositeEncoder.l(serialDescriptor, 8, ChannelId$$serializer.INSTANCE, bindUserMenu.messageChannelId);
@@ -2562,7 +2562,7 @@ public abstract class LinkContextData {
                 compositeEncoder.s(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1083boximpl(surveyMessage.f8546id));
                 compositeEncoder.s(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1057boximpl(surveyMessage.channelId));
                 if (compositeEncoder.A(serialDescriptor, 2) || surveyMessage.loggingName != null) {
-                    compositeEncoder.l(serialDescriptor, 2, n2.f31041a, surveyMessage.loggingName);
+                    compositeEncoder.l(serialDescriptor, 2, n2.f31089a, surveyMessage.loggingName);
                 }
             }
 
@@ -2685,7 +2685,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserSurvey, compositeEncoder, serialDescriptor);
             compositeEncoder.s(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, bindUserSurvey.message);
             if (compositeEncoder.A(serialDescriptor, 3) || bindUserSurvey.notificationType != null) {
-                compositeEncoder.l(serialDescriptor, 3, n2.f31041a, bindUserSurvey.notificationType);
+                compositeEncoder.l(serialDescriptor, 3, n2.f31089a, bindUserSurvey.notificationType);
             }
         }
 
@@ -2777,7 +2777,7 @@ public abstract class LinkContextData {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
+        private static final Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -2818,7 +2818,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self(LinkContext linkContext, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             compositeEncoder.z(serialDescriptor, 0, linkContext.action);
             if (compositeEncoder.A(serialDescriptor, 1) || linkContext.medium != null) {
-                compositeEncoder.l(serialDescriptor, 1, jt.h.f31005a, linkContext.medium);
+                compositeEncoder.l(serialDescriptor, 1, jt.h.f31053a, linkContext.medium);
             }
         }
 
@@ -2889,7 +2889,7 @@ public abstract class LinkContextData {
             @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
             @NotNull
             public SerialDescriptor getDescriptor() {
-                return ht.j.b("LinkUrl", e.i.f26478a);
+                return ht.j.b("LinkUrl", e.i.f26526a);
             }
 
             @Override // kotlinx.serialization.DeserializationStrategy

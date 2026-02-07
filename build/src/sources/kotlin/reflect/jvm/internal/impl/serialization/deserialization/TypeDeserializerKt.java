@@ -5,5 +5,5 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public final class TypeDeserializerKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f34362a = new FqName("kotlin.coroutines.experimental.Continuation");
+    private static final FqName f34410a = new FqName("kotlin.coroutines.experimental.Continuation");
 }

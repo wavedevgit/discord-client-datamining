@@ -103,53 +103,53 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     private final Annotations J;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ProtoBuf.Class f34371p;
+    private final ProtoBuf.Class f34419p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final BinaryVersion f34372q;
+    private final BinaryVersion f34420q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final SourceElement f34373r;
+    private final SourceElement f34421r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final ClassId f34374s;
+    private final ClassId f34422s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Modality f34375t;
+    private final Modality f34423t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final DescriptorVisibility f34376u;
+    private final DescriptorVisibility f34424u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ClassKind f34377v;
+    private final ClassKind f34425v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final DeserializationContext f34378w;
+    private final DeserializationContext f34426w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f34379x;
+    private final boolean f34427x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final MemberScopeImpl f34380y;
+    private final MemberScopeImpl f34428y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final a f34381z;
+    private final a f34429z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class DeserializedClassMemberScope extends DeserializedMemberScope {
 
         /* renamed from: f  reason: collision with root package name */
-        private final KotlinTypeRefiner f34382f;
+        private final KotlinTypeRefiner f34430f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final NotNullLazyValue f34383g;
+        private final NotNullLazyValue f34431g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final NotNullLazyValue f34384h;
+        private final NotNullLazyValue f34432h;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ DeserializedClassDescriptor f34385i;
+        final /* synthetic */ DeserializedClassDescriptor f34433i;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -161,7 +161,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
                 r7 = this;
                 java.lang.String r0 = "kotlinTypeRefiner"
                 kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r9, r0)
-                r7.f34385i = r8
+                r7.f34433i = r8
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext r2 = r8.getC()
                 kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Class r0 = r8.getClassProto()
                 java.util.List r3 = r0.getFunctionList()
@@ -201,19 +201,19 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
                 r6.<init>(r1)
                 r1 = r7
                 r1.<init>(r2, r3, r4, r5, r6)
-                r1.f34382f = r9
+                r1.f34430f = r9
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext r8 = r7.l()
                 kotlin.reflect.jvm.internal.impl.storage.StorageManager r8 = r8.getStorageManager()
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.h r9 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.h
                 r9.<init>(r7)
                 kotlin.reflect.jvm.internal.impl.storage.NotNullLazyValue r8 = r8.createLazyValue(r9)
-                r1.f34383g = r8
+                r1.f34431g = r8
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.DeserializationContext r8 = r7.l()
                 kotlin.reflect.jvm.internal.impl.storage.StorageManager r8 = r8.getStorageManager()
                 kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.i r9 = new kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.i
                 r9.<init>(r7)
                 kotlin.reflect.jvm.internal.impl.storage.NotNullLazyValue r8 = r8.createLazyValue(r9)
-                r1.f34384h = r8
+                r1.f34432h = r8
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor.DeserializedClassMemberScope.<init>(kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassDescriptor, kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner):void");
@@ -221,7 +221,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Collection A(DeserializedClassMemberScope deserializedClassMemberScope) {
-            return deserializedClassMemberScope.f34382f.refineSupertypes(deserializedClassMemberScope.z());
+            return deserializedClassMemberScope.f34430f.refineSupertypes(deserializedClassMemberScope.z());
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -255,7 +255,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         }
 
         private final DeserializedClassDescriptor z() {
-            return this.f34385i;
+            return this.f34433i;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
@@ -280,10 +280,10 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(functions, "functions");
             ArrayList arrayList = new ArrayList();
-            for (KotlinType kotlinType : (Collection) this.f34384h.invoke()) {
+            for (KotlinType kotlinType : (Collection) this.f34432h.invoke()) {
                 arrayList.addAll(kotlinType.getMemberScope().getContributedFunctions(name, NoLookupLocation.FOR_ALREADY_TRACKED));
             }
-            functions.addAll(l().getComponents().getAdditionalClassPartsProvider().getFunctions(name, this.f34385i));
+            functions.addAll(l().getComponents().getAdditionalClassPartsProvider().getFunctions(name, this.f34433i));
             y(name, arrayList, functions);
         }
 
@@ -305,7 +305,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         public Collection getContributedDescriptors(DescriptorKindFilter kindFilter, Function1 nameFilter) {
             Intrinsics.checkNotNullParameter(kindFilter, "kindFilter");
             Intrinsics.checkNotNullParameter(nameFilter, "nameFilter");
-            return (Collection) this.f34383g.invoke();
+            return (Collection) this.f34431g.invoke();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -329,7 +329,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(descriptors, "descriptors");
             ArrayList arrayList = new ArrayList();
-            for (KotlinType kotlinType : (Collection) this.f34384h.invoke()) {
+            for (KotlinType kotlinType : (Collection) this.f34432h.invoke()) {
                 arrayList.addAll(kotlinType.getMemberScope().getContributedVariables(name, NoLookupLocation.FOR_ALREADY_TRACKED));
             }
             y(name, arrayList, descriptors);
@@ -338,13 +338,13 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
         protected ClassId i(Name name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            return this.f34385i.f34374s.createNestedClassId(name);
+            return this.f34433i.f34422s.createNestedClassId(name);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
         protected Set n() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            for (KotlinType kotlinType : z().f34381z.getSupertypes()) {
+            for (KotlinType kotlinType : z().f34429z.getSupertypes()) {
                 Set<Name> classifierNames = kotlinType.getMemberScope().getClassifierNames();
                 if (classifierNames == null) {
                     return null;
@@ -357,17 +357,17 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
         protected Set o() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            for (KotlinType kotlinType : z().f34381z.getSupertypes()) {
+            for (KotlinType kotlinType : z().f34429z.getSupertypes()) {
                 CollectionsKt.B(linkedHashSet, kotlinType.getMemberScope().getFunctionNames());
             }
-            linkedHashSet.addAll(l().getComponents().getAdditionalClassPartsProvider().getFunctionsNames(this.f34385i));
+            linkedHashSet.addAll(l().getComponents().getAdditionalClassPartsProvider().getFunctionsNames(this.f34433i));
             return linkedHashSet;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
         protected Set p() {
             LinkedHashSet linkedHashSet = new LinkedHashSet();
-            for (KotlinType kotlinType : z().f34381z.getSupertypes()) {
+            for (KotlinType kotlinType : z().f34429z.getSupertypes()) {
                 CollectionsKt.B(linkedHashSet, kotlinType.getMemberScope().getVariableNames());
             }
             return linkedHashSet;
@@ -384,7 +384,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberScope
         protected boolean s(SimpleFunctionDescriptor function) {
             Intrinsics.checkNotNullParameter(function, "function");
-            return l().getComponents().getPlatformDependentDeclarationFilter().isFunctionAvailable(this.f34385i, function);
+            return l().getComponents().getPlatformDependentDeclarationFilter().isFunctionAvailable(this.f34433i, function);
         }
     }
 
@@ -393,11 +393,11 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     public final class a extends AbstractClassTypeConstructor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final NotNullLazyValue f34387d;
+        private final NotNullLazyValue f34435d;
 
         public a() {
             super(DeserializedClassDescriptor.this.getC().getStorageManager());
-            this.f34387d = DeserializedClassDescriptor.this.getC().getStorageManager().createLazyValue(new j(DeserializedClassDescriptor.this));
+            this.f34435d = DeserializedClassDescriptor.this.getC().getStorageManager().createLazyValue(new j(DeserializedClassDescriptor.this));
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -413,7 +413,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
         public List getParameters() {
-            return (List) this.f34387d.invoke();
+            return (List) this.f34435d.invoke();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -479,13 +479,13 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     public final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f34389a;
+        private final Map f34437a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final MemoizedFunctionToNullable f34390b;
+        private final MemoizedFunctionToNullable f34438b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final NotNullLazyValue f34391c;
+        private final NotNullLazyValue f34439c;
 
         public b() {
             List<ProtoBuf.EnumEntry> enumEntryList = DeserializedClassDescriptor.this.getClassProto().getEnumEntryList();
@@ -495,9 +495,9 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
             for (Object obj : list) {
                 linkedHashMap.put(NameResolverUtilKt.getName(DeserializedClassDescriptor.this.getC().getNameResolver(), ((ProtoBuf.EnumEntry) obj).getName()), obj);
             }
-            this.f34389a = linkedHashMap;
-            this.f34390b = DeserializedClassDescriptor.this.getC().getStorageManager().createMemoizedFunctionWithNullableValues(new k(this, DeserializedClassDescriptor.this));
-            this.f34391c = DeserializedClassDescriptor.this.getC().getStorageManager().createLazyValue(new l(this));
+            this.f34437a = linkedHashMap;
+            this.f34438b = DeserializedClassDescriptor.this.getC().getStorageManager().createMemoizedFunctionWithNullableValues(new k(this, DeserializedClassDescriptor.this));
+            this.f34439c = DeserializedClassDescriptor.this.getC().getStorageManager().createLazyValue(new l(this));
         }
 
         private final Set e() {
@@ -527,9 +527,9 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         /* JADX INFO: Access modifiers changed from: private */
         public static final ClassDescriptor f(b bVar, DeserializedClassDescriptor deserializedClassDescriptor, Name name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            ProtoBuf.EnumEntry enumEntry = (ProtoBuf.EnumEntry) bVar.f34389a.get(name);
+            ProtoBuf.EnumEntry enumEntry = (ProtoBuf.EnumEntry) bVar.f34437a.get(name);
             if (enumEntry != null) {
-                return EnumEntrySyntheticClassDescriptor.create(deserializedClassDescriptor.getC().getStorageManager(), deserializedClassDescriptor, name, bVar.f34391c, new DeserializedAnnotations(deserializedClassDescriptor.getC().getStorageManager(), new m(deserializedClassDescriptor, enumEntry)), SourceElement.NO_SOURCE);
+                return EnumEntrySyntheticClassDescriptor.create(deserializedClassDescriptor.getC().getStorageManager(), deserializedClassDescriptor, name, bVar.f34439c, new DeserializedAnnotations(deserializedClassDescriptor.getC().getStorageManager(), new m(deserializedClassDescriptor, enumEntry)), SourceElement.NO_SOURCE);
             }
             return null;
         }
@@ -546,7 +546,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
         public final Collection d() {
             ArrayList arrayList = new ArrayList();
-            for (Name name : this.f34389a.keySet()) {
+            for (Name name : this.f34437a.keySet()) {
                 ClassDescriptor i10 = i(name);
                 if (i10 != null) {
                     arrayList.add(i10);
@@ -557,7 +557,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
         public final ClassDescriptor i(Name name) {
             Intrinsics.checkNotNullParameter(name, "name");
-            return (ClassDescriptor) this.f34390b.invoke(name);
+            return (ClassDescriptor) this.f34438b.invoke(name);
         }
     }
 
@@ -618,15 +618,15 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
         Intrinsics.checkNotNullParameter(sourceElement, "sourceElement");
-        this.f34371p = classProto;
-        this.f34372q = metadataVersion;
-        this.f34373r = sourceElement;
-        this.f34374s = NameResolverUtilKt.getClassId(nameResolver, classProto.getFqName());
+        this.f34419p = classProto;
+        this.f34420q = metadataVersion;
+        this.f34421r = sourceElement;
+        this.f34422s = NameResolverUtilKt.getClassId(nameResolver, classProto.getFqName());
         ProtoEnumFlags protoEnumFlags = ProtoEnumFlags.INSTANCE;
-        this.f34375t = protoEnumFlags.modality(Flags.MODALITY.get(classProto.getFlags()));
-        this.f34376u = ProtoEnumFlagsUtilsKt.descriptorVisibility(protoEnumFlags, Flags.VISIBILITY.get(classProto.getFlags()));
+        this.f34423t = protoEnumFlags.modality(Flags.MODALITY.get(classProto.getFlags()));
+        this.f34424u = ProtoEnumFlagsUtilsKt.descriptorVisibility(protoEnumFlags, Flags.VISIBILITY.get(classProto.getFlags()));
         ClassKind classKind = protoEnumFlags.classKind(Flags.CLASS_KIND.get(classProto.getFlags()));
-        this.f34377v = classKind;
+        this.f34425v = classKind;
         List<ProtoBuf.TypeParameter> typeParameterList = classProto.getTypeParameterList();
         Intrinsics.checkNotNullExpressionValue(typeParameterList, "getTypeParameterList(...)");
         ProtoBuf.TypeTable typeTable = classProto.getTypeTable();
@@ -636,11 +636,11 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         ProtoBuf.VersionRequirementTable versionRequirementTable = classProto.getVersionRequirementTable();
         Intrinsics.checkNotNullExpressionValue(versionRequirementTable, "getVersionRequirementTable(...)");
         DeserializationContext childContext = outerContext.childContext(this, typeParameterList, nameResolver, typeTable2, companion.create(versionRequirementTable), metadataVersion);
-        this.f34378w = childContext;
+        this.f34426w = childContext;
         Boolean bool = Flags.HAS_ENUM_ENTRIES.get(classProto.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         boolean booleanValue = bool.booleanValue();
-        this.f34379x = booleanValue;
+        this.f34427x = booleanValue;
         ClassKind classKind2 = ClassKind.ENUM_CLASS;
         if (classKind == classKind2) {
             if (!booleanValue && !Intrinsics.areEqual(childContext.getComponents().getEnumEntriesDeserializationSupport().canSynthesizeEnumEntries(), Boolean.TRUE)) {
@@ -652,8 +652,8 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         } else {
             memberScopeImpl = MemberScope.Empty.INSTANCE;
         }
-        this.f34380y = memberScopeImpl;
-        this.f34381z = new a();
+        this.f34428y = memberScopeImpl;
+        this.f34429z = new a();
         this.A = ScopesHolderForClass.Companion.create(this, childContext.getStorageManager(), childContext.getComponents().getKotlinTypeChecker().getKotlinTypeRefiner(), new e(this));
         if (classKind == classKind2) {
             bVar = new b();
@@ -686,7 +686,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List h(DeserializedClassDescriptor deserializedClassDescriptor) {
-        return CollectionsKt.h1(deserializedClassDescriptor.f34378w.getComponents().getAnnotationAndConstantLoader().loadClassAnnotations(deserializedClassDescriptor.I));
+        return CollectionsKt.h1(deserializedClassDescriptor.f34426w.getComponents().getAnnotationAndConstantLoader().loadClassAnnotations(deserializedClassDescriptor.I));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -695,10 +695,10 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     }
 
     private final ClassDescriptor j() {
-        if (!this.f34371p.hasCompanionObjectName()) {
+        if (!this.f34419p.hasCompanionObjectName()) {
             return null;
         }
-        ClassifierDescriptor mo1200getContributedClassifier = q().mo1200getContributedClassifier(NameResolverUtilKt.getName(this.f34378w.getNameResolver(), this.f34371p.getCompanionObjectName()), NoLookupLocation.FROM_DESERIALIZATION);
+        ClassifierDescriptor mo1200getContributedClassifier = q().mo1200getContributedClassifier(NameResolverUtilKt.getName(this.f34426w.getNameResolver(), this.f34419p.getCompanionObjectName()), NoLookupLocation.FROM_DESERIALIZATION);
         if (!(mo1200getContributedClassifier instanceof ClassDescriptor)) {
             return null;
         }
@@ -706,17 +706,17 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     }
 
     private final Collection k() {
-        return CollectionsKt.L0(CollectionsKt.L0(m(), CollectionsKt.p(mo1194getUnsubstitutedPrimaryConstructor())), this.f34378w.getComponents().getAdditionalClassPartsProvider().getConstructors(this));
+        return CollectionsKt.L0(CollectionsKt.L0(m(), CollectionsKt.p(mo1194getUnsubstitutedPrimaryConstructor())), this.f34426w.getComponents().getAdditionalClassPartsProvider().getConstructors(this));
     }
 
     private final ClassConstructorDescriptor l() {
         Object obj;
-        if (this.f34377v.isSingleton()) {
+        if (this.f34425v.isSingleton()) {
             ClassConstructorDescriptorImpl createPrimaryConstructorForObject = DescriptorFactory.createPrimaryConstructorForObject(this, SourceElement.NO_SOURCE);
             createPrimaryConstructorForObject.setReturnType(getDefaultType());
             return createPrimaryConstructorForObject;
         }
-        List<ProtoBuf.Constructor> constructorList = this.f34371p.getConstructorList();
+        List<ProtoBuf.Constructor> constructorList = this.f34419p.getConstructorList();
         Intrinsics.checkNotNullExpressionValue(constructorList, "getConstructorList(...)");
         Iterator<T> it = constructorList.iterator();
         while (true) {
@@ -734,11 +734,11 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         if (constructor == null) {
             return null;
         }
-        return this.f34378w.getMemberDeserializer().loadConstructor(constructor, true);
+        return this.f34426w.getMemberDeserializer().loadConstructor(constructor, true);
     }
 
     private final List m() {
-        List<ProtoBuf.Constructor> constructorList = this.f34371p.getConstructorList();
+        List<ProtoBuf.Constructor> constructorList = this.f34419p.getConstructorList();
         Intrinsics.checkNotNullExpressionValue(constructorList, "getConstructorList(...)");
         ArrayList<ProtoBuf.Constructor> arrayList = new ArrayList();
         for (Object obj : constructorList) {
@@ -750,7 +750,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         }
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
         for (ProtoBuf.Constructor constructor : arrayList) {
-            MemberDeserializer memberDeserializer = this.f34378w.getMemberDeserializer();
+            MemberDeserializer memberDeserializer = this.f34426w.getMemberDeserializer();
             Intrinsics.checkNotNull(constructor);
             arrayList2.add(memberDeserializer.loadConstructor(constructor, false));
         }
@@ -758,16 +758,16 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     }
 
     private final Collection n() {
-        if (this.f34375t != Modality.SEALED) {
+        if (this.f34423t != Modality.SEALED) {
             return CollectionsKt.l();
         }
-        List<Integer> sealedSubclassFqNameList = this.f34371p.getSealedSubclassFqNameList();
+        List<Integer> sealedSubclassFqNameList = this.f34419p.getSealedSubclassFqNameList();
         Intrinsics.checkNotNull(sealedSubclassFqNameList);
         if (!sealedSubclassFqNameList.isEmpty()) {
             ArrayList arrayList = new ArrayList();
             for (Integer num : sealedSubclassFqNameList) {
-                DeserializationComponents components = this.f34378w.getComponents();
-                NameResolver nameResolver = this.f34378w.getNameResolver();
+                DeserializationComponents components = this.f34426w.getComponents();
+                NameResolver nameResolver = this.f34426w.getNameResolver();
                 Intrinsics.checkNotNull(num);
                 ClassDescriptor deserializeClass = components.deserializeClass(NameResolverUtilKt.getClassId(nameResolver, num.intValue()));
                 if (deserializeClass != null) {
@@ -783,11 +783,11 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
         if (!isInline() && !isValue()) {
             return null;
         }
-        ValueClassRepresentation loadValueClassRepresentation = ValueClassUtilKt.loadValueClassRepresentation(this.f34371p, this.f34378w.getNameResolver(), this.f34378w.getTypeTable(), new c(this.f34378w.getTypeDeserializer()), new d(this));
+        ValueClassRepresentation loadValueClassRepresentation = ValueClassUtilKt.loadValueClassRepresentation(this.f34419p, this.f34426w.getNameResolver(), this.f34426w.getTypeTable(), new c(this.f34426w.getTypeDeserializer()), new d(this));
         if (loadValueClassRepresentation != null) {
             return loadValueClassRepresentation;
         }
-        if (this.f34372q.isAtLeast(1, 5, 1)) {
+        if (this.f34420q.isAtLeast(1, 5, 1)) {
             return null;
         }
         ClassConstructorDescriptor mo1194getUnsubstitutedPrimaryConstructor = mo1194getUnsubstitutedPrimaryConstructor();
@@ -811,7 +811,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     }
 
     private final DeserializedClassMemberScope q() {
-        return (DeserializedClassMemberScope) this.A.getScope(this.f34378w.getComponents().getKotlinTypeChecker().getKotlinTypeRefiner());
+        return (DeserializedClassMemberScope) this.A.getScope(this.f34426w.getComponents().getKotlinTypeChecker().getKotlinTypeRefiner());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -889,12 +889,12 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
     @NotNull
     public final DeserializationContext getC() {
-        return this.f34378w;
+        return this.f34426w;
     }
 
     @NotNull
     public final ProtoBuf.Class getClassProto() {
-        return this.f34371p;
+        return this.f34419p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -918,10 +918,10 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.AbstractClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public List<ReceiverParameterDescriptor> getContextReceivers() {
-        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(this.f34371p, this.f34378w.getTypeTable());
+        List<ProtoBuf.Type> contextReceiverTypes = ProtoTypeTableUtilKt.contextReceiverTypes(this.f34419p, this.f34426w.getTypeTable());
         ArrayList arrayList = new ArrayList(CollectionsKt.w(contextReceiverTypes, 10));
         for (ProtoBuf.Type type : contextReceiverTypes) {
-            arrayList.add(new ReceiverParameterDescriptorImpl(getThisAsReceiverParameter(), new ContextClassReceiver(this, this.f34378w.getTypeDeserializer().type(type), null, null), Annotations.Companion.getEMPTY()));
+            arrayList.add(new ReceiverParameterDescriptorImpl(getThisAsReceiverParameter(), new ContextClassReceiver(this, this.f34426w.getTypeDeserializer().type(type), null, null), Annotations.Companion.getEMPTY()));
         }
         return arrayList;
     }
@@ -929,24 +929,24 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     @NotNull
     public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
-        return this.f34378w.getTypeDeserializer().getOwnTypeParameters();
+        return this.f34426w.getTypeDeserializer().getOwnTypeParameters();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ClassKind getKind() {
-        return this.f34377v;
+        return this.f34425v;
     }
 
     @NotNull
     public final BinaryVersion getMetadataVersion() {
-        return this.f34372q;
+        return this.f34420q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        return this.f34375t;
+        return this.f34423t;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
@@ -958,7 +958,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
     @NotNull
     public SourceElement getSource() {
-        return this.f34373r;
+        return this.f34421r;
     }
 
     @NotNull
@@ -969,7 +969,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        return this.f34381z;
+        return this.f34429z;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleAwareClassDescriptor
@@ -992,7 +992,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        return this.f34376u;
+        return this.f34424u;
     }
 
     public final boolean hasNestedClass$deserialization(@NotNull Name name) {
@@ -1007,7 +1007,7 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isCompanionObject() {
-        if (Flags.CLASS_KIND.get(this.f34371p.getFlags()) == ProtoBuf.Class.Kind.COMPANION_OBJECT) {
+        if (Flags.CLASS_KIND.get(this.f34419p.getFlags()) == ProtoBuf.Class.Kind.COMPANION_OBJECT) {
             return true;
         }
         return false;
@@ -1015,35 +1015,35 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isData() {
-        Boolean bool = Flags.IS_DATA.get(this.f34371p.getFlags());
+        Boolean bool = Flags.IS_DATA.get(this.f34419p.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         return bool.booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExpect() {
-        Boolean bool = Flags.IS_EXPECT_CLASS.get(this.f34371p.getFlags());
+        Boolean bool = Flags.IS_EXPECT_CLASS.get(this.f34419p.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         return bool.booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExternal() {
-        Boolean bool = Flags.IS_EXTERNAL_CLASS.get(this.f34371p.getFlags());
+        Boolean bool = Flags.IS_EXTERNAL_CLASS.get(this.f34419p.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         return bool.booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isFun() {
-        Boolean bool = Flags.IS_FUN_INTERFACE.get(this.f34371p.getFlags());
+        Boolean bool = Flags.IS_FUN_INTERFACE.get(this.f34419p.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         return bool.booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isInline() {
-        if (Flags.IS_VALUE_CLASS.get(this.f34371p.getFlags()).booleanValue() && this.f34372q.isAtMost(1, 4, 1)) {
+        if (Flags.IS_VALUE_CLASS.get(this.f34419p.getFlags()).booleanValue() && this.f34420q.isAtMost(1, 4, 1)) {
             return true;
         }
         return false;
@@ -1051,14 +1051,14 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     public boolean isInner() {
-        Boolean bool = Flags.IS_INNER.get(this.f34371p.getFlags());
+        Boolean bool = Flags.IS_INNER.get(this.f34419p.getFlags());
         Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
         return bool.booleanValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isValue() {
-        if (Flags.IS_VALUE_CLASS.get(this.f34371p.getFlags()).booleanValue() && this.f34372q.isAtLeast(1, 4, 2)) {
+        if (Flags.IS_VALUE_CLASS.get(this.f34419p.getFlags()).booleanValue() && this.f34420q.isAtLeast(1, 4, 2)) {
             return true;
         }
         return false;
@@ -1083,6 +1083,6 @@ public final class DeserializedClassDescriptor extends AbstractClassDescriptor i
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScopeImpl getStaticScope() {
-        return this.f34380y;
+        return this.f34428y;
     }
 }

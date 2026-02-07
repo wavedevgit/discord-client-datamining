@@ -6,6 +6,6 @@ import ir.s;
 public class e implements s {
     @Override // ir.s
     public Object a(ir.g gVar, q qVar) {
-        return new lr.f(gVar.e(), ((Integer) jr.b.f30894d.c(qVar)).intValue());
+        return new lr.f(gVar.e(), ((Integer) jr.b.f30942d.c(qVar)).intValue());
     }
 }

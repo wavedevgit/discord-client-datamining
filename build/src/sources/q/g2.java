@@ -6,7 +6,7 @@ import android.util.Size;
 final class g2 implements i2.e {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g2 f45891a = new g2();
+    static final g2 f45939a = new g2();
 
     @Override // a0.i2.e
     public void a(Size size, a0.x2 x2Var, i2.b bVar) {

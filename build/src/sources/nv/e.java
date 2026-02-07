@@ -5,32 +5,32 @@ import qv.w;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final w f41178a;
+    public final w f41226a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f41179b;
+    public final int f41227b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f41180c;
+    public final boolean f41228c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final e f41181d;
+    public final e f41229d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final f f41182e;
+    public final f f41230e;
 
     /* renamed from: f  reason: collision with root package name */
-    public boolean f41183f = true;
+    public boolean f41231f = true;
 
     /* renamed from: g  reason: collision with root package name */
-    public boolean f41184g = false;
+    public boolean f41232g = false;
 
     private e(w wVar, int i10, e eVar, f fVar, boolean z10) {
-        this.f41178a = wVar;
-        this.f41179b = i10;
-        this.f41180c = z10;
-        this.f41181d = eVar;
-        this.f41182e = fVar;
+        this.f41226a = wVar;
+        this.f41227b = i10;
+        this.f41228c = z10;
+        this.f41229d = eVar;
+        this.f41230e = fVar;
     }
 
     public static e a(w wVar, int i10, e eVar, f fVar) {

@@ -43,8 +43,8 @@ public /* synthetic */ class SearchableSelectItem$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, n2Var, SelectOptionType.Serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(p0.f31057a), gt.a.u(ComponentEmoji$$serializer.INSTANCE)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, n2Var, SelectOptionType.Serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(p0.f31105a), gt.a.u(ComponentEmoji$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -66,8 +66,8 @@ public /* synthetic */ class SearchableSelectItem$$serializer implements h0 {
             String m11 = b10.m(serialDescriptor, 1);
             str = m10;
             componentEmoji = (ComponentEmoji) b10.n(serialDescriptor, 5, ComponentEmoji$$serializer.INSTANCE, null);
-            str3 = (String) b10.n(serialDescriptor, 3, n2.f31041a, null);
-            num = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, null);
+            str3 = (String) b10.n(serialDescriptor, 3, n2.f31089a, null);
+            num = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, null);
             selectOptionType = (SelectOptionType) b10.y(serialDescriptor, 2, SelectOptionType.Serializer.INSTANCE, null);
             str2 = m11;
             i10 = 63;
@@ -98,11 +98,11 @@ public /* synthetic */ class SearchableSelectItem$$serializer implements h0 {
                         i11 |= 4;
                         break;
                     case 3:
-                        str6 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str6);
                         i11 |= 8;
                         break;
                     case 4:
-                        num2 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num2);
                         i11 |= 16;
                         break;
                     case 5:

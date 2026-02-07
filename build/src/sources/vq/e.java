@@ -3,14 +3,14 @@ package vq;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f52901a = 2131558710;
+    public static int f52949a = 2131558710;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f52902b = 2131558711;
+    public static int f52950b = 2131558711;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f52903c = 2131558712;
+    public static int f52951c = 2131558712;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f52904d = 2131558716;
+    public static int f52952d = 2131558716;
 }

@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationAndConstantLoaderImpl extends AbstractAnnotationLoader<AnnotationDescriptor> implements AnnotationAndConstantLoader<AnnotationDescriptor, ConstantValue<?>> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final AnnotationDeserializer f34280b;
+    private final AnnotationDeserializer f34328b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AnnotationAndConstantLoaderImpl(@NotNull ModuleDescriptor module, @NotNull NotFoundClasses notFoundClasses, @NotNull SerializerExtensionProtocol protocol) {
@@ -23,7 +23,7 @@ public final class AnnotationAndConstantLoaderImpl extends AbstractAnnotationLoa
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(notFoundClasses, "notFoundClasses");
         Intrinsics.checkNotNullParameter(protocol, "protocol");
-        this.f34280b = new AnnotationDeserializer(module, notFoundClasses);
+        this.f34328b = new AnnotationDeserializer(module, notFoundClasses);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.AnnotationAndConstantLoader
@@ -39,7 +39,7 @@ public final class AnnotationAndConstantLoaderImpl extends AbstractAnnotationLoa
     public AnnotationDescriptor loadAnnotation(@NotNull ProtoBuf.Annotation proto, @NotNull NameResolver nameResolver) {
         Intrinsics.checkNotNullParameter(proto, "proto");
         Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
-        return this.f34280b.deserializeAnnotation(proto, nameResolver);
+        return this.f34328b.deserializeAnnotation(proto, nameResolver);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.AnnotationAndConstantLoader
@@ -51,6 +51,6 @@ public final class AnnotationAndConstantLoaderImpl extends AbstractAnnotationLoa
         if (value == null) {
             return null;
         }
-        return this.f34280b.resolveValue(expectedType, value, container.getNameResolver());
+        return this.f34328b.resolveValue(expectedType, value, container.getNameResolver());
     }
 }

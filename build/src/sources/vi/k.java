@@ -9,10 +9,10 @@ public enum k implements Executor {
     
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Handler f52683e = new Handler(Looper.getMainLooper());
+    private static final Handler f52731e = new Handler(Looper.getMainLooper());
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        f52683e.post(runnable);
+        f52731e.post(runnable);
     }
 }

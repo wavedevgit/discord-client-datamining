@@ -8,25 +8,25 @@ import kv.a;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f35569a = "d";
+    private static final String f35617a = "d";
 
     /* renamed from: b  reason: collision with root package name */
-    private static a f35570b;
+    private static a f35618b;
 
     public static a a(Context context, a.b bVar) {
         a aVar;
         synchronized (d.class) {
-            if (f35570b == null && Build.VERSION.SDK_INT >= 30 && e.c(context, bVar)) {
+            if (f35618b == null && Build.VERSION.SDK_INT >= 30 && e.c(context, bVar)) {
                 try {
-                    f35570b = new lv.a(1);
+                    f35618b = new lv.a(1);
                 } catch (Exception e10) {
-                    Log.e(f35569a, "Exception creating an instance of CronetLoggerImpl", e10);
+                    Log.e(f35617a, "Exception creating an instance of CronetLoggerImpl", e10);
                 }
             }
-            if (f35570b == null) {
-                f35570b = new f();
+            if (f35618b == null) {
+                f35618b = new f();
             }
-            aVar = f35570b;
+            aVar = f35618b;
         }
         return aVar;
     }

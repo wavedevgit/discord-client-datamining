@@ -9,13 +9,13 @@ import androidx.appcompat.view.ContextThemeWrapper;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f50603a = {16842752, b.f646i0};
+    private static final int[] f50651a = {16842752, b.f646i0};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f50604b = {b.E};
+    private static final int[] f50652b = {b.E};
 
     private static int a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f50603a);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f50651a);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, 0);
         obtainStyledAttributes.recycle();
@@ -26,7 +26,7 @@ public abstract class a {
     }
 
     private static int b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f50604b, i10, i11);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f50652b, i10, i11);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         obtainStyledAttributes.recycle();
         return resourceId;

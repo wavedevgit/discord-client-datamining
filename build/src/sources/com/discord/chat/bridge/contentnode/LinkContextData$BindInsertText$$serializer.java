@@ -40,10 +40,10 @@ public /* synthetic */ class LinkContextData$BindInsertText$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        jt.h hVar = jt.h.f31005a;
+        jt.h hVar = jt.h.f31053a;
         KSerializer u10 = gt.a.u(hVar);
         KSerializer u11 = gt.a.u(hVar);
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, u10, n2Var, u11};
     }
 
@@ -61,7 +61,7 @@ public /* synthetic */ class LinkContextData$BindInsertText$$serializer implemen
         String str3 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            jt.h hVar = jt.h.f31005a;
+            jt.h hVar = jt.h.f31053a;
             String m11 = b10.m(serialDescriptor, 2);
             str = m10;
             bool2 = (Boolean) b10.n(serialDescriptor, 3, hVar, null);
@@ -82,7 +82,7 @@ public /* synthetic */ class LinkContextData$BindInsertText$$serializer implemen
                     str3 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool3 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool3);
+                    bool3 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool3);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     str4 = b10.m(serialDescriptor, 2);
@@ -90,7 +90,7 @@ public /* synthetic */ class LinkContextData$BindInsertText$$serializer implemen
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    bool4 = (Boolean) b10.n(serialDescriptor, 3, jt.h.f31005a, bool4);
+                    bool4 = (Boolean) b10.n(serialDescriptor, 3, jt.h.f31053a, bool4);
                     i11 |= 8;
                 }
             }

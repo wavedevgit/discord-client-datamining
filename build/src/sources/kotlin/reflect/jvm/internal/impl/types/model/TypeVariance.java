@@ -9,25 +9,25 @@ import xr.a;
 public final class TypeVariance {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ TypeVariance[] f34742e;
+    private static final /* synthetic */ TypeVariance[] f34790e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34743i;
+    private static final /* synthetic */ EnumEntries f34791i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f34744d;
+    private final String f34792d;
     public static final TypeVariance IN = new TypeVariance("IN", 0, "in");
     public static final TypeVariance OUT = new TypeVariance("OUT", 1, "out");
     public static final TypeVariance INV = new TypeVariance("INV", 2, "");
 
     static {
         TypeVariance[] a10 = a();
-        f34742e = a10;
-        f34743i = a.a(a10);
+        f34790e = a10;
+        f34791i = a.a(a10);
     }
 
     private TypeVariance(String str, int i10, String str2) {
-        this.f34744d = str2;
+        this.f34792d = str2;
     }
 
     private static final /* synthetic */ TypeVariance[] a() {
@@ -39,12 +39,12 @@ public final class TypeVariance {
     }
 
     public static TypeVariance[] values() {
-        return (TypeVariance[]) f34742e.clone();
+        return (TypeVariance[]) f34790e.clone();
     }
 
     @Override // java.lang.Enum
     @NotNull
     public String toString() {
-        return this.f34744d;
+        return this.f34792d;
     }
 }

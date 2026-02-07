@@ -5,44 +5,44 @@ import android.graphics.Typeface;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f46526a;
+    private final String f46574a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f46527b;
+    private final String f46575b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f46528c;
+    private final String f46576c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f46529d;
+    private final float f46577d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Typeface f46530e;
+    private Typeface f46578e;
 
     public c(String str, String str2, String str3, float f10) {
-        this.f46526a = str;
-        this.f46527b = str2;
-        this.f46528c = str3;
-        this.f46529d = f10;
+        this.f46574a = str;
+        this.f46575b = str2;
+        this.f46576c = str3;
+        this.f46577d = f10;
     }
 
     public String a() {
-        return this.f46526a;
+        return this.f46574a;
     }
 
     public String b() {
-        return this.f46527b;
+        return this.f46575b;
     }
 
     public String c() {
-        return this.f46528c;
+        return this.f46576c;
     }
 
     public Typeface d() {
-        return this.f46530e;
+        return this.f46578e;
     }
 
     public void e(Typeface typeface) {
-        this.f46530e = typeface;
+        this.f46578e = typeface;
     }
 }

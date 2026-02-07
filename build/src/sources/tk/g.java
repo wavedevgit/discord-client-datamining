@@ -9,18 +9,18 @@ import java.util.List;
 final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f50706a = new ArrayList();
+    private final List f50754a = new ArrayList();
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f50707b = new ArrayList();
+    private final List f50755b = new ArrayList();
 
     private void a(int[] iArr, String str) {
-        this.f50706a.add(iArr);
-        this.f50707b.add(str);
+        this.f50754a.add(iArr);
+        this.f50755b.add(str);
     }
 
     private synchronized void b() {
-        if (this.f50706a.isEmpty()) {
+        if (this.f50754a.isEmpty()) {
             a(new int[]{0, 19}, "US/CA");
             a(new int[]{30, 39}, "US");
             a(new int[]{60, 139}, "US/CA");
@@ -136,13 +136,13 @@ final class g {
         int i10;
         b();
         int parseInt = Integer.parseInt(str.substring(0, 3));
-        int size = this.f50706a.size();
-        for (int i11 = 0; i11 < size && parseInt >= (i10 = (iArr = (int[]) this.f50706a.get(i11))[0]); i11++) {
+        int size = this.f50754a.size();
+        for (int i11 = 0; i11 < size && parseInt >= (i10 = (iArr = (int[]) this.f50754a.get(i11))[0]); i11++) {
             if (iArr.length != 1) {
                 i10 = iArr[1];
             }
             if (parseInt <= i10) {
-                return (String) this.f50707b.get(i11);
+                return (String) this.f50755b.get(i11);
             }
         }
         return null;

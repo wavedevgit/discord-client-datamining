@@ -3,18 +3,18 @@ package pg;
 public final class o9 {
 
     /* renamed from: a  reason: collision with root package name */
-    private p9 f44566a;
+    private p9 f44614a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f44567b;
+    private Integer f44615b;
 
     public final o9 a(p9 p9Var) {
-        this.f44566a = p9Var;
+        this.f44614a = p9Var;
         return this;
     }
 
     public final o9 b(Integer num) {
-        this.f44567b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f44615b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun44409: for (var _fun44409_ip = 0;;) switch (_fun44409_ip) {
+        _fun44416: for (var _fun44416_ip = 0;;) switch (_fun44416_ip) {
             case 0:
                 var0 = {};
                 var1 = {};
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 12;
                 var5 = arg0;
                 if (!var5) {
-                    _fun44409_ip = 60;
-                    continue _fun44409
+                    _fun44416_ip = 60;
+                    continue _fun44416
                 }
             case 56:
                 var3 = _closure1_slot5;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3.bind(var6)();
                 var3 = 0;
                 if (!var6) {
-                    _fun44409_ip = 114;
-                    continue _fun44409
+                    _fun44416_ip = 114;
+                    continue _fun44416
                 }
             case 104:
                 var6 = _closure1_slot2;
@@ -111,14 +111,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TableRow/native/TableRowDivider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44410: for (var _fun44410_ip = 0;;) switch (_fun44410_ip) {
+        _fun44417: for (var _fun44417_ip = 0;;) switch (_fun44417_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.adjustSpacingForIcon;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun44410_ip = 17;
-                    continue _fun44410
+                    _fun44417_ip = 17;
+                    continue _fun44417
                 }
             case 15:
                 var2 = false;
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TableRowDivider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4873, 33, 1297, 4874, 478, 4875, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4872, 33, 1297, 4873, 478, 4874, 2]);

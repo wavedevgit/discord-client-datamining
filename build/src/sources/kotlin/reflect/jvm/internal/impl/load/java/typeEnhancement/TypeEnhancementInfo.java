@@ -10,16 +10,16 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeEnhancementInfo {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f33091a;
+    private final Map f33139a;
 
     public TypeEnhancementInfo(@NotNull Map<Integer, JavaTypeQualifiers> map) {
         Intrinsics.checkNotNullParameter(map, "map");
-        this.f33091a = map;
+        this.f33139a = map;
     }
 
     @NotNull
     public final TypeEnhancementInfo copyForWarnings() {
-        Map map = this.f33091a;
+        Map map = this.f33139a;
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.collections.o0.e(map.size()));
         for (Map.Entry entry : map.entrySet()) {
             linkedHashMap.put(entry.getKey(), JavaTypeQualifiers.copy$default((JavaTypeQualifiers) entry.getValue(), null, null, false, true, 7, null));
@@ -29,6 +29,6 @@ public final class TypeEnhancementInfo {
 
     @NotNull
     public final Map<Integer, JavaTypeQualifiers> getMap() {
-        return this.f33091a;
+        return this.f33139a;
     }
 }

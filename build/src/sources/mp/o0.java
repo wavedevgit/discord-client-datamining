@@ -24,13 +24,13 @@ import wn.g;
 public final class o0 implements dn.c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ dn.f f37576a;
+    private final /* synthetic */ dn.f f37624a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final un.t f37577b;
+    private final un.t f37625b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final un.w0 f37578c;
+    private final un.w0 f37626c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -48,7 +48,7 @@ public final class o0 implements dn.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((x5.d.c) obj, (dn.a0) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -56,39 +56,39 @@ public final class o0 implements dn.c0 {
     public static final class b implements un.y {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ np.a f37579a;
+        final /* synthetic */ np.a f37627a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ un.t f37580b;
+        final /* synthetic */ un.t f37628b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ un.w0 f37581c;
+        final /* synthetic */ un.w0 f37629c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ x5.d.c f37582d;
+        final /* synthetic */ x5.d.c f37630d;
 
         b(np.a aVar, un.t tVar, un.w0 w0Var, x5.d.c cVar) {
-            this.f37579a = aVar;
-            this.f37580b = tVar;
-            this.f37581c = w0Var;
-            this.f37582d = cVar;
+            this.f37627a = aVar;
+            this.f37628b = tVar;
+            this.f37629c = w0Var;
+            this.f37630d = cVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit c(x5.d.c cVar, un.k it) {
             Intrinsics.checkNotNullParameter(it, "it");
             cVar.h().invoke(it);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // un.y
         public void a() {
-            PreviewView previewviewSelfieCamera = this.f37579a.f41079k;
+            PreviewView previewviewSelfieCamera = this.f37627a.f41127k;
             Intrinsics.checkNotNullExpressionValue(previewviewSelfieCamera, "previewviewSelfieCamera");
-            t.a aVar = t.a.f51803d;
-            un.t tVar = this.f37580b;
-            un.w0 w0Var = this.f37581c;
-            final x5.d.c cVar = this.f37582d;
+            t.a aVar = t.a.f51851d;
+            un.t tVar = this.f37628b;
+            un.w0 w0Var = this.f37629c;
+            final x5.d.c cVar = this.f37630d;
             tVar.f(previewviewSelfieCamera, aVar, w0Var, true, new Function1() { // from class: mp.p0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -103,7 +103,7 @@ public final class o0 implements dn.c0 {
     public o0(final un.t cameraPreview, final un.w0 selfieDirectionFeed) {
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
         Intrinsics.checkNotNullParameter(selfieDirectionFeed, "selfieDirectionFeed");
-        this.f37576a = new dn.f(Reflection.getOrCreateKotlinClass(x5.d.c.class), new Function4() { // from class: mp.n0
+        this.f37624a = new dn.f(Reflection.getOrCreateKotlinClass(x5.d.c.class), new Function4() { // from class: mp.n0
             @Override // kotlin.jvm.functions.Function4
             public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                 View c10;
@@ -111,8 +111,8 @@ public final class o0 implements dn.c0 {
                 return c10;
             }
         });
-        this.f37577b = cameraPreview;
-        this.f37578c = selfieDirectionFeed;
+        this.f37625b = cameraPreview;
+        this.f37626c = selfieDirectionFeed;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -130,16 +130,16 @@ public final class o0 implements dn.c0 {
         if (initialRendering.n() != ao.a.f6228i) {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            wn.m b10 = wn.j.b(applicationContext, wn.n.f54014d);
+            wn.m b10 = wn.j.b(applicationContext, wn.n.f54062d);
             if (b10 == null) {
                 initialRendering.h().invoke(new un.s0());
-                Camera2PreviewView camera2Preview = c10.f41071c;
+                Camera2PreviewView camera2Preview = c10.f41119c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview, "camera2Preview");
                 a10 = new un.r0(camera2Preview);
                 w0Var2 = w0Var;
             } else {
                 g.a b11 = initialRendering.b();
-                Camera2PreviewView camera2Preview2 = c10.f41071c;
+                Camera2PreviewView camera2Preview2 = c10.f41119c;
                 Intrinsics.checkNotNullExpressionValue(camera2Preview2, "camera2Preview");
                 ao.a valueOf = ao.a.valueOf(initialRendering.n().toString());
                 initialRendering.o();
@@ -149,7 +149,7 @@ public final class o0 implements dn.c0 {
         } else {
             w0Var2 = w0Var;
             z.a c11 = initialRendering.c();
-            PreviewView previewviewSelfieCamera = c10.f41079k;
+            PreviewView previewviewSelfieCamera = c10.f41127k;
             Intrinsics.checkNotNullExpressionValue(previewviewSelfieCamera, "previewviewSelfieCamera");
             a10 = c11.a(tVar, previewviewSelfieCamera, new b(c10, tVar, w0Var2, initialRendering));
         }
@@ -168,11 +168,11 @@ public final class o0 implements dn.c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        return this.f37576a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+        return this.f37624a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
     }
 
     @Override // dn.c0
     public KClass getType() {
-        return this.f37576a.getType();
+        return this.f37624a.getType();
     }
 }

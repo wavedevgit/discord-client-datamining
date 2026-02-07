@@ -19,13 +19,13 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class a0 implements bn.o<a> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f29958b;
+    private final ActivityResultLauncher f30006b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f29959c;
+    private final Context f30007c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wp.c f29960d;
+    private final wp.c f30008d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a {
@@ -35,7 +35,7 @@ public final class a0 implements bn.o<a> {
         public static final class C0420a extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0420a f29961a = new C0420a();
+            public static final C0420a f30009a = new C0420a();
 
             private C0420a() {
                 super(null);
@@ -46,25 +46,25 @@ public final class a0 implements bn.o<a> {
         public static final class b extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f29962a;
+            private final String f30010a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f29963b;
+            private final String f30011b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String absoluteFilePath, String str) {
                 super(null);
                 Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
-                this.f29962a = absoluteFilePath;
-                this.f29963b = str;
+                this.f30010a = absoluteFilePath;
+                this.f30011b = str;
             }
 
             public final String a() {
-                return this.f29962a;
+                return this.f30010a;
             }
 
             public final String b() {
-                return this.f29963b;
+                return this.f30011b;
             }
         }
 
@@ -80,29 +80,29 @@ public final class a0 implements bn.o<a> {
     public static final class b implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f29964d;
+        final /* synthetic */ Flow f30012d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ a0 f29965e;
+        final /* synthetic */ a0 f30013e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f29966d;
+            final /* synthetic */ FlowCollector f30014d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ a0 f29967e;
+            final /* synthetic */ a0 f30015e;
 
             /* renamed from: jo.a0$b$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0421a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f29968d;
+                /* synthetic */ Object f30016d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f29969e;
+                int f30017e;
 
                 public C0421a(Continuation continuation) {
                     super(continuation);
@@ -110,15 +110,15 @@ public final class a0 implements bn.o<a> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f29968d = obj;
-                    this.f29969e |= Integer.MIN_VALUE;
+                    this.f30016d = obj;
+                    this.f30017e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, a0 a0Var) {
-                this.f29966d = flowCollector;
-                this.f29967e = a0Var;
+                this.f30014d = flowCollector;
+                this.f30015e = a0Var;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -135,20 +135,20 @@ public final class a0 implements bn.o<a> {
                     if (r0 == 0) goto L13
                     r0 = r11
                     jo.a0$b$a$a r0 = (jo.a0.b.a.C0421a) r0
-                    int r1 = r0.f29969e
+                    int r1 = r0.f30017e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f29969e = r1
+                    r0.f30017e = r1
                     goto L18
                 L13:
                     jo.a0$b$a$a r0 = new jo.a0$b$a$a
                     r0.<init>(r11)
                 L18:
-                    java.lang.Object r11 = r0.f29968d
+                    java.lang.Object r11 = r0.f30016d
                     java.lang.Object r1 = wr.b.f()
-                    int r2 = r0.f29969e
+                    int r2 = r0.f30017e
                     r3 = 1
                     if (r2 == 0) goto L32
                     if (r2 != r3) goto L2a
@@ -161,14 +161,14 @@ public final class a0 implements bn.o<a> {
                     throw r10
                 L32:
                     kotlin.c.b(r11)
-                    kotlinx.coroutines.flow.FlowCollector r11 = r9.f29966d
+                    kotlinx.coroutines.flow.FlowCollector r11 = r9.f30014d
                     android.net.Uri r10 = (android.net.Uri) r10
                     if (r10 == 0) goto Lae
-                    jo.a0 r2 = r9.f29967e
+                    jo.a0 r2 = r9.f30015e
                     android.content.Context r2 = jo.a0.b(r2)
                     android.content.ContentResolver r2 = r2.getContentResolver()
                     java.lang.String r2 = r2.getType(r10)
-                    jo.a0 r4 = r9.f29967e
+                    jo.a0 r4 = r9.f30015e
                     java.lang.String r4 = r4.d(r10)
                     android.webkit.MimeTypeMap r5 = android.webkit.MimeTypeMap.getSingleton()
                     java.lang.String r2 = r5.getExtensionFromMimeType(r2)
@@ -176,11 +176,11 @@ public final class a0 implements bn.o<a> {
                     java.lang.String r2 = r10.toString()
                     java.lang.String r2 = android.webkit.MimeTypeMap.getFileExtensionFromUrl(r2)
                 L61:
-                    jo.a0 r5 = r9.f29967e
+                    jo.a0 r5 = r9.f30015e
                     wp.c r5 = jo.a0.c(r5)
                     kotlin.jvm.internal.Intrinsics.checkNotNull(r2)
                     java.io.File r2 = r5.c(r2)
-                    jo.a0 r5 = r9.f29967e
+                    jo.a0 r5 = r9.f30015e
                     android.content.Context r5 = jo.a0.b(r5)
                     android.content.ContentResolver r5 = r5.getContentResolver()
                     java.io.InputStream r10 = r5.openInputStream(r10)
@@ -216,14 +216,14 @@ public final class a0 implements bn.o<a> {
                     bs.c.a(r5, r10)
                     throw r11
                 Lae:
-                    jo.a0$a$a r10 = jo.a0.a.C0420a.f29961a
+                    jo.a0$a$a r10 = jo.a0.a.C0420a.f30009a
                 Lb0:
-                    r0.f29969e = r3
+                    r0.f30017e = r3
                     java.lang.Object r10 = r11.emit(r10, r0)
                     if (r10 != r1) goto Lb9
                     return r1
                 Lb9:
-                    kotlin.Unit r10 = kotlin.Unit.f32008a
+                    kotlin.Unit r10 = kotlin.Unit.f32056a
                     return r10
                 */
                 throw new UnsupportedOperationException("Method not decompiled: jo.a0.b.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -231,17 +231,17 @@ public final class a0 implements bn.o<a> {
         }
 
         public b(Flow flow, a0 a0Var) {
-            this.f29964d = flow;
-            this.f29965e = a0Var;
+            this.f30012d = flow;
+            this.f30013e = a0Var;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f29964d.collect(new a(flowCollector, this.f29965e), continuation);
+            Object collect = this.f30012d.collect(new a(flowCollector, this.f30013e), continuation);
             if (collect == wr.b.f()) {
                 return collect;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -249,9 +249,9 @@ public final class a0 implements bn.o<a> {
         Intrinsics.checkNotNullParameter(openDocumentLauncher, "openDocumentLauncher");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f29958b = openDocumentLauncher;
-        this.f29959c = context;
-        this.f29960d = sdkFilesManager;
+        this.f30006b = openDocumentLauncher;
+        this.f30007c = context;
+        this.f30008d = sdkFilesManager;
     }
 
     @Override // bn.o
@@ -262,7 +262,7 @@ public final class a0 implements bn.o<a> {
     public final String d(Uri file) {
         String str;
         Intrinsics.checkNotNullParameter(file, "file");
-        Cursor query = this.f29959c.getContentResolver().query(file, null, null, null, null);
+        Cursor query = this.f30007c.getContentResolver().query(file, null, null, null, null);
         if (query != null) {
             query.moveToFirst();
         }
@@ -278,7 +278,7 @@ public final class a0 implements bn.o<a> {
     }
 
     public final void e() {
-        this.f29958b.b(new String[]{"image/*", "application/pdf"});
+        this.f30006b.b(new String[]{"image/*", "application/pdf"});
     }
 
     @Override // bn.o

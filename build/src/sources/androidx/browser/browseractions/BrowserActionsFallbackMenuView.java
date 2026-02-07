@@ -18,8 +18,8 @@ public class BrowserActionsFallbackMenuView extends LinearLayout {
 
     public BrowserActionsFallbackMenuView(@NonNull Context context, @NonNull AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f2325d = getResources().getDimensionPixelOffset(a.f38328b);
-        this.f2326e = getResources().getDimensionPixelOffset(a.f38327a);
+        this.f2325d = getResources().getDimensionPixelOffset(a.f38376b);
+        this.f2326e = getResources().getDimensionPixelOffset(a.f38375a);
     }
 
     @Override // android.widget.LinearLayout, android.view.View

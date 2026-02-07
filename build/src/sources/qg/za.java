@@ -5,30 +5,30 @@ import yi.c;
 final class za implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final za f47766a = new za();
+    static final za f47814a = new za();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f47767b;
+    private static final yi.c f47815b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f47768c;
+    private static final yi.c f47816c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f47769d;
+    private static final yi.c f47817d;
 
     static {
         c.b a10 = yi.c.a("languageOption");
         v1 v1Var = new v1();
         v1Var.a(3);
-        f47767b = a10.b(v1Var.b()).a();
+        f47815b = a10.b(v1Var.b()).a();
         c.b a11 = yi.c.a("isUsingLegacyApi");
         v1 v1Var2 = new v1();
         v1Var2.a(4);
-        f47768c = a11.b(v1Var2.b()).a();
+        f47816c = a11.b(v1Var2.b()).a();
         c.b a12 = yi.c.a("sdkVersion");
         v1 v1Var3 = new v1();
         v1Var3.a(5);
-        f47769d = a12.b(v1Var3.b()).a();
+        f47817d = a12.b(v1Var3.b()).a();
     }
 
     private za() {
@@ -37,8 +37,8 @@ final class za implements yi.d {
     @Override // yi.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         yi.e eVar = (yi.e) obj2;
-        eVar.a(f47767b, ((wh) obj).a());
-        eVar.a(f47768c, null);
-        eVar.a(f47769d, null);
+        eVar.a(f47815b, ((wh) obj).a());
+        eVar.a(f47816c, null);
+        eVar.a(f47817d, null);
     }
 }

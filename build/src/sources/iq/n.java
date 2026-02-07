@@ -10,18 +10,18 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class n implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f29252a;
+    private final TextInputLayout f29300a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputEditText f29253b;
+    public final TextInputEditText f29301b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f29254c;
+    public final TextInputLayout f29302c;
 
     private n(TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextInputLayout textInputLayout2) {
-        this.f29252a = textInputLayout;
-        this.f29253b = textInputEditText;
-        this.f29254c = textInputLayout2;
+        this.f29300a = textInputLayout;
+        this.f29301b = textInputEditText;
+        this.f29302c = textInputLayout2;
     }
 
     public static n a(View view) {
@@ -49,6 +49,6 @@ public final class n implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public TextInputLayout getRoot() {
-        return this.f29252a;
+        return this.f29300a;
     }
 }

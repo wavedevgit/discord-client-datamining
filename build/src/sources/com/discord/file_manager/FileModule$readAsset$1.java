@@ -153,7 +153,7 @@ final class FileModule$readAsset$1 extends k implements Function2<CoroutineScope
             com.facebook.react.bridge.Promise r0 = r6.$promise
             r0.reject(r7)
         Lcb:
-            kotlin.Unit r7 = kotlin.Unit.f32008a
+            kotlin.Unit r7 = kotlin.Unit.f32056a
             return r7
         Lce:
             java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
@@ -166,6 +166,6 @@ final class FileModule$readAsset$1 extends k implements Function2<CoroutineScope
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((FileModule$readAsset$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

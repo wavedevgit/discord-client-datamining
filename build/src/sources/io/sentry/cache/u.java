@@ -26,13 +26,13 @@ import java.util.Map;
 public final class u extends c4 {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Charset f27997c = Charset.forName("UTF-8");
+    private static final Charset f28045c = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private k7 f27998a;
+    private k7 f28046a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.util.r f27999b = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.l
+    private final io.sentry.util.r f28047b = new io.sentry.util.r(new r.a() { // from class: io.sentry.cache.l
         @Override // io.sentry.util.r.a
         public final Object a() {
             return u.w(u.this);
@@ -49,12 +49,12 @@ public final class u extends c4 {
         /* renamed from: c */
         public Breadcrumb b(byte[] bArr) {
             try {
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bArr), u.f27997c));
-                Breadcrumb breadcrumb = (Breadcrumb) u.this.f27998a.getSerializer().c(bufferedReader, Breadcrumb.class);
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bArr), u.f28045c));
+                Breadcrumb breadcrumb = (Breadcrumb) u.this.f28046a.getSerializer().c(bufferedReader, Breadcrumb.class);
                 bufferedReader.close();
                 return breadcrumb;
             } catch (Throwable th2) {
-                u.this.f27998a.getLogger().a(SentryLevel.ERROR, th2, "Error reading entity from scope cache", new Object[0]);
+                u.this.f28046a.getLogger().a(SentryLevel.ERROR, th2, "Error reading entity from scope cache", new Object[0]);
                 return null;
             }
         }
@@ -62,9 +62,9 @@ public final class u extends c4 {
         @Override // io.sentry.cache.tape.c.a
         /* renamed from: d */
         public void a(Breadcrumb breadcrumb, OutputStream outputStream) {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, u.f27997c));
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, u.f28045c));
             try {
-                u.this.f27998a.getSerializer().a(breadcrumb, bufferedWriter);
+                u.this.f28046a.getSerializer().a(breadcrumb, bufferedWriter);
                 bufferedWriter.close();
             } catch (Throwable th2) {
                 try {
@@ -78,15 +78,15 @@ public final class u extends c4 {
     }
 
     public u(k7 k7Var) {
-        this.f27998a = k7Var;
+        this.f28046a = k7Var;
     }
 
     private void C(String str) {
-        d.a(this.f27998a, ".scope-cache", str);
+        d.a(this.f28046a, ".scope-cache", str);
     }
 
     private void F(final Runnable runnable) {
-        if (!this.f27998a.isEnableScopePersistence()) {
+        if (!this.f28046a.isEnableScopePersistence()) {
             return;
         }
         if (Thread.currentThread().getName().contains("SentryExecutor")) {
@@ -94,19 +94,19 @@ public final class u extends c4 {
                 runnable.run();
                 return;
             } catch (Throwable th2) {
-                this.f27998a.getLogger().b(SentryLevel.ERROR, "Serialization task failed", th2);
+                this.f28046a.getLogger().b(SentryLevel.ERROR, "Serialization task failed", th2);
                 return;
             }
         }
         try {
-            this.f27998a.getExecutorService().submit(new Runnable() { // from class: io.sentry.cache.s
+            this.f28046a.getExecutorService().submit(new Runnable() { // from class: io.sentry.cache.s
                 @Override // java.lang.Runnable
                 public final void run() {
                     u.x(u.this, runnable);
                 }
             });
         } catch (Throwable th3) {
-            this.f27998a.getLogger().b(SentryLevel.ERROR, "Serialization task could not be scheduled", th3);
+            this.f28046a.getLogger().b(SentryLevel.ERROR, "Serialization task could not be scheduled", th3);
         }
     }
 
@@ -116,7 +116,7 @@ public final class u extends c4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void H(Object obj, String str) {
-        G(this.f27998a, obj, str);
+        G(this.f28046a, obj, str);
     }
 
     public static /* synthetic */ void o(u uVar, e8 e8Var, IScope iScope) {
@@ -139,9 +139,9 @@ public final class u extends c4 {
     public static /* synthetic */ void u(u uVar) {
         uVar.getClass();
         try {
-            ((io.sentry.cache.tape.c) uVar.f27999b.a()).clear();
+            ((io.sentry.cache.tape.c) uVar.f28047b.a()).clear();
         } catch (IOException e10) {
-            uVar.f27998a.getLogger().b(SentryLevel.ERROR, "Failed to clear breadcrumbs from file queue", e10);
+            uVar.f28046a.getLogger().b(SentryLevel.ERROR, "Failed to clear breadcrumbs from file queue", e10);
         }
     }
 
@@ -155,22 +155,22 @@ public final class u extends c4 {
 
     public static /* synthetic */ io.sentry.cache.tape.c w(u uVar) {
         io.sentry.cache.tape.d a10;
-        File b10 = d.b(uVar.f27998a, ".scope-cache");
+        File b10 = d.b(uVar.f28046a, ".scope-cache");
         if (b10 == null) {
-            uVar.f27998a.getLogger().c(SentryLevel.INFO, "Cache dir is not set, cannot store in scope cache", new Object[0]);
+            uVar.f28046a.getLogger().c(SentryLevel.INFO, "Cache dir is not set, cannot store in scope cache", new Object[0]);
             return io.sentry.cache.tape.c.C();
         }
         File file = new File(b10, "breadcrumbs.json");
         try {
             try {
-                a10 = new d.a(file).b(uVar.f27998a.getMaxBreadcrumbs()).a();
+                a10 = new d.a(file).b(uVar.f28046a.getMaxBreadcrumbs()).a();
             } catch (IOException e10) {
-                uVar.f27998a.getLogger().b(SentryLevel.ERROR, "Failed to create breadcrumbs queue", e10);
+                uVar.f28046a.getLogger().b(SentryLevel.ERROR, "Failed to create breadcrumbs queue", e10);
                 return io.sentry.cache.tape.c.C();
             }
         } catch (IOException unused) {
             file.delete();
-            a10 = new d.a(file).b(uVar.f27998a.getMaxBreadcrumbs()).a();
+            a10 = new d.a(file).b(uVar.f28046a.getMaxBreadcrumbs()).a();
         }
         return io.sentry.cache.tape.c.s(a10, new a());
     }
@@ -180,23 +180,23 @@ public final class u extends c4 {
         try {
             runnable.run();
         } catch (Throwable th2) {
-            uVar.f27998a.getLogger().b(SentryLevel.ERROR, "Serialization task failed", th2);
+            uVar.f28046a.getLogger().b(SentryLevel.ERROR, "Serialization task failed", th2);
         }
     }
 
     public static /* synthetic */ void z(u uVar, Breadcrumb breadcrumb) {
         uVar.getClass();
         try {
-            ((io.sentry.cache.tape.c) uVar.f27999b.a()).g(breadcrumb);
+            ((io.sentry.cache.tape.c) uVar.f28047b.a()).g(breadcrumb);
         } catch (IOException e10) {
-            uVar.f27998a.getLogger().b(SentryLevel.ERROR, "Failed to add breadcrumb to file queue", e10);
+            uVar.f28046a.getLogger().b(SentryLevel.ERROR, "Failed to add breadcrumb to file queue", e10);
         }
     }
 
     public Object D(k7 k7Var, String str, Class cls) {
         if (str.equals("breadcrumbs.json")) {
             try {
-                return cls.cast(((io.sentry.cache.tape.c) this.f27999b.a()).p());
+                return cls.cast(((io.sentry.cache.tape.c) this.f28047b.a()).p());
             } catch (IOException unused) {
                 k7Var.getLogger().c(SentryLevel.ERROR, "Unable to read serialized breadcrumbs from QueueFile", new Object[0]);
                 return null;
@@ -207,9 +207,9 @@ public final class u extends c4 {
 
     public void E() {
         try {
-            ((io.sentry.cache.tape.c) this.f27999b.a()).clear();
+            ((io.sentry.cache.tape.c) this.f28047b.a()).clear();
         } catch (IOException e10) {
-            this.f27998a.getLogger().b(SentryLevel.ERROR, "Failed to clear breadcrumbs from file queue", e10);
+            this.f28046a.getLogger().b(SentryLevel.ERROR, "Failed to clear breadcrumbs from file queue", e10);
         }
         C("user.json");
         C("level.json");

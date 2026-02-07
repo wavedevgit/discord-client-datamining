@@ -45,7 +45,7 @@ public /* synthetic */ class ChannelMentionContentNode$$serializer implements h0
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] access$get$childSerializers$cp = ChannelMentionContentNode.access$get$childSerializers$cp();
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{n2Var, gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u(n2Var), gt.a.u((KSerializer) access$get$childSerializers$cp[4].getValue()), gt.a.u((KSerializer) access$get$childSerializers$cp[5].getValue())};
     }
 
@@ -66,7 +66,7 @@ public /* synthetic */ class ChannelMentionContentNode$$serializer implements h0
         String str5 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             list2 = (List) b10.n(serialDescriptor, 5, (DeserializationStrategy) access$get$childSerializers$cp[5].getValue(), null);
             str = m10;
             str4 = (String) b10.n(serialDescriptor, 3, n2Var, null);
@@ -93,15 +93,15 @@ public /* synthetic */ class ChannelMentionContentNode$$serializer implements h0
                         i11 |= 1;
                         continue;
                     case 1:
-                        str6 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str6);
                         i11 |= 2;
                         break;
                     case 2:
-                        str7 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str7);
                         i11 |= 4;
                         break;
                     case 3:
-                        str8 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str8);
                         i11 |= 8;
                         break;
                     case 4:

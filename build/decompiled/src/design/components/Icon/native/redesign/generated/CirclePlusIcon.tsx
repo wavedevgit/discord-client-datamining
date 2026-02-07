@@ -40,23 +40,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/CirclePlusIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun85138: for (var _fun85138_ip = 0;;) switch (_fun85138_ip) {
+        _fun85569: for (var _fun85569_ip = 0;;) switch (_fun85569_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
                 var12 = var2.secondaryColor;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun85138_ip = 24;
-                    continue _fun85138
+                    _fun85569_ip = 24;
+                    continue _fun85569
                 }
             case 20:
                 var12 = 'transparent';
             case 24:
                 var10 = var2.color;
                 if (!(var10 === var3)) {
-                    _fun85138_ip = 67;
-                    continue _fun85138
+                    _fun85569_ip = 67;
+                    continue _fun85569
                 }
             case 33:
                 var1 = _closure1_slot1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CirclePlusIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3152, 10934, 10935, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 3152, 10972, 10973, 2]);

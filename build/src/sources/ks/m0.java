@@ -8,7 +8,7 @@ import ks.w0;
 public class m0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final m0 f35363d = new m0();
+    public static final m0 f35411d = new m0();
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {

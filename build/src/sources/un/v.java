@@ -13,16 +13,16 @@ public final class v implements Parcelable {
     public static final Parcelable.Creator<v> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f51828d;
+    private final String f51876d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f51829e;
+    private final b f51877e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Size f51830i;
+    private final Size f51878i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f51831o;
+    private final int f51879o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -46,31 +46,31 @@ public final class v implements Parcelable {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f51832d = new b("User", 0);
+        public static final b f51880d = new b("User", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f51833e = new b("Environment", 1);
+        public static final b f51881e = new b("Environment", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f51834i = new b("Unknown", 2);
+        public static final b f51882i = new b("Unknown", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ b[] f51835o;
+        private static final /* synthetic */ b[] f51883o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51836p;
+        private static final /* synthetic */ EnumEntries f51884p;
 
         static {
             b[] a10 = a();
-            f51835o = a10;
-            f51836p = xr.a.a(a10);
+            f51883o = a10;
+            f51884p = xr.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f51832d, f51833e, f51834i};
+            return new b[]{f51880d, f51881e, f51882i};
         }
 
         public static b valueOf(String str) {
@@ -78,7 +78,7 @@ public final class v implements Parcelable {
         }
 
         public static b[] values() {
-            return (b[]) f51835o.clone();
+            return (b[]) f51883o.clone();
         }
     }
 
@@ -86,29 +86,29 @@ public final class v implements Parcelable {
         Intrinsics.checkNotNullParameter(label, "label");
         Intrinsics.checkNotNullParameter(facingMode, "facingMode");
         Intrinsics.checkNotNullParameter(size, "size");
-        this.f51828d = label;
-        this.f51829e = facingMode;
-        this.f51830i = size;
-        this.f51831o = i10;
+        this.f51876d = label;
+        this.f51877e = facingMode;
+        this.f51878i = size;
+        this.f51879o = i10;
     }
 
     public final double a() {
-        if (this.f51830i.getHeight() == 0) {
+        if (this.f51878i.getHeight() == 0) {
             return 0.0d;
         }
-        return this.f51830i.getWidth() / this.f51830i.getHeight();
+        return this.f51878i.getWidth() / this.f51878i.getHeight();
     }
 
     public final b b() {
-        return this.f51829e;
+        return this.f51877e;
     }
 
     public final int c() {
-        return this.f51831o;
+        return this.f51879o;
     }
 
     public final String d() {
-        return this.f51828d;
+        return this.f51876d;
     }
 
     @Override // android.os.Parcelable
@@ -117,19 +117,19 @@ public final class v implements Parcelable {
     }
 
     public final Size e() {
-        return this.f51830i;
+        return this.f51878i;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f51828d);
-        dest.writeString(this.f51829e.name());
-        dest.writeSize(this.f51830i);
-        dest.writeInt(this.f51831o);
+        dest.writeString(this.f51876d);
+        dest.writeString(this.f51877e.name());
+        dest.writeSize(this.f51878i);
+        dest.writeInt(this.f51879o);
     }
 
     public /* synthetic */ v(String str, b bVar, Size size, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i11 & 1) != 0 ? "" : str, (i11 & 2) != 0 ? b.f51834i : bVar, (i11 & 4) != 0 ? new Size(0, 0) : size, (i11 & 8) != 0 ? 0 : i10);
+        this((i11 & 1) != 0 ? "" : str, (i11 & 2) != 0 ? b.f51882i : bVar, (i11 & 4) != 0 ? new Size(0, 0) : size, (i11 & 8) != 0 ? 0 : i10);
     }
 }

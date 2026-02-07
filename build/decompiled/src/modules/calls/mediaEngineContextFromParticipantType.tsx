@@ -52,4 +52,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3525, 3512, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3524, 3511, 2]);

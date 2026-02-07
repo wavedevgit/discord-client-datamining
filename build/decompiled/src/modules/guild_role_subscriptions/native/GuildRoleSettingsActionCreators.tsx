@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.pushTierTemplateSelectionScene = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14931, 660, 8180, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14974, 660, 8224, 2]);

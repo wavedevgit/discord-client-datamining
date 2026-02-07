@@ -13,23 +13,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b0 extends d {
 
     /* renamed from: f0  reason: collision with root package name */
-    public static final a f31768f0 = new a(null);
+    public static final a f31816f0 = new a(null);
     private float W;
     private float X;
     private float Y;
     private float Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private float f31769a0;
+    private float f31817a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private float f31770b0;
+    private float f31818b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private Handler f31771c0;
+    private Handler f31819c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f31772d0;
+    private int f31820d0;
     private float O = Float.MIN_VALUE;
     private float P = Float.MIN_VALUE;
     private float Q = Float.MIN_VALUE;
@@ -40,7 +40,7 @@ public final class b0 extends d {
     private int V = 1;
 
     /* renamed from: e0  reason: collision with root package name */
-    private final Runnable f31773e0 = new Runnable() { // from class: kn.a0
+    private final Runnable f31821e0 = new Runnable() { // from class: kn.a0
         @Override // java.lang.Runnable
         public final void run() {
             b0.d1(b0.this);
@@ -61,13 +61,13 @@ public final class b0 extends d {
     public static final class b extends d.c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f31774d = new a(null);
+        public static final a f31822d = new a(null);
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f31775b = b0.class;
+        private final Class f31823b = b0.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f31776c = "TapGestureHandler";
+        private final String f31824c = "TapGestureHandler";
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a {
@@ -81,12 +81,12 @@ public final class b0 extends d {
 
         @Override // kn.d.c
         public String d() {
-            return this.f31776c;
+            return this.f31824c;
         }
 
         @Override // kn.d.c
         public Class e() {
-            return this.f31775b;
+            return this.f31823b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -138,22 +138,22 @@ public final class b0 extends d {
     }
 
     private final void c1() {
-        Handler handler = this.f31771c0;
+        Handler handler = this.f31819c0;
         if (handler == null) {
-            this.f31771c0 = new Handler(Looper.getMainLooper());
+            this.f31819c0 = new Handler(Looper.getMainLooper());
         } else {
             Intrinsics.checkNotNull(handler);
             handler.removeCallbacksAndMessages(null);
         }
-        int i10 = this.f31772d0 + 1;
-        this.f31772d0 = i10;
+        int i10 = this.f31820d0 + 1;
+        this.f31820d0 = i10;
         if (i10 == this.T && this.V >= this.U) {
             k();
             return;
         }
-        Handler handler2 = this.f31771c0;
+        Handler handler2 = this.f31819c0;
         Intrinsics.checkNotNull(handler2);
-        handler2.postDelayed(this.f31773e0, this.S);
+        handler2.postDelayed(this.f31821e0, this.S);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -162,11 +162,11 @@ public final class b0 extends d {
     }
 
     private final boolean e1() {
-        float f10 = (this.f31769a0 - this.W) + this.Y;
+        float f10 = (this.f31817a0 - this.W) + this.Y;
         if (this.O != Float.MIN_VALUE && Math.abs(f10) > this.O) {
             return true;
         }
-        float f11 = (this.f31770b0 - this.X) + this.Z;
+        float f11 = (this.f31818b0 - this.X) + this.Z;
         if (this.P != Float.MIN_VALUE && Math.abs(f11) > this.P) {
             return true;
         }
@@ -179,21 +179,21 @@ public final class b0 extends d {
     }
 
     private final void f1() {
-        Handler handler = this.f31771c0;
+        Handler handler = this.f31819c0;
         if (handler == null) {
-            this.f31771c0 = new Handler(Looper.getMainLooper());
+            this.f31819c0 = new Handler(Looper.getMainLooper());
         } else {
             Intrinsics.checkNotNull(handler);
             handler.removeCallbacksAndMessages(null);
         }
-        Handler handler2 = this.f31771c0;
+        Handler handler2 = this.f31819c0;
         Intrinsics.checkNotNull(handler2);
-        handler2.postDelayed(this.f31773e0, this.R);
+        handler2.postDelayed(this.f31821e0, this.R);
     }
 
     @Override // kn.d
     protected void j0() {
-        Handler handler = this.f31771c0;
+        Handler handler = this.f31819c0;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
@@ -215,22 +215,22 @@ public final class b0 extends d {
             if (S == 0) {
                 this.Y = 0.0f;
                 this.Z = 0.0f;
-                k kVar = k.f31846a;
+                k kVar = k.f31894a;
                 this.W = kVar.b(sourceEvent, true);
                 this.X = kVar.c(sourceEvent, true);
             }
             if (actionMasked != 5 && actionMasked != 6) {
-                k kVar2 = k.f31846a;
-                this.f31769a0 = kVar2.b(sourceEvent, true);
-                this.f31770b0 = kVar2.c(sourceEvent, true);
+                k kVar2 = k.f31894a;
+                this.f31817a0 = kVar2.b(sourceEvent, true);
+                this.f31818b0 = kVar2.c(sourceEvent, true);
             } else {
-                this.Y += this.f31769a0 - this.W;
-                this.Z += this.f31770b0 - this.X;
-                k kVar3 = k.f31846a;
-                this.f31769a0 = kVar3.b(sourceEvent, true);
+                this.Y += this.f31817a0 - this.W;
+                this.Z += this.f31818b0 - this.X;
+                k kVar3 = k.f31894a;
+                this.f31817a0 = kVar3.b(sourceEvent, true);
                 float c10 = kVar3.c(sourceEvent, true);
-                this.f31770b0 = c10;
-                this.W = this.f31769a0;
+                this.f31818b0 = c10;
+                this.W = this.f31817a0;
                 this.X = c10;
             }
             if (this.V < sourceEvent.getPointerCount()) {
@@ -263,9 +263,9 @@ public final class b0 extends d {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kn.d
     public void o0() {
-        this.f31772d0 = 0;
+        this.f31820d0 = 0;
         this.V = 0;
-        Handler handler = this.f31771c0;
+        Handler handler = this.f31819c0;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }

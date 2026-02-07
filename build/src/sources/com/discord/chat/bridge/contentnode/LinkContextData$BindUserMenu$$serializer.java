@@ -53,10 +53,10 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        jt.h hVar = jt.h.f31005a;
+        jt.h hVar = jt.h.f31053a;
         KSerializer u10 = gt.a.u(hVar);
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{n2.f31041a, u10, UserId$$serializer.INSTANCE, gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(hVar), gt.a.u(ChannelId$$serializer.INSTANCE)};
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{n2.f31089a, u10, UserId$$serializer.INSTANCE, gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(p0Var), gt.a.u(RoleColors$$serializer.INSTANCE), gt.a.u(hVar), gt.a.u(ChannelId$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -79,8 +79,8 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
         String str2 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            jt.h hVar = jt.h.f31005a;
-            p0 p0Var = p0.f31057a;
+            jt.h hVar = jt.h.f31053a;
+            p0 p0Var = p0.f31105a;
             str = m10;
             bool = (Boolean) b10.n(serialDescriptor, 7, hVar, null);
             roleColors = (RoleColors) b10.n(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, null);
@@ -114,7 +114,7 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i11 = 7;
                         break;
                     case 1:
-                        bool4 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31005a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, 1, jt.h.f31053a, bool4);
                         i12 |= 2;
                         i11 = 7;
                         break;
@@ -124,17 +124,17 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i11 = 7;
                         break;
                     case 3:
-                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f31057a, num6);
+                        num6 = (Integer) b10.n(serialDescriptor, 3, p0.f31105a, num6);
                         i12 |= 8;
                         i11 = 7;
                         break;
                     case 4:
-                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num5);
+                        num5 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num5);
                         i12 |= 16;
                         i11 = 7;
                         break;
                     case 5:
-                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31057a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f31105a, num4);
                         i12 |= 32;
                         i11 = 7;
                         continue;
@@ -143,7 +143,7 @@ public /* synthetic */ class LinkContextData$BindUserMenu$$serializer implements
                         i12 |= 64;
                         break;
                     case 7:
-                        bool3 = (Boolean) b10.n(serialDescriptor, i11, jt.h.f31005a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, i11, jt.h.f31053a, bool3);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:

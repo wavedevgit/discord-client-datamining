@@ -9,13 +9,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun64072: for (var _fun64072_ip = 0;;) switch (_fun64072_ip) {
+        _fun64522: for (var _fun64522_ip = 0;;) switch (_fun64522_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun64072_ip = 257;
-                    continue _fun64072
+                    _fun64522_ip = 257;
+                    continue _fun64522
                 }
             case 12:
                 var3 = _closure1_slot0;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isIOS;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun64072_ip = 255;
-                    continue _fun64072
+                    _fun64522_ip = 255;
+                    continue _fun64522
                 }
             case 52:
                 var3 = _closure1_slot0;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun64072_ip = 94;
-                    continue _fun64072
+                    _fun64522_ip = 94;
+                    continue _fun64522
                 }
             case 82:
                 var2 = _closure1_slot3;
@@ -49,50 +49,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot4;
                 var2 = var2.NONE;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 243;
-                    continue _fun64072
+                    _fun64522_ip = 243;
+                    continue _fun64522
                 }
             case 111:
                 var2 = _closure1_slot4;
                 var2 = var2.LIGHT;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 231;
-                    continue _fun64072
+                    _fun64522_ip = 231;
+                    continue _fun64522
                 }
             case 125:
                 var2 = _closure1_slot4;
                 var2 = var2.MODERATE;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 231;
-                    continue _fun64072
+                    _fun64522_ip = 231;
+                    continue _fun64522
                 }
             case 139:
                 var2 = _closure1_slot4;
                 var2 = var2.SEVERE;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 219;
-                    continue _fun64072
+                    _fun64522_ip = 219;
+                    continue _fun64522
                 }
             case 153:
                 var2 = _closure1_slot4;
                 var2 = var2.CRITICAL;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 207;
-                    continue _fun64072
+                    _fun64522_ip = 207;
+                    continue _fun64522
                 }
             case 167:
                 var2 = _closure1_slot4;
                 var2 = var2.EMERGENCY;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 207;
-                    continue _fun64072
+                    _fun64522_ip = 207;
+                    continue _fun64522
                 }
             case 181:
                 var2 = _closure1_slot4;
                 var2 = var2.SHUTDOWN;
                 if (!(var2 !== var0)) {
-                    _fun64072_ip = 207;
-                    continue _fun64072
+                    _fun64522_ip = 207;
+                    continue _fun64522
                 }
             case 195:
                 var2 = _closure1_slot3;
@@ -215,4 +215,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getThermalState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 7971, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 8015, 2]);

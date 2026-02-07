@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function1;
 public class f implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeConstructor f34731d;
+    private final AbstractTypeConstructor f34779d;
 
     public f(AbstractTypeConstructor abstractTypeConstructor) {
-        this.f34731d = abstractTypeConstructor;
+        this.f34779d = abstractTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Iterable w10;
-        w10 = AbstractTypeConstructor.w(this.f34731d, (TypeConstructor) obj);
+        w10 = AbstractTypeConstructor.w(this.f34779d, (TypeConstructor) obj);
         return w10;
     }
 }

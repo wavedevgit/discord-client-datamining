@@ -112,7 +112,7 @@ public final class ChatInputViewManager extends ViewGroupManager<ChatInputRootVi
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

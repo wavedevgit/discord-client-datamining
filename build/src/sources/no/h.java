@@ -17,53 +17,53 @@ import jo.n4;
 public final class h implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f41043a;
+    private final CoordinatorLayout f41091a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f41044b;
+    public final TextView f41092b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f41045c;
+    public final Button f41093c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f41046d;
+    public final ImageView f41094d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f41047e;
+    public final TextView f41095e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ImageView f41048f;
+    public final ImageView f41096f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final CardView f41049g;
+    public final CardView f41097g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f41050h;
+    public final Pi2NavigationBar f41098h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f41051i;
+    public final TextView f41099i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final ButtonWithLoadingIndicator f41052j;
+    public final ButtonWithLoadingIndicator f41100j;
 
     private h(CoordinatorLayout coordinatorLayout, TextView textView, Button button, ImageView imageView, TextView textView2, ImageView imageView2, CardView cardView, Pi2NavigationBar pi2NavigationBar, TextView textView3, ButtonWithLoadingIndicator buttonWithLoadingIndicator) {
-        this.f41043a = coordinatorLayout;
-        this.f41044b = textView;
-        this.f41045c = button;
-        this.f41046d = imageView;
-        this.f41047e = textView2;
-        this.f41048f = imageView2;
-        this.f41049g = cardView;
-        this.f41050h = pi2NavigationBar;
-        this.f41051i = textView3;
-        this.f41052j = buttonWithLoadingIndicator;
+        this.f41091a = coordinatorLayout;
+        this.f41092b = textView;
+        this.f41093c = button;
+        this.f41094d = imageView;
+        this.f41095e = textView2;
+        this.f41096f = imageView2;
+        this.f41097g = cardView;
+        this.f41098h = pi2NavigationBar;
+        this.f41099i = textView3;
+        this.f41100j = buttonWithLoadingIndicator;
     }
 
     public static h a(View view) {
-        int i10 = m4.f30381d;
+        int i10 = m4.f30429d;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = m4.f30409r;
+            i10 = m4.f30457r;
             Button button = (Button) e4.a.a(view, i10);
             if (button != null) {
                 i10 = m4.B;
@@ -101,7 +101,7 @@ public final class h implements ViewBinding {
     }
 
     public static h c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f30553i, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f30601i, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -111,6 +111,6 @@ public final class h implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f41043a;
+        return this.f41091a;
     }
 }

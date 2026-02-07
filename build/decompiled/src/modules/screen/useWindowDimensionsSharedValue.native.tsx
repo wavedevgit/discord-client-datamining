@@ -71,13 +71,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = function() { // Environment: var3
         var0 = function() {
-            _fun100056: for (var _fun100056_ip = 0;;) switch (_fun100056_ip) {
+            _fun100545: for (var _fun100545_ip = 0;;) switch (_fun100545_ip) {
                 case 0:
                     var0 = arguments[0];
                     var1 = undefined;
                     if (!(var0 === var1)) {
-                        _fun100056_ip = 11;
-                        continue _fun100056
+                        _fun100545_ip = 11;
+                        continue _fun100545
                     }
                 case 9:
                     var0 = undefined;
@@ -86,23 +86,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 == var0;
                     var1 = undefined;
                     if (var2) {
-                        _fun100056_ip = 28;
-                        continue _fun100056
+                        _fun100545_ip = 28;
+                        continue _fun100545
                     }
                 case 22:
                     var1 = var0.ignoreKeyboard;
                 case 28:
                     var0 = true;
                     if (!(var0 !== var1)) {
-                        _fun100056_ip = 52;
-                        continue _fun100056
+                        _fun100545_ip = 52;
+                        continue _fun100545
                     }
                 case 34:
                     var1 = _closure1_slot2;
                     var0 = var1.get;
                     var0 = var0.bind(var1)();
-                    _fun100056_ip = 68;
-                    continue _fun100056;
+                    _fun100545_ip = 68;
+                    continue _fun100545;
                 case 52:
                     var2 = _closure1_slot3;
                     var1 = var2.get;
@@ -131,13 +131,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/screen/useWindowDimensionsSharedValue.native.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun100057: for (var _fun100057_ip = 0;;) switch (_fun100057_ip) {
+        _fun100546: for (var _fun100546_ip = 0;;) switch (_fun100546_ip) {
             case 0:
                 var0 = arguments[0];
                 var1 = undefined;
                 if (!(var0 === var1)) {
-                    _fun100057_ip = 11;
-                    continue _fun100057
+                    _fun100546_ip = 11;
+                    continue _fun100546
                 }
             case 9:
                 var0 = undefined;
@@ -146,21 +146,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun100057_ip = 28;
-                    continue _fun100057
+                    _fun100546_ip = 28;
+                    continue _fun100546
                 }
             case 22:
                 var1 = var0.ignoreKeyboard;
             case 28:
                 var0 = true;
                 if (!(var0 !== var1)) {
-                    _fun100057_ip = 43;
-                    continue _fun100057
+                    _fun100546_ip = 43;
+                    continue _fun100546
                 }
             case 34:
                 var0 = _closure1_slot2;
-                _fun100057_ip = 50;
-                continue _fun100057;
+                _fun100546_ip = 50;
+                continue _fun100546;
             case 43:
                 var0 = _closure1_slot3;
             case 50:
@@ -170,4 +170,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getWindowDimensionsWorklet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3722, 1464, 5261, 5306, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3721, 1464, 5308, 5353, 2]);

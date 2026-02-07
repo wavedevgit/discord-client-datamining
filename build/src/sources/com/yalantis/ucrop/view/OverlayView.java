@@ -97,8 +97,8 @@ public class OverlayView extends View {
     }
 
     private void e(TypedArray typedArray) {
-        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f52920k, getResources().getDimensionPixelSize(vq.b.f52862a));
-        int color = typedArray.getColor(h.f52919j, getResources().getColor(vq.a.f52852c));
+        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f52968k, getResources().getDimensionPixelSize(vq.b.f52910a));
+        int color = typedArray.getColor(h.f52967j, getResources().getColor(vq.a.f52900c));
         this.C.setStrokeWidth(dimensionPixelSize);
         this.C.setColor(color);
         Paint paint = this.C;
@@ -110,12 +110,12 @@ public class OverlayView extends View {
     }
 
     private void f(TypedArray typedArray) {
-        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f52924o, getResources().getDimensionPixelSize(vq.b.f52863b));
-        int color = typedArray.getColor(h.f52921l, getResources().getColor(vq.a.f52853d));
+        int dimensionPixelSize = typedArray.getDimensionPixelSize(h.f52972o, getResources().getDimensionPixelSize(vq.b.f52911b));
+        int color = typedArray.getColor(h.f52969l, getResources().getColor(vq.a.f52901d));
         this.B.setStrokeWidth(dimensionPixelSize);
         this.B.setColor(color);
-        this.f19910r = typedArray.getInt(h.f52923n, 2);
-        this.f19911s = typedArray.getInt(h.f52922m, 2);
+        this.f19910r = typedArray.getInt(h.f52971n, 2);
+        this.f19911s = typedArray.getInt(h.f52970m, 2);
     }
 
     private void i(float f10, float f11) {
@@ -285,16 +285,16 @@ public class OverlayView extends View {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void g(TypedArray typedArray) {
-        this.f19916x = typedArray.getBoolean(h.f52917h, false);
-        int color = typedArray.getColor(h.f52918i, getResources().getColor(vq.a.f52854e));
+        this.f19916x = typedArray.getBoolean(h.f52965h, false);
+        int color = typedArray.getColor(h.f52966i, getResources().getColor(vq.a.f52902e));
         this.f19917y = color;
         this.A.setColor(color);
         this.A.setStyle(Paint.Style.STROKE);
         this.A.setStrokeWidth(1.0f);
         e(typedArray);
-        this.f19914v = typedArray.getBoolean(h.f52925p, true);
+        this.f19914v = typedArray.getBoolean(h.f52973p, true);
         f(typedArray);
-        this.f19915w = typedArray.getBoolean(h.f52926q, true);
+        this.f19915w = typedArray.getBoolean(h.f52974q, true);
     }
 
     @NonNull
@@ -478,9 +478,9 @@ public class OverlayView extends View {
         this.F = -1.0f;
         this.G = -1.0f;
         this.H = -1;
-        this.I = getResources().getDimensionPixelSize(vq.b.f52865d);
-        this.J = getResources().getDimensionPixelSize(vq.b.f52866e);
-        this.K = getResources().getDimensionPixelSize(vq.b.f52864c);
+        this.I = getResources().getDimensionPixelSize(vq.b.f52913d);
+        this.J = getResources().getDimensionPixelSize(vq.b.f52914e);
+        this.K = getResources().getDimensionPixelSize(vq.b.f52912c);
         d();
     }
 }

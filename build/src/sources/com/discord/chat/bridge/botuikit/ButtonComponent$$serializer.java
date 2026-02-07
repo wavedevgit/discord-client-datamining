@@ -50,8 +50,8 @@ public /* synthetic */ class ButtonComponent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{p0.f31057a, n2Var, ActionComponentState.Serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(n2Var), ButtonStyle.Serializer.INSTANCE, jt.h.f31005a, gt.a.u(ComponentEmoji$$serializer.INSTANCE), gt.a.u(n2Var), gt.a.u(n2Var)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{p0.f31105a, n2Var, ActionComponentState.Serializer.INSTANCE, gt.a.u(n2Var), gt.a.u(n2Var), ButtonStyle.Serializer.INSTANCE, jt.h.f31053a, gt.a.u(ComponentEmoji$$serializer.INSTANCE), gt.a.u(n2Var), gt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -76,7 +76,7 @@ public /* synthetic */ class ButtonComponent$$serializer implements h0 {
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             boolean C = b10.C(serialDescriptor, 6);
             str = (String) b10.n(serialDescriptor, 9, n2Var, null);
             componentEmoji = (ComponentEmoji) b10.n(serialDescriptor, 7, ComponentEmoji$$serializer.INSTANCE, null);
@@ -120,11 +120,11 @@ public /* synthetic */ class ButtonComponent$$serializer implements h0 {
                         i13 |= 4;
                         i12 = 9;
                     case 3:
-                        str9 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str9);
+                        str9 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str9);
                         i13 |= 8;
                         i12 = 9;
                     case 4:
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str8);
                         i13 |= 16;
                         i12 = 9;
                     case 5:
@@ -142,10 +142,10 @@ public /* synthetic */ class ButtonComponent$$serializer implements h0 {
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i12 = 9;
                     case 8:
-                        str7 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str7);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                     case 9:
-                        str6 = (String) b10.n(serialDescriptor, i12, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, i12, n2.f31089a, str6);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                     default:
                         throw new b0(o10);

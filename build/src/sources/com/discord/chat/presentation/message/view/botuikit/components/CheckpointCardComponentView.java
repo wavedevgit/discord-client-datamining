@@ -490,7 +490,7 @@ public final class CheckpointCardComponentView extends ConstraintLayout implemen
         this.transparent = Color.parseColor("#00000000");
         this.barUnfilledColor = Color.parseColor("#60000000");
         this.barIds = new Integer[10];
-        this.binding$delegate = qr.l.b(o.f48045i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.d
+        this.binding$delegate = qr.l.b(o.f48093i, new Function0() { // from class: com.discord.chat.presentation.message.view.botuikit.components.d
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 MessageComponentCheckpointCardViewBinding binding_delegate$lambda$6;

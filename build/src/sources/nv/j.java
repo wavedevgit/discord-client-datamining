@@ -3,17 +3,17 @@ package nv;
 public class j extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qv.i f41215a;
+    private final qv.i f41263a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41216b;
+    private final String f41264b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends sv.b {
         @Override // sv.e
         public sv.f a(sv.h hVar, sv.g gVar) {
             CharSequence a10;
-            if (hVar.a() >= pv.d.f45756a) {
+            if (hVar.a() >= pv.d.f45804a) {
                 return sv.f.c();
             }
             CharSequence line = hVar.getLine();
@@ -32,9 +32,9 @@ public class j extends sv.a {
 
     public j(int i10, String str) {
         qv.i iVar = new qv.i();
-        this.f41215a = iVar;
+        this.f41263a = iVar;
         iVar.o(i10);
-        this.f41216b = str;
+        this.f41264b = str;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -87,7 +87,7 @@ public class j extends sv.a {
 
     @Override // sv.a, sv.d
     public void b(rv.a aVar) {
-        aVar.a(this.f41216b, this.f41215a);
+        aVar.a(this.f41264b, this.f41263a);
     }
 
     @Override // sv.d
@@ -97,6 +97,6 @@ public class j extends sv.a {
 
     @Override // sv.d
     public qv.a e() {
-        return this.f41215a;
+        return this.f41263a;
     }
 }

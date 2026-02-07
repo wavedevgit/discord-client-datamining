@@ -1,81 +1,47 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = module;
-    var3 = function arg0, arg1, arg2, arg3() {
-        _fun94424: for (var _fun94424_ip = 0;;) switch (_fun94424_ip) {
-            case 0:
-                var5 = arg0;
-                var2 = arg1;
-                var0 = arg2;
-                var1 = var5.addEventListener;
-                var1 = !var1;
-                var4 = var2;
-                if (!var1) {
-                    _fun94424_ip = 32;
-                    continue _fun94424
-                }
-            case 24:
-                var1 = 'on';
-                var4 = var1 + var2;
-            case 32:
-                var3 = var5.addEventListener;
-                if (var3) {
-                    _fun94424_ip = 47;
-                    continue _fun94424
-                }
-            case 41:
-                var3 = var5.attachEvent;
-            case 47:
-                var2 = var3.call;
-                var6 = arg3;
-                var10 = var3;
-                var9 = var5;
-                var8 = var4;
-                var7 = var0;
-                var1 = var10[var2](var9, var8, var7, var6, var5);
-                return var0;
-        }
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        var5 = arg2;
+        var4 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var0 = 0;
+        var1 = var6[var0];
+        var3 = undefined;
+        var7 = var4.bind(var3)(var1);
+        var1 = var7.prototype;
+        var2 = Object.create(var1, {
+            constructor: {
+                value: var7
+            }
+        });
+        var9 = arg0;
+        var10 = var2;
+        var8 = var5;
+        var1 = new var10[var7](var9, var8, var7);
+        var2 = var1 instanceof Object ? var1 : var2;
+        var1 = var2.compare;
+        var0 = var6[var0];
+        var4 = var4.bind(var3)(var0);
+        var0 = var4.prototype;
+        var3 = Object.create(var0, {
+            constructor: {
+                value: var4
+            }
+        });
+        var9 = arg1;
+        var10 = var3;
+        var8 = var5;
+        var0 = new var10[var4](var9, var8, var7);
+        var0 = var0 instanceof Object ? var0 : var3;
+        var0 = var1.bind(var2)(var0);
+        return var0;
     };
-    var1.exports = var3;
-    var2 = var1.exports;
-    var2.on = var3;
-    var1 = var1.exports;
-    var0 = function arg0, arg1, arg2, arg3() {
-        _fun94425: for (var _fun94425_ip = 0;;) switch (_fun94425_ip) {
-            case 0:
-                var5 = arg0;
-                var2 = arg1;
-                var0 = arg2;
-                var1 = var5.removeEventListener;
-                var1 = !var1;
-                var4 = var2;
-                if (!var1) {
-                    _fun94425_ip = 32;
-                    continue _fun94425
-                }
-            case 24:
-                var1 = 'on';
-                var4 = var1 + var2;
-            case 32:
-                var3 = var5.removeEventListener;
-                if (var3) {
-                    _fun94425_ip = 47;
-                    continue _fun94425
-                }
-            case 41:
-                var3 = var5.detachEvent;
-            case 47:
-                var2 = var3.call;
-                var6 = arg3;
-                var10 = var3;
-                var9 = var5;
-                var8 = var4;
-                var7 = var0;
-                var1 = var10[var2](var9, var8, var7, var6, var5);
-                return var0;
-        }
-    };
-    var1.off = var0;
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12370]);

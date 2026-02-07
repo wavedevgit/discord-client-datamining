@@ -8,28 +8,28 @@ import un.v;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f54004a;
+    private final String f54052a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Size f54005b;
+    private final Size f54053b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final double f54006c;
+    private final double f54054c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Range f54007d;
+    private final Range f54055d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f54008e;
+    private final int f54056e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final v.b f54009f;
+    private final v.b f54057f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final o f54010g;
+    private final o f54058g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final v f54011h;
+    private final v f54059h;
 
     public l(String id2, Size size, double d10, Range targetFpsRange, int i10, v.b facingMode, o additionalOptions) {
         Intrinsics.checkNotNullParameter(id2, "id");
@@ -37,34 +37,34 @@ public final class l {
         Intrinsics.checkNotNullParameter(targetFpsRange, "targetFpsRange");
         Intrinsics.checkNotNullParameter(facingMode, "facingMode");
         Intrinsics.checkNotNullParameter(additionalOptions, "additionalOptions");
-        this.f54004a = id2;
-        this.f54005b = size;
-        this.f54006c = d10;
-        this.f54007d = targetFpsRange;
-        this.f54008e = i10;
-        this.f54009f = facingMode;
-        this.f54010g = additionalOptions;
-        this.f54011h = new v(id2, facingMode, size, (int) d10);
+        this.f54052a = id2;
+        this.f54053b = size;
+        this.f54054c = d10;
+        this.f54055d = targetFpsRange;
+        this.f54056e = i10;
+        this.f54057f = facingMode;
+        this.f54058g = additionalOptions;
+        this.f54059h = new v(id2, facingMode, size, (int) d10);
     }
 
     public final o a() {
-        return this.f54010g;
+        return this.f54058g;
     }
 
     public final v b() {
-        return this.f54011h;
+        return this.f54059h;
     }
 
     public final v.b c() {
-        return this.f54009f;
+        return this.f54057f;
     }
 
     public final String d() {
-        return this.f54004a;
+        return this.f54052a;
     }
 
     public final int e() {
-        return this.f54008e;
+        return this.f54056e;
     }
 
     public boolean equals(Object obj) {
@@ -75,32 +75,32 @@ public final class l {
             return false;
         }
         l lVar = (l) obj;
-        if (Intrinsics.areEqual(this.f54004a, lVar.f54004a) && Intrinsics.areEqual(this.f54005b, lVar.f54005b) && Double.compare(this.f54006c, lVar.f54006c) == 0 && Intrinsics.areEqual(this.f54007d, lVar.f54007d) && this.f54008e == lVar.f54008e && this.f54009f == lVar.f54009f && Intrinsics.areEqual(this.f54010g, lVar.f54010g)) {
+        if (Intrinsics.areEqual(this.f54052a, lVar.f54052a) && Intrinsics.areEqual(this.f54053b, lVar.f54053b) && Double.compare(this.f54054c, lVar.f54054c) == 0 && Intrinsics.areEqual(this.f54055d, lVar.f54055d) && this.f54056e == lVar.f54056e && this.f54057f == lVar.f54057f && Intrinsics.areEqual(this.f54058g, lVar.f54058g)) {
             return true;
         }
         return false;
     }
 
     public final Size f() {
-        return this.f54005b;
+        return this.f54053b;
     }
 
     public final Range g() {
-        return this.f54007d;
+        return this.f54055d;
     }
 
     public int hashCode() {
-        return (((((((((((this.f54004a.hashCode() * 31) + this.f54005b.hashCode()) * 31) + Double.hashCode(this.f54006c)) * 31) + this.f54007d.hashCode()) * 31) + Integer.hashCode(this.f54008e)) * 31) + this.f54009f.hashCode()) * 31) + this.f54010g.hashCode();
+        return (((((((((((this.f54052a.hashCode() * 31) + this.f54053b.hashCode()) * 31) + Double.hashCode(this.f54054c)) * 31) + this.f54055d.hashCode()) * 31) + Integer.hashCode(this.f54056e)) * 31) + this.f54057f.hashCode()) * 31) + this.f54058g.hashCode();
     }
 
     public String toString() {
-        String str = this.f54004a;
-        Size size = this.f54005b;
-        double d10 = this.f54006c;
-        Range range = this.f54007d;
-        int i10 = this.f54008e;
-        v.b bVar = this.f54009f;
-        o oVar = this.f54010g;
+        String str = this.f54052a;
+        Size size = this.f54053b;
+        double d10 = this.f54054c;
+        Range range = this.f54055d;
+        int i10 = this.f54056e;
+        v.b bVar = this.f54057f;
+        o oVar = this.f54058g;
         return "CameraChoice(id=" + str + ", size=" + size + ", maxFps=" + d10 + ", targetFpsRange=" + range + ", rotation=" + i10 + ", facingMode=" + bVar + ", additionalOptions=" + oVar + ")";
     }
 }

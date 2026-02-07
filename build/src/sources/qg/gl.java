@@ -5,23 +5,23 @@ import java.util.NoSuchElementException;
 abstract class gl extends r1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f47065d;
+    private final int f47113d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f47066e;
+    private int f47114e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public gl(int i10, int i11) {
         el.b(i11, i10, "index");
-        this.f47065d = i10;
-        this.f47066e = i11;
+        this.f47113d = i10;
+        this.f47114e = i11;
     }
 
     protected abstract Object a(int i10);
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final boolean hasNext() {
-        if (this.f47066e < this.f47065d) {
+        if (this.f47114e < this.f47113d) {
             return true;
         }
         return false;
@@ -29,7 +29,7 @@ abstract class gl extends r1 {
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        if (this.f47066e > 0) {
+        if (this.f47114e > 0) {
             return true;
         }
         return false;
@@ -38,8 +38,8 @@ abstract class gl extends r1 {
     @Override // java.util.Iterator, java.util.ListIterator
     public final Object next() {
         if (hasNext()) {
-            int i10 = this.f47066e;
-            this.f47066e = i10 + 1;
+            int i10 = this.f47114e;
+            this.f47114e = i10 + 1;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -47,14 +47,14 @@ abstract class gl extends r1 {
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return this.f47066e;
+        return this.f47114e;
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
         if (hasPrevious()) {
-            int i10 = this.f47066e - 1;
-            this.f47066e = i10;
+            int i10 = this.f47114e - 1;
+            this.f47114e = i10;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -62,6 +62,6 @@ abstract class gl extends r1 {
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return this.f47066e - 1;
+        return this.f47114e - 1;
     }
 }

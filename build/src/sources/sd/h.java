@@ -3,13 +3,13 @@ package sd;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public f f49894a;
+    public f f49942a;
 
     /* renamed from: b  reason: collision with root package name */
-    public boolean f49895b;
+    public boolean f49943b;
 
     public void a() {
-        this.f49894a = null;
-        this.f49895b = false;
+        this.f49942a = null;
+        this.f49943b = false;
     }
 }

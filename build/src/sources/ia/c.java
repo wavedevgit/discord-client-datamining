@@ -11,16 +11,16 @@ import o8.h;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CacheKey f26629a;
+    private final CacheKey f26677a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n f26630b;
+    private final n f26678b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f26632d = new LinkedHashSet();
+    private final LinkedHashSet f26680d = new LinkedHashSet();
 
     /* renamed from: c  reason: collision with root package name */
-    private final n.b f26631c = new a();
+    private final n.b f26679c = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements n.b {
@@ -39,14 +39,14 @@ public class c {
     public static class b implements CacheKey {
 
         /* renamed from: a  reason: collision with root package name */
-        private final CacheKey f26634a;
+        private final CacheKey f26682a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f26635b;
+        private final int f26683b;
 
         public b(CacheKey cacheKey, int i10) {
-            this.f26634a = cacheKey;
-            this.f26635b = i10;
+            this.f26682a = cacheKey;
+            this.f26683b = i10;
         }
 
         @Override // com.facebook.cache.common.CacheKey
@@ -56,7 +56,7 @@ public class c {
 
         @Override // com.facebook.cache.common.CacheKey
         public boolean b(Uri uri) {
-            return this.f26634a.b(uri);
+            return this.f26682a.b(uri);
         }
 
         @Override // com.facebook.cache.common.CacheKey
@@ -71,7 +71,7 @@ public class c {
             }
             if (obj instanceof b) {
                 b bVar = (b) obj;
-                if (this.f26635b == bVar.f26635b && this.f26634a.equals(bVar.f26634a)) {
+                if (this.f26683b == bVar.f26683b && this.f26682a.equals(bVar.f26682a)) {
                     return true;
                 }
             }
@@ -80,26 +80,26 @@ public class c {
 
         @Override // com.facebook.cache.common.CacheKey
         public int hashCode() {
-            return (this.f26634a.hashCode() * 1013) + this.f26635b;
+            return (this.f26682a.hashCode() * 1013) + this.f26683b;
         }
 
         public String toString() {
-            return h.b(this).b("imageCacheKey", this.f26634a).a("frameIndex", this.f26635b).toString();
+            return h.b(this).b("imageCacheKey", this.f26682a).a("frameIndex", this.f26683b).toString();
         }
     }
 
     public c(CacheKey cacheKey, n nVar) {
-        this.f26629a = cacheKey;
-        this.f26630b = nVar;
+        this.f26677a = cacheKey;
+        this.f26678b = nVar;
     }
 
     private b e(int i10) {
-        return new b(this.f26629a, i10);
+        return new b(this.f26677a, i10);
     }
 
     private synchronized CacheKey g() {
         CacheKey cacheKey;
-        Iterator it = this.f26632d.iterator();
+        Iterator it = this.f26680d.iterator();
         if (it.hasNext()) {
             cacheKey = (CacheKey) it.next();
             it.remove();
@@ -110,15 +110,15 @@ public class c {
     }
 
     public CloseableReference a(int i10, CloseableReference closeableReference) {
-        return this.f26630b.a(e(i10), closeableReference, this.f26631c);
+        return this.f26678b.a(e(i10), closeableReference, this.f26679c);
     }
 
     public boolean b(int i10) {
-        return this.f26630b.contains(e(i10));
+        return this.f26678b.contains(e(i10));
     }
 
     public CloseableReference c(int i10) {
-        return this.f26630b.get(e(i10));
+        return this.f26678b.get(e(i10));
     }
 
     public CloseableReference d() {
@@ -128,7 +128,7 @@ public class c {
             if (g10 == null) {
                 return null;
             }
-            d10 = this.f26630b.d(g10);
+            d10 = this.f26678b.d(g10);
         } while (d10 == null);
         return d10;
     }
@@ -136,9 +136,9 @@ public class c {
     public synchronized void f(CacheKey cacheKey, boolean z10) {
         try {
             if (z10) {
-                this.f26632d.add(cacheKey);
+                this.f26680d.add(cacheKey);
             } else {
-                this.f26632d.remove(cacheKey);
+                this.f26680d.remove(cacheKey);
             }
         } catch (Throwable th2) {
             throw th2;

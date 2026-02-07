@@ -23,13 +23,13 @@ import vn.b;
 public final class d implements e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f52776b = new a(null);
+    public static final a f52824b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final float[] f52777c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
+    private static final float[] f52825c = {-0.15f, -0.15f, -0.15f, -0.15f, 2.2f, -0.15f, -0.15f, -0.15f, -0.15f};
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f52778a = qr.l.a(new Function0() { // from class: vn.c
+    private final Lazy f52826a = qr.l.a(new Function0() { // from class: vn.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             vj.a c10;
@@ -56,12 +56,12 @@ public final class d implements e {
     }
 
     private final vj.a d() {
-        return (vj.a) this.f52778a.getValue();
+        return (vj.a) this.f52826a.getValue();
     }
 
     private final Bitmap e(Bitmap bitmap) {
         try {
-            return Toolkit.b(Toolkit.f16231a, bitmap, f52777c, null, 4, null);
+            return Toolkit.b(Toolkit.f16231a, bitmap, f52825c, null, 4, null);
         } catch (UnsatisfiedLinkError unused) {
             return null;
         }
@@ -71,8 +71,8 @@ public final class d implements e {
     public Object a(j0 j0Var, Rect rect, Continuation continuation) {
         Bitmap e10 = j0Var.e();
         if (e10 == null) {
-            Result.a aVar = Result.f32005e;
-            return Result.b(a.b.f52770a);
+            Result.a aVar = Result.f32053e;
+            return Result.b(a.b.f52818a);
         }
         Bitmap e11 = e(e10);
         if (e11 != null) {
@@ -88,34 +88,34 @@ public final class d implements e {
             Intrinsics.checkNotNullExpressionValue(l10, "getResult(...)");
             wj.a aVar2 = (wj.a) CollectionsKt.q0((List) l10, 0);
             if (aVar2 == null) {
-                Result.a aVar3 = Result.f32005e;
-                return Result.b(a.b.f52770a);
+                Result.a aVar3 = Result.f32053e;
+                return Result.b(a.b.f52818a);
             }
             String d10 = aVar2.d();
             if (d10 == null) {
-                Result.a aVar4 = Result.f32005e;
-                return Result.b(a.b.f52770a);
+                Result.a aVar4 = Result.f32053e;
+                return Result.b(a.b.f52818a);
             } else if (aVar2.c() == 2048) {
                 g.b bVar = new g.b(d10);
                 Rect rect2 = new Rect(0, 0, j0Var.f().l(), j0Var.f().h());
                 Rect a11 = aVar2.a();
                 if (a11 == null) {
-                    Result.a aVar5 = Result.f32005e;
-                    return Result.b(a.b.f52770a);
+                    Result.a aVar5 = Result.f32053e;
+                    return Result.b(a.b.f52818a);
                 }
                 rect2.inset(1, 1);
                 if (rect2.contains(a11)) {
-                    Result.a aVar6 = Result.f32005e;
+                    Result.a aVar6 = Result.f32053e;
                     return Result.b(new a.C0697a(bVar));
                 }
-                Result.a aVar7 = Result.f32005e;
-                return Result.b(a.b.f52770a);
+                Result.a aVar7 = Result.f32053e;
+                return Result.b(a.b.f52818a);
             } else {
-                Result.a aVar8 = Result.f32005e;
-                return Result.b(a.b.f52770a);
+                Result.a aVar8 = Result.f32053e;
+                return Result.b(a.b.f52818a);
             }
         } catch (ExecutionException unused) {
-            Result.a aVar9 = Result.f32005e;
+            Result.a aVar9 = Result.f32053e;
             return Result.b(kotlin.c.a(new b.C0698b()));
         }
     }

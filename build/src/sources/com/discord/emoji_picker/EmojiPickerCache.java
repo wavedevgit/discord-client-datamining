@@ -91,7 +91,7 @@ public final class EmojiPickerCache {
 
                     public final Object emit(Unit unit, Continuation<? super Unit> continuation) {
                         Object refreshDatabaseEmojis = EmojiPickerCache.this.refreshDatabaseEmojis(continuation);
-                        return refreshDatabaseEmojis == wr.b.f() ? refreshDatabaseEmojis : Unit.f32008a;
+                        return refreshDatabaseEmojis == wr.b.f() ? refreshDatabaseEmojis : Unit.f32056a;
                     }
                 };
                 this.label = 1;
@@ -99,12 +99,12 @@ public final class EmojiPickerCache {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -276,7 +276,7 @@ public final class EmojiPickerCache {
     public static final Unit emojiJsonConfig$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -334,7 +334,7 @@ public final class EmojiPickerCache {
         L48:
             boolean r2 = r5 instanceof com.facebook.react.bridge.ReactContext
             if (r2 != 0) goto L4f
-            kotlin.Unit r5 = kotlin.Unit.f32008a
+            kotlin.Unit r5 = kotlin.Unit.f32056a
             return r5
         L4f:
             java.util.List r2 = r4.buildEmojis()
@@ -361,7 +361,7 @@ public final class EmojiPickerCache {
             r2.<init>()
             r1.post(r2)
         L83:
-            kotlin.Unit r5 = kotlin.Unit.f32008a
+            kotlin.Unit r5 = kotlin.Unit.f32056a
             return r5
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.emoji_picker.EmojiPickerCache.refreshDatabaseEmojis(kotlin.coroutines.Continuation):java.lang.Object");
@@ -387,7 +387,7 @@ public final class EmojiPickerCache {
         }
         this.emojiCoreData = coreData;
         if (coreData.getHasGuildData()) {
-            this.emojiFetchEvents.b(Unit.f32008a);
+            this.emojiFetchEvents.b(Unit.f32056a);
         }
     }
 }

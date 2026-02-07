@@ -5,37 +5,37 @@ import yi.c;
 final class x3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x3 f42678a = new x3();
+    static final x3 f42726a = new x3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42679b;
+    private static final yi.c f42727b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42680c;
+    private static final yi.c f42728c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42681d;
+    private static final yi.c f42729d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42682e;
+    private static final yi.c f42730e;
 
     static {
         c.b a10 = yi.c.a("isChargingRequired");
         f fVar = new f();
         fVar.a(1);
-        f42679b = a10.b(fVar.b()).a();
+        f42727b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("isWifiRequired");
         f fVar2 = new f();
         fVar2.a(2);
-        f42680c = a11.b(fVar2.b()).a();
+        f42728c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("isDeviceIdleRequired");
         f fVar3 = new f();
         fVar3.a(3);
-        f42681d = a12.b(fVar3.b()).a();
+        f42729d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("canDownloadInBackground");
         f fVar4 = new f();
         fVar4.a(4);
-        f42682e = a13.b(fVar4.b()).a();
+        f42730e = a13.b(fVar4.b()).a();
     }
 
     private x3() {

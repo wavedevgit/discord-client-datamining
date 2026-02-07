@@ -5,7 +5,7 @@ import yi.c;
 final class tb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final tb f40281a = new tb();
+    static final tb f40329a = new tb();
 
     static {
         c.b a10 = yi.c.a("deviceInfo");

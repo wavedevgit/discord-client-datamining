@@ -8,14 +8,14 @@ import java.util.Set;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f26729a;
+    private final Context f26777a;
 
     public c(Context context) {
-        this.f26729a = context;
+        this.f26777a = context;
     }
 
     private final SharedPreferences c() {
-        return this.f26729a.getSharedPreferences("playcore_split_install_internal", 0);
+        return this.f26777a.getSharedPreferences("playcore_split_install_internal", 0);
     }
 
     public final Set a() {

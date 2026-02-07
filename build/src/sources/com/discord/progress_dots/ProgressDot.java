@@ -68,7 +68,7 @@ public final class ProgressDot extends View {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit start$lambda$0(ProgressDot progressDot) {
         progressDot.startDownAnimation();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class ProgressDot extends View {
         if (function0 != null) {
             function0.invoke();
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void startDownAnimation() {

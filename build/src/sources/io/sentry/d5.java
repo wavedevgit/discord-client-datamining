@@ -3,13 +3,13 @@ package io.sentry;
 public final class d5 implements k5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k5 f28060a;
+    private final k5 f28108a;
 
     public d5() {
         if (a()) {
-            this.f28060a = new t6();
+            this.f28108a = new t6();
         } else {
-            this.f28060a = new d7();
+            this.f28108a = new d7();
         }
     }
 
@@ -22,6 +22,6 @@ public final class d5 implements k5 {
 
     @Override // io.sentry.k5
     public j5 now() {
-        return this.f28060a.now();
+        return this.f28108a.now();
     }
 }

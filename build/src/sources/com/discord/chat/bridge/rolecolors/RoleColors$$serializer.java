@@ -40,7 +40,7 @@ public /* synthetic */ class RoleColors$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{p0Var, a.u(p0Var), a.u(p0Var)};
     }
 
@@ -56,7 +56,7 @@ public /* synthetic */ class RoleColors$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             num2 = (Integer) b10.n(serialDescriptor, 2, p0Var, null);
             num = (Integer) b10.n(serialDescriptor, 1, p0Var, null);
             i11 = 7;
@@ -74,12 +74,12 @@ public /* synthetic */ class RoleColors$$serializer implements h0 {
                     i10 = b10.i(serialDescriptor, 0);
                     i12 |= 1;
                 } else if (o10 == 1) {
-                    num3 = (Integer) b10.n(serialDescriptor, 1, p0.f31057a, num3);
+                    num3 = (Integer) b10.n(serialDescriptor, 1, p0.f31105a, num3);
                     i12 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    num4 = (Integer) b10.n(serialDescriptor, 2, p0.f31057a, num4);
+                    num4 = (Integer) b10.n(serialDescriptor, 2, p0.f31105a, num4);
                     i12 |= 4;
                 }
             }

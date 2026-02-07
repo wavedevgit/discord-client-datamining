@@ -3,19 +3,19 @@ package mm;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f37219a = new a();
+    public static final a f37267a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f37220b;
+    private static boolean f37268b;
 
     private a() {
     }
 
     public final boolean a() {
-        return f37220b;
+        return f37268b;
     }
 
     public final void b(boolean z10) {
-        f37220b = z10;
+        f37268b = z10;
     }
 }

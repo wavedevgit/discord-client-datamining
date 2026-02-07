@@ -19,14 +19,14 @@ import qr.w;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f25550a = File.separator;
+    private static final String f25598a = File.separator;
 
     private static final String a(Context context) {
         StringBuilder sb2 = new StringBuilder();
         File cacheDir = context.getCacheDir();
         Intrinsics.checkExpressionValueIsNotNull(cacheDir, "context.cacheDir");
         sb2.append(cacheDir.getPath());
-        String str = f25550a;
+        String str = f25598a;
         sb2.append(str);
         sb2.append("compressor");
         sb2.append(str);
@@ -139,7 +139,7 @@ public abstract class c {
 
     public static final String g(Bitmap.CompressFormat extension) {
         Intrinsics.checkParameterIsNotNull(extension, "$this$extension");
-        int i10 = b.f25549a[extension.ordinal()];
+        int i10 = b.f25597a[extension.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return "jpg";

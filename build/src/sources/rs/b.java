@@ -9,20 +9,20 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class b extends e {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function2 f49219p;
+    private final Function2 f49267p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f49220d;
+        Object f49268d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f49221e;
+        /* synthetic */ Object f49269e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f49223o;
+        int f49271o;
 
         a(Continuation continuation) {
             super(continuation);
@@ -30,14 +30,14 @@ public final class b extends e {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f49221e = obj;
-            this.f49223o |= Integer.MIN_VALUE;
+            this.f49269e = obj;
+            this.f49271o |= Integer.MIN_VALUE;
             return b.this.e(null, this);
         }
     }
 
     public /* synthetic */ b(Function2 function2, CoroutineContext coroutineContext, int i10, qs.a aVar, int i11, DefaultConstructorMarker defaultConstructorMarker) {
-        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f32082d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? qs.a.f48066d : aVar);
+        this(function2, (i11 & 2) != 0 ? kotlin.coroutines.e.f32130d : coroutineContext, (i11 & 4) != 0 ? -2 : i10, (i11 & 8) != 0 ? qs.a.f48114d : aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -57,24 +57,24 @@ public final class b extends e {
             if (r0 == 0) goto L13
             r0 = r6
             rs.b$a r0 = (rs.b.a) r0
-            int r1 = r0.f49223o
+            int r1 = r0.f49271o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f49223o = r1
+            r0.f49271o = r1
             goto L18
         L13:
             rs.b$a r0 = new rs.b$a
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f49221e
+            java.lang.Object r6 = r0.f49269e
             java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f49223o
+            int r2 = r0.f49271o
             r3 = 1
             if (r2 == 0) goto L35
             if (r2 != r3) goto L2d
-            java.lang.Object r5 = r0.f49220d
+            java.lang.Object r5 = r0.f49268d
             kotlinx.coroutines.channels.ProducerScope r5 = (kotlinx.coroutines.channels.ProducerScope) r5
             kotlin.c.b(r6)
             goto L43
@@ -85,15 +85,15 @@ public final class b extends e {
             throw r5
         L35:
             kotlin.c.b(r6)
-            r0.f49220d = r5
-            r0.f49223o = r3
+            r0.f49268d = r5
+            r0.f49271o = r3
             java.lang.Object r6 = super.e(r5, r0)
             if (r6 != r1) goto L43
             return r1
         L43:
             boolean r5 = r5.y()
             if (r5 == 0) goto L4c
-            kotlin.Unit r5 = kotlin.Unit.f32008a
+            kotlin.Unit r5 = kotlin.Unit.f32056a
             return r5
         L4c:
             java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
@@ -106,11 +106,11 @@ public final class b extends e {
 
     @Override // ss.e
     protected ss.e h(CoroutineContext coroutineContext, int i10, qs.a aVar) {
-        return new b(this.f49219p, coroutineContext, i10, aVar);
+        return new b(this.f49267p, coroutineContext, i10, aVar);
     }
 
     public b(Function2 function2, CoroutineContext coroutineContext, int i10, qs.a aVar) {
         super(function2, coroutineContext, i10, aVar);
-        this.f49219p = function2;
+        this.f49267p = function2;
     }
 }

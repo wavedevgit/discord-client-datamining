@@ -8,26 +8,26 @@ import org.jetbrains.annotations.NotNull;
 public final class AbbreviatedType extends DelegatingSimpleType {
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f34539e;
+    private final SimpleType f34587e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SimpleType f34540i;
+    private final SimpleType f34588i;
 
     public AbbreviatedType(@NotNull SimpleType delegate, @NotNull SimpleType abbreviation) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(abbreviation, "abbreviation");
-        this.f34539e = delegate;
-        this.f34540i = abbreviation;
+        this.f34587e = delegate;
+        this.f34588i = abbreviation;
     }
 
     @NotNull
     public final SimpleType getAbbreviation() {
-        return this.f34540i;
+        return this.f34588i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f34539e;
+        return this.f34587e;
     }
 
     @NotNull
@@ -39,20 +39,20 @@ public final class AbbreviatedType extends DelegatingSimpleType {
     @NotNull
     public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
         Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
-        return new AbbreviatedType(getDelegate().replaceAttributes(newAttributes), this.f34540i);
+        return new AbbreviatedType(getDelegate().replaceAttributes(newAttributes), this.f34588i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     @NotNull
     public AbbreviatedType replaceDelegate(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        return new AbbreviatedType(delegate, this.f34540i);
+        return new AbbreviatedType(delegate, this.f34588i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
     @NotNull
     public AbbreviatedType makeNullableAsSpecified(boolean z10) {
-        return new AbbreviatedType(getDelegate().makeNullableAsSpecified(z10), this.f34540i.makeNullableAsSpecified(z10));
+        return new AbbreviatedType(getDelegate().makeNullableAsSpecified(z10), this.f34588i.makeNullableAsSpecified(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -61,7 +61,7 @@ public final class AbbreviatedType extends DelegatingSimpleType {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
         KotlinType refineType = kotlinTypeRefiner.refineType((KotlinTypeMarker) getDelegate());
         Intrinsics.checkNotNull(refineType, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
-        KotlinType refineType2 = kotlinTypeRefiner.refineType((KotlinTypeMarker) this.f34540i);
+        KotlinType refineType2 = kotlinTypeRefiner.refineType((KotlinTypeMarker) this.f34588i);
         Intrinsics.checkNotNull(refineType2, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
         return new AbbreviatedType((SimpleType) refineType, (SimpleType) refineType2);
     }

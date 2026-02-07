@@ -92,4 +92,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'voice-panel-no-video-perms';
     var2.VOICE_PANEL_NO_VIDEO_PERMS_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4027, 4027, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4026, 4026, 1234, 2]);

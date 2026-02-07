@@ -78,8 +78,8 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void k(j jVar) {
-        this.f13306c.m(jVar.f37066d).a(jVar);
-        this.f13312i += jVar.f37068i;
+        this.f13306c.m(jVar.f37114d).a(jVar);
+        this.f13312i += jVar.f37116i;
         t(jVar);
     }
 
@@ -115,7 +115,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
         }
         while (true) {
             d10 = g10.d(j10, j11);
-            if (!d10.f37069o || d10.f37070p.length() == d10.f37068i) {
+            if (!d10.f37117o || d10.f37118p.length() == d10.f37116i) {
                 break;
             }
             y();
@@ -237,7 +237,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void t(j jVar) {
-        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37066d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37114d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).c(this, jVar);
@@ -247,7 +247,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void u(me.c cVar) {
-        ArrayList arrayList = (ArrayList) this.f13308e.get(cVar.f37066d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(cVar.f37114d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).d(this, cVar);
@@ -257,7 +257,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void v(j jVar, me.c cVar) {
-        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37066d);
+        ArrayList arrayList = (ArrayList) this.f13308e.get(jVar.f37114d);
         if (arrayList != null) {
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 ((a.b) arrayList.get(size)).a(this, jVar, cVar);
@@ -271,11 +271,11 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     }
 
     private void x(me.c cVar) {
-        g g10 = this.f13306c.g(cVar.f37066d);
+        g g10 = this.f13306c.g(cVar.f37114d);
         if (g10 != null && g10.j(cVar)) {
-            this.f13312i -= cVar.f37068i;
+            this.f13312i -= cVar.f37116i;
             if (this.f13307d != null) {
-                String name = cVar.f37070p.getName();
+                String name = cVar.f37118p.getName();
                 try {
                     this.f13307d.f(name);
                 } catch (IOException unused) {
@@ -293,7 +293,7 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
             Iterator it = gVar.e().iterator();
             while (it.hasNext()) {
                 me.c cVar = (me.c) it.next();
-                if (cVar.f37070p.length() != cVar.f37068i) {
+                if (cVar.f37118p.length() != cVar.f37116i) {
                     arrayList.add(cVar);
                 }
             }
@@ -308,8 +308,8 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
         if (!this.f13310g) {
             return jVar;
         }
-        String name = ((File) ne.a.e(jVar.f37070p)).getName();
-        long j10 = jVar.f37068i;
+        String name = ((File) ne.a.e(jVar.f37118p)).getName();
+        long j10 = jVar.f37116i;
         long currentTimeMillis = System.currentTimeMillis();
         f fVar = this.f13307d;
         if (fVar != null) {
@@ -377,9 +377,9 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
                 ne.a.g(!this.f13313j);
                 l();
                 j o10 = o(str, j10, j11);
-                if (o10.f37069o) {
+                if (o10.f37117o) {
                     return z(str, o10);
-                } else if (this.f13306c.m(str).i(j10, o10.f37068i)) {
+                } else if (this.f13306c.m(str).i(j10, o10.f37116i)) {
                     return o10;
                 } else {
                     return null;
@@ -402,8 +402,8 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
     @Override // com.google.android.exoplayer2.upstream.cache.a
     public synchronized void e(me.c cVar) {
         ne.a.g(!this.f13313j);
-        g gVar = (g) ne.a.e(this.f13306c.g(cVar.f37066d));
-        gVar.l(cVar.f37067e);
+        g gVar = (g) ne.a.e(this.f13306c.g(cVar.f37114d));
+        gVar.l(cVar.f37115e);
         this.f13306c.p(gVar.f13353b);
         notifyAll();
     }
@@ -462,18 +462,18 @@ public final class SimpleCache implements com.google.android.exoplayer2.upstream
             return;
         }
         j jVar = (j) ne.a.e(j.h(file, j10, this.f13306c));
-        g gVar = (g) ne.a.e(this.f13306c.g(jVar.f37066d));
-        ne.a.g(gVar.g(jVar.f37067e, jVar.f37068i));
+        g gVar = (g) ne.a.e(this.f13306c.g(jVar.f37114d));
+        ne.a.g(gVar.g(jVar.f37115e, jVar.f37116i));
         long d10 = me.d.d(gVar.c());
         if (d10 != -1) {
-            if (jVar.f37067e + jVar.f37068i > d10) {
+            if (jVar.f37115e + jVar.f37116i > d10) {
                 z10 = false;
             }
             ne.a.g(z10);
         }
         if (this.f13307d != null) {
             try {
-                this.f13307d.h(file.getName(), jVar.f37068i, jVar.f37071q);
+                this.f13307d.h(file.getName(), jVar.f37116i, jVar.f37119q);
             } catch (IOException e10) {
                 throw new a.C0168a(e10);
             }

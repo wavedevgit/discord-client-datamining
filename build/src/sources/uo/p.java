@@ -5,10 +5,10 @@ import android.view.Window;
 public final class p implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f52026a;
+    private final l f52074a;
 
     public p(l lVar) {
-        this.f52026a = lVar;
+        this.f52074a = lVar;
     }
 
     public static p a(l lVar) {
@@ -22,6 +22,6 @@ public final class p implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Window get() {
-        return c(this.f52026a);
+        return c(this.f52074a);
     }
 }

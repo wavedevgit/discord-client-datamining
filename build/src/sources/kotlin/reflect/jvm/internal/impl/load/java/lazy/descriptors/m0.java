@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
 class m0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f32999d;
+    private final Name f33047d;
 
     public m0(Name name) {
-        this.f32999d = name;
+        this.f33047d = name;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection d02;
-        d02 = LazyJavaStaticClassScope.d0(this.f32999d, (MemberScope) obj);
+        d02 = LazyJavaStaticClassScope.d0(this.f33047d, (MemberScope) obj);
         return d02;
     }
 }

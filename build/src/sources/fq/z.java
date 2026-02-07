@@ -36,11 +36,11 @@ public abstract class z {
         Intrinsics.checkNotNullExpressionValue(c10, "inflate(...)");
         Integer backgroundColor = config.getBackgroundColor();
         if (backgroundColor != null) {
-            c10.f29229c.setBackgroundColor(backgroundColor.intValue());
+            c10.f29277c.setBackgroundColor(backgroundColor.intValue());
         }
         StyleElements.SizeSet padding = config.getPadding();
         if (padding != null) {
-            int dimensionPixelOffset = a10.getResources().getDimensionPixelOffset(rp.k.f49065b);
+            int dimensionPixelOffset = a10.getResources().getDimensionPixelOffset(rp.k.f49113b);
             StyleElements.Size left = padding.getLeft();
             if (left != null && (dp6 = left.getDp()) != null) {
                 i11 = (int) rp.h.a(dp6.doubleValue());
@@ -55,7 +55,7 @@ public abstract class z {
                 i12 = 0;
             }
             int d11 = kotlin.ranges.d.d(i12, dimensionPixelOffset);
-            ConstraintLayout constraintLayout = c10.f29230d;
+            ConstraintLayout constraintLayout = c10.f29278d;
             StyleElements.Size top = padding.getTop();
             if (top != null && (dp4 = top.getDp()) != null) {
                 i13 = (int) rp.h.a(dp4.doubleValue());
@@ -72,7 +72,7 @@ public abstract class z {
         }
         StyleElements.SizeSet borderWidth = config.getBorderWidth();
         if (borderWidth != null) {
-            View hairline = c10.f29232f;
+            View hairline = c10.f29280f;
             Intrinsics.checkNotNullExpressionValue(hairline, "hairline");
             ViewGroup.LayoutParams layoutParams = hairline.getLayoutParams();
             if (layoutParams != null) {
@@ -88,7 +88,7 @@ public abstract class z {
                 throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
             }
         } else {
-            View hairline2 = c10.f29232f;
+            View hairline2 = c10.f29280f;
             Intrinsics.checkNotNullExpressionValue(hairline2, "hairline");
             ViewGroup.LayoutParams layoutParams2 = hairline2.getLayoutParams();
             if (layoutParams2 != null) {
@@ -99,8 +99,8 @@ public abstract class z {
             }
         }
         ConstraintSet constraintSet = new ConstraintSet();
-        constraintSet.f(c10.f29230d);
-        ConstraintLayout footerContainerInner = c10.f29230d;
+        constraintSet.f(c10.f29278d);
+        ConstraintLayout footerContainerInner = c10.f29278d;
         Intrinsics.checkNotNullExpressionValue(footerContainerInner, "footerContainerInner");
         List<View> list = children;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
@@ -111,7 +111,7 @@ public abstract class z {
             arrayList.add(Integer.valueOf(view.getId()));
         }
         a5.b(footerContainerInner, constraintSet, componentViews, arrayList, StyleElements.PositionType.CENTER, 0);
-        constraintSet.c(c10.f29230d);
+        constraintSet.c(c10.f29278d);
         LinearLayout root = c10.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         return root;

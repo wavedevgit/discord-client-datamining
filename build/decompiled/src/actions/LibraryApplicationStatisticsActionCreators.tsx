@@ -14,21 +14,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*() { // Environment: var2
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun36761: for (var _fun36761_ip = 0;;) switch (_fun36761_ip) {
+                _fun36768: for (var _fun36768_ip = 0;;) switch (_fun36768_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun36761_ip = 201;
-                            continue _fun36761
+                            _fun36768_ip = 205;
+                            continue _fun36768
                         }
                     case 10:
                         var1 = _closure1_slot4;
                         var3 = var1.lastFetched;
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun36761_ip = 61;
-                            continue _fun36761
+                            _fun36768_ip = 61;
+                            continue _fun36768
                         }
                     case 29:
                         var1 = global;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var1 - var3;
                         var1 = _closure1_slot6;
                         if (!(!(var3 < var1))) {
-                            _fun36761_ip = 196;
-                            continue _fun36761
+                            _fun36768_ip = 200;
+                            continue _fun36768
                         }
                     case 61: // try_start_0
                         var3 = _closure1_slot0;
@@ -59,16 +59,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6.USER_ACTIVITY_STATISTICS;
                         var1.url = var6;
                         var1 = var3.bind(var5)(var1);
-                        SaveGenerator(address = 128);
-                    case 126:
+                        SaveGenerator(address = 132);
+                    case 130:
                         return var1;
-                    case 128:
+                    case 132:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun36761_ip = 188;
-                            continue _fun36761
+                            _fun36768_ip = 192;
+                            continue _fun36768
                         }
-                    case 134:
+                    case 138:
                         var3 = _closure1_slot1;
                         var5 = _closure1_slot2;
                         var2 = 5;
@@ -81,18 +81,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var1.body;
                         var2.statistics = var5;
                         var2 = var3.bind(var4)(var2);
-                    case 186: // try_end0
-                        _fun36761_ip = 196;
-                        continue _fun36761;
-                    case 188:
+                    case 190: // try_end0
+                        _fun36768_ip = 200;
+                        continue _fun36768;
+                    case 192:
                         return var1;
-                    case 191: // catch_target0
+                    case 195: // catch_target0
                         CatchBlockStart(arg_register = 1);
                         return var1;
-                    case 196:
+                    case 200:
                         var1 = undefined;
                         return var1;
-                    case 201:
+                    case 205:
                         return var0;
                 }
             };
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.fetchActivityStatistics = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3994, 660, 667, 507, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 3993, 660, 667, 507, 806, 2]);

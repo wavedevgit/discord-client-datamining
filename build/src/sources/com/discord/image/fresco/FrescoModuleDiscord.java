@@ -51,7 +51,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
             try {
                 FrescoModuleDiscord.Companion.performInit(context);
                 FrescoModuleDiscord.initLatch.countDown();
-                return Unit.f32008a;
+                return Unit.f32056a;
             } catch (Throwable th2) {
                 FrescoModuleDiscord.initLatch.countDown();
                 throw th2;
@@ -76,7 +76,7 @@ public final class FrescoModuleDiscord extends FrescoModule {
             synchronized (this) {
                 if (!FrescoModuleDiscord.asyncInitStarted) {
                     FrescoModuleDiscord.asyncInitStarted = true;
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                     ur.a.b(true, false, null, "FrescoInitThread", 0, new Function0() { // from class: com.discord.image.fresco.a
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {

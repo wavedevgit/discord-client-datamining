@@ -5,7 +5,7 @@ import yi.c;
 final class r6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r6 f47482a = new r6();
+    static final r6 f47530a = new r6();
 
     static {
         c.b a10 = yi.c.a("sdkVersion");

@@ -16,7 +16,7 @@ public class j extends n {
     @Override // r5.m
     /* renamed from: c */
     public o a() {
-        return new o(this.f48667a);
+        return new o(this.f48715a);
     }
 
     @Override // r5.n, r5.m

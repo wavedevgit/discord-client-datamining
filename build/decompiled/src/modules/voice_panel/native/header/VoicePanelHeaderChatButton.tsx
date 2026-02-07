@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/header/VoicePanelHeaderChatButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111254: for (var _fun111254_ip = 0;;) switch (_fun111254_ip) {
+        _fun111740: for (var _fun111740_ip = 0;;) switch (_fun111740_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.channelId;
@@ -112,13 +112,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.bind(var3)(var1);
                 var0 = 'mention';
                 if (!(var0 !== var7)) {
-                    _fun111254_ip = 90;
-                    continue _fun111254
+                    _fun111740_ip = 90;
+                    continue _fun111740
                 }
             case 82:
                 var12 = var11.whiteBG;
-                _fun111254_ip = 96;
-                continue _fun111254;
+                _fun111740_ip = 96;
+                continue _fun111740;
             case 90:
                 var12 = var11.redBG;
             case 96:
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var7;
                 if (!var5) {
-                    _fun111254_ip = 369;
-                    continue _fun111254
+                    _fun111740_ip = 369;
+                    continue _fun111740
                 }
             case 287:
                 var8 = _closure1_slot5;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 1229, 14334, 6481, 14302, 4841, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 1229, 14377, 6524, 14345, 4840, 1234, 2]);

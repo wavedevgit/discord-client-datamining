@@ -11,15 +11,15 @@ import x.z;
 class g implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DynamicRangeProfiles f49616a;
+    private final DynamicRangeProfiles f49664a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(Object obj) {
-        this.f49616a = (DynamicRangeProfiles) obj;
+        this.f49664a = (DynamicRangeProfiles) obj;
     }
 
     private Long d(z zVar) {
-        return c.a(zVar, this.f49616a);
+        return c.a(zVar, this.f49664a);
     }
 
     private static Set e(Set set) {
@@ -41,7 +41,7 @@ class g implements f.a {
 
     @Override // s.f.a
     public DynamicRangeProfiles a() {
-        return this.f49616a;
+        return this.f49664a;
     }
 
     @Override // s.f.a
@@ -54,11 +54,11 @@ class g implements f.a {
             z10 = false;
         }
         b2.e.b(z10, "DynamicRange is not supported: " + zVar);
-        return e(this.f49616a.getProfileCaptureRequestConstraints(d10.longValue()));
+        return e(this.f49664a.getProfileCaptureRequestConstraints(d10.longValue()));
     }
 
     @Override // s.f.a
     public Set c() {
-        return e(this.f49616a.getSupportedProfiles());
+        return e(this.f49664a.getSupportedProfiles());
     }
 }

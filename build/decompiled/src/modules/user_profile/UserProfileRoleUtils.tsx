@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/UserProfileRoleUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun91857: for (var _fun91857_ip = 0;;) switch (_fun91857_ip) {
+        _fun92337: for (var _fun92337_ip = 0;;) switch (_fun92337_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var1 = undefined;
                 if (var3) {
-                    _fun91857_ip = 31;
-                    continue _fun91857
+                    _fun92337_ip = 31;
+                    continue _fun92337
                 }
             case 25:
                 var1 = var2.guild_connections;
@@ -43,33 +43,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun91857_ip = 56;
-                    continue _fun91857
+                    _fun92337_ip = 56;
+                    continue _fun92337
                 }
             case 50:
                 var0 = var2.guild_connections;
             case 56:
                 var2 = var6 !== var0;
                 if (!var1) {
-                    _fun91857_ip = 69;
-                    continue _fun91857
+                    _fun92337_ip = 69;
+                    continue _fun92337
                 }
             case 63:
                 var0 = 1;
                 if (!var2) {
-                    _fun91857_ip = 118;
-                    continue _fun91857
+                    _fun92337_ip = 118;
+                    continue _fun92337
                 }
             case 69:
                 if (var1) {
-                    _fun91857_ip = 81;
-                    continue _fun91857
+                    _fun92337_ip = 81;
+                    continue _fun92337
                 }
             case 72:
                 var1 = -1;
                 if (var2) {
-                    _fun91857_ip = 115;
-                    continue _fun91857
+                    _fun92337_ip = 115;
+                    continue _fun92337
                 }
             case 81:
                 var3 = _closure1_slot0;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sortRolesByVerification = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1678, 2]);

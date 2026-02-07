@@ -29,103 +29,103 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     private static final long serialVersionUID = -6698431452072325688L;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final int[] f39303w;
+    private static final int[] f39351w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final int[] f39304x;
+    private static final int[] f39352x;
 
     /* renamed from: y  reason: collision with root package name */
-    static final rt.p f39305y;
+    static final rt.p f39353y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final net.time4j.e f39306z;
+    public static final net.time4j.e f39354z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f39307d;
+    private final transient int f39355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient byte f39308e;
+    private final transient byte f39356e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient byte f39309i;
+    private final transient byte f39357i;
 
     /* renamed from: o  reason: collision with root package name */
-    static final f0 f39295o = new f0(-999999999, 1, 1);
+    static final f0 f39343o = new f0(-999999999, 1, 1);
 
     /* renamed from: p  reason: collision with root package name */
-    static final f0 f39296p = new f0(999999999, 12, 31);
+    static final f0 f39344p = new f0(999999999, 12, 31);
 
     /* renamed from: q  reason: collision with root package name */
-    static final Integer f39297q = -999999999;
+    static final Integer f39345q = -999999999;
 
     /* renamed from: r  reason: collision with root package name */
-    static final Integer f39298r = 999999999;
+    static final Integer f39346r = 999999999;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Integer f39299s = 1;
+    private static final Integer f39347s = 1;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Integer f39300t = 12;
+    private static final Integer f39348t = 12;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Integer f39301u = 365;
+    private static final Integer f39349u = 365;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Integer f39302v = 366;
+    private static final Integer f39350v = 366;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39310a;
+        static final /* synthetic */ int[] f39358a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f39311b;
+        static final /* synthetic */ int[] f39359b;
 
         static {
             int[] iArr = new int[n0.values().length];
-            f39311b = iArr;
+            f39359b = iArr;
             try {
                 iArr[n0.Q1.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39311b[n0.Q2.ordinal()] = 2;
+                f39359b[n0.Q2.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             int[] iArr2 = new int[net.time4j.f.values().length];
-            f39310a = iArr2;
+            f39358a = iArr2;
             try {
-                iArr2[net.time4j.f.f39281d.ordinal()] = 1;
+                iArr2[net.time4j.f.f39329d.ordinal()] = 1;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39310a[net.time4j.f.f39282e.ordinal()] = 2;
+                f39358a[net.time4j.f.f39330e.ordinal()] = 2;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f39310a[net.time4j.f.f39283i.ordinal()] = 3;
+                f39358a[net.time4j.f.f39331i.ordinal()] = 3;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f39310a[net.time4j.f.f39284o.ordinal()] = 4;
+                f39358a[net.time4j.f.f39332o.ordinal()] = 4;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f39310a[net.time4j.f.f39285p.ordinal()] = 5;
+                f39358a[net.time4j.f.f39333p.ordinal()] = 5;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f39310a[net.time4j.f.f39286q.ordinal()] = 6;
+                f39358a[net.time4j.f.f39334q.ordinal()] = 6;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f39310a[net.time4j.f.f39287r.ordinal()] = 7;
+                f39358a[net.time4j.f.f39335r.ordinal()] = 7;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f39310a[net.time4j.f.f39288s.ordinal()] = 8;
+                f39358a[net.time4j.f.f39336s.ordinal()] = 8;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -151,13 +151,13 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         @Override // rt.z
         /* renamed from: d */
         public f0 k(f0 f0Var) {
-            return f0.f39296p;
+            return f0.f39344p;
         }
 
         @Override // rt.z
         /* renamed from: e */
         public f0 o(f0 f0Var) {
-            return f0.f39295o;
+            return f0.f39343o;
         }
 
         @Override // rt.z
@@ -190,30 +190,30 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     private static class c implements rt.z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f39312d;
+        private final String f39360d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Class f39313e;
+        private final Class f39361e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Enum f39314i;
+        private final Enum f39362i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final Enum f39315o;
+        private final Enum f39363o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f39316p;
+        private final int f39364p;
 
         c(String str, Class cls, Enum r32, Enum r42, int i10) {
-            this.f39312d = str;
-            this.f39313e = cls;
-            this.f39314i = r32;
-            this.f39315o = r42;
-            this.f39316p = i10;
+            this.f39360d = str;
+            this.f39361e = cls;
+            this.f39362i = r32;
+            this.f39363o = r42;
+            this.f39364p = i10;
         }
 
         private rt.p b() {
-            switch (this.f39316p) {
+            switch (this.f39364p) {
                 case 101:
                     return f0.F;
                 case 102:
@@ -221,7 +221,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                 case 103:
                     return f0.I;
                 default:
-                    throw new UnsupportedOperationException(this.f39312d);
+                    throw new UnsupportedOperationException(this.f39360d);
             }
         }
 
@@ -244,36 +244,36 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         @Override // rt.z
         /* renamed from: e */
         public Enum k(f0 f0Var) {
-            if (this.f39316p == 102 && f0Var.f39307d == 999999999 && f0Var.f39308e == 12 && f0Var.f39309i >= 27) {
-                return (Enum) this.f39313e.cast(y0.FRIDAY);
+            if (this.f39364p == 102 && f0Var.f39355d == 999999999 && f0Var.f39356e == 12 && f0Var.f39357i >= 27) {
+                return (Enum) this.f39361e.cast(y0.FRIDAY);
             }
-            return this.f39315o;
+            return this.f39363o;
         }
 
         @Override // rt.z
         /* renamed from: f */
         public Enum o(f0 f0Var) {
-            return this.f39314i;
+            return this.f39362i;
         }
 
         @Override // rt.z
         /* renamed from: h */
         public Enum y(f0 f0Var) {
             Object f10;
-            switch (this.f39316p) {
+            switch (this.f39364p) {
                 case 101:
-                    f10 = b0.f(f0Var.f39308e);
+                    f10 = b0.f(f0Var.f39356e);
                     break;
                 case 102:
                     f10 = f0Var.A0();
                     break;
                 case 103:
-                    f10 = n0.f(((f0Var.f39308e - 1) / 3) + 1);
+                    f10 = n0.f(((f0Var.f39356e - 1) / 3) + 1);
                     break;
                 default:
-                    throw new UnsupportedOperationException(this.f39312d);
+                    throw new UnsupportedOperationException(this.f39360d);
             }
-            return (Enum) this.f39313e.cast(f10);
+            return (Enum) this.f39361e.cast(f10);
         }
 
         @Override // rt.z
@@ -282,7 +282,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
             if (r52 == null) {
                 return false;
             }
-            if (this.f39316p == 102 && f0Var.f39307d == 999999999) {
+            if (this.f39364p == 102 && f0Var.f39355d == 999999999) {
                 try {
                     u(f0Var, r52, false);
                     return true;
@@ -297,15 +297,15 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         /* renamed from: l */
         public f0 u(f0 f0Var, Enum r32, boolean z10) {
             if (r32 != null) {
-                switch (this.f39316p) {
+                switch (this.f39364p) {
                     case 101:
                         return f0Var.T0(((b0) b0.class.cast(r32)).d());
                     case 102:
                         return f0Var.Q0((y0) y0.class.cast(r32));
                     case 103:
-                        return (f0) f0Var.K(((n0) n0.class.cast(r32)).d() - (((f0Var.f39308e - 1) / 3) + 1), net.time4j.f.f39285p);
+                        return (f0) f0Var.K(((n0) n0.class.cast(r32)).d() - (((f0Var.f39356e - 1) / 3) + 1), net.time4j.f.f39333p);
                     default:
-                        throw new UnsupportedOperationException(this.f39312d);
+                        throw new UnsupportedOperationException(this.f39360d);
                 }
             }
             throw new IllegalArgumentException("Missing element value.");
@@ -316,20 +316,20 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     private static class d implements rt.c0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final rt.p f39317d;
+        private final rt.p f39365d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f39318e;
+        private final String f39366e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final int f39319i;
+        private final int f39367i;
 
         d(rt.p pVar) {
             this(((s) pVar).J(), pVar);
         }
 
         private rt.p b() {
-            switch (this.f39319i) {
+            switch (this.f39367i) {
                 case 14:
                     return f0.E;
                 case 15:
@@ -340,14 +340,14 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                     return null;
                 default:
-                    throw new UnsupportedOperationException(this.f39318e);
+                    throw new UnsupportedOperationException(this.f39366e);
             }
         }
 
         private static int h(f0 f0Var) {
-            int i10 = ((f0Var.f39308e - 1) / 3) + 1;
+            int i10 = ((f0Var.f39356e - 1) / 3) + 1;
             if (i10 == 1) {
-                if (pt.b.e(f0Var.f39307d)) {
+                if (pt.b.e(f0Var.f39355d)) {
                     return 91;
                 }
                 return 90;
@@ -359,8 +359,8 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         }
 
         private int i(f0 f0Var) {
-            int d10 = pt.b.d(f0Var.f39307d, f0Var.f39308e);
-            byte b10 = f0Var.f39309i;
+            int d10 = pt.b.d(f0Var.f39355d, f0Var.f39356e);
+            byte b10 = f0Var.f39357i;
             int i10 = 0;
             while (true) {
                 int i11 = i10 + 1;
@@ -387,59 +387,59 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         @Override // rt.c0
         /* renamed from: e */
         public int s(f0 f0Var) {
-            switch (this.f39319i) {
+            switch (this.f39367i) {
                 case 14:
-                    return f0Var.f39307d;
+                    return f0Var.f39355d;
                 case 15:
-                    return f0Var.f39308e;
+                    return f0Var.f39356e;
                 case 16:
-                    return f0Var.f39309i;
+                    return f0Var.f39357i;
                 case 17:
                     return f0Var.B0();
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                     return f0Var.z0();
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    return ((f0Var.f39309i - 1) / 7) + 1;
+                    return ((f0Var.f39357i - 1) / 7) + 1;
                 default:
-                    throw new UnsupportedOperationException(this.f39318e);
+                    throw new UnsupportedOperationException(this.f39366e);
             }
         }
 
         @Override // rt.z
         /* renamed from: f */
         public Integer k(f0 f0Var) {
-            switch (this.f39319i) {
+            switch (this.f39367i) {
                 case 14:
-                    return f0.f39298r;
+                    return f0.f39346r;
                 case 15:
-                    return f0.f39300t;
+                    return f0.f39348t;
                 case 16:
-                    return Integer.valueOf(pt.b.d(f0Var.f39307d, f0Var.f39308e));
+                    return Integer.valueOf(pt.b.d(f0Var.f39355d, f0Var.f39356e));
                 case 17:
-                    return pt.b.e(f0Var.f39307d) ? f0.f39302v : f0.f39301u;
+                    return pt.b.e(f0Var.f39355d) ? f0.f39350v : f0.f39349u;
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                     return Integer.valueOf(h(f0Var));
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                     return Integer.valueOf(i(f0Var));
                 default:
-                    throw new UnsupportedOperationException(this.f39318e);
+                    throw new UnsupportedOperationException(this.f39366e);
             }
         }
 
         @Override // rt.z
         /* renamed from: j */
         public Integer o(f0 f0Var) {
-            switch (this.f39319i) {
+            switch (this.f39367i) {
                 case 14:
-                    return f0.f39297q;
+                    return f0.f39345q;
                 case 15:
                 case 16:
                 case 17:
                 case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                    return f0.f39299s;
+                    return f0.f39347s;
                 default:
-                    throw new UnsupportedOperationException(this.f39318e);
+                    throw new UnsupportedOperationException(this.f39366e);
             }
         }
 
@@ -451,7 +451,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
         public boolean p(f0 f0Var, int i10) {
             int i11;
-            switch (this.f39319i) {
+            switch (this.f39367i) {
                 case 14:
                     if (i10 < -999999999 || i10 > 999999999) {
                         return false;
@@ -463,13 +463,13 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                     }
                     return true;
                 case 16:
-                    if (i10 < 1 || i10 > pt.b.d(f0Var.f39307d, f0Var.f39308e)) {
+                    if (i10 < 1 || i10 > pt.b.d(f0Var.f39355d, f0Var.f39356e)) {
                         return false;
                     }
                     return true;
                 case 17:
                     if (i10 >= 1) {
-                        if (pt.b.e(f0Var.f39307d)) {
+                        if (pt.b.e(f0Var.f39355d)) {
                             i11 = 366;
                         } else {
                             i11 = 365;
@@ -490,7 +490,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                     }
                     return true;
                 default:
-                    throw new UnsupportedOperationException(this.f39318e);
+                    throw new UnsupportedOperationException(this.f39366e);
             }
         }
 
@@ -507,7 +507,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         /* renamed from: r */
         public f0 m(f0 f0Var, int i10, boolean z10) {
             if (!z10) {
-                switch (this.f39319i) {
+                switch (this.f39367i) {
                     case 14:
                         return f0Var.U0(i10);
                     case 15:
@@ -518,19 +518,19 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                         return f0Var.R0(i10);
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                         if (i10 >= 1 && i10 <= h(f0Var)) {
-                            return (f0) f0Var.K(i10 - f0Var.z0(), net.time4j.f.f39288s);
+                            return (f0) f0Var.K(i10 - f0Var.z0(), net.time4j.f.f39336s);
                         }
                         throw new IllegalArgumentException("Out of range: " + i10);
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
                         if (!z10 && (i10 < 1 || i10 > i(f0Var))) {
                             throw new IllegalArgumentException("Out of range: " + i10);
                         }
-                        return (f0) f0Var.K(i10 - (((f0Var.f39309i - 1) / 7) + 1), net.time4j.f.f39287r);
+                        return (f0) f0Var.K(i10 - (((f0Var.f39357i - 1) / 7) + 1), net.time4j.f.f39335r);
                     default:
-                        throw new UnsupportedOperationException(this.f39318e);
+                        throw new UnsupportedOperationException(this.f39366e);
                 }
             }
-            return (f0) f0Var.K(pt.c.l(i10, s(f0Var)), (u) f0.M.N(this.f39317d));
+            return (f0) f0Var.K(pt.c.l(i10, s(f0Var)), (u) f0.M.N(this.f39365d));
         }
 
         @Override // rt.z
@@ -543,9 +543,9 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         }
 
         d(int i10, rt.p pVar) {
-            this.f39317d = pVar;
-            this.f39318e = pVar.name();
-            this.f39319i = i10;
+            this.f39365d = pVar;
+            this.f39366e = pVar.name();
+            this.f39367i = i10;
         }
     }
 
@@ -553,7 +553,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     private static class e implements rt.u {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final int f39320d = pt.b.i(pt.b.l(rt.a0.MODIFIED_JULIAN_DATE.n(pt.c.b(System.currentTimeMillis(), 86400000), rt.a0.UNIX))) + 20;
+        private static final int f39368d = pt.b.i(pt.b.l(rt.a0.MODIFIED_JULIAN_DATE.n(pt.c.b(System.currentTimeMillis(), 86400000), rt.a0.UNIX))) + 20;
 
         private e() {
         }
@@ -574,7 +574,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         }
 
         private static boolean i(rt.q qVar, boolean z10, n0 n0Var, int i10) {
-            int i11 = a.f39311b[n0Var.ordinal()];
+            int i11 = a.f39359b[n0Var.ordinal()];
             int i12 = 91;
             if (i11 != 1) {
                 if (i11 != 2) {
@@ -643,7 +643,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
         @Override // rt.u
         public rt.f0 a() {
-            return rt.f0.f49502a;
+            return rt.f0.f49550a;
         }
 
         @Override // rt.u
@@ -662,7 +662,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
             y0 y0Var;
             l0 l0Var;
             int q10;
-            rt.p pVar = f0.f39305y;
+            rt.p pVar = f0.f39353y;
             if (qVar.n(pVar)) {
                 return (f0) qVar.s(pVar);
             }
@@ -722,7 +722,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
             }
             int q15 = qVar.q(f0.B);
             if (q15 != Integer.MIN_VALUE) {
-                a1 a1Var = a1.f39075x;
+                a1 a1Var = a1.f39123x;
                 if (qVar.n(a1Var.n())) {
                     int intValue = ((Integer) qVar.s(a1Var.n())).intValue();
                     rt.p pVar4 = f0.G;
@@ -757,7 +757,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
         @Override // rt.u
         public int g() {
-            return f39320d;
+            return f39368d;
         }
 
         /* synthetic */ e(a aVar) {
@@ -796,10 +796,10 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         /* renamed from: f */
         public f0 b(long j10) {
             if (j10 == -365243219892L) {
-                return f0.f39295o;
+                return f0.f39343o;
             }
             if (j10 == 365241779741L) {
-                return f0.f39296p;
+                return f0.f39344p;
             }
             long l10 = pt.b.l(rt.a0.MODIFIED_JULIAN_DATE.n(j10, rt.a0.UTC));
             return f0.H0(pt.b.i(l10), pt.b.h(l10), pt.b.g(l10));
@@ -811,16 +811,16 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     }
 
     static {
-        f39303w = r7;
-        f39304x = r8;
+        f39351w = r7;
+        f39352x = r8;
         int[] iArr = {31, 59, 90, 120, 151, 181, MediaImageViewKt.OBSCURED_IMAGE_MIN_HEIGHT, 243, 273, 304, 334, 365};
         int[] iArr2 = {31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-        h hVar = h.f39355d;
-        f39305y = hVar;
-        f39306z = hVar;
+        h hVar = h.f39403d;
+        f39353y = hVar;
+        f39354z = hVar;
         s G2 = s.G("YEAR", 14, -999999999, 999999999, 'u');
         A = G2;
-        b1 b1Var = b1.f39129r;
+        b1 b1Var = b1.f39177r;
         B = b1Var;
         p pVar = new p("QUARTER_OF_YEAR", n0.class, n0.Q1, n0.Q4, 103, 'Q');
         C = pVar;
@@ -836,7 +836,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         H = G5;
         s G6 = s.G("DAY_OF_QUARTER", 18, 1, 92, (char) 0);
         I = G6;
-        z0 z0Var = z0.f39672o;
+        z0 z0Var = z0.f39720o;
         J = z0Var;
         HashMap hashMap = new HashMap();
         t0(hashMap, hVar);
@@ -855,20 +855,20 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         L = fVar;
         h0.b j10 = h0.b.j(u.class, f0.class, new e(null), fVar);
         b bVar = new b(null);
-        net.time4j.f fVar2 = net.time4j.f.f39288s;
-        h0.b e10 = j10.e(hVar, bVar, fVar2).e(G2, new d(G2), net.time4j.f.f39284o).e(b1Var, b1.K(f0.class), x0.f39651d).e(pVar, c.j(pVar), net.time4j.f.f39285p);
+        net.time4j.f fVar2 = net.time4j.f.f39336s;
+        h0.b e10 = j10.e(hVar, bVar, fVar2).e(G2, new d(G2), net.time4j.f.f39332o).e(b1Var, b1.K(f0.class), x0.f39699d).e(pVar, c.j(pVar), net.time4j.f.f39333p);
         c j11 = c.j(pVar2);
-        net.time4j.f fVar3 = net.time4j.f.f39286q;
-        h0.b e11 = e10.e(pVar2, j11, fVar3).e(G3, new d(G3), fVar3).e(G4, new d(G4), fVar2).e(pVar3, c.j(pVar3), fVar2).e(G5, new d(G5), fVar2).e(G6, new d(G6), fVar2).e(z0Var, new d(19, z0Var), net.time4j.f.f39287r);
+        net.time4j.f fVar3 = net.time4j.f.f39334q;
+        h0.b e11 = e10.e(pVar2, j11, fVar3).e(G3, new d(G3), fVar3).e(G4, new d(G4), fVar2).e(pVar3, c.j(pVar3), fVar2).e(G5, new d(G5), fVar2).e(G6, new d(G6), fVar2).e(z0Var, new d(19, z0Var), net.time4j.f.f39335r);
         O0(e11);
         N0(e11);
         M = e11.h();
     }
 
     private f0(int i10, int i11, int i12) {
-        this.f39307d = i10;
-        this.f39308e = (byte) i11;
-        this.f39309i = (byte) i12;
+        this.f39355d = i10;
+        this.f39356e = (byte) i11;
+        this.f39357i = (byte) i12;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -884,9 +884,9 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
                 return H0(i10, 1, i11);
             }
             if (pt.b.e(i10)) {
-                iArr = f39304x;
+                iArr = f39352x;
             } else {
-                iArr = f39303w;
+                iArr = f39351w;
             }
             if (i11 > iArr[6]) {
                 i12 = 7;
@@ -924,7 +924,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     public static f0 K0(int i10, int i11, y0 y0Var, boolean z10) {
         int i12;
         if (i11 >= 1 && i11 <= 53) {
-            if (z10 && (i10 < f39297q.intValue() || i10 > f39298r.intValue())) {
+            if (z10 && (i10 < f39345q.intValue() || i10 > f39346r.intValue())) {
                 throw new IllegalArgumentException(W0(i10));
             }
             int d10 = y0.h(pt.b.c(i10, 1, 1)).d();
@@ -984,8 +984,8 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     private static void O0(h0.b bVar) {
         EnumSet enumSet;
-        EnumSet range = EnumSet.range(net.time4j.f.f39281d, net.time4j.f.f39286q);
-        EnumSet range2 = EnumSet.range(net.time4j.f.f39287r, net.time4j.f.f39288s);
+        EnumSet range = EnumSet.range(net.time4j.f.f39329d, net.time4j.f.f39334q);
+        EnumSet range2 = EnumSet.range(net.time4j.f.f39335r, net.time4j.f.f39336s);
         net.time4j.f[] values = net.time4j.f.values();
         int length = values.length;
         int i10 = 0;
@@ -993,7 +993,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
             net.time4j.f fVar = values[i10];
             f.j jVar = new f.j(fVar);
             double length2 = fVar.getLength();
-            if (fVar.compareTo(net.time4j.f.f39287r) < 0) {
+            if (fVar.compareTo(net.time4j.f.f39335r) < 0) {
                 enumSet = range;
             } else {
                 enumSet = range2;
@@ -1007,10 +1007,10 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 P0(int i10) {
-        if (this.f39309i == i10) {
+        if (this.f39357i == i10) {
             return this;
         }
-        return H0(this.f39307d, this.f39308e, i10);
+        return H0(this.f39355d, this.f39356e, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1027,23 +1027,23 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         if (B0() == i10) {
             return this;
         }
-        return G0(this.f39307d, i10);
+        return G0(this.f39355d, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 T0(int i10) {
-        if (this.f39308e == i10) {
+        if (this.f39356e == i10) {
             return this;
         }
-        return H0(this.f39307d, i10, Math.min(pt.b.d(this.f39307d, i10), (int) this.f39309i));
+        return H0(this.f39355d, i10, Math.min(pt.b.d(this.f39355d, i10), (int) this.f39357i));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 U0(int i10) {
-        if (this.f39307d == i10) {
+        if (this.f39355d == i10) {
             return this;
         }
-        return H0(i10, this.f39308e, Math.min(pt.b.d(i10, this.f39308e), (int) this.f39309i));
+        return H0(i10, this.f39356e, Math.min(pt.b.d(i10, this.f39356e), (int) this.f39357i));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1057,13 +1057,13 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     }
 
     private static f0 n0(f0 f0Var, long j10) {
-        long f10 = pt.c.f(f0Var.f39309i, j10);
+        long f10 = pt.c.f(f0Var.f39357i, j10);
         if (f10 >= 1 && f10 <= 28) {
-            return H0(f0Var.f39307d, f0Var.f39308e, (int) f10);
+            return H0(f0Var.f39355d, f0Var.f39356e, (int) f10);
         }
         long f11 = pt.c.f(f0Var.B0(), j10);
         if (f11 >= 1 && f11 <= 365) {
-            return G0(f0Var.f39307d, (int) f11);
+            return G0(f0Var.f39355d, (int) f11);
         }
         return (f0) L.b(pt.c.f(f0Var.C0(), j10));
     }
@@ -1078,21 +1078,21 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static f0 s0(net.time4j.f fVar, f0 f0Var, long j10, int i10) {
-        switch (a.f39310a[fVar.ordinal()]) {
+        switch (a.f39358a[fVar.ordinal()]) {
             case 1:
-                return s0(net.time4j.f.f39286q, f0Var, pt.c.i(j10, 12000L), i10);
+                return s0(net.time4j.f.f39334q, f0Var, pt.c.i(j10, 12000L), i10);
             case 2:
-                return s0(net.time4j.f.f39286q, f0Var, pt.c.i(j10, 1200L), i10);
+                return s0(net.time4j.f.f39334q, f0Var, pt.c.i(j10, 1200L), i10);
             case 3:
-                return s0(net.time4j.f.f39286q, f0Var, pt.c.i(j10, 120L), i10);
+                return s0(net.time4j.f.f39334q, f0Var, pt.c.i(j10, 120L), i10);
             case 4:
-                return s0(net.time4j.f.f39286q, f0Var, pt.c.i(j10, 12L), i10);
+                return s0(net.time4j.f.f39334q, f0Var, pt.c.i(j10, 12L), i10);
             case 5:
-                return s0(net.time4j.f.f39286q, f0Var, pt.c.i(j10, 3L), i10);
+                return s0(net.time4j.f.f39334q, f0Var, pt.c.i(j10, 3L), i10);
             case 6:
-                return x0(f0Var, pt.c.f(f0Var.D0(), j10), f0Var.f39309i, i10);
+                return x0(f0Var, pt.c.f(f0Var.D0(), j10), f0Var.f39357i, i10);
             case 7:
-                return s0(net.time4j.f.f39288s, f0Var, pt.c.i(j10, 7L), i10);
+                return s0(net.time4j.f.f39336s, f0Var, pt.c.i(j10, 7L), i10);
             case 8:
                 return n0(f0Var, j10);
             default:
@@ -1159,7 +1159,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
             r0 = 5
             r1 = 2
             if (r11 != r0) goto Ld
-            byte r0 = r7.f39309i
+            byte r0 = r7.f39357i
             int r2 = r7.lengthOfMonth()
             if (r0 != r2) goto Ld
             r11 = r1
@@ -1232,48 +1232,48 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     /* JADX INFO: Access modifiers changed from: private */
     public int z0() {
         byte b10;
-        switch (this.f39308e) {
+        switch (this.f39356e) {
             case 1:
             case 4:
             case 7:
             case 10:
-                return this.f39309i;
+                return this.f39357i;
             case 2:
             case 8:
             case 11:
-                return this.f39309i + 31;
+                return this.f39357i + 31;
             case 3:
-                if (pt.b.e(this.f39307d)) {
+                if (pt.b.e(this.f39355d)) {
                     b10 = 60;
                 } else {
                     b10 = 59;
                 }
-                return b10 + this.f39309i;
+                return b10 + this.f39357i;
             case 5:
-                return this.f39309i + 30;
+                return this.f39357i + 30;
             case 6:
             case 12:
-                return this.f39309i + 61;
+                return this.f39357i + 61;
             case 9:
-                return this.f39309i + 62;
+                return this.f39357i + 62;
             default:
-                throw new AssertionError("Unknown month: " + ((int) this.f39308e));
+                throw new AssertionError("Unknown month: " + ((int) this.f39356e));
         }
     }
 
     public y0 A0() {
-        return y0.h(pt.b.c(this.f39307d, this.f39308e, this.f39309i));
+        return y0.h(pt.b.c(this.f39355d, this.f39356e, this.f39357i));
     }
 
     public int B0() {
-        byte b10 = this.f39308e;
+        byte b10 = this.f39356e;
         if (b10 != 1) {
             if (b10 != 2) {
-                return f39303w[b10 - 2] + this.f39309i + (pt.b.e(this.f39307d) ? 1 : 0);
+                return f39351w[b10 - 2] + this.f39357i + (pt.b.e(this.f39355d) ? 1 : 0);
             }
-            return this.f39309i + 31;
+            return this.f39357i + 31;
         }
-        return this.f39309i;
+        return this.f39357i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1283,12 +1283,12 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public long D0() {
-        return (((this.f39307d - 1970) * 12) + this.f39308e) - 1;
+        return (((this.f39355d - 1970) * 12) + this.f39356e) - 1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int E0() {
-        return ((Integer) s(a1.f39075x.n())).intValue();
+        return ((Integer) s(a1.f39123x.n())).intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1303,11 +1303,11 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     public int M(rt.g gVar) {
         if (gVar instanceof f0) {
             f0 f0Var = (f0) gVar;
-            int i10 = this.f39307d - f0Var.f39307d;
+            int i10 = this.f39355d - f0Var.f39355d;
             if (i10 == 0) {
-                int i11 = this.f39308e - f0Var.f39308e;
+                int i11 = this.f39356e - f0Var.f39356e;
                 if (i11 == 0) {
-                    return this.f39309i - f0Var.f39309i;
+                    return this.f39357i - f0Var.f39357i;
                 }
                 return i11;
             }
@@ -1328,7 +1328,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
         }
         if (obj instanceof f0) {
             f0 f0Var = (f0) obj;
-            if (this.f39309i == f0Var.f39309i && this.f39308e == f0Var.f39308e && this.f39307d == f0Var.f39307d) {
+            if (this.f39357i == f0Var.f39357i && this.f39356e == f0Var.f39356e && this.f39355d == f0Var.f39355d) {
                 return true;
             }
         }
@@ -1337,22 +1337,22 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     @Override // pt.a
     public int f() {
-        return this.f39307d;
+        return this.f39355d;
     }
 
     @Override // pt.a
     public int g() {
-        return this.f39309i;
+        return this.f39357i;
     }
 
     @Override // rt.m
     public int hashCode() {
-        int i10 = this.f39307d;
-        return (((i10 << 11) + (this.f39308e << 6)) + this.f39309i) ^ (i10 & (-2048));
+        int i10 = this.f39355d;
+        return (((i10 << 11) + (this.f39356e << 6)) + this.f39357i) ^ (i10 & (-2048));
     }
 
     public int lengthOfMonth() {
-        return pt.b.d(this.f39307d, this.f39308e);
+        return pt.b.d(this.f39355d, this.f39356e);
     }
 
     public i0 o0(g0 g0Var) {
@@ -1360,7 +1360,7 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
     }
 
     public i0 p0() {
-        return o0(g0.f39337x);
+        return o0(g0.f39385x);
     }
 
     public i0 q0(int i10, int i11, int i12) {
@@ -1369,15 +1369,15 @@ public final class f0 extends rt.m implements pt.a, rt.d0, st.h {
 
     @Override // pt.a
     public int r() {
-        return this.f39308e;
+        return this.f39356e;
     }
 
     @Override // pt.a
     public String toString() {
         StringBuilder sb2 = new StringBuilder(32);
-        v0(sb2, this.f39307d);
-        u0(sb2, this.f39308e);
-        u0(sb2, this.f39309i);
+        v0(sb2, this.f39355d);
+        u0(sb2, this.f39356e);
+        u0(sb2, this.f39357i);
         return sb2.toString();
     }
 

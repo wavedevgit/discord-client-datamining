@@ -5,16 +5,16 @@ import yi.c;
 final class s3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s3 f42436a = new s3();
+    static final s3 f42484a = new s3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42437b;
+    private static final yi.c f42485b;
 
     static {
         c.b a10 = yi.c.a("api");
         f fVar = new f();
         fVar.a(1);
-        f42437b = a10.b(fVar.b()).a();
+        f42485b = a10.b(fVar.b()).a();
     }
 
     private s3() {

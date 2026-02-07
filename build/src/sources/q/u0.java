@@ -5,7 +5,7 @@ import a0.p0;
 class u0 implements p0.b {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u0 f46152a = new u0();
+    static final u0 f46200a = new u0();
 
     @Override // a0.p0.b
     public void a(a0.x2 x2Var, p0.a aVar) {

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/getMediaViewerStateForScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun76669: for (var _fun76669_ip = 0;;) switch (_fun76669_ip) {
+        _fun77120: for (var _fun77120_ip = 0;;) switch (_fun77120_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3, var0);
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun76669_ip = 371;
-                    continue _fun76669
+                    _fun77120_ip = 371;
+                    continue _fun77120
                 }
             case 56:
                 var4 = var2 / var1;
@@ -48,19 +48,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5 / var0;
                 var5 = var3.width;
                 if (!(var5 < var2)) {
-                    _fun76669_ip = 95;
-                    continue _fun76669
+                    _fun77120_ip = 95;
+                    continue _fun77120
                 }
             case 83:
                 var5 = var3.height;
                 if (!(!(var5 < var1))) {
-                    _fun76669_ip = 263;
-                    continue _fun76669
+                    _fun77120_ip = 263;
+                    continue _fun77120
                 }
             case 95:
                 if (!(!(var0 > var4))) {
-                    _fun76669_ip = 181;
-                    continue _fun76669
+                    _fun77120_ip = 181;
+                    continue _fun77120
                 }
             case 99:
                 var5 = var3.height;
@@ -104,14 +104,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var5;
             case 263:
                 if (!(!(var0 > var4))) {
-                    _fun76669_ip = 278;
-                    continue _fun76669
+                    _fun77120_ip = 278;
+                    continue _fun77120
                 }
             case 267:
                 var0 = var3.height;
                 var4 = var0 / var1;
-                _fun76669_ip = 287;
-                continue _fun76669;
+                _fun77120_ip = 287;
+                continue _fun77120;
             case 278:
                 var0 = var3.width;
                 var4 = var0 / var2;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 1;
                 var4 = var5;
                 if (!(var7 !== var6)) {
-                    _fun76669_ip = 346;
-                    continue _fun76669
+                    _fun77120_ip = 346;
+                    continue _fun77120
                 }
             case 342:
                 var4 = var5 / var6;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8883, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8927, 2]);

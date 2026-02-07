@@ -16,31 +16,31 @@ import org.jetbrains.annotations.NotNull;
 public final class DeserializationContext {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DeserializationComponents f34315a;
+    private final DeserializationComponents f34363a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NameResolver f34316b;
+    private final NameResolver f34364b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final DeclarationDescriptor f34317c;
+    private final DeclarationDescriptor f34365c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeTable f34318d;
+    private final TypeTable f34366d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final VersionRequirementTable f34319e;
+    private final VersionRequirementTable f34367e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final BinaryVersion f34320f;
+    private final BinaryVersion f34368f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final DeserializedContainerSource f34321g;
+    private final DeserializedContainerSource f34369g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final TypeDeserializer f34322h;
+    private final TypeDeserializer f34370h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final MemberDeserializer f34323i;
+    private final MemberDeserializer f34371i;
 
     public DeserializationContext(@NotNull DeserializationComponents components, @NotNull NameResolver nameResolver, @NotNull DeclarationDescriptor containingDeclaration, @NotNull TypeTable typeTable, @NotNull VersionRequirementTable versionRequirementTable, @NotNull BinaryVersion metadataVersion, DeserializedContainerSource deserializedContainerSource, TypeDeserializer typeDeserializer, @NotNull List<ProtoBuf.TypeParameter> typeParameters) {
         Intrinsics.checkNotNullParameter(components, "components");
@@ -50,32 +50,32 @@ public final class DeserializationContext {
         Intrinsics.checkNotNullParameter(versionRequirementTable, "versionRequirementTable");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
         Intrinsics.checkNotNullParameter(typeParameters, "typeParameters");
-        this.f34315a = components;
-        this.f34316b = nameResolver;
-        this.f34317c = containingDeclaration;
-        this.f34318d = typeTable;
-        this.f34319e = versionRequirementTable;
-        this.f34320f = metadataVersion;
-        this.f34321g = deserializedContainerSource;
-        this.f34322h = new TypeDeserializer(this, typeDeserializer, typeParameters, "Deserializer for \"" + containingDeclaration.getName() + '\"', (deserializedContainerSource == null || (r3 = deserializedContainerSource.getPresentableString()) == null) ? "[container not found]" : "[container not found]");
-        this.f34323i = new MemberDeserializer(this);
+        this.f34363a = components;
+        this.f34364b = nameResolver;
+        this.f34365c = containingDeclaration;
+        this.f34366d = typeTable;
+        this.f34367e = versionRequirementTable;
+        this.f34368f = metadataVersion;
+        this.f34369g = deserializedContainerSource;
+        this.f34370h = new TypeDeserializer(this, typeDeserializer, typeParameters, "Deserializer for \"" + containingDeclaration.getName() + '\"', (deserializedContainerSource == null || (r3 = deserializedContainerSource.getPresentableString()) == null) ? "[container not found]" : "[container not found]");
+        this.f34371i = new MemberDeserializer(this);
     }
 
     public static /* synthetic */ DeserializationContext childContext$default(DeserializationContext deserializationContext, DeclarationDescriptor declarationDescriptor, List list, NameResolver nameResolver, TypeTable typeTable, VersionRequirementTable versionRequirementTable, BinaryVersion binaryVersion, int i10, Object obj) {
         if ((i10 & 4) != 0) {
-            nameResolver = deserializationContext.f34316b;
+            nameResolver = deserializationContext.f34364b;
         }
         NameResolver nameResolver2 = nameResolver;
         if ((i10 & 8) != 0) {
-            typeTable = deserializationContext.f34318d;
+            typeTable = deserializationContext.f34366d;
         }
         TypeTable typeTable2 = typeTable;
         if ((i10 & 16) != 0) {
-            versionRequirementTable = deserializationContext.f34319e;
+            versionRequirementTable = deserializationContext.f34367e;
         }
         VersionRequirementTable versionRequirementTable2 = versionRequirementTable;
         if ((i10 & 32) != 0) {
-            binaryVersion = deserializationContext.f34320f;
+            binaryVersion = deserializationContext.f34368f;
         }
         return deserializationContext.childContext(declarationDescriptor, list, nameResolver2, typeTable2, versionRequirementTable2, binaryVersion);
     }
@@ -89,56 +89,56 @@ public final class DeserializationContext {
         Intrinsics.checkNotNullParameter(typeTable, "typeTable");
         Intrinsics.checkNotNullParameter(versionRequirementTable, "versionRequirementTable");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
-        DeserializationComponents deserializationComponents = this.f34315a;
+        DeserializationComponents deserializationComponents = this.f34363a;
         if (VersionSpecificBehaviorKt.isVersionRequirementTableWrittenCorrectly(metadataVersion)) {
             versionRequirementTable2 = versionRequirementTable;
         } else {
-            versionRequirementTable2 = this.f34319e;
+            versionRequirementTable2 = this.f34367e;
         }
-        return new DeserializationContext(deserializationComponents, nameResolver, descriptor, typeTable, versionRequirementTable2, metadataVersion, this.f34321g, this.f34322h, typeParameterProtos);
+        return new DeserializationContext(deserializationComponents, nameResolver, descriptor, typeTable, versionRequirementTable2, metadataVersion, this.f34369g, this.f34370h, typeParameterProtos);
     }
 
     @NotNull
     public final DeserializationComponents getComponents() {
-        return this.f34315a;
+        return this.f34363a;
     }
 
     public final DeserializedContainerSource getContainerSource() {
-        return this.f34321g;
+        return this.f34369g;
     }
 
     @NotNull
     public final DeclarationDescriptor getContainingDeclaration() {
-        return this.f34317c;
+        return this.f34365c;
     }
 
     @NotNull
     public final MemberDeserializer getMemberDeserializer() {
-        return this.f34323i;
+        return this.f34371i;
     }
 
     @NotNull
     public final NameResolver getNameResolver() {
-        return this.f34316b;
+        return this.f34364b;
     }
 
     @NotNull
     public final StorageManager getStorageManager() {
-        return this.f34315a.getStorageManager();
+        return this.f34363a.getStorageManager();
     }
 
     @NotNull
     public final TypeDeserializer getTypeDeserializer() {
-        return this.f34322h;
+        return this.f34370h;
     }
 
     @NotNull
     public final TypeTable getTypeTable() {
-        return this.f34318d;
+        return this.f34366d;
     }
 
     @NotNull
     public final VersionRequirementTable getVersionRequirementTable() {
-        return this.f34319e;
+        return this.f34367e;
     }
 }

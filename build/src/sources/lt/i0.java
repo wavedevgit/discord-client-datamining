@@ -16,10 +16,10 @@ import lt.x;
 public abstract class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final x.a f36666a = new x.a();
+    private static final x.a f36714a = new x.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final x.a f36667b = new x.a();
+    private static final x.a f36715b = new x.a();
 
     private static final Map b(SerialDescriptor serialDescriptor, Json json) {
         String str;
@@ -63,7 +63,7 @@ public abstract class i0 {
 
     private static final void c(Map map, SerialDescriptor serialDescriptor, String str, int i10) {
         String str2;
-        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f26488a)) {
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f26536a)) {
             str2 = "enum value";
         } else {
             str2 = "property";
@@ -76,7 +76,7 @@ public abstract class i0 {
     }
 
     private static final boolean d(Json json, SerialDescriptor serialDescriptor) {
-        if (json.e().h() && Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f26488a)) {
+        if (json.e().h() && Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f26536a)) {
             return true;
         }
         return false;
@@ -85,7 +85,7 @@ public abstract class i0 {
     public static final Map e(final Json json, final SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(json, "<this>");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return (Map) kt.a0.a(json).b(descriptor, f36666a, new Function0() { // from class: lt.h0
+        return (Map) kt.a0.a(json).b(descriptor, f36714a, new Function0() { // from class: lt.h0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Map f10;
@@ -101,7 +101,7 @@ public abstract class i0 {
     }
 
     public static final x.a g() {
-        return f36666a;
+        return f36714a;
     }
 
     public static final String h(SerialDescriptor serialDescriptor, Json json, int i10) {
@@ -158,7 +158,7 @@ public abstract class i0 {
     public static final kt.u m(SerialDescriptor serialDescriptor, Json json) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
         Intrinsics.checkNotNullParameter(json, "json");
-        if (Intrinsics.areEqual(serialDescriptor.getKind(), l.a.f26489a)) {
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), l.a.f26537a)) {
             json.e().l();
         }
         return null;

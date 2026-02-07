@@ -15,20 +15,20 @@ import rv.d;
 class f implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f29290a;
+    private final Context f29338a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f29291b = new ArrayList(3);
+    private final List f29339b = new ArrayList(3);
 
     /* renamed from: c  reason: collision with root package name */
-    private TextView.BufferType f29292c = TextView.BufferType.SPANNABLE;
+    private TextView.BufferType f29340c = TextView.BufferType.SPANNABLE;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f29293d = true;
+    private boolean f29341d = true;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(Context context) {
-        this.f29290a = context;
+        this.f29338a = context;
     }
 
     private static List b(List list) {
@@ -37,16 +37,16 @@ class f implements e.a {
 
     @Override // ir.e.a
     public e.a a(i iVar) {
-        this.f29291b.add(iVar);
+        this.f29339b.add(iVar);
         return this;
     }
 
     @Override // ir.e.a
     public e build() {
-        if (!this.f29291b.isEmpty()) {
-            List<i> b10 = b(this.f29291b);
+        if (!this.f29339b.isEmpty()) {
+            List<i> b10 = b(this.f29339b);
             d.b bVar = new d.b();
-            c.a i10 = jr.c.i(this.f29290a);
+            c.a i10 = jr.c.i(this.f29338a);
             g.b bVar2 = new g.b();
             n.a aVar = new n.a();
             k.a aVar2 = new k.a();
@@ -58,7 +58,7 @@ class f implements e.a {
                 iVar.c(aVar2);
             }
             g h10 = bVar2.h(i10.z(), aVar2.build());
-            return new h(this.f29292c, null, bVar.f(), m.b(aVar, h10), h10, Collections.unmodifiableList(b10), this.f29293d);
+            return new h(this.f29340c, null, bVar.f(), m.b(aVar, h10), h10, Collections.unmodifiableList(b10), this.f29341d);
         }
         throw new IllegalStateException("No plugins were added to this builder. Use #usePlugin method to add them");
     }

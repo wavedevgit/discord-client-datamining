@@ -39,7 +39,7 @@ public /* synthetic */ class MediaPlayerProgress$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        x xVar = x.f31095a;
+        x xVar = x.f31143a;
         return new KSerializer[]{xVar, xVar, xVar};
     }
 

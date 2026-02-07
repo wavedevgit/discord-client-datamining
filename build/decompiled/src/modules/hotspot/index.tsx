@@ -1,7 +1,7 @@
 // modules/hotspot/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67285: for (var _fun67285_ip = 0;;) switch (_fun67285_ip) {
+    _fun67735: for (var _fun67735_ip = 0;;) switch (_fun67735_ip) {
         case 0:
             var10 = require;
             var2 = exports;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 117: var12 = var3;
                     var11 = var8[var12];
                     var2[var12] = var11;
-                    _fun67285_ip = 108;
-                    continue _fun67285;
+                    _fun67735_ip = 108;
+                    continue _fun67735;
                 }
         case 130:
             var4 = 3;
@@ -48,11 +48,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var10.bind(var0)(var11);
                     var11 = var11[var12];
                     var2[var12] = var11;
-                    _fun67285_ip = 150;
-                    continue _fun67285;
+                    _fun67735_ip = 150;
+                    continue _fun67735;
                 }
         case 181:
             var2.HotspotStore = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8348, 2, 8349, 8350]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8392, 2, 8393, 8394]);

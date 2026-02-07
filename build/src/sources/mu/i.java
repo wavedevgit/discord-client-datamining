@@ -10,10 +10,10 @@ import org.conscrypt.Conscrypt;
 public final class i implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f38320a = new b(null);
+    public static final b f38368a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final j.a f38321b = new a();
+    private static final j.a f38369b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements j.a {
@@ -23,7 +23,7 @@ public final class i implements k {
         @Override // mu.j.a
         public boolean b(SSLSocket sslSocket) {
             Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-            if (lu.d.f36759e.c() && Conscrypt.isConscrypt(sslSocket)) {
+            if (lu.d.f36807e.c() && Conscrypt.isConscrypt(sslSocket)) {
                 return true;
             }
             return false;
@@ -43,7 +43,7 @@ public final class i implements k {
         }
 
         public final j.a a() {
-            return i.f38321b;
+            return i.f38369b;
         }
 
         private b() {
@@ -52,7 +52,7 @@ public final class i implements k {
 
     @Override // mu.k
     public boolean a() {
-        return lu.d.f36759e.c();
+        return lu.d.f36807e.c();
     }
 
     @Override // mu.k
@@ -76,7 +76,7 @@ public final class i implements k {
         Intrinsics.checkNotNullParameter(protocols, "protocols");
         if (b(sslSocket)) {
             Conscrypt.setUseSessionTickets(sslSocket, true);
-            Conscrypt.setApplicationProtocols(sslSocket, (String[]) lu.h.f36777a.b(protocols).toArray(new String[0]));
+            Conscrypt.setApplicationProtocols(sslSocket, (String[]) lu.h.f36825a.b(protocols).toArray(new String[0]));
         }
     }
 }

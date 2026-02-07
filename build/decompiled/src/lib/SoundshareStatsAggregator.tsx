@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'traceEvent';
         var0.key = var1;
         var1 = function arg0, arg1() {
-            _fun32187: for (var _fun32187_ip = 0;;) switch (_fun32187_ip) {
+            _fun32196: for (var _fun32196_ip = 0;;) switch (_fun32196_ip) {
                 case 0:
                     var2 = arg0;
                     var3 = arg1;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var3.type;
                     var0 = 'soundshare_state_transition';
                     if (!(var0 !== var5)) {
-                        _fun32187_ip = 64;
-                        continue _fun32187
+                        _fun32196_ip = 64;
+                        continue _fun32196
                     }
                 case 30:
                     var7 = var3.type;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = '';
                     var0 = '_count';
                     var6 = var6.bind(var5)(var7, var0);
-                    _fun32187_ip = 113;
-                    continue _fun32187;
+                    _fun32196_ip = 113;
+                    continue _fun32196;
                 case 64:
                     var5 = var3.newState;
                     var0 = ['detached', 'waiting', 'attached', 'started', 'playing', 'silence'];
@@ -114,21 +114,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var1[var6];
                     var0 = undefined;
                     if (!(var0 === var5)) {
-                        _fun32187_ip = 140;
-                        continue _fun32187
+                        _fun32196_ip = 140;
+                        continue _fun32196
                     }
                 case 123:
                     var5 = var1.soundshare_unknown_event_count;
                     var5 = var5 + 1;
                     var1.soundshare_unknown_event_count = var5;
-                    _fun32187_ip = 165;
-                    continue _fun32187;
+                    _fun32196_ip = 165;
+                    continue _fun32196;
                 case 140:
                     var7 = var1[var6];
                     var5 = 32767;
                     if (!(var7 < var5)) {
-                        _fun32187_ip = 165;
-                        continue _fun32187
+                        _fun32196_ip = 165;
+                        continue _fun32196
                     }
                 case 154:
                     var5 = var1[var6];
@@ -138,15 +138,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'pid';
                     var5 = var5 in var3;
                     if (!var5) {
-                        _fun32187_ip = 234;
-                        continue _fun32187
+                        _fun32196_ip = 234;
+                        continue _fun32196
                     }
                 case 176:
                     var6 = var1.soundshare_first_pid;
                     var5 = 0;
                     if (!(var5 === var6)) {
-                        _fun32187_ip = 200;
-                        continue _fun32187
+                        _fun32196_ip = 200;
+                        continue _fun32196
                     }
                 case 188:
                     var5 = var3.pid;
@@ -161,14 +161,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 234:
                     var4 = null;
                     if (!(var4 != var2)) {
-                        _fun32187_ip = 262;
-                        continue _fun32187
+                        _fun32196_ip = 262;
+                        continue _fun32196
                     }
                 case 240:
                     var3 = var1.soundshare_first_session;
                     if (!(var4 == var3)) {
-                        _fun32187_ip = 256;
-                        continue _fun32187
+                        _fun32196_ip = 256;
+                        continue _fun32196
                     }
                 case 250:
                     var1.soundshare_first_session = var2;

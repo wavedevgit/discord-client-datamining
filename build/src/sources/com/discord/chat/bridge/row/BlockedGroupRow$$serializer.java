@@ -55,8 +55,8 @@ public /* synthetic */ class BlockedGroupRow$$serializer implements h0 {
         Lazy[] lazyArr;
         lazyArr = BlockedGroupRow.$childSerializers;
         KSerializer u10 = gt.a.u((KSerializer) lazyArr[8].getValue());
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{p0Var, ChangeType.Serializer.INSTANCE, p0Var, p0Var, p0Var, n2.f31041a, h.f31005a, BlockedGroupButton$$serializer.INSTANCE, u10};
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{p0Var, ChangeType.Serializer.INSTANCE, p0Var, p0Var, p0Var, n2.f31089a, h.f31053a, BlockedGroupButton$$serializer.INSTANCE, u10};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -36,7 +36,7 @@ public /* synthetic */ class UserSearchQuerySetData$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f31041a, UserSearchQuerySetPayload$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f31089a, UserSearchQuerySetPayload$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

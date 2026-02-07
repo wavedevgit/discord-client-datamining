@@ -33,7 +33,7 @@ public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideo
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bindGalleryItem$lambda$0(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void bindAttachment(@NotNull ChatEventHandler eventHandler, @NotNull VideoAttachmentMessageAccessory item, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle) {

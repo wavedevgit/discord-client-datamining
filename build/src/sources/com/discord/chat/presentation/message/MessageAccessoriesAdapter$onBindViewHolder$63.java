@@ -20,7 +20,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$63 exten
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
         m518invokesekaTiM(((ChannelId) obj).m1066unboximpl(), ((MessageId) obj2).m1092unboximpl(), (String) obj3);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* renamed from: invoke-sekaTiM  reason: not valid java name */

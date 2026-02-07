@@ -5,10 +5,10 @@ import hp.m;
 public final class o implements m.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f26380a;
+    private final n f26428a;
 
     o(n nVar) {
-        this.f26380a = nVar;
+        this.f26428a = nVar;
     }
 
     public static br.h a(n nVar) {
@@ -17,6 +17,6 @@ public final class o implements m.a {
 
     @Override // hp.m.a
     public m create() {
-        return this.f26380a.b();
+        return this.f26428a.b();
     }
 }

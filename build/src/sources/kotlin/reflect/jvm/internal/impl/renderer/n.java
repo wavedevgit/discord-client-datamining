@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.TypeProjection;
 public class n implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DescriptorRendererImpl f34086d;
+    private final DescriptorRendererImpl f34134d;
 
     public n(DescriptorRendererImpl descriptorRendererImpl) {
-        this.f34086d = descriptorRendererImpl;
+        this.f34134d = descriptorRendererImpl;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         CharSequence E;
-        E = DescriptorRendererImpl.E(this.f34086d, (TypeProjection) obj);
+        E = DescriptorRendererImpl.E(this.f34134d, (TypeProjection) obj);
         return E;
     }
 }

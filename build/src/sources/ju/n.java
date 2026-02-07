@@ -6,12 +6,12 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    public final b f31303d;
+    public final b f31351d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(b errorCode) {
         super("stream was reset: " + errorCode);
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        this.f31303d = errorCode;
+        this.f31351d = errorCode;
     }
 }

@@ -22,25 +22,25 @@ public abstract /* synthetic */ class n {
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f49310d;
+        Object f49358d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f49311e;
+        Object f49359e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f49312i;
+        int f49360i;
 
         /* renamed from: o  reason: collision with root package name */
-        private /* synthetic */ Object f49313o;
+        private /* synthetic */ Object f49361o;
 
         /* renamed from: p  reason: collision with root package name */
-        /* synthetic */ Object f49314p;
+        /* synthetic */ Object f49362p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Function1 f49315q;
+        final /* synthetic */ Function1 f49363q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ Flow f49316r;
+        final /* synthetic */ Flow f49364r;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: rs.n$a$a  reason: collision with other inner class name */
@@ -48,30 +48,30 @@ public abstract /* synthetic */ class n {
         public static final class C0635a extends kotlin.coroutines.jvm.internal.k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f49317d;
+            int f49365d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f49318e;
+            final /* synthetic */ FlowCollector f49366e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f49319i;
+            final /* synthetic */ Ref.ObjectRef f49367i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0635a(FlowCollector flowCollector, Ref.ObjectRef objectRef, Continuation continuation) {
                 super(1, continuation);
-                this.f49318e = flowCollector;
-                this.f49319i = objectRef;
+                this.f49366e = flowCollector;
+                this.f49367i = objectRef;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new C0635a(this.f49318e, this.f49319i, continuation);
+                return new C0635a(this.f49366e, this.f49367i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = wr.b.f();
-                int i10 = this.f49317d;
+                int i10 = this.f49365d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -80,24 +80,24 @@ public abstract /* synthetic */ class n {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    FlowCollector flowCollector = this.f49318e;
-                    ts.e0 e0Var = ss.t.f50099a;
-                    Object obj2 = this.f49319i.element;
+                    FlowCollector flowCollector = this.f49366e;
+                    ts.e0 e0Var = ss.t.f50147a;
+                    Object obj2 = this.f49367i.element;
                     if (obj2 == e0Var) {
                         obj2 = null;
                     }
-                    this.f49317d = 1;
+                    this.f49365d = 1;
                     if (flowCollector.emit(obj2, this) == f10) {
                         return f10;
                     }
                 }
-                this.f49319i.element = null;
-                return Unit.f32008a;
+                this.f49367i.element = null;
+                return Unit.f32056a;
             }
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((C0635a) create(continuation)).invokeSuspend(Unit.f32008a);
+                return ((C0635a) create(continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -106,31 +106,31 @@ public abstract /* synthetic */ class n {
         public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f49320d;
+            Object f49368d;
 
             /* renamed from: e  reason: collision with root package name */
-            int f49321e;
+            int f49369e;
 
             /* renamed from: i  reason: collision with root package name */
-            /* synthetic */ Object f49322i;
+            /* synthetic */ Object f49370i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ Ref.ObjectRef f49323o;
+            final /* synthetic */ Ref.ObjectRef f49371o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f49324p;
+            final /* synthetic */ FlowCollector f49372p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(Ref.ObjectRef objectRef, FlowCollector flowCollector, Continuation continuation) {
                 super(2, continuation);
-                this.f49323o = objectRef;
-                this.f49324p = flowCollector;
+                this.f49371o = objectRef;
+                this.f49372p = flowCollector;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                b bVar = new b(this.f49323o, this.f49324p, continuation);
-                bVar.f49322i = obj;
+                b bVar = new b(this.f49371o, this.f49372p, continuation);
+                bVar.f49370i = obj;
                 return bVar;
             }
 
@@ -146,53 +146,53 @@ public abstract /* synthetic */ class n {
                 Ref.ObjectRef objectRef;
                 Ref.ObjectRef objectRef2;
                 Object f10 = wr.b.f();
-                int i10 = this.f49321e;
+                int i10 = this.f49369e;
                 if (i10 != 0) {
                     if (i10 == 1) {
-                        objectRef2 = (Ref.ObjectRef) this.f49320d;
+                        objectRef2 = (Ref.ObjectRef) this.f49368d;
                         kotlin.c.b(obj);
                     } else {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                 } else {
                     kotlin.c.b(obj);
-                    ?? k10 = ((qs.k) this.f49322i).k();
-                    objectRef = this.f49323o;
+                    ?? k10 = ((qs.k) this.f49370i).k();
+                    objectRef = this.f49371o;
                     boolean z10 = k10 instanceof k.c;
                     if (!z10) {
                         objectRef.element = k10;
                     }
-                    FlowCollector flowCollector = this.f49324p;
+                    FlowCollector flowCollector = this.f49372p;
                     if (z10) {
                         Throwable e10 = qs.k.e(k10);
                         if (e10 == null) {
                             Object obj2 = objectRef.element;
                             if (obj2 != null) {
-                                if (obj2 == ss.t.f50099a) {
+                                if (obj2 == ss.t.f50147a) {
                                     obj2 = null;
                                 }
-                                this.f49322i = k10;
-                                this.f49320d = objectRef;
-                                this.f49321e = 1;
+                                this.f49370i = k10;
+                                this.f49368d = objectRef;
+                                this.f49369e = 1;
                                 if (flowCollector.emit(obj2, this) == f10) {
                                     return f10;
                                 }
                                 objectRef2 = objectRef;
                             }
-                            objectRef.element = ss.t.f50101c;
+                            objectRef.element = ss.t.f50149c;
                         } else {
                             throw e10;
                         }
                     }
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
                 objectRef = objectRef2;
-                objectRef.element = ss.t.f50101c;
-                return Unit.f32008a;
+                objectRef.element = ss.t.f50149c;
+                return Unit.f32056a;
             }
 
             public final Object j(Object obj, Continuation continuation) {
-                return ((b) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32008a);
+                return ((b) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -201,13 +201,13 @@ public abstract /* synthetic */ class n {
         public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f49325d;
+            int f49373d;
 
             /* renamed from: e  reason: collision with root package name */
-            private /* synthetic */ Object f49326e;
+            private /* synthetic */ Object f49374e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Flow f49327i;
+            final /* synthetic */ Flow f49375i;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: rs.n$a$c$a  reason: collision with other inner class name */
@@ -215,7 +215,7 @@ public abstract /* synthetic */ class n {
             public static final class C0636a implements FlowCollector {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ ProducerScope f49328d;
+                final /* synthetic */ ProducerScope f49376d;
 
                 /* JADX INFO: Access modifiers changed from: package-private */
                 /* renamed from: rs.n$a$c$a$a  reason: collision with other inner class name */
@@ -223,10 +223,10 @@ public abstract /* synthetic */ class n {
                 public static final class C0637a extends kotlin.coroutines.jvm.internal.d {
 
                     /* renamed from: d  reason: collision with root package name */
-                    /* synthetic */ Object f49329d;
+                    /* synthetic */ Object f49377d;
 
                     /* renamed from: i  reason: collision with root package name */
-                    int f49331i;
+                    int f49379i;
 
                     C0637a(Continuation continuation) {
                         super(continuation);
@@ -234,14 +234,14 @@ public abstract /* synthetic */ class n {
 
                     @Override // kotlin.coroutines.jvm.internal.a
                     public final Object invokeSuspend(Object obj) {
-                        this.f49329d = obj;
-                        this.f49331i |= Integer.MIN_VALUE;
+                        this.f49377d = obj;
+                        this.f49379i |= Integer.MIN_VALUE;
                         return C0636a.this.emit(null, this);
                     }
                 }
 
                 C0636a(ProducerScope producerScope) {
-                    this.f49328d = producerScope;
+                    this.f49376d = producerScope;
                 }
 
                 /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -258,20 +258,20 @@ public abstract /* synthetic */ class n {
                         if (r0 == 0) goto L13
                         r0 = r6
                         rs.n$a$c$a$a r0 = (rs.n.a.c.C0636a.C0637a) r0
-                        int r1 = r0.f49331i
+                        int r1 = r0.f49379i
                         r2 = -2147483648(0xffffffff80000000, float:-0.0)
                         r3 = r1 & r2
                         if (r3 == 0) goto L13
                         int r1 = r1 - r2
-                        r0.f49331i = r1
+                        r0.f49379i = r1
                         goto L18
                     L13:
                         rs.n$a$c$a$a r0 = new rs.n$a$c$a$a
                         r0.<init>(r6)
                     L18:
-                        java.lang.Object r6 = r0.f49329d
+                        java.lang.Object r6 = r0.f49377d
                         java.lang.Object r1 = wr.b.f()
-                        int r2 = r0.f49331i
+                        int r2 = r0.f49379i
                         r3 = 1
                         if (r2 == 0) goto L31
                         if (r2 != r3) goto L29
@@ -284,16 +284,16 @@ public abstract /* synthetic */ class n {
                         throw r5
                     L31:
                         kotlin.c.b(r6)
-                        kotlinx.coroutines.channels.ProducerScope r6 = r4.f49328d
+                        kotlinx.coroutines.channels.ProducerScope r6 = r4.f49376d
                         if (r5 != 0) goto L3a
-                        ts.e0 r5 = ss.t.f50099a
+                        ts.e0 r5 = ss.t.f50147a
                     L3a:
-                        r0.f49331i = r3
+                        r0.f49379i = r3
                         java.lang.Object r5 = r6.x(r5, r0)
                         if (r5 != r1) goto L43
                         return r1
                     L43:
-                        kotlin.Unit r5 = kotlin.Unit.f32008a
+                        kotlin.Unit r5 = kotlin.Unit.f32056a
                         return r5
                     */
                     throw new UnsupportedOperationException("Method not decompiled: rs.n.a.c.C0636a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -303,20 +303,20 @@ public abstract /* synthetic */ class n {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             c(Flow flow, Continuation continuation) {
                 super(2, continuation);
-                this.f49327i = flow;
+                this.f49375i = flow;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                c cVar = new c(this.f49327i, continuation);
-                cVar.f49326e = obj;
+                c cVar = new c(this.f49375i, continuation);
+                cVar.f49374e = obj;
                 return cVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = wr.b.f();
-                int i10 = this.f49325d;
+                int i10 = this.f49373d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -325,27 +325,27 @@ public abstract /* synthetic */ class n {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    Flow flow = this.f49327i;
-                    C0636a c0636a = new C0636a((ProducerScope) this.f49326e);
-                    this.f49325d = 1;
+                    Flow flow = this.f49375i;
+                    C0636a c0636a = new C0636a((ProducerScope) this.f49374e);
+                    this.f49373d = 1;
                     if (flow.collect(c0636a, this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(ProducerScope producerScope, Continuation continuation) {
-                return ((c) create(producerScope, continuation)).invokeSuspend(Unit.f32008a);
+                return ((c) create(producerScope, continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function1 function1, Flow flow, Continuation continuation) {
             super(3, continuation);
-            this.f49315q = function1;
-            this.f49316r = flow;
+            this.f49363q = function1;
+            this.f49364r = flow;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:27:0x009f, code lost:
@@ -377,10 +377,10 @@ public abstract /* synthetic */ class n {
         @Override // kotlin.jvm.functions.Function3
         /* renamed from: j */
         public final Object invoke(CoroutineScope coroutineScope, FlowCollector flowCollector, Continuation continuation) {
-            a aVar = new a(this.f49315q, this.f49316r, continuation);
-            aVar.f49313o = coroutineScope;
-            aVar.f49314p = flowCollector;
-            return aVar.invokeSuspend(Unit.f32008a);
+            a aVar = new a(this.f49363q, this.f49364r, continuation);
+            aVar.f49361o = coroutineScope;
+            aVar.f49362p = flowCollector;
+            return aVar.invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -389,46 +389,46 @@ public abstract /* synthetic */ class n {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        long f49332d;
+        long f49380d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f49333e;
+        int f49381e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f49334i;
+        private /* synthetic */ Object f49382i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f49335o;
+        /* synthetic */ Object f49383o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ long f49336p;
+        final /* synthetic */ long f49384p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ Flow f49337q;
+        final /* synthetic */ Flow f49385q;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f49338d;
+            int f49386d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f49339e;
+            /* synthetic */ Object f49387e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f49340i;
+            final /* synthetic */ FlowCollector f49388i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(FlowCollector flowCollector, Continuation continuation) {
                 super(2, continuation);
-                this.f49340i = flowCollector;
+                this.f49388i = flowCollector;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                a aVar = new a(this.f49340i, continuation);
-                aVar.f49339e = obj;
+                a aVar = new a(this.f49388i, continuation);
+                aVar.f49387e = obj;
                 return aVar;
             }
 
@@ -448,11 +448,11 @@ public abstract /* synthetic */ class n {
                 /*
                     r4 = this;
                     java.lang.Object r0 = wr.b.f()
-                    int r1 = r4.f49338d
+                    int r1 = r4.f49386d
                     r2 = 1
                     if (r1 == 0) goto L19
                     if (r1 != r2) goto L11
-                    java.lang.Object r0 = r4.f49339e
+                    java.lang.Object r0 = r4.f49387e
                     kotlin.c.b(r5)
                     goto L36
                 L11:
@@ -462,14 +462,14 @@ public abstract /* synthetic */ class n {
                     throw r5
                 L19:
                     kotlin.c.b(r5)
-                    java.lang.Object r5 = r4.f49339e
+                    java.lang.Object r5 = r4.f49387e
                     qs.k r5 = (qs.k) r5
                     java.lang.Object r5 = r5.k()
-                    kotlinx.coroutines.flow.FlowCollector r1 = r4.f49340i
+                    kotlinx.coroutines.flow.FlowCollector r1 = r4.f49388i
                     boolean r3 = r5 instanceof qs.k.c
                     if (r3 != 0) goto L37
-                    r4.f49339e = r5
-                    r4.f49338d = r2
+                    r4.f49387e = r5
+                    r4.f49386d = r2
                     java.lang.Object r1 = r1.emit(r5, r4)
                     if (r1 != r0) goto L35
                     return r0
@@ -495,7 +495,7 @@ public abstract /* synthetic */ class n {
             }
 
             public final Object j(Object obj, Continuation continuation) {
-                return ((a) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(qs.k.b(obj), continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -505,43 +505,43 @@ public abstract /* synthetic */ class n {
         public static final class C0638b extends kotlin.coroutines.jvm.internal.k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f49341d;
+            int f49389d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ long f49342e;
+            final /* synthetic */ long f49390e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0638b(long j10, Continuation continuation) {
                 super(1, continuation);
-                this.f49342e = j10;
+                this.f49390e = j10;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new C0638b(this.f49342e, continuation);
+                return new C0638b(this.f49390e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 wr.b.f();
-                if (this.f49341d != 0) {
+                if (this.f49389d != 0) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                throw new r1("Timed out waiting for " + ((Object) Duration.M(this.f49342e)));
+                throw new r1("Timed out waiting for " + ((Object) Duration.M(this.f49390e)));
             }
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((C0638b) create(continuation)).invokeSuspend(Unit.f32008a);
+                return ((C0638b) create(continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(long j10, Flow flow, Continuation continuation) {
             super(3, continuation);
-            this.f49336p = j10;
-            this.f49337q = flow;
+            this.f49384p = j10;
+            this.f49385q = flow;
         }
 
         /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -562,15 +562,15 @@ public abstract /* synthetic */ class n {
             /*
                 r9 = this;
                 java.lang.Object r0 = wr.b.f()
-                int r1 = r9.f49333e
+                int r1 = r9.f49381e
                 r2 = 1
                 r3 = 0
                 if (r1 == 0) goto L22
                 if (r1 != r2) goto L1a
-                long r4 = r9.f49332d
-                java.lang.Object r1 = r9.f49335o
+                long r4 = r9.f49380d
+                java.lang.Object r1 = r9.f49383o
                 qs.v r1 = (qs.v) r1
-                java.lang.Object r6 = r9.f49334i
+                java.lang.Object r6 = r9.f49382i
                 kotlinx.coroutines.flow.FlowCollector r6 = (kotlinx.coroutines.flow.FlowCollector) r6
                 kotlin.c.b(r10)
                 goto L77
@@ -581,21 +581,21 @@ public abstract /* synthetic */ class n {
                 throw r10
             L22:
                 kotlin.c.b(r10)
-                java.lang.Object r10 = r9.f49334i
+                java.lang.Object r10 = r9.f49382i
                 kotlinx.coroutines.CoroutineScope r10 = (kotlinx.coroutines.CoroutineScope) r10
-                java.lang.Object r1 = r9.f49335o
+                java.lang.Object r1 = r9.f49383o
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-                long r4 = r9.f49336p
-                kotlin.time.Duration$a r6 = kotlin.time.Duration.f35007e
+                long r4 = r9.f49384p
+                kotlin.time.Duration$a r6 = kotlin.time.Duration.f35055e
                 long r6 = r6.c()
                 int r4 = kotlin.time.Duration.j(r4, r6)
                 if (r4 <= 0) goto L82
-                kotlinx.coroutines.flow.Flow r4 = r9.f49337q
+                kotlinx.coroutines.flow.Flow r4 = r9.f49385q
                 r5 = 0
                 r6 = 2
                 kotlinx.coroutines.flow.Flow r4 = rs.g.c(r4, r5, r3, r6, r3)
                 qs.v r10 = rs.g.E(r4, r10)
-                long r4 = r9.f49336p
+                long r4 = r9.f49384p
                 r6 = r1
                 r1 = r10
             L4b:
@@ -609,10 +609,10 @@ public abstract /* synthetic */ class n {
                 rs.n$b$b r7 = new rs.n$b$b
                 r7.<init>(r4, r3)
                 ws.c.b(r10, r4, r7)
-                r9.f49334i = r6
-                r9.f49335o = r1
-                r9.f49332d = r4
-                r9.f49333e = r2
+                r9.f49382i = r6
+                r9.f49383o = r1
+                r9.f49380d = r4
+                r9.f49381e = r2
                 java.lang.Object r10 = r10.o(r9)
                 if (r10 != r0) goto L77
                 return r0
@@ -620,7 +620,7 @@ public abstract /* synthetic */ class n {
                 java.lang.Boolean r10 = (java.lang.Boolean) r10
                 boolean r10 = r10.booleanValue()
                 if (r10 != 0) goto L4b
-                kotlin.Unit r10 = kotlin.Unit.f32008a
+                kotlin.Unit r10 = kotlin.Unit.f32056a
                 return r10
             L82:
                 os.r1 r10 = new os.r1
@@ -634,10 +634,10 @@ public abstract /* synthetic */ class n {
         @Override // kotlin.jvm.functions.Function3
         /* renamed from: j */
         public final Object invoke(CoroutineScope coroutineScope, FlowCollector flowCollector, Continuation continuation) {
-            b bVar = new b(this.f49336p, this.f49337q, continuation);
-            bVar.f49334i = coroutineScope;
-            bVar.f49335o = flowCollector;
-            return bVar.invokeSuspend(Unit.f32008a);
+            b bVar = new b(this.f49384p, this.f49385q, continuation);
+            bVar.f49382i = coroutineScope;
+            bVar.f49383o = flowCollector;
+            return bVar.invokeSuspend(Unit.f32056a);
         }
     }
 

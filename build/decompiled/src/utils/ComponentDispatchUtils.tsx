@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.warn = var9;
     var1.logger = var8;
     var6 = function arg0, arg1, arg2() {
-        _fun13519: for (var _fun13519_ip = 0;;) switch (_fun13519_ip) {
+        _fun13521: for (var _fun13521_ip = 0;;) switch (_fun13521_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var5;
                 if (!(var2 != var1)) {
-                    _fun13519_ip = 61;
-                    continue _fun13519
+                    _fun13521_ip = 61;
+                    continue _fun13521
                 }
             case 58:
                 var4 = var1;

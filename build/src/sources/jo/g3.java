@@ -43,118 +43,118 @@ import vp.i;
 public final class g3 extends bn.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f30219a;
+    private final Context f30267a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final v4.h f30220b;
+    private final v4.h f30268b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f.a f30221c;
+    private final f.a f30269c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f30222d;
+    private final a0 f30270d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ro.j f30223e;
+    private final ro.j f30271e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ro.s f30224f;
+    private final ro.s f30272f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final lo.m0 f30225g;
+    private final lo.m0 f30273g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final AutoClassifyWorker.b f30226h;
+    private final AutoClassifyWorker.b f30274h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ko.o f30227i;
+    private final ko.o f30275i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final zn.a f30228j;
+    private final zn.a f30276j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final zp.b f30229k;
+    private final zp.b f30277k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final vp.c f30230l;
+    private final vp.c f30278l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final ro.k f30231m;
+    private final ro.k f30279m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f30232a;
+        private final String f30280a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f30233b;
+        private final String f30281b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f30234c;
+        private final List f30282c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f30235d;
+        private final String f30283d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f30236e;
+        private final String f30284e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f30237f;
+        private final String f30285f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final boolean f30238g;
+        private final boolean f30286g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f30239h;
+        private final boolean f30287h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f30240i;
+        private final List f30288i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30241j;
+        private final StepStyles.GovernmentIdStepStyle f30289j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final C0428a f30242k;
+        private final C0428a f30290k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final int f30243l;
+        private final int f30291l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final String f30244m;
+        private final String f30292m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final String f30245n;
+        private final String f30293n;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f30246o;
+        private final long f30294o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final boolean f30247p;
+        private final boolean f30295p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final Integer f30248q;
+        private final Integer f30296q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final VideoCaptureConfig f30249r;
+        private final VideoCaptureConfig f30297r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final NextStep.GovernmentId.AssetConfig f30250s;
+        private final NextStep.GovernmentId.AssetConfig f30298s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final boolean f30251t;
+        private final boolean f30299t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final ko.a f30252u;
+        private final ko.a f30300u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final StyleElements.Axis f30253v;
+        private final StyleElements.Axis f30301v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final PendingPageTextPosition f30254w;
+        private final PendingPageTextPosition f30302w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final oo.a f30255x;
+        private final oo.a f30303x;
 
         /* renamed from: jo.g3$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -187,94 +187,94 @@ public final class g3 extends bn.k {
             private final String Z;
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f30256a;
+            private final String f30304a;
 
             /* renamed from: a0  reason: collision with root package name */
-            private final String f30257a0;
+            private final String f30305a0;
 
             /* renamed from: b  reason: collision with root package name */
-            private final String f30258b;
+            private final String f30306b;
 
             /* renamed from: b0  reason: collision with root package name */
-            private final String f30259b0;
+            private final String f30307b0;
 
             /* renamed from: c  reason: collision with root package name */
-            private final String f30260c;
+            private final String f30308c;
 
             /* renamed from: c0  reason: collision with root package name */
-            private final String f30261c0;
+            private final String f30309c0;
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f30262d;
+            private final String f30310d;
 
             /* renamed from: d0  reason: collision with root package name */
-            private final List f30263d0;
+            private final List f30311d0;
 
             /* renamed from: e  reason: collision with root package name */
-            private final j4 f30264e;
+            private final j4 f30312e;
 
             /* renamed from: f  reason: collision with root package name */
-            private final j4 f30265f;
+            private final j4 f30313f;
 
             /* renamed from: g  reason: collision with root package name */
-            private final String f30266g;
+            private final String f30314g;
 
             /* renamed from: h  reason: collision with root package name */
-            private final j4 f30267h;
+            private final j4 f30315h;
 
             /* renamed from: i  reason: collision with root package name */
-            private final String f30268i;
+            private final String f30316i;
 
             /* renamed from: j  reason: collision with root package name */
-            private final String f30269j;
+            private final String f30317j;
 
             /* renamed from: k  reason: collision with root package name */
-            private final String f30270k;
+            private final String f30318k;
 
             /* renamed from: l  reason: collision with root package name */
-            private final j4 f30271l;
+            private final j4 f30319l;
 
             /* renamed from: m  reason: collision with root package name */
-            private final String f30272m;
+            private final String f30320m;
 
             /* renamed from: n  reason: collision with root package name */
-            private final String f30273n;
+            private final String f30321n;
 
             /* renamed from: o  reason: collision with root package name */
-            private final Map f30274o;
+            private final Map f30322o;
 
             /* renamed from: p  reason: collision with root package name */
-            private final j4 f30275p;
+            private final j4 f30323p;
 
             /* renamed from: q  reason: collision with root package name */
-            private final j4 f30276q;
+            private final j4 f30324q;
 
             /* renamed from: r  reason: collision with root package name */
-            private final String f30277r;
+            private final String f30325r;
 
             /* renamed from: s  reason: collision with root package name */
-            private final String f30278s;
+            private final String f30326s;
 
             /* renamed from: t  reason: collision with root package name */
-            private final Map f30279t;
+            private final Map f30327t;
 
             /* renamed from: u  reason: collision with root package name */
-            private final Map f30280u;
+            private final Map f30328u;
 
             /* renamed from: v  reason: collision with root package name */
-            private final String f30281v;
+            private final String f30329v;
 
             /* renamed from: w  reason: collision with root package name */
-            private final String f30282w;
+            private final String f30330w;
 
             /* renamed from: x  reason: collision with root package name */
-            private final String f30283x;
+            private final String f30331x;
 
             /* renamed from: y  reason: collision with root package name */
-            private final String f30284y;
+            private final String f30332y;
 
             /* renamed from: z  reason: collision with root package name */
-            private final String f30285z;
+            private final String f30333z;
 
             public C0428a(String title, String prompt, String choose, String instructionsDisclaimer, j4 captureScreenTitle, j4 scanInstructions, String capturing, j4 confirmCapture, String captureDisclaimer, String buttonSubmit, String buttonRetake, j4 confirmCaptureTitle, String processingTitle, String processingDescription, Map idClassToName, j4 chooseCaptureMethodTitle, j4 chooseCaptureMethodBody, String chooseCaptureMethodCameraButton, String chooseCaptureMethodUploadButton, Map reviewSelectedImageTitle, Map reviewSelectedImageBody, String reviewSelectedImageConfirmButton, String reviewSelectedImageChooseAnotherButton, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12, String str13, String str14, String str15, String str16, String str17, String str18, String str19, String str20, String str21, String str22, String str23, String str24, String str25, String str26, String str27, String str28, String str29, String str30, String str31, String str32, List list) {
                 Intrinsics.checkNotNullParameter(title, "title");
@@ -300,32 +300,32 @@ public final class g3 extends bn.k {
                 Intrinsics.checkNotNullParameter(reviewSelectedImageBody, "reviewSelectedImageBody");
                 Intrinsics.checkNotNullParameter(reviewSelectedImageConfirmButton, "reviewSelectedImageConfirmButton");
                 Intrinsics.checkNotNullParameter(reviewSelectedImageChooseAnotherButton, "reviewSelectedImageChooseAnotherButton");
-                this.f30256a = title;
-                this.f30258b = prompt;
-                this.f30260c = choose;
-                this.f30262d = instructionsDisclaimer;
-                this.f30264e = captureScreenTitle;
-                this.f30265f = scanInstructions;
-                this.f30266g = capturing;
-                this.f30267h = confirmCapture;
-                this.f30268i = captureDisclaimer;
-                this.f30269j = buttonSubmit;
-                this.f30270k = buttonRetake;
-                this.f30271l = confirmCaptureTitle;
-                this.f30272m = processingTitle;
-                this.f30273n = processingDescription;
-                this.f30274o = idClassToName;
-                this.f30275p = chooseCaptureMethodTitle;
-                this.f30276q = chooseCaptureMethodBody;
-                this.f30277r = chooseCaptureMethodCameraButton;
-                this.f30278s = chooseCaptureMethodUploadButton;
-                this.f30279t = reviewSelectedImageTitle;
-                this.f30280u = reviewSelectedImageBody;
-                this.f30281v = reviewSelectedImageConfirmButton;
-                this.f30282w = reviewSelectedImageChooseAnotherButton;
-                this.f30283x = str;
-                this.f30284y = str2;
-                this.f30285z = str3;
+                this.f30304a = title;
+                this.f30306b = prompt;
+                this.f30308c = choose;
+                this.f30310d = instructionsDisclaimer;
+                this.f30312e = captureScreenTitle;
+                this.f30313f = scanInstructions;
+                this.f30314g = capturing;
+                this.f30315h = confirmCapture;
+                this.f30316i = captureDisclaimer;
+                this.f30317j = buttonSubmit;
+                this.f30318k = buttonRetake;
+                this.f30319l = confirmCaptureTitle;
+                this.f30320m = processingTitle;
+                this.f30321n = processingDescription;
+                this.f30322o = idClassToName;
+                this.f30323p = chooseCaptureMethodTitle;
+                this.f30324q = chooseCaptureMethodBody;
+                this.f30325r = chooseCaptureMethodCameraButton;
+                this.f30326s = chooseCaptureMethodUploadButton;
+                this.f30327t = reviewSelectedImageTitle;
+                this.f30328u = reviewSelectedImageBody;
+                this.f30329v = reviewSelectedImageConfirmButton;
+                this.f30330w = reviewSelectedImageChooseAnotherButton;
+                this.f30331x = str;
+                this.f30332y = str2;
+                this.f30333z = str3;
                 this.A = str4;
                 this.B = str5;
                 this.C = str6;
@@ -352,10 +352,10 @@ public final class g3 extends bn.k {
                 this.X = str27;
                 this.Y = str28;
                 this.Z = str29;
-                this.f30257a0 = str30;
-                this.f30259b0 = str31;
-                this.f30261c0 = str32;
-                this.f30263d0 = list;
+                this.f30305a0 = str30;
+                this.f30307b0 = str31;
+                this.f30309c0 = str32;
+                this.f30311d0 = list;
             }
 
             public final String A() {
@@ -383,7 +383,7 @@ public final class g3 extends bn.k {
             }
 
             public final Map G() {
-                return this.f30274o;
+                return this.f30322o;
             }
 
             public final String H() {
@@ -403,19 +403,19 @@ public final class g3 extends bn.k {
             }
 
             public final String L() {
-                return this.f30262d;
+                return this.f30310d;
             }
 
             public final List M() {
-                return this.f30263d0;
+                return this.f30311d0;
             }
 
             public final String N() {
-                return this.f30259b0;
+                return this.f30307b0;
             }
 
             public final String O() {
-                return this.f30257a0;
+                return this.f30305a0;
             }
 
             public final String P() {
@@ -435,39 +435,39 @@ public final class g3 extends bn.k {
             }
 
             public final String T() {
-                return this.f30273n;
+                return this.f30321n;
             }
 
             public final String U() {
-                return this.f30272m;
+                return this.f30320m;
             }
 
             public final String V() {
-                return this.f30258b;
+                return this.f30306b;
             }
 
             public final Map W() {
-                return this.f30280u;
+                return this.f30328u;
             }
 
             public final String X() {
-                return this.f30282w;
+                return this.f30330w;
             }
 
             public final String Y() {
-                return this.f30281v;
+                return this.f30329v;
             }
 
             public final Map Z() {
-                return this.f30279t;
+                return this.f30327t;
             }
 
             public final String a() {
-                return this.f30261c0;
+                return this.f30309c0;
             }
 
             public final j4 a0() {
-                return this.f30265f;
+                return this.f30313f;
             }
 
             public final String b() {
@@ -475,7 +475,7 @@ public final class g3 extends bn.k {
             }
 
             public final String b0() {
-                return this.f30256a;
+                return this.f30304a;
             }
 
             public final String c() {
@@ -499,15 +499,15 @@ public final class g3 extends bn.k {
             }
 
             public final String f() {
-                return this.f30270k;
+                return this.f30318k;
             }
 
             public final String g() {
-                return this.f30269j;
+                return this.f30317j;
             }
 
             public final String h() {
-                return this.f30285z;
+                return this.f30333z;
             }
 
             public final String i() {
@@ -515,51 +515,51 @@ public final class g3 extends bn.k {
             }
 
             public final String j() {
-                return this.f30284y;
+                return this.f30332y;
             }
 
             public final String k() {
-                return this.f30283x;
+                return this.f30331x;
             }
 
             public final String l() {
-                return this.f30268i;
+                return this.f30316i;
             }
 
             public final j4 m() {
-                return this.f30264e;
+                return this.f30312e;
             }
 
             public final String n() {
-                return this.f30266g;
+                return this.f30314g;
             }
 
             public final String o() {
-                return this.f30260c;
+                return this.f30308c;
             }
 
             public final j4 p() {
-                return this.f30276q;
+                return this.f30324q;
             }
 
             public final String q() {
-                return this.f30277r;
+                return this.f30325r;
             }
 
             public final j4 r() {
-                return this.f30275p;
+                return this.f30323p;
             }
 
             public final String s() {
-                return this.f30278s;
+                return this.f30326s;
             }
 
             public final j4 t() {
-                return this.f30267h;
+                return this.f30315h;
             }
 
             public final j4 u() {
-                return this.f30271l;
+                return this.f30319l;
             }
 
             public final String v() {
@@ -598,125 +598,125 @@ public final class g3 extends bn.k {
             Intrinsics.checkNotNullParameter(autoClassificationConfig, "autoClassificationConfig");
             Intrinsics.checkNotNullParameter(reviewCaptureButtonsAxis, "reviewCaptureButtonsAxis");
             Intrinsics.checkNotNullParameter(pendingPageTextVerticalPosition, "pendingPageTextVerticalPosition");
-            this.f30232a = sessionToken;
-            this.f30233b = str;
-            this.f30234c = enabledIdClasses;
-            this.f30235d = inquiryId;
-            this.f30236e = fromStep;
-            this.f30237f = fromComponent;
-            this.f30238g = z10;
-            this.f30239h = z11;
-            this.f30240i = enabledCaptureOptionsNativeMobile;
-            this.f30241j = governmentIdStepStyle;
-            this.f30242k = strings;
-            this.f30243l = i10;
-            this.f30244m = fieldKeyDocument;
-            this.f30245n = fieldKeyIdClass;
-            this.f30246o = j10;
-            this.f30247p = z12;
-            this.f30248q = num;
-            this.f30249r = videoCaptureConfig;
-            this.f30250s = assetConfig;
-            this.f30251t = z13;
-            this.f30252u = autoClassificationConfig;
-            this.f30253v = reviewCaptureButtonsAxis;
-            this.f30254w = pendingPageTextVerticalPosition;
-            this.f30255x = aVar;
+            this.f30280a = sessionToken;
+            this.f30281b = str;
+            this.f30282c = enabledIdClasses;
+            this.f30283d = inquiryId;
+            this.f30284e = fromStep;
+            this.f30285f = fromComponent;
+            this.f30286g = z10;
+            this.f30287h = z11;
+            this.f30288i = enabledCaptureOptionsNativeMobile;
+            this.f30289j = governmentIdStepStyle;
+            this.f30290k = strings;
+            this.f30291l = i10;
+            this.f30292m = fieldKeyDocument;
+            this.f30293n = fieldKeyIdClass;
+            this.f30294o = j10;
+            this.f30295p = z12;
+            this.f30296q = num;
+            this.f30297r = videoCaptureConfig;
+            this.f30298s = assetConfig;
+            this.f30299t = z13;
+            this.f30300u = autoClassificationConfig;
+            this.f30301v = reviewCaptureButtonsAxis;
+            this.f30302w = pendingPageTextVerticalPosition;
+            this.f30303x = aVar;
         }
 
         public final NextStep.GovernmentId.AssetConfig a() {
-            return this.f30250s;
+            return this.f30298s;
         }
 
         public final ko.a b() {
-            return this.f30252u;
+            return this.f30300u;
         }
 
         public final boolean c() {
-            return this.f30238g;
+            return this.f30286g;
         }
 
         public final boolean d() {
-            return this.f30239h;
+            return this.f30287h;
         }
 
         public final String e() {
-            return this.f30233b;
+            return this.f30281b;
         }
 
         public final List f() {
-            return this.f30240i;
+            return this.f30288i;
         }
 
         public final List g() {
-            return this.f30234c;
+            return this.f30282c;
         }
 
         public final String h() {
-            return this.f30244m;
+            return this.f30292m;
         }
 
         public final String i() {
-            return this.f30245n;
+            return this.f30293n;
         }
 
         public final String j() {
-            return this.f30237f;
+            return this.f30285f;
         }
 
         public final String k() {
-            return this.f30236e;
+            return this.f30284e;
         }
 
         public final boolean l() {
-            if (this.f30240i.size() > 1) {
+            if (this.f30288i.size() > 1) {
                 return true;
             }
             return false;
         }
 
         public final int m() {
-            return this.f30243l;
+            return this.f30291l;
         }
 
         public final String n() {
-            return this.f30235d;
+            return this.f30283d;
         }
 
         public final long o() {
-            return this.f30246o;
+            return this.f30294o;
         }
 
         public final PendingPageTextPosition p() {
-            return this.f30254w;
+            return this.f30302w;
         }
 
         public final StyleElements.Axis q() {
-            return this.f30253v;
+            return this.f30301v;
         }
 
         public final String r() {
-            return this.f30232a;
+            return this.f30280a;
         }
 
         public final boolean s() {
-            return this.f30247p;
+            return this.f30295p;
         }
 
         public final C0428a t() {
-            return this.f30242k;
+            return this.f30290k;
         }
 
         public final StepStyles.GovernmentIdStepStyle u() {
-            return this.f30241j;
+            return this.f30289j;
         }
 
         public final VideoCaptureConfig v() {
-            return this.f30249r;
+            return this.f30297r;
         }
 
         public final boolean w() {
-            return this.f30251t;
+            return this.f30299t;
         }
     }
 
@@ -727,7 +727,7 @@ public final class g3 extends bn.k {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f30286a = new a();
+            public static final a f30334a = new a();
 
             private a() {
                 super(null);
@@ -754,7 +754,7 @@ public final class g3 extends bn.k {
         public static final class C0429b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0429b f30287a = new C0429b();
+            public static final C0429b f30335a = new C0429b();
 
             private C0429b() {
                 super(null);
@@ -780,17 +780,17 @@ public final class g3 extends bn.k {
         public static final class c extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f30288a;
+            private final InternalErrorInfo f30336a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public c(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f30288a = cause;
+                this.f30336a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f30288a;
+                return this.f30336a;
             }
         }
 
@@ -798,7 +798,7 @@ public final class g3 extends bn.k {
         public static final class d extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final d f30289a = new d();
+            public static final d f30337a = new d();
 
             private d() {
                 super(null);
@@ -832,31 +832,31 @@ public final class g3 extends bn.k {
     public /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f30290a;
+        public static final /* synthetic */ int[] f30338a;
 
         static {
             int[] iArr = new int[c4.e.values().length];
             try {
-                iArr[c4.e.f30022o.ordinal()] = 1;
+                iArr[c4.e.f30070o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[c4.e.f30023p.ordinal()] = 2;
+                iArr[c4.e.f30071p.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[c4.e.f30024q.ordinal()] = 3;
+                iArr[c4.e.f30072q.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[c4.e.f30025r.ordinal()] = 4;
+                iArr[c4.e.f30073r.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[c4.e.f30026s.ordinal()] = 5;
+                iArr[c4.e.f30074s.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f30290a = iArr;
+            f30338a = iArr;
         }
     }
 
@@ -865,7 +865,7 @@ public final class g3 extends bn.k {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f30291d;
+        int f30339d;
 
         d(Continuation continuation) {
             super(2, continuation);
@@ -879,7 +879,7 @@ public final class g3 extends bn.k {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f30291d;
+            int i10 = this.f30339d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -888,20 +888,20 @@ public final class g3 extends bn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                un.m mVar = un.m.f51744a;
-                Context context = g3.this.f30219a;
-                this.f30291d = 1;
+                un.m mVar = un.m.f51792a;
+                Context context = g3.this.f30267a;
+                this.f30339d = 1;
                 if (mVar.b(context, this) == f10) {
                     return f10;
                 }
             }
-            g3.this.f30231m.a();
-            return Unit.f32008a;
+            g3.this.f30279m.a();
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -910,40 +910,40 @@ public final class g3 extends bn.k {
     public static final class e extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f30293d;
+        int f30341d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ k.a f30294e;
+        final /* synthetic */ k.a f30342e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ g3 f30295i;
+        final /* synthetic */ g3 f30343i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(k.a aVar, g3 g3Var, Continuation continuation) {
             super(2, continuation);
-            this.f30294e = aVar;
-            this.f30295i = g3Var;
+            this.f30342e = aVar;
+            this.f30343i = g3Var;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit k(g3 g3Var, r.c cVar) {
             g3Var.Z0(cVar);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f30294e, this.f30295i, continuation);
+            return new e(this.f30342e, this.f30343i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             bn.r d10;
             wr.b.f();
-            if (this.f30293d == 0) {
+            if (this.f30341d == 0) {
                 kotlin.c.b(obj);
-                bn.h c10 = this.f30294e.c();
-                final g3 g3Var = this.f30295i;
+                bn.h c10 = this.f30342e.c();
+                final g3 g3Var = this.f30343i;
                 d10 = bn.z.d(g3Var, null, new Function1() { // from class: jo.h3
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj2) {
@@ -953,14 +953,14 @@ public final class g3 extends bn.k {
                     }
                 }, 1, null);
                 c10.d(d10);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -969,54 +969,54 @@ public final class g3 extends bn.k {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f30296d;
+        int f30344d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ a f30297e;
+        final /* synthetic */ a f30345e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n1 f30298i;
+        final /* synthetic */ n1 f30346i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ g3 f30299o;
+        final /* synthetic */ g3 f30347o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ k.a f30300p;
+        final /* synthetic */ k.a f30348p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(a aVar, n1 n1Var, g3 g3Var, k.a aVar2, Continuation continuation) {
             super(2, continuation);
-            this.f30297e = aVar;
-            this.f30298i = n1Var;
-            this.f30299o = g3Var;
-            this.f30300p = aVar2;
+            this.f30345e = aVar;
+            this.f30346i = n1Var;
+            this.f30347o = g3Var;
+            this.f30348p = aVar2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f30297e, this.f30298i, this.f30299o, this.f30300p, continuation);
+            return new f(this.f30345e, this.f30346i, this.f30347o, this.f30348p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             wr.b.f();
-            if (this.f30296d == 0) {
+            if (this.f30344d == 0) {
                 kotlin.c.b(obj);
-                if (this.f30297e.g().size() == 1) {
-                    n1 n1Var = this.f30298i;
-                    g3 g3Var = this.f30299o;
-                    k.a aVar = this.f30300p;
-                    a aVar2 = this.f30297e;
+                if (this.f30345e.g().size() == 1) {
+                    n1 n1Var = this.f30346i;
+                    g3 g3Var = this.f30347o;
+                    k.a aVar = this.f30348p;
+                    a aVar2 = this.f30345e;
                     g3.W0(n1Var, g3Var, aVar, aVar2, (c4) CollectionsKt.o0(aVar2.g()), false);
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -1025,35 +1025,35 @@ public final class g3 extends bn.k {
     public /* synthetic */ class g extends AdaptedFunctionReference implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ n1 f30301d;
+        final /* synthetic */ n1 f30349d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g3 f30302e;
+        final /* synthetic */ g3 f30350e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k.a f30303i;
+        final /* synthetic */ k.a f30351i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ a f30304o;
+        final /* synthetic */ a f30352o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(n1 n1Var, g3 g3Var, k.a aVar, a aVar2) {
             super(1, Intrinsics.Kotlin.class, "selectIdClass", "renderScreen$selectIdClass(Lcom/withpersona/sdk2/inquiry/governmentid/GovernmentIdState;Lcom/withpersona/sdk2/inquiry/governmentid/GovernmentIdWorkflow;Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;Lcom/withpersona/sdk2/inquiry/governmentid/GovernmentIdWorkflow$Input;Lcom/withpersona/sdk2/inquiry/governmentid/IdConfig;Z)V", 0);
-            this.f30301d = n1Var;
-            this.f30302e = g3Var;
-            this.f30303i = aVar;
-            this.f30304o = aVar2;
+            this.f30349d = n1Var;
+            this.f30350e = g3Var;
+            this.f30351i = aVar;
+            this.f30352o = aVar2;
         }
 
         public final void a(c4 p02) {
             Intrinsics.checkNotNullParameter(p02, "p0");
-            g3.X0(this.f30301d, this.f30302e, this.f30303i, this.f30304o, p02, false, 32, null);
+            g3.X0(this.f30349d, this.f30350e, this.f30351i, this.f30352o, p02, false, 32, null);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c4) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -1070,19 +1070,19 @@ public final class g3 extends bn.k {
         Intrinsics.checkNotNullParameter(cameraStatsManager, "cameraStatsManager");
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
         Intrinsics.checkNotNullParameter(externalEventLogger, "externalEventLogger");
-        this.f30219a = applicationContext;
-        this.f30220b = imageLoader;
-        this.f30221c = submitVerificationWorkerFactory;
-        this.f30222d = documentSelectWorker;
-        this.f30223e = localVideoCaptureRenderer;
-        this.f30224f = webRtcRenderer;
-        this.f30225g = captureRenderer;
-        this.f30226h = autoClassifyWorkerFactory;
-        this.f30227i = autoClassificationRenderer;
-        this.f30228j = cameraStatsManager;
-        this.f30229k = navigationStateManager;
-        this.f30230l = externalEventLogger;
-        this.f30231m = new ro.k(null, 1, null);
+        this.f30267a = applicationContext;
+        this.f30268b = imageLoader;
+        this.f30269c = submitVerificationWorkerFactory;
+        this.f30270d = documentSelectWorker;
+        this.f30271e = localVideoCaptureRenderer;
+        this.f30272f = webRtcRenderer;
+        this.f30273g = captureRenderer;
+        this.f30274h = autoClassifyWorkerFactory;
+        this.f30275i = autoClassificationRenderer;
+        this.f30276j = cameraStatsManager;
+        this.f30277k = navigationStateManager;
+        this.f30278l = externalEventLogger;
+        this.f30279m = new ro.k(null, 1, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1098,20 +1098,20 @@ public final class g3 extends bn.k {
         }
         n1.l lVar2 = lVar;
         if (lVar2 != null) {
-            if (g3Var.f30231m.d()) {
-                tVar = ro.t.f49031e;
+            if (g3Var.f30279m.d()) {
+                tVar = ro.t.f49079e;
             } else {
-                tVar = ro.t.f49032i;
+                tVar = ro.t.f49080i;
             }
             action.e(n1.l.u(lVar2, null, null, null, null, null, 0, null, tVar, null, null, false, false, null, null, null, 32639, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B0(bn.h hVar) {
-        hVar.d(b.C0429b.f30287a);
-        return Unit.f32008a;
+        hVar.d(b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1127,38 +1127,38 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D0(n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(n1.g.x((n1.g) n1Var, null, null, null, null, null, 0, null, null, null, false, null, 1791, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E0(a aVar, n1 n1Var, k.a aVar2, g3 g3Var) {
-        x4.g(aVar, (n1.h) n1Var, aVar2, g3Var.f30231m);
-        return Unit.f32008a;
+        x4.g(aVar, (n1.h) n1Var, aVar2, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit F0(k.a aVar, g3 g3Var) {
-        b4.L(aVar, g3Var.f30231m);
-        return Unit.f32008a;
+        b4.L(aVar, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit G0(k.a aVar, g3 g3Var) {
-        b4.L(aVar, g3Var.f30231m);
-        return Unit.f32008a;
+        b4.L(aVar, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit H0(k.a aVar) {
         b4.t(aVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1174,14 +1174,14 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit J0(n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(n1.i.x((n1.i) n1Var, null, null, null, null, null, null, 0, null, null, null, false, null, 3583, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1204,10 +1204,10 @@ public final class g3 extends bn.k {
         } else if (it instanceof f.b.C0607b) {
             f.b.C0607b c0607b = (f.b.C0607b) it;
             if (c0607b.a() instanceof GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) {
-                string = g3Var.f30219a.getString(jp.e.f30807p, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) c0607b.a()).getDetails().getMinDimensionSize()));
+                string = g3Var.f30267a.getString(jp.e.f30855p, Integer.valueOf(((GenericFileUploadErrorResponse.DocumentErrorResponse.GovernmentIdDimensionSizeError) c0607b.a()).getDetails().getMinDimensionSize()));
                 Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             } else {
-                string = g3Var.f30219a.getString(jp.e.f30808q);
+                string = g3Var.f30267a.getString(jp.e.f30856q);
                 Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             }
             d11 = bn.z.d(g3Var, null, new Function1() { // from class: jo.k2
@@ -1237,8 +1237,8 @@ public final class g3 extends bn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit L0(g3 g3Var, k.a aVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        g3Var.Y0(aVar, b.d.f30289a);
-        return Unit.f32008a;
+        g3Var.Y0(aVar, b.d.f30337a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1248,7 +1248,7 @@ public final class g3 extends bn.k {
         if (e10 != null) {
             action.e(e10.c(str));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1257,37 +1257,37 @@ public final class g3 extends bn.k {
         n1 e10 = ((n1) action.c()).e();
         f.b.a aVar2 = (f.b.a) bVar;
         if (aVar2.a().isRecoverable() && e10 != null) {
-            String string = g3Var.f30219a.getString(jp.e.f30815x);
+            String string = g3Var.f30267a.getString(jp.e.f30863x);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             action.e(e10.c(string));
         } else {
             g3Var.Y0(aVar, new b.c(aVar2.a()));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit O0(k.a aVar, g3 g3Var) {
-        b4.L(aVar, g3Var.f30231m);
-        return Unit.f32008a;
+        b4.L(aVar, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit P0(g3 g3Var, k.a aVar) {
-        g3Var.Y0(aVar, b.C0429b.f30287a);
-        return Unit.f32008a;
+        g3Var.Y0(aVar, b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Q0(g3 g3Var, k.a aVar) {
-        g3Var.Y0(aVar, b.C0429b.f30287a);
-        return Unit.f32008a;
+        g3Var.Y0(aVar, b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit R0(k.a aVar) {
         b4.t(aVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1303,19 +1303,19 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit T0(n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(n1.j.r((n1.j) n1Var, null, null, null, null, 0, null, null, null, 127, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private static final bn.r U0(h4.a aVar, final n1 n1Var, g3 g3Var, String str, final String str2) {
         bn.r d10;
-        final d0.b bVar = new d0.b(CollectionsKt.e(new c0(str, null, 2, null)), b4.W(aVar.a()), r.b(((n1.c) n1Var).t()), d0.a.f30033i, null, null, 32, null);
+        final d0.b bVar = new d0.b(CollectionsKt.e(new c0(str, null, 2, null)), b4.W(aVar.a()), r.b(((n1.c) n1Var).t()), d0.a.f30081i, null, null, 32, null);
         d10 = bn.z.d(g3Var, null, new Function1() { // from class: jo.v2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -1338,17 +1338,17 @@ public final class g3 extends bn.k {
             cVar = null;
         }
         if (cVar == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         n1.c cVar2 = cVar;
         n1.c cVar3 = (n1.c) n1Var;
         action.e(new n1.i(cVar3.h(), cVar3.o(), cVar3.t(), bVar, str, cVar2.l(), cVar2.j(), b4.w(action, false, 1, null), null, null, false, cVar3.f(), 1792, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void W0(n1 n1Var, g3 g3Var, k.a aVar, a aVar2, c4 c4Var, boolean z10) {
-        b4.Q((n1.j) n1Var, aVar, aVar2, null, c4Var, g3Var.f30231m, new un.v(null, null, null, 0, 15, null), z10, c4Var.b(), 0, null, null, 3584, null);
+        b4.Q((n1.j) n1Var, aVar, aVar2, null, c4Var, g3Var.f30279m, new un.v(null, null, null, 0, 15, null), z10, c4Var.b(), 0, null, null, 3584, null);
     }
 
     static /* synthetic */ void X0(n1 n1Var, g3 g3Var, k.a aVar, a aVar2, c4 c4Var, boolean z10, int i10, Object obj) {
@@ -1361,7 +1361,7 @@ public final class g3 extends bn.k {
     private final String Y(a.C0428a c0428a, c4.e eVar, String str, String str2) {
         String a10 = c0428a.p().a(str2, str, eVar);
         if (a10 == null) {
-            String string = this.f30219a.getString(jp.e.f30805n);
+            String string = this.f30267a.getString(jp.e.f30853n);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             return string;
         }
@@ -1369,13 +1369,13 @@ public final class g3 extends bn.k {
     }
 
     private final void Y0(k.a aVar, b bVar) {
-        b4.U(aVar, bVar, this.f30231m);
+        b4.U(aVar, bVar, this.f30279m);
     }
 
     private final String Z(a.C0428a c0428a, c4.e eVar, String str, String str2) {
         String a10 = c0428a.r().a(str2, str, eVar);
         if (a10 == null) {
-            String string = this.f30219a.getString(jp.e.f30806o);
+            String string = this.f30267a.getString(jp.e.f30854o);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             return string;
         }
@@ -1398,7 +1398,7 @@ public final class g3 extends bn.k {
     private final String b0(a.C0428a c0428a, c4.e eVar) {
         String str = (String) c0428a.W().get(eVar);
         if (str == null) {
-            String string = this.f30219a.getString(jp.e.f30809r);
+            String string = this.f30267a.getString(jp.e.f30857r);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             return string;
         }
@@ -1418,7 +1418,7 @@ public final class g3 extends bn.k {
     private final String c0(a.C0428a c0428a, c4.e eVar) {
         String str = (String) c0428a.Z().get(eVar);
         if (str == null) {
-            String string = this.f30219a.getString(jp.e.f30810s);
+            String string = this.f30267a.getString(jp.e.f30858s);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             return string;
         }
@@ -1460,16 +1460,16 @@ public final class g3 extends bn.k {
                 g3.s0(k.a.this, this, (g3.b) obj);
             }
         };
-        this.f30229k.c(aVar.c(), aVar.d(), aVar.w() && !(n1Var instanceof n1.k));
-        vp.c cVar = this.f30230l;
+        this.f30277k.c(aVar.c(), aVar.d(), aVar.w() && !(n1Var instanceof n1.k));
+        vp.c cVar = this.f30278l;
         String k10 = aVar.k();
         boolean z10 = n1Var instanceof n1.a;
         if (z10) {
-            c0701h = h.a.f52826a;
+            c0701h = h.a.f52874a;
         } else if (n1Var instanceof n1.b) {
-            c0701h = h.b.f52827a;
+            c0701h = h.b.f52875a;
         } else if (n1Var instanceof n1.j) {
-            c0701h = h.g.f52832a;
+            c0701h = h.g.f52880a;
         } else if (n1Var instanceof n1.c) {
             c0701h = new h.f(((n1.c) n1Var).j());
         } else if (!(n1Var instanceof n1.l) && !(n1Var instanceof n1.d) && !(n1Var instanceof n1.e) && !(n1Var instanceof n1.f)) {
@@ -1478,7 +1478,7 @@ public final class g3 extends bn.k {
             } else if (n1Var instanceof n1.i) {
                 c0701h = new h.d(((n1.i) n1Var).j());
             } else if (n1Var instanceof n1.k) {
-                c0701h = h.e.f52830a;
+                c0701h = h.e.f52878a;
             } else {
                 throw new qr.p();
             }
@@ -1495,7 +1495,7 @@ public final class g3 extends bn.k {
             List H = b4.H(aVar);
             g gVar = new g(n1Var, this, aVar2, aVar);
             NextStep.GovernmentId.AssetConfig.SelectPage selectPage = aVar.a().getSelectPage();
-            return new f5.c(b02, V, o10, L, H, this.f30229k.b(), gVar, aVar.u(), selectPage, aVar.w(), new Function0() { // from class: jo.v1
+            return new f5.c(b02, V, o10, L, H, this.f30277k.b(), gVar, aVar.u(), selectPage, aVar.w(), new Function0() { // from class: jo.v1
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit O0;
@@ -1521,7 +1521,7 @@ public final class g3 extends bn.k {
             n1.c cVar2 = (n1.c) n1Var;
             final h4.a h10 = cVar2.h();
             if (cVar2.u()) {
-                bn.w.l(aVar2, this.f30222d, Reflection.typeOf(a0.class), "", new Function1() { // from class: jo.a2
+                bn.w.l(aVar2, this.f30270d, Reflection.typeOf(a0.class), "", new Function1() { // from class: jo.a2
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         bn.r i02;
@@ -1536,7 +1536,7 @@ public final class g3 extends bn.k {
             String Y = Y(aVar.t(), h10.a(), r.b(cVar2.t()), cVar2.f());
             String q10 = aVar.t().q();
             String s10 = aVar.t().s();
-            zp.a b10 = this.f30229k.b();
+            zp.a b10 = this.f30277k.b();
             Function0 function0 = new Function0() { // from class: jo.b2
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -1580,7 +1580,7 @@ public final class g3 extends bn.k {
             };
             StepStyles.GovernmentIdStepStyle u10 = aVar.u();
             c4.e a10 = cVar2.h().a();
-            int[] iArr = c.f30290a;
+            int[] iArr = c.f30338a;
             int i11 = iArr[a10.ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
@@ -1606,7 +1606,7 @@ public final class g3 extends bn.k {
                     }
                     remoteImage = null;
                 }
-            } else if (r.a(cVar2.t()) == qo.e.f47922u) {
+            } else if (r.a(cVar2.t()) == qo.e.f47970u) {
                 if (promptPage != null) {
                     idFrontPictograph = promptPage.getPassportFrontPictograph();
                     remoteImage = idFrontPictograph;
@@ -1622,21 +1622,21 @@ public final class g3 extends bn.k {
             int i12 = iArr[cVar2.h().a().ordinal()];
             if (i12 != 1) {
                 if (i12 != 2 && i12 != 4) {
-                    i10 = o4.f30615e;
+                    i10 = o4.f30663e;
                 } else {
-                    i10 = o4.f30614d;
+                    i10 = o4.f30662d;
                 }
-            } else if (r.a(cVar2.t()) == qo.e.f47922u) {
-                i10 = o4.f30616f;
+            } else if (r.a(cVar2.t()) == qo.e.f47970u) {
+                i10 = o4.f30664f;
             } else {
-                i10 = o4.f30615e;
+                i10 = o4.f30663e;
             }
             return new y(f10, Z, Y, q10, s10, b10, function0, function02, function03, function04, w10, function05, u10, remoteImage, i10);
         } else if (n1Var instanceof n1.l) {
-            return this.f30225g.b0(aVar, (n1.l) n1Var, aVar2, this.f30231m, hVar);
+            return this.f30273g.b0(aVar, (n1.l) n1Var, aVar2, this.f30279m, hVar);
         } else {
             if (n1Var instanceof n1.d) {
-                return this.f30225g.Q(aVar, (n1.d) n1Var, aVar2, this.f30231m, hVar);
+                return this.f30273g.Q(aVar, (n1.d) n1Var, aVar2, this.f30279m, hVar);
             }
             if (n1Var instanceof n1.g) {
                 n1.g gVar2 = (n1.g) n1Var;
@@ -1644,9 +1644,9 @@ public final class g3 extends bn.k {
                 c4.c d10 = r.d(r10, gVar2.h().a());
                 c0 c0Var = (c0) CollectionsKt.o0(gVar2.u().i2());
                 if (gVar2.B()) {
-                    x4.i(aVar, (n1.h) n1Var, aVar2, this.f30231m, this.f30226h);
+                    x4.i(aVar, (n1.h) n1Var, aVar2, this.f30279m, this.f30274h);
                 }
-                return new hn.d(hp.l1.c(new f5.e(this.f30220b, b4.G(aVar.t(), gVar2.h().a(), r.b(gVar2.r()), gVar2.f()), aVar.t().l(), d10.c(), c0Var.a(), gVar2.h().a(), r.a(r10), this.f30229k.b(), new Function0() { // from class: jo.e2
+                return new hn.d(hp.l1.c(new f5.e(this.f30268b, b4.G(aVar.t(), gVar2.h().a(), r.b(gVar2.r()), gVar2.f()), aVar.t().l(), d10.c(), c0Var.a(), gVar2.h().a(), r.a(r10), this.f30277k.b(), new Function0() { // from class: jo.e2
                     @Override // kotlin.jvm.functions.Function0
                     public final Object invoke() {
                         Unit w02;
@@ -1679,9 +1679,9 @@ public final class g3 extends bn.k {
                 n1.i iVar = (n1.i) n1Var;
                 h4.a h11 = iVar.h();
                 if (iVar.D()) {
-                    x4.i(aVar, (n1.h) n1Var, aVar2, this.f30231m, this.f30226h);
+                    x4.i(aVar, (n1.h) n1Var, aVar2, this.f30279m, this.f30274h);
                 }
-                return new e5(this.f30220b, c0(aVar.t(), h11.a()), b0(aVar.t(), h11.a()), aVar.t().Y(), aVar.t().X(), ((c0) CollectionsKt.o0(iVar.u().i2())).a(), ((c0) CollectionsKt.o0(iVar.u().i2())).b(), iVar.B(), this.f30229k.b(), new Function0() { // from class: jo.b3
+                return new e5(this.f30268b, c0(aVar.t(), h11.a()), b0(aVar.t(), h11.a()), aVar.t().Y(), aVar.t().X(), ((c0) CollectionsKt.o0(iVar.u().i2())).a(), ((c0) CollectionsKt.o0(iVar.u().i2())).b(), iVar.B(), this.f30277k.b(), new Function0() { // from class: jo.b3
                     @Override // kotlin.jvm.functions.Function0
                     public final Object invoke() {
                         Unit E0;
@@ -1719,7 +1719,7 @@ public final class g3 extends bn.k {
                 }, aVar.u(), iVar.D());
             } else if (n1Var instanceof n1.k) {
                 n1.k kVar = (n1.k) n1Var;
-                bn.w.l(aVar2, this.f30221c.a(aVar.r(), aVar.n(), aVar.j(), aVar.k(), kVar.r(), kVar.t(), kVar.q()), Reflection.typeOf(qo.f.class), "", new Function1() { // from class: jo.u1
+                bn.w.l(aVar2, this.f30269c.a(aVar.r(), aVar.n(), aVar.j(), aVar.k(), kVar.r(), kVar.t(), kVar.q()), Reflection.typeOf(qo.f.class), "", new Function1() { // from class: jo.u1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         bn.r K0;
@@ -1727,8 +1727,8 @@ public final class g3 extends bn.k {
                         return K0;
                     }
                 });
-                zp.b.d(this.f30229k, false, false, false, 4, null);
-                return new f5.f(aVar.t().U(), aVar.t().T(), aVar.u(), aVar.a().getPendingPage(), this.f30229k.b(), new Function0() { // from class: jo.w1
+                zp.b.d(this.f30277k, false, false, false, 4, null);
+                return new f5.f(aVar.t().U(), aVar.t().T(), aVar.u(), aVar.a().getPendingPage(), this.f30277k.b(), new Function0() { // from class: jo.w1
                     @Override // kotlin.jvm.functions.Function0
                     public final Object invoke() {
                         Unit P0;
@@ -1744,16 +1744,16 @@ public final class g3 extends bn.k {
                     }
                 }, aVar.p());
             } else if (n1Var instanceof n1.e) {
-                return this.f30223e.i(aVar, (n1.e) n1Var, aVar2, this.f30231m);
+                return this.f30271e.i(aVar, (n1.e) n1Var, aVar2, this.f30279m);
             } else {
                 if (n1Var instanceof n1.f) {
-                    return this.f30224f.h(aVar, (n1.f) n1Var, aVar2, this.f30231m);
+                    return this.f30272f.h(aVar, (n1.f) n1Var, aVar2, this.f30279m);
                 }
                 if (z10) {
-                    return this.f30227i.n(aVar, (n1.a) n1Var, aVar2, this.f30231m);
+                    return this.f30275i.n(aVar, (n1.a) n1Var, aVar2, this.f30279m);
                 }
                 if (n1Var instanceof n1.b) {
-                    return this.f30227i.t(aVar, (n1.b) n1Var, aVar2, this.f30231m);
+                    return this.f30275i.t(aVar, (n1.b) n1Var, aVar2, this.f30279m);
                 }
                 throw new qr.p();
             }
@@ -1767,7 +1767,7 @@ public final class g3 extends bn.k {
         if (it instanceof a0.a.b) {
             a0.a.b bVar = (a0.a.b) it;
             return U0(aVar, n1Var, g3Var, bVar.a(), bVar.b());
-        } else if (Intrinsics.areEqual(it, a0.a.C0420a.f29961a)) {
+        } else if (Intrinsics.areEqual(it, a0.a.C0420a.f30009a)) {
             d10 = bn.z.d(g3Var, null, new Function1() { // from class: jo.q2
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -1786,7 +1786,7 @@ public final class g3 extends bn.k {
     public static final Unit j0(n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(n1.c.r((n1.c) n1Var, null, null, null, 0, null, null, false, null, null, 447, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1802,7 +1802,7 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1816,10 +1816,10 @@ public final class g3 extends bn.k {
             cVar = null;
         }
         if (cVar == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         n1.c cVar2 = (n1.c) n1Var;
-        action.e(new n1.l(cVar2.h(), cVar2.o(), cVar2.t(), b4.I(aVar, cVar2.h().a()), cVar.l(), cVar.j(), b4.w(action, false, 1, null), ro.t.f49032i, aVar.v().d(), null, false, false, cVar2.f(), null, new Function0() { // from class: jo.u2
+        action.e(new n1.l(cVar2.h(), cVar2.o(), cVar2.t(), b4.I(aVar, cVar2.h().a()), cVar.l(), cVar.j(), b4.w(action, false, 1, null), ro.t.f49080i, aVar.v().d(), null, false, false, cVar2.f(), null, new Function0() { // from class: jo.u2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit m02;
@@ -1827,7 +1827,7 @@ public final class g3 extends bn.k {
                 return m02;
             }
         }, 11776, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1843,7 +1843,7 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1859,14 +1859,14 @@ public final class g3 extends bn.k {
         }
         n1.l lVar2 = lVar;
         if (lVar2 != null) {
-            if (g3Var.f30231m.d()) {
-                tVar = ro.t.f49031e;
+            if (g3Var.f30279m.d()) {
+                tVar = ro.t.f49079e;
             } else {
-                tVar = ro.t.f49032i;
+                tVar = ro.t.f49080i;
             }
             action.e(n1.l.u(lVar2, null, null, null, null, null, 0, null, tVar, null, null, false, false, null, null, null, 32639, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1882,27 +1882,27 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p0(g3 g3Var, n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        g3Var.f30222d.e();
+        g3Var.f30270d.e();
         action.e(n1.c.r((n1.c) n1Var, null, null, null, 0, null, null, true, null, null, 447, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q0(k.a aVar, g3 g3Var) {
-        b4.L(aVar, g3Var.f30231m);
-        return Unit.f32008a;
+        b4.L(aVar, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit r0(k.a aVar) {
         b4.t(aVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1925,7 +1925,7 @@ public final class g3 extends bn.k {
     public static final Unit t0(g3 g3Var, k.a aVar, b bVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         g3Var.Y0(aVar, bVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1941,20 +1941,20 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v0(n1 n1Var, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.e(n1.c.r((n1.c) n1Var, null, null, null, 0, null, null, false, null, null, SetSpanOperation.SPAN_MAX_PRIORITY, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w0(a aVar, n1 n1Var, k.a aVar2, g3 g3Var) {
-        x4.g(aVar, (n1.h) n1Var, aVar2, g3Var.f30231m);
-        return Unit.f32008a;
+        x4.g(aVar, (n1.h) n1Var, aVar2, g3Var.f30279m);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1970,7 +1970,7 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1984,10 +1984,10 @@ public final class g3 extends bn.k {
             n1Var2 = null;
         }
         if (n1Var2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         n1.g gVar = (n1.g) n1Var;
-        n1.l lVar = new n1.l(gVar.h(), ((n1) action.c()).o(), qVar, b4.I((a) action.b(), gVar.h().a()), n1Var2.l(), n1Var2.j(), b4.v(action, false), ro.t.f49032i, aVar.v().d(), null, false, false, gVar.f(), null, new Function0() { // from class: jo.w2
+        n1.l lVar = new n1.l(gVar.h(), ((n1) action.c()).o(), qVar, b4.I((a) action.b(), gVar.h().a()), n1Var2.l(), n1Var2.j(), b4.v(action, false), ro.t.f49080i, aVar.v().d(), null, false, false, gVar.f(), null, new Function0() { // from class: jo.w2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit z02;
@@ -1997,7 +1997,7 @@ public final class g3 extends bn.k {
         }, 11776, null);
         lVar.p(true);
         action.e(lVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2013,7 +2013,7 @@ public final class g3 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // bn.k
@@ -2052,11 +2052,11 @@ public final class g3 extends bn.k {
         if (n1Var != null) {
             return n1Var;
         }
-        if (props.b().c() && !this.f30231m.c(props)) {
+        if (props.b().c() && !this.f30279m.c(props)) {
             if (props.l()) {
-                return new n1.c(new h4.a(c4.e.f30022o), CollectionsKt.l(), CollectionsKt.l(), 0, props.e(), new q.a(props.b()), false, null, null, 320, null);
+                return new n1.c(new h4.a(c4.e.f30070o), CollectionsKt.l(), CollectionsKt.l(), 0, props.e(), new q.a(props.b()), false, null, null, 320, null);
             }
-            return new n1.l(new h4.a(c4.e.f30022o), CollectionsKt.l(), new q.a(props.b()), f5.b.a.f30152e, CollectionsKt.l(), 0, null, ro.t.f49032i, props.v().d(), null, false, false, props.e(), null, null, 28160, null);
+            return new n1.l(new h4.a(c4.e.f30070o), CollectionsKt.l(), new q.a(props.b()), f5.b.a.f30200e, CollectionsKt.l(), 0, null, ro.t.f49080i, props.v().d(), null, false, false, props.e(), null, null, 28160, null);
         }
         return new n1.j(null, null, null, null, 0, props.e(), null, null, 223, null);
     }
@@ -2075,7 +2075,7 @@ public final class g3 extends bn.k {
         if (!b1(renderState)) {
             context.a("close_camera", new d(null));
         }
-        if (!this.f30231m.f(renderProps) && rp.f.e(this.f30219a)) {
+        if (!this.f30279m.f(renderProps) && rp.f.e(this.f30267a)) {
             context.a("output_webrtc_error", new e(context, this, null));
         }
         return c1(h02, renderState);

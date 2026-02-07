@@ -96,10 +96,10 @@ public final class StringSelectItem extends SelectItem {
             compositeEncoder.l(serialDescriptor, 2, ComponentEmoji$$serializer.INSTANCE, stringSelectItem.emoji);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || stringSelectItem.description != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, stringSelectItem.description);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, stringSelectItem.description);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || !Intrinsics.areEqual(stringSelectItem.f0default, Boolean.FALSE)) {
-            compositeEncoder.l(serialDescriptor, 4, jt.h.f31005a, stringSelectItem.f0default);
+            compositeEncoder.l(serialDescriptor, 4, jt.h.f31053a, stringSelectItem.f0default);
         }
     }
 

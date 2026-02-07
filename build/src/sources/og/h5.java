@@ -5,37 +5,37 @@ import yi.c;
 final class h5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h5 f42092a = new h5();
+    static final h5 f42140a = new h5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42093b;
+    private static final yi.c f42141b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42094c;
+    private static final yi.c f42142c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42095d;
+    private static final yi.c f42143d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42096e;
+    private static final yi.c f42144e;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42093b = a10.b(fVar.b()).a();
+        f42141b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f42094c = a11.b(fVar2.b()).a();
+        f42142c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("detectorOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42095d = a12.b(fVar3.b()).a();
+        f42143d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("objectInfos");
         f fVar4 = new f();
         fVar4.a(4);
-        f42096e = a13.b(fVar4.b()).a();
+        f42144e = a13.b(fVar4.b()).a();
     }
 
     private h5() {

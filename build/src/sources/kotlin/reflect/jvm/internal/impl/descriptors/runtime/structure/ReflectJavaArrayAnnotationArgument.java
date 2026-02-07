@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaArrayAnnotationArgument extends ReflectJavaAnnotationArgument implements JavaArrayAnnotationArgument {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object[] f32636b;
+    private final Object[] f32684b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReflectJavaArrayAnnotationArgument(Name name, @NotNull Object[] values) {
         super(name, null);
         Intrinsics.checkNotNullParameter(values, "values");
-        this.f32636b = values;
+        this.f32684b = values;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaArrayAnnotationArgument
     @NotNull
     public List<ReflectJavaAnnotationArgument> getElements() {
-        Object[] objArr = this.f32636b;
+        Object[] objArr = this.f32684b;
         ArrayList arrayList = new ArrayList(objArr.length);
         for (Object obj : objArr) {
             ReflectJavaAnnotationArgument.Factory factory = ReflectJavaAnnotationArgument.Factory;

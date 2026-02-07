@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun85617: for (var _fun85617_ip = 0;;) switch (_fun85617_ip) {
+        _fun86048: for (var _fun86048_ip = 0;;) switch (_fun86048_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var4 = undefined;
@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.hasAndroidNotificationChannels;
                 var5 = var0.bind(var1)();
                 if (var5) {
-                    _fun85617_ip = 76;
-                    continue _fun85617
+                    _fun86048_ip = 76;
+                    continue _fun86048
                 }
             case 68:
                 var0 = null;
                 if (!var6) {
-                    _fun85617_ip = 532;
-                    continue _fun85617
+                    _fun86048_ip = 532;
+                    continue _fun86048
                 }
             case 76:
                 var3 = _closure1_slot8;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var7 = var5;
                 if (!var7) {
-                    _fun85617_ip = 194;
-                    continue _fun85617
+                    _fun86048_ip = 194;
+                    continue _fun86048
                 }
             case 92:
                 var9 = _closure1_slot7;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var7;
                 if (!var6) {
-                    _fun85617_ip = 518;
-                    continue _fun85617
+                    _fun86048_ip = 518;
+                    continue _fun86048
                 }
             case 208:
                 var9 = _closure1_slot7;
@@ -259,7 +259,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = new Array(1);
             var3[0] = var8;
             var4.settings = var3;
-            var3 = new Array(16);
+            var3 = new Array(17);
             var3[0] = var4;
             var4 = {};
             var8 = var11[var6];
@@ -315,46 +315,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4.settings = var7;
             var3[4] = var4;
             var4 = {};
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var12 = var7.intl;
-            var8 = var12.string;
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var7 = var7.t;
-            var7 = var7.EZorjX;
-            var7 = var8.bind(var12)(var7);
-            var4.label = var7;
-            var8 = var5.FRIEND_STREAM_NOTIFICATIONS;
-            var7 = new Array(1);
-            var7[0] = var8;
-            var4.settings = var7;
-            var3[5] = var4;
-            var4 = {};
-            var8 = var5.VOICE_ACTIVITY_NOTIFICATIONS;
-            var7 = new Array(1);
-            var7[0] = var8;
-            var4.settings = var7;
-            var3[6] = var4;
-            var4 = {};
-            var8 = var5.COMMUNITY_ACTIVITY_ALERTS;
-            var7 = new Array(1);
-            var7[0] = var8;
-            var4.settings = var7;
-            var3[7] = var4;
-            var4 = {};
-            var8 = var5.HIGHLIGHT_NOTIFICATIONS;
-            var7 = new Array(1);
-            var7[0] = var8;
-            var4.settings = var7;
-            var3[8] = var4;
-            var4 = {};
-            var8 = var5.FRIEND_ONLINE_NOTIFICATIONS;
-            var7 = new Array(1);
-            var7[0] = var8;
-            var4.settings = var7;
-            var3[9] = var4;
-            var4 = {};
             var8 = var5.REACTION_NOTIFICATIONS;
             var7 = new Array(1);
             var7[0] = var8;
@@ -369,32 +329,52 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var7.oWF6eQ;
             var7 = var8.bind(var12)(var7);
             var4.subLabel = var7;
+            var3[5] = var4;
+            var4 = {};
+            var7 = var11[var6];
+            var7 = var10.bind(var9)(var7);
+            var12 = var7.intl;
+            var8 = var12.string;
+            var7 = var11[var6];
+            var7 = var10.bind(var9)(var7);
+            var7 = var7.t;
+            var7 = var7.EZorjX;
+            var7 = var8.bind(var12)(var7);
+            var4.label = var7;
+            var8 = var5.COMMUNITY_ACTIVITY_ALERTS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
+            var3[6] = var4;
+            var4 = {};
+            var8 = var5.HIGHLIGHT_NOTIFICATIONS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
+            var3[7] = var4;
+            var4 = {};
+            var8 = var5.FRIEND_STREAM_NOTIFICATIONS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
+            var3[8] = var4;
+            var4 = {};
+            var8 = var5.VOICE_ACTIVITY_NOTIFICATIONS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
+            var3[9] = var4;
+            var4 = {};
+            var8 = var5.FRIEND_ONLINE_NOTIFICATIONS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
             var3[10] = var4;
             var4 = {};
             var8 = var5.CUSTOM_STATUS_NOTIFICATIONS;
             var7 = new Array(1);
             var7[0] = var8;
             var4.settings = var7;
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var12 = var7.intl;
-            var8 = var12.string;
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var7 = var7.t;
-            var7 = var7.PTtxi9;
-            var7 = var8.bind(var12)(var7);
-            var4.label = var7;
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var12 = var7.intl;
-            var8 = var12.string;
-            var7 = var11[var6];
-            var7 = var10.bind(var9)(var7);
-            var7 = var7.t;
-            var7 = var7["/+OQEs"];
-            var7 = var8.bind(var12)(var7);
-            var4.subLabel = var7;
             var3[11] = var4;
             var4 = {};
             var8 = var5.GAME_UPDATE_NOTIFICATIONS;
@@ -415,6 +395,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4.settings = var7;
             var3[14] = var4;
             var4 = {};
+            var8 = var5.SUMMARY_REMINDER_NOTIFICATIONS;
+            var7 = new Array(1);
+            var7[0] = var8;
+            var4.settings = var7;
+            var3[15] = var4;
+            var4 = {};
             var7 = var11[var6];
             var7 = var10.bind(var9)(var7);
             var8 = var7.intl;
@@ -429,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = new Array(1);
             var5[0] = var6;
             var4.settings = var5;
-            var3[15] = var4;
+            var3[16] = var4;
             var0.sections = var3;
             var0 = var1.bind(var2)(var0);
             return var0;
@@ -466,4 +452,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11038, 7033, 33, 1297, 671, 11039, 11046, 3943, 1234, 4903, 5396, 9023, 10215, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11076, 7077, 33, 1297, 671, 11077, 11084, 3942, 1234, 4902, 5443, 9067, 10260, 2]);

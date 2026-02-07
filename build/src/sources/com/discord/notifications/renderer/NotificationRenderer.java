@@ -296,7 +296,7 @@ public final class NotificationRenderer {
             java.lang.String r13 = "is_fullscreen_call_ui"
             java.lang.String r14 = "true"
             r12.put(r13, r14)
-            kotlin.Unit r13 = kotlin.Unit.f32008a
+            kotlin.Unit r13 = kotlin.Unit.f32056a
             com.discord.notifications.actions.intents.ContentAction r13 = new com.discord.notifications.actions.intents.ContentAction
             r13.<init>(r2, r12)
             java.lang.String r2 = "acceptAction"

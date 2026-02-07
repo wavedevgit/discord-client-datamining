@@ -4,25 +4,25 @@ package og;
 public final class p implements yi.g {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f42348a = false;
+    private boolean f42396a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f42349b = false;
+    private boolean f42397b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    private yi.c f42350c;
+    private yi.c f42398c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final l f42351d;
+    private final l f42399d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(l lVar) {
-        this.f42351d = lVar;
+        this.f42399d = lVar;
     }
 
     private final void b() {
-        if (!this.f42348a) {
-            this.f42348a = true;
+        if (!this.f42396a) {
+            this.f42396a = true;
             return;
         }
         throw new yi.b("Cannot encode a second value in the ValueEncoderContext");
@@ -30,22 +30,22 @@ public final class p implements yi.g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void a(yi.c cVar, boolean z10) {
-        this.f42348a = false;
-        this.f42350c = cVar;
-        this.f42349b = z10;
+        this.f42396a = false;
+        this.f42398c = cVar;
+        this.f42397b = z10;
     }
 
     @Override // yi.g
     public final yi.g d(String str) {
         b();
-        this.f42351d.f(this.f42350c, str, this.f42349b);
+        this.f42399d.f(this.f42398c, str, this.f42397b);
         return this;
     }
 
     @Override // yi.g
     public final yi.g e(boolean z10) {
         b();
-        this.f42351d.g(this.f42350c, z10 ? 1 : 0, this.f42349b);
+        this.f42399d.g(this.f42398c, z10 ? 1 : 0, this.f42397b);
         return this;
     }
 }

@@ -112,23 +112,23 @@ public final class APNGView extends m {
 
     public static final Unit apngStateManager$lambda$0(APNGView aPNGView) {
         aPNGView.playApngAnimation();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit apngStateManager$lambda$1(APNGView aPNGView) {
         aPNGView.pauseApngAnimation();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit apngStateManager$lambda$2(APNGView aPNGView) {
         aPNGView.stopApngAnimation();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Unit apngStateManager$lambda$3(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "<unused var>");
         recycle$default(aPNGView, false, false, 2, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final boolean apngStateManager$lambda$4(APNGView aPNGView, Config config) {
@@ -142,7 +142,7 @@ public final class APNGView extends m {
     public static final Unit apngStateManager$lambda$5(APNGView aPNGView, Config config) {
         Intrinsics.checkNotNullParameter(config, "config");
         aPNGView.fetchAPNG(config);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void fetchAPNG(Config config) {

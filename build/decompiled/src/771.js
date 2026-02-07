@@ -5,13 +5,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.prototype;
     var _closure1_slot0 = var1;
     var1 = function arg0() {
-        _fun8419: for (var _fun8419_ip = 0;;) switch (_fun8419_ip) {
+        _fun8421: for (var _fun8421_ip = 0;;) switch (_fun8421_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1;
                 if (!var2) {
-                    _fun8419_ip = 14;
-                    continue _fun8419
+                    _fun8421_ip = 14;
+                    continue _fun8421
                 }
             case 9:
                 var2 = var1.constructor;
@@ -20,15 +20,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var2;
                 var0 = var3 === var0;
                 if (!var0) {
-                    _fun8419_ip = 33;
-                    continue _fun8419
+                    _fun8421_ip = 33;
+                    continue _fun8421
                 }
             case 28:
                 var0 = var2.prototype;
             case 33:
                 if (var0) {
-                    _fun8419_ip = 43;
-                    continue _fun8419
+                    _fun8421_ip = 43;
+                    continue _fun8421
                 }
             case 36:
                 var0 = _closure1_slot0;

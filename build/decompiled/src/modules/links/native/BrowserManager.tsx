@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var6.bind(var0)(var5);
     var8 = var9.create;
     var5 = function() { // Environment: var1
-        _fun28268: for (var _fun28268_ip = 0;;) switch (_fun28268_ip) {
+        _fun28276: for (var _fun28276_ip = 0;;) switch (_fun28276_ip) {
             case 0:
                 var0 = {};
                 var3 = _closure1_slot0;
@@ -57,14 +57,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isAndroid;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun28268_ip = 52;
-                    continue _fun28268
+                    _fun28276_ip = 52;
+                    continue _fun28276
                 }
             case 40:
                 var1 = _closure1_slot4;
                 var1 = var1.isChromeInstalled;
-                _fun28268_ip = 88;
-                continue _fun28268;
+                _fun28276_ip = 88;
+                continue _fun28276;
             case 52:
                 var6 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -83,14 +83,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.isAndroid;
                 var1 = var1.bind(var3)();
                 if (var1) {
-                    _fun28268_ip = 135;
-                    continue _fun28268
+                    _fun28276_ip = 135;
+                    continue _fun28276
                 }
             case 123:
                 var1 = _closure1_slot4;
                 var1 = var1.selectedBrowser;
-                _fun28268_ip = 171;
-                continue _fun28268;
+                _fun28276_ip = 171;
+                continue _fun28276;
             case 135:
                 var3 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -140,14 +140,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useBrowserManagerSelectedBrowser = var4;
     var2.getBrowserManagerSelectedBrowser = var3;
     var3 = function arg0() {
-        _fun28273: for (var _fun28273_ip = 0;;) switch (_fun28273_ip) {
+        _fun28281: for (var _fun28281_ip = 0;;) switch (_fun28281_ip) {
             case 0:
                 var2 = arg0;
                 var6 = arguments[1];
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun28273_ip = 23;
-                    continue _fun28273
+                    _fun28281_ip = 23;
+                    continue _fun28281
                 }
             case 12:
                 var0 = _closure1_slot7;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.WebBrowserType;
                 var1 = var1.SAFARI;
                 if (!(var6 !== var1)) {
-                    _fun28273_ip = 402;
-                    continue _fun28273
+                    _fun28281_ip = 402;
+                    continue _fun28281
                 }
             case 65:
                 var4 = _closure1_slot0;
@@ -172,15 +172,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.WebBrowserType;
                 var1 = var1.CHROME;
                 if (!(var6 === var1)) {
-                    _fun28273_ip = 112;
-                    continue _fun28273
+                    _fun28281_ip = 112;
+                    continue _fun28281
                 }
             case 98:
                 var1 = _closure1_slot6;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun28273_ip = 402;
-                    continue _fun28273
+                    _fun28281_ip = 402;
+                    continue _fun28281
                 }
             case 112:
                 var4 = _closure1_slot0;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.WebBrowserType;
                 var1 = var1.IN_APP;
                 if (!(var6 !== var1)) {
-                    _fun28273_ip = 319;
-                    continue _fun28273
+                    _fun28281_ip = 319;
+                    continue _fun28281
                 }
             case 148:
                 var4 = _closure1_slot0;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.WebBrowserType;
                 var1 = var1.CHROME;
                 if (!(var6 !== var1)) {
-                    _fun28273_ip = 233;
-                    continue _fun28273
+                    _fun28281_ip = 233;
+                    continue _fun28281
                 }
             case 181:
                 var1 = global;
@@ -230,16 +230,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.isAndroid;
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun28273_ip = 286;
-                    continue _fun28273
+                    _fun28281_ip = 286;
+                    continue _fun28281
                 }
             case 266:
                 var5 = _closure1_slot4;
                 var4 = var5.openInChromeURL;
                 var1 = true;
                 var1 = var4.bind(var5)(var2, var1);
-                _fun28273_ip = 317;
-                continue _fun28273;
+                _fun28281_ip = 317;
+                continue _fun28281;
             case 286:
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -259,15 +259,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.isAndroid;
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun28273_ip = 369;
-                    continue _fun28273
+                    _fun28281_ip = 369;
+                    continue _fun28281
                 }
             case 352:
                 var4 = _closure1_slot4;
                 var1 = var4.openInAppURL;
                 var1 = var1.bind(var4)(var2);
-                _fun28273_ip = 400;
-                continue _fun28273;
+                _fun28281_ip = 400;
+                continue _fun28281;
             case 369:
                 var5 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -295,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.browserManagerOpenUrl = var3;
     var3 = function arg0() {
-        _fun28274: for (var _fun28274_ip = 0;;) switch (_fun28274_ip) {
+        _fun28282: for (var _fun28282_ip = 0;;) switch (_fun28282_ip) {
             case 0:
                 var4 = arg0;
                 var3 = _closure1_slot0;
@@ -307,16 +307,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun28274_ip = 67;
-                    continue _fun28274
+                    _fun28282_ip = 67;
+                    continue _fun28282
                 }
             case 41:
                 var2 = _closure1_slot3;
                 var3 = var2.BrowserManager;
                 var2 = var3.selectBrowser;
                 var2 = var2.bind(var3)(var4);
-                _fun28274_ip = 347;
-                continue _fun28274;
+                _fun28282_ip = 347;
+                continue _fun28282;
             case 67:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -326,8 +326,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.WebBrowserType;
                 var2 = var2.SAFARI;
                 if (!(var2 !== var4)) {
-                    _fun28274_ip = 291;
-                    continue _fun28274
+                    _fun28282_ip = 291;
+                    continue _fun28282
                 }
             case 106:
                 var3 = _closure1_slot0;
@@ -337,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.WebBrowserType;
                 var2 = var2.IN_APP;
                 if (!(var2 !== var4)) {
-                    _fun28274_ip = 233;
-                    continue _fun28274
+                    _fun28282_ip = 233;
+                    continue _fun28282
                 }
             case 139:
                 var3 = _closure1_slot0;
@@ -348,8 +348,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.WebBrowserType;
                 var2 = var2.CHROME;
                 if (!(var2 === var4)) {
-                    _fun28274_ip = 347;
-                    continue _fun28274
+                    _fun28282_ip = 347;
+                    continue _fun28282
                 }
             case 175:
                 var5 = _closure1_slot1;
@@ -364,8 +364,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.BrowserType;
                 var2 = var2.CHROME;
                 var2 = var3.bind(var5)(var2);
-                _fun28274_ip = 347;
-                continue _fun28274;
+                _fun28282_ip = 347;
+                continue _fun28282;
             case 233:
                 var5 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -379,8 +379,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.BrowserType;
                 var2 = var2.IN_APP;
                 var2 = var3.bind(var5)(var2);
-                _fun28274_ip = 347;
-                continue _fun28274;
+                _fun28282_ip = 347;
+                continue _fun28282;
             case 291:
                 var5 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -405,7 +405,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.browserManagerSelectBrowser = var3;
     var1 = function() {
-        _fun28275: for (var _fun28275_ip = 0;;) switch (_fun28275_ip) {
+        _fun28283: for (var _fun28283_ip = 0;;) switch (_fun28283_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -416,8 +416,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isAndroid;
                 var2 = var2.bind(var3)();
                 if (var2) {
-                    _fun28275_ip = 60;
-                    continue _fun28275
+                    _fun28283_ip = 60;
+                    continue _fun28283
                 }
             case 38:
                 var1 = _closure1_slot3;
@@ -430,4 +430,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.browserManagerCloseBrowser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 629, 478, 3279, 670, 3146, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 629, 478, 3278, 670, 3146, 2]);

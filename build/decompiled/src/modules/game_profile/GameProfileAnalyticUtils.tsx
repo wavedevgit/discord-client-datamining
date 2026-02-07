@@ -108,8 +108,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.RtcPanel = var3;
     var3 = 'friends_activity_feed';
     var4.FriendsActivityFeed = var3;
-    var3 = 'guild_profile';
-    var4.GuildProfile = var3;
     var3 = 'mini_game_profile';
     var4.MiniGameProfile = var3;
     var3 = 'game_mention';
@@ -282,4 +280,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackGameProfileFeedback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7860, 660, 8915, 491, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7904, 660, 8959, 491, 795, 2]);

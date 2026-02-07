@@ -168,13 +168,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = undefined;
                         var1 = function*(arg0) { // Environment: var0
                             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                                _fun79663: for (var _fun79663_ip = 0;;) switch (_fun79663_ip) {
+                                _fun80114: for (var _fun80114_ip = 0;;) switch (_fun80114_ip) {
                                     case 0:
                                         StartGenerator();
                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                         if (var1) {
-                                            _fun79663_ip = 95;
-                                            continue _fun79663
+                                            _fun80114_ip = 95;
+                                            continue _fun80114
                                         }
                                     case 7:
                                         var4 = _closure1_slot1;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     case 83:
                                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                         if (var2) {
-                                            _fun79663_ip = 92;
-                                            continue _fun79663
+                                            _fun80114_ip = 92;
+                                            continue _fun80114
                                         }
                                     case 89:
                                         return var1;
@@ -251,13 +251,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure1_slot3;
                     var5 = function*() { // Environment: var5
                         var0 = function*() { // Original name: ?anon_0_, environment: var0
-                            _fun79667: for (var _fun79667_ip = 0;;) switch (_fun79667_ip) {
+                            _fun80118: for (var _fun80118_ip = 0;;) switch (_fun80118_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun79667_ip = 74;
-                                        continue _fun79667
+                                        _fun80118_ip = 74;
+                                        continue _fun80118
                                     }
                                 case 7:
                                     var3 = _closure1_slot1;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 62:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun79667_ip = 71;
-                                        continue _fun79667
+                                        _fun80118_ip = 71;
+                                        continue _fun80118
                                     }
                                 case 68:
                                     return var2;
@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 10142, 33, 10140, 481, 1234, 4706, 10143, 7503, 8180, 3149, 5794, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 10187, 33, 10185, 481, 1234, 4705, 10188, 7547, 8224, 3149, 5837, 2]);

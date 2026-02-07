@@ -41,7 +41,7 @@ final class MediaEngineModule$createOwnStreamConnectionWithOptions$1 extends kot
             mediaEngineModule.getMediaEngine().connectionInstanceStartBroadcast$media_engine_release((int) d10, intent);
             mediaEngineModule.streamPermissions = null;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -84,11 +84,11 @@ final class MediaEngineModule$createOwnStreamConnectionWithOptions$1 extends kot
         });
         this.this$0.streamConnectionId = kotlin.coroutines.jvm.internal.b.e((int) this.$connectionId);
         this.this$0.addConnectionCallbacks((int) this.$connectionId);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$createOwnStreamConnectionWithOptions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$createOwnStreamConnectionWithOptions$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

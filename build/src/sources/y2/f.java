@@ -85,10 +85,10 @@ public final class f extends w implements p0 {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f54889d;
+        private final int f54937d;
 
         b(int i10) {
-            this.f54889d = i10;
+            this.f54937d = i10;
         }
 
         public static b a(int i10) {
@@ -231,7 +231,7 @@ public final class f extends w implements p0 {
     @Override // androidx.datastore.preferences.protobuf.w
     protected final Object m(w.d dVar, Object obj, Object obj2) {
         w0 w0Var;
-        switch (c.f54878a[dVar.ordinal()]) {
+        switch (c.f54926a[dVar.ordinal()]) {
             case 1:
                 return new f();
             case 2:

@@ -17,26 +17,26 @@ public abstract class m1 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f37542a;
+        public static final /* synthetic */ int[] f37590a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f37543b;
+        public static final /* synthetic */ int[] f37591b;
 
         static {
             int[] iArr = new int[a1.b.values().length];
             try {
-                iArr[a1.b.f37287d.ordinal()] = 1;
+                iArr[a1.b.f37335d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[a1.b.f37288e.ordinal()] = 2;
+                iArr[a1.b.f37336e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[a1.b.f37289i.ordinal()] = 3;
+                iArr[a1.b.f37337i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f37542a = iArr;
+            f37590a = iArr;
             int[] iArr2 = new int[NextStep.Selfie.SelfiePose.values().length];
             try {
                 iArr2[NextStep.Selfie.SelfiePose.CENTER.ordinal()] = 1;
@@ -50,13 +50,13 @@ public abstract class m1 {
                 iArr2[NextStep.Selfie.SelfiePose.RIGHT.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
-            f37543b = iArr2;
+            f37591b = iArr2;
         }
     }
 
     public static final String a(a1.b bVar) {
         Intrinsics.checkNotNullParameter(bVar, "<this>");
-        int i10 = a.f37542a[bVar.ordinal()];
+        int i10 = a.f37590a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -79,41 +79,41 @@ public abstract class m1 {
             FileOutputStream fileOutputStream = new FileOutputStream(c10);
             a10.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
             bs.c.a(fileOutputStream, null);
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             String absolutePath = c10.getAbsolutePath();
             Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
-            return Result.b(new a1.c(absolutePath, a1.a.f37282e, d(y0Var), currentTimeMillis));
+            return Result.b(new a1.c(absolutePath, a1.a.f37330e, d(y0Var), currentTimeMillis));
         } catch (IOException e10) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             return Result.b(kotlin.c.a(e10));
         }
     }
 
     public static final a1.b c(NextStep.Selfie.SelfiePose selfiePose) {
         Intrinsics.checkNotNullParameter(selfiePose, "<this>");
-        int i10 = a.f37543b[selfiePose.ordinal()];
+        int i10 = a.f37591b[selfiePose.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return a1.b.f37289i;
+                    return a1.b.f37337i;
                 }
                 throw new qr.p();
             }
-            return a1.b.f37288e;
+            return a1.b.f37336e;
         }
-        return a1.b.f37287d;
+        return a1.b.f37335d;
     }
 
     public static final a1.b d(un.y0 y0Var) {
         Intrinsics.checkNotNullParameter(y0Var, "<this>");
         if (y0Var instanceof y0.a) {
-            return a1.b.f37287d;
+            return a1.b.f37335d;
         }
         if (y0Var instanceof y0.b) {
-            return a1.b.f37288e;
+            return a1.b.f37336e;
         }
         if (y0Var instanceof y0.c) {
-            return a1.b.f37289i;
+            return a1.b.f37337i;
         }
         throw new qr.p();
     }

@@ -50,7 +50,7 @@ public abstract class e implements h {
                 }
                 return 1;
             }
-            long j10 = this.f46611p - bVar.f46611p;
+            long j10 = this.f46659p - bVar.f46659p;
             if (j10 == 0) {
                 j10 = this.f596u - bVar.f596u;
                 if (j10 == 0) {
@@ -149,7 +149,7 @@ public abstract class e implements h {
         if (this.f591b.isEmpty()) {
             return null;
         }
-        while (!this.f592c.isEmpty() && ((b) w0.j((b) this.f592c.peek())).f46611p <= this.f594e) {
+        while (!this.f592c.isEmpty() && ((b) w0.j((b) this.f592c.peek())).f46659p <= this.f594e) {
             b bVar = (b) w0.j((b) this.f592c.poll());
             if (bVar.n()) {
                 l lVar = (l) w0.j((l) this.f591b.pollFirst());
@@ -161,7 +161,7 @@ public abstract class e implements h {
             if (k()) {
                 zd.g e10 = e();
                 l lVar2 = (l) w0.j((l) this.f591b.pollFirst());
-                lVar2.u(bVar.f46611p, e10, LongCompanionObject.MAX_VALUE);
+                lVar2.u(bVar.f46659p, e10, LongCompanionObject.MAX_VALUE);
                 m(bVar);
                 return lVar2;
             }

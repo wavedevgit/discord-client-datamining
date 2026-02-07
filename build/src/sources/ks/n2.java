@@ -7,16 +7,16 @@ import ks.j2;
 public class n2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2.d f35376d;
+    private final j2.d f35424d;
 
     public n2(j2.d dVar) {
-        this.f35376d = dVar;
+        this.f35424d = dVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ls.h M;
-        M = j2.d.M(this.f35376d);
+        M = j2.d.M(this.f35424d);
         return M;
     }
 }

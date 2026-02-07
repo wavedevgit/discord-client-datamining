@@ -30,28 +30,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h implements m, v {
 
     /* renamed from: s */
-    public static final a f37250s = new a(null);
+    public static final a f37298s = new a(null);
 
     /* renamed from: d */
-    private final Screen f37251d;
+    private final Screen f37299d;
 
     /* renamed from: e */
-    private boolean f37252e;
+    private boolean f37300e;
 
     /* renamed from: i */
-    private com.swmansion.rnscreens.m f37253i;
+    private com.swmansion.rnscreens.m f37301i;
 
     /* renamed from: o */
-    private int f37254o;
+    private int f37302o;
 
     /* renamed from: p */
-    private int f37255p;
+    private int f37303p;
 
     /* renamed from: q */
-    private final c f37256q;
+    private final c f37304q;
 
     /* renamed from: r */
-    private final b f37257r;
+    private final b f37305r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -106,7 +106,7 @@ public final class h implements m, v {
     public /* synthetic */ class d {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f37260a;
+        public static final /* synthetic */ int[] f37308a;
 
         static {
             int[] iArr = new int[Lifecycle.a.values().length];
@@ -122,19 +122,19 @@ public final class h implements m, v {
                 iArr[Lifecycle.a.ON_PAUSE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f37260a = iArr;
+            f37308a = iArr;
         }
     }
 
     public h(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f37251d = screen;
-        this.f37253i = l.f18284a;
-        this.f37254o = screen.getSheetInitialDetentIndex();
-        this.f37255p = i.f37261a.c(screen.getSheetInitialDetentIndex(), screen.getSheetDetents().size());
+        this.f37299d = screen;
+        this.f37301i = l.f18284a;
+        this.f37302o = screen.getSheetInitialDetentIndex();
+        this.f37303p = i.f37309a.c(screen.getSheetInitialDetentIndex(), screen.getSheetDetents().size());
         c cVar = new c();
-        this.f37256q = cVar;
-        this.f37257r = new b();
+        this.f37304q = cVar;
+        this.f37305r = new b();
         screen.getFragment();
         Fragment fragment = screen.getFragment();
         Intrinsics.checkNotNull(fragment);
@@ -152,17 +152,17 @@ public final class h implements m, v {
             mVar = l.f18284a;
         }
         if ((i11 & 4) != 0) {
-            i10 = hVar.f37254o;
+            i10 = hVar.f37302o;
         }
         return hVar.c(bottomSheetBehavior, mVar, i10);
     }
 
     private final BottomSheetBehavior f() {
-        return this.f37251d.getSheetBehavior();
+        return this.f37299d.getSheetBehavior();
     }
 
     private final n0 g() {
-        Fragment fragment = this.f37251d.getFragment();
+        Fragment fragment = this.f37299d.getFragment();
         Intrinsics.checkNotNull(fragment, "null cannot be cast to non-null type com.swmansion.rnscreens.ScreenStackFragment");
         return (n0) fragment;
     }
@@ -180,20 +180,20 @@ public final class h implements m, v {
     }
 
     public final void m(int i10) {
-        i iVar = i.f37261a;
+        i iVar = i.f37309a;
         boolean b10 = iVar.b(i10);
         if (b10) {
-            this.f37255p = i10;
-            this.f37254o = iVar.a(i10, this.f37251d.getSheetDetents().size());
+            this.f37303p = i10;
+            this.f37302o = iVar.a(i10, this.f37299d.getSheetDetents().size());
         }
-        this.f37251d.onSheetDetentChanged$react_native_screens_release(this.f37254o, b10);
+        this.f37299d.onSheetDetentChanged$react_native_screens_release(this.f37302o, b10);
         if (p(i10)) {
             g().W();
         }
     }
 
     private final View o() {
-        Activity currentActivity = this.f37251d.getReactContext().getCurrentActivity();
+        Activity currentActivity = this.f37299d.getReactContext().getCurrentActivity();
         if (currentActivity != null) {
             View decorView = currentActivity.getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "getDecorView(...)");
@@ -214,11 +214,11 @@ public final class h implements m, v {
         WindowMetrics currentWindowMetrics;
         Rect bounds;
         DisplayMetrics displayMetrics;
-        ScreenContainer container = this.f37251d.getContainer();
+        ScreenContainer container = this.f37299d.getContainer();
         if (container != null) {
             return Integer.valueOf(container.getHeight());
         }
-        ThemedReactContext reactContext = this.f37251d.getReactContext();
+        ThemedReactContext reactContext = this.f37299d.getReactContext();
         Resources resources = reactContext.getResources();
         if (resources != null && (displayMetrics = resources.getDisplayMetrics()) != null) {
             return Integer.valueOf(displayMetrics.heightPixels);
@@ -245,11 +245,11 @@ public final class h implements m, v {
         Insets f10 = insets.f(WindowInsetsCompat.p.c());
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
         if (u10) {
-            this.f37252e = true;
-            this.f37253i = new n(f10.f3607d);
+            this.f37300e = true;
+            this.f37301i = new n(f10.f3607d);
             BottomSheetBehavior f11 = f();
             if (f11 != null) {
-                d(this, f11, this.f37253i, 0, 4, null);
+                d(this, f11, this.f37301i, 0, 4, null);
             }
             Insets f12 = insets.f(WindowInsetsCompat.p.f());
             Intrinsics.checkNotNullExpressionValue(f12, "getInsets(...)");
@@ -259,18 +259,18 @@ public final class h implements m, v {
         }
         BottomSheetBehavior f13 = f();
         if (f13 != null) {
-            if (this.f37252e) {
+            if (this.f37300e) {
                 d(this, f13, k.f18282a, 0, 4, null);
             } else {
-                com.swmansion.rnscreens.m mVar = this.f37253i;
+                com.swmansion.rnscreens.m mVar = this.f37301i;
                 l lVar = l.f18284a;
                 if (!Intrinsics.areEqual(mVar, lVar)) {
                     d(this, f13, lVar, 0, 4, null);
                 }
             }
         }
-        this.f37253i = l.f18284a;
-        this.f37252e = false;
+        this.f37301i = l.f18284a;
+        this.f37300e = false;
         Insets f14 = insets.f(WindowInsetsCompat.p.f());
         Intrinsics.checkNotNullExpressionValue(f14, "getInsets(...)");
         WindowInsetsCompat a11 = new WindowInsetsCompat.a(insets).b(WindowInsetsCompat.p.f(), Insets.c(f14.f3604a, f14.f3605b, f14.f3606c, 0)).a();
@@ -294,14 +294,14 @@ public final class h implements m, v {
     }
 
     public final Screen e() {
-        return this.f37251d;
+        return this.f37299d;
     }
 
     @Override // androidx.lifecycle.m
     public void k(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = d.f37260a[event.ordinal()];
+        int i10 = d.f37308a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {

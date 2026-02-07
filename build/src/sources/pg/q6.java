@@ -5,44 +5,44 @@ import yi.c;
 final class q6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q6 f44633a = new q6();
+    static final q6 f44681a = new q6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44634b;
+    private static final yi.c f44682b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44635c;
+    private static final yi.c f44683c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44636d;
+    private static final yi.c f44684d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44637e;
+    private static final yi.c f44685e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f44638f;
+    private static final yi.c f44686f;
 
     static {
         c.b a10 = yi.c.a("detectorOptions");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44634b = a10.b(s1Var.b()).a();
+        f44682b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("errorCodes");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44635c = a11.b(s1Var2.b()).a();
+        f44683c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("totalInitializationMs");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44636d = a12.b(s1Var3.b()).a();
+        f44684d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("loggingInitializationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44637e = a13.b(s1Var4.b()).a();
+        f44685e = a13.b(s1Var4.b()).a();
         c.b a14 = yi.c.a("otherErrors");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44638f = a14.b(s1Var5.b()).a();
+        f44686f = a14.b(s1Var5.b()).a();
     }
 
     private q6() {

@@ -6,15 +6,15 @@ import java.util.Set;
 public abstract class p implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f52318a = new HashSet();
+    private final Set f52366a = new HashSet();
 
     /* renamed from: b  reason: collision with root package name */
-    private final f f52319b = new f();
+    private final f f52367b = new f();
 
     private Object b(Object obj) {
         if (obj != null) {
             synchronized (this) {
-                this.f52318a.remove(obj);
+                this.f52366a.remove(obj);
             }
             return obj;
         }
@@ -23,22 +23,22 @@ public abstract class p implements v {
 
     @Override // va.v
     public Object get(int i10) {
-        return b(this.f52319b.a(i10));
+        return b(this.f52367b.a(i10));
     }
 
     @Override // va.v
     public Object pop() {
-        return b(this.f52319b.f());
+        return b(this.f52367b.f());
     }
 
     @Override // va.v
     public void put(Object obj) {
         boolean add;
         synchronized (this) {
-            add = this.f52318a.add(obj);
+            add = this.f52366a.add(obj);
         }
         if (add) {
-            this.f52319b.e(a(obj), obj);
+            this.f52367b.e(a(obj), obj);
         }
     }
 }

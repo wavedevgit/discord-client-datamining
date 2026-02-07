@@ -5,7 +5,7 @@ import yi.c;
 final class xb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final xb f47715a = new xb();
+    static final xb f47763a = new xb();
 
     static {
         c.b a10 = yi.c.a("language");

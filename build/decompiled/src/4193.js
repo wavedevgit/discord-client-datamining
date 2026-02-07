@@ -14,13 +14,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {
-        1: 'InteroperabilityIndex',
-        4096: 'RelatedImageFileFormat',
-        4097: 'RelatedImageWidth',
-        4098: 'RelatedImageHeight'
+        45057: 'NumberOfImages',
+        45058: 'MPEntry',
+        45059: 'ImageUIDList',
+        45060: 'TotalFrames'
     };
     var2 = {};
-    var4 = 'InteroperabilityVersion';
+    var4 = 'MPFVersion';
     var2.name = var4;
     var3 = function arg0() {
         var2 = _closure1_slot0;
@@ -35,8 +35,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var2.description = var3;
-    var0[2] = var2;
+    var0[45056] = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4191]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4190]);

@@ -102,10 +102,10 @@ class l {
             i10 = size;
         }
         Size d10 = d(i1Var);
-        Size size2 = i0.d.f26535c;
+        Size size2 = i0.d.f26583c;
         int b10 = i0.d.b(size2);
         if (i0.d.b(i10) < b10) {
-            size2 = i0.d.f26533a;
+            size2 = i0.d.f26581a;
         } else if (d10 != null && i0.d.b(d10) < b10) {
             size2 = d10;
         }

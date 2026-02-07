@@ -49,7 +49,7 @@ public class IntEnumSerializer<T extends IntEnum> implements KSerializer {
         }
         Integer[] numArr = (Integer[]) arrayList.toArray(new Integer[0]);
         this.choicesNumbers = numArr;
-        this.descriptor = j.b(this.serialName, e.f.f26475a);
+        this.descriptor = j.b(this.serialName, e.f.f26523a);
         if (numArr.length == this.choices.length) {
             if (i.P(numArr).size() != numArr.length) {
                 throw new IllegalArgumentException("There must be no duplicates of serial numbers.");

@@ -8,17 +8,17 @@ import xr.a;
 public final class ScopeKind {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ ScopeKind[] f32678d;
+    private static final /* synthetic */ ScopeKind[] f32726d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32679e;
+    private static final /* synthetic */ EnumEntries f32727e;
     public static final ScopeKind PACKAGE = new ScopeKind("PACKAGE", 0);
     public static final ScopeKind CLASSIFIER = new ScopeKind("CLASSIFIER", 1);
 
     static {
         ScopeKind[] a10 = a();
-        f32678d = a10;
-        f32679e = a.a(a10);
+        f32726d = a10;
+        f32727e = a.a(a10);
     }
 
     private ScopeKind(String str, int i10) {
@@ -33,6 +33,6 @@ public final class ScopeKind {
     }
 
     public static ScopeKind[] values() {
-        return (ScopeKind[]) f32678d.clone();
+        return (ScopeKind[]) f32726d.clone();
     }
 }

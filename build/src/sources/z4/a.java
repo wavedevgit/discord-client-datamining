@@ -21,43 +21,43 @@ import x4.j;
 public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     /* renamed from: x  reason: collision with root package name */
-    public static final C0764a f55895x = new C0764a(null);
+    public static final C0764a f55943x = new C0764a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f55896d;
+    private final h f55944d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55897e;
+    private final int f55945e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f55898i;
+    private final boolean f55946i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f55899o;
+    private final boolean f55947o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f55900p = new ArrayList();
+    private final List f55948p = new ArrayList();
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f55901q;
+    private final int f55949q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f55902r;
+    private final int f55950r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f55903s;
+    private long f55951s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f55904t;
+    private int f55952t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f55905u;
+    private int f55953u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Drawable f55906v;
+    private Drawable f55954v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Drawable f55907w;
+    private final Drawable f55955w;
 
     /* renamed from: z4.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -76,10 +76,10 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         Integer num3;
         Integer num4;
         Drawable drawable3;
-        this.f55896d = hVar;
-        this.f55897e = i10;
-        this.f55898i = z10;
-        this.f55899o = z11;
+        this.f55944d = hVar;
+        this.f55945e = i10;
+        this.f55946i = z10;
+        this.f55947o = z11;
         if (drawable != null) {
             num = Integer.valueOf(drawable.getIntrinsicWidth());
         } else {
@@ -90,7 +90,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         } else {
             num2 = null;
         }
-        this.f55901q = a(num, num2);
+        this.f55949q = a(num, num2);
         if (drawable != null) {
             num3 = Integer.valueOf(drawable.getIntrinsicHeight());
         } else {
@@ -101,18 +101,18 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         } else {
             num4 = null;
         }
-        this.f55902r = a(num3, num4);
-        this.f55904t = SetSpanOperation.SPAN_MAX_PRIORITY;
+        this.f55950r = a(num3, num4);
+        this.f55952t = SetSpanOperation.SPAN_MAX_PRIORITY;
         if (drawable != null) {
             drawable3 = drawable.mutate();
         } else {
             drawable3 = null;
         }
-        this.f55906v = drawable3;
+        this.f55954v = drawable3;
         Drawable mutate = drawable2 != null ? drawable2.mutate() : null;
-        this.f55907w = mutate;
+        this.f55955w = mutate;
         if (i10 > 0) {
-            Drawable drawable4 = this.f55906v;
+            Drawable drawable4 = this.f55954v;
             if (drawable4 != null) {
                 drawable4.setCallback(this);
             }
@@ -128,7 +128,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     private final int a(Integer num, Integer num2) {
         int i10;
         int i11 = -1;
-        if (!this.f55899o && ((num != null && num.intValue() == -1) || (num2 != null && num2.intValue() == -1))) {
+        if (!this.f55947o && ((num != null && num.intValue() == -1) || (num2 != null && num2.intValue() == -1))) {
             return -1;
         }
         if (num != null) {
@@ -143,9 +143,9 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     }
 
     private final void b() {
-        this.f55905u = 2;
-        this.f55906v = null;
-        List list = this.f55900p;
+        this.f55953u = 2;
+        this.f55954v = null;
+        List list = this.f55948p;
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             ((b) list.get(i10)).b(this);
@@ -158,7 +158,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         if (intrinsicWidth > 0 && intrinsicHeight > 0) {
             int width = rect.width();
             int height = rect.height();
-            double c10 = j.c(intrinsicWidth, intrinsicHeight, width, height, this.f55896d);
+            double c10 = j.c(intrinsicWidth, intrinsicHeight, width, height, this.f55944d);
             double d10 = 2;
             int b10 = fs.a.b((width - (intrinsicWidth * c10)) / d10);
             int b11 = fs.a.b((height - (c10 * intrinsicHeight)) / d10);
@@ -173,11 +173,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         boolean z10;
         int save;
         Drawable drawable;
-        int i10 = this.f55905u;
+        int i10 = this.f55953u;
         if (i10 == 0) {
-            Drawable drawable2 = this.f55906v;
+            Drawable drawable2 = this.f55954v;
             if (drawable2 != null) {
-                drawable2.setAlpha(this.f55904t);
+                drawable2.setAlpha(this.f55952t);
                 save = canvas.save();
                 try {
                     drawable2.draw(canvas);
@@ -185,9 +185,9 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
                 }
             }
         } else if (i10 == 2) {
-            Drawable drawable3 = this.f55907w;
+            Drawable drawable3 = this.f55955w;
             if (drawable3 != null) {
-                drawable3.setAlpha(this.f55904t);
+                drawable3.setAlpha(this.f55952t);
                 save = canvas.save();
                 try {
                     drawable3.draw(canvas);
@@ -195,11 +195,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
                 }
             }
         } else {
-            double uptimeMillis = (SystemClock.uptimeMillis() - this.f55903s) / this.f55897e;
+            double uptimeMillis = (SystemClock.uptimeMillis() - this.f55951s) / this.f55945e;
             double k10 = d.k(uptimeMillis, 0.0d, 1.0d);
-            int i11 = this.f55904t;
+            int i11 = this.f55952t;
             int i12 = (int) (k10 * i11);
-            if (this.f55898i) {
+            if (this.f55946i) {
                 i11 -= i12;
             }
             if (uptimeMillis >= 1.0d) {
@@ -207,7 +207,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
             } else {
                 z10 = false;
             }
-            if (!z10 && (drawable = this.f55906v) != null) {
+            if (!z10 && (drawable = this.f55954v) != null) {
                 drawable.setAlpha(i11);
                 save = canvas.save();
                 try {
@@ -215,7 +215,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
                 } finally {
                 }
             }
-            Drawable drawable4 = this.f55907w;
+            Drawable drawable4 = this.f55955w;
             if (drawable4 != null) {
                 drawable4.setAlpha(i12);
                 save = canvas.save();
@@ -234,32 +234,32 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f55904t;
+        return this.f55952t;
     }
 
     @Override // android.graphics.drawable.Drawable
     public ColorFilter getColorFilter() {
         ColorFilter colorFilter;
         Drawable drawable;
-        int i10 = this.f55905u;
+        int i10 = this.f55953u;
         if (i10 != 0) {
             if (i10 != 1) {
-                if (i10 != 2 || (drawable = this.f55907w) == null) {
+                if (i10 != 2 || (drawable = this.f55955w) == null) {
                     return null;
                 }
                 return drawable.getColorFilter();
             }
-            Drawable drawable2 = this.f55907w;
+            Drawable drawable2 = this.f55955w;
             if (drawable2 != null && (colorFilter = drawable2.getColorFilter()) != null) {
                 return colorFilter;
             }
-            Drawable drawable3 = this.f55906v;
+            Drawable drawable3 = this.f55954v;
             if (drawable3 == null) {
                 return null;
             }
             return drawable3.getColorFilter();
         }
-        Drawable drawable4 = this.f55906v;
+        Drawable drawable4 = this.f55954v;
         if (drawable4 == null) {
             return null;
         }
@@ -268,19 +268,19 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f55902r;
+        return this.f55950r;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f55901q;
+        return this.f55949q;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getOpacity() {
-        Drawable drawable = this.f55906v;
-        Drawable drawable2 = this.f55907w;
-        int i10 = this.f55905u;
+        Drawable drawable = this.f55954v;
+        Drawable drawable2 = this.f55955w;
+        int i10 = this.f55953u;
         if (i10 == 0) {
             if (drawable == null) {
                 return -2;
@@ -311,7 +311,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        if (this.f55905u == 1) {
+        if (this.f55953u == 1) {
             return true;
         }
         return false;
@@ -319,11 +319,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect rect) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             c(drawable, rect);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             c(drawable2, rect);
         }
@@ -333,13 +333,13 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     protected boolean onLevelChange(int i10) {
         boolean z10;
         boolean z11;
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             z10 = drawable.setLevel(i10);
         } else {
             z10 = false;
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             z11 = drawable2.setLevel(i10);
         } else {
@@ -355,13 +355,13 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     protected boolean onStateChange(int[] iArr) {
         boolean z10;
         boolean z11;
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             z10 = drawable.setState(iArr);
         } else {
             z10 = false;
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             z11 = drawable2.setState(iArr);
         } else {
@@ -381,7 +381,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
         if (i10 >= 0 && i10 < 256) {
-            this.f55904t = i10;
+            this.f55952t = i10;
             return;
         }
         throw new IllegalArgumentException(("Invalid alpha: " + i10).toString());
@@ -389,11 +389,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             drawable.setColorFilter(colorFilter);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             drawable2.setColorFilter(colorFilter);
         }
@@ -401,11 +401,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setTint(int i10) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             drawable.setTint(i10);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             drawable2.setTint(i10);
         }
@@ -413,11 +413,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setTintBlendMode(BlendMode blendMode) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             drawable.setTintBlendMode(blendMode);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             drawable2.setTintBlendMode(blendMode);
         }
@@ -425,11 +425,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setTintList(ColorStateList colorStateList) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             drawable.setTintList(colorStateList);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             drawable2.setTintList(colorStateList);
         }
@@ -437,11 +437,11 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public void setTintMode(PorterDuff.Mode mode) {
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         if (drawable != null) {
             drawable.setTintMode(mode);
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 != null) {
             drawable2.setTintMode(mode);
         }
@@ -450,7 +450,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     @Override // android.graphics.drawable.Animatable
     public void start() {
         Animatable animatable;
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         Animatable animatable2 = null;
         if (drawable instanceof Animatable) {
             animatable = (Animatable) drawable;
@@ -460,19 +460,19 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         if (animatable != null) {
             animatable.start();
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 instanceof Animatable) {
             animatable2 = (Animatable) drawable2;
         }
         if (animatable2 != null) {
             animatable2.start();
         }
-        if (this.f55905u != 0) {
+        if (this.f55953u != 0) {
             return;
         }
-        this.f55905u = 1;
-        this.f55903s = SystemClock.uptimeMillis();
-        List list = this.f55900p;
+        this.f55953u = 1;
+        this.f55951s = SystemClock.uptimeMillis();
+        List list = this.f55948p;
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             ((b) list.get(i10)).c(this);
@@ -483,7 +483,7 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
     @Override // android.graphics.drawable.Animatable
     public void stop() {
         Animatable animatable;
-        Drawable drawable = this.f55906v;
+        Drawable drawable = this.f55954v;
         Animatable animatable2 = null;
         if (drawable instanceof Animatable) {
             animatable = (Animatable) drawable;
@@ -493,14 +493,14 @@ public final class a extends Drawable implements Drawable.Callback, Animatable {
         if (animatable != null) {
             animatable.stop();
         }
-        Drawable drawable2 = this.f55907w;
+        Drawable drawable2 = this.f55955w;
         if (drawable2 instanceof Animatable) {
             animatable2 = (Animatable) drawable2;
         }
         if (animatable2 != null) {
             animatable2.stop();
         }
-        if (this.f55905u != 2) {
+        if (this.f55953u != 2) {
             b();
         }
     }

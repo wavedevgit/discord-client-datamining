@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 public final class l extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    private b f36350e;
+    private b f36398e;
 
     public l(hk.i iVar) {
         super(iVar);
@@ -163,7 +163,7 @@ public final class l extends j {
 
     @Override // lk.j, hk.b
     public b b() {
-        b bVar = this.f36350e;
+        b bVar = this.f36398e;
         if (bVar != null) {
             return bVar;
         }
@@ -185,10 +185,10 @@ public final class l extends j {
             int[][] i14 = i(b10, i11, i13, d10, a10);
             b bVar2 = new b(d10, a10);
             j(b10, i11, i13, d10, a10, i14, bVar2);
-            this.f36350e = bVar2;
+            this.f36398e = bVar2;
         } else {
-            this.f36350e = super.b();
+            this.f36398e = super.b();
         }
-        return this.f36350e;
+        return this.f36398e;
     }
 }

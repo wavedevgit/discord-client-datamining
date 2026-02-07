@@ -8,22 +8,22 @@ import java.util.Map;
 public final class a extends k {
 
     /* renamed from: d  reason: collision with root package name */
-    static final char[] f50686d = "0123456789-$:/.+ABCD".toCharArray();
+    static final char[] f50734d = "0123456789-$:/.+ABCD".toCharArray();
 
     /* renamed from: e  reason: collision with root package name */
-    static final int[] f50687e = {3, 6, 9, 96, 18, 66, 33, 36, 48, 72, 12, 24, 69, 81, 84, 21, 26, 41, 11, 14};
+    static final int[] f50735e = {3, 6, 9, 96, 18, 66, 33, 36, 48, 72, 12, 24, 69, 81, 84, 21, 26, 41, 11, 14};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final char[] f50688f = {'A', 'B', 'C', 'D'};
+    private static final char[] f50736f = {'A', 'B', 'C', 'D'};
 
     /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f50689a = new StringBuilder(20);
+    private final StringBuilder f50737a = new StringBuilder(20);
 
     /* renamed from: b  reason: collision with root package name */
-    private int[] f50690b = new int[80];
+    private int[] f50738b = new int[80];
 
     /* renamed from: c  reason: collision with root package name */
-    private int f50691c = 0;
+    private int f50739c = 0;
 
     static boolean g(char[] cArr, char c10) {
         if (cArr != null) {
@@ -37,27 +37,27 @@ public final class a extends k {
     }
 
     private void h(int i10) {
-        int[] iArr = this.f50690b;
-        int i11 = this.f50691c;
+        int[] iArr = this.f50738b;
+        int i11 = this.f50739c;
         iArr[i11] = i10;
         int i12 = i11 + 1;
-        this.f50691c = i12;
+        this.f50739c = i12;
         if (i12 >= iArr.length) {
             int[] iArr2 = new int[i12 * 2];
             System.arraycopy(iArr, 0, iArr2, 0, i12);
-            this.f50690b = iArr2;
+            this.f50738b = iArr2;
         }
     }
 
     private int i() {
-        for (int i10 = 1; i10 < this.f50691c; i10 += 2) {
+        for (int i10 = 1; i10 < this.f50739c; i10 += 2) {
             int k10 = k(i10);
-            if (k10 != -1 && g(f50688f, f50686d[k10])) {
+            if (k10 != -1 && g(f50736f, f50734d[k10])) {
                 int i11 = 0;
                 for (int i12 = i10; i12 < i10 + 7; i12++) {
-                    i11 += this.f50690b[i12];
+                    i11 += this.f50738b[i12];
                 }
-                if (i10 == 1 || this.f50690b[i10 - 1] >= i11 / 2) {
+                if (i10 == 1 || this.f50738b[i10 - 1] >= i11 / 2) {
                     return i10;
                 }
             }
@@ -67,7 +67,7 @@ public final class a extends k {
 
     private void j(lk.a aVar) {
         int i10 = 0;
-        this.f50691c = 0;
+        this.f50739c = 0;
         int k10 = aVar.k(0);
         int l10 = aVar.l();
         if (k10 < l10) {
@@ -91,10 +91,10 @@ public final class a extends k {
     private int k(int i10) {
         int i11;
         int i12 = i10 + 7;
-        if (i12 >= this.f50691c) {
+        if (i12 >= this.f50739c) {
             return -1;
         }
-        int[] iArr = this.f50690b;
+        int[] iArr = this.f50738b;
         int i13 = Integer.MAX_VALUE;
         int i14 = 0;
         int i15 = Integer.MAX_VALUE;
@@ -134,7 +134,7 @@ public final class a extends k {
             }
         }
         while (true) {
-            int[] iArr2 = f50687e;
+            int[] iArr2 = f50735e;
             if (i14 >= iArr2.length) {
                 return -1;
             }
@@ -156,17 +156,17 @@ public final class a extends k {
         iArr2[1] = 0;
         iArr2[2] = 0;
         iArr2[3] = 0;
-        int length = this.f50689a.length() - 1;
+        int length = this.f50737a.length() - 1;
         int i11 = i10;
         int i12 = 0;
         while (true) {
             if (i12 > length) {
                 break;
             }
-            int i13 = f50687e[this.f50689a.charAt(i12)];
+            int i13 = f50735e[this.f50737a.charAt(i12)];
             for (int i14 = 6; i14 >= 0; i14--) {
                 int i15 = (i14 & 1) + ((i13 & 1) * 2);
-                iArr[i15] = iArr[i15] + this.f50690b[i11 + i14];
+                iArr[i15] = iArr[i15] + this.f50738b[i11 + i14];
                 iArr2[i15] = iArr2[i15] + 1;
                 i13 >>= 1;
             }
@@ -187,10 +187,10 @@ public final class a extends k {
         }
         int i20 = i10;
         for (int i21 = 0; i21 <= length; i21++) {
-            int i22 = f50687e[this.f50689a.charAt(i21)];
+            int i22 = f50735e[this.f50737a.charAt(i21)];
             for (int i23 = 6; i23 >= 0; i23--) {
                 int i24 = (i23 & 1) + ((i22 & 1) * 2);
-                float f11 = this.f50690b[i20 + i23];
+                float f11 = this.f50738b[i20 + i23];
                 if (f11 >= fArr2[i24] && f11 <= fArr[i24]) {
                     i22 >>= 1;
                 } else {
@@ -204,17 +204,17 @@ public final class a extends k {
     @Override // tk.k
     public Result b(int i10, lk.a aVar, Map map) {
         int i11;
-        Arrays.fill(this.f50690b, 0);
+        Arrays.fill(this.f50738b, 0);
         j(aVar);
         int i12 = i();
-        this.f50689a.setLength(0);
+        this.f50737a.setLength(0);
         int i13 = i12;
         while (true) {
             int k10 = k(i13);
             if (k10 != -1) {
-                this.f50689a.append((char) k10);
+                this.f50737a.append((char) k10);
                 i11 = i13 + 8;
-                if ((this.f50689a.length() <= 1 || !g(f50688f, f50686d[k10])) && i11 < this.f50691c) {
+                if ((this.f50737a.length() <= 1 || !g(f50736f, f50734d[k10])) && i11 < this.f50739c) {
                     i13 = i11;
                 }
             } else {
@@ -222,41 +222,41 @@ public final class a extends k {
             }
         }
         int i14 = i13 + 7;
-        int i15 = this.f50690b[i14];
+        int i15 = this.f50738b[i14];
         int i16 = 0;
         for (int i17 = -8; i17 < -1; i17++) {
-            i16 += this.f50690b[i11 + i17];
+            i16 += this.f50738b[i11 + i17];
         }
-        if (i11 < this.f50691c && i15 < i16 / 2) {
+        if (i11 < this.f50739c && i15 < i16 / 2) {
             throw hk.k.a();
         }
         l(i12);
-        for (int i18 = 0; i18 < this.f50689a.length(); i18++) {
-            StringBuilder sb2 = this.f50689a;
-            sb2.setCharAt(i18, f50686d[sb2.charAt(i18)]);
+        for (int i18 = 0; i18 < this.f50737a.length(); i18++) {
+            StringBuilder sb2 = this.f50737a;
+            sb2.setCharAt(i18, f50734d[sb2.charAt(i18)]);
         }
-        char charAt = this.f50689a.charAt(0);
-        char[] cArr = f50688f;
+        char charAt = this.f50737a.charAt(0);
+        char[] cArr = f50736f;
         if (g(cArr, charAt)) {
-            StringBuilder sb3 = this.f50689a;
+            StringBuilder sb3 = this.f50737a;
             if (g(cArr, sb3.charAt(sb3.length() - 1))) {
-                if (this.f50689a.length() > 3) {
+                if (this.f50737a.length() > 3) {
                     if (map == null || !map.containsKey(hk.e.RETURN_CODABAR_START_END)) {
-                        StringBuilder sb4 = this.f50689a;
+                        StringBuilder sb4 = this.f50737a;
                         sb4.deleteCharAt(sb4.length() - 1);
-                        this.f50689a.deleteCharAt(0);
+                        this.f50737a.deleteCharAt(0);
                     }
                     int i19 = 0;
                     for (int i20 = 0; i20 < i12; i20++) {
-                        i19 += this.f50690b[i20];
+                        i19 += this.f50738b[i20];
                     }
                     float f10 = i19;
                     while (i12 < i14) {
-                        i19 += this.f50690b[i12];
+                        i19 += this.f50738b[i12];
                         i12++;
                     }
                     float f11 = i10;
-                    Result result = new Result(this.f50689a.toString(), null, new hk.p[]{new hk.p(f10, f11), new hk.p(i19, f11)}, hk.a.CODABAR);
+                    Result result = new Result(this.f50737a.toString(), null, new hk.p[]{new hk.p(f10, f11), new hk.p(i19, f11)}, hk.a.CODABAR);
                     result.h(hk.o.SYMBOLOGY_IDENTIFIER, "]F0");
                     return result;
                 }

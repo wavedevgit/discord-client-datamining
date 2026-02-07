@@ -7,15 +7,15 @@ import ng.sl;
 public final class m implements xj.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final sl f55413a;
+    private final sl f55461a;
 
     public m(sl slVar) {
-        this.f55413a = slVar;
+        this.f55461a = slVar;
     }
 
     @Override // xj.a
     public final Rect a() {
-        Point[] e10 = this.f55413a.e();
+        Point[] e10 = this.f55461a.e();
         if (e10 != null) {
             int i10 = Integer.MIN_VALUE;
             int i11 = Integer.MAX_VALUE;
@@ -34,21 +34,21 @@ public final class m implements xj.a {
 
     @Override // xj.a
     public final String b() {
-        return this.f55413a.d();
+        return this.f55461a.d();
     }
 
     @Override // xj.a
     public final int c() {
-        return this.f55413a.c();
+        return this.f55461a.c();
     }
 
     @Override // xj.a
     public final Point[] d() {
-        return this.f55413a.e();
+        return this.f55461a.e();
     }
 
     @Override // xj.a
     public final int getFormat() {
-        return this.f55413a.b();
+        return this.f55461a.b();
     }
 }

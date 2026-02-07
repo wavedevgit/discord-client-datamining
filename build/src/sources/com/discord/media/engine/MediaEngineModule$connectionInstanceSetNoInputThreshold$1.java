@@ -49,11 +49,11 @@ final class MediaEngineModule$connectionInstanceSetNoInputThreshold$1 extends ko
             }
         }
         this.this$0.getMediaEngine().connectionInstanceSetNoInputThreshold$media_engine_release((int) this.$connectionId, (float) this.$threshold);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceSetNoInputThreshold$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$connectionInstanceSetNoInputThreshold$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

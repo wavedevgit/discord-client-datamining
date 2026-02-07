@@ -40,43 +40,43 @@ import un.v;
 public final class f implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f47929b;
+    private final Context f47977b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f47930c;
+    private final String f47978c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f47931d;
+    private final String f47979d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f47932e;
+    private final String f47980e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f47933f;
+    private final String f47981f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.governmentid.network.a f47934g;
+    private final com.withpersona.sdk2.inquiry.governmentid.network.a f47982g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final qo.c f47935h;
+    private final qo.c f47983h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final sp.a f47936i;
+    private final sp.a f47984i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final io.a f47937j;
+    private final io.a f47985j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final xp.a f47938k;
+    private final xp.a f47986k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final String f47939l;
+    private final String f47987l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final v f47940m;
+    private final v f47988m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final zn.a f47941n;
+    private final zn.a f47989n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -90,17 +90,17 @@ public final class f implements o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo.NetworkErrorInfo f47942a;
+            private final InternalErrorInfo.NetworkErrorInfo f47990a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo.NetworkErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f47942a = cause;
+                this.f47990a = cause;
             }
 
             public final InternalErrorInfo.NetworkErrorInfo a() {
-                return this.f47942a;
+                return this.f47990a;
             }
         }
 
@@ -109,17 +109,17 @@ public final class f implements o<b> {
         public static final class C0607b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final GenericFileUploadErrorResponse.DocumentErrorResponse f47943a;
+            private final GenericFileUploadErrorResponse.DocumentErrorResponse f47991a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0607b(GenericFileUploadErrorResponse.DocumentErrorResponse cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f47943a = cause;
+                this.f47991a = cause;
             }
 
             public final GenericFileUploadErrorResponse.DocumentErrorResponse a() {
-                return this.f47943a;
+                return this.f47991a;
             }
         }
 
@@ -127,7 +127,7 @@ public final class f implements o<b> {
         public static final class c extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final c f47944a = new c();
+            public static final c f47992a = new c();
 
             private c() {
                 super(null);
@@ -161,32 +161,32 @@ public final class f implements o<b> {
     public /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f47945a;
+        public static final /* synthetic */ int[] f47993a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f47946b;
+        public static final /* synthetic */ int[] f47994b;
 
         static {
             int[] iArr = new int[v.b.values().length];
             try {
-                iArr[v.b.f51834i.ordinal()] = 1;
+                iArr[v.b.f51882i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
-            f47945a = iArr;
+            f47993a = iArr;
             int[] iArr2 = new int[d0.d.values().length];
             try {
-                iArr2[d0.d.f30046d.ordinal()] = 1;
+                iArr2[d0.d.f30094d.ordinal()] = 1;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr2[d0.d.f30047e.ordinal()] = 2;
+                iArr2[d0.d.f30095e.ordinal()] = 2;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr2[d0.d.f30048i.ordinal()] = 3;
+                iArr2[d0.d.f30096i.ordinal()] = 3;
             } catch (NoSuchFieldError unused4) {
             }
-            f47946b = iArr2;
+            f47994b = iArr2;
         }
     }
 
@@ -194,37 +194,37 @@ public final class f implements o<b> {
     static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f47947d;
+        Object f47995d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f47948e;
+        int f47996e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f47949i;
+        private /* synthetic */ Object f47997i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f47951d;
+            int f47999d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ f f47952e;
+            final /* synthetic */ f f48000e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ List f47953i;
+            final /* synthetic */ List f48001i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(f fVar, List list, Continuation continuation) {
                 super(1, continuation);
-                this.f47952e = fVar;
-                this.f47953i = list;
+                this.f48000e = fVar;
+                this.f48001i = list;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f47952e, this.f47953i, continuation);
+                return new a(this.f48000e, this.f48001i, continuation);
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:13:0x0041, code lost:
@@ -242,7 +242,7 @@ public final class f implements o<b> {
                 /*
                     r5 = this;
                     java.lang.Object r0 = wr.b.f()
-                    int r1 = r5.f47951d
+                    int r1 = r5.f47999d
                     r2 = 2
                     r3 = 1
                     if (r1 == 0) goto L1e
@@ -260,16 +260,16 @@ public final class f implements o<b> {
                     goto L44
                 L1e:
                     kotlin.c.b(r6)
-                    qo.f r6 = r5.f47952e
+                    qo.f r6 = r5.f48000e
                     io.a r6 = qo.f.e(r6)
                     boolean r6 = r6.b()
                     if (r6 == 0) goto L47
-                    qo.f r6 = r5.f47952e
+                    qo.f r6 = r5.f48000e
                     io.a r6 = qo.f.e(r6)
-                    qo.f r1 = r5.f47952e
+                    qo.f r1 = r5.f48000e
                     java.lang.String r1 = qo.f.k(r1)
-                    java.util.List r2 = r5.f47953i
-                    r5.f47951d = r3
+                    java.util.List r2 = r5.f48001i
+                    r5.f47999d = r3
                     java.lang.Object r6 = r6.a(r1, r2, r5)
                     if (r6 != r0) goto L44
                     goto L63
@@ -277,14 +277,14 @@ public final class f implements o<b> {
                     vv.z r6 = (vv.z) r6
                     return r6
                 L47:
-                    qo.f r6 = r5.f47952e
+                    qo.f r6 = r5.f48000e
                     com.withpersona.sdk2.inquiry.governmentid.network.a r6 = qo.f.j(r6)
-                    qo.f r1 = r5.f47952e
+                    qo.f r1 = r5.f48000e
                     java.lang.String r1 = qo.f.k(r1)
-                    qo.f r3 = r5.f47952e
+                    qo.f r3 = r5.f48000e
                     java.lang.String r3 = qo.f.i(r3)
-                    java.util.List r4 = r5.f47953i
-                    r5.f47951d = r2
+                    java.util.List r4 = r5.f48001i
+                    r5.f47999d = r2
                     java.lang.Object r6 = r6.b(r1, r3, r4, r5)
                     if (r6 != r0) goto L64
                 L63:
@@ -298,7 +298,7 @@ public final class f implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f32008a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f32056a);
             }
         }
 
@@ -309,7 +309,7 @@ public final class f implements o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f47949i = obj;
+            dVar.f47997i = obj;
             return dVar;
         }
 
@@ -343,7 +343,7 @@ public final class f implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -359,19 +359,19 @@ public final class f implements o<b> {
         Intrinsics.checkNotNullParameter(imageHelper, "imageHelper");
         Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
         Intrinsics.checkNotNullParameter(cameraStatsManager, "cameraStatsManager");
-        this.f47929b = context;
-        this.f47930c = sessionToken;
-        this.f47931d = inquiryId;
-        this.f47932e = fromStep;
-        this.f47933f = fromComponent;
-        this.f47934g = service;
-        this.f47935h = cVar;
-        this.f47936i = dataCollector;
-        this.f47937j = fallbackModeManager;
-        this.f47938k = imageHelper;
-        this.f47939l = str;
-        this.f47940m = cameraProperties;
-        this.f47941n = cameraStatsManager;
+        this.f47977b = context;
+        this.f47978c = sessionToken;
+        this.f47979d = inquiryId;
+        this.f47980e = fromStep;
+        this.f47981f = fromComponent;
+        this.f47982g = service;
+        this.f47983h = cVar;
+        this.f47984i = dataCollector;
+        this.f47985j = fallbackModeManager;
+        this.f47986k = imageHelper;
+        this.f47987l = str;
+        this.f47988m = cameraProperties;
+        this.f47989n = cameraStatsManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -380,11 +380,11 @@ public final class f implements o<b> {
         String str;
         String str2;
         String w12;
-        this.f47936i.b(new qo.d(this.f47932e, cVar.c()));
-        MultipartBody.b.a aVar = MultipartBody.b.f42896c;
+        this.f47984i.b(new qo.d(this.f47980e, cVar.c()));
+        MultipartBody.b.a aVar = MultipartBody.b.f42944c;
         MultipartBody.b b10 = aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][label]", vVar.d());
         String str3 = "data[attributes][fields][" + cVar.a() + "][cameraProperties][facing_mode]";
-        if (c.f47945a[vVar.b().ordinal()] == 1) {
+        if (c.f47993a[vVar.b().ordinal()] == 1) {
             lowerCase = "";
         } else {
             lowerCase = vVar.b().toString().toLowerCase(Locale.ROOT);
@@ -400,7 +400,7 @@ public final class f implements o<b> {
         MultipartBody.b b18 = aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][streamStability]", "");
         MultipartBody.b b19 = aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][allCameraLabels]", "");
         String str4 = "data[attributes][fields][" + cVar.a() + "][cameraProperties][client]";
-        if (t.j(this.f47929b)) {
+        if (t.j(this.f47977b)) {
             str = "mobile";
         } else {
             str = "mobile_sdk";
@@ -412,7 +412,7 @@ public final class f implements o<b> {
         } else {
             str2 = "android_sdk";
         }
-        list.addAll(CollectionsKt.o(b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, aVar.b(str5, str2), aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][factor]", String.valueOf(this.f47941n.a().a()))));
+        list.addAll(CollectionsKt.o(b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, aVar.b(str5, str2), aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][factor]", String.valueOf(this.f47989n.a().a()))));
         List<d0> c10 = cVar.c();
         if (!(c10 instanceof Collection) || !c10.isEmpty()) {
             for (d0 d0Var : c10) {
@@ -423,7 +423,7 @@ public final class f implements o<b> {
         }
         d0 d0Var2 = (d0) CollectionsKt.firstOrNull(cVar.c());
         if (d0Var2 != null && (w12 = d0Var2.w1()) != null) {
-            list.add(MultipartBody.b.f42896c.b("data[attributes][fields][" + cVar.b() + "]", w12));
+            list.add(MultipartBody.b.f42944c.b("data[attributes][fields][" + cVar.b() + "]", w12));
         }
         Iterator it = cVar.c().iterator();
         while (true) {
@@ -433,12 +433,12 @@ public final class f implements o<b> {
                 for (c0 c0Var : d0Var3.i2()) {
                     Iterator it2 = it;
                     if (StringsKt.P(c0Var.b(), "image/", false, 2, null)) {
-                        this.f47938k.a(new File(c0Var.a()));
+                        this.f47986k.a(new File(c0Var.a()));
                     }
                     it = it2;
                 }
                 Iterator it3 = it;
-                int i10 = c.f47946b[d0Var3.O0().ordinal()];
+                int i10 = c.f47994b[d0Var3.O0().ordinal()];
                 if (i10 == 1) {
                     str6 = "front";
                 } else if (i10 == 2) {
@@ -446,7 +446,7 @@ public final class f implements o<b> {
                 } else if (i10 != 3) {
                     throw new p();
                 }
-                MultipartBody.b.a aVar2 = MultipartBody.b.f42896c;
+                MultipartBody.b.a aVar2 = MultipartBody.b.f42944c;
                 list.addAll(CollectionsKt.o(aVar2.b("data[attributes][fields][" + cVar.a() + "][files][][page]", str6), aVar2.b("data[attributes][fields][" + cVar.a() + "][files][][capture_method]", d0Var3.b2().toString())));
                 list.addAll(m(cVar, d0Var3.i2()));
                 if (d0Var3 instanceof d0.b) {
@@ -463,12 +463,12 @@ public final class f implements o<b> {
                     throw new p();
                 }
                 it = it3;
-            } else if (this.f47939l != null) {
-                MultipartBody.b.a aVar3 = MultipartBody.b.f42896c;
+            } else if (this.f47987l != null) {
+                MultipartBody.b.a aVar3 = MultipartBody.b.f42944c;
                 MultipartBody.b b21 = aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][name]", MediaStreamTrack.VIDEO_TRACK_KIND);
-                String lowerCase2 = e.a.f43350e.toString().toLowerCase(Locale.ROOT);
+                String lowerCase2 = e.a.f43398e.toString().toLowerCase(Locale.ROOT);
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "toLowerCase(...)");
-                list.addAll(CollectionsKt.o(b21, aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][capture-method]", lowerCase2), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][type]", MediaStreamTrack.VIDEO_TRACK_KIND), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][page]", "front_and_back"), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][objectId]", this.f47939l)));
+                list.addAll(CollectionsKt.o(b21, aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][capture-method]", lowerCase2), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][type]", MediaStreamTrack.VIDEO_TRACK_KIND), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][page]", "front_and_back"), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][objectId]", this.f47987l)));
                 return;
             } else {
                 return;
@@ -481,9 +481,9 @@ public final class f implements o<b> {
         Iterator it = list.iterator();
         while (it.hasNext()) {
             c0 c0Var = (c0) it.next();
-            MultipartBody.b.a aVar = MultipartBody.b.f42896c;
+            MultipartBody.b.a aVar = MultipartBody.b.f42944c;
             String a10 = cVar.a();
-            CollectionsKt.B(arrayList, CollectionsKt.e(aVar.c("data[attributes][fields][" + a10 + "][files][][frames][]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f42872e.c(c0Var.b())))));
+            CollectionsKt.B(arrayList, CollectionsKt.e(aVar.c("data[attributes][fields][" + a10 + "][files][][frames][]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f42920e.c(c0Var.b())))));
         }
         return arrayList;
     }
@@ -491,7 +491,7 @@ public final class f implements o<b> {
     @Override // bn.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f47930c, ((f) otherWorker).f47930c)) {
+        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f47978c, ((f) otherWorker).f47978c)) {
             return true;
         }
         return false;

@@ -10,27 +10,27 @@ import qu.c0;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f49550a;
+    private static final ByteString f49598a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f49551b;
+    private static final ByteString f49599b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ByteString f49552c;
+    private static final ByteString f49600c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ByteString f49553d;
+    private static final ByteString f49601d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ByteString f49554e;
+    private static final ByteString f49602e;
 
     static {
-        ByteString.a aVar = ByteString.f43166o;
-        f49550a = aVar.g("/");
-        f49551b = aVar.g("\\");
-        f49552c = aVar.g("/\\");
-        f49553d = aVar.g(".");
-        f49554e = aVar.g("..");
+        ByteString.a aVar = ByteString.f43214o;
+        f49598a = aVar.g("/");
+        f49599b = aVar.g("\\");
+        f49600c = aVar.g("/\\");
+        f49601d = aVar.g(".");
+        f49602e = aVar.g("..");
     }
 
     public static final c0 j(c0 c0Var, c0 child, boolean z10) {
@@ -39,7 +39,7 @@ public abstract class d {
         if (!child.isAbsolute() && child.q() == null) {
             ByteString m10 = m(c0Var);
             if (m10 == null && (m10 = m(child)) == null) {
-                m10 = s(c0.f48189i);
+                m10 = s(c0.f48237i);
             }
             Buffer buffer = new Buffer();
             buffer.Z1(c0Var.d());
@@ -59,22 +59,22 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int l(c0 c0Var) {
-        int y10 = ByteString.y(c0Var.d(), f49550a, 0, 2, null);
+        int y10 = ByteString.y(c0Var.d(), f49598a, 0, 2, null);
         if (y10 != -1) {
             return y10;
         }
-        return ByteString.y(c0Var.d(), f49551b, 0, 2, null);
+        return ByteString.y(c0Var.d(), f49599b, 0, 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ByteString m(c0 c0Var) {
         ByteString d10 = c0Var.d();
-        ByteString byteString = f49550a;
+        ByteString byteString = f49598a;
         if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
             return byteString;
         }
         ByteString d11 = c0Var.d();
-        ByteString byteString2 = f49551b;
+        ByteString byteString2 = f49599b;
         if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
             return null;
         }
@@ -83,7 +83,7 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean n(c0 c0Var) {
-        if (!c0Var.d().i(f49554e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f49550a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f49551b, 0, 1))) {
+        if (!c0Var.d().i(f49602e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f49598a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f49599b, 0, 1))) {
             return false;
         }
         return true;
@@ -101,7 +101,7 @@ public abstract class d {
             if (c0Var.d().G() <= 2 || c0Var.d().j(1) != 92) {
                 return 1;
             }
-            int r10 = c0Var.d().r(f49551b, 2);
+            int r10 = c0Var.d().r(f49599b, 2);
             if (r10 == -1) {
                 return c0Var.d().G();
             }
@@ -121,7 +121,7 @@ public abstract class d {
     }
 
     private static final boolean p(Buffer buffer, ByteString byteString) {
-        if (!Intrinsics.areEqual(byteString, f49551b) || buffer.size() < 2 || buffer.Y(1L) != 58) {
+        if (!Intrinsics.areEqual(byteString, f49599b) || buffer.size() < 2 || buffer.Y(1L) != 58) {
             return false;
         }
         char Y = (char) buffer.Y(0L);
@@ -144,8 +144,8 @@ public abstract class d {
         ByteString byteString2 = null;
         int i10 = 0;
         while (true) {
-            if (!buffer.s0(0L, f49550a)) {
-                byteString = f49551b;
+            if (!buffer.s0(0L, f49598a)) {
+                byteString = f49599b;
                 if (!buffer.s0(0L, byteString)) {
                     break;
                 }
@@ -169,10 +169,10 @@ public abstract class d {
             Intrinsics.checkNotNull(byteString2);
             buffer2.Z1(byteString2);
         } else {
-            long f02 = buffer.f0(f49552c);
+            long f02 = buffer.f0(f49600c);
             if (byteString2 == null) {
                 if (f02 == -1) {
-                    byteString2 = s(c0.f48189i);
+                    byteString2 = s(c0.f48237i);
                 } else {
                     byteString2 = r(buffer.Y(f02));
                 }
@@ -192,14 +192,14 @@ public abstract class d {
         }
         ArrayList arrayList = new ArrayList();
         while (!buffer.n1()) {
-            long f03 = buffer.f0(f49552c);
+            long f03 = buffer.f0(f49600c);
             if (f03 == -1) {
                 f12 = buffer.K1();
             } else {
                 f12 = buffer.f1(f03);
                 buffer.readByte();
             }
-            ByteString byteString3 = f49554e;
+            ByteString byteString3 = f49602e;
             if (Intrinsics.areEqual(f12, byteString3)) {
                 if (!z12 || !arrayList.isEmpty()) {
                     if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
@@ -210,7 +210,7 @@ public abstract class d {
                         arrayList.add(f12);
                     }
                 }
-            } else if (!Intrinsics.areEqual(f12, f49553d) && !Intrinsics.areEqual(f12, ByteString.f43167p)) {
+            } else if (!Intrinsics.areEqual(f12, f49601d) && !Intrinsics.areEqual(f12, ByteString.f43215p)) {
                 arrayList.add(f12);
             }
         }
@@ -222,7 +222,7 @@ public abstract class d {
             buffer2.Z1((ByteString) arrayList.get(i11));
         }
         if (buffer2.size() == 0) {
-            buffer2.Z1(f49553d);
+            buffer2.Z1(f49601d);
         }
         return new c0(buffer2.K1());
     }
@@ -230,20 +230,20 @@ public abstract class d {
     private static final ByteString r(byte b10) {
         if (b10 != 47) {
             if (b10 == 92) {
-                return f49551b;
+                return f49599b;
             }
             throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
         }
-        return f49550a;
+        return f49598a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ByteString s(String str) {
         if (Intrinsics.areEqual(str, "/")) {
-            return f49550a;
+            return f49598a;
         }
         if (Intrinsics.areEqual(str, "\\")) {
-            return f49551b;
+            return f49599b;
         }
         throw new IllegalArgumentException("not a directory separator: " + str);
     }

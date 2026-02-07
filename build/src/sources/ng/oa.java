@@ -5,7 +5,7 @@ import yi.c;
 final class oa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final oa f40152a = new oa();
+    static final oa f40200a = new oa();
 
     static {
         c.b a10 = yi.c.a("optionsType");

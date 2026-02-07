@@ -11,26 +11,26 @@ import java.util.Objects;
 public final class b1 extends r0 {
 
     /* renamed from: g  reason: collision with root package name */
-    public final IBinder f25006g;
+    public final IBinder f25054g;
 
     /* renamed from: h  reason: collision with root package name */
-    final /* synthetic */ c f25007h;
+    final /* synthetic */ c f25055h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b1(c cVar, int i10, IBinder iBinder, Bundle bundle) {
         super(cVar, i10, bundle);
         Objects.requireNonNull(cVar);
-        this.f25007h = cVar;
-        this.f25006g = iBinder;
+        this.f25055h = cVar;
+        this.f25054g = iBinder;
     }
 
     @Override // gf.r0
     protected final boolean e() {
         try {
-            IBinder iBinder = this.f25006g;
+            IBinder iBinder = this.f25054g;
             q.l(iBinder);
             String interfaceDescriptor = iBinder.getInterfaceDescriptor();
-            c cVar = this.f25007h;
+            c cVar = this.f25055h;
             if (!cVar.D().equals(interfaceDescriptor)) {
                 String D = cVar.D();
                 StringBuilder sb2 = new StringBuilder(String.valueOf(D).length() + 34 + String.valueOf(interfaceDescriptor).length());
@@ -41,7 +41,7 @@ public final class b1 extends r0 {
                 Log.w("GmsClient", sb2.toString());
                 return false;
             }
-            IInterface r10 = cVar.r(this.f25006g);
+            IInterface r10 = cVar.r(this.f25054g);
             if (r10 == null || (!cVar.V(2, 4, r10) && !cVar.V(3, 4, r10))) {
                 return false;
             }
@@ -61,7 +61,7 @@ public final class b1 extends r0 {
 
     @Override // gf.r0
     protected final void f(com.google.android.gms.common.b bVar) {
-        c cVar = this.f25007h;
+        c cVar = this.f25055h;
         if (cVar.c0() != null) {
             cVar.c0().h(bVar);
         }

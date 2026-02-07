@@ -6,20 +6,20 @@ import java.util.Collection;
 abstract class b1 extends c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f39705a = new Object[4];
+    Object[] f39753a = new Object[4];
 
     /* renamed from: b  reason: collision with root package name */
-    int f39706b = 0;
+    int f39754b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f39707c;
+    boolean f39755c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b1(int i10) {
     }
 
     private final void d(int i10) {
-        Object[] objArr = this.f39705a;
+        Object[] objArr = this.f39753a;
         int length = objArr.length;
         if (length < i10) {
             int i11 = length + (length >> 1) + 1;
@@ -30,20 +30,20 @@ abstract class b1 extends c1 {
             if (i11 < 0) {
                 i11 = Integer.MAX_VALUE;
             }
-            this.f39705a = Arrays.copyOf(objArr, i11);
-            this.f39707c = false;
-        } else if (this.f39707c) {
-            this.f39705a = (Object[]) objArr.clone();
-            this.f39707c = false;
+            this.f39753a = Arrays.copyOf(objArr, i11);
+            this.f39755c = false;
+        } else if (this.f39755c) {
+            this.f39753a = (Object[]) objArr.clone();
+            this.f39755c = false;
         }
     }
 
     public final b1 b(Object obj) {
         obj.getClass();
-        d(this.f39706b + 1);
-        Object[] objArr = this.f39705a;
-        int i10 = this.f39706b;
-        this.f39706b = i10 + 1;
+        d(this.f39754b + 1);
+        Object[] objArr = this.f39753a;
+        int i10 = this.f39754b;
+        this.f39754b = i10 + 1;
         objArr[i10] = obj;
         return this;
     }
@@ -51,9 +51,9 @@ abstract class b1 extends c1 {
     public final c1 c(Iterable iterable) {
         if (iterable instanceof Collection) {
             Collection collection = (Collection) iterable;
-            d(this.f39706b + collection.size());
+            d(this.f39754b + collection.size());
             if (collection instanceof d1) {
-                this.f39706b = ((d1) collection).b(this.f39705a, this.f39706b);
+                this.f39754b = ((d1) collection).b(this.f39753a, this.f39754b);
                 return this;
             }
         }

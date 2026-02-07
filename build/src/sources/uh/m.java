@@ -6,52 +6,52 @@ import uh.e;
 final class m extends e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f51479a;
+    private Integer f51527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f51480b;
+    private Integer f51528b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f51481c;
+    private Integer f51529c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Date f51482d;
+    private Date f51530d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f51483e;
+    private String f51531e;
 
     @Override // uh.e.a
     public final e a() {
-        return new o(this.f51479a, this.f51480b, this.f51481c, this.f51482d, this.f51483e, null);
+        return new o(this.f51527a, this.f51528b, this.f51529c, this.f51530d, this.f51531e, null);
     }
 
     @Override // uh.e.a
     public final e.a b(Integer num) {
-        this.f51480b = num;
+        this.f51528b = num;
         return this;
     }
 
     @Override // uh.e.a
     public final e.a c(Integer num) {
-        this.f51481c = num;
+        this.f51529c = num;
         return this;
     }
 
     @Override // uh.e.a
     public final e.a d(String str) {
-        this.f51483e = str;
+        this.f51531e = str;
         return this;
     }
 
     @Override // uh.e.a
     public final e.a e(Date date) {
-        this.f51482d = date;
+        this.f51530d = date;
         return this;
     }
 
     @Override // uh.e.a
     public final e.a f(Integer num) {
-        this.f51479a = num;
+        this.f51527a = num;
         return this;
     }
 }

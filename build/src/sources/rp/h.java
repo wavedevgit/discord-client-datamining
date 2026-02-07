@@ -12,10 +12,10 @@ import kotlin.text.StringsKt;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final DisplayMetrics f49062a = Resources.getSystem().getDisplayMetrics();
+    private static final DisplayMetrics f49110a = Resources.getSystem().getDisplayMetrics();
 
     public static final double a(double d10) {
-        return d10 * f49062a.density;
+        return d10 * f49110a.density;
     }
 
     public static final String b(String str) {
@@ -28,11 +28,11 @@ public abstract class h {
     }
 
     public static final double c(double d10) {
-        return d10 / f49062a.density;
+        return d10 / f49110a.density;
     }
 
     public static final double d(double d10) {
-        return d10 * f49062a.scaledDensity;
+        return d10 * f49110a.scaledDensity;
     }
 
     public static final boolean e(String str) {

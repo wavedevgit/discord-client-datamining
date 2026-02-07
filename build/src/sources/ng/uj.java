@@ -3,10 +3,10 @@ package ng;
 public final class uj {
 
     /* renamed from: a  reason: collision with root package name */
-    private i1 f40322a;
+    private i1 f40370a;
 
     public final uj b(i1 i1Var) {
-        this.f40322a = i1Var;
+        this.f40370a = i1Var;
         return this;
     }
 

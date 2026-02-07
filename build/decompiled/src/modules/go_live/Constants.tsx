@@ -90,4 +90,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT = var3;
     var2.BROWSER_EXECUTABLES = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3509, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3508, 2]);

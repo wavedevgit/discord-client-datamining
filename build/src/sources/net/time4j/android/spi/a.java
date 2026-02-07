@@ -9,19 +9,19 @@ import yt.e;
 class a implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class[] f39109a;
+    private static final Class[] f39157a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object[] f39110b;
+    private static final Object[] f39158b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Method f39111c;
+    private static final Method f39159c;
 
     static {
         Class[] clsArr = new Class[0];
-        f39109a = clsArr;
+        f39157a = clsArr;
         Object[] objArr = new Object[0];
-        f39110b = objArr;
+        f39158b = objArr;
         Method method = null;
         try {
             Method method2 = SystemClock.class.getMethod("elapsedRealtimeNanos", clsArr);
@@ -29,15 +29,15 @@ class a implements e {
             method = method2;
         } catch (IllegalAccessException | NoSuchMethodException | RuntimeException | InvocationTargetException unused) {
         }
-        f39111c = method;
+        f39159c = method;
     }
 
     @Override // yt.e
     public long a() {
-        Method method = f39111c;
+        Method method = f39159c;
         if (method != null) {
             try {
-                return ((Long) method.invoke(null, f39110b)).longValue();
+                return ((Long) method.invoke(null, f39158b)).longValue();
             } catch (IllegalAccessException e10) {
                 e10.printStackTrace(System.err);
             } catch (InvocationTargetException e11) {

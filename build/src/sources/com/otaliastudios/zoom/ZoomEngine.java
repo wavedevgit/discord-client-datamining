@@ -89,7 +89,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -113,7 +113,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -137,7 +137,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
         }
 
@@ -295,7 +295,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -324,7 +324,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -362,7 +362,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 

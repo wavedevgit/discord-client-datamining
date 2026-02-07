@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2() {
-        _fun22076: for (var _fun22076_ip = 0;;) switch (_fun22076_ip) {
+        _fun22085: for (var _fun22085_ip = 0;;) switch (_fun22085_ip) {
             case 0:
                 var6 = arg1;
                 var1 = arg2;
@@ -179,8 +179,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2[var0];
                 var0 = 1;
                 if (!(var0 !== var6)) {
-                    _fun22076_ip = 67;
-                    continue _fun22076
+                    _fun22085_ip = 67;
+                    continue _fun22085
                 }
             case 27:
                 var5 = var4.other;
@@ -191,42 +191,42 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var0)(var6);
                 var0 = '{{count}}';
                 var3 = var3.bind(var5)(var0, var2);
-                _fun22076_ip = 73;
-                continue _fun22076;
+                _fun22085_ip = 73;
+                continue _fun22085;
             case 67:
                 var3 = var4.one;
             case 73:
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun22076_ip = 151;
-                    continue _fun22076
+                    _fun22085_ip = 151;
+                    continue _fun22085
                 }
             case 82:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun22076_ip = 151;
-                    continue _fun22076
+                    _fun22085_ip = 151;
+                    continue _fun22085
                 }
             case 94:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun22076_ip = 115;
-                    continue _fun22076
+                    _fun22085_ip = 115;
+                    continue _fun22085
                 }
             case 103:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun22076_ip = 127;
-                    continue _fun22076
+                    _fun22085_ip = 127;
+                    continue _fun22085
                 }
             case 115:
                 var1 = ' sitten';
                 var1 = var3 + var1;
-                _fun22076_ip = 148;
-                continue _fun22076;
+                _fun22085_ip = 148;
+                continue _fun22085;
             case 127:
                 var2 = var4.futureTense;
                 var3 = var2.bind(var4)(var3);

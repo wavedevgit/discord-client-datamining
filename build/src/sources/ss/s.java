@@ -7,13 +7,13 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class s implements FlowCollector {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final s f50098d = new s();
+    public static final s f50146d = new s();
 
     private s() {
     }
 
     @Override // kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

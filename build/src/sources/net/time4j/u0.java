@@ -3,14 +3,14 @@ package net.time4j;
 final class u0 implements rt.v {
 
     /* renamed from: d  reason: collision with root package name */
-    private final rt.v f39645d;
+    private final rt.v f39693d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f39646e;
+    private final Object f39694e;
 
     private u0(rt.v vVar, Object obj) {
-        this.f39645d = vVar;
-        this.f39646e = obj;
+        this.f39693d = vVar;
+        this.f39694e = obj;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -20,6 +20,6 @@ final class u0 implements rt.v {
 
     @Override // rt.v
     public Object apply(Object obj) {
-        return this.f39645d.apply(obj);
+        return this.f39693d.apply(obj);
     }
 }

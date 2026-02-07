@@ -5,7 +5,7 @@ import yi.c;
 final class qa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qa f47469a = new qa();
+    static final qa f47517a = new qa();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

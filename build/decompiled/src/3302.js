@@ -1,89 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Math;
-    var1 = var1.max;
-    var _closure1_slot2 = var1;
-    var1 = function arg0() {
-        _fun28335: for (var _fun28335_ip = 0;;) switch (_fun28335_ip) {
+    var1 = function arg0, arg1() {
+        _fun28347: for (var _fun28347_ip = 0;;) switch (_fun28347_ip) {
             case 0:
                 var6 = arg0;
-                var _closure2_slot0 = var6;
-                if (!var6) {
-                    _fun28335_ip = 20;
-                    continue _fun28335
-                }
-            case 12:
-                var1 = var6.length;
-                if (var1) {
-                    _fun28335_ip = 26;
-                    continue _fun28335
-                }
-            case 20:
-                var1 = new Array(0);
-                return var1;
-            case 26:
+                var5 = arg1;
+                var0 = null;
+                var0 = var0 == var6;
                 var1 = 0;
-                var _closure2_slot1 = var1;
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = var4[var1];
+                var4 = 0;
+                if (var0) {
+                    _fun28347_ip = 24;
+                    continue _fun28347
+                }
+            case 19:
+                var4 = var6.length;
+            case 24:
+                var0 = new Array(0);
+                var7 = var1 < var4;
                 var3 = undefined;
-                var5 = var2.bind(var3)(var1);
-                var1 = function(arg0) { // Environment: var0
-                    _fun28336: for (var _fun28336_ip = 0;;) switch (_fun28336_ip) {
-                        case 0:
-                            var0 = arg0;
-                            var3 = _closure1_slot0;
-                            var4 = _closure1_slot1;
-                            var2 = 1;
-                            var2 = var4[var2];
-                            var4 = undefined;
-                            var2 = var3.bind(var4)(var2);
-                            var2 = var2.bind(var4)(var0);
-                            if (var2) {
-                                _fun28336_ip = 38;
-                                continue _fun28336
-                            }
-                        case 36:
-                            return var4;
-                        case 38:
-                            var3 = _closure1_slot2;
-                            var2 = var0.length;
-                            var0 = _closure2_slot1;
-                            var0 = var3.bind(var4)(var2, var0);
-                            _closure2_slot1 = var0;
-                            var0 = true;
-                            return var0;
-                    }
-                };
-                var1 = var5.bind(var3)(var6, var1);
-                _closure2_slot0 = var1;
-                var1 = 2;
-                var1 = var4[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = _closure2_slot1;
-                var0 = function(arg0) { // Environment: var0
-                    var4 = _closure1_slot0;
-                    var5 = _closure1_slot1;
-                    var0 = 3;
-                    var0 = var5[var0];
-                    var3 = undefined;
-                    var2 = var4.bind(var3)(var0);
-                    var1 = _closure2_slot0;
-                    var0 = 4;
-                    var0 = var5[var0];
-                    var4 = var4.bind(var3)(var0);
-                    var0 = arg0;
-                    var0 = var4.bind(var3)(var0);
-                    var0 = var2.bind(var3)(var1, var0);
-                    return var0;
-                };
-                var0 = var2.bind(var3)(var1, var0);
+                var2 = 0;
+                var1 = 0;
+                if (!var7) {
+                    _fun28347_ip = 81;
+                    continue _fun28347
+                }
+            case 41:
+                var11 = var6[var2];
+                var9 = var5.bind(var3)(var11, var2, var6);
+                var8 = var2;
+                var7 = var1;
+                if (!var9) {
+                    _fun28347_ip = 71;
+                    continue _fun28347
+                }
+            case 61:
+                var10 = parseFloat(var1);
+                var7 = var10 + 1;
+                var0[var10] = var11;
+            case 71:
+                var2 = var8 + 1;
+                var1 = var7;
+                if (var2 < var4) {
+                    _fun28347_ip = 41;
+                    continue _fun28347
+                }
+            case 81:
                 return var0;
         }
     };
@@ -91,4 +53,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3303, 3304, 619, 3235, 3305]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

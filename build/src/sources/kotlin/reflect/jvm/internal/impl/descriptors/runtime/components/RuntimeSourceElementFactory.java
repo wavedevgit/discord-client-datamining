@@ -16,11 +16,11 @@ public final class RuntimeSourceElementFactory implements JavaSourceElementFacto
     public static final class RuntimeSourceElement implements JavaSourceElement {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ReflectJavaElement f32612a;
+        private final ReflectJavaElement f32660a;
 
         public RuntimeSourceElement(@NotNull ReflectJavaElement javaElement) {
             Intrinsics.checkNotNullParameter(javaElement, "javaElement");
-            this.f32612a = javaElement;
+            this.f32660a = javaElement;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.descriptors.SourceElement
@@ -34,7 +34,7 @@ public final class RuntimeSourceElementFactory implements JavaSourceElementFacto
         @Override // kotlin.reflect.jvm.internal.impl.load.java.sources.JavaSourceElement
         @NotNull
         public ReflectJavaElement getJavaElement() {
-            return this.f32612a;
+            return this.f32660a;
         }
 
         @NotNull

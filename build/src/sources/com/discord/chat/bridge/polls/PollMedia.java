@@ -31,7 +31,7 @@ public final class PollMedia {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.b(o.f48044e, new Function0() { // from class: n6.d
+    private static final Lazy[] $childSerializers = {null, l.b(o.f48092e, new Function0() { // from class: n6.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -62,7 +62,7 @@ public final class PollMedia {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new w0(n2.f31041a);
+        return new w0(n2.f31089a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -85,7 +85,7 @@ public final class PollMedia {
     public static final /* synthetic */ void write$Self$chat_release(PollMedia pollMedia, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.A(serialDescriptor, 0) || pollMedia.text != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, pollMedia.text);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, pollMedia.text);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || !Intrinsics.areEqual(pollMedia.attachmentIds, x0.d())) {
             compositeEncoder.s(serialDescriptor, 1, (ft.o) lazyArr[1].getValue(), pollMedia.attachmentIds);
@@ -94,7 +94,7 @@ public final class PollMedia {
             compositeEncoder.l(serialDescriptor, 2, PollMediaEmoji$$serializer.INSTANCE, pollMedia.emoji);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || pollMedia.stickerId != null) {
-            compositeEncoder.l(serialDescriptor, 3, z0.f31115a, pollMedia.stickerId);
+            compositeEncoder.l(serialDescriptor, 3, z0.f31163a, pollMedia.stickerId);
         }
     }
 

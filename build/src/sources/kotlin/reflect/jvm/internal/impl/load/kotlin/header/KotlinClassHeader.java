@@ -19,31 +19,31 @@ import xr.a;
 public final class KotlinClassHeader {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Kind f33263a;
+    private final Kind f33311a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MetadataVersion f33264b;
+    private final MetadataVersion f33312b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String[] f33265c;
+    private final String[] f33313c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String[] f33266d;
+    private final String[] f33314d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String[] f33267e;
+    private final String[] f33315e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f33268f;
+    private final String f33316f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f33269g;
+    private final int f33317g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f33270h;
+    private final String f33318h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final byte[] f33271i;
+    private final byte[] f33319i;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -54,16 +54,16 @@ public final class KotlinClassHeader {
         public static final Companion Companion;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final Map f33272e;
+        private static final Map f33320e;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ Kind[] f33273i;
+        private static final /* synthetic */ Kind[] f33321i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f33274o;
+        private static final /* synthetic */ EnumEntries f33322o;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f33275d;
+        private final int f33323d;
         public static final Kind UNKNOWN = new Kind("UNKNOWN", 0, 0);
         public static final Kind CLASS = new Kind("CLASS", 1, 1);
         public static final Kind FILE_FACADE = new Kind("FILE_FACADE", 2, 2);
@@ -79,7 +79,7 @@ public final class KotlinClassHeader {
 
             @NotNull
             public final Kind getById(int i10) {
-                Kind kind = (Kind) Kind.f33272e.get(Integer.valueOf(i10));
+                Kind kind = (Kind) Kind.f33320e.get(Integer.valueOf(i10));
                 if (kind == null) {
                     return Kind.UNKNOWN;
                 }
@@ -92,19 +92,19 @@ public final class KotlinClassHeader {
 
         static {
             Kind[] a10 = a();
-            f33273i = a10;
-            f33274o = a.a(a10);
+            f33321i = a10;
+            f33322o = a.a(a10);
             Companion = new Companion(null);
             Kind[] values = values();
             LinkedHashMap linkedHashMap = new LinkedHashMap(d.d(o0.e(values.length), 16));
             for (Kind kind : values) {
-                linkedHashMap.put(Integer.valueOf(kind.f33275d), kind);
+                linkedHashMap.put(Integer.valueOf(kind.f33323d), kind);
             }
-            f33272e = linkedHashMap;
+            f33320e = linkedHashMap;
         }
 
         private Kind(String str, int i10, int i11) {
-            this.f33275d = i11;
+            this.f33323d = i11;
         }
 
         private static final /* synthetic */ Kind[] a() {
@@ -121,22 +121,22 @@ public final class KotlinClassHeader {
         }
 
         public static Kind[] values() {
-            return (Kind[]) f33273i.clone();
+            return (Kind[]) f33321i.clone();
         }
     }
 
     public KotlinClassHeader(@NotNull Kind kind, @NotNull MetadataVersion metadataVersion, String[] strArr, String[] strArr2, String[] strArr3, String str, int i10, String str2, byte[] bArr) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(metadataVersion, "metadataVersion");
-        this.f33263a = kind;
-        this.f33264b = metadataVersion;
-        this.f33265c = strArr;
-        this.f33266d = strArr2;
-        this.f33267e = strArr3;
-        this.f33268f = str;
-        this.f33269g = i10;
-        this.f33270h = str2;
-        this.f33271i = bArr;
+        this.f33311a = kind;
+        this.f33312b = metadataVersion;
+        this.f33313c = strArr;
+        this.f33314d = strArr2;
+        this.f33315e = strArr3;
+        this.f33316f = str;
+        this.f33317g = i10;
+        this.f33318h = str2;
+        this.f33319i = bArr;
     }
 
     private final boolean a(int i10, int i11) {
@@ -144,26 +144,26 @@ public final class KotlinClassHeader {
     }
 
     public final String[] getData() {
-        return this.f33265c;
+        return this.f33313c;
     }
 
     public final String[] getIncompatibleData() {
-        return this.f33266d;
+        return this.f33314d;
     }
 
     @NotNull
     public final Kind getKind() {
-        return this.f33263a;
+        return this.f33311a;
     }
 
     @NotNull
     public final MetadataVersion getMetadataVersion() {
-        return this.f33264b;
+        return this.f33312b;
     }
 
     public final String getMultifileClassName() {
-        String str = this.f33268f;
-        if (this.f33263a == Kind.MULTIFILE_CLASS_PART) {
+        String str = this.f33316f;
+        if (this.f33311a == Kind.MULTIFILE_CLASS_PART) {
             return str;
         }
         return null;
@@ -171,9 +171,9 @@ public final class KotlinClassHeader {
 
     @NotNull
     public final List<String> getMultifilePartNames() {
-        String[] strArr = this.f33265c;
+        String[] strArr = this.f33313c;
         List<String> list = null;
-        if (this.f33263a != Kind.MULTIFILE_CLASS) {
+        if (this.f33311a != Kind.MULTIFILE_CLASS) {
             strArr = null;
         }
         if (strArr != null) {
@@ -186,15 +186,15 @@ public final class KotlinClassHeader {
     }
 
     public final String[] getStrings() {
-        return this.f33267e;
+        return this.f33315e;
     }
 
     public final boolean isPreRelease() {
-        return a(this.f33269g, 2);
+        return a(this.f33317g, 2);
     }
 
     public final boolean isUnstableJvmIrBinary() {
-        if (a(this.f33269g, 16) && !a(this.f33269g, 32)) {
+        if (a(this.f33317g, 16) && !a(this.f33317g, 32)) {
             return true;
         }
         return false;
@@ -202,6 +202,6 @@ public final class KotlinClassHeader {
 
     @NotNull
     public String toString() {
-        return this.f33263a + " version=" + this.f33264b;
+        return this.f33311a + " version=" + this.f33312b;
     }
 }

@@ -9,34 +9,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f36408e;
+    private final double f36456e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f36409f;
+    private final float f36457f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f36410g;
+    private final float f36458g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final double f36411h;
+    private final double f36459h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(x handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f36408e = handler.Y0();
-        this.f36409f = handler.W0();
-        this.f36410g = handler.X0();
-        this.f36411h = handler.Z0();
+        this.f36456e = handler.Y0();
+        this.f36457f = handler.W0();
+        this.f36458g = handler.X0();
+        this.f36459h = handler.Z0();
     }
 
     @Override // ln.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putDouble(ViewProps.ROTATION, this.f36408e);
-        eventData.putDouble("anchorX", PixelUtil.toDIPFromPixel(this.f36409f));
-        eventData.putDouble("anchorY", PixelUtil.toDIPFromPixel(this.f36410g));
-        eventData.putDouble("velocity", this.f36411h);
+        eventData.putDouble(ViewProps.ROTATION, this.f36456e);
+        eventData.putDouble("anchorX", PixelUtil.toDIPFromPixel(this.f36457f));
+        eventData.putDouble("anchorY", PixelUtil.toDIPFromPixel(this.f36458g));
+        eventData.putDouble("velocity", this.f36459h);
     }
 }

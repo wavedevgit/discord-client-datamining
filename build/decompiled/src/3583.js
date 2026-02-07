@@ -3,7 +3,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = function arg0() {
         var0 = this;
         var2 = var0.__data__;
-        var1 = var2.get;
+        var1 = var2.has;
         var0 = arg0;
         var0 = var1.bind(var2)(var0);
         return var0;

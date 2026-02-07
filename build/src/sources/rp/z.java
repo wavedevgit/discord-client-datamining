@@ -11,16 +11,16 @@ public abstract class z {
     public static final class a extends Snackbar.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f49154a;
+        final /* synthetic */ Function0 f49202a;
 
         a(Function0 function0) {
-            this.f49154a = function0;
+            this.f49202a = function0;
         }
 
         @Override // com.google.android.material.snackbar.BaseTransientBottomBar.r
         /* renamed from: d */
         public void a(Snackbar snackbar, int i10) {
-            this.f49154a.invoke();
+            this.f49202a.invoke();
         }
     }
 

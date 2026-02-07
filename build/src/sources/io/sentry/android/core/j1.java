@@ -26,19 +26,19 @@ import java.util.concurrent.RejectedExecutionException;
 public final class j1 implements io.sentry.b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final Context f27231d;
+    final Context f27279d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final x0 f27232e;
+    private final x0 f27280e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SentryAndroidOptions f27233i;
+    private final SentryAndroidOptions f27281i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Future f27234o;
+    private final Future f27282o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.util.r f27235p = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.g1
+    private final io.sentry.util.r f27283p = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.g1
         @Override // io.sentry.util.r.a
         public final Object a() {
             String l10;
@@ -49,16 +49,16 @@ public final class j1 implements io.sentry.b0 {
 
     public j1(Context context, x0 x0Var, final SentryAndroidOptions sentryAndroidOptions) {
         Future future;
-        this.f27231d = (Context) io.sentry.util.y.c(e1.g(context), "The application context is required.");
-        this.f27232e = (x0) io.sentry.util.y.c(x0Var, "The BuildInfoProvider is required.");
-        this.f27233i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "The options object is required.");
+        this.f27279d = (Context) io.sentry.util.y.c(e1.g(context), "The application context is required.");
+        this.f27280e = (x0) io.sentry.util.y.c(x0Var, "The BuildInfoProvider is required.");
+        this.f27281i = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "The options object is required.");
         ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
         try {
             future = newSingleThreadExecutor.submit(new Callable() { // from class: io.sentry.android.core.h1
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     m1 k10;
-                    k10 = m1.k(j1.this.f27231d, sentryAndroidOptions);
+                    k10 = m1.k(j1.this.f27279d, sentryAndroidOptions);
                     return k10;
                 }
             });
@@ -66,7 +66,7 @@ public final class j1 implements io.sentry.b0 {
             sentryAndroidOptions.getLogger().b(SentryLevel.WARNING, "Device info caching task rejected.", e10);
             future = null;
         }
-        this.f27234o = future;
+        this.f27282o = future;
         newSingleThreadExecutor.shutdown();
     }
 
@@ -90,15 +90,15 @@ public final class j1 implements io.sentry.b0 {
     private void f(e5 e5Var) {
         String str;
         io.sentry.protocol.n h10 = e5Var.C().h();
-        Future future = this.f27234o;
+        Future future = this.f27282o;
         if (future != null) {
             try {
                 e5Var.C().u(((m1) future.get()).l());
             } catch (Throwable th2) {
-                this.f27233i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve os system", th2);
+                this.f27281i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve os system", th2);
             }
         } else {
-            this.f27233i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
+            this.f27281i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
         }
         if (h10 != null) {
             String g10 = h10.g();
@@ -118,16 +118,16 @@ public final class j1 implements io.sentry.b0 {
             e5Var.h0(Q);
         }
         if (Q.i() == null) {
-            Q.o((String) this.f27233i.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.i1
+            Q.o((String) this.f27281i.getRuntimeManager().a(new a.InterfaceC0408a() { // from class: io.sentry.android.core.i1
                 @Override // io.sentry.util.runtime.a.InterfaceC0408a
                 public final Object run() {
                     String a10;
-                    a10 = r1.a(j1.this.f27231d);
+                    a10 = r1.a(j1.this.f27279d);
                     return a10;
                 }
             }));
         }
-        if (Q.j() == null && this.f27233i.isSendDefaultPii()) {
+        if (Q.j() == null && this.f27281i.isSendDefaultPii()) {
             Q.p("{{auto}}");
         }
     }
@@ -144,8 +144,8 @@ public final class j1 implements io.sentry.b0 {
 
     private void j(io.sentry.protocol.a aVar, Hint hint) {
         Boolean y10;
-        aVar.o(e1.i(this.f27231d));
-        io.sentry.android.core.performance.i m10 = io.sentry.android.core.performance.h.q().m(this.f27233i);
+        aVar.o(e1.i(this.f27279d));
+        io.sentry.android.core.performance.i m10 = io.sentry.android.core.performance.h.q().m(this.f27281i);
         if (m10.q()) {
             aVar.p(io.sentry.k.o(m10.i()));
         }
@@ -162,14 +162,14 @@ public final class j1 implements io.sentry.b0 {
 
     private void m(e5 e5Var, boolean z10, boolean z11) {
         if (e5Var.C().e() == null) {
-            if (this.f27234o != null) {
+            if (this.f27282o != null) {
                 try {
-                    e5Var.C().q(((m1) this.f27234o.get()).c(z10, z11));
+                    e5Var.C().q(((m1) this.f27282o.get()).c(z10, z11));
                 } catch (Throwable th2) {
-                    this.f27233i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve device info", th2);
+                    this.f27281i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve device info", th2);
                 }
             } else {
-                this.f27233i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
+                this.f27281i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
             }
             f(e5Var);
         }
@@ -183,26 +183,26 @@ public final class j1 implements io.sentry.b0 {
 
     private void o(e5 e5Var, io.sentry.protocol.a aVar) {
         m1 m1Var;
-        PackageInfo o10 = e1.o(this.f27231d, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, this.f27233i.getLogger(), this.f27232e);
+        PackageInfo o10 = e1.o(this.f27279d, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, this.f27281i.getLogger(), this.f27280e);
         if (o10 != null) {
-            n(e5Var, e1.q(o10, this.f27232e));
-            Future future = this.f27234o;
+            n(e5Var, e1.q(o10, this.f27280e));
+            Future future = this.f27282o;
             if (future != null) {
                 try {
                     m1Var = (m1) future.get();
                 } catch (Throwable th2) {
-                    this.f27233i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve device info", th2);
+                    this.f27281i.getLogger().b(SentryLevel.ERROR, "Failed to retrieve device info", th2);
                 }
-                e1.x(o10, this.f27232e, m1Var, aVar);
+                e1.x(o10, this.f27280e, m1Var, aVar);
             }
-            this.f27233i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
+            this.f27281i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
             m1Var = null;
-            e1.x(o10, this.f27232e, m1Var, aVar);
+            e1.x(o10, this.f27280e, m1Var, aVar);
         }
     }
 
     private void p(e5 e5Var) {
-        Future future = this.f27234o;
+        Future future = this.f27282o;
         if (future != null) {
             try {
                 e1.a n10 = ((m1) future.get()).n();
@@ -214,11 +214,11 @@ public final class j1 implements io.sentry.b0 {
                 }
                 return;
             } catch (Throwable th2) {
-                this.f27233i.getLogger().b(SentryLevel.ERROR, "Error getting side loaded info.", th2);
+                this.f27281i.getLogger().b(SentryLevel.ERROR, "Error getting side loaded info.", th2);
                 return;
             }
         }
-        this.f27233i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
+        this.f27281i.getLogger().c(SentryLevel.ERROR, "Failed to retrieve device info", new Object[0]);
     }
 
     private void q(SentryEvent sentryEvent, Hint hint) {
@@ -240,7 +240,7 @@ public final class j1 implements io.sentry.b0 {
         if (io.sentry.util.n.q(hint)) {
             return true;
         }
-        this.f27233i.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying data relevant to the current app execution/version: %s", e5Var.G());
+        this.f27281i.getLogger().c(SentryLevel.DEBUG, "Event was cached so not applying data relevant to the current app execution/version: %s", e5Var.G());
         return false;
     }
 

@@ -67,10 +67,10 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ActivityRichPresenceInviteEmbed.$childSerializers;
-        h hVar = h.f31005a;
+        h hVar = h.f31053a;
         KSerializer u10 = a.u(hVar);
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{u10, a.u(n2Var), a.u(hVar), a.u(n2Var), a.u((KSerializer) lazyArr[4].getValue()), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(p0.f31057a), a.u((KSerializer) lazyArr[11].getValue()), a.u(n2Var), a.u((KSerializer) lazyArr[13].getValue()), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(StructurableTextSerializer.INSTANCE)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{u10, a.u(n2Var), a.u(hVar), a.u(n2Var), a.u((KSerializer) lazyArr[4].getValue()), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(p0.f31105a), a.u((KSerializer) lazyArr[11].getValue()), a.u(n2Var), a.u((KSerializer) lazyArr[13].getValue()), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(StructurableTextSerializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -107,10 +107,10 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         lazyArr = ActivityRichPresenceInviteEmbed.$childSerializers;
         if (b10.p()) {
-            h hVar = h.f31005a;
-            n2 n2Var = n2.f31041a;
+            h hVar = h.f31053a;
+            n2 n2Var = n2.f31089a;
             Boolean bool6 = (Boolean) b10.n(serialDescriptor, 9, hVar, null);
-            Integer num2 = (Integer) b10.n(serialDescriptor, 10, p0.f31057a, null);
+            Integer num2 = (Integer) b10.n(serialDescriptor, 10, p0.f31105a, null);
             List list6 = (List) b10.n(serialDescriptor, 11, (DeserializationStrategy) lazyArr[11].getValue(), null);
             str = (String) b10.n(serialDescriptor, 12, n2Var, null);
             List list7 = (List) b10.n(serialDescriptor, 13, (DeserializationStrategy) lazyArr[13].getValue(), null);
@@ -174,7 +174,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        bool9 = (Boolean) b10.n(serialDescriptor, 0, h.f31005a, bool9);
+                        bool9 = (Boolean) b10.n(serialDescriptor, 0, h.f31053a, bool9);
                         i10 |= 1;
                         str18 = str18;
                         str20 = str11;
@@ -186,7 +186,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        str18 = (String) b10.n(serialDescriptor, 1, n2.f31041a, str18);
+                        str18 = (String) b10.n(serialDescriptor, 1, n2.f31089a, str18);
                         i10 |= 2;
                         bool10 = bool10;
                         str20 = str11;
@@ -198,7 +198,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        bool10 = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, bool10);
+                        bool10 = (Boolean) b10.n(serialDescriptor, 2, h.f31053a, bool10);
                         i10 |= 4;
                         str19 = str19;
                         str20 = str11;
@@ -210,7 +210,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         list4 = list8;
                         str10 = str14;
                         str11 = str21;
-                        str19 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str19);
+                        str19 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str19);
                         i10 |= 8;
                         list10 = list10;
                         str20 = str11;
@@ -231,41 +231,41 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 5:
                         list5 = list8;
-                        str20 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str21);
+                        str20 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str21);
                         i10 |= 32;
                         str14 = str14;
                         list8 = list5;
                         break;
                     case 6:
-                        str15 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str15);
+                        str15 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str15);
                         i10 |= 64;
                         list8 = list8;
                         str20 = str21;
                         break;
                     case 7:
                         str9 = str15;
-                        bool8 = (Boolean) b10.n(serialDescriptor, 7, h.f31005a, bool8);
+                        bool8 = (Boolean) b10.n(serialDescriptor, 7, h.f31053a, bool8);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 8:
                         str9 = str15;
-                        bool11 = (Boolean) b10.n(serialDescriptor, 8, h.f31005a, bool11);
+                        bool11 = (Boolean) b10.n(serialDescriptor, 8, h.f31053a, bool11);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 9:
                         str9 = str15;
-                        bool7 = (Boolean) b10.n(serialDescriptor, 9, h.f31005a, bool7);
+                        bool7 = (Boolean) b10.n(serialDescriptor, 9, h.f31053a, bool7);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 10:
                         str9 = str15;
-                        num3 = (Integer) b10.n(serialDescriptor, 10, p0.f31057a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, 10, p0.f31105a, num3);
                         i10 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         str20 = str21;
                         str15 = str9;
@@ -279,7 +279,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 12:
                         str9 = str15;
-                        str = (String) b10.n(serialDescriptor, 12, n2.f31041a, str);
+                        str = (String) b10.n(serialDescriptor, 12, n2.f31089a, str);
                         i10 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         str20 = str21;
                         str15 = str9;
@@ -293,14 +293,14 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 14:
                         str9 = str15;
-                        str14 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 14, n2.f31089a, str14);
                         i10 |= 16384;
                         str20 = str21;
                         str15 = str9;
                         break;
                     case 15:
                         str9 = str15;
-                        str16 = (String) b10.n(serialDescriptor, 15, n2.f31041a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 15, n2.f31089a, str16);
                         i11 = PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i10 |= i11;
                         str20 = str21;
@@ -308,7 +308,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbed$$serializer impleme
                         break;
                     case 16:
                         str9 = str15;
-                        str17 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 16, n2.f31089a, str17);
                         i11 = 65536;
                         i10 |= i11;
                         str20 = str21;

@@ -15,18 +15,18 @@ public abstract class e0 {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final String f50513a;
+        public final String f50561a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String[] f50514b;
+        public final String[] f50562b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f50515c;
+        public final int f50563c;
 
         public a(String str, String[] strArr, int i10) {
-            this.f50513a = str;
-            this.f50514b = strArr;
-            this.f50515c = i10;
+            this.f50561a = str;
+            this.f50562b = strArr;
+            this.f50563c = i10;
         }
     }
 
@@ -34,22 +34,22 @@ public abstract class e0 {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final boolean f50516a;
+        public final boolean f50564a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f50517b;
+        public final int f50565b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f50518c;
+        public final int f50566c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f50519d;
+        public final int f50567d;
 
         public b(boolean z10, int i10, int i11, int i12) {
-            this.f50516a = z10;
-            this.f50517b = i10;
-            this.f50518c = i11;
-            this.f50519d = i12;
+            this.f50564a = z10;
+            this.f50565b = i10;
+            this.f50566c = i11;
+            this.f50567d = i12;
         }
     }
 
@@ -57,46 +57,46 @@ public abstract class e0 {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f50520a;
+        public final int f50568a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f50521b;
+        public final int f50569b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f50522c;
+        public final int f50570c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f50523d;
+        public final int f50571d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f50524e;
+        public final int f50572e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f50525f;
+        public final int f50573f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f50526g;
+        public final int f50574g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final int f50527h;
+        public final int f50575h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final boolean f50528i;
+        public final boolean f50576i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final byte[] f50529j;
+        public final byte[] f50577j;
 
         public c(int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, boolean z10, byte[] bArr) {
-            this.f50520a = i10;
-            this.f50521b = i11;
-            this.f50522c = i12;
-            this.f50523d = i13;
-            this.f50524e = i14;
-            this.f50525f = i15;
-            this.f50526g = i16;
-            this.f50527h = i17;
-            this.f50528i = z10;
-            this.f50529j = bArr;
+            this.f50568a = i10;
+            this.f50569b = i11;
+            this.f50570c = i12;
+            this.f50571d = i13;
+            this.f50572e = i14;
+            this.f50573f = i15;
+            this.f50574g = i16;
+            this.f50575h = i17;
+            this.f50576i = z10;
+            this.f50577j = bArr;
         }
     }
 

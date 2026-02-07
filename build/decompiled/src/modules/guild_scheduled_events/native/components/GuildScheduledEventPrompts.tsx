@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun65441: for (var _fun65441_ip = 0;;) switch (_fun65441_ip) {
+        _fun65891: for (var _fun65891_ip = 0;;) switch (_fun65891_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.canCreateGuildEvent;
                 var0 = null;
                 if (!var1) {
-                    _fun65441_ip = 294;
-                    continue _fun65441
+                    _fun65891_ip = 296;
+                    continue _fun65891
                 }
             case 87:
                 var3 = _closure1_slot3;
@@ -166,13 +166,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var7)(var5);
                 var1.subtitle = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 294:
+            case 296:
                 return var0;
         }
     };
     var2.ScheduleEventPrompt = var3;
     var1 = function arg0() {
-        _fun65443: for (var _fun65443_ip = 0;;) switch (_fun65443_ip) {
+        _fun65893: for (var _fun65893_ip = 0;;) switch (_fun65893_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.event;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var4)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun65443_ip = 393;
-                    continue _fun65443
+                    _fun65893_ip = 395;
+                    continue _fun65893
                 }
             case 110:
                 var3 = _closure1_slot3;
@@ -274,10 +274,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.bind(var8)(var6, var5);
                 var1.subtitle = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 393:
+            case 395:
                 return var0;
         }
     };
     var2.StartEventPrompt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8117, 5383, 8123, 8206, 1234, 3134, 3047, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8161, 5430, 8167, 8250, 1234, 3134, 3047, 2]);

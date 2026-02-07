@@ -3,27 +3,27 @@ package net.time4j.history;
 public final class h implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j f39403d;
+    private final j f39451d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f39404e;
+    private final int f39452e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f39405i;
+    private final int f39453i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f39406o;
+    private final int f39454o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(j jVar, int i10, int i11, int i12) {
-        this.f39403d = jVar;
-        this.f39404e = i10;
-        this.f39405i = i11;
-        this.f39406o = i12;
+        this.f39451d = jVar;
+        this.f39452e = i10;
+        this.f39453i = i11;
+        this.f39454o = i12;
     }
 
     public static h i(j jVar, int i10, int i11, int i12) {
-        return j(jVar, i10, i11, i12, vt.a.DUAL_DATING, o.f39430d);
+        return j(jVar, i10, i11, i12, vt.a.DUAL_DATING, o.f39478d);
     }
 
     public static h j(j jVar, int i10, int i11, int i12, vt.a aVar, o oVar) {
@@ -89,8 +89,8 @@ public final class h implements Comparable {
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(h hVar) {
-        int a10 = this.f39403d.a(this.f39404e);
-        int a11 = hVar.f39403d.a(hVar.f39404e);
+        int a10 = this.f39451d.a(this.f39452e);
+        int a11 = hVar.f39451d.a(hVar.f39452e);
         if (a10 < a11) {
             return -1;
         }
@@ -111,11 +111,11 @@ public final class h implements Comparable {
     }
 
     public int d() {
-        return this.f39406o;
+        return this.f39454o;
     }
 
     public j e() {
-        return this.f39403d;
+        return this.f39451d;
     }
 
     public boolean equals(Object obj) {
@@ -124,7 +124,7 @@ public final class h implements Comparable {
         }
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f39403d == hVar.f39403d && this.f39404e == hVar.f39404e && this.f39405i == hVar.f39405i && this.f39406o == hVar.f39406o) {
+            if (this.f39451d == hVar.f39451d && this.f39452e == hVar.f39452e && this.f39453i == hVar.f39453i && this.f39454o == hVar.f39454o) {
                 return true;
             }
         }
@@ -132,11 +132,11 @@ public final class h implements Comparable {
     }
 
     public int f() {
-        return this.f39405i;
+        return this.f39453i;
     }
 
     public int g() {
-        return this.f39404e;
+        return this.f39452e;
     }
 
     public int h(o oVar) {
@@ -144,14 +144,14 @@ public final class h implements Comparable {
     }
 
     public int hashCode() {
-        int i10 = (this.f39404e * 1000) + (this.f39405i * 32) + this.f39406o;
-        if (this.f39403d == j.AD) {
+        int i10 = (this.f39452e * 1000) + (this.f39453i * 32) + this.f39454o;
+        if (this.f39451d == j.AD) {
             return i10;
         }
         return -i10;
     }
 
     public String toString() {
-        return k(this.f39403d, this.f39404e, this.f39405i, this.f39406o);
+        return k(this.f39451d, this.f39452e, this.f39453i, this.f39454o);
     }
 }

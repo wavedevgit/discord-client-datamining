@@ -5,13 +5,13 @@ import org.jetbrains.annotations.NotNull;
 public class AnnotatedImpl implements Annotated {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Annotations f32341d;
+    private final Annotations f32389d;
 
     public AnnotatedImpl(@NotNull Annotations annotations) {
         if (annotations == null) {
             a(0);
         }
-        this.f32341d = annotations;
+        this.f32389d = annotations;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -39,7 +39,7 @@ public class AnnotatedImpl implements Annotated {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public Annotations getAnnotations() {
-        Annotations annotations = this.f32341d;
+        Annotations annotations = this.f32389d;
         if (annotations == null) {
             a(1);
         }

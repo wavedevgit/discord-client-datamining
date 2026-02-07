@@ -1,150 +1,260 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = metroImportDefault;
+    var0 = require;
     var _closure1_slot0 = var0;
     var0 = dependencyMap;
     var _closure1_slot1 = var0;
     var0 = function arg0() {
-        _fun38503: for (var _fun38503_ip = 0;;) switch (_fun38503_ip) {
+        _fun38515: for (var _fun38515_ip = 0;;) switch (_fun38515_ip) {
             case 0:
-                var1 = 16;
-                var0 = arg0;
-                var2 = var1 & var0;
+                var3 = arg0;
+                var1 = var3.byteLength;
+                var0 = 6;
+                if (!(!(var0 > var1))) {
+                    _fun38515_ip = 68;
+                    continue _fun38515
+                }
+            case 16:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.getStringFromDataView;
+                var0 = 3;
+                var1 = var1.bind(var2)(var3, var0, var0);
                 var0 = {};
-                var1 = 0;
-                if (!var2) {
-                    _fun38503_ip = 20;
-                    continue _fun38503
-                }
-            case 17:
-                var1 = 1;
-            case 20:
                 var0.value = var1;
-                var1 = 'No';
-                if (!var2) {
-                    _fun38503_ip = 39;
-                    continue _fun38503
-                }
-            case 33:
-                var1 = 'Yes';
-            case 39:
                 var0.description = var1;
+                return var0;
+            case 68:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot2 = var0;
+    var0 = function arg0() {
+        _fun38516: for (var _fun38516_ip = 0;;) switch (_fun38516_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = var3.byteLength;
+                var0 = 8;
+                if (!(!(var0 > var1))) {
+                    _fun38516_ip = 72;
+                    continue _fun38516
+                }
+            case 16:
+                var2 = var3.getUint16;
+                var1 = 6;
+                var0 = true;
+                var4 = var2.bind(var3)(var1, var0);
+                var0 = {};
+                var0.value = var4;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = 'px';
+                var1 = var3.bind(var2)(var4, var1);
+                var0.description = var1;
+                return var0;
+            case 72:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot3 = var0;
+    var0 = function arg0() {
+        _fun38517: for (var _fun38517_ip = 0;;) switch (_fun38517_ip) {
+            case 0:
+                var3 = arg0;
+                var1 = var3.byteLength;
+                var0 = 10;
+                if (!(!(var0 > var1))) {
+                    _fun38517_ip = 72;
+                    continue _fun38517
+                }
+            case 16:
+                var2 = var3.getUint16;
+                var1 = 8;
+                var0 = true;
+                var4 = var2.bind(var3)(var1, var0);
+                var0 = {};
+                var0.value = var4;
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = 'px';
+                var1 = var3.bind(var2)(var4, var1);
+                var0.description = var1;
+                return var0;
+            case 72:
+                var0 = undefined;
                 return var0;
         }
     };
     var _closure1_slot4 = var0;
     var0 = function arg0() {
-        _fun38504: for (var _fun38504_ip = 0;;) switch (_fun38504_ip) {
+        _fun38518: for (var _fun38518_ip = 0;;) switch (_fun38518_ip) {
             case 0:
-                var1 = 2;
-                var0 = arg0;
-                var2 = var1 & var0;
+                var2 = arg0;
+                var1 = var2.byteLength;
+                var0 = 11;
+                if (!(!(var0 > var1))) {
+                    _fun38518_ip = 75;
+                    continue _fun38518
+                }
+            case 16:
+                var1 = var2.getUint8;
+                var0 = 10;
+                var1 = var1.bind(var2)(var0);
+                var0 = 128;
+                var1 = var0 & var1;
+                var0 = 7;
+                var3 = var1 >>> var0;
                 var0 = {};
-                var1 = 0;
-                if (!var2) {
-                    _fun38504_ip = 20;
-                    continue _fun38504
-                }
-            case 17:
-                var1 = 1;
-            case 20:
-                var0.value = var1;
+                var0.value = var3;
                 var1 = 'No';
-                if (!var2) {
-                    _fun38504_ip = 39;
-                    continue _fun38504
+                var2 = 1;
+                if (!(var2 === var3)) {
+                    _fun38518_ip = 69;
+                    continue _fun38518
                 }
-            case 33:
+            case 63:
                 var1 = 'Yes';
-            case 39:
+            case 69:
                 var0.description = var1;
+                return var0;
+            case 75:
+                var0 = undefined;
                 return var0;
         }
     };
     var _closure1_slot5 = var0;
-    var0 = function arg0, arg1() {
-        var5 = arg0;
-        var6 = arg1;
-        var4 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var0 = 0;
-        var1 = var7[var0];
-        var3 = undefined;
-        var2 = var4.bind(var3)(var1);
-        var1 = var2.getByteAt;
-        var8 = var1.bind(var2)(var5, var6);
-        var1 = var7[var0];
-        var10 = var4.bind(var3)(var1);
-        var9 = var10.getByteAt;
-        var1 = 1;
-        var2 = var6 + var1;
-        var9 = var9.bind(var10)(var5, var2);
-        var2 = 256;
-        var2 = var2 * var9;
-        var2 = var8 + var2;
-        var0 = var7[var0];
-        var4 = var4.bind(var3)(var0);
-        var3 = var4.getByteAt;
-        var0 = 2;
-        var0 = var6 + var0;
-        var3 = var3.bind(var4)(var5, var0);
-        var0 = 65536;
-        var0 = var0 * var3;
-        var0 = var2 + var0;
-        var2 = var0 + var1;
-        var0 = {};
-        var0.value = var2;
-        var1 = 'px';
-        var1 = var2 + var1;
-        var0.description = var1;
-        return var0;
+    var0 = function arg0() {
+        _fun38519: for (var _fun38519_ip = 0;;) switch (_fun38519_ip) {
+            case 0:
+                var2 = arg0;
+                var1 = var2.byteLength;
+                var0 = 11;
+                if (!(!(var0 > var1))) {
+                    _fun38519_ip = 107;
+                    continue _fun38519
+                }
+            case 16:
+                var1 = var2.getUint8;
+                var0 = 10;
+                var1 = var1.bind(var2)(var0);
+                var0 = 112;
+                var2 = var0 & var1;
+                var1 = 1;
+                var0 = 4;
+                var0 = var2 >>> var0;
+                var5 = var1 + var0;
+                var0 = {};
+                var0.value = var5;
+                var4 = 'bits';
+                if (!(var1 === var5)) {
+                    _fun38519_ip = 71;
+                    continue _fun38519
+                }
+            case 65:
+                var4 = 'bit';
+            case 71:
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = ' ';
+                var1 = var3.bind(var2)(var5, var1, var4);
+                var0.description = var1;
+                return var0;
+            case 107:
+                var0 = undefined;
+                return var0;
+        }
     };
     var _closure1_slot6 = var0;
+    var0 = function arg0() {
+        _fun38520: for (var _fun38520_ip = 0;;) switch (_fun38520_ip) {
+            case 0:
+                var2 = arg0;
+                var1 = var2.byteLength;
+                var0 = 11;
+                if (!(!(var0 > var1))) {
+                    _fun38520_ip = 100;
+                    continue _fun38520
+                }
+            case 16:
+                var1 = var2.getUint8;
+                var0 = 10;
+                var1 = var1.bind(var2)(var0);
+                var0 = 7;
+                var0 = var0 & var1;
+                var1 = 1;
+                var5 = var1 + var0;
+                var0 = {};
+                var0.value = var5;
+                var4 = 'bits';
+                if (!(var1 === var5)) {
+                    _fun38520_ip = 64;
+                    continue _fun38520
+                }
+            case 58:
+                var4 = 'bit';
+            case 64:
+                var1 = global;
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var2 = '';
+                var1 = ' ';
+                var1 = var3.bind(var2)(var5, var1, var4);
+                var0.description = var1;
+                return var0;
+            case 100:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var2 = {};
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function arg0, arg1() {
-        var4 = arg0;
-        var5 = arg1;
+    var2 = function arg0() {
+        var3 = arg0;
         var0 = {};
-        var6 = _closure1_slot0;
-        var3 = _closure1_slot1;
-        var2 = 0;
-        var2 = var3[var2];
-        var3 = undefined;
-        var6 = var6.bind(var3)(var2);
-        var2 = var6.getByteAt;
-        var6 = var2.bind(var6)(var4, var5);
-        var2 = _closure1_slot4;
-        var2 = var2.bind(var3)(var6);
-        var0.Alpha = var2;
-        var2 = _closure1_slot5;
-        var2 = var2.bind(var3)(var6);
-        var0.Animation = var2;
-        var2 = _closure1_slot6;
-        var6 = _closure1_slot2;
-        var6 = var5 + var6;
-        var6 = var2.bind(var3)(var4, var6);
-        var0.ImageWidth = var6;
-        var1 = _closure1_slot3;
-        var1 = var5 + var1;
-        var1 = var2.bind(var3)(var4, var1);
-        var0.ImageHeight = var1;
+        var4 = _closure1_slot2;
+        var2 = undefined;
+        var4 = var4.bind(var2)(var3);
+        var0['GIF Version'] = var4;
+        var4 = _closure1_slot3;
+        var4 = var4.bind(var2)(var3);
+        var0['Image Width'] = var4;
+        var4 = _closure1_slot4;
+        var4 = var4.bind(var2)(var3);
+        var0['Image Height'] = var4;
+        var4 = _closure1_slot5;
+        var4 = var4.bind(var2)(var3);
+        var0['Global Color Map'] = var4;
+        var4 = _closure1_slot7;
+        var4 = var4.bind(var2)(var3);
+        var0['Bits Per Pixel'] = var4;
+        var1 = _closure1_slot6;
+        var1 = var1.bind(var2)(var3);
+        var0['Color Resolution Depth'] = var1;
         return var0;
     };
     var0.read = var2;
-    var2 = 4;
-    var _closure1_slot2 = var2;
-    var2 = 7;
-    var _closure1_slot3 = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4183]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4165]);

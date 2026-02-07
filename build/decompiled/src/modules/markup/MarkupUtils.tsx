@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var0.Object;
     var3 = var6.defineProperty;
     var1 = {};
-    var9 = true;
-    var1.value = var9;
+    var12 = true;
+    var1.value = var12;
     var0 = '__esModule';
     var0 = var3.bind(var6)(var2, var0, var1);
     var24 = ['url', 'autolink', 'link', 'mailto', 'tel'];
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4[var19];
     var8 = var20.bind(var0)(var3);
     var3 = {};
-    var3.enableBuildOverrides = var9;
+    var3.enableBuildOverrides = var12;
     var8 = var8.bind(var0)(var3);
     var3 = new Array(1);
     var3[0] = var8;
@@ -67,9 +67,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var6.RULES;
     var6 = var4[var19];
     var6 = var20.bind(var0)(var6);
-    var12 = var6.bind(var0)(var18);
+    var14 = var6.bind(var0)(var18);
     var6 = new Array(1);
-    var6[0] = var12;
+    var6[0] = var14;
     var6 = var21.bind(var0)(var10, var6);
     var25 = 'paragraph';
     var23 = 'newline';
@@ -83,8 +83,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var30 = var6;
     var29 = var18;
     var10 = copyDataProperties(var30, var29);
-    var12 = 'bottom';
+    var15 = 'bottom';
     var10 = 'emojiTooltipPosition';
+    var6[var10] = var15;
+    var10 = 'shouldCloseDefaultModals';
+    var6[var10] = var12;
+    var10 = 'shouldStopPropagation';
     var6[var10] = var12;
     var9 = var9.bind(var0)(var6);
     var6 = new Array(2);
@@ -346,4 +350,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4785, 4786, 3941, 22, 4868, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4784, 4785, 3940, 22, 4867, 2]);

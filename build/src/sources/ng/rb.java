@@ -6,7 +6,7 @@ import yi.c;
 final class rb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final rb f40236a = new rb();
+    static final rb f40284a = new rb();
 
     static {
         c.b a10 = yi.c.a("pipelineNamespace");

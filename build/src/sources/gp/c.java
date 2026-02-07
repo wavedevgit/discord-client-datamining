@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f25437d = new c("Dg1", 0);
+    public static final c f25485d = new c("Dg1", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f25438e = new c("Dg2", 1);
+    public static final c f25486e = new c("Dg2", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f25439i = new c("Dg14", 2);
+    public static final c f25487i = new c("Dg14", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f25440o = new c("Sod", 3);
+    public static final c f25488o = new c("Sod", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ c[] f25441p;
+    private static final /* synthetic */ c[] f25489p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f25442q;
+    private static final /* synthetic */ EnumEntries f25490q;
 
     static {
         c[] a10 = a();
-        f25441p = a10;
-        f25442q = xr.a.a(a10);
+        f25489p = a10;
+        f25490q = xr.a.a(a10);
     }
 
     private c(String str, int i10) {
     }
 
     private static final /* synthetic */ c[] a() {
-        return new c[]{f25437d, f25438e, f25439i, f25440o};
+        return new c[]{f25485d, f25486e, f25487i, f25488o};
     }
 
     public static c valueOf(String str) {
@@ -42,6 +42,6 @@ public final class c {
     }
 
     public static c[] values() {
-        return (c[]) f25441p.clone();
+        return (c[]) f25489p.clone();
     }
 }

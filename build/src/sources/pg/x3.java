@@ -5,44 +5,44 @@ import yi.c;
 final class x3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x3 f44894a = new x3();
+    static final x3 f44942a = new x3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44895b;
+    private static final yi.c f44943b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44896c;
+    private static final yi.c f44944c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44897d;
+    private static final yi.c f44945d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44898e;
+    private static final yi.c f44946e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f44899f;
+    private static final yi.c f44947f;
 
     static {
         c.b a10 = yi.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44895b = a10.b(s1Var.b()).a();
+        f44943b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("hasResult");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44896c = a11.b(s1Var2.b()).a();
+        f44944c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("isColdCall");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44897d = a12.b(s1Var3.b()).a();
+        f44945d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("imageInfo");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44898e = a13.b(s1Var4.b()).a();
+        f44946e = a13.b(s1Var4.b()).a();
         c.b a14 = yi.c.a("detectorOptions");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44899f = a14.b(s1Var5.b()).a();
+        f44947f = a14.b(s1Var5.b()).a();
     }
 
     private x3() {

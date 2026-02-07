@@ -32,28 +32,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/low_performance_mode/LowPerformanceModeActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89024: for (var _fun89024_ip = 0;;) switch (_fun89024_ip) {
+        _fun89504: for (var _fun89504_ip = 0;;) switch (_fun89504_ip) {
             case 0:
                 var4 = arg0;
                 var0 = !var4;
                 if (!var0) {
-                    _fun89024_ip = 21;
-                    continue _fun89024
+                    _fun89504_ip = 21;
+                    continue _fun89504
                 }
             case 9:
                 var1 = _closure1_slot2;
                 var0 = var1.enabled;
             case 21:
                 if (!var0) {
-                    _fun89024_ip = 82;
-                    continue _fun89024
+                    _fun89504_ip = 82;
+                    continue _fun89504
                 }
             case 24:
                 var1 = _closure1_slot2;
                 var1 = var1.optedOut;
                 if (var1) {
-                    _fun89024_ip = 82;
-                    continue _fun89024
+                    _fun89504_ip = 82;
+                    continue _fun89504
                 }
             case 40:
                 var3 = _closure1_slot0;

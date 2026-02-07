@@ -10,14 +10,14 @@ import kotlin.ranges.IntRange;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f50423a;
+    private final int f50471a;
 
     public h(int i10) {
-        this.f50423a = i10;
+        this.f50471a = i10;
     }
 
     public final int a(int i10) {
-        int i11 = i10 % this.f50423a;
+        int i11 = i10 % this.f50471a;
         Integer valueOf = Integer.valueOf(i11);
         if (valueOf.intValue() < 0) {
             valueOf = null;
@@ -25,11 +25,11 @@ public final class h {
         if (valueOf != null) {
             return valueOf.intValue();
         }
-        return i11 + this.f50423a;
+        return i11 + this.f50471a;
     }
 
     public final int b() {
-        return this.f50423a;
+        return this.f50471a;
     }
 
     public final boolean c(int i10, int i11, int i12) {
@@ -39,7 +39,7 @@ public final class h {
                 return true;
             }
             return false;
-        } else if ((i10 <= i11 && i11 <= this.f50423a) || (i11 >= 0 && i11 <= a10)) {
+        } else if ((i10 <= i11 && i11 <= this.f50471a) || (i11 >= 0 && i11 <= a10)) {
             return true;
         } else {
             return false;

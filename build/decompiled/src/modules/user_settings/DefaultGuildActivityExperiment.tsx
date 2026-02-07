@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.DefaultGuildActivityExperiment = var4;
     var2.DefaultGuildActivityExperimentNewUsers = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun96731: for (var _fun96731_ip = 0;;) switch (_fun96731_ip) {
+        _fun97220: for (var _fun97220_ip = 0;;) switch (_fun97220_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot2;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var3, var0);
                 var0 = var0.enabled;
                 if (var0) {
-                    _fun96731_ip = 79;
-                    continue _fun96731
+                    _fun97220_ip = 79;
+                    continue _fun97220
                 }
             case 45:
                 var5 = _closure1_slot3;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.enabled;
             case 79:
                 if (var0) {
-                    _fun96731_ip = 139;
-                    continue _fun96731
+                    _fun97220_ip = 139;
+                    continue _fun97220
                 }
             case 82:
                 var5 = _closure1_slot0;
@@ -122,7 +122,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isEligibleForDefaultGuildActivity = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun96732: for (var _fun96732_ip = 0;;) switch (_fun96732_ip) {
+        _fun97221: for (var _fun97221_ip = 0;;) switch (_fun97221_ip) {
             case 0:
                 var2 = arg0;
                 var5 = _closure1_slot2;
@@ -156,15 +156,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GUILD_ACTIVITY_STATUS;
                 var1 = var3.bind(var4)(var1);
                 if (var0) {
-                    _fun96732_ip = 139;
-                    continue _fun96732
+                    _fun97221_ip = 139;
+                    continue _fun97221
                 }
             case 136:
                 var0 = var2;
             case 139:
                 if (var0) {
-                    _fun96732_ip = 145;
-                    continue _fun96732
+                    _fun97221_ip = 145;
+                    continue _fun97221
                 }
             case 142:
                 var0 = var1;
@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForDefaultGuildActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3117, 4279, 4280, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3117, 4278, 4279, 2]);

@@ -300,4 +300,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHANNEL_LIST_STYLES_COMPACT = var3;
     var2.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 5459, 4087, 7420, 6922, 8831, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 5506, 4086, 7464, 6966, 8875, 2]);

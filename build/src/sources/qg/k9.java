@@ -5,7 +5,7 @@ import yi.c;
 final class k9 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k9 f47314a = new k9();
+    static final k9 f47362a = new k9();
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");

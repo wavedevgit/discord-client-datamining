@@ -3,10 +3,10 @@ package hk;
 public abstract class n extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    protected static boolean f26111d;
+    protected static boolean f26159d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected static final StackTraceElement[] f26112e;
+    protected static final StackTraceElement[] f26160e;
 
     static {
         boolean z10;
@@ -15,8 +15,8 @@ public abstract class n extends Exception {
         } else {
             z10 = false;
         }
-        f26111d = z10;
-        f26112e = new StackTraceElement[0];
+        f26159d = z10;
+        f26160e = new StackTraceElement[0];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

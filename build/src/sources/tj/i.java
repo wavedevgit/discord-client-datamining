@@ -7,13 +7,13 @@ import java.util.concurrent.Executor;
 public class i {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f50623b = new Object();
+    private static final Object f50671b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private static i f50624c;
+    private static i f50672c;
 
     /* renamed from: a  reason: collision with root package name */
-    private ui.n f50625a;
+    private ui.n f50673a;
 
     private i() {
     }
@@ -21,22 +21,22 @@ public class i {
     public static i c() {
         boolean z10;
         i iVar;
-        synchronized (f50623b) {
-            if (f50624c != null) {
+        synchronized (f50671b) {
+            if (f50672c != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             gf.q.o(z10, "MlKitContext has not been initialized");
-            iVar = (i) gf.q.l(f50624c);
+            iVar = (i) gf.q.l(f50672c);
         }
         return iVar;
     }
 
     public static i d(Context context) {
         i e10;
-        synchronized (f50623b) {
-            e10 = e(context, yg.l.f55336a);
+        synchronized (f50671b) {
+            e10 = e(context, yg.l.f55384a);
         }
         return e10;
     }
@@ -44,20 +44,20 @@ public class i {
     public static i e(Context context, Executor executor) {
         boolean z10;
         i iVar;
-        synchronized (f50623b) {
-            if (f50624c == null) {
+        synchronized (f50671b) {
+            if (f50672c == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             gf.q.o(z10, "MlKitContext is already initialized");
             i iVar2 = new i();
-            f50624c = iVar2;
+            f50672c = iVar2;
             Context f10 = f(context);
             ui.n e10 = ui.n.k(executor).d(ui.f.c(f10, MlKitComponentDiscoveryService.class).b()).b(ui.c.q(f10, Context.class, new Class[0])).b(ui.c.q(iVar2, i.class, new Class[0])).e();
-            iVar2.f50625a = e10;
+            iVar2.f50673a = e10;
             e10.n(true);
-            iVar = f50624c;
+            iVar = f50672c;
         }
         return iVar;
     }
@@ -72,14 +72,14 @@ public class i {
 
     public Object a(Class cls) {
         boolean z10;
-        if (f50624c == this) {
+        if (f50672c == this) {
             z10 = true;
         } else {
             z10 = false;
         }
         gf.q.o(z10, "MlKitContext has been deleted");
-        gf.q.l(this.f50625a);
-        return this.f50625a.a(cls);
+        gf.q.l(this.f50673a);
+        return this.f50673a.a(cls);
     }
 
     public Context b() {

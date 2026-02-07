@@ -39,10 +39,10 @@ public /* synthetic */ class FirstLayoutData$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        x xVar = x.f31095a;
+        x xVar = x.f31143a;
         KSerializer u10 = gt.a.u(xVar);
         KSerializer u11 = gt.a.u(xVar);
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         return new KSerializer[]{p0Var, u10, p0Var, u11};
     }
 
@@ -59,7 +59,7 @@ public /* synthetic */ class FirstLayoutData$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
-            x xVar = x.f31095a;
+            x xVar = x.f31143a;
             int i13 = b10.i(serialDescriptor, 2);
             d11 = (Double) b10.n(serialDescriptor, 3, xVar, null);
             i11 = i13;
@@ -80,7 +80,7 @@ public /* synthetic */ class FirstLayoutData$$serializer implements h0 {
                     i10 = b10.i(serialDescriptor, 0);
                     i14 |= 1;
                 } else if (o10 == 1) {
-                    d12 = (Double) b10.n(serialDescriptor, 1, x.f31095a, d12);
+                    d12 = (Double) b10.n(serialDescriptor, 1, x.f31143a, d12);
                     i14 |= 2;
                 } else if (o10 == 2) {
                     i15 = b10.i(serialDescriptor, 2);
@@ -88,7 +88,7 @@ public /* synthetic */ class FirstLayoutData$$serializer implements h0 {
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    d13 = (Double) b10.n(serialDescriptor, 3, x.f31095a, d13);
+                    d13 = (Double) b10.n(serialDescriptor, 3, x.f31143a, d13);
                     i14 |= 8;
                 }
             }

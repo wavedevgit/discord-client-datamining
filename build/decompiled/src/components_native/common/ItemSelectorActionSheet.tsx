@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/ItemSelectorActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48044: for (var _fun48044_ip = 0;;) switch (_fun48044_ip) {
+        _fun48540: for (var _fun48540_ip = 0;;) switch (_fun48540_ip) {
             case 0:
                 var0 = arg0;
                 var14 = var0.title;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var9 = var8 != var17;
                 if (!var9) {
-                    _fun48044_ip = 185;
-                    continue _fun48044
+                    _fun48540_ip = 185;
+                    continue _fun48540
                 }
             case 143:
                 var16 = _closure1_slot3;
@@ -163,4 +163,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4900, 4934, 5214, 5212, 4936, 5383, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4899, 4933, 5261, 5259, 4935, 5430, 2]);

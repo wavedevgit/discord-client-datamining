@@ -40,8 +40,8 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        h hVar = h.f31005a;
-        return new KSerializer[]{n2.f31041a, p0.f31057a, gt.a.u(hVar), gt.a.u(hVar)};
+        h hVar = h.f31053a;
+        return new KSerializer[]{n2.f31089a, p0.f31105a, gt.a.u(hVar), gt.a.u(hVar)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
             int i12 = b10.i(serialDescriptor, 1);
-            h hVar = h.f31005a;
+            h hVar = h.f31053a;
             str = m10;
             bool2 = (Boolean) b10.n(serialDescriptor, 3, hVar, null);
             bool = (Boolean) b10.n(serialDescriptor, 2, hVar, null);
@@ -82,12 +82,12 @@ public /* synthetic */ class TapInviteEvent$$serializer implements h0 {
                     i13 = b10.i(serialDescriptor, 1);
                     i14 |= 2;
                 } else if (o10 == 2) {
-                    bool3 = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, bool3);
+                    bool3 = (Boolean) b10.n(serialDescriptor, 2, h.f31053a, bool3);
                     i14 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    bool4 = (Boolean) b10.n(serialDescriptor, 3, h.f31005a, bool4);
+                    bool4 = (Boolean) b10.n(serialDescriptor, 3, h.f31053a, bool4);
                     i14 |= 8;
                 }
             }

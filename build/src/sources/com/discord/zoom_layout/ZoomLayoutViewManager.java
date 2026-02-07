@@ -56,7 +56,7 @@ public final class ZoomLayoutViewManager extends ViewGroupManager<ZoomLayoutFixe
     public static final Unit createViewInstance$lambda$0(ZoomLayoutViewManager zoomLayoutViewManager, ZoomLayoutFixed zoomLayout) {
         Intrinsics.checkNotNullParameter(zoomLayout, "zoomLayout");
         zoomLayoutViewManager.reactEvents.emitEvent(zoomLayout, new OnZoomChangedEvent(zoomLayout.getZoom()));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // com.facebook.react.uimanager.ViewManager

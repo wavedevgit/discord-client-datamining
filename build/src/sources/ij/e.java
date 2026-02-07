@@ -6,25 +6,25 @@ import java.util.concurrent.TimeUnit;
 class e {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final long f26772d = TimeUnit.HOURS.toMillis(24);
+    private static final long f26820d = TimeUnit.HOURS.toMillis(24);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final long f26773e = TimeUnit.MINUTES.toMillis(30);
+    private static final long f26821e = TimeUnit.MINUTES.toMillis(30);
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f26774a = i.c();
+    private final i f26822a = i.c();
 
     /* renamed from: b  reason: collision with root package name */
-    private long f26775b;
+    private long f26823b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f26776c;
+    private int f26824c;
 
     private synchronized long a(int i10) {
         if (!c(i10)) {
-            return f26772d;
+            return f26820d;
         }
-        return (long) Math.min(Math.pow(2.0d, this.f26776c) + this.f26774a.e(), f26773e);
+        return (long) Math.min(Math.pow(2.0d, this.f26824c) + this.f26822a.e(), f26821e);
     }
 
     private static boolean c(int i10) {
@@ -45,13 +45,13 @@ class e {
     }
 
     private synchronized void e() {
-        this.f26776c = 0;
+        this.f26824c = 0;
     }
 
     public synchronized boolean b() {
         boolean z10;
-        if (this.f26776c != 0) {
-            if (this.f26774a.a() <= this.f26775b) {
+        if (this.f26824c != 0) {
+            if (this.f26822a.a() <= this.f26823b) {
                 z10 = false;
             }
         }
@@ -64,7 +64,7 @@ class e {
             e();
             return;
         }
-        this.f26776c++;
-        this.f26775b = this.f26774a.a() + a(i10);
+        this.f26824c++;
+        this.f26823b = this.f26822a.a() + a(i10);
     }
 }

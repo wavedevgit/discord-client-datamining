@@ -5,8 +5,8 @@ import java.util.concurrent.Executor;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Executor f55336a = new l0();
+    public static final Executor f55384a = new l0();
 
     /* renamed from: b  reason: collision with root package name */
-    static final Executor f55337b = new k0();
+    static final Executor f55385b = new k0();
 }

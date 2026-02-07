@@ -5,13 +5,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int[] f52101a = new int[0];
+    public static final int[] f52149a = new int[0];
 
     /* renamed from: b  reason: collision with root package name */
-    public static final long[] f52102b = new long[0];
+    public static final long[] f52150b = new long[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Object[] f52103c = new Object[0];
+    public static final Object[] f52151c = new Object[0];
 
     public static final int a(int[] array, int i10, int i11) {
         Intrinsics.checkNotNullParameter(array, "array");

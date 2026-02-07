@@ -3,91 +3,91 @@ package qg;
 public final class ki {
 
     /* renamed from: a  reason: collision with root package name */
-    private String f47333a;
+    private String f47381a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f47334b;
+    private String f47382b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f47335c;
+    private String f47383c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f47336d;
+    private String f47384d;
 
     /* renamed from: e  reason: collision with root package name */
-    private m0 f47337e;
+    private m0 f47385e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f47338f;
+    private String f47386f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Boolean f47339g;
+    private Boolean f47387g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Boolean f47340h;
+    private Boolean f47388h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f47341i;
+    private Boolean f47389i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Integer f47342j;
+    private Integer f47390j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Integer f47343k;
+    private Integer f47391k;
 
     public final ki b(String str) {
-        this.f47333a = str;
+        this.f47381a = str;
         return this;
     }
 
     public final ki c(String str) {
-        this.f47334b = str;
+        this.f47382b = str;
         return this;
     }
 
     public final ki d(Integer num) {
         num.getClass();
-        this.f47342j = 10;
+        this.f47390j = 10;
         return this;
     }
 
     public final ki e(Boolean bool) {
-        this.f47339g = bool;
+        this.f47387g = bool;
         return this;
     }
 
     public final ki f(Boolean bool) {
-        this.f47341i = bool;
+        this.f47389i = bool;
         return this;
     }
 
     public final ki g(Boolean bool) {
-        this.f47340h = bool;
+        this.f47388h = bool;
         return this;
     }
 
     public final ki h(m0 m0Var) {
-        this.f47337e = m0Var;
+        this.f47385e = m0Var;
         return this;
     }
 
     public final ki i(String str) {
-        this.f47338f = str;
+        this.f47386f = str;
         return this;
     }
 
     public final ki j(String str) {
-        this.f47335c = str;
+        this.f47383c = str;
         return this;
     }
 
     public final ki k(Integer num) {
-        this.f47343k = num;
+        this.f47391k = num;
         return this;
     }
 
     public final ki l(String str) {
-        this.f47336d = str;
+        this.f47384d = str;
         return this;
     }
 

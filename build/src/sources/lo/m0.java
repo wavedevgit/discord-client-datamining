@@ -42,28 +42,28 @@ import wn.g;
 public final class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f36460a;
+    private final Context f36508a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c1 f36461b;
+    private final c1 f36509b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e0.a f36462c;
+    private final e0.a f36510c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a.b f36463d;
+    private final a.b f36511d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b.a f36464e;
+    private final b.a f36512e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final z.a f36465f;
+    private final z.a f36513f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final g.a f36466g;
+    private final g.a f36514g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final zp.b f36467h;
+    private final zp.b f36515h;
 
     public m0(Context applicationContext, c1 permissionRequestWorkflow, e0.a governmentIdAnalyzeWorkerFactory, a.b governmentIdHintWorkerFactory, b.a webRtcWorkerFactory, z.a cameraXControllerFactory, g.a camera2ManagerFactoryFactory, zp.b navigationStateManager) {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
@@ -74,14 +74,14 @@ public final class m0 {
         Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
         Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
-        this.f36460a = applicationContext;
-        this.f36461b = permissionRequestWorkflow;
-        this.f36462c = governmentIdAnalyzeWorkerFactory;
-        this.f36463d = governmentIdHintWorkerFactory;
-        this.f36464e = webRtcWorkerFactory;
-        this.f36465f = cameraXControllerFactory;
-        this.f36466g = camera2ManagerFactoryFactory;
-        this.f36467h = navigationStateManager;
+        this.f36508a = applicationContext;
+        this.f36509b = permissionRequestWorkflow;
+        this.f36510c = governmentIdAnalyzeWorkerFactory;
+        this.f36511d = governmentIdHintWorkerFactory;
+        this.f36512e = webRtcWorkerFactory;
+        this.f36513f = cameraXControllerFactory;
+        this.f36514g = camera2ManagerFactoryFactory;
+        this.f36515h = navigationStateManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -95,7 +95,7 @@ public final class m0 {
         } else {
             lVar = null;
         }
-        if (lVar != null && lVar.H() != ro.t.f49030d) {
+        if (lVar != null && lVar.H() != ro.t.f49078d) {
             bn.h c12 = aVar.c();
             c10 = bn.b0.c(null, new Function1(aVar2) { // from class: lo.b0
                 @Override // kotlin.jvm.functions.Function1
@@ -106,9 +106,9 @@ public final class m0 {
                 }
             }, 1, null);
             c12.d(c10);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -118,7 +118,7 @@ public final class m0 {
             aVar.a();
         }
         action.e(new n1.j(null, null, null, null, 0, ((n1) action.c()).f(), null, null, 223, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void M(g3.a aVar, final n1 n1Var, final k.a aVar2, final jo.q qVar, final ro.k kVar, final un.v vVar, final d0.b bVar) {
@@ -139,7 +139,7 @@ public final class m0 {
             if (aVar3 == null) {
                 return;
             }
-            final n1.l lVar = new n1.l(aVar3, n1Var.o(), qVar, b4.I(aVar, aVar3.a()), n1Var.l(), n1Var.j(), n1Var.e(), ro.t.f49032i, aVar.v().d(), null, false, false, n1Var.f(), null, new Function0() { // from class: lo.s
+            final n1.l lVar = new n1.l(aVar3, n1Var.o(), qVar, b4.I(aVar, aVar3.a()), n1Var.l(), n1Var.j(), n1Var.e(), ro.t.f49080i, aVar.v().d(), null, false, false, n1Var.f(), null, new Function0() { // from class: lo.s
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit N;
@@ -173,7 +173,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -190,13 +190,13 @@ public final class m0 {
         n1.l lVar2 = lVar;
         if (lVar2 != null) {
             if (kVar.d()) {
-                tVar = ro.t.f49031e;
+                tVar = ro.t.f49079e;
             } else {
-                tVar = ro.t.f49032i;
+                tVar = ro.t.f49080i;
             }
             action.e(n1.l.u(lVar2, null, null, null, null, null, 0, null, tVar, null, null, false, false, null, null, null, 32639, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -211,10 +211,10 @@ public final class m0 {
         }
         h4.a aVar2 = aVar;
         if (aVar2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         action.e(new n1.g(aVar2, ((n1) action.c()).o(), qVar, bVar, ((n1) action.c()).l(), ((n1) action.c()).j(), lVar, vVar, null, false, ((n1) action.c()).f(), 768, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -243,22 +243,22 @@ public final class m0 {
         }
         n1.d dVar3 = dVar2;
         if (dVar3 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         action.e(n1.d.r(dVar3, null, null, null, null, null, 0, null, null, dVar, SetSpanOperation.SPAN_MAX_PRIORITY, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit T(bn.h hVar) {
-        hVar.d(g3.b.C0429b.f30287a);
-        return Unit.f32008a;
+        hVar.d(g3.b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U(k.a aVar, ro.k kVar) {
         b4.L(aVar, kVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -279,7 +279,7 @@ public final class m0 {
             arrayList2.add(new jo.c0(str, null, 2, null));
         }
         m0Var.M(aVar, dVar, aVar2, t10, kVar, cameraProperties, d0.b.b(w10, arrayList2, null, null, null, null, null, 62, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -296,7 +296,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -310,9 +310,9 @@ public final class m0 {
             dVar2 = null;
         }
         if (dVar2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
-        action.e(new n1.l(dVar.h(), dVar.o(), dVar.t(), b4.I((g3.a) action.b(), dVar.h().a()), dVar2.l(), dVar2.j(), b4.v(action, false), ro.t.f49032i, aVar.v().d(), th2, false, false, dVar2.f(), null, new Function0() { // from class: lo.v
+        action.e(new n1.l(dVar.h(), dVar.o(), dVar.t(), b4.I((g3.a) action.b(), dVar.h().a()), dVar2.l(), dVar2.j(), b4.v(action, false), ro.t.f49080i, aVar.v().d(), th2, false, false, dVar2.f(), null, new Function0() { // from class: lo.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit Y;
@@ -320,7 +320,7 @@ public final class m0 {
                 return Y;
             }
         }, 11264, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -336,7 +336,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -353,19 +353,19 @@ public final class m0 {
         n1.l lVar2 = lVar;
         if (lVar2 != null) {
             if (kVar.d()) {
-                tVar = ro.t.f49031e;
+                tVar = ro.t.f49079e;
             } else {
-                tVar = ro.t.f49032i;
+                tVar = ro.t.f49080i;
             }
             action.e(n1.l.u(lVar2, null, null, null, null, null, 0, null, tVar, null, null, false, false, null, null, null, 32639, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit a0(m0 m0Var, k.a aVar, g3.a aVar2, ro.k kVar) {
-        b4.N(m0Var.f36460a, aVar, aVar2, kVar.c(aVar2));
-        return Unit.f32008a;
+        b4.N(m0Var.f36508a, aVar, aVar2, kVar.c(aVar2));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -382,7 +382,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -392,7 +392,7 @@ public final class m0 {
         if (n1Var instanceof n1.l) {
             action.e(n1.l.u((n1.l) n1Var, null, null, null, null, null, 0, null, null, null, null, false, false, null, null, null, 32255, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -404,20 +404,20 @@ public final class m0 {
         for (String str : list) {
             arrayList.add(new jo.c0(str, null, 2, null));
         }
-        m0Var.M(aVar, lVar, aVar2, lVar.v(), kVar, cameraProperties, new d0.b(arrayList, b4.W(lVar.h().a()), jo.r.b(qVar), d0.a.f30032e, null, null, 32, null));
-        return Unit.f32008a;
+        m0Var.M(aVar, lVar, aVar2, lVar.v(), kVar, cameraProperties, new d0.b(arrayList, b4.W(lVar.h().a()), jo.r.b(qVar), d0.a.f30080e, null, null, 32, null));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit f0(bn.h hVar) {
-        hVar.d(g3.b.C0429b.f30287a);
-        return Unit.f32008a;
+        hVar.d(g3.b.C0429b.f30335a);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g0(k.a aVar, ro.k kVar) {
         b4.L(aVar, kVar);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -434,7 +434,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -449,10 +449,10 @@ public final class m0 {
         }
         n1.l lVar2 = lVar;
         if (lVar2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
-        action.e(n1.l.u(lVar2, null, null, null, f5.b.a.f30152e, null, 0, null, null, null, th2, false, false, null, null, null, 32247, null));
-        return Unit.f32008a;
+        action.e(n1.l.u(lVar2, null, null, null, f5.b.a.f30200e, null, 0, null, null, null, th2, false, false, null, null, null, 32247, null));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -468,20 +468,20 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k0(n1.l lVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30151d, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
-        return Unit.f32008a;
+        action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30199d, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l0(m0 m0Var, k.a aVar, g3.a aVar2, ro.k kVar) {
-        b4.N(m0Var.f36460a, aVar, aVar2, kVar.c(aVar2));
-        return Unit.f32008a;
+        b4.N(m0Var.f36508a, aVar, aVar2, kVar.c(aVar2));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -537,26 +537,26 @@ public final class m0 {
             lVar2 = null;
         }
         if (lVar2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         action.e(new n1.d(lVar.h(), ((n1) action.c()).o(), qVar, bVar, lVar2.l(), lVar2.j(), b4.v(action, false), lVar2.f(), lVar2.D()));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o0(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new g3.b.c(new InternalErrorInfo.NoDiskSpaceErrorInfo(null, 1, null)));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p0(n1.l lVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        if (lVar.E() == f5.b.a.f30153i) {
-            action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30152e, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
+        if (lVar.E() == f5.b.a.f30201i) {
+            action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30200e, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -585,10 +585,10 @@ public final class m0 {
         }
         n1.l lVar2 = lVar;
         if (lVar2 == null) {
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         action.e(n1.l.u(lVar2, null, null, null, null, null, 0, null, null, null, null, false, false, null, dVar, null, 24575, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -609,34 +609,34 @@ public final class m0 {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t0(n1.l lVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        if (lVar.E() == f5.b.a.f30153i) {
-            action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30152e, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
+        if (lVar.E() == f5.b.a.f30201i) {
+            action.e(n1.l.u(lVar, null, null, null, f5.b.a.f30200e, null, 0, null, null, null, null, false, false, null, null, null, 32759, null));
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void u0(final g3.a aVar, final n1.l lVar, final k.a aVar2, final tq.a aVar3) {
-        bn.w.l(aVar2, this.f36464e.a(aVar.v().d()), Reflection.typeOf(sq.b.class), "", new Function1(aVar3, lVar, aVar, aVar2) { // from class: lo.h
+        bn.w.l(aVar2, this.f36512e.a(aVar.v().d()), Reflection.typeOf(sq.b.class), "", new Function1(aVar3, lVar, aVar, aVar2) { // from class: lo.h
 
             /* renamed from: e  reason: collision with root package name */
-            public final /* synthetic */ n1.l f36445e;
+            public final /* synthetic */ n1.l f36493e;
 
             /* renamed from: i  reason: collision with root package name */
-            public final /* synthetic */ g3.a f36446i;
+            public final /* synthetic */ g3.a f36494i;
 
             /* renamed from: o  reason: collision with root package name */
-            public final /* synthetic */ k.a f36447o;
+            public final /* synthetic */ k.a f36495o;
 
             {
-                this.f36445e = lVar;
-                this.f36446i = aVar;
-                this.f36447o = aVar2;
+                this.f36493e = lVar;
+                this.f36494i = aVar;
+                this.f36495o = aVar2;
             }
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 bn.r v02;
-                v02 = m0.v0(m0.this, null, this.f36445e, this.f36446i, this.f36447o, (b.AbstractC0650b) obj);
+                v02 = m0.v0(m0.this, null, this.f36493e, this.f36494i, this.f36495o, (b.AbstractC0650b) obj);
                 return v02;
             }
         });
@@ -647,41 +647,41 @@ public final class m0 {
         bn.r c10;
         bn.r c11;
         Intrinsics.checkNotNullParameter(it, "it");
-        final wn.m b10 = wn.j.b(m0Var.f36460a, wn.n.f54014d);
+        final wn.m b10 = wn.j.b(m0Var.f36508a, wn.n.f54062d);
         if (it instanceof b.AbstractC0650b.C0651b) {
             c11 = bn.b0.c(null, new Function1(aVar, m0Var, b10, it, lVar, aVar2, aVar3) { // from class: lo.x
 
                 /* renamed from: d  reason: collision with root package name */
-                public final /* synthetic */ m0 f36490d;
+                public final /* synthetic */ m0 f36538d;
 
                 /* renamed from: e  reason: collision with root package name */
-                public final /* synthetic */ wn.m f36491e;
+                public final /* synthetic */ wn.m f36539e;
 
                 /* renamed from: i  reason: collision with root package name */
-                public final /* synthetic */ b.AbstractC0650b f36492i;
+                public final /* synthetic */ b.AbstractC0650b f36540i;
 
                 /* renamed from: o  reason: collision with root package name */
-                public final /* synthetic */ n1.l f36493o;
+                public final /* synthetic */ n1.l f36541o;
 
                 /* renamed from: p  reason: collision with root package name */
-                public final /* synthetic */ g3.a f36494p;
+                public final /* synthetic */ g3.a f36542p;
 
                 /* renamed from: q  reason: collision with root package name */
-                public final /* synthetic */ k.a f36495q;
+                public final /* synthetic */ k.a f36543q;
 
                 {
-                    this.f36490d = m0Var;
-                    this.f36491e = b10;
-                    this.f36492i = it;
-                    this.f36493o = lVar;
-                    this.f36494p = aVar2;
-                    this.f36495q = aVar3;
+                    this.f36538d = m0Var;
+                    this.f36539e = b10;
+                    this.f36540i = it;
+                    this.f36541o = lVar;
+                    this.f36542p = aVar2;
+                    this.f36543q = aVar3;
                 }
 
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     Unit w02;
-                    w02 = m0.w0(null, this.f36490d, this.f36491e, this.f36492i, this.f36493o, this.f36494p, this.f36495q, (r.c) obj);
+                    w02 = m0.w0(null, this.f36538d, this.f36539e, this.f36540i, this.f36541o, this.f36542p, this.f36543q, (r.c) obj);
                     return w02;
                 }
             }, 1, null);
@@ -721,17 +721,17 @@ public final class m0 {
             lVar2 = null;
         }
         n1.l lVar3 = lVar2;
-        if (lVar3 != null && lVar3.H() == ro.t.f49030d) {
-            return Unit.f32008a;
+        if (lVar3 != null && lVar3.H() == ro.t.f49078d) {
+            return Unit.f32056a;
         }
         if (lVar3 != null) {
-            action.e(n1.l.u(lVar3, null, null, null, null, null, 0, null, ro.t.f49030d, null, null, false, false, null, null, null, 32639, null));
+            action.e(n1.l.u(lVar3, null, null, null, null, null, 0, null, ro.t.f49078d, null, null, false, false, null, null, null, 32639, null));
         }
         if (aVar != null) {
-            aVar.b(m0Var.f36464e.b());
+            aVar.b(m0Var.f36512e.b());
         }
         if (aVar != null) {
-            aVar.e(m0Var.f36460a);
+            aVar.e(m0Var.f36508a);
         }
         int i13 = 0;
         if (mVar != null && (b13 = mVar.b()) != null && (f11 = b13.f()) != null) {
@@ -767,13 +767,13 @@ public final class m0 {
                 }
             });
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x0(n1.l lVar) {
         lVar.F().invoke();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -789,7 +789,7 @@ public final class m0 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -797,7 +797,7 @@ public final class m0 {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         aVar.a();
         action.e(new n1.j(null, null, null, null, 0, ((n1) action.c()).f(), null, null, 223, null));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final Object Q(final g3.a renderProps, final n1.d renderState, final k.a context, final ro.k videoCaptureHelper, final bn.h sink) {
@@ -807,7 +807,7 @@ public final class m0 {
         Intrinsics.checkNotNullParameter(videoCaptureHelper, "videoCaptureHelper");
         Intrinsics.checkNotNullParameter(sink, "sink");
         c4.c d10 = jo.r.d(renderState.t(), renderState.h().a());
-        bn.w.l(context, this.f36463d.a(renderState.h().a()), Reflection.typeOf(po.a.class), "", new Function1() { // from class: lo.a
+        bn.w.l(context, this.f36511d.a(renderState.h().a()), Reflection.typeOf(po.a.class), "", new Function1() { // from class: lo.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 bn.r R;
@@ -818,10 +818,10 @@ public final class m0 {
         String E = b4.E(renderProps.t(), renderState.h().a(), jo.r.b(renderState.t()), renderState.f());
         String n10 = renderProps.t().n();
         c4.e a10 = renderState.h().a();
-        f5.b.a aVar = f5.b.a.f30151d;
+        f5.b.a aVar = f5.b.a.f30199d;
         f5.d c10 = d10.c();
         qo.e a11 = jo.r.a(renderState.t());
-        zp.a b10 = this.f36467h.b();
+        zp.a b10 = this.f36515h.b();
         List a12 = d10.a().a().a();
         int j10 = renderState.j();
         int m10 = renderProps.m() - 1;
@@ -843,7 +843,7 @@ public final class m0 {
                 U = m0.U(k.a.this, videoCaptureHelper);
                 return U;
             }
-        }, true, a12, renderState, j10, this.f36465f, this.f36466g, new Function2() { // from class: lo.f0
+        }, true, a12, renderState, j10, this.f36513f, this.f36514g, new Function2() { // from class: lo.f0
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit V;
@@ -881,7 +881,7 @@ public final class m0 {
         c4.c d10 = jo.r.d(v10, renderState.h().a());
         String b10 = jo.r.b(v10);
         boolean z10 = v10 instanceof q.a;
-        bn.w.l(context, this.f36462c.a(renderState.h().a(), b10), Reflection.typeOf(jo.e0.class), "", new Function1() { // from class: lo.i0
+        bn.w.l(context, this.f36510c.a(renderState.h().a(), b10), Reflection.typeOf(jo.e0.class), "", new Function1() { // from class: lo.i0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 bn.r m02;
@@ -889,7 +889,7 @@ public final class m0 {
                 return m02;
             }
         });
-        bn.w.l(context, this.f36463d.a(renderState.h().a()), Reflection.typeOf(po.a.class), "", new Function1() { // from class: lo.j0
+        bn.w.l(context, this.f36511d.a(renderState.h().a()), Reflection.typeOf(po.a.class), "", new Function1() { // from class: lo.j0
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 bn.r q02;
@@ -904,7 +904,7 @@ public final class m0 {
             aVar = aVar3;
         } else {
             aVar = aVar3;
-            bn.w.l(context, o.a.b(bn.o.f6917a, kotlin.ranges.d.e(d10.b().a(), 0L), null, 2, null), Reflection.typeOf(bn.o.class, KTypeProjection.f32112c.d(Reflection.typeOf(Unit.class))), d10.e(), new Function1() { // from class: lo.k0
+            bn.w.l(context, o.a.b(bn.o.f6917a, kotlin.ranges.d.e(d10.b().a(), 0L), null, 2, null), Reflection.typeOf(bn.o.class, KTypeProjection.f32160c.d(Reflection.typeOf(Unit.class))), d10.e(), new Function1() { // from class: lo.k0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     bn.r s02;
@@ -915,8 +915,8 @@ public final class m0 {
         }
         ArrayList arrayList = new ArrayList();
         if (renderState.B() != null) {
-            Map f10 = o0.f(qr.v.a(e.a.POSITIVE, this.f36460a.getString(17039370)));
-            String string = this.f36460a.getString(jp.e.f30802k);
+            Map f10 = o0.f(qr.v.a(e.a.POSITIVE, this.f36508a.getString(17039370)));
+            String string = this.f36508a.getString(jp.e.f30850k);
             Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
             arrayList.add(new hn.e(f10, string, null, false, new Function1() { // from class: lo.l0
                 @Override // kotlin.jvm.functions.Function1
@@ -933,7 +933,7 @@ public final class m0 {
         f5.b.a E2 = renderState.E();
         f5.d c11 = d10.c();
         qo.e a11 = jo.r.a(v10);
-        zp.a b11 = this.f36467h.b();
+        zp.a b11 = this.f36515h.b();
         List a12 = d10.a().a().a();
         int j10 = renderState.j();
         Function1 x10 = b4.x(context);
@@ -963,7 +963,7 @@ public final class m0 {
                 g02 = m0.g0(k.a.this, videoCaptureHelper);
                 return g02;
             }
-        }, false, a12, renderState, j10, this.f36465f, this.f36466g, null, new Function1() { // from class: lo.e
+        }, false, a12, renderState, j10, this.f36513f, this.f36514g, null, new Function1() { // from class: lo.e
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit h02;
@@ -986,12 +986,12 @@ public final class m0 {
             }
         }, 0, K, F, null, 165806080, null);
         if (renderState.x()) {
-            c10 = b4.b0(g10, this.f36460a, context, renderProps, true, this.f36461b);
+            c10 = b4.b0(g10, this.f36508a, context, renderProps, true, this.f36509b);
         } else {
             if (renderState.w()) {
                 kVar = videoCaptureHelper;
-                if (kVar.c(renderProps) && rp.f.f(this.f36460a) && renderProps.v().b()) {
-                    c10 = b4.X(g10, this.f36460a, context, renderProps, true, this.f36461b);
+                if (kVar.c(renderProps) && rp.f.f(this.f36508a) && renderProps.v().b()) {
+                    c10 = b4.X(g10, this.f36508a, context, renderProps, true, this.f36509b);
                 } else {
                     aVar2 = context;
                 }
@@ -999,7 +999,7 @@ public final class m0 {
                 aVar2 = context;
                 kVar = videoCaptureHelper;
             }
-            if (kVar.e(renderProps) == aVar4 && renderState.H() == ro.t.f49032i) {
+            if (kVar.e(renderProps) == aVar4 && renderState.H() == ro.t.f49080i) {
                 kVar.b();
                 u0(renderProps, renderState, aVar2, null);
                 c10 = l1.c(g10);

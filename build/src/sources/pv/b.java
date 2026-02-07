@@ -13,14 +13,14 @@ import java.util.regex.Pattern;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f45754a = b();
+    private static final Map f45802a = b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f45755b = Pattern.compile("^&#[Xx]?");
+    private static final Pattern f45803b = Pattern.compile("^&#[Xx]?");
 
     public static String a(String str) {
         int i10;
-        Matcher matcher = f45755b.matcher(str);
+        Matcher matcher = f45803b.matcher(str);
         if (matcher.find()) {
             if (matcher.end() == 2) {
                 i10 = 10;
@@ -37,7 +37,7 @@ public abstract class b {
                 return "�";
             }
         }
-        String str2 = (String) f45754a.get(str.substring(1, str.length() - 1));
+        String str2 = (String) f45802a.get(str.substring(1, str.length() - 1));
         if (str2 != null) {
             return str2;
         }

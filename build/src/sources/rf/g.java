@@ -6,7 +6,7 @@ import yg.k;
 final class g implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f48899a = new g();
+    public static final g f48947a = new g();
 
     g() {
     }

@@ -6,23 +6,23 @@ import kotlin.jvm.internal.Intrinsics;
 final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final j f50436a;
+    private final j f50484a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Date f50437b;
+    private final Date f50485b;
 
     public m(j frameLoader, Date insertedTime) {
         Intrinsics.checkNotNullParameter(frameLoader, "frameLoader");
         Intrinsics.checkNotNullParameter(insertedTime, "insertedTime");
-        this.f50436a = frameLoader;
-        this.f50437b = insertedTime;
+        this.f50484a = frameLoader;
+        this.f50485b = insertedTime;
     }
 
     public final j a() {
-        return this.f50436a;
+        return this.f50484a;
     }
 
     public final Date b() {
-        return this.f50437b;
+        return this.f50485b;
     }
 }

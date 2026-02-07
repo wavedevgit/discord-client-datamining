@@ -51,7 +51,7 @@ public final class i implements c0 {
         @Override // kotlin.jvm.functions.Function4
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
             a((View) obj, (Function2) obj2, obj3, (a0) obj4);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -102,7 +102,7 @@ public final class i implements c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(obj, (a0) obj2);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 

@@ -5,28 +5,28 @@ import java.io.IOException;
 public class LazyFieldLite {
 
     /* renamed from: a  reason: collision with root package name */
-    private ByteString f33960a;
+    private ByteString f34008a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ExtensionRegistryLite f33961b;
+    private ExtensionRegistryLite f34009b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile boolean f33962c;
+    private volatile boolean f34010c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected volatile MessageLite f33963d;
+    protected volatile MessageLite f34011d;
 
     protected void a(MessageLite messageLite) {
-        if (this.f33963d == null) {
+        if (this.f34011d == null) {
             synchronized (this) {
-                if (this.f33963d != null) {
+                if (this.f34011d != null) {
                     return;
                 }
                 try {
-                    if (this.f33960a != null) {
-                        this.f33963d = messageLite.getParserForType().parseFrom(this.f33960a, this.f33961b);
+                    if (this.f34008a != null) {
+                        this.f34011d = messageLite.getParserForType().parseFrom(this.f34008a, this.f34009b);
                     } else {
-                        this.f33963d = messageLite;
+                        this.f34011d = messageLite;
                     }
                 } catch (IOException unused) {
                 }
@@ -35,22 +35,22 @@ public class LazyFieldLite {
     }
 
     public int getSerializedSize() {
-        if (this.f33962c) {
-            return this.f33963d.getSerializedSize();
+        if (this.f34010c) {
+            return this.f34011d.getSerializedSize();
         }
-        return this.f33960a.size();
+        return this.f34008a.size();
     }
 
     public MessageLite getValue(MessageLite messageLite) {
         a(messageLite);
-        return this.f33963d;
+        return this.f34011d;
     }
 
     public MessageLite setValue(MessageLite messageLite) {
-        MessageLite messageLite2 = this.f33963d;
-        this.f33963d = messageLite;
-        this.f33960a = null;
-        this.f33962c = true;
+        MessageLite messageLite2 = this.f34011d;
+        this.f34011d = messageLite;
+        this.f34008a = null;
+        this.f34010c = true;
         return messageLite2;
     }
 }

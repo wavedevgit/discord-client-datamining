@@ -47,7 +47,7 @@ public /* synthetic */ class ChannelNameContentNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ChannelNameContentNode.$childSerializers;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         return new KSerializer[]{gt.a.u(ChannelType.Serializer.INSTANCE), n2Var, gt.a.u(n2Var), lazyArr[3].getValue()};
     }
 
@@ -69,7 +69,7 @@ public /* synthetic */ class ChannelNameContentNode$$serializer implements h0 {
             String m10 = b10.m(serialDescriptor, 1);
             list = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), null);
             channelType = (ChannelType) b10.n(serialDescriptor, 0, ChannelType.Serializer.INSTANCE, null);
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f31041a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f31089a, null);
             i10 = 15;
             str = m10;
         } else {
@@ -89,7 +89,7 @@ public /* synthetic */ class ChannelNameContentNode$$serializer implements h0 {
                     str3 = b10.m(serialDescriptor, 1);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str4 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str4);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

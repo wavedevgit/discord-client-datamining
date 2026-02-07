@@ -61,49 +61,49 @@ import org.webrtc.MediaStreamTrack;
 public abstract class w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f39012a;
+    public static final int f39060a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final String f39013b;
+    public static final String f39061b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final String f39014c;
+    public static final String f39062c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final String f39015d;
+    public static final String f39063d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final String f39016e;
+    public static final String f39064e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final byte[] f39017f;
+    public static final byte[] f39065f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f39018g;
+    private static final Pattern f39066g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Pattern f39019h;
+    private static final Pattern f39067h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Pattern f39020i;
+    private static final Pattern f39068i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Pattern f39021j;
+    private static final Pattern f39069j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static HashMap f39022k;
+    private static HashMap f39070k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String[] f39023l;
+    private static final String[] f39071l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final String[] f39024m;
+    private static final String[] f39072m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final int[] f39025n;
+    private static final int[] f39073n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final int[] f39026o;
+    private static final int[] f39074o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a {
@@ -114,28 +114,28 @@ public abstract class w0 {
 
     static {
         int i10 = Build.VERSION.SDK_INT;
-        f39012a = i10;
+        f39060a = i10;
         String str = Build.DEVICE;
-        f39013b = str;
+        f39061b = str;
         String str2 = Build.MANUFACTURER;
-        f39014c = str2;
+        f39062c = str2;
         String str3 = Build.MODEL;
-        f39015d = str3;
-        f39016e = str + ", " + str3 + ", " + str2 + ", " + i10;
-        f39017f = new byte[0];
-        f39018g = Pattern.compile("(\\d\\d\\d\\d)\\-(\\d\\d)\\-(\\d\\d)[Tt](\\d\\d):(\\d\\d):(\\d\\d)([\\.,](\\d+))?([Zz]|((\\+|\\-)(\\d?\\d):?(\\d\\d)))?");
-        f39019h = Pattern.compile("^(-)?P(([0-9]*)Y)?(([0-9]*)M)?(([0-9]*)D)?(T(([0-9]*)H)?(([0-9]*)M)?(([0-9.]*)S)?)?$");
-        f39020i = Pattern.compile("%([A-Fa-f0-9]{2})");
-        f39021j = Pattern.compile("(?:.*\\.)?isml?(?:/(manifest(.*))?)?", 2);
-        f39023l = new String[]{"alb", "sq", "arm", "hy", "baq", "eu", "bur", "my", "tib", "bo", "chi", "zh", "cze", "cs", "dut", "nl", "ger", "de", "gre", "el", "fre", "fr", "geo", "ka", "ice", "is", "mac", "mk", "mao", "mi", "may", "ms", "per", "fa", "rum", "ro", "scc", "hbs-srp", "slo", "sk", "wel", "cy", StackTraceHelper.ID_KEY, "ms-ind", "iw", "he", "heb", "he", "ji", "yi", "arb", "ar-arb", "in", "ms-ind", "ind", "ms-ind", "nb", "no-nob", "nob", "no-nob", "nn", "no-nno", "nno", "no-nno", "tw", "ak-twi", "twi", "ak-twi", "bs", "hbs-bos", "bos", "hbs-bos", "hr", "hbs-hrv", "hrv", "hbs-hrv", "sr", "hbs-srp", "srp", "hbs-srp", "cmn", "zh-cmn", "hak", "zh-hak", "nan", "zh-nan", "hsn", "zh-hsn"};
-        f39024m = new String[]{"i-lux", "lb", "i-hak", "zh-hak", "i-navajo", "nv", "no-bok", "no-nob", "no-nyn", "no-nno", "zh-guoyu", "zh-cmn", "zh-hakka", "zh-hak", "zh-min-nan", "zh-nan", "zh-xiang", "zh-hsn"};
-        f39025n = new int[]{0, 79764919, 159529838, 222504665, 319059676, 398814059, 445009330, 507990021, 638119352, 583659535, 797628118, 726387553, 890018660, 835552979, 1015980042, 944750013, 1276238704, 1221641927, 1167319070, 1095957929, 1595256236, 1540665371, 1452775106, 1381403509, 1780037320, 1859660671, 1671105958, 1733955601, 2031960084, 2111593891, 1889500026, 1952343757, -1742489888, -1662866601, -1851683442, -1788833735, -1960329156, -1880695413, -2103051438, -2040207643, -1104454824, -1159051537, -1213636554, -1284997759, -1389417084, -1444007885, -1532160278, -1603531939, -734892656, -789352409, -575645954, -646886583, -952755380, -1007220997, -827056094, -898286187, -231047128, -151282273, -71779514, -8804623, -515967244, -436212925, -390279782, -327299027, 881225847, 809987520, 1023691545, 969234094, 662832811, 591600412, 771767749, 717299826, 311336399, 374308984, 453813921, 533576470, 25881363, 88864420, 134795389, 214552010, 2023205639, 2086057648, 1897238633, 1976864222, 1804852699, 1867694188, 1645340341, 1724971778, 1587496639, 1516133128, 1461550545, 1406951526, 1302016099, 1230646740, 1142491917, 1087903418, -1398421865, -1469785312, -1524105735, -1578704818, -1079922613, -1151291908, -1239184603, -1293773166, -1968362705, -1905510760, -2094067647, -2014441994, -1716953613, -1654112188, -1876203875, -1796572374, -525066777, -462094256, -382327159, -302564546, -206542021, -143559028, -97365931, -17609246, -960696225, -1031934488, -817968335, -872425850, -709327229, -780559564, -600130067, -654598054, 1762451694, 1842216281, 1619975040, 1682949687, 2047383090, 2127137669, 1938468188, 2001449195, 1325665622, 1271206113, 1183200824, 1111960463, 1543535498, 1489069629, 1434599652, 1363369299, 622672798, 568075817, 748617968, 677256519, 907627842, 853037301, 1067152940, 995781531, 51762726, 131386257, 177728840, 240578815, 269590778, 349224269, 429104020, 491947555, -248556018, -168932423, -122852000, -60002089, -500490030, -420856475, -341238852, -278395381, -685261898, -739858943, -559578920, -630940305, -1004286614, -1058877219, -845023740, -916395085, -1119974018, -1174433591, -1262701040, -1333941337, -1371866206, -1426332139, -1481064244, -1552294533, -1690935098, -1611170447, -1833673816, -1770699233, -2009983462, -1930228819, -2119160460, -2056179517, 1569362073, 1498123566, 1409854455, 1355396672, 1317987909, 1246755826, 1192025387, 1137557660, 2072149281, 2135122070, 1912620623, 1992383480, 1753615357, 1816598090, 1627664531, 1707420964, 295390185, 358241886, 404320391, 483945776, 43990325, 106832002, 186451547, 266083308, 932423249, 861060070, 1041341759, 986742920, 613929101, 542559546, 756411363, 701822548, -978770311, -1050133554, -869589737, -924188512, -693284699, -764654318, -550540341, -605129092, -475935807, -413084042, -366743377, -287118056, -257573603, -194731862, -114850189, -35218492, -1984365303, -1921392450, -2143631769, -2063868976, -1698919467, -1635936670, -1824608069, -1744851700, -1347415887, -1418654458, -1506661409, -1561119128, -1129027987, -1200260134, -1254728445, -1309196108};
-        f39026o = new int[]{0, 7, 14, 9, 28, 27, 18, 21, 56, 63, 54, 49, 36, 35, 42, 45, 112, 119, 126, 121, 108, 107, 98, 101, 72, 79, 70, 65, 84, 83, 90, 93, 224, 231, 238, 233, 252, 251, 242, 245, 216, 223, 214, 209, 196, 195, 202, 205, 144, 151, 158, 153, 140, 139, 130, 133, 168, 175, 166, 161, 180, 179, 186, 189, 199, 192, 201, 206, 219, 220, 213, 210, SetSpanOperation.SPAN_MAX_PRIORITY, 248, 241, 246, 227, 228, 237, 234, 183, 176, 185, 190, 171, 172, 165, 162, 143, 136, 129, 134, 147, 148, 157, 154, 39, 32, 41, 46, 59, 60, 53, 50, 31, 24, 17, 22, 3, 4, 13, 10, 87, 80, 89, 94, 75, 76, 69, 66, 111, 104, 97, 102, 115, 116, 125, 122, 137, 142, 135, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 149, MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH, 155, 156, 177, 182, 191, 184, 173, 170, 163, 164, 249, 254, 247, 240, 229, 226, 235, 236, 193, 198, 207, androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION, 221, 218, 211, MediaImageViewKt.OBSCURED_IMAGE_MIN_HEIGHT, 105, 110, 103, 96, 117, MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION, 123, 124, 81, 86, 95, 88, 77, 74, 67, 68, 25, 30, 23, 16, 5, 2, 11, 12, 33, 38, 47, 40, 61, 58, 51, 52, 78, 73, 64, 71, 82, 85, 92, 91, 118, 113, 120, 127, 106, 109, 100, 99, 62, 57, 48, 55, 34, 37, 44, 43, 6, 1, 8, 15, 26, 29, 20, 19, 174, 169, 160, 167, 178, 181, 188, 187, 150, 145, 152, 159, 138, 141, 132, 131, 222, 217, 208, 215, 194, 197, 204, 203, 230, 225, 232, 239, androidx.recyclerview.widget.h.DEFAULT_SWIPE_ANIMATION_DURATION, 253, 244, 243};
+        f39063d = str3;
+        f39064e = str + ", " + str3 + ", " + str2 + ", " + i10;
+        f39065f = new byte[0];
+        f39066g = Pattern.compile("(\\d\\d\\d\\d)\\-(\\d\\d)\\-(\\d\\d)[Tt](\\d\\d):(\\d\\d):(\\d\\d)([\\.,](\\d+))?([Zz]|((\\+|\\-)(\\d?\\d):?(\\d\\d)))?");
+        f39067h = Pattern.compile("^(-)?P(([0-9]*)Y)?(([0-9]*)M)?(([0-9]*)D)?(T(([0-9]*)H)?(([0-9]*)M)?(([0-9.]*)S)?)?$");
+        f39068i = Pattern.compile("%([A-Fa-f0-9]{2})");
+        f39069j = Pattern.compile("(?:.*\\.)?isml?(?:/(manifest(.*))?)?", 2);
+        f39071l = new String[]{"alb", "sq", "arm", "hy", "baq", "eu", "bur", "my", "tib", "bo", "chi", "zh", "cze", "cs", "dut", "nl", "ger", "de", "gre", "el", "fre", "fr", "geo", "ka", "ice", "is", "mac", "mk", "mao", "mi", "may", "ms", "per", "fa", "rum", "ro", "scc", "hbs-srp", "slo", "sk", "wel", "cy", StackTraceHelper.ID_KEY, "ms-ind", "iw", "he", "heb", "he", "ji", "yi", "arb", "ar-arb", "in", "ms-ind", "ind", "ms-ind", "nb", "no-nob", "nob", "no-nob", "nn", "no-nno", "nno", "no-nno", "tw", "ak-twi", "twi", "ak-twi", "bs", "hbs-bos", "bos", "hbs-bos", "hr", "hbs-hrv", "hrv", "hbs-hrv", "sr", "hbs-srp", "srp", "hbs-srp", "cmn", "zh-cmn", "hak", "zh-hak", "nan", "zh-nan", "hsn", "zh-hsn"};
+        f39072m = new String[]{"i-lux", "lb", "i-hak", "zh-hak", "i-navajo", "nv", "no-bok", "no-nob", "no-nyn", "no-nno", "zh-guoyu", "zh-cmn", "zh-hakka", "zh-hak", "zh-min-nan", "zh-nan", "zh-xiang", "zh-hsn"};
+        f39073n = new int[]{0, 79764919, 159529838, 222504665, 319059676, 398814059, 445009330, 507990021, 638119352, 583659535, 797628118, 726387553, 890018660, 835552979, 1015980042, 944750013, 1276238704, 1221641927, 1167319070, 1095957929, 1595256236, 1540665371, 1452775106, 1381403509, 1780037320, 1859660671, 1671105958, 1733955601, 2031960084, 2111593891, 1889500026, 1952343757, -1742489888, -1662866601, -1851683442, -1788833735, -1960329156, -1880695413, -2103051438, -2040207643, -1104454824, -1159051537, -1213636554, -1284997759, -1389417084, -1444007885, -1532160278, -1603531939, -734892656, -789352409, -575645954, -646886583, -952755380, -1007220997, -827056094, -898286187, -231047128, -151282273, -71779514, -8804623, -515967244, -436212925, -390279782, -327299027, 881225847, 809987520, 1023691545, 969234094, 662832811, 591600412, 771767749, 717299826, 311336399, 374308984, 453813921, 533576470, 25881363, 88864420, 134795389, 214552010, 2023205639, 2086057648, 1897238633, 1976864222, 1804852699, 1867694188, 1645340341, 1724971778, 1587496639, 1516133128, 1461550545, 1406951526, 1302016099, 1230646740, 1142491917, 1087903418, -1398421865, -1469785312, -1524105735, -1578704818, -1079922613, -1151291908, -1239184603, -1293773166, -1968362705, -1905510760, -2094067647, -2014441994, -1716953613, -1654112188, -1876203875, -1796572374, -525066777, -462094256, -382327159, -302564546, -206542021, -143559028, -97365931, -17609246, -960696225, -1031934488, -817968335, -872425850, -709327229, -780559564, -600130067, -654598054, 1762451694, 1842216281, 1619975040, 1682949687, 2047383090, 2127137669, 1938468188, 2001449195, 1325665622, 1271206113, 1183200824, 1111960463, 1543535498, 1489069629, 1434599652, 1363369299, 622672798, 568075817, 748617968, 677256519, 907627842, 853037301, 1067152940, 995781531, 51762726, 131386257, 177728840, 240578815, 269590778, 349224269, 429104020, 491947555, -248556018, -168932423, -122852000, -60002089, -500490030, -420856475, -341238852, -278395381, -685261898, -739858943, -559578920, -630940305, -1004286614, -1058877219, -845023740, -916395085, -1119974018, -1174433591, -1262701040, -1333941337, -1371866206, -1426332139, -1481064244, -1552294533, -1690935098, -1611170447, -1833673816, -1770699233, -2009983462, -1930228819, -2119160460, -2056179517, 1569362073, 1498123566, 1409854455, 1355396672, 1317987909, 1246755826, 1192025387, 1137557660, 2072149281, 2135122070, 1912620623, 1992383480, 1753615357, 1816598090, 1627664531, 1707420964, 295390185, 358241886, 404320391, 483945776, 43990325, 106832002, 186451547, 266083308, 932423249, 861060070, 1041341759, 986742920, 613929101, 542559546, 756411363, 701822548, -978770311, -1050133554, -869589737, -924188512, -693284699, -764654318, -550540341, -605129092, -475935807, -413084042, -366743377, -287118056, -257573603, -194731862, -114850189, -35218492, -1984365303, -1921392450, -2143631769, -2063868976, -1698919467, -1635936670, -1824608069, -1744851700, -1347415887, -1418654458, -1506661409, -1561119128, -1129027987, -1200260134, -1254728445, -1309196108};
+        f39074o = new int[]{0, 7, 14, 9, 28, 27, 18, 21, 56, 63, 54, 49, 36, 35, 42, 45, 112, 119, 126, 121, 108, 107, 98, 101, 72, 79, 70, 65, 84, 83, 90, 93, 224, 231, 238, 233, 252, 251, 242, 245, 216, 223, 214, 209, 196, 195, 202, 205, 144, 151, 158, 153, 140, 139, 130, 133, 168, 175, 166, 161, 180, 179, 186, 189, 199, 192, 201, 206, 219, 220, 213, 210, SetSpanOperation.SPAN_MAX_PRIORITY, 248, 241, 246, 227, 228, 237, 234, 183, 176, 185, 190, 171, 172, 165, 162, 143, 136, 129, 134, 147, 148, 157, 154, 39, 32, 41, 46, 59, 60, 53, 50, 31, 24, 17, 22, 3, 4, 13, 10, 87, 80, 89, 94, 75, 76, 69, 66, 111, 104, 97, 102, 115, 116, 125, 122, 137, 142, 135, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 149, MediaImageViewKt.OBSCURED_IMAGE_MIN_WIDTH, 155, 156, 177, 182, 191, 184, 173, 170, 163, 164, 249, 254, 247, 240, 229, 226, 235, 236, 193, 198, 207, androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION, 221, 218, 211, MediaImageViewKt.OBSCURED_IMAGE_MIN_HEIGHT, 105, 110, 103, 96, 117, MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION, 123, 124, 81, 86, 95, 88, 77, 74, 67, 68, 25, 30, 23, 16, 5, 2, 11, 12, 33, 38, 47, 40, 61, 58, 51, 52, 78, 73, 64, 71, 82, 85, 92, 91, 118, 113, 120, 127, 106, 109, 100, 99, 62, 57, 48, 55, 34, 37, 44, 43, 6, 1, 8, 15, 26, 29, 20, 19, 174, 169, 160, 167, 178, 181, 188, 187, 150, 145, 152, 159, 138, 141, 132, 131, 222, 217, 208, 215, 194, 197, 204, 203, 230, 225, 232, 239, androidx.recyclerview.widget.h.DEFAULT_SWIPE_ANIMATION_DURATION, 253, 244, 243};
     }
 
     private static HashMap A() {
         String[] iSOLanguages = Locale.getISOLanguages();
-        HashMap hashMap = new HashMap(iSOLanguages.length + f39023l.length);
+        HashMap hashMap = new HashMap(iSOLanguages.length + f39071l.length);
         int i10 = 0;
         for (String str : iSOLanguages) {
             try {
@@ -147,7 +147,7 @@ public abstract class w0 {
             }
         }
         while (true) {
-            String[] strArr = f39023l;
+            String[] strArr = f39071l;
             if (i10 < strArr.length) {
                 hashMap.put(strArr[i10], strArr[i10 + 1]);
                 i10 += 2;
@@ -201,7 +201,7 @@ public abstract class w0 {
     public static Uri C(Uri uri) {
         String path = uri.getPath();
         if (path != null) {
-            Matcher matcher = f39021j.matcher(path);
+            Matcher matcher = f39069j.matcher(path);
             if (matcher.matches() && matcher.group(1) == null) {
                 return Uri.withAppendedPath(uri, "Manifest");
             }
@@ -211,7 +211,7 @@ public abstract class w0 {
     }
 
     public static boolean C0(Context context) {
-        if (f39012a >= 23 && context.getPackageManager().hasSystemFeature("android.hardware.type.automotive")) {
+        if (f39060a >= 23 && context.getPackageManager().hasSystemFeature("android.hardware.type.automotive")) {
             return true;
         }
         return false;
@@ -229,7 +229,7 @@ public abstract class w0 {
     }
 
     public static String E(byte[] bArr) {
-        return new String(bArr, mi.d.f37171c);
+        return new String(bArr, mi.d.f37219c);
     }
 
     public static boolean E0(int i10) {
@@ -240,7 +240,7 @@ public abstract class w0 {
     }
 
     public static String F(byte[] bArr, int i10, int i11) {
-        return new String(bArr, i10, i11, mi.d.f37171c);
+        return new String(bArr, i10, i11, mi.d.f37219c);
     }
 
     public static boolean F0(int i10) {
@@ -290,7 +290,7 @@ public abstract class w0 {
             default:
                 return 0;
             case 10:
-                if (f39012a >= 32) {
+                if (f39060a >= 32) {
                     return 737532;
                 }
                 break;
@@ -386,7 +386,7 @@ public abstract class w0 {
     private static String J0(String str) {
         int i10 = 0;
         while (true) {
-            String[] strArr = f39024m;
+            String[] strArr = f39072m;
             if (i10 < strArr.length) {
                 if (str.startsWith(strArr[i10])) {
                     return strArr[i10 + 1] + str.substring(strArr[i10].length());
@@ -464,10 +464,10 @@ public abstract class w0 {
         }
         String e10 = mi.b.e(str);
         String str2 = e1(e10, "-")[0];
-        if (f39022k == null) {
-            f39022k = A();
+        if (f39070k == null) {
+            f39070k = A();
         }
-        String str3 = (String) f39022k.get(str2);
+        String str3 = (String) f39070k.get(str2);
         if (str3 != null) {
             e10 = str3 + e10.substring(str2.length());
             str2 = str3;
@@ -515,7 +515,7 @@ public abstract class w0 {
     public static Point P(Context context) {
         Display display;
         DisplayManager displayManager;
-        if (f39012a >= 17 && (displayManager = (DisplayManager) context.getSystemService(ViewProps.DISPLAY)) != null) {
+        if (f39060a >= 17 && (displayManager = (DisplayManager) context.getSystemService(ViewProps.DISPLAY)) != null) {
             display = displayManager.getDisplay(0);
         } else {
             display = null;
@@ -540,7 +540,7 @@ public abstract class w0 {
     public static Point Q(Context context, Display display) {
         String p02;
         if (display.getDisplayId() == 0 && H0(context)) {
-            if (f39012a < 28) {
+            if (f39060a < 28) {
                 p02 = p0("sys.display-size");
             } else {
                 p02 = p0("vendor.display-size");
@@ -559,12 +559,12 @@ public abstract class w0 {
                 }
                 y.c("Util", "Invalid display size: " + p02);
             }
-            if ("Sony".equals(f39014c) && f39015d.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd")) {
+            if ("Sony".equals(f39062c) && f39063d.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd")) {
                 return new Point(3840, 2160);
             }
         }
         Point point = new Point();
-        int i10 = f39012a;
+        int i10 = f39060a;
         if (i10 >= 23) {
             V(display, point);
         } else if (i10 >= 17) {
@@ -600,7 +600,7 @@ public abstract class w0 {
     }
 
     public static long R0(String str) {
-        Matcher matcher = f39018g.matcher(str);
+        Matcher matcher = f39066g.matcher(str);
         if (matcher.matches()) {
             int i10 = 0;
             if (matcher.group(9) != null && !matcher.group(9).equalsIgnoreCase("Z")) {
@@ -625,7 +625,7 @@ public abstract class w0 {
     }
 
     public static Locale S() {
-        if (f39012a >= 24) {
+        if (f39060a >= 24) {
             return Locale.getDefault(Locale.Category.DISPLAY);
         }
         return Locale.getDefault();
@@ -637,7 +637,7 @@ public abstract class w0 {
         double d12;
         double d13;
         double d14;
-        Matcher matcher = f39019h.matcher(str);
+        Matcher matcher = f39067h.matcher(str);
         if (matcher.matches()) {
             boolean isEmpty = TextUtils.isEmpty(matcher.group(1));
             String group = matcher.group(3);
@@ -732,7 +732,7 @@ public abstract class w0 {
     }
 
     public static Drawable W(Context context, Resources resources, int i10) {
-        if (f39012a >= 21) {
+        if (f39060a >= 21) {
             return a.a(context, resources, i10);
         }
         return resources.getDrawable(i10);
@@ -768,11 +768,11 @@ public abstract class w0 {
         }
         switch (c10) {
             case 0:
-                return lc.d.f35976e;
+                return lc.d.f36024e;
             case 1:
-                return lc.d.f35975d;
+                return lc.d.f36023d;
             case 2:
-                return lc.d.f35974c;
+                return lc.d.f36022c;
             default:
                 try {
                     return UUID.fromString(str);
@@ -946,7 +946,7 @@ public abstract class w0 {
     }
 
     public static String b0(Locale locale) {
-        if (f39012a >= 21) {
+        if (f39060a >= 21) {
             return c0(locale);
         }
         return locale.toString();
@@ -998,7 +998,7 @@ public abstract class w0 {
     }
 
     public static int d0(Context context, String str, boolean z10) {
-        if (f39012a >= 29 && context.getApplicationContext().getApplicationInfo().targetSdkVersion >= 29) {
+        if (f39060a >= 29 && context.getApplicationContext().getApplicationInfo().targetSdkVersion >= 29) {
             return 5;
         }
         return 1;
@@ -1341,7 +1341,7 @@ public abstract class w0 {
 
     private static String[] n0() {
         Configuration configuration = Resources.getSystem().getConfiguration();
-        return f39012a >= 24 ? o0(configuration) : new String[]{b0(configuration.locale)};
+        return f39060a >= 24 ? o0(configuration) : new String[]{b0(configuration.locale)};
     }
 
     public static long n1(int i10) {
@@ -1377,7 +1377,7 @@ public abstract class w0 {
         }
         int i13 = length - (i11 * 2);
         StringBuilder sb2 = new StringBuilder(i13);
-        Matcher matcher = f39020i.matcher(str);
+        Matcher matcher = f39068i.matcher(str);
         while (i11 > 0 && matcher.find()) {
             sb2.append((CharSequence) str, i10, matcher.start());
             sb2.append((char) Integer.parseInt((String) ne.a.e(matcher.group(1)), 16));
@@ -1474,12 +1474,12 @@ public abstract class w0 {
     }
 
     public static byte[] s0(String str) {
-        return str.getBytes(mi.d.f37171c);
+        return str.getBytes(mi.d.f37219c);
     }
 
     public static int t(byte[] bArr, int i10, int i11, int i12) {
         while (i10 < i11) {
-            i12 = f39025n[((i12 >>> 24) ^ (bArr[i10] & SetSpanOperation.SPAN_MAX_PRIORITY)) & SetSpanOperation.SPAN_MAX_PRIORITY] ^ (i12 << 8);
+            i12 = f39073n[((i12 >>> 24) ^ (bArr[i10] & SetSpanOperation.SPAN_MAX_PRIORITY)) & SetSpanOperation.SPAN_MAX_PRIORITY] ^ (i12 << 8);
             i10++;
         }
         return i12;
@@ -1495,7 +1495,7 @@ public abstract class w0 {
 
     public static int u(byte[] bArr, int i10, int i11, int i12) {
         while (i10 < i11) {
-            i12 = f39026o[i12 ^ (bArr[i10] & SetSpanOperation.SPAN_MAX_PRIORITY)];
+            i12 = f39074o[i12 ^ (bArr[i10] & SetSpanOperation.SPAN_MAX_PRIORITY)];
             i10++;
         }
         return i12;
@@ -1570,7 +1570,7 @@ public abstract class w0 {
         if (lastIndexOf >= 0 && (y02 = y0(lastPathSegment.substring(lastIndexOf + 1))) != 4) {
             return y02;
         }
-        Matcher matcher = f39021j.matcher((CharSequence) ne.a.e(uri.getPath()));
+        Matcher matcher = f39069j.matcher((CharSequence) ne.a.e(uri.getPath()));
         if (!matcher.matches()) {
             return 4;
         }

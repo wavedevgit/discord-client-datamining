@@ -70,7 +70,7 @@ public final class TapSoundmojiData implements ReactEvent {
         compositeEncoder.z(serialDescriptor, 0, tapSoundmojiData.soundId);
         compositeEncoder.z(serialDescriptor, 1, tapSoundmojiData.channelId);
         if (compositeEncoder.A(serialDescriptor, 2) || tapSoundmojiData.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, tapSoundmojiData.guildId);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, tapSoundmojiData.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || tapSoundmojiData.messageId != null) {
             MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;

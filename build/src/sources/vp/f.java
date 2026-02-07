@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f52824a;
+    private final e f52872a;
 
     public f(e externalInquiryController) {
         Intrinsics.checkNotNullParameter(externalInquiryController, "externalInquiryController");
-        this.f52824a = externalInquiryController;
+        this.f52872a = externalInquiryController;
     }
 
     public final e a() {
-        return this.f52824a;
+        return this.f52872a;
     }
 }

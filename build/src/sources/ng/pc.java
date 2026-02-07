@@ -5,7 +5,7 @@ import yi.c;
 final class pc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pc f40183a = new pc();
+    static final pc f40231a = new pc();
 
     static {
         c.b a10 = yi.c.a("numSamples");

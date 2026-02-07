@@ -33,7 +33,7 @@ public abstract /* synthetic */ class y {
             if (m10 == wr.b.f()) {
                 return m10;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -59,8 +59,8 @@ public abstract /* synthetic */ class y {
             }
             this.f6951c.a(cVar);
             CancellableContinuation cancellableContinuation = this.f6952d;
-            Result.a aVar = Result.f32005e;
-            cancellableContinuation.resumeWith(Result.b(Unit.f32008a));
+            Result.a aVar = Result.f32053e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f32056a));
         }
 
         public String toString() {
@@ -73,7 +73,7 @@ public abstract /* synthetic */ class y {
         if (collect == wr.b.f()) {
             return collect;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public static final Object b(h hVar, r rVar, Continuation continuation) {
@@ -87,6 +87,6 @@ public abstract /* synthetic */ class y {
         if (B == wr.b.f()) {
             return B;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

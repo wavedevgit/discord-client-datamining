@@ -6,7 +6,7 @@ import yi.c;
 final class cb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final cb f46993a = new cb();
+    static final cb f47041a = new cb();
 
     static {
         c.b a10 = yi.c.a(StackTraceHelper.NAME_KEY);

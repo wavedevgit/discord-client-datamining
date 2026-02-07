@@ -122,6 +122,6 @@ final class AssetsKt$rememberAsset$1 extends k implements Function2<u, Continuat
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull u uVar, Continuation<? super Unit> continuation) {
-        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f32008a);
+        return ((AssetsKt$rememberAsset$1) create(uVar, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

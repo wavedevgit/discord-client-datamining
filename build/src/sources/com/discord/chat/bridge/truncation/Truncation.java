@@ -78,10 +78,10 @@ public final class Truncation {
         compositeEncoder.x(serialDescriptor, 0, truncation.numberOfLines);
         compositeEncoder.y(serialDescriptor, 1, truncation.expandable);
         if (compositeEncoder.A(serialDescriptor, 2) || truncation.seeMoreLabel != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, truncation.seeMoreLabel);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, truncation.seeMoreLabel);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || truncation.seeMoreLabelColor != null) {
-            compositeEncoder.l(serialDescriptor, 3, p0.f31057a, truncation.seeMoreLabelColor);
+            compositeEncoder.l(serialDescriptor, 3, p0.f31105a, truncation.seeMoreLabelColor);
         }
     }
 

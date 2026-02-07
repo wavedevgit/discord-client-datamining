@@ -5,40 +5,40 @@ import android.graphics.Bitmap;
 public class o implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final v f52313a = new e();
+    protected final v f52361a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52314b;
+    private final int f52362b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f52315c;
+    private int f52363c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f52316d;
+    private final a0 f52364d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f52317e;
+    private int f52365e;
 
     public o(int i10, int i11, a0 a0Var, r8.d dVar) {
-        this.f52314b = i10;
-        this.f52315c = i11;
-        this.f52316d = a0Var;
+        this.f52362b = i10;
+        this.f52363c = i11;
+        this.f52364d = a0Var;
         if (dVar != null) {
             dVar.a(this);
         }
     }
 
     private Bitmap g(int i10) {
-        this.f52316d.d(i10);
+        this.f52364d.d(i10);
         return Bitmap.createBitmap(1, i10, Bitmap.Config.ALPHA_8);
     }
 
     private synchronized void j(int i10) {
         Bitmap bitmap;
-        while (this.f52317e > i10 && (bitmap = (Bitmap) this.f52313a.pop()) != null) {
-            int a10 = this.f52313a.a(bitmap);
-            this.f52317e -= a10;
-            this.f52316d.b(a10);
+        while (this.f52365e > i10 && (bitmap = (Bitmap) this.f52361a.pop()) != null) {
+            int a10 = this.f52361a.a(bitmap);
+            this.f52365e -= a10;
+            this.f52364d.b(a10);
         }
     }
 
@@ -46,16 +46,16 @@ public class o implements d {
     /* renamed from: h */
     public synchronized Bitmap get(int i10) {
         try {
-            int i11 = this.f52317e;
-            int i12 = this.f52314b;
+            int i11 = this.f52365e;
+            int i12 = this.f52362b;
             if (i11 > i12) {
                 j(i12);
             }
-            Bitmap bitmap = (Bitmap) this.f52313a.get(i10);
+            Bitmap bitmap = (Bitmap) this.f52361a.get(i10);
             if (bitmap != null) {
-                int a10 = this.f52313a.a(bitmap);
-                this.f52317e -= a10;
-                this.f52316d.e(a10);
+                int a10 = this.f52361a.a(bitmap);
+                this.f52365e -= a10;
+                this.f52364d.e(a10);
                 return bitmap;
             }
             return g(i10);
@@ -67,12 +67,12 @@ public class o implements d {
     @Override // r8.f, s8.c
     /* renamed from: i */
     public void release(Bitmap bitmap) {
-        int a10 = this.f52313a.a(bitmap);
-        if (a10 <= this.f52315c) {
-            this.f52316d.c(a10);
-            this.f52313a.put(bitmap);
+        int a10 = this.f52361a.a(bitmap);
+        if (a10 <= this.f52363c) {
+            this.f52364d.c(a10);
+            this.f52361a.put(bitmap);
             synchronized (this) {
-                this.f52317e += a10;
+                this.f52365e += a10;
             }
         }
     }

@@ -45,7 +45,7 @@ public final class QRScanner extends FrameLayout implements com.budiyev.android.
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onCodeFound$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @NotNull
@@ -141,7 +141,7 @@ public final class QRScanner extends FrameLayout implements com.budiyev.android.
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
                 return unit;
             }
         };

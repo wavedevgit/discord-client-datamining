@@ -9,7 +9,7 @@ import vu.d;
 public final class b implements su.a, d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f52991a = new b();
+    public static final b f53039a = new b();
 
     private b() {
     }
@@ -29,7 +29,7 @@ public final class b implements su.a, d {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         for (Object obj : data.b()) {
-            if (f52991a.i(evaluator.a(data.a(), obj))) {
+            if (f53039a.i(evaluator.a(data.a(), obj))) {
                 return Boolean.FALSE;
             }
         }

@@ -10,46 +10,46 @@ import java.util.Set;
 public class p implements i.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f29326a;
+    private final List f29374a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f29327b;
+    private final List f29375b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f29328c = new HashSet(3);
+    private final Set f29376c = new HashSet(3);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(List list) {
-        this.f29326a = list;
-        this.f29327b = new ArrayList(list.size());
+        this.f29374a = list;
+        this.f29375b = new ArrayList(list.size());
     }
 
     private void a(i iVar) {
-        if (!this.f29327b.contains(iVar)) {
-            if (!this.f29328c.contains(iVar)) {
-                this.f29328c.add(iVar);
+        if (!this.f29375b.contains(iVar)) {
+            if (!this.f29376c.contains(iVar)) {
+                this.f29376c.add(iVar);
                 iVar.g(this);
-                this.f29328c.remove(iVar);
-                if (!this.f29327b.contains(iVar)) {
+                this.f29376c.remove(iVar);
+                if (!this.f29375b.contains(iVar)) {
                     if (jr.a.class.isAssignableFrom(iVar.getClass())) {
-                        this.f29327b.add(0, iVar);
+                        this.f29375b.add(0, iVar);
                         return;
                     } else {
-                        this.f29327b.add(iVar);
+                        this.f29375b.add(iVar);
                         return;
                     }
                 }
                 return;
             }
-            throw new IllegalStateException("Cyclic dependency chain found: " + this.f29328c);
+            throw new IllegalStateException("Cyclic dependency chain found: " + this.f29376c);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List b() {
-        for (i iVar : this.f29326a) {
+        for (i iVar : this.f29374a) {
             a(iVar);
         }
-        return this.f29327b;
+        return this.f29375b;
     }
 }

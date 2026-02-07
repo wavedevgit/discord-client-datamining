@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var8.bind(var7)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() {
-            _fun90123: for (var _fun90123_ip = 0;;) switch (_fun90123_ip) {
+            _fun90603: for (var _fun90603_ip = 0;;) switch (_fun90603_ip) {
                 case 0:
                     var0 = {};
                     var7 = _closure1_slot0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.bind(var2)();
                     var1 = 'flex';
                     if (!var2) {
-                        _fun90123_ip = 91;
-                        continue _fun90123
+                        _fun90603_ip = 91;
+                        continue _fun90603
                     }
                 case 87:
                     var1 = 'none';
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3721, 3722, 4098, 4884, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3720, 3721, 4097, 4883, 2]);

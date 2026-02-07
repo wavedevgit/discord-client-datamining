@@ -7,39 +7,39 @@ import o5.a;
 public class n extends a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final PointF f41519i;
+    private final PointF f41567i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final PointF f41520j;
+    private final PointF f41568j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final a f41521k;
+    private final a f41569k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final a f41522l;
+    private final a f41570l;
 
     /* renamed from: m  reason: collision with root package name */
-    protected y5.c f41523m;
+    protected y5.c f41571m;
 
     /* renamed from: n  reason: collision with root package name */
-    protected y5.c f41524n;
+    protected y5.c f41572n;
 
     public n(a aVar, a aVar2) {
         super(Collections.EMPTY_LIST);
-        this.f41519i = new PointF();
-        this.f41520j = new PointF();
-        this.f41521k = aVar;
-        this.f41522l = aVar2;
+        this.f41567i = new PointF();
+        this.f41568j = new PointF();
+        this.f41569k = aVar;
+        this.f41570l = aVar2;
         n(f());
     }
 
     @Override // o5.a
     public void n(float f10) {
-        this.f41521k.n(f10);
-        this.f41522l.n(f10);
-        this.f41519i.set(((Float) this.f41521k.h()).floatValue(), ((Float) this.f41522l.h()).floatValue());
-        for (int i10 = 0; i10 < this.f41478a.size(); i10++) {
-            ((a.b) this.f41478a.get(i10)).a();
+        this.f41569k.n(f10);
+        this.f41570l.n(f10);
+        this.f41567i.set(((Float) this.f41569k.h()).floatValue(), ((Float) this.f41570l.h()).floatValue());
+        for (int i10 = 0; i10 < this.f41526a.size(); i10++) {
+            ((a.b) this.f41526a.get(i10)).a();
         }
     }
 
@@ -60,66 +60,66 @@ public class n extends a {
         y5.a b11;
         float floatValue2;
         Float f13 = null;
-        if (this.f41523m != null && (b11 = this.f41521k.b()) != null) {
-            float d10 = this.f41521k.d();
-            Float f14 = b11.f54986h;
-            y5.c cVar = this.f41523m;
-            float f15 = b11.f54985g;
+        if (this.f41571m != null && (b11 = this.f41569k.b()) != null) {
+            float d10 = this.f41569k.d();
+            Float f14 = b11.f55034h;
+            y5.c cVar = this.f41571m;
+            float f15 = b11.f55033g;
             if (f14 == null) {
                 floatValue2 = f15;
             } else {
                 floatValue2 = f14.floatValue();
             }
             f11 = f10;
-            f12 = (Float) cVar.b(f15, floatValue2, (Float) b11.f54980b, (Float) b11.f54981c, f10, f10, d10);
+            f12 = (Float) cVar.b(f15, floatValue2, (Float) b11.f55028b, (Float) b11.f55029c, f10, f10, d10);
         } else {
             f11 = f10;
             f12 = null;
         }
-        if (this.f41524n != null && (b10 = this.f41522l.b()) != null) {
-            float d11 = this.f41522l.d();
-            Float f16 = b10.f54986h;
-            y5.c cVar2 = this.f41524n;
-            float f17 = b10.f54985g;
+        if (this.f41572n != null && (b10 = this.f41570l.b()) != null) {
+            float d11 = this.f41570l.d();
+            Float f16 = b10.f55034h;
+            y5.c cVar2 = this.f41572n;
+            float f17 = b10.f55033g;
             if (f16 == null) {
                 floatValue = f17;
             } else {
                 floatValue = f16.floatValue();
             }
-            f13 = (Float) cVar2.b(f17, floatValue, (Float) b10.f54980b, (Float) b10.f54981c, f11, f11, d11);
+            f13 = (Float) cVar2.b(f17, floatValue, (Float) b10.f55028b, (Float) b10.f55029c, f11, f11, d11);
         }
         if (f12 == null) {
-            this.f41520j.set(this.f41519i.x, 0.0f);
+            this.f41568j.set(this.f41567i.x, 0.0f);
         } else {
-            this.f41520j.set(f12.floatValue(), 0.0f);
+            this.f41568j.set(f12.floatValue(), 0.0f);
         }
         if (f13 == null) {
-            PointF pointF = this.f41520j;
-            pointF.set(pointF.x, this.f41519i.y);
+            PointF pointF = this.f41568j;
+            pointF.set(pointF.x, this.f41567i.y);
         } else {
-            PointF pointF2 = this.f41520j;
+            PointF pointF2 = this.f41568j;
             pointF2.set(pointF2.x, f13.floatValue());
         }
-        return this.f41520j;
+        return this.f41568j;
     }
 
     public void s(y5.c cVar) {
-        y5.c cVar2 = this.f41523m;
+        y5.c cVar2 = this.f41571m;
         if (cVar2 != null) {
             cVar2.c(null);
         }
-        this.f41523m = cVar;
+        this.f41571m = cVar;
         if (cVar != null) {
             cVar.c(this);
         }
     }
 
     public void t(y5.c cVar) {
-        y5.c cVar2 = this.f41524n;
+        y5.c cVar2 = this.f41572n;
         if (cVar2 != null) {
             cVar2.c(null);
         }
-        this.f41524n = cVar;
+        this.f41572n = cVar;
         if (cVar != null) {
             cVar.c(this);
         }

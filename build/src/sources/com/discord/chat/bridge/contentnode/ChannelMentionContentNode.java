@@ -46,7 +46,7 @@ public final class ChannelMentionContentNode extends MentionContentNode {
     }
 
     static {
-        qr.o oVar = qr.o.f48044e;
+        qr.o oVar = qr.o.f48092e;
         $childSerializers = new Lazy[]{null, null, null, null, qr.l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.contentnode.d
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -137,13 +137,13 @@ public final class ChannelMentionContentNode extends MentionContentNode {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.z(serialDescriptor, 0, channelMentionContentNode.channelId);
         if (compositeEncoder.A(serialDescriptor, 1) || channelMentionContentNode.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, channelMentionContentNode.guildId);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, channelMentionContentNode.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || channelMentionContentNode.messageId != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, channelMentionContentNode.messageId);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, channelMentionContentNode.messageId);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || channelMentionContentNode.originalLink != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, channelMentionContentNode.originalLink);
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, channelMentionContentNode.originalLink);
         }
         if (compositeEncoder.A(serialDescriptor, 4) || channelMentionContentNode.inContent != null) {
             compositeEncoder.l(serialDescriptor, 4, (ft.o) lazyArr[4].getValue(), channelMentionContentNode.inContent);

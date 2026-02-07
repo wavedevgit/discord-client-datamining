@@ -5,30 +5,30 @@ import yi.c;
 final class m4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m4 f42269a = new m4();
+    static final m4 f42317a = new m4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42270b;
+    private static final yi.c f42318b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42271c;
+    private static final yi.c f42319c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42272d;
+    private static final yi.c f42320d;
 
     static {
         c.b a10 = yi.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f42270b = a10.b(fVar.b()).a();
+        f42318b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42271c = a11.b(fVar2.b()).a();
+        f42319c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("durationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f42272d = a12.b(fVar3.b()).a();
+        f42320d = a12.b(fVar3.b()).a();
     }
 
     private m4() {

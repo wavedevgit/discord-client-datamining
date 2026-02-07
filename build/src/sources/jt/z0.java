@@ -10,10 +10,10 @@ import kotlinx.serialization.encoding.Encoder;
 public final class z0 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final z0 f31115a = new z0();
+    public static final z0 f31163a = new z0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f31116b = new g2("kotlin.Long", e.g.f26476a);
+    private static final SerialDescriptor f31164b = new g2("kotlin.Long", e.g.f26524a);
 
     private z0() {
     }
@@ -32,7 +32,7 @@ public final class z0 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f31116b;
+        return f31164b;
     }
 
     @Override // ft.o

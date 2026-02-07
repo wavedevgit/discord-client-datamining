@@ -5,37 +5,37 @@ import yi.c;
 final class z4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f44989a = new z4();
+    static final z4 f45037a = new z4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44990b;
+    private static final yi.c f45038b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44991c;
+    private static final yi.c f45039c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44992d;
+    private static final yi.c f45040d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f44993e;
+    private static final yi.c f45041e;
 
     static {
         c.b a10 = yi.c.a("supportedFormats");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44990b = a10.b(s1Var.b()).a();
+        f45038b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("durationMs");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44991c = a11.b(s1Var2.b()).a();
+        f45039c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44992d = a12.b(s1Var3.b()).a();
+        f45040d = a12.b(s1Var3.b()).a();
         c.b a13 = yi.c.a("allowManualInput");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44993e = a13.b(s1Var4.b()).a();
+        f45041e = a13.b(s1Var4.b()).a();
     }
 
     private z4() {

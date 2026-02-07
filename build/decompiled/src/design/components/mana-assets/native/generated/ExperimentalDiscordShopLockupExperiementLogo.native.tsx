@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ExperimentalDiscordShopLockupExperiementLogo.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52624: for (var _fun52624_ip = 0;;) switch (_fun52624_ip) {
+        _fun53069: for (var _fun53069_ip = 0;;) switch (_fun53069_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.color;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun52624_ip = 63;
-                    continue _fun52624
+                    _fun53069_ip = 63;
+                    continue _fun53069
                 }
             case 29:
                 var7 = _closure1_slot1;
@@ -57,16 +57,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 63:
                 var10 = var0.width;
                 if (!(var10 === var3)) {
-                    _fun52624_ip = 75;
-                    continue _fun52624
+                    _fun53069_ip = 75;
+                    continue _fun53069
                 }
             case 72:
                 var10 = 130;
             case 75:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52624_ip = 87;
-                    continue _fun52624
+                    _fun53069_ip = 87;
+                    continue _fun53069
                 }
             case 84:
                 var7 = 22;
@@ -80,14 +80,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)(var2);
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun52624_ip = 162;
-                    continue _fun52624
+                    _fun53069_ip = 162;
+                    continue _fun53069
                 }
             case 127:
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun52624_ip = 145;
-                    continue _fun52624
+                    _fun53069_ip = 145;
+                    continue _fun53069
                 }
             case 134:
                 var9 = 'string';
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 145:
                 var8 = undefined;
                 if (!var0) {
-                    _fun52624_ip = 172;
-                    continue _fun52624
+                    _fun53069_ip = 172;
+                    continue _fun53069
                 }
             case 150:
                 var0 = {};
                 var0.tintColor = var2;
                 var8 = var0;
-                _fun52624_ip = 172;
-                continue _fun52624;
+                _fun53069_ip = 172;
+                continue _fun53069;
             case 162:
                 var0 = {};
                 var0.tintColor = var1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ExperimentalDiscordShopLockupExperiementLogo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3153, 6142, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3153, 6185, 2]);

@@ -49,7 +49,7 @@ public final class BlobProvider extends ContentProvider {
         try {
             ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream = new ParcelFileDescriptor.AutoCloseOutputStream(parcelFileDescriptor);
             autoCloseOutputStream.write(bArr);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             c.a(autoCloseOutputStream, null);
         } catch (IOException unused) {
         }
@@ -113,7 +113,7 @@ public final class BlobProvider extends ContentProvider {
                             try {
                                 ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream = new ParcelFileDescriptor.AutoCloseOutputStream(parcelFileDescriptor2);
                                 autoCloseOutputStream.write(resolve);
-                                Unit unit = Unit.f32008a;
+                                Unit unit = Unit.f32056a;
                                 c.a(autoCloseOutputStream, null);
                                 return parcelFileDescriptor;
                             } catch (IOException unused) {

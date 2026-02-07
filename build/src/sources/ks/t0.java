@@ -8,20 +8,20 @@ import ks.w0;
 public class t0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0.a f35413d;
+    private final w0.a f35461d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f35414e;
+    private final w0 f35462e;
 
     public t0(w0.a aVar, w0 w0Var) {
-        this.f35413d = aVar;
-        this.f35414e = w0Var;
+        this.f35461d = aVar;
+        this.f35462e = w0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List d02;
-        d02 = w0.a.d0(this.f35413d, this.f35414e);
+        d02 = w0.a.d0(this.f35461d, this.f35462e);
         return d02;
     }
 }

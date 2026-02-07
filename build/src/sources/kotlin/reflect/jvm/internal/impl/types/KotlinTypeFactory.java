@@ -25,13 +25,13 @@ public final class KotlinTypeFactory {
     public static final KotlinTypeFactory INSTANCE = new KotlinTypeFactory();
 
     /* renamed from: a */
-    private static final Function1 f34581a = a.f34582d;
+    private static final Function1 f34629a = a.f34630d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a implements Function1 {
 
         /* renamed from: d */
-        public static final a f34582d = new a();
+        public static final a f34630d = new a();
 
         a() {
         }
@@ -48,22 +48,22 @@ public final class KotlinTypeFactory {
     public static final class b {
 
         /* renamed from: a */
-        private final SimpleType f34583a;
+        private final SimpleType f34631a;
 
         /* renamed from: b */
-        private final TypeConstructor f34584b;
+        private final TypeConstructor f34632b;
 
         public b(SimpleType simpleType, TypeConstructor typeConstructor) {
-            this.f34583a = simpleType;
-            this.f34584b = typeConstructor;
+            this.f34631a = simpleType;
+            this.f34632b = typeConstructor;
         }
 
         public final SimpleType a() {
-            return this.f34583a;
+            return this.f34631a;
         }
 
         public final TypeConstructor b() {
-            return this.f34584b;
+            return this.f34632b;
         }
     }
 

@@ -19,63 +19,63 @@ import p4.u;
 public abstract class f {
 
     /* renamed from: a */
-    private static final String f36860a;
+    private static final String f36908a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends k implements Function2 {
 
         /* renamed from: d */
-        int f36861d;
+        int f36909d;
 
         /* renamed from: e */
-        final /* synthetic */ e f36862e;
+        final /* synthetic */ e f36910e;
 
         /* renamed from: i */
-        final /* synthetic */ u f36863i;
+        final /* synthetic */ u f36911i;
 
         /* renamed from: o */
-        final /* synthetic */ d f36864o;
+        final /* synthetic */ d f36912o;
 
         /* renamed from: m4.f$a$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static final class C0499a implements FlowCollector {
 
             /* renamed from: d */
-            final /* synthetic */ d f36865d;
+            final /* synthetic */ d f36913d;
 
             /* renamed from: e */
-            final /* synthetic */ u f36866e;
+            final /* synthetic */ u f36914e;
 
             C0499a(d dVar, u uVar) {
-                this.f36865d = dVar;
-                this.f36866e = uVar;
+                this.f36913d = dVar;
+                this.f36914e = uVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(b bVar, Continuation continuation) {
-                this.f36865d.a(this.f36866e, bVar);
-                return Unit.f32008a;
+                this.f36913d.a(this.f36914e, bVar);
+                return Unit.f32056a;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(e eVar, u uVar, d dVar, Continuation continuation) {
             super(2, continuation);
-            this.f36862e = eVar;
-            this.f36863i = uVar;
-            this.f36864o = dVar;
+            this.f36910e = eVar;
+            this.f36911i = uVar;
+            this.f36912o = dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f36862e, this.f36863i, this.f36864o, continuation);
+            return new a(this.f36910e, this.f36911i, this.f36912o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f36861d;
+            int i10 = this.f36909d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -84,30 +84,30 @@ public abstract class f {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow b10 = this.f36862e.b(this.f36863i);
-                C0499a c0499a = new C0499a(this.f36864o, this.f36863i);
-                this.f36861d = 1;
+                Flow b10 = this.f36910e.b(this.f36911i);
+                C0499a c0499a = new C0499a(this.f36912o, this.f36911i);
+                this.f36909d = 1;
                 if (b10.collect(c0499a, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
     static {
         String i10 = m.i("WorkConstraintsTracker");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"WorkConstraintsTracker\")");
-        f36860a = i10;
+        f36908a = i10;
     }
 
     public static final /* synthetic */ String a() {
-        return f36860a;
+        return f36908a;
     }
 
     public static final Job b(e eVar, u spec, CoroutineDispatcher dispatcher, d listener) {

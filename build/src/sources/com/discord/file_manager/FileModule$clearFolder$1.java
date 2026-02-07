@@ -68,19 +68,19 @@ final class FileModule$clearFolder$1 extends k implements Function2<CoroutineSco
                 } catch (Exception e10) {
                     this.$promise.reject("err", "Cannot clear the folder", e10);
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             Promise promise2 = this.$promise;
             String str2 = this.$storageDir;
             hashMap2 = this.this$0.storageDirs;
             promise2.reject("err", "Unknown storage directory " + str2 + ". Supported storage directories: " + hashMap2.keySet());
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$clearFolder$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((FileModule$clearFolder$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

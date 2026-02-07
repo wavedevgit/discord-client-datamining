@@ -59,13 +59,13 @@ public final class TapChannelData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(TapChannelData tapChannelData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || tapChannelData.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, tapChannelData.guildId);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, tapChannelData.guildId);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || tapChannelData.channelId != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, tapChannelData.channelId);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, tapChannelData.channelId);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || tapChannelData.messageId != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, tapChannelData.messageId);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, tapChannelData.messageId);
         }
     }
 

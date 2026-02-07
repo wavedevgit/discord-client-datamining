@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getSDKSource = var2;
     var0 = function() {
-        _fun10144: for (var _fun10144_ip = 0;;) switch (_fun10144_ip) {
+        _fun10146: for (var _fun10146_ip = 0;;) switch (_fun10146_ip) {
             case 0:
                 var1 = global;
                 var0 = var1.__SENTRY_BROWSER_BUNDLE__;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var0;
                 var0 = var2 !== var0;
                 if (!var0) {
-                    _fun10144_ip = 34;
-                    continue _fun10144
+                    _fun10146_ip = 34;
+                    continue _fun10146
                 }
             case 22:
                 var1 = var1.__SENTRY_BROWSER_BUNDLE__;

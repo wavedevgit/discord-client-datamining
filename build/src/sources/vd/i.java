@@ -37,78 +37,78 @@ public final class i extends sd.n {
     private boolean M;
 
     /* renamed from: k  reason: collision with root package name */
-    public final int f52479k;
+    public final int f52527k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final int f52480l;
+    public final int f52528l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final Uri f52481m;
+    public final Uri f52529m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final boolean f52482n;
+    public final boolean f52530n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f52483o;
+    public final int f52531o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final DataSource f52484p;
+    private final DataSource f52532p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f52485q;
+    private final com.google.android.exoplayer2.upstream.a f52533q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final j f52486r;
+    private final j f52534r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f52487s;
+    private final boolean f52535s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f52488t;
+    private final boolean f52536t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final s0 f52489u;
+    private final s0 f52537u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final h f52490v;
+    private final h f52538v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f52491w;
+    private final List f52539w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final rc.m f52492x;
+    private final rc.m f52540x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final ld.h f52493y;
+    private final ld.h f52541y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final h0 f52494z;
+    private final h0 f52542z;
 
     private i(h hVar, DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, boolean z10, DataSource dataSource2, com.google.android.exoplayer2.upstream.a aVar2, boolean z11, Uri uri, List list, int i10, Object obj, long j10, long j11, long j12, int i11, boolean z12, int i12, boolean z13, boolean z14, s0 s0Var, long j13, rc.m mVar, j jVar, ld.h hVar2, h0 h0Var, boolean z15, t1 t1Var) {
         super(dataSource, aVar, format, i10, obj, j10, j11, j12);
         this.A = z10;
-        this.f52483o = i11;
+        this.f52531o = i11;
         this.M = z12;
-        this.f52480l = i12;
-        this.f52485q = aVar2;
-        this.f52484p = dataSource2;
+        this.f52528l = i12;
+        this.f52533q = aVar2;
+        this.f52532p = dataSource2;
         this.H = aVar2 != null;
         this.B = z11;
-        this.f52481m = uri;
-        this.f52487s = z14;
-        this.f52489u = s0Var;
+        this.f52529m = uri;
+        this.f52535s = z14;
+        this.f52537u = s0Var;
         this.D = j13;
-        this.f52488t = z13;
-        this.f52490v = hVar;
-        this.f52491w = list;
-        this.f52492x = mVar;
-        this.f52486r = jVar;
-        this.f52493y = hVar2;
-        this.f52494z = h0Var;
-        this.f52482n = z15;
+        this.f52536t = z13;
+        this.f52538v = hVar;
+        this.f52539w = list;
+        this.f52540x = mVar;
+        this.f52534r = jVar;
+        this.f52541y = hVar2;
+        this.f52542z = h0Var;
+        this.f52530n = z15;
         this.C = t1Var;
         this.K = ni.s.t();
-        this.f52479k = N.getAndIncrement();
+        this.f52527k = N.getAndIncrement();
     }
 
     private static DataSource i(DataSource dataSource, byte[] bArr, byte[] bArr2) {
@@ -128,16 +128,16 @@ public final class i extends sd.n {
         ld.h hVar3;
         h0 h0Var;
         j jVar;
-        f.e eVar2 = eVar.f52474a;
-        com.google.android.exoplayer2.upstream.a a10 = new a.b().i(u0.e(fVar.f53629a, eVar2.f53592d)).h(eVar2.f53600t).g(eVar2.f53601u).b(eVar.f52477d ? 8 : 0).e(ni.t.j()).a();
+        f.e eVar2 = eVar.f52522a;
+        com.google.android.exoplayer2.upstream.a a10 = new a.b().i(u0.e(fVar.f53677a, eVar2.f53640d)).h(eVar2.f53648t).g(eVar2.f53649u).b(eVar.f52525d ? 8 : 0).e(ni.t.j()).a();
         boolean z14 = bArr != null;
-        DataSource i11 = i(dataSource, bArr, z14 ? l((String) ne.a.e(eVar2.f53599s)) : null);
-        f.d dVar = eVar2.f53593e;
+        DataSource i11 = i(dataSource, bArr, z14 ? l((String) ne.a.e(eVar2.f53647s)) : null);
+        f.d dVar = eVar2.f53641e;
         if (dVar != null) {
             boolean z15 = bArr2 != null;
-            byte[] l10 = z15 ? l((String) ne.a.e(dVar.f53599s)) : null;
+            byte[] l10 = z15 ? l((String) ne.a.e(dVar.f53647s)) : null;
             z12 = true;
-            aVar = new a.b().i(u0.e(fVar.f53629a, dVar.f53592d)).h(dVar.f53600t).g(dVar.f53601u).e(ni.t.j()).a();
+            aVar = new a.b().i(u0.e(fVar.f53677a, dVar.f53640d)).h(dVar.f53648t).g(dVar.f53649u).e(ni.t.j()).a();
             z13 = z15;
             dataSource2 = i(dataSource, bArr2, l10);
         } else {
@@ -146,24 +146,24 @@ public final class i extends sd.n {
             dataSource2 = null;
             z13 = false;
         }
-        long j12 = j10 + eVar2.f53596p;
-        long j13 = j12 + eVar2.f53594i;
-        int i12 = fVar.f53572j + eVar2.f53595o;
+        long j12 = j10 + eVar2.f53644p;
+        long j13 = j12 + eVar2.f53642i;
+        int i12 = fVar.f53620j + eVar2.f53643o;
         if (iVar != null) {
-            com.google.android.exoplayer2.upstream.a aVar2 = iVar.f52485q;
-            boolean z16 = (aVar == aVar2 || (aVar != null && aVar2 != null && aVar.f13265a.equals(aVar2.f13265a) && aVar.f13271g == iVar.f52485q.f13271g)) ? z12 : false;
+            com.google.android.exoplayer2.upstream.a aVar2 = iVar.f52533q;
+            boolean z16 = (aVar == aVar2 || (aVar != null && aVar2 != null && aVar.f13265a.equals(aVar2.f13265a) && aVar.f13271g == iVar.f52533q.f13271g)) ? z12 : false;
             uri2 = uri;
-            boolean z17 = (uri2.equals(iVar.f52481m) && iVar.J) ? z12 : false;
-            hVar3 = iVar.f52493y;
-            h0Var = iVar.f52494z;
-            jVar = (z16 && z17 && !iVar.L && iVar.f52480l == i12) ? iVar.E : null;
+            boolean z17 = (uri2.equals(iVar.f52529m) && iVar.J) ? z12 : false;
+            hVar3 = iVar.f52541y;
+            h0Var = iVar.f52542z;
+            jVar = (z16 && z17 && !iVar.L && iVar.f52528l == i12) ? iVar.E : null;
         } else {
             uri2 = uri;
             hVar3 = new ld.h();
             h0Var = new h0(10);
             jVar = null;
         }
-        return new i(hVar, i11, a10, format, z14, dataSource2, aVar, z13, uri2, list, i10, obj, j12, j13, eVar.f52475b, eVar.f52476c, !eVar.f52477d, i12, eVar2.f53602v, z10, sVar.a(i12), j11, eVar2.f53597q, jVar, hVar3, h0Var, z11, t1Var);
+        return new i(hVar, i11, a10, format, z14, dataSource2, aVar, z13, uri2, list, i10, obj, j12, j13, eVar.f52523b, eVar.f52524c, !eVar.f52525d, i12, eVar2.f53650v, z10, sVar.a(i12), j11, eVar2.f53645q, jVar, hVar3, h0Var, z11, t1Var);
     }
 
     private void k(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, boolean z10, boolean z11) {
@@ -189,7 +189,7 @@ public final class i extends sd.n {
                         break;
                     }
                 } catch (EOFException e11) {
-                    if ((this.f49888d.f11580p & 16384) != 0) {
+                    if ((this.f49936d.f11580p & 16384) != 0) {
                         this.E.b();
                         position = u10.getPosition();
                     } else {
@@ -221,30 +221,30 @@ public final class i extends sd.n {
     }
 
     private static boolean p(f.e eVar, wd.f fVar) {
-        f.e eVar2 = eVar.f52474a;
+        f.e eVar2 = eVar.f52522a;
         if (eVar2 instanceof f.b) {
-            if (!((f.b) eVar2).f53585w) {
-                if (eVar.f52476c != 0 || !fVar.f53631c) {
+            if (!((f.b) eVar2).f53633w) {
+                if (eVar.f52524c != 0 || !fVar.f53679c) {
                     return false;
                 }
                 return true;
             }
             return true;
         }
-        return fVar.f53631c;
+        return fVar.f53679c;
     }
 
     private void r() {
-        k(this.f49893i, this.f49886b, this.A, true);
+        k(this.f49941i, this.f49934b, this.A, true);
     }
 
     private void s() {
         if (!this.H) {
             return;
         }
-        ne.a.e(this.f52484p);
-        ne.a.e(this.f52485q);
-        k(this.f52484p, this.f52485q, this.B, false);
+        ne.a.e(this.f52532p);
+        ne.a.e(this.f52533q);
+        k(this.f52532p, this.f52533q, this.B, false);
         this.G = 0;
         this.H = false;
     }
@@ -252,23 +252,23 @@ public final class i extends sd.n {
     private long t(tc.l lVar) {
         lVar.e();
         try {
-            this.f52494z.Q(10);
-            lVar.n(this.f52494z.e(), 0, 10);
+            this.f52542z.Q(10);
+            lVar.n(this.f52542z.e(), 0, 10);
         } catch (EOFException unused) {
         }
-        if (this.f52494z.K() != 4801587) {
+        if (this.f52542z.K() != 4801587) {
             return -9223372036854775807L;
         }
-        this.f52494z.V(3);
-        int G = this.f52494z.G();
+        this.f52542z.V(3);
+        int G = this.f52542z.G();
         int i10 = G + 10;
-        if (i10 > this.f52494z.b()) {
-            byte[] e10 = this.f52494z.e();
-            this.f52494z.Q(i10);
-            System.arraycopy(e10, 0, this.f52494z.e(), 0, 10);
+        if (i10 > this.f52542z.b()) {
+            byte[] e10 = this.f52542z.e();
+            this.f52542z.Q(i10);
+            System.arraycopy(e10, 0, this.f52542z.e(), 0, 10);
         }
-        lVar.n(this.f52494z.e(), 10, G);
-        Metadata e11 = this.f52493y.e(this.f52494z.e(), G);
+        lVar.n(this.f52542z.e(), 10, G);
+        Metadata e11 = this.f52541y.e(this.f52542z.e(), G);
         if (e11 == null) {
             return -9223372036854775807L;
         }
@@ -277,11 +277,11 @@ public final class i extends sd.n {
             Metadata.b d10 = e11.d(i11);
             if (d10 instanceof ld.l) {
                 ld.l lVar2 = (ld.l) d10;
-                if ("com.apple.streaming.transportStreamTimestamp".equals(lVar2.f36070e)) {
-                    System.arraycopy(lVar2.f36071i, 0, this.f52494z.e(), 0, 8);
-                    this.f52494z.U(0);
-                    this.f52494z.T(8);
-                    return this.f52494z.A() & 8589934591L;
+                if ("com.apple.streaming.transportStreamTimestamp".equals(lVar2.f36118e)) {
+                    System.arraycopy(lVar2.f36119i, 0, this.f52542z.e(), 0, 8);
+                    this.f52542z.U(0);
+                    this.f52542z.T(8);
+                    return this.f52542z.A() & 8589934591L;
                 }
             }
         }
@@ -294,7 +294,7 @@ public final class i extends sd.n {
         long b10 = dataSource.b(aVar);
         if (z10) {
             try {
-                this.f52489u.i(this.f52487s, this.f49891g, this.D);
+                this.f52537u.i(this.f52535s, this.f49939g, this.D);
             } catch (InterruptedException unused) {
                 throw new InterruptedIOException();
             } catch (TimeoutException e10) {
@@ -305,20 +305,20 @@ public final class i extends sd.n {
         if (this.E == null) {
             long t10 = t(eVar);
             eVar.e();
-            j jVar = this.f52486r;
+            j jVar = this.f52534r;
             if (jVar != null) {
                 a10 = jVar.f();
             } else {
-                a10 = this.f52490v.a(aVar.f13265a, this.f49888d, this.f52491w, this.f52489u, dataSource.d(), eVar, this.C);
+                a10 = this.f52538v.a(aVar.f13265a, this.f49936d, this.f52539w, this.f52537u, dataSource.d(), eVar, this.C);
                 eVar = eVar;
             }
             this.E = a10;
             if (a10.e()) {
                 p pVar = this.F;
                 if (t10 != -9223372036854775807L) {
-                    j10 = this.f52489u.b(t10);
+                    j10 = this.f52537u.b(t10);
                 } else {
-                    j10 = this.f49891g;
+                    j10 = this.f49939g;
                 }
                 pVar.n0(j10);
             } else {
@@ -327,7 +327,7 @@ public final class i extends sd.n {
             this.F.Z();
             this.E.c(this.F);
         }
-        this.F.k0(this.f52492x);
+        this.F.k0(this.f52540x);
         return eVar;
     }
 
@@ -335,11 +335,11 @@ public final class i extends sd.n {
         if (iVar == null) {
             return false;
         }
-        if (uri.equals(iVar.f52481m) && iVar.J) {
+        if (uri.equals(iVar.f52529m) && iVar.J) {
             return false;
         }
-        long j11 = j10 + eVar.f52474a.f53596p;
-        if (p(eVar, fVar) && j11 >= iVar.f49892h) {
+        long j11 = j10 + eVar.f52522a.f53644p;
+        if (p(eVar, fVar) && j11 >= iVar.f49940h) {
             return false;
         }
         return true;
@@ -349,13 +349,13 @@ public final class i extends sd.n {
     public void b() {
         j jVar;
         ne.a.e(this.F);
-        if (this.E == null && (jVar = this.f52486r) != null && jVar.d()) {
-            this.E = this.f52486r;
+        if (this.E == null && (jVar = this.f52534r) != null && jVar.d()) {
+            this.E = this.f52534r;
             this.H = false;
         }
         s();
         if (!this.I) {
-            if (!this.f52488t) {
+            if (!this.f52536t) {
                 r();
             }
             this.J = !this.I;
@@ -373,7 +373,7 @@ public final class i extends sd.n {
     }
 
     public int m(int i10) {
-        ne.a.g(!this.f52482n);
+        ne.a.g(!this.f52530n);
         if (i10 >= this.K.size()) {
             return 0;
         }

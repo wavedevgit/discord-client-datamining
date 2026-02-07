@@ -84,7 +84,7 @@ public final class f extends b {
         super("androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL", bundle, bundle2, false, z10, c0333b, str2, z11);
         this.f23839j = str;
         this.f23840k = bArr;
-        if (!k2.c.f31405a.a(str)) {
+        if (!k2.c.f31453a.a(str)) {
             throw new IllegalArgumentException("requestJson must not be empty, and must be a valid JSON");
         }
     }

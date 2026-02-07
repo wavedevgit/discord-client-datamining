@@ -13,6 +13,6 @@ public abstract class c {
         if (!(obj instanceof Result.b)) {
             return;
         }
-        throw ((Result.b) obj).f32007d;
+        throw ((Result.b) obj).f32055d;
     }
 }

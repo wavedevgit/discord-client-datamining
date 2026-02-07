@@ -9,10 +9,10 @@ import ni.s;
 final class g implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Format f52429a;
+    public final Format f52477a;
 
     public g(Format format) {
-        this.f52429a = format;
+        this.f52477a = format;
     }
 
     private static String a(int i10) {

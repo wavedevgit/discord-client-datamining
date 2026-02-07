@@ -29,23 +29,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun71242: for (var _fun71242_ip = 0;;) switch (_fun71242_ip) {
+        _fun71687: for (var _fun71687_ip = 0;;) switch (_fun71687_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.navigation;
                 var8 = var0.onPress;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun71242_ip = 26;
-                    continue _fun71242
+                    _fun71687_ip = 26;
+                    continue _fun71687
                 }
             case 20:
                 var8 = var1.goBack;
             case 26:
                 var9 = var0.type;
                 if (!(var9 === var3)) {
-                    _fun71242_ip = 39;
-                    continue _fun71242
+                    _fun71687_ip = 39;
+                    continue _fun71687
                 }
             case 35:
                 var9 = 'back';
@@ -69,14 +69,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 === var9;
                 var12 = _closure1_slot2;
                 if (var6) {
-                    _fun71242_ip = 123;
-                    continue _fun71242
+                    _fun71687_ip = 123;
+                    continue _fun71687
                 }
             case 114:
                 var9 = 4;
                 var9 = var12[var9];
-                _fun71242_ip = 130;
-                continue _fun71242;
+                _fun71687_ip = 130;
+                continue _fun71687;
             case 123:
                 var11 = 3;
                 var9 = var12[var11];
@@ -95,14 +95,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var10.bind(var3)(var7);
                 var7 = var7.t;
                 if (var6) {
-                    _fun71242_ip = 203;
-                    continue _fun71242
+                    _fun71687_ip = 203;
+                    continue _fun71687
                 }
             case 190:
                 var6 = var7.cpT0Cq;
                 var6 = var8.bind(var9)(var6);
-                _fun71242_ip = 214;
-                continue _fun71242;
+                _fun71687_ip = 214;
+                continue _fun71687;
             case 203:
                 var7 = var7["13/7kX"];
                 var6 = var8.bind(var9)(var7);
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 8931, 8928, 8932, 8936, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 8975, 8972, 8976, 8980, 1234, 2]);

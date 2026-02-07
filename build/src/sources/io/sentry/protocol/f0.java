@@ -11,10 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f28489d;
+    private final String f28537d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f28490e;
+    private Map f28538e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -44,23 +44,23 @@ public final class f0 implements w1 {
     }
 
     public f0(String str) {
-        this.f28489d = str;
+        this.f28537d = str;
     }
 
     public void a(Map map) {
-        this.f28490e = map;
+        this.f28538e = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28489d != null) {
-            f3Var.e("source").j(iLogger, this.f28489d);
+        if (this.f28537d != null) {
+            f3Var.e("source").j(iLogger, this.f28537d);
         }
-        Map map = this.f28490e;
+        Map map = this.f28538e;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28490e.get(str);
+                Object obj = this.f28538e.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

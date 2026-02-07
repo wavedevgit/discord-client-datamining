@@ -5,7 +5,7 @@ import yi.c;
 final class j6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j6 f47147a = new j6();
+    static final j6 f47195a = new j6();
 
     static {
         c.b a10 = yi.c.a("callingSource");

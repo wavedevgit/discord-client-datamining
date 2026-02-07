@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f49146a;
+    private final boolean f49194a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f49147b;
+    private final boolean f49195b;
 
     public v() {
         this(false, false, 3, null);
@@ -28,12 +28,12 @@ public final class v {
 
     public final aq.a c(Window window) {
         Intrinsics.checkNotNullParameter(window, "window");
-        return new aq.a(window, this.f49146a, this.f49147b);
+        return new aq.a(window, this.f49194a, this.f49195b);
     }
 
     public v(boolean z10, boolean z11) {
-        this.f49146a = z10;
-        this.f49147b = z11;
+        this.f49194a = z10;
+        this.f49195b = z11;
     }
 
     public /* synthetic */ v(boolean z10, boolean z11, int i10, DefaultConstructorMarker defaultConstructorMarker) {

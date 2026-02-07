@@ -7,30 +7,30 @@ import java.nio.ByteBuffer;
 public class h implements q, Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private ByteBuffer f52303d;
+    private ByteBuffer f52351d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f52304e;
+    private final int f52352e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f52305i = System.identityHashCode(this);
+    private final long f52353i = System.identityHashCode(this);
 
     public h(int i10) {
-        this.f52303d = ByteBuffer.allocateDirect(i10);
-        this.f52304e = i10;
+        this.f52351d = ByteBuffer.allocateDirect(i10);
+        this.f52352e = i10;
     }
 
     private void m(int i10, q qVar, int i11, int i12) {
         if (qVar instanceof h) {
             o8.j.i(!isClosed());
             o8.j.i(!qVar.isClosed());
-            o8.j.g(this.f52303d);
-            r.b(i10, qVar.getSize(), i11, i12, this.f52304e);
-            this.f52303d.position(i10);
+            o8.j.g(this.f52351d);
+            r.b(i10, qVar.getSize(), i11, i12, this.f52352e);
+            this.f52351d.position(i10);
             ByteBuffer byteBuffer = (ByteBuffer) o8.j.g(qVar.r());
             byteBuffer.position(i11);
             byte[] bArr = new byte[i12];
-            this.f52303d.get(bArr, 0, i12);
+            this.f52351d.get(bArr, 0, i12);
             byteBuffer.put(bArr, 0, i12);
             return;
         }
@@ -48,12 +48,12 @@ public class h implements q, Closeable {
             z10 = false;
         }
         o8.j.b(Boolean.valueOf(z10));
-        if (i10 >= this.f52304e) {
+        if (i10 >= this.f52352e) {
             z11 = false;
         }
         o8.j.b(Boolean.valueOf(z11));
-        o8.j.g(this.f52303d);
-        return this.f52303d.get(i10);
+        o8.j.g(this.f52351d);
+        return this.f52351d.get(i10);
     }
 
     @Override // va.q
@@ -63,12 +63,12 @@ public class h implements q, Closeable {
 
     @Override // va.q
     public long a() {
-        return this.f52305i;
+        return this.f52353i;
     }
 
     @Override // va.q, java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        this.f52303d = null;
+        this.f52351d = null;
     }
 
     @Override // va.q
@@ -76,23 +76,23 @@ public class h implements q, Closeable {
         int a10;
         o8.j.g(bArr);
         o8.j.i(!isClosed());
-        o8.j.g(this.f52303d);
-        a10 = r.a(i10, i12, this.f52304e);
-        r.b(i10, bArr.length, i11, a10, this.f52304e);
-        this.f52303d.position(i10);
-        this.f52303d.put(bArr, i11, a10);
+        o8.j.g(this.f52351d);
+        a10 = r.a(i10, i12, this.f52352e);
+        r.b(i10, bArr.length, i11, a10, this.f52352e);
+        this.f52351d.position(i10);
+        this.f52351d.put(bArr, i11, a10);
         return a10;
     }
 
     @Override // va.q
     public int getSize() {
-        return this.f52304e;
+        return this.f52352e;
     }
 
     @Override // va.q
     public synchronized boolean isClosed() {
         boolean z10;
-        if (this.f52303d == null) {
+        if (this.f52351d == null) {
             z10 = true;
         } else {
             z10 = false;
@@ -127,16 +127,16 @@ public class h implements q, Closeable {
         int a10;
         o8.j.g(bArr);
         o8.j.i(!isClosed());
-        o8.j.g(this.f52303d);
-        a10 = r.a(i10, i12, this.f52304e);
-        r.b(i10, bArr.length, i11, a10, this.f52304e);
-        this.f52303d.position(i10);
-        this.f52303d.get(bArr, i11, a10);
+        o8.j.g(this.f52351d);
+        a10 = r.a(i10, i12, this.f52352e);
+        r.b(i10, bArr.length, i11, a10, this.f52352e);
+        this.f52351d.position(i10);
+        this.f52351d.get(bArr, i11, a10);
         return a10;
     }
 
     @Override // va.q
     public synchronized ByteBuffer r() {
-        return this.f52303d;
+        return this.f52351d;
     }
 }

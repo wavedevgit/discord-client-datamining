@@ -31,19 +31,19 @@ import qu.x;
 public final class h extends qu.h {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final a f49561h = new a(null);
+    private static final a f49609h = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final c0 f49562i = c0.a.e(c0.f48188e, "/", false, 1, null);
+    private static final c0 f49610i = c0.a.e(c0.f48236e, "/", false, 1, null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final ClassLoader f49563e;
+    private final ClassLoader f49611e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final qu.h f49564f;
+    private final qu.h f49612f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Lazy f49565g;
+    private final Lazy f49613g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -58,7 +58,7 @@ public final class h extends qu.h {
         }
 
         public final c0 b() {
-            return h.f49562i;
+            return h.f49610i;
         }
 
         public final c0 d(c0 c0Var, c0 base) {
@@ -80,7 +80,7 @@ public final class h extends qu.h {
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
             h hVar = h.this;
-            return hVar.x(hVar.f49563e);
+            return hVar.x(hVar.f49611e);
         }
     }
 
@@ -89,7 +89,7 @@ public final class h extends qu.h {
     public static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f49567d = new c();
+        public static final c f49615d = new c();
 
         c() {
             super(1);
@@ -99,24 +99,24 @@ public final class h extends qu.h {
         /* renamed from: a */
         public final Boolean invoke(i entry) {
             Intrinsics.checkNotNullParameter(entry, "entry");
-            return Boolean.valueOf(h.f49561h.c(entry.b()));
+            return Boolean.valueOf(h.f49609h.c(entry.b()));
         }
     }
 
     public /* synthetic */ h(ClassLoader classLoader, boolean z10, qu.h hVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(classLoader, z10, (i10 & 4) != 0 ? qu.h.f48232b : hVar);
+        this(classLoader, z10, (i10 & 4) != 0 ? qu.h.f48280b : hVar);
     }
 
     private final String A(c0 c0Var) {
-        return v(c0Var).j(f49562i).toString();
+        return v(c0Var).j(f49610i).toString();
     }
 
     private final c0 v(c0 c0Var) {
-        return f49562i.m(c0Var, true);
+        return f49610i.m(c0Var, true);
     }
 
     private final List w() {
-        return (List) this.f49565g.getValue();
+        return (List) this.f49613g.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -152,7 +152,7 @@ public final class h extends qu.h {
         if (!Intrinsics.areEqual(url.getProtocol(), "file")) {
             return null;
         }
-        return v.a(this.f49564f, c0.a.d(c0.f48188e, new File(url.toURI()), false, 1, null));
+        return v.a(this.f49612f, c0.a.d(c0.f48236e, new File(url.toURI()), false, 1, null));
     }
 
     private final Pair z(URL url) {
@@ -162,10 +162,10 @@ public final class h extends qu.h {
         if (!StringsKt.P(url2, "jar:file:", false, 2, null) || (o02 = StringsKt.o0(url2, "!", 0, false, 6, null)) == -1) {
             return null;
         }
-        c0.a aVar = c0.f48188e;
+        c0.a aVar = c0.f48236e;
         String substring = url2.substring(4, o02);
         Intrinsics.checkNotNullExpressionValue(substring, "substring(...)");
-        return v.a(j.f(c0.a.d(aVar, new File(URI.create(substring)), false, 1, null), this.f49564f, c.f49567d), f49562i);
+        return v.a(j.f(c0.a.d(aVar, new File(URI.create(substring)), false, 1, null), this.f49612f, c.f49615d), f49610i);
     }
 
     @Override // qu.h
@@ -205,13 +205,13 @@ public final class h extends qu.h {
             try {
                 ArrayList<c0> arrayList = new ArrayList();
                 for (Object obj : hVar.k(c0Var.k(A))) {
-                    if (f49561h.c((c0) obj)) {
+                    if (f49609h.c((c0) obj)) {
                         arrayList.add(obj);
                     }
                 }
                 ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
                 for (c0 c0Var2 : arrayList) {
-                    arrayList2.add(f49561h.d(c0Var2, c0Var));
+                    arrayList2.add(f49609h.d(c0Var2, c0Var));
                 }
                 CollectionsKt.B(linkedHashSet, arrayList2);
                 z10 = true;
@@ -227,7 +227,7 @@ public final class h extends qu.h {
     @Override // qu.h
     public qu.g m(c0 path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        if (!f49561h.c(path)) {
+        if (!f49609h.c(path)) {
             return null;
         }
         String A = A(path);
@@ -243,7 +243,7 @@ public final class h extends qu.h {
     @Override // qu.h
     public qu.f n(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        if (f49561h.c(file)) {
+        if (f49609h.c(file)) {
             String A = A(file);
             for (Pair pair : w()) {
                 try {
@@ -265,9 +265,9 @@ public final class h extends qu.h {
     @Override // qu.h
     public Source q(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        if (f49561h.c(file)) {
-            c0 c0Var = f49562i;
-            URL resource = this.f49563e.getResource(c0.n(c0Var, file, false, 2, null).j(c0Var).toString());
+        if (f49609h.c(file)) {
+            c0 c0Var = f49610i;
+            URL resource = this.f49611e.getResource(c0.n(c0Var, file, false, 2, null).j(c0Var).toString());
             if (resource != null) {
                 URLConnection openConnection = resource.openConnection();
                 if (openConnection instanceof JarURLConnection) {
@@ -285,9 +285,9 @@ public final class h extends qu.h {
     public h(ClassLoader classLoader, boolean z10, qu.h systemFileSystem) {
         Intrinsics.checkNotNullParameter(classLoader, "classLoader");
         Intrinsics.checkNotNullParameter(systemFileSystem, "systemFileSystem");
-        this.f49563e = classLoader;
-        this.f49564f = systemFileSystem;
-        this.f49565g = qr.l.a(new b());
+        this.f49611e = classLoader;
+        this.f49612f = systemFileSystem;
+        this.f49613g = qr.l.a(new b());
         if (z10) {
             w().size();
         }

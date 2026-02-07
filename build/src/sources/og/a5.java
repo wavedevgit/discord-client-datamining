@@ -5,37 +5,37 @@ import yi.c;
 final class a5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a5 f41789a = new a5();
+    static final a5 f41837a = new a5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41790b;
+    private static final yi.c f41838b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f41791c;
+    private static final yi.c f41839c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f41792d;
+    private static final yi.c f41840d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f41793e;
+    private static final yi.c f41841e;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41790b = a10.b(fVar.b()).a();
+        f41838b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41791c = a11.b(fVar2.b()).a();
+        f41839c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("identifyLanguageResult");
         f fVar3 = new f();
         fVar3.a(3);
-        f41792d = a12.b(fVar3.b()).a();
+        f41840d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("identifyPossibleLanguagesResult");
         f fVar4 = new f();
         fVar4.a(4);
-        f41793e = a13.b(fVar4.b()).a();
+        f41841e = a13.b(fVar4.b()).a();
     }
 
     private a5() {

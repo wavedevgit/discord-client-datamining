@@ -44,8 +44,8 @@ public /* synthetic */ class MessageReactionEmoji$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{a.u(n2Var), n2Var, n2Var, a.u(n2Var), a.u(h.f31005a)};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{a.u(n2Var), n2Var, n2Var, a.u(n2Var), a.u(h.f31053a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,11 +62,11 @@ public /* synthetic */ class MessageReactionEmoji$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         String str5 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             String m10 = b10.m(serialDescriptor, 1);
             String m11 = b10.m(serialDescriptor, 2);
             str4 = (String) b10.n(serialDescriptor, 3, n2Var, null);
-            bool = (Boolean) b10.n(serialDescriptor, 4, h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 4, h.f31053a, null);
             i10 = 31;
             str3 = m11;
             str2 = m10;
@@ -83,7 +83,7 @@ public /* synthetic */ class MessageReactionEmoji$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str5 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str5);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     str6 = b10.m(serialDescriptor, 1);
@@ -92,12 +92,12 @@ public /* synthetic */ class MessageReactionEmoji$$serializer implements h0 {
                     str7 = b10.m(serialDescriptor, 2);
                     i11 |= 4;
                 } else if (o10 == 3) {
-                    str8 = (String) b10.n(serialDescriptor, 3, n2.f31041a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 3, n2.f31089a, str8);
                     i11 |= 8;
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 4, h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 4, h.f31053a, bool2);
                     i11 |= 16;
                 }
             }

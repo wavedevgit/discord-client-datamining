@@ -10,7 +10,7 @@ import ul.i;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f52727a = "d";
+    private static final String f52775a = "d";
 
     public c a(int i10, int i11, tl.e eVar, nl.a aVar, i iVar, nl.b bVar, f fVar, MediaFormat mediaFormat) {
         if (mediaFormat == null) {
@@ -38,7 +38,7 @@ public class d {
                 }
                 return new a(eVar, i10, fVar, i11, mediaFormat, iVar, aVar, bVar);
             } else {
-                String str = f52727a;
+                String str = f52775a;
                 Log.i(str, "Unsupported track mime type: " + string + ", will use passthrough transcoder");
                 return new b(eVar, i10, fVar, i11);
             }

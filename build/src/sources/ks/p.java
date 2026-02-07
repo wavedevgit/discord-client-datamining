@@ -31,30 +31,30 @@ public abstract class p {
     public static final class a extends p {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Field f35381a;
+        private final Field f35429a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(Field field) {
             super(null);
             Intrinsics.checkNotNullParameter(field, "field");
-            this.f35381a = field;
+            this.f35429a = field;
         }
 
         @Override // ks.p
         public String a() {
             StringBuilder sb2 = new StringBuilder();
-            String name = this.f35381a.getName();
+            String name = this.f35429a.getName();
             Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
             sb2.append(JvmAbi.getterName(name));
             sb2.append("()");
-            Class<?> type = this.f35381a.getType();
+            Class<?> type = this.f35429a.getType();
             Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
             sb2.append(ReflectClassUtilKt.getDesc(type));
             return sb2.toString();
         }
 
         public final Field b() {
-            return this.f35381a;
+            return this.f35429a;
         }
     }
 
@@ -62,32 +62,32 @@ public abstract class p {
     public static final class b extends p {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f35382a;
+        private final Method f35430a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f35383b;
+        private final Method f35431b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Method getterMethod, Method method) {
             super(null);
             Intrinsics.checkNotNullParameter(getterMethod, "getterMethod");
-            this.f35382a = getterMethod;
-            this.f35383b = method;
+            this.f35430a = getterMethod;
+            this.f35431b = method;
         }
 
         @Override // ks.p
         public String a() {
             String d10;
-            d10 = g3.d(this.f35382a);
+            d10 = g3.d(this.f35430a);
             return d10;
         }
 
         public final Method b() {
-            return this.f35382a;
+            return this.f35430a;
         }
 
         public final Method c() {
-            return this.f35383b;
+            return this.f35431b;
         }
     }
 
@@ -95,22 +95,22 @@ public abstract class p {
     public static final class c extends p {
 
         /* renamed from: a  reason: collision with root package name */
-        private final PropertyDescriptor f35384a;
+        private final PropertyDescriptor f35432a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ProtoBuf.Property f35385b;
+        private final ProtoBuf.Property f35433b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final JvmProtoBuf.JvmPropertySignature f35386c;
+        private final JvmProtoBuf.JvmPropertySignature f35434c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final NameResolver f35387d;
+        private final NameResolver f35435d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final TypeTable f35388e;
+        private final TypeTable f35436e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f35389f;
+        private final String f35437f;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(PropertyDescriptor descriptor, ProtoBuf.Property proto, JvmProtoBuf.JvmPropertySignature signature, NameResolver nameResolver, TypeTable typeTable) {
@@ -121,11 +121,11 @@ public abstract class p {
             Intrinsics.checkNotNullParameter(signature, "signature");
             Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
             Intrinsics.checkNotNullParameter(typeTable, "typeTable");
-            this.f35384a = descriptor;
-            this.f35385b = proto;
-            this.f35386c = signature;
-            this.f35387d = nameResolver;
-            this.f35388e = typeTable;
+            this.f35432a = descriptor;
+            this.f35433b = proto;
+            this.f35434c = signature;
+            this.f35435d = nameResolver;
+            this.f35436e = typeTable;
             if (signature.hasGetter()) {
                 str = nameResolver.getString(signature.getGetter().getName()) + nameResolver.getString(signature.getGetter().getDesc());
             } else {
@@ -137,21 +137,21 @@ public abstract class p {
                     throw new x2("No field signature for property: " + descriptor);
                 }
             }
-            this.f35389f = str;
+            this.f35437f = str;
         }
 
         private final String c() {
-            DeclarationDescriptor containingDeclaration = this.f35384a.getContainingDeclaration();
+            DeclarationDescriptor containingDeclaration = this.f35432a.getContainingDeclaration();
             Intrinsics.checkNotNullExpressionValue(containingDeclaration, "getContainingDeclaration(...)");
-            if (Intrinsics.areEqual(this.f35384a.getVisibility(), DescriptorVisibilities.INTERNAL) && (containingDeclaration instanceof DeserializedClassDescriptor)) {
+            if (Intrinsics.areEqual(this.f35432a.getVisibility(), DescriptorVisibilities.INTERNAL) && (containingDeclaration instanceof DeserializedClassDescriptor)) {
                 ProtoBuf.Class classProto = ((DeserializedClassDescriptor) containingDeclaration).getClassProto();
                 GeneratedMessageLite.GeneratedExtension<ProtoBuf.Class, Integer> classModuleName = JvmProtoBuf.classModuleName;
                 Intrinsics.checkNotNullExpressionValue(classModuleName, "classModuleName");
                 Integer num = (Integer) ProtoBufUtilKt.getExtensionOrNull(classProto, classModuleName);
-                String str = (num == null || (str = this.f35387d.getString(num.intValue())) == null) ? "main" : "main";
+                String str = (num == null || (str = this.f35435d.getString(num.intValue())) == null) ? "main" : "main";
                 return '$' + NameUtils.sanitizeAsJavaIdentifier(str);
-            } else if (Intrinsics.areEqual(this.f35384a.getVisibility(), DescriptorVisibilities.PRIVATE) && (containingDeclaration instanceof PackageFragmentDescriptor)) {
-                PropertyDescriptor propertyDescriptor = this.f35384a;
+            } else if (Intrinsics.areEqual(this.f35432a.getVisibility(), DescriptorVisibilities.PRIVATE) && (containingDeclaration instanceof PackageFragmentDescriptor)) {
+                PropertyDescriptor propertyDescriptor = this.f35432a;
                 Intrinsics.checkNotNull(propertyDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedPropertyDescriptor");
                 DeserializedContainerSource containerSource = ((DeserializedPropertyDescriptor) propertyDescriptor).getContainerSource();
                 if (containerSource instanceof JvmPackagePartSource) {
@@ -169,27 +169,27 @@ public abstract class p {
 
         @Override // ks.p
         public String a() {
-            return this.f35389f;
+            return this.f35437f;
         }
 
         public final PropertyDescriptor b() {
-            return this.f35384a;
+            return this.f35432a;
         }
 
         public final NameResolver d() {
-            return this.f35387d;
+            return this.f35435d;
         }
 
         public final ProtoBuf.Property e() {
-            return this.f35385b;
+            return this.f35433b;
         }
 
         public final JvmProtoBuf.JvmPropertySignature f() {
-            return this.f35386c;
+            return this.f35434c;
         }
 
         public final TypeTable g() {
-            return this.f35388e;
+            return this.f35436e;
         }
     }
 
@@ -197,30 +197,30 @@ public abstract class p {
     public static final class d extends p {
 
         /* renamed from: a  reason: collision with root package name */
-        private final n.e f35390a;
+        private final n.e f35438a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final n.e f35391b;
+        private final n.e f35439b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(n.e getterSignature, n.e eVar) {
             super(null);
             Intrinsics.checkNotNullParameter(getterSignature, "getterSignature");
-            this.f35390a = getterSignature;
-            this.f35391b = eVar;
+            this.f35438a = getterSignature;
+            this.f35439b = eVar;
         }
 
         @Override // ks.p
         public String a() {
-            return this.f35390a.a();
+            return this.f35438a.a();
         }
 
         public final n.e b() {
-            return this.f35390a;
+            return this.f35438a;
         }
 
         public final n.e c() {
-            return this.f35391b;
+            return this.f35439b;
         }
     }
 

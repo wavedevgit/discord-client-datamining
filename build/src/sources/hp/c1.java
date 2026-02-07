@@ -27,45 +27,45 @@ import org.jetbrains.annotations.NotNull;
 public final class c1 extends bn.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f26247a;
+    private final Context f26295a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e0.a f26248b;
+    private final e0.a f26296b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final x f26249c;
+    private final x f26297c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h1 f26250a;
+        private final h1 f26298a;
 
         public a(h1 permissionState) {
             Intrinsics.checkNotNullParameter(permissionState, "permissionState");
-            this.f26250a = permissionState;
+            this.f26298a = permissionState;
         }
 
         public final h1 a() {
-            return this.f26250a;
+            return this.f26298a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && Intrinsics.areEqual(this.f26250a, ((a) obj).f26250a)) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f26298a, ((a) obj).f26298a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f26250a.hashCode();
+            return this.f26298a.hashCode();
         }
 
         public String toString() {
-            h1 h1Var = this.f26250a;
+            h1 h1Var = this.f26298a;
             return "Output(permissionState=" + h1Var + ")";
         }
     }
@@ -77,7 +77,7 @@ public final class c1 extends bn.k {
         public static final class a extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f26251d = new a();
+            public static final a f26299d = new a();
             @NotNull
             public static final Parcelable.Creator<a> CREATOR = new C0361a();
 
@@ -89,7 +89,7 @@ public final class c1 extends bn.k {
                 public final a createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return a.f26251d;
+                    return a.f26299d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -135,7 +135,7 @@ public final class c1 extends bn.k {
         public static final class C0362b extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0362b f26252d = new C0362b();
+            public static final C0362b f26300d = new C0362b();
             @NotNull
             public static final Parcelable.Creator<C0362b> CREATOR = new a();
 
@@ -147,7 +147,7 @@ public final class c1 extends bn.k {
                 public final C0362b createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return C0362b.f26252d;
+                    return C0362b.f26300d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -192,7 +192,7 @@ public final class c1 extends bn.k {
         public static final class c extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final c f26253d = new c();
+            public static final c f26301d = new c();
             @NotNull
             public static final Parcelable.Creator<c> CREATOR = new a();
 
@@ -203,7 +203,7 @@ public final class c1 extends bn.k {
                 public final c createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return c.f26253d;
+                    return c.f26301d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -248,7 +248,7 @@ public final class c1 extends bn.k {
         public static final class d extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final d f26254d = new d();
+            public static final d f26302d = new d();
             @NotNull
             public static final Parcelable.Creator<d> CREATOR = new a();
 
@@ -259,7 +259,7 @@ public final class c1 extends bn.k {
                 public final d createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return d.f26254d;
+                    return d.f26302d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -304,7 +304,7 @@ public final class c1 extends bn.k {
         public static final class e extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final e f26255d = new e();
+            public static final e f26303d = new e();
             @NotNull
             public static final Parcelable.Creator<e> CREATOR = new a();
 
@@ -315,7 +315,7 @@ public final class c1 extends bn.k {
                 public final e createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return e.f26255d;
+                    return e.f26303d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -360,7 +360,7 @@ public final class c1 extends bn.k {
         public static final class f extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final f f26256d = new f();
+            public static final f f26304d = new f();
             @NotNull
             public static final Parcelable.Creator<f> CREATOR = new a();
 
@@ -371,7 +371,7 @@ public final class c1 extends bn.k {
                 public final f createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return f.f26256d;
+                    return f.f26304d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -416,7 +416,7 @@ public final class c1 extends bn.k {
         public static final class g extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final g f26257d = new g();
+            public static final g f26305d = new g();
             @NotNull
             public static final Parcelable.Creator<g> CREATOR = new a();
 
@@ -427,7 +427,7 @@ public final class c1 extends bn.k {
                 public final g createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return g.f26257d;
+                    return g.f26305d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -472,7 +472,7 @@ public final class c1 extends bn.k {
         public static final class h extends b {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final h f26258d = new h();
+            public static final h f26306d = new h();
             @NotNull
             public static final Parcelable.Creator<h> CREATOR = new a();
 
@@ -483,7 +483,7 @@ public final class c1 extends bn.k {
                 public final h createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return h.f26258d;
+                    return h.f26306d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -536,74 +536,74 @@ public final class c1 extends bn.k {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final d0 f26259a;
+        private final d0 f26307a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f26260b;
+        private final boolean f26308b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f26261c;
+        private final String f26309c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f26262d;
+        private final String f26310d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f26263e;
+        private final String f26311e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f26264f;
+        private final String f26312f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f26265g;
+        private final String f26313g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final String f26266h;
+        private final String f26314h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f26267i;
+        private final String f26315i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final String f26268j;
+        private final String f26316j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final StepStyle f26269k;
+        private final StepStyle f26317k;
 
         public c(d0 permission, boolean z10, String title, String rationale, String rationaleWhenPermanentlyDenied, String str, String str2, String str3, String str4, String str5, StepStyle stepStyle) {
             Intrinsics.checkNotNullParameter(permission, "permission");
             Intrinsics.checkNotNullParameter(title, "title");
             Intrinsics.checkNotNullParameter(rationale, "rationale");
             Intrinsics.checkNotNullParameter(rationaleWhenPermanentlyDenied, "rationaleWhenPermanentlyDenied");
-            this.f26259a = permission;
-            this.f26260b = z10;
-            this.f26261c = title;
-            this.f26262d = rationale;
-            this.f26263e = rationaleWhenPermanentlyDenied;
-            this.f26264f = str;
-            this.f26265g = str2;
-            this.f26266h = str3;
-            this.f26267i = str4;
-            this.f26268j = str5;
-            this.f26269k = stepStyle;
+            this.f26307a = permission;
+            this.f26308b = z10;
+            this.f26309c = title;
+            this.f26310d = rationale;
+            this.f26311e = rationaleWhenPermanentlyDenied;
+            this.f26312f = str;
+            this.f26313g = str2;
+            this.f26314h = str3;
+            this.f26315i = str4;
+            this.f26316j = str5;
+            this.f26317k = stepStyle;
         }
 
         public final String a() {
-            return this.f26268j;
+            return this.f26316j;
         }
 
         public final String b() {
-            return this.f26267i;
+            return this.f26315i;
         }
 
         public final String c() {
-            return this.f26266h;
+            return this.f26314h;
         }
 
         public final String d() {
-            return this.f26265g;
+            return this.f26313g;
         }
 
         public final boolean e() {
-            return this.f26260b;
+            return this.f26308b;
         }
 
         public boolean equals(Object obj) {
@@ -614,22 +614,22 @@ public final class c1 extends bn.k {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f26259a == cVar.f26259a && this.f26260b == cVar.f26260b && Intrinsics.areEqual(this.f26261c, cVar.f26261c) && Intrinsics.areEqual(this.f26262d, cVar.f26262d) && Intrinsics.areEqual(this.f26263e, cVar.f26263e) && Intrinsics.areEqual(this.f26264f, cVar.f26264f) && Intrinsics.areEqual(this.f26265g, cVar.f26265g) && Intrinsics.areEqual(this.f26266h, cVar.f26266h) && Intrinsics.areEqual(this.f26267i, cVar.f26267i) && Intrinsics.areEqual(this.f26268j, cVar.f26268j) && Intrinsics.areEqual(this.f26269k, cVar.f26269k)) {
+            if (this.f26307a == cVar.f26307a && this.f26308b == cVar.f26308b && Intrinsics.areEqual(this.f26309c, cVar.f26309c) && Intrinsics.areEqual(this.f26310d, cVar.f26310d) && Intrinsics.areEqual(this.f26311e, cVar.f26311e) && Intrinsics.areEqual(this.f26312f, cVar.f26312f) && Intrinsics.areEqual(this.f26313g, cVar.f26313g) && Intrinsics.areEqual(this.f26314h, cVar.f26314h) && Intrinsics.areEqual(this.f26315i, cVar.f26315i) && Intrinsics.areEqual(this.f26316j, cVar.f26316j) && Intrinsics.areEqual(this.f26317k, cVar.f26317k)) {
                 return true;
             }
             return false;
         }
 
         public final d0 f() {
-            return this.f26259a;
+            return this.f26307a;
         }
 
         public final String g() {
-            return this.f26264f;
+            return this.f26312f;
         }
 
         public final String h() {
-            return this.f26262d;
+            return this.f26310d;
         }
 
         public int hashCode() {
@@ -638,8 +638,8 @@ public final class c1 extends bn.k {
             int hashCode3;
             int hashCode4;
             int hashCode5;
-            int hashCode6 = ((((((((this.f26259a.hashCode() * 31) + Boolean.hashCode(this.f26260b)) * 31) + this.f26261c.hashCode()) * 31) + this.f26262d.hashCode()) * 31) + this.f26263e.hashCode()) * 31;
-            String str = this.f26264f;
+            int hashCode6 = ((((((((this.f26307a.hashCode() * 31) + Boolean.hashCode(this.f26308b)) * 31) + this.f26309c.hashCode()) * 31) + this.f26310d.hashCode()) * 31) + this.f26311e.hashCode()) * 31;
+            String str = this.f26312f;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -647,35 +647,35 @@ public final class c1 extends bn.k {
                 hashCode = str.hashCode();
             }
             int i11 = (hashCode6 + hashCode) * 31;
-            String str2 = this.f26265g;
+            String str2 = this.f26313g;
             if (str2 == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str2.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            String str3 = this.f26266h;
+            String str3 = this.f26314h;
             if (str3 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str3.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            String str4 = this.f26267i;
+            String str4 = this.f26315i;
             if (str4 == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = str4.hashCode();
             }
             int i14 = (i13 + hashCode4) * 31;
-            String str5 = this.f26268j;
+            String str5 = this.f26316j;
             if (str5 == null) {
                 hashCode5 = 0;
             } else {
                 hashCode5 = str5.hashCode();
             }
             int i15 = (i14 + hashCode5) * 31;
-            StepStyle stepStyle = this.f26269k;
+            StepStyle stepStyle = this.f26317k;
             if (stepStyle != null) {
                 i10 = stepStyle.hashCode();
             }
@@ -683,37 +683,37 @@ public final class c1 extends bn.k {
         }
 
         public final String i() {
-            return this.f26263e;
+            return this.f26311e;
         }
 
         public final StepStyle j() {
-            return this.f26269k;
+            return this.f26317k;
         }
 
         public final String k() {
-            return this.f26261c;
+            return this.f26309c;
         }
 
         public final boolean l() {
-            d0 d0Var = this.f26259a;
-            if (d0Var != d0.f26282i && d0Var != d0.f26283o) {
+            d0 d0Var = this.f26307a;
+            if (d0Var != d0.f26330i && d0Var != d0.f26331o) {
                 return false;
             }
             return true;
         }
 
         public String toString() {
-            d0 d0Var = this.f26259a;
-            boolean z10 = this.f26260b;
-            String str = this.f26261c;
-            String str2 = this.f26262d;
-            String str3 = this.f26263e;
-            String str4 = this.f26264f;
-            String str5 = this.f26265g;
-            String str6 = this.f26266h;
-            String str7 = this.f26267i;
-            String str8 = this.f26268j;
-            StepStyle stepStyle = this.f26269k;
+            d0 d0Var = this.f26307a;
+            boolean z10 = this.f26308b;
+            String str = this.f26309c;
+            String str2 = this.f26310d;
+            String str3 = this.f26311e;
+            String str4 = this.f26312f;
+            String str5 = this.f26313g;
+            String str6 = this.f26314h;
+            String str7 = this.f26315i;
+            String str8 = this.f26316j;
+            StepStyle stepStyle = this.f26317k;
             return "Props(permission=" + d0Var + ", optional=" + z10 + ", title=" + str + ", rationale=" + str2 + ", rationaleWhenPermanentlyDenied=" + str3 + ", positiveButtonText=" + str4 + ", negativeButtonText=" + str5 + ", gpsFeatureTitle=" + str6 + ", gpsFeatureRationale=" + str7 + ", gpsFeatureModalNegativeButton=" + str8 + ", styles=" + stepStyle + ")";
         }
     }
@@ -722,23 +722,23 @@ public final class c1 extends bn.k {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f26270a;
+        public static final /* synthetic */ int[] f26318a;
 
         static {
             int[] iArr = new int[c0.values().length];
             try {
-                iArr[c0.f26242d.ordinal()] = 1;
+                iArr[c0.f26290d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[c0.f26243e.ordinal()] = 2;
+                iArr[c0.f26291e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[c0.f26244i.ordinal()] = 3;
+                iArr[c0.f26292i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f26270a = iArr;
+            f26318a = iArr;
         }
     }
 
@@ -747,36 +747,36 @@ public final class c1 extends bn.k {
     public static final class e extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f26271d;
+        int f26319d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ c f26273i;
+        final /* synthetic */ c f26321i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ k.a f26274o;
+        final /* synthetic */ k.a f26322o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(c cVar, k.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f26273i = cVar;
-            this.f26274o = aVar;
+            this.f26321i = cVar;
+            this.f26322o = aVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit l(r.c cVar) {
-            cVar.e(b.e.f26255d);
-            return Unit.f32008a;
+            cVar.e(b.e.f26303d);
+            return Unit.f32056a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit m(r.c cVar) {
-            cVar.e(b.C0362b.f26252d);
-            return Unit.f32008a;
+            cVar.e(b.C0362b.f26300d);
+            return Unit.f32056a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f26273i, this.f26274o, continuation);
+            return new e(this.f26321i, this.f26322o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -784,10 +784,10 @@ public final class c1 extends bn.k {
             bn.r d10;
             bn.r d11;
             wr.b.f();
-            if (this.f26271d == 0) {
+            if (this.f26319d == 0) {
                 kotlin.c.b(obj);
-                if (l1.b(c1.this.f26247a, this.f26273i.f())) {
-                    bn.h c10 = this.f26274o.c();
+                if (l1.b(c1.this.f26295a, this.f26321i.f())) {
+                    bn.h c10 = this.f26322o.c();
                     d11 = bn.z.d(c1.this, null, new Function1() { // from class: hp.d1
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj2) {
@@ -798,7 +798,7 @@ public final class c1 extends bn.k {
                     }, 1, null);
                     c10.d(d11);
                 } else {
-                    bn.h c11 = this.f26274o.c();
+                    bn.h c11 = this.f26322o.c();
                     d10 = bn.z.d(c1.this, null, new Function1() { // from class: hp.e1
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj2) {
@@ -809,14 +809,14 @@ public final class c1 extends bn.k {
                     }, 1, null);
                     c11.d(d10);
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -825,45 +825,45 @@ public final class c1 extends bn.k {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f26275d;
+        int f26323d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ k.a f26276e;
+        final /* synthetic */ k.a f26324e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ c1 f26277i;
+        final /* synthetic */ c1 f26325i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ c f26278o;
+        final /* synthetic */ c f26326o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(k.a aVar, c1 c1Var, c cVar, Continuation continuation) {
             super(2, continuation);
-            this.f26276e = aVar;
-            this.f26277i = c1Var;
-            this.f26278o = cVar;
+            this.f26324e = aVar;
+            this.f26325i = c1Var;
+            this.f26326o = cVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit k(c1 c1Var, c cVar, r.c cVar2) {
-            c1Var.G(cVar2, new h1(cVar.f(), g1.f26306d));
-            return Unit.f32008a;
+            c1Var.G(cVar2, new h1(cVar.f(), g1.f26354d));
+            return Unit.f32056a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f26276e, this.f26277i, this.f26278o, continuation);
+            return new f(this.f26324e, this.f26325i, this.f26326o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             bn.r d10;
             wr.b.f();
-            if (this.f26275d == 0) {
+            if (this.f26323d == 0) {
                 kotlin.c.b(obj);
-                bn.h c10 = this.f26276e.c();
-                final c1 c1Var = this.f26277i;
-                final c cVar = this.f26278o;
+                bn.h c10 = this.f26324e.c();
+                final c1 c1Var = this.f26325i;
+                final c cVar = this.f26326o;
                 d10 = bn.z.d(c1Var, null, new Function1() { // from class: hp.f1
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj2) {
@@ -873,14 +873,14 @@ public final class c1 extends bn.k {
                     }
                 }, 1, null);
                 c10.d(d10);
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -888,9 +888,9 @@ public final class c1 extends bn.k {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         Intrinsics.checkNotNullParameter(permissionRequestWorkerFactory, "permissionRequestWorkerFactory");
         Intrinsics.checkNotNullParameter(deviceFeatureRequestWorkflow, "deviceFeatureRequestWorkflow");
-        this.f26247a = applicationContext;
-        this.f26248b = permissionRequestWorkerFactory;
-        this.f26249c = deviceFeatureRequestWorkflow;
+        this.f26295a = applicationContext;
+        this.f26296b = permissionRequestWorkerFactory;
+        this.f26297c = deviceFeatureRequestWorkflow;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -901,8 +901,8 @@ public final class c1 extends bn.k {
     private final void I() {
         Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
         intent.addFlags(268435456);
-        intent.setData(Uri.fromParts("package", this.f26247a.getPackageName(), null));
-        this.f26247a.startActivity(intent);
+        intent.setData(Uri.fromParts("package", this.f26295a.getPackageName(), null));
+        this.f26295a.startActivity(intent);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -918,18 +918,18 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit L(boolean z10, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         if (z10) {
-            action.e(b.h.f26258d);
+            action.e(b.h.f26306d);
         } else {
-            action.e(b.f.f26256d);
+            action.e(b.f.f26304d);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -937,7 +937,7 @@ public final class c1 extends bn.k {
         bn.r d10;
         bn.r d11;
         Intrinsics.checkNotNullParameter(it, "it");
-        if (Intrinsics.areEqual(it, e0.b.C0363b.f26293a)) {
+        if (Intrinsics.areEqual(it, e0.b.C0363b.f26341a)) {
             d11 = bn.z.d(c1Var, null, new Function1() { // from class: hp.a1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -947,7 +947,7 @@ public final class c1 extends bn.k {
                 }
             }, 1, null);
             return d11;
-        } else if (Intrinsics.areEqual(it, e0.b.a.f26292a)) {
+        } else if (Intrinsics.areEqual(it, e0.b.a.f26340a)) {
             d10 = bn.z.d(c1Var, null, new Function1() { // from class: hp.b1
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -990,21 +990,21 @@ public final class c1 extends bn.k {
             }, 1, null);
             c11.d(d10);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit O(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26307e));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26355e));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit P(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(b.a.f26251d);
-        return Unit.f32008a;
+        action.e(b.a.f26299d);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1021,14 +1021,14 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit R(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(b.e.f26255d);
-        return Unit.f32008a;
+        action.e(b.e.f26303d);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1051,7 +1051,7 @@ public final class c1 extends bn.k {
         bn.r d10;
         bn.r d11;
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        int i10 = d.f26270a[bVar.a().a().ordinal()];
+        int i10 = d.f26318a[bVar.a().a().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -1069,7 +1069,7 @@ public final class c1 extends bn.k {
                     throw new qr.p();
                 }
             } else {
-                c1Var.G(action, new h1(cVar.f(), g1.f26307e));
+                c1Var.G(action, new h1(cVar.f(), g1.f26355e));
             }
         } else {
             bn.h c11 = aVar.c();
@@ -1083,21 +1083,21 @@ public final class c1 extends bn.k {
             }, 1, null);
             c11.d(d10);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26306d));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26354d));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit V(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26308i));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26356i));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1113,7 +1113,7 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1121,7 +1121,7 @@ public final class c1 extends bn.k {
         bn.r d10;
         Intrinsics.checkNotNullParameter(action, "$this$action");
         if (z10) {
-            c1Var.G(action, new h1(cVar.f(), g1.f26307e));
+            c1Var.G(action, new h1(cVar.f(), g1.f26355e));
         } else {
             bn.h c10 = aVar.c();
             d10 = bn.z.d(c1Var, null, new Function1() { // from class: hp.r0
@@ -1134,14 +1134,14 @@ public final class c1 extends bn.k {
             }, 1, null);
             c10.d(d10);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Y(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(b.g.f26257d);
-        return Unit.f32008a;
+        action.e(b.g.f26305d);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1158,14 +1158,14 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit a0(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26308i));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26356i));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1181,14 +1181,14 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c0(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26307e));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26355e));
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1204,14 +1204,14 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e0(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(b.f.f26256d);
-        return Unit.f32008a;
+        action.e(b.f.f26304d);
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1227,14 +1227,14 @@ public final class c1 extends bn.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g0(c1 c1Var, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        c1Var.G(action, new h1(cVar.f(), g1.f26307e));
-        return Unit.f32008a;
+        c1Var.G(action, new h1(cVar.f(), g1.f26355e));
+        return Unit.f32056a;
     }
 
     @Override // bn.k
@@ -1263,7 +1263,7 @@ public final class c1 extends bn.k {
                 return bVar;
             }
         }
-        return b.c.f26253d;
+        return b.c.f26301d;
     }
 
     @Override // bn.k
@@ -1272,10 +1272,10 @@ public final class c1 extends bn.k {
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         Intrinsics.checkNotNullParameter(renderState, "renderState");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (Intrinsics.areEqual(renderState, b.c.f26253d)) {
+        if (Intrinsics.areEqual(renderState, b.c.f26301d)) {
             context.a("check_permission_state", new e(renderProps, context, null));
             return null;
-        } else if (Intrinsics.areEqual(renderState, b.C0362b.f26252d)) {
+        } else if (Intrinsics.areEqual(renderState, b.C0362b.f26300d)) {
             return new bq.k(new l(renderProps.f(), false, new Function1() { // from class: hp.f0
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
@@ -1285,12 +1285,12 @@ public final class c1 extends bn.k {
                 }
             }), bq.j.f6989i);
         } else {
-            if (Intrinsics.areEqual(renderState, b.h.f26258d)) {
+            if (Intrinsics.areEqual(renderState, b.h.f26306d)) {
                 String k10 = renderProps.k();
                 String h10 = renderProps.h();
                 String g10 = renderProps.g();
                 if (g10 == null) {
-                    g10 = this.f26247a.getString(jp.e.f30817z);
+                    g10 = this.f26295a.getString(jp.e.f30865z);
                     Intrinsics.checkNotNullExpressionValue(g10, "getString(...)");
                 }
                 String str = g10;
@@ -1305,7 +1305,7 @@ public final class c1 extends bn.k {
                 };
                 String d10 = renderProps.d();
                 if (d10 == null) {
-                    d10 = this.f26247a.getString(jp.e.f30816y);
+                    d10 = this.f26295a.getString(jp.e.f30864y);
                     Intrinsics.checkNotNullExpressionValue(d10, "getString(...)");
                 }
                 return new bq.k(new k(k10, h10, str, j10, function0, d10, new Function0() { // from class: hp.u0
@@ -1316,8 +1316,8 @@ public final class c1 extends bn.k {
                         return f02;
                     }
                 }), bq.j.f6989i);
-            } else if (Intrinsics.areEqual(renderState, b.f.f26256d)) {
-                bn.w.l(context, this.f26248b.a(renderProps.f()), Reflection.typeOf(e0.class), "", new Function1() { // from class: hp.v0
+            } else if (Intrinsics.areEqual(renderState, b.f.f26304d)) {
+                bn.w.l(context, this.f26296b.a(renderProps.f()), Reflection.typeOf(e0.class), "", new Function1() { // from class: hp.v0
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
                         bn.r M;
@@ -1326,9 +1326,9 @@ public final class c1 extends bn.k {
                     }
                 });
                 return null;
-            } else if (Intrinsics.areEqual(renderState, b.e.f26255d)) {
+            } else if (Intrinsics.areEqual(renderState, b.e.f26303d)) {
                 if (renderProps.l()) {
-                    return a.C0104a.a(context, this.f26249c, new x.c(k1.a(renderProps.f()), renderProps.c(), renderProps.b(), renderProps.g(), renderProps.a(), renderProps.j()), null, new Function1() { // from class: hp.w0
+                    return a.C0104a.a(context, this.f26297c, new x.c(k1.a(renderProps.f()), renderProps.c(), renderProps.b(), renderProps.g(), renderProps.a(), renderProps.j()), null, new Function1() { // from class: hp.w0
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj) {
                             bn.r S;
@@ -1339,7 +1339,7 @@ public final class c1 extends bn.k {
                 }
                 context.a("request_device_feature", new f(context, this, renderProps, null));
                 return null;
-            } else if (Intrinsics.areEqual(renderState, b.a.f26251d)) {
+            } else if (Intrinsics.areEqual(renderState, b.a.f26299d)) {
                 return new bq.k(new l(renderProps.f(), true, new Function1() { // from class: hp.x0
                     @Override // kotlin.jvm.functions.Function1
                     public final Object invoke(Object obj) {
@@ -1349,12 +1349,12 @@ public final class c1 extends bn.k {
                     }
                 }), bq.j.f6989i);
             } else {
-                if (Intrinsics.areEqual(renderState, b.g.f26257d)) {
+                if (Intrinsics.areEqual(renderState, b.g.f26305d)) {
                     String k11 = renderProps.k();
                     String i10 = renderProps.i();
                     String g11 = renderProps.g();
                     if (g11 == null) {
-                        g11 = this.f26247a.getString(jp.e.A);
+                        g11 = this.f26295a.getString(jp.e.A);
                         Intrinsics.checkNotNullExpressionValue(g11, "getString(...)");
                     }
                     String str2 = g11;
@@ -1369,7 +1369,7 @@ public final class c1 extends bn.k {
                     };
                     String d11 = renderProps.d();
                     if (d11 == null) {
-                        d11 = this.f26247a.getString(jp.e.f30816y);
+                        d11 = this.f26295a.getString(jp.e.f30864y);
                         Intrinsics.checkNotNullExpressionValue(d11, "getString(...)");
                     }
                     return new bq.k(new k(k11, i10, str2, j11, function02, d11, new Function0() { // from class: hp.z0
@@ -1380,7 +1380,7 @@ public final class c1 extends bn.k {
                             return b02;
                         }
                     }), bq.j.f6989i);
-                } else if (Intrinsics.areEqual(renderState, b.d.f26254d)) {
+                } else if (Intrinsics.areEqual(renderState, b.d.f26302d)) {
                     return null;
                 } else {
                     throw new qr.p();

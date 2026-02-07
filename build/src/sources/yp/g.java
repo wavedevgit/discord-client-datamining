@@ -9,21 +9,21 @@ import org.jetbrains.annotations.NotNull;
 public final class g implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final yp.a f55553d;
+    private final yp.a f55601d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final e f55554e;
+    private final e f55602e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f55555i;
+    private final boolean f55603i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f55551o = new a(null);
+    public static final a f55599o = new a(null);
     @NotNull
     public static final Parcelable.Creator<g> CREATOR = new b();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final g f55552p = new g(yp.a.f55537i, e.f55548e, false);
+    private static final g f55600p = new g(yp.a.f55585i, e.f55596e, false);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -32,7 +32,7 @@ public final class g implements Parcelable {
         }
 
         public final g a() {
-            return g.f55552p;
+            return g.f55600p;
         }
 
         private a() {
@@ -66,21 +66,21 @@ public final class g implements Parcelable {
     public g(yp.a gpsCollectionRequirement, e gpsPrecisionRequirement, boolean z10) {
         Intrinsics.checkNotNullParameter(gpsCollectionRequirement, "gpsCollectionRequirement");
         Intrinsics.checkNotNullParameter(gpsPrecisionRequirement, "gpsPrecisionRequirement");
-        this.f55553d = gpsCollectionRequirement;
-        this.f55554e = gpsPrecisionRequirement;
-        this.f55555i = z10;
+        this.f55601d = gpsCollectionRequirement;
+        this.f55602e = gpsPrecisionRequirement;
+        this.f55603i = z10;
     }
 
     public final yp.a b() {
-        return this.f55553d;
+        return this.f55601d;
     }
 
     public final e c() {
-        return this.f55554e;
+        return this.f55602e;
     }
 
     public final boolean d() {
-        return this.f55555i;
+        return this.f55603i;
     }
 
     @Override // android.os.Parcelable
@@ -89,7 +89,7 @@ public final class g implements Parcelable {
     }
 
     public final boolean e() {
-        if (this.f55553d == yp.a.f55535d) {
+        if (this.f55601d == yp.a.f55583d) {
             return true;
         }
         return false;
@@ -103,28 +103,28 @@ public final class g implements Parcelable {
             return false;
         }
         g gVar = (g) obj;
-        if (this.f55553d == gVar.f55553d && this.f55554e == gVar.f55554e && this.f55555i == gVar.f55555i) {
+        if (this.f55601d == gVar.f55601d && this.f55602e == gVar.f55602e && this.f55603i == gVar.f55603i) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f55553d.hashCode() * 31) + this.f55554e.hashCode()) * 31) + Boolean.hashCode(this.f55555i);
+        return (((this.f55601d.hashCode() * 31) + this.f55602e.hashCode()) * 31) + Boolean.hashCode(this.f55603i);
     }
 
     public String toString() {
-        yp.a aVar = this.f55553d;
-        e eVar = this.f55554e;
-        boolean z10 = this.f55555i;
+        yp.a aVar = this.f55601d;
+        e eVar = this.f55602e;
+        boolean z10 = this.f55603i;
         return "InquirySessionConfig(gpsCollectionRequirement=" + aVar + ", gpsPrecisionRequirement=" + eVar + ", usePlayIntegrity=" + z10 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        this.f55553d.writeToParcel(dest, i10);
-        this.f55554e.writeToParcel(dest, i10);
-        dest.writeInt(this.f55555i ? 1 : 0);
+        this.f55601d.writeToParcel(dest, i10);
+        this.f55602e.writeToParcel(dest, i10);
+        dest.writeInt(this.f55603i ? 1 : 0);
     }
 }

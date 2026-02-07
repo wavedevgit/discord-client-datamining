@@ -9,16 +9,16 @@ public abstract class d extends st.d implements q {
     private final Class<rt.q> chrono;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f39268e;
+    private final transient char f39316e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f39269i;
+    private final transient boolean f39317i;
 
     public d(String str, Class cls, char c10, boolean z10) {
         super(str);
         this.chrono = cls;
-        this.f39268e = c10;
-        this.f39269i = z10;
+        this.f39316e = c10;
+        this.f39317i = z10;
     }
 
     @Override // rt.p
@@ -38,7 +38,7 @@ public abstract class d extends st.d implements q {
 
     @Override // rt.e, rt.p
     public char d() {
-        return this.f39268e;
+        return this.f39316e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

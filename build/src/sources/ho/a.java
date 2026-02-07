@@ -18,13 +18,13 @@ import kotlin.text.StringsKt;
 public final class a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0360a f26222b = new C0360a(null);
+    public static final C0360a f26270b = new C0360a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Charset f26223c = Charset.forName("UTF-8");
+    private static final Charset f26271c = Charset.forName("UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f26224a;
+    private final File f26272a;
 
     /* renamed from: ho.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -39,7 +39,7 @@ public final class a {
 
     public a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f26224a = new File(new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry"), "errors");
+        this.f26272a = new File(new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry"), "errors");
     }
 
     private final String b(Throwable th2) {
@@ -72,7 +72,7 @@ public final class a {
     }
 
     private final File d() {
-        return new File(this.f26224a, "last_error.txt");
+        return new File(this.f26272a, "last_error.txt");
     }
 
     private final void h(File file) {
@@ -100,7 +100,7 @@ public final class a {
                 } else {
                     byte[] byteArray = byteArrayOutputStream.toByteArray();
                     Intrinsics.checkNotNullExpressionValue(byteArray, "toByteArray(...)");
-                    Charset UTF_8 = f26223c;
+                    Charset UTF_8 = f26271c;
                     Intrinsics.checkNotNullExpressionValue(UTF_8, "UTF_8");
                     String str = new String(byteArray, UTF_8);
                     c.a(fileInputStream, null);
@@ -112,10 +112,10 @@ public final class a {
     }
 
     private final void j(File file, String str) {
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file), f26223c);
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file), f26271c);
         try {
             outputStreamWriter.write(str);
-            Unit unit = Unit.f32008a;
+            Unit unit = Unit.f32056a;
             c.a(outputStreamWriter, null);
         } finally {
         }
@@ -135,7 +135,7 @@ public final class a {
 
     public final void g(Throwable error) {
         Intrinsics.checkNotNullParameter(error, "error");
-        h(this.f26224a);
+        h(this.f26272a);
         File d10 = d();
         if (d10.isDirectory()) {
             d10.delete();

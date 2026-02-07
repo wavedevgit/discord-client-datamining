@@ -66,7 +66,7 @@ public final class VideoCaptureConfig {
             a aVar = a.f6227e;
             if (list.contains(aVar)) {
                 if (f.e(context)) {
-                    Result.a aVar2 = Result.f32005e;
+                    Result.a aVar2 = Result.f32053e;
                     return Result.b(c.a(new RuntimeException()));
                 }
                 return Result.b(aVar);
@@ -76,15 +76,15 @@ public final class VideoCaptureConfig {
                 for (NextStep.Selfie.CaptureFileType captureFileType : list2) {
                     if (captureFileType != NextStep.Selfie.CaptureFileType.Video && captureFileType != NextStep.Selfie.CaptureFileType.Unknown) {
                         if (f.e(context)) {
-                            Result.a aVar3 = Result.f32005e;
+                            Result.a aVar3 = Result.f32053e;
                             return Result.b(c.a(new RuntimeException()));
                         }
-                        Result.a aVar4 = Result.f32005e;
+                        Result.a aVar4 = Result.f32053e;
                         return Result.b(a.f6228i);
                     }
                 }
             }
-            Result.a aVar5 = Result.f32005e;
+            Result.a aVar5 = Result.f32053e;
             return Result.b(c.a(new RuntimeException()));
         }
         if (bool2 != null) {
@@ -101,10 +101,10 @@ public final class VideoCaptureConfig {
             z12 = bool.booleanValue();
         }
         if (z12) {
-            Result.a aVar7 = Result.f32005e;
+            Result.a aVar7 = Result.f32053e;
             return Result.b(a.f6228i);
         }
-        Result.a aVar8 = Result.f32005e;
+        Result.a aVar8 = Result.f32053e;
         a aVar9 = (a) CollectionsKt.firstOrNull(this.f19414c);
         if (aVar9 == null) {
             aVar9 = a.f6228i;
@@ -135,7 +135,7 @@ public final class VideoCaptureConfig {
         boolean z10;
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         if (!this.f19413b.contains(NextStep.Selfie.CaptureFileType.Video)) {
-            Result.a aVar = Result.f32005e;
+            Result.a aVar = Result.f32053e;
             return Result.b(Boolean.FALSE);
         }
         Object f10 = f(bool, bool2, applicationContext);
@@ -168,7 +168,7 @@ public final class VideoCaptureConfig {
         if (this.f19413b.contains(NextStep.Selfie.CaptureFileType.Video)) {
             return e(bool, bool2, applicationContext);
         }
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(a.f6228i);
     }
 

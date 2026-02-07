@@ -5,7 +5,7 @@ import android.os.Build;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f25165a;
+    public static final int f25213a;
 
     static {
         int i10;
@@ -14,6 +14,6 @@ public abstract class a {
         } else {
             i10 = 0;
         }
-        f25165a = i10;
+        f25213a = i10;
     }
 }

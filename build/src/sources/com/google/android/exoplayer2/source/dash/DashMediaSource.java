@@ -216,7 +216,7 @@ public final class DashMediaSource extends qd.a {
 
         public b(long j10, long j11, long j12, int i10, long j13, long j14, long j15, ud.c cVar, MediaItem mediaItem, MediaItem.g gVar) {
             boolean z10;
-            boolean z11 = cVar.f51320d;
+            boolean z11 = cVar.f51368d;
             if (gVar != null) {
                 z10 = true;
             } else {
@@ -257,14 +257,14 @@ public final class DashMediaSource extends qd.a {
             }
             ud.g d10 = this.f12737x.d(i10);
             int a10 = d10.a(2);
-            if (a10 != -1 && (l10 = ((ud.j) ((ud.a) d10.f51354c.get(a10)).f51309c.get(0)).l()) != null && l10.g(g10) != 0) {
+            if (a10 != -1 && (l10 = ((ud.j) ((ud.a) d10.f51402c.get(a10)).f51357c.get(0)).l()) != null && l10.g(g10) != 0) {
                 return (j11 + l10.b(l10.f(j12, g10))) - j12;
             }
             return j11;
         }
 
         private static boolean x(ud.c cVar) {
-            if (cVar.f51320d && cVar.f51321e != -9223372036854775807L && cVar.f51318b == -9223372036854775807L) {
+            if (cVar.f51368d && cVar.f51369e != -9223372036854775807L && cVar.f51366b == -9223372036854775807L) {
                 return true;
             }
             return false;
@@ -285,14 +285,14 @@ public final class DashMediaSource extends qd.a {
             ne.a.c(i10, 0, m());
             Integer num = null;
             if (z10) {
-                str = this.f12737x.d(i10).f51352a;
+                str = this.f12737x.d(i10).f51400a;
             } else {
                 str = null;
             }
             if (z10) {
                 num = Integer.valueOf(this.f12733t + i10);
             }
-            return bVar.v(str, num, 0, this.f12737x.g(i10), w0.K0(this.f12737x.d(i10).f51353b - this.f12737x.d(0).f51353b) - this.f12734u);
+            return bVar.v(str, num, 0, this.f12737x.g(i10), w0.K0(this.f12737x.d(i10).f51401b - this.f12737x.d(0).f51401b) - this.f12734u);
         }
 
         @Override // com.google.android.exoplayer2.Timeline
@@ -357,7 +357,7 @@ public final class DashMediaSource extends qd.a {
         public Long a(Uri uri, InputStream inputStream) {
             long j10;
             long parseLong;
-            String readLine = new BufferedReader(new InputStreamReader(inputStream, mi.d.f37171c)).readLine();
+            String readLine = new BufferedReader(new InputStreamReader(inputStream, mi.d.f37219c)).readLine();
             try {
                 Matcher matcher = f12741a.matcher(readLine);
                 if (matcher.matches()) {
@@ -492,13 +492,13 @@ public final class DashMediaSource extends qd.a {
     }
 
     private static long K(ud.g gVar, long j10, long j11) {
-        long K0 = w0.K0(gVar.f51353b);
+        long K0 = w0.K0(gVar.f51401b);
         boolean O = O(gVar);
         long j12 = LongCompanionObject.MAX_VALUE;
-        for (int i10 = 0; i10 < gVar.f51354c.size(); i10++) {
-            ud.a aVar = (ud.a) gVar.f51354c.get(i10);
-            List list = aVar.f51309c;
-            int i11 = aVar.f51308b;
+        for (int i10 = 0; i10 < gVar.f51402c.size(); i10++) {
+            ud.a aVar = (ud.a) gVar.f51402c.get(i10);
+            List list = aVar.f51357c;
+            int i11 = aVar.f51356b;
             boolean z10 = true;
             z10 = (i11 == 1 || i11 == 2) ? false : false;
             if ((!O || !z10) && !list.isEmpty()) {
@@ -518,13 +518,13 @@ public final class DashMediaSource extends qd.a {
     }
 
     private static long L(ud.g gVar, long j10, long j11) {
-        long K0 = w0.K0(gVar.f51353b);
+        long K0 = w0.K0(gVar.f51401b);
         boolean O = O(gVar);
         long j12 = K0;
-        for (int i10 = 0; i10 < gVar.f51354c.size(); i10++) {
-            ud.a aVar = (ud.a) gVar.f51354c.get(i10);
-            List list = aVar.f51309c;
-            int i11 = aVar.f51308b;
+        for (int i10 = 0; i10 < gVar.f51402c.size(); i10++) {
+            ud.a aVar = (ud.a) gVar.f51402c.get(i10);
+            List list = aVar.f51357c;
+            int i11 = aVar.f51356b;
             boolean z10 = true;
             z10 = (i11 == 1 || i11 == 2) ? false : false;
             if ((!O || !z10) && !list.isEmpty()) {
@@ -542,13 +542,13 @@ public final class DashMediaSource extends qd.a {
         td.f l10;
         int e10 = cVar.e() - 1;
         ud.g d10 = cVar.d(e10);
-        long K0 = w0.K0(d10.f51353b);
+        long K0 = w0.K0(d10.f51401b);
         long g10 = cVar.g(e10);
         long K02 = w0.K0(j10);
-        long K03 = w0.K0(cVar.f51317a);
+        long K03 = w0.K0(cVar.f51365a);
         long K04 = w0.K0(5000L);
-        for (int i10 = 0; i10 < d10.f51354c.size(); i10++) {
-            List list = ((ud.a) d10.f51354c.get(i10)).f51309c;
+        for (int i10 = 0; i10 < d10.f51402c.size(); i10++) {
+            List list = ((ud.a) d10.f51402c.get(i10)).f51357c;
             if (!list.isEmpty() && (l10 = ((ud.j) list.get(0)).l()) != null) {
                 long d11 = ((K03 + K0) + l10.d(g10, K02)) - K02;
                 if (d11 < K04 - 100000 || (d11 > K04 && d11 < K04 + 100000)) {
@@ -564,8 +564,8 @@ public final class DashMediaSource extends qd.a {
     }
 
     private static boolean O(ud.g gVar) {
-        for (int i10 = 0; i10 < gVar.f51354c.size(); i10++) {
-            int i11 = ((ud.a) gVar.f51354c.get(i10)).f51308b;
+        for (int i10 = 0; i10 < gVar.f51402c.size(); i10++) {
+            int i11 = ((ud.a) gVar.f51402c.get(i10)).f51356b;
             if (i11 == 1 || i11 == 2) {
                 return true;
             }
@@ -574,8 +574,8 @@ public final class DashMediaSource extends qd.a {
     }
 
     private static boolean P(ud.g gVar) {
-        for (int i10 = 0; i10 < gVar.f51354c.size(); i10++) {
-            td.f l10 = ((ud.j) ((ud.a) gVar.f51354c.get(i10)).f51309c.get(0)).l();
+        for (int i10 = 0; i10 < gVar.f51402c.size(); i10++) {
+            td.f l10 = ((ud.j) ((ud.a) gVar.f51402c.get(i10)).f51357c.get(0)).l();
             if (l10 == null || l10.h()) {
                 return true;
             }
@@ -620,27 +620,27 @@ public final class DashMediaSource extends qd.a {
         long K0 = w0.K0(w0.f0(this.X));
         long L = L(d10, this.T.g(0), K0);
         long K = K(d11, g10, K0);
-        if (this.T.f51320d && !P(d11)) {
+        if (this.T.f51368d && !P(d11)) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z11) {
-            long j13 = this.T.f51322f;
+            long j13 = this.T.f51370f;
             if (j13 != -9223372036854775807L) {
                 L = Math.max(L, K - w0.K0(j13));
             }
         }
         long j14 = K - L;
         ud.c cVar = this.T;
-        if (cVar.f51320d) {
-            if (cVar.f51317a != -9223372036854775807L) {
+        if (cVar.f51368d) {
+            if (cVar.f51365a != -9223372036854775807L) {
                 z12 = true;
             }
             ne.a.g(z12);
-            long K02 = (K0 - w0.K0(this.T.f51317a)) - L;
+            long K02 = (K0 - w0.K0(this.T.f51365a)) - L;
             h0(K02, j14);
-            long p12 = this.T.f51317a + w0.p1(L);
+            long p12 = this.T.f51365a + w0.p1(L);
             long K03 = K02 - w0.K0(this.Q.f11699d);
             j10 = 0;
             long min = Math.min(this.B, j14 / 2);
@@ -655,13 +655,13 @@ public final class DashMediaSource extends qd.a {
             j11 = -9223372036854775807L;
             j12 = 0;
         }
-        long K04 = L - w0.K0(d10.f51353b);
+        long K04 = L - w0.K0(d10.f51401b);
         ud.c cVar2 = this.T;
-        long j15 = cVar2.f51317a;
+        long j15 = cVar2.f51365a;
         long j16 = this.X;
         int i11 = this.f12712a0;
         MediaItem mediaItem = this.f12713s;
-        if (cVar2.f51320d) {
+        if (cVar2.f51368d) {
             gVar = this.Q;
         } else {
             gVar = null;
@@ -676,8 +676,8 @@ public final class DashMediaSource extends qd.a {
                 g0();
             } else if (z10) {
                 ud.c cVar3 = this.T;
-                if (cVar3.f51320d) {
-                    long j17 = cVar3.f51321e;
+                if (cVar3.f51368d) {
+                    long j17 = cVar3.f51369e;
                     if (j17 != -9223372036854775807L) {
                         if (j17 == j10) {
                             j17 = 5000;
@@ -690,7 +690,7 @@ public final class DashMediaSource extends qd.a {
     }
 
     private void b0(o oVar) {
-        String str = oVar.f51407a;
+        String str = oVar.f51455a;
         if (!w0.c(str, "urn:mpeg:dash:utc:direct:2014") && !w0.c(str, "urn:mpeg:dash:utc:direct:2012")) {
             if (!w0.c(str, "urn:mpeg:dash:utc:http-iso:2014") && !w0.c(str, "urn:mpeg:dash:utc:http-iso:2012")) {
                 if (!w0.c(str, "urn:mpeg:dash:utc:http-xsdate:2014") && !w0.c(str, "urn:mpeg:dash:utc:http-xsdate:2012")) {
@@ -713,14 +713,14 @@ public final class DashMediaSource extends qd.a {
 
     private void c0(o oVar) {
         try {
-            Z(w0.R0(oVar.f51408b) - this.W);
+            Z(w0.R0(oVar.f51456b) - this.W);
         } catch (l0 e10) {
             Y(e10);
         }
     }
 
     private void d0(o oVar, k.a aVar) {
-        f0(new k(this.L, Uri.parse(oVar.f51408b), 5, aVar), new g(this, null), 1);
+        f0(new k(this.L, Uri.parse(oVar.f51456b), 5, aVar), new g(this, null), 1);
     }
 
     private void e0(long j10) {
@@ -850,18 +850,18 @@ public final class DashMediaSource extends qd.a {
         } else {
             e10 = cVar2.e();
         }
-        long j12 = cVar.d(0).f51353b;
+        long j12 = cVar.d(0).f51401b;
         int i10 = 0;
-        while (i10 < e10 && this.T.d(i10).f51353b < j12) {
+        while (i10 < e10 && this.T.d(i10).f51401b < j12) {
             i10++;
         }
-        if (cVar.f51320d) {
+        if (cVar.f51368d) {
             if (e10 - i10 > cVar.e()) {
                 ne.y.i("DashMediaSource", "Loaded out of sync manifest");
             } else {
                 long j13 = this.Z;
-                if (j13 != -9223372036854775807L && cVar.f51324h * 1000 <= j13) {
-                    ne.y.i("DashMediaSource", "Loaded stale dynamic manifest: " + cVar.f51324h + ", " + this.Z);
+                if (j13 != -9223372036854775807L && cVar.f51372h * 1000 <= j13) {
+                    ne.y.i("DashMediaSource", "Loaded stale dynamic manifest: " + cVar.f51372h + ", " + this.Z);
                 } else {
                     this.Y = 0;
                 }
@@ -877,13 +877,13 @@ public final class DashMediaSource extends qd.a {
             }
         }
         this.T = cVar;
-        this.U = cVar.f51320d & this.U;
+        this.U = cVar.f51368d & this.U;
         this.V = j10 - j11;
         this.W = j10;
         synchronized (this.F) {
             try {
                 if (kVar.f13447b.f13265a == this.R) {
-                    Uri uri = this.T.f51327k;
+                    Uri uri = this.T.f51375k;
                     if (uri == null) {
                         uri = kVar.f();
                     }
@@ -895,8 +895,8 @@ public final class DashMediaSource extends qd.a {
         }
         if (e10 == 0) {
             ud.c cVar3 = this.T;
-            if (cVar3.f51320d) {
-                o oVar = cVar3.f51325i;
+            if (cVar3.f51368d) {
+                o oVar = cVar3.f51373i;
                 if (oVar != null) {
                     b0(oVar);
                     return;
@@ -957,7 +957,7 @@ public final class DashMediaSource extends qd.a {
 
     @Override // qd.r
     public p h(r.b bVar, le.b bVar2, long j10) {
-        int intValue = ((Integer) bVar.f46817a).intValue() - this.f12712a0;
+        int intValue = ((Integer) bVar.f46865a).intValue() - this.f12712a0;
         y.a w10 = w(bVar);
         com.google.android.exoplayer2.source.dash.b bVar3 = new com.google.android.exoplayer2.source.dash.b(this.f12712a0 + intValue, this.T, this.f12720z, intValue, this.f12716v, this.N, null, this.f12718x, u(bVar), this.f12719y, w10, this.X, this.K, bVar2, this.f12717w, this.J, z());
         this.G.put(bVar3.f12745d, bVar3);
@@ -993,7 +993,7 @@ public final class DashMediaSource extends qd.a {
         this.Z = -9223372036854775807L;
         this.X = -9223372036854775807L;
         if (z10) {
-            ne.a.g(true ^ cVar.f51320d);
+            ne.a.g(true ^ cVar.f51368d);
             this.E = null;
             this.H = null;
             this.I = null;

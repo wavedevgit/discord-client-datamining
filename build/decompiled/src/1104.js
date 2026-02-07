@@ -11,13 +11,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = _closure1_slot2;
         var2 = function*() { // Environment: var2
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun12149: for (var _fun12149_ip = 0;;) switch (_fun12149_ip) {
+                _fun12151: for (var _fun12151_ip = 0;;) switch (_fun12151_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun12149_ip = 141;
-                            continue _fun12149
+                            _fun12151_ip = 141;
+                            continue _fun12151
                         }
                     case 10:
                         var5 = _closure1_slot0;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var5.getClient;
                         var5 = var3.bind(var5)();
                         if (var5) {
-                            _fun12149_ip = 57;
-                            continue _fun12149
+                            _fun12151_ip = 57;
+                            continue _fun12151
                         }
                     case 48:
                         var3 = 'no-client-active';
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var5.getDsn;
                         var3 = var3.bind(var5)();
                         if (var3) {
-                            _fun12149_ip = 79;
-                            continue _fun12149
+                            _fun12151_ip = 79;
+                            continue _fun12151
                         }
                     case 70:
                         var3 = 'no-dsn-configured';
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 118:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun12149_ip = 127;
-                            continue _fun12149
+                            _fun12151_ip = 127;
+                            continue _fun12151
                         }
                     case 124: // try_end0
                         return var2;

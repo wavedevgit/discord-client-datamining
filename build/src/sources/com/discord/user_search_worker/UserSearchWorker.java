@@ -226,7 +226,7 @@ public final class UserSearchWorker {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:35:0x00a1, code lost:
@@ -376,8 +376,8 @@ public final class UserSearchWorker {
             userSearchWorker.onResults.invoke(arrayList, query, str);
             return;
         }
-        String c12 = Regex.f34931e.c(query);
-        m mVar = m.f34991i;
+        String c12 = Regex.f34979e.c(query);
+        m mVar = m.f35039i;
         Regex regex = new Regex("^" + c12, mVar);
         Regex regex2 = new Regex(c12, mVar);
         for (Map.Entry<String, UserSearchTransformedUser> entry : userSearchWorker.users.entrySet()) {

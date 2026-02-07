@@ -9,13 +9,13 @@ import okio.ByteString;
 public final class a0 extends kotlin.collections.d implements RandomAccess {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f48180o = new a(null);
+    public static final a f48228o = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final ByteString[] f48181e;
+    private final ByteString[] f48229e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int[] f48182i;
+    private final int[] f48230i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -176,12 +176,12 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     }
 
     public static final a0 l(ByteString... byteStringArr) {
-        return f48180o.d(byteStringArr);
+        return f48228o.d(byteStringArr);
     }
 
     @Override // kotlin.collections.b
     public int c() {
-        return this.f48181e.length;
+        return this.f48229e.length;
     }
 
     @Override // kotlin.collections.b, java.util.Collection
@@ -199,15 +199,15 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     @Override // kotlin.collections.d, java.util.List
     /* renamed from: f */
     public ByteString get(int i10) {
-        return this.f48181e[i10];
+        return this.f48229e[i10];
     }
 
     public final ByteString[] g() {
-        return this.f48181e;
+        return this.f48229e;
     }
 
     public final int[] h() {
-        return this.f48182i;
+        return this.f48230i;
     }
 
     public /* bridge */ int i(ByteString byteString) {
@@ -235,7 +235,7 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     }
 
     private a0(ByteString[] byteStringArr, int[] iArr) {
-        this.f48181e = byteStringArr;
-        this.f48182i = iArr;
+        this.f48229e = byteStringArr;
+        this.f48230i = iArr;
     }
 }

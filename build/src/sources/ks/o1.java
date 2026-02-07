@@ -7,16 +7,16 @@ import ks.u1;
 public class o1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final u1 f35380d;
+    private final u1 f35428d;
 
     public o1(u1 u1Var) {
-        this.f35380d = u1Var;
+        this.f35428d = u1Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         u1.a D;
-        D = u1.D(this.f35380d);
+        D = u1.D(this.f35428d);
         return D;
     }
 }

@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun84035: for (var _fun84035_ip = 0;;) switch (_fun84035_ip) {
+        _fun84466: for (var _fun84466_ip = 0;;) switch (_fun84466_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.quest;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.visible;
                 var4 = undefined;
                 if (!(var8 === var4)) {
-                    _fun84035_ip = 40;
-                    continue _fun84035
+                    _fun84466_ip = 40;
+                    continue _fun84466
                 }
             case 38:
                 var8 = true;
@@ -145,22 +145,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var9;
                 var1[2] = var8;
                 var0 = function() { // Environment: var0
-                    _fun84036: for (var _fun84036_ip = 0;;) switch (_fun84036_ip) {
+                    _fun84467: for (var _fun84467_ip = 0;;) switch (_fun84467_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var3 = null;
                             var2 = var3 != var0;
                             var0 = null;
                             if (!var2) {
-                                _fun84036_ip = 72;
-                                continue _fun84036
+                                _fun84467_ip = 72;
+                                continue _fun84467
                             }
                         case 18:
                             var2 = _closure2_slot1;
                             var0 = null;
                             if (!var2) {
-                                _fun84036_ip = 72;
-                                continue _fun84036
+                                _fun84467_ip = 72;
+                                continue _fun84467
                             }
                         case 27:
                             var4 = _closure1_slot0;
@@ -182,15 +182,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'success';
                 var0 = null;
                 if (!(var1 === var3)) {
-                    _fun84035_ip = 339;
-                    continue _fun84035
+                    _fun84466_ip = 339;
+                    continue _fun84466
                 }
             case 158:
                 var1 = var2 == var9;
                 var0 = null;
                 if (var1) {
-                    _fun84035_ip = 339;
-                    continue _fun84035
+                    _fun84466_ip = 339;
+                    continue _fun84466
                 }
             case 170:
                 var3 = _closure1_slot5;
@@ -242,4 +242,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VideoQuestCaptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 669, 10758, 10760, 4074, 3943, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 669, 10796, 10798, 4073, 3942, 2]);

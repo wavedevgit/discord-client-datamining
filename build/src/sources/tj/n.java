@@ -9,27 +9,27 @@ import java.util.concurrent.atomic.AtomicReference;
 public class n {
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f50661b;
+    private boolean f50709b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f50660a = new Object();
+    private final Object f50708a = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Queue f50662c = new ArrayDeque();
+    private final Queue f50710c = new ArrayDeque();
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicReference f50663d = new AtomicReference();
+    private final AtomicReference f50711d = new AtomicReference();
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void d() {
-        synchronized (this.f50660a) {
+        synchronized (this.f50708a) {
             try {
-                if (this.f50662c.isEmpty()) {
-                    this.f50661b = false;
+                if (this.f50710c.isEmpty()) {
+                    this.f50709b = false;
                     return;
                 }
-                h0 h0Var = (h0) this.f50662c.remove();
-                e(h0Var.f50621a, h0Var.f50622b);
+                h0 h0Var = (h0) this.f50710c.remove();
+                e(h0Var.f50669a, h0Var.f50670b);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -61,13 +61,13 @@ public class n {
     }
 
     public void a(Executor executor, Runnable runnable) {
-        synchronized (this.f50660a) {
+        synchronized (this.f50708a) {
             try {
-                if (this.f50661b) {
-                    this.f50662c.add(new h0(executor, runnable, null));
+                if (this.f50709b) {
+                    this.f50710c.add(new h0(executor, runnable, null));
                     return;
                 }
-                this.f50661b = true;
+                this.f50709b = true;
                 e(executor, runnable);
             } catch (Throwable th2) {
                 throw th2;

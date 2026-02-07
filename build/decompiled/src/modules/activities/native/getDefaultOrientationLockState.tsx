@@ -9,13 +9,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var4;
     var1 = function arg0() {
-        _fun64842: for (var _fun64842_ip = 0;;) switch (_fun64842_ip) {
+        _fun65292: for (var _fun65292_ip = 0;;) switch (_fun65292_ip) {
             case 0:
                 var2 = arg0;
                 var3 = null;
                 if (!(var3 == var2)) {
-                    _fun64842_ip = 13;
-                    continue _fun64842
+                    _fun65292_ip = 13;
+                    continue _fun65292
                 }
             case 9:
                 var0 = undefined;
@@ -32,25 +32,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.embeddedActivityConfig;
                 var3 = var3 == var2;
                 if (var0) {
-                    _fun64842_ip = 74;
-                    continue _fun64842
+                    _fun65292_ip = 74;
+                    continue _fun65292
                 }
             case 61:
                 var0 = undefined;
                 if (var3) {
-                    _fun64842_ip = 72;
-                    continue _fun64842
+                    _fun65292_ip = 72;
+                    continue _fun65292
                 }
             case 66:
                 var0 = var2.default_orientation_lock_state;
             case 72:
-                _fun64842_ip = 88;
-                continue _fun64842;
+                _fun65292_ip = 88;
+                continue _fun65292;
             case 74:
                 var1 = undefined;
                 if (var3) {
-                    _fun64842_ip = 85;
-                    continue _fun64842
+                    _fun65292_ip = 85;
+                    continue _fun65292
                 }
             case 79:
                 var1 = var2.tablet_default_orientation_lock_state;
@@ -77,14 +77,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/activities/native/getDefaultOrientationLockState.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0, arg1() {
-        _fun64843: for (var _fun64843_ip = 0;;) switch (_fun64843_ip) {
+        _fun65293: for (var _fun65293_ip = 0;;) switch (_fun65293_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun64843_ip = 26;
-                    continue _fun64843
+                    _fun65293_ip = 26;
+                    continue _fun65293
                 }
             case 12:
                 var2 = _closure1_slot3;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var1)(var4);
             case 26:
                 if (!(var0 != var3)) {
-                    _fun64843_ip = 88;
-                    continue _fun64843
+                    _fun65293_ip = 88;
+                    continue _fun65293
                 }
             case 30:
                 var2 = _closure1_slot1;

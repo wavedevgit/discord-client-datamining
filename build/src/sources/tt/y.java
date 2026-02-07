@@ -6,17 +6,17 @@ import java.util.Set;
 public final class y implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f51104d;
+    private final int f51152d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final rt.n f51105e;
+    private final rt.n f51153e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y(rt.n nVar, int i10) {
         if (nVar != null) {
             if (i10 >= 1) {
-                this.f51105e = nVar;
-                this.f51104d = i10;
+                this.f51153e = nVar;
+                this.f51152d = i10;
                 return;
             }
             throw new IllegalArgumentException("Must be positive: " + i10);
@@ -30,11 +30,11 @@ public final class y implements h {
         int i11;
         int f10 = sVar.f();
         int length = charSequence.length();
-        if (this.f51105e == null) {
-            i10 = length - this.f51104d;
+        if (this.f51153e == null) {
+            i10 = length - this.f51152d;
         } else {
             int i12 = f10;
-            for (int i13 = 0; i13 < this.f51104d && (i11 = i13 + f10) < length && this.f51105e.test(Character.valueOf(charSequence.charAt(i11))); i13++) {
+            for (int i13 = 0; i13 < this.f51152d && (i11 = i13 + f10) < length && this.f51153e.test(Character.valueOf(charSequence.charAt(i11))); i13++) {
                 i12++;
             }
             i10 = i12;
@@ -51,9 +51,9 @@ public final class y implements h {
         }
         if (obj instanceof y) {
             y yVar = (y) obj;
-            if (this.f51104d == yVar.f51104d) {
-                rt.n nVar = this.f51105e;
-                rt.n nVar2 = yVar.f51105e;
+            if (this.f51152d == yVar.f51152d) {
+                rt.n nVar = this.f51153e;
+                rt.n nVar2 = yVar.f51153e;
                 if (nVar != null ? nVar.equals(nVar2) : nVar2 == null) {
                     return true;
                 }
@@ -78,24 +78,24 @@ public final class y implements h {
     }
 
     public int hashCode() {
-        rt.n nVar = this.f51105e;
+        rt.n nVar = this.f51153e;
         if (nVar == null) {
-            return this.f51104d;
+            return this.f51152d;
         }
-        return nVar.hashCode() ^ (~this.f51104d);
+        return nVar.hashCode() ^ (~this.f51152d);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(y.class.getName());
-        if (this.f51105e == null) {
+        if (this.f51153e == null) {
             sb2.append("[keepRemainingChars=");
-            sb2.append(this.f51104d);
+            sb2.append(this.f51152d);
         } else {
             sb2.append("[condition=");
-            sb2.append(this.f51105e);
+            sb2.append(this.f51153e);
             sb2.append(", maxIterations=");
-            sb2.append(this.f51104d);
+            sb2.append(this.f51152d);
         }
         sb2.append(']');
         return sb2.toString();

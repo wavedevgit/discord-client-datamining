@@ -21,7 +21,7 @@ public abstract class SearchableSelectComponent extends SelectComponent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.bridge.botuikit.j
+    private static final Lazy $cachedSerializer$delegate = qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.bridge.botuikit.j
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _init_$_anonymous_;

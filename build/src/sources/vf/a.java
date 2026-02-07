@@ -15,19 +15,19 @@ import yg.k;
 public class a extends ef.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f52641k;
+    private static final a.g f52689k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ef.a f52642l;
+    private static final ef.a f52690l;
 
     static {
         a.g gVar = new a.g();
-        f52641k = gVar;
-        f52642l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
+        f52689k = gVar;
+        f52690l = new ef.a("Fido.FIDO2_API", new t5(), gVar);
     }
 
     public a(Activity activity) {
-        super(activity, f52642l, a.d.f21490c, new ff.a());
+        super(activity, f52690l, a.d.f21490c, new ff.a());
     }
 
     public Task C(final r rVar) {

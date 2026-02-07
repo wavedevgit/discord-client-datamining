@@ -10,7 +10,7 @@ import java.util.Spliterators;
 public abstract class p extends AbstractCollection implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object[] f31684d = new Object[0];
+    private static final Object[] f31732d = new Object[0];
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final boolean add(Object obj) {
@@ -59,7 +59,7 @@ public abstract class p extends AbstractCollection implements Serializable {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final Object[] toArray() {
-        return toArray(f31684d);
+        return toArray(f31732d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection

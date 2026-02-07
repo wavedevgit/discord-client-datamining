@@ -337,7 +337,7 @@ public final class ReactionView extends LinearLayout {
     public static final Unit configureLabels$lambda$0(RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("emojiPreview", "{emojiPreview}");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void configureTextColor(BurstColorPalette burstColorPalette) {

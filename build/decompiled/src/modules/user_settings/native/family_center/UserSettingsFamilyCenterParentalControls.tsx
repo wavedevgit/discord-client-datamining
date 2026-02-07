@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/family_center/UserSettingsFamilyCenterParentalControls.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun82604: for (var _fun82604_ip = 0;;) switch (_fun82604_ip) {
+        _fun83035: for (var _fun83035_ip = 0;;) switch (_fun83035_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var3 = undefined;
@@ -122,15 +122,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 == var5;
                 var1 = undefined;
                 if (var6) {
-                    _fun82604_ip = 157;
-                    continue _fun82604
+                    _fun83035_ip = 157;
+                    continue _fun83035
                 }
             case 151:
                 var1 = var5.selectedSubPage;
             case 157:
                 if (!(var2 == var1)) {
-                    _fun82604_ip = 171;
-                    continue _fun82604
+                    _fun83035_ip = 171;
+                    continue _fun83035
                 }
             case 161:
                 var2 = _closure1_slot7;
@@ -295,4 +295,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4595, 33, 1297, 671, 5734, 5584, 7576, 1234, 10580, 10581, 7822, 4596, 8216, 4737, 7830, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4594, 33, 1297, 671, 5777, 5631, 7620, 1234, 10618, 10619, 7866, 4595, 8260, 4736, 7874, 2]);

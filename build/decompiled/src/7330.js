@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/native/images/perks',
-        'width': 300.5,
-        'height': 175,
+        'httpServerLocation': '/assets/images/native/premium/illustrations',
+        'width': 180,
+        'height': 108.5,
         'scales': null,
-        'hash': 'cd214b5502d42e0d86b5bf4c01260ed5',
-        'name': 'grey_server_boosts',
+        'hash': '9b8bd10d33176958273580b349a5855d',
+        'name': 'img_what_you_lose_hd_video',
         'type': 'png'
     };
     var4 = [2, 3];

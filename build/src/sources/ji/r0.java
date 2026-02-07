@@ -9,12 +9,12 @@ import java.util.Locale;
 public final class r0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f29920a;
+    private final String f29968a;
 
     public r0(String str) {
         int myUid = Process.myUid();
         int myPid = Process.myPid();
-        this.f29920a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
+        this.f29968a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
     }
 
     private static String c(String str, String str2, Object... objArr) {
@@ -31,14 +31,14 @@ public final class r0 {
 
     public final int a(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 3)) {
-            return Log.d("PlayCore", c(this.f29920a, str, objArr));
+            return Log.d("PlayCore", c(this.f29968a, str, objArr));
         }
         return 0;
     }
 
     public final int b(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", c(this.f29920a, str, objArr));
+            return Log.e("PlayCore", c(this.f29968a, str, objArr));
         }
         return 0;
     }

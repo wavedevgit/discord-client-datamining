@@ -224,21 +224,21 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$7(EmojiPickerView emojiPickerView, Integer num, Integer num2) {
         emojiPickerView.onItemsChanged(num, num2);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$8(Function3 function3, EmojiPickerView emojiPickerView, Long l10, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         function3.invoke(emojiPickerView, l10, emojiName);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$9(Function3 function3, EmojiPickerView emojiPickerView, Long l10, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         function3.invoke(emojiPickerView, l10, emojiName);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final void configureMountedChild(View view) {
@@ -366,13 +366,13 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     public static final Unit scroller_delegate$lambda$5$lambda$2(Function2 function2, EmojiPickerView emojiPickerView, EmojiPickerScroller.ScrollEvent scrollEvent) {
         Intrinsics.checkNotNullParameter(scrollEvent, "scrollEvent");
         function2.invoke(emojiPickerView, scrollEvent);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scroller_delegate$lambda$5$lambda$3(EmojiPickerView emojiPickerView) {
         emojiPickerView.configureMountedChildren();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -383,7 +383,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
         } else {
             function22.invoke(emojiPickerView, scrollEvent);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -401,7 +401,7 @@ public final class EmojiPickerView extends RecyclerView implements EmojiPickerCa
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit visibilityTracker_delegate$lambda$1$lambda$0(Function2 function2, EmojiPickerView emojiPickerView, boolean z10) {
         function2.invoke(emojiPickerView, Boolean.valueOf(z10));
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // android.view.ViewGroup

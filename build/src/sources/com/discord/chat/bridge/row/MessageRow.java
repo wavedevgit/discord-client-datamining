@@ -53,7 +53,7 @@ public final class MessageRow extends Row {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f48044e, new Function0() { // from class: com.discord.chat.bridge.row.d
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, null, null, null, l.b(o.f48092e, new Function0() { // from class: com.discord.chat.bridge.row.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -154,26 +154,26 @@ public final class MessageRow extends Row {
         compositeEncoder.x(serialDescriptor, 0, messageRow.getIndex());
         compositeEncoder.s(serialDescriptor, 1, ChangeType.Serializer.INSTANCE, messageRow.getChangeType());
         if (compositeEncoder.A(serialDescriptor, 2) || messageRow.jumped != null) {
-            compositeEncoder.l(serialDescriptor, 2, h.f31005a, messageRow.jumped);
+            compositeEncoder.l(serialDescriptor, 2, h.f31053a, messageRow.jumped);
         }
         compositeEncoder.s(serialDescriptor, 3, MessageSerializer.INSTANCE, messageRow.message);
         if (compositeEncoder.A(serialDescriptor, 4) || messageRow.canAddNewReactions != null) {
-            compositeEncoder.l(serialDescriptor, 4, h.f31005a, messageRow.canAddNewReactions);
+            compositeEncoder.l(serialDescriptor, 4, h.f31053a, messageRow.canAddNewReactions);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || messageRow.addNewReactionAccessibilityLabel != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, messageRow.addNewReactionAccessibilityLabel);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, messageRow.addNewReactionAccessibilityLabel);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || messageRow.reactionsTheme != null) {
             compositeEncoder.l(serialDescriptor, 6, ReactionsTheme$$serializer.INSTANCE, messageRow.reactionsTheme);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || messageRow.showReplyButton != null) {
-            compositeEncoder.l(serialDescriptor, 7, h.f31005a, messageRow.showReplyButton);
+            compositeEncoder.l(serialDescriptor, 7, h.f31053a, messageRow.showReplyButton);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || messageRow.renderContentOnly) {
             compositeEncoder.y(serialDescriptor, 8, messageRow.renderContentOnly);
         }
         if (compositeEncoder.A(serialDescriptor, 9) || messageRow.reactTag != null) {
-            compositeEncoder.l(serialDescriptor, 9, p0.f31057a, messageRow.reactTag);
+            compositeEncoder.l(serialDescriptor, 9, p0.f31105a, messageRow.reactTag);
         }
         if (compositeEncoder.A(serialDescriptor, 10) || messageRow.truncation != null) {
             compositeEncoder.l(serialDescriptor, 10, Truncation$$serializer.INSTANCE, messageRow.truncation);

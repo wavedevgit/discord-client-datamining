@@ -12,35 +12,35 @@ import java.util.concurrent.ConcurrentHashMap;
 public abstract class s extends gk.a {
 
     /* renamed from: o  reason: collision with root package name */
-    private static Map f25343o = new ConcurrentHashMap();
+    private static Map f25391o = new ConcurrentHashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private int f25344e = -1;
+    private int f25392e = -1;
 
     /* renamed from: i  reason: collision with root package name */
-    protected e1 f25345i = e1.c();
+    protected e1 f25393i = e1.c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a extends a.AbstractC0338a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final s f25346d;
+        private final s f25394d;
 
         /* renamed from: e  reason: collision with root package name */
-        protected s f25347e;
+        protected s f25395e;
 
         /* JADX INFO: Access modifiers changed from: protected */
         public a(s sVar) {
-            this.f25346d = sVar;
+            this.f25394d = sVar;
             if (!sVar.t()) {
-                this.f25347e = f();
+                this.f25395e = f();
                 return;
             }
             throw new IllegalArgumentException("Default instance must be immutable.");
         }
 
         private s f() {
-            return this.f25346d.y();
+            return this.f25394d.y();
         }
 
         public final s b() {
@@ -54,24 +54,24 @@ public abstract class s extends gk.a {
         @Override // gk.i0.a
         /* renamed from: c */
         public s s() {
-            if (!this.f25347e.t()) {
-                return this.f25347e;
+            if (!this.f25395e.t()) {
+                return this.f25395e;
             }
-            this.f25347e.u();
-            return this.f25347e;
+            this.f25395e.u();
+            return this.f25395e;
         }
 
         /* renamed from: d */
         public a clone() {
             a newBuilderForType = getDefaultInstanceForType().newBuilderForType();
-            newBuilderForType.f25347e = s();
+            newBuilderForType.f25395e = s();
             return newBuilderForType;
         }
 
         @Override // gk.j0
         /* renamed from: e */
         public s getDefaultInstanceForType() {
-            return this.f25346d;
+            return this.f25394d;
         }
     }
 
@@ -79,10 +79,10 @@ public abstract class s extends gk.a {
     protected static class b extends gk.b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final s f25348b;
+        private final s f25396b;
 
         public b(s sVar) {
-            this.f25348b = sVar;
+            this.f25396b = sVar;
         }
     }
 
@@ -156,7 +156,7 @@ public abstract class s extends gk.a {
     /* JADX INFO: Access modifiers changed from: protected */
     public static void C(Class cls, s sVar) {
         sVar.v();
-        f25343o.put(cls, sVar);
+        f25391o.put(cls, sVar);
     }
 
     private static s c(s sVar) {
@@ -173,11 +173,11 @@ public abstract class s extends gk.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s l(Class cls) {
-        s sVar = (s) f25343o.get(cls);
+        s sVar = (s) f25391o.get(cls);
         if (sVar == null) {
             try {
                 Class.forName(cls.getName(), true, cls.getClassLoader());
-                sVar = (s) f25343o.get(cls);
+                sVar = (s) f25391o.get(cls);
             } catch (ClassNotFoundException e10) {
                 throw new IllegalStateException("Class initialization cannot fail.", e10);
             }
@@ -185,7 +185,7 @@ public abstract class s extends gk.a {
         if (sVar == null) {
             s defaultInstanceForType = ((s) h1.i(cls)).getDefaultInstanceForType();
             if (defaultInstanceForType != null) {
-                f25343o.put(cls, defaultInstanceForType);
+                f25391o.put(cls, defaultInstanceForType);
                 return defaultInstanceForType;
             }
             throw new IllegalStateException();
@@ -244,12 +244,12 @@ public abstract class s extends gk.a {
     }
 
     void D(int i10) {
-        this.f25179d = i10;
+        this.f25227d = i10;
     }
 
     void E(int i10) {
         if (i10 >= 0) {
-            this.f25344e = (i10 & Integer.MAX_VALUE) | (this.f25344e & Integer.MIN_VALUE);
+            this.f25392e = (i10 & Integer.MAX_VALUE) | (this.f25392e & Integer.MIN_VALUE);
             return;
         }
         throw new IllegalStateException("serialized size must be non-negative, was " + i10);
@@ -262,7 +262,7 @@ public abstract class s extends gk.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d() {
-        this.f25179d = 0;
+        this.f25227d = 0;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -316,7 +316,7 @@ public abstract class s extends gk.a {
     }
 
     int n() {
-        return this.f25179d;
+        return this.f25227d;
     }
 
     boolean o() {
@@ -332,7 +332,7 @@ public abstract class s extends gk.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean t() {
-        if ((this.f25344e & Integer.MIN_VALUE) != 0) {
+        if ((this.f25392e & Integer.MIN_VALUE) != 0) {
             return true;
         }
         return false;
@@ -349,7 +349,7 @@ public abstract class s extends gk.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void v() {
-        this.f25344e &= Integer.MAX_VALUE;
+        this.f25392e &= Integer.MAX_VALUE;
     }
 
     @Override // gk.i0

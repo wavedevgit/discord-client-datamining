@@ -7,7 +7,7 @@ import java.util.Arrays;
 public abstract class i1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f25276a;
+    private static final b f25324a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class a {
@@ -487,7 +487,7 @@ public abstract class i1 {
             }
             while (true) {
                 int i13 = i11 + 8;
-                if (i13 > i10 || (h1.y(bArr, h1.f25259h + j10) & (-9187201950435737472L)) != 0) {
+                if (i13 > i10 || (h1.y(bArr, h1.f25307h + j10) & (-9187201950435737472L)) != 0) {
                     break;
                 }
                 j10 += 8;
@@ -519,7 +519,7 @@ public abstract class i1 {
 
         @Override // gk.i1.b
         String a(byte[] bArr, int i10, int i11) {
-            Charset charset = u.f25364b;
+            Charset charset = u.f25412b;
             String str = new String(bArr, i10, i11, charset);
             if (!str.contains("�") || Arrays.equals(str.getBytes(charset), Arrays.copyOfRange(bArr, i10, i11 + i10))) {
                 return str;
@@ -554,12 +554,12 @@ public abstract class i1 {
         } else {
             cVar = new c();
         }
-        f25276a = cVar;
+        f25324a = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String e(byte[] bArr, int i10, int i11) {
-        return f25276a.a(bArr, i10, i11);
+        return f25324a.a(bArr, i10, i11);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -604,11 +604,11 @@ public abstract class i1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean j(byte[] bArr) {
-        return f25276a.b(bArr, 0, bArr.length);
+        return f25324a.b(bArr, 0, bArr.length);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean k(byte[] bArr, int i10, int i11) {
-        return f25276a.b(bArr, i10, i11);
+        return f25324a.b(bArr, i10, i11);
     }
 }

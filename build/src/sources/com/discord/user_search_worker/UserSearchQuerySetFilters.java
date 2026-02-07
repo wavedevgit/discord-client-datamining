@@ -55,13 +55,13 @@ public final class UserSearchQuerySetFilters {
 
     public static final /* synthetic */ void write$Self$user_search_worker_release(UserSearchQuerySetFilters userSearchQuerySetFilters, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || userSearchQuerySetFilters.guild != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, userSearchQuerySetFilters.guild);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, userSearchQuerySetFilters.guild);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || userSearchQuerySetFilters.friends != null) {
-            compositeEncoder.l(serialDescriptor, 1, jt.h.f31005a, userSearchQuerySetFilters.friends);
+            compositeEncoder.l(serialDescriptor, 1, jt.h.f31053a, userSearchQuerySetFilters.friends);
         }
         if (compositeEncoder.A(serialDescriptor, 2) || userSearchQuerySetFilters.strict != null) {
-            compositeEncoder.l(serialDescriptor, 2, jt.h.f31005a, userSearchQuerySetFilters.strict);
+            compositeEncoder.l(serialDescriptor, 2, jt.h.f31053a, userSearchQuerySetFilters.strict);
         }
     }
 

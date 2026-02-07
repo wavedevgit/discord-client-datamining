@@ -5,7 +5,7 @@ import yi.c;
 final class eb implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final eb f47026a = new eb();
+    static final eb f47074a = new eb();
 
     static {
         c.b a10 = yi.c.a("deviceInfo");

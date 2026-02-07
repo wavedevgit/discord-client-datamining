@@ -24,7 +24,7 @@ public final class p implements Parcelable {
         /* renamed from: a */
         public p createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            ByteString.a aVar = ByteString.f43166o;
+            ByteString.a aVar = ByteString.f43214o;
             byte[] createByteArray = parcel.createByteArray();
             Intrinsics.checkNotNull(createByteArray);
             Intrinsics.checkNotNullExpressionValue(createByteArray, "parcel.createByteArray()!!");

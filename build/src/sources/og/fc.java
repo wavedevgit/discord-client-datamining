@@ -3,16 +3,16 @@ package og;
 public abstract class fc {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ec f42040a;
+    private static ec f42088a;
 
     public static synchronized wb a(rb rbVar) {
         wb wbVar;
         synchronized (fc.class) {
             try {
-                if (f42040a == null) {
-                    f42040a = new ec(null);
+                if (f42088a == null) {
+                    f42088a = new ec(null);
                 }
-                wbVar = (wb) f42040a.b(rbVar);
+                wbVar = (wb) f42088a.b(rbVar);
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -18,29 +18,29 @@ import ji.a0;
 public class a {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final AtomicReference f25991e = new AtomicReference(null);
+    private static final AtomicReference f26039e = new AtomicReference(null);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final /* synthetic */ int f25992f = 0;
+    public static final /* synthetic */ int f26040f = 0;
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f25993a;
+    private final f f26041a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ii.c f25994b;
+    private final ii.c f26042b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f25995c = new HashSet();
+    private final Set f26043c = new HashSet();
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f25996d;
+    private final b f26044d;
 
     private a(Context context) {
         try {
             f fVar = new f(context);
-            this.f25993a = fVar;
-            this.f25996d = new b(fVar);
-            this.f25994b = new ii.c(context);
+            this.f26041a = fVar;
+            this.f26044d = new b(fVar);
+            this.f26042b = new ii.c(context);
         } catch (PackageManager.NameNotFoundException e10) {
             throw new a0("Failed to initialize FileStorage", e10);
         }
@@ -54,14 +54,14 @@ public class a {
         if (k()) {
             return false;
         }
-        a aVar = (a) f25991e.get();
+        a aVar = (a) f26039e.get();
         if (aVar == null) {
             if (context.getApplicationContext() != null) {
                 a(context.getApplicationContext());
             }
             return a(context);
         }
-        return aVar.f25996d.b(context, aVar.g());
+        return aVar.f26044d.b(context, aVar.g());
     }
 
     public static boolean e(Context context) {
@@ -69,7 +69,7 @@ public class a {
     }
 
     public static boolean f() {
-        if (f25991e.get() != null) {
+        if (f26039e.get() != null) {
             return true;
         }
         return false;
@@ -77,8 +77,8 @@ public class a {
 
     private final Set g() {
         HashSet hashSet;
-        synchronized (this.f25995c) {
-            hashSet = new HashSet(this.f25995c);
+        synchronized (this.f26043c) {
+            hashSet = new HashSet(this.f26043c);
         }
         return hashSet;
     }
@@ -87,9 +87,9 @@ public class a {
     public final void h(Set set) {
         Iterator it = set.iterator();
         while (it.hasNext()) {
-            f.l(this.f25993a.g((String) it.next()));
+            f.l(this.f26041a.g((String) it.next()));
         }
-        this.f25994b.b();
+        this.f26042b.b();
     }
 
     private final synchronized void i(Context context, boolean z10) {
@@ -97,7 +97,7 @@ public class a {
         ZipFile zipFile;
         try {
             if (z10) {
-                this.f25993a.k();
+                this.f26041a.k();
             } else {
                 e.a().execute(new r(this));
             }
@@ -109,8 +109,8 @@ public class a {
                 } else {
                     asList = Arrays.asList(strArr);
                 }
-                Set<u> j10 = this.f25993a.j();
-                Set a10 = this.f25994b.a();
+                Set<u> j10 = this.f26041a.j();
+                Set a10 = this.f26042b.a();
                 HashSet hashSet = new HashSet();
                 Iterator it = j10.iterator();
                 while (it.hasNext()) {
@@ -140,12 +140,12 @@ public class a {
                 HashSet<u> hashSet3 = new HashSet(j10.size());
                 for (u uVar2 : j10) {
                     String b12 = uVar2.b();
-                    int i10 = ii.k.f26735b;
+                    int i10 = ii.k.f26783b;
                     if (b12.startsWith("config.") || hashSet2.contains(ii.k.a(uVar2.b()))) {
                         hashSet3.add(uVar2);
                     }
                 }
-                o oVar = new o(this.f25993a);
+                o oVar = new o(this.f26041a);
                 ji.h a11 = ji.i.a();
                 ClassLoader classLoader = context.getClassLoader();
                 if (z10) {
@@ -172,7 +172,7 @@ public class a {
                     try {
                         ZipEntry entry = zipFile.getEntry("classes.dex");
                         zipFile.close();
-                        if (entry != null && !a11.a(classLoader, this.f25993a.a(uVar3.b()), uVar3.a(), z10)) {
+                        if (entry != null && !a11.a(classLoader, this.f26041a.a(uVar3.b()), uVar3.a(), z10)) {
                             Log.w("SplitCompat", "split was not installed ".concat(uVar3.a().toString()));
                         }
                         hashSet4.add(uVar3.a());
@@ -191,7 +191,7 @@ public class a {
                         throw e;
                     }
                 }
-                this.f25996d.a(context, hashSet4);
+                this.f26044d.a(context, hashSet4);
                 HashSet hashSet5 = new HashSet();
                 for (u uVar4 : hashSet3) {
                     if (hashSet4.contains(uVar4.a())) {
@@ -203,8 +203,8 @@ public class a {
                         Log.d("SplitCompat", "Split '" + b15 + "' installation not emulated.");
                     }
                 }
-                synchronized (this.f25995c) {
-                    this.f25995c.addAll(hashSet5);
+                synchronized (this.f26043c) {
+                    this.f26043c.addAll(hashSet5);
                 }
             } catch (PackageManager.NameNotFoundException e13) {
                 throw new IOException(String.format("Cannot load data for application '%s'", packageName), e13);
@@ -220,7 +220,7 @@ public class a {
         if (k()) {
             return false;
         }
-        AtomicReference atomicReference = f25991e;
+        AtomicReference atomicReference = f26039e;
         a aVar = new a(context);
         while (true) {
             if (p0.d.a(atomicReference, null, aVar)) {
@@ -231,16 +231,16 @@ public class a {
                 break;
             }
         }
-        a aVar2 = (a) f25991e.get();
+        a aVar2 = (a) f26039e.get();
         if (z11) {
             context2 = context;
-            ii.h.INSTANCE.a(new ji.e(context2, e.a(), new ji.g(context, aVar2.f25993a, new ji.b()), aVar2.f25993a, new t()));
+            ii.h.INSTANCE.a(new ji.e(context2, e.a(), new ji.g(context, aVar2.f26041a, new ji.b()), aVar2.f26041a, new t()));
             ii.j.a(new q(aVar2));
             e.a().execute(new Runnable() { // from class: hi.p
                 @Override // java.lang.Runnable
                 public final void run() {
                     Context context3 = context2;
-                    int i10 = a.f25992f;
+                    int i10 = a.f26040f;
                     try {
                         ii.n.f(context3).b(true);
                     } catch (SecurityException unused) {

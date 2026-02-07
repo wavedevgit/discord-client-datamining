@@ -5,7 +5,7 @@ import java.lang.annotation.Annotation;
 final class d0 implements c0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c0 f53022b = new d0();
+    private static final c0 f53070b = new d0();
 
     d0() {
     }
@@ -16,7 +16,7 @@ final class d0 implements c0 {
             return annotationArr;
         }
         Annotation[] annotationArr2 = new Annotation[annotationArr.length + 1];
-        annotationArr2[0] = f53022b;
+        annotationArr2[0] = f53070b;
         System.arraycopy(annotationArr, 0, annotationArr2, 1, annotationArr.length);
         return annotationArr2;
     }

@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeEditPollCreationImageAltTextModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4562, 14024, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4561, 14066, 1307, 2]);

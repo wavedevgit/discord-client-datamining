@@ -17,7 +17,7 @@ public abstract class g3 {
         sb2.append(method.getName());
         Class<?>[] parameterTypes = method.getParameterTypes();
         Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
-        sb2.append(kotlin.collections.i.v0(parameterTypes, "", "(", ")", 0, null, f3.f35306d, 24, null));
+        sb2.append(kotlin.collections.i.v0(parameterTypes, "", "(", ")", 0, null, f3.f35354d, 24, null));
         Class<?> returnType = method.getReturnType();
         Intrinsics.checkNotNullExpressionValue(returnType, "getReturnType(...)");
         sb2.append(ReflectClassUtilKt.getDesc(returnType));

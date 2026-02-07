@@ -13,7 +13,7 @@ final class b extends h.a {
     static final class a implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final a f53016a = new a();
+        static final a f53064a = new a();
 
         a() {
         }
@@ -33,7 +33,7 @@ final class b extends h.a {
     static final class d implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final d f53019a = new d();
+        static final d f53067a = new d();
 
         d() {
         }
@@ -49,7 +49,7 @@ final class b extends h.a {
     static final class e implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f53020a = new e();
+        static final e f53068a = new e();
 
         e() {
         }
@@ -58,7 +58,7 @@ final class b extends h.a {
         /* renamed from: b */
         public Unit a(ResponseBody responseBody) {
             responseBody.close();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -66,7 +66,7 @@ final class b extends h.a {
     static final class f implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final f f53021a = new f();
+        static final f f53069a = new f();
 
         f() {
         }
@@ -82,7 +82,7 @@ final class b extends h.a {
     @Override // vv.h.a
     public h c(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, a0 a0Var) {
         if (RequestBody.class.isAssignableFrom(e0.h(type))) {
-            return C0705b.f53017a;
+            return C0705b.f53065a;
         }
         return null;
     }
@@ -91,14 +91,14 @@ final class b extends h.a {
     public h d(Type type, Annotation[] annotationArr, a0 a0Var) {
         if (type == ResponseBody.class) {
             if (e0.l(annotationArr, xv.w.class)) {
-                return c.f53018a;
+                return c.f53066a;
             }
-            return a.f53016a;
+            return a.f53064a;
         } else if (type == Void.class) {
-            return f.f53021a;
+            return f.f53069a;
         } else {
             if (e0.m(type)) {
-                return e.f53020a;
+                return e.f53068a;
             }
             return null;
         }
@@ -109,7 +109,7 @@ final class b extends h.a {
     static final class C0705b implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final C0705b f53017a = new C0705b();
+        static final C0705b f53065a = new C0705b();
 
         C0705b() {
         }
@@ -125,7 +125,7 @@ final class b extends h.a {
     static final class c implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f53018a = new c();
+        static final c f53066a = new c();
 
         c() {
         }

@@ -179,7 +179,7 @@ public final class Sticker implements Parcelable {
         }
         compositeEncoder.z(serialDescriptor, 1, sticker.name);
         if (compositeEncoder.A(serialDescriptor, 2) || sticker.packId != null) {
-            compositeEncoder.l(serialDescriptor, 2, z0.f31115a, sticker.packId);
+            compositeEncoder.l(serialDescriptor, 2, z0.f31163a, sticker.packId);
         }
         if (compositeEncoder.A(serialDescriptor, 3) || sticker.guildId != null) {
             compositeEncoder.l(serialDescriptor, 3, GuildId$$serializer.INSTANCE, sticker.guildId);
@@ -197,7 +197,7 @@ public final class Sticker implements Parcelable {
             compositeEncoder.s(serialDescriptor, 7, StickerType.Serializer.INSTANCE, sticker.type);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || sticker.available != null) {
-            compositeEncoder.l(serialDescriptor, 8, h.f31005a, sticker.available);
+            compositeEncoder.l(serialDescriptor, 8, h.f31053a, sticker.available);
         }
     }
 

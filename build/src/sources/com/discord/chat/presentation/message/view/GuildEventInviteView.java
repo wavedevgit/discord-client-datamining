@@ -60,7 +60,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
     public static final Unit setDescription_63A0Z80$lambda$12$lambda$11(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(str), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void setAcceptButton(String str, String str2, Integer num, Integer num2, Integer num3, View.OnClickListener onClickListener) {
@@ -180,7 +180,7 @@ public final class GuildEventInviteView extends ConstraintLayout {
         ViewUtilsKt.setOptionalText(titleText, str);
         if (num != null) {
             this.binding.titleText.setTextColor(num.intValue());
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         return null;
     }

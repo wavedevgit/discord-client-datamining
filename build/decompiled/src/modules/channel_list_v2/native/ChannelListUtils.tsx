@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.logChannelListEndReached = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4570, 4303, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4569, 4302, 2]);

@@ -17,10 +17,10 @@ public final class q0 extends hf.a {
     public static final Parcelable.Creator<q0> CREATOR = new r0();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final byte[] f53759e = "WebAuthn PRF\u0000".getBytes(StandardCharsets.UTF_8);
+    private static final byte[] f53807e = "WebAuthn PRF\u0000".getBytes(StandardCharsets.UTF_8);
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[][] f53760d;
+    private final byte[][] f53808d;
 
     public q0(byte[][] bArr) {
         boolean z10;
@@ -62,7 +62,7 @@ public final class q0 extends hf.a {
             }
             gf.q.a(z14);
         }
-        this.f53760d = bArr;
+        this.f53808d = bArr;
     }
 
     public static q0 b(JSONObject jSONObject, boolean z10) {
@@ -108,7 +108,7 @@ public final class q0 extends hf.a {
 
     private static byte[] d(byte[] bArr) {
         k2 zza = m2.a().zza();
-        zza.b(f53759e);
+        zza.b(f53807e);
         zza.b(bArr);
         return zza.a().d();
     }
@@ -140,13 +140,13 @@ public final class q0 extends hf.a {
         if (!(obj instanceof q0)) {
             return false;
         }
-        return Arrays.deepEquals(this.f53760d, ((q0) obj).f53760d);
+        return Arrays.deepEquals(this.f53808d, ((q0) obj).f53808d);
     }
 
     public final int hashCode() {
         byte[][] bArr;
         int i10 = 0;
-        for (byte[] bArr2 : this.f53760d) {
+        for (byte[] bArr2 : this.f53808d) {
             if (bArr2 != null) {
                 i10 ^= gf.o.b(bArr2);
             }
@@ -160,7 +160,7 @@ public final class q0 extends hf.a {
             int i10 = 0;
             JSONObject jSONObject2 = null;
             while (true) {
-                byte[][] bArr = this.f53760d;
+                byte[][] bArr = this.f53808d;
                 if (i10 < bArr.length) {
                     if (bArr[i10] == null) {
                         jSONObject.put("eval", c(bArr[i10 + 1]));
@@ -169,7 +169,7 @@ public final class q0 extends hf.a {
                             jSONObject2 = new JSONObject();
                             jSONObject.put("evalByCredential", jSONObject2);
                         }
-                        jSONObject2.put(com.google.android.gms.common.util.c.b(this.f53760d[i10]), c(this.f53760d[i10 + 1]));
+                        jSONObject2.put(com.google.android.gms.common.util.c.b(this.f53808d[i10]), c(this.f53808d[i10 + 1]));
                     }
                     i10 += 2;
                 } else {
@@ -185,7 +185,7 @@ public final class q0 extends hf.a {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        byte[][] bArr = this.f53760d;
+        byte[][] bArr = this.f53808d;
         int a10 = hf.c.a(parcel);
         hf.c.g(parcel, 1, bArr, false);
         hf.c.b(parcel, a10);

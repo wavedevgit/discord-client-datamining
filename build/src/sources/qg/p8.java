@@ -5,7 +5,7 @@ import yi.c;
 final class p8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p8 f47438a = new p8();
+    static final p8 f47486a = new p8();
 
     static {
         c.b a10 = yi.c.a("useRecognition");

@@ -1576,7 +1576,7 @@ public class g implements tc.k {
         this.f6576o = b0Var;
         this.f6572k = new id.c();
         this.f6573l = new h0(16);
-        this.f6566e = new h0(d0.f38865a);
+        this.f6566e = new h0(d0.f38913a);
         this.f6567f = new h0(5);
         this.f6568g = new h0();
         byte[] bArr = new byte[16];
@@ -1588,7 +1588,7 @@ public class g implements tc.k {
         this.f6585x = -9223372036854775807L;
         this.f6584w = -9223372036854775807L;
         this.f6586y = -9223372036854775807L;
-        this.E = tc.m.f50550l;
+        this.E = tc.m.f50598l;
         this.F = new b0[0];
         this.G = new b0[0];
     }

@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.isEnum = var2;
     var0 = function arg0() {
-        _fun27612: for (var _fun27612_ip = 0;;) switch (_fun27612_ip) {
+        _fun27623: for (var _fun27623_ip = 0;;) switch (_fun27623_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot2;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var3)(var1, var0);
                 var0 = null;
                 if (!var1) {
-                    _fun27612_ip = 76;
-                    continue _fun27612
+                    _fun27623_ip = 76;
+                    continue _fun27623
                 }
             case 53:
                 var1 = {};

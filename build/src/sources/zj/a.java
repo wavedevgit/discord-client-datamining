@@ -14,37 +14,37 @@ import tj.h;
 public class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Bitmap f56276a;
+    private volatile Bitmap f56324a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile ByteBuffer f56277b;
+    private volatile ByteBuffer f56325b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile b f56278c;
+    private volatile b f56326c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f56279d;
+    private final int f56327d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f56280e;
+    private final int f56328e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f56281f;
+    private final int f56329f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f56282g;
+    private final int f56330g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Matrix f56283h;
+    private final Matrix f56331h;
 
     private a(Bitmap bitmap, int i10) {
-        this.f56276a = (Bitmap) q.l(bitmap);
-        this.f56279d = bitmap.getWidth();
-        this.f56280e = bitmap.getHeight();
+        this.f56324a = (Bitmap) q.l(bitmap);
+        this.f56327d = bitmap.getWidth();
+        this.f56328e = bitmap.getHeight();
         m(i10);
-        this.f56281f = i10;
-        this.f56282g = -1;
-        this.f56283h = null;
+        this.f56329f = i10;
+        this.f56330g = -1;
+        this.f56331h = null;
     }
 
     public static a a(Bitmap bitmap, int i10) {
@@ -118,56 +118,56 @@ public class a implements h {
     }
 
     public Bitmap d() {
-        return this.f56276a;
+        return this.f56324a;
     }
 
     public ByteBuffer e() {
-        return this.f56277b;
+        return this.f56325b;
     }
 
     public Matrix f() {
-        return this.f56283h;
+        return this.f56331h;
     }
 
     public int g() {
-        return this.f56282g;
+        return this.f56330g;
     }
 
     public int h() {
-        return this.f56280e;
+        return this.f56328e;
     }
 
     public Image i() {
-        if (this.f56278c == null) {
+        if (this.f56326c == null) {
             return null;
         }
-        return this.f56278c.a();
+        return this.f56326c.a();
     }
 
     public Image.Plane[] j() {
-        if (this.f56278c == null) {
+        if (this.f56326c == null) {
             return null;
         }
-        return this.f56278c.b();
+        return this.f56326c.b();
     }
 
     public int k() {
-        return this.f56281f;
+        return this.f56329f;
     }
 
     public int l() {
-        return this.f56279d;
+        return this.f56327d;
     }
 
     private a(Image image, int i10, int i11, int i12, Matrix matrix) {
         q.l(image);
-        this.f56278c = new b(image);
-        this.f56279d = i10;
-        this.f56280e = i11;
+        this.f56326c = new b(image);
+        this.f56327d = i10;
+        this.f56328e = i11;
         m(i12);
-        this.f56281f = i12;
-        this.f56282g = 35;
-        this.f56283h = matrix;
+        this.f56329f = i12;
+        this.f56330g = 35;
+        this.f56331h = matrix;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:11:0x0025  */
@@ -195,7 +195,7 @@ public class a implements h {
             gf.q.a(r0)
             java.lang.Object r0 = gf.q.l(r5)
             java.nio.ByteBuffer r0 = (java.nio.ByteBuffer) r0
-            r4.f56277b = r0
+            r4.f56325b = r0
             int r0 = r5.limit()
             int r3 = r6 * r7
             if (r0 <= r3) goto L26
@@ -204,13 +204,13 @@ public class a implements h {
             java.lang.String r0 = "Image dimension, ByteBuffer size and format don't match. Please check if the ByteBuffer is in the decalred format."
             gf.q.b(r1, r0)
             r5.rewind()
-            r4.f56279d = r6
-            r4.f56280e = r7
+            r4.f56327d = r6
+            r4.f56328e = r7
             m(r8)
-            r4.f56281f = r8
-            r4.f56282g = r9
+            r4.f56329f = r8
+            r4.f56330g = r9
             r5 = 0
-            r4.f56283h = r5
+            r4.f56331h = r5
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: zj.a.<init>(java.nio.ByteBuffer, int, int, int, int):void");

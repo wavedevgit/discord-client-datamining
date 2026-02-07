@@ -5,16 +5,16 @@ import yi.c;
 final class z4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f42743a = new z4();
+    static final z4 f42791a = new z4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42744b;
+    private static final yi.c f42792b;
 
     static {
         c.b a10 = yi.c.a("optionsType");
         f fVar = new f();
         fVar.a(1);
-        f42744b = a10.b(fVar.b()).a();
+        f42792b = a10.b(fVar.b()).a();
     }
 
     private z4() {

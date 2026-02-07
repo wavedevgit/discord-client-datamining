@@ -10,14 +10,14 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class q1 extends s0 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f31066c;
+    private final SerialDescriptor f31114c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public q1(final KSerializer keySerializer, final KSerializer valueSerializer) {
         super(keySerializer, valueSerializer, null);
         Intrinsics.checkNotNullParameter(keySerializer, "keySerializer");
         Intrinsics.checkNotNullParameter(valueSerializer, "valueSerializer");
-        this.f31066c = ht.j.c("kotlin.Pair", new SerialDescriptor[0], new Function1() { // from class: jt.p1
+        this.f31114c = ht.j.c("kotlin.Pair", new SerialDescriptor[0], new Function1() { // from class: jt.p1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit g10;
@@ -32,12 +32,12 @@ public final class q1 extends s0 {
         Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
         ht.a.b(buildClassSerialDescriptor, "first", kSerializer.getDescriptor(), null, false, 12, null);
         ht.a.b(buildClassSerialDescriptor, "second", kSerializer2.getDescriptor(), null, false, 12, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlinx.serialization.KSerializer, ft.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f31066c;
+        return this.f31114c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

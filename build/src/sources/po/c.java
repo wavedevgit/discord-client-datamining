@@ -7,10 +7,10 @@ import po.a;
 public final class c implements a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f45090a;
+    private final b f45138a;
 
     c(b bVar) {
-        this.f45090a = bVar;
+        this.f45138a = bVar;
     }
 
     public static h b(b bVar) {
@@ -19,6 +19,6 @@ public final class c implements a.b {
 
     @Override // po.a.b
     public a a(c4.e eVar) {
-        return this.f45090a.b(eVar);
+        return this.f45138a.b(eVar);
     }
 }

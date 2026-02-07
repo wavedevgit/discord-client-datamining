@@ -3,15 +3,15 @@ package pg;
 final class r1 implements w1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f44660b;
+    private final int f44708b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final v1 f44661c;
+    private final v1 f44709c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r1(int i10, v1 v1Var) {
-        this.f44660b = i10;
-        this.f44661c = v1Var;
+        this.f44708b = i10;
+        this.f44709c = v1Var;
     }
 
     @Override // java.lang.annotation.Annotation
@@ -28,7 +28,7 @@ final class r1 implements w1 {
             return false;
         }
         w1 w1Var = (w1) obj;
-        if (this.f44660b == w1Var.zza() && this.f44661c.equals(w1Var.zzb())) {
+        if (this.f44708b == w1Var.zza() && this.f44709c.equals(w1Var.zzb())) {
             return true;
         }
         return false;
@@ -36,21 +36,21 @@ final class r1 implements w1 {
 
     @Override // java.lang.annotation.Annotation
     public final int hashCode() {
-        return (this.f44660b ^ 14552422) + (this.f44661c.hashCode() ^ 2041407134);
+        return (this.f44708b ^ 14552422) + (this.f44709c.hashCode() ^ 2041407134);
     }
 
     @Override // java.lang.annotation.Annotation
     public final String toString() {
-        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f44660b + "intEncoding=" + this.f44661c + ')';
+        return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f44708b + "intEncoding=" + this.f44709c + ')';
     }
 
     @Override // pg.w1
     public final int zza() {
-        return this.f44660b;
+        return this.f44708b;
     }
 
     @Override // pg.w1
     public final v1 zzb() {
-        return this.f44661c;
+        return this.f44709c;
     }
 }

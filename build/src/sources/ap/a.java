@@ -38,23 +38,23 @@ import qr.v;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class a {
     private static final Map a(NextStep.GovernmentId.RequestPage requestPage) {
-        return o0.m(v.a(new Pair(c4.e.f30022o, "descriptionFront"), requestPage.getDescriptionFront()), v.a(new Pair(c4.e.f30023p, "descriptionBack"), requestPage.getDescriptionBack()), v.a(new Pair(c4.e.f30025r, "descriptionPdf417"), requestPage.getDescriptionPdf417()), v.a(new Pair(c4.e.f30026s, "descriptionPassportSignature"), requestPage.getDescriptionPassportSignature()));
+        return o0.m(v.a(new Pair(c4.e.f30070o, "descriptionFront"), requestPage.getDescriptionFront()), v.a(new Pair(c4.e.f30071p, "descriptionBack"), requestPage.getDescriptionBack()), v.a(new Pair(c4.e.f30073r, "descriptionPdf417"), requestPage.getDescriptionPdf417()), v.a(new Pair(c4.e.f30074s, "descriptionPassportSignature"), requestPage.getDescriptionPassportSignature()));
     }
 
     private static final Map b(NextStep.GovernmentId.ReviewUploadPage reviewUploadPage) {
-        return o0.m(v.a(c4.e.f30022o, reviewUploadPage.getDescriptionFront()), v.a(c4.e.f30023p, reviewUploadPage.getDescriptionBack()), v.a(c4.e.f30025r, reviewUploadPage.getDescriptionPdf417()), v.a(c4.e.f30026s, reviewUploadPage.getDescriptionPassportSignature()));
+        return o0.m(v.a(c4.e.f30070o, reviewUploadPage.getDescriptionFront()), v.a(c4.e.f30071p, reviewUploadPage.getDescriptionBack()), v.a(c4.e.f30073r, reviewUploadPage.getDescriptionPdf417()), v.a(c4.e.f30074s, reviewUploadPage.getDescriptionPassportSignature()));
     }
 
     private static final Map c(NextStep.GovernmentId.CapturePage capturePage) {
-        return o0.m(v.a(new Pair(c4.e.f30022o, "scanFront"), capturePage.getScanFront()), v.a(new Pair(c4.e.f30023p, "scanBack"), capturePage.getScanBack()), v.a(new Pair(c4.e.f30025r, "scanPdf417"), capturePage.getScanPdf417()), v.a(new Pair(c4.e.f30026s, "scanSignature"), capturePage.getScanSignature()), v.a(new Pair(c4.e.f30024q, "scanFrontOrBack"), capturePage.getScanFrontOrBack()));
+        return o0.m(v.a(new Pair(c4.e.f30070o, "scanFront"), capturePage.getScanFront()), v.a(new Pair(c4.e.f30071p, "scanBack"), capturePage.getScanBack()), v.a(new Pair(c4.e.f30073r, "scanPdf417"), capturePage.getScanPdf417()), v.a(new Pair(c4.e.f30074s, "scanSignature"), capturePage.getScanSignature()), v.a(new Pair(c4.e.f30072q, "scanFrontOrBack"), capturePage.getScanFrontOrBack()));
     }
 
     private static final Map d(NextStep.GovernmentId.RequestPage requestPage) {
-        return o0.m(v.a(new Pair(c4.e.f30022o, "titleFront"), requestPage.getTitleFront()), v.a(new Pair(c4.e.f30023p, "titleBack"), requestPage.getTitleBack()), v.a(new Pair(c4.e.f30025r, "titlePdf417"), requestPage.getTitlePdf417()), v.a(new Pair(c4.e.f30026s, "titlePassportSignature"), requestPage.getTitlePassportSignature()));
+        return o0.m(v.a(new Pair(c4.e.f30070o, "titleFront"), requestPage.getTitleFront()), v.a(new Pair(c4.e.f30071p, "titleBack"), requestPage.getTitleBack()), v.a(new Pair(c4.e.f30073r, "titlePdf417"), requestPage.getTitlePdf417()), v.a(new Pair(c4.e.f30074s, "titlePassportSignature"), requestPage.getTitlePassportSignature()));
     }
 
     private static final Map e(NextStep.GovernmentId.ReviewUploadPage reviewUploadPage) {
-        return o0.m(v.a(c4.e.f30022o, reviewUploadPage.getTitleFront()), v.a(c4.e.f30023p, reviewUploadPage.getTitleBack()), v.a(c4.e.f30025r, reviewUploadPage.getTitlePdf417()), v.a(c4.e.f30026s, reviewUploadPage.getTitlePassportSignature()));
+        return o0.m(v.a(c4.e.f30070o, reviewUploadPage.getTitleFront()), v.a(c4.e.f30071p, reviewUploadPage.getTitleBack()), v.a(c4.e.f30073r, reviewUploadPage.getTitlePdf417()), v.a(c4.e.f30074s, reviewUploadPage.getTitlePassportSignature()));
     }
 
     public static final eo.l f(NextStep.Document.Pages pages, NextStep.Document.Localizations localizations, StepStyles.DocumentStepStyle documentStepStyle) {
@@ -659,9 +659,9 @@ public abstract class a {
         boolean z15 = z14;
         s0 u10 = u(selfie.getConfig().getPoseConfigs());
         if (selfie.getConfig().getDesignVersion() != null && ((designVersion = selfie.getConfig().getDesignVersion()) == null || designVersion.intValue() != 0)) {
-            b0Var = b0.f37306e;
+            b0Var = b0.f37354e;
         } else {
-            b0Var = b0.f37305d;
+            b0Var = b0.f37353d;
         }
         return new l.h(inquiryId, sessionToken, null, styles, cancelDialog, selfieType, name, name2, z10, z11, fieldKeySelfie, requireStrictSelfieCapture, z13, localizations, list, list2, assets, videoSessionJwt, orderedPoses, pendingPageTextPosition, z15, u10, b0Var, 4, null);
     }
@@ -728,7 +728,7 @@ public abstract class a {
         boolean e10;
         long d10;
         boolean c10;
-        r0 a10 = r0.f37634p.a();
+        r0 a10 = r0.f37682p.a();
         Boolean allowReview = poseConfig.getAllowReview();
         if (allowReview != null) {
             b10 = allowReview.booleanValue();
@@ -776,18 +776,18 @@ public abstract class a {
         if (hashCode != -1364013995) {
             if (hashCode != 3317767) {
                 if (hashCode == 108511772 && str.equals(ViewProps.RIGHT)) {
-                    return a1.b.f37289i;
+                    return a1.b.f37337i;
                 }
                 return null;
             } else if (str.equals(ViewProps.LEFT)) {
-                return a1.b.f37288e;
+                return a1.b.f37336e;
             } else {
                 return null;
             }
         } else if (!str.equals("center")) {
             return null;
         } else {
-            return a1.b.f37287d;
+            return a1.b.f37335d;
         }
     }
 }

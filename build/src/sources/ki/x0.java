@@ -6,21 +6,21 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class x0 extends u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ yg.k f31703e;
+    final /* synthetic */ yg.k f31751e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ u0 f31704i;
+    final /* synthetic */ u0 f31752i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ f f31705o;
+    final /* synthetic */ f f31753o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public x0(f fVar, yg.k kVar, yg.k kVar2, u0 u0Var) {
         super(kVar);
-        this.f31703e = kVar2;
-        this.f31704i = u0Var;
-        this.f31705o = fVar;
+        this.f31751e = kVar2;
+        this.f31752i = u0Var;
+        this.f31753o = fVar;
     }
 
     @Override // ki.u0
@@ -28,16 +28,16 @@ public final class x0 extends u0 {
         Object obj;
         AtomicInteger atomicInteger;
         t0 t0Var;
-        obj = this.f31705o.f31670f;
+        obj = this.f31753o.f31718f;
         synchronized (obj) {
             try {
-                f.o(this.f31705o, this.f31703e);
-                atomicInteger = this.f31705o.f31676l;
+                f.o(this.f31753o, this.f31751e);
+                atomicInteger = this.f31753o.f31724l;
                 if (atomicInteger.getAndIncrement() > 0) {
-                    t0Var = this.f31705o.f31666b;
+                    t0Var = this.f31753o.f31714b;
                     t0Var.c("Already connected to the service.", new Object[0]);
                 }
-                f.q(this.f31705o, this.f31704i);
+                f.q(this.f31753o, this.f31752i);
             } catch (Throwable th2) {
                 throw th2;
             }

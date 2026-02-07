@@ -137,7 +137,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             Log.e$default(Log.INSTANCE, "ReactActivity", "Timeout waiting for application initialization - proceeding anyway", (Throwable) null, 4, (Object) null);
         }
         super.attachBaseContext(FontScaleUtilsKt.getFontScaledContext(newBase));
-        Unit unit = Unit.f32008a;
+        Unit unit = Unit.f32056a;
         Context applicationContext = getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);
@@ -180,7 +180,7 @@ public abstract class ReactActivity extends com.facebook.react.ReactActivity {
             this.patchedResources = resources;
         }
         super.onConfigurationChanged(newConfig);
-        b.f52374o.a(this, newConfig);
+        b.f52422o.a(this, newConfig);
         Context applicationContext = getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         FontScaleUtilsKt.setFontScaleDeprecated(applicationContext);

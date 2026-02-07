@@ -10,10 +10,10 @@ public enum a {
     
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f25395d;
+    public final String f25443d;
 
     a(String str) {
-        this.f25395d = str;
+        this.f25443d = str;
     }
 
     public static a d(NetworkInfo networkInfo) {

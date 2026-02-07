@@ -21,7 +21,7 @@ public final class b extends jt.b {
     public static final b f22110a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f22111b = l.b(o.f48044e, a.f22112d);
+    private static final Lazy f22111b = l.b(o.f48092e, a.f22112d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {

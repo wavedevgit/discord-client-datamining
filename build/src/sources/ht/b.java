@@ -10,7 +10,7 @@ public abstract class b {
     public static final KClass a(SerialDescriptor serialDescriptor) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
         if (serialDescriptor instanceof c) {
-            return ((c) serialDescriptor).f26466b;
+            return ((c) serialDescriptor).f26514b;
         }
         if (serialDescriptor instanceof j2) {
             return a(((j2) serialDescriptor).j());

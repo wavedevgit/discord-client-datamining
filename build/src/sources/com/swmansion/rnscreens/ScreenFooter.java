@@ -76,7 +76,7 @@ public final class ScreenFooter extends ReactViewGroup {
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void c(View bottomSheet, int i10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (!mn.i.f37261a.b(i10)) {
+            if (!mn.i.f37309a.b(i10)) {
                 return;
             }
             if (i10 == 3 || i10 == 4 || i10 == 6) {

@@ -58,20 +58,20 @@ public abstract class PollAnswerAdapter<THolder extends PollAnswerViewHolder<?>>
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onBindViewHolder$lambda$4(PollAnswerAdapter pollAnswerAdapter, PollAnswerAccessory pollAnswerAccessory) {
         pollAnswerAdapter.onTapAnswer.invoke(pollAnswerAccessory.getAnswer().getAnswerId());
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressImage$lambda$1(String str, int i10, int i11, int i12, int i13, ViewResizeMode viewResizeMode) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(viewResizeMode, "<unused var>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onTapAnswer$lambda$0(String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

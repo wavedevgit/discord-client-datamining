@@ -5,7 +5,7 @@ import yi.c;
 final class q7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f47466a = new q7();
+    static final q7 f47514a = new q7();
 
     static {
         c.b a10 = yi.c.a("identifyLanguageConfidenceThreshold");

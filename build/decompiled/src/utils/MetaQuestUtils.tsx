@@ -1,7 +1,7 @@
 // utils/MetaQuestUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun31287: for (var _fun31287_ip = 0;;) switch (_fun31287_ip) {
+    _fun31296: for (var _fun31296_ip = 0;;) switch (_fun31296_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,10 +31,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun31287_ip = 90;
-                    continue _fun31287;
+                    _fun31296_ip = 90;
+                    continue _fun31296;
                 }
         case 121:
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3527]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 3526]);

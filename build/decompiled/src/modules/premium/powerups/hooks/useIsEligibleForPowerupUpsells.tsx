@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0, arg1() {
-        _fun113406: for (var _fun113406_ip = 0;;) switch (_fun113406_ip) {
+        _fun113898: for (var _fun113898_ip = 0;;) switch (_fun113898_ip) {
             case 0:
                 var3 = arg1;
                 var4 = _closure1_slot0;
@@ -25,16 +25,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun113406_ip = 68;
-                    continue _fun113406
+                    _fun113898_ip = 68;
+                    continue _fun113898
                 }
             case 62:
                 var1 = var3.premiumSince;
             case 68:
                 var1 = var2 != var1;
                 if (var0) {
-                    _fun113406_ip = 78;
-                    continue _fun113406
+                    _fun113898_ip = 78;
+                    continue _fun113898
                 }
             case 75:
                 var0 = var1;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/powerups/hooks/useIsEligibleForPowerupUpsells.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun113407: for (var _fun113407_ip = 0;;) switch (_fun113407_ip) {
+        _fun113899: for (var _fun113899_ip = 0;;) switch (_fun113899_ip) {
             case 0:
                 var8 = arg0;
                 var _closure2_slot0 = var8;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 == var2;
                 var9 = undefined;
                 if (var1) {
-                    _fun113407_ip = 80;
-                    continue _fun113407
+                    _fun113899_ip = 80;
+                    continue _fun113899
                 }
             case 75:
                 var9 = var2.id;
@@ -117,15 +117,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var9;
                 var4[1] = var8;
                 var0 = function() { // Environment: var0
-                    _fun113409: for (var _fun113409_ip = 0;;) switch (_fun113409_ip) {
+                    _fun113901: for (var _fun113901_ip = 0;;) switch (_fun113901_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
                             var2 = var0 != var2;
                             var0 = undefined;
                             if (!var2) {
-                                _fun113409_ip = 45;
-                                continue _fun113409
+                                _fun113901_ip = 45;
+                                continue _fun113901
                             }
                         case 18:
                             var4 = _closure1_slot2;
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getIsEligibleForPowerupUpsells = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1681, 1621, 1623, 1638, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1683, 1621, 1623, 1640, 566, 2]);

@@ -12,25 +12,25 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class n implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28556d;
+    private String f28604d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28557e;
+    private String f28605e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28558i;
+    private String f28606i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f28559o;
+    private String f28607o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f28560p;
+    private String f28608p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Boolean f28561q;
+    private Boolean f28609q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Map f28562r;
+    private Map f28610r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -84,22 +84,22 @@ public final class n implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        nVar.f28561q = e3Var.y0();
+                        nVar.f28609q = e3Var.y0();
                         break;
                     case 1:
-                        nVar.f28558i = e3Var.q1();
+                        nVar.f28606i = e3Var.q1();
                         break;
                     case 2:
-                        nVar.f28556d = e3Var.q1();
+                        nVar.f28604d = e3Var.q1();
                         break;
                     case 3:
-                        nVar.f28559o = e3Var.q1();
+                        nVar.f28607o = e3Var.q1();
                         break;
                     case 4:
-                        nVar.f28557e = e3Var.q1();
+                        nVar.f28605e = e3Var.q1();
                         break;
                     case 5:
-                        nVar.f28560p = e3Var.q1();
+                        nVar.f28608p = e3Var.q1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -124,7 +124,7 @@ public final class n implements w1 {
         }
         if (obj != null && n.class == obj.getClass()) {
             n nVar = (n) obj;
-            if (io.sentry.util.y.a(this.f28556d, nVar.f28556d) && io.sentry.util.y.a(this.f28557e, nVar.f28557e) && io.sentry.util.y.a(this.f28558i, nVar.f28558i) && io.sentry.util.y.a(this.f28559o, nVar.f28559o) && io.sentry.util.y.a(this.f28560p, nVar.f28560p) && io.sentry.util.y.a(this.f28561q, nVar.f28561q)) {
+            if (io.sentry.util.y.a(this.f28604d, nVar.f28604d) && io.sentry.util.y.a(this.f28605e, nVar.f28605e) && io.sentry.util.y.a(this.f28606i, nVar.f28606i) && io.sentry.util.y.a(this.f28607o, nVar.f28607o) && io.sentry.util.y.a(this.f28608p, nVar.f28608p) && io.sentry.util.y.a(this.f28609q, nVar.f28609q)) {
                 return true;
             }
         }
@@ -132,62 +132,62 @@ public final class n implements w1 {
     }
 
     public String g() {
-        return this.f28556d;
+        return this.f28604d;
     }
 
     public void h(String str) {
-        this.f28559o = str;
+        this.f28607o = str;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28556d, this.f28557e, this.f28558i, this.f28559o, this.f28560p, this.f28561q);
+        return io.sentry.util.y.b(this.f28604d, this.f28605e, this.f28606i, this.f28607o, this.f28608p, this.f28609q);
     }
 
     public void i(String str) {
-        this.f28560p = str;
+        this.f28608p = str;
     }
 
     public void j(String str) {
-        this.f28556d = str;
+        this.f28604d = str;
     }
 
     public void k(Boolean bool) {
-        this.f28561q = bool;
+        this.f28609q = bool;
     }
 
     public void l(Map map) {
-        this.f28562r = map;
+        this.f28610r = map;
     }
 
     public void m(String str) {
-        this.f28557e = str;
+        this.f28605e = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28556d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28556d);
+        if (this.f28604d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f28604d);
         }
-        if (this.f28557e != null) {
-            f3Var.e("version").f(this.f28557e);
+        if (this.f28605e != null) {
+            f3Var.e("version").f(this.f28605e);
         }
-        if (this.f28558i != null) {
-            f3Var.e("raw_description").f(this.f28558i);
+        if (this.f28606i != null) {
+            f3Var.e("raw_description").f(this.f28606i);
         }
-        if (this.f28559o != null) {
-            f3Var.e("build").f(this.f28559o);
+        if (this.f28607o != null) {
+            f3Var.e("build").f(this.f28607o);
         }
-        if (this.f28560p != null) {
-            f3Var.e("kernel_version").f(this.f28560p);
+        if (this.f28608p != null) {
+            f3Var.e("kernel_version").f(this.f28608p);
         }
-        if (this.f28561q != null) {
-            f3Var.e("rooted").k(this.f28561q);
+        if (this.f28609q != null) {
+            f3Var.e("rooted").k(this.f28609q);
         }
-        Map map = this.f28562r;
+        Map map = this.f28610r;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28562r.get(str);
+                Object obj = this.f28610r.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -197,12 +197,12 @@ public final class n implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(n nVar) {
-        this.f28556d = nVar.f28556d;
-        this.f28557e = nVar.f28557e;
-        this.f28558i = nVar.f28558i;
-        this.f28559o = nVar.f28559o;
-        this.f28560p = nVar.f28560p;
-        this.f28561q = nVar.f28561q;
-        this.f28562r = io.sentry.util.c.b(nVar.f28562r);
+        this.f28604d = nVar.f28604d;
+        this.f28605e = nVar.f28605e;
+        this.f28606i = nVar.f28606i;
+        this.f28607o = nVar.f28607o;
+        this.f28608p = nVar.f28608p;
+        this.f28609q = nVar.f28609q;
+        this.f28610r = io.sentry.util.c.b(nVar.f28610r);
     }
 }

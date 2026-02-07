@@ -9,10 +9,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/collectibles/web',
+        'httpServerLocation': '/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi',
         'scales': null,
-        'hash': 'badc2ccdf19fd542b091b55c09e8bee9',
-        'name': 'ShopExternalSkus.compiled.messages',
+        'hash': '05ca260ddc3690c8f23eea8ea1704185',
+        'name': 'zh-CN.messages.05ca260ddc3690c8f23eea8ea1704185.compiled.messages',
         'type': 'jsona'
     };
     var4 = [1];

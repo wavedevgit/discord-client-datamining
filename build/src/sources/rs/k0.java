@@ -12,36 +12,36 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f49296q = AtomicReferenceFieldUpdater.newUpdater(k0.class, Object.class, "_state$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f49344q = AtomicReferenceFieldUpdater.newUpdater(k0.class, Object.class, "_state$volatile");
     private volatile /* synthetic */ Object _state$volatile;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f49297p;
+    private int f49345p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f49298d;
+        Object f49346d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f49299e;
+        Object f49347e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f49300i;
+        Object f49348i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f49301o;
+        Object f49349o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f49302p;
+        Object f49350p;
 
         /* renamed from: q  reason: collision with root package name */
-        /* synthetic */ Object f49303q;
+        /* synthetic */ Object f49351q;
 
         /* renamed from: s  reason: collision with root package name */
-        int f49305s;
+        int f49353s;
 
         a(Continuation continuation) {
             super(continuation);
@@ -49,8 +49,8 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f49303q = obj;
-            this.f49305s |= Integer.MIN_VALUE;
+            this.f49351q = obj;
+            this.f49353s |= Integer.MIN_VALUE;
             return k0.this.collect(null, this);
         }
     }
@@ -63,20 +63,20 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
         int i10;
         ss.d[] m10;
         synchronized (this) {
-            Object obj3 = f49296q.get(this);
+            Object obj3 = f49344q.get(this);
             if (obj != null && !Intrinsics.areEqual(obj3, obj)) {
                 return false;
             }
             if (Intrinsics.areEqual(obj3, obj2)) {
                 return true;
             }
-            f49296q.set(this, obj2);
-            int i11 = this.f49297p;
+            f49344q.set(this, obj2);
+            int i11 = this.f49345p;
             if ((i11 & 1) == 0) {
                 int i12 = i11 + 1;
-                this.f49297p = i12;
+                this.f49345p = i12;
                 ss.d[] m11 = m();
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 while (true) {
                     m0[] m0VarArr = (m0[]) m11;
                     if (m0VarArr != null) {
@@ -87,19 +87,19 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
                         }
                     }
                     synchronized (this) {
-                        i10 = this.f49297p;
+                        i10 = this.f49345p;
                         if (i10 == i12) {
-                            this.f49297p = i12 + 1;
+                            this.f49345p = i12 + 1;
                             return true;
                         }
                         m10 = m();
-                        Unit unit2 = Unit.f32008a;
+                        Unit unit2 = Unit.f32056a;
                     }
                     m11 = m10;
                     i12 = i10;
                 }
             } else {
-                this.f49297p = i11 + 2;
+                this.f49345p = i11 + 2;
                 return true;
             }
         }
@@ -157,7 +157,7 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
     @Override // kotlinx.coroutines.flow.MutableSharedFlow, kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
         setValue(obj);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // ss.q
@@ -168,18 +168,18 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
     @Override // kotlinx.coroutines.flow.MutableStateFlow
     public boolean g(Object obj, Object obj2) {
         if (obj == null) {
-            obj = ss.t.f50099a;
+            obj = ss.t.f50147a;
         }
         if (obj2 == null) {
-            obj2 = ss.t.f50099a;
+            obj2 = ss.t.f50147a;
         }
         return q(obj, obj2);
     }
 
     @Override // kotlinx.coroutines.flow.MutableStateFlow, rs.j0
     public Object getValue() {
-        ts.e0 e0Var = ss.t.f50099a;
-        Object obj = f49296q.get(this);
+        ts.e0 e0Var = ss.t.f50147a;
+        Object obj = f49344q.get(this);
         if (obj == e0Var) {
             return null;
         }
@@ -208,7 +208,7 @@ public final class k0 extends ss.b implements MutableStateFlow, c, ss.q {
     @Override // kotlinx.coroutines.flow.MutableStateFlow
     public void setValue(Object obj) {
         if (obj == null) {
-            obj = ss.t.f50099a;
+            obj = ss.t.f50147a;
         }
         q(null, obj);
     }

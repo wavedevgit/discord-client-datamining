@@ -59,10 +59,10 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationDeserializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ModuleDescriptor f34281a;
+    private final ModuleDescriptor f34329a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final NotFoundClasses f34282b;
+    private final NotFoundClasses f34330b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -129,8 +129,8 @@ public final class AnnotationDeserializer {
     public AnnotationDeserializer(@NotNull ModuleDescriptor module, @NotNull NotFoundClasses notFoundClasses) {
         Intrinsics.checkNotNullParameter(module, "module");
         Intrinsics.checkNotNullParameter(notFoundClasses, "notFoundClasses");
-        this.f34281a = module;
-        this.f34282b = notFoundClasses;
+        this.f34329a = module;
+        this.f34330b = notFoundClasses;
     }
 
     private final boolean a(ConstantValue constantValue, KotlinType kotlinType, ProtoBuf.Annotation.Argument.Value value) {
@@ -144,7 +144,7 @@ public final class AnnotationDeserializer {
         }
         if (i10 != 10) {
             if (i10 != 13) {
-                return Intrinsics.areEqual(constantValue.getType(this.f34281a), kotlinType);
+                return Intrinsics.areEqual(constantValue.getType(this.f34329a), kotlinType);
             }
             if ((constantValue instanceof ArrayValue) && ((ArrayValue) constantValue).getValue().size() == value.getArrayElementList().size()) {
                 KotlinType arrayElementTypeOrNull = b().getArrayElementTypeOrNull(kotlinType);
@@ -182,7 +182,7 @@ public final class AnnotationDeserializer {
     }
 
     private final KotlinBuiltIns b() {
-        return this.f34281a.getBuiltIns();
+        return this.f34329a.getBuiltIns();
     }
 
     private final Pair c(ProtoBuf.Annotation.Argument argument, Map map, NameResolver nameResolver) {
@@ -199,7 +199,7 @@ public final class AnnotationDeserializer {
     }
 
     private final ClassDescriptor d(ClassId classId) {
-        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f34281a, classId, this.f34282b);
+        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f34329a, classId, this.f34330b);
     }
 
     private final ConstantValue e(KotlinType kotlinType, ProtoBuf.Annotation.Argument.Value value, NameResolver nameResolver) {

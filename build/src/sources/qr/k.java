@@ -6,7 +6,7 @@ final class k {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f48041a = new k();
+    public static final k f48089a = new k();
 
     private k() {
     }

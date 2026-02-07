@@ -94,13 +94,13 @@ public final class JSWatchdogManager$ping$1 extends k implements Function2<Corou
                 CrashReporting.INSTANCE.captureMessage("Failed to process JSWatchdog ping", e10);
                 this.$promise.reject(e10);
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((JSWatchdogManager$ping$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((JSWatchdogManager$ping$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

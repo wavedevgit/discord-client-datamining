@@ -50,7 +50,7 @@ public abstract class c extends b {
 
     public static final a h(String hexString) {
         Intrinsics.checkNotNullParameter(hexString, "hexString");
-        return a.f41150i.a(d.k(hexString, 0, 16, null, 4, null), d.k(hexString, 16, 32, null, 4, null));
+        return a.f41198i.a(d.k(hexString, 0, 16, null, 4, null), d.k(hexString, 16, 32, null, 4, null));
     }
 
     public static final a i(String hexDashString) {
@@ -65,6 +65,6 @@ public abstract class c extends b {
         e(hexDashString, 23);
         long j10 = k11 << 16;
         long j11 = k13 << 48;
-        return a.f41150i.a(j10 | (k10 << 32) | k12, j11 | d.k(hexDashString, 24, 36, null, 4, null));
+        return a.f41198i.a(j10 | (k10 << 32) | k12, j11 | d.k(hexDashString, 24, 36, null, 4, null));
     }
 }

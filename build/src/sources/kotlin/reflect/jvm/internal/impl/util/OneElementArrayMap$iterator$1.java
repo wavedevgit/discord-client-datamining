@@ -8,26 +8,26 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class OneElementArrayMap$iterator$1<T> implements Iterator<T>, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f34794d = true;
+    private boolean f34842d = true;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ OneElementArrayMap f34795e;
+    final /* synthetic */ OneElementArrayMap f34843e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public OneElementArrayMap$iterator$1(OneElementArrayMap oneElementArrayMap) {
-        this.f34795e = oneElementArrayMap;
+        this.f34843e = oneElementArrayMap;
     }
 
     @Override // java.util.Iterator
     public boolean hasNext() {
-        return this.f34794d;
+        return this.f34842d;
     }
 
     @Override // java.util.Iterator
     public T next() {
-        if (this.f34794d) {
-            this.f34794d = false;
-            return (T) this.f34795e.getValue();
+        if (this.f34842d) {
+            this.f34842d = false;
+            return (T) this.f34843e.getValue();
         }
         throw new NoSuchElementException();
     }

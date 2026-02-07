@@ -4,36 +4,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var3 = function arg0() {
-        _fun43959: for (var _fun43959_ip = 0;;) switch (_fun43959_ip) {
+        _fun43966: for (var _fun43966_ip = 0;;) switch (_fun43966_ip) {
             case 0:
                 var1 = arg0;
                 var3 = null;
                 var4 = var3 == var1;
                 var2 = undefined;
                 if (var4) {
-                    _fun43959_ip = 22;
-                    continue _fun43959
+                    _fun43966_ip = 22;
+                    continue _fun43966
                 }
             case 16:
                 var2 = var1.roles;
             case 22:
                 if (!(var3 != var2)) {
-                    _fun43959_ip = 105;
-                    continue _fun43959
+                    _fun43966_ip = 105;
+                    continue _fun43966
                 }
             case 26:
                 var2 = var1.roles;
                 var4 = var2.length;
                 var2 = 0;
                 if (!(var2 !== var4)) {
-                    _fun43959_ip = 105;
-                    continue _fun43959
+                    _fun43966_ip = 105;
+                    continue _fun43966
                 }
             case 43:
                 var2 = var1.guildId;
                 if (!(var3 != var2)) {
-                    _fun43959_ip = 105;
-                    continue _fun43959
+                    _fun43966_ip = 105;
+                    continue _fun43966
                 }
             case 52:
                 var4 = _closure1_slot0;
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function arg0, arg1() {
-        _fun43961: for (var _fun43961_ip = 0;;) switch (_fun43961_ip) {
+        _fun43968: for (var _fun43968_ip = 0;;) switch (_fun43968_ip) {
             case 0:
                 var1 = arg0;
                 var4 = arg1;
@@ -88,28 +88,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var1;
                 var3 = undefined;
                 if (var5) {
-                    _fun43961_ip = 25;
-                    continue _fun43961
+                    _fun43968_ip = 25;
+                    continue _fun43968
                 }
             case 19:
                 var3 = var1.roles;
             case 25:
                 if (!(var2 != var3)) {
-                    _fun43961_ip = 96;
-                    continue _fun43961
+                    _fun43968_ip = 96;
+                    continue _fun43968
                 }
             case 29:
                 var3 = var1.roles;
                 var5 = var3.length;
                 var3 = 0;
                 if (!(var3 !== var5)) {
-                    _fun43961_ip = 96;
-                    continue _fun43961
+                    _fun43968_ip = 96;
+                    continue _fun43968
                 }
             case 46:
                 if (!(var2 != var4)) {
-                    _fun43961_ip = 96;
-                    continue _fun43961
+                    _fun43968_ip = 96;
+                    continue _fun43968
                 }
             case 50:
                 var3 = _closure1_slot0;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isRoleSubscriptionEmoji = var4;
     var2.isPurchasableRoleSubscriptionEmoji = var3;
     var1 = function arg0, arg1() {
-        _fun43963: for (var _fun43963_ip = 0;;) switch (_fun43963_ip) {
+        _fun43970: for (var _fun43970_ip = 0;;) switch (_fun43970_ip) {
             case 0:
                 var2 = arg0;
                 var3 = null;
@@ -143,36 +143,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var1 = undefined;
                 if (var5) {
-                    _fun43963_ip = 24;
-                    continue _fun43963
+                    _fun43970_ip = 24;
+                    continue _fun43970
                 }
             case 18:
                 var1 = var2.roles;
             case 24:
                 if (!(var3 != var1)) {
-                    _fun43963_ip = 167;
-                    continue _fun43963
+                    _fun43970_ip = 167;
+                    continue _fun43970
                 }
             case 31:
                 var1 = var2.roles;
                 var5 = var1.length;
                 var1 = 0;
                 if (!(var1 !== var5)) {
-                    _fun43963_ip = 167;
-                    continue _fun43963
+                    _fun43970_ip = 167;
+                    continue _fun43970
                 }
             case 48:
                 var1 = var2.guildId;
                 if (!(var3 != var1)) {
-                    _fun43963_ip = 167;
-                    continue _fun43963
+                    _fun43970_ip = 167;
+                    continue _fun43970
                 }
             case 57:
                 var1 = _closure1_slot1;
                 var1 = var1.bind(var4)(var2);
                 if (!var1) {
-                    _fun43963_ip = 163;
-                    continue _fun43963
+                    _fun43970_ip = 163;
+                    continue _fun43970
                 }
             case 72:
                 var5 = _closure1_slot0;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg1;
                 var0 = var0 === var4;
                 if (!var0) {
-                    _fun43963_ip = 153;
-                    continue _fun43963
+                    _fun43970_ip = 153;
+                    continue _fun43970
                 }
             case 133:
                 var4 = _closure1_slot0;
@@ -204,13 +204,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var2);
             case 153:
                 if (var1) {
-                    _fun43963_ip = 163;
-                    continue _fun43963
+                    _fun43970_ip = 163;
+                    continue _fun43970
                 }
             case 156:
                 if (var0) {
-                    _fun43963_ip = 163;
-                    continue _fun43963
+                    _fun43970_ip = 163;
+                    continue _fun43970
                 }
             case 159:
                 var0 = true;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUnusableRoleSubscriptionEmoji = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4741, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4740, 2]);

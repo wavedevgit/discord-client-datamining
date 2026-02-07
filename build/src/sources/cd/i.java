@@ -116,7 +116,7 @@ public abstract class i {
     private int k(l lVar, y yVar) {
         long a10 = this.f7382d.a(lVar);
         if (a10 >= 0) {
-            yVar.f50579a = a10;
+            yVar.f50627a = a10;
             return 1;
         }
         if (a10 < -1) {

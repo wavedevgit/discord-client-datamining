@@ -5,7 +5,7 @@ import yi.c;
 final class r7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r7 f40229a = new r7();
+    static final r7 f40277a = new r7();
 
     static {
         c.b a10 = yi.c.a("landmarkMode");

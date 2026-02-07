@@ -8,11 +8,11 @@ import java.util.List;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f50210a;
+    private final List f50258a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(String[] strArr) {
-        this.f50210a = Collections.unmodifiableList(Arrays.asList(strArr));
+        this.f50258a = Collections.unmodifiableList(Arrays.asList(strArr));
     }
 
     private boolean a(char c10, char c11) {
@@ -46,7 +46,7 @@ public final class s {
         String str;
         boolean z13;
         Enum[] enumArr = (Enum[]) cls.getEnumConstants();
-        int size = this.f50210a.size();
+        int size = this.f50258a.size();
         int index = parsePosition.getIndex();
         int length = charSequence.length();
         String str2 = "";
@@ -60,7 +60,7 @@ public final class s {
                 if (i12 >= size) {
                     str3 = enumArr[i12].name();
                 } else {
-                    str3 = (String) this.f50210a.get(i12);
+                    str3 = (String) this.f50258a.get(i12);
                 }
             }
             int length2 = str3.length();
@@ -142,13 +142,13 @@ public final class s {
     }
 
     public List b() {
-        return this.f50210a;
+        return this.f50258a;
     }
 
     public Enum c(CharSequence charSequence, ParsePosition parsePosition, Class cls, rt.d dVar) {
-        rt.c cVar = a.f50118i;
+        rt.c cVar = a.f50166i;
         Boolean bool = Boolean.TRUE;
-        return e(charSequence, parsePosition, cls, ((Boolean) dVar.b(cVar, bool)).booleanValue(), ((Boolean) dVar.b(a.f50119j, Boolean.FALSE)).booleanValue(), ((Boolean) dVar.b(a.f50120k, bool)).booleanValue());
+        return e(charSequence, parsePosition, cls, ((Boolean) dVar.b(cVar, bool)).booleanValue(), ((Boolean) dVar.b(a.f50167j, Boolean.FALSE)).booleanValue(), ((Boolean) dVar.b(a.f50168k, bool)).booleanValue());
     }
 
     public Enum d(CharSequence charSequence, ParsePosition parsePosition, Class cls, g gVar) {
@@ -186,14 +186,14 @@ public final class s {
 
     public String f(Enum r32) {
         int ordinal = r32.ordinal();
-        if (this.f50210a.size() <= ordinal) {
+        if (this.f50258a.size() <= ordinal) {
             return r32.name();
         }
-        return (String) this.f50210a.get(ordinal);
+        return (String) this.f50258a.get(ordinal);
     }
 
     public String toString() {
-        int size = this.f50210a.size();
+        int size = this.f50258a.size();
         StringBuilder sb2 = new StringBuilder((size * 16) + 2);
         sb2.append('{');
         boolean z10 = true;
@@ -203,7 +203,7 @@ public final class s {
             } else {
                 sb2.append(',');
             }
-            sb2.append((String) this.f50210a.get(i10));
+            sb2.append((String) this.f50258a.get(i10));
         }
         sb2.append('}');
         return sb2.toString();

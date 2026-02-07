@@ -1,7 +1,7 @@
 // modules/launchpad/native/LaunchPadConstants.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun77264: for (var _fun77264_ip = 0;;) switch (_fun77264_ip) {
+    _fun77715: for (var _fun77715_ip = 0;;) switch (_fun77715_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var1.bind(var3)();
             var3 = 24;
             if (var1) {
-                _fun77264_ip = 174;
-                continue _fun77264
+                _fun77715_ip = 174;
+                continue _fun77715
             }
         case 102:
             var1 = 2;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var1.bind(var8)();
             var1 = 13;
             if (var8) {
-                _fun77264_ip = 171;
-                continue _fun77264
+                _fun77715_ip = 171;
+                continue _fun77715
             }
         case 130:
             var9 = var7.Math;

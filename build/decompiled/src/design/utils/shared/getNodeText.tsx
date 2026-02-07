@@ -25,30 +25,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'design/utils/shared/getNodeText.tsx';
     var1 = var4.bind(var5)(var1);
     var1 = function arg0() {
-        _fun27411: for (var _fun27411_ip = 0;;) switch (_fun27411_ip) {
+        _fun27422: for (var _fun27422_ip = 0;;) switch (_fun27422_ip) {
             case 0:
                 var4 = arg0;
                 var2 = typeof var4;
                 var1 = 'string';
                 var0 = var4;
                 if (!(var1 !== var2)) {
-                    _fun27411_ip = 120;
-                    continue _fun27411
+                    _fun27422_ip = 120;
+                    continue _fun27422
                 }
             case 17:
                 var1 = 'number';
                 var0 = var4;
                 if (!(var1 !== var2)) {
-                    _fun27411_ip = 120;
-                    continue _fun27411
+                    _fun27422_ip = 120;
+                    continue _fun27422
                 }
             case 28:
                 var1 = global;
                 var1 = var1.Array;
                 var1 = var4 instanceof var1;
                 if (var1) {
-                    _fun27411_ip = 89;
-                    continue _fun27411
+                    _fun27422_ip = 89;
+                    continue _fun27422
                 }
             case 46:
                 var3 = _closure1_slot0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var1 = undefined;
                 if (!var3) {
-                    _fun27411_ip = 87;
-                    continue _fun27411
+                    _fun27422_ip = 87;
+                    continue _fun27422
                 }
             case 68:
                 var5 = _closure1_slot1;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.children;
                 var1 = var5.bind(var6)(var3);
             case 87:
-                _fun27411_ip = 117;
-                continue _fun27411;
+                _fun27422_ip = 117;
+                continue _fun27422;
             case 89:
                 var3 = var4.map;
                 var2 = _closure1_slot1;

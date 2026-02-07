@@ -1,13 +1,13 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function arg0() {
-        _fun16440: for (var _fun16440_ip = 0;;) switch (_fun16440_ip) {
+        _fun16445: for (var _fun16445_ip = 0;;) switch (_fun16445_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1;
                 if (!var0) {
-                    _fun16440_ip = 20;
-                    continue _fun16440
+                    _fun16445_ip = 20;
+                    continue _fun16445
                 }
             case 9:
                 var3 = 'object';
@@ -15,8 +15,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 20:
                 if (!var0) {
-                    _fun16440_ip = 40;
-                    continue _fun16440
+                    _fun16445_ip = 40;
+                    continue _fun16445
                 }
             case 23:
                 var2 = var1.copy;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 40:
                 if (!var0) {
-                    _fun16440_ip = 60;
-                    continue _fun16440
+                    _fun16445_ip = 60;
+                    continue _fun16445
                 }
             case 43:
                 var2 = var1.fill;
@@ -35,8 +35,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 60:
                 if (!var0) {
-                    _fun16440_ip = 80;
-                    continue _fun16440
+                    _fun16445_ip = 80;
+                    continue _fun16445
                 }
             case 63:
                 var1 = var1.readUInt8;

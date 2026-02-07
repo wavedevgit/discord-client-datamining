@@ -9,15 +9,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
-        'width': 99.66666666666667,
-        'height': 66.66666666666667,
+        'httpServerLocation': '/assets/modules/premium/native/images/perks',
+        'width': 300.5,
+        'height': 175,
         'scales': null,
-        'hash': '0fef0a9d83d27dc691bf77b0bdae0680',
-        'name': 'asset_opal_badge_small',
+        'hash': '034593f3dac51b7d85899e7191ac5a9f',
+        'name': 'client_theme',
         'type': 'png'
     };
-    var4 = [3];
+    var4 = [2, 3];
     var1.scales = var4;
     var2 = var2.bind(var3)(var1);
     var1 = module;

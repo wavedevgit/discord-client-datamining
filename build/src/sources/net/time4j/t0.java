@@ -14,80 +14,80 @@ import java.util.concurrent.ConcurrentMap;
 public final class t0 {
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ConcurrentMap f39538n = new ConcurrentHashMap();
+    private static final ConcurrentMap f39586n = new ConcurrentHashMap();
 
     /* renamed from: o  reason: collision with root package name */
-    private static final w[] f39539o = {f.f39284o, f.f39286q, f.f39287r, f.f39288s, g.f39321d, g.f39322e, g.f39323i, g.f39324o, g.f39325p, g.f39326q};
+    private static final w[] f39587o = {f.f39332o, f.f39334q, f.f39335r, f.f39336s, g.f39369d, g.f39370e, g.f39371i, g.f39372o, g.f39373p, g.f39374q};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final st.x f39540p;
+    private static final st.x f39588p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final st.x f39541q;
+    private static final st.x f39589q;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Locale f39542a;
+    private final Locale f39590a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f39543b;
+    private final Map f39591b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f39544c;
+    private final Map f39592c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f39545d;
+    private final Map f39593d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f39546e;
+    private final Map f39594e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f39547f;
+    private final Map f39595f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f39548g;
+    private final Map f39596g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f39549h;
+    private final String f39597h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f39550i;
+    private final String f39598i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f39551j;
+    private final String f39599j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f39552k;
+    private final String f39600k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Map f39553l;
+    private final Map f39601l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Map f39554m;
+    private final Map f39602m;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39555a;
+        static final /* synthetic */ int[] f39603a;
 
         static {
             int[] iArr = new int[st.v.values().length];
-            f39555a = iArr;
+            f39603a = iArr;
             try {
                 iArr[st.v.WIDE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39555a[st.v.ABBREVIATED.ordinal()] = 2;
+                f39603a[st.v.ABBREVIATED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39555a[st.v.SHORT.ordinal()] = 3;
+                f39603a[st.v.SHORT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f39555a[st.v.NARROW.ordinal()] = 4;
+                f39603a[st.v.NARROW.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -99,7 +99,7 @@ public final class t0 {
         }
 
         private static String F(String str, String str2, String str3, st.v vVar, st.n nVar) {
-            int i10 = a.f39555a[vVar.ordinal()];
+            int i10 = a.f39603a[vVar.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2 && i10 != 3) {
                     if (i10 == 4) {
@@ -321,7 +321,7 @@ public final class t0 {
     static {
         b bVar = null;
         b bVar2 = new b(null);
-        f39541q = bVar2;
+        f39589q = bVar2;
         Iterator it = pt.d.c().g(st.x.class).iterator();
         if (it.hasNext()) {
             bVar = (st.x) it.next();
@@ -329,7 +329,7 @@ public final class t0 {
         if (bVar != null) {
             bVar2 = bVar;
         }
-        f39540p = bVar2;
+        f39588p = bVar2;
     }
 
     private t0(Locale locale) {
@@ -343,14 +343,14 @@ public final class t0 {
         HashMap hashMap2;
         st.n[] values3;
         st.n[] values4;
-        this.f39542a = locale;
+        this.f39590a = locale;
         HashMap hashMap3 = new HashMap(10);
         HashMap hashMap4 = new HashMap(10);
         HashMap hashMap5 = new HashMap(10);
         HashMap hashMap6 = new HashMap(10);
         HashMap hashMap7 = new HashMap(10);
         HashMap hashMap8 = new HashMap(10);
-        w[] wVarArr = f39539o;
+        w[] wVarArr = f39587o;
         int length = wVarArr.length;
         int i10 = 0;
         while (i10 < length) {
@@ -437,12 +437,12 @@ public final class t0 {
             }
             hashMap8.put(valueOf, Collections.unmodifiableMap(enumMap7));
         }
-        this.f39543b = Collections.unmodifiableMap(hashMap9);
-        this.f39544c = Collections.unmodifiableMap(hashMap10);
-        this.f39545d = Collections.unmodifiableMap(hashMap5);
-        this.f39546e = Collections.unmodifiableMap(hashMap6);
-        this.f39547f = Collections.unmodifiableMap(hashMap7);
-        this.f39548g = Collections.unmodifiableMap(hashMap8);
+        this.f39591b = Collections.unmodifiableMap(hashMap9);
+        this.f39592c = Collections.unmodifiableMap(hashMap10);
+        this.f39593d = Collections.unmodifiableMap(hashMap5);
+        this.f39594e = Collections.unmodifiableMap(hashMap6);
+        this.f39595f = Collections.unmodifiableMap(hashMap7);
+        this.f39596g = Collections.unmodifiableMap(hashMap8);
         EnumMap enumMap8 = new EnumMap(y0.class);
         EnumMap enumMap9 = new EnumMap(y0.class);
         y0[] values9 = y0.values();
@@ -464,7 +464,7 @@ public final class t0 {
                 i22++;
             }
         }
-        st.x xVar = f39540p;
+        st.x xVar = f39588p;
         String c10 = xVar.c(locale);
         if (!(xVar instanceof st.r)) {
             str4 = "";
@@ -485,31 +485,31 @@ public final class t0 {
                 } catch (MissingResourceException unused2) {
                     str2 = str;
                     str = b10;
-                    c10 = f39541q.c(locale);
+                    c10 = f39589q.c(locale);
                     str4 = str2;
-                    this.f39549h = c10;
-                    this.f39550i = str;
-                    this.f39551j = str3;
-                    this.f39552k = str4;
-                    this.f39553l = Collections.unmodifiableMap(enumMap8);
-                    this.f39554m = Collections.unmodifiableMap(enumMap9);
+                    this.f39597h = c10;
+                    this.f39598i = str;
+                    this.f39599j = str3;
+                    this.f39600k = str4;
+                    this.f39601l = Collections.unmodifiableMap(enumMap8);
+                    this.f39602m = Collections.unmodifiableMap(enumMap9);
                 }
             } catch (MissingResourceException unused3) {
                 str2 = "";
                 str3 = str2;
             }
         }
-        this.f39549h = c10;
-        this.f39550i = str;
-        this.f39551j = str3;
-        this.f39552k = str4;
-        this.f39553l = Collections.unmodifiableMap(enumMap8);
-        this.f39554m = Collections.unmodifiableMap(enumMap9);
+        this.f39597h = c10;
+        this.f39598i = str;
+        this.f39599j = str3;
+        this.f39600k = str4;
+        this.f39601l = Collections.unmodifiableMap(enumMap8);
+        this.f39602m = Collections.unmodifiableMap(enumMap9);
     }
 
     private static char a(w wVar) {
         char d10 = wVar.d();
-        if (wVar == g.f39322e) {
+        if (wVar == g.f39370e) {
             return 'N';
         }
         return d10;
@@ -517,9 +517,9 @@ public final class t0 {
 
     private static String c(Locale locale, w wVar, st.v vVar, st.n nVar) {
         try {
-            return f(f39540p, locale, a(wVar), vVar, nVar);
+            return f(f39588p, locale, a(wVar), vVar, nVar);
         } catch (MissingResourceException unused) {
-            return f(f39541q, locale, a(wVar), vVar, nVar);
+            return f(f39589q, locale, a(wVar), vVar, nVar);
         }
     }
 
@@ -540,17 +540,17 @@ public final class t0 {
             nVar2 = nVar;
         }
         try {
-            return g(f39540p, locale2, a(wVar), z12, z13, nVar2);
+            return g(f39588p, locale2, a(wVar), z12, z13, nVar2);
         } catch (MissingResourceException unused2) {
-            return g(f39541q, locale2, a(wVar), z12, z13, nVar2);
+            return g(f39589q, locale2, a(wVar), z12, z13, nVar2);
         }
     }
 
     private static String e(Locale locale, st.v vVar, int i10) {
         try {
-            return f39540p.a(locale, vVar, i10);
+            return f39588p.a(locale, vVar, i10);
         } catch (MissingResourceException unused) {
-            return f39541q.a(locale, vVar, i10);
+            return f39589q.a(locale, vVar, i10);
         }
     }
 
@@ -641,7 +641,7 @@ public final class t0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t0 h(Locale locale) {
         if (locale != null) {
-            ConcurrentMap concurrentMap = f39538n;
+            ConcurrentMap concurrentMap = f39586n;
             t0 t0Var = (t0) concurrentMap.get(locale);
             if (t0Var == null) {
                 t0Var = new t0(locale);
@@ -657,6 +657,6 @@ public final class t0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String b() {
-        return this.f39551j;
+        return this.f39599j;
     }
 }

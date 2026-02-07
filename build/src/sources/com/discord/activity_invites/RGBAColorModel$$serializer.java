@@ -39,7 +39,7 @@ public /* synthetic */ class RGBAColorModel$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        g0 g0Var = g0.f31001a;
+        g0 g0Var = g0.f31049a;
         return new KSerializer[]{g0Var, g0Var, g0Var, g0Var};
     }
 

@@ -6,28 +6,28 @@ import java.util.List;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f51352a;
+    public final String f51400a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final long f51353b;
+    public final long f51401b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final List f51354c;
+    public final List f51402c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final List f51355d;
+    public final List f51403d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final e f51356e;
+    public final e f51404e;
 
     public g(String str, long j10, List list, List list2) {
         this(str, j10, list, list2, null);
     }
 
     public int a(int i10) {
-        int size = this.f51354c.size();
+        int size = this.f51402c.size();
         for (int i11 = 0; i11 < size; i11++) {
-            if (((a) this.f51354c.get(i11)).f51308b == i10) {
+            if (((a) this.f51402c.get(i11)).f51356b == i10) {
                 return i11;
             }
         }
@@ -35,10 +35,10 @@ public class g {
     }
 
     public g(String str, long j10, List list, List list2, e eVar) {
-        this.f51352a = str;
-        this.f51353b = j10;
-        this.f51354c = Collections.unmodifiableList(list);
-        this.f51355d = Collections.unmodifiableList(list2);
-        this.f51356e = eVar;
+        this.f51400a = str;
+        this.f51401b = j10;
+        this.f51402c = Collections.unmodifiableList(list);
+        this.f51403d = Collections.unmodifiableList(list2);
+        this.f51404e = eVar;
     }
 }

@@ -13,68 +13,68 @@ import x5.d;
 public class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AssetManager f43750d;
+    private final AssetManager f43798d;
 
     /* renamed from: e  reason: collision with root package name */
-    private l5.b f43751e;
+    private l5.b f43799e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f43747a = new i();
+    private final i f43795a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43748b = new HashMap();
+    private final Map f43796b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f43749c = new HashMap();
+    private final Map f43797c = new HashMap();
 
     /* renamed from: f  reason: collision with root package name */
-    private String f43752f = ".ttf";
+    private String f43800f = ".ttf";
 
     public a(Drawable.Callback callback, l5.b bVar) {
-        this.f43751e = bVar;
+        this.f43799e = bVar;
         if (!(callback instanceof View)) {
             d.c("LottieDrawable must be inside of a view for images to work.");
-            this.f43750d = null;
+            this.f43798d = null;
             return;
         }
-        this.f43750d = ((View) callback).getContext().getAssets();
+        this.f43798d = ((View) callback).getContext().getAssets();
     }
 
     private Typeface a(c cVar) {
         Typeface typeface;
         String a10 = cVar.a();
-        Typeface typeface2 = (Typeface) this.f43749c.get(a10);
+        Typeface typeface2 = (Typeface) this.f43797c.get(a10);
         if (typeface2 != null) {
             return typeface2;
         }
         String c10 = cVar.c();
         String b10 = cVar.b();
-        l5.b bVar = this.f43751e;
+        l5.b bVar = this.f43799e;
         if (bVar != null) {
             typeface = bVar.b(a10, c10, b10);
             if (typeface == null) {
-                typeface = this.f43751e.a(a10);
+                typeface = this.f43799e.a(a10);
             }
         } else {
             typeface = null;
         }
-        l5.b bVar2 = this.f43751e;
+        l5.b bVar2 = this.f43799e;
         if (bVar2 != null && typeface == null) {
             String d10 = bVar2.d(a10, c10, b10);
             if (d10 == null) {
-                d10 = this.f43751e.c(a10);
+                d10 = this.f43799e.c(a10);
             }
             if (d10 != null) {
-                typeface = Typeface.createFromAsset(this.f43750d, d10);
+                typeface = Typeface.createFromAsset(this.f43798d, d10);
             }
         }
         if (cVar.d() != null) {
             return cVar.d();
         }
         if (typeface == null) {
-            typeface = Typeface.createFromAsset(this.f43750d, "fonts/" + a10 + this.f43752f);
+            typeface = Typeface.createFromAsset(this.f43798d, "fonts/" + a10 + this.f43800f);
         }
-        this.f43749c.put(a10, typeface);
+        this.f43797c.put(a10, typeface);
         return typeface;
     }
 
@@ -98,21 +98,21 @@ public class a {
     }
 
     public Typeface b(c cVar) {
-        this.f43747a.b(cVar.a(), cVar.c());
-        Typeface typeface = (Typeface) this.f43748b.get(this.f43747a);
+        this.f43795a.b(cVar.a(), cVar.c());
+        Typeface typeface = (Typeface) this.f43796b.get(this.f43795a);
         if (typeface != null) {
             return typeface;
         }
         Typeface e10 = e(a(cVar), cVar.c());
-        this.f43748b.put(this.f43747a, e10);
+        this.f43796b.put(this.f43795a, e10);
         return e10;
     }
 
     public void c(String str) {
-        this.f43752f = str;
+        this.f43800f = str;
     }
 
     public void d(l5.b bVar) {
-        this.f43751e = bVar;
+        this.f43799e = bVar;
     }
 }

@@ -7,7 +7,7 @@ import ks.n;
 class m implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final m f35362d = new m();
+    public static final m f35410d = new m();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

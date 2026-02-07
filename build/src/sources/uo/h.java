@@ -3,18 +3,18 @@ package uo;
 public final class h implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f51953a;
+    private final br.h f52001a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f51954b;
+    private final br.h f52002b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.h f51955c;
+    private final br.h f52003c;
 
     public h(br.h hVar, br.h hVar2, br.h hVar3) {
-        this.f51953a = hVar;
-        this.f51954b = hVar2;
-        this.f51955c = hVar3;
+        this.f52001a = hVar;
+        this.f52002b = hVar2;
+        this.f52003c = hVar3;
     }
 
     public static h a(br.h hVar, br.h hVar2, br.h hVar3) {
@@ -28,6 +28,6 @@ public final class h implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public g get() {
-        return c((ap.r) this.f51953a.get(), (com.squareup.moshi.w) this.f51954b.get(), (dp.b) this.f51955c.get());
+        return c((ap.r) this.f52001a.get(), (com.squareup.moshi.w) this.f52002b.get(), (dp.b) this.f52003c.get());
     }
 }

@@ -15,7 +15,7 @@ public final class PrimitiveStructurableTextSerializer implements KSerializer {
     @NotNull
     public static final PrimitiveStructurableTextSerializer INSTANCE = new PrimitiveStructurableTextSerializer();
     @NotNull
-    private static final SerialDescriptor descriptor = j.b("PrimitiveStructurableText", e.i.f26478a);
+    private static final SerialDescriptor descriptor = j.b("PrimitiveStructurableText", e.i.f26526a);
 
     private PrimitiveStructurableTextSerializer() {
     }

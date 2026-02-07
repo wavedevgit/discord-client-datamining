@@ -9,19 +9,19 @@ public abstract class z2 {
     public static class a extends b implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        private final Function0 f35488e;
+        private final Function0 f35536e;
 
         /* renamed from: i  reason: collision with root package name */
-        private volatile SoftReference f35489i;
+        private volatile SoftReference f35537i;
 
         public a(Object obj, Function0 function0) {
             if (function0 == null) {
                 d(0);
             }
-            this.f35489i = null;
-            this.f35488e = function0;
+            this.f35537i = null;
+            this.f35536e = function0;
             if (obj != null) {
-                this.f35489i = new SoftReference(a(obj));
+                this.f35537i = new SoftReference(a(obj));
             }
         }
 
@@ -32,12 +32,12 @@ public abstract class z2 {
         @Override // ks.z2.b, kotlin.jvm.functions.Function0
         public Object invoke() {
             Object obj;
-            SoftReference softReference = this.f35489i;
+            SoftReference softReference = this.f35537i;
             if (softReference != null && (obj = softReference.get()) != null) {
                 return c(obj);
             }
-            Object invoke = this.f35488e.invoke();
-            this.f35489i = new SoftReference(a(invoke));
+            Object invoke = this.f35536e.invoke();
+            this.f35537i = new SoftReference(a(invoke));
             return invoke;
         }
     }
@@ -46,7 +46,7 @@ public abstract class z2 {
     public static abstract class b {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final Object f35490d = new a();
+        private static final Object f35538d = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         static class a {
@@ -56,7 +56,7 @@ public abstract class z2 {
 
         protected Object a(Object obj) {
             if (obj == null) {
-                return f35490d;
+                return f35538d;
             }
             return obj;
         }
@@ -66,7 +66,7 @@ public abstract class z2 {
         }
 
         protected Object c(Object obj) {
-            if (obj == f35490d) {
+            if (obj == f35538d) {
                 return null;
             }
             return obj;

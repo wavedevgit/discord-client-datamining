@@ -5,30 +5,30 @@ import yi.c;
 final class d3 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d3 f41863a = new d3();
+    static final d3 f41911a = new d3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41864b;
+    private static final yi.c f41912b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f41865c;
+    private static final yi.c f41913c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f41866d;
+    private static final yi.c f41914d;
 
     static {
         c.b a10 = yi.c.a("options");
         f fVar = new f();
         fVar.a(1);
-        f41864b = a10.b(fVar.b()).a();
+        f41912b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f41865c = a11.b(fVar2.b()).a();
+        f41913c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("errorCode");
         f fVar3 = new f();
         fVar3.a(3);
-        f41866d = a12.b(fVar3.b()).a();
+        f41914d = a12.b(fVar3.b()).a();
     }
 
     private d3() {

@@ -115,8 +115,8 @@ public class m extends fd.r implements a0 {
     }
 
     private static boolean E1(String str) {
-        if (w0.f39012a < 24 && "OMX.SEC.aac.dec".equals(str) && "samsung".equals(w0.f39014c)) {
-            String str2 = w0.f39013b;
+        if (w0.f39060a < 24 && "OMX.SEC.aac.dec".equals(str) && "samsung".equals(w0.f39062c)) {
+            String str2 = w0.f39061b;
             if (str2.startsWith("zeroflte") || str2.startsWith("herolte") || str2.startsWith("heroqlte")) {
                 return true;
             }
@@ -126,8 +126,8 @@ public class m extends fd.r implements a0 {
     }
 
     private static boolean F1() {
-        if (w0.f39012a == 23) {
-            String str = w0.f39015d;
+        if (w0.f39060a == 23) {
+            String str = w0.f39063d;
             if ("ZTE B2017G".equals(str) || "AXON 7 mini".equals(str)) {
                 return true;
             }
@@ -138,7 +138,7 @@ public class m extends fd.r implements a0 {
 
     private int G1(fd.q qVar, Format format) {
         int i10;
-        if ("OMX.google.raw.decoder".equals(qVar.f23112a) && (i10 = w0.f39012a) < 24 && (i10 != 23 || !w0.H0(this.R0))) {
+        if ("OMX.google.raw.decoder".equals(qVar.f23112a) && (i10 = w0.f39060a) < 24 && (i10 != 23 || !w0.H0(this.R0))) {
             return -1;
         }
         return format.f11588x;
@@ -221,7 +221,7 @@ public class m extends fd.r implements a0 {
         mediaFormat.setInteger("sample-rate", format.K);
         b0.e(mediaFormat, format.f11589y);
         b0.d(mediaFormat, "max-input-size", i10);
-        int i11 = w0.f39012a;
+        int i11 = w0.f39060a;
         if (i11 >= 23) {
             mediaFormat.setInteger("priority", 0);
             if (f10 != -1.0f && !F1()) {
@@ -269,7 +269,7 @@ public class m extends fd.r implements a0 {
     public void P(boolean z10, boolean z11) {
         super.P(z10, z11);
         this.S0.p(this.M0);
-        if (I().f36017a) {
+        if (I().f36065a) {
             this.T0.u();
         } else {
             this.T0.i();
@@ -343,7 +343,7 @@ public class m extends fd.r implements a0 {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // fd.r
     public DecoderReuseEvaluation V0(x xVar) {
-        this.W0 = (Format) ne.a.e(xVar.f36029b);
+        this.W0 = (Format) ne.a.e(xVar.f36077b);
         DecoderReuseEvaluation V0 = super.V0(xVar);
         this.S0.q(this.W0, V0);
         return V0;
@@ -360,7 +360,7 @@ public class m extends fd.r implements a0 {
         } else if (y0() != null) {
             if ("audio/raw".equals(format.f11587w)) {
                 i10 = format.L;
-            } else if (w0.f39012a >= 24 && mediaFormat.containsKey("pcm-encoding")) {
+            } else if (w0.f39060a >= 24 && mediaFormat.containsKey("pcm-encoding")) {
                 i10 = mediaFormat.getInteger("pcm-encoding");
             } else if (mediaFormat.containsKey("v-bits-per-sample")) {
                 i10 = w0.g0(mediaFormat.getInteger("v-bits-per-sample"));
@@ -398,8 +398,8 @@ public class m extends fd.r implements a0 {
     @Override // fd.r
     protected void a1(qc.f fVar) {
         if (this.Z0 && !fVar.m()) {
-            if (Math.abs(fVar.f46611p - this.Y0) > 500000) {
-                this.Y0 = fVar.f46611p;
+            if (Math.abs(fVar.f46659p - this.Y0) > 500000) {
+                this.Y0 = fVar.f46659p;
             }
             this.Z0 = false;
         }
@@ -513,7 +513,7 @@ public class m extends fd.r implements a0 {
                             this.f12268d1 = (v1.a) obj;
                             return;
                         case 12:
-                            if (w0.f39012a >= 23) {
+                            if (w0.f39060a >= 23) {
                                 b.a(this.T0, obj);
                                 return;
                             }
@@ -555,7 +555,7 @@ public class m extends fd.r implements a0 {
         if (!c0.o(format.f11587w)) {
             return w1.b(0);
         }
-        if (w0.f39012a >= 21) {
+        if (w0.f39060a >= 21) {
             i10 = 32;
         } else {
             i10 = 0;

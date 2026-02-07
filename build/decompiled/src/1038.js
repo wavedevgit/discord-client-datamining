@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function arg0, arg1, arg2() {
-        _fun10766: for (var _fun10766_ip = 0;;) switch (_fun10766_ip) {
+        _fun10768: for (var _fun10768_ip = 0;;) switch (_fun10768_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.WINDOW;
                 var2 = var2.document;
                 if (!var2) {
-                    _fun10766_ip = 84;
-                    continue _fun10766
+                    _fun10768_ip = 84;
+                    continue _fun10768
                 }
             case 39:
                 var2 = _closure1_slot0;
@@ -46,7 +46,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.addPageListener = var2;
     var0 = function arg0, arg1, arg2() {
-        _fun10767: for (var _fun10767_ip = 0;;) switch (_fun10767_ip) {
+        _fun10769: for (var _fun10769_ip = 0;;) switch (_fun10769_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.WINDOW;
                 var2 = var2.document;
                 if (!var2) {
-                    _fun10767_ip = 84;
-                    continue _fun10767
+                    _fun10769_ip = 84;
+                    continue _fun10769
                 }
             case 39:
                 var2 = _closure1_slot0;

@@ -3,7 +3,7 @@ package nv;
 public class c extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qv.b f41173a = new qv.b();
+    private final qv.b f41221a = new qv.b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends sv.b {
@@ -25,7 +25,7 @@ public class c extends sv.a {
     /* JADX INFO: Access modifiers changed from: private */
     public static boolean k(sv.h hVar, int i10) {
         CharSequence line = hVar.getLine();
-        if (hVar.a() < pv.d.f45756a && i10 < line.length() && line.charAt(i10) == '>') {
+        if (hVar.a() < pv.d.f45804a && i10 < line.length() && line.charAt(i10) == '>') {
             return true;
         }
         return false;
@@ -58,6 +58,6 @@ public class c extends sv.a {
     @Override // sv.d
     /* renamed from: j */
     public qv.b e() {
-        return this.f41173a;
+        return this.f41221a;
     }
 }

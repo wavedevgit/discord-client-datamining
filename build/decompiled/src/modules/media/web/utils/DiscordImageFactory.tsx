@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'create';
         var0.key = var2;
         var1 = function arg0() {
-            _fun37826: for (var _fun37826_ip = 0;;) switch (_fun37826_ip) {
+            _fun37833: for (var _fun37833_ip = 0;;) switch (_fun37833_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = global;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var0 == var2;
                     var5 = undefined;
                     if (var6) {
-                        _fun37826_ip = 115;
-                        continue _fun37826
+                        _fun37833_ip = 115;
+                        continue _fun37833
                     }
                 case 109:
                     var5 = var2.mimeType;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 'image/png';
                     var0 = null;
                     if (!(var2 === var5)) {
-                        _fun37826_ip = 163;
-                        continue _fun37826
+                        _fun37833_ip = 163;
+                        continue _fun37833
                     }
                 case 127:
                     var2 = _closure1_slot0;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.DiscordImageFactory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4136, 4163, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4135, 4162, 2]);

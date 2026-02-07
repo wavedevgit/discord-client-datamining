@@ -5,7 +5,7 @@ import yi.c;
 final class dc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final dc f39761a = new dc();
+    static final dc f39809a = new dc();
 
     static {
         c.b a10 = yi.c.a("width");

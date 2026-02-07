@@ -13,13 +13,13 @@ import java.util.Map;
 public final class i0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f28512d;
+    private final String f28560d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f28513e;
+    private final List f28561e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28514i;
+    private Map f28562i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -54,27 +54,27 @@ public final class i0 implements w1 {
     }
 
     public i0(String str, List list) {
-        this.f28512d = str;
-        this.f28513e = list;
+        this.f28560d = str;
+        this.f28561e = list;
     }
 
     public void a(Map map) {
-        this.f28514i = map;
+        this.f28562i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f28512d != null) {
-            f3Var.e("rendering_system").f(this.f28512d);
+        if (this.f28560d != null) {
+            f3Var.e("rendering_system").f(this.f28560d);
         }
-        if (this.f28513e != null) {
-            f3Var.e("windows").j(iLogger, this.f28513e);
+        if (this.f28561e != null) {
+            f3Var.e("windows").j(iLogger, this.f28561e);
         }
-        Map map = this.f28514i;
+        Map map = this.f28562i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28514i.get(str));
+                f3Var.e(str).j(iLogger, this.f28562i.get(str));
             }
         }
         f3Var.D();

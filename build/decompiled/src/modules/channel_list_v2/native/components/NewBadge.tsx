@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0, arg1) { // Environment: var1
-        _fun89864: for (var _fun89864_ip = 0;;) switch (_fun89864_ip) {
+        _fun90344: for (var _fun90344_ip = 0;;) switch (_fun90344_ip) {
             case 0:
                 var0 = {};
                 var1 = {
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var4)();
                 var2 = 0;
                 if (!var4) {
-                    _fun89864_ip = 59;
-                    continue _fun89864
+                    _fun90344_ip = 59;
+                    continue _fun90344
                 }
             case 56:
                 var2 = 1;
@@ -85,14 +85,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = arg1;
                 var2 = var4.bind(var7)(var2);
                 if (!var2) {
-                    _fun89864_ip = 186;
-                    continue _fun89864
+                    _fun90344_ip = 186;
+                    continue _fun90344
                 }
             case 150:
                 var2 = arg0;
                 if (var2) {
-                    _fun89864_ip = 186;
-                    continue _fun89864
+                    _fun90344_ip = 186;
+                    continue _fun90344
                 }
             case 156:
                 var4 = _closure1_slot1;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var2);
                 var2 = var2.colors;
                 var2 = var2.BACKGROUND_BRAND;
-                _fun89864_ip = 214;
-                continue _fun89864;
+                _fun90344_ip = 214;
+                continue _fun90344;
             case 186:
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -125,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/components/NewBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun89865: for (var _fun89865_ip = 0;;) switch (_fun89865_ip) {
+        _fun90345: for (var _fun90345_ip = 0;;) switch (_fun90345_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -161,14 +161,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var9.isThemeLight;
                 var7 = var7.bind(var9)(var10);
                 if (var7) {
-                    _fun89865_ip = 152;
-                    continue _fun89865
+                    _fun90345_ip = 152;
+                    continue _fun90345
                 }
             case 143:
                 var7 = 'text-brand';
                 if (!var8) {
-                    _fun89865_ip = 158;
-                    continue _fun89865
+                    _fun90345_ip = 158;
+                    continue _fun90345
                 }
             case 152:
                 var7 = 'always-white';
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 478, 671, 3208, 8752, 3248, 3943, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 478, 671, 3207, 8796, 3247, 3942, 1234, 2]);

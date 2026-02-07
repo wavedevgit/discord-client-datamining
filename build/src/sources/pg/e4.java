@@ -7,86 +7,86 @@ public final class e4 extends hf.a {
     public static final Parcelable.Creator<e4> CREATOR = new f5();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f44151d;
+    public final int f44199d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f44152e;
+    public final int f44200e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final float f44153i;
+    public final float f44201i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final float f44154o;
+    public final float f44202o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final float f44155p;
+    public final float f44203p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final float f44156q;
+    public final float f44204q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final float f44157r;
+    public final float f44205r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final float f44158s;
+    public final float f44206s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final float f44159t;
+    public final float f44207t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final mc[] f44160u;
+    public final mc[] f44208u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final float f44161v;
+    public final float f44209v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final float f44162w;
+    public final float f44210w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final float f44163x;
+    public final float f44211x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final c2[] f44164y;
+    public final c2[] f44212y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final float f44165z;
+    public final float f44213z;
 
     public e4(int i10, int i11, float f10, float f11, float f12, float f13, float f14, float f15, float f16, mc[] mcVarArr, float f17, float f18, float f19, c2[] c2VarArr, float f20) {
-        this.f44151d = i10;
-        this.f44152e = i11;
-        this.f44153i = f10;
-        this.f44154o = f11;
-        this.f44155p = f12;
-        this.f44156q = f13;
-        this.f44157r = f14;
-        this.f44158s = f15;
-        this.f44159t = f16;
-        this.f44160u = mcVarArr;
-        this.f44161v = f17;
-        this.f44162w = f18;
-        this.f44163x = f19;
-        this.f44164y = c2VarArr;
-        this.f44165z = f20;
+        this.f44199d = i10;
+        this.f44200e = i11;
+        this.f44201i = f10;
+        this.f44202o = f11;
+        this.f44203p = f12;
+        this.f44204q = f13;
+        this.f44205r = f14;
+        this.f44206s = f15;
+        this.f44207t = f16;
+        this.f44208u = mcVarArr;
+        this.f44209v = f17;
+        this.f44210w = f18;
+        this.f44211x = f19;
+        this.f44212y = c2VarArr;
+        this.f44213z = f20;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f44151d);
-        hf.c.l(parcel, 2, this.f44152e);
-        hf.c.j(parcel, 3, this.f44153i);
-        hf.c.j(parcel, 4, this.f44154o);
-        hf.c.j(parcel, 5, this.f44155p);
-        hf.c.j(parcel, 6, this.f44156q);
-        hf.c.j(parcel, 7, this.f44157r);
-        hf.c.j(parcel, 8, this.f44158s);
-        hf.c.v(parcel, 9, this.f44160u, i10, false);
-        hf.c.j(parcel, 10, this.f44161v);
-        hf.c.j(parcel, 11, this.f44162w);
-        hf.c.j(parcel, 12, this.f44163x);
-        hf.c.v(parcel, 13, this.f44164y, i10, false);
-        hf.c.j(parcel, 14, this.f44159t);
-        hf.c.j(parcel, 15, this.f44165z);
+        hf.c.l(parcel, 1, this.f44199d);
+        hf.c.l(parcel, 2, this.f44200e);
+        hf.c.j(parcel, 3, this.f44201i);
+        hf.c.j(parcel, 4, this.f44202o);
+        hf.c.j(parcel, 5, this.f44203p);
+        hf.c.j(parcel, 6, this.f44204q);
+        hf.c.j(parcel, 7, this.f44205r);
+        hf.c.j(parcel, 8, this.f44206s);
+        hf.c.v(parcel, 9, this.f44208u, i10, false);
+        hf.c.j(parcel, 10, this.f44209v);
+        hf.c.j(parcel, 11, this.f44210w);
+        hf.c.j(parcel, 12, this.f44211x);
+        hf.c.v(parcel, 13, this.f44212y, i10, false);
+        hf.c.j(parcel, 14, this.f44207t);
+        hf.c.j(parcel, 15, this.f44213z);
         hf.c.b(parcel, a10);
     }
 }

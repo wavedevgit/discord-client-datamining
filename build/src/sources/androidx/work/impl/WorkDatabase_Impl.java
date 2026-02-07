@@ -176,7 +176,7 @@ public final class WorkDatabase_Impl extends WorkDatabase {
 
     @Override // r3.u
     protected x3.h h(r3.f fVar) {
-        return fVar.f48496c.a(h.b.a(fVar.f48494a).d(fVar.f48495b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
+        return fVar.f48544c.a(h.b.a(fVar.f48542a).d(fVar.f48543b).c(new r3.w(fVar, new a(20), "7d73d21f1bd82c9e5268b6dcf9fde2cb", "3071c8717539de5d5353f4c8cd59a032")).b());
     }
 
     @Override // r3.u
@@ -237,33 +237,33 @@ public final class WorkDatabase_Impl extends WorkDatabase {
             gVar.O("DROP TABLE IF EXISTS `WorkName`");
             gVar.O("DROP TABLE IF EXISTS `WorkProgress`");
             gVar.O("DROP TABLE IF EXISTS `Preference`");
-            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48626h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48626h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).b(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48626h.get(i10)).b(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void c(x3.g gVar) {
-            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48626h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48626h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).a(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48626h.get(i10)).a(gVar);
                 }
             }
         }
 
         @Override // r3.w.b
         public void d(x3.g gVar) {
-            ((r3.u) WorkDatabase_Impl.this).f48571a = gVar;
+            ((r3.u) WorkDatabase_Impl.this).f48619a = gVar;
             gVar.O("PRAGMA foreign_keys = ON");
             WorkDatabase_Impl.this.u(gVar);
-            if (((r3.u) WorkDatabase_Impl.this).f48578h != null) {
-                int size = ((r3.u) WorkDatabase_Impl.this).f48578h.size();
+            if (((r3.u) WorkDatabase_Impl.this).f48626h != null) {
+                int size = ((r3.u) WorkDatabase_Impl.this).f48626h.size();
                 for (int i10 = 0; i10 < size; i10++) {
-                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48578h.get(i10)).c(gVar);
+                    ((u.b) ((r3.u) WorkDatabase_Impl.this).f48626h.get(i10)).c(gVar);
                 }
             }
         }

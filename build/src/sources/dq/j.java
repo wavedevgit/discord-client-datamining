@@ -79,7 +79,7 @@ public final class j implements dn.b {
                 Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
                 j jVar = (j) rendering;
                 tp.a aVar = (tp.a) this.f21117b;
-                ViewGroup.LayoutParams layoutParams = aVar.f50789b.getLayoutParams();
+                ViewGroup.LayoutParams layoutParams = aVar.f50837b.getLayoutParams();
                 Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams");
                 CoordinatorLayout.c f10 = ((CoordinatorLayout.f) layoutParams).f();
                 Intrinsics.checkNotNull(f10, "null cannot be cast to non-null type com.google.android.material.bottomsheet.BottomSheetBehavior<*>");
@@ -90,9 +90,9 @@ public final class j implements dn.b {
                     bq.f.d(root, false, false, false, false, 14, null);
                 }
                 c cVar = new c();
-                ConstraintLayout bottomSheet = aVar.f50789b;
+                ConstraintLayout bottomSheet = aVar.f50837b;
                 Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-                bq.b.b(bottomSheetBehavior, cVar, bottomSheet, aVar.f50791d, aVar.f50792e);
+                bq.b.b(bottomSheetBehavior, cVar, bottomSheet, aVar.f50839d, aVar.f50840e);
                 this.f21118c.i(bottomSheetBehavior);
                 aVar.getRoot().addOnAttachStateChangeListener(new d(bottomSheetBehavior));
                 Context context = aVar.getRoot().getContext();
@@ -100,7 +100,7 @@ public final class j implements dn.b {
                 Intrinsics.checkNotNull(context);
                 dq.h h10 = m.h(mVar, context, this.f21118c.f21108d, false, true, false, 16, null);
                 this.f21118c.j(h10);
-                aVar.f50790c.addView(h10.a());
+                aVar.f50838c.addView(h10.a());
                 Map a10 = h10.c().a();
                 for (Pair pair : this.f21118c.f21109e) {
                     Function1 function1 = (Function1) pair.d();
@@ -113,18 +113,18 @@ public final class j implements dn.b {
                 if (aVar3 != null && (d10 = aVar3.d()) != null) {
                     d10.setOnClickListener(new f(bottomSheetBehavior));
                 }
-                ConstraintLayout bottomSheet2 = aVar.f50789b;
+                ConstraintLayout bottomSheet2 = aVar.f50837b;
                 Intrinsics.checkNotNullExpressionValue(bottomSheet2, "bottomSheet");
                 dn.e.c(bottomSheet2, new g(bottomSheetBehavior));
                 if (jVar.f21112p) {
-                    aVar.f50792e.setOnClickListener(new h(bottomSheetBehavior));
+                    aVar.f50840e.setOnClickListener(new h(bottomSheetBehavior));
                 } else {
-                    aVar.f50792e.setOnClickListener(null);
+                    aVar.f50840e.setOnClickListener(null);
                 }
-                NestedScrollView contentScrollView = aVar.f50791d;
+                NestedScrollView contentScrollView = aVar.f50839d;
                 Intrinsics.checkNotNullExpressionValue(contentScrollView, "contentScrollView");
                 StepStyles.UiStepStyle styles = this.f21118c.f21108d.getStyles();
-                FrameLayout contentContainer = aVar.f50790c;
+                FrameLayout contentContainer = aVar.f50838c;
                 Intrinsics.checkNotNullExpressionValue(contentContainer, "contentContainer");
                 kq.c.c(contentScrollView, styles, contentContainer, null, 4, null);
             }
@@ -175,7 +175,7 @@ public final class j implements dn.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             a();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
@@ -270,7 +270,7 @@ public final class j implements dn.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             a();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 

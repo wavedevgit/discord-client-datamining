@@ -30,42 +30,42 @@ import qr.l;
 public final class SubstitutingScope implements MemberScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MemberScope f34229a;
+    private final MemberScope f34277a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f34230b;
+    private final Lazy f34278b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final TypeSubstitutor f34231c;
+    private final TypeSubstitutor f34279c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f34232d;
+    private Map f34280d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f34233e;
+    private final Lazy f34281e;
 
     public SubstitutingScope(@NotNull MemberScope workerScope, @NotNull TypeSubstitutor givenSubstitutor) {
         Intrinsics.checkNotNullParameter(workerScope, "workerScope");
         Intrinsics.checkNotNullParameter(givenSubstitutor, "givenSubstitutor");
-        this.f34229a = workerScope;
-        this.f34230b = l.a(new f(givenSubstitutor));
+        this.f34277a = workerScope;
+        this.f34278b = l.a(new f(givenSubstitutor));
         TypeSubstitution substitution = givenSubstitutor.getSubstitution();
         Intrinsics.checkNotNullExpressionValue(substitution, "getSubstitution(...)");
-        this.f34231c = CapturedTypeConstructorKt.wrapWithCapturingSubstitution$default(substitution, false, 1, null).buildSubstitutor();
-        this.f34233e = l.a(new g(this));
+        this.f34279c = CapturedTypeConstructorKt.wrapWithCapturingSubstitution$default(substitution, false, 1, null).buildSubstitutor();
+        this.f34281e = l.a(new g(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Collection a(SubstitutingScope substitutingScope) {
-        return substitutingScope.e(ResolutionScope.DefaultImpls.getContributedDescriptors$default(substitutingScope.f34229a, null, null, 3, null));
+        return substitutingScope.e(ResolutionScope.DefaultImpls.getContributedDescriptors$default(substitutingScope.f34277a, null, null, 3, null));
     }
 
     private final Collection d() {
-        return (Collection) this.f34233e.getValue();
+        return (Collection) this.f34281e.getValue();
     }
 
     private final Collection e(Collection collection) {
-        if (this.f34231c.isEmpty()) {
+        if (this.f34279c.isEmpty()) {
             return collection;
         }
         if (collection.isEmpty()) {
@@ -80,18 +80,18 @@ public final class SubstitutingScope implements MemberScope {
     }
 
     private final DeclarationDescriptor f(DeclarationDescriptor declarationDescriptor) {
-        if (this.f34231c.isEmpty()) {
+        if (this.f34279c.isEmpty()) {
             return declarationDescriptor;
         }
-        if (this.f34232d == null) {
-            this.f34232d = new HashMap();
+        if (this.f34280d == null) {
+            this.f34280d = new HashMap();
         }
-        Map map = this.f34232d;
+        Map map = this.f34280d;
         Intrinsics.checkNotNull(map);
         Object obj = map.get(declarationDescriptor);
         if (obj == null) {
             if (declarationDescriptor instanceof Substitutable) {
-                obj = ((Substitutable) declarationDescriptor).substitute(this.f34231c);
+                obj = ((Substitutable) declarationDescriptor).substitute(this.f34279c);
                 if (obj != null) {
                     map.put(declarationDescriptor, obj);
                 } else {
@@ -113,7 +113,7 @@ public final class SubstitutingScope implements MemberScope {
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     public Set<Name> getClassifierNames() {
-        return this.f34229a.getClassifierNames();
+        return this.f34277a.getClassifierNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -121,7 +121,7 @@ public final class SubstitutingScope implements MemberScope {
     public ClassifierDescriptor mo1200getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        ClassifierDescriptor mo1200getContributedClassifier = this.f34229a.mo1200getContributedClassifier(name, location);
+        ClassifierDescriptor mo1200getContributedClassifier = this.f34277a.mo1200getContributedClassifier(name, location);
         if (mo1200getContributedClassifier != null) {
             return (ClassifierDescriptor) f(mo1200getContributedClassifier);
         }
@@ -141,7 +141,7 @@ public final class SubstitutingScope implements MemberScope {
     public Collection<? extends SimpleFunctionDescriptor> getContributedFunctions(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return e(this.f34229a.getContributedFunctions(name, location));
+        return e(this.f34277a.getContributedFunctions(name, location));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -149,19 +149,19 @@ public final class SubstitutingScope implements MemberScope {
     public Collection<? extends PropertyDescriptor> getContributedVariables(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        return e(this.f34229a.getContributedVariables(name, location));
+        return e(this.f34277a.getContributedVariables(name, location));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getFunctionNames() {
-        return this.f34229a.getFunctionNames();
+        return this.f34277a.getFunctionNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getVariableNames() {
-        return this.f34229a.getVariableNames();
+        return this.f34277a.getVariableNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope

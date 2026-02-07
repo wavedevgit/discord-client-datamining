@@ -50,45 +50,45 @@ public abstract class x {
             }
             if (bitmapDrawable != null && (bitmap = bitmapDrawable.getBitmap()) != null) {
                 this.f23659i.a().c(bitmap);
-                this.f23660o.f29285g.setVisibility(0);
-                this.f23660o.f29281c.setVisibility(0);
+                this.f23660o.f29333g.setVisibility(0);
+                this.f23660o.f29329c.setVisibility(0);
             }
         }
 
         @Override // i5.c
         public void b(Drawable drawable) {
-            this.f23657d.f29280b.setVisibility(8);
-            this.f23657d.f29281c.setVisibility(8);
-            this.f23657d.f29285g.setVisibility(8);
+            this.f23657d.f29328b.setVisibility(8);
+            this.f23657d.f29329c.setVisibility(8);
+            this.f23657d.f29333g.setVisibility(8);
         }
 
         @Override // i5.c
         public void c(Drawable drawable) {
-            this.f23658e.f29280b.setVisibility(0);
+            this.f23658e.f29328b.setVisibility(0);
         }
     }
 
     private static final void b(iq.v vVar, ESignature.ESignatureComponentStyle eSignatureComponentStyle) {
         Drawable mutate;
-        TextView addSignatureLabel = vVar.f29280b;
+        TextView addSignatureLabel = vVar.f29328b;
         Intrinsics.checkNotNullExpressionValue(addSignatureLabel, "addSignatureLabel");
         kq.f0.n(addSignatureLabel, eSignatureComponentStyle.getInputTextStyle().getPlaceholderTextBasedStyle(), null, 2, null);
         Integer signaturePreviewBackgroundColor = eSignatureComponentStyle.getSignaturePreviewBackgroundColor();
         if (signaturePreviewBackgroundColor != null) {
-            vVar.f29284f.setCardBackgroundColor(signaturePreviewBackgroundColor.intValue());
+            vVar.f29332f.setCardBackgroundColor(signaturePreviewBackgroundColor.intValue());
         }
         Integer fillColorValue = eSignatureComponentStyle.getFillColorValue();
         if (fillColorValue != null) {
             int intValue = fillColorValue.intValue();
-            Drawable drawable = vVar.f29281c.getDrawable();
+            Drawable drawable = vVar.f29329c.getDrawable();
             if (drawable != null && (mutate = drawable.mutate()) != null) {
                 mutate.setTint(intValue);
             }
         }
-        TextView errorLabel = vVar.f29282d;
+        TextView errorLabel = vVar.f29330d;
         Intrinsics.checkNotNullExpressionValue(errorLabel, "errorLabel");
         kq.f0.n(errorLabel, eSignatureComponentStyle.getInputTextStyle().getErrorTextStyle(), null, 2, null);
-        TextView label = vVar.f29283e;
+        TextView label = vVar.f29331e;
         Intrinsics.checkNotNullExpressionValue(label, "label");
         kq.f0.n(label, eSignatureComponentStyle.getInputTextStyle().getLabelTextBasedStyle(), null, 2, null);
         StyleElements.SizeSet margins = eSignatureComponentStyle.getMargins();
@@ -99,15 +99,15 @@ public abstract class x {
         }
         Integer baseBorderColorValue = eSignatureComponentStyle.getInputTextStyle().getBaseBorderColorValue();
         if (baseBorderColorValue != null) {
-            vVar.f29284f.setStrokeColor(baseBorderColorValue.intValue());
+            vVar.f29332f.setStrokeColor(baseBorderColorValue.intValue());
         }
         Double borderWidthValue = eSignatureComponentStyle.getInputTextStyle().getBorderWidthValue();
         if (borderWidthValue != null) {
-            vVar.f29284f.setStrokeWidth((int) Math.ceil(rp.h.a(borderWidthValue.doubleValue())));
+            vVar.f29332f.setStrokeWidth((int) Math.ceil(rp.h.a(borderWidthValue.doubleValue())));
         }
         Double borderRadiusValue = eSignatureComponentStyle.getInputTextStyle().getBorderRadiusValue();
         if (borderRadiusValue != null) {
-            vVar.f29284f.setRadius((float) rp.h.a(borderRadiusValue.doubleValue()));
+            vVar.f29332f.setRadius((float) rp.h.a(borderRadiusValue.doubleValue()));
         }
     }
 
@@ -135,10 +135,10 @@ public abstract class x {
         String prefill;
         ESignature.Attributes attributes = eSignature.getAttributes();
         if (attributes != null && (prefill = attributes.getPrefill()) != null) {
-            Context context = vVar.f29285g.getContext();
+            Context context = vVar.f29333g.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             v4.h d10 = new h.a(context).j(true).i(100).d();
-            Context context2 = vVar.f29285g.getContext();
+            Context context2 = vVar.f29333g.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             d10.a(new h.a(context2).d(prefill).s(new a(vVar, vVar, eSignatureComponent, vVar)).a());
         }
@@ -147,6 +147,6 @@ public abstract class x {
             Intrinsics.checkNotNull(vVar);
             b(vVar, styles);
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

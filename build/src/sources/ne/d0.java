@@ -7,85 +7,85 @@ import java.util.Arrays;
 public abstract class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final byte[] f38865a = {0, 0, 0, 1};
+    public static final byte[] f38913a = {0, 0, 0, 1};
 
     /* renamed from: b  reason: collision with root package name */
-    public static final float[] f38866b = {1.0f, 1.0f, 1.0909091f, 0.90909094f, 1.4545455f, 1.2121212f, 2.1818182f, 1.8181819f, 2.909091f, 2.4242425f, 1.6363636f, 1.3636364f, 1.939394f, 1.6161616f, 1.3333334f, 1.5f, 2.0f};
+    public static final float[] f38914b = {1.0f, 1.0f, 1.0909091f, 0.90909094f, 1.4545455f, 1.2121212f, 2.1818182f, 1.8181819f, 2.909091f, 2.4242425f, 1.6363636f, 1.3636364f, 1.939394f, 1.6161616f, 1.3333334f, 1.5f, 2.0f};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f38867c = new Object();
+    private static final Object f38915c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static int[] f38868d = new int[10];
+    private static int[] f38916d = new int[10];
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f38869a;
+        public final int f38917a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final boolean f38870b;
+        public final boolean f38918b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f38871c;
+        public final int f38919c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f38872d;
+        public final int f38920d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f38873e;
+        public final int f38921e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f38874f;
+        public final int f38922f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f38875g;
+        public final int f38923g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final int[] f38876h;
+        public final int[] f38924h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f38877i;
+        public final int f38925i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final int f38878j;
+        public final int f38926j;
 
         /* renamed from: k  reason: collision with root package name */
-        public final int f38879k;
+        public final int f38927k;
 
         /* renamed from: l  reason: collision with root package name */
-        public final int f38880l;
+        public final int f38928l;
 
         /* renamed from: m  reason: collision with root package name */
-        public final float f38881m;
+        public final float f38929m;
 
         /* renamed from: n  reason: collision with root package name */
-        public final int f38882n;
+        public final int f38930n;
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f38883o;
+        public final int f38931o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final int f38884p;
+        public final int f38932p;
 
         public a(int i10, boolean z10, int i11, int i12, int i13, int i14, int i15, int[] iArr, int i16, int i17, int i18, int i19, float f10, int i20, int i21, int i22) {
-            this.f38869a = i10;
-            this.f38870b = z10;
-            this.f38871c = i11;
-            this.f38872d = i12;
-            this.f38873e = i13;
-            this.f38874f = i14;
-            this.f38875g = i15;
-            this.f38876h = iArr;
-            this.f38877i = i16;
-            this.f38878j = i17;
-            this.f38879k = i18;
-            this.f38880l = i19;
-            this.f38881m = f10;
-            this.f38882n = i20;
-            this.f38883o = i21;
-            this.f38884p = i22;
+            this.f38917a = i10;
+            this.f38918b = z10;
+            this.f38919c = i11;
+            this.f38920d = i12;
+            this.f38921e = i13;
+            this.f38922f = i14;
+            this.f38923g = i15;
+            this.f38924h = iArr;
+            this.f38925i = i16;
+            this.f38926j = i17;
+            this.f38927k = i18;
+            this.f38928l = i19;
+            this.f38929m = f10;
+            this.f38930n = i20;
+            this.f38931o = i21;
+            this.f38932p = i22;
         }
     }
 
@@ -93,18 +93,18 @@ public abstract class d0 {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f38885a;
+        public final int f38933a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f38886b;
+        public final int f38934b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final boolean f38887c;
+        public final boolean f38935c;
 
         public b(int i10, int i11, boolean z10) {
-            this.f38885a = i10;
-            this.f38886b = i11;
-            this.f38887c = z10;
+            this.f38933a = i10;
+            this.f38934b = i11;
+            this.f38935c = z10;
         }
     }
 
@@ -112,74 +112,74 @@ public abstract class d0 {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f38888a;
+        public final int f38936a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f38889b;
+        public final int f38937b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f38890c;
+        public final int f38938c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f38891d;
+        public final int f38939d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f38892e;
+        public final int f38940e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f38893f;
+        public final int f38941f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f38894g;
+        public final int f38942g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final float f38895h;
+        public final float f38943h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final boolean f38896i;
+        public final boolean f38944i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final boolean f38897j;
+        public final boolean f38945j;
 
         /* renamed from: k  reason: collision with root package name */
-        public final int f38898k;
+        public final int f38946k;
 
         /* renamed from: l  reason: collision with root package name */
-        public final int f38899l;
+        public final int f38947l;
 
         /* renamed from: m  reason: collision with root package name */
-        public final int f38900m;
+        public final int f38948m;
 
         /* renamed from: n  reason: collision with root package name */
-        public final boolean f38901n;
+        public final boolean f38949n;
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f38902o;
+        public final int f38950o;
 
         /* renamed from: p  reason: collision with root package name */
-        public final int f38903p;
+        public final int f38951p;
 
         /* renamed from: q  reason: collision with root package name */
-        public final int f38904q;
+        public final int f38952q;
 
         public c(int i10, int i11, int i12, int i13, int i14, int i15, int i16, float f10, boolean z10, boolean z11, int i17, int i18, int i19, boolean z12, int i20, int i21, int i22) {
-            this.f38888a = i10;
-            this.f38889b = i11;
-            this.f38890c = i12;
-            this.f38891d = i13;
-            this.f38892e = i14;
-            this.f38893f = i15;
-            this.f38894g = i16;
-            this.f38895h = f10;
-            this.f38896i = z10;
-            this.f38897j = z11;
-            this.f38898k = i17;
-            this.f38899l = i18;
-            this.f38900m = i19;
-            this.f38901n = z12;
-            this.f38902o = i20;
-            this.f38903p = i21;
-            this.f38904q = i22;
+            this.f38936a = i10;
+            this.f38937b = i11;
+            this.f38938c = i12;
+            this.f38939d = i13;
+            this.f38940e = i14;
+            this.f38941f = i15;
+            this.f38942g = i16;
+            this.f38943h = f10;
+            this.f38944i = z10;
+            this.f38945j = z11;
+            this.f38946k = i17;
+            this.f38947l = i18;
+            this.f38948m = i19;
+            this.f38949n = z12;
+            this.f38950o = i20;
+            this.f38951p = i21;
+            this.f38952q = i22;
         }
     }
 
@@ -425,7 +425,7 @@ public abstract class d0 {
                         f10 = e15 / e16;
                     }
                 } else {
-                    float[] fArr = f38866b;
+                    float[] fArr = f38914b;
                     if (e14 < fArr.length) {
                         f10 = fArr[e14];
                     } else {
@@ -629,7 +629,7 @@ public abstract class d0 {
                         f10 = e14 / e15;
                     }
                 } else {
-                    float[] fArr = f38866b;
+                    float[] fArr = f38914b;
                     if (e13 < fArr.length) {
                         f10 = fArr[e13];
                     } else {
@@ -800,18 +800,18 @@ public abstract class d0 {
 
     public static int q(byte[] bArr, int i10) {
         int i11;
-        synchronized (f38867c) {
+        synchronized (f38915c) {
             int i12 = 0;
             int i13 = 0;
             while (i12 < i10) {
                 try {
                     i12 = d(bArr, i12, i10);
                     if (i12 < i10) {
-                        int[] iArr = f38868d;
+                        int[] iArr = f38916d;
                         if (iArr.length <= i13) {
-                            f38868d = Arrays.copyOf(iArr, iArr.length * 2);
+                            f38916d = Arrays.copyOf(iArr, iArr.length * 2);
                         }
-                        f38868d[i13] = i12;
+                        f38916d[i13] = i12;
                         i12 += 3;
                         i13++;
                     }
@@ -823,7 +823,7 @@ public abstract class d0 {
             int i14 = 0;
             int i15 = 0;
             for (int i16 = 0; i16 < i13; i16++) {
-                int i17 = f38868d[i16] - i15;
+                int i17 = f38916d[i16] - i15;
                 System.arraycopy(bArr, i15, bArr, i14, i17);
                 int i18 = i14 + i17;
                 int i19 = i18 + 1;

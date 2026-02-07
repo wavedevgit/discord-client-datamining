@@ -57,9 +57,9 @@ final class a implements Window.OnFrameMetricsAvailableListener {
                     this.f5058a.remove(delegate);
                     if (!isEmpty && this.f5058a.isEmpty()) {
                         window.removeOnFrameMetricsAvailableListener(this);
-                        window.getDecorView().setTag(o3.g.f41454a, null);
+                        window.getDecorView().setTag(o3.g.f41502a, null);
                     }
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -93,12 +93,12 @@ final class a implements Window.OnFrameMetricsAvailableListener {
                             window.removeOnFrameMetricsAvailableListener(this);
                         }
                         if (window != null && (decorView = window.getDecorView()) != null) {
-                            decorView.setTag(o3.g.f41454a, null);
+                            decorView.setTag(o3.g.f41502a, null);
                         }
                     }
                 }
                 this.f5059b = false;
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }

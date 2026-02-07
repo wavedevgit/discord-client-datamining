@@ -419,7 +419,7 @@ public class Chip extends f implements a.InterfaceC0173a, n, Checkable {
     }
 
     private void y() {
-        if (oh.b.f42758a) {
+        if (oh.b.f42806a) {
             z();
             return;
         }

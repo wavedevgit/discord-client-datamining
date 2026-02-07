@@ -7,10 +7,10 @@ import br.h;
 public final class c implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f56362a;
+    private final h f56410a;
 
     public c(h hVar) {
-        this.f56362a = hVar;
+        this.f56410a = hVar;
     }
 
     public static c a(h hVar) {
@@ -24,6 +24,6 @@ public final class c implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((Context) this.f56362a.get());
+        return c((Context) this.f56410a.get());
     }
 }

@@ -30,7 +30,7 @@ public final class GuildInviteDisabledViewHolder extends MessagePartViewHolder {
     public static final Unit bind$lambda$1$lambda$0(GuildInviteDisabledViewHolder guildInviteDisabledViewHolder, GuildInviteDisabledMessageAccessory guildInviteDisabledMessageAccessory, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         ChatEventHandler.DefaultImpls.m489onLinkClickedu7_MRrM$default(guildInviteDisabledViewHolder.eventHandler, guildInviteDisabledMessageAccessory.mo536getMessageId3Eiw7ao(), it, null, 4, null);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     public final void bind(@NotNull final GuildInviteDisabledMessageAccessory inviteAccessory) {

@@ -8,25 +8,25 @@ import nk.e;
 public final class a {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int[] f31714g = {3808, 476, 2107, 1799};
+    private static final int[] f31762g = {3808, 476, 2107, 1799};
 
     /* renamed from: a  reason: collision with root package name */
-    private final lk.b f31715a;
+    private final lk.b f31763a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f31716b;
+    private boolean f31764b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f31717c;
+    private int f31765c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f31718d;
+    private int f31766d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f31719e;
+    private int f31767e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f31720f;
+    private int f31768f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: kk.a$a  reason: collision with other inner class name */
@@ -34,22 +34,22 @@ public final class a {
     public static final class C0447a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f31721a;
+        private final int f31769a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f31722b;
+        private final int f31770b;
 
         C0447a(int i10, int i11) {
-            this.f31721a = i10;
-            this.f31722b = i11;
+            this.f31769a = i10;
+            this.f31770b = i11;
         }
 
         int a() {
-            return this.f31721a;
+            return this.f31769a;
         }
 
         int b() {
-            return this.f31722b;
+            return this.f31770b;
         }
     }
 
@@ -58,35 +58,35 @@ public final class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f31723a;
+        private final int f31771a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f31724b;
+        private final int f31772b;
 
         b(int i10, int i11) {
-            this.f31723a = i10;
-            this.f31724b = i11;
+            this.f31771a = i10;
+            this.f31772b = i11;
         }
 
         int a() {
-            return this.f31723a;
+            return this.f31771a;
         }
 
         int b() {
-            return this.f31724b;
+            return this.f31772b;
         }
 
         p c() {
-            return new p(this.f31723a, this.f31724b);
+            return new p(this.f31771a, this.f31772b);
         }
 
         public String toString() {
-            return "<" + this.f31723a + ' ' + this.f31724b + '>';
+            return "<" + this.f31771a + ' ' + this.f31772b + '>';
         }
     }
 
     public a(lk.b bVar) {
-        this.f31715a = bVar;
+        this.f31763a = bVar;
     }
 
     private static float b(p pVar, p pVar2) {
@@ -120,13 +120,13 @@ public final class a {
         long j10;
         long j11;
         if (o(pVarArr[0]) && o(pVarArr[1]) && o(pVarArr[2]) && o(pVarArr[3])) {
-            int i10 = this.f31719e * 2;
+            int i10 = this.f31767e * 2;
             int[] iArr = {r(pVarArr[0], pVarArr[1], i10), r(pVarArr[1], pVarArr[2], i10), r(pVarArr[2], pVarArr[3], i10), r(pVarArr[3], pVarArr[0], i10)};
-            this.f31720f = m(iArr, i10);
+            this.f31768f = m(iArr, i10);
             long j12 = 0;
             for (int i11 = 0; i11 < 4; i11++) {
-                int i12 = iArr[(this.f31720f + i11) % 4];
-                if (this.f31716b) {
+                int i12 = iArr[(this.f31768f + i11) % 4];
+                if (this.f31764b) {
                     j10 = j12 << 7;
                     j11 = (i12 >> 1) & 127;
                 } else {
@@ -135,14 +135,14 @@ public final class a {
                 }
                 j12 = j10 + j11;
             }
-            C0447a h10 = h(j12, this.f31716b);
+            C0447a h10 = h(j12, this.f31764b);
             int a10 = h10.a();
-            if (this.f31716b) {
-                this.f31717c = (a10 >> 6) + 1;
-                this.f31718d = (a10 & 63) + 1;
+            if (this.f31764b) {
+                this.f31765c = (a10 >> 6) + 1;
+                this.f31766d = (a10 & 63) + 1;
             } else {
-                this.f31717c = (a10 >> 11) + 1;
-                this.f31718d = (a10 & 2047) + 1;
+                this.f31765c = (a10 >> 11) + 1;
+                this.f31766d = (a10 & 2047) + 1;
             }
             return h10.b();
         }
@@ -152,38 +152,38 @@ public final class a {
     private p[] f(b bVar) {
         int i10;
         boolean z10 = true;
-        this.f31719e = 1;
+        this.f31767e = 1;
         b bVar2 = bVar;
         b bVar3 = bVar2;
         b bVar4 = bVar3;
         boolean z11 = true;
-        while (this.f31719e < 9) {
+        while (this.f31767e < 9) {
             b j10 = j(bVar, z11, 1, -1);
             b j11 = j(bVar2, z11, 1, 1);
             b j12 = j(bVar3, z11, -1, 1);
             b j13 = j(bVar4, z11, -1, -1);
-            if (this.f31719e > 2) {
-                double c10 = (c(j13, j10) * this.f31719e) / (c(bVar4, bVar) * (this.f31719e + 2));
+            if (this.f31767e > 2) {
+                double c10 = (c(j13, j10) * this.f31767e) / (c(bVar4, bVar) * (this.f31767e + 2));
                 if (c10 < 0.75d || c10 > 1.25d || !p(j10, j11, j12, j13)) {
                     break;
                 }
             }
             z11 = !z11;
-            this.f31719e++;
+            this.f31767e++;
             bVar4 = j13;
             bVar = j10;
             bVar2 = j11;
             bVar3 = j12;
         }
-        int i11 = this.f31719e;
+        int i11 = this.f31767e;
         if (i11 != 5 && i11 != 7) {
             throw k.a();
         }
         if (i11 != 5) {
             z10 = false;
         }
-        this.f31716b = z10;
-        return d(new p[]{new p(bVar.a() + 0.5f, bVar.b() - 0.5f), new p(bVar2.a() + 0.5f, bVar2.b() + 0.5f), new p(bVar3.a() - 0.5f, bVar3.b() + 0.5f), new p(bVar4.a() - 0.5f, bVar4.b() - 0.5f)}, (i10 * 2) - 3, this.f31719e * 2);
+        this.f31764b = z10;
+        return d(new p[]{new p(bVar.a() + 0.5f, bVar.b() - 0.5f), new p(bVar2.a() + 0.5f, bVar2.b() + 0.5f), new p(bVar3.a() - 0.5f, bVar3.b() + 0.5f), new p(bVar4.a() - 0.5f, bVar4.b() - 0.5f)}, (i10 * 2) - 3, this.f31767e * 2);
     }
 
     private int g(b bVar, b bVar2) {
@@ -196,11 +196,11 @@ public final class a {
         float b10 = (bVar2.b() - bVar.b()) / c10;
         float a11 = bVar.a();
         float b11 = bVar.b();
-        boolean e10 = this.f31715a.e(bVar.a(), bVar.b());
+        boolean e10 = this.f31763a.e(bVar.a(), bVar.b());
         int floor = (int) Math.floor(c10);
         int i10 = 0;
         for (int i11 = 0; i11 < floor; i11++) {
-            if (this.f31715a.e(mk.a.c(a11), mk.a.c(b11)) != e10) {
+            if (this.f31763a.e(mk.a.c(a11), mk.a.c(b11)) != e10) {
                 i10++;
             }
             a11 += a10;
@@ -236,7 +236,7 @@ public final class a {
             j10 >>= 4;
         }
         try {
-            int a10 = new c(nk.a.f40876k).a(iArr, i12);
+            int a10 = new c(nk.a.f40924k).a(iArr, i12);
             int i14 = 0;
             for (int i15 = 0; i15 < i11; i15++) {
                 i14 = (i14 << 4) + iArr[i15];
@@ -248,10 +248,10 @@ public final class a {
     }
 
     private int i() {
-        if (this.f31716b) {
-            return (this.f31717c * 4) + 11;
+        if (this.f31764b) {
+            return (this.f31765c * 4) + 11;
         }
-        int i10 = this.f31717c;
+        int i10 = this.f31765c;
         return (i10 * 4) + ((((i10 * 2) + 6) / 15) * 2) + 15;
     }
 
@@ -260,18 +260,18 @@ public final class a {
         int b10 = bVar.b();
         while (true) {
             b10 += i11;
-            if (!n(a10, b10) || this.f31715a.e(a10, b10) != z10) {
+            if (!n(a10, b10) || this.f31763a.e(a10, b10) != z10) {
                 break;
             }
             a10 += i10;
         }
         int i12 = a10 - i10;
         int i13 = b10 - i11;
-        while (n(i12, i13) && this.f31715a.e(i12, i13) == z10) {
+        while (n(i12, i13) && this.f31763a.e(i12, i13) == z10) {
             i12 += i10;
         }
         int i14 = i12 - i10;
-        while (n(i14, i13) && this.f31715a.e(i14, i13) == z10) {
+        while (n(i14, i13) && this.f31763a.e(i14, i13) == z10) {
             i13 += i11;
         }
         return new b(i14, i13 - i11);
@@ -287,14 +287,14 @@ public final class a {
         p c13;
         p c14;
         try {
-            p[] c15 = new mk.b(this.f31715a).c();
+            p[] c15 = new mk.b(this.f31763a).c();
             pVar2 = c15[0];
             pVar3 = c15[1];
             pVar = c15[2];
             c10 = c15[3];
         } catch (k unused) {
-            int l10 = this.f31715a.l() / 2;
-            int i10 = this.f31715a.i() / 2;
+            int l10 = this.f31763a.l() / 2;
+            int i10 = this.f31763a.i() / 2;
             int i11 = l10 + 7;
             int i12 = i10 - 7;
             p c16 = j(new b(i11, i12), false, 1, -1).c();
@@ -310,7 +310,7 @@ public final class a {
         int c19 = mk.a.c((((pVar2.c() + c10.c()) + pVar3.c()) + pVar.c()) / 4.0f);
         int c20 = mk.a.c((((pVar2.d() + c10.d()) + pVar3.d()) + pVar.d()) / 4.0f);
         try {
-            p[] c21 = new mk.b(this.f31715a, 15, c19, c20).c();
+            p[] c21 = new mk.b(this.f31763a, 15, c19, c20).c();
             c11 = c21[0];
             c12 = c21[1];
             c13 = c21[2];
@@ -329,7 +329,7 @@ public final class a {
     }
 
     private p[] l(p[] pVarArr) {
-        return d(pVarArr, this.f31719e * 2, i());
+        return d(pVarArr, this.f31767e * 2, i());
     }
 
     private static int m(int[] iArr, int i10) {
@@ -339,7 +339,7 @@ public final class a {
         }
         int i13 = ((i11 & 1) << 11) + (i11 >> 1);
         for (int i14 = 0; i14 < 4; i14++) {
-            if (Integer.bitCount(f31714g[i14] ^ i13) <= 2) {
+            if (Integer.bitCount(f31762g[i14] ^ i13) <= 2) {
                 return i14;
             }
         }
@@ -347,7 +347,7 @@ public final class a {
     }
 
     private boolean n(int i10, int i11) {
-        if (i10 >= 0 && i10 < this.f31715a.l() && i11 >= 0 && i11 < this.f31715a.i()) {
+        if (i10 >= 0 && i10 < this.f31763a.l() && i11 >= 0 && i11 < this.f31763a.i()) {
             return true;
         }
         return false;
@@ -358,10 +358,10 @@ public final class a {
     }
 
     private boolean p(b bVar, b bVar2, b bVar3, b bVar4) {
-        b bVar5 = new b(Math.max(0, bVar.a() - 3), Math.min(this.f31715a.i() - 1, bVar.b() + 3));
+        b bVar5 = new b(Math.max(0, bVar.a() - 3), Math.min(this.f31763a.i() - 1, bVar.b() + 3));
         b bVar6 = new b(Math.max(0, bVar2.a() - 3), Math.max(0, bVar2.b() - 3));
-        b bVar7 = new b(Math.min(this.f31715a.l() - 1, bVar3.a() + 3), Math.max(0, Math.min(this.f31715a.i() - 1, bVar3.b() - 3)));
-        b bVar8 = new b(Math.min(this.f31715a.l() - 1, bVar4.a() + 3), Math.min(this.f31715a.i() - 1, bVar4.b() + 3));
+        b bVar7 = new b(Math.min(this.f31763a.l() - 1, bVar3.a() + 3), Math.max(0, Math.min(this.f31763a.i() - 1, bVar3.b() - 3)));
+        b bVar8 = new b(Math.min(this.f31763a.l() - 1, bVar4.a() + 3), Math.min(this.f31763a.i() - 1, bVar4.b() + 3));
         int g10 = g(bVar8, bVar5);
         if (g10 == 0 || g(bVar5, bVar6) != g10 || g(bVar6, bVar7) != g10 || g(bVar7, bVar8) != g10) {
             return false;
@@ -373,7 +373,7 @@ public final class a {
         lk.k b10 = lk.k.b();
         int i10 = i();
         float f10 = i10 / 2.0f;
-        int i11 = this.f31719e;
+        int i11 = this.f31767e;
         float f11 = f10 - i11;
         float f12 = f10 + i11;
         return b10.c(bVar, i10, i10, f11, f11, f12, f11, f12, f12, f11, f12, pVar.c(), pVar.d(), pVar2.c(), pVar2.d(), pVar3.c(), pVar3.d(), pVar4.c(), pVar4.d());
@@ -389,7 +389,7 @@ public final class a {
         int i11 = 0;
         for (int i12 = 0; i12 < i10; i12++) {
             float f11 = i12;
-            if (this.f31715a.e(mk.a.c((f11 * c11) + c10), mk.a.c((f11 * d11) + d10))) {
+            if (this.f31763a.e(mk.a.c((f11 * c11) + c10), mk.a.c((f11 * d11) + d10))) {
                 i11 |= 1 << ((i10 - i12) - 1);
             }
         }
@@ -404,8 +404,8 @@ public final class a {
             f10[2] = pVar;
         }
         int e10 = e(f10);
-        lk.b bVar = this.f31715a;
-        int i10 = this.f31720f;
-        return new ik.a(q(bVar, f10[i10 % 4], f10[(i10 + 1) % 4], f10[(i10 + 2) % 4], f10[(i10 + 3) % 4]), l(f10), this.f31716b, this.f31718d, this.f31717c, e10);
+        lk.b bVar = this.f31763a;
+        int i10 = this.f31768f;
+        return new ik.a(q(bVar, f10[i10 % 4], f10[(i10 + 1) % 4], f10[(i10 + 2) % 4], f10[(i10 + 3) % 4]), l(f10), this.f31764b, this.f31766d, this.f31765c, e10);
     }
 }

@@ -61,11 +61,11 @@ public final class ChatListViewManager extends ViewGroupManager<ChatListView> im
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f32008a;
+                unit = Unit.f32056a;
                 return unit;
             }
         });
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     private final ComponentProvider getExistingProvider(Context context) {

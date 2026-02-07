@@ -81,9 +81,9 @@ public final class SpecialBuiltinMembers {
             if (!(t10 instanceof SimpleFunctionDescriptor)) {
                 return null;
             }
-            return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, j.f32840d, 1, null);
+            return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, j.f32888d, 1, null);
         }
-        return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, i.f32839d, 1, null);
+        return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, i.f32887d, 1, null);
     }
 
     public static final <T extends CallableMemberDescriptor> T getOverriddenSpecialBuiltin(@NotNull T t10) {
@@ -98,7 +98,7 @@ public final class SpecialBuiltinMembers {
         if (!builtinMethodsWithSpecialGenericSignature.getSameAsBuiltinMethodWithErasedValueParameters(name)) {
             return null;
         }
-        return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, k.f32841d, 1, null);
+        return (T) DescriptorUtilsKt.firstOverridden$default(t10, false, k.f32889d, 1, null);
     }
 
     public static final boolean hasRealKotlinSuperClassWithOverrideOf(@NotNull ClassDescriptor classDescriptor, @NotNull CallableDescriptor specialCallableDescriptor) {

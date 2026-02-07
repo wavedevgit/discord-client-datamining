@@ -7,21 +7,21 @@ import kotlinx.coroutines.flow.Flow;
 public final class f0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Flow f49267a;
+    public final Flow f49315a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f49268b;
+    public final int f49316b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final qs.a f49269c;
+    public final qs.a f49317c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final CoroutineContext f49270d;
+    public final CoroutineContext f49318d;
 
     public f0(Flow flow, int i10, qs.a aVar, CoroutineContext coroutineContext) {
-        this.f49267a = flow;
-        this.f49268b = i10;
-        this.f49269c = aVar;
-        this.f49270d = coroutineContext;
+        this.f49315a = flow;
+        this.f49316b = i10;
+        this.f49317c = aVar;
+        this.f49318d = coroutineContext;
     }
 }

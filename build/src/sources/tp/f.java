@@ -10,14 +10,14 @@ import rp.n;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ImageView f50805a;
+    private final ImageView f50853a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f50806b;
+    public final ImageView f50854b;
 
     private f(ImageView imageView, ImageView imageView2) {
-        this.f50805a = imageView;
-        this.f50806b = imageView2;
+        this.f50853a = imageView;
+        this.f50854b = imageView2;
     }
 
     public static f a(View view) {
@@ -33,7 +33,7 @@ public final class f implements ViewBinding {
     }
 
     public static f d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n.f49105f, viewGroup, false);
+        View inflate = layoutInflater.inflate(n.f49153f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -43,6 +43,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ImageView getRoot() {
-        return this.f50805a;
+        return this.f50853a;
     }
 }

@@ -34,7 +34,7 @@ public class f extends g {
 
     @Override // jl.g
     public boolean u() {
-        if (this.f29944a.z() == fl.b.date) {
+        if (this.f29992a.z() == fl.b.date) {
             return true;
         }
         return false;

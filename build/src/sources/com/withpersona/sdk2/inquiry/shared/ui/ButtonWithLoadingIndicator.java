@@ -69,7 +69,7 @@ public final class ButtonWithLoadingIndicator extends FrameLayout {
 
     @NotNull
     public final ProgressBar getProgressBar() {
-        ProgressBar progressBar = this.f19546d.f50802b;
+        ProgressBar progressBar = this.f19546d.f50850b;
         Intrinsics.checkNotNullExpressionValue(progressBar, "progressBar");
         return progressBar;
     }

@@ -39,86 +39,86 @@ public final class f implements Closeable {
     private final Set M;
 
     /* renamed from: d */
-    private final boolean f31171d;
+    private final boolean f31219d;
 
     /* renamed from: e */
-    private final c f31172e;
+    private final c f31220e;
 
     /* renamed from: i */
-    private final Map f31173i;
+    private final Map f31221i;
 
     /* renamed from: o */
-    private final String f31174o;
+    private final String f31222o;
 
     /* renamed from: p */
-    private int f31175p;
+    private int f31223p;
 
     /* renamed from: q */
-    private int f31176q;
+    private int f31224q;
 
     /* renamed from: r */
-    private boolean f31177r;
+    private boolean f31225r;
 
     /* renamed from: s */
-    private final fu.e f31178s;
+    private final fu.e f31226s;
 
     /* renamed from: t */
-    private final fu.d f31179t;
+    private final fu.d f31227t;
 
     /* renamed from: u */
-    private final fu.d f31180u;
+    private final fu.d f31228u;
 
     /* renamed from: v */
-    private final fu.d f31181v;
+    private final fu.d f31229v;
 
     /* renamed from: w */
-    private final ju.l f31182w;
+    private final ju.l f31230w;
 
     /* renamed from: x */
-    private long f31183x;
+    private long f31231x;
 
     /* renamed from: y */
-    private long f31184y;
+    private long f31232y;
 
     /* renamed from: z */
-    private long f31185z;
+    private long f31233z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a */
-        private boolean f31186a;
+        private boolean f31234a;
 
         /* renamed from: b */
-        private final fu.e f31187b;
+        private final fu.e f31235b;
 
         /* renamed from: c */
-        public Socket f31188c;
+        public Socket f31236c;
 
         /* renamed from: d */
-        public String f31189d;
+        public String f31237d;
 
         /* renamed from: e */
-        public BufferedSource f31190e;
+        public BufferedSource f31238e;
 
         /* renamed from: f */
-        public BufferedSink f31191f;
+        public BufferedSink f31239f;
 
         /* renamed from: g */
-        private c f31192g;
+        private c f31240g;
 
         /* renamed from: h */
-        private ju.l f31193h;
+        private ju.l f31241h;
 
         /* renamed from: i */
-        private int f31194i;
+        private int f31242i;
 
         public a(boolean z10, fu.e taskRunner) {
             Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
-            this.f31186a = z10;
-            this.f31187b = taskRunner;
-            this.f31192g = c.f31196b;
-            this.f31193h = ju.l.f31298b;
+            this.f31234a = z10;
+            this.f31235b = taskRunner;
+            this.f31240g = c.f31244b;
+            this.f31241h = ju.l.f31346b;
         }
 
         public final f a() {
@@ -126,11 +126,11 @@ public final class f implements Closeable {
         }
 
         public final boolean b() {
-            return this.f31186a;
+            return this.f31234a;
         }
 
         public final String c() {
-            String str = this.f31189d;
+            String str = this.f31237d;
             if (str != null) {
                 return str;
             }
@@ -139,19 +139,19 @@ public final class f implements Closeable {
         }
 
         public final c d() {
-            return this.f31192g;
+            return this.f31240g;
         }
 
         public final int e() {
-            return this.f31194i;
+            return this.f31242i;
         }
 
         public final ju.l f() {
-            return this.f31193h;
+            return this.f31241h;
         }
 
         public final BufferedSink g() {
-            BufferedSink bufferedSink = this.f31191f;
+            BufferedSink bufferedSink = this.f31239f;
             if (bufferedSink != null) {
                 return bufferedSink;
             }
@@ -160,7 +160,7 @@ public final class f implements Closeable {
         }
 
         public final Socket h() {
-            Socket socket = this.f31188c;
+            Socket socket = this.f31236c;
             if (socket != null) {
                 return socket;
             }
@@ -169,7 +169,7 @@ public final class f implements Closeable {
         }
 
         public final BufferedSource i() {
-            BufferedSource bufferedSource = this.f31190e;
+            BufferedSource bufferedSource = this.f31238e;
             if (bufferedSource != null) {
                 return bufferedSource;
             }
@@ -178,38 +178,38 @@ public final class f implements Closeable {
         }
 
         public final fu.e j() {
-            return this.f31187b;
+            return this.f31235b;
         }
 
         public final a k(c listener) {
             Intrinsics.checkNotNullParameter(listener, "listener");
-            this.f31192g = listener;
+            this.f31240g = listener;
             return this;
         }
 
         public final a l(int i10) {
-            this.f31194i = i10;
+            this.f31242i = i10;
             return this;
         }
 
         public final void m(String str) {
             Intrinsics.checkNotNullParameter(str, "<set-?>");
-            this.f31189d = str;
+            this.f31237d = str;
         }
 
         public final void n(BufferedSink bufferedSink) {
             Intrinsics.checkNotNullParameter(bufferedSink, "<set-?>");
-            this.f31191f = bufferedSink;
+            this.f31239f = bufferedSink;
         }
 
         public final void o(Socket socket) {
             Intrinsics.checkNotNullParameter(socket, "<set-?>");
-            this.f31188c = socket;
+            this.f31236c = socket;
         }
 
         public final void p(BufferedSource bufferedSource) {
             Intrinsics.checkNotNullParameter(bufferedSource, "<set-?>");
-            this.f31190e = bufferedSource;
+            this.f31238e = bufferedSource;
         }
 
         public final a q(Socket socket, String peerName, BufferedSource source, BufferedSink sink) {
@@ -219,7 +219,7 @@ public final class f implements Closeable {
             Intrinsics.checkNotNullParameter(source, "source");
             Intrinsics.checkNotNullParameter(sink, "sink");
             o(socket);
-            if (this.f31186a) {
+            if (this.f31234a) {
                 str = cu.e.f20043i + ' ' + peerName;
             } else {
                 str = "MockWebServer " + peerName;
@@ -249,10 +249,10 @@ public final class f implements Closeable {
     public static abstract class c {
 
         /* renamed from: a */
-        public static final b f31195a = new b(null);
+        public static final b f31243a = new b(null);
 
         /* renamed from: b */
-        public static final c f31196b = new a();
+        public static final c f31244b = new a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends c {
@@ -288,40 +288,40 @@ public final class f implements Closeable {
     public static final class e extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31209e;
+        final /* synthetic */ f f31257e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31210f;
+        final /* synthetic */ int f31258f;
 
         /* renamed from: g */
-        final /* synthetic */ Buffer f31211g;
+        final /* synthetic */ Buffer f31259g;
 
         /* renamed from: h */
-        final /* synthetic */ int f31212h;
+        final /* synthetic */ int f31260h;
 
         /* renamed from: i */
-        final /* synthetic */ boolean f31213i;
+        final /* synthetic */ boolean f31261i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(String str, boolean z10, f fVar, int i10, Buffer buffer, int i11, boolean z11) {
             super(str, z10);
-            this.f31209e = fVar;
-            this.f31210f = i10;
-            this.f31211g = buffer;
-            this.f31212h = i11;
-            this.f31213i = z11;
+            this.f31257e = fVar;
+            this.f31258f = i10;
+            this.f31259g = buffer;
+            this.f31260h = i11;
+            this.f31261i = z11;
         }
 
         @Override // fu.a
         public long f() {
             try {
-                boolean d10 = this.f31209e.f31182w.d(this.f31210f, this.f31211g, this.f31212h, this.f31213i);
+                boolean d10 = this.f31257e.f31230w.d(this.f31258f, this.f31259g, this.f31260h, this.f31261i);
                 if (d10) {
-                    this.f31209e.V1().I(this.f31210f, ju.b.CANCEL);
+                    this.f31257e.V1().I(this.f31258f, ju.b.CANCEL);
                 }
-                if (d10 || this.f31213i) {
-                    synchronized (this.f31209e) {
-                        this.f31209e.M.remove(Integer.valueOf(this.f31210f));
+                if (d10 || this.f31261i) {
+                    synchronized (this.f31257e) {
+                        this.f31257e.M.remove(Integer.valueOf(this.f31258f));
                     }
                     return -1L;
                 }
@@ -337,39 +337,39 @@ public final class f implements Closeable {
     public static final class C0441f extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31214e;
+        final /* synthetic */ f f31262e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31215f;
+        final /* synthetic */ int f31263f;
 
         /* renamed from: g */
-        final /* synthetic */ List f31216g;
+        final /* synthetic */ List f31264g;
 
         /* renamed from: h */
-        final /* synthetic */ boolean f31217h;
+        final /* synthetic */ boolean f31265h;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0441f(String str, boolean z10, f fVar, int i10, List list, boolean z11) {
             super(str, z10);
-            this.f31214e = fVar;
-            this.f31215f = i10;
-            this.f31216g = list;
-            this.f31217h = z11;
+            this.f31262e = fVar;
+            this.f31263f = i10;
+            this.f31264g = list;
+            this.f31265h = z11;
         }
 
         @Override // fu.a
         public long f() {
-            boolean b10 = this.f31214e.f31182w.b(this.f31215f, this.f31216g, this.f31217h);
+            boolean b10 = this.f31262e.f31230w.b(this.f31263f, this.f31264g, this.f31265h);
             if (b10) {
                 try {
-                    this.f31214e.V1().I(this.f31215f, ju.b.CANCEL);
+                    this.f31262e.V1().I(this.f31263f, ju.b.CANCEL);
                 } catch (IOException unused) {
                     return -1L;
                 }
             }
-            if (b10 || this.f31217h) {
-                synchronized (this.f31214e) {
-                    this.f31214e.M.remove(Integer.valueOf(this.f31215f));
+            if (b10 || this.f31265h) {
+                synchronized (this.f31262e) {
+                    this.f31262e.M.remove(Integer.valueOf(this.f31263f));
                 }
                 return -1L;
             }
@@ -381,29 +381,29 @@ public final class f implements Closeable {
     public static final class g extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31218e;
+        final /* synthetic */ f f31266e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31219f;
+        final /* synthetic */ int f31267f;
 
         /* renamed from: g */
-        final /* synthetic */ List f31220g;
+        final /* synthetic */ List f31268g;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public g(String str, boolean z10, f fVar, int i10, List list) {
             super(str, z10);
-            this.f31218e = fVar;
-            this.f31219f = i10;
-            this.f31220g = list;
+            this.f31266e = fVar;
+            this.f31267f = i10;
+            this.f31268g = list;
         }
 
         @Override // fu.a
         public long f() {
-            if (this.f31218e.f31182w.a(this.f31219f, this.f31220g)) {
+            if (this.f31266e.f31230w.a(this.f31267f, this.f31268g)) {
                 try {
-                    this.f31218e.V1().I(this.f31219f, ju.b.CANCEL);
-                    synchronized (this.f31218e) {
-                        this.f31218e.M.remove(Integer.valueOf(this.f31219f));
+                    this.f31266e.V1().I(this.f31267f, ju.b.CANCEL);
+                    synchronized (this.f31266e) {
+                        this.f31266e.M.remove(Integer.valueOf(this.f31267f));
                     }
                     return -1L;
                 } catch (IOException unused) {
@@ -418,28 +418,28 @@ public final class f implements Closeable {
     public static final class h extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31221e;
+        final /* synthetic */ f f31269e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31222f;
+        final /* synthetic */ int f31270f;
 
         /* renamed from: g */
-        final /* synthetic */ ju.b f31223g;
+        final /* synthetic */ ju.b f31271g;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public h(String str, boolean z10, f fVar, int i10, ju.b bVar) {
             super(str, z10);
-            this.f31221e = fVar;
-            this.f31222f = i10;
-            this.f31223g = bVar;
+            this.f31269e = fVar;
+            this.f31270f = i10;
+            this.f31271g = bVar;
         }
 
         @Override // fu.a
         public long f() {
-            this.f31221e.f31182w.c(this.f31222f, this.f31223g);
-            synchronized (this.f31221e) {
-                this.f31221e.M.remove(Integer.valueOf(this.f31222f));
-                Unit unit = Unit.f32008a;
+            this.f31269e.f31230w.c(this.f31270f, this.f31271g);
+            synchronized (this.f31269e) {
+                this.f31269e.M.remove(Integer.valueOf(this.f31270f));
+                Unit unit = Unit.f32056a;
             }
             return -1L;
         }
@@ -449,17 +449,17 @@ public final class f implements Closeable {
     public static final class i extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31224e;
+        final /* synthetic */ f f31272e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public i(String str, boolean z10, f fVar) {
             super(str, z10);
-            this.f31224e = fVar;
+            this.f31272e = fVar;
         }
 
         @Override // fu.a
         public long f() {
-            this.f31224e.z2(false, 2, 0);
+            this.f31272e.z2(false, 2, 0);
             return -1L;
         }
     }
@@ -468,35 +468,35 @@ public final class f implements Closeable {
     public static final class j extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31225e;
+        final /* synthetic */ f f31273e;
 
         /* renamed from: f */
-        final /* synthetic */ long f31226f;
+        final /* synthetic */ long f31274f;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public j(String str, f fVar, long j10) {
             super(str, false, 2, null);
-            this.f31225e = fVar;
-            this.f31226f = j10;
+            this.f31273e = fVar;
+            this.f31274f = j10;
         }
 
         @Override // fu.a
         public long f() {
             boolean z10;
-            synchronized (this.f31225e) {
-                if (this.f31225e.f31184y >= this.f31225e.f31183x) {
-                    this.f31225e.f31183x++;
+            synchronized (this.f31273e) {
+                if (this.f31273e.f31232y >= this.f31273e.f31231x) {
+                    this.f31273e.f31231x++;
                     z10 = false;
                 } else {
                     z10 = true;
                 }
             }
             if (z10) {
-                this.f31225e.L0(null);
+                this.f31273e.L0(null);
                 return -1L;
             }
-            this.f31225e.z2(false, 1, 0);
-            return this.f31226f;
+            this.f31273e.z2(false, 1, 0);
+            return this.f31274f;
         }
     }
 
@@ -504,29 +504,29 @@ public final class f implements Closeable {
     public static final class k extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31227e;
+        final /* synthetic */ f f31275e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31228f;
+        final /* synthetic */ int f31276f;
 
         /* renamed from: g */
-        final /* synthetic */ ju.b f31229g;
+        final /* synthetic */ ju.b f31277g;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public k(String str, boolean z10, f fVar, int i10, ju.b bVar) {
             super(str, z10);
-            this.f31227e = fVar;
-            this.f31228f = i10;
-            this.f31229g = bVar;
+            this.f31275e = fVar;
+            this.f31276f = i10;
+            this.f31277g = bVar;
         }
 
         @Override // fu.a
         public long f() {
             try {
-                this.f31227e.A2(this.f31228f, this.f31229g);
+                this.f31275e.A2(this.f31276f, this.f31277g);
                 return -1L;
             } catch (IOException e10) {
-                this.f31227e.L0(e10);
+                this.f31275e.L0(e10);
                 return -1L;
             }
         }
@@ -536,29 +536,29 @@ public final class f implements Closeable {
     public static final class l extends fu.a {
 
         /* renamed from: e */
-        final /* synthetic */ f f31230e;
+        final /* synthetic */ f f31278e;
 
         /* renamed from: f */
-        final /* synthetic */ int f31231f;
+        final /* synthetic */ int f31279f;
 
         /* renamed from: g */
-        final /* synthetic */ long f31232g;
+        final /* synthetic */ long f31280g;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public l(String str, boolean z10, f fVar, int i10, long j10) {
             super(str, z10);
-            this.f31230e = fVar;
-            this.f31231f = i10;
-            this.f31232g = j10;
+            this.f31278e = fVar;
+            this.f31279f = i10;
+            this.f31280g = j10;
         }
 
         @Override // fu.a
         public long f() {
             try {
-                this.f31230e.V1().P(this.f31231f, this.f31232g);
+                this.f31278e.V1().P(this.f31279f, this.f31280g);
                 return -1L;
             } catch (IOException e10) {
-                this.f31230e.L0(e10);
+                this.f31278e.L0(e10);
                 return -1L;
             }
         }
@@ -575,24 +575,24 @@ public final class f implements Closeable {
         int i10;
         Intrinsics.checkNotNullParameter(builder, "builder");
         boolean b10 = builder.b();
-        this.f31171d = b10;
-        this.f31172e = builder.d();
-        this.f31173i = new LinkedHashMap();
+        this.f31219d = b10;
+        this.f31220e = builder.d();
+        this.f31221i = new LinkedHashMap();
         String c10 = builder.c();
-        this.f31174o = c10;
+        this.f31222o = c10;
         if (builder.b()) {
             i10 = 3;
         } else {
             i10 = 2;
         }
-        this.f31176q = i10;
+        this.f31224q = i10;
         fu.e j10 = builder.j();
-        this.f31178s = j10;
+        this.f31226s = j10;
         fu.d i11 = j10.i();
-        this.f31179t = i11;
-        this.f31180u = j10.i();
-        this.f31181v = j10.i();
-        this.f31182w = builder.f();
+        this.f31227t = i11;
+        this.f31228u = j10.i();
+        this.f31229v = j10.i();
+        this.f31230w = builder.f();
         m mVar = new m();
         if (builder.b()) {
             mVar.h(7, PointerEventHelper.X_FLAG_SUPPORTS_HOVER);
@@ -631,7 +631,7 @@ public final class f implements Closeable {
             ju.j r6 = r9.K
             monitor-enter(r6)
             monitor-enter(r9)     // Catch: java.lang.Throwable -> L8a
-            int r0 = r9.f31176q     // Catch: java.lang.Throwable -> L7e
+            int r0 = r9.f31224q     // Catch: java.lang.Throwable -> L7e
             r1 = 1073741823(0x3fffffff, float:1.9999999)
             if (r0 <= r1) goto L18
             ju.b r0 = ju.b.REFUSED_STREAM     // Catch: java.lang.Throwable -> L13
@@ -643,11 +643,11 @@ public final class f implements Closeable {
             r2 = r9
             goto L88
         L18:
-            boolean r0 = r9.f31177r     // Catch: java.lang.Throwable -> L7e
+            boolean r0 = r9.f31225r     // Catch: java.lang.Throwable -> L7e
             if (r0 != 0) goto L81
-            int r1 = r9.f31176q     // Catch: java.lang.Throwable -> L7e
+            int r1 = r9.f31224q     // Catch: java.lang.Throwable -> L7e
             int r0 = r1 + 2
-            r9.f31176q = r0     // Catch: java.lang.Throwable -> L7e
+            r9.f31224q = r0     // Catch: java.lang.Throwable -> L7e
             ju.i r0 = new ju.i     // Catch: java.lang.Throwable -> L7e
             r5 = 0
             r4 = 0
@@ -676,11 +676,11 @@ public final class f implements Closeable {
         L47:
             boolean r4 = r0.u()     // Catch: java.lang.Throwable -> L43
             if (r4 == 0) goto L56
-            java.util.Map r4 = r2.f31173i     // Catch: java.lang.Throwable -> L43
+            java.util.Map r4 = r2.f31221i     // Catch: java.lang.Throwable -> L43
             java.lang.Integer r5 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Throwable -> L43
             r4.put(r5, r0)     // Catch: java.lang.Throwable -> L43
         L56:
-            kotlin.Unit r4 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L43
+            kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L43
             monitor-exit(r9)     // Catch: java.lang.Throwable -> L61
             if (r10 != 0) goto L64
             ju.j r10 = r2.K     // Catch: java.lang.Throwable -> L61
@@ -692,7 +692,7 @@ public final class f implements Closeable {
             r10 = r0
             goto L8d
         L64:
-            boolean r3 = r2.f31171d     // Catch: java.lang.Throwable -> L61
+            boolean r3 = r2.f31219d     // Catch: java.lang.Throwable -> L61
             if (r3 != 0) goto L76
             ju.j r3 = r2.K     // Catch: java.lang.Throwable -> L61
             r3.C(r10, r1, r11)     // Catch: java.lang.Throwable -> L61
@@ -742,7 +742,7 @@ public final class f implements Closeable {
     }
 
     public final synchronized ju.i A1(int i10) {
-        return (ju.i) this.f31173i.get(Integer.valueOf(i10));
+        return (ju.i) this.f31221i.get(Integer.valueOf(i10));
     }
 
     public final void A2(int i10, ju.b statusCode) {
@@ -752,17 +752,17 @@ public final class f implements Closeable {
 
     public final void B2(int i10, ju.b errorCode) {
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        fu.d dVar = this.f31179t;
-        dVar.i(new k(this.f31174o + '[' + i10 + "] writeSynReset", true, this, i10, errorCode), 0L);
+        fu.d dVar = this.f31227t;
+        dVar.i(new k(this.f31222o + '[' + i10 + "] writeSynReset", true, this, i10, errorCode), 0L);
     }
 
     public final void C2(int i10, long j10) {
-        fu.d dVar = this.f31179t;
-        dVar.i(new l(this.f31174o + '[' + i10 + "] windowUpdate", true, this, i10, j10), 0L);
+        fu.d dVar = this.f31227t;
+        dVar.i(new l(this.f31222o + '[' + i10 + "] windowUpdate", true, this, i10, j10), 0L);
     }
 
     public final Map D1() {
-        return this.f31173i;
+        return this.f31221i;
     }
 
     public final void K0(ju.b connectionCode, ju.b streamCode, IOException iOException) {
@@ -779,13 +779,13 @@ public final class f implements Closeable {
         }
         synchronized (this) {
             try {
-                if (!this.f31173i.isEmpty()) {
-                    objArr = this.f31173i.values().toArray(new ju.i[0]);
-                    this.f31173i.clear();
+                if (!this.f31221i.isEmpty()) {
+                    objArr = this.f31221i.values().toArray(new ju.i[0]);
+                    this.f31221i.clear();
                 } else {
                     objArr = null;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -807,13 +807,13 @@ public final class f implements Closeable {
             this.J.close();
         } catch (IOException unused4) {
         }
-        this.f31179t.n();
-        this.f31180u.n();
-        this.f31181v.n();
+        this.f31227t.n();
+        this.f31228u.n();
+        this.f31229v.n();
     }
 
     public final boolean O0() {
-        return this.f31171d;
+        return this.f31219d;
     }
 
     public final long T1() {
@@ -821,7 +821,7 @@ public final class f implements Closeable {
     }
 
     public final String V0() {
-        return this.f31174o;
+        return this.f31222o;
     }
 
     public final ju.j V1() {
@@ -829,10 +829,10 @@ public final class f implements Closeable {
     }
 
     public final synchronized boolean X1(long j10) {
-        if (this.f31177r) {
+        if (this.f31225r) {
             return false;
         }
-        if (this.A < this.f31185z) {
+        if (this.A < this.f31233z) {
             if (j10 >= this.C) {
                 return false;
             }
@@ -841,7 +841,7 @@ public final class f implements Closeable {
     }
 
     public final int Y0() {
-        return this.f31175p;
+        return this.f31223p;
     }
 
     public final ju.i b2(List requestHeaders, boolean z10) {
@@ -855,7 +855,7 @@ public final class f implements Closeable {
     }
 
     public final c d1() {
-        return this.f31172e;
+        return this.f31220e;
     }
 
     public final void f2(int i10, BufferedSource source, int i11, boolean z10) {
@@ -864,7 +864,7 @@ public final class f implements Closeable {
         long j10 = i11;
         source.U0(j10);
         source.read(buffer, j10);
-        this.f31180u.i(new e(this.f31174o + '[' + i10 + "] onData", true, this, i10, buffer, i11, z10), 0L);
+        this.f31228u.i(new e(this.f31222o + '[' + i10 + "] onData", true, this, i10, buffer, i11, z10), 0L);
     }
 
     public final void flush() {
@@ -873,8 +873,8 @@ public final class f implements Closeable {
 
     public final void h2(int i10, List requestHeaders, boolean z10) {
         Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-        fu.d dVar = this.f31180u;
-        dVar.i(new C0441f(this.f31174o + '[' + i10 + "] onHeaders", true, this, i10, requestHeaders, z10), 0L);
+        fu.d dVar = this.f31228u;
+        dVar.i(new C0441f(this.f31222o + '[' + i10 + "] onHeaders", true, this, i10, requestHeaders, z10), 0L);
     }
 
     public final void i2(int i10, List requestHeaders) {
@@ -892,8 +892,8 @@ public final class f implements Closeable {
                     }
                 }
                 this.M.add(Integer.valueOf(i10));
-                fu.d dVar = this.f31180u;
-                dVar.i(new g(this.f31174o + '[' + i10 + "] onRequest", true, this, i10, requestHeaders), 0L);
+                fu.d dVar = this.f31228u;
+                dVar.i(new g(this.f31222o + '[' + i10 + "] onRequest", true, this, i10, requestHeaders), 0L);
             } catch (Throwable th4) {
                 th2 = th4;
             }
@@ -902,8 +902,8 @@ public final class f implements Closeable {
 
     public final void j2(int i10, ju.b errorCode) {
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        fu.d dVar = this.f31180u;
-        dVar.i(new h(this.f31174o + '[' + i10 + "] onReset", true, this, i10, errorCode), 0L);
+        fu.d dVar = this.f31228u;
+        dVar.i(new h(this.f31222o + '[' + i10 + "] onReset", true, this, i10, errorCode), 0L);
     }
 
     public final boolean o2(int i10) {
@@ -915,7 +915,7 @@ public final class f implements Closeable {
 
     public final synchronized ju.i p2(int i10) {
         ju.i iVar;
-        iVar = (ju.i) this.f31173i.remove(Integer.valueOf(i10));
+        iVar = (ju.i) this.f31221i.remove(Integer.valueOf(i10));
         Intrinsics.checkNotNull(this, "null cannot be cast to non-null type java.lang.Object");
         notifyAll();
         return iVar;
@@ -924,20 +924,20 @@ public final class f implements Closeable {
     public final void q2() {
         synchronized (this) {
             long j10 = this.A;
-            long j11 = this.f31185z;
+            long j11 = this.f31233z;
             if (j10 < j11) {
                 return;
             }
-            this.f31185z = j11 + 1;
+            this.f31233z = j11 + 1;
             this.C = System.nanoTime() + 1000000000;
-            Unit unit = Unit.f32008a;
-            fu.d dVar = this.f31179t;
-            dVar.i(new i(this.f31174o + " ping", true, this), 0L);
+            Unit unit = Unit.f32056a;
+            fu.d dVar = this.f31227t;
+            dVar.i(new i(this.f31222o + " ping", true, this), 0L);
         }
     }
 
     public final void r2(int i10) {
-        this.f31175p = i10;
+        this.f31223p = i10;
     }
 
     public final void s2(m mVar) {
@@ -950,13 +950,13 @@ public final class f implements Closeable {
         synchronized (this.K) {
             Ref.IntRef intRef = new Ref.IntRef();
             synchronized (this) {
-                if (this.f31177r) {
+                if (this.f31225r) {
                     return;
                 }
-                this.f31177r = true;
-                int i10 = this.f31175p;
+                this.f31225r = true;
+                int i10 = this.f31223p;
                 intRef.element = i10;
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 this.K.p(i10, statusCode, cu.e.f20035a);
             }
         }
@@ -972,11 +972,11 @@ public final class f implements Closeable {
                 this.K.P(0, c10 - 65535);
             }
         }
-        taskRunner.i().i(new fu.c(this.f31174o, true, this.L), 0L);
+        taskRunner.i().i(new fu.c(this.f31222o, true, this.L), 0L);
     }
 
     public final int w1() {
-        return this.f31176q;
+        return this.f31224q;
     }
 
     public final synchronized void w2(long j10) {
@@ -1000,7 +1000,7 @@ public final class f implements Closeable {
         r2 = java.lang.Math.min((int) java.lang.Math.min(r12, r6 - r4), r8.K.y());
         r6 = r2;
         r8.H += r6;
-        r4 = kotlin.Unit.f32008a;
+        r4 = kotlin.Unit.f32056a;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1025,7 +1025,7 @@ public final class f implements Closeable {
             long r6 = r8.I     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
             int r2 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1))
             if (r2 < 0) goto L39
-            java.util.Map r2 = r8.f31173i     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
+            java.util.Map r2 = r8.f31221i     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
             java.lang.Integer r4 = java.lang.Integer.valueOf(r9)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
             boolean r2 = r2.containsKey(r4)     // Catch: java.lang.Throwable -> L2f java.lang.InterruptedException -> L62
             if (r2 == 0) goto L31
@@ -1052,7 +1052,7 @@ public final class f implements Closeable {
             long r6 = (long) r2     // Catch: java.lang.Throwable -> L2f
             long r4 = r4 + r6
             r8.H = r4     // Catch: java.lang.Throwable -> L2f
-            kotlin.Unit r4 = kotlin.Unit.f32008a     // Catch: java.lang.Throwable -> L2f
+            kotlin.Unit r4 = kotlin.Unit.f32056a     // Catch: java.lang.Throwable -> L2f
             monitor-exit(r8)
             long r12 = r12 - r6
             ju.j r4 = r8.K
@@ -1102,30 +1102,30 @@ public final class f implements Closeable {
     public final class d implements h.c, Function0 {
 
         /* renamed from: d */
-        private final ju.h f31197d;
+        private final ju.h f31245d;
 
         /* renamed from: e */
-        final /* synthetic */ f f31198e;
+        final /* synthetic */ f f31246e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a extends fu.a {
 
             /* renamed from: e */
-            final /* synthetic */ f f31199e;
+            final /* synthetic */ f f31247e;
 
             /* renamed from: f */
-            final /* synthetic */ Ref.ObjectRef f31200f;
+            final /* synthetic */ Ref.ObjectRef f31248f;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(String str, boolean z10, f fVar, Ref.ObjectRef objectRef) {
                 super(str, z10);
-                this.f31199e = fVar;
-                this.f31200f = objectRef;
+                this.f31247e = fVar;
+                this.f31248f = objectRef;
             }
 
             @Override // fu.a
             public long f() {
-                this.f31199e.d1().a(this.f31199e, (m) this.f31200f.element);
+                this.f31247e.d1().a(this.f31247e, (m) this.f31248f.element);
                 return -1L;
             }
         }
@@ -1134,28 +1134,28 @@ public final class f implements Closeable {
         public static final class b extends fu.a {
 
             /* renamed from: e */
-            final /* synthetic */ f f31201e;
+            final /* synthetic */ f f31249e;
 
             /* renamed from: f */
-            final /* synthetic */ ju.i f31202f;
+            final /* synthetic */ ju.i f31250f;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(String str, boolean z10, f fVar, ju.i iVar) {
                 super(str, z10);
-                this.f31201e = fVar;
-                this.f31202f = iVar;
+                this.f31249e = fVar;
+                this.f31250f = iVar;
             }
 
             @Override // fu.a
             public long f() {
                 try {
-                    this.f31201e.d1().b(this.f31202f);
+                    this.f31249e.d1().b(this.f31250f);
                     return -1L;
                 } catch (IOException e10) {
-                    lu.h g10 = lu.h.f36777a.g();
-                    g10.k("Http2Connection.Listener failure for " + this.f31201e.V0(), 4, e10);
+                    lu.h g10 = lu.h.f36825a.g();
+                    g10.k("Http2Connection.Listener failure for " + this.f31249e.V0(), 4, e10);
                     try {
-                        this.f31202f.d(ju.b.PROTOCOL_ERROR, e10);
+                        this.f31250f.d(ju.b.PROTOCOL_ERROR, e10);
                         return -1L;
                     } catch (IOException unused) {
                         return -1L;
@@ -1168,25 +1168,25 @@ public final class f implements Closeable {
         public static final class c extends fu.a {
 
             /* renamed from: e */
-            final /* synthetic */ f f31203e;
+            final /* synthetic */ f f31251e;
 
             /* renamed from: f */
-            final /* synthetic */ int f31204f;
+            final /* synthetic */ int f31252f;
 
             /* renamed from: g */
-            final /* synthetic */ int f31205g;
+            final /* synthetic */ int f31253g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public c(String str, boolean z10, f fVar, int i10, int i11) {
                 super(str, z10);
-                this.f31203e = fVar;
-                this.f31204f = i10;
-                this.f31205g = i11;
+                this.f31251e = fVar;
+                this.f31252f = i10;
+                this.f31253g = i11;
             }
 
             @Override // fu.a
             public long f() {
-                this.f31203e.z2(true, this.f31204f, this.f31205g);
+                this.f31251e.z2(true, this.f31252f, this.f31253g);
                 return -1L;
             }
         }
@@ -1196,47 +1196,47 @@ public final class f implements Closeable {
         public static final class C0440d extends fu.a {
 
             /* renamed from: e */
-            final /* synthetic */ d f31206e;
+            final /* synthetic */ d f31254e;
 
             /* renamed from: f */
-            final /* synthetic */ boolean f31207f;
+            final /* synthetic */ boolean f31255f;
 
             /* renamed from: g */
-            final /* synthetic */ m f31208g;
+            final /* synthetic */ m f31256g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0440d(String str, boolean z10, d dVar, boolean z11, m mVar) {
                 super(str, z10);
-                this.f31206e = dVar;
-                this.f31207f = z11;
-                this.f31208g = mVar;
+                this.f31254e = dVar;
+                this.f31255f = z11;
+                this.f31256g = mVar;
             }
 
             @Override // fu.a
             public long f() {
-                this.f31206e.k(this.f31207f, this.f31208g);
+                this.f31254e.k(this.f31255f, this.f31256g);
                 return -1L;
             }
         }
 
         public d(f fVar, ju.h reader) {
             Intrinsics.checkNotNullParameter(reader, "reader");
-            this.f31198e = fVar;
-            this.f31197d = reader;
+            this.f31246e = fVar;
+            this.f31245d = reader;
         }
 
         @Override // ju.h.c
         public void a(boolean z10, int i10, int i11, List headerBlock) {
             Intrinsics.checkNotNullParameter(headerBlock, "headerBlock");
-            if (this.f31198e.o2(i10)) {
-                this.f31198e.h2(i10, headerBlock, z10);
+            if (this.f31246e.o2(i10)) {
+                this.f31246e.h2(i10, headerBlock, z10);
                 return;
             }
-            f fVar = this.f31198e;
+            f fVar = this.f31246e;
             synchronized (fVar) {
                 ju.i A1 = fVar.A1(i10);
                 if (A1 == null) {
-                    if (fVar.f31177r) {
+                    if (fVar.f31225r) {
                         return;
                     }
                     if (i10 <= fVar.Y0()) {
@@ -1248,11 +1248,11 @@ public final class f implements Closeable {
                     ju.i iVar = new ju.i(i10, fVar, false, z10, cu.e.Q(headerBlock));
                     fVar.r2(i10);
                     fVar.D1().put(Integer.valueOf(i10), iVar);
-                    fu.d i12 = fVar.f31178s.i();
+                    fu.d i12 = fVar.f31226s.i();
                     i12.i(new b(fVar.V0() + '[' + i10 + "] onStream", true, fVar, iVar), 0L);
                     return;
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 A1.x(cu.e.Q(headerBlock), z10);
             }
         }
@@ -1260,20 +1260,20 @@ public final class f implements Closeable {
         @Override // ju.h.c
         public void b(int i10, long j10) {
             if (i10 == 0) {
-                f fVar = this.f31198e;
+                f fVar = this.f31246e;
                 synchronized (fVar) {
                     fVar.I = fVar.T1() + j10;
                     Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
                     fVar.notifyAll();
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
                 return;
             }
-            ju.i A1 = this.f31198e.A1(i10);
+            ju.i A1 = this.f31246e.A1(i10);
             if (A1 != null) {
                 synchronized (A1) {
                     A1.a(j10);
-                    Unit unit2 = Unit.f32008a;
+                    Unit unit2 = Unit.f32056a;
                 }
             }
         }
@@ -1281,18 +1281,18 @@ public final class f implements Closeable {
         @Override // ju.h.c
         public void c(boolean z10, m settings) {
             Intrinsics.checkNotNullParameter(settings, "settings");
-            fu.d dVar = this.f31198e.f31179t;
-            dVar.i(new C0440d(this.f31198e.V0() + " applyAndAckSettings", true, this, z10, settings), 0L);
+            fu.d dVar = this.f31246e.f31227t;
+            dVar.i(new C0440d(this.f31246e.V0() + " applyAndAckSettings", true, this, z10, settings), 0L);
         }
 
         @Override // ju.h.c
         public void d(int i10, ju.b errorCode) {
             Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-            if (this.f31198e.o2(i10)) {
-                this.f31198e.j2(i10, errorCode);
+            if (this.f31246e.o2(i10)) {
+                this.f31246e.j2(i10, errorCode);
                 return;
             }
-            ju.i p22 = this.f31198e.p2(i10);
+            ju.i p22 = this.f31246e.p2(i10);
             if (p22 != null) {
                 p22.y(errorCode);
             }
@@ -1301,21 +1301,21 @@ public final class f implements Closeable {
         @Override // ju.h.c
         public void e(int i10, int i11, List requestHeaders) {
             Intrinsics.checkNotNullParameter(requestHeaders, "requestHeaders");
-            this.f31198e.i2(i11, requestHeaders);
+            this.f31246e.i2(i11, requestHeaders);
         }
 
         @Override // ju.h.c
         public void g(boolean z10, int i10, BufferedSource source, int i11) {
             Intrinsics.checkNotNullParameter(source, "source");
-            if (this.f31198e.o2(i10)) {
-                this.f31198e.f2(i10, source, i11, z10);
+            if (this.f31246e.o2(i10)) {
+                this.f31246e.f2(i10, source, i11, z10);
                 return;
             }
-            ju.i A1 = this.f31198e.A1(i10);
+            ju.i A1 = this.f31246e.A1(i10);
             if (A1 == null) {
-                this.f31198e.B2(i10, ju.b.PROTOCOL_ERROR);
+                this.f31246e.B2(i10, ju.b.PROTOCOL_ERROR);
                 long j10 = i11;
-                this.f31198e.w2(j10);
+                this.f31246e.w2(j10);
                 source.skip(j10);
                 return;
             }
@@ -1328,14 +1328,14 @@ public final class f implements Closeable {
         @Override // ju.h.c
         public void h(boolean z10, int i10, int i11) {
             if (!z10) {
-                this.f31198e.f31179t.i(new c(this.f31198e.V0() + " ping", true, this.f31198e, i10, i11), 0L);
+                this.f31246e.f31227t.i(new c(this.f31246e.V0() + " ping", true, this.f31246e, i10, i11), 0L);
                 return;
             }
-            f fVar = this.f31198e;
+            f fVar = this.f31246e;
             synchronized (fVar) {
                 try {
                     if (i10 == 1) {
-                        fVar.f31184y++;
+                        fVar.f31232y++;
                     } else if (i10 == 2) {
                         fVar.A++;
                     } else {
@@ -1344,7 +1344,7 @@ public final class f implements Closeable {
                             Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
                             fVar.notifyAll();
                         }
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -1355,7 +1355,7 @@ public final class f implements Closeable {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             l();
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // ju.h.c
@@ -1366,16 +1366,16 @@ public final class f implements Closeable {
             Intrinsics.checkNotNullParameter(errorCode, "errorCode");
             Intrinsics.checkNotNullParameter(debugData, "debugData");
             debugData.G();
-            f fVar = this.f31198e;
+            f fVar = this.f31246e;
             synchronized (fVar) {
                 array = fVar.D1().values().toArray(new ju.i[0]);
-                fVar.f31177r = true;
-                Unit unit = Unit.f32008a;
+                fVar.f31225r = true;
+                Unit unit = Unit.f32056a;
             }
             for (ju.i iVar : (ju.i[]) array) {
                 if (iVar.j() > i10 && iVar.t()) {
                     iVar.y(ju.b.REFUSED_STREAM);
-                    this.f31198e.p2(iVar.j());
+                    this.f31246e.p2(iVar.j());
                 }
             }
         }
@@ -1390,8 +1390,8 @@ public final class f implements Closeable {
             ju.i[] iVarArr;
             Intrinsics.checkNotNullParameter(settings, "settings");
             Ref.ObjectRef objectRef = new Ref.ObjectRef();
-            ju.j V1 = this.f31198e.V1();
-            f fVar = this.f31198e;
+            ju.j V1 = this.f31246e.V1();
+            f fVar = this.f31246e;
             synchronized (V1) {
                 synchronized (fVar) {
                     m z12 = fVar.z1();
@@ -1408,26 +1408,26 @@ public final class f implements Closeable {
                     if (c10 != 0 && !fVar.D1().isEmpty()) {
                         iVarArr = (ju.i[]) fVar.D1().values().toArray(new ju.i[0]);
                         fVar.s2((m) objectRef.element);
-                        fVar.f31181v.i(new a(fVar.V0() + " onSettings", true, fVar, objectRef), 0L);
-                        Unit unit = Unit.f32008a;
+                        fVar.f31229v.i(new a(fVar.V0() + " onSettings", true, fVar, objectRef), 0L);
+                        Unit unit = Unit.f32056a;
                     }
                     iVarArr = null;
                     fVar.s2((m) objectRef.element);
-                    fVar.f31181v.i(new a(fVar.V0() + " onSettings", true, fVar, objectRef), 0L);
-                    Unit unit2 = Unit.f32008a;
+                    fVar.f31229v.i(new a(fVar.V0() + " onSettings", true, fVar, objectRef), 0L);
+                    Unit unit2 = Unit.f32056a;
                 }
                 try {
                     fVar.V1().a((m) objectRef.element);
                 } catch (IOException e10) {
                     fVar.L0(e10);
                 }
-                Unit unit3 = Unit.f32008a;
+                Unit unit3 = Unit.f32056a;
             }
             if (iVarArr != null) {
                 for (ju.i iVar : iVarArr) {
                     synchronized (iVar) {
                         iVar.a(c10);
-                        Unit unit4 = Unit.f32008a;
+                        Unit unit4 = Unit.f32056a;
                     }
                 }
             }
@@ -1443,26 +1443,26 @@ public final class f implements Closeable {
             IOException e10 = null;
             try {
                 try {
-                    this.f31197d.k(this);
+                    this.f31245d.k(this);
                     do {
-                    } while (this.f31197d.g(false, this));
+                    } while (this.f31245d.g(false, this));
                     ju.b bVar3 = ju.b.NO_ERROR;
                     try {
-                        this.f31198e.K0(bVar3, ju.b.CANCEL, null);
+                        this.f31246e.K0(bVar3, ju.b.CANCEL, null);
                         bVar = bVar3;
                     } catch (IOException e11) {
                         e10 = e11;
                         ju.b bVar4 = ju.b.PROTOCOL_ERROR;
-                        f fVar = this.f31198e;
+                        f fVar = this.f31246e;
                         fVar.K0(bVar4, bVar4, e10);
                         bVar = fVar;
-                        bVar2 = this.f31197d;
+                        bVar2 = this.f31245d;
                         cu.e.m(bVar2);
                     }
                 } catch (Throwable th2) {
                     th = th2;
-                    this.f31198e.K0(bVar, bVar2, e10);
-                    cu.e.m(this.f31197d);
+                    this.f31246e.K0(bVar, bVar2, e10);
+                    cu.e.m(this.f31245d);
                     throw th;
                 }
             } catch (IOException e12) {
@@ -1470,11 +1470,11 @@ public final class f implements Closeable {
             } catch (Throwable th3) {
                 th = th3;
                 bVar = bVar2;
-                this.f31198e.K0(bVar, bVar2, e10);
-                cu.e.m(this.f31197d);
+                this.f31246e.K0(bVar, bVar2, e10);
+                cu.e.m(this.f31245d);
                 throw th;
             }
-            bVar2 = this.f31197d;
+            bVar2 = this.f31245d;
             cu.e.m(bVar2);
         }
 

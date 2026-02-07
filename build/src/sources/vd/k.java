@@ -37,50 +37,50 @@ public final class k implements qd.p, k.b {
     private n0 K;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f52495d;
+    private final h f52543d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wd.k f52496e;
+    private final wd.k f52544e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g f52497i;
+    private final g f52545i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final c0 f52498o;
+    private final c0 f52546o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final v f52499p;
+    private final v f52547p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final u.a f52500q;
+    private final u.a f52548q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.i f52501r;
+    private final com.google.android.exoplayer2.upstream.i f52549r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final y.a f52502s;
+    private final y.a f52550s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final le.b f52503t;
+    private final le.b f52551t;
 
     /* renamed from: w  reason: collision with root package name */
-    private final qd.h f52506w;
+    private final qd.h f52554w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f52507x;
+    private final boolean f52555x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final int f52508y;
+    private final int f52556y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f52509z;
+    private final boolean f52557z;
     private final p.b B = new b();
 
     /* renamed from: u  reason: collision with root package name */
-    private final IdentityHashMap f52504u = new IdentityHashMap();
+    private final IdentityHashMap f52552u = new IdentityHashMap();
 
     /* renamed from: v  reason: collision with root package name */
-    private final s f52505v = new s();
+    private final s f52553v = new s();
     private p[] G = new p[0];
     private p[] H = new p[0];
     private int[][] I = new int[0];
@@ -102,12 +102,12 @@ public final class k implements qd.p, k.b {
             if (k.i(k.this) <= 0) {
                 int i10 = 0;
                 for (p pVar : k.this.G) {
-                    i10 += pVar.t().f46892d;
+                    i10 += pVar.t().f46940d;
                 }
                 u0[] u0VarArr = new u0[i10];
                 int i11 = 0;
                 for (p pVar2 : k.this.G) {
-                    int i12 = pVar2.t().f46892d;
+                    int i12 = pVar2.t().f46940d;
                     int i13 = 0;
                     while (i13 < i12) {
                         u0VarArr[i11] = pVar2.t().b(i13);
@@ -122,24 +122,24 @@ public final class k implements qd.p, k.b {
 
         @Override // vd.p.b
         public void n(Uri uri) {
-            k.this.f52496e.e(uri);
+            k.this.f52544e.e(uri);
         }
     }
 
     public k(h hVar, wd.k kVar, g gVar, c0 c0Var, le.g gVar2, v vVar, u.a aVar, com.google.android.exoplayer2.upstream.i iVar, y.a aVar2, le.b bVar, qd.h hVar2, boolean z10, int i10, boolean z11, t1 t1Var, long j10) {
-        this.f52495d = hVar;
-        this.f52496e = kVar;
-        this.f52497i = gVar;
-        this.f52498o = c0Var;
-        this.f52499p = vVar;
-        this.f52500q = aVar;
-        this.f52501r = iVar;
-        this.f52502s = aVar2;
-        this.f52503t = bVar;
-        this.f52506w = hVar2;
-        this.f52507x = z10;
-        this.f52508y = i10;
-        this.f52509z = z11;
+        this.f52543d = hVar;
+        this.f52544e = kVar;
+        this.f52545i = gVar;
+        this.f52546o = c0Var;
+        this.f52547p = vVar;
+        this.f52548q = aVar;
+        this.f52549r = iVar;
+        this.f52550s = aVar2;
+        this.f52551t = bVar;
+        this.f52554w = hVar2;
+        this.f52555x = z10;
+        this.f52556y = i10;
+        this.f52557z = z11;
         this.A = t1Var;
         this.C = j10;
         this.K = hVar2.a(new n0[0]);
@@ -163,19 +163,19 @@ public final class k implements qd.p, k.b {
         ArrayList arrayList3 = new ArrayList(list.size());
         HashSet hashSet = new HashSet();
         for (int i10 = 0; i10 < list.size(); i10++) {
-            String str = ((g.a) list.get(i10)).f53622d;
+            String str = ((g.a) list.get(i10)).f53670d;
             if (hashSet.add(str)) {
                 arrayList.clear();
                 arrayList2.clear();
                 arrayList3.clear();
                 boolean z11 = true;
                 for (int i11 = 0; i11 < list.size(); i11++) {
-                    if (ne.w0.c(str, ((g.a) list.get(i11)).f53622d)) {
+                    if (ne.w0.c(str, ((g.a) list.get(i11)).f53670d)) {
                         g.a aVar = (g.a) list.get(i11);
                         arrayList3.add(Integer.valueOf(i11));
-                        arrayList.add(aVar.f53619a);
-                        arrayList2.add(aVar.f53620b);
-                        if (ne.w0.L(aVar.f53620b.f11584t, 1) == 1) {
+                        arrayList.add(aVar.f53667a);
+                        arrayList2.add(aVar.f53668b);
+                        if (ne.w0.L(aVar.f53668b.f11584t, 1) == 1) {
                             z10 = true;
                         } else {
                             z10 = false;
@@ -187,7 +187,7 @@ public final class k implements qd.p, k.b {
                 p x10 = x(str2, 1, (Uri[]) arrayList.toArray((Uri[]) ne.w0.k(new Uri[0])), (Format[]) arrayList2.toArray(new Format[0]), null, Collections.EMPTY_LIST, map, j10);
                 list3.add(pi.e.l(arrayList3));
                 list2.add(x10);
-                if (this.f52507x && z11) {
+                if (this.f52555x && z11) {
                     x10.d0(new u0[]{new u0(str2, (Format[]) arrayList2.toArray(new Format[0]))}, 0, new int[0]);
                 }
             }
@@ -199,12 +199,12 @@ public final class k implements qd.p, k.b {
         boolean z11;
         boolean z12;
         int i10;
-        int size = gVar.f53610e.size();
+        int size = gVar.f53658e.size();
         int[] iArr = new int[size];
         int i11 = 0;
         int i12 = 0;
-        for (int i13 = 0; i13 < gVar.f53610e.size(); i13++) {
-            Format format = ((g.b) gVar.f53610e.get(i13)).f53624b;
+        for (int i13 = 0; i13 < gVar.f53658e.size(); i13++) {
+            Format format = ((g.b) gVar.f53658e.get(i13)).f53672b;
             if (format.C <= 0 && ne.w0.M(format.f11584t, 2) == null) {
                 if (ne.w0.M(format.f11584t, 1) != null) {
                     iArr[i13] = 1;
@@ -233,11 +233,11 @@ public final class k implements qd.p, k.b {
         Format[] formatArr = new Format[size];
         int[] iArr2 = new int[size];
         int i14 = 0;
-        for (int i15 = 0; i15 < gVar.f53610e.size(); i15++) {
+        for (int i15 = 0; i15 < gVar.f53658e.size(); i15++) {
             if ((!z10 || iArr[i15] == 2) && (!z11 || iArr[i15] != 1)) {
-                g.b bVar = (g.b) gVar.f53610e.get(i15);
-                uriArr[i14] = bVar.f53623a;
-                formatArr[i14] = bVar.f53624b;
+                g.b bVar = (g.b) gVar.f53658e.get(i15);
+                uriArr[i14] = bVar.f53671a;
+                formatArr[i14] = bVar.f53672b;
                 iArr2[i14] = i15;
                 i14++;
             }
@@ -245,7 +245,7 @@ public final class k implements qd.p, k.b {
         String str = formatArr[0].f11584t;
         int L = ne.w0.L(str, 2);
         int L2 = ne.w0.L(str, 1);
-        if ((L2 == 1 || (L2 == 0 && gVar.f53612g.isEmpty())) && L <= 1 && L2 + L > 0) {
+        if ((L2 == 1 || (L2 == 0 && gVar.f53660g.isEmpty())) && L <= 1 && L2 + L > 0) {
             z12 = true;
         } else {
             z12 = false;
@@ -255,10 +255,10 @@ public final class k implements qd.p, k.b {
         } else {
             i10 = 0;
         }
-        p x10 = x("main", i10, uriArr, formatArr, gVar.f53615j, gVar.f53616k, map, j10);
+        p x10 = x("main", i10, uriArr, formatArr, gVar.f53663j, gVar.f53664k, map, j10);
         list.add(x10);
         list2.add(iArr2);
-        if (this.f52507x && z12) {
+        if (this.f52555x && z12) {
             ArrayList arrayList = new ArrayList();
             if (L > 0) {
                 Format[] formatArr2 = new Format[size];
@@ -266,10 +266,10 @@ public final class k implements qd.p, k.b {
                     formatArr2[i16] = A(formatArr[i16]);
                 }
                 arrayList.add(new u0("main", formatArr2));
-                if (L2 > 0 && (gVar.f53615j != null || gVar.f53612g.isEmpty())) {
-                    arrayList.add(new u0("main:audio", y(formatArr[0], gVar.f53615j, false)));
+                if (L2 > 0 && (gVar.f53663j != null || gVar.f53660g.isEmpty())) {
+                    arrayList.add(new u0("main:audio", y(formatArr[0], gVar.f53663j, false)));
                 }
-                List list3 = gVar.f53616k;
+                List list3 = gVar.f53664k;
                 if (list3 != null) {
                     for (int i17 = 0; i17 < list3.size(); i17++) {
                         arrayList.add(new u0("main:cc:" + i17, (Format) list3.get(i17)));
@@ -278,7 +278,7 @@ public final class k implements qd.p, k.b {
             } else {
                 Format[] formatArr3 = new Format[size];
                 for (int i18 = 0; i18 < size; i18++) {
-                    formatArr3[i18] = y(formatArr[i18], gVar.f53615j, true);
+                    formatArr3[i18] = y(formatArr[i18], gVar.f53663j, true);
                 }
                 arrayList.add(new u0("main", formatArr3));
             }
@@ -290,16 +290,16 @@ public final class k implements qd.p, k.b {
 
     private void w(long j10) {
         Map map;
-        wd.g gVar = (wd.g) ne.a.e(this.f52496e.d());
-        if (this.f52509z) {
-            map = z(gVar.f53618m);
+        wd.g gVar = (wd.g) ne.a.e(this.f52544e.d());
+        if (this.f52557z) {
+            map = z(gVar.f53666m);
         } else {
             map = Collections.EMPTY_MAP;
         }
         Map map2 = map;
-        boolean isEmpty = gVar.f53610e.isEmpty();
-        List list = gVar.f53612g;
-        List list2 = gVar.f53613h;
+        boolean isEmpty = gVar.f53658e.isEmpty();
+        List list = gVar.f53660g;
+        List list2 = gVar.f53661h;
         this.E = 0;
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
@@ -310,13 +310,13 @@ public final class k implements qd.p, k.b {
         this.J = arrayList.size();
         for (int i10 = 0; i10 < list2.size(); i10++) {
             g.a aVar = (g.a) list2.get(i10);
-            String str = "subtitle:" + i10 + ":" + aVar.f53622d;
+            String str = "subtitle:" + i10 + ":" + aVar.f53670d;
             Map map3 = map2;
-            p x10 = x(str, 3, new Uri[]{aVar.f53619a}, new Format[]{aVar.f53620b}, null, Collections.EMPTY_LIST, map3, j10);
+            p x10 = x(str, 3, new Uri[]{aVar.f53667a}, new Format[]{aVar.f53668b}, null, Collections.EMPTY_LIST, map3, j10);
             map2 = map3;
             arrayList2.add(new int[]{i10});
             arrayList.add(x10);
-            x10.d0(new u0[]{new u0(str, aVar.f53620b)}, 0, new int[0]);
+            x10.d0(new u0[]{new u0(str, aVar.f53668b)}, 0, new int[0]);
         }
         this.G = (p[]) arrayList.toArray(new p[0]);
         this.I = (int[][]) arrayList2.toArray(new int[0]);
@@ -331,7 +331,7 @@ public final class k implements qd.p, k.b {
     }
 
     private p x(String str, int i10, Uri[] uriArr, Format[] formatArr, Format format, List list, Map map, long j10) {
-        return new p(str, i10, this.B, new f(this.f52495d, this.f52496e, uriArr, formatArr, this.f52497i, this.f52498o, this.f52505v, this.C, list, this.A, null), map, this.f52503t, j10, format, this.f52499p, this.f52500q, this.f52501r, this.f52502s, this.f52508y);
+        return new p(str, i10, this.B, new f(this.f52543d, this.f52544e, uriArr, formatArr, this.f52545i, this.f52546o, this.f52553v, this.C, list, this.A, null), map, this.f52551t, j10, format, this.f52547p, this.f52548q, this.f52549r, this.f52550s, this.f52556y);
     }
 
     private static Format y(Format format, Format format2, boolean z10) {
@@ -387,12 +387,12 @@ public final class k implements qd.p, k.b {
         int i10 = 0;
         while (i10 < arrayList.size()) {
             rc.m mVar = (rc.m) list.get(i10);
-            String str = mVar.f48837i;
+            String str = mVar.f48885i;
             i10++;
             int i11 = i10;
             while (i11 < arrayList.size()) {
                 rc.m mVar2 = (rc.m) arrayList.get(i11);
-                if (TextUtils.equals(mVar2.f48837i, str)) {
+                if (TextUtils.equals(mVar2.f48885i, str)) {
                     mVar = mVar.p(mVar2);
                     arrayList.remove(i11);
                 } else {
@@ -405,7 +405,7 @@ public final class k implements qd.p, k.b {
     }
 
     public void B() {
-        this.f52496e.o(this);
+        this.f52544e.o(this);
         for (p pVar : this.G) {
             pVar.f0();
         }
@@ -475,7 +475,7 @@ public final class k implements qd.p, k.b {
     @Override // qd.p
     public void k(p.a aVar, long j10) {
         this.D = aVar;
-        this.f52496e.f(this);
+        this.f52544e.f(this);
         w(j10);
     }
 
@@ -494,7 +494,7 @@ public final class k implements qd.p, k.b {
                 i10++;
             }
             if (i02) {
-                this.f52505v.b();
+                this.f52553v.b();
             }
         }
         return j10;
@@ -518,7 +518,7 @@ public final class k implements qd.p, k.b {
             if (m0Var2 == null) {
                 intValue = -1;
             } else {
-                intValue = ((Integer) this.f52504u.get(m0Var2)).intValue();
+                intValue = ((Integer) this.f52552u.get(m0Var2)).intValue();
             }
             iArr[i10] = intValue;
             iArr2[i10] = -1;
@@ -539,7 +539,7 @@ public final class k implements qd.p, k.b {
                 }
             }
         }
-        this.f52504u.clear();
+        this.f52552u.clear();
         int length = gVarArr.length;
         m0[] m0VarArr2 = new m0[length];
         m0[] m0VarArr3 = new m0[gVarArr.length];
@@ -573,7 +573,7 @@ public final class k implements qd.p, k.b {
                 if (iArr2[i17] == i15) {
                     ne.a.e(m0Var3);
                     m0VarArr2[i17] = m0Var3;
-                    this.f52504u.put(m0Var3, Integer.valueOf(i15));
+                    this.f52552u.put(m0Var3, Integer.valueOf(i15));
                     z13 = true;
                 } else if (iArr3[i17] == i15) {
                     if (m0Var3 == null) {
@@ -594,7 +594,7 @@ public final class k implements qd.p, k.b {
                         if (pVarArr3.length != 0 && pVar == pVarArr3[0]) {
                         }
                     }
-                    this.f52505v.b();
+                    this.f52553v.b();
                     z12 = true;
                 } else {
                     if (i15 < this.J) {
@@ -613,7 +613,7 @@ public final class k implements qd.p, k.b {
         System.arraycopy(m0VarArr2, 0, m0VarArr, 0, length);
         p[] pVarArr4 = (p[]) ne.w0.P0(pVarArr2, i13);
         this.H = pVarArr4;
-        this.K = this.f52506w.a(pVarArr4);
+        this.K = this.f52554w.a(pVarArr4);
         return j10;
     }
 

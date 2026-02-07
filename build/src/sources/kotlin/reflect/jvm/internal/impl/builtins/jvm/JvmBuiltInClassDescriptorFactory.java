@@ -34,27 +34,27 @@ import org.jetbrains.annotations.NotNull;
 public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFactory {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Name f32239f;
+    private static final Name f32287f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ClassId f32240g;
+    private static final ClassId f32288g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ModuleDescriptor f32241a;
+    private final ModuleDescriptor f32289a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f32242b;
+    private final Function1 f32290b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f32243c;
+    private final NotNullLazyValue f32291c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f32237d = {Reflection.property1(new PropertyReference1Impl(JvmBuiltInClassDescriptorFactory.class, "cloneable", "getCloneable()Lorg/jetbrains/kotlin/descriptors/impl/ClassDescriptorImpl;", 0))};
+    static final /* synthetic */ KProperty[] f32285d = {Reflection.property1(new PropertyReference1Impl(JvmBuiltInClassDescriptorFactory.class, "cloneable", "getCloneable()Lorg/jetbrains/kotlin/descriptors/impl/ClassDescriptorImpl;", 0))};
     @NotNull
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final FqName f32238e = StandardNames.BUILT_INS_PACKAGE_FQ_NAME;
+    private static final FqName f32286e = StandardNames.BUILT_INS_PACKAGE_FQ_NAME;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -64,7 +64,7 @@ public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFa
 
         @NotNull
         public final ClassId getCLONEABLE_CLASS_ID() {
-            return JvmBuiltInClassDescriptorFactory.f32240g;
+            return JvmBuiltInClassDescriptorFactory.f32288g;
         }
 
         private Companion() {
@@ -73,24 +73,24 @@ public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFa
 
     static {
         FqNameUnsafe fqNameUnsafe = StandardNames.FqNames.cloneable;
-        f32239f = fqNameUnsafe.shortName();
-        f32240g = ClassId.Companion.topLevel(fqNameUnsafe.toSafe());
+        f32287f = fqNameUnsafe.shortName();
+        f32288g = ClassId.Companion.topLevel(fqNameUnsafe.toSafe());
     }
 
     public JvmBuiltInClassDescriptorFactory(@NotNull StorageManager storageManager, @NotNull ModuleDescriptor moduleDescriptor, @NotNull Function1<? super ModuleDescriptor, ? extends DeclarationDescriptor> computeContainingDeclaration) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(moduleDescriptor, "moduleDescriptor");
         Intrinsics.checkNotNullParameter(computeContainingDeclaration, "computeContainingDeclaration");
-        this.f32241a = moduleDescriptor;
-        this.f32242b = computeContainingDeclaration;
-        this.f32243c = storageManager.createLazyValue(new a(this, storageManager));
+        this.f32289a = moduleDescriptor;
+        this.f32290b = computeContainingDeclaration;
+        this.f32291c = storageManager.createLazyValue(new a(this, storageManager));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final BuiltInsPackageFragment a(ModuleDescriptor module) {
         Intrinsics.checkNotNullParameter(module, "module");
         ArrayList arrayList = new ArrayList();
-        for (Object obj : module.getPackage(f32238e).getFragments()) {
+        for (Object obj : module.getPackage(f32286e).getFragments()) {
             if (obj instanceof BuiltInsPackageFragment) {
                 arrayList.add(obj);
             }
@@ -100,19 +100,19 @@ public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFa
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ClassDescriptorImpl d(JvmBuiltInClassDescriptorFactory jvmBuiltInClassDescriptorFactory, StorageManager storageManager) {
-        ClassDescriptorImpl classDescriptorImpl = new ClassDescriptorImpl((DeclarationDescriptor) jvmBuiltInClassDescriptorFactory.f32242b.invoke(jvmBuiltInClassDescriptorFactory.f32241a), f32239f, Modality.ABSTRACT, ClassKind.INTERFACE, CollectionsKt.e(jvmBuiltInClassDescriptorFactory.f32241a.getBuiltIns().getAnyType()), SourceElement.NO_SOURCE, false, storageManager);
+        ClassDescriptorImpl classDescriptorImpl = new ClassDescriptorImpl((DeclarationDescriptor) jvmBuiltInClassDescriptorFactory.f32290b.invoke(jvmBuiltInClassDescriptorFactory.f32289a), f32287f, Modality.ABSTRACT, ClassKind.INTERFACE, CollectionsKt.e(jvmBuiltInClassDescriptorFactory.f32289a.getBuiltIns().getAnyType()), SourceElement.NO_SOURCE, false, storageManager);
         classDescriptorImpl.initialize(new CloneableClassScope(storageManager, classDescriptorImpl), x0.d(), null);
         return classDescriptorImpl;
     }
 
     private final ClassDescriptorImpl e() {
-        return (ClassDescriptorImpl) StorageKt.getValue(this.f32243c, this, f32237d[0]);
+        return (ClassDescriptorImpl) StorageKt.getValue(this.f32291c, this, f32285d[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.deserialization.ClassDescriptorFactory
     public ClassDescriptor createClass(@NotNull ClassId classId) {
         Intrinsics.checkNotNullParameter(classId, "classId");
-        if (Intrinsics.areEqual(classId, f32240g)) {
+        if (Intrinsics.areEqual(classId, f32288g)) {
             return e();
         }
         return null;
@@ -122,7 +122,7 @@ public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFa
     @NotNull
     public Collection<ClassDescriptor> getAllContributedClassesIfPossible(@NotNull FqName packageFqName) {
         Intrinsics.checkNotNullParameter(packageFqName, "packageFqName");
-        if (Intrinsics.areEqual(packageFqName, f32238e)) {
+        if (Intrinsics.areEqual(packageFqName, f32286e)) {
             return x0.c(e());
         }
         return x0.d();
@@ -132,13 +132,13 @@ public final class JvmBuiltInClassDescriptorFactory implements ClassDescriptorFa
     public boolean shouldCreateClass(@NotNull FqName packageFqName, @NotNull Name name) {
         Intrinsics.checkNotNullParameter(packageFqName, "packageFqName");
         Intrinsics.checkNotNullParameter(name, "name");
-        if (Intrinsics.areEqual(name, f32239f) && Intrinsics.areEqual(packageFqName, f32238e)) {
+        if (Intrinsics.areEqual(name, f32287f) && Intrinsics.areEqual(packageFqName, f32286e)) {
             return true;
         }
         return false;
     }
 
     public /* synthetic */ JvmBuiltInClassDescriptorFactory(StorageManager storageManager, ModuleDescriptor moduleDescriptor, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-        this(storageManager, moduleDescriptor, (i10 & 4) != 0 ? b.f32281d : function1);
+        this(storageManager, moduleDescriptor, (i10 & 4) != 0 ? b.f32329d : function1);
     }
 }

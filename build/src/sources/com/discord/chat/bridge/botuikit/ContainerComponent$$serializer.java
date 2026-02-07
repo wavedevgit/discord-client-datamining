@@ -54,9 +54,9 @@ public /* synthetic */ class ContainerComponent$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ContainerComponent.$childSerializers;
-        p0 p0Var = p0.f31057a;
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{p0Var, n2Var, gt.a.u(n2Var), lazyArr[3].getValue(), gt.a.u(p0Var), jt.h.f31005a, gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(k1.f31024a)};
+        p0 p0Var = p0.f31105a;
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{p0Var, n2Var, gt.a.u(n2Var), lazyArr[3].getValue(), gt.a.u(p0Var), jt.h.f31053a, gt.a.u(n2Var), gt.a.u(p0Var), gt.a.u(n2Var), gt.a.u(k1.f31072a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -82,11 +82,11 @@ public /* synthetic */ class ContainerComponent$$serializer implements h0 {
         if (b10.p()) {
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f31041a;
-            p0 p0Var = p0.f31057a;
+            n2 n2Var = n2.f31089a;
+            p0 p0Var = p0.f31105a;
             boolean C = b10.C(serialDescriptor, 5);
             list = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) lazyArr[3].getValue(), null);
-            r31 = (Void) b10.n(serialDescriptor, 9, k1.f31024a, null);
+            r31 = (Void) b10.n(serialDescriptor, 9, k1.f31072a, null);
             num = (Integer) b10.n(serialDescriptor, 7, p0Var, null);
             str2 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             z10 = C;
@@ -130,7 +130,7 @@ public /* synthetic */ class ContainerComponent$$serializer implements h0 {
                         i13 = 3;
                         break;
                     case 2:
-                        str8 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str8);
                         i14 |= 4;
                         i12 = 9;
                         i13 = 3;
@@ -141,7 +141,7 @@ public /* synthetic */ class ContainerComponent$$serializer implements h0 {
                         i12 = 9;
                         break;
                     case 4:
-                        num4 = (Integer) b10.n(serialDescriptor, 4, p0.f31057a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 4, p0.f31105a, num4);
                         i14 |= 16;
                         i12 = 9;
                         break;
@@ -151,21 +151,21 @@ public /* synthetic */ class ContainerComponent$$serializer implements h0 {
                         i12 = 9;
                         break;
                     case 6:
-                        str6 = (String) b10.n(serialDescriptor, 6, n2.f31041a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 6, n2.f31089a, str6);
                         i14 |= 64;
                         i12 = 9;
                         break;
                     case 7:
-                        num3 = (Integer) b10.n(serialDescriptor, 7, p0.f31057a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, 7, p0.f31105a, num3);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i12 = 9;
                         break;
                     case 8:
-                        str5 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str5);
+                        str5 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str5);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     case 9:
-                        r62 = (Void) b10.n(serialDescriptor, i12, k1.f31024a, r62);
+                        r62 = (Void) b10.n(serialDescriptor, i12, k1.f31072a, r62);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         break;
                     default:

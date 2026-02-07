@@ -8,16 +8,16 @@ import qv.w;
 public abstract class b implements tv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final char f43554a;
+    private final char f43602a;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(char c10) {
-        this.f43554a = c10;
+        this.f43602a = c10;
     }
 
     @Override // tv.a
     public char a() {
-        return this.f43554a;
+        return this.f43602a;
     }
 
     @Override // tv.a
@@ -38,7 +38,7 @@ public abstract class b implements tv.a {
 
     @Override // tv.a
     public char d() {
-        return this.f43554a;
+        return this.f43602a;
     }
 
     @Override // tv.a

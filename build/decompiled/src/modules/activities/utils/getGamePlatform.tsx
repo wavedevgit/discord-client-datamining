@@ -30,23 +30,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getGamePlatform.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107188: for (var _fun107188_ip = 0;;) switch (_fun107188_ip) {
+        _fun107664: for (var _fun107664_ip = 0;;) switch (_fun107664_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var1 = var4 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun107188_ip = 125;
-                    continue _fun107188
+                    _fun107664_ip = 125;
+                    continue _fun107664
                 }
             case 14:
                 var1 = var3.type;
                 var1 = var4 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun107188_ip = 125;
-                    continue _fun107188
+                    _fun107664_ip = 125;
+                    continue _fun107664
                 }
             case 28:
                 var5 = var3.type;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.PLAYING;
                 var0 = null;
                 if (!(var5 === var1)) {
-                    _fun107188_ip = 125;
-                    continue _fun107188
+                    _fun107664_ip = 125;
+                    continue _fun107664
                 }
             case 52:
                 var6 = _closure1_slot0;
@@ -66,25 +66,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6.bind(var5)(var1);
                 var1 = var1.bind(var5)(var3);
                 if (var1) {
-                    _fun107188_ip = 112;
-                    continue _fun107188
+                    _fun107664_ip = 112;
+                    continue _fun107664
                 }
             case 82:
                 var1 = var3.platform;
                 if (!(var4 == var1)) {
-                    _fun107188_ip = 104;
-                    continue _fun107188
+                    _fun107664_ip = 104;
+                    continue _fun107664
                 }
             case 92:
                 var1 = _closure1_slot3;
                 var1 = var1.DESKTOP;
-                _fun107188_ip = 110;
-                continue _fun107188;
+                _fun107664_ip = 110;
+                continue _fun107664;
             case 104:
                 var1 = var3.platform;
             case 110:
-                _fun107188_ip = 122;
-                continue _fun107188;
+                _fun107664_ip = 122;
+                continue _fun107664;
             case 112:
                 var2 = _closure1_slot3;
                 var1 = var2.XBOX;
@@ -96,4 +96,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7865, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7909, 2]);

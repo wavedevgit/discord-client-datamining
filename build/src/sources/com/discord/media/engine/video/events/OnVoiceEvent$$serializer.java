@@ -38,7 +38,7 @@ public /* synthetic */ class OnVoiceEvent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{g0.f31001a, p0.f31057a};
+        return new KSerializer[]{g0.f31049a, p0.f31105a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

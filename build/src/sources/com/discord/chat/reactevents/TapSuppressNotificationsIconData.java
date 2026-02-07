@@ -18,7 +18,7 @@ import qr.o;
 public final class TapSuppressNotificationsIconData implements ReactEvent {
     @NotNull
     public static final TapSuppressNotificationsIconData INSTANCE = new TapSuppressNotificationsIconData();
-    private static final /* synthetic */ Lazy $cachedSerializer$delegate = l.b(o.f48044e, new Function0() { // from class: com.discord.chat.reactevents.d
+    private static final /* synthetic */ Lazy $cachedSerializer$delegate = l.b(o.f48092e, new Function0() { // from class: com.discord.chat.reactevents.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _init_$_anonymous_;

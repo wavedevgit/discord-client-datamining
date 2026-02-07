@@ -66,7 +66,7 @@ public final class ChatListView$sync$1 extends kotlin.coroutines.jvm.internal.k 
                         chatListView.onChatListUpdate(ChatListUpdate.copy$default(chatListUpdate, null, null, null, 0, null, 27, null));
                         Ref.BooleanRef.this.element = false;
                     }
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             };
             this.label = 1;
@@ -74,11 +74,11 @@ public final class ChatListView$sync$1 extends kotlin.coroutines.jvm.internal.k 
                 return f10;
             }
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ChatListView$sync$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

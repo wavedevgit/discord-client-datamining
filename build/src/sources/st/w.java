@@ -10,25 +10,25 @@ import java.util.Map;
 public abstract class w {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object f50216d = new Object();
+    private static final Object f50264d = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f50217a;
+    private final Class f50265a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f50218b;
+    private final List f50266b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f50219c;
+    private final String f50267c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static abstract class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f50220a;
+        private final int f50268a;
 
         b(int i10) {
-            this.f50220a = i10;
+            this.f50268a = i10;
         }
 
         abstract int a();
@@ -41,26 +41,26 @@ public abstract class w {
     public static class c extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f50221b;
+        private final int f50269b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Object f50222c;
+        private final Object f50270c;
 
         @Override // st.w.b
         int a() {
-            return this.f50221b;
+            return this.f50269b;
         }
 
         @Override // st.w.b
         b b(int i10) {
-            return new c(i10, this.f50221b, this.f50222c);
+            return new c(i10, this.f50269b, this.f50270c);
         }
 
         private c(int i10, int i11, Object obj) {
             super(i10);
             if (i11 >= 1 && i11 <= 9) {
-                this.f50221b = i11;
-                this.f50222c = obj;
+                this.f50269b = i11;
+                this.f50270c = obj;
                 return;
             }
             throw new IllegalArgumentException("Fraction width out of bounds: " + i11);
@@ -72,22 +72,22 @@ public abstract class w {
     public static class e extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f50224b;
+        private final int f50272b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f50225c;
+        private final int f50273c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f50226d;
+        private final Object f50274d;
 
         @Override // st.w.b
         int a() {
-            return this.f50224b;
+            return this.f50272b;
         }
 
         @Override // st.w.b
         b b(int i10) {
-            return new e(i10, this.f50224b, this.f50225c, this.f50226d);
+            return new e(i10, this.f50272b, this.f50273c, this.f50274d);
         }
 
         private e(int i10, int i11, int i12, Object obj) {
@@ -100,9 +100,9 @@ public abstract class w {
                 if (i12 > 18) {
                     throw new IllegalArgumentException("Max width out of bounds: " + i12);
                 } else if (obj != null) {
-                    this.f50224b = i11;
-                    this.f50225c = i12;
-                    this.f50226d = obj;
+                    this.f50272b = i11;
+                    this.f50273c = i12;
+                    this.f50274d = obj;
                 } else {
                     throw new NullPointerException("Missing unit.");
                 }
@@ -115,7 +115,7 @@ public abstract class w {
     public static class f extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f50227b;
+        private final List f50275b;
 
         @Override // st.w.b
         int a() {
@@ -124,7 +124,7 @@ public abstract class w {
 
         @Override // st.w.b
         b b(int i10) {
-            ArrayList arrayList = new ArrayList(this.f50227b);
+            ArrayList arrayList = new ArrayList(this.f50275b);
             for (int size = arrayList.size() - 1; size >= 0; size--) {
                 b bVar = (b) arrayList.get(size);
                 arrayList.set(size, bVar.b(i10));
@@ -137,9 +137,9 @@ public abstract class w {
             super(0);
             if (!list.isEmpty()) {
                 Object obj = list.get(0);
-                g gVar = g.f50228b;
+                g gVar = g.f50276b;
                 if (obj != gVar && list.get(list.size() - 1) != gVar) {
-                    this.f50227b = Collections.unmodifiableList(list);
+                    this.f50275b = Collections.unmodifiableList(list);
                     return;
                 }
                 throw new IllegalArgumentException("Optional section must not start or end with an or-operator.");
@@ -153,52 +153,52 @@ public abstract class w {
     public static class h extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final e f50229b;
+        private final e f50277b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final b f50230c;
+        private final b f50278c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final p f50231d;
+        private final p f50279d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Map f50232e;
+        private final Map f50280e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f50233f;
+        private final int f50281f;
 
         @Override // st.w.b
         int a() {
-            return this.f50233f;
+            return this.f50281f;
         }
 
         @Override // st.w.b
         b b(int i10) {
-            return new h(i10, this.f50229b, this.f50230c, this.f50231d, this.f50232e, this.f50233f);
+            return new h(i10, this.f50277b, this.f50278c, this.f50279d, this.f50280e, this.f50281f);
         }
 
         private h(Object obj, String str, p pVar, Map map) {
             super(0);
-            this.f50229b = new e(0, 1, 18, obj);
-            this.f50230c = new d(str, true);
-            this.f50231d = pVar;
-            this.f50232e = map;
+            this.f50277b = new e(0, 1, 18, obj);
+            this.f50278c = new d(str, true);
+            this.f50279d = pVar;
+            this.f50280e = map;
             int i10 = Integer.MAX_VALUE;
             for (String str2 : map.values()) {
                 if (str2.length() < i10) {
                     i10 = str2.length();
                 }
             }
-            this.f50233f = i10;
+            this.f50281f = i10;
         }
 
         private h(int i10, e eVar, b bVar, p pVar, Map map, int i11) {
             super(i10);
-            this.f50229b = eVar;
-            this.f50230c = bVar;
-            this.f50231d = pVar;
-            this.f50232e = map;
-            this.f50233f = i11;
+            this.f50277b = eVar;
+            this.f50278c = bVar;
+            this.f50279d = pVar;
+            this.f50280e = map;
+            this.f50281f = i11;
         }
     }
 
@@ -206,10 +206,10 @@ public abstract class w {
     private static class i extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final char f50234b;
+        private final char f50282b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final char f50235c;
+        private final char f50283c;
 
         @Override // st.w.b
         int a() {
@@ -218,7 +218,7 @@ public abstract class w {
 
         @Override // st.w.b
         b b(int i10) {
-            return new i(i10, this.f50234b, this.f50235c);
+            return new i(i10, this.f50282b, this.f50283c);
         }
 
         private i(char c10, char c11) {
@@ -227,8 +227,8 @@ public abstract class w {
 
         private i(int i10, char c10, char c11) {
             super(i10);
-            this.f50234b = c10;
-            this.f50235c = c11;
+            this.f50282b = c10;
+            this.f50283c = c11;
         }
     }
 
@@ -236,26 +236,26 @@ public abstract class w {
     private static class j extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f50236b;
+        private final boolean f50284b;
 
         @Override // st.w.b
         int a() {
-            return this.f50236b ? 1 : 0;
+            return this.f50284b ? 1 : 0;
         }
 
         @Override // st.w.b
         b b(int i10) {
-            return new j(i10, this.f50236b);
+            return new j(i10, this.f50284b);
         }
 
         private j(boolean z10) {
             super(0);
-            this.f50236b = z10;
+            this.f50284b = z10;
         }
 
         private j(int i10, boolean z10) {
             super(i10);
-            this.f50236b = z10;
+            this.f50284b = z10;
         }
     }
 
@@ -336,22 +336,22 @@ public abstract class w {
                     List list = (List) arrayList.get(0);
                     if (!list.isEmpty()) {
                         Object obj = list.get(0);
-                        g gVar = g.f50228b;
+                        g gVar = g.f50276b;
                         if (obj != gVar && list.get(list.size() - 1) != gVar) {
                             int size = list.size();
                             int a10 = ((b) list.get(size - 1)).a();
                             for (int i17 = size - 2; i17 >= 0; i17--) {
                                 b bVar = (b) list.get(i17);
-                                if (bVar == g.f50228b) {
+                                if (bVar == g.f50276b) {
                                     a10 = 0;
                                 } else {
                                     list.set(i17, bVar.b(a10));
                                     a10 += bVar.a();
                                 }
                             }
-                            this.f50217a = cls;
-                            this.f50218b = Collections.unmodifiableList(list);
-                            this.f50219c = str;
+                            this.f50265a = cls;
+                            this.f50266b = Collections.unmodifiableList(list);
+                            this.f50267c = str;
                             return;
                         }
                         throw new IllegalArgumentException("Pattern must not start or end with an or-operator.");
@@ -468,16 +468,16 @@ public abstract class w {
     public static class d extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f50223b;
+        private final String f50271b;
 
         @Override // st.w.b
         int a() {
-            return this.f50223b.length();
+            return this.f50271b.length();
         }
 
         @Override // st.w.b
         b b(int i10) {
-            return new d(i10, this.f50223b);
+            return new d(i10, this.f50271b);
         }
 
         private d(String str) {
@@ -489,12 +489,12 @@ public abstract class w {
             if (!z10 && str.isEmpty()) {
                 throw new IllegalArgumentException("Literal is empty.");
             }
-            this.f50223b = str;
+            this.f50271b = str;
         }
 
         private d(int i10, String str) {
             super(i10);
-            this.f50223b = str;
+            this.f50271b = str;
         }
     }
 
@@ -502,14 +502,14 @@ public abstract class w {
     private static class g extends b {
 
         /* renamed from: b  reason: collision with root package name */
-        static final g f50228b = new g();
+        static final g f50276b = new g();
 
         private g() {
             super(0);
         }
 
         static b c() {
-            return f50228b;
+            return f50276b;
         }
 
         @Override // st.w.b

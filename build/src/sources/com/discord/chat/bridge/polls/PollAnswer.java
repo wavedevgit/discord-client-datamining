@@ -123,13 +123,13 @@ public final class PollAnswer {
         compositeEncoder.z(serialDescriptor, 3, pollAnswer.votes);
         compositeEncoder.x(serialDescriptor, 4, pollAnswer.votesPercentage);
         if (compositeEncoder.A(serialDescriptor, 5) || pollAnswer.isSelected != null) {
-            compositeEncoder.l(serialDescriptor, 5, h.f31005a, pollAnswer.isSelected);
+            compositeEncoder.l(serialDescriptor, 5, h.f31053a, pollAnswer.isSelected);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || pollAnswer.isVictor != null) {
-            compositeEncoder.l(serialDescriptor, 6, h.f31005a, pollAnswer.isVictor);
+            compositeEncoder.l(serialDescriptor, 6, h.f31053a, pollAnswer.isVictor);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || pollAnswer.shouldAnimateTransition != null) {
-            compositeEncoder.l(serialDescriptor, 7, h.f31005a, pollAnswer.shouldAnimateTransition);
+            compositeEncoder.l(serialDescriptor, 7, h.f31053a, pollAnswer.shouldAnimateTransition);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || !Intrinsics.areEqual(pollAnswer.style, "normal")) {
             compositeEncoder.z(serialDescriptor, 8, pollAnswer.style);

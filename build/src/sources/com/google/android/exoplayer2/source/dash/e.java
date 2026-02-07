@@ -106,11 +106,11 @@ public final class e implements Handler.Callback {
             while (this.f12812a.K(false)) {
                 gd.c g10 = g();
                 if (g10 != null) {
-                    long j10 = g10.f46611p;
+                    long j10 = g10.f46659p;
                     Metadata a10 = e.this.f12802i.a(g10);
                     if (a10 != null) {
                         id.a aVar = (id.a) a10.d(0);
-                        if (e.h(aVar.f26649d, aVar.f26650e)) {
+                        if (e.h(aVar.f26697d, aVar.f26698e)) {
                             m(j10, aVar);
                         }
                     }
@@ -154,8 +154,8 @@ public final class e implements Handler.Callback {
 
         public void i(f fVar) {
             long j10 = this.f12815d;
-            if (j10 == -9223372036854775807L || fVar.f49892h > j10) {
-                this.f12815d = fVar.f49892h;
+            if (j10 == -9223372036854775807L || fVar.f49940h > j10) {
+                this.f12815d = fVar.f49940h;
             }
             e.this.m(fVar);
         }
@@ -163,7 +163,7 @@ public final class e implements Handler.Callback {
         public boolean j(f fVar) {
             boolean z10;
             long j10 = this.f12815d;
-            if (j10 != -9223372036854775807L && j10 < fVar.f49891g) {
+            if (j10 != -9223372036854775807L && j10 < fVar.f49939g) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -189,7 +189,7 @@ public final class e implements Handler.Callback {
     /* JADX INFO: Access modifiers changed from: private */
     public static long f(id.a aVar) {
         try {
-            return w0.R0(w0.E(aVar.f26653p));
+            return w0.R0(w0.E(aVar.f26701p));
         } catch (lc.l0 unused) {
             return -9223372036854775807L;
         }
@@ -231,7 +231,7 @@ public final class e implements Handler.Callback {
     private void p() {
         Iterator it = this.f12804p.entrySet().iterator();
         while (it.hasNext()) {
-            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f12805q.f51324h) {
+            if (((Long) ((Map.Entry) it.next()).getKey()).longValue() < this.f12805q.f51372h) {
                 it.remove();
             }
         }
@@ -253,13 +253,13 @@ public final class e implements Handler.Callback {
     boolean j(long j10) {
         ud.c cVar = this.f12805q;
         boolean z10 = false;
-        if (!cVar.f51320d) {
+        if (!cVar.f51368d) {
             return false;
         }
         if (this.f12808t) {
             return true;
         }
-        Map.Entry e10 = e(cVar.f51324h);
+        Map.Entry e10 = e(cVar.f51372h);
         if (e10 != null && ((Long) e10.getValue()).longValue() < j10) {
             this.f12806r = ((Long) e10.getKey()).longValue();
             l();
@@ -280,7 +280,7 @@ public final class e implements Handler.Callback {
     }
 
     boolean n(boolean z10) {
-        if (!this.f12805q.f51320d) {
+        if (!this.f12805q.f51368d) {
             return false;
         }
         if (this.f12808t) {

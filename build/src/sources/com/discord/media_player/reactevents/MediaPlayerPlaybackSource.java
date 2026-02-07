@@ -101,7 +101,7 @@ public final class MediaPlayerPlaybackSource {
 
     public static final /* synthetic */ void write$Self$media_player_release(MediaPlayerPlaybackSource mediaPlayerPlaybackSource, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageId messageId;
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         compositeEncoder.l(serialDescriptor, 0, n2Var, mediaPlayerPlaybackSource.f9466id);
         compositeEncoder.l(serialDescriptor, 1, n2Var, mediaPlayerPlaybackSource.assetUrl);
         compositeEncoder.l(serialDescriptor, 2, n2Var, mediaPlayerPlaybackSource.channelId);
@@ -113,7 +113,7 @@ public final class MediaPlayerPlaybackSource {
             messageId = null;
         }
         compositeEncoder.l(serialDescriptor, 3, messageId$$serializer, messageId);
-        compositeEncoder.l(serialDescriptor, 4, p0.f31057a, mediaPlayerPlaybackSource.attachmentIndex);
+        compositeEncoder.l(serialDescriptor, 4, p0.f31105a, mediaPlayerPlaybackSource.attachmentIndex);
     }
 
     public final String component1() {

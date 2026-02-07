@@ -26,46 +26,46 @@ public abstract class f5 {
     public static final class a extends f5 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f30111a;
+        private final String f30159a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30112b;
+        private final StepStyles.GovernmentIdStepStyle f30160b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fq.c2 f30113c;
+        private final fq.c2 f30161c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final fq.c2 f30114d;
+        private final fq.c2 f30162d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f30115e;
+        private final String f30163e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f30116f;
+        private final String f30164f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f30117g;
+        private final String f30165g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f30118h;
+        private final boolean f30166h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final zp.a f30119i;
+        private final zp.a f30167i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final Function1 f30120j;
+        private final Function1 f30168j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final Function1 f30121k;
+        private final Function1 f30169k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final Function0 f30122l;
+        private final Function0 f30170l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final Function0 f30123m;
+        private final Function0 f30171m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final Function0 f30124n;
+        private final Function0 f30172n;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(String str, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, fq.c2 countrySelectComponent, fq.c2 idClassSelectComponent, String str2, String str3, String str4, boolean z10, zp.a navigationState, Function1 onCountrySelected, Function1 onIdClassSelected, Function0 onContinueClick, Function0 onBackClick, Function0 onCancelClick) {
@@ -78,76 +78,76 @@ public abstract class f5 {
             Intrinsics.checkNotNullParameter(onContinueClick, "onContinueClick");
             Intrinsics.checkNotNullParameter(onBackClick, "onBackClick");
             Intrinsics.checkNotNullParameter(onCancelClick, "onCancelClick");
-            this.f30111a = str;
-            this.f30112b = governmentIdStepStyle;
-            this.f30113c = countrySelectComponent;
-            this.f30114d = idClassSelectComponent;
-            this.f30115e = str2;
-            this.f30116f = str3;
-            this.f30117g = str4;
-            this.f30118h = z10;
-            this.f30119i = navigationState;
-            this.f30120j = onCountrySelected;
-            this.f30121k = onIdClassSelected;
-            this.f30122l = onContinueClick;
-            this.f30123m = onBackClick;
-            this.f30124n = onCancelClick;
+            this.f30159a = str;
+            this.f30160b = governmentIdStepStyle;
+            this.f30161c = countrySelectComponent;
+            this.f30162d = idClassSelectComponent;
+            this.f30163e = str2;
+            this.f30164f = str3;
+            this.f30165g = str4;
+            this.f30166h = z10;
+            this.f30167i = navigationState;
+            this.f30168j = onCountrySelected;
+            this.f30169k = onIdClassSelected;
+            this.f30170l = onContinueClick;
+            this.f30171m = onBackClick;
+            this.f30172n = onCancelClick;
         }
 
         public final String a() {
-            return this.f30117g;
+            return this.f30165g;
         }
 
         public final String b() {
-            return this.f30115e;
+            return this.f30163e;
         }
 
         public final fq.c2 c() {
-            return this.f30113c;
+            return this.f30161c;
         }
 
         public final String d() {
-            return this.f30116f;
+            return this.f30164f;
         }
 
         public final fq.c2 e() {
-            return this.f30114d;
+            return this.f30162d;
         }
 
         public final zp.a f() {
-            return this.f30119i;
+            return this.f30167i;
         }
 
         public final Function0 g() {
-            return this.f30123m;
+            return this.f30171m;
         }
 
         public final Function0 h() {
-            return this.f30124n;
+            return this.f30172n;
         }
 
         public final Function0 i() {
-            return this.f30122l;
+            return this.f30170l;
         }
 
         public final Function1 j() {
-            return this.f30120j;
+            return this.f30168j;
         }
 
         public final Function1 k() {
-            return this.f30121k;
+            return this.f30169k;
         }
 
         public final StepStyles.GovernmentIdStepStyle l() {
-            return this.f30112b;
+            return this.f30160b;
         }
 
         public final String m() {
-            return this.f30111a;
+            return this.f30159a;
         }
 
         public final boolean n() {
-            return this.f30118h;
+            return this.f30166h;
         }
     }
 
@@ -164,82 +164,82 @@ public abstract class f5 {
         private final g.a I;
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f30125a;
+        private final String f30173a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f30126b;
+        private final String f30174b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f30127c;
+        private final String f30175c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final a f30128d;
+        private final a f30176d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f30129e;
+        private final d f30177e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final qo.e f30130f;
+        private final qo.e f30178f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final c4.e f30131g;
+        private final c4.e f30179g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final zp.a f30132h;
+        private final zp.a f30180h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Function2 f30133i;
+        private final Function2 f30181i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final Function0 f30134j;
+        private final Function0 f30182j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final Function0 f30135k;
+        private final Function0 f30183k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final boolean f30136l;
+        private final boolean f30184l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final List f30137m;
+        private final List f30185m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final n1 f30138n;
+        private final n1 f30186n;
 
         /* renamed from: o  reason: collision with root package name */
-        private final int f30139o;
+        private final int f30187o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30140p;
+        private final StepStyles.GovernmentIdStepStyle f30188p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final Function2 f30141q;
+        private final Function2 f30189q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final Function1 f30142r;
+        private final Function1 f30190r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final Function1 f30143s;
+        private final Function1 f30191s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final int f30144t;
+        private final int f30192t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final Function0 f30145u;
+        private final Function0 f30193u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final Function0 f30146v;
+        private final Function0 f30194v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final ao.a f30147w;
+        private final ao.a f30195w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f30148x;
+        private final boolean f30196x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final Function2 f30149y;
+        private final Function2 f30197y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final boolean f30150z;
+        private final boolean f30198z;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -247,31 +247,31 @@ public abstract class f5 {
         public static final class a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f30151d = new a("Disabled", 0);
+            public static final a f30199d = new a("Disabled", 0);
 
             /* renamed from: e  reason: collision with root package name */
-            public static final a f30152e = new a(PeerConnectionFactory.TRIAL_ENABLED, 1);
+            public static final a f30200e = new a(PeerConnectionFactory.TRIAL_ENABLED, 1);
 
             /* renamed from: i  reason: collision with root package name */
-            public static final a f30153i = new a("Hidden", 2);
+            public static final a f30201i = new a("Hidden", 2);
 
             /* renamed from: o  reason: collision with root package name */
-            private static final /* synthetic */ a[] f30154o;
+            private static final /* synthetic */ a[] f30202o;
 
             /* renamed from: p  reason: collision with root package name */
-            private static final /* synthetic */ EnumEntries f30155p;
+            private static final /* synthetic */ EnumEntries f30203p;
 
             static {
                 a[] a10 = a();
-                f30154o = a10;
-                f30155p = xr.a.a(a10);
+                f30202o = a10;
+                f30203p = xr.a.a(a10);
             }
 
             private a(String str, int i10) {
             }
 
             private static final /* synthetic */ a[] a() {
-                return new a[]{f30151d, f30152e, f30153i};
+                return new a[]{f30199d, f30200e, f30201i};
             }
 
             public static a valueOf(String str) {
@@ -279,7 +279,7 @@ public abstract class f5 {
             }
 
             public static a[] values() {
-                return (a[]) f30154o.clone();
+                return (a[]) f30202o.clone();
             }
         }
 
@@ -308,32 +308,32 @@ public abstract class f5 {
             Intrinsics.checkNotNullParameter(onLocalVideoFinalized, "onLocalVideoFinalized");
             Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
             Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
-            this.f30125a = title;
-            this.f30126b = message;
-            this.f30127c = disclaimer;
-            this.f30128d = captureButtonState;
-            this.f30129e = overlay;
-            this.f30130f = idClass;
-            this.f30131g = captureSide;
-            this.f30132h = navigationState;
-            this.f30133i = manuallyCapture;
-            this.f30134j = close;
-            this.f30135k = back;
-            this.f30136l = z10;
-            this.f30137m = autoCaptureRules;
-            this.f30138n = state;
-            this.f30139o = i10;
-            this.f30140p = governmentIdStepStyle;
-            this.f30141q = autoCapture;
-            this.f30142r = onCaptureError;
-            this.f30143s = onCameraError;
-            this.f30144t = i11;
-            this.f30145u = manualCaptureClicked;
-            this.f30146v = checkPermissions;
-            this.f30147w = videoCaptureMethod;
-            this.f30148x = z11;
-            this.f30149y = onLocalVideoFinalized;
-            this.f30150z = z12;
+            this.f30173a = title;
+            this.f30174b = message;
+            this.f30175c = disclaimer;
+            this.f30176d = captureButtonState;
+            this.f30177e = overlay;
+            this.f30178f = idClass;
+            this.f30179g = captureSide;
+            this.f30180h = navigationState;
+            this.f30181i = manuallyCapture;
+            this.f30182j = close;
+            this.f30183k = back;
+            this.f30184l = z10;
+            this.f30185m = autoCaptureRules;
+            this.f30186n = state;
+            this.f30187o = i10;
+            this.f30188p = governmentIdStepStyle;
+            this.f30189q = autoCapture;
+            this.f30190r = onCaptureError;
+            this.f30191s = onCameraError;
+            this.f30192t = i11;
+            this.f30193u = manualCaptureClicked;
+            this.f30194v = checkPermissions;
+            this.f30195w = videoCaptureMethod;
+            this.f30196x = z11;
+            this.f30197y = onLocalVideoFinalized;
+            this.f30198z = z12;
             this.A = j10;
             this.B = z13;
             this.C = str;
@@ -346,11 +346,11 @@ public abstract class f5 {
         }
 
         public final d A() {
-            return this.f30129e;
+            return this.f30177e;
         }
 
         public final int B() {
-            return this.f30144t;
+            return this.f30192t;
         }
 
         public final boolean C() {
@@ -358,19 +358,19 @@ public abstract class f5 {
         }
 
         public final n1 D() {
-            return this.f30138n;
+            return this.f30186n;
         }
 
         public final StepStyles.GovernmentIdStepStyle E() {
-            return this.f30140p;
+            return this.f30188p;
         }
 
         public final String F() {
-            return this.f30125a;
+            return this.f30173a;
         }
 
         public final ao.a G() {
-            return this.f30147w;
+            return this.f30195w;
         }
 
         public final tq.a H() {
@@ -390,23 +390,23 @@ public abstract class f5 {
         }
 
         public final Function2 b() {
-            return this.f30141q;
+            return this.f30189q;
         }
 
         public final List c() {
-            return this.f30137m;
+            return this.f30185m;
         }
 
         public final int d() {
-            return this.f30139o;
+            return this.f30187o;
         }
 
         public final boolean e() {
-            return this.f30136l;
+            return this.f30184l;
         }
 
         public final Function0 f() {
-            return this.f30135k;
+            return this.f30183k;
         }
 
         public final g.a g() {
@@ -418,11 +418,11 @@ public abstract class f5 {
         }
 
         public final a i() {
-            return this.f30128d;
+            return this.f30176d;
         }
 
         public final c4.e j() {
-            return this.f30131g;
+            return this.f30179g;
         }
 
         public final mo.h k() {
@@ -430,23 +430,23 @@ public abstract class f5 {
         }
 
         public final Function0 l() {
-            return this.f30146v;
+            return this.f30194v;
         }
 
         public final Function0 m() {
-            return this.f30134j;
+            return this.f30182j;
         }
 
         public final String n() {
-            return this.f30127c;
+            return this.f30175c;
         }
 
         public final boolean o() {
-            return this.f30150z;
+            return this.f30198z;
         }
 
         public final boolean p() {
-            return this.f30148x;
+            return this.f30196x;
         }
 
         public final String q() {
@@ -454,15 +454,15 @@ public abstract class f5 {
         }
 
         public final qo.e r() {
-            return this.f30130f;
+            return this.f30178f;
         }
 
         public final Function0 s() {
-            return this.f30145u;
+            return this.f30193u;
         }
 
         public final Function2 t() {
-            return this.f30133i;
+            return this.f30181i;
         }
 
         public final long u() {
@@ -470,23 +470,23 @@ public abstract class f5 {
         }
 
         public final String v() {
-            return this.f30126b;
+            return this.f30174b;
         }
 
         public final zp.a w() {
-            return this.f30132h;
+            return this.f30180h;
         }
 
         public final Function1 x() {
-            return this.f30143s;
+            return this.f30191s;
         }
 
         public final Function1 y() {
-            return this.f30142r;
+            return this.f30190r;
         }
 
         public final Function2 z() {
-            return this.f30149y;
+            return this.f30197y;
         }
     }
 
@@ -494,46 +494,46 @@ public abstract class f5 {
     public static final class c extends f5 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f30156a;
+        private final String f30204a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f30157b;
+        private final String f30205b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f30158c;
+        private final String f30206c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f30159d;
+        private final String f30207d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f30160e;
+        private final List f30208e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final zp.a f30161f;
+        private final zp.a f30209f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Function1 f30162g;
+        private final Function1 f30210g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30163h;
+        private final StepStyles.GovernmentIdStepStyle f30211h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final NextStep.GovernmentId.AssetConfig.SelectPage f30164i;
+        private final NextStep.GovernmentId.AssetConfig.SelectPage f30212i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final boolean f30165j;
+        private final boolean f30213j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final Function0 f30166k;
+        private final Function0 f30214k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final Function0 f30167l;
+        private final Function0 f30215l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final String f30168m;
+        private final String f30216m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final Function0 f30169n;
+        private final Function0 f30217n;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(String title, String prompt, String chooseText, String disclaimer, List enabledIdClasses, zp.a navigationState, Function1 selectIdClass, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.GovernmentId.AssetConfig.SelectPage selectPage, boolean z10, Function0 onBack, Function0 onCancel, String str, Function0 onErrorDismissed) {
@@ -548,76 +548,76 @@ public abstract class f5 {
             Intrinsics.checkNotNullParameter(onBack, "onBack");
             Intrinsics.checkNotNullParameter(onCancel, "onCancel");
             Intrinsics.checkNotNullParameter(onErrorDismissed, "onErrorDismissed");
-            this.f30156a = title;
-            this.f30157b = prompt;
-            this.f30158c = chooseText;
-            this.f30159d = disclaimer;
-            this.f30160e = enabledIdClasses;
-            this.f30161f = navigationState;
-            this.f30162g = selectIdClass;
-            this.f30163h = governmentIdStepStyle;
-            this.f30164i = selectPage;
-            this.f30165j = z10;
-            this.f30166k = onBack;
-            this.f30167l = onCancel;
-            this.f30168m = str;
-            this.f30169n = onErrorDismissed;
+            this.f30204a = title;
+            this.f30205b = prompt;
+            this.f30206c = chooseText;
+            this.f30207d = disclaimer;
+            this.f30208e = enabledIdClasses;
+            this.f30209f = navigationState;
+            this.f30210g = selectIdClass;
+            this.f30211h = governmentIdStepStyle;
+            this.f30212i = selectPage;
+            this.f30213j = z10;
+            this.f30214k = onBack;
+            this.f30215l = onCancel;
+            this.f30216m = str;
+            this.f30217n = onErrorDismissed;
         }
 
         public final NextStep.GovernmentId.AssetConfig.SelectPage a() {
-            return this.f30164i;
+            return this.f30212i;
         }
 
         public final String b() {
-            return this.f30158c;
+            return this.f30206c;
         }
 
         public final String c() {
-            return this.f30159d;
+            return this.f30207d;
         }
 
         public final List d() {
-            return this.f30160e;
+            return this.f30208e;
         }
 
         public final String e() {
-            return this.f30168m;
+            return this.f30216m;
         }
 
         public final zp.a f() {
-            return this.f30161f;
+            return this.f30209f;
         }
 
         public final Function0 g() {
-            return this.f30166k;
+            return this.f30214k;
         }
 
         public final Function0 h() {
-            return this.f30167l;
+            return this.f30215l;
         }
 
         public final Function0 i() {
-            return this.f30169n;
+            return this.f30217n;
         }
 
         public final String j() {
-            return this.f30157b;
+            return this.f30205b;
         }
 
         public final Function1 k() {
-            return this.f30162g;
+            return this.f30210g;
         }
 
         public final StepStyles.GovernmentIdStepStyle l() {
-            return this.f30163h;
+            return this.f30211h;
         }
 
         public final String m() {
-            return this.f30156a;
+            return this.f30204a;
         }
 
         public final boolean n() {
-            return this.f30165j;
+            return this.f30213j;
         }
     }
 
@@ -628,7 +628,7 @@ public abstract class f5 {
         public static final class a extends d {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final a f30170d = new a();
+            public static final a f30218d = new a();
             @NotNull
             public static final Parcelable.Creator<a> CREATOR = new C0425a();
 
@@ -640,7 +640,7 @@ public abstract class f5 {
                 public final a createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return a.f30170d;
+                    return a.f30218d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -685,7 +685,7 @@ public abstract class f5 {
         public static final class b extends d {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f30171d = new b();
+            public static final b f30219d = new b();
             @NotNull
             public static final Parcelable.Creator<b> CREATOR = new a();
 
@@ -696,7 +696,7 @@ public abstract class f5 {
                 public final b createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return b.f30171d;
+                    return b.f30219d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -743,10 +743,10 @@ public abstract class f5 {
             public static final Parcelable.Creator<c> CREATOR = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final fq.i4 f30172d;
+            private final fq.i4 f30220d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final RemoteImage f30173e;
+            private final RemoteImage f30221e;
 
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class a implements Parcelable.Creator {
@@ -769,16 +769,16 @@ public abstract class f5 {
                 super(null);
                 Intrinsics.checkNotNullParameter(customImage, "customImage");
                 Intrinsics.checkNotNullParameter(config, "config");
-                this.f30172d = customImage;
-                this.f30173e = config;
+                this.f30220d = customImage;
+                this.f30221e = config;
             }
 
             public final RemoteImage a() {
-                return this.f30173e;
+                return this.f30221e;
             }
 
             public final fq.i4 b() {
-                return this.f30172d;
+                return this.f30220d;
             }
 
             @Override // android.os.Parcelable
@@ -789,8 +789,8 @@ public abstract class f5 {
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeParcelable(this.f30172d, i10);
-                dest.writeParcelable(this.f30173e, i10);
+                dest.writeParcelable(this.f30220d, i10);
+                dest.writeParcelable(this.f30221e, i10);
             }
 
             /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -805,7 +805,7 @@ public abstract class f5 {
         public static final class C0426d extends d {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0426d f30174d = new C0426d();
+            public static final C0426d f30222d = new C0426d();
             @NotNull
             public static final Parcelable.Creator<C0426d> CREATOR = new a();
 
@@ -817,7 +817,7 @@ public abstract class f5 {
                 public final C0426d createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return C0426d.f30174d;
+                    return C0426d.f30222d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -862,7 +862,7 @@ public abstract class f5 {
         public static final class e extends d {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final e f30175d = new e();
+            public static final e f30223d = new e();
             @NotNull
             public static final Parcelable.Creator<e> CREATOR = new a();
 
@@ -873,7 +873,7 @@ public abstract class f5 {
                 public final e createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return e.f30175d;
+                    return e.f30223d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -918,7 +918,7 @@ public abstract class f5 {
         public static final class f extends d {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final f f30176d = new f();
+            public static final f f30224d = new f();
             @NotNull
             public static final Parcelable.Creator<f> CREATOR = new a();
 
@@ -929,7 +929,7 @@ public abstract class f5 {
                 public final f createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return f.f30176d;
+                    return f.f30224d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -982,67 +982,67 @@ public abstract class f5 {
     public static final class e extends f5 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final v4.h f30177a;
+        private final v4.h f30225a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f30178b;
+        private final String f30226b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f30179c;
+        private final String f30227c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f30180d;
+        private final d f30228d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f30181e;
+        private final String f30229e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final c4.e f30182f;
+        private final c4.e f30230f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final qo.e f30183g;
+        private final qo.e f30231g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final zp.a f30184h;
+        private final zp.a f30232h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Function0 f30185i;
+        private final Function0 f30233i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final String f30186j;
+        private final String f30234j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final Function0 f30187k;
+        private final Function0 f30235k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final String f30188l;
+        private final String f30236l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final String f30189m;
+        private final String f30237m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final Function0 f30190n;
+        private final Function0 f30238n;
 
         /* renamed from: o  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30191o;
+        private final StepStyles.GovernmentIdStepStyle f30239o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final String f30192p;
+        private final String f30240p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final Function0 f30193q;
+        private final Function0 f30241q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final NextStep.GovernmentId.AssetConfig.CapturePage f30194r;
+        private final NextStep.GovernmentId.AssetConfig.CapturePage f30242r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f30195s;
+        private final boolean f30243s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final boolean f30196t;
+        private final boolean f30244t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final StyleElements.Axis f30197u;
+        private final StyleElements.Axis f30245u;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(v4.h imageLoader, String message, String disclaimer, d overlay, String imagePath, c4.e captureSide, qo.e idClass, zp.a navigationState, Function0 acceptImage, String acceptText, Function0 retryImage, String retryText, String confirmCaptureTitle, Function0 close, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, String str, Function0 onErrorDismissed, NextStep.GovernmentId.AssetConfig.CapturePage capturePage, boolean z10, boolean z11, StyleElements.Axis reviewCaptureButtonsAxis) {
@@ -1063,111 +1063,111 @@ public abstract class f5 {
             Intrinsics.checkNotNullParameter(close, "close");
             Intrinsics.checkNotNullParameter(onErrorDismissed, "onErrorDismissed");
             Intrinsics.checkNotNullParameter(reviewCaptureButtonsAxis, "reviewCaptureButtonsAxis");
-            this.f30177a = imageLoader;
-            this.f30178b = message;
-            this.f30179c = disclaimer;
-            this.f30180d = overlay;
-            this.f30181e = imagePath;
-            this.f30182f = captureSide;
-            this.f30183g = idClass;
-            this.f30184h = navigationState;
-            this.f30185i = acceptImage;
-            this.f30186j = acceptText;
-            this.f30187k = retryImage;
-            this.f30188l = retryText;
-            this.f30189m = confirmCaptureTitle;
-            this.f30190n = close;
-            this.f30191o = governmentIdStepStyle;
-            this.f30192p = str;
-            this.f30193q = onErrorDismissed;
-            this.f30194r = capturePage;
-            this.f30195s = z10;
-            this.f30196t = z11;
-            this.f30197u = reviewCaptureButtonsAxis;
+            this.f30225a = imageLoader;
+            this.f30226b = message;
+            this.f30227c = disclaimer;
+            this.f30228d = overlay;
+            this.f30229e = imagePath;
+            this.f30230f = captureSide;
+            this.f30231g = idClass;
+            this.f30232h = navigationState;
+            this.f30233i = acceptImage;
+            this.f30234j = acceptText;
+            this.f30235k = retryImage;
+            this.f30236l = retryText;
+            this.f30237m = confirmCaptureTitle;
+            this.f30238n = close;
+            this.f30239o = governmentIdStepStyle;
+            this.f30240p = str;
+            this.f30241q = onErrorDismissed;
+            this.f30242r = capturePage;
+            this.f30243s = z10;
+            this.f30244t = z11;
+            this.f30245u = reviewCaptureButtonsAxis;
         }
 
         public final Function0 a() {
-            return this.f30185i;
+            return this.f30233i;
         }
 
         public final String b() {
-            return this.f30186j;
+            return this.f30234j;
         }
 
         public final NextStep.GovernmentId.AssetConfig.CapturePage c() {
-            return this.f30194r;
+            return this.f30242r;
         }
 
         public final c4.e d() {
-            return this.f30182f;
+            return this.f30230f;
         }
 
         public final Function0 e() {
-            return this.f30190n;
+            return this.f30238n;
         }
 
         public final String f() {
-            return this.f30189m;
+            return this.f30237m;
         }
 
         public final String g() {
-            return this.f30179c;
+            return this.f30227c;
         }
 
         public final String h() {
-            return this.f30192p;
+            return this.f30240p;
         }
 
         public final qo.e i() {
-            return this.f30183g;
+            return this.f30231g;
         }
 
         public final v4.h j() {
-            return this.f30177a;
+            return this.f30225a;
         }
 
         public final String k() {
-            return this.f30181e;
+            return this.f30229e;
         }
 
         public final String l() {
-            return this.f30178b;
+            return this.f30226b;
         }
 
         public final zp.a m() {
-            return this.f30184h;
+            return this.f30232h;
         }
 
         public final Function0 n() {
-            return this.f30193q;
+            return this.f30241q;
         }
 
         public final d o() {
-            return this.f30180d;
+            return this.f30228d;
         }
 
         public final Function0 p() {
-            return this.f30187k;
+            return this.f30235k;
         }
 
         public final String q() {
-            return this.f30188l;
+            return this.f30236l;
         }
 
         public final StyleElements.Axis r() {
-            return this.f30197u;
+            return this.f30245u;
         }
 
         public final StepStyles.GovernmentIdStepStyle s() {
-            return this.f30191o;
+            return this.f30239o;
         }
 
         public final boolean t() {
-            return this.f30196t;
+            return this.f30244t;
         }
 
         public final boolean u() {
-            return this.f30195s;
+            return this.f30243s;
         }
     }
 
@@ -1175,28 +1175,28 @@ public abstract class f5 {
     public static final class f extends f5 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f30198a;
+        private final String f30246a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f30199b;
+        private final String f30247b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final StepStyles.GovernmentIdStepStyle f30200c;
+        private final StepStyles.GovernmentIdStepStyle f30248c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final NextStep.GovernmentId.AssetConfig.PendingPage f30201d;
+        private final NextStep.GovernmentId.AssetConfig.PendingPage f30249d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final zp.a f30202e;
+        private final zp.a f30250e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final Function0 f30203f;
+        private final Function0 f30251f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final Function0 f30204g;
+        private final Function0 f30252g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final PendingPageTextPosition f30205h;
+        private final PendingPageTextPosition f30253h;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(String title, String description, StepStyles.GovernmentIdStepStyle governmentIdStepStyle, NextStep.GovernmentId.AssetConfig.PendingPage pendingPage, zp.a navigationState, Function0 onBack, Function0 onCancel, PendingPageTextPosition pendingPageTextVerticalPosition) {
@@ -1207,46 +1207,46 @@ public abstract class f5 {
             Intrinsics.checkNotNullParameter(onBack, "onBack");
             Intrinsics.checkNotNullParameter(onCancel, "onCancel");
             Intrinsics.checkNotNullParameter(pendingPageTextVerticalPosition, "pendingPageTextVerticalPosition");
-            this.f30198a = title;
-            this.f30199b = description;
-            this.f30200c = governmentIdStepStyle;
-            this.f30201d = pendingPage;
-            this.f30202e = navigationState;
-            this.f30203f = onBack;
-            this.f30204g = onCancel;
-            this.f30205h = pendingPageTextVerticalPosition;
+            this.f30246a = title;
+            this.f30247b = description;
+            this.f30248c = governmentIdStepStyle;
+            this.f30249d = pendingPage;
+            this.f30250e = navigationState;
+            this.f30251f = onBack;
+            this.f30252g = onCancel;
+            this.f30253h = pendingPageTextVerticalPosition;
         }
 
         public final NextStep.GovernmentId.AssetConfig.PendingPage a() {
-            return this.f30201d;
+            return this.f30249d;
         }
 
         public final String b() {
-            return this.f30199b;
+            return this.f30247b;
         }
 
         public final zp.a c() {
-            return this.f30202e;
+            return this.f30250e;
         }
 
         public final Function0 d() {
-            return this.f30203f;
+            return this.f30251f;
         }
 
         public final Function0 e() {
-            return this.f30204g;
+            return this.f30252g;
         }
 
         public final PendingPageTextPosition f() {
-            return this.f30205h;
+            return this.f30253h;
         }
 
         public final StepStyles.GovernmentIdStepStyle g() {
-            return this.f30200c;
+            return this.f30248c;
         }
 
         public final String h() {
-            return this.f30198a;
+            return this.f30246a;
         }
     }
 

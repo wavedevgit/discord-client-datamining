@@ -9,24 +9,24 @@ import kotlin.jvm.internal.Lambda;
 public interface a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0375a f26574a = C0375a.f26575a;
+    public static final C0375a f26622a = C0375a.f26623a;
 
     /* renamed from: i4.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class C0375a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ C0375a f26575a = new C0375a();
+        static final /* synthetic */ C0375a f26623a = new C0375a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static Function1 f26576b = C0376a.f26577d;
+        private static Function1 f26624b = C0376a.f26625d;
 
         /* renamed from: i4.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static final class C0376a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0376a f26577d = new C0376a();
+            public static final C0376a f26625d = new C0376a();
 
             C0376a() {
                 super(1);
@@ -44,7 +44,7 @@ public interface a {
         }
 
         public final a a() {
-            return (a) f26576b.invoke(d.f26578b);
+            return (a) f26624b.invoke(d.f26626b);
         }
     }
 

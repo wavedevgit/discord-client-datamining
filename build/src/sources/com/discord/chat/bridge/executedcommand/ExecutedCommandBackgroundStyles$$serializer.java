@@ -42,8 +42,8 @@ public /* synthetic */ class ExecutedCommandBackgroundStyles$$serializer impleme
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{a.u(p0Var), a.u(p0Var), a.u(h.f31005a)};
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{a.u(p0Var), a.u(p0Var), a.u(h.f31053a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,9 +58,9 @@ public /* synthetic */ class ExecutedCommandBackgroundStyles$$serializer impleme
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         Integer num3 = null;
         if (b10.p()) {
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             num2 = (Integer) b10.n(serialDescriptor, 1, p0Var, null);
-            bool = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 2, h.f31053a, null);
             i10 = 7;
             num = (Integer) b10.n(serialDescriptor, 0, p0Var, null);
         } else {
@@ -73,15 +73,15 @@ public /* synthetic */ class ExecutedCommandBackgroundStyles$$serializer impleme
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    num3 = (Integer) b10.n(serialDescriptor, 0, p0.f31057a, num3);
+                    num3 = (Integer) b10.n(serialDescriptor, 0, p0.f31105a, num3);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    num4 = (Integer) b10.n(serialDescriptor, 1, p0.f31057a, num4);
+                    num4 = (Integer) b10.n(serialDescriptor, 1, p0.f31105a, num4);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f31005a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f31053a, bool2);
                     i11 |= 4;
                 }
             }

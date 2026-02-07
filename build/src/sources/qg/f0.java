@@ -3,13 +3,13 @@ package qg;
 abstract class f0 extends g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f47030a = new Object[4];
+    Object[] f47078a = new Object[4];
 
     /* renamed from: b  reason: collision with root package name */
-    int f47031b = 0;
+    int f47079b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f47032c;
+    boolean f47080c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(int i10) {

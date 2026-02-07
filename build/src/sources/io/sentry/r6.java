@@ -3,120 +3,120 @@ package io.sentry;
 public final class r6 {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f28684a = false;
+    private boolean f28732a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f28685b = true;
+    private boolean f28733b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f28686c = false;
+    private boolean f28734c = false;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f28687d = true;
+    private boolean f28735d = true;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f28688e = true;
+    private boolean f28736e = true;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f28689f = true;
+    private boolean f28737f = true;
 
     /* renamed from: g  reason: collision with root package name */
-    private CharSequence f28690g = "Report a Bug";
+    private CharSequence f28738g = "Report a Bug";
 
     /* renamed from: h  reason: collision with root package name */
-    private CharSequence f28691h = "Send Bug Report";
+    private CharSequence f28739h = "Send Bug Report";
 
     /* renamed from: i  reason: collision with root package name */
-    private CharSequence f28692i = "Cancel";
+    private CharSequence f28740i = "Cancel";
 
     /* renamed from: j  reason: collision with root package name */
-    private CharSequence f28693j = "Name";
+    private CharSequence f28741j = "Name";
 
     /* renamed from: k  reason: collision with root package name */
-    private CharSequence f28694k = "Your Name";
+    private CharSequence f28742k = "Your Name";
 
     /* renamed from: l  reason: collision with root package name */
-    private CharSequence f28695l = "Email";
+    private CharSequence f28743l = "Email";
 
     /* renamed from: m  reason: collision with root package name */
-    private CharSequence f28696m = "your.email@example.org";
+    private CharSequence f28744m = "your.email@example.org";
 
     /* renamed from: n  reason: collision with root package name */
-    private CharSequence f28697n = " (Required)";
+    private CharSequence f28745n = " (Required)";
 
     /* renamed from: o  reason: collision with root package name */
-    private CharSequence f28698o = "Description";
+    private CharSequence f28746o = "Description";
 
     /* renamed from: p  reason: collision with root package name */
-    private CharSequence f28699p = "What's the bug? What did you expect?";
+    private CharSequence f28747p = "What's the bug? What did you expect?";
 
     /* renamed from: q  reason: collision with root package name */
-    private CharSequence f28700q = "Thank you for your report!";
+    private CharSequence f28748q = "Thank you for your report!";
 
     /* renamed from: r  reason: collision with root package name */
-    private a f28701r;
+    private a f28749r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
     }
 
     public r6(a aVar) {
-        this.f28701r = aVar;
+        this.f28749r = aVar;
     }
 
     public boolean a() {
-        return this.f28686c;
+        return this.f28734c;
     }
 
     public boolean b() {
-        return this.f28684a;
+        return this.f28732a;
     }
 
     public boolean c() {
-        return this.f28689f;
+        return this.f28737f;
     }
 
     public boolean d() {
-        return this.f28687d;
+        return this.f28735d;
     }
 
     public boolean e() {
-        return this.f28685b;
+        return this.f28733b;
     }
 
     public boolean f() {
-        return this.f28688e;
+        return this.f28736e;
     }
 
     public void g(a aVar) {
-        this.f28701r = aVar;
+        this.f28749r = aVar;
     }
 
     public void h(boolean z10) {
-        this.f28686c = z10;
+        this.f28734c = z10;
     }
 
     public void i(boolean z10) {
-        this.f28684a = z10;
+        this.f28732a = z10;
     }
 
     public void j(boolean z10) {
-        this.f28689f = z10;
+        this.f28737f = z10;
     }
 
     public void k(boolean z10) {
-        this.f28687d = z10;
+        this.f28735d = z10;
     }
 
     public void l(boolean z10) {
-        this.f28685b = z10;
+        this.f28733b = z10;
     }
 
     public void m(boolean z10) {
-        this.f28688e = z10;
+        this.f28736e = z10;
     }
 
     public String toString() {
-        return "SentryFeedbackOptions{isNameRequired=" + this.f28684a + ", showName=" + this.f28685b + ", isEmailRequired=" + this.f28686c + ", showEmail=" + this.f28687d + ", useSentryUser=" + this.f28688e + ", showBranding=" + this.f28689f + ", formTitle='" + ((Object) this.f28690g) + "', submitButtonLabel='" + ((Object) this.f28691h) + "', cancelButtonLabel='" + ((Object) this.f28692i) + "', nameLabel='" + ((Object) this.f28693j) + "', namePlaceholder='" + ((Object) this.f28694k) + "', emailLabel='" + ((Object) this.f28695l) + "', emailPlaceholder='" + ((Object) this.f28696m) + "', isRequiredLabel='" + ((Object) this.f28697n) + "', messageLabel='" + ((Object) this.f28698o) + "', messagePlaceholder='" + ((Object) this.f28699p) + "'}";
+        return "SentryFeedbackOptions{isNameRequired=" + this.f28732a + ", showName=" + this.f28733b + ", isEmailRequired=" + this.f28734c + ", showEmail=" + this.f28735d + ", useSentryUser=" + this.f28736e + ", showBranding=" + this.f28737f + ", formTitle='" + ((Object) this.f28738g) + "', submitButtonLabel='" + ((Object) this.f28739h) + "', cancelButtonLabel='" + ((Object) this.f28740i) + "', nameLabel='" + ((Object) this.f28741j) + "', namePlaceholder='" + ((Object) this.f28742k) + "', emailLabel='" + ((Object) this.f28743l) + "', emailPlaceholder='" + ((Object) this.f28744m) + "', isRequiredLabel='" + ((Object) this.f28745n) + "', messageLabel='" + ((Object) this.f28746o) + "', messagePlaceholder='" + ((Object) this.f28747p) + "'}";
     }
 }

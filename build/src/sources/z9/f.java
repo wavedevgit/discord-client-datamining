@@ -21,82 +21,82 @@ public final class f {
     private final int L;
 
     /* renamed from: a  reason: collision with root package name */
-    private final k f55944a;
+    private final k f55992a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55945b;
+    private final String f55993b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55946c;
+    private final String f55994c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f55947d;
+    private final Object f55995d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f55948e;
+    private final Object f55996e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Object f55949f;
+    private final Object f55997f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f55950g;
+    private final long f55998g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final long f55951h;
+    private final long f55999h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final long f55952i;
+    private final long f56000i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final long f55953j;
+    private final long f56001j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final long f55954k;
+    private final long f56002k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final long f55955l;
+    private final long f56003l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Long f55956m;
+    private final Long f56004m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Long f55957n;
+    private final Long f56005n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f55958o;
+    private final boolean f56006o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f55959p;
+    private final int f56007p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f55960q;
+    private final int f56008q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Throwable f55961r;
+    private final Throwable f56009r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final n f55962s;
+    private final n f56010s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final long f55963t;
+    private final long f56011t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final long f55964u;
+    private final long f56012u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final b.a f55965v;
+    private final b.a f56013v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final String f55966w;
+    private final String f56014w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final String f55967x;
+    private final String f56015x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final String[] f55968y;
+    private final String[] f56016y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final String f55969z;
+    private final String f56017z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -112,32 +112,32 @@ public final class f {
         Intrinsics.checkNotNullParameter(infra, "infra");
         Intrinsics.checkNotNullParameter(visibilityState, "visibilityState");
         Intrinsics.checkNotNullParameter(intermediateImageSetTimes, "intermediateImageSetTimes");
-        this.f55944a = infra;
-        this.f55945b = str;
-        this.f55946c = str2;
-        this.f55947d = obj;
-        this.f55948e = obj2;
-        this.f55949f = obj3;
-        this.f55950g = j10;
-        this.f55951h = j11;
-        this.f55952i = j12;
-        this.f55953j = j13;
-        this.f55954k = j14;
-        this.f55955l = j15;
-        this.f55956m = l10;
-        this.f55957n = l11;
-        this.f55958o = z10;
-        this.f55959p = i10;
-        this.f55960q = i11;
-        this.f55961r = th2;
-        this.f55962s = visibilityState;
-        this.f55963t = j16;
-        this.f55964u = j17;
-        this.f55965v = aVar;
-        this.f55966w = str3;
-        this.f55967x = str4;
-        this.f55968y = strArr;
-        this.f55969z = str5;
+        this.f55992a = infra;
+        this.f55993b = str;
+        this.f55994c = str2;
+        this.f55995d = obj;
+        this.f55996e = obj2;
+        this.f55997f = obj3;
+        this.f55998g = j10;
+        this.f55999h = j11;
+        this.f56000i = j12;
+        this.f56001j = j13;
+        this.f56002k = j14;
+        this.f56003l = j15;
+        this.f56004m = l10;
+        this.f56005n = l11;
+        this.f56006o = z10;
+        this.f56007p = i10;
+        this.f56008q = i11;
+        this.f56009r = th2;
+        this.f56010s = visibilityState;
+        this.f56011t = j16;
+        this.f56012u = j17;
+        this.f56013v = aVar;
+        this.f56014w = str3;
+        this.f56015x = str4;
+        this.f56016y = strArr;
+        this.f56017z = str5;
         this.A = str6;
         this.B = str7;
         this.C = str8;

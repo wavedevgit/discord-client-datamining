@@ -7,13 +7,13 @@ import rt.a0;
 public abstract class d implements rt.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f39171a = f0.H0(1645, 1, 28).i();
+    private static final long f39219a = f0.H0(1645, 1, 28).i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f39172b = f0.H0(3000, 1, 27).i();
+    private static final long f39220b = f0.H0(3000, 1, 27).i();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final long f39173c = f0.H0(-2636, 2, 15).i();
+    private static final long f39221c = f0.H0(-2636, 2, 15).i();
 
     private long f(int i10, int i11, h hVar) {
         long p10 = p(q(i10, i11) + ((hVar.getNumber() - 1) * 29));
@@ -79,12 +79,12 @@ public abstract class d implements rt.k {
 
     @Override // rt.k
     public final long a() {
-        return f39172b;
+        return f39220b;
     }
 
     @Override // rt.k
     public long d() {
-        return f39171a;
+        return f39219a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -147,7 +147,7 @@ public abstract class d implements rt.k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final long q(int i10, int i11) {
-        return s((long) Math.floor(f39173c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
+        return s((long) Math.floor(f39221c + (((((i10 - 1) * 60) + i11) - 0.5d) * 365.242189d)));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -187,7 +187,7 @@ public abstract class d implements rt.k {
         if (d10 != 0) {
             i10 = d10;
         }
-        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f39173c) / 365.242189d));
+        long floor = (long) Math.floor((1.5d - (i10 / 12.0d)) + ((j10 - f39221c) / 365.242189d));
         int i11 = 60;
         int b10 = ((int) pt.c.b(floor - 1, 60)) + 1;
         int d11 = pt.c.d(floor, 60);

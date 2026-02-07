@@ -5,7 +5,7 @@ import i8.a;
 public class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static f f26611a;
+    private static f f26659a;
 
     private f() {
     }
@@ -14,10 +14,10 @@ public class f implements a {
         f fVar;
         synchronized (f.class) {
             try {
-                if (f26611a == null) {
-                    f26611a = new f();
+                if (f26659a == null) {
+                    f26659a = new f();
                 }
-                fVar = f26611a;
+                fVar = f26659a;
             } catch (Throwable th2) {
                 throw th2;
             }

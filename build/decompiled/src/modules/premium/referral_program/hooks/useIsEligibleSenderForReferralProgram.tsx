@@ -27,13 +27,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun55451: for (var _fun55451_ip = 0;;) switch (_fun55451_ip) {
+        _fun55896: for (var _fun55896_ip = 0;;) switch (_fun55896_ip) {
             case 0:
                 var6 = arguments[0];
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun55451_ip = 11;
-                    continue _fun55451
+                    _fun55896_ip = 11;
+                    continue _fun55896
                 }
             case 9:
                 var6 = false;
@@ -64,4 +64,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleSenderForReferralProgram = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6666, 6675, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6709, 6718, 566, 2]);

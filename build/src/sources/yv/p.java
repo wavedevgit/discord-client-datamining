@@ -7,7 +7,7 @@ import kotlin.text.StringsKt;
 public final class p implements su.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final p f55654a = new p();
+    public static final p f55702a = new p();
 
     private p() {
     }

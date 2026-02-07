@@ -16,44 +16,44 @@ import rt.a0;
 public final class j extends l {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int f39620r = pt.b.i(pt.b.l(a0.MODIFIED_JULIAN_DATE.n(l.f(100), a0.UNIX)));
+    private static final int f39668r = pt.b.i(pt.b.l(a0.MODIFIED_JULIAN_DATE.n(l.f(100), a0.UNIX)));
     private static final long serialVersionUID = 2456700806862862287L;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient q f39621e;
+    private final transient q f39669e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient List f39622i;
+    private final transient List f39670i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient ConcurrentMap f39623o;
+    private final transient ConcurrentMap f39671o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient List f39624p;
+    private final transient List f39672p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient boolean f39625q;
+    private final transient boolean f39673q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f39626a;
+        static final /* synthetic */ int[] f39674a;
 
         static {
             int[] iArr = new int[i.values().length];
-            f39626a = iArr;
+            f39674a = iArr;
             try {
-                iArr[i.f39615d.ordinal()] = 1;
+                iArr[i.f39663d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f39626a[i.f39616e.ordinal()] = 2;
+                f39674a[i.f39664e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f39626a[i.f39617i.ordinal()] = 3;
+                f39674a[i.f39665i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -92,7 +92,7 @@ public final class j extends l {
 
     private static int o(d dVar, int i10, int i11) {
         i d10 = dVar.d();
-        int i12 = a.f39626a[d10.ordinal()];
+        int i12 = a.f39674a[d10.ordinal()];
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 == 3) {
@@ -112,18 +112,18 @@ public final class j extends l {
     private List q(int i10) {
         List list;
         Integer valueOf = Integer.valueOf(i10);
-        List list2 = (List) this.f39623o.get(valueOf);
+        List list2 = (List) this.f39671o.get(valueOf);
         if (list2 == null) {
             ArrayList arrayList = new ArrayList();
-            int j10 = this.f39621e.j();
-            int size = this.f39622i.size();
+            int j10 = this.f39669e.j();
+            int size = this.f39670i.size();
             for (int i11 = 0; i11 < size; i11++) {
-                d dVar = (d) this.f39622i.get(i11);
-                d dVar2 = (d) this.f39622i.get(((i11 - 1) + size) % size);
+                d dVar = (d) this.f39670i.get(i11);
+                d dVar2 = (d) this.f39670i.get(((i11 - 1) + size) % size);
                 arrayList.add(new q(p(dVar, i10, o(dVar, j10, dVar2.e())), j10 + dVar2.e(), j10 + dVar.e(), dVar.e()));
             }
             list2 = Collections.unmodifiableList(arrayList);
-            if (i10 <= f39620r && this.f39625q && (list = (List) this.f39623o.putIfAbsent(valueOf, list2)) != null) {
+            if (i10 <= f39668r && this.f39673q && (list = (List) this.f39671o.putIfAbsent(valueOf, list2)) != null) {
                 return list;
             }
         }
@@ -177,7 +177,7 @@ public final class j extends l {
     }
 
     private List s(pt.a aVar) {
-        return q(((d) this.f39622i.get(0)).i(aVar));
+        return q(((d) this.f39670i.get(0)).i(aVar));
     }
 
     private static int u(d dVar, long j10) {
@@ -197,16 +197,16 @@ public final class j extends l {
     public q b(pt.f fVar) {
         d dVar;
         q qVar;
-        long g10 = this.f39621e.g();
+        long g10 = this.f39669e.g();
         q qVar2 = null;
         if (fVar.m() <= g10) {
             return null;
         }
-        int j10 = this.f39621e.j();
-        int size = this.f39622i.size();
+        int j10 = this.f39669e.j();
+        int size = this.f39670i.size();
         int i10 = 0;
         int i11 = size - 1;
-        int u10 = u((d) this.f39622i.get(0), fVar.m() + o(dVar, j10, ((d) this.f39622i.get(i11)).e()));
+        int u10 = u((d) this.f39670i.get(0), fVar.m() + o(dVar, j10, ((d) this.f39670i.get(i11)).e()));
         List q10 = q(u10);
         while (true) {
             if (i10 >= size) {
@@ -242,7 +242,7 @@ public final class j extends l {
 
     @Override // net.time4j.tz.m
     public boolean d() {
-        for (d dVar : this.f39622i) {
+        for (d dVar : this.f39670i) {
             if (dVar.e() < 0) {
                 return true;
             }
@@ -252,7 +252,7 @@ public final class j extends l {
 
     @Override // net.time4j.tz.m
     public p e() {
-        return p.t(this.f39621e.k());
+        return p.t(this.f39669e.k());
     }
 
     public boolean equals(Object obj) {
@@ -261,7 +261,7 @@ public final class j extends l {
         }
         if (obj instanceof j) {
             j jVar = (j) obj;
-            if (this.f39621e.equals(jVar.f39621e) && this.f39622i.equals(jVar.f39622i)) {
+            if (this.f39669e.equals(jVar.f39669e) && this.f39670i.equals(jVar.f39670i)) {
                 return true;
             }
         }
@@ -269,12 +269,12 @@ public final class j extends l {
     }
 
     public int hashCode() {
-        return (this.f39621e.hashCode() * 17) + (this.f39622i.hashCode() * 37);
+        return (this.f39669e.hashCode() * 17) + (this.f39670i.hashCode() * 37);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q k(pt.a aVar, long j10) {
-        if (j10 <= this.f39621e.g() + Math.max(this.f39621e.h(), this.f39621e.k())) {
+        if (j10 <= this.f39669e.g() + Math.max(this.f39669e.h(), this.f39669e.k())) {
             return null;
         }
         for (q qVar : s(aVar)) {
@@ -301,19 +301,19 @@ public final class j extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q l() {
-        return this.f39621e;
+        return this.f39669e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List n() {
-        return this.f39622i;
+        return this.f39670i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List t(pt.a aVar, long j10) {
-        long g10 = this.f39621e.g();
-        int k10 = this.f39621e.k();
-        if (j10 <= g10 + Math.max(this.f39621e.h(), k10)) {
+        long g10 = this.f39669e.g();
+        int k10 = this.f39669e.k();
+        if (j10 <= g10 + Math.max(this.f39669e.h(), k10)) {
             return l.h(k10);
         }
         for (q qVar : s(aVar)) {
@@ -344,9 +344,9 @@ public final class j extends l {
         StringBuilder sb2 = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
         sb2.append(j.class.getName());
         sb2.append("[initial=");
-        sb2.append(this.f39621e);
+        sb2.append(this.f39669e);
         sb2.append(",rules=");
-        sb2.append(this.f39622i);
+        sb2.append(this.f39670i);
         sb2.append(']');
         return sb2.toString();
     }
@@ -354,7 +354,7 @@ public final class j extends l {
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(q qVar, List list, boolean z10) {
         q qVar2;
-        this.f39623o = new ConcurrentHashMap();
+        this.f39671o = new ConcurrentHashMap();
         if (!list.isEmpty()) {
             if (list.size() < 128) {
                 list = z10 ? new ArrayList(list) : list;
@@ -369,7 +369,7 @@ public final class j extends l {
                         }
                     }
                 }
-                this.f39625q = "iso8601".equals(str);
+                this.f39673q = "iso8601".equals(str);
                 if (qVar.g() == Long.MIN_VALUE) {
                     if (qVar.f() == 0) {
                         qVar2 = new q(((net.time4j.a0) net.time4j.a0.T().Q()).m(), qVar.j(), qVar.j(), 0);
@@ -382,10 +382,10 @@ public final class j extends l {
                     }
                     qVar2 = qVar;
                 }
-                this.f39621e = qVar2;
+                this.f39669e = qVar2;
                 List unmodifiableList = Collections.unmodifiableList(list);
-                this.f39622i = unmodifiableList;
-                this.f39624p = r(qVar2, unmodifiableList, 0L, l.f(1));
+                this.f39670i = unmodifiableList;
+                this.f39672p = r(qVar2, unmodifiableList, 0L, l.f(1));
                 return;
             }
             throw new IllegalArgumentException("Too many daylight saving rules: " + list);

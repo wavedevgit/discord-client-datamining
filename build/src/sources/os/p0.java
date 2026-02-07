@@ -7,13 +7,13 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public abstract class p0 extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    private long f43518i;
+    private long f43566i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f43519o;
+    private boolean f43567o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ArrayDeque f43520p;
+    private ArrayDeque f43568p;
 
     public static /* synthetic */ void h2(p0 p0Var, boolean z10, int i10, Object obj) {
         if (obj == null) {
@@ -51,25 +51,25 @@ public abstract class p0 extends CoroutineDispatcher {
     }
 
     public final void f2(boolean z10) {
-        long i22 = this.f43518i - i2(z10);
-        this.f43518i = i22;
-        if (i22 <= 0 && this.f43519o) {
+        long i22 = this.f43566i - i2(z10);
+        this.f43566i = i22;
+        if (i22 <= 0 && this.f43567o) {
             shutdown();
         }
     }
 
     public final void j2(kotlinx.coroutines.m mVar) {
-        ArrayDeque arrayDeque = this.f43520p;
+        ArrayDeque arrayDeque = this.f43568p;
         if (arrayDeque == null) {
             arrayDeque = new ArrayDeque();
-            this.f43520p = arrayDeque;
+            this.f43568p = arrayDeque;
         }
         arrayDeque.addLast(mVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public long o2() {
-        ArrayDeque arrayDeque = this.f43520p;
+        ArrayDeque arrayDeque = this.f43568p;
         if (arrayDeque == null || arrayDeque.isEmpty()) {
             return LongCompanionObject.MAX_VALUE;
         }
@@ -77,21 +77,21 @@ public abstract class p0 extends CoroutineDispatcher {
     }
 
     public final void p2(boolean z10) {
-        this.f43518i += i2(z10);
+        this.f43566i += i2(z10);
         if (!z10) {
-            this.f43519o = true;
+            this.f43567o = true;
         }
     }
 
     public final boolean r2() {
-        if (this.f43518i >= i2(true)) {
+        if (this.f43566i >= i2(true)) {
             return true;
         }
         return false;
     }
 
     public final boolean s2() {
-        ArrayDeque arrayDeque = this.f43520p;
+        ArrayDeque arrayDeque = this.f43568p;
         if (arrayDeque != null) {
             return arrayDeque.isEmpty();
         }
@@ -104,7 +104,7 @@ public abstract class p0 extends CoroutineDispatcher {
 
     public final boolean u2() {
         kotlinx.coroutines.m mVar;
-        ArrayDeque arrayDeque = this.f43520p;
+        ArrayDeque arrayDeque = this.f43568p;
         if (arrayDeque == null || (mVar = (kotlinx.coroutines.m) arrayDeque.p()) == null) {
             return false;
         }

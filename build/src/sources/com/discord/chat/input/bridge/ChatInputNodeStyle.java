@@ -30,7 +30,7 @@ public final class ChatInputNodeStyle {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, l.b(o.f48044e, new Function0() { // from class: q6.b
+    private static final Lazy[] $childSerializers = {null, null, null, l.b(o.f48092e, new Function0() { // from class: q6.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -97,7 +97,7 @@ public final class ChatInputNodeStyle {
     public static final /* synthetic */ void write$Self$chat_input_release(ChatInputNodeStyle chatInputNodeStyle, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.A(serialDescriptor, 0) || chatInputNodeStyle.fontSize != null) {
-            compositeEncoder.l(serialDescriptor, 0, p0.f31057a, chatInputNodeStyle.fontSize);
+            compositeEncoder.l(serialDescriptor, 0, p0.f31105a, chatInputNodeStyle.fontSize);
         }
         compositeEncoder.x(serialDescriptor, 1, chatInputNodeStyle.color);
         compositeEncoder.l(serialDescriptor, 2, BackgroundStyle$$serializer.INSTANCE, chatInputNodeStyle.backgroundStyle);

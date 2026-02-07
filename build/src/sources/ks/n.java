@@ -16,10 +16,10 @@ public abstract class n {
     public static final class a extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f35366a;
+        private final Class f35414a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f35367b;
+        private final List f35415b;
 
         /* renamed from: ks.n$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -34,10 +34,10 @@ public abstract class n {
         public a(Class jClass) {
             super(null);
             Intrinsics.checkNotNullParameter(jClass, "jClass");
-            this.f35366a = jClass;
+            this.f35414a = jClass;
             Method[] declaredMethods = jClass.getDeclaredMethods();
             Intrinsics.checkNotNullExpressionValue(declaredMethods, "getDeclaredMethods(...)");
-            this.f35367b = kotlin.collections.i.F0(declaredMethods, new C0470a());
+            this.f35415b = kotlin.collections.i.F0(declaredMethods, new C0470a());
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -49,11 +49,11 @@ public abstract class n {
 
         @Override // ks.n
         public String a() {
-            return CollectionsKt.x0(this.f35367b, "", "<init>(", ")V", 0, null, m.f35362d, 24, null);
+            return CollectionsKt.x0(this.f35415b, "", "<init>(", ")V", 0, null, m.f35410d, 24, null);
         }
 
         public final List d() {
-            return this.f35367b;
+            return this.f35415b;
         }
     }
 
@@ -61,13 +61,13 @@ public abstract class n {
     public static final class b extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Constructor f35368a;
+        private final Constructor f35416a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Constructor constructor) {
             super(null);
             Intrinsics.checkNotNullParameter(constructor, "constructor");
-            this.f35368a = constructor;
+            this.f35416a = constructor;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -78,13 +78,13 @@ public abstract class n {
 
         @Override // ks.n
         public String a() {
-            Class<?>[] parameterTypes = this.f35368a.getParameterTypes();
+            Class<?>[] parameterTypes = this.f35416a.getParameterTypes();
             Intrinsics.checkNotNullExpressionValue(parameterTypes, "getParameterTypes(...)");
-            return kotlin.collections.i.v0(parameterTypes, "", "<init>(", ")V", 0, null, o.f35377d, 24, null);
+            return kotlin.collections.i.v0(parameterTypes, "", "<init>(", ")V", 0, null, o.f35425d, 24, null);
         }
 
         public final Constructor d() {
-            return this.f35368a;
+            return this.f35416a;
         }
     }
 
@@ -92,24 +92,24 @@ public abstract class n {
     public static final class c extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f35369a;
+        private final Method f35417a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(Method method) {
             super(null);
             Intrinsics.checkNotNullParameter(method, "method");
-            this.f35369a = method;
+            this.f35417a = method;
         }
 
         @Override // ks.n
         public String a() {
             String d10;
-            d10 = g3.d(this.f35369a);
+            d10 = g3.d(this.f35417a);
             return d10;
         }
 
         public final Method b() {
-            return this.f35369a;
+            return this.f35417a;
         }
     }
 
@@ -117,26 +117,26 @@ public abstract class n {
     public static final class d extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final JvmMemberSignature.Method f35370a;
+        private final JvmMemberSignature.Method f35418a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f35371b;
+        private final String f35419b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(JvmMemberSignature.Method signature) {
             super(null);
             Intrinsics.checkNotNullParameter(signature, "signature");
-            this.f35370a = signature;
-            this.f35371b = signature.asString();
+            this.f35418a = signature;
+            this.f35419b = signature.asString();
         }
 
         @Override // ks.n
         public String a() {
-            return this.f35371b;
+            return this.f35419b;
         }
 
         public final String b() {
-            return this.f35370a.getDesc();
+            return this.f35418a.getDesc();
         }
     }
 
@@ -144,30 +144,30 @@ public abstract class n {
     public static final class e extends n {
 
         /* renamed from: a  reason: collision with root package name */
-        private final JvmMemberSignature.Method f35372a;
+        private final JvmMemberSignature.Method f35420a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f35373b;
+        private final String f35421b;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(JvmMemberSignature.Method signature) {
             super(null);
             Intrinsics.checkNotNullParameter(signature, "signature");
-            this.f35372a = signature;
-            this.f35373b = signature.asString();
+            this.f35420a = signature;
+            this.f35421b = signature.asString();
         }
 
         @Override // ks.n
         public String a() {
-            return this.f35373b;
+            return this.f35421b;
         }
 
         public final String b() {
-            return this.f35372a.getDesc();
+            return this.f35420a.getDesc();
         }
 
         public final String c() {
-            return this.f35372a.getName();
+            return this.f35420a.getName();
         }
     }
 

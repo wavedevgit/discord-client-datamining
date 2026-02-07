@@ -1,28 +1,32 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function() {
-        var1 = this;
-        var2 = null;
-        var1.input = var2;
-        var0 = 0;
-        var1.next_in = var0;
-        var1.avail_in = var0;
-        var1.total_in = var0;
-        var1.output = var2;
-        var1.next_out = var0;
-        var1.avail_out = var0;
-        var1.total_out = var0;
-        var3 = '';
-        var1.msg = var3;
-        var1.state = var2;
-        var2 = 2;
-        var1.data_type = var2;
-        var1.adler = var0;
-        var0 = undefined;
-        return var0;
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
+    _fun94929: for (var _fun94929_ip = 0;;) switch (_fun94929_ip) {
+        case 0:
+            var1 = {
+                'option': 'alt',
+                'command': 'meta',
+                'return': 'enter',
+                'escape': 'esc'
+            };
+            var2 = 'meta';
+            var4 = /Mac|iPod|iPhone|iPad/;
+            var3 = var4.test;
+            var0 = global;
+            var0 = var0.navigator;
+            var0 = var0.platform;
+            var3 = var3.bind(var4)(var0);
+            var0 = 'ctrl';
+            if (!var3) {
+                _fun94929_ip = 66;
+                continue _fun94929
+            }
+        case 63:
+            var0 = var2;
+        case 66:
+            var1.mod = var0;
+            var0 = module;
+            var0.exports = var1;
+            var0 = undefined;
+            return var0;
+    }
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

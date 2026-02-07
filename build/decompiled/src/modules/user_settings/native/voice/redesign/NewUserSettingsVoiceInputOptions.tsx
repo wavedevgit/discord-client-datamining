@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoiceInputOptions.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun68205: for (var _fun68205_ip = 0;;) switch (_fun68205_ip) {
+        _fun68655: for (var _fun68655_ip = 0;;) switch (_fun68655_ip) {
             case 0:
                 var9 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot5;
                 var11 = var11.PUSH_TO_TALK;
                 if (!(var7 !== var11)) {
-                    _fun68205_ip = 341;
-                    continue _fun68205
+                    _fun68655_ip = 341;
+                    continue _fun68655
                 }
             case 287:
                 var16 = _closure1_slot0;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var11 = var11.cHCEOJ;
                 var11 = var12.bind(var14)(var11);
-                _fun68205_ip = 393;
-                continue _fun68205;
+                _fun68655_ip = 393;
+                continue _fun68655;
             case 341:
                 var20 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -268,8 +268,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.PUSH_TO_TALK;
                 var5 = null;
                 if (!(var7 !== var6)) {
-                    _fun68205_ip = 735;
-                    continue _fun68205
+                    _fun68655_ip = 735;
+                    continue _fun68655
                 }
             case 449:
                 var8 = _closure1_slot8;
@@ -373,4 +373,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.handleInputModePress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3478, 660, 33, 7756, 1234, 8236, 566, 8493, 4901, 3943, 5421, 8497, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3477, 660, 33, 7800, 1234, 8280, 566, 8537, 4900, 3942, 5468, 8541, 2]);

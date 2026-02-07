@@ -7,7 +7,7 @@ import qr.l;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f50807a = l.a(new Function0() { // from class: tq.b
+    private static final Lazy f50855a = l.a(new Function0() { // from class: tq.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             boolean e10;
@@ -34,7 +34,7 @@ public abstract class c {
     }
 
     public static final boolean d() {
-        return ((Boolean) f50807a.getValue()).booleanValue();
+        return ((Boolean) f50855a.getValue()).booleanValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -8,21 +8,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function arg0, arg1, arg2() {
-        _fun59959: for (var _fun59959_ip = 0;;) switch (_fun59959_ip) {
+        _fun60410: for (var _fun60410_ip = 0;;) switch (_fun60410_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var0.premium;
                 if (!var0) {
-                    _fun59959_ip = 27;
-                    continue _fun59959
+                    _fun60410_ip = 27;
+                    continue _fun60410
                 }
             case 15:
                 var2 = var1.premiumImageSource;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun59959_ip = 97;
-                    continue _fun59959
+                    _fun60410_ip = 97;
+                    continue _fun60410
                 }
             case 27:
                 var3 = _closure1_slot0;
@@ -35,25 +35,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg2;
                 var0 = var2.bind(var3)(var0);
                 if (!var0) {
-                    _fun59959_ip = 81;
-                    continue _fun59959
+                    _fun60410_ip = 81;
+                    continue _fun60410
                 }
             case 69:
                 var2 = var1.imageSourceLight;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun59959_ip = 89;
-                    continue _fun59959
+                    _fun60410_ip = 89;
+                    continue _fun60410
                 }
             case 81:
                 var0 = var1.imageSource;
-                _fun59959_ip = 95;
-                continue _fun59959;
+                _fun60410_ip = 95;
+                continue _fun60410;
             case 89:
                 var0 = var1.imageSourceLight;
             case 95:
-                _fun59959_ip = 103;
-                continue _fun59959;
+                _fun60410_ip = 103;
+                continue _fun60410;
             case 97:
                 var0 = var1.premiumImageSource;
             case 103:
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.badgeVariants = var4;
     var2.resolveImageSource = var3;
     var1 = function arg0, arg1() {
-        _fun59960: for (var _fun59960_ip = 0;;) switch (_fun59960_ip) {
+        _fun60411: for (var _fun60411_ip = 0;;) switch (_fun60411_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var3;
                 if (var2) {
-                    _fun59960_ip = 92;
-                    continue _fun59960
+                    _fun60411_ip = 92;
+                    continue _fun60411
                 }
             case 78:
                 var2 = _closure1_slot3;
@@ -196,4 +196,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildBadgeImageSource = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7419, 7424, 7425, 7426, 7427, 7428, 7429, 7430, 7431, 3208, 7418, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7463, 7468, 7469, 7470, 7471, 7472, 7473, 7474, 7475, 3207, 7462, 2]);

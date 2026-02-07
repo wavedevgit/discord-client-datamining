@@ -5,19 +5,19 @@ import ef.a;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final a.g f48895a;
+    private static final a.g f48943a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final i f48896b;
+    private static final i f48944b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ef.a f48897c;
+    private static final ef.a f48945c;
 
     static {
         a.g gVar = new a.g();
-        f48895a = gVar;
+        f48943a = gVar;
         i iVar = new i();
-        f48896b = iVar;
-        f48897c = new ef.a("DevicePerformance.API", iVar, gVar);
+        f48944b = iVar;
+        f48945c = new ef.a("DevicePerformance.API", iVar, gVar);
     }
 }

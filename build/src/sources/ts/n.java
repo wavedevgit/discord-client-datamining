@@ -4,9 +4,9 @@ package ts;
 public final class n extends p {
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f50846o;
+    public final int f50894o;
 
     public n(int i10) {
-        this.f50846o = i10;
+        this.f50894o = i10;
     }
 }

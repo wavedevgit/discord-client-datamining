@@ -16,12 +16,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.assertUInt32 = var0;
     var2.assertFloat32 = var0;
     var3 = function arg0, arg1() {
-        _fun14880: for (var _fun14880_ip = 0;;) switch (_fun14880_ip) {
+        _fun14883: for (var _fun14883_ip = 0;;) switch (_fun14883_ip) {
             case 0:
                 var0 = arg0;
                 if (var0) {
-                    _fun14880_ip = 39;
-                    continue _fun14880
+                    _fun14883_ip = 39;
+                    continue _fun14883
                 }
             case 6:
                 var0 = global;
@@ -44,15 +44,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.assert = var3;
     var3 = function arg0, arg1() {
-        _fun14881: for (var _fun14881_ip = 0;;) switch (_fun14881_ip) {
+        _fun14884: for (var _fun14884_ip = 0;;) switch (_fun14884_ip) {
             case 0:
                 var2 = arg1;
                 var0 = global;
                 var0 = var0.Error;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun14881_ip = 30;
-                    continue _fun14881
+                    _fun14884_ip = 30;
+                    continue _fun14884
                 }
             case 17:
                 var3 = 'Unexpected object: ';
@@ -74,14 +74,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.assertNever = var3;
     var3 = function arg0() {
-        _fun14882: for (var _fun14882_ip = 0;;) switch (_fun14882_ip) {
+        _fun14885: for (var _fun14885_ip = 0;;) switch (_fun14885_ip) {
             case 0:
                 var1 = arg0;
                 var3 = typeof var1;
                 var0 = 'number';
                 if (!(var0 === var3)) {
-                    _fun14882_ip = 98;
-                    continue _fun14882
+                    _fun14885_ip = 98;
+                    continue _fun14885
                 }
             case 14:
                 var0 = global;
@@ -89,20 +89,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.isInteger;
                 var2 = var2.bind(var4)(var1);
                 if (!var2) {
-                    _fun14882_ip = 60;
-                    continue _fun14882
+                    _fun14885_ip = 60;
+                    continue _fun14885
                 }
             case 36:
                 var2 = 2147483647;
                 if (!(!(var1 > var2))) {
-                    _fun14882_ip = 60;
-                    continue _fun14882
+                    _fun14885_ip = 60;
+                    continue _fun14885
                 }
             case 46:
                 var2 = -2147483648;
                 if (!(!(var1 < var2))) {
-                    _fun14882_ip = 60;
-                    continue _fun14882
+                    _fun14885_ip = 60;
+                    continue _fun14885
                 }
             case 56:
                 var2 = undefined;
@@ -140,14 +140,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.assertInt32 = var3;
     var3 = function arg0() {
-        _fun14883: for (var _fun14883_ip = 0;;) switch (_fun14883_ip) {
+        _fun14886: for (var _fun14886_ip = 0;;) switch (_fun14886_ip) {
             case 0:
                 var1 = arg0;
                 var3 = typeof var1;
                 var0 = 'number';
                 if (!(var0 === var3)) {
-                    _fun14883_ip = 98;
-                    continue _fun14883
+                    _fun14886_ip = 98;
+                    continue _fun14886
                 }
             case 14:
                 var0 = global;
@@ -155,20 +155,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.isInteger;
                 var2 = var2.bind(var4)(var1);
                 if (!var2) {
-                    _fun14883_ip = 60;
-                    continue _fun14883
+                    _fun14886_ip = 60;
+                    continue _fun14886
                 }
             case 36:
                 var2 = 4294967295.0;
                 if (!(!(var1 > var2))) {
-                    _fun14883_ip = 60;
-                    continue _fun14883
+                    _fun14886_ip = 60;
+                    continue _fun14886
                 }
             case 50:
                 var2 = 0;
                 if (!(!(var1 < var2))) {
-                    _fun14883_ip = 60;
-                    continue _fun14883
+                    _fun14886_ip = 60;
+                    continue _fun14886
                 }
             case 56:
                 var2 = undefined;
@@ -206,14 +206,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.assertUInt32 = var3;
     var1 = function arg0() {
-        _fun14884: for (var _fun14884_ip = 0;;) switch (_fun14884_ip) {
+        _fun14887: for (var _fun14887_ip = 0;;) switch (_fun14887_ip) {
             case 0:
                 var1 = arg0;
                 var3 = typeof var1;
                 var0 = 'number';
                 if (!(var0 === var3)) {
-                    _fun14884_ip = 106;
-                    continue _fun14884
+                    _fun14887_ip = 106;
+                    continue _fun14887
                 }
             case 14:
                 var0 = global;
@@ -221,20 +221,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.isFinite;
                 var2 = var2.bind(var4)(var1);
                 if (!var2) {
-                    _fun14884_ip = 64;
-                    continue _fun14884
+                    _fun14887_ip = 64;
+                    continue _fun14887
                 }
             case 36:
                 var2 = 3.4028234663852886e+38;
                 if (!(!(var1 > var2))) {
-                    _fun14884_ip = 68;
-                    continue _fun14884
+                    _fun14887_ip = 68;
+                    continue _fun14887
                 }
             case 50:
                 var2 = -3.4028234663852886e+38;
                 if (!(!(var1 < var2))) {
-                    _fun14884_ip = 68;
-                    continue _fun14884
+                    _fun14887_ip = 68;
+                    continue _fun14887
                 }
             case 64:
                 var2 = undefined;

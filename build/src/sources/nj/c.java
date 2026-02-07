@@ -7,14 +7,14 @@ import ui.q;
 public class c implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f40867a;
+    private final String f40915a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f40868b;
+    private final d f40916b;
 
     c(Set set, d dVar) {
-        this.f40867a = d(set);
-        this.f40868b = dVar;
+        this.f40915a = d(set);
+        this.f40916b = dVar;
     }
 
     public static /* synthetic */ i b(ui.d dVar) {
@@ -47,9 +47,9 @@ public class c implements i {
 
     @Override // nj.i
     public String a() {
-        if (this.f40868b.b().isEmpty()) {
-            return this.f40867a;
+        if (this.f40916b.b().isEmpty()) {
+            return this.f40915a;
         }
-        return this.f40867a + ' ' + d(this.f40868b.b());
+        return this.f40915a + ' ' + d(this.f40916b.b());
     }
 }

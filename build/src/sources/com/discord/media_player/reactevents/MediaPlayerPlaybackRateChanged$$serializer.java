@@ -38,7 +38,7 @@ public /* synthetic */ class MediaPlayerPlaybackRateChanged$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{a.u(MediaPlayerPlaybackSource$$serializer.INSTANCE), x.f31095a};
+        return new KSerializer[]{a.u(MediaPlayerPlaybackSource$$serializer.INSTANCE), x.f31143a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

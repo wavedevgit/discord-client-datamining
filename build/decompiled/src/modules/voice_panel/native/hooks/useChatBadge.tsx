@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun111258: for (var _fun111258_ip = 0;;) switch (_fun111258_ip) {
+            _fun111744: for (var _fun111744_ip = 0;;) switch (_fun111744_ip) {
                 case 0:
                     var4 = _closure1_slot2;
                     var3 = var4.getMentionCount;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 > var0;
                     var0 = 'mention';
                     if (var3) {
-                        _fun111258_ip = 69;
-                        continue _fun111258
+                        _fun111744_ip = 69;
+                        continue _fun111744
                     }
                 case 38:
                     var3 = _closure1_slot2;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.bind(var3)(var1);
                     var1 = null;
                     if (!var2) {
-                        _fun111258_ip = 66;
-                        continue _fun111258
+                        _fun111744_ip = 66;
+                        continue _fun111744
                     }
                 case 62:
                     var1 = 'unread';
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3949, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3948, 566, 2]);

@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun72589: for (var _fun72589_ip = 0;;) switch (_fun72589_ip) {
+            _fun73034: for (var _fun73034_ip = 0;;) switch (_fun73034_ip) {
                 case 0:
                     var4 = _closure1_slot2;
                     var3 = var4.getLastNonCurrentUserMessage;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var4)(var0);
                     var3 = null;
                     if (!(var3 == var0)) {
-                        _fun72589_ip = 52;
-                        continue _fun72589
+                        _fun73034_ip = 52;
+                        continue _fun73034
                     }
                 case 33:
                     var3 = _closure1_slot2;
@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useLastChannelMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4252, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4251, 566, 2]);

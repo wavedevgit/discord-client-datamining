@@ -7,45 +7,45 @@ import zs.k0;
 public final class w implements k0, dt.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f56605a;
+    private Integer f56653a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f56606b;
+    private Integer f56654b;
 
     /* renamed from: c  reason: collision with root package name */
-    private g f56607c;
+    private g f56655c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f56608d;
+    private Integer f56656d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f56609e;
+    private Integer f56657e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Integer f56610f;
+    private Integer f56658f;
 
     public w(Integer num, Integer num2, g gVar, Integer num3, Integer num4, Integer num5) {
-        this.f56605a = num;
-        this.f56606b = num2;
-        this.f56607c = gVar;
-        this.f56608d = num3;
-        this.f56609e = num4;
-        this.f56610f = num5;
+        this.f56653a = num;
+        this.f56654b = num2;
+        this.f56655c = gVar;
+        this.f56656d = num3;
+        this.f56657e = num4;
+        this.f56658f = num5;
     }
 
     @Override // zs.k0
     public void C(Integer num) {
-        this.f56605a = num;
+        this.f56653a = num;
     }
 
     @Override // zs.k0
     public void E(g gVar) {
-        this.f56607c = gVar;
+        this.f56655c = gVar;
     }
 
     @Override // zs.k0
     public Integer a() {
-        return this.f56610f;
+        return this.f56658f;
     }
 
     @Override // dt.c
@@ -56,17 +56,17 @@ public final class w implements k0, dt.c {
 
     @Override // zs.k0
     public Integer c() {
-        return this.f56606b;
+        return this.f56654b;
     }
 
     @Override // zs.k0
     public Integer d() {
-        return this.f56609e;
+        return this.f56657e;
     }
 
     @Override // zs.k0
     public Integer e() {
-        return this.f56608d;
+        return this.f56656d;
     }
 
     public boolean equals(Object obj) {
@@ -97,7 +97,7 @@ public final class w implements k0, dt.c {
             }
             g q10 = q();
             if (q10 != null) {
-                if (q10 == g.f56476e) {
+                if (q10 == g.f56524e) {
                     z10 = true;
                 } else {
                     z10 = false;
@@ -119,7 +119,7 @@ public final class w implements k0, dt.c {
                     if (intValue3 == 12) {
                         intValue3 = 0;
                     }
-                    if (q11 != g.f56476e) {
+                    if (q11 != g.f56524e) {
                         i11 = 0;
                     }
                     num = Integer.valueOf(intValue3 + i11);
@@ -147,7 +147,7 @@ public final class w implements k0, dt.c {
 
     @Override // zs.k0
     public Integer h() {
-        return this.f56605a;
+        return this.f56653a;
     }
 
     public int hashCode() {
@@ -201,22 +201,22 @@ public final class w implements k0, dt.c {
 
     @Override // zs.k0
     public void m(Integer num) {
-        this.f56609e = num;
+        this.f56657e = num;
     }
 
     @Override // zs.k0
     public g q() {
-        return this.f56607c;
+        return this.f56655c;
     }
 
     @Override // zs.k0
     public void r(Integer num) {
-        this.f56606b = num;
+        this.f56654b = num;
     }
 
     @Override // zs.k0
     public void s(Integer num) {
-        this.f56610f = num;
+        this.f56658f = num;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x004d, code lost:
@@ -280,7 +280,7 @@ public final class w implements k0, dt.c {
 
     @Override // zs.k0
     public void w(Integer num) {
-        this.f56608d = num;
+        this.f56656d = num;
     }
 
     @Override // zs.k0

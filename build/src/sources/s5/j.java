@@ -3,13 +3,13 @@ package s5;
 public class j implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49724a;
+    private final String f49772a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f49725b;
+    private final a f49773b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f49726c;
+    private final boolean f49774c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -40,9 +40,9 @@ public class j implements c {
     }
 
     public j(String str, a aVar, boolean z10) {
-        this.f49724a = str;
-        this.f49725b = aVar;
-        this.f49726c = z10;
+        this.f49772a = str;
+        this.f49773b = aVar;
+        this.f49774c = z10;
     }
 
     @Override // s5.c
@@ -55,18 +55,18 @@ public class j implements c {
     }
 
     public a b() {
-        return this.f49725b;
+        return this.f49773b;
     }
 
     public String c() {
-        return this.f49724a;
+        return this.f49772a;
     }
 
     public boolean d() {
-        return this.f49726c;
+        return this.f49774c;
     }
 
     public String toString() {
-        return "MergePaths{mode=" + this.f49725b + '}';
+        return "MergePaths{mode=" + this.f49773b + '}';
     }
 }

@@ -96,14 +96,14 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         KSerializer u10 = a.u(n2Var);
         KSerializer u11 = a.u(n2Var);
-        p0 p0Var = p0.f31057a;
+        p0 p0Var = p0.f31105a;
         KSerializer u12 = a.u(p0Var);
         KSerializer u13 = a.u(p0Var);
-        h hVar = h.f31005a;
-        return new KSerializer[]{u10, n2Var, u11, n2Var, n2Var, u12, u13, hVar, a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), hVar, a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(hVar), a.u(g0.f31001a), a.u(n2Var), hVar, a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(hVar), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(b.f35109c), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var)};
+        h hVar = h.f31053a;
+        return new KSerializer[]{u10, n2Var, u11, n2Var, n2Var, u12, u13, hVar, a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), hVar, a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(hVar), a.u(hVar), a.u(hVar), a.u(g0.f31049a), a.u(n2Var), hVar, a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(p0Var), a.u(hVar), a.u(hVar), a.u(n2Var), a.u(hVar), a.u(b.f35157c), a.u(n2Var), a.u(n2Var), a.u(p0Var), a.u(p0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -196,12 +196,12 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         Integer num27 = null;
         if (b10.p()) {
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             String str35 = (String) b10.n(serialDescriptor, 0, n2Var, null);
             String m10 = b10.m(serialDescriptor, 1);
             String m11 = b10.m(serialDescriptor, 3);
             String m12 = b10.m(serialDescriptor, 4);
-            p0 p0Var = p0.f31057a;
+            p0 p0Var = p0.f31105a;
             boolean C = b10.C(serialDescriptor, 7);
             String str36 = (String) b10.n(serialDescriptor, 10, n2Var, null);
             str = m10;
@@ -218,14 +218,14 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
             Integer num32 = (Integer) b10.n(serialDescriptor, 21, p0Var, null);
             String str42 = (String) b10.n(serialDescriptor, 22, n2Var, null);
             String str43 = (String) b10.n(serialDescriptor, 23, n2Var, null);
-            h hVar = h.f31005a;
+            h hVar = h.f31053a;
             Boolean bool14 = (Boolean) b10.n(serialDescriptor, 24, hVar, null);
             String str44 = (String) b10.n(serialDescriptor, 25, n2Var, null);
             Boolean bool15 = (Boolean) b10.n(serialDescriptor, 26, hVar, null);
             Boolean bool16 = (Boolean) b10.n(serialDescriptor, 27, hVar, null);
             Boolean bool17 = (Boolean) b10.n(serialDescriptor, 28, hVar, null);
             Boolean bool18 = (Boolean) b10.n(serialDescriptor, 29, hVar, null);
-            Float f12 = (Float) b10.n(serialDescriptor, 30, g0.f31001a, null);
+            Float f12 = (Float) b10.n(serialDescriptor, 30, g0.f31049a, null);
             boolean C3 = b10.C(serialDescriptor, 32);
             Integer num33 = (Integer) b10.n(serialDescriptor, 33, p0Var, null);
             Integer num34 = (Integer) b10.n(serialDescriptor, 34, p0Var, null);
@@ -235,7 +235,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
             Boolean bool20 = (Boolean) b10.n(serialDescriptor, 38, hVar, null);
             String str45 = (String) b10.n(serialDescriptor, 39, n2Var, null);
             Boolean bool21 = (Boolean) b10.n(serialDescriptor, 40, hVar, null);
-            byte[] bArr2 = (byte[]) b10.n(serialDescriptor, 41, b.f35109c, null);
+            byte[] bArr2 = (byte[]) b10.n(serialDescriptor, 41, b.f35157c, null);
             String str46 = (String) b10.n(serialDescriptor, 43, n2Var, null);
             bArr = bArr2;
             num6 = (Integer) b10.n(serialDescriptor, 45, p0Var, null);
@@ -369,7 +369,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         i12 = i14;
                         num24 = num49;
                         str33 = str65;
-                        Unit unit = Unit.f32008a;
+                        Unit unit = Unit.f32056a;
                         z13 = false;
                         num37 = num14;
                         num38 = num15;
@@ -435,8 +435,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str21 = str53;
-                        Unit unit2 = Unit.f32008a;
-                        str51 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str51);
+                        Unit unit2 = Unit.f32056a;
+                        str51 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str51);
                         i12 = i15 | 1;
                         num37 = num14;
                         num38 = num15;
@@ -501,7 +501,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str = b10.m(serialDescriptor, 1);
                         int i17 = i16 | 2;
-                        Unit unit3 = Unit.f32008a;
+                        Unit unit3 = Unit.f32056a;
                         str21 = str53;
                         num37 = num37;
                         num38 = num38;
@@ -566,8 +566,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         num17 = num42;
                         int i19 = i18 | 4;
-                        Unit unit4 = Unit.f32008a;
-                        str21 = (String) b10.n(serialDescriptor, 2, n2.f31041a, str53);
+                        Unit unit4 = Unit.f32056a;
+                        str21 = (String) b10.n(serialDescriptor, 2, n2.f31089a, str53);
                         i12 = i19;
                         num37 = num37;
                         num38 = num38;
@@ -630,7 +630,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str50 = b10.m(serialDescriptor, 3);
-                        Unit unit5 = Unit.f32008a;
+                        Unit unit5 = Unit.f32056a;
                         num17 = num42;
                         num37 = num37;
                         num38 = num38;
@@ -696,7 +696,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str52 = b10.m(serialDescriptor, 4);
                         int i22 = i21 | 16;
-                        Unit unit6 = Unit.f32008a;
+                        Unit unit6 = Unit.f32056a;
                         num17 = num42;
                         num37 = num37;
                         num38 = num38;
@@ -762,8 +762,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         num18 = num43;
                         int i24 = i23 | 32;
-                        Unit unit7 = Unit.f32008a;
-                        num17 = (Integer) b10.n(serialDescriptor, 5, p0.f31057a, num42);
+                        Unit unit7 = Unit.f32056a;
+                        num17 = (Integer) b10.n(serialDescriptor, 5, p0.f31105a, num42);
                         i12 = i24;
                         num37 = num37;
                         num38 = num50;
@@ -826,8 +826,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         int i25 = i14;
                         num24 = num49;
                         str33 = str65;
-                        Unit unit8 = Unit.f32008a;
-                        num18 = (Integer) b10.n(serialDescriptor, 6, p0.f31057a, num43);
+                        Unit unit8 = Unit.f32056a;
+                        num18 = (Integer) b10.n(serialDescriptor, 6, p0.f31105a, num43);
                         i12 = i25 | 64;
                         num37 = num51;
                         num38 = num38;
@@ -893,7 +893,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         z16 = b10.C(serialDescriptor, 7);
                         int i27 = i26 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit9 = Unit.f32008a;
+                        Unit unit9 = Unit.f32056a;
                         i12 = i27;
                         num37 = num52;
                         num38 = num38;
@@ -959,14 +959,14 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str23 = str55;
                         int i29 = i28 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit10 = Unit.f32008a;
+                        Unit unit10 = Unit.f32056a;
                         i12 = i29;
                         num37 = num53;
                         num27 = num54;
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
-                        str34 = (String) b10.n(serialDescriptor, 8, n2.f31041a, str54);
+                        str34 = (String) b10.n(serialDescriptor, 8, n2.f31089a, str54);
                         num38 = num25;
                         str54 = str34;
                         num39 = num24;
@@ -1022,9 +1022,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str24 = str56;
                         int i31 = i30 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit11 = Unit.f32008a;
+                        Unit unit11 = Unit.f32056a;
                         i12 = i31;
-                        str23 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str55);
+                        str23 = (String) b10.n(serialDescriptor, 9, n2.f31089a, str55);
                         num37 = num55;
                         num38 = num38;
                         num27 = num27;
@@ -1086,9 +1086,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str25 = str57;
                         int i33 = i32 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit12 = Unit.f32008a;
+                        Unit unit12 = Unit.f32056a;
                         i12 = i33;
-                        str24 = (String) b10.n(serialDescriptor, 10, n2.f31041a, str56);
+                        str24 = (String) b10.n(serialDescriptor, 10, n2.f31089a, str56);
                         num37 = num56;
                         num38 = num38;
                         num27 = num57;
@@ -1149,9 +1149,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         num19 = num44;
                         int i35 = i34 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f32008a;
+                        Unit unit13 = Unit.f32056a;
                         i12 = i35;
-                        str25 = (String) b10.n(serialDescriptor, 11, n2.f31041a, str57);
+                        str25 = (String) b10.n(serialDescriptor, 11, n2.f31089a, str57);
                         num37 = num58;
                         num38 = num38;
                         num27 = num27;
@@ -1213,7 +1213,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         boolean C4 = b10.C(serialDescriptor, 12);
                         int i37 = i36 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f32008a;
+                        Unit unit14 = Unit.f32056a;
                         i12 = i37;
                         num19 = num44;
                         num37 = num59;
@@ -1278,9 +1278,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str26 = str58;
-                        Unit unit15 = Unit.f32008a;
+                        Unit unit15 = Unit.f32056a;
                         i12 = i38 | 8192;
-                        num19 = (Integer) b10.n(serialDescriptor, 13, p0.f31057a, num44);
+                        num19 = (Integer) b10.n(serialDescriptor, 13, p0.f31105a, num44);
                         num37 = num60;
                         num38 = num38;
                         num27 = num61;
@@ -1340,9 +1340,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str27 = str59;
-                        Unit unit16 = Unit.f32008a;
+                        Unit unit16 = Unit.f32056a;
                         i12 = i39 | 16384;
-                        str26 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str58);
+                        str26 = (String) b10.n(serialDescriptor, 14, n2.f31089a, str58);
                         num37 = num62;
                         num38 = num38;
                         num27 = num27;
@@ -1404,9 +1404,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str28 = str60;
                         int i41 = i40 | PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
-                        Unit unit17 = Unit.f32008a;
+                        Unit unit17 = Unit.f32056a;
                         i12 = i41;
-                        str27 = (String) b10.n(serialDescriptor, 15, n2.f31041a, str59);
+                        str27 = (String) b10.n(serialDescriptor, 15, n2.f31089a, str59);
                         num37 = num63;
                         num38 = num38;
                         num27 = num64;
@@ -1466,9 +1466,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         num20 = num45;
-                        Unit unit18 = Unit.f32008a;
+                        Unit unit18 = Unit.f32056a;
                         i12 = i42 | 65536;
-                        str28 = (String) b10.n(serialDescriptor, 16, n2.f31041a, str60);
+                        str28 = (String) b10.n(serialDescriptor, 16, n2.f31089a, str60);
                         num37 = num65;
                         num38 = num38;
                         num27 = num27;
@@ -1529,9 +1529,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         num21 = num46;
-                        Unit unit19 = Unit.f32008a;
+                        Unit unit19 = Unit.f32056a;
                         i12 = i43 | 131072;
-                        num20 = (Integer) b10.n(serialDescriptor, 17, p0.f31057a, num45);
+                        num20 = (Integer) b10.n(serialDescriptor, 17, p0.f31105a, num45);
                         num37 = num66;
                         num38 = num38;
                         num27 = num67;
@@ -1591,9 +1591,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str29 = str61;
-                        Unit unit20 = Unit.f32008a;
+                        Unit unit20 = Unit.f32056a;
                         i12 = i44 | 262144;
-                        num21 = (Integer) b10.n(serialDescriptor, 18, p0.f31057a, num46);
+                        num21 = (Integer) b10.n(serialDescriptor, 18, p0.f31105a, num46);
                         num37 = num68;
                         num38 = num38;
                         num27 = num27;
@@ -1654,9 +1654,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         num22 = num47;
-                        Unit unit21 = Unit.f32008a;
+                        Unit unit21 = Unit.f32056a;
                         i12 = i45 | 524288;
-                        str29 = (String) b10.n(serialDescriptor, 19, n2.f31041a, str61);
+                        str29 = (String) b10.n(serialDescriptor, 19, n2.f31089a, str61);
                         num37 = num69;
                         num38 = num38;
                         num27 = num70;
@@ -1716,9 +1716,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         num23 = num48;
-                        Unit unit22 = Unit.f32008a;
+                        Unit unit22 = Unit.f32056a;
                         i12 = i46 | 1048576;
-                        num22 = (Integer) b10.n(serialDescriptor, 20, p0.f31057a, num47);
+                        num22 = (Integer) b10.n(serialDescriptor, 20, p0.f31105a, num47);
                         num37 = num71;
                         num38 = num38;
                         num27 = num27;
@@ -1779,9 +1779,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str30 = str62;
-                        Unit unit23 = Unit.f32008a;
+                        Unit unit23 = Unit.f32056a;
                         i12 = i47 | 2097152;
-                        num23 = (Integer) b10.n(serialDescriptor, 21, p0.f31057a, num48);
+                        num23 = (Integer) b10.n(serialDescriptor, 21, p0.f31105a, num48);
                         num37 = num72;
                         num38 = num38;
                         num27 = num73;
@@ -1841,9 +1841,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         str31 = str63;
-                        Unit unit24 = Unit.f32008a;
+                        Unit unit24 = Unit.f32056a;
                         i12 = i48 | 4194304;
-                        str30 = (String) b10.n(serialDescriptor, 22, n2.f31041a, str62);
+                        str30 = (String) b10.n(serialDescriptor, 22, n2.f31089a, str62);
                         num37 = num74;
                         num38 = num38;
                         num27 = num27;
@@ -1904,9 +1904,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         bool9 = bool25;
-                        Unit unit25 = Unit.f32008a;
+                        Unit unit25 = Unit.f32056a;
                         i12 = i49 | 8388608;
-                        str31 = (String) b10.n(serialDescriptor, 23, n2.f31041a, str63);
+                        str31 = (String) b10.n(serialDescriptor, 23, n2.f31089a, str63);
                         num37 = num75;
                         num38 = num38;
                         num27 = num76;
@@ -1967,9 +1967,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str33 = str65;
                         str32 = str64;
                         int i51 = i50 | PointerEventHelper.X_FLAG_SUPPORTS_HOVER;
-                        Unit unit26 = Unit.f32008a;
+                        Unit unit26 = Unit.f32056a;
                         i12 = i51;
-                        bool9 = (Boolean) b10.n(serialDescriptor, 24, h.f31005a, bool25);
+                        bool9 = (Boolean) b10.n(serialDescriptor, 24, h.f31053a, bool25);
                         num37 = num77;
                         num38 = num38;
                         num27 = num27;
@@ -2030,9 +2030,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         bool10 = bool26;
-                        Unit unit27 = Unit.f32008a;
+                        Unit unit27 = Unit.f32056a;
                         i12 = i52 | 33554432;
-                        str32 = (String) b10.n(serialDescriptor, 25, n2.f31041a, str64);
+                        str32 = (String) b10.n(serialDescriptor, 25, n2.f31089a, str64);
                         num37 = num78;
                         num38 = num38;
                         num27 = num79;
@@ -2092,9 +2092,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         bool11 = bool27;
-                        Unit unit28 = Unit.f32008a;
+                        Unit unit28 = Unit.f32056a;
                         i12 = i53 | 67108864;
-                        bool10 = (Boolean) b10.n(serialDescriptor, 26, h.f31005a, bool26);
+                        bool10 = (Boolean) b10.n(serialDescriptor, 26, h.f31053a, bool26);
                         num37 = num80;
                         num38 = num38;
                         num27 = num27;
@@ -2155,9 +2155,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         bool12 = bool28;
-                        Unit unit29 = Unit.f32008a;
+                        Unit unit29 = Unit.f32056a;
                         i12 = i54 | 134217728;
-                        bool11 = (Boolean) b10.n(serialDescriptor, 27, h.f31005a, bool27);
+                        bool11 = (Boolean) b10.n(serialDescriptor, 27, h.f31053a, bool27);
                         num37 = num81;
                         num38 = num38;
                         num27 = num82;
@@ -2217,9 +2217,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         bool13 = bool29;
-                        Unit unit30 = Unit.f32008a;
+                        Unit unit30 = Unit.f32056a;
                         i12 = i55 | 268435456;
-                        bool12 = (Boolean) b10.n(serialDescriptor, 28, h.f31005a, bool28);
+                        bool12 = (Boolean) b10.n(serialDescriptor, 28, h.f31053a, bool28);
                         num37 = num83;
                         num38 = num38;
                         num27 = num27;
@@ -2280,9 +2280,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         num24 = num49;
                         str33 = str65;
                         f11 = f13;
-                        Unit unit31 = Unit.f32008a;
+                        Unit unit31 = Unit.f32056a;
                         i12 = i56 | 536870912;
-                        bool13 = (Boolean) b10.n(serialDescriptor, 29, h.f31005a, bool29);
+                        bool13 = (Boolean) b10.n(serialDescriptor, 29, h.f31053a, bool29);
                         num37 = num84;
                         num38 = num38;
                         num27 = num85;
@@ -2342,9 +2342,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         int i57 = i14;
                         num24 = num49;
                         str33 = str65;
-                        Unit unit32 = Unit.f32008a;
+                        Unit unit32 = Unit.f32056a;
                         i12 = i57 | 1073741824;
-                        f11 = (Float) b10.n(serialDescriptor, 30, g0.f31001a, f13);
+                        f11 = (Float) b10.n(serialDescriptor, 30, g0.f31049a, f13);
                         num37 = num86;
                         num38 = num38;
                         num27 = num27;
@@ -2404,7 +2404,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         Integer num87 = num37;
                         num25 = num38;
                         num24 = num49;
-                        Unit unit33 = Unit.f32008a;
+                        Unit unit33 = Unit.f32056a;
                         num37 = num87;
                         str21 = str53;
                         num17 = num42;
@@ -2432,7 +2432,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         bool13 = bool29;
                         f11 = f13;
                         i12 = i14 | Integer.MIN_VALUE;
-                        str33 = (String) b10.n(serialDescriptor, 31, n2.f31041a, str65);
+                        str33 = (String) b10.n(serialDescriptor, 31, n2.f31089a, str65);
                         num38 = num25;
                         str54 = str34;
                         num39 = num24;
@@ -2465,7 +2465,7 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case 32:
                         boolean C5 = b10.C(serialDescriptor, 32);
                         i13 |= 1;
-                        Unit unit34 = Unit.f32008a;
+                        Unit unit34 = Unit.f32056a;
                         num24 = num49;
                         num37 = num37;
                         num38 = num38;
@@ -2528,8 +2528,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.AUTO_MODERATION_NOTIFICATION_EMBED /* 33 */:
                         Integer num88 = num38;
                         i13 |= 2;
-                        Unit unit35 = Unit.f32008a;
-                        num24 = (Integer) b10.n(serialDescriptor, 33, p0.f31057a, num49);
+                        Unit unit35 = Unit.f32056a;
+                        num24 = (Integer) b10.n(serialDescriptor, 33, p0.f31105a, num49);
                         num37 = num37;
                         num38 = num88;
                         str21 = str53;
@@ -2588,9 +2588,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         str65 = str33;
                         i14 = i12;
                     case ChatViewRecyclerTypes.CHANNEL_DEADCHAT_PROMPT_ACTIONS /* 34 */:
-                        num38 = (Integer) b10.n(serialDescriptor, 34, p0.f31057a, num38);
+                        num38 = (Integer) b10.n(serialDescriptor, 34, p0.f31105a, num38);
                         i13 |= 4;
-                        Unit unit36 = Unit.f32008a;
+                        Unit unit36 = Unit.f32056a;
                         num37 = num37;
                         str21 = str53;
                         num17 = num42;
@@ -2651,8 +2651,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.INFO_LINK /* 35 */:
                         num26 = num38;
                         i13 |= 8;
-                        Unit unit37 = Unit.f32008a;
-                        num41 = (Integer) b10.n(serialDescriptor, 35, p0.f31057a, num41);
+                        Unit unit37 = Unit.f32056a;
+                        num41 = (Integer) b10.n(serialDescriptor, 35, p0.f31105a, num41);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -2713,8 +2713,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.SAFETY_POLICY_NOTICE /* 36 */:
                         num26 = num38;
                         i13 |= 16;
-                        Unit unit38 = Unit.f32008a;
-                        num40 = (Integer) b10.n(serialDescriptor, 36, p0.f31057a, num40);
+                        Unit unit38 = Unit.f32056a;
+                        num40 = (Integer) b10.n(serialDescriptor, 36, p0.f31105a, num40);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -2775,8 +2775,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.POLL_TEXT_AND_IMAGE /* 37 */:
                         num26 = num38;
                         i13 |= 32;
-                        Unit unit39 = Unit.f32008a;
-                        bool24 = (Boolean) b10.n(serialDescriptor, 37, h.f31005a, bool24);
+                        Unit unit39 = Unit.f32056a;
+                        bool24 = (Boolean) b10.n(serialDescriptor, 37, h.f31053a, bool24);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -2837,8 +2837,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.POLL_IMAGE_ONLY /* 38 */:
                         num26 = num38;
                         i13 |= 64;
-                        Unit unit40 = Unit.f32008a;
-                        bool23 = (Boolean) b10.n(serialDescriptor, 38, h.f31005a, bool23);
+                        Unit unit40 = Unit.f32056a;
+                        bool23 = (Boolean) b10.n(serialDescriptor, 38, h.f31053a, bool23);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -2899,8 +2899,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.SAFETY_SYSTEM_NOTIFICATION /* 39 */:
                         num26 = num38;
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit41 = Unit.f32008a;
-                        str49 = (String) b10.n(serialDescriptor, 39, n2.f31041a, str49);
+                        Unit unit41 = Unit.f32056a;
+                        str49 = (String) b10.n(serialDescriptor, 39, n2.f31089a, str49);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -2961,8 +2961,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case 40:
                         num26 = num38;
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit42 = Unit.f32008a;
-                        bool22 = (Boolean) b10.n(serialDescriptor, 40, h.f31005a, bool22);
+                        Unit unit42 = Unit.f32056a;
+                        bool22 = (Boolean) b10.n(serialDescriptor, 40, h.f31053a, bool22);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -3023,8 +3023,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case 41:
                         num26 = num38;
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit43 = Unit.f32008a;
-                        bArr3 = (byte[]) b10.n(serialDescriptor, 41, b.f35109c, bArr3);
+                        Unit unit43 = Unit.f32056a;
+                        bArr3 = (byte[]) b10.n(serialDescriptor, 41, b.f35157c, bArr3);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -3085,8 +3085,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case 42:
                         num26 = num38;
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit44 = Unit.f32008a;
-                        str48 = (String) b10.n(serialDescriptor, 42, n2.f31041a, str48);
+                        Unit unit44 = Unit.f32056a;
+                        str48 = (String) b10.n(serialDescriptor, 42, n2.f31089a, str48);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -3147,8 +3147,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.FORWARD_HEADER /* 43 */:
                         num26 = num38;
                         i13 |= RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit45 = Unit.f32008a;
-                        str47 = (String) b10.n(serialDescriptor, 43, n2.f31041a, str47);
+                        Unit unit45 = Unit.f32056a;
+                        str47 = (String) b10.n(serialDescriptor, 43, n2.f31089a, str47);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -3208,9 +3208,9 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                         i14 = i12;
                     case ChatViewRecyclerTypes.FORWARD_BREADCRUMB /* 44 */:
                         num26 = num38;
-                        num37 = (Integer) b10.n(serialDescriptor, 44, p0.f31057a, num37);
+                        num37 = (Integer) b10.n(serialDescriptor, 44, p0.f31105a, num37);
                         i13 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit46 = Unit.f32008a;
+                        Unit unit46 = Unit.f32056a;
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;
@@ -3271,8 +3271,8 @@ public /* synthetic */ class Attachment$$serializer implements h0 {
                     case ChatViewRecyclerTypes.REACTION_BURST_REACTION /* 45 */:
                         num26 = num38;
                         i13 |= 8192;
-                        Unit unit47 = Unit.f32008a;
-                        num27 = (Integer) b10.n(serialDescriptor, 45, p0.f31057a, num27);
+                        Unit unit47 = Unit.f32056a;
+                        num27 = (Integer) b10.n(serialDescriptor, 45, p0.f31105a, num27);
                         str21 = str53;
                         num17 = num42;
                         num18 = num43;

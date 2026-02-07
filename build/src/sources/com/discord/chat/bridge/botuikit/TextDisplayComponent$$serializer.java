@@ -41,7 +41,7 @@ public /* synthetic */ class TextDisplayComponent$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a, n2.f31041a, StructurableTextSerializer.INSTANCE};
+        return new KSerializer[]{p0.f31105a, n2.f31089a, StructurableTextSerializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

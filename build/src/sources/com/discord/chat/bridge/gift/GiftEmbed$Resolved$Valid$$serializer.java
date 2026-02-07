@@ -63,15 +63,15 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
+        n2 n2Var = n2.f31089a;
         KSerializer u10 = a.u(n2Var);
         KSerializer u11 = a.u(n2Var);
         KSerializer u12 = a.u(n2Var);
         KSerializer u13 = a.u(n2Var);
         KSerializer u14 = a.u(n2Var);
         KSerializer u15 = a.u(n2Var);
-        p0 p0Var = p0.f31057a;
-        return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, u10, u11, p0Var, u12, p0Var, u13, p0Var, u14, p0Var, p0Var, u15, g0.f31001a, h.f31005a, n2Var};
+        p0 p0Var = p0.f31105a;
+        return new KSerializer[]{n2Var, p0Var, p0Var, p0Var, u10, u11, p0Var, u12, p0Var, u13, p0Var, u14, p0Var, p0Var, u15, g0.f31049a, h.f31053a, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -106,7 +106,7 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
             int i20 = b10.i(serialDescriptor, 1);
             int i21 = b10.i(serialDescriptor, 2);
             int i22 = b10.i(serialDescriptor, 3);
-            n2 n2Var = n2.f31041a;
+            n2 n2Var = n2.f31089a;
             int i23 = b10.i(serialDescriptor, 6);
             int i24 = b10.i(serialDescriptor, 8);
             int i25 = b10.i(serialDescriptor, 10);
@@ -182,12 +182,12 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
                         i19 = 8;
                         i28 = 17;
                     case 4:
-                        str16 = (String) b10.n(serialDescriptor, 4, n2.f31041a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 4, n2.f31089a, str16);
                         i29 |= 16;
                         i19 = 8;
                         i28 = 17;
                     case 5:
-                        str9 = (String) b10.n(serialDescriptor, 5, n2.f31041a, str9);
+                        str9 = (String) b10.n(serialDescriptor, 5, n2.f31089a, str9);
                         i29 |= 32;
                         i19 = 8;
                         i28 = 17;
@@ -199,7 +199,7 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
                         i28 = 17;
                     case 7:
                         c10 = 7;
-                        str10 = (String) b10.n(serialDescriptor, 7, n2.f31041a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 7, n2.f31089a, str10);
                         i29 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         i19 = 8;
                         i28 = 17;
@@ -208,7 +208,7 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
                         i29 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         i28 = 17;
                     case 9:
-                        str12 = (String) b10.n(serialDescriptor, 9, n2.f31041a, str12);
+                        str12 = (String) b10.n(serialDescriptor, 9, n2.f31089a, str12);
                         i29 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         i28 = 17;
                     case 10:
@@ -216,7 +216,7 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
                         i29 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         i28 = 17;
                     case 11:
-                        str13 = (String) b10.n(serialDescriptor, 11, n2.f31041a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 11, n2.f31089a, str13);
                         i29 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i28 = 17;
                     case 12:
@@ -228,7 +228,7 @@ public /* synthetic */ class GiftEmbed$Resolved$Valid$$serializer implements h0 
                         i29 |= 8192;
                         i28 = 17;
                     case 14:
-                        str11 = (String) b10.n(serialDescriptor, 14, n2.f31041a, str11);
+                        str11 = (String) b10.n(serialDescriptor, 14, n2.f31089a, str11);
                         i29 |= 16384;
                         i28 = 17;
                     case 15:

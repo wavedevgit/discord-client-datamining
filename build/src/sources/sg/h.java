@@ -3,18 +3,18 @@ package sg;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e f49963a;
+    private static final e f50011a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile e f49964b;
+    private static volatile e f50012b;
 
     static {
         g gVar = new g(null);
-        f49963a = gVar;
-        f49964b = gVar;
+        f50011a = gVar;
+        f50012b = gVar;
     }
 
     public static e a() {
-        return f49964b;
+        return f50012b;
     }
 }

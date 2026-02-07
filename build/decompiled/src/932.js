@@ -31,15 +31,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3 instanceof Object ? var3 : var4;
     var _closure1_slot3 = var3;
     var1 = function arg0() {
-        _fun9717: for (var _fun9717_ip = 0;;) switch (_fun9717_ip) {
+        _fun9719: for (var _fun9719_ip = 0;;) switch (_fun9719_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot3;
                 var2 = var3.has;
                 var2 = var2.bind(var3)(var0);
                 if (var2) {
-                    _fun9717_ip = 144;
-                    continue _fun9717
+                    _fun9719_ip = 144;
+                    continue _fun9719
                 }
             case 23:
                 var3 = _closure1_slot0;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.validateMcpServerInstance;
                 var2 = var2.bind(var3)(var0);
                 if (var2) {
-                    _fun9717_ip = 61;
-                    continue _fun9717
+                    _fun9719_ip = 61;
+                    continue _fun9719
                 }
             case 59:
                 return var0;
@@ -72,14 +72,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = undefined;
                         var1 = function*(arg0) { // Environment: var0
                             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                                _fun9721: for (var _fun9721_ip = 0;;) switch (_fun9721_ip) {
+                                _fun9723: for (var _fun9723_ip = 0;;) switch (_fun9723_ip) {
                                     case 0:
                                         StartGenerator();
                                         var4 = arg0;
                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                         if (var1) {
-                                            _fun9721_ip = 253;
-                                            continue _fun9721
+                                            _fun9723_ip = 253;
+                                            continue _fun9723
                                         }
                                     case 13:
                                         var5 = undefined;
@@ -91,8 +91,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var7 = var3 > var2;
                                         var1 = 0;
                                         if (!var7) {
-                                            _fun9721_ip = 44;
-                                            continue _fun9721
+                                            _fun9723_ip = 44;
+                                            continue _fun9723
                                         }
                                     case 40:
                                         var1 = var3 - var2;
@@ -110,8 +110,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var7 = var2 < var3;
                                         var1 = var2;
                                         if (!var7) {
-                                            _fun9721_ip = 96;
-                                            continue _fun9721
+                                            _fun9723_ip = 96;
+                                            continue _fun9723
                                         }
                                     case 77:
                                         var9 = var1 - var2;
@@ -119,8 +119,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var8[var9] = var7;
                                         var1 = var1 + 1;
                                         if (var1 < var3) {
-                                            _fun9721_ip = 77;
-                                            continue _fun9721
+                                            _fun9723_ip = 77;
+                                            continue _fun9723
                                         }
                                     case 96:
                                         var6 = _closure3_slot0;
@@ -139,8 +139,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     case 147:
                                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                         if (var2) {
-                                            _fun9721_ip = 250;
-                                            continue _fun9721
+                                            _fun9723_ip = 250;
+                                            continue _fun9723
                                         }
                                     case 153:
                                         var3 = _closure1_slot0;

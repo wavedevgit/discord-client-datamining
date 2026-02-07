@@ -5,16 +5,16 @@ import yi.c;
 final class o5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o5 f42343a = new o5();
+    static final o5 f42391a = new o5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42344b;
+    private static final yi.c f42392b;
 
     static {
         c.b a10 = yi.c.a("confidence");
         f fVar = new f();
         fVar.a(1);
-        f42344b = a10.b(fVar.b()).a();
+        f42392b = a10.b(fVar.b()).a();
     }
 
     private o5() {

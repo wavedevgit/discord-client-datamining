@@ -24,13 +24,13 @@ import ss.l;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f36853a;
+    private final List f36901a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f36854d = new a();
+        public static final a f36902d = new a();
 
         a() {
             super(1);
@@ -50,24 +50,24 @@ public final class e {
     public static final class b implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow[] f36855d;
+        final /* synthetic */ Flow[] f36903d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         static final class a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Flow[] f36856d;
+            final /* synthetic */ Flow[] f36904d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(Flow[] flowArr) {
                 super(0);
-                this.f36856d = flowArr;
+                this.f36904d = flowArr;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final Object[] invoke() {
-                return new m4.b[this.f36856d.length];
+                return new m4.b[this.f36904d.length];
             }
         }
 
@@ -76,13 +76,13 @@ public final class e {
         public static final class C0498b extends k implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f36857d;
+            int f36905d;
 
             /* renamed from: e  reason: collision with root package name */
-            private /* synthetic */ Object f36858e;
+            private /* synthetic */ Object f36906e;
 
             /* renamed from: i  reason: collision with root package name */
-            /* synthetic */ Object f36859i;
+            /* synthetic */ Object f36907i;
 
             public C0498b(Continuation continuation) {
                 super(3, continuation);
@@ -92,7 +92,7 @@ public final class e {
             public final Object invokeSuspend(Object obj) {
                 m4.b bVar;
                 Object f10 = wr.b.f();
-                int i10 = this.f36857d;
+                int i10 = this.f36905d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -101,14 +101,14 @@ public final class e {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    FlowCollector flowCollector = (FlowCollector) this.f36858e;
-                    m4.b[] bVarArr = (m4.b[]) ((Object[]) this.f36859i);
+                    FlowCollector flowCollector = (FlowCollector) this.f36906e;
+                    m4.b[] bVarArr = (m4.b[]) ((Object[]) this.f36907i);
                     int length = bVarArr.length;
                     int i11 = 0;
                     while (true) {
                         if (i11 < length) {
                             bVar = bVarArr[i11];
-                            if (!Intrinsics.areEqual(bVar, b.a.f36847a)) {
+                            if (!Intrinsics.areEqual(bVar, b.a.f36895a)) {
                                 break;
                             }
                             i11++;
@@ -118,50 +118,50 @@ public final class e {
                         }
                     }
                     if (bVar == null) {
-                        bVar = b.a.f36847a;
+                        bVar = b.a.f36895a;
                     }
-                    this.f36857d = 1;
+                    this.f36905d = 1;
                     if (flowCollector.emit(bVar, this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f32008a;
+                return Unit.f32056a;
             }
 
             @Override // kotlin.jvm.functions.Function3
             /* renamed from: j */
             public final Object invoke(FlowCollector flowCollector, Object[] objArr, Continuation continuation) {
                 C0498b c0498b = new C0498b(continuation);
-                c0498b.f36858e = flowCollector;
-                c0498b.f36859i = objArr;
-                return c0498b.invokeSuspend(Unit.f32008a);
+                c0498b.f36906e = flowCollector;
+                c0498b.f36907i = objArr;
+                return c0498b.invokeSuspend(Unit.f32056a);
             }
         }
 
         public b(Flow[] flowArr) {
-            this.f36855d = flowArr;
+            this.f36903d = flowArr;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Flow[] flowArr = this.f36855d;
+            Flow[] flowArr = this.f36903d;
             Object a10 = l.a(flowCollector, flowArr, new a(flowArr), new C0498b(null), continuation);
             if (a10 == wr.b.f()) {
                 return a10;
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
     }
 
     public e(List controllers) {
         Intrinsics.checkNotNullParameter(controllers, "controllers");
-        this.f36853a = controllers;
+        this.f36901a = controllers;
     }
 
     public final boolean a(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
         ArrayList arrayList = new ArrayList();
-        for (Object obj : this.f36853a) {
+        for (Object obj : this.f36901a) {
             if (((n4.c) obj).e(workSpec)) {
                 arrayList.add(obj);
             }
@@ -169,7 +169,7 @@ public final class e {
         if (!arrayList.isEmpty()) {
             m e10 = m.e();
             String a10 = f.a();
-            e10.a(a10, "Work " + workSpec.f43685a + " constrained by " + CollectionsKt.x0(arrayList, null, null, null, 0, null, a.f36854d, 31, null));
+            e10.a(a10, "Work " + workSpec.f43733a + " constrained by " + CollectionsKt.x0(arrayList, null, null, null, 0, null, a.f36902d, 31, null));
         }
         return arrayList.isEmpty();
     }
@@ -177,7 +177,7 @@ public final class e {
     public final Flow b(u spec) {
         Intrinsics.checkNotNullParameter(spec, "spec");
         ArrayList<n4.c> arrayList = new ArrayList();
-        for (Object obj : this.f36853a) {
+        for (Object obj : this.f36901a) {
             if (((n4.c) obj).c(spec)) {
                 arrayList.add(obj);
             }

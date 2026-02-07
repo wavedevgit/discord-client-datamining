@@ -10,19 +10,19 @@ import java.io.UnsupportedEncodingException;
 public final class CodedOutputStream {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f33921a;
+    private final byte[] f33969a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f33922b;
+    private final int f33970b;
 
     /* renamed from: e  reason: collision with root package name */
-    private final OutputStream f33925e;
+    private final OutputStream f33973e;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f33924d = 0;
+    private int f33972d = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f33923c = 0;
+    private int f33971c = 0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class OutOfSpaceException extends IOException {
@@ -32,9 +32,9 @@ public final class CodedOutputStream {
     }
 
     private CodedOutputStream(OutputStream outputStream, byte[] bArr) {
-        this.f33925e = outputStream;
-        this.f33921a = bArr;
-        this.f33922b = bArr.length;
+        this.f33973e = outputStream;
+        this.f33969a = bArr;
+        this.f33970b = bArr.length;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -43,10 +43,10 @@ public final class CodedOutputStream {
     }
 
     private void b() {
-        OutputStream outputStream = this.f33925e;
+        OutputStream outputStream = this.f33973e;
         if (outputStream != null) {
-            outputStream.write(this.f33921a, 0, this.f33923c);
-            this.f33923c = 0;
+            outputStream.write(this.f33969a, 0, this.f33971c);
+            this.f33971c = 0;
             return;
         }
         throw new OutOfSpaceException();
@@ -232,7 +232,7 @@ public final class CodedOutputStream {
     }
 
     public void flush() {
-        if (this.f33925e != null) {
+        if (this.f33973e != null) {
             b();
         }
     }
@@ -341,14 +341,14 @@ public final class CodedOutputStream {
     }
 
     public void writeRawByte(byte b10) {
-        if (this.f33923c == this.f33922b) {
+        if (this.f33971c == this.f33970b) {
             b();
         }
-        byte[] bArr = this.f33921a;
-        int i10 = this.f33923c;
-        this.f33923c = i10 + 1;
+        byte[] bArr = this.f33969a;
+        int i10 = this.f33971c;
+        this.f33971c = i10 + 1;
         bArr[i10] = b10;
-        this.f33924d++;
+        this.f33972d++;
     }
 
     public void writeRawBytes(ByteString byteString) {
@@ -438,28 +438,28 @@ public final class CodedOutputStream {
     }
 
     public void writeRawBytes(byte[] bArr, int i10, int i11) {
-        int i12 = this.f33922b;
-        int i13 = this.f33923c;
+        int i12 = this.f33970b;
+        int i13 = this.f33971c;
         if (i12 - i13 >= i11) {
-            System.arraycopy(bArr, i10, this.f33921a, i13, i11);
-            this.f33923c += i11;
-            this.f33924d += i11;
+            System.arraycopy(bArr, i10, this.f33969a, i13, i11);
+            this.f33971c += i11;
+            this.f33972d += i11;
             return;
         }
         int i14 = i12 - i13;
-        System.arraycopy(bArr, i10, this.f33921a, i13, i14);
+        System.arraycopy(bArr, i10, this.f33969a, i13, i14);
         int i15 = i10 + i14;
         int i16 = i11 - i14;
-        this.f33923c = this.f33922b;
-        this.f33924d += i14;
+        this.f33971c = this.f33970b;
+        this.f33972d += i14;
         b();
-        if (i16 <= this.f33922b) {
-            System.arraycopy(bArr, i15, this.f33921a, 0, i16);
-            this.f33923c = i16;
+        if (i16 <= this.f33970b) {
+            System.arraycopy(bArr, i15, this.f33969a, 0, i16);
+            this.f33971c = i16;
         } else {
-            this.f33925e.write(bArr, i15, i16);
+            this.f33973e.write(bArr, i15, i16);
         }
-        this.f33924d += i16;
+        this.f33972d += i16;
     }
 
     public void writeRawByte(int i10) {
@@ -467,27 +467,27 @@ public final class CodedOutputStream {
     }
 
     public void writeRawBytes(ByteString byteString, int i10, int i11) {
-        int i12 = this.f33922b;
-        int i13 = this.f33923c;
+        int i12 = this.f33970b;
+        int i13 = this.f33971c;
         if (i12 - i13 >= i11) {
-            byteString.copyTo(this.f33921a, i10, i13, i11);
-            this.f33923c += i11;
-            this.f33924d += i11;
+            byteString.copyTo(this.f33969a, i10, i13, i11);
+            this.f33971c += i11;
+            this.f33972d += i11;
             return;
         }
         int i14 = i12 - i13;
-        byteString.copyTo(this.f33921a, i10, i13, i14);
+        byteString.copyTo(this.f33969a, i10, i13, i14);
         int i15 = i10 + i14;
         int i16 = i11 - i14;
-        this.f33923c = this.f33922b;
-        this.f33924d += i14;
+        this.f33971c = this.f33970b;
+        this.f33972d += i14;
         b();
-        if (i16 <= this.f33922b) {
-            byteString.copyTo(this.f33921a, i15, 0, i16);
-            this.f33923c = i16;
+        if (i16 <= this.f33970b) {
+            byteString.copyTo(this.f33969a, i15, 0, i16);
+            this.f33971c = i16;
         } else {
-            byteString.i(this.f33925e, i15, i16);
+            byteString.i(this.f33973e, i15, i16);
         }
-        this.f33924d += i16;
+        this.f33972d += i16;
     }
 }

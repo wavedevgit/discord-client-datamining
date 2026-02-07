@@ -7,7 +7,7 @@ import kotlin.collections.CollectionsKt;
 public final class c implements su.b, bv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f55631a = new c();
+    public static final c f55679a = new c();
 
     private c() {
     }

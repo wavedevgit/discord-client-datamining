@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun57037: for (var _fun57037_ip = 0;;) switch (_fun57037_ip) {
+            _fun57488: for (var _fun57488_ip = 0;;) switch (_fun57488_ip) {
                 case 0:
                     var5 = _closure2_slot0;
                     var6 = _closure1_slot0;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.DisplayNameEffect;
                     var2 = var2.GRADIENT;
                     if (!(var2 !== var5)) {
-                        _fun57037_ip = 268;
-                        continue _fun57037
+                        _fun57488_ip = 268;
+                        continue _fun57488
                     }
                 case 51:
                     var6 = _closure1_slot0;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.DisplayNameEffect;
                     var2 = var2.GLOW;
                     if (!(var2 !== var5)) {
-                        _fun57037_ip = 268;
-                        continue _fun57037
+                        _fun57488_ip = 268;
+                        continue _fun57488
                     }
                 case 87:
                     var6 = _closure1_slot0;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.DisplayNameEffect;
                     var2 = var2.TOON;
                     if (!(var2 !== var5)) {
-                        _fun57037_ip = 256;
-                        continue _fun57037
+                        _fun57488_ip = 256;
+                        continue _fun57488
                     }
                 case 123:
                     var6 = _closure1_slot0;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.DisplayNameEffect;
                     var2 = var2.NEON;
                     if (!(var2 !== var5)) {
-                        _fun57037_ip = 244;
-                        continue _fun57037
+                        _fun57488_ip = 244;
+                        continue _fun57488
                     }
                 case 156:
                     var6 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.DisplayNameEffect;
                     var2 = var2.POP;
                     if (!(var2 !== var5)) {
-                        _fun57037_ip = 232;
-                        continue _fun57037
+                        _fun57488_ip = 232;
+                        continue _fun57488
                     }
                 case 189:
                     var2 = _closure1_slot0;

@@ -177,7 +177,7 @@ public final class NativeArrayExtensionsKt {
         for (int i10 = 0; i10 < size; i10++) {
             switch (WhenMappings.$EnumSwitchMapping$0[readableArray.getType(i10).ordinal()]) {
                 case 1:
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                     break;
                 case 2:
                     jSONArray.put(readableArray.getBoolean(i10));

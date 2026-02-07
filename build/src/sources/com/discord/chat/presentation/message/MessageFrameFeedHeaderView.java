@@ -53,7 +53,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {null, null, qr.l.b(qr.o.f48044e, new Function0() { // from class: com.discord.chat.presentation.message.r0
+        private static final Lazy[] $childSerializers = {null, null, qr.l.b(qr.o.f48092e, new Function0() { // from class: com.discord.chat.presentation.message.r0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
@@ -84,7 +84,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-            return new jt.f(n2.f31041a);
+            return new jt.f(n2.f31089a);
         }
 
         /* JADX WARN: Multi-variable type inference failed */
@@ -107,16 +107,16 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
         public static final /* synthetic */ void write$Self$chat_release(MessageBundleHeader messageBundleHeader, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             Lazy[] lazyArr = $childSerializers;
             if (compositeEncoder.A(serialDescriptor, 0) || messageBundleHeader.channelIconURL != null) {
-                compositeEncoder.l(serialDescriptor, 0, n2.f31041a, messageBundleHeader.channelIconURL);
+                compositeEncoder.l(serialDescriptor, 0, n2.f31089a, messageBundleHeader.channelIconURL);
             }
             if (compositeEncoder.A(serialDescriptor, 1) || messageBundleHeader.chatIconURL != null) {
-                compositeEncoder.l(serialDescriptor, 1, n2.f31041a, messageBundleHeader.chatIconURL);
+                compositeEncoder.l(serialDescriptor, 1, n2.f31089a, messageBundleHeader.chatIconURL);
             }
             if (compositeEncoder.A(serialDescriptor, 2) || messageBundleHeader.avatarURLs != null) {
                 compositeEncoder.l(serialDescriptor, 2, (ft.o) lazyArr[2].getValue(), messageBundleHeader.avatarURLs);
             }
             if (compositeEncoder.A(serialDescriptor, 3) || messageBundleHeader.channelName != null) {
-                compositeEncoder.l(serialDescriptor, 3, n2.f31041a, messageBundleHeader.channelName);
+                compositeEncoder.l(serialDescriptor, 3, n2.f31089a, messageBundleHeader.channelName);
             }
         }
 

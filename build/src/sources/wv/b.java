@@ -9,21 +9,21 @@ import vv.h;
 final class b implements h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final MediaType f54134b = MediaType.e("application/json; charset=UTF-8");
+    private static final MediaType f54182b = MediaType.e("application/json; charset=UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f54135a;
+    private final com.squareup.moshi.h f54183a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(com.squareup.moshi.h hVar) {
-        this.f54135a = hVar;
+        this.f54183a = hVar;
     }
 
     @Override // vv.h
     /* renamed from: b */
     public RequestBody a(Object obj) {
         Buffer buffer = new Buffer();
-        this.f54135a.toJson(t.Y(buffer), obj);
-        return RequestBody.create(f54134b, buffer.K1());
+        this.f54183a.toJson(t.Y(buffer), obj);
+        return RequestBody.create(f54182b, buffer.K1());
     }
 }

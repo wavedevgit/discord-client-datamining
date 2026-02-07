@@ -6,13 +6,13 @@ import kotlinx.coroutines.CoroutineScope;
 public final class v0 implements CoroutineScope {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final v0 f43538d = new v0();
+    public static final v0 f43586d = new v0();
 
     private v0() {
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return kotlin.coroutines.e.f32082d;
+        return kotlin.coroutines.e.f32130d;
     }
 }

@@ -5,23 +5,23 @@ import yi.c;
 final class x5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x5 f42687a = new x5();
+    static final x5 f42735a = new x5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42688b;
+    private static final yi.c f42736b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42689c;
+    private static final yi.c f42737c;
 
     static {
         c.b a10 = yi.c.a("stageId");
         f fVar = new f();
         fVar.a(1);
-        f42688b = a10.b(fVar.b()).a();
+        f42736b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("device");
         f fVar2 = new f();
         fVar2.a(2);
-        f42689c = a11.b(fVar2.b()).a();
+        f42737c = a11.b(fVar2.b()).a();
     }
 
     private x5() {

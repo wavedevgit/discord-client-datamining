@@ -51,7 +51,7 @@ public /* synthetic */ class UserSearchQuerySetPayload$$serializer implements h0
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = UserSearchQuerySetPayload.$childSerializers;
-        return new KSerializer[]{n2.f31041a, gt.a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), gt.a.u((KSerializer) lazyArr[2].getValue()), gt.a.u((KSerializer) lazyArr[3].getValue()), lazyArr[4].getValue(), x.f31095a, p0.f31057a};
+        return new KSerializer[]{n2.f31089a, gt.a.u(UserSearchQuerySetFilters$$serializer.INSTANCE), gt.a.u((KSerializer) lazyArr[2].getValue()), gt.a.u((KSerializer) lazyArr[3].getValue()), lazyArr[4].getValue(), x.f31143a, p0.f31105a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

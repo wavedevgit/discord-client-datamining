@@ -3,7 +3,7 @@ package nv;
 public class g extends sv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qv.e f41193a = new qv.e();
+    private final qv.e f41241a = new qv.e();
 
     @Override // sv.a, sv.d
     public boolean a() {
@@ -23,7 +23,7 @@ public class g extends sv.a {
     @Override // sv.d
     /* renamed from: i */
     public qv.e e() {
-        return this.f41193a;
+        return this.f41241a;
     }
 
     @Override // sv.a, sv.d

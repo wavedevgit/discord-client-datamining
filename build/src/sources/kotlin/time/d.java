@@ -6,19 +6,19 @@ class d extends c {
     public static final ms.b d(char c10, boolean z10) {
         if (!z10) {
             if (c10 == 'D') {
-                return ms.b.f38287s;
+                return ms.b.f38335s;
             }
             throw new IllegalArgumentException("Invalid or unsupported duration ISO non-time unit: " + c10);
         } else if (c10 != 'H') {
             if (c10 != 'M') {
                 if (c10 == 'S') {
-                    return ms.b.f38284p;
+                    return ms.b.f38332p;
                 }
                 throw new IllegalArgumentException("Invalid duration ISO time unit: " + c10);
             }
-            return ms.b.f38285q;
+            return ms.b.f38333q;
         } else {
-            return ms.b.f38286r;
+            return ms.b.f38334r;
         }
     }
 
@@ -32,25 +32,25 @@ class d extends c {
                         if (hashCode != 3494) {
                             if (hashCode != 3525) {
                                 if (hashCode == 3742 && shortName.equals("us")) {
-                                    return ms.b.f38282i;
+                                    return ms.b.f38330i;
                                 }
                             } else if (shortName.equals("ns")) {
-                                return ms.b.f38281e;
+                                return ms.b.f38329e;
                             }
                         } else if (shortName.equals("ms")) {
-                            return ms.b.f38283o;
+                            return ms.b.f38331o;
                         }
                     } else if (shortName.equals("s")) {
-                        return ms.b.f38284p;
+                        return ms.b.f38332p;
                     }
                 } else if (shortName.equals("m")) {
-                    return ms.b.f38285q;
+                    return ms.b.f38333q;
                 }
             } else if (shortName.equals("h")) {
-                return ms.b.f38286r;
+                return ms.b.f38334r;
             }
         } else if (shortName.equals("d")) {
-            return ms.b.f38287s;
+            return ms.b.f38335s;
         }
         throw new IllegalArgumentException("Unknown duration unit short name: " + shortName);
     }

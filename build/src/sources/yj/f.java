@@ -5,22 +5,22 @@ import ng.zk;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f55388a;
+    private final h f55436a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tj.d f55389b;
+    private final tj.d f55437b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tj.i f55390c;
+    private final tj.i f55438c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(h hVar, tj.d dVar, tj.i iVar) {
-        this.f55388a = hVar;
-        this.f55389b = dVar;
-        this.f55390c = iVar;
+        this.f55436a = hVar;
+        this.f55437b = dVar;
+        this.f55438c = iVar;
     }
 
     public final g a(vj.b bVar) {
-        return new g(bVar, (k) this.f55388a.b(bVar), this.f55389b.a(bVar.c()), zk.b(b.d()), this.f55390c);
+        return new g(bVar, (k) this.f55436a.b(bVar), this.f55437b.a(bVar.c()), zk.b(b.d()), this.f55438c);
     }
 }

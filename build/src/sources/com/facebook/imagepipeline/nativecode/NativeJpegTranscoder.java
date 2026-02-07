@@ -145,7 +145,7 @@ public class NativeJpegTranscoder implements za.c {
                 f10 = a10;
             }
             InputStream C = kVar.C();
-            if (za.e.f56014b.contains(Integer.valueOf(kVar.a1()))) {
+            if (za.e.f56062b.contains(Integer.valueOf(kVar.a1()))) {
                 f((InputStream) j.h(C, "Cannot transcode from null input stream!"), outputStream, za.e.d(rotationOptions, kVar), f10, num.intValue());
             } else {
                 e((InputStream) j.h(C, "Cannot transcode from null input stream!"), outputStream, za.e.e(rotationOptions, kVar), f10, num.intValue());

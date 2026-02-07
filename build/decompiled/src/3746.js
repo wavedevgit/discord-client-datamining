@@ -17,7 +17,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.bind(var0)(var3);
     var4 = var1.TurboModuleRegistry;
     var3 = var4.get;
-    var1 = 'ReanimatedModule';
+    var1 = 'WorkletsModule';
     var1 = var3.bind(var4)(var1);
     var2.default = var1;
     return var0;

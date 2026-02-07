@@ -12,10 +12,10 @@ public final class d implements sp.f {
     public static final Parcelable.Creator<d> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f47911d;
+    private final String f47959d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f47912e;
+    private final List f47960e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -42,16 +42,16 @@ public final class d implements sp.f {
     public d(String stepName, List ids) {
         Intrinsics.checkNotNullParameter(stepName, "stepName");
         Intrinsics.checkNotNullParameter(ids, "ids");
-        this.f47911d = stepName;
-        this.f47912e = ids;
+        this.f47959d = stepName;
+        this.f47960e = ids;
     }
 
     public final List a() {
-        return this.f47912e;
+        return this.f47960e;
     }
 
     public String b() {
-        return this.f47911d;
+        return this.f47959d;
     }
 
     @Override // android.os.Parcelable
@@ -62,8 +62,8 @@ public final class d implements sp.f {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f47911d);
-        List<Parcelable> list = this.f47912e;
+        dest.writeString(this.f47959d);
+        List<Parcelable> list = this.f47960e;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);

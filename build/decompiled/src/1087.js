@@ -34,7 +34,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.baggageHeaderHasSentryValues = var2;
     var2 = function arg0() {
-        _fun11959: for (var _fun11959_ip = 0;;) switch (_fun11959_ip) {
+        _fun11961: for (var _fun11961_ip = 0;;) switch (_fun11961_ip) {
             case 0:
                 var0 = arg0;
             case 3: // try_start_0
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.createHeadersSafely = var2;
     var2 = function arg0() {
-        _fun11960: for (var _fun11960_ip = 0;;) switch (_fun11960_ip) {
+        _fun11962: for (var _fun11962_ip = 0;;) switch (_fun11962_ip) {
             case 0:
                 var0 = arg0;
             case 3: // try_start_0
@@ -97,23 +97,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getFullURL = var2;
     var0 = function arg0() {
-        _fun11961: for (var _fun11961_ip = 0;;) switch (_fun11961_ip) {
+        _fun11963: for (var _fun11963_ip = 0;;) switch (_fun11963_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.entryType;
                 var0 = 'resource';
                 var0 = var0 === var1;
                 if (!var0) {
-                    _fun11961_ip = 28;
-                    continue _fun11961
+                    _fun11963_ip = 28;
+                    continue _fun11963
                 }
             case 20:
                 var1 = 'initiatorType';
                 var0 = var1 in var2;
             case 28:
                 if (!var0) {
-                    _fun11961_ip = 48;
-                    continue _fun11961
+                    _fun11963_ip = 48;
+                    continue _fun11963
                 }
             case 31:
                 var1 = var2.nextHopProtocol;
@@ -122,16 +122,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var1;
             case 48:
                 if (!var0) {
-                    _fun11961_ip = 87;
-                    continue _fun11961
+                    _fun11963_ip = 87;
+                    continue _fun11963
                 }
             case 51:
                 var3 = var2.initiatorType;
                 var1 = 'fetch';
                 var1 = var1 === var3;
                 if (var1) {
-                    _fun11961_ip = 84;
-                    continue _fun11961
+                    _fun11963_ip = 84;
+                    continue _fun11963
                 }
             case 68:
                 var3 = var2.initiatorType;

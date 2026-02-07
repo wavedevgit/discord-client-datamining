@@ -33,7 +33,7 @@ public enum c0 implements h {
         } else if (sb3.startsWith("Etc/GMT")) {
             sVar.k(f10, "Inverse Etc/GMT-Offsets are not supported, use UTC-Offsets instead.");
         } else if (sb3.equals("Z")) {
-            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39641v);
+            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39689v);
             sVar.l(i10);
         } else if (!sb3.equals("UTC") && !sb3.equals("GMT") && !sb3.equals("UT")) {
             List u10 = net.time4j.tz.l.u("INCLUDE_ALIAS");
@@ -56,9 +56,9 @@ public enum c0 implements h {
             sVar.k(f10, "Cannot parse to timezone id: " + sb3);
         } else if (length > i10 && ((charAt = charSequence.charAt(i10)) == '+' || charAt == '-')) {
             sVar.l(i10);
-            e0.f50954q.a(charSequence, sVar, dVar, tVar, z10);
+            e0.f51002q.a(charSequence, sVar, dVar, tVar, z10);
         } else {
-            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39641v);
+            tVar.I(b0.TIMEZONE_OFFSET, net.time4j.tz.p.f39689v);
             sVar.l(i10);
         }
     }

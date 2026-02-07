@@ -57,7 +57,7 @@ public abstract class e {
     public static final byte[] f20035a;
 
     /* renamed from: b */
-    public static final Headers f20036b = Headers.f42848e.i(new String[0]);
+    public static final Headers f20036b = Headers.f42896e.i(new String[0]);
 
     /* renamed from: c */
     public static final ResponseBody f20037c;
@@ -85,8 +85,8 @@ public abstract class e {
         f20035a = bArr;
         f20037c = ResponseBody.Companion.i(ResponseBody.Companion, bArr, null, 1, null);
         f20038d = RequestBody.Companion.p(RequestBody.Companion, bArr, null, 0, 0, 7, null);
-        a0.a aVar = a0.f48180o;
-        ByteString.a aVar2 = ByteString.f43166o;
+        a0.a aVar = a0.f48228o;
+        ByteString.a aVar2 = ByteString.f43214o;
         f20039e = aVar.d(aVar2.e("efbbbf"), aVar2.e("feff"), aVar2.e("fffe"), aVar2.e("0000ffff"), aVar2.e("ffff0000"));
         TimeZone timeZone = DesugarTimeZone.getTimeZone("GMT");
         Intrinsics.checkNotNull(timeZone);
@@ -182,7 +182,7 @@ public abstract class e {
                 bs.c.a(f10, null);
                 return true;
             } catch (IOException unused) {
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 bs.c.a(f10, null);
                 aVar.h(file);
                 return false;
@@ -246,11 +246,11 @@ public abstract class e {
                     if (d22 != 2) {
                         if (d22 != 3) {
                             if (d22 == 4) {
-                                return Charsets.f34920a.b();
+                                return Charsets.f34968a.b();
                             }
                             throw new AssertionError();
                         }
-                        return Charsets.f34920a.a();
+                        return Charsets.f34968a.a();
                     }
                     Charset UTF_16LE = StandardCharsets.UTF_16LE;
                     Intrinsics.checkNotNullExpressionValue(UTF_16LE, "UTF_16LE");
@@ -383,7 +383,7 @@ public abstract class e {
         } else {
             i10 = httpUrl.i();
         }
-        if (!z10 && httpUrl.o() == HttpUrl.f42851k.c(httpUrl.s())) {
+        if (!z10 && httpUrl.o() == HttpUrl.f42899k.c(httpUrl.s())) {
             return i10;
         }
         return i10 + ':' + httpUrl.o();

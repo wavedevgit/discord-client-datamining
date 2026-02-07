@@ -18,23 +18,23 @@ import os.n0;
 public final class f extends g implements k {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Handler f45655i;
+    private final Handler f45703i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f45656o;
+    private final String f45704o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f45657p;
+    private final boolean f45705p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final f f45658q;
+    private final f f45706q;
 
     private f(Handler handler, String str, boolean z10) {
         super(null);
-        this.f45655i = handler;
-        this.f45656o = str;
-        this.f45657p = z10;
-        this.f45658q = z10 ? this : new f(handler, str, true);
+        this.f45703i = handler;
+        this.f45704o = str;
+        this.f45705p = z10;
+        this.f45706q = z10 ? this : new f(handler, str, true);
     }
 
     private final void p2(CoroutineContext coroutineContext, Runnable runnable) {
@@ -44,30 +44,30 @@ public final class f extends g implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void r2(f fVar, Runnable runnable) {
-        fVar.f45655i.removeCallbacks(runnable);
+        fVar.f45703i.removeCallbacks(runnable);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void s2(CancellableContinuation cancellableContinuation, f fVar) {
-        cancellableContinuation.t(fVar, Unit.f32008a);
+        cancellableContinuation.t(fVar, Unit.f32056a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t2(f fVar, Runnable runnable, Throwable th2) {
-        fVar.f45655i.removeCallbacks(runnable);
-        return Unit.f32008a;
+        fVar.f45703i.removeCallbacks(runnable);
+        return Unit.f32056a;
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void D1(CoroutineContext coroutineContext, Runnable runnable) {
-        if (!this.f45655i.post(runnable)) {
+        if (!this.f45703i.post(runnable)) {
             p2(coroutineContext, runnable);
         }
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public boolean V1(CoroutineContext coroutineContext) {
-        if (this.f45657p && Intrinsics.areEqual(Looper.myLooper(), this.f45655i.getLooper())) {
+        if (this.f45705p && Intrinsics.areEqual(Looper.myLooper(), this.f45703i.getLooper())) {
             return false;
         }
         return true;
@@ -75,7 +75,7 @@ public final class f extends g implements k {
 
     @Override // kotlinx.coroutines.k
     public n0 Y(long j10, final Runnable runnable, CoroutineContext coroutineContext) {
-        if (this.f45655i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+        if (this.f45703i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
             return new n0() { // from class: ps.c
                 @Override // os.n0
                 public final void dispose() {
@@ -84,13 +84,13 @@ public final class f extends g implements k {
             };
         }
         p2(coroutineContext, runnable);
-        return e1.f43500d;
+        return e1.f43548d;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (fVar.f45655i == this.f45655i && fVar.f45657p == this.f45657p) {
+            if (fVar.f45703i == this.f45703i && fVar.f45705p == this.f45705p) {
                 return true;
             }
             return false;
@@ -100,8 +100,8 @@ public final class f extends g implements k {
 
     public int hashCode() {
         int i10;
-        int identityHashCode = System.identityHashCode(this.f45655i);
-        if (this.f45657p) {
+        int identityHashCode = System.identityHashCode(this.f45703i);
+        if (this.f45705p) {
             i10 = 1231;
         } else {
             i10 = 1237;
@@ -112,18 +112,18 @@ public final class f extends g implements k {
     @Override // os.c1
     /* renamed from: q2 */
     public f f2() {
-        return this.f45658q;
+        return this.f45706q;
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public String toString() {
         String h22 = h2();
         if (h22 == null) {
-            String str = this.f45656o;
+            String str = this.f45704o;
             if (str == null) {
-                str = this.f45655i.toString();
+                str = this.f45703i.toString();
             }
-            if (this.f45657p) {
+            if (this.f45705p) {
                 return str + ".immediate";
             }
             return str;
@@ -139,7 +139,7 @@ public final class f extends g implements k {
                 f.s2(CancellableContinuation.this, this);
             }
         };
-        if (this.f45655i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
+        if (this.f45703i.postDelayed(runnable, kotlin.ranges.d.j(j10, 4611686018427387903L))) {
             cancellableContinuation.c(new Function1() { // from class: ps.e
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {

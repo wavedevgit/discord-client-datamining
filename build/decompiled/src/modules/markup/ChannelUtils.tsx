@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/markup/ChannelUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44216: for (var _fun44216_ip = 0;;) switch (_fun44216_ip) {
+        _fun44223: for (var _fun44223_ip = 0;;) switch (_fun44223_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot0;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun44216_ip = 29;
-                    continue _fun44216
+                    _fun44223_ip = 29;
+                    continue _fun44223
                 }
             case 20:
                 var1 = _closure1_slot1;

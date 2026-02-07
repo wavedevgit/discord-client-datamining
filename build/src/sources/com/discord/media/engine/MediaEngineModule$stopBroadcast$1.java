@@ -51,11 +51,11 @@ final class MediaEngineModule$stopBroadcast$1 extends kotlin.coroutines.jvm.inte
         if (num != null) {
             this.this$0.getMediaEngine().connectionInstanceStopBroadcast$media_engine_release(num.intValue());
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$stopBroadcast$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+        return ((MediaEngineModule$stopBroadcast$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

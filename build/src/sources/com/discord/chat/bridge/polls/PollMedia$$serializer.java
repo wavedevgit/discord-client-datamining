@@ -48,7 +48,7 @@ public /* synthetic */ class PollMedia$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = PollMedia.$childSerializers;
-        return new KSerializer[]{a.u(n2.f31041a), lazyArr[1].getValue(), a.u(PollMediaEmoji$$serializer.INSTANCE), a.u(z0.f31115a)};
+        return new KSerializer[]{a.u(n2.f31089a), lazyArr[1].getValue(), a.u(PollMediaEmoji$$serializer.INSTANCE), a.u(z0.f31163a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -67,8 +67,8 @@ public /* synthetic */ class PollMedia$$serializer implements h0 {
         String str2 = null;
         if (b10.p()) {
             set = (Set) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), null);
-            str = (String) b10.n(serialDescriptor, 0, n2.f31041a, null);
-            l10 = (Long) b10.n(serialDescriptor, 3, z0.f31115a, null);
+            str = (String) b10.n(serialDescriptor, 0, n2.f31089a, null);
+            l10 = (Long) b10.n(serialDescriptor, 3, z0.f31163a, null);
             pollMediaEmoji = (PollMediaEmoji) b10.n(serialDescriptor, 2, PollMediaEmoji$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
@@ -82,7 +82,7 @@ public /* synthetic */ class PollMedia$$serializer implements h0 {
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str2 = (String) b10.n(serialDescriptor, 0, n2.f31041a, str2);
+                    str2 = (String) b10.n(serialDescriptor, 0, n2.f31089a, str2);
                     i11 |= 1;
                 } else if (o10 == 1) {
                     set2 = (Set) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), set2);
@@ -93,7 +93,7 @@ public /* synthetic */ class PollMedia$$serializer implements h0 {
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    l11 = (Long) b10.n(serialDescriptor, 3, z0.f31115a, l11);
+                    l11 = (Long) b10.n(serialDescriptor, 3, z0.f31163a, l11);
                     i11 |= 8;
                 }
             }

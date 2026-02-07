@@ -9,11 +9,11 @@ import un.x;
 public final class r0 implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f51792a;
+    private final View f51840a;
 
     public r0(View previewView) {
         Intrinsics.checkNotNullParameter(previewView, "previewView");
-        this.f51792a = previewView;
+        this.f51840a = previewView;
     }
 
     @Override // un.i
@@ -23,29 +23,29 @@ public final class r0 implements i {
 
     @Override // un.i
     public rs.j0 c() {
-        return rs.l0.a(x.c.f51851a);
+        return rs.l0.a(x.c.f51899a);
     }
 
     @Override // un.i
     public View e() {
-        return this.f51792a;
+        return this.f51840a;
     }
 
     @Override // un.i
     public Object g(Continuation continuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(kotlin.coroutines.jvm.internal.b.a(false));
     }
 
     @Override // un.i
     public Object i(Continuation continuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(kotlin.c.a(new s0()));
     }
 
     @Override // un.i
     public Object j(Continuation continuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(kotlin.c.a(new s0()));
     }
 

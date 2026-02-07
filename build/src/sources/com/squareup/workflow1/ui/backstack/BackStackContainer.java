@@ -86,7 +86,7 @@ public class BackStackContainer extends FrameLayout {
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                     a((fn.c) obj, (a0) obj2);
-                    return Unit.f32008a;
+                    return Unit.f32056a;
                 }
             }
 
@@ -101,7 +101,7 @@ public class BackStackContainer extends FrameLayout {
                 Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
                 Intrinsics.checkNotNullParameter(context, "context");
                 BackStackContainer backStackContainer = new BackStackContainer(context, null, 0, 0, 14, null);
-                backStackContainer.setId(gn.a.f25408c);
+                backStackContainer.setId(gn.a.f25456c);
                 backStackContainer.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
                 g0.a(backStackContainer, initialRendering, initialEnv, new C0218a(backStackContainer));
                 return backStackContainer;
@@ -178,8 +178,8 @@ public class BackStackContainer extends FrameLayout {
             addView(newView);
             return;
         }
-        View findViewById = view.findViewById(gn.a.f25406a);
-        View findViewById2 = newView.findViewById(gn.a.f25406a);
+        View findViewById = view.findViewById(gn.a.f25454a);
+        View findViewById2 = newView.findViewById(gn.a.f25454a);
         if (findViewById != null && findViewById2 != null) {
             view = findViewById;
         } else {
@@ -297,7 +297,7 @@ public class BackStackContainer extends FrameLayout {
         if (bVar != null) {
             this.f18051d.f(bVar.a());
             super.onRestoreInstanceState(((b) state).getSuperState());
-            unit = Unit.f32008a;
+            unit = Unit.f32056a;
         }
         if (unit == null) {
             super.onRestoreInstanceState(super.onSaveInstanceState());

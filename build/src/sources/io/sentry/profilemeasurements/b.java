@@ -16,16 +16,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class b implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f28400d;
+    private Map f28448d;
 
     /* renamed from: e  reason: collision with root package name */
-    private double f28401e;
+    private double f28449e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f28402i;
+    private String f28450i;
 
     /* renamed from: o  reason: collision with root package name */
-    private double f28403o;
+    private double f28451o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -66,7 +66,7 @@ public final class b implements w1 {
                         if (q12 == null) {
                             break;
                         } else {
-                            bVar.f28402i = q12;
+                            bVar.f28450i = q12;
                             break;
                         }
                     case 1:
@@ -83,7 +83,7 @@ public final class b implements w1 {
                         if (d10 == null) {
                             break;
                         } else {
-                            bVar.f28401e = d10.doubleValue();
+                            bVar.f28449e = d10.doubleValue();
                             break;
                         }
                     case 2:
@@ -91,7 +91,7 @@ public final class b implements w1 {
                         if (n02 == null) {
                             break;
                         } else {
-                            bVar.f28403o = n02.doubleValue();
+                            bVar.f28451o = n02.doubleValue();
                             break;
                         }
                     default:
@@ -117,7 +117,7 @@ public final class b implements w1 {
     }
 
     public void e(Map map) {
-        this.f28400d = map;
+        this.f28448d = map;
     }
 
     public boolean equals(Object obj) {
@@ -126,7 +126,7 @@ public final class b implements w1 {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (y.a(this.f28400d, bVar.f28400d) && this.f28402i.equals(bVar.f28402i) && this.f28403o == bVar.f28403o && this.f28401e == bVar.f28401e) {
+            if (y.a(this.f28448d, bVar.f28448d) && this.f28450i.equals(bVar.f28450i) && this.f28451o == bVar.f28451o && this.f28449e == bVar.f28449e) {
                 return true;
             }
         }
@@ -134,19 +134,19 @@ public final class b implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f28400d, this.f28402i, Double.valueOf(this.f28403o));
+        return y.b(this.f28448d, this.f28450i, Double.valueOf(this.f28451o));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("value").j(iLogger, Double.valueOf(this.f28403o));
-        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28402i);
-        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28401e)));
-        Map map = this.f28400d;
+        f3Var.e("value").j(iLogger, Double.valueOf(this.f28451o));
+        f3Var.e("elapsed_since_start_ns").j(iLogger, this.f28450i);
+        f3Var.e("timestamp").j(iLogger, d(Double.valueOf(this.f28449e)));
+        Map map = this.f28448d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f28400d.get(str);
+                Object obj = this.f28448d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -155,8 +155,8 @@ public final class b implements w1 {
     }
 
     public b(Long l10, Number number, long j10) {
-        this.f28402i = l10.toString();
-        this.f28403o = number.doubleValue();
-        this.f28401e = k.m(j10);
+        this.f28450i = l10.toString();
+        this.f28451o = number.doubleValue();
+        this.f28449e = k.m(j10);
     }
 }

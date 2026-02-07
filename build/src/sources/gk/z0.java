@@ -9,16 +9,16 @@ import java.util.RandomAccess;
 public abstract class z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f25384a = b();
+    private static final Class f25432a = b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d1 f25385b = c(false);
+    private static final d1 f25433b = c(false);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final d1 f25386c = c(true);
+    private static final d1 f25434c = c(true);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final d1 f25387d = new f1();
+    private static final d1 f25435d = new f1();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object a(Object obj, int i10, List list, u.a aVar, Object obj2, d1 d1Var) {
@@ -103,16 +103,16 @@ public abstract class z0 {
     }
 
     public static d1 h() {
-        return f25385b;
+        return f25433b;
     }
 
     public static d1 i() {
-        return f25386c;
+        return f25434c;
     }
 
     public static void j(Class cls) {
         Class cls2;
-        if (!s.class.isAssignableFrom(cls) && (cls2 = f25384a) != null && !cls2.isAssignableFrom(cls)) {
+        if (!s.class.isAssignableFrom(cls) && (cls2 = f25432a) != null && !cls2.isAssignableFrom(cls)) {
             throw new IllegalArgumentException("Message classes must extend GeneratedMessageV3 or GeneratedMessageLite");
         }
     }
@@ -137,6 +137,6 @@ public abstract class z0 {
     }
 
     public static d1 m() {
-        return f25387d;
+        return f25435d;
     }
 }

@@ -5,7 +5,7 @@ import android.net.Uri;
 public abstract class w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Uri f25155a = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
+    private static final Uri f25203a = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Removed duplicated region for block: B:25:0x005f  */
@@ -35,7 +35,7 @@ public abstract class w0 {
             java.lang.String r4 = "serviceActionBundleKey"
             r2.putString(r4, r1)
             android.content.ContentResolver r5 = r5.getContentResolver()     // Catch: java.lang.IllegalArgumentException -> L3d android.os.RemoteException -> L3f
-            android.net.Uri r4 = gf.w0.f25155a     // Catch: java.lang.IllegalArgumentException -> L3d android.os.RemoteException -> L3f
+            android.net.Uri r4 = gf.w0.f25203a     // Catch: java.lang.IllegalArgumentException -> L3d android.os.RemoteException -> L3f
             android.content.ContentProviderClient r5 = r5.acquireUnstableContentProviderClient(r4)     // Catch: java.lang.IllegalArgumentException -> L3d android.os.RemoteException -> L3f
             if (r5 == 0) goto L46
             java.lang.String r4 = "serviceIntentCall"

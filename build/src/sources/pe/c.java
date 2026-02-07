@@ -7,16 +7,16 @@ import ne.t;
 final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f43802a = new float[16];
+    private final float[] f43850a = new float[16];
 
     /* renamed from: b  reason: collision with root package name */
-    private final float[] f43803b = new float[16];
+    private final float[] f43851b = new float[16];
 
     /* renamed from: c  reason: collision with root package name */
-    private final r0 f43804c = new r0();
+    private final r0 f43852c = new r0();
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f43805d;
+    private boolean f43853d;
 
     public static void a(float[] fArr, float[] fArr2) {
         t.j(fArr);
@@ -44,25 +44,25 @@ final class c {
     }
 
     public boolean c(float[] fArr, long j10) {
-        float[] fArr2 = (float[]) this.f43804c.j(j10);
+        float[] fArr2 = (float[]) this.f43852c.j(j10);
         if (fArr2 == null) {
             return false;
         }
-        b(this.f43803b, fArr2);
-        if (!this.f43805d) {
-            a(this.f43802a, this.f43803b);
-            this.f43805d = true;
+        b(this.f43851b, fArr2);
+        if (!this.f43853d) {
+            a(this.f43850a, this.f43851b);
+            this.f43853d = true;
         }
-        Matrix.multiplyMM(fArr, 0, this.f43802a, 0, this.f43803b, 0);
+        Matrix.multiplyMM(fArr, 0, this.f43850a, 0, this.f43851b, 0);
         return true;
     }
 
     public void d() {
-        this.f43804c.c();
-        this.f43805d = false;
+        this.f43852c.c();
+        this.f43853d = false;
     }
 
     public void e(long j10, float[] fArr) {
-        this.f43804c.a(j10, fArr);
+        this.f43852c.a(j10, fArr);
     }
 }

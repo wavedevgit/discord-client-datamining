@@ -14,48 +14,48 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class n {
 
     /* renamed from: g  reason: collision with root package name */
-    private static volatile n f49954g;
+    private static volatile n f50002g;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f49955a;
+    private final Context f50003a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49956b;
+    private final List f50004b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f49957c;
+    private final e f50005c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final j f49958d;
+    private final j f50006d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile zzav f49959e;
+    private volatile zzav f50007e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Thread.UncaughtExceptionHandler f49960f;
+    private Thread.UncaughtExceptionHandler f50008f;
 
     n(Context context) {
         Context applicationContext = context.getApplicationContext();
         q.l(applicationContext);
-        this.f49955a = applicationContext;
-        this.f49958d = new j(this);
-        this.f49956b = new CopyOnWriteArrayList();
-        this.f49957c = new e();
+        this.f50003a = applicationContext;
+        this.f50006d = new j(this);
+        this.f50004b = new CopyOnWriteArrayList();
+        this.f50005c = new e();
     }
 
     public static n a(Context context) {
         q.l(context);
-        if (f49954g == null) {
+        if (f50002g == null) {
             synchronized (n.class) {
                 try {
-                    if (f49954g == null) {
-                        f49954g = new n(context);
+                    if (f50002g == null) {
+                        f50002g = new n(context);
                     }
                 } finally {
                 }
             }
         }
-        return f49954g;
+        return f50002g;
     }
 
     public static void d() {
@@ -68,7 +68,7 @@ public final class n {
     public final zzav b() {
         String packageName;
         String str;
-        if (this.f49959e == null) {
+        if (this.f50007e == null) {
             synchronized (this) {
                 try {
                 } catch (PackageManager.NameNotFoundException unused) {
@@ -81,14 +81,14 @@ public final class n {
                     Log.e("GAv4", str);
                 } finally {
                 }
-                if (this.f49959e == null) {
+                if (this.f50007e == null) {
                     zzav zzavVar = new zzav();
-                    PackageManager packageManager = this.f49955a.getPackageManager();
-                    packageName = this.f49955a.getPackageName();
+                    PackageManager packageManager = this.f50003a.getPackageManager();
+                    packageName = this.f50003a.getPackageName();
                     zzavVar.zzi(packageName);
                     zzavVar.zzj(packageManager.getInstallerPackageName(packageName));
                     String str2 = null;
-                    PackageInfo packageInfo = packageManager.getPackageInfo(this.f49955a.getPackageName(), 0);
+                    PackageInfo packageInfo = packageManager.getPackageInfo(this.f50003a.getPackageName(), 0);
                     if (packageInfo != null) {
                         CharSequence applicationLabel = packageManager.getApplicationLabel(packageInfo.applicationInfo);
                         if (!TextUtils.isEmpty(applicationLabel)) {
@@ -98,19 +98,19 @@ public final class n {
                     }
                     zzavVar.zzk(packageName);
                     zzavVar.zzl(str2);
-                    this.f49959e = zzavVar;
+                    this.f50007e = zzavVar;
                 }
             }
         }
-        return this.f49959e;
+        return this.f50007e;
     }
 
     public final void e(Runnable runnable) {
         q.l(runnable);
-        this.f49958d.submit(runnable);
+        this.f50006d.submit(runnable);
     }
 
     public final void f(Thread.UncaughtExceptionHandler uncaughtExceptionHandler) {
-        this.f49960f = uncaughtExceptionHandler;
+        this.f50008f = uncaughtExceptionHandler;
     }
 }

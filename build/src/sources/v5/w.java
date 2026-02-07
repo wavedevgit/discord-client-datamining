@@ -13,16 +13,16 @@ import w5.c;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52237a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
+    private static final c.a f52285a = c.a.a("w", "h", "ip", "op", "fr", "v", "layers", "assets", "fonts", "chars", "markers");
 
     /* renamed from: b  reason: collision with root package name */
-    static c.a f52238b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
+    static c.a f52286b = c.a.a(StackTraceHelper.ID_KEY, "layers", "w", "h", "p", "u");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f52239c = c.a.a("list");
+    private static final c.a f52287c = c.a.a("list");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final c.a f52240d = c.a.a("cm", "tm", "dr");
+    private static final c.a f52288d = c.a.a("cm", "tm", "dr");
 
     public static l5.i a(w5.c cVar) {
         float f10;
@@ -43,7 +43,7 @@ public abstract class w {
         int i10 = 0;
         int i11 = 0;
         while (cVar2.hasNext()) {
-            switch (cVar2.p(f52237a)) {
+            switch (cVar2.p(f52285a)) {
                 case 0:
                     i10 = cVar.nextInt();
                     cVar2 = cVar;
@@ -109,7 +109,7 @@ public abstract class w {
             String str2 = null;
             String str3 = null;
             while (cVar.hasNext()) {
-                int p10 = cVar.p(f52238b);
+                int p10 = cVar.p(f52286b);
                 if (p10 != 0) {
                     if (p10 != 1) {
                         if (p10 != 2) {
@@ -166,7 +166,7 @@ public abstract class w {
     private static void d(w5.c cVar, Map map) {
         cVar.u();
         while (cVar.hasNext()) {
-            if (cVar.p(f52239c) != 0) {
+            if (cVar.p(f52287c) != 0) {
                 cVar.s();
                 cVar.S();
             } else {
@@ -206,7 +206,7 @@ public abstract class w {
             String str = null;
             float f11 = 0.0f;
             while (cVar.hasNext()) {
-                int p10 = cVar.p(f52240d);
+                int p10 = cVar.p(f52288d);
                 if (p10 != 0) {
                     if (p10 != 1) {
                         if (p10 != 2) {

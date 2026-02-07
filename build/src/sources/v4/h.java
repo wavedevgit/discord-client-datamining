@@ -19,41 +19,41 @@ public interface h {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f52135a;
+        private final Context f52183a;
 
         /* renamed from: b  reason: collision with root package name */
-        private g5.c f52136b = k5.i.b();
+        private g5.c f52184b = k5.i.b();
 
         /* renamed from: c  reason: collision with root package name */
-        private Lazy f52137c = null;
+        private Lazy f52185c = null;
 
         /* renamed from: d  reason: collision with root package name */
-        private Lazy f52138d = null;
+        private Lazy f52186d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        private Lazy f52139e = null;
+        private Lazy f52187e = null;
 
         /* renamed from: f  reason: collision with root package name */
-        private c.InterfaceC0684c f52140f = null;
+        private c.InterfaceC0684c f52188f = null;
 
         /* renamed from: g  reason: collision with root package name */
-        private b f52141g = null;
+        private b f52189g = null;
 
         /* renamed from: h  reason: collision with root package name */
-        private q f52142h = new q(false, false, false, 0, null, 31, null);
+        private q f52190h = new q(false, false, false, 0, null, 31, null);
 
         public a(Context context) {
-            this.f52135a = context.getApplicationContext();
+            this.f52183a = context.getApplicationContext();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final e5.c e(a aVar) {
-            return new c.a(aVar.f52135a).a();
+            return new c.a(aVar.f52183a).a();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final y4.a f(a aVar) {
-            return u.f31506a.a(aVar.f52135a);
+            return u.f31554a.a(aVar.f52183a);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -62,9 +62,9 @@ public interface h {
         }
 
         public final h d() {
-            Context context = this.f52135a;
-            g5.c cVar = this.f52136b;
-            Lazy lazy = this.f52137c;
+            Context context = this.f52183a;
+            g5.c cVar = this.f52184b;
+            Lazy lazy = this.f52185c;
             if (lazy == null) {
                 lazy = l.a(new Function0() { // from class: v4.e
                     @Override // kotlin.jvm.functions.Function0
@@ -75,7 +75,7 @@ public interface h {
                     }
                 });
             }
-            Lazy lazy2 = this.f52138d;
+            Lazy lazy2 = this.f52186d;
             if (lazy2 == null) {
                 lazy2 = l.a(new Function0() { // from class: v4.f
                     @Override // kotlin.jvm.functions.Function0
@@ -86,7 +86,7 @@ public interface h {
                     }
                 });
             }
-            Lazy lazy3 = this.f52139e;
+            Lazy lazy3 = this.f52187e;
             if (lazy3 == null) {
                 lazy3 = l.a(new Function0() { // from class: v4.g
                     @Override // kotlin.jvm.functions.Function0
@@ -97,19 +97,19 @@ public interface h {
                     }
                 });
             }
-            c.InterfaceC0684c interfaceC0684c = this.f52140f;
+            c.InterfaceC0684c interfaceC0684c = this.f52188f;
             if (interfaceC0684c == null) {
-                interfaceC0684c = c.InterfaceC0684c.f52131b;
+                interfaceC0684c = c.InterfaceC0684c.f52179b;
             }
-            b bVar = this.f52141g;
+            b bVar = this.f52189g;
             if (bVar == null) {
                 bVar = new b();
             }
-            return new j(context, cVar, lazy, lazy2, lazy3, interfaceC0684c, bVar, this.f52142h, null);
+            return new j(context, cVar, lazy, lazy2, lazy3, interfaceC0684c, bVar, this.f52190h, null);
         }
 
         public final a h(b bVar) {
-            this.f52141g = bVar;
+            this.f52189g = bVar;
             return this;
         }
 
@@ -118,7 +118,7 @@ public interface h {
             if (i10 > 0) {
                 aVar = new a.C0414a(i10, false, 2, null);
             } else {
-                aVar = c.a.f29732b;
+                aVar = c.a.f29780b;
             }
             l(aVar);
             return this;
@@ -135,12 +135,12 @@ public interface h {
         }
 
         public final a k(y4.a aVar) {
-            this.f52138d = l.c(aVar);
+            this.f52186d = l.c(aVar);
             return this;
         }
 
         public final a l(c.a aVar) {
-            this.f52136b = g5.c.b(this.f52136b, null, null, null, null, aVar, null, null, false, false, null, null, null, null, null, null, 32751, null);
+            this.f52184b = g5.c.b(this.f52184b, null, null, null, null, aVar, null, null, false, false, null, null, null, null, null, null, 32751, null);
             return this;
         }
     }

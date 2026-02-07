@@ -3,23 +3,23 @@ package qc;
 public abstract class a {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f46595d;
+    private int f46643d;
 
     public final void g(int i10) {
-        this.f46595d = i10 | this.f46595d;
+        this.f46643d = i10 | this.f46643d;
     }
 
     public void h() {
-        this.f46595d = 0;
+        this.f46643d = 0;
     }
 
     public final void i(int i10) {
-        this.f46595d = (~i10) & this.f46595d;
+        this.f46643d = (~i10) & this.f46643d;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean j(int i10) {
-        if ((this.f46595d & i10) == i10) {
+        if ((this.f46643d & i10) == i10) {
             return true;
         }
         return false;
@@ -50,6 +50,6 @@ public abstract class a {
     }
 
     public final void s(int i10) {
-        this.f46595d = i10;
+        this.f46643d = i10;
     }
 }

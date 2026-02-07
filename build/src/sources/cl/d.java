@@ -261,7 +261,7 @@ abstract class d {
 
     private static void d(lk.c cVar, StringBuilder sb2, int i10) {
         int i11;
-        if (n.f36362c != null) {
+        if (n.f36410c != null) {
             if (i10 * 13 <= cVar.a()) {
                 byte[] bArr = new byte[i10 * 2];
                 int i12 = 0;
@@ -279,7 +279,7 @@ abstract class d {
                     i12 += 2;
                     i10--;
                 }
-                sb2.append(new String(bArr, n.f36362c));
+                sb2.append(new String(bArr, n.f36410c));
                 return;
             }
             throw hk.g.a();
@@ -289,7 +289,7 @@ abstract class d {
 
     private static void e(lk.c cVar, StringBuilder sb2, int i10) {
         int i11;
-        if (n.f36361b != null) {
+        if (n.f36409b != null) {
             if (i10 * 13 <= cVar.a()) {
                 byte[] bArr = new byte[i10 * 2];
                 int i12 = 0;
@@ -307,7 +307,7 @@ abstract class d {
                     i12 += 2;
                     i10--;
                 }
-                sb2.append(new String(bArr, n.f36361b));
+                sb2.append(new String(bArr, n.f36409b));
                 return;
             }
             throw hk.g.a();

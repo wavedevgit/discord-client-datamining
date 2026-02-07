@@ -139,10 +139,10 @@ public final class ButtonComponent extends BaseActionComponent {
         compositeEncoder.z(serialDescriptor, 1, buttonComponent.getId());
         compositeEncoder.s(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, buttonComponent.getState());
         if (compositeEncoder.A(serialDescriptor, 3) || buttonComponent.getCustomId() != null) {
-            compositeEncoder.l(serialDescriptor, 3, n2.f31041a, buttonComponent.getCustomId());
+            compositeEncoder.l(serialDescriptor, 3, n2.f31089a, buttonComponent.getCustomId());
         }
         if (compositeEncoder.A(serialDescriptor, 4) || buttonComponent.label != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, buttonComponent.label);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, buttonComponent.label);
         }
         compositeEncoder.s(serialDescriptor, 5, ButtonStyle.Serializer.INSTANCE, buttonComponent.style);
         if (compositeEncoder.A(serialDescriptor, 6) || buttonComponent.disabled) {
@@ -152,10 +152,10 @@ public final class ButtonComponent extends BaseActionComponent {
             compositeEncoder.l(serialDescriptor, 7, ComponentEmoji$$serializer.INSTANCE, buttonComponent.emoji);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || buttonComponent.url != null) {
-            compositeEncoder.l(serialDescriptor, 8, n2.f31041a, buttonComponent.url);
+            compositeEncoder.l(serialDescriptor, 8, n2.f31089a, buttonComponent.url);
         }
         if (compositeEncoder.A(serialDescriptor, 9) || buttonComponent.skuId != null) {
-            compositeEncoder.l(serialDescriptor, 9, n2.f31041a, buttonComponent.skuId);
+            compositeEncoder.l(serialDescriptor, 9, n2.f31089a, buttonComponent.skuId);
         }
     }
 

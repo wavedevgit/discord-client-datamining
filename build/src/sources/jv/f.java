@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f31316a;
+    private final Map f31364a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -32,7 +32,7 @@ public final class f {
     }
 
     public f(Map map) {
-        this.f31316a = map;
+        this.f31364a = map;
     }
 
     private static int[] b(String str) {
@@ -82,6 +82,6 @@ public final class f {
     }
 
     public Map a() {
-        return Collections.unmodifiableMap(this.f31316a);
+        return Collections.unmodifiableMap(this.f31364a);
     }
 }

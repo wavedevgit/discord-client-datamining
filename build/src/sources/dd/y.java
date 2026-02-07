@@ -37,7 +37,7 @@ final class y {
     }
 
     private int b(tc.l lVar) {
-        this.f20702b.R(w0.f39017f);
+        this.f20702b.R(w0.f39065f);
         this.f20703c = true;
         lVar.e();
         return 0;
@@ -51,7 +51,7 @@ final class y {
         int min = (int) Math.min(20000L, lVar.getLength());
         long j10 = 0;
         if (lVar.getPosition() != j10) {
-            yVar.f50579a = j10;
+            yVar.f50627a = j10;
             return 1;
         }
         this.f20702b.Q(min);
@@ -81,7 +81,7 @@ final class y {
         int min = (int) Math.min(20000L, length);
         long j10 = length - min;
         if (lVar.getPosition() != j10) {
-            yVar.f50579a = j10;
+            yVar.f50627a = j10;
             return 1;
         }
         this.f20702b.Q(min);

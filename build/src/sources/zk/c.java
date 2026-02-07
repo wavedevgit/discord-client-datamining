@@ -4,15 +4,15 @@ package zk;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f56292a;
+    private final b f56340a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f56293b;
+    private final int[] f56341b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(b bVar, int[] iArr) {
         if (iArr.length != 0) {
-            this.f56292a = bVar;
+            this.f56340a = bVar;
             int length = iArr.length;
             int i10 = 1;
             if (length > 1 && iArr[0] == 0) {
@@ -20,15 +20,15 @@ public final class c {
                     i10++;
                 }
                 if (i10 == length) {
-                    this.f56293b = new int[]{0};
+                    this.f56341b = new int[]{0};
                     return;
                 }
                 int[] iArr2 = new int[length - i10];
-                this.f56293b = iArr2;
+                this.f56341b = iArr2;
                 System.arraycopy(iArr, i10, iArr2, 0, iArr2.length);
                 return;
             }
-            this.f56293b = iArr;
+            this.f56341b = iArr;
             return;
         }
         throw new IllegalArgumentException();
@@ -36,15 +36,15 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c a(c cVar) {
-        if (this.f56292a.equals(cVar.f56292a)) {
+        if (this.f56340a.equals(cVar.f56340a)) {
             if (e()) {
                 return cVar;
             }
             if (cVar.e()) {
                 return this;
             }
-            int[] iArr = this.f56293b;
-            int[] iArr2 = cVar.f56293b;
+            int[] iArr = this.f56341b;
+            int[] iArr2 = cVar.f56341b;
             if (iArr.length <= iArr2.length) {
                 iArr = iArr2;
                 iArr2 = iArr;
@@ -53,9 +53,9 @@ public final class c {
             int length = iArr.length - iArr2.length;
             System.arraycopy(iArr, 0, iArr3, 0, length);
             for (int i10 = length; i10 < iArr.length; i10++) {
-                iArr3[i10] = this.f56292a.a(iArr2[i10 - length], iArr[i10]);
+                iArr3[i10] = this.f56340a.a(iArr2[i10 - length], iArr[i10]);
             }
-            return new c(this.f56292a, iArr3);
+            return new c(this.f56340a, iArr3);
         }
         throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
     }
@@ -67,35 +67,35 @@ public final class c {
         }
         if (i10 == 1) {
             int i11 = 0;
-            for (int i12 : this.f56293b) {
-                i11 = this.f56292a.a(i11, i12);
+            for (int i12 : this.f56341b) {
+                i11 = this.f56340a.a(i11, i12);
             }
             return i11;
         }
-        int[] iArr = this.f56293b;
+        int[] iArr = this.f56341b;
         int i13 = iArr[0];
         int length = iArr.length;
         for (int i14 = 1; i14 < length; i14++) {
-            b bVar = this.f56292a;
-            i13 = bVar.a(bVar.i(i10, i13), this.f56293b[i14]);
+            b bVar = this.f56340a;
+            i13 = bVar.a(bVar.i(i10, i13), this.f56341b[i14]);
         }
         return i13;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c(int i10) {
-        int[] iArr = this.f56293b;
+        int[] iArr = this.f56341b;
         return iArr[(iArr.length - 1) - i10];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f56293b.length - 1;
+        return this.f56341b.length - 1;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e() {
-        if (this.f56293b[0] != 0) {
+        if (this.f56341b[0] != 0) {
             return false;
         }
         return true;
@@ -104,39 +104,39 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public c f(int i10) {
         if (i10 == 0) {
-            return this.f56292a.f();
+            return this.f56340a.f();
         }
         if (i10 == 1) {
             return this;
         }
-        int length = this.f56293b.length;
+        int length = this.f56341b.length;
         int[] iArr = new int[length];
         for (int i11 = 0; i11 < length; i11++) {
-            iArr[i11] = this.f56292a.i(this.f56293b[i11], i10);
+            iArr[i11] = this.f56340a.i(this.f56341b[i11], i10);
         }
-        return new c(this.f56292a, iArr);
+        return new c(this.f56340a, iArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c g(c cVar) {
-        if (this.f56292a.equals(cVar.f56292a)) {
+        if (this.f56340a.equals(cVar.f56340a)) {
             if (!e() && !cVar.e()) {
-                int[] iArr = this.f56293b;
+                int[] iArr = this.f56341b;
                 int length = iArr.length;
-                int[] iArr2 = cVar.f56293b;
+                int[] iArr2 = cVar.f56341b;
                 int length2 = iArr2.length;
                 int[] iArr3 = new int[(length + length2) - 1];
                 for (int i10 = 0; i10 < length; i10++) {
                     int i11 = iArr[i10];
                     for (int i12 = 0; i12 < length2; i12++) {
                         int i13 = i10 + i12;
-                        b bVar = this.f56292a;
+                        b bVar = this.f56340a;
                         iArr3[i13] = bVar.a(iArr3[i13], bVar.i(i11, iArr2[i12]));
                     }
                 }
-                return new c(this.f56292a, iArr3);
+                return new c(this.f56340a, iArr3);
             }
-            return this.f56292a.f();
+            return this.f56340a.f();
         }
         throw new IllegalArgumentException("ModulusPolys do not have same ModulusGF field");
     }
@@ -145,31 +145,31 @@ public final class c {
     public c h(int i10, int i11) {
         if (i10 >= 0) {
             if (i11 == 0) {
-                return this.f56292a.f();
+                return this.f56340a.f();
             }
-            int length = this.f56293b.length;
+            int length = this.f56341b.length;
             int[] iArr = new int[i10 + length];
             for (int i12 = 0; i12 < length; i12++) {
-                iArr[i12] = this.f56292a.i(this.f56293b[i12], i11);
+                iArr[i12] = this.f56340a.i(this.f56341b[i12], i11);
             }
-            return new c(this.f56292a, iArr);
+            return new c(this.f56340a, iArr);
         }
         throw new IllegalArgumentException();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c i() {
-        int length = this.f56293b.length;
+        int length = this.f56341b.length;
         int[] iArr = new int[length];
         for (int i10 = 0; i10 < length; i10++) {
-            iArr[i10] = this.f56292a.j(0, this.f56293b[i10]);
+            iArr[i10] = this.f56340a.j(0, this.f56341b[i10]);
         }
-        return new c(this.f56292a, iArr);
+        return new c(this.f56340a, iArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c j(c cVar) {
-        if (this.f56292a.equals(cVar.f56292a)) {
+        if (this.f56340a.equals(cVar.f56340a)) {
             if (cVar.e()) {
                 return this;
             }

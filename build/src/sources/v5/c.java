@@ -6,14 +6,14 @@ import w5.c;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52181a = c.a.a("a", "p", "s", "rz", "r", "o", "so", "eo", "sk", "sa");
+    private static final c.a f52229a = c.a.a("a", "p", "s", "rz", "r", "o", "so", "eo", "sk", "sa");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52182b = c.a.a("k");
+    private static final c.a f52230b = c.a.a("k");
 
     private static boolean a(r5.e eVar) {
         if (eVar != null) {
-            if (!eVar.isStatic() || !((PointF) ((y5.a) eVar.b().get(0)).f54980b).equals(0.0f, 0.0f)) {
+            if (!eVar.isStatic() || !((PointF) ((y5.a) eVar.b().get(0)).f55028b).equals(0.0f, 0.0f)) {
                 return false;
             }
             return true;
@@ -23,7 +23,7 @@ public abstract class c {
 
     private static boolean b(r5.m mVar) {
         if (mVar != null) {
-            if ((mVar instanceof r5.i) || !mVar.isStatic() || !((PointF) ((y5.a) mVar.b().get(0)).f54980b).equals(0.0f, 0.0f)) {
+            if ((mVar instanceof r5.i) || !mVar.isStatic() || !((PointF) ((y5.a) mVar.b().get(0)).f55028b).equals(0.0f, 0.0f)) {
                 return false;
             }
             return true;
@@ -33,7 +33,7 @@ public abstract class c {
 
     private static boolean c(r5.b bVar) {
         if (bVar != null) {
-            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f54980b).floatValue() != 0.0f) {
+            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f55028b).floatValue() != 0.0f) {
                 return false;
             }
             return true;
@@ -43,7 +43,7 @@ public abstract class c {
 
     private static boolean d(r5.g gVar) {
         if (gVar != null) {
-            if (!gVar.isStatic() || !((y5.d) ((y5.a) gVar.b().get(0)).f54980b).a(1.0f, 1.0f)) {
+            if (!gVar.isStatic() || !((y5.d) ((y5.a) gVar.b().get(0)).f55028b).a(1.0f, 1.0f)) {
                 return false;
             }
             return true;
@@ -53,7 +53,7 @@ public abstract class c {
 
     private static boolean e(r5.b bVar) {
         if (bVar != null) {
-            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f54980b).floatValue() != 0.0f) {
+            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f55028b).floatValue() != 0.0f) {
                 return false;
             }
             return true;
@@ -63,7 +63,7 @@ public abstract class c {
 
     private static boolean f(r5.b bVar) {
         if (bVar != null) {
-            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f54980b).floatValue() != 0.0f) {
+            if (!bVar.isStatic() || ((Float) ((y5.a) bVar.b().get(0)).f55028b).floatValue() != 0.0f) {
                 return false;
             }
             return true;

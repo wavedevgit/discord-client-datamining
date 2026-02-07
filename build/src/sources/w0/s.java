@@ -5,27 +5,27 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f53252a;
+    private final String f53300a;
 
     public s(String str) {
-        this.f53252a = str;
+        this.f53300a = str;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof s) && Intrinsics.areEqual(this.f53252a, ((s) obj).f53252a)) {
+        if ((obj instanceof s) && Intrinsics.areEqual(this.f53300a, ((s) obj).f53300a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f53252a.hashCode();
+        return this.f53300a.hashCode();
     }
 
     public String toString() {
-        return "OpaqueKey(key=" + this.f53252a + ')';
+        return "OpaqueKey(key=" + this.f53300a + ')';
     }
 }

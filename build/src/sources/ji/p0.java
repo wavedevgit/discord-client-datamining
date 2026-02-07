@@ -7,10 +7,10 @@ import android.content.Intent;
 final class p0 extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ q0 f29913a;
+    final /* synthetic */ q0 f29961a;
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        this.f29913a.a(context, intent);
+        this.f29961a.a(context, intent);
     }
 }

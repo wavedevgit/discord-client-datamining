@@ -7,7 +7,7 @@ import yv.o;
 public final class f implements su.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f55641a = new f();
+    public static final f f55689a = new f();
 
     private f() {
     }

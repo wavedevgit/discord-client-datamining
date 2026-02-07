@@ -17,7 +17,7 @@ import lt.z0;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SerialDescriptor f35517a = n0.a("kotlinx.serialization.json.JsonUnquotedLiteral", gt.a.E(StringCompanionObject.INSTANCE));
+    private static final SerialDescriptor f35565a = n0.a("kotlinx.serialization.json.JsonUnquotedLiteral", gt.a.E(StringCompanionObject.INSTANCE));
 
     public static final JsonNull a(Void r02) {
         return JsonNull.INSTANCE;
@@ -156,7 +156,7 @@ public abstract class h {
     }
 
     public static final SerialDescriptor p() {
-        return f35517a;
+        return f35565a;
     }
 
     public static final long q(JsonPrimitive jsonPrimitive) {

@@ -90,11 +90,11 @@ public final class p {
         }
         Bitmap.Config config2 = config;
         h5.c d10 = iVar.d();
-        c.b bVar = c.b.f25786a;
+        c.b bVar = c.b.f25834a;
         if (!Intrinsics.areEqual(d10, bVar) && !Intrinsics.areEqual(iVar.c(), bVar)) {
             hVar2 = hVar.J();
         } else {
-            hVar2 = h5.h.f25797e;
+            hVar2 = h5.h.f25845e;
         }
         h5.h hVar3 = hVar2;
         if (hVar.i() && hVar.O().isEmpty() && config2 != Bitmap.Config.ALPHA_8) {

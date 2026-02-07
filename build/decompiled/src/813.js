@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var2 = function() {
-        _fun8689: for (var _fun8689_ip = 0;;) switch (_fun8689_ip) {
+        _fun8691: for (var _fun8691_ip = 0;;) switch (_fun8691_ip) {
             case 0:
                 var4 = undefined;
                 var1 = undefined;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2 > var0;
                 var2 = 0;
                 if (!var3) {
-                    _fun8689_ip = 32;
-                    continue _fun8689
+                    _fun8691_ip = 32;
+                    continue _fun8691
                 }
             case 18:
                 var3 = arguments[var0];
                 var2 = 0;
                 if (!(var4 !== var3)) {
-                    _fun8689_ip = 32;
-                    continue _fun8689
+                    _fun8691_ip = 32;
+                    continue _fun8691
                 }
             case 28:
                 var2 = arguments[var0];
@@ -51,15 +51,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.createSyntheticError = var2;
     var2 = function arg0() {
-        _fun8690: for (var _fun8690_ip = 0;;) switch (_fun8690_ip) {
+        _fun8692: for (var _fun8692_ip = 0;;) switch (_fun8692_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.framesToPop;
                 var2 = undefined;
                 var0 = 0;
                 if (!(var2 !== var3)) {
-                    _fun8690_ip = 23;
-                    continue _fun8690
+                    _fun8692_ip = 23;
+                    continue _fun8692
                 }
             case 17:
                 var0 = var1.framesToPop;
@@ -69,14 +69,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getFramesToPop = var2;
     var0 = function arg0() {
-        _fun8691: for (var _fun8691_ip = 0;;) switch (_fun8691_ip) {
+        _fun8693: for (var _fun8693_ip = 0;;) switch (_fun8693_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 !== var1;
                 if (!var0) {
-                    _fun8691_ip = 23;
-                    continue _fun8691
+                    _fun8693_ip = 23;
+                    continue _fun8693
                 }
             case 12:
                 var3 = 'object';
@@ -84,16 +84,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3 === var2;
             case 23:
                 if (!var0) {
-                    _fun8691_ip = 34;
-                    continue _fun8691
+                    _fun8693_ip = 34;
+                    continue _fun8693
                 }
             case 26:
                 var2 = 'stack';
                 var0 = var2 in var1;
             case 34:
                 if (!var0) {
-                    _fun8691_ip = 54;
-                    continue _fun8691
+                    _fun8693_ip = 54;
+                    continue _fun8693
                 }
             case 37:
                 var1 = var1.stack;

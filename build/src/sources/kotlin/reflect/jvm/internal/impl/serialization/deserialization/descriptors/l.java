@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class l implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedClassDescriptor.b f34458d;
+    private final DeserializedClassDescriptor.b f34506d;
 
     public l(DeserializedClassDescriptor.b bVar) {
-        this.f34458d = bVar;
+        this.f34506d = bVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Set h10;
-        h10 = DeserializedClassDescriptor.b.h(this.f34458d);
+        h10 = DeserializedClassDescriptor.b.h(this.f34506d);
         return h10;
     }
 }

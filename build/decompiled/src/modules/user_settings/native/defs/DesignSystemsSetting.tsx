@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = 3;
     var7 = var5[var7];
     var7 = var4.bind(var0)(var7);
-    var7 = var7.useStaffOrDeveloperSettingPredicate;
+    var7 = var7.useDesignSystemsSettingPredicate;
     var1.usePredicate = var7;
     var7 = {};
     var9 = var9.DESIGN_SYSTEM;
@@ -61,4 +61,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 9023, 10883, 10471, 11179, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 9067, 10921, 11457, 11220, 2]);

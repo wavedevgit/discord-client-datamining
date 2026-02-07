@@ -11,44 +11,44 @@ import java.util.Set;
 public abstract class j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final k0 f54659a;
+    protected final k0 f54707a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IntentFilter f54660b;
+    private final IntentFilter f54708b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f54661c;
+    private final Context f54709c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final Set f54662d = new HashSet();
+    protected final Set f54710d = new HashSet();
 
     /* renamed from: e  reason: collision with root package name */
-    private h0 f54663e = null;
+    private h0 f54711e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile boolean f54664f = false;
+    private volatile boolean f54712f = false;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public j0(k0 k0Var, IntentFilter intentFilter, Context context) {
-        this.f54659a = k0Var;
-        this.f54660b = intentFilter;
-        this.f54661c = h.a(context);
+        this.f54707a = k0Var;
+        this.f54708b = intentFilter;
+        this.f54709c = h.a(context);
     }
 
     private final void a() {
         h0 h0Var;
-        if ((this.f54664f || !this.f54662d.isEmpty()) && this.f54663e == null) {
+        if ((this.f54712f || !this.f54710d.isEmpty()) && this.f54711e == null) {
             h0 h0Var2 = new h0(this, null);
-            this.f54663e = h0Var2;
+            this.f54711e = h0Var2;
             if (Build.VERSION.SDK_INT >= 33) {
-                this.f54661c.registerReceiver(h0Var2, this.f54660b, 2);
+                this.f54709c.registerReceiver(h0Var2, this.f54708b, 2);
             } else {
-                this.f54661c.registerReceiver(h0Var2, this.f54660b);
+                this.f54709c.registerReceiver(h0Var2, this.f54708b);
             }
         }
-        if (!this.f54664f && this.f54662d.isEmpty() && (h0Var = this.f54663e) != null) {
-            this.f54661c.unregisterReceiver(h0Var);
-            this.f54663e = null;
+        if (!this.f54712f && this.f54710d.isEmpty() && (h0Var = this.f54711e) != null) {
+            this.f54709c.unregisterReceiver(h0Var);
+            this.f54711e = null;
         }
     }
 
@@ -56,26 +56,26 @@ public abstract class j0 {
     public abstract void b(Context context, Intent intent);
 
     public final synchronized void c(ci.a aVar) {
-        this.f54659a.d("registerListener", new Object[0]);
+        this.f54707a.d("registerListener", new Object[0]);
         k.a(aVar, "Registered Play Core listener should not be null.");
-        this.f54662d.add(aVar);
+        this.f54710d.add(aVar);
         a();
     }
 
     public final synchronized void d(boolean z10) {
-        this.f54664f = z10;
+        this.f54712f = z10;
         a();
     }
 
     public final synchronized void e(Object obj) {
-        Iterator it = new HashSet(this.f54662d).iterator();
+        Iterator it = new HashSet(this.f54710d).iterator();
         while (it.hasNext()) {
             ((ci.a) it.next()).a(obj);
         }
     }
 
     public final synchronized boolean f() {
-        if (this.f54663e != null) {
+        if (this.f54711e != null) {
             return true;
         }
         return false;

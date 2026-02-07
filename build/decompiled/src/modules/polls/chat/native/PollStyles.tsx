@@ -298,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.pollStyleSets = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3461, 6835, 6836, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3460, 6879, 6880, 2]);

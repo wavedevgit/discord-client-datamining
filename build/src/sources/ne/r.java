@@ -3,43 +3,43 @@ package ne;
 public class r {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f38975a;
+    public final int f39023a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f38976b;
+    public final int f39024b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f38977c;
+    public final float f39025c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f38978d;
+    public final long f39026d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f38979a;
+        private int f39027a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f38980b;
+        private int f39028b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f38981c = 1.0f;
+        private float f39029c = 1.0f;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f38982d;
+        private long f39030d;
 
         public b(int i10, int i11) {
-            this.f38979a = i10;
-            this.f38980b = i11;
+            this.f39027a = i10;
+            this.f39028b = i11;
         }
 
         public r a() {
-            return new r(this.f38979a, this.f38980b, this.f38981c, this.f38982d);
+            return new r(this.f39027a, this.f39028b, this.f39029c, this.f39030d);
         }
 
         public b b(float f10) {
-            this.f38981c = f10;
+            this.f39029c = f10;
             return this;
         }
     }
@@ -49,9 +49,9 @@ public class r {
         ne.a.b(z10, "width must be positive, but is: " + i10);
         boolean z11 = i11 > 0;
         ne.a.b(z11, "height must be positive, but is: " + i11);
-        this.f38975a = i10;
-        this.f38976b = i11;
-        this.f38977c = f10;
-        this.f38978d = j10;
+        this.f39023a = i10;
+        this.f39024b = i11;
+        this.f39025c = f10;
+        this.f39026d = j10;
     }
 }

@@ -37,8 +37,8 @@ public /* synthetic */ class CodeBlockContentNode$$serializer implements h0 {
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f31041a;
-        return new KSerializer[]{n2Var, n2Var, jt.h.f31005a};
+        n2 n2Var = n2.f31089a;
+        return new KSerializer[]{n2Var, n2Var, jt.h.f31053a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

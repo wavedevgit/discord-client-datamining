@@ -8,13 +8,13 @@ import okio.BufferedSource;
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final C0410a f29337c = new C0410a(null);
+    public static final C0410a f29385c = new C0410a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final BufferedSource f29338a;
+    private final BufferedSource f29386a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f29339b;
+    private long f29387b;
 
     /* renamed from: iu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -29,8 +29,8 @@ public final class a {
 
     public a(BufferedSource source) {
         Intrinsics.checkNotNullParameter(source, "source");
-        this.f29338a = source;
-        this.f29339b = 262144L;
+        this.f29386a = source;
+        this.f29387b = 262144L;
     }
 
     public final Headers a() {
@@ -45,8 +45,8 @@ public final class a {
     }
 
     public final String b() {
-        String h02 = this.f29338a.h0(this.f29339b);
-        this.f29339b -= h02.length();
+        String h02 = this.f29386a.h0(this.f29387b);
+        this.f29387b -= h02.length();
         return h02;
     }
 }

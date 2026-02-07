@@ -33,28 +33,28 @@ import ks.z2;
 public abstract class j2 extends a0 implements KProperty {
 
     /* renamed from: x  reason: collision with root package name */
-    public static final b f35334x = new b(null);
+    public static final b f35382x = new b(null);
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Object f35335y = new Object();
+    private static final Object f35383y = new Object();
 
     /* renamed from: r  reason: collision with root package name */
-    private final c1 f35336r;
+    private final c1 f35384r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f35337s;
+    private final String f35385s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f35338t;
+    private final String f35386t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Object f35339u;
+    private final Object f35387u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Lazy f35340v;
+    private final Lazy f35388v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final z2.a f35341w;
+    private final z2.a f35389w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static abstract class a extends a0 implements KFunction, KProperty.a {
@@ -117,13 +117,13 @@ public abstract class j2 extends a0 implements KProperty {
     public static abstract class c extends a implements KProperty.b {
 
         /* renamed from: t  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f35342t = {Reflection.property1(new PropertyReference1Impl(c.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/PropertyGetterDescriptor;", 0))};
+        static final /* synthetic */ KProperty[] f35390t = {Reflection.property1(new PropertyReference1Impl(c.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/PropertyGetterDescriptor;", 0))};
 
         /* renamed from: r  reason: collision with root package name */
-        private final z2.a f35343r = z2.c(new k2(this));
+        private final z2.a f35391r = z2.c(new k2(this));
 
         /* renamed from: s  reason: collision with root package name */
-        private final Lazy f35344s = qr.l.b(qr.o.f48044e, new l2(this));
+        private final Lazy f35392s = qr.l.b(qr.o.f48092e, new l2(this));
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final ls.h M(c cVar) {
@@ -143,13 +143,13 @@ public abstract class j2 extends a0 implements KProperty {
 
         @Override // ks.a0
         public ls.h A() {
-            return (ls.h) this.f35344s.getValue();
+            return (ls.h) this.f35392s.getValue();
         }
 
         @Override // ks.j2.a
         /* renamed from: O */
         public PropertyGetterDescriptor I() {
-            Object b10 = this.f35343r.b(this, f35342t[0]);
+            Object b10 = this.f35391r.b(this, f35390t[0]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (PropertyGetterDescriptor) b10;
         }
@@ -179,13 +179,13 @@ public abstract class j2 extends a0 implements KProperty {
     public static abstract class d extends a implements e.a {
 
         /* renamed from: t  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f35345t = {Reflection.property1(new PropertyReference1Impl(d.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/PropertySetterDescriptor;", 0))};
+        static final /* synthetic */ KProperty[] f35393t = {Reflection.property1(new PropertyReference1Impl(d.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/PropertySetterDescriptor;", 0))};
 
         /* renamed from: r  reason: collision with root package name */
-        private final z2.a f35346r = z2.c(new m2(this));
+        private final z2.a f35394r = z2.c(new m2(this));
 
         /* renamed from: s  reason: collision with root package name */
-        private final Lazy f35347s = qr.l.b(qr.o.f48044e, new n2(this));
+        private final Lazy f35395s = qr.l.b(qr.o.f48092e, new n2(this));
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final ls.h M(d dVar) {
@@ -207,13 +207,13 @@ public abstract class j2 extends a0 implements KProperty {
 
         @Override // ks.a0
         public ls.h A() {
-            return (ls.h) this.f35347s.getValue();
+            return (ls.h) this.f35395s.getValue();
         }
 
         @Override // ks.j2.a
         /* renamed from: O */
         public PropertySetterDescriptor I() {
-            Object b10 = this.f35346r.b(this, f35345t[0]);
+            Object b10 = this.f35394r.b(this, f35393t[0]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (PropertySetterDescriptor) b10;
         }
@@ -240,25 +240,25 @@ public abstract class j2 extends a0 implements KProperty {
     }
 
     private j2(c1 c1Var, String str, String str2, PropertyDescriptor propertyDescriptor, Object obj) {
-        this.f35336r = c1Var;
-        this.f35337s = str;
-        this.f35338t = str2;
-        this.f35339u = obj;
-        this.f35340v = qr.l.b(qr.o.f48044e, new h2(this));
+        this.f35384r = c1Var;
+        this.f35385s = str;
+        this.f35386t = str2;
+        this.f35387u = obj;
+        this.f35388v = qr.l.b(qr.o.f48092e, new h2(this));
         z2.a b10 = z2.b(propertyDescriptor, new i2(this));
         Intrinsics.checkNotNullExpressionValue(b10, "lazySoft(...)");
-        this.f35341w = b10;
+        this.f35389w = b10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final PropertyDescriptor I(j2 j2Var) {
-        return j2Var.B().n(j2Var.getName(), j2Var.f35338t);
+        return j2Var.B().n(j2Var.getName(), j2Var.f35386t);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Field J(j2 j2Var) {
         Class<?> enclosingClass;
-        p f10 = e3.f35300a.f(j2Var.D());
+        p f10 = e3.f35348a.f(j2Var.D());
         if (f10 instanceof p.c) {
             p.c cVar = (p.c) f10;
             PropertyDescriptor b10 = cVar.b();
@@ -301,7 +301,7 @@ public abstract class j2 extends a0 implements KProperty {
 
     @Override // ks.a0
     public c1 B() {
-        return this.f35336r;
+        return this.f35384r;
     }
 
     @Override // ks.a0
@@ -311,7 +311,7 @@ public abstract class j2 extends a0 implements KProperty {
 
     @Override // ks.a0
     public boolean G() {
-        if (this.f35339u != CallableReference.NO_RECEIVER) {
+        if (this.f35387u != CallableReference.NO_RECEIVER) {
             return true;
         }
         return false;
@@ -322,7 +322,7 @@ public abstract class j2 extends a0 implements KProperty {
         if (!D().isDelegated()) {
             return null;
         }
-        p f10 = e3.f35300a.f(D());
+        p f10 = e3.f35348a.f(D());
         if (f10 instanceof p.c) {
             p.c cVar = (p.c) f10;
             if (cVar.f().hasDelegateMethod()) {
@@ -337,7 +337,7 @@ public abstract class j2 extends a0 implements KProperty {
     }
 
     public final Object N() {
-        return ls.o.h(this.f35339u, D());
+        return ls.o.h(this.f35387u, D());
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -345,7 +345,7 @@ public abstract class j2 extends a0 implements KProperty {
         Object obj3;
         AccessibleObject accessibleObject;
         try {
-            Object obj4 = f35335y;
+            Object obj4 = f35383y;
             if ((obj != obj4 && obj2 != obj4) || D().getExtensionReceiverParameter() != null) {
                 if (G()) {
                     obj3 = N();
@@ -411,7 +411,7 @@ public abstract class j2 extends a0 implements KProperty {
     @Override // ks.a0
     /* renamed from: P */
     public PropertyDescriptor D() {
-        Object invoke = this.f35341w.invoke();
+        Object invoke = this.f35389w.invoke();
         Intrinsics.checkNotNullExpressionValue(invoke, "invoke(...)");
         return (PropertyDescriptor) invoke;
     }
@@ -419,16 +419,16 @@ public abstract class j2 extends a0 implements KProperty {
     public abstract c Q();
 
     public final Field R() {
-        return (Field) this.f35340v.getValue();
+        return (Field) this.f35388v.getValue();
     }
 
     public final String S() {
-        return this.f35338t;
+        return this.f35386t;
     }
 
     public boolean equals(Object obj) {
         j2 d10 = j3.d(obj);
-        if (d10 == null || !Intrinsics.areEqual(B(), d10.B()) || !Intrinsics.areEqual(getName(), d10.getName()) || !Intrinsics.areEqual(this.f35338t, d10.f35338t) || !Intrinsics.areEqual(this.f35339u, d10.f35339u)) {
+        if (d10 == null || !Intrinsics.areEqual(B(), d10.B()) || !Intrinsics.areEqual(getName(), d10.getName()) || !Intrinsics.areEqual(this.f35386t, d10.f35386t) || !Intrinsics.areEqual(this.f35387u, d10.f35387u)) {
             return false;
         }
         return true;
@@ -436,11 +436,11 @@ public abstract class j2 extends a0 implements KProperty {
 
     @Override // kotlin.reflect.KCallable
     public String getName() {
-        return this.f35337s;
+        return this.f35385s;
     }
 
     public int hashCode() {
-        return (((B().hashCode() * 31) + getName().hashCode()) * 31) + this.f35338t.hashCode();
+        return (((B().hashCode() * 31) + getName().hashCode()) * 31) + this.f35386t.hashCode();
     }
 
     @Override // kotlin.reflect.KProperty
@@ -459,7 +459,7 @@ public abstract class j2 extends a0 implements KProperty {
     }
 
     public String toString() {
-        return d3.f35292a.k(D());
+        return d3.f35340a.k(D());
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
@@ -486,7 +486,7 @@ public abstract class j2 extends a0 implements KProperty {
             java.lang.String r3 = r0.asString()
             java.lang.String r0 = "asString(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r3, r0)
-            ks.e3 r0 = ks.e3.f35300a
+            ks.e3 r0 = ks.e3.f35348a
             ks.p r0 = r0.f(r9)
             java.lang.String r4 = r0.a()
             java.lang.Object r6 = kotlin.jvm.internal.CallableReference.NO_RECEIVER

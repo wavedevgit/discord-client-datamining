@@ -7,7 +7,7 @@ import okio.ByteString;
 public abstract class b {
 
     /* renamed from: a */
-    private static final char[] f49549a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+    private static final char[] f49597a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     /* JADX WARN: Code restructure failed: missing block: B:429:0x01ac, code lost:
         return r4;
@@ -44,6 +44,6 @@ public abstract class b {
     }
 
     public static final char[] f() {
-        return f49549a;
+        return f49597a;
     }
 }

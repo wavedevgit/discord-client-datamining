@@ -7,37 +7,37 @@ import ne.w0;
 public final class b {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final b f31551g = new b(-1, -16777216, 0, 0, -1, null);
+    public static final b f31599g = new b(-1, -16777216, 0, 0, -1, null);
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f31552a;
+    public final int f31600a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f31553b;
+    public final int f31601b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f31554c;
+    public final int f31602c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f31555d;
+    public final int f31603d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f31556e;
+    public final int f31604e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Typeface f31557f;
+    public final Typeface f31605f;
 
     public b(int i10, int i11, int i12, int i13, int i14, Typeface typeface) {
-        this.f31552a = i10;
-        this.f31553b = i11;
-        this.f31554c = i12;
-        this.f31555d = i13;
-        this.f31556e = i14;
-        this.f31557f = typeface;
+        this.f31600a = i10;
+        this.f31601b = i11;
+        this.f31602c = i12;
+        this.f31603d = i13;
+        this.f31604e = i14;
+        this.f31605f = typeface;
     }
 
     public static b a(CaptioningManager.CaptionStyle captionStyle) {
-        if (w0.f39012a >= 21) {
+        if (w0.f39060a >= 21) {
             return c(captionStyle);
         }
         return b(captionStyle);
@@ -56,27 +56,27 @@ public final class b {
         if (captionStyle.hasForegroundColor()) {
             i10 = captionStyle.foregroundColor;
         } else {
-            i10 = f31551g.f31552a;
+            i10 = f31599g.f31600a;
         }
         if (captionStyle.hasBackgroundColor()) {
             i11 = captionStyle.backgroundColor;
         } else {
-            i11 = f31551g.f31553b;
+            i11 = f31599g.f31601b;
         }
         if (captionStyle.hasWindowColor()) {
             i12 = captionStyle.windowColor;
         } else {
-            i12 = f31551g.f31554c;
+            i12 = f31599g.f31602c;
         }
         if (captionStyle.hasEdgeType()) {
             i13 = captionStyle.edgeType;
         } else {
-            i13 = f31551g.f31555d;
+            i13 = f31599g.f31603d;
         }
         if (captionStyle.hasEdgeColor()) {
             i14 = captionStyle.edgeColor;
         } else {
-            i14 = f31551g.f31556e;
+            i14 = f31599g.f31604e;
         }
         return new b(i10, i11, i12, i13, i14, captionStyle.getTypeface());
     }

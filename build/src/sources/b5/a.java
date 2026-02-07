@@ -267,7 +267,7 @@ public final class a implements b5.b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -426,7 +426,7 @@ public final class a implements b5.b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -535,7 +535,7 @@ public final class a implements b5.b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -554,7 +554,7 @@ public final class a implements b5.b {
                 return bitmap;
             }
         }
-        return n.f31493a.a(drawable, mVar.f(), mVar.o(), mVar.n(), mVar.c());
+        return n.f31541a.a(drawable, mVar.f(), mVar.o(), mVar.n(), mVar.c());
     }
 
     /* JADX INFO: Access modifiers changed from: private */

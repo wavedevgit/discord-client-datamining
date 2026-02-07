@@ -11,19 +11,19 @@ import java.util.List;
 public final class o {
 
     /* renamed from: d  reason: collision with root package name */
-    static final o f39430d = new o(n.f39420d, Integer.MAX_VALUE);
+    static final o f39478d = new o(n.f39468d, Integer.MAX_VALUE);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Comparator f39431e = new b();
+    private static final Comparator f39479e = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f39432a;
+    private final List f39480a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n f39433b;
+    private final n f39481b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f39434c;
+    private final int f39482c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b implements Comparator {
@@ -33,10 +33,10 @@ public final class o {
         @Override // java.util.Comparator
         /* renamed from: a */
         public int compare(o oVar, o oVar2) {
-            if (oVar.f39434c < oVar2.f39434c) {
+            if (oVar.f39482c < oVar2.f39482c) {
                 return -1;
             }
-            if (oVar.f39434c > oVar2.f39434c) {
+            if (oVar.f39482c > oVar2.f39482c) {
                 return 1;
             }
             return 0;
@@ -45,9 +45,9 @@ public final class o {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(n nVar, int i10) {
-        this.f39432a = Collections.EMPTY_LIST;
-        this.f39433b = nVar;
-        this.f39434c = i10;
+        this.f39480a = Collections.EMPTY_LIST;
+        this.f39481b = nVar;
+        this.f39482c = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -56,8 +56,8 @@ public final class o {
         if (readInt == 0) {
             n valueOf = n.valueOf(dataInput.readUTF());
             int readInt2 = dataInput.readInt();
-            if (readInt2 == Integer.MAX_VALUE && valueOf == n.f39420d) {
-                return f39430d;
+            if (readInt2 == Integer.MAX_VALUE && valueOf == n.f39468d) {
+                return f39478d;
             }
             return new o(valueOf, readInt2);
         }
@@ -70,14 +70,14 @@ public final class o {
 
     public o b(o oVar) {
         ArrayList arrayList = new ArrayList();
-        arrayList.addAll(this.f39432a);
+        arrayList.addAll(this.f39480a);
         if (arrayList.isEmpty()) {
             arrayList.add(this);
         }
-        if (oVar.f39432a.isEmpty()) {
+        if (oVar.f39480a.isEmpty()) {
             arrayList.add(oVar);
         } else {
-            arrayList.addAll(oVar.f39432a);
+            arrayList.addAll(oVar.f39480a);
         }
         return new o(arrayList);
     }
@@ -85,16 +85,16 @@ public final class o {
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c(h hVar) {
         int a10 = hVar.e().a(hVar.g());
-        int size = this.f39432a.size();
+        int size = this.f39480a.size();
         int i10 = Integer.MIN_VALUE;
         for (int i11 = 0; i11 < size; i11++) {
-            o oVar = (o) this.f39432a.get(i11);
-            if (a10 >= i10 && a10 < oVar.f39434c) {
-                return oVar.f39433b.a(this, hVar);
+            o oVar = (o) this.f39480a.get(i11);
+            if (a10 >= i10 && a10 < oVar.f39482c) {
+                return oVar.f39481b.a(this, hVar);
             }
-            i10 = oVar.f39434c;
+            i10 = oVar.f39482c;
         }
-        return this.f39433b.a(this, hVar);
+        return this.f39481b.a(this, hVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -108,7 +108,7 @@ public final class o {
         }
         if (obj instanceof o) {
             o oVar = (o) obj;
-            if (this.f39432a.equals(oVar.f39432a) && this.f39433b == oVar.f39433b && this.f39434c == oVar.f39434c) {
+            if (this.f39480a.equals(oVar.f39480a) && this.f39481b == oVar.f39481b && this.f39482c == oVar.f39482c) {
                 return true;
             }
         }
@@ -118,64 +118,64 @@ public final class o {
     /* JADX INFO: Access modifiers changed from: package-private */
     public n f(j jVar, int i10) {
         int a10 = jVar.a(i10);
-        int size = this.f39432a.size();
+        int size = this.f39480a.size();
         int i11 = Integer.MIN_VALUE;
         n nVar = null;
         for (int i12 = 0; i12 < size; i12++) {
-            o oVar = (o) this.f39432a.get(i12);
-            if (a10 >= i11 && a10 < oVar.f39434c) {
-                return oVar.f39433b;
+            o oVar = (o) this.f39480a.get(i12);
+            if (a10 >= i11 && a10 < oVar.f39482c) {
+                return oVar.f39481b;
             }
-            i11 = oVar.f39434c;
-            nVar = oVar.f39433b;
+            i11 = oVar.f39482c;
+            nVar = oVar.f39481b;
         }
-        if (a10 == i11 && jVar == j.BYZANTINE && nVar == n.f39422i) {
+        if (a10 == i11 && jVar == j.BYZANTINE && nVar == n.f39470i) {
             return nVar;
         }
-        return this.f39433b;
+        return this.f39481b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(DataOutput dataOutput) {
-        int size = this.f39432a.size();
+        int size = this.f39480a.size();
         dataOutput.writeInt(size);
         if (size == 0) {
-            dataOutput.writeUTF(this.f39433b.name());
-            dataOutput.writeInt(this.f39434c);
+            dataOutput.writeUTF(this.f39481b.name());
+            dataOutput.writeInt(this.f39482c);
             return;
         }
         for (int i10 = 0; i10 < size; i10++) {
-            o oVar = (o) this.f39432a.get(i10);
-            dataOutput.writeUTF(oVar.f39433b.name());
-            dataOutput.writeInt(oVar.f39434c);
+            o oVar = (o) this.f39480a.get(i10);
+            dataOutput.writeUTF(oVar.f39481b.name());
+            dataOutput.writeInt(oVar.f39482c);
         }
     }
 
     public int hashCode() {
-        return (this.f39432a.hashCode() * 17) + (this.f39433b.hashCode() * 37) + this.f39434c;
+        return (this.f39480a.hashCode() * 17) + (this.f39481b.hashCode() * 37) + this.f39482c;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        if (this.f39432a.isEmpty()) {
+        if (this.f39480a.isEmpty()) {
             sb2.append('[');
-            sb2.append(this.f39433b);
-            if (this.f39434c != Integer.MAX_VALUE) {
+            sb2.append(this.f39481b);
+            if (this.f39482c != Integer.MAX_VALUE) {
                 sb2.append("->");
-                sb2.append(this.f39434c);
+                sb2.append(this.f39482c);
             }
         } else {
             boolean z10 = true;
-            for (o oVar : this.f39432a) {
+            for (o oVar : this.f39480a) {
                 if (z10) {
                     sb2.append('[');
                     z10 = false;
                 } else {
                     sb2.append(',');
                 }
-                sb2.append(oVar.f39433b);
+                sb2.append(oVar.f39481b);
                 sb2.append("->");
-                sb2.append(oVar.f39434c);
+                sb2.append(oVar.f39482c);
             }
         }
         sb2.append(']');
@@ -183,21 +183,21 @@ public final class o {
     }
 
     o(List list) {
-        Collections.sort(list, f39431e);
+        Collections.sort(list, f39479e);
         Iterator it = list.iterator();
         o oVar = null;
         while (it.hasNext()) {
             o oVar2 = (o) it.next();
-            if (oVar == null || oVar2.f39434c != oVar.f39434c) {
+            if (oVar == null || oVar2.f39482c != oVar.f39482c) {
                 oVar = oVar2;
-            } else if (oVar2.f39433b == oVar.f39433b) {
+            } else if (oVar2.f39481b == oVar.f39481b) {
                 it.remove();
             } else {
                 throw new IllegalArgumentException("Multiple strategies with overlapping validity range: " + list);
             }
         }
-        this.f39432a = Collections.unmodifiableList(list);
-        this.f39433b = n.f39420d;
-        this.f39434c = Integer.MAX_VALUE;
+        this.f39480a = Collections.unmodifiableList(list);
+        this.f39481b = n.f39468d;
+        this.f39482c = Integer.MAX_VALUE;
     }
 }

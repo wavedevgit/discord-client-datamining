@@ -8,26 +8,26 @@ import rs.l0;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f25504a;
+    private final MutableStateFlow f25552a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f25505b;
+    private final Flow f25553b;
 
     public a(Bitmap bitmap) {
         MutableStateFlow a10 = l0.a(bitmap);
-        this.f25504a = a10;
-        this.f25505b = rs.g.m(a10, 1);
+        this.f25552a = a10;
+        this.f25553b = rs.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f25505b;
+        return this.f25553b;
     }
 
     public final Bitmap b() {
-        return (Bitmap) this.f25504a.getValue();
+        return (Bitmap) this.f25552a.getValue();
     }
 
     public final void c(Bitmap bitmap) {
-        this.f25504a.setValue(bitmap);
+        this.f25552a.setValue(bitmap);
     }
 }

@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'put';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun40223: for (var _fun40223_ip = 0;;) switch (_fun40223_ip) {
+            _fun40230: for (var _fun40230_ip = 0;;) switch (_fun40230_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = this;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.size;
                     var1 = var0.limit;
                     if (!(!(var2 > var1))) {
-                        _fun40223_ip = 63;
-                        continue _fun40223
+                        _fun40230_ip = 63;
+                        continue _fun40230
                     }
                 case 59:
                     var1 = undefined;

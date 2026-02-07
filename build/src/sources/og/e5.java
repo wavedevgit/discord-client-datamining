@@ -5,23 +5,23 @@ import yi.c;
 final class e5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e5 f41891a = new e5();
+    static final e5 f41939a = new e5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f41892b;
+    private static final yi.c f41940b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f41893c;
+    private static final yi.c f41941c;
 
     static {
         c.b a10 = yi.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f41892b = a10.b(fVar.b()).a();
+        f41940b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f41893c = a11.b(fVar2.b()).a();
+        f41941c = a11.b(fVar2.b()).a();
     }
 
     private e5() {

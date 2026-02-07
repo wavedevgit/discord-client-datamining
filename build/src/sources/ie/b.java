@@ -6,10 +6,10 @@ import java.util.List;
 final class b implements zd.g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f26659d;
+    private final List f26707d;
 
     public b(List list) {
-        this.f26659d = Collections.unmodifiableList(list);
+        this.f26707d = Collections.unmodifiableList(list);
     }
 
     @Override // zd.g
@@ -23,7 +23,7 @@ final class b implements zd.g {
     @Override // zd.g
     public List d(long j10) {
         if (j10 >= 0) {
-            return this.f26659d;
+            return this.f26707d;
         }
         return Collections.EMPTY_LIST;
     }

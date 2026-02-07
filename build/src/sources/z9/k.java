@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final k f55996d = new k("VITO_V2", 0);
+    public static final k f56044d = new k("VITO_V2", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final k f55997e = new k("VITO_V1", 1);
+    public static final k f56045e = new k("VITO_V1", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final k f55998i = new k("DRAWEE", 2);
+    public static final k f56046i = new k("DRAWEE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final k f55999o = new k("OTHER", 3);
+    public static final k f56047o = new k("OTHER", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ k[] f56000p;
+    private static final /* synthetic */ k[] f56048p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f56001q;
+    private static final /* synthetic */ EnumEntries f56049q;
 
     static {
         k[] a10 = a();
-        f56000p = a10;
-        f56001q = xr.a.a(a10);
+        f56048p = a10;
+        f56049q = xr.a.a(a10);
     }
 
     private k(String str, int i10) {
     }
 
     private static final /* synthetic */ k[] a() {
-        return new k[]{f55996d, f55997e, f55998i, f55999o};
+        return new k[]{f56044d, f56045e, f56046i, f56047o};
     }
 
     public static k valueOf(String str) {
@@ -42,6 +42,6 @@ public final class k {
     }
 
     public static k[] values() {
-        return (k[]) f56000p.clone();
+        return (k[]) f56048p.clone();
     }
 }

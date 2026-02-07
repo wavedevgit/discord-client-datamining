@@ -12,13 +12,13 @@ import va.y;
 public final class c implements x8.a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f31526c = new a(null);
+    public static final a f31574c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f31527a;
+    private final b f31575a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.facebook.imagepipeline.memory.d f31528b;
+    private final com.facebook.imagepipeline.memory.d f31576b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -44,17 +44,17 @@ public final class c implements x8.a {
 
     public c(y poolFactory) {
         Intrinsics.checkNotNullParameter(poolFactory, "poolFactory");
-        this.f31527a = new b(poolFactory.h());
+        this.f31575a = new b(poolFactory.h());
         com.facebook.imagepipeline.memory.d d10 = poolFactory.d();
         Intrinsics.checkNotNullExpressionValue(d10, "getFlexByteArrayPool(...)");
-        this.f31528b = d10;
+        this.f31576b = d10;
     }
 
     @Override // x8.a
     public Bitmap a(int i10, int i11, Bitmap.Config bitmapConfig) {
         k kVar;
         Intrinsics.checkNotNullParameter(bitmapConfig, "bitmapConfig");
-        CloseableReference a10 = this.f31527a.a((short) i10, (short) i11);
+        CloseableReference a10 = this.f31575a.a((short) i10, (short) i11);
         Intrinsics.checkNotNullExpressionValue(a10, "generate(...)");
         try {
             kVar = new k(a10);
@@ -64,11 +64,11 @@ public final class c implements x8.a {
         }
         try {
             kVar.A1(fa.b.f22997b);
-            BitmapFactory.Options b10 = f31526c.b(kVar.J(), bitmapConfig);
+            BitmapFactory.Options b10 = f31574c.b(kVar.J(), bitmapConfig);
             int size = ((h) a10.J()).size();
             Object J = a10.J();
             Intrinsics.checkNotNullExpressionValue(J, "get(...)");
-            CloseableReference a11 = this.f31528b.a(size + 2);
+            CloseableReference a11 = this.f31576b.a(size + 2);
             Object J2 = a11.J();
             Intrinsics.checkNotNullExpressionValue(J2, "get(...)");
             byte[] bArr = (byte[]) J2;

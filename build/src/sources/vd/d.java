@@ -17,20 +17,20 @@ import ne.s0;
 public final class d implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f52440d = {8, 13, 11, 2, 0, 1, 7};
+    private static final int[] f52488d = {8, 13, 11, 2, 0, 1, 7};
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52441b;
+    private final int f52489b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f52442c;
+    private final boolean f52490c;
 
     public d() {
         this(0, true);
     }
 
     private static void b(int i10, List list) {
-        if (pi.e.h(f52440d, i10) != -1 && !list.contains(Integer.valueOf(i10))) {
+        if (pi.e.h(f52488d, i10) != -1 && !list.contains(Integer.valueOf(i10))) {
             list.add(Integer.valueOf(i10));
         }
     }
@@ -47,7 +47,7 @@ public final class d implements h {
                                 }
                                 return new t(format.f11578i, s0Var);
                             }
-                            return f(this.f52441b, this.f52442c, format, list, s0Var);
+                            return f(this.f52489b, this.f52490c, format, list, s0Var);
                         }
                         return e(s0Var, format, list);
                     }
@@ -102,7 +102,7 @@ public final class d implements h {
         }
         for (int i10 = 0; i10 < metadata.e(); i10++) {
             if (metadata.d(i10) instanceof q) {
-                return !((q) d10).f52552i.isEmpty();
+                return !((q) d10).f52600i.isEmpty();
             }
         }
         return false;
@@ -128,7 +128,7 @@ public final class d implements h {
         int a10 = ne.p.a(format.f11587w);
         int b10 = ne.p.b(map);
         int c10 = ne.p.c(uri);
-        int[] iArr = f52440d;
+        int[] iArr = f52488d;
         ArrayList arrayList = new ArrayList(iArr.length);
         b(a10, arrayList);
         b(b10, arrayList);
@@ -152,7 +152,7 @@ public final class d implements h {
     }
 
     public d(int i10, boolean z10) {
-        this.f52441b = i10;
-        this.f52442c = z10;
+        this.f52489b = i10;
+        this.f52490c = z10;
     }
 }

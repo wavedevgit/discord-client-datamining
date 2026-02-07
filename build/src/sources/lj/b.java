@@ -5,32 +5,32 @@ import com.google.firebase.messaging.j0;
 public final class b {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final b f36299b = new a().a();
+    private static final b f36347b = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final lj.a f36300a;
+    private final lj.a f36348a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private lj.a f36301a = null;
+        private lj.a f36349a = null;
 
         a() {
         }
 
         public b a() {
-            return new b(this.f36301a);
+            return new b(this.f36349a);
         }
 
         public a b(lj.a aVar) {
-            this.f36301a = aVar;
+            this.f36349a = aVar;
             return this;
         }
     }
 
     b(lj.a aVar) {
-        this.f36300a = aVar;
+        this.f36348a = aVar;
     }
 
     public static a b() {
@@ -38,7 +38,7 @@ public final class b {
     }
 
     public lj.a a() {
-        return this.f36300a;
+        return this.f36348a;
     }
 
     public byte[] c() {

@@ -43,13 +43,13 @@ import org.jetbrains.annotations.NotNull;
 public final class DescriptorUtilsKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Name f34165a;
+    private static final Name f34213a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f34166d = new a();
+        public static final a f34214d = new a();
 
         a() {
             super(1, ValueParameterDescriptor.class, "declaresDefaultValue", "declaresDefaultValue()Z", 0);
@@ -66,7 +66,7 @@ public final class DescriptorUtilsKt {
     static {
         Name identifier = Name.identifier("value");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f34165a = identifier;
+        f34213a = identifier;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class DescriptorUtilsKt {
 
     public static final boolean declaresOrInheritsDefaultValue(@NotNull ValueParameterDescriptor valueParameterDescriptor) {
         Intrinsics.checkNotNullParameter(valueParameterDescriptor, "<this>");
-        Boolean ifAny = DFS.ifAny(CollectionsKt.e(valueParameterDescriptor), kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.a.f34169a, a.f34166d);
+        Boolean ifAny = DFS.ifAny(CollectionsKt.e(valueParameterDescriptor), kotlin.reflect.jvm.internal.impl.resolve.descriptorUtil.a.f34217a, a.f34214d);
         Intrinsics.checkNotNullExpressionValue(ifAny, "ifAny(...)");
         return ifAny.booleanValue();
     }
@@ -262,7 +262,7 @@ public final class DescriptorUtilsKt {
     @NotNull
     public static final Sequence<DeclarationDescriptor> getParentsWithSelf(@NotNull DeclarationDescriptor declarationDescriptor) {
         Intrinsics.checkNotNullParameter(declarationDescriptor, "<this>");
-        return k.q(declarationDescriptor, b.f34170d);
+        return k.q(declarationDescriptor, b.f34218d);
     }
 
     @NotNull

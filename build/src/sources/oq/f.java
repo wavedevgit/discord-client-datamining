@@ -12,10 +12,10 @@ public final class f implements Parcelable {
     public static final Parcelable.Creator<f> CREATOR = new b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f43361d;
+    private final a f43409d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f43362e;
+    private final File f43410e;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -23,28 +23,28 @@ public final class f implements Parcelable {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f43363d = new a("Manual", 0);
+        public static final a f43411d = new a("Manual", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f43364e = new a("Auto", 1);
+        public static final a f43412e = new a("Auto", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ a[] f43365i;
+        private static final /* synthetic */ a[] f43413i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f43366o;
+        private static final /* synthetic */ EnumEntries f43414o;
 
         static {
             a[] a10 = a();
-            f43365i = a10;
-            f43366o = xr.a.a(a10);
+            f43413i = a10;
+            f43414o = xr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f43363d, f43364e};
+            return new a[]{f43411d, f43412e};
         }
 
         public static a valueOf(String str) {
@@ -52,7 +52,7 @@ public final class f implements Parcelable {
         }
 
         public static a[] values() {
-            return (a[]) f43365i.clone();
+            return (a[]) f43413i.clone();
         }
     }
 
@@ -75,16 +75,16 @@ public final class f implements Parcelable {
     public f(a captureMethod, File data) {
         Intrinsics.checkNotNullParameter(captureMethod, "captureMethod");
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f43361d = captureMethod;
-        this.f43362e = data;
+        this.f43409d = captureMethod;
+        this.f43410e = data;
     }
 
     public final a a() {
-        return this.f43361d;
+        return this.f43409d;
     }
 
     public final File b() {
-        return this.f43362e;
+        return this.f43410e;
     }
 
     @Override // android.os.Parcelable
@@ -100,26 +100,26 @@ public final class f implements Parcelable {
             return false;
         }
         f fVar = (f) obj;
-        if (this.f43361d == fVar.f43361d && Intrinsics.areEqual(this.f43362e, fVar.f43362e)) {
+        if (this.f43409d == fVar.f43409d && Intrinsics.areEqual(this.f43410e, fVar.f43410e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f43361d.hashCode() * 31) + this.f43362e.hashCode();
+        return (this.f43409d.hashCode() * 31) + this.f43410e.hashCode();
     }
 
     public String toString() {
-        a aVar = this.f43361d;
-        File file = this.f43362e;
+        a aVar = this.f43409d;
+        File file = this.f43410e;
         return "SelfieCapture(captureMethod=" + aVar + ", data=" + file + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43361d.name());
-        dest.writeSerializable(this.f43362e);
+        dest.writeString(this.f43409d.name());
+        dest.writeSerializable(this.f43410e);
     }
 }

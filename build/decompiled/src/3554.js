@@ -4,37 +4,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Object;
-    var1 = var1.prototype;
-    var1 = var1.hasOwnProperty;
-    var _closure1_slot2 = var1;
-    var1 = function arg0() {
-        _fun31721: for (var _fun31721_ip = 0;;) switch (_fun31721_ip) {
+    var1 = function arg0, arg1() {
+        _fun31732: for (var _fun31732_ip = 0;;) switch (_fun31732_ip) {
             case 0:
                 var3 = arg0;
+                var4 = arg1;
                 var0 = this;
-                var1 = var0.__data__;
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var2 = 0;
-                var4 = var4[var2];
-                var2 = undefined;
-                var4 = var5.bind(var2)(var4);
-                if (var4) {
-                    _fun31721_ip = 55;
-                    continue _fun31721
+                var2 = var0.__data__;
+                var5 = var0.size;
+                var1 = var0.has;
+                var6 = var1.bind(var0)(var3);
+                var1 = 1;
+                if (!var6) {
+                    _fun31732_ip = 37;
+                    continue _fun31732
                 }
-            case 38:
-                var4 = _closure1_slot2;
-                var0 = var4.call;
-                var0 = var0.bind(var4)(var1, var3);
-                _fun31721_ip = 63;
-                continue _fun31721;
-            case 55:
-                var1 = var1[var3];
-                var0 = var2 !== var1;
-            case 63:
+            case 35:
+                var1 = 0;
+            case 37:
+                var1 = var5 + var1;
+                var0.size = var1;
+                var6 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 0;
+                var1 = var5[var1];
+                var5 = undefined;
+                var1 = var6.bind(var5)(var1);
+                if (!var1) {
+                    _fun31732_ip = 84;
+                    continue _fun31732
+                }
+            case 74:
+                var1 = '__lodash_hash_undefined__';
+                if (!(var5 !== var4)) {
+                    _fun31732_ip = 87;
+                    continue _fun31732
+                }
+            case 84:
+                var1 = var4;
+            case 87:
+                var2[var3] = var1;
                 return var0;
         }
     };
@@ -42,4 +51,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3551]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3550]);

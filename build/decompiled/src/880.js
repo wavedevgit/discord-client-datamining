@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var4, var3);
     var1.createMetricContainerEnvelopeItem = var2;
     var0 = function arg0, arg1, arg2, arg3() {
-        _fun9343: for (var _fun9343_ip = 0;;) switch (_fun9343_ip) {
+        _fun9345: for (var _fun9345_ip = 0;;) switch (_fun9345_ip) {
             case 0:
                 var4 = arg1;
                 var0 = arg2;
@@ -42,15 +42,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun9343_ip = 26;
-                    continue _fun9343
+                    _fun9345_ip = 26;
+                    continue _fun9345
                 }
             case 20:
                 var1 = var4.sdk;
             case 26:
                 if (!var1) {
-                    _fun9343_ip = 69;
-                    continue _fun9343
+                    _fun9345_ip = 69;
+                    continue _fun9345
                 }
             case 29:
                 var1 = {};
@@ -63,15 +63,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3.sdk = var1;
             case 69:
                 if (!var0) {
-                    _fun9343_ip = 75;
-                    continue _fun9343
+                    _fun9345_ip = 75;
+                    continue _fun9345
                 }
             case 72:
                 var0 = var2;
             case 75:
                 if (!var0) {
-                    _fun9343_ip = 119;
-                    continue _fun9343
+                    _fun9345_ip = 119;
+                    continue _fun9345
                 }
             case 78:
                 var4 = _closure1_slot0;

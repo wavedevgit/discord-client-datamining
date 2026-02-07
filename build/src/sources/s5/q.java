@@ -6,18 +6,18 @@ import java.util.List;
 public class q implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49769a;
+    private final String f49817a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49770b;
+    private final List f49818b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f49771c;
+    private final boolean f49819c;
 
     public q(String str, List list, boolean z10) {
-        this.f49769a = str;
-        this.f49770b = list;
-        this.f49771c = z10;
+        this.f49817a = str;
+        this.f49818b = list;
+        this.f49819c = z10;
     }
 
     @Override // s5.c
@@ -26,18 +26,18 @@ public class q implements c {
     }
 
     public List b() {
-        return this.f49770b;
+        return this.f49818b;
     }
 
     public String c() {
-        return this.f49769a;
+        return this.f49817a;
     }
 
     public boolean d() {
-        return this.f49771c;
+        return this.f49819c;
     }
 
     public String toString() {
-        return "ShapeGroup{name='" + this.f49769a + "' Shapes: " + Arrays.toString(this.f49770b.toArray()) + '}';
+        return "ShapeGroup{name='" + this.f49817a + "' Shapes: " + Arrays.toString(this.f49818b.toArray()) + '}';
     }
 }

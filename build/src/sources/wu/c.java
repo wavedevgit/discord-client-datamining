@@ -10,7 +10,7 @@ import xu.a;
 public final class c implements su.b, xu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f54129a = new c();
+    public static final c f54177a = new c();
 
     private c() {
     }
@@ -65,7 +65,7 @@ public final class c implements su.b, xu.a {
         if (str != null) {
             Object q02 = CollectionsKt.q0(list2, d.b(str));
             if (q02 instanceof List) {
-                return f54129a.c(list.subList(1, list.size()), (List) q02);
+                return f54177a.c(list.subList(1, list.size()), (List) q02);
             }
             return CollectionsKt.q0(list2, d.b(str));
         }

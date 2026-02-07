@@ -10,45 +10,45 @@ public abstract class JvmType {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Primitive f33227a = new Primitive(JvmPrimitiveType.BOOLEAN);
+    private static final Primitive f33275a = new Primitive(JvmPrimitiveType.BOOLEAN);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Primitive f33228b = new Primitive(JvmPrimitiveType.CHAR);
+    private static final Primitive f33276b = new Primitive(JvmPrimitiveType.CHAR);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Primitive f33229c = new Primitive(JvmPrimitiveType.BYTE);
+    private static final Primitive f33277c = new Primitive(JvmPrimitiveType.BYTE);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Primitive f33230d = new Primitive(JvmPrimitiveType.SHORT);
+    private static final Primitive f33278d = new Primitive(JvmPrimitiveType.SHORT);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Primitive f33231e = new Primitive(JvmPrimitiveType.INT);
+    private static final Primitive f33279e = new Primitive(JvmPrimitiveType.INT);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Primitive f33232f = new Primitive(JvmPrimitiveType.FLOAT);
+    private static final Primitive f33280f = new Primitive(JvmPrimitiveType.FLOAT);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Primitive f33233g = new Primitive(JvmPrimitiveType.LONG);
+    private static final Primitive f33281g = new Primitive(JvmPrimitiveType.LONG);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Primitive f33234h = new Primitive(JvmPrimitiveType.DOUBLE);
+    private static final Primitive f33282h = new Primitive(JvmPrimitiveType.DOUBLE);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Array extends JvmType {
 
         /* renamed from: i  reason: collision with root package name */
-        private final JvmType f33235i;
+        private final JvmType f33283i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Array(@NotNull JvmType elementType) {
             super(null);
             Intrinsics.checkNotNullParameter(elementType, "elementType");
-            this.f33235i = elementType;
+            this.f33283i = elementType;
         }
 
         @NotNull
         public final JvmType getElementType() {
-            return this.f33235i;
+            return this.f33283i;
         }
     }
 
@@ -60,42 +60,42 @@ public abstract class JvmType {
 
         @NotNull
         public final Primitive getBOOLEAN$descriptors_jvm() {
-            return JvmType.f33227a;
+            return JvmType.f33275a;
         }
 
         @NotNull
         public final Primitive getBYTE$descriptors_jvm() {
-            return JvmType.f33229c;
+            return JvmType.f33277c;
         }
 
         @NotNull
         public final Primitive getCHAR$descriptors_jvm() {
-            return JvmType.f33228b;
+            return JvmType.f33276b;
         }
 
         @NotNull
         public final Primitive getDOUBLE$descriptors_jvm() {
-            return JvmType.f33234h;
+            return JvmType.f33282h;
         }
 
         @NotNull
         public final Primitive getFLOAT$descriptors_jvm() {
-            return JvmType.f33232f;
+            return JvmType.f33280f;
         }
 
         @NotNull
         public final Primitive getINT$descriptors_jvm() {
-            return JvmType.f33231e;
+            return JvmType.f33279e;
         }
 
         @NotNull
         public final Primitive getLONG$descriptors_jvm() {
-            return JvmType.f33233g;
+            return JvmType.f33281g;
         }
 
         @NotNull
         public final Primitive getSHORT$descriptors_jvm() {
-            return JvmType.f33230d;
+            return JvmType.f33278d;
         }
 
         private Companion() {
@@ -106,18 +106,18 @@ public abstract class JvmType {
     public static final class Object extends JvmType {
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f33236i;
+        private final String f33284i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Object(@NotNull String internalName) {
             super(null);
             Intrinsics.checkNotNullParameter(internalName, "internalName");
-            this.f33236i = internalName;
+            this.f33284i = internalName;
         }
 
         @NotNull
         public final String getInternalName() {
-            return this.f33236i;
+            return this.f33284i;
         }
     }
 
@@ -125,15 +125,15 @@ public abstract class JvmType {
     public static final class Primitive extends JvmType {
 
         /* renamed from: i  reason: collision with root package name */
-        private final JvmPrimitiveType f33237i;
+        private final JvmPrimitiveType f33285i;
 
         public Primitive(JvmPrimitiveType jvmPrimitiveType) {
             super(null);
-            this.f33237i = jvmPrimitiveType;
+            this.f33285i = jvmPrimitiveType;
         }
 
         public final JvmPrimitiveType getJvmPrimitiveType() {
-            return this.f33237i;
+            return this.f33285i;
         }
     }
 
@@ -143,7 +143,7 @@ public abstract class JvmType {
 
     @NotNull
     public String toString() {
-        return JvmTypeFactoryImpl.f33238a.toString(this);
+        return JvmTypeFactoryImpl.f33286a.toString(this);
     }
 
     private JvmType() {

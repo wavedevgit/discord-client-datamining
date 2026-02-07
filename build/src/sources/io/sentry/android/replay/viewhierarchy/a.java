@@ -13,20 +13,20 @@ import qr.l;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f27859a = new a();
+    public static final a f27907a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f27860b = l.a(C0396a.f27862d);
+    private static final Lazy f27908b = l.a(C0396a.f27910d);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final int f27861c = 8;
+    public static final int f27909c = 8;
 
     /* renamed from: io.sentry.android.replay.viewhierarchy.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class C0396a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0396a f27862d = new C0396a();
+        public static final C0396a f27910d = new C0396a();
 
         C0396a() {
             super(0);

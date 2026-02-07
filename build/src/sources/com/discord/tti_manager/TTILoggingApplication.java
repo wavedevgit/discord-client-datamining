@@ -68,7 +68,7 @@ public abstract class TTILoggingApplication extends Application {
     }
 
     static {
-        kotlin.properties.a aVar = kotlin.properties.a.f32095a;
+        kotlin.properties.a aVar = kotlin.properties.a.f32143a;
         applicationOpenedTimestampExcludingActivityLaunchGap$delegate = aVar.a();
         applicationStartedTimestamp$delegate = aVar.a();
         applicationInitializeTimestamp$delegate = aVar.a();

@@ -7,16 +7,16 @@ import ks.l1;
 public class k1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final l1 f35352d;
+    private final l1 f35400d;
 
     public k1(l1 l1Var) {
-        this.f35352d = l1Var;
+        this.f35400d = l1Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         l1.a Y;
-        Y = l1.Y(this.f35352d);
+        Y = l1.Y(this.f35400d);
         return Y;
     }
 }

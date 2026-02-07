@@ -3,45 +3,45 @@ package qg;
 public final class w3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ie f47611a;
+    private final ie f47659a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Boolean f47612b;
+    private final Boolean f47660b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Boolean f47613c;
+    private final Boolean f47661c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final rd f47614d;
+    private final rd f47662d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wh f47615e;
+    private final wh f47663e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ w3(u3 u3Var, v3 v3Var) {
         ie ieVar;
         Boolean bool;
         wh whVar;
-        ieVar = u3Var.f47558a;
-        this.f47611a = ieVar;
-        this.f47612b = null;
-        bool = u3Var.f47559b;
-        this.f47613c = bool;
-        this.f47614d = null;
-        whVar = u3Var.f47560c;
-        this.f47615e = whVar;
+        ieVar = u3Var.f47606a;
+        this.f47659a = ieVar;
+        this.f47660b = null;
+        bool = u3Var.f47607b;
+        this.f47661c = bool;
+        this.f47662d = null;
+        whVar = u3Var.f47608c;
+        this.f47663e = whVar;
     }
 
     public final ie a() {
-        return this.f47611a;
+        return this.f47659a;
     }
 
     public final wh b() {
-        return this.f47615e;
+        return this.f47663e;
     }
 
     public final Boolean c() {
-        return this.f47613c;
+        return this.f47661c;
     }
 
     public final boolean equals(Object obj) {
@@ -52,13 +52,13 @@ public final class w3 {
             return false;
         }
         w3 w3Var = (w3) obj;
-        if (gf.o.a(this.f47611a, w3Var.f47611a) && gf.o.a(null, null) && gf.o.a(this.f47613c, w3Var.f47613c) && gf.o.a(null, null) && gf.o.a(this.f47615e, w3Var.f47615e)) {
+        if (gf.o.a(this.f47659a, w3Var.f47659a) && gf.o.a(null, null) && gf.o.a(this.f47661c, w3Var.f47661c) && gf.o.a(null, null) && gf.o.a(this.f47663e, w3Var.f47663e)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return gf.o.b(this.f47611a, null, this.f47613c, null, this.f47615e);
+        return gf.o.b(this.f47659a, null, this.f47661c, null, this.f47663e);
     }
 }

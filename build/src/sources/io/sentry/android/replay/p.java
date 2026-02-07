@@ -20,22 +20,22 @@ import kotlin.jvm.internal.Lambda;
 public final class p implements Closeable {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f27703p = new a(null);
+    public static final a f27751p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final int f27704q = 8;
+    public static final int f27752q = 8;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicBoolean f27705d;
+    private final AtomicBoolean f27753d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.util.a f27706e;
+    private final io.sentry.util.a f27754e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CopyOnWriteArrayList f27707i;
+    private final CopyOnWriteArrayList f27755i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ArrayList f27708o;
+    private final ArrayList f27756o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -46,21 +46,21 @@ public final class p implements Closeable {
         public static final class C0395a extends Lambda implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ p f27709d;
+            final /* synthetic */ p f27757d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0395a(p pVar) {
                 super(1);
-                this.f27709d = pVar;
+                this.f27757d = pVar;
             }
 
             @Override // kotlin.jvm.functions.Function1
             /* renamed from: a */
             public final ArrayList invoke(ArrayList mViews) {
                 Intrinsics.checkNotNullParameter(mViews, "mViews");
-                a1 a10 = this.f27709d.f27706e.a();
+                a1 a10 = this.f27757d.f27754e.a();
                 try {
-                    ArrayList arrayList = this.f27709d.f27708o;
+                    ArrayList arrayList = this.f27757d.f27756o;
                     arrayList.addAll(mViews);
                     cs.a.a(a10, null);
                     return arrayList;
@@ -75,10 +75,10 @@ public final class p implements Closeable {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void c(p pVar) {
-            if (pVar.f27705d.get()) {
+            if (pVar.f27753d.get()) {
                 return;
             }
-            u.f27784a.e(new C0395a(pVar));
+            u.f27832a.e(new C0395a(pVar));
         }
 
         public final p b() {
@@ -205,14 +205,14 @@ public final class p implements Closeable {
         @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
         /* renamed from: b */
         public boolean add(e eVar) {
-            a1 a10 = p.this.f27706e.a();
+            a1 a10 = p.this.f27754e.a();
             try {
-                for (View view : p.this.f27708o) {
+                for (View view : p.this.f27756o) {
                     if (eVar != null) {
                         eVar.g(view, true);
                     }
                 }
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
                 cs.a.a(a10, null);
                 return super.add(eVar);
             } finally {
@@ -307,18 +307,18 @@ public final class p implements Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27705d.set(true);
-        this.f27707i.clear();
+        this.f27753d.set(true);
+        this.f27755i.clear();
     }
 
     public final CopyOnWriteArrayList m() {
-        return this.f27707i;
+        return this.f27755i;
     }
 
     private p() {
-        this.f27705d = new AtomicBoolean(false);
-        this.f27706e = new io.sentry.util.a();
-        this.f27707i = new c();
-        this.f27708o = new b();
+        this.f27753d = new AtomicBoolean(false);
+        this.f27754e = new io.sentry.util.a();
+        this.f27755i = new c();
+        this.f27756o = new b();
     }
 }

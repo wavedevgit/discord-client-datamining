@@ -36,15 +36,15 @@ public final class TypeParameterReference implements l {
             static {
                 int[] iArr = new int[m.values().length];
                 try {
-                    iArr[m.f34847d.ordinal()] = 1;
+                    iArr[m.f34895d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[m.f34848e.ordinal()] = 2;
+                    iArr[m.f34896e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[m.f34849i.ordinal()] = 3;
+                    iArr[m.f34897i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 $EnumSwitchMapping$0 = iArr;
@@ -71,7 +71,7 @@ public final class TypeParameterReference implements l {
                     sb2.append("in ");
                 }
             } else {
-                Unit unit = Unit.f32008a;
+                Unit unit = Unit.f32056a;
             }
             sb2.append(typeParameter.getName());
             return sb2.toString();

@@ -13,10 +13,10 @@ import java.util.UUID;
 public final class x implements w1 {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final x f28615e = new x("00000000-0000-0000-0000-000000000000".replace("-", ""));
+    public static final x f28663e = new x("00000000-0000-0000-0000-000000000000".replace("-", ""));
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.util.r f28616d;
+    private final io.sentry.util.r f28664d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -50,13 +50,13 @@ public final class x implements w1 {
             return true;
         }
         if (obj != null && x.class == obj.getClass()) {
-            return ((String) this.f28616d.a()).equals(((x) obj).f28616d.a());
+            return ((String) this.f28664d.a()).equals(((x) obj).f28664d.a());
         }
         return false;
     }
 
     public int hashCode() {
-        return ((String) this.f28616d.a()).hashCode();
+        return ((String) this.f28664d.a()).hashCode();
     }
 
     @Override // io.sentry.w1
@@ -65,19 +65,19 @@ public final class x implements w1 {
     }
 
     public String toString() {
-        return (String) this.f28616d.a();
+        return (String) this.f28664d.a();
     }
 
     public x(final UUID uuid) {
         if (uuid != null) {
-            this.f28616d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.t
+            this.f28664d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.t
                 @Override // io.sentry.util.r.a
                 public final Object a() {
                     return x.a(x.this, uuid);
                 }
             });
         } else {
-            this.f28616d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.u
+            this.f28664d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.u
                 @Override // io.sentry.util.r.a
                 public final Object a() {
                     return x7.a();
@@ -91,7 +91,7 @@ public final class x implements w1 {
         if (e10.length() != 32 && e10.length() != 36) {
             throw new IllegalArgumentException("String representation of SentryId has either 32 (UUID no dashes) or 36 characters long (completed UUID). Received: " + str);
         } else if (e10.length() == 36) {
-            this.f28616d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.v
+            this.f28664d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.v
                 @Override // io.sentry.util.r.a
                 public final Object a() {
                     String d10;
@@ -100,7 +100,7 @@ public final class x implements w1 {
                 }
             });
         } else {
-            this.f28616d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.w
+            this.f28664d = new io.sentry.util.r(new r.a() { // from class: io.sentry.protocol.w
                 @Override // io.sentry.util.r.a
                 public final Object a() {
                     return x.b(e10);

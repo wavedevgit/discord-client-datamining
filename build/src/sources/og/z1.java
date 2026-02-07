@@ -5,37 +5,37 @@ import yi.c;
 final class z1 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z1 f42732a = new z1();
+    static final z1 f42780a = new z1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42733b;
+    private static final yi.c f42781b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42734c;
+    private static final yi.c f42782c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42735d;
+    private static final yi.c f42783d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42736e;
+    private static final yi.c f42784e;
 
     static {
         c.b a10 = yi.c.a("remoteModelOptions");
         f fVar = new f();
         fVar.a(1);
-        f42733b = a10.b(fVar.b()).a();
+        f42781b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("localModelOptions");
         f fVar2 = new f();
         fVar2.a(2);
-        f42734c = a11.b(fVar2.b()).a();
+        f42782c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("errorCodes");
         f fVar3 = new f();
         fVar3.a(3);
-        f42735d = a12.b(fVar3.b()).a();
+        f42783d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("modelInitializationMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f42736e = a13.b(fVar4.b()).a();
+        f42784e = a13.b(fVar4.b()).a();
     }
 
     private z1() {

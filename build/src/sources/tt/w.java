@@ -24,29 +24,29 @@ public enum w {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f51098a;
+        static final /* synthetic */ int[] f51146a;
 
         static {
             int[] iArr = new int[w.values().length];
-            f51098a = iArr;
+            f51146a = iArr;
             try {
                 iArr[w.CLDR.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f51098a[w.SIMPLE_DATE_FORMAT.ordinal()] = 2;
+                f51146a[w.SIMPLE_DATE_FORMAT.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f51098a[w.CLDR_24.ordinal()] = 3;
+                f51146a[w.CLDR_24.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f51098a[w.CLDR_DATE.ordinal()] = 4;
+                f51146a[w.CLDR_DATE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f51098a[w.DYNAMIC.ordinal()] = 5;
+                f51146a[w.DYNAMIC.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -130,19 +130,19 @@ public enum w {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         if (i10 == 5) {
-                            dVar.b0(st.a.f50116g, st.v.NARROW);
+                            dVar.b0(st.a.f50164g, st.v.NARROW);
                             dVar.z(net.time4j.f0.D);
                             dVar.L();
                             return;
                         }
                         throw new IllegalArgumentException("Too many pattern letters for month: " + i10);
                     }
-                    dVar.b0(st.a.f50116g, st.v.WIDE);
+                    dVar.b0(st.a.f50164g, st.v.WIDE);
                     dVar.z(net.time4j.f0.D);
                     dVar.L();
                     return;
                 }
-                dVar.b0(st.a.f50116g, st.v.ABBREVIATED);
+                dVar.b0(st.a.f50164g, st.v.ABBREVIATED);
                 dVar.z(net.time4j.f0.D);
                 dVar.L();
                 return;
@@ -158,19 +158,19 @@ public enum w {
             if (i10 != 3) {
                 if (i10 != 4) {
                     if (i10 == 5) {
-                        dVar.b0(st.a.f50116g, st.v.NARROW);
+                        dVar.b0(st.a.f50164g, st.v.NARROW);
                         dVar.A(tVar);
                         dVar.L();
                         return;
                     }
                     throw new IllegalArgumentException("Too many pattern letters for month: " + i10);
                 }
-                dVar.b0(st.a.f50116g, st.v.WIDE);
+                dVar.b0(st.a.f50164g, st.v.WIDE);
                 dVar.A(tVar);
                 dVar.L();
                 return;
             }
-            dVar.b0(st.a.f50116g, st.v.ABBREVIATED);
+            dVar.b0(st.a.f50164g, st.v.ABBREVIATED);
             dVar.A(tVar);
             dVar.L();
         } else if (Enum.class.isAssignableFrom(tVar.getType())) {
@@ -181,7 +181,7 @@ public enum w {
                 dVar.h(pVar, 2);
             }
         } else {
-            dVar.a0(ut.a.f52087m, i10);
+            dVar.a0(ut.a.f52135m, i10);
             dVar.A(tVar);
             dVar.L();
         }
@@ -246,19 +246,19 @@ public enum w {
             if (i10 != 3) {
                 if (i10 != 4) {
                     if (i10 == 5) {
-                        dVar.b0(st.a.f50116g, st.v.NARROW);
+                        dVar.b0(st.a.f50164g, st.v.NARROW);
                         dVar.z(net.time4j.f0.C);
                         dVar.L();
                         return;
                     }
                     throw new IllegalArgumentException("Too many pattern letters for quarter-of-year: " + i10);
                 }
-                dVar.b0(st.a.f50116g, st.v.WIDE);
+                dVar.b0(st.a.f50164g, st.v.WIDE);
                 dVar.z(net.time4j.f0.C);
                 dVar.L();
                 return;
             }
-            dVar.b0(st.a.f50116g, st.v.ABBREVIATED);
+            dVar.b0(st.a.f50164g, st.v.ABBREVIATED);
             dVar.z(net.time4j.f0.C);
             dVar.L();
             return;
@@ -307,7 +307,7 @@ public enum w {
                 dVar.j(net.time4j.g0.O, i10, 8);
                 break;
             case 'B':
-                dVar.b0(st.a.f50116g, z(i10));
+                dVar.b0(st.a.f50164g, z(i10));
                 dVar.e();
                 dVar.L();
                 break;
@@ -360,7 +360,7 @@ public enum w {
                 } else {
                     vVar = st.v.WIDE;
                 }
-                dVar.b0(st.a.f50116g, vVar);
+                dVar.b0(st.a.f50164g, vVar);
                 dVar.z(net.time4j.f0.G);
                 dVar.L();
                 break;
@@ -382,7 +382,7 @@ public enum w {
                 } else {
                     vVar2 = st.v.WIDE;
                 }
-                dVar.b0(st.a.f50116g, vVar2);
+                dVar.b0(st.a.f50164g, vVar2);
                 net.time4j.history.d D = net.time4j.history.d.D(locale);
                 dVar.A((st.t) st.t.class.cast(D.i()));
                 dVar.L();
@@ -400,7 +400,7 @@ public enum w {
                 g(net.time4j.g0.E, c10, dVar, i10, z10);
                 break;
             case 'L':
-                dVar.b0(st.a.f50117h, st.m.STANDALONE);
+                dVar.b0(st.a.f50165h, st.m.STANDALONE);
                 if (!z10) {
                     i11 = i10;
                 }
@@ -477,7 +477,7 @@ public enum w {
                 } else {
                     z11 = z(i10);
                 }
-                dVar.b0(st.a.f50116g, z11);
+                dVar.b0(st.a.f50164g, z11);
                 dVar.z(net.time4j.g0.B);
                 dVar.L();
                 if (w(xVar).equals("ethiopic")) {
@@ -491,13 +491,13 @@ public enum w {
                 }
                 break;
             case 'b':
-                dVar.b0(st.a.f50116g, z(i10));
+                dVar.b0(st.a.f50164g, z(i10));
                 dVar.f();
                 dVar.L();
                 break;
             case 'c':
                 if (i10 != 2) {
-                    dVar.b0(st.a.f50117h, st.m.STANDALONE);
+                    dVar.b0(st.a.f50165h, st.m.STANDALONE);
                     if (i10 == 1) {
                         dVar.h(a1.j(locale).i(), 1);
                     } else {
@@ -532,13 +532,13 @@ public enum w {
                 g(net.time4j.g0.H, c10, dVar, i10, z10);
                 break;
             case 'q':
-                dVar.b0(st.a.f50117h, st.m.STANDALONE);
+                dVar.b0(st.a.f50165h, st.m.STANDALONE);
                 i(dVar, i10);
                 dVar.L();
                 break;
             case MediaEngine.MAX_SUPPORTED_PROTOCOL_VERSION /* 114 */:
-                dVar.b0(st.a.f50121l, st.j.f50170d);
-                dVar.Z(st.a.f50122m, '0');
+                dVar.b0(st.a.f50169l, st.j.f50218d);
+                dVar.Z(st.a.f50170m, '0');
                 dVar.E(net.time4j.f0.A, i10, true);
                 dVar.L();
                 dVar.L();
@@ -557,7 +557,7 @@ public enum w {
                         if (it.hasNext()) {
                             rt.p pVar = (rt.p) it.next();
                             if (pVar.d() == c10) {
-                                a1 a1Var = a1.f39075x;
+                                a1 a1Var = a1.f39123x;
                                 if (pVar.equals(a1Var.n())) {
                                     n10 = a1Var.n();
                                 }
@@ -613,18 +613,18 @@ public enum w {
                     if (i10 != 2) {
                         if (i10 != 3) {
                             if (i10 == 4) {
-                                dVar.b0(st.a.f50116g, st.v.WIDE);
+                                dVar.b0(st.a.f50164g, st.v.WIDE);
                             } else {
                                 throw new IllegalArgumentException("Illegal count of symbols: " + c10);
                             }
                         } else {
-                            dVar.b0(st.a.f50116g, st.v.ABBREVIATED);
+                            dVar.b0(st.a.f50164g, st.v.ABBREVIATED);
                         }
                     } else {
-                        dVar.b0(st.a.f50116g, st.v.SHORT);
+                        dVar.b0(st.a.f50164g, st.v.SHORT);
                     }
                 } else {
-                    dVar.b0(st.a.f50116g, st.v.NARROW);
+                    dVar.b0(st.a.f50164g, st.v.NARROW);
                 }
                 if (z11) {
                     dVar.A((st.t) k(s10));
@@ -771,7 +771,7 @@ public enum w {
                                                 } else {
                                                     throw new IllegalArgumentException("Too many pattern letters (E): " + i10);
                                                 }
-                                                dVar.b0(st.a.f50116g, vVar2);
+                                                dVar.b0(st.a.f50164g, vVar2);
                                                 dVar.A(tVar);
                                                 dVar.L();
                                                 break;
@@ -792,7 +792,7 @@ public enum w {
                                                 } else {
                                                     throw new IllegalArgumentException("Too many pattern letters (G): " + i10);
                                                 }
-                                                dVar.b0(st.a.f50116g, vVar3);
+                                                dVar.b0(st.a.f50164g, vVar3);
                                                 dVar.A(tVar);
                                                 dVar.L();
                                                 break;
@@ -800,7 +800,7 @@ public enum w {
                                                 switch (c10) {
                                                     case 'c':
                                                         if (i10 != 2) {
-                                                            dVar.b0(st.a.f50117h, st.m.STANDALONE);
+                                                            dVar.b0(st.a.f50165h, st.m.STANDALONE);
                                                             if (i10 == 1) {
                                                                 dVar.h((rt.p) k(r10), 1);
                                                             } else {
@@ -814,7 +814,7 @@ public enum w {
                                                     case 'd':
                                                         if (pVar == null) {
                                                             if (i10 <= 2) {
-                                                                dVar.a0(ut.a.f52087m, i10);
+                                                                dVar.a0(ut.a.f52135m, i10);
                                                                 dVar.A(tVar);
                                                                 dVar.L();
                                                                 break;
@@ -839,7 +839,7 @@ public enum w {
                                         }
                                     } else {
                                         if (locale.getLanguage().equals("am") && w(xVar).equals("ethiopic")) {
-                                            dVar.b0(st.a.f50121l, st.j.f50176r);
+                                            dVar.b0(st.a.f50169l, st.j.f50224r);
                                         } else {
                                             z10 = false;
                                         }
@@ -856,8 +856,8 @@ public enum w {
                                     g(pVar, c10, dVar, i10, false);
                                 }
                             } else {
-                                dVar.b0(st.a.f50121l, st.j.f50170d);
-                                dVar.Z(st.a.f50122m, '0');
+                                dVar.b0(st.a.f50169l, st.j.f50218d);
+                                dVar.Z(st.a.f50170m, '0');
                                 dVar.E(pVar, i10, true);
                                 dVar.L();
                                 dVar.L();
@@ -877,7 +877,7 @@ public enum w {
                         } else {
                             throw new IllegalArgumentException("Too many pattern letters (U): " + i10);
                         }
-                        dVar.b0(st.a.f50116g, vVar);
+                        dVar.b0(st.a.f50164g, vVar);
                         dVar.A(tVar);
                         dVar.L();
                     } else {
@@ -887,7 +887,7 @@ public enum w {
                     f(dVar, i10, tVar);
                 }
             } else {
-                dVar.b0(st.a.f50117h, st.m.STANDALONE);
+                dVar.b0(st.a.f50165h, st.m.STANDALONE);
                 f(dVar, i10, tVar);
                 dVar.L();
             }
@@ -939,7 +939,7 @@ public enum w {
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map C(c.d dVar, Locale locale, char c10, int i10) {
         rt.x x10 = x(dVar);
-        int i11 = a.f51098a[ordinal()];
+        int i11 = a.f51146a[ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {

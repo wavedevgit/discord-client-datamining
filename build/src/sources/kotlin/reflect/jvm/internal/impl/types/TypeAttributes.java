@@ -21,7 +21,7 @@ public final class TypeAttributes extends AttributeArrayOwner<TypeAttribute<?>, 
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final TypeAttributes f34603e = new TypeAttributes(CollectionsKt.l());
+    private static final TypeAttributes f34651e = new TypeAttributes(CollectionsKt.l());
 
     @SourceDebugExtension({"SMAP\nTypeAttributes.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TypeAttributes.kt\norg/jetbrains/kotlin/types/TypeAttributes$Companion\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,133:1\n1#2:134\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -68,7 +68,7 @@ public final class TypeAttributes extends AttributeArrayOwner<TypeAttribute<?>, 
 
         @NotNull
         public final TypeAttributes getEmpty() {
-            return TypeAttributes.f34603e;
+            return TypeAttributes.f34651e;
         }
 
         private Companion() {

@@ -13,12 +13,12 @@ public final class h extends l {
     private final transient p G;
 
     /* renamed from: id  reason: collision with root package name */
-    private final k f39573id;
+    private final k f39621id;
     private final boolean strict;
     private final TimeZone tz;
 
     h() {
-        this.f39573id = null;
+        this.f39621id = null;
         this.tz = null;
         this.strict = false;
         this.G = null;
@@ -43,7 +43,7 @@ public final class h extends l {
     }
 
     private Object readResolve() {
-        k kVar = this.f39573id;
+        k kVar = this.f39621id;
         if (kVar == null) {
             return new h();
         }
@@ -92,7 +92,7 @@ public final class h extends l {
             i15 = (((gVar.h() * 3600) + (gVar.e() * 60) + gVar.d()) * 1000) + (gVar.a() / 1000000);
         }
         int i16 = i15;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -103,7 +103,7 @@ public final class h extends l {
     @Override // net.time4j.tz.l
     public p B(pt.f fVar) {
         TimeZone timeZone;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             p pVar = this.G;
@@ -118,9 +118,9 @@ public final class h extends l {
     @Override // net.time4j.tz.l
     public o E() {
         if (this.strict) {
-            return l.f39580p;
+            return l.f39628p;
         }
-        return l.f39579o;
+        return l.f39627o;
     }
 
     @Override // net.time4j.tz.l
@@ -129,7 +129,7 @@ public final class h extends l {
         if (this.G != null) {
             return false;
         }
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -158,7 +158,7 @@ public final class h extends l {
         int e10 = gVar.e();
         int d10 = gVar.d();
         int a10 = gVar.a() / 1000000;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -174,12 +174,12 @@ public final class h extends l {
 
     @Override // net.time4j.tz.l
     public l Q(o oVar) {
-        if (this.f39573id != null && E() != oVar) {
-            if (oVar == l.f39579o) {
-                return new h(this.f39573id, this.tz, false);
+        if (this.f39621id != null && E() != oVar) {
+            if (oVar == l.f39627o) {
+                return new h(this.f39621id, this.tz, false);
             }
-            if (oVar == l.f39580p) {
-                return new h(this.f39573id, this.tz, true);
+            if (oVar == l.f39628p) {
+                return new h(this.f39621id, this.tz, true);
             }
             throw new UnsupportedOperationException(oVar.toString());
         }
@@ -189,7 +189,7 @@ public final class h extends l {
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean T() {
         TimeZone timeZone;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -200,8 +200,8 @@ public final class h extends l {
     public boolean equals(Object obj) {
         if (obj instanceof h) {
             h hVar = (h) obj;
-            if (this.f39573id == null) {
-                if (hVar.f39573id != null) {
+            if (this.f39621id == null) {
+                if (hVar.f39621id != null) {
                     return false;
                 }
                 return true;
@@ -220,7 +220,7 @@ public final class h extends l {
     }
 
     public int hashCode() {
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             return 0;
         }
         return this.tz.hashCode();
@@ -228,7 +228,7 @@ public final class h extends l {
 
     public String toString() {
         TimeZone timeZone;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -245,7 +245,7 @@ public final class h extends l {
     @Override // net.time4j.tz.l
     public String w(d dVar, Locale locale) {
         TimeZone timeZone;
-        if (this.f39573id == null) {
+        if (this.f39621id == null) {
             timeZone = TimeZone.getDefault();
         } else {
             timeZone = this.tz;
@@ -264,7 +264,7 @@ public final class h extends l {
 
     @Override // net.time4j.tz.l
     public k z() {
-        k kVar = this.f39573id;
+        k kVar = this.f39621id;
         if (kVar == null) {
             return new e(TimeZone.getDefault().getID());
         }
@@ -282,7 +282,7 @@ public final class h extends l {
     }
 
     private h(k kVar, TimeZone timeZone, boolean z10) {
-        this.f39573id = kVar;
+        this.f39621id = kVar;
         TimeZone timeZone2 = (TimeZone) timeZone.clone();
         this.tz = timeZone2;
         this.strict = z10;

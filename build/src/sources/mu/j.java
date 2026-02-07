@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f38322a;
+    private final a f38370a;
 
     /* renamed from: b  reason: collision with root package name */
-    private k f38323b;
+    private k f38371b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public interface a {
@@ -21,18 +21,18 @@ public final class j implements k {
 
     public j(a socketAdapterFactory) {
         Intrinsics.checkNotNullParameter(socketAdapterFactory, "socketAdapterFactory");
-        this.f38322a = socketAdapterFactory;
+        this.f38370a = socketAdapterFactory;
     }
 
     private final synchronized k e(SSLSocket sSLSocket) {
         try {
-            if (this.f38323b == null && this.f38322a.b(sSLSocket)) {
-                this.f38323b = this.f38322a.c(sSLSocket);
+            if (this.f38371b == null && this.f38370a.b(sSLSocket)) {
+                this.f38371b = this.f38370a.c(sSLSocket);
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f38323b;
+        return this.f38371b;
     }
 
     @Override // mu.k
@@ -43,7 +43,7 @@ public final class j implements k {
     @Override // mu.k
     public boolean b(SSLSocket sslSocket) {
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        return this.f38322a.b(sslSocket);
+        return this.f38370a.b(sslSocket);
     }
 
     @Override // mu.k

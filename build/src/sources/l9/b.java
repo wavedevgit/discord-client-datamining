@@ -9,35 +9,35 @@ import com.facebook.drawee.drawable.f;
 public class b extends f implements b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    Drawable f35899d;
+    Drawable f35947d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c0 f35900e;
+    private c0 f35948e;
 
     public b(Drawable drawable) {
         super(drawable);
-        this.f35899d = null;
+        this.f35947d = null;
     }
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         if (isVisible()) {
-            c0 c0Var = this.f35900e;
+            c0 c0Var = this.f35948e;
             if (c0Var != null) {
                 c0Var.onDraw();
             }
             super.draw(canvas);
-            Drawable drawable = this.f35899d;
+            Drawable drawable = this.f35947d;
             if (drawable != null) {
                 drawable.setBounds(getBounds());
-                this.f35899d.draw(canvas);
+                this.f35947d.draw(canvas);
             }
         }
     }
 
     @Override // com.facebook.drawee.drawable.b0
     public void g(c0 c0Var) {
-        this.f35900e = c0Var;
+        this.f35948e = c0Var;
     }
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
@@ -51,13 +51,13 @@ public class b extends f implements b0 {
     }
 
     public void i(Drawable drawable) {
-        this.f35899d = drawable;
+        this.f35947d = drawable;
         invalidateSelf();
     }
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
     public boolean setVisible(boolean z10, boolean z11) {
-        c0 c0Var = this.f35900e;
+        c0 c0Var = this.f35948e;
         if (c0Var != null) {
             c0Var.m(z10);
         }

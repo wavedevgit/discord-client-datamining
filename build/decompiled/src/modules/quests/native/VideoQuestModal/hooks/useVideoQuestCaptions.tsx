@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/VideoQuestModal/hooks/useVideoQuestCaptions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun84038: for (var _fun84038_ip = 0;;) switch (_fun84038_ip) {
+        _fun84469: for (var _fun84469_ip = 0;;) switch (_fun84469_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var10 == var1;
                 var6 = undefined;
                 if (var3) {
-                    _fun84038_ip = 84;
-                    continue _fun84038
+                    _fun84469_ip = 84;
+                    continue _fun84469
                 }
             case 79:
                 var6 = var1.url;
@@ -93,13 +93,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var6;
                 var0 = function() { // Environment: var0
-                    _fun84039: for (var _fun84039_ip = 0;;) switch (_fun84039_ip) {
+                    _fun84470: for (var _fun84470_ip = 0;;) switch (_fun84470_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun84039_ip = 41;
-                                continue _fun84039
+                                _fun84470_ip = 41;
+                                continue _fun84470
                             }
                         case 15:
                             var3 = _closure2_slot1;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1.NONE;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun84039_ip = 132;
-                            continue _fun84039;
+                            _fun84470_ip = 132;
+                            continue _fun84470;
                         case 41:
                             var3 = _closure1_slot0;
                             var2 = _closure1_slot1;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var2.bind(var3)(var1);
                             var2 = var3.then;
                             var1 = function(arg0) { // Environment: var0
-                                _fun84040: for (var _fun84040_ip = 0;;) switch (_fun84040_ip) {
+                                _fun84471: for (var _fun84471_ip = 0;;) switch (_fun84471_ip) {
                                     case 0:
                                         var1 = arg0;
                                     case 3: // try_start_0
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                         var0 = var0.SUCCESS;
                                         var0 = var1.bind(var2)(var0);
                                     case 81: // try_end0
-                                        _fun84040_ip = 112;
-                                        continue _fun84040;
+                                        _fun84471_ip = 112;
+                                        continue _fun84471;
                                     case 83: // catch_target0
                                         CatchBlockStart(arg_register = 0);
                                         var2 = _closure2_slot1;
@@ -186,4 +186,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVideoQuestCaptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5291, 507, 10759, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5338, 507, 10797, 2]);

@@ -3,99 +3,99 @@ package ir;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final jr.c f29294a;
+    private final jr.c f29342a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final mr.a f29295b;
+    private final mr.a f29343b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final or.a f29296c;
+    private final or.a f29344c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f29297d;
+    private final c f29345d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final nr.a f29298e;
+    private final nr.a f29346e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final mr.d f29299f;
+    private final mr.d f29347f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final j f29300g;
+    private final j f29348g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private jr.c f29301a;
+        private jr.c f29349a;
 
         /* renamed from: b  reason: collision with root package name */
-        private mr.a f29302b;
+        private mr.a f29350b;
 
         /* renamed from: c  reason: collision with root package name */
-        private or.a f29303c;
+        private or.a f29351c;
 
         /* renamed from: d  reason: collision with root package name */
-        private c f29304d;
+        private c f29352d;
 
         /* renamed from: e  reason: collision with root package name */
-        private nr.a f29305e;
+        private nr.a f29353e;
 
         /* renamed from: f  reason: collision with root package name */
-        private mr.d f29306f;
+        private mr.d f29354f;
 
         /* renamed from: g  reason: collision with root package name */
-        private j f29307g;
+        private j f29355g;
 
         public g h(jr.c cVar, j jVar) {
-            this.f29301a = cVar;
-            this.f29307g = jVar;
-            if (this.f29302b == null) {
-                this.f29302b = mr.a.a();
+            this.f29349a = cVar;
+            this.f29355g = jVar;
+            if (this.f29350b == null) {
+                this.f29350b = mr.a.a();
             }
-            if (this.f29303c == null) {
-                this.f29303c = new or.b();
+            if (this.f29351c == null) {
+                this.f29351c = new or.b();
             }
-            if (this.f29304d == null) {
-                this.f29304d = new d();
+            if (this.f29352d == null) {
+                this.f29352d = new d();
             }
-            if (this.f29305e == null) {
-                this.f29305e = nr.a.a();
+            if (this.f29353e == null) {
+                this.f29353e = nr.a.a();
             }
-            if (this.f29306f == null) {
-                this.f29306f = new mr.e();
+            if (this.f29354f == null) {
+                this.f29354f = new mr.e();
             }
             return new g(this);
         }
     }
 
     public nr.a a() {
-        return this.f29298e;
+        return this.f29346e;
     }
 
     public c b() {
-        return this.f29297d;
+        return this.f29345d;
     }
 
     public j c() {
-        return this.f29300g;
+        return this.f29348g;
     }
 
     public or.a d() {
-        return this.f29296c;
+        return this.f29344c;
     }
 
     public jr.c e() {
-        return this.f29294a;
+        return this.f29342a;
     }
 
     private g(b bVar) {
-        this.f29294a = bVar.f29301a;
-        this.f29295b = bVar.f29302b;
-        this.f29296c = bVar.f29303c;
-        this.f29297d = bVar.f29304d;
-        this.f29298e = bVar.f29305e;
-        this.f29299f = bVar.f29306f;
-        this.f29300g = bVar.f29307g;
+        this.f29342a = bVar.f29349a;
+        this.f29343b = bVar.f29350b;
+        this.f29344c = bVar.f29351c;
+        this.f29345d = bVar.f29352d;
+        this.f29346e = bVar.f29353e;
+        this.f29347f = bVar.f29354f;
+        this.f29348g = bVar.f29355g;
     }
 }

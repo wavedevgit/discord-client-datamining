@@ -18,14 +18,14 @@ import java.util.zip.ZipFile;
 public final class o {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Pattern f26017b = Pattern.compile("lib/([^/]+)/(.*\\.so)$");
+    private static final Pattern f26065b = Pattern.compile("lib/([^/]+)/(.*\\.so)$");
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f26018a;
+    private final f f26066a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(f fVar) {
-        this.f26018a = fVar;
+        this.f26066a = fVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -50,7 +50,7 @@ public final class o {
             Enumeration<? extends ZipEntry> entries = zipFile.entries();
             while (entries.hasMoreElements()) {
                 ZipEntry nextElement = entries.nextElement();
-                Matcher matcher = f26017b.matcher(nextElement.getName());
+                Matcher matcher = f26065b.matcher(nextElement.getName());
                 if (matcher.matches()) {
                     String group = matcher.group(1);
                     String group2 = matcher.group(2);
@@ -68,11 +68,11 @@ public final class o {
                 if (hashMap.containsKey(str)) {
                     Log.d("SplitCompat", String.format("NativeLibraryExtractor: there are native libraries for supported ABI %s; will use this ABI", str));
                     for (n nVar : (Set) hashMap.get(str)) {
-                        if (hashMap2.containsKey(nVar.f26015a)) {
-                            Log.d("SplitCompat", String.format("NativeLibraryExtractor: skipping library %s for ABI %s; already present for a better ABI", nVar.f26015a, str));
+                        if (hashMap2.containsKey(nVar.f26063a)) {
+                            Log.d("SplitCompat", String.format("NativeLibraryExtractor: skipping library %s for ABI %s; already present for a better ABI", nVar.f26063a, str));
                         } else {
-                            hashMap2.put(nVar.f26015a, nVar);
-                            Log.d("SplitCompat", String.format("NativeLibraryExtractor: using library %s for ABI %s", nVar.f26015a, str));
+                            hashMap2.put(nVar.f26063a, nVar);
+                            Log.d("SplitCompat", String.format("NativeLibraryExtractor: using library %s for ABI %s", nVar.f26063a, str));
                         }
                     }
                 } else {
@@ -99,9 +99,9 @@ public final class o {
         Iterator it = set.iterator();
         while (it.hasNext()) {
             n nVar = (n) it.next();
-            File c10 = this.f26018a.c(uVar.b(), nVar.f26015a);
+            File c10 = this.f26066a.c(uVar.b(), nVar.f26063a);
             boolean z10 = false;
-            if (c10.exists() && c10.length() == nVar.f26016b.getSize() && f.p(c10)) {
+            if (c10.exists() && c10.length() == nVar.f26064b.getSize() && f.p(c10)) {
                 z10 = true;
             }
             mVar.a(nVar, c10, z10);
@@ -122,8 +122,8 @@ public final class o {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Set c() {
         Log.d("SplitCompat", "NativeLibraryExtractor: synchronizing native libraries");
-        Set<u> j10 = this.f26018a.j();
-        for (String str : this.f26018a.h()) {
+        Set<u> j10 = this.f26066a.j();
+        for (String str : this.f26066a.h()) {
             Iterator it = j10.iterator();
             while (true) {
                 if (it.hasNext()) {
@@ -132,7 +132,7 @@ public final class o {
                     }
                 } else {
                     Log.i("SplitCompat", String.format("NativeLibraryExtractor: extracted split '%s' has no corresponding split; deleting", str));
-                    this.f26018a.n(str);
+                    this.f26066a.n(str);
                     break;
                 }
             }
@@ -141,10 +141,10 @@ public final class o {
         for (u uVar : j10) {
             HashSet hashSet2 = new HashSet();
             e(uVar, new j(this, hashSet2, uVar));
-            for (File file : this.f26018a.i(uVar.b())) {
+            for (File file : this.f26066a.i(uVar.b())) {
                 if (!hashSet2.contains(file)) {
                     Log.i("SplitCompat", String.format("NativeLibraryExtractor: file '%s' found in split '%s' that is not in the split file '%s'; removing", file.getAbsolutePath(), uVar.b(), uVar.a().getAbsolutePath()));
-                    this.f26018a.o(file);
+                    this.f26066a.o(file);
                 }
             }
             hashSet.addAll(hashSet2);

@@ -5,7 +5,7 @@ import yi.c;
 final class u7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u7 f47564a = new u7();
+    static final u7 f47612a = new u7();
 
     static {
         c.b a10 = yi.c.a("cameraId");

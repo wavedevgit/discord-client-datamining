@@ -15,25 +15,25 @@ public final class h implements r {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f54818a;
+        static final /* synthetic */ int[] f54866a;
 
         static {
             int[] iArr = new int[v.values().length];
-            f54818a = iArr;
+            f54866a = iArr;
             try {
                 iArr[v.WIDE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f54818a[v.ABBREVIATED.ordinal()] = 2;
+                f54866a[v.ABBREVIATED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f54818a[v.SHORT.ordinal()] = 3;
+                f54866a[v.SHORT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f54818a[v.NARROW.ordinal()] = 4;
+                f54866a[v.NARROW.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -42,7 +42,7 @@ public final class h implements r {
     private static String F(char c10, v vVar, n nVar) {
         StringBuilder sb2 = new StringBuilder(3);
         sb2.append(c10);
-        int i10 = a.f54818a[vVar.ordinal()];
+        int i10 = a.f54866a[vVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2 && i10 != 3) {
                 if (i10 == 4) {
@@ -77,7 +77,7 @@ public final class h implements r {
     private static String H(v vVar, String str) {
         StringBuilder sb2 = new StringBuilder();
         sb2.append('L');
-        int i10 = a.f54818a[vVar.ordinal()];
+        int i10 = a.f54866a[vVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2 && i10 != 3) {
                 if (i10 == 4) {

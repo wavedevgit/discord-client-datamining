@@ -9,27 +9,27 @@ import java.util.concurrent.TimeUnit;
 public final class g extends n3.a implements ff.n {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Semaphore f56247o;
+    private final Semaphore f56295o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Set f56248p;
+    private final Set f56296p;
 
     public g(Context context, Set set) {
         super(context);
-        this.f56247o = new Semaphore(0);
-        this.f56248p = set;
+        this.f56295o = new Semaphore(0);
+        this.f56296p = set;
     }
 
     @Override // n3.a
     public final /* bridge */ /* synthetic */ Object C() {
         int i10 = 0;
-        for (ef.e eVar : this.f56248p) {
+        for (ef.e eVar : this.f56296p) {
             if (eVar.d(this)) {
                 i10++;
             }
         }
         try {
-            this.f56247o.tryAcquire(i10, 5L, TimeUnit.SECONDS);
+            this.f56295o.tryAcquire(i10, 5L, TimeUnit.SECONDS);
             return null;
         } catch (InterruptedException e10) {
             Log.i("GACSignInLoader", "Unexpected InterruptedException", e10);
@@ -40,7 +40,7 @@ public final class g extends n3.a implements ff.n {
 
     @Override // n3.b
     protected final void p() {
-        this.f56247o.drainPermits();
+        this.f56295o.drainPermits();
         h();
     }
 }

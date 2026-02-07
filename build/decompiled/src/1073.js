@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun10995: for (var _fun10995_ip = 0;;) switch (_fun10995_ip) {
+    _fun10997: for (var _fun10997_ip = 0;;) switch (_fun10997_ip) {
         case 0:
             var1 = exports;
             var2 = global;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = typeof var0;
             var0 = var3 === var0;
             if (var0) {
-                _fun10995_ip = 73;
-                continue _fun10995
+                _fun10997_ip = 73;
+                continue _fun10997
             }
         case 67:
             var0 = var2.__SENTRY_DEBUG__;

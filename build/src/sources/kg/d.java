@@ -3,24 +3,24 @@ package kg;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f31653a;
+    public static final com.google.android.gms.common.d f31701a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f31654b;
+    public static final com.google.android.gms.common.d f31702b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f31655c;
+    public static final com.google.android.gms.common.d f31703c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f31656d;
+    public static final com.google.android.gms.common.d[] f31704d;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("GET_CREDENTIAL", 1L);
-        f31653a = dVar;
+        f31701a = dVar;
         com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("CREDENTIAL_REGISTRY", 1L);
-        f31654b = dVar2;
+        f31702b = dVar2;
         com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("CLEAR_REGISTRY", 1L);
-        f31655c = dVar3;
-        f31656d = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3};
+        f31703c = dVar3;
+        f31704d = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3};
     }
 }

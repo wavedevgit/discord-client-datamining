@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_badge/GuildBadgeConstants.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun59909: for (var _fun59909_ip = 0;;) switch (_fun59909_ip) {
+        _fun60360: for (var _fun60360_ip = 0;;) switch (_fun60360_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildVisibility;
                 var0 = var0.PUBLIC;
                 if (!(var2 !== var0)) {
-                    _fun59909_ip = 198;
-                    continue _fun59909
+                    _fun60360_ip = 198;
+                    continue _fun60360
                 }
             case 49:
                 var4 = _closure1_slot0;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GuildVisibility;
                 var0 = var0.APPLY_TO_JOIN;
                 if (!(var2 !== var0)) {
-                    _fun59909_ip = 139;
-                    continue _fun59909
+                    _fun60360_ip = 139;
+                    continue _fun60360
                 }
             case 82:
                 var6 = _closure1_slot0;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.TME4LJ;
                 var2 = var2.bind(var4)(var0);
-                _fun59909_ip = 196;
-                continue _fun59909;
+                _fun60360_ip = 196;
+                continue _fun60360;
             case 139:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.YwZfbt;
                 var2 = var4.bind(var6)(var0);
             case 196:
-                _fun59909_ip = 253;
-                continue _fun59909;
+                _fun60360_ip = 253;
+                continue _fun60360;
             case 198:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.STAFF;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 1077;
-                    continue _fun59909
+                    _fun60360_ip = 1077;
+                    continue _fun60360
                 }
             case 292:
                 var4 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.VERIFIED;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 957;
-                    continue _fun59909
+                    _fun60360_ip = 957;
+                    continue _fun60360
                 }
             case 328:
                 var4 = _closure1_slot0;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.PARTNERED;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 837;
-                    continue _fun59909
+                    _fun60360_ip = 837;
+                    continue _fun60360
                 }
             case 364:
                 var4 = _closure1_slot0;
@@ -135,8 +135,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.VERIFIED_AND_PARTNERED;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 717;
-                    continue _fun59909
+                    _fun60360_ip = 717;
+                    continue _fun60360
                 }
             case 400:
                 var4 = _closure1_slot0;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.COMMUNITY;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 648;
-                    continue _fun59909
+                    _fun60360_ip = 648;
+                    continue _fun60360
                 }
             case 436:
                 var4 = _closure1_slot0;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BadgeCategory;
                 var0 = var0.DISCOVERABLE;
                 if (!(var0 !== var3)) {
-                    _fun59909_ip = 535;
-                    continue _fun59909
+                    _fun60360_ip = 535;
+                    continue _fun60360
                 }
             case 469:
                 var0 = {};
@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getBadgeTooltip = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7418, 1234, 7419, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7462, 1234, 7463, 2]);

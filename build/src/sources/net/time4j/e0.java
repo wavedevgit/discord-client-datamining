@@ -22,7 +22,7 @@ final class e0 extends rt.f implements u, Serializable {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // rt.f
     public rt.m0 b(rt.x xVar) {
-        if (xVar.E(f0.f39305y)) {
+        if (xVar.E(f0.f39353y)) {
             return new f.j(this.unit, this.policy);
         }
         return null;

@@ -11,19 +11,19 @@ import okhttp3.Response;
 final class m implements bu.b, Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Call f31491d;
+    private final Call f31539d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CancellableContinuation f31492e;
+    private final CancellableContinuation f31540e;
 
     public m(Call call, CancellableContinuation cancellableContinuation) {
-        this.f31491d = call;
-        this.f31492e = cancellableContinuation;
+        this.f31539d = call;
+        this.f31540e = cancellableContinuation;
     }
 
     public void a(Throwable th2) {
         try {
-            this.f31491d.cancel();
+            this.f31539d.cancel();
         } catch (Throwable unused) {
         }
     }
@@ -31,20 +31,20 @@ final class m implements bu.b, Function1 {
     @Override // kotlin.jvm.functions.Function1
     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
         a((Throwable) obj);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     @Override // bu.b
     public void onFailure(Call call, IOException iOException) {
         if (!call.C()) {
-            CancellableContinuation cancellableContinuation = this.f31492e;
-            Result.a aVar = Result.f32005e;
+            CancellableContinuation cancellableContinuation = this.f31540e;
+            Result.a aVar = Result.f32053e;
             cancellableContinuation.resumeWith(Result.b(kotlin.c.a(iOException)));
         }
     }
 
     @Override // bu.b
     public void onResponse(Call call, Response response) {
-        this.f31492e.resumeWith(Result.b(response));
+        this.f31540e.resumeWith(Result.b(response));
     }
 }

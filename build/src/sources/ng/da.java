@@ -5,7 +5,7 @@ import yi.c;
 final class da implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final da f39759a = new da();
+    static final da f39807a = new da();
 
     static {
         c.b a10 = yi.c.a("isFaceMeshEnabled");

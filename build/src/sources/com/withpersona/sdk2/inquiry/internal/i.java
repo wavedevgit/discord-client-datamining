@@ -67,7 +67,7 @@ public final class i implements dn.k {
 
         private a() {
             k.a aVar = dn.k.f20913a;
-            this.f18902a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f51950d, C0237a.f18903d);
+            this.f18902a = new dn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f51998d, C0237a.f18903d);
         }
     }
 

@@ -5,9 +5,9 @@ import kotlin.jvm.internal.Reflection;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f54728a = Reflection.getOrCreateKotlinClass(e.class).getQualifiedName();
+    private static final String f54776a = Reflection.getOrCreateKotlinClass(e.class).getQualifiedName();
 
     public static final /* synthetic */ String a() {
-        return f54728a;
+        return f54776a;
     }
 }

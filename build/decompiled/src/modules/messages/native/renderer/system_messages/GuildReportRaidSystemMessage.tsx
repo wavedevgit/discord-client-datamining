@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildReportRaidSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56003: for (var _fun56003_ip = 0;;) switch (_fun56003_ip) {
+        _fun56454: for (var _fun56454_ip = 0;;) switch (_fun56454_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var12;
                 var0 = undefined;
                 if (var9) {
-                    _fun56003_ip = 100;
-                    continue _fun56003
+                    _fun56454_ip = 100;
+                    continue _fun56454
                 }
             case 95:
                 var0 = var12.guild_id;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var9 = null;
                 if (!(var6 === var11)) {
-                    _fun56003_ip = 263;
-                    continue _fun56003
+                    _fun56454_ip = 263;
+                    continue _fun56454
                 }
             case 260:
                 var9 = var10;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.roleColor = var10;
                 var9 = null;
                 if (!var16) {
-                    _fun56003_ip = 281;
-                    continue _fun56003
+                    _fun56454_ip = 281;
+                    continue _fun56454
                 }
             case 278:
                 var9 = var15;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'dot';
                 var9 = var9 === var11;
                 if (!var9) {
-                    _fun56003_ip = 301;
-                    continue _fun56003
+                    _fun56454_ip = 301;
+                    continue _fun56454
                 }
             case 297:
                 var9 = var4 != var10;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var0;
                 var1 = undefined;
                 if (var9) {
-                    _fun56003_ip = 342;
-                    continue _fun56003
+                    _fun56454_ip = 342;
+                    continue _fun56454
                 }
             case 337:
                 var1 = var0.name;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 != var1;
                 var0 = '';
                 if (!var9) {
-                    _fun56003_ip = 356;
-                    continue _fun56003
+                    _fun56454_ip = 356;
+                    continue _fun56454
                 }
             case 353:
                 var0 = var1;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun56003_ip = 556;
-                    continue _fun56003
+                    _fun56454_ip = 556;
+                    continue _fun56454
                 }
             case 553:
                 var4 = var3;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildReportRaidSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6692, 6700, 6773, 6701, 6774, 6702, 1234, 1418, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6735, 6743, 6817, 6744, 6818, 6745, 1234, 1418, 1417, 2]);

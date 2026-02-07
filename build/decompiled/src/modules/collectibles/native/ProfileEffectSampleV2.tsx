@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/ProfileEffectSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56920: for (var _fun56920_ip = 0;;) switch (_fun56920_ip) {
+        _fun57371: for (var _fun57371_ip = 0;;) switch (_fun57371_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.item;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.showGradient;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun56920_ip = 40;
-                    continue _fun56920
+                    _fun57371_ip = 40;
+                    continue _fun57371
                 }
             case 38:
                 var6 = true;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var9;
                 if (!var7) {
-                    _fun56920_ip = 142;
-                    continue _fun56920
+                    _fun57371_ip = 142;
+                    continue _fun57371
                 }
             case 136:
                 var7 = var13.purchasedProfileEffect;
@@ -135,13 +135,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot4;
                 var4 = {};
                 if (var12) {
-                    _fun56920_ip = 171;
-                    continue _fun56920
+                    _fun57371_ip = 171;
+                    continue _fun57371
                 }
             case 163:
                 var14 = var13.profileSkeletonBackground;
-                _fun56920_ip = 177;
-                continue _fun56920;
+                _fun57371_ip = 177;
+                continue _fun57371;
             case 171:
                 var14 = var13.profileSkeletonBackgroundBundle;
             case 177:
@@ -151,14 +151,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot1;
                 var15 = _closure1_slot2;
                 if (var10) {
-                    _fun56920_ip = 209;
-                    continue _fun56920
+                    _fun57371_ip = 209;
+                    continue _fun57371
                 }
             case 200:
                 var10 = 6;
                 var10 = var15[var10];
-                _fun56920_ip = 216;
-                continue _fun56920;
+                _fun57371_ip = 216;
+                continue _fun57371;
             case 209:
                 var14 = 5;
                 var10 = var15[var14];
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(3);
                 var4[0] = var7;
                 if (!var6) {
-                    _fun56920_ip = 563;
-                    continue _fun56920
+                    _fun57371_ip = 563;
+                    continue _fun57371
                 }
             case 245:
                 var10 = _closure1_slot5;
@@ -204,15 +204,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var14.bind(var3)(var13);
                 var19 = var20.hexWithOpacity;
                 if (var12) {
-                    _fun56920_ip = 403;
-                    continue _fun56920
+                    _fun57371_ip = 403;
+                    continue _fun57371
                 }
             case 380:
                 var13 = 0.35;
                 var13 = var19.bind(var20)(var18, var13);
                 var13 = var15.bind(var16)(var13);
-                _fun56920_ip = 424;
-                continue _fun56920;
+                _fun57371_ip = 424;
+                continue _fun57371;
             case 403:
                 var14 = 0.75;
                 var14 = var19.bind(var20)(var18, var14);
@@ -228,15 +228,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var16.bind(var3)(var13);
                 var16 = var17.hexWithOpacity;
                 if (var12) {
-                    _fun56920_ip = 492;
-                    continue _fun56920
+                    _fun57371_ip = 492;
+                    continue _fun57371
                 }
             case 469:
                 var12 = 0.7;
                 var12 = var16.bind(var17)(var18, var12);
                 var12 = var14.bind(var15)(var12);
-                _fun56920_ip = 506;
-                continue _fun56920;
+                _fun57371_ip = 506;
+                continue _fun57371;
             case 492:
                 var13 = 1;
                 var13 = var16.bind(var17)(var18, var13);
@@ -281,4 +281,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3153, 6929, 6930, 4099, 3242, 6931, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3153, 6973, 6974, 4098, 3241, 6975, 2]);

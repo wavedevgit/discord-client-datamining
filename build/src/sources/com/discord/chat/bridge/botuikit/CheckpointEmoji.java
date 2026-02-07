@@ -70,11 +70,11 @@ public final class CheckpointEmoji {
 
     public static final /* synthetic */ void write$Self$chat_release(CheckpointEmoji checkpointEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || checkpointEmoji.emojiId != null) {
-            compositeEncoder.l(serialDescriptor, 0, z0.f31115a, checkpointEmoji.emojiId);
+            compositeEncoder.l(serialDescriptor, 0, z0.f31163a, checkpointEmoji.emojiId);
         }
         compositeEncoder.z(serialDescriptor, 1, checkpointEmoji.emojiName);
         if (compositeEncoder.A(serialDescriptor, 2) || checkpointEmoji.emojiSurrogateName != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, checkpointEmoji.emojiSurrogateName);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, checkpointEmoji.emojiSurrogateName);
         }
     }
 

@@ -3,15 +3,15 @@ package ki;
 public abstract class u0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final yg.k f31695d;
+    private final yg.k f31743d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u0() {
-        this.f31695d = null;
+        this.f31743d = null;
     }
 
     public void a(Exception exc) {
-        yg.k kVar = this.f31695d;
+        yg.k kVar = this.f31743d;
         if (kVar != null) {
             kVar.d(exc);
         }
@@ -21,7 +21,7 @@ public abstract class u0 implements Runnable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final yg.k c() {
-        return this.f31695d;
+        return this.f31743d;
     }
 
     @Override // java.lang.Runnable
@@ -34,6 +34,6 @@ public abstract class u0 implements Runnable {
     }
 
     public u0(yg.k kVar) {
-        this.f31695d = kVar;
+        this.f31743d = kVar;
     }
 }

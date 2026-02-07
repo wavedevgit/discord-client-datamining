@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81811: for (var _fun81811_ip = 0;;) switch (_fun81811_ip) {
+        _fun82242: for (var _fun82242_ip = 0;;) switch (_fun82242_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.title;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var12;
                 var0 = function(arg0) { // Environment: var10
-                    _fun81812: for (var _fun81812_ip = 0;;) switch (_fun81812_ip) {
+                    _fun82243: for (var _fun82243_ip = 0;;) switch (_fun82243_ip) {
                         case 0:
                             var1 = arg0;
                             var _closure3_slot0 = var1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var2)(var0);
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun81812_ip = 83;
-                                continue _fun81812
+                                _fun82243_ip = 83;
+                                continue _fun82243
                             }
                         case 39:
                             var0 = var1.onPress;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var15 = null;
                 if (!(var15 == var13)) {
-                    _fun81811_ip = 233;
-                    continue _fun81811
+                    _fun82242_ip = 233;
+                    continue _fun82242
                 }
             case 201:
                 var15 = _closure1_slot0;
@@ -192,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3280, 4934, 5214, 5427, 1311, 5426, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3279, 4933, 5261, 5474, 1311, 5473, 2]);

@@ -13,27 +13,27 @@ public interface u {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f48859a;
+        public final int f48907a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final r.b f48860b;
+        public final r.b f48908b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final CopyOnWriteArrayList f48861c;
+        private final CopyOnWriteArrayList f48909c;
 
         /* renamed from: rc.u$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         private static final class C0620a {
 
             /* renamed from: a  reason: collision with root package name */
-            public Handler f48862a;
+            public Handler f48910a;
 
             /* renamed from: b  reason: collision with root package name */
-            public u f48863b;
+            public u f48911b;
 
             public C0620a(Handler handler, u uVar) {
-                this.f48862a = handler;
-                this.f48863b = uVar;
+                this.f48910a = handler;
+                this.f48911b = uVar;
             }
         }
 
@@ -42,64 +42,64 @@ public interface u {
         }
 
         public static /* synthetic */ void d(a aVar, u uVar, int i10) {
-            uVar.x(aVar.f48859a, aVar.f48860b);
-            uVar.J(aVar.f48859a, aVar.f48860b, i10);
+            uVar.x(aVar.f48907a, aVar.f48908b);
+            uVar.J(aVar.f48907a, aVar.f48908b, i10);
         }
 
         public void g(Handler handler, u uVar) {
             ne.a.e(handler);
             ne.a.e(uVar);
-            this.f48861c.add(new C0620a(handler, uVar));
+            this.f48909c.add(new C0620a(handler, uVar));
         }
 
         public void h() {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.t
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.t
                     @Override // java.lang.Runnable
                     public final void run() {
-                        uVar.A(r0.f48859a, u.a.this.f48860b);
+                        uVar.A(r0.f48907a, u.a.this.f48908b);
                     }
                 });
             }
         }
 
         public void i() {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.r
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.r
                     @Override // java.lang.Runnable
                     public final void run() {
-                        uVar.z(r0.f48859a, u.a.this.f48860b);
+                        uVar.z(r0.f48907a, u.a.this.f48908b);
                     }
                 });
             }
         }
 
         public void j() {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.s
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.s
                     @Override // java.lang.Runnable
                     public final void run() {
-                        uVar.w(r0.f48859a, u.a.this.f48860b);
+                        uVar.w(r0.f48907a, u.a.this.f48908b);
                     }
                 });
             }
         }
 
         public void k(final int i10) {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.q
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.q
                     @Override // java.lang.Runnable
                     public final void run() {
                         u.a.d(u.a.this, uVar, i10);
@@ -109,51 +109,51 @@ public interface u {
         }
 
         public void l(final Exception exc) {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.o
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.o
                     @Override // java.lang.Runnable
                     public final void run() {
-                        uVar.I(r0.f48859a, u.a.this.f48860b, exc);
+                        uVar.I(r0.f48907a, u.a.this.f48908b, exc);
                     }
                 });
             }
         }
 
         public void m() {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                final u uVar = c0620a.f48863b;
-                w0.T0(c0620a.f48862a, new Runnable() { // from class: rc.p
+                final u uVar = c0620a.f48911b;
+                w0.T0(c0620a.f48910a, new Runnable() { // from class: rc.p
                     @Override // java.lang.Runnable
                     public final void run() {
-                        uVar.F(r0.f48859a, u.a.this.f48860b);
+                        uVar.F(r0.f48907a, u.a.this.f48908b);
                     }
                 });
             }
         }
 
         public void n(u uVar) {
-            Iterator it = this.f48861c.iterator();
+            Iterator it = this.f48909c.iterator();
             while (it.hasNext()) {
                 C0620a c0620a = (C0620a) it.next();
-                if (c0620a.f48863b == uVar) {
-                    this.f48861c.remove(c0620a);
+                if (c0620a.f48911b == uVar) {
+                    this.f48909c.remove(c0620a);
                 }
             }
         }
 
         public a o(int i10, r.b bVar) {
-            return new a(this.f48861c, i10, bVar);
+            return new a(this.f48909c, i10, bVar);
         }
 
         private a(CopyOnWriteArrayList copyOnWriteArrayList, int i10, r.b bVar) {
-            this.f48861c = copyOnWriteArrayList;
-            this.f48859a = i10;
-            this.f48860b = bVar;
+            this.f48909c = copyOnWriteArrayList;
+            this.f48907a = i10;
+            this.f48908b = bVar;
         }
     }
 

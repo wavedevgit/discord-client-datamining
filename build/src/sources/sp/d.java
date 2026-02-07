@@ -5,11 +5,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50002a;
+    private final boolean f50050a;
 
     @Override // sp.a
     public boolean a() {
-        return this.f50002a;
+        return this.f50050a;
     }
 
     @Override // sp.a

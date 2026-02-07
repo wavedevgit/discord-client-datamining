@@ -9,27 +9,27 @@ import kotlinx.serialization.KSerializer;
 final class u implements k2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f31080a;
+    private final Function1 f31128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ConcurrentHashMap f31081b;
+    private final ConcurrentHashMap f31129b;
 
     public u(Function1 compute) {
         Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f31080a = compute;
-        this.f31081b = new ConcurrentHashMap();
+        this.f31128a = compute;
+        this.f31129b = new ConcurrentHashMap();
     }
 
     @Override // jt.k2
     public KSerializer a(KClass key) {
         Object putIfAbsent;
         Intrinsics.checkNotNullParameter(key, "key");
-        ConcurrentHashMap concurrentHashMap = this.f31081b;
+        ConcurrentHashMap concurrentHashMap = this.f31129b;
         Class b10 = ds.a.b(key);
         Object obj = concurrentHashMap.get(b10);
-        if (obj == null && (putIfAbsent = concurrentHashMap.putIfAbsent(b10, (obj = new k((KSerializer) this.f31080a.invoke(key))))) != null) {
+        if (obj == null && (putIfAbsent = concurrentHashMap.putIfAbsent(b10, (obj = new k((KSerializer) this.f31128a.invoke(key))))) != null) {
             obj = putIfAbsent;
         }
-        return ((k) obj).f31023a;
+        return ((k) obj).f31071a;
     }
 }

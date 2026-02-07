@@ -11,70 +11,70 @@ import com.facebook.react.views.text.internal.span.SetSpanOperation;
 public class d extends Drawable {
 
     /* renamed from: b  reason: collision with root package name */
-    private Bitmap f56436b;
+    private Bitmap f56484b;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f56438d;
+    private int f56486d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f56439e;
+    private int f56487e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f56435a = new Paint(2);
+    private final Paint f56483a = new Paint(2);
 
     /* renamed from: c  reason: collision with root package name */
-    private int f56437c = SetSpanOperation.SPAN_MAX_PRIORITY;
+    private int f56485c = SetSpanOperation.SPAN_MAX_PRIORITY;
 
     public d(Bitmap bitmap) {
         b(bitmap);
     }
 
     public Bitmap a() {
-        return this.f56436b;
+        return this.f56484b;
     }
 
     public void b(Bitmap bitmap) {
-        this.f56436b = bitmap;
+        this.f56484b = bitmap;
         if (bitmap != null) {
-            this.f56438d = bitmap.getWidth();
-            this.f56439e = this.f56436b.getHeight();
+            this.f56486d = bitmap.getWidth();
+            this.f56487e = this.f56484b.getHeight();
             return;
         }
-        this.f56439e = 0;
-        this.f56438d = 0;
+        this.f56487e = 0;
+        this.f56486d = 0;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
-        Bitmap bitmap = this.f56436b;
+        Bitmap bitmap = this.f56484b;
         if (bitmap != null && !bitmap.isRecycled()) {
-            canvas.drawBitmap(this.f56436b, (Rect) null, getBounds(), this.f56435a);
+            canvas.drawBitmap(this.f56484b, (Rect) null, getBounds(), this.f56483a);
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f56437c;
+        return this.f56485c;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f56439e;
+        return this.f56487e;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f56438d;
+        return this.f56486d;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumHeight() {
-        return this.f56439e;
+        return this.f56487e;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getMinimumWidth() {
-        return this.f56438d;
+        return this.f56486d;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -84,17 +84,17 @@ public class d extends Drawable {
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f56437c = i10;
-        this.f56435a.setAlpha(i10);
+        this.f56485c = i10;
+        this.f56483a.setAlpha(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f56435a.setColorFilter(colorFilter);
+        this.f56483a.setColorFilter(colorFilter);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setFilterBitmap(boolean z10) {
-        this.f56435a.setFilterBitmap(z10);
+        this.f56483a.setFilterBitmap(z10);
     }
 }

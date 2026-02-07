@@ -35,15 +35,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/VoicePanelUtils.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun62834: for (var _fun62834_ip = 0;;) switch (_fun62834_ip) {
+        _fun63284: for (var _fun63284_ip = 0;;) switch (_fun63284_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var2 = var0 == var3;
                 var1 = undefined;
                 if (var2) {
-                    _fun62834_ip = 24;
-                    continue _fun62834
+                    _fun63284_ip = 24;
+                    continue _fun63284
                 }
             case 14:
                 var2 = var3.isGuildStageVoice;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 24:
                 var0 = var0 == var1;
                 if (var0) {
-                    _fun62834_ip = 34;
-                    continue _fun62834
+                    _fun63284_ip = 34;
+                    continue _fun63284
                 }
             case 31:
                 var0 = !var1;
@@ -75,21 +75,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot3;
         var1[1] = var0;
         var0 = function() { // Environment: var0
-            _fun62836: for (var _fun62836_ip = 0;;) switch (_fun62836_ip) {
+            _fun63286: for (var _fun63286_ip = 0;;) switch (_fun63286_ip) {
                 case 0:
                     var2 = _closure1_slot2;
                     var3 = _closure1_slot3;
                     var1 = undefined;
                     if (!(var2 === var1)) {
-                        _fun62836_ip = 21;
-                        continue _fun62836
+                        _fun63286_ip = 21;
+                        continue _fun63286
                     }
                 case 17:
                     var2 = _closure1_slot2;
                 case 21:
                     if (!(var3 === var1)) {
-                        _fun62836_ip = 29;
-                        continue _fun62836
+                        _fun63286_ip = 29;
+                        continue _fun63286
                     }
                 case 25:
                     var3 = _closure1_slot3;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun62836_ip = 71;
-                        continue _fun62836
+                        _fun63286_ip = 71;
+                        continue _fun63286
                     }
                 case 58:
                     var1 = var2.isGuildStageVoice;
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsVoicePanelMounted = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3520, 7904, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3519, 7948, 632, 2]);

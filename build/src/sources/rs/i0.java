@@ -13,13 +13,13 @@ final class i0 implements g0 {
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49282d;
+        int f49330d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f49283e;
+        private /* synthetic */ Object f49331e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ j0 f49284i;
+        final /* synthetic */ j0 f49332i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: rs.i0$a$a  reason: collision with other inner class name */
@@ -27,10 +27,10 @@ final class i0 implements g0 {
         public static final class C0633a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Ref.BooleanRef f49285d;
+            final /* synthetic */ Ref.BooleanRef f49333d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f49286e;
+            final /* synthetic */ FlowCollector f49334e;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: rs.i0$a$a$a  reason: collision with other inner class name */
@@ -38,10 +38,10 @@ final class i0 implements g0 {
             public static final class C0634a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f49287d;
+                /* synthetic */ Object f49335d;
 
                 /* renamed from: i  reason: collision with root package name */
-                int f49289i;
+                int f49337i;
 
                 C0634a(Continuation continuation) {
                     super(continuation);
@@ -49,15 +49,15 @@ final class i0 implements g0 {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f49287d = obj;
-                    this.f49289i |= Integer.MIN_VALUE;
+                    this.f49335d = obj;
+                    this.f49337i |= Integer.MIN_VALUE;
                     return C0633a.this.a(0, this);
                 }
             }
 
             C0633a(Ref.BooleanRef booleanRef, FlowCollector flowCollector) {
-                this.f49285d = booleanRef;
-                this.f49286e = flowCollector;
+                this.f49333d = booleanRef;
+                this.f49334e = flowCollector;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -73,20 +73,20 @@ final class i0 implements g0 {
                     if (r0 == 0) goto L13
                     r0 = r6
                     rs.i0$a$a$a r0 = (rs.i0.a.C0633a.C0634a) r0
-                    int r1 = r0.f49289i
+                    int r1 = r0.f49337i
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f49289i = r1
+                    r0.f49337i = r1
                     goto L18
                 L13:
                     rs.i0$a$a$a r0 = new rs.i0$a$a$a
                     r0.<init>(r6)
                 L18:
-                    java.lang.Object r6 = r0.f49287d
+                    java.lang.Object r6 = r0.f49335d
                     java.lang.Object r1 = wr.b.f()
-                    int r2 = r0.f49289i
+                    int r2 = r0.f49337i
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -100,21 +100,21 @@ final class i0 implements g0 {
                 L31:
                     kotlin.c.b(r6)
                     if (r5 <= 0) goto L4e
-                    kotlin.jvm.internal.Ref$BooleanRef r5 = r4.f49285d
+                    kotlin.jvm.internal.Ref$BooleanRef r5 = r4.f49333d
                     boolean r6 = r5.element
                     if (r6 != 0) goto L4e
                     r5.element = r3
-                    kotlinx.coroutines.flow.FlowCollector r5 = r4.f49286e
-                    rs.e0 r6 = rs.e0.f49253d
-                    r0.f49289i = r3
+                    kotlinx.coroutines.flow.FlowCollector r5 = r4.f49334e
+                    rs.e0 r6 = rs.e0.f49301d
+                    r0.f49337i = r3
                     java.lang.Object r5 = r5.emit(r6, r0)
                     if (r5 != r1) goto L4b
                     return r1
                 L4b:
-                    kotlin.Unit r5 = kotlin.Unit.f32008a
+                    kotlin.Unit r5 = kotlin.Unit.f32056a
                     return r5
                 L4e:
-                    kotlin.Unit r5 = kotlin.Unit.f32008a
+                    kotlin.Unit r5 = kotlin.Unit.f32056a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: rs.i0.a.C0633a.a(int, kotlin.coroutines.Continuation):java.lang.Object");
@@ -129,20 +129,20 @@ final class i0 implements g0 {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(j0 j0Var, Continuation continuation) {
             super(2, continuation);
-            this.f49284i = j0Var;
+            this.f49332i = j0Var;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f49284i, continuation);
-            aVar.f49283e = obj;
+            a aVar = new a(this.f49332i, continuation);
+            aVar.f49331e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = wr.b.f();
-            int i10 = this.f49282d;
+            int i10 = this.f49330d;
             if (i10 != 0) {
                 if (i10 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -151,9 +151,9 @@ final class i0 implements g0 {
             } else {
                 kotlin.c.b(obj);
                 Ref.BooleanRef booleanRef = new Ref.BooleanRef();
-                j0 j0Var = this.f49284i;
-                C0633a c0633a = new C0633a(booleanRef, (FlowCollector) this.f49283e);
-                this.f49282d = 1;
+                j0 j0Var = this.f49332i;
+                C0633a c0633a = new C0633a(booleanRef, (FlowCollector) this.f49331e);
+                this.f49330d = 1;
                 if (j0Var.collect(c0633a, this) == f10) {
                     return f10;
                 }
@@ -163,7 +163,7 @@ final class i0 implements g0 {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 

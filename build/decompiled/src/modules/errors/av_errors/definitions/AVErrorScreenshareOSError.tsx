@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorScreenshareOSErrorDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8032, 15032, 3507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8076, 15075, 3506, 2]);

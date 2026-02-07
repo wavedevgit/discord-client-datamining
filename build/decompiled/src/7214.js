@@ -1,40 +1,88 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var6 = {};
+    var7 = 0;
+    var6.UNKNOWN_REPLACEMENT_MODE = var7;
+    var0 = 'UNKNOWN_REPLACEMENT_MODE';
+    var6[var7] = var0;
+    var3 = 1;
+    var6.WITH_TIME_PRORATION = var3;
+    var0 = 'WITH_TIME_PRORATION';
+    var6[var3] = var0;
+    var2 = 2;
+    var6.CHARGE_PRORATED_PRICE = var2;
+    var0 = 'CHARGE_PRORATED_PRICE';
+    var6[var2] = var0;
+    var4 = 3;
+    var6.WITHOUT_PRORATION = var4;
+    var0 = 'WITHOUT_PRORATION';
+    var6[var4] = var0;
+    var4 = 5;
+    var6.CHARGE_FULL_PRICE = var4;
+    var0 = 'CHARGE_FULL_PRICE';
+    var6[var4] = var0;
+    var4 = 6;
+    var6.DEFERRED = var4;
+    var0 = 'DEFERRED';
+    var6[var4] = var0;
+    var5 = {};
+    var5.UNSPECIFIED_STATE = var7;
+    var0 = 'UNSPECIFIED_STATE';
+    var5[var7] = var0;
+    var5.PURCHASED = var3;
+    var0 = 'PURCHASED';
+    var5[var3] = var0;
+    var5.PENDING = var2;
+    var0 = 'PENDING';
+    var5[var2] = var0;
+    var4 = {};
+    var4.NOT_SET = var7;
+    var0 = 'NOT_SET';
+    var4[var7] = var0;
+    var4.GOOGLE_PLAY = var3;
+    var0 = 'GOOGLE_PLAY';
+    var4[var3] = var0;
+    var4.AMAZON = var2;
+    var0 = 'AMAZON';
+    var4[var2] = var0;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function() {
-        var0 = 'npm';
-        return var0;
-    };
-    var1.getSDKSource = var2;
-    var0 = function() {
-        _fun58922: for (var _fun58922_ip = 0;;) switch (_fun58922_ip) {
-            case 0:
-                var1 = global;
-                var0 = var1.__SENTRY_BROWSER_BUNDLE__;
-                var2 = 'undefined';
-                var0 = typeof var0;
-                var0 = var2 !== var0;
-                if (!var0) {
-                    _fun58922_ip = 34;
-                    continue _fun58922
-                }
-            case 22:
-                var1 = var1.__SENTRY_BROWSER_BUNDLE__;
-                var1 = !var1;
-                var0 = !var1;
-            case 34:
-                return var0;
-        }
-    };
-    var1.isBrowserBundle = var0;
+    var0 = 'subs';
+    var3.subs = var0;
+    var0 = 'sub';
+    var3.sub = var0;
+    var0 = 'inapp';
+    var3.inapp = var0;
+    var0 = 'iap';
+    var3.iap = var0;
+    var2 = {};
+    var0 = 'PURCHASE';
+    var2.PURCHASE = var0;
+    var0 = 'RENEWAL';
+    var2.RENEWAL = var0;
+    var0 = {};
+    var7 = 'android';
+    var0.android = var7;
+    var7 = 'amazon';
+    var0.amazon = var7;
+    var7 = 'ios';
+    var0.ios = var7;
+    var1.ReplacementModesAndroid = var6;
+    var1.PurchaseStateAndroid = var5;
+    var5 = 'iap-promoted-product';
+    var1.PROMOTED_PRODUCT = var5;
+    var1.InstallSourceAndroid = var4;
+    var1.ProductType = var3;
+    var1.TransactionReason = var2;
+    var1.SubscriptionPlatform = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

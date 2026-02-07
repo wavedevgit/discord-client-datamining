@@ -8,16 +8,16 @@ import ks.w0;
 public class c0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final w0 f35272d;
+    private final w0 f35320d;
 
     public c0(w0 w0Var) {
-        this.f35272d = w0Var;
+        this.f35320d = w0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ClassDescriptor G;
-        G = w0.a.G(this.f35272d);
+        G = w0.a.G(this.f35320d);
         return G;
     }
 }

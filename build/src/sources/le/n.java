@@ -6,40 +6,40 @@ import java.io.InputStream;
 public final class n extends InputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DataSource f36124d;
+    private final DataSource f36172d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f36125e;
+    private final com.google.android.exoplayer2.upstream.a f36173e;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f36129q;
+    private long f36177q;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f36127o = false;
+    private boolean f36175o = false;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f36128p = false;
+    private boolean f36176p = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private final byte[] f36126i = new byte[1];
+    private final byte[] f36174i = new byte[1];
 
     public n(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar) {
-        this.f36124d = dataSource;
-        this.f36125e = aVar;
+        this.f36172d = dataSource;
+        this.f36173e = aVar;
     }
 
     private void a() {
-        if (!this.f36127o) {
-            this.f36124d.b(this.f36125e);
-            this.f36127o = true;
+        if (!this.f36175o) {
+            this.f36172d.b(this.f36173e);
+            this.f36175o = true;
         }
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (!this.f36128p) {
-            this.f36124d.close();
-            this.f36128p = true;
+        if (!this.f36176p) {
+            this.f36172d.close();
+            this.f36176p = true;
         }
     }
 
@@ -49,10 +49,10 @@ public final class n extends InputStream {
 
     @Override // java.io.InputStream
     public int read() {
-        if (read(this.f36126i) == -1) {
+        if (read(this.f36174i) == -1) {
             return -1;
         }
-        return this.f36126i[0] & 255;
+        return this.f36174i[0] & 255;
     }
 
     @Override // java.io.InputStream
@@ -62,13 +62,13 @@ public final class n extends InputStream {
 
     @Override // java.io.InputStream
     public int read(byte[] bArr, int i10, int i11) {
-        ne.a.g(!this.f36128p);
+        ne.a.g(!this.f36176p);
         a();
-        int read = this.f36124d.read(bArr, i10, i11);
+        int read = this.f36172d.read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        this.f36129q += read;
+        this.f36177q += read;
         return read;
     }
 }

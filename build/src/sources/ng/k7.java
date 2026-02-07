@@ -5,7 +5,7 @@ import yi.c;
 final class k7 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f39935a = new k7();
+    static final k7 f39983a = new k7();
 
     static {
         c.b a10 = yi.c.a("screenName");

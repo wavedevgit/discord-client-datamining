@@ -6,23 +6,23 @@ import java.util.Map;
 public class m implements rv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f41224a;
+    private final List f41272a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f41225b;
+    private final Map f41273b;
 
     public m(List list, Map map) {
-        this.f41224a = list;
-        this.f41225b = map;
+        this.f41272a = list;
+        this.f41273b = map;
     }
 
     @Override // rv.b
     public qv.o a(String str) {
-        return (qv.o) this.f41225b.get(str);
+        return (qv.o) this.f41273b.get(str);
     }
 
     @Override // rv.b
     public List b() {
-        return this.f41224a;
+        return this.f41272a;
     }
 }

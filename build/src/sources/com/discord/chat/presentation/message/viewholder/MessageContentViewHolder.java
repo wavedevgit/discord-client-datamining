@@ -47,14 +47,14 @@ public final class MessageContentViewHolder extends MessagePartViewHolder {
     public static final Unit bind$lambda$0(Function2 function2, MessageContentAccessory messageContentAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1083boximpl(messageContentAccessory.mo536getMessageId3Eiw7ao()), node);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$1(MessageContentViewHolder messageContentViewHolder, Function1 function1) {
         messageContentViewHolder.lastMessageContent = null;
         function1.invoke(messageContentViewHolder);
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

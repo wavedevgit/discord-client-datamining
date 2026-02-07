@@ -71,11 +71,11 @@ public final class GuildNameContentNode extends ContentNode {
 
     public static final /* synthetic */ void write$Self$chat_release(GuildNameContentNode guildNameContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || guildNameContentNode.guildId != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, guildNameContentNode.guildId);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, guildNameContentNode.guildId);
         }
         compositeEncoder.z(serialDescriptor, 1, guildNameContentNode.content);
         if (compositeEncoder.A(serialDescriptor, 2) || guildNameContentNode.icon != null) {
-            compositeEncoder.l(serialDescriptor, 2, n2.f31041a, guildNameContentNode.icon);
+            compositeEncoder.l(serialDescriptor, 2, n2.f31089a, guildNameContentNode.icon);
         }
     }
 

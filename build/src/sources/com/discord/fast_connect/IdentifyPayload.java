@@ -71,10 +71,10 @@ public final class IdentifyPayload {
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(versions, "versions");
         try {
-            Result.a aVar = Result.f32005e;
-            b10 = Result.b(Json.f35120d.g(json));
+            Result.a aVar = Result.f32053e;
+            b10 = Result.b(Json.f35168d.g(json));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f32005e;
+            Result.a aVar2 = Result.f32053e;
             b10 = Result.b(c.a(th2));
         }
         if (Result.g(b10)) {

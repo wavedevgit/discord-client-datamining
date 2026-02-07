@@ -3,52 +3,52 @@ package nv;
 public class d extends sv.f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final sv.d[] f41174a;
+    private final sv.d[] f41222a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f41175b = -1;
+    private int f41223b = -1;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f41176c = -1;
+    private int f41224c = -1;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f41177d = false;
+    private boolean f41225d = false;
 
     public d(sv.d... dVarArr) {
-        this.f41174a = dVarArr;
+        this.f41222a = dVarArr;
     }
 
     @Override // sv.f
     public sv.f a(int i10) {
-        this.f41176c = i10;
+        this.f41224c = i10;
         return this;
     }
 
     @Override // sv.f
     public sv.f b(int i10) {
-        this.f41175b = i10;
+        this.f41223b = i10;
         return this;
     }
 
     @Override // sv.f
     public sv.f e() {
-        this.f41177d = true;
+        this.f41225d = true;
         return this;
     }
 
     public sv.d[] f() {
-        return this.f41174a;
+        return this.f41222a;
     }
 
     public int g() {
-        return this.f41176c;
+        return this.f41224c;
     }
 
     public int h() {
-        return this.f41175b;
+        return this.f41223b;
     }
 
     public boolean i() {
-        return this.f41177d;
+        return this.f41225d;
     }
 }

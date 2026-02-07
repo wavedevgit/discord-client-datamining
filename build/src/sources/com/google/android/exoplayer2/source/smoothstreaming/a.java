@@ -80,7 +80,7 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
         private final int f12867f;
 
         public b(a.b bVar, int i10, int i11) {
-            super(i11, bVar.f55268k - 1);
+            super(i11, bVar.f55316k - 1);
             this.f12866e = bVar;
             this.f12867f = i10;
         }
@@ -106,25 +106,25 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
         this.f12858b = i10;
         this.f12861e = gVar;
         this.f12860d = dataSource;
-        a.b bVar = aVar.f55252f[i10];
+        a.b bVar = aVar.f55300f[i10];
         this.f12859c = new g[gVar.length()];
         for (int i12 = 0; i12 < this.f12859c.length; i12++) {
             int e10 = gVar.e(i12);
-            Format format = bVar.f55267j[e10];
+            Format format = bVar.f55315j[e10];
             if (format.f11590z != null) {
-                pVarArr = ((a.C0748a) ne.a.e(aVar.f55251e)).f55257c;
+                pVarArr = ((a.C0748a) ne.a.e(aVar.f55299e)).f55305c;
                 s0Var = null;
             } else {
                 s0Var = null;
                 pVarArr = null;
             }
-            int i13 = bVar.f55258a;
+            int i13 = bVar.f55306a;
             if (i13 == 2) {
                 i11 = 4;
             } else {
                 i11 = 0;
             }
-            this.f12859c[i12] = new e(new bd.g(3, s0Var, new o(e10, i13, bVar.f55260c, -9223372036854775807L, aVar.f55253g, format, 0, pVarArr, i11, null, null)), bVar.f55258a, format);
+            this.f12859c[i12] = new e(new bd.g(3, s0Var, new o(e10, i13, bVar.f55308c, -9223372036854775807L, aVar.f55301g, format, 0, pVarArr, i11, null, null)), bVar.f55306a, format);
         }
     }
 
@@ -134,11 +134,11 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
 
     private long l(long j10) {
         yd.a aVar = this.f12862f;
-        if (!aVar.f55250d) {
+        if (!aVar.f55298d) {
             return -9223372036854775807L;
         }
-        a.b bVar = aVar.f55252f[this.f12858b];
-        int i10 = bVar.f55268k - 1;
+        a.b bVar = aVar.f55300f[this.f12858b];
+        int i10 = bVar.f55316k - 1;
         return (bVar.e(i10) + bVar.c(i10)) - j10;
     }
 
@@ -159,12 +159,12 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
 
     @Override // com.google.android.exoplayer2.source.smoothstreaming.b
     public void c(yd.a aVar) {
-        a.b[] bVarArr = this.f12862f.f55252f;
+        a.b[] bVarArr = this.f12862f.f55300f;
         int i10 = this.f12858b;
         a.b bVar = bVarArr[i10];
-        int i11 = bVar.f55268k;
-        a.b bVar2 = aVar.f55252f[i10];
-        if (i11 != 0 && bVar2.f55268k != 0) {
+        int i11 = bVar.f55316k;
+        a.b bVar2 = aVar.f55300f[i10];
+        if (i11 != 0 && bVar2.f55316k != 0) {
             int i12 = i11 - 1;
             long e10 = bVar.e(i12) + bVar.c(i12);
             long e11 = bVar2.e(0);
@@ -188,9 +188,9 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
             return;
         }
         yd.a aVar = this.f12862f;
-        a.b bVar = aVar.f55252f[this.f12858b];
-        if (bVar.f55268k == 0) {
-            hVar.f49895b = !aVar.f55250d;
+        a.b bVar = aVar.f55300f[this.f12858b];
+        if (bVar.f55316k == 0) {
+            hVar.f49943b = !aVar.f55298d;
             return;
         }
         if (list.isEmpty()) {
@@ -204,8 +204,8 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
                 return;
             }
         }
-        if (g10 >= bVar.f55268k) {
-            hVar.f49895b = !this.f12862f.f55250d;
+        if (g10 >= bVar.f55316k) {
+            hVar.f49943b = !this.f12862f.f55298d;
             return;
         }
         long j13 = j12 - j10;
@@ -225,16 +225,16 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
         int i11 = g10 + this.f12863g;
         int c11 = this.f12861e.c();
         g gVar = this.f12859c[c11];
-        hVar.f49894a = k(this.f12861e.q(), this.f12860d, bVar.a(this.f12861e.e(c11), g10), i11, e10, c10, j14, this.f12861e.r(), this.f12861e.h(), gVar, null);
+        hVar.f49942a = k(this.f12861e.q(), this.f12860d, bVar.a(this.f12861e.e(c11), g10), i11, e10, c10, j14, this.f12861e.r(), this.f12861e.h(), gVar, null);
     }
 
     @Override // sd.j
     public long e(long j10, t0 t0Var) {
         long j11;
-        a.b bVar = this.f12862f.f55252f[this.f12858b];
+        a.b bVar = this.f12862f.f55300f[this.f12858b];
         int d10 = bVar.d(j10);
         long e10 = bVar.e(d10);
-        if (e10 < j10 && d10 < bVar.f55268k - 1) {
+        if (e10 < j10 && d10 < bVar.f55316k - 1) {
             j11 = bVar.e(d10 + 1);
         } else {
             j11 = e10;
@@ -247,7 +247,7 @@ public class a implements com.google.android.exoplayer2.source.smoothstreaming.b
         i.b c10 = iVar.c(com.google.android.exoplayer2.trackselection.h.c(this.f12861e), cVar);
         if (z10 && c10 != null && c10.f13420a == 2) {
             com.google.android.exoplayer2.trackselection.g gVar = this.f12861e;
-            if (gVar.f(gVar.o(fVar.f49888d), c10.f13421b)) {
+            if (gVar.f(gVar.o(fVar.f49936d), c10.f13421b)) {
                 return true;
             }
             return false;

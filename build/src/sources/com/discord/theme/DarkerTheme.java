@@ -9,7 +9,7 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 import qr.l;
-@Metadata(d1 = {"\u0000!\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0003\b\u009c\u0002\b\u0000\u0018\u00002\u00020\u0001B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0010\u0004\u001a\u00060\u0005R\u00020\u0003¢\u0006\u0004\b\u0006\u0010\u0007J\u0018\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0016J\u0018\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00020\tH\u0016R\u001b\u0010\u000f\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0010\u0010\u0011R\u001b\u0010\u0014\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0016\u0010\u0013\u001a\u0004\b\u0015\u0010\u0011R\u001b\u0010\u0017\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0019\u0010\u0013\u001a\u0004\b\u0018\u0010\u0011R\u001b\u0010\u001a\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u001c\u0010\u0013\u001a\u0004\b\u001b\u0010\u0011R\u001b\u0010\u001d\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u001f\u0010\u0013\u001a\u0004\b\u001e\u0010\u0011R\u001b\u0010 \u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\"\u0010\u0013\u001a\u0004\b!\u0010\u0011R\u001b\u0010#\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b%\u0010\u0013\u001a\u0004\b$\u0010\u0011R\u001b\u0010&\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b(\u0010\u0013\u001a\u0004\b'\u0010\u0011R\u001b\u0010)\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b+\u0010\u0013\u001a\u0004\b*\u0010\u0011R\u001b\u0010,\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b.\u0010\u0013\u001a\u0004\b-\u0010\u0011R\u001b\u0010/\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b1\u0010\u0013\u001a\u0004\b0\u0010\u0011R\u001b\u00102\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b4\u0010\u0013\u001a\u0004\b3\u0010\u0011R\u001b\u00105\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b7\u0010\u0013\u001a\u0004\b6\u0010\u0011R\u001b\u00108\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b:\u0010\u0013\u001a\u0004\b9\u0010\u0011R\u001b\u0010;\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b=\u0010\u0013\u001a\u0004\b<\u0010\u0011R\u001b\u0010>\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b@\u0010\u0013\u001a\u0004\b?\u0010\u0011R\u001b\u0010A\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bC\u0010\u0013\u001a\u0004\bB\u0010\u0011R\u001b\u0010D\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bF\u0010\u0013\u001a\u0004\bE\u0010\u0011R\u001b\u0010G\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bI\u0010\u0013\u001a\u0004\bH\u0010\u0011R\u001b\u0010J\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bL\u0010\u0013\u001a\u0004\bK\u0010\u0011R\u001b\u0010M\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bO\u0010\u0013\u001a\u0004\bN\u0010\u0011R\u001b\u0010P\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bR\u0010\u0013\u001a\u0004\bQ\u0010\u0011R\u001b\u0010S\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bU\u0010\u0013\u001a\u0004\bT\u0010\u0011R\u001b\u0010V\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bX\u0010\u0013\u001a\u0004\bW\u0010\u0011R\u001b\u0010Y\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b[\u0010\u0013\u001a\u0004\bZ\u0010\u0011R\u001b\u0010\\\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b^\u0010\u0013\u001a\u0004\b]\u0010\u0011R\u001b\u0010_\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\ba\u0010\u0013\u001a\u0004\b`\u0010\u0011R\u001b\u0010b\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bd\u0010\u0013\u001a\u0004\bc\u0010\u0011R\u001b\u0010e\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bg\u0010\u0013\u001a\u0004\bf\u0010\u0011R\u001b\u0010h\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bj\u0010\u0013\u001a\u0004\bi\u0010\u0011R\u001b\u0010k\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bm\u0010\u0013\u001a\u0004\bl\u0010\u0011R\u001b\u0010n\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bp\u0010\u0013\u001a\u0004\bo\u0010\u0011R\u001b\u0010q\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bs\u0010\u0013\u001a\u0004\br\u0010\u0011R\u001b\u0010t\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bv\u0010\u0013\u001a\u0004\bu\u0010\u0011R\u001b\u0010w\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\by\u0010\u0013\u001a\u0004\bx\u0010\u0011R\u001b\u0010z\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b|\u0010\u0013\u001a\u0004\b{\u0010\u0011R\u001b\u0010}\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u007f\u0010\u0013\u001a\u0004\b~\u0010\u0011R\u001e\u0010\u0080\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0082\u0001\u0010\u0013\u001a\u0005\b\u0081\u0001\u0010\u0011R\u001e\u0010\u0083\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0085\u0001\u0010\u0013\u001a\u0005\b\u0084\u0001\u0010\u0011R\u001e\u0010\u0086\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0088\u0001\u0010\u0013\u001a\u0005\b\u0087\u0001\u0010\u0011R\u001e\u0010\u0089\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008b\u0001\u0010\u0013\u001a\u0005\b\u008a\u0001\u0010\u0011R\u001e\u0010\u008c\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008e\u0001\u0010\u0013\u001a\u0005\b\u008d\u0001\u0010\u0011R\u001e\u0010\u008f\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0091\u0001\u0010\u0013\u001a\u0005\b\u0090\u0001\u0010\u0011R\u001e\u0010\u0092\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0094\u0001\u0010\u0013\u001a\u0005\b\u0093\u0001\u0010\u0011R\u001e\u0010\u0095\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0097\u0001\u0010\u0013\u001a\u0005\b\u0096\u0001\u0010\u0011R\u001e\u0010\u0098\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009a\u0001\u0010\u0013\u001a\u0005\b\u0099\u0001\u0010\u0011R\u001e\u0010\u009b\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009d\u0001\u0010\u0013\u001a\u0005\b\u009c\u0001\u0010\u0011R\u001e\u0010\u009e\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b \u0001\u0010\u0013\u001a\u0005\b\u009f\u0001\u0010\u0011R\u001e\u0010¡\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b£\u0001\u0010\u0013\u001a\u0005\b¢\u0001\u0010\u0011R\u001e\u0010¤\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¦\u0001\u0010\u0013\u001a\u0005\b¥\u0001\u0010\u0011R\u001e\u0010§\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b©\u0001\u0010\u0013\u001a\u0005\b¨\u0001\u0010\u0011R\u001e\u0010ª\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¬\u0001\u0010\u0013\u001a\u0005\b«\u0001\u0010\u0011R\u001e\u0010\u00ad\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¯\u0001\u0010\u0013\u001a\u0005\b®\u0001\u0010\u0011R\u001e\u0010°\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b²\u0001\u0010\u0013\u001a\u0005\b±\u0001\u0010\u0011R\u001e\u0010³\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bµ\u0001\u0010\u0013\u001a\u0005\b´\u0001\u0010\u0011R\u001e\u0010¶\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¸\u0001\u0010\u0013\u001a\u0005\b·\u0001\u0010\u0011R\u001e\u0010¹\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b»\u0001\u0010\u0013\u001a\u0005\bº\u0001\u0010\u0011R\u001e\u0010¼\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¾\u0001\u0010\u0013\u001a\u0005\b½\u0001\u0010\u0011R\u001e\u0010¿\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÁ\u0001\u0010\u0013\u001a\u0005\bÀ\u0001\u0010\u0011R\u001e\u0010Â\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÄ\u0001\u0010\u0013\u001a\u0005\bÃ\u0001\u0010\u0011R\u001e\u0010Å\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÇ\u0001\u0010\u0013\u001a\u0005\bÆ\u0001\u0010\u0011R\u001e\u0010È\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÊ\u0001\u0010\u0013\u001a\u0005\bÉ\u0001\u0010\u0011R\u001e\u0010Ë\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÍ\u0001\u0010\u0013\u001a\u0005\bÌ\u0001\u0010\u0011R\u001e\u0010Î\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÐ\u0001\u0010\u0013\u001a\u0005\bÏ\u0001\u0010\u0011R\u001e\u0010Ñ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÓ\u0001\u0010\u0013\u001a\u0005\bÒ\u0001\u0010\u0011R\u001e\u0010Ô\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÖ\u0001\u0010\u0013\u001a\u0005\bÕ\u0001\u0010\u0011R\u001e\u0010×\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÙ\u0001\u0010\u0013\u001a\u0005\bØ\u0001\u0010\u0011R\u001e\u0010Ú\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÜ\u0001\u0010\u0013\u001a\u0005\bÛ\u0001\u0010\u0011R\u001e\u0010Ý\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bß\u0001\u0010\u0013\u001a\u0005\bÞ\u0001\u0010\u0011R\u001e\u0010à\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bâ\u0001\u0010\u0013\u001a\u0005\bá\u0001\u0010\u0011R\u001e\u0010ã\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bå\u0001\u0010\u0013\u001a\u0005\bä\u0001\u0010\u0011R\u001e\u0010æ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bè\u0001\u0010\u0013\u001a\u0005\bç\u0001\u0010\u0011R\u001e\u0010é\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bë\u0001\u0010\u0013\u001a\u0005\bê\u0001\u0010\u0011R\u001e\u0010ì\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bî\u0001\u0010\u0013\u001a\u0005\bí\u0001\u0010\u0011R\u001e\u0010ï\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bñ\u0001\u0010\u0013\u001a\u0005\bð\u0001\u0010\u0011R\u001e\u0010ò\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bô\u0001\u0010\u0013\u001a\u0005\bó\u0001\u0010\u0011R\u001e\u0010õ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b÷\u0001\u0010\u0013\u001a\u0005\bö\u0001\u0010\u0011R\u001e\u0010ø\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bú\u0001\u0010\u0013\u001a\u0005\bù\u0001\u0010\u0011R\u001e\u0010û\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bý\u0001\u0010\u0013\u001a\u0005\bü\u0001\u0010\u0011R\u001e\u0010þ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0080\u0002\u0010\u0013\u001a\u0005\bÿ\u0001\u0010\u0011R\u001e\u0010\u0081\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0083\u0002\u0010\u0013\u001a\u0005\b\u0082\u0002\u0010\u0011R\u001e\u0010\u0084\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0086\u0002\u0010\u0013\u001a\u0005\b\u0085\u0002\u0010\u0011R\u001e\u0010\u0087\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0089\u0002\u0010\u0013\u001a\u0005\b\u0088\u0002\u0010\u0011R\u001e\u0010\u008a\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008c\u0002\u0010\u0013\u001a\u0005\b\u008b\u0002\u0010\u0011R\u001e\u0010\u008d\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008f\u0002\u0010\u0013\u001a\u0005\b\u008e\u0002\u0010\u0011R\u001e\u0010\u0090\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0092\u0002\u0010\u0013\u001a\u0005\b\u0091\u0002\u0010\u0011R\u001e\u0010\u0093\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0095\u0002\u0010\u0013\u001a\u0005\b\u0094\u0002\u0010\u0011R\u001e\u0010\u0096\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0098\u0002\u0010\u0013\u001a\u0005\b\u0097\u0002\u0010\u0011R\u001e\u0010\u0099\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009b\u0002\u0010\u0013\u001a\u0005\b\u009a\u0002\u0010\u0011R\u001e\u0010\u009c\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009e\u0002\u0010\u0013\u001a\u0005\b\u009d\u0002\u0010\u0011R\u001e\u0010\u009f\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¡\u0002\u0010\u0013\u001a\u0005\b \u0002\u0010\u0011R\u001e\u0010¢\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¤\u0002\u0010\u0013\u001a\u0005\b£\u0002\u0010\u0011¨\u0006¥\u0002"}, d2 = {"Lcom/discord/theme/DarkerTheme;", "Lcom/discord/theme/DiscordThemeObject;", "resources", "Landroid/content/res/Resources;", "theme", "Landroid/content/res/Resources$Theme;", "<init>", "(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;)V", "getColorRes", "", "lightColorRes", "darkColorRes", "getColor", "lightColor", "darkColor", "backgroundAccent", "getBackgroundAccent", "()I", "backgroundAccent$delegate", "Lkotlin/Lazy;", "backgroundBaseLow", "getBackgroundBaseLow", "backgroundBaseLow$delegate", "backgroundBaseLower", "getBackgroundBaseLower", "backgroundBaseLower$delegate", "backgroundBaseLowest", "getBackgroundBaseLowest", "backgroundBaseLowest$delegate", "backgroundFeedbackCritical", "getBackgroundFeedbackCritical", "backgroundFeedbackCritical$delegate", "backgroundFeedbackNotification", "getBackgroundFeedbackNotification", "backgroundFeedbackNotification$delegate", "backgroundModMuted", "getBackgroundModMuted", "backgroundModMuted$delegate", "backgroundModNormal", "getBackgroundModNormal", "backgroundModNormal$delegate", "backgroundModStrong", "getBackgroundModStrong", "backgroundModStrong$delegate", "backgroundModSubtle", "getBackgroundModSubtle", "backgroundModSubtle$delegate", "backgroundScrim", "getBackgroundScrim", "backgroundScrim$delegate", "backgroundScrimLightbox", "getBackgroundScrimLightbox", "backgroundScrimLightbox$delegate", "backgroundSecondaryAlt", "getBackgroundSecondaryAlt", "backgroundSecondaryAlt$delegate", "backgroundSurfaceHigh", "getBackgroundSurfaceHigh", "backgroundSurfaceHigh$delegate", "backgroundSurfaceHighest", "getBackgroundSurfaceHighest", "backgroundSurfaceHighest$delegate", "badgeBackgroundBrand", "getBadgeBackgroundBrand", "badgeBackgroundBrand$delegate", "badgeBackgroundDefault", "getBadgeBackgroundDefault", "badgeBackgroundDefault$delegate", "badgeNotificationBackground", "getBadgeNotificationBackground", "badgeNotificationBackground$delegate", "badgeTextDefault", "getBadgeTextDefault", "badgeTextDefault$delegate", "bgSurfaceRaised", "getBgSurfaceRaised", "bgSurfaceRaised$delegate", "borderStrong", "getBorderStrong", "borderStrong$delegate", "borderSubtle", "getBorderSubtle", "borderSubtle$delegate", "cardBackgroundDefault", "getCardBackgroundDefault", "cardBackgroundDefault$delegate", "chatSwipeToReplyBackground", "getChatSwipeToReplyBackground", "chatSwipeToReplyBackground$delegate", "chatSwipeToReplyGradientBackground", "getChatSwipeToReplyGradientBackground", "chatSwipeToReplyGradientBackground$delegate", "controlConnectedBackgroundActive", "getControlConnectedBackgroundActive", "controlConnectedBackgroundActive$delegate", "controlConnectedBackgroundDefault", "getControlConnectedBackgroundDefault", "controlConnectedBackgroundDefault$delegate", "controlConnectedBorderDefault", "getControlConnectedBorderDefault", "controlConnectedBorderDefault$delegate", "controlConnectedTextDefault", "getControlConnectedTextDefault", "controlConnectedTextDefault$delegate", "controlCriticalPrimaryBackgroundActive", "getControlCriticalPrimaryBackgroundActive", "controlCriticalPrimaryBackgroundActive$delegate", "controlCriticalPrimaryBackgroundDefault", "getControlCriticalPrimaryBackgroundDefault", "controlCriticalPrimaryBackgroundDefault$delegate", "controlCriticalPrimaryBorderDefault", "getControlCriticalPrimaryBorderDefault", "controlCriticalPrimaryBorderDefault$delegate", "controlCriticalPrimaryTextDefault", "getControlCriticalPrimaryTextDefault", "controlCriticalPrimaryTextDefault$delegate", "controlOverlayPrimaryBackgroundActive", "getControlOverlayPrimaryBackgroundActive", "controlOverlayPrimaryBackgroundActive$delegate", "controlOverlayPrimaryBackgroundDefault", "getControlOverlayPrimaryBackgroundDefault", "controlOverlayPrimaryBackgroundDefault$delegate", "controlOverlayPrimaryBorderDefault", "getControlOverlayPrimaryBorderDefault", "controlOverlayPrimaryBorderDefault$delegate", "controlOverlayPrimaryTextDefault", "getControlOverlayPrimaryTextDefault", "controlOverlayPrimaryTextDefault$delegate", "controlOverlaySecondaryBackgroundActive", "getControlOverlaySecondaryBackgroundActive", "controlOverlaySecondaryBackgroundActive$delegate", "controlOverlaySecondaryBackgroundDefault", "getControlOverlaySecondaryBackgroundDefault", "controlOverlaySecondaryBackgroundDefault$delegate", "controlOverlaySecondaryBorderDefault", "getControlOverlaySecondaryBorderDefault", "controlOverlaySecondaryBorderDefault$delegate", "controlOverlaySecondaryTextDefault", "getControlOverlaySecondaryTextDefault", "controlOverlaySecondaryTextDefault$delegate", "controlPrimaryBackgroundActive", "getControlPrimaryBackgroundActive", "controlPrimaryBackgroundActive$delegate", "controlPrimaryBackgroundDefault", "getControlPrimaryBackgroundDefault", "controlPrimaryBackgroundDefault$delegate", "controlPrimaryBorderDefault", "getControlPrimaryBorderDefault", "controlPrimaryBorderDefault$delegate", "controlPrimaryTextDefault", "getControlPrimaryTextDefault", "controlPrimaryTextDefault$delegate", "controlSecondaryBackgroundActive", "getControlSecondaryBackgroundActive", "controlSecondaryBackgroundActive$delegate", "controlSecondaryBackgroundDefault", "getControlSecondaryBackgroundDefault", "controlSecondaryBackgroundDefault$delegate", "controlSecondaryBorderActive", "getControlSecondaryBorderActive", "controlSecondaryBorderActive$delegate", "controlSecondaryBorderDefault", "getControlSecondaryBorderDefault", "controlSecondaryBorderDefault$delegate", "controlSecondaryTextDefault", "getControlSecondaryTextDefault", "controlSecondaryTextDefault$delegate", "embedBackground", "getEmbedBackground", "embedBackground$delegate", "iconFeedbackCritical", "getIconFeedbackCritical", "iconFeedbackCritical$delegate", "iconFeedbackInfo", "getIconFeedbackInfo", "iconFeedbackInfo$delegate", "iconFeedbackNotification", "getIconFeedbackNotification", "iconFeedbackNotification$delegate", "iconFeedbackPositive", "getIconFeedbackPositive", "iconFeedbackPositive$delegate", "iconFeedbackWarning", "getIconFeedbackWarning", "iconFeedbackWarning$delegate", "inputBackgroundDefault", "getInputBackgroundDefault", "inputBackgroundDefault$delegate", "inputBorderDefault", "getInputBorderDefault", "inputBorderDefault$delegate", "interactiveBackgroundSelected", "getInteractiveBackgroundSelected", "interactiveBackgroundSelected$delegate", "interactiveIconActive", "getInteractiveIconActive", "interactiveIconActive$delegate", "interactiveIconDefault", "getInteractiveIconDefault", "interactiveIconDefault$delegate", "interactiveMuted", "getInteractiveMuted", "interactiveMuted$delegate", "interactiveTextActive", "getInteractiveTextActive", "interactiveTextActive$delegate", "interactiveTextDefault", "getInteractiveTextDefault", "interactiveTextDefault$delegate", "messageHighlightBackgroundDefault", "getMessageHighlightBackgroundDefault", "messageHighlightBackgroundDefault$delegate", "mobileAndroidButtonBackgroundRipple", "getMobileAndroidButtonBackgroundRipple", "mobileAndroidButtonBackgroundRipple$delegate", "mobileLegacyButtonSecondaryBackgroundDefault", "getMobileLegacyButtonSecondaryBackgroundDefault", "mobileLegacyButtonSecondaryBackgroundDefault$delegate", "mobileLegacyButtonSecondaryBorderDefault", "getMobileLegacyButtonSecondaryBorderDefault", "mobileLegacyButtonSecondaryBorderDefault$delegate", "mobileLegacyButtonSecondaryTextDefault", "getMobileLegacyButtonSecondaryTextDefault", "mobileLegacyButtonSecondaryTextDefault$delegate", "mobileTextHeadingPrimary", "getMobileTextHeadingPrimary", "mobileTextHeadingPrimary$delegate", "progressbarIndicatorBackground", "getProgressbarIndicatorBackground", "progressbarIndicatorBackground$delegate", "progressbarTrackBackground", "getProgressbarTrackBackground", "progressbarTrackBackground$delegate", "redesignButtonTertiaryBackground", "getRedesignButtonTertiaryBackground", "redesignButtonTertiaryBackground$delegate", "redesignButtonTertiaryText", "getRedesignButtonTertiaryText", "redesignButtonTertiaryText$delegate", "spineDefault", "getSpineDefault", "spineDefault$delegate", "spoilerHiddenBackground", "getSpoilerHiddenBackground", "spoilerHiddenBackground$delegate", "spoilerRevealedBackground", "getSpoilerRevealedBackground", "spoilerRevealedBackground$delegate", "statusDanger", "getStatusDanger", "statusDanger$delegate", "statusPositive", "getStatusPositive", "statusPositive$delegate", "statusPositiveText", "getStatusPositiveText", "statusPositiveText$delegate", "statusWarning", "getStatusWarning", "statusWarning$delegate", "textBrand", "getTextBrand", "textBrand$delegate", "textDefault", "getTextDefault", "textDefault$delegate", "textFeedbackCritical", "getTextFeedbackCritical", "textFeedbackCritical$delegate", "textFeedbackInfo", "getTextFeedbackInfo", "textFeedbackInfo$delegate", "textFeedbackPositive", "getTextFeedbackPositive", "textFeedbackPositive$delegate", "textFeedbackWarning", "getTextFeedbackWarning", "textFeedbackWarning$delegate", "textLink", "getTextLink", "textLink$delegate", "textMuted", "getTextMuted", "textMuted$delegate", "textStrong", "getTextStrong", "textStrong$delegate", "textSubtle", "getTextSubtle", "textSubtle$delegate", "white", "getWhite", "white$delegate", "theme_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000!\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0003\b®\u0002\b\u0000\u0018\u00002\u00020\u0001B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0010\u0004\u001a\u00060\u0005R\u00020\u0003¢\u0006\u0004\b\u0006\u0010\u0007J\u0018\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0016J\u0018\u0010\f\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00020\tH\u0016R\u001b\u0010\u000f\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0010\u0010\u0011R\u001b\u0010\u0014\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0016\u0010\u0013\u001a\u0004\b\u0015\u0010\u0011R\u001b\u0010\u0017\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0019\u0010\u0013\u001a\u0004\b\u0018\u0010\u0011R\u001b\u0010\u001a\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u001c\u0010\u0013\u001a\u0004\b\u001b\u0010\u0011R\u001b\u0010\u001d\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u001f\u0010\u0013\u001a\u0004\b\u001e\u0010\u0011R\u001b\u0010 \u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\"\u0010\u0013\u001a\u0004\b!\u0010\u0011R\u001b\u0010#\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b%\u0010\u0013\u001a\u0004\b$\u0010\u0011R\u001b\u0010&\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b(\u0010\u0013\u001a\u0004\b'\u0010\u0011R\u001b\u0010)\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b+\u0010\u0013\u001a\u0004\b*\u0010\u0011R\u001b\u0010,\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b.\u0010\u0013\u001a\u0004\b-\u0010\u0011R\u001b\u0010/\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b1\u0010\u0013\u001a\u0004\b0\u0010\u0011R\u001b\u00102\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b4\u0010\u0013\u001a\u0004\b3\u0010\u0011R\u001b\u00105\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b7\u0010\u0013\u001a\u0004\b6\u0010\u0011R\u001b\u00108\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b:\u0010\u0013\u001a\u0004\b9\u0010\u0011R\u001b\u0010;\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b=\u0010\u0013\u001a\u0004\b<\u0010\u0011R\u001b\u0010>\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b@\u0010\u0013\u001a\u0004\b?\u0010\u0011R\u001b\u0010A\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bC\u0010\u0013\u001a\u0004\bB\u0010\u0011R\u001b\u0010D\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bF\u0010\u0013\u001a\u0004\bE\u0010\u0011R\u001b\u0010G\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bI\u0010\u0013\u001a\u0004\bH\u0010\u0011R\u001b\u0010J\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bL\u0010\u0013\u001a\u0004\bK\u0010\u0011R\u001b\u0010M\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bO\u0010\u0013\u001a\u0004\bN\u0010\u0011R\u001b\u0010P\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bR\u0010\u0013\u001a\u0004\bQ\u0010\u0011R\u001b\u0010S\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bU\u0010\u0013\u001a\u0004\bT\u0010\u0011R\u001b\u0010V\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bX\u0010\u0013\u001a\u0004\bW\u0010\u0011R\u001b\u0010Y\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b[\u0010\u0013\u001a\u0004\bZ\u0010\u0011R\u001b\u0010\\\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b^\u0010\u0013\u001a\u0004\b]\u0010\u0011R\u001b\u0010_\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\ba\u0010\u0013\u001a\u0004\b`\u0010\u0011R\u001b\u0010b\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bd\u0010\u0013\u001a\u0004\bc\u0010\u0011R\u001b\u0010e\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bg\u0010\u0013\u001a\u0004\bf\u0010\u0011R\u001b\u0010h\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bj\u0010\u0013\u001a\u0004\bi\u0010\u0011R\u001b\u0010k\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bm\u0010\u0013\u001a\u0004\bl\u0010\u0011R\u001b\u0010n\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bp\u0010\u0013\u001a\u0004\bo\u0010\u0011R\u001b\u0010q\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bs\u0010\u0013\u001a\u0004\br\u0010\u0011R\u001b\u0010t\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bv\u0010\u0013\u001a\u0004\bu\u0010\u0011R\u001b\u0010w\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\by\u0010\u0013\u001a\u0004\bx\u0010\u0011R\u001b\u0010z\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b|\u0010\u0013\u001a\u0004\b{\u0010\u0011R\u001b\u0010}\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u007f\u0010\u0013\u001a\u0004\b~\u0010\u0011R\u001e\u0010\u0080\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0082\u0001\u0010\u0013\u001a\u0005\b\u0081\u0001\u0010\u0011R\u001e\u0010\u0083\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0085\u0001\u0010\u0013\u001a\u0005\b\u0084\u0001\u0010\u0011R\u001e\u0010\u0086\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0088\u0001\u0010\u0013\u001a\u0005\b\u0087\u0001\u0010\u0011R\u001e\u0010\u0089\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008b\u0001\u0010\u0013\u001a\u0005\b\u008a\u0001\u0010\u0011R\u001e\u0010\u008c\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008e\u0001\u0010\u0013\u001a\u0005\b\u008d\u0001\u0010\u0011R\u001e\u0010\u008f\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0091\u0001\u0010\u0013\u001a\u0005\b\u0090\u0001\u0010\u0011R\u001e\u0010\u0092\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0094\u0001\u0010\u0013\u001a\u0005\b\u0093\u0001\u0010\u0011R\u001e\u0010\u0095\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0097\u0001\u0010\u0013\u001a\u0005\b\u0096\u0001\u0010\u0011R\u001e\u0010\u0098\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009a\u0001\u0010\u0013\u001a\u0005\b\u0099\u0001\u0010\u0011R\u001e\u0010\u009b\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009d\u0001\u0010\u0013\u001a\u0005\b\u009c\u0001\u0010\u0011R\u001e\u0010\u009e\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b \u0001\u0010\u0013\u001a\u0005\b\u009f\u0001\u0010\u0011R\u001e\u0010¡\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b£\u0001\u0010\u0013\u001a\u0005\b¢\u0001\u0010\u0011R\u001e\u0010¤\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¦\u0001\u0010\u0013\u001a\u0005\b¥\u0001\u0010\u0011R\u001e\u0010§\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b©\u0001\u0010\u0013\u001a\u0005\b¨\u0001\u0010\u0011R\u001e\u0010ª\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¬\u0001\u0010\u0013\u001a\u0005\b«\u0001\u0010\u0011R\u001e\u0010\u00ad\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¯\u0001\u0010\u0013\u001a\u0005\b®\u0001\u0010\u0011R\u001e\u0010°\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b²\u0001\u0010\u0013\u001a\u0005\b±\u0001\u0010\u0011R\u001e\u0010³\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bµ\u0001\u0010\u0013\u001a\u0005\b´\u0001\u0010\u0011R\u001e\u0010¶\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¸\u0001\u0010\u0013\u001a\u0005\b·\u0001\u0010\u0011R\u001e\u0010¹\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b»\u0001\u0010\u0013\u001a\u0005\bº\u0001\u0010\u0011R\u001e\u0010¼\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¾\u0001\u0010\u0013\u001a\u0005\b½\u0001\u0010\u0011R\u001e\u0010¿\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÁ\u0001\u0010\u0013\u001a\u0005\bÀ\u0001\u0010\u0011R\u001e\u0010Â\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÄ\u0001\u0010\u0013\u001a\u0005\bÃ\u0001\u0010\u0011R\u001e\u0010Å\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÇ\u0001\u0010\u0013\u001a\u0005\bÆ\u0001\u0010\u0011R\u001e\u0010È\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÊ\u0001\u0010\u0013\u001a\u0005\bÉ\u0001\u0010\u0011R\u001e\u0010Ë\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÍ\u0001\u0010\u0013\u001a\u0005\bÌ\u0001\u0010\u0011R\u001e\u0010Î\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÐ\u0001\u0010\u0013\u001a\u0005\bÏ\u0001\u0010\u0011R\u001e\u0010Ñ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÓ\u0001\u0010\u0013\u001a\u0005\bÒ\u0001\u0010\u0011R\u001e\u0010Ô\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÖ\u0001\u0010\u0013\u001a\u0005\bÕ\u0001\u0010\u0011R\u001e\u0010×\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÙ\u0001\u0010\u0013\u001a\u0005\bØ\u0001\u0010\u0011R\u001e\u0010Ú\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bÜ\u0001\u0010\u0013\u001a\u0005\bÛ\u0001\u0010\u0011R\u001e\u0010Ý\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bß\u0001\u0010\u0013\u001a\u0005\bÞ\u0001\u0010\u0011R\u001e\u0010à\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bâ\u0001\u0010\u0013\u001a\u0005\bá\u0001\u0010\u0011R\u001e\u0010ã\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bå\u0001\u0010\u0013\u001a\u0005\bä\u0001\u0010\u0011R\u001e\u0010æ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bè\u0001\u0010\u0013\u001a\u0005\bç\u0001\u0010\u0011R\u001e\u0010é\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bë\u0001\u0010\u0013\u001a\u0005\bê\u0001\u0010\u0011R\u001e\u0010ì\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bî\u0001\u0010\u0013\u001a\u0005\bí\u0001\u0010\u0011R\u001e\u0010ï\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bñ\u0001\u0010\u0013\u001a\u0005\bð\u0001\u0010\u0011R\u001e\u0010ò\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bô\u0001\u0010\u0013\u001a\u0005\bó\u0001\u0010\u0011R\u001e\u0010õ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b÷\u0001\u0010\u0013\u001a\u0005\bö\u0001\u0010\u0011R\u001e\u0010ø\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bú\u0001\u0010\u0013\u001a\u0005\bù\u0001\u0010\u0011R\u001e\u0010û\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bý\u0001\u0010\u0013\u001a\u0005\bü\u0001\u0010\u0011R\u001e\u0010þ\u0001\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0080\u0002\u0010\u0013\u001a\u0005\bÿ\u0001\u0010\u0011R\u001e\u0010\u0081\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0083\u0002\u0010\u0013\u001a\u0005\b\u0082\u0002\u0010\u0011R\u001e\u0010\u0084\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0086\u0002\u0010\u0013\u001a\u0005\b\u0085\u0002\u0010\u0011R\u001e\u0010\u0087\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0089\u0002\u0010\u0013\u001a\u0005\b\u0088\u0002\u0010\u0011R\u001e\u0010\u008a\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008c\u0002\u0010\u0013\u001a\u0005\b\u008b\u0002\u0010\u0011R\u001e\u0010\u008d\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u008f\u0002\u0010\u0013\u001a\u0005\b\u008e\u0002\u0010\u0011R\u001e\u0010\u0090\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0092\u0002\u0010\u0013\u001a\u0005\b\u0091\u0002\u0010\u0011R\u001e\u0010\u0093\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0095\u0002\u0010\u0013\u001a\u0005\b\u0094\u0002\u0010\u0011R\u001e\u0010\u0096\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u0098\u0002\u0010\u0013\u001a\u0005\b\u0097\u0002\u0010\u0011R\u001e\u0010\u0099\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009b\u0002\u0010\u0013\u001a\u0005\b\u009a\u0002\u0010\u0011R\u001e\u0010\u009c\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u009e\u0002\u0010\u0013\u001a\u0005\b\u009d\u0002\u0010\u0011R\u001e\u0010\u009f\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¡\u0002\u0010\u0013\u001a\u0005\b \u0002\u0010\u0011R\u001e\u0010¢\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¤\u0002\u0010\u0013\u001a\u0005\b£\u0002\u0010\u0011R\u001e\u0010¥\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b§\u0002\u0010\u0013\u001a\u0005\b¦\u0002\u0010\u0011R\u001e\u0010¨\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\bª\u0002\u0010\u0013\u001a\u0005\b©\u0002\u0010\u0011R\u001e\u0010«\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b\u00ad\u0002\u0010\u0013\u001a\u0005\b¬\u0002\u0010\u0011R\u001e\u0010®\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b°\u0002\u0010\u0013\u001a\u0005\b¯\u0002\u0010\u0011R\u001e\u0010±\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b³\u0002\u0010\u0013\u001a\u0005\b²\u0002\u0010\u0011R\u001e\u0010´\u0002\u001a\u00020\t8VX\u0096\u0084\u0002¢\u0006\u000e\n\u0005\b¶\u0002\u0010\u0013\u001a\u0005\bµ\u0002\u0010\u0011¨\u0006·\u0002"}, d2 = {"Lcom/discord/theme/DarkerTheme;", "Lcom/discord/theme/DiscordThemeObject;", "resources", "Landroid/content/res/Resources;", "theme", "Landroid/content/res/Resources$Theme;", "<init>", "(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;)V", "getColorRes", "", "lightColorRes", "darkColorRes", "getColor", "lightColor", "darkColor", "backgroundAccent", "getBackgroundAccent", "()I", "backgroundAccent$delegate", "Lkotlin/Lazy;", "backgroundBaseLow", "getBackgroundBaseLow", "backgroundBaseLow$delegate", "backgroundBaseLower", "getBackgroundBaseLower", "backgroundBaseLower$delegate", "backgroundBaseLowest", "getBackgroundBaseLowest", "backgroundBaseLowest$delegate", "backgroundFeedbackCritical", "getBackgroundFeedbackCritical", "backgroundFeedbackCritical$delegate", "backgroundFeedbackNotification", "getBackgroundFeedbackNotification", "backgroundFeedbackNotification$delegate", "backgroundModMuted", "getBackgroundModMuted", "backgroundModMuted$delegate", "backgroundModNormal", "getBackgroundModNormal", "backgroundModNormal$delegate", "backgroundModStrong", "getBackgroundModStrong", "backgroundModStrong$delegate", "backgroundModSubtle", "getBackgroundModSubtle", "backgroundModSubtle$delegate", "backgroundScrim", "getBackgroundScrim", "backgroundScrim$delegate", "backgroundScrimLightbox", "getBackgroundScrimLightbox", "backgroundScrimLightbox$delegate", "backgroundSecondaryAlt", "getBackgroundSecondaryAlt", "backgroundSecondaryAlt$delegate", "backgroundSurfaceHigh", "getBackgroundSurfaceHigh", "backgroundSurfaceHigh$delegate", "backgroundSurfaceHighest", "getBackgroundSurfaceHighest", "backgroundSurfaceHighest$delegate", "badgeBackgroundBrand", "getBadgeBackgroundBrand", "badgeBackgroundBrand$delegate", "badgeBackgroundDefault", "getBadgeBackgroundDefault", "badgeBackgroundDefault$delegate", "badgeNotificationBackground", "getBadgeNotificationBackground", "badgeNotificationBackground$delegate", "badgeTextDefault", "getBadgeTextDefault", "badgeTextDefault$delegate", "bgSurfaceRaised", "getBgSurfaceRaised", "bgSurfaceRaised$delegate", "borderStrong", "getBorderStrong", "borderStrong$delegate", "borderSubtle", "getBorderSubtle", "borderSubtle$delegate", "cardBackgroundDefault", "getCardBackgroundDefault", "cardBackgroundDefault$delegate", "chatSwipeToReplyBackground", "getChatSwipeToReplyBackground", "chatSwipeToReplyBackground$delegate", "chatSwipeToReplyGradientBackground", "getChatSwipeToReplyGradientBackground", "chatSwipeToReplyGradientBackground$delegate", "controlConnectedBackgroundActive", "getControlConnectedBackgroundActive", "controlConnectedBackgroundActive$delegate", "controlConnectedBackgroundDefault", "getControlConnectedBackgroundDefault", "controlConnectedBackgroundDefault$delegate", "controlConnectedBorderDefault", "getControlConnectedBorderDefault", "controlConnectedBorderDefault$delegate", "controlConnectedTextDefault", "getControlConnectedTextDefault", "controlConnectedTextDefault$delegate", "controlCriticalPrimaryBackgroundActive", "getControlCriticalPrimaryBackgroundActive", "controlCriticalPrimaryBackgroundActive$delegate", "controlCriticalPrimaryBackgroundDefault", "getControlCriticalPrimaryBackgroundDefault", "controlCriticalPrimaryBackgroundDefault$delegate", "controlCriticalPrimaryBorderDefault", "getControlCriticalPrimaryBorderDefault", "controlCriticalPrimaryBorderDefault$delegate", "controlCriticalPrimaryTextDefault", "getControlCriticalPrimaryTextDefault", "controlCriticalPrimaryTextDefault$delegate", "controlOverlayPrimaryBackgroundActive", "getControlOverlayPrimaryBackgroundActive", "controlOverlayPrimaryBackgroundActive$delegate", "controlOverlayPrimaryBackgroundDefault", "getControlOverlayPrimaryBackgroundDefault", "controlOverlayPrimaryBackgroundDefault$delegate", "controlOverlayPrimaryBorderDefault", "getControlOverlayPrimaryBorderDefault", "controlOverlayPrimaryBorderDefault$delegate", "controlOverlayPrimaryTextDefault", "getControlOverlayPrimaryTextDefault", "controlOverlayPrimaryTextDefault$delegate", "controlOverlaySecondaryBackgroundActive", "getControlOverlaySecondaryBackgroundActive", "controlOverlaySecondaryBackgroundActive$delegate", "controlOverlaySecondaryBackgroundDefault", "getControlOverlaySecondaryBackgroundDefault", "controlOverlaySecondaryBackgroundDefault$delegate", "controlOverlaySecondaryBorderDefault", "getControlOverlaySecondaryBorderDefault", "controlOverlaySecondaryBorderDefault$delegate", "controlOverlaySecondaryTextDefault", "getControlOverlaySecondaryTextDefault", "controlOverlaySecondaryTextDefault$delegate", "controlPrimaryBackgroundActive", "getControlPrimaryBackgroundActive", "controlPrimaryBackgroundActive$delegate", "controlPrimaryBackgroundDefault", "getControlPrimaryBackgroundDefault", "controlPrimaryBackgroundDefault$delegate", "controlPrimaryBorderDefault", "getControlPrimaryBorderDefault", "controlPrimaryBorderDefault$delegate", "controlPrimaryTextDefault", "getControlPrimaryTextDefault", "controlPrimaryTextDefault$delegate", "controlSecondaryBackgroundActive", "getControlSecondaryBackgroundActive", "controlSecondaryBackgroundActive$delegate", "controlSecondaryBackgroundDefault", "getControlSecondaryBackgroundDefault", "controlSecondaryBackgroundDefault$delegate", "controlSecondaryBorderActive", "getControlSecondaryBorderActive", "controlSecondaryBorderActive$delegate", "controlSecondaryBorderDefault", "getControlSecondaryBorderDefault", "controlSecondaryBorderDefault$delegate", "controlSecondaryTextDefault", "getControlSecondaryTextDefault", "controlSecondaryTextDefault$delegate", "embedBackground", "getEmbedBackground", "embedBackground$delegate", "iconFeedbackCritical", "getIconFeedbackCritical", "iconFeedbackCritical$delegate", "iconFeedbackInfo", "getIconFeedbackInfo", "iconFeedbackInfo$delegate", "iconFeedbackNotification", "getIconFeedbackNotification", "iconFeedbackNotification$delegate", "iconFeedbackPositive", "getIconFeedbackPositive", "iconFeedbackPositive$delegate", "iconFeedbackWarning", "getIconFeedbackWarning", "iconFeedbackWarning$delegate", "iconVoiceConnected", "getIconVoiceConnected", "iconVoiceConnected$delegate", "iconVoiceDisconnected", "getIconVoiceDisconnected", "iconVoiceDisconnected$delegate", "iconVoiceSpeaking", "getIconVoiceSpeaking", "iconVoiceSpeaking$delegate", "inputBackgroundDefault", "getInputBackgroundDefault", "inputBackgroundDefault$delegate", "inputBorderDefault", "getInputBorderDefault", "inputBorderDefault$delegate", "interactiveBackgroundSelected", "getInteractiveBackgroundSelected", "interactiveBackgroundSelected$delegate", "interactiveIconActive", "getInteractiveIconActive", "interactiveIconActive$delegate", "interactiveIconDefault", "getInteractiveIconDefault", "interactiveIconDefault$delegate", "interactiveMuted", "getInteractiveMuted", "interactiveMuted$delegate", "interactiveTextActive", "getInteractiveTextActive", "interactiveTextActive$delegate", "interactiveTextDefault", "getInteractiveTextDefault", "interactiveTextDefault$delegate", "messageHighlightBackgroundDefault", "getMessageHighlightBackgroundDefault", "messageHighlightBackgroundDefault$delegate", "mobileAndroidButtonBackgroundRipple", "getMobileAndroidButtonBackgroundRipple", "mobileAndroidButtonBackgroundRipple$delegate", "mobileLegacyButtonSecondaryBackgroundDefault", "getMobileLegacyButtonSecondaryBackgroundDefault", "mobileLegacyButtonSecondaryBackgroundDefault$delegate", "mobileLegacyButtonSecondaryBorderDefault", "getMobileLegacyButtonSecondaryBorderDefault", "mobileLegacyButtonSecondaryBorderDefault$delegate", "mobileLegacyButtonSecondaryTextDefault", "getMobileLegacyButtonSecondaryTextDefault", "mobileLegacyButtonSecondaryTextDefault$delegate", "mobileTextHeadingPrimary", "getMobileTextHeadingPrimary", "mobileTextHeadingPrimary$delegate", "progressbarIndicatorBackground", "getProgressbarIndicatorBackground", "progressbarIndicatorBackground$delegate", "progressbarTrackBackground", "getProgressbarTrackBackground", "progressbarTrackBackground$delegate", "redesignButtonTertiaryBackground", "getRedesignButtonTertiaryBackground", "redesignButtonTertiaryBackground$delegate", "redesignButtonTertiaryText", "getRedesignButtonTertiaryText", "redesignButtonTertiaryText$delegate", "spineDefault", "getSpineDefault", "spineDefault$delegate", "spoilerHiddenBackground", "getSpoilerHiddenBackground", "spoilerHiddenBackground$delegate", "spoilerRevealedBackground", "getSpoilerRevealedBackground", "spoilerRevealedBackground$delegate", "statusDanger", "getStatusDanger", "statusDanger$delegate", "statusPositive", "getStatusPositive", "statusPositive$delegate", "statusPositiveText", "getStatusPositiveText", "statusPositiveText$delegate", "statusWarning", "getStatusWarning", "statusWarning$delegate", "textBrand", "getTextBrand", "textBrand$delegate", "textDefault", "getTextDefault", "textDefault$delegate", "textFeedbackCritical", "getTextFeedbackCritical", "textFeedbackCritical$delegate", "textFeedbackInfo", "getTextFeedbackInfo", "textFeedbackInfo$delegate", "textFeedbackPositive", "getTextFeedbackPositive", "textFeedbackPositive$delegate", "textFeedbackWarning", "getTextFeedbackWarning", "textFeedbackWarning$delegate", "textLink", "getTextLink", "textLink$delegate", "textMuted", "getTextMuted", "textMuted$delegate", "textStrong", "getTextStrong", "textStrong$delegate", "textSubtle", "getTextSubtle", "textSubtle$delegate", "textVoiceConnected", "getTextVoiceConnected", "textVoiceConnected$delegate", "textVoiceDisconnected", "getTextVoiceDisconnected", "textVoiceDisconnected$delegate", "textVoiceSpeaking", "getTextVoiceSpeaking", "textVoiceSpeaking$delegate", "white", "getWhite", "white$delegate", "theme_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DarkerTheme extends DiscordThemeObject {
     @NotNull
@@ -125,6 +125,12 @@ public final class DarkerTheme extends DiscordThemeObject {
     @NotNull
     private final Lazy iconFeedbackWarning$delegate;
     @NotNull
+    private final Lazy iconVoiceConnected$delegate;
+    @NotNull
+    private final Lazy iconVoiceDisconnected$delegate;
+    @NotNull
+    private final Lazy iconVoiceSpeaking$delegate;
+    @NotNull
     private final Lazy inputBackgroundDefault$delegate;
     @NotNull
     private final Lazy inputBorderDefault$delegate;
@@ -195,6 +201,12 @@ public final class DarkerTheme extends DiscordThemeObject {
     @NotNull
     private final Lazy textSubtle$delegate;
     @NotNull
+    private final Lazy textVoiceConnected$delegate;
+    @NotNull
+    private final Lazy textVoiceDisconnected$delegate;
+    @NotNull
+    private final Lazy textVoiceSpeaking$delegate;
+    @NotNull
     private final Lazy white$delegate;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -202,7 +214,7 @@ public final class DarkerTheme extends DiscordThemeObject {
         super(null);
         Intrinsics.checkNotNullParameter(resources, "resources");
         Intrinsics.checkNotNullParameter(theme, "theme");
-        this.backgroundAccent$delegate = l.a(new Function0() { // from class: g8.o2
+        this.backgroundAccent$delegate = l.a(new Function0() { // from class: g8.u2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundAccent_delegate$lambda$0;
@@ -210,7 +222,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundAccent_delegate$lambda$0);
             }
         });
-        this.backgroundBaseLow$delegate = l.a(new Function0() { // from class: g8.q2
+        this.backgroundBaseLow$delegate = l.a(new Function0() { // from class: g8.w2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundBaseLow_delegate$lambda$1;
@@ -218,7 +230,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundBaseLow_delegate$lambda$1);
             }
         });
-        this.backgroundBaseLower$delegate = l.a(new Function0() { // from class: g8.c3
+        this.backgroundBaseLower$delegate = l.a(new Function0() { // from class: g8.i3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundBaseLower_delegate$lambda$2;
@@ -226,7 +238,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundBaseLower_delegate$lambda$2);
             }
         });
-        this.backgroundBaseLowest$delegate = l.a(new Function0() { // from class: g8.o3
+        this.backgroundBaseLowest$delegate = l.a(new Function0() { // from class: g8.u3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundBaseLowest_delegate$lambda$3;
@@ -234,7 +246,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundBaseLowest_delegate$lambda$3);
             }
         });
-        this.backgroundFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.a4
+        this.backgroundFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.g4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundFeedbackCritical_delegate$lambda$4;
@@ -242,7 +254,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundFeedbackCritical_delegate$lambda$4);
             }
         });
-        this.backgroundFeedbackNotification$delegate = l.a(new Function0() { // from class: g8.m4
+        this.backgroundFeedbackNotification$delegate = l.a(new Function0() { // from class: g8.s4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundFeedbackNotification_delegate$lambda$5;
@@ -250,7 +262,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundFeedbackNotification_delegate$lambda$5);
             }
         });
-        this.backgroundModMuted$delegate = l.a(new Function0() { // from class: g8.y4
+        this.backgroundModMuted$delegate = l.a(new Function0() { // from class: g8.e5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundModMuted_delegate$lambda$6;
@@ -258,7 +270,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundModMuted_delegate$lambda$6);
             }
         });
-        this.backgroundModNormal$delegate = l.a(new Function0() { // from class: g8.k5
+        this.backgroundModNormal$delegate = l.a(new Function0() { // from class: g8.q5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundModNormal_delegate$lambda$7;
@@ -266,7 +278,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundModNormal_delegate$lambda$7);
             }
         });
-        this.backgroundModStrong$delegate = l.a(new Function0() { // from class: g8.w5
+        this.backgroundModStrong$delegate = l.a(new Function0() { // from class: g8.c6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundModStrong_delegate$lambda$8;
@@ -274,7 +286,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundModStrong_delegate$lambda$8);
             }
         });
-        this.backgroundModSubtle$delegate = l.a(new Function0() { // from class: g8.a6
+        this.backgroundModSubtle$delegate = l.a(new Function0() { // from class: g8.m6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundModSubtle_delegate$lambda$9;
@@ -282,7 +294,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundModSubtle_delegate$lambda$9);
             }
         });
-        this.backgroundScrim$delegate = l.a(new Function0() { // from class: g8.z2
+        this.backgroundScrim$delegate = l.a(new Function0() { // from class: g8.f3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundScrim_delegate$lambda$10;
@@ -290,7 +302,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundScrim_delegate$lambda$10);
             }
         });
-        this.backgroundScrimLightbox$delegate = l.a(new Function0() { // from class: g8.k3
+        this.backgroundScrimLightbox$delegate = l.a(new Function0() { // from class: g8.q3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundScrimLightbox_delegate$lambda$11;
@@ -298,7 +310,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundScrimLightbox_delegate$lambda$11);
             }
         });
-        this.backgroundSecondaryAlt$delegate = l.a(new Function0() { // from class: g8.v3
+        this.backgroundSecondaryAlt$delegate = l.a(new Function0() { // from class: g8.b4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundSecondaryAlt_delegate$lambda$12;
@@ -306,7 +318,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundSecondaryAlt_delegate$lambda$12);
             }
         });
-        this.backgroundSurfaceHigh$delegate = l.a(new Function0() { // from class: g8.g4
+        this.backgroundSurfaceHigh$delegate = l.a(new Function0() { // from class: g8.m4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundSurfaceHigh_delegate$lambda$13;
@@ -314,7 +326,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundSurfaceHigh_delegate$lambda$13);
             }
         });
-        this.backgroundSurfaceHighest$delegate = l.a(new Function0() { // from class: g8.r4
+        this.backgroundSurfaceHighest$delegate = l.a(new Function0() { // from class: g8.x4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int backgroundSurfaceHighest_delegate$lambda$14;
@@ -322,7 +334,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(backgroundSurfaceHighest_delegate$lambda$14);
             }
         });
-        this.badgeBackgroundBrand$delegate = l.a(new Function0() { // from class: g8.c5
+        this.badgeBackgroundBrand$delegate = l.a(new Function0() { // from class: g8.i5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int badgeBackgroundBrand_delegate$lambda$15;
@@ -330,7 +342,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(badgeBackgroundBrand_delegate$lambda$15);
             }
         });
-        this.badgeBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.n5
+        this.badgeBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.t5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int badgeBackgroundDefault_delegate$lambda$16;
@@ -338,7 +350,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(badgeBackgroundDefault_delegate$lambda$16);
             }
         });
-        this.badgeNotificationBackground$delegate = l.a(new Function0() { // from class: g8.y5
+        this.badgeNotificationBackground$delegate = l.a(new Function0() { // from class: g8.e6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int badgeNotificationBackground_delegate$lambda$17;
@@ -346,7 +358,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(badgeNotificationBackground_delegate$lambda$17);
             }
         });
-        this.badgeTextDefault$delegate = l.a(new Function0() { // from class: g8.b6
+        this.badgeTextDefault$delegate = l.a(new Function0() { // from class: g8.n6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int badgeTextDefault_delegate$lambda$18;
@@ -354,7 +366,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(badgeTextDefault_delegate$lambda$18);
             }
         });
-        this.bgSurfaceRaised$delegate = l.a(new Function0() { // from class: g8.p2
+        this.bgSurfaceRaised$delegate = l.a(new Function0() { // from class: g8.v2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int bgSurfaceRaised_delegate$lambda$19;
@@ -362,7 +374,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(bgSurfaceRaised_delegate$lambda$19);
             }
         });
-        this.borderStrong$delegate = l.a(new Function0() { // from class: g8.r2
+        this.borderStrong$delegate = l.a(new Function0() { // from class: g8.x2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int borderStrong_delegate$lambda$20;
@@ -370,7 +382,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(borderStrong_delegate$lambda$20);
             }
         });
-        this.borderSubtle$delegate = l.a(new Function0() { // from class: g8.s2
+        this.borderSubtle$delegate = l.a(new Function0() { // from class: g8.y2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int borderSubtle_delegate$lambda$21;
@@ -378,7 +390,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(borderSubtle_delegate$lambda$21);
             }
         });
-        this.cardBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.t2
+        this.cardBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.z2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int cardBackgroundDefault_delegate$lambda$22;
@@ -386,7 +398,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(cardBackgroundDefault_delegate$lambda$22);
             }
         });
-        this.chatSwipeToReplyBackground$delegate = l.a(new Function0() { // from class: g8.u2
+        this.chatSwipeToReplyBackground$delegate = l.a(new Function0() { // from class: g8.a3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int chatSwipeToReplyBackground_delegate$lambda$23;
@@ -394,7 +406,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(chatSwipeToReplyBackground_delegate$lambda$23);
             }
         });
-        this.chatSwipeToReplyGradientBackground$delegate = l.a(new Function0() { // from class: g8.v2
+        this.chatSwipeToReplyGradientBackground$delegate = l.a(new Function0() { // from class: g8.b3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int chatSwipeToReplyGradientBackground_delegate$lambda$24;
@@ -402,7 +414,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(chatSwipeToReplyGradientBackground_delegate$lambda$24);
             }
         });
-        this.controlConnectedBackgroundActive$delegate = l.a(new Function0() { // from class: g8.w2
+        this.controlConnectedBackgroundActive$delegate = l.a(new Function0() { // from class: g8.c3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlConnectedBackgroundActive_delegate$lambda$25;
@@ -410,7 +422,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlConnectedBackgroundActive_delegate$lambda$25);
             }
         });
-        this.controlConnectedBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.x2
+        this.controlConnectedBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.d3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlConnectedBackgroundDefault_delegate$lambda$26;
@@ -418,7 +430,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlConnectedBackgroundDefault_delegate$lambda$26);
             }
         });
-        this.controlConnectedBorderDefault$delegate = l.a(new Function0() { // from class: g8.y2
+        this.controlConnectedBorderDefault$delegate = l.a(new Function0() { // from class: g8.e3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlConnectedBorderDefault_delegate$lambda$27;
@@ -426,7 +438,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlConnectedBorderDefault_delegate$lambda$27);
             }
         });
-        this.controlConnectedTextDefault$delegate = l.a(new Function0() { // from class: g8.a3
+        this.controlConnectedTextDefault$delegate = l.a(new Function0() { // from class: g8.g3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlConnectedTextDefault_delegate$lambda$28;
@@ -434,7 +446,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlConnectedTextDefault_delegate$lambda$28);
             }
         });
-        this.controlCriticalPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.b3
+        this.controlCriticalPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.h3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlCriticalPrimaryBackgroundActive_delegate$lambda$29;
@@ -442,7 +454,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlCriticalPrimaryBackgroundActive_delegate$lambda$29);
             }
         });
-        this.controlCriticalPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.d3
+        this.controlCriticalPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.j3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlCriticalPrimaryBackgroundDefault_delegate$lambda$30;
@@ -450,7 +462,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlCriticalPrimaryBackgroundDefault_delegate$lambda$30);
             }
         });
-        this.controlCriticalPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.e3
+        this.controlCriticalPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.k3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlCriticalPrimaryBorderDefault_delegate$lambda$31;
@@ -458,7 +470,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlCriticalPrimaryBorderDefault_delegate$lambda$31);
             }
         });
-        this.controlCriticalPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.f3
+        this.controlCriticalPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.l3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlCriticalPrimaryTextDefault_delegate$lambda$32;
@@ -466,7 +478,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlCriticalPrimaryTextDefault_delegate$lambda$32);
             }
         });
-        this.controlOverlayPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.g3
+        this.controlOverlayPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.m3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlayPrimaryBackgroundActive_delegate$lambda$33;
@@ -474,7 +486,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlayPrimaryBackgroundActive_delegate$lambda$33);
             }
         });
-        this.controlOverlayPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.h3
+        this.controlOverlayPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.n3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlayPrimaryBackgroundDefault_delegate$lambda$34;
@@ -482,7 +494,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlayPrimaryBackgroundDefault_delegate$lambda$34);
             }
         });
-        this.controlOverlayPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.i3
+        this.controlOverlayPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.o3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlayPrimaryBorderDefault_delegate$lambda$35;
@@ -490,7 +502,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlayPrimaryBorderDefault_delegate$lambda$35);
             }
         });
-        this.controlOverlayPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.j3
+        this.controlOverlayPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.p3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlayPrimaryTextDefault_delegate$lambda$36;
@@ -498,7 +510,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlayPrimaryTextDefault_delegate$lambda$36);
             }
         });
-        this.controlOverlaySecondaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.l3
+        this.controlOverlaySecondaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.r3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlaySecondaryBackgroundActive_delegate$lambda$37;
@@ -506,7 +518,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlaySecondaryBackgroundActive_delegate$lambda$37);
             }
         });
-        this.controlOverlaySecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.m3
+        this.controlOverlaySecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.s3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlaySecondaryBackgroundDefault_delegate$lambda$38;
@@ -514,7 +526,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlaySecondaryBackgroundDefault_delegate$lambda$38);
             }
         });
-        this.controlOverlaySecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.n3
+        this.controlOverlaySecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.t3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlaySecondaryBorderDefault_delegate$lambda$39;
@@ -522,7 +534,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlaySecondaryBorderDefault_delegate$lambda$39);
             }
         });
-        this.controlOverlaySecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.p3
+        this.controlOverlaySecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.v3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlOverlaySecondaryTextDefault_delegate$lambda$40;
@@ -530,7 +542,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlOverlaySecondaryTextDefault_delegate$lambda$40);
             }
         });
-        this.controlPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.q3
+        this.controlPrimaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.w3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlPrimaryBackgroundActive_delegate$lambda$41;
@@ -538,7 +550,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlPrimaryBackgroundActive_delegate$lambda$41);
             }
         });
-        this.controlPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.r3
+        this.controlPrimaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.x3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlPrimaryBackgroundDefault_delegate$lambda$42;
@@ -546,7 +558,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlPrimaryBackgroundDefault_delegate$lambda$42);
             }
         });
-        this.controlPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.s3
+        this.controlPrimaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.y3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlPrimaryBorderDefault_delegate$lambda$43;
@@ -554,7 +566,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlPrimaryBorderDefault_delegate$lambda$43);
             }
         });
-        this.controlPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.t3
+        this.controlPrimaryTextDefault$delegate = l.a(new Function0() { // from class: g8.z3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlPrimaryTextDefault_delegate$lambda$44;
@@ -562,7 +574,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlPrimaryTextDefault_delegate$lambda$44);
             }
         });
-        this.controlSecondaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.u3
+        this.controlSecondaryBackgroundActive$delegate = l.a(new Function0() { // from class: g8.a4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlSecondaryBackgroundActive_delegate$lambda$45;
@@ -570,7 +582,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlSecondaryBackgroundActive_delegate$lambda$45);
             }
         });
-        this.controlSecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.w3
+        this.controlSecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.c4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlSecondaryBackgroundDefault_delegate$lambda$46;
@@ -578,7 +590,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlSecondaryBackgroundDefault_delegate$lambda$46);
             }
         });
-        this.controlSecondaryBorderActive$delegate = l.a(new Function0() { // from class: g8.x3
+        this.controlSecondaryBorderActive$delegate = l.a(new Function0() { // from class: g8.d4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlSecondaryBorderActive_delegate$lambda$47;
@@ -586,7 +598,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlSecondaryBorderActive_delegate$lambda$47);
             }
         });
-        this.controlSecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.y3
+        this.controlSecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.e4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlSecondaryBorderDefault_delegate$lambda$48;
@@ -594,7 +606,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlSecondaryBorderDefault_delegate$lambda$48);
             }
         });
-        this.controlSecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.z3
+        this.controlSecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.f4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int controlSecondaryTextDefault_delegate$lambda$49;
@@ -602,7 +614,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(controlSecondaryTextDefault_delegate$lambda$49);
             }
         });
-        this.embedBackground$delegate = l.a(new Function0() { // from class: g8.b4
+        this.embedBackground$delegate = l.a(new Function0() { // from class: g8.h4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int embedBackground_delegate$lambda$50;
@@ -610,7 +622,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(embedBackground_delegate$lambda$50);
             }
         });
-        this.iconFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.c4
+        this.iconFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.i4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int iconFeedbackCritical_delegate$lambda$51;
@@ -618,7 +630,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(iconFeedbackCritical_delegate$lambda$51);
             }
         });
-        this.iconFeedbackInfo$delegate = l.a(new Function0() { // from class: g8.d4
+        this.iconFeedbackInfo$delegate = l.a(new Function0() { // from class: g8.j4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int iconFeedbackInfo_delegate$lambda$52;
@@ -626,7 +638,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(iconFeedbackInfo_delegate$lambda$52);
             }
         });
-        this.iconFeedbackNotification$delegate = l.a(new Function0() { // from class: g8.e4
+        this.iconFeedbackNotification$delegate = l.a(new Function0() { // from class: g8.k4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int iconFeedbackNotification_delegate$lambda$53;
@@ -634,7 +646,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(iconFeedbackNotification_delegate$lambda$53);
             }
         });
-        this.iconFeedbackPositive$delegate = l.a(new Function0() { // from class: g8.f4
+        this.iconFeedbackPositive$delegate = l.a(new Function0() { // from class: g8.l4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int iconFeedbackPositive_delegate$lambda$54;
@@ -642,7 +654,7 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(iconFeedbackPositive_delegate$lambda$54);
             }
         });
-        this.iconFeedbackWarning$delegate = l.a(new Function0() { // from class: g8.h4
+        this.iconFeedbackWarning$delegate = l.a(new Function0() { // from class: g8.n4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int iconFeedbackWarning_delegate$lambda$55;
@@ -650,292 +662,340 @@ public final class DarkerTheme extends DiscordThemeObject {
                 return Integer.valueOf(iconFeedbackWarning_delegate$lambda$55);
             }
         });
-        this.inputBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.i4
+        this.iconVoiceConnected$delegate = l.a(new Function0() { // from class: g8.o4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int inputBackgroundDefault_delegate$lambda$56;
-                inputBackgroundDefault_delegate$lambda$56 = DarkerTheme.inputBackgroundDefault_delegate$lambda$56(resources, theme);
-                return Integer.valueOf(inputBackgroundDefault_delegate$lambda$56);
+                int iconVoiceConnected_delegate$lambda$56;
+                iconVoiceConnected_delegate$lambda$56 = DarkerTheme.iconVoiceConnected_delegate$lambda$56(resources, theme);
+                return Integer.valueOf(iconVoiceConnected_delegate$lambda$56);
             }
         });
-        this.inputBorderDefault$delegate = l.a(new Function0() { // from class: g8.j4
+        this.iconVoiceDisconnected$delegate = l.a(new Function0() { // from class: g8.p4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int inputBorderDefault_delegate$lambda$57;
-                inputBorderDefault_delegate$lambda$57 = DarkerTheme.inputBorderDefault_delegate$lambda$57(resources, theme);
-                return Integer.valueOf(inputBorderDefault_delegate$lambda$57);
+                int iconVoiceDisconnected_delegate$lambda$57;
+                iconVoiceDisconnected_delegate$lambda$57 = DarkerTheme.iconVoiceDisconnected_delegate$lambda$57(resources, theme);
+                return Integer.valueOf(iconVoiceDisconnected_delegate$lambda$57);
             }
         });
-        this.interactiveBackgroundSelected$delegate = l.a(new Function0() { // from class: g8.k4
+        this.iconVoiceSpeaking$delegate = l.a(new Function0() { // from class: g8.q4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveBackgroundSelected_delegate$lambda$58;
-                interactiveBackgroundSelected_delegate$lambda$58 = DarkerTheme.interactiveBackgroundSelected_delegate$lambda$58(resources, theme);
-                return Integer.valueOf(interactiveBackgroundSelected_delegate$lambda$58);
+                int iconVoiceSpeaking_delegate$lambda$58;
+                iconVoiceSpeaking_delegate$lambda$58 = DarkerTheme.iconVoiceSpeaking_delegate$lambda$58(resources, theme);
+                return Integer.valueOf(iconVoiceSpeaking_delegate$lambda$58);
             }
         });
-        this.interactiveIconActive$delegate = l.a(new Function0() { // from class: g8.l4
+        this.inputBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.r4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveIconActive_delegate$lambda$59;
-                interactiveIconActive_delegate$lambda$59 = DarkerTheme.interactiveIconActive_delegate$lambda$59(resources, theme);
-                return Integer.valueOf(interactiveIconActive_delegate$lambda$59);
+                int inputBackgroundDefault_delegate$lambda$59;
+                inputBackgroundDefault_delegate$lambda$59 = DarkerTheme.inputBackgroundDefault_delegate$lambda$59(resources, theme);
+                return Integer.valueOf(inputBackgroundDefault_delegate$lambda$59);
             }
         });
-        this.interactiveIconDefault$delegate = l.a(new Function0() { // from class: g8.n4
+        this.inputBorderDefault$delegate = l.a(new Function0() { // from class: g8.t4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveIconDefault_delegate$lambda$60;
-                interactiveIconDefault_delegate$lambda$60 = DarkerTheme.interactiveIconDefault_delegate$lambda$60(resources, theme);
-                return Integer.valueOf(interactiveIconDefault_delegate$lambda$60);
+                int inputBorderDefault_delegate$lambda$60;
+                inputBorderDefault_delegate$lambda$60 = DarkerTheme.inputBorderDefault_delegate$lambda$60(resources, theme);
+                return Integer.valueOf(inputBorderDefault_delegate$lambda$60);
             }
         });
-        this.interactiveMuted$delegate = l.a(new Function0() { // from class: g8.o4
+        this.interactiveBackgroundSelected$delegate = l.a(new Function0() { // from class: g8.u4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveMuted_delegate$lambda$61;
-                interactiveMuted_delegate$lambda$61 = DarkerTheme.interactiveMuted_delegate$lambda$61(resources, theme);
-                return Integer.valueOf(interactiveMuted_delegate$lambda$61);
+                int interactiveBackgroundSelected_delegate$lambda$61;
+                interactiveBackgroundSelected_delegate$lambda$61 = DarkerTheme.interactiveBackgroundSelected_delegate$lambda$61(resources, theme);
+                return Integer.valueOf(interactiveBackgroundSelected_delegate$lambda$61);
             }
         });
-        this.interactiveTextActive$delegate = l.a(new Function0() { // from class: g8.p4
+        this.interactiveIconActive$delegate = l.a(new Function0() { // from class: g8.v4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveTextActive_delegate$lambda$62;
-                interactiveTextActive_delegate$lambda$62 = DarkerTheme.interactiveTextActive_delegate$lambda$62(resources, theme);
-                return Integer.valueOf(interactiveTextActive_delegate$lambda$62);
+                int interactiveIconActive_delegate$lambda$62;
+                interactiveIconActive_delegate$lambda$62 = DarkerTheme.interactiveIconActive_delegate$lambda$62(resources, theme);
+                return Integer.valueOf(interactiveIconActive_delegate$lambda$62);
             }
         });
-        this.interactiveTextDefault$delegate = l.a(new Function0() { // from class: g8.q4
+        this.interactiveIconDefault$delegate = l.a(new Function0() { // from class: g8.w4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int interactiveTextDefault_delegate$lambda$63;
-                interactiveTextDefault_delegate$lambda$63 = DarkerTheme.interactiveTextDefault_delegate$lambda$63(resources, theme);
-                return Integer.valueOf(interactiveTextDefault_delegate$lambda$63);
+                int interactiveIconDefault_delegate$lambda$63;
+                interactiveIconDefault_delegate$lambda$63 = DarkerTheme.interactiveIconDefault_delegate$lambda$63(resources, theme);
+                return Integer.valueOf(interactiveIconDefault_delegate$lambda$63);
             }
         });
-        this.messageHighlightBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.s4
+        this.interactiveMuted$delegate = l.a(new Function0() { // from class: g8.y4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int messageHighlightBackgroundDefault_delegate$lambda$64;
-                messageHighlightBackgroundDefault_delegate$lambda$64 = DarkerTheme.messageHighlightBackgroundDefault_delegate$lambda$64(resources, theme);
-                return Integer.valueOf(messageHighlightBackgroundDefault_delegate$lambda$64);
+                int interactiveMuted_delegate$lambda$64;
+                interactiveMuted_delegate$lambda$64 = DarkerTheme.interactiveMuted_delegate$lambda$64(resources, theme);
+                return Integer.valueOf(interactiveMuted_delegate$lambda$64);
             }
         });
-        this.mobileAndroidButtonBackgroundRipple$delegate = l.a(new Function0() { // from class: g8.t4
+        this.interactiveTextActive$delegate = l.a(new Function0() { // from class: g8.z4
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int mobileAndroidButtonBackgroundRipple_delegate$lambda$65;
-                mobileAndroidButtonBackgroundRipple_delegate$lambda$65 = DarkerTheme.mobileAndroidButtonBackgroundRipple_delegate$lambda$65(resources, theme);
-                return Integer.valueOf(mobileAndroidButtonBackgroundRipple_delegate$lambda$65);
+                int interactiveTextActive_delegate$lambda$65;
+                interactiveTextActive_delegate$lambda$65 = DarkerTheme.interactiveTextActive_delegate$lambda$65(resources, theme);
+                return Integer.valueOf(interactiveTextActive_delegate$lambda$65);
             }
         });
-        this.mobileLegacyButtonSecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.u4
+        this.interactiveTextDefault$delegate = l.a(new Function0() { // from class: g8.a5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$66;
-                mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$66 = DarkerTheme.mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$66(resources, theme);
-                return Integer.valueOf(mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$66);
+                int interactiveTextDefault_delegate$lambda$66;
+                interactiveTextDefault_delegate$lambda$66 = DarkerTheme.interactiveTextDefault_delegate$lambda$66(resources, theme);
+                return Integer.valueOf(interactiveTextDefault_delegate$lambda$66);
             }
         });
-        this.mobileLegacyButtonSecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.v4
+        this.messageHighlightBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.b5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$67;
-                mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$67 = DarkerTheme.mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$67(resources, theme);
-                return Integer.valueOf(mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$67);
+                int messageHighlightBackgroundDefault_delegate$lambda$67;
+                messageHighlightBackgroundDefault_delegate$lambda$67 = DarkerTheme.messageHighlightBackgroundDefault_delegate$lambda$67(resources, theme);
+                return Integer.valueOf(messageHighlightBackgroundDefault_delegate$lambda$67);
             }
         });
-        this.mobileLegacyButtonSecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.w4
+        this.mobileAndroidButtonBackgroundRipple$delegate = l.a(new Function0() { // from class: g8.c5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int mobileLegacyButtonSecondaryTextDefault_delegate$lambda$68;
-                mobileLegacyButtonSecondaryTextDefault_delegate$lambda$68 = DarkerTheme.mobileLegacyButtonSecondaryTextDefault_delegate$lambda$68(resources, theme);
-                return Integer.valueOf(mobileLegacyButtonSecondaryTextDefault_delegate$lambda$68);
+                int mobileAndroidButtonBackgroundRipple_delegate$lambda$68;
+                mobileAndroidButtonBackgroundRipple_delegate$lambda$68 = DarkerTheme.mobileAndroidButtonBackgroundRipple_delegate$lambda$68(resources, theme);
+                return Integer.valueOf(mobileAndroidButtonBackgroundRipple_delegate$lambda$68);
             }
         });
-        this.mobileTextHeadingPrimary$delegate = l.a(new Function0() { // from class: g8.x4
+        this.mobileLegacyButtonSecondaryBackgroundDefault$delegate = l.a(new Function0() { // from class: g8.d5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int mobileTextHeadingPrimary_delegate$lambda$69;
-                mobileTextHeadingPrimary_delegate$lambda$69 = DarkerTheme.mobileTextHeadingPrimary_delegate$lambda$69(resources, theme);
-                return Integer.valueOf(mobileTextHeadingPrimary_delegate$lambda$69);
+                int mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$69;
+                mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$69 = DarkerTheme.mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$69(resources, theme);
+                return Integer.valueOf(mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$69);
             }
         });
-        this.progressbarIndicatorBackground$delegate = l.a(new Function0() { // from class: g8.z4
+        this.mobileLegacyButtonSecondaryBorderDefault$delegate = l.a(new Function0() { // from class: g8.f5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int progressbarIndicatorBackground_delegate$lambda$70;
-                progressbarIndicatorBackground_delegate$lambda$70 = DarkerTheme.progressbarIndicatorBackground_delegate$lambda$70(resources, theme);
-                return Integer.valueOf(progressbarIndicatorBackground_delegate$lambda$70);
+                int mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$70;
+                mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$70 = DarkerTheme.mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$70(resources, theme);
+                return Integer.valueOf(mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$70);
             }
         });
-        this.progressbarTrackBackground$delegate = l.a(new Function0() { // from class: g8.a5
+        this.mobileLegacyButtonSecondaryTextDefault$delegate = l.a(new Function0() { // from class: g8.g5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int progressbarTrackBackground_delegate$lambda$71;
-                progressbarTrackBackground_delegate$lambda$71 = DarkerTheme.progressbarTrackBackground_delegate$lambda$71(resources, theme);
-                return Integer.valueOf(progressbarTrackBackground_delegate$lambda$71);
+                int mobileLegacyButtonSecondaryTextDefault_delegate$lambda$71;
+                mobileLegacyButtonSecondaryTextDefault_delegate$lambda$71 = DarkerTheme.mobileLegacyButtonSecondaryTextDefault_delegate$lambda$71(resources, theme);
+                return Integer.valueOf(mobileLegacyButtonSecondaryTextDefault_delegate$lambda$71);
             }
         });
-        this.redesignButtonTertiaryBackground$delegate = l.a(new Function0() { // from class: g8.b5
+        this.mobileTextHeadingPrimary$delegate = l.a(new Function0() { // from class: g8.h5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int redesignButtonTertiaryBackground_delegate$lambda$72;
-                redesignButtonTertiaryBackground_delegate$lambda$72 = DarkerTheme.redesignButtonTertiaryBackground_delegate$lambda$72(resources, theme);
-                return Integer.valueOf(redesignButtonTertiaryBackground_delegate$lambda$72);
+                int mobileTextHeadingPrimary_delegate$lambda$72;
+                mobileTextHeadingPrimary_delegate$lambda$72 = DarkerTheme.mobileTextHeadingPrimary_delegate$lambda$72(resources, theme);
+                return Integer.valueOf(mobileTextHeadingPrimary_delegate$lambda$72);
             }
         });
-        this.redesignButtonTertiaryText$delegate = l.a(new Function0() { // from class: g8.d5
+        this.progressbarIndicatorBackground$delegate = l.a(new Function0() { // from class: g8.j5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int redesignButtonTertiaryText_delegate$lambda$73;
-                redesignButtonTertiaryText_delegate$lambda$73 = DarkerTheme.redesignButtonTertiaryText_delegate$lambda$73(resources, theme);
-                return Integer.valueOf(redesignButtonTertiaryText_delegate$lambda$73);
+                int progressbarIndicatorBackground_delegate$lambda$73;
+                progressbarIndicatorBackground_delegate$lambda$73 = DarkerTheme.progressbarIndicatorBackground_delegate$lambda$73(resources, theme);
+                return Integer.valueOf(progressbarIndicatorBackground_delegate$lambda$73);
             }
         });
-        this.spineDefault$delegate = l.a(new Function0() { // from class: g8.e5
+        this.progressbarTrackBackground$delegate = l.a(new Function0() { // from class: g8.k5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int spineDefault_delegate$lambda$74;
-                spineDefault_delegate$lambda$74 = DarkerTheme.spineDefault_delegate$lambda$74(resources, theme);
-                return Integer.valueOf(spineDefault_delegate$lambda$74);
+                int progressbarTrackBackground_delegate$lambda$74;
+                progressbarTrackBackground_delegate$lambda$74 = DarkerTheme.progressbarTrackBackground_delegate$lambda$74(resources, theme);
+                return Integer.valueOf(progressbarTrackBackground_delegate$lambda$74);
             }
         });
-        this.spoilerHiddenBackground$delegate = l.a(new Function0() { // from class: g8.f5
+        this.redesignButtonTertiaryBackground$delegate = l.a(new Function0() { // from class: g8.l5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int spoilerHiddenBackground_delegate$lambda$75;
-                spoilerHiddenBackground_delegate$lambda$75 = DarkerTheme.spoilerHiddenBackground_delegate$lambda$75(resources, theme);
-                return Integer.valueOf(spoilerHiddenBackground_delegate$lambda$75);
+                int redesignButtonTertiaryBackground_delegate$lambda$75;
+                redesignButtonTertiaryBackground_delegate$lambda$75 = DarkerTheme.redesignButtonTertiaryBackground_delegate$lambda$75(resources, theme);
+                return Integer.valueOf(redesignButtonTertiaryBackground_delegate$lambda$75);
             }
         });
-        this.spoilerRevealedBackground$delegate = l.a(new Function0() { // from class: g8.g5
+        this.redesignButtonTertiaryText$delegate = l.a(new Function0() { // from class: g8.m5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int spoilerRevealedBackground_delegate$lambda$76;
-                spoilerRevealedBackground_delegate$lambda$76 = DarkerTheme.spoilerRevealedBackground_delegate$lambda$76(resources, theme);
-                return Integer.valueOf(spoilerRevealedBackground_delegate$lambda$76);
+                int redesignButtonTertiaryText_delegate$lambda$76;
+                redesignButtonTertiaryText_delegate$lambda$76 = DarkerTheme.redesignButtonTertiaryText_delegate$lambda$76(resources, theme);
+                return Integer.valueOf(redesignButtonTertiaryText_delegate$lambda$76);
             }
         });
-        this.statusDanger$delegate = l.a(new Function0() { // from class: g8.h5
+        this.spineDefault$delegate = l.a(new Function0() { // from class: g8.n5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int statusDanger_delegate$lambda$77;
-                statusDanger_delegate$lambda$77 = DarkerTheme.statusDanger_delegate$lambda$77(resources, theme);
-                return Integer.valueOf(statusDanger_delegate$lambda$77);
+                int spineDefault_delegate$lambda$77;
+                spineDefault_delegate$lambda$77 = DarkerTheme.spineDefault_delegate$lambda$77(resources, theme);
+                return Integer.valueOf(spineDefault_delegate$lambda$77);
             }
         });
-        this.statusPositive$delegate = l.a(new Function0() { // from class: g8.i5
+        this.spoilerHiddenBackground$delegate = l.a(new Function0() { // from class: g8.o5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int statusPositive_delegate$lambda$78;
-                statusPositive_delegate$lambda$78 = DarkerTheme.statusPositive_delegate$lambda$78(resources, theme);
-                return Integer.valueOf(statusPositive_delegate$lambda$78);
+                int spoilerHiddenBackground_delegate$lambda$78;
+                spoilerHiddenBackground_delegate$lambda$78 = DarkerTheme.spoilerHiddenBackground_delegate$lambda$78(resources, theme);
+                return Integer.valueOf(spoilerHiddenBackground_delegate$lambda$78);
             }
         });
-        this.statusPositiveText$delegate = l.a(new Function0() { // from class: g8.j5
+        this.spoilerRevealedBackground$delegate = l.a(new Function0() { // from class: g8.p5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int statusPositiveText_delegate$lambda$79;
-                statusPositiveText_delegate$lambda$79 = DarkerTheme.statusPositiveText_delegate$lambda$79(resources, theme);
-                return Integer.valueOf(statusPositiveText_delegate$lambda$79);
+                int spoilerRevealedBackground_delegate$lambda$79;
+                spoilerRevealedBackground_delegate$lambda$79 = DarkerTheme.spoilerRevealedBackground_delegate$lambda$79(resources, theme);
+                return Integer.valueOf(spoilerRevealedBackground_delegate$lambda$79);
             }
         });
-        this.statusWarning$delegate = l.a(new Function0() { // from class: g8.l5
+        this.statusDanger$delegate = l.a(new Function0() { // from class: g8.r5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int statusWarning_delegate$lambda$80;
-                statusWarning_delegate$lambda$80 = DarkerTheme.statusWarning_delegate$lambda$80(resources, theme);
-                return Integer.valueOf(statusWarning_delegate$lambda$80);
+                int statusDanger_delegate$lambda$80;
+                statusDanger_delegate$lambda$80 = DarkerTheme.statusDanger_delegate$lambda$80(resources, theme);
+                return Integer.valueOf(statusDanger_delegate$lambda$80);
             }
         });
-        this.textBrand$delegate = l.a(new Function0() { // from class: g8.m5
+        this.statusPositive$delegate = l.a(new Function0() { // from class: g8.s5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textBrand_delegate$lambda$81;
-                textBrand_delegate$lambda$81 = DarkerTheme.textBrand_delegate$lambda$81(resources, theme);
-                return Integer.valueOf(textBrand_delegate$lambda$81);
+                int statusPositive_delegate$lambda$81;
+                statusPositive_delegate$lambda$81 = DarkerTheme.statusPositive_delegate$lambda$81(resources, theme);
+                return Integer.valueOf(statusPositive_delegate$lambda$81);
             }
         });
-        this.textDefault$delegate = l.a(new Function0() { // from class: g8.o5
+        this.statusPositiveText$delegate = l.a(new Function0() { // from class: g8.u5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textDefault_delegate$lambda$82;
-                textDefault_delegate$lambda$82 = DarkerTheme.textDefault_delegate$lambda$82(resources, theme);
-                return Integer.valueOf(textDefault_delegate$lambda$82);
+                int statusPositiveText_delegate$lambda$82;
+                statusPositiveText_delegate$lambda$82 = DarkerTheme.statusPositiveText_delegate$lambda$82(resources, theme);
+                return Integer.valueOf(statusPositiveText_delegate$lambda$82);
             }
         });
-        this.textFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.p5
+        this.statusWarning$delegate = l.a(new Function0() { // from class: g8.v5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textFeedbackCritical_delegate$lambda$83;
-                textFeedbackCritical_delegate$lambda$83 = DarkerTheme.textFeedbackCritical_delegate$lambda$83(resources, theme);
-                return Integer.valueOf(textFeedbackCritical_delegate$lambda$83);
+                int statusWarning_delegate$lambda$83;
+                statusWarning_delegate$lambda$83 = DarkerTheme.statusWarning_delegate$lambda$83(resources, theme);
+                return Integer.valueOf(statusWarning_delegate$lambda$83);
             }
         });
-        this.textFeedbackInfo$delegate = l.a(new Function0() { // from class: g8.q5
+        this.textBrand$delegate = l.a(new Function0() { // from class: g8.w5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textFeedbackInfo_delegate$lambda$84;
-                textFeedbackInfo_delegate$lambda$84 = DarkerTheme.textFeedbackInfo_delegate$lambda$84(resources, theme);
-                return Integer.valueOf(textFeedbackInfo_delegate$lambda$84);
+                int textBrand_delegate$lambda$84;
+                textBrand_delegate$lambda$84 = DarkerTheme.textBrand_delegate$lambda$84(resources, theme);
+                return Integer.valueOf(textBrand_delegate$lambda$84);
             }
         });
-        this.textFeedbackPositive$delegate = l.a(new Function0() { // from class: g8.r5
+        this.textDefault$delegate = l.a(new Function0() { // from class: g8.x5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textFeedbackPositive_delegate$lambda$85;
-                textFeedbackPositive_delegate$lambda$85 = DarkerTheme.textFeedbackPositive_delegate$lambda$85(resources, theme);
-                return Integer.valueOf(textFeedbackPositive_delegate$lambda$85);
+                int textDefault_delegate$lambda$85;
+                textDefault_delegate$lambda$85 = DarkerTheme.textDefault_delegate$lambda$85(resources, theme);
+                return Integer.valueOf(textDefault_delegate$lambda$85);
             }
         });
-        this.textFeedbackWarning$delegate = l.a(new Function0() { // from class: g8.s5
+        this.textFeedbackCritical$delegate = l.a(new Function0() { // from class: g8.y5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textFeedbackWarning_delegate$lambda$86;
-                textFeedbackWarning_delegate$lambda$86 = DarkerTheme.textFeedbackWarning_delegate$lambda$86(resources, theme);
-                return Integer.valueOf(textFeedbackWarning_delegate$lambda$86);
+                int textFeedbackCritical_delegate$lambda$86;
+                textFeedbackCritical_delegate$lambda$86 = DarkerTheme.textFeedbackCritical_delegate$lambda$86(resources, theme);
+                return Integer.valueOf(textFeedbackCritical_delegate$lambda$86);
             }
         });
-        this.textLink$delegate = l.a(new Function0() { // from class: g8.t5
+        this.textFeedbackInfo$delegate = l.a(new Function0() { // from class: g8.z5
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textLink_delegate$lambda$87;
-                textLink_delegate$lambda$87 = DarkerTheme.textLink_delegate$lambda$87(resources, theme);
-                return Integer.valueOf(textLink_delegate$lambda$87);
+                int textFeedbackInfo_delegate$lambda$87;
+                textFeedbackInfo_delegate$lambda$87 = DarkerTheme.textFeedbackInfo_delegate$lambda$87(resources, theme);
+                return Integer.valueOf(textFeedbackInfo_delegate$lambda$87);
             }
         });
-        this.textMuted$delegate = l.a(new Function0() { // from class: g8.u5
+        this.textFeedbackPositive$delegate = l.a(new Function0() { // from class: g8.a6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textMuted_delegate$lambda$88;
-                textMuted_delegate$lambda$88 = DarkerTheme.textMuted_delegate$lambda$88(resources, theme);
-                return Integer.valueOf(textMuted_delegate$lambda$88);
+                int textFeedbackPositive_delegate$lambda$88;
+                textFeedbackPositive_delegate$lambda$88 = DarkerTheme.textFeedbackPositive_delegate$lambda$88(resources, theme);
+                return Integer.valueOf(textFeedbackPositive_delegate$lambda$88);
             }
         });
-        this.textStrong$delegate = l.a(new Function0() { // from class: g8.v5
+        this.textFeedbackWarning$delegate = l.a(new Function0() { // from class: g8.b6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textStrong_delegate$lambda$89;
-                textStrong_delegate$lambda$89 = DarkerTheme.textStrong_delegate$lambda$89(resources, theme);
-                return Integer.valueOf(textStrong_delegate$lambda$89);
+                int textFeedbackWarning_delegate$lambda$89;
+                textFeedbackWarning_delegate$lambda$89 = DarkerTheme.textFeedbackWarning_delegate$lambda$89(resources, theme);
+                return Integer.valueOf(textFeedbackWarning_delegate$lambda$89);
             }
         });
-        this.textSubtle$delegate = l.a(new Function0() { // from class: g8.x5
+        this.textLink$delegate = l.a(new Function0() { // from class: g8.d6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int textSubtle_delegate$lambda$90;
-                textSubtle_delegate$lambda$90 = DarkerTheme.textSubtle_delegate$lambda$90(resources, theme);
-                return Integer.valueOf(textSubtle_delegate$lambda$90);
+                int textLink_delegate$lambda$90;
+                textLink_delegate$lambda$90 = DarkerTheme.textLink_delegate$lambda$90(resources, theme);
+                return Integer.valueOf(textLink_delegate$lambda$90);
             }
         });
-        this.white$delegate = l.a(new Function0() { // from class: g8.z5
+        this.textMuted$delegate = l.a(new Function0() { // from class: g8.f6
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
-                int white_delegate$lambda$91;
-                white_delegate$lambda$91 = DarkerTheme.white_delegate$lambda$91(resources, theme);
-                return Integer.valueOf(white_delegate$lambda$91);
+                int textMuted_delegate$lambda$91;
+                textMuted_delegate$lambda$91 = DarkerTheme.textMuted_delegate$lambda$91(resources, theme);
+                return Integer.valueOf(textMuted_delegate$lambda$91);
+            }
+        });
+        this.textStrong$delegate = l.a(new Function0() { // from class: g8.g6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int textStrong_delegate$lambda$92;
+                textStrong_delegate$lambda$92 = DarkerTheme.textStrong_delegate$lambda$92(resources, theme);
+                return Integer.valueOf(textStrong_delegate$lambda$92);
+            }
+        });
+        this.textSubtle$delegate = l.a(new Function0() { // from class: g8.h6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int textSubtle_delegate$lambda$93;
+                textSubtle_delegate$lambda$93 = DarkerTheme.textSubtle_delegate$lambda$93(resources, theme);
+                return Integer.valueOf(textSubtle_delegate$lambda$93);
+            }
+        });
+        this.textVoiceConnected$delegate = l.a(new Function0() { // from class: g8.i6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int textVoiceConnected_delegate$lambda$94;
+                textVoiceConnected_delegate$lambda$94 = DarkerTheme.textVoiceConnected_delegate$lambda$94(resources, theme);
+                return Integer.valueOf(textVoiceConnected_delegate$lambda$94);
+            }
+        });
+        this.textVoiceDisconnected$delegate = l.a(new Function0() { // from class: g8.j6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int textVoiceDisconnected_delegate$lambda$95;
+                textVoiceDisconnected_delegate$lambda$95 = DarkerTheme.textVoiceDisconnected_delegate$lambda$95(resources, theme);
+                return Integer.valueOf(textVoiceDisconnected_delegate$lambda$95);
+            }
+        });
+        this.textVoiceSpeaking$delegate = l.a(new Function0() { // from class: g8.k6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int textVoiceSpeaking_delegate$lambda$96;
+                textVoiceSpeaking_delegate$lambda$96 = DarkerTheme.textVoiceSpeaking_delegate$lambda$96(resources, theme);
+                return Integer.valueOf(textVoiceSpeaking_delegate$lambda$96);
+            }
+        });
+        this.white$delegate = l.a(new Function0() { // from class: g8.l6
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int white_delegate$lambda$97;
+                white_delegate$lambda$97 = DarkerTheme.white_delegate$lambda$97(resources, theme);
+                return Integer.valueOf(white_delegate$lambda$97);
             }
         });
     }
@@ -1221,182 +1281,212 @@ public final class DarkerTheme extends DiscordThemeObject {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int inputBackgroundDefault_delegate$lambda$56(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.input_background_default_darker, theme);
+    public static final int iconVoiceConnected_delegate$lambda$56(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_345, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int inputBorderDefault_delegate$lambda$57(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.input_border_default_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveBackgroundSelected_delegate$lambda$58(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.interactive_background_selected_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveIconActive_delegate$lambda$59(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_1, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveIconDefault_delegate$lambda$60(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveMuted_delegate$lambda$61(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_13, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveTextActive_delegate$lambda$62(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_1, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int interactiveTextDefault_delegate$lambda$63(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int messageHighlightBackgroundDefault_delegate$lambda$64(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.message_highlight_background_default_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int mobileAndroidButtonBackgroundRipple_delegate$lambda$65(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.mobile_android_button_background_ripple_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$66(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_15, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$67(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.brand_500, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int mobileLegacyButtonSecondaryTextDefault_delegate$lambda$68(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.white, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int mobileTextHeadingPrimary_delegate$lambda$69(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_3, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int progressbarIndicatorBackground_delegate$lambda$70(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.brand_500, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int progressbarTrackBackground_delegate$lambda$71(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.progressbar_track_background_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int redesignButtonTertiaryBackground_delegate$lambda$72(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.redesign_button_tertiary_background_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int redesignButtonTertiaryText_delegate$lambda$73(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int spineDefault_delegate$lambda$74(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_15, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int spoilerHiddenBackground_delegate$lambda$75(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_14, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int spoilerRevealedBackground_delegate$lambda$76(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.spoiler_revealed_background_darker, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int statusDanger_delegate$lambda$77(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.red_400, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int statusPositiveText_delegate$lambda$79(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.white, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int statusPositive_delegate$lambda$78(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.green_360, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int statusWarning_delegate$lambda$80(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.yellow_300, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int textBrand_delegate$lambda$81(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.brand_360, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int textDefault_delegate$lambda$82(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
-    }
-
-    /* JADX INFO: Access modifiers changed from: private */
-    public static final int textFeedbackCritical_delegate$lambda$83(Resources resources, Resources.Theme theme) {
+    public static final int iconVoiceDisconnected_delegate$lambda$57(Resources resources, Resources.Theme theme) {
         return ColorUtilsKt.getColorCompat(resources, R.color.red_345, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textFeedbackInfo_delegate$lambda$84(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.blue_330, theme);
+    public static final int iconVoiceSpeaking_delegate$lambda$58(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_345, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textFeedbackPositive_delegate$lambda$85(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.green_330, theme);
+    public static final int inputBackgroundDefault_delegate$lambda$59(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.input_background_default_darker, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textFeedbackWarning_delegate$lambda$86(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.yellow_300, theme);
+    public static final int inputBorderDefault_delegate$lambda$60(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.input_border_default_darker, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textLink_delegate$lambda$87(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.blue_345, theme);
+    public static final int interactiveBackgroundSelected_delegate$lambda$61(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.interactive_background_selected_darker, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textMuted_delegate$lambda$88(Resources resources, Resources.Theme theme) {
-        return ColorUtilsKt.getColorCompat(resources, R.color.plum_10, theme);
+    public static final int interactiveIconActive_delegate$lambda$62(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_1, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textStrong_delegate$lambda$89(Resources resources, Resources.Theme theme) {
+    public static final int interactiveIconDefault_delegate$lambda$63(Resources resources, Resources.Theme theme) {
         return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int textSubtle_delegate$lambda$90(Resources resources, Resources.Theme theme) {
+    public static final int interactiveMuted_delegate$lambda$64(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_13, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int interactiveTextActive_delegate$lambda$65(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_1, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int interactiveTextDefault_delegate$lambda$66(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int messageHighlightBackgroundDefault_delegate$lambda$67(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.message_highlight_background_default_darker, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int mobileAndroidButtonBackgroundRipple_delegate$lambda$68(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.mobile_android_button_background_ripple_darker, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int mobileLegacyButtonSecondaryBackgroundDefault_delegate$lambda$69(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_15, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int mobileLegacyButtonSecondaryBorderDefault_delegate$lambda$70(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.brand_500, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int mobileLegacyButtonSecondaryTextDefault_delegate$lambda$71(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.white, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int mobileTextHeadingPrimary_delegate$lambda$72(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_3, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int progressbarIndicatorBackground_delegate$lambda$73(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.brand_500, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int progressbarTrackBackground_delegate$lambda$74(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.progressbar_track_background_darker, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int redesignButtonTertiaryBackground_delegate$lambda$75(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.redesign_button_tertiary_background_darker, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int redesignButtonTertiaryText_delegate$lambda$76(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int spineDefault_delegate$lambda$77(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_15, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int spoilerHiddenBackground_delegate$lambda$78(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_14, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int spoilerRevealedBackground_delegate$lambda$79(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.spoiler_revealed_background_darker, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int statusDanger_delegate$lambda$80(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.red_400, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int statusPositiveText_delegate$lambda$82(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.white, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int statusPositive_delegate$lambda$81(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_360, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int statusWarning_delegate$lambda$83(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.yellow_300, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textBrand_delegate$lambda$84(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.brand_360, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textDefault_delegate$lambda$85(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textFeedbackCritical_delegate$lambda$86(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.red_345, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textFeedbackInfo_delegate$lambda$87(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.blue_330, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textFeedbackPositive_delegate$lambda$88(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_330, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textFeedbackWarning_delegate$lambda$89(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.yellow_300, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textLink_delegate$lambda$90(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.blue_345, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textMuted_delegate$lambda$91(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_10, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textStrong_delegate$lambda$92(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.plum_6, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textSubtle_delegate$lambda$93(Resources resources, Resources.Theme theme) {
         return ColorUtilsKt.getColorCompat(resources, R.color.plum_9, theme);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final int white_delegate$lambda$91(Resources resources, Resources.Theme theme) {
+    public static final int textVoiceConnected_delegate$lambda$94(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_345, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textVoiceDisconnected_delegate$lambda$95(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.red_345, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int textVoiceSpeaking_delegate$lambda$96(Resources resources, Resources.Theme theme) {
+        return ColorUtilsKt.getColorCompat(resources, R.color.green_345, theme);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final int white_delegate$lambda$97(Resources resources, Resources.Theme theme) {
         return ColorUtilsKt.getColorCompat(resources, R.color.white, theme);
     }
 
@@ -1691,6 +1781,21 @@ public final class DarkerTheme extends DiscordThemeObject {
     }
 
     @Override // com.discord.theme.DiscordThemeObject
+    public int getIconVoiceConnected() {
+        return ((Number) this.iconVoiceConnected$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
+    public int getIconVoiceDisconnected() {
+        return ((Number) this.iconVoiceDisconnected$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
+    public int getIconVoiceSpeaking() {
+        return ((Number) this.iconVoiceSpeaking$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
     public int getInputBackgroundDefault() {
         return ((Number) this.inputBackgroundDefault$delegate.getValue()).intValue();
     }
@@ -1863,6 +1968,21 @@ public final class DarkerTheme extends DiscordThemeObject {
     @Override // com.discord.theme.DiscordThemeObject
     public int getTextSubtle() {
         return ((Number) this.textSubtle$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
+    public int getTextVoiceConnected() {
+        return ((Number) this.textVoiceConnected$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
+    public int getTextVoiceDisconnected() {
+        return ((Number) this.textVoiceDisconnected$delegate.getValue()).intValue();
+    }
+
+    @Override // com.discord.theme.DiscordThemeObject
+    public int getTextVoiceSpeaking() {
+        return ((Number) this.textVoiceSpeaking$delegate.getValue()).intValue();
     }
 
     @Override // com.discord.theme.DiscordThemeObject

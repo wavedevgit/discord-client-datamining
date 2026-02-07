@@ -8,11 +8,11 @@ public final class c implements d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f54738a = new c();
+        static final c f54786a = new c();
     }
 
     public static c a() {
-        return a.f54738a;
+        return a.f54786a;
     }
 
     public static b c() {

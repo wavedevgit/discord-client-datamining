@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var1.bind(var2)(var0);
         var1 = var2.flatMap;
         var0 = function(arg0) { // Environment: var0
-            _fun47692: for (var _fun47692_ip = 0;;) switch (_fun47692_ip) {
+            _fun48188: for (var _fun48188_ip = 0;;) switch (_fun48188_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = var1.type;
@@ -30,21 +30,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var5.bind(var4)(var0);
                     var0 = var0.I18nLinkComponent;
                     if (!(var2 !== var0)) {
-                        _fun47692_ip = 81;
-                        continue _fun47692
+                        _fun48188_ip = 81;
+                        continue _fun48188
                     }
                 case 43:
                     var2 = var1.props;
                     var5 = var2.children;
                     var0 = null;
                     if (!(var0 == var5)) {
-                        _fun47692_ip = 65;
-                        continue _fun47692
+                        _fun48188_ip = 65;
+                        continue _fun48188
                     }
                 case 59:
                     var0 = new Array(0);
-                    _fun47692_ip = 79;
-                    continue _fun47692;
+                    _fun48188_ip = 79;
+                    continue _fun48188;
                 case 65:
                     var3 = _closure1_slot7;
                     var2 = var2.children;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/a11y/native/TextWithIOSLinkWorkaround.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun47693: for (var _fun47693_ip = 0;;) switch (_fun47693_ip) {
+        _fun48189: for (var _fun48189_ip = 0;;) switch (_fun48189_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.children;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var7.isIOS;
                 var5 = var5.bind(var7)();
                 if (!var5) {
-                    _fun47693_ip = 147;
-                    continue _fun47693
+                    _fun48189_ip = 147;
+                    continue _fun48189
                 }
             case 144:
                 if (var1) {
-                    _fun47693_ip = 149;
-                    continue _fun47693
+                    _fun48189_ip = 149;
+                    continue _fun48189
                 }
             case 147:
                 return var6;
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TextWithIOSLinkWorkaround = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 1296, 4071, 3943, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 1296, 4070, 3942, 478, 2]);

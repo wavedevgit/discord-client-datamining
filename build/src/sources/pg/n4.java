@@ -5,30 +5,30 @@ import yi.c;
 final class n4 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n4 f44508a = new n4();
+    static final n4 f44556a = new n4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f44509b;
+    private static final yi.c f44557b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f44510c;
+    private static final yi.c f44558c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f44511d;
+    private static final yi.c f44559d;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44509b = a10.b(s1Var.b()).a();
+        f44557b = a10.b(s1Var.b()).a();
         c.b a11 = yi.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44510c = a11.b(s1Var2.b()).a();
+        f44558c = a11.b(s1Var2.b()).a();
         c.b a12 = yi.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44511d = a12.b(s1Var3.b()).a();
+        f44559d = a12.b(s1Var3.b()).a();
     }
 
     private n4() {

@@ -17,7 +17,7 @@ import org.json.JSONObject;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f35162a = new a(null);
+    public static final a f35210a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -26,7 +26,7 @@ public final class f {
         }
 
         public final Set a() {
-            return x0.c(p.f35180d);
+            return x0.c(p.f35228d);
         }
 
         private a() {
@@ -40,7 +40,7 @@ public final class f {
         Request g10 = chain.g();
         RequestBody c10 = g10.c();
         if ((Intrinsics.areEqual(CollectionsKt.z0(g10.n().n()), "transition") || Intrinsics.areEqual(CollectionsKt.z0(g10.n().n()), "government-id-classification")) && c10 != null && cVar.c()) {
-            String a10 = c.f35150d.a(cVar.a());
+            String a10 = c.f35198d.a(cVar.a());
             MediaType contentType = c10.contentType();
             if (contentType != null) {
                 str = contentType.g();
@@ -76,7 +76,7 @@ public final class f {
     }
 
     public static final Set d() {
-        return f35162a.a();
+        return f35210a.a();
     }
 
     public final Interceptor b(final c flags) {

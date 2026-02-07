@@ -5,7 +5,7 @@ import yi.c;
 final class nc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final nc f40116a = new nc();
+    static final nc f40164a = new nc();
 
     static {
         c.b a10 = yi.c.a("metric");

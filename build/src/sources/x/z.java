@@ -3,38 +3,38 @@ package x;
 public final class z {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final z f54401c = new z(0, 0);
+    public static final z f54449c = new z(0, 0);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final z f54402d = new z(1, 8);
+    public static final z f54450d = new z(1, 8);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final z f54403e = new z(2, 10);
+    public static final z f54451e = new z(2, 10);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final z f54404f = new z(3, 10);
+    public static final z f54452f = new z(3, 10);
 
     /* renamed from: g  reason: collision with root package name */
-    public static final z f54405g = new z(4, 10);
+    public static final z f54453g = new z(4, 10);
 
     /* renamed from: h  reason: collision with root package name */
-    public static final z f54406h = new z(5, 10);
+    public static final z f54454h = new z(5, 10);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final z f54407i = new z(6, 10);
+    public static final z f54455i = new z(6, 10);
 
     /* renamed from: j  reason: collision with root package name */
-    public static final z f54408j = new z(6, 8);
+    public static final z f54456j = new z(6, 8);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f54409a;
+    private final int f54457a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f54410b;
+    private final int f54458b;
 
     public z(int i10, int i11) {
-        this.f54409a = i10;
-        this.f54410b = i11;
+        this.f54457a = i10;
+        this.f54458b = i11;
     }
 
     private static String c(int i10) {
@@ -59,11 +59,11 @@ public final class z {
     }
 
     public int a() {
-        return this.f54410b;
+        return this.f54458b;
     }
 
     public int b() {
-        return this.f54409a;
+        return this.f54457a;
     }
 
     public boolean d() {
@@ -86,7 +86,7 @@ public final class z {
         }
         if (obj instanceof z) {
             z zVar = (z) obj;
-            if (this.f54409a == zVar.b() && this.f54410b == zVar.a()) {
+            if (this.f54457a == zVar.b() && this.f54458b == zVar.a()) {
                 return true;
             }
         }
@@ -94,10 +94,10 @@ public final class z {
     }
 
     public int hashCode() {
-        return ((this.f54409a ^ 1000003) * 1000003) ^ this.f54410b;
+        return ((this.f54457a ^ 1000003) * 1000003) ^ this.f54458b;
     }
 
     public String toString() {
-        return "DynamicRange@" + Integer.toHexString(System.identityHashCode(this)) + "{encoding=" + c(this.f54409a) + ", bitDepth=" + this.f54410b + "}";
+        return "DynamicRange@" + Integer.toHexString(System.identityHashCode(this)) + "{encoding=" + c(this.f54457a) + ", bitDepth=" + this.f54458b + "}";
     }
 }

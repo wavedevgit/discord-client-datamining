@@ -13,34 +13,34 @@ import qv.r;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f49602a;
+    private final List f49650a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49603b;
+    private final List f49651b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f49604c;
+    private final c f49652c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f49605d;
+    private final List f49653d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f49606a = new ArrayList();
+        private final List f49654a = new ArrayList();
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f49607b = new ArrayList();
+        private final List f49655b = new ArrayList();
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f49608c = new ArrayList();
+        private final List f49656c = new ArrayList();
 
         /* renamed from: d  reason: collision with root package name */
-        private Set f49609d = h.q();
+        private Set f49657d = h.q();
 
         /* renamed from: e  reason: collision with root package name */
-        private c f49610e;
+        private c f49658e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -56,7 +56,7 @@ public class d {
 
         /* JADX INFO: Access modifiers changed from: private */
         public c g() {
-            c cVar = this.f49610e;
+            c cVar = this.f49658e;
             if (cVar != null) {
                 return cVar;
             }
@@ -69,11 +69,11 @@ public class d {
     }
 
     private h a() {
-        return new h(this.f49602a, this.f49604c, this.f49603b);
+        return new h(this.f49650a, this.f49652c, this.f49651b);
     }
 
     private r c(r rVar) {
-        Iterator it = this.f49605d.iterator();
+        Iterator it = this.f49653d.iterator();
         if (!it.hasNext()) {
             return rVar;
         }
@@ -89,12 +89,12 @@ public class d {
     }
 
     private d(b bVar) {
-        this.f49602a = h.j(bVar.f49606a, bVar.f49609d);
+        this.f49650a = h.j(bVar.f49654a, bVar.f49657d);
         c g10 = bVar.g();
-        this.f49604c = g10;
-        this.f49605d = bVar.f49608c;
-        List list = bVar.f49607b;
-        this.f49603b = list;
+        this.f49652c = g10;
+        this.f49653d = bVar.f49656c;
+        List list = bVar.f49655b;
+        this.f49651b = list;
         g10.a(new m(list, Collections.EMPTY_MAP));
     }
 }

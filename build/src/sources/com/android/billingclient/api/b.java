@@ -241,7 +241,7 @@ public class b extends BillingClient {
         try {
             return (String) b6.a.class.getField("VERSION_NAME").get(null);
         } catch (Exception unused) {
-            return z5.a.f55908a;
+            return z5.a.f55956a;
         }
     }
 

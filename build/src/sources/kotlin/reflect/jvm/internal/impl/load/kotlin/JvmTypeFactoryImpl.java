@@ -11,7 +11,7 @@ import qr.p;
 final class JvmTypeFactoryImpl implements JvmTypeFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final JvmTypeFactoryImpl f33238a = new JvmTypeFactoryImpl();
+    public static final JvmTypeFactoryImpl f33286a = new JvmTypeFactoryImpl();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {

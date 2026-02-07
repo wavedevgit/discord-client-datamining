@@ -3,14 +3,14 @@ package lt;
 public abstract class b {
     public static final byte a(char c10) {
         if (c10 < '~') {
-            return k.f36675c[c10];
+            return k.f36723c[c10];
         }
         return (byte) 0;
     }
 
     public static final char b(int i10) {
         if (i10 < 117) {
-            return k.f36674b[i10];
+            return k.f36722b[i10];
         }
         return (char) 0;
     }

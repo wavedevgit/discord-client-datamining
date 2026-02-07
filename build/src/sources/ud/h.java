@@ -5,26 +5,26 @@ import ne.w0;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f51357a;
+    public final String f51405a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f51358b;
+    public final String f51406b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f51359c;
+    public final String f51407c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f51360d;
+    public final String f51408d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f51361e;
+    public final String f51409e;
 
     public h(String str, String str2, String str3, String str4, String str5) {
-        this.f51357a = str;
-        this.f51358b = str2;
-        this.f51359c = str3;
-        this.f51360d = str4;
-        this.f51361e = str5;
+        this.f51405a = str;
+        this.f51406b = str2;
+        this.f51407c = str3;
+        this.f51408d = str4;
+        this.f51409e = str5;
     }
 
     public boolean equals(Object obj) {
@@ -35,7 +35,7 @@ public final class h {
             return false;
         }
         h hVar = (h) obj;
-        if (w0.c(this.f51357a, hVar.f51357a) && w0.c(this.f51358b, hVar.f51358b) && w0.c(this.f51359c, hVar.f51359c) && w0.c(this.f51360d, hVar.f51360d) && w0.c(this.f51361e, hVar.f51361e)) {
+        if (w0.c(this.f51405a, hVar.f51405a) && w0.c(this.f51406b, hVar.f51406b) && w0.c(this.f51407c, hVar.f51407c) && w0.c(this.f51408d, hVar.f51408d) && w0.c(this.f51409e, hVar.f51409e)) {
             return true;
         }
         return false;
@@ -46,7 +46,7 @@ public final class h {
         int i11;
         int i12;
         int i13;
-        String str = this.f51357a;
+        String str = this.f51405a;
         int i14 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -54,28 +54,28 @@ public final class h {
             i10 = 0;
         }
         int i15 = (527 + i10) * 31;
-        String str2 = this.f51358b;
+        String str2 = this.f51406b;
         if (str2 != null) {
             i11 = str2.hashCode();
         } else {
             i11 = 0;
         }
         int i16 = (i15 + i11) * 31;
-        String str3 = this.f51359c;
+        String str3 = this.f51407c;
         if (str3 != null) {
             i12 = str3.hashCode();
         } else {
             i12 = 0;
         }
         int i17 = (i16 + i12) * 31;
-        String str4 = this.f51360d;
+        String str4 = this.f51408d;
         if (str4 != null) {
             i13 = str4.hashCode();
         } else {
             i13 = 0;
         }
         int i18 = (i17 + i13) * 31;
-        String str5 = this.f51361e;
+        String str5 = this.f51409e;
         if (str5 != null) {
             i14 = str5.hashCode();
         }

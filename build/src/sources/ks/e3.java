@@ -52,10 +52,10 @@ import ks.p;
 public final class e3 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e3 f35300a = new e3();
+    public static final e3 f35348a = new e3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ClassId f35301b = ClassId.Companion.topLevel(new FqName("java.lang.Void"));
+    private static final ClassId f35349b = ClassId.Companion.topLevel(new FqName("java.lang.Void"));
 
     private e3() {
     }
@@ -113,7 +113,7 @@ public final class e3 {
             }
             return ClassId.Companion.topLevel(StandardNames.FqNames.array.toSafe());
         } else if (Intrinsics.areEqual(klass, Void.TYPE)) {
-            return f35301b;
+            return f35349b;
         } else {
             PrimitiveType a11 = a(klass);
             if (a11 != null) {

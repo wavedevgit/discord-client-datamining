@@ -40,7 +40,7 @@ public /* synthetic */ class ContentInventoryEntryComponent$$serializer implemen
     @Override // jt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f31057a, n2.f31041a, gt.a.u(ContentInventoryEntry$$serializer.INSTANCE)};
+        return new KSerializer[]{p0.f31105a, n2.f31089a, gt.a.u(ContentInventoryEntry$$serializer.INSTANCE)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

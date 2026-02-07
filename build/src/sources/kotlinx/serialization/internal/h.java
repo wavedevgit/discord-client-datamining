@@ -10,7 +10,7 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class h extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h f35115c = new h();
+    public static final h f35163c = new h();
 
     private h() {
         super(gt.a.D(ShortCompanionObject.INSTANCE));

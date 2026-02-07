@@ -8,20 +8,20 @@ import okio.Source;
 public final class g extends qu.k {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f49558d;
+    private final long f49606d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f49559e;
+    private final boolean f49607e;
 
     /* renamed from: i  reason: collision with root package name */
-    private long f49560i;
+    private long f49608i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(Source delegate, long j10, boolean z10) {
         super(delegate);
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f49558d = j10;
-        this.f49559e = z10;
+        this.f49606d = j10;
+        this.f49607e = z10;
     }
 
     private final void a(Buffer buffer, long j10) {
@@ -34,11 +34,11 @@ public final class g extends qu.k {
     @Override // qu.k, okio.Source
     public long read(Buffer sink, long j10) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        long j11 = this.f49560i;
-        long j12 = this.f49558d;
+        long j11 = this.f49608i;
+        long j12 = this.f49606d;
         if (j11 > j12) {
             j10 = 0;
-        } else if (this.f49559e) {
+        } else if (this.f49607e) {
             long j13 = j12 - j11;
             if (j13 == 0) {
                 return -1L;
@@ -48,15 +48,15 @@ public final class g extends qu.k {
         long read = super.read(sink, j10);
         int i10 = (read > (-1L) ? 1 : (read == (-1L) ? 0 : -1));
         if (i10 != 0) {
-            this.f49560i += read;
+            this.f49608i += read;
         }
-        long j14 = this.f49560i;
-        long j15 = this.f49558d;
+        long j14 = this.f49608i;
+        long j15 = this.f49606d;
         if ((j14 < j15 && i10 == 0) || j14 > j15) {
             if (read > 0 && j14 > j15) {
-                a(sink, sink.size() - (this.f49560i - this.f49558d));
+                a(sink, sink.size() - (this.f49608i - this.f49606d));
             }
-            throw new IOException("expected " + this.f49558d + " bytes but got " + this.f49560i);
+            throw new IOException("expected " + this.f49606d + " bytes but got " + this.f49608i);
         }
         return read;
     }

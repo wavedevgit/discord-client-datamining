@@ -7,36 +7,36 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends FloatEvaluator {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f49000a;
+    private final Function1 f49048a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f49001b;
+    private final Function1 f49049b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Number f49002c;
+    private Number f49050c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Number f49003d;
+    private Number f49051d;
 
     public a(Function1 startValueProvider, Function1 endValueProvider) {
         Intrinsics.checkNotNullParameter(startValueProvider, "startValueProvider");
         Intrinsics.checkNotNullParameter(endValueProvider, "endValueProvider");
-        this.f49000a = startValueProvider;
-        this.f49001b = endValueProvider;
+        this.f49048a = startValueProvider;
+        this.f49049b = endValueProvider;
     }
 
     private final Number a(Number number) {
-        if (this.f49003d == null) {
-            this.f49003d = (Number) this.f49001b.invoke(number);
+        if (this.f49051d == null) {
+            this.f49051d = (Number) this.f49049b.invoke(number);
         }
-        return this.f49003d;
+        return this.f49051d;
     }
 
     private final Number b(Number number) {
-        if (this.f49002c == null) {
-            this.f49002c = (Number) this.f49000a.invoke(number);
+        if (this.f49050c == null) {
+            this.f49050c = (Number) this.f49048a.invoke(number);
         }
-        return this.f49002c;
+        return this.f49050c;
     }
 
     /* JADX WARN: Can't rename method to resolve collision */

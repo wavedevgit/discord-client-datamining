@@ -67,7 +67,7 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     static {
-        qr.o oVar = qr.o.f48044e;
+        qr.o oVar = qr.o.f48092e;
         $childSerializers = new Lazy[]{null, null, null, null, null, null, null, null, null, qr.l.b(oVar, new Function0() { // from class: com.discord.chat.bridge.botuikit.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -123,7 +123,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new jt.f(p0.f31057a);
+        return new jt.f(p0.f31105a);
     }
 
     public static /* synthetic */ StringSelectComponent copy$default(StringSelectComponent stringSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -181,10 +181,10 @@ public final class StringSelectComponent extends SelectComponent {
         compositeEncoder.s(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, stringSelectComponent.getState());
         compositeEncoder.z(serialDescriptor, 3, stringSelectComponent.getCustomId());
         if (compositeEncoder.A(serialDescriptor, 4) || stringSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, stringSelectComponent.getPlaceholder());
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, stringSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.A(serialDescriptor, 5) || stringSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, stringSelectComponent.getAccessibilityLabel());
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, stringSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.x(serialDescriptor, 6, stringSelectComponent.getMinValues());
         compositeEncoder.x(serialDescriptor, 7, stringSelectComponent.getMaxValues());

@@ -55,10 +55,10 @@ public final class LongPressAttachmentLinkData implements ReactEvent {
 
     public static final /* synthetic */ void write$Self$chat_release(LongPressAttachmentLinkData longPressAttachmentLinkData, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.A(serialDescriptor, 0) || longPressAttachmentLinkData.attachmentUrl != null) {
-            compositeEncoder.l(serialDescriptor, 0, n2.f31041a, longPressAttachmentLinkData.attachmentUrl);
+            compositeEncoder.l(serialDescriptor, 0, n2.f31089a, longPressAttachmentLinkData.attachmentUrl);
         }
         if (compositeEncoder.A(serialDescriptor, 1) || longPressAttachmentLinkData.attachmentName != null) {
-            compositeEncoder.l(serialDescriptor, 1, n2.f31041a, longPressAttachmentLinkData.attachmentName);
+            compositeEncoder.l(serialDescriptor, 1, n2.f31089a, longPressAttachmentLinkData.attachmentName);
         }
     }
 

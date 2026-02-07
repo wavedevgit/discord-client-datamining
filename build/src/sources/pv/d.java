@@ -6,7 +6,7 @@ import com.discord.notifications.api.NotificationData;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f45756a = 4;
+    public static int f45804a = 4;
 
     public static int a(int i10) {
         return 4 - (i10 % 4);

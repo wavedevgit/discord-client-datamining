@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'CustomColorPicker';
     var2.CUSTOM_COLOR_PICKER_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3280, 10234, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 10279, 1307, 2]);

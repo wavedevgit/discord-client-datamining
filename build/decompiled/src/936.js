@@ -31,7 +31,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.cleanupSessionDataForTransport = var2;
     var2 = function arg0() {
-        _fun9758: for (var _fun9758_ip = 0;;) switch (_fun9758_ip) {
+        _fun9760: for (var _fun9760_ip = 0;;) switch (_fun9760_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.get;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun9758_ip = 37;
-                    continue _fun9758
+                    _fun9760_ip = 37;
+                    continue _fun9760
                 }
             case 31:
                 var0 = var1.clientInfo;
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getClientInfoForTransport = var2;
     var2 = function arg0() {
-        _fun9759: for (var _fun9759_ip = 0;;) switch (_fun9759_ip) {
+        _fun9761: for (var _fun9761_ip = 0;;) switch (_fun9761_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.get;
@@ -62,8 +62,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun9759_ip = 37;
-                    continue _fun9759
+                    _fun9761_ip = 37;
+                    continue _fun9761
                 }
             case 31:
                 var0 = var1.protocolVersion;
@@ -81,13 +81,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getSessionDataForTransport = var2;
     var2 = function arg0, arg1() {
-        _fun9761: for (var _fun9761_ip = 0;;) switch (_fun9761_ip) {
+        _fun9763: for (var _fun9763_ip = 0;;) switch (_fun9763_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.sessionId;
                 if (!var0) {
-                    _fun9761_ip = 33;
-                    continue _fun9761
+                    _fun9763_ip = 33;
+                    continue _fun9763
                 }
             case 12:
                 var2 = _closure1_slot0;
@@ -101,21 +101,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.storeSessionDataForTransport = var2;
     var0 = function arg0, arg1() {
-        _fun9762: for (var _fun9762_ip = 0;;) switch (_fun9762_ip) {
+        _fun9764: for (var _fun9764_ip = 0;;) switch (_fun9764_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.sessionId;
                 if (!var0) {
-                    _fun9762_ip = 74;
-                    continue _fun9762
+                    _fun9764_ip = 74;
+                    continue _fun9764
                 }
             case 12:
                 var2 = _closure1_slot0;
                 var1 = var2.get;
                 var7 = var1.bind(var2)(var3);
                 if (var7) {
-                    _fun9762_ip = 34;
-                    continue _fun9762
+                    _fun9764_ip = 34;
+                    continue _fun9764
                 }
             case 32:
                 var7 = {};

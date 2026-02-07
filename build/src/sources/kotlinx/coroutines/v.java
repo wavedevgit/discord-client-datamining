@@ -5,9 +5,9 @@ import os.w0;
 final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    public final w0 f35085a;
+    public final w0 f35133a;
 
     public v(w0 w0Var) {
-        this.f35085a = w0Var;
+        this.f35133a = w0Var;
     }
 }

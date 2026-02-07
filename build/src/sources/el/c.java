@@ -110,7 +110,7 @@ public abstract class c {
     */
     static void e(java.lang.String r6, lk.a r7) {
         /*
-            java.nio.charset.Charset r0 = lk.n.f36361b
+            java.nio.charset.Charset r0 = lk.n.f36409b
             if (r0 == 0) goto L5e
             byte[] r6 = r6.getBytes(r0)
             int r0 = r6.length
@@ -234,7 +234,7 @@ public abstract class c {
     }
 
     private static h l(String str, Charset charset) {
-        Charset charset2 = n.f36361b;
+        Charset charset2 = n.f36409b;
         if (charset2 != null && charset2.equals(charset) && s(str)) {
             return h.KANJI;
         }
@@ -299,7 +299,7 @@ public abstract class c {
         for (int i11 = 0; i11 < length; i11++) {
             iArr[i11] = bArr[i11] & 255;
         }
-        new nk.d(nk.a.f40877l).b(iArr, i10);
+        new nk.d(nk.a.f40925l).b(iArr, i10);
         byte[] bArr2 = new byte[i10];
         for (int i12 = 0; i12 < i10; i12++) {
             bArr2[i12] = (byte) iArr[length + i12];
@@ -405,7 +405,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean s(String str) {
-        byte[] bytes = str.getBytes(n.f36361b);
+        byte[] bytes = str.getBytes(n.f36409b);
         int length = bytes.length;
         if (length % 2 != 0) {
             return false;

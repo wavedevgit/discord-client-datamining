@@ -120,7 +120,7 @@ public final class s {
         if (!(type instanceof KClass) && (!(type instanceof KType) || !(((KType) type).getClassifier() instanceof KClass))) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("Expected type to be either a KClass or a KType with a KClass classifier, but was ", type).toString());
         }
-        this.f6937d = qr.l.b(qr.o.f48044e, new d());
+        this.f6937d = qr.l.b(qr.o.f48092e, new d());
         this.f6938e = kotlin.sequences.k.q(this, b.f6939d);
     }
 

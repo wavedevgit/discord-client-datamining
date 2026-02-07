@@ -466,7 +466,7 @@ public final class x extends RecyclerView.Adapter {
                     if (c0305a.a().e() == 100) {
                         notifyItemChanged(a10);
                     } else {
-                        notifyItemChanged(a10, Unit.f32008a);
+                        notifyItemChanged(a10, Unit.f32056a);
                     }
                 }
             }
@@ -522,7 +522,7 @@ public final class x extends RecyclerView.Adapter {
                 if (Intrinsics.areEqual(c0306b.d(), "application/pdf")) {
                     ImageView imageView3 = dVar.f23391d;
                     Intrinsics.checkNotNullExpressionValue(imageView3, "imageView");
-                    Integer valueOf = Integer.valueOf(rp.l.f49077l);
+                    Integer valueOf = Integer.valueOf(rp.l.f49125l);
                     v4.h hVar = this.f22040a;
                     h.a r10 = new h.a(imageView3.getContext()).d(valueOf).r(imageView3);
                     r10.o(100, 100);

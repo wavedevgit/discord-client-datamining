@@ -16,15 +16,15 @@ public interface j extends IInterface {
         private static class C0616a implements j {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f48513c;
+            private IBinder f48561c;
 
             C0616a(IBinder iBinder) {
-                this.f48513c = iBinder;
+                this.f48561c = iBinder;
             }
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f48513c;
+                return this.f48561c;
             }
 
             @Override // r3.j
@@ -33,7 +33,7 @@ public interface j extends IInterface {
                 try {
                     obtain.writeInterfaceToken("androidx.room.IMultiInstanceInvalidationCallback");
                     obtain.writeStringArray(strArr);
-                    this.f48513c.transact(1, obtain, null, 1);
+                    this.f48561c.transact(1, obtain, null, 1);
                 } finally {
                     obtain.recycle();
                 }

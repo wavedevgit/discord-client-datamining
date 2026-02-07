@@ -5,7 +5,7 @@ import yi.c;
 final class sa implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final sa f40250a = new sa();
+    static final sa f40298a = new sa();
 
     static {
         c.b a10 = yi.c.a("identifiedLanguage");

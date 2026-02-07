@@ -29,23 +29,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var10;
     var9 = function arg0() {
-        _fun15576: for (var _fun15576_ip = 0;;) switch (_fun15576_ip) {
+        _fun15581: for (var _fun15581_ip = 0;;) switch (_fun15581_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot6;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15576_ip = 29;
-                    continue _fun15576
+                    _fun15581_ip = 29;
+                    continue _fun15581
                 }
             case 20:
                 var4 = _closure1_slot7;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15576_ip = 41;
-                    continue _fun15576
+                    _fun15581_ip = 41;
+                    continue _fun15581
                 }
             case 32:
                 var1 = _closure1_slot8;
@@ -269,7 +269,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var20.bind(var0)(var13);
     var13 = var13.DismissibleContent;
     var13 = var13.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION;
-    var14 = new Array(6);
+    var14 = new Array(7);
     var14[0] = var13;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -296,6 +296,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var13.DismissibleContent;
     var13 = var13.GUILD_TAG_AVAILABLE_COACHMARK_V2;
     var14[5] = var13;
+    var13 = var21[var1];
+    var13 = var20.bind(var0)(var13);
+    var13 = var13.DismissibleContent;
+    var13 = var13.GAME_CLAIM_COACHMARK;
+    var14[6] = var13;
     var _closure1_slot4 = var14;
     var13 = var21[var1];
     var13 = var20.bind(var0)(var13);
@@ -354,23 +359,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isTimeRecurringGuildDismissibleContent = var6;
     var2.isSnowflakeBoundGuildDismissibleContent = var5;
     var4 = function arg0() {
-        _fun15583: for (var _fun15583_ip = 0;;) switch (_fun15583_ip) {
+        _fun15588: for (var _fun15588_ip = 0;;) switch (_fun15588_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot10;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15583_ip = 29;
-                    continue _fun15583
+                    _fun15588_ip = 29;
+                    continue _fun15588
                 }
             case 20:
                 var4 = _closure1_slot11;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15583_ip = 41;
-                    continue _fun15583
+                    _fun15588_ip = 41;
+                    continue _fun15588
                 }
             case 32:
                 var1 = _closure1_slot12;

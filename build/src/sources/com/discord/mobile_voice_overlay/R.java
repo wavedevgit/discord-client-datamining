@@ -33,7 +33,7 @@ public final class R {
     public static final class drawable {
         public static int bubble_state_selector = 0x7f0800a8;
         public static int ic_trash_outline = 0x7f0802af;
-        public static int trash_bg = 0x7f080748;
+        public static int trash_bg = 0x7f080743;
 
         private drawable() {
         }

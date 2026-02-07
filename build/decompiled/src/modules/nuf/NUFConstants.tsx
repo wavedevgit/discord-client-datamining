@@ -40,7 +40,5 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.NUF_NOTIFICATION_MODAL_KEY = var1;
     var1 = 'nuf-discoverability-modal-key';
     var2.NUF_DISCOVERABILITY_MODAL_KEY = var1;
-    var1 = 'nuf-in-app-education-modal-key';
-    var2.NUF_IN_APP_EDUCATION_KEY = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

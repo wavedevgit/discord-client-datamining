@@ -15,45 +15,45 @@ import okio.Source;
 public final class s implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    private final y f53079d;
+    private final y f53127d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f53080e;
+    private final Object f53128e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object[] f53081i;
+    private final Object[] f53129i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Call.Factory f53082o;
+    private final Call.Factory f53130o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final h f53083p;
+    private final h f53131p;
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile boolean f53084q;
+    private volatile boolean f53132q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Call f53085r;
+    private Call f53133r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Throwable f53086s;
+    private Throwable f53134s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f53087t;
+    private boolean f53135t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements bu.b {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ f f53088d;
+        final /* synthetic */ f f53136d;
 
         a(f fVar) {
-            this.f53088d = fVar;
+            this.f53136d = fVar;
         }
 
         private void a(Throwable th2) {
             try {
-                this.f53088d.b(s.this, th2);
+                this.f53136d.b(s.this, th2);
             } catch (Throwable th3) {
                 e0.t(th3);
                 th3.printStackTrace();
@@ -69,7 +69,7 @@ public final class s implements d {
         public void onResponse(Call call, Response response) {
             try {
                 try {
-                    this.f53088d.a(s.this, s.this.d(response));
+                    this.f53136d.a(s.this, s.this.d(response));
                 } catch (Throwable th2) {
                     e0.t(th2);
                     th2.printStackTrace();
@@ -86,13 +86,13 @@ public final class s implements d {
     public static final class b extends ResponseBody {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ResponseBody f53090d;
+        private final ResponseBody f53138d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final BufferedSource f53091e;
+        private final BufferedSource f53139e;
 
         /* renamed from: i  reason: collision with root package name */
-        IOException f53092i;
+        IOException f53140i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         class a extends qu.k {
@@ -105,34 +105,34 @@ public final class s implements d {
                 try {
                     return super.read(buffer, j10);
                 } catch (IOException e10) {
-                    b.this.f53092i = e10;
+                    b.this.f53140i = e10;
                     throw e10;
                 }
             }
         }
 
         b(ResponseBody responseBody) {
-            this.f53090d = responseBody;
-            this.f53091e = qu.x.d(new a(responseBody.source()));
+            this.f53138d = responseBody;
+            this.f53139e = qu.x.d(new a(responseBody.source()));
         }
 
         @Override // okhttp3.ResponseBody, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f53090d.close();
+            this.f53138d.close();
         }
 
         @Override // okhttp3.ResponseBody
         public long contentLength() {
-            return this.f53090d.contentLength();
+            return this.f53138d.contentLength();
         }
 
         @Override // okhttp3.ResponseBody
         public MediaType contentType() {
-            return this.f53090d.contentType();
+            return this.f53138d.contentType();
         }
 
         void g() {
-            IOException iOException = this.f53092i;
+            IOException iOException = this.f53140i;
             if (iOException == null) {
                 return;
             }
@@ -141,7 +141,7 @@ public final class s implements d {
 
         @Override // okhttp3.ResponseBody
         public BufferedSource source() {
-            return this.f53091e;
+            return this.f53139e;
         }
     }
 
@@ -150,25 +150,25 @@ public final class s implements d {
     public static final class c extends ResponseBody {
 
         /* renamed from: d  reason: collision with root package name */
-        private final MediaType f53094d;
+        private final MediaType f53142d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f53095e;
+        private final long f53143e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c(MediaType mediaType, long j10) {
-            this.f53094d = mediaType;
-            this.f53095e = j10;
+            this.f53142d = mediaType;
+            this.f53143e = j10;
         }
 
         @Override // okhttp3.ResponseBody
         public long contentLength() {
-            return this.f53095e;
+            return this.f53143e;
         }
 
         @Override // okhttp3.ResponseBody
         public MediaType contentType() {
-            return this.f53094d;
+            return this.f53142d;
         }
 
         @Override // okhttp3.ResponseBody
@@ -179,15 +179,15 @@ public final class s implements d {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(y yVar, Object obj, Object[] objArr, Call.Factory factory, h hVar) {
-        this.f53079d = yVar;
-        this.f53080e = obj;
-        this.f53081i = objArr;
-        this.f53082o = factory;
-        this.f53083p = hVar;
+        this.f53127d = yVar;
+        this.f53128e = obj;
+        this.f53129i = objArr;
+        this.f53130o = factory;
+        this.f53131p = hVar;
     }
 
     private Call b() {
-        Call a10 = this.f53082o.a(this.f53079d.a(this.f53080e, this.f53081i));
+        Call a10 = this.f53130o.a(this.f53127d.a(this.f53128e, this.f53129i));
         if (a10 != null) {
             return a10;
         }
@@ -195,11 +195,11 @@ public final class s implements d {
     }
 
     private Call c() {
-        Call call = this.f53085r;
+        Call call = this.f53133r;
         if (call != null) {
             return call;
         }
-        Throwable th2 = this.f53086s;
+        Throwable th2 = this.f53134s;
         if (th2 != null) {
             if (!(th2 instanceof IOException)) {
                 if (th2 instanceof RuntimeException) {
@@ -211,11 +211,11 @@ public final class s implements d {
         }
         try {
             Call b10 = b();
-            this.f53085r = b10;
+            this.f53133r = b10;
             return b10;
         } catch (IOException | Error | RuntimeException e10) {
             e0.t(e10);
-            this.f53086s = e10;
+            this.f53134s = e10;
             throw e10;
         }
     }
@@ -223,12 +223,12 @@ public final class s implements d {
     @Override // vv.d
     public boolean C() {
         boolean z10 = true;
-        if (this.f53084q) {
+        if (this.f53132q) {
             return true;
         }
         synchronized (this) {
             try {
-                Call call = this.f53085r;
+                Call call = this.f53133r;
                 if (call == null || !call.C()) {
                     z10 = false;
                 }
@@ -245,13 +245,13 @@ public final class s implements d {
         Objects.requireNonNull(fVar, "callback == null");
         synchronized (this) {
             try {
-                if (!this.f53087t) {
-                    this.f53087t = true;
-                    call = this.f53085r;
-                    th2 = this.f53086s;
+                if (!this.f53135t) {
+                    this.f53135t = true;
+                    call = this.f53133r;
+                    th2 = this.f53134s;
                     if (call == null && th2 == null) {
                         Call b10 = b();
-                        this.f53085r = b10;
+                        this.f53133r = b10;
                         call = b10;
                     }
                 } else {
@@ -265,7 +265,7 @@ public final class s implements d {
             fVar.b(this, th2);
             return;
         }
-        if (this.f53084q) {
+        if (this.f53132q) {
             call.cancel();
         }
         call.J0(new a(fVar));
@@ -274,15 +274,15 @@ public final class s implements d {
     @Override // vv.d
     /* renamed from: a */
     public s mo1234clone() {
-        return new s(this.f53079d, this.f53080e, this.f53081i, this.f53082o, this.f53083p);
+        return new s(this.f53127d, this.f53128e, this.f53129i, this.f53130o, this.f53131p);
     }
 
     @Override // vv.d
     public void cancel() {
         Call call;
-        this.f53084q = true;
+        this.f53132q = true;
         synchronized (this) {
-            call = this.f53085r;
+            call = this.f53133r;
         }
         if (call != null) {
             call.cancel();
@@ -297,7 +297,7 @@ public final class s implements d {
             if (z10 != 204 && z10 != 205) {
                 b bVar = new b(n10);
                 try {
-                    return z.j(this.f53083p.a(bVar), c10);
+                    return z.j(this.f53131p.a(bVar), c10);
                 } catch (RuntimeException e10) {
                     bVar.g();
                     throw e10;

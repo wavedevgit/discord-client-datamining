@@ -7,42 +7,42 @@ import java.util.Map;
 public abstract class p extends k {
 
     /* renamed from: d  reason: collision with root package name */
-    static final int[] f50726d = {1, 1, 1};
+    static final int[] f50774d = {1, 1, 1};
 
     /* renamed from: e  reason: collision with root package name */
-    static final int[] f50727e = {1, 1, 1, 1, 1};
+    static final int[] f50775e = {1, 1, 1, 1, 1};
 
     /* renamed from: f  reason: collision with root package name */
-    static final int[] f50728f = {1, 1, 1, 1, 1, 1};
+    static final int[] f50776f = {1, 1, 1, 1, 1, 1};
 
     /* renamed from: g  reason: collision with root package name */
-    static final int[][] f50729g;
+    static final int[][] f50777g;
 
     /* renamed from: h  reason: collision with root package name */
-    static final int[][] f50730h;
+    static final int[][] f50778h;
 
     /* renamed from: a  reason: collision with root package name */
-    private final StringBuilder f50731a = new StringBuilder(20);
+    private final StringBuilder f50779a = new StringBuilder(20);
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f50732b = new o();
+    private final o f50780b = new o();
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f50733c = new g();
+    private final g f50781c = new g();
 
     static {
         int[][] iArr = {new int[]{3, 2, 1, 1}, new int[]{2, 2, 2, 1}, new int[]{2, 1, 2, 2}, new int[]{1, 4, 1, 1}, new int[]{1, 1, 3, 2}, new int[]{1, 2, 3, 1}, new int[]{1, 1, 1, 4}, new int[]{1, 3, 1, 2}, new int[]{1, 2, 1, 3}, new int[]{3, 1, 1, 2}};
-        f50729g = iArr;
+        f50777g = iArr;
         int[][] iArr2 = new int[20];
-        f50730h = iArr2;
+        f50778h = iArr2;
         System.arraycopy(iArr, 0, iArr2, 0, 10);
         for (int i10 = 10; i10 < 20; i10++) {
-            int[] iArr3 = f50729g[i10 - 10];
+            int[] iArr3 = f50777g[i10 - 10];
             int[] iArr4 = new int[iArr3.length];
             for (int i11 = 0; i11 < iArr3.length; i11++) {
                 iArr4[i11] = iArr3[(iArr3.length - i11) - 1];
             }
-            f50730h[i10] = iArr4;
+            f50778h[i10] = iArr4;
         }
     }
 
@@ -121,12 +121,12 @@ public abstract class p extends k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int[] o(lk.a aVar) {
-        int[] iArr = new int[f50726d.length];
+        int[] iArr = new int[f50774d.length];
         int[] iArr2 = null;
         boolean z10 = false;
         int i10 = 0;
         while (!z10) {
-            int[] iArr3 = f50726d;
+            int[] iArr3 = f50774d;
             Arrays.fill(iArr, 0, iArr3.length, 0);
             iArr2 = n(aVar, i10, false, iArr3, iArr);
             int i11 = iArr2[0];
@@ -174,7 +174,7 @@ public abstract class p extends k {
     }
 
     int[] j(lk.a aVar, int i10) {
-        return m(aVar, i10, false, f50726d);
+        return m(aVar, i10, false, f50774d);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -186,7 +186,7 @@ public abstract class p extends k {
         if (map != null) {
             android.support.v4.media.session.b.a(map.get(hk.e.NEED_RESULT_POINT_CALLBACK));
         }
-        StringBuilder sb2 = this.f50731a;
+        StringBuilder sb2 = this.f50779a;
         int i12 = 0;
         sb2.setLength(0);
         int[] j10 = j(aVar, k(aVar, iArr, sb2));
@@ -201,7 +201,7 @@ public abstract class p extends k {
                     int[] iArr2 = null;
                     Result result = new Result(sb3, null, new hk.p[]{new hk.p((iArr[1] + iArr[0]) / 2.0f, f10), new hk.p((j10[1] + j10[0]) / 2.0f, f10)}, p10);
                     try {
-                        Result a10 = this.f50732b.a(i10, aVar, j10[1]);
+                        Result a10 = this.f50780b.a(i10, aVar, j10[1]);
                         result.h(hk.o.UPC_EAN_EXTENSION, a10.f());
                         result.g(a10.d());
                         result.a(a10.e());
@@ -219,7 +219,7 @@ public abstract class p extends k {
                         }
                         throw hk.k.a();
                     }
-                    if ((p10 == hk.a.EAN_13 || p10 == hk.a.UPC_A) && (c10 = this.f50733c.c(sb3)) != null) {
+                    if ((p10 == hk.a.EAN_13 || p10 == hk.a.UPC_A) && (c10 = this.f50781c.c(sb3)) != null) {
                         result.h(hk.o.POSSIBLE_COUNTRY, c10);
                     }
                     if (p10 == hk.a.EAN_8) {

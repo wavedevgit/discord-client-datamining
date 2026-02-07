@@ -1,7 +1,7 @@
 // modules/core/CodeSplittingUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun25621: for (var _fun25621_ip = 0;;) switch (_fun25621_ip) {
+    _fun25632: for (var _fun25632_ip = 0;;) switch (_fun25632_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun25621_ip = 131;
-                    continue _fun25621;
+                    _fun25632_ip = 131;
+                    continue _fun25632;
                 }
         case 162:
             return var0;

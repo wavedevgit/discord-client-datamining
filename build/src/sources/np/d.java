@@ -10,10 +10,10 @@ import mp.x0;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f41116a;
+    private final ConstraintLayout f41164a;
 
     private d(ConstraintLayout constraintLayout) {
-        this.f41116a = constraintLayout;
+        this.f41164a = constraintLayout;
     }
 
     public static d a(View view) {
@@ -24,7 +24,7 @@ public final class d implements ViewBinding {
     }
 
     public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f37832d, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f37880d, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -34,6 +34,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f41116a;
+        return this.f41164a;
     }
 }

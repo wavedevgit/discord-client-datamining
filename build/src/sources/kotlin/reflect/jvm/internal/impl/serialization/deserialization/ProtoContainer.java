@@ -14,34 +14,34 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ProtoContainer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final NameResolver f34344a;
+    private final NameResolver f34392a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeTable f34345b;
+    private final TypeTable f34393b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SourceElement f34346c;
+    private final SourceElement f34394c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Class extends ProtoContainer {
 
         /* renamed from: d  reason: collision with root package name */
-        private final ProtoBuf.Class f34347d;
+        private final ProtoBuf.Class f34395d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Class f34348e;
+        private final Class f34396e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final ClassId f34349f;
+        private final ClassId f34397f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final ProtoBuf.Class.Kind f34350g;
+        private final ProtoBuf.Class.Kind f34398g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f34351h;
+        private final boolean f34399h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final boolean f34352i;
+        private final boolean f34400i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Class(@NotNull ProtoBuf.Class classProto, @NotNull NameResolver nameResolver, @NotNull TypeTable typeTable, SourceElement sourceElement, Class r62) {
@@ -49,46 +49,46 @@ public abstract class ProtoContainer {
             Intrinsics.checkNotNullParameter(classProto, "classProto");
             Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
             Intrinsics.checkNotNullParameter(typeTable, "typeTable");
-            this.f34347d = classProto;
-            this.f34348e = r62;
-            this.f34349f = NameResolverUtilKt.getClassId(nameResolver, classProto.getFqName());
+            this.f34395d = classProto;
+            this.f34396e = r62;
+            this.f34397f = NameResolverUtilKt.getClassId(nameResolver, classProto.getFqName());
             ProtoBuf.Class.Kind kind = Flags.CLASS_KIND.get(classProto.getFlags());
-            this.f34350g = kind == null ? ProtoBuf.Class.Kind.CLASS : kind;
+            this.f34398g = kind == null ? ProtoBuf.Class.Kind.CLASS : kind;
             Boolean bool = Flags.IS_INNER.get(classProto.getFlags());
             Intrinsics.checkNotNullExpressionValue(bool, "get(...)");
-            this.f34351h = bool.booleanValue();
+            this.f34399h = bool.booleanValue();
             Boolean bool2 = Flags.IS_DATA.get(classProto.getFlags());
             Intrinsics.checkNotNullExpressionValue(bool2, "get(...)");
-            this.f34352i = bool2.booleanValue();
+            this.f34400i = bool2.booleanValue();
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ProtoContainer
         @NotNull
         public FqName debugFqName() {
-            return this.f34349f.asSingleFqName();
+            return this.f34397f.asSingleFqName();
         }
 
         @NotNull
         public final ClassId getClassId() {
-            return this.f34349f;
+            return this.f34397f;
         }
 
         @NotNull
         public final ProtoBuf.Class getClassProto() {
-            return this.f34347d;
+            return this.f34395d;
         }
 
         @NotNull
         public final ProtoBuf.Class.Kind getKind() {
-            return this.f34350g;
+            return this.f34398g;
         }
 
         public final Class getOuterClass() {
-            return this.f34348e;
+            return this.f34396e;
         }
 
         public final boolean isInner() {
-            return this.f34351h;
+            return this.f34399h;
         }
     }
 
@@ -96,7 +96,7 @@ public abstract class ProtoContainer {
     public static final class Package extends ProtoContainer {
 
         /* renamed from: d  reason: collision with root package name */
-        private final FqName f34353d;
+        private final FqName f34401d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public Package(@NotNull FqName fqName, @NotNull NameResolver nameResolver, @NotNull TypeTable typeTable, SourceElement sourceElement) {
@@ -104,13 +104,13 @@ public abstract class ProtoContainer {
             Intrinsics.checkNotNullParameter(fqName, "fqName");
             Intrinsics.checkNotNullParameter(nameResolver, "nameResolver");
             Intrinsics.checkNotNullParameter(typeTable, "typeTable");
-            this.f34353d = fqName;
+            this.f34401d = fqName;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.ProtoContainer
         @NotNull
         public FqName debugFqName() {
-            return this.f34353d;
+            return this.f34401d;
         }
     }
 
@@ -123,16 +123,16 @@ public abstract class ProtoContainer {
 
     @NotNull
     public final NameResolver getNameResolver() {
-        return this.f34344a;
+        return this.f34392a;
     }
 
     public final SourceElement getSource() {
-        return this.f34346c;
+        return this.f34394c;
     }
 
     @NotNull
     public final TypeTable getTypeTable() {
-        return this.f34345b;
+        return this.f34393b;
     }
 
     @NotNull
@@ -141,8 +141,8 @@ public abstract class ProtoContainer {
     }
 
     private ProtoContainer(NameResolver nameResolver, TypeTable typeTable, SourceElement sourceElement) {
-        this.f34344a = nameResolver;
-        this.f34345b = typeTable;
-        this.f34346c = sourceElement;
+        this.f34392a = nameResolver;
+        this.f34393b = typeTable;
+        this.f34394c = sourceElement;
     }
 }

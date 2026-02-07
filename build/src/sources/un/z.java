@@ -12,25 +12,25 @@ import un.x;
 public final class z implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final zn.a f51857a;
+    private final zn.a f51905a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wp.c f51858b;
+    private final wp.c f51906b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final t f51859c;
+    private final t f51907c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PreviewView f51860d;
+    private final PreviewView f51908d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f51861e;
+    private final y f51909e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f51862f;
+    private boolean f51910f;
 
     /* renamed from: g  reason: collision with root package name */
-    private MutableStateFlow f51863g;
+    private MutableStateFlow f51911g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -47,7 +47,7 @@ public final class z implements i {
         public void a(PreviewView.e value) {
             Intrinsics.checkNotNullParameter(value, "value");
             if (value == PreviewView.e.STREAMING) {
-                z.this.f51863g.setValue(x.e.f51853a);
+                z.this.f51911g.setValue(x.e.f51901a);
                 z.this.e().getPreviewStreamState().n(this);
             }
         }
@@ -61,13 +61,13 @@ public final class z implements i {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View v10) {
             Intrinsics.checkNotNullParameter(v10, "v");
-            z.this.f51857a.c();
+            z.this.f51905a.c();
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewDetachedFromWindow(View v10) {
             Intrinsics.checkNotNullParameter(v10, "v");
-            z.this.f51857a.b();
+            z.this.f51905a.b();
         }
     }
 
@@ -76,10 +76,10 @@ public final class z implements i {
     public static final class d extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f51866d;
+        /* synthetic */ Object f51914d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f51868i;
+        int f51916i;
 
         d(Continuation continuation) {
             super(continuation);
@@ -87,8 +87,8 @@ public final class z implements i {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51866d = obj;
-            this.f51868i |= Integer.MIN_VALUE;
+            this.f51914d = obj;
+            this.f51916i |= Integer.MIN_VALUE;
             Object j10 = z.this.j(this);
             if (j10 == wr.b.f()) {
                 return j10;
@@ -103,55 +103,55 @@ public final class z implements i {
         Intrinsics.checkNotNullParameter(cameraPreview, "cameraPreview");
         Intrinsics.checkNotNullParameter(previewView, "previewView");
         Intrinsics.checkNotNullParameter(cameraXBinder, "cameraXBinder");
-        this.f51857a = cameraStatsManager;
-        this.f51858b = sdkFilesManager;
-        this.f51859c = cameraPreview;
-        this.f51860d = previewView;
-        this.f51861e = cameraXBinder;
-        this.f51863g = rs.l0.a(x.c.f51851a);
+        this.f51905a = cameraStatsManager;
+        this.f51906b = sdkFilesManager;
+        this.f51907c = cameraPreview;
+        this.f51908d = previewView;
+        this.f51909e = cameraXBinder;
+        this.f51911g = rs.l0.a(x.c.f51899a);
     }
 
     @Override // un.i
     public void a(boolean z10) {
-        this.f51859c.c(z10);
+        this.f51907c.c(z10);
     }
 
     @Override // un.i
     public v b() {
-        return this.f51859c.e();
+        return this.f51907c.e();
     }
 
     @Override // un.i
     public rs.j0 c() {
-        return this.f51863g;
+        return this.f51911g;
     }
 
     @Override // un.i
     public void d() {
-        if (this.f51862f) {
+        if (this.f51910f) {
             return;
         }
-        this.f51863g.setValue(x.d.f51852a);
-        this.f51862f = true;
-        this.f51861e.a();
+        this.f51911g.setValue(x.d.f51900a);
+        this.f51910f = true;
+        this.f51909e.a();
         e().getPreviewStreamState().j(new b());
         e().addOnAttachStateChangeListener(new c());
     }
 
     @Override // un.i
     public void f() {
-        this.f51859c.d(e());
+        this.f51907c.d(e());
     }
 
     @Override // un.i
     public Object g(Continuation continuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(kotlin.coroutines.jvm.internal.b.a(false));
     }
 
     @Override // un.i
     public Object i(Continuation continuation) {
-        Result.a aVar = Result.f32005e;
+        Result.a aVar = Result.f32053e;
         return Result.b(kotlin.c.a(new s0()));
     }
 
@@ -169,20 +169,20 @@ public final class z implements i {
             if (r0 == 0) goto L13
             r0 = r5
             un.z$d r0 = (un.z.d) r0
-            int r1 = r0.f51868i
+            int r1 = r0.f51916i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51868i = r1
+            r0.f51916i = r1
             goto L18
         L13:
             un.z$d r0 = new un.z$d
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f51866d
+            java.lang.Object r5 = r0.f51914d
             java.lang.Object r1 = wr.b.f()
-            int r2 = r0.f51868i
+            int r2 = r0.f51916i
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 != r3) goto L2f
@@ -197,9 +197,9 @@ public final class z implements i {
             throw r5
         L37:
             kotlin.c.b(r5)
-            un.t r5 = r4.f51859c
-            wp.c r2 = r4.f51858b
-            r0.f51868i = r3
+            un.t r5 = r4.f51907c
+            wp.c r2 = r4.f51906b
+            r0.f51916i = r3
             java.lang.Object r5 = r5.j(r2, r0)
             if (r5 != r1) goto L47
             return r1
@@ -212,7 +212,7 @@ public final class z implements i {
     @Override // un.i
     /* renamed from: m */
     public PreviewView e() {
-        return this.f51860d;
+        return this.f51908d;
     }
 
     @Override // un.i

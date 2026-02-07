@@ -1,581 +1,617 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = {};
-    var0 = 'en';
-    var1.locale = var0;
-    var0 = {
-        'ca': null,
-        'hourNo0': true,
-        'hour12': true
+    var4 = require;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var2 = function arg0, arg1, arg2() {
+        _fun112658: for (var _fun112658_ip = 0;;) switch (_fun112658_ip) {
+            case 0:
+                var4 = arg0;
+                var7 = arg1;
+                var2 = this;
+                var3 = 'string';
+                var0 = typeof var4;
+                var6 = var4;
+                if (!(var3 === var0)) {
+                    _fun112658_ip = 45;
+                    continue _fun112658
+                }
+            case 25:
+                var3 = _closure1_slot2;
+                var0 = var3.__parse;
+                var6 = var0.bind(var3)(var4);
+            case 45:
+                if (!var6) {
+                    _fun112658_ip = 213;
+                    continue _fun112658
+                }
+            case 51:
+                var3 = var6.type;
+                var0 = 'messageFormatPattern';
+                if (!(var0 === var3)) {
+                    _fun112658_ip = 213;
+                    continue _fun112658
+                }
+            case 69:
+                var5 = var2._mergeFormats;
+                var3 = _closure1_slot2;
+                var4 = var3.formats;
+                var3 = arg2;
+                var5 = var5.bind(var2)(var4, var3);
+                var4 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var0 = 0;
+                var3 = var3[var0];
+                var0 = undefined;
+                var9 = var4.bind(var0)(var3);
+                var8 = var9.defineProperty;
+                var4 = {};
+                var3 = var2._resolveLocale;
+                var3 = var3.bind(var2)(var7);
+                var4.value = var3;
+                var3 = '_locale';
+                var3 = var8.bind(var9)(var2, var3, var4);
+                var4 = var2._findPluralRuleFunction;
+                var3 = var2._locale;
+                var10 = var4.bind(var2)(var3);
+                var3 = var2._compilePattern;
+                var14 = var2;
+                var13 = var6;
+                var12 = var7;
+                var11 = var5;
+                var3 = var14[var3](var13, var12, var11, var10, var9);
+                var _closure2_slot0 = var3;
+                var _closure2_slot1 = var2;
+                var1 = function(arg0) { // Environment: var1
+                    var3 = _closure2_slot1;
+                    var2 = var3._format;
+                    var1 = _closure2_slot0;
+                    var0 = arg0;
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
+                };
+                var2.format = var1;
+                return var0;
+            case 213:
+                var0 = global;
+                var2 = var0.TypeError;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var13 = 'A message must be provided as a String or AST.';
+                var14 = var1;
+                var0 = new var14[var2](var13, var12);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
     };
-    var2 = ['gregory', 'buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic', 'generic', 'hebrew', 'indian', 'islamic', 'islamicc', 'japanese', 'persian', 'roc'];
-    var0.ca = var2;
-    var2 = {};
-    var3 = '{1}, {0}';
-    var2.medium = var3;
-    var3 = {
-        'E': 'ccc',
-        'EHm': 'E HH:mm',
-        'EHms': 'E HH:mm:ss',
-        'Ed': 'd E',
-        'Ehm': 'E h:mm a',
-        'Ehms': 'E h:mm:ss a',
-        'Gy': 'y G',
-        'GyMMM': 'MMM y G',
-        'GyMMMEd': 'E, MMM d, y G',
-        'GyMMMd': 'MMM d, y G',
-        'H': 'HH',
-        'Hm': 'HH:mm',
-        'Hms': 'HH:mm:ss',
-        'Hmsv': 'HH:mm:ss v',
-        'Hmv': 'HH:mm v',
-        'M': 'L',
-        'MEd': 'E, M/d',
-        'MMM': 'LLL',
-        'MMMEd': 'E, MMM d',
-        'MMMd': 'MMM d',
-        'Md': 'M/d',
-        'd': 'd',
-        'h': 'h a',
-        'hm': 'h:mm a',
-        'hms': 'h:mm:ss a',
-        'hmsv': 'h:mm:ss a v',
-        'hmv': 'h:mm a v',
-        'ms': 'mm:ss',
-        'y': 'y',
-        'yM': 'M/y',
-        'yMEd': 'E, M/d/y',
-        'yMMM': 'MMM y',
-        'yMMMEd': 'E, MMM d, y',
-        'yMMMd': 'MMM d, y',
-        'yMd': 'M/d/y',
-        'yQQQ': 'QQQ y',
-        'yQQQQ': 'QQQQ y'
-    };
-    var2.availableFormats = var3;
-    var3 = {
-        'full': 'EEEE, MMMM d, y',
-        'long': 'MMMM d, y',
-        'medium': 'MMM d, y',
-        'short': 'M/d/yy'
-    };
-    var2.dateFormats = var3;
-    var3 = {
-        'full': 'h:mm:ss a zzzz',
-        'long': 'h:mm:ss a z',
-        'medium': 'h:mm:ss a',
-        'short': 'h:mm a'
-    };
-    var2.timeFormats = var3;
-    var0.formats = var2;
-    var2 = {};
-    var3 = {};
-    var4 = {};
-    var5 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-    var4.narrow = var5;
-    var5 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var4.short = var5;
-    var5 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['BE'];
-    var4.narrow = var5;
-    var5 = ['BE'];
-    var4.short = var5;
-    var5 = ['BE'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.buddhist = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Mo1', 'Mo2', 'Mo3', 'Mo4', 'Mo5', 'Mo6', 'Mo7', 'Mo8', 'Mo9', 'Mo10', 'Mo11', 'Mo12'];
-    var4.short = var5;
-    var5 = ['Month1', 'Month2', 'Month3', 'Month4', 'Month5', 'Month6', 'Month7', 'Month8', 'Month9', 'Month10', 'Month11', 'Month12'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.chinese = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'];
-    var4.narrow = var5;
-    var5 = ['Tout', 'Baba', 'Hator', 'Kiahk', 'Toba', 'Amshir', 'Baramhat', 'Baramouda', 'Bashans', 'Paona', 'Epep', 'Mesra', 'Nasie'];
-    var4.short = var5;
-    var5 = ['Tout', 'Baba', 'Hator', 'Kiahk', 'Toba', 'Amshir', 'Baramhat', 'Baramouda', 'Bashans', 'Paona', 'Epep', 'Mesra', 'Nasie'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['ERA0', 'ERA1'];
-    var4.narrow = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.short = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.coptic = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Mo1', 'Mo2', 'Mo3', 'Mo4', 'Mo5', 'Mo6', 'Mo7', 'Mo8', 'Mo9', 'Mo10', 'Mo11', 'Mo12'];
-    var4.short = var5;
-    var5 = ['Month1', 'Month2', 'Month3', 'Month4', 'Month5', 'Month6', 'Month7', 'Month8', 'Month9', 'Month10', 'Month11', 'Month12'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.dangi = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'];
-    var4.narrow = var5;
-    var5 = ['Meskerem', 'Tekemt', 'Hedar', 'Tahsas', 'Ter', 'Yekatit', 'Megabit', 'Miazia', 'Genbot', 'Sene', 'Hamle', 'Nehasse', 'Pagumen'];
-    var4.short = var5;
-    var5 = ['Meskerem', 'Tekemt', 'Hedar', 'Tahsas', 'Ter', 'Yekatit', 'Megabit', 'Miazia', 'Genbot', 'Sene', 'Hamle', 'Nehasse', 'Pagumen'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['ERA0', 'ERA1'];
-    var4.narrow = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.short = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.ethiopic = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'];
-    var4.narrow = var5;
-    var5 = ['Meskerem', 'Tekemt', 'Hedar', 'Tahsas', 'Ter', 'Yekatit', 'Megabit', 'Miazia', 'Genbot', 'Sene', 'Hamle', 'Nehasse', 'Pagumen'];
-    var4.short = var5;
-    var5 = ['Meskerem', 'Tekemt', 'Hedar', 'Tahsas', 'Ter', 'Yekatit', 'Megabit', 'Miazia', 'Genbot', 'Sene', 'Hamle', 'Nehasse', 'Pagumen'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['ERA0'];
-    var4.narrow = var5;
-    var5 = ['ERA0'];
-    var4.short = var5;
-    var5 = ['ERA0'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.ethioaa = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['M01', 'M02', 'M03', 'M04', 'M05', 'M06', 'M07', 'M08', 'M09', 'M10', 'M11', 'M12'];
-    var4.short = var5;
-    var5 = ['M01', 'M02', 'M03', 'M04', 'M05', 'M06', 'M07', 'M08', 'M09', 'M10', 'M11', 'M12'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['ERA0', 'ERA1'];
-    var4.narrow = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.short = var5;
-    var5 = ['ERA0', 'ERA1'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.generic = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-    var4.narrow = var5;
-    var5 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var4.short = var5;
-    var5 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['B', 'A', 'BCE', 'CE'];
-    var4.narrow = var5;
-    var5 = ['BC', 'AD', 'BCE', 'CE'];
-    var4.short = var5;
-    var5 = ['Before Christ', 'Anno Domini', 'Before Common Era', 'Common Era'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.gregory = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '7'];
-    var4.narrow = var5;
-    var5 = ['Tishri', 'Heshvan', 'Kislev', 'Tevet', 'Shevat', 'Adar I', 'Adar', 'Nisan', 'Iyar', 'Sivan', 'Tamuz', 'Av', 'Elul', 'Adar II'];
-    var4.short = var5;
-    var5 = ['Tishri', 'Heshvan', 'Kislev', 'Tevet', 'Shevat', 'Adar I', 'Adar', 'Nisan', 'Iyar', 'Sivan', 'Tamuz', 'Av', 'Elul', 'Adar II'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['AM'];
-    var4.narrow = var5;
-    var5 = ['AM'];
-    var4.short = var5;
-    var5 = ['AM'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.hebrew = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Chaitra', 'Vaisakha', 'Jyaistha', 'Asadha', 'Sravana', 'Bhadra', 'Asvina', 'Kartika', 'Agrahayana', 'Pausa', 'Magha', 'Phalguna'];
-    var4.short = var5;
-    var5 = ['Chaitra', 'Vaisakha', 'Jyaistha', 'Asadha', 'Sravana', 'Bhadra', 'Asvina', 'Kartika', 'Agrahayana', 'Pausa', 'Magha', 'Phalguna'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['Saka'];
-    var4.narrow = var5;
-    var5 = ['Saka'];
-    var4.short = var5;
-    var5 = ['Saka'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.indian = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Muh.', 'Saf.', 'Rab. I', 'Rab. II', 'Jum. I', 'Jum. II', 'Raj.', 'Sha.', 'Ram.', 'Shaw.', 'Dhuʻl-Q.', 'Dhuʻl-H.'];
-    var4.short = var5;
-    var5 = ['Muharram', 'Safar', 'Rabiʻ I', 'Rabiʻ II', 'Jumada I', 'Jumada II', 'Rajab', 'Shaʻban', 'Ramadan', 'Shawwal', 'Dhuʻl-Qiʻdah', 'Dhuʻl-Hijjah'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['AH'];
-    var4.narrow = var5;
-    var5 = ['AH'];
-    var4.short = var5;
-    var5 = ['AH'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.islamic = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Muh.', 'Saf.', 'Rab. I', 'Rab. II', 'Jum. I', 'Jum. II', 'Raj.', 'Sha.', 'Ram.', 'Shaw.', 'Dhuʻl-Q.', 'Dhuʻl-H.'];
-    var4.short = var5;
-    var5 = ['Muharram', 'Safar', 'Rabiʻ I', 'Rabiʻ II', 'Jumada I', 'Jumada II', 'Rajab', 'Shaʻban', 'Ramadan', 'Shawwal', 'Dhuʻl-Qiʻdah', 'Dhuʻl-Hijjah'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['AH'];
-    var4.narrow = var5;
-    var5 = ['AH'];
-    var4.short = var5;
-    var5 = ['AH'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.islamicc = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-    var4.narrow = var5;
-    var5 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var4.short = var5;
-    var5 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['Taika (645-650)', 'Hakuchi (650-671)', 'Hakuhō (672-686)', 'Shuchō (686-701)', 'Taihō (701-704)', 'Keiun (704-708)', 'Wadō (708-715)', 'Reiki (715-717)', 'Yōrō (717-724)', 'Jinki (724-729)', 'Tempyō (729-749)', 'Tempyō-kampō (749-749)', 'Tempyō-shōhō (749-757)', 'Tempyō-hōji (757-765)', 'Temphō-jingo (765-767)', 'Jingo-keiun (767-770)', 'Hōki (770-780)', 'Ten-ō (781-782)', 'Enryaku (782-806)', 'Daidō (806-810)', 'Kōnin (810-824)', 'Tenchō (824-834)', 'Jōwa (834-848)', 'Kajō (848-851)', 'Ninju (851-854)', 'Saiko (854-857)', 'Tennan (857-859)', 'Jōgan (859-877)', 'Genkei (877-885)', 'Ninna (885-889)', 'Kampyō (889-898)', 'Shōtai (898-901)', 'Engi (901-923)', 'Enchō (923-931)', 'Shōhei (931-938)', 'Tengyō (938-947)', 'Tenryaku (947-957)', 'Tentoku (957-961)', 'Ōwa (961-964)', 'Kōhō (964-968)', 'Anna (968-970)', 'Tenroku (970-973)', 'Ten-en (973-976)', 'Jōgen (976-978)', 'Tengen (978-983)', 'Eikan (983-985)', 'Kanna (985-987)', 'Ei-en (987-989)', 'Eiso (989-990)', 'Shōryaku (990-995)', 'Chōtoku (995-999)', 'Chōhō (999-1004)', 'Kankō (1004-1012)', 'Chōwa (1012-1017)', 'Kannin (1017-1021)', 'Jian (1021-1024)', 'Manju (1024-1028)', 'Chōgen (1028-1037)', 'Chōryaku (1037-1040)', 'Chōkyū (1040-1044)', 'Kantoku (1044-1046)', 'Eishō (1046-1053)', 'Tengi (1053-1058)', 'Kōhei (1058-1065)', 'Jiryaku (1065-1069)', 'Enkyū (1069-1074)', 'Shōho (1074-1077)', 'Shōryaku (1077-1081)', 'Eiho (1081-1084)', 'Ōtoku (1084-1087)', 'Kanji (1087-1094)', 'Kaho (1094-1096)', 'Eichō (1096-1097)', 'Shōtoku (1097-1099)', 'Kōwa (1099-1104)', 'Chōji (1104-1106)', 'Kashō (1106-1108)', 'Tennin (1108-1110)', 'Ten-ei (1110-1113)', 'Eikyū (1113-1118)', 'Gen-ei (1118-1120)', 'Hoan (1120-1124)', 'Tenji (1124-1126)', 'Daiji (1126-1131)', 'Tenshō (1131-1132)', 'Chōshō (1132-1135)', 'Hoen (1135-1141)', 'Eiji (1141-1142)', 'Kōji (1142-1144)', 'Tenyō (1144-1145)', 'Kyūan (1145-1151)', 'Ninpei (1151-1154)', 'Kyūju (1154-1156)', 'Hogen (1156-1159)', 'Heiji (1159-1160)', 'Eiryaku (1160-1161)', 'Ōho (1161-1163)', 'Chōkan (1163-1165)', 'Eiman (1165-1166)', 'Nin-an (1166-1169)', 'Kaō (1169-1171)', 'Shōan (1171-1175)', 'Angen (1175-1177)', 'Jishō (1177-1181)', 'Yōwa (1181-1182)', 'Juei (1182-1184)', 'Genryuku (1184-1185)', 'Bunji (1185-1190)', 'Kenkyū (1190-1199)', 'Shōji (1199-1201)', 'Kennin (1201-1204)', 'Genkyū (1204-1206)', 'Ken-ei (1206-1207)', 'Shōgen (1207-1211)', 'Kenryaku (1211-1213)', 'Kenpō (1213-1219)', 'Shōkyū (1219-1222)', 'Jōō (1222-1224)', 'Gennin (1224-1225)', 'Karoku (1225-1227)', 'Antei (1227-1229)', 'Kanki (1229-1232)', 'Jōei (1232-1233)', 'Tempuku (1233-1234)', 'Bunryaku (1234-1235)', 'Katei (1235-1238)', 'Ryakunin (1238-1239)', 'En-ō (1239-1240)', 'Ninji (1240-1243)', 'Kangen (1243-1247)', 'Hōji (1247-1249)', 'Kenchō (1249-1256)', 'Kōgen (1256-1257)', 'Shōka (1257-1259)', 'Shōgen (1259-1260)', 'Bun-ō (1260-1261)', 'Kōchō (1261-1264)', 'Bun-ei (1264-1275)', 'Kenji (1275-1278)', 'Kōan (1278-1288)', 'Shōō (1288-1293)', 'Einin (1293-1299)', 'Shōan (1299-1302)', 'Kengen (1302-1303)', 'Kagen (1303-1306)', 'Tokuji (1306-1308)', 'Enkei (1308-1311)', 'Ōchō (1311-1312)', 'Shōwa (1312-1317)', 'Bunpō (1317-1319)', 'Genō (1319-1321)', 'Genkyō (1321-1324)', 'Shōchū (1324-1326)', 'Kareki (1326-1329)', 'Gentoku (1329-1331)', 'Genkō (1331-1334)', 'Kemmu (1334-1336)', 'Engen (1336-1340)', 'Kōkoku (1340-1346)', 'Shōhei (1346-1370)', 'Kentoku (1370-1372)', 'Bunchũ (1372-1375)', 'Tenju (1375-1379)', 'Kōryaku (1379-1381)', 'Kōwa (1381-1384)', 'Genchũ (1384-1392)', 'Meitoku (1384-1387)', 'Kakei (1387-1389)', 'Kōō (1389-1390)', 'Meitoku (1390-1394)', 'Ōei (1394-1428)', 'Shōchō (1428-1429)', 'Eikyō (1429-1441)', 'Kakitsu (1441-1444)', 'Bun-an (1444-1449)', 'Hōtoku (1449-1452)', 'Kyōtoku (1452-1455)', 'Kōshō (1455-1457)', 'Chōroku (1457-1460)', 'Kanshō (1460-1466)', 'Bunshō (1466-1467)', 'Ōnin (1467-1469)', 'Bunmei (1469-1487)', 'Chōkyō (1487-1489)', 'Entoku (1489-1492)', 'Meiō (1492-1501)', 'Bunki (1501-1504)', 'Eishō (1504-1521)', 'Taiei (1521-1528)', 'Kyōroku (1528-1532)', 'Tenmon (1532-1555)', 'Kōji (1555-1558)', 'Eiroku (1558-1570)', 'Genki (1570-1573)', 'Tenshō (1573-1592)', 'Bunroku (1592-1596)', 'Keichō (1596-1615)', 'Genwa (1615-1624)', 'Kan-ei (1624-1644)', 'Shōho (1644-1648)', 'Keian (1648-1652)', 'Shōō (1652-1655)', 'Meiryaku (1655-1658)', 'Manji (1658-1661)', 'Kanbun (1661-1673)', 'Enpō (1673-1681)', 'Tenwa (1681-1684)', 'Jōkyō (1684-1688)', 'Genroku (1688-1704)', 'Hōei (1704-1711)', 'Shōtoku (1711-1716)', 'Kyōhō (1716-1736)', 'Genbun (1736-1741)', 'Kanpō (1741-1744)', 'Enkyō (1744-1748)', 'Kan-en (1748-1751)', 'Hōryaku (1751-1764)', 'Meiwa (1764-1772)', 'An-ei (1772-1781)', 'Tenmei (1781-1789)', 'Kansei (1789-1801)', 'Kyōwa (1801-1804)', 'Bunka (1804-1818)', 'Bunsei (1818-1830)', 'Tenpō (1830-1844)', 'Kōka (1844-1848)', 'Kaei (1848-1854)', 'Ansei (1854-1860)', 'Man-en (1860-1861)', 'Bunkyū (1861-1864)', 'Genji (1864-1865)', 'Keiō (1865-1868)', 'M', 'T', 'S', 'H'];
-    var4.narrow = var5;
-    var5 = ['Taika (645-650)', 'Hakuchi (650-671)', 'Hakuhō (672-686)', 'Shuchō (686-701)', 'Taihō (701-704)', 'Keiun (704-708)', 'Wadō (708-715)', 'Reiki (715-717)', 'Yōrō (717-724)', 'Jinki (724-729)', 'Tempyō (729-749)', 'Tempyō-kampō (749-749)', 'Tempyō-shōhō (749-757)', 'Tempyō-hōji (757-765)', 'Temphō-jingo (765-767)', 'Jingo-keiun (767-770)', 'Hōki (770-780)', 'Ten-ō (781-782)', 'Enryaku (782-806)', 'Daidō (806-810)', 'Kōnin (810-824)', 'Tenchō (824-834)', 'Jōwa (834-848)', 'Kajō (848-851)', 'Ninju (851-854)', 'Saiko (854-857)', 'Tennan (857-859)', 'Jōgan (859-877)', 'Genkei (877-885)', 'Ninna (885-889)', 'Kampyō (889-898)', 'Shōtai (898-901)', 'Engi (901-923)', 'Enchō (923-931)', 'Shōhei (931-938)', 'Tengyō (938-947)', 'Tenryaku (947-957)', 'Tentoku (957-961)', 'Ōwa (961-964)', 'Kōhō (964-968)', 'Anna (968-970)', 'Tenroku (970-973)', 'Ten-en (973-976)', 'Jōgen (976-978)', 'Tengen (978-983)', 'Eikan (983-985)', 'Kanna (985-987)', 'Ei-en (987-989)', 'Eiso (989-990)', 'Shōryaku (990-995)', 'Chōtoku (995-999)', 'Chōhō (999-1004)', 'Kankō (1004-1012)', 'Chōwa (1012-1017)', 'Kannin (1017-1021)', 'Jian (1021-1024)', 'Manju (1024-1028)', 'Chōgen (1028-1037)', 'Chōryaku (1037-1040)', 'Chōkyū (1040-1044)', 'Kantoku (1044-1046)', 'Eishō (1046-1053)', 'Tengi (1053-1058)', 'Kōhei (1058-1065)', 'Jiryaku (1065-1069)', 'Enkyū (1069-1074)', 'Shōho (1074-1077)', 'Shōryaku (1077-1081)', 'Eiho (1081-1084)', 'Ōtoku (1084-1087)', 'Kanji (1087-1094)', 'Kaho (1094-1096)', 'Eichō (1096-1097)', 'Shōtoku (1097-1099)', 'Kōwa (1099-1104)', 'Chōji (1104-1106)', 'Kashō (1106-1108)', 'Tennin (1108-1110)', 'Ten-ei (1110-1113)', 'Eikyū (1113-1118)', 'Gen-ei (1118-1120)', 'Hoan (1120-1124)', 'Tenji (1124-1126)', 'Daiji (1126-1131)', 'Tenshō (1131-1132)', 'Chōshō (1132-1135)', 'Hoen (1135-1141)', 'Eiji (1141-1142)', 'Kōji (1142-1144)', 'Tenyō (1144-1145)', 'Kyūan (1145-1151)', 'Ninpei (1151-1154)', 'Kyūju (1154-1156)', 'Hogen (1156-1159)', 'Heiji (1159-1160)', 'Eiryaku (1160-1161)', 'Ōho (1161-1163)', 'Chōkan (1163-1165)', 'Eiman (1165-1166)', 'Nin-an (1166-1169)', 'Kaō (1169-1171)', 'Shōan (1171-1175)', 'Angen (1175-1177)', 'Jishō (1177-1181)', 'Yōwa (1181-1182)', 'Juei (1182-1184)', 'Genryuku (1184-1185)', 'Bunji (1185-1190)', 'Kenkyū (1190-1199)', 'Shōji (1199-1201)', 'Kennin (1201-1204)', 'Genkyū (1204-1206)', 'Ken-ei (1206-1207)', 'Shōgen (1207-1211)', 'Kenryaku (1211-1213)', 'Kenpō (1213-1219)', 'Shōkyū (1219-1222)', 'Jōō (1222-1224)', 'Gennin (1224-1225)', 'Karoku (1225-1227)', 'Antei (1227-1229)', 'Kanki (1229-1232)', 'Jōei (1232-1233)', 'Tempuku (1233-1234)', 'Bunryaku (1234-1235)', 'Katei (1235-1238)', 'Ryakunin (1238-1239)', 'En-ō (1239-1240)', 'Ninji (1240-1243)', 'Kangen (1243-1247)', 'Hōji (1247-1249)', 'Kenchō (1249-1256)', 'Kōgen (1256-1257)', 'Shōka (1257-1259)', 'Shōgen (1259-1260)', 'Bun-ō (1260-1261)', 'Kōchō (1261-1264)', 'Bun-ei (1264-1275)', 'Kenji (1275-1278)', 'Kōan (1278-1288)', 'Shōō (1288-1293)', 'Einin (1293-1299)', 'Shōan (1299-1302)', 'Kengen (1302-1303)', 'Kagen (1303-1306)', 'Tokuji (1306-1308)', 'Enkei (1308-1311)', 'Ōchō (1311-1312)', 'Shōwa (1312-1317)', 'Bunpō (1317-1319)', 'Genō (1319-1321)', 'Genkyō (1321-1324)', 'Shōchū (1324-1326)', 'Kareki (1326-1329)', 'Gentoku (1329-1331)', 'Genkō (1331-1334)', 'Kemmu (1334-1336)', 'Engen (1336-1340)', 'Kōkoku (1340-1346)', 'Shōhei (1346-1370)', 'Kentoku (1370-1372)', 'Bunchū (1372-1375)', 'Tenju (1375-1379)', 'Kōryaku (1379-1381)', 'Kōwa (1381-1384)', 'Genchū (1384-1392)', 'Meitoku (1384-1387)', 'Kakei (1387-1389)', 'Kōō (1389-1390)', 'Meitoku (1390-1394)', 'Ōei (1394-1428)', 'Shōchō (1428-1429)', 'Eikyō (1429-1441)', 'Kakitsu (1441-1444)', 'Bun-an (1444-1449)', 'Hōtoku (1449-1452)', 'Kyōtoku (1452-1455)', 'Kōshō (1455-1457)', 'Chōroku (1457-1460)', 'Kanshō (1460-1466)', 'Bunshō (1466-1467)', 'Ōnin (1467-1469)', 'Bunmei (1469-1487)', 'Chōkyō (1487-1489)', 'Entoku (1489-1492)', 'Meiō (1492-1501)', 'Bunki (1501-1504)', 'Eishō (1504-1521)', 'Taiei (1521-1528)', 'Kyōroku (1528-1532)', 'Tenmon (1532-1555)', 'Kōji (1555-1558)', 'Eiroku (1558-1570)', 'Genki (1570-1573)', 'Tenshō (1573-1592)', 'Bunroku (1592-1596)', 'Keichō (1596-1615)', 'Genwa (1615-1624)', 'Kan-ei (1624-1644)', 'Shōho (1644-1648)', 'Keian (1648-1652)', 'Shōō (1652-1655)', 'Meiryaku (1655-1658)', 'Manji (1658-1661)', 'Kanbun (1661-1673)', 'Enpō (1673-1681)', 'Tenwa (1681-1684)', 'Jōkyō (1684-1688)', 'Genroku (1688-1704)', 'Hōei (1704-1711)', 'Shōtoku (1711-1716)', 'Kyōhō (1716-1736)', 'Genbun (1736-1741)', 'Kanpō (1741-1744)', 'Enkyō (1744-1748)', 'Kan-en (1748-1751)', 'Hōryaku (1751-1764)', 'Meiwa (1764-1772)', 'An-ei (1772-1781)', 'Tenmei (1781-1789)', 'Kansei (1789-1801)', 'Kyōwa (1801-1804)', 'Bunka (1804-1818)', 'Bunsei (1818-1830)', 'Tenpō (1830-1844)', 'Kōka (1844-1848)', 'Kaei (1848-1854)', 'Ansei (1854-1860)', 'Man-en (1860-1861)', 'Bunkyū (1861-1864)', 'Genji (1864-1865)', 'Keiō (1865-1868)', 'Meiji', 'Taishō', 'Shōwa', 'Heisei'];
-    var4.short = var5;
-    var5 = ['Taika (645-650)', 'Hakuchi (650-671)', 'Hakuhō (672-686)', 'Shuchō (686-701)', 'Taihō (701-704)', 'Keiun (704-708)', 'Wadō (708-715)', 'Reiki (715-717)', 'Yōrō (717-724)', 'Jinki (724-729)', 'Tempyō (729-749)', 'Tempyō-kampō (749-749)', 'Tempyō-shōhō (749-757)', 'Tempyō-hōji (757-765)', 'Temphō-jingo (765-767)', 'Jingo-keiun (767-770)', 'Hōki (770-780)', 'Ten-ō (781-782)', 'Enryaku (782-806)', 'Daidō (806-810)', 'Kōnin (810-824)', 'Tenchō (824-834)', 'Jōwa (834-848)', 'Kajō (848-851)', 'Ninju (851-854)', 'Saiko (854-857)', 'Tennan (857-859)', 'Jōgan (859-877)', 'Genkei (877-885)', 'Ninna (885-889)', 'Kampyō (889-898)', 'Shōtai (898-901)', 'Engi (901-923)', 'Enchō (923-931)', 'Shōhei (931-938)', 'Tengyō (938-947)', 'Tenryaku (947-957)', 'Tentoku (957-961)', 'Ōwa (961-964)', 'Kōhō (964-968)', 'Anna (968-970)', 'Tenroku (970-973)', 'Ten-en (973-976)', 'Jōgen (976-978)', 'Tengen (978-983)', 'Eikan (983-985)', 'Kanna (985-987)', 'Ei-en (987-989)', 'Eiso (989-990)', 'Shōryaku (990-995)', 'Chōtoku (995-999)', 'Chōhō (999-1004)', 'Kankō (1004-1012)', 'Chōwa (1012-1017)', 'Kannin (1017-1021)', 'Jian (1021-1024)', 'Manju (1024-1028)', 'Chōgen (1028-1037)', 'Chōryaku (1037-1040)', 'Chōkyū (1040-1044)', 'Kantoku (1044-1046)', 'Eishō (1046-1053)', 'Tengi (1053-1058)', 'Kōhei (1058-1065)', 'Jiryaku (1065-1069)', 'Enkyū (1069-1074)', 'Shōho (1074-1077)', 'Shōryaku (1077-1081)', 'Eiho (1081-1084)', 'Ōtoku (1084-1087)', 'Kanji (1087-1094)', 'Kaho (1094-1096)', 'Eichō (1096-1097)', 'Shōtoku (1097-1099)', 'Kōwa (1099-1104)', 'Chōji (1104-1106)', 'Kashō (1106-1108)', 'Tennin (1108-1110)', 'Ten-ei (1110-1113)', 'Eikyū (1113-1118)', 'Gen-ei (1118-1120)', 'Hoan (1120-1124)', 'Tenji (1124-1126)', 'Daiji (1126-1131)', 'Tenshō (1131-1132)', 'Chōshō (1132-1135)', 'Hoen (1135-1141)', 'Eiji (1141-1142)', 'Kōji (1142-1144)', 'Tenyō (1144-1145)', 'Kyūan (1145-1151)', 'Ninpei (1151-1154)', 'Kyūju (1154-1156)', 'Hogen (1156-1159)', 'Heiji (1159-1160)', 'Eiryaku (1160-1161)', 'Ōho (1161-1163)', 'Chōkan (1163-1165)', 'Eiman (1165-1166)', 'Nin-an (1166-1169)', 'Kaō (1169-1171)', 'Shōan (1171-1175)', 'Angen (1175-1177)', 'Jishō (1177-1181)', 'Yōwa (1181-1182)', 'Juei (1182-1184)', 'Genryuku (1184-1185)', 'Bunji (1185-1190)', 'Kenkyū (1190-1199)', 'Shōji (1199-1201)', 'Kennin (1201-1204)', 'Genkyū (1204-1206)', 'Ken-ei (1206-1207)', 'Shōgen (1207-1211)', 'Kenryaku (1211-1213)', 'Kenpō (1213-1219)', 'Shōkyū (1219-1222)', 'Jōō (1222-1224)', 'Gennin (1224-1225)', 'Karoku (1225-1227)', 'Antei (1227-1229)', 'Kanki (1229-1232)', 'Jōei (1232-1233)', 'Tempuku (1233-1234)', 'Bunryaku (1234-1235)', 'Katei (1235-1238)', 'Ryakunin (1238-1239)', 'En-ō (1239-1240)', 'Ninji (1240-1243)', 'Kangen (1243-1247)', 'Hōji (1247-1249)', 'Kenchō (1249-1256)', 'Kōgen (1256-1257)', 'Shōka (1257-1259)', 'Shōgen (1259-1260)', 'Bun-ō (1260-1261)', 'Kōchō (1261-1264)', 'Bun-ei (1264-1275)', 'Kenji (1275-1278)', 'Kōan (1278-1288)', 'Shōō (1288-1293)', 'Einin (1293-1299)', 'Shōan (1299-1302)', 'Kengen (1302-1303)', 'Kagen (1303-1306)', 'Tokuji (1306-1308)', 'Enkei (1308-1311)', 'Ōchō (1311-1312)', 'Shōwa (1312-1317)', 'Bunpō (1317-1319)', 'Genō (1319-1321)', 'Genkyō (1321-1324)', 'Shōchū (1324-1326)', 'Kareki (1326-1329)', 'Gentoku (1329-1331)', 'Genkō (1331-1334)', 'Kemmu (1334-1336)', 'Engen (1336-1340)', 'Kōkoku (1340-1346)', 'Shōhei (1346-1370)', 'Kentoku (1370-1372)', 'Bunchū (1372-1375)', 'Tenju (1375-1379)', 'Kōryaku (1379-1381)', 'Kōwa (1381-1384)', 'Genchū (1384-1392)', 'Meitoku (1384-1387)', 'Kakei (1387-1389)', 'Kōō (1389-1390)', 'Meitoku (1390-1394)', 'Ōei (1394-1428)', 'Shōchō (1428-1429)', 'Eikyō (1429-1441)', 'Kakitsu (1441-1444)', 'Bun-an (1444-1449)', 'Hōtoku (1449-1452)', 'Kyōtoku (1452-1455)', 'Kōshō (1455-1457)', 'Chōroku (1457-1460)', 'Kanshō (1460-1466)', 'Bunshō (1466-1467)', 'Ōnin (1467-1469)', 'Bunmei (1469-1487)', 'Chōkyō (1487-1489)', 'Entoku (1489-1492)', 'Meiō (1492-1501)', 'Bunki (1501-1504)', 'Eishō (1504-1521)', 'Taiei (1521-1528)', 'Kyōroku (1528-1532)', 'Tenmon (1532-1555)', 'Kōji (1555-1558)', 'Eiroku (1558-1570)', 'Genki (1570-1573)', 'Tenshō (1573-1592)', 'Bunroku (1592-1596)', 'Keichō (1596-1615)', 'Genwa (1615-1624)', 'Kan-ei (1624-1644)', 'Shōho (1644-1648)', 'Keian (1648-1652)', 'Shōō (1652-1655)', 'Meiryaku (1655-1658)', 'Manji (1658-1661)', 'Kanbun (1661-1673)', 'Enpō (1673-1681)', 'Tenwa (1681-1684)', 'Jōkyō (1684-1688)', 'Genroku (1688-1704)', 'Hōei (1704-1711)', 'Shōtoku (1711-1716)', 'Kyōhō (1716-1736)', 'Genbun (1736-1741)', 'Kanpō (1741-1744)', 'Enkyō (1744-1748)', 'Kan-en (1748-1751)', 'Hōryaku (1751-1764)', 'Meiwa (1764-1772)', 'An-ei (1772-1781)', 'Tenmei (1781-1789)', 'Kansei (1789-1801)', 'Kyōwa (1801-1804)', 'Bunka (1804-1818)', 'Bunsei (1818-1830)', 'Tenpō (1830-1844)', 'Kōka (1844-1848)', 'Kaei (1848-1854)', 'Ansei (1854-1860)', 'Man-en (1860-1861)', 'Bunkyū (1861-1864)', 'Genji (1864-1865)', 'Keiō (1865-1868)', 'Meiji', 'Taishō', 'Shōwa', 'Heisei'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.japanese = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-    var4.narrow = var5;
-    var5 = ['Farvardin', 'Ordibehesht', 'Khordad', 'Tir', 'Mordad', 'Shahrivar', 'Mehr', 'Aban', 'Azar', 'Dey', 'Bahman', 'Esfand'];
-    var4.short = var5;
-    var5 = ['Farvardin', 'Ordibehesht', 'Khordad', 'Tir', 'Mordad', 'Shahrivar', 'Mehr', 'Aban', 'Azar', 'Dey', 'Bahman', 'Esfand'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['AP'];
-    var4.narrow = var5;
-    var5 = ['AP'];
-    var4.short = var5;
-    var5 = ['AP'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.persian = var3;
-    var3 = {};
-    var4 = {};
-    var5 = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
-    var4.narrow = var5;
-    var5 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var4.short = var5;
-    var5 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var4.long = var5;
-    var3.months = var4;
-    var4 = {};
-    var5 = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
-    var4.narrow = var5;
-    var5 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var4.short = var5;
-    var5 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var4.long = var5;
-    var3.days = var4;
-    var4 = {};
-    var5 = ['Before R.O.C.', 'Minguo'];
-    var4.narrow = var5;
-    var5 = ['Before R.O.C.', 'Minguo'];
-    var4.short = var5;
-    var5 = ['Before R.O.C.', 'Minguo'];
-    var4.long = var5;
-    var3.eras = var4;
-    var4 = {
-        'am': 'AM',
-        'pm': 'PM'
-    };
-    var3.dayPeriods = var4;
-    var2.roc = var3;
-    var0.calendars = var2;
-    var1.date = var0;
-    var0 = {};
-    var2 = ['latn'];
-    var0.nu = var2;
-    var2 = {};
-    var3 = {
-        'positivePattern': '{number}',
-        'negativePattern': '-{number}'
-    };
-    var2.decimal = var3;
-    var3 = {
-        'positivePattern': '{currency}{number}',
-        'negativePattern': '-{currency}{number}'
-    };
-    var2.currency = var3;
-    var3 = {
-        'positivePattern': '{number}%',
-        'negativePattern': '-{number}%'
-    };
-    var2.percent = var3;
-    var0.patterns = var2;
-    var2 = {};
-    var3 = {
-        'decimal': '.',
-        'group': ',',
-        'nan': 'NaN',
-        'percent': '%',
-        'infinity': '∞'
-    };
-    var2.latn = var3;
-    var0.symbols = var2;
-    var2 = {
-        'AUD': 'A$',
-        'BRL': 'R$',
-        'CAD': 'CA$',
-        'CNY': 'CN¥',
-        'EUR': '€',
-        'GBP': '£',
-        'HKD': 'HK$',
-        'ILS': '₪',
-        'INR': '₹',
-        'JPY': '¥',
-        'KRW': '₩',
-        'MXN': 'MX$',
-        'NZD': 'NZ$',
-        'TWD': 'NT$',
-        'USD': '$',
-        'VND': '₫',
-        'XAF': 'FCFA',
-        'XCD': 'EC$',
-        'XOF': 'CFA',
-        'XPF': 'CFPF'
-    };
-    var0.currencies = var2;
-    var1.number = var0;
-    var0 = module;
-    var0.exports = var1;
+    var _closure1_slot2 = var2;
+    var0 = arg5;
+    var0.default = var2;
+    var3 = 0;
+    var6 = var5[var3];
     var0 = undefined;
+    var9 = var4.bind(var0)(var6);
+    var8 = var9.defineProperty;
+    var7 = {};
+    var6 = true;
+    var7.enumerable = var6;
+    var6 = {};
+    var10 = {};
+    var11 = {};
+    var12 = 'currency';
+    var11.style = var12;
+    var10.currency = var11;
+    var11 = {};
+    var12 = 'percent';
+    var11.style = var12;
+    var10.percent = var11;
+    var6.number = var10;
+    var10 = {};
+    var11 = {
+        'month': 'numeric',
+        'day': 'numeric',
+        'year': '2-digit'
+    };
+    var10.short = var11;
+    var11 = {
+        'month': 'short',
+        'day': 'numeric',
+        'year': 'numeric'
+    };
+    var10.medium = var11;
+    var11 = {
+        'month': 'long',
+        'day': 'numeric',
+        'year': 'numeric'
+    };
+    var10.long = var11;
+    var11 = {
+        'weekday': 'long',
+        'month': 'long',
+        'day': 'numeric',
+        'year': 'numeric'
+    };
+    var10.full = var11;
+    var6.date = var10;
+    var10 = {};
+    var11 = {
+        'hour': 'numeric',
+        'minute': 'numeric'
+    };
+    var10.short = var11;
+    var11 = {
+        'hour': 'numeric',
+        'minute': 'numeric',
+        'second': 'numeric'
+    };
+    var10.medium = var11;
+    var11 = {
+        'hour': 'numeric',
+        'minute': 'numeric',
+        'second': 'numeric',
+        'timeZoneName': 'short'
+    };
+    var10.long = var11;
+    var11 = {
+        'hour': 'numeric',
+        'minute': 'numeric',
+        'second': 'numeric',
+        'timeZoneName': 'short'
+    };
+    var10.full = var11;
+    var6.time = var10;
+    var7.value = var6;
+    var6 = 'formats';
+    var6 = var8.bind(var9)(var2, var6, var7);
+    var6 = var5[var3];
+    var9 = var4.bind(var0)(var6);
+    var8 = var9.defineProperty;
+    var7 = {};
+    var6 = var5[var3];
+    var11 = var4.bind(var0)(var6);
+    var10 = var11.objCreate;
+    var6 = null;
+    var6 = var10.bind(var11)(var6);
+    var7.value = var6;
+    var6 = '__localeData__';
+    var6 = var8.bind(var9)(var2, var6, var7);
+    var6 = var5[var3];
+    var9 = var4.bind(var0)(var6);
+    var8 = var9.defineProperty;
+    var7 = {};
+    var6 = function arg0() {
+        _fun112660: for (var _fun112660_ip = 0;;) switch (_fun112660_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun112660_ip = 15;
+                    continue _fun112660
+                }
+            case 6:
+                var0 = var2.locale;
+                if (var0) {
+                    _fun112660_ip = 51;
+                    continue _fun112660
+                }
+            case 15:
+                var0 = global;
+                var3 = var0.Error;
+                var0 = var3.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var4 = 'Locale data provided to IntlMessageFormat is missing a `locale` property';
+                var5 = var1;
+                var0 = new var5[var3](var4, var3);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+            case 51:
+                var0 = _closure1_slot2;
+                var1 = var0.__localeData__;
+                var3 = var2.locale;
+                var0 = var3.toLowerCase;
+                var0 = var0.bind(var3)();
+                var1[var0] = var2;
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var7.value = var6;
+    var6 = '__addLocaleData';
+    var6 = var8.bind(var9)(var2, var6, var7);
+    var6 = var5[var3];
+    var9 = var4.bind(var0)(var6);
+    var8 = var9.defineProperty;
+    var7 = {};
+    var6 = 1;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.default;
+    var6 = var6.parse;
+    var7.value = var6;
+    var6 = '__parse';
+    var6 = var8.bind(var9)(var2, var6, var7);
+    var3 = var5[var3];
+    var6 = var4.bind(var0)(var3);
+    var5 = var6.defineProperty;
+    var4 = {
+        'enumerable': true,
+        'writable': true
+    };
+    var4.value = var0;
+    var3 = 'defaultLocale';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var4 = var2.prototype;
+    var3 = function() { // Environment: var1
+        var0 = {};
+        var1 = this;
+        var1 = var1._locale;
+        var0.locale = var1;
+        return var0;
+    };
+    var4.resolvedOptions = var3;
+    var4 = var2.prototype;
+    var3 = function(arg0, arg1, arg2, arg3) { // Environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var4 = var0.default;
+        var0 = var4.prototype;
+        var1 = Object.create(var0, {
+            constructor: {
+                value: var4
+            }
+        });
+        var7 = arg1;
+        var6 = arg2;
+        var5 = arg3;
+        var8 = var1;
+        var0 = new var8[var4](var7, var6, var5, var4);
+        var2 = var0 instanceof Object ? var0 : var1;
+        var1 = var2.compile;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var4._compilePattern = var3;
+    var4 = var2.prototype;
+    var3 = function(arg0) { // Environment: var1
+        _fun112663: for (var _fun112663_ip = 0;;) switch (_fun112663_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = _closure1_slot2;
+                var3 = var0.__localeData__;
+                var0 = var2.toLowerCase;
+                var0 = var0.bind(var2)();
+                var1 = var3[var0];
+                if (!var1) {
+                    _fun112663_ip = 77;
+                    continue _fun112663
+                }
+            case 33:
+                var4 = var1.pluralRuleFunction;
+                var0 = var1;
+                if (var4) {
+                    _fun112663_ip = 117;
+                    continue _fun112663
+                }
+            case 45:
+                var1 = var0.parentLocale;
+                if (!var1) {
+                    _fun112663_ip = 74;
+                    continue _fun112663
+                }
+            case 54:
+                var5 = var0.parentLocale;
+                var4 = var5.toLowerCase;
+                var4 = var4.bind(var5)();
+                var1 = var3[var4];
+            case 74:
+                if (var1) {
+                    _fun112663_ip = 33;
+                    continue _fun112663
+                }
+            case 77:
+                var1 = global;
+                var3 = var1.Error;
+                var1 = 'Locale data added to IntlMessageFormat is missing a `pluralRuleFunction` for :';
+                var6 = var1 + var2;
+                var2 = var3.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var7 = var2;
+                var1 = new var7[var3](var6, var5);
+                var1 = var1 instanceof Object ? var1 : var2;
+                throw var1;
+            case 117:
+                var0 = var0.pluralRuleFunction;
+                return var0;
+        }
+    };
+    var4._findPluralRuleFunction = var3;
+    var4 = var2.prototype;
+    var3 = function(arg0, arg1) { // Environment: var1
+        _fun112664: for (var _fun112664_ip = 0;;) switch (_fun112664_ip) {
+            case 0:
+                var13 = arg0;
+                var12 = arg1;
+                var11 = this;
+                var10 = var13.length;
+                var9 = 0;
+                var14 = var9 < var10;
+                var8 = undefined;
+                var1 = '';
+                var7 = 1;
+                var5 = 3;
+                var4 = 'string';
+                var3 = undefined;
+                var2 = undefined;
+                var0 = var1;
+                if (!var14) {
+                    _fun112664_ip = 241;
+                    continue _fun112664
+                }
+            case 52:
+                var19 = var13[var9];
+                var14 = typeof var19;
+                if (!(var4 === var14)) {
+                    _fun112664_ip = 72;
+                    continue _fun112664
+                }
+            case 63:
+                var14 = var1 + var19;
+                _fun112664_ip = 224;
+                continue _fun112664;
+            case 72:
+                var17 = var19.id;
+                if (!var12) {
+                    _fun112664_ip = 117;
+                    continue _fun112664
+                }
+            case 80:
+                var16 = _closure1_slot0;
+                var15 = _closure1_slot1;
+                var15 = var15[var5];
+                var15 = var16.bind(var8)(var15);
+                var16 = var15.hop;
+                var15 = var16.call;
+                var15 = var15.bind(var16)(var12, var17);
+                if (var15) {
+                    _fun112664_ip = 157;
+                    continue _fun112664
+                }
+            case 117:
+                var15 = global;
+                var18 = var15.Error;
+                var15 = 'A value must be provided for: ';
+                var21 = var15 + var17;
+                var16 = var18.prototype;
+                var16 = Object.create(var16, {
+                    constructor: {
+                        value: var18
+                    }
+                });
+                var22 = var16;
+                var15 = new var22[var18](var21, var20);
+                var15 = var15 instanceof Object ? var15 : var16;
+                throw var15;
+            case 157:
+                var16 = var12[var17];
+                var15 = var19.options;
+                if (var15) {
+                    _fun112664_ip = 191;
+                    continue _fun112664
+                }
+            case 169:
+                var15 = var19.format;
+                var15 = var15.bind(var19)(var16);
+                var14 = var1 + var15;
+                var3 = var17;
+                var2 = var16;
+                _fun112664_ip = 224;
+                continue _fun112664;
+            case 191:
+                var18 = var11._format;
+                var15 = var19.getOption;
+                var15 = var15.bind(var19)(var16);
+                var15 = var18.bind(var11)(var15, var12);
+                var14 = var1 + var15;
+                var3 = var17;
+                var2 = var16;
+            case 224:
+                var9 = var9 + var7;
+                var1 = var14;
+                var0 = var1;
+                if (var9 < var10) {
+                    _fun112664_ip = 52;
+                    continue _fun112664
+                }
+            case 241:
+                return var0;
+        }
+    };
+    var4._format = var3;
+    var4 = var2.prototype;
+    var3 = function(arg0, arg1) { // Environment: var1
+        _fun112665: for (var _fun112665_ip = 0;;) switch (_fun112665_ip) {
+            case 0:
+                var12 = arg0;
+                var11 = arg1;
+                var0 = {};
+                var9 = var12;
+                var5 = undefined;
+                var3 = 3;
+                var2 = 0;
+                var1 = undefined;
+                for (var6 in var9)
+                    case 34: {
+                        case 46: var14 = var6;
+                        var15 = _closure1_slot0;
+                        var13 = _closure1_slot1;
+                        var13 = var13[var3];
+                        var13 = var15.bind(var5)(var13);
+                        var15 = var13.hop;
+                        var13 = var15.call;
+                        var13 = var13.bind(var15)(var12, var14);
+                        if (!var13) {
+                            _fun112665_ip = 34;
+                            continue _fun112665
+                        }
+                        case 86: var15 = _closure1_slot0;
+                        var13 = _closure1_slot1;
+                        var13 = var13[var2];
+                        var16 = var15.bind(var5)(var13);
+                        var15 = var16.objCreate;
+                        var13 = var12[var14];
+                        var13 = var15.bind(var16)(var13);
+                        var0[var14] = var13;
+                        var15 = var11;
+                        if (!var15) {
+                            _fun112665_ip = 162;
+                            continue _fun112665
+                        }
+                        case 128: var17 = _closure1_slot0;
+                        var16 = _closure1_slot1;
+                        var16 = var16[var3];
+                        var16 = var17.bind(var5)(var16);
+                        var17 = var16.hop;
+                        var16 = var17.call;
+                        var15 = var16.bind(var17)(var11, var14);
+                        case 162: var1 = var13;
+                        if (!var15) {
+                            _fun112665_ip = 34;
+                            continue _fun112665
+                        }
+                        case 171: var16 = _closure1_slot0;
+                        var15 = _closure1_slot1;
+                        var15 = var15[var3];
+                        var16 = var16.bind(var5)(var15);
+                        var15 = var16.extend;
+                        var14 = var11[var14];
+                        var14 = var15.bind(var16)(var13, var14);
+                        var1 = var13;
+                        _fun112665_ip = 34;
+                        continue _fun112665;
+                    }
+            case 212:
+                return var0;
+        }
+    };
+    var4._mergeFormats = var3;
+    var2 = var2.prototype;
+    var1 = function(arg0) { // Environment: var1
+        _fun112666: for (var _fun112666_ip = 0;;) switch (_fun112666_ip) {
+            case 0:
+                var1 = arg0;
+                var2 = 'string';
+                var0 = typeof var1;
+                var3 = var1;
+                if (!(var2 === var0)) {
+                    _fun112666_ip = 28;
+                    continue _fun112666
+                }
+            case 17:
+                var0 = new Array(1);
+                var0[0] = var1;
+                var3 = var0;
+            case 28:
+                if (var3) {
+                    _fun112666_ip = 35;
+                    continue _fun112666
+                }
+            case 31:
+                var3 = new Array(0);
+            case 35:
+                var2 = var3.concat;
+                var0 = _closure1_slot2;
+                var1 = var0.defaultLocale;
+                var5 = var2.bind(var3)(var1);
+                var7 = var0.__localeData__;
+                var6 = var5.length;
+                var4 = 0;
+                var0 = var4 < var6;
+                var2 = 1;
+                var1 = '-';
+                var3 = undefined;
+                if (!var0) {
+                    _fun112666_ip = 165;
+                    continue _fun112666
+                }
+            case 87:
+                var8 = var5[var4];
+                var0 = var8.toLowerCase;
+                var8 = var0.bind(var8)();
+                var0 = var8.split;
+                var9 = var0.bind(var8)(var1);
+                var0 = var9.length;
+                if (!var0) {
+                    _fun112666_ip = 157;
+                    continue _fun112666
+                }
+            case 119:
+                var0 = var9.join;
+                var0 = var0.bind(var9)(var1);
+                var0 = var7[var0];
+                if (var0) {
+                    _fun112666_ip = 245;
+                    continue _fun112666
+                }
+            case 136:
+                var8 = var9.pop;
+                var8 = var8.bind(var9)();
+                var8 = var9.length;
+                var3 = var0;
+                if (var8) {
+                    _fun112666_ip = 119;
+                    continue _fun112666
+                }
+            case 157:
+                var4 = var4 + var2;
+                if (var4 < var6) {
+                    _fun112666_ip = 87;
+                    continue _fun112666
+                }
+            case 165:
+                var1 = var5.pop;
+                var2 = var1.bind(var5)();
+                var1 = global;
+                var3 = var1.Error;
+                var4 = var5.join;
+                var1 = ', ';
+                var4 = var4.bind(var5)(var1);
+                var1 = 'No locale data has been added to IntlMessageFormat for: ';
+                var4 = var1 + var4;
+                var1 = ', or the default locale: ';
+                var1 = var4 + var1;
+                var10 = var1 + var2;
+                var2 = var3.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var11 = var2;
+                var1 = new var11[var3](var10, var9);
+                var1 = var1 instanceof Object ? var1 : var2;
+                throw var1;
+            case 245:
+                var0 = var0.locale;
+                return var0;
+        }
+    };
+    var2._resolveLocale = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14463, 14465, 14467, 14464]);

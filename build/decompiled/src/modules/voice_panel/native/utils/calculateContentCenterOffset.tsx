@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'function calculateContentCenterOffset_calculateContentCenterOffsetTsx1({contentHeight:contentHeight,windowHeight:windowHeight,safeArea:safeArea}){const{EDGE_GUTTER,roundToNearestPixel}=this.__closure;const safeAreaTop=Math.max(safeArea.top,EDGE_GUTTER);const safeAreaBottom=Math.max(safeArea.bottom,EDGE_GUTTER);if(windowHeight<=contentHeight){return safeAreaTop;}return Math.max(safeAreaTop,safeAreaTop+roundToNearestPixel((windowHeight-safeAreaTop-safeAreaBottom-contentHeight)/2));}';
     var3.code = var6;
     var1 = function arg0() {
-        _fun111394: for (var _fun111394_ip = 0;;) switch (_fun111394_ip) {
+        _fun111880: for (var _fun111880_ip = 0;;) switch (_fun111880_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.contentHeight;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var3.bind(var6)(var0, var8);
                 var0 = var4;
                 if (!(!(var1 <= var7))) {
-                    _fun111394_ip = 148;
-                    continue _fun111394
+                    _fun111880_ip = 148;
+                    continue _fun111880
                 }
             case 81:
                 var3 = var2.Math;
@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11843, 13153, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11889, 13199, 2]);

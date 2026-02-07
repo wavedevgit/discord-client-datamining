@@ -86,12 +86,12 @@ public abstract /* synthetic */ class a0 {
                     return f10;
                 }
             }
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32008a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f32056a);
         }
     }
 
@@ -117,6 +117,6 @@ public abstract /* synthetic */ class a0 {
         if (g10 == wr.b.f()) {
             return g10;
         }
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 }

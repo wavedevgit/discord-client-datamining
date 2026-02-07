@@ -6,18 +6,18 @@ import com.withpersona.sdk2.camera.camera2.Camera2PreviewView;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final br.h f53977a;
+    private final br.h f54025a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f53978b;
+    private final br.h f54026b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.h f53979c;
+    private final br.h f54027c;
 
     public h(br.h hVar, br.h hVar2, br.h hVar3) {
-        this.f53977a = hVar;
-        this.f53978b = hVar2;
-        this.f53979c = hVar3;
+        this.f54025a = hVar;
+        this.f54026b = hVar2;
+        this.f54027c = hVar3;
     }
 
     public static h a(br.h hVar, br.h hVar2, br.h hVar3) {
@@ -29,6 +29,6 @@ public final class h {
     }
 
     public g b(m mVar, Camera2PreviewView camera2PreviewView, b bVar, ao.a aVar, tq.a aVar2, boolean z10) {
-        return c((Context) this.f53977a.get(), (zn.a) this.f53978b.get(), (wp.c) this.f53979c.get(), mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
+        return c((Context) this.f54025a.get(), (zn.a) this.f54026b.get(), (wp.c) this.f54027c.get(), mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
     }
 }

@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.name = var8;
         var4.children = var7;
         var6 = function() {
-            _fun72953: for (var _fun72953_ip = 0;;) switch (_fun72953_ip) {
+            _fun73404: for (var _fun73404_ip = 0;;) switch (_fun73404_ip) {
                 case 0:
                     var0 = {};
                     var1 = _closure2_slot0;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.isIOS;
                     var2 = var2.bind(var3)();
                     if (!var2) {
-                        _fun72953_ip = 57;
-                        continue _fun72953
+                        _fun73404_ip = 57;
+                        continue _fun73404
                     }
                 case 51:
                     var1 = 'portrait';
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9147, 5794, 8928, 9156, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9192, 5837, 8972, 9201, 478, 2]);

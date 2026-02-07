@@ -42,13 +42,13 @@ final class ViewModelInstance$getTriggerFlow$1$1 extends k implements Function2<
             c.b(obj);
             commandQueue = this.this$0.commandQueue;
             commandQueue.m151subscribeToPropertyiFQtAB8(this.this$0.m46getInstanceHandleVPLto4w$kotlin_release(), this.$propertyPath, ViewModel.PropertyDataType.TRIGGER);
-            return Unit.f32008a;
+            return Unit.f32056a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((ViewModelInstance$getTriggerFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f32008a);
+        return ((ViewModelInstance$getTriggerFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f32056a);
     }
 }

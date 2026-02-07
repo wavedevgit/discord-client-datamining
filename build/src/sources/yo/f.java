@@ -3,14 +3,14 @@ package yo;
 public final class f implements br.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f55500a;
+    private final c f55548a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.h f55501b;
+    private final br.h f55549b;
 
     public f(c cVar, br.h hVar) {
-        this.f55500a = cVar;
-        this.f55501b = hVar;
+        this.f55548a = cVar;
+        this.f55549b = hVar;
     }
 
     public static f a(c cVar, br.h hVar) {
@@ -24,6 +24,6 @@ public final class f implements br.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public io.a get() {
-        return b(this.f55500a, (i) this.f55501b.get());
+        return b(this.f55548a, (i) this.f55549b.get());
     }
 }

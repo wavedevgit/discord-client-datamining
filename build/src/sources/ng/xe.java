@@ -62,14 +62,14 @@ public enum xe implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f40436d;
+    private final int f40484d;
 
     xe(int i10) {
-        this.f40436d = i10;
+        this.f40484d = i10;
     }
 
     @Override // ng.n2
     public final int zza() {
-        return this.f40436d;
+        return this.f40484d;
     }
 }

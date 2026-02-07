@@ -5,7 +5,7 @@ import yi.c;
 final class o8 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final o8 f40150a = new o8();
+    static final o8 f40198a = new o8();
 
     static {
         c.b a10 = yi.c.a("isChargingRequired");

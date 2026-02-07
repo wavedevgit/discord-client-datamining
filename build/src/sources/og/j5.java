@@ -5,51 +5,51 @@ import yi.c;
 final class j5 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j5 f42151a = new j5();
+    static final j5 f42199a = new j5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final yi.c f42152b;
+    private static final yi.c f42200b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final yi.c f42153c;
+    private static final yi.c f42201c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final yi.c f42154d;
+    private static final yi.c f42202d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final yi.c f42155e;
+    private static final yi.c f42203e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final yi.c f42156f;
+    private static final yi.c f42204f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final yi.c f42157g;
+    private static final yi.c f42205g;
 
     static {
         c.b a10 = yi.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42152b = a10.b(fVar.b()).a();
+        f42200b = a10.b(fVar.b()).a();
         c.b a11 = yi.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f42153c = a11.b(fVar2.b()).a();
+        f42201c = a11.b(fVar2.b()).a();
         c.b a12 = yi.c.a("detectorOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42154d = a12.b(fVar3.b()).a();
+        f42202d = a12.b(fVar3.b()).a();
         c.b a13 = yi.c.a("loadDurationMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f42155e = a13.b(fVar4.b()).a();
+        f42203e = a13.b(fVar4.b()).a();
         c.b a14 = yi.c.a("sessionDurationMs");
         f fVar5 = new f();
         fVar5.a(5);
-        f42156f = a14.b(fVar5.b()).a();
+        f42204f = a14.b(fVar5.b()).a();
         c.b a15 = yi.c.a("sessionTotalInferenceDurationMs");
         f fVar6 = new f();
         fVar6.a(6);
-        f42157g = a15.b(fVar6.b()).a();
+        f42205g = a15.b(fVar6.b()).a();
     }
 
     private j5() {

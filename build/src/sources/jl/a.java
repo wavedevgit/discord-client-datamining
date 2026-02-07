@@ -12,7 +12,7 @@ public class a extends g {
 
     @Override // jl.g
     public String e() {
-        if (this.f29944a.f16697o.g()) {
+        if (this.f29992a.f16697o.g()) {
             return " a ";
         }
         return "";
@@ -29,15 +29,15 @@ public class a extends g {
         calendar.set(2000, 0, 0, 0, 0, 0);
         ArrayList arrayList = new ArrayList();
         calendar.set(11, 0);
-        arrayList.add(this.f29948e.format(calendar.getTime()));
+        arrayList.add(this.f29996e.format(calendar.getTime()));
         calendar.add(11, 12);
-        arrayList.add(this.f29948e.format(calendar.getTime()));
+        arrayList.add(this.f29996e.format(calendar.getTime()));
         return arrayList;
     }
 
     @Override // jl.g
     public boolean u() {
-        if (this.f29944a.f16697o.g() && this.f29944a.z() != fl.b.date) {
+        if (this.f29992a.f16697o.g() && this.f29992a.z() != fl.b.date) {
             return true;
         }
         return false;

@@ -13,7 +13,7 @@ public interface q extends Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0433a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final ko.a f30635d;
+        private final ko.a f30683d;
 
         /* renamed from: jo.q$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -34,11 +34,11 @@ public interface q extends Parcelable {
 
         public a(ko.a config) {
             Intrinsics.checkNotNullParameter(config, "config");
-            this.f30635d = config;
+            this.f30683d = config;
         }
 
         public final ko.a a() {
-            return this.f30635d;
+            return this.f30683d;
         }
 
         @Override // android.os.Parcelable
@@ -50,25 +50,25 @@ public interface q extends Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && Intrinsics.areEqual(this.f30635d, ((a) obj).f30635d)) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f30683d, ((a) obj).f30683d)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f30635d.hashCode();
+            return this.f30683d.hashCode();
         }
 
         public String toString() {
-            ko.a aVar = this.f30635d;
+            ko.a aVar = this.f30683d;
             return "AutoClassifyConfig(config=" + aVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f30635d.writeToParcel(dest, i10);
+            this.f30683d.writeToParcel(dest, i10);
         }
     }
 
@@ -78,7 +78,7 @@ public interface q extends Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final c4 f30636d;
+        private final c4 f30684d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -98,11 +98,11 @@ public interface q extends Parcelable {
 
         public b(c4 id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f30636d = id2;
+            this.f30684d = id2;
         }
 
         public final c4 a() {
-            return this.f30636d;
+            return this.f30684d;
         }
 
         @Override // android.os.Parcelable
@@ -114,25 +114,25 @@ public interface q extends Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && Intrinsics.areEqual(this.f30636d, ((b) obj).f30636d)) {
+            if ((obj instanceof b) && Intrinsics.areEqual(this.f30684d, ((b) obj).f30684d)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f30636d.hashCode();
+            return this.f30684d.hashCode();
         }
 
         public String toString() {
-            c4 c4Var = this.f30636d;
+            c4 c4Var = this.f30684d;
             return "IdCaptureConfig(id=" + c4Var + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f30636d.writeToParcel(dest, i10);
+            this.f30684d.writeToParcel(dest, i10);
         }
     }
 }

@@ -12,13 +12,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class f implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28486d;
+    private String f28534d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f28487e;
+    private boolean f28535e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f28488i;
+    private Map f28536i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -63,20 +63,20 @@ public final class f implements w1 {
     }
 
     public f(String str, boolean z10) {
-        this.f28486d = str;
-        this.f28487e = z10;
+        this.f28534d = str;
+        this.f28535e = z10;
     }
 
     public String a() {
-        return this.f28486d;
+        return this.f28534d;
     }
 
     public Boolean b() {
-        return Boolean.valueOf(this.f28487e);
+        return Boolean.valueOf(this.f28535e);
     }
 
     public void c(Map map) {
-        this.f28488i = map;
+        this.f28536i = map;
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class f implements w1 {
         }
         if (obj != null && f.class == obj.getClass()) {
             f fVar = (f) obj;
-            if (io.sentry.util.y.a(this.f28486d, fVar.f28486d) && io.sentry.util.y.a(Boolean.valueOf(this.f28487e), Boolean.valueOf(fVar.f28487e))) {
+            if (io.sentry.util.y.a(this.f28534d, fVar.f28534d) && io.sentry.util.y.a(Boolean.valueOf(this.f28535e), Boolean.valueOf(fVar.f28535e))) {
                 return true;
             }
         }
@@ -93,18 +93,18 @@ public final class f implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f28486d, Boolean.valueOf(this.f28487e));
+        return io.sentry.util.y.b(this.f28534d, Boolean.valueOf(this.f28535e));
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("flag").f(this.f28486d);
-        f3Var.e("result").d(this.f28487e);
-        Map map = this.f28488i;
+        f3Var.e("flag").f(this.f28534d);
+        f3Var.e("result").d(this.f28535e);
+        Map map = this.f28536i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f28488i.get(str));
+                f3Var.e(str).j(iLogger, this.f28536i.get(str));
             }
         }
         f3Var.D();

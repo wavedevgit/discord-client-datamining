@@ -323,7 +323,7 @@ public final class PlayAssetDelivery {
                         function1.invoke(Boolean.valueOf(z10));
                     }
                     list.clear();
-                    Unit unit = Unit.f32008a;
+                    Unit unit = Unit.f32056a;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -373,7 +373,7 @@ public final class PlayAssetDelivery {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerBackgroundStartListener$lambda$1() {
         INSTANCE.handleBackgroundOnlyStart();
-        return Unit.f32008a;
+        return Unit.f32056a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

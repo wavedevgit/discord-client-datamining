@@ -9,19 +9,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        var3 = arg0;
-        var2 = var3.replace;
-        var1 = /[|\\{}()[\]^$+*?.]/g;
-        var0 = '\\$&';
-        var3 = var2.bind(var3)(var1, var0);
-        var2 = var3.replace;
-        var1 = /-/g;
-        var0 = '\\x2d';
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var1.escapeStringForRegex = var0;
+    var0 = '8.22.0';
+    var1.SDK_VERSION = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

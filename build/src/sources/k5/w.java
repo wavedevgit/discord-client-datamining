@@ -6,16 +6,16 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 public final class w {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final w f31514a = new w();
+    public static final w f31562a = new w();
 
     /* renamed from: b  reason: collision with root package name */
-    private static Function0 f31515b = a.f31516d;
+    private static Function0 f31563b = a.f31564d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f31516d = new a();
+        public static final a f31564d = new a();
 
         a() {
             super(0, System.class, "currentTimeMillis", "currentTimeMillis()J", 0);
@@ -32,6 +32,6 @@ public final class w {
     }
 
     public final long a() {
-        return ((Number) f31515b.invoke()).longValue();
+        return ((Number) f31563b.invoke()).longValue();
     }
 }

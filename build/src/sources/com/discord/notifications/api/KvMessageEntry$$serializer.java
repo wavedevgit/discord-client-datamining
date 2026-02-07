@@ -52,7 +52,7 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = KvMessageEntry.$childSerializers;
-        return new KSerializer[]{lazyArr[0].getValue(), lazyArr[1].getValue(), y.f35529a, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{lazyArr[0].getValue(), lazyArr[1].getValue(), y.f35577a, MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -73,7 +73,7 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
         if (b10.p()) {
             List list3 = (List) b10.y(serialDescriptor, 0, (DeserializationStrategy) lazyArr[0].getValue(), null);
             List list4 = (List) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), null);
-            JsonObject jsonObject2 = (JsonObject) b10.y(serialDescriptor, 2, y.f35529a, null);
+            JsonObject jsonObject2 = (JsonObject) b10.y(serialDescriptor, 2, y.f35577a, null);
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
             list = list4;
             list2 = list3;
@@ -100,7 +100,7 @@ public /* synthetic */ class KvMessageEntry$$serializer implements h0 {
                         list5 = (List) b10.y(serialDescriptor, 1, (DeserializationStrategy) lazyArr[1].getValue(), list5);
                         i13 |= 2;
                     } else if (o10 == 2) {
-                        jsonObject3 = (JsonObject) b10.y(serialDescriptor, 2, y.f35529a, jsonObject3);
+                        jsonObject3 = (JsonObject) b10.y(serialDescriptor, 2, y.f35577a, jsonObject3);
                         i13 |= 4;
                     } else if (o10 == 3) {
                         MessageId messageId2 = (MessageId) b10.y(serialDescriptor, 3, MessageId$$serializer.INSTANCE, str2 != null ? MessageId.m1083boximpl(str2) : null);

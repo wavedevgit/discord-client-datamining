@@ -5,7 +5,7 @@ import yi.c;
 final class ub implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ub f40319a = new ub();
+    static final ub f40367a = new ub();
 
     static {
         c.b a10 = yi.c.a("stageId");

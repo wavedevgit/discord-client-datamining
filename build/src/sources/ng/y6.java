@@ -5,7 +5,7 @@ import yi.c;
 final class y6 implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y6 f40453a = new y6();
+    static final y6 f40501a = new y6();
 
     static {
         c.b a10 = yi.c.a("supportedFormats");

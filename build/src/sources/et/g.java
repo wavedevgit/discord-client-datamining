@@ -14,7 +14,7 @@ public final class g implements KSerializer {
     public static final g f22121a = new g();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f22122b = ht.j.b("kotlinx.datetime.LocalTime", e.i.f26478a);
+    private static final SerialDescriptor f22122b = ht.j.b("kotlinx.datetime.LocalTime", e.i.f26526a);
 
     private g() {
     }

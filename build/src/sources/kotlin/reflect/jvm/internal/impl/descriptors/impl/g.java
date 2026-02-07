@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.name.FqName;
 public class g implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ModuleDescriptorImpl f32593d;
+    private final ModuleDescriptorImpl f32641d;
 
     public g(ModuleDescriptorImpl moduleDescriptorImpl) {
-        this.f32593d = moduleDescriptorImpl;
+        this.f32641d = moduleDescriptorImpl;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         PackageViewDescriptor g10;
-        g10 = ModuleDescriptorImpl.g(this.f32593d, (FqName) obj);
+        g10 = ModuleDescriptorImpl.g(this.f32641d, (FqName) obj);
         return g10;
     }
 }

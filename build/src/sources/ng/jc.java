@@ -5,7 +5,7 @@ import yi.c;
 final class jc implements yi.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final jc f39905a = new jc();
+    static final jc f39953a = new jc();
 
     static {
         c.b a10 = yi.c.a("language");

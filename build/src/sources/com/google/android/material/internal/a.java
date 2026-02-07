@@ -830,14 +830,14 @@ public final class a {
         if (dVar.j() != 0.0f) {
             this.f15123m = dVar.j();
         }
-        ColorStateList colorStateList = dVar.f40685c;
+        ColorStateList colorStateList = dVar.f40733c;
         if (colorStateList != null) {
             this.f15104c0 = colorStateList;
         }
-        this.f15100a0 = dVar.f40690h;
-        this.f15102b0 = dVar.f40691i;
-        this.Z = dVar.f40692j;
-        this.f15114h0 = dVar.f40694l;
+        this.f15100a0 = dVar.f40738h;
+        this.f15102b0 = dVar.f40739i;
+        this.Z = dVar.f40740j;
+        this.f15114h0 = dVar.f40742l;
         nh.a aVar = this.E;
         if (aVar != null) {
             aVar.c();

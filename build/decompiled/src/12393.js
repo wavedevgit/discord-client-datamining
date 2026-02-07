@@ -1,32 +1,25 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun94440: for (var _fun94440_ip = 0;;) switch (_fun94440_ip) {
-        case 0:
-            var1 = {
-                'option': 'alt',
-                'command': 'meta',
-                'return': 'enter',
-                'escape': 'esc'
-            };
-            var2 = 'meta';
-            var4 = /Mac|iPod|iPhone|iPad/;
-            var3 = var4.test;
-            var0 = global;
-            var0 = var0.navigator;
-            var0 = var0.platform;
-            var3 = var3.bind(var4)(var0);
-            var0 = 'ctrl';
-            if (!var3) {
-                _fun94440_ip = 66;
-                continue _fun94440
-            }
-        case 63:
-            var0 = var2;
-        case 66:
-            var1.mod = var0;
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = function arg0, arg1, arg2() {
+        var2 = _closure1_slot0;
+        var0 = _closure1_slot1;
+        var1 = 0;
+        var0 = var0[var1];
+        var5 = undefined;
+        var4 = var2.bind(var5)(var0);
+        var3 = arg0;
+        var2 = arg1;
+        var0 = arg2;
+        var0 = var4.bind(var5)(var3, var2, var0);
+        var0 = var1 !== var0;
+        return var0;
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12384]);

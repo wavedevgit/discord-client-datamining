@@ -13,7 +13,7 @@ public abstract class c {
         Intrinsics.checkNotNullParameter(stepStyle, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
         String backgroundImageName = stepStyle.getBackgroundImageName();
-        if (backgroundImageName == null || (g10 = s.g(context, backgroundImageName, t.f49137e)) == null) {
+        if (backgroundImageName == null || (g10 = s.g(context, backgroundImageName, t.f49185e)) == null) {
             return null;
         }
         return androidx.core.content.a.e(context, g10.intValue());

@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f38316d = new a(null);
+    public static final a f38364d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Method f38317a;
+    private final Method f38365a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Method f38318b;
+    private final Method f38366b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Method f38319c;
+    private final Method f38367c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -46,18 +46,18 @@ public final class h {
     }
 
     public h(Method method, Method method2, Method method3) {
-        this.f38317a = method;
-        this.f38318b = method2;
-        this.f38319c = method3;
+        this.f38365a = method;
+        this.f38366b = method2;
+        this.f38367c = method3;
     }
 
     public final Object a(String closer) {
         Intrinsics.checkNotNullParameter(closer, "closer");
-        Method method = this.f38317a;
+        Method method = this.f38365a;
         if (method != null) {
             try {
                 Object invoke = method.invoke(null, null);
-                Method method2 = this.f38318b;
+                Method method2 = this.f38366b;
                 Intrinsics.checkNotNull(method2);
                 method2.invoke(invoke, closer);
                 return invoke;
@@ -70,7 +70,7 @@ public final class h {
     public final boolean b(Object obj) {
         if (obj != null) {
             try {
-                Method method = this.f38319c;
+                Method method = this.f38367c;
                 Intrinsics.checkNotNull(method);
                 method.invoke(obj, null);
                 return true;

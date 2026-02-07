@@ -19,7 +19,7 @@ public abstract class p5 {
             if (list != null && kotlin.collections.i.N(list, str)) {
                 typeface = Typeface.createFromAsset(context.getAssets(), "fonts/" + str);
             } else {
-                Integer g10 = rp.s.g(context, fontName, rp.t.f49136d);
+                Integer g10 = rp.s.g(context, fontName, rp.t.f49184d);
                 if (g10 != null) {
                     typeface = q1.j.i(context, g10.intValue());
                 }

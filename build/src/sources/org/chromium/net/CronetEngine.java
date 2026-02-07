@@ -65,13 +65,13 @@ public abstract class CronetEngine {
             @Override // java.util.Comparator
             /* renamed from: a */
             public int compare(CronetProvider.a aVar, CronetProvider.a aVar2) {
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f43378a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar.f43426a.getName())) {
                     return 1;
                 }
-                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f43378a.getName())) {
+                if (CronetProvider.PROVIDER_NAME_FALLBACK.equals(aVar2.f43426a.getName())) {
                     return -1;
                 }
-                return -Builder.compareVersions(aVar.f43378a.getVersion(), aVar2.f43378a.getVersion());
+                return -Builder.compareVersions(aVar.f43426a.getVersion(), aVar2.f43426a.getVersion());
             }
         }
 
@@ -106,24 +106,24 @@ public abstract class CronetEngine {
             try {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 CronetProvider.a aVar = getEnabledCronetProviders(context, new ArrayList(CronetProvider.getAllProviderInfos(context))).get(0);
-                kv.a a11 = kv.d.a(context, aVar.f43379b);
+                kv.a a11 = kv.d.a(context, aVar.f43427b);
                 a.C0473a c0473a = new a.C0473a();
-                c0473a.f35543e = Boolean.FALSE;
-                c0473a.f35540b = a.C0473a.EnumC0474a.API;
-                c0473a.f35542d = aVar.f43379b;
-                c0473a.f35546h = Process.myUid();
-                c0473a.f35544f = new a.c(ApiVersion.getCronetVersion());
+                c0473a.f35591e = Boolean.FALSE;
+                c0473a.f35588b = a.C0473a.EnumC0474a.API;
+                c0473a.f35590d = aVar.f43427b;
+                c0473a.f35594h = Process.myUid();
+                c0473a.f35592f = new a.c(ApiVersion.getCronetVersion());
                 if (Log.isLoggable(TAG, 3)) {
-                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f43378a));
+                    Log.d(TAG, String.format("Using '%s' provider for creating CronetEngine.Builder.", aVar.f43426a));
                 }
-                ICronetEngineBuilder iCronetEngineBuilder = aVar.f43378a.createBuilder().mBuilderDelegate;
+                ICronetEngineBuilder iCronetEngineBuilder = aVar.f43426a.createBuilder().mBuilderDelegate;
                 String implCronetVersion = getImplCronetVersion(iCronetEngineBuilder);
                 if (implCronetVersion != null) {
-                    c0473a.f35545g = new a.c(implCronetVersion);
+                    c0473a.f35593g = new a.c(implCronetVersion);
                 }
-                c0473a.f35539a = iCronetEngineBuilder.getLogCronetInitializationRef();
-                c0473a.f35543e = Boolean.TRUE;
-                c0473a.f35541c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
+                c0473a.f35587a = iCronetEngineBuilder.getLogCronetInitializationRef();
+                c0473a.f35591e = Boolean.TRUE;
+                c0473a.f35589c = (int) (SystemClock.uptimeMillis() - uptimeMillis);
                 a11.a(c0473a);
                 if (a10 != null) {
                     a10.close();
@@ -145,7 +145,7 @@ public abstract class CronetEngine {
             if (!list.isEmpty()) {
                 Iterator<CronetProvider.a> it = list.iterator();
                 while (it.hasNext()) {
-                    if (!it.next().f43378a.isEnabled()) {
+                    if (!it.next().f43426a.isEnabled()) {
                         it.remove();
                     }
                 }

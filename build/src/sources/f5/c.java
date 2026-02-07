@@ -33,7 +33,7 @@ public final class c {
     private final Headers f22502f;
 
     public c(BufferedSource bufferedSource) {
-        o oVar = o.f48045i;
+        o oVar = o.f48093i;
         this.f22497a = l.b(oVar, new Function0() { // from class: f5.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -63,14 +63,14 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final CacheControl c(c cVar) {
-        return CacheControl.f42791n.b(cVar.f22502f);
+        return CacheControl.f42839n.b(cVar.f22502f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final MediaType d(c cVar) {
         String c10 = cVar.f22502f.c("Content-Type");
         if (c10 != null) {
-            return MediaType.f42872e.c(c10);
+            return MediaType.f42920e.c(c10);
         }
         return null;
     }
@@ -117,7 +117,7 @@ public final class c {
     }
 
     public c(Response response) {
-        o oVar = o.f48045i;
+        o oVar = o.f48093i;
         this.f22497a = l.b(oVar, new Function0() { // from class: f5.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

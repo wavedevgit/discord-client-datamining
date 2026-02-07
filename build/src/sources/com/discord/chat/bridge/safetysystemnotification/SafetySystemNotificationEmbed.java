@@ -40,7 +40,7 @@ public final class SafetySystemNotificationEmbed {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, l.b(o.f48044e, new Function0() { // from class: o6.b
+    private static final Lazy[] $childSerializers = {null, null, null, null, null, null, null, null, null, null, l.b(o.f48092e, new Function0() { // from class: o6.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;
@@ -163,22 +163,22 @@ public final class SafetySystemNotificationEmbed {
         compositeEncoder.z(serialDescriptor, 2, safetySystemNotificationEmbed.subtitleText);
         compositeEncoder.z(serialDescriptor, 3, safetySystemNotificationEmbed.descriptionText);
         if (compositeEncoder.A(serialDescriptor, 4) || safetySystemNotificationEmbed.primaryCtaText != null) {
-            compositeEncoder.l(serialDescriptor, 4, n2.f31041a, safetySystemNotificationEmbed.primaryCtaText);
+            compositeEncoder.l(serialDescriptor, 4, n2.f31089a, safetySystemNotificationEmbed.primaryCtaText);
         }
         if (compositeEncoder.A(serialDescriptor, 5) || safetySystemNotificationEmbed.primaryCtaType != null) {
-            compositeEncoder.l(serialDescriptor, 5, n2.f31041a, safetySystemNotificationEmbed.primaryCtaType);
+            compositeEncoder.l(serialDescriptor, 5, n2.f31089a, safetySystemNotificationEmbed.primaryCtaType);
         }
         if (compositeEncoder.A(serialDescriptor, 6) || safetySystemNotificationEmbed.primaryCtaKey != null) {
-            compositeEncoder.l(serialDescriptor, 6, n2.f31041a, safetySystemNotificationEmbed.primaryCtaKey);
+            compositeEncoder.l(serialDescriptor, 6, n2.f31089a, safetySystemNotificationEmbed.primaryCtaKey);
         }
         if (compositeEncoder.A(serialDescriptor, 7) || safetySystemNotificationEmbed.secondaryCtaText != null) {
-            compositeEncoder.l(serialDescriptor, 7, n2.f31041a, safetySystemNotificationEmbed.secondaryCtaText);
+            compositeEncoder.l(serialDescriptor, 7, n2.f31089a, safetySystemNotificationEmbed.secondaryCtaText);
         }
         if (compositeEncoder.A(serialDescriptor, 8) || safetySystemNotificationEmbed.secondaryCtaType != null) {
-            compositeEncoder.l(serialDescriptor, 8, n2.f31041a, safetySystemNotificationEmbed.secondaryCtaType);
+            compositeEncoder.l(serialDescriptor, 8, n2.f31089a, safetySystemNotificationEmbed.secondaryCtaType);
         }
         if (compositeEncoder.A(serialDescriptor, 9) || safetySystemNotificationEmbed.secondaryCtaKey != null) {
-            compositeEncoder.l(serialDescriptor, 9, n2.f31041a, safetySystemNotificationEmbed.secondaryCtaKey);
+            compositeEncoder.l(serialDescriptor, 9, n2.f31089a, safetySystemNotificationEmbed.secondaryCtaKey);
         }
         compositeEncoder.s(serialDescriptor, 10, (ft.o) lazyArr[10].getValue(), safetySystemNotificationEmbed.footerTheme);
     }

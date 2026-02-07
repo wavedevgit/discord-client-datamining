@@ -10,16 +10,16 @@ import xc.e;
 final class a extends e {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f54579e = {5512, 11025, 22050, 44100};
+    private static final int[] f54627e = {5512, 11025, 22050, 44100};
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f54580b;
+    private boolean f54628b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f54581c;
+    private boolean f54629c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f54582d;
+    private int f54630d;
 
     public a(b0 b0Var) {
         super(b0Var);
@@ -28,16 +28,16 @@ final class a extends e {
     @Override // xc.e
     protected boolean b(h0 h0Var) {
         String str;
-        if (!this.f54580b) {
+        if (!this.f54628b) {
             int H = h0Var.H();
             int i10 = (H >> 4) & 15;
-            this.f54582d = i10;
+            this.f54630d = i10;
             if (i10 == 2) {
-                this.f54603a.b(new Format.b().g0("audio/mpeg").J(1).h0(f54579e[(H >> 2) & 3]).G());
-                this.f54581c = true;
+                this.f54651a.b(new Format.b().g0("audio/mpeg").J(1).h0(f54627e[(H >> 2) & 3]).G());
+                this.f54629c = true;
             } else if (i10 != 7 && i10 != 8) {
                 if (i10 != 10) {
-                    throw new e.a("Audio format not supported: " + this.f54582d);
+                    throw new e.a("Audio format not supported: " + this.f54630d);
                 }
             } else {
                 if (i10 == 7) {
@@ -45,10 +45,10 @@ final class a extends e {
                 } else {
                     str = "audio/g711-mlaw";
                 }
-                this.f54603a.b(new Format.b().g0(str).J(1).h0(8000).G());
-                this.f54581c = true;
+                this.f54651a.b(new Format.b().g0(str).J(1).h0(8000).G());
+                this.f54629c = true;
             }
-            this.f54580b = true;
+            this.f54628b = true;
         } else {
             h0Var.V(1);
         }
@@ -57,27 +57,27 @@ final class a extends e {
 
     @Override // xc.e
     protected boolean c(h0 h0Var, long j10) {
-        if (this.f54582d == 2) {
+        if (this.f54630d == 2) {
             int a10 = h0Var.a();
-            this.f54603a.f(h0Var, a10);
-            this.f54603a.d(j10, 1, a10, 0, null);
+            this.f54651a.f(h0Var, a10);
+            this.f54651a.d(j10, 1, a10, 0, null);
             return true;
         }
         int H = h0Var.H();
-        if (H == 0 && !this.f54581c) {
+        if (H == 0 && !this.f54629c) {
             int a11 = h0Var.a();
             byte[] bArr = new byte[a11];
             h0Var.l(bArr, 0, a11);
             a.b f10 = nc.a.f(bArr);
-            this.f54603a.b(new Format.b().g0("audio/mp4a-latm").K(f10.f38745c).J(f10.f38744b).h0(f10.f38743a).V(Collections.singletonList(bArr)).G());
-            this.f54581c = true;
+            this.f54651a.b(new Format.b().g0("audio/mp4a-latm").K(f10.f38793c).J(f10.f38792b).h0(f10.f38791a).V(Collections.singletonList(bArr)).G());
+            this.f54629c = true;
             return false;
-        } else if (this.f54582d == 10 && H != 1) {
+        } else if (this.f54630d == 10 && H != 1) {
             return false;
         } else {
             int a12 = h0Var.a();
-            this.f54603a.f(h0Var, a12);
-            this.f54603a.d(j10, 1, a12, 0, null);
+            this.f54651a.f(h0Var, a12);
+            this.f54651a.d(j10, 1, a12, 0, null);
             return true;
         }
     }

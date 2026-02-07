@@ -560,7 +560,7 @@ public final class PointerEvent extends Event<PointerEvent> {
 
     private PointerEvent() {
         this.coalescingKey = UNSET_COALESCING_KEY;
-        this.eventAnimationDriverMatchSpec$delegate = l.b(o.f48045i, new Function0() { // from class: com.facebook.react.uimanager.events.h
+        this.eventAnimationDriverMatchSpec$delegate = l.b(o.f48093i, new Function0() { // from class: com.facebook.react.uimanager.events.h
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Event.EventAnimationDriverMatchSpec eventAnimationDriverMatchSpec_delegate$lambda$1;

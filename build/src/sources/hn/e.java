@@ -9,19 +9,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f26188a;
+    private final Map f26236a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f26189b;
+    private final String f26237b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f26190c;
+    private final String f26238c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f26191d;
+    private final boolean f26239d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f26192e;
+    private final Function1 f26240e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -37,31 +37,31 @@ public final class e {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final a f26197a;
+            private final a f26245a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(a button) {
                 super(null);
                 Intrinsics.checkNotNullParameter(button, "button");
-                this.f26197a = button;
+                this.f26245a = button;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof a) && this.f26197a == ((a) obj).f26197a) {
+                if ((obj instanceof a) && this.f26245a == ((a) obj).f26245a) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f26197a.hashCode();
+                return this.f26245a.hashCode();
             }
 
             public String toString() {
-                return "ButtonClicked(button=" + this.f26197a + ')';
+                return "ButtonClicked(button=" + this.f26245a + ')';
             }
         }
 
@@ -70,7 +70,7 @@ public final class e {
         public static final class C0359b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0359b f26198a = new C0359b();
+            public static final C0359b f26246a = new C0359b();
 
             private C0359b() {
                 super(null);
@@ -90,31 +90,31 @@ public final class e {
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(title, "title");
         Intrinsics.checkNotNullParameter(onEvent, "onEvent");
-        this.f26188a = buttons;
-        this.f26189b = message;
-        this.f26190c = title;
-        this.f26191d = z10;
-        this.f26192e = onEvent;
+        this.f26236a = buttons;
+        this.f26237b = message;
+        this.f26238c = title;
+        this.f26239d = z10;
+        this.f26240e = onEvent;
     }
 
     public final Map a() {
-        return this.f26188a;
+        return this.f26236a;
     }
 
     public final boolean b() {
-        return this.f26191d;
+        return this.f26239d;
     }
 
     public final String c() {
-        return this.f26189b;
+        return this.f26237b;
     }
 
     public final Function1 d() {
-        return this.f26192e;
+        return this.f26240e;
     }
 
     public final String e() {
-        return this.f26190c;
+        return this.f26238c;
     }
 
     public boolean equals(Object obj) {
@@ -132,7 +132,7 @@ public final class e {
         }
         if (obj != null) {
             e eVar = (e) obj;
-            if (Intrinsics.areEqual(this.f26188a, eVar.f26188a) && Intrinsics.areEqual(this.f26189b, eVar.f26189b) && Intrinsics.areEqual(this.f26190c, eVar.f26190c) && this.f26191d == eVar.f26191d) {
+            if (Intrinsics.areEqual(this.f26236a, eVar.f26236a) && Intrinsics.areEqual(this.f26237b, eVar.f26237b) && Intrinsics.areEqual(this.f26238c, eVar.f26238c) && this.f26239d == eVar.f26239d) {
                 return true;
             }
             return false;
@@ -141,11 +141,11 @@ public final class e {
     }
 
     public int hashCode() {
-        return (((((this.f26188a.hashCode() * 31) + this.f26189b.hashCode()) * 31) + this.f26190c.hashCode()) * 31) + Boolean.hashCode(this.f26191d);
+        return (((((this.f26236a.hashCode() * 31) + this.f26237b.hashCode()) * 31) + this.f26238c.hashCode()) * 31) + Boolean.hashCode(this.f26239d);
     }
 
     public String toString() {
-        return "AlertScreen(buttons=" + this.f26188a + ", message=" + this.f26189b + ", title=" + this.f26190c + ", cancelable=" + this.f26191d + ", onEvent=" + this.f26192e + ')';
+        return "AlertScreen(buttons=" + this.f26236a + ", message=" + this.f26237b + ", title=" + this.f26238c + ", cancelable=" + this.f26239d + ", onEvent=" + this.f26240e + ')';
     }
 
     public /* synthetic */ e(Map map, String str, String str2, boolean z10, Function1 function1, int i10, DefaultConstructorMarker defaultConstructorMarker) {

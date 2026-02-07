@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final StaticScopeForKotlinEnum f34240d;
+    private final StaticScopeForKotlinEnum f34288d;
 
     public e(StaticScopeForKotlinEnum staticScopeForKotlinEnum) {
-        this.f34240d = staticScopeForKotlinEnum;
+        this.f34288d = staticScopeForKotlinEnum;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List f10;
-        f10 = StaticScopeForKotlinEnum.f(this.f34240d);
+        f10 = StaticScopeForKotlinEnum.f(this.f34288d);
         return f10;
     }
 }
