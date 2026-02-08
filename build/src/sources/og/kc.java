@@ -1,7 +1,6 @@
 package og;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class kc extends h6 {
+final class kc extends h6 {
 
     /* renamed from: i  reason: collision with root package name */
     private final mc f42260i;
