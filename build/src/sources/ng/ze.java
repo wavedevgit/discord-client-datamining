@@ -2,31 +2,26 @@ package ng;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ze {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private aj f40701a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private ye f40702b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private we f40703c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private of f40704d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private rf f40705e;
 
-    /* renamed from: f  reason: collision with root package name */
+    /* renamed from: f */
     private g3 f40706f;
 
-    /* renamed from: g  reason: collision with root package name */
+    /* renamed from: g */
     private pi f40707g;
-
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public static /* bridge */ /* synthetic */ aj n(ze zeVar) {
-        return zeVar.f40701a;
-    }
 
     public final ze d(g3 g3Var) {
         this.f40706f = g3Var;
