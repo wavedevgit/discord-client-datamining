@@ -1,6 +1,7 @@
 package ki;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-final class h0 extends i0 {
+public final class h0 extends i0 {
 
     /* renamed from: a  reason: collision with root package name */
     private final int f31727a;
