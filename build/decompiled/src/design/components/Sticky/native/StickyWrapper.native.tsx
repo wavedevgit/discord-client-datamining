@@ -65,14 +65,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.StickyContext = var3;
     var1 = function arg0() {
-        _fun77491: for (var _fun77491_ip = 0;;) switch (_fun77491_ip) {
+        _fun77493: for (var _fun77493_ip = 0;;) switch (_fun77493_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.initiallyShowHeader;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun77491_ip = 19;
-                    continue _fun77491
+                    _fun77493_ip = 19;
+                    continue _fun77493
                 }
             case 17:
                 var11 = true;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9.bind(var3)(var2);
                 var9 = var12.useAnimatedStyle;
                 var2 = function() {
-                    _fun77494: for (var _fun77494_ip = 0;;) switch (_fun77494_ip) {
+                    _fun77496: for (var _fun77496_ip = 0;;) switch (_fun77496_ip) {
                         case 0:
                             var0 = {
                                 'position': 'relative',
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1.bind(var3)();
                             var1 = 0;
                             if (!var3) {
-                                _fun77494_ip = 48;
-                                continue _fun77494
+                                _fun77496_ip = 48;
+                                continue _fun77496
                             }
                         case 35:
                             var3 = _closure2_slot2;

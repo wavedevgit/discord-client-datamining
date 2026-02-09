@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_reports/native/components/InAppReportsShieldElement.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun54484: for (var _fun54484_ip = 0;;) switch (_fun54484_ip) {
+        _fun54486: for (var _fun54486_ip = 0;;) switch (_fun54486_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.element;
@@ -60,16 +60,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 == var1;
                 var0 = null;
                 if (var2) {
-                    _fun54484_ip = 123;
-                    continue _fun54484
+                    _fun54486_ip = 123;
+                    continue _fun54486
                 }
             case 33:
                 var2 = var1.type;
                 var1 = 'success';
                 var0 = null;
                 if (!(var1 === var2)) {
-                    _fun54484_ip = 123;
-                    continue _fun54484
+                    _fun54486_ip = 123;
+                    continue _fun54486
                 }
             case 48:
                 var3 = _closure1_slot3;

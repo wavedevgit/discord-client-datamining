@@ -1,27 +1,31 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1, arg2) { // Environment: var0
-        _fun94894: for (var _fun94894_ip = 0;;) switch (_fun94894_ip) {
+        _fun94898: for (var _fun94898_ip = 0;;) switch (_fun94898_ip) {
             case 0:
-                var2 = arg0;
-                var0 = this;
-                var1 = global;
-                var1 = var1.Array;
-                var1 = var2 instanceof var1;
-                var4 = var2;
-                if (var1) {
-                    _fun94894_ip = 35;
-                    continue _fun94894
+                var5 = arg0;
+                var4 = arg1;
+                var3 = arg2;
+                var2 = this;
+                var0 = var5.length;
+                var1 = 0;
+                var0 = var1 < var0;
+                if (!var0) {
+                    _fun94898_ip = 55;
+                    continue _fun94898
                 }
-            case 24:
-                var1 = new Array(1);
-                var1[0] = var2;
-                var4 = var1;
-            case 35:
-                var3 = var0.bindMultiple;
-                var2 = arg1;
-                var1 = arg2;
-                var1 = var3.bind(var0)(var4, var2, var1);
+            case 26:
+                var6 = var2.bindSingle;
+                var0 = var5[var1];
+                var0 = var6.bind(var2)(var0, var4, var3);
+                var1 = var1 + 1;
+                var0 = var5.length;
+                if (var1 < var0) {
+                    _fun94898_ip = 26;
+                    continue _fun94898
+                }
+            case 55:
+                var0 = undefined;
                 return var0;
         }
     };

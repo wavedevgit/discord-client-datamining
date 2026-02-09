@@ -404,4 +404,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChannelAccessibilityProps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4304, 33, 7946, 1297, 671, 14234, 566, 7464, 13810, 4222, 14236, 9110, 14239, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4304, 33, 7946, 1297, 671, 14232, 566, 7464, 13808, 4222, 14234, 9110, 14237, 2]);

@@ -383,4 +383,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY = var3;
     var2.ChannelIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 1297, 671, 4848, 4809, 13811, 5642, 3279, 13812, 13813, 4900, 3942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 33, 1297, 671, 4848, 4809, 13809, 5642, 3279, 13810, 13811, 4900, 3942, 2]);

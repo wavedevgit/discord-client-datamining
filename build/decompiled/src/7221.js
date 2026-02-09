@@ -30,14 +30,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59016: for (var _fun59016_ip = 0;;) switch (_fun59016_ip) {
+                _fun59018: for (var _fun59018_ip = 0;;) switch (_fun59018_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59016_ip = 164;
-                            continue _fun59016
+                            _fun59018_ip = 164;
+                            continue _fun59018
                         }
                     case 13:
                         var10 = var1.developerSecret;
@@ -46,14 +46,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var1.useSandbox;
                         var4 = undefined;
                         if (!(var4 !== var1)) {
-                            _fun59016_ip = 55;
-                            continue _fun59016
+                            _fun59018_ip = 55;
+                            continue _fun59018
                         }
                     case 48:
                         var7 = '';
                         if (!var1) {
-                            _fun59016_ip = 61;
-                            continue _fun59016
+                            _fun59018_ip = 61;
+                            continue _fun59018
                         }
                     case 55:
                         var7 = 'sandbox/';
@@ -83,8 +83,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 152:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59016_ip = 161;
-                            continue _fun59016
+                            _fun59018_ip = 161;
+                            continue _fun59018
                         }
                     case 158:
                         return var1;
@@ -116,13 +116,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun59020: for (var _fun59020_ip = 0;;) switch (_fun59020_ip) {
+                _fun59022: for (var _fun59022_ip = 0;;) switch (_fun59022_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59020_ip = 27;
-                            continue _fun59020
+                            _fun59022_ip = 27;
+                            continue _fun59022
                         }
                     case 7:
                         var2 = _closure1_slot3;
@@ -155,13 +155,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59024: for (var _fun59024_ip = 0;;) switch (_fun59024_ip) {
+                _fun59026: for (var _fun59026_ip = 0;;) switch (_fun59026_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59024_ip = 37;
-                            continue _fun59024
+                            _fun59026_ip = 37;
+                            continue _fun59026
                         }
                     case 7:
                         var1 = arg0;

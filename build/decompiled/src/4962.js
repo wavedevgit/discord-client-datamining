@@ -84,12 +84,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = _closure1_slot2;
         var3.__initData = var0;
         var0 = function arg0() {
-            _fun44801: for (var _fun44801_ip = 0;;) switch (_fun44801_ip) {
+            _fun44803: for (var _fun44803_ip = 0;;) switch (_fun44803_ip) {
                 case 0:
                     var1 = _closure2_slot2;
                     if (!var1) {
-                        _fun44801_ip = 23;
-                        continue _fun44801
+                        _fun44803_ip = 23;
+                        continue _fun44803
                     }
                 case 10:
                     var1 = _closure2_slot2;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
         var4 = function arg0, arg1() {
-            _fun44802: for (var _fun44802_ip = 0;;) switch (_fun44802_ip) {
+            _fun44804: for (var _fun44804_ip = 0;;) switch (_fun44804_ip) {
                 case 0:
                     var3 = arg1;
                     var0 = arg0;
@@ -131,8 +131,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.EXTENDED;
                     var0 = var6 !== var0;
                     if (!var0) {
-                        _fun44802_ip = 115;
-                        continue _fun44802
+                        _fun44804_ip = 115;
+                        continue _fun44804
                     }
                 case 73:
                     var6 = _closure2_slot3;
@@ -146,8 +146,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var7 !== var6;
                 case 115:
                     if (var0) {
-                        _fun44802_ip = 126;
-                        continue _fun44802
+                        _fun44804_ip = 126;
+                        continue _fun44804
                     }
                 case 118:
                     var0 = false;
@@ -163,8 +163,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.State;
                     var0 = var0.ACTIVE;
                     if (!(var6 === var0)) {
-                        _fun44802_ip = 185;
-                        continue _fun44802
+                        _fun44804_ip = 185;
+                        continue _fun44804
                     }
                 case 171:
                     var0 = true;
@@ -180,8 +180,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.SCROLLABLE_STATE;
                     var0 = var0.LOCKED;
                     if (!(var6 !== var0)) {
-                        _fun44802_ip = 239;
-                        continue _fun44802
+                        _fun44804_ip = 239;
+                        continue _fun44804
                     }
                 case 227:
                     var0 = _closure2_slot8;
@@ -191,8 +191,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var3.shouldLockInitialPosition;
                     var0 = 0;
                     if (!var5) {
-                        _fun44802_ip = 270;
-                        continue _fun44802
+                        _fun44804_ip = 270;
+                        continue _fun44804
                     }
                 case 250:
                     var3 = var3.initialContentOffsetY;
@@ -200,8 +200,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var5 != var3;
                     var0 = 0;
                     if (!var5) {
-                        _fun44802_ip = 270;
-                        continue _fun44802
+                        _fun44804_ip = 270;
+                        continue _fun44804
                     }
                 case 267:
                     var0 = var3;
@@ -267,7 +267,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
         var4 = function arg0, arg1() {
-            _fun44803: for (var _fun44803_ip = 0;;) switch (_fun44803_ip) {
+            _fun44805: for (var _fun44805_ip = 0;;) switch (_fun44805_ip) {
                 case 0:
                     var2 = arg1;
                     var0 = arg0;
@@ -291,8 +291,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var5.SHEET_STATE;
                     var5 = var5.EXTENDED;
                     if (!(var7 !== var5)) {
-                        _fun44803_ip = 154;
-                        continue _fun44803
+                        _fun44805_ip = 154;
+                        continue _fun44805
                     }
                 case 106:
                     var4 = _closure2_slot3;
@@ -304,20 +304,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.SHEET_STATE;
                     var1 = var1.FILL_PARENT;
                     if (!(var4 !== var1)) {
-                        _fun44803_ip = 154;
-                        continue _fun44803
+                        _fun44805_ip = 154;
+                        continue _fun44805
                     }
                 case 148:
                     var1 = 0;
                     if (!(!(var3 > var1))) {
-                        _fun44803_ip = 164;
-                        continue _fun44803
+                        _fun44805_ip = 164;
+                        continue _fun44805
                     }
                 case 154:
                     var1 = false;
                     var2.shouldLockInitialPosition = var1;
-                    _fun44803_ip = 172;
-                    continue _fun44803;
+                    _fun44805_ip = 172;
+                    continue _fun44805;
                 case 164:
                     var1 = true;
                     var2.shouldLockInitialPosition = var1;
@@ -349,7 +349,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var17 = var13.bind(var12)(var3);
         var10 = var17.useWorkletCallback;
         var4 = function arg0, arg1() {
-            _fun44804: for (var _fun44804_ip = 0;;) switch (_fun44804_ip) {
+            _fun44806: for (var _fun44806_ip = 0;;) switch (_fun44806_ip) {
                 case 0:
                     var3 = arg1;
                     var0 = arg0;
@@ -366,8 +366,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.SCROLLABLE_STATE;
                     var0 = var0.LOCKED;
                     if (!(var6 !== var0)) {
-                        _fun44804_ip = 144;
-                        continue _fun44804
+                        _fun44806_ip = 144;
+                        continue _fun44806
                     }
                 case 70:
                     var0 = _closure2_slot5;
@@ -379,8 +379,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var0.ANIMATION_STATE;
                     var0 = var0.RUNNING;
                     if (!(var6 !== var0)) {
-                        _fun44804_ip = 142;
-                        continue _fun44804
+                        _fun44806_ip = 142;
+                        continue _fun44806
                     }
                 case 112:
                     var0 = _closure2_slot1;
@@ -395,8 +395,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var3.shouldLockInitialPosition;
                     var0 = 0;
                     if (!var5) {
-                        _fun44804_ip = 175;
-                        continue _fun44804
+                        _fun44806_ip = 175;
+                        continue _fun44806
                     }
                 case 155:
                     var3 = var3.initialContentOffsetY;
@@ -404,8 +404,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var5 != var3;
                     var0 = 0;
                     if (!var5) {
-                        _fun44804_ip = 175;
-                        continue _fun44804
+                        _fun44806_ip = 175;
+                        continue _fun44806
                     }
                 case 172:
                     var0 = var3;
@@ -466,7 +466,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var13.bind(var12)(var3);
         var3 = var4.useWorkletCallback;
         var2 = function arg0, arg1() {
-            _fun44805: for (var _fun44805_ip = 0;;) switch (_fun44805_ip) {
+            _fun44807: for (var _fun44807_ip = 0;;) switch (_fun44807_ip) {
                 case 0:
                     var4 = arg1;
                     var0 = arg0;
@@ -483,8 +483,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.SCROLLABLE_STATE;
                     var2 = var2.LOCKED;
                     if (!(var6 !== var2)) {
-                        _fun44805_ip = 144;
-                        continue _fun44805
+                        _fun44807_ip = 144;
+                        continue _fun44807
                     }
                 case 70:
                     var2 = _closure2_slot5;
@@ -496,8 +496,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.ANIMATION_STATE;
                     var2 = var2.RUNNING;
                     if (!(var6 !== var2)) {
-                        _fun44805_ip = 142;
-                        continue _fun44805
+                        _fun44807_ip = 142;
+                        continue _fun44807
                     }
                 case 112:
                     var2 = _closure2_slot1;
@@ -513,8 +513,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 0;
                     var7 = 0;
                     if (!var5) {
-                        _fun44805_ip = 177;
-                        continue _fun44805
+                        _fun44807_ip = 177;
+                        continue _fun44807
                     }
                 case 157:
                     var4 = var4.initialContentOffsetY;
@@ -522,8 +522,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var5 != var4;
                     var7 = 0;
                     if (!var5) {
-                        _fun44805_ip = 177;
-                        continue _fun44805
+                        _fun44807_ip = 177;
+                        continue _fun44807
                     }
                 case 174:
                     var7 = var4;

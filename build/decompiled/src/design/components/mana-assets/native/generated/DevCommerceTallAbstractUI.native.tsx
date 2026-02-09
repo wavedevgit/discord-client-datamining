@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/DevCommerceTallAbstractUI.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52994: for (var _fun52994_ip = 0;;) switch (_fun52994_ip) {
+        _fun52996: for (var _fun52996_ip = 0;;) switch (_fun52996_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52994_ip = 32;
-                    continue _fun52994
+                    _fun52996_ip = 32;
+                    continue _fun52996
                 }
             case 29:
                 var9 = 122;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52994_ip = 44;
-                    continue _fun52994
+                    _fun52996_ip = 44;
+                    continue _fun52996
                 }
             case 41:
                 var7 = 180;

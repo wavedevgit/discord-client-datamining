@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67494: for (var _fun67494_ip = 0;;) switch (_fun67494_ip) {
+        _fun67496: for (var _fun67496_ip = 0;;) switch (_fun67496_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.style;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var11)) {
-                    _fun67494_ip = 245;
-                    continue _fun67494
+                    _fun67496_ip = 245;
+                    continue _fun67496
                 }
             case 85:
                 var3 = _closure1_slot4;

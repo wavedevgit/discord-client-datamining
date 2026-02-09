@@ -29,7 +29,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.jsx;
     var _closure1_slot4 = var3;
     var1 = function arg0() {
-        _fun37405: for (var _fun37405_ip = 0;;) switch (_fun37405_ip) {
+        _fun37407: for (var _fun37407_ip = 0;;) switch (_fun37407_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.freeze;
@@ -86,8 +86,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = !var5;
                 var5 = !var7;
                 if (var7) {
-                    _fun37405_ip = 139;
-                    continue _fun37405
+                    _fun37407_ip = 139;
+                    continue _fun37407
                 }
             case 136:
                 var5 = var6;

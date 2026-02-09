@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ChevronLargeUpIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun79190: for (var _fun79190_ip = 0;;) switch (_fun79190_ip) {
+        _fun79192: for (var _fun79192_ip = 0;;) switch (_fun79192_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun79190_ip = 53;
-                    continue _fun79190
+                    _fun79192_ip = 53;
+                    continue _fun79192
                 }
             case 19:
                 var1 = _closure1_slot1;

@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun45141: for (var _fun45141_ip = 0;;) switch (_fun45141_ip) {
+        _fun45143: for (var _fun45143_ip = 0;;) switch (_fun45143_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45141_ip = 74;
-                continue _fun45141;
+                _fun45143_ip = 74;
+                continue _fun45143;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -79,7 +79,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.BaseGesture;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45145: for (var _fun45145_ip = 0;;) switch (_fun45145_ip) {
+            _fun45147: for (var _fun45147_ip = 0;;) switch (_fun45147_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot0;
@@ -92,14 +92,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun45145_ip = 62;
-                        continue _fun45145
+                        _fun45147_ip = 62;
+                        continue _fun45147
                     }
                 case 49:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var2);
-                    _fun45145_ip = 100;
-                    continue _fun45145;
+                    _fun45147_ip = 100;
+                    continue _fun45147;
                 case 62:
                     var5 = global;
                     var7 = var5.Reflect;

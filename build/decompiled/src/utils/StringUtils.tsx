@@ -20,14 +20,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'utils/StringUtils.tsx';
     var1 = var5.bind(var6)(var1);
     var1 = function arg0() {
-        _fun17840: for (var _fun17840_ip = 0;;) switch (_fun17840_ip) {
+        _fun17838: for (var _fun17838_ip = 0;;) switch (_fun17838_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 == var1;
                 if (var0) {
-                    _fun17840_ip = 23;
-                    continue _fun17840
+                    _fun17838_ip = 23;
+                    continue _fun17838
                 }
             case 12:
                 var2 = var1.length;

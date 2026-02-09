@@ -323,13 +323,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = undefined;
             var1 = function*() { // Environment: var0
                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                    _fun80084: for (var _fun80084_ip = 0;;) switch (_fun80084_ip) {
+                    _fun80086: for (var _fun80086_ip = 0;;) switch (_fun80086_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun80084_ip = 297;
-                                continue _fun80084
+                                _fun80086_ip = 297;
+                                continue _fun80086
                             }
                         case 10:
                             var3 = _closure1_slot1;
@@ -356,8 +356,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 94:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                             if (var4) {
-                                _fun80084_ip = 294;
-                                continue _fun80084
+                                _fun80086_ip = 294;
+                                continue _fun80086
                             }
                         case 103:
                             var13 = _closure1_slot1;
@@ -391,8 +391,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var14 = var12 != var13;
                             var12 = '';
                             if (!var14) {
-                                _fun80084_ip = 240;
-                                continue _fun80084
+                                _fun80086_ip = 240;
+                                continue _fun80086
                             }
                         case 237:
                             var12 = var13;

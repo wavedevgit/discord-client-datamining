@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun54480: for (var _fun54480_ip = 0;;) switch (_fun54480_ip) {
+            _fun54482: for (var _fun54482_ip = 0;;) switch (_fun54482_ip) {
                 case 0:
                     var3 = _closure2_slot0;
                     var2 = null;
                     var0 = undefined;
                     if (!(var2 !== var3)) {
-                        _fun54480_ip = 37;
-                        continue _fun54480
+                        _fun54482_ip = 37;
+                        continue _fun54482
                     }
                 case 15:
                     var3 = _closure1_slot2;

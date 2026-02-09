@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/hooks/native/useVirtualCurrencyMobileEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun28907: for (var _fun28907_ip = 0;;) switch (_fun28907_ip) {
+        _fun28905: for (var _fun28905_ip = 0;;) switch (_fun28905_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var3);
                 var1 = {};
                 if (var2) {
-                    _fun28907_ip = 88;
-                    continue _fun28907
+                    _fun28905_ip = 88;
+                    continue _fun28905
                 }
             case 43:
                 var2 = _closure1_slot1;
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.enabled;
                 var1.enabled = var0;
                 var0 = var1;
-                _fun28907_ip = 97;
-                continue _fun28907;
+                _fun28905_ip = 97;
+                continue _fun28905;
             case 88:
                 var2 = false;
                 var1.enabled = var2;
@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isVirtualCurrencyEnabled = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun28908: for (var _fun28908_ip = 0;;) switch (_fun28908_ip) {
+        _fun28906: for (var _fun28906_ip = 0;;) switch (_fun28906_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot1;
@@ -82,15 +82,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var3);
                 var1 = {};
                 if (var2) {
-                    _fun28908_ip = 84;
-                    continue _fun28908
+                    _fun28906_ip = 84;
+                    continue _fun28906
                 }
             case 70:
                 var0 = var0.enabled;
                 var1.enabled = var0;
                 var0 = var1;
-                _fun28908_ip = 93;
-                continue _fun28908;
+                _fun28906_ip = 93;
+                continue _fun28906;
             case 84:
                 var2 = false;
                 var1.enabled = var2;

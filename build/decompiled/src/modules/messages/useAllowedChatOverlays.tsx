@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/useAllowedChatOverlays.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun77709: for (var _fun77709_ip = 0;;) switch (_fun77709_ip) {
+        _fun77711: for (var _fun77711_ip = 0;;) switch (_fun77711_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -129,16 +129,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var0;
                 var3 = undefined;
                 if (var7) {
-                    _fun77709_ip = 126;
-                    continue _fun77709
+                    _fun77711_ip = 126;
+                    continue _fun77711
                 }
             case 121:
                 var3 = var0.location;
             case 126:
                 var4 = var4.bind(var6)(var3);
                 if (!(var5 !== var0)) {
-                    _fun77709_ip = 178;
-                    continue _fun77709
+                    _fun77711_ip = 178;
+                    continue _fun77711
                 }
             case 135:
                 var3 = _closure1_slot1;
@@ -149,14 +149,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var3.bind(var5)(var4, var0);
                 if (var0) {
-                    _fun77709_ip = 178;
-                    continue _fun77709
+                    _fun77711_ip = 178;
+                    continue _fun77711
                 }
             case 168:
                 var0 = _closure1_slot5;
                 var0 = var0[var2];
-                _fun77709_ip = 190;
-                continue _fun77709;
+                _fun77711_ip = 190;
+                continue _fun77711;
             case 178:
                 var1 = _closure1_slot5;
                 var0 = var1.no_text_activity;

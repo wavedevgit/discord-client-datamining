@@ -461,20 +461,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = undefined;
         var1 = function*(arg0, arg1, arg2) { // Environment: var0
             var0 = function*(arg0, arg1, arg2) { // Original name: ?anon_0_, environment: var0
-                _fun55099: for (var _fun55099_ip = 0;;) switch (_fun55099_ip) {
+                _fun55101: for (var _fun55101_ip = 0;;) switch (_fun55101_ip) {
                     case 0:
                         StartGenerator();
                         var3 = arguments[3];
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun55099_ip = 144;
-                            continue _fun55099
+                            _fun55101_ip = 144;
+                            continue _fun55101
                         }
                     case 13:
                         var6 = undefined;
                         if (!(var3 === var6)) {
-                            _fun55099_ip = 21;
-                            continue _fun55099
+                            _fun55101_ip = 21;
+                            continue _fun55101
                         }
                     case 19:
                         var3 = false;
@@ -485,8 +485,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 25:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun55099_ip = 141;
-                            continue _fun55099
+                            _fun55101_ip = 141;
+                            continue _fun55101
                         }
                     case 31:
                         var5 = _closure1_slot0;
@@ -505,13 +505,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var10.bind(var9)(var8, var7, var4);
                         var4 = var5.bind(var6)(var4);
                         if (var3) {
-                            _fun55099_ip = 107;
-                            continue _fun55099
+                            _fun55101_ip = 107;
+                            continue _fun55101
                         }
                     case 101:
                         var3 = _closure1_slot4;
-                        _fun55099_ip = 111;
-                        continue _fun55099;
+                        _fun55101_ip = 111;
+                        continue _fun55101;
                     case 107:
                         var3 = _closure1_slot3;
                     case 111:

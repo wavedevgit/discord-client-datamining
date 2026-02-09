@@ -1510,4 +1510,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleRecordingPhase = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 13101, 4002, 13103, 13104, 3279, 13105, 1307, 8896, 4005, 13106, 8895, 1464, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 13099, 4002, 13101, 13102, 3279, 13103, 1307, 8896, 4005, 13104, 8895, 1464, 2]);

@@ -106,13 +106,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = _closure1_slot4;
         var8 = function*() { // Environment: var7
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun79617: for (var _fun79617_ip = 0;;) switch (_fun79617_ip) {
+                _fun79619: for (var _fun79619_ip = 0;;) switch (_fun79619_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun79617_ip = 93;
-                            continue _fun79617
+                            _fun79619_ip = 93;
+                            continue _fun79619
                         }
                     case 7:
                         var3 = _closure1_slot1;
@@ -132,15 +132,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 57:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun79617_ip = 90;
-                            continue _fun79617
+                            _fun79619_ip = 90;
+                            continue _fun79619
                         }
                     case 63:
                         var4 = var1.base64;
                         var3 = null;
                         if (!(var3 != var4)) {
-                            _fun79617_ip = 87;
-                            continue _fun79617
+                            _fun79619_ip = 87;
+                            continue _fun79619
                         }
                     case 75:
                         var3 = _closure2_slot5;
@@ -158,13 +158,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var9.bind(var3)(var8);
         var4.chooseIcon = var8;
         var7 = function() {
-            _fun79618: for (var _fun79618_ip = 0;;) switch (_fun79618_ip) {
+            _fun79620: for (var _fun79620_ip = 0;;) switch (_fun79620_ip) {
                 case 0:
                     var3 = _closure2_slot1;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun79618_ip = 95;
-                        continue _fun79618
+                        _fun79620_ip = 95;
+                        continue _fun79620
                     }
                 case 15:
                     var4 = _closure1_slot1;

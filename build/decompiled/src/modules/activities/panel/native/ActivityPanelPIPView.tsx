@@ -957,4 +957,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useBaseActivityPanelPIPView = var3;
     var2.BaseActivityPanelPIPView = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 8148, 1372, 1371, 3458, 7985, 14276, 660, 11887, 33, 4888, 1297, 671, 1568, 566, 1464, 14271, 5353, 3721, 14277, 4027, 4097, 4081, 14278, 14279, 3161, 4963, 3083, 14273, 8127, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 8148, 1372, 1371, 3458, 7985, 14274, 660, 11886, 33, 4888, 1297, 671, 1568, 566, 1464, 14269, 5353, 3721, 14275, 4027, 4097, 4081, 14276, 14277, 3161, 4963, 3083, 14271, 8127, 2]);

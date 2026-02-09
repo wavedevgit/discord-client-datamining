@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.VOICE;
     var1.parent = var8;
     var7 = function() {
-        _fun89281: for (var _fun89281_ip = 0;;) switch (_fun89281_ip) {
+        _fun89282: for (var _fun89282_ip = 0;;) switch (_fun89282_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun89281_ip = 53;
-                    continue _fun89281
+                    _fun89282_ip = 53;
+                    continue _fun89282
                 }
             case 50:
                 var0 = var1;

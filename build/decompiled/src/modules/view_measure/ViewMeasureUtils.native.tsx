@@ -157,21 +157,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.measureView = var5;
     var5 = function arg0() {
-        _fun76394: for (var _fun76394_ip = 0;;) switch (_fun76394_ip) {
+        _fun76396: for (var _fun76396_ip = 0;;) switch (_fun76396_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.current;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun76394_ip = 30;
-                    continue _fun76394
+                    _fun76396_ip = 30;
+                    continue _fun76396
                 }
             case 14:
                 var1 = _closure1_slot0;
                 var0 = undefined;
                 var0 = var1.bind(var0)(var2);
-                _fun76394_ip = 51;
-                continue _fun76394;
+                _fun76396_ip = 51;
+                continue _fun76396;
             case 30:
                 var1 = global;
                 var3 = var1.Promise;
@@ -185,21 +185,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.measureViewRef = var5;
     var2.measureViewInWindow = var4;
     var4 = function arg0() {
-        _fun76395: for (var _fun76395_ip = 0;;) switch (_fun76395_ip) {
+        _fun76397: for (var _fun76397_ip = 0;;) switch (_fun76397_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.current;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun76395_ip = 30;
-                    continue _fun76395
+                    _fun76397_ip = 30;
+                    continue _fun76397
                 }
             case 14:
                 var1 = _closure1_slot1;
                 var0 = undefined;
                 var0 = var1.bind(var0)(var2);
-                _fun76395_ip = 51;
-                continue _fun76395;
+                _fun76397_ip = 51;
+                continue _fun76397;
             case 30:
                 var1 = global;
                 var3 = var1.Promise;
@@ -213,22 +213,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.measureViewRefInWindow = var4;
     var2.measureViewInView = var3;
     var1 = function arg0, arg1() {
-        _fun76396: for (var _fun76396_ip = 0;;) switch (_fun76396_ip) {
+        _fun76398: for (var _fun76398_ip = 0;;) switch (_fun76398_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.current;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun76396_ip = 34;
-                    continue _fun76396
+                    _fun76398_ip = 34;
+                    continue _fun76398
                 }
             case 14:
                 var2 = _closure1_slot2;
                 var1 = undefined;
                 var0 = arg1;
                 var0 = var2.bind(var1)(var3, var0);
-                _fun76396_ip = 55;
-                continue _fun76396;
+                _fun76398_ip = 55;
+                continue _fun76398;
             case 34:
                 var1 = global;
                 var3 = var1.Promise;

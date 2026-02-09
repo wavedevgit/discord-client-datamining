@@ -517,4 +517,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherFrecentApps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4586, 13991, 3458, 4545, 1647, 7669, 566, 5403, 3340, 13992, 4673, 8053, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4586, 13989, 3458, 4545, 1647, 7669, 566, 5403, 3340, 13990, 4673, 8053, 2]);

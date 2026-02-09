@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormArrow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44626: for (var _fun44626_ip = 0;;) switch (_fun44626_ip) {
+        _fun44628: for (var _fun44628_ip = 0;;) switch (_fun44628_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.label;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.bind(var4)();
                 var0 = null;
                 if (!(var0 == var9)) {
-                    _fun44626_ip = 131;
-                    continue _fun44626
+                    _fun44628_ip = 131;
+                    continue _fun44628
                 }
             case 32:
                 var2 = _closure1_slot4;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.MEDIUM;
                 var0.size = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun44626_ip = 312;
-                continue _fun44626;
+                _fun44628_ip = 312;
+                continue _fun44628;
             case 131:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;

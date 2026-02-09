@@ -36,14 +36,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
             var0 = function() { // Environment: var0
-                _fun61454: for (var _fun61454_ip = 0;;) switch (_fun61454_ip) {
+                _fun61456: for (var _fun61456_ip = 0;;) switch (_fun61456_ip) {
                     case 0:
                         var2 = _closure1_slot3;
                         var1 = var2.isAuthenticated;
                         var1 = var1.bind(var2)();
                         if (var1) {
-                            _fun61454_ip = 52;
-                            continue _fun61454
+                            _fun61456_ip = 52;
+                            continue _fun61456
                         }
                     case 20:
                         var2 = _closure1_slot0;

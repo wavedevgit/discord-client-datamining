@@ -591,4 +591,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.pipXYtoAbsoluteXY = var3;
     var2.getClampedPIPPosition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11887, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11886, 2]);

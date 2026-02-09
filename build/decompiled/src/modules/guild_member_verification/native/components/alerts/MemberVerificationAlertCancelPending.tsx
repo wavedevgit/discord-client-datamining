@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun60580: for (var _fun60580_ip = 0;;) switch (_fun60580_ip) {
+        _fun60582: for (var _fun60582_ip = 0;;) switch (_fun60582_ip) {
             case 0:
                 var3 = arg0;
                 var4 = var3.guildId;
@@ -67,13 +67,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var4;
                 var1[1] = var11;
                 var0 = function() { // Environment: var0
-                    _fun60581: for (var _fun60581_ip = 0;;) switch (_fun60581_ip) {
+                    _fun60583: for (var _fun60583_ip = 0;;) switch (_fun60583_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun60581_ip = 23;
-                                continue _fun60581
+                                _fun60583_ip = 23;
+                                continue _fun60583
                             }
                         case 13:
                             var2 = _closure2_slot1;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'header';
                 var0[var4] = var6;
                 if (!(var15 == var5)) {
-                    _fun60580_ip = 266;
-                    continue _fun60580
+                    _fun60582_ip = 266;
+                    continue _fun60582
                 }
             case 212:
                 var8 = _closure1_slot0;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'destructive';
                 var7.variant = var17;
                 if (!(var15 == var14)) {
-                    _fun60580_ip = 385;
-                    continue _fun60580
+                    _fun60582_ip = 385;
+                    continue _fun60582
                 }
             case 331:
                 var19 = _closure1_slot0;

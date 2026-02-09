@@ -419,4 +419,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildPowerupsCardFooter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 3272, 671, 3942, 5443, 1234, 1892, 13430, 13404, 7749, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 3272, 671, 3942, 5443, 1234, 1892, 13428, 13402, 7749, 2]);

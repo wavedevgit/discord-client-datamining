@@ -1013,4 +1013,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ChannelScoreSettings = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4303, 8946, 33, 1297, 671, 8955, 1234, 4086, 13605, 13606, 13607, 7866, 8260, 566, 13608, 3942, 5468, 4794, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4303, 8946, 33, 1297, 671, 8955, 1234, 4086, 13603, 13604, 13605, 7866, 8260, 566, 13606, 3942, 5468, 4794, 2]);

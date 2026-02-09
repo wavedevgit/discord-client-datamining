@@ -1,94 +1,151 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        var0 = arg0;
+    var4 = require;
+    var1 = module;
+    var5 = dependencyMap;
+    var0 = function(arg0) { // Environment: var0
+        var0 = this;
+        var1 = var0.constructor;
         var2 = {};
-        var _closure2_slot0 = var2;
-        var2 = var0.stopCallback;
-        var _closure2_slot1 = var2;
-        var2 = function(arg0, arg1, arg2, arg3) { // Environment: var1
-            _fun94889: for (var _fun94889_ip = 0;;) switch (_fun94889_ip) {
-                case 0:
-                    var5 = arg2;
-                    var0 = _closure2_slot0;
-                    var0 = var0[var5];
-                    var0 = !var0;
-                    if (!var0) {
-                        _fun94889_ip = 34;
-                        continue _fun94889
-                    }
-                case 20:
-                    var3 = _closure2_slot0;
-                    var2 = arg3;
-                    var2 = var3[var2];
-                    var0 = !var2;
-                case 34:
-                    if (!var0) {
-                        _fun94889_ip = 56;
-                        continue _fun94889
-                    }
-                case 37:
-                    var4 = _closure2_slot1;
-                    var3 = undefined;
-                    var2 = arg0;
-                    var1 = arg1;
-                    var0 = var4.bind(var3)(var2, var1, var5);
-                case 56:
-                    return var0;
-            }
-        };
-        var0.stopCallback = var2;
-        var1 = function(arg0, arg1, arg2) { // Environment: var1
-            _fun94890: for (var _fun94890_ip = 0;;) switch (_fun94890_ip) {
-                case 0:
-                    var4 = arg0;
-                    var3 = this;
-                    var2 = var3.bind;
-                    var1 = arg1;
-                    var0 = arg2;
-                    var0 = var2.bind(var3)(var4, var1, var0);
-                    var0 = global;
-                    var0 = var0.Array;
-                    var0 = var4 instanceof var0;
-                    if (var0) {
-                        _fun94890_ip = 54;
-                        continue _fun94890
-                    }
-                case 39:
-                    var1 = _closure2_slot0;
-                    var0 = true;
-                    var1[var4] = var0;
-                    _fun94890_ip = 97;
-                    continue _fun94890;
-                case 54:
-                    var0 = var4.length;
-                    var3 = 0;
-                    var0 = var3 < var0;
-                    var1 = true;
-                    if (!var0) {
-                        _fun94890_ip = 97;
-                        continue _fun94890
-                    }
-                case 73:
-                    var5 = _closure2_slot0;
-                    var0 = var4[var3];
-                    var5[var0] = var1;
-                    var3 = var3 + 1;
-                    var0 = var4.length;
-                    if (var3 < var0) {
-                        _fun94890_ip = 73;
-                        continue _fun94890
-                    }
-                case 97:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.bindGlobal = var1;
+        var0.callbacks = var2;
+        var2 = {};
+        var0.directMap = var2;
+        var2 = {};
+        var0.sequenceLevels = var2;
+        var2 = var0.resetTimer;
+        var2 = false;
+        var0.ignoreNextKeyup = var2;
+        var0.ignoreNextKeypress = var2;
+        var0.nextExpectedAction = var2;
+        var2 = arg0;
+        var0.element = var2;
+        var2 = var0.addEvents;
+        var2 = var2.bind(var0)();
+        var2 = var1.instances;
+        var1 = var2.push;
+        var1 = var1.bind(var2)(var0);
         return var0;
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var1.exports = var0;
+    var0 = var1.exports;
+    var3 = var0.prototype;
+    var0 = 0;
+    var2 = var5[var0];
     var0 = undefined;
+    var2 = var4.bind(var0)(var2);
+    var3.bind = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 1;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindMultiple = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 2;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.unbind = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 3;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.trigger = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 4;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.reset = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 5;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.stopCallback = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 6;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.handleKey = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 7;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.addEvents = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 8;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindSingle = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 9;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getKeyInfo = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 10;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.pickBestAction = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 11;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getReverseMap = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 12;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.getMatches = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 13;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.resetSequences = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 14;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.fireCallback = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 15;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.bindSequence = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 16;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.resetSequenceTimer = var2;
+    var2 = var1.exports;
+    var3 = var2.prototype;
+    var2 = 17;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.detach = var2;
+    var3 = var1.exports;
+    var2 = new Array(0);
+    var3.instances = var2;
+    var3 = var1.exports;
+    var2 = 18;
+    var2 = var5[var2];
+    var2 = var4.bind(var0)(var2);
+    var3.reset = var2;
+    var2 = var1.exports;
+    var1 = null;
+    var2.REVERSE_MAP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12420, 12421, 12422, 12423, 12424, 12425, 12426, 12428, 12435, 12436, 12440, 12441, 12442, 12444, 12445, 12448, 12449, 12450, 12451]);

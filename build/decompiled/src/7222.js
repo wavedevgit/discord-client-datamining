@@ -34,13 +34,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59029: for (var _fun59029_ip = 0;;) switch (_fun59029_ip) {
+                _fun59031: for (var _fun59031_ip = 0;;) switch (_fun59031_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun59029_ip = 133;
-                            continue _fun59029
+                            _fun59031_ip = 133;
+                            continue _fun59031
                         }
                     case 10:
                         var1 = arg0;
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 84:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59029_ip = 130;
-                            continue _fun59029
+                            _fun59031_ip = 130;
+                            continue _fun59031
                         }
                     case 90:
                         var2 = global;
@@ -104,14 +104,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun59033: for (var _fun59033_ip = 0;;) switch (_fun59033_ip) {
+                _fun59035: for (var _fun59035_ip = 0;;) switch (_fun59035_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun59033_ip = 259;
-                            continue _fun59033
+                            _fun59035_ip = 259;
+                            continue _fun59035
                         }
                     case 13:
                         var12 = var1.packageName;
@@ -121,8 +121,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var1.isSub;
                         var8 = 'products';
                         if (!var1) {
-                            _fun59033_ip = 58;
-                            continue _fun59033
+                            _fun59035_ip = 58;
+                            continue _fun59035
                         }
                     case 54:
                         var8 = 'subscriptions';
@@ -157,14 +157,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 165:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun59033_ip = 256;
-                            continue _fun59033
+                            _fun59035_ip = 256;
+                            continue _fun59035
                         }
                     case 171:
                         var3 = var1.ok;
                         if (var3) {
-                            _fun59033_ip = 243;
-                            continue _fun59033
+                            _fun59035_ip = 243;
+                            continue _fun59035
                         }
                     case 180:
                         var5 = var2.Object;
@@ -214,7 +214,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)();
     var2.AndroidModule = var5;
     var5 = function() {
-        _fun59035: for (var _fun59035_ip = 0;;) switch (_fun59035_ip) {
+        _fun59037: for (var _fun59037_ip = 0;;) switch (_fun59037_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var3 = _closure1_slot0;
@@ -225,13 +225,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var1)(var2);
                 var1 = var1.InstallSourceAndroid;
                 if (var0) {
-                    _fun59035_ip = 46;
-                    continue _fun59035
+                    _fun59037_ip = 46;
+                    continue _fun59037
                 }
             case 38:
                 var0 = var1.AMAZON;
-                _fun59035_ip = 52;
-                continue _fun59035;
+                _fun59037_ip = 52;
+                continue _fun59037;
             case 46:
                 var0 = var1.GOOGLE_PLAY;
             case 52:
@@ -259,7 +259,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.acknowledgePurchaseAndroid = var3;
     var1 = function arg0() {
-        _fun59037: for (var _fun59037_ip = 0;;) switch (_fun59037_ip) {
+        _fun59039: for (var _fun59039_ip = 0;;) switch (_fun59039_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -269,14 +269,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.bind(var0)(var2);
                 var0 = var0.isAndroid;
                 if (!var0) {
-                    _fun59037_ip = 41;
-                    continue _fun59037
+                    _fun59039_ip = 41;
+                    continue _fun59039
                 }
             case 34:
                 var0 = _closure1_slot4;
                 if (var0) {
-                    _fun59037_ip = 68;
-                    continue _fun59037
+                    _fun59039_ip = 68;
+                    continue _fun59039
                 }
             case 41:
                 var0 = global;
@@ -284,8 +284,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.reject;
                 var0 = 'This is only available on Android clients';
                 var0 = var2.bind(var3)(var0);
-                _fun59037_ip = 86;
-                continue _fun59037;
+                _fun59039_ip = 86;
+                continue _fun59039;
             case 68:
                 var3 = _closure1_slot5;
                 var2 = var3.isFeatureSupported;

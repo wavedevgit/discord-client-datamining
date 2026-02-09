@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ChatMarkUnreadIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun78938: for (var _fun78938_ip = 0;;) switch (_fun78938_ip) {
+        _fun78940: for (var _fun78940_ip = 0;;) switch (_fun78940_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun78938_ip = 53;
-                    continue _fun78938
+                    _fun78940_ip = 53;
+                    continue _fun78940
                 }
             case 19:
                 var1 = _closure1_slot1;

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/PaintIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53297: for (var _fun53297_ip = 0;;) switch (_fun53297_ip) {
+        _fun53299: for (var _fun53299_ip = 0;;) switch (_fun53299_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53297_ip = 32;
-                    continue _fun53297
+                    _fun53299_ip = 32;
+                    continue _fun53299
                 }
             case 29:
                 var7 = 64;

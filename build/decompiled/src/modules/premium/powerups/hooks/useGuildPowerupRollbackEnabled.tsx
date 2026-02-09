@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildPowerupRollbackEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13401, 6707, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13399, 6707, 2]);

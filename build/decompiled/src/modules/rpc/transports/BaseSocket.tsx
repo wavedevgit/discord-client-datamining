@@ -100,25 +100,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = 'checkRpcVersion';
         var0.key = var4;
         var1 = function arg0() {
-            _fun64458: for (var _fun64458_ip = 0;;) switch (_fun64458_ip) {
+            _fun64460: for (var _fun64460_ip = 0;;) switch (_fun64460_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = null;
                     if (!(var0 != var4)) {
-                        _fun64458_ip = 31;
-                        continue _fun64458
+                        _fun64460_ip = 31;
+                        continue _fun64460
                     }
                 case 9:
                     var0 = _closure1_slot4;
                     if (!(!(var4 > var0))) {
-                        _fun64458_ip = 31;
-                        continue _fun64458
+                        _fun64460_ip = 31;
+                        continue _fun64460
                     }
                 case 20:
                     var0 = 1;
                     if (!(!(var4 < var0))) {
-                        _fun64458_ip = 31;
-                        continue _fun64458
+                        _fun64460_ip = 31;
+                        continue _fun64460
                     }
                 case 27:
                     var0 = undefined;

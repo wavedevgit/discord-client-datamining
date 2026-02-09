@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.code = var3;
     var _closure1_slot2 = var2;
     var0 = function arg0() {
-        _fun75608: for (var _fun75608_ip = 0;;) switch (_fun75608_ip) {
+        _fun75610: for (var _fun75610_ip = 0;;) switch (_fun75610_ip) {
             case 0:
                 var2 = arg0;
                 var8 = undefined;
@@ -26,19 +26,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arguments.length;
                 var3 = 1;
                 if (!(var1 > var3)) {
-                    _fun75608_ip = 27;
-                    continue _fun75608
+                    _fun75610_ip = 27;
+                    continue _fun75610
                 }
             case 19:
                 var1 = arguments[var3];
                 if (!(var8 === var1)) {
-                    _fun75608_ip = 31;
-                    continue _fun75608
+                    _fun75610_ip = 31;
+                    continue _fun75610
                 }
             case 27:
                 var1 = {};
-                _fun75608_ip = 35;
-                continue _fun75608;
+                _fun75610_ip = 35;
+                continue _fun75610;
             case 31:
                 var1 = arguments[var3];
             case 35:
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.parallaxScrollingOffset;
                 var10 = 100;
                 if (!(var8 !== var2)) {
-                    _fun75608_ip = 70;
-                    continue _fun75608
+                    _fun75610_ip = 70;
+                    continue _fun75610
                 }
             case 67:
                 var10 = var2;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.parallaxScrollingScale;
                 var4 = 0.8;
                 if (!(var8 !== var2)) {
-                    _fun75608_ip = 97;
-                    continue _fun75608
+                    _fun75610_ip = 97;
+                    continue _fun75610
                 }
             case 94:
                 var4 = var2;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot3 = var4;
                 var5 = var1.parallaxAdjacentItemScale;
                 if (!(var8 === var5)) {
-                    _fun75608_ip = 121;
-                    continue _fun75608
+                    _fun75610_ip = 121;
+                    continue _fun75610
                 }
             case 111:
                 var13 = 2;
@@ -78,7 +78,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 121:
                 var _closure2_slot4 = var5;
                 var0 = function arg0() {
-                    _fun75609: for (var _fun75609_ip = 0;;) switch (_fun75609_ip) {
+                    _fun75611: for (var _fun75611_ip = 0;;) switch (_fun75611_ip) {
                         case 0:
                             var8 = arg0;
                             var10 = _closure1_slot0;
@@ -157,14 +157,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = _closure2_slot1;
                             var2 = {};
                             if (var3) {
-                                _fun75609_ip = 336;
-                                continue _fun75609
+                                _fun75611_ip = 336;
+                                continue _fun75611
                             }
                         case 326:
                             var2.translateX = var5;
                             var3 = var2;
-                            _fun75609_ip = 344;
-                            continue _fun75609;
+                            _fun75611_ip = 344;
+                            continue _fun75611;
                         case 336:
                             var2.translateY = var5;
                             var3 = var2;

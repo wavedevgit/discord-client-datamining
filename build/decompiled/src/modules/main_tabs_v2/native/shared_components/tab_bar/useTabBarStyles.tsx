@@ -628,4 +628,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.useTabBarStylesComputed = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11674, 33, 671, 8950, 9940, 1297, 478, 8981, 3247, 13688, 3153, 13684, 1568, 7756, 13689, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11673, 33, 671, 8950, 9940, 1297, 478, 8981, 3247, 13686, 3153, 13682, 1568, 7756, 13687, 2]);

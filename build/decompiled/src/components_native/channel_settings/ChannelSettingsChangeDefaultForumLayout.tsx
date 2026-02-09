@@ -376,4 +376,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ChannelSettingsChangeDefaultForumLayout = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 6532, 5474, 1234, 1382, 5473, 14101, 7663, 3942, 5415, 4704, 14137, 14138, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 6532, 5474, 1234, 1382, 5473, 14099, 7663, 3942, 5415, 4704, 14135, 14136, 566, 2]);

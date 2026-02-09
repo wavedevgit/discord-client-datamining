@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun86048: for (var _fun86048_ip = 0;;) switch (_fun86048_ip) {
+        _fun86049: for (var _fun86049_ip = 0;;) switch (_fun86049_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var4 = undefined;
@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.hasAndroidNotificationChannels;
                 var5 = var0.bind(var1)();
                 if (var5) {
-                    _fun86048_ip = 76;
-                    continue _fun86048
+                    _fun86049_ip = 76;
+                    continue _fun86049
                 }
             case 68:
                 var0 = null;
                 if (!var6) {
-                    _fun86048_ip = 532;
-                    continue _fun86048
+                    _fun86049_ip = 532;
+                    continue _fun86049
                 }
             case 76:
                 var3 = _closure1_slot8;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var7 = var5;
                 if (!var7) {
-                    _fun86048_ip = 194;
-                    continue _fun86048
+                    _fun86049_ip = 194;
+                    continue _fun86049
                 }
             case 92:
                 var9 = _closure1_slot7;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(2);
                 var5[0] = var7;
                 if (!var6) {
-                    _fun86048_ip = 518;
-                    continue _fun86048
+                    _fun86049_ip = 518;
+                    continue _fun86049
                 }
             case 208:
                 var9 = _closure1_slot7;
@@ -452,4 +452,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11076, 7077, 33, 1297, 671, 11077, 11084, 3942, 1234, 4902, 5443, 9067, 10260, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11075, 7077, 33, 1297, 671, 11076, 11083, 3942, 1234, 4902, 5443, 9067, 10260, 2]);

@@ -964,4 +964,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRedesignGuildHeaderHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3142, 8871, 660, 33, 8796, 3247, 3207, 4090, 13339, 7049, 13199, 4088, 1297, 671, 3219, 1220, 3920, 13340, 3721, 3911, 8795, 13341, 566, 1470, 4081, 4087, 12640, 1417, 4704, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3142, 8871, 660, 33, 8796, 3247, 3207, 4090, 13337, 7049, 13197, 4088, 1297, 671, 3219, 1220, 3920, 13338, 3721, 3911, 8795, 13339, 566, 1470, 4081, 4087, 12639, 1417, 4704, 2]);

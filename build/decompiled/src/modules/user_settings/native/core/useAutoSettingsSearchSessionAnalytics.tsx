@@ -306,4 +306,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAutoSettingsSearchSessionAnalytics = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5336, 10262, 566, 670, 5358, 4103, 11629, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5336, 10262, 566, 670, 5358, 4103, 11628, 2]);

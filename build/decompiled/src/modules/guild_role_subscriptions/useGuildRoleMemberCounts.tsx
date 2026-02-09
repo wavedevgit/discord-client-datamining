@@ -35,15 +35,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/useGuildRoleMemberCounts.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78564: for (var _fun78564_ip = 0;;) switch (_fun78564_ip) {
+        _fun78566: for (var _fun78566_ip = 0;;) switch (_fun78566_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var6;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun78564_ip = 20;
-                    continue _fun78564
+                    _fun78566_ip = 20;
+                    continue _fun78566
                 }
             case 18:
                 var5 = 0;
@@ -72,13 +72,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun78566: for (var _fun78566_ip = 0;;) switch (_fun78566_ip) {
+                    _fun78568: for (var _fun78568_ip = 0;;) switch (_fun78568_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = null;
                             if (!(var2 != var0)) {
-                                _fun78566_ip = 145;
-                                continue _fun78566
+                                _fun78568_ip = 145;
+                                continue _fun78568
                             }
                         case 16:
                             var4 = _closure1_slot5;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var4[var3];
                             var2 = var2 != var4;
                             if (!var2) {
-                                _fun78566_ip = 48;
-                                continue _fun78566
+                                _fun78568_ip = 48;
+                                continue _fun78568
                             }
                         case 38:
                             var5 = _closure2_slot1;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var5 > var3;
                         case 48:
                             if (!var2) {
-                                _fun78566_ip = 80;
-                                continue _fun78566
+                                _fun78568_ip = 80;
+                                continue _fun78568
                             }
                         case 51:
                             var3 = global;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var4 < var3;
                         case 80:
                             if (var2) {
-                                _fun78566_ip = 145;
-                                continue _fun78566
+                                _fun78568_ip = 145;
+                                continue _fun78568
                             }
                         case 83:
                             var3 = _closure1_slot5;

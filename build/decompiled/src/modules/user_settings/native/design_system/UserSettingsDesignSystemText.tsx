@@ -55,14 +55,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var6.TEXT_VARIANT;
         var7 = var8.map;
         var6 = function(arg0) { // Environment: var6
-            _fun88597: for (var _fun88597_ip = 0;;) switch (_fun88597_ip) {
+            _fun88598: for (var _fun88598_ip = 0;;) switch (_fun88598_ip) {
                 case 0:
                     var5 = arg0;
                     var1 = 'code';
                     var0 = null;
                     if (!(var1 !== var5)) {
-                        _fun88597_ip = 95;
-                        continue _fun88597
+                        _fun88598_ip = 95;
+                        continue _fun88598
                     }
                 case 13:
                     var4 = _closure1_slot3;

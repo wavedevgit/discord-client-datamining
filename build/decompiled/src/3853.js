@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun34780: for (var _fun34780_ip = 0;;) switch (_fun34780_ip) {
+        _fun34778: for (var _fun34778_ip = 0;;) switch (_fun34778_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun34780_ip = 74;
-                continue _fun34780;
+                _fun34778_ip = 74;
+                continue _fun34778;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.BaseAnimationBuilder;
     var1 = function(arg0) { // Environment: var1
         var4 = function() {
-            _fun34784: for (var _fun34784_ip = 0;;) switch (_fun34784_ip) {
+            _fun34782: for (var _fun34782_ip = 0;;) switch (_fun34782_ip) {
                 case 0:
                     var4 = this;
                     var3 = undefined;
@@ -109,16 +109,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 0;
                     var10 = var2 < var6;
                     if (!var10) {
-                        _fun34784_ip = 87;
-                        continue _fun34784
+                        _fun34782_ip = 87;
+                        continue _fun34782
                     }
                 case 72:
                     var10 = arguments[var2];
                     var8[var2] = var10;
                     var2 = var2 + 1;
                     if (var2 < var6) {
-                        _fun34784_ip = 72;
-                        continue _fun34784
+                        _fun34782_ip = 72;
+                        continue _fun34782
                     }
                 case 87:
                     var2 = _closure2_slot0;
@@ -131,20 +131,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun34784_ip = 142;
-                        continue _fun34784
+                        _fun34782_ip = 142;
+                        continue _fun34782
                     }
                 case 129:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var4, var6);
-                    _fun34784_ip = 181;
-                    continue _fun34784;
+                    _fun34782_ip = 181;
+                    continue _fun34782;
                 case 142:
                     var8 = var7.Reflect;
                     var7 = var8.construct;
                     if (var6) {
-                        _fun34784_ip = 160;
-                        continue _fun34784
+                        _fun34782_ip = 160;
+                        continue _fun34782
                     }
                 case 156:
                     var6 = new Array(0);
@@ -157,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var1 = function() { // Environment: var1
-                        _fun34785: for (var _fun34785_ip = 0;;) switch (_fun34785_ip) {
+                        _fun34783: for (var _fun34783_ip = 0;;) switch (_fun34783_ip) {
                             case 0:
                                 var3 = _closure3_slot0;
                                 var1 = var3.getDelayFunction;
@@ -176,8 +176,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var6 = var5 != var2;
                                 var5 = 500;
                                 if (!var6) {
-                                    _fun34785_ip = 83;
-                                    continue _fun34785
+                                    _fun34783_ip = 83;
+                                    continue _fun34783
                                 }
                             case 80:
                                 var5 = var2;

@@ -30,7 +30,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.initialize = var2;
     var0 = function() {
-        _fun44809: for (var _fun44809_ip = 0;;) switch (_fun44809_ip) {
+        _fun44811: for (var _fun44811_ip = 0;;) switch (_fun44811_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot2;
@@ -41,16 +41,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.isFabric;
                 var1 = var1.bind(var3)();
                 if (!var1) {
-                    _fun44809_ip = 45;
-                    continue _fun44809
+                    _fun44811_ip = 45;
+                    continue _fun44811
                 }
             case 38:
                 var3 = _closure1_slot3;
                 var1 = !var3;
             case 45:
                 if (!var1) {
-                    _fun44809_ip = 84;
-                    continue _fun44809
+                    _fun44811_ip = 84;
+                    continue _fun44811
                 }
             case 48:
                 var3 = _closure1_slot1;

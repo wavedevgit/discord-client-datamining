@@ -9,20 +9,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1() {
-        _fun62052: for (var _fun62052_ip = 0;;) switch (_fun62052_ip) {
+        _fun62054: for (var _fun62054_ip = 0;;) switch (_fun62054_ip) {
             case 0:
                 var5 = arg1;
                 var1 = null;
                 var0 = var1 == var5;
                 if (var0) {
-                    _fun62052_ip = 60;
-                    continue _fun62052
+                    _fun62054_ip = 60;
+                    continue _fun62054
                 }
             case 12:
                 var1 = var1 != var5;
                 if (!var1) {
-                    _fun62052_ip = 57;
-                    continue _fun62052
+                    _fun62054_ip = 57;
+                    continue _fun62054
                 }
             case 19:
                 var4 = var5.getCurrentConfig;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1;
             case 60:
                 if (var0) {
-                    _fun62052_ip = 86;
-                    continue _fun62052
+                    _fun62054_ip = 86;
+                    continue _fun62054
                 }
             case 63:
                 var3 = _closure1_slot3;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var0;
                 var0 = !var1;
                 if (var1) {
-                    _fun62052_ip = 130;
-                    continue _fun62052
+                    _fun62054_ip = 130;
+                    continue _fun62054
                 }
             case 95:
                 var2 = _closure1_slot1;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62053: for (var _fun62053_ip = 0;;) switch (_fun62053_ip) {
+        _fun62055: for (var _fun62055_ip = 0;;) switch (_fun62055_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.initialUpsellKey;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.UPLOAD;
                 if (!(var1 !== var3)) {
-                    _fun62053_ip = 386;
-                    continue _fun62053
+                    _fun62055_ip = 386;
+                    continue _fun62055
                 }
             case 53:
                 var4 = _closure1_slot0;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.GLOBAL_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun62053_ip = 343;
-                    continue _fun62053
+                    _fun62055_ip = 343;
+                    continue _fun62055
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.ANIMATED_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun62053_ip = 300;
-                    continue _fun62053
+                    _fun62055_ip = 300;
+                    continue _fun62055
                 }
             case 125:
                 var4 = _closure1_slot0;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.SOUNDBOARD;
                 if (!(var1 !== var3)) {
-                    _fun62053_ip = 257;
-                    continue _fun62053
+                    _fun62055_ip = 257;
+                    continue _fun62055
                 }
             case 158:
                 var4 = _closure1_slot0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.APP_ICONS;
                 if (!(var1 !== var3)) {
-                    _fun62053_ip = 195;
-                    continue _fun62053
+                    _fun62055_ip = 195;
+                    continue _fun62055
                 }
             case 191:
                 var1 = false;

@@ -567,4 +567,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.MAX_AVATARS_IN_PILE = var3;
     var2.ICYMIForumThreadRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 1410, 33, 13597, 671, 566, 4679, 8956, 13636, 9182, 8955, 4794, 13638, 1234, 21, 4904, 3942, 4783, 13642, 13644, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 1410, 33, 13595, 671, 566, 4679, 8956, 13634, 9182, 8955, 4794, 13636, 1234, 21, 4904, 3942, 4783, 13640, 13642, 2]);

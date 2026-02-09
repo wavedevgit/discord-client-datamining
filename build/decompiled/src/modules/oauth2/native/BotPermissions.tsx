@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/oauth2/native/BotPermissions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48820: for (var _fun48820_ip = 0;;) switch (_fun48820_ip) {
+        _fun48822: for (var _fun48822_ip = 0;;) switch (_fun48822_ip) {
             case 0:
                 var2 = arg0;
                 var21 = var2.application;
@@ -347,8 +347,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 > var6;
                 var5 = null;
                 if (!var6) {
-                    _fun48820_ip = 701;
-                    continue _fun48820
+                    _fun48822_ip = 701;
+                    continue _fun48822
                 }
             case 518:
                 var8 = _closure1_slot7;

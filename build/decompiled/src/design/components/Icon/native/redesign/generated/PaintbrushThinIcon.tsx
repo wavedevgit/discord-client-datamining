@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PaintbrushThinIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 13627, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 13625, 2]);

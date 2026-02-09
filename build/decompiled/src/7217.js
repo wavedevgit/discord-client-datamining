@@ -28,22 +28,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun58993: for (var _fun58993_ip = 0;;) switch (_fun58993_ip) {
+                _fun58995: for (var _fun58995_ip = 0;;) switch (_fun58995_ip) {
                     case 0:
                         StartGenerator();
                         var2 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun58993_ip = 103;
-                            continue _fun58993
+                            _fun58995_ip = 103;
+                            continue _fun58995
                         }
                     case 12:
                         var1 = undefined;
                         var _closure4_slot0 = var1;
                         var4 = _closure1_slot1;
                         if (!var4) {
-                            _fun58993_ip = 97;
-                            continue _fun58993
+                            _fun58995_ip = 97;
+                            continue _fun58995
                         }
                     case 28:
                         var4 = _closure1_slot1;
@@ -55,8 +55,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 46:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun58993_ip = 100;
-                            continue _fun58993
+                            _fun58995_ip = 100;
+                            continue _fun58995
                         }
                     case 52:
                         var5 = var1.userMarketplaceAmazon;
@@ -77,13 +77,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         _closure4_slot0 = var4;
                         var4 = var2.forEach;
                         var3 = function(arg0) { // Environment: var3
-                            _fun58994: for (var _fun58994_ip = 0;;) switch (_fun58994_ip) {
+                            _fun58996: for (var _fun58996_ip = 0;;) switch (_fun58996_ip) {
                                 case 0:
                                     var1 = arg0;
                                     var2 = _closure4_slot0;
                                     if (!var2) {
-                                        _fun58994_ip = 72;
-                                        continue _fun58994
+                                        _fun58996_ip = 72;
+                                        continue _fun58996
                                     }
                                 case 13:
                                     var2 = var1.originalPrice;
@@ -94,8 +94,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var0 = '0.0';
                                     var4 = var0;
                                     if (!var5) {
-                                        _fun58994_ip = 50;
-                                        continue _fun58994
+                                        _fun58996_ip = 50;
+                                        continue _fun58996
                                     }
                                 case 47:
                                     var4 = var2;
@@ -103,8 +103,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var1.price = var4;
                                     var3 = var3 != var2;
                                     if (!var3) {
-                                        _fun58994_ip = 66;
-                                        continue _fun58994
+                                        _fun58996_ip = 66;
+                                        continue _fun58996
                                     }
                                 case 63:
                                     var0 = var2;

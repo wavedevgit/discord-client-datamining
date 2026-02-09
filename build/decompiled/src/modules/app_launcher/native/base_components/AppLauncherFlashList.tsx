@@ -251,4 +251,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherFlashListProps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4963, 13815, 7804, 7805, 5804, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 4963, 13813, 7804, 7805, 5804, 2]);

@@ -12,15 +12,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function() {
-        _fun44787: for (var _fun44787_ip = 0;;) switch (_fun44787_ip) {
+        _fun44789: for (var _fun44789_ip = 0;;) switch (_fun44789_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = null;
                 var3 = var1 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun44787_ip = 24;
-                    continue _fun44787
+                    _fun44789_ip = 24;
+                    continue _fun44789
                 }
             case 18:
                 var0 = var2.nativeFabricUIManager;

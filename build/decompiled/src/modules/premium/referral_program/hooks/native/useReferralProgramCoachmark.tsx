@@ -278,4 +278,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useReferralProgramCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 1369, 33, 1297, 4704, 13518, 3213, 1358, 6717, 6008, 1234, 5973, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 1369, 33, 1297, 4704, 13516, 3213, 1358, 6717, 6008, 1234, 5973, 2]);

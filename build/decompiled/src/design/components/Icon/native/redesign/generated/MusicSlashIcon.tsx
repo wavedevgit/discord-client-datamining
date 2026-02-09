@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/MusicSlashIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun68411: for (var _fun68411_ip = 0;;) switch (_fun68411_ip) {
+        _fun68413: for (var _fun68413_ip = 0;;) switch (_fun68413_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun68411_ip = 53;
-                    continue _fun68411
+                    _fun68413_ip = 53;
+                    continue _fun68413
                 }
             case 19:
                 var1 = _closure1_slot1;

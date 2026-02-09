@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun74859: for (var _fun74859_ip = 0;;) switch (_fun74859_ip) {
+        _fun74861: for (var _fun74861_ip = 0;;) switch (_fun74861_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.onClickSuggestion;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0;
                 var0 = null;
                 if (!(var1 !== var2)) {
-                    _fun74859_ip = 290;
-                    continue _fun74859
+                    _fun74861_ip = 290;
+                    continue _fun74861
                 }
             case 95:
                 var3 = _closure1_slot6;

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun68714: for (var _fun68714_ip = 0;;) switch (_fun68714_ip) {
+        _fun68716: for (var _fun68716_ip = 0;;) switch (_fun68716_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.children;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var10;
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun68714_ip = 133;
-                    continue _fun68714
+                    _fun68716_ip = 133;
+                    continue _fun68716
                 }
             case 107:
                 var10 = _closure1_slot1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_chat/native/components/VoiceChatHeaderIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68715: for (var _fun68715_ip = 0;;) switch (_fun68715_ip) {
+        _fun68717: for (var _fun68717_ip = 0;;) switch (_fun68717_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.accessibilityLabel;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(2);
                 var6[0] = var8;
                 if (!var7) {
-                    _fun68715_ip = 122;
-                    continue _fun68715
+                    _fun68717_ip = 122;
+                    continue _fun68717
                 }
             case 116:
                 var7 = var11.disabledOpacity;

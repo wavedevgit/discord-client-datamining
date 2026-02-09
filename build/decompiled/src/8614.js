@@ -40,15 +40,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var4.jsx;
     var _closure1_slot6 = var4;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun69058: for (var _fun69058_ip = 0;;) switch (_fun69058_ip) {
+        _fun69060: for (var _fun69060_ip = 0;;) switch (_fun69060_ip) {
             case 0:
                 var6 = arg0;
                 var8 = var6.children;
                 var1 = var6.offset;
                 var3 = undefined;
                 if (!(var3 === var1)) {
-                    _fun69058_ip = 24;
-                    continue _fun69058
+                    _fun69060_ip = 24;
+                    continue _fun69060
                 }
             case 22:
                 var1 = {};
@@ -56,8 +56,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.closed;
                 var11 = 0;
                 if (!(var3 !== var2)) {
-                    _fun69058_ip = 39;
-                    continue _fun69058
+                    _fun69060_ip = 39;
+                    continue _fun69060
                 }
             case 36:
                 var11 = var2;
@@ -66,8 +66,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.opened;
                 var13 = 0;
                 if (!(var3 !== var1)) {
-                    _fun69058_ip = 58;
-                    continue _fun69058
+                    _fun69060_ip = 58;
+                    continue _fun69060
                 }
             case 55:
                 var13 = var1;
@@ -77,8 +77,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var6.enabled;
                 var10 = var3 === var1;
                 if (var10) {
-                    _fun69058_ip = 82;
-                    continue _fun69058
+                    _fun69060_ip = 82;
+                    continue _fun69060
                 }
             case 79:
                 var10 = var1;
@@ -115,19 +115,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2[3] = var6;
                 var2[4] = var5;
                 var0 = function() { // Environment: var0
-                    _fun69059: for (var _fun69059_ip = 0;;) switch (_fun69059_ip) {
+                    _fun69061: for (var _fun69061_ip = 0;;) switch (_fun69061_ip) {
                         case 0:
                             var2 = {};
                             var3 = {};
                             var0 = _closure2_slot2;
                             if (var0) {
-                                _fun69059_ip = 20;
-                                continue _fun69059
+                                _fun69061_ip = 20;
+                                continue _fun69061
                             }
                         case 14:
                             var0 = _closure2_slot0;
-                            _fun69059_ip = 46;
-                            continue _fun69059;
+                            _fun69061_ip = 46;
+                            continue _fun69061;
                         case 20:
                             var7 = _closure1_slot5;
                             var6 = var7.add;

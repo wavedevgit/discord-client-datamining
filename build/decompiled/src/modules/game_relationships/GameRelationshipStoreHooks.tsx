@@ -246,4 +246,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHasGameRelationshipsForUserByType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11411, 660, 566, 8483, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11410, 660, 566, 8483, 2]);

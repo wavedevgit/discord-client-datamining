@@ -984,4 +984,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useBaseActivityPanelFocusedView = var3;
     var2.BaseActivityPanelFocusedView = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1372, 1371, 3458, 7985, 14276, 660, 11886, 33, 1297, 671, 1568, 566, 1464, 14271, 14221, 3721, 4027, 4097, 4081, 3161, 4066, 3083, 14273, 14282, 7983, 8127, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1372, 1371, 3458, 7985, 14274, 660, 11885, 33, 1297, 671, 1568, 566, 1464, 14269, 14219, 3721, 4027, 4097, 4081, 3161, 4066, 3083, 14271, 14280, 7983, 8127, 2]);

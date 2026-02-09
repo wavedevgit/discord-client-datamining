@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.PressableOpacity;
         var5 = {};
         var9 = function() {
-            _fun68224: for (var _fun68224_ip = 0;;) switch (_fun68224_ip) {
+            _fun68226: for (var _fun68226_ip = 0;;) switch (_fun68226_ip) {
                 case 0:
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1.bind(var2)();
                     var1 = null;
                     if (!(var1 != var4)) {
-                        _fun68224_ip = 114;
-                        continue _fun68224
+                        _fun68226_ip = 114;
+                        continue _fun68226
                     }
                 case 67:
                     var3 = var4.navigate;

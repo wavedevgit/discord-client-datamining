@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/native/useChatWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun78152: for (var _fun78152_ip = 0;;) switch (_fun78152_ip) {
+        _fun78154: for (var _fun78154_ip = 0;;) switch (_fun78154_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot1;
@@ -48,20 +48,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun78152_ip = 97;
-                    continue _fun78152
+                    _fun78154_ip = 97;
+                    continue _fun78154
                 }
             case 90:
                 var0 = var3;
                 if (!(var1 === var5)) {
-                    _fun78152_ip = 110;
-                    continue _fun78152
+                    _fun78154_ip = 110;
+                    continue _fun78154
                 }
             case 97:
                 var1 = var3;
                 if (!var4) {
-                    _fun78152_ip = 107;
-                    continue _fun78152
+                    _fun78154_ip = 107;
+                    continue _fun78154
                 }
             case 103:
                 var1 = var3 - var2;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun78153: for (var _fun78153_ip = 0;;) switch (_fun78153_ip) {
+        _fun78155: for (var _fun78155_ip = 0;;) switch (_fun78155_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot0;
@@ -93,20 +93,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.width;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun78153_ip = 83;
-                    continue _fun78153
+                    _fun78155_ip = 83;
+                    continue _fun78155
                 }
             case 76:
                 var0 = var3;
                 if (!(var1 === var6)) {
-                    _fun78153_ip = 126;
-                    continue _fun78153
+                    _fun78155_ip = 126;
+                    continue _fun78155
                 }
             case 83:
                 var1 = var3;
                 if (!var4) {
-                    _fun78153_ip = 123;
-                    continue _fun78153
+                    _fun78155_ip = 123;
+                    continue _fun78155
                 }
             case 89:
                 var4 = _closure1_slot0;

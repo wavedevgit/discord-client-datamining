@@ -1,7 +1,7 @@
 // modules/core/native/ReanimatedNativeView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun53770: for (var _fun53770_ip = 0;;) switch (_fun53770_ip) {
+    _fun53772: for (var _fun53772_ip = 0;;) switch (_fun53772_ip) {
         case 0:
             var4 = require;
             var8 = metroImportDefault;
@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.isAndroid;
             var1 = var1.bind(var3)();
             if (var1) {
-                _fun53770_ip = 84;
-                continue _fun53770
+                _fun53772_ip = 84;
+                continue _fun53772
             }
         case 70:
             var1 = 2;
             var1 = var5[var1];
             var1 = var8.bind(var0)(var1);
-            _fun53770_ip = 96;
-            continue _fun53770;
+            _fun53772_ip = 96;
+            continue _fun53772;
         case 84:
             var3 = 1;
             var3 = var5[var3];
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var6.isFabric;
             var3 = var3.bind(var6)();
             if (var3) {
-                _fun53770_ip = 156;
-                continue _fun53770
+                _fun53772_ip = 156;
+                continue _fun53772
             }
         case 121:
             var3 = 4;

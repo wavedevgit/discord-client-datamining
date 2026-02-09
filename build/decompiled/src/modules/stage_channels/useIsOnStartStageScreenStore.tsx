@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.setIsOnStartStageScreen = var3;
     var1 = function arg0() {
-        _fun52393: for (var _fun52393_ip = 0;;) switch (_fun52393_ip) {
+        _fun52395: for (var _fun52395_ip = 0;;) switch (_fun52395_ip) {
             case 0:
                 var3 = arg0;
                 var _closure2_slot0 = var3;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var0)(var3);
                 var5 = var4;
                 if (!var5) {
-                    _fun52393_ip = 147;
-                    continue _fun52393
+                    _fun52395_ip = 147;
+                    continue _fun52395
                 }
             case 144:
                 var5 = !var3;
@@ -143,25 +143,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var6;
                 var2[1] = var5;
                 var1 = function() { // Environment: var1
-                    _fun52396: for (var _fun52396_ip = 0;;) switch (_fun52396_ip) {
+                    _fun52398: for (var _fun52398_ip = 0;;) switch (_fun52398_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             if (var1) {
-                                _fun52396_ip = 30;
-                                continue _fun52396
+                                _fun52398_ip = 30;
+                                continue _fun52398
                             }
                         case 10:
                             var3 = _closure1_slot7;
                             var2 = _closure2_slot2;
                             var1 = undefined;
                             var1 = var3.bind(var1)(var2);
-                            _fun52396_ip = 53;
-                            continue _fun52396;
+                            _fun52398_ip = 53;
+                            continue _fun52398;
                         case 30:
                             var0 = _closure2_slot2;
                             if (var0) {
-                                _fun52396_ip = 53;
-                                continue _fun52396
+                                _fun52398_ip = 53;
+                                continue _fun52398
                             }
                         case 37:
                             var2 = _closure1_slot7;

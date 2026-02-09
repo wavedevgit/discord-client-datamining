@@ -544,4 +544,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useHasSettingsBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 5280, 33, 1297, 671, 7165, 10403, 6715, 3213, 1358, 3111, 5366, 13524, 4106, 13525, 13526, 7097, 1234, 13528, 13529, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1623, 5280, 33, 1297, 671, 7165, 10402, 6715, 3213, 1358, 3111, 5366, 13522, 4106, 13523, 13524, 7097, 1234, 13526, 13527, 2]);

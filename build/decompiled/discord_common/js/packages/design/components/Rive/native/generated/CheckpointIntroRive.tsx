@@ -69,15 +69,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/CheckpointIntroRive.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun27635: for (var _fun27635_ip = 0;;) switch (_fun27635_ip) {
+        _fun27633: for (var _fun27633_ip = 0;;) switch (_fun27633_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.artboard;
                 var8 = 'Checkpoint Intro Desktop';
                 var3 = undefined;
                 if (!(var3 !== var0)) {
-                    _fun27635_ip = 22;
-                    continue _fun27635
+                    _fun27633_ip = 22;
+                    continue _fun27633
                 }
             case 19:
                 var8 = var0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.defaultViewModelInstance;
                 var6 = 'default';
                 if (!(var3 !== var0)) {
-                    _fun27635_ip = 45;
-                    continue _fun27635
+                    _fun27633_ip = 45;
+                    continue _fun27633
                 }
             case 42:
                 var6 = var0;

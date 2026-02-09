@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/useChannelListWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun93412: for (var _fun93412_ip = 0;;) switch (_fun93412_ip) {
+        _fun93414: for (var _fun93414_ip = 0;;) switch (_fun93414_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -58,14 +58,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 - var0;
                 var0 = 0;
                 if (!var5) {
-                    _fun93412_ip = 126;
-                    continue _fun93412
+                    _fun93414_ip = 126;
+                    continue _fun93414
                 }
             case 117:
                 var0 = 0;
                 if (var3) {
-                    _fun93412_ip = 126;
-                    continue _fun93412
+                    _fun93414_ip = 126;
+                    continue _fun93414
                 }
             case 122:
                 var0 = _closure1_slot3;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() {
-        _fun93413: for (var _fun93413_ip = 0;;) switch (_fun93413_ip) {
+        _fun93415: for (var _fun93415_ip = 0;;) switch (_fun93415_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 - var0;
                 var0 = 0;
                 if (!var3) {
-                    _fun93413_ip = 94;
-                    continue _fun93413
+                    _fun93415_ip = 94;
+                    continue _fun93415
                 }
             case 90:
                 var0 = _closure1_slot3;

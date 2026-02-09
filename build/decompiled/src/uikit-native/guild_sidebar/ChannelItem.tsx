@@ -722,4 +722,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.getChannelMode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 3611, 3102, 1621, 660, 1379, 4304, 33, 1297, 671, 4874, 11763, 1417, 4704, 13358, 4844, 4809, 566, 5504, 4793, 13359, 4794, 1220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 3611, 3102, 1621, 660, 1379, 4304, 33, 1297, 671, 4874, 11762, 1417, 4704, 13356, 4844, 4809, 566, 5504, 4793, 13357, 4794, 1220, 2]);

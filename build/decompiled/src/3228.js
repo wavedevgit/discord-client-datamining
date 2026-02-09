@@ -1,13 +1,13 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun28040: for (var _fun28040_ip = 0;;) switch (_fun28040_ip) {
+    _fun28038: for (var _fun28038_ip = 0;;) switch (_fun28038_ip) {
         case 0:
             var0 = global;
             var0 = var0.Array;
             var1 = var0.isArray;
             if (var1) {
-                _fun28040_ip = 23;
-                continue _fun28040
+                _fun28038_ip = 23;
+                continue _fun28038
             }
         case 16:
             var1 = function(arg0) { // Environment: var0

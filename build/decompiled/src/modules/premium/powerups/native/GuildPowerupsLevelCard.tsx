@@ -753,4 +753,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GuildPowerupLevelBody = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6784, 660, 13418, 33, 1297, 671, 4098, 7749, 13419, 13420, 3942, 1234, 1892, 13403, 13421, 13422, 13444, 13429, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6784, 660, 13416, 33, 1297, 671, 4098, 7749, 13417, 13418, 3942, 1234, 1892, 13401, 13419, 13420, 13442, 13427, 2]);

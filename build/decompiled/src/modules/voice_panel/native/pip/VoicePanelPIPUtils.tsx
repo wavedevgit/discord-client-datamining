@@ -1695,4 +1695,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.calculatePIPPositionFromVelocity = var3;
     var2.getVoicePanelPIPBorderRadius = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3949, 3715, 1216, 11886, 14326, 3524, 11887, 8117, 12673, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3949, 3715, 1216, 11885, 14324, 3524, 11886, 8117, 12672, 671, 2]);

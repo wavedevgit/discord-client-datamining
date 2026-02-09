@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun104218_ip = 330;
+                            _fun104218_ip = 326;
                             continue _fun104218
                         }
                     case 10:
@@ -134,16 +134,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var8.bind(var9)(var7);
                         var1.url = var7;
                         var1 = var2.bind(var4)(var1);
-                        SaveGenerator(address = 95);
-                    case 93:
+                        SaveGenerator(address = 91);
+                    case 89:
                         return var1;
-                    case 95:
+                    case 91:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun104218_ip = 275;
+                            _fun104218_ip = 271;
                             continue _fun104218
                         }
-                    case 104:
+                    case 100:
                         var4 = var1.body;
                         var2 = {};
                         var7 = var4.primary_category_id;
@@ -178,11 +178,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.guildId = var6;
                         var3.metadata = var2;
                         var3 = var4.bind(var5)(var3);
-                    case 272: // try_end0
+                    case 268: // try_end0
                         return var2;
-                    case 275:
+                    case 271:
                         return var1;
-                    case 278: // catch_target0
+                    case 274: // catch_target0
                         CatchBlockStart(arg_register = 1);
                         var3 = _closure1_slot1;
                         var2 = _closure1_slot2;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.type = var5;
                         var2 = var3.bind(var4)(var2);
                         return var1;
-                    case 330:
+                    case 326:
                         return var0;
                 }
             };
@@ -802,4 +802,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.deleteGuildCategory = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1687, 13615, 660, 507, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1687, 13613, 660, 507, 806, 2]);

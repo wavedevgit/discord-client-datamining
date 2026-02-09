@@ -989,4 +989,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HappeningNowLiveStageContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10960, 660, 33, 1297, 671, 795, 8037, 1307, 13305, 13306, 13307, 10961, 4862, 5504, 13315, 1234, 3960, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10959, 660, 33, 1297, 671, 795, 8037, 1307, 13303, 13304, 13305, 10960, 4862, 5504, 13313, 1234, 3960, 2]);

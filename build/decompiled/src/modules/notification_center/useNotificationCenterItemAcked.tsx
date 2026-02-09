@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNotificationCenterItemAcked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13558, 566, 4222, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13556, 566, 4222, 2]);

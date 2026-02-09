@@ -2789,7 +2789,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var3 = arg4;
             if (!(var0 === var3)) {
-                _fun2957_ip = 114;
+                _fun2957_ip = 116;
                 continue _fun2957
             }
         case 37:
@@ -2814,18 +2814,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4.WHATWGFetch = var5;
             var4 = undefined;
             var4 = var1.bind(var4)(var5);
-            _fun2957_ip = 119;
+            _fun2957_ip = 121;
             continue _fun2957;
         case 90:
             var5 = var3.define;
             var4 = undefined;
             var3 = ['exports'];
             var3 = var5.bind(var4)(var3, var1);
-            _fun2957_ip = 119;
+            _fun2957_ip = 121;
             continue _fun2957;
-        case 114:
+        case 116:
             var0 = var1.bind(var0)(var2);
-        case 119:
+        case 121:
             var0 = undefined;
             return var0;
     }

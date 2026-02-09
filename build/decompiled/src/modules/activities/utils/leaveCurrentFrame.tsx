@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/leaveCurrentFrame.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun63658: for (var _fun63658_ip = 0;;) switch (_fun63658_ip) {
+        _fun63660: for (var _fun63660_ip = 0;;) switch (_fun63660_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getConnectedFrame;
                 var3 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun63658_ip = 71;
-                    continue _fun63658
+                    _fun63660_ip = 71;
+                    continue _fun63660
                 }
             case 23:
                 var2 = _closure1_slot0;

@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderChannelSubtitle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8871, 33, 8872, 3942, 13469, 8869, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8871, 33, 8872, 3942, 13467, 8869, 2]);

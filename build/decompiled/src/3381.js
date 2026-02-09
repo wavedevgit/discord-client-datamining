@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot2 = var2;
     var2 = function arg0() {
-        _fun29098: for (var _fun29098_ip = 0;;) switch (_fun29098_ip) {
+        _fun29096: for (var _fun29096_ip = 0;;) switch (_fun29096_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.bind(var2)(var5);
                 var4 = var5;
                 if (var1) {
-                    _fun29098_ip = 69;
-                    continue _fun29098
+                    _fun29096_ip = 69;
+                    continue _fun29096
                 }
             case 39:
                 var3 = _closure1_slot0;
@@ -39,25 +39,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = typeof var4;
                 var1 = 'symbol';
                 if (!(var1 !== var3)) {
-                    _fun29098_ip = 176;
-                    continue _fun29098
+                    _fun29096_ip = 176;
+                    continue _fun29096
                 }
             case 80:
                 var1 = 'bigint';
                 if (!(var1 !== var3)) {
-                    _fun29098_ip = 128;
-                    continue _fun29098
+                    _fun29096_ip = 128;
+                    continue _fun29096
                 }
             case 88:
                 var1 = 'string';
                 if (!(var1 !== var3)) {
-                    _fun29098_ip = 101;
-                    continue _fun29098
+                    _fun29096_ip = 101;
+                    continue _fun29096
                 }
             case 96:
                 var1 = var4 - 0;
-                _fun29098_ip = 126;
-                continue _fun29098;
+                _fun29096_ip = 126;
+                continue _fun29096;
             case 101:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;

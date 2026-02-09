@@ -296,4 +296,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePasswordRegistrationStep = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 13116, 7560, 13139, 1234, 13128, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 13114, 7560, 13137, 1234, 13126, 2]);

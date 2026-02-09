@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForRoleSubscriptions = var3;
     var3 = function arg0() {
-        _fun50460: for (var _fun50460_ip = 0;;) switch (_fun50460_ip) {
+        _fun50462: for (var _fun50462_ip = 0;;) switch (_fun50462_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var5 = null;
                 if (!(var5 == var3)) {
-                    _fun50460_ip = 52;
-                    continue _fun50460
+                    _fun50462_ip = 52;
+                    continue _fun50462
                 }
             case 48:
                 var3 = _closure1_slot2;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRoleSubscriptionMaxTiersExperiment = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun50461: for (var _fun50461_ip = 0;;) switch (_fun50461_ip) {
+        _fun50463: for (var _fun50463_ip = 0;;) switch (_fun50463_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun50461_ip = 41;
-                    continue _fun50461
+                    _fun50463_ip = 41;
+                    continue _fun50463
                 }
             case 18:
                 var3 = _closure1_slot3;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasEnabledMonetization = var3;
     var3 = function arg0() {
-        _fun50463: for (var _fun50463_ip = 0;;) switch (_fun50463_ip) {
+        _fun50465: for (var _fun50465_ip = 0;;) switch (_fun50465_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -119,15 +119,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7 == var3;
                 var0 = undefined;
                 if (var8) {
-                    _fun50463_ip = 58;
-                    continue _fun50463
+                    _fun50465_ip = 58;
+                    continue _fun50465
                 }
             case 53:
                 var0 = var3.id;
             case 58:
                 if (!(var7 == var0)) {
-                    _fun50463_ip = 66;
-                    continue _fun50463
+                    _fun50465_ip = 66;
+                    continue _fun50465
                 }
             case 62:
                 var0 = _closure1_slot2;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useIsExpeditedOnboardingGuild;
                 var1 = var1.bind(var2)(var3);
                 if (!var0) {
-                    _fun50463_ip = 137;
-                    continue _fun50463
+                    _fun50465_ip = 137;
+                    continue _fun50465
                 }
             case 134:
                 var0 = var1;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForRoleSubscriptionsMobileTeamSetup = var3;
     var3 = function arg0() {
-        _fun50464: for (var _fun50464_ip = 0;;) switch (_fun50464_ip) {
+        _fun50466: for (var _fun50466_ip = 0;;) switch (_fun50466_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun50464_ip = 52;
-                    continue _fun50464
+                    _fun50466_ip = 52;
+                    continue _fun50466
                 }
             case 48:
                 var0 = _closure1_slot2;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildEligibleForTierTemplates = var3;
     var3 = function arg0() {
-        _fun50465: for (var _fun50465_ip = 0;;) switch (_fun50465_ip) {
+        _fun50467: for (var _fun50467_ip = 0;;) switch (_fun50467_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -206,8 +206,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun50465_ip = 52;
-                    continue _fun50465
+                    _fun50467_ip = 52;
+                    continue _fun50467
                 }
             case 48:
                 var0 = _closure1_slot2;
@@ -225,7 +225,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildEligibleForTierTemplates = var3;
     var3 = function arg0() {
-        _fun50466: for (var _fun50466_ip = 0;;) switch (_fun50466_ip) {
+        _fun50468: for (var _fun50468_ip = 0;;) switch (_fun50468_ip) {
             case 0:
                 var0 = arg0;
                 var3 = _closure1_slot0;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = null;
                 if (!(var5 == var0)) {
-                    _fun50466_ip = 52;
-                    continue _fun50466
+                    _fun50468_ip = 52;
+                    continue _fun50468
                 }
             case 48:
                 var0 = _closure1_slot2;

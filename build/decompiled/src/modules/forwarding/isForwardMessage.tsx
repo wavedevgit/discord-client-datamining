@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forwarding/isForwardMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun39502: for (var _fun39502_ip = 0;;) switch (_fun39502_ip) {
+        _fun39504: for (var _fun39504_ip = 0;;) switch (_fun39504_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.messageReference;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun39502_ip = 25;
-                    continue _fun39502
+                    _fun39504_ip = 25;
+                    continue _fun39504
                 }
             case 20:
                 var1 = var0.type;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun39503: for (var _fun39503_ip = 0;;) switch (_fun39503_ip) {
+        _fun39505: for (var _fun39505_ip = 0;;) switch (_fun39505_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.message_reference;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun39503_ip = 25;
-                    continue _fun39503
+                    _fun39505_ip = 25;
+                    continue _fun39505
                 }
             case 20:
                 var1 = var0.type;

@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = new Array(1);
         var4[0] = var2;
         var2 = function() { // Environment: var1
-            _fun111619: for (var _fun111619_ip = 0;;) switch (_fun111619_ip) {
+            _fun111618: for (var _fun111618_ip = 0;;) switch (_fun111618_ip) {
                 case 0:
                     var1 = _closure1_slot4;
                     var0 = var1.getSecureFramesState;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun111619_ip = 34;
-                        continue _fun111619
+                        _fun111618_ip = 34;
+                        continue _fun111618
                     }
                 case 28:
                     var0 = var1.epochAuthenticator;

@@ -27,21 +27,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var1;
     var1 = function() { // Environment: var0
         var0 = function arg0() {
-            _fun75651: for (var _fun75651_ip = 0;;) switch (_fun75651_ip) {
+            _fun75653: for (var _fun75653_ip = 0;;) switch (_fun75653_ip) {
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var2 = var1.type;
                     var1 = 'spring';
                     if (!(var1 !== var2)) {
-                        _fun75651_ip = 43;
-                        continue _fun75651
+                        _fun75653_ip = 43;
+                        continue _fun75653
                     }
                 case 22:
                     var1 = 'timing';
                     if (!(var1 !== var2)) {
-                        _fun75651_ip = 34;
-                        continue _fun75651
+                        _fun75653_ip = 34;
+                        continue _fun75653
                     }
                 case 30:
                     var1 = undefined;

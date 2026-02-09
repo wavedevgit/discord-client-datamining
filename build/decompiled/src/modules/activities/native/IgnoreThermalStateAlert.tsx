@@ -89,13 +89,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'cancelText';
         var0[var6] = var7;
         var6 = function() {
-            _fun64887: for (var _fun64887_ip = 0;;) switch (_fun64887_ip) {
+            _fun64889: for (var _fun64889_ip = 0;;) switch (_fun64889_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun64887_ip = 23;
-                        continue _fun64887
+                        _fun64889_ip = 23;
+                        continue _fun64889
                     }
                 case 13:
                     var1 = _closure2_slot0;

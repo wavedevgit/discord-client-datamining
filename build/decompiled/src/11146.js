@@ -1,117 +1,75 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
     var2 = exports;
-    var6 = dependencyMap;
-    var0 = 0;
-    var3 = var6[var0];
-    var0 = undefined;
-    var4 = var5.bind(var0)(var3);
-    var3 = global;
-    var9 = var3.Object;
-    var8 = var9.defineProperty;
-    var7 = {};
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
     var3 = true;
-    var7.value = var3;
-    var3 = '__esModule';
-    var3 = var8.bind(var9)(var2, var3, var7);
-    var2.getYoutubeMeta = var0;
-    var3 = 1;
-    var3 = var6[var3];
-    var3 = var5.bind(var0)(var3);
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var1 = function arg0() {
-        var1 = arg0;
-        var _closure2_slot0 = var1;
-        var1 = _closure1_slot0;
-        var4 = var1.default;
-        var3 = var4.async;
-        var1 = global;
-        var5 = var1.Promise;
-        var9 = function arg0() {
-            _fun86486: for (var _fun86486_ip = 0;;) switch (_fun86486_ip) {
-                case 0:
-                    var1 = arg0;
-                    var6 = 'end';
-                    var5 = 6;
-                    var3 = 5;
-                    var0 = 2;
-                    var4 = 0;
-                case 18:
-                    var2 = var1.next;
-                    var1.prev = var2;
-                    if (!(var4 !== var2)) {
-                        _fun86486_ip = 143;
-                        continue _fun86486
-                    }
-                case 33:
-                    if (!(var0 !== var2)) {
-                        _fun86486_ip = 85;
-                        continue _fun86486
-                    }
-                case 37:
-                    if (!(var3 !== var2)) {
-                        _fun86486_ip = 61;
-                        continue _fun86486
-                    }
-                case 41:
-                    if (!(var5 !== var2)) {
-                        _fun86486_ip = 49;
-                        continue _fun86486
-                    }
-                case 45:
-                    if (var6 !== var2) {
-                        _fun86486_ip = 18;
-                        continue _fun86486
-                    }
-                case 49:
-                    var2 = var1.stop;
-                    var2 = var2.bind(var1)();
-                    return var2;
-                case 61:
-                    var5 = var1.abrupt;
-                    var4 = var1.sent;
-                    var2 = 'return';
-                    var2 = var5.bind(var1)(var2, var4);
-                    return var2;
-                case 85:
-                    var4 = var1.sent;
-                    var _closure2_slot1 = var4;
-                    var1.next = var3;
-                    var3 = _closure1_slot0;
-                    var4 = var3.default;
-                    var3 = var4.awrap;
-                    var5 = _closure2_slot1;
-                    var2 = var5.json;
-                    var2 = var2.bind(var5)();
-                    var2 = var3.bind(var4)(var2);
-                    return var2;
-                case 143:
-                    var1.next = var0;
-                    var0 = _closure1_slot0;
-                    var2 = var0.default;
-                    var1 = var2.awrap;
-                    var0 = global;
-                    var4 = var0.fetch;
-                    var3 = _closure2_slot0;
-                    var0 = 'https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=';
-                    var5 = var0 + var3;
-                    var3 = undefined;
-                    var0 = '&format=json';
-                    var0 = var5 + var0;
-                    var0 = var4.bind(var3)(var0);
-                    var0 = var1.bind(var2)(var0);
-                    return var0;
-            }
-        };
-        var10 = var4;
-        var8 = null;
-        var7 = null;
-        var6 = null;
-        var0 = var10[var3](var9, var8, var7, var6, var5, var4);
-        return var0;
+    var1.value = var3;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var0 = undefined;
+    var2.PLAY_MODE = var0;
+    var2.PAUSE_MODE = var0;
+    var2.MUTE_MODE = var0;
+    var2.UNMUTE_MODE = var0;
+    var2.PLAYER_STATES_NAMES = var0;
+    var2.PLAYER_STATES = var0;
+    var2.PLAYER_ERROR_NAMES = var0;
+    var2.PLAYER_ERROR = var0;
+    var2.CUSTOM_USER_AGENT = var0;
+    var2.DEFAULT_BASE_URL = var0;
+    var2.PLAY_MODE = var3;
+    var1 = false;
+    var2.PAUSE_MODE = var1;
+    var2.MUTE_MODE = var3;
+    var2.UNMUTE_MODE = var1;
+    var3 = {
+        'UNSTARTED': 'unstarted',
+        'ENDED': 'ended',
+        'PLAYING': 'playing',
+        'PAUSED': 'paused',
+        'BUFFERING': 'buffering',
+        'VIDEO_CUED': 'video cued'
     };
-    var2.getYoutubeMeta = var1;
+    var2.PLAYER_STATES_NAMES = var3;
+    var1 = {};
+    var4 = var3.UNSTARTED;
+    var1['-1'] = var4;
+    var4 = var3.ENDED;
+    var1[0] = var4;
+    var4 = var3.PLAYING;
+    var1[1] = var4;
+    var4 = var3.PAUSED;
+    var1[2] = var4;
+    var4 = var3.BUFFERING;
+    var1[3] = var4;
+    var3 = var3.VIDEO_CUED;
+    var1[5] = var3;
+    var2.PLAYER_STATES = var1;
+    var3 = {
+        'INVALID_PARAMETER': 'invalid_parameter',
+        'HTML5_ERROR': 'HTML5_error',
+        'VIDEO_NOT_FOUND': 'video_not_found',
+        'EMBED_NOT_ALLOWED': 'embed_not_allowed'
+    };
+    var2.PLAYER_ERROR_NAMES = var3;
+    var1 = {};
+    var4 = var3.INVALID_PARAMETER;
+    var1[2] = var4;
+    var4 = var3.HTML5_ERROR;
+    var1[5] = var4;
+    var4 = var3.VIDEO_NOT_FOUND;
+    var1[100] = var4;
+    var4 = var3.EMBED_NOT_ALLOWED;
+    var1[101] = var4;
+    var3 = var3.EMBED_NOT_ALLOWED;
+    var1[150] = var3;
+    var2.PLAYER_ERROR = var1;
+    var1 = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36';
+    var2.CUSTOM_USER_AGENT = var1;
+    var1 = 'https://lonelycpp.github.io/react-native-youtube-iframe/iframe.html';
+    var2.DEFAULT_BASE_URL = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5480, 3461]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

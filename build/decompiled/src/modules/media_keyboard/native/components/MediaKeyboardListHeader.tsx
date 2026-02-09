@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = var2.bind(var3)(var5);
         var8 = var9.useAnimatedStyle;
         var5 = function() {
-            _fun76257: for (var _fun76257_ip = 0;;) switch (_fun76257_ip) {
+            _fun76259: for (var _fun76259_ip = 0;;) switch (_fun76259_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = var1.get;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = 1;
                     var9 = var7;
                     if (!var0) {
-                        _fun76257_ip = 82;
-                        continue _fun76257
+                        _fun76259_ip = 82;
+                        continue _fun76259
                     }
                 case 80:
                     var9 = 0;
@@ -154,15 +154,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 0;
                     var10 = 0;
                     if (!var0) {
-                        _fun76257_ip = 92;
-                        continue _fun76257
+                        _fun76259_ip = 92;
+                        continue _fun76259
                     }
                 case 89:
                     var10 = 30;
                 case 92:
                     if (!var0) {
-                        _fun76257_ip = 105;
-                        continue _fun76257
+                        _fun76259_ip = 105;
+                        continue _fun76259
                     }
                 case 95:
                     var7 = 0.9;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot2;
                     var1 = var9;
                     if (var2) {
-                        _fun76257_ip = 157;
-                        continue _fun76257
+                        _fun76259_ip = 157;
+                        continue _fun76259
                     }
                 case 122:
                     var5 = _closure1_slot0;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot2;
                     var1 = var10;
                     if (var5) {
-                        _fun76257_ip = 208;
-                        continue _fun76257
+                        _fun76259_ip = 208;
+                        continue _fun76259
                     }
                 case 173:
                     var6 = _closure1_slot0;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = _closure2_slot2;
                     var3 = var7;
                     if (var5) {
-                        _fun76257_ip = 268;
-                        continue _fun76257
+                        _fun76259_ip = 268;
+                        continue _fun76259
                     }
                 case 233:
                     var6 = _closure1_slot0;
@@ -255,7 +255,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var2.bind(var3)(var1);
         var5 = var8.useAnimatedProps;
         var1 = function() {
-            _fun76258: for (var _fun76258_ip = 0;;) switch (_fun76258_ip) {
+            _fun76260: for (var _fun76260_ip = 0;;) switch (_fun76260_ip) {
                 case 0:
                     var0 = {};
                     var3 = _closure2_slot0;
@@ -274,8 +274,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 < var1;
                     var1 = 'none';
                     if (!var2) {
-                        _fun76258_ip = 84;
-                        continue _fun76258
+                        _fun76260_ip = 84;
+                        continue _fun76260
                     }
                 case 80:
                     var1 = 'auto';

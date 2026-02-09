@@ -24604,10 +24604,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 'childNodes';
                     var2 = var2 in var1;
                     if (!var2) {
-                        _fun11564_ip = 74;
+                        _fun11564_ip = 72;
                         continue _fun11564
                     }
-                case 53:
+                case 51:
                     var2 = var1.childNodes;
                     var1 = var2.forEach;
                     var0 = function(arg0) { // Environment: var0
@@ -24620,7 +24620,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                     };
                     var0 = var1.bind(var2)(var0);
-                case 74:
+                case 72:
                     var0 = undefined;
                     return var0;
             }

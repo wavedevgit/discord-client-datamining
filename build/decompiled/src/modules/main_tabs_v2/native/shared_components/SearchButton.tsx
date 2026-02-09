@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
     var1 = function arg0() {
-        _fun90414: for (var _fun90414_ip = 0;;) switch (_fun90414_ip) {
+        _fun90415: for (var _fun90415_ip = 0;;) switch (_fun90415_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.panelVariant;
@@ -117,13 +117,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(3);
                 var6[0] = var9;
                 if (var7) {
-                    _fun90414_ip = 91;
-                    continue _fun90414
+                    _fun90415_ip = 91;
+                    continue _fun90415
                 }
             case 83:
                 var7 = var8.roundedCorners;
-                _fun90414_ip = 97;
-                continue _fun90414;
+                _fun90415_ip = 97;
+                continue _fun90415;
             case 91:
                 var7 = var8.roundedCornersAlt;
             case 97:

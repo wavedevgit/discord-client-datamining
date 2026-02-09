@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function() {
-        _fun73819: for (var _fun73819_ip = 0;;) switch (_fun73819_ip) {
+        _fun73821: for (var _fun73821_ip = 0;;) switch (_fun73821_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.getGifProviderConfig = var3;
     var3 = function() {
-        _fun73820: for (var _fun73820_ip = 0;;) switch (_fun73820_ip) {
+        _fun73822: for (var _fun73822_ip = 0;;) switch (_fun73822_ip) {
             case 0: // try_start_0
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -118,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getProviderForAPIRequest = var3;
     var1 = function() {
-        _fun73821: for (var _fun73821_ip = 0;;) switch (_fun73821_ip) {
+        _fun73823: for (var _fun73823_ip = 0;;) switch (_fun73823_ip) {
             case 0:
                 var3 = undefined;
                 var1 = undefined;
@@ -131,13 +131,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.bucket = var4;
                 var3 = var3.userProvider;
                 if (!(var4 == var3)) {
-                    _fun73821_ip = 43;
-                    continue _fun73821
+                    _fun73823_ip = 43;
+                    continue _fun73823
                 }
             case 37:
                 var2 = _closure1_slot3;
-                _fun73821_ip = 52;
-                continue _fun73821;
+                _fun73823_ip = 52;
+                continue _fun73823;
             case 43:
                 var3 = var1;
                 var2 = var3.userProvider;

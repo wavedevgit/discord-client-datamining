@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activity_status/native/ActivityStatusText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62613: for (var _fun62613_ip = 0;;) switch (_fun62613_ip) {
+        _fun62615: for (var _fun62615_ip = 0;;) switch (_fun62615_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.children;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.variant;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun62613_ip = 30;
-                    continue _fun62613
+                    _fun62615_ip = 30;
+                    continue _fun62615
                 }
             case 24:
                 var8 = 'text-xs/medium';

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/SmokeIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53438: for (var _fun53438_ip = 0;;) switch (_fun53438_ip) {
+        _fun53440: for (var _fun53440_ip = 0;;) switch (_fun53440_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53438_ip = 32;
-                    continue _fun53438
+                    _fun53440_ip = 32;
+                    continue _fun53440
                 }
             case 29:
                 var7 = 64;

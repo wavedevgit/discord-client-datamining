@@ -308,4 +308,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowCardPlaceholder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10960, 33, 1297, 671, 3721, 4097, 10961, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 10959, 33, 1297, 671, 3721, 4097, 10960, 2]);

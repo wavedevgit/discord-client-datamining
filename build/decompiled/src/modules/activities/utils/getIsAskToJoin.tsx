@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getIsAskToJoin.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun93045: for (var _fun93045_ip = 0;;) switch (_fun93045_ip) {
+        _fun93047: for (var _fun93047_ip = 0;;) switch (_fun93047_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.activity;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun93045_ip = 25;
-                    continue _fun93045
+                    _fun93047_ip = 25;
+                    continue _fun93047
                 }
             case 20:
                 var1 = var0.type;

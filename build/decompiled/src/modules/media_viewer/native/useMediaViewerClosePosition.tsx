@@ -9,20 +9,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1, arg2() {
-        _fun77155: for (var _fun77155_ip = 0;;) switch (_fun77155_ip) {
+        _fun77157: for (var _fun77157_ip = 0;;) switch (_fun77157_ip) {
             case 0:
                 var1 = arg1;
                 var5 = arg2;
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun77155_ip = 20;
-                    continue _fun77155
+                    _fun77157_ip = 20;
+                    continue _fun77157
                 }
             case 12:
                 var0 = {};
                 var0.height = var1;
-                _fun77155_ip = 55;
-                continue _fun77155;
+                _fun77157_ip = 55;
+                continue _fun77157;
             case 20:
                 var3 = _closure1_slot1;
                 var4 = _closure1_slot2;
@@ -79,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/useMediaViewerClosePosition.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77156: for (var _fun77156_ip = 0;;) switch (_fun77156_ip) {
+        _fun77158: for (var _fun77158_ip = 0;;) switch (_fun77158_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.index;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.onClose;
                 var13 = undefined;
                 if (!(var3 === var13)) {
-                    _fun77156_ip = 43;
-                    continue _fun77156
+                    _fun77158_ip = 43;
+                    continue _fun77158
                 }
             case 36:
                 var3 = _closure1_slot5;
@@ -140,15 +140,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[2] = var7;
                 var3[3] = var2;
                 var2 = function(arg0) { // Environment: var1
-                    _fun77158: for (var _fun77158_ip = 0;;) switch (_fun77158_ip) {
+                    _fun77160: for (var _fun77160_ip = 0;;) switch (_fun77160_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = arg0;
                             var5 = var2[var1];
                             var1 = null;
                             if (!(var1 == var5)) {
-                                _fun77158_ip = 30;
-                                continue _fun77158
+                                _fun77160_ip = 30;
+                                continue _fun77160
                             }
                         case 20:
                             var2 = _closure2_slot4;

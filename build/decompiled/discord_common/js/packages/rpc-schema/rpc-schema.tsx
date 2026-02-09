@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createRPCCommand = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12863, 12864, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12861, 12862, 2]);

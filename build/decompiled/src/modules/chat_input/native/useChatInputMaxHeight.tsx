@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var3 = function() {
-        _fun89864: for (var _fun89864_ip = 0;;) switch (_fun89864_ip) {
+        _fun89865: for (var _fun89865_ip = 0;;) switch (_fun89865_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.KeyboardTypes;
                 var4 = var4.SYSTEM;
                 if (!(var5 !== var4)) {
-                    _fun89864_ip = 110;
-                    continue _fun89864
+                    _fun89865_ip = 110;
+                    continue _fun89865
                 }
             case 107:
                 var1 = var2;
@@ -119,23 +119,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot1;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
-                    _fun89868: for (var _fun89868_ip = 0;;) switch (_fun89868_ip) {
+                    _fun89869: for (var _fun89869_ip = 0;;) switch (_fun89869_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = _closure1_slot6;
                             var3 = undefined;
                             var1 = var1.bind(var3)();
                             if (!(var0 !== var1)) {
-                                _fun89868_ip = 47;
-                                continue _fun89868
+                                _fun89869_ip = 47;
+                                continue _fun89869
                             }
                         case 20:
                             var5 = _closure2_slot0;
                             var4 = null;
                             var0 = var1;
                             if (!(var4 != var5)) {
-                                _fun89868_ip = 47;
-                                continue _fun89868
+                                _fun89869_ip = 47;
+                                continue _fun89869
                             }
                         case 36:
                             var2 = _closure2_slot0;

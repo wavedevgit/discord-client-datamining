@@ -11,28 +11,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = _closure1_slot2;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun76204: for (var _fun76204_ip = 0;;) switch (_fun76204_ip) {
+                _fun76206: for (var _fun76206_ip = 0;;) switch (_fun76206_ip) {
                     case 0:
                         StartGenerator();
                         var9 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun76204_ip = 507;
-                            continue _fun76204
+                            _fun76206_ip = 507;
+                            continue _fun76206
                         }
                     case 15:
                         var6 = undefined;
                         var7 = undefined;
                         var1 = null;
                         if (!(var1 != var9)) {
-                            _fun76204_ip = 33;
-                            continue _fun76204
+                            _fun76206_ip = 33;
+                            continue _fun76206
                         }
                     case 25:
                         var1 = var9.type;
                         if (var1) {
-                            _fun76204_ip = 78;
-                            continue _fun76204
+                            _fun76206_ip = 78;
+                            continue _fun76206
                         }
                     case 33:
                         var3 = _closure1_slot0;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var1.allFiles;
                         var3 = new Array(1);
                         var3[0] = var1;
-                        _fun76204_ip = 149;
-                        continue _fun76204;
+                        _fun76206_ip = 149;
+                        continue _fun76206;
                     case 78:
                         var1 = global;
                         var5 = var1.Array;
@@ -54,14 +54,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = var4.bind(var5)(var1);
                         var1 = var9.type;
                         if (var4) {
-                            _fun76204_ip = 119;
-                            continue _fun76204
+                            _fun76206_ip = 119;
+                            continue _fun76206
                         }
                     case 109:
                         var4 = new Array(1);
                         var4[0] = var1;
-                        _fun76204_ip = 122;
-                        continue _fun76204;
+                        _fun76206_ip = 122;
+                        continue _fun76206;
                     case 119:
                         var4 = var1;
                     case 122:
@@ -99,8 +99,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var2 = var3.bind(var4)(var2);
                         if (var2) {
-                            _fun76204_ip = 283;
-                            continue _fun76204
+                            _fun76206_ip = 283;
+                            continue _fun76206
                         }
                     case 218:
                         var4 = var1.TypeError;
@@ -126,8 +126,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = 'mode';
                         var2 = var2 in var3;
                         if (!var2) {
-                            _fun76204_ip = 374;
-                            continue _fun76204
+                            _fun76206_ip = 374;
+                            continue _fun76206
                         }
                     case 297:
                         var4 = ['import', 'open'];
@@ -136,8 +136,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.mode;
                         var2 = var3.bind(var4)(var2);
                         if (var2) {
-                            _fun76204_ip = 374;
-                            continue _fun76204
+                            _fun76206_ip = 374;
+                            continue _fun76206
                         }
                     case 328:
                         var3 = var1.TypeError;
@@ -171,8 +171,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 421:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun76204_ip = 504;
-                            continue _fun76204
+                            _fun76206_ip = 504;
+                            continue _fun76206
                         }
                     case 427:
                         var4 = var1;
@@ -183,8 +183,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var9 = var4().value;
                         var8 = var3;
                         if (!(var8 !== var6)) {
-                            _fun76204_ip = 501;
-                            continue _fun76204
+                            _fun76206_ip = 501;
+                            continue _fun76206
                         }
                     case 447: // try_start_0
                         var10 = _closure1_slot0;
@@ -197,8 +197,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var8 = var10.bind(var11)(var8, var9);
                         var9.hasRequestedType = var8;
                     case 492: // try_end0
-                        _fun76204_ip = 436;
-                        continue _fun76204;
+                        _fun76206_ip = 436;
+                        continue _fun76206;
                     case 494: // catch_target0
                         CatchBlockStart(arg_register = 2);
                         var3.return();

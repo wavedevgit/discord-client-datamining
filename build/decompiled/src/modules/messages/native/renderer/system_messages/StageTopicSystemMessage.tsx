@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/StageTopicSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56429: for (var _fun56429_ip = 0;;) switch (_fun56429_ip) {
+        _fun56431: for (var _fun56431_ip = 0;;) switch (_fun56431_ip) {
             case 0:
                 var3 = arg0;
                 var8 = var3.message;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = 'username';
                 var13 = null;
                 if (!(var15 === var16)) {
-                    _fun56429_ip = 195;
-                    continue _fun56429
+                    _fun56431_ip = 195;
+                    continue _fun56431
                 }
             case 192:
                 var13 = var14;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.linkColor = var13;
                 var10 = null;
                 if (!var12) {
-                    _fun56429_ip = 208;
-                    continue _fun56429
+                    _fun56431_ip = 208;
+                    continue _fun56431
                 }
             case 205:
                 var10 = var11;

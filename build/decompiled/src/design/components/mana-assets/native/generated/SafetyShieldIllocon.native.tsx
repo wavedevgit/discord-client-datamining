@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/SafetyShieldIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53357: for (var _fun53357_ip = 0;;) switch (_fun53357_ip) {
+        _fun53359: for (var _fun53359_ip = 0;;) switch (_fun53359_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53357_ip = 32;
-                    continue _fun53357
+                    _fun53359_ip = 32;
+                    continue _fun53359
                 }
             case 29:
                 var7 = 64;

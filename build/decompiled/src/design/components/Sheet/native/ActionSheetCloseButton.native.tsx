@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/ActionSheetCloseButton.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun46958: for (var _fun46958_ip = 0;;) switch (_fun46958_ip) {
+        _fun46960: for (var _fun46960_ip = 0;;) switch (_fun46960_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onPress;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = 'overlay';
                 var6 = undefined;
                 if (!(var8 === var9)) {
-                    _fun46958_ip = 192;
-                    continue _fun46958
+                    _fun46960_ip = 192;
+                    continue _fun46960
                 }
             case 161:
                 var8 = _closure1_slot1;

@@ -502,4 +502,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildLiveChannelNoticeInfo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4245, 1377, 3715, 1372, 3093, 3527, 13347, 1378, 483, 13348, 566, 8152, 13349, 8482, 5713, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4245, 1377, 3715, 1372, 3093, 3527, 13345, 1378, 483, 13346, 566, 8152, 13347, 8482, 5713, 2]);

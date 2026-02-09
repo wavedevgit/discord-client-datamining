@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.name = var8;
         var4.children = var7;
         var6 = function() {
-            _fun73404: for (var _fun73404_ip = 0;;) switch (_fun73404_ip) {
+            _fun73406: for (var _fun73406_ip = 0;;) switch (_fun73406_ip) {
                 case 0:
                     var0 = {};
                     var1 = _closure2_slot0;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.isIOS;
                     var2 = var2.bind(var3)();
                     if (!var2) {
-                        _fun73404_ip = 57;
-                        continue _fun73404
+                        _fun73406_ip = 57;
+                        continue _fun73406
                     }
                 case 51:
                     var1 = 'portrait';

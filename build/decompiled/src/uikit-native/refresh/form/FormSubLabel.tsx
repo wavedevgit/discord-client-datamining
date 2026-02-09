@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/refresh/form/FormSubLabel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44624: for (var _fun44624_ip = 0;;) switch (_fun44624_ip) {
+        _fun44626: for (var _fun44626_ip = 0;;) switch (_fun44626_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.text;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.color;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun44624_ip = 41;
-                    continue _fun44624
+                    _fun44626_ip = 41;
+                    continue _fun44626
                 }
             case 35:
                 var8 = 'text-subtle';

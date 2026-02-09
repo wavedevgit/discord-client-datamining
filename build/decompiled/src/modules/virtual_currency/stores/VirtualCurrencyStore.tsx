@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var0 = function() {
-        _fun76071: for (var _fun76071_ip = 0;;) switch (_fun76071_ip) {
+        _fun76073: for (var _fun76073_ip = 0;;) switch (_fun76073_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun76071_ip = 76;
-                continue _fun76071;
+                _fun76073_ip = 76;
+                continue _fun76073;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun76075: for (var _fun76075_ip = 0;;) switch (_fun76075_ip) {
+            _fun76077: for (var _fun76077_ip = 0;;) switch (_fun76077_ip) {
                 case 0:
                     var4 = this;
                     var0 = _closure1_slot2;
@@ -192,14 +192,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun76075_ip = 248;
-                        continue _fun76075
+                        _fun76077_ip = 248;
+                        continue _fun76077
                     }
                 case 235:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun76075_ip = 282;
-                    continue _fun76075;
+                    _fun76077_ip = 282;
+                    continue _fun76077;
                 case 248:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -363,14 +363,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleBalanceFetch';
         var4.key = var6;
         var6 = function arg0() {
-            _fun76099: for (var _fun76099_ip = 0;;) switch (_fun76099_ip) {
+            _fun76101: for (var _fun76101_ip = 0;;) switch (_fun76101_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun76099_ip = 30;
-                        continue _fun76099
+                        _fun76101_ip = 30;
+                        continue _fun76101
                     }
                 case 12:
                     var3 = true;
@@ -488,13 +488,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleOnboardingModalOpen';
         var4.key = var6;
         var6 = function arg0() {
-            _fun76106: for (var _fun76106_ip = 0;;) switch (_fun76106_ip) {
+            _fun76108: for (var _fun76108_ip = 0;;) switch (_fun76108_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun76106_ip = 24;
-                        continue _fun76106
+                        _fun76108_ip = 24;
+                        continue _fun76108
                     }
                 case 9:
                     var2 = true;
@@ -516,13 +516,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleOnboardingModalReset';
         var4.key = var6;
         var5 = function arg0() {
-            _fun76107: for (var _fun76107_ip = 0;;) switch (_fun76107_ip) {
+            _fun76109: for (var _fun76109_ip = 0;;) switch (_fun76109_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun76107_ip = 24;
-                        continue _fun76107
+                        _fun76109_ip = 24;
+                        continue _fun76109
                     }
                 case 9:
                     var2 = false;

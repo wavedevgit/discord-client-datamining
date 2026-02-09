@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/modals/InviteFriendMembers.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81319: for (var _fun81319_ip = 0;;) switch (_fun81319_ip) {
+        _fun81320: for (var _fun81320_ip = 0;;) switch (_fun81320_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.friendMemberIds;
@@ -106,18 +106,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var1;
                 var0 = function() { // Environment: var6
-                    _fun81320: for (var _fun81320_ip = 0;;) switch (_fun81320_ip) {
+                    _fun81321: for (var _fun81321_ip = 0;;) switch (_fun81321_ip) {
                         case 0:
                             var3 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 == var3)) {
-                                _fun81320_ip = 24;
-                                continue _fun81320
+                                _fun81321_ip = 24;
+                                continue _fun81321
                             }
                         case 15:
                             var0 = _closure1_slot9;
-                            _fun81320_ip = 78;
-                            continue _fun81320;
+                            _fun81321_ip = 78;
+                            continue _fun81321;
                         case 24:
                             var4 = _closure2_slot0;
                             var3 = var4.map;
@@ -149,16 +149,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var10.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun81319_ip = 354;
-                    continue _fun81319
+                    _fun81320_ip = 354;
+                    continue _fun81320
                 }
             case 76:
                 var7 = null;
                 var2 = var7 != var1;
                 var12 = -1;
                 if (!var2) {
-                    _fun81319_ip = 103;
-                    continue _fun81319
+                    _fun81320_ip = 103;
+                    continue _fun81320
                 }
             case 91:
                 var2 = var1.length;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var7 == var11;
                 var8 = undefined;
                 if (var12) {
-                    _fun81319_ip = 196;
-                    continue _fun81319
+                    _fun81320_ip = 196;
+                    continue _fun81320
                 }
             case 191:
                 var8 = var11.username;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var7 != var8;
                 var7 = undefined;
                 if (!var11) {
-                    _fun81319_ip = 208;
-                    continue _fun81319
+                    _fun81320_ip = 208;
+                    continue _fun81320
                 }
             case 205:
                 var7 = var8;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var9;
                 var9 = var10.map;
                 var6 = function(arg0, arg1) { // Environment: var6
-                    _fun81323: for (var _fun81323_ip = 0;;) switch (_fun81323_ip) {
+                    _fun81324: for (var _fun81324_ip = 0;;) switch (_fun81324_ip) {
                         case 0:
                             var0 = arg0;
                             var4 = _closure1_slot6;
@@ -228,8 +228,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = arg1;
                             var5 = var7 === var5;
                             if (!var5) {
-                                _fun81323_ip = 59;
-                                continue _fun81323
+                                _fun81324_ip = 59;
+                                continue _fun81324
                             }
                         case 49:
                             var6 = _closure2_slot1;

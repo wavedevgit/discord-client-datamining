@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/svg/native/getReactNativeSVGImageSource.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun48880: for (var _fun48880_ip = 0;;) switch (_fun48880_ip) {
+        _fun48882: for (var _fun48882_ip = 0;;) switch (_fun48882_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var3)();
                 var0 = var2;
                 if (!var3) {
-                    _fun48880_ip = 71;
-                    continue _fun48880
+                    _fun48882_ip = 71;
+                    continue _fun48882
                 }
             case 43:
                 var3 = global;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var2);
                 var0 = var2;
                 if (!var3) {
-                    _fun48880_ip = 71;
-                    continue _fun48880
+                    _fun48882_ip = 71;
+                    continue _fun48882
                 }
             case 67:
                 var0 = var2[var1];

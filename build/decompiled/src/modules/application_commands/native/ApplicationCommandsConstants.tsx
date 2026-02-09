@@ -1,7 +1,7 @@
 // modules/application_commands/native/ApplicationCommandsConstants.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun74497: for (var _fun74497_ip = 0;;) switch (_fun74497_ip) {
+    _fun74499: for (var _fun74499_ip = 0;;) switch (_fun74499_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -22,8 +22,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var1.bind(var3)();
             var1 = 56;
             if (!var3) {
-                _fun74497_ip = 73;
-                continue _fun74497
+                _fun74499_ip = 73;
+                continue _fun74499
             }
         case 70:
             var1 = 64;

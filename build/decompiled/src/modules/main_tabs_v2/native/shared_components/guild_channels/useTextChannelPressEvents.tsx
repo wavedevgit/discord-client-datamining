@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTextChannelPressEvents = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 3946, 3944, 9842, 13355, 9182, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 3946, 3944, 9842, 13353, 9182, 2]);

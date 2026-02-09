@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/Orb3dIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53291: for (var _fun53291_ip = 0;;) switch (_fun53291_ip) {
+        _fun53293: for (var _fun53293_ip = 0;;) switch (_fun53293_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53291_ip = 35;
-                    continue _fun53291
+                    _fun53293_ip = 35;
+                    continue _fun53293
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53291_ip = 47;
-                    continue _fun53291
+                    _fun53293_ip = 47;
+                    continue _fun53293
                 }
             case 44:
                 var7 = 162;

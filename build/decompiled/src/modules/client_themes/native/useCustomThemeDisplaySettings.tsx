@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/client_themes/native/useCustomThemeDisplaySettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun28225: for (var _fun28225_ip = 0;;) switch (_fun28225_ip) {
+        _fun28223: for (var _fun28223_ip = 0;;) switch (_fun28223_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -68,24 +68,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0[var3];
                 var0 = var0[var4];
                 if (!(var1 === var0)) {
-                    _fun28225_ip = 185;
-                    continue _fun28225
+                    _fun28223_ip = 185;
+                    continue _fun28223
                 }
             case 93:
                 if (!(var1 !== var2)) {
-                    _fun28225_ip = 101;
-                    continue _fun28225
+                    _fun28223_ip = 101;
+                    continue _fun28223
                 }
             case 97:
                 if (!(var1 === var3)) {
-                    _fun28225_ip = 171;
-                    continue _fun28225
+                    _fun28223_ip = 171;
+                    continue _fun28223
                 }
             case 101:
                 var4 = null;
                 if (!(var4 == var5)) {
-                    _fun28225_ip = 109;
-                    continue _fun28225
+                    _fun28223_ip = 109;
+                    continue _fun28223
                 }
             case 107:
                 return var1;

@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73064: for (var _fun73064_ip = 0;;) switch (_fun73064_ip) {
+        _fun73066: for (var _fun73066_ip = 0;;) switch (_fun73066_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.title;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var6 = var6 != var7;
                 if (!var6) {
-                    _fun73064_ip = 186;
-                    continue _fun73064
+                    _fun73066_ip = 186;
+                    continue _fun73066
                 }
             case 183:
                 var6 = var4;

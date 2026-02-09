@@ -152,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/voice/UserSettingsVoiceInputOptions.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun85285: for (var _fun85285_ip = 0;;) switch (_fun85285_ip) {
+        _fun85286: for (var _fun85286_ip = 0;;) switch (_fun85286_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var3 = undefined;
@@ -236,8 +236,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot5;
                 var11 = var11.PUSH_TO_TALK;
                 if (!(var7 !== var11)) {
-                    _fun85285_ip = 357;
-                    continue _fun85285
+                    _fun85286_ip = 357;
+                    continue _fun85286
                 }
             case 303:
                 var20 = _closure1_slot0;
@@ -251,8 +251,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.t;
                 var11 = var11.cHCEOJ;
                 var11 = var12.bind(var14)(var11);
-                _fun85285_ip = 409;
-                continue _fun85285;
+                _fun85286_ip = 409;
+                continue _fun85286;
             case 357:
                 var21 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -278,8 +278,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.PUSH_TO_TALK;
                 var5 = null;
                 if (!(var7 !== var6)) {
-                    _fun85285_ip = 798;
-                    continue _fun85285
+                    _fun85286_ip = 798;
+                    continue _fun85286
                 }
             case 465:
                 var8 = _closure1_slot9;

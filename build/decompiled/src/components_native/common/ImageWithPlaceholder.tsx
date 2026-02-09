@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.ImageWithPlaceholder = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 478, 13821, 4704, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 478, 13819, 4704, 2]);

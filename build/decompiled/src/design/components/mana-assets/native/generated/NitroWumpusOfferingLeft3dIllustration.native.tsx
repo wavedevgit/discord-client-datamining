@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/NitroWumpusOfferingLeft3dIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53279: for (var _fun53279_ip = 0;;) switch (_fun53279_ip) {
+        _fun53281: for (var _fun53281_ip = 0;;) switch (_fun53281_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun53279_ip = 35;
-                    continue _fun53279
+                    _fun53281_ip = 35;
+                    continue _fun53281
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun53279_ip = 47;
-                    continue _fun53279
+                    _fun53281_ip = 47;
+                    continue _fun53281
                 }
             case 44:
                 var7 = 192;

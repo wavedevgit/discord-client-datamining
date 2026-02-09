@@ -3,6 +3,7 @@ package com.swmansion.rnscreens;
 import android.util.Log;
 import com.facebook.jni.HybridData;
 import com.facebook.react.fabric.FabricUIManager;
+import com.facebook.react.internal.featureflags.ReactNativeFeatureFlags;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.ConcurrentHashMap;
 import kotlin.Metadata;
@@ -60,7 +61,10 @@ public final class NativeProxy {
         if (weakReference != null) {
             final Screen screen = (Screen) weakReference.get();
             if (screen != null) {
-                if (!screen.post(new Runnable() { // from class: com.swmansion.rnscreens.o
+                if (ReactNativeFeatureFlags.usePullModelOnAndroid()) {
+                    screen.startRemovalTransition();
+                    return;
+                } else if (!screen.post(new Runnable() { // from class: com.swmansion.rnscreens.o
                     @Override // java.lang.Runnable
                     public final void run() {
                         NativeProxy.c(Screen.this);
@@ -68,8 +72,9 @@ public final class NativeProxy {
                 })) {
                     Log.w("[RNScreens]", "Failed to schedule removal transition start for screen with tag " + i10);
                     return;
+                } else {
+                    return;
                 }
-                return;
             }
             Log.w("[RNScreens]", "Reference stored in NativeProxy for tag " + i10 + " no longer points to valid object.");
         }

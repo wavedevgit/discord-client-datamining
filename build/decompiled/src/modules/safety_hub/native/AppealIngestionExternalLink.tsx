@@ -112,13 +112,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'button';
         var0.accessibilityRole = var5;
         var4 = function() {
-            _fun80559: for (var _fun80559_ip = 0;;) switch (_fun80559_ip) {
+            _fun80561: for (var _fun80561_ip = 0;;) switch (_fun80561_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun80559_ip = 23;
-                        continue _fun80559
+                        _fun80561_ip = 23;
+                        continue _fun80561
                     }
                 case 13:
                     var2 = _closure2_slot1;

@@ -1,7 +1,7 @@
 // components_native/common/NativeAPNGView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun62093: for (var _fun62093_ip = 0;;) switch (_fun62093_ip) {
+    _fun62095: for (var _fun62095_ip = 0;;) switch (_fun62095_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var6.isAndroid;
             var1 = var1.bind(var6)();
             if (var1) {
-                _fun62093_ip = 98;
-                continue _fun62093
+                _fun62095_ip = 98;
+                continue _fun62095
             }
         case 85:
             var1 = 'APNGStickerView';
             var1 = var3.bind(var0)(var1);
-            _fun62093_ip = 115;
-            continue _fun62093;
+            _fun62095_ip = 115;
+            continue _fun62095;
         case 98:
             var3 = 2;
             var3 = var5[var3];

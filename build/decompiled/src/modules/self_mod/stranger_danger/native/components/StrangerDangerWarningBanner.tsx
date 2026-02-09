@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var1 = function arg0() {
-        _fun77568: for (var _fun77568_ip = 0;;) switch (_fun77568_ip) {
+        _fun77570: for (var _fun77570_ip = 0;;) switch (_fun77570_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.channelId;
@@ -381,8 +381,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var8;
                 if (var5) {
-                    _fun77568_ip = 638;
-                    continue _fun77568
+                    _fun77570_ip = 638;
+                    continue _fun77570
                 }
             case 524:
                 var5 = {};
@@ -409,8 +409,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.onpress = var6;
                 var6 = new Array(1);
                 var6[0] = var5;
-                _fun77568_ip = 642;
-                continue _fun77568;
+                _fun77570_ip = 642;
+                continue _fun77570;
             case 638:
                 var6 = new Array(0);
             case 642:

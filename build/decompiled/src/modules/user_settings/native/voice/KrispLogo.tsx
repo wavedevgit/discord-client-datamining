@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/voice/KrispLogo.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() {
-        _fun68709: for (var _fun68709_ip = 0;;) switch (_fun68709_ip) {
+        _fun68711: for (var _fun68711_ip = 0;;) switch (_fun68711_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -146,15 +146,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun68709_ip = 105;
-                    continue _fun68709
+                    _fun68711_ip = 105;
+                    continue _fun68711
                 }
             case 91:
                 var0 = 12;
                 var0 = var2[var0];
                 var6 = var1.bind(var3)(var0);
-                _fun68709_ip = 117;
-                continue _fun68709;
+                _fun68711_ip = 117;
+                continue _fun68711;
             case 105:
                 var0 = 11;
                 var0 = var2[var0];

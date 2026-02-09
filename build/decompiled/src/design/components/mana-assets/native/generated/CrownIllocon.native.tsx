@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CrownIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52985: for (var _fun52985_ip = 0;;) switch (_fun52985_ip) {
+        _fun52987: for (var _fun52987_ip = 0;;) switch (_fun52987_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52985_ip = 32;
-                    continue _fun52985
+                    _fun52987_ip = 32;
+                    continue _fun52987
                 }
             case 29:
                 var7 = 64;

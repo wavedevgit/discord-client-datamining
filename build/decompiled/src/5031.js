@@ -32,23 +32,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var3;
     var3 = var4.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun45268: for (var _fun45268_ip = 0;;) switch (_fun45268_ip) {
+        _fun45270: for (var _fun45270_ip = 0;;) switch (_fun45270_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.delayLongPress;
                 var8 = 600;
                 var3 = undefined;
                 if (!(var3 !== var0)) {
-                    _fun45268_ip = 24;
-                    continue _fun45268
+                    _fun45270_ip = 24;
+                    continue _fun45270
                 }
             case 21:
                 var8 = var0;
             case 24:
                 var7 = var4.extraButtonProps;
                 if (!(var3 === var7)) {
-                    _fun45268_ip = 48;
-                    continue _fun45268
+                    _fun45270_ip = 48;
+                    continue _fun45270
                 }
             case 34:
                 var7 = {

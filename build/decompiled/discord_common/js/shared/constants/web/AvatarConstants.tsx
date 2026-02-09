@@ -270,15 +270,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AvatarSizeSpecs = var4;
     var2.getAvatarSpecs = var3;
     var3 = function arg0() {
-        _fun49638: for (var _fun49638_ip = 0;;) switch (_fun49638_ip) {
+        _fun49640: for (var _fun49640_ip = 0;;) switch (_fun49640_ip) {
             case 0:
                 var3 = arg0;
                 var2 = 'number';
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 !== var1)) {
-                    _fun49638_ip = 36;
-                    continue _fun49638
+                    _fun49640_ip = 36;
+                    continue _fun49640
                 }
             case 17:
                 var2 = _closure1_slot1;

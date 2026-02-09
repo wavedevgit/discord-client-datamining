@@ -24,13 +24,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/action_sheet/native/components/showLongPressForumPostActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun77246: for (var _fun77246_ip = 0;;) switch (_fun77246_ip) {
+        _fun77248: for (var _fun77248_ip = 0;;) switch (_fun77248_ip) {
             case 0:
                 var1 = arguments[2];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun77246_ip = 37;
-                    continue _fun77246
+                    _fun77248_ip = 37;
+                    continue _fun77248
                 }
             case 9:
                 var3 = _closure1_slot1;

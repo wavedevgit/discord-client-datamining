@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/SelectedUserField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88196: for (var _fun88196_ip = 0;;) switch (_fun88196_ip) {
+        _fun88197: for (var _fun88197_ip = 0;;) switch (_fun88197_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.selectedUser;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = null;
                 if (!(var5 == var21)) {
-                    _fun88196_ip = 253;
-                    continue _fun88196
+                    _fun88197_ip = 253;
+                    continue _fun88197
                 }
             case 142:
                 var7 = _closure1_slot5;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9.bind(var11)(var8);
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
-                _fun88196_ip = 525;
-                continue _fun88196;
+                _fun88197_ip = 525;
+                continue _fun88197;
             case 253:
                 var8 = _closure1_slot6;
                 var7 = _closure1_slot4;

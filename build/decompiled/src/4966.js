@@ -57,7 +57,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = {};
     var1.handlerIDToTag = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun44817: for (var _fun44817_ip = 0;;) switch (_fun44817_ip) {
+        _fun44819: for (var _fun44819_ip = 0;;) switch (_fun44819_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg2;
@@ -74,15 +74,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.isTestEnv;
                 var2 = var2.bind(var5)();
                 if (!var2) {
-                    _fun44817_ip = 64;
-                    continue _fun44817
+                    _fun44819_ip = 64;
+                    continue _fun44819
                 }
             case 61:
                 var2 = var3;
             case 64:
                 if (!var2) {
-                    _fun44817_ip = 82;
-                    continue _fun44817
+                    _fun44819_ip = 82;
+                    continue _fun44819
                 }
             case 67:
                 var2 = _closure1_slot4;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.unregisterOldGestureHandler = var3;
     var3 = function arg0, arg1() {
-        _fun44820: for (var _fun44820_ip = 0;;) switch (_fun44820_ip) {
+        _fun44822: for (var _fun44822_ip = 0;;) switch (_fun44822_ip) {
             case 0:
                 var3 = arg1;
                 var4 = _closure1_slot2;
@@ -129,15 +129,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.isTestEnv;
                 var2 = var2.bind(var4)();
                 if (!var2) {
-                    _fun44820_ip = 60;
-                    continue _fun44820
+                    _fun44822_ip = 60;
+                    continue _fun44822
                 }
             case 57:
                 var2 = var3;
             case 60:
                 if (!var2) {
-                    _fun44820_ip = 77;
-                    continue _fun44820
+                    _fun44822_ip = 77;
+                    continue _fun44822
                 }
             case 63:
                 var2 = _closure1_slot4;
@@ -158,7 +158,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.findOldGestureHandler = var2;
     var0 = function arg0() {
-        _fun44822: for (var _fun44822_ip = 0;;) switch (_fun44822_ip) {
+        _fun44824: for (var _fun44824_ip = 0;;) switch (_fun44824_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var2 = var3.get;
@@ -168,8 +168,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = undefined;
                 var0 = null;
                 if (!(var2 !== var4)) {
-                    _fun44822_ip = 51;
-                    continue _fun44822
+                    _fun44824_ip = 51;
+                    continue _fun44824
                 }
             case 30:
                 var1 = _closure1_slot5;
@@ -177,8 +177,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3 != var1;
                 var0 = null;
                 if (!var2) {
-                    _fun44822_ip = 51;
-                    continue _fun44822
+                    _fun44824_ip = 51;
+                    continue _fun44824
                 }
             case 48:
                 var0 = var1;

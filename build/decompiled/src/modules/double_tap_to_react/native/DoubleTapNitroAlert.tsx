@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = _closure1_slot2;
         var6 = var5.useCallback;
         var2 = function() { // Environment: var0
-            _fun57968: for (var _fun57968_ip = 0;;) switch (_fun57968_ip) {
+            _fun57970: for (var _fun57970_ip = 0;;) switch (_fun57970_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -89,16 +89,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var1 = var1 != var4;
                     if (!var1) {
-                        _fun57968_ip = 54;
-                        continue _fun57968
+                        _fun57970_ip = 54;
+                        continue _fun57970
                     }
                 case 44:
                     var2 = var4.isReady;
                     var1 = var2.bind(var4)();
                 case 54:
                     if (!var1) {
-                        _fun57968_ip = 112;
-                        continue _fun57968
+                        _fun57970_ip = 112;
+                        continue _fun57970
                     }
                 case 57:
                     var3 = var4.navigate;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var6.bind(var5)(var2, var1);
         var2 = var5.useCallback;
         var1 = function() { // Environment: var0
-            _fun57969: for (var _fun57969_ip = 0;;) switch (_fun57969_ip) {
+            _fun57971: for (var _fun57971_ip = 0;;) switch (_fun57971_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -134,16 +134,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = null;
                     var2 = var2 != var5;
                     if (!var2) {
-                        _fun57969_ip = 54;
-                        continue _fun57969
+                        _fun57971_ip = 54;
+                        continue _fun57971
                     }
                 case 44:
                     var3 = var5.isReady;
                     var2 = var3.bind(var5)();
                 case 54:
                     if (!var2) {
-                        _fun57969_ip = 125;
-                        continue _fun57969
+                        _fun57971_ip = 125;
+                        continue _fun57971
                     }
                 case 57:
                     var4 = var5.navigate;

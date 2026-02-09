@@ -134,4 +134,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildPowerupNotificationDCF = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6008, 1358, 13388, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6008, 1358, 13386, 2]);

@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSelectedMarketingMomentActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1369, 10671, 9515, 6008, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1369, 10670, 9515, 6008, 1358, 2]);

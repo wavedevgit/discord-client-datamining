@@ -55,7 +55,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.code = var5;
     var _closure1_slot9 = var4;
     var1 = function arg0() {
-        _fun45585: for (var _fun45585_ip = 0;;) switch (_fun45585_ip) {
+        _fun45587: for (var _fun45587_ip = 0;;) switch (_fun45587_ip) {
             case 0:
                 var5 = arg0;
                 var11 = var5.onRefresh;
@@ -83,13 +83,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot2 = var1;
                 var2 = var2.enableContentPanningGesture;
                 if (var7) {
-                    _fun45585_ip = 131;
-                    continue _fun45585
+                    _fun45587_ip = 131;
+                    continue _fun45587
                 }
             case 120:
                 if (!var2) {
-                    _fun45585_ip = 131;
-                    continue _fun45585
+                    _fun45587_ip = 131;
+                    continue _fun45587
                 }
             case 123:
                 var2 = "'BottomSheetRefreshControl' cannot be used out of the BottomSheet!";
@@ -138,14 +138,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1[0] = var7;
                 var1[1] = var3;
                 var0 = function() { // Environment: var0
-                    _fun45587: for (var _fun45587_ip = 0;;) switch (_fun45587_ip) {
+                    _fun45589: for (var _fun45589_ip = 0;;) switch (_fun45589_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var8 = undefined;
                             var0 = undefined;
                             if (!var2) {
-                                _fun45587_ip = 135;
-                                continue _fun45587
+                                _fun45589_ip = 135;
+                                continue _fun45589
                             }
                         case 14:
                             var3 = _closure1_slot0;
@@ -180,8 +180,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var2.bind(var4)(var0, var1);
                 var3 = _closure1_slot7;
                 if (var7) {
-                    _fun45585_ip = 323;
-                    continue _fun45585
+                    _fun45587_ip = 323;
+                    continue _fun45587
                 }
             case 277:
                 var1 = _closure1_slot8;
@@ -194,8 +194,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var0 = var8.bind(var9)(var0, var10, var2);
                 var0 = var3.bind(var4)(var1, var0);
-                _fun45585_ip = 410;
-                continue _fun45585;
+                _fun45587_ip = 410;
+                continue _fun45587;
             case 323:
                 var2 = _closure1_slot0;
                 var8 = _closure1_slot1;

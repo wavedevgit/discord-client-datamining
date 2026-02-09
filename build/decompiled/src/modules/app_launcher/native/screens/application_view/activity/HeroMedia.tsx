@@ -293,4 +293,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useHeroMediaDimensions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1468, 4934, 33, 1297, 7806, 8140, 566, 6953, 13933, 8924, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1468, 4934, 33, 1297, 7806, 8140, 566, 6953, 13931, 8924, 2]);

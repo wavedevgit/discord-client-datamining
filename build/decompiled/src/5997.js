@@ -3,14 +3,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = /[|\\{}()[\]^$+*?.-]/g;
     var _closure1_slot0 = var1;
     var1 = function(arg0) { // Environment: var0
-        _fun52698: for (var _fun52698_ip = 0;;) switch (_fun52698_ip) {
+        _fun52700: for (var _fun52700_ip = 0;;) switch (_fun52700_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 if (!(var1 === var0)) {
-                    _fun52698_ip = 40;
-                    continue _fun52698
+                    _fun52700_ip = 40;
+                    continue _fun52700
                 }
             case 14:
                 var2 = var3.replace;

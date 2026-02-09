@@ -18,26 +18,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.Image;
     var _closure1_slot0 = var3;
     var1 = function arg0() {
-        _fun55192: for (var _fun55192_ip = 0;;) switch (_fun55192_ip) {
+        _fun55194: for (var _fun55194_ip = 0;;) switch (_fun55194_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.uri;
                 var4 = typeof var2;
                 var0 = 'string';
                 if (!(var0 !== var4)) {
-                    _fun55192_ip = 160;
-                    continue _fun55192
+                    _fun55194_ip = 160;
+                    continue _fun55194
                 }
             case 22:
                 var1 = 'object';
                 if (!(var1 === var4)) {
-                    _fun55192_ip = 61;
-                    continue _fun55192
+                    _fun55194_ip = 61;
+                    continue _fun55194
                 }
             case 30:
                 if (var5) {
-                    _fun55192_ip = 61;
-                    continue _fun55192
+                    _fun55194_ip = 61;
+                    continue _fun55194
                 }
             case 33:
                 var0 = {};
@@ -46,24 +46,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var6.stringify;
                 var3 = var3.bind(var6)(var2);
                 var0.sourceJson = var3;
-                _fun55192_ip = 158;
-                continue _fun55192;
+                _fun55194_ip = 158;
+                continue _fun55194;
             case 61:
                 if (!(var1 === var4)) {
-                    _fun55192_ip = 68;
-                    continue _fun55192
+                    _fun55194_ip = 68;
+                    continue _fun55194
                 }
             case 65:
                 if (var5) {
-                    _fun55192_ip = 113;
-                    continue _fun55192
+                    _fun55194_ip = 113;
+                    continue _fun55194
                 }
             case 68:
                 var3 = 'number';
                 var1 = undefined;
                 if (!(var3 === var4)) {
-                    _fun55192_ip = 111;
-                    continue _fun55192
+                    _fun55194_ip = 111;
+                    continue _fun55194
                 }
             case 78:
                 var3 = {};
@@ -74,22 +74,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3.sourceDotLottieURI = var4;
                 var1 = var3;
             case 111:
-                _fun55192_ip = 155;
-                continue _fun55192;
+                _fun55194_ip = 155;
+                continue _fun55194;
             case 113:
                 var4 = var5.includes;
                 var3 = '.lottie';
                 var3 = var4.bind(var5)(var3);
                 var4 = {};
                 if (var3) {
-                    _fun55192_ip = 144;
-                    continue _fun55192
+                    _fun55194_ip = 144;
+                    continue _fun55194
                 }
             case 134:
                 var4.sourceURL = var5;
                 var3 = var4;
-                _fun55192_ip = 152;
-                continue _fun55192;
+                _fun55194_ip = 152;
+                continue _fun55194;
             case 144:
                 var4.sourceDotLottieURI = var5;
                 var3 = var4;
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 155:
                 var0 = var1;
             case 158:
-                _fun55192_ip = 170;
-                continue _fun55192;
+                _fun55194_ip = 170;
+                continue _fun55194;
             case 160:
                 var1 = {};
                 var1.sourceName = var2;

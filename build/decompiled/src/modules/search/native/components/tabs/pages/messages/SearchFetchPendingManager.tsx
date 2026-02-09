@@ -187,4 +187,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSearchFetchPendingManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 9049, 11743, 4930, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 9049, 11742, 4930, 2]);

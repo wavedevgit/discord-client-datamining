@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun29171: for (var _fun29171_ip = 0;;) switch (_fun29171_ip) {
+    _fun29169: for (var _fun29169_ip = 0;;) switch (_fun29169_ip) {
         case 0:
             var7 = require;
             var8 = dependencyMap;
@@ -31,34 +31,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var6 = '';
             var6 = var9.bind(var0)(var7, var6, var8);
         case 89: // try_end0
-            _fun29171_ip = 95;
-            continue _fun29171;
+            _fun29169_ip = 95;
+            continue _fun29169;
         case 91: // catch_target0
             CatchBlockStart(arg_register = 6);
             var4 = null;
         case 95:
             var6 = var4;
             if (!var6) {
-                _fun29171_ip = 104;
-                continue _fun29171
+                _fun29169_ip = 104;
+                continue _fun29169
             }
         case 101:
             if (var5) {
-                _fun29171_ip = 120;
-                continue _fun29171
+                _fun29169_ip = 120;
+                continue _fun29169
             }
         case 104:
             var6 = var2;
             var5 = function arg0() {
-                _fun29175: for (var _fun29175_ip = 0;;) switch (_fun29175_ip) {
+                _fun29173: for (var _fun29173_ip = 0;;) switch (_fun29173_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = 'function';
                         var0 = typeof var1;
                         var0 = var2 === var0;
                         if (!var0) {
-                            _fun29175_ip = 28;
-                            continue _fun29175
+                            _fun29173_ip = 28;
+                            continue _fun29173
                         }
                     case 17:
                         var1 = var1.prototype;
@@ -69,8 +69,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             };
             var6.exports = var5;
-            _fun29171_ip = 174;
-            continue _fun29171;
+            _fun29169_ip = 174;
+            continue _fun29169;
         case 120:
             var5 = {};
             var _closure1_slot1 = var5;
@@ -87,7 +87,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = 'length';
             var3 = var5.bind(var0)(var6, var3, var4);
             var1 = function arg0() {
-                _fun29174: for (var _fun29174_ip = 0;;) switch (_fun29174_ip) {
+                _fun29172: for (var _fun29172_ip = 0;;) switch (_fun29172_ip) {
                     case 0:
                         var1 = arg0;
                     case 3: // try_start_0

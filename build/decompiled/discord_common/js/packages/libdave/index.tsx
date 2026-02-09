@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/libdave/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67218: for (var _fun67218_ip = 0;;) switch (_fun67218_ip) {
+    _fun67220: for (var _fun67220_ip = 0;;) switch (_fun67220_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun67218_ip = 90;
-                    continue _fun67218;
+                    _fun67220_ip = 90;
+                    continue _fun67220;
                 }
         case 121:
             return var0;

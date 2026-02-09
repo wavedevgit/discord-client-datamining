@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/native/components/StageSectionHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun69955: for (var _fun69955_ip = 0;;) switch (_fun69955_ip) {
+        _fun69957: for (var _fun69957_ip = 0;;) switch (_fun69957_ip) {
             case 0:
                 var1 = arg0;
                 var14 = var1.label;
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() {
-                    _fun69956: for (var _fun69956_ip = 0;;) switch (_fun69956_ip) {
+                    _fun69958: for (var _fun69958_ip = 0;;) switch (_fun69958_ip) {
                         case 0:
                             var0 = {};
                             var2 = {};
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure2_slot0;
                             var3 = '0deg';
                             if (!var1) {
-                                _fun69956_ip = 56;
-                                continue _fun69956
+                                _fun69958_ip = 56;
+                                continue _fun69958
                             }
                         case 50:
                             var3 = '180deg';
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var8 = var8 != var16;
                 if (!var8) {
-                    _fun69955_ip = 300;
-                    continue _fun69955
+                    _fun69957_ip = 300;
+                    continue _fun69957
                 }
             case 271:
                 var14 = _closure1_slot6;

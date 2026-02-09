@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var7;
     var4 = function arg0() {
-        _fun48493: for (var _fun48493_ip = 0;;) switch (_fun48493_ip) {
+        _fun48495: for (var _fun48495_ip = 0;;) switch (_fun48495_ip) {
             case 0:
                 var4 = arg0;
                 var1 = _closure1_slot3;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var4);
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun48493_ip = 58;
-                    continue _fun48493
+                    _fun48495_ip = 58;
+                    continue _fun48495
                 }
             case 26:
                 var5 = _closure1_slot4;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.parseBioReact = var5;
     var2.getOrParseBioAST = var4;
     var3 = function arg0() {
-        _fun48495: for (var _fun48495_ip = 0;;) switch (_fun48495_ip) {
+        _fun48497: for (var _fun48497_ip = 0;;) switch (_fun48497_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.trim;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun48495_ip = 105;
-                    continue _fun48495
+                    _fun48497_ip = 105;
+                    continue _fun48497
                 }
             case 24:
                 var1 = _closure1_slot5;

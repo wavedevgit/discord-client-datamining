@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPushNotificationSelectOptions = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun70617: for (var _fun70617_ip = 0;;) switch (_fun70617_ip) {
+        _fun70619: for (var _fun70619_ip = 0;;) switch (_fun70619_ip) {
             case 0:
                 var4 = arg0;
                 var1 = {};
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 == var4;
                 if (var5) {
-                    _fun70617_ip = 166;
-                    continue _fun70617
+                    _fun70619_ip = 166;
+                    continue _fun70619
                 }
             case 160:
                 var3 = var4.notificationSetting;

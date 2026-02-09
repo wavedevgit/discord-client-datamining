@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/useMediaItemSpoilerState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73744: for (var _fun73744_ip = 0;;) switch (_fun73744_ip) {
+        _fun73746: for (var _fun73746_ip = 0;;) switch (_fun73746_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var5)(var3);
                 var3 = var6.useSharedValue;
                 if (!var0) {
-                    _fun73744_ip = 126;
-                    continue _fun73744
+                    _fun73746_ip = 126;
+                    continue _fun73746
                 }
             case 123:
                 var8 = var9;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[0] = var0;
                 var3[1] = var6;
                 var0 = function() { // Environment: var1
-                    _fun73746: for (var _fun73746_ip = 0;;) switch (_fun73746_ip) {
+                    _fun73748: for (var _fun73748_ip = 0;;) switch (_fun73748_ip) {
                         case 0:
                             var3 = _closure2_slot3;
                             var2 = var3.set;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot1;
                             var6 = 0;
                             if (!var4) {
-                                _fun73746_ip = 54;
-                                continue _fun73746
+                                _fun73748_ip = 54;
+                                continue _fun73748
                             }
                         case 51:
                             var6 = 1;

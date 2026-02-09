@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1[2] = var5;
         var1[3] = var4;
         var0 = function() { // Environment: var0
-            _fun75602: for (var _fun75602_ip = 0;;) switch (_fun75602_ip) {
+            _fun75604: for (var _fun75604_ip = 0;;) switch (_fun75604_ip) {
                 case 0:
                     var3 = {};
                     var1 = _closure2_slot1;
@@ -47,20 +47,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.mode;
                     var1 = 'parallax';
                     if (!(var1 !== var2)) {
-                        _fun75602_ip = 214;
-                        continue _fun75602
+                        _fun75604_ip = 214;
+                        continue _fun75604
                     }
                 case 42:
                     var1 = 'horizontal-stack';
                     if (!(var1 !== var2)) {
-                        _fun75602_ip = 160;
-                        continue _fun75602
+                        _fun75604_ip = 160;
+                        continue _fun75604
                     }
                 case 52:
                     var1 = 'vertical-stack';
                     if (!(var1 !== var2)) {
-                        _fun75602_ip = 106;
-                        continue _fun75602
+                        _fun75604_ip = 106;
+                        continue _fun75604
                     }
                 case 62:
                     var4 = _closure1_slot0;

@@ -252,4 +252,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_EMPTY_STATE_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3921, 13330, 3942, 1234, 4084, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3921, 13328, 3942, 1234, 4084, 2]);

@@ -86,22 +86,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/ScreenshareTile.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64934: for (var _fun64934_ip = 0;;) switch (_fun64934_ip) {
+        _fun64936: for (var _fun64936_ip = 0;;) switch (_fun64936_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onSingleTap;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun64934_ip = 22;
-                    continue _fun64934
+                    _fun64936_ip = 22;
+                    continue _fun64936
                 }
             case 15:
                 var4 = _closure1_slot5;
             case 22:
                 var2 = var0.onDoubleTap;
                 if (!(var2 === var3)) {
-                    _fun64934_ip = 39;
-                    continue _fun64934
+                    _fun64936_ip = 39;
+                    continue _fun64936
                 }
             case 32:
                 var2 = _closure1_slot5;

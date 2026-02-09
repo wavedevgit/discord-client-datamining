@@ -41,15 +41,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var7;
     var6 = function arg0() {
-        _fun62158: for (var _fun62158_ip = 0;;) switch (_fun62158_ip) {
+        _fun62160: for (var _fun62160_ip = 0;;) switch (_fun62160_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.expiresAt;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun62158_ip = 45;
-                    continue _fun62158
+                    _fun62160_ip = 45;
+                    continue _fun62160
                 }
             case 18:
                 var2 = global;
@@ -666,7 +666,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getLimitedAlternateIcons = var4;
     var2.getIcons = var3;
     var1 = function arg0() {
-        _fun62164: for (var _fun62164_ip = 0;;) switch (_fun62164_ip) {
+        _fun62166: for (var _fun62166_ip = 0;;) switch (_fun62166_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -684,8 +684,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var0);
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun62164_ip = 51;
-                    continue _fun62164
+                    _fun62166_ip = 51;
+                    continue _fun62166
                 }
             case 43:
                 var1 = _closure1_slot5;

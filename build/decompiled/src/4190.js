@@ -29,14 +29,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var5.bind(var6)(var1, var3, var4);
     var1.getStringValue = var2;
     var2 = function arg0() {
-        _fun38271: for (var _fun38271_ip = 0;;) switch (_fun38271_ip) {
+        _fun38273: for (var _fun38273_ip = 0;;) switch (_fun38273_ip) {
             case 0:
                 var4 = arg0;
                 var0 = var4.length;
                 var3 = 8;
                 if (!(var0 >= var3)) {
-                    _fun38271_ip = 82;
-                    continue _fun38271
+                    _fun38273_ip = 82;
+                    continue _fun38273
                 }
             case 15:
                 var5 = _closure1_slot0;
@@ -47,26 +47,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5.bind(var2)(var1);
                 var1 = 'ASCII\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38271_ip = 114;
-                    continue _fun38271
+                    _fun38273_ip = 114;
+                    continue _fun38273
                 }
             case 52:
                 var1 = 'JIS\x00\x00\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38271_ip = 106;
-                    continue _fun38271
+                    _fun38273_ip = 106;
+                    continue _fun38273
                 }
             case 62:
                 var1 = 'UNICODE\x00';
                 if (!(var1 !== var5)) {
-                    _fun38271_ip = 98;
-                    continue _fun38271
+                    _fun38273_ip = 98;
+                    continue _fun38273
                 }
             case 72:
                 var1 = '\x00\x00\x00\x00\x00\x00\x00\x00';
                 if (!(var1 !== var5)) {
-                    _fun38271_ip = 90;
-                    continue _fun38271
+                    _fun38273_ip = 90;
+                    continue _fun38273
                 }
             case 82:
                 var1 = 'Undefined';

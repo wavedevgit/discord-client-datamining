@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumSettingScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun83305: for (var _fun83305_ip = 0;;) switch (_fun83305_ip) {
+        _fun83306: for (var _fun83306_ip = 0;;) switch (_fun83306_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var5 = undefined;
                 if (var1) {
-                    _fun83305_ip = 98;
-                    continue _fun83305
+                    _fun83306_ip = 98;
+                    continue _fun83306
                 }
             case 72:
                 var2 = _closure1_slot1;

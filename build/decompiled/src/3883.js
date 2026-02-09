@@ -51,14 +51,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = 0;
         var1.nextCallId = var2;
         var2 = function arg0() {
-            _fun35036: for (var _fun35036_ip = 0;;) switch (_fun35036_ip) {
+            _fun35034: for (var _fun35034_ip = 0;;) switch (_fun35034_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
                     var _closure3_slot0 = var3;
                     var _closure3_slot1 = var1;
                     var2 = function arg0() {
-                        _fun35037: for (var _fun35037_ip = 0;;) switch (_fun35037_ip) {
+                        _fun35035: for (var _fun35035_ip = 0;;) switch (_fun35035_ip) {
                             case 0:
                                 var2 = arg0;
                                 var _closure4_slot0 = var2;
@@ -66,16 +66,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var1 = _closure3_slot1;
                                 var1 = var1.nextCallId;
                                 if (!(var3 === var1)) {
-                                    _fun35037_ip = 156;
-                                    continue _fun35037
+                                    _fun35035_ip = 156;
+                                    continue _fun35035
                                 }
                             case 33:
                                 var1 = _closure3_slot1;
                                 var1 = var1.previousFrameTimestamp;
                                 var3 = null;
                                 if (!(var3 === var1)) {
-                                    _fun35037_ip = 59;
-                                    continue _fun35037
+                                    _fun35035_ip = 59;
+                                    continue _fun35035
                                 }
                             case 49:
                                 var1 = _closure3_slot1;
@@ -88,7 +88,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var6 = var1.activeFrameCallbacks;
                                 var5 = var6.forEach;
                                 var4 = function(arg0) { // Environment: var4
-                                    _fun35038: for (var _fun35038_ip = 0;;) switch (_fun35038_ip) {
+                                    _fun35036: for (var _fun35036_ip = 0;;) switch (_fun35036_ip) {
                                         case 0:
                                             var0 = _closure3_slot1;
                                             var2 = var0.frameCallbackRegistry;
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var2.startTime;
                                             var0 = null;
                                             if (!(var0 !== var4)) {
-                                                _fun35038_ip = 83;
-                                                continue _fun35038
+                                                _fun35036_ip = 83;
+                                                continue _fun35036
                                             }
                                         case 38:
                                             var1 = var2.callback;
@@ -111,8 +111,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var3 - var4;
                                             var0.timeSinceFirstFrame = var3;
                                             var0 = var1.bind(var2)(var0);
-                                            _fun35038_ip = 127;
-                                            continue _fun35038;
+                                            _fun35036_ip = 127;
+                                            continue _fun35036;
                                         case 83:
                                             var3 = _closure4_slot0;
                                             var2.startTime = var3;
@@ -134,14 +134,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var1.size;
                                 var1 = 0;
                                 if (!(!(var4 > var1))) {
-                                    _fun35037_ip = 127;
-                                    continue _fun35037
+                                    _fun35035_ip = 127;
+                                    continue _fun35035
                                 }
                             case 115:
                                 var1 = _closure3_slot1;
                                 var1.previousFrameTimestamp = var3;
-                                _fun35037_ip = 156;
-                                continue _fun35037;
+                                _fun35035_ip = 156;
+                                continue _fun35035;
                             case 127:
                                 var1 = _closure3_slot1;
                                 var1.previousFrameTimestamp = var2;
@@ -161,16 +161,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 1;
                     var0 = var0 === var4;
                     if (!var0) {
-                        _fun35036_ip = 56;
-                        continue _fun35036
+                        _fun35034_ip = 56;
+                        continue _fun35034
                     }
                 case 46:
                     var1 = var1.nextCallId;
                     var0 = var3 === var1;
                 case 56:
                     if (!var0) {
-                        _fun35036_ip = 74;
-                        continue _fun35036
+                        _fun35034_ip = 74;
+                        continue _fun35034
                     }
                 case 59:
                     var0 = global;
@@ -212,20 +212,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         };
         var1.unregisterFrameCallback = var2;
         var0 = function arg0, arg1() {
-            _fun35041: for (var _fun35041_ip = 0;;) switch (_fun35041_ip) {
+            _fun35039: for (var _fun35039_ip = 0;;) switch (_fun35039_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = this;
                     var0 = -1;
                     if (!(var0 !== var3)) {
-                        _fun35041_ip = 133;
-                        continue _fun35041
+                        _fun35039_ip = 133;
+                        continue _fun35039
                     }
                 case 16:
                     var0 = arg1;
                     if (var0) {
-                        _fun35041_ip = 100;
-                        continue _fun35041
+                        _fun35039_ip = 100;
+                        continue _fun35039
                     }
                 case 22:
                     var1 = var2.frameCallbackRegistry;
@@ -240,16 +240,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var0.size;
                     var0 = 0;
                     if (!(var0 === var1)) {
-                        _fun35041_ip = 133;
-                        continue _fun35041
+                        _fun35039_ip = 133;
+                        continue _fun35039
                     }
                 case 79:
                     var1 = var2.nextCallId;
                     var0 = 1;
                     var0 = var1 + var0;
                     var2.nextCallId = var0;
-                    _fun35041_ip = 133;
-                    continue _fun35041;
+                    _fun35039_ip = 133;
+                    continue _fun35039;
                 case 100:
                     var1 = var2.activeFrameCallbacks;
                     var0 = var1.add;

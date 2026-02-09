@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.NativeEventEmitter;
     var _closure1_slot2 = var3;
     var3 = function arg0, arg1() {
-        _fun59078: for (var _fun59078_ip = 0;;) switch (_fun59078_ip) {
+        _fun59080: for (var _fun59080_ip = 0;;) switch (_fun59080_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.isIosStorekit2;
                 var0 = var0.bind(var3)();
                 if (!var0) {
-                    _fun59078_ip = 105;
-                    continue _fun59078
+                    _fun59080_ip = 105;
+                    continue _fun59080
                 }
             case 100:
                 var7 = function(arg0) { // Environment: var1
@@ -78,8 +78,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var6.bind(var4)(var3);
                 var3 = var3.isAndroid;
                 if (!var3) {
-                    _fun59078_ip = 202;
-                    continue _fun59078
+                    _fun59080_ip = 202;
+                    continue _fun59080
                 }
             case 149:
                 var3 = _closure1_slot0;
@@ -92,13 +92,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2.bind(var3)();
                 var2 = var3.catch;
                 var1 = function(arg0) { // Environment: var1
-                    _fun59080: for (var _fun59080_ip = 0;;) switch (_fun59080_ip) {
+                    _fun59082: for (var _fun59082_ip = 0;;) switch (_fun59082_ip) {
                         case 0:
                             var2 = arg0;
                             var1 = _closure2_slot1;
                             if (var1) {
-                                _fun59080_ip = 15;
-                                continue _fun59080
+                                _fun59082_ip = 15;
+                                continue _fun59082
                             }
                         case 13:
                             throw var2;
@@ -142,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.purchaseErrorListener = var3;
     var3 = function arg0() {
-        _fun59082: for (var _fun59082_ip = 0;;) switch (_fun59082_ip) {
+        _fun59084: for (var _fun59084_ip = 0;;) switch (_fun59084_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -153,8 +153,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.isIos;
                 var0 = null;
                 if (!var2) {
-                    _fun59082_ip = 143;
-                    continue _fun59082
+                    _fun59084_ip = 143;
+                    continue _fun59084
                 }
             case 36:
                 var6 = _closure1_slot0;
@@ -166,8 +166,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var6)();
                 var0 = null;
                 if (var2) {
-                    _fun59082_ip = 143;
-                    continue _fun59082
+                    _fun59084_ip = 143;
+                    continue _fun59084
                 }
             case 71:
                 var3 = _closure1_slot2;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.promotedProductListener = var3;
     var1 = function arg0() {
-        _fun59083: for (var _fun59083_ip = 0;;) switch (_fun59083_ip) {
+        _fun59085: for (var _fun59085_ip = 0;;) switch (_fun59085_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -207,8 +207,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.isIos;
                 var0 = null;
                 if (!var2) {
-                    _fun59083_ip = 143;
-                    continue _fun59083
+                    _fun59085_ip = 143;
+                    continue _fun59085
                 }
             case 36:
                 var6 = _closure1_slot0;
@@ -220,8 +220,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var6)();
                 var0 = null;
                 if (!var2) {
-                    _fun59083_ip = 143;
-                    continue _fun59083
+                    _fun59085_ip = 143;
+                    continue _fun59085
                 }
             case 71:
                 var3 = _closure1_slot2;

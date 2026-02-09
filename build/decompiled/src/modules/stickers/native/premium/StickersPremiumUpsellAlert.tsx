@@ -236,7 +236,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot16 = var3;
     var3 = function arg0() {
-        _fun75132: for (var _fun75132_ip = 0;;) switch (_fun75132_ip) {
+        _fun75134: for (var _fun75134_ip = 0;;) switch (_fun75134_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.perk;
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var6;
                 var6 = undefined;
                 if (!var7) {
-                    _fun75132_ip = 63;
-                    continue _fun75132
+                    _fun75134_ip = 63;
+                    continue _fun75134
                 }
             case 57:
                 var6 = var8.lastPerkRow;
@@ -310,7 +310,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stickers/native/premium/StickersPremiumUpsellAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun75133: for (var _fun75133_ip = 0;;) switch (_fun75133_ip) {
+        _fun75135: for (var _fun75135_ip = 0;;) switch (_fun75135_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.onClose;
@@ -323,14 +323,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot3;
                 var2 = var4.useEffect;
                 var1 = function() { // Environment: var15
-                    _fun75134: for (var _fun75134_ip = 0;;) switch (_fun75134_ip) {
+                    _fun75136: for (var _fun75136_ip = 0;;) switch (_fun75136_ip) {
                         case 0:
                             var2 = _closure1_slot7;
                             var1 = var2.isReady;
                             var1 = var1.bind(var2)();
                             if (var1) {
-                                _fun75134_ip = 62;
-                                continue _fun75134
+                                _fun75136_ip = 62;
+                                continue _fun75136
                             }
                         case 20:
                             var2 = _closure1_slot1;
@@ -389,8 +389,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var21 == var0;
                 var22 = undefined;
                 if (var1) {
-                    _fun75133_ip = 131;
-                    continue _fun75133
+                    _fun75135_ip = 131;
+                    continue _fun75135
                 }
             case 125:
                 var22 = var0.priceString;
@@ -494,8 +494,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 <= var5;
                 var5 = null;
                 if (!var6) {
-                    _fun75133_ip = 397;
-                    continue _fun75133
+                    _fun75135_ip = 397;
+                    continue _fun75135
                 }
             case 391:
                 var5 = var17.shortHeightAlert;
@@ -577,8 +577,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var21 != var22;
                 var21 = '$...';
                 if (!var23) {
-                    _fun75133_ip = 711;
-                    continue _fun75133
+                    _fun75135_ip = 711;
+                    continue _fun75135
                 }
             case 708:
                 var21 = var22;

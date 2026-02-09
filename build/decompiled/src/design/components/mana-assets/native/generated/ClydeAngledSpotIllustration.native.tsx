@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52943: for (var _fun52943_ip = 0;;) switch (_fun52943_ip) {
+        _fun52945: for (var _fun52945_ip = 0;;) switch (_fun52945_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52943_ip = 35;
-                    continue _fun52943
+                    _fun52945_ip = 35;
+                    continue _fun52945
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52943_ip = 47;
-                    continue _fun52943
+                    _fun52945_ip = 47;
+                    continue _fun52945
                 }
             case 44:
                 var7 = 162;

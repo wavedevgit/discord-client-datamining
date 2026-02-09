@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
     var1 = function() {
-        _fun57195: for (var _fun57195_ip = 0;;) switch (_fun57195_ip) {
+        _fun57197: for (var _fun57197_ip = 0;;) switch (_fun57197_ip) {
             case 0:
                 var4 = _closure1_slot2;
                 var3 = var4.useExperiment;
@@ -102,13 +102,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)();
                 var3 = var2.defaultBillingCountryCode;
                 if (var0) {
-                    _fun57195_ip = 136;
-                    continue _fun57195
+                    _fun57197_ip = 136;
+                    continue _fun57197
                 }
             case 122:
                 if (!var1) {
-                    _fun57195_ip = 133;
-                    continue _fun57195
+                    _fun57197_ip = 133;
+                    continue _fun57197
                 }
             case 125:
                 var2 = 'RU';

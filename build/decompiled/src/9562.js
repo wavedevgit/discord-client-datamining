@@ -3,20 +3,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var5 = dependencyMap;
     var3 = function arg0, arg1, arg2() {
-        _fun75831: for (var _fun75831_ip = 0;;) switch (_fun75831_ip) {
+        _fun75833: for (var _fun75833_ip = 0;;) switch (_fun75833_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var0 = arg2;
                 var1 = var0.vertical;
                 if (var1) {
-                    _fun75831_ip = 26;
-                    continue _fun75831
+                    _fun75833_ip = 26;
+                    continue _fun75833
                 }
             case 18:
                 var3 = var0.itemWidth;
-                _fun75831_ip = 32;
-                continue _fun75831;
+                _fun75833_ip = 32;
+                continue _fun75833;
             case 26:
                 var3 = var0.itemHeight;
             case 32:
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 0;
                 var1 = var2 < var1;
                 if (!var1) {
-                    _fun75831_ip = 84;
-                    continue _fun75831
+                    _fun75833_ip = 84;
+                    continue _fun75833
                 }
             case 50:
                 var6 = var0.push;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2 + 1;
                 var1 = var5.length;
                 if (var2 < var1) {
-                    _fun75831_ip = 50;
-                    continue _fun75831
+                    _fun75833_ip = 50;
+                    continue _fun75833
                 }
             case 84:
                 return var0;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.defaultScrollInterpolator = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun75833: for (var _fun75833_ip = 0;;) switch (_fun75833_ip) {
+        _fun75835: for (var _fun75835_ip = 0;;) switch (_fun75835_ip) {
             case 0:
                 var6 = arg1;
                 var7 = arg2;
@@ -91,8 +91,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var7.inactiveSlideOpacity;
                 var8 = 1;
                 if (!(var0 < var8)) {
-                    _fun75833_ip = 83;
-                    continue _fun75833
+                    _fun75835_ip = 83;
+                    continue _fun75835
                 }
             case 23:
                 var0 = {};
@@ -111,8 +111,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 83:
                 var0 = var7.inactiveSlideScale;
                 if (!(var0 < var8)) {
-                    _fun75833_ip = 168;
-                    continue _fun75833
+                    _fun75835_ip = 168;
+                    continue _fun75835
                 }
             case 93:
                 var0 = {};
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.defaultAnimatedStyles = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun75834: for (var _fun75834_ip = 0;;) switch (_fun75834_ip) {
+        _fun75836: for (var _fun75836_ip = 0;;) switch (_fun75836_ip) {
             case 0:
                 var2 = arg1;
                 var6 = arg2;
@@ -153,8 +153,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var6.inactiveSlideOpacity;
                 var7 = 1;
                 if (!(var0 < var7)) {
-                    _fun75834_ip = 85;
-                    continue _fun75834
+                    _fun75836_ip = 85;
+                    continue _fun75836
                 }
             case 25:
                 var0 = {};
@@ -173,8 +173,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 85:
                 var0 = var6.inactiveSlideScale;
                 if (!(var0 < var7)) {
-                    _fun75834_ip = 156;
-                    continue _fun75834
+                    _fun75836_ip = 156;
+                    continue _fun75836
                 }
             case 95:
                 var0 = {};
@@ -194,15 +194,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var6.inactiveSlideShift;
                 var7 = 0;
                 if (!(var7 !== var0)) {
-                    _fun75834_ip = 254;
-                    continue _fun75834
+                    _fun75836_ip = 254;
+                    continue _fun75836
                 }
             case 168:
                 var0 = var6.vertical;
                 var5 = 'translateY';
                 if (!var0) {
-                    _fun75834_ip = 185;
-                    continue _fun75834
+                    _fun75836_ip = 185;
+                    continue _fun75836
                 }
             case 181:
                 var5 = 'translateX';
@@ -264,7 +264,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.stackScrollInterpolator = var3;
     var3 = function arg0, arg1, arg2, arg3() {
-        _fun75836: for (var _fun75836_ip = 0;;) switch (_fun75836_ip) {
+        _fun75838: for (var _fun75838_ip = 0;;) switch (_fun75838_ip) {
             case 0:
                 var7 = arg1;
                 var0 = arg2;
@@ -272,13 +272,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var3;
                 var2 = var0.vertical;
                 if (var2) {
-                    _fun75836_ip = 32;
-                    continue _fun75836
+                    _fun75838_ip = 32;
+                    continue _fun75838
                 }
             case 24:
                 var11 = var0.itemWidth;
-                _fun75836_ip = 38;
-                continue _fun75836;
+                _fun75838_ip = 38;
+                continue _fun75838;
             case 32:
                 var11 = var0.itemHeight;
             case 38:
@@ -286,22 +286,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var0.vertical;
                 var6 = 'translateX';
                 if (!var2) {
-                    _fun75836_ip = 59;
-                    continue _fun75836
+                    _fun75838_ip = 59;
+                    continue _fun75838
                 }
             case 55:
                 var6 = 'translateY';
             case 59:
                 if (var3) {
-                    _fun75836_ip = 71;
-                    continue _fun75836
+                    _fun75838_ip = 71;
+                    continue _fun75838
                 }
             case 62:
                 var2 = 18;
                 var4 = 0;
                 if (!(var4 === var3)) {
-                    _fun75836_ip = 74;
-                    continue _fun75836
+                    _fun75838_ip = 74;
+                    continue _fun75838
                 }
             case 71:
                 var2 = var3;
@@ -344,13 +344,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.inactiveSlideOpacity;
                 var12 = 1;
                 if (!(var12 !== var0)) {
-                    _fun75836_ip = 110;
-                    continue _fun75836
+                    _fun75838_ip = 110;
+                    continue _fun75838
                 }
             case 98:
                 var4 = [1, 0.75, 0.5, 0];
-                _fun75836_ip = 120;
-                continue _fun75836;
+                _fun75838_ip = 120;
+                continue _fun75838;
             case 110:
                 var4 = [1, 1, 1, 0];
             case 120:
@@ -445,7 +445,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.tinderScrollInterpolator = var3;
     var1 = function arg0, arg1, arg2, arg3() {
-        _fun75839: for (var _fun75839_ip = 0;;) switch (_fun75839_ip) {
+        _fun75841: for (var _fun75841_ip = 0;;) switch (_fun75841_ip) {
             case 0:
                 var7 = arg1;
                 var3 = arg2;
@@ -453,13 +453,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot0 = var2;
                 var1 = var3.vertical;
                 if (var1) {
-                    _fun75839_ip = 32;
-                    continue _fun75839
+                    _fun75841_ip = 32;
+                    continue _fun75841
                 }
             case 24:
                 var20 = var3.itemWidth;
-                _fun75839_ip = 38;
-                continue _fun75839;
+                _fun75841_ip = 38;
+                continue _fun75841;
             case 32:
                 var20 = var3.itemHeight;
             case 38:
@@ -468,8 +468,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'translateX';
                 var17 = var1;
                 if (!var4) {
-                    _fun75839_ip = 62;
-                    continue _fun75839
+                    _fun75841_ip = 62;
+                    continue _fun75841
                 }
             case 58:
                 var17 = 'translateY';
@@ -477,22 +477,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.vertical;
                 var6 = 'translateY';
                 if (!var3) {
-                    _fun75839_ip = 78;
-                    continue _fun75839
+                    _fun75841_ip = 78;
+                    continue _fun75841
                 }
             case 75:
                 var6 = var1;
             case 78:
                 if (var2) {
-                    _fun75839_ip = 90;
-                    continue _fun75839
+                    _fun75841_ip = 90;
+                    continue _fun75841
                 }
             case 81:
                 var1 = 9;
                 var3 = 0;
                 if (!(var3 === var2)) {
-                    _fun75839_ip = 93;
-                    continue _fun75839
+                    _fun75841_ip = 93;
+                    continue _fun75841
                 }
             case 90:
                 var1 = var2;

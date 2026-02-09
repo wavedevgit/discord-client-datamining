@@ -795,4 +795,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowAvatarStack = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1687, 5507, 33, 1297, 671, 5506, 5504, 3721, 632, 4081, 5509, 3942, 1604, 13316, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1687, 5507, 33, 1297, 671, 5506, 5504, 3721, 632, 4081, 5509, 3942, 1604, 13314, 2]);

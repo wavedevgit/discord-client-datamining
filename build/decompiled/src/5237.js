@@ -80,15 +80,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var _closure2_slot3 = var10;
         var9 = _closure1_slot3;
         var8 = function() { // Environment: var7
-            _fun46872: for (var _fun46872_ip = 0;;) switch (_fun46872_ip) {
+            _fun46874: for (var _fun46874_ip = 0;;) switch (_fun46874_ip) {
                 case 0:
                     var1 = _closure2_slot3;
                     var2 = var1.size;
                     var1 = 0;
                     var1 = var2 > var1;
                     if (var1) {
-                        _fun46872_ip = 31;
-                        continue _fun46872
+                        _fun46874_ip = 31;
+                        continue _fun46874
                     }
                 case 21:
                     var3 = _closure2_slot0;
@@ -96,8 +96,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var2 == var3;
                 case 31:
                     if (var1) {
-                        _fun46872_ip = 44;
-                        continue _fun46872
+                        _fun46874_ip = 44;
+                        continue _fun46874
                     }
                 case 34:
                     var1 = _closure2_slot0;
@@ -130,64 +130,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0.layout = var2;
             var2 = function() {
-                _fun46876: for (var _fun46876_ip = 0;;) switch (_fun46876_ip) {
-                    case 0:
-                        var1 = _closure2_slot1;
-                        var0 = null;
-                        var3 = var0 == var1;
-                        var1 = undefined;
-                        if (var3) {
-                            _fun46876_ip = 32;
-                            continue _fun46876
-                        }
-                    case 18:
-                        var3 = _closure2_slot1;
-                        var2 = var3.getRef;
-                        var1 = var2.bind(var3)();
-                    case 32:
-                        var2 = var0 != var1;
-                        var0 = null;
-                        if (!var2) {
-                            _fun46876_ip = 44;
-                            continue _fun46876
-                        }
-                    case 41:
-                        var0 = var1;
-                    case 44:
-                        return var0;
-                }
-            };
-            var0.getRef = var2;
-            var2 = function() {
-                _fun46877: for (var _fun46877_ip = 0;;) switch (_fun46877_ip) {
-                    case 0:
-                        var1 = _closure2_slot1;
-                        var0 = null;
-                        var3 = var0 == var1;
-                        var1 = undefined;
-                        if (var3) {
-                            _fun46877_ip = 32;
-                            continue _fun46877
-                        }
-                    case 18:
-                        var3 = _closure2_slot1;
-                        var2 = var3.getParentRef;
-                        var1 = var2.bind(var3)();
-                    case 32:
-                        var2 = var0 != var1;
-                        var0 = null;
-                        if (!var2) {
-                            _fun46877_ip = 44;
-                            continue _fun46877
-                        }
-                    case 41:
-                        var0 = var1;
-                    case 44:
-                        return var0;
-                }
-            };
-            var0.getParentRef = var2;
-            var2 = function() {
                 _fun46878: for (var _fun46878_ip = 0;;) switch (_fun46878_ip) {
                     case 0:
                         var1 = _closure2_slot1;
@@ -200,7 +142,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 18:
                         var3 = _closure2_slot1;
-                        var2 = var3.getParentScrollViewRef;
+                        var2 = var3.getRef;
                         var1 = var2.bind(var3)();
                     case 32:
                         var2 = var0 != var1;
@@ -215,7 +157,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
-            var0.getParentScrollViewRef = var2;
+            var0.getRef = var2;
             var2 = function() {
                 _fun46879: for (var _fun46879_ip = 0;;) switch (_fun46879_ip) {
                     case 0:
@@ -229,7 +171,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     case 18:
                         var3 = _closure2_slot1;
-                        var2 = var3.getScrollViewRef;
+                        var2 = var3.getParentRef;
                         var1 = var2.bind(var3)();
                     case 32:
                         var2 = var0 != var1;
@@ -244,16 +186,74 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         return var0;
                 }
             };
+            var0.getParentRef = var2;
+            var2 = function() {
+                _fun46880: for (var _fun46880_ip = 0;;) switch (_fun46880_ip) {
+                    case 0:
+                        var1 = _closure2_slot1;
+                        var0 = null;
+                        var3 = var0 == var1;
+                        var1 = undefined;
+                        if (var3) {
+                            _fun46880_ip = 32;
+                            continue _fun46880
+                        }
+                    case 18:
+                        var3 = _closure2_slot1;
+                        var2 = var3.getParentScrollViewRef;
+                        var1 = var2.bind(var3)();
+                    case 32:
+                        var2 = var0 != var1;
+                        var0 = null;
+                        if (!var2) {
+                            _fun46880_ip = 44;
+                            continue _fun46880
+                        }
+                    case 41:
+                        var0 = var1;
+                    case 44:
+                        return var0;
+                }
+            };
+            var0.getParentScrollViewRef = var2;
+            var2 = function() {
+                _fun46881: for (var _fun46881_ip = 0;;) switch (_fun46881_ip) {
+                    case 0:
+                        var1 = _closure2_slot1;
+                        var0 = null;
+                        var3 = var0 == var1;
+                        var1 = undefined;
+                        if (var3) {
+                            _fun46881_ip = 32;
+                            continue _fun46881
+                        }
+                    case 18:
+                        var3 = _closure2_slot1;
+                        var2 = var3.getScrollViewRef;
+                        var1 = var2.bind(var3)();
+                    case 32:
+                        var2 = var0 != var1;
+                        var0 = null;
+                        if (!var2) {
+                            _fun46881_ip = 44;
+                            continue _fun46881
+                        }
+                    case 41:
+                        var0 = var1;
+                    case 44:
+                        return var0;
+                }
+            };
             var0.getScrollViewRef = var2;
             var2 = function arg0() {
-                _fun46880: for (var _fun46880_ip = 0;;) switch (_fun46880_ip) {
+                _fun46882: for (var _fun46882_ip = 0;;) switch (_fun46882_ip) {
                     case 0:
                         var2 = arg0;
                         var3 = _closure2_slot1;
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun46880_ip = 31;
-                            continue _fun46880
+                            _fun46882_ip = 31;
+                            continue _fun46882
                         }
                     case 16:
                         var3 = _closure2_slot1;
@@ -269,14 +269,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var0.markChildLayoutAsPending = var2;
             var1 = function arg0() {
-                _fun46881: for (var _fun46881_ip = 0;;) switch (_fun46881_ip) {
+                _fun46883: for (var _fun46883_ip = 0;;) switch (_fun46883_ip) {
                     case 0:
                         var3 = arg0;
                         var2 = _closure2_slot1;
                         var1 = null;
                         if (!(var1 != var2)) {
-                            _fun46881_ip = 31;
-                            continue _fun46881
+                            _fun46883_ip = 31;
+                            continue _fun46883
                         }
                     case 16:
                         var2 = _closure2_slot1;
@@ -287,8 +287,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var2.has;
                         var1 = var1.bind(var2)(var3);
                         if (!var1) {
-                            _fun46881_ip = 76;
-                            continue _fun46881
+                            _fun46883_ip = 76;
+                            continue _fun46883
                         }
                     case 48:
                         var2 = _closure2_slot3;

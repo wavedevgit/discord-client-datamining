@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileAvatar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57699: for (var _fun57699_ip = 0;;) switch (_fun57699_ip) {
+        _fun57701: for (var _fun57701_ip = 0;;) switch (_fun57701_ip) {
             case 0:
                 var2 = arg0;
                 var14 = var2.backgroundColor;
                 var9 = var2.size;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun57699_ip = 26;
-                    continue _fun57699
+                    _fun57701_ip = 26;
+                    continue _fun57701
                 }
             case 19:
                 var9 = _closure1_slot3;

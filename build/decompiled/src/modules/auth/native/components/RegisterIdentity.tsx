@@ -767,4 +767,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RegisterIdentity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 13116, 13117, 33, 1297, 1469, 13127, 670, 13114, 13131, 13132, 13115, 4103, 7559, 5823, 7599, 13133, 4084, 1234, 5937, 13135, 7866, 8260, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 13114, 13115, 33, 1297, 1469, 13125, 670, 13112, 13129, 13130, 13113, 4103, 7559, 5823, 7599, 13131, 4084, 1234, 5937, 13133, 7866, 8260, 2]);

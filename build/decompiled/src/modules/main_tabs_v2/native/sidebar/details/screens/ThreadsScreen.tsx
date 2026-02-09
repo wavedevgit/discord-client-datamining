@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SearchTabsThreadScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 1233, 33, 1297, 671, 6764, 4895, 9643, 3944, 13872, 632, 1470, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 1233, 33, 1297, 671, 6764, 4895, 9643, 3944, 13870, 632, 1470, 2]);

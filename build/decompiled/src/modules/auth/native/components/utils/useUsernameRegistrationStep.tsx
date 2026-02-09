@@ -395,4 +395,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUsernameRegistrationStep = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10418, 13116, 13117, 13114, 1469, 7560, 10438, 10420, 13115, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 10417, 13114, 13115, 13112, 1469, 7560, 10437, 10419, 13113, 1234, 2]);

@@ -221,96 +221,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.Hover = var4;
     var4 = function() {
-        _fun45070: for (var _fun45070_ip = 0;;) switch (_fun45070_ip) {
-            case 0:
-                var3 = undefined;
-                var4 = undefined;
-                var1 = arguments.length;
-                var0 = global;
-                var0 = var0.Array;
-                var2 = var0.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var8 = var2;
-                var7 = var1;
-                var0 = new var8[var0](var7, var6);
-                var2 = var0 instanceof Object ? var0 : var2;
-                var0 = 0;
-                var5 = var0 < var1;
-                if (!var5) {
-                    _fun45070_ip = 62;
-                    continue _fun45070
-                }
-            case 47:
-                var5 = arguments[var0];
-                var2[var0] = var5;
-                var0 = var0 + 1;
-                if (var0 < var1) {
-                    _fun45070_ip = 47;
-                    continue _fun45070
-                }
-            case 62:
-                var1 = _closure1_slot2;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 11;
-                var0 = var5[var0];
-                var0 = var4.bind(var3)(var0);
-                var0 = var0.ComposedGesture;
-                var0 = var1.bind(var3)(var0, var2);
-                return var0;
-        }
-    };
-    var1.Race = var4;
-    var4 = function() {
-        _fun45071: for (var _fun45071_ip = 0;;) switch (_fun45071_ip) {
-            case 0:
-                var3 = undefined;
-                var4 = undefined;
-                var1 = arguments.length;
-                var0 = global;
-                var0 = var0.Array;
-                var2 = var0.prototype;
-                var2 = Object.create(var2, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var8 = var2;
-                var7 = var1;
-                var0 = new var8[var0](var7, var6);
-                var2 = var0 instanceof Object ? var0 : var2;
-                var0 = 0;
-                var5 = var0 < var1;
-                if (!var5) {
-                    _fun45071_ip = 62;
-                    continue _fun45071
-                }
-            case 47:
-                var5 = arguments[var0];
-                var2[var0] = var5;
-                var0 = var0 + 1;
-                if (var0 < var1) {
-                    _fun45071_ip = 47;
-                    continue _fun45071
-                }
-            case 62:
-                var1 = _closure1_slot2;
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 11;
-                var0 = var5[var0];
-                var0 = var4.bind(var3)(var0);
-                var0 = var0.SimultaneousGesture;
-                var0 = var1.bind(var3)(var0, var2);
-                return var0;
-        }
-    };
-    var1.Simultaneous = var4;
-    var3 = function() {
         _fun45072: for (var _fun45072_ip = 0;;) switch (_fun45072_ip) {
             case 0:
                 var3 = undefined;
@@ -341,6 +251,96 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (var0 < var1) {
                     _fun45072_ip = 47;
                     continue _fun45072
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.ComposedGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Race = var4;
+    var4 = function() {
+        _fun45073: for (var _fun45073_ip = 0;;) switch (_fun45073_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun45073_ip = 62;
+                    continue _fun45073
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun45073_ip = 47;
+                    continue _fun45073
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.SimultaneousGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Simultaneous = var4;
+    var3 = function() {
+        _fun45074: for (var _fun45074_ip = 0;;) switch (_fun45074_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun45074_ip = 62;
+                    continue _fun45074
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun45074_ip = 47;
+                    continue _fun45074
                 }
             case 62:
                 var1 = _closure1_slot2;

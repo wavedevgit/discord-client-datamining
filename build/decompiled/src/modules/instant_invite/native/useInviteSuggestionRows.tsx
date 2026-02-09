@@ -107,12 +107,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[3] = var9;
         var4[4] = var3;
         var3 = function() { // Environment: var0
-            _fun68023: for (var _fun68023_ip = 0;;) switch (_fun68023_ip) {
+            _fun68025: for (var _fun68025_ip = 0;;) switch (_fun68025_ip) {
                 case 0:
                     var0 = _closure2_slot5;
                     if (var0) {
-                        _fun68023_ip = 158;
-                        continue _fun68023
+                        _fun68025_ip = 158;
+                        continue _fun68025
                     }
                 case 13:
                     var2 = _closure1_slot7;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3[0] = var7;
         var3[1] = var6;
         var0 = function() { // Environment: var0
-            _fun68024: for (var _fun68024_ip = 0;;) switch (_fun68024_ip) {
+            _fun68026: for (var _fun68026_ip = 0;;) switch (_fun68026_ip) {
                 case 0:
                     var2 = _closure2_slot6;
                     var0 = undefined;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot8;
                     var2 = var2.EMBEDDED_APPLICATION;
                     if (!(var3 !== var2)) {
-                        _fun68024_ip = 63;
-                        continue _fun68024
+                        _fun68026_ip = 63;
+                        continue _fun68026
                     }
                 case 37:
                     var4 = _closure1_slot5;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var2 = var2.guild_id;
                     var8 = var3.bind(var4)(var2);
-                    _fun68024_ip = 67;
-                    continue _fun68024;
+                    _fun68026_ip = 67;
+                    continue _fun68026;
                 case 63:
                     var8 = new Array(0);
                 case 67:

@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function arg0() {
-        _fun57927: for (var _fun57927_ip = 0;;) switch (_fun57927_ip) {
+        _fun57929: for (var _fun57929_ip = 0;;) switch (_fun57929_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.emojiStoreInstance;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57927_ip = 22;
-                    continue _fun57927
+                    _fun57929_ip = 22;
+                    continue _fun57929
                 }
             case 15:
                 var4 = _closure1_slot2;
@@ -25,13 +25,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot3;
                 var2 = var2.REACTION;
                 if (!(var5 === var2)) {
-                    _fun57927_ip = 58;
-                    continue _fun57927
+                    _fun57929_ip = 58;
+                    continue _fun57929
                 }
             case 52:
                 var2 = _closure1_slot4;
-                _fun57927_ip = 71;
-                continue _fun57927;
+                _fun57929_ip = 71;
+                continue _fun57929;
             case 58:
                 var6 = var4.getTopEmoji;
                 var2 = var6.bind(var4)(var3);
@@ -40,13 +40,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot3;
                 var2 = var2.REACTION;
                 if (!(var5 === var2)) {
-                    _fun57927_ip = 96;
-                    continue _fun57927
+                    _fun57929_ip = 96;
+                    continue _fun57929
                 }
             case 90:
                 var1 = _closure1_slot4;
-                _fun57927_ip = 109;
-                continue _fun57927;
+                _fun57929_ip = 109;
+                continue _fun57929;
             case 96:
                 var2 = var4.getNewlyAddedEmoji;
                 var1 = var2.bind(var4)(var3);

@@ -71,14 +71,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot3 = var2;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var1
-            _fun80837: for (var _fun80837_ip = 0;;) switch (_fun80837_ip) {
+            _fun80839: for (var _fun80839_ip = 0;;) switch (_fun80839_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     var2 = null;
                     var0 = var2 != var0;
                     if (!var0) {
-                        _fun80837_ip = 46;
-                        continue _fun80837
+                        _fun80839_ip = 46;
+                        continue _fun80839
                     }
                 case 16:
                     var1 = _closure2_slot2;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var2 == var4;
                     var1 = undefined;
                     if (var5) {
-                        _fun80837_ip = 42;
-                        continue _fun80837
+                        _fun80839_ip = 42;
+                        continue _fun80839
                     }
                 case 34:
                     var3 = _closure2_slot1;
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 != var1;
                 case 46:
                     if (!var0) {
-                        _fun80837_ip = 76;
-                        continue _fun80837
+                        _fun80839_ip = 76;
+                        continue _fun80839
                     }
                 case 49:
                     var0 = global;
                     var3 = var0.setTimeout;
                     var2 = undefined;
                     var1 = function() { // Environment: var0
-                        _fun80838: for (var _fun80838_ip = 0;;) switch (_fun80838_ip) {
+                        _fun80840: for (var _fun80840_ip = 0;;) switch (_fun80840_ip) {
                             case 0:
                                 var1 = _closure2_slot2;
                                 var2 = var1.current;
@@ -117,25 +117,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var3.bind(var0)(var2);
                                 var2 = null;
                                 if (!(var2 != var4)) {
-                                    _fun80838_ip = 115;
-                                    continue _fun80838
+                                    _fun80840_ip = 115;
+                                    continue _fun80840
                                 }
                             case 49:
                                 if (!(var2 != var5)) {
-                                    _fun80838_ip = 74;
-                                    continue _fun80838
+                                    _fun80840_ip = 74;
+                                    continue _fun80840
                                 }
                             case 53:
                                 var3 = var5.measureLayout;
                                 var2 = function(arg0, arg1) { // Environment: var2
-                                    _fun80839: for (var _fun80839_ip = 0;;) switch (_fun80839_ip) {
+                                    _fun80841: for (var _fun80841_ip = 0;;) switch (_fun80841_ip) {
                                         case 0:
                                             var0 = _closure2_slot0;
                                             var2 = var0.current;
                                             var0 = null;
                                             if (!(var0 != var2)) {
-                                                _fun80839_ip = 57;
-                                                continue _fun80839
+                                                _fun80841_ip = 57;
+                                                continue _fun80841
                                             }
                                         case 18:
                                             var1 = var2.scrollTo;

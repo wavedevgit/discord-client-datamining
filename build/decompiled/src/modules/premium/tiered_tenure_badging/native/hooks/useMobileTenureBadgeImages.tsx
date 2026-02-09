@@ -154,14 +154,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/tiered_tenure_badging/native/hooks/useMobileTenureBadgeImages.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Environment: var3
-        _fun60109: for (var _fun60109_ip = 0;;) switch (_fun60109_ip) {
+        _fun60111: for (var _fun60111_ip = 0;;) switch (_fun60111_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var1 = var0 != var3;
                 if (!var1) {
-                    _fun60109_ip = 26;
-                    continue _fun60109
+                    _fun60111_ip = 26;
+                    continue _fun60111
                 }
             case 12:
                 var2 = _closure1_slot1;

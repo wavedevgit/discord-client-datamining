@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoice.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun68637: for (var _fun68637_ip = 0;;) switch (_fun68637_ip) {
+        _fun68639: for (var _fun68639_ip = 0;;) switch (_fun68639_ip) {
             case 0:
                 var0 = _closure1_slot8;
                 var3 = undefined;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot4;
                 var9 = var9.bind(var3)();
                 if (!var9) {
-                    _fun68637_ip = 305;
-                    continue _fun68637
+                    _fun68639_ip = 305;
+                    continue _fun68639
                 }
             case 273:
                 var12 = _closure1_slot6;

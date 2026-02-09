@@ -33,7 +33,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.code = var4;
     var _closure1_slot5 = var3;
     var1 = function arg0() {
-        _fun75712: for (var _fun75712_ip = 0;;) switch (_fun75712_ip) {
+        _fun75714: for (var _fun75714_ip = 0;;) switch (_fun75714_ip) {
             case 0:
                 var0 = arg0;
                 var17 = var0.handlerOffset;
@@ -62,8 +62,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.modeConfig;
                 var14 = var11;
                 if (!var4) {
-                    _fun75712_ip = 137;
-                    continue _fun75712
+                    _fun75714_ip = 137;
+                    continue _fun75714
                 }
             case 134:
                 var14 = var7;
@@ -81,21 +81,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var21 = 'function';
                 var6 = typeof var20;
                 if (!(var21 !== var6)) {
-                    _fun75712_ip = 194;
-                    continue _fun75712
+                    _fun75714_ip = 194;
+                    continue _fun75714
                 }
             case 190:
                 var6 = {};
-                _fun75712_ip = 198;
-                continue _fun75712;
+                _fun75714_ip = 198;
+                continue _fun75714;
             case 194:
                 var6 = var20.bind(var3)();
             case 198:
                 var8 = var18.bind(var19)(var8, var6);
                 var6 = 'horizontal-stack';
                 if (!(var6 === var15)) {
-                    _fun75712_ip = 279;
-                    continue _fun75712
+                    _fun75714_ip = 279;
+                    continue _fun75714
                 }
             case 214:
                 var15 = var0.snapDirection;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = 'positive';
                 var12 = 'right';
                 if (!(var12 === var15)) {
-                    _fun75712_ip = 267;
-                    continue _fun75712
+                    _fun75714_ip = 267;
+                    continue _fun75714
                 }
             case 263:
                 var10 = 'negative';
@@ -188,16 +188,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var10 = {};
                 if (var11) {
-                    _fun75712_ip = 534;
-                    continue _fun75712
+                    _fun75714_ip = 534;
+                    continue _fun75714
                 }
             case 528:
                 var11 = '100%';
             case 534:
                 var10.width = var11;
                 if (var7) {
-                    _fun75712_ip = 547;
-                    continue _fun75712
+                    _fun75714_ip = 547;
+                    continue _fun75714
                 }
             case 541:
                 var7 = '100%';

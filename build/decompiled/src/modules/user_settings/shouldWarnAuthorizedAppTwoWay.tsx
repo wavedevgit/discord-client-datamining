@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var3 = function arg0() {
-        _fun83096: for (var _fun83096_ip = 0;;) switch (_fun83096_ip) {
+        _fun83097: for (var _fun83097_ip = 0;;) switch (_fun83097_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.XBOX_APPLICATION_ID;
                 var0 = var0 === var3;
                 if (var0) {
-                    _fun83096_ip = 85;
-                    continue _fun83096
+                    _fun83097_ip = 85;
+                    continue _fun83097
                 }
             case 46:
                 var2 = _closure1_slot0;

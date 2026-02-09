@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun43695: for (var _fun43695_ip = 0;;) switch (_fun43695_ip) {
+    _fun43697: for (var _fun43697_ip = 0;;) switch (_fun43697_ip) {
         case 0:
             var4 = global;
             var2 = exports;
@@ -23,8 +23,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var4.__react_navigation__elements_contexts;
             var6 = null;
             if (!(var6 == var3)) {
-                _fun43695_ip = 105;
-                continue _fun43695
+                _fun43697_ip = 105;
+                continue _fun43697
             }
         case 79:
             var5 = var5.Map;
@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 105:
             var4.__react_navigation__elements_contexts = var3;
             var1 = function arg0, arg1() {
-                _fun43696: for (var _fun43696_ip = 0;;) switch (_fun43696_ip) {
+                _fun43698: for (var _fun43698_ip = 0;;) switch (_fun43698_ip) {
                     case 0:
                         var4 = arg0;
                         var0 = _closure1_slot0;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var0 = var1.get;
                         var0 = var0.bind(var1)(var4);
                         if (var0) {
-                            _fun43696_ip = 77;
-                            continue _fun43696
+                            _fun43698_ip = 77;
+                            continue _fun43698
                         }
                     case 29:
                         var5 = _closure1_slot1;

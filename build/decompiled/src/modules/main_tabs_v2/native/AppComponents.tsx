@@ -198,4 +198,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 13918, 478, 3920, 13673, 14173, 3919, 14255, 3163, 14259, 14265, 14292, 14306, 14446, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 13916, 478, 3920, 13671, 14171, 3919, 14253, 3163, 14257, 14263, 14290, 14304, 14444, 2]);

@@ -697,4 +697,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ConnectedIncomingGameFriendRequestRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3455, 8966, 660, 33, 3721, 632, 1234, 3237, 13282, 11871, 9172, 13586, 14080, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3455, 8966, 660, 33, 3721, 632, 1234, 3237, 13280, 11870, 9172, 13584, 14078, 2]);

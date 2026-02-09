@@ -1799,4 +1799,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDismissGuildPowerupsNotifications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 6781, 13398, 6783, 6784, 660, 1369, 6774, 11336, 13388, 13400, 1304, 1358, 5693, 13401, 6785, 632, 6707, 6780, 13402, 1360, 13399, 13405, 10047, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1410, 6781, 13396, 6783, 6784, 660, 1369, 6774, 11335, 13386, 13398, 1304, 1358, 5693, 13399, 6785, 632, 6707, 6780, 13400, 1360, 13397, 13403, 10047, 2]);

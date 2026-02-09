@@ -564,4 +564,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_ADD_FRIENDS_WIDGET_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 33, 9072, 671, 13332, 1297, 5949, 3149, 1234, 8400, 6616, 3921, 4904, 3942, 12594, 13334, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 33, 9072, 671, 13330, 1297, 5949, 3149, 1234, 8400, 6616, 3921, 4904, 3942, 12593, 13332, 2]);

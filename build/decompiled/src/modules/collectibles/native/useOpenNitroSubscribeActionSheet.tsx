@@ -40,13 +40,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun88141: for (var _fun88141_ip = 0;;) switch (_fun88141_ip) {
+        _fun88142: for (var _fun88142_ip = 0;;) switch (_fun88142_ip) {
             case 0:
                 var4 = arguments[0];
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun88141_ip = 24;
-                    continue _fun88141
+                    _fun88142_ip = 24;
+                    continue _fun88142
                 }
             case 11:
                 var1 = _closure1_slot4;

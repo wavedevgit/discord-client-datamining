@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/reactions/native/MessagePreviewReactions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74128: for (var _fun74128_ip = 0;;) switch (_fun74128_ip) {
+        _fun74130: for (var _fun74130_ip = 0;;) switch (_fun74130_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.channelId;
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = new Array(1);
                     var1[0] = var5;
                     var0 = function() { // Environment: var0
-                        _fun74130: for (var _fun74130_ip = 0;;) switch (_fun74130_ip) {
+                        _fun74132: for (var _fun74132_ip = 0;;) switch (_fun74132_ip) {
                             case 0:
                                 var3 = _closure1_slot3;
                                 var2 = var3.getMessage;
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var2.bind(var3)(var1);
                                 var2 = null;
                                 if (!(var2 == var1)) {
-                                    _fun74130_ip = 37;
-                                    continue _fun74130
+                                    _fun74132_ip = 37;
+                                    continue _fun74132
                                 }
                             case 31:
                                 var0 = _closure1_slot5;
-                                _fun74130_ip = 43;
-                                continue _fun74130;
+                                _fun74132_ip = 43;
+                                continue _fun74132;
                             case 37:
                                 var0 = var1.reactions;
                             case 43:
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.length;
                 var4 = 0;
                 if (!(!(var6 > var4))) {
-                    _fun74128_ip = 167;
-                    continue _fun74128
+                    _fun74130_ip = 167;
+                    continue _fun74130
                 }
             case 127:
                 var7 = _closure1_slot4;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4.MessageReactionsEmpty;
                 var4 = {};
                 var4 = var7.bind(var3)(var6, var4);
-                _fun74128_ip = 223;
-                continue _fun74128;
+                _fun74130_ip = 223;
+                continue _fun74130;
             case 167:
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot0;

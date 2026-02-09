@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = new Array(1);
         var8[0] = var4;
         var4 = function() { // Environment: var0
-            _fun72950: for (var _fun72950_ip = 0;;) switch (_fun72950_ip) {
+            _fun72952: for (var _fun72952_ip = 0;;) switch (_fun72952_ip) {
                 case 0:
                     var2 = _closure1_slot5;
                     var1 = var2.getNewestTokenForApplication;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var4;
                     var0 = undefined;
                     if (var4) {
-                        _fun72950_ip = 40;
-                        continue _fun72950
+                        _fun72952_ip = 40;
+                        continue _fun72952
                     }
                 case 31:
                     var3 = _closure2_slot2;
@@ -146,22 +146,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var1;
         var2[1] = var13;
         var1 = function() { // Environment: var0
-            _fun72952: for (var _fun72952_ip = 0;;) switch (_fun72952_ip) {
+            _fun72954: for (var _fun72954_ip = 0;;) switch (_fun72954_ip) {
                 case 0:
                     var0 = _closure2_slot2;
                     var2 = null;
                     var0 = var2 != var0;
                     if (!var0) {
-                        _fun72952_ip = 24;
-                        continue _fun72952
+                        _fun72954_ip = 24;
+                        continue _fun72954
                     }
                 case 16:
                     var1 = _closure2_slot3;
                     var0 = var2 != var1;
                 case 24:
                     if (!var0) {
-                        _fun72952_ip = 122;
-                        continue _fun72952
+                        _fun72954_ip = 122;
+                        continue _fun72954
                     }
                 case 27:
                     var4 = _closure1_slot0;

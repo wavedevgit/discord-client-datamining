@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/modals/JoinServer.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun61510: for (var _fun61510_ip = 0;;) switch (_fun61510_ip) {
+        _fun61512: for (var _fun61512_ip = 0;;) switch (_fun61512_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.error;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8 <= var7;
                 var8 = null;
                 if (var7) {
-                    _fun61510_ip = 503;
-                    continue _fun61510
+                    _fun61512_ip = 503;
+                    continue _fun61512
                 }
             case 261:
                 var11 = _closure1_slot9;

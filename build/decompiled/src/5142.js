@@ -2,7 +2,7 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
     var2 = function arg0, arg1, arg2, arg3() {
-        _fun45892: for (var _fun45892_ip = 0;;) switch (_fun45892_ip) {
+        _fun45894: for (var _fun45894_ip = 0;;) switch (_fun45894_ip) {
             case 0:
                 var10 = arg0;
                 var9 = arg1;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1;
                 var4 = 0;
                 if (!(var4 <= var5)) {
-                    _fun45892_ip = 190;
-                    continue _fun45892
+                    _fun45894_ip = 190;
+                    continue _fun45894
                 }
             case 47:
                 var13 = var3.Math;
@@ -28,65 +28,65 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = var12.bind(var13)(var11);
                 var11 = var10[var14];
                 if (var8) {
-                    _fun45892_ip = 86;
-                    continue _fun45892
+                    _fun45894_ip = 86;
+                    continue _fun45894
                 }
             case 79:
                 var16 = var11.y;
-                _fun45892_ip = 91;
-                continue _fun45892;
+                _fun45894_ip = 91;
+                continue _fun45894;
             case 86:
                 var16 = var11.x;
             case 91:
                 if (var8) {
-                    _fun45892_ip = 101;
-                    continue _fun45892
+                    _fun45894_ip = 101;
+                    continue _fun45894
                 }
             case 94:
                 var15 = var11.height;
-                _fun45892_ip = 106;
-                continue _fun45892;
+                _fun45894_ip = 106;
+                continue _fun45894;
             case 101:
                 var15 = var11.width;
             case 106:
                 if (var7) {
-                    _fun45892_ip = 137;
-                    continue _fun45892
+                    _fun45894_ip = 137;
+                    continue _fun45894
                 }
             case 109:
                 if (!(!(var16 <= var9))) {
-                    _fun45892_ip = 125;
-                    continue _fun45892
+                    _fun45894_ip = 125;
+                    continue _fun45894
                 }
             case 113:
                 var11 = var14 - var6;
                 var12 = var4;
                 var13 = var1;
-                _fun45892_ip = 171;
-                continue _fun45892;
+                _fun45894_ip = 171;
+                continue _fun45894;
             case 125:
                 var12 = var14 + var6;
                 var11 = var5;
                 var13 = var14;
-                _fun45892_ip = 171;
-                continue _fun45892;
+                _fun45894_ip = 171;
+                continue _fun45894;
             case 137:
                 if (!(!(var16 >= var9))) {
-                    _fun45892_ip = 161;
-                    continue _fun45892
+                    _fun45894_ip = 161;
+                    continue _fun45894
                 }
             case 141:
                 var15 = var16 + var15;
                 if (!(!(var15 > var9))) {
-                    _fun45892_ip = 161;
-                    continue _fun45892
+                    _fun45894_ip = 161;
+                    continue _fun45894
                 }
             case 149:
                 var12 = var14 + var6;
                 var11 = var5;
                 var13 = var1;
-                _fun45892_ip = 171;
-                continue _fun45892;
+                _fun45894_ip = 171;
+                continue _fun45894;
             case 161:
                 var11 = var14 - var6;
                 var12 = var4;
@@ -97,8 +97,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var13;
                 var0 = var1;
                 if (var4 <= var5) {
-                    _fun45892_ip = 47;
-                    continue _fun45892
+                    _fun45894_ip = 47;
+                    continue _fun45894
                 }
             case 190:
                 return var0;

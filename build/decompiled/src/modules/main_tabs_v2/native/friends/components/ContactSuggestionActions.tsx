@@ -694,4 +694,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ContactSuggestionActions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3721, 1297, 671, 13282, 4097, 4081, 4086, 10218, 4084, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3721, 1297, 671, 13280, 4097, 4081, 4086, 10218, 4084, 1234, 2]);

@@ -220,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/user_settings/native/chat/UserSettingsText.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function() {
-        _fun85975: for (var _fun85975_ip = 0;;) switch (_fun85975_ip) {
+        _fun85976: for (var _fun85976_ip = 0;;) switch (_fun85976_ip) {
             case 0:
                 var14 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -673,12 +673,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var15 = null;
                 if (var16) {
-                    _fun85975_ip = 1696;
-                    continue _fun85975
+                    _fun85976_ip = 1696;
+                    continue _fun85976
                 }
             case 1685:
                 var16 = function() {
-                    _fun85985: for (var _fun85985_ip = 0;;) switch (_fun85985_ip) {
+                    _fun85986: for (var _fun85986_ip = 0;;) switch (_fun85986_ip) {
                         case 0:
                             var6 = _closure1_slot14;
                             var2 = _closure1_slot0;
@@ -772,8 +772,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var2)();
                             var3 = _closure1_slot15;
                             if (var0) {
-                                _fun85985_ip = 368;
-                                continue _fun85985
+                                _fun85986_ip = 368;
+                                continue _fun85986
                             }
                         case 320:
                             var2 = _closure1_slot4;
@@ -787,8 +787,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5[2] = var6;
                             var0.children = var5;
                             var0 = var3.bind(var4)(var2, var0);
-                            _fun85985_ip = 400;
-                            continue _fun85985;
+                            _fun85986_ip = 400;
+                            continue _fun85986;
                         case 368:
                             var2 = _closure1_slot16;
                             var1 = {};

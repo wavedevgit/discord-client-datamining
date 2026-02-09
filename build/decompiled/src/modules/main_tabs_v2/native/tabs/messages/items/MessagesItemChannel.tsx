@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessagesItemChannelSizes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 7049, 671, 13272, 566, 13279, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 33, 7049, 671, 13270, 566, 13277, 2]);

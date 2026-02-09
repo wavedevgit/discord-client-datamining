@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivitiesDebugOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun70208: for (var _fun70208_ip = 0;;) switch (_fun70208_ip) {
+        _fun70210: for (var _fun70210_ip = 0;;) switch (_fun70210_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var0 = _closure1_slot2;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = '';
                 var10 = 'always-white';
                 if (!(var0 !== var2)) {
-                    _fun70208_ip = 256;
-                    continue _fun70208
+                    _fun70210_ip = 256;
+                    continue _fun70210
                 }
             case 71:
                 var1 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'nominal';
                 var10 = 'text-feedback-positive';
                 if (!(var0 !== var2)) {
-                    _fun70208_ip = 256;
-                    continue _fun70208
+                    _fun70210_ip = 256;
+                    continue _fun70210
                 }
             case 119:
                 var1 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'fair';
                 var10 = 'text-feedback-warning';
                 if (!(var0 !== var2)) {
-                    _fun70208_ip = 256;
-                    continue _fun70208
+                    _fun70210_ip = 256;
+                    continue _fun70210
                 }
             case 164:
                 var1 = _closure1_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'text-feedback-critical';
                 var10 = var0;
                 if (!(var1 !== var2)) {
-                    _fun70208_ip = 256;
-                    continue _fun70208
+                    _fun70210_ip = 256;
+                    continue _fun70210
                 }
             case 212:
                 var4 = _closure1_slot0;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = undefined;
                 var10 = undefined;
                 if (!(var1 === var2)) {
-                    _fun70208_ip = 256;
-                    continue _fun70208
+                    _fun70210_ip = 256;
+                    continue _fun70210
                 }
             case 249:
                 var9 = 'critical';

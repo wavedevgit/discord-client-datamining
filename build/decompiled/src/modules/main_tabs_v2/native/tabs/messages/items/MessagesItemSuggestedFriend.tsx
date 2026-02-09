@@ -593,4 +593,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessagesItemSuggestedFriendHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3102, 660, 33, 1297, 671, 7049, 7421, 1307, 632, 1234, 3237, 13281, 13282, 795, 4904, 5504, 3942, 4084, 3257, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 3102, 660, 33, 1297, 671, 7049, 7421, 1307, 632, 1234, 3237, 13279, 13280, 795, 4904, 5504, 3942, 4084, 3257, 2]);

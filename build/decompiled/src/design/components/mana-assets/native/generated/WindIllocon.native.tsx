@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/WindIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53522: for (var _fun53522_ip = 0;;) switch (_fun53522_ip) {
+        _fun53524: for (var _fun53524_ip = 0;;) switch (_fun53524_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53522_ip = 32;
-                    continue _fun53522
+                    _fun53524_ip = 32;
+                    continue _fun53524
                 }
             case 29:
                 var7 = 64;

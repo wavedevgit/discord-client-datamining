@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var1;
         var1 = var2.useEffect;
         var0 = function() { // Environment: var0
-            _fun79628: for (var _fun79628_ip = 0;;) switch (_fun79628_ip) {
+            _fun79630: for (var _fun79630_ip = 0;;) switch (_fun79630_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     var1 = var1 != var2;
                     if (!var1) {
-                        _fun79628_ip = 42;
-                        continue _fun79628
+                        _fun79630_ip = 42;
+                        continue _fun79630
                     }
                 case 16:
                     var2 = _closure2_slot0;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3 !== var2;
                 case 42:
                     if (!var1) {
-                        _fun79628_ip = 196;
-                        continue _fun79628
+                        _fun79630_ip = 196;
+                        continue _fun79630
                     }
                 case 48:
                     var1 = _closure2_slot1;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.code;
                     var1 = var2.bind(var3)(var1);
                     if (var1) {
-                        _fun79628_ip = 196;
-                        continue _fun79628
+                        _fun79630_ip = 196;
+                        continue _fun79630
                     }
                 case 79:
                     var1 = _closure2_slot1;

@@ -312,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getActiveTextChannels = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 3093, 4303, 12542, 660, 1379, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1376, 1372, 3093, 4303, 12541, 660, 1379, 1304, 2]);

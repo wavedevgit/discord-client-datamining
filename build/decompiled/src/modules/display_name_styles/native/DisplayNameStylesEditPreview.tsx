@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85848: for (var _fun85848_ip = 0;;) switch (_fun85848_ip) {
+        _fun85849: for (var _fun85849_ip = 0;;) switch (_fun85849_ip) {
             case 0:
                 var1 = arg0;
                 var18 = var1.user;
@@ -292,8 +292,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17 != var4;
                 var16 = undefined;
                 if (!var1) {
-                    _fun85848_ip = 155;
-                    continue _fun85848
+                    _fun85849_ip = 155;
+                    continue _fun85849
                 }
             case 124:
                 var2 = _closure1_slot0;
@@ -377,13 +377,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17 == var14;
                 var14 = undefined;
                 if (!var18) {
-                    _fun85848_ip = 431;
-                    continue _fun85848
+                    _fun85849_ip = 431;
+                    continue _fun85849
                 }
             case 421:
                 if (!(var17 != var16)) {
-                    _fun85848_ip = 428;
-                    continue _fun85848
+                    _fun85849_ip = 428;
+                    continue _fun85849
                 }
             case 425:
                 var15 = var16;

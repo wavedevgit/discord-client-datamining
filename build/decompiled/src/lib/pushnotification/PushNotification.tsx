@@ -1,7 +1,7 @@
 // lib/pushnotification/PushNotification.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun69429: for (var _fun69429_ip = 0;;) switch (_fun69429_ip) {
+    _fun69431: for (var _fun69431_ip = 0;;) switch (_fun69431_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -11,20 +11,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var0;
             var _closure1_slot2 = var5;
             var0 = function arg0() {
-                _fun69430: for (var _fun69430_ip = 0;;) switch (_fun69430_ip) {
+                _fun69432: for (var _fun69432_ip = 0;;) switch (_fun69432_ip) {
                     case 0:
                         var1 = arg0;
                         var _closure2_slot0 = var1;
                         var0 = null;
                         var1 = var0 == var1;
                         if (var1) {
-                            _fun69430_ip = 119;
-                            continue _fun69430
+                            _fun69432_ip = 119;
+                            continue _fun69432
                         }
                     case 18:
                         var1 = {};
                         var3 = function() {
-                            _fun69431: for (var _fun69431_ip = 0;;) switch (_fun69431_ip) {
+                            _fun69433: for (var _fun69433_ip = 0;;) switch (_fun69433_ip) {
                                 case 0:
                                     var0 = {};
                                     var2 = _closure2_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = null;
                                     var3 = var2 != var3;
                                     if (!var3) {
-                                        _fun69431_ip = 61;
-                                        continue _fun69431
+                                        _fun69433_ip = 61;
+                                        continue _fun69433
                                     }
                                 case 33:
                                     var3 = global;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = null;
             var7 = var1 != var7;
             if (!var7) {
-                _fun69429_ip = 139;
-                continue _fun69429
+                _fun69431_ip = 139;
+                continue _fun69431
             }
         case 113:
             var11 = var6.PushNotificationAndroid;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot4 = var1;
             var1 = {};
             var6 = function() {
-                _fun69439: for (var _fun69439_ip = 0;;) switch (_fun69439_ip) {
+                _fun69441: for (var _fun69441_ip = 0;;) switch (_fun69441_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -222,8 +222,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var3.isAndroid;
                         var1 = var1.bind(var3)();
                         if (var1) {
-                            _fun69439_ip = 70;
-                            continue _fun69439
+                            _fun69441_ip = 70;
+                            continue _fun69441
                         }
                     case 38:
                         var1 = _closure1_slot1;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.bind(var2)(var0);
                         var0 = var1.getInitialNotification;
                         var0 = var0.bind(var1)();
-                        _fun69439_ip = 107;
-                        continue _fun69439;
+                        _fun69441_ip = 107;
+                        continue _fun69441;
                     case 70:
                         var1 = global;
                         var3 = var1.Promise;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.getInitialNotification = var6;
             var6 = function arg0, arg1() {
-                _fun69442: for (var _fun69442_ip = 0;;) switch (_fun69442_ip) {
+                _fun69444: for (var _fun69444_ip = 0;;) switch (_fun69444_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -284,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (!var2) {
-                            _fun69442_ip = 60;
-                            continue _fun69442
+                            _fun69444_ip = 60;
+                            continue _fun69444
                         }
                     case 38:
                         var4 = _closure1_slot3;
@@ -299,7 +299,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.setCurrentUser = var6;
             var6 = function() {
-                _fun69443: for (var _fun69443_ip = 0;;) switch (_fun69443_ip) {
+                _fun69445: for (var _fun69445_ip = 0;;) switch (_fun69445_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -310,8 +310,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (!var2) {
-                            _fun69443_ip = 73;
-                            continue _fun69443
+                            _fun69445_ip = 73;
+                            continue _fun69445
                         }
                     case 38:
                         var2 = _closure1_slot0;
@@ -328,7 +328,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.clearPushNotificationLogs = var6;
             var6 = function arg0() {
-                _fun69444: for (var _fun69444_ip = 0;;) switch (_fun69444_ip) {
+                _fun69446: for (var _fun69446_ip = 0;;) switch (_fun69446_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -339,8 +339,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun69444_ip = 72;
-                            continue _fun69444
+                            _fun69446_ip = 72;
+                            continue _fun69446
                         }
                     case 38:
                         var2 = _closure1_slot1;
@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.setApplicationIconBadgeNumber = var6;
             var6 = function() {
-                _fun69445: for (var _fun69445_ip = 0;;) switch (_fun69445_ip) {
+                _fun69447: for (var _fun69447_ip = 0;;) switch (_fun69447_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -368,8 +368,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun69445_ip = 73;
-                            continue _fun69445
+                            _fun69447_ip = 73;
+                            continue _fun69447
                         }
                     case 38:
                         var3 = _closure1_slot1;
@@ -380,8 +380,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.setApplicationIconBadgeNumber;
                         var2 = 0;
                         var2 = var3.bind(var4)(var2);
-                        _fun69445_ip = 87;
-                        continue _fun69445;
+                        _fun69447_ip = 87;
+                        continue _fun69447;
                     case 73:
                         var2 = _closure1_slot3;
                         var1 = var2.clearAllNotifications;
@@ -392,7 +392,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.clearAllNotifications = var6;
             var6 = function arg0() {
-                _fun69446: for (var _fun69446_ip = 0;;) switch (_fun69446_ip) {
+                _fun69448: for (var _fun69448_ip = 0;;) switch (_fun69448_ip) {
                     case 0:
                         var3 = arg0;
                         var4 = _closure1_slot0;
@@ -404,8 +404,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var4.isAndroid;
                         var2 = var2.bind(var4)();
                         if (var2) {
-                            _fun69446_ip = 74;
-                            continue _fun69446
+                            _fun69448_ip = 74;
+                            continue _fun69448
                         }
                     case 41:
                         var4 = _closure1_slot1;
@@ -415,8 +415,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var4.bind(var0)(var2);
                         var2 = var4.presentLocalNotification;
                         var2 = var2.bind(var4)(var3);
-                        _fun69446_ip = 89;
-                        continue _fun69446;
+                        _fun69448_ip = 89;
+                        continue _fun69448;
                     case 74:
                         var2 = _closure1_slot3;
                         var1 = var2.presentLocalNotification;
@@ -427,7 +427,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.presentLocalNotification = var6;
             var6 = function() {
-                _fun69447: for (var _fun69447_ip = 0;;) switch (_fun69447_ip) {
+                _fun69449: for (var _fun69449_ip = 0;;) switch (_fun69449_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
@@ -440,8 +440,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = global;
                         var3 = var1.Promise;
                         if (var0) {
-                            _fun69447_ip = 77;
-                            continue _fun69447
+                            _fun69449_ip = 77;
+                            continue _fun69449
                         }
                     case 46:
                         var0 = var3.prototype;
@@ -465,8 +465,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var1;
                         var0 = new var5[var3](var4, var3);
                         var0 = var0 instanceof Object ? var0 : var1;
-                        _fun69447_ip = 92;
-                        continue _fun69447;
+                        _fun69449_ip = 92;
+                        continue _fun69449;
                     case 77:
                         var2 = var3.resolve;
                         var1 = new Array(0);
@@ -476,64 +476,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 }
             };
             var1.getDeliveredNotifications = var6;
-            var6 = function arg0() {
-                _fun69449: for (var _fun69449_ip = 0;;) switch (_fun69449_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot2;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var3 = var3.bind(var0)(var2);
-                        var2 = var3.isAndroid;
-                        var2 = var2.bind(var3)();
-                        if (var2) {
-                            _fun69449_ip = 72;
-                            continue _fun69449
-                        }
-                    case 38:
-                        var2 = _closure1_slot1;
-                        var3 = _closure1_slot2;
-                        var1 = 2;
-                        var1 = var3[var1];
-                        var3 = var2.bind(var0)(var1);
-                        var2 = var3.removeDeliveredNotifications;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                    case 72:
-                        return var0;
-                }
-            };
-            var1.removeDeliveredNotifications = var6;
-            var6 = function arg0() {
-                _fun69450: for (var _fun69450_ip = 0;;) switch (_fun69450_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot2;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var3 = var3.bind(var0)(var2);
-                        var2 = var3.isAndroid;
-                        var2 = var2.bind(var3)();
-                        if (var2) {
-                            _fun69450_ip = 72;
-                            continue _fun69450
-                        }
-                    case 38:
-                        var2 = _closure1_slot1;
-                        var3 = _closure1_slot2;
-                        var1 = 2;
-                        var1 = var3[var1];
-                        var3 = var2.bind(var0)(var1);
-                        var2 = var3.scheduleLocalNotification;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                    case 72:
-                        return var0;
-                }
-            };
-            var1.scheduleLocalNotification = var6;
             var6 = function arg0() {
                 _fun69451: for (var _fun69451_ip = 0;;) switch (_fun69451_ip) {
                     case 0:
@@ -555,14 +497,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = 2;
                         var1 = var3[var1];
                         var3 = var2.bind(var0)(var1);
-                        var2 = var3.getScheduledLocalNotifications;
+                        var2 = var3.removeDeliveredNotifications;
                         var1 = arg0;
                         var1 = var2.bind(var3)(var1);
                     case 72:
                         return var0;
                 }
             };
-            var1.getScheduledLocalNotifications = var6;
+            var1.removeDeliveredNotifications = var6;
             var6 = function arg0() {
                 _fun69452: for (var _fun69452_ip = 0;;) switch (_fun69452_ip) {
                     case 0:
@@ -584,15 +526,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = 2;
                         var1 = var3[var1];
                         var3 = var2.bind(var0)(var1);
-                        var2 = var3.cancelLocalNotifications;
+                        var2 = var3.scheduleLocalNotification;
                         var1 = arg0;
                         var1 = var2.bind(var3)(var1);
                     case 72:
                         return var0;
                 }
             };
-            var1.cancelLocalNotifications = var6;
-            var6 = function() {
+            var1.scheduleLocalNotification = var6;
+            var6 = function arg0() {
                 _fun69453: for (var _fun69453_ip = 0;;) switch (_fun69453_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -604,8 +546,66 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun69453_ip = 68;
+                            _fun69453_ip = 72;
                             continue _fun69453
+                        }
+                    case 38:
+                        var2 = _closure1_slot1;
+                        var3 = _closure1_slot2;
+                        var1 = 2;
+                        var1 = var3[var1];
+                        var3 = var2.bind(var0)(var1);
+                        var2 = var3.getScheduledLocalNotifications;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                    case 72:
+                        return var0;
+                }
+            };
+            var1.getScheduledLocalNotifications = var6;
+            var6 = function arg0() {
+                _fun69454: for (var _fun69454_ip = 0;;) switch (_fun69454_ip) {
+                    case 0:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot2;
+                        var0 = 1;
+                        var2 = var2[var0];
+                        var0 = undefined;
+                        var3 = var3.bind(var0)(var2);
+                        var2 = var3.isAndroid;
+                        var2 = var2.bind(var3)();
+                        if (var2) {
+                            _fun69454_ip = 72;
+                            continue _fun69454
+                        }
+                    case 38:
+                        var2 = _closure1_slot1;
+                        var3 = _closure1_slot2;
+                        var1 = 2;
+                        var1 = var3[var1];
+                        var3 = var2.bind(var0)(var1);
+                        var2 = var3.cancelLocalNotifications;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                    case 72:
+                        return var0;
+                }
+            };
+            var1.cancelLocalNotifications = var6;
+            var6 = function() {
+                _fun69455: for (var _fun69455_ip = 0;;) switch (_fun69455_ip) {
+                    case 0:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot2;
+                        var0 = 1;
+                        var2 = var2[var0];
+                        var0 = undefined;
+                        var3 = var3.bind(var0)(var2);
+                        var2 = var3.isAndroid;
+                        var2 = var2.bind(var3)();
+                        if (var2) {
+                            _fun69455_ip = 68;
+                            continue _fun69455
                         }
                     case 38:
                         var2 = _closure1_slot1;
@@ -621,7 +621,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.cancelAllLocalNotifications = var6;
             var6 = function arg0() {
-                _fun69454: for (var _fun69454_ip = 0;;) switch (_fun69454_ip) {
+                _fun69456: for (var _fun69456_ip = 0;;) switch (_fun69456_ip) {
                     case 0:
                         var2 = arg0;
                         var4 = _closure1_slot0;
@@ -633,8 +633,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.isAndroid;
                         var3 = var3.bind(var4)();
                         if (var3) {
-                            _fun69454_ip = 74;
-                            continue _fun69454
+                            _fun69456_ip = 74;
+                            continue _fun69456
                         }
                     case 41:
                         var3 = _closure1_slot1;
@@ -644,8 +644,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var3.bind(var0)(var1);
                         var1 = var3.checkPermissions;
                         var1 = var1.bind(var3)(var2);
-                        _fun69454_ip = 81;
-                        continue _fun69454;
+                        _fun69456_ip = 81;
+                        continue _fun69456;
                     case 74:
                         var1 = {};
                         var1 = var2.bind(var0)(var1);
@@ -655,7 +655,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.checkPermissions = var6;
             var6 = function arg0() {
-                _fun69455: for (var _fun69455_ip = 0;;) switch (_fun69455_ip) {
+                _fun69457: for (var _fun69457_ip = 0;;) switch (_fun69457_ip) {
                     case 0:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot2;
@@ -666,8 +666,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var3.isAndroid;
                         var1 = var1.bind(var3)();
                         if (var1) {
-                            _fun69455_ip = 74;
-                            continue _fun69455
+                            _fun69457_ip = 74;
+                            continue _fun69457
                         }
                     case 38:
                         var1 = _closure1_slot1;
@@ -678,8 +678,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2.requestPermissions;
                         var0 = arg0;
                         var0 = var1.bind(var2)(var0);
-                        _fun69455_ip = 111;
-                        continue _fun69455;
+                        _fun69457_ip = 111;
+                        continue _fun69457;
                     case 74:
                         var1 = global;
                         var3 = var1.Promise;
@@ -716,7 +716,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.openNotificationSettings = var6;
             var6 = function arg0, arg1() {
-                _fun69458: for (var _fun69458_ip = 0;;) switch (_fun69458_ip) {
+                _fun69460: for (var _fun69460_ip = 0;;) switch (_fun69460_ip) {
                     case 0:
                         var3 = arg0;
                         var6 = arg1;
@@ -730,8 +730,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.isAndroid;
                         var4 = var4.bind(var5)();
                         if (var4) {
-                            _fun69458_ip = 84;
-                            continue _fun69458
+                            _fun69460_ip = 84;
+                            continue _fun69460
                         }
                     case 50:
                         var5 = _closure1_slot1;
@@ -741,19 +741,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var5.bind(var0)(var4);
                         var4 = var5.addEventListener;
                         var4 = var4.bind(var5)(var3, var6);
-                        _fun69458_ip = 163;
-                        continue _fun69458;
+                        _fun69460_ip = 163;
+                        continue _fun69460;
                     case 84:
                         var7 = 'notification';
                         if (!(var7 === var3)) {
-                            _fun69458_ip = 115;
-                            continue _fun69458
+                            _fun69460_ip = 115;
+                            continue _fun69460
                         }
                     case 92:
                         var6 = _closure1_slot4;
                         var5 = var6.addListener;
                         var4 = function(arg0) { // Environment: var2
-                            _fun69459: for (var _fun69459_ip = 0;;) switch (_fun69459_ip) {
+                            _fun69461: for (var _fun69461_ip = 0;;) switch (_fun69461_ip) {
                                 case 0:
                                     var2 = _closure1_slot5;
                                     var0 = undefined;
@@ -761,8 +761,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = var2.bind(var0)(var1);
                                     var1 = null;
                                     if (!(var1 != var2)) {
-                                        _fun69459_ip = 35;
-                                        continue _fun69459
+                                        _fun69461_ip = 35;
+                                        continue _fun69461
                                     }
                                 case 23:
                                     var1 = _closure2_slot0;
@@ -775,14 +775,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 115:
                         var6 = 'localNotification';
                         if (!(var6 === var3)) {
-                            _fun69458_ip = 148;
-                            continue _fun69458
+                            _fun69460_ip = 148;
+                            continue _fun69460
                         }
                     case 125:
                         var5 = _closure1_slot4;
                         var4 = var5.addListener;
                         var2 = function(arg0) { // Environment: var2
-                            _fun69460: for (var _fun69460_ip = 0;;) switch (_fun69460_ip) {
+                            _fun69462: for (var _fun69462_ip = 0;;) switch (_fun69462_ip) {
                                 case 0:
                                     var2 = _closure1_slot5;
                                     var0 = undefined;
@@ -790,8 +790,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var2 = var2.bind(var0)(var1);
                                     var1 = null;
                                     if (!(var1 != var2)) {
-                                        _fun69460_ip = 35;
-                                        continue _fun69460
+                                        _fun69462_ip = 35;
+                                        continue _fun69462
                                     }
                                 case 23:
                                     var1 = _closure2_slot0;
@@ -811,7 +811,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.addNotificationEventListener = var6;
             var6 = function arg0() {
-                _fun69461: for (var _fun69461_ip = 0;;) switch (_fun69461_ip) {
+                _fun69463: for (var _fun69463_ip = 0;;) switch (_fun69463_ip) {
                     case 0:
                         var6 = arg0;
                         var _closure2_slot0 = var6;
@@ -824,8 +824,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var4.isAndroid;
                         var3 = var3.bind(var4)();
                         if (var3) {
-                            _fun69461_ip = 85;
-                            continue _fun69461
+                            _fun69463_ip = 85;
+                            continue _fun69463
                         }
                     case 47:
                         var4 = _closure1_slot1;
@@ -836,8 +836,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var5.addEventListener;
                         var3 = 'register';
                         var3 = var4.bind(var5)(var3, var6);
-                        _fun69461_ip = 127;
-                        continue _fun69461;
+                        _fun69463_ip = 127;
+                        continue _fun69463;
                     case 85:
                         var5 = _closure1_slot4;
                         var4 = var5.addListener;
@@ -869,7 +869,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 });
                 var3 = function(arg0) { // Environment: var0
-                    _fun69464: for (var _fun69464_ip = 0;;) switch (_fun69464_ip) {
+                    _fun69466: for (var _fun69466_ip = 0;;) switch (_fun69466_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
@@ -882,14 +882,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var5.isAndroid;
                             var3 = var3.bind(var5)();
                             if (var3) {
-                                _fun69464_ip = 56;
-                                continue _fun69464
+                                _fun69466_ip = 56;
+                                continue _fun69466
                             }
                         case 47:
                             var3 = false;
                             var3 = var4.bind(var0)(var3);
-                            _fun69464_ip = 87;
-                            continue _fun69464;
+                            _fun69466_ip = 87;
+                            continue _fun69466;
                         case 56:
                             var3 = _closure1_slot3;
                             var2 = var3.getSoundsEnabled;
@@ -923,7 +923,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 });
                 var3 = function(arg0) { // Environment: var0
-                    _fun69467: for (var _fun69467_ip = 0;;) switch (_fun69467_ip) {
+                    _fun69469: for (var _fun69469_ip = 0;;) switch (_fun69469_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
@@ -936,14 +936,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var5.isAndroid;
                             var3 = var3.bind(var5)();
                             if (var3) {
-                                _fun69467_ip = 56;
-                                continue _fun69467
+                                _fun69469_ip = 56;
+                                continue _fun69469
                             }
                         case 47:
                             var3 = false;
                             var3 = var4.bind(var0)(var3);
-                            _fun69467_ip = 87;
-                            continue _fun69467;
+                            _fun69469_ip = 87;
+                            continue _fun69469;
                         case 56:
                             var3 = _closure1_slot3;
                             var2 = var3.getVibrationsEnabled;
@@ -977,7 +977,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 });
                 var3 = function(arg0) { // Environment: var0
-                    _fun69470: for (var _fun69470_ip = 0;;) switch (_fun69470_ip) {
+                    _fun69472: for (var _fun69472_ip = 0;;) switch (_fun69472_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
@@ -990,14 +990,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var5.isAndroid;
                             var3 = var3.bind(var5)();
                             if (var3) {
-                                _fun69470_ip = 56;
-                                continue _fun69470
+                                _fun69472_ip = 56;
+                                continue _fun69472
                             }
                         case 47:
                             var3 = false;
                             var3 = var4.bind(var0)(var3);
-                            _fun69470_ip = 87;
-                            continue _fun69470;
+                            _fun69472_ip = 87;
+                            continue _fun69472;
                         case 56:
                             var3 = _closure1_slot3;
                             var2 = var3.getLightsEnabled;
@@ -1022,56 +1022,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var1.getLightsEnabled = var6;
             var6 = function arg0() {
-                _fun69472: for (var _fun69472_ip = 0;;) switch (_fun69472_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot2;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var3 = var3.bind(var0)(var2);
-                        var2 = var3.isAndroid;
-                        var2 = var2.bind(var3)();
-                        if (!var2) {
-                            _fun69472_ip = 56;
-                            continue _fun69472
-                        }
-                    case 38:
-                        var3 = _closure1_slot3;
-                        var2 = var3.setSoundsEnabled;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                    case 56:
-                        return var0;
-                }
-            };
-            var1.setSoundsEnabled = var6;
-            var6 = function arg0() {
-                _fun69473: for (var _fun69473_ip = 0;;) switch (_fun69473_ip) {
-                    case 0:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot2;
-                        var0 = 1;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var3 = var3.bind(var0)(var2);
-                        var2 = var3.isAndroid;
-                        var2 = var2.bind(var3)();
-                        if (!var2) {
-                            _fun69473_ip = 56;
-                            continue _fun69473
-                        }
-                    case 38:
-                        var3 = _closure1_slot3;
-                        var2 = var3.setVibrationsEnabled;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1);
-                    case 56:
-                        return var0;
-                }
-            };
-            var1.setVibrationsEnabled = var6;
-            var6 = function arg0() {
                 _fun69474: for (var _fun69474_ip = 0;;) switch (_fun69474_ip) {
                     case 0:
                         var3 = _closure1_slot0;
@@ -1088,14 +1038,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         }
                     case 38:
                         var3 = _closure1_slot3;
-                        var2 = var3.setLightsEnabled;
+                        var2 = var3.setSoundsEnabled;
                         var1 = arg0;
                         var1 = var2.bind(var3)(var1);
                     case 56:
                         return var0;
                 }
             };
-            var1.setLightsEnabled = var6;
+            var1.setSoundsEnabled = var6;
             var6 = function arg0() {
                 _fun69475: for (var _fun69475_ip = 0;;) switch (_fun69475_ip) {
                     case 0:
@@ -1108,8 +1058,58 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var3.isAndroid;
                         var2 = var2.bind(var3)();
                         if (!var2) {
-                            _fun69475_ip = 58;
+                            _fun69475_ip = 56;
                             continue _fun69475
+                        }
+                    case 38:
+                        var3 = _closure1_slot3;
+                        var2 = var3.setVibrationsEnabled;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                    case 56:
+                        return var0;
+                }
+            };
+            var1.setVibrationsEnabled = var6;
+            var6 = function arg0() {
+                _fun69476: for (var _fun69476_ip = 0;;) switch (_fun69476_ip) {
+                    case 0:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot2;
+                        var0 = 1;
+                        var2 = var2[var0];
+                        var0 = undefined;
+                        var3 = var3.bind(var0)(var2);
+                        var2 = var3.isAndroid;
+                        var2 = var2.bind(var3)();
+                        if (!var2) {
+                            _fun69476_ip = 56;
+                            continue _fun69476
+                        }
+                    case 38:
+                        var3 = _closure1_slot3;
+                        var2 = var3.setLightsEnabled;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                    case 56:
+                        return var0;
+                }
+            };
+            var1.setLightsEnabled = var6;
+            var6 = function arg0() {
+                _fun69477: for (var _fun69477_ip = 0;;) switch (_fun69477_ip) {
+                    case 0:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot2;
+                        var0 = 1;
+                        var2 = var2[var0];
+                        var0 = undefined;
+                        var3 = var3.bind(var0)(var2);
+                        var2 = var3.isAndroid;
+                        var2 = var2.bind(var3)();
+                        if (!var2) {
+                            _fun69477_ip = 58;
+                            continue _fun69477
                         }
                     case 38:
                         var3 = _closure1_slot3;
@@ -1131,7 +1131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 });
                 var3 = function(arg0) { // Environment: var0
-                    _fun69477: for (var _fun69477_ip = 0;;) switch (_fun69477_ip) {
+                    _fun69479: for (var _fun69479_ip = 0;;) switch (_fun69479_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
@@ -1144,14 +1144,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var5.isAndroid;
                             var3 = var3.bind(var5)();
                             if (var3) {
-                                _fun69477_ip = 56;
-                                continue _fun69477
+                                _fun69479_ip = 56;
+                                continue _fun69479
                             }
                         case 47:
                             var3 = false;
                             var3 = var4.bind(var0)(var3);
-                            _fun69477_ip = 89;
-                            continue _fun69477;
+                            _fun69479_ip = 89;
+                            continue _fun69479;
                         case 56:
                             var3 = _closure1_slot3;
                             var2 = var3.shouldNotifyEveryTime;

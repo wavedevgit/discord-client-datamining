@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun65891: for (var _fun65891_ip = 0;;) switch (_fun65891_ip) {
+        _fun65893: for (var _fun65893_ip = 0;;) switch (_fun65893_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.canCreateGuildEvent;
                 var0 = null;
                 if (!var1) {
-                    _fun65891_ip = 296;
-                    continue _fun65891
+                    _fun65893_ip = 296;
+                    continue _fun65893
                 }
             case 87:
                 var3 = _closure1_slot3;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ScheduleEventPrompt = var3;
     var1 = function arg0() {
-        _fun65893: for (var _fun65893_ip = 0;;) switch (_fun65893_ip) {
+        _fun65895: for (var _fun65895_ip = 0;;) switch (_fun65895_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.event;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var4)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun65893_ip = 395;
-                    continue _fun65893
+                    _fun65895_ip = 395;
+                    continue _fun65895
                 }
             case 110:
                 var3 = _closure1_slot3;

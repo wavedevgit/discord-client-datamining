@@ -18,31 +18,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.I18nManager;
     var _closure1_slot0 = var3;
     var1 = function arg0() {
-        _fun51826: for (var _fun51826_ip = 0;;) switch (_fun51826_ip) {
+        _fun51828: for (var _fun51828_ip = 0;;) switch (_fun51828_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'vertical';
                 if (!(var0 !== var1)) {
-                    _fun51826_ip = 125;
-                    continue _fun51826
+                    _fun51828_ip = 125;
+                    continue _fun51828
                 }
             case 11:
                 var0 = 'vertical-inverted';
                 if (!(var0 !== var1)) {
-                    _fun51826_ip = 117;
-                    continue _fun51826
+                    _fun51828_ip = 117;
+                    continue _fun51828
                 }
             case 21:
                 var0 = 'horizontal';
                 if (!(var0 !== var1)) {
-                    _fun51826_ip = 80;
-                    continue _fun51826
+                    _fun51828_ip = 80;
+                    continue _fun51828
                 }
             case 29:
                 var0 = 'horizontal-inverted';
                 if (!(var0 !== var1)) {
-                    _fun51826_ip = 43;
-                    continue _fun51826
+                    _fun51828_ip = 43;
+                    continue _fun51828
                 }
             case 39:
                 var0 = undefined;
@@ -54,8 +54,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.isRTL;
                 var0 = -1;
                 if (!var1) {
-                    _fun51826_ip = 78;
-                    continue _fun51826
+                    _fun51828_ip = 78;
+                    continue _fun51828
                 }
             case 75:
                 var0 = 1;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.isRTL;
                 var0 = 1;
                 if (!var1) {
-                    _fun51826_ip = 115;
-                    continue _fun51826
+                    _fun51828_ip = 115;
+                    continue _fun51828
                 }
             case 109:
                 var0 = -1;

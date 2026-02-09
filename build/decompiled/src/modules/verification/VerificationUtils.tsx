@@ -79,31 +79,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var1;
     var1 = {};
     var6 = function arg0, arg1() {
-        _fun61112: for (var _fun61112_ip = 0;;) switch (_fun61112_ip) {
+        _fun61114: for (var _fun61114_ip = 0;;) switch (_fun61114_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arg1;
                 var0 = undefined;
                 var0 = var0 !== var2;
                 if (!var0) {
-                    _fun61112_ip = 25;
-                    continue _fun61112
+                    _fun61114_ip = 25;
+                    continue _fun61114
                 }
             case 15:
                 var1 = var2.isPhoneVerified;
                 var0 = var1.bind(var2)();
             case 25:
                 if (!var0) {
-                    _fun61112_ip = 82;
-                    continue _fun61112
+                    _fun61114_ip = 82;
+                    continue _fun61114
                 }
             case 28:
                 var1 = _closure1_slot3;
                 var1 = var1.REQUIRE_REVERIFIED_PHONE;
                 var1 = var3 === var1;
                 if (var1) {
-                    _fun61112_ip = 62;
-                    continue _fun61112
+                    _fun61114_ip = 62;
+                    continue _fun61114
                 }
             case 48:
                 var4 = _closure1_slot3;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 === var4;
             case 62:
                 if (var1) {
-                    _fun61112_ip = 79;
-                    continue _fun61112
+                    _fun61114_ip = 79;
+                    continue _fun61114
                 }
             case 65:
                 var2 = _closure1_slot3;
@@ -126,15 +126,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.isPhoneReverification = var6;
     var6 = function arg0() {
-        _fun61113: for (var _fun61113_ip = 0;;) switch (_fun61113_ip) {
+        _fun61115: for (var _fun61115_ip = 0;;) switch (_fun61115_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot3;
                 var0 = var0.REQUIRE_REVERIFIED_EMAIL;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun61113_ip = 37;
-                    continue _fun61113
+                    _fun61115_ip = 37;
+                    continue _fun61115
                 }
             case 23:
                 var3 = _closure1_slot3;
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 === var3;
             case 37:
                 if (var0) {
-                    _fun61113_ip = 54;
-                    continue _fun61113
+                    _fun61115_ip = 54;
+                    continue _fun61115
                 }
             case 40:
                 var1 = _closure1_slot3;
@@ -155,7 +155,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.isEmailReverification = var6;
     var6 = function arg0() {
-        _fun61114: for (var _fun61114_ip = 0;;) switch (_fun61114_ip) {
+        _fun61116: for (var _fun61116_ip = 0;;) switch (_fun61116_ip) {
             case 0:
                 var3 = arg0;
                 var2 = this;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.REQUIRE_CAPTCHA;
                 var0 = var3 === var0;
                 if (var0) {
-                    _fun61114_ip = 40;
-                    continue _fun61114
+                    _fun61116_ip = 40;
+                    continue _fun61116
                 }
             case 26:
                 var4 = _closure1_slot3;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var4;
             case 40:
                 if (var0) {
-                    _fun61114_ip = 57;
-                    continue _fun61114
+                    _fun61116_ip = 57;
+                    continue _fun61116
                 }
             case 43:
                 var4 = _closure1_slot3;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var4;
             case 57:
                 if (var0) {
-                    _fun61114_ip = 74;
-                    continue _fun61114
+                    _fun61116_ip = 74;
+                    continue _fun61116
                 }
             case 60:
                 var4 = _closure1_slot3;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var4;
             case 74:
                 if (var0) {
-                    _fun61114_ip = 91;
-                    continue _fun61114
+                    _fun61116_ip = 91;
+                    continue _fun61116
                 }
             case 77:
                 var4 = _closure1_slot3;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var4;
             case 91:
                 if (var0) {
-                    _fun61114_ip = 108;
-                    continue _fun61114
+                    _fun61116_ip = 108;
+                    continue _fun61116
                 }
             case 94:
                 var1 = _closure1_slot3;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var1;
             case 108:
                 if (var0) {
-                    _fun61114_ip = 122;
-                    continue _fun61114
+                    _fun61116_ip = 122;
+                    continue _fun61116
                 }
             case 111:
                 var1 = var2.isEmailReverification;
@@ -220,26 +220,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.isFullScreenVerification = var6;
     var6 = function arg0() {
-        _fun61115: for (var _fun61115_ip = 0;;) switch (_fun61115_ip) {
+        _fun61117: for (var _fun61117_ip = 0;;) switch (_fun61117_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun61115_ip = 33;
-                    continue _fun61115
+                    _fun61117_ip = 33;
+                    continue _fun61117
                 }
             case 9:
                 var2 = 'symbol';
                 var0 = typeof var1;
                 if (!(var2 !== var0)) {
-                    _fun61115_ip = 33;
-                    continue _fun61115
+                    _fun61117_ip = 33;
+                    continue _fun61117
                 }
             case 20:
                 var0 = _closure1_slot5;
                 var0 = var0[var1];
-                _fun61115_ip = 37;
-                continue _fun61115;
+                _fun61117_ip = 37;
+                continue _fun61117;
             case 33:
                 var0 = new Array(0);
             case 37:
@@ -248,35 +248,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getVerificationTypes = var6;
     var6 = function arg0() {
-        _fun61116: for (var _fun61116_ip = 0;;) switch (_fun61116_ip) {
+        _fun61118: for (var _fun61118_ip = 0;;) switch (_fun61118_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot4;
                 var1 = var1.EMAIL;
                 if (!(var1 !== var2)) {
-                    _fun61116_ip = 315;
-                    continue _fun61116
+                    _fun61118_ip = 315;
+                    continue _fun61118
                 }
             case 23:
                 var1 = _closure1_slot4;
                 var1 = var1.PHONE;
                 if (!(var1 !== var2)) {
-                    _fun61116_ip = 254;
-                    continue _fun61116
+                    _fun61118_ip = 254;
+                    continue _fun61118
                 }
             case 40:
                 var1 = _closure1_slot4;
                 var1 = var1.REVERIFY_EMAIL;
                 if (!(var1 !== var2)) {
-                    _fun61116_ip = 193;
-                    continue _fun61116
+                    _fun61118_ip = 193;
+                    continue _fun61118
                 }
             case 57:
                 var1 = _closure1_slot4;
                 var1 = var1.REVERIFY_PHONE;
                 if (!(var1 !== var2)) {
-                    _fun61116_ip = 132;
-                    continue _fun61116
+                    _fun61118_ip = 132;
+                    continue _fun61118
                 }
             case 71:
                 var5 = _closure1_slot0;

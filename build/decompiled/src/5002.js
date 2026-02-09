@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var7;
     var0 = function arg0, arg1, arg2() {
-        _fun44970: for (var _fun44970_ip = 0;;) switch (_fun44970_ip) {
+        _fun44972: for (var _fun44972_ip = 0;;) switch (_fun44972_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -19,21 +19,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot10;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun44970_ip = 51;
-                    continue _fun44970
+                    _fun44972_ip = 51;
+                    continue _fun44972
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun44970_ip = 92;
-                continue _fun44970;
+                _fun44972_ip = 92;
+                continue _fun44972;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun44970_ip = 71;
-                    continue _fun44970
+                    _fun44972_ip = 71;
+                    continue _fun44972
                 }
             case 67:
                 var5 = new Array(0);
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot9 = var0;
     var0 = function() {
-        _fun44971: for (var _fun44971_ip = 0;;) switch (_fun44971_ip) {
+        _fun44973: for (var _fun44973_ip = 0;;) switch (_fun44973_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun44971_ip = 74;
-                continue _fun44971;
+                _fun44973_ip = 74;
+                continue _fun44973;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -185,7 +185,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'addDependency';
         var4.key = var0;
         var0 = function arg0, arg1() {
-            _fun44977: for (var _fun44977_ip = 0;;) switch (_fun44977_ip) {
+            _fun44979: for (var _fun44979_ip = 0;;) switch (_fun44979_ip) {
                 case 0:
                     var2 = arg0;
                     var6 = arg1;
@@ -194,14 +194,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var1[var2];
                     var1 = var0.config;
                     if (var5) {
-                        _fun44977_ip = 36;
-                        continue _fun44977
+                        _fun44979_ip = 36;
+                        continue _fun44979
                     }
                 case 26:
                     var0 = new Array(1);
                     var0[0] = var6;
-                    _fun44977_ip = 61;
-                    continue _fun44977;
+                    _fun44979_ip = 61;
+                    continue _fun44979;
                 case 36:
                     var3 = global;
                     var4 = var3.Array;
@@ -482,150 +482,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'simultaneousWithExternalGesture';
         var4.key = var6;
         var6 = function() {
-            _fun44994: for (var _fun44994_ip = 0;;) switch (_fun44994_ip) {
-                case 0:
-                    var0 = this;
-                    var4 = undefined;
-                    var6 = undefined;
-                    var5 = undefined;
-                    var3 = arguments.length;
-                    var1 = global;
-                    var1 = var1.Array;
-                    var2 = var1.prototype;
-                    var2 = Object.create(var2, {
-                        constructor: {
-                            value: var1
-                        }
-                    });
-                    var10 = var2;
-                    var9 = var3;
-                    var1 = new var10[var1](var9, var8);
-                    var1 = var1 instanceof Object ? var1 : var2;
-                    var2 = 0;
-                    var7 = var2 < var3;
-                    if (!var7) {
-                        _fun44994_ip = 67;
-                        continue _fun44994
-                    }
-                case 52:
-                    var7 = arguments[var2];
-                    var1[var2] = var7;
-                    var2 = var2 + 1;
-                    if (var2 < var3) {
-                        _fun44994_ip = 52;
-                        continue _fun44994
-                    }
-                case 67:
-                    var3 = var1;
-                    var2 = var3[Symbol.iterator];
-                    var3 = var2().next;
-                    var1 = 'simultaneousWith';
-                case 77:
-                    var6 = var3().value;
-                    var7 = var2;
-                    if (!(var7 !== var4)) {
-                        _fun44994_ip = 118;
-                        continue _fun44994
-                    }
-                case 88: // try_start_0
-                    var5 = var6;
-                    if (!var6) {
-                        _fun44994_ip = 109;
-                        continue _fun44994
-                    }
-                case 94:
-                    var7 = var0.addDependency;
-                    var6 = var5;
-                    var6 = var7.bind(var0)(var1, var6);
-                case 109: // try_end0
-                    _fun44994_ip = 77;
-                    continue _fun44994;
-                case 111: // catch_target0
-                    CatchBlockStart(arg_register = 1);
-                    var2.return();
-                    throw var1;
-                case 118:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[17] = var4;
-        var4 = {};
-        var6 = 'requireExternalGestureToFail';
-        var4.key = var6;
-        var6 = function() {
-            _fun44995: for (var _fun44995_ip = 0;;) switch (_fun44995_ip) {
-                case 0:
-                    var0 = this;
-                    var4 = undefined;
-                    var6 = undefined;
-                    var5 = undefined;
-                    var3 = arguments.length;
-                    var1 = global;
-                    var1 = var1.Array;
-                    var2 = var1.prototype;
-                    var2 = Object.create(var2, {
-                        constructor: {
-                            value: var1
-                        }
-                    });
-                    var10 = var2;
-                    var9 = var3;
-                    var1 = new var10[var1](var9, var8);
-                    var1 = var1 instanceof Object ? var1 : var2;
-                    var2 = 0;
-                    var7 = var2 < var3;
-                    if (!var7) {
-                        _fun44995_ip = 67;
-                        continue _fun44995
-                    }
-                case 52:
-                    var7 = arguments[var2];
-                    var1[var2] = var7;
-                    var2 = var2 + 1;
-                    if (var2 < var3) {
-                        _fun44995_ip = 52;
-                        continue _fun44995
-                    }
-                case 67:
-                    var3 = var1;
-                    var2 = var3[Symbol.iterator];
-                    var3 = var2().next;
-                    var1 = 'requireToFail';
-                case 77:
-                    var6 = var3().value;
-                    var7 = var2;
-                    if (!(var7 !== var4)) {
-                        _fun44995_ip = 118;
-                        continue _fun44995
-                    }
-                case 88: // try_start_0
-                    var5 = var6;
-                    if (!var6) {
-                        _fun44995_ip = 109;
-                        continue _fun44995
-                    }
-                case 94:
-                    var7 = var0.addDependency;
-                    var6 = var5;
-                    var6 = var7.bind(var0)(var1, var6);
-                case 109: // try_end0
-                    _fun44995_ip = 77;
-                    continue _fun44995;
-                case 111: // catch_target0
-                    CatchBlockStart(arg_register = 1);
-                    var2.return();
-                    throw var1;
-                case 118:
-                    return var0;
-            }
-        };
-        var4.value = var6;
-        var0[18] = var4;
-        var4 = {};
-        var6 = 'blocksExternalGesture';
-        var4.key = var6;
-        var6 = function() {
             _fun44996: for (var _fun44996_ip = 0;;) switch (_fun44996_ip) {
                 case 0:
                     var0 = this;
@@ -663,7 +519,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var1;
                     var2 = var3[Symbol.iterator];
                     var3 = var2().next;
-                    var1 = 'blocksHandlers';
+                    var1 = 'simultaneousWith';
                 case 77:
                     var6 = var3().value;
                     var7 = var2;
@@ -684,6 +540,150 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 109: // try_end0
                     _fun44996_ip = 77;
                     continue _fun44996;
+                case 111: // catch_target0
+                    CatchBlockStart(arg_register = 1);
+                    var2.return();
+                    throw var1;
+                case 118:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[17] = var4;
+        var4 = {};
+        var6 = 'requireExternalGestureToFail';
+        var4.key = var6;
+        var6 = function() {
+            _fun44997: for (var _fun44997_ip = 0;;) switch (_fun44997_ip) {
+                case 0:
+                    var0 = this;
+                    var4 = undefined;
+                    var6 = undefined;
+                    var5 = undefined;
+                    var3 = arguments.length;
+                    var1 = global;
+                    var1 = var1.Array;
+                    var2 = var1.prototype;
+                    var2 = Object.create(var2, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var10 = var2;
+                    var9 = var3;
+                    var1 = new var10[var1](var9, var8);
+                    var1 = var1 instanceof Object ? var1 : var2;
+                    var2 = 0;
+                    var7 = var2 < var3;
+                    if (!var7) {
+                        _fun44997_ip = 67;
+                        continue _fun44997
+                    }
+                case 52:
+                    var7 = arguments[var2];
+                    var1[var2] = var7;
+                    var2 = var2 + 1;
+                    if (var2 < var3) {
+                        _fun44997_ip = 52;
+                        continue _fun44997
+                    }
+                case 67:
+                    var3 = var1;
+                    var2 = var3[Symbol.iterator];
+                    var3 = var2().next;
+                    var1 = 'requireToFail';
+                case 77:
+                    var6 = var3().value;
+                    var7 = var2;
+                    if (!(var7 !== var4)) {
+                        _fun44997_ip = 118;
+                        continue _fun44997
+                    }
+                case 88: // try_start_0
+                    var5 = var6;
+                    if (!var6) {
+                        _fun44997_ip = 109;
+                        continue _fun44997
+                    }
+                case 94:
+                    var7 = var0.addDependency;
+                    var6 = var5;
+                    var6 = var7.bind(var0)(var1, var6);
+                case 109: // try_end0
+                    _fun44997_ip = 77;
+                    continue _fun44997;
+                case 111: // catch_target0
+                    CatchBlockStart(arg_register = 1);
+                    var2.return();
+                    throw var1;
+                case 118:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[18] = var4;
+        var4 = {};
+        var6 = 'blocksExternalGesture';
+        var4.key = var6;
+        var6 = function() {
+            _fun44998: for (var _fun44998_ip = 0;;) switch (_fun44998_ip) {
+                case 0:
+                    var0 = this;
+                    var4 = undefined;
+                    var6 = undefined;
+                    var5 = undefined;
+                    var3 = arguments.length;
+                    var1 = global;
+                    var1 = var1.Array;
+                    var2 = var1.prototype;
+                    var2 = Object.create(var2, {
+                        constructor: {
+                            value: var1
+                        }
+                    });
+                    var10 = var2;
+                    var9 = var3;
+                    var1 = new var10[var1](var9, var8);
+                    var1 = var1 instanceof Object ? var1 : var2;
+                    var2 = 0;
+                    var7 = var2 < var3;
+                    if (!var7) {
+                        _fun44998_ip = 67;
+                        continue _fun44998
+                    }
+                case 52:
+                    var7 = arguments[var2];
+                    var1[var2] = var7;
+                    var2 = var2 + 1;
+                    if (var2 < var3) {
+                        _fun44998_ip = 52;
+                        continue _fun44998
+                    }
+                case 67:
+                    var3 = var1;
+                    var2 = var3[Symbol.iterator];
+                    var3 = var2().next;
+                    var1 = 'blocksHandlers';
+                case 77:
+                    var6 = var3().value;
+                    var7 = var2;
+                    if (!(var7 !== var4)) {
+                        _fun44998_ip = 118;
+                        continue _fun44998
+                    }
+                case 88: // try_start_0
+                    var5 = var6;
+                    if (!var6) {
+                        _fun44998_ip = 109;
+                        continue _fun44998
+                    }
+                case 94:
+                    var7 = var0.addDependency;
+                    var6 = var5;
+                    var6 = var7.bind(var0)(var1, var6);
+                case 109: // try_end0
+                    _fun44998_ip = 77;
+                    continue _fun44998;
                 case 111: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var2.return();
@@ -722,7 +722,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'initialize';
         var4.key = var6;
         var6 = function() {
-            _fun44999: for (var _fun44999_ip = 0;;) switch (_fun44999_ip) {
+            _fun45001: for (var _fun45001_ip = 0;;) switch (_fun45001_ip) {
                 case 0:
                     var2 = this;
                     var3 = _closure1_slot0;
@@ -747,8 +747,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var2.config;
                     var1 = var1.ref;
                     if (!var1) {
-                        _fun44999_ip = 120;
-                        continue _fun44999
+                        _fun45001_ip = 120;
+                        continue _fun45001
                     }
                 case 104:
                     var1 = var2.config;
@@ -784,7 +784,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'shouldUseReanimated';
         var4.key = var6;
         var5 = function() {
-            _fun45002: for (var _fun45002_ip = 0;;) switch (_fun45002_ip) {
+            _fun45004: for (var _fun45004_ip = 0;;) switch (_fun45004_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.config;
@@ -792,8 +792,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = true;
                     var0 = var0 !== var2;
                     if (!var0) {
-                        _fun45002_ip = 49;
-                        continue _fun45002
+                        _fun45004_ip = 49;
+                        continue _fun45004
                     }
                 case 22:
                     var1 = var1.handlers;
@@ -804,8 +804,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var1;
                 case 49:
                     if (!var0) {
-                        _fun45002_ip = 90;
-                        continue _fun45002
+                        _fun45004_ip = 90;
+                        continue _fun45004
                     }
                 case 52:
                     var3 = _closure1_slot0;

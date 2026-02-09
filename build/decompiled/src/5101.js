@@ -19,7 +19,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var3 = var3.Platform;
     var1 = function() {
-        _fun45600: for (var _fun45600_ip = 0;;) switch (_fun45600_ip) {
+        _fun45602: for (var _fun45602_ip = 0;;) switch (_fun45602_ip) {
             case 0:
                 var5 = undefined;
                 var9 = undefined;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = undefined;
                 var1 = _closure1_slot1;
                 if (!(var5 === var1)) {
-                    _fun45600_ip = 128;
-                    continue _fun45600
+                    _fun45602_ip = 128;
+                    continue _fun45602
                 }
             case 21: // try_start_0
                 var1 = global;
@@ -40,8 +40,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var7 == var2;
                 var2 = undefined;
                 if (var10) {
-                    _fun45600_ip = 53;
-                    continue _fun45600
+                    _fun45602_ip = 53;
+                    continue _fun45602
                 }
             case 47:
                 var2 = var9.nativeFabricUIManager;
@@ -53,8 +53,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var7 == var1;
                 var1 = undefined;
                 if (var7) {
-                    _fun45600_ip = 86;
-                    continue _fun45600
+                    _fun45602_ip = 86;
+                    continue _fun45602
                 }
             case 80:
                 var1 = var6.__turboModuleProxy;
@@ -62,24 +62,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var2.bind(var5)(var1);
                 var2 = var4;
                 if (var4) {
-                    _fun45600_ip = 100;
-                    continue _fun45600
+                    _fun45602_ip = 100;
+                    continue _fun45602
                 }
             case 97:
                 var2 = var3;
             case 100:
                 var1 = var2;
                 if (var2) {
-                    _fun45600_ip = 108;
-                    continue _fun45600
+                    _fun45602_ip = 108;
+                    continue _fun45602
                 }
             case 106:
                 var1 = false;
             case 108:
                 var _closure1_slot1 = var1;
             case 112: // try_end0
-                _fun45600_ip = 122;
-                continue _fun45600;
+                _fun45602_ip = 122;
+                continue _fun45602;
             case 114: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var1 = true;

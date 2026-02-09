@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rtc/native/SecureFramesVerificationBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67511: for (var _fun67511_ip = 0;;) switch (_fun67511_ip) {
+        _fun67513: for (var _fun67513_ip = 0;;) switch (_fun67513_ip) {
             case 0:
                 var1 = arg0;
                 var23 = var1.title;
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var14;
                 var2[1] = var1;
                 var1 = function() { // Environment: var0
-                    _fun67512: for (var _fun67512_ip = 0;;) switch (_fun67512_ip) {
+                    _fun67514: for (var _fun67514_ip = 0;;) switch (_fun67514_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun67512_ip = 77;
-                                continue _fun67512
+                                _fun67514_ip = 77;
+                                continue _fun67514
                             }
                         case 13:
                             var3 = _closure2_slot1;
@@ -367,8 +367,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.title = var16;
                 var15 = var15 != var14;
                 if (!var15) {
-                    _fun67511_ip = 844;
-                    continue _fun67511
+                    _fun67513_ip = 844;
+                    continue _fun67513
                 }
             case 807:
                 var18 = _closure1_slot8;

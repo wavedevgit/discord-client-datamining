@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useActiveEventOrStageInstanceChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 8152, 13348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 8152, 13346, 2]);

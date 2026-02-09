@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SoundboardButtonLocation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 14290, 3213, 1358, 14316, 8577, 5771, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 14288, 3213, 1358, 14314, 8577, 5771, 2]);

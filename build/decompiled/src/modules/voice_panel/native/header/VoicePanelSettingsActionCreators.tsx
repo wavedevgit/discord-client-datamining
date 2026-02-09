@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openVoicePanelSettingsActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 14349, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 14347, 1307, 2]);

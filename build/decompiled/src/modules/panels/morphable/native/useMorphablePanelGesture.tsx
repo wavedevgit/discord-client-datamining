@@ -932,4 +932,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MorphablePanelModes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11887, 1464, 1568, 3721, 4963, 5353, 14277, 14280, 3280, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11886, 1464, 1568, 3721, 4963, 5353, 14275, 14278, 3280, 2]);

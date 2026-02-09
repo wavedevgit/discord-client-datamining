@@ -9,21 +9,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function arg0, arg1() {
-        _fun28047: for (var _fun28047_ip = 0;;) switch (_fun28047_ip) {
+        _fun28045: for (var _fun28045_ip = 0;;) switch (_fun28045_ip) {
             case 0:
                 var0 = arguments[2];
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun28047_ip = 11;
-                    continue _fun28047
+                    _fun28045_ip = 11;
+                    continue _fun28045
                 }
             case 9:
                 var0 = {};
             case 11:
                 var0 = var0.optional;
                 if (!(var0 === var4)) {
-                    _fun28047_ip = 23;
-                    continue _fun28047
+                    _fun28045_ip = 23;
+                    continue _fun28045
                 }
             case 21:
                 var0 = false;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3.bind(var4)(var1);
                 var6 = '';
                 if (!var0) {
-                    _fun28047_ip = 87;
-                    continue _fun28047
+                    _fun28045_ip = 87;
+                    continue _fun28045
                 }
             case 83:
                 var6 = '?';
@@ -92,29 +92,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var1;
     var1 = {};
     var6 = function() {
-        _fun28048: for (var _fun28048_ip = 0;;) switch (_fun28048_ip) {
+        _fun28046: for (var _fun28046_ip = 0;;) switch (_fun28046_ip) {
             case 0:
                 var0 = arguments[0];
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun28048_ip = 11;
-                    continue _fun28048
+                    _fun28046_ip = 11;
+                    continue _fun28046
                 }
             case 9:
                 var0 = {};
             case 11:
                 var3 = var0.name;
                 if (!(var3 === var4)) {
-                    _fun28048_ip = 24;
-                    continue _fun28048
+                    _fun28046_ip = 24;
+                    continue _fun28046
                 }
             case 20:
                 var3 = 'guildId';
             case 24:
                 var5 = var0.optional;
                 if (!(var5 === var4)) {
-                    _fun28048_ip = 36;
-                    continue _fun28048
+                    _fun28046_ip = 36;
+                    continue _fun28046
                 }
             case 34:
                 var5 = false;
@@ -145,29 +145,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.guildId = var6;
     var3 = function() {
-        _fun28049: for (var _fun28049_ip = 0;;) switch (_fun28049_ip) {
+        _fun28047: for (var _fun28047_ip = 0;;) switch (_fun28047_ip) {
             case 0:
                 var0 = arguments[0];
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun28049_ip = 11;
-                    continue _fun28049
+                    _fun28047_ip = 11;
+                    continue _fun28047
                 }
             case 9:
                 var0 = {};
             case 11:
                 var3 = var0.name;
                 if (!(var3 === var4)) {
-                    _fun28049_ip = 24;
-                    continue _fun28049
+                    _fun28047_ip = 24;
+                    continue _fun28047
                 }
             case 20:
                 var3 = 'channelId';
             case 24:
                 var5 = var0.optional;
                 if (!(var5 === var4)) {
-                    _fun28049_ip = 36;
-                    continue _fun28049
+                    _fun28047_ip = 36;
+                    continue _fun28047
                 }
             case 34:
                 var5 = false;

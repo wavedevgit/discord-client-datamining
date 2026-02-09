@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4.contentContainerStyle = var7;
         var7 = var8.map;
         var6 = function(arg0, arg1) { // Environment: var6
-            _fun83166: for (var _fun83166_ip = 0;;) switch (_fun83166_ip) {
+            _fun83167: for (var _fun83167_ip = 0;;) switch (_fun83167_ip) {
                 case 0:
                     var0 = arg0;
                     var11 = arg1;
@@ -170,13 +170,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = _closure2_slot0;
                     var9 = var13.bind(var14)(var9);
                     if (var9) {
-                        _fun83166_ip = 190;
-                        continue _fun83166
+                        _fun83167_ip = 190;
+                        continue _fun83167
                     }
                 case 182:
                     var9 = var12.lightPNG;
-                    _fun83166_ip = 196;
-                    continue _fun83166;
+                    _fun83167_ip = 196;
+                    continue _fun83167;
                 case 190:
                     var9 = var12.darkPNG;
                 case 196:

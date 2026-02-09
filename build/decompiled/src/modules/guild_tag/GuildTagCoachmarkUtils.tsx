@@ -473,4 +473,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildTagUpdatedDismissibleContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1683, 1410, 1621, 13693, 660, 11336, 1358, 566, 6883, 13694, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1683, 1410, 1621, 13691, 660, 11335, 1358, 566, 6883, 13692, 2]);

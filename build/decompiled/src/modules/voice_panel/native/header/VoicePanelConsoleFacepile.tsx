@@ -9,22 +9,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun111726: for (var _fun111726_ip = 0;;) switch (_fun111726_ip) {
+        _fun111725: for (var _fun111725_ip = 0;;) switch (_fun111725_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2.type;
                 var0 = _closure1_slot4;
                 var0 = var0.XBOX;
                 if (!(var0 !== var3)) {
-                    _fun111726_ip = 222;
-                    continue _fun111726
+                    _fun111725_ip = 222;
+                    continue _fun111725
                 }
             case 28:
                 var0 = _closure1_slot4;
                 var0 = var0.PLAYSTATION;
                 if (!(var0 !== var3)) {
-                    _fun111726_ip = 46;
-                    continue _fun111726
+                    _fun111725_ip = 46;
+                    continue _fun111725
                 }
             case 42:
                 var0 = null;

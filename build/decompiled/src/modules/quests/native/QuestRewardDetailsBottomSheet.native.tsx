@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/QuestRewardDetailsBottomSheet.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun79385: for (var _fun79385_ip = 0;;) switch (_fun79385_ip) {
+        _fun79387: for (var _fun79387_ip = 0;;) switch (_fun79387_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.questId;
@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var19;
                 var1[1] = var5;
                 var0 = function() { // Environment: var0
-                    _fun79387: for (var _fun79387_ip = 0;;) switch (_fun79387_ip) {
+                    _fun79389: for (var _fun79389_ip = 0;;) switch (_fun79389_ip) {
                         case 0:
                             var4 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.QuestRewardTypes;
                             var1 = var1.COLLECTIBLE;
                             if (!(var1 !== var2)) {
-                                _fun79387_ip = 172;
-                                continue _fun79387
+                                _fun79389_ip = 172;
+                                continue _fun79389
                             }
                         case 76:
                             var4 = _closure1_slot0;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.QuestRewardTypes;
                             var1 = var1.FRACTIONAL_PREMIUM;
                             if (!(var1 !== var2)) {
-                                _fun79387_ip = 113;
-                                continue _fun79387
+                                _fun79389_ip = 113;
+                                continue _fun79389
                             }
                         case 109:
                             var1 = null;
@@ -178,13 +178,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.bind(var5)(var3);
                             var3 = var3.t;
                             if (var0) {
-                                _fun79387_ip = 241;
-                                continue _fun79387
+                                _fun79389_ip = 241;
+                                continue _fun79389
                             }
                         case 231:
                             var0 = var3.ABD2CN;
-                            _fun79387_ip = 249;
-                            continue _fun79387;
+                            _fun79389_ip = 249;
+                            continue _fun79389;
                         case 241:
                             var0 = var3["66YyBJ"];
                         case 249:
@@ -303,8 +303,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var8 = var8 != var16;
                 if (!var8) {
-                    _fun79385_ip = 697;
-                    continue _fun79385
+                    _fun79387_ip = 697;
+                    continue _fun79387
                 }
             case 593:
                 var11 = _closure1_slot6;

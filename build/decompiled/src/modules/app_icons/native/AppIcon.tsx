@@ -68,15 +68,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_icons/native/AppIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun86323: for (var _fun86323_ip = 0;;) switch (_fun86323_ip) {
+        _fun86324: for (var _fun86324_ip = 0;;) switch (_fun86324_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.id;
                 var11 = var0.size;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun86323_ip = 22;
-                    continue _fun86323
+                    _fun86324_ip = 22;
+                    continue _fun86324
                 }
             case 19:
                 var11 = 56;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var2);
                 var10 = 1;
                 if (!var0) {
-                    _fun86323_ip = 106;
-                    continue _fun86323
+                    _fun86324_ip = 106;
+                    continue _fun86324
                 }
             case 104:
                 var10 = 0;

@@ -988,4 +988,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleNextOrSubmitRegistration = var3;
     var2.handleRegistrationSubmit = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 10418, 4558, 13116, 13117, 660, 33, 481, 13118, 13125, 13126, 13136, 13137, 13143, 7548, 13145, 13146, 7629, 7626, 13150, 13151, 13155, 1607, 13128, 3351, 7557, 13156, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 10417, 4558, 13114, 13115, 660, 33, 481, 13116, 13123, 13124, 13134, 13135, 13141, 7548, 13143, 13144, 7629, 7626, 13148, 13149, 13153, 1607, 13126, 3351, 7557, 13154, 2]);

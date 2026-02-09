@@ -711,4 +711,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.registerPhone = var3;
     var2.registerFull = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1216, 660, 1219, 3047, 795, 4525, 481, 3353, 5311, 806, 13129, 13130, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1216, 660, 1219, 3047, 795, 4525, 481, 3353, 5311, 806, 13127, 13128, 2]);

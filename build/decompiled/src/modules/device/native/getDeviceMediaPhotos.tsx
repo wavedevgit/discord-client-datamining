@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/device/native/getDeviceMediaPhotos.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76329: for (var _fun76329_ip = 0;;) switch (_fun76329_ip) {
+        _fun76331: for (var _fun76331_ip = 0;;) switch (_fun76331_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.batchSize;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.onError;
                 var0 = undefined;
                 if (!(var3 === var0)) {
-                    _fun76329_ip = 54;
-                    continue _fun76329
+                    _fun76331_ip = 54;
+                    continue _fun76331
                 }
             case 45:
                 var3 = function arg0() {
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.isIOS;
                 var2 = var2.bind(var5)();
                 if (var2) {
-                    _fun76329_ip = 162;
-                    continue _fun76329
+                    _fun76331_ip = 162;
+                    continue _fun76331
                 }
             case 90:
                 var2 = _closure1_slot3;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)(var4);
                 var2 = var5.catch;
                 var2 = var2.bind(var5)(var3);
-                _fun76329_ip = 262;
-                continue _fun76329;
+                _fun76331_ip = 262;
+                continue _fun76331;
             case 162:
                 var8 = _closure1_slot1;
                 var2 = _closure1_slot2;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.bind(var0)(var2);
                 var2 = null;
                 if (!(var2 != var8)) {
-                    _fun76329_ip = 262;
-                    continue _fun76329
+                    _fun76331_ip = 262;
+                    continue _fun76331
                 }
             case 188:
                 var2 = _closure1_slot1;

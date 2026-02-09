@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var1;
     var1 = {};
     var6 = function arg0() {
-        _fun54233: for (var _fun54233_ip = 0;;) switch (_fun54233_ip) {
+        _fun54235: for (var _fun54235_ip = 0;;) switch (_fun54235_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.isDispatching;
                 var1 = var1.bind(var4)();
                 if (var1) {
-                    _fun54233_ip = 238;
-                    continue _fun54233
+                    _fun54235_ip = 234;
+                    continue _fun54235
                 }
             case 50:
                 var4 = _closure1_slot5;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var5);
                 var4 = null;
                 if (!(var4 == var1)) {
-                    _fun54233_ip = 236;
-                    continue _fun54233
+                    _fun54235_ip = 232;
+                    continue _fun54235
                 }
             case 73:
                 var4 = _closure1_slot1;
@@ -179,9 +179,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.set;
                 var3 = var3.bind(var4)(var5, var2);
                 return var2;
-            case 236:
+            case 232:
                 return var1;
-            case 238:
+            case 234:
                 var1 = global;
                 var2 = var1.Promise;
                 var1 = var2.resolve;

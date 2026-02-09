@@ -512,4 +512,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.goToApplicationStoreListing = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 7292, 3455, 3500, 12882, 7293, 660, 3362, 806, 1220, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 7292, 3455, 3500, 12880, 7293, 660, 3362, 806, 1220, 507, 2]);

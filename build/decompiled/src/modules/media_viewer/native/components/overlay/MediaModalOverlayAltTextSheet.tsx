@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73844: for (var _fun73844_ip = 0;;) switch (_fun73844_ip) {
+        _fun73846: for (var _fun73846_ip = 0;;) switch (_fun73846_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.description;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var5)();
                 var9 = 70;
                 if (var1) {
-                    _fun73844_ip = 93;
-                    continue _fun73844
+                    _fun73846_ip = 93;
+                    continue _fun73846
                 }
             case 79:
                 var1 = 20;

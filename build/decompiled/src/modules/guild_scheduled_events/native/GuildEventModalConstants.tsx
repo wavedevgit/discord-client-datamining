@@ -28,14 +28,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'guild-scheduled-events-info';
     var2.GUILD_EVENT_INFO_ACTION_SHEET_KEY = var1;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun65929: for (var _fun65929_ip = 0;;) switch (_fun65929_ip) {
+        _fun65931: for (var _fun65931_ip = 0;;) switch (_fun65931_ip) {
             case 0:
                 var1 = '';
                 var0 = arg0;
                 var0 = var1 !== var0;
                 if (!var0) {
-                    _fun65929_ip = 23;
-                    continue _fun65929
+                    _fun65931_ip = 23;
+                    continue _fun65931
                 }
             case 14:
                 var2 = null;

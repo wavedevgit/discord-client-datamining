@@ -35,35 +35,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/emojis/top_emojis/TopEmojisUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57917: for (var _fun57917_ip = 0;;) switch (_fun57917_ip) {
+        _fun57919: for (var _fun57919_ip = 0;;) switch (_fun57919_ip) {
             case 0:
                 var2 = arg0;
                 var1 = null;
                 if (!(var1 != var2)) {
-                    _fun57917_ip = 135;
-                    continue _fun57917
+                    _fun57919_ip = 135;
+                    continue _fun57919
                 }
             case 12:
                 var4 = _closure1_slot2;
                 var3 = var4.getCurrentUser;
                 var3 = var3.bind(var4)();
                 if (!(var1 != var3)) {
-                    _fun57917_ip = 135;
-                    continue _fun57917
+                    _fun57919_ip = 135;
+                    continue _fun57919
                 }
             case 32:
                 var4 = _closure1_slot3;
                 var3 = var4.getTopEmojisMetadata;
                 var3 = var3.bind(var4)(var2);
                 if (!(var1 != var3)) {
-                    _fun57917_ip = 84;
-                    continue _fun57917
+                    _fun57919_ip = 84;
+                    continue _fun57919
                 }
             case 53:
                 var3 = var3.topEmojisTTL;
                 if (!(var1 != var3)) {
-                    _fun57917_ip = 139;
-                    continue _fun57917
+                    _fun57919_ip = 139;
+                    continue _fun57919
                 }
             case 63:
                 var1 = global;
@@ -71,16 +71,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.now;
                 var1 = var1.bind(var4)();
                 if (!(!(var1 < var3))) {
-                    _fun57917_ip = 139;
-                    continue _fun57917
+                    _fun57919_ip = 139;
+                    continue _fun57919
                 }
             case 84:
                 var3 = _closure1_slot4;
                 var1 = var3.getIsFetching;
                 var1 = var1.bind(var3)(var2);
                 if (var1) {
-                    _fun57917_ip = 135;
-                    continue _fun57917
+                    _fun57919_ip = 135;
+                    continue _fun57919
                 }
             case 102:
                 var3 = _closure1_slot0;

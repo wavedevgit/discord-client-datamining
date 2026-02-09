@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111497: for (var _fun111497_ip = 0;;) switch (_fun111497_ip) {
+        _fun111496: for (var _fun111496_ip = 0;;) switch (_fun111496_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.markAsDismissed;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var4.bind(var5)(var2, var1);
                 var17 = 1.5;
                 if (!var0) {
-                    _fun111497_ip = 171;
-                    continue _fun111497
+                    _fun111496_ip = 171;
+                    continue _fun111496
                 }
             case 161:
                 var17 = 2.0875;
@@ -173,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var16.contentContainer;
                 var6.style = var8;
                 var8 = function arg0() {
-                    _fun111500: for (var _fun111500_ip = 0;;) switch (_fun111500_ip) {
+                    _fun111499: for (var _fun111499_ip = 0;;) switch (_fun111499_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure2_slot2;
                             var1 = var3;
                             if (!var0) {
-                                _fun111500_ip = 44;
-                                continue _fun111500
+                                _fun111499_ip = 44;
+                                continue _fun111499
                             }
                         case 37:
                             var0 = 2;

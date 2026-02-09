@@ -1007,4 +1007,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useHomeGesture = var3;
     var2.HomeDrawerStateContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 13188, 13189, 3926, 1470, 1464, 1568, 3923, 3920, 3721, 4081, 4963, 3280, 5307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 13186, 13187, 3926, 1470, 1464, 1568, 3923, 3920, 3721, 4081, 4963, 3280, 5307, 2]);

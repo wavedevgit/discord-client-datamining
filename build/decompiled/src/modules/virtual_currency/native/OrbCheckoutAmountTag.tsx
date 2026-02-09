@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/virtual_currency/native/OrbCheckoutAmountTag.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87590: for (var _fun87590_ip = 0;;) switch (_fun87590_ip) {
+        _fun87591: for (var _fun87591_ip = 0;;) switch (_fun87591_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.orbAmount;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.variant = var8;
                 var8 = null;
                 if (!(var8 != var9)) {
-                    _fun87590_ip = 208;
-                    continue _fun87590
+                    _fun87591_ip = 208;
+                    continue _fun87591
                 }
             case 143:
                 var12 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = {};
                 var10.orbAmount = var9;
                 var10 = var13.bind(var14)(var12, var10);
-                _fun87590_ip = 263;
-                continue _fun87590;
+                _fun87591_ip = 263;
+                continue _fun87591;
             case 208:
                 var14 = _closure1_slot0;
                 var15 = _closure1_slot1;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8 == var9;
                 var8 = '--';
                 if (var10) {
-                    _fun87590_ip = 283;
-                    continue _fun87590
+                    _fun87591_ip = 283;
+                    continue _fun87591
                 }
             case 280:
                 var8 = var9;

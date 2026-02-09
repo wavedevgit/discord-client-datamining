@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0) { // Environment: var1
-        _fun44416: for (var _fun44416_ip = 0;;) switch (_fun44416_ip) {
+        _fun44418: for (var _fun44418_ip = 0;;) switch (_fun44418_ip) {
             case 0:
                 var0 = {};
                 var1 = {};
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 12;
                 var5 = arg0;
                 if (!var5) {
-                    _fun44416_ip = 60;
-                    continue _fun44416
+                    _fun44418_ip = 60;
+                    continue _fun44418
                 }
             case 56:
                 var3 = _closure1_slot5;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3.bind(var6)();
                 var3 = 0;
                 if (!var6) {
-                    _fun44416_ip = 114;
-                    continue _fun44416
+                    _fun44418_ip = 114;
+                    continue _fun44418
                 }
             case 104:
                 var6 = _closure1_slot2;
@@ -111,14 +111,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/TableRow/native/TableRowDivider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun44417: for (var _fun44417_ip = 0;;) switch (_fun44417_ip) {
+        _fun44419: for (var _fun44419_ip = 0;;) switch (_fun44419_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.adjustSpacingForIcon;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun44417_ip = 17;
-                    continue _fun44417
+                    _fun44419_ip = 17;
+                    continue _fun44419
                 }
             case 15:
                 var2 = false;

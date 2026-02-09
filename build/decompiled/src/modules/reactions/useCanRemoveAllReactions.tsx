@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/reactions/useCanRemoveAllReactions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74050: for (var _fun74050_ip = 0;;) switch (_fun74050_ip) {
+        _fun74052: for (var _fun74052_ip = 0;;) switch (_fun74052_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var2;
                 var1[1] = var6;
                 var0 = function() { // Environment: var0
-                    _fun74051: for (var _fun74051_ip = 0;;) switch (_fun74051_ip) {
+                    _fun74053: for (var _fun74053_ip = 0;;) switch (_fun74053_ip) {
                         case 0:
                             var4 = _closure1_slot2;
                             var3 = var4.can;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure2_slot0;
                             var0 = var3.bind(var4)(var2, var0);
                             if (!var0) {
-                                _fun74051_ip = 43;
-                                continue _fun74051
+                                _fun74053_ip = 43;
+                                continue _fun74053
                             }
                         case 39:
                             var0 = _closure2_slot1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun74050_ip = 116;
-                    continue _fun74050
+                    _fun74052_ip = 116;
+                    continue _fun74052
                 }
             case 113:
                 var0 = var1;

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/action_sheet/native/components/PublishModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76421: for (var _fun76421_ip = 0;;) switch (_fun76421_ip) {
+        _fun76423: for (var _fun76423_ip = 0;;) switch (_fun76423_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.channelId;
@@ -92,31 +92,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 1;
                 var0 = var1[var0];
                 if (var0) {
-                    _fun76421_ip = 342;
-                    continue _fun76421
+                    _fun76423_ip = 342;
+                    continue _fun76423
                 }
             case 78:
                 var15 = null;
                 var1 = var15 == var16;
                 var0 = undefined;
                 if (var1) {
-                    _fun76421_ip = 95;
-                    continue _fun76421
+                    _fun76423_ip = 95;
+                    continue _fun76423
                 }
             case 89:
                 var0 = var16.guildsFollowing;
             case 95:
                 var6 = var15 != var0;
                 if (!var6) {
-                    _fun76421_ip = 121;
-                    continue _fun76421
+                    _fun76423_ip = 121;
+                    continue _fun76423
                 }
             case 102:
                 var1 = var15 == var16;
                 var0 = undefined;
                 if (var1) {
-                    _fun76421_ip = 117;
-                    continue _fun76421
+                    _fun76423_ip = 117;
+                    continue _fun76423
                 }
             case 111:
                 var0 = var16.guildsFollowing;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var10.bind(var3)(var11);
                 var12 = var11.intl;
                 if (var6) {
-                    _fun76421_ip = 248;
-                    continue _fun76421
+                    _fun76423_ip = 248;
+                    continue _fun76423
                 }
             case 207:
                 var11 = var12.string;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var11.bind(var12)(var6);
                 var8.children = var6;
                 var6 = var8;
-                _fun76421_ip = 324;
-                continue _fun76421;
+                _fun76423_ip = 324;
+                continue _fun76423;
             case 248:
                 var11 = var12.format;
                 var9 = var14[var9];
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var15 == var16;
                 var14 = undefined;
                 if (var17) {
-                    _fun76421_ip = 292;
-                    continue _fun76421
+                    _fun76423_ip = 292;
+                    continue _fun76423
                 }
             case 286:
                 var14 = var16.guildsFollowing;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var15 != var14;
                 var13 = 0;
                 if (!var15) {
-                    _fun76421_ip = 304;
-                    continue _fun76421
+                    _fun76423_ip = 304;
+                    continue _fun76423
                 }
             case 301:
                 var13 = var14;

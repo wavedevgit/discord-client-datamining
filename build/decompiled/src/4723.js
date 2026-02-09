@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun43707: for (var _fun43707_ip = 0;;) switch (_fun43707_ip) {
+    _fun43709: for (var _fun43709_ip = 0;;) switch (_fun43709_ip) {
         case 0:
             var7 = require;
             var12 = exports;
@@ -46,8 +46,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var4.default;
             var _closure1_slot1 = var4;
         case 166: // try_end0
-            _fun43707_ip = 170;
-            continue _fun43707;
+            _fun43709_ip = 170;
+            continue _fun43709;
         case 168: // catch_target0
             CatchBlockStart(arg_register = 4);
         case 170:
@@ -59,7 +59,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3 != var4;
             var _closure1_slot4 = var3;
             var1 = function arg0() {
-                _fun43708: for (var _fun43708_ip = 0;;) switch (_fun43708_ip) {
+                _fun43710: for (var _fun43710_ip = 0;;) switch (_fun43710_ip) {
                     case 0:
                         var5 = arg0;
                         var1 = var5.children;
@@ -70,15 +70,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = _closure1_slot4;
                         var0 = var1;
                         if (!var3) {
-                            _fun43708_ip = 89;
-                            continue _fun43708
+                            _fun43710_ip = 89;
+                            continue _fun43710
                         }
                     case 37:
                         var3 = _closure1_slot1;
                         var0 = var1;
                         if (!var3) {
-                            _fun43708_ip = 89;
-                            continue _fun43708
+                            _fun43710_ip = 89;
+                            continue _fun43710
                         }
                     case 47:
                         var3 = _closure1_slot3;

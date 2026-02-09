@@ -516,4 +516,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useVoiceChannelUsers = var3;
     var2.formatVoiceActivityTitle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6841, 1621, 3522, 10960, 660, 33, 1297, 795, 8037, 1307, 13303, 10961, 4865, 11997, 13313, 6844, 566, 22, 1304, 3960, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6841, 1621, 3522, 10959, 660, 33, 1297, 795, 8037, 1307, 13301, 10960, 4865, 11996, 13311, 6844, 566, 22, 1304, 3960, 1234, 2]);

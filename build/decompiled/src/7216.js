@@ -21,14 +21,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var2 = undefined;
         var1 = function*(arg0, arg1) { // Environment: var0
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun58988: for (var _fun58988_ip = 0;;) switch (_fun58988_ip) {
+                _fun58990: for (var _fun58990_ip = 0;;) switch (_fun58990_ip) {
                     case 0:
                         StartGenerator();
                         var9 = arg1;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun58988_ip = 253;
-                            continue _fun58988
+                            _fun58990_ip = 253;
+                            continue _fun58990
                         }
                     case 13:
                         var2 = global;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var4 = undefined;
                         var10 = undefined;
                         if (var8) {
-                            _fun58988_ip = 53;
-                            continue _fun58988
+                            _fun58990_ip = 53;
+                            continue _fun58990
                         }
                     case 47:
                         var10 = var9.method;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var11 = var1 != var10;
                         var8 = 'GET';
                         if (!var11) {
-                            _fun58988_ip = 69;
-                            continue _fun58988
+                            _fun58990_ip = 69;
+                            continue _fun58990
                         }
                     case 66:
                         var8 = var10;
@@ -63,19 +63,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         };
                         var3.headers = var8;
                         if (!(var1 != var9)) {
-                            _fun58988_ip = 105;
-                            continue _fun58988
+                            _fun58990_ip = 105;
+                            continue _fun58990
                         }
                     case 97:
                         var1 = var9.body;
                         if (var1) {
-                            _fun58988_ip = 109;
-                            continue _fun58988
+                            _fun58990_ip = 109;
+                            continue _fun58990
                         }
                     case 105:
                         var1 = {};
-                        _fun58988_ip = 140;
-                        continue _fun58988;
+                        _fun58990_ip = 140;
+                        continue _fun58990;
                     case 109:
                         var8 = {};
                         var11 = var2.JSON;
@@ -94,14 +94,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     case 159:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun58988_ip = 250;
-                            continue _fun58988
+                            _fun58990_ip = 250;
+                            continue _fun58990
                         }
                     case 165:
                         var3 = var1.ok;
                         if (var3) {
-                            _fun58988_ip = 237;
-                            continue _fun58988
+                            _fun58990_ip = 237;
+                            continue _fun58990
                         }
                     case 174:
                         var5 = var2.Object;

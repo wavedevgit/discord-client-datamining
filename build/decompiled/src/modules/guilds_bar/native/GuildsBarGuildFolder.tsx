@@ -1984,4 +1984,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GuildsBarGuildFolderBG = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8709, 1410, 3214, 4376, 13197, 13204, 13198, 33, 1297, 671, 566, 7464, 13209, 8981, 4081, 6525, 3721, 4027, 4704, 6906, 13211, 7879, 13218, 668, 3280, 4679, 6524, 13201, 13219, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8709, 1410, 3214, 4376, 13195, 13202, 13196, 33, 1297, 671, 566, 7464, 13207, 8981, 4081, 6525, 3721, 4027, 4704, 6906, 13209, 7879, 13216, 668, 3280, 4679, 6524, 13199, 13217, 2]);

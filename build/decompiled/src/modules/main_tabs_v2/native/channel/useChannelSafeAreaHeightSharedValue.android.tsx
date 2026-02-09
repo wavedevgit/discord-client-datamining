@@ -66,22 +66,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var8.bind(var9)(var1);
         var1 = var2.useDerivedValue;
         var0 = function() {
-            _fun77462: for (var _fun77462_ip = 0;;) switch (_fun77462_ip) {
+            _fun77464: for (var _fun77464_ip = 0;;) switch (_fun77464_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = var2.get;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun77462_ip = 115;
-                        continue _fun77462
+                        _fun77464_ip = 115;
+                        continue _fun77464
                     }
                 case 19:
                     var2 = _closure2_slot4;
                     var0 = var2.get;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun77462_ip = 115;
-                        continue _fun77462
+                        _fun77464_ip = 115;
+                        continue _fun77464
                     }
                 case 35:
                     var2 = _closure2_slot3;
@@ -96,21 +96,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.KeyboardTypes;
                     var0 = var0.SYSTEM;
                     if (!(var2 !== var0)) {
-                        _fun77462_ip = 95;
-                        continue _fun77462
+                        _fun77464_ip = 95;
+                        continue _fun77464
                     }
                 case 89:
                     var0 = _closure2_slot5;
-                    _fun77462_ip = 113;
-                    continue _fun77462;
+                    _fun77464_ip = 113;
+                    continue _fun77464;
                 case 95:
                     var3 = _closure2_slot0;
                     var2 = var3.get;
                     var2 = var2.bind(var3)();
                     var0 = var2.bottom;
                 case 113:
-                    _fun77462_ip = 128;
-                    continue _fun77462;
+                    _fun77464_ip = 128;
+                    continue _fun77464;
                 case 115:
                     var2 = _closure2_slot2;
                     var1 = var2.get;

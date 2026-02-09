@@ -313,4 +313,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.HomePanelContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 5274, 660, 33, 1297, 3926, 5277, 671, 1470, 3920, 13195, 7104, 9229, 1234, 13252, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 5274, 660, 33, 1297, 3926, 5277, 671, 1470, 3920, 13193, 7104, 9229, 1234, 13250, 2]);

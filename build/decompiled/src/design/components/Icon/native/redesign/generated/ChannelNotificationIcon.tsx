@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/ChannelNotificationIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun73583: for (var _fun73583_ip = 0;;) switch (_fun73583_ip) {
+        _fun73585: for (var _fun73585_ip = 0;;) switch (_fun73585_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun73583_ip = 53;
-                    continue _fun73583
+                    _fun73585_ip = 53;
+                    continue _fun73585
                 }
             case 19:
                 var1 = _closure1_slot1;

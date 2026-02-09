@@ -439,4 +439,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ContactSuggestionRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 660, 33, 3237, 3721, 1234, 632, 13282, 13281, 9172, 13586, 13587, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 660, 33, 3237, 3721, 1234, 632, 13280, 13279, 9172, 13584, 13585, 795, 2]);

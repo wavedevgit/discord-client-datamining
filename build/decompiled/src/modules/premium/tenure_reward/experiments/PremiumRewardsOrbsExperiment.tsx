@@ -24,10 +24,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var4[var5] = var0;
     var7 = var3.TREATMENT_A;
-    var5 = 300;
+    var5 = 250;
     var4[var7] = var5;
     var7 = var3.TREATMENT_B;
-    var5 = 700;
+    var5 = 500;
     var4[var7] = var5;
     var _closure1_slot1 = var4;
     var5 = var6[var0];
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.PremiumRewardsOrbsTreatment = var3;
     var3 = function arg0() {
-        _fun96357: for (var _fun96357_ip = 0;;) switch (_fun96357_ip) {
+        _fun96360: for (var _fun96360_ip = 0;;) switch (_fun96360_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useConfig;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.treatment;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun96357_ip = 49;
-                    continue _fun96357
+                    _fun96360_ip = 49;
+                    continue _fun96360
                 }
             case 39:
                 var0 = _closure1_slot0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePremiumRewardsOrbsExperiment = var3;
     var1 = function arg0() {
-        _fun96358: for (var _fun96358_ip = 0;;) switch (_fun96358_ip) {
+        _fun96361: for (var _fun96361_ip = 0;;) switch (_fun96361_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getConfig;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.treatment;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun96358_ip = 49;
-                    continue _fun96358
+                    _fun96361_ip = 49;
+                    continue _fun96361
                 }
             case 39:
                 var0 = _closure1_slot0;

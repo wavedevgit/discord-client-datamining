@@ -301,4 +301,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1468, 33, 3721, 7804, 7805, 7806, 4933, 13954, 11717, 5250, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1468, 33, 3721, 7804, 7805, 7806, 4933, 13952, 11716, 5250, 2]);

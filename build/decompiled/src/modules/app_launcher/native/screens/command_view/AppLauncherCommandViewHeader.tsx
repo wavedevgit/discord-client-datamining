@@ -558,4 +558,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppLauncherCommandViewHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 33, 14002, 1297, 671, 13927, 3721, 3153, 6911, 4704, 3942, 9352, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1468, 33, 14000, 1297, 671, 13925, 3721, 3153, 6911, 4704, 3942, 9352, 2]);

@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/useRequestToSpeakPermission.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun68433: for (var _fun68433_ip = 0;;) switch (_fun68433_ip) {
+        _fun68435: for (var _fun68435_ip = 0;;) switch (_fun68435_ip) {
             case 0:
                 var2 = arg0;
                 var _closure2_slot0 = var2;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5[var0];
                 var _closure2_slot2 = var0;
                 if (!(var3 !== var2)) {
-                    _fun68433_ip = 168;
-                    continue _fun68433
+                    _fun68435_ip = 168;
+                    continue _fun68435
                 }
             case 163:
                 var0 = var0.bind(var4)(var3);
@@ -96,14 +96,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = new Array(2);
                 var0[0] = var2;
                 var1 = function(arg0) { // Environment: var1
-                    _fun68435: for (var _fun68435_ip = 0;;) switch (_fun68435_ip) {
+                    _fun68437: for (var _fun68437_ip = 0;;) switch (_fun68437_ip) {
                         case 0:
                             var4 = arg0;
                             var2 = _closure2_slot1;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun68435_ip = 77;
-                                continue _fun68435
+                                _fun68437_ip = 77;
+                                continue _fun68437
                             }
                         case 16:
                             var0 = _closure2_slot2;

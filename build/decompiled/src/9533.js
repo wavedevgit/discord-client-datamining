@@ -125,15 +125,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.GlobalStateProvider = var3;
     var1 = function() {
-        _fun75590: for (var _fun75590_ip = 0;;) switch (_fun75590_ip) {
+        _fun75592: for (var _fun75592_ip = 0;;) switch (_fun75592_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.useContext;
                 var0 = _closure1_slot5;
                 var0 = var1.bind(var2)(var0);
                 if (var0) {
-                    _fun75590_ip = 61;
-                    continue _fun75590
+                    _fun75592_ip = 61;
+                    continue _fun75592
                 }
             case 25:
                 var1 = global;

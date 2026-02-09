@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun48791: for (var _fun48791_ip = 0;;) switch (_fun48791_ip) {
+    _fun48793: for (var _fun48793_ip = 0;;) switch (_fun48793_ip) {
         case 0:
             var2 = exports;
             var0 = global;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var8 = var7.OS;
             var7 = 'ios';
             if (!(var7 === var8)) {
-                _fun48791_ip = 171;
-                continue _fun48791
+                _fun48793_ip = 171;
+                continue _fun48793
             }
         case 168:
             var6 = 10;

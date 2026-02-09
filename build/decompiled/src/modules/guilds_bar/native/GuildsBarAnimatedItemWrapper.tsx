@@ -1301,4 +1301,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useGuildsBarAnimatedWrapperStyles = var3;
     var2.UnreadIndicator = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4094, 13198, 33, 1297, 671, 4027, 4081, 3721, 6525, 13210, 13187, 8981, 3926, 1234, 3162, 6524, 5509, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4094, 13196, 33, 1297, 671, 4027, 4081, 3721, 6525, 13208, 13185, 8981, 3926, 1234, 3162, 6524, 5509, 2]);

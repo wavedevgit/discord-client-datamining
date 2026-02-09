@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92004: for (var _fun92004_ip = 0;;) switch (_fun92004_ip) {
+        _fun92006: for (var _fun92006_ip = 0;;) switch (_fun92006_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.onClosePress;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var2, var0);
                 var6 = 4;
                 if (!var0) {
-                    _fun92004_ip = 78;
-                    continue _fun92004
+                    _fun92006_ip = 78;
+                    continue _fun92006
                 }
             case 76:
                 var6 = 0;

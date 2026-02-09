@@ -460,4 +460,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessagesHeaderHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 671, 7049, 4088, 1297, 3721, 4081, 3921, 11743, 3942, 1234, 13267, 7579, 7082, 13269, 4084, 3249, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 671, 7049, 4088, 1297, 3721, 4081, 3921, 11742, 3942, 1234, 13265, 7579, 7082, 13267, 4084, 3249, 2]);

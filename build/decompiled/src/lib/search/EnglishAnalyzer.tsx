@@ -699,4 +699,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createASTHighlighter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [22, 13880, 13882, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [22, 13878, 13880, 2]);

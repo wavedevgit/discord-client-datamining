@@ -256,4 +256,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RedesignNotificationScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11078, 11079, 660, 33, 1297, 671, 11077, 795, 11081, 10517, 13161, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11077, 11078, 660, 33, 1297, 671, 11076, 795, 11080, 10516, 13159, 1234, 2]);

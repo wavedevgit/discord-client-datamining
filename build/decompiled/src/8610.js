@@ -61,7 +61,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var4 = var5.useKeyboardHandler;
         var3 = {};
         var7 = function arg0() {
-            _fun69030: for (var _fun69030_ip = 0;;) switch (_fun69030_ip) {
+            _fun69032: for (var _fun69032_ip = 0;;) switch (_fun69032_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var1 = var2.set;
@@ -69,14 +69,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var0.height;
                     var0 = 0;
                     if (!(!(var3 > var0))) {
-                        _fun69030_ip = 41;
-                        continue _fun69030
+                        _fun69032_ip = 41;
+                        continue _fun69032
                     }
                 case 26:
                     var0 = _closure1_slot2;
                     var0 = var0.CLOSING;
-                    _fun69030_ip = 54;
-                    continue _fun69030;
+                    _fun69032_ip = 54;
+                    continue _fun69032;
                 case 41:
                     var3 = _closure1_slot2;
                     var0 = var3.OPENING;
@@ -130,7 +130,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var7.__initData = var9;
         var3.onInteractive = var7;
         var0 = function arg0() {
-            _fun69033: for (var _fun69033_ip = 0;;) switch (_fun69033_ip) {
+            _fun69035: for (var _fun69035_ip = 0;;) switch (_fun69035_ip) {
                 case 0:
                     var0 = arg0;
                     var4 = _closure2_slot1;
@@ -138,14 +138,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var0.height;
                     var2 = 0;
                     if (!(!(var5 > var2))) {
-                        _fun69033_ip = 41;
-                        continue _fun69033
+                        _fun69035_ip = 41;
+                        continue _fun69035
                     }
                 case 26:
                     var2 = _closure1_slot2;
                     var2 = var2.CLOSED;
-                    _fun69033_ip = 54;
-                    continue _fun69033;
+                    _fun69035_ip = 54;
+                    continue _fun69035;
                 case 41:
                     var5 = _closure1_slot2;
                     var2 = var5.OPEN;

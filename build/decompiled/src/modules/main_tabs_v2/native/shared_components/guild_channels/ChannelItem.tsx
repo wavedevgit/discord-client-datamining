@@ -469,4 +469,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.renderChannelItem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4304, 33, 7946, 1297, 671, 8872, 566, 7464, 13810, 4222, 13585, 9110, 13807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4304, 33, 7946, 1297, 671, 8872, 566, 7464, 13808, 4222, 13583, 9110, 13805, 2]);

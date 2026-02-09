@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73060: for (var _fun73060_ip = 0;;) switch (_fun73060_ip) {
+        _fun73062: for (var _fun73062_ip = 0;;) switch (_fun73062_ip) {
             case 0:
                 var1 = arg0;
                 var9 = var1.headerTitle;
@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var1;
                 var2[1] = var14;
                 var0 = function() { // Environment: var0
-                    _fun73062: for (var _fun73062_ip = 0;;) switch (_fun73062_ip) {
+                    _fun73064: for (var _fun73064_ip = 0;;) switch (_fun73064_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun73062_ip = 23;
-                                continue _fun73062
+                                _fun73064_ip = 23;
+                                continue _fun73064
                             }
                         case 13:
                             var1 = _closure2_slot1;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 != var1;
                 if (!var1) {
-                    _fun73060_ip = 271;
-                    continue _fun73060
+                    _fun73062_ip = 271;
+                    continue _fun73062
                 }
             case 161:
                 var3 = _closure1_slot5;

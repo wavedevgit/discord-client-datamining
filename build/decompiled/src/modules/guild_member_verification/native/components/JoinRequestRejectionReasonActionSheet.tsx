@@ -57,13 +57,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot3;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun91424: for (var _fun91424_ip = 0;;) switch (_fun91424_ip) {
+                _fun91425: for (var _fun91425_ip = 0;;) switch (_fun91425_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun91424_ip = 312;
-                            continue _fun91424
+                            _fun91425_ip = 312;
+                            continue _fun91425
                         }
                     case 10:
                         var3 = _closure2_slot5;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 113:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun91424_ip = 259;
-                            continue _fun91424
+                            _fun91425_ip = 259;
+                            continue _fun91425
                         }
                     case 122:
                         var5 = _closure1_slot1;
@@ -154,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var5.hideAllActionSheets;
                         var3 = var3.bind(var5)();
                     case 257: // try_end0
-                        _fun91424_ip = 283;
-                        continue _fun91424;
+                        _fun91425_ip = 283;
+                        continue _fun91425;
                     case 259: // try_end1
                         var5 = _closure2_slot5;
                         var3 = false;

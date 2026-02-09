@@ -1,79 +1,117 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var5 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
+    var6 = dependencyMap;
     var0 = 0;
-    var3 = var5[var0];
+    var3 = var6[var0];
     var0 = undefined;
+    var4 = var5.bind(var0)(var3);
+    var3 = global;
+    var9 = var3.Object;
+    var8 = var9.defineProperty;
+    var7 = {};
+    var3 = true;
+    var7.value = var3;
+    var3 = '__esModule';
+    var3 = var8.bind(var9)(var2, var3, var7);
+    var2.getYoutubeMeta = var0;
+    var3 = 1;
+    var3 = var6[var3];
+    var3 = var5.bind(var0)(var3);
     var3 = var4.bind(var0)(var3);
-    var6 = global;
-    var11 = var6.Object;
-    var10 = var11.defineProperty;
-    var8 = {};
-    var9 = true;
-    var8.value = var9;
-    var7 = '__esModule';
-    var7 = var10.bind(var11)(var2, var7, var8);
-    var11 = var6.Object;
-    var10 = var11.defineProperty;
-    var8 = {};
-    var8.enumerable = var9;
-    var7 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        var0 = var0.getYoutubeMeta;
+    var _closure1_slot0 = var3;
+    var1 = function arg0() {
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var1 = _closure1_slot0;
+        var4 = var1.default;
+        var3 = var4.async;
+        var1 = global;
+        var5 = var1.Promise;
+        var9 = function arg0() {
+            _fun86487: for (var _fun86487_ip = 0;;) switch (_fun86487_ip) {
+                case 0:
+                    var1 = arg0;
+                    var6 = 'end';
+                    var5 = 6;
+                    var3 = 5;
+                    var0 = 2;
+                    var4 = 0;
+                case 18:
+                    var2 = var1.next;
+                    var1.prev = var2;
+                    if (!(var4 !== var2)) {
+                        _fun86487_ip = 143;
+                        continue _fun86487
+                    }
+                case 33:
+                    if (!(var0 !== var2)) {
+                        _fun86487_ip = 85;
+                        continue _fun86487
+                    }
+                case 37:
+                    if (!(var3 !== var2)) {
+                        _fun86487_ip = 61;
+                        continue _fun86487
+                    }
+                case 41:
+                    if (!(var5 !== var2)) {
+                        _fun86487_ip = 49;
+                        continue _fun86487
+                    }
+                case 45:
+                    if (var6 !== var2) {
+                        _fun86487_ip = 18;
+                        continue _fun86487
+                    }
+                case 49:
+                    var2 = var1.stop;
+                    var2 = var2.bind(var1)();
+                    return var2;
+                case 61:
+                    var5 = var1.abrupt;
+                    var4 = var1.sent;
+                    var2 = 'return';
+                    var2 = var5.bind(var1)(var2, var4);
+                    return var2;
+                case 85:
+                    var4 = var1.sent;
+                    var _closure2_slot1 = var4;
+                    var1.next = var3;
+                    var3 = _closure1_slot0;
+                    var4 = var3.default;
+                    var3 = var4.awrap;
+                    var5 = _closure2_slot1;
+                    var2 = var5.json;
+                    var2 = var2.bind(var5)();
+                    var2 = var3.bind(var4)(var2);
+                    return var2;
+                case 143:
+                    var1.next = var0;
+                    var0 = _closure1_slot0;
+                    var2 = var0.default;
+                    var1 = var2.awrap;
+                    var0 = global;
+                    var4 = var0.fetch;
+                    var3 = _closure2_slot0;
+                    var0 = 'https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=';
+                    var5 = var0 + var3;
+                    var3 = undefined;
+                    var0 = '&format=json';
+                    var0 = var5 + var0;
+                    var0 = var4.bind(var3)(var0);
+                    var0 = var1.bind(var2)(var0);
+                    return var0;
+            }
+        };
+        var10 = var4;
+        var8 = null;
+        var7 = null;
+        var6 = null;
+        var0 = var10[var3](var9, var8, var7, var6, var5, var4);
         return var0;
     };
-    var8.get = var7;
-    var7 = 'getYoutubeMeta';
-    var7 = var10.bind(var11)(var2, var7, var8);
-    var11 = var6.Object;
-    var10 = var11.defineProperty;
-    var8 = {};
-    var8.enumerable = var9;
-    var7 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        var0 = var0.PLAYER_STATES_NAMES;
-        return var0;
-    };
-    var8.get = var7;
-    var7 = 'PLAYER_STATES';
-    var7 = var10.bind(var11)(var2, var7, var8);
-    var8 = var6.Object;
-    var7 = var8.defineProperty;
-    var6 = {};
-    var6.enumerable = var9;
-    var1 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        var0 = var0.PLAYER_ERROR_NAMES;
-        return var0;
-    };
-    var6.get = var1;
-    var1 = 'PLAYER_ERRORS';
-    var1 = var7.bind(var8)(var2, var1, var6);
-    var2.default = var0;
-    var1 = 3;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var1 = var3.bind(var0)(var1);
-    var1 = var1.default;
-    var2.default = var1;
+    var2.getYoutubeMeta = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5480, 11146, 11147, 11148]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5480, 3461]);

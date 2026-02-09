@@ -605,4 +605,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.playCurrentAudioPlayer = var3;
     var2.handleVoiceMessageDeleted = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 27, 1298, 1590, 1672, 478, 12921, 4069, 12922, 806, 4017, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 27, 1298, 1590, 1672, 478, 12919, 4069, 12920, 806, 4017, 2]);

@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot7 = var3;
     var1 = function arg0() {
-        _fun69116: for (var _fun69116_ip = 0;;) switch (_fun69116_ip) {
+        _fun69118: for (var _fun69118_ip = 0;;) switch (_fun69118_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.type;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4[1] = var6;
                 var4[2] = var1;
                 var1 = function() { // Environment: var0
-                    _fun69118: for (var _fun69118_ip = 0;;) switch (_fun69118_ip) {
+                    _fun69120: for (var _fun69120_ip = 0;;) switch (_fun69120_ip) {
                         case 0:
                             var0 = {};
                             var1 = _closure2_slot0;
@@ -139,13 +139,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = _closure2_slot2;
                             var2 = var3[var2];
                             if (var1) {
-                                _fun69118_ip = 32;
-                                continue _fun69118
+                                _fun69120_ip = 32;
+                                continue _fun69120
                             }
                         case 24:
                             var1 = var2.primary;
-                            _fun69118_ip = 37;
-                            continue _fun69118;
+                            _fun69120_ip = 37;
+                            continue _fun69120;
                         case 32:
                             var1 = var2.disabled;
                         case 37:
@@ -184,14 +184,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = {};
                 var4 = 'next';
                 if (!(var4 !== var5)) {
-                    _fun69116_ip = 185;
-                    continue _fun69116
+                    _fun69118_ip = 185;
+                    continue _fun69118
                 }
             case 173:
                 var4 = _closure1_slot7;
                 var4 = var4.arrowUpContainer;
-                _fun69116_ip = 195;
-                continue _fun69116;
+                _fun69118_ip = 195;
+                continue _fun69118;
             case 185:
                 var5 = _closure1_slot7;
                 var4 = var5.arrowDownContainer;

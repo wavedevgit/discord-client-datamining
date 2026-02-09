@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/MemberRolesList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80176: for (var _fun80176_ip = 0;;) switch (_fun80176_ip) {
+        _fun80178: for (var _fun80178_ip = 0;;) switch (_fun80178_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.userRoles;
@@ -87,16 +87,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var0 = var8;
                 if (!(var3 != var2)) {
-                    _fun80176_ip = 221;
-                    continue _fun80176
+                    _fun80178_ip = 221;
+                    continue _fun80178
                 }
             case 109:
                 var3 = var2.length;
                 var2 = 0;
                 var0 = var8;
                 if (!(var3 > var2)) {
-                    _fun80176_ip = 221;
-                    continue _fun80176
+                    _fun80178_ip = 221;
+                    continue _fun80178
                 }
             case 123:
                 var3 = var5.filter;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var5)(var2);
                 var3 = var5.sort;
                 var2 = function(arg0, arg1) { // Environment: var1
-                    _fun80179: for (var _fun80179_ip = 0;;) switch (_fun80179_ip) {
+                    _fun80181: for (var _fun80181_ip = 0;;) switch (_fun80181_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.tags;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var1 == var3;
                             var2 = undefined;
                             if (var4) {
-                                _fun80179_ip = 26;
-                                continue _fun80179
+                                _fun80181_ip = 26;
+                                continue _fun80181
                             }
                         case 20:
                             var2 = var3.guild_connections;
@@ -131,34 +131,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var0 = undefined;
                             if (var3) {
-                                _fun80179_ip = 54;
-                                continue _fun80179
+                                _fun80181_ip = 54;
+                                continue _fun80181
                             }
                         case 48:
                             var0 = var2.guild_connections;
                         case 54:
                             var2 = var1 !== var0;
                             if (!var4) {
-                                _fun80179_ip = 67;
-                                continue _fun80179
+                                _fun80181_ip = 67;
+                                continue _fun80181
                             }
                         case 61:
                             var0 = 1;
                             if (!var2) {
-                                _fun80179_ip = 86;
-                                continue _fun80179
+                                _fun80181_ip = 86;
+                                continue _fun80181
                             }
                         case 67:
                             var1 = 0;
                             if (var4) {
-                                _fun80179_ip = 83;
-                                continue _fun80179
+                                _fun80181_ip = 83;
+                                continue _fun80181
                             }
                         case 72:
                             var1 = 0;
                             if (!var2) {
-                                _fun80179_ip = 83;
-                                continue _fun80179
+                                _fun80181_ip = 83;
+                                continue _fun80181
                             }
                         case 77:
                             var1 = -1;

@@ -440,4 +440,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.sortHappeningNowCards = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3102, 3522, 10960, 1304, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3102, 3522, 10959, 1304, 22, 2]);

@@ -11,13 +11,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = _closure1_slot2;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun76199: for (var _fun76199_ip = 0;;) switch (_fun76199_ip) {
+                _fun76201: for (var _fun76201_ip = 0;;) switch (_fun76201_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun76199_ip = 84;
-                            continue _fun76199
+                            _fun76201_ip = 84;
+                            continue _fun76201
                         }
                     case 7:
                         var1 = global;

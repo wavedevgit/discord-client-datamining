@@ -718,4 +718,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.BaseActivityPanelContent = var3;
     var2.useBaseActivityPanelHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1371, 7985, 483, 33, 1297, 671, 1568, 3721, 14279, 3161, 4963, 14283, 566, 6953, 14284, 14285, 14289, 14273, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1371, 7985, 483, 33, 1297, 671, 1568, 3721, 14277, 3161, 4963, 14281, 566, 6953, 14282, 14283, 14287, 14271, 2]);

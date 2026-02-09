@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getOutgoingFriendRequestCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11411, 3102, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 11410, 3102, 566, 2]);

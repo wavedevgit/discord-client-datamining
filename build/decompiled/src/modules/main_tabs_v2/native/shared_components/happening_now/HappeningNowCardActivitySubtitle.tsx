@@ -333,4 +333,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HappeningNowActivityCardSubtitle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 1297, 671, 566, 4794, 10961, 7946, 1234, 5787, 5723, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1372, 660, 33, 1297, 671, 566, 4794, 10960, 7946, 1234, 5787, 5723, 2]);

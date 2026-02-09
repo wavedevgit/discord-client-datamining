@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_calls/native/components/OngoingCallTimer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun70121: for (var _fun70121_ip = 0;;) switch (_fun70121_ip) {
+        _fun70123: for (var _fun70123_ip = 0;;) switch (_fun70123_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function() { // Environment: var1
-                    _fun70122: for (var _fun70122_ip = 0;;) switch (_fun70122_ip) {
+                    _fun70124: for (var _fun70124_ip = 0;;) switch (_fun70124_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getCall;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun70122_ip = 41;
-                                continue _fun70122
+                                _fun70124_ip = 41;
+                                continue _fun70124
                             }
                         case 36:
                             var0 = var1.messageId;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var6;
                 var4 = 0;
                 if (!var1) {
-                    _fun70121_ip = 125;
-                    continue _fun70121
+                    _fun70123_ip = 125;
+                    continue _fun70123
                 }
             case 94:
                 var2 = _closure1_slot1;

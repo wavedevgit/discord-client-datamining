@@ -184,13 +184,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var8.bind(var3)(var7, var6);
         var0.subLabel = var6;
         var4 = function() {
-            _fun92443: for (var _fun92443_ip = 0;;) switch (_fun92443_ip) {
+            _fun92445: for (var _fun92445_ip = 0;;) switch (_fun92445_ip) {
                 case 0:
                     var1 = _closure2_slot6;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun92443_ip = 138;
-                        continue _fun92443
+                        _fun92445_ip = 138;
+                        continue _fun92445
                     }
                 case 16:
                     var5 = _closure1_slot1;

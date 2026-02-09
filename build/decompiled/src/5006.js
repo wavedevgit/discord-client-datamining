@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function arg0() {
-        _fun45018: for (var _fun45018_ip = 0;;) switch (_fun45018_ip) {
+        _fun45020: for (var _fun45020_ip = 0;;) switch (_fun45020_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.attachedGestures;
@@ -31,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var6().value;
                 var7 = var3;
                 if (!(var7 !== var0)) {
-                    _fun45018_ip = 152;
-                    continue _fun45018
+                    _fun45020_ip = 152;
+                    continue _fun45020
                 }
             case 39: // try_start_0
                 var10 = _closure1_slot1;
@@ -56,8 +56,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var8.gestureWillUnmount;
                 var7 = var7.bind(var8)(var9);
             case 143: // try_end0
-                _fun45018_ip = 28;
-                continue _fun45018;
+                _fun45020_ip = 28;
+                continue _fun45020;
             case 145: // catch_target0
                 CatchBlockStart(arg_register = 2);
                 var3.return();

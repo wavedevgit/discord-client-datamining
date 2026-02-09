@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_affinities/maybeSortByProbability.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1, arg2() {
-        _fun56529: for (var _fun56529_ip = 0;;) switch (_fun56529_ip) {
+        _fun56531: for (var _fun56531_ip = 0;;) switch (_fun56531_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
@@ -39,14 +39,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var5;
                 if (!(var1 != var4)) {
-                    _fun56529_ip = 138;
-                    continue _fun56529
+                    _fun56531_ip = 138;
+                    continue _fun56531
                 }
             case 59:
                 var1 = 'vc_probability';
                 if (!(var1 !== var4)) {
-                    _fun56529_ip = 103;
-                    continue _fun56529
+                    _fun56531_ip = 103;
+                    continue _fun56531
                 }
             case 69:
                 var6 = new Array(0);
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arraySpread(var9, var8, var7);
                 var4 = var6.sort;
                 var1 = function(arg0, arg1) { // Environment: var2
-                    _fun56531: for (var _fun56531_ip = 0;;) switch (_fun56531_ip) {
+                    _fun56533: for (var _fun56533_ip = 0;;) switch (_fun56533_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = var2.get;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3 == var0;
                             var5 = undefined;
                             if (var1) {
-                                _fun56531_ip = 42;
-                                continue _fun56531
+                                _fun56533_ip = 42;
+                                continue _fun56533
                             }
                         case 36:
                             var5 = var0.communicationProbability;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var3 != var5;
                             var0 = 0;
                             if (!var6) {
-                                _fun56531_ip = 54;
-                                continue _fun56531
+                                _fun56533_ip = 54;
+                                continue _fun56533
                             }
                         case 51:
                             var0 = var5;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var3 == var4;
                             var2 = undefined;
                             if (var5) {
-                                _fun56531_ip = 91;
-                                continue _fun56531
+                                _fun56533_ip = 91;
+                                continue _fun56533
                             }
                         case 85:
                             var2 = var4.communicationProbability;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3 != var2;
                             var1 = 0;
                             if (!var3) {
-                                _fun56531_ip = 103;
-                                continue _fun56531
+                                _fun56533_ip = 103;
+                                continue _fun56533
                             }
                         case 100:
                             var1 = var2;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var1 = var4.bind(var6)(var1);
-                _fun56529_ip = 135;
-                continue _fun56529;
+                _fun56531_ip = 135;
+                continue _fun56531;
             case 103:
                 var4 = new Array(0);
                 var9 = var4;
@@ -120,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = arraySpread(var9, var8, var7);
                 var3 = var4.sort;
                 var2 = function(arg0, arg1) { // Environment: var2
-                    _fun56530: for (var _fun56530_ip = 0;;) switch (_fun56530_ip) {
+                    _fun56532: for (var _fun56532_ip = 0;;) switch (_fun56532_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = var2.get;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3 == var0;
                             var5 = undefined;
                             if (var1) {
-                                _fun56530_ip = 42;
-                                continue _fun56530
+                                _fun56532_ip = 42;
+                                continue _fun56532
                             }
                         case 36:
                             var5 = var0.vcProbability;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var3 != var5;
                             var0 = 0;
                             if (!var6) {
-                                _fun56530_ip = 54;
-                                continue _fun56530
+                                _fun56532_ip = 54;
+                                continue _fun56532
                             }
                         case 51:
                             var0 = var5;
@@ -154,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var3 == var4;
                             var2 = undefined;
                             if (var5) {
-                                _fun56530_ip = 91;
-                                continue _fun56530
+                                _fun56532_ip = 91;
+                                continue _fun56532
                             }
                         case 85:
                             var2 = var4.vcProbability;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3 != var2;
                             var1 = 0;
                             if (!var3) {
-                                _fun56530_ip = 103;
-                                continue _fun56530
+                                _fun56532_ip = 103;
+                                continue _fun56532
                             }
                         case 100:
                             var1 = var2;

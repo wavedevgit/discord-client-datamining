@@ -236,4 +236,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.handleCreateJoinGuildPress = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 1623, 33, 8703, 1307, 10318, 10156, 7681, 5631, 13253, 13254, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 660, 1623, 33, 8703, 1307, 10317, 10156, 7681, 5631, 13251, 13252, 1234, 2]);

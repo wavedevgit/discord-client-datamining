@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/utils/useCustomStatusActivityForUser.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62510: for (var _fun62510_ip = 0;;) switch (_fun62510_ip) {
+        _fun62512: for (var _fun62512_ip = 0;;) switch (_fun62512_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0 = var4.bind(var5)(var3, var0);
                 if (!var2) {
-                    _fun62510_ip = 127;
-                    continue _fun62510
+                    _fun62512_ip = 127;
+                    continue _fun62512
                 }
             case 124:
                 var0 = var1;

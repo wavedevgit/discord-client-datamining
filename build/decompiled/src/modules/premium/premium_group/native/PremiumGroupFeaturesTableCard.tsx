@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun59834: for (var _fun59834_ip = 0;;) switch (_fun59834_ip) {
+        _fun59836: for (var _fun59836_ip = 0;;) switch (_fun59836_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var2, var0);
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun59834_ip = 593;
-                    continue _fun59834
+                    _fun59836_ip = 593;
+                    continue _fun59836
                 }
             case 64:
                 var19 = var1.subheaderString;

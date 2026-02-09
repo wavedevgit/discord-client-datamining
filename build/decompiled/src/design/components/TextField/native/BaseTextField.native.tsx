@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun48669: for (var _fun48669_ip = 0;;) switch (_fun48669_ip) {
+        _fun48671: for (var _fun48671_ip = 0;;) switch (_fun48671_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -57,23 +57,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var1.isFocused;
                 var1 = var4.enableAndroidSanitizedInputWorkaround;
                 if (!var1) {
-                    _fun48669_ip = 294;
-                    continue _fun48669
+                    _fun48671_ip = 294;
+                    continue _fun48671
                 }
             case 124:
                 var8 = var4.secureTextEntry;
                 var5 = var4.keyboardType;
                 var13 = var4.autoComplete;
                 if (!(var8 === var3)) {
-                    _fun48669_ip = 148;
-                    continue _fun48669
+                    _fun48671_ip = 148;
+                    continue _fun48671
                 }
             case 146:
                 var8 = false;
             case 148:
                 if (!(var5 === var3)) {
-                    _fun48669_ip = 156;
-                    continue _fun48669
+                    _fun48671_ip = 156;
+                    continue _fun48671
                 }
             case 152:
                 var5 = 'default';
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.bind(var14)();
                 var2 = 'off';
                 if (var14) {
-                    _fun48669_ip = 198;
-                    continue _fun48669
+                    _fun48671_ip = 198;
+                    continue _fun48671
                 }
             case 195:
                 var2 = var13;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = !var2;
                 var2 = !var13;
                 if (!var13) {
-                    _fun48669_ip = 242;
-                    continue _fun48669
+                    _fun48671_ip = 242;
+                    continue _fun48671
                 }
             case 239:
                 var2 = var8;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var8)();
                 var2 = 'visible-password';
                 if (var8) {
-                    _fun48669_ip = 286;
-                    continue _fun48669
+                    _fun48671_ip = 286;
+                    continue _fun48671
                 }
             case 283:
                 var2 = var5;

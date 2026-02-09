@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/native/CustomStatusUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun57765: for (var _fun57765_ip = 0;;) switch (_fun57765_ip) {
+        _fun57767: for (var _fun57767_ip = 0;;) switch (_fun57767_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.location;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var1.bind(var6)();
                 var1 = undefined;
                 if (!var6) {
-                    _fun57765_ip = 141;
-                    continue _fun57765
+                    _fun57767_ip = 141;
+                    continue _fun57767
                 }
             case 127:
                 var6 = {};

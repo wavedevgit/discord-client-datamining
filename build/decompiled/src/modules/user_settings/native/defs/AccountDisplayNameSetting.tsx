@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun81978: for (var _fun81978_ip = 0;;) switch (_fun81978_ip) {
+            _fun81979: for (var _fun81979_ip = 0;;) switch (_fun81979_ip) {
                 case 0:
                     var1 = _closure1_slot2;
                     var0 = var1.getCurrentUser;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun81978_ip = 33;
-                        continue _fun81978
+                        _fun81979_ip = 33;
+                        continue _fun81979
                     }
                 case 27:
                     var0 = var1.globalName;

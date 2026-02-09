@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function arg0, arg1, arg2() {
-        _fun45183: for (var _fun45183_ip = 0;;) switch (_fun45183_ip) {
+        _fun45185: for (var _fun45185_ip = 0;;) switch (_fun45185_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -19,21 +19,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot9;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun45183_ip = 51;
-                    continue _fun45183
+                    _fun45185_ip = 51;
+                    continue _fun45185
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun45183_ip = 92;
-                continue _fun45183;
+                _fun45185_ip = 92;
+                continue _fun45185;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun45183_ip = 71;
-                    continue _fun45183
+                    _fun45185_ip = 71;
+                    continue _fun45185
                 }
             case 67:
                 var5 = new Array(0);
@@ -49,7 +49,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot8 = var0;
     var0 = function() {
-        _fun45184: for (var _fun45184_ip = 0;;) switch (_fun45184_ip) {
+        _fun45186: for (var _fun45186_ip = 0;;) switch (_fun45186_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun45184_ip = 74;
-                continue _fun45184;
+                _fun45186_ip = 74;
+                continue _fun45186;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -89,14 +89,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot9 = var0;
     var0 = function arg0, arg1() {
-        _fun45187: for (var _fun45187_ip = 0;;) switch (_fun45187_ip) {
+        _fun45189: for (var _fun45189_ip = 0;;) switch (_fun45189_ip) {
             case 0:
                 var6 = arg0;
                 var3 = arg1;
                 var2 = undefined;
                 if (!(var2 !== var6)) {
-                    _fun45187_ip = 50;
-                    continue _fun45187
+                    _fun45189_ip = 50;
+                    continue _fun45189
                 }
             case 12:
                 var5 = new Array(0);
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = _closure1_slot7;
                 var0 = var0.bind(var2)(var3);
                 var0 = var4.bind(var5)(var1, var0);
-                _fun45187_ip = 62;
-                continue _fun45187;
+                _fun45189_ip = 62;
+                continue _fun45189;
             case 50:
                 var1 = _closure1_slot7;
                 var0 = var1.bind(var2)(var3);
@@ -155,7 +155,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var3.Gesture;
     var3 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun45189: for (var _fun45189_ip = 0;;) switch (_fun45189_ip) {
+            _fun45191: for (var _fun45191_ip = 0;;) switch (_fun45191_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -187,16 +187,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = 0;
                     var5 = var2 < var3;
                     if (!var5) {
-                        _fun45189_ip = 125;
-                        continue _fun45189
+                        _fun45191_ip = 125;
+                        continue _fun45191
                     }
                 case 110:
                     var5 = arguments[var2];
                     var1[var2] = var5;
                     var2 = var2 + 1;
                     if (var2 < var3) {
-                        _fun45189_ip = 110;
-                        continue _fun45189
+                        _fun45191_ip = 110;
+                        continue _fun45191
                     }
                 case 125:
                     var0.gestures = var1;
@@ -213,7 +213,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'prepareSingleGesture';
         var4.key = var0;
         var0 = function arg0, arg1, arg2() {
-            _fun45190: for (var _fun45190_ip = 0;;) switch (_fun45190_ip) {
+            _fun45192: for (var _fun45192_ip = 0;;) switch (_fun45192_ip) {
                 case 0:
                     var2 = arg0;
                     var6 = arg1;
@@ -227,23 +227,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.BaseGesture;
                     var1 = var2 instanceof var1;
                     if (var1) {
-                        _fun45190_ip = 85;
-                        continue _fun45190
+                        _fun45192_ip = 85;
+                        continue _fun45192
                     }
                 case 47:
                     var1 = _closure2_slot0;
                     var1 = var2 instanceof var1;
                     if (!var1) {
-                        _fun45190_ip = 157;
-                        continue _fun45190
+                        _fun45192_ip = 157;
+                        continue _fun45192
                     }
                 case 61:
                     var2.simultaneousGestures = var6;
                     var2.requireGesturesToFail = var5;
                     var1 = var2.prepare;
                     var1 = var1.bind(var2)();
-                    _fun45190_ip = 157;
-                    continue _fun45190;
+                    _fun45192_ip = 157;
+                    continue _fun45192;
                 case 85:
                     var1 = global;
                     var8 = var1.Object;
@@ -270,7 +270,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'prepare';
         var4.key = var6;
         var6 = function() {
-            _fun45191: for (var _fun45191_ip = 0;;) switch (_fun45191_ip) {
+            _fun45193: for (var _fun45193_ip = 0;;) switch (_fun45193_ip) {
                 case 0:
                     var3 = this;
                     var0 = var3.gestures;
@@ -282,8 +282,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var1().value;
                     var4 = var2;
                     if (!(var4 !== var0)) {
-                        _fun45191_ip = 62;
-                        continue _fun45191
+                        _fun45193_ip = 62;
+                        continue _fun45193
                     }
                 case 28: // try_start_0
                     var6 = var3.prepareSingleGesture;
@@ -291,8 +291,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var3.requireGesturesToFail;
                     var4 = var6.bind(var3)(var7, var5, var4);
                 case 53: // try_end0
-                    _fun45191_ip = 17;
-                    continue _fun45191;
+                    _fun45193_ip = 17;
+                    continue _fun45193;
                 case 55: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var2.return();
@@ -307,7 +307,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'initialize';
         var4.key = var6;
         var6 = function() {
-            _fun45192: for (var _fun45192_ip = 0;;) switch (_fun45192_ip) {
+            _fun45194: for (var _fun45194_ip = 0;;) switch (_fun45194_ip) {
                 case 0:
                     var0 = this;
                     var0 = var0.gestures;
@@ -319,15 +319,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var1().value;
                     var3 = var2;
                     if (!(var3 !== var0)) {
-                        _fun45192_ip = 47;
-                        continue _fun45192
+                        _fun45194_ip = 47;
+                        continue _fun45194
                     }
                 case 28: // try_start_0
                     var3 = var4.initialize;
                     var3 = var3.bind(var4)();
                 case 38: // try_end0
-                    _fun45192_ip = 17;
-                    continue _fun45192;
+                    _fun45194_ip = 17;
+                    continue _fun45194;
                 case 40: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var2.return();
@@ -383,7 +383,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'prepare';
         var4.key = var5;
         var0 = function() {
-            _fun45197: for (var _fun45197_ip = 0;;) switch (_fun45197_ip) {
+            _fun45199: for (var _fun45199_ip = 0;;) switch (_fun45199_ip) {
                 case 0:
                     var3 = this;
                     var _closure3_slot0 = var3;
@@ -418,8 +418,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 0;
                     var0 = var1 < var0;
                     if (!var0) {
-                        _fun45197_ip = 101;
-                        continue _fun45197
+                        _fun45199_ip = 101;
+                        continue _fun45199
                     }
                 case 50:
                     var6 = var3.prepareSingleGesture;
@@ -432,8 +432,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var3.gestures;
                     var0 = var0.length;
                     if (var1 < var0) {
-                        _fun45197_ip = 50;
-                        continue _fun45197
+                        _fun45199_ip = 50;
+                        continue _fun45199
                     }
                 case 101:
                     var0 = undefined;
@@ -470,7 +470,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'prepare';
         var4.key = var5;
         var0 = function() {
-            _fun45203: for (var _fun45203_ip = 0;;) switch (_fun45203_ip) {
+            _fun45205: for (var _fun45205_ip = 0;;) switch (_fun45205_ip) {
                 case 0:
                     var4 = this;
                     var2 = var4.gestures;
@@ -488,8 +488,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 0;
                     var0 = var1 < var0;
                     if (!var0) {
-                        _fun45203_ip = 127;
-                        continue _fun45203
+                        _fun45205_ip = 127;
+                        continue _fun45205
                     }
                 case 50:
                     var7 = var4.prepareSingleGesture;
@@ -507,8 +507,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var4.gestures;
                     var0 = var0.length;
                     if (var1 < var0) {
-                        _fun45203_ip = 50;
-                        continue _fun45203
+                        _fun45205_ip = 50;
+                        continue _fun45205
                     }
                 case 127:
                     var0 = undefined;

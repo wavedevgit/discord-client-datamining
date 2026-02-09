@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var1.onFeedbackShown = var7;
         var6 = function arg0() {
-            _fun76946: for (var _fun76946_ip = 0;;) switch (_fun76946_ip) {
+            _fun76948: for (var _fun76948_ip = 0;;) switch (_fun76948_ip) {
                 case 0:
                     var0 = arg0;
                     var6 = var0.rating;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 == var7;
                     var6 = undefined;
                     if (var8) {
-                        _fun76946_ip = 97;
-                        continue _fun76946
+                        _fun76948_ip = 97;
+                        continue _fun76948
                     }
                 case 92:
                     var6 = var7.value;

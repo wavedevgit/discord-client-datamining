@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56485: for (var _fun56485_ip = 0;;) switch (_fun56485_ip) {
+        _fun56487: for (var _fun56487_ip = 0;;) switch (_fun56487_ip) {
             case 0:
                 var4 = arg0;
                 var8 = var4.message;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var5;
                 if (var1) {
-                    _fun56485_ip = 146;
-                    continue _fun56485
+                    _fun56487_ip = 146;
+                    continue _fun56487
                 }
             case 102:
                 var1 = {};

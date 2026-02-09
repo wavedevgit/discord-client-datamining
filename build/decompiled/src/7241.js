@@ -17,21 +17,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var2;
     var1.GLOBAL_OBJ = var2;
     var0 = function arg0, arg1, arg2() {
-        _fun59244: for (var _fun59244_ip = 0;;) switch (_fun59244_ip) {
+        _fun59246: for (var _fun59246_ip = 0;;) switch (_fun59246_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg2;
                 if (var0) {
-                    _fun59244_ip = 16;
-                    continue _fun59244
+                    _fun59246_ip = 16;
+                    continue _fun59246
                 }
             case 9:
                 var0 = _closure1_slot2;
             case 16:
                 var1 = var0.__SENTRY__;
                 if (var1) {
-                    _fun59244_ip = 27;
-                    continue _fun59244
+                    _fun59246_ip = 27;
+                    continue _fun59246
                 }
             case 25:
                 var1 = {};
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.SDK_VERSION;
                 var2 = var1[var2];
                 if (var2) {
-                    _fun59244_ip = 87;
-                    continue _fun59244
+                    _fun59246_ip = 87;
+                    continue _fun59246
                 }
             case 85:
                 var2 = {};
@@ -58,8 +58,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1[var0] = var2;
                 var0 = var2[var3];
                 if (var0) {
-                    _fun59244_ip = 112;
-                    continue _fun59244
+                    _fun59246_ip = 112;
+                    continue _fun59246
                 }
             case 98:
                 var1 = arg1;

@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/leaveCurrentEmbeddedActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun64479: for (var _fun64479_ip = 0;;) switch (_fun64479_ip) {
+        _fun64481: for (var _fun64481_ip = 0;;) switch (_fun64481_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getCurrentEmbeddedActivity;
                 var3 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun64479_ip = 87;
-                    continue _fun64479
+                    _fun64481_ip = 87;
+                    continue _fun64481
                 }
             case 23:
                 var2 = _closure1_slot0;

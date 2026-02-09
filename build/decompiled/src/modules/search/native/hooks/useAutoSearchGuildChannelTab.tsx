@@ -168,4 +168,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAutoSearchGuildChannelTab = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9049, 11744, 9051, 13788, 22, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9049, 11743, 9051, 13786, 22, 2]);

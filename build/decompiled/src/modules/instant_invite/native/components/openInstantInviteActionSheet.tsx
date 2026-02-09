@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/instant_invite/native/components/openInstantInviteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67992: for (var _fun67992_ip = 0;;) switch (_fun67992_ip) {
+        _fun67994: for (var _fun67994_ip = 0;;) switch (_fun67994_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot1;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.vanityURLCode;
                 var2 = null;
                 if (!(var2 == var8)) {
-                    _fun67992_ip = 89;
-                    continue _fun67992
+                    _fun67994_ip = 89;
+                    continue _fun67994
                 }
             case 79:
                 var2 = var1.channel;

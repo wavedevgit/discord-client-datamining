@@ -41,4 +41,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'polyfills.android.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12703, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12701, 2]);

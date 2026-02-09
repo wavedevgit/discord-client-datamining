@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 3093, 483, 566, 8060, 13932, 6893, 8021, 478, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3456, 3093, 483, 566, 8060, 13930, 6893, 8021, 478, 1234, 2]);

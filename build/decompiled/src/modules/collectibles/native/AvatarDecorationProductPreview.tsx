@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/AvatarDecorationProductPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun88103: for (var _fun88103_ip = 0;;) switch (_fun88103_ip) {
+        _fun88104: for (var _fun88104_ip = 0;;) switch (_fun88104_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.product;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var7;
                 if (var1) {
-                    _fun88103_ip = 285;
-                    continue _fun88103
+                    _fun88104_ip = 285;
+                    continue _fun88104
                 }
             case 93:
                 var3 = _closure1_slot4;

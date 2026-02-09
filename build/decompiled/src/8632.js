@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var4.bind(var5)(var3);
     var _closure1_slot5 = var3;
     var1 = function arg0() {
-        _fun69141: for (var _fun69141_ip = 0;;) switch (_fun69141_ip) {
+        _fun69143: for (var _fun69143_ip = 0;;) switch (_fun69143_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.children;
@@ -107,8 +107,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4.collapsable = var9;
                 var4.style = var8;
                 if (!var6) {
-                    _fun69141_ip = 171;
-                    continue _fun69141
+                    _fun69143_ip = 171;
+                    continue _fun69143
                 }
             case 168:
                 var6 = var7;

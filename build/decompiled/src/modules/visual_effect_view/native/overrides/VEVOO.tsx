@@ -398,4 +398,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useVisualEffectViewOverrideSharedStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4004, 807, 33, 1297, 671, 3721, 4081, 4087, 5430, 13096, 13098, 13099, 9173, 4734, 566, 11308, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4004, 807, 33, 1297, 671, 3721, 4081, 4087, 5430, 13094, 13096, 13097, 9173, 4734, 566, 11307, 2]);

@@ -56,21 +56,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var4)(var2);
         var2 = {};
         var5 = function arg0() {
-            _fun73386: for (var _fun73386_ip = 0;;) switch (_fun73386_ip) {
+            _fun73388: for (var _fun73388_ip = 0;;) switch (_fun73388_ip) {
                 case 0:
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = var1.preventable;
                     if (!var0) {
-                        _fun73386_ip = 159;
-                        continue _fun73386
+                        _fun73388_ip = 159;
+                        continue _fun73388
                     }
                 case 21:
                     var0 = _closure2_slot1;
                     var0 = var0.current;
                     if (var0) {
-                        _fun73386_ip = 72;
-                        continue _fun73386
+                        _fun73388_ip = 72;
+                        continue _fun73388
                     }
                 case 36:
                     var2 = _closure2_slot0;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 == var5;
                     var4 = undefined;
                     if (var2) {
-                        _fun73386_ip = 66;
-                        continue _fun73386
+                        _fun73388_ip = 66;
+                        continue _fun73388
                     }
                 case 56:
                     var2 = var5.hasUnsavedChanges;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2 !== var4;
                 case 72:
                     if (var0) {
-                        _fun73386_ip = 159;
-                        continue _fun73386
+                        _fun73388_ip = 159;
+                        continue _fun73388
                     }
                 case 75:
                     var0 = var1.preventDefault;

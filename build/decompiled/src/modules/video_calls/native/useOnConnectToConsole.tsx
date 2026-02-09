@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var3 = function arg0, arg1() {
-        _fun67555: for (var _fun67555_ip = 0;;) switch (_fun67555_ip) {
+        _fun67557: for (var _fun67557_ip = 0;;) switch (_fun67557_ip) {
             case 0:
                 var1 = arg1;
                 var6 = _closure1_slot0;
@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var5)(var2);
                 var2 = var1.twoWayLink;
                 if (!var2) {
-                    _fun67555_ip = 123;
-                    continue _fun67555
+                    _fun67557_ip = 123;
+                    continue _fun67557
                 }
             case 72:
                 var2 = var1.revoked;
                 if (var2) {
-                    _fun67555_ip = 123;
-                    continue _fun67555
+                    _fun67557_ip = 123;
+                    continue _fun67557
                 }
             case 81:
                 var4 = _closure1_slot0;
@@ -52,22 +52,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var2 = var2.XBOX;
                 if (!(var2 !== var4)) {
-                    _fun67555_ip = 229;
-                    continue _fun67555
+                    _fun67557_ip = 229;
+                    continue _fun67557
                 }
             case 142:
                 var2 = _closure1_slot5;
                 var2 = var2.PLAYSTATION;
                 if (!(var2 !== var4)) {
-                    _fun67555_ip = 172;
-                    continue _fun67555
+                    _fun67557_ip = 172;
+                    continue _fun67557
                 }
             case 156:
                 var2 = _closure1_slot5;
                 var2 = var2.PLAYSTATION_STAGING;
                 if (!(var2 !== var4)) {
-                    _fun67555_ip = 172;
-                    continue _fun67555
+                    _fun67557_ip = 172;
+                    continue _fun67557
                 }
             case 170:
                 return var3;

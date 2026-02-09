@@ -494,4 +494,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.convertRouteToNavigation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 3921, 3920, 3219, 3229, 7951, 12932, 3923, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 3921, 3920, 3219, 3229, 7951, 12930, 3923, 2]);

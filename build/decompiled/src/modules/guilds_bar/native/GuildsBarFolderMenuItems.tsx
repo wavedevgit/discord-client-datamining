@@ -197,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildFolderMenuItems = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4376, 660, 7555, 1234, 12644, 1307, 5421, 13202, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 4376, 660, 7555, 1234, 12643, 1307, 5421, 13200, 2]);

@@ -20,35 +20,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = {};
-    var8 = {
-        'marginTop': null,
-        'marginLeft': null,
-        'marginRight': null,
-        'flex': 1,
-        'flexDirection': 'column',
-        'justifyContent': 'space-between',
-        'alignItems': 'stretch'
-    };
-    var9 = 1;
-    var11 = var5[var9];
-    var11 = var4.bind(var0)(var11);
-    var11 = var11.NAV_BAR_HEIGHT;
-    var9 = var5[var9];
+    var8 = {};
+    var11 = 1;
+    var9 = var5[var11];
+    var9 = var4.bind(var0)(var9);
+    var12 = var9.NAV_BAR_HEIGHT;
+    var9 = var5[var11];
     var9 = var4.bind(var0)(var9);
     var9 = var9.STATUS_BAR_HEIGHT;
-    var9 = var11 - var9;
+    var9 = var12 - var9;
     var8.marginTop = var9;
     var9 = 2;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_16;
-    var8.marginLeft = var11;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_16;
-    var8.marginRight = var11;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_16;
+    var8.marginLeft = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_16;
+    var8.marginRight = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_16;
+    var8.paddingBottom = var12;
+    var8.flex = var11;
+    var11 = 'column';
+    var8.flexDirection = var11;
+    var11 = 'space-between';
+    var8.justifyContent = var11;
+    var11 = 'stretch';
+    var8.alignItems = var11;
     var3.contentContainer = var8;
     var11 = 'center';
     var8 = {

@@ -1674,4 +1674,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getScaledLiveChannelNoticeHeight = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4245, 1377, 3715, 3093, 3527, 1378, 483, 33, 671, 5506, 7049, 478, 4088, 1297, 3942, 5504, 10715, 8872, 8071, 1582, 7947, 5962, 3247, 8796, 4084, 3207, 566, 1234, 4809, 8253, 8174, 8235, 8184, 8257, 8482, 5713, 4244, 8152, 4862, 13349, 9182, 4902, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4245, 1377, 3715, 3093, 3527, 1378, 483, 33, 671, 5506, 7049, 478, 4088, 1297, 3942, 5504, 10714, 8872, 8071, 1582, 7947, 5962, 3247, 8796, 4084, 3207, 566, 1234, 4809, 8253, 8174, 8235, 8184, 8257, 8482, 5713, 4244, 8152, 4862, 13347, 9182, 4902, 2]);

@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun93877: for (var _fun93877_ip = 0;;) switch (_fun93877_ip) {
+        _fun93879: for (var _fun93879_ip = 0;;) switch (_fun93879_ip) {
             case 0:
                 var1 = arguments[0];
                 var2 = undefined;
                 if (!(var1 === var2)) {
-                    _fun93877_ip = 17;
-                    continue _fun93877
+                    _fun93879_ip = 17;
+                    continue _fun93879
                 }
             case 11:
                 var1 = 4000;

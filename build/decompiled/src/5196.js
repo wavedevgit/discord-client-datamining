@@ -15,21 +15,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             return var0;
         };
         var2 = function(arg0) { // Environment: var1
-            _fun46389: for (var _fun46389_ip = 0;;) switch (_fun46389_ip) {
+            _fun46391: for (var _fun46391_ip = 0;;) switch (_fun46391_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = var2;
                     if (var0) {
-                        _fun46389_ip = 15;
-                        continue _fun46389
+                        _fun46391_ip = 15;
+                        continue _fun46391
                     }
                 case 9:
                     var1 = 0;
                     var0 = var1 === var2;
                 case 15:
                     if (var0) {
-                        _fun46389_ip = 24;
-                        continue _fun46389
+                        _fun46391_ip = 24;
+                        continue _fun46391
                     }
                 case 18:
                     var1 = false;

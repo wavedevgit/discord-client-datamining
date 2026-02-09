@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun59792: for (var _fun59792_ip = 0;;) switch (_fun59792_ip) {
+        _fun59794: for (var _fun59794_ip = 0;;) switch (_fun59794_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.analyticsLocations;
@@ -40,13 +40,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.unsafe_rawColors;
                 if (var2) {
-                    _fun59792_ip = 135;
-                    continue _fun59792
+                    _fun59794_ip = 135;
+                    continue _fun59794
                 }
             case 127:
                 var9 = var0.PRIMARY_100;
-                _fun59792_ip = 141;
-                continue _fun59792;
+                _fun59794_ip = 141;
+                continue _fun59794;
             case 135:
                 var9 = var0.PRIMARY_600;
             case 141:
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var4.bind(var5)(var2);
                 var12 = var1;
                 if (var12) {
-                    _fun59792_ip = 669;
-                    continue _fun59792
+                    _fun59794_ip = 669;
+                    continue _fun59794
                 }
             case 666:
                 var12 = var0;

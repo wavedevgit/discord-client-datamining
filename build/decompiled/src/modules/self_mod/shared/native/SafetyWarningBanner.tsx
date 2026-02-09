@@ -58,13 +58,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[3] = var6;
         var1[4] = var0;
         var0 = function() { // Environment: var8
-            _fun77539: for (var _fun77539_ip = 0;;) switch (_fun77539_ip) {
+            _fun77541: for (var _fun77541_ip = 0;;) switch (_fun77541_ip) {
                 case 0:
                     var1 = _closure2_slot4;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun77539_ip = 23;
-                        continue _fun77539
+                        _fun77541_ip = 23;
+                        continue _fun77541
                     }
                 case 13:
                     var1 = _closure2_slot4;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.style = var9;
         var9 = var10.map;
         var8 = function(arg0, arg1) { // Environment: var8
-            _fun77540: for (var _fun77540_ip = 0;;) switch (_fun77540_ip) {
+            _fun77542: for (var _fun77542_ip = 0;;) switch (_fun77542_ip) {
                 case 0:
                     var0 = arg0;
                     var4 = _closure1_slot7;
@@ -232,8 +232,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var5 != var6;
                     var5 = 'primary';
                     if (!var7) {
-                        _fun77540_ip = 69;
-                        continue _fun77540
+                        _fun77542_ip = 69;
+                        continue _fun77542
                     }
                 case 66:
                     var5 = var6;

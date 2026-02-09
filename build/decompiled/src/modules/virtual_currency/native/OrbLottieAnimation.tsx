@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.jsx;
     var _closure1_slot5 = var6;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun76137: for (var _fun76137_ip = 0;;) switch (_fun76137_ip) {
+        _fun76139: for (var _fun76139_ip = 0;;) switch (_fun76139_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.animationType;
@@ -59,20 +59,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(1);
                 var8[0] = var5;
                 var7 = function() { // Environment: var2
-                    _fun76138: for (var _fun76138_ip = 0;;) switch (_fun76138_ip) {
+                    _fun76140: for (var _fun76140_ip = 0;;) switch (_fun76140_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 !== var2)) {
-                                _fun76138_ip = 36;
-                                continue _fun76138
+                                _fun76140_ip = 36;
+                                continue _fun76140
                             }
                         case 13:
                             var1 = _closure2_slot1;
                             var1 = var1.current;
                             if (!(var0 != var1)) {
-                                _fun76138_ip = 36;
-                                continue _fun76138
+                                _fun76140_ip = 36;
+                                continue _fun76140
                             }
                         case 26:
                             var0 = var1.play;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = function() { // Environment: var2
                     var0 = {};
                     var1 = function() {
-                        _fun76140: for (var _fun76140_ip = 0;;) switch (_fun76140_ip) {
+                        _fun76142: for (var _fun76142_ip = 0;;) switch (_fun76142_ip) {
                             case 0:
                                 var0 = _closure2_slot1;
                                 var2 = var0.current;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var0 == var2;
                                 var0 = undefined;
                                 if (var1) {
-                                    _fun76140_ip = 33;
-                                    continue _fun76140
+                                    _fun76142_ip = 33;
+                                    continue _fun76142
                                 }
                             case 23:
                                 var1 = var2.play;
@@ -114,16 +114,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
                 if (var1) {
-                    _fun76137_ip = 170;
-                    continue _fun76137
+                    _fun76139_ip = 170;
+                    continue _fun76139
                 }
             case 150:
                 var1 = 5;
                 var1 = var8[var1];
                 var1 = var7.bind(var3)(var1);
                 var2 = var1.SpendEarnOrbsLottie;
-                _fun76137_ip = 188;
-                continue _fun76137;
+                _fun76139_ip = 188;
+                continue _fun76139;
             case 170:
                 var1 = 4;
                 var1 = var8[var1];
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 != var5;
                 var4 = 'spend';
                 if (!var6) {
-                    _fun76137_ip = 228;
-                    continue _fun76137
+                    _fun76139_ip = 228;
+                    continue _fun76139
                 }
             case 225:
                 var4 = var5;

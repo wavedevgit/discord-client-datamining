@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/notifications/UserSettingsCommunityNotifications.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun86264: for (var _fun86264_ip = 0;;) switch (_fun86264_ip) {
+        _fun86265: for (var _fun86265_ip = 0;;) switch (_fun86265_ip) {
             case 0:
                 var0 = _closure1_slot6;
                 var4 = undefined;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 0;
                 var0 = null;
                 if (!(var2 !== var3)) {
-                    _fun86264_ip = 213;
-                    continue _fun86264
+                    _fun86265_ip = 213;
+                    continue _fun86265
                 }
             case 108:
                 var3 = _closure1_slot4;

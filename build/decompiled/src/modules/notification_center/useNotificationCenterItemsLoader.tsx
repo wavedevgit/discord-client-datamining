@@ -623,4 +623,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDesktopNotificationCenterItemsLoader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 8710, 3969, 13558, 4304, 566, 13560, 4574, 5790, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 8710, 3969, 13556, 4304, 566, 13558, 4574, 5790, 2]);

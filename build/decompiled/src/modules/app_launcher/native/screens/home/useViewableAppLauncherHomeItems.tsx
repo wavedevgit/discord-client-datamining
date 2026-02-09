@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useViewableAppLauncherHomeItems = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12264, 3721, 13960, 5264, 481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12263, 3721, 13958, 5264, 481, 2]);

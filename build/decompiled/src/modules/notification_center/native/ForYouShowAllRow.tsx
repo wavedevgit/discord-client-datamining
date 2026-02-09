@@ -501,4 +501,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForYouSuggestedFriendShowAllRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 10526, 33, 1297, 8872, 671, 478, 1469, 795, 5504, 4090, 13584, 4904, 13585, 11509, 3942, 1234, 4086, 4909, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 10525, 33, 1297, 8872, 671, 478, 1469, 795, 5504, 4090, 13582, 4904, 13583, 11508, 3942, 1234, 4086, 4909, 2]);

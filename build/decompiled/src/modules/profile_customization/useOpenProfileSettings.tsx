@@ -43,13 +43,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/useOpenProfileSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun60485: for (var _fun60485_ip = 0;;) switch (_fun60485_ip) {
+        _fun60487: for (var _fun60487_ip = 0;;) switch (_fun60487_ip) {
             case 0:
                 var1 = arguments[0];
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun60485_ip = 13;
-                    continue _fun60485
+                    _fun60487_ip = 13;
+                    continue _fun60487
                 }
             case 11:
                 var1 = {};
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var5;
                 var1[3] = var4;
                 var0 = function() { // Environment: var0
-                    _fun60486: for (var _fun60486_ip = 0;;) switch (_fun60486_ip) {
+                    _fun60488: for (var _fun60488_ip = 0;;) switch (_fun60488_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var6 = null;
                             if (!(var6 != var0)) {
-                                _fun60486_ip = 58;
-                                continue _fun60486
+                                _fun60488_ip = 58;
+                                continue _fun60488
                             }
                         case 13:
                             var2 = _closure1_slot0;
@@ -102,14 +102,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.screen = var4;
                             var4 = _closure2_slot0;
                             if (!(var6 == var4)) {
-                                _fun60486_ip = 126;
-                                continue _fun60486
+                                _fun60488_ip = 126;
+                                continue _fun60488
                             }
                         case 114:
                             var4 = _closure1_slot4;
                             var4 = var4.USER_PROFILE;
-                            _fun60486_ip = 136;
-                            continue _fun60486;
+                            _fun60488_ip = 136;
+                            continue _fun60488;
                         case 126:
                             var5 = _closure1_slot4;
                             var4 = var5.GUILD;

@@ -410,4 +410,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MobileTrialUserSettingsAvatarBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 1623, 33, 1297, 671, 6720, 7138, 566, 13697, 13698, 13699, 13700, 6008, 1358, 4086, 8575, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 1623, 33, 1297, 671, 6720, 7138, 566, 13695, 13696, 13697, 13698, 6008, 1358, 4086, 8575, 2]);

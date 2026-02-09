@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/utils/shouldShowActivityTimeBar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun63095: for (var _fun63095_ip = 0;;) switch (_fun63095_ip) {
+        _fun63097: for (var _fun63097_ip = 0;;) switch (_fun63097_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.type;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.LISTENING;
                 var0 = var3 === var0;
                 if (var0) {
-                    _fun63095_ip = 47;
-                    continue _fun63095
+                    _fun63097_ip = 47;
+                    continue _fun63097
                 }
             case 28:
                 var3 = var1.type;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 === var2;
             case 47:
                 if (!var0) {
-                    _fun63095_ip = 76;
-                    continue _fun63095
+                    _fun63097_ip = 76;
+                    continue _fun63097
                 }
             case 50:
                 var4 = var1.timestamps;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun63095_ip = 72;
-                    continue _fun63095
+                    _fun63097_ip = 72;
+                    continue _fun63097
                 }
             case 67:
                 var2 = var4.start;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3 != var2;
             case 76:
                 if (!var0) {
-                    _fun63095_ip = 96;
-                    continue _fun63095
+                    _fun63097_ip = 96;
+                    continue _fun63097
                 }
             case 79:
                 var1 = var1.timestamps;

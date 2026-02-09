@@ -168,7 +168,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesFontPickerSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85807: for (var _fun85807_ip = 0;;) switch (_fun85807_ip) {
+        _fun85808: for (var _fun85808_ip = 0;;) switch (_fun85808_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.selectedFontId;
@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var6;
                 var1[2] = var0;
                 var0 = function() { // Environment: var12
-                    _fun85809: for (var _fun85809_ip = 0;;) switch (_fun85809_ip) {
+                    _fun85810: for (var _fun85810_ip = 0;;) switch (_fun85810_ip) {
                         case 0:
                             var5 = _closure1_slot0;
                             var6 = _closure1_slot2;
@@ -245,8 +245,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.bind(var4)(var2);
                             var3 = _closure2_slot4;
                             if (!var3) {
-                                _fun85809_ip = 80;
-                                continue _fun85809
+                                _fun85810_ip = 80;
+                                continue _fun85810
                             }
                         case 67:
                             var3 = _closure2_slot0;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = _closure1_slot7;
                 var13 = var14.map;
                 var12 = function(arg0) { // Environment: var12
-                    _fun85810: for (var _fun85810_ip = 0;;) switch (_fun85810_ip) {
+                    _fun85811: for (var _fun85811_ip = 0;;) switch (_fun85811_ip) {
                         case 0:
                             var4 = arg0;
                             var _closure3_slot0 = var4;
@@ -372,8 +372,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12 = var0[var4];
                             var0 = null;
                             if (!(var0 == var12)) {
-                                _fun85810_ip = 119;
-                                continue _fun85810
+                                _fun85811_ip = 119;
+                                continue _fun85811
                             }
                         case 109:
                             var0 = _closure1_slot8;
@@ -404,8 +404,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var8[0] = var9;
                             var9 = var13;
                             if (!var9) {
-                                _fun85810_ip = 204;
-                                continue _fun85810
+                                _fun85811_ip = 204;
+                                continue _fun85811
                             }
                         case 194:
                             var11 = _closure2_slot1;
@@ -425,8 +425,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7.variant = var11;
                             var11 = 'text-default';
                             if (!var13) {
-                                _fun85810_ip = 268;
-                                continue _fun85810
+                                _fun85811_ip = 268;
+                                continue _fun85811
                             }
                         case 262:
                             var11 = 'mobile-text-heading-primary';
@@ -456,15 +456,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(2);
                 var8[0] = var11;
                 if (!var9) {
-                    _fun85807_ip = 617;
-                    continue _fun85807
+                    _fun85808_ip = 617;
+                    continue _fun85808
                 }
             case 614:
                 var9 = var10;
             case 617:
                 if (!var9) {
-                    _fun85807_ip = 803;
-                    continue _fun85807
+                    _fun85808_ip = 803;
+                    continue _fun85808
                 }
             case 623:
                 var12 = _closure1_slot10;

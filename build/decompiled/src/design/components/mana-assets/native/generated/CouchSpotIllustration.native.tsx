@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CouchSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52979: for (var _fun52979_ip = 0;;) switch (_fun52979_ip) {
+        _fun52981: for (var _fun52981_ip = 0;;) switch (_fun52981_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52979_ip = 35;
-                    continue _fun52979
+                    _fun52981_ip = 35;
+                    continue _fun52981
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52979_ip = 47;
-                    continue _fun52979
+                    _fun52981_ip = 47;
+                    continue _fun52981
                 }
             case 44:
                 var7 = 162;

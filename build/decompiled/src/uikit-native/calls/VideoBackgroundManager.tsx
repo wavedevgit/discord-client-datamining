@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun51463: for (var _fun51463_ip = 0;;) switch (_fun51463_ip) {
+        _fun51465: for (var _fun51465_ip = 0;;) switch (_fun51465_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun51463_ip = 74;
-                continue _fun51463;
+                _fun51465_ip = 74;
+                continue _fun51465;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function arg0() {
-            _fun51467: for (var _fun51467_ip = 0;;) switch (_fun51467_ip) {
+            _fun51469: for (var _fun51469_ip = 0;;) switch (_fun51469_ip) {
                 case 0:
                     var5 = this;
                     var13 = 0;
@@ -102,14 +102,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot6;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun51467_ip = 86;
-                        continue _fun51467
+                        _fun51469_ip = 86;
+                        continue _fun51469
                     }
                 case 73:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var5, var10);
-                    _fun51467_ip = 120;
-                    continue _fun51467;
+                    _fun51469_ip = 120;
+                    continue _fun51469;
                 case 86:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -128,15 +128,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = {};
                     var0.cachedDominantColors = var2;
                     var1 = function(arg0) { // Environment: var1
-                        _fun51468: for (var _fun51468_ip = 0;;) switch (_fun51468_ip) {
+                        _fun51470: for (var _fun51470_ip = 0;;) switch (_fun51470_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = var0.channelId;
                                 var2 = _closure3_slot0;
                                 var2 = var2.previousSelectedVoiceChannelId;
                                 if (!(var2 !== var1)) {
-                                    _fun51468_ip = 37;
-                                    continue _fun51468
+                                    _fun51470_ip = 37;
+                                    continue _fun51470
                                 }
                             case 25:
                                 var3 = _closure3_slot0;

@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/GiftModalEmojis.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57338: for (var _fun57338_ip = 0;;) switch (_fun57338_ip) {
+        _fun57340: for (var _fun57340_ip = 0;;) switch (_fun57340_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.emojiName;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.randomizeSizing;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun57338_ip = 29;
-                    continue _fun57338
+                    _fun57340_ip = 29;
+                    continue _fun57340
                 }
             case 27:
                 var1 = false;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var1 = var2.map;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun57339: for (var _fun57339_ip = 0;;) switch (_fun57339_ip) {
+                    _fun57341: for (var _fun57341_ip = 0;;) switch (_fun57341_ip) {
                         case 0:
                             var3 = _closure1_slot2;
                             var4 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = {};
                             var11 = _closure2_slot1;
                             if (!var11) {
-                                _fun57339_ip = 240;
-                                continue _fun57339
+                                _fun57341_ip = 240;
+                                continue _fun57341
                             }
                         case 196:
                             var12 = var0.Math;

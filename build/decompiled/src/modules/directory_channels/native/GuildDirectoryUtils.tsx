@@ -36,14 +36,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = undefined;
         var1 = function*(arg0) { // Environment: var0
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun72161: for (var _fun72161_ip = 0;;) switch (_fun72161_ip) {
+                _fun72163: for (var _fun72163_ip = 0;;) switch (_fun72163_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun72161_ip = 187;
-                            continue _fun72161
+                            _fun72163_ip = 187;
+                            continue _fun72163
                         }
                     case 15:
                         var11 = var1.directoryChannelId;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 63:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun72161_ip = 184;
-                            continue _fun72161
+                            _fun72163_ip = 184;
+                            continue _fun72163
                         }
                     case 69:
                         var8 = _closure1_slot2;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 123:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 6);
                         if (var6) {
-                            _fun72161_ip = 181;
-                            continue _fun72161
+                            _fun72163_ip = 181;
+                            continue _fun72163
                         }
                     case 129:
                         var5 = var5.bind(var3)();

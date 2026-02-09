@@ -30,30 +30,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun84500: for (var _fun84500_ip = 0;;) switch (_fun84500_ip) {
+        _fun84501: for (var _fun84501_ip = 0;;) switch (_fun84501_ip) {
             case 0:
                 var2 = arg0;
                 var10 = var2.width;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun84500_ip = 17;
-                    continue _fun84500
+                    _fun84501_ip = 17;
+                    continue _fun84501
                 }
             case 14:
                 var10 = 24;
             case 17:
                 var7 = var2.height;
                 if (!(var7 === var3)) {
-                    _fun84500_ip = 29;
-                    continue _fun84500
+                    _fun84501_ip = 29;
+                    continue _fun84501
                 }
             case 26:
                 var7 = 24;
             case 29:
                 var8 = var2.color;
                 if (!(var8 === var3)) {
-                    _fun84500_ip = 44;
-                    continue _fun84500
+                    _fun84501_ip = 44;
+                    continue _fun84501
                 }
             case 38:
                 var8 = 'currentColor';

@@ -192,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getScaledGuildProgressButtonHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4872, 33, 7049, 10320, 10324, 5432, 13373, 1234, 10329, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4872, 33, 7049, 10319, 10323, 5432, 13371, 1234, 10328, 2]);

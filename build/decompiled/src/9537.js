@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var3 = var1.vertical;
         var _closure2_slot1 = var3;
         var0 = function arg0() {
-            _fun75606: for (var _fun75606_ip = 0;;) switch (_fun75606_ip) {
+            _fun75608: for (var _fun75608_ip = 0;;) switch (_fun75608_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var0 = _closure1_slot1;
@@ -51,14 +51,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = _closure2_slot1;
                     var1 = {};
                     if (var2) {
-                        _fun75606_ip = 112;
-                        continue _fun75606
+                        _fun75608_ip = 112;
+                        continue _fun75608
                     }
                 case 102:
                     var1.translateX = var3;
                     var2 = var1;
-                    _fun75606_ip = 120;
-                    continue _fun75606;
+                    _fun75608_ip = 120;
+                    continue _fun75608;
                 case 112:
                     var1.translateY = var3;
                     var2 = var1;

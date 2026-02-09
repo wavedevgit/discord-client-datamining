@@ -493,4 +493,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMessageItemNotificationNudgeHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 11078, 660, 1369, 11079, 33, 1297, 671, 7049, 4088, 11077, 6008, 1358, 11083, 795, 8839, 3942, 1234, 4084, 4904, 11081, 4734, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 11077, 660, 1369, 11078, 33, 1297, 671, 7049, 4088, 11076, 6008, 1358, 11082, 795, 8839, 3942, 1234, 4084, 4904, 11080, 4734, 2]);

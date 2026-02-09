@@ -515,4 +515,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DownArrowIconWithBadgeOnSide = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8709, 8714, 33, 1297, 671, 566, 13512, 5509, 4706, 8713, 10069, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8709, 8714, 33, 1297, 671, 566, 13510, 5509, 4706, 8713, 10069, 2]);

@@ -838,4 +838,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowRobloxConnectionCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4519, 1621, 12544, 660, 1369, 33, 1297, 671, 3161, 1568, 3279, 4933, 5261, 5259, 4080, 3942, 1234, 4084, 9154, 5370, 5973, 3159, 4395, 1417, 4086, 5512, 566, 5504, 12545, 4521, 3213, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4519, 1621, 12543, 660, 1369, 33, 1297, 671, 3161, 1568, 3279, 4933, 5261, 5259, 4080, 3942, 1234, 4084, 9154, 5370, 5973, 3159, 4395, 1417, 4086, 5512, 566, 5504, 12544, 4521, 3213, 1358, 2]);

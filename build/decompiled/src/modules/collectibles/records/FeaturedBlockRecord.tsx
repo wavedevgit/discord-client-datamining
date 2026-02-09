@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var1.subblocks;
             var3 = var4.map;
             var1 = function(arg0) { // Environment: var1
-                _fun42585: for (var _fun42585_ip = 0;;) switch (_fun42585_ip) {
+                _fun42587: for (var _fun42587_ip = 0;;) switch (_fun42587_ip) {
                     case 0:
                         var3 = arg0;
                         var4 = var3.type;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.CATEGORY;
                         var0 = var3;
                         if (!(var4 === var2)) {
-                            _fun42585_ip = 67;
-                            continue _fun42585
+                            _fun42587_ip = 67;
+                            continue _fun42587
                         }
                     case 52:
                         var2 = _closure1_slot4;

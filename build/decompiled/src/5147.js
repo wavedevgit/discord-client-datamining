@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'computeVelocity';
         var0.key = var1;
         var1 = function arg0, arg1, arg2, arg3() {
-            _fun45943: for (var _fun45943_ip = 0;;) switch (_fun45943_ip) {
+            _fun45945: for (var _fun45945_ip = 0;;) switch (_fun45945_ip) {
                 case 0:
                     var7 = arg2;
                     var6 = arg3;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var8 = var2.velocity;
                     var0 = 0;
                     if (!var7) {
-                        _fun45943_ip = 110;
-                        continue _fun45943
+                        _fun45945_ip = 110;
+                        continue _fun45945
                     }
                 case 107:
                     var0 = var5;
@@ -84,8 +84,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var2.velocity;
                     var4 = 0;
                     if (var7) {
-                        _fun45943_ip = 130;
-                        continue _fun45943
+                        _fun45945_ip = 130;
+                        continue _fun45945
                     }
                 case 127:
                     var4 = var5;
@@ -130,14 +130,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'cleanUp';
         var0.key = var5;
         var4 = function() {
-            _fun45945: for (var _fun45945_ip = 0;;) switch (_fun45945_ip) {
+            _fun45947: for (var _fun45947_ip = 0;;) switch (_fun45947_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.timeoutId;
                     var0 = null;
                     if (!(var0 !== var2)) {
-                        _fun45945_ip = 42;
-                        continue _fun45945
+                        _fun45947_ip = 42;
+                        continue _fun45947
                     }
                 case 15:
                     var2 = global;

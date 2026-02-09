@@ -231,4 +231,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTrackAppLauncherHomeItemImpression = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13972, 13960, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13970, 13958, 2]);

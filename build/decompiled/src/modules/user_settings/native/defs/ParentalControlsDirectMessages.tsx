@@ -79,15 +79,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var9;
     var8 = function arg0() {
-        _fun89436: for (var _fun89436_ip = 0;;) switch (_fun89436_ip) {
+        _fun89437: for (var _fun89437_ip = 0;;) switch (_fun89437_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getSelectedTeenId;
                 var3 = var1.bind(var2)();
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun89436_ip = 69;
-                    continue _fun89436
+                    _fun89437_ip = 69;
+                    continue _fun89437
                 }
             case 23:
                 var2 = _closure1_slot0;
@@ -118,4 +118,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.ParentalControlsDirectMessages = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4593, 7077, 10492, 10493, 9067, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4593, 7077, 10491, 10492, 9067, 1234, 2]);

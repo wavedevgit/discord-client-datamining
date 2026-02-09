@@ -307,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'AppLauncherUserListActionSheet';
     var2.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1468, 33, 1297, 3279, 4544, 7429, 13816, 1234, 13812, 13858, 13850, 13813, 4900, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1468, 33, 1297, 3279, 4544, 7429, 13814, 1234, 13810, 13856, 13848, 13811, 4900, 2]);

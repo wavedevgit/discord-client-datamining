@@ -680,10 +680,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.disabled = var15;
                 var20 = undefined;
                 if (!var16) {
-                    _fun104462_ip = 515;
+                    _fun104462_ip = 511;
                     continue _fun104462
                 }
-            case 438:
+            case 434:
                 var23 = _closure1_slot12;
                 var22 = _closure1_slot0;
                 var26 = _closure1_slot2;
@@ -702,18 +702,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var24 = var24.CONTROL_CONNECTED_TEXT_DEFAULT;
                 var21.color = var24;
                 var20 = var23.bind(var3)(var22, var21);
-            case 515:
+            case 511:
                 var12.icon = var20;
                 if (!var15) {
-                    _fun104462_ip = 582;
+                    _fun104462_ip = 578;
                     continue _fun104462
                 }
-            case 522:
+            case 518:
                 if (var18) {
-                    _fun104462_ip = 582;
+                    _fun104462_ip = 578;
                     continue _fun104462
                 }
-            case 525:
+            case 521:
                 var22 = _closure1_slot0;
                 var23 = _closure1_slot2;
                 var18 = 24;
@@ -726,9 +726,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var18.t;
                 var18 = var18.cEnaWx;
                 var18 = var20.bind(var21)(var18);
-                _fun104462_ip = 658;
+                _fun104462_ip = 654;
                 continue _fun104462;
-            case 582:
+            case 578:
                 var20 = _closure1_slot0;
                 var23 = _closure1_slot2;
                 var19 = 24;
@@ -740,37 +740,37 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var3)(var19);
                 var20 = var19.t;
                 if (var16) {
-                    _fun104462_ip = 642;
+                    _fun104462_ip = 638;
                     continue _fun104462
                 }
-            case 629:
+            case 625:
                 var19 = var20.XqMe3N;
                 var19 = var21.bind(var22)(var19);
-                _fun104462_ip = 655;
+                _fun104462_ip = 651;
                 continue _fun104462;
-            case 642:
+            case 638:
                 var20 = var20["TwueC+"];
                 var19 = var21.bind(var22)(var20);
-            case 655:
+            case 651:
                 var18 = var19;
-            case 658:
+            case 654:
                 var12.text = var18;
                 var18 = 'sm';
                 var12.size = var18;
                 var12.onPress = var17;
                 if (var15) {
+                    _fun104462_ip = 680;
+                    continue _fun104462
+                }
+            case 673:
+                var15 = 'active';
+                if (var16) {
                     _fun104462_ip = 684;
                     continue _fun104462
                 }
-            case 677:
-                var15 = 'active';
-                if (var16) {
-                    _fun104462_ip = 688;
-                    continue _fun104462
-                }
-            case 684:
+            case 680:
                 var15 = 'secondary';
-            case 688:
+            case 684:
                 var12.variant = var15;
                 var15 = true;
                 var12.grow = var15;
@@ -1706,4 +1706,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1298, 1410, 13628, 660, 33, 13597, 671, 7464, 5410, 3721, 4097, 7633, 566, 1417, 5509, 4704, 4904, 3942, 4084, 3272, 1234, 1568, 8960, 8956, 3150, 4561, 13612, 5804, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1298, 1410, 13626, 660, 33, 13595, 671, 7464, 5410, 3721, 4097, 7633, 566, 1417, 5509, 4704, 4904, 3942, 4084, 3272, 1234, 1568, 8960, 8956, 3150, 4561, 13610, 5804, 2]);
