@@ -6,8 +6,9 @@ import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.w0;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-class p extends u {
+public class p extends u {
     @Override // androidx.activity.v
     public void b(@NotNull b0 statusBarStyle, @NotNull b0 navigationBarStyle, @NotNull Window window, @NotNull View view, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(statusBarStyle, "statusBarStyle");
