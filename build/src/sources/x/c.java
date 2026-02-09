@@ -1,8 +1,9 @@
 package x;
 
 import x.q;
+/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-final class c extends q.a {
+public final class c extends q.a {
 
     /* renamed from: a  reason: collision with root package name */
     private final int f54202a;

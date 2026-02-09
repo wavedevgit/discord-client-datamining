@@ -12,35 +12,33 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public final class x implements t4 {
 
-    /* renamed from: g  reason: collision with root package name */
+    /* renamed from: g */
     private static final xh.k0 f16061g = new xh.k0("AssetPackServiceImpl");
 
-    /* renamed from: h  reason: collision with root package name */
+    /* renamed from: h */
     private static final Intent f16062h = new Intent("com.google.android.play.core.assetmoduleservice.BIND_ASSET_MODULE_SERVICE").setPackage("com.android.vending");
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private final String f16063a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private final b2 f16064b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private final o3 f16065c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private xh.v0 f16066d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private xh.v0 f16067e;
 
-    /* renamed from: f  reason: collision with root package name */
+    /* renamed from: f */
     private final AtomicBoolean f16068f = new AtomicBoolean();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Type inference failed for: r5v0, types: [wh.a] */
     /* JADX WARN: Type inference failed for: r7v0, types: [wh.a] */
     public x(Context context, b2 b2Var, o3 o3Var) {
@@ -59,14 +57,12 @@ public final class x implements t4 {
         f16061g.a("AssetPackService initiated.", new Object[0]);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public static Bundle A(int i10, String str) {
         Bundle i11 = i(i10);
         i11.putString("module_name", str);
         return i11;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public static Bundle h() {
         Bundle bundle = new Bundle();
         bundle.putInt("playcore_version_code", 20300);
@@ -81,7 +77,6 @@ public final class x implements t4 {
         return bundle;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public static Bundle i(int i10) {
         Bundle bundle = new Bundle();
         bundle.putInt(SharedPreferencesKey.SESSION_ID, i10);
@@ -93,7 +88,6 @@ public final class x implements t4 {
         return yg.m.e(new a(-11));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public final void k(int i10, String str, int i11) {
         if (this.f16066d != null) {
             f16061g.d("notifyModuleCompleted", new Object[0]);
@@ -104,7 +98,6 @@ public final class x implements t4 {
         throw new w1("The Play Store app is not installed or is an unofficial version.", i10);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ Bundle l(int i10, String str, String str2, int i11) {
         Bundle A = A(i10, str);
         A.putString("slice_id", str2);
@@ -112,7 +105,6 @@ public final class x implements t4 {
         return A;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ Bundle o(Map map) {
         Bundle h10 = h();
         ArrayList<? extends Parcelable> arrayList = new ArrayList<>();
@@ -126,7 +118,18 @@ public final class x implements t4 {
         return h10;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* bridge */ /* synthetic */ xh.k0 s() {
+        return f16061g;
+    }
+
+    public static /* bridge */ /* synthetic */ xh.v0 t(x xVar) {
+        return xVar.f16066d;
+    }
+
+    public static /* bridge */ /* synthetic */ xh.v0 u(x xVar) {
+        return xVar.f16067e;
+    }
+
     public static /* bridge */ /* synthetic */ ArrayList w(Collection collection) {
         ArrayList arrayList = new ArrayList(collection.size());
         Iterator it = collection.iterator();
@@ -138,7 +141,6 @@ public final class x implements t4 {
         return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ List x(x xVar, List list) {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
