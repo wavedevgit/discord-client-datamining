@@ -20,133 +20,81 @@ abstract class o extends yh.c0 {
 
     @Override // yh.d0
     public final void B0(int i10, Bundle bundle) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onCancelDownload(%d)", Integer.valueOf(i10));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onCancelDownload(%d)", Integer.valueOf(i10));
     }
 
     @Override // yh.d0
     public final void I(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onNotifySessionFailed(%d)", Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onNotifySessionFailed(%d)", Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
     @Override // yh.d0
     public final void M(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onRemoveModule()", new Object[0]);
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onRemoveModule()", new Object[0]);
     }
 
     @Override // yh.d0
     public void M0(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onGetChunkFileDescriptor", new Object[0]);
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onGetChunkFileDescriptor", new Object[0]);
     }
 
     @Override // yh.d0
     public void T(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onRequestDownloadInfo()", new Object[0]);
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onRequestDownloadInfo()", new Object[0]);
     }
 
     @Override // yh.d0
     public final void c(Bundle bundle) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onCancelDownloads()", new Object[0]);
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onCancelDownloads()", new Object[0]);
     }
 
     @Override // yh.d0
     public final void e0(int i10, Bundle bundle) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onGetSession(%d)", Integer.valueOf(i10));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onGetSession(%d)", Integer.valueOf(i10));
     }
 
     @Override // yh.d0
     public void g(Bundle bundle) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
+        x.t(this.f16057d).u(this.f16056c);
         int i10 = bundle.getInt("error_code");
-        k0Var = x.f16201g;
-        k0Var.b("onError(%d)", Integer.valueOf(i10));
+        x.s().b("onError(%d)", Integer.valueOf(i10));
         this.f16056c.d(new a(i10));
     }
 
     @Override // yh.d0
     public void l0(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16207e;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
+        x.u(this.f16057d).u(this.f16056c);
+        x.s().d("onKeepAlive(%b)", Boolean.valueOf(bundle.getBoolean("keep_alive")));
     }
 
     @Override // yh.d0
     public final void p0(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onNotifyChunkTransferred(%s, %s, %d, session=%d)", bundle.getString("module_name"), bundle.getString("slice_id"), Integer.valueOf(bundle.getInt("chunk_number")), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onNotifyChunkTransferred(%s, %s, %d, session=%d)", bundle.getString("module_name"), bundle.getString("slice_id"), Integer.valueOf(bundle.getInt("chunk_number")), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 
     @Override // yh.d0
     public void s(int i10, Bundle bundle) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onStartDownload(%d)", Integer.valueOf(i10));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onStartDownload(%d)", Integer.valueOf(i10));
     }
 
     @Override // yh.d0
     public void v(List list) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onGetSessionStates", new Object[0]);
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onGetSessionStates", new Object[0]);
     }
 
     @Override // yh.d0
     public final void w0(Bundle bundle, Bundle bundle2) {
-        yh.v0 v0Var;
-        yh.k0 k0Var;
-        v0Var = this.f16057d.f16206d;
-        v0Var.u(this.f16056c);
-        k0Var = x.f16201g;
-        k0Var.d("onNotifyModuleCompleted(%s, sessionId=%d)", bundle.getString("module_name"), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
+        x.t(this.f16057d).u(this.f16056c);
+        x.s().d("onNotifyModuleCompleted(%s, sessionId=%d)", bundle.getString("module_name"), Integer.valueOf(bundle.getInt(SharedPreferencesKey.SESSION_ID)));
     }
 }
