@@ -27,15 +27,20 @@ final class h extends yh.l0 {
 
     @Override // yh.l0
     protected final void a() {
+        yh.k0 k0Var;
+        yh.v0 v0Var;
         String str;
         Bundle h10;
         ArrayList w10 = x.w(this.f15902e);
         try {
+            v0Var = this.f15904o.f16206d;
             str = this.f15904o.f16203a;
             h10 = x.h();
-            ((yh.b0) this.f15904o.f16206d.e()).t0(str, w10, h10, new p(this.f15904o, this.f15903i));
+            ((yh.b0) v0Var.e()).t0(str, w10, h10, new p(this.f15904o, this.f15903i));
         } catch (RemoteException e10) {
-            x.f16201g.c(e10, "cancelDownloads(%s)", this.f15902e);
+            List list = this.f15902e;
+            k0Var = x.f16201g;
+            k0Var.c(e10, "cancelDownloads(%s)", list);
         }
     }
 }

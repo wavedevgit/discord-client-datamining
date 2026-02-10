@@ -25,16 +25,20 @@ final class l extends yh.l0 {
 
     @Override // yh.l0
     protected final void a() {
+        yh.k0 k0Var;
+        yh.v0 v0Var;
         String str;
         Bundle i10;
         Bundle h10;
         try {
+            v0Var = this.f15990o.f16206d;
             str = this.f15990o.f16203a;
             i10 = x.i(this.f15988e);
             h10 = x.h();
-            ((yh.b0) this.f15990o.f16206d.e()).V0(str, i10, h10, new v(this.f15990o, this.f15989i));
+            ((yh.b0) v0Var.e()).V0(str, i10, h10, new v(this.f15990o, this.f15989i));
         } catch (RemoteException e10) {
-            x.f16201g.c(e10, "notifySessionFailed", new Object[0]);
+            k0Var = x.f16201g;
+            k0Var.c(e10, "notifySessionFailed", new Object[0]);
         }
     }
 }
