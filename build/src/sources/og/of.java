@@ -19,21 +19,11 @@ public final class of {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ of(mf mfVar, nf nfVar) {
-        le leVar;
-        wj wjVar;
-        i1 i1Var;
-        i1 i1Var2;
-        fe feVar;
-        leVar = mfVar.f39489a;
-        this.f39554a = leVar;
-        wjVar = mfVar.f39490b;
-        this.f39555b = wjVar;
-        i1Var = mfVar.f39491c;
-        this.f39556c = i1Var;
-        i1Var2 = mfVar.f39492d;
-        this.f39557d = i1Var2;
-        feVar = mfVar.f39493e;
-        this.f39558e = feVar;
+        this.f39554a = mfVar.f39489a;
+        this.f39555b = mfVar.f39490b;
+        this.f39556c = mfVar.f39491c;
+        this.f39557d = mfVar.f39492d;
+        this.f39558e = mfVar.f39493e;
     }
 
     public final i1 a() {
